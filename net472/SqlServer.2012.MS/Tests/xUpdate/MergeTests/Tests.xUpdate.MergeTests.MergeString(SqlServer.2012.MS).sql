@@ -17,8 +17,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 MERGE INTO [AllTypes] [Target]
-USING
-(VALUES
+USING (VALUES
 	(3,char(0),char(0),N'test' + char(0) + N'it')
 ) [Source]
 (

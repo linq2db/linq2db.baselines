@@ -224,8 +224,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[Id],
 		[t1].[Field1],
