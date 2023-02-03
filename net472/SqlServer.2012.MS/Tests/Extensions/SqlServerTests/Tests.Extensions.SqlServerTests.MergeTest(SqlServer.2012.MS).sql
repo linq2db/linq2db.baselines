@@ -2,7 +2,8 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 MERGE INTO [Parent] [Target]
-USING (
+USING
+(
 	SELECT
 		[c_1].[ParentID],
 		[c_1].[Value1]

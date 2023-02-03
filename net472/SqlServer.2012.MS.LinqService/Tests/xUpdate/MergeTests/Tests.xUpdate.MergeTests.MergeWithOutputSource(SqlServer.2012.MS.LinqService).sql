@@ -227,12 +227,14 @@ MERGE INTO [TestMerge1] [Target]
 USING
 (
 	SELECT
-		[t1].[Id],
-		[t1].[Field1],
-		[t1].[Field2],
-		[t1].[Field4]
+		[_].[Id],
+		[_].[Field1],
+		[_].[Field2],
+		[_].[Field4]
 	FROM
-		[TestMerge2] [t1]
+		[TestMerge2] [_]
+	WHERE
+		[_].[Id] = 5
 ) [Source]
 (
 	[Id],
@@ -257,25 +259,10 @@ VALUES
 	[Source].[Field2],
 	[Source].[Field4]
 )
-
-WHEN NOT MATCHED By Source AND [Target].[Id] = 2 THEN UPDATE
-SET
-	[Target].[Field1] = 44
-WHEN NOT MATCHED BY SOURCE THEN DELETE
+OUTPUT
+	[Source].[Field1],
+	Convert(NVarChar(11), [Source].[Field1]),
+	$action,
+	Convert(NVarChar(11), [INSERTED].[Id])
 ;
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-SELECT
-	[t1].[Id],
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Field3],
-	[t1].[Field4],
-	[t1].[Field5]
-FROM
-	[TestMerge1] [t1]
-ORDER BY
-	[t1].[Id]
 
