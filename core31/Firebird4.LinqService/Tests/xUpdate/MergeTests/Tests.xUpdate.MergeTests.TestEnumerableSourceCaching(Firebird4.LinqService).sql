@@ -26,8 +26,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "CacheTestTable" "Target"
-USING
-(
+USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM rdb$database
 	UNION ALL
 	SELECT 2, 2 FROM rdb$database) "Source"
@@ -69,8 +68,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "CacheTestTable" "Target"
-USING
-(
+USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM rdb$database
 	UNION ALL
 	SELECT 2, 4 FROM rdb$database

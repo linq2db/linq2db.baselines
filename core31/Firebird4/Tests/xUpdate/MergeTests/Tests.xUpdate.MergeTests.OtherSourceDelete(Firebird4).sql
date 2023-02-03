@@ -222,8 +222,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."Id" as "OtherId"
 	FROM

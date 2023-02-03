@@ -14,8 +14,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDateTime", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldDate", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM rdb$database
 	UNION ALL
 	SELECT 2, -2147483647, -9223372036854775807, 1, CAST('normal strinG' AS VARCHAR(13)), CAST(_utf8 x'D0B2D181D08120D0BDD0BED180D0BCD0B0D0BBD18CD0BDD0BE' AS VARCHAR(25)), '*', _utf8 x'D191', -3.40282002E+38, CAST('2000-11-12 21:14:15.167' AS timestamp), X'00000000000000000000000000000000', 12345678.9012345678, CAST('2000-11-23' AS timestamp), CAST('FIRST' AS VARCHAR(5)), NULL FROM rdb$database
@@ -86,8 +85,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 MERGE INTO "TestMerge2" "Target"
-USING
-(
+USING (
 	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", CAST('<>?/.,;''zZ":' AS VARCHAR(12)) AS "FieldString", CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)) AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", CAST('2098-10-12 21:14:15.907' AS timestamp) AS "FieldDateTime", X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF' AS "FieldGuid", -0.123 AS "FieldDecimal", CAST('2111-11-23' AS timestamp) AS "FieldDate", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM rdb$database
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, CAST('test
