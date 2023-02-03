@@ -31,7 +31,8 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING (VALUES
+USING
+(VALUES
 	(22), (23)
 ) [Source]
 (

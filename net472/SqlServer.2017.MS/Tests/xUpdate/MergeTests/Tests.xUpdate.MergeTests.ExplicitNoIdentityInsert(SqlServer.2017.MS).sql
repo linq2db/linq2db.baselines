@@ -17,7 +17,8 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[t1].[PersonID] as [ID],
 		[a_Patient].[Diagnosis]
