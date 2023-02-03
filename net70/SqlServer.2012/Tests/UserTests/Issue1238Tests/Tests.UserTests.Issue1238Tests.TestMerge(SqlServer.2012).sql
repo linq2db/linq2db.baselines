@@ -11,7 +11,8 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [InheritanceParent] [Target]
-USING (VALUES
+USING
+(VALUES
 	(143,NULL,1)
 ) [Source]
 (
@@ -54,7 +55,8 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [InheritanceParent] [Target]
-USING (VALUES
+USING
+(VALUES
 	(143,NULL,1)
 ) [Source]
 (

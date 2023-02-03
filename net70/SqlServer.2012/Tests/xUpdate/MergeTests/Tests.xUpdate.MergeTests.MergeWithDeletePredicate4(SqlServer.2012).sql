@@ -74,7 +74,8 @@ DECLARE @patient Int -- Int32
 SET     @patient = 1
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[PersonID] as [ID],
 		[t].[FirstName],
@@ -135,7 +136,8 @@ DECLARE @patient Int -- Int32
 SET     @patient = 2
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[PersonID] as [ID],
 		[t].[FirstName],

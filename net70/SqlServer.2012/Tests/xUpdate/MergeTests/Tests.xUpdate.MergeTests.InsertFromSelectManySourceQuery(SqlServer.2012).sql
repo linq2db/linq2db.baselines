@@ -103,7 +103,8 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [GrandChild] [Target]
-USING (
+USING
+(
 	SELECT
 		[r].[ParentID] + [t2].[ChildID] as [source_field0],
 		[r].[ParentID] as [LeftId],

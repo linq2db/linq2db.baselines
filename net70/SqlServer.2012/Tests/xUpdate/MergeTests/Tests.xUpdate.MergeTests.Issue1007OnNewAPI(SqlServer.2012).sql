@@ -31,7 +31,8 @@ BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING (VALUES
+USING
+(VALUES
 	(10)
 ) [Source]
 (
