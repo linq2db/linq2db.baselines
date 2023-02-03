@@ -222,7 +222,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (
+USING
+(
 	SELECT NULL::Int, NULL::Int, NULL::Int, NULL::Int
 	FROM table(set{1})	WHERE 1 = 0
 )

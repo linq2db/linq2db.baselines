@@ -222,7 +222,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING (
+USING
+(
 	SELECT 3::Int AS OtherId, NULL::Int AS OtherField1, NULL::Int AS OtherField5, 3::Int AS OtherField2, NULL::Int AS OtherField4, 113::Int AS OtherField3 FROM table(set{1})
 	UNION ALL
 	SELECT 4::Int, 5::Int, NULL::Int, 7::Int, 214::Int, NULL::Int FROM table(set{1})
