@@ -237,8 +237,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(VALUES
+USING (VALUES
 	(3,NULL,3,NULL,NULL,NULL), (4,5,7,NULL,214,NULL),
 	(5,10,4,NULL,NULL,NULL), (6,NULL,NULL,NULL,216,NULL)
 ) [Source]

@@ -224,8 +224,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT NULL, NULL, NULL, NULL
 	FROM [TestMerge1]	WHERE 1 = 0
 )

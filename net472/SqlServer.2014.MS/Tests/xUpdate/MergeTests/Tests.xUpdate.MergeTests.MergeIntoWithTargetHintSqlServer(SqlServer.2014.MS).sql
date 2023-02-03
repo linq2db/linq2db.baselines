@@ -224,8 +224,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [TestMerge1] WITH(HOLDLOCK) [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[Id],
 		[t1].[Field1],

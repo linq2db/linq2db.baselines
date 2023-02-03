@@ -2,8 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [LinqDataTypes] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[ID],
 		[t].[MoneyValue],
