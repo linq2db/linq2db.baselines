@@ -2,7 +2,8 @@
 -- SqlServer.2008
 
 MERGE INTO [Child] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[ParentID],
 		[t].[ChildID]

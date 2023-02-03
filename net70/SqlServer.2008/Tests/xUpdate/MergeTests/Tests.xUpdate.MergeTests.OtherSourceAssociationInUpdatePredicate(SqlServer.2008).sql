@@ -9,7 +9,8 @@ BeforeExecute
 -- SqlServer.2008
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[t1].[PersonID] as [ID],
 		[t1].[FirstName],

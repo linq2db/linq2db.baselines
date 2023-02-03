@@ -29,7 +29,8 @@ BeforeExecute
 -- SqlServer.2008
 
 MERGE INTO [PKOnlyTable] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1), (2), (3)
 ) [Source]
 (
