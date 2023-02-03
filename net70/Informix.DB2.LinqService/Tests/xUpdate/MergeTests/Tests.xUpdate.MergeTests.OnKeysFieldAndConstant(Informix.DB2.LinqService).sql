@@ -222,8 +222,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING
-(
+USING (
 	SELECT
 		s.Field1
 	FROM

@@ -18,8 +18,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO CacheTestTable Target
-USING
-(
+USING (
 	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
 	UNION ALL
 	SELECT 2::Int, 2::Int FROM table(set{1})) Source
@@ -61,8 +60,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO CacheTestTable Target
-USING
-(
+USING (
 	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
 	UNION ALL
 	SELECT 2::Int, 4::Int FROM table(set{1})

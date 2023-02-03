@@ -10,8 +10,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
-USING
-(
+USING (
 	SELECT 143::Int AS Key1, NULL::NVarChar(255) AS Key2, 1::Int AS Data_1 FROM table(set{1})) Source
 (
 	Key1,
@@ -51,8 +50,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
-USING
-(
+USING (
 	SELECT 143::Int AS Key1, NULL::NVarChar(255) AS Key2, 1::Int AS Data_1 FROM table(set{1})) Source
 (
 	Key1,

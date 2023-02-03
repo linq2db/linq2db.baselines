@@ -100,8 +100,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO GrandChild Target
-USING
-(
+USING (
 	SELECT
 		t2.ChildID as Id
 	FROM

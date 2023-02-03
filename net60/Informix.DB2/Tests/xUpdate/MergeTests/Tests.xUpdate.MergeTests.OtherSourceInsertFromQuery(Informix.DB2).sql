@@ -222,8 +222,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
-USING
-(
+USING (
 	SELECT
 		t1.Id as OtherId,
 		t1.Field3 as OtherField3,

@@ -18,8 +18,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO ReviewIndexes Target
-USING
-(
+USING (
 	SELECT 1::Int AS Id FROM table(set{1})) Source
 (
 	Id

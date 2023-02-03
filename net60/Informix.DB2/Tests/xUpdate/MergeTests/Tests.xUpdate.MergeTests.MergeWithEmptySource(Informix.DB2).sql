@@ -2,8 +2,7 @@
 -- Informix.DB2 Informix
 
 MERGE INTO Person Target
-USING
-(
+USING (
 	SELECT NULL::Int, NULL::NVarChar(255), NULL::NVarChar(255), NULL::NVarChar(255), NULL::Char(1)
 	FROM table(set{1})	WHERE 1 = 0
 )
