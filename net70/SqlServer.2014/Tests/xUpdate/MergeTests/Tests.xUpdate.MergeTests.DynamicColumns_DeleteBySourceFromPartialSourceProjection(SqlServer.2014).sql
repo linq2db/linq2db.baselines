@@ -224,8 +224,7 @@ BeforeExecute
 -- SqlServer.2014
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[_].[Id]
 	FROM

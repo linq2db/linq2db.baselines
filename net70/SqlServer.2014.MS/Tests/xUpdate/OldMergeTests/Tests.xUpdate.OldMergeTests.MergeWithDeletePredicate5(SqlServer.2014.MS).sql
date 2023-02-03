@@ -2,8 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [Child] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[ParentID],
 		[t].[ChildID]
