@@ -4,7 +4,8 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [Child] [Target]
-USING (
+USING
+(
 	SELECT
 		[t].[ParentID],
 		[t].[ChildID]

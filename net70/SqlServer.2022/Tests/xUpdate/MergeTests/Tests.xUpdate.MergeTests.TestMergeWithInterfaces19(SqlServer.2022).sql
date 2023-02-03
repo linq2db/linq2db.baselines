@@ -19,7 +19,8 @@ BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [ReviewIndexes] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1)
 ) [Source]
 (

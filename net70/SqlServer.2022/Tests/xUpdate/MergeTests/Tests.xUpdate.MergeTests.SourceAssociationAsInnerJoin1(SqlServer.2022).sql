@@ -30,7 +30,8 @@ BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [Person] [Target]
-USING (
+USING
+(
 	SELECT
 		[p].[PersonID] as [ID],
 		[a_Patient].[Diagnosis]

@@ -2,7 +2,8 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [Parent] [Target]
-USING (
+USING
+(
 	SELECT
 		[c_1].[ParentID],
 		[c_1].[Value1]

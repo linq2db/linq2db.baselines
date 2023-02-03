@@ -103,7 +103,8 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [GrandChild] [Target]
-USING (
+USING
+(
 	SELECT
 		[t2].[ChildID] as [Id]
 	FROM

@@ -32,7 +32,8 @@ BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [PKOnlyTable] [Target]
-USING (VALUES
+USING
+(VALUES
 	(1), (2), (3)
 ) [Source]
 (
