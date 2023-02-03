@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[t1].[Id],
 		[t1].[Field1],

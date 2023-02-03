@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[s].[Field1] - 5 as [Field1]
 	FROM

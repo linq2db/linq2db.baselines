@@ -31,7 +31,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [TestMergeIdentity] [Target]
-USING (VALUES
+USING
+(VALUES
 	(10)
 ) [Source]
 (
