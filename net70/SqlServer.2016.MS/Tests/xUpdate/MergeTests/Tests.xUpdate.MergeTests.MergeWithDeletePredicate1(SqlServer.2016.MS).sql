@@ -4,8 +4,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [LinqDataTypes] [Target]
-USING
-(
+USING (
 	SELECT
 		[t].[ID],
 		[t].[MoneyValue],

@@ -226,8 +226,7 @@ DECLARE @param Int -- Int32
 SET     @param = 4
 
 MERGE INTO [TestMerge1] [Target]
-USING
-(
+USING (
 	SELECT
 		[t1].[Id]
 	FROM
