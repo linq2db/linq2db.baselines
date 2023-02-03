@@ -224,7 +224,8 @@ BeforeExecute
 -- SqlServer.2017 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[_].[Id],
 		[_].[Field1],

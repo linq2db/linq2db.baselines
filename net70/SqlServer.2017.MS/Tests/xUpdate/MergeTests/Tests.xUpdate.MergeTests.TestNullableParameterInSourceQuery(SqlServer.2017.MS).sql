@@ -35,7 +35,8 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 MERGE INTO [TestNullableParameterTarget] [Target]
-USING (
+USING
+(
 	SELECT
 		2 as [source_field0],
 		[_].[Id]
@@ -69,7 +70,8 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 MERGE INTO [TestNullableParameterTarget] [Target]
-USING (
+USING
+(
 	SELECT
 		2 as [source_field0],
 		[_].[Id]
