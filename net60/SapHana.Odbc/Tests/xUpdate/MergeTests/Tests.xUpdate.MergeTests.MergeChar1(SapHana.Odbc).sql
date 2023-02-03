@@ -80,7 +80,8 @@ DECLARE @id  -- Int32
 SET     @id = 3
 
 MERGE INTO "AllTypes" "Target"
-USING (
+USING
+(
 	SELECT
 		"t"."ID",
 		"t"."charDataType",

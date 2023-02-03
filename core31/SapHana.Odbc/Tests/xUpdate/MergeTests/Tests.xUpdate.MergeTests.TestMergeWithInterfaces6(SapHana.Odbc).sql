@@ -18,7 +18,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "ReviewIndexes" "Target"
-USING (
+USING
+(
 	SELECT 1 AS "Id", '2' AS "Value_1" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."Id")
 

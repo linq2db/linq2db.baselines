@@ -222,7 +222,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 MERGE INTO "TestMerge1" "Target"
-USING (
+USING
+(
 	SELECT
 		"_"."Id",
 		"_"."Field1",

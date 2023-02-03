@@ -2,7 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "Person" "Target"
-USING (
+USING
+(
 	SELECT NULL "ID", NULL "FirstName", NULL "LastName", NULL "MiddleName", NULL "Gender"
 	FROM DUMMY	WHERE 1 = 0
 )
