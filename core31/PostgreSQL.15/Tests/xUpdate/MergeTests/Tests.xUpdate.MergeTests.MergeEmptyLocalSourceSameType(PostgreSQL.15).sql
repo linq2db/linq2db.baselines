@@ -222,8 +222,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(
+USING (
 	SELECT CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int)
 	FROM "TestMerge1"	WHERE 1 = 0
 )

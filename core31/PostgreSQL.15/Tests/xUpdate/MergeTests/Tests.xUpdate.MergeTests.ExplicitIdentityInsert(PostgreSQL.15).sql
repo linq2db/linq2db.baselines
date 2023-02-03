@@ -19,8 +19,7 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 12
 
 MERGE INTO "Person" "Target"
-USING
-(
+USING (
 	SELECT
 		t1."PersonID" as "ID",
 		"a_Patient"."Diagnosis"

@@ -27,8 +27,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "PKOnlyTable" "Target"
-USING
-(VALUES
+USING (VALUES
 	(1), (2), (3)
 ) "Source"
 (

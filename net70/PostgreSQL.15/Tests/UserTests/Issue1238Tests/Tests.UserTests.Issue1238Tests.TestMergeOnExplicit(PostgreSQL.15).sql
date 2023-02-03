@@ -10,8 +10,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "InheritanceParent" "Target"
-USING
-(VALUES
+USING (VALUES
 	(143,CAST(NULL AS text),1)
 ) "Source"
 (
@@ -53,8 +52,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "InheritanceParent" "Target"
-USING
-(VALUES
+USING (VALUES
 	(143,CAST(NULL AS text),1)
 ) "Source"
 (

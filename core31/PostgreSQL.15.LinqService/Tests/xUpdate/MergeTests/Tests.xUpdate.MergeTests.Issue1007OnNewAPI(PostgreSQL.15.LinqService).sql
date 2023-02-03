@@ -30,8 +30,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMergeIdentity" "Target"
-USING
-(VALUES
+USING (VALUES
 	(10)
 ) "Source"
 (

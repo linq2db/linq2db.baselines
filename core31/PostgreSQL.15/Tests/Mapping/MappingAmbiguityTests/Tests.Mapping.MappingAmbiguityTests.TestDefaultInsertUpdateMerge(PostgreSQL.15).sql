@@ -23,8 +23,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestTable" "Target"
-USING
-(
+USING (
 	SELECT
 		"Target_1"."ID",
 		"Target_1"."Field1",

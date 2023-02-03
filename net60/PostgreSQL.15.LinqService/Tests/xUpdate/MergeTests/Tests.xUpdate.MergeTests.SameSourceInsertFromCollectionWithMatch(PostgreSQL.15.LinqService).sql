@@ -222,8 +222,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(VALUES
+USING (VALUES
 	(3,NULL,3,NULL), (4,5,7,214), (5,10,4,NULL), (6,NULL,NULL,216)
 ) "Source"
 (

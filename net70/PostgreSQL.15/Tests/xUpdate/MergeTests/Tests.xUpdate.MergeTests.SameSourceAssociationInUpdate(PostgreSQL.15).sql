@@ -9,8 +9,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Person" "Target"
-USING
-(
+USING (
 	SELECT
 		t1."PersonID" as "ID",
 		t1."FirstName",
