@@ -8,8 +8,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(VALUES
+USING (VALUES
 	(0,1,2,4)
 ) "Source"
 (
@@ -61,8 +60,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(VALUES
+USING (VALUES
 	(10,11,12,14)
 ) "Source"
 (
@@ -114,8 +112,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(VALUES
+USING (VALUES
 	(20,21,22,24), (30,31,32,34)
 ) "Source"
 (

@@ -237,8 +237,7 @@ DECLARE @value Time(6)
 SET     @value = 00:12:00
 
 MERGE INTO "TestMerge1" "Target"
-USING
-(VALUES
+USING (VALUES
 	(3,@value), (4,@value), (5,@value), (6,@value)
 ) "Source"
 (

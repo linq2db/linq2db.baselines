@@ -9,8 +9,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Patient" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."PersonID",
 		"t1"."Diagnosis",

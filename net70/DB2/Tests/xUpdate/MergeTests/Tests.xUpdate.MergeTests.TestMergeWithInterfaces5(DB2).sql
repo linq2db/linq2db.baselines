@@ -26,8 +26,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "ReviewIndexes" "Target"
-USING
-(
+USING (
 	SELECT
 		"t1"."Id",
 		"t1"."Value" as "Value_1"
