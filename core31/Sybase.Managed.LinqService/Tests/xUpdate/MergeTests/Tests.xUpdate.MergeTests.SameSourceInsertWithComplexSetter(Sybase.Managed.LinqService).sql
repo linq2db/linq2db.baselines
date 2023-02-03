@@ -228,7 +228,8 @@ DECLARE @idx Integer -- Int32
 SET     @idx = 6
 
 MERGE INTO [TestMerge1] [Target]
-USING (
+USING
+(
 	SELECT
 		[t1].[Id],
 		[t1].[Field2]

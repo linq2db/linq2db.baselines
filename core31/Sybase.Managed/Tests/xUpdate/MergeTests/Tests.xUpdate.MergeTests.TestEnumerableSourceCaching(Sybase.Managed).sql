@@ -22,7 +22,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [CacheTestTable] [Target]
-USING (
+USING
+(
 	SELECT 1 AS [Id], 1 AS [Value_1]
 	UNION ALL
 	SELECT 2, 2) [Source]
@@ -64,7 +65,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [CacheTestTable] [Target]
-USING (
+USING
+(
 	SELECT 1 AS [Id], 1 AS [Value_1]
 	UNION ALL
 	SELECT 2, 4
