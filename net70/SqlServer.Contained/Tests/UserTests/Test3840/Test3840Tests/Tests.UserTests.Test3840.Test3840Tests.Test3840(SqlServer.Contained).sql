@@ -1,0 +1,49 @@
+﻿BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [Common_Topology_Locations]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
+	CREATE TABLE [Common_Topology_Locations]
+	(
+		[StartDateTime]    DateTime2     NULL,
+		[PreNotification]  BigInt        NULL,
+		[PreNotification2] Time          NULL,
+		[PreNotification3] Time      NOT NULL,
+		[StrField]         DateTime2     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+INSERT INTO [Common_Topology_Locations]
+(
+	[StartDateTime],
+	[PreNotification],
+	[PreNotification2],
+	[PreNotification3],
+	[StrField]
+)
+VALUES
+(DATETIME2FROMPARTS(2023, 1, 31, 22, 50, 59, 9308682, 7),CAST(20000000000 AS BIGINT),TIMEFROMPARTS(0, 33, 20, 0, 7),TIMEFROMPARTS(0, 33, 20, 0, 7),DATETIME2FROMPARTS(2023, 1, 31, 0, 0, 0, 0, 7))
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[t].[StartDateTime],
+	[t].[PreNotification],
+	[t].[PreNotification2],
+	[t].[PreNotification3],
+	[t].[StrField]
+FROM
+	[Common_Topology_Locations] [t]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [Common_Topology_Locations]
+
