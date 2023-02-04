@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `InstanceClass`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `InstanceClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `InstanceClass`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,120)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -53,7 +53,7 @@ FROM
 	`InstanceClass` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `InstanceClass`
 

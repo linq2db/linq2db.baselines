@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @defValue Int32
 SET     @defValue = 10
 

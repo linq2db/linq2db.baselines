@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @str VarChar(3) -- String
 SET     @str = 'o%h'
 

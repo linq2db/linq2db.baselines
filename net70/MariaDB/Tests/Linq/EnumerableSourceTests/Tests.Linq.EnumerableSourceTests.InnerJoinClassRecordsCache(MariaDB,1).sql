@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`FirstName`,
@@ -15,7 +15,7 @@ FROM
 			SELECT 3 FROM DUAL) `n` ON `p`.`PersonID` = `n`.`PersonID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`FirstName`,

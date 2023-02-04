@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1363`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Issue1363`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `Issue1363`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @testId Guid
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id2 Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @take Int32
@@ -77,7 +77,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1363`
 

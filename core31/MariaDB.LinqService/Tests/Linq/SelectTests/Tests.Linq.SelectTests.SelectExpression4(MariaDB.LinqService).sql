@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `SelectExpressionTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -39,7 +39,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SelectExpressionTable`
 

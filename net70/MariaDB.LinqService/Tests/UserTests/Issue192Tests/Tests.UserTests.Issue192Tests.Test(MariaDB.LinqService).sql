@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TypeConvertTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TypeConvertTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `TypeConvertTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue String -- AnsiStringFixedLength
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Verified'
 DECLARE @BoolValue String -- AnsiStringFixedLength
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -68,7 +68,7 @@ WHERE
 	`_`.`BoolValue` = 'N'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -78,7 +78,7 @@ WHERE
 	`_`.`BoolValue` = 'Y'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
@@ -90,7 +90,7 @@ WHERE
 	`_`.`GuidValue` = @GuidValue
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue_1 String -- AnsiStringFixedLength
 SET     @BoolValue_1 = 'N'
 DECLARE @take Int32
@@ -107,7 +107,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue String -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 DECLARE @take Int32
@@ -124,7 +124,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue_1 String -- AnsiStringFixedLength
 SET     @BoolValue_1 = 'N'
 DECLARE @take Int32
@@ -141,7 +141,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue String -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 DECLARE @take Int32
@@ -158,7 +158,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue_1 String -- AnsiStringFixedLength
 SET     @BoolValue_1 = 'N'
 DECLARE @take Int32
@@ -175,7 +175,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue String -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 DECLARE @take Int32
@@ -192,7 +192,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue_1 String -- AnsiStringFixedLength
 SET     @BoolValue_1 = 'N'
 DECLARE @take Int32
@@ -209,7 +209,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue String -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 DECLARE @take Int32
@@ -226,7 +226,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue_1 String -- AnsiStringFixedLength
 SET     @BoolValue_1 = 'N'
 DECLARE @take Int32
@@ -243,7 +243,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BoolValue String -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 DECLARE @take Int32
@@ -260,7 +260,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @take Int32
@@ -277,7 +277,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @take Int32
@@ -294,7 +294,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TypeConvertTable`
 

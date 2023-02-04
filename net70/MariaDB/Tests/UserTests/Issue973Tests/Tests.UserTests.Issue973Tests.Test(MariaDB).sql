@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @values_1 Int32
 SET     @values_1 = 1
 DECLARE @values_2 Int32
@@ -18,7 +18,7 @@ WHERE
 	(`o`.`ParentID` IN (@values_1, @values_2, @values_3) OR `o`.`ParentID` = @param)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 4
 
@@ -31,7 +31,7 @@ WHERE
 	(`o`.`ParentID` IN (1, 2, 3) OR `o`.`ParentID` IS NULL OR `o`.`ParentID` = @param)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @values_1 Int32
 SET     @values_1 = 4
 DECLARE @values_2 Int32
@@ -50,7 +50,7 @@ WHERE
 	(`o`.`ParentID` IN (@values_1, @values_2, @values_3) OR `o`.`ParentID` = @param)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 4
 

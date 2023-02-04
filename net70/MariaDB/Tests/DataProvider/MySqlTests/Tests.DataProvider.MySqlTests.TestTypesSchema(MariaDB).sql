@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TestSchemaTypesTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TestSchemaTypesTable`
 (
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `TestSchemaTypesTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 
 SELECT
@@ -91,7 +91,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 
 			SELECT
@@ -113,7 +113,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 
 SELECT
@@ -133,7 +133,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 
 SELECT
@@ -155,7 +155,7 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TestSchemaTypesTable`
 

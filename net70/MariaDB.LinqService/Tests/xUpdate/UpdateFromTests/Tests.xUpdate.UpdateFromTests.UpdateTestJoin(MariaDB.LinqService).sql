@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 (
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `UpdatedEntities`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 0
 DECLARE @Value1 Int32
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @Value1 Int32
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 2
 DECLARE @Value1 Int32
@@ -108,7 +108,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 3
 DECLARE @Value1 Int32
@@ -138,12 +138,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `NewEntities`
 (
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `NewEntities`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 0
 DECLARE @Value1 Int32
@@ -182,7 +182,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @Value1 Int32
@@ -208,7 +208,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 2
 DECLARE @Value1 Int32
@@ -234,7 +234,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 3
 DECLARE @Value1 Int32
@@ -260,7 +260,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @int1 Int32
 SET     @int1 = 11
 DECLARE @int2 Int32
@@ -281,7 +281,7 @@ WHERE
 	`t`.`id` <> @someId
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`v`.`id`,
@@ -292,12 +292,12 @@ FROM
 	`UpdatedEntities` `v`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NewEntities`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `UpdatedEntities`
 

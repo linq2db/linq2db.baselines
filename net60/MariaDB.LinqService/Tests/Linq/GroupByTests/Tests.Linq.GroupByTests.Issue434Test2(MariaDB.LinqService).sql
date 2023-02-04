@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`PersonID`,
@@ -12,7 +12,7 @@ WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`p`.`FirstName`,

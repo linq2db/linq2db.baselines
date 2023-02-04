@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `element_services`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `element_services`
 (
@@ -16,12 +16,12 @@ CREATE TABLE IF NOT EXISTS `element_services`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(18) -- String
 SET     @id = 'TestProcessService'
-DECLARE @is_process_service UByte -- Boolean
+DECLARE @is_process_service Bool -- Boolean
 SET     @is_process_service = 1
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `element_services`
@@ -38,12 +38,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(18) -- String
 SET     @id = 'TestElementService'
-DECLARE @is_process_service UByte -- Boolean
+DECLARE @is_process_service Bool -- Boolean
 SET     @is_process_service = 0
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `element_services`
@@ -60,12 +60,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `component_categories`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `component_categories`
 (
@@ -77,12 +77,12 @@ CREATE TABLE IF NOT EXISTS `component_categories`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(20) -- String
 SET     @id = 'TestProcessCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `component_categories`
@@ -99,12 +99,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(20) -- String
 SET     @id = 'TestProcessCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `component_categories`
@@ -121,12 +121,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(20) -- String
 SET     @id = 'TestElementCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `component_categories`
@@ -143,12 +143,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(20) -- String
 SET     @id = 'TestElementCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `component_categories`
@@ -165,12 +165,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Components`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Components`
 (
@@ -183,14 +183,14 @@ CREATE TABLE IF NOT EXISTS `Components`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(21) -- String
 SET     @id = 'TestProcessComponent1'
 DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestProcessCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `Components`
@@ -209,14 +209,14 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(21) -- String
 SET     @id = 'TestProcessComponent2'
 DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestProcessCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `Components`
@@ -235,14 +235,14 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(21) -- String
 SET     @id = 'TestElementComponent1'
 DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestElementCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `Components`
@@ -261,14 +261,14 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id VarChar(21) -- String
 SET     @id = 'TestElementComponent2'
 DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestElementCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted UByte -- Boolean
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 0
 
 INSERT INTO `Components`
@@ -287,8 +287,8 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @is_deleted UByte -- Boolean
+-- MariaDB MySqlConnector MySql
+DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 1
 
 UPDATE
@@ -301,7 +301,7 @@ WHERE
 	`ctg`.`id` = 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`id`,
@@ -313,7 +313,7 @@ WHERE
 	`x`.`is_deleted` = 1 AND `x`.`service_id` = 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`id`,
@@ -325,17 +325,17 @@ WHERE
 	`x`.`is_deleted` = 0 AND `x`.`service_id` <> 'TestProcessService'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Components`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `component_categories`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `element_services`
 

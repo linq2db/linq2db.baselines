@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 10
 
@@ -28,7 +28,7 @@ ORDER BY
 	`_c`.`ChildID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 10
 

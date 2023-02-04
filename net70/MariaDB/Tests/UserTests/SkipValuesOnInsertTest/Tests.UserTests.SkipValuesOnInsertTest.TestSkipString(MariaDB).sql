@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Insert_Table`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `PR_1598_Insert_Table`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `PR_1598_Insert_Table`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Age Int32
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -49,7 +49,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Age Int32
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -82,7 +82,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Insert_Table`
 

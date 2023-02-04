@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`ID`,
@@ -14,8 +14,8 @@ FROM
 	`LinqDataTypes` `t`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @param_1 UByte -- Boolean
+-- MariaDB MySqlConnector MySql
+DECLARE @param_1 Bool -- Boolean
 SET     @param_1 = 1
 
 SELECT

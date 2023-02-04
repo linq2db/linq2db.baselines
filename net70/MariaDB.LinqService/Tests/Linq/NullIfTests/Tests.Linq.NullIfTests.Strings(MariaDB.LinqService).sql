@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Src`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Src`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Src`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Int_1 Int32
 SET     @Int_1 = 2
 DECLARE @NullableInt Int32
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Int_1 Int32
 SET     @Int_1 = 3
 DECLARE @NullableInt Int32
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`String`, 'abc')
@@ -77,7 +77,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`String`, 'xyz')
@@ -87,7 +87,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`String`, NULL)
@@ -97,7 +97,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`NullableString`, 'abc')
@@ -107,7 +107,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`NullableString`, 'xyz')
@@ -117,7 +117,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	NULLIF(`s`.`NullableString`, NULL)
@@ -127,7 +127,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Src`
 

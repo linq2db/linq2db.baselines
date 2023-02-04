@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 DECLARE @take Int32
@@ -18,7 +18,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'
 DECLARE @take Int32

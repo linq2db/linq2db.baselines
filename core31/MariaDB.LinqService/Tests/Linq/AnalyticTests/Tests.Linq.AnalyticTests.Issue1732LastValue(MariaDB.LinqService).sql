@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Position`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Position`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Position`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Group_1 Int32
 SET     @Group_1 = 7
 DECLARE @Order_1 Int32
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Group_1 Int32
 SET     @Group_1 = 7
 DECLARE @Order_1 Int32
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Group_1 Int32
 SET     @Group_1 = 7
 DECLARE @Order_1 Int32
@@ -80,7 +80,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Group_1 Int32
 SET     @Group_1 = 7
 DECLARE @Order_1 Int32
@@ -102,7 +102,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @group_1 Int32
 SET     @group_1 = 7
 
@@ -115,7 +115,7 @@ WHERE
 	`p`.`Group` = @group_1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Position`
 

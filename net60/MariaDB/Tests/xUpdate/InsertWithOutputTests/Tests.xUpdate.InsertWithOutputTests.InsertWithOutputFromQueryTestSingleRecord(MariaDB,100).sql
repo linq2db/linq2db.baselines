@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TableWithData`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `TableWithData`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `TableWithData`
 (
@@ -35,12 +35,12 @@ VALUES
 (10,-10,'Str10')
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DestinationTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `DestinationTable`
 (
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `DestinationTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 100
 DECLARE @param_1 Int32
@@ -76,7 +76,7 @@ RETURNING
 	`DestinationTable`.`ValueStr`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`s`.`Id`,
@@ -88,12 +88,12 @@ WHERE
 	`s`.`Id` = 3
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DestinationTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 

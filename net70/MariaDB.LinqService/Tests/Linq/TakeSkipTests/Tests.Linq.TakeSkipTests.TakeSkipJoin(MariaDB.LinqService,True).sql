@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ID`,
@@ -14,7 +14,7 @@ FROM
 	`LinqDataTypes` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 15
 DECLARE @take_1 Int32

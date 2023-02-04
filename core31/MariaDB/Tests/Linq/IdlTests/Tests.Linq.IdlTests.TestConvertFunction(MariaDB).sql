@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`PersonID`
@@ -7,7 +7,7 @@ FROM
 	`Patient` `x`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`PersonID`,
@@ -16,7 +16,7 @@ FROM
 	`Person` `x`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x_1`.`PersonID`,

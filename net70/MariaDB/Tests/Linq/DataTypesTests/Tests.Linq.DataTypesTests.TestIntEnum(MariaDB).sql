@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `IntEnumTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `IntEnumTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `IntEnumTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `IntEnumTable`
 (
@@ -27,7 +27,7 @@ VALUES
 (3,2,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Column_1 Int32
 SET     @Column_1 = 2
 DECLARE @ColumnNullable Int32
@@ -43,7 +43,7 @@ WHERE
 	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`r`.`ColumnNullable`,
@@ -55,14 +55,14 @@ WHERE
 	`r`.`Column` = 2 AND `r`.`ColumnNullable` = 3
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`IntEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable Int32
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable Int32
 SET     @ColumnNullable = 3
 DECLARE @Column_1 Int32
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -118,14 +118,14 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`IntEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `IntEnumTable`
 (
@@ -138,7 +138,7 @@ VALUES
 (3,2,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -150,27 +150,17 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`IntEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-INSERT INTO `IntEnumTable`
-(
-	`ColumnNullable`,
-	`Column`,
-	`Id`
-)
-VALUES
-(NULL,1,1),
-(3,2,2)
+INSERT BULK `IntEnumTable`(ColumnNullable, Column, Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -182,7 +172,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `IntEnumTable`
 

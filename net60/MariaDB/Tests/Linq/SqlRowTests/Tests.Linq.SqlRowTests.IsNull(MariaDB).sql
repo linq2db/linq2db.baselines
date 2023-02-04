@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Ints`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Ints`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `Ints`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Ints`
 (
@@ -32,7 +32,7 @@ VALUES
 (1,2,3,4,5,NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -42,7 +42,7 @@ WHERE
 	`i`.`One` IS NULL AND `i`.`Two` IS NULL AND `i`.`Three` IS NULL
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -52,7 +52,7 @@ WHERE
 	`i`.`One` IS NULL AND `i`.`Nil` IS NULL
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -62,7 +62,7 @@ WHERE
 	`i`.`Nil` IS NULL
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Ints`
 

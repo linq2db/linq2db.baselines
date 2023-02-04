@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`m_1`.`ParentID`,
@@ -23,7 +23,7 @@ FROM
 		) `t1` ON `t1`.`ParentID` = `m_1`.`ParentID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`m_1`.`ParentID`,

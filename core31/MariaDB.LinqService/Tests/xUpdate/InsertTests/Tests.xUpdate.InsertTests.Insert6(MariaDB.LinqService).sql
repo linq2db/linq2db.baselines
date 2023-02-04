@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`Value1` = 11
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Parent`
 (
@@ -24,7 +24,7 @@ WHERE
 	`c_1`.`ChildID` = 11
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -34,7 +34,7 @@ WHERE
 	`p`.`Value1` = 11
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM

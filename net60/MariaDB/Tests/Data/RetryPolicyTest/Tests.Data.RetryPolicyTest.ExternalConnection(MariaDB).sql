@@ -1,10 +1,10 @@
 ﻿BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 
 DROP TABLE IF EXISTS `MyEntity`
 
 BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `MyEntity`
 (
@@ -13,12 +13,12 @@ CREATE TABLE IF NOT EXISTS `MyEntity`
 )
 
 BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 
 DROP TABLE IF EXISTS `MyEntity`
 
 BeforeExecute
---  MySql.Official MySql
+--  MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `MyEntity`
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`ParentID` >= 1000
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Parent`
 (
@@ -20,7 +20,7 @@ VALUES
 (1001,NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
@@ -29,7 +29,7 @@ WHERE
 	(`t1`.`ParentID` = 1000 AND `t1`.`Value1` IS NULL OR `t1`.`ParentID` = 1001 AND `t1`.`Value1` IS NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM

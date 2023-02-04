@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`TestMerge1` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Field1 Int32
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Field1 Int32
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Field1 Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 4
 DECLARE @Field1 Int32
@@ -110,14 +110,14 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`TestMerge2` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Field1 Int32
@@ -143,7 +143,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 4
 DECLARE @Field1 Int32
@@ -169,7 +169,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 5
 DECLARE @Field1 Int32
@@ -195,7 +195,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Field1 Int32
@@ -221,7 +221,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -236,7 +236,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Extract(hour from Date_Add(`t`.`DateTimeValue`, Interval 1 Hour))

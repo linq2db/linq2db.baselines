@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 UPDATE
 	`Parent` `t1`
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @take Int32
 SET     @take = 1
 

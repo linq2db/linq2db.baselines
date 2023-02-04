@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ BKA(p) BKA(c_1) */
 	`p`.`ParentID`,

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Update_Enum_Table`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `PR_1598_Update_Enum_Table`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `PR_1598_Update_Enum_Table`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(3) -- String
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -59,7 +59,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Int32
@@ -79,7 +79,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -95,7 +95,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Int32
@@ -112,7 +112,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -128,7 +128,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Update_Enum_Table`
 

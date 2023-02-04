@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `DynamicTable`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `DynamicTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @NotIdentifier Int32
 SET     @NotIdentifier = 77
 DECLARE @Value_1 Int32
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @NotIdentifier Int32
 SET     @NotIdentifier = 77
 DECLARE @Value_1 Int32
@@ -52,7 +52,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Not Identifier`,
@@ -64,7 +64,7 @@ GROUP BY
 	`t1`.`Not Identifier`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DynamicTable`
 

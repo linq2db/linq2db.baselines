@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Ints`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Ints`
 (
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `Ints`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @One Int32
 SET     @One = 1
 DECLARE @Two Int32
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -61,7 +61,7 @@ WHERE
 	(`i`.`One`, `i`.`Two`, `i`.`Three`) = (`i`.`One`, `i`.`One` * 2, `i`.`Four` - 1)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -71,7 +71,7 @@ WHERE
 	(`i`.`One`, `i`.`Two`, `i`.`Four`) = (`i`.`One`, `i`.`Two`, `i`.`Three`)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -81,7 +81,7 @@ WHERE
 	(`i`.`One`, `i`.`Nil`, `i`.`Three`) = (`i`.`One`, `i`.`Two`, `i`.`Three`)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -91,7 +91,7 @@ WHERE
 	(1, `i`.`Nil`, 3) = (`i`.`One`, `i`.`Nil`, `i`.`Three`)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -101,7 +101,7 @@ WHERE
 	(1, NULL, 3) = (`i`.`One`, `i`.`Nil`, `i`.`Three`)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Ints`
 

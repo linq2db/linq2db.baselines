@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `T1351Model`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `T1351Model`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `T1351Model`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`ID`,
@@ -26,7 +26,7 @@ WHERE
 	`_`.`TestField` = 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`ID`,
@@ -38,7 +38,7 @@ WHERE
 	(`_`.`TestNullable` <> 1 OR `_`.`TestNullable` IS NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `T1351Model`
 

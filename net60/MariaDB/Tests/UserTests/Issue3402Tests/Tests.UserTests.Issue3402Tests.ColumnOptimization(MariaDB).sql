@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `VEMPLOYEE_SCH_SEC`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCH_SEC`
 (
@@ -16,12 +16,12 @@ CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCH_SEC`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `VEMPLOYEE_SCHDL_PERM`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCHDL_PERM`
 (
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCHDL_PERM`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`ess`.`ID`
@@ -49,7 +49,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`ess`.`ID`
@@ -57,12 +57,12 @@ FROM
 	`VEMPLOYEE_SCH_SEC` `ess`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `VEMPLOYEE_SCHDL_PERM`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `VEMPLOYEE_SCH_SEC`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`t1`.`PersonID` > 4
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `Person`
 (
@@ -24,12 +24,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Update_Null_Table`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `PR_1598_Update_Null_Table`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `PR_1598_Update_Null_Table`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -53,7 +53,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Int32
@@ -70,7 +70,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -85,7 +85,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Id Int32
@@ -99,7 +99,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -114,7 +114,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `PR_1598_Update_Null_Table`
 

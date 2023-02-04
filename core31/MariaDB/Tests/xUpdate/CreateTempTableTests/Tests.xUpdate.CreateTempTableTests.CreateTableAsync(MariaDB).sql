@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `TempTable`
 (
@@ -24,7 +24,7 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`ID`
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 

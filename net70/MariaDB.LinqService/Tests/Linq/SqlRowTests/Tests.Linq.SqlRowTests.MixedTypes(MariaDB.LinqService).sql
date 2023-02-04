@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Mixed`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Mixed`
 (
@@ -16,16 +16,16 @@ CREATE TABLE IF NOT EXISTS `Mixed`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Int_1 Int32
 SET     @Int_1 = 1
 DECLARE @Str VarChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date_1 DateTime
+DECLARE @Date_1 Datetime -- DateTime
 SET     @Date_1 = '2001-01-01'
 DECLARE @Double_1 Double
 SET     @Double_1 = 1
-DECLARE @Bool UByte -- Boolean
+DECLARE @Bool Bool -- Boolean
 SET     @Bool = 1
 
 INSERT INTO `Mixed`
@@ -46,16 +46,16 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Int_1 Int32
 SET     @Int_1 = 2
 DECLARE @Str VarChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date_1 DateTime
+DECLARE @Date_1 Datetime -- DateTime
 SET     @Date_1 = '2002-02-02'
 DECLARE @Double_1 Double
 SET     @Double_1 = 2
-DECLARE @Bool UByte -- Boolean
+DECLARE @Bool Bool -- Boolean
 SET     @Bool = 0
 
 INSERT INTO `Mixed`
@@ -76,7 +76,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -94,7 +94,7 @@ WHERE
 	)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Mixed`
 

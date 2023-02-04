@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 (
@@ -34,7 +34,12 @@ CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `NeedS.esca Pin``g`
 (
@@ -65,7 +70,7 @@ VALUES
 (2,18446744073709551615,9223372036854775807,18446744073709551615,1073741823,1,1,0x010203,0x040506,0x070809,0x0A0B0C,0x0D0E0F,0x101112,0x131415,0x161718,0x191A1B,0x1C1D1E,0x1F2021,0x222324,0x252627,0x28292A)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,
@@ -95,7 +100,7 @@ ORDER BY
 	`t1`.`ne.eds ``escaPing`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

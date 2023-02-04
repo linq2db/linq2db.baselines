@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32

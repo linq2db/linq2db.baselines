@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 DECLARE @ID Int32
@@ -41,7 +41,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @paramCopy Int32
@@ -83,7 +83,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 4
 DECLARE @ID_1 Int32
@@ -125,7 +125,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 DECLARE @ID Int32
@@ -167,7 +167,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 4
 DECLARE @ID_1 Int32
@@ -209,7 +209,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @paramCopy Int32

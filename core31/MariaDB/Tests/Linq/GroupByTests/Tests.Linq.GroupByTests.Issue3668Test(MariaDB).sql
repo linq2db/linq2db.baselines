@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -17,7 +17,7 @@ GROUP BY
 	`x`.`PersonID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @LastName VarChar(4) -- String
@@ -40,7 +40,7 @@ WHERE
 	`x`.`PersonID` = @ID_1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @LastName VarChar(4) -- String

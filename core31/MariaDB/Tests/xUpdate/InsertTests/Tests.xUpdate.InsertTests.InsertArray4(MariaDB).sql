@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
@@ -8,14 +8,14 @@ WHERE
 	`t1`.`ID` > 1000
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @MoneyValue Decimal(1, 0)
+DECLARE @MoneyValue NewDecimal(1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = NULL
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue Guid
 SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -65,7 +65,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM

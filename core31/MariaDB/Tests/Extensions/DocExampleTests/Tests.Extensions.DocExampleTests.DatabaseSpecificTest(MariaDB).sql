@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ QB_NAME(qb) NO_BKA(t1.p@qb) INDEX(t1.p@qb PK_Parent) MAX_EXECUTION_TIME(1000) BKA(t1.c_1@qb) */
 	`t`.`PersonID`,

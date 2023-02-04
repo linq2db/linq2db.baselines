@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ JOIN_ORDER(p) JOIN_ORDER(c_1) */
 	`p`.`ParentID`,

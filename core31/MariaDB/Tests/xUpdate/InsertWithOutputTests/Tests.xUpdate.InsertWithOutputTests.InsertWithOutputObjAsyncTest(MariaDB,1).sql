@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TableWithData`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `TableWithData`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value_1 Int32
@@ -40,7 +40,7 @@ RETURNING
 	`TableWithData`.`ValueStr`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 

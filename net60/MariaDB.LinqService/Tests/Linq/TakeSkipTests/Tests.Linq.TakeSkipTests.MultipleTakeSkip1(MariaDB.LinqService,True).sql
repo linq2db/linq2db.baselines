@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value1'
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value2'
 
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value3'
 
@@ -54,7 +54,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value4'
 
@@ -68,7 +68,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value5'
 
@@ -82,7 +82,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value6'
 
@@ -96,7 +96,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value7'
 
@@ -110,7 +110,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(6) -- AnsiString
 SET     @Value_1 = 'Value8'
 
@@ -124,7 +124,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 3
 DECLARE @skip_1 Int32
@@ -139,7 +139,7 @@ ORDER BY
 LIMIT @skip_2, @skip_1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

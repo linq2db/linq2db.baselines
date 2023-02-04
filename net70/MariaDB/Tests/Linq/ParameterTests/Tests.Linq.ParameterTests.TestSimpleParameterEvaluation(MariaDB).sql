@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`FirstName`,
@@ -13,7 +13,7 @@ WHERE
 	`_`.`PersonID` IN (2, 3, 4)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`FirstName`,

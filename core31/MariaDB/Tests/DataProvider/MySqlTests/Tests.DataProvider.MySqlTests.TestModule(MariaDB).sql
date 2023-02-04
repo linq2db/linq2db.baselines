@@ -1,31 +1,31 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SET SQL_MODE='ORACLE'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @i Int32
 SET     @i = 1
 
-CALL TEST_PROCEDURE(@i)
+TEST_PROCEDURE
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @i Int32
 SET     @i = 1
 
-CALL TEST_PACKAGE1.TEST_PROCEDURE(@i)
+TEST_PACKAGE1.TEST_PROCEDURE
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @i Int32
 SET     @i = 1
 
-CALL TEST_PACKAGE2.TEST_PROCEDURE(@i)
+TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -36,7 +36,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -47,7 +47,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -58,7 +58,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 set session sql_mode=default
 

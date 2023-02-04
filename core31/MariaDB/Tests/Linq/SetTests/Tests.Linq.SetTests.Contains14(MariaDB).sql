@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END as `c1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 

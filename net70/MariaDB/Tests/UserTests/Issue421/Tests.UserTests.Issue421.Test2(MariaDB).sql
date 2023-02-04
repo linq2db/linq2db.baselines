@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `BlobClass`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `BlobClass`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `BlobClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `BlobClass`
 (
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`Id`,
@@ -41,7 +41,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 UPDATE
 	`BlobClass` `_`
@@ -51,7 +51,7 @@ WHERE
 	`_`.`Id` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`_`.`Id`,
@@ -63,7 +63,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `BlobClass`
 

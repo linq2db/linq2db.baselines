@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -79,7 +79,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Value1 VarChar -- String
@@ -113,7 +113,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -135,7 +135,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Value1 VarChar(21) -- String
@@ -154,7 +154,7 @@ DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar -- AnsiString
 SET     @AnotherBoolValue = 'T'
-DECLARE @DateTimeNullable DateTime
+DECLARE @DateTimeNullable Datetime -- DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO `ValueConversion`
@@ -185,7 +185,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -207,7 +207,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -215,7 +215,7 @@ FROM
 	`ValueConversion` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

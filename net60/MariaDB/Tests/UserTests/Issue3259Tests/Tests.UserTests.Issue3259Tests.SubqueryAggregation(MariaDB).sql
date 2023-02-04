@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `EmployeeTimeOffBalance`
 (
@@ -29,12 +29,12 @@ VALUES
 (2,1,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Employee`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Employee`
 (
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `Employee`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Employee`
 (
@@ -55,12 +55,12 @@ VALUES
 (2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequest`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `LeaveRequest`
 (
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `LeaveRequest`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `LeaveRequest`
 (
@@ -85,12 +85,12 @@ VALUES
 (4,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequestDateEntry`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 (
@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `LeaveRequestDateEntry`
 (
@@ -119,7 +119,7 @@ VALUES
 (4,15,4,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`WithParentReference`,
@@ -192,22 +192,22 @@ ORDER BY
 	Coalesce(`t1`.`WithoutParentReference`, 0) DESC
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequestDateEntry`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequest`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Employee`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
 

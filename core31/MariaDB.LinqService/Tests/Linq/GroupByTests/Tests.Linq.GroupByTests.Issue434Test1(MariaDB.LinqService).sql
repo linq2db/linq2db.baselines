@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @input_1 VarChar(4) -- String
 SET     @input_1 = 'test'
 
@@ -14,7 +14,7 @@ WHERE
 	LOCATE(@input_1, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @input_1 VarChar(4) -- String
 SET     @input_1 = 'test'
 

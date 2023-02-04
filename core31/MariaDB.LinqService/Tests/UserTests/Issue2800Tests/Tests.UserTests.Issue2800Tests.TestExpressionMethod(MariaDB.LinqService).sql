@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Car`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Car`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Car`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(7) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name VarChar(9) -- String
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -60,38 +60,7 @@ FROM
 	`Car` `x`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	`x`.`Name` = 'Special'
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -102,7 +71,7 @@ WHERE
 	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -113,7 +82,38 @@ WHERE
 	`x`.`Name` = 'Special'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	`x`.`Name` = 'Special'
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Car`
 

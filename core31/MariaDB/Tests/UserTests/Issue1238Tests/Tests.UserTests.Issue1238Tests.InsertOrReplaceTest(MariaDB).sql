@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -32,7 +32,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)
@@ -40,7 +40,7 @@ FROM
 	`InheritanceParent` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -64,7 +64,7 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data_1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Count(*)

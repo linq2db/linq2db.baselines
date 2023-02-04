@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 (
@@ -34,7 +34,12 @@ CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
+
+SET GLOBAL local_infile=ON
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Bit_1 UInt64
@@ -128,7 +133,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Bit_1 UInt64
@@ -147,9 +152,9 @@ DECLARE @Binary_1 Blob(3) -- Binary
 SET     @Binary_1 = 0x010203
 DECLARE @Binary_2 Blob(3) -- Binary
 SET     @Binary_2 = 0x040506
-DECLARE @Binary_3 Blob(3) -- Object
+DECLARE @Binary_3 Blob(3) -- Binary
 SET     @Binary_3 = 0x070809
-DECLARE @Binary_4 Blob(3) -- Object
+DECLARE @Binary_4 Blob(3) -- Binary
 SET     @Binary_4 = 0x0A0B0C
 DECLARE @VarBinary_1 Blob(3) -- Binary
 SET     @VarBinary_1 = 0x0D0E0F
@@ -222,7 +227,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,
@@ -252,7 +257,7 @@ ORDER BY
 	`t1`.`ne.eds ``escaPing`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

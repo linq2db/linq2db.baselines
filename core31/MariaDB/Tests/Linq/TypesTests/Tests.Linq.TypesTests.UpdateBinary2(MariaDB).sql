@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @ID Int32
@@ -13,7 +13,7 @@ WHERE
 	`t`.`ID` = @ID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0504030201
 DECLARE @ID Int32
@@ -27,7 +27,7 @@ WHERE
 	`t`.`ID` = @ID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`ID`,

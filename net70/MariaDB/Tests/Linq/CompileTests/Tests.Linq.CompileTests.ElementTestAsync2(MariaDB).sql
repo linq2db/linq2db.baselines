@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 DECLARE @take Int32
@@ -15,7 +15,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 2
 DECLARE @take Int32

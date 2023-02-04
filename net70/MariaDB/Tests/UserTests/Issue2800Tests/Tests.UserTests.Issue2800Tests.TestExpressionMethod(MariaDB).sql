@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Car`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Car`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Car`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Car`
 (
@@ -27,7 +27,7 @@ VALUES
 (2,'NoSpecial')
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -36,38 +36,7 @@ FROM
 	`Car` `x`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	`x`.`Name` = 'Special'
-
-BeforeExecute
--- MariaDB MySql.Official MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-
-BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -78,7 +47,7 @@ WHERE
 	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x`.`Id`,
@@ -89,7 +58,38 @@ WHERE
 	`x`.`Name` = 'Special'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	`x`.`Name` = 'Special'
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Car`
 

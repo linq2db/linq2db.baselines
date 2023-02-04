@@ -1,22 +1,22 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 `testdata`.`AddIssue792Record`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -25,7 +25,7 @@ SET     @aOutParam = NULL
 `testdata`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32
@@ -36,14 +36,14 @@ SET     @param1 = NULL
 `testdata`.`TestProcedure`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @i Int32
 SET     @i = NULL
 
 `testdata`.`TEST_PROCEDURE`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -72,11 +72,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -102,7 +102,7 @@ DECLARE @BigInt Int64
 SET     @BigInt = NULL
 DECLARE @BigIntUnsigned UInt64
 SET     @BigIntUnsigned = NULL
-DECLARE @Decimal Decimal
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = NULL
 DECLARE @Float Float -- Single
 SET     @Float = NULL
@@ -148,7 +148,7 @@ SET     @GeometryCollection = NULL
 `testdata`.`Issue2313Parameters`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @VarCharDefault VarChar(4000) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -177,11 +177,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar(2147483647) -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -205,7 +205,7 @@ DECLARE @BigInt Int64
 SET     @BigInt = NULL
 DECLARE @BigIntUnsigned UInt64
 SET     @BigIntUnsigned = NULL
-DECLARE @Decimal Decimal
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = NULL
 DECLARE @Float Float -- Single
 SET     @Float = NULL
@@ -229,6 +229,24 @@ DECLARE @Enum VarChar(3) -- AnsiString
 SET     @Enum = NULL
 DECLARE @Set VarChar(3) -- AnsiString
 SET     @Set = NULL
+DECLARE @Json VarChar(2147483647) -- String
+SET     @Json = NULL
+DECLARE @Geometry VarChar -- String
+SET     @Geometry = NULL
+DECLARE @Point VarChar -- String
+SET     @Point = NULL
+DECLARE @LineString VarChar -- String
+SET     @LineString = NULL
+DECLARE @Polygon VarChar -- String
+SET     @Polygon = NULL
+DECLARE @MultiPoint VarChar -- String
+SET     @MultiPoint = NULL
+DECLARE @MultiLineString VarChar -- String
+SET     @MultiLineString = NULL
+DECLARE @MultiPolygon VarChar -- String
+SET     @MultiPolygon = NULL
+DECLARE @GeometryCollection VarChar -- String
+SET     @GeometryCollection = NULL
 DECLARE @Year Int32
 SET     @Year = NULL
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue913Test`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Issue913Test`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Issue913Test`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @InstrumentID Int32
 SET     @InstrumentID = 1
 DECLARE @TradingStatus String -- StringFixedLength
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @InstrumentID Int32
 SET     @InstrumentID = 2
 DECLARE @TradingStatus String(1) -- StringFixedLength
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @InstrumentID Int32
 SET     @InstrumentID = 3
 DECLARE @TradingStatus String(1) -- StringFixedLength
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`c1`,
@@ -95,7 +95,7 @@ GROUP BY
 	`t1`.`c1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue913Test`
 

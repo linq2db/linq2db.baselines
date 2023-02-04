@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ NO_BNL(p) NO_BNL(c_1) */
 	`p`.`ParentID`,

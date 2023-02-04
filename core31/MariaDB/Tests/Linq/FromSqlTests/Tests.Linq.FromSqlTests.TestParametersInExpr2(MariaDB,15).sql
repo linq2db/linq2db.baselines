@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `sample_class`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `sample_class`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `sample_class`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `sample_class`
 (
@@ -43,7 +43,7 @@ VALUES
 (20,'Str_20')
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @startId Int64
 SET     @startId = 5
 DECLARE @p_1 Int32
@@ -63,7 +63,7 @@ ORDER BY
 	`s`.`id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32
@@ -80,7 +80,7 @@ ORDER BY
 	`t`.`id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `sample_class`
 

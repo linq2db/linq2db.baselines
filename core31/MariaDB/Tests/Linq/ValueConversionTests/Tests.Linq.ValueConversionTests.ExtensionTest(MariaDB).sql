@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `ValueConversion`
 (
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `ValueConversion`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `ValueConversion`
 (
@@ -51,7 +51,7 @@ VALUES
 (10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -72,7 +72,7 @@ WHERE
 	`t`.`Value2` = @testedList
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ValueConversion`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x_2`.`ChildID`,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN `Person` `x_1` ON `x_2`.`ChildID` = `x_1`.`PersonID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`x_2`.`ChildID`,

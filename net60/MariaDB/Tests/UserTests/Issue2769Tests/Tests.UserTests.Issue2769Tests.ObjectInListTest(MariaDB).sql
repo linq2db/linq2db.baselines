@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `SampleClass`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `SampleClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @_default Int32
 SET     @_default = 0
 
@@ -26,7 +26,7 @@ WHERE
 	(`a`.`Id` = 0 AND Coalesce(`a`.`NullValue`, @_default) = 0 OR `a`.`Id` = 1 AND Coalesce(`a`.`NullValue`, @_default) = 1 OR `a`.`Id` = 2 AND Coalesce(`a`.`NullValue`, @_default) = 2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SampleClass`
 

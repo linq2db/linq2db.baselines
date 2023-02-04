@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -26,7 +26,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -36,7 +36,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -46,7 +46,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -56,7 +56,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -66,7 +66,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -76,7 +76,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 

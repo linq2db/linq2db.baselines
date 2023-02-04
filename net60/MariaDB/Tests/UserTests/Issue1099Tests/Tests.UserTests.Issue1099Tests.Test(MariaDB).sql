@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `BackgroundTask`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `BackgroundTask`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `BackgroundTask`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @personId Int32
 SET     @personId = 1
 
@@ -56,7 +56,7 @@ WHERE
 	`task_1`.`PersonID` = @personId
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `BackgroundTask`
 

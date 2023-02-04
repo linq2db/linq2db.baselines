@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -22,7 +22,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -32,7 +32,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -42,7 +42,7 @@ VALUES
 (3)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -52,7 +52,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -62,7 +62,7 @@ VALUES
 (20)
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -72,7 +72,7 @@ VALUES
 (30)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

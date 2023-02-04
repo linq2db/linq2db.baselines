@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 1001
 DECLARE @param Int32
@@ -21,7 +21,7 @@ RETURNING
 	`Child`.`ChildID` + `Child`.`ParentID` + @param
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`c_1`.`ChildID`,
@@ -32,7 +32,7 @@ WHERE
 	`c_1`.`ChildID` > 1000
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
