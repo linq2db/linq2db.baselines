@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
 
@@ -21,14 +21,14 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @MoneyValue Decimal(5, 4)
+-- MariaDB MySqlConnector MySql
+DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue Guid
 SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'
@@ -59,7 +59,7 @@ WHERE
 	`t1`.`ID` = @ID
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @take Int32
@@ -83,14 +83,14 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @MoneyValue Decimal(5, 4)
+-- MariaDB MySqlConnector MySql
+DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue Guid
 SET     @GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'

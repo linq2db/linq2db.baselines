@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 2
 
@@ -12,7 +12,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -25,7 +25,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -38,7 +38,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -51,7 +51,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 

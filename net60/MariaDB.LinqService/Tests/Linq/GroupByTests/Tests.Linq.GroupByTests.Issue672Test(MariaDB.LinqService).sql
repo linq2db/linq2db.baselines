@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Stone`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Stone`
 (
@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS `Stone`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -39,10 +39,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -61,10 +61,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled UByte -- Boolean
+DECLARE @Enabled Bool -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`s`.`Name`
@@ -98,7 +98,7 @@ GROUP BY
 	`s`.`Name`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 
@@ -117,7 +117,7 @@ WHERE
 	`s`.`Name` = @Name
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
 
@@ -136,7 +136,7 @@ WHERE
 	`s`.`Name` = @Name
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Stone`
 

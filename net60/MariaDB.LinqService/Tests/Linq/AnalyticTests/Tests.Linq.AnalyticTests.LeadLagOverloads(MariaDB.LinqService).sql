@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1799Table3`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `Issue1799Table3`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ProcessID Int32
 SET     @ProcessID = 1
 DECLARE @ProcessName VarChar(3) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ProcessID Int32
 SET     @ProcessID = 2
 DECLARE @ProcessName VarChar(3) -- String
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ProcessID Int32
 SET     @ProcessID = 3
 DECLARE @ProcessName VarChar(5) -- String
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ProcessID Int32
 SET     @ProcessID = 4
 DECLARE @ProcessName VarChar(4) -- String
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	LEAD(`p`.`ProcessName`, 2) OVER(ORDER BY `p`.`ProcessID`)
@@ -93,7 +93,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	LEAD(`p`.`ProcessName`) OVER(ORDER BY `p`.`ProcessID`)
@@ -101,7 +101,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	LAG(`p`.`ProcessName`, 2) OVER(ORDER BY `p`.`ProcessID`)
@@ -109,7 +109,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	LAG(`p`.`ProcessName`) OVER(ORDER BY `p`.`ProcessID`)
@@ -117,7 +117,7 @@ FROM
 	`Issue1799Table3` `p`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1799Table3`
 

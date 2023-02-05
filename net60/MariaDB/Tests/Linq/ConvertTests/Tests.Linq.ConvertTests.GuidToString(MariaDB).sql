@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @guid VarChar(36) -- String
 SET     @guid = 'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

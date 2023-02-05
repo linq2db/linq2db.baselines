@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TableWithData`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `TableWithData`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `TableWithData`
 (
@@ -35,7 +35,7 @@ VALUES
 (10,-10,'Str10')
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`s`.`Id`,
@@ -47,7 +47,7 @@ WHERE
 	`s`.`Id` = 3
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE  
 FROM
@@ -59,7 +59,7 @@ RETURNING
 	Concat(`TableWithData`.`ValueStr`, Cast(1 as CHAR(11)))
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TableWithData`
 

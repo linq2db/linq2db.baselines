@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ NO_DERIVED_CONDITION_PUSHDOWN(c_1, p) */
 	`p`.`ParentID`,

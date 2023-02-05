@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 5000
 
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 DECLARE @take Int32

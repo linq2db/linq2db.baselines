@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @toTest VarChar(1) -- String
 SET     @toTest = 'n'
 DECLARE @s VarChar(7) -- String

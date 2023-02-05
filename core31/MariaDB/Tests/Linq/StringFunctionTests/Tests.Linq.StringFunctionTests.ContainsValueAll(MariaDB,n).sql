@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @s VarChar(7) -- String
 SET     @s = '123n456'
 
@@ -11,7 +11,7 @@ WHERE
 	`p`.`PersonID` = 1 AND LOCATE('n', @s) > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @s VarChar(7) -- String
 SET     @s = '123n456'
 

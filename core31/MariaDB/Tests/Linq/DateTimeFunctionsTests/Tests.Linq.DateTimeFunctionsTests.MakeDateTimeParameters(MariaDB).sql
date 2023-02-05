@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @p_1 VarChar(5) -- String
 SET     @p_1 = '2010-'
 

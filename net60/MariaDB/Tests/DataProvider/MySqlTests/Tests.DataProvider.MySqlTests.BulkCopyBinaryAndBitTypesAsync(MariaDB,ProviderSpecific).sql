@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 (
@@ -34,38 +34,15 @@ CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql
 
-INSERT INTO `NeedS.esca Pin``g`
-(
-	`ne.eds ``escaPing`,
-	`Bit_1`,
-	`Bit_2`,
-	`Bit_3`,
-	`Bit_4`,
-	`Bit_5`,
-	`needs escaping2`,
-	`Binary_1`,
-	`Binary_2`,
-	`Binary_3`,
-	`Binary_4`,
-	`VarBinary_1`,
-	`VarBinary_2`,
-	`Blob_1`,
-	`Blob_2`,
-	`TinyBlob_1`,
-	`TinyBlob_2`,
-	`MediumBlob_1`,
-	`MediumBlob_2`,
-	`LongBlob_1`,
-	`LongBlob_2`
-)
-VALUES
-(1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2,18446744073709551615,9223372036854775807,18446744073709551615,1073741823,1,1,0x010203,0x040506,0x070809,0x0A0B0C,0x0D0E0F,0x101112,0x131415,0x161718,0x191A1B,0x1C1D1E,0x1F2021,0x222324,0x252627,0x28292A)
+SET GLOBAL local_infile=ON
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+INSERT ASYNC BULK `NeedS.esca Pin``g`(ne.eds `escaPing, Bit_1, Bit_2, Bit_3, Bit_4, Bit_5, needs escaping2, Binary_1, Binary_2, Binary_3, Binary_4, VarBinary_1, VarBinary_2, Blob_1, Blob_2, TinyBlob_1, TinyBlob_2, MediumBlob_1, MediumBlob_2, LongBlob_1, LongBlob_2
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,
@@ -95,7 +72,7 @@ ORDER BY
 	`t1`.`ne.eds ``escaPing`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

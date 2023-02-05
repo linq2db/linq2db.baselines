@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(5) -- AnsiString
 SET     @Value_1 = 'PLUTO'
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(5) -- AnsiString
 SET     @Value_1 = 'PIPPO'
 
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(5) -- AnsiString
 SET     @Value_1 = 'PLUTO'
 
@@ -54,7 +54,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(5) -- AnsiString
 SET     @Value_1 = 'BOLTO'
 
@@ -68,7 +68,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @skip_1 Int32
 SET     @skip_1 = 3
 
@@ -81,7 +81,7 @@ ORDER BY
 LIMIT @skip_1, 9223372036854775807
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @skip_1 Int32
 SET     @skip_1 = 4
 
@@ -94,7 +94,7 @@ ORDER BY
 LIMIT @skip_1, 9223372036854775807
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TakeSkipClass`
 

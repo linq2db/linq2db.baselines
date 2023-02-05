@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 3
 DECLARE @skip_3 Int32
@@ -15,7 +15,7 @@ ORDER BY
 LIMIT @skip_2, @skip_3
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @skip_2 Int32
 SET     @skip_2 = 3
 DECLARE @skip_3 Int32

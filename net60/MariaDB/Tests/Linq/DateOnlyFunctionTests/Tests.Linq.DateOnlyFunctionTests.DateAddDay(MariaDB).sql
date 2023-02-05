@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Transactions`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Transactions`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Transactions`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `Transactions`
 (
@@ -39,7 +39,7 @@ VALUES
 (14,'2020-08-08')
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	Date_Add(`t`.`TransactionDate`, Interval 5 Day)
@@ -47,7 +47,7 @@ FROM
 	`Transactions` `t`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Transactions`
 

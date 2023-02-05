@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `CustomerBase`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `CustomerBase`
 (
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `CustomerBase`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @filter_1 VarChar(4) -- String
 SET     @filter_1 = 'test'
 
@@ -33,7 +33,7 @@ WHERE
 	`q`.`ClientType` = 'Client' AND (LOCATE(@filter_1, `q`.`Name`) > 0 OR LOCATE(@filter_1, `q`.`ContactEmail`) > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `CustomerBase`
 

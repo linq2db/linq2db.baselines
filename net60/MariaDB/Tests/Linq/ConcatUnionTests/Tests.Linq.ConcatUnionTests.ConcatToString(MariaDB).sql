@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @pattern VarChar(1) -- String
 SET     @pattern = '1'
 DECLARE @take Int32

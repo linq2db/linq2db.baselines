@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1078Table`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Issue1078Table`
 (
@@ -16,12 +16,12 @@ CREATE TABLE IF NOT EXISTS `Issue1078Table`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 1
 DECLARE @SiteID Int32
 SET     @SiteID = 1
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 1
 
 INSERT INTO `Issue1078Table`
@@ -38,12 +38,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 2
 DECLARE @SiteID Int32
 SET     @SiteID = 1
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 0
 
 INSERT INTO `Issue1078Table`
@@ -60,12 +60,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 3
 DECLARE @SiteID Int32
 SET     @SiteID = 1
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 1
 
 INSERT INTO `Issue1078Table`
@@ -82,12 +82,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 4
 DECLARE @SiteID Int32
 SET     @SiteID = 2
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 0
 
 INSERT INTO `Issue1078Table`
@@ -104,12 +104,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 5
 DECLARE @SiteID Int32
 SET     @SiteID = 2
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 1
 
 INSERT INTO `Issue1078Table`
@@ -126,12 +126,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 6
 DECLARE @SiteID Int32
 SET     @SiteID = 2
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 0
 
 INSERT INTO `Issue1078Table`
@@ -148,12 +148,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 7
 DECLARE @SiteID Int32
 SET     @SiteID = 2
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 0
 
 INSERT INTO `Issue1078Table`
@@ -170,12 +170,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 8
 DECLARE @SiteID Int32
 SET     @SiteID = 3
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 0
 
 INSERT INTO `Issue1078Table`
@@ -192,12 +192,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @UserID Int32
 SET     @UserID = 9
 DECLARE @SiteID Int32
 SET     @SiteID = 4
-DECLARE @Active UByte -- Boolean
+DECLARE @Active Bool -- Boolean
 SET     @Active = 1
 
 INSERT INTO `Issue1078Table`
@@ -214,7 +214,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`SiteID`,
@@ -237,7 +237,7 @@ GROUP BY
 	`t1`.`SiteID`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue1078Table`
 

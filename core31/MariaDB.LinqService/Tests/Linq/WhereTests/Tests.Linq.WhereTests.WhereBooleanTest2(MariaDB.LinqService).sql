@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `WhereCases`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `WhereCases`
 (
@@ -16,12 +16,12 @@ CREATE TABLE IF NOT EXISTS `WhereCases`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO `WhereCases`
@@ -38,12 +38,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 1
 
 INSERT INTO `WhereCases`
@@ -60,12 +60,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO `WhereCases`
@@ -82,12 +82,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 4
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 1
 
 INSERT INTO `WhereCases`
@@ -104,12 +104,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 1
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 1
 
 INSERT INTO `WhereCases`
@@ -126,12 +126,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 11
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO `WhereCases`
@@ -148,12 +148,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 12
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 0
 
 INSERT INTO `WhereCases`
@@ -170,12 +170,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 13
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO `WhereCases`
@@ -192,12 +192,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 14
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 0
 
 INSERT INTO `WhereCases`
@@ -214,12 +214,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 15
-DECLARE @BoolValue UByte -- Boolean
+DECLARE @BoolValue Bool -- Boolean
 SET     @BoolValue = 0
-DECLARE @NullableBoolValue UByte -- Boolean
+DECLARE @NullableBoolValue Bool -- Boolean
 SET     @NullableBoolValue = 0
 
 INSERT INTO `WhereCases`
@@ -236,7 +236,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -246,7 +246,7 @@ FROM
 	`WhereCases` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -258,7 +258,7 @@ WHERE
 	`t`.`BoolValue` = 0 AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -270,7 +270,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 0 AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -282,7 +282,7 @@ WHERE
 	`t`.`BoolValue` = 1 AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -294,7 +294,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 1 AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -306,7 +306,7 @@ WHERE
 	`t`.`BoolValue` = 1 AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -318,7 +318,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 1 AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -330,7 +330,7 @@ WHERE
 	`t`.`BoolValue` = 0 AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -342,7 +342,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 0 AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -354,7 +354,7 @@ WHERE
 	`t`.`BoolValue` = 0 AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -366,7 +366,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 0 AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -379,7 +379,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -391,7 +391,7 @@ WHERE
 	NOT ((`t`.`NullableBoolValue` = 0 OR `t`.`NullableBoolValue` IS NULL) AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -404,7 +404,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -416,7 +416,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -429,7 +429,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -441,7 +441,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` = 1 AND `t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -453,7 +453,7 @@ WHERE
 	`t`.`NullableBoolValue` IS NULL AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -465,7 +465,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` IS NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -477,7 +477,7 @@ WHERE
 	`t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -489,7 +489,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -501,7 +501,7 @@ WHERE
 	`t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -513,7 +513,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -525,7 +525,7 @@ WHERE
 	`t`.`NullableBoolValue` IS NULL AND `t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -537,7 +537,7 @@ WHERE
 	NOT (`t`.`NullableBoolValue` IS NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -550,7 +550,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -562,7 +562,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 OR `t`.`NullableBoolValue` IS NULL) AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -575,7 +575,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -587,7 +587,7 @@ WHERE
 	NOT (NOT (`t`.`BoolValue` = 0 AND (`t`.`NullableBoolValue` = 0 OR `t`.`NullableBoolValue` IS NULL)) AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -602,7 +602,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -614,7 +614,7 @@ WHERE
 	NOT (`t`.`BoolValue` = 0 AND `t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -627,7 +627,7 @@ WHERE
 	`t`.`Id` > 0
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t`.`Id`,
@@ -639,7 +639,7 @@ WHERE
 	NOT (NOT (`t`.`BoolValue` = 0 AND `t`.`NullableBoolValue` = 0 AND `t`.`NullableBoolValue` IS NOT NULL) AND `t`.`Id` > 0)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `WhereCases`
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	`c_1`.`ChildID` = @id
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -40,7 +40,7 @@ WHERE
 	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
 
 BeforeExecute
--- MariaDB MySql.Official MySql (asynchronously)
+-- MariaDB MySqlConnector MySql (asynchronously)
 DECLARE @ChildID Int32
 SET     @ChildID = 1002
 

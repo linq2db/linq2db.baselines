@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ SEMIJOIN(FIRSTMATCH, LOOSESCAN) */
 	`p`.`ParentID`,

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue3761Table`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Issue3761Table`
 (
@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @_default DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @_default Datetime -- DateTime
 SET     @_default = '0001-01-01'
-DECLARE @DATUM DateTime
+DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
@@ -62,7 +62,7 @@ GROUP BY
 	`t2`.`Month_1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue3761Table`
 

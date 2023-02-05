@@ -1,6 +1,6 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @value_1 Decimal(9, 5)
+-- MariaDB MySqlConnector MySql
+DECLARE @value_1 NewDecimal(9, 5) -- Decimal
 SET     @value_1 = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
@@ -12,7 +12,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @value_1 Float -- Single
 SET     @value_1 = 6579.64648
 DECLARE @take Int32
@@ -25,7 +25,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @value_1 Double
 SET     @value_1 = 6579.6464800000003
 DECLARE @take Int32
@@ -38,8 +38,8 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @value_1 Decimal(9, 5)
+-- MariaDB MySqlConnector MySql
+DECLARE @value_1 NewDecimal(9, 5) -- Decimal
 SET     @value_1 = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
@@ -51,7 +51,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @value_1 Float -- Single
 SET     @value_1 = 6579.64648
 DECLARE @take Int32
@@ -64,7 +64,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @value_1 Double
 SET     @value_1 = 6579.6464800000003
 DECLARE @take Int32

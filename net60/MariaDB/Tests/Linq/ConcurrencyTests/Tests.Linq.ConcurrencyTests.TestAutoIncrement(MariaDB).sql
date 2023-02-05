@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -48,7 +48,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(7) -- String
 SET     @Value_1 = 'value 1'
 DECLARE @Id Int32
@@ -65,7 +65,7 @@ WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -75,7 +75,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(7) -- String
 SET     @Value_1 = 'value 2'
 DECLARE @Id Int32
@@ -92,7 +92,7 @@ WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -102,7 +102,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Value_1 VarChar(7) -- String
 SET     @Value_1 = 'value 3'
 DECLARE @Id Int32
@@ -119,7 +119,7 @@ WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -129,7 +129,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -142,7 +142,7 @@ WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -152,7 +152,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -165,7 +165,7 @@ WHERE
 	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -175,7 +175,7 @@ FROM
 	`ConcurrencyAutoIncrement` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 

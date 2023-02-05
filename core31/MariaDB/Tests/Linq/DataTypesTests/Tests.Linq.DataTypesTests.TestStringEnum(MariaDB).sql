@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `StringEnumTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `StringEnumTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `StringEnumTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `StringEnumTable`
 (
@@ -27,7 +27,7 @@ VALUES
 ('value=33','value=2',2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Column_1 VarChar(7) -- String
 SET     @Column_1 = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -43,7 +43,7 @@ WHERE
 	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`r`.`ColumnNullable`,
@@ -55,14 +55,14 @@ WHERE
 	`r`.`Column` = 'value=2' AND `r`.`ColumnNullable` = 'value=33'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`StringEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable VarChar -- String
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 VarChar(5) -- String
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 DECLARE @Column_1 VarChar(7) -- String
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -118,14 +118,14 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`StringEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `StringEnumTable`
 (
@@ -138,7 +138,7 @@ VALUES
 ('value=33','value=2',2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -150,27 +150,17 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`StringEnumTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-INSERT INTO `StringEnumTable`
-(
-	`ColumnNullable`,
-	`Column`,
-	`Id`
-)
-VALUES
-(NULL,'val=1',1),
-('value=33','value=2',2)
+INSERT BULK `StringEnumTable`(ColumnNullable, Column, Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -182,7 +172,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `StringEnumTable`
 

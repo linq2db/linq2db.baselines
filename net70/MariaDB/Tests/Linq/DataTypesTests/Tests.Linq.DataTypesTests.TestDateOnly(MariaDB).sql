@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DateOnlyTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `DateOnlyTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `DateOnlyTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `DateOnlyTable`
 (
@@ -27,10 +27,10 @@ VALUES
 ('2200-01-01','2020-02-29',2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @Column_1 DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @Column_1 Datetime -- DateTime
 SET     @Column_1 = '2020-02-29'
-DECLARE @ColumnNullable DateTime
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = '2200-01-01'
 
 SELECT
@@ -43,7 +43,7 @@ WHERE
 	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`r`.`ColumnNullable`,
@@ -55,17 +55,17 @@ WHERE
 	`r`.`Column` = '2020-02-29' AND `r`.`ColumnNullable` = '2200-01-01'
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`DateOnlyTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @ColumnNullable DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = NULL
-DECLARE @Column_1 DateTime
+DECLARE @Column_1 Datetime -- DateTime
 SET     @Column_1 = '1950-01-01'
 DECLARE @Id Int32
 SET     @Id = 1
@@ -84,10 +84,10 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-DECLARE @ColumnNullable DateTime
+-- MariaDB MySqlConnector MySql
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = '2200-01-01'
-DECLARE @Column_1 DateTime
+DECLARE @Column_1 Datetime -- DateTime
 SET     @Column_1 = '2020-02-29'
 DECLARE @Id Int32
 SET     @Id = 2
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -118,14 +118,14 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`DateOnlyTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `DateOnlyTable`
 (
@@ -138,7 +138,7 @@ VALUES
 ('2200-01-01','2020-02-29',2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -150,27 +150,17 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`DateOnlyTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-INSERT INTO `DateOnlyTable`
-(
-	`ColumnNullable`,
-	`Column`,
-	`Id`
-)
-VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+INSERT BULK `DateOnlyTable`(ColumnNullable, Column, Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -182,7 +172,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DateOnlyTable`
 

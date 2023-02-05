@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `EmployeeTimeOffBalance`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TrackingTimeType Int32
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TrackingTimeType Int32
@@ -60,12 +60,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Employee`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `Employee`
 (
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `Employee`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 
@@ -103,12 +103,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequest`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `LeaveRequest`
 (
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `LeaveRequest`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @EmployeeId Int32
@@ -137,7 +137,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @EmployeeId Int32
@@ -155,7 +155,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @EmployeeId Int32
@@ -173,7 +173,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 4
 DECLARE @EmployeeId Int32
@@ -191,12 +191,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequestDateEntry`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 (
@@ -209,12 +209,12 @@ CREATE TABLE IF NOT EXISTS `LeaveRequestDateEntry`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @EndHour Decimal(2, 0)
+DECLARE @EndHour NewDecimal(2, 0) -- Decimal
 SET     @EndHour = 12
-DECLARE @StartHour Decimal(1, 0)
+DECLARE @StartHour NewDecimal(1, 0) -- Decimal
 SET     @StartHour = 1
 DECLARE @LeaveRequestId Int32
 SET     @LeaveRequestId = 1
@@ -235,12 +235,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @EndHour Decimal(2, 0)
+DECLARE @EndHour NewDecimal(2, 0) -- Decimal
 SET     @EndHour = 13
-DECLARE @StartHour Decimal(1, 0)
+DECLARE @StartHour NewDecimal(1, 0) -- Decimal
 SET     @StartHour = 2
 DECLARE @LeaveRequestId Int32
 SET     @LeaveRequestId = 1
@@ -261,12 +261,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 3
-DECLARE @EndHour Decimal(2, 0)
+DECLARE @EndHour NewDecimal(2, 0) -- Decimal
 SET     @EndHour = 14
-DECLARE @StartHour Decimal(1, 0)
+DECLARE @StartHour NewDecimal(1, 0) -- Decimal
 SET     @StartHour = 3
 DECLARE @LeaveRequestId Int32
 SET     @LeaveRequestId = 2
@@ -287,12 +287,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 4
-DECLARE @EndHour Decimal(2, 0)
+DECLARE @EndHour NewDecimal(2, 0) -- Decimal
 SET     @EndHour = 15
-DECLARE @StartHour Decimal(1, 0)
+DECLARE @StartHour NewDecimal(1, 0) -- Decimal
 SET     @StartHour = 4
 DECLARE @LeaveRequestId Int32
 SET     @LeaveRequestId = 2
@@ -313,7 +313,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`WithParentReference`,
@@ -386,22 +386,22 @@ ORDER BY
 	Coalesce(`t1`.`WithoutParentReference`, 0) DESC
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequestDateEntry`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `LeaveRequest`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Employee`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `EmployeeTimeOffBalance`
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ByteTable`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 CREATE TABLE IF NOT EXISTS `ByteTable`
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `ByteTable`
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `ByteTable`
 (
@@ -27,7 +27,7 @@ VALUES
 (2,255,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @Column_1 UByte -- Byte
 SET     @Column_1 = 255
 DECLARE @ColumnNullable UByte -- Byte
@@ -43,7 +43,7 @@ WHERE
 	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`r`.`ColumnNullable`,
@@ -55,14 +55,14 @@ WHERE
 	`r`.`Column` = 255 AND `r`.`ColumnNullable` = 2
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`ByteTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = NULL
 DECLARE @Column_1 UByte -- Byte
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = 2
 DECLARE @Column_1 UByte -- Byte
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -118,14 +118,14 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`ByteTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 INSERT INTO `ByteTable`
 (
@@ -138,7 +138,7 @@ VALUES
 (2,255,2)
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -150,27 +150,17 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DELETE   `t1`
 FROM
 	`ByteTable` `t1`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
-
-INSERT INTO `ByteTable`
-(
-	`ColumnNullable`,
-	`Column`,
-	`Id`
-)
-VALUES
-(NULL,1,1),
-(2,255,2)
+INSERT BULK `ByteTable`(ColumnNullable, Column, Id
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT
 	`t1`.`ColumnNullable`,
@@ -182,7 +172,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 DROP TABLE IF EXISTS `ByteTable`
 

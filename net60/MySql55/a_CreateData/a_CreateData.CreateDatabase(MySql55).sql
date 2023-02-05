@@ -241,9 +241,7 @@ CREATE TABLE `AllTypes`
 -- SKIP MySql BEGIN
 -- SKIP MySqlConnector BEGIN
 -- SKIP MariaDB BEGIN
--- SKIP MariaDBConnector BEGIN
 	year2DataType       year(2)                      NULL,
--- SKIP MariaDBConnector END
 -- SKIP MariaDB END
 -- SKIP MySqlConnector END
 -- SKIP MySql END
@@ -566,9 +564,7 @@ CREATE TABLE FullTextIndexTest (
 -- SKIP MySql BEGIN
 -- SKIP MySqlConnector BEGIN
 -- SKIP MariaDB BEGIN
--- SKIP MariaDBConnector BEGIN
 	ENGINE=MyISAM
--- SKIP MariaDBConnector END
 -- SKIP MariaDB END
 -- SKIP MySqlConnector END
 -- SKIP MySql END

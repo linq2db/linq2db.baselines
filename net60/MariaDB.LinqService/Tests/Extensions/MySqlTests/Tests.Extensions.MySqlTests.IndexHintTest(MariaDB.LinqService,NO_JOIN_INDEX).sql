@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB MySql.Official MySql
+-- MariaDB MySqlConnector MySql
 
 SELECT /*+ NO_JOIN_INDEX(p parent_ix, parent2_ix) */
 	`p`.`ParentID`,
