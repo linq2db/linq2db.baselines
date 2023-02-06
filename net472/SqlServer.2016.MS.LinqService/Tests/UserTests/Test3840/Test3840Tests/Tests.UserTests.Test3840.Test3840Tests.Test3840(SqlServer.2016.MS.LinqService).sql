@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @StartDateTime DateTime2
-SET     @StartDateTime = DATETIME2FROMPARTS(2023, 2, 4, 20, 53, 24, 2730941, 7)
+SET     @StartDateTime = DATETIME2FROMPARTS(2023, 2, 6, 17, 2, 20, 5123856, 7)
 DECLARE @PreNotification BigInt -- Int64
 SET     @PreNotification = 20000000000
 DECLARE @PreNotification2 Time
@@ -27,7 +27,7 @@ SET     @PreNotification2 = TIMEFROMPARTS(0, 33, 20, 0, 7)
 DECLARE @PreNotification3 Time
 SET     @PreNotification3 = TIMEFROMPARTS(0, 33, 20, 0, 7)
 DECLARE @StrField DateTime2
-SET     @StrField = DATETIME2FROMPARTS(2023, 2, 4, 0, 0, 0, 0, 7)
+SET     @StrField = DATETIME2FROMPARTS(2023, 2, 6, 0, 0, 0, 0, 7)
 
 INSERT INTO [Common_Topology_Locations]
 (
