@@ -12,7 +12,8 @@ IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
 	(
 		[Action]    NVarChar(4000)     NULL,
 		[NewId]     Int            NOT NULL,
-		[DeletedId] Int                NULL
+		[DeletedId] Int                NULL,
+		[SourceId]  Int                NULL
 	)
 
 BeforeExecute
@@ -293,7 +294,8 @@ BeforeExecute
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
-	[t1].[DeletedId]
+	[t1].[DeletedId],
+	[t1].[SourceId]
 FROM
 	[InsertTempTable] [t1]
 
