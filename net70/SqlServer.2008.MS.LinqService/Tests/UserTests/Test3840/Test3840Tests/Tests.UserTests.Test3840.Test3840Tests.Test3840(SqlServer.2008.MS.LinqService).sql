@@ -20,7 +20,7 @@ IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @StartDateTime DateTime2
-SET     @StartDateTime = CAST('2023-02-06T16:56:46.4712935' AS DATETIME2)
+SET     @StartDateTime = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 DECLARE @PreNotification BigInt -- Int64
 SET     @PreNotification = 20000000000
 DECLARE @PreNotification2 Time
@@ -28,7 +28,7 @@ SET     @PreNotification2 = CAST('00:33:20.0000000' AS TIME)
 DECLARE @PreNotification3 Time
 SET     @PreNotification3 = CAST('00:33:20.0000000' AS TIME)
 DECLARE @StrField DateTime2
-SET     @StrField = CAST('2023-02-06T00:00:00.0000000' AS DATETIME2)
+SET     @StrField = CAST('2020-02-29T00:00:00.0000000' AS DATETIME2)
 
 INSERT INTO [Common_Topology_Locations]
 (
