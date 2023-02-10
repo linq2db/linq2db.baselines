@@ -23,9 +23,9 @@ BeforeExecute
 
 CREATE TABLE [AuditAlert]
 (
-	[CreationDate]    DateTime          NULL,
-	[AlertCode]       NVarChar(255)     NULL,
 	[AlertKey]        NVarChar(255)     NULL,
+	[AlertCode]       NVarChar(255)     NULL,
+	[CreationDate]    DateTime          NULL,
 	[TransactionDate] DateTime          NULL
 )
 
