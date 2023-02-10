@@ -32,8 +32,8 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[t1].[event_description],
-	[t1].[event_id]
+	[t1].[event_id],
+	[t1].[event_description]
 FROM
 	[Issue1403Tests_1] [t1]
 
