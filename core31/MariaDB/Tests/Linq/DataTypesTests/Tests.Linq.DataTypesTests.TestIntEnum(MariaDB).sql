@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `IntEnumTable`
 (
-	`ColumnNullable` INT     NULL,
+	`Id`             INT NOT NULL,
 	`Column`         INT NOT NULL,
-	`Id`             INT NOT NULL
+	`ColumnNullable` INT     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO `IntEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,1,1),
-(3,2,2)
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Int32
 SET     @ColumnNullable = 3
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`IntEnumTable` `r`
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`IntEnumTable` `r`
 WHERE
@@ -63,55 +63,55 @@ FROM
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @ColumnNullable Int32
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Int32
-SET     @Column_1 = 1
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 Int32
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Int32
+SET     @ColumnNullable = NULL
 
 INSERT INTO `IntEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @ColumnNullable Int32
-SET     @ColumnNullable = 3
-DECLARE @Column_1 Int32
-SET     @Column_1 = 2
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 Int32
+SET     @Column_1 = 2
+DECLARE @ColumnNullable Int32
+SET     @ColumnNullable = 3
 
 INSERT INTO `IntEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`IntEnumTable` `t1`
 ORDER BY
@@ -129,21 +129,21 @@ BeforeExecute
 
 INSERT INTO `IntEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,1,1),
-(3,2,2)
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`IntEnumTable` `t1`
 ORDER BY
@@ -157,15 +157,15 @@ FROM
 	`IntEnumTable` `t1`
 
 BeforeExecute
-INSERT BULK `IntEnumTable`(ColumnNullable, Column, Id
+INSERT BULK `IntEnumTable`(Id, Column, ColumnNullable
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`IntEnumTable` `t1`
 ORDER BY
