@@ -18,8 +18,8 @@ EXECUTE BLOCK AS BEGIN
 				"EffectiveStart" TimeStamp                              NOT NULL,
 				"EffectiveEnd"   TimeStamp,
 				"Key"            Int                                    NOT NULL,
-				"Code"           VarChar(255) CHARACTER SET UNICODE_FSS,
 				"Name"           VarChar(255) CHARACTER SET UNICODE_FSS,
+				"Code"           VarChar(255) CHARACTER SET UNICODE_FSS,
 				"Audit1ID"       Int                                    NOT NULL,
 				"Audit2ID"       Int                                    NOT NULL,
 

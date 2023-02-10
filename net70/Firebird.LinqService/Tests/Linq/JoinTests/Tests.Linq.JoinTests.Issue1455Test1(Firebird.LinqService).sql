@@ -37,9 +37,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "AuditAlert"
 			(
-				"CreationDate"    TimeStamp,
-				"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
 				"AlertKey"        VarChar(255) CHARACTER SET UNICODE_FSS,
+				"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS,
+				"CreationDate"    TimeStamp,
 				"TransactionDate" TimeStamp
 			)
 		';
