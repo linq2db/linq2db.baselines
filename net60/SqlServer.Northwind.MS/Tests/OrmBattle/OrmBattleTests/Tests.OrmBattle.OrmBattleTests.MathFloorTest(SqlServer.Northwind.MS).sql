@@ -2,17 +2,17 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[t1].[Fax],
-	[t1].[Phone],
-	[t1].[Country],
-	[t1].[PostalCode],
-	[t1].[Region],
-	[t1].[City],
-	[t1].[Address],
-	[t1].[ContactTitle],
-	[t1].[ContactName],
+	[t1].[CustomerID],
 	[t1].[CompanyName],
-	[t1].[CustomerID]
+	[t1].[ContactName],
+	[t1].[ContactTitle],
+	[t1].[Address],
+	[t1].[City],
+	[t1].[Region],
+	[t1].[PostalCode],
+	[t1].[Country],
+	[t1].[Phone],
+	[t1].[Fax]
 FROM
 	[Customers] [t1]
 
@@ -20,24 +20,24 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[t1].[PhotoPath],
-	[t1].[ReportsTo],
-	[t1].[Notes],
-	[t1].[Photo],
-	[t1].[Extension],
-	[t1].[HomePhone],
-	[t1].[Country],
-	[t1].[PostalCode],
-	[t1].[Region],
-	[t1].[City],
-	[t1].[Address],
-	[t1].[HireDate],
-	[t1].[BirthDate],
-	[t1].[TitleOfCourtesy],
-	[t1].[Title],
-	[t1].[FirstName],
+	[t1].[EmployeeID],
 	[t1].[LastName],
-	[t1].[EmployeeID]
+	[t1].[FirstName],
+	[t1].[Title],
+	[t1].[TitleOfCourtesy],
+	[t1].[BirthDate],
+	[t1].[HireDate],
+	[t1].[Address],
+	[t1].[City],
+	[t1].[Region],
+	[t1].[PostalCode],
+	[t1].[Country],
+	[t1].[HomePhone],
+	[t1].[Extension],
+	[t1].[Photo],
+	[t1].[Notes],
+	[t1].[ReportsTo],
+	[t1].[PhotoPath]
 FROM
 	[Employees] [t1]
 
@@ -45,20 +45,20 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[t1].[ShipCountry],
-	[t1].[ShipPostalCode],
-	[t1].[ShipRegion],
-	[t1].[ShipCity],
-	[t1].[ShipAddress],
-	[t1].[ShipName],
-	[t1].[Freight],
-	[t1].[ShipVia],
-	[t1].[ShippedDate],
-	[t1].[RequiredDate],
-	[t1].[OrderDate],
-	[t1].[EmployeeID],
+	[t1].[OrderID],
 	[t1].[CustomerID],
-	[t1].[OrderID]
+	[t1].[EmployeeID],
+	[t1].[OrderDate],
+	[t1].[RequiredDate],
+	[t1].[ShippedDate],
+	[t1].[ShipVia],
+	[t1].[Freight],
+	[t1].[ShipName],
+	[t1].[ShipAddress],
+	[t1].[ShipCity],
+	[t1].[ShipRegion],
+	[t1].[ShipPostalCode],
+	[t1].[ShipCountry]
 FROM
 	[Orders] [t1]
 
@@ -83,20 +83,20 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[o].[ShipCountry],
-	[o].[ShipPostalCode],
-	[o].[ShipRegion],
-	[o].[ShipCity],
-	[o].[ShipAddress],
-	[o].[ShipName],
-	[o].[Freight],
-	[o].[ShipVia],
-	[o].[ShippedDate],
-	[o].[RequiredDate],
-	[o].[OrderDate],
-	[o].[EmployeeID],
+	[o].[OrderID],
 	[o].[CustomerID],
-	[o].[OrderID]
+	[o].[EmployeeID],
+	[o].[OrderDate],
+	[o].[RequiredDate],
+	[o].[ShippedDate],
+	[o].[ShipVia],
+	[o].[Freight],
+	[o].[ShipName],
+	[o].[ShipAddress],
+	[o].[ShipCity],
+	[o].[ShipRegion],
+	[o].[ShipPostalCode],
+	[o].[ShipCountry]
 FROM
 	[Orders] [o]
 WHERE

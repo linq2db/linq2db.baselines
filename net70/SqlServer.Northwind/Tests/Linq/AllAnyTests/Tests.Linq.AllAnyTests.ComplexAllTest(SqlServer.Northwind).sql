@@ -2,20 +2,20 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[o].[ShipCountry],
-	[o].[ShipPostalCode],
-	[o].[ShipRegion],
-	[o].[ShipCity],
-	[o].[ShipAddress],
-	[o].[ShipName],
-	[o].[Freight],
-	[o].[ShipVia],
-	[o].[ShippedDate],
-	[o].[RequiredDate],
-	[o].[OrderDate],
-	[o].[EmployeeID],
+	[o].[OrderID],
 	[o].[CustomerID],
-	[o].[OrderID]
+	[o].[EmployeeID],
+	[o].[OrderDate],
+	[o].[RequiredDate],
+	[o].[ShippedDate],
+	[o].[ShipVia],
+	[o].[Freight],
+	[o].[ShipName],
+	[o].[ShipAddress],
+	[o].[ShipCity],
+	[o].[ShipRegion],
+	[o].[ShipPostalCode],
+	[o].[ShipCountry]
 FROM
 	[Orders] [o]
 		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)

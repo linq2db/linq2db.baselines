@@ -4,24 +4,24 @@ DECLARE @ext NVarChar(4000) -- String
 SET     @ext = N'5467'
 
 SELECT
-	[e].[PhotoPath],
-	[e].[ReportsTo],
-	[e].[Notes],
-	[e].[Photo],
-	[e].[Extension],
-	[e].[HomePhone],
-	[e].[Country],
-	[e].[PostalCode],
-	[e].[Region],
-	[e].[City],
-	[e].[Address],
-	[e].[HireDate],
-	[e].[BirthDate],
-	[e].[TitleOfCourtesy],
-	[e].[Title],
-	[e].[FirstName],
+	[e].[EmployeeID],
 	[e].[LastName],
-	[e].[EmployeeID]
+	[e].[FirstName],
+	[e].[Title],
+	[e].[TitleOfCourtesy],
+	[e].[BirthDate],
+	[e].[HireDate],
+	[e].[Address],
+	[e].[City],
+	[e].[Region],
+	[e].[PostalCode],
+	[e].[Country],
+	[e].[HomePhone],
+	[e].[Extension],
+	[e].[Photo],
+	[e].[Notes],
+	[e].[ReportsTo],
+	[e].[PhotoPath]
 FROM
 	[Employees] [e]
 WHERE
@@ -31,24 +31,24 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[e].[PhotoPath],
-	[e].[ReportsTo],
-	[e].[Notes],
-	[e].[Photo],
-	[e].[Extension],
-	[e].[HomePhone],
-	[e].[Country],
-	[e].[PostalCode],
-	[e].[Region],
-	[e].[City],
-	[e].[Address],
-	[e].[HireDate],
-	[e].[BirthDate],
-	[e].[TitleOfCourtesy],
-	[e].[Title],
-	[e].[FirstName],
+	[e].[EmployeeID],
 	[e].[LastName],
-	[e].[EmployeeID]
+	[e].[FirstName],
+	[e].[Title],
+	[e].[TitleOfCourtesy],
+	[e].[BirthDate],
+	[e].[HireDate],
+	[e].[Address],
+	[e].[City],
+	[e].[Region],
+	[e].[PostalCode],
+	[e].[Country],
+	[e].[HomePhone],
+	[e].[Extension],
+	[e].[Photo],
+	[e].[Notes],
+	[e].[ReportsTo],
+	[e].[PhotoPath]
 FROM
 	[Employees] [e]
 WHERE
