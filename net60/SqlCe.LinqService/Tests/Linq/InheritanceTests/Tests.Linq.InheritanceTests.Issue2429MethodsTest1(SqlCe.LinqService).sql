@@ -8,28 +8,28 @@ BeforeExecute
 
 CREATE TABLE [BaseTable]
 (
-	[Value] Int NOT NULL,
 	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL,
 
 	CONSTRAINT [PK_BaseTable] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @BaseValue Int -- Int32
-SET     @BaseValue = 100
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @BaseValue Int -- Int32
+SET     @BaseValue = 100
 
 INSERT INTO [BaseTable]
 (
-	[Value],
-	[Id]
+	[Id],
+	[Value]
 )
 VALUES
 (
-	@BaseValue,
-	@Id
+	@Id,
+	@BaseValue
 )
 
 BeforeExecute
@@ -38,8 +38,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -51,8 +51,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
