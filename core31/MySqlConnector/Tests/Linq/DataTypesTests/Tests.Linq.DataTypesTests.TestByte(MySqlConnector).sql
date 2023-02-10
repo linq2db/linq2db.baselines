@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `ByteTable`
 (
-	`ColumnNullable` TINYINT UNSIGNED     NULL,
+	`Id`             INT              NOT NULL,
 	`Column`         TINYINT UNSIGNED NOT NULL,
-	`Id`             INT              NOT NULL
+	`ColumnNullable` TINYINT UNSIGNED     NULL
 )
 
 BeforeExecute
@@ -18,12 +18,12 @@ BeforeExecute
 
 INSERT INTO `ByteTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`ByteTable` `r`
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`ByteTable` `r`
 WHERE
@@ -63,55 +63,55 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ColumnNullable UByte -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 UByte -- Byte
-SET     @Column_1 = 1
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 UByte -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable UByte -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO `ByteTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ColumnNullable UByte -- Byte
-SET     @ColumnNullable = 2
-DECLARE @Column_1 UByte -- Byte
-SET     @Column_1 = 255
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 UByte -- Byte
+SET     @Column_1 = 255
+DECLARE @ColumnNullable UByte -- Byte
+SET     @ColumnNullable = 2
 
 INSERT INTO `ByteTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`ByteTable` `t1`
 ORDER BY
@@ -129,21 +129,21 @@ BeforeExecute
 
 INSERT INTO `ByteTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`ByteTable` `t1`
 ORDER BY
@@ -157,15 +157,15 @@ FROM
 	`ByteTable` `t1`
 
 BeforeExecute
-INSERT BULK `ByteTable`(ColumnNullable, Column, Id
+INSERT BULK `ByteTable`(Id, Column, ColumnNullable
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`ByteTable` `t1`
 ORDER BY
