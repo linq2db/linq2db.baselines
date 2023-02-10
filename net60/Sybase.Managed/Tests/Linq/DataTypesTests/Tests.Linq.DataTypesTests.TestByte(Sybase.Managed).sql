@@ -11,9 +11,9 @@ IF (OBJECT_ID(N'ByteTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [ByteTable]
 		(
-			[ColumnNullable] TinyInt     NULL,
+			[Id]             Int     NOT NULL,
 			[Column]         TinyInt NOT NULL,
-			[Id]             Int     NOT NULL
+			[ColumnNullable] TinyInt     NULL
 		)
 	')
 
@@ -22,11 +22,11 @@ BeforeExecute
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
+SELECT 1,1,NULL UNION ALL
 SELECT 2,255,2
 
 BeforeExecute
@@ -37,9 +37,9 @@ DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[ByteTable] [r]
 WHERE
@@ -49,9 +49,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[ByteTable] [r]
 WHERE
@@ -66,55 +66,55 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable TinyInt -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 TinyInt -- Byte
-SET     @Column_1 = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 TinyInt -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable TinyInt -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable TinyInt -- Byte
-SET     @ColumnNullable = 2
-DECLARE @Column_1 TinyInt -- Byte
-SET     @Column_1 = 255
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 TinyInt -- Byte
+SET     @Column_1 = 255
+DECLARE @ColumnNullable TinyInt -- Byte
+SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY
@@ -132,20 +132,20 @@ BeforeExecute
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
+SELECT 1,1,NULL UNION ALL
 SELECT 2,255,2
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY
@@ -163,20 +163,20 @@ BeforeExecute
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
+SELECT 1,1,NULL UNION ALL
 SELECT 2,255,2
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY

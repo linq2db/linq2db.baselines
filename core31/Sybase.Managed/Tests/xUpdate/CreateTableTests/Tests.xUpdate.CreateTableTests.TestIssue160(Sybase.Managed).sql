@@ -11,28 +11,28 @@ CREATE TABLE [aa]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @cc UniVarChar(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
+DECLARE @cc UniVarChar(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO [aa]
 (
-	[cc],
-	[bb]
+	[bb],
+	[cc]
 )
 VALUES
 (
-	@cc,
-	@bb
+	@bb,
+	@cc
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[cc],
-	[t1].[bb]
+	[t1].[bb],
+	[t1].[cc]
 FROM
 	[aa] [t1]
 

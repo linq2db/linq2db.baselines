@@ -15,8 +15,8 @@ IF (OBJECT_ID(N'TPHTable') IS NULL)
 			[Discriminator] Int          NOT NULL,
 			[Value1]        NVarChar(50)     NULL,
 			[Value2]        NVarChar(50)     NULL,
-			[NullableBool]  VarChar(1)       NULL,
 			[Value3]        NVarChar(50)     NULL,
+			[NullableBool]  VarChar(1)       NULL,
 
 			CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
 		)
@@ -31,12 +31,12 @@ INSERT INTO [TPHTable]
 	[Discriminator],
 	[Value1],
 	[Value2],
-	[NullableBool],
-	[Value3]
+	[Value3],
+	[NullableBool]
 )
 SELECT 1,1,'Str1',NULL,NULL,NULL UNION ALL
 SELECT 2,2,NULL,'Str2',NULL,NULL UNION ALL
-SELECT 3,3,NULL,NULL,'Y','Str3'
+SELECT 3,3,NULL,NULL,'Str3','Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -46,8 +46,8 @@ SELECT
 	[t1].[Discriminator],
 	[t1].[Value1],
 	[t1].[Value2],
-	[t1].[NullableBool],
-	[t1].[Value3]
+	[t1].[Value3],
+	[t1].[NullableBool]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -61,8 +61,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -76,8 +76,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -91,8 +91,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -106,8 +106,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -121,8 +121,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -136,8 +136,8 @@ SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
