@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "BooleanTable"
 (
-	"ColumnNullable" Boolean     NULL,
+	"Id"             Int     NOT NULL,
 	"Column"         Boolean NOT NULL,
-	"Id"             Int     NOT NULL
+	"ColumnNullable" Boolean     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,True,1),
-(True,False,2)
+(1,True,NULL),
+(2,False,True)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"BooleanTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"BooleanTable" r
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Boolean
+SET     @Column_1 = True
+DECLARE @ColumnNullable Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Boolean
-SET     @ColumnNullable = True
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Boolean
+SET     @Column_1 = False
+DECLARE @ColumnNullable Boolean
+SET     @ColumnNullable = True
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,True,1),
-(True,False,2)
+(1,True,NULL),
+(2,False,True)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY
@@ -154,15 +154,15 @@ DELETE FROM
 	"BooleanTable" t1
 
 BeforeExecute
-INSERT BULK "BooleanTable"(ColumnNullable, Column, Id)
+INSERT BULK "BooleanTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY
