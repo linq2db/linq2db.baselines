@@ -27,9 +27,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[AuditAlert]', N'U') IS NULL)
 	CREATE TABLE [AuditAlert]
 	(
-		[CreationDate]    DateTime           NULL,
-		[AlertCode]       NVarChar(4000)     NULL,
 		[AlertKey]        NVarChar(4000)     NULL,
+		[AlertCode]       NVarChar(4000)     NULL,
+		[CreationDate]    DateTime           NULL,
 		[TransactionDate] DateTime           NULL
 	)
 
