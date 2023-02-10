@@ -14,8 +14,8 @@ IF (OBJECT_ID(N'[TPHTable]', N'U') IS NULL)
 		[Discriminator] Int          NOT NULL,
 		[Value1]        NVarChar(50)     NULL,
 		[Value2]        NVarChar(50)     NULL,
-		[NullableBool]  VarChar(1)       NULL,
 		[Value3]        NVarChar(50)     NULL,
+		[NullableBool]  VarChar(1)       NULL,
 
 		CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
 	)
@@ -29,13 +29,13 @@ INSERT INTO [TPHTable]
 	[Discriminator],
 	[Value1],
 	[Value2],
-	[NullableBool],
-	[Value3]
+	[Value3],
+	[NullableBool]
 )
 VALUES
 (1,1,N'Str1',NULL,NULL,NULL),
 (2,2,NULL,N'Str2',NULL,NULL),
-(3,3,NULL,NULL,'Y',N'Str3')
+(3,3,NULL,NULL,N'Str3','Y')
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -45,8 +45,8 @@ SELECT
 	[t1].[Discriminator],
 	[t1].[Value1],
 	[t1].[Value2],
-	[t1].[NullableBool],
-	[t1].[Value3]
+	[t1].[Value3],
+	[t1].[NullableBool]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -62,8 +62,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -79,8 +79,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -96,8 +96,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -113,8 +113,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -130,8 +130,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -147,8 +147,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
