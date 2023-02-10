@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS [ColumnOrderTest]
 	[EffectiveStart] DateTime2     NOT NULL,
 	[EffectiveEnd]   DateTime2         NULL,
 	[Key]            INTEGER       NOT NULL,
-	[Code]           NVarChar(255)     NULL,
 	[Name]           NVarChar(255)     NULL,
+	[Code]           NVarChar(255)     NULL,
 	[Audit1ID]       INTEGER       NOT NULL,
 	[Audit2ID]       INTEGER       NOT NULL,
 
