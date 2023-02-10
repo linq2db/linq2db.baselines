@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `BaseTable`
 (
-	`Value` INT NOT NULL,
 	`Id`    INT NOT NULL,
+	`Value` INT NOT NULL,
 
 	CONSTRAINT `PK_BaseTable` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -19,11 +19,11 @@ BeforeExecute
 
 INSERT INTO `BaseTable`
 (
-	`Value`,
-	`Id`
+	`Id`,
+	`Value`
 )
 VALUES
-(100,1)
+(1,100)
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
@@ -31,8 +31,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`x`.`Value`,
-	`x`.`Id`
+	`x`.`Id`,
+	`x`.`Value`
 FROM
 	`BaseTable` `x`
 WHERE
@@ -45,8 +45,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	`x`.`Value`,
-	`x`.`Id`
+	`x`.`Id`,
+	`x`.`Value`
 FROM
 	`BaseTable` `x`
 WHERE
