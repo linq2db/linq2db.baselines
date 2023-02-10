@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "DateOnlyTable"
 			(
-				"ColumnNullable" Date,
+				"Id"             Int  NOT NULL,
 				"Column"         Date NOT NULL,
-				"Id"             Int  NOT NULL
+				"ColumnNullable" Date
 			)
 		';
 END
@@ -26,12 +26,12 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,CAST('1950-01-01' AS date),1 FROM rdb$database UNION ALL
-SELECT CAST('2200-01-01' AS date),CAST('2020-02-29' AS date),2 FROM rdb$database
+SELECT 1,CAST('1950-01-01' AS date),NULL FROM rdb$database UNION ALL
+SELECT 2,CAST('2020-02-29' AS date),CAST('2200-01-01' AS date) FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -41,9 +41,9 @@ DECLARE @ColumnNullable Date
 SET     @ColumnNullable = CAST('2200-01-01' AS date)
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"DateOnlyTable" "r"
 WHERE
@@ -53,9 +53,9 @@ BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"DateOnlyTable" "r"
 WHERE
@@ -69,55 +69,55 @@ DELETE FROM
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date
-SET     @Column_1 = CAST('1950-01-01' AS date)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('1950-01-01' AS date)
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = CAST('2200-01-01' AS date)
-DECLARE @Column_1 Date
-SET     @Column_1 = CAST('2020-02-29' AS date)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('2020-02-29' AS date)
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = CAST('2200-01-01' AS date)
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY
@@ -134,20 +134,20 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,CAST('1950-01-01' AS date),1 FROM rdb$database UNION ALL
-SELECT CAST('2200-01-01' AS date),CAST('2020-02-29' AS date),2 FROM rdb$database
+SELECT 1,CAST('1950-01-01' AS date),NULL FROM rdb$database UNION ALL
+SELECT 2,CAST('2020-02-29' AS date),CAST('2200-01-01' AS date) FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY
@@ -164,20 +164,20 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,CAST('1950-01-01' AS date),1 FROM rdb$database UNION ALL
-SELECT CAST('2200-01-01' AS date),CAST('2020-02-29' AS date),2 FROM rdb$database
+SELECT 1,CAST('1950-01-01' AS date),NULL FROM rdb$database UNION ALL
+SELECT 2,CAST('2020-02-29' AS date),CAST('2200-01-01' AS date) FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY

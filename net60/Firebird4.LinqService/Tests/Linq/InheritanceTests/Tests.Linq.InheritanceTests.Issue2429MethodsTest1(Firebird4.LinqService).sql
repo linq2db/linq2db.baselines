@@ -14,8 +14,8 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "BaseTable"
 			(
-				"Value" Int NOT NULL,
 				"Id"    Int NOT NULL,
+				"Value" Int NOT NULL,
 
 				CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
 			)
@@ -24,20 +24,20 @@ END
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @BaseValue Integer -- Int32
-SET     @BaseValue = 100
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @BaseValue Integer -- Int32
+SET     @BaseValue = 100
 
 INSERT INTO "BaseTable"
 (
-	"Value",
-	"Id"
+	"Id",
+	"Value"
 )
 VALUES
 (
-	@BaseValue,
-	@Id
+	@Id,
+	@BaseValue
 )
 
 BeforeExecute
@@ -46,8 +46,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE
@@ -59,8 +59,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE
