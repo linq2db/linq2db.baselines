@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS "ColumnOrderTest"
 	"EffectiveStart" TimeStamp NOT NULL,
 	"EffectiveEnd"   TimeStamp     NULL,
 	"Key"            Int       NOT NULL,
-	"Code"           text          NULL,
 	"Name"           text          NULL,
+	"Code"           text          NULL,
 	"Audit1ID"       Int       NOT NULL,
 	"Audit2ID"       Int       NOT NULL,
 

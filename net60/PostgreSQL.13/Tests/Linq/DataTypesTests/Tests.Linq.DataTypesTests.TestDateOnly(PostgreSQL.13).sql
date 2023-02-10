@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "DateOnlyTable"
 (
-	"ColumnNullable" Date     NULL,
+	"Id"             Int  NOT NULL,
 	"Column"         Date NOT NULL,
-	"Id"             Int  NOT NULL
+	"ColumnNullable" Date     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'1950-01-01'::date,1),
-('2200-01-01'::date,'2020-02-29'::date,2)
+(1,'1950-01-01'::date,NULL),
+(2,'2020-02-29'::date,'2200-01-01'::date)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'::date
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"DateOnlyTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"DateOnlyTable" r
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date
-SET     @Column_1 = '1950-01-01'::date
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date
+SET     @Column_1 = '1950-01-01'::date
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'::date
-DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29'::date
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date
+SET     @Column_1 = '2020-02-29'::date
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = '2200-01-01'::date
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"DateOnlyTable" t1
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'1950-01-01'::date,1),
-('2200-01-01'::date,'2020-02-29'::date,2)
+(1,'1950-01-01'::date,NULL),
+(2,'2020-02-29'::date,'2200-01-01'::date)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"DateOnlyTable" t1
 ORDER BY
@@ -154,15 +154,15 @@ DELETE FROM
 	"DateOnlyTable" t1
 
 BeforeExecute
-INSERT BULK "DateOnlyTable"(ColumnNullable, Column, Id)
+INSERT BULK "DateOnlyTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"DateOnlyTable" t1
 ORDER BY
