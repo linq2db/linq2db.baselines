@@ -8,23 +8,23 @@ BeforeExecute
 
 CREATE COLUMN TABLE "BaseTable"
 (
-	"Value" Integer NOT NULL,
 	"Id"    Integer NOT NULL,
+	"Value" Integer NOT NULL,
 
 	PRIMARY KEY ("Id")
 )
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BaseValue  -- Int32
-SET     @BaseValue = 100
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @BaseValue  -- Int32
+SET     @BaseValue = 100
 
 INSERT INTO "BaseTable"
 (
-	"Value",
-	"Id"
+	"Id",
+	"Value"
 )
 VALUES
 (
@@ -38,8 +38,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE
@@ -52,8 +52,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE

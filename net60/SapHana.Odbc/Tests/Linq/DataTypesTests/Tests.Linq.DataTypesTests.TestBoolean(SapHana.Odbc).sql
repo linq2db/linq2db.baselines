@@ -8,25 +8,25 @@ BeforeExecute
 
 CREATE COLUMN TABLE "BooleanTable"
 (
-	"ColumnNullable" TinyInt     NULL,
+	"Id"             Integer NOT NULL,
 	"Column"         TinyInt NOT NULL,
-	"Id"             Integer NOT NULL
+	"ColumnNullable" TinyInt     NULL
 )
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -37,18 +37,18 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 0
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 1
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"BooleanTable" "r"
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"BooleanTable" "r"
 WHERE
@@ -93,18 +93,18 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -115,18 +115,18 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 0
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -139,9 +139,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY
@@ -155,18 +155,18 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -177,18 +177,18 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 0
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -201,9 +201,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY
@@ -217,18 +217,18 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -239,18 +239,18 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 0
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
@@ -263,9 +263,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY
