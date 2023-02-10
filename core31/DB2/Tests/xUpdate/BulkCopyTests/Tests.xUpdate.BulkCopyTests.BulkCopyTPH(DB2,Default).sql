@@ -18,8 +18,8 @@ BEGIN
 			"Discriminator" Int          NOT NULL,
 			"Value1"        NVarChar(50)     NULL,
 			"Value2"        NVarChar(50)     NULL,
-			"NullableBool"  VarChar(1)       NULL,
 			"Value3"        NVarChar(50)     NULL,
+			"NullableBool"  VarChar(1)       NULL,
 
 			CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
 		)
@@ -35,13 +35,13 @@ INSERT INTO "TPHTable"
 	"Discriminator",
 	"Value1",
 	"Value2",
-	"NullableBool",
-	"Value3"
+	"Value3",
+	"NullableBool"
 )
 VALUES
 (1,1,'Str1',NULL,NULL,NULL),
 (2,2,NULL,'Str2',NULL,NULL),
-(3,3,NULL,NULL,'Y','Str3')
+(3,3,NULL,NULL,'Str3','Y')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -51,8 +51,8 @@ SELECT
 	"t1"."Discriminator",
 	"t1"."Value1",
 	"t1"."Value2",
-	"t1"."NullableBool",
-	"t1"."Value3"
+	"t1"."Value3",
+	"t1"."NullableBool"
 FROM
 	"TPHTable" "t1"
 ORDER BY
@@ -66,8 +66,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -82,8 +82,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -98,8 +98,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -114,8 +114,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -130,8 +130,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -146,8 +146,8 @@ SELECT
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE

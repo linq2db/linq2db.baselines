@@ -11,28 +11,28 @@ CREATE TABLE "aa"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @cc VarChar(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Integer(4) -- Int32
 SET     @bb = 99
+DECLARE @cc VarChar(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO "aa"
 (
-	"cc",
-	"bb"
+	"bb",
+	"cc"
 )
 VALUES
 (
-	@cc,
-	@bb
+	@bb,
+	@cc
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."cc",
-	"t1"."bb"
+	"t1"."bb",
+	"t1"."cc"
 FROM
 	"aa" "t1"
 

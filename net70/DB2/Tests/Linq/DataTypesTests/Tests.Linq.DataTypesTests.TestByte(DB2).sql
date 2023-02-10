@@ -14,9 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "ByteTable"
 		(
-			"ColumnNullable" SmallInt     NULL,
+			"Id"             Int      NOT NULL,
 			"Column"         SmallInt NOT NULL,
-			"Id"             Int      NOT NULL
+			"ColumnNullable" SmallInt     NULL
 		)
 	';
 END
@@ -26,12 +26,12 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
@@ -42,9 +42,9 @@ DECLARE @ColumnNullable SmallInt(2) -- Int16
 SET     @ColumnNullable = 2
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"ByteTable" "r"
 WHERE
@@ -54,9 +54,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"ByteTable" "r"
 WHERE
@@ -70,55 +70,55 @@ DELETE FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable SmallInt(2) -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable SmallInt(2) -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY
@@ -135,21 +135,21 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY
@@ -168,9 +168,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY

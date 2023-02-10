@@ -14,8 +14,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "BaseTable"
 		(
-			"Value" Int NOT NULL,
 			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL,
 
 			CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
 		)
@@ -27,18 +27,18 @@ BeforeExecute
 
 INSERT INTO "BaseTable"
 (
-	"Value",
-	"Id"
+	"Id",
+	"Value"
 )
 VALUES
-(100,1)
+(1,100)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE
@@ -49,8 +49,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."Value",
-	"x"."Id"
+	"x"."Id",
+	"x"."Value"
 FROM
 	"BaseTable" "x"
 WHERE
