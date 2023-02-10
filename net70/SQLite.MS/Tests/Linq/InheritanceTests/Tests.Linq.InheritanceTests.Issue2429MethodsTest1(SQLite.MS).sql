@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [BaseTable]
 (
-	[Value] INTEGER NOT NULL,
 	[Id]    INTEGER NOT NULL,
+	[Value] INTEGER NOT NULL,
 
 	CONSTRAINT [PK_BaseTable] PRIMARY KEY ([Id])
 )
@@ -19,11 +19,11 @@ BeforeExecute
 
 INSERT INTO [BaseTable]
 (
-	[Value],
-	[Id]
+	[Id],
+	[Value]
 )
 VALUES
-(100,1)
+(1,100)
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -31,8 +31,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -45,8 +45,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE

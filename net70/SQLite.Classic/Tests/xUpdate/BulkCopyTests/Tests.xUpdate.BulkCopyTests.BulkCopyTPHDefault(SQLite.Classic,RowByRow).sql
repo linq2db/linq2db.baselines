@@ -19,67 +19,67 @@ CREATE TABLE IF NOT EXISTS [TPHTableDefault]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Discriminator  -- Int32
-SET     @Discriminator = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Discriminator  -- Int32
+SET     @Discriminator = 1
 DECLARE @Value1 NVarChar(4) -- String
 SET     @Value1 = 'Str1'
 
 INSERT INTO [TPHTableDefault]
 (
-	[Discriminator],
 	[Id],
+	[Discriminator],
 	[Value1]
 )
 VALUES
 (
-	@Discriminator,
 	@Id,
+	@Discriminator,
 	@Value1
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Discriminator  -- Int32
-SET     @Discriminator = 2
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Discriminator  -- Int32
+SET     @Discriminator = 2
 DECLARE @Value2 NVarChar(4) -- String
 SET     @Value2 = 'Str2'
 
 INSERT INTO [TPHTableDefault]
 (
-	[Discriminator],
 	[Id],
+	[Discriminator],
 	[Value2]
 )
 VALUES
 (
-	@Discriminator,
 	@Id,
+	@Discriminator,
 	@Value2
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Discriminator  -- Int32
-SET     @Discriminator = 3
 DECLARE @Id  -- Int32
 SET     @Id = 3
+DECLARE @Discriminator  -- Int32
+SET     @Discriminator = 3
 DECLARE @Value3 NVarChar(4) -- String
 SET     @Value3 = 'Str3'
 
 INSERT INTO [TPHTableDefault]
 (
-	[Discriminator],
 	[Id],
+	[Discriminator],
 	[Value3]
 )
 VALUES
 (
-	@Discriminator,
 	@Id,
+	@Discriminator,
 	@Value3
 )
 
