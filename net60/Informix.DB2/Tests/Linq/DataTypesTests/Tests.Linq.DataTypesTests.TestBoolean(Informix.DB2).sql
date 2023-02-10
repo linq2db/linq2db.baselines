@@ -8,53 +8,53 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS BooleanTable
 (
-	ColumnNullable BOOLEAN     NULL,
+	Id             Int     NOT NULL,
 	"Column"       BOOLEAN NOT NULL,
-	Id             Int     NOT NULL
+	ColumnNullable BOOLEAN     NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 't'
+DECLARE @ColumnNullable SmallInt -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Char(1) -- StringFixedLength
-SET     @ColumnNullable = 't'
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 'f'
+DECLARE @ColumnNullable Char(1) -- StringFixedLength
+SET     @ColumnNullable = 't'
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable Char(1) -- StringFixedLength
 SET     @ColumnNullable = 't'
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	BooleanTable r
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	BooleanTable r
 WHERE
@@ -93,55 +93,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 't'
+DECLARE @ColumnNullable SmallInt -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Char(1) -- StringFixedLength
-SET     @ColumnNullable = 't'
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 'f'
+DECLARE @ColumnNullable Char(1) -- StringFixedLength
+SET     @ColumnNullable = 't'
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY
@@ -155,55 +155,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 't'
+DECLARE @ColumnNullable SmallInt -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Char(1) -- StringFixedLength
-SET     @ColumnNullable = 't'
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Char(1) -- StringFixedLength
+SET     @Column_1 = 'f'
+DECLARE @ColumnNullable Char(1) -- StringFixedLength
+SET     @ColumnNullable = 't'
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY
@@ -222,9 +222,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY

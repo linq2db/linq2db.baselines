@@ -23,9 +23,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS AuditAlert
 (
-	CreationDate    datetime year to fraction     NULL,
-	AlertCode       NVarChar(255)                 NULL,
 	AlertKey        NVarChar(255)                 NULL,
+	AlertCode       NVarChar(255)                 NULL,
+	CreationDate    datetime year to fraction     NULL,
 	TransactionDate datetime year to fraction     NULL
 )
 

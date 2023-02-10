@@ -11,28 +11,28 @@ CREATE TABLE aa
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @cc VarChar(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Integer(4) -- Int32
 SET     @bb = 99
+DECLARE @cc VarChar(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO aa
 (
-	cc,
-	bb
+	bb,
+	cc
 )
 VALUES
 (
-	@cc,
-	@bb
+	@bb,
+	@cc
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.cc,
-	t1.bb
+	t1.bb,
+	t1.cc
 FROM
 	aa t1
 

@@ -8,53 +8,53 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS StringEnumTable
 (
-	ColumnNullable NVarChar(8)     NULL,
+	Id             Int         NOT NULL,
 	"Column"       NVarChar(8) NOT NULL,
-	Id             Int         NOT NULL
+	ColumnNullable NVarChar(8)     NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 VarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable VarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 VarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable VarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	StringEnumTable r
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	StringEnumTable r
 WHERE
@@ -93,55 +93,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 VarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable VarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 VarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable VarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY
@@ -155,55 +155,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 VarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable VarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable VarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 VarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable VarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY
@@ -222,9 +222,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY
