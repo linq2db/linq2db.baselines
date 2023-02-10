@@ -11,28 +11,28 @@ CREATE TABLE aa
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @cc Text(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
+DECLARE @cc Text(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO aa
 (
-	cc,
-	bb
+	bb,
+	cc
 )
 VALUES
 (
-	:cc,
-	:bb
+	:bb,
+	:cc
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1.cc,
-	t1.bb
+	t1.bb,
+	t1.cc
 FROM
 	aa t1
 
