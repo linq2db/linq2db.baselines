@@ -303,8 +303,8 @@ BeforeExecute
 INSERT ASYNC BULK GrandChild(ParentID, ChildID, GrandChildID)
 
 BeforeExecute
-INSERT ASYNC BULK InheritanceParent(TypeDiscriminator, InheritanceParentId, Name)
+INSERT ASYNC BULK InheritanceParent(InheritanceParentId, TypeDiscriminator, Name)
 
 BeforeExecute
-INSERT ASYNC BULK InheritanceChild(InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name)
+INSERT ASYNC BULK InheritanceChild(InheritanceChildId, TypeDiscriminator, InheritanceParentId, Name)
 

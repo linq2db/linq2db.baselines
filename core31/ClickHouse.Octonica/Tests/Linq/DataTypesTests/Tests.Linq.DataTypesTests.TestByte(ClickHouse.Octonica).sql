@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS ByteTable
 (
-	ColumnNullable Nullable(UInt8),
+	Id             Int32,
 	Column         UInt8,
-	Id             Int32
+	ColumnNullable Nullable(UInt8)
 )
 ENGINE = Memory()
 
@@ -19,21 +19,21 @@ BeforeExecute
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,toUInt8(1),toInt32(1)),
-(toUInt8(2),toUInt8(255),toInt32(2))
+(toInt32(1),toUInt8(1),NULL),
+(toInt32(2),toUInt8(255),toUInt8(2))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	ByteTable r
 WHERE
@@ -43,9 +43,9 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	ByteTable r
 WHERE
@@ -63,15 +63,15 @@ BeforeExecute
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	NULL,
+	toInt32(1),
 	toUInt8(1),
-	toInt32(1)
+	NULL
 )
 
 BeforeExecute
@@ -79,24 +79,24 @@ BeforeExecute
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	toUInt8(2),
+	toInt32(2),
 	toUInt8(255),
-	toInt32(2)
+	toUInt8(2)
 )
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY
@@ -114,21 +114,21 @@ BeforeExecute
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,toUInt8(1),toInt32(1)),
-(toUInt8(2),toUInt8(255),toInt32(2))
+(toInt32(1),toUInt8(1),NULL),
+(toInt32(2),toUInt8(255),toUInt8(2))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY
@@ -142,15 +142,15 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT INTO ByteTable(ColumnNullable, Column, Id) VALUES
+INSERT INTO ByteTable(Id, Column, ColumnNullable) VALUES
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY

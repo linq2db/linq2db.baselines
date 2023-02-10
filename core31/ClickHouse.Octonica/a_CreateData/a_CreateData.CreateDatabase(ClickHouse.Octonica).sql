@@ -309,8 +309,8 @@ BeforeExecute
 INSERT INTO GrandChild(ParentID, ChildID, GrandChildID) VALUES
 
 BeforeExecute
-INSERT INTO InheritanceParent(TypeDiscriminator, InheritanceParentId, Name) VALUES
+INSERT INTO InheritanceParent(InheritanceParentId, TypeDiscriminator, Name) VALUES
 
 BeforeExecute
-INSERT INTO InheritanceChild(InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name) VALUES
+INSERT INTO InheritanceChild(InheritanceChildId, TypeDiscriminator, InheritanceParentId, Name) VALUES
 

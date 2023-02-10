@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS IntEnumTable
 (
-	ColumnNullable Nullable(Int32),
+	Id             Int32,
 	Column         Int32,
-	Id             Int32
+	ColumnNullable Nullable(Int32)
 )
 ENGINE = Memory()
 
@@ -19,21 +19,21 @@ BeforeExecute
 
 INSERT INTO IntEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,toInt32(1),toInt32(1)),
-(toInt32(3),toInt32(2),toInt32(2))
+(toInt32(1),toInt32(1),NULL),
+(toInt32(2),toInt32(2),toInt32(3))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	IntEnumTable r
 WHERE
@@ -43,9 +43,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	IntEnumTable r
 WHERE
@@ -63,15 +63,15 @@ BeforeExecute
 
 INSERT INTO IntEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	NULL,
 	toInt32(1),
-	toInt32(1)
+	toInt32(1),
+	NULL
 )
 
 BeforeExecute
@@ -79,24 +79,24 @@ BeforeExecute
 
 INSERT INTO IntEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	toInt32(3),
 	toInt32(2),
-	toInt32(2)
+	toInt32(2),
+	toInt32(3)
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	IntEnumTable t1
 ORDER BY
@@ -114,21 +114,21 @@ BeforeExecute
 
 INSERT INTO IntEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,toInt32(1),toInt32(1)),
-(toInt32(3),toInt32(2),toInt32(2))
+(toInt32(1),toInt32(1),NULL),
+(toInt32(2),toInt32(2),toInt32(3))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	IntEnumTable t1
 ORDER BY
@@ -142,15 +142,15 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK IntEnumTable(ColumnNullable, Column, Id)
+INSERT ASYNC BULK IntEnumTable(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	IntEnumTable t1
 ORDER BY

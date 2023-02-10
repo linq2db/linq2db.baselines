@@ -92,8 +92,8 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ParentID,
 	t1.ID,
+	t1.ParentID,
 	a_Parent.ID,
 	a_Parent.GrandParentID,
 	a_GrandParent.ID
