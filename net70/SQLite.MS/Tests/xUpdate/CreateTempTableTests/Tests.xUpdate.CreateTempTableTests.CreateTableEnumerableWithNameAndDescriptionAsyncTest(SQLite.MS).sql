@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-DROP TABLE IF EXISTS [TempTable]
+DROP TABLE IF EXISTS temp.[TempTable]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-CREATE TABLE IF NOT EXISTS [TempTable]
+CREATE TEMPORARY TABLE IF NOT EXISTS temp.[TempTable]
 (
 	[Name] NVarChar(20) NOT NULL
 )
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-INSERT INTO [TempTable]
+INSERT INTO temp.[TempTable]
 (
 	[Name]
 )
@@ -28,10 +28,10 @@ SELECT
 	[t].[Name]
 FROM
 	[Person] [p]
-		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
+		INNER JOIN temp.[TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
-DROP TABLE IF EXISTS [TempTable]
+DROP TABLE IF EXISTS temp.[TempTable]
 
