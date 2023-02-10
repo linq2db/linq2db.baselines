@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "StringEnumTable"
 			(
-				"ColumnNullable" VarChar(8) CHARACTER SET UNICODE_FSS,
+				"Id"             Int                                  NOT NULL,
 				"Column"         VarChar(8) CHARACTER SET UNICODE_FSS NOT NULL,
-				"Id"             Int                                  NOT NULL
+				"ColumnNullable" VarChar(8) CHARACTER SET UNICODE_FSS
 			)
 		';
 END
@@ -26,12 +26,12 @@ BeforeExecute
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),1 FROM rdb$database UNION ALL
-SELECT 'value=33','value=2',2 FROM rdb$database
+SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,'value=2','value=33' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -41,9 +41,9 @@ DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"StringEnumTable" "r"
 WHERE
@@ -53,9 +53,9 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"StringEnumTable" "r"
 WHERE
@@ -69,55 +69,55 @@ DELETE FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ColumnNullable VarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 VarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable VarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ColumnNullable VarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 VarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable VarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"StringEnumTable" "t1"
 ORDER BY
@@ -134,20 +134,20 @@ BeforeExecute
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),1 FROM rdb$database UNION ALL
-SELECT 'value=33','value=2',2 FROM rdb$database
+SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,'value=2','value=33' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"StringEnumTable" "t1"
 ORDER BY
@@ -164,20 +164,20 @@ BeforeExecute
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),1 FROM rdb$database UNION ALL
-SELECT 'value=33','value=2',2 FROM rdb$database
+SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,'value=2','value=33' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"StringEnumTable" "t1"
 ORDER BY
