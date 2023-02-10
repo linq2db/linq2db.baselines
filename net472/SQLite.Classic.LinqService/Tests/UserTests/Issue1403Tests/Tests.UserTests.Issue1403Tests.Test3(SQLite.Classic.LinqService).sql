@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Issue1403Tests_3]
 (
-	[event_description] NVarChar(255) NOT NULL,
 	[event_id]          INTEGER       NOT NULL,
+	[event_description] NVarChar(255) NOT NULL,
 
 	CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY ([event_id])
 )
@@ -34,8 +34,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	[t1].[event_description],
-	[t1].[event_id]
+	[t1].[event_id],
+	[t1].[event_description]
 FROM
 	[Issue1403Tests_3] [t1]
 LIMIT @take
