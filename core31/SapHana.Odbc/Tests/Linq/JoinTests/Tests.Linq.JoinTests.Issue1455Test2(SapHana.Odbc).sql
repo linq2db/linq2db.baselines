@@ -23,9 +23,9 @@ BeforeExecute
 
 CREATE COLUMN TABLE "AuditAlert"
 (
-	"CreationDate"    Timestamp         NULL,
-	"AlertCode"       NVarChar(255)     NULL,
 	"AlertKey"        NVarChar(255)     NULL,
+	"AlertCode"       NVarChar(255)     NULL,
+	"CreationDate"    Timestamp         NULL,
 	"TransactionDate" Timestamp         NULL
 )
 

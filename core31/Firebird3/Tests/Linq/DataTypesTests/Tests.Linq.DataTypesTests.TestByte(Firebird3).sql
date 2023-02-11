@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "ByteTable"
 			(
-				"ColumnNullable" SmallInt,
+				"Id"             Int      NOT NULL,
 				"Column"         SmallInt NOT NULL,
-				"Id"             Int      NOT NULL
+				"ColumnNullable" SmallInt
 			)
 		';
 END
@@ -26,11 +26,11 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,1,1 FROM rdb$database UNION ALL
+SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,255,2 FROM rdb$database
 
 BeforeExecute
@@ -41,9 +41,9 @@ DECLARE @ColumnNullable SmallInt -- Int16
 SET     @ColumnNullable = 2
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"ByteTable" "r"
 WHERE
@@ -53,9 +53,9 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"ByteTable" "r"
 WHERE
@@ -69,55 +69,55 @@ DELETE FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 SmallInt -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY
@@ -134,20 +134,20 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,1,1 FROM rdb$database UNION ALL
+SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,255,2 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY
@@ -164,20 +164,20 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
-SELECT NULL,1,1 FROM rdb$database UNION ALL
+SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,255,2 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"ByteTable" "t1"
 ORDER BY

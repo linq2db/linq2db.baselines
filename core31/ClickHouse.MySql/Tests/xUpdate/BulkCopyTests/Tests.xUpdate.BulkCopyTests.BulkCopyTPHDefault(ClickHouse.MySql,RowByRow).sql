@@ -24,8 +24,8 @@ BeforeExecute
 
 INSERT INTO TPHTableDefault
 (
-	Discriminator,
 	Id,
+	Discriminator,
 	Value1
 )
 VALUES
@@ -40,8 +40,8 @@ BeforeExecute
 
 INSERT INTO TPHTableDefault
 (
-	Discriminator,
 	Id,
+	Discriminator,
 	Value2
 )
 VALUES
@@ -56,8 +56,8 @@ BeforeExecute
 
 INSERT INTO TPHTableDefault
 (
-	Discriminator,
 	Id,
+	Discriminator,
 	Value3
 )
 VALUES

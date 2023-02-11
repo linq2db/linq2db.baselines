@@ -14,8 +14,8 @@ IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NULL)
 		[EffectiveStart] DateTime       NOT NULL,
 		[EffectiveEnd]   DateTime           NULL,
 		[Key]            Int            NOT NULL,
-		[Code]           NVarChar(4000)     NULL,
 		[Name]           NVarChar(4000)     NULL,
+		[Code]           NVarChar(4000)     NULL,
 		[Audit1ID]       Int            NOT NULL,
 		[Audit2ID]       Int            NOT NULL,
 

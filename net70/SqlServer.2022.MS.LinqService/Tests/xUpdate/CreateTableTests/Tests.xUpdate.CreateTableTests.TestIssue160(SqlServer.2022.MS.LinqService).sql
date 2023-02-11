@@ -11,28 +11,28 @@ CREATE TABLE [aa]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @cc NVarChar(4000) -- String
-SET     @cc = N'hallo'
 DECLARE @bb Int -- Int32
 SET     @bb = 99
+DECLARE @cc NVarChar(4000) -- String
+SET     @cc = N'hallo'
 
 INSERT INTO [aa]
 (
-	[cc],
-	[bb]
+	[bb],
+	[cc]
 )
 VALUES
 (
-	@cc,
-	@bb
+	@bb,
+	@cc
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t1].[cc],
-	[t1].[bb]
+	[t1].[bb],
+	[t1].[cc]
 FROM
 	[aa] [t1]
 

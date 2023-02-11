@@ -30,9 +30,9 @@ IF (OBJECT_ID(N'AuditAlert') IS NULL)
 	EXECUTE('
 		CREATE TABLE [AuditAlert]
 		(
-			[CreationDate]    DateTime          NULL,
-			[AlertCode]       NVarChar(255)     NULL,
 			[AlertKey]        NVarChar(255)     NULL,
+			[AlertCode]       NVarChar(255)     NULL,
+			[CreationDate]    DateTime          NULL,
 			[TransactionDate] DateTime          NULL
 		)
 	')

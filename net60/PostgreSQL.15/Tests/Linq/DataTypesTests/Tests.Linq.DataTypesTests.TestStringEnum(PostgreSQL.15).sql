@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "StringEnumTable"
 (
-	"ColumnNullable" text     NULL,
+	"Id"             Int  NOT NULL,
 	"Column"         text NOT NULL,
-	"Id"             Int  NOT NULL
+	"ColumnNullable" text     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'val=1',1),
-('value=33','value=2',2)
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Text(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"StringEnumTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"StringEnumTable" r
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ColumnNullable Text -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Text(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Text(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable Text -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ColumnNullable Text(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 Text(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Text(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable Text(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"StringEnumTable" t1
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO "StringEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'val=1',1),
-('value=33','value=2',2)
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"StringEnumTable" t1
 ORDER BY
@@ -154,15 +154,15 @@ DELETE FROM
 	"StringEnumTable" t1
 
 BeforeExecute
-INSERT BULK "StringEnumTable"(ColumnNullable, Column, Id)
+INSERT BULK "StringEnumTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"StringEnumTable" t1
 ORDER BY

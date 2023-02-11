@@ -12,14 +12,14 @@ CREATE TABLE IF NOT EXISTS "TPHTable"
 	"Discriminator" Int        NOT NULL,
 	"Value1"        text           NULL,
 	"Value2"        text           NULL,
-	"NullableBool"  VarChar(1)     NULL,
 	"Value3"        text           NULL,
+	"NullableBool"  VarChar(1)     NULL,
 
 	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
-INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, NullableBool, Value3)
+INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -29,8 +29,8 @@ SELECT
 	t1."Discriminator",
 	t1."Value1",
 	t1."Value2",
-	t1."NullableBool",
-	t1."Value3"
+	t1."Value3",
+	t1."NullableBool"
 FROM
 	"TPHTable" t1
 ORDER BY
@@ -46,8 +46,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -64,8 +64,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -82,8 +82,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -100,8 +100,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -118,8 +118,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -136,8 +136,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE

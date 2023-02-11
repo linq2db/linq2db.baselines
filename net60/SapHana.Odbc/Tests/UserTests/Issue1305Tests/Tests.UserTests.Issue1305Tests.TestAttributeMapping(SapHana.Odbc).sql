@@ -12,8 +12,8 @@ CREATE COLUMN TABLE "ColumnOrderTest"
 	"EffectiveStart" Timestamp     NOT NULL,
 	"EffectiveEnd"   Timestamp         NULL,
 	"Key"            Integer       NOT NULL,
-	"Code"           NVarChar(255)     NULL,
 	"Name"           NVarChar(255)     NULL,
+	"Code"           NVarChar(255)     NULL,
 	"Audit1ID"       Integer       NOT NULL,
 	"Audit2ID"       Integer       NOT NULL,
 

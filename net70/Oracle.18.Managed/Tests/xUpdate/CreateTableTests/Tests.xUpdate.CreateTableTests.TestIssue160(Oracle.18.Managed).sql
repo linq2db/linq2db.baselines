@@ -11,28 +11,28 @@ CREATE TABLE "aa"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @cc Varchar2(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Int32
 SET     @bb = 99
+DECLARE @cc Varchar2(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO "aa"
 (
-	"cc",
-	"bb"
+	"bb",
+	"cc"
 )
 VALUES
 (
-	:cc,
-	:bb
+	:bb,
+	:cc
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."cc",
-	t1."bb"
+	t1."bb",
+	t1."cc"
 FROM
 	"aa" t1
 

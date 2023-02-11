@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS BooleanTable
 (
-	ColumnNullable Nullable(Bool),
+	Id             Int32,
 	Column         Bool,
-	Id             Int32
+	ColumnNullable Nullable(Bool)
 )
 ENGINE = Memory()
 
@@ -19,21 +19,21 @@ BeforeExecute
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,true,toInt32(1)),
-(true,false,toInt32(2))
+(toInt32(1),true,NULL),
+(toInt32(2),false,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	BooleanTable r
 WHERE
@@ -43,9 +43,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	BooleanTable r
 WHERE
@@ -63,15 +63,15 @@ BeforeExecute
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	NULL,
+	toInt32(1),
 	true,
-	toInt32(1)
+	NULL
 )
 
 BeforeExecute
@@ -79,24 +79,24 @@ BeforeExecute
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	true,
+	toInt32(2),
 	false,
-	toInt32(2)
+	true
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY
@@ -114,21 +114,21 @@ BeforeExecute
 
 INSERT INTO BooleanTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,true,toInt32(1)),
-(true,false,toInt32(2))
+(toInt32(1),true,NULL),
+(toInt32(2),false,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY
@@ -142,15 +142,15 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK BooleanTable(ColumnNullable, Column, Id)
+INSERT ASYNC BULK BooleanTable(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	BooleanTable t1
 ORDER BY

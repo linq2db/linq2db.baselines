@@ -971,23 +971,23 @@ BeforeExecute
 
 INSERT INTO `InheritanceParent`
 (
-	`TypeDiscriminator`,
 	`InheritanceParentId`,
+	`TypeDiscriminator`,
 	`Name`
 )
 VALUES
-(NULL,1,NULL),
-(1,2,NULL),
-(2,3,'InheritanceParent2')
+(1,NULL,NULL),
+(2,1,NULL),
+(3,2,'InheritanceParent2')
 
 BeforeExecute
 -- MySqlConnector MySql
 
 INSERT INTO `InheritanceChild`
 (
-	`InheritanceParentId`,
-	`TypeDiscriminator`,
 	`InheritanceChildId`,
+	`TypeDiscriminator`,
+	`InheritanceParentId`,
 	`Name`
 )
 VALUES

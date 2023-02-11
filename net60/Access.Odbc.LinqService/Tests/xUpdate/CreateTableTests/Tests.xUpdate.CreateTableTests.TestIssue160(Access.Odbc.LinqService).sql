@@ -11,15 +11,15 @@ CREATE TABLE [aa]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @cc NVarChar(5) -- String
-SET     @cc = 'hallo'
 DECLARE @bb Int -- Int32
 SET     @bb = 99
+DECLARE @cc NVarChar(5) -- String
+SET     @cc = 'hallo'
 
 INSERT INTO [aa]
 (
-	[cc],
-	[bb]
+	[bb],
+	[cc]
 )
 VALUES
 (
@@ -31,8 +31,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[cc],
-	[t1].[bb]
+	[t1].[bb],
+	[t1].[cc]
 FROM
 	[aa] [t1]
 

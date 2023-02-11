@@ -2544,17 +2544,17 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 1
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = NULL
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
 
 INSERT INTO "InheritanceParent"
 (
-	"TypeDiscriminator",
 	"InheritanceParentId",
+	"TypeDiscriminator",
 	"Name"
 )
 VALUES
@@ -2566,17 +2566,17 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 2
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
 
 INSERT INTO "InheritanceParent"
 (
-	"TypeDiscriminator",
 	"InheritanceParentId",
+	"TypeDiscriminator",
 	"Name"
 )
 VALUES
@@ -2588,17 +2588,17 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 3
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = 2
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO "InheritanceParent"
 (
-	"TypeDiscriminator",
 	"InheritanceParentId",
+	"TypeDiscriminator",
 	"Name"
 )
 VALUES
@@ -2610,20 +2610,20 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @InheritanceParentId  -- Int32
-SET     @InheritanceParentId = 1
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceChildId  -- Int32
 SET     @InheritanceChildId = 1
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = NULL
+DECLARE @InheritanceParentId  -- Int32
+SET     @InheritanceParentId = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
 
 INSERT INTO "InheritanceChild"
 (
-	"InheritanceParentId",
-	"TypeDiscriminator",
 	"InheritanceChildId",
+	"TypeDiscriminator",
+	"InheritanceParentId",
 	"Name"
 )
 VALUES
@@ -2636,20 +2636,20 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @InheritanceParentId  -- Int32
-SET     @InheritanceParentId = 2
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceChildId  -- Int32
 SET     @InheritanceChildId = 2
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = 1
+DECLARE @InheritanceParentId  -- Int32
+SET     @InheritanceParentId = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
 
 INSERT INTO "InheritanceChild"
 (
-	"InheritanceParentId",
-	"TypeDiscriminator",
 	"InheritanceChildId",
+	"TypeDiscriminator",
+	"InheritanceParentId",
 	"Name"
 )
 VALUES
@@ -2662,20 +2662,20 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @InheritanceParentId  -- Int32
-SET     @InheritanceParentId = 3
-DECLARE @TypeDiscriminator  -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceChildId  -- Int32
 SET     @InheritanceChildId = 3
+DECLARE @TypeDiscriminator  -- Int32
+SET     @TypeDiscriminator = 2
+DECLARE @InheritanceParentId  -- Int32
+SET     @InheritanceParentId = 3
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO "InheritanceChild"
 (
-	"InheritanceParentId",
-	"TypeDiscriminator",
 	"InheritanceChildId",
+	"TypeDiscriminator",
+	"InheritanceParentId",
 	"Name"
 )
 VALUES

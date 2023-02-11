@@ -10,9 +10,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[ByteTable]', N'U') IS NULL)
 	CREATE TABLE [ByteTable]
 	(
-		[ColumnNullable] TinyInt     NULL,
+		[Id]             Int     NOT NULL,
 		[Column]         TinyInt NOT NULL,
-		[Id]             Int     NOT NULL
+		[ColumnNullable] TinyInt     NULL
 	)
 
 BeforeExecute
@@ -20,12 +20,12 @@ BeforeExecute
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
@@ -36,9 +36,9 @@ DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[ByteTable] [r]
 WHERE
@@ -48,9 +48,9 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[ByteTable] [r]
 WHERE
@@ -65,55 +65,55 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @ColumnNullable TinyInt -- Byte
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 TinyInt(1) -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable TinyInt -- Byte
+SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @ColumnNullable TinyInt(1) -- Byte
-SET     @ColumnNullable = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 TinyInt(1) -- Byte
+SET     @Column_1 = 255
+DECLARE @ColumnNullable TinyInt(1) -- Byte
+SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY
@@ -131,21 +131,21 @@ BeforeExecute
 
 INSERT INTO [ByteTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY
@@ -159,15 +159,15 @@ FROM
 	[ByteTable] [t1]
 
 BeforeExecute
-INSERT BULK [ByteTable](ColumnNullable, Column, Id)
+INSERT BULK [ByteTable](Id, Column, ColumnNullable)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[ByteTable] [t1]
 ORDER BY

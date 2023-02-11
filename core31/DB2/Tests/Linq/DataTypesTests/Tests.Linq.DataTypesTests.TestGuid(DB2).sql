@@ -14,9 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "GuidTable"
 		(
-			"ColumnNullable" char(16) for bit data,
+			"Id"             Int                   NOT NULL,
 			"Column"         char(16) for bit data NOT NULL,
-			"Id"             Int                   NOT NULL
+			"ColumnNullable" char(16) for bit data
 		)
 	';
 END
@@ -26,13 +26,13 @@ BeforeExecute
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,BX'3D667BBCDE0F27438F925D8CC3A11D11',1),
-(BX'A57339BD2343D84D9F4FDF9F93E2A627',BX'0D6048A921DE744F8AC29516B287076E',2)
+(1,BX'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
+(2,BX'0D6048A921DE744F8AC29516B287076E',BX'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,9 +42,9 @@ DECLARE @ColumnNullable VarBinary(16) -- Binary
 SET     @ColumnNullable = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"GuidTable" "r"
 WHERE
@@ -54,9 +54,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"GuidTable" "r"
 WHERE
@@ -71,55 +71,55 @@ DELETE FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable VarBinary -- Binary
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarBinary(16) -- Binary
-SET     @Column_1 = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 VarBinary(16) -- Binary
+SET     @Column_1 = BX'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @ColumnNullable VarBinary -- Binary
+SET     @ColumnNullable = NULL
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable VarBinary(16) -- Binary
-SET     @ColumnNullable = BX'A57339BD2343D84D9F4FDF9F93E2A627'
-DECLARE @Column_1 VarBinary(16) -- Binary
-SET     @Column_1 = BX'0D6048A921DE744F8AC29516B287076E'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 VarBinary(16) -- Binary
+SET     @Column_1 = BX'0D6048A921DE744F8AC29516B287076E'
+DECLARE @ColumnNullable VarBinary(16) -- Binary
+SET     @ColumnNullable = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"GuidTable" "t1"
 ORDER BY
@@ -136,21 +136,21 @@ BeforeExecute
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,BX'3D667BBCDE0F27438F925D8CC3A11D11',1),
-(BX'A57339BD2343D84D9F4FDF9F93E2A627',BX'0D6048A921DE744F8AC29516B287076E',2)
+(1,BX'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
+(2,BX'0D6048A921DE744F8AC29516B287076E',BX'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"GuidTable" "t1"
 ORDER BY
@@ -169,9 +169,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"GuidTable" "t1"
 ORDER BY

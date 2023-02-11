@@ -21,8 +21,8 @@ BEGIN
 			"EffectiveStart" timestamp    NOT NULL,
 			"EffectiveEnd"   timestamp        NULL,
 			"Key"            Int          NOT NULL,
-			"Code"           VarChar(255)     NULL,
 			"Name"           VarChar(255)     NULL,
+			"Code"           VarChar(255)     NULL,
 			"Audit1ID"       Int          NOT NULL,
 			"Audit2ID"       Int          NOT NULL,
 

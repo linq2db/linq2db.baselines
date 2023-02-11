@@ -12,8 +12,8 @@ CREATE TABLE [TPHTable]
 	[Discriminator] Int          NOT NULL,
 	[Value1]        NVarChar(50)     NULL,
 	[Value2]        NVarChar(50)     NULL,
-	[NullableBool]  NVarChar(1)      NULL,
 	[Value3]        NVarChar(50)     NULL,
+	[NullableBool]  NVarChar(1)      NULL,
 
 	CONSTRAINT [PK_TPHTable] PRIMARY KEY ([Id])
 )
@@ -22,70 +22,70 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value1 NVarChar(4) -- String
-SET     @Value1 = 'Str1'
 DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 1
+DECLARE @Value1 NVarChar(4) -- String
+SET     @Value1 = 'Str1'
 
 INSERT INTO [TPHTable]
 (
 	[Id],
-	[Value1],
-	[Discriminator]
+	[Discriminator],
+	[Value1]
 )
 VALUES
 (
 	@Id,
-	@Value1,
-	@Discriminator
+	@Discriminator,
+	@Value1
 )
 
 BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Value2 NVarChar(4) -- String
-SET     @Value2 = 'Str2'
 DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 2
+DECLARE @Value2 NVarChar(4) -- String
+SET     @Value2 = 'Str2'
 
 INSERT INTO [TPHTable]
 (
 	[Id],
-	[Value2],
-	[Discriminator]
+	[Discriminator],
+	[Value2]
 )
 VALUES
 (
 	@Id,
-	@Value2,
-	@Discriminator
+	@Discriminator,
+	@Value2
 )
 
 BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @NullableBool NVarChar(1) -- String
-SET     @NullableBool = 'Y'
-DECLARE @Value3 NVarChar(4) -- String
-SET     @Value3 = 'Str3'
 DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 3
+DECLARE @Value3 NVarChar(4) -- String
+SET     @Value3 = 'Str3'
+DECLARE @NullableBool NVarChar(1) -- String
+SET     @NullableBool = 'Y'
 
 INSERT INTO [TPHTable]
 (
 	[Id],
-	[NullableBool],
+	[Discriminator],
 	[Value3],
-	[Discriminator]
+	[NullableBool]
 )
 VALUES
 (
 	@Id,
-	@NullableBool,
+	@Discriminator,
 	@Value3,
-	@Discriminator
+	@NullableBool
 )
 
 BeforeExecute
@@ -96,8 +96,8 @@ SELECT
 	[t1].[Discriminator],
 	[t1].[Value1],
 	[t1].[Value2],
-	[t1].[NullableBool],
-	[t1].[Value3]
+	[t1].[Value3],
+	[t1].[NullableBool]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -113,8 +113,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -130,8 +130,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -147,8 +147,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -164,8 +164,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -181,8 +181,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -198,8 +198,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE

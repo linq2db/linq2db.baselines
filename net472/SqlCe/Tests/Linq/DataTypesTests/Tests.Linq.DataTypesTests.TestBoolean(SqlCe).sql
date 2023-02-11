@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE [BooleanTable]
 (
-	[ColumnNullable] Bit     NULL,
+	[Id]             Int NOT NULL,
 	[Column]         Bit NOT NULL,
-	[Id]             Int NOT NULL
+	[ColumnNullable] Bit     NULL
 )
 
 BeforeExecute
@@ -18,12 +18,12 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,NULL UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- SqlCe
@@ -33,9 +33,9 @@ DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = 1
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -45,9 +45,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -61,55 +61,55 @@ DELETE FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 0
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = 0
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = 1
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -126,20 +126,20 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,NULL UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -156,20 +156,20 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,NULL UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY

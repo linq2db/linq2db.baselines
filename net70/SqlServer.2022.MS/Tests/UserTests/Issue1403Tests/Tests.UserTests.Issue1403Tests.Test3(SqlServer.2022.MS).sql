@@ -9,8 +9,8 @@ BeforeExecute
 IF (OBJECT_ID(N'[Issue1403Tests_3]', N'U') IS NULL)
 	CREATE TABLE [Issue1403Tests_3]
 	(
-		[event_description] NVarChar(4000) NOT NULL,
 		[event_id]          Int            NOT NULL,
+		[event_description] NVarChar(4000) NOT NULL,
 
 		CONSTRAINT [PK_Issue1403Tests_3] PRIMARY KEY CLUSTERED ([event_id])
 	)
@@ -35,8 +35,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	[t1].[event_description],
-	[t1].[event_id]
+	[t1].[event_id],
+	[t1].[event_description]
 FROM
 	[Issue1403Tests_3] [t1]
 

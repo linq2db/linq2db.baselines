@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [ConstructorTestTable]
 (
-	[Value] NVarChar(255)     NULL,
 	[Id]    INTEGER       NOT NULL,
+	[Value] NVarChar(255)     NULL,
 
 	CONSTRAINT [PK_ConstructorTestTable] PRIMARY KEY ([Id])
 )
@@ -19,11 +19,11 @@ BeforeExecute
 
 INSERT INTO [ConstructorTestTable]
 (
-	[Value],
-	[Id]
+	[Id],
+	[Value]
 )
 VALUES
-('Some',1)
+(1,'Some')
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -31,8 +31,8 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	[t1].[Value],
-	[t1].[Id]
+	[t1].[Id],
+	[t1].[Value]
 FROM
 	[ConstructorTestTable] [t1]
 LIMIT @take

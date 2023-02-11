@@ -21,11 +21,11 @@ BeforeExecute
 
 CREATE TABLE [tblDefect]
 (
-	[Del]            Bit            NOT NULL,
-	[Ok]             Bit            NOT NULL,
-	[Id_Workstation] Int            NOT NULL,
-	[Nam]            NVarChar(255)  NOT NULL,
 	[Id]             Int            NOT NULL IDENTITY,
+	[Nam]            NVarChar(255)  NOT NULL,
+	[Id_Workstation] Int            NOT NULL,
+	[Ok]             Bit            NOT NULL,
+	[Del]            Bit            NOT NULL,
 
 	CONSTRAINT [PK_tblDefect] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -40,13 +40,13 @@ BeforeExecute
 
 CREATE TABLE [tblFtq]
 (
-	[Qty]          Int       NOT NULL,
-	[Id_Defect]    Int       NOT NULL,
-	[Id_Reference] Int       NOT NULL,
-	[Id_Operator]  Int       NOT NULL,
-	[EntryShift]   TinyInt   NOT NULL,
-	[EntryDate]    DateTime  NOT NULL,
 	[Id]           Int       NOT NULL IDENTITY,
+	[EntryDate]    DateTime  NOT NULL,
+	[EntryShift]   TinyInt   NOT NULL,
+	[Id_Operator]  Int       NOT NULL,
+	[Id_Reference] Int       NOT NULL,
+	[Id_Defect]    Int       NOT NULL,
+	[Qty]          Int       NOT NULL,
 
 	CONSTRAINT [PK_tblFtq] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -61,10 +61,10 @@ BeforeExecute
 
 CREATE TABLE [tblWorkstation]
 (
-	[Del]                 Bit            NOT NULL,
-	[Nam]                 NVarChar(255)  NOT NULL,
-	[Id_WorkstationGroup] Int            NOT NULL,
 	[Id]                  Int            NOT NULL IDENTITY,
+	[Id_WorkstationGroup] Int            NOT NULL,
+	[Nam]                 NVarChar(255)  NOT NULL,
+	[Del]                 Bit            NOT NULL,
 
 	CONSTRAINT [PK_tblWorkstation] PRIMARY KEY CLUSTERED ([Id])
 )
@@ -79,11 +79,11 @@ BeforeExecute
 
 CREATE TABLE [tblWorkstationGroup]
 (
-	[Del]           Bit            NOT NULL,
-	[Id_Sector]     Int            NOT NULL,
-	[Id_SectorPart] Int            NOT NULL,
-	[Nam]           NVarChar(255)  NOT NULL,
 	[Id]            Int            NOT NULL IDENTITY,
+	[Nam]           NVarChar(255)  NOT NULL,
+	[Id_SectorPart] Int            NOT NULL,
+	[Id_Sector]     Int            NOT NULL,
+	[Del]           Bit            NOT NULL,
 
 	CONSTRAINT [PK_tblWorkstationGroup] PRIMARY KEY CLUSTERED ([Id])
 )

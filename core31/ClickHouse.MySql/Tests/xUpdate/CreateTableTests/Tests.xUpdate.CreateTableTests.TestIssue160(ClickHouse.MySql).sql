@@ -16,21 +16,21 @@ BeforeExecute
 
 INSERT INTO aa
 (
-	cc,
-	bb
+	bb,
+	cc
 )
 VALUES
 (
-	'hallo',
-	toInt32(99)
+	toInt32(99),
+	'hallo'
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.cc,
-	t1.bb
+	t1.bb,
+	t1.cc
 FROM
 	aa t1
 

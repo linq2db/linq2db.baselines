@@ -11,9 +11,9 @@ IF (OBJECT_ID(N'DateOnlyTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [DateOnlyTable]
 		(
-			[ColumnNullable] Date     NULL,
+			[Id]             Int  NOT NULL,
 			[Column]         Date NOT NULL,
-			[Id]             Int  NOT NULL
+			[ColumnNullable] Date     NULL
 		)
 	')
 
@@ -22,12 +22,12 @@ BeforeExecute
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'1950-01-01',1 UNION ALL
-SELECT '2200-01-01','2020-02-29',2
+SELECT 1,'1950-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -37,9 +37,9 @@ DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
 WHERE
@@ -49,9 +49,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
 WHERE
@@ -66,55 +66,55 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date
-SET     @Column_1 = '1950-01-01'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date
+SET     @Column_1 = '1950-01-01'
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'
-DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date
+SET     @Column_1 = '2020-02-29'
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY
@@ -132,20 +132,20 @@ BeforeExecute
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'1950-01-01',1 UNION ALL
-SELECT '2200-01-01','2020-02-29',2
+SELECT 1,'1950-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY
@@ -163,20 +163,20 @@ BeforeExecute
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'1950-01-01',1 UNION ALL
-SELECT '2200-01-01','2020-02-29',2
+SELECT 1,'1950-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY

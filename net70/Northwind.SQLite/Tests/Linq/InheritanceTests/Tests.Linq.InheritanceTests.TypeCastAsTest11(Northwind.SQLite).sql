@@ -2,16 +2,16 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[p].[Discontinued],
-	[p].[ReorderLevel],
-	[p].[UnitsOnOrder],
-	[p].[UnitsInStock],
-	[p].[UnitPrice],
-	[p].[QuantityPerUnit],
-	[p].[CategoryID],
-	[p].[SupplierID],
+	[p].[ProductID],
 	[p].[ProductName],
-	[p].[ProductID]
+	[p].[SupplierID],
+	[p].[CategoryID],
+	[p].[QuantityPerUnit],
+	[p].[UnitPrice],
+	[p].[UnitsInStock],
+	[p].[UnitsOnOrder],
+	[p].[ReorderLevel],
+	[p].[Discontinued]
 FROM
 	[Products] [p]
 WHERE

@@ -10,9 +10,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NULL)
 	CREATE TABLE [DateOnlyTable]
 	(
-		[ColumnNullable] DateTime     NULL,
+		[Id]             Int      NOT NULL,
 		[Column]         DateTime NOT NULL,
-		[Id]             Int      NOT NULL
+		[ColumnNullable] DateTime     NULL
 	)
 
 BeforeExecute
@@ -20,12 +20,12 @@ BeforeExecute
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,CAST('1950-01-01' AS DATETIME),1 UNION ALL
-SELECT CAST('2200-01-01' AS DATETIME),CAST('2020-02-29' AS DATETIME),2
+SELECT 1,CAST('1950-01-01' AS DATETIME),NULL UNION ALL
+SELECT 2,CAST('2020-02-29' AS DATETIME),CAST('2200-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -35,9 +35,9 @@ DECLARE @ColumnNullable Date
 SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
 WHERE
@@ -47,9 +47,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
 WHERE
@@ -65,55 +65,55 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date
-SET     @Column_1 = CAST('1950-01-01T00:00:00.000' AS DATETIME)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('1950-01-01T00:00:00.000' AS DATETIME)
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
-DECLARE @Column_1 Date
-SET     @Column_1 = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date
+SET     @Column_1 = CAST('2020-02-29T00:00:00.000' AS DATETIME)
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY
@@ -131,20 +131,20 @@ BeforeExecute
 
 INSERT INTO [DateOnlyTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,CAST('1950-01-01' AS DATETIME),1 UNION ALL
-SELECT CAST('2200-01-01' AS DATETIME),CAST('2020-02-29' AS DATETIME),2
+SELECT 1,CAST('1950-01-01' AS DATETIME),NULL UNION ALL
+SELECT 2,CAST('2020-02-29' AS DATETIME),CAST('2200-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY
@@ -158,15 +158,15 @@ FROM
 	[DateOnlyTable] [t1]
 
 BeforeExecute
-INSERT BULK [DateOnlyTable](ColumnNullable, Column, Id)
+INSERT BULK [DateOnlyTable](Id, Column, ColumnNullable)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
 ORDER BY

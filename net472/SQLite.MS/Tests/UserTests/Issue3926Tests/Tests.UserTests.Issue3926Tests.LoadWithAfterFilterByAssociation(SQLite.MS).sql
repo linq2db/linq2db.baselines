@@ -9,8 +9,8 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [t_category_groups]
 (
 	[Id]              Guid          NOT NULL,
-	[TelegramBotName] NVarChar(255)     NULL,
 	[GroupIcon]       NVarChar(255)     NULL,
+	[TelegramBotName] NVarChar(255)     NULL,
 
 	CONSTRAINT [PK_t_category_groups] PRIMARY KEY ([Id])
 )
@@ -26,8 +26,8 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [t_dialog_categories]
 (
 	[Id]              Guid          NOT NULL,
-	[CategoryGroupId] Guid          NOT NULL,
 	[Category]        NVarChar(255)     NULL,
+	[CategoryGroupId] Guid          NOT NULL,
 
 	CONSTRAINT [PK_t_dialog_categories] PRIMARY KEY ([Id])
 )
@@ -42,8 +42,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [CALL_RECORD]
 (
-	[IsNew] Bit  NOT NULL,
-	[Id]    Guid NOT NULL
+	[Id]    Guid NOT NULL,
+	[IsNew] Bit  NOT NULL
 )
 
 BeforeExecute
@@ -56,8 +56,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [CALL_TRANSCRIPTION]
 (
-	[IsNew] Bit  NOT NULL,
-	[Id]    Guid NOT NULL
+	[Id]    Guid NOT NULL,
+	[IsNew] Bit  NOT NULL
 )
 
 BeforeExecute
@@ -71,8 +71,8 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [t_call_metas]
 (
 	[Id]               Guid    NOT NULL,
-	[DialogCategoryId] Guid        NULL,
 	[ProfileId]        INTEGER NOT NULL,
+	[DialogCategoryId] Guid        NULL,
 
 	CONSTRAINT [PK_t_call_metas] PRIMARY KEY ([Id])
 )
@@ -86,18 +86,18 @@ SET     @take = 2
 
 SELECT
 	[x].[Id],
-	[x].[DialogCategoryId],
 	[x].[ProfileId],
+	[x].[DialogCategoryId],
 	[a_DialogCategory_1].[Id],
-	[a_DialogCategory_1].[CategoryGroupId],
 	[a_DialogCategory_1].[Category],
+	[a_DialogCategory_1].[CategoryGroupId],
 	[a_CategoryGroup_1].[Id],
-	[a_CategoryGroup_1].[TelegramBotName],
 	[a_CategoryGroup_1].[GroupIcon],
-	[a_CallTranscription].[IsNew],
+	[a_CategoryGroup_1].[TelegramBotName],
 	[a_CallTranscription].[Id],
-	[a_CallRecord].[IsNew],
-	[a_CallRecord].[Id]
+	[a_CallTranscription].[IsNew],
+	[a_CallRecord].[Id],
+	[a_CallRecord].[IsNew]
 FROM
 	[t_call_metas] [x]
 		LEFT JOIN [t_dialog_categories] [a_DialogCategory] ON [x].[DialogCategoryId] = [a_DialogCategory].[Id]

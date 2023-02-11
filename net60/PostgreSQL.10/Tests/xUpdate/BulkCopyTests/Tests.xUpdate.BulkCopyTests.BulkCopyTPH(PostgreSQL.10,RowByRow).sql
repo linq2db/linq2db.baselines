@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS "TPHTable"
 	"Discriminator" Int        NOT NULL,
 	"Value1"        text           NULL,
 	"Value2"        text           NULL,
-	"NullableBool"  VarChar(1)     NULL,
 	"Value3"        text           NULL,
+	"NullableBool"  VarChar(1)     NULL,
 
 	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
 )
@@ -22,70 +22,70 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value1 Text(4) -- String
-SET     @Value1 = 'Str1'
 DECLARE @Discriminator Integer -- Int32
 SET     @Discriminator = 1
+DECLARE @Value1 Text(4) -- String
+SET     @Value1 = 'Str1'
 
 INSERT INTO "TPHTable"
 (
 	"Id",
-	"Value1",
-	"Discriminator"
+	"Discriminator",
+	"Value1"
 )
 VALUES
 (
 	:Id,
-	:Value1,
-	:Discriminator
+	:Discriminator,
+	:Value1
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value2 Text(4) -- String
-SET     @Value2 = 'Str2'
 DECLARE @Discriminator Integer -- Int32
 SET     @Discriminator = 2
+DECLARE @Value2 Text(4) -- String
+SET     @Value2 = 'Str2'
 
 INSERT INTO "TPHTable"
 (
 	"Id",
-	"Value2",
-	"Discriminator"
+	"Discriminator",
+	"Value2"
 )
 VALUES
 (
 	:Id,
-	:Value2,
-	:Discriminator
+	:Discriminator,
+	:Value2
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @NullableBool Varchar(1) -- String
-SET     @NullableBool = 'Y'
-DECLARE @Value3 Text(4) -- String
-SET     @Value3 = 'Str3'
 DECLARE @Discriminator Integer -- Int32
 SET     @Discriminator = 3
+DECLARE @Value3 Text(4) -- String
+SET     @Value3 = 'Str3'
+DECLARE @NullableBool Varchar(1) -- String
+SET     @NullableBool = 'Y'
 
 INSERT INTO "TPHTable"
 (
 	"Id",
-	"NullableBool",
+	"Discriminator",
 	"Value3",
-	"Discriminator"
+	"NullableBool"
 )
 VALUES
 (
 	:Id,
-	:NullableBool,
+	:Discriminator,
 	:Value3,
-	:Discriminator
+	:NullableBool
 )
 
 BeforeExecute
@@ -96,8 +96,8 @@ SELECT
 	t1."Discriminator",
 	t1."Value1",
 	t1."Value2",
-	t1."NullableBool",
-	t1."Value3"
+	t1."Value3",
+	t1."NullableBool"
 FROM
 	"TPHTable" t1
 ORDER BY
@@ -113,8 +113,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -131,8 +131,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -149,8 +149,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -167,8 +167,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -185,8 +185,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -203,8 +203,8 @@ SELECT
 	x."Discriminator",
 	x."Value1",
 	x."Value2",
-	x."NullableBool",
-	x."Value3"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE

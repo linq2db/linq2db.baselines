@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "ByteTable"
 (
-	"ColumnNullable" SmallInt     NULL,
+	"Id"             Int      NOT NULL,
 	"Column"         SmallInt NOT NULL,
-	"Id"             Int      NOT NULL
+	"ColumnNullable" SmallInt     NULL
 )
 
 BeforeExecute
@@ -18,12 +18,12 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Smallint -- Int16
 SET     @ColumnNullable = 2
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"ByteTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"ByteTable" r
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Smallint -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Smallint -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Smallint -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Smallint -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Smallint -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 Smallint -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Smallint -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable Smallint -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
+(1,1,NULL),
 (2,255,2)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY
@@ -154,15 +154,15 @@ DELETE FROM
 	"ByteTable" t1
 
 BeforeExecute
-INSERT BULK "ByteTable"(ColumnNullable, Column, Id)
+INSERT BULK "ByteTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY

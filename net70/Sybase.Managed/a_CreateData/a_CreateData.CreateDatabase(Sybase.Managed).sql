@@ -459,22 +459,22 @@ BeforeExecute
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
-SELECT NULL,1,NULL UNION ALL
-SELECT 1,2,NULL UNION ALL
-SELECT 2,3,'InheritanceParent2'
+SELECT 1,NULL,NULL UNION ALL
+SELECT 2,1,NULL UNION ALL
+SELECT 3,2,'InheritanceParent2'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 SELECT 1,NULL,1,NULL UNION ALL

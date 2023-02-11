@@ -1660,18 +1660,18 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
-	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (NULL,1,NULL)
-	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (1,2,NULL)
-	INTO "InheritanceParent" ("TypeDiscriminator", "InheritanceParentId", "Name") VALUES (2,3,'InheritanceParent2')
+	INTO "InheritanceParent" ("InheritanceParentId", "TypeDiscriminator", "Name") VALUES (1,NULL,NULL)
+	INTO "InheritanceParent" ("InheritanceParentId", "TypeDiscriminator", "Name") VALUES (2,1,NULL)
+	INTO "InheritanceParent" ("InheritanceParentId", "TypeDiscriminator", "Name") VALUES (3,2,'InheritanceParent2')
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
-	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (1,NULL,1,NULL)
-	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (2,1,2,NULL)
-	INTO "InheritanceChild" ("InheritanceParentId", "TypeDiscriminator", "InheritanceChildId", "Name") VALUES (3,2,3,'InheritanceParent2')
+	INTO "InheritanceChild" ("InheritanceChildId", "TypeDiscriminator", "InheritanceParentId", "Name") VALUES (1,NULL,1,NULL)
+	INTO "InheritanceChild" ("InheritanceChildId", "TypeDiscriminator", "InheritanceParentId", "Name") VALUES (2,1,2,NULL)
+	INTO "InheritanceChild" ("InheritanceChildId", "TypeDiscriminator", "InheritanceParentId", "Name") VALUES (3,2,3,'InheritanceParent2')
 SELECT * FROM dual
 
 BeforeExecute

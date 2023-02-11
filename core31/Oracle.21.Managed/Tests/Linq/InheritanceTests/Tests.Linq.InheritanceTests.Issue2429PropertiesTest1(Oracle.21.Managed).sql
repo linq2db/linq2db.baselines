@@ -17,8 +17,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "BaseTable"
 		(
-			"Value" Int NOT NULL,
 			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL,
 
 			CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
 		)
@@ -34,7 +34,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "BaseTable" ("Value", "Id") VALUES (100,1)
+	INTO "BaseTable" ("Id", "Value") VALUES (1,100)
 SELECT * FROM dual
 
 BeforeExecute
@@ -43,8 +43,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
-	x."Id"
+	x."Id",
+	x."Value"
 FROM
 	"BaseTable" x
 WHERE
@@ -57,8 +57,8 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
-	x."Id"
+	x."Id",
+	x."Value"
 FROM
 	"BaseTable" x
 WHERE

@@ -8,36 +8,36 @@ BeforeExecute
 
 CREATE TABLE [BaseTable]
 (
-	[Value] Int NOT NULL,
 	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL,
 
 	CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BaseValue Integer -- Int32
-SET     @BaseValue = 100
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @BaseValue Integer -- Int32
+SET     @BaseValue = 100
 
 INSERT INTO [BaseTable]
 (
-	[Value],
-	[Id]
+	[Id],
+	[Value]
 )
 VALUES
 (
-	@BaseValue,
-	@Id
+	@Id,
+	@BaseValue
 )
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -47,8 +47,8 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE

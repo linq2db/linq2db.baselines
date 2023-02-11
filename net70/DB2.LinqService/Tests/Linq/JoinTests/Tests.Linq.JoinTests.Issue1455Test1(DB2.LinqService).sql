@@ -37,9 +37,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "AuditAlert"
 		(
-			"CreationDate"    timestamp         NULL,
-			"AlertCode"       NVarChar(255)     NULL,
 			"AlertKey"        NVarChar(255)     NULL,
+			"AlertCode"       NVarChar(255)     NULL,
+			"CreationDate"    timestamp         NULL,
 			"TransactionDate" timestamp         NULL
 		)
 	';

@@ -2,17 +2,17 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[Fax],
-	[t1].[Phone],
-	[t1].[Country],
-	[t1].[PostalCode],
-	[t1].[Region],
-	[t1].[City],
-	[t1].[Address],
-	[t1].[ContactTitle],
-	[t1].[ContactName],
+	[t1].[CustomerID],
 	[t1].[CompanyName],
-	[t1].[CustomerID]
+	[t1].[ContactName],
+	[t1].[ContactTitle],
+	[t1].[Address],
+	[t1].[City],
+	[t1].[Region],
+	[t1].[PostalCode],
+	[t1].[Country],
+	[t1].[Phone],
+	[t1].[Fax]
 FROM
 	[Customers] [t1]
 
@@ -20,24 +20,24 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[PhotoPath],
-	[t1].[ReportsTo],
-	[t1].[Notes],
-	[t1].[Photo],
-	[t1].[Extension],
-	[t1].[HomePhone],
-	[t1].[Country],
-	[t1].[PostalCode],
-	[t1].[Region],
-	[t1].[City],
-	[t1].[Address],
-	[t1].[HireDate],
-	[t1].[BirthDate],
-	[t1].[TitleOfCourtesy],
-	[t1].[Title],
-	[t1].[FirstName],
+	[t1].[EmployeeID],
 	[t1].[LastName],
-	[t1].[EmployeeID]
+	[t1].[FirstName],
+	[t1].[Title],
+	[t1].[TitleOfCourtesy],
+	[t1].[BirthDate],
+	[t1].[HireDate],
+	[t1].[Address],
+	[t1].[City],
+	[t1].[Region],
+	[t1].[PostalCode],
+	[t1].[Country],
+	[t1].[HomePhone],
+	[t1].[Extension],
+	[t1].[Photo],
+	[t1].[Notes],
+	[t1].[ReportsTo],
+	[t1].[PhotoPath]
 FROM
 	[Employees] [t1]
 
@@ -45,20 +45,20 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[ShipCountry],
-	[t1].[ShipPostalCode],
-	[t1].[ShipRegion],
-	[t1].[ShipCity],
-	[t1].[ShipAddress],
-	[t1].[ShipName],
-	[t1].[Freight],
-	[t1].[ShipVia],
-	[t1].[ShippedDate],
-	[t1].[RequiredDate],
-	[t1].[OrderDate],
-	[t1].[EmployeeID],
+	[t1].[OrderID],
 	[t1].[CustomerID],
-	[t1].[OrderID]
+	[t1].[EmployeeID],
+	[t1].[OrderDate],
+	[t1].[RequiredDate],
+	[t1].[ShippedDate],
+	[t1].[ShipVia],
+	[t1].[Freight],
+	[t1].[ShipName],
+	[t1].[ShipAddress],
+	[t1].[ShipCity],
+	[t1].[ShipRegion],
+	[t1].[ShipPostalCode],
+	[t1].[ShipCountry]
 FROM
 	[Orders] [t1]
 
@@ -111,17 +111,17 @@ DECLARE @p_1  -- Boolean
 SET     @p_1 = 0
 
 SELECT
-	[underscore].[Fax],
-	[underscore].[Phone],
-	[underscore].[Country],
-	[underscore].[PostalCode],
-	[underscore].[Region],
-	[underscore].[City],
-	[underscore].[Address],
-	[underscore].[ContactTitle],
-	[underscore].[ContactName],
+	[underscore].[CustomerID],
 	[underscore].[CompanyName],
-	[underscore].[CustomerID]
+	[underscore].[ContactName],
+	[underscore].[ContactTitle],
+	[underscore].[Address],
+	[underscore].[City],
+	[underscore].[Region],
+	[underscore].[PostalCode],
+	[underscore].[Country],
+	[underscore].[Phone],
+	[underscore].[Fax]
 FROM
 	(
 		SELECT
@@ -137,17 +137,17 @@ FROM
 					THEN 1
 				ELSE 0
 			END as [Key_1],
-			[selectParam].[Fax],
-			[selectParam].[Phone],
-			[selectParam].[Country],
-			[selectParam].[PostalCode],
-			[selectParam].[Region],
-			[selectParam].[City],
-			[selectParam].[Address],
-			[selectParam].[ContactTitle],
-			[selectParam].[ContactName],
+			[selectParam].[CustomerID],
 			[selectParam].[CompanyName],
-			[selectParam].[CustomerID]
+			[selectParam].[ContactName],
+			[selectParam].[ContactTitle],
+			[selectParam].[Address],
+			[selectParam].[City],
+			[selectParam].[Region],
+			[selectParam].[PostalCode],
+			[selectParam].[Country],
+			[selectParam].[Phone],
+			[selectParam].[Fax]
 		FROM
 			[Customers] [selectParam]
 	) [underscore]

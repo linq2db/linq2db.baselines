@@ -9,8 +9,8 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
 (
 	[Id]        Guid NOT NULL,
-	[ChannelID] Guid NOT NULL,
-	[AisleID]   Guid NOT NULL
+	[AisleID]   Guid NOT NULL,
+	[ChannelID] Guid NOT NULL
 )
 
 BeforeExecute
@@ -36,8 +36,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [RefResourceStorageShelfDTO]
 (
-	[StorageShelfID] Guid NOT NULL,
-	[ResourceID]     Guid NOT NULL
+	[ResourceID]     Guid NOT NULL,
+	[StorageShelfID] Guid NOT NULL
 )
 
 BeforeExecute
@@ -51,9 +51,9 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [RefOutfeedTransportOrderResourceDTO]
 (
 	[Id]                  Guid    NOT NULL,
-	[Quantity]            Decimal NOT NULL,
+	[ResourceID]          Guid    NOT NULL,
 	[InventoryResourceID] Guid        NULL,
-	[ResourceID]          Guid    NOT NULL
+	[Quantity]            Decimal NOT NULL
 )
 
 BeforeExecute
@@ -80,8 +80,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [RefResPointAisleDTO]
 (
-	[AisleId]         Guid NOT NULL,
-	[ResourcePointId] Guid NOT NULL
+	[ResourcePointId] Guid NOT NULL,
+	[AisleId]         Guid NOT NULL
 )
 
 BeforeExecute
@@ -123,11 +123,11 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 (
 	[Id]            Guid    NOT NULL,
-	[ProductStatus] INTEGER NOT NULL,
-	[Quantity]      Decimal NOT NULL,
-	[ResourceID]    Guid    NOT NULL,
+	[Status]        INTEGER NOT NULL,
 	[MaterialID]    Guid    NOT NULL,
-	[Status]        INTEGER NOT NULL
+	[ResourceID]    Guid    NOT NULL,
+	[Quantity]      Decimal NOT NULL,
+	[ProductStatus] INTEGER NOT NULL
 )
 
 BeforeExecute
@@ -139,15 +139,15 @@ SELECT
 	[cr].[R_r_Id],
 	[cr].[ResourcePointID],
 	[cr].[IR_ir_Id],
-	[cr].[ProductStatus],
-	[cr].[Quantity],
-	[cr].[ResourceID],
-	[cr].[MaterialID],
 	[cr].[Status],
+	[cr].[MaterialID],
+	[cr].[ResourceID],
+	[cr].[Quantity],
+	[cr].[ProductStatus],
 	[cr].[C_c_Id],
 	[cr].[SS_ss_Id],
-	[cr].[ChannelID],
 	[cr].[AisleID],
+	[cr].[ChannelID],
 	[cr].[AisleStatus],
 	[cr].[RP_rp_Id],
 	[cr].[IsStoragePlace],
@@ -159,15 +159,15 @@ FROM
 			[r].[Id] as [R_r_Id],
 			[r].[ResourcePointID],
 			[ir].[Id] as [IR_ir_Id],
-			[ir].[ProductStatus],
-			[ir].[Quantity],
-			[ir].[ResourceID],
-			[ir].[MaterialID],
 			[ir].[Status],
+			[ir].[MaterialID],
+			[ir].[ResourceID],
+			[ir].[Quantity],
+			[ir].[ProductStatus],
 			[c_1].[Id] as [C_c_Id],
 			[ss].[Id] as [SS_ss_Id],
-			[ss].[ChannelID],
 			[ss].[AisleID],
+			[ss].[ChannelID],
 			[aisle].[Status] as [AisleStatus],
 			[rp].[Id] as [RP_rp_Id],
 			[rp].[IsStoragePlace],
@@ -220,15 +220,15 @@ FROM
 			[r_1].[Id] as [R_r_Id],
 			[r_1].[ResourcePointID],
 			[ir_1].[Id] as [IR_ir_Id],
-			[ir_1].[ProductStatus],
-			[ir_1].[Quantity],
-			[ir_1].[ResourceID],
-			[ir_1].[MaterialID],
 			[ir_1].[Status],
+			[ir_1].[MaterialID],
+			[ir_1].[ResourceID],
+			[ir_1].[Quantity],
+			[ir_1].[ProductStatus],
 			[rp_1].[Id] as [C_c_Id],
 			NULL as [SS_ss_Id],
-			NULL as [ChannelID],
 			NULL as [AisleID],
+			NULL as [ChannelID],
 			0 as [AisleStatus],
 			NULL as [RP_rp_Id],
 			[rp_1].[IsStoragePlace],

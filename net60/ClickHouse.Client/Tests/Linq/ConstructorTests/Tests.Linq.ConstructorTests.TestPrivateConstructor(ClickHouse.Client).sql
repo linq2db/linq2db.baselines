@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS ConstructorTestTable
 (
-	Value Nullable(String),
 	Id    Int32,
+	Value Nullable(String),
 
 	 PRIMARY KEY (Id)
 )
@@ -21,18 +21,18 @@ BeforeExecute
 
 INSERT INTO ConstructorTestTable
 (
-	Value,
-	Id
+	Id,
+	Value
 )
 VALUES
-('Some',toInt32(1))
+(toInt32(1),'Some')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Value,
-	t1.Id
+	t1.Id,
+	t1.Value
 FROM
 	ConstructorTestTable t1
 LIMIT toInt32(1)

@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS Issue1403Tests_3
 (
-	event_description String,
 	event_id          Int32,
+	event_description String,
 
 	 PRIMARY KEY (event_id)
 )
@@ -34,8 +34,8 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.event_description,
-	t1.event_id
+	t1.event_id,
+	t1.event_description
 FROM
 	Issue1403Tests_3 t1
 LIMIT toInt32(1)

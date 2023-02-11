@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE [GuidTable]
 (
-	[ColumnNullable] UNIQUEIDENTIFIER     NULL,
+	[Id]             Int              NOT NULL,
 	[Column]         UNIQUEIDENTIFIER NOT NULL,
-	[Id]             Int              NOT NULL
+	[ColumnNullable] UNIQUEIDENTIFIER     NULL
 )
 
 BeforeExecute
@@ -18,12 +18,12 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',1 UNION ALL
-SELECT 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','a948600d-de21-4f74-8ac2-9516b287076e',2
+SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
+SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
 -- SqlCe
@@ -33,9 +33,9 @@ DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
 WHERE
@@ -45,9 +45,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @ColumnNullable UniqueIdentifier -- Guid
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 UniqueIdentifier -- Guid
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 UniqueIdentifier -- Guid
+SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
+SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @ColumnNullable UniqueIdentifier -- Guid
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
-DECLARE @Column_1 UniqueIdentifier -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 UniqueIdentifier -- Guid
+SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
+SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY
@@ -127,20 +127,20 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',1 UNION ALL
-SELECT 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','a948600d-de21-4f74-8ac2-9516b287076e',2
+SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
+SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY
@@ -157,20 +157,20 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',1 UNION ALL
-SELECT 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','a948600d-de21-4f74-8ac2-9516b287076e',2
+SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
+SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY

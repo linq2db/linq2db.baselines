@@ -13,14 +13,14 @@ IF (OBJECT_ID(N'[TPHTable]', N'U') IS NULL)
 		[Discriminator] Int          NOT NULL,
 		[Value1]        NVarChar(50)     NULL,
 		[Value2]        NVarChar(50)     NULL,
-		[NullableBool]  VarChar(1)       NULL,
 		[Value3]        NVarChar(50)     NULL,
+		[NullableBool]  VarChar(1)       NULL,
 
 		CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
-INSERT BULK [TPHTable](Id, Discriminator, Value1, Value2, NullableBool, Value3)
+INSERT BULK [TPHTable](Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
 BeforeExecute
 -- SqlServer.2017
@@ -30,8 +30,8 @@ SELECT
 	[t1].[Discriminator],
 	[t1].[Value1],
 	[t1].[Value2],
-	[t1].[NullableBool],
-	[t1].[Value3]
+	[t1].[Value3],
+	[t1].[NullableBool]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -47,8 +47,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -64,8 +64,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -81,8 +81,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -98,8 +98,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -115,8 +115,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -132,8 +132,8 @@ SELECT TOP (@take)
 	[x].[Discriminator],
 	[x].[Value1],
 	[x].[Value2],
-	[x].[NullableBool],
-	[x].[Value3]
+	[x].[Value3],
+	[x].[NullableBool]
 FROM
 	[TPHTable] [x]
 WHERE

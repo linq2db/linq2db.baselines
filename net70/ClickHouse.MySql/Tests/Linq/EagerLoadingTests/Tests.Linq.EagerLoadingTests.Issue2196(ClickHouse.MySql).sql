@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS EventScheduleItem
 (
-	ParentEventScheduleItemId Nullable(Int32),
-	IsActive                  Bool,
-	EventId                   Int32,
 	Id                        Int32,
+	EventId                   Int32,
+	IsActive                  Bool,
+	ParentEventScheduleItemId Nullable(Int32),
 
 	 PRIMARY KEY (Id)
 )
@@ -23,14 +23,14 @@ BeforeExecute
 
 INSERT INTO EventScheduleItem
 (
-	ParentEventScheduleItemId,
-	IsActive,
+	Id,
 	EventId,
-	Id
+	IsActive,
+	ParentEventScheduleItemId
 )
 VALUES
-(toInt32(1),true,toInt32(1),toInt32(1)),
-(toInt32(2),true,toInt32(2),toInt32(2))
+(toInt32(1),toInt32(1),true,toInt32(1)),
+(toInt32(2),toInt32(2),true,toInt32(2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

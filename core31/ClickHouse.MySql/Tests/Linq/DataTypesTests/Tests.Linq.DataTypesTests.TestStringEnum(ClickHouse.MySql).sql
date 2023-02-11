@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS StringEnumTable
 (
-	ColumnNullable Nullable(String),
+	Id             Int32,
 	Column         String,
-	Id             Int32
+	ColumnNullable Nullable(String)
 )
 ENGINE = Memory()
 
@@ -19,21 +19,21 @@ BeforeExecute
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,'val=1',toInt32(1)),
-('value=33','value=2',toInt32(2))
+(toInt32(1),'val=1',NULL),
+(toInt32(2),'value=2','value=33')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	StringEnumTable r
 WHERE
@@ -43,9 +43,9 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r.Column,
-	r.Id
+	r.ColumnNullable
 FROM
 	StringEnumTable r
 WHERE
@@ -63,15 +63,15 @@ BeforeExecute
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	NULL,
+	toInt32(1),
 	'val=1',
-	toInt32(1)
+	NULL
 )
 
 BeforeExecute
@@ -79,24 +79,24 @@ BeforeExecute
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	'value=33',
+	toInt32(2),
 	'value=2',
-	toInt32(2)
+	'value=33'
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY
@@ -114,21 +114,21 @@ BeforeExecute
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,'val=1',toInt32(1)),
-('value=33','value=2',toInt32(2))
+(toInt32(1),'val=1',NULL),
+(toInt32(2),'value=2','value=33')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY
@@ -146,21 +146,21 @@ BeforeExecute
 
 INSERT INTO StringEnumTable
 (
-	ColumnNullable,
+	Id,
 	Column,
-	Id
+	ColumnNullable
 )
 VALUES
-(NULL,'val=1',toInt32(1)),
-('value=33','value=2',toInt32(2))
+(toInt32(1),'val=1',NULL),
+(toInt32(2),'value=2','value=33')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1.Column,
-	t1.Id
+	t1.ColumnNullable
 FROM
 	StringEnumTable t1
 ORDER BY

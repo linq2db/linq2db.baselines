@@ -11,9 +11,9 @@ IF (OBJECT_ID(N'BooleanTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [BooleanTable]
 		(
-			[ColumnNullable] Bit,
+			[Id]             Int NOT NULL,
 			[Column]         Bit NOT NULL,
-			[Id]             Int NOT NULL
+			[ColumnNullable] Bit
 		)
 	')
 
@@ -22,12 +22,12 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT 0,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,0 UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -37,9 +37,9 @@ DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = 1
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -49,9 +49,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -66,55 +66,55 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = 0
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = 0
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 0
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = 0
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = 1
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -132,20 +132,20 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT 0,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,0 UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -163,20 +163,20 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT 0,1,1 UNION ALL
-SELECT 1,0,2
+SELECT 1,1,0 UNION ALL
+SELECT 2,0,1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY

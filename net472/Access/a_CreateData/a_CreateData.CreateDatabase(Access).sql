@@ -2078,145 +2078,145 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = NULL
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 1
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 3
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 2
 DECLARE @Name VarWChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 1
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 1
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = NULL
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 1
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 2
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 2
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 1
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 2
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 3
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 3
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 2
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 3
 DECLARE @Name VarWChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 
@@ -4333,145 +4333,145 @@ VALUES
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = NULL
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 1
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 3
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 2
 DECLARE @Name VarWChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceParent]
 (
-	[TypeDiscriminator],
 	[InheritanceParentId],
+	[TypeDiscriminator],
 	[Name]
 )
 VALUES
 (
-	@TypeDiscriminator,
 	@InheritanceParentId,
+	@TypeDiscriminator,
 	@Name
 )
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 1
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 1
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = NULL
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 1
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 2
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 1
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 2
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 1
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 2
 DECLARE @Name VarWChar -- String
 SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 
 BeforeExecute
 -- Access.Data Access AccessOleDb
-DECLARE @InheritanceParentId Integer -- Int32
-SET     @InheritanceParentId = 3
-DECLARE @TypeDiscriminator Integer -- Int32
-SET     @TypeDiscriminator = 2
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 3
+DECLARE @TypeDiscriminator Integer -- Int32
+SET     @TypeDiscriminator = 2
+DECLARE @InheritanceParentId Integer -- Int32
+SET     @InheritanceParentId = 3
 DECLARE @Name VarWChar(18) -- String
 SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceChild]
 (
-	[InheritanceParentId],
-	[TypeDiscriminator],
 	[InheritanceChildId],
+	[TypeDiscriminator],
+	[InheritanceParentId],
 	[Name]
 )
 VALUES
 (
-	@InheritanceParentId,
-	@TypeDiscriminator,
 	@InheritanceChildId,
+	@TypeDiscriminator,
+	@InheritanceParentId,
 	@Name
 )
 

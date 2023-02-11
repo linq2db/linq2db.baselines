@@ -1646,8 +1646,8 @@ BeforeExecute
 INSERT BULK [GrandChild](ParentID, ChildID, GrandChildID)
 
 BeforeExecute
-INSERT BULK [InheritanceParent](TypeDiscriminator, InheritanceParentId, Name)
+INSERT BULK [InheritanceParent](InheritanceParentId, TypeDiscriminator, Name)
 
 BeforeExecute
-INSERT BULK [InheritanceChild](InheritanceParentId, TypeDiscriminator, InheritanceChildId, Name)
+INSERT BULK [InheritanceChild](InheritanceChildId, TypeDiscriminator, InheritanceParentId, Name)
 

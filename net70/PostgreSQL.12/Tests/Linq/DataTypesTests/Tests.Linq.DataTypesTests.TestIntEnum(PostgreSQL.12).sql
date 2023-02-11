@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "IntEnumTable"
 (
-	"ColumnNullable" Int     NULL,
+	"Id"             Int NOT NULL,
 	"Column"         Int NOT NULL,
-	"Id"             Int NOT NULL
+	"ColumnNullable" Int     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
-(3,2,2)
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Integer -- Int32
 SET     @ColumnNullable = 3
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"IntEnumTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"IntEnumTable" r
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Integer -- Int32
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Integer -- Int32
-SET     @Column_1 = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Integer -- Int32
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Integer -- Int32
+SET     @ColumnNullable = NULL
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @ColumnNullable Integer -- Int32
-SET     @ColumnNullable = 3
-DECLARE @Column_1 Integer -- Int32
-SET     @Column_1 = 2
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Integer -- Int32
+SET     @Column_1 = 2
+DECLARE @ColumnNullable Integer -- Int32
+SET     @ColumnNullable = 3
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
-(3,2,2)
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY
@@ -154,15 +154,15 @@ DELETE FROM
 	"IntEnumTable" t1
 
 BeforeExecute
-INSERT BULK "IntEnumTable"(ColumnNullable, Column, Id)
+INSERT BULK "IntEnumTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY

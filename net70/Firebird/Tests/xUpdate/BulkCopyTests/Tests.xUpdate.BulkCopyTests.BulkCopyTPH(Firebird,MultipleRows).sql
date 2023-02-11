@@ -18,8 +18,8 @@ EXECUTE BLOCK AS BEGIN
 				"Discriminator" Int                                   NOT NULL,
 				"Value1"        VarChar(50) CHARACTER SET UNICODE_FSS,
 				"Value2"        VarChar(50) CHARACTER SET UNICODE_FSS,
-				"NullableBool"  VarChar(1) CHARACTER SET UNICODE_FSS,
 				"Value3"        VarChar(50) CHARACTER SET UNICODE_FSS,
+				"NullableBool"  VarChar(1) CHARACTER SET UNICODE_FSS,
 
 				CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
 			)
@@ -35,12 +35,12 @@ INSERT INTO "TPHTable"
 	"Discriminator",
 	"Value1",
 	"Value2",
-	"NullableBool",
-	"Value3"
+	"Value3",
+	"NullableBool"
 )
-SELECT 1,1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(1) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 1,1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(1) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,2,NULL,'Str2',NULL,NULL FROM rdb$database UNION ALL
-SELECT 3,3,NULL,NULL,'Y','Str3' FROM rdb$database
+SELECT 3,3,NULL,NULL,'Str3','Y' FROM rdb$database
 
 BeforeExecute
 -- Firebird
@@ -50,8 +50,8 @@ SELECT
 	"t1"."Discriminator",
 	"t1"."Value1",
 	"t1"."Value2",
-	"t1"."NullableBool",
-	"t1"."Value3"
+	"t1"."Value3",
+	"t1"."NullableBool"
 FROM
 	"TPHTable" "t1"
 ORDER BY
@@ -67,8 +67,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -84,8 +84,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -101,8 +101,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -118,8 +118,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -135,8 +135,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -152,8 +152,8 @@ SELECT FIRST @take
 	"x"."Discriminator",
 	"x"."Value1",
 	"x"."Value2",
-	"x"."NullableBool",
-	"x"."Value3"
+	"x"."Value3",
+	"x"."NullableBool"
 FROM
 	"TPHTable" "x"
 WHERE

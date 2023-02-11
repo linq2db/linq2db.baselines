@@ -14,9 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "DateOnlyTable"
 		(
-			"ColumnNullable" Date     NULL,
+			"Id"             Int  NOT NULL,
 			"Column"         Date NOT NULL,
-			"Id"             Int  NOT NULL
+			"ColumnNullable" Date     NULL
 		)
 	';
 END
@@ -26,13 +26,13 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+(1,'1950-01-01',NULL),
+(2,'2020-02-29','2200-01-01')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,9 +42,9 @@ DECLARE @ColumnNullable Date(20)
 SET     @ColumnNullable = '2200-01-01-00.00.00.000000'
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"DateOnlyTable" "r"
 WHERE
@@ -54,9 +54,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"DateOnlyTable" "r"
 WHERE
@@ -70,55 +70,55 @@ DELETE FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date(20)
-SET     @Column_1 = '1950-01-01-00.00.00.000000'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date(20)
+SET     @Column_1 = '1950-01-01-00.00.00.000000'
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable Date(20)
-SET     @ColumnNullable = '2200-01-01-00.00.00.000000'
-DECLARE @Column_1 Date(20)
-SET     @Column_1 = '2020-02-29-00.00.00.000000'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date(20)
+SET     @Column_1 = '2020-02-29-00.00.00.000000'
+DECLARE @ColumnNullable Date(20)
+SET     @ColumnNullable = '2200-01-01-00.00.00.000000'
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY
@@ -135,21 +135,21 @@ BeforeExecute
 
 INSERT INTO "DateOnlyTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+(1,'1950-01-01',NULL),
+(2,'2020-02-29','2200-01-01')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY
@@ -168,9 +168,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"DateOnlyTable" "t1"
 ORDER BY

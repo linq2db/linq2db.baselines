@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS ColumnOrderTest
 	EffectiveStart DateTime64(7),
 	EffectiveEnd   Nullable(DateTime64(7)),
 	Key            Int32,
-	Code           Nullable(String),
 	Name           Nullable(String),
+	Code           Nullable(String),
 	Audit1ID       Int32,
 	Audit2ID       Int32,
 

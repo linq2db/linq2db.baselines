@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "BaseTable"
 (
-	"Value" Int NOT NULL,
 	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL,
 
 	CONSTRAINT "PK_BaseTable" PRIMARY KEY ("Id")
 )
@@ -19,11 +19,11 @@ BeforeExecute
 
 INSERT INTO "BaseTable"
 (
-	"Value",
-	"Id"
+	"Id",
+	"Value"
 )
 VALUES
-(100,1)
+(1,100)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -31,8 +31,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
-	x."Id"
+	x."Id",
+	x."Value"
 FROM
 	"BaseTable" x
 WHERE
@@ -45,8 +45,8 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	x."Value",
-	x."Id"
+	x."Id",
+	x."Value"
 FROM
 	"BaseTable" x
 WHERE

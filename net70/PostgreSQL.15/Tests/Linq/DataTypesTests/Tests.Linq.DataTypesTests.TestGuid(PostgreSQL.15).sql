@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "GuidTable"
 (
-	"ColumnNullable" uuid     NULL,
+	"Id"             Int  NOT NULL,
 	"Column"         uuid NOT NULL,
-	"Id"             Int  NOT NULL
+	"ColumnNullable" uuid     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,1),
-('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,2)
+(1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,NULL),
+(2,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable Uuid -- Guid
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"GuidTable" r
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"GuidTable" r
 WHERE
@@ -63,55 +63,55 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ColumnNullable Uuid -- Guid
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Uuid -- Guid
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Uuid -- Guid
+SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
+DECLARE @ColumnNullable Uuid -- Guid
+SET     @ColumnNullable = NULL
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ColumnNullable Uuid -- Guid
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
-DECLARE @Column_1 Uuid -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Uuid -- Guid
+SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
+DECLARE @ColumnNullable Uuid -- Guid
+SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"GuidTable" t1
 ORDER BY
@@ -128,21 +128,21 @@ BeforeExecute
 
 INSERT INTO "GuidTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,1),
-('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,2)
+(1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,NULL),
+(2,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"GuidTable" t1
 ORDER BY
@@ -155,15 +155,15 @@ DELETE FROM
 	"GuidTable" t1
 
 BeforeExecute
-INSERT BULK "GuidTable"(ColumnNullable, Column, Id)
+INSERT BULK "GuidTable"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"GuidTable" t1
 ORDER BY

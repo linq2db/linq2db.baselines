@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS `ColumnOrderTest`
 	`EffectiveStart` DATETIME      NOT NULL,
 	`EffectiveEnd`   DATETIME          NULL,
 	`Key`            INT           NOT NULL,
-	`Code`           VARCHAR(4000)     NULL,
 	`Name`           VARCHAR(4000)     NULL,
+	`Code`           VARCHAR(4000)     NULL,
 	`Audit1ID`       INT           NOT NULL,
 	`Audit2ID`       INT           NOT NULL,
 

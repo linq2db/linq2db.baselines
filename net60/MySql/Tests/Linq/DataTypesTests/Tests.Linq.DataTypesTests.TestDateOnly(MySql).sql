@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `DateOnlyTable`
 (
-	`ColumnNullable` DATE     NULL,
+	`Id`             INT  NOT NULL,
 	`Column`         DATE NOT NULL,
-	`Id`             INT  NOT NULL
+	`ColumnNullable` DATE     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO `DateOnlyTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+(1,'1950-01-01',NULL),
+(2,'2020-02-29','2200-01-01')
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = '2200-01-01'
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`DateOnlyTable` `r`
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`DateOnlyTable` `r`
 WHERE
@@ -63,55 +63,55 @@ FROM
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 DateTime
-SET     @Column_1 = '1950-01-01'
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 DateTime
+SET     @Column_1 = '1950-01-01'
+DECLARE @ColumnNullable DateTime
+SET     @ColumnNullable = NULL
 
 INSERT INTO `DateOnlyTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = '2200-01-01'
-DECLARE @Column_1 DateTime
-SET     @Column_1 = '2020-02-29'
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 DateTime
+SET     @Column_1 = '2020-02-29'
+DECLARE @ColumnNullable DateTime
+SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO `DateOnlyTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`DateOnlyTable` `t1`
 ORDER BY
@@ -129,21 +129,21 @@ BeforeExecute
 
 INSERT INTO `DateOnlyTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+(1,'1950-01-01',NULL),
+(2,'2020-02-29','2200-01-01')
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`DateOnlyTable` `t1`
 ORDER BY
@@ -161,21 +161,21 @@ BeforeExecute
 
 INSERT INTO `DateOnlyTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,'1950-01-01',1),
-('2200-01-01','2020-02-29',2)
+(1,'1950-01-01',NULL),
+(2,'2020-02-29','2200-01-01')
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`DateOnlyTable` `t1`
 ORDER BY

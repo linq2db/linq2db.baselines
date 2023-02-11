@@ -8,36 +8,36 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS BaseTable
 (
-	"Value" Int NOT NULL,
 	Id      Int NOT NULL,
+	"Value" Int NOT NULL,
 
 	PRIMARY KEY (Id)
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BaseValue Integer(4) -- Int32
-SET     @BaseValue = 100
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @BaseValue Integer(4) -- Int32
+SET     @BaseValue = 100
 
 INSERT INTO BaseTable
 (
-	"Value",
-	Id
+	Id,
+	"Value"
 )
 VALUES
 (
-	@BaseValue,
-	@Id
+	@Id,
+	@BaseValue
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	x."Value",
-	x.Id
+	x.Id,
+	x."Value"
 FROM
 	BaseTable x
 WHERE
@@ -47,8 +47,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	x."Value",
-	x.Id
+	x.Id,
+	x."Value"
 FROM
 	BaseTable x
 WHERE

@@ -9,9 +9,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[StringEnumTable]', N'U') IS NULL)
 	CREATE TABLE [StringEnumTable]
 	(
-		[ColumnNullable] NVarChar(8)     NULL,
+		[Id]             Int         NOT NULL,
 		[Column]         NVarChar(8) NOT NULL,
-		[Id]             Int         NOT NULL
+		[ColumnNullable] NVarChar(8)     NULL
 	)
 
 BeforeExecute
@@ -19,13 +19,13 @@ BeforeExecute
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,N'val=1',1),
-(N'value=33',N'value=2',2)
+(1,N'val=1',NULL),
+(2,N'value=2',N'value=33')
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -35,9 +35,9 @@ DECLARE @ColumnNullable NVarChar(4000) -- String
 SET     @ColumnNullable = N'value=33'
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[StringEnumTable] [r]
 WHERE
@@ -47,9 +47,9 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[StringEnumTable] [r]
 WHERE
@@ -64,55 +64,55 @@ FROM
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @ColumnNullable NVarChar(8) -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 NVarChar(8) -- String
-SET     @Column_1 = N'val=1'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 NVarChar(8) -- String
+SET     @Column_1 = N'val=1'
+DECLARE @ColumnNullable NVarChar(8) -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @ColumnNullable NVarChar(8) -- String
-SET     @ColumnNullable = N'value=33'
-DECLARE @Column_1 NVarChar(8) -- String
-SET     @Column_1 = N'value=2'
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 NVarChar(8) -- String
+SET     @Column_1 = N'value=2'
+DECLARE @ColumnNullable NVarChar(8) -- String
+SET     @ColumnNullable = N'value=33'
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY
@@ -130,21 +130,21 @@ BeforeExecute
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,N'val=1',1),
-(N'value=33',N'value=2',2)
+(1,N'val=1',NULL),
+(2,N'value=2',N'value=33')
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY
@@ -158,15 +158,15 @@ FROM
 	[StringEnumTable] [t1]
 
 BeforeExecute
-INSERT BULK [StringEnumTable](ColumnNullable, Column, Id)
+INSERT BULK [StringEnumTable](Id, Column, ColumnNullable)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY

@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS TPHTable
 	Discriminator Int32,
 	Value1        Nullable(String),
 	Value2        Nullable(String),
-	NullableBool  Nullable(String),
 	Value3        Nullable(String),
+	NullableBool  Nullable(String),
 
 	 PRIMARY KEY (Id)
 )
@@ -21,7 +21,7 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 BeforeExecute
-INSERT INTO TPHTable(Id, Discriminator, Value1, Value2, NullableBool, Value3) VALUES
+INSERT INTO TPHTable(Id, Discriminator, Value1, Value2, Value3, NullableBool) VALUES
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -31,8 +31,8 @@ SELECT
 	t1.Discriminator,
 	t1.Value1,
 	t1.Value2,
-	t1.NullableBool,
-	t1.Value3
+	t1.Value3,
+	t1.NullableBool
 FROM
 	TPHTable t1
 ORDER BY
@@ -46,8 +46,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -62,8 +62,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -78,8 +78,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -94,8 +94,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -110,8 +110,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -126,8 +126,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE

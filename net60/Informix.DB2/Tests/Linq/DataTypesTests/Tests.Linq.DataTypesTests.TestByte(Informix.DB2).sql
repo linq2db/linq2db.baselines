@@ -8,53 +8,53 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS ByteTable
 (
-	ColumnNullable SmallInt     NULL,
+	Id             Int      NOT NULL,
 	"Column"       SmallInt NOT NULL,
-	Id             Int      NOT NULL
+	ColumnNullable SmallInt     NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt(2) -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable SmallInt(2) -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable SmallInt(2) -- Int16
 SET     @ColumnNullable = 2
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	ByteTable r
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	ByteTable r
 WHERE
@@ -93,55 +93,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt(2) -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable SmallInt(2) -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY
@@ -155,55 +155,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable SmallInt(2) -- Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 SmallInt(2) -- Int16
-SET     @Column_1 = 255
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt(2) -- Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable SmallInt(2) -- Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO ByteTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY
@@ -222,9 +222,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	ByteTable t1
 ORDER BY

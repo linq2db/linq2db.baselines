@@ -8,25 +8,25 @@ BeforeExecute
 
 CREATE TABLE [BooleanTable]
 (
-	[ColumnNullable] Bit     NULL,
+	[Id]             Int NOT NULL,
 	[Column]         Bit NOT NULL,
-	[Id]             Int NOT NULL
+	[ColumnNullable] Bit     NULL
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = False
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = True
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -37,18 +37,18 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = True
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = False
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -93,18 +93,18 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = False
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = True
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -115,18 +115,18 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = True
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = False
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -139,9 +139,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -155,18 +155,18 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = False
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = True
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -177,18 +177,18 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = True
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = False
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -201,9 +201,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -217,18 +217,18 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = False
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
 DECLARE @Id Int -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = True
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -239,18 +239,18 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ColumnNullable Bit -- Boolean
-SET     @ColumnNullable = True
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Bit -- Boolean
+SET     @Column_1 = False
+DECLARE @ColumnNullable Bit -- Boolean
+SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
@@ -263,9 +263,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY

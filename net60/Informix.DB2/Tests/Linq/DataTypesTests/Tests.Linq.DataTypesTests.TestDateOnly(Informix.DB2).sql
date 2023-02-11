@@ -8,53 +8,53 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS DateOnlyTable
 (
-	ColumnNullable DATETIME YEAR TO DAY     NULL,
+	Id             Int                  NOT NULL,
 	"Column"       DATETIME YEAR TO DAY NOT NULL,
-	Id             Int                  NOT NULL
+	ColumnNullable DATETIME YEAR TO DAY     NULL
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date(16)
-SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
+DECLARE @ColumnNullable Date(16)
+SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ DECLARE @ColumnNullable Date(16)
 SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	DateOnlyTable r
 WHERE
@@ -77,9 +77,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	r.ColumnNullable,
+	r.Id,
 	r."Column",
-	r.Id
+	r.ColumnNullable
 FROM
 	DateOnlyTable r
 WHERE
@@ -94,55 +94,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date(16)
-SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
+DECLARE @ColumnNullable Date(16)
+SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	DateOnlyTable t1
 ORDER BY
@@ -156,55 +156,55 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('1950-01-01', '%Y-%m-%d')
+DECLARE @ColumnNullable Date
+SET     @ColumnNullable = NULL
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ColumnNullable Date(16)
-SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
-DECLARE @Column_1 Date(16)
-SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 Date(16)
+SET     @Column_1 = TO_DATE('2020-02-29', '%Y-%m-%d')
+DECLARE @ColumnNullable Date(16)
+SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
 
 INSERT INTO DateOnlyTable
 (
-	ColumnNullable,
+	Id,
 	"Column",
-	Id
+	ColumnNullable
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	DateOnlyTable t1
 ORDER BY
@@ -223,9 +223,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ColumnNullable,
+	t1.Id,
 	t1."Column",
-	t1.Id
+	t1.ColumnNullable
 FROM
 	DateOnlyTable t1
 ORDER BY

@@ -10,10 +10,10 @@ BeforeExecute
 IF (OBJECT_ID(N'[EventScheduleItem]', N'U') IS NULL)
 	CREATE TABLE [EventScheduleItem]
 	(
-		[ParentEventScheduleItemId] Int     NULL,
-		[IsActive]                  Bit NOT NULL,
-		[EventId]                   Int NOT NULL,
 		[Id]                        Int NOT NULL,
+		[EventId]                   Int NOT NULL,
+		[IsActive]                  Bit NOT NULL,
+		[ParentEventScheduleItemId] Int     NULL,
 
 		CONSTRAINT [PK_EventScheduleItem] PRIMARY KEY CLUSTERED ([Id])
 	)
@@ -23,13 +23,13 @@ BeforeExecute
 
 INSERT INTO [EventScheduleItem]
 (
-	[ParentEventScheduleItemId],
-	[IsActive],
+	[Id],
 	[EventId],
-	[Id]
+	[IsActive],
+	[ParentEventScheduleItemId]
 )
 SELECT 1,1,1,1 UNION ALL
-SELECT 2,1,2,2
+SELECT 2,2,1,2
 
 BeforeExecute
 -- SqlServer.2005

@@ -17,9 +17,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "BooleanTable"
 		(
-			"ColumnNullable" Char(1)     NULL,
+			"Id"             Int     NOT NULL,
 			"Column"         Char(1) NOT NULL,
-			"Id"             Int     NOT NULL
+			"ColumnNullable" Char(1)     NULL
 		)
 	';
 EXCEPTION
@@ -33,8 +33,8 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (1,0,2)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (2,0,1)
 SELECT * FROM dual
 
 BeforeExecute
@@ -45,9 +45,9 @@ DECLARE @ColumnNullable Int16
 SET     @ColumnNullable = 1
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"BooleanTable" r
 WHERE
@@ -57,9 +57,9 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"BooleanTable" r
 WHERE
@@ -73,55 +73,55 @@ DELETE FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @ColumnNullable Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Int16
-SET     @Column_1 = 1
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @ColumnNullable Int16
-SET     @ColumnNullable = 1
-DECLARE @Column_1 Int16
-SET     @Column_1 = 0
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 Int16
+SET     @Column_1 = 0
+DECLARE @ColumnNullable Int16
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY
@@ -137,17 +137,17 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (1,0,2)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (2,0,1)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY
@@ -163,17 +163,17 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "BooleanTable" ("ColumnNullable", "Column", "Id") VALUES (1,0,2)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (2,0,1)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"BooleanTable" t1
 ORDER BY

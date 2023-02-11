@@ -11,8 +11,8 @@ IF (OBJECT_ID(N'BaseTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [BaseTable]
 		(
-			[Value] Int NOT NULL,
 			[Id]    Int NOT NULL,
+			[Value] Int NOT NULL,
 
 			CONSTRAINT [PK_BaseTable] PRIMARY KEY CLUSTERED ([Id])
 		)
@@ -23,17 +23,17 @@ BeforeExecute
 
 INSERT INTO [BaseTable]
 (
-	[Value],
-	[Id]
+	[Id],
+	[Value]
 )
-SELECT 100,1
+SELECT 1,100
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -43,8 +43,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	[x].[Value],
-	[x].[Id]
+	[x].[Id],
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE

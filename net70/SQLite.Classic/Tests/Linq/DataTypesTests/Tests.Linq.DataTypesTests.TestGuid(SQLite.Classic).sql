@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [GuidTable]
 (
-	[ColumnNullable] Guid        NULL,
+	[Id]             INTEGER NOT NULL,
 	[Column]         Guid    NOT NULL,
-	[Id]             INTEGER NOT NULL
+	[ColumnNullable] Guid        NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,X'3D667BBCDE0F27438F925D8CC3A11D11',1),
-(X'A57339BD2343D84D9F4FDF9F93E2A627',X'0D6048A921DE744F8AC29516B287076E',2)
+(1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
+(2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
 WHERE
@@ -63,55 +63,55 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Guid
-SET     @Column_1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Guid
+SET     @Column_1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @ColumnNullable  -- Guid
+SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
-DECLARE @Column_1  -- Guid
-SET     @Column_1 = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Guid
+SET     @Column_1 = X'0D6048A921DE744F8AC29516B287076E'
+DECLARE @ColumnNullable  -- Guid
+SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY
@@ -128,21 +128,21 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,X'3D667BBCDE0F27438F925D8CC3A11D11',1),
-(X'A57339BD2343D84D9F4FDF9F93E2A627',X'0D6048A921DE744F8AC29516B287076E',2)
+(1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
+(2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY
@@ -159,21 +159,21 @@ BeforeExecute
 
 INSERT INTO [GuidTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,X'3D667BBCDE0F27438F925D8CC3A11D11',1),
-(X'A57339BD2343D84D9F4FDF9F93E2A627',X'0D6048A921DE744F8AC29516B287076E',2)
+(1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
+(2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
 ORDER BY

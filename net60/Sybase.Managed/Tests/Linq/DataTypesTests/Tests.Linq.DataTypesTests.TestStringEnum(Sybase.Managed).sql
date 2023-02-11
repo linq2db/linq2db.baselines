@@ -11,9 +11,9 @@ IF (OBJECT_ID(N'StringEnumTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [StringEnumTable]
 		(
-			[ColumnNullable] NVarChar(8)     NULL,
+			[Id]             Int         NOT NULL,
 			[Column]         NVarChar(8) NOT NULL,
-			[Id]             Int         NOT NULL
+			[ColumnNullable] NVarChar(8)     NULL
 		)
 	')
 
@@ -22,12 +22,12 @@ BeforeExecute
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'val=1',1 UNION ALL
-SELECT 'value=33','value=2',2
+SELECT 1,'val=1',NULL UNION ALL
+SELECT 2,'value=2','value=33'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -37,9 +37,9 @@ DECLARE @ColumnNullable Unsupported -- Guid
 SET     @ColumnNullable = 'value=33'
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[StringEnumTable] [r]
 WHERE
@@ -49,9 +49,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[StringEnumTable] [r]
 WHERE
@@ -66,55 +66,55 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable UniVarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 UniVarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Column_1 UniVarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable UniVarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ColumnNullable UniVarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 UniVarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Column_1 UniVarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable UniVarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY
@@ -132,20 +132,20 @@ BeforeExecute
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'val=1',1 UNION ALL
-SELECT 'value=33','value=2',2
+SELECT 1,'val=1',NULL UNION ALL
+SELECT 2,'value=2','value=33'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY
@@ -163,20 +163,20 @@ BeforeExecute
 
 INSERT INTO [StringEnumTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
-SELECT NULL,'val=1',1 UNION ALL
-SELECT 'value=33','value=2',2
+SELECT 1,'val=1',NULL UNION ALL
+SELECT 2,'value=2','value=33'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[StringEnumTable] [t1]
 ORDER BY

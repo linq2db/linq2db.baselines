@@ -17,9 +17,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "ByteTable"
 		(
-			"ColumnNullable" Number(3)     NULL,
+			"Id"             Int       NOT NULL,
 			"Column"         Number(3) NOT NULL,
-			"Id"             Int       NOT NULL
+			"ColumnNullable" Number(3)     NULL
 		)
 	';
 EXCEPTION
@@ -33,8 +33,8 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (2,255,2)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
 SELECT * FROM dual
 
 BeforeExecute
@@ -45,9 +45,9 @@ DECLARE @ColumnNullable Int16
 SET     @ColumnNullable = 2
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"ByteTable" r
 WHERE
@@ -57,9 +57,9 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"ByteTable" r
 WHERE
@@ -73,55 +73,55 @@ DELETE FROM
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ColumnNullable Int16
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Int16
-SET     @Column_1 = 1
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Int16
+SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ColumnNullable Int16
-SET     @ColumnNullable = 2
-DECLARE @Column_1 Int16
-SET     @Column_1 = 255
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 Int16
+SET     @Column_1 = 255
+DECLARE @ColumnNullable Int16
+SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY
@@ -137,17 +137,17 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (2,255,2)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY
@@ -163,17 +163,17 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "ByteTable" ("ColumnNullable", "Column", "Id") VALUES (2,255,2)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"ByteTable" t1
 ORDER BY

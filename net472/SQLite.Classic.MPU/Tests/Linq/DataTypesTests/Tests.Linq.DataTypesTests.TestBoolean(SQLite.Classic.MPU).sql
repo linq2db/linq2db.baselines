@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [BooleanTable]
 (
-	[ColumnNullable] Bit         NULL,
+	[Id]             INTEGER NOT NULL,
 	[Column]         Bit     NOT NULL,
-	[Id]             INTEGER NOT NULL
+	[ColumnNullable] Bit         NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,1,1),
-(1,0,2)
+(1,1,NULL),
+(2,0,1)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable  -- Boolean
 SET     @ColumnNullable = 1
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[r].[ColumnNullable],
+	[r].[Id],
 	[r].[Column],
-	[r].[Id]
+	[r].[ColumnNullable]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -62,55 +62,55 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ColumnNullable  -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1  -- Boolean
-SET     @Column_1 = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Column_1  -- Boolean
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ColumnNullable  -- Boolean
-SET     @ColumnNullable = 1
-DECLARE @Column_1  -- Boolean
-SET     @Column_1 = 0
 DECLARE @Id  -- Int32
 SET     @Id = 2
+DECLARE @Column_1  -- Boolean
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Boolean
+SET     @ColumnNullable = 1
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -127,21 +127,21 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,1,1),
-(1,0,2)
+(1,1,NULL),
+(2,0,1)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY
@@ -158,21 +158,21 @@ BeforeExecute
 
 INSERT INTO [BooleanTable]
 (
-	[ColumnNullable],
+	[Id],
 	[Column],
-	[Id]
+	[ColumnNullable]
 )
 VALUES
-(NULL,1,1),
-(1,0,2)
+(1,1,NULL),
+(2,0,1)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ColumnNullable],
+	[t1].[Id],
 	[t1].[Column],
-	[t1].[Id]
+	[t1].[ColumnNullable]
 FROM
 	[BooleanTable] [t1]
 ORDER BY

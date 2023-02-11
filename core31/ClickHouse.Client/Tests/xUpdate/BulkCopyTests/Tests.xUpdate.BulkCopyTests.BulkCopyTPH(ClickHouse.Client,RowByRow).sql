@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS TPHTable
 	Discriminator Int32,
 	Value1        Nullable(String),
 	Value2        Nullable(String),
-	NullableBool  Nullable(String),
 	Value3        Nullable(String),
+	NullableBool  Nullable(String),
 
 	 PRIMARY KEY (Id)
 )
@@ -26,14 +26,14 @@ BeforeExecute
 INSERT INTO TPHTable
 (
 	Id,
-	Value1,
-	Discriminator
+	Discriminator,
+	Value1
 )
 VALUES
 (
 	toInt32(1),
-	'Str1',
-	toInt32(1)
+	toInt32(1),
+	'Str1'
 )
 
 BeforeExecute
@@ -42,14 +42,14 @@ BeforeExecute
 INSERT INTO TPHTable
 (
 	Id,
-	Value2,
-	Discriminator
+	Discriminator,
+	Value2
 )
 VALUES
 (
 	toInt32(2),
-	'Str2',
-	toInt32(2)
+	toInt32(2),
+	'Str2'
 )
 
 BeforeExecute
@@ -58,16 +58,16 @@ BeforeExecute
 INSERT INTO TPHTable
 (
 	Id,
-	NullableBool,
+	Discriminator,
 	Value3,
-	Discriminator
+	NullableBool
 )
 VALUES
 (
 	toInt32(3),
-	'Y',
+	toInt32(3),
 	'Str3',
-	toInt32(3)
+	'Y'
 )
 
 BeforeExecute
@@ -78,8 +78,8 @@ SELECT
 	t1.Discriminator,
 	t1.Value1,
 	t1.Value2,
-	t1.NullableBool,
-	t1.Value3
+	t1.Value3,
+	t1.NullableBool
 FROM
 	TPHTable t1
 ORDER BY
@@ -93,8 +93,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -109,8 +109,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -125,8 +125,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -141,8 +141,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -157,8 +157,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE
@@ -173,8 +173,8 @@ SELECT
 	x.Discriminator,
 	x.Value1,
 	x.Value2,
-	x.NullableBool,
-	x.Value3
+	x.Value3,
+	x.NullableBool
 FROM
 	TPHTable x
 WHERE

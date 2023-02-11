@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `StringEnumTable`
 (
-	`ColumnNullable` VARCHAR(8)     NULL,
+	`Id`             INT        NOT NULL,
 	`Column`         VARCHAR(8) NOT NULL,
-	`Id`             INT        NOT NULL
+	`ColumnNullable` VARCHAR(8)     NULL
 )
 
 BeforeExecute
@@ -18,13 +18,13 @@ BeforeExecute
 
 INSERT INTO `StringEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,'val=1',1),
-('value=33','value=2',2)
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -34,9 +34,9 @@ DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`StringEnumTable` `r`
 WHERE
@@ -46,9 +46,9 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`r`.`ColumnNullable`,
+	`r`.`Id`,
 	`r`.`Column`,
-	`r`.`Id`
+	`r`.`ColumnNullable`
 FROM
 	`StringEnumTable` `r`
 WHERE
@@ -63,55 +63,55 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ColumnNullable VarChar -- String
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 VarChar(5) -- String
+SET     @Column_1 = 'val=1'
+DECLARE @ColumnNullable VarChar -- String
+SET     @ColumnNullable = NULL
 
 INSERT INTO `StringEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ColumnNullable VarChar(8) -- String
-SET     @ColumnNullable = 'value=33'
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 VarChar(7) -- String
+SET     @Column_1 = 'value=2'
+DECLARE @ColumnNullable VarChar(8) -- String
+SET     @ColumnNullable = 'value=33'
 
 INSERT INTO `StringEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`StringEnumTable` `t1`
 ORDER BY
@@ -129,21 +129,21 @@ BeforeExecute
 
 INSERT INTO `StringEnumTable`
 (
-	`ColumnNullable`,
+	`Id`,
 	`Column`,
-	`Id`
+	`ColumnNullable`
 )
 VALUES
-(NULL,'val=1',1),
-('value=33','value=2',2)
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`StringEnumTable` `t1`
 ORDER BY
@@ -157,15 +157,15 @@ FROM
 	`StringEnumTable` `t1`
 
 BeforeExecute
-INSERT BULK `StringEnumTable`(ColumnNullable, Column, Id
+INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`t1`.`ColumnNullable`,
+	`t1`.`Id`,
 	`t1`.`Column`,
-	`t1`.`Id`
+	`t1`.`ColumnNullable`
 FROM
 	`StringEnumTable` `t1`
 ORDER BY

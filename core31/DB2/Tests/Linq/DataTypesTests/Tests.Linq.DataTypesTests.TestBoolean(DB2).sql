@@ -14,9 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "BooleanTable"
 		(
-			"ColumnNullable" smallint     NULL,
+			"Id"             Int      NOT NULL,
 			"Column"         smallint NOT NULL,
-			"Id"             Int      NOT NULL
+			"ColumnNullable" smallint     NULL
 		)
 	';
 END
@@ -26,13 +26,13 @@ BeforeExecute
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
-(1,0,2)
+(1,1,NULL),
+(2,0,1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,9 +42,9 @@ DECLARE @ColumnNullable SmallInt(4) -- Int16
 SET     @ColumnNullable = 1
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"BooleanTable" "r"
 WHERE
@@ -54,9 +54,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"r"."ColumnNullable",
+	"r"."Id",
 	"r"."Column",
-	"r"."Id"
+	"r"."ColumnNullable"
 FROM
 	"BooleanTable" "r"
 WHERE
@@ -70,55 +70,55 @@ DELETE FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable SmallInt -- Boolean
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 SmallInt(4) -- Int16
-SET     @Column_1 = 1
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
+DECLARE @Column_1 SmallInt(4) -- Int16
+SET     @Column_1 = 1
+DECLARE @ColumnNullable SmallInt -- Boolean
+SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ColumnNullable SmallInt(4) -- Int16
-SET     @ColumnNullable = 1
-DECLARE @Column_1 SmallInt(4) -- Int16
-SET     @Column_1 = 0
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Column_1 SmallInt(4) -- Int16
+SET     @Column_1 = 0
+DECLARE @ColumnNullable SmallInt(4) -- Int16
+SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	@ColumnNullable,
+	@Id,
 	@Column_1,
-	@Id
+	@ColumnNullable
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY
@@ -135,21 +135,21 @@ BeforeExecute
 
 INSERT INTO "BooleanTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
-(NULL,1,1),
-(1,0,2)
+(1,1,NULL),
+(2,0,1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY
@@ -168,9 +168,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ColumnNullable",
+	"t1"."Id",
 	"t1"."Column",
-	"t1"."Id"
+	"t1"."ColumnNullable"
 FROM
 	"BooleanTable" "t1"
 ORDER BY

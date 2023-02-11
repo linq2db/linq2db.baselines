@@ -1324,22 +1324,22 @@ BeforeExecute
 
 INSERT INTO "InheritanceParent"
 (
-	"TypeDiscriminator",
 	"InheritanceParentId",
+	"TypeDiscriminator",
 	"Name"
 )
-SELECT NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 1,2,NULL FROM rdb$database UNION ALL
-SELECT 2,3,'InheritanceParent2' FROM rdb$database
+SELECT 1,NULL,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
+SELECT 2,1,NULL FROM rdb$database UNION ALL
+SELECT 3,2,'InheritanceParent2' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
 
 INSERT INTO "InheritanceChild"
 (
-	"InheritanceParentId",
-	"TypeDiscriminator",
 	"InheritanceChildId",
+	"TypeDiscriminator",
+	"InheritanceParentId",
 	"Name"
 )
 SELECT 1,NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL

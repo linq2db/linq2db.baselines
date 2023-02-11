@@ -23,9 +23,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "AuditAlert"
 (
-	"CreationDate"    TimeStamp     NULL,
-	"AlertCode"       text          NULL,
 	"AlertKey"        text          NULL,
+	"AlertCode"       text          NULL,
+	"CreationDate"    TimeStamp     NULL,
 	"TransactionDate" TimeStamp     NULL
 )
 

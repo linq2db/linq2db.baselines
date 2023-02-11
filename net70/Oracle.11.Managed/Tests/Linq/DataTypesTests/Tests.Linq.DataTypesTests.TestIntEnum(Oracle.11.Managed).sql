@@ -17,9 +17,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "IntEnumTable"
 		(
-			"ColumnNullable" Int     NULL,
+			"Id"             Int NOT NULL,
 			"Column"         Int NOT NULL,
-			"Id"             Int NOT NULL
+			"ColumnNullable" Int     NULL
 		)
 	';
 EXCEPTION
@@ -33,8 +33,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (3,2,2)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
 SELECT * FROM dual
 
 BeforeExecute
@@ -45,9 +45,9 @@ DECLARE @ColumnNullable Int32
 SET     @ColumnNullable = 3
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"IntEnumTable" r
 WHERE
@@ -57,9 +57,9 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	r."ColumnNullable",
+	r."Id",
 	r."Column",
-	r."Id"
+	r."ColumnNullable"
 FROM
 	"IntEnumTable" r
 WHERE
@@ -73,55 +73,55 @@ DELETE FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ColumnNullable Int32
-SET     @ColumnNullable = NULL
-DECLARE @Column_1 Int32
-SET     @Column_1 = 1
 DECLARE @Id Int32
 SET     @Id = 1
+DECLARE @Column_1 Int32
+SET     @Column_1 = 1
+DECLARE @ColumnNullable Int32
+SET     @ColumnNullable = NULL
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ColumnNullable Int32
-SET     @ColumnNullable = 3
-DECLARE @Column_1 Int32
-SET     @Column_1 = 2
 DECLARE @Id Int32
 SET     @Id = 2
+DECLARE @Column_1 Int32
+SET     @Column_1 = 2
+DECLARE @ColumnNullable Int32
+SET     @ColumnNullable = 3
 
 INSERT INTO "IntEnumTable"
 (
-	"ColumnNullable",
+	"Id",
 	"Column",
-	"Id"
+	"ColumnNullable"
 )
 VALUES
 (
-	:ColumnNullable,
+	:Id,
 	:Column_1,
-	:Id
+	:ColumnNullable
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY
@@ -137,17 +137,17 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (3,2,2)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY
@@ -163,17 +163,17 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (NULL,1,1)
-	INTO "IntEnumTable" ("ColumnNullable", "Column", "Id") VALUES (3,2,2)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
+	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
 SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t1."ColumnNullable",
+	t1."Id",
 	t1."Column",
-	t1."Id"
+	t1."ColumnNullable"
 FROM
 	"IntEnumTable" t1
 ORDER BY

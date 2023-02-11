@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS BaseTable
 (
-	Value Int32,
 	Id    Int32,
+	Value Int32,
 
 	 PRIMARY KEY (Id)
 )
@@ -21,21 +21,21 @@ BeforeExecute
 
 INSERT INTO BaseTable
 (
-	Value,
-	Id
+	Id,
+	Value
 )
 VALUES
 (
-	toInt32(100),
-	toInt32(1)
+	toInt32(1),
+	toInt32(100)
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.Value,
-	x.Id
+	x.Id,
+	x.Value
 FROM
 	BaseTable x
 WHERE
@@ -46,8 +46,8 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.Value,
-	x.Id
+	x.Id,
+	x.Value
 FROM
 	BaseTable x
 WHERE
