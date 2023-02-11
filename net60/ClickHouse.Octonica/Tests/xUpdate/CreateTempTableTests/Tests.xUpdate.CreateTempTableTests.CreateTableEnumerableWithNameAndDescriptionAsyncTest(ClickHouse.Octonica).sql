@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS TempTable
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
-CREATE TABLE IF NOT EXISTS TempTable
+CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 (
 	Name String
 )
