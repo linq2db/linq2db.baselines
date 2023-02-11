@@ -3,7 +3,7 @@
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TempTable"';
 END
 
 BeforeExecute
@@ -12,17 +12,18 @@ BeforeExecute
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "TempTable"
+		DECLARE GLOBAL TEMPORARY TABLE SESSION."TempTable"
 		(
 			"Name" NVarChar(20) NOT NULL
 		)
+		ON COMMIT PRESERVE ROWS
 	';
 END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
-INSERT INTO "TempTable"
+INSERT INTO SESSION."TempTable"
 (
 	"Name"
 )
@@ -36,13 +37,13 @@ SELECT
 	"t"."Name"
 FROM
 	"Person" "p"
-		INNER JOIN "TempTable" "t" ON "p"."FirstName" = "t"."Name"
+		INNER JOIN SESSION."TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TempTable"';
 END
 
