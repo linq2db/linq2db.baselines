@@ -3,13 +3,11 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN toInt32(1) IN (
 			SELECT
-				*
+				c_1.ParentID
 			FROM
 				Child c_1
-			WHERE
-				c_1.ParentID = toInt32(1)
 		)
 			THEN true
 		ELSE false
@@ -20,13 +18,11 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN toInt32(-1) IN (
 			SELECT
-				*
+				c_1.ParentID
 			FROM
 				Child c_1
-			WHERE
-				c_1.ParentID = toInt32(-1)
 		)
 			THEN true
 		ELSE false
