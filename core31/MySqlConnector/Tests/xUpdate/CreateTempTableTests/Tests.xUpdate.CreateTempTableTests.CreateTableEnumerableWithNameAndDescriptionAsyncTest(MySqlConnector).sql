@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `TempTable`
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)
 
-CREATE TABLE IF NOT EXISTS `TempTable`
+CREATE TEMPORARY TABLE IF NOT EXISTS `TempTable`
 (
 	`Name` VARCHAR(20) NOT NULL
 )
