@@ -12,10 +12,11 @@ BeforeExecute
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "TempTable"
+			CREATE GLOBAL TEMPORARY TABLE "TempTable"
 			(
 				"Name" VarChar(20) CHARACTER SET UNICODE_FSS NOT NULL
 			)
+			ON COMMIT PRESERVE ROWS
 		';
 END
 
