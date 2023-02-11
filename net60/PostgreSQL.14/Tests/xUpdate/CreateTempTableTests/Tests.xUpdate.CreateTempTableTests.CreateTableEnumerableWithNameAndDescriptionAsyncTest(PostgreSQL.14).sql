@@ -6,10 +6,11 @@ DROP TABLE IF EXISTS "TempTable"
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-CREATE TABLE IF NOT EXISTS "TempTable"
+CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
 	"Name" text NOT NULL
 )
+ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
