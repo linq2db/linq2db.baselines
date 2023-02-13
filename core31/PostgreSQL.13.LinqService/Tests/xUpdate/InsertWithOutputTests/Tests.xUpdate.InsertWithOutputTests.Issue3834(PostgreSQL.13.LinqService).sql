@@ -22,15 +22,15 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 123
-DECLARE @Nesto Varchar(5) -- String
+DECLARE @Nesto Text(5) -- String
 SET     @Nesto = 'Nesto'
-DECLARE @Nest Varchar(6) -- String
+DECLARE @Nest Text(6) -- String
 SET     @Nest = 'Nessss'
-DECLARE @Whatsov Varchar(7) -- String
+DECLARE @Whatsov Text(7) -- String
 SET     @Whatsov = 'Whatsov'
-DECLARE @Co2Grund Varchar(3) -- String
+DECLARE @Co2Grund Text(3) -- String
 SET     @Co2Grund = 'xxx'
-DECLARE @Co2Aend Varchar(4) -- String
+DECLARE @Co2Aend Text(4) -- String
 SET     @Co2Aend = 'What'
 
 INSERT INTO "Issue3834Table"
