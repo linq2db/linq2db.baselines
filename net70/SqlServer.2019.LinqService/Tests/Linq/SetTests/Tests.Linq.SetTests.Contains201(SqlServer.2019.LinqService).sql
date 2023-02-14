@@ -2,13 +2,11 @@
 -- SqlServer.2019
 
 SELECT
-	IIF(EXISTS(
+	IIF([p].[ParentID] - 1 IN (
 		SELECT
-			*
+			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [p].[ParentID] - 1
 	), 1, 0)
 FROM
 	[Parent] [p]
