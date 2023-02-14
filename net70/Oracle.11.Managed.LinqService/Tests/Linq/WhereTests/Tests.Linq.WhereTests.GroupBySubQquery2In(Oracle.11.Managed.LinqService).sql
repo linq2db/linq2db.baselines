@@ -7,19 +7,12 @@ SELECT
 FROM
 	"Child" x
 WHERE
-	EXISTS(
+	x."ChildID" IN (
 		SELECT
-			*
+			Max(t1."ChildID")
 		FROM
-			(
-				SELECT
-					Max(t1."ChildID") as "c1"
-				FROM
-					"Child" t1
-				GROUP BY
-					t1."ParentID"
-			) t2
-		WHERE
-			t2."c1" = x."ChildID"
+			"Child" t1
+		GROUP BY
+			t1."ParentID"
 	)
 
