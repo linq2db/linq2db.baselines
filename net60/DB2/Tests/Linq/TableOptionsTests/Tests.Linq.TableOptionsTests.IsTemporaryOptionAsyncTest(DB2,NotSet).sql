@@ -6,7 +6,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table1"
 	ID      Int NOT NULL,
 	"Value" Int NOT NULL
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
@@ -27,7 +26,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table2"
 	ID      Int NOT NULL,
 	"Value" Int NOT NULL
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)

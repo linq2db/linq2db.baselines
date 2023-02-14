@@ -9,7 +9,6 @@ BEGIN
 			ID      Int NOT NULL,
 			"Value" Int NOT NULL
 		)
-		ON COMMIT PRESERVE ROWS
 	';
 END
 
@@ -35,7 +34,6 @@ BEGIN
 			ID      Int NOT NULL,
 			"Value" Int NOT NULL
 		)
-		ON COMMIT PRESERVE ROWS
 	';
 END
 
