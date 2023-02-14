@@ -15,13 +15,11 @@ FROM
 			FROM
 				[Parent] [p]
 			WHERE
-				[p].[ParentID] = [p1].[ParentID] AND EXISTS(
+				[p].[ParentID] = [p1].[ParentID] AND [p].[ParentID] IN (
 					SELECT
-						*
+						[ch].[ParentID]
 					FROM
 						[Child] [ch]
-					WHERE
-						[ch].[ParentID] = [p].[ParentID]
 				)
 			GROUP BY
 				[p].[ParentID]
