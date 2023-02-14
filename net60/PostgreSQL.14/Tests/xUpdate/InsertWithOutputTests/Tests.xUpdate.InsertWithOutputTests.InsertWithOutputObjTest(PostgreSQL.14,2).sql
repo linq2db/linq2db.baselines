@@ -19,7 +19,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 200
-DECLARE @ValueStr Varchar(8) -- String
+DECLARE @ValueStr Text(8) -- String
 SET     @ValueStr = 'SomeStr2'
 
 INSERT INTO "TableWithData"
