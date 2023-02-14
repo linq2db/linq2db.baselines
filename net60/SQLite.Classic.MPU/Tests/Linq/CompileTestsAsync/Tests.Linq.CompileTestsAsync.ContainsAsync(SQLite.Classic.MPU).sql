@@ -34,18 +34,16 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 2
+DECLARE @p_1  -- Int32
+SET     @p_1 = 2
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @p_1 IN (
 			SELECT
-				*
+				[c_1].[Id]
 			FROM
 				[AsyncDataTable] [c_1]
-			WHERE
-				[c_1].[Id] = @Id
 		)
 			THEN 1
 		ELSE 0
