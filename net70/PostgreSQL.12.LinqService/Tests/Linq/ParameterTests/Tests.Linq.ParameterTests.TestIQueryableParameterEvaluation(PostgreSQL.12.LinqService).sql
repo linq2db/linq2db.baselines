@@ -16,28 +16,28 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			p."PersonID" = :paramCopy AND p."PersonID" = t1."PersonID"
+			p."PersonID" = :paramCopy
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			p_1."PersonID" = :ID AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			p_1."PersonID" = :ID
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			:ID_1 <> p_2."PersonID" AND p_2."PersonID" = t1."PersonID"
+			:ID_1 <> p_2."PersonID"
 	))
 
 BeforeExecute
@@ -58,28 +58,28 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			:ID <> p."PersonID" AND p."PersonID" = t1."PersonID"
+			:ID <> p."PersonID"
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			:paramCopy = p_1."PersonID" AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			:paramCopy = p_1."PersonID"
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			:ID_1 <> p_2."PersonID" AND p_2."PersonID" = t1."PersonID"
+			:ID_1 <> p_2."PersonID"
 	))
 
 BeforeExecute
@@ -100,28 +100,28 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			:ID <> p."PersonID" AND p."PersonID" = t1."PersonID"
+			:ID <> p."PersonID"
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			p_1."PersonID" = :ID_1 AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			p_1."PersonID" = :ID_1
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			p_2."PersonID" = :paramCopy AND p_2."PersonID" = t1."PersonID"
+			p_2."PersonID" = :paramCopy
 	))
 
 BeforeExecute
@@ -142,28 +142,28 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			p."PersonID" = :paramCopy AND p."PersonID" = t1."PersonID"
+			p."PersonID" = :paramCopy
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			p_1."PersonID" = :ID AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			p_1."PersonID" = :ID
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			:ID_1 <> p_2."PersonID" AND p_2."PersonID" = t1."PersonID"
+			:ID_1 <> p_2."PersonID"
 	))
 
 BeforeExecute
@@ -184,28 +184,28 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			:ID <> p."PersonID" AND p."PersonID" = t1."PersonID"
+			:ID <> p."PersonID"
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			p_1."PersonID" = :ID_1 AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			p_1."PersonID" = :ID_1
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			p_2."PersonID" = :paramCopy AND p_2."PersonID" = t1."PersonID"
+			p_2."PersonID" = :paramCopy
 	))
 
 BeforeExecute
@@ -226,27 +226,27 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	EXISTS(
+	t1."PersonID" IN (
 		SELECT
-			*
+			p."PersonID"
 		FROM
 			"Person" p
 		WHERE
-			:ID <> p."PersonID" AND p."PersonID" = t1."PersonID"
+			:ID <> p."PersonID"
 	) AND
-	(EXISTS(
+	(t1."PersonID" IN (
 		SELECT
-			*
+			p_1."PersonID"
 		FROM
 			"Person" p_1
 		WHERE
-			:paramCopy = p_1."PersonID" AND p_1."PersonID" = t1."PersonID"
-	) OR EXISTS(
+			:paramCopy = p_1."PersonID"
+	) OR t1."PersonID" IN (
 		SELECT
-			*
+			p_2."PersonID"
 		FROM
 			"Person" p_2
 		WHERE
-			:ID_1 <> p_2."PersonID" AND p_2."PersonID" = t1."PersonID"
+			:ID_1 <> p_2."PersonID"
 	))
 
