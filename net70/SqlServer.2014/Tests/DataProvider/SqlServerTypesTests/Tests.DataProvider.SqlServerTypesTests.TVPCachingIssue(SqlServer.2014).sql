@@ -15,13 +15,11 @@ FROM
 		FROM
 			[Person] [p]
 		WHERE
-			EXISTS(
+			[p].[PersonID] IN (
 				SELECT
-					*
+					[x].[Id]
 				FROM
 					@table_1 [x]
-				WHERE
-					[x].[Id] = [p].[PersonID]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -38,13 +36,11 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	EXISTS(
+	[p].[PersonID] IN (
 		SELECT
-			*
+			[x].[Id]
 		FROM
 			@table_1 [x]
-		WHERE
-			[x].[Id] = [p].[PersonID]
 	)
 
 BeforeExecute
@@ -64,13 +60,11 @@ FROM
 		FROM
 			[Person] [p]
 		WHERE
-			EXISTS(
+			[p].[PersonID] IN (
 				SELECT
-					*
+					[x].[Id]
 				FROM
 					@table_1 [x]
-				WHERE
-					[x].[Id] = [p].[PersonID]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -87,13 +81,11 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	EXISTS(
+	[p].[PersonID] IN (
 		SELECT
-			*
+			[x].[Id]
 		FROM
 			@table_1 [x]
-		WHERE
-			[x].[Id] = [p].[PersonID]
 	)
 
 BeforeExecute
@@ -113,13 +105,11 @@ FROM
 		FROM
 			[Person] [p]
 		WHERE
-			EXISTS(
+			[p].[PersonID] IN (
 				SELECT
-					*
+					[x].[Id]
 				FROM
 					@table_1 [x]
-				WHERE
-					[x].[Id] = [p].[PersonID]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -136,13 +126,11 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	EXISTS(
+	[p].[PersonID] IN (
 		SELECT
-			*
+			[x].[Id]
 		FROM
 			@table_1 [x]
-		WHERE
-			[x].[Id] = [p].[PersonID]
 	)
 
 BeforeExecute
@@ -162,13 +150,11 @@ FROM
 		FROM
 			[Person] [p]
 		WHERE
-			EXISTS(
+			[p].[PersonID] IN (
 				SELECT
-					*
+					[x].[Id]
 				FROM
 					@table_1 [x]
-				WHERE
-					[x].[Id] = [p].[PersonID]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -185,12 +171,10 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	EXISTS(
+	[p].[PersonID] IN (
 		SELECT
-			*
+			[x].[Id]
 		FROM
 			@table_1 [x]
-		WHERE
-			[x].[Id] = [p].[PersonID]
 	)
 
