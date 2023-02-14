@@ -4,12 +4,10 @@
 DELETE FROM
 	Parent
 WHERE
-	EXISTS(
+	Parent.ParentID + 100 IN (
 		SELECT
-			*
+			c_1.ParentID
 		FROM
 			Child c_1
-		WHERE
-			c_1.ParentID = Parent.ParentID + 100
 	)
 
