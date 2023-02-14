@@ -17,13 +17,13 @@ SELECT
 					FROM
 						"Patient" "t2"
 					WHERE
-						"t2"."PersonID" IS NULL AND NOT EXISTS(
+						"t2"."PersonID" IS NULL AND "t2"."PersonID" NOT IN (
 							SELECT
-								*
+								"t3"."PersonID"
 							FROM
 								"Patient" "t3"
 							WHERE
-								"t3"."PersonID" = @personId_1 AND "t3"."PersonID" = "t2"."PersonID"
+								"t3"."PersonID" = @personId_1
 						)
 				) = 0 AND
 				(
@@ -32,13 +32,13 @@ SELECT
 					FROM
 						"Patient" "t4"
 					WHERE
-						"t4"."PersonID" = @personId_1 AND NOT EXISTS(
+						"t4"."PersonID" = @personId_1 AND "t4"."PersonID" NOT IN (
 							SELECT
-								*
+								"t5"."PersonID"
 							FROM
 								"Patient" "t5"
 							WHERE
-								"t5"."PersonID" IS NULL AND "t5"."PersonID" = "t4"."PersonID"
+								"t5"."PersonID" IS NULL
 						)
 				) = 0
 		)

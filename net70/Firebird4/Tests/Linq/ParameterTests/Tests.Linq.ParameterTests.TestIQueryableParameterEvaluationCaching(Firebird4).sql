@@ -12,13 +12,13 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	EXISTS(
+	"t1"."PersonID" IN (
 		SELECT
-			*
+			"p"."PersonID"
 		FROM
 			"Person" "p"
 		WHERE
-			"p"."PersonID" = @paramCopy AND "p"."PersonID" = "t1"."PersonID"
+			"p"."PersonID" = @paramCopy
 	)
 
 BeforeExecute
@@ -35,13 +35,13 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	EXISTS(
+	"t1"."PersonID" IN (
 		SELECT
-			*
+			"p"."PersonID"
 		FROM
 			"Person" "p"
 		WHERE
-			"p"."PersonID" = @paramCopy AND "p"."PersonID" = "t1"."PersonID"
+			"p"."PersonID" = @paramCopy
 	)
 
 BeforeExecute
@@ -58,13 +58,13 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	EXISTS(
+	"t1"."PersonID" IN (
 		SELECT
-			*
+			"p"."PersonID"
 		FROM
 			"Person" "p"
 		WHERE
-			"p"."PersonID" = @paramCopy AND "p"."PersonID" = "t1"."PersonID"
+			"p"."PersonID" = @paramCopy
 	)
 
 BeforeExecute
@@ -81,13 +81,13 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	EXISTS(
+	"t1"."PersonID" IN (
 		SELECT
-			*
+			"p"."PersonID"
 		FROM
 			"Person" "p"
 		WHERE
-			"p"."PersonID" = @paramCopy AND "p"."PersonID" = "t1"."PersonID"
+			"p"."PersonID" = @paramCopy
 	)
 
 BeforeExecute
@@ -104,12 +104,12 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	EXISTS(
+	"t1"."PersonID" IN (
 		SELECT
-			*
+			"p"."PersonID"
 		FROM
 			"Person" "p"
 		WHERE
-			"p"."PersonID" = @paramCopy AND "p"."PersonID" = "t1"."PersonID"
+			"p"."PersonID" = @paramCopy
 	)
 
