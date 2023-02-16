@@ -41,8 +41,8 @@ SELECT
 				Count(*) > toInt32(1)
 			LIMIT toInt32(1)
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
 BeforeExecute

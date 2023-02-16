@@ -9,13 +9,13 @@ SELECT
 			FROM
 				Child t1
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END,
 	CASE
 		WHEN x.ParentID <> toInt32(0)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 FROM
 	Parent x
@@ -28,8 +28,8 @@ SELECT
 			FROM
 				Child t2
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END,
 	NULL
 FROM

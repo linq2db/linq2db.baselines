@@ -10,18 +10,18 @@ SELECT
 				Person _
 			WHERE
 				CASE
-					WHEN _.MiddleName = '123' THEN true
-					ELSE false
+					WHEN _.MiddleName = '123' THEN toInt32(1)
+					ELSE toInt32(0)
 				END = CASE
 					WHEN CASE
 						WHEN _.MiddleName = '1' THEN 'test'
 						ELSE _.MiddleName
 					END = 'test'
-						THEN true
-					ELSE false
+						THEN toInt32(1)
+					ELSE toInt32(0)
 				END
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 

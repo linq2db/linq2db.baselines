@@ -9,8 +9,8 @@ SELECT
 			FROM
 				Child c_1
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
 BeforeExecute
@@ -24,7 +24,7 @@ SELECT
 			FROM
 				Child c_1
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 

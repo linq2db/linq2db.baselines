@@ -4,8 +4,8 @@
 SELECT
 	CASE
 		WHEN (p.FirstName IS NULL OR CHAR_LENGTH(p.FirstName) = toInt32(0))
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 FROM
 	Person p

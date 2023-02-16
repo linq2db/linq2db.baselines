@@ -4,8 +4,8 @@
 SELECT
 	CASE
 		WHEN a_Patient.PersonID IS NOT NULL
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 FROM
 	Person p

@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				x.ParentID = toInt32(1) AND NOT (x.ChildID = toInt32(11) AND x.GrandChildID = toInt32(777))
 		))
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
 BeforeExecute
@@ -28,7 +28,7 @@ SELECT
 			WHERE
 				x.ParentID = toInt32(1) AND NOT (x.GrandChildID = toInt32(777) AND x.ChildID = toInt32(11))
 		))
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
