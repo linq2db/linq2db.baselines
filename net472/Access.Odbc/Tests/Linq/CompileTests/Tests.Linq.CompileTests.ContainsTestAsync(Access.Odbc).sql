@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1
 
 SELECT
 	Count(*) > 0
@@ -12,8 +12,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = -1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = -1
 
 SELECT
 	Count(*) > 0
