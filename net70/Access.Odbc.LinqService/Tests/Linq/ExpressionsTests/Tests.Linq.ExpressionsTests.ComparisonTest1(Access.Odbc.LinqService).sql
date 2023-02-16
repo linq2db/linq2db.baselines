@@ -16,13 +16,13 @@ WHERE
 		FROM
 			[Patient] [_1]
 		WHERE
-			[_1].[PersonID] IS NULL AND NOT EXISTS(
+			[_1].[PersonID] IS NULL AND [_1].[PersonID] NOT IN (
 				SELECT
-					*
+					[_2].[PersonID]
 				FROM
 					[Patient] [_2]
 				WHERE
-					[_2].[PersonID] = ? AND [_2].[PersonID] = [_1].[PersonID]
+					[_2].[PersonID] = ?
 			)
 	) = 0 AND
 	(
@@ -31,13 +31,13 @@ WHERE
 		FROM
 			[Patient] [_3]
 		WHERE
-			[_3].[PersonID] = ? AND NOT EXISTS(
+			[_3].[PersonID] = ? AND [_3].[PersonID] NOT IN (
 				SELECT
-					*
+					[_4].[PersonID]
 				FROM
 					[Patient] [_4]
 				WHERE
-					[_4].[PersonID] IS NULL AND [_4].[PersonID] = [_3].[PersonID]
+					[_4].[PersonID] IS NULL
 			)
 	) = 0
 

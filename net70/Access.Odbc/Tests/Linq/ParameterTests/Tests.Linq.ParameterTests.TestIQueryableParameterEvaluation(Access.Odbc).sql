@@ -16,28 +16,28 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = ? AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = ?
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = ? AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			[p_1].[PersonID] = ?
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			? <> [p_2].[PersonID] AND [p_2].[PersonID] = [_].[PersonID]
+			? <> [p_2].[PersonID]
 	))
 
 BeforeExecute
@@ -58,28 +58,28 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			? <> [p].[PersonID] AND [p].[PersonID] = [_].[PersonID]
+			? <> [p].[PersonID]
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			? = [p_1].[PersonID] AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			? = [p_1].[PersonID]
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			? <> [p_2].[PersonID] AND [p_2].[PersonID] = [_].[PersonID]
+			? <> [p_2].[PersonID]
 	))
 
 BeforeExecute
@@ -100,28 +100,28 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			? <> [p].[PersonID] AND [p].[PersonID] = [_].[PersonID]
+			? <> [p].[PersonID]
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = ? AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			[p_1].[PersonID] = ?
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			[p_2].[PersonID] = ? AND [p_2].[PersonID] = [_].[PersonID]
+			[p_2].[PersonID] = ?
 	))
 
 BeforeExecute
@@ -142,28 +142,28 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = ? AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = ?
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = ? AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			[p_1].[PersonID] = ?
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			? <> [p_2].[PersonID] AND [p_2].[PersonID] = [_].[PersonID]
+			? <> [p_2].[PersonID]
 	))
 
 BeforeExecute
@@ -184,28 +184,28 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			? <> [p].[PersonID] AND [p].[PersonID] = [_].[PersonID]
+			? <> [p].[PersonID]
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = ? AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			[p_1].[PersonID] = ?
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			[p_2].[PersonID] = ? AND [p_2].[PersonID] = [_].[PersonID]
+			[p_2].[PersonID] = ?
 	))
 
 BeforeExecute
@@ -226,27 +226,27 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			? <> [p].[PersonID] AND [p].[PersonID] = [_].[PersonID]
+			? <> [p].[PersonID]
 	) AND
-	(EXISTS(
+	([_].[PersonID] IN (
 		SELECT
-			*
+			[p_1].[PersonID]
 		FROM
 			[Person] [p_1]
 		WHERE
-			? = [p_1].[PersonID] AND [p_1].[PersonID] = [_].[PersonID]
-	) OR EXISTS(
+			? = [p_1].[PersonID]
+	) OR [_].[PersonID] IN (
 		SELECT
-			*
+			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			? <> [p_2].[PersonID] AND [p_2].[PersonID] = [_].[PersonID]
+			? <> [p_2].[PersonID]
 	))
 
