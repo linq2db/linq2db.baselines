@@ -2206,33 +2206,6 @@ BeforeExecute
 
 BeforeExecute
 --  MySqlConnector MySql
-DECLARE @aInParam VarChar(256) -- AnsiString
-SET     @aInParam = NULL
-DECLARE @aOutParam Byte -- SByte
-SET     @aOutParam = NULL
-
-`testdata`.`TestOutputParametersWithoutTableProcedure`
-
-BeforeExecute
---  MySqlConnector MySql
-DECLARE @param3 Int32
-SET     @param3 = NULL
-DECLARE @param2 Int32
-SET     @param2 = NULL
-DECLARE @param1 Int32
-SET     @param1 = NULL
-
-`testdata`.`TestProcedure`
-
-BeforeExecute
---  MySqlConnector MySql
-DECLARE @i Int32
-SET     @i = NULL
-
-`testdata`.`TEST_PROCEDURE`
-
-BeforeExecute
---  MySqlConnector MySql
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -2440,6 +2413,33 @@ DECLARE @Year Int32
 SET     @Year = NULL
 
 `testdata`.`Issue2313Results`
+
+BeforeExecute
+--  MySqlConnector MySql
+DECLARE @aInParam VarChar(256) -- AnsiString
+SET     @aInParam = NULL
+DECLARE @aOutParam Byte -- SByte
+SET     @aOutParam = NULL
+
+`testdata`.`TestOutputParametersWithoutTableProcedure`
+
+BeforeExecute
+--  MySqlConnector MySql
+DECLARE @param3 Int32
+SET     @param3 = NULL
+DECLARE @param2 Int32
+SET     @param2 = NULL
+DECLARE @param1 Int32
+SET     @param1 = NULL
+
+`testdata`.`TestProcedure`
+
+BeforeExecute
+--  MySqlConnector MySql
+DECLARE @i Int32
+SET     @i = NULL
+
+`testdata`.`TEST_PROCEDURE`
 
 BeforeExecute
 RollbackTransaction
