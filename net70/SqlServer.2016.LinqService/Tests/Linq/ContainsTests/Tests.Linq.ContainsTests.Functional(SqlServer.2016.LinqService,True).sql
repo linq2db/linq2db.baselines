@@ -89,7 +89,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IN (-1) OR [s].[Int] IS NULL
+	([s].[Int] IN (-1) OR [s].[Int] IS NULL)
 
 BeforeExecute
 -- SqlServer.2016
@@ -113,7 +113,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL
+	([s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL)
 
 BeforeExecute
 -- SqlServer.2016
