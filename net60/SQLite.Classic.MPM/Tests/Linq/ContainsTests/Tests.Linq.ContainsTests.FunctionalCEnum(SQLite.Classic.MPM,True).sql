@@ -57,7 +57,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL
+	([s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL)
 LIMIT @take
 
 BeforeExecute
@@ -89,7 +89,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL
+	([s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL)
 LIMIT @take
 
 BeforeExecute
