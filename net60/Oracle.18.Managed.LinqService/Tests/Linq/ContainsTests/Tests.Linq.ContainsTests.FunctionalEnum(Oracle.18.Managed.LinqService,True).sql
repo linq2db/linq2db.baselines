@@ -105,7 +105,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE') OR s."Enum" IS NULL
+	(s."Enum" IN ('THREE') OR s."Enum" IS NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -131,7 +131,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL
+	(s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
