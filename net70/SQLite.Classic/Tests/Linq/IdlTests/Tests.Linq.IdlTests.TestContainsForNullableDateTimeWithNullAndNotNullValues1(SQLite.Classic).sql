@@ -23,5 +23,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	[x].[DateTimeValue2] IN ('2009-09-24 09:19:29.09') OR [x].[DateTimeValue2] IS NULL
+	(DateTime([x].[DateTimeValue2]) = DateTime('2009-09-24 09:19:29.09') OR [x].[DateTimeValue2] IS NULL)
 
