@@ -90,7 +90,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (?) OR [s].[CEnum] IS NULL
+	([s].[CEnum] IN (?) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -116,7 +116,7 @@ SELECT TOP 1
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] NOT IN (?) AND [s].[CEnum] IS NOT NULL
+	([s].[CEnum] NOT IN (?) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
