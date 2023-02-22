@@ -25,5 +25,5 @@ SELECT
 FROM
 	`LinqDataTypes` `x`
 WHERE
-	`x`.`DateTimeValue2` IN (@DateTimeValue2) OR `x`.`DateTimeValue2` IS NULL
+	(`x`.`DateTimeValue2` IN (@DateTimeValue2) OR `x`.`DateTimeValue2` IS NULL)
 
