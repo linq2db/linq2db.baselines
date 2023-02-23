@@ -7,12 +7,19 @@ SELECT
 FROM
 	"Child" "x"
 WHERE
-	"x"."ChildID" IN (
+	EXISTS(
 		SELECT
-			Max("t1"."ChildID")
+			*
 		FROM
-			"Child" "t1"
-		GROUP BY
-			"t1"."ParentID"
+			(
+				SELECT
+					Max("t1"."ChildID") as "c1"
+				FROM
+					"Child" "t1"
+				GROUP BY
+					"t1"."ParentID"
+			) "t2"
+		WHERE
+			"t2"."c1" = "x"."ChildID"
 	)
 

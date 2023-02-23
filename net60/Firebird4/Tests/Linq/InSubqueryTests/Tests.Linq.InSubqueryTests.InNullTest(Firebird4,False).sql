@@ -7,10 +7,12 @@ SELECT
 FROM
 	"Parent" "c_1"
 WHERE
-	NULL IN (
+	EXISTS(
 		SELECT
-			"p"."Value1"
+			*
 		FROM
 			"Parent" "p"
+		WHERE
+			"p"."Value1" IS NULL
 	)
 
