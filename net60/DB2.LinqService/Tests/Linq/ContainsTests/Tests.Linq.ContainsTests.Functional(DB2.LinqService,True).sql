@@ -93,7 +93,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IN (-1) OR "s"."Int" IS NULL
+	("s"."Int" IN (-1) OR "s"."Int" IS NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -115,7 +115,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" NOT IN (2) AND "s"."Int" IS NOT NULL
+	("s"."Int" NOT IN (2) AND "s"."Int" IS NOT NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

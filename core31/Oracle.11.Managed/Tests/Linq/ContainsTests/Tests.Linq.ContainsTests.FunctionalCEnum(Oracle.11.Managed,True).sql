@@ -66,7 +66,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL AND ROWNUM <= :take
+	(s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -96,7 +96,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL AND
+	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL) AND
 	ROWNUM <= :take
 
 BeforeExecute

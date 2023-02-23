@@ -99,7 +99,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum) OR "s"."CEnum" IS NULL
+	("s"."CEnum" IN (@CEnum) OR "s"."CEnum" IS NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -127,7 +127,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL
+	("s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

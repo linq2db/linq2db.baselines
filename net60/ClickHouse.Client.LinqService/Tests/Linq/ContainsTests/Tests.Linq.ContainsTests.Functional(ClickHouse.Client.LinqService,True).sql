@@ -70,7 +70,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1)) OR s.Int IS NULL
+	(s.Int IN (toInt32(-1)) OR s.Int IS NULL)
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -92,7 +92,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int NOT IN (toInt32(2)) AND s.Int IS NOT NULL
+	(s.Int NOT IN (toInt32(2)) AND s.Int IS NOT NULL)
 LIMIT toInt32(1)
 
 BeforeExecute

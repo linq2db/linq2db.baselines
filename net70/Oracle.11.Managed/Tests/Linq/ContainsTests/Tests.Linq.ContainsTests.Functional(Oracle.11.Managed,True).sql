@@ -60,7 +60,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" IN (-1) OR s."Int" IS NULL AND ROWNUM <= :take
+	(s."Int" IN (-1) OR s."Int" IS NULL) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Int" NOT IN (2) AND s."Int" IS NOT NULL AND ROWNUM <= :take
+	(s."Int" NOT IN (2) AND s."Int" IS NOT NULL) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

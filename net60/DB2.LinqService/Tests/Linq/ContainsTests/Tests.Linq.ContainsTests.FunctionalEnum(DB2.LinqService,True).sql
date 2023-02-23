@@ -93,7 +93,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL
+	("s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -115,7 +115,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL
+	("s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

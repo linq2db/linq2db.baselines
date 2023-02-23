@@ -88,7 +88,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL
+	([s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlCe
@@ -112,7 +112,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL
+	([s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL)
 
 BeforeExecute
 -- SqlCe

@@ -52,7 +52,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL
+	([s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -76,7 +76,7 @@ SELECT TOP (@take)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL
+	([s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

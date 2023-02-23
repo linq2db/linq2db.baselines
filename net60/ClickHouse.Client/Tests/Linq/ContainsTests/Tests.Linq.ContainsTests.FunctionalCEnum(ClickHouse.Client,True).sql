@@ -48,7 +48,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum IN ('___Value3___') OR s.CEnum IS NULL
+	(s.CEnum IN ('___Value3___') OR s.CEnum IS NULL)
 LIMIT toInt32(1)
 
 BeforeExecute
@@ -70,7 +70,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.CEnum NOT IN ('___Value2___') AND s.CEnum IS NOT NULL
+	(s.CEnum NOT IN ('___Value2___') AND s.CEnum IS NOT NULL)
 LIMIT toInt32(1)
 
 BeforeExecute
