@@ -28,7 +28,7 @@ SELECT
 FROM
 	[Parent] [o]
 WHERE
-	([o].[ParentID] IN (1, 2, 3) OR [o].[ParentID] IS NULL OR [o].[ParentID] = ?)
+	(([o].[ParentID] IN (1, 2, 3) OR [o].[ParentID] IS NULL) OR [o].[ParentID] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -60,5 +60,5 @@ SELECT
 FROM
 	[Parent] [o]
 WHERE
-	([o].[ParentID] IN (4, 5, 6) OR [o].[ParentID] IS NULL OR [o].[ParentID] = ?)
+	(([o].[ParentID] IN (4, 5, 6) OR [o].[ParentID] IS NULL) OR [o].[ParentID] = ?)
 
