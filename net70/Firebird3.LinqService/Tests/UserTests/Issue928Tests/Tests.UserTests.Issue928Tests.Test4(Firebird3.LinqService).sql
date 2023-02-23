@@ -14,11 +14,13 @@ FROM
 		FROM
 			"Parent" "p"
 		WHERE
-			"p"."ParentID" IN (
+			EXISTS(
 				SELECT
-					"ch"."ParentID"
+					*
 				FROM
 					"Child" "ch"
+				WHERE
+					"ch"."ParentID" = "p"."ParentID"
 			)
 		GROUP BY
 			"p"."ParentID"
@@ -30,11 +32,13 @@ FROM
 			FROM
 				"Parent" "p_1"
 			WHERE
-				"p_1"."ParentID" IN (
+				EXISTS(
 					SELECT
-						"ch_1"."ParentID"
+						*
 					FROM
 						"Child" "ch_1"
+					WHERE
+						"ch_1"."ParentID" = "p_1"."ParentID"
 				)
 			GROUP BY
 				"p_1"."ParentID"

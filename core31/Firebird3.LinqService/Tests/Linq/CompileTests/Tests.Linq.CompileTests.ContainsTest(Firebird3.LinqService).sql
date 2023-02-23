@@ -1,15 +1,17 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN Cast(@p_1 as Int) IN (
+		WHEN EXISTS(
 			SELECT
-				"c_1"."ParentID"
+				*
 			FROM
 				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = @ParentID
 		)
 			THEN 1
 		ELSE 0
@@ -18,16 +20,18 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = -1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN Cast(@p_1 as Int) IN (
+		WHEN EXISTS(
 			SELECT
-				"c_1"."ParentID"
+				*
 			FROM
 				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = @ParentID
 		)
 			THEN 1
 		ELSE 0
