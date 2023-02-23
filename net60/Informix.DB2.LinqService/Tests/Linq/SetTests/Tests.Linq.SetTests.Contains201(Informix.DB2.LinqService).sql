@@ -3,11 +3,13 @@
 
 SELECT
 	Cast(CASE
-		WHEN p.ParentID - 1 IN (
+		WHEN EXISTS(
 			SELECT
-				c_1.ParentID
+				*
 			FROM
 				Child c_1
+			WHERE
+				c_1.ParentID = p.ParentID - 1
 		)
 			THEN 't'
 		ELSE 'f'

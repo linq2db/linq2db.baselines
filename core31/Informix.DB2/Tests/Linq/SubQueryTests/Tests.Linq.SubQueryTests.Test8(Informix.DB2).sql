@@ -7,13 +7,13 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID IN (
+	EXISTS(
 		SELECT
-			p.ParentID
+			*
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 1
+			p.ParentID = 1 AND p.ParentID = c_1.ParentID
 	)
 
 BeforeExecute
@@ -25,12 +25,12 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID IN (
+	EXISTS(
 		SELECT
-			p.ParentID
+			*
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 2
+			p.ParentID = 2 AND p.ParentID = c_1.ParentID
 	)
 

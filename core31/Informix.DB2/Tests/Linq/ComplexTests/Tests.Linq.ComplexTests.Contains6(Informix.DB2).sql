@@ -7,10 +7,12 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID IN (
+	EXISTS(
 		SELECT
-			p.ParentID
+			*
 		FROM
 			Parent p
+		WHERE
+			p.ParentID = c_1.ParentID
 	)
 

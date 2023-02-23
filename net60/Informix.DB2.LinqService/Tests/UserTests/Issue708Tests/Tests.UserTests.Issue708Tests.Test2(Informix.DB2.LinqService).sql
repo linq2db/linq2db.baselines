@@ -9,13 +9,13 @@ SELECT
 FROM
 	Child t1
 WHERE
-	t1.ParentID IN (
+	EXISTS(
 		SELECT
-			t2.ParentID
+			*
 		FROM
 			Parent t2
 		WHERE
-			t2.ParentID = @id
+			t2.ParentID = @id AND t2.ParentID = t1.ParentID
 	) AND
 	t1.ChildID >= 0 AND t1.ChildID <= 100
 

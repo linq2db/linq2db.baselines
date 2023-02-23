@@ -15,13 +15,13 @@ SELECT
 					FROM
 						Patient t2
 					WHERE
-						t2.PersonID IS NULL AND t2.PersonID NOT IN (
+						t2.PersonID IS NULL AND NOT EXISTS(
 							SELECT
-								t3.PersonID
+								*
 							FROM
 								Patient t3
 							WHERE
-								t3.PersonID = 2
+								t3.PersonID = 2 AND t3.PersonID = t2.PersonID
 						)
 				) = 0 AND
 				(
@@ -30,13 +30,13 @@ SELECT
 					FROM
 						Patient t4
 					WHERE
-						t4.PersonID = 2 AND t4.PersonID NOT IN (
+						t4.PersonID = 2 AND NOT EXISTS(
 							SELECT
-								t5.PersonID
+								*
 							FROM
 								Patient t5
 							WHERE
-								t5.PersonID IS NULL
+								t5.PersonID IS NULL AND t5.PersonID = t4.PersonID
 						)
 				) = 0
 		)
