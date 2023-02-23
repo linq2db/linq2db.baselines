@@ -60,7 +60,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" IN ('THREE') OR s."Enum" IS NULL AND ROWNUM <= :take
+	(s."Enum" IN ('THREE') OR s."Enum" IS NULL) AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL AND
+	(s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL) AND
 	ROWNUM <= :take
 
 BeforeExecute
