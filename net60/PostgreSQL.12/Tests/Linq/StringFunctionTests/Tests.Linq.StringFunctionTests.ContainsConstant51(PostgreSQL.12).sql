@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @ps_1 Text(4) -- String
+SET     @ps_1 = '%~[%'
+
+SELECT
+	Count(*)
+FROM
+	"Person" p
+WHERE
+	p."PersonID" = 1 AND '123[456' LIKE :ps_1 ESCAPE '~'
+
