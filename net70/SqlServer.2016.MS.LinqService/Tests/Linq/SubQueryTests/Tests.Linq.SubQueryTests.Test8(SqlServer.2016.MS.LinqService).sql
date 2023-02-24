@@ -7,13 +7,13 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	EXISTS(
+	[c_1].[ParentID] IN (
 		SELECT
-			*
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = 1 AND [p].[ParentID] = [c_1].[ParentID]
+			[p].[ParentID] = 1
 	)
 
 BeforeExecute
@@ -25,12 +25,12 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	EXISTS(
+	[c_1].[ParentID] IN (
 		SELECT
-			*
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = 2 AND [p].[ParentID] = [c_1].[ParentID]
+			[p].[ParentID] = 2
 	)
 

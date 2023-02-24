@@ -12,13 +12,11 @@ FROM
 			FROM
 				[GrandChild] [t]
 			WHERE
-				EXISTS(
+				[c_1].[ChildID] IN (
 					SELECT
-						*
+						[r].[PersonID]
 					FROM
 						[Person] [r]
-					WHERE
-						[r].[PersonID] = [c_1].[ChildID]
 				)
 		) [t1]
 
