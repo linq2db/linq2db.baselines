@@ -17,13 +17,13 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	EXISTS(
+	"_"."ID" IN (
 		SELECT
-			*
+			"_1"."ID"
 		FROM
 			"LinqDataTypes" "_1"
 		WHERE
-			"_1"."ID" = ? AND "_1"."ID" = "_"."ID"
+			"_1"."ID" = ?
 	)
 
 BeforeExecute
@@ -45,12 +45,12 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	EXISTS(
+	"_"."ID" IN (
 		SELECT
-			*
+			"_1"."ID"
 		FROM
 			"LinqDataTypes" "_1"
 		WHERE
-			"_1"."ID" = ? AND "_1"."ID" = "_"."ID"
+			"_1"."ID" = ?
 	)
 

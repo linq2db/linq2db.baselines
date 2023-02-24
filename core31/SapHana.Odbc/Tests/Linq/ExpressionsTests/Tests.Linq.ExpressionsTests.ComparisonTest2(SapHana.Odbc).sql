@@ -19,13 +19,13 @@ SELECT
 							FROM
 								"Patient" "_"
 							WHERE
-								"_"."PersonID" IS NULL AND NOT EXISTS(
+								"_"."PersonID" IS NULL AND "_"."PersonID" NOT IN (
 									SELECT
-										*
+										"_1"."PersonID"
 									FROM
 										"Patient" "_1"
 									WHERE
-										"_1"."PersonID" = ? AND "_1"."PersonID" = "_"."PersonID"
+										"_1"."PersonID" = ?
 								)
 						) as "cnt",
 						(
@@ -34,13 +34,13 @@ SELECT
 							FROM
 								"Patient" "_2"
 							WHERE
-								"_2"."PersonID" = ? AND NOT EXISTS(
+								"_2"."PersonID" = ? AND "_2"."PersonID" NOT IN (
 									SELECT
-										*
+										"_3"."PersonID"
 									FROM
 										"Patient" "_3"
 									WHERE
-										"_3"."PersonID" IS NULL AND "_3"."PersonID" = "_2"."PersonID"
+										"_3"."PersonID" IS NULL
 								)
 						) as "ex",
 						"_4"."FirstName",
