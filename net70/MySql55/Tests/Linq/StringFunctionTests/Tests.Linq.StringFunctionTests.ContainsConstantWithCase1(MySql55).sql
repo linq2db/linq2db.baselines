@@ -1,0 +1,11 @@
+﻿BeforeExecute
+-- MySql55 MySql.Official MySql
+
+SELECT
+	Count(*)
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` COLLATE utf8_bin NOT LIKE '%Joh%' ESCAPE '~' AND
+	`p`.`PersonID` = 1
+

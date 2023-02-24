@@ -1,0 +1,78 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [TableToInsert]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+CREATE TABLE IF NOT EXISTS [TableToInsert]
+(
+	[Id]    INTEGER       NOT NULL,
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TableToInsert] PRIMARY KEY ([Id])
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 3
+DECLARE @Value_1 NVarChar(5) -- String
+SET     @Value_1 = 'Janet'
+
+INSERT INTO [TableToInsert]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	@Id,
+	@Value_1
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 4
+DECLARE @Value_1 NVarChar(3) -- String
+SET     @Value_1 = 'Doe'
+
+INSERT INTO [TableToInsert]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	@Id,
+	@Value_1
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DELETE FROM
+	[TableToInsert]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[TableToInsert] [t]
+				INNER JOIN (
+					SELECT NULL [Id] WHERE 1 = 0
+					UNION ALL
+					VALUES
+						(3), (4)
+					) [r] ON [t].[Id] = [r].[Id]
+		WHERE
+			[TableToInsert].[Id] = [t].[Id]
+	)
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [TableToInsert]
+

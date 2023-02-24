@@ -1,0 +1,6 @@
+﻿BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+SELECT
+	QUOTENAME(N'abc def', N'><')
+
