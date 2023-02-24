@@ -1,0 +1,278 @@
+﻿BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "BooleanTable"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+CREATE COLUMN TABLE "BooleanTable"
+(
+	"Id"             Integer NOT NULL,
+	"Column"         TinyInt NOT NULL,
+	"ColumnNullable" TinyInt     NULL
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
+
+SELECT
+	"r"."Id",
+	"r"."Column",
+	"r"."ColumnNullable"
+FROM
+	"BooleanTable" "r"
+WHERE
+	"r"."Column" = ? AND "r"."ColumnNullable" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"r"."Id",
+	"r"."Column",
+	"r"."ColumnNullable"
+FROM
+	"BooleanTable" "r"
+WHERE
+	"r"."Column" = 0 AND "r"."ColumnNullable" = 1
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DELETE FROM
+	"BooleanTable" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."Id",
+	"t1"."Column",
+	"t1"."ColumnNullable"
+FROM
+	"BooleanTable" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DELETE FROM
+	"BooleanTable" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."Id",
+	"t1"."Column",
+	"t1"."ColumnNullable"
+FROM
+	"BooleanTable" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DELETE FROM
+	"BooleanTable" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 1
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = NULL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Column_1  -- Byte
+SET     @Column_1 = 0
+DECLARE @ColumnNullable  -- Byte
+SET     @ColumnNullable = 1
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."Id",
+	"t1"."Column",
+	"t1"."ColumnNullable"
+FROM
+	"BooleanTable" "t1"
+ORDER BY
+	"t1"."Id"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "BooleanTable"
+
