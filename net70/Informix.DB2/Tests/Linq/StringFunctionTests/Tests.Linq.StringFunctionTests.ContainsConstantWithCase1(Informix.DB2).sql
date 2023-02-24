@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	Count(*)
+FROM
+	Person p
+WHERE
+	NOT p.FirstName LIKE '%Joh%' ESCAPE '~' AND p.PersonID = 1
+
