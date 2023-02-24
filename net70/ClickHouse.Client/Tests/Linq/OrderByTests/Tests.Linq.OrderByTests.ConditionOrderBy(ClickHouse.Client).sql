@@ -9,8 +9,8 @@ FROM
 ORDER BY
 	CASE
 		WHEN t1.ParentID > toInt32(0) AND t1.ChildID <> t1.ParentID
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END DESC,
 	t1.ChildID
 

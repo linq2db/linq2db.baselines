@@ -11,7 +11,7 @@ SELECT
 			WHERE
 				c_1.ParentID <= toInt32(3)
 		))
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 

@@ -39,16 +39,14 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN toInt32(2) IN (
 			SELECT
-				*
+				c_1.Id
 			FROM
 				AsyncDataTable c_1
-			WHERE
-				c_1.Id = toInt32(2)
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
 BeforeExecute

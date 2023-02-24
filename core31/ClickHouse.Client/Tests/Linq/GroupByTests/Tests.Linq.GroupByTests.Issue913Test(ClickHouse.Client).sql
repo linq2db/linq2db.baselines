@@ -40,13 +40,13 @@ FROM
 		SELECT
 			CASE
 				WHEN selectParam.TradingStatus = 'D'
-					THEN true
-				ELSE false
+					THEN toInt32(1)
+				ELSE toInt32(0)
 			END as Key_1,
 			CASE
 				WHEN selectParam.TradingStatus = 'D'
-					THEN true
-				ELSE false
+					THEN toInt32(1)
+				ELSE toInt32(0)
 			END as c1
 		FROM
 			Issue913Test selectParam

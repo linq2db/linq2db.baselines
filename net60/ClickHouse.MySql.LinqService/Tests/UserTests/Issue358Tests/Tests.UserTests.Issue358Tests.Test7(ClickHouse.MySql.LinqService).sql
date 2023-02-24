@@ -15,5 +15,9 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	(_.BoolValue NOT IN (true) OR _.BoolValue IS NULL)
+	CASE
+		WHEN _.BoolValue IN (true)
+			THEN toInt32(1)
+		ELSE toInt32(0)
+	END = false
 

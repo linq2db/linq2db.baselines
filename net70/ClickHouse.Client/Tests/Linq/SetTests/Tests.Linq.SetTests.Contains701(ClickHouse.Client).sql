@@ -12,7 +12,7 @@ SELECT
 			WHERE
 				a_Parent.ParentID = toInt32(11) AND a_Parent.Value1 = toInt32(11)
 		)
-			THEN true
-		ELSE false
+			THEN toInt32(1)
+		ELSE toInt32(0)
 	END
 
