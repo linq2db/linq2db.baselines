@@ -12,7 +12,7 @@ FROM
 ORDER BY
 	CASE
 		WHEN t1.PersonID IN (toInt32(1), toInt32(3))
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 

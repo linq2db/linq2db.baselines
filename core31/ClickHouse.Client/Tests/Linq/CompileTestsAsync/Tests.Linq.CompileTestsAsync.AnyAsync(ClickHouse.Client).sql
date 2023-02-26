@@ -47,8 +47,8 @@ SELECT
 			WHERE
 				c_1.Id = toInt32(2)
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute

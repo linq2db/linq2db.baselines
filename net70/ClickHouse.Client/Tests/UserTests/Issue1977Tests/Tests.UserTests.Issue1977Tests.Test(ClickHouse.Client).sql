@@ -30,8 +30,8 @@ BeforeExecute
 SELECT
 	CASE
 		WHEN concat('Issue1977Table/', toString(f.firstField), '/', toString(f.secondField)) = arrayStringConcat(['Issue1977Table', toString(f.firstField), toString(f.secondField)], '/')
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 FROM
 	Issue1977Table f

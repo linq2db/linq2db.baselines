@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				p.ParentID = toInt32(1) AND p.ParentID = toInt32(1)
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute
@@ -28,7 +28,7 @@ SELECT
 			WHERE
 				p.ParentID = toInt32(2) AND p.ParentID = toInt32(1)
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 

@@ -9,7 +9,7 @@ SELECT
 			FROM
 				Person _
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 

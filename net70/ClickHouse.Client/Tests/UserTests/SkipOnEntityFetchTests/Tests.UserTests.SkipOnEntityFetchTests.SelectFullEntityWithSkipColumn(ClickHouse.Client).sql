@@ -31,8 +31,8 @@ SELECT
 			WHERE
 				p.PersonID IS NULL
 		))
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute
@@ -48,7 +48,7 @@ SELECT
 			WHERE
 				p.PersonID IS NULL
 		))
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 

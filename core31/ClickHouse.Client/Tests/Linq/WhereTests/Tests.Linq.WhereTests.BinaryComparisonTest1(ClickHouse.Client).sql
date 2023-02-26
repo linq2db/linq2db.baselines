@@ -11,15 +11,15 @@ SELECT
 			WHERE
 				CASE
 					WHEN _.FirstName = _.FirstName
-						THEN toInt32(1)
-					ELSE toInt32(0)
+						THEN true
+					ELSE false
 				END = CASE
 					WHEN _.MiddleName <> _.LastName
-						THEN toInt32(1)
-					ELSE toInt32(0)
+						THEN true
+					ELSE false
 				END
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 

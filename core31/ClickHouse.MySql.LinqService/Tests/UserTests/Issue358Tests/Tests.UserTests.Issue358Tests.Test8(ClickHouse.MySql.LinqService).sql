@@ -15,9 +15,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	CASE
-		WHEN _.BigIntValue IN (toInt64(2))
-			THEN toInt32(1)
-		ELSE toInt32(0)
-	END = false
+	(_.BigIntValue NOT IN (toInt64(2)) OR _.BigIntValue IS NULL)
 

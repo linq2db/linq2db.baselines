@@ -94,8 +94,8 @@ SELECT
 	x.Id,
 	CASE
 		WHEN a_House.Levels > toInt32(1)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 FROM
 	Pet3001 x

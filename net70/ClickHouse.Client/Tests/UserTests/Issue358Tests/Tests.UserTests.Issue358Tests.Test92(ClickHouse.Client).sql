@@ -15,9 +15,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	CASE
-		WHEN _.BoolValue IN (true)
-			THEN toInt32(1)
-		ELSE toInt32(0)
-	END = true
+	_.BoolValue IN (true)
 

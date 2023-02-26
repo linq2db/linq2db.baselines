@@ -9,7 +9,7 @@ SELECT
 			FROM
 				Child t1
 		)
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN true
+		ELSE false
 	END
 
