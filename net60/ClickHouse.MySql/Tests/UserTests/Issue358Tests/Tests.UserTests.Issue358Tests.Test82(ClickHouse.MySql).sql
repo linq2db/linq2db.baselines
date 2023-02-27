@@ -17,7 +17,7 @@ FROM
 WHERE
 	CASE
 		WHEN _.BigIntValue IN (toInt64(2))
-			THEN toInt32(1)
-		ELSE toInt32(0)
+			THEN toUInt8(1)
+		ELSE toUInt8(0)
 	END = true
 
