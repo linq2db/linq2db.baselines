@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p_1 Int32
+SET     @p_1 = 1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @p_1 IN (
 			SELECT
-				*
+				`c_1`.`ParentID`
 			FROM
 				`Child` `c_1`
-			WHERE
-				`c_1`.`ParentID` = @ParentID
 		)
 			THEN 1
 		ELSE 0
@@ -19,18 +17,16 @@ SELECT
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @ParentID Int32
-SET     @ParentID = -1
+DECLARE @p_1 Int32
+SET     @p_1 = -1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @p_1 IN (
 			SELECT
-				*
+				`c_1`.`ParentID`
 			FROM
 				`Child` `c_1`
-			WHERE
-				`c_1`.`ParentID` = @ParentID
 		)
 			THEN 1
 		ELSE 0

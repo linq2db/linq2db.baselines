@@ -15,5 +15,9 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	_.BigIntValue IN (toInt64(2))
+	CASE
+		WHEN _.BigIntValue IN (toInt64(2))
+			THEN toUInt8(1)
+		ELSE toUInt8(0)
+	END = true
 

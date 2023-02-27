@@ -17,13 +17,13 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	EXISTS(
+	t1."ID" IN (
 		SELECT
-			*
+			t2."ID"
 		FROM
 			"LinqDataTypes" t2
 		WHERE
-			t2."ID" = :id AND t2."ID" = t1."ID"
+			t2."ID" = :id
 	)
 
 BeforeExecute
@@ -45,12 +45,12 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	EXISTS(
+	t1."ID" IN (
 		SELECT
-			*
+			t2."ID"
 		FROM
 			"LinqDataTypes" t2
 		WHERE
-			t2."ID" = :id AND t2."ID" = t1."ID"
+			t2."ID" = :id
 	)
 

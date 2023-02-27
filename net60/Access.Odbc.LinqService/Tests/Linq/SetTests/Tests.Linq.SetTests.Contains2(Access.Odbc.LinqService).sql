@@ -2,13 +2,11 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Iif(EXISTS(
+	Iif([p].[ParentID] IN (
 		SELECT
-			*
+			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [p].[ParentID]
 	), True, False)
 FROM
 	[Parent] [p]

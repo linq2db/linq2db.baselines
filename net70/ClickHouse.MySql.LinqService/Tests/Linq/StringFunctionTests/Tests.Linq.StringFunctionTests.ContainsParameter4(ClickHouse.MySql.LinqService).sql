@@ -12,8 +12,8 @@ FROM
 		SELECT
 			CASE
 				WHEN position(p.FirstName, 'Jo') > toInt32(0)
-					THEN true
-				ELSE false
+					THEN toUInt8(1)
+				ELSE toUInt8(0)
 			END as Field1,
 			p.FirstName as FirstName,
 			p.PersonID as PersonID,

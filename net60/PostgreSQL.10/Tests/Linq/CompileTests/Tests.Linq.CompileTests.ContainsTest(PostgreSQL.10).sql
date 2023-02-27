@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN :p_1 IN (
 			SELECT
-				*
+				c_1."ParentID"
 			FROM
 				"Child" c_1
-			WHERE
-				c_1."ParentID" = :ParentID
 		)
 			THEN True
 		ELSE False
@@ -19,18 +17,16 @@ SELECT
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = -1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = -1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN :p_1 IN (
 			SELECT
-				*
+				c_1."ParentID"
 			FROM
 				"Child" c_1
-			WHERE
-				c_1."ParentID" = :ParentID
 		)
 			THEN True
 		ELSE False

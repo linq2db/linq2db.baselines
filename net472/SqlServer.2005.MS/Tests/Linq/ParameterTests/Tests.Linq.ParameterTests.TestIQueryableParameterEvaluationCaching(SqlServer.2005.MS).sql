@@ -12,13 +12,13 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = @paramCopy AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = @paramCopy
 	)
 
 BeforeExecute
@@ -35,13 +35,13 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = @paramCopy AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = @paramCopy
 	)
 
 BeforeExecute
@@ -58,13 +58,13 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = @paramCopy AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = @paramCopy
 	)
 
 BeforeExecute
@@ -81,13 +81,13 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = @paramCopy AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = @paramCopy
 	)
 
 BeforeExecute
@@ -104,12 +104,12 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	EXISTS(
+	[_].[PersonID] IN (
 		SELECT
-			*
+			[p].[PersonID]
 		FROM
 			[Person] [p]
 		WHERE
-			[p].[PersonID] = @paramCopy AND [p].[PersonID] = [_].[PersonID]
+			[p].[PersonID] = @paramCopy
 	)
 

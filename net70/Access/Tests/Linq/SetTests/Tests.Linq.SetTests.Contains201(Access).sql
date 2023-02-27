@@ -2,13 +2,11 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif(EXISTS(
+	Iif([p].[ParentID] - 1 IN (
 		SELECT
-			*
+			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [p].[ParentID] - 1
 	), True, False)
 FROM
 	[Parent] [p]
