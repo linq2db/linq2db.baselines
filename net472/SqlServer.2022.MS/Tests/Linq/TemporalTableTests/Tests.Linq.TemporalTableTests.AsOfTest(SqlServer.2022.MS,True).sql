@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	IIF(EXISTS(
@@ -30,7 +30,7 @@ BeforeExecute
 					WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.TemporalTestHistory))
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -48,7 +48,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Name2'
 DECLARE @ID Int -- Int32
@@ -64,7 +64,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Name3'
 DECLARE @ID Int -- Int32
@@ -80,7 +80,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[ID],
@@ -93,7 +93,7 @@ ORDER BY
 	[t1].[StartedOn]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[p].[ID],
@@ -101,5 +101,5 @@ SELECT
 	[p].[StartedOn],
 	[p].[EndedOn]
 FROM
-	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-02-28T04:58:35.685' [p]
+	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-02-28T04:49:45.912' [p]
 
