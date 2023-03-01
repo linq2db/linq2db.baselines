@@ -27,7 +27,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2017
 DECLARE @p_1 DateTime2
-SET     @p_1 = DATETIME2FROMPARTS(2023, 2, 28, 4, 33, 36, 1332335, 7)
+SET     @p_1 = DATETIME2FROMPARTS(2023, 3, 1, 17, 50, 50, 5371830, 7)
 DECLARE @n Int -- Int32
 SET     @n = 1
 
