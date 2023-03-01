@@ -101,5 +101,5 @@ SELECT
 	[p].[StartedOn],
 	[p].[EndedOn]
 FROM
-	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-03-01T17:50:50.802' [p]
+	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-03-01T18:37:36.855' [p]
 
