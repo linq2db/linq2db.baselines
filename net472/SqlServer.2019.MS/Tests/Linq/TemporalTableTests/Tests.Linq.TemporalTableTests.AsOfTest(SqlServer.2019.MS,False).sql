@@ -27,7 +27,7 @@ ORDER BY
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @p_1 DateTime2
-SET     @p_1 = DATETIME2FROMPARTS(2023, 2, 28, 4, 36, 56, 9770002, 7)
+SET     @p_1 = DATETIME2FROMPARTS(2023, 3, 1, 17, 52, 17, 3967290, 7)
 
 SELECT
 	[p].[ID],
