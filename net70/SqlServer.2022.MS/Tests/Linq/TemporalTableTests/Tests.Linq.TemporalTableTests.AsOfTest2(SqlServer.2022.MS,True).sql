@@ -33,7 +33,7 @@ SELECT
 	[p].[StartedOn],
 	[p].[EndedOn]
 FROM
-	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-03-01T17:59:07.445' [p]
+	[TemporalTest] FOR SYSTEM_TIME AS OF '2023-03-01T18:40:16.946' [p]
 WHERE
 	[p].[ID] = 1
 
