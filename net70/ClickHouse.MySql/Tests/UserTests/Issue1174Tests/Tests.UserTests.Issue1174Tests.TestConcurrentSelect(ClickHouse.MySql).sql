@@ -39,16 +39,6 @@ FROM
 LIMIT toInt32(1)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
-
-SELECT
-	t1.Id,
-	t1.Name
-FROM
-	User t1
-LIMIT toInt32(1)
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS User
