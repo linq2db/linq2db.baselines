@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS FirstOptimizerData
 	DataKey33 Int32,
 	ValueStr  Nullable(String),
 
-	 PRIMARY KEY (Key1, Key2)
+	PRIMARY KEY (Key1, Key2)
 )
 ENGINE = MergeTree()
 ORDER BY (Key1, Key2)
@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS SecondOptimizerData
 	DataKey33 Int32,
 	ValueStr  Nullable(String),
 
-	 PRIMARY KEY (Key1, Key2)
+	PRIMARY KEY (Key1, Key2)
 )
 ENGINE = MergeTree()
 ORDER BY (Key1, Key2)

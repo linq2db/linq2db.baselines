@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue913Test
 	InstrumentID  Int32,
 	TradingStatus Nullable(FixedString(1)),
 
-	 PRIMARY KEY (InstrumentID)
+	PRIMARY KEY (InstrumentID)
 )
 ENGINE = MergeTree()
 ORDER BY InstrumentID

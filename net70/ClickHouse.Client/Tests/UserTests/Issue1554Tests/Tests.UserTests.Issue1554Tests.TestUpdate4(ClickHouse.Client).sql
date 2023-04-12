@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Issue1554Table
 	ClaimedKeyType  String,
 	ClaimedKeyTypeN Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

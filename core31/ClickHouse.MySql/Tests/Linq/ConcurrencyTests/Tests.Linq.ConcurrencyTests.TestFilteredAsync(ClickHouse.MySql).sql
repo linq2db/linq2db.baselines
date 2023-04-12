@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS ConcurrencyFiltered
 	Stamp Int32,
 	Value Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

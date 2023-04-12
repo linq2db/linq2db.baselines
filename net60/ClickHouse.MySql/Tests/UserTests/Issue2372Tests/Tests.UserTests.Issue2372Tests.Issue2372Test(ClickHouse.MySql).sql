@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS InventoryResource
 	Id     UUID,
 	Status String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS SampleData
 	Value2 Int32,
 	Value3 Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

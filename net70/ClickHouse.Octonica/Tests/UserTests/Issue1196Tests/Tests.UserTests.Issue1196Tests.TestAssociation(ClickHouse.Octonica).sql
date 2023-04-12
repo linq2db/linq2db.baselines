@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS Assignments
 	TargetId    Nullable(Int32),
 	DateRevoke  Nullable(DateTime64(7)),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

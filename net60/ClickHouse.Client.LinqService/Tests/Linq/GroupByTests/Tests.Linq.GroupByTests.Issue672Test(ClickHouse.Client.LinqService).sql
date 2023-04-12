@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS Stone
 	Enabled      Nullable(Bool),
 	ImageFullUrl Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

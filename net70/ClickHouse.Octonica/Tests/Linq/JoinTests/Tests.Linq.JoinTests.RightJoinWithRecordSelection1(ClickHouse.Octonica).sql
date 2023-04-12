@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Fact
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS Tag
 	FactId Int32,
 	Name   String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

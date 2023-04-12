@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue1279Table
 	Id      Int32,
 	CharFld FixedString(1),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

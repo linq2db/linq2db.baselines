@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS UpdateSetTest
 	Value5 Nullable(Int32),
 	Value6 Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

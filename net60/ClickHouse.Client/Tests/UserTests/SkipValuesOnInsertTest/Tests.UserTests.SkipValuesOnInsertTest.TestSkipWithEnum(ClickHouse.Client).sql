@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS PR_1598_Insert_Enum_Table
 	Age    Nullable(Int32),
 	Gender Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

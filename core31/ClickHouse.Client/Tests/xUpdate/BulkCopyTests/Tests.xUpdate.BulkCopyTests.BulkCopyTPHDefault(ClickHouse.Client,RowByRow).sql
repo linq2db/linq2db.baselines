@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS TPHTableDefault
 	Value2        Nullable(String),
 	Value3        Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

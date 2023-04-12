@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Table_3056
 	Name        Nullable(String),
 	Description Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

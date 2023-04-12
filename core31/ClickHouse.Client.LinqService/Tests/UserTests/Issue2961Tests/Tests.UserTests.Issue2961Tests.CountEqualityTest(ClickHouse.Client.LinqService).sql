@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Condos
 	Id         Int32,
 	LocationId Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS CategoryCondos
 	CategoryId Int32,
 	CondoId    Int32,
 
-	 PRIMARY KEY (CategoryId, CondoId)
+	PRIMARY KEY (CategoryId, CondoId)
 )
 ENGINE = MergeTree()
 ORDER BY (CategoryId, CondoId)
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS CondoTags
 	CondoId Int32,
 	TagId   Int32,
 
-	 PRIMARY KEY (CondoId, TagId)
+	PRIMARY KEY (CondoId, TagId)
 )
 ENGINE = MergeTree()
 ORDER BY (CondoId, TagId)
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS Locations
 	Id           Int32,
 	LocationName String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

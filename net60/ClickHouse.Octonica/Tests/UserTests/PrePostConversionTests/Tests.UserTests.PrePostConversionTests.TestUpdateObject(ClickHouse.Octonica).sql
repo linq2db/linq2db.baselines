@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS ValuesTable
 	SomeValue1 Int32,
 	SomeValue2 Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

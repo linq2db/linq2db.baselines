@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS R
 	MetadataVersion Int32,
 	DictionaryKey   Int32,
 
-	 PRIMARY KEY (MetadataVersion)
+	PRIMARY KEY (MetadataVersion)
 )
 ENGINE = MergeTree()
 ORDER BY MetadataVersion

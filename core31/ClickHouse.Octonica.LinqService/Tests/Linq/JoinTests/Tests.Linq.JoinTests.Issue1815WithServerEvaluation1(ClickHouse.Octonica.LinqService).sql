@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS StLink
 	InMaxQuantity Nullable(Float64),
 	InMinQuantity Nullable(Float64),
 
-	 PRIMARY KEY (InId)
+	PRIMARY KEY (InId)
 )
 ENGINE = MergeTree()
 ORDER BY InId
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS EdtLink
 	InMaxQuantity Nullable(Float64),
 	InMinQuantity Nullable(Float64),
 
-	 PRIMARY KEY (InId)
+	PRIMARY KEY (InId)
 )
 ENGINE = MergeTree()
 ORDER BY InId

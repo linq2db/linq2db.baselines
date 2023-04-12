@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue1403Tests_2
 	event_id          Int32,
 	event_description String,
 
-	 PRIMARY KEY (event_id)
+	PRIMARY KEY (event_id)
 )
 ENGINE = MergeTree()
 ORDER BY event_id

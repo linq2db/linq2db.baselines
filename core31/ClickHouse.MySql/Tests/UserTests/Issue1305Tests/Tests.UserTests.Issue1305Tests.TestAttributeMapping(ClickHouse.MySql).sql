@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS ColumnOrderTest
 	Audit1ID       Int32,
 	Audit2ID       Int32,
 
-	 PRIMARY KEY (RecordID)
+	PRIMARY KEY (RecordID)
 )
 ENGINE = MergeTree()
 ORDER BY RecordID

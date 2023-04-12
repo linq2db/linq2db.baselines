@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Categories
 	CategoryName String,
 	Description  Nullable(String),
 
-	 PRIMARY KEY (CategoryID)
+	PRIMARY KEY (CategoryID)
 )
 ENGINE = MergeTree()
 ORDER BY CategoryID
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS Products
 	CategoryID      Nullable(Int32),
 	QuantityPerUnit Nullable(String),
 
-	 PRIMARY KEY (ProductID)
+	PRIMARY KEY (ProductID)
 )
 ENGINE = MergeTree()
 ORDER BY ProductID

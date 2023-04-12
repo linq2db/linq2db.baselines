@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS Attachment
 	FileSize      Int64,
 	ContentType   Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

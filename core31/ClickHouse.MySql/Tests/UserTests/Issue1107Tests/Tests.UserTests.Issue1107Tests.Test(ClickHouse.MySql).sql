@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue1107TB
 	Id       Int32,
 	TestDate DateTime64(7),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

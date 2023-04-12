@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue3791Table
 	Id      Int32,
 	OtherId Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Issue3791GuidTable
 (
 	Id UUID,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

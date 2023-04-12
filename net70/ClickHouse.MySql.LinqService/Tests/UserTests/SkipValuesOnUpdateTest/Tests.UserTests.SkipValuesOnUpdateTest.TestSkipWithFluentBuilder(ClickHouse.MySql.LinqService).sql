@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS PR_1598_Update_Fluent_Table
 	Name Nullable(String),
 	Age  Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

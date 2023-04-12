@@ -10,7 +10,7 @@ CREATE TABLE Test1585
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Test3799Item
 	ParentId Nullable(Int32),
 	Name     String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

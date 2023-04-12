@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS UserIssue3128
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS UserDetailsIssue3128
 	UserId Int32,
 	Age    Int32,
 
-	 PRIMARY KEY (UserId)
+	PRIMARY KEY (UserId)
 )
 ENGINE = MergeTree()
 ORDER BY UserId

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS WhereCases
 	BoolValue         Bool,
 	NullableBoolValue Nullable(Bool),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

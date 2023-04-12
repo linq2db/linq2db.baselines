@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS Attachment
 	Status      Int32,
 	CreateTime  DateTime64(7),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS BranchInfo
 	BranchIsShow     Int32,
 	BranchType       Int32,
 
-	 PRIMARY KEY (BranchId)
+	PRIMARY KEY (BranchId)
 )
 ENGINE = MergeTree()
 ORDER BY BranchId
