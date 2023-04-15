@@ -7,7 +7,8 @@ CREATE TEMPORARY TABLE TableWithPrimaryKey2
 
 	 PRIMARY KEY (Key)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Key
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
