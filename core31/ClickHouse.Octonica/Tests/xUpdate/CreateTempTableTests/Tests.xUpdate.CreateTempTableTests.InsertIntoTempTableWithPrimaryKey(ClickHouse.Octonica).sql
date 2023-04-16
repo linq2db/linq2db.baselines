@@ -7,7 +7,8 @@ CREATE TEMPORARY TABLE TableWithPrimaryKey2
 
 	 PRIMARY KEY (Key)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Key
 
 BeforeExecute
 INSERT INTO TableWithPrimaryKey2(Key) VALUES
