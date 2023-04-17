@@ -23,7 +23,7 @@ RETURNING
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @UserId Int64
-SET     @UserId = 2
+SET     @UserId = 1
 DECLARE @ContractNo Int64
 SET     @ContractNo = 1
 DECLARE @Name Varchar2(8) -- String
