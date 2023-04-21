@@ -38,7 +38,7 @@ FOR UPDATE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 DECLARE @p DateTime
-SET     @p = '2023-04-12 03:11:48.313'
+SET     @p = '2023-04-21 09:19:29.844'
 
 INSERT INTO `ForUpdateTestTable`
 (
