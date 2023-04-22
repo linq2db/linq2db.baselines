@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @ContractSequence Int64
 SET     @ContractSequence = 0
 DECLARE @Id Int64
-SET     @Id = 3
+SET     @Id = 1
 
 INSERT INTO "t_test_user_contract"
 (

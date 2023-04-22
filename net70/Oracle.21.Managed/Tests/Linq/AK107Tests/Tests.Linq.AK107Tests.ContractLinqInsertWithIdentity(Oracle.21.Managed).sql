@@ -23,7 +23,7 @@ RETURNING
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int64
-SET     @Id = 4
+SET     @Id = 1
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
