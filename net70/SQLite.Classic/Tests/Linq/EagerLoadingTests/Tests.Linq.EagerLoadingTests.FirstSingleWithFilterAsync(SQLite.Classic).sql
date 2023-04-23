@@ -136,7 +136,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-DisposeTransaction
+DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
@@ -182,7 +182,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-DisposeTransaction
+DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
@@ -228,7 +228,7 @@ WHERE
 LIMIT @take
 
 BeforeExecute
-DisposeTransaction
+DisposeTransactionAsync
 BeforeExecute
 -- SQLite.Classic SQLite
 
