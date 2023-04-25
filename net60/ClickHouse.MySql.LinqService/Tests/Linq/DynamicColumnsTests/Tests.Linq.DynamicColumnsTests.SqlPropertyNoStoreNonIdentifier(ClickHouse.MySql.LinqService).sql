@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS DynamicTable
 	`Not Identifier` Int32,
 	`Some Value`     Int32,
 
-	 PRIMARY KEY (ID)
+	PRIMARY KEY (ID)
 )
 ENGINE = MergeTree()
 ORDER BY ID

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Order
 	OrderType Int32,
 	OrderName Nullable(String),
 
-	 PRIMARY KEY (OrderId)
+	PRIMARY KEY (OrderId)
 )
 ENGINE = MergeTree()
 ORDER BY OrderId
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS OrderDetail
 	Title         Nullable(String),
 	OrderId       Int32,
 
-	 PRIMARY KEY (OrderDetailId)
+	PRIMARY KEY (OrderDetailId)
 )
 ENGINE = MergeTree()
 ORDER BY OrderDetailId

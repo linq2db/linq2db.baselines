@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS stVersions
 	inId     Int32,
 	inIdMain Int32,
 
-	 PRIMARY KEY (inId)
+	PRIMARY KEY (inId)
 )
 ENGINE = MergeTree()
 ORDER BY inId
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS rlStatesTypesAndUserGroups
 	inIdState Int32,
 	inIdType  Int32,
 
-	 PRIMARY KEY (inIdState, inIdType)
+	PRIMARY KEY (inIdState, inIdType)
 )
 ENGINE = MergeTree()
 ORDER BY (inIdState, inIdType)
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS stMain
 	inId     Int32,
 	inIdType Int32,
 
-	 PRIMARY KEY (inId)
+	PRIMARY KEY (inId)
 )
 ENGINE = MergeTree()
 ORDER BY inId

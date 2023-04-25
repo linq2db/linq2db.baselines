@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS MasterClass
 	Value      Nullable(String),
 	ByteValues Nullable(String),
 
-	 PRIMARY KEY (Id1, Id2)
+	PRIMARY KEY (Id1, Id2)
 )
 ENGINE = MergeTree()
 ORDER BY (Id1, Id2)
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS DetailClass
 	MasterId    Nullable(Int32),
 	DetailValue Nullable(String),
 
-	 PRIMARY KEY (DetailId)
+	PRIMARY KEY (DetailId)
 )
 ENGINE = MergeTree()
 ORDER BY DetailId

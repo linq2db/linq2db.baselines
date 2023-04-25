@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS T1
 	CreateDate           DateTime64(7),
 	SourceInstrumentCode Nullable(String),
 
-	 PRIMARY KEY (InstrumentId)
+	PRIMARY KEY (InstrumentId)
 )
 ENGINE = MergeTree()
 ORDER BY InstrumentId

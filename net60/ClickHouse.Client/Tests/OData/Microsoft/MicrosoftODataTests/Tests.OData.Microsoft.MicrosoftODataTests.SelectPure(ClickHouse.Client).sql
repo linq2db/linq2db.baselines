@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS odata_person
 	YearsExperience Int32,
 	Title           String,
 
-	 PRIMARY KEY (Name)
+	PRIMARY KEY (Name)
 )
 ENGINE = MergeTree()
 ORDER BY Name

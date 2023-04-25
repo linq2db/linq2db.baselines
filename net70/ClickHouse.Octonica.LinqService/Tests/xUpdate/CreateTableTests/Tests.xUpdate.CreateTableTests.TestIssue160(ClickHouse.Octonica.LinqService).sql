@@ -6,7 +6,7 @@ CREATE TABLE aa
 	bb Int32,
 	cc Nullable(String),
 
-	 PRIMARY KEY (bb)
+	PRIMARY KEY (bb)
 )
 ENGINE = MergeTree()
 ORDER BY bb

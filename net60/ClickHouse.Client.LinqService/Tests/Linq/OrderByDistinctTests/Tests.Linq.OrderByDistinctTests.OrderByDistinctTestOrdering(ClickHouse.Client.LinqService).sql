@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS OrderByDistinctData
 	OrderData1    Int32,
 	OrderData2    Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

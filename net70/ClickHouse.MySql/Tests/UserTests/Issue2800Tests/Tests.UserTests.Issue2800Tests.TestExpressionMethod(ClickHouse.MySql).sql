@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Car
 	Id   Int32,
 	Name Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

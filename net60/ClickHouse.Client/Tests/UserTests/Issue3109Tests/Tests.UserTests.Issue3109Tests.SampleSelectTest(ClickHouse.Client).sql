@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Left
 	LeftId   Int32,
 	LeftData Nullable(String),
 
-	 PRIMARY KEY (LeftId)
+	PRIMARY KEY (LeftId)
 )
 ENGINE = MergeTree()
 ORDER BY LeftId
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS Right
 	RightId   String,
 	RightData Nullable(String),
 
-	 PRIMARY KEY (RightId)
+	PRIMARY KEY (RightId)
 )
 ENGINE = MergeTree()
 ORDER BY RightId
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS LeftRight
 	LeftId  Int32,
 	RightId String,
 
-	 PRIMARY KEY (LeftId, RightId)
+	PRIMARY KEY (LeftId, RightId)
 )
 ENGINE = MergeTree()
 ORDER BY (LeftId, RightId)

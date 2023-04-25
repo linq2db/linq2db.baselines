@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS SuperClass
 	Id    Int32,
 	Value Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS Subclass1
 	ParentId Nullable(Int32),
 	Value    Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS Subclass2
 	ParentId Nullable(Int32),
 	Value    Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS stLinks
 	dtSynchDate   Nullable(DateTime64(7)),
 	stGUID        String,
 
-	 PRIMARY KEY (inId)
+	PRIMARY KEY (inId)
 )
 ENGINE = MergeTree()
 ORDER BY inId
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS stVersions
 	inId     Int32,
 	inIdMain Int32,
 
-	 PRIMARY KEY (inId)
+	PRIMARY KEY (inId)
 )
 ENGINE = MergeTree()
 ORDER BY inId

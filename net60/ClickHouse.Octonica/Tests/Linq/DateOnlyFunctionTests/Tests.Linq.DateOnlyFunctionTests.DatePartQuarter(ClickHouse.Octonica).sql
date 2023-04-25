@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Transactions
 	TransactionId   Int32,
 	TransactionDate Date32,
 
-	 PRIMARY KEY (TransactionId)
+	PRIMARY KEY (TransactionId)
 )
 ENGINE = MergeTree()
 ORDER BY TransactionId

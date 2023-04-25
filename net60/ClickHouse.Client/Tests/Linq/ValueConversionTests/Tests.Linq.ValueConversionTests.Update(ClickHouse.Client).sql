@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS ValueConversion
 	AnotherBoolValue        String,
 	DateTimeNullable        Nullable(DateTime64(7)),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

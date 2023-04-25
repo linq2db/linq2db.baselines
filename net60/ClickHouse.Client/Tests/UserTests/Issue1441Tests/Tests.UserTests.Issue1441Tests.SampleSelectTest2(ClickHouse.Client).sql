@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Authors
 	Id   Int32,
 	Name String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Books
 	AuthorId Int32,
 	Title    String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

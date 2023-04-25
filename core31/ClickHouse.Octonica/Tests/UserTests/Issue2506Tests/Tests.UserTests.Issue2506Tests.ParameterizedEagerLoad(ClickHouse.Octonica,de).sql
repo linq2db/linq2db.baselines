@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Item
 	Id   Int32,
 	Name String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS ItemText
 	Lang   String,
 	Text   String,
 
-	 PRIMARY KEY (ItemId, Lang)
+	PRIMARY KEY (ItemId, Lang)
 )
 ENGINE = MergeTree()
 ORDER BY (ItemId, Lang)
