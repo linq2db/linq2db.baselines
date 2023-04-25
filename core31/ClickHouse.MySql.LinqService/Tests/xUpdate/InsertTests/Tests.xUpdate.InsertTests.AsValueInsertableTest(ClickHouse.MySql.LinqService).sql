@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS TestInsertOrReplaceTable
 	LastName   Nullable(String),
 	MiddleName Nullable(String),
 
-	 PRIMARY KEY (ID)
+	PRIMARY KEY (ID)
 )
 ENGINE = MergeTree()
 ORDER BY ID

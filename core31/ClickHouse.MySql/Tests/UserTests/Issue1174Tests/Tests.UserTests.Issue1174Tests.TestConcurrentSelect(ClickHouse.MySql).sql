@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS User
 	Id   UUID,
 	Name Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

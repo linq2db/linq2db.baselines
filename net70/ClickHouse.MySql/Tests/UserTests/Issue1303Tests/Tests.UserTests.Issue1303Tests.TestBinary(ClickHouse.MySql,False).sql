@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Issue1303
 	Array  Nullable(String),
 	Binary Nullable(String),
 
-	 PRIMARY KEY (ID)
+	PRIMARY KEY (ID)
 )
 ENGINE = MergeTree()
 ORDER BY ID

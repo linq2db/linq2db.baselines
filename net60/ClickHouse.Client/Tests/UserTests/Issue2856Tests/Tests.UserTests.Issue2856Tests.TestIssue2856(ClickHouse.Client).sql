@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS GlobalTaskDTO
 	RPSourceID      Nullable(UUID),
 	RPDestinationID Nullable(UUID),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

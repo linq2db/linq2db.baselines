@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS WhereWithString
 	Id          Int32,
 	StringValue Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Emails
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS EmailAttachment
 	EmailId  Int32,
 	FileName String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

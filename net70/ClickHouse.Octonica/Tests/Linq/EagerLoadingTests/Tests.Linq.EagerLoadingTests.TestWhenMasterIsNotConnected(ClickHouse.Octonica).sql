@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS DetailClass
 	MasterId    Nullable(Int32),
 	DetailValue Nullable(String),
 
-	 PRIMARY KEY (DetailId)
+	PRIMARY KEY (DetailId)
 )
 ENGINE = MergeTree()
 ORDER BY DetailId

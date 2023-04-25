@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS Issue1096TaskStage
 	TaskId Int32,
 	Actual Bool,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

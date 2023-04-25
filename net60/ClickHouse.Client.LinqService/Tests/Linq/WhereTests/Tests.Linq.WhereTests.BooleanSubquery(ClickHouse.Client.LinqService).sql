@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS WhereWithBool
 	Id        Int32,
 	BoolValue Bool,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

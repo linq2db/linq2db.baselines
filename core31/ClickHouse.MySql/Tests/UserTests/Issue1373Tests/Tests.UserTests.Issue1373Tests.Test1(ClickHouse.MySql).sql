@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue1373Tests
 	Id     Int32,
 	Field1 Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

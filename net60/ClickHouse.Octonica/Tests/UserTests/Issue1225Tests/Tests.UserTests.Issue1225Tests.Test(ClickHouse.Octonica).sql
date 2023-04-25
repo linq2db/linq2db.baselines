@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Task
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS TaskStage
 	TaskId Int32,
 	Actual Bool,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

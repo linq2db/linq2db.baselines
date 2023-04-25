@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS xxPerson
 	MiddleName Nullable(String),
 	Gender     FixedString(1),
 
-	 PRIMARY KEY (PersonID)
+	PRIMARY KEY (PersonID)
 )
 ENGINE = MergeTree()
 ORDER BY PersonID

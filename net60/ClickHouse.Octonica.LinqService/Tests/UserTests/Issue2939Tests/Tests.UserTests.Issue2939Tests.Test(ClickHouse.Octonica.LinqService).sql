@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Adsl
 	Id       Int32,
 	IdClient Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Client
 (
 	Id Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

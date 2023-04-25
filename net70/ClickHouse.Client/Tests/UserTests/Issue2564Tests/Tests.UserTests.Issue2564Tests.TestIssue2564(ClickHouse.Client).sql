@@ -16,7 +16,7 @@ CREATE TABLE Issue2564Table
 	TranslatedMessageGroup Nullable(String),
 	TranslatedMessage1     Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

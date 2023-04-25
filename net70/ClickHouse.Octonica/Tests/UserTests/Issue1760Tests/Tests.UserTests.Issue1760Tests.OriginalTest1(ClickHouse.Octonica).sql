@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS table1
 	commonTableId Int32,
 	c_tb1l_Id     Nullable(Int32),
 
-	 PRIMARY KEY (id)
+	PRIMARY KEY (id)
 )
 ENGINE = MergeTree()
 ORDER BY id
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS table2
 	textCol Nullable(String),
 	col3    Nullable(Int32),
 
-	 PRIMARY KEY (id)
+	PRIMARY KEY (id)
 )
 ENGINE = MergeTree()
 ORDER BY id
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS table3
 	id  Int32,
 	col Nullable(Int32),
 
-	 PRIMARY KEY (id)
+	PRIMARY KEY (id)
 )
 ENGINE = MergeTree()
 ORDER BY id

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Manufacturer
 	Name           Nullable(String),
 	CountryCode    Nullable(String),
 
-	 PRIMARY KEY (ManufacturerId)
+	PRIMARY KEY (ManufacturerId)
 )
 ENGINE = MergeTree()
 ORDER BY ManufacturerId
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Country
 	Code String,
 	Name Nullable(String),
 
-	 PRIMARY KEY (Code)
+	PRIMARY KEY (Code)
 )
 ENGINE = MergeTree()
 ORDER BY Code

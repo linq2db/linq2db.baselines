@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS activity649
 	personid   Int32,
 	added      DateTime64(7),
 
-	 PRIMARY KEY (activityid)
+	PRIMARY KEY (activityid)
 )
 ENGINE = MergeTree()
 ORDER BY activityid
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS person649
 	personid   Int32,
 	personname String,
 
-	 PRIMARY KEY (personid)
+	PRIMARY KEY (personid)
 )
 ENGINE = MergeTree()
 ORDER BY personid

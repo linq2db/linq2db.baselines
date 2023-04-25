@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Topic
 	Title Nullable(String),
 	Text  Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS Message
 	TopicId Int32,
 	Text    Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

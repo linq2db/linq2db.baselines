@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS BaseTable
 	Id    Int32,
 	Value Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

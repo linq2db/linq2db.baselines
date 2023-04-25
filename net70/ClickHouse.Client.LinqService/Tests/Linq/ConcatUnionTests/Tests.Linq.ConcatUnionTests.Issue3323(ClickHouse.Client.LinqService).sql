@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS Issue3323Table
 	LastName Nullable(String),
 	Text     String,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

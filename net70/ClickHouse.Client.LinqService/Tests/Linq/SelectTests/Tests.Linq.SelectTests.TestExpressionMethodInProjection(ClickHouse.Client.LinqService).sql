@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS MainEntityObject
 	Id        Int32,
 	MainValue Nullable(String),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

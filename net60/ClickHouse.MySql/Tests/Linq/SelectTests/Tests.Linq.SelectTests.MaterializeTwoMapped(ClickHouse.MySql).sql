@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS test_mapping_column_2_prop
 	id          Int64,
 	test_number Int64,
 
-	 PRIMARY KEY (id)
+	PRIMARY KEY (id)
 )
 ENGINE = MergeTree()
 ORDER BY id

@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS ManyFields
 	Field4 Nullable(Int32),
 	Field5 Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

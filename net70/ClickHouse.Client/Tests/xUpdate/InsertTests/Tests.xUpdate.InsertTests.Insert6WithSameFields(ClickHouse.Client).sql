@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS InsertTable
 	CreatedOn  Nullable(DateTime64(7)),
 	ModifiedOn Nullable(DateTime64(7)),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

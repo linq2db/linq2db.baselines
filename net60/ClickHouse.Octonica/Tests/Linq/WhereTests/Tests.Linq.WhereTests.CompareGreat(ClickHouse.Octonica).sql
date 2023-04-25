@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS WhereCompareData
 	Nullable      Nullable(Int32),
 	OtherNullable Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

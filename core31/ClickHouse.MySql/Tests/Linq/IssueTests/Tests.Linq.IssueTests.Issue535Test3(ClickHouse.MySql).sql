@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS CustomerBase
 	ContactEmail Nullable(String),
 	Enabled      Nullable(Bool),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Issue1189Customer
 	ID   Int32,
 	NAME String,
 
-	 PRIMARY KEY (ID)
+	PRIMARY KEY (ID)
 )
 ENGINE = MergeTree()
 ORDER BY ID

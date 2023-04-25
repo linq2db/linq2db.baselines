@@ -5,7 +5,7 @@ CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
 	Key Int32,
 
-	 PRIMARY KEY (Key)
+	PRIMARY KEY (Key)
 )
 ENGINE = MergeTree()
 ORDER BY Key

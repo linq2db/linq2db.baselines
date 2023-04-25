@@ -13,7 +13,7 @@ CREATE TABLE TestTable
 	Field2    Nullable(String),
 	CreatedOn Nullable(DateTime64(7)),
 
-	 PRIMARY KEY (ID)
+	PRIMARY KEY (ID)
 )
 ENGINE = MergeTree()
 ORDER BY ID

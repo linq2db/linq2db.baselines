@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS TableStatus_3014
 	StatusId   Int32,
 	StatusName String,
 
-	 PRIMARY KEY (StatusId)
+	PRIMARY KEY (StatusId)
 )
 ENGINE = MergeTree()
 ORDER BY StatusId

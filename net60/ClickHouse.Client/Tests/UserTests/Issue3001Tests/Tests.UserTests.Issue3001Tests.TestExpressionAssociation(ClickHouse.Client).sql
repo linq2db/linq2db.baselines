@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS House3001
 	Levels Int32,
 	Id     Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS Person3001
 	HouseId Int32,
 	Id      Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS Pet3001
 	Id                Int32,
 	PersonId          Int32,
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id

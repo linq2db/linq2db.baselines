@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS SampleClass
 	KeyValue1 String,
 	Value1    Nullable(String),
 
-	 PRIMARY KEY (Id, KeyValue1)
+	PRIMARY KEY (Id, KeyValue1)
 )
 ENGINE = MergeTree()
 ORDER BY (Id, KeyValue1)
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS SampleClass
 	KeyValue2 String,
 	Value2    Nullable(String),
 
-	 PRIMARY KEY (Id, KeyValue2)
+	PRIMARY KEY (Id, KeyValue2)
 )
 ENGINE = MergeTree()
 ORDER BY (Id, KeyValue2)
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS SampleClass
 	KeyValueF1 String,
 	ValueF1    Nullable(String),
 
-	 PRIMARY KEY (Id, KeyValueF1)
+	PRIMARY KEY (Id, KeyValueF1)
 )
 ENGINE = MergeTree()
 ORDER BY (Id, KeyValueF1)
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS SampleClass
 	KeyValueF2 String,
 	ValueF2    Nullable(String),
 
-	 PRIMARY KEY (Id, KeyValueF2)
+	PRIMARY KEY (Id, KeyValueF2)
 )
 ENGINE = MergeTree()
 ORDER BY (Id, KeyValueF2)

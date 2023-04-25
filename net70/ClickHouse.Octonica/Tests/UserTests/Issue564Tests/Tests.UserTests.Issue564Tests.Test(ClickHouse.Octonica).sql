@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS Parent564
 	StringValue Nullable(String),
 	IntValue    Nullable(Int32),
 
-	 PRIMARY KEY (Id)
+	PRIMARY KEY (Id)
 )
 ENGINE = MergeTree()
 ORDER BY Id
