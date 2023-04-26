@@ -175,7 +175,7 @@ ORDER BY
 	[m_1].[Id2] DESC
 
 BeforeExecute
-DisposeTransaction
+DisposeTransactionAsync
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

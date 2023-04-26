@@ -144,7 +144,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 BeforeExecute
-DisposeTransaction
+DisposeTransactionAsync
 BeforeExecute
 -- SQLite.Classic SQLite
 
