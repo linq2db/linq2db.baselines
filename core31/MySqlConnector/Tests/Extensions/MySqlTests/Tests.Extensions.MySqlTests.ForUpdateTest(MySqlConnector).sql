@@ -38,7 +38,7 @@ FOR UPDATE
 BeforeExecute
 -- MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
-SET     @p = '2023-04-29 15:13:39.544'
+SET     @p = '2023-04-29 19:48:40.856'
 
 INSERT INTO `ForUpdateTestTable`
 (
