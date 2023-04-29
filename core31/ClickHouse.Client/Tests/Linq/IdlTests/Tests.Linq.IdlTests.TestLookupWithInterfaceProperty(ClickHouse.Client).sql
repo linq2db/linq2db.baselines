@@ -2,11 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	obj.PersonID,
 	obj.FirstName,
 	obj.LastName,
 	obj.MiddleName,
-	obj.Gender
+	obj.Gender,
+	obj.PersonID
 FROM
 	Person obj
 WHERE
