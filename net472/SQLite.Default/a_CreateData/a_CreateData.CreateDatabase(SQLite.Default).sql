@@ -454,13 +454,13 @@ BeforeExecute
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[Name],
+	[TypeDiscriminator]
 )
 VALUES
 (1,NULL,NULL),
-(2,1,NULL),
-(3,2,'InheritanceParent2')
+(2,NULL,1),
+(3,'InheritanceParent2',2)
 
 BeforeExecute
 -- SQLite.Default SQLite.MS SQLite
@@ -468,14 +468,14 @@ BeforeExecute
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
-	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name]
+	[Name],
+	[TypeDiscriminator]
 )
 VALUES
-(1,NULL,1,NULL),
-(2,1,2,NULL),
-(3,2,3,'InheritanceParent2')
+(1,1,NULL,NULL),
+(2,2,NULL,1),
+(3,3,'InheritanceParent2',2)
 
 BeforeExecute
 --  SQLite.Classic SQLite
