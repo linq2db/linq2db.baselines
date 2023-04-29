@@ -38,7 +38,7 @@ FOR UPDATE
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
-SET     @p = '2023-04-29 15:07:03.675'
+SET     @p = '2023-04-29 19:49:51.607'
 
 INSERT INTO `ForUpdateTestTable`
 (
