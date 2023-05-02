@@ -291,6 +291,23 @@ CREATE TABLE TestMerge2
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+DROP TABLE IF EXISTS ReplacingMergeTreeTable;
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+CREATE TABLE ReplacingMergeTreeTable
+(
+	ID UInt32,
+	TS DateTime
+)
+ENGINE = ReplacingMergeTree(TS)
+PARTITION BY toDate(TS)
+ORDER BY ID;
+
+BeforeExecute
 INSERT ASYNC BULK LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
 
 BeforeExecute

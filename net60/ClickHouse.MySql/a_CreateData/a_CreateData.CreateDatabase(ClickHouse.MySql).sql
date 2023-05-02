@@ -299,6 +299,23 @@ CREATE TABLE TestMerge2
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
+DROP TABLE IF EXISTS ReplacingMergeTreeTable;
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+CREATE TABLE ReplacingMergeTreeTable
+(
+	ID UInt32,
+	TS DateTime
+)
+ENGINE = ReplacingMergeTree(TS)
+PARTITION BY toDate(TS)
+ORDER BY ID;
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
 INSERT INTO LinqDataTypes
 (
 	ID,

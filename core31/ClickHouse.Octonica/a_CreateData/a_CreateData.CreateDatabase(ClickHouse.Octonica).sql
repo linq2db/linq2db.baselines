@@ -297,6 +297,23 @@ CREATE TABLE TestMerge2
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS ReplacingMergeTreeTable;
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+CREATE TABLE ReplacingMergeTreeTable
+(
+	ID UInt32,
+	TS DateTime
+)
+ENGINE = ReplacingMergeTree(TS)
+PARTITION BY toDate(TS)
+ORDER BY ID;
+
+BeforeExecute
 INSERT INTO LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES
 
 BeforeExecute
