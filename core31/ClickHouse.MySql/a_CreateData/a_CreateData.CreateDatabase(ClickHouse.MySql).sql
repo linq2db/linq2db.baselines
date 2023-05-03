@@ -409,13 +409,13 @@ BeforeExecute
 INSERT INTO InheritanceParent
 (
 	InheritanceParentId,
-	Name,
-	TypeDiscriminator
+	TypeDiscriminator,
+	Name
 )
 VALUES
 (toInt32(1),NULL,NULL),
-(toInt32(2),NULL,toInt32(1)),
-(toInt32(3),'InheritanceParent2',toInt32(2))
+(toInt32(2),toInt32(1),NULL),
+(toInt32(3),toInt32(2),'InheritanceParent2')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -423,12 +423,12 @@ BeforeExecute
 INSERT INTO InheritanceChild
 (
 	InheritanceChildId,
+	TypeDiscriminator,
 	InheritanceParentId,
-	Name,
-	TypeDiscriminator
+	Name
 )
 VALUES
-(toInt32(1),toInt32(1),NULL,NULL),
-(toInt32(2),toInt32(2),NULL,toInt32(1)),
-(toInt32(3),toInt32(3),'InheritanceParent2',toInt32(2))
+(toInt32(1),NULL,toInt32(1),NULL),
+(toInt32(2),toInt32(1),toInt32(2),NULL),
+(toInt32(3),toInt32(2),toInt32(3),'InheritanceParent2')
 
