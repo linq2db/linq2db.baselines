@@ -2080,16 +2080,16 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -2102,16 +2102,16 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -2124,16 +2124,16 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
-DECLARE @Name NVarChar(18) -- String
-SET     @Name = 'InheritanceParent2'
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
+DECLARE @Name NVarChar(18) -- String
+SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -2146,19 +2146,19 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 1
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
@@ -2172,19 +2172,19 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 2
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = 1
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
@@ -2198,19 +2198,19 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 3
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = 2
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = 2
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
@@ -4335,16 +4335,16 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -4357,16 +4357,16 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -4379,16 +4379,16 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
-DECLARE @Name NVarChar(18) -- String
-SET     @Name = 'InheritanceParent2'
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
+DECLARE @Name NVarChar(18) -- String
+SET     @Name = 'InheritanceParent2'
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[TypeDiscriminator],
+	[Name]
 )
 VALUES
 (
@@ -4401,19 +4401,19 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 1
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
@@ -4427,19 +4427,19 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 2
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = 1
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
@@ -4453,19 +4453,19 @@ BeforeExecute
 -- Access.Odbc.Data Access.Odbc AccessODBC
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 3
+DECLARE @TypeDiscriminator Int -- Int32
+SET     @TypeDiscriminator = 2
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
-DECLARE @TypeDiscriminator Int -- Int32
-SET     @TypeDiscriminator = 2
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
+	[TypeDiscriminator],
 	[InheritanceParentId],
-	[Name],
-	[TypeDiscriminator]
+	[Name]
 )
 VALUES
 (
