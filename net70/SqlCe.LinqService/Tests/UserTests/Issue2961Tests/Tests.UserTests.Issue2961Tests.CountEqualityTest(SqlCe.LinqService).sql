@@ -68,8 +68,8 @@ BeforeExecute
 SELECT
 	[c_1].[Id],
 	[c_1].[LocationId],
-	[t2].[CountCondoCategories],
-	[t1].[CountCondoTags],
+	[ccleft].[CountCondoCategories],
+	[ctleft].[CountCondoTags],
 	[l].[LocationName],
 	[l].[Id]
 FROM
@@ -77,22 +77,22 @@ FROM
 		INNER JOIN [Locations] [l] ON [c_1].[LocationId] = [l].[Id]
 		LEFT JOIN (
 			SELECT
-				[ctleft].[CondoId] as [subct],
+				[t1].[CondoId],
 				Count(*) as [CountCondoTags]
 			FROM
-				[CondoTags] [ctleft]
+				[CondoTags] [t1]
 			GROUP BY
-				[ctleft].[CondoId]
-		) [t1] ON [c_1].[Id] = [t1].[subct]
+				[t1].[CondoId]
+		) [ctleft] ON [c_1].[Id] = [ctleft].[CondoId]
 		LEFT JOIN (
 			SELECT
-				[ccleft].[CondoId] as [subcc],
+				[t2].[CondoId],
 				Count(*) as [CountCondoCategories]
 			FROM
-				[CategoryCondos] [ccleft]
+				[CategoryCondos] [t2]
 			GROUP BY
-				[ccleft].[CondoId]
-		) [t2] ON [c_1].[Id] = [t2].[subcc]
+				[t2].[CondoId]
+		) [ccleft] ON [c_1].[Id] = [ccleft].[CondoId]
 
 BeforeExecute
 -- SqlCe

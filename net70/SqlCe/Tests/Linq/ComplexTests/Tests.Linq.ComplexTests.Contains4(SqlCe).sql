@@ -19,12 +19,12 @@ FROM
 				[GrandChild] [gc]
 					INNER JOIN (
 						SELECT
-							Max([max_1].[GrandChildID]) as [c1]
+							Max([t1].[GrandChildID]) as [c1]
 						FROM
-							[GrandChild] [max_1]
+							[GrandChild] [t1]
 						GROUP BY
-							[max_1].[ChildID]
-					) [t1] ON ([gc].[GrandChildID] = [t1].[c1] OR [gc].[GrandChildID] IS NULL AND [t1].[c1] IS NULL)
+							[t1].[ChildID]
+					) [max_1] ON ([gc].[GrandChildID] = [max_1].[c1] OR [gc].[GrandChildID] IS NULL AND [max_1].[c1] IS NULL)
 		) [t2] ON [a_Parent].[ParentID] = [t2].[gc]
 WHERE
 	([t2].[gc] IS NULL AND [t2].[ChildID] IS NULL AND [t2].[GrandChildID] IS NULL OR ([t2].[GrandChildID] NOT IN (111, 222) OR [t2].[GrandChildID] IS NULL))
