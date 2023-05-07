@@ -4,8 +4,8 @@
 SELECT
 	[p1].[ParentID],
 	[p1].[Value1],
-	[t1].[ParentID],
-	[t1].[Sum1]
+	[o].[ParentID],
+	[o].[Sum1]
 FROM
 	[Parent] [p1]
 		LEFT JOIN (
@@ -23,5 +23,5 @@ FROM
 				)
 			GROUP BY
 				[p].[ParentID]
-		) [t1] ON [t1].[ParentID] = [p1].[ParentID]
+		) [o] ON [o].[ParentID] = [p1].[ParentID]
 
