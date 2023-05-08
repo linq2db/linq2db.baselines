@@ -11,7 +11,7 @@ IF (OBJECT_ID(N'[Transaction]', N'U') IS NULL)
 	CREATE TABLE [Transaction]
 	(
 		[InvestorId]    NVarChar(4000)     NULL,
-		[SecurityClass] NVarChar(4000)     NULL,
+		[SecurityClass] NVarChar(4000) NOT NULL,
 		[Units]         Int            NOT NULL
 	)
 
@@ -42,7 +42,7 @@ IF (OBJECT_ID(N'[InvestorPayment]', N'U') IS NULL)
 	CREATE TABLE [InvestorPayment]
 	(
 		[Id]         Int            NOT NULL,
-		[InvestorId] NVarChar(4000)     NULL,
+		[InvestorId] NVarChar(4000) NOT NULL,
 		[NetPayment] Int            NOT NULL
 	)
 
@@ -72,7 +72,7 @@ IF (OBJECT_ID(N'[PaymentEvent]', N'U') IS NULL)
 	(
 		[Id]            Int            NOT NULL,
 		[Description]   NVarChar(4000)     NULL,
-		[SecurityClass] NVarChar(4000)     NULL
+		[SecurityClass] NVarChar(4000) NOT NULL
 	)
 
 BeforeExecute
@@ -146,27 +146,27 @@ BeforeExecute
 
 SELECT
 	[ip].[InvestorId],
-	[b].[Units],
+	[t1].[Units],
 	Sum([ip].[NetPayment])
 FROM
 	[PaymentEvent] [pe]
 		INNER JOIN [InvestorPayment] [ip] ON [pe].[Id] = [ip].[Id]
-		INNER JOIN [InvestorPaymentDetail] [ipd] ON ([ip].[InvestorId] = [ipd].[InvestorId] OR [ip].[InvestorId] IS NULL AND [ipd].[InvestorId] IS NULL)
+		INNER JOIN [InvestorPaymentDetail] [ipd] ON [ip].[InvestorId] = [ipd].[InvestorId]
 		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [pe].[Id] = [pc].[EventId]
 		INNER JOIN (
 			SELECT
-				[t1].[InvestorId],
-				[t1].[SecurityClass],
-				Sum([t1].[Units]) as [Units]
+				[b].[InvestorId],
+				[b].[SecurityClass],
+				Sum([b].[Units]) as [Units]
 			FROM
-				[Transaction] [t1]
+				[Transaction] [b]
 			GROUP BY
-				[t1].[SecurityClass],
-				[t1].[InvestorId]
-		) [b] ON ([ip].[InvestorId] = [b].[InvestorId] OR [ip].[InvestorId] IS NULL AND [b].[InvestorId] IS NULL) AND ([pe].[SecurityClass] = [b].[SecurityClass] OR [pe].[SecurityClass] IS NULL AND [b].[SecurityClass] IS NULL)
+				[b].[SecurityClass],
+				[b].[InvestorId]
+		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [pe].[SecurityClass] = [t1].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
-	[b].[Units]
+	[t1].[Units]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
