@@ -263,6 +263,11 @@ SET     @output2 = 0
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
+EXEC('SELECT * FROM [TestDataContained].[TestSchema].[SchemaTableFunction](NULL)')
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
 [TestDataContained].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
@@ -550,6 +555,11 @@ DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataContained].[TestSchema].[SchemaTableFunction](NULL)')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
