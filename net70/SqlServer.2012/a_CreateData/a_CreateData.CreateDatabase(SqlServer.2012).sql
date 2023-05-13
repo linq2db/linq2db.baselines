@@ -40,6 +40,13 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TestProcedure'
 BeforeExecute
 -- SqlServer.2012
 
+IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'SchemaTableFunction' AND schema_id = SCHEMA_ID('TestSchema'))
+BEGIN DROP FUNCTION TestSchema.SchemaTableFunction
+END
+
+BeforeExecute
+-- SqlServer.2012
+
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL CONSTRAINT PK_InheritanceParent PRIMARY KEY CLUSTERED,
@@ -1361,6 +1368,17 @@ AS
 BEGIN
 	SELECT 1
 END
+
+BeforeExecute
+-- SqlServer.2012
+
+CREATE FUNCTION TestSchema.SchemaTableFunction(@id int)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT * FROM Parent WHERE ParentID = @id
+)
 
 BeforeExecute
 -- SqlServer.2012
