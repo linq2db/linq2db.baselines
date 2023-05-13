@@ -263,6 +263,11 @@ SET     @output2 = 0
 BeforeExecute
 -- SqlServer.2005
 
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2005
+
 [TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
