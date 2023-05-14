@@ -102,6 +102,7 @@ SELECT
 	[t2].[ID3],
 	[t2].[NAME3],
 	[t2].[NAME2],
+	[t2].[is_empty],
 	[t1_1].[NAME1]
 FROM
 	[TABLE1] [t1_1]
@@ -109,7 +110,8 @@ FROM
 			SELECT TOP (@take)
 				[t1].[ID3],
 				[t1].[NAME3],
-				[x_1].[NAME2]
+				[x_1].[NAME2],
+				1 as [is_empty]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
