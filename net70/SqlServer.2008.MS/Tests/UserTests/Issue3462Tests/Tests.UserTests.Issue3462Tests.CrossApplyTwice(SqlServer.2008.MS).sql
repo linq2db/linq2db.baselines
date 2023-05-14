@@ -105,14 +105,16 @@ SELECT
 	[t1_1].[NAME1],
 	[t2].[Name2],
 	[t2].[Name3],
-	[t2].[Value3]
+	[t2].[Value3],
+	[t2].[is_empty]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (@take)
 				[x_1].[NAME2] as [Name2],
 				[t1].[Name3],
-				[t1].[Value3]
+				[t1].[Value3],
+				1 as [is_empty]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
