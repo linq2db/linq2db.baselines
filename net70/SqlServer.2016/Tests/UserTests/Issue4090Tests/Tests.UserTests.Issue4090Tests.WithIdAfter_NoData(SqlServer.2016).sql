@@ -39,7 +39,7 @@ IF (OBJECT_ID(N'[TABLE2]', N'U') IS NULL)
 	CREATE TABLE [TABLE2]
 	(
 		[ID2]       Int            NOT NULL,
-		[PARENTID2] Int            NOT NULL,
+		[PARENTID2] Int                NULL,
 		[NAME2]     NVarChar(4000)     NULL,
 
 		CONSTRAINT [PK_TABLE2] PRIMARY KEY CLUSTERED ([ID2])
@@ -71,7 +71,7 @@ IF (OBJECT_ID(N'[TABLE3]', N'U') IS NULL)
 	CREATE TABLE [TABLE3]
 	(
 		[ID3]       Int            NOT NULL,
-		[PARENTID3] Int            NOT NULL,
+		[PARENTID3] Int                NULL,
 		[NAME3]     NVarChar(4000)     NULL,
 
 		CONSTRAINT [PK_TABLE3] PRIMARY KEY CLUSTERED ([ID3])
