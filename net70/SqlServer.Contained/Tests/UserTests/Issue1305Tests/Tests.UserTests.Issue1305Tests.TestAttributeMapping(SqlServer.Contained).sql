@@ -406,6 +406,11 @@ sp_describe_first_result_set
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataContained].[TestSchema].[SchemaTableFunction](NULL)')
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String

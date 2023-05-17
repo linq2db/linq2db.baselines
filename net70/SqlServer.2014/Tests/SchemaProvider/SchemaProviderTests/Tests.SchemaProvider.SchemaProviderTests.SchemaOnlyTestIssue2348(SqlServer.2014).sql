@@ -263,6 +263,11 @@ SET     @output2 = 0
 BeforeExecute
 -- SqlServer.2014
 
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2014
+
 [TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
@@ -550,6 +555,11 @@ DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
 
 BeforeExecute
 -- SqlServer.2014

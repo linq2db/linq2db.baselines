@@ -383,6 +383,11 @@ sp_describe_first_result_set
 
 BeforeExecute
 -- SqlServer.2022
+
+EXEC('SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)')
+
+BeforeExecute
+-- SqlServer.2022
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String

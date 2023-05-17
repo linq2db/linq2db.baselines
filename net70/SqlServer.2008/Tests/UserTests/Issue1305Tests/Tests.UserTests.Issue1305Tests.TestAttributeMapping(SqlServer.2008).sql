@@ -398,6 +398,11 @@ SET     @output2 = 0
 BeforeExecute
 -- SqlServer.2008
 
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2008
+
 [TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
