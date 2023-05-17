@@ -99,7 +99,8 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	[t2].[ID3_1]
+	[t2].[ID3_1],
+	[t2].[is_empty]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
@@ -112,7 +113,8 @@ FROM
 					WHERE
 						[x].[PARENTID3] = [x_1].[ID2]
 				) as [ID3],
-				[t1].[ID3] as [ID3_1]
+				[t1].[ID3] as [ID3_1],
+				1 as [is_empty]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (

@@ -99,12 +99,14 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	[t2].[ID3]
+	[t2].[ID3],
+	[t2].[is_empty]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (@take)
-				[t1].[ID3]
+				[t1].[ID3],
+				1 as [is_empty]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
