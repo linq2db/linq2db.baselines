@@ -5,8 +5,8 @@ DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Int -- Int32
+SET     @Value = 0
 
 INSERT INTO [AllTypes]
 (
@@ -14,7 +14,7 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 SELECT SCOPE_IDENTITY()

@@ -20,8 +20,8 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @TimeStamp_1 DateTime2
-SET     @TimeStamp_1 = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
+DECLARE @TimeStamp DateTime2
+SET     @TimeStamp = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 
 INSERT INTO [Issue1110TB]
 (
@@ -31,7 +31,7 @@ INSERT INTO [Issue1110TB]
 VALUES
 (
 	@Id,
-	@TimeStamp_1
+	@TimeStamp
 )
 
 BeforeExecute
