@@ -11,8 +11,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 1
+DECLARE @Value  -- Int32
+SET     @Value = 1
 
 INSERT INTO "Issue464"
 (
@@ -29,8 +29,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 2
+DECLARE @Value  -- Int32
+SET     @Value = 2
 
 INSERT INTO "Issue464"
 (
@@ -47,8 +47,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 3
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 
 INSERT INTO "Issue464"
 (

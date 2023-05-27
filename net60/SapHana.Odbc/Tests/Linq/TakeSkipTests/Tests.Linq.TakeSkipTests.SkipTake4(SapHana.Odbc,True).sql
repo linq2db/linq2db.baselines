@@ -2,10 +2,10 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 7
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 1
 DECLARE @skip  -- Int32
-SET     @skip = 2
+SET     @skip = 1
+DECLARE @skip_1  -- Int32
+SET     @skip_1 = 2
 
 SELECT
 	"t2"."ParentID",

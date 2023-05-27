@@ -276,8 +276,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @AttachmentId  -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position_1  -- Int32
-SET     @Position_1 = 1
+DECLARE @Position  -- Int32
+SET     @Position = 1
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc 1'
 
@@ -298,8 +298,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @AttachmentId  -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position_1  -- Int32
-SET     @Position_1 = 2
+DECLARE @Position  -- Int32
+SET     @Position = 2
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc 2'
 
@@ -320,8 +320,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @AttachmentId  -- Int32
 SET     @AttachmentId = 101
-DECLARE @Position_1  -- Int32
-SET     @Position_1 = 1
+DECLARE @Position  -- Int32
+SET     @Position = 1
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc x'
 

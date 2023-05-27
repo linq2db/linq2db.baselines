@@ -17,8 +17,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '1950-01-01'
+DECLARE @Column  -- Date
+SET     @Column = '1950-01-01'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column  -- Date
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = '2200-01-01'
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column  -- Date
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = '2200-01-01'
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '1950-01-01'
+DECLARE @Column  -- Date
+SET     @Column = '1950-01-01'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column  -- Date
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = '2200-01-01'
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '1950-01-01'
+DECLARE @Column  -- Date
+SET     @Column = '1950-01-01'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column  -- Date
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = '2200-01-01'
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '1950-01-01'
+DECLARE @Column  -- Date
+SET     @Column = '1950-01-01'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Date
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column  -- Date
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = '2200-01-01'
 

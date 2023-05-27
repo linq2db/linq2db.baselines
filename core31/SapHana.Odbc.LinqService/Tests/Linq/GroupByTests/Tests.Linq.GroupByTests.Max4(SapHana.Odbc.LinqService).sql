@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Date_1  -- DateTime
-SET     @Date_1 = '2020-02-29'
+DECLARE @Date  -- DateTime
+SET     @Date = '2020-02-29'
 
 SELECT
 	"t1_1"."MoneyValue"

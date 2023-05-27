@@ -11,8 +11,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 1
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 2
+DECLARE @Value  -- Int32
+SET     @Value = 2
 
 INSERT INTO "temp_table1"
 (
@@ -70,8 +70,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 2
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 
 INSERT INTO "temp_table1"
 (
@@ -88,8 +88,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 3
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 
 INSERT INTO "temp_table1"
 (
@@ -106,8 +106,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 4
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 5
+DECLARE @Value  -- Int32
+SET     @Value = 5
 
 INSERT INTO "temp_table1"
 (

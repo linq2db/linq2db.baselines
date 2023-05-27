@@ -13,8 +13,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
@@ -25,8 +25,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
@@ -37,8 +37,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
@@ -49,8 +49,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)

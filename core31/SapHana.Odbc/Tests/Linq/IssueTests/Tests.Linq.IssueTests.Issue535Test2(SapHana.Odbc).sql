@@ -19,10 +19,10 @@ CREATE COLUMN TABLE "CustomerBase"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @filter_2 NVarChar(6) -- String
-SET     @filter_2 = '%test%'
-DECLARE @filter_3 NVarChar(6) -- String
-SET     @filter_3 = '%test%'
+DECLARE @filter NVarChar(6) -- String
+SET     @filter = '%test%'
+DECLARE @filter_1 NVarChar(6) -- String
+SET     @filter_1 = '%test%'
 
 SELECT
 	"q"."Id",

@@ -2,10 +2,10 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id1  -- Int32
 SET     @id1 = 1
-DECLARE @id3  -- Int32
-SET     @id3 = 1
 DECLARE @id2  -- Int32
-SET     @id2 = 2
+SET     @id2 = 1
+DECLARE @id3  -- Int32
+SET     @id3 = 2
 
 SELECT
 	"left_1"."ParentID",

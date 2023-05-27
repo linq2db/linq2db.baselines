@@ -16,8 +16,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Boolean_1  -- Byte
-SET     @Boolean_1 = 0
+DECLARE @Boolean  -- Byte
+SET     @Boolean = 0
 
 INSERT INTO "CreateTableTypes"
 (
@@ -34,8 +34,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Boolean_1  -- Byte
-SET     @Boolean_1 = 1
+DECLARE @Boolean  -- Byte
+SET     @Boolean = 1
 
 INSERT INTO "CreateTableTypes"
 (

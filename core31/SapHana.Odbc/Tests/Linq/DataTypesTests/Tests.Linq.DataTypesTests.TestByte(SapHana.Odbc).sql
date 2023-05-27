@@ -17,8 +17,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
+DECLARE @Column  -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 255
+DECLARE @Column  -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 2
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 255
+DECLARE @Column  -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 2
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
+DECLARE @Column  -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 255
+DECLARE @Column  -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 2
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
+DECLARE @Column  -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 255
+DECLARE @Column  -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 2
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 1
+DECLARE @Column  -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Byte
-SET     @Column_1 = 255
+DECLARE @Column  -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
 SET     @ColumnNullable = 2
 

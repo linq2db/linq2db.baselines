@@ -18,8 +18,8 @@ CREATE COLUMN TABLE "Parent564"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Type_1 NVarChar(9) -- String
-SET     @Type_1 = 'Child564A'
+DECLARE @Type NVarChar(9) -- String
+SET     @Type = 'Child564A'
 DECLARE @StringValue NVarChar(9) -- String
 SET     @StringValue = 'SomeValue'
 
@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Type_1 NVarChar(9) -- String
-SET     @Type_1 = 'Child564B'
+DECLARE @Type NVarChar(9) -- String
+SET     @Type = 'Child564B'
 DECLARE @IntValue  -- Int32
 SET     @IntValue = 911
 

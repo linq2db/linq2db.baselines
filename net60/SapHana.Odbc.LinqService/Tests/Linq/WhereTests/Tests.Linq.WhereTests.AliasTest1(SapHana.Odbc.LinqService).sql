@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @user_1  -- Int32
-SET     @user_1 = 3
+DECLARE @user  -- Int32
+SET     @user = 3
 
 SELECT
 	"p"."ParentID",
