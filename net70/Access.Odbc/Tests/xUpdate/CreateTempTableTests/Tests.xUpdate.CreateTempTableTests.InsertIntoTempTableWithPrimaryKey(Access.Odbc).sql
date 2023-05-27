@@ -10,8 +10,8 @@ CREATE TABLE [TableWithPrimaryKey2]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Key_1 Int -- Int32
-SET     @Key_1 = 1
+DECLARE @Key Int -- Int32
+SET     @Key = 1
 
 INSERT INTO [TableWithPrimaryKey2]
 (

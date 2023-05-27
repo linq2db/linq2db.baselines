@@ -10,10 +10,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
-DECLARE @nameToCheck NVarChar(3) -- String
-SET     @nameToCheck = 'Joh'
+DECLARE @nameToCheck_2 NVarChar(4) -- String
+SET     @nameToCheck_2 = 'Joh%'
+DECLARE @nameToCheck_3 NVarChar(3) -- String
+SET     @nameToCheck_3 = 'Joh'
 
 SELECT
 	Count(*)
@@ -25,10 +25,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
-DECLARE @nameToCheck NVarChar(3) -- String
-SET     @nameToCheck = 'Joh'
+DECLARE @nameToCheck_2 NVarChar(4) -- String
+SET     @nameToCheck_2 = 'Joh%'
+DECLARE @nameToCheck_3 NVarChar(3) -- String
+SET     @nameToCheck_3 = 'Joh'
 
 SELECT
 	Count(*)
@@ -40,10 +40,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
-DECLARE @nameToCheck NVarChar(3) -- String
-SET     @nameToCheck = 'JOH'
+DECLARE @nameToCheck_3 NVarChar(4) -- String
+SET     @nameToCheck_3 = 'JOH%'
+DECLARE @nameToCheck_4 NVarChar(3) -- String
+SET     @nameToCheck_4 = 'JOH'
 
 SELECT
 	Count(*)
@@ -55,10 +55,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
-DECLARE @nameToCheck NVarChar(3) -- String
-SET     @nameToCheck = 'JOH'
+DECLARE @nameToCheck_3 NVarChar(4) -- String
+SET     @nameToCheck_3 = 'JOH%'
+DECLARE @nameToCheck_4 NVarChar(3) -- String
+SET     @nameToCheck_4 = 'JOH'
 
 SELECT
 	Count(*)

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 4
+DECLARE @Length Int -- Int32
+SET     @Length = 4
 
 SELECT
 	[p].[FirstName],

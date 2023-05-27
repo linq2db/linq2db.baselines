@@ -14,8 +14,8 @@ CREATE TABLE [DateTable]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date_1 DateTime
-SET     @Date_1 = #1899-12-29#
+DECLARE @Date DateTime
+SET     @Date = #1899-12-29#
 
 INSERT INTO [DateTable]
 (
@@ -30,8 +30,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date_1 DateTime
-SET     @Date_1 = #1899-12-30#
+DECLARE @Date DateTime
+SET     @Date = #1899-12-30#
 
 INSERT INTO [DateTable]
 (
@@ -46,8 +46,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date_1 DateTime
-SET     @Date_1 = #1899-12-31#
+DECLARE @Date DateTime
+SET     @Date = #1899-12-31#
 
 INSERT INTO [DateTable]
 (
@@ -62,8 +62,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date_1 DateTime
-SET     @Date_1 = #1900-01-01#
+DECLARE @Date DateTime
+SET     @Date = #1900-01-01#
 
 INSERT INTO [DateTable]
 (

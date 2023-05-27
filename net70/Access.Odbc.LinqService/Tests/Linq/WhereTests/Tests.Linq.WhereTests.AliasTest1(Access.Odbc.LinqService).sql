@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @user_1 Int -- Int32
-SET     @user_1 = 3
+DECLARE @user Int -- Int32
+SET     @user = 3
 
 SELECT
 	[p].[ParentID],

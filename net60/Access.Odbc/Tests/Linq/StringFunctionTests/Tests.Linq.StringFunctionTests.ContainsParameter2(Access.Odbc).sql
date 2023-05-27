@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @str_1 NVarChar(7) -- String
-SET     @str_1 = '%o[%]h%'
+DECLARE @str NVarChar(7) -- String
+SET     @str = '%o[%]h%'
 
 SELECT
 	[p].[FirstName],

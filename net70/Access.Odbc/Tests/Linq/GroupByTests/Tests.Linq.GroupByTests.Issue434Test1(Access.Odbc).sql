@@ -2,8 +2,8 @@
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input_2 NVarChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input NVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[PersonID],
@@ -19,8 +19,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input_2 NVarChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input NVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[FirstName],

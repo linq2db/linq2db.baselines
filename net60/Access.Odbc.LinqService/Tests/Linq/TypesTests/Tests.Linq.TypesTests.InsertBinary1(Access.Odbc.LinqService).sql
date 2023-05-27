@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @data_1 VarBinary -- Binary
-SET     @data_1 = NULL
+DECLARE @data VarBinary -- Binary
+SET     @data = NULL
 
 INSERT INTO [LinqDataTypes]
 (
