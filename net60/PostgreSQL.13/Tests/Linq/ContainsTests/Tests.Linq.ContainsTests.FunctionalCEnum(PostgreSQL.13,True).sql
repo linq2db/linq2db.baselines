@@ -79,8 +79,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @CEnum_1 Varchar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value2___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -89,7 +89,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL)
+	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL)
 LIMIT :take
 
 BeforeExecute

@@ -13,26 +13,26 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" ILIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" ILIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT ILIKE :nameToCheck_1 ESCAPE '~' AND
+	p."FirstName" NOT ILIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 

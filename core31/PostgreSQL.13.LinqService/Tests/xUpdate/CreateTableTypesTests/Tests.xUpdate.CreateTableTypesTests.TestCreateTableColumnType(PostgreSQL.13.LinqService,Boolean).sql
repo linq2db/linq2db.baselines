@@ -16,8 +16,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Boolean_1 Boolean
-SET     @Boolean_1 = False
+DECLARE @Boolean Boolean
+SET     @Boolean = False
 
 INSERT INTO "CreateTableTypes"
 (
@@ -27,15 +27,15 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	:Id,
-	:Boolean_1
+	:Boolean
 )
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Boolean_1 Boolean
-SET     @Boolean_1 = True
+DECLARE @Boolean Boolean
+SET     @Boolean = True
 
 INSERT INTO "CreateTableTypes"
 (
@@ -45,7 +45,7 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	:Id,
-	:Boolean_1
+	:Boolean
 )
 
 BeforeExecute
