@@ -2,8 +2,8 @@
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 8
+DECLARE @take Int -- Int32
+SET     @take = 8
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 2
 
@@ -31,7 +31,7 @@ FROM
 							[Child] [t1]
 					) [t2]
 				WHERE
-					[t2].[RN] > @skip AND [t2].[RN] <= @take_1
+					[t2].[RN] > @skip AND [t2].[RN] <= @take
 			) [t3]
 	) [t4]
 WHERE

@@ -15,8 +15,8 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -24,13 +24,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PIPPO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -38,13 +38,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -52,13 +52,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'BOLTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -66,15 +66,15 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 2
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (@take_1)
+SELECT TOP (@take)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
