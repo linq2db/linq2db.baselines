@@ -2,10 +2,10 @@
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 7
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 1
 DECLARE @skip Integer -- Int32
-SET     @skip = 2
+SET     @skip = 1
+DECLARE @skip_1 Integer -- Int32
+SET     @skip_1 = 2
 
 SELECT
 	t2."ParentID",
@@ -19,9 +19,9 @@ FROM
 			"Child" t1
 		ORDER BY
 			t1."ChildID" DESC
-		LIMIT :take OFFSET :skip_1 
+		LIMIT :take OFFSET :skip 
 	) t2
 ORDER BY
 	t2."ChildID"
-OFFSET :skip 
+OFFSET :skip_1 
 

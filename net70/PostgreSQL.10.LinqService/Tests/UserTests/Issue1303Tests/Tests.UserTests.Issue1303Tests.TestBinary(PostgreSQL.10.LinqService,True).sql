@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS "Issue1303"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Array_1 Bytea(3) -- Binary
-SET     @Array_1 = E'\\x010203'::bytea
-DECLARE @Binary_1 Bytea(2) -- Binary
-SET     @Binary_1 = E'\\x0405'::bytea
+DECLARE @Array Bytea(3) -- Binary
+SET     @Array = E'\\x010203'::bytea
+DECLARE @Binary Bytea(2) -- Binary
+SET     @Binary = E'\\x0405'::bytea
 
 INSERT INTO "Issue1303"
 (
@@ -31,8 +31,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	:Array_1,
-	:Binary_1
+	:Array,
+	:Binary
 )
 
 BeforeExecute

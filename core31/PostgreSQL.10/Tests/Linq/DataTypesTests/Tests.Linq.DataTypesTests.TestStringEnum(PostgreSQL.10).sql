@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Column_1 Text(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column Text(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable Text(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"StringEnumTable" r
 WHERE
-	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
+	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -64,8 +64,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Text(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column Text(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable Text -- String
 SET     @ColumnNullable = NULL
 
@@ -78,7 +78,7 @@ INSERT INTO "StringEnumTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 
@@ -86,8 +86,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Text(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column Text(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable Text(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -100,7 +100,7 @@ INSERT INTO "StringEnumTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 
