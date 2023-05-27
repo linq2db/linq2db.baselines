@@ -13,8 +13,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 11
+DECLARE @Value Int -- Int32
+SET     @Value = 11
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,15 +24,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 102
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 22
+DECLARE @Value Int -- Int32
+SET     @Value = 22
 
 INSERT INTO [LinqDataTypes]
 (
@@ -42,15 +42,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 103
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = NULL
+DECLARE @Value Int -- Int32
+SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -60,7 +60,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

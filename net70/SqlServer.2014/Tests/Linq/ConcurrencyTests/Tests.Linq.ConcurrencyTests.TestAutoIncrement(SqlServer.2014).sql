@@ -23,8 +23,8 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'initial'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'initial'
 
 INSERT INTO [ConcurrencyAutoIncrement]
 (
@@ -36,7 +36,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -51,8 +51,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'value 1'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'value 1'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -62,7 +62,7 @@ UPDATE
 	[obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
+	[obj].[Value] = @Value
 FROM
 	[ConcurrencyAutoIncrement] [obj]
 WHERE
@@ -80,8 +80,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'value 2'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'value 2'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -91,7 +91,7 @@ UPDATE
 	[obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
+	[obj].[Value] = @Value
 FROM
 	[ConcurrencyAutoIncrement] [obj]
 WHERE
@@ -109,8 +109,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'value 3'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'value 3'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -120,7 +120,7 @@ UPDATE
 	[obj]
 SET
 	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value_1
+	[obj].[Value] = @Value
 FROM
 	[ConcurrencyAutoIncrement] [obj]
 WHERE

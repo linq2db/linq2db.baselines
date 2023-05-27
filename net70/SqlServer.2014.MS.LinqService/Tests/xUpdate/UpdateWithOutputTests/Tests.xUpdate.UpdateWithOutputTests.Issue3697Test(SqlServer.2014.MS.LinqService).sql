@@ -41,8 +41,8 @@ IF (OBJECT_ID(N'[Test3697Item]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Int -- Int32
+SET     @Value = 3
 DECLARE @TestId Int -- Int32
 SET     @TestId = 1
 
@@ -53,7 +53,7 @@ INSERT INTO [Test3697Item]
 )
 VALUES
 (
-	@Value_1,
+	@Value,
 	@TestId
 )
 
