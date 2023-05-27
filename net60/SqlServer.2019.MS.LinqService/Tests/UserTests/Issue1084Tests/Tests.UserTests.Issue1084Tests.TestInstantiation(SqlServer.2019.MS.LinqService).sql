@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Number_1 Int -- Int32
-SET     @Number_1 = 1
+DECLARE @Number Int -- Int32
+SET     @Number = 1
 DECLARE @StatusBitmask Int -- Int32
 SET     @StatusBitmask = 0
 
@@ -32,7 +32,7 @@ INSERT INTO [i1084_person]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -40,8 +40,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Number_1 Int -- Int32
-SET     @Number_1 = 2
+DECLARE @Number Int -- Int32
+SET     @Number = 2
 DECLARE @StatusBitmask Int -- Int32
 SET     @StatusBitmask = 0
 
@@ -54,7 +54,7 @@ INSERT INTO [i1084_person]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -78,8 +78,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Number_1 NVarChar(4000) -- String
-SET     @Number_1 = N'1'
+DECLARE @Number NVarChar(4000) -- String
+SET     @Number = N'1'
 DECLARE @StatusBitmask Int -- Int32
 SET     @StatusBitmask = 0
 
@@ -92,7 +92,7 @@ INSERT INTO [i1084_student]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -100,8 +100,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Number_1 NVarChar(4000) -- String
-SET     @Number_1 = N'2'
+DECLARE @Number NVarChar(4000) -- String
+SET     @Number = N'2'
 DECLARE @StatusBitmask Int -- Int32
 SET     @StatusBitmask = 0
 
@@ -114,7 +114,7 @@ INSERT INTO [i1084_student]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
