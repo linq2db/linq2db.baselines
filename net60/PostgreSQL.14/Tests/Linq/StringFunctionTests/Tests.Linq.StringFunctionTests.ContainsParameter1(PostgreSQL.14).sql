@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @str_1 Text(4) -- String
-SET     @str_1 = '%oh%'
+DECLARE @str Text(4) -- String
+SET     @str = '%oh%'
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE :str_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE :str ESCAPE '~' AND p."PersonID" = 1
 
