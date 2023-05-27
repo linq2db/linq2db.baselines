@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @personId_1 Integer -- Int32
-SET     @personId_1 = 2
+DECLARE @personId Integer -- Int32
+SET     @personId = 2
 
 SELECT
 	CASE
@@ -23,7 +23,7 @@ SELECT
 									FROM
 										"Patient" t2
 									WHERE
-										t2."PersonID" = :personId_1
+										t2."PersonID" = :personId
 								)
 						) as cnt,
 						(
@@ -32,7 +32,7 @@ SELECT
 							FROM
 								"Patient" t3
 							WHERE
-								t3."PersonID" = :personId_1 AND t3."PersonID" NOT IN (
+								t3."PersonID" = :personId AND t3."PersonID" NOT IN (
 									SELECT
 										t4."PersonID"
 									FROM

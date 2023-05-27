@@ -39,8 +39,8 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Type_1 Enum -- Object
-SET     @Type_1 = 'org'
+DECLARE @Type Enum -- Object
+SET     @Type = 'org'
 DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 1
 
@@ -49,7 +49,7 @@ SELECT
 FROM
 	"User" x
 WHERE
-	(((x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND :Type_1 = 'org_user' AND x."Id" IS NULL) OR x."Type" = 'org_user' AND :Type_1 = 'org' AND x."OrganizationId" = :Id_1) OR x."Type" = 'org_user' AND :Type_1 = 'org_user' AND x."OrganizationId" IS NULL)
+	(((x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND :Type = 'org_user' AND x."Id" IS NULL) OR x."Type" = 'org_user' AND :Type = 'org' AND x."OrganizationId" = :Id_1) OR x."Type" = 'org_user' AND :Type = 'org_user' AND x."OrganizationId" IS NULL)
 ORDER BY
 	x."Id"
 
@@ -57,8 +57,8 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Type_1 Enum -- Object
-SET     @Type_1 = 'org_user'
+DECLARE @Type Enum -- Object
+SET     @Type = 'org_user'
 DECLARE @OrganizationId Integer -- Int32
 SET     @OrganizationId = 2
 DECLARE @Id_1 Integer -- Int32
@@ -69,7 +69,7 @@ SELECT
 FROM
 	"User" x
 WHERE
-	(((x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND :Type_1 = 'org_user' AND x."Id" = :OrganizationId) OR x."Type" = 'org_user' AND :Type_1 = 'org' AND x."OrganizationId" = :Id_1) OR x."Type" = 'org_user' AND :Type_1 = 'org_user' AND x."OrganizationId" = :OrganizationId)
+	(((x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND :Type = 'org_user' AND x."Id" = :OrganizationId) OR x."Type" = 'org_user' AND :Type = 'org' AND x."OrganizationId" = :Id_1) OR x."Type" = 'org_user' AND :Type = 'org_user' AND x."OrganizationId" = :OrganizationId)
 ORDER BY
 	x."Id"
 
