@@ -94,8 +94,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = N'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -104,7 +104,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -126,8 +126,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = N'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -136,7 +136,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -158,8 +158,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = N'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -168,7 +168,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -190,8 +190,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = N'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -200,7 +200,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -222,8 +222,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = N'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -232,7 +232,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

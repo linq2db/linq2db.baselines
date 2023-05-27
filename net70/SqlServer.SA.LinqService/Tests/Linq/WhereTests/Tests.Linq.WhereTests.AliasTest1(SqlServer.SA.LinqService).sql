@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @user_1 Int -- Int32
-SET     @user_1 = 3
+DECLARE @user Int -- Int32
+SET     @user = 3
 
 SELECT
 	[p].[ParentID],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @user_1
+	[p].[ParentID] = @user
 

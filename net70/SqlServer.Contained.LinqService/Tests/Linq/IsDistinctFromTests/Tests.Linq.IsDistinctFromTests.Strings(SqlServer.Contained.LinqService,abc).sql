@@ -17,8 +17,8 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(4000) -- String
@@ -35,7 +35,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -43,8 +43,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Int -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(4000) -- String
@@ -61,7 +61,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -69,51 +69,51 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'abc'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'abc'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'abc'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'abc'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
