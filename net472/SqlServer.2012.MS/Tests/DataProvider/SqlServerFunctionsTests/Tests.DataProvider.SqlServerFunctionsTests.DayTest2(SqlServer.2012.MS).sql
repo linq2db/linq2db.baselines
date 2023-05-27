@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p_1 DateTime2
-SET     @p_1 = DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7)
+DECLARE @p DateTime2
+SET     @p = DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7)
 
 SELECT
-	DAY(@p_1)
+	DAY(@p)
 
