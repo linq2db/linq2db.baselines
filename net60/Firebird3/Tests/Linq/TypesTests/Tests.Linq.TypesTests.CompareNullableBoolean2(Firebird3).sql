@@ -16,8 +16,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @param4 Char(1) -- String
-SET     @param4 = '0'
+DECLARE @param2 Char(1) -- String
+SET     @param2 = '0'
 
 SELECT
 	"t1".ID,
@@ -32,5 +32,5 @@ FROM
 	"LinqDataTypes" "t1"
 		INNER JOIN "LinqDataTypes" "t2" ON "t1".ID = "t2".ID
 WHERE
-	"t1"."BoolValue" = @param4
+	"t1"."BoolValue" = @param2
 
