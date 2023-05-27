@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Firebird
-DECLARE @real_1 Float -- Single
-SET     @real_1 = CAST(LOG(1, 1) AS FLOAT)
+DECLARE @real Float -- Single
+SET     @real = CAST(LOG(1, 1) AS FLOAT)
 DECLARE @dbl Double
 SET     @dbl = LOG(1, 1)
 
@@ -22,14 +22,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	@real_1,
+	@real,
 	@dbl
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @real_1 Float -- Single
-SET     @real_1 = CAST(LOG(1, 0.5) AS FLOAT)
+DECLARE @real Float -- Single
+SET     @real = CAST(LOG(1, 0.5) AS FLOAT)
 DECLARE @dbl Double
 SET     @dbl = LOG(1, 0.5)
 
@@ -42,14 +42,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	@real_1,
+	@real,
 	@dbl
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @real_1 Float -- Single
-SET     @real_1 = CAST(LOG(1, 2) AS FLOAT)
+DECLARE @real Float -- Single
+SET     @real = CAST(LOG(1, 2) AS FLOAT)
 DECLARE @dbl Double
 SET     @dbl = LOG(1, 2)
 
@@ -62,7 +62,7 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	@real_1,
+	@real,
 	@dbl
 )
 

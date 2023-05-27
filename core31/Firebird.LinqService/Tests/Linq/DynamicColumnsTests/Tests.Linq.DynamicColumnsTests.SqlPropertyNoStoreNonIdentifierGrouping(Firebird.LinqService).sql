@@ -43,8 +43,8 @@ BeforeExecute
 -- Firebird
 DECLARE @NotIdentifier Integer -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 5
 
 INSERT INTO "DynamicTable"
 (
@@ -54,15 +54,15 @@ INSERT INTO "DynamicTable"
 VALUES
 (
 	@NotIdentifier,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird
 DECLARE @NotIdentifier Integer -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 5
 
 INSERT INTO "DynamicTable"
 (
@@ -72,7 +72,7 @@ INSERT INTO "DynamicTable"
 VALUES
 (
 	@NotIdentifier,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

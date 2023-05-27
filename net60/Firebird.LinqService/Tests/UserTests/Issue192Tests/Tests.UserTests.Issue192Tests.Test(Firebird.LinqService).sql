@@ -101,8 +101,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 
 SELECT FIRST @take
 	"t1"."Name",
@@ -111,7 +111,7 @@ SELECT FIRST @take
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue_1
+	"t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird
@@ -133,8 +133,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 
 SELECT FIRST @take
 	"t1"."Name",
@@ -143,7 +143,7 @@ SELECT FIRST @take
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue_1
+	"t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird
@@ -165,8 +165,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 
 SELECT FIRST @take
 	"t1"."Name",
@@ -175,7 +175,7 @@ SELECT FIRST @take
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue_1
+	"t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird
@@ -197,8 +197,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 
 SELECT FIRST @take
 	"t1"."Name",
@@ -207,7 +207,7 @@ SELECT FIRST @take
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue_1
+	"t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird
@@ -229,8 +229,8 @@ BeforeExecute
 -- Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 
 SELECT FIRST @take
 	"t1"."Name",
@@ -239,7 +239,7 @@ SELECT FIRST @take
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue_1
+	"t1"."BoolValue" = @BoolValue
 
 BeforeExecute
 -- Firebird
