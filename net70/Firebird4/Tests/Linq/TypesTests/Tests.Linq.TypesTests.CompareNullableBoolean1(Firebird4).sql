@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @param_1 Char(1) -- String
-SET     @param_1 = '1'
+DECLARE @param Char(1) -- String
+SET     @param = '1'
 
 SELECT
 	"t".ID,
@@ -30,5 +30,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."BoolValue" = @param_1
+	"t"."BoolValue" = @param
 

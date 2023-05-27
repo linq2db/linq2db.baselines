@@ -84,8 +84,8 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 
 INSERT INTO "temp_table1"
 (
@@ -95,7 +95,7 @@ INSERT INTO "temp_table1"
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

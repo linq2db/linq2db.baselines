@@ -26,8 +26,8 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'Janet'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'Janet'
 
 INSERT INTO "TableToInsert"
 (
@@ -37,15 +37,15 @@ INSERT INTO "TableToInsert"
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Value_1 VarChar(3) -- String
-SET     @Value_1 = 'Doe'
+DECLARE @Value VarChar(3) -- String
+SET     @Value = 'Doe'
 
 INSERT INTO "TableToInsert"
 (
@@ -55,7 +55,7 @@ INSERT INTO "TableToInsert"
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
