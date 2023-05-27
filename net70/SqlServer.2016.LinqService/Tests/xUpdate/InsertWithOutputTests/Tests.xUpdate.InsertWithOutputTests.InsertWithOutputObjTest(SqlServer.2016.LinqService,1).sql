@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Int -- Int32
+SET     @Value = 100
 DECLARE @ValueStr NVarChar(50) -- String
 SET     @ValueStr = N'SomeStr1'
 
@@ -36,7 +36,7 @@ OUTPUT
 VALUES
 (
 	@Id,
-	@Value_1,
+	@Value,
 	@ValueStr
 )
 
