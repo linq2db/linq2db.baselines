@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29'::date
+DECLARE @Column Date
+SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'::date
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"DateOnlyTable" r
 WHERE
-	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
+	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -64,8 +64,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Date
-SET     @Column_1 = '1950-01-01'::date
+DECLARE @Column Date
+SET     @Column = '1950-01-01'::date
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -78,7 +78,7 @@ INSERT INTO "DateOnlyTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 
@@ -86,8 +86,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Date
-SET     @Column_1 = '2020-02-29'::date
+DECLARE @Column Date
+SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'::date
 
@@ -100,7 +100,7 @@ INSERT INTO "DateOnlyTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 
