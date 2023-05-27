@@ -33,13 +33,13 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @Value_1 NChar(1) -- StringFixedLength
-SET     @Value_1 = N'O'
+DECLARE @Value NChar(1) -- StringFixedLength
+SET     @Value = N'O'
 
 UPDATE
 	[_]
 SET
-	[_].[Gender] = @Value_1
+	[_].[Gender] = @Value
 FROM
 	[Person] [_]
 WHERE
