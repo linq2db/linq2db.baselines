@@ -29,8 +29,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @Column_1 UniqueIdentifier -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column UniqueIdentifier -- Guid
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[GuidTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -67,8 +67,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 UniqueIdentifier -- Guid
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Column UniqueIdentifier -- Guid
+SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = NULL
 
@@ -81,7 +81,7 @@ INSERT INTO [GuidTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -89,8 +89,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 UniqueIdentifier -- Guid
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column UniqueIdentifier -- Guid
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -103,7 +103,7 @@ INSERT INTO [GuidTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
