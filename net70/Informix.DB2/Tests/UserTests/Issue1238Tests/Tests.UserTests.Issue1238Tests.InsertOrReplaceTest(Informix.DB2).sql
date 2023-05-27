@@ -8,15 +8,15 @@ DELETE FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Data_1 Integer(4) -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer(4) -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	InheritanceParent
 SET
-	InheritanceParent.TypeDiscriminator = @Data_1
+	InheritanceParent.TypeDiscriminator = @Data
 WHERE
 	InheritanceParent.InheritanceParentId = @Key1 AND InheritanceParent.Name IS NULL
 
@@ -26,8 +26,8 @@ DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Integer(4) -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer(4) -- Int32
+SET     @Data = 1
 
 INSERT INTO InheritanceParent
 (
@@ -39,7 +39,7 @@ VALUES
 (
 	@Key1,
 	@Key2,
-	@Data_1
+	@Data
 )
 
 BeforeExecute
@@ -52,15 +52,15 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Data_1 Integer(4) -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer(4) -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	InheritanceParent
 SET
-	InheritanceParent.TypeDiscriminator = @Data_1
+	InheritanceParent.TypeDiscriminator = @Data
 WHERE
 	InheritanceParent.InheritanceParentId = @Key1 AND InheritanceParent.Name IS NULL
 

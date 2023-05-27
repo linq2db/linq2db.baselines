@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @id2 Integer(4) -- Int32
-SET     @id2 = 3
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 3
+DECLARE @id1 Integer(4) -- Int32
+SET     @id1 = 3
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 3
 
 SELECT FIRST 1
 	t1.ChildID
@@ -20,8 +20,8 @@ WHERE
 				ON li.ParentID = c_1.ParentID
 				LEFT JOIN Parent a_Parent ON a_Child.ParentID = a_Parent.ParentID
 		WHERE
-			a_Parent.ParentID IS NOT NULL AND a_Parent.ParentID = @id2 AND
-			li.ParentID = @Value_1
+			a_Parent.ParentID IS NOT NULL AND a_Parent.ParentID = @id1 AND
+			li.ParentID = @Value
 	)
 ORDER BY
 	t1.ChildID
