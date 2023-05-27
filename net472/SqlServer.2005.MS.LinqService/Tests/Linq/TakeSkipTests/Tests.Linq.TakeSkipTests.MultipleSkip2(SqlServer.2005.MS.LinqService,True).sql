@@ -15,8 +15,8 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -24,13 +24,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PIPPO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -38,13 +38,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -52,13 +52,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'BOLTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -66,13 +66,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 3
+DECLARE @skip Int -- Int32
+SET     @skip = 3
 
 SELECT
 	[t2].[Value_1]
@@ -85,12 +85,12 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip_1
+	[t2].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 4
+DECLARE @skip Int -- Int32
+SET     @skip = 4
 
 SELECT
 	[t2].[Value_1]
@@ -103,7 +103,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip_1
+	[t2].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
