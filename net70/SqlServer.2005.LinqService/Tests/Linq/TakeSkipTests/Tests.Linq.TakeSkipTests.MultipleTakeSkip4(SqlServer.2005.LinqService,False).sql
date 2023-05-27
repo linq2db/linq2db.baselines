@@ -15,8 +15,8 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value1'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value1'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -24,13 +24,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value2'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value2'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -38,13 +38,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value3'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value3'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -52,13 +52,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value4'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value4'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -66,13 +66,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value5'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value5'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -80,13 +80,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value6'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value6'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -94,13 +94,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value7'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value7'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -108,13 +108,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value8'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value8'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -122,13 +122,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value9'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value9'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -136,7 +136,7 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
