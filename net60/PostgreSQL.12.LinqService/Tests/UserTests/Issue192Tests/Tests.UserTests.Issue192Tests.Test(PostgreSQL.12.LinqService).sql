@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -103,7 +103,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 LIMIT :take
 
 BeforeExecute
@@ -125,8 +125,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -137,7 +137,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 LIMIT :take
 
 BeforeExecute
@@ -159,8 +159,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -171,7 +171,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 LIMIT :take
 
 BeforeExecute
@@ -193,8 +193,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -205,7 +205,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 LIMIT :take
 
 BeforeExecute
@@ -227,8 +227,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Char -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'N'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -239,7 +239,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 LIMIT :take
 
 BeforeExecute
