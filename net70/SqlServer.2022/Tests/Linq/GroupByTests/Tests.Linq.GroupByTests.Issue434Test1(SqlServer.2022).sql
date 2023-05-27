@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @input_2 NVarChar(4000) -- String
-SET     @input_2 = N'%test%'
+DECLARE @input NVarChar(4000) -- String
+SET     @input = N'%test%'
 
 SELECT
 	[p].[PersonID],
@@ -13,14 +13,14 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE @input ESCAPE N'~'
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
-DECLARE @input_2 NVarChar(4000) -- String
-SET     @input_2 = N'%test%'
+DECLARE @input NVarChar(4000) -- String
+SET     @input = N'%test%'
 
 SELECT
 	[p].[FirstName],
@@ -28,5 +28,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE @input_2 ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE @input ESCAPE N'~'
 

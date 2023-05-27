@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -8
+DECLARE @p Int -- Int32
+SET     @p = -8
 
 SELECT
-	DateAdd(minute, @p_1, [t].[DateTimeValue])
+	DateAdd(minute, @p, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

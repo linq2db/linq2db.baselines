@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @p_1 Time
-SET     @p_1 = TIMEFROMPARTS(2, 0, 0, 0, 7)
+DECLARE @p Time
+SET     @p = TIMEFROMPARTS(2, 0, 0, 0, 7)
 
 SELECT
-	DATEADD(Hour, 1, @p_1)
+	DATEADD(Hour, 1, @p)
 
