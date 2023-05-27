@@ -9,8 +9,8 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = Tests.DataProvider.SqlServerTypesTests+<GetSqlDataRecords>d__24
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = Tests.DataProvider.SqlServerTypesTests+<GetSqlDataRecords>d__24
 
 MERGE INTO [tempdb]..[#TestMergeTVPTable] [Target]
 USING (
@@ -18,7 +18,7 @@ USING (
 		[_].[Id],
 		[_].[Name]
 	FROM
-		@table_1 [_]
+		@table [_]
 	WHERE
 		[_].[Id] IS NOT NULL
 ) [Source]

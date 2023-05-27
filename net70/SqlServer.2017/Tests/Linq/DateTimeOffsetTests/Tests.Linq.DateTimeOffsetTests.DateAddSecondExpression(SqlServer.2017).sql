@@ -53,11 +53,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 41
+DECLARE @p Int -- Int32
+SET     @p = 41
 
 SELECT
-	DateAdd(second, @p_1, [t].[TransactionDate])
+	DateAdd(second, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
