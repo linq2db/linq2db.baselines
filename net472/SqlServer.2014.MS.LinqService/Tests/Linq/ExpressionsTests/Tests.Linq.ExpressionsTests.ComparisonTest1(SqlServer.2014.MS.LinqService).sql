@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @personId_1 Int -- Int32
-SET     @personId_1 = 2
+DECLARE @personId Int -- Int32
+SET     @personId = 2
 
 SELECT
 	IIF(EXISTS(
@@ -22,7 +22,7 @@ SELECT
 						FROM
 							[Patient] [_2]
 						WHERE
-							[_2].[PersonID] = @personId_1
+							[_2].[PersonID] = @personId
 					)
 			) = 0 AND
 			(
@@ -31,7 +31,7 @@ SELECT
 				FROM
 					[Patient] [_3]
 				WHERE
-					[_3].[PersonID] = @personId_1 AND [_3].[PersonID] NOT IN (
+					[_3].[PersonID] = @personId AND [_3].[PersonID] NOT IN (
 						SELECT
 							[_4].[PersonID]
 						FROM
