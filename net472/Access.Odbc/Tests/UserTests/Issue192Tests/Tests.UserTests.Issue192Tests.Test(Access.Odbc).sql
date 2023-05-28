@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -119,8 +119,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -147,8 +147,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -175,8 +175,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -203,8 +203,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],

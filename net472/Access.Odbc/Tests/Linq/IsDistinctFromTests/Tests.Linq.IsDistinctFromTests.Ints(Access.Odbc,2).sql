@@ -16,8 +16,8 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Int -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String
@@ -68,10 +68,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
-DECLARE @value_2 Int -- Int32
-SET     @value_2 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
@@ -82,10 +82,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
-DECLARE @value_2 Int -- Int32
-SET     @value_2 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
@@ -96,10 +96,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
-DECLARE @value_2 Int -- Int32
-SET     @value_2 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
@@ -110,10 +110,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
-DECLARE @value_2 Int -- Int32
-SET     @value_2 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)

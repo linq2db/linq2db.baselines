@@ -49,85 +49,85 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Test
-DECLARE @test_2 VarWChar(6) -- String
-SET     @test_2 = '%Test%'
+DECLARE @test_1 VarWChar(6) -- String
+SET     @test_1 = '%Test%'
 
 SELECT
 	Count(*) > 0
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Test
-DECLARE @test_2 VarWChar(6) -- String
-SET     @test_2 = '%Test%'
+DECLARE @test_1 VarWChar(6) -- String
+SET     @test_1 = '%Test%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Value
-DECLARE @test_2 VarWChar(7) -- String
-SET     @test_2 = '%Value%'
+DECLARE @test_1 VarWChar(7) -- String
+SET     @test_1 = '%Value%'
 
 SELECT
 	Count(*) > 0
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Value
-DECLARE @test_2 VarWChar(7) -- String
-SET     @test_2 = '%Value%'
+DECLARE @test_1 VarWChar(7) -- String
+SET     @test_1 = '%Value%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Class
-DECLARE @test_2 VarWChar(7) -- String
-SET     @test_2 = '%Class%'
+DECLARE @test_1 VarWChar(7) -- String
+SET     @test_1 = '%Class%'
 
 SELECT
 	Count(*) > 0
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @test VarWChar -- String
 SET     @test = Class
-DECLARE @test_2 VarWChar(7) -- String
-SET     @test_2 = '%Class%'
+DECLARE @test_1 VarWChar(7) -- String
+SET     @test_1 = '%Class%'
 
 SELECT
 	Count(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_2)
+	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
 
 BeforeExecute
 -- Access AccessOleDb

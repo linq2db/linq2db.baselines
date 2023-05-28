@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Access AccessOleDb (asynchronously)
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	Count(*) > 0
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @p_1
+	[c_1].[ParentID] = @p
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = -1
+DECLARE @p Integer -- Int32
+SET     @p = -1
 
 SELECT
 	Count(*) > 0
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @p_1
+	[c_1].[ParentID] = @p
 

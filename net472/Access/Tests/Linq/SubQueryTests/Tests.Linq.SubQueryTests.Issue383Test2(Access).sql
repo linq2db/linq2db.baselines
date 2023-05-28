@@ -188,8 +188,8 @@ DECLARE @Street_Number VarWChar(1) -- String
 SET     @Street_Number = 'x'
 DECLARE @Street_Name VarWChar(1) -- String
 SET     @Street_Name = 'x'
-DECLARE @State_1 VarWChar(1) -- String
-SET     @State_1 = 'x'
+DECLARE @State VarWChar(1) -- String
+SET     @State = 'x'
 DECLARE @Zip_Code VarWChar(1) -- String
 SET     @Zip_Code = 'x'
 DECLARE @Zip_Plus_4 VarWChar(1) -- String
@@ -212,7 +212,7 @@ VALUES
 	@Commercial_Property_Id,
 	@Street_Number,
 	@Street_Name,
-	@State_1,
+	@State,
 	@Zip_Code,
 	@Zip_Plus_4,
 	@City_Code

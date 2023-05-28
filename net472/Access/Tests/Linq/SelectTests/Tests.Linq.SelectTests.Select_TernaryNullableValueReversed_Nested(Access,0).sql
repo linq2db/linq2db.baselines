@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @Value_3 Integer -- Int32
-SET     @Value_3 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 SELECT
-	@Value_3
+	@Value
 

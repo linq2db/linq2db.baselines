@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 11
+DECLARE @p Integer -- Int32
+SET     @p = 11
 
 SELECT
-	DateAdd('yyyy', @p_1, [t].[DateTimeValue])
+	DateAdd('yyyy', @p, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
