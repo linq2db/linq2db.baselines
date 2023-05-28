@@ -22,8 +22,8 @@ END
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @default_1 Integer -- Int32
-SET     @default_1 = 0
+DECLARE @default Integer -- Int32
+SET     @default = 0
 
 SELECT
 	"a"."Id",
@@ -31,7 +31,7 @@ SELECT
 FROM
 	"SampleClass" "a"
 WHERE
-	("a"."Id" = 0 AND Coalesce("a"."NullValue", @default_1) = 0 OR "a"."Id" = 1 AND Coalesce("a"."NullValue", @default_1) = 1 OR "a"."Id" = 2 AND Coalesce("a"."NullValue", @default_1) = 2)
+	("a"."Id" = 0 AND Coalesce("a"."NullValue", @default) = 0 OR "a"."Id" = 1 AND Coalesce("a"."NullValue", @default) = 1 OR "a"."Id" = 2 AND Coalesce("a"."NullValue", @default) = 2)
 
 BeforeExecute
 -- Firebird3 Firebird

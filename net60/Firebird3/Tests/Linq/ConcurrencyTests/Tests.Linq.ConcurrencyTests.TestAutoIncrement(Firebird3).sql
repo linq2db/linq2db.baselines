@@ -29,8 +29,8 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyAutoIncrement"
 (
@@ -42,7 +42,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -57,8 +57,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -68,7 +68,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value_1
+	"ConcurrencyAutoIncrement"."Value" = @Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
 
@@ -84,8 +84,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -95,7 +95,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value_1
+	"ConcurrencyAutoIncrement"."Value" = @Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
 
@@ -111,8 +111,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 3'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -122,7 +122,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value_1
+	"ConcurrencyAutoIncrement"."Value" = @Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
 

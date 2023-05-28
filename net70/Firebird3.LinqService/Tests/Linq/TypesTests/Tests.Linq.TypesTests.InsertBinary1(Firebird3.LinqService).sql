@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @data_1 Binary
-SET     @data_1 = NULL
+DECLARE @data Binary
+SET     @data = NULL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -20,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	@data_1,
+	@data,
 	1
 )
 
