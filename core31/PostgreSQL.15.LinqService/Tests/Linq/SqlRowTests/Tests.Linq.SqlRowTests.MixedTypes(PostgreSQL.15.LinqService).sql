@@ -17,14 +17,14 @@ CREATE TABLE IF NOT EXISTS "Mixed"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 1
+DECLARE @Int Integer -- Int32
+SET     @Int = 1
 DECLARE @Str Text(3) -- String
 SET     @Str = 'One'
-DECLARE @Date_1 Timestamp -- DateTime2
-SET     @Date_1 = '2001-01-01'::date
-DECLARE @Double_1 Double
-SET     @Double_1 = 1
+DECLARE @Date Timestamp -- DateTime2
+SET     @Date = '2001-01-01'::date
+DECLARE @Double Double
+SET     @Double = 1
 DECLARE @Bool Boolean
 SET     @Bool = True
 
@@ -38,23 +38,23 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:Str,
-	:Date_1,
-	:Double_1,
+	:Date,
+	:Double,
 	:Bool
 )
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Str Text(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date_1 Timestamp -- DateTime2
-SET     @Date_1 = '2002-02-02'::date
-DECLARE @Double_1 Double
-SET     @Double_1 = 2
+DECLARE @Date Timestamp -- DateTime2
+SET     @Date = '2002-02-02'::date
+DECLARE @Double Double
+SET     @Double = 2
 DECLARE @Bool Boolean
 SET     @Bool = False
 
@@ -68,10 +68,10 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:Str,
-	:Date_1,
-	:Double_1,
+	:Date,
+	:Double,
 	:Bool
 )
 
