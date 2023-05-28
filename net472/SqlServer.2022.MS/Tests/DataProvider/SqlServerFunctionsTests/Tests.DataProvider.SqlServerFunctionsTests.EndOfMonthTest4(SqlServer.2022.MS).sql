@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @p_1 DateTime2
-SET     @p_1 = DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7)
+DECLARE @p DateTime2
+SET     @p = DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7)
 
 SELECT
-	EOMONTH(@p_1, 1)
+	EOMONTH(@p, 1)
 

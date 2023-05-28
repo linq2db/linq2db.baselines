@@ -17,8 +17,8 @@ IF (OBJECT_ID(N'[Src]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(4000) -- String
@@ -35,7 +35,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -43,8 +43,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Int -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(4000) -- String
@@ -61,7 +61,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
