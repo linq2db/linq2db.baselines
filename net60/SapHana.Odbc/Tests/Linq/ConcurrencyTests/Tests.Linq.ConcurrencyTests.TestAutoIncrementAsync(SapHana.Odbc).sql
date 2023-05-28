@@ -21,8 +21,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyAutoIncrement"
 (
@@ -49,8 +49,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -76,8 +76,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -103,8 +103,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 3'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 3'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32

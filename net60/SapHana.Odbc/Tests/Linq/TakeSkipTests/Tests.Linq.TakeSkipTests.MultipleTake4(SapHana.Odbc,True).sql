@@ -13,8 +13,8 @@ CREATE COLUMN TABLE "TakeSkipClass"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value1'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value1'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -27,8 +27,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value2'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value2'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -41,8 +41,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value3'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value3'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -55,8 +55,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value4'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value4'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -69,8 +69,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value5'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value5'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -83,8 +83,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value6'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value6'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -97,8 +97,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value7'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value7'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -111,8 +111,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(6) -- AnsiString
-SET     @Value_1 = 'Value8'
+DECLARE @Value VarChar(6) -- AnsiString
+SET     @Value = 'Value8'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -125,8 +125,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take_3  -- Int32
-SET     @take_3 = 1
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t1"."Value"

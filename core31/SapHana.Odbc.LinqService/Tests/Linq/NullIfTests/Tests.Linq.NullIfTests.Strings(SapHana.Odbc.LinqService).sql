@@ -16,8 +16,8 @@ CREATE COLUMN TABLE "Src"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
+DECLARE @Int  -- Int32
+SET     @Int = 2
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 3
+DECLARE @Int  -- Int32
+SET     @Int = 3
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String

@@ -188,8 +188,8 @@ DECLARE @Street_Number NVarChar(1) -- String
 SET     @Street_Number = 'x'
 DECLARE @Street_Name NVarChar(1) -- String
 SET     @Street_Name = 'x'
-DECLARE @State_1 NVarChar(1) -- String
-SET     @State_1 = 'x'
+DECLARE @State NVarChar(1) -- String
+SET     @State = 'x'
 DECLARE @Zip_Code NVarChar(1) -- String
 SET     @Zip_Code = 'x'
 DECLARE @Zip_Plus_4 NVarChar(1) -- String

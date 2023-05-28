@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @data_1 Binary
-SET     @data_1 = NULL
+DECLARE @data Binary
+SET     @data = NULL
 
 INSERT INTO "LinqDataTypes"
 (

@@ -18,8 +18,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 3
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'Janet'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'Janet'
 
 INSERT INTO "TableToInsert"
 (
@@ -36,8 +36,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 4
-DECLARE @Value_1 NVarChar(3) -- String
-SET     @Value_1 = 'Doe'
+DECLARE @Value NVarChar(3) -- String
+SET     @Value = 'Doe'
 
 INSERT INTO "TableToInsert"
 (

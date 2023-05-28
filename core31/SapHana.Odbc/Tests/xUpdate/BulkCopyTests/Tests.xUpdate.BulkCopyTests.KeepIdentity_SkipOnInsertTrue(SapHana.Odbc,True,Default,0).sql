@@ -55,8 +55,8 @@ DROP TABLE "AllTypes_OLD"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 0
+DECLARE @Value  -- Int32
+SET     @Value = 0
 
 INSERT INTO "AllTypes"
 (

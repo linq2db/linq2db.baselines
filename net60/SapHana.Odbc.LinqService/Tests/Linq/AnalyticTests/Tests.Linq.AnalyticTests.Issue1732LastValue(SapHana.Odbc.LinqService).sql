@@ -15,10 +15,10 @@ CREATE COLUMN TABLE "Position"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Group_1  -- Int32
-SET     @Group_1 = 7
-DECLARE @Order_1  -- Int32
-SET     @Order_1 = 10
+DECLARE @Group  -- Int32
+SET     @Group = 7
+DECLARE @Order  -- Int32
+SET     @Order = 10
 DECLARE @Id  -- Int32
 SET     @Id = 5
 
@@ -37,10 +37,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Group_1  -- Int32
-SET     @Group_1 = 7
-DECLARE @Order_1  -- Int32
-SET     @Order_1 = 20
+DECLARE @Group  -- Int32
+SET     @Group = 7
+DECLARE @Order  -- Int32
+SET     @Order = 20
 DECLARE @Id  -- Int32
 SET     @Id = 6
 
@@ -59,10 +59,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Group_1  -- Int32
-SET     @Group_1 = 7
-DECLARE @Order_1  -- Int32
-SET     @Order_1 = 30
+DECLARE @Group  -- Int32
+SET     @Group = 7
+DECLARE @Order  -- Int32
+SET     @Order = 30
 DECLARE @Id  -- Int32
 SET     @Id = NULL
 
@@ -81,10 +81,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Group_1  -- Int32
-SET     @Group_1 = 7
-DECLARE @Order_1  -- Int32
-SET     @Order_1 = 40
+DECLARE @Group  -- Int32
+SET     @Group = 7
+DECLARE @Order  -- Int32
+SET     @Order = 40
 DECLARE @Id  -- Int32
 SET     @Id = NULL
 
@@ -103,8 +103,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @group_1  -- Int32
-SET     @group_1 = 7
+DECLARE @group  -- Int32
+SET     @group = 7
 
 SELECT
 	"p"."Id",

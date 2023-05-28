@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Length_1  -- Int32
-SET     @Length_1 = 1
+DECLARE @Length  -- Int32
+SET     @Length = 1
 
 SELECT
 	?

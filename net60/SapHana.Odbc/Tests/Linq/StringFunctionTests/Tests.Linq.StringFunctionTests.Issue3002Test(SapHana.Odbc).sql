@@ -49,8 +49,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Test
-DECLARE @test_2 NVarChar(6) -- String
-SET     @test_2 = '%Test%'
+DECLARE @test_1 NVarChar(6) -- String
+SET     @test_1 = '%Test%'
 
 SELECT
 	CASE
@@ -71,8 +71,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Test
-DECLARE @test_2 NVarChar(6) -- String
-SET     @test_2 = '%Test%'
+DECLARE @test_1 NVarChar(6) -- String
+SET     @test_1 = '%Test%'
 
 SELECT
 	Count(*)
@@ -85,8 +85,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Value
-DECLARE @test_2 NVarChar(7) -- String
-SET     @test_2 = '%Value%'
+DECLARE @test_1 NVarChar(7) -- String
+SET     @test_1 = '%Value%'
 
 SELECT
 	CASE
@@ -107,8 +107,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Value
-DECLARE @test_2 NVarChar(7) -- String
-SET     @test_2 = '%Value%'
+DECLARE @test_1 NVarChar(7) -- String
+SET     @test_1 = '%Value%'
 
 SELECT
 	Count(*)
@@ -121,8 +121,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Class
-DECLARE @test_2 NVarChar(7) -- String
-SET     @test_2 = '%Class%'
+DECLARE @test_1 NVarChar(7) -- String
+SET     @test_1 = '%Class%'
 
 SELECT
 	CASE
@@ -143,8 +143,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar -- String
 SET     @test = Class
-DECLARE @test_2 NVarChar(7) -- String
-SET     @test_2 = '%Class%'
+DECLARE @test_1 NVarChar(7) -- String
+SET     @test_1 = '%Class%'
 
 SELECT
 	Count(*)

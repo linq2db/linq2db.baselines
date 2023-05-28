@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id2  -- Int32
-SET     @id2 = 3
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @id1  -- Int32
+SET     @id1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 DECLARE @take  -- Int32
 SET     @take = 1
 
