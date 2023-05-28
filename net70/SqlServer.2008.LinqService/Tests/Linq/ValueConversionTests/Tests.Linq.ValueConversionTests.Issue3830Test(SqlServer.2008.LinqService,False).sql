@@ -220,10 +220,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = N'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = N'Y'
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = N'N'
+DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
+SET     @Bool3 = N'Y'
 
 SELECT
 	[r].[Id],
@@ -233,7 +233,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool2 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool4
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
 
 BeforeExecute
 -- SqlServer.2008
@@ -271,10 +271,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = N'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = N'N'
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = N'Y'
+SET     @Bool2 = N'Y'
 
 SELECT
 	[r].[Id],
@@ -284,7 +284,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool2 AND [r].[Bool2] = @Bool3 AND [r].[Bool3] IS NULL
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlServer.2008
@@ -343,10 +343,10 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
+DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
+SET     @Bool2 = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = N'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = N'Y'
+SET     @Bool3 = N'Y'
 
 SELECT
 	[r].[Id],
@@ -356,7 +356,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool3 AND [r].[Bool3] = @Bool4
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
 
 BeforeExecute
 -- SqlServer.2008

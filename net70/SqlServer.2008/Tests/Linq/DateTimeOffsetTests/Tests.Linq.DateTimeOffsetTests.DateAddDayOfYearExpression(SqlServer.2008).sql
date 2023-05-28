@@ -54,11 +54,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 3
+DECLARE @p Int -- Int32
+SET     @p = 3
 
 SELECT
-	DateAdd(dayofyear, @p_1, [t].[TransactionDate])
+	DateAdd(dayofyear, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
