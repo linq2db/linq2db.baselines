@@ -30,51 +30,51 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IS DISTINCT FROM :value_1
+	s."Int" IS DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableInt" IS DISTINCT FROM :value_1
+	s."NullableInt" IS DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."Int" IS NOT DISTINCT FROM :value_1
+	s."Int" IS NOT DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableInt" IS NOT DISTINCT FROM :value_1
+	s."NullableInt" IS NOT DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

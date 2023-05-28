@@ -18,8 +18,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Integer -- Int32
+SET     @Int = NULL
 DECLARE @Enum Text -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar -- String
@@ -35,7 +35,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -44,8 +44,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Enum Text(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar(12) -- String
@@ -61,7 +61,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -117,8 +117,8 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @CEnum_1 Varchar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum Varchar(12) -- String
+SET     @CEnum = '___Value2___'
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -127,7 +127,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL)
+	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL)
 LIMIT :take
 
 BeforeExecute
