@@ -230,10 +230,10 @@ DECLARE @Val1 Int -- Int32
 SET     @Val1 = 1
 DECLARE @Val3 Int -- Int32
 SET     @Val3 = 3
-DECLARE @Val6 Int -- Int32
-SET     @Val6 = 5
-DECLARE @Val7 Int -- Int32
-SET     @Val7 = 2
+DECLARE @Val5_1 Int -- Int32
+SET     @Val5_1 = 5
+DECLARE @Val2_1 Int -- Int32
+SET     @Val2_1 = 2
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -268,7 +268,7 @@ VALUES
 WHEN MATCHED AND [Source].[OtherId] = @Val3 THEN
 UPDATE
 SET
-	[Target].[Field4] = @Val6
-WHEN MATCHED AND ([Target].[Field3] <> @Val7 OR [Target].[Field3] IS NULL) THEN DELETE
+	[Target].[Field4] = @Val5_1
+WHEN MATCHED AND ([Target].[Field3] <> @Val2_1 OR [Target].[Field3] IS NULL) THEN DELETE
 ;
 
