@@ -16,19 +16,19 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @db NVarChar -- String
 SET     @db = Tests.Model.TestDataConnection
-DECLARE @p_1 NVarChar -- String
-SET     @p_1 = Tests.Linq.ExpressionTests+ExpressionTestsFakeType
+DECLARE @p NVarChar -- String
+SET     @p = Tests.Linq.ExpressionTests+ExpressionTestsFakeType
 
 SELECT
-	DATE(@db, @p_1)
+	DATE(@db, @p)
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p_1 NVarChar -- String
-SET     @p_1 = Tests.Linq.ExpressionTests+ExpressionTestsFakeType
+DECLARE @p NVarChar -- String
+SET     @p = Tests.Linq.ExpressionTests+ExpressionTestsFakeType
 
 SELECT
-	DATE(@p_1)
+	DATE(@p)
 
 BeforeExecute
 -- SQLite.MS SQLite

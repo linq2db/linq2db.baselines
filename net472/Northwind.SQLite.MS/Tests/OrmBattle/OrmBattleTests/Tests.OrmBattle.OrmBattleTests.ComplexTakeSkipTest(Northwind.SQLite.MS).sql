@@ -104,8 +104,8 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 50
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 100
+DECLARE @skip  -- Int32
+SET     @skip = 100
 
 SELECT
 	[t2].[RequiredDate]
@@ -122,7 +122,7 @@ FROM
 					[Orders] [t1]
 				ORDER BY
 					[t1].[OrderDate]
-				LIMIT @take OFFSET @skip_1
+				LIMIT @take OFFSET @skip
 			) [o]
 		WHERE
 			[o].[OrderDate] IS NOT NULL
