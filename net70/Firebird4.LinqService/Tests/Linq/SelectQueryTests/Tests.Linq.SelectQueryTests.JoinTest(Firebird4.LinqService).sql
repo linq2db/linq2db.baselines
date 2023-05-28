@@ -24,8 +24,8 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
 
 INSERT INTO "SampleClass"
 (
@@ -35,7 +35,7 @@ INSERT INTO "SampleClass"
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
