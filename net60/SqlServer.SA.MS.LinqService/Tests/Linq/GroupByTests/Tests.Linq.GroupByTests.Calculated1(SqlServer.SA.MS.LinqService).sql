@@ -15,8 +15,8 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p_1 NVarChar(4000) -- String
-SET     @p_1 = N'1'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'1'
 
 SELECT
 	[selectParam].[ParentID],
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Child] [selectParam]
 WHERE
-	IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') = @p_1
+	IIF([selectParam].[ParentID] > 2, IIF([selectParam].[ParentID] > 3, N'1', N'2'), N'3') = @p
 

@@ -19,8 +19,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Int -- Int32
+SET     @Int = NULL
 DECLARE @Enum NVarChar(5) -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar(20) -- AnsiString
@@ -36,7 +36,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -45,8 +45,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @Enum NVarChar(5) -- String
 SET     @Enum = N'TWO'
 DECLARE @CEnum VarChar(20) -- AnsiString
@@ -62,7 +62,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )

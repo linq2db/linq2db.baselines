@@ -13,8 +13,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @Value_1 NChar(2) -- StringFixedLength
-SET     @Value_1 = N'11'
+DECLARE @Value NChar(2) -- StringFixedLength
+SET     @Value = N'11'
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,15 +24,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 102
-DECLARE @Value_1 NChar(2) -- StringFixedLength
-SET     @Value_1 = N'22'
+DECLARE @Value NChar(2) -- StringFixedLength
+SET     @Value = N'22'
 
 INSERT INTO [LinqDataTypes]
 (
@@ -42,15 +42,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 103
-DECLARE @Value_1 NChar -- StringFixedLength
-SET     @Value_1 = NULL
+DECLARE @Value NChar -- StringFixedLength
+SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -60,7 +60,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

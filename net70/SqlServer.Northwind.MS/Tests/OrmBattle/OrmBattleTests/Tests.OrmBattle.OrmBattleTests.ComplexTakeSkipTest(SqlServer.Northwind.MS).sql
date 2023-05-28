@@ -102,12 +102,12 @@ FROM
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 100
+DECLARE @skip Int -- Int32
+SET     @skip = 100
 DECLARE @take Int -- Int32
 SET     @take = 50
-DECLARE @skip Int -- Int32
-SET     @skip = 10
+DECLARE @skip_1 Int -- Int32
+SET     @skip_1 = 10
 
 SELECT
 	[t2].[RequiredDate]
@@ -124,12 +124,12 @@ FROM
 					[Orders] [t1]
 				ORDER BY
 					[t1].[OrderDate]
-				OFFSET @skip_1 ROWS FETCH NEXT @take ROWS ONLY 
+				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 			) [o]
 		WHERE
 			[o].[OrderDate] IS NOT NULL
 	) [t2]
 ORDER BY
 	[t2].[RequiredDate] DESC
-OFFSET @skip ROWS
+OFFSET @skip_1 ROWS
 

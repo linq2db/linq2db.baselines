@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @search_1 NVarChar(4000) -- String
-SET     @search_1 = N'bread'
+DECLARE @search NVarChar(4000) -- String
+SET     @search = N'bread'
 DECLARE @code Int -- Int32
 SET     @code = 1033
 
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Categories] [c_1]
 WHERE
-	CONTAINS(([c_1].[CategoryName], [c_1].[Description]), @search_1, LANGUAGE @code)
+	CONTAINS(([c_1].[CategoryName], [c_1].[Description]), @search, LANGUAGE @code)
 ORDER BY
 	[c_1].[CategoryID] DESC
 

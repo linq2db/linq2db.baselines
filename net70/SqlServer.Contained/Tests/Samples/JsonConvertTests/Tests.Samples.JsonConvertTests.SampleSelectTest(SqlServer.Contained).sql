@@ -17,8 +17,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Data_1 VarChar(4000) -- AnsiString
-SET     @Data_1 = N'{"Property1":"Pr1"}'
+DECLARE @Data VarChar(4000) -- AnsiString
+SET     @Data = N'{"Property1":"Pr1"}'
 
 INSERT INTO [SampleClass]
 (
@@ -28,7 +28,7 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Data_1
+	@Data
 )
 
 BeforeExecute
