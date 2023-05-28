@@ -16,8 +16,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value_1 NVarChar(1) -- String
-SET     @Value_1 = '6'
+DECLARE @Value NVarChar(1) -- String
+SET     @Value = '6'
 
 INSERT INTO [SampleClass]
 (
@@ -34,8 +34,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'x[0-9]x'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'x[0-9]x'
 
 INSERT INTO [SampleClass]
 (
@@ -52,8 +52,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'x[0x'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'x[0x'
 
 INSERT INTO [SampleClass]
 (
@@ -70,8 +70,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'x[]x'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'x[]x'
 
 INSERT INTO [SampleClass]
 (
@@ -88,8 +88,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'x]'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'x]'
 
 INSERT INTO [SampleClass]
 (
@@ -106,8 +106,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = ']x'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = ']x'
 
 INSERT INTO [SampleClass]
 (
@@ -174,8 +174,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @asParamUnterm_1 NVarChar(6) -- String
-SET     @asParamUnterm_1 = '%[[]0%'
+DECLARE @asParamUnterm NVarChar(6) -- String
+SET     @asParamUnterm = '%[[]0%'
 
 SELECT
 	[r].[Id],

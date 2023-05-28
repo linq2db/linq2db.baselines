@@ -12,8 +12,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
-DECLARE @Value_1 WChar(2) -- StringFixedLength
-SET     @Value_1 = '11'
+DECLARE @Value WChar(2) -- StringFixedLength
+SET     @Value = '11'
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,15 +23,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
-DECLARE @Value_1 WChar(2) -- StringFixedLength
-SET     @Value_1 = '22'
+DECLARE @Value WChar(2) -- StringFixedLength
+SET     @Value = '22'
 
 INSERT INTO [LinqDataTypes]
 (
@@ -41,15 +41,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 103
-DECLARE @Value_1 WChar -- StringFixedLength
-SET     @Value_1 = NULL
+DECLARE @Value WChar -- StringFixedLength
+SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -59,7 +59,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

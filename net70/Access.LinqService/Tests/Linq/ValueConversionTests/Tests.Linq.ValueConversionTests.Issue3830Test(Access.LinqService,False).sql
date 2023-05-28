@@ -218,10 +218,10 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = 'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = 'Y'
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = 'N'
+DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
+SET     @Bool3 = 'Y'
 
 SELECT
 	[r].[Id],
@@ -231,7 +231,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool2 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool4
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
 
 BeforeExecute
 -- Access AccessOleDb
@@ -269,10 +269,10 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = 'N'
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'Y'
+SET     @Bool2 = 'Y'
 
 SELECT
 	[r].[Id],
@@ -282,7 +282,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool2 AND [r].[Bool2] = @Bool3 AND [r].[Bool3] IS NULL
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
 
 BeforeExecute
 -- Access AccessOleDb
@@ -341,10 +341,10 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
+DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
+SET     @Bool2 = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = 'Y'
+SET     @Bool3 = 'Y'
 
 SELECT
 	[r].[Id],
@@ -354,7 +354,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool3 AND [r].[Bool3] = @Bool4
+	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
 
 BeforeExecute
 -- Access AccessOleDb

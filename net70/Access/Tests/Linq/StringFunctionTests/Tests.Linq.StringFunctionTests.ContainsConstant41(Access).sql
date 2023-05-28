@@ -2,13 +2,13 @@
 -- Access AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123[456'
-DECLARE @ps_1 VarWChar(5) -- String
-SET     @ps_1 = '%[[]%'
+DECLARE @ps VarWChar(5) -- String
+SET     @ps = '%[[]%'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE @ps_1
+	[p].[PersonID] = 1 AND @s LIKE @ps
 

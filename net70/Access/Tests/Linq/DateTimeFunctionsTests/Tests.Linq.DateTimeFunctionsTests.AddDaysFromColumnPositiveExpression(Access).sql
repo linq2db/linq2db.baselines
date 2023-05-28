@@ -46,15 +46,15 @@ DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
-DECLARE @p_1 Date -- DateTime
-SET     @p_1 = #2018-01-02#
+DECLARE @p Date -- DateTime
+SET     @p = #2018-01-02#
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p_1
+	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p
 
 BeforeExecute
 -- Access AccessOleDb

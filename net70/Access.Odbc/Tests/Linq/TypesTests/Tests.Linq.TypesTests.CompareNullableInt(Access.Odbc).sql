@@ -9,8 +9,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 1
+DECLARE @param Int -- Int32
+SET     @param = 1
 
 SELECT
 	[t].[ParentID],

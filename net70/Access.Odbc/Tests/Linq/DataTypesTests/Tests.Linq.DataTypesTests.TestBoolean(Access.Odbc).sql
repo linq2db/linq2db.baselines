@@ -17,8 +17,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
+DECLARE @Column Bit -- Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
+DECLARE @Column Bit -- Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
+DECLARE @Column Bit -- Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
+DECLARE @Column Bit -- Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
+DECLARE @Column Bit -- Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
+DECLARE @Column Bit -- Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
+DECLARE @Column Bit -- Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = True
+DECLARE @Column Bit -- Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = False
+DECLARE @Column Bit -- Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 

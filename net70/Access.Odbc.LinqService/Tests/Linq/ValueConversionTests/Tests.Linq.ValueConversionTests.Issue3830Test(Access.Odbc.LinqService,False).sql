@@ -218,10 +218,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = 'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = 'Y'
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = 'N'
+DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
+SET     @Bool3 = 'Y'
 
 SELECT
 	[r].[Id],
@@ -269,10 +269,10 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
+SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
-SET     @Bool2 = 'N'
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'Y'
+SET     @Bool2 = 'Y'
 
 SELECT
 	[r].[Id],
@@ -340,10 +340,10 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
+DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
+SET     @Bool2 = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'N'
-DECLARE @Bool4 Char(1) -- AnsiStringFixedLength
-SET     @Bool4 = 'Y'
+SET     @Bool3 = 'Y'
 
 SELECT
 	[r].[Id],

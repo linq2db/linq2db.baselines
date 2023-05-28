@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #2009-09-20#
+DECLARE @Date Date -- DateTime
+SET     @Date = #2009-09-20#
 
 SELECT
 	[_].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateValue([_].[DateTimeValue]) = @Date_1
+	DateValue([_].[DateTimeValue]) = @Date
 

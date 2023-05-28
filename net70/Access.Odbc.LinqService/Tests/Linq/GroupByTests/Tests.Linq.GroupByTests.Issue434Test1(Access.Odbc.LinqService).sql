@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input_1 NVarChar(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input NVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[PersonID],
@@ -15,8 +15,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input_1 NVarChar(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input NVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[FirstName],
