@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @Date_1 DateTime
-SET     @Date_1 = CAST('2009-09-20T00:00:00.000' AS DATETIME)
+DECLARE @Date DateTime
+SET     @Date = CAST('2009-09-20T00:00:00.000' AS DATETIME)
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime) > @Date_1
+	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime) > @Date
 

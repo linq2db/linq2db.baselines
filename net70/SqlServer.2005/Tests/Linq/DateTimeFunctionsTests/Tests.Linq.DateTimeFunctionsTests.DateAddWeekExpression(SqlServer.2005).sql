@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
-	DateAdd(week, @p_1, [t].[DateTimeValue])
+	DateAdd(week, @p, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

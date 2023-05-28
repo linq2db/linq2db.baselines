@@ -194,8 +194,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @cond_1 NVarChar(4000) -- String
-SET     @cond_1 = N'aaa%'
+DECLARE @cond NVarChar(4000) -- String
+SET     @cond = N'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
@@ -211,7 +211,7 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
+			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE N'~' AND
 			[_].[CreateDate] <= @uptoDate
 	) [t4]
 ORDER BY

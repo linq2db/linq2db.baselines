@@ -9,8 +9,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @data_1 VarBinary(8000) -- Binary
-SET     @data_1 = NULL
+DECLARE @data VarBinary(8000) -- Binary
+SET     @data = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -21,7 +21,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	1001,
-	@data_1,
+	@data,
 	1
 )
 

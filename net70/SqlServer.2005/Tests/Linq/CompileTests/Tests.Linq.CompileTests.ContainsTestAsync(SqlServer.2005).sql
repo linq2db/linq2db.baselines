@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005 (asynchronously)
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
-		WHEN @p_1 IN (
+		WHEN @p IN (
 			SELECT
 				[c_1].[ParentID]
 			FROM
@@ -17,12 +17,12 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2005 (asynchronously)
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
 	CASE
-		WHEN @p_1 IN (
+		WHEN @p IN (
 			SELECT
 				[c_1].[ParentID]
 			FROM

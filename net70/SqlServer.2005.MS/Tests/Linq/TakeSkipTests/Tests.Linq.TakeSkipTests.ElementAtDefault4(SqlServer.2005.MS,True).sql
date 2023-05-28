@@ -2,8 +2,8 @@
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @n Int -- Int32
 SET     @n = 300000
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 300001
+DECLARE @take Int -- Int32
+SET     @take = 300001
 
 SELECT
 	[t1].[ParentID],
@@ -20,5 +20,5 @@ FROM
 			[p].[ParentID] > 1
 	) [t1]
 WHERE
-	[t1].[RN] > @n AND [t1].[RN] <= @take_1
+	[t1].[RN] > @n AND [t1].[RN] <= @take
 

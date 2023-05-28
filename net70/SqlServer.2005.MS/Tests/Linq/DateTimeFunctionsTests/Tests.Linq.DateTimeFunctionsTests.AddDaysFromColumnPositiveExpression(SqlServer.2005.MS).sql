@@ -46,15 +46,15 @@ DECLARE @part1 Int -- Int32
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32
 SET     @part2 = 4
-DECLARE @p_1 DateTime
-SET     @p_1 = CAST('2018-01-02T00:00:00.000' AS DATETIME)
+DECLARE @p DateTime
+SET     @p = CAST('2018-01-02T00:00:00.000' AS DATETIME)
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p_1
+	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
