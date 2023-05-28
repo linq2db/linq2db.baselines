@@ -53,11 +53,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 5
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	DateAdd(minute, @p_1, [t].[TransactionDate])
+	DateAdd(minute, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 

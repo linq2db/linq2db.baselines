@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @p_1 DateTime2
-SET     @p_1 = DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 7)
+DECLARE @p DateTime2
+SET     @p = DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 7)
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p_1
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
