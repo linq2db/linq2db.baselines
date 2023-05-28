@@ -188,8 +188,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @cond_1 NVarChar(4) -- String
-SET     @cond_1 = 'aaa%'
+DECLARE @cond NVarChar(4) -- String
+SET     @cond = 'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
@@ -205,7 +205,7 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE '~' AND
+			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE '~' AND
 			[_].[CreateDate] <= @uptoDate
 	) [t4]
 ORDER BY

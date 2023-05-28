@@ -77,15 +77,15 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum_1 NVarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- SqlCe

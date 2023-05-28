@@ -16,8 +16,8 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Int -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -68,51 +68,51 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlCe

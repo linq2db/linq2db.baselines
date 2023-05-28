@@ -16,8 +16,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
-DECLARE @param4 Bit -- Boolean
-SET     @param4 = 0
+DECLARE @param2 Bit -- Boolean
+SET     @param2 = 0
 
 SELECT
 	[t1].[ID],
@@ -32,5 +32,5 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 WHERE
-	[t1].[BoolValue] = @param4
+	[t1].[BoolValue] = @param2
 
