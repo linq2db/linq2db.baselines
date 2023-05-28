@@ -39,15 +39,15 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Property NVarChar(6) -- String
 SET     @Property = 'banana'
-DECLARE @filter_1  -- Int32
-SET     @filter_1 = 1
+DECLARE @filter  -- Int32
+SET     @filter = 1
 
 UPDATE
 	[BananaTable]
 SET
 	[Property] = @Property
 WHERE
-	[BananaTable].[Id] = @filter_1
+	[BananaTable].[Id] = @filter
 
 BeforeExecute
 -- SQLite.Classic SQLite

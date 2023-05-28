@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @param_1  -- Int16
-SET     @param_1 = 1
+DECLARE @param  -- Int16
+SET     @param = 1
 
 SELECT
 	[_].[ID],
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param_1 = [_].[SmallIntValue]
+	@param = [_].[SmallIntValue]
 
 BeforeExecute
 -- SQLite.MS SQLite

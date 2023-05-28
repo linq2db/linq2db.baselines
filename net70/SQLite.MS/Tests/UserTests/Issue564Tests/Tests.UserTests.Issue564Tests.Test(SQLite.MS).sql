@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS [Parent564]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Type_1 NVarChar(9) -- String
-SET     @Type_1 = 'Child564A'
+DECLARE @Type NVarChar(9) -- String
+SET     @Type = 'Child564A'
 DECLARE @StringValue NVarChar(9) -- String
 SET     @StringValue = 'SomeValue'
 
@@ -28,14 +28,14 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@StringValue
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Type_1 NVarChar(9) -- String
-SET     @Type_1 = 'Child564B'
+DECLARE @Type NVarChar(9) -- String
+SET     @Type = 'Child564B'
 DECLARE @IntValue  -- Int32
 SET     @IntValue = 911
 
@@ -46,7 +46,7 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@IntValue
 )
 

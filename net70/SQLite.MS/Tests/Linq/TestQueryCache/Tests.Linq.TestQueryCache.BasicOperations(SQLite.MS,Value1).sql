@@ -35,8 +35,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V1'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V1'
 
 INSERT INTO [SampleClass]
 (
@@ -48,7 +48,7 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -57,8 +57,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K2'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V2'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V2'
 
 INSERT INTO [SampleClass]
 (
@@ -70,13 +70,13 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V3'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V3'
 DECLARE @Id  -- Int32
 SET     @Id = 3
 DECLARE @StrKey NVarChar(2) -- String
@@ -85,7 +85,7 @@ SET     @StrKey = 'K3'
 UPDATE
 	[SampleClass]
 SET
-	[Value1] = @Value_1
+	[Value1] = @Value
 WHERE
 	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue1] = @StrKey
 
@@ -95,8 +95,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 3
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K3'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V3'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V3'
 
 INSERT INTO [SampleClass]
 (
@@ -108,13 +108,13 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V4'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V4'
 
 INSERT INTO [SampleClassWithIdentity]
 (
@@ -122,7 +122,7 @@ INSERT INTO [SampleClassWithIdentity]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -144,8 +144,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'VU'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'VU'
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @StrKey NVarChar(2) -- String
@@ -154,7 +154,7 @@ SET     @StrKey = 'K2'
 UPDATE
 	[SampleClass]
 SET
-	[Value1] = @Value_1
+	[Value1] = @Value
 WHERE
 	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue1] = @StrKey
 

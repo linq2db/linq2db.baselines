@@ -82,12 +82,12 @@ CREATE TABLE IF NOT EXISTS [Flat]
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @cpty NVarChar(3) -- String
+SET     @cpty = '%C%'
 DECLARE @cpty_1 NVarChar(3) -- String
 SET     @cpty_1 = '%C%'
 DECLARE @cpty_2 NVarChar(3) -- String
 SET     @cpty_2 = '%C%'
-DECLARE @cpty_3 NVarChar(3) -- String
-SET     @cpty_3 = '%C%'
 
 SELECT
 	[al_1].[alert],
@@ -110,7 +110,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Cast([trade1].[DealId] as NVarChar(11))
 		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Cast([nomin1].[CargoId] as NVarChar(11))
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty_1 ESCAPE '~' OR [trade1].[CounterParty] LIKE @cpty_2 ESCAPE '~') OR [al_1].[alert_1] LIKE @cpty_3 ESCAPE '~')
+	(([nomin1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade1].[CounterParty] LIKE @cpty_1 ESCAPE '~') OR [al_1].[alert_1] LIKE @cpty_2 ESCAPE '~')
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

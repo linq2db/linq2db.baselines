@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS [Src]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
+DECLARE @Int  -- Int32
+SET     @Int = 2
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 3
+DECLARE @Int  -- Int32
+SET     @Int = 3
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -68,51 +68,51 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT @value_1
+	[s].[Int] IS NOT @value
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NOT @value_1
+	[s].[NullableInt] IS NOT @value
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS @value_1
+	[s].[Int] IS @value
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS @value_1
+	[s].[NullableInt] IS @value
 
 BeforeExecute
 -- SQLite.MS SQLite

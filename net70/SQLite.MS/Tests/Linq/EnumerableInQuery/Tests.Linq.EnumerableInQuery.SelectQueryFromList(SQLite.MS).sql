@@ -2,20 +2,20 @@
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 11
+DECLARE @Value  -- Int32
+SET     @Value = 11
 DECLARE @Id_1  -- Int32
 SET     @Id_1 = 2
-DECLARE @Value_2  -- Int32
-SET     @Value_2 = 22
+DECLARE @Value_1  -- Int32
+SET     @Value_1 = 22
 DECLARE @Id_2  -- Int32
 SET     @Id_2 = 3
-DECLARE @Value_3  -- Int32
-SET     @Value_3 = 33
+DECLARE @Value_2  -- Int32
+SET     @Value_2 = 33
 DECLARE @Id_3  -- Int32
 SET     @Id_3 = 4
-DECLARE @Value_4  -- Int32
-SET     @Value_4 = 44
+DECLARE @Value_3  -- Int32
+SET     @Value_3 = 44
 
 WITH [CTE_1] ([Id], [Value])
 AS
@@ -27,7 +27,7 @@ AS
 		(
 			SELECT
 				@Id as [Id],
-				@Value_1 as [Value_1]
+				@Value as [Value_1]
 		) [t1]
 	UNION ALL
 	SELECT
@@ -37,7 +37,7 @@ AS
 		(
 			SELECT
 				@Id_1 as [Id],
-				@Value_2 as [Value_1]
+				@Value_1 as [Value_1]
 		) [t2]
 	UNION ALL
 	SELECT
@@ -47,7 +47,7 @@ AS
 		(
 			SELECT
 				@Id_2 as [Id],
-				@Value_3 as [Value_1]
+				@Value_2 as [Value_1]
 		) [t3]
 	UNION ALL
 	SELECT
@@ -57,7 +57,7 @@ AS
 		(
 			SELECT
 				@Id_3 as [Id],
-				@Value_4 as [Value_1]
+				@Value_3 as [Value_1]
 		) [t4]
 )
 SELECT

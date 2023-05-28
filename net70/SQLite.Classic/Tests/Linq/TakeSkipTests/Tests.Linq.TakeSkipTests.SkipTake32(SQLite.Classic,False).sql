@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 5
-DECLARE @skip  -- Int32
-SET     @skip = 2
+DECLARE @skip_1_1_1_1  -- Int32
+SET     @skip_1_1_1_1 = 5
+DECLARE @skip_1_1_1_1_1  -- Int32
+SET     @skip_1_1_1_1_1 = 2
 
 SELECT
 	[t1].[ParentID],
@@ -12,14 +12,14 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-LIMIT @skip_1 OFFSET @skip
+LIMIT @skip_1_1_1_1 OFFSET @skip_1_1_1_1_1
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 5
-DECLARE @skip  -- Int32
-SET     @skip = 2
+DECLARE @skip_1_1_1_1_1  -- Int32
+SET     @skip_1_1_1_1_1 = 5
+DECLARE @skip_1_1_1_1_1_1  -- Int32
+SET     @skip_1_1_1_1_1_1 = 2
 
 SELECT
 	[t1].[ParentID],
@@ -28,5 +28,5 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
-LIMIT @skip_1 OFFSET @skip
+LIMIT @skip_1_1_1_1_1 OFFSET @skip_1_1_1_1_1_1
 
