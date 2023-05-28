@@ -81,8 +81,8 @@ DECLARE @FacultyName NVarChar(12) -- String
 SET     @FacultyName = 'faculty name'
 DECLARE @Direction NVarChar(9) -- String
 SET     @Direction = 'direction'
-DECLARE @Grant_1  -- Int32
-SET     @Grant_1 = 1
+DECLARE @Grant  -- Int32
+SET     @Grant = 1
 DECLARE @Contract  -- Int32
 SET     @Contract = 1
 DECLARE @UniversityId  -- Int32
@@ -104,7 +104,7 @@ VALUES
 	@Code,
 	@FacultyName,
 	@Direction,
-	@Grant_1,
+	@Grant,
 	@Contract,
 	@UniversityId
 )
