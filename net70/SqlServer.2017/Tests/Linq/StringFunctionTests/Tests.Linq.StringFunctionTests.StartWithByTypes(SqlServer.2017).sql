@@ -32,14 +32,14 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @str_4 Char(5) -- AnsiStringFixedLength
-SET     @str_4 = N'some%'
-DECLARE @str_5 NChar(5) -- StringFixedLength
-SET     @str_5 = N'some%'
-DECLARE @str_6 VarChar(50) -- AnsiString
-SET     @str_6 = N'some%'
-DECLARE @str_7 NVarChar(50) -- String
-SET     @str_7 = N'some%'
+DECLARE @str Char(5) -- AnsiStringFixedLength
+SET     @str = N'some%'
+DECLARE @str_1 NChar(5) -- StringFixedLength
+SET     @str_1 = N'some%'
+DECLARE @str_2 VarChar(50) -- AnsiString
+SET     @str_2 = N'some%'
+DECLARE @str_3 NVarChar(50) -- String
+SET     @str_3 = N'some%'
 
 SELECT
 	[t].[Id],
@@ -50,10 +50,10 @@ SELECT
 FROM
 	[StringTypesTable] [t]
 WHERE
-	[t].[CharColumn] LIKE @str_4 ESCAPE N'~' AND
-	[t].[NCharColumn] LIKE @str_5 ESCAPE N'~' AND
-	[t].[VarCharColumn] LIKE @str_6 ESCAPE N'~' AND
-	[t].[NVarCharColumn] LIKE @str_7 ESCAPE N'~'
+	[t].[CharColumn] LIKE @str ESCAPE N'~' AND
+	[t].[NCharColumn] LIKE @str_1 ESCAPE N'~' AND
+	[t].[VarCharColumn] LIKE @str_2 ESCAPE N'~' AND
+	[t].[NVarCharColumn] LIKE @str_3 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017
