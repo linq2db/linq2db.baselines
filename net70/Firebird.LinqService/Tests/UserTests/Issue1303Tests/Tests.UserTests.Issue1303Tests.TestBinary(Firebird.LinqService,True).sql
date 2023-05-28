@@ -25,10 +25,10 @@ END
 
 BeforeExecute
 -- Firebird
-DECLARE @Array_1 Binary(3)
-SET     @Array_1 = X'010203'
-DECLARE @Binary_1 Binary(2)
-SET     @Binary_1 = X'0405'
+DECLARE @Array Binary(3)
+SET     @Array = X'010203'
+DECLARE @Binary Binary(2)
+SET     @Binary = X'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -39,8 +39,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	@Array_1,
-	@Binary_1
+	@Array,
+	@Binary
 )
 
 BeforeExecute

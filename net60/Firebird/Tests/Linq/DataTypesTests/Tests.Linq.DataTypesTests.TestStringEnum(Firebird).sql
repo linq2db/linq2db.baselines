@@ -35,8 +35,8 @@ SELECT 2,'value=2','value=33' FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column VarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -47,7 +47,7 @@ SELECT
 FROM
 	"StringEnumTable" "r"
 WHERE
-	"r"."Column" = @Column_1 AND "r"."ColumnNullable" = @ColumnNullable
+	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
 -- Firebird
@@ -71,8 +71,8 @@ BeforeExecute
 -- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 VarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column VarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable VarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -85,7 +85,7 @@ INSERT INTO "StringEnumTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -93,8 +93,8 @@ BeforeExecute
 -- Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 VarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column VarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -107,7 +107,7 @@ INSERT INTO "StringEnumTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

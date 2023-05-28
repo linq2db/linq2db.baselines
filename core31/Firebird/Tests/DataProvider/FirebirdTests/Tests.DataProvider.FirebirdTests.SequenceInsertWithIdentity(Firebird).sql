@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 VarChar(8) -- String
-SET     @Value_1 = 'SeqValue'
+DECLARE @Value VarChar(8) -- String
+SET     @Value = 'SeqValue'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -21,7 +21,7 @@ INSERT INTO "SequenceTest"
 VALUES
 (
 	GEN_ID("SequenceTestSeq", 1),
-	@Value_1
+	@Value
 )
 RETURNING
 	ID

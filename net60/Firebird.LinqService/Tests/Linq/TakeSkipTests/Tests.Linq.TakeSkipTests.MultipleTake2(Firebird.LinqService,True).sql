@@ -21,8 +21,8 @@ END
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -30,13 +30,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -44,13 +44,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -58,13 +58,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -72,15 +72,15 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Firebird
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 2
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST @take_1
+SELECT FIRST @take
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
