@@ -19,8 +19,8 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'Janet'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'Janet'
 
 INSERT INTO [TableToInsert]
 (
@@ -30,15 +30,15 @@ INSERT INTO [TableToInsert]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'Doe'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'Doe'
 
 INSERT INTO [TableToInsert]
 (
@@ -48,7 +48,7 @@ INSERT INTO [TableToInsert]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

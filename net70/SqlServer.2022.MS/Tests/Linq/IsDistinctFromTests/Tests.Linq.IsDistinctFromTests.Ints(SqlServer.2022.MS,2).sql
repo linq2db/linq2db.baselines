@@ -31,51 +31,51 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS DISTINCT FROM @value_1
+	[s].[Int] IS DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS DISTINCT FROM @value_1
+	[s].[NullableInt] IS DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT DISTINCT FROM @value_1
+	[s].[Int] IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NOT DISTINCT FROM @value_1
+	[s].[NullableInt] IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
