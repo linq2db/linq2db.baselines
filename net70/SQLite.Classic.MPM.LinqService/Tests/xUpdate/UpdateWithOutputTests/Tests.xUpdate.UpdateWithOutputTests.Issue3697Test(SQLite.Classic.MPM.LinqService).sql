@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS [Test3697Item]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 DECLARE @TestId  -- Int32
 SET     @TestId = 1
 
@@ -45,7 +45,7 @@ INSERT INTO [Test3697Item]
 )
 VALUES
 (
-	@Value_1,
+	@Value,
 	@TestId
 )
 

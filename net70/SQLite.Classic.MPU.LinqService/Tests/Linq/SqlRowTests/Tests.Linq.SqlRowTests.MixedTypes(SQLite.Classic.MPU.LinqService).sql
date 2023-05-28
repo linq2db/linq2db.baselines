@@ -17,14 +17,14 @@ CREATE TABLE IF NOT EXISTS [Mixed]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 1
+DECLARE @Int  -- Int32
+SET     @Int = 1
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date_1  -- DateTime
-SET     @Date_1 = '2001-01-01'
-DECLARE @Double_1  -- Double
-SET     @Double_1 = 1
+DECLARE @Date  -- DateTime
+SET     @Date = '2001-01-01'
+DECLARE @Double  -- Double
+SET     @Double = 1
 DECLARE @Bool  -- Boolean
 SET     @Bool = 1
 
@@ -38,23 +38,23 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
+DECLARE @Int  -- Int32
+SET     @Int = 2
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date_1  -- DateTime
-SET     @Date_1 = '2002-02-02'
-DECLARE @Double_1  -- Double
-SET     @Double_1 = 2
+DECLARE @Date  -- DateTime
+SET     @Date = '2002-02-02'
+DECLARE @Double  -- Double
+SET     @Double = 2
 DECLARE @Bool  -- Boolean
 SET     @Bool = 0
 
@@ -68,10 +68,10 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param4  -- Boolean
-SET     @param4 = 0
+DECLARE @param2  -- Boolean
+SET     @param2 = 0
 
 SELECT
 	[t].[ID],
@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BoolValue] = @param4
+	[t].[BoolValue] = @param2
 

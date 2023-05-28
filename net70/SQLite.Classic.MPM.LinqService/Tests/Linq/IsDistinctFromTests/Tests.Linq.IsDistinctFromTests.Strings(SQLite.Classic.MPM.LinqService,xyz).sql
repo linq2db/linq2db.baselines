@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS [Src]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
+DECLARE @Int  -- Int32
+SET     @Int = 2
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 3
+DECLARE @Int  -- Int32
+SET     @Int = 3
 DECLARE @NullableInt  -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -68,51 +68,51 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NOT @value_1
+	[s].[String] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NOT @value_1
+	[s].[NullableString] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS @value_1
+	[s].[String] IS @value
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS @value_1
+	[s].[NullableString] IS @value
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

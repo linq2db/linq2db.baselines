@@ -5,8 +5,8 @@ UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 0
+DECLARE @Value  -- Int32
+SET     @Value = 0
 
 INSERT INTO [AllTypes]
 (
@@ -14,7 +14,7 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
