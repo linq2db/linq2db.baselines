@@ -30,8 +30,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -42,7 +42,7 @@ SELECT
 FROM
 	[ByteTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -67,8 +67,8 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
@@ -81,7 +81,7 @@ INSERT INTO [ByteTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -89,8 +89,8 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -103,7 +103,7 @@ INSERT INTO [ByteTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
