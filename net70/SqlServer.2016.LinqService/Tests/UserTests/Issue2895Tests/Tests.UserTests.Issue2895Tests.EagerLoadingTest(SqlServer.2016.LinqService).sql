@@ -285,8 +285,8 @@ BeforeExecute
 -- SqlServer.2016
 DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position_1 Int -- Int32
-SET     @Position_1 = 1
+DECLARE @Position Int -- Int32
+SET     @Position = 1
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Some Doc 1'
 
@@ -299,7 +299,7 @@ INSERT INTO [Document]
 VALUES
 (
 	@AttachmentId,
-	@Position_1,
+	@Position,
 	@Name
 )
 
@@ -307,8 +307,8 @@ BeforeExecute
 -- SqlServer.2016
 DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position_1 Int -- Int32
-SET     @Position_1 = 2
+DECLARE @Position Int -- Int32
+SET     @Position = 2
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Some Doc 2'
 
@@ -321,7 +321,7 @@ INSERT INTO [Document]
 VALUES
 (
 	@AttachmentId,
-	@Position_1,
+	@Position,
 	@Name
 )
 
@@ -329,8 +329,8 @@ BeforeExecute
 -- SqlServer.2016
 DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 101
-DECLARE @Position_1 Int -- Int32
-SET     @Position_1 = 1
+DECLARE @Position Int -- Int32
+SET     @Position = 1
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Some Doc x'
 
@@ -343,7 +343,7 @@ INSERT INTO [Document]
 VALUES
 (
 	@AttachmentId,
-	@Position_1,
+	@Position,
 	@Name
 )
 

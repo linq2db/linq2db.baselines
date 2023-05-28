@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @param4 Bit -- Boolean
-SET     @param4 = 0
+DECLARE @param2 Bit -- Boolean
+SET     @param2 = 0
 
 SELECT
 	[t].[ID],
@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BoolValue] = @param4
+	[t].[BoolValue] = @param2
 
