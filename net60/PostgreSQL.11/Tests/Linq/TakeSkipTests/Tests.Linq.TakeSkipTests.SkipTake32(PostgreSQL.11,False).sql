@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 5
-DECLARE @skip Integer -- Int32
-SET     @skip = 2
+DECLARE @skip_4 Integer -- Int32
+SET     @skip_4 = 5
+DECLARE @skip_5 Integer -- Int32
+SET     @skip_5 = 2
 
 SELECT
 	t1."ParentID",
@@ -12,14 +12,14 @@ FROM
 	"Child" t1
 ORDER BY
 	t1."ChildID" DESC
-LIMIT :skip_1 OFFSET :skip 
+LIMIT :skip_4 OFFSET :skip_5 
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 5
-DECLARE @skip Integer -- Int32
-SET     @skip = 2
+DECLARE @skip_5 Integer -- Int32
+SET     @skip_5 = 5
+DECLARE @skip_6 Integer -- Int32
+SET     @skip_6 = 2
 
 SELECT
 	t1."ParentID",
@@ -28,5 +28,5 @@ FROM
 	"Child" t1
 ORDER BY
 	t1."ChildID" DESC
-LIMIT :skip_1 OFFSET :skip 
+LIMIT :skip_5 OFFSET :skip_6 
 

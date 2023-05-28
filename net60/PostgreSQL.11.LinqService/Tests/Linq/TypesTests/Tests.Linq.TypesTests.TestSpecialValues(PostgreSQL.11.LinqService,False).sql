@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @real_1 Real -- Single
-SET     @real_1 = 'NaN'::float4
+DECLARE @real Real -- Single
+SET     @real = 'NaN'::float4
 DECLARE @dbl Double
 SET     @dbl = 'NaN'::float8
 
@@ -22,14 +22,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	:real_1,
+	:real,
 	:dbl
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @real_1 Real -- Single
-SET     @real_1 = '-Infinity'::float4
+DECLARE @real Real -- Single
+SET     @real = '-Infinity'::float4
 DECLARE @dbl Double
 SET     @dbl = '-Infinity'::float8
 
@@ -42,14 +42,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	:real_1,
+	:real,
 	:dbl
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @real_1 Real -- Single
-SET     @real_1 = 'Infinity'::float4
+DECLARE @real Real -- Single
+SET     @real = 'Infinity'::float4
 DECLARE @dbl Double
 SET     @dbl = 'Infinity'::float8
 
@@ -62,7 +62,7 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	:real_1,
+	:real,
 	:dbl
 )
 
