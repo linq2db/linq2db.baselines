@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @p_1 DateTime2
-SET     @p_1 = CAST('2018-01-02T00:00:00.0000000' AS DATETIME2)
+DECLARE @p DateTime2
+SET     @p = CAST('2018-01-02T00:00:00.0000000' AS DATETIME2)
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p_1
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
