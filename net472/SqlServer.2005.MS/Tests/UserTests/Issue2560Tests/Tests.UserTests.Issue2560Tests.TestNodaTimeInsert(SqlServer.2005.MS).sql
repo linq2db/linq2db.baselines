@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 0
-DECLARE @Value_1 DateTime
-SET     @Value_1 = CAST('2020-02-29T17:54:55.123' AS DATETIME)
+DECLARE @Value DateTime
+SET     @Value = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 INSERT INTO [DataClass]
 (
@@ -29,7 +29,7 @@ INSERT INTO [DataClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

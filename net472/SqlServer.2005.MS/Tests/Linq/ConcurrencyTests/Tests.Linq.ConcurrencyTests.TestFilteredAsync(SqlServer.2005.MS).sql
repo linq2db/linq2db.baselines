@@ -23,8 +23,8 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'initial'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'initial'
 
 INSERT INTO [ConcurrencyFiltered]
 (
@@ -36,7 +36,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -51,8 +51,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'value 1'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'value 1'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -62,7 +62,7 @@ UPDATE
 	[r]
 SET
 	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value_1
+	[r].[Value] = @Value
 FROM
 	[ConcurrencyFiltered] [r]
 WHERE
@@ -80,8 +80,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @Value_1 NVarChar(4000) -- String
-SET     @Value_1 = N'value 2'
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'value 2'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -91,7 +91,7 @@ UPDATE
 	[r]
 SET
 	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value_1
+	[r].[Value] = @Value
 FROM
 	[ConcurrencyFiltered] [r]
 WHERE
