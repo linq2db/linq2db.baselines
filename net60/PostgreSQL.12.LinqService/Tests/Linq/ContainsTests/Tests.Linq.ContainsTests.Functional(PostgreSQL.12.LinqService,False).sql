@@ -18,8 +18,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Integer -- Int32
+SET     @Int = NULL
 DECLARE @Enum Text -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar -- String
@@ -35,7 +35,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -44,8 +44,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Enum Text(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar(12) -- String
@@ -61,7 +61,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )

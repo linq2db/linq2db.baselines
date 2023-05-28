@@ -18,8 +18,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value_1 Text(5) -- String
-SET     @Value_1 = 'Janet'
+DECLARE @Value Text(5) -- String
+SET     @Value = 'Janet'
 
 INSERT INTO "TableToInsert"
 (
@@ -29,15 +29,15 @@ INSERT INTO "TableToInsert"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Value_1 Text(3) -- String
-SET     @Value_1 = 'Doe'
+DECLARE @Value Text(3) -- String
+SET     @Value = 'Doe'
 
 INSERT INTO "TableToInsert"
 (
@@ -47,7 +47,7 @@ INSERT INTO "TableToInsert"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 DECLARE @take Integer -- Int32
-SET     @take = 10
+SET     @take = 1
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 10
 
 SELECT
 	t1."ParentID",
@@ -20,7 +20,7 @@ FROM
 				c_1."ParentID" = p."ParentID"
 			ORDER BY
 				c_1."ChildID"
-			LIMIT :take_1
+			LIMIT :take
 		) t1 ON 1=1
-LIMIT :take
+LIMIT :take_1
 
