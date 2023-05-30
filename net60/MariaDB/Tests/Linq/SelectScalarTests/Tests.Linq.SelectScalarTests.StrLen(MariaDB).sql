@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Length_1 Int32
-SET     @Length_1 = 1
+DECLARE @Length Int32
+SET     @Length = 1
 
 SELECT
-	@Length_1 as `c1`
+	@Length as `c1`
 

@@ -17,8 +17,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Value_1 Int32
-SET     @Value_1 = 200
+DECLARE @Value Int32
+SET     @Value = 200
 DECLARE @ValueStr VarChar(8) -- String
 SET     @ValueStr = 'SomeStr2'
 
@@ -31,7 +31,7 @@ INSERT INTO `TableWithData`
 VALUES
 (
 	@Id,
-	@Value_1,
+	@Value,
 	@ValueStr
 )
 RETURNING

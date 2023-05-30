@@ -31,14 +31,14 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @str_4 String(5) -- AnsiStringFixedLength
-SET     @str_4 = 'some%'
-DECLARE @str_5 String(5) -- StringFixedLength
-SET     @str_5 = 'some%'
-DECLARE @str_6 VarChar(5) -- AnsiString
-SET     @str_6 = 'some%'
-DECLARE @str_7 VarChar(5) -- String
-SET     @str_7 = 'some%'
+DECLARE @str String(5) -- AnsiStringFixedLength
+SET     @str = 'some%'
+DECLARE @str_1 String(5) -- StringFixedLength
+SET     @str_1 = 'some%'
+DECLARE @str_2 VarChar(5) -- AnsiString
+SET     @str_2 = 'some%'
+DECLARE @str_3 VarChar(5) -- String
+SET     @str_3 = 'some%'
 
 SELECT
 	`t`.`Id`,
@@ -49,10 +49,10 @@ SELECT
 FROM
 	`StringTypesTable` `t`
 WHERE
-	`t`.`CharColumn` LIKE @str_4 ESCAPE '~' AND
-	`t`.`NCharColumn` LIKE @str_5 ESCAPE '~' AND
-	`t`.`VarCharColumn` LIKE @str_6 ESCAPE '~' AND
-	`t`.`NVarCharColumn` LIKE @str_7 ESCAPE '~'
+	`t`.`CharColumn` LIKE @str ESCAPE '~' AND
+	`t`.`NCharColumn` LIKE @str_1 ESCAPE '~' AND
+	`t`.`VarCharColumn` LIKE @str_2 ESCAPE '~' AND
+	`t`.`NVarCharColumn` LIKE @str_3 ESCAPE '~'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

@@ -27,8 +27,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Decimal_1 NewDecimal -- Decimal
-SET     @Decimal_1 = 12345678901234567890123456789012345.123456789012345678901234567891
+DECLARE @Decimal NewDecimal -- Decimal
+SET     @Decimal = 12345678901234567890123456789012345.123456789012345678901234567891
 DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = -12345678901234567890123456789012345.123456789012345678901234567891
 
@@ -41,7 +41,7 @@ INSERT INTO `BigDecimalMySqlConnectorTable`
 VALUES
 (
 	@Id,
-	@Decimal_1,
+	@Decimal,
 	@DecimalN
 )
 
@@ -49,8 +49,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Decimal_1 NewDecimal -- Decimal
-SET     @Decimal_1 = -12345678901234567890123456789012345.123456789012345678901234567891
+DECLARE @Decimal NewDecimal -- Decimal
+SET     @Decimal = -12345678901234567890123456789012345.123456789012345678901234567891
 DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = NULL
 
@@ -63,7 +63,7 @@ INSERT INTO `BigDecimalMySqlConnectorTable`
 VALUES
 (
 	@Id,
-	@Decimal_1,
+	@Decimal,
 	@DecimalN
 )
 

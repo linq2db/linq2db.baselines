@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS `TakeSkipClass`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO `TakeSkipClass`
 (
@@ -22,13 +22,13 @@ INSERT INTO `TakeSkipClass`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PIPPO'
 
 INSERT INTO `TakeSkipClass`
 (
@@ -36,13 +36,13 @@ INSERT INTO `TakeSkipClass`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO `TakeSkipClass`
 (
@@ -50,13 +50,13 @@ INSERT INTO `TakeSkipClass`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'BOLTO'
 
 INSERT INTO `TakeSkipClass`
 (
@@ -64,13 +64,13 @@ INSERT INTO `TakeSkipClass`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @skip_1 Int32
-SET     @skip_1 = 3
+DECLARE @skip Int32
+SET     @skip = 3
 
 SELECT
 	`t1`.`Value`
@@ -78,12 +78,12 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip_1, 9223372036854775807
+LIMIT @skip, 9223372036854775807
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @skip_1 Int32
-SET     @skip_1 = 4
+DECLARE @skip Int32
+SET     @skip = 4
 
 SELECT
 	`t1`.`Value`
@@ -91,7 +91,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip_1, 9223372036854775807
+LIMIT @skip, 9223372036854775807
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

@@ -79,8 +79,8 @@ LIMIT @take
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -89,7 +89,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`CEnum` NOT IN (@CEnum_1) AND `s`.`CEnum` IS NOT NULL)
+	(`s`.`CEnum` NOT IN (@CEnum) AND `s`.`CEnum` IS NOT NULL)
 LIMIT @take
 
 BeforeExecute
