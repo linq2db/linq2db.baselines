@@ -8,10 +8,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -20,16 +20,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N'	'
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N'	'
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N'	'
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N'	'
 
 INSERT INTO [AllTypes]
 (
@@ -38,17 +38,17 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N'
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N'
 '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N'
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N'
 '
 
 INSERT INTO [AllTypes]
@@ -58,16 +58,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N''
 
 INSERT INTO [AllTypes]
 (
@@ -76,16 +76,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N''
 
 INSERT INTO [AllTypes]
 (
@@ -94,16 +94,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N''
 
 INSERT INTO [AllTypes]
 (
@@ -112,16 +112,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -130,16 +130,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -148,16 +148,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -166,16 +166,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -184,16 +184,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -202,16 +202,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -220,16 +220,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -238,16 +238,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -256,16 +256,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -274,16 +274,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -292,16 +292,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -310,16 +310,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -328,16 +328,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = N'　'
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = N' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = N'　'
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = N' '
 
 INSERT INTO [AllTypes]
 (
@@ -346,16 +346,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = char(0)
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = char(0)
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = char(0)
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = char(0)
 
 INSERT INTO [AllTypes]
 (
@@ -364,16 +364,16 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @NChar_1 NChar -- StringFixedLength
-SET     @NChar_1 = NULL
-DECLARE @Char_1 NChar -- StringFixedLength
-SET     @Char_1 = NULL
+DECLARE @NChar NChar -- StringFixedLength
+SET     @NChar = NULL
+DECLARE @Char NChar -- StringFixedLength
+SET     @Char = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -382,8 +382,8 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar_1,
-	@Char_1
+	@NChar,
+	@Char
 )
 
 BeforeExecute

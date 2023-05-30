@@ -29,8 +29,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 0
+DECLARE @Column Bit -- Boolean
+SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = 1
 
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SqlServer.2017
@@ -66,8 +66,8 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 1
+DECLARE @Column Bit -- Boolean
+SET     @Column = 1
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = NULL
 
@@ -80,7 +80,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -88,8 +88,8 @@ BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Bit -- Boolean
-SET     @Column_1 = 0
+DECLARE @Column Bit -- Boolean
+SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = 1
 
@@ -102,7 +102,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
