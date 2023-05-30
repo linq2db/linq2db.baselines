@@ -21,8 +21,8 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @NotIdentifier Int -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 5
+DECLARE @Value Int -- Int32
+SET     @Value = 5
 
 INSERT INTO [DynamicTable]
 (
@@ -32,15 +32,15 @@ INSERT INTO [DynamicTable]
 VALUES
 (
 	@NotIdentifier,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
 DECLARE @NotIdentifier Int -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 5
+DECLARE @Value Int -- Int32
+SET     @Value = 5
 
 INSERT INTO [DynamicTable]
 (
@@ -50,7 +50,7 @@ INSERT INTO [DynamicTable]
 VALUES
 (
 	@NotIdentifier,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_2 Int -- Int32
-SET     @Value_2 = NULL
+DECLARE @Value Int -- Int32
+SET     @Value = NULL
 
 SELECT
-	@Value_2
+	@Value
 
