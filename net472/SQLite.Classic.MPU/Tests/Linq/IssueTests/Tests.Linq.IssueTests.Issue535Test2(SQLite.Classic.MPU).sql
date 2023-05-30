@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS [CustomerBase]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @filter_2 NVarChar(6) -- String
-SET     @filter_2 = '%test%'
-DECLARE @filter_3 NVarChar(6) -- String
-SET     @filter_3 = '%test%'
+DECLARE @filter NVarChar(6) -- String
+SET     @filter = '%test%'
+DECLARE @filter_1 NVarChar(6) -- String
+SET     @filter_1 = '%test%'
 
 SELECT
 	[q].[Id],
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter_2 ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_3 ESCAPE '~')
+	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE '~')
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

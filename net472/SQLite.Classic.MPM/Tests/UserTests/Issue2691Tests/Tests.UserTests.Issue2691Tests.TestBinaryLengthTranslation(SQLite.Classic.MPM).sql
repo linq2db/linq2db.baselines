@@ -19,8 +19,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 99
-DECLARE @Data_1 Binary(5)
-SET     @Data_1 = X'0102030405'
+DECLARE @Data Binary(5)
+SET     @Data = X'0102030405'
 DECLARE @DataB Binary(6)
 SET     @DataB = X'010203040506'
 
@@ -33,7 +33,7 @@ INSERT INTO [Issue2691Table]
 VALUES
 (
 	@Id,
-	@Data_1,
+	@Data,
 	@DataB
 )
 

@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p_1  -- Int32
-SET     @p_1 = 4
+DECLARE @p  -- Int32
+SET     @p = 4
 
 SELECT
 	[t].[Id],
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	(Cast([t].[Flags] as INTEGER) & @p_1) <> 0
+	(Cast([t].[Flags] as INTEGER) & @p) <> 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
