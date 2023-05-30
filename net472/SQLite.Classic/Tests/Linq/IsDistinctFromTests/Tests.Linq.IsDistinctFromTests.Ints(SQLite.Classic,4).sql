@@ -30,51 +30,51 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT @value_1
+	[s].[Int] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NOT @value_1
+	[s].[NullableInt] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS @value_1
+	[s].[Int] IS @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1  -- Int32
-SET     @value_1 = 4
+DECLARE @value  -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS @value_1
+	[s].[NullableInt] IS @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
