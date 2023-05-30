@@ -23,8 +23,8 @@ END
 
 BeforeExecute
 -- Firebird
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ValueStr VarChar(8) -- String
@@ -38,7 +38,7 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	Cast(@Value_1 as Int),
+	Cast(@Value as Int),
 	Cast(@Id as Int),
 	Cast(@ValueStr as VarChar(50) CHARACTER SET UNICODE_FSS)
 )

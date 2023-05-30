@@ -43,10 +43,10 @@ END
 
 BeforeExecute
 -- Firebird
-DECLARE @filter_2 VarChar(6) -- String
-SET     @filter_2 = '%test%'
-DECLARE @filter_3 VarChar(6) -- String
-SET     @filter_3 = '%test%'
+DECLARE @filter VarChar(6) -- String
+SET     @filter = '%test%'
+DECLARE @filter_1 VarChar(6) -- String
+SET     @filter_1 = '%test%'
 
 SELECT
 	"q"."Id",
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"CustomerBase" "q"
 WHERE
-	"q"."ClientType" = 'Client' AND ("q"."Name" LIKE @filter_2 ESCAPE '~' OR "q"."ContactEmail" LIKE @filter_3 ESCAPE '~')
+	"q"."ClientType" = 'Client' AND ("q"."Name" LIKE @filter ESCAPE '~' OR "q"."ContactEmail" LIKE @filter_1 ESCAPE '~')
 
 BeforeExecute
 -- Firebird

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @personId_1 Integer -- Int32
-SET     @personId_1 = 2
+DECLARE @personId Integer -- Int32
+SET     @personId = 2
 
 SELECT
 	CASE
@@ -23,7 +23,7 @@ SELECT
 							FROM
 								"Patient" "t3"
 							WHERE
-								"t3"."PersonID" = @personId_1 AND "t3"."PersonID" = "t2"."PersonID"
+								"t3"."PersonID" = @personId AND "t3"."PersonID" = "t2"."PersonID"
 						)
 				) = 0 AND
 				(
@@ -32,7 +32,7 @@ SELECT
 					FROM
 						"Patient" "t4"
 					WHERE
-						"t4"."PersonID" = @personId_1 AND NOT EXISTS(
+						"t4"."PersonID" = @personId AND NOT EXISTS(
 							SELECT
 								*
 							FROM

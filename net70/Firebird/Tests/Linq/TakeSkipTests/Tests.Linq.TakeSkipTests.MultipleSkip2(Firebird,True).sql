@@ -33,10 +33,10 @@ SELECT 'BOLTO' FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @skip_2 Integer -- Int32
-SET     @skip_2 = 3
+DECLARE @skip Integer -- Int32
+SET     @skip = 3
 
-SELECT SKIP @skip_2
+SELECT SKIP @skip
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
@@ -45,10 +45,10 @@ ORDER BY
 
 BeforeExecute
 -- Firebird
-DECLARE @skip_2 Integer -- Int32
-SET     @skip_2 = 4
+DECLARE @skip Integer -- Int32
+SET     @skip = 4
 
-SELECT SKIP @skip_2
+SELECT SKIP @skip
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
