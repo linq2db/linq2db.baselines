@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 41
+DECLARE @p Int -- Int32
+SET     @p = 41
 
 SELECT
-	DateAdd(second, @p_1, [t].[DateTimeValue])
+	DateAdd(second, @p, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
