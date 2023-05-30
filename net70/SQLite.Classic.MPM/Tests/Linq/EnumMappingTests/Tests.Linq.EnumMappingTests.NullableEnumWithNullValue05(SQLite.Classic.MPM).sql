@@ -12,8 +12,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 101
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 11
+DECLARE @Value  -- Int32
+SET     @Value = 11
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,15 +23,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 102
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 0
+DECLARE @Value  -- Int32
+SET     @Value = 0
 
 INSERT INTO [LinqDataTypes]
 (
@@ -41,15 +41,15 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 103
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = NULL
+DECLARE @Value  -- Int32
+SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -59,7 +59,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

@@ -28,10 +28,10 @@ ORDER BY
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take_1  -- Int32
-SET     @take_1 = 1
 DECLARE @take  -- Int32
-SET     @take = 5000
+SET     @take = 1
+DECLARE @take_1  -- Int32
+SET     @take_1 = 5000
 
 SELECT
 	[t].[ParentID],
@@ -65,11 +65,11 @@ SELECT
 			[c_3].[ParentID] > 0
 		ORDER BY
 			[c_3].[ChildID]
-		LIMIT @take_1
+		LIMIT @take
 	)
 FROM
 	[Parent] [t]
 WHERE
 	[t].[ParentID] > 0
-LIMIT @take
+LIMIT @take_1
 

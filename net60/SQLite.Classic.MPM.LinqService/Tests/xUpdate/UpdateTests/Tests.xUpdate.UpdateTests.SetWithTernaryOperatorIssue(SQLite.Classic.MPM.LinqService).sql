@@ -36,13 +36,13 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value_1 NChar(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @Value NChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person]
 SET
-	[Gender] = @Value_1
+	[Gender] = @Value
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 

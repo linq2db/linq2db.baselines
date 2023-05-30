@@ -39,15 +39,15 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Property  -- Object
 SET     @Property = 'banana'
-DECLARE @filter_1  -- Object
-SET     @filter_1 = 1
+DECLARE @filter  -- Object
+SET     @filter = 1
 
 UPDATE
 	[BananaTable]
 SET
 	[Property] = @Property
 WHERE
-	[BananaTable].[Id] = @filter_1
+	[BananaTable].[Id] = @filter
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

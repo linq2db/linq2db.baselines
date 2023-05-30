@@ -16,8 +16,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 2
+DECLARE @Value  -- Int32
+SET     @Value = 2
 
 INSERT INTO [sample_table_temp]
 (
@@ -27,7 +27,7 @@ INSERT INTO [sample_table_temp]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
