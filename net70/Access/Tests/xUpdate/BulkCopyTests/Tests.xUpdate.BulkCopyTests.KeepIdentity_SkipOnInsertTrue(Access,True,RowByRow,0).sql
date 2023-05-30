@@ -5,8 +5,8 @@ ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO [AllTypes]
 (
@@ -14,7 +14,7 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

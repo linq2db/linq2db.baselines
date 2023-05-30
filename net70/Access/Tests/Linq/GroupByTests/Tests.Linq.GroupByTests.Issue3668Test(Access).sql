@@ -6,15 +6,15 @@ DECLARE @name VarWChar(4) -- String
 SET     @name = 'test'
 DECLARE @name_1 VarWChar(4) -- String
 SET     @name_1 = 'test'
-DECLARE @id_2 Integer -- Int32
-SET     @id_2 = 2
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 2
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @id AND [x].[LastName] <> @name OR [x].[FirstName] <> @name_1 AND [x].[PersonID] = @id_2)
+	([x].[PersonID] = @id AND [x].[LastName] <> @name OR [x].[FirstName] <> @name_1 AND [x].[PersonID] = @id_1)
 GROUP BY
 	[x].[PersonID]
 
@@ -26,8 +26,8 @@ DECLARE @LastName VarWChar(4) -- String
 SET     @LastName = 'test'
 DECLARE @LastName_1 VarWChar(4) -- String
 SET     @LastName_1 = 'test'
-DECLARE @p_2 Integer -- Int32
-SET     @p_2 = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 1
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p_2) AND
+	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p) AND
 	[x].[PersonID] = @ID_1
 
 BeforeExecute
@@ -51,8 +51,8 @@ DECLARE @LastName VarWChar(4) -- String
 SET     @LastName = 'test'
 DECLARE @LastName_1 VarWChar(4) -- String
 SET     @LastName_1 = 'test'
-DECLARE @p_2 Integer -- Int32
-SET     @p_2 = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 2
 
@@ -65,6 +65,6 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p_2) AND
+	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p) AND
 	[x].[PersonID] = @ID_1
 

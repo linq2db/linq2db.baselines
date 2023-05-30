@@ -34,8 +34,8 @@ DECLARE @inserted NVarChar(22) -- String
 SET     @inserted = '[{"Value":"inserted"}]'
 DECLARE @boolValue VarChar(1) -- AnsiString
 SET     @boolValue = 'Y'
-DECLARE @boolValue_1 VarChar(1) -- AnsiString
-SET     @boolValue_1 = 'T'
+DECLARE @boolValue VarChar(1) -- AnsiString
+SET     @boolValue = 'T'
 
 INSERT INTO [ValueConversion]
 (

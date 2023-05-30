@@ -22,8 +22,8 @@ GROUP BY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p_1 Boolean
-SET     @p_1 = False
+DECLARE @p Boolean
+SET     @p = False
 
 SELECT
 	[underscore].[ParentID],
@@ -45,5 +45,5 @@ FROM
 			[Parent] [selectParam]
 	) [underscore]
 WHERE
-	[underscore].[Key_1] = @p_1
+	[underscore].[Key_1] = @p
 

@@ -8,15 +8,15 @@ DELETE FROM
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Data_1 Integer -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	[InheritanceParent] [t1]
 SET
-	[t1].[TypeDiscriminator] = @Data_1
+	[t1].[TypeDiscriminator] = @Data
 WHERE
 	[t1].[InheritanceParentId] = @Key1 AND [t1].[Name] IS NULL
 
@@ -26,8 +26,8 @@ DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarWChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Integer -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer -- Int32
+SET     @Data = 1
 
 INSERT INTO [InheritanceParent]
 (
@@ -39,7 +39,7 @@ VALUES
 (
 	@Key1,
 	@Key2,
-	@Data_1
+	@Data
 )
 
 BeforeExecute
@@ -52,15 +52,15 @@ FROM
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Data_1 Integer -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Integer -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	[InheritanceParent] [t1]
 SET
-	[t1].[TypeDiscriminator] = @Data_1
+	[t1].[TypeDiscriminator] = @Data
 WHERE
 	[t1].[InheritanceParentId] = @Key1 AND [t1].[Name] IS NULL
 

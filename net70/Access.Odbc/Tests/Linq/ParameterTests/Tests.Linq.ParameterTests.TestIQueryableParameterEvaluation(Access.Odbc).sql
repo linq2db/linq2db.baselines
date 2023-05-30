@@ -4,8 +4,8 @@ DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 0
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Int -- Int32
+SET     @ID = 2
 
 SELECT
 	[_].[FirstName],
@@ -46,8 +46,8 @@ DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 2
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 3
+DECLARE @ID Int -- Int32
+SET     @ID = 3
 
 SELECT
 	[_].[FirstName],
@@ -86,8 +86,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 4
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Int -- Int32
+SET     @ID = 2
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 3
 
@@ -130,8 +130,8 @@ DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 0
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Int -- Int32
+SET     @ID = 2
 
 SELECT
 	[_].[FirstName],
@@ -170,8 +170,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 4
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @ID Int -- Int32
+SET     @ID = 2
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 3
 
@@ -214,8 +214,8 @@ DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 2
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 3
+DECLARE @ID Int -- Int32
+SET     @ID = 3
 
 SELECT
 	[_].[FirstName],

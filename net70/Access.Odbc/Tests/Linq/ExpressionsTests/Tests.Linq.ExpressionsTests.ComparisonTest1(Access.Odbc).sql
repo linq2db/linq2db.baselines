@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @personId_1 Int -- Int32
-SET     @personId_1 = 2
-DECLARE @personId_2 Int -- Int32
-SET     @personId_2 = 2
+DECLARE @personId Int -- Int32
+SET     @personId = 2
+DECLARE @personId Int -- Int32
+SET     @personId = 2
 
 SELECT
 	Count(*) > 0

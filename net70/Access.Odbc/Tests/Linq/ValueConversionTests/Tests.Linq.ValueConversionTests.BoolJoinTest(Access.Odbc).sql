@@ -526,8 +526,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar(1) -- AnsiString
-SET     @BoolValue_2 = 'Y'
+DECLARE @BoolValue VarChar(1) -- AnsiString
+SET     @BoolValue = 'Y'
 
 SELECT
 	[t1].[Enum]

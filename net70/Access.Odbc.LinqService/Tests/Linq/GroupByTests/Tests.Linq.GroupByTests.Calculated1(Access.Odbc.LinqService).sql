@@ -15,8 +15,8 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p_1 NVarChar(1) -- String
-SET     @p_1 = '1'
+DECLARE @Parameter1 NVarChar(1) -- String
+SET     @Parameter1 = '1'
 
 SELECT
 	[selectParam].[ParentID],

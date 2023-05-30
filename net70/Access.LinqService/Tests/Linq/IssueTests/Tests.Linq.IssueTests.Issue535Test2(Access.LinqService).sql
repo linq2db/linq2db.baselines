@@ -19,10 +19,10 @@ CREATE TABLE [CustomerBase]
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @filter VarWChar(6) -- String
+SET     @filter = '%test%'
 DECLARE @filter_1 VarWChar(6) -- String
 SET     @filter_1 = '%test%'
-DECLARE @filter_2 VarWChar(6) -- String
-SET     @filter_2 = '%test%'
 
 SELECT
 	[q].[Id],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter_1 OR [q].[ContactEmail] LIKE @filter_2)
+	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter OR [q].[ContactEmail] LIKE @filter_1)
 
 BeforeExecute
 -- Access AccessOleDb

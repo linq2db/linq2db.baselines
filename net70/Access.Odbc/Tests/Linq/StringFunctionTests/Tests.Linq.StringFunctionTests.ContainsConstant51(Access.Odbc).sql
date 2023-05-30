@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @ps_1 NVarChar(5) -- String
-SET     @ps_1 = '%[[]%'
+DECLARE @ps NVarChar(5) -- String
+SET     @ps = '%[[]%'
 
 SELECT
 	Count(*)

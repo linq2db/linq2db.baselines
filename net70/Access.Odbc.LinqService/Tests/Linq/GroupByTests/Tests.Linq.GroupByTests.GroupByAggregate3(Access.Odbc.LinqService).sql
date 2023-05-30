@@ -22,8 +22,8 @@ GROUP BY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p_1 Bit -- Boolean
-SET     @p_1 = False
+DECLARE @Parameter1 Bit -- Boolean
+SET     @Parameter1 = False
 
 SELECT
 	[underscore].[ParentID],
