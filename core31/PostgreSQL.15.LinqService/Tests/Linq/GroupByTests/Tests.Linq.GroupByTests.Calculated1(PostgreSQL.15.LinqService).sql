@@ -23,8 +23,8 @@ GROUP BY
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @p_1 Text(1) -- String
-SET     @p_1 = '1'
+DECLARE @p Text(1) -- String
+SET     @p = '1'
 
 SELECT
 	"selectParam"."ParentID",
@@ -40,5 +40,5 @@ WHERE
 			ELSE '2'
 		END
 		ELSE '3'
-	END = :p_1
+	END = :p
 

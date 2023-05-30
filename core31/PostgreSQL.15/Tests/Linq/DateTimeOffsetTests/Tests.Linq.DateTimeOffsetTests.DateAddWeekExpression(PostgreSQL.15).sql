@@ -16,36 +16,36 @@ CREATE TABLE IF NOT EXISTS "Transactions"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @p1 TimestampTz -- DateTime
-SET     @p1 = '2020-02-29T17:14:55.1231234+00:00'
-DECLARE @p2 TimestampTz -- DateTime
-SET     @p2 = '2021-02-28T17:14:55.1231234+00:00'
-DECLARE @p3 TimestampTz -- DateTime
-SET     @p3 = '2019-02-28T17:14:55.1231234+00:00'
-DECLARE @p4 TimestampTz -- DateTime
-SET     @p4 = '2020-03-29T17:14:55.1231234+00:00'
-DECLARE @p5 TimestampTz -- DateTime
-SET     @p5 = '2020-01-29T17:14:55.1231234+00:00'
-DECLARE @p6 TimestampTz -- DateTime
-SET     @p6 = '2020-03-01T17:14:55.1231234+00:00'
-DECLARE @p7 TimestampTz -- DateTime
-SET     @p7 = '2020-02-28T17:14:55.1231234+00:00'
-DECLARE @p8 TimestampTz -- DateTime
-SET     @p8 = '2020-02-29T18:14:55.1231234+00:00'
-DECLARE @p9 TimestampTz -- DateTime
-SET     @p9 = '2020-02-29T16:14:55.1231234+00:00'
-DECLARE @p10 TimestampTz -- DateTime
-SET     @p10 = '2020-02-29T17:15:55.1231234+00:00'
-DECLARE @p11 TimestampTz -- DateTime
-SET     @p11 = '2020-02-29T17:13:55.1231234+00:00'
-DECLARE @p12 TimestampTz -- DateTime
-SET     @p12 = '2020-02-29T17:14:56.1231234+00:00'
-DECLARE @p13 TimestampTz -- DateTime
-SET     @p13 = '2020-02-29T17:14:54.1231234+00:00'
-DECLARE @p14 TimestampTz -- DateTime
-SET     @p14 = '2020-02-29T17:14:55.1241234+00:00'
-DECLARE @p15 TimestampTz -- DateTime
-SET     @p15 = '2020-02-29T17:14:55.1221234+00:00'
+DECLARE @:p1 TimestampTz -- DateTime
+SET     @:p1 = '2020-02-29T17:14:55.1231234+00:00'
+DECLARE @:p2 TimestampTz -- DateTime
+SET     @:p2 = '2021-02-28T17:14:55.1231234+00:00'
+DECLARE @:p3 TimestampTz -- DateTime
+SET     @:p3 = '2019-02-28T17:14:55.1231234+00:00'
+DECLARE @:p4 TimestampTz -- DateTime
+SET     @:p4 = '2020-03-29T17:14:55.1231234+00:00'
+DECLARE @:p5 TimestampTz -- DateTime
+SET     @:p5 = '2020-01-29T17:14:55.1231234+00:00'
+DECLARE @:p6 TimestampTz -- DateTime
+SET     @:p6 = '2020-03-01T17:14:55.1231234+00:00'
+DECLARE @:p7 TimestampTz -- DateTime
+SET     @:p7 = '2020-02-28T17:14:55.1231234+00:00'
+DECLARE @:p8 TimestampTz -- DateTime
+SET     @:p8 = '2020-02-29T18:14:55.1231234+00:00'
+DECLARE @:p9 TimestampTz -- DateTime
+SET     @:p9 = '2020-02-29T16:14:55.1231234+00:00'
+DECLARE @:p10 TimestampTz -- DateTime
+SET     @:p10 = '2020-02-29T17:15:55.1231234+00:00'
+DECLARE @:p11 TimestampTz -- DateTime
+SET     @:p11 = '2020-02-29T17:13:55.1231234+00:00'
+DECLARE @:p12 TimestampTz -- DateTime
+SET     @:p12 = '2020-02-29T17:14:56.1231234+00:00'
+DECLARE @:p13 TimestampTz -- DateTime
+SET     @:p13 = '2020-02-29T17:14:54.1231234+00:00'
+DECLARE @:p14 TimestampTz -- DateTime
+SET     @:p14 = '2020-02-29T17:14:55.1241234+00:00'
+DECLARE @:p15 TimestampTz -- DateTime
+SET     @:p15 = '2020-02-29T17:14:55.1221234+00:00'
 
 INSERT INTO "Transactions"
 (
@@ -71,11 +71,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = -1
+DECLARE @p Integer -- Int32
+SET     @p = -1
 
 SELECT
-	t."TransactionDate" + :p_1 * Interval '1 Day' * 7
+	t."TransactionDate" + :p * Interval '1 Day' * 7
 FROM
 	"Transactions" t
 

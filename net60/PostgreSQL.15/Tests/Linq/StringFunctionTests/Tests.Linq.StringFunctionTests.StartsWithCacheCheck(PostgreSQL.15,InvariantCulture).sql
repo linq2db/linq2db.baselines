@@ -13,51 +13,51 @@ LIMIT :take
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :nameToCheck_1 ESCAPE '~' AND
+	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @nameToCheck_1 Text(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Text(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :nameToCheck_1 ESCAPE '~' AND
+	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 

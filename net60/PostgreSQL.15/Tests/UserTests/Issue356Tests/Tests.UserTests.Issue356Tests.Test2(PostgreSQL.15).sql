@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 10
 DECLARE @take Integer -- Int32
 SET     @take = 10
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 10
 
 SELECT
 	cp."ParentID",
@@ -30,11 +30,11 @@ FROM
 				) t3
 			ORDER BY
 				t3."ParentID"
-			LIMIT :take_1
+			LIMIT :take
 		) c_1 ON 1=1
 WHERE
 	c_1."ParentID" = cp."ParentID"
 ORDER BY
 	cp."ParentID"
-LIMIT :take
+LIMIT :take_1
 
