@@ -53,11 +53,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -8
+DECLARE @p Int -- Int32
+SET     @p = -8
 
 SELECT
-	DateAdd(minute, @p_1, [t].[TransactionDate])
+	DateAdd(minute, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
