@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Local_id  -- Int32
-SET     @Local_id = 1
+DECLARE @VBLocal_id  -- Int32
+SET     @VBLocal_id = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @Local_id
+	[p].[ParentID] = @VBLocal_id
 

@@ -107,8 +107,8 @@ GROUP BY
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @p_1  -- Boolean
-SET     @p_1 = 0
+DECLARE @p  -- Boolean
+SET     @p = 0
 
 SELECT
 	[underscore].[CustomerID],
@@ -152,5 +152,5 @@ FROM
 			[Customers] [selectParam]
 	) [underscore]
 WHERE
-	[underscore].[Key_1] = @p_1
+	[underscore].[Key_1] = @p
 

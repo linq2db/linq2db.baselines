@@ -34,12 +34,12 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @p_1  -- Int32
-SET     @p_1 = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
-		WHEN @p_1 IN (
+		WHEN @p IN (
 			SELECT
 				[c_1].[Id]
 			FROM

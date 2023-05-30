@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p_1 NVarChar(5) -- String
-SET     @p_1 = '2010-'
+DECLARE @p NVarChar(5) -- String
+SET     @p = '2010-'
 
 SELECT
 	[t].[c1]
 FROM
 	(
 		SELECT
-			Date(@p_1 || printf('%02d', [p].[ID]) || '-01') as [c1]
+			Date(@p || printf('%02d', [p].[ID]) || '-01') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
