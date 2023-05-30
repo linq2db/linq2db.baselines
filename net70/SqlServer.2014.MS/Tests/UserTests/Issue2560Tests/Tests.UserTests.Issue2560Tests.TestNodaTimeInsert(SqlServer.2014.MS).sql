@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 0
-DECLARE @Value_1 DateTime
-SET     @Value_1 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
+DECLARE @Value DateTime
+SET     @Value = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 INSERT INTO [DataClass]
 (
@@ -29,7 +29,7 @@ INSERT INTO [DataClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

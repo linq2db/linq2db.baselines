@@ -92,12 +92,12 @@ IF (OBJECT_ID(N'[Flat]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @cpty NVarChar(4000) -- String
+SET     @cpty = N'%C%'
 DECLARE @cpty_1 NVarChar(4000) -- String
 SET     @cpty_1 = N'%C%'
 DECLARE @cpty_2 NVarChar(4000) -- String
 SET     @cpty_2 = N'%C%'
-DECLARE @cpty_3 NVarChar(4000) -- String
-SET     @cpty_3 = N'%C%'
 
 SELECT
 	[al_1].[alert],
@@ -120,7 +120,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId])
 		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId])
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty_1 ESCAPE N'~' OR [trade1].[CounterParty] LIKE @cpty_2 ESCAPE N'~') OR [al_1].[alert_1] LIKE @cpty_3 ESCAPE N'~')
+	(([nomin1].[DeliveryCounterParty] LIKE @cpty ESCAPE N'~' OR [trade1].[CounterParty] LIKE @cpty_1 ESCAPE N'~') OR [al_1].[alert_1] LIKE @cpty_2 ESCAPE N'~')
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],
