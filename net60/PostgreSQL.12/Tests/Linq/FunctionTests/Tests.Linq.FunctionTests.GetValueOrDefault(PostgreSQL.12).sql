@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @default_1 Integer -- Int32
-SET     @default_1 = 0
+DECLARE @_default Integer -- Int32
+SET     @_default = 0
 
 SELECT
 	p."Value1"
 FROM
 	"Parent" p
 WHERE
-	Coalesce(p."Value1", :default_1) > 0
+	Coalesce(p."Value1", :_default) > 0
 

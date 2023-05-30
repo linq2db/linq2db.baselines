@@ -19,10 +19,10 @@ CREATE TABLE IF NOT EXISTS "CustomerBase"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @filter Text(6) -- String
+SET     @filter = '%test%'
 DECLARE @filter_1 Text(6) -- String
 SET     @filter_1 = '%test%'
-DECLARE @filter_2 Text(6) -- String
-SET     @filter_2 = '%test%'
 
 SELECT
 	q."Id",
@@ -32,7 +32,7 @@ SELECT
 FROM
 	"CustomerBase" q
 WHERE
-	q."ClientType" = 'Client' AND (q."Name" LIKE :filter_1 ESCAPE '~' OR q."ContactEmail" LIKE :filter_2 ESCAPE '~')
+	q."ClientType" = 'Client' AND (q."Name" LIKE :filter ESCAPE '~' OR q."ContactEmail" LIKE :filter_1 ESCAPE '~')
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
