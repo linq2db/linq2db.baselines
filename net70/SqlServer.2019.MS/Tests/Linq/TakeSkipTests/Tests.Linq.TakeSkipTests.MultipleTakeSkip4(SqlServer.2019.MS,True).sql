@@ -32,10 +32,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @skip_3 Int -- Int32
-SET     @skip_3 = 3
-DECLARE @take_3 Int -- Int32
-SET     @take_3 = 2
+DECLARE @skip Int -- Int32
+SET     @skip = 3
+DECLARE @take Int -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[Value]
@@ -43,7 +43,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip_3 ROWS FETCH NEXT @take_3 ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
