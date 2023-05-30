@@ -81,10 +81,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @likeA_1 NVarChar(4000) -- String
-SET     @likeA_1 = N'A%'
-DECLARE @likeL_1 NVarChar(4000) -- String
-SET     @likeL_1 = N'L%'
+DECLARE @likeA NVarChar(4000) -- String
+SET     @likeA = N'A%'
+DECLARE @likeL NVarChar(4000) -- String
+SET     @likeL = N'L%'
 
 SELECT
 	[c_1].[CustomerID],
@@ -101,5 +101,5 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	([c_1].[CustomerID] LIKE @likeA_1 ESCAPE N'~' OR [c_1].[CustomerID] LIKE @likeL_1 ESCAPE N'~')
+	([c_1].[CustomerID] LIKE @likeA ESCAPE N'~' OR [c_1].[CustomerID] LIKE @likeL ESCAPE N'~')
 

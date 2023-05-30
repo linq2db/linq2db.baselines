@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @p_1 NVarChar(4000) -- String
-SET     @p_1 = N'sweetest candy bread and dry meat'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'sweetest candy bread and dry meat'
 
 SELECT
 	[t].[ProductID],
@@ -16,7 +16,7 @@ SELECT
 	[t].[Discontinued]
 FROM
 	[Products] [t]
-		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), @p_1) [f] ON [f].[KEY] = [t].[CategoryID]
+		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), @p) [f] ON [f].[KEY] = [t].[CategoryID]
 ORDER BY
 	[t].[ProductName] DESC
 

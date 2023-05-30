@@ -103,8 +103,8 @@ GROUP BY
 
 BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @p_1 Bit -- Boolean
-SET     @p_1 = 0
+DECLARE @p Bit -- Boolean
+SET     @p = 0
 
 SELECT
 	[underscore].[CustomerID],
@@ -144,5 +144,5 @@ FROM
 			[Customers] [selectParam]
 	) [underscore]
 WHERE
-	[underscore].[Key_1] = @p_1
+	[underscore].[Key_1] = @p
 

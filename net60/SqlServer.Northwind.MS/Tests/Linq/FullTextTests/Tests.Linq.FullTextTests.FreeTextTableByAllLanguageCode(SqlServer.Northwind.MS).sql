@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @p_1 NVarChar(4000) -- String
-SET     @p_1 = N'seafood bread'
-DECLARE @p_2 Int -- Int32
-SET     @p_2 = 1062
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'seafood bread'
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1062
 
 SELECT
 	[c_1].[CategoryID],
@@ -12,7 +12,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN FREETEXTTABLE([Categories], *, @p_1, LANGUAGE @p_2) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN FREETEXTTABLE([Categories], *, @p, LANGUAGE @p_1) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 
