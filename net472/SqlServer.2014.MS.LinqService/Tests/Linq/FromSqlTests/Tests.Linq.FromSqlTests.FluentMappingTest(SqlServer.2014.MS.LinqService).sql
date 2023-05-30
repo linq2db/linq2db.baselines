@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_1'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_1'
 
 INSERT INTO [sample_class]
 (
@@ -29,15 +29,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_2'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_2'
 
 INSERT INTO [sample_class]
 (
@@ -47,15 +47,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_3'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_3'
 
 INSERT INTO [sample_class]
 (
@@ -65,15 +65,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_4'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_4'
 
 INSERT INTO [sample_class]
 (
@@ -83,15 +83,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_5'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_5'
 
 INSERT INTO [sample_class]
 (
@@ -101,15 +101,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_6'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_6'
 
 INSERT INTO [sample_class]
 (
@@ -119,15 +119,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 7
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_7'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_7'
 
 INSERT INTO [sample_class]
 (
@@ -137,15 +137,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 8
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_8'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_8'
 
 INSERT INTO [sample_class]
 (
@@ -155,15 +155,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 9
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_9'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_9'
 
 INSERT INTO [sample_class]
 (
@@ -173,15 +173,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_10'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_10'
 
 INSERT INTO [sample_class]
 (
@@ -191,15 +191,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_11'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_11'
 
 INSERT INTO [sample_class]
 (
@@ -209,15 +209,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 12
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_12'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_12'
 
 INSERT INTO [sample_class]
 (
@@ -227,15 +227,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 13
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_13'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_13'
 
 INSERT INTO [sample_class]
 (
@@ -245,15 +245,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 14
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_14'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_14'
 
 INSERT INTO [sample_class]
 (
@@ -263,15 +263,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 15
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_15'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_15'
 
 INSERT INTO [sample_class]
 (
@@ -281,15 +281,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 16
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_16'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_16'
 
 INSERT INTO [sample_class]
 (
@@ -299,15 +299,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 17
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_17'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_17'
 
 INSERT INTO [sample_class]
 (
@@ -317,15 +317,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 18
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_18'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_18'
 
 INSERT INTO [sample_class]
 (
@@ -335,15 +335,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 19
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_19'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_19'
 
 INSERT INTO [sample_class]
 (
@@ -353,15 +353,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 20
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_20'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_20'
 
 INSERT INTO [sample_class]
 (
@@ -371,7 +371,7 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -439,8 +439,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_1'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_1'
 
 INSERT INTO [sample_class]
 (
@@ -450,15 +450,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_2'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_2'
 
 INSERT INTO [sample_class]
 (
@@ -468,15 +468,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_3'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_3'
 
 INSERT INTO [sample_class]
 (
@@ -486,15 +486,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_4'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_4'
 
 INSERT INTO [sample_class]
 (
@@ -504,15 +504,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_5'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_5'
 
 INSERT INTO [sample_class]
 (
@@ -522,15 +522,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_6'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_6'
 
 INSERT INTO [sample_class]
 (
@@ -540,15 +540,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 7
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_7'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_7'
 
 INSERT INTO [sample_class]
 (
@@ -558,15 +558,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 8
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_8'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_8'
 
 INSERT INTO [sample_class]
 (
@@ -576,15 +576,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 9
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_9'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_9'
 
 INSERT INTO [sample_class]
 (
@@ -594,15 +594,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_10'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_10'
 
 INSERT INTO [sample_class]
 (
@@ -612,15 +612,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_11'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_11'
 
 INSERT INTO [sample_class]
 (
@@ -630,15 +630,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 12
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_12'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_12'
 
 INSERT INTO [sample_class]
 (
@@ -648,15 +648,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 13
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_13'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_13'
 
 INSERT INTO [sample_class]
 (
@@ -666,15 +666,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 14
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_14'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_14'
 
 INSERT INTO [sample_class]
 (
@@ -684,15 +684,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 15
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_15'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_15'
 
 INSERT INTO [sample_class]
 (
@@ -702,15 +702,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 16
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_16'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_16'
 
 INSERT INTO [sample_class]
 (
@@ -720,15 +720,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 17
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_17'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_17'
 
 INSERT INTO [sample_class]
 (
@@ -738,15 +738,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 18
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_18'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_18'
 
 INSERT INTO [sample_class]
 (
@@ -756,15 +756,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 19
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_19'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_19'
 
 INSERT INTO [sample_class]
 (
@@ -774,15 +774,15 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 20
-DECLARE @Value_1 NVarChar(50) -- String
-SET     @Value_1 = N'Str_20'
+DECLARE @Value NVarChar(50) -- String
+SET     @Value = N'Str_20'
 
 INSERT INTO [sample_class]
 (
@@ -792,7 +792,7 @@ INSERT INTO [sample_class]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
