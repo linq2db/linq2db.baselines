@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
+	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -64,8 +64,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
+DECLARE @Column Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = NULL
 
@@ -78,7 +78,7 @@ INSERT INTO "BooleanTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 
@@ -86,8 +86,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -100,7 +100,7 @@ INSERT INTO "BooleanTable"
 VALUES
 (
 	:Id,
-	:Column_1,
+	:Column,
 	:ColumnNullable
 )
 

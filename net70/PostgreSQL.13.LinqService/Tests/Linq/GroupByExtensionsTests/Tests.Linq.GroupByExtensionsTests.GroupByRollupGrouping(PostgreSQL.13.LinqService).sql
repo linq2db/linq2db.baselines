@@ -19,8 +19,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 1
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO "GroupSampleClass"
 (
@@ -32,7 +32,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -41,8 +41,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 2
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "GroupSampleClass"
 (
@@ -54,7 +54,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -63,8 +63,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 3
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 0
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO "GroupSampleClass"
 (
@@ -76,7 +76,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -85,8 +85,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 4
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "GroupSampleClass"
 (
@@ -98,7 +98,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -107,8 +107,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 5
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO "GroupSampleClass"
 (
@@ -120,7 +120,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -129,8 +129,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 6
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 0
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "GroupSampleClass"
 (
@@ -142,7 +142,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -151,8 +151,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 7
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO "GroupSampleClass"
 (
@@ -164,7 +164,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -173,8 +173,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 8
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "GroupSampleClass"
 (
@@ -186,7 +186,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -195,8 +195,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 9
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 0
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO "GroupSampleClass"
 (
@@ -208,7 +208,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -217,8 +217,8 @@ DECLARE @Id1 Integer -- Int32
 SET     @Id1 = 10
 DECLARE @Id2 Integer -- Int32
 SET     @Id2 = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "GroupSampleClass"
 (
@@ -230,7 +230,7 @@ VALUES
 (
 	:Id1,
 	:Id2,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

@@ -286,11 +286,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 226
+DECLARE @p Integer -- Int32
+SET     @p = 226
 
 SELECT
-	t."TransactionDate" + :p_1 * Interval '1 Millisecond'
+	t."TransactionDate" + :p * Interval '1 Millisecond'
 FROM
 	"Transactions" t
 
