@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue_1 Varchar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Varchar -- String
+SET     @BoolValue = 'N'
 
 SELECT
 	t."Id",
@@ -63,7 +63,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue_1
+	t."BoolValue" = :BoolValue
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL

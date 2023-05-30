@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS "TakeSkipClass"
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value1'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value1'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -22,13 +22,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value2'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value2'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -36,13 +36,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value3'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value3'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -50,13 +50,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value4'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value4'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -64,13 +64,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value5'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value5'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -78,13 +78,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value6'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value6'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -92,13 +92,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value7'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value7'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -106,13 +106,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Varchar(6) -- String
-SET     @Value_1 = 'Value8'
+DECLARE @Value Varchar(6) -- String
+SET     @Value = 'Value8'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -120,7 +120,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
