@@ -89,8 +89,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -104,7 +104,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 DisposeTransaction
@@ -120,8 +120,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -135,7 +135,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 DisposeTransaction
@@ -250,8 +250,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -265,7 +265,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 DisposeTransaction
@@ -281,8 +281,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -296,7 +296,7 @@ FROM
 		FROM
 			[Table404One] [c_1]
 	) [key_data_result]
-		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage_1 AND [_v].[FirstTableId] = [key_data_result].[Id]
+		INNER JOIN [Table404Two] [_v] ON [_v].[Usage] = @Usage AND [_v].[FirstTableId] = [key_data_result].[Id]
 
 BeforeExecute
 DisposeTransaction

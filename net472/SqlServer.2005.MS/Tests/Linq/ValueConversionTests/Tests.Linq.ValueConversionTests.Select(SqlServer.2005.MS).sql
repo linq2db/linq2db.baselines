@@ -138,8 +138,8 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 2
+DECLARE @take Int -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[Value2]
@@ -158,7 +158,7 @@ FROM
 			) [q]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= @take_1
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
