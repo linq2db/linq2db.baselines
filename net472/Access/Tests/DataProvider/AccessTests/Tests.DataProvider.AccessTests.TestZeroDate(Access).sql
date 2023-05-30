@@ -14,8 +14,8 @@ CREATE TABLE [DateTable]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #1899-12-29#
+DECLARE @Date Date -- DateTime
+SET     @Date = #1899-12-29#
 
 INSERT INTO [DateTable]
 (
@@ -25,13 +25,13 @@ INSERT INTO [DateTable]
 VALUES
 (
 	1,
-	@Date_1
+	@Date
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #1899-12-30#
+DECLARE @Date Date -- DateTime
+SET     @Date = #1899-12-30#
 
 INSERT INTO [DateTable]
 (
@@ -41,13 +41,13 @@ INSERT INTO [DateTable]
 VALUES
 (
 	2,
-	@Date_1
+	@Date
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #1899-12-31#
+DECLARE @Date Date -- DateTime
+SET     @Date = #1899-12-31#
 
 INSERT INTO [DateTable]
 (
@@ -57,13 +57,13 @@ INSERT INTO [DateTable]
 VALUES
 (
 	3,
-	@Date_1
+	@Date
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #1900-01-01#
+DECLARE @Date Date -- DateTime
+SET     @Date = #1900-01-01#
 
 INSERT INTO [DateTable]
 (
@@ -73,7 +73,7 @@ INSERT INTO [DateTable]
 VALUES
 (
 	4,
-	@Date_1
+	@Date
 )
 
 BeforeExecute

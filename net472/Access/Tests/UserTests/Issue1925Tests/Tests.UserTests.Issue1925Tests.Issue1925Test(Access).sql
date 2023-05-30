@@ -16,8 +16,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 VarWChar(1) -- String
-SET     @Value_1 = '6'
+DECLARE @Value VarWChar(1) -- String
+SET     @Value = '6'
 
 INSERT INTO [SampleClass]
 (
@@ -27,15 +27,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value_1 VarWChar(7) -- String
-SET     @Value_1 = 'x[0-9]x'
+DECLARE @Value VarWChar(7) -- String
+SET     @Value = 'x[0-9]x'
 
 INSERT INTO [SampleClass]
 (
@@ -45,15 +45,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value_1 VarWChar(4) -- String
-SET     @Value_1 = 'x[0x'
+DECLARE @Value VarWChar(4) -- String
+SET     @Value = 'x[0x'
 
 INSERT INTO [SampleClass]
 (
@@ -63,15 +63,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Value_1 VarWChar(4) -- String
-SET     @Value_1 = 'x[]x'
+DECLARE @Value VarWChar(4) -- String
+SET     @Value = 'x[]x'
 
 INSERT INTO [SampleClass]
 (
@@ -81,15 +81,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
-DECLARE @Value_1 VarWChar(2) -- String
-SET     @Value_1 = 'x]'
+DECLARE @Value VarWChar(2) -- String
+SET     @Value = 'x]'
 
 INSERT INTO [SampleClass]
 (
@@ -99,15 +99,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
-DECLARE @Value_1 VarWChar(2) -- String
-SET     @Value_1 = ']x'
+DECLARE @Value VarWChar(2) -- String
+SET     @Value = ']x'
 
 INSERT INTO [SampleClass]
 (
@@ -117,7 +117,7 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -174,8 +174,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @asParamUnterm_1 VarWChar(6) -- String
-SET     @asParamUnterm_1 = '%[[]0%'
+DECLARE @asParamUnterm VarWChar(6) -- String
+SET     @asParamUnterm = '%[[]0%'
 
 SELECT
 	[r].[Id],
@@ -183,7 +183,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE @asParamUnterm_1
+	[r].[Value] LIKE @asParamUnterm
 
 BeforeExecute
 -- Access AccessOleDb

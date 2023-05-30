@@ -18,8 +18,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Int -- Int32
+SET     @Int = NULL
 DECLARE @Enum NVarChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar -- AnsiString
@@ -44,8 +44,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @Enum NVarChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum VarChar(12) -- AnsiString
@@ -70,8 +70,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value4___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value4___'
 
 SELECT TOP 1
 	[s].[Id]
@@ -96,8 +96,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
@@ -108,8 +108,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
@@ -122,8 +122,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]

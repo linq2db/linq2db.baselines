@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @param4 Boolean
-SET     @param4 = False
+DECLARE @param2 Boolean
+SET     @param2 = False
 
 SELECT
 	[t].[ID],
@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BoolValue] = @param4
+	[t].[BoolValue] = @param2
 

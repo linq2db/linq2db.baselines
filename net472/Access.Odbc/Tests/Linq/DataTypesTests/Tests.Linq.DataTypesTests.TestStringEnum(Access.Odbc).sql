@@ -17,8 +17,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 NVarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column NVarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 NVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column NVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Column_1 NVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column NVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 NVarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column NVarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 NVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column NVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 NVarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column NVarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 NVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column NVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 NVarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column NVarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 NVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column NVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 

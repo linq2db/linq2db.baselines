@@ -2,12 +2,12 @@
 -- Access.Odbc AccessODBC
 DECLARE @someValue Int -- Int32
 SET     @someValue = 3
-DECLARE @someValue_1 Int -- Int32
-SET     @someValue_1 = 3
-DECLARE @someValue_2 Int -- Int32
-SET     @someValue_2 = 3
-DECLARE @someValue_3 Int -- Int32
-SET     @someValue_3 = 3
+DECLARE @someValue Int -- Int32
+SET     @someValue = 3
+DECLARE @someValue Int -- Int32
+SET     @someValue = 3
+DECLARE @someValue Int -- Int32
+SET     @someValue = 3
 
 SELECT
 	CVar(?),

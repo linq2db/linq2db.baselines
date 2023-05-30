@@ -2,8 +2,8 @@
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @input_2 VarWChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input VarWChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[PersonID],
@@ -13,14 +13,14 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON ([_gjd_ri].[PersonID] = [p].[PersonID])
 WHERE
-	LCase([p].[FirstName]) LIKE @input_2
+	LCase([p].[FirstName]) LIKE @input
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @input_2 VarWChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input VarWChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[FirstName],
@@ -28,5 +28,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) LIKE @input_2
+	LCase([p].[FirstName]) LIKE @input
 

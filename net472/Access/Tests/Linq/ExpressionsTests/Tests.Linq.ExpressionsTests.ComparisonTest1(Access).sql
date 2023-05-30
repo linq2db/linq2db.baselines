@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @personId Integer -- Int32
+SET     @personId = 2
 DECLARE @personId_1 Integer -- Int32
 SET     @personId_1 = 2
-DECLARE @personId_2 Integer -- Int32
-SET     @personId_2 = 2
 
 SELECT
 	Count(*) > 0
@@ -22,7 +22,7 @@ WHERE
 				FROM
 					[Patient] [_2]
 				WHERE
-					[_2].[PersonID] = @personId_1
+					[_2].[PersonID] = @personId
 			)
 	) = 0 AND
 	(
@@ -31,7 +31,7 @@ WHERE
 		FROM
 			[Patient] [_3]
 		WHERE
-			[_3].[PersonID] = @personId_2 AND [_3].[PersonID] NOT IN (
+			[_3].[PersonID] = @personId_1 AND [_3].[PersonID] NOT IN (
 				SELECT
 					[_4].[PersonID]
 				FROM

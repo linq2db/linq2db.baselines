@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_3 Int -- Int32
-SET     @Value_3 = 1
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 SELECT
 	?

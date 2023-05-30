@@ -58,8 +58,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -80,8 +80,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -102,8 +102,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -124,8 +124,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -146,8 +146,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -168,8 +168,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -219,8 +219,8 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -250,8 +250,8 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[key_data_result].[Id],
@@ -347,8 +347,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -369,8 +369,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -391,8 +391,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
@@ -413,8 +413,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -435,8 +435,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -457,8 +457,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
@@ -508,8 +508,8 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[key_data_result].[Id],
@@ -539,8 +539,8 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Usage_1 Int -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[key_data_result].[Id],
