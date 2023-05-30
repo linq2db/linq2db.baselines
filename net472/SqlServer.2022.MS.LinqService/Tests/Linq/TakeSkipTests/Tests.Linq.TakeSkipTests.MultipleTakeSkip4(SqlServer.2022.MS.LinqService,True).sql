@@ -14,8 +14,8 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value1'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value1'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -23,13 +23,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value2'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value2'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -37,13 +37,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value3'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value3'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -51,13 +51,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value4'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value4'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -65,13 +65,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value5'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value5'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -79,13 +79,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value6'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value6'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -93,13 +93,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value7'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value7'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -107,13 +107,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value8'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value8'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -121,13 +121,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'Value9'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'Value9'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -135,15 +135,15 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 3
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 2
+DECLARE @skip Int -- Int32
+SET     @skip = 3
+DECLARE @take Int -- Int32
+SET     @take = 2
 
 SELECT
 	[t1].[Value]
@@ -151,7 +151,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip_1 ROWS FETCH NEXT @take_2 ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

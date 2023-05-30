@@ -485,11 +485,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 226
+DECLARE @p Int -- Int32
+SET     @p = 226
 
 SELECT
-	DateAdd(millisecond, @p_1, [t].[TransactionDate])
+	DateAdd(millisecond, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 
