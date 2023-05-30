@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @p_1 Char(1) -- String
-SET     @p_1 = '0'
+DECLARE @p Char(1) -- String
+SET     @p = '0'
 
 SELECT
 	"underscore"."ParentID",
@@ -53,5 +53,5 @@ FROM
 			"Parent" "selectParam"
 	) "underscore"
 WHERE
-	"underscore"."Key_1" = @p_1
+	"underscore"."Key_1" = @p
 

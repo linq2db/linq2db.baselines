@@ -2,11 +2,11 @@
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 
 SELECT FIRST @take
-	Cast(@value_1 as Real)
+	Cast(@value as Real)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -14,11 +14,11 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Float -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value Float -- Single
+SET     @value = 6579.64648
 
 SELECT FIRST @take
-	Cast(@value_1 as Real)
+	Cast(@value as Real)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -26,11 +26,11 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Double
-SET     @value_1 = 6579.6464800000003
+DECLARE @value Double
+SET     @value = 6579.6464800000003
 
 SELECT FIRST @take
-	Cast(@value_1 as Real)
+	Cast(@value as Real)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -38,11 +38,11 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 
 SELECT FIRST @take
-	Cast(@value_1 as Float)
+	Cast(@value as Float)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -50,11 +50,11 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Float -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value Float -- Single
+SET     @value = 6579.64648
 
 SELECT FIRST @take
-	Cast(@value_1 as Float)
+	Cast(@value as Float)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -62,11 +62,11 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @value_1 Double
-SET     @value_1 = 6579.6464800000003
+DECLARE @value Double
+SET     @value = 6579.6464800000003
 
 SELECT FIRST @take
-	Cast(@value_1 as Float)
+	Cast(@value as Float)
 FROM
 	"LinqDataTypes" "t1"
 
