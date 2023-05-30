@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @pattern_1 Text(3) -- String
-SET     @pattern_1 = '%1%'
+DECLARE @pattern Text(3) -- String
+SET     @pattern = '%1%'
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
@@ -21,7 +21,7 @@ FROM
 		FROM
 			"Person" p_1
 		WHERE
-			Cast(p_1."PersonID" as text) LIKE :pattern_1 ESCAPE '~'
+			Cast(p_1."PersonID" as text) LIKE :pattern ESCAPE '~'
 	) t1
 LIMIT :take
 

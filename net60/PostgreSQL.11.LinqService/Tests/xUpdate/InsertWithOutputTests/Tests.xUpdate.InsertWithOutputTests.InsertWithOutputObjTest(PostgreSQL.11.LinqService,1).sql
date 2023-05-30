@@ -17,8 +17,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
 DECLARE @ValueStr Text(8) -- String
 SET     @ValueStr = 'SomeStr1'
 
@@ -31,7 +31,7 @@ INSERT INTO "TableWithData"
 VALUES
 (
 	:Id,
-	:Value_1,
+	:Value,
 	:ValueStr
 )
 RETURNING
