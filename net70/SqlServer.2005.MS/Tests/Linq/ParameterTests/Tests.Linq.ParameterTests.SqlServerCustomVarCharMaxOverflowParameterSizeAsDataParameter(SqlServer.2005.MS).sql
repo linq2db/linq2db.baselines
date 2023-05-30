@@ -17,8 +17,8 @@ IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @VarChar_1 VarChar(10000) -- AnsiString
-SET     @VarChar_1 = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
+DECLARE @VarChar VarChar(10000) -- AnsiString
+SET     @VarChar = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
 -- value above truncated for logging, actual length is 10000
 
 INSERT INTO [AllTypesCustomMaxLength]
@@ -27,7 +27,7 @@ INSERT INTO [AllTypesCustomMaxLength]
 )
 VALUES
 (
-	@VarChar_1
+	@VarChar
 )
 
 BeforeExecute
