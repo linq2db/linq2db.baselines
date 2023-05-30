@@ -73,15 +73,15 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase

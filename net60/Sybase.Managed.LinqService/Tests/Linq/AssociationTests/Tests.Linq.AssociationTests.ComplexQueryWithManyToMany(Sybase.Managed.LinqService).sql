@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @id2 Integer -- Int32
-SET     @id2 = 3
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @id1 Integer -- Int32
+SET     @id1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 
 SELECT TOP 1
 	[с].[ChildID]
@@ -20,8 +20,8 @@ WHERE
 				ON [_].[ParentID] = [c_1].[ParentID]
 				LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 		WHERE
-			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = @id2 AND
-			[_].[ParentID] = @Value_1
+			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = @id1 AND
+			[_].[ParentID] = @Value
 	)
 ORDER BY
 	[с].[ChildID]

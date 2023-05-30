@@ -20,8 +20,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 101
+DECLARE @Value Integer -- Int32
+SET     @Value = 101
 
 INSERT INTO [InstanceClass]
 (
@@ -31,15 +31,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 102
+DECLARE @Value Integer -- Int32
+SET     @Value = 102
 
 INSERT INTO [InstanceClass]
 (
@@ -49,15 +49,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 103
+DECLARE @Value Integer -- Int32
+SET     @Value = 103
 
 INSERT INTO [InstanceClass]
 (
@@ -67,15 +67,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 104
+DECLARE @Value Integer -- Int32
+SET     @Value = 104
 
 INSERT INTO [InstanceClass]
 (
@@ -85,15 +85,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 105
+DECLARE @Value Integer -- Int32
+SET     @Value = 105
 
 INSERT INTO [InstanceClass]
 (
@@ -103,15 +103,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 106
+DECLARE @Value Integer -- Int32
+SET     @Value = 106
 
 INSERT INTO [InstanceClass]
 (
@@ -121,15 +121,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 7
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 107
+DECLARE @Value Integer -- Int32
+SET     @Value = 107
 
 INSERT INTO [InstanceClass]
 (
@@ -139,15 +139,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 8
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 108
+DECLARE @Value Integer -- Int32
+SET     @Value = 108
 
 INSERT INTO [InstanceClass]
 (
@@ -157,15 +157,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 9
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 109
+DECLARE @Value Integer -- Int32
+SET     @Value = 109
 
 INSERT INTO [InstanceClass]
 (
@@ -175,15 +175,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 110
+DECLARE @Value Integer -- Int32
+SET     @Value = 110
 
 INSERT INTO [InstanceClass]
 (
@@ -193,15 +193,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 111
+DECLARE @Value Integer -- Int32
+SET     @Value = 111
 
 INSERT INTO [InstanceClass]
 (
@@ -211,15 +211,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 12
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 112
+DECLARE @Value Integer -- Int32
+SET     @Value = 112
 
 INSERT INTO [InstanceClass]
 (
@@ -229,15 +229,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 13
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 113
+DECLARE @Value Integer -- Int32
+SET     @Value = 113
 
 INSERT INTO [InstanceClass]
 (
@@ -247,15 +247,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 14
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 114
+DECLARE @Value Integer -- Int32
+SET     @Value = 114
 
 INSERT INTO [InstanceClass]
 (
@@ -265,15 +265,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 15
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 115
+DECLARE @Value Integer -- Int32
+SET     @Value = 115
 
 INSERT INTO [InstanceClass]
 (
@@ -283,15 +283,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 16
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 116
+DECLARE @Value Integer -- Int32
+SET     @Value = 116
 
 INSERT INTO [InstanceClass]
 (
@@ -301,15 +301,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 17
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 117
+DECLARE @Value Integer -- Int32
+SET     @Value = 117
 
 INSERT INTO [InstanceClass]
 (
@@ -319,15 +319,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 18
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 118
+DECLARE @Value Integer -- Int32
+SET     @Value = 118
 
 INSERT INTO [InstanceClass]
 (
@@ -337,15 +337,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 19
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 119
+DECLARE @Value Integer -- Int32
+SET     @Value = 119
 
 INSERT INTO [InstanceClass]
 (
@@ -355,15 +355,15 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 120
+DECLARE @Value Integer -- Int32
+SET     @Value = 120
 
 INSERT INTO [InstanceClass]
 (
@@ -373,7 +373,7 @@ INSERT INTO [InstanceClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

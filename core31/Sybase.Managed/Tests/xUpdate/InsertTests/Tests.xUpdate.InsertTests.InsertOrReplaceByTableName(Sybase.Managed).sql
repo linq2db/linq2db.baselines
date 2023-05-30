@@ -17,17 +17,17 @@ CREATE TABLE [xxPatient]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'ABC1'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 1
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 1
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC1'
 
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -43,23 +43,23 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'ABC2'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 2
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 2
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC2'
 
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -75,7 +75,7 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 
@@ -89,17 +89,17 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'ABC1'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 1
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 1
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC1'
 
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -115,23 +115,23 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'ABC2'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 2
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 2
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC2'
 
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -147,7 +147,7 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 

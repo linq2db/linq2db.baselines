@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	DatePart(hour, DateAdd(hour, @p_1, [t].[DateTimeValue]))
+	DatePart(hour, DateAdd(hour, @p, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

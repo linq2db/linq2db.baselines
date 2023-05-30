@@ -20,8 +20,8 @@ IF (OBJECT_ID(N'Src') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = 2
 DECLARE @String UniVarChar(3) -- String
@@ -38,7 +38,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -46,8 +46,8 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Integer -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = NULL
 DECLARE @String UniVarChar(3) -- String
@@ -64,7 +64,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -72,51 +72,51 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase

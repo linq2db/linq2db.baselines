@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 4
+DECLARE @Length Integer -- Int32
+SET     @Length = 4
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) = @Length_1 AND [p].[PersonID] = 1
+	Len([p].[FirstName]) = @Length AND [p].[PersonID] = 1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Local_id Integer -- Int32
-SET     @Local_id = 1
+DECLARE @VBLocal_id Integer -- Int32
+SET     @VBLocal_id = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @Local_id
+	[p].[ParentID] = @VBLocal_id
 

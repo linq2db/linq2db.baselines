@@ -33,13 +33,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value_1 UniChar(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @Value UniChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person]
 SET
-	[_].[Gender] = @Value_1
+	[_].[Gender] = @Value
 FROM
 	[Person] [_]
 WHERE

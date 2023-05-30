@@ -33,17 +33,17 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'abc0'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'abc0'
 
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -59,23 +59,23 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'abc1'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'abc1'
 
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -91,23 +91,23 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Diagnosis_1 UniVarChar(4) -- String
-SET     @Diagnosis_1 = 'abc2'
-DECLARE @PersonID Integer -- Int32
-SET     @PersonID = 5
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis_1 UniVarChar(4) -- String
+SET     @Diagnosis_1 = 'abc2'
 
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis_1
+	[t1].[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,7 +123,7 @@ BEGIN
 	VALUES
 	(
 		@PersonID,
-		@Diagnosis
+		@Diagnosis_1
 	)
 END
 

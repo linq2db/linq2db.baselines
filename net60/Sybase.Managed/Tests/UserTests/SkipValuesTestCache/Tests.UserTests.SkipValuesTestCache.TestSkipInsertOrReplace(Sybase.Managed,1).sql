@@ -21,17 +21,17 @@ IF (OBJECT_ID(N'PR_1598_Insert_Table_Cache') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(4) -- String
-SET     @Name_1 = 'John'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name_1 UniVarChar(4) -- String
+SET     @Name_1 = 'John'
 
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name_1
+	[t1].[Name] = @Name
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -47,7 +47,7 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name
+		@Name_1
 	)
 END
 
@@ -65,17 +65,17 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(4) -- String
-SET     @Name_1 = 'John'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name_1 UniVarChar(4) -- String
+SET     @Name_1 = 'John'
 
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name_1
+	[t1].[Name] = @Name
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -91,7 +91,7 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name
+		@Name_1
 	)
 END
 
