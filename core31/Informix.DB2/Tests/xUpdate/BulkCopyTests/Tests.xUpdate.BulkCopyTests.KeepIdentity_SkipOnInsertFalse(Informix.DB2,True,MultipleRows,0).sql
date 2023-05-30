@@ -20,8 +20,8 @@ ALTER TABLE AllTypes ADD CONSTRAINT PRIMARY KEY (ID)
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 0
 
 INSERT INTO AllTypes
 (
@@ -29,7 +29,7 @@ INSERT INTO AllTypes
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

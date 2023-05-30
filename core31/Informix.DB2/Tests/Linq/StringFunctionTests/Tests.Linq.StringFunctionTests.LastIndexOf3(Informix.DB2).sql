@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Length_2 Integer(4) -- Int32
-SET     @Length_2 = 9
+DECLARE @Length Integer(4) -- Int32
+SET     @Length = 9
 
 SELECT
 	p_1.ID,
@@ -21,6 +21,6 @@ WHERE
 	CASE
 		WHEN CharIndex('123', Substr(p_1.FirstName, 1, 11), 6) = 0
 			THEN -1
-		ELSE @Length_2 - CharIndex('321', Reverse(Substr(p_1.FirstName, 6, 6)))
+		ELSE @Length - CharIndex('321', Reverse(Substr(p_1.FirstName, 6, 6)))
 	END = 8
 

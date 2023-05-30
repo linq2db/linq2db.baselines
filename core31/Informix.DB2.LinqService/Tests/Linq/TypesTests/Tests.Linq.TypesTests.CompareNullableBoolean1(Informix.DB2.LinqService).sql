@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @param_1 Char(1) -- StringFixedLength
-SET     @param_1 = 't'
+DECLARE @param Char(1) -- StringFixedLength
+SET     @param = 't'
 
 SELECT
 	t.ID,
@@ -30,5 +30,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.BoolValue = @param_1
+	t.BoolValue = @param
 

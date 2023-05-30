@@ -17,8 +17,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ColumnNullable Char -- StringFixedLength
 SET     @ColumnNullable = NULL
 
@@ -31,7 +31,7 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -53,14 +53,14 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -71,7 +71,7 @@ SELECT
 FROM
 	GuidTable r
 WHERE
-	r."Column" = @Column_1 AND r.ColumnNullable = @ColumnNullable
+	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -96,8 +96,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ColumnNullable Char -- StringFixedLength
 SET     @ColumnNullable = NULL
 
@@ -110,7 +110,7 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -118,8 +118,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -132,7 +132,7 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -158,8 +158,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ColumnNullable Char -- StringFixedLength
 SET     @ColumnNullable = NULL
 
@@ -172,7 +172,7 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -180,8 +180,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(36) -- StringFixedLength
-SET     @Column_1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @Column Char(36) -- StringFixedLength
+SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
 SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
@@ -194,7 +194,7 @@ INSERT INTO GuidTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

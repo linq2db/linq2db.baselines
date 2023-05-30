@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Length_1 Integer(4) -- Int32
-SET     @Length_1 = 4
+DECLARE @Length Integer(4) -- Int32
+SET     @Length = 4
 
 SELECT
 	p.FirstName,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CHAR_LENGTH(p.FirstName) = @Length_1 AND p.PersonID = 1
+	CHAR_LENGTH(p.FirstName) = @Length AND p.PersonID = 1
 
