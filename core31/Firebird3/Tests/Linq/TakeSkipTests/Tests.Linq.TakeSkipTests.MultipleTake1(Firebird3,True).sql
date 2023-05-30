@@ -33,10 +33,10 @@ SELECT 'BOLTO' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take_2 Integer -- Int32
-SET     @take_2 = 2
+DECLARE @take Integer -- Int32
+SET     @take = 2
 
-SELECT FIRST @take_2
+SELECT FIRST @take
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

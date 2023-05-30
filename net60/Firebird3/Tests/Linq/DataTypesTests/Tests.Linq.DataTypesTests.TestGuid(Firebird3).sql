@@ -35,8 +35,8 @@ SELECT 2,X'A948600DDE214F748AC29516B287076E',X'BD3973A543234DD89F4FDF9F93E2A627'
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Column_1 Guid
-SET     @Column_1 = X'A948600DDE214F748AC29516B287076E'
+DECLARE @Column Guid
+SET     @Column = X'A948600DDE214F748AC29516B287076E'
 DECLARE @ColumnNullable Guid
 SET     @ColumnNullable = X'BD3973A543234DD89F4FDF9F93E2A627'
 
@@ -47,7 +47,7 @@ SELECT
 FROM
 	"GuidTable" "r"
 WHERE
-	"r"."Column" = @Column_1 AND "r"."ColumnNullable" = @ColumnNullable
+	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -72,8 +72,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Guid
-SET     @Column_1 = X'BC7B663D0FDE43278F925D8CC3A11D11'
+DECLARE @Column Guid
+SET     @Column = X'BC7B663D0FDE43278F925D8CC3A11D11'
 DECLARE @ColumnNullable Guid
 SET     @ColumnNullable = NULL
 
@@ -86,7 +86,7 @@ INSERT INTO "GuidTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -94,8 +94,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Guid
-SET     @Column_1 = X'A948600DDE214F748AC29516B287076E'
+DECLARE @Column Guid
+SET     @Column = X'A948600DDE214F748AC29516B287076E'
 DECLARE @ColumnNullable Guid
 SET     @ColumnNullable = X'BD3973A543234DD89F4FDF9F93E2A627'
 
@@ -108,7 +108,7 @@ INSERT INTO "GuidTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

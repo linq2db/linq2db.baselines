@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @toTest_1 VarChar(4) -- String
-SET     @toTest_1 = '%]]%'
+DECLARE @toTest VarChar(4) -- String
+SET     @toTest = '%]]%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123]]456' LIKE @toTest_1 ESCAPE '~'
+	"p"."PersonID" = 1 AND '123]]456' LIKE @toTest ESCAPE '~'
 

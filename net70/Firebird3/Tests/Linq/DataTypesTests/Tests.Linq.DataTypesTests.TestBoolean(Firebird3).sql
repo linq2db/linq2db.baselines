@@ -35,8 +35,8 @@ SELECT 2,0,1 FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Column_1 Char(1) -- String
-SET     @Column_1 = '0'
+DECLARE @Column Char(1) -- String
+SET     @Column = '0'
 DECLARE @ColumnNullable Char(1) -- String
 SET     @ColumnNullable = '1'
 
@@ -47,7 +47,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	"r"."Column" = @Column_1 AND "r"."ColumnNullable" = @ColumnNullable
+	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -71,8 +71,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(1) -- String
-SET     @Column_1 = '1'
+DECLARE @Column Char(1) -- String
+SET     @Column = '1'
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = NULL
 
@@ -85,7 +85,7 @@ INSERT INTO "BooleanTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -93,8 +93,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(1) -- String
-SET     @Column_1 = '0'
+DECLARE @Column Char(1) -- String
+SET     @Column = '0'
 DECLARE @ColumnNullable Char(1) -- String
 SET     @ColumnNullable = '1'
 
@@ -107,7 +107,7 @@ INSERT INTO "BooleanTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
