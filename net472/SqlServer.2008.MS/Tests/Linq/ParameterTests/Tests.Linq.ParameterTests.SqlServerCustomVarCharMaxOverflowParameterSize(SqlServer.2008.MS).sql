@@ -17,8 +17,8 @@ IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @VarChar_1 VarChar -- AnsiString
-SET     @VarChar_1 = Tests.Linq.ParameterTests+VarChar
+DECLARE @VarChar VarChar -- AnsiString
+SET     @VarChar = Tests.Linq.ParameterTests+VarChar
 
 INSERT INTO [AllTypesCustomMaxLength]
 (
@@ -26,7 +26,7 @@ INSERT INTO [AllTypesCustomMaxLength]
 )
 VALUES
 (
-	@VarChar_1
+	@VarChar
 )
 
 BeforeExecute

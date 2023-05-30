@@ -352,8 +352,8 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 20
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 40
+DECLARE @take Int -- Int32
+SET     @take = 40
 
 SELECT
 	[t1].[TotalCount],
@@ -372,7 +372,7 @@ FROM
 			[x].[Id] % 2 = 0
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= @take_1
+	[t1].[RN] > @skip AND [t1].[RN] <= @take
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008 (asynchronously)
