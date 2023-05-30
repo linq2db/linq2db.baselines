@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @Date_1 Datetime -- DateTime
-SET     @Date_1 = '2009-09-20'
+DECLARE @Date Datetime -- DateTime
+SET     @Date = '2009-09-20'
 
 SELECT
 	`t`.`ID`,
@@ -17,5 +17,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	Cast(`t`.`DateTimeValue` as Date) > @Date_1
+	Cast(`t`.`DateTimeValue` as Date) > @Date
 

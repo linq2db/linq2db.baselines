@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Length_1 Int32
-SET     @Length_1 = 9
+DECLARE @Length Int32
+SET     @Length = 9
 
 SELECT
 	`p_1`.`ID`,
@@ -21,6 +21,6 @@ WHERE
 	CASE
 		WHEN Locate('123', Left(`p_1`.`FirstName`, 11), 6) = 0
 			THEN -1
-		ELSE @Length_1 - Locate('321', Reverse(Substring(`p_1`.`FirstName`, 6, 6)))
+		ELSE @Length - Locate('321', Reverse(Substring(`p_1`.`FirstName`, 6, 6)))
 	END = 8
 

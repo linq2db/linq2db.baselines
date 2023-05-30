@@ -69,8 +69,8 @@ DECLARE @VarChar1 VarChar(1) -- String
 SET     @VarChar1 = 'ы'
 DECLARE @VarChar112 VarChar(4) -- String
 SET     @VarChar112 = 'ы123'
-DECLARE @Char_1 String -- StringFixedLength
-SET     @Char_1 = 'я'
+DECLARE @Char String -- StringFixedLength
+SET     @Char = 'я'
 DECLARE @Char255 String(6) -- AnsiStringFixedLength
 SET     @Char255 = '!sdg3@'
 DECLARE @Char1 String(1) -- AnsiStringFixedLength
@@ -91,8 +91,8 @@ DECLARE @Binary3 Blob(2) -- Binary
 SET     @Binary3 = 0x0121
 DECLARE @TinyBlob Blob(3) -- Binary
 SET     @TinyBlob = 0x030201
-DECLARE @Blob_1 Blob(3) -- Binary
-SET     @Blob_1 = 0x0D0201
+DECLARE @Blob Blob(3) -- Binary
+SET     @Blob = 0x0D0201
 DECLARE @MediumBlob Blob(3) -- Binary
 SET     @MediumBlob = 0x170201
 DECLARE @BlobDefault Blob(3) -- Binary
@@ -109,44 +109,44 @@ DECLARE @LongText VarChar(4) -- String
 SET     @LongText = '1v23'
 DECLARE @TextDefault VarChar(5) -- String
 SET     @TextDefault = '12 #3'
-DECLARE @Date_1 Datetime -- DateTime
-SET     @Date_1 = '2123-02-03'
+DECLARE @Date Datetime -- DateTime
+SET     @Date = '2123-02-03'
 DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = '2123-02-03 11:22:33'
-DECLARE @TimeStamp_1 Datetime -- DateTimeOffset
-SET     @TimeStamp_1 = '2023-02-03T11:22:33.0000000+01:00'
-DECLARE @Time_1 Time
-SET     @Time_1 = -04:03:53
+DECLARE @TimeStamp Datetime -- DateTimeOffset
+SET     @TimeStamp = '2023-02-03T11:22:33.0000000+01:00'
+DECLARE @Time Time
+SET     @Time = -04:03:53
 DECLARE @TinyInt Byte -- SByte
 SET     @TinyInt = -123
 DECLARE @UnsignedTinyInt UByte -- Byte
 SET     @UnsignedTinyInt = 223
-DECLARE @SmallInt_1 Int16
-SET     @SmallInt_1 = -32768
+DECLARE @SmallInt Int16
+SET     @SmallInt = -32768
 DECLARE @UnsignedSmallInt UInt16
 SET     @UnsignedSmallInt = 65535
-DECLARE @Int_1 Int32
-SET     @Int_1 = -2147483648
+DECLARE @Int Int32
+SET     @Int = -2147483648
 DECLARE @UnsignedInt UInt32
 SET     @UnsignedInt = 4294967295
-DECLARE @BigInt_1 Int64
-SET     @BigInt_1 = -9223372036854775808
+DECLARE @BigInt Int64
+SET     @BigInt = -9223372036854775808
 DECLARE @UnsignedBigInt UInt64
 SET     @UnsignedBigInt = 18446744073709551615
-DECLARE @Decimal_1 NewDecimal(4, 0) -- Decimal
-SET     @Decimal_1 = 1234
+DECLARE @Decimal NewDecimal(4, 0) -- Decimal
+SET     @Decimal = 1234
 DECLARE @Decimal15_0 NewDecimal(15, 0) -- Decimal
 SET     @Decimal15_0 = 123456789012345
 DECLARE @Decimal10_5 NewDecimal(9, 4) -- Decimal
 SET     @Decimal10_5 = -12345.2345
 DECLARE @Decimal20_2 NewDecimal(9, 2) -- Decimal
 SET     @Decimal20_2 = -3412345.23
-DECLARE @Float_1 Float -- Single
-SET     @Float_1 = 3244.23999
+DECLARE @Float Float -- Single
+SET     @Float = 3244.23999
 DECLARE @Float10 Float -- Single
 SET     @Float10 = 124.353996
-DECLARE @Double_1 Double
-SET     @Double_1 = 452.23523
+DECLARE @Double Double
+SET     @Double = 452.23523
 DECLARE @Float30 Double
 SET     @Float30 = 332.23500000000001
 DECLARE @Bool Bool -- Boolean
@@ -225,7 +225,7 @@ VALUES
 	@VarCharDefault,
 	@VarChar1,
 	@VarChar112,
-	@Char_1,
+	@Char,
 	@Char255,
 	@Char1,
 	@Char112,
@@ -236,7 +236,7 @@ VALUES
 	@Binary255,
 	@Binary3,
 	@TinyBlob,
-	@Blob_1,
+	@Blob,
 	@MediumBlob,
 	@BlobDefault,
 	@LongBlob,
@@ -245,25 +245,25 @@ VALUES
 	@MediumText,
 	@LongText,
 	@TextDefault,
-	@Date_1,
+	@Date,
 	@DateTime,
-	@TimeStamp_1,
-	@Time_1,
+	@TimeStamp,
+	@Time,
 	@TinyInt,
 	@UnsignedTinyInt,
-	@SmallInt_1,
+	@SmallInt,
 	@UnsignedSmallInt,
-	@Int_1,
+	@Int,
 	@UnsignedInt,
-	@BigInt_1,
+	@BigInt,
 	@UnsignedBigInt,
-	@Decimal_1,
+	@Decimal,
 	@Decimal15_0,
 	@Decimal10_5,
 	@Decimal20_2,
-	@Float_1,
+	@Float,
 	@Float10,
-	@Double_1,
+	@Double,
 	@Float30,
 	@Bool,
 	@Bit1,

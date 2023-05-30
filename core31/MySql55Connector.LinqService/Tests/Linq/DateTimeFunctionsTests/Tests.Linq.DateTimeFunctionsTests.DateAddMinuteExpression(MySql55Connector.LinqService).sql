@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @p_1 Int32
-SET     @p_1 = 5
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p_1 Minute)
+	Date_Add(`t`.`DateTimeValue`, Interval @p Minute)
 FROM
 	`LinqDataTypes` `t`
 

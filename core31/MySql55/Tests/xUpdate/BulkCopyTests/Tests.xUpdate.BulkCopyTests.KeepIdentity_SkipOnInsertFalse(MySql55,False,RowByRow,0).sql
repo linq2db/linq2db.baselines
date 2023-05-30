@@ -5,8 +5,8 @@ ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Value_1 Int32
-SET     @Value_1 = 0
+DECLARE @Value Int32
+SET     @Value = 0
 
 INSERT INTO `AllTypes`
 (
@@ -14,7 +14,7 @@ INSERT INTO `AllTypes`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -24,8 +24,8 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Value_1 Int32
-SET     @Value_1 = 200
+DECLARE @Value Int32
+SET     @Value = 200
 
 INSERT INTO `AllTypes`
 (
@@ -33,13 +33,13 @@ INSERT INTO `AllTypes`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Value_1 Int32
-SET     @Value_1 = 300
+DECLARE @Value Int32
+SET     @Value = 300
 
 INSERT INTO `AllTypes`
 (
@@ -47,7 +47,7 @@ INSERT INTO `AllTypes`
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

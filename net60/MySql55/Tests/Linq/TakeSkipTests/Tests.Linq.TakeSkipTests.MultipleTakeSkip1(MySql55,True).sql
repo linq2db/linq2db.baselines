@@ -30,10 +30,10 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
-DECLARE @skip_3 Int32
-SET     @skip_3 = 1
+DECLARE @skip Int32
+SET     @skip = 3
+DECLARE @skip_1 Int32
+SET     @skip_1 = 1
 
 SELECT
 	`t1`.`Value`
@@ -41,7 +41,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip_2, @skip_3
+LIMIT @skip, @skip_1
 
 BeforeExecute
 -- MySql55 MySql.Official MySql

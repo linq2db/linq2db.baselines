@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS `Src`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
+DECLARE @Int Int32
+SET     @Int = 2
 DECLARE @NullableInt Int32
 SET     @NullableInt = 2
 DECLARE @String VarChar(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO `Src`
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Int_1 Int32
-SET     @Int_1 = 3
+DECLARE @Int Int32
+SET     @Int = 3
 DECLARE @NullableInt Int32
 SET     @NullableInt = NULL
 DECLARE @String VarChar(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO `Src`
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -68,51 +68,51 @@ VALUES
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @value_1 Int32
-SET     @value_1 = 2
+DECLARE @value Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`Int` <=> @value_1
+	NOT `s`.`Int` <=> @value
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @value_1 Int32
-SET     @value_1 = 2
+DECLARE @value Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableInt` <=> @value_1
+	NOT `s`.`NullableInt` <=> @value
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @value_1 Int32
-SET     @value_1 = 2
+DECLARE @value Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` <=> @value_1
+	`s`.`Int` <=> @value
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @value_1 Int32
-SET     @value_1 = 2
+DECLARE @value Int32
+SET     @value = 2
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableInt` <=> @value_1
+	`s`.`NullableInt` <=> @value
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
