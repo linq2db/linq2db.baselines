@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p_1 Int32
-SET     @p_1 = 5
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p_1 Day)
+	Date_Add(`t`.`DateTimeValue`, Interval @p Day)
 FROM
 	`LinqDataTypes` `t`
 

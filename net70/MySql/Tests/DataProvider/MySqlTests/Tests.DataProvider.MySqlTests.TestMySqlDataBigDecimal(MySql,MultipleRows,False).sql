@@ -27,8 +27,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Decimal_1 VarChar(66) -- AnsiString
-SET     @Decimal_1 = '12345678901234567890123456789012345.123456789012345678901234567891'
+DECLARE @Decimal VarChar(66) -- AnsiString
+SET     @Decimal = '12345678901234567890123456789012345.123456789012345678901234567891'
 DECLARE @DecimalN VarChar(67) -- AnsiString
 SET     @DecimalN = '-12345678901234567890123456789012345.123456789012345678901234567891'
 
@@ -41,7 +41,7 @@ INSERT INTO `BigDecimalMySqlDataTable`
 VALUES
 (
 	@Id,
-	@Decimal_1,
+	@Decimal,
 	@DecimalN
 )
 
@@ -49,8 +49,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Decimal_1 VarChar(67) -- AnsiString
-SET     @Decimal_1 = '-12345678901234567890123456789012345.123456789012345678901234567891'
+DECLARE @Decimal VarChar(67) -- AnsiString
+SET     @Decimal = '-12345678901234567890123456789012345.123456789012345678901234567891'
 DECLARE @DecimalN Decimal
 SET     @DecimalN = NULL
 
@@ -63,7 +63,7 @@ INSERT INTO `BigDecimalMySqlDataTable`
 VALUES
 (
 	@Id,
-	@Decimal_1,
+	@Decimal,
 	@DecimalN
 )
 

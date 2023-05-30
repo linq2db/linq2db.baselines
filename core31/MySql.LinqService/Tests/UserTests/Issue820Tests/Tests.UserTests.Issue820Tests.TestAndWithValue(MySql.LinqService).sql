@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Value_1 Int16
-SET     @Value_1 = 1
+DECLARE @Value Int16
+SET     @Value = 1
 
 SELECT
 	`_`.`ID`,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	@Value_1 = `_`.`SmallIntValue`
+	@Value = `_`.`SmallIntValue`
 
 BeforeExecute
 -- MySql MySql.Official MySql

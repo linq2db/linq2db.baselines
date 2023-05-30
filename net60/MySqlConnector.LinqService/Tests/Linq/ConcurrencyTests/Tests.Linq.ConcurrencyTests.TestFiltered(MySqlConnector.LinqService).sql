@@ -21,8 +21,8 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -10
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO `ConcurrencyFiltered`
 (
@@ -34,7 +34,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -49,8 +49,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -60,7 +60,7 @@ UPDATE
 	`ConcurrencyFiltered` `r`
 SET
 	`r`.`Stamp` = `r`.`Stamp` + 1,
-	`r`.`Value` = @Value_1
+	`r`.`Value` = @Value
 WHERE
 	`r`.`Id` = 2 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
@@ -76,8 +76,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value_1 VarChar(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value VarChar(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -87,7 +87,7 @@ UPDATE
 	`ConcurrencyFiltered` `r`
 SET
 	`r`.`Stamp` = `r`.`Stamp` + 1,
-	`r`.`Value` = @Value_1
+	`r`.`Value` = @Value
 WHERE
 	`r`.`Id` = 1 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 

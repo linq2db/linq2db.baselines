@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Local_SelectedValue Int32
-SET     @Local_SelectedValue = 1
+DECLARE @VBLocal_SelectedValue Int32
+SET     @VBLocal_SelectedValue = 1
 
 SELECT
 	`w`.`ParentID`,
@@ -10,5 +10,5 @@ SELECT
 FROM
 	`GrandChild` `w`
 WHERE
-	`w`.`ChildID` IS NOT NULL AND `w`.`ChildID` = @Local_SelectedValue
+	`w`.`ChildID` IS NOT NULL AND `w`.`ChildID` = @VBLocal_SelectedValue
 

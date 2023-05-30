@@ -13,8 +13,8 @@ DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Int32
-SET     @Data_1 = 1
+DECLARE @Data Int32
+SET     @Data = 1
 
 INSERT INTO `InheritanceParent`
 (
@@ -26,10 +26,10 @@ VALUES
 (
 	@Key1,
 	@Key2,
-	@Data_1
+	@Data
 )
 ON DUPLICATE KEY UPDATE
-	`TypeDiscriminator` = @Data_1
+	`TypeDiscriminator` = @Data
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -45,8 +45,8 @@ DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Int32
-SET     @Data_1 = 1
+DECLARE @Data Int32
+SET     @Data = 1
 
 INSERT INTO `InheritanceParent`
 (
@@ -58,10 +58,10 @@ VALUES
 (
 	@Key1,
 	@Key2,
-	@Data_1
+	@Data
 )
 ON DUPLICATE KEY UPDATE
-	`TypeDiscriminator` = @Data_1
+	`TypeDiscriminator` = @Data
 
 BeforeExecute
 -- MySql MySql.Official MySql

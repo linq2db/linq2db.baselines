@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Date_1 Datetime -- DateTime
-SET     @Date_1 = '2020-02-29'
+DECLARE @Date Datetime -- DateTime
+SET     @Date = '2020-02-29'
 
 SELECT
 	`t1_1`.`MoneyValue`
@@ -14,7 +14,7 @@ FROM
 			FROM
 				`LinqDataTypes` `sub`
 			WHERE
-				`sub`.`ID` = 1 AND `sub`.`DateTimeValue` <= @Date_1
+				`sub`.`ID` = 1 AND `sub`.`DateTimeValue` <= @Date
 			GROUP BY
 				`sub`.`ID`
 		) `t1` ON `t1_1`.`ID` = `t1`.`ID` AND `t1_1`.`DateTimeValue` = `t1`.`DateTimeValue`
