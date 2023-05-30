@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Smallint -- Int16
-SET     @Value_1 = 1
+DECLARE @Value Smallint -- Int16
+SET     @Value = 1
 
 SELECT
 	t1."ID",
@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:Value_1 = t1."SmallIntValue"
+	:Value = t1."SmallIntValue"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

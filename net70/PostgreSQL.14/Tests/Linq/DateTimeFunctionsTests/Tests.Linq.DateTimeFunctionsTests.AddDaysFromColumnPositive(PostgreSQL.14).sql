@@ -42,15 +42,15 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Timestamp -- DateTime2
-SET     @p_1 = '2018-01-02'::date
+DECLARE @p Timestamp -- DateTime2
+SET     @p = '2018-01-02'::date
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' > :p_1
+	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' > :p
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

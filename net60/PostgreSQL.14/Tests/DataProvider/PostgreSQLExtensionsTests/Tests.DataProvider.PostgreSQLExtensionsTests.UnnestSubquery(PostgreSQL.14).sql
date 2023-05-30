@@ -23,106 +23,106 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 -2147483629 -- Object
-SET     @p1 = System.String[]
-DECLARE @p2 -2147483639 -- Object
-SET     @p2 = System.Int32[]
-DECLARE @p3 -2147483647 -- Object
-SET     @p3 = System.Int64[]
-DECLARE @p4 -2147483640 -- Object
-SET     @p4 = System.Double[]
-DECLARE @p5 -2147483635 -- Object
-SET     @p5 = System.Decimal[]
-DECLARE @p6 -2147483629 -- Object
-SET     @p6 = System.String[]
-DECLARE @p7 -2147483639 -- Object
-SET     @p7 = System.Int32[]
-DECLARE @p8 -2147483647 -- Object
-SET     @p8 = System.Int64[]
-DECLARE @p9 -2147483640 -- Object
-SET     @p9 = System.Double[]
-DECLARE @p10 -2147483635 -- Object
-SET     @p10 = System.Decimal[]
-DECLARE @p11 -2147483629 -- Object
-SET     @p11 = System.String[]
-DECLARE @p12 -2147483639 -- Object
-SET     @p12 = System.Int32[]
-DECLARE @p13 -2147483647 -- Object
-SET     @p13 = System.Int64[]
-DECLARE @p14 -2147483640 -- Object
-SET     @p14 = System.Double[]
-DECLARE @p15 -2147483635 -- Object
-SET     @p15 = System.Decimal[]
-DECLARE @p16 -2147483629 -- Object
-SET     @p16 = System.String[]
-DECLARE @p17 -2147483639 -- Object
-SET     @p17 = System.Int32[]
-DECLARE @p18 -2147483647 -- Object
-SET     @p18 = System.Int64[]
-DECLARE @p19 -2147483640 -- Object
-SET     @p19 = System.Double[]
-DECLARE @p20 -2147483635 -- Object
-SET     @p20 = System.Decimal[]
-DECLARE @p21 -2147483629 -- Object
-SET     @p21 = System.String[]
-DECLARE @p22 -2147483639 -- Object
-SET     @p22 = System.Int32[]
-DECLARE @p23 -2147483647 -- Object
-SET     @p23 = System.Int64[]
-DECLARE @p24 -2147483640 -- Object
-SET     @p24 = System.Double[]
-DECLARE @p25 -2147483635 -- Object
-SET     @p25 = System.Decimal[]
-DECLARE @p26 -2147483629 -- Object
-SET     @p26 = System.String[]
-DECLARE @p27 -2147483639 -- Object
-SET     @p27 = System.Int32[]
-DECLARE @p28 -2147483647 -- Object
-SET     @p28 = System.Int64[]
-DECLARE @p29 -2147483640 -- Object
-SET     @p29 = System.Double[]
-DECLARE @p30 -2147483635 -- Object
-SET     @p30 = System.Decimal[]
-DECLARE @p31 -2147483629 -- Object
-SET     @p31 = System.String[]
-DECLARE @p32 -2147483639 -- Object
-SET     @p32 = System.Int32[]
-DECLARE @p33 -2147483647 -- Object
-SET     @p33 = System.Int64[]
-DECLARE @p34 -2147483640 -- Object
-SET     @p34 = System.Double[]
-DECLARE @p35 -2147483635 -- Object
-SET     @p35 = System.Decimal[]
-DECLARE @p36 -2147483629 -- Object
-SET     @p36 = System.String[]
-DECLARE @p37 -2147483639 -- Object
-SET     @p37 = System.Int32[]
-DECLARE @p38 -2147483647 -- Object
-SET     @p38 = System.Int64[]
-DECLARE @p39 -2147483640 -- Object
-SET     @p39 = System.Double[]
-DECLARE @p40 -2147483635 -- Object
-SET     @p40 = System.Decimal[]
-DECLARE @p41 -2147483629 -- Object
-SET     @p41 = System.String[]
-DECLARE @p42 -2147483639 -- Object
-SET     @p42 = System.Int32[]
-DECLARE @p43 -2147483647 -- Object
-SET     @p43 = System.Int64[]
-DECLARE @p44 -2147483640 -- Object
-SET     @p44 = System.Double[]
-DECLARE @p45 -2147483635 -- Object
-SET     @p45 = System.Decimal[]
-DECLARE @p46 -2147483629 -- Object
-SET     @p46 = System.String[]
-DECLARE @p47 -2147483639 -- Object
-SET     @p47 = System.Int32[]
-DECLARE @p48 -2147483647 -- Object
-SET     @p48 = System.Int64[]
-DECLARE @p49 -2147483640 -- Object
-SET     @p49 = System.Double[]
-DECLARE @p50 -2147483635 -- Object
-SET     @p50 = System.Decimal[]
+DECLARE @:p1 -2147483629 -- Object
+SET     @:p1 = System.String[]
+DECLARE @:p2 -2147483639 -- Object
+SET     @:p2 = System.Int32[]
+DECLARE @:p3 -2147483647 -- Object
+SET     @:p3 = System.Int64[]
+DECLARE @:p4 -2147483640 -- Object
+SET     @:p4 = System.Double[]
+DECLARE @:p5 -2147483635 -- Object
+SET     @:p5 = System.Decimal[]
+DECLARE @:p6 -2147483629 -- Object
+SET     @:p6 = System.String[]
+DECLARE @:p7 -2147483639 -- Object
+SET     @:p7 = System.Int32[]
+DECLARE @:p8 -2147483647 -- Object
+SET     @:p8 = System.Int64[]
+DECLARE @:p9 -2147483640 -- Object
+SET     @:p9 = System.Double[]
+DECLARE @:p10 -2147483635 -- Object
+SET     @:p10 = System.Decimal[]
+DECLARE @:p11 -2147483629 -- Object
+SET     @:p11 = System.String[]
+DECLARE @:p12 -2147483639 -- Object
+SET     @:p12 = System.Int32[]
+DECLARE @:p13 -2147483647 -- Object
+SET     @:p13 = System.Int64[]
+DECLARE @:p14 -2147483640 -- Object
+SET     @:p14 = System.Double[]
+DECLARE @:p15 -2147483635 -- Object
+SET     @:p15 = System.Decimal[]
+DECLARE @:p16 -2147483629 -- Object
+SET     @:p16 = System.String[]
+DECLARE @:p17 -2147483639 -- Object
+SET     @:p17 = System.Int32[]
+DECLARE @:p18 -2147483647 -- Object
+SET     @:p18 = System.Int64[]
+DECLARE @:p19 -2147483640 -- Object
+SET     @:p19 = System.Double[]
+DECLARE @:p20 -2147483635 -- Object
+SET     @:p20 = System.Decimal[]
+DECLARE @:p21 -2147483629 -- Object
+SET     @:p21 = System.String[]
+DECLARE @:p22 -2147483639 -- Object
+SET     @:p22 = System.Int32[]
+DECLARE @:p23 -2147483647 -- Object
+SET     @:p23 = System.Int64[]
+DECLARE @:p24 -2147483640 -- Object
+SET     @:p24 = System.Double[]
+DECLARE @:p25 -2147483635 -- Object
+SET     @:p25 = System.Decimal[]
+DECLARE @:p26 -2147483629 -- Object
+SET     @:p26 = System.String[]
+DECLARE @:p27 -2147483639 -- Object
+SET     @:p27 = System.Int32[]
+DECLARE @:p28 -2147483647 -- Object
+SET     @:p28 = System.Int64[]
+DECLARE @:p29 -2147483640 -- Object
+SET     @:p29 = System.Double[]
+DECLARE @:p30 -2147483635 -- Object
+SET     @:p30 = System.Decimal[]
+DECLARE @:p31 -2147483629 -- Object
+SET     @:p31 = System.String[]
+DECLARE @:p32 -2147483639 -- Object
+SET     @:p32 = System.Int32[]
+DECLARE @:p33 -2147483647 -- Object
+SET     @:p33 = System.Int64[]
+DECLARE @:p34 -2147483640 -- Object
+SET     @:p34 = System.Double[]
+DECLARE @:p35 -2147483635 -- Object
+SET     @:p35 = System.Decimal[]
+DECLARE @:p36 -2147483629 -- Object
+SET     @:p36 = System.String[]
+DECLARE @:p37 -2147483639 -- Object
+SET     @:p37 = System.Int32[]
+DECLARE @:p38 -2147483647 -- Object
+SET     @:p38 = System.Int64[]
+DECLARE @:p39 -2147483640 -- Object
+SET     @:p39 = System.Double[]
+DECLARE @:p40 -2147483635 -- Object
+SET     @:p40 = System.Decimal[]
+DECLARE @:p41 -2147483629 -- Object
+SET     @:p41 = System.String[]
+DECLARE @:p42 -2147483639 -- Object
+SET     @:p42 = System.Int32[]
+DECLARE @:p43 -2147483647 -- Object
+SET     @:p43 = System.Int64[]
+DECLARE @:p44 -2147483640 -- Object
+SET     @:p44 = System.Double[]
+DECLARE @:p45 -2147483635 -- Object
+SET     @:p45 = System.Decimal[]
+DECLARE @:p46 -2147483629 -- Object
+SET     @:p46 = System.String[]
+DECLARE @:p47 -2147483639 -- Object
+SET     @:p47 = System.Int32[]
+DECLARE @:p48 -2147483647 -- Object
+SET     @:p48 = System.Int64[]
+DECLARE @:p49 -2147483640 -- Object
+SET     @:p49 = System.Double[]
+DECLARE @:p50 -2147483635 -- Object
+SET     @:p50 = System.Decimal[]
 
 INSERT INTO "SampleClass"
 (

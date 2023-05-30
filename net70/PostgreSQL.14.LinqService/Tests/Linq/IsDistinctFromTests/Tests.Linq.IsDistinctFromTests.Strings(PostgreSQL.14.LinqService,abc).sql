@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS "Src"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = 2
 DECLARE @String Text(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:NullableInt,
 	:String,
 	:NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Integer -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = NULL
 DECLARE @String Text(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:NullableInt,
 	:String,
 	:NullableString
@@ -68,51 +68,51 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Text(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."String" IS DISTINCT FROM :value_1
+	s."String" IS DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Text(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableString" IS DISTINCT FROM :value_1
+	s."NullableString" IS DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Text(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."String" IS NOT DISTINCT FROM :value_1
+	s."String" IS NOT DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value_1 Text(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Text(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	s."NullableString" IS NOT DISTINCT FROM :value_1
+	s."NullableString" IS NOT DISTINCT FROM :value
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

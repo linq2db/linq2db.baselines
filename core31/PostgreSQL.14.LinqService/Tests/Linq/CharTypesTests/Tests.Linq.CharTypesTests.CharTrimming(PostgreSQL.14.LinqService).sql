@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -17,13 +17,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = '	'
+DECLARE @NChar Char -- String
+SET     @NChar = '	'
 
 INSERT INTO "AllTypes"
 (
@@ -31,13 +31,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = '
+DECLARE @NChar Char -- String
+SET     @NChar = '
 '
 
 INSERT INTO "AllTypes"
@@ -46,13 +46,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- String
+SET     @NChar = ''
 
 INSERT INTO "AllTypes"
 (
@@ -60,13 +60,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- String
+SET     @NChar = ''
 
 INSERT INTO "AllTypes"
 (
@@ -74,13 +74,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- String
+SET     @NChar = ''
 
 INSERT INTO "AllTypes"
 (
@@ -88,13 +88,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -102,13 +102,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -116,13 +116,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -130,13 +130,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -144,13 +144,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -158,13 +158,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -172,13 +172,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -186,13 +186,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -200,13 +200,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -214,13 +214,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -228,13 +228,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -242,13 +242,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- String
+SET     @NChar = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -256,13 +256,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = '　'
+DECLARE @NChar Char -- String
+SET     @NChar = '　'
 
 INSERT INTO "AllTypes"
 (
@@ -270,13 +270,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @NChar_1 Char -- String
-SET     @NChar_1 = NULL
+DECLARE @NChar Char -- String
+SET     @NChar = NULL
 
 INSERT INTO "AllTypes"
 (
@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1
+	:NChar
 )
 
 BeforeExecute
