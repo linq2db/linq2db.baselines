@@ -16,10 +16,10 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 100
-DECLARE @value_2 Int -- Int32
-SET     @value_2 = 1
+DECLARE @Value Int -- Int32
+SET     @Value = 100
+DECLARE @value_1 Int -- Int32
+SET     @value_1 = 1
 DECLARE @ValueStr NVarChar(50) -- String
 SET     @ValueStr = N'SomeStr1'
 
@@ -35,8 +35,8 @@ OUTPUT
 	[INSERTED].[ValueStr]
 VALUES
 (
-	@Value_1,
-	@value_2,
+	@Value,
+	@value_1,
 	@ValueStr
 )
 
