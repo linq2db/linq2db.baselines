@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[key_data_result].[PersonID],
@@ -19,7 +19,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table_1 [x]
+					@table [x]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -28,8 +28,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p].[PersonID]
@@ -40,15 +40,15 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table_1 [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[key_data_result].[PersonID],
@@ -64,7 +64,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table_1 [x]
+					@table [x]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -73,8 +73,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p].[PersonID]
@@ -85,15 +85,15 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table_1 [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[key_data_result].[PersonID],
@@ -109,7 +109,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table_1 [x]
+					@table [x]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -118,8 +118,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p].[PersonID]
@@ -130,15 +130,15 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table_1 [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[key_data_result].[PersonID],
@@ -154,7 +154,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table_1 [x]
+					@table [x]
 			)
 	) [key_data_result]
 		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
@@ -163,8 +163,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2012
-DECLARE @table_1 [dbo].[TestTableType] -- Structured -- Object
-SET     @table_1 = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p].[PersonID]
@@ -175,6 +175,6 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table_1 [x]
+			@table [x]
 	)
 

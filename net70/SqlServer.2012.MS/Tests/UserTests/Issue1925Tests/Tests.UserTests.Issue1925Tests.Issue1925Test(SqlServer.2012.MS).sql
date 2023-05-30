@@ -90,8 +90,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @asParamUnterm_1 NVarChar(4000) -- String
-SET     @asParamUnterm_1 = N'%~[0%'
+DECLARE @asParamUnterm NVarChar(4000) -- String
+SET     @asParamUnterm = N'%~[0%'
 
 SELECT
 	[r].[Id],
@@ -99,7 +99,7 @@ SELECT
 FROM
 	[SampleClass] [r]
 WHERE
-	[r].[Value] LIKE @asParamUnterm_1 ESCAPE N'~'
+	[r].[Value] LIKE @asParamUnterm ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
