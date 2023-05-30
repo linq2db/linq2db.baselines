@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -125,8 +125,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -159,8 +159,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -193,8 +193,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -227,8 +227,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take  -- Int32
 SET     @take = 1
 

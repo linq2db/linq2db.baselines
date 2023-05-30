@@ -2686,8 +2686,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 111001
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 111149
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 111149
 
 SELECT
 	Count(*)

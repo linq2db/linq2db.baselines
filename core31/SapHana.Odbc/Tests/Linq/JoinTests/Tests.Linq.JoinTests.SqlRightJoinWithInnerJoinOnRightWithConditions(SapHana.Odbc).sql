@@ -4,8 +4,8 @@ DECLARE @id1  -- Int32
 SET     @id1 = 1
 DECLARE @id2  -- Int32
 SET     @id2 = 2
-DECLARE @id3  -- Int32
-SET     @id3 = 1
+DECLARE @id1  -- Int32
+SET     @id1 = 1
 
 SELECT
 	"left_1"."left_2",

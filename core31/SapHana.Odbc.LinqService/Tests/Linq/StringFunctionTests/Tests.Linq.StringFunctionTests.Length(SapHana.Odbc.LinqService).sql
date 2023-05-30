@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Length_1  -- Int32
-SET     @Length_1 = 4
+DECLARE @Length  -- Int32
+SET     @Length = 4
 
 SELECT
 	"p"."FirstName",

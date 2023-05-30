@@ -16,10 +16,10 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @_default  -- Int32
 SET     @_default = 0
-DECLARE @_default_1  -- Int32
-SET     @_default_1 = 0
-DECLARE @_default_2  -- Int32
-SET     @_default_2 = 0
+DECLARE @_default  -- Int32
+SET     @_default = 0
+DECLARE @_default  -- Int32
+SET     @_default = 0
 
 SELECT
 	"a"."Id",

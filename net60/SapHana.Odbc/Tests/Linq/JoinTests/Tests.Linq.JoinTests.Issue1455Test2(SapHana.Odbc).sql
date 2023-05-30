@@ -84,10 +84,10 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @DeliveryCounterParty NVarChar(3) -- String
 SET     @DeliveryCounterParty = '%C%'
-DECLARE @DeliveryCounterParty_1 NVarChar(3) -- String
-SET     @DeliveryCounterParty_1 = '%C%'
-DECLARE @DeliveryCounterParty_2 NVarChar(3) -- String
-SET     @DeliveryCounterParty_2 = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	"al_1"."alert",

@@ -2,8 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @n  -- Int32
 SET     @n = -1
-DECLARE @n_1  -- Int32
-SET     @n_1 = -1
+DECLARE @n  -- Int32
+SET     @n = -1
 
 SELECT
 	(

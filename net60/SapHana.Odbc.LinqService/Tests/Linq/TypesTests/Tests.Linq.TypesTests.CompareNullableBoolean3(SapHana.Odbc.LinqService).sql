@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param4  -- Byte
-SET     @param4 = 0
+DECLARE @param2  -- Byte
+SET     @param2 = 0
 
 SELECT
 	"t"."ID",

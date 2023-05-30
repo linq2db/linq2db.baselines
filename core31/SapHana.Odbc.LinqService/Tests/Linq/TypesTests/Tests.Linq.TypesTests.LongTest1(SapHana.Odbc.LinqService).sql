@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value_1  -- Int64
-SET     @value_1 = 0
+DECLARE @value  -- Int64
+SET     @value = 0
 
 SELECT
 	"t"."ID",
