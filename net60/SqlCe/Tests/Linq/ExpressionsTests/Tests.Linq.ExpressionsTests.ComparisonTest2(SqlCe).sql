@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @personId_1 Int -- Int32
-SET     @personId_1 = 2
+DECLARE @personId Int -- Int32
+SET     @personId = 2
 
 SELECT
 	CASE
@@ -22,7 +22,7 @@ SELECT
 								FROM
 									[Patient] [_1]
 								WHERE
-									[_1].[PersonID] = @personId_1
+									[_1].[PersonID] = @personId
 							)
 					) [t1] ON 1=1
 					LEFT JOIN (
@@ -31,7 +31,7 @@ SELECT
 						FROM
 							[Patient] [_2]
 						WHERE
-							[_2].[PersonID] = @personId_1 AND [_2].[PersonID] NOT IN (
+							[_2].[PersonID] = @personId AND [_2].[PersonID] NOT IN (
 								SELECT
 									[_3].[PersonID]
 								FROM

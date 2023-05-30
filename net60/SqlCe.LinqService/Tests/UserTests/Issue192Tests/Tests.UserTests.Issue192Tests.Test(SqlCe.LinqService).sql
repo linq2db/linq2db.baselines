@@ -93,8 +93,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -103,7 +103,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe
@@ -125,8 +125,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -135,7 +135,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe
@@ -157,8 +157,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -167,7 +167,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe
@@ -189,8 +189,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -199,7 +199,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe
@@ -221,8 +221,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
 
 SELECT TOP (@take)
 	[_].[Name],
@@ -231,7 +231,7 @@ SELECT TOP (@take)
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlCe

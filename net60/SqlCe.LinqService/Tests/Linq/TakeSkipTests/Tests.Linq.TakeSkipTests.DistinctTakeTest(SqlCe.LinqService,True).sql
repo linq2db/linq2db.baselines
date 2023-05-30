@@ -13,8 +13,8 @@ CREATE TABLE [TakeSkipClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -22,13 +22,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -36,13 +36,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -50,13 +50,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -64,7 +64,7 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

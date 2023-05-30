@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Int -- Int32
+SET     @Int = NULL
 DECLARE @Enum NVarChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum NVarChar -- String
@@ -35,7 +35,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -44,8 +44,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @Enum NVarChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum NVarChar(12) -- String
@@ -61,7 +61,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -116,15 +116,15 @@ BeforeExecute
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @CEnum_1 NVarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum NVarChar(12) -- String
+SET     @CEnum = '___Value2___'
 
 SELECT TOP (@take)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- SqlCe

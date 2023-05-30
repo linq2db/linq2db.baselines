@@ -13,8 +13,8 @@ CREATE TABLE [TakeSkipClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -22,13 +22,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -36,13 +36,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -50,13 +50,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -64,15 +64,15 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 2
+DECLARE @take Int -- Int32
+SET     @take = 2
 
-SELECT TOP (@take_1)
+SELECT TOP (@take)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p_1 NVarChar(5) -- String
-SET     @p_1 = '2010-'
+DECLARE @p NVarChar(5) -- String
+SET     @p = '2010-'
 
 SELECT
 	[t].[c1]
 FROM
 	(
 		SELECT
-			Convert(Datetime, @p_1 + REPLICATE('0', 2 - LEN(CAST([p].[ID] as NVARCHAR(2)))) + CAST([p].[ID] as NVARCHAR(2)) + '-01') as [c1]
+			Convert(Datetime, @p + REPLICATE('0', 2 - LEN(CAST([p].[ID] as NVARCHAR(2)))) + CAST([p].[ID] as NVARCHAR(2)) + '-01') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
