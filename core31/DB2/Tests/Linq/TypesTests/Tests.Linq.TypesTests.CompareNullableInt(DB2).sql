@@ -9,8 +9,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @param_1 Integer(4) -- Int32
-SET     @param_1 = 1
+DECLARE @param Integer(4) -- Int32
+SET     @param = 1
 
 SELECT
 	"t"."ParentID",
@@ -18,5 +18,5 @@ SELECT
 FROM
 	"Parent" "t"
 WHERE
-	"t"."Value1" = @param_1
+	"t"."Value1" = @param
 

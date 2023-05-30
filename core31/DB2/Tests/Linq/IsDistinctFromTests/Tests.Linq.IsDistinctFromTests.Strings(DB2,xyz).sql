@@ -38,51 +38,51 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."String" IS DISTINCT FROM @value_1
+	"s"."String" IS DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableString" IS DISTINCT FROM @value_1
+	"s"."NullableString" IS DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."String" IS NOT DISTINCT FROM @value_1
+	"s"."String" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'xyz'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'xyz'
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableString" IS NOT DISTINCT FROM @value_1
+	"s"."NullableString" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

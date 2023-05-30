@@ -38,10 +38,10 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip_2 Integer(4) -- Int32
-SET     @skip_2 = 3
-DECLARE @skip_3 Integer(4) -- Int32
-SET     @skip_3 = 4
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 3
+DECLARE @skip_1 Integer(4) -- Int32
+SET     @skip_1 = 4
 
 SELECT
 	"t2"."Value_1"
@@ -54,7 +54,7 @@ FROM
 			"TakeSkipClass" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip_2 AND "t2".RN <= @skip_3
+	"t2".RN > @skip AND "t2".RN <= @skip_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

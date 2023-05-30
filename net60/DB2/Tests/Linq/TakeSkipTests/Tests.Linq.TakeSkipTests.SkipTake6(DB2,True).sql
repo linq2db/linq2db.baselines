@@ -20,8 +20,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 12
-DECLARE @take_1 Integer(4) -- Int32
-SET     @take_1 = 15
+DECLARE @take Integer(4) -- Int32
+SET     @take = 15
 
 SELECT
 	"c_1"."ParentID",
@@ -40,7 +40,7 @@ FROM
 					"GrandChild" "p"
 			) "t1"
 		WHERE
-			"t1".RN > @skip AND "t1".RN <= @take_1
+			"t1".RN > @skip AND "t1".RN <= @take
 	) "t2"
 WHERE
 	"c_1"."ParentID" = "t2"."ParentID"

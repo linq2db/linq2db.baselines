@@ -10,8 +10,8 @@ ALTER TABLE "KeepIdentityTest" ALTER COLUMN "ID" RESTART WITH 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 0
 
 SELECT
 	ID
@@ -24,14 +24,14 @@ FROM
 		)
 		VALUES
 		(
-			@Value_1
+			@Value
 		)
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 200
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 200
 
 INSERT INTO "KeepIdentityTest"
 (
@@ -39,13 +39,13 @@ INSERT INTO "KeepIdentityTest"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 300
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 300
 
 INSERT INTO "KeepIdentityTest"
 (
@@ -53,7 +53,7 @@ INSERT INTO "KeepIdentityTest"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

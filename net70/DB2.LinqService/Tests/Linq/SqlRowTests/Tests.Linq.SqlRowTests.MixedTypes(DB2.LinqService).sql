@@ -25,14 +25,14 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Int_1 Integer(4) -- Int32
-SET     @Int_1 = 1
+DECLARE @Int Integer(4) -- Int32
+SET     @Int = 1
 DECLARE @Str VarChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date_1 Timestamp(20) -- DateTime
-SET     @Date_1 = '2001-01-01-00.00.00.000000'
-DECLARE @Double_1 Double(8)
-SET     @Double_1 = 1
+DECLARE @Date Timestamp(20) -- DateTime
+SET     @Date = '2001-01-01-00.00.00.000000'
+DECLARE @Double Double(8)
+SET     @Double = 1
 DECLARE @Bool SmallInt(4) -- Int16
 SET     @Bool = 1
 
@@ -46,23 +46,23 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Int_1 Integer(4) -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer(4) -- Int32
+SET     @Int = 2
 DECLARE @Str VarChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date_1 Timestamp(20) -- DateTime
-SET     @Date_1 = '2002-02-02-00.00.00.000000'
-DECLARE @Double_1 Double(8)
-SET     @Double_1 = 2
+DECLARE @Date Timestamp(20) -- DateTime
+SET     @Date = '2002-02-02-00.00.00.000000'
+DECLARE @Double Double(8)
+SET     @Double = 2
 DECLARE @Bool SmallInt(4) -- Int16
 SET     @Bool = 0
 
@@ -76,10 +76,10 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 

@@ -26,8 +26,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Integer -- Int32
+SET     @Int = NULL
 DECLARE @Enum VarChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar -- String
@@ -43,7 +43,7 @@ INSERT INTO "Src"
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -52,8 +52,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Integer(4) -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer(4) -- Int32
+SET     @Int = 2
 DECLARE @Enum VarChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum VarChar(12) -- String
@@ -69,7 +69,7 @@ INSERT INTO "Src"
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -119,15 +119,15 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @CEnum_1 VarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- String
+SET     @CEnum = '___Value2___'
 
 SELECT
 	"s"."Id"
 FROM
 	"Src" "s"
 WHERE
-	("s"."CEnum" NOT IN (@CEnum_1) AND "s"."CEnum" IS NOT NULL)
+	("s"."CEnum" NOT IN (@CEnum) AND "s"."CEnum" IS NOT NULL)
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

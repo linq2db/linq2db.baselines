@@ -15,8 +15,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @param_1 SmallInt(4) -- Int16
-SET     @param_1 = 1
+DECLARE @param SmallInt(4) -- Int16
+SET     @param = 1
 
 SELECT
 	"t".ID,
@@ -30,5 +30,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."BoolValue" = @param_1
+	"t"."BoolValue" = @param
 

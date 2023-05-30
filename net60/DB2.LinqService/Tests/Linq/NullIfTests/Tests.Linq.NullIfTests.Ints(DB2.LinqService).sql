@@ -24,8 +24,8 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Int_1 Integer(4) -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer(4) -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Integer(4) -- Int32
 SET     @NullableInt = 2
 DECLARE @String VarChar(3) -- String
@@ -42,7 +42,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -50,8 +50,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Int_1 Integer(4) -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Integer(4) -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = NULL
 DECLARE @String VarChar(3) -- String
@@ -68,7 +68,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString

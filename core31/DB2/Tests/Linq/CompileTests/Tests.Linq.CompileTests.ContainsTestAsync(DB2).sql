@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @p_1 Integer(4) -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
-		WHEN @p_1 IN (
+		WHEN @p IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM
@@ -18,12 +18,12 @@ FROM SYSIBM.SYSDUMMY1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @p_1 Integer(4) -- Int32
-SET     @p_1 = -1
+DECLARE @p Integer(4) -- Int32
+SET     @p = -1
 
 SELECT
 	CASE
-		WHEN @p_1 IN (
+		WHEN @p IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM

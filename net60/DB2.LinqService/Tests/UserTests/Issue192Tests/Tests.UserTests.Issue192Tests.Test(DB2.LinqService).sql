@@ -99,8 +99,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT
 	"_"."Name",
@@ -109,7 +109,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue_1
+	"_"."BoolValue" = @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -129,8 +129,8 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT
 	"_"."Name",
@@ -139,7 +139,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue_1
+	"_"."BoolValue" = @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -159,8 +159,8 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT
 	"_"."Name",
@@ -169,7 +169,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue_1
+	"_"."BoolValue" = @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -189,8 +189,8 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT
 	"_"."Name",
@@ -199,7 +199,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue_1
+	"_"."BoolValue" = @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -219,8 +219,8 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT
 	"_"."Name",
@@ -229,7 +229,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue_1
+	"_"."BoolValue" = @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

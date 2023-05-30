@@ -86,8 +86,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 3
 
 INSERT INTO SESSION."temp_table1"
 (
@@ -97,7 +97,7 @@ INSERT INTO SESSION."temp_table1"
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

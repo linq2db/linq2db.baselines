@@ -24,8 +24,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Double_1 Double(8)
-SET     @Double_1 = 0
+DECLARE @Double Double(8)
+SET     @Double = 0
 
 INSERT INTO "CreateTableTypes"
 (
@@ -35,15 +35,15 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	@Id,
-	@Double_1
+	@Double
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Double_1 Double(8)
-SET     @Double_1 = 3.1400000000000001
+DECLARE @Double Double(8)
+SET     @Double = 3.1400000000000001
 
 INSERT INTO "CreateTableTypes"
 (
@@ -53,7 +53,7 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	@Id,
-	@Double_1
+	@Double
 )
 
 BeforeExecute
