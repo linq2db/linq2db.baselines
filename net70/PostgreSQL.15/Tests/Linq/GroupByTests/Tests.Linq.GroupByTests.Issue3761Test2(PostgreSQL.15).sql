@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS "Issue3761Table"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @_default Timestamp -- DateTime2
-SET     @_default = '0001-01-01'::date
+DECLARE @default Timestamp -- DateTime2
+SET     @default = '0001-01-01'::date
 DECLARE @DATUM Timestamp -- DateTime2
 SET     @DATUM = '2019-01-01'::date
 
@@ -30,8 +30,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce(n."DATUM", :_default))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce(n."DATUM", :_default))) as int) as "Month_1",
+			Cast(Floor(Extract(year from Coalesce(n."DATUM", :default))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Coalesce(n."DATUM", :default))) as int) as "Month_1",
 			n."SKUPAJ"
 		FROM
 			"Issue3761Table" n
@@ -49,8 +49,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce(n_1."DATUM", :_default))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce(n_1."DATUM", :_default))) as int) as "Month_1",
+			Cast(Floor(Extract(year from Coalesce(n_1."DATUM", :default))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Coalesce(n_1."DATUM", :default))) as int) as "Month_1",
 			n_1."SKUPAJ"
 		FROM
 			"Issue3761Table" n_1
