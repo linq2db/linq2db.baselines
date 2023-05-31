@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -20,14 +20,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = '	'
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = '	'
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = '	'
 
@@ -38,14 +38,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = '
 '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = '
@@ -58,14 +58,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ''
 
@@ -76,14 +76,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ''
 
@@ -94,14 +94,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ''
 
@@ -112,14 +112,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -130,14 +130,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -148,14 +148,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -166,14 +166,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -184,14 +184,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -202,14 +202,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -220,14 +220,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -238,14 +238,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -256,14 +256,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -274,14 +274,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -292,14 +292,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -310,14 +310,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -328,14 +328,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = '　'
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = '　'
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = ' '
 
@@ -346,14 +346,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = chr(0)
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = chr(0)
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = chr(0)
 
@@ -364,14 +364,14 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = NULL
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = NULL
 DECLARE @Char_1 Char -- StringFixedLength
 SET     @Char_1 = NULL
 
@@ -382,7 +382,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:NChar_1,
+	:NChar,
 	:Char_1
 )
 

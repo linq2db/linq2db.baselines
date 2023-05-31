@@ -97,12 +97,12 @@ DECLARE @int3 Int32
 SET     @int3 = 33
 DECLARE @someId Int32
 SET     @someId = 100
-DECLARE @take_1 Int32
-SET     @take_1 = 3
+DECLARE @take Int32
+SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take_2 Int32
-SET     @take_2 = 3
+DECLARE @take_1 Int32
+SET     @take_1 = 3
 
 UPDATE
 	"UpdatedEntities"
@@ -152,7 +152,7 @@ SET
 									c_1."id"
 							) t1
 						WHERE
-							ROWNUM <= :take_1
+							ROWNUM <= :take
 					) t2
 				WHERE
 					t2.RN > :skip
@@ -186,7 +186,7 @@ WHERE
 									c_2."id"
 							) t4
 						WHERE
-							ROWNUM <= :take_2
+							ROWNUM <= :take_1
 					) t5
 				WHERE
 					t5.RN > :skip

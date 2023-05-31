@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Length_2 Int32
-SET     @Length_2 = 9
+DECLARE @Length Int32
+SET     @Length = 9
 
 SELECT
 	p_1.ID,
@@ -21,6 +21,6 @@ WHERE
 	CASE
 		WHEN InStr(Substr(p_1."FirstName", 1, 11), '123', 6) = 0
 			THEN -1
-		ELSE :Length_2 - InStr(Reverse(Substr(p_1."FirstName", 6, 6)), '321')
+		ELSE :Length - InStr(Reverse(Substr(p_1."FirstName", 6, 6)), '321')
 	END = 8
 

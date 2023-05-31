@@ -40,51 +40,51 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 0, 1) = 1
+	DECODE(s."String", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 0, 1) = 1
+	DECODE(s."NullableString", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 0, 1) = 0
+	DECODE(s."String", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 0, 1) = 0
+	DECODE(s."NullableString", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

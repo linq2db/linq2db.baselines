@@ -40,51 +40,51 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = 4
+DECLARE @value Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."Int", :value_1, 0, 1) = 1
+	DECODE(s."Int", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = 4
+DECLARE @value Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableInt", :value_1, 0, 1) = 1
+	DECODE(s."NullableInt", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = 4
+DECLARE @value Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."Int", :value_1, 0, 1) = 0
+	DECODE(s."Int", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Int32
-SET     @value_1 = 4
+DECLARE @value Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableInt", :value_1, 0, 1) = 0
+	DECODE(s."NullableInt", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

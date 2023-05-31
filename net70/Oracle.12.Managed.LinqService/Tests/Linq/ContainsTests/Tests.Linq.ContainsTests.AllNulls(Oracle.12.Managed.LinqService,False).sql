@@ -34,8 +34,8 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
+DECLARE @Int Int32
+SET     @Int = NULL
 DECLARE @Enum Varchar2 -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar2 -- String
@@ -51,7 +51,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -60,8 +60,8 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
+DECLARE @Int Int32
+SET     @Int = 2
 DECLARE @Enum Varchar2(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar2(12) -- String
@@ -77,7 +77,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
