@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS [Issue3761Table]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @_default  -- DateTime
-SET     @_default = '0001-01-01'
+DECLARE @default  -- DateTime
+SET     @default = '0001-01-01'
 DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 
@@ -30,8 +30,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(StrFTime('%Y', Coalesce([n].[DATUM], @_default)) as int) as [Year_1],
-			Cast(StrFTime('%m', Coalesce([n].[DATUM], @_default)) as int) as [Month_1],
+			Cast(StrFTime('%Y', Coalesce([n].[DATUM], @default)) as int) as [Year_1],
+			Cast(StrFTime('%m', Coalesce([n].[DATUM], @default)) as int) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
@@ -49,8 +49,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(StrFTime('%Y', Coalesce([n_1].[DATUM], @_default)) as int) as [Year_1],
-			Cast(StrFTime('%m', Coalesce([n_1].[DATUM], @_default)) as int) as [Month_1],
+			Cast(StrFTime('%Y', Coalesce([n_1].[DATUM], @default)) as int) as [Year_1],
+			Cast(StrFTime('%m', Coalesce([n_1].[DATUM], @default)) as int) as [Month_1],
 			[n_1].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n_1]
