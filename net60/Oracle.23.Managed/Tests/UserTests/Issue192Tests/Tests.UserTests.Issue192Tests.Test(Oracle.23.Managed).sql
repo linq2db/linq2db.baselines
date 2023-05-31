@@ -107,8 +107,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -119,7 +119,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -141,8 +141,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -153,7 +153,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -175,8 +175,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -187,7 +187,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -209,8 +209,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -221,7 +221,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
@@ -243,8 +243,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -255,7 +255,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1
+	t1."BoolValue" = :BoolValue
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

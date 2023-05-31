@@ -67,8 +67,8 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @NotIdentifier Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Int32
-SET     @Value_1 = 5
+DECLARE @Value Int32
+SET     @Value = 5
 
 INSERT INTO "DynamicTable"
 (
@@ -78,15 +78,15 @@ INSERT INTO "DynamicTable"
 VALUES
 (
 	:NotIdentifier,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @NotIdentifier Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Int32
-SET     @Value_1 = 5
+DECLARE @Value Int32
+SET     @Value = 5
 
 INSERT INTO "DynamicTable"
 (
@@ -96,7 +96,7 @@ INSERT INTO "DynamicTable"
 VALUES
 (
 	:NotIdentifier,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

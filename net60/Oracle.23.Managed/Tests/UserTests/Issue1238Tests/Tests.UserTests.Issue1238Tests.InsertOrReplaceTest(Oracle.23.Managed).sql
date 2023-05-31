@@ -12,8 +12,8 @@ DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 Varchar2 -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Int32
-SET     @Data_1 = 1
+DECLARE @Data Int32
+SET     @Data = 1
 
 MERGE INTO "InheritanceParent" t1
 USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s ON
@@ -24,7 +24,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data_1
+		t1."TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -36,7 +36,7 @@ WHEN NOT MATCHED THEN
 	(
 		:Key1,
 		:Key2,
-		:Data_1
+		:Data
 	)
 
 BeforeExecute
@@ -53,8 +53,8 @@ DECLARE @Key1 Int32
 SET     @Key1 = 143
 DECLARE @Key2 Varchar2 -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Int32
-SET     @Data_1 = 1
+DECLARE @Data Int32
+SET     @Data = 1
 
 MERGE INTO "InheritanceParent" t1
 USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s ON
@@ -65,7 +65,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data_1
+		t1."TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -77,7 +77,7 @@ WHEN NOT MATCHED THEN
 	(
 		:Key1,
 		:Key2,
-		:Data_1
+		:Data
 	)
 
 BeforeExecute

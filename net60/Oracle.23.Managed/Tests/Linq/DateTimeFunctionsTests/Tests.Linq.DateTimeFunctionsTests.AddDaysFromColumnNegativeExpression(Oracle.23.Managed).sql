@@ -46,15 +46,15 @@ DECLARE @part1 Int32
 SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4
-DECLARE @p_1 TimeStamp -- DateTime
-SET     @p_1 = TIMESTAMP '2018-01-02 00:00:00.000000'
+DECLARE @p TimeStamp -- DateTime
+SET     @p = TIMESTAMP '2018-01-02 00:00:00.000000'
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY < :p_1
+	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY < :p
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
