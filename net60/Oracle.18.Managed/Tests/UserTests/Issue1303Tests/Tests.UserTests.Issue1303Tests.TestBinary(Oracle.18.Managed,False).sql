@@ -33,10 +33,10 @@ END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Array_1 Raw(3) -- Binary
-SET     @Array_1 = HEXTORAW('010203')
-DECLARE @Binary_1 Raw(2) -- Binary
-SET     @Binary_1 = HEXTORAW('0405')
+DECLARE @Array Raw(3) -- Binary
+SET     @Array = HEXTORAW('010203')
+DECLARE @Binary Raw(2) -- Binary
+SET     @Binary = HEXTORAW('0405')
 
 INSERT INTO "Issue1303"
 (
@@ -47,8 +47,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	:Array_1,
-	:Binary_1
+	:Array,
+	:Binary
 )
 
 BeforeExecute
@@ -68,8 +68,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Array_1 Raw(3) -- Binary
-SET     @Array_1 = HEXTORAW('010203')
+DECLARE @Array Raw(3) -- Binary
+SET     @Array = HEXTORAW('010203')
 DECLARE @take Int32
 SET     @take = 2
 
@@ -80,13 +80,13 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array_1
+	t1."Array" = :Array
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Binary_1 Raw(2) -- Binary
-SET     @Binary_1 = HEXTORAW('0405')
+DECLARE @Binary Raw(2) -- Binary
+SET     @Binary = HEXTORAW('0405')
 DECLARE @take Int32
 SET     @take = 2
 
@@ -97,7 +97,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary_1
+	t1."Binary" = :Binary
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

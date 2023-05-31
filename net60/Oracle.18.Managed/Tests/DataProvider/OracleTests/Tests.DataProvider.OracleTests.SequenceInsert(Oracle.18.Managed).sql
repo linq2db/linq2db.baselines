@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(8) -- String
-SET     @Value_1 = 'SeqValue'
+DECLARE @Value Varchar2(8) -- String
+SET     @Value = 'SeqValue'
 
 INSERT INTO SEQUENCETEST
 (
@@ -19,7 +19,7 @@ INSERT INTO SEQUENCETEST
 VALUES
 (
 	SEQUENCETESTSEQ.nextval,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

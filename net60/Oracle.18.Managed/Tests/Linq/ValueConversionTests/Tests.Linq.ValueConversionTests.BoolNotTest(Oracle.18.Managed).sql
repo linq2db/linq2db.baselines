@@ -56,8 +56,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue_1 Varchar2 -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Varchar2 -- String
+SET     @BoolValue = 'N'
 
 SELECT
 	t."Id",
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue_1
+	t."BoolValue" = :BoolValue
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

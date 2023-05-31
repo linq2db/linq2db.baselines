@@ -34,8 +34,8 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Int_1 Int32
-SET     @Int_1 = NULL
+DECLARE @Int Int32
+SET     @Int = NULL
 DECLARE @Enum Varchar2 -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar2 -- String
@@ -51,7 +51,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -60,8 +60,8 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
+DECLARE @Int Int32
+SET     @Int = 2
 DECLARE @Enum Varchar2(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar2(12) -- String
@@ -77,7 +77,7 @@ INSERT INTO "Src"
 VALUES
 (
 	:Id,
-	:Int_1,
+	:Int,
 	:Enum,
 	:CEnum
 )
@@ -133,8 +133,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -143,7 +143,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL)
+	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
