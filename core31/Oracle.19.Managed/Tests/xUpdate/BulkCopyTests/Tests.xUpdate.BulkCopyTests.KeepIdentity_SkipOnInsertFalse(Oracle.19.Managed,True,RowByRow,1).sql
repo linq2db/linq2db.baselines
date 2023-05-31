@@ -10,8 +10,8 @@ CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Int32
-SET     @Value_1 = 0
+DECLARE @Value Int32
+SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -21,7 +21,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER

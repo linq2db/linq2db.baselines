@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p_1 Varchar2(2) -- String
-SET     @p_1 = '23'
+DECLARE @p Varchar2(2) -- String
+SET     @p = '23'
 
 SELECT
-	:p_1
+	:p
 FROM SYS.DUAL
 

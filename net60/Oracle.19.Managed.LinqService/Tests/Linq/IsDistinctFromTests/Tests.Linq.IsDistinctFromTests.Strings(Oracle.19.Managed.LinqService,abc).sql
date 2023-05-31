@@ -32,8 +32,8 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Int_1 Int32
-SET     @Int_1 = 2
+DECLARE @Int Int32
+SET     @Int = 2
 DECLARE @NullableInt Int32
 SET     @NullableInt = 2
 DECLARE @String Varchar2(3) -- String
@@ -50,7 +50,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:NullableInt,
 	:String,
 	:NullableString
@@ -58,8 +58,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Int_1 Int32
-SET     @Int_1 = 3
+DECLARE @Int Int32
+SET     @Int = 3
 DECLARE @NullableInt Int32
 SET     @NullableInt = NULL
 DECLARE @String Varchar2(3) -- String
@@ -76,7 +76,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	:Int_1,
+	:Int,
 	:NullableInt,
 	:String,
 	:NullableString
@@ -84,51 +84,51 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 0, 1) = 1
+	DECODE(s."String", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 0, 1) = 1
+	DECODE(s."NullableString", :value, 0, 1) = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."String", :value_1, 0, 1) = 0
+	DECODE(s."String", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	"Src" s
 WHERE
-	DECODE(s."NullableString", :value_1, 0, 1) = 0
+	DECODE(s."NullableString", :value, 0, 1) = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

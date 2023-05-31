@@ -67,10 +67,10 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @filter_2 Varchar2(6) -- String
-SET     @filter_2 = '%test%'
-DECLARE @filter_3 Varchar2(6) -- String
-SET     @filter_3 = '%test%'
+DECLARE @filter Varchar2(6) -- String
+SET     @filter = '%test%'
+DECLARE @filter_1 Varchar2(6) -- String
+SET     @filter_1 = '%test%'
 
 SELECT
 	q."Id",
@@ -80,7 +80,7 @@ SELECT
 FROM
 	"CustomerBase" q
 WHERE
-	q."ClientType" = 'Client' AND (q."Name" LIKE :filter_2 ESCAPE '~' OR q."ContactEmail" LIKE :filter_3 ESCAPE '~')
+	q."ClientType" = 'Client' AND (q."Name" LIKE :filter ESCAPE '~' OR q."ContactEmail" LIKE :filter_1 ESCAPE '~')
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

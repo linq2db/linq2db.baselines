@@ -29,8 +29,8 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -38,13 +38,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -52,13 +52,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -66,13 +66,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -80,13 +80,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take_1 Int32
-SET     @take_1 = 2
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	t1."Value"
@@ -94,7 +94,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-FETCH NEXT :take_1 ROWS ONLY
+FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

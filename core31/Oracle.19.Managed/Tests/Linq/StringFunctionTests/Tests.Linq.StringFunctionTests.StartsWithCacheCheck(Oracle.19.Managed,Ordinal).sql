@@ -13,51 +13,51 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @nameToCheck_1 Varchar2(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck Varchar2(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @nameToCheck_1 Varchar2(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck Varchar2(4) -- String
+SET     @nameToCheck = 'Joh%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :nameToCheck_1 ESCAPE '~' AND
+	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @nameToCheck_1 Varchar2(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Varchar2(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE :nameToCheck_1 ESCAPE '~' AND p."PersonID" = 1
+	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @nameToCheck_1 Varchar2(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck Varchar2(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."FirstName" NOT LIKE :nameToCheck_1 ESCAPE '~' AND
+	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 

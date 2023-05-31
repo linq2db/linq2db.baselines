@@ -33,8 +33,8 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 3000
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'two'
+DECLARE @value Varchar2(3) -- String
+SET     @value = 'two'
 DECLARE @id2 Int32
 SET     @id2 = 4000
 
@@ -48,7 +48,7 @@ WHEN "Value_1" IS NULL THEN
 	VALUES
 	(
 		:id1,
-		:value_1
+		:value
 	)
 WHEN "Value_1" IS NOT NULL THEN
 	INTO "Dest1"
@@ -59,10 +59,10 @@ WHEN "Value_1" IS NOT NULL THEN
 	VALUES
 	(
 		:id2,
-		:value_1
+		:value
 	)
 SELECT
-	:value_1 as "Value_1"
+	:value as "Value_1"
 FROM SYS.DUAL
 
 BeforeExecute
