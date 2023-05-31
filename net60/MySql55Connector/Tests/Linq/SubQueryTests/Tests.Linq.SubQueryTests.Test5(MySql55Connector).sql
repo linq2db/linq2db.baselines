@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @_testValue Int32
-SET     @_testValue = 3
+DECLARE @testValue Int32
+SET     @testValue = 3
 
 SELECT
 	`t1`.`c1`,
@@ -19,7 +19,7 @@ SELECT
 		FROM
 			`Child` `p_1`
 		WHERE
-			`p_1`.`ParentID` = `t1`.`c1` AND `p_1`.`ParentID` = @_testValue
+			`p_1`.`ParentID` = `t1`.`c1` AND `p_1`.`ParentID` = @testValue
 	)
 FROM
 	(
