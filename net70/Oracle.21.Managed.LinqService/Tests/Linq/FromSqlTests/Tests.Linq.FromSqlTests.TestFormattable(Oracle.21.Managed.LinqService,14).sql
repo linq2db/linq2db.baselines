@@ -32,8 +32,8 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_1'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_1'
 
 INSERT INTO "sample_class"
 (
@@ -43,15 +43,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_2'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_2'
 
 INSERT INTO "sample_class"
 (
@@ -61,15 +61,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_3'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_3'
 
 INSERT INTO "sample_class"
 (
@@ -79,15 +79,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 4
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_4'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_4'
 
 INSERT INTO "sample_class"
 (
@@ -97,15 +97,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_5'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_5'
 
 INSERT INTO "sample_class"
 (
@@ -115,15 +115,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 6
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_6'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_6'
 
 INSERT INTO "sample_class"
 (
@@ -133,15 +133,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 7
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_7'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_7'
 
 INSERT INTO "sample_class"
 (
@@ -151,15 +151,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 8
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_8'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_8'
 
 INSERT INTO "sample_class"
 (
@@ -169,15 +169,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 9
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Str_9'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Str_9'
 
 INSERT INTO "sample_class"
 (
@@ -187,15 +187,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 10
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_10'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_10'
 
 INSERT INTO "sample_class"
 (
@@ -205,15 +205,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 11
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_11'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_11'
 
 INSERT INTO "sample_class"
 (
@@ -223,15 +223,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 12
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_12'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_12'
 
 INSERT INTO "sample_class"
 (
@@ -241,15 +241,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 13
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_13'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_13'
 
 INSERT INTO "sample_class"
 (
@@ -259,15 +259,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 14
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_14'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_14'
 
 INSERT INTO "sample_class"
 (
@@ -277,15 +277,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 15
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_15'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_15'
 
 INSERT INTO "sample_class"
 (
@@ -295,15 +295,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 16
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_16'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_16'
 
 INSERT INTO "sample_class"
 (
@@ -313,15 +313,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 17
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_17'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_17'
 
 INSERT INTO "sample_class"
 (
@@ -331,15 +331,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 18
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_18'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_18'
 
 INSERT INTO "sample_class"
 (
@@ -349,15 +349,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 19
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_19'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_19'
 
 INSERT INTO "sample_class"
 (
@@ -367,15 +367,15 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 20
-DECLARE @Value_1 Varchar2(6) -- String
-SET     @Value_1 = 'Str_20'
+DECLARE @Value Varchar2(6) -- String
+SET     @Value = 'Str_20'
 
 INSERT INTO "sample_class"
 (
@@ -385,22 +385,22 @@ INSERT INTO "sample_class"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 5
 DECLARE @p_1 Int32
-SET     @p_1 = 5
-DECLARE @p_2 Int32
-SET     @p_2 = 14
+SET     @p_1 = 14
 
 SELECT
 	c_1."value",
 	c_1."id"
 FROM
 	(
-		SELECT * FROM "sample_class" where "id" >= :p_1 and "id" < :p_2
+		SELECT * FROM "sample_class" where "id" >= :p and "id" < :p_1
 	) c_1
 WHERE
 	c_1."id" > 10

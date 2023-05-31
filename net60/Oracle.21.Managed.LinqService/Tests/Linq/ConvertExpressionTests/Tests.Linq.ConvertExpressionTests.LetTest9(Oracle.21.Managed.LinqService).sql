@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 DECLARE @take Int32
-SET     @take = 10
+SET     @take = 1
+DECLARE @take_1 Int32
+SET     @take_1 = 10
 
 SELECT
 	t1."ParentID",
@@ -20,7 +20,7 @@ FROM
 				c_1."ParentID" = p."ParentID"
 			ORDER BY
 				c_1."ChildID"
-			FETCH NEXT :take_1 ROWS ONLY
+			FETCH NEXT :take ROWS ONLY
 		) t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT :take_1 ROWS ONLY
 
