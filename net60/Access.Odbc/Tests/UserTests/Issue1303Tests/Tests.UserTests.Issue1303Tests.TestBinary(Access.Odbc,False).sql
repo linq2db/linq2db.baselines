@@ -17,10 +17,10 @@ CREATE TABLE [Issue1303]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Array_1 VarBinary(3) -- Binary
-SET     @Array_1 = 0x010203
-DECLARE @Binary_1 VarBinary(2) -- Binary
-SET     @Binary_1 = 0x0405
+DECLARE @Array VarBinary(3) -- Binary
+SET     @Array = 0x010203
+DECLARE @Binary VarBinary(2) -- Binary
+SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]
 (
@@ -49,8 +49,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Array_1 VarBinary(3) -- Binary
-SET     @Array_1 = 0x010203
+DECLARE @Array VarBinary(3) -- Binary
+SET     @Array = 0x010203
 
 SELECT TOP 2
 	[_].[ID],
@@ -63,8 +63,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Binary_1 VarBinary(2) -- Binary
-SET     @Binary_1 = 0x0405
+DECLARE @Binary VarBinary(2) -- Binary
+SET     @Binary = 0x0405
 
 SELECT TOP 2
 	[_].[ID],

@@ -17,8 +17,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 1
+DECLARE @Column Int -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 2
+DECLARE @Column Int -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Column_1 NVarChar -- String
-SET     @Column_1 = 2
+DECLARE @Column NVarChar -- String
+SET     @Column = 2
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = 3
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 1
+DECLARE @Column Int -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 2
+DECLARE @Column Int -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 1
+DECLARE @Column Int -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 2
+DECLARE @Column Int -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 1
+DECLARE @Column Int -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Int -- Int32
-SET     @Column_1 = 2
+DECLARE @Column Int -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
