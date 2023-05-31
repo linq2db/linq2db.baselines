@@ -19,8 +19,8 @@ IF (OBJECT_ID(N'[Issue3761Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @_default DateTime2
-SET     @_default = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @default DateTime2
+SET     @default = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
@@ -31,8 +31,8 @@ SELECT
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n].[DATUM], @_default)) as [Year_1],
-			DatePart(month, Coalesce([n].[DATUM], @_default)) as [Month_1],
+			DatePart(year, Coalesce([n].[DATUM], @default)) as [Year_1],
+			DatePart(month, Coalesce([n].[DATUM], @default)) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
@@ -50,8 +50,8 @@ SELECT
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n_1].[DATUM], @_default)) as [Year_1],
-			DatePart(month, Coalesce([n_1].[DATUM], @_default)) as [Month_1],
+			DatePart(year, Coalesce([n_1].[DATUM], @default)) as [Year_1],
+			DatePart(month, Coalesce([n_1].[DATUM], @default)) as [Month_1],
 			[n_1].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n_1]
