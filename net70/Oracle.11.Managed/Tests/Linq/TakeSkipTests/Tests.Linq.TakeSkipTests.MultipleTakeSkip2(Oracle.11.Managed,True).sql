@@ -43,10 +43,10 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take_2 Int32
-SET     @take_2 = 5
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
+DECLARE @take Int32
+SET     @take = 5
+DECLARE @skip Int32
+SET     @skip = 3
 
 SELECT
 	t3."Value_1"
@@ -65,10 +65,10 @@ FROM
 					t1."Value"
 			) t2
 		WHERE
-			ROWNUM <= :take_2
+			ROWNUM <= :take
 	) t3
 WHERE
-	t3.RN > :skip_2
+	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

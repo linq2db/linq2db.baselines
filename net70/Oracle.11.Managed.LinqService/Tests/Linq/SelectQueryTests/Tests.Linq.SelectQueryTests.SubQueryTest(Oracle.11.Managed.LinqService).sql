@@ -32,8 +32,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Value_1 Int32
-SET     @Value_1 = 100
+DECLARE @Value Int32
+SET     @Value = 100
 
 INSERT INTO "SampleClass"
 (
@@ -43,7 +43,7 @@ INSERT INTO "SampleClass"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

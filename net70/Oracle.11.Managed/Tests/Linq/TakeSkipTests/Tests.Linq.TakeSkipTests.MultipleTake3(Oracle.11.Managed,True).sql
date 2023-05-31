@@ -43,8 +43,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take_3 Int32
-SET     @take_3 = 1
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	t2."Value_1"
@@ -58,7 +58,7 @@ FROM
 			t1."Value"
 	) t2
 WHERE
-	ROWNUM <= :take_3
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

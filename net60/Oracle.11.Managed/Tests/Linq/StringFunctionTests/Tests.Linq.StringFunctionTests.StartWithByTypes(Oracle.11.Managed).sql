@@ -40,14 +40,14 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @str_4 Char(5) -- AnsiStringFixedLength
-SET     @str_4 = 'some%'
-DECLARE @str_5 Char(5) -- StringFixedLength
-SET     @str_5 = 'some%'
-DECLARE @str_6 Varchar2(5) -- String
-SET     @str_6 = 'some%'
-DECLARE @str_7 NVarchar2(5) -- String
-SET     @str_7 = 'some%'
+DECLARE @str Char(5) -- AnsiStringFixedLength
+SET     @str = 'some%'
+DECLARE @str_1 Char(5) -- StringFixedLength
+SET     @str_1 = 'some%'
+DECLARE @str_2 Varchar2(5) -- String
+SET     @str_2 = 'some%'
+DECLARE @str_3 NVarchar2(5) -- String
+SET     @str_3 = 'some%'
 
 SELECT
 	t."Id",
@@ -58,10 +58,10 @@ SELECT
 FROM
 	"StringTypesTable" t
 WHERE
-	t."CharColumn" LIKE :str_4 ESCAPE '~' AND
-	t."NCharColumn" LIKE :str_5 ESCAPE '~' AND
-	t."VarCharColumn" LIKE :str_6 ESCAPE '~' AND
-	t."NVarCharColumn" LIKE :str_7 ESCAPE '~'
+	t."CharColumn" LIKE :str ESCAPE '~' AND
+	t."NCharColumn" LIKE :str_1 ESCAPE '~' AND
+	t."VarCharColumn" LIKE :str_2 ESCAPE '~' AND
+	t."NVarCharColumn" LIKE :str_3 ESCAPE '~'
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -2,8 +2,8 @@
 BeginTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @blob_1 Blob -- Object
-SET     @blob_1 = Oracle.ManagedDataAccess.Types.OracleBlob
+DECLARE @blob Blob -- Object
+SET     @blob = Oracle.ManagedDataAccess.Types.OracleBlob
 
 INSERT INTO "LinqDataTypes"
 (
@@ -13,13 +13,13 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	-10,
-	:blob_1
+	:blob
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @blob_1 Blob -- Object
-SET     @blob_1 = Oracle.ManagedDataAccess.Types.OracleBlob
+DECLARE @blob Blob -- Object
+SET     @blob = Oracle.ManagedDataAccess.Types.OracleBlob
 
 INSERT INTO "LinqDataTypes"
 (
@@ -29,7 +29,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	-20,
-	:blob_1
+	:blob
 )
 
 BeforeExecute

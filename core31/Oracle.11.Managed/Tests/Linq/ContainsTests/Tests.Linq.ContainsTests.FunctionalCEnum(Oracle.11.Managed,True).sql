@@ -86,8 +86,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -96,7 +96,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL) AND
+	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL) AND
 	ROWNUM <= :take
 
 BeforeExecute

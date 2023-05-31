@@ -32,8 +32,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Double_1 BinaryDouble -- Double
-SET     @Double_1 = 0D
+DECLARE @Double BinaryDouble -- Double
+SET     @Double = 0D
 
 INSERT INTO "CreateTableTypes"
 (
@@ -43,15 +43,15 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	:Id,
-	:Double_1
+	:Double
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Double_1 BinaryDouble -- Double
-SET     @Double_1 = 3.1400000000000001D
+DECLARE @Double BinaryDouble -- Double
+SET     @Double = 3.1400000000000001D
 
 INSERT INTO "CreateTableTypes"
 (
@@ -61,7 +61,7 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	:Id,
-	:Double_1
+	:Double
 )
 
 BeforeExecute

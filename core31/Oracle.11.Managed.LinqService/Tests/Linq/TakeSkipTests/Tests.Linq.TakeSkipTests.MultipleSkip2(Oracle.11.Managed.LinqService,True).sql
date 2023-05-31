@@ -29,8 +29,8 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -38,13 +38,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -52,13 +52,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -66,13 +66,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -80,13 +80,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip_1 Int32
-SET     @skip_1 = 3
+DECLARE @skip Int32
+SET     @skip = 3
 
 SELECT
 	t3."Value_1"
@@ -106,12 +106,12 @@ FROM
 			) t2
 	) t3
 WHERE
-	t3.RN > :skip_1
+	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip_1 Int32
-SET     @skip_1 = 4
+DECLARE @skip Int32
+SET     @skip = 4
 
 SELECT
 	t3."Value_1"
@@ -131,7 +131,7 @@ FROM
 			) t2
 	) t3
 WHERE
-	t3.RN > :skip_1
+	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
