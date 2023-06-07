@@ -18,8 +18,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 10
-DECLARE @TimeStamp_1 Timestamp(16) -- DateTime
-SET     @TimeStamp_1 = TO_DATE('2020-02-29 17:54:55.12312', '%Y-%m-%d %H:%M:%S.%F5')
+DECLARE @TimeStamp Timestamp(16) -- DateTime
+SET     @TimeStamp = TO_DATE('2020-02-29 17:54:55.12312', '%Y-%m-%d %H:%M:%S.%F5')
 
 INSERT INTO Issue1110TB
 (
@@ -29,7 +29,7 @@ INSERT INTO Issue1110TB
 VALUES
 (
 	@Id,
-	@TimeStamp_1
+	@TimeStamp
 )
 
 BeforeExecute

@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @_default DateTime
-SET     @_default = '0001-01-01'
+DECLARE @default DateTime
+SET     @default = '0001-01-01'
 DECLARE @DATUM DateTime
 SET     @DATUM = '2019-01-01'
 
@@ -30,8 +30,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Extract(year from Coalesce(`n`.`DATUM`, @_default)) as `Year_1`,
-			Extract(month from Coalesce(`n`.`DATUM`, @_default)) as `Month_1`,
+			Extract(year from Coalesce(`n`.`DATUM`, @default)) as `Year_1`,
+			Extract(month from Coalesce(`n`.`DATUM`, @default)) as `Month_1`,
 			`n`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n`
@@ -49,8 +49,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Extract(year from Coalesce(`n_1`.`DATUM`, @_default)) as `Year_1`,
-			Extract(month from Coalesce(`n_1`.`DATUM`, @_default)) as `Month_1`,
+			Extract(year from Coalesce(`n_1`.`DATUM`, @default)) as `Year_1`,
+			Extract(month from Coalesce(`n_1`.`DATUM`, @default)) as `Month_1`,
 			`n_1`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n_1`

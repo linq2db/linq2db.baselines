@@ -13,8 +13,8 @@ CREATE COLUMN TABLE "TakeSkipClass"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -27,8 +27,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -41,8 +41,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -55,8 +55,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -69,8 +69,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take_2  -- Int32
-SET     @take_2 = 2
+DECLARE @take  -- Int32
+SET     @take = 2
 
 SELECT
 	"t1"."Value"

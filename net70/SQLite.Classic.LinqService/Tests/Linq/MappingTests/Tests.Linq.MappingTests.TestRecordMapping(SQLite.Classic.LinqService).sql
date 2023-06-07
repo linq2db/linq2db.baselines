@@ -21,8 +21,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @BaseValue NVarChar(7) -- String
 SET     @BaseValue = 'OneBase'
-DECLARE @Value_1 NVarChar(3) -- String
-SET     @Value_1 = 'One'
+DECLARE @Value NVarChar(3) -- String
+SET     @Value = 'One'
 
 INSERT INTO [Record]
 (
@@ -34,7 +34,7 @@ VALUES
 (
 	@Id,
 	@BaseValue,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -43,8 +43,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @BaseValue NVarChar(7) -- String
 SET     @BaseValue = 'TwoBase'
-DECLARE @Value_1 NVarChar(3) -- String
-SET     @Value_1 = 'Two'
+DECLARE @Value NVarChar(3) -- String
+SET     @Value = 'Two'
 
 INSERT INTO [Record]
 (
@@ -56,7 +56,7 @@ VALUES
 (
 	@Id,
 	@BaseValue,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

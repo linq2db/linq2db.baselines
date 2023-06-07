@@ -31,10 +31,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take_3 Int -- Int32
-SET     @take_3 = 1
+DECLARE @take Int -- Int32
+SET     @take = 1
 
-SELECT TOP (@take_3)
+SELECT TOP (@take)
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -84,10 +84,10 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @cpty NVarChar(3) -- String
 SET     @cpty = '%C%'
-DECLARE @cpty_1 NVarChar(3) -- String
-SET     @cpty_1 = '%C%'
-DECLARE @cpty_2 NVarChar(3) -- String
-SET     @cpty_2 = '%C%'
+DECLARE @cpty NVarChar(3) -- String
+SET     @cpty = '%C%'
+DECLARE @cpty NVarChar(3) -- String
+SET     @cpty = '%C%'
 
 SELECT
 	[al_1].[alert],

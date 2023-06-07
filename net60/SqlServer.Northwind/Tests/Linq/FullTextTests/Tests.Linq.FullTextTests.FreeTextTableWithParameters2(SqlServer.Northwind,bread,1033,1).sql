@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @search_1 NVarChar(4000) -- String
-SET     @search_1 = N'bread'
+DECLARE @search NVarChar(4000) -- String
+SET     @search = N'bread'
 DECLARE @lang Int -- Int32
 SET     @lang = 1033
 DECLARE @top Int -- Int32
@@ -14,7 +14,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		CROSS APPLY FREETEXTTABLE([Categories], ([CategoryName], [Description]), @search_1, LANGUAGE @lang, @top) [t]
+		CROSS APPLY FREETEXTTABLE([Categories], ([CategoryName], [Description]), @search, LANGUAGE @lang, @top) [t]
 WHERE
 	[c_1].[CategoryID] = [t].[KEY]
 ORDER BY

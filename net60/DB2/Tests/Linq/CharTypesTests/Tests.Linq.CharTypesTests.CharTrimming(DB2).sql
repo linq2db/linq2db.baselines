@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -17,13 +17,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = '	'
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = '	'
 
 INSERT INTO ALLTYPES
 (
@@ -31,13 +31,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = '
 '
 
 INSERT INTO ALLTYPES
@@ -46,13 +46,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ''
 
 INSERT INTO ALLTYPES
 (
@@ -60,13 +60,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ''
 
 INSERT INTO ALLTYPES
 (
@@ -74,13 +74,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ''
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ''
 
 INSERT INTO ALLTYPES
 (
@@ -88,13 +88,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -102,13 +102,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -116,13 +116,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -130,13 +130,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -144,13 +144,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -158,13 +158,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -172,13 +172,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -186,13 +186,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -200,13 +200,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -214,13 +214,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -228,13 +228,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -242,13 +242,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = ' '
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = ' '
 
 INSERT INTO ALLTYPES
 (
@@ -256,13 +256,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char(1) -- StringFixedLength
-SET     @NChar_1 = '　'
+DECLARE @NChar Char(1) -- StringFixedLength
+SET     @NChar = '　'
 
 INSERT INTO ALLTYPES
 (
@@ -270,13 +270,13 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @NChar_1 Char -- StringFixedLength
-SET     @NChar_1 = NULL
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = NULL
 
 INSERT INTO ALLTYPES
 (
@@ -284,7 +284,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar_1
+	@NChar
 )
 
 BeforeExecute

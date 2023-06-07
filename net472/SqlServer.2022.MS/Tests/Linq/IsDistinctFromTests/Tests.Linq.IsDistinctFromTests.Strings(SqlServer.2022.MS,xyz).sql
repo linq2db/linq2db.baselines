@@ -31,51 +31,51 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'xyz'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS DISTINCT FROM @value_1
+	[s].[String] IS DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'xyz'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS DISTINCT FROM @value_1
+	[s].[NullableString] IS DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'xyz'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NOT DISTINCT FROM @value_1
+	[s].[String] IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @value_1 NVarChar(4000) -- String
-SET     @value_1 = N'xyz'
+DECLARE @value NVarChar(4000) -- String
+SET     @value = N'xyz'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NOT DISTINCT FROM @value_1
+	[s].[NullableString] IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

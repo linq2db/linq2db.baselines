@@ -17,8 +17,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 1
+DECLARE @Column  -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column_1 NVarChar -- String
-SET     @Column_1 = 2
+DECLARE @Column NVarChar -- String
+SET     @Column = 2
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = 3
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 1
+DECLARE @Column  -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 1
+DECLARE @Column  -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 1
+DECLARE @Column  -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 

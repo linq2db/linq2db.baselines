@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'Frau'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'Frau'
 
 SELECT
 	[m_1].[Id],
@@ -37,14 +37,14 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	[m_1].[Value] = @Value_1
+	[m_1].[Value] = @Value
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'Frau'
 DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'Frau'
-DECLARE @Value_2 NVarChar(4) -- String
-SET     @Value_2 = 'Herr'
+SET     @Value_1 = 'Herr'
 
 SELECT
 	[m_1].[Id],
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	[m_1].[Value] IN (@Value_1, @Value_2)
+	[m_1].[Value] IN (@Value, @Value_1)
 
 BeforeExecute
 -- SQLite.Classic SQLite

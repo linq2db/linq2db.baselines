@@ -5,8 +5,8 @@ ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Int -- Int32
+SET     @Value = 0
 
 INSERT INTO [AllTypes]
 (
@@ -24,8 +24,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 200
+DECLARE @Value Int -- Int32
+SET     @Value = 200
 
 INSERT INTO [AllTypes]
 (
@@ -38,8 +38,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 300
+DECLARE @Value Int -- Int32
+SET     @Value = 300
 
 INSERT INTO [AllTypes]
 (

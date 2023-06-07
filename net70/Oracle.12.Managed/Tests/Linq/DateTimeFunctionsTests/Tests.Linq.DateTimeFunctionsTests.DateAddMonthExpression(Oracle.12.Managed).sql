@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p_1 Int32
-SET     @p_1 = 2
+DECLARE @p Int32
+SET     @p = 2
 
 SELECT
-	t."DateTimeValue" + :p_1 * INTERVAL '1' MONTH
+	t."DateTimeValue" + :p * INTERVAL '1' MONTH
 FROM
 	"LinqDataTypes" t
 

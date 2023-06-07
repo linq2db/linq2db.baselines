@@ -13,8 +13,8 @@ CREATE TABLE [TakeSkipClass]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -27,8 +27,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -41,8 +41,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -55,8 +55,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 VarChar(5) -- AnsiString
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value VarChar(5) -- AnsiString
+SET     @Value = 'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (

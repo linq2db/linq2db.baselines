@@ -9,8 +9,8 @@ WHERE
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @data_1 Blob -- Binary
-SET     @data_1 = NULL
+DECLARE @data Blob -- Binary
+SET     @data = NULL
 
 INSERT INTO `LinqDataTypes`
 (
@@ -21,7 +21,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	1001,
-	@data_1,
+	@data,
 	1
 )
 

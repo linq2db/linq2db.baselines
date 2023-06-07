@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @user_1 Integer -- Int32
-SET     @user_1 = 3
+DECLARE @user Integer -- Int32
+SET     @user = 3
 
 SELECT
 	p."ParentID",
@@ -9,5 +9,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :user_1
+	p."ParentID" = :user
 

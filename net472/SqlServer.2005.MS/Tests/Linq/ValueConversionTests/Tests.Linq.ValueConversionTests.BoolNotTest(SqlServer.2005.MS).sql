@@ -53,8 +53,8 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = N'N'
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = N'N'
 
 SELECT
 	[t].[Id],
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue_1
+	[t].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

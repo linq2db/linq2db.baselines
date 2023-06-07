@@ -13,8 +13,8 @@ SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Value'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Value'
 
 INSERT INTO SEQUENCETEST
 (
@@ -24,13 +24,13 @@ INSERT INTO SEQUENCETEST
 VALUES
 (
 	SEQUENCETESTSEQ.nextval,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Value'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Value'
 
 INSERT INTO SEQUENCETEST
 (
@@ -40,13 +40,13 @@ INSERT INTO SEQUENCETEST
 VALUES
 (
 	SEQUENCETESTSEQ.nextval,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Value'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Value'
 
 INSERT INTO SEQUENCETEST
 (
@@ -56,13 +56,13 @@ INSERT INTO SEQUENCETEST
 VALUES
 (
 	SEQUENCETESTSEQ.nextval,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'Value'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'Value'
 
 INSERT INTO SEQUENCETEST
 (
@@ -72,6 +72,6 @@ INSERT INTO SEQUENCETEST
 VALUES
 (
 	SEQUENCETESTSEQ.nextval,
-	:Value_1
+	:Value
 )
 

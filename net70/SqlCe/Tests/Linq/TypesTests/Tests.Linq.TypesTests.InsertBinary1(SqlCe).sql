@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @data_1 VarBinary -- Binary
-SET     @data_1 = NULL
+DECLARE @data VarBinary -- Binary
+SET     @data = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -20,7 +20,7 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	1001,
-	@data_1,
+	@data,
 	1
 )
 

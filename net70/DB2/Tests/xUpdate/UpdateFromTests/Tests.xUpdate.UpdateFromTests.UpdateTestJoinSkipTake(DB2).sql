@@ -96,10 +96,10 @@ DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 DECLARE @take_1 Integer(4) -- Int32
 SET     @take_1 = 3
-DECLARE @take_2 Integer(4) -- Int32
-SET     @take_2 = 3
 
 UPDATE
 	"UpdatedEntities"
@@ -127,7 +127,7 @@ SET
 					"t"."id" <> @someId
 			) "t1"
 		WHERE
-			"t1".RN > @skip AND "t1".RN <= @take_1 AND "UpdatedEntities"."id" = "t1"."id"
+			"t1".RN > @skip AND "t1".RN <= @take AND "UpdatedEntities"."id" = "t1"."id"
 	)
 WHERE
 	EXISTS(
@@ -145,7 +145,7 @@ WHERE
 					"t_1"."id" <> @someId
 			) "t2"
 		WHERE
-			"t2".RN > @skip AND "t2".RN <= @take_2 AND "UpdatedEntities"."id" = "t2"."id"
+			"t2".RN > @skip AND "t2".RN <= @take_1 AND "UpdatedEntities"."id" = "t2"."id"
 	)
 
 BeforeExecute

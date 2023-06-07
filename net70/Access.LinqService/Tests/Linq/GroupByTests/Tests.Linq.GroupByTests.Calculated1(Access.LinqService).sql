@@ -15,8 +15,8 @@ GROUP BY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p_1 VarWChar(1) -- String
-SET     @p_1 = '1'
+DECLARE @p VarWChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	[selectParam].[ParentID],
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Child] [selectParam]
 WHERE
-	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') = @p_1
+	Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') = @p
 

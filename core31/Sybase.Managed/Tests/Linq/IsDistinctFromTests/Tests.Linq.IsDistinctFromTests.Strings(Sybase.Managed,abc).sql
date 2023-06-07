@@ -33,51 +33,51 @@ SELECT 3,NULL,'def',NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value_1 OR [s].[String] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 UniVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value UniVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value_1 OR [s].[NullableString] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase

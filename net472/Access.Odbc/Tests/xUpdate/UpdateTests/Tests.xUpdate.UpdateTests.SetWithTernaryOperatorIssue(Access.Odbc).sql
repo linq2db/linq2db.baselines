@@ -56,8 +56,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value_1 NChar(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @Value NChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person] [_]

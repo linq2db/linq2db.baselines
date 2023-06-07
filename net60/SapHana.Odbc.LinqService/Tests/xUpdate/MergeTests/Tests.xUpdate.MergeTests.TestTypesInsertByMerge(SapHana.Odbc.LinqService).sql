@@ -14,10 +14,10 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value  -- Time
 SET     @value = 09:44:34.6534321
-DECLARE @value_1  -- Time
-SET     @value_1 = 00:44:34.6414321
-DECLARE @value_2  -- Time
-SET     @value_2 = 00:00:00
+DECLARE @value  -- Time
+SET     @value = 00:44:34.6414321
+DECLARE @value  -- Time
+SET     @value = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -81,12 +81,12 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value  -- Time
 SET     @value = 23:59:59.9999999
-DECLARE @value_1  -- Time
-SET     @value_1 = 14:44:33.2340000
-DECLARE @value_2  -- Time
-SET     @value_2 = 23:59:59.9999999
-DECLARE @value_3  -- Time
-SET     @value_3 = 22:44:33
+DECLARE @value  -- Time
+SET     @value = 14:44:33.2340000
+DECLARE @value  -- Time
+SET     @value = 23:59:59.9999999
+DECLARE @value  -- Time
+SET     @value = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (

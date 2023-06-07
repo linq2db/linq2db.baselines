@@ -19,8 +19,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @NotIdentifier Integer -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "DynamicTable"
 (
@@ -30,7 +30,7 @@ INSERT INTO "DynamicTable"
 VALUES
 (
 	:NotIdentifier,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

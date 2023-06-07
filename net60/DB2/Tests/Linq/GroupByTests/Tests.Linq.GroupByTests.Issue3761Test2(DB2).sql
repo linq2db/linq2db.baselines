@@ -26,8 +26,8 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @_default Timestamp(20) -- DateTime
-SET     @_default = '0001-01-01-00.00.00.000000'
+DECLARE @default Timestamp(20) -- DateTime
+SET     @default = '0001-01-01-00.00.00.000000'
 DECLARE @DATUM Timestamp(20) -- DateTime
 SET     @DATUM = '2019-01-01-00.00.00.000000'
 
@@ -38,8 +38,8 @@ SELECT
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Coalesce("n".DATUM, @_default), 'YYYY')) as "Year_1",
-			To_Number(To_Char(Coalesce("n".DATUM, @_default), 'MM')) as "Month_1",
+			To_Number(To_Char(Coalesce("n".DATUM, @default), 'YYYY')) as "Year_1",
+			To_Number(To_Char(Coalesce("n".DATUM, @default), 'MM')) as "Month_1",
 			"n".SKUPAJ
 		FROM
 			"Issue3761Table" "n"
@@ -57,8 +57,8 @@ SELECT
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Coalesce("n_1".DATUM, @_default), 'YYYY')) as "Year_1",
-			To_Number(To_Char(Coalesce("n_1".DATUM, @_default), 'MM')) as "Month_1",
+			To_Number(To_Char(Coalesce("n_1".DATUM, @default), 'YYYY')) as "Year_1",
+			To_Number(To_Char(Coalesce("n_1".DATUM, @default), 'MM')) as "Month_1",
 			"n_1".SKUPAJ
 		FROM
 			"Issue3761Table" "n_1"

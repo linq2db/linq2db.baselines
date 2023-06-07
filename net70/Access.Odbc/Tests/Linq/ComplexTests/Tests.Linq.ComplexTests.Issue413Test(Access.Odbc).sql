@@ -188,8 +188,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @cond_1 NVarChar(4) -- String
-SET     @cond_1 = 'aaa%'
+DECLARE @cond NVarChar(4) -- String
+SET     @cond = 'aaa%'
 DECLARE @uptoDate DateTime
 SET     @uptoDate = #2020-02-29 17:54:55#
 

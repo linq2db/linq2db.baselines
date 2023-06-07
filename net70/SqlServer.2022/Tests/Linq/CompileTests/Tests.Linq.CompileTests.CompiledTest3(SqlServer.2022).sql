@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
-SELECT TOP (@p_1)
+SELECT TOP (@p)
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
@@ -15,12 +15,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 
-SELECT TOP (@p_1)
+SELECT TOP (@p)
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM

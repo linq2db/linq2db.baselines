@@ -27,8 +27,8 @@ SELECT 'BOLTO'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @skip_2 Int -- Int32
-SET     @skip_2 = 3
+DECLARE @skip Int -- Int32
+SET     @skip = 3
 
 SELECT
 	[t2].[Value_1]
@@ -41,12 +41,12 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip_2
+	[t2].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @skip_2 Int -- Int32
-SET     @skip_2 = 4
+DECLARE @skip Int -- Int32
+SET     @skip = 4
 
 SELECT
 	[t2].[Value_1]
@@ -59,7 +59,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip_2
+	[t2].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

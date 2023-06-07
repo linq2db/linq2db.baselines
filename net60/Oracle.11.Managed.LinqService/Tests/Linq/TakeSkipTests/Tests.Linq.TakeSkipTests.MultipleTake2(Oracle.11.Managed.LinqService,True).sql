@@ -29,8 +29,8 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -38,13 +38,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -52,13 +52,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -66,13 +66,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value Varchar2(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -80,13 +80,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take_1 Int32
-SET     @take_1 = 2
+DECLARE @take Int32
+SET     @take = 2
 
 SELECT
 	t2."Value_1"
@@ -100,7 +100,7 @@ FROM
 			t1."Value"
 	) t2
 WHERE
-	ROWNUM <= :take_1
+	ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -101,7 +101,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -119,8 +119,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -129,7 +129,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -147,8 +147,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -157,7 +157,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -175,8 +175,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -185,7 +185,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -203,8 +203,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 Char(1) -- StringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT FIRST 1
 	t1.Name,
@@ -213,7 +213,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue_1
+	t1.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p_1 NVarChar(2) -- String
-SET     @p_1 = '23'
+DECLARE @p NVarChar(2) -- String
+SET     @p = '23'
 
 SELECT
-	@p_1
+	@p
 

@@ -136,8 +136,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2 -- String
-SET     @value_1 = ''
+DECLARE @value Varchar2 -- String
+SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -146,12 +146,12 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value_1 = t1."StringValue1" OR t1."StringValue1" IS NULL)
+	(:value = t1."StringValue1" OR t1."StringValue1" IS NULL)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2 -- String
-SET     @value_1 = ''
+DECLARE @value Varchar2 -- String
+SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -160,12 +160,12 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value_1 = t1."StringValue1" OR t1."StringValue1" IS NULL)
+	(:value = t1."StringValue1" OR t1."StringValue1" IS NULL)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2 -- String
-SET     @value_1 = ''
+DECLARE @value Varchar2 -- String
+SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -174,12 +174,12 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value_1 = t1."StringValue2" OR t1."StringValue2" IS NULL)
+	(:value = t1."StringValue2" OR t1."StringValue2" IS NULL)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Varchar2 -- String
-SET     @value_1 = ''
+DECLARE @value Varchar2 -- String
+SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -188,7 +188,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value_1 = t1."StringValue2" OR t1."StringValue2" IS NULL)
+	(:value = t1."StringValue2" OR t1."StringValue2" IS NULL)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

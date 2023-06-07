@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Column_1 VarBinary(16) -- Binary
-SET     @Column_1 = BX'0D6048A921DE744F8AC29516B287076E'
+DECLARE @Column VarBinary(16) -- Binary
+SET     @Column = BX'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable VarBinary(16) -- Binary
 SET     @ColumnNullable = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"GuidTable" "r"
 WHERE
-	"r"."Column" = @Column_1 AND "r"."ColumnNullable" = @ColumnNullable
+	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -73,8 +73,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 VarBinary(16) -- Binary
-SET     @Column_1 = BX'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @Column VarBinary(16) -- Binary
+SET     @Column = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ColumnNullable VarBinary -- Binary
 SET     @ColumnNullable = NULL
 
@@ -87,7 +87,7 @@ INSERT INTO "GuidTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 VarBinary(16) -- Binary
-SET     @Column_1 = BX'0D6048A921DE744F8AC29516B287076E'
+DECLARE @Column VarBinary(16) -- Binary
+SET     @Column = BX'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable VarBinary(16) -- Binary
 SET     @ColumnNullable = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
@@ -109,7 +109,7 @@ INSERT INTO "GuidTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

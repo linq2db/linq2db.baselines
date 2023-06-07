@@ -38,51 +38,51 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 Integer(4) -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer(4) -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS DISTINCT FROM @value_1
+	"s"."Int" IS DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 Integer(4) -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer(4) -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableInt" IS DISTINCT FROM @value_1
+	"s"."NullableInt" IS DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 Integer(4) -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer(4) -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NOT DISTINCT FROM @value_1
+	"s"."Int" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value_1 Integer(4) -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer(4) -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableInt" IS NOT DISTINCT FROM @value_1
+	"s"."NullableInt" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue VarChar -- AnsiString
+SET     @BoolValue = 'N'
 
 SELECT
 	`t`.`Id`,
@@ -63,7 +63,7 @@ SELECT
 FROM
 	`ValueConversion` `t`
 WHERE
-	`t`.`BoolValue` = @BoolValue_1
+	`t`.`BoolValue` = @BoolValue
 
 BeforeExecute
 -- MySql MySql.Official MySql

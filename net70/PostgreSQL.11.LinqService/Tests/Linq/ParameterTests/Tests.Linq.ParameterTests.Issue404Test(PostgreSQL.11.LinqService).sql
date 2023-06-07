@@ -58,8 +58,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -72,7 +72,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -80,8 +80,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -94,7 +94,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -102,8 +102,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -116,7 +116,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -124,8 +124,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -138,7 +138,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -146,8 +146,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -160,7 +160,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -168,8 +168,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -182,7 +182,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -213,8 +213,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 
 SELECT
 	key_data_result."Id",
@@ -228,7 +228,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -240,8 +240,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 
 SELECT
 	key_data_result."Id",
@@ -255,7 +255,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -335,8 +335,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -349,7 +349,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -357,8 +357,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -371,7 +371,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -379,8 +379,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 1
 
@@ -393,7 +393,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -401,8 +401,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -415,7 +415,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -423,8 +423,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -437,7 +437,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -445,8 +445,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 DECLARE @FirstTableId Integer -- Int32
 SET     @FirstTableId = 2
 
@@ -459,7 +459,7 @@ INSERT INTO "Table404Two"
 VALUES
 (
 	:Id,
-	:Usage_1,
+	:Usage,
 	:FirstTableId
 )
 
@@ -490,8 +490,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 0
 
 SELECT
 	key_data_result."Id",
@@ -505,7 +505,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -517,8 +517,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Usage_1 Integer -- Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Integer -- Int32
+SET     @Usage = 1
 
 SELECT
 	key_data_result."Id",
@@ -532,7 +532,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

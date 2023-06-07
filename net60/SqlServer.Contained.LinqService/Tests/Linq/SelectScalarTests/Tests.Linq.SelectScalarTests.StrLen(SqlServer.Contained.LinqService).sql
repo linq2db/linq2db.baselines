@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @Length_1 Int -- Int32
-SET     @Length_1 = 1
+DECLARE @Length Int -- Int32
+SET     @Length = 1
 
 SELECT
-	@Length_1
+	@Length
 

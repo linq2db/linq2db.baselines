@@ -524,8 +524,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @BoolValue_1 VarChar(1) -- String
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue VarChar(1) -- String
+SET     @BoolValue = 'N'
 
 SELECT
 	t.Id,
@@ -535,7 +535,7 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.BoolValue = @BoolValue_1
+	t.BoolValue = @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix

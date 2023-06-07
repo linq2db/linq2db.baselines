@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p_1 Int16
-SET     @p_1 = 0
+DECLARE @p Int16
+SET     @p = 0
 
 SELECT
 	underscore."ParentID",
@@ -53,5 +53,5 @@ FROM
 			"Parent" selectParam
 	) underscore
 WHERE
-	underscore."Key_1" = :p_1
+	underscore."Key_1" = :p
 

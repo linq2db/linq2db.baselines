@@ -82,12 +82,12 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @cpty VarWChar(3) -- String
+SET     @cpty = '%C%'
 DECLARE @cpty_1 VarWChar(3) -- String
 SET     @cpty_1 = '%C%'
 DECLARE @cpty_2 VarWChar(3) -- String
 SET     @cpty_2 = '%C%'
-DECLARE @cpty_3 VarWChar(3) -- String
-SET     @cpty_3 = '%C%'
 
 SELECT
 	[al_1].[alert],
@@ -110,7 +110,7 @@ FROM
 		LEFT JOIN [Trade] [trade1] ON ([al_1].[alert] = CStr([trade1].[DealId])))
 		LEFT JOIN [Nomin] [nomin1] ON ([al_1].[alert] = CStr([nomin1].[CargoId]))
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty_1 OR [trade1].[CounterParty] LIKE @cpty_2) OR [al_1].[alert_1] LIKE @cpty_3)
+	(([nomin1].[DeliveryCounterParty] LIKE @cpty OR [trade1].[CounterParty] LIKE @cpty_1) OR [al_1].[alert_1] LIKE @cpty_2)
 GROUP BY
 	[al_1].[alert],
 	[al_1].[alert_1],

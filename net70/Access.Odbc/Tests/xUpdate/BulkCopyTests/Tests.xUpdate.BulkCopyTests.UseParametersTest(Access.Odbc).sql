@@ -2686,8 +2686,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
-DECLARE @ParentID_1 Int -- Int32
-SET     @ParentID_1 = 111149
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 111149
 
 SELECT
 	Count(*)

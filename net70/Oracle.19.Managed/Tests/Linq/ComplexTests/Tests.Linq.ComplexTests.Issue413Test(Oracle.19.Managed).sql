@@ -236,8 +236,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @cond_1 Varchar2(4) -- String
-SET     @cond_1 = 'aaa%'
+DECLARE @cond Varchar2(4) -- String
+SET     @cond = 'aaa%'
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = TIMESTAMP '2020-02-29 17:54:55.123123'
 
@@ -253,7 +253,7 @@ FROM
 				INNER JOIN T3 w ON idx."IndexId" = w."IndexId"
 				INNER JOIN T1 ins ON w."InstrumentId" = ins."InstrumentId"
 		WHERE
-			ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond_1 ESCAPE '~' AND
+			ins."SourceInstrumentCode" IS NOT NULL AND ins_1."InstrumentCode" LIKE :cond ESCAPE '~' AND
 			ins_1."CreateDate" <= :uptoDate
 	) t4
 ORDER BY

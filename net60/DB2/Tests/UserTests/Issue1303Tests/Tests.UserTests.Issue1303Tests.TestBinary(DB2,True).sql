@@ -25,10 +25,10 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Array_1 VarBinary(3) -- Binary
-SET     @Array_1 = BX'010203'
-DECLARE @Binary_1 VarBinary(2) -- Binary
-SET     @Binary_1 = BX'0405'
+DECLARE @Array VarBinary(3) -- Binary
+SET     @Array = BX'010203'
+DECLARE @Binary VarBinary(2) -- Binary
+SET     @Binary = BX'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -39,8 +39,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	@Array_1,
-	@Binary_1
+	@Array,
+	@Binary
 )
 
 BeforeExecute

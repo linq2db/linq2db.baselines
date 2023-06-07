@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Value_1 SmallInt -- Int16
-SET     @Value_1 = 1
+DECLARE @Value SmallInt -- Int16
+SET     @Value = 1
 
 SELECT
 	[_].[ID],
@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@Value_1 = [_].[SmallIntValue]
+	@Value = [_].[SmallIntValue]
 
 BeforeExecute
 -- SqlServer.2005

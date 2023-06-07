@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Column_1 UByte -- Boolean
-SET     @Column_1 = 0
+DECLARE @Column UByte -- Boolean
+SET     @Column = 0
 DECLARE @ColumnNullable UByte -- Boolean
 SET     @ColumnNullable = 1
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
+	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -65,8 +65,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Column_1 UByte -- Boolean
-SET     @Column_1 = 1
+DECLARE @Column UByte -- Boolean
+SET     @Column = 1
 DECLARE @ColumnNullable UByte -- Boolean
 SET     @ColumnNullable = NULL
 
@@ -79,7 +79,7 @@ INSERT INTO `BooleanTable`
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -87,8 +87,8 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Column_1 UByte -- Boolean
-SET     @Column_1 = 0
+DECLARE @Column UByte -- Boolean
+SET     @Column = 0
 DECLARE @ColumnNullable UByte -- Boolean
 SET     @ColumnNullable = 1
 
@@ -101,7 +101,7 @@ INSERT INTO `BooleanTable`
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

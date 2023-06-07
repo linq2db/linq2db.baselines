@@ -21,10 +21,10 @@ IF (OBJECT_ID(N'Issue1303') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Array_1 VarBinary(3) -- Binary
-SET     @Array_1 = 0x010203
-DECLARE @Binary_1 VarBinary(2) -- Binary
-SET     @Binary_1 = 0x0405
+DECLARE @Array VarBinary(3) -- Binary
+SET     @Array = 0x010203
+DECLARE @Binary VarBinary(2) -- Binary
+SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]
 (
@@ -35,8 +35,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array_1,
-	@Binary_1
+	@Array,
+	@Binary
 )
 
 BeforeExecute

@@ -22,8 +22,8 @@ IF (OBJECT_ID(N'Issue3761Table') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @_default DateTime
-SET     @_default = '0001-01-01'
+DECLARE @default DateTime
+SET     @default = '0001-01-01'
 DECLARE @DATUM DateTime
 SET     @DATUM = '2019-01-01'
 
@@ -34,8 +34,8 @@ SELECT
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n].[DATUM], @_default)) as [Key_1],
-			DatePart(month, Coalesce([n].[DATUM], @_default)) as [Key_2],
+			DatePart(year, Coalesce([n].[DATUM], @default)) as [Key_1],
+			DatePart(month, Coalesce([n].[DATUM], @default)) as [Key_2],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]

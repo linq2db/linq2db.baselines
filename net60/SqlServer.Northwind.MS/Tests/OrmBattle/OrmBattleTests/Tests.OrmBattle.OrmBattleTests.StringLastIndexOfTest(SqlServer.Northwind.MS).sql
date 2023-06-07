@@ -83,8 +83,8 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @Length_2 Int -- Int32
-SET     @Length_2 = 4
+DECLARE @Length Int -- Int32
+SET     @Length = 4
 
 SELECT TOP (@take)
 	[c_1].[CustomerID],
@@ -101,5 +101,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	IIF(CharIndex(N't', Left([c_1].[City], 4), 2) = 0, -1, @Length_2 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) = 3
+	IIF(CharIndex(N't', Left([c_1].[City], 4), 2) = 0, -1, @Length - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) = 3
 

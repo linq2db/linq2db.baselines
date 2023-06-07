@@ -8,8 +8,8 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Data_1 Int -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Int -- Int32
+SET     @Data = 1
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 
@@ -26,8 +26,8 @@ DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1 Int -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Int -- Int32
+SET     @Data = 1
 
 INSERT INTO [InheritanceParent]
 (
@@ -52,8 +52,8 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Data_1 Int -- Int32
-SET     @Data_1 = 1
+DECLARE @Data Int -- Int32
+SET     @Data = 1
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Date_1 DateTime
-SET     @Date_1 = '2009-09-20'
+DECLARE @Date DateTime
+SET     @Date = '2009-09-20'
 
 SELECT
 	`_`.`ID`,
@@ -17,5 +17,5 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	Cast(`_`.`DateTimeValue` as Date) = @Date_1
+	Cast(`_`.`DateTimeValue` as Date) = @Date
 

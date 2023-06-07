@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Local_id Int -- Int32
-SET     @Local_id = 1
+DECLARE @$VB$Local_id Int -- Int32
+SET     @$VB$Local_id = 1
 
 SELECT
 	[p].[ParentID],

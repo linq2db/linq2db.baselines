@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS [Issue1303]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Array_1 Binary(3)
-SET     @Array_1 = X'010203'
-DECLARE @Binary_1 Binary(2)
-SET     @Binary_1 = X'0405'
+DECLARE @Array Binary(3)
+SET     @Array = X'010203'
+DECLARE @Binary Binary(2)
+SET     @Binary = X'0405'
 
 INSERT INTO [Issue1303]
 (
@@ -31,8 +31,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array_1,
-	@Binary_1
+	@Array,
+	@Binary
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Array_1 Binary(3)
-SET     @Array_1 = X'010203'
+DECLARE @Array Binary(3)
+SET     @Array = X'010203'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -64,13 +64,13 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = @Array_1
+	[_].[Array] = @Array
 LIMIT @take
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Binary_1 Binary(2)
-SET     @Binary_1 = X'0405'
+DECLARE @Binary Binary(2)
+SET     @Binary = X'0405'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -81,7 +81,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = @Binary_1
+	[_].[Binary] = @Binary
 LIMIT @take
 
 BeforeExecute

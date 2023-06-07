@@ -25,8 +25,8 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 UniVarChar(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value UniVarChar(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO [ConcurrencyFiltered]
 (
@@ -38,7 +38,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -53,8 +53,8 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value_1 UniVarChar(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value UniVarChar(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -64,7 +64,7 @@ UPDATE
 	[ConcurrencyFiltered]
 SET
 	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value_1
+	[r].[Value] = @Value
 FROM
 	[ConcurrencyFiltered] [r]
 WHERE
@@ -82,8 +82,8 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value_1 UniVarChar(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value UniVarChar(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -93,7 +93,7 @@ UPDATE
 	[ConcurrencyFiltered]
 SET
 	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value_1
+	[r].[Value] = @Value
 FROM
 	[ConcurrencyFiltered] [r]
 WHERE

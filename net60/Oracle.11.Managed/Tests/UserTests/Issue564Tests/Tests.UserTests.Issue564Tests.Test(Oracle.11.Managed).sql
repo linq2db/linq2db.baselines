@@ -66,8 +66,8 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Type_1 Varchar2(9) -- String
-SET     @Type_1 = 'Child564A'
+DECLARE @Type Varchar2(9) -- String
+SET     @Type = 'Child564A'
 DECLARE @StringValue Varchar2(9) -- String
 SET     @StringValue = 'SomeValue'
 
@@ -78,14 +78,14 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	:Type_1,
+	:Type,
 	:StringValue
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Type_1 Varchar2(9) -- String
-SET     @Type_1 = 'Child564B'
+DECLARE @Type Varchar2(9) -- String
+SET     @Type = 'Child564B'
 DECLARE @IntValue Int32
 SET     @IntValue = 911
 
@@ -96,7 +96,7 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	:Type_1,
+	:Type,
 	:IntValue
 )
 

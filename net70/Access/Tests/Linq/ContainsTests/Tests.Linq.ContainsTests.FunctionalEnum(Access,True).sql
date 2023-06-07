@@ -18,8 +18,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Integer -- Int32
+SET     @Int = NULL
 DECLARE @Enum VarWChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar -- AnsiString
@@ -35,7 +35,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -44,8 +44,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Enum VarWChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum VarChar(12) -- AnsiString
@@ -61,7 +61,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )

@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Column_1  -- Guid
-SET     @Column_1 = X'0D6048A921DE744F8AC29516B287076E'
+DECLARE @Column  -- Guid
+SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[GuidTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -65,8 +65,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Guid
-SET     @Column_1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @Column  -- Guid
+SET     @Column = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = NULL
 
@@ -79,7 +79,7 @@ INSERT INTO [GuidTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -87,8 +87,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Guid
-SET     @Column_1 = X'0D6048A921DE744F8AC29516B287076E'
+DECLARE @Column  -- Guid
+SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
@@ -101,7 +101,7 @@ INSERT INTO [GuidTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

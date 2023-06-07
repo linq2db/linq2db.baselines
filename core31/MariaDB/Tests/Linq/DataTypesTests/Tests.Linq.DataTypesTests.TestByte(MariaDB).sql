@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Column_1 UByte -- Byte
-SET     @Column_1 = 255
+DECLARE @Column UByte -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = 2
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	`ByteTable` `r`
 WHERE
-	`r`.`Column` = @Column_1 AND `r`.`ColumnNullable` = @ColumnNullable
+	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -65,8 +65,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Column_1 UByte -- Byte
-SET     @Column_1 = 1
+DECLARE @Column UByte -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = NULL
 
@@ -79,7 +79,7 @@ INSERT INTO `ByteTable`
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -87,8 +87,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Column_1 UByte -- Byte
-SET     @Column_1 = 255
+DECLARE @Column UByte -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable UByte -- Byte
 SET     @ColumnNullable = 2
 
@@ -101,7 +101,7 @@ INSERT INTO `ByteTable`
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

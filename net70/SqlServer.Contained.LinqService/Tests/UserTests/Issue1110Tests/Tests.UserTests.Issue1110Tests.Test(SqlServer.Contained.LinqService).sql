@@ -19,8 +19,8 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @TimeStamp_1 DateTime2
-SET     @TimeStamp_1 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+DECLARE @TimeStamp DateTime2
+SET     @TimeStamp = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 INSERT INTO [Issue1110TB]
 (
@@ -30,7 +30,7 @@ INSERT INTO [Issue1110TB]
 VALUES
 (
 	@Id,
-	@TimeStamp_1
+	@TimeStamp
 )
 
 BeforeExecute

@@ -17,10 +17,10 @@ CREATE COLUMN TABLE "Issue1303"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array_1 Binary(3)
-SET     @Array_1 = x'010203'
-DECLARE @Binary_1 Binary(2)
-SET     @Binary_1 = x'0405'
+DECLARE @Array Binary(3)
+SET     @Array = x'010203'
+DECLARE @Binary Binary(2)
+SET     @Binary = x'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -52,8 +52,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array_1 Binary(3)
-SET     @Array_1 = x'010203'
+DECLARE @Array Binary(3)
+SET     @Array = x'010203'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -69,8 +69,8 @@ LIMIT ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Binary_1 Binary(2)
-SET     @Binary_1 = x'0405'
+DECLARE @Binary Binary(2)
+SET     @Binary = x'0405'
 DECLARE @take  -- Int32
 SET     @take = 2
 

@@ -89,8 +89,8 @@ FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum Varchar2(12) -- String
+SET     @CEnum = '___Value2___'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -99,7 +99,7 @@ SELECT
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum_1) AND s."CEnum" IS NOT NULL)
+	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL)
 FETCH NEXT :take ROWS ONLY
 
 BeforeExecute

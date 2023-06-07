@@ -11,8 +11,8 @@ BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 2
+DECLARE @Value Integer -- Int32
+SET     @Value = 2
 
 INSERT INTO [temp_table1]
 (
@@ -22,7 +22,7 @@ INSERT INTO [temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 
 INSERT INTO [temp_table1]
 (
@@ -81,15 +81,15 @@ INSERT INTO [temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 
 INSERT INTO [temp_table1]
 (
@@ -99,15 +99,15 @@ INSERT INTO [temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 5
 
 INSERT INTO [temp_table1]
 (
@@ -117,7 +117,7 @@ INSERT INTO [temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

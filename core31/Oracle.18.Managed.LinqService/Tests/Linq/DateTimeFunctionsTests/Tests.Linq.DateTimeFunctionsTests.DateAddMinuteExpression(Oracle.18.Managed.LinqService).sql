@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p_1 Int32
-SET     @p_1 = 5
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	t."DateTimeValue" + :p_1 * INTERVAL '1' MINUTE
+	t."DateTimeValue" + :p * INTERVAL '1' MINUTE
 FROM
 	"LinqDataTypes" t
 

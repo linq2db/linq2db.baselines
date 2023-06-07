@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @p_1 Int32
-SET     @p_1 = 22
+DECLARE @p Int32
+SET     @p = 22
 
 SELECT
-	Extract(hour from Date_Add(`t`.`DateTimeValue`, Interval @p_1 Hour))
+	Extract(hour from Date_Add(`t`.`DateTimeValue`, Interval @p Hour))
 FROM
 	`LinqDataTypes` `t`
 

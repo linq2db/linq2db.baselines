@@ -5,8 +5,8 @@ SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -16,7 +16,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 RETURNING
 	ID

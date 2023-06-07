@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -101,7 +101,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb
@@ -119,8 +119,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -129,7 +129,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb
@@ -147,8 +147,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -157,7 +157,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb
@@ -175,8 +175,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -185,7 +185,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb
@@ -203,8 +203,8 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue_1 Char(1) -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -213,7 +213,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb

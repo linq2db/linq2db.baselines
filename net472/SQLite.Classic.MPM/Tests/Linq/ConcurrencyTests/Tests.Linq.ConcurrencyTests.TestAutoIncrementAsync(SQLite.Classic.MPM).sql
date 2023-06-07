@@ -21,8 +21,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO [ConcurrencyAutoIncrement]
 (
@@ -34,7 +34,7 @@ VALUES
 (
 	@Id,
 	@Stamp,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -49,8 +49,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -60,7 +60,7 @@ UPDATE
 	[ConcurrencyAutoIncrement]
 SET
 	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[Value] = @Value_1
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
@@ -76,8 +76,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -87,7 +87,7 @@ UPDATE
 	[ConcurrencyAutoIncrement]
 SET
 	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[Value] = @Value_1
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
@@ -103,8 +103,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'value 3'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'value 3'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -114,7 +114,7 @@ UPDATE
 	[ConcurrencyAutoIncrement]
 SET
 	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[Value] = @Value_1
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 

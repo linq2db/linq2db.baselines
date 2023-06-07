@@ -24,8 +24,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Boolean_1 SmallInt(4) -- Int16
-SET     @Boolean_1 = 0
+DECLARE @Boolean SmallInt(4) -- Int16
+SET     @Boolean = 0
 
 INSERT INTO "CreateTableTypes"
 (
@@ -35,15 +35,15 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Boolean_1 SmallInt(4) -- Int16
-SET     @Boolean_1 = 1
+DECLARE @Boolean SmallInt(4) -- Int16
+SET     @Boolean = 1
 
 INSERT INTO "CreateTableTypes"
 (
@@ -53,7 +53,7 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute

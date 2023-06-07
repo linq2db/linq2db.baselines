@@ -14,8 +14,8 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @_default Int -- Int32
-SET     @_default = 0
+DECLARE @default Int -- Int32
+SET     @default = 0
 
 SELECT
 	[a].[Id],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[SampleClass] [a]
 WHERE
-	([a].[Id] = 0 AND Coalesce([a].[NullValue], @_default) = 0 OR [a].[Id] = 1 AND Coalesce([a].[NullValue], @_default) = 1 OR [a].[Id] = 2 AND Coalesce([a].[NullValue], @_default) = 2)
+	([a].[Id] = 0 AND Coalesce([a].[NullValue], @default) = 0 OR [a].[Id] = 1 AND Coalesce([a].[NullValue], @default) = 1 OR [a].[Id] = 2 AND Coalesce([a].[NullValue], @default) = 2)
 
 BeforeExecute
 -- SqlCe

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 0
+DECLARE @value Int -- Int32
+SET     @value = 0
 
 SELECT
 	[t].[ID],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @_testValue Integer(4) -- Int32
-SET     @_testValue = 3
+DECLARE @testValue Integer(4) -- Int32
+SET     @testValue = 3
 
 SELECT
 	"t1"."c1",
@@ -19,7 +19,7 @@ SELECT
 		FROM
 			"Child" "p_1"
 		WHERE
-			"p_1"."ParentID" = "t1"."c1" AND "p_1"."ParentID" = @_testValue
+			"p_1"."ParentID" = "t1"."c1" AND "p_1"."ParentID" = @testValue
 	)
 FROM
 	(

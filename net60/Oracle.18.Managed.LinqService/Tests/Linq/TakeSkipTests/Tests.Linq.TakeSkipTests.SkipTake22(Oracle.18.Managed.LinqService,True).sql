@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @skip_1 Int32
-SET     @skip_1 = 2
 DECLARE @skip Int32
-SET     @skip = 5
+SET     @skip = 2
+DECLARE @skip_1 Int32
+SET     @skip_1 = 5
 
 SELECT
 	t1."ParentID",
@@ -12,14 +12,14 @@ FROM
 	"Child" t1
 ORDER BY
 	t1."ChildID" DESC
-OFFSET :skip_1 ROWS FETCH NEXT :skip ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT :skip_1 ROWS ONLY 
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @skip_1 Int32
-SET     @skip_1 = 2
 DECLARE @skip Int32
-SET     @skip = 5
+SET     @skip = 2
+DECLARE @skip_1 Int32
+SET     @skip_1 = 5
 
 SELECT
 	t1."ParentID",
@@ -28,5 +28,5 @@ FROM
 	"Child" t1
 ORDER BY
 	t1."ChildID" DESC
-OFFSET :skip_1 ROWS FETCH NEXT :skip ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT :skip_1 ROWS ONLY 
 

@@ -68,8 +68,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Value_1 NVarChar(7) -- String
-SET     @Value_1 = 'Value 1'
+DECLARE @Value NVarChar(7) -- String
+SET     @Value = 'Value 1'
 
 INSERT INTO [ChildEntityObject]
 (
@@ -79,7 +79,7 @@ INSERT INTO [ChildEntityObject]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

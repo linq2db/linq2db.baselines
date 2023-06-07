@@ -111,8 +111,8 @@ BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Usage_1 Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int32
+SET     @Usage = 0
 
 SELECT
 	key_data_result."Id",
@@ -126,7 +126,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 DisposeTransaction
@@ -142,8 +142,8 @@ BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Usage_1 Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int32
+SET     @Usage = 1
 
 SELECT
 	key_data_result."Id",
@@ -157,7 +157,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 DisposeTransaction
@@ -306,8 +306,8 @@ BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Usage_1 Int32
-SET     @Usage_1 = 0
+DECLARE @Usage Int32
+SET     @Usage = 0
 
 SELECT
 	key_data_result."Id",
@@ -321,7 +321,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 DisposeTransaction
@@ -337,8 +337,8 @@ BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Usage_1 Int32
-SET     @Usage_1 = 1
+DECLARE @Usage Int32
+SET     @Usage = 1
 
 SELECT
 	key_data_result."Id",
@@ -352,7 +352,7 @@ FROM
 		FROM
 			"Table404One" c_1
 	) key_data_result
-		INNER JOIN "Table404Two" v ON v."Usage" = :Usage_1 AND v."FirstTableId" = key_data_result."Id"
+		INNER JOIN "Table404Two" v ON v."Usage" = :Usage AND v."FirstTableId" = key_data_result."Id"
 
 BeforeExecute
 DisposeTransaction

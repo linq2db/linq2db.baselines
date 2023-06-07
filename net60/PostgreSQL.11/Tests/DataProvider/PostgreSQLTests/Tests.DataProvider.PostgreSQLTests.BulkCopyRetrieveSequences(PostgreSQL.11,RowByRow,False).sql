@@ -13,8 +13,8 @@ SELECT Max("ID") FROM "SequenceTest1"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue1'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue1'
 
 INSERT INTO "SequenceTest1"
 (
@@ -24,13 +24,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue2'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue2'
 
 INSERT INTO "SequenceTest1"
 (
@@ -40,13 +40,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue3'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue3'
 
 INSERT INTO "SequenceTest1"
 (
@@ -56,13 +56,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue4'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue4'
 
 INSERT INTO "SequenceTest1"
 (
@@ -72,13 +72,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue5'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue5'
 
 INSERT INTO "SequenceTest1"
 (
@@ -88,13 +88,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue6'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue6'
 
 INSERT INTO "SequenceTest1"
 (
@@ -104,13 +104,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue7'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue7'
 
 INSERT INTO "SequenceTest1"
 (
@@ -120,13 +120,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue8'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue8'
 
 INSERT INTO "SequenceTest1"
 (
@@ -136,13 +136,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(9) -- String
-SET     @Value_1 = 'SeqValue9'
+DECLARE @Value Text(9) -- String
+SET     @Value = 'SeqValue9'
 
 INSERT INTO "SequenceTest1"
 (
@@ -152,13 +152,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue10'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue10'
 
 INSERT INTO "SequenceTest1"
 (
@@ -168,13 +168,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue11'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue11'
 
 INSERT INTO "SequenceTest1"
 (
@@ -184,13 +184,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue12'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue12'
 
 INSERT INTO "SequenceTest1"
 (
@@ -200,13 +200,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue13'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue13'
 
 INSERT INTO "SequenceTest1"
 (
@@ -216,13 +216,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue14'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue14'
 
 INSERT INTO "SequenceTest1"
 (
@@ -232,13 +232,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue15'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue15'
 
 INSERT INTO "SequenceTest1"
 (
@@ -248,13 +248,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue16'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue16'
 
 INSERT INTO "SequenceTest1"
 (
@@ -264,13 +264,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue17'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue17'
 
 INSERT INTO "SequenceTest1"
 (
@@ -280,13 +280,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue18'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue18'
 
 INSERT INTO "SequenceTest1"
 (
@@ -296,13 +296,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue19'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue19'
 
 INSERT INTO "SequenceTest1"
 (
@@ -312,13 +312,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue20'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue20'
 
 INSERT INTO "SequenceTest1"
 (
@@ -328,13 +328,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue21'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue21'
 
 INSERT INTO "SequenceTest1"
 (
@@ -344,13 +344,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue22'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue22'
 
 INSERT INTO "SequenceTest1"
 (
@@ -360,13 +360,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue23'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue23'
 
 INSERT INTO "SequenceTest1"
 (
@@ -376,13 +376,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue24'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue24'
 
 INSERT INTO "SequenceTest1"
 (
@@ -392,13 +392,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue25'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue25'
 
 INSERT INTO "SequenceTest1"
 (
@@ -408,13 +408,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue26'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue26'
 
 INSERT INTO "SequenceTest1"
 (
@@ -424,13 +424,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue27'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue27'
 
 INSERT INTO "SequenceTest1"
 (
@@ -440,13 +440,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue28'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue28'
 
 INSERT INTO "SequenceTest1"
 (
@@ -456,13 +456,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue29'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue29'
 
 INSERT INTO "SequenceTest1"
 (
@@ -472,13 +472,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue30'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue30'
 
 INSERT INTO "SequenceTest1"
 (
@@ -488,13 +488,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue31'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue31'
 
 INSERT INTO "SequenceTest1"
 (
@@ -504,13 +504,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue32'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue32'
 
 INSERT INTO "SequenceTest1"
 (
@@ -520,13 +520,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue33'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue33'
 
 INSERT INTO "SequenceTest1"
 (
@@ -536,13 +536,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue34'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue34'
 
 INSERT INTO "SequenceTest1"
 (
@@ -552,13 +552,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue35'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue35'
 
 INSERT INTO "SequenceTest1"
 (
@@ -568,13 +568,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue36'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue36'
 
 INSERT INTO "SequenceTest1"
 (
@@ -584,13 +584,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue37'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue37'
 
 INSERT INTO "SequenceTest1"
 (
@@ -600,13 +600,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue38'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue38'
 
 INSERT INTO "SequenceTest1"
 (
@@ -616,13 +616,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue39'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue39'
 
 INSERT INTO "SequenceTest1"
 (
@@ -632,13 +632,13 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(10) -- String
-SET     @Value_1 = 'SeqValue40'
+DECLARE @Value Text(10) -- String
+SET     @Value = 'SeqValue40'
 
 INSERT INTO "SequenceTest1"
 (
@@ -648,7 +648,7 @@ INSERT INTO "SequenceTest1"
 VALUES
 (
 	nextval('sequencetestseq'),
-	:Value_1
+	:Value
 )
 
 BeforeExecute

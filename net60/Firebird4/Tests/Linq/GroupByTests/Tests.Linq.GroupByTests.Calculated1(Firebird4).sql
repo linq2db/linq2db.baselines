@@ -25,8 +25,8 @@ GROUP BY
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @p_1 VarChar(1) -- String
-SET     @p_1 = '1'
+DECLARE @p VarChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	"selectParam"."ParentID",
@@ -42,5 +42,5 @@ WHERE
 			ELSE '2'
 		END
 		ELSE '3'
-	END = @p_1
+	END = @p
 

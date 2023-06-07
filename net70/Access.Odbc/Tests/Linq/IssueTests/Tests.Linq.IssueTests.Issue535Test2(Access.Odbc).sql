@@ -19,10 +19,10 @@ CREATE TABLE [CustomerBase]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @filter_2 NVarChar(6) -- String
-SET     @filter_2 = '%test%'
-DECLARE @filter_3 NVarChar(6) -- String
-SET     @filter_3 = '%test%'
+DECLARE @filter NVarChar(6) -- String
+SET     @filter = '%test%'
+DECLARE @filter NVarChar(6) -- String
+SET     @filter = '%test%'
 
 SELECT
 	[q].[Id],

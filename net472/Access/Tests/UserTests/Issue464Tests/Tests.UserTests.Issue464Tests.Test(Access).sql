@@ -11,8 +11,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 INSERT INTO [Issue464]
 (
@@ -22,15 +22,15 @@ INSERT INTO [Issue464]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 2
+DECLARE @Value Integer -- Int32
+SET     @Value = 2
 
 INSERT INTO [Issue464]
 (
@@ -40,15 +40,15 @@ INSERT INTO [Issue464]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 
 INSERT INTO [Issue464]
 (
@@ -58,7 +58,7 @@ INSERT INTO [Issue464]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

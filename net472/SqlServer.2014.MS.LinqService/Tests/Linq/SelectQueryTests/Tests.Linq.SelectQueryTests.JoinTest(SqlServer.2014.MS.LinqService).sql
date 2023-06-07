@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Int -- Int32
+SET     @Value = 100
 
 INSERT INTO [SampleClass]
 (
@@ -29,7 +29,7 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

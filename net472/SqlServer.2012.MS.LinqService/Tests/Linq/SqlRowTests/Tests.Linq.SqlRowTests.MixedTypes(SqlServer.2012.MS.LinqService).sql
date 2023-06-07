@@ -19,14 +19,14 @@ IF (OBJECT_ID(N'[Mixed]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 1
+DECLARE @Int Int -- Int32
+SET     @Int = 1
 DECLARE @Str NVarChar(4000) -- String
 SET     @Str = N'One'
-DECLARE @Date_1 DateTime2
-SET     @Date_1 = DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
-DECLARE @Double_1 Float -- Double
-SET     @Double_1 = 1
+DECLARE @Date DateTime2
+SET     @Date = DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @Double Float -- Double
+SET     @Double = 1
 DECLARE @Bool Bit -- Boolean
 SET     @Bool = 1
 
@@ -40,23 +40,23 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @Int_1 Int -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Int -- Int32
+SET     @Int = 2
 DECLARE @Str NVarChar(4000) -- String
 SET     @Str = N'Two'
-DECLARE @Date_1 DateTime2
-SET     @Date_1 = DATETIME2FROMPARTS(2002, 2, 2, 0, 0, 0, 0, 7)
-DECLARE @Double_1 Float -- Double
-SET     @Double_1 = 2
+DECLARE @Date DateTime2
+SET     @Date = DATETIME2FROMPARTS(2002, 2, 2, 0, 0, 0, 0, 7)
+DECLARE @Double Float -- Double
+SET     @Double = 2
 DECLARE @Bool Bit -- Boolean
 SET     @Bool = 0
 
@@ -70,10 +70,10 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 

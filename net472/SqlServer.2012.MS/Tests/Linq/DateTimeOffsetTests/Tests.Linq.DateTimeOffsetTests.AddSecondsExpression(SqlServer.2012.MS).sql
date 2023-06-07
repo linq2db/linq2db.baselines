@@ -54,11 +54,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -35
+DECLARE @p Int -- Int32
+SET     @p = -35
 
 SELECT
-	DateAdd(second, @p_1, [t].[TransactionDate])
+	DateAdd(second, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 

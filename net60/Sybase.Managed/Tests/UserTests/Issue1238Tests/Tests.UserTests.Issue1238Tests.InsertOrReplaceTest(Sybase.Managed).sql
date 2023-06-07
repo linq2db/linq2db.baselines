@@ -9,8 +9,8 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Data_2 Integer -- Int32
-SET     @Data_2 = 1
+DECLARE @Data Integer -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 UniVarChar -- String
@@ -21,7 +21,7 @@ SET     @Data_1 = 1
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data_2
+	[t1].[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -54,8 +54,8 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Data_2 Integer -- Int32
-SET     @Data_2 = 1
+DECLARE @Data Integer -- Int32
+SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 UniVarChar -- String
@@ -66,7 +66,7 @@ SET     @Data_1 = 1
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data_2
+	[t1].[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE

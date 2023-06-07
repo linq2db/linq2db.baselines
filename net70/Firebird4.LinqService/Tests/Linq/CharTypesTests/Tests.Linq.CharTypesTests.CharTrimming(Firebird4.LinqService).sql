@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -17,13 +17,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = '	'
+DECLARE @Char Char -- String
+SET     @Char = '	'
 
 INSERT INTO "AllTypes"
 (
@@ -31,13 +31,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = '
+DECLARE @Char Char -- String
+SET     @Char = '
 '
 
 INSERT INTO "AllTypes"
@@ -46,13 +46,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ''
+DECLARE @Char Char -- String
+SET     @Char = ''
 
 INSERT INTO "AllTypes"
 (
@@ -60,13 +60,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ''
+DECLARE @Char Char -- String
+SET     @Char = ''
 
 INSERT INTO "AllTypes"
 (
@@ -74,13 +74,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ''
+DECLARE @Char Char -- String
+SET     @Char = ''
 
 INSERT INTO "AllTypes"
 (
@@ -88,13 +88,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -102,13 +102,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -116,13 +116,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -130,13 +130,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -144,13 +144,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -158,13 +158,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -172,13 +172,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -186,13 +186,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -200,13 +200,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -214,13 +214,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -228,13 +228,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -242,13 +242,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = ' '
+DECLARE @Char Char -- String
+SET     @Char = ' '
 
 INSERT INTO "AllTypes"
 (
@@ -256,13 +256,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = _utf8 x'00'
+DECLARE @Char Char -- String
+SET     @Char = _utf8 x'00'
 
 INSERT INTO "AllTypes"
 (
@@ -270,13 +270,13 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @Char_1 Char -- String
-SET     @Char_1 = NULL
+DECLARE @Char Char -- String
+SET     @Char = NULL
 
 INSERT INTO "AllTypes"
 (
@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@Char_1 as NChar(1))
+	Cast(@Char as NChar(1))
 )
 
 BeforeExecute

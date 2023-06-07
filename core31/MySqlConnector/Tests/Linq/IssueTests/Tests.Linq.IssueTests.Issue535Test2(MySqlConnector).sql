@@ -19,8 +19,8 @@ CREATE TABLE IF NOT EXISTS `CustomerBase`
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @filter_1 VarChar(4) -- String
-SET     @filter_1 = 'test'
+DECLARE @filter VarChar(4) -- String
+SET     @filter = 'test'
 
 SELECT
 	`q`.`Id`,
@@ -30,7 +30,7 @@ SELECT
 FROM
 	`CustomerBase` `q`
 WHERE
-	`q`.`ClientType` = 'Client' AND (LOCATE(@filter_1, `q`.`Name`) > 0 OR LOCATE(@filter_1, `q`.`ContactEmail`) > 0)
+	`q`.`ClientType` = 'Client' AND (LOCATE(@filter, `q`.`Name`) > 0 OR LOCATE(@filter, `q`.`ContactEmail`) > 0)
 
 BeforeExecute
 -- MySqlConnector MySql

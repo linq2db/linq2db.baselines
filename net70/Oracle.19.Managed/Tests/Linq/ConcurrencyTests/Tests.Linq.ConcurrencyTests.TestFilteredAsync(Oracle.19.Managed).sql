@@ -37,8 +37,8 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -10
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyFiltered"
 (
@@ -50,7 +50,7 @@ VALUES
 (
 	:Id,
 	:Stamp,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -65,8 +65,8 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -76,7 +76,7 @@ UPDATE
 	"ConcurrencyFiltered"
 SET
 	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = :Value_1
+	"ConcurrencyFiltered"."Value" = :Value
 WHERE
 	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp
@@ -93,8 +93,8 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -104,7 +104,7 @@ UPDATE
 	"ConcurrencyFiltered"
 SET
 	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = :Value_1
+	"ConcurrencyFiltered"."Value" = :Value
 WHERE
 	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp

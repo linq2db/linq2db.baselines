@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @параметр Integer -- Int32
-SET     @параметр = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,12 +9,12 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @параметр
+	[p].[ParentID] = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @参数 Integer -- Int32
-SET     @参数 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	[p].[ParentID],
@@ -22,12 +22,12 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @参数
+	[p].[ParentID] = @p
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @パラメータ Integer -- Int32
-SET     @パラメータ = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	[p].[ParentID],
@@ -35,5 +35,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @パラメータ
+	[p].[ParentID] = @p
 

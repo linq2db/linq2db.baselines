@@ -21,8 +21,8 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
-DECLARE @Value_1 Text(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value Text(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyFiltered"
 (
@@ -34,7 +34,7 @@ VALUES
 (
 	:Id,
 	:Stamp,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -49,8 +49,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value Text(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -60,7 +60,7 @@ UPDATE
 	"ConcurrencyFiltered"
 SET
 	"Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"Value" = :Value_1
+	"Value" = :Value
 WHERE
 	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp
@@ -77,8 +77,8 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value Text(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -88,7 +88,7 @@ UPDATE
 	"ConcurrencyFiltered"
 SET
 	"Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"Value" = :Value_1
+	"Value" = :Value
 WHERE
 	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp

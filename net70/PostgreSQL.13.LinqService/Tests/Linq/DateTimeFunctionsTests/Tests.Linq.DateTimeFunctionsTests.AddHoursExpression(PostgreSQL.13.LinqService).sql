@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 22
+DECLARE @p Integer -- Int32
+SET     @p = 22
 
 SELECT
-	Cast(Floor(Extract(hour from (t."DateTimeValue" + :p_1 * Interval '1 Hour'))) as int)
+	Cast(Floor(Extract(hour from (t."DateTimeValue" + :p * Interval '1 Hour'))) as int)
 FROM
 	"LinqDataTypes" t
 

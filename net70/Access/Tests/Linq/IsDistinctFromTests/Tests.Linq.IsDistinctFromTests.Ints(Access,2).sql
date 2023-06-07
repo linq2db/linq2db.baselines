@@ -16,8 +16,8 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = 2
 DECLARE @String VarWChar(3) -- String
@@ -34,7 +34,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Integer -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = NULL
 DECLARE @String VarWChar(3) -- String
@@ -60,7 +60,7 @@ INSERT INTO [Src]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -68,59 +68,59 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @value Integer -- Int32
+SET     @value = 2
 DECLARE @value_1 Integer -- Int32
 SET     @value_1 = 2
-DECLARE @value_2 Integer -- Int32
-SET     @value_2 = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_2 IS NULL, 0, 1) = 1
+	IIF([s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL, 0, 1) = 1
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @value Integer -- Int32
+SET     @value = 2
 DECLARE @value_1 Integer -- Int32
 SET     @value_1 = 2
-DECLARE @value_2 Integer -- Int32
-SET     @value_2 = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_2 IS NULL, 0, 1) = 1
+	IIF([s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL, 0, 1) = 1
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @value Integer -- Int32
+SET     @value = 2
 DECLARE @value_1 Integer -- Int32
 SET     @value_1 = 2
-DECLARE @value_2 Integer -- Int32
-SET     @value_2 = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_2 IS NULL, 0, 1) = 0
+	IIF([s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL, 0, 1) = 0
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @value Integer -- Int32
+SET     @value = 2
 DECLARE @value_1 Integer -- Int32
 SET     @value_1 = 2
-DECLARE @value_2 Integer -- Int32
-SET     @value_2 = 2
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_2 IS NULL, 0, 1) = 0
+	IIF([s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL, 0, 1) = 0
 
 BeforeExecute
 -- Access AccessOleDb

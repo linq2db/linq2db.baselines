@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p_1 UniVarChar(2) -- String
-SET     @p_1 = '23'
+DECLARE @p UniVarChar(2) -- String
+SET     @p = '23'
 
 SELECT
-	@p_1
+	@p
 

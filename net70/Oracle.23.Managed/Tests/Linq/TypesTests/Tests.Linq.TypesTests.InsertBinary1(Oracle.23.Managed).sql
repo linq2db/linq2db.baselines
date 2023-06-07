@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @data_1 Blob -- Object
-SET     @data_1 = NULL
+DECLARE @data Blob -- Object
+SET     @data = NULL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -20,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	:data_1,
+	:data,
 	1
 )
 

@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p_1  -- Byte
-SET     @p_1 = 0
+DECLARE @Parameter1  -- Byte
+SET     @Parameter1 = 0
 
 SELECT
 	"underscore"."ParentID",

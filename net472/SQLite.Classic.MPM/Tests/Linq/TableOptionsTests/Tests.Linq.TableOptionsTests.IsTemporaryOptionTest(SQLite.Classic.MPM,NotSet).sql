@@ -74,8 +74,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 
 INSERT INTO temp.[temp_table1]
 (
@@ -85,7 +85,7 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

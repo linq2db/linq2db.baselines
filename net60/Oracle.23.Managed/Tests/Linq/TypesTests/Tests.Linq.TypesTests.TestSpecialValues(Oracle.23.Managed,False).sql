@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @real_1 BinaryFloat -- Single
-SET     @real_1 = BINARY_FLOAT_NAN
+DECLARE @real BinaryFloat -- Single
+SET     @real = BINARY_FLOAT_NAN
 DECLARE @dbl BinaryDouble -- Double
 SET     @dbl = BINARY_DOUBLE_NAN
 
@@ -22,14 +22,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	:real_1,
+	:real,
 	:dbl
 )
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @real_1 BinaryFloat -- Single
-SET     @real_1 = -BINARY_FLOAT_INFINITY
+DECLARE @real BinaryFloat -- Single
+SET     @real = -BINARY_FLOAT_INFINITY
 DECLARE @dbl BinaryDouble -- Double
 SET     @dbl = -BINARY_DOUBLE_INFINITY
 
@@ -42,14 +42,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	:real_1,
+	:real,
 	:dbl
 )
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @real_1 BinaryFloat -- Single
-SET     @real_1 = BINARY_FLOAT_INFINITY
+DECLARE @real BinaryFloat -- Single
+SET     @real = BINARY_FLOAT_INFINITY
 DECLARE @dbl BinaryDouble -- Double
 SET     @dbl = BINARY_DOUBLE_INFINITY
 
@@ -62,7 +62,7 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	:real_1,
+	:real,
 	:dbl
 )
 

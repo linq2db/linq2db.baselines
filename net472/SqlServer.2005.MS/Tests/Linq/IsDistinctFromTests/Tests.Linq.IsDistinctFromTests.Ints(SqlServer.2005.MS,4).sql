@@ -31,51 +31,51 @@ SELECT 3,NULL,N'def',NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 4
+DECLARE @value Int -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 4
+DECLARE @value Int -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 4
+DECLARE @value Int -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value_1 OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 4
+DECLARE @value Int -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value_1 OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

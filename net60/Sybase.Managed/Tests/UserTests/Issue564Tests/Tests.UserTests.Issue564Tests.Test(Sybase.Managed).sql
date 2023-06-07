@@ -22,8 +22,8 @@ IF (OBJECT_ID(N'Parent564') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Type_1 UniVarChar(9) -- String
-SET     @Type_1 = 'Child564A'
+DECLARE @Type UniVarChar(9) -- String
+SET     @Type = 'Child564A'
 DECLARE @StringValue UniVarChar(9) -- String
 SET     @StringValue = 'SomeValue'
 
@@ -34,14 +34,14 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@StringValue
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Type_1 UniVarChar(9) -- String
-SET     @Type_1 = 'Child564B'
+DECLARE @Type UniVarChar(9) -- String
+SET     @Type = 'Child564B'
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = 911
 
@@ -52,7 +52,7 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@IntValue
 )
 

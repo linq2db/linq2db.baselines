@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @p_1 Int32
-SET     @p_1 = -2
+DECLARE @p Int32
+SET     @p = -2
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p_1 Month)
+	Date_Add(`t`.`DateTimeValue`, Interval @p Month)
 FROM
 	`LinqDataTypes` `t`
 

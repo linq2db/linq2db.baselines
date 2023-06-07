@@ -22,27 +22,27 @@ IF (OBJECT_ID(N'TestInsertOrReplaceTable') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName_1 UniVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
-DECLARE @LastName_1 UniVarChar(8) -- String
-SET     @LastName_1 = 'whatever'
-DECLARE @MiddleName_1 UniVarChar(15) -- String
-SET     @MiddleName_1 = 'som middle name'
-DECLARE @ID Integer -- Int32
-SET     @ID = 0
 DECLARE @FirstName UniVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName UniVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName UniVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
+DECLARE @ID Integer -- Int32
+SET     @ID = 0
+DECLARE @FirstName_1 UniVarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 UniVarChar(8) -- String
+SET     @LastName_1 = 'whatever'
+DECLARE @MiddleName_1 UniVarChar(15) -- String
+SET     @MiddleName_1 = 'som middle name'
 
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName_1,
-	[t1].[LastName] = @LastName_1,
-	[t1].[MiddleName] = @MiddleName_1
+	[t1].[FirstName] = @FirstName,
+	[t1].[LastName] = @LastName,
+	[t1].[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE
@@ -60,9 +60,9 @@ BEGIN
 	VALUES
 	(
 		@ID,
-		@FirstName,
-		@LastName,
-		@MiddleName
+		@FirstName_1,
+		@LastName_1,
+		@MiddleName_1
 	)
 END
 
@@ -83,27 +83,27 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName_1 UniVarChar(27) -- String
-SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
-DECLARE @LastName_1 UniVarChar(8) -- String
-SET     @LastName_1 = 'whatever'
-DECLARE @MiddleName_1 UniVarChar(12) -- String
-SET     @MiddleName_1 = 'updated name'
-DECLARE @ID Integer -- Int32
-SET     @ID = 0
 DECLARE @FirstName UniVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName UniVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName UniVarChar(12) -- String
 SET     @MiddleName = 'updated name'
+DECLARE @ID Integer -- Int32
+SET     @ID = 0
+DECLARE @FirstName_1 UniVarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 UniVarChar(8) -- String
+SET     @LastName_1 = 'whatever'
+DECLARE @MiddleName_1 UniVarChar(12) -- String
+SET     @MiddleName_1 = 'updated name'
 
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName_1,
-	[t1].[LastName] = @LastName_1,
-	[t1].[MiddleName] = @MiddleName_1
+	[t1].[FirstName] = @FirstName,
+	[t1].[LastName] = @LastName,
+	[t1].[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE
@@ -121,9 +121,9 @@ BEGIN
 	VALUES
 	(
 		@ID,
-		@FirstName,
-		@LastName,
-		@MiddleName
+		@FirstName_1,
+		@LastName_1,
+		@MiddleName_1
 	)
 END
 

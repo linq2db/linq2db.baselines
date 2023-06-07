@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Length_1  -- Int32
-SET     @Length_1 = 9
+DECLARE @Length  -- Int32
+SET     @Length = 9
 
 SELECT
 	[p_1].[ID],
@@ -21,6 +21,6 @@ WHERE
 	CASE
 		WHEN CharIndex('123', LeftStr([p_1].[FirstName], 11), 6) = 0
 			THEN -1
-		ELSE @Length_1 - CharIndex('321', Reverse(Substr([p_1].[FirstName], 6, 6)))
+		ELSE @Length - CharIndex('321', Reverse(Substr([p_1].[FirstName], 6, 6)))
 	END = 8
 

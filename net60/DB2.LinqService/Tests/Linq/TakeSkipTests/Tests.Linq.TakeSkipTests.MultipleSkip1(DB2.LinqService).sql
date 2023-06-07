@@ -21,8 +21,8 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -30,13 +30,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -44,13 +44,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -58,13 +58,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 VarChar(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO "TakeSkipClass"
 (
@@ -72,13 +72,13 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip_1 Integer(4) -- Int32
-SET     @skip_1 = 3
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 3
 
 SELECT
 	"t2"."Value_1"
@@ -91,7 +91,7 @@ FROM
 			"TakeSkipClass" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip_1
+	"t2".RN > @skip
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -72,8 +72,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 3
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Int -- Int32
+SET     @Value = 3
 
 INSERT INTO [temp_table1]
 (
@@ -83,7 +83,7 @@ INSERT INTO [temp_table1]
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

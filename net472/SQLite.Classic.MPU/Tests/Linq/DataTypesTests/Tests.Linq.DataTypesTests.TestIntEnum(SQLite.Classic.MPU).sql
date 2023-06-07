@@ -28,8 +28,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[IntEnumTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -64,8 +64,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 1
+DECLARE @Column  -- Int32
+SET     @Column = 1
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = NULL
 
@@ -78,7 +78,7 @@ INSERT INTO [IntEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -86,8 +86,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Column_1  -- Int32
-SET     @Column_1 = 2
+DECLARE @Column  -- Int32
+SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
@@ -100,7 +100,7 @@ INSERT INTO [IntEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

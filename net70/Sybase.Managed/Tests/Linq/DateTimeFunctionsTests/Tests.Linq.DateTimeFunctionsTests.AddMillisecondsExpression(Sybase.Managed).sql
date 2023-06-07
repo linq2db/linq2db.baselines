@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 226
+DECLARE @p Integer -- Int32
+SET     @p = 226
 
 SELECT
-	DateAdd(millisecond, @p_1, [t].[DateTimeValue])
+	DateAdd(millisecond, @p, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

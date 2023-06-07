@@ -46,17 +46,17 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @p Int -- Int32
+SET     @p = 5
 DECLARE @p_1 Int -- Int32
-SET     @p_1 = 5
-DECLARE @p_2 Int -- Int32
-SET     @p_2 = 14
+SET     @p_1 = 14
 
 SELECT
 	[c_1].[value],
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM [sample_class] where [id] >= @p_1 and [id] < @p_2
+		SELECT * FROM [sample_class] where [id] >= @p and [id] < @p_1
 	) [c_1]
 WHERE
 	[c_1].[id] > 10

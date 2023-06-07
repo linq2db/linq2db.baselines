@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @input_2 UniVarChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input UniVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[PersonID],
@@ -13,14 +13,14 @@ FROM
 	[Person] [p]
 		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @input_2 ESCAPE '~'
+	Lower([p].[FirstName]) LIKE @input ESCAPE '~'
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @input_2 UniVarChar(6) -- String
-SET     @input_2 = '%test%'
+DECLARE @input UniVarChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[FirstName],
@@ -28,5 +28,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE @input_2 ESCAPE '~'
+	Lower([p].[FirstName]) LIKE @input ESCAPE '~'
 

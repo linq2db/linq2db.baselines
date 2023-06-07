@@ -7,8 +7,8 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird
-DECLARE @blob_1 Binary(3)
-SET     @blob_1 = X'010203'
+DECLARE @blob Binary(3)
+SET     @blob = X'010203'
 
 SELECT
 	CASE
@@ -18,7 +18,7 @@ SELECT
 			FROM
 				"LinqDataTypes" "x"
 			WHERE
-				"x"."BinaryValue" = @blob_1
+				"x"."BinaryValue" = @blob
 		)
 			THEN 1
 		ELSE 0

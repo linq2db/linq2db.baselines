@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @group_1 Int -- Int32
-SET     @group_1 = 7
+DECLARE @group Int -- Int32
+SET     @group = 7
 
 SELECT
 	[p].[Id],
@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Position] [p]
 WHERE
-	[p].[Group] = @group_1
+	[p].[Group] = @group
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

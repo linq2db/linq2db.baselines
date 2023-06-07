@@ -39,8 +39,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
+DECLARE @skip Int32
+SET     @skip = 3
 
 SELECT
 	t3."Value_1"
@@ -60,7 +60,7 @@ FROM
 			) t2
 	) t3
 WHERE
-	t3.RN > :skip_2
+	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

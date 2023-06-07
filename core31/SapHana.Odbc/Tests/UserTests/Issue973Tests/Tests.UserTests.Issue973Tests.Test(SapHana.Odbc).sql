@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @values_1  -- Int32
-SET     @values_1 = 1
-DECLARE @values_2  -- Int32
-SET     @values_2 = 2
-DECLARE @values_3  -- Int32
-SET     @values_3 = 3
+DECLARE @values  -- Int32
+SET     @values = 1
+DECLARE @values  -- Int32
+SET     @values = 2
+DECLARE @values  -- Int32
+SET     @values = 3
 DECLARE @param  -- Int32
 SET     @param = 4
 
@@ -32,12 +32,12 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @values_1  -- Int32
-SET     @values_1 = 4
-DECLARE @values_2  -- Int32
-SET     @values_2 = 5
-DECLARE @values_3  -- Int32
-SET     @values_3 = 6
+DECLARE @values  -- Int32
+SET     @values = 4
+DECLARE @values  -- Int32
+SET     @values = 5
+DECLARE @values  -- Int32
+SET     @values = 6
 DECLARE @param  -- Int32
 SET     @param = 4
 

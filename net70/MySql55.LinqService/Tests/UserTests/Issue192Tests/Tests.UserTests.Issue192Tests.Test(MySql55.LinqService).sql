@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @BoolValue_1 String -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue String -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -103,7 +103,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue_1
+	`_`.`BoolValue` = @BoolValue
 LIMIT @take
 
 BeforeExecute
@@ -125,8 +125,8 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @BoolValue_1 String -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue String -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -137,7 +137,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue_1
+	`_`.`BoolValue` = @BoolValue
 LIMIT @take
 
 BeforeExecute
@@ -159,8 +159,8 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @BoolValue_1 String -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue String -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -171,7 +171,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue_1
+	`_`.`BoolValue` = @BoolValue
 LIMIT @take
 
 BeforeExecute
@@ -193,8 +193,8 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @BoolValue_1 String -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue String -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -205,7 +205,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue_1
+	`_`.`BoolValue` = @BoolValue
 LIMIT @take
 
 BeforeExecute
@@ -227,8 +227,8 @@ LIMIT @take
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @BoolValue_1 String -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue String -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -239,7 +239,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue_1
+	`_`.`BoolValue` = @BoolValue
 LIMIT @take
 
 BeforeExecute

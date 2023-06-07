@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @input_1 Varchar2(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input Varchar2(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	p."PersonID",
@@ -11,12 +11,12 @@ FROM
 	"Person" p
 		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE :input_1 ESCAPE '~'
+	Lower(p."FirstName") LIKE :input ESCAPE '~'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @input_1 Varchar2(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input Varchar2(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	p."FirstName",
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE :input_1 ESCAPE '~'
+	Lower(p."FirstName") LIKE :input ESCAPE '~'
 

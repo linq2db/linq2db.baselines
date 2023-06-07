@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value_1 SmallInt(2) -- Int16
-SET     @Value_1 = 1
+DECLARE @Value SmallInt(2) -- Int16
+SET     @Value = 1
 
 SELECT
 	"_".ID,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	@Value_1 = "_"."SmallIntValue"
+	@Value = "_"."SmallIntValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

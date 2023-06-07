@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take_1 Int32
-SET     @take_1 = 300001
+DECLARE @take Int32
+SET     @take = 300001
 DECLARE @n Int32
 SET     @n = 300000
 
@@ -25,7 +25,7 @@ FROM
 					p."ParentID" > 1
 			) t1
 		WHERE
-			ROWNUM <= :take_1
+			ROWNUM <= :take
 	) t2
 WHERE
 	t2.RN > :n

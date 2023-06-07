@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @input_1 Text(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input Text(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	p."PersonID",
@@ -11,12 +11,12 @@ FROM
 	"Person" p
 		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE :input_1 ESCAPE '~'
+	Lower(p."FirstName") LIKE :input ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @input_1 Text(6) -- String
-SET     @input_1 = '%test%'
+DECLARE @input Text(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	p."FirstName",
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE :input_1 ESCAPE '~'
+	Lower(p."FirstName") LIKE :input ESCAPE '~'
 

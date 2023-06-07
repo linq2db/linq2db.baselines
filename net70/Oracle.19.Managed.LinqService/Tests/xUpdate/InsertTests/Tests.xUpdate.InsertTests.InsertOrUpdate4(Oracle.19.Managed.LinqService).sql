@@ -70,10 +70,10 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 1
 DECLARE @i Int32
-SET     @i = 4
+SET     @i = 1
+DECLARE @i_1 Int32
+SET     @i_1 = 4
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -83,7 +83,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -93,17 +93,17 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i as VarChar(11))
+		Cast(:i_1 as VarChar(11))
 	)
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i_1 Int32
-SET     @i_1 = 2
 DECLARE @i Int32
-SET     @i = 5
+SET     @i = 2
+DECLARE @i_1 Int32
+SET     @i_1 = 5
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -113,7 +113,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as VarChar(11))
+		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -123,7 +123,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i as VarChar(11))
+		Cast(:i_1 as VarChar(11))
 	)
 
 BeforeExecute

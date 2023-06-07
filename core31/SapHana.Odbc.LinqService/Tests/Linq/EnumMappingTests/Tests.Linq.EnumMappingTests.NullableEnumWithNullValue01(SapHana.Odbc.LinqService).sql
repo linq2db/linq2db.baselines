@@ -12,8 +12,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 101
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 11
+DECLARE @Value  -- Int32
+SET     @Value = 11
 
 INSERT INTO "LinqDataTypes"
 (
@@ -30,8 +30,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 102
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 22
+DECLARE @Value  -- Int32
+SET     @Value = 22
 
 INSERT INTO "LinqDataTypes"
 (
@@ -48,8 +48,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 103
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = NULL
+DECLARE @Value  -- Int32
+SET     @Value = NULL
 
 INSERT INTO "LinqDataTypes"
 (

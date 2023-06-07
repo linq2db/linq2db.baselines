@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @take Int32
+SET     @take = 1
 DECLARE @take_1 Int32
 SET     @take_1 = 1
 DECLARE @take_2 Int32
-SET     @take_2 = 1
-DECLARE @take Int32
-SET     @take = 5000
+SET     @take_2 = 5000
 
 SELECT
 	t."ParentID",
@@ -44,7 +44,7 @@ FROM
 				c_3."ParentID" > 0
 			ORDER BY
 				c_3."ChildID"
-			FETCH NEXT :take_1 ROWS ONLY
+			FETCH NEXT :take ROWS ONLY
 		) t1
 		OUTER APPLY (
 			SELECT
@@ -56,9 +56,9 @@ FROM
 				c_4."ParentID" = t."ParentID" AND c_4."ChildID" > -100
 			ORDER BY
 				c_4."ChildID"
-			FETCH NEXT :take_2 ROWS ONLY
+			FETCH NEXT :take_1 ROWS ONLY
 		) t2
 WHERE
 	t."ParentID" > 0
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT :take_2 ROWS ONLY
 

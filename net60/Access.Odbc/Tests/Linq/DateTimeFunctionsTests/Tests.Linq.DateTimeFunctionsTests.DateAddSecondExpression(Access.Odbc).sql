@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 41
+DECLARE @Parameter1 Int -- Int32
+SET     @Parameter1 = 41
 
 SELECT
 	DateAdd('s', ?, [t].[DateTimeValue])

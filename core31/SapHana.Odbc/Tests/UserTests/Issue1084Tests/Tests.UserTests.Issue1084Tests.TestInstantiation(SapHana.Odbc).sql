@@ -17,8 +17,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Number_1  -- Int32
-SET     @Number_1 = 1
+DECLARE @Number  -- Int32
+SET     @Number = 1
 DECLARE @StatusBitmask  -- Int32
 SET     @StatusBitmask = 0
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Number_1  -- Int32
-SET     @Number_1 = 2
+DECLARE @Number  -- Int32
+SET     @Number = 2
 DECLARE @StatusBitmask  -- Int32
 SET     @StatusBitmask = 0
 
@@ -76,8 +76,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Number_1 NVarChar(1) -- String
-SET     @Number_1 = '1'
+DECLARE @Number NVarChar(1) -- String
+SET     @Number = '1'
 DECLARE @StatusBitmask  -- Int32
 SET     @StatusBitmask = 0
 
@@ -98,8 +98,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Number_1 NVarChar(1) -- String
-SET     @Number_1 = '2'
+DECLARE @Number NVarChar(1) -- String
+SET     @Number = '2'
 DECLARE @StatusBitmask  -- Int32
 SET     @StatusBitmask = 0
 

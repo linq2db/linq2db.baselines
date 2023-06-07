@@ -5,8 +5,8 @@ ALTER SEQUENCE "AllTypes_ID_seq" RESTART WITH 3
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO "AllTypes"
 (
@@ -14,7 +14,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 RETURNING 
 	"ID"

@@ -12,8 +12,8 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 101
-DECLARE @Value_1 Varchar2(2) -- String
-SET     @Value_1 = '11'
+DECLARE @Value Varchar2(2) -- String
+SET     @Value = '11'
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,15 +23,15 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 102
-DECLARE @Value_1 Varchar2(2) -- String
-SET     @Value_1 = '22'
+DECLARE @Value Varchar2(2) -- String
+SET     @Value = '22'
 
 INSERT INTO "LinqDataTypes"
 (
@@ -41,15 +41,15 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 103
-DECLARE @Value_1 Varchar2 -- String
-SET     @Value_1 = NULL
+DECLARE @Value Varchar2 -- String
+SET     @Value = NULL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -59,7 +59,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	:Id,
-	:Value_1
+	:Value
 )
 
 BeforeExecute

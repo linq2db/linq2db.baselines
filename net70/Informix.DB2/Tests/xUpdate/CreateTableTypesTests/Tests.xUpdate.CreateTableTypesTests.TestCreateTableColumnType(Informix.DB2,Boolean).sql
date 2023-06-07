@@ -16,8 +16,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Boolean_1 Char(1) -- StringFixedLength
-SET     @Boolean_1 = 'f'
+DECLARE @Boolean Char(1) -- StringFixedLength
+SET     @Boolean = 'f'
 
 INSERT INTO CreateTableTypes
 (
@@ -27,15 +27,15 @@ INSERT INTO CreateTableTypes
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Boolean_1 Char(1) -- StringFixedLength
-SET     @Boolean_1 = 't'
+DECLARE @Boolean Char(1) -- StringFixedLength
+SET     @Boolean = 't'
 
 INSERT INTO CreateTableTypes
 (
@@ -45,7 +45,7 @@ INSERT INTO CreateTableTypes
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute

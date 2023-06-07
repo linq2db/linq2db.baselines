@@ -25,8 +25,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
 DECLARE @ValueStr VarChar(8) -- String
 SET     @ValueStr = 'SomeStr1'
 
@@ -39,7 +39,7 @@ INSERT INTO "TableWithDataAndSchema"
 VALUES
 (
 	@Id,
-	@Value_1,
+	@Value,
 	@ValueStr
 )
 RETURNING

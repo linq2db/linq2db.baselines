@@ -22,8 +22,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int Integer -- Int32
+SET     @Int = NULL
 DECLARE @Enum UniVarChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar -- AnsiString
@@ -39,7 +39,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -48,8 +48,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Enum UniVarChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum VarChar(12) -- AnsiString
@@ -65,7 +65,7 @@ INSERT INTO [Src]
 VALUES
 (
 	@Id,
-	@Int_1,
+	@Int,
 	@Enum,
 	@CEnum
 )
@@ -112,15 +112,15 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @CEnum VarChar(12) -- AnsiString
+SET     @CEnum = '___Value2___'
 
 SELECT TOP 1
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum_1) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase

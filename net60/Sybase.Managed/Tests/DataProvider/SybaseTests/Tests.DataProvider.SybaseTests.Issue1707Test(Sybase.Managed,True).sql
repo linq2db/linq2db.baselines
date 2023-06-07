@@ -25,8 +25,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Time_1 Time
-SET     @Time_1 = '1900-01-01'
+DECLARE @Time Time
+SET     @Time = '1900-01-01'
 DECLARE @TimeN Time
 SET     @TimeN = '1900-01-01'
 DECLARE @Time2 Time
@@ -51,7 +51,7 @@ INSERT INTO [Issue1707]
 VALUES
 (
 	@Id,
-	@Time_1,
+	@Time,
 	@TimeN,
 	@Time2,
 	@Time2N,
@@ -63,8 +63,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Time_1 Time
-SET     @Time_1 = '1900-01-01 02:03:00'
+DECLARE @Time Time
+SET     @Time = '1900-01-01 02:03:00'
 DECLARE @TimeN Time
 SET     @TimeN = '1900-01-01 02:03:00'
 DECLARE @Time2 Time
@@ -89,7 +89,7 @@ INSERT INTO [Issue1707]
 VALUES
 (
 	@Id,
-	@Time_1,
+	@Time,
 	@TimeN,
 	@Time2,
 	@Time2N,
@@ -101,8 +101,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Time_1 Time
-SET     @Time_1 = '1899-12-31 21:57:00'
+DECLARE @Time Time
+SET     @Time = '1899-12-31 21:57:00'
 DECLARE @TimeN Time
 SET     @TimeN = '1899-12-31 21:57:00'
 DECLARE @Time2 Time
@@ -127,7 +127,7 @@ INSERT INTO [Issue1707]
 VALUES
 (
 	@Id,
-	@Time_1,
+	@Time,
 	@TimeN,
 	@Time2,
 	@Time2N,
@@ -139,8 +139,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
-DECLARE @Time_1 Time
-SET     @Time_1 = '1900-01-02 02:07:00'
+DECLARE @Time Time
+SET     @Time = '1900-01-02 02:07:00'
 DECLARE @TimeN Time
 SET     @TimeN = '1900-01-02 02:07:00'
 DECLARE @Time2 Time
@@ -165,7 +165,7 @@ INSERT INTO [Issue1707]
 VALUES
 (
 	@Id,
-	@Time_1,
+	@Time,
 	@TimeN,
 	@Time2,
 	@Time2N,
@@ -177,8 +177,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
-DECLARE @Time_1 Time
-SET     @Time_1 = '1899-12-30 21:53:00'
+DECLARE @Time Time
+SET     @Time = '1899-12-30 21:53:00'
 DECLARE @TimeN Time
 SET     @TimeN = '1899-12-30 21:53:00'
 DECLARE @Time2 Time
@@ -203,7 +203,7 @@ INSERT INTO [Issue1707]
 VALUES
 (
 	@Id,
-	@Time_1,
+	@Time,
 	@TimeN,
 	@Time2,
 	@Time2N,

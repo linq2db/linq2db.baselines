@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	p."ParentID",
@@ -9,12 +9,12 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :p_1
+	p."ParentID" = :p
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	p."ParentID",
@@ -22,12 +22,12 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :p_1
+	p."ParentID" = :p
 
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	p."ParentID",
@@ -35,5 +35,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :p_1
+	p."ParentID" = :p
 

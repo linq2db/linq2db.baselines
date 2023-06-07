@@ -95,8 +95,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -105,7 +105,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -123,8 +123,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -133,7 +133,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -151,8 +151,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -161,7 +161,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -179,8 +179,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -189,7 +189,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -207,8 +207,8 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 
 SELECT TOP 1
 	[_].[Name],
@@ -217,7 +217,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue_1
+	[_].[BoolValue] = @BoolValue
 
 BeforeExecute
 -- Sybase.Managed Sybase

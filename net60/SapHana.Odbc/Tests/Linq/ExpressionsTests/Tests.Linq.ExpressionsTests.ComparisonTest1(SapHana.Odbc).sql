@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @personId_1  -- Int32
-SET     @personId_1 = 2
-DECLARE @personId_2  -- Int32
-SET     @personId_2 = 2
+DECLARE @personId  -- Int32
+SET     @personId = 2
+DECLARE @personId  -- Int32
+SET     @personId = 2
 
 SELECT
 	CASE

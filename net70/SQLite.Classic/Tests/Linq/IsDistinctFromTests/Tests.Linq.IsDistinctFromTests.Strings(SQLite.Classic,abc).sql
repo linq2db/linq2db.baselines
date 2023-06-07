@@ -30,51 +30,51 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NOT @value_1
+	[s].[String] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NOT @value_1
+	[s].[NullableString] IS NOT @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS @value_1
+	[s].[String] IS @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value_1 NVarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS @value_1
+	[s].[NullableString] IS @value
 
 BeforeExecute
 -- SQLite.Classic SQLite

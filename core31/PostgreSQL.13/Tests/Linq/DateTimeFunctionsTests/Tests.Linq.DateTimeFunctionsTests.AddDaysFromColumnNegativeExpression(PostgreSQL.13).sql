@@ -46,15 +46,15 @@ DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
-DECLARE @p_1 Timestamp -- DateTime2
-SET     @p_1 = '2018-01-02'::date
+DECLARE @p Timestamp -- DateTime2
+SET     @p = '2018-01-02'::date
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' < :p_1
+	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' < :p
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

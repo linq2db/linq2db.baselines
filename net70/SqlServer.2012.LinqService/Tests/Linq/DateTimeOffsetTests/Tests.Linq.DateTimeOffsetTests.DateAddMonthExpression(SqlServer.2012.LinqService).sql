@@ -486,11 +486,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
-	DateAdd(month, @p_1, [t].[TransactionDate])
+	DateAdd(month, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 

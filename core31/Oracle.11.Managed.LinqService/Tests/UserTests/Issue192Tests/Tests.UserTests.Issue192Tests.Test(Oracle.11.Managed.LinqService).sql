@@ -107,8 +107,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -119,7 +119,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1 AND ROWNUM <= :take
+	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -139,8 +139,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -151,7 +151,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1 AND ROWNUM <= :take
+	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -171,8 +171,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -183,7 +183,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1 AND ROWNUM <= :take
+	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -203,8 +203,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -215,7 +215,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1 AND ROWNUM <= :take
+	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -235,8 +235,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue_1 Char -- AnsiStringFixedLength
-SET     @BoolValue_1 = 'N'
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
 DECLARE @take Int32
 SET     @take = 1
 
@@ -247,7 +247,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue_1 AND ROWNUM <= :take
+	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

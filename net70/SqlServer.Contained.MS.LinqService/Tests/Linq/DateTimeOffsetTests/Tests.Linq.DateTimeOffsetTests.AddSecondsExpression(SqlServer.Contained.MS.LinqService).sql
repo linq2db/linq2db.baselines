@@ -485,11 +485,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -35
+DECLARE @p Int -- Int32
+SET     @p = -35
 
 SELECT
-	DateAdd(second, @p_1, [t].[TransactionDate])
+	DateAdd(second, @p, [t].[TransactionDate])
 FROM
 	[Transactions] [t]
 

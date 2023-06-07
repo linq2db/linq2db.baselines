@@ -8,10 +8,10 @@ FROM
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -26,10 +26,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = '	'
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = '	'
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = '	'
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = '	'
 
 INSERT INTO [AllTypes]
 (
@@ -44,11 +44,11 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = '
 '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = '
 '
 
 INSERT INTO [AllTypes]
@@ -64,10 +64,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -82,10 +82,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -100,10 +100,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ''
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ''
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -118,10 +118,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -136,10 +136,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -154,10 +154,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -172,10 +172,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -190,10 +190,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -208,10 +208,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -226,10 +226,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -244,10 +244,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -262,10 +262,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -280,10 +280,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -298,10 +298,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -316,10 +316,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = ' '
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -334,10 +334,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = '　'
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = ' '
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = '　'
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -352,10 +352,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar(1) -- StringFixedLength
-SET     @NChar_1 = chr(0)
-DECLARE @Char_1 NChar(1) -- StringFixedLength
-SET     @Char_1 = chr(0)
+DECLARE @NChar NChar(1) -- StringFixedLength
+SET     @NChar = chr(0)
+DECLARE @Char NChar(1) -- StringFixedLength
+SET     @Char = chr(0)
 
 INSERT INTO [AllTypes]
 (
@@ -370,10 +370,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @NChar_1 NChar -- StringFixedLength
-SET     @NChar_1 = NULL
-DECLARE @Char_1 NChar -- StringFixedLength
-SET     @Char_1 = NULL
+DECLARE @NChar NChar -- StringFixedLength
+SET     @NChar = NULL
+DECLARE @Char NChar -- StringFixedLength
+SET     @Char = NULL
 
 INSERT INTO [AllTypes]
 (

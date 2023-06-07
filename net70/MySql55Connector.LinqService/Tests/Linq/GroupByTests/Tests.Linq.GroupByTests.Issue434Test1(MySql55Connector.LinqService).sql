@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @input_1 VarChar(4) -- String
-SET     @input_1 = 'test'
+DECLARE @input VarChar(4) -- String
+SET     @input = 'test'
 
 SELECT
 	`p`.`PersonID`,
@@ -11,12 +11,12 @@ FROM
 	`Person` `p`
 		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
 WHERE
-	LOCATE(@input_1, Lower(`p`.`FirstName`)) > 0
+	LOCATE(@input, Lower(`p`.`FirstName`)) > 0
 
 BeforeExecute
 -- MySql55Connector MySqlConnector MySql
-DECLARE @input_1 VarChar(4) -- String
-SET     @input_1 = 'test'
+DECLARE @input VarChar(4) -- String
+SET     @input = 'test'
 
 SELECT
 	`p`.`FirstName`,
@@ -24,5 +24,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE(@input_1, Lower(`p`.`FirstName`)) > 0
+	LOCATE(@input, Lower(`p`.`FirstName`)) > 0
 

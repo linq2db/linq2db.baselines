@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @ps_1 Varchar2(3) -- String
-SET     @ps_1 = '%[%'
+DECLARE @ps Varchar2(3) -- String
+SET     @ps = '%[%'
 
 SELECT
 	Count(*)
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND '123[456' LIKE :ps_1 ESCAPE '~'
+	p."PersonID" = 1 AND '123[456' LIKE :ps ESCAPE '~'
 

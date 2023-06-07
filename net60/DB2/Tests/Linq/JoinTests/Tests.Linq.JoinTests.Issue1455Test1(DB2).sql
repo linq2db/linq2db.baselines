@@ -122,12 +122,12 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @cpty VarChar(3) -- String
+SET     @cpty = '%C%'
 DECLARE @cpty_1 VarChar(3) -- String
 SET     @cpty_1 = '%C%'
 DECLARE @cpty_2 VarChar(3) -- String
 SET     @cpty_2 = '%C%'
-DECLARE @cpty_3 VarChar(3) -- String
-SET     @cpty_3 = '%C%'
 
 SELECT
 	"al_1"."alert",
@@ -150,7 +150,7 @@ FROM
 		LEFT JOIN "Trade" "trade1" ON ("al_1"."alert" = RTrim(Char("trade1"."DealId")) OR "al_1"."alert" IS NULL AND RTrim(Char("trade1"."DealId")) IS NULL)
 		LEFT JOIN "Nomin" "nomin1" ON ("al_1"."alert" = RTrim(Char("nomin1"."CargoId")) OR "al_1"."alert" IS NULL AND RTrim(Char("nomin1"."CargoId")) IS NULL)
 WHERE
-	(("nomin1"."DeliveryCounterParty" LIKE @cpty_1 ESCAPE '~' OR "trade1"."CounterParty" LIKE @cpty_2 ESCAPE '~') OR "al_1"."alert_1" LIKE @cpty_3 ESCAPE '~')
+	(("nomin1"."DeliveryCounterParty" LIKE @cpty ESCAPE '~' OR "trade1"."CounterParty" LIKE @cpty_1 ESCAPE '~') OR "al_1"."alert_1" LIKE @cpty_2 ESCAPE '~')
 GROUP BY
 	"al_1"."alert",
 	"al_1"."alert_1",

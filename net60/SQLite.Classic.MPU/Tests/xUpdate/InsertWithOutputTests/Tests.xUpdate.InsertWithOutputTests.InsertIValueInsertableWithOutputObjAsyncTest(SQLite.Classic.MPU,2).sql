@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS [TableWithData]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
-DECLARE @Value_1  -- Int32
-SET     @Value_1 = 200
+DECLARE @Value  -- Int32
+SET     @Value = 200
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @ValueStr NVarChar(8) -- String
@@ -30,7 +30,7 @@ INSERT INTO [TableWithData]
 )
 VALUES
 (
-	@Value_1,
+	@Value,
 	@Id,
 	@ValueStr
 )

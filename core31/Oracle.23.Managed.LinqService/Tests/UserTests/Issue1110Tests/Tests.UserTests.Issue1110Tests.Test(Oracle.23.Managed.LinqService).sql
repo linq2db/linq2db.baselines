@@ -34,8 +34,8 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 10
-DECLARE @TimeStamp_1 TimeStamp -- DateTime
-SET     @TimeStamp_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
+DECLARE @TimeStamp TimeStamp -- DateTime
+SET     @TimeStamp = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 INSERT INTO "Issue1110TB"
 (
@@ -45,7 +45,7 @@ INSERT INTO "Issue1110TB"
 VALUES
 (
 	:Id,
-	:TimeStamp_1
+	:TimeStamp
 )
 
 BeforeExecute

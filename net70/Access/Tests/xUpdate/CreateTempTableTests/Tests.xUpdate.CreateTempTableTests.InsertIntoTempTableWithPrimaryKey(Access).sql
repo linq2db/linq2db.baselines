@@ -10,8 +10,8 @@ CREATE TABLE [TableWithPrimaryKey2]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Key_1 Integer -- Int32
-SET     @Key_1 = 1
+DECLARE @Key Integer -- Int32
+SET     @Key = 1
 
 INSERT INTO [TableWithPrimaryKey2]
 (
@@ -19,7 +19,7 @@ INSERT INTO [TableWithPrimaryKey2]
 )
 VALUES
 (
-	@Key_1
+	@Key
 )
 
 BeforeExecute

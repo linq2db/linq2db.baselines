@@ -30,51 +30,51 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`String` <=> @value_1
+	NOT `s`.`String` <=> @value
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableString` <=> @value_1
+	NOT `s`.`NullableString` <=> @value
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`String` <=> @value_1
+	`s`.`String` <=> @value
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @value_1 VarChar(3) -- String
-SET     @value_1 = 'abc'
+DECLARE @value VarChar(3) -- String
+SET     @value = 'abc'
 
 SELECT
 	Count(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableString` <=> @value_1
+	`s`.`NullableString` <=> @value
 
 BeforeExecute
 -- MySql MySql.Official MySql

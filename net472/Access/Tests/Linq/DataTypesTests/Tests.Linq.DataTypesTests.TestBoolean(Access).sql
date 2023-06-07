@@ -17,8 +17,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
+DECLARE @Column Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = False
 
@@ -31,7 +31,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -53,14 +53,14 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -71,7 +71,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- Access AccessOleDb
@@ -95,8 +95,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
+DECLARE @Column Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = False
 
@@ -109,7 +109,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -131,7 +131,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
+DECLARE @Column Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = False
 
@@ -171,7 +171,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -193,7 +193,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Boolean
-SET     @Column_1 = True
+DECLARE @Column Boolean
+SET     @Column = True
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = False
 
@@ -233,7 +233,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Boolean
-SET     @Column_1 = False
+DECLARE @Column Boolean
+SET     @Column = False
 DECLARE @ColumnNullable Boolean
 SET     @ColumnNullable = True
 
@@ -255,7 +255,7 @@ INSERT INTO [BooleanTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

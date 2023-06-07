@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Firebird
-DECLARE @Length_1 Integer -- Int32
-SET     @Length_1 = 1
+DECLARE @Length Integer -- Int32
+SET     @Length = 1
 
 SELECT
-	Cast(@Length_1 as Int)
+	Cast(@Length as Int)
 FROM rdb$database
 

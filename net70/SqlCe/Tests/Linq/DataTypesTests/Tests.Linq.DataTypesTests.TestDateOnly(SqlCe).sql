@@ -27,8 +27,8 @@ SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
 -- SqlCe
-DECLARE @Column_1 DateTime
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column DateTime
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = '2200-01-01'
 
@@ -39,7 +39,7 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SqlCe
@@ -63,8 +63,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 DateTime
-SET     @Column_1 = '1950-01-01'
+DECLARE @Column DateTime
+SET     @Column = '1950-01-01'
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = NULL
 
@@ -77,7 +77,7 @@ INSERT INTO [DateOnlyTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -85,8 +85,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 DateTime
-SET     @Column_1 = '2020-02-29'
+DECLARE @Column DateTime
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = '2200-01-01'
 
@@ -99,7 +99,7 @@ INSERT INTO [DateOnlyTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

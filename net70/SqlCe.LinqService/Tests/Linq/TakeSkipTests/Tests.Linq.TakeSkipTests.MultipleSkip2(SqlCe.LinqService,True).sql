@@ -13,8 +13,8 @@ CREATE TABLE [TakeSkipClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -22,13 +22,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PIPPO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -36,13 +36,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'PLUTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -50,13 +50,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value_1 NVarChar(5) -- String
-SET     @Value_1 = 'BOLTO'
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -64,13 +64,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 3
+DECLARE @skip Int -- Int32
+SET     @skip = 3
 
 SELECT
 	[t1].[Value]
@@ -78,12 +78,12 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip_1 ROWS
+OFFSET @skip ROWS
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 4
+DECLARE @skip Int -- Int32
+SET     @skip = 4
 
 SELECT
 	[t1].[Value]
@@ -91,7 +91,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip_1 ROWS
+OFFSET @skip ROWS
 
 BeforeExecute
 -- SqlCe

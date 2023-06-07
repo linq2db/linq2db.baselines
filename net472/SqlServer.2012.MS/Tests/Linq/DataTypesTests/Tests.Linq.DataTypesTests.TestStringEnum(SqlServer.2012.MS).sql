@@ -30,8 +30,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @Column_1 NVarChar(4000) -- String
-SET     @Column_1 = N'value=2'
+DECLARE @Column NVarChar(4000) -- String
+SET     @Column = N'value=2'
 DECLARE @ColumnNullable NVarChar(4000) -- String
 SET     @ColumnNullable = N'value=33'
 
@@ -42,7 +42,7 @@ SELECT
 FROM
 	[StringEnumTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -67,8 +67,8 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 NVarChar(8) -- String
-SET     @Column_1 = N'val=1'
+DECLARE @Column NVarChar(8) -- String
+SET     @Column = N'val=1'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = NULL
 
@@ -81,7 +81,7 @@ INSERT INTO [StringEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -89,8 +89,8 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 NVarChar(8) -- String
-SET     @Column_1 = N'value=2'
+DECLARE @Column NVarChar(8) -- String
+SET     @Column = N'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = N'value=33'
 
@@ -103,7 +103,7 @@ INSERT INTO [StringEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

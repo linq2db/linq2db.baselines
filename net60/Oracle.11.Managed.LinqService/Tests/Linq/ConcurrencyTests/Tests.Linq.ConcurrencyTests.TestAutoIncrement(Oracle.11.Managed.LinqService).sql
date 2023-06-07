@@ -37,8 +37,8 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -10
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'initial'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyAutoIncrement"
 (
@@ -50,7 +50,7 @@ VALUES
 (
 	:Id,
 	:Stamp,
-	:Value_1
+	:Value
 )
 
 BeforeExecute
@@ -65,8 +65,8 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'value 1'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'value 1'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -76,7 +76,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value_1
+	"ConcurrencyAutoIncrement"."Value" = :Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
@@ -92,8 +92,8 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'value 2'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -103,7 +103,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value_1
+	"ConcurrencyAutoIncrement"."Value" = :Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
@@ -119,8 +119,8 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value_1 Varchar2(7) -- String
-SET     @Value_1 = 'value 3'
+DECLARE @Value Varchar2(7) -- String
+SET     @Value = 'value 3'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -130,7 +130,7 @@ UPDATE
 	"ConcurrencyAutoIncrement"
 SET
 	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value_1
+	"ConcurrencyAutoIncrement"."Value" = :Value
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 

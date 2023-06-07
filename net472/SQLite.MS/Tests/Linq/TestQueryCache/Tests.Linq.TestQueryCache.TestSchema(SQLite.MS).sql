@@ -21,8 +21,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V1'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V1'
 
 INSERT INTO [SampleClass]
 (
@@ -34,7 +34,7 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -65,8 +65,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V1'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V1'
 
 INSERT INTO [SampleClass]
 (
@@ -78,7 +78,7 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -109,8 +109,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V1'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V1'
 
 INSERT INTO [SampleClass]
 (
@@ -122,7 +122,7 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
@@ -153,8 +153,8 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
-DECLARE @Value_1 NVarChar(2) -- String
-SET     @Value_1 = 'V1'
+DECLARE @Value NVarChar(2) -- String
+SET     @Value = 'V1'
 
 INSERT INTO [SampleClass]
 (
@@ -166,7 +166,7 @@ VALUES
 (
 	@Id,
 	@StrKey,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

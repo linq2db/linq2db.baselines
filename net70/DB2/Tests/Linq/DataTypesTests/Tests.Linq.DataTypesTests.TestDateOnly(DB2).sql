@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Column_1 Date(20)
-SET     @Column_1 = '2020-02-29-00.00.00.000000'
+DECLARE @Column Date(20)
+SET     @Column = '2020-02-29-00.00.00.000000'
 DECLARE @ColumnNullable Date(20)
 SET     @ColumnNullable = '2200-01-01-00.00.00.000000'
 
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"DateOnlyTable" "r"
 WHERE
-	"r"."Column" = @Column_1 AND "r"."ColumnNullable" = @ColumnNullable
+	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -72,8 +72,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Date(20)
-SET     @Column_1 = '1950-01-01-00.00.00.000000'
+DECLARE @Column Date(20)
+SET     @Column = '1950-01-01-00.00.00.000000'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -86,7 +86,7 @@ INSERT INTO "DateOnlyTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -94,8 +94,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Date(20)
-SET     @Column_1 = '2020-02-29-00.00.00.000000'
+DECLARE @Column Date(20)
+SET     @Column = '2020-02-29-00.00.00.000000'
 DECLARE @ColumnNullable Date(20)
 SET     @ColumnNullable = '2200-01-01-00.00.00.000000'
 
@@ -108,7 +108,7 @@ INSERT INTO "DateOnlyTable"
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

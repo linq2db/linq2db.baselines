@@ -17,8 +17,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 't'
 DECLARE @ColumnNullable SmallInt -- Boolean
 SET     @ColumnNullable = NULL
 
@@ -31,7 +31,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
 SET     @ColumnNullable = 't'
 
@@ -53,14 +53,14 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
 SET     @ColumnNullable = 't'
 
@@ -71,7 +71,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r."Column" = @Column_1 AND r.ColumnNullable = @ColumnNullable
+	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -95,8 +95,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 't'
 DECLARE @ColumnNullable SmallInt -- Boolean
 SET     @ColumnNullable = NULL
 
@@ -109,7 +109,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
 SET     @ColumnNullable = 't'
 
@@ -131,7 +131,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 't'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 't'
 DECLARE @ColumnNullable SmallInt -- Boolean
 SET     @ColumnNullable = NULL
 
@@ -171,7 +171,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column_1 Char(1) -- StringFixedLength
-SET     @Column_1 = 'f'
+DECLARE @Column Char(1) -- StringFixedLength
+SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
 SET     @ColumnNullable = 't'
 
@@ -193,7 +193,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

@@ -55,8 +55,8 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 2
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 3
 
 INSERT INTO temp_table1
 (
@@ -66,15 +66,15 @@ INSERT INTO temp_table1
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
-DECLARE @Value_1 Integer(4) -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 3
 
 INSERT INTO temp_table1
 (
@@ -84,7 +84,7 @@ INSERT INTO temp_table1
 VALUES
 (
 	@ID,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

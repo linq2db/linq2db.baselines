@@ -18,8 +18,8 @@ CREATE TABLE [Parent564]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Type_1 VarWChar(9) -- String
-SET     @Type_1 = 'Child564A'
+DECLARE @Type VarWChar(9) -- String
+SET     @Type = 'Child564A'
 DECLARE @StringValue VarWChar(9) -- String
 SET     @StringValue = 'SomeValue'
 
@@ -30,14 +30,14 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@StringValue
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Type_1 VarWChar(9) -- String
-SET     @Type_1 = 'Child564B'
+DECLARE @Type VarWChar(9) -- String
+SET     @Type = 'Child564B'
 DECLARE @IntValue Integer -- Int32
 SET     @IntValue = 911
 
@@ -48,7 +48,7 @@ INSERT INTO [Parent564]
 )
 VALUES
 (
-	@Type_1,
+	@Type,
 	@IntValue
 )
 

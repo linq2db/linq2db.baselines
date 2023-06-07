@@ -2,8 +2,8 @@
 -- Access AccessOleDb
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
-DECLARE @id3 Integer -- Int32
-SET     @id3 = 1
+DECLARE @id1_1 Integer -- Int32
+SET     @id1_1 = 1
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 
@@ -30,7 +30,7 @@ FROM
 				[Parent] [p_2]
 					INNER JOIN [Parent] [p_1] ON ([p_2].[Value1] = [p_1].[Value1] + 2)
 			WHERE
-				[p_1].[ParentID] <> @id3 AND [p_2].[ParentID] <> @id2
+				[p_1].[ParentID] <> @id1_1 AND [p_2].[ParentID] <> @id2
 		) [t1] ON ([t1].[right_1] + 2 = [left_1].[Value1])
 ORDER BY
 	[left_1].[ParentID]

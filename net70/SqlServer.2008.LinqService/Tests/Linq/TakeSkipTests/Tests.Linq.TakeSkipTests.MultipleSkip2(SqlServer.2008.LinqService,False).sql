@@ -15,8 +15,8 @@ IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -24,13 +24,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PIPPO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PIPPO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -38,13 +38,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'PLUTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'PLUTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -52,13 +52,13 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @Value_1 VarChar(10) -- AnsiString
-SET     @Value_1 = N'BOLTO'
+DECLARE @Value VarChar(10) -- AnsiString
+SET     @Value = N'BOLTO'
 
 INSERT INTO [TakeSkipClass]
 (
@@ -66,7 +66,7 @@ INSERT INTO [TakeSkipClass]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 BeforeExecute

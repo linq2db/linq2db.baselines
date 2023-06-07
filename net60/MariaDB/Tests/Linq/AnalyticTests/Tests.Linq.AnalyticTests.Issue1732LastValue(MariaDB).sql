@@ -30,8 +30,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @group_1 Int32
-SET     @group_1 = 7
+DECLARE @group Int32
+SET     @group = 7
 
 SELECT
 	`p`.`Id`,
@@ -39,7 +39,7 @@ SELECT
 FROM
 	`Position` `p`
 WHERE
-	`p`.`Group` = @group_1
+	`p`.`Group` = @group
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

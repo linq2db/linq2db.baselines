@@ -17,14 +17,14 @@ CREATE TABLE [Mixed]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 1
+DECLARE @Int Integer -- Int32
+SET     @Int = 1
 DECLARE @Str VarWChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #2001-01-01#
-DECLARE @Double_1 Double
-SET     @Double_1 = 1
+DECLARE @Date Date -- DateTime
+SET     @Date = #2001-01-01#
+DECLARE @Double Double
+SET     @Double = 1
 DECLARE @Bool Boolean
 SET     @Bool = True
 
@@ -38,23 +38,23 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @Str VarWChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date_1 Date -- DateTime
-SET     @Date_1 = #2002-02-02#
-DECLARE @Double_1 Double
-SET     @Double_1 = 2
+DECLARE @Date Date -- DateTime
+SET     @Date = #2002-02-02#
+DECLARE @Double Double
+SET     @Double = 2
 DECLARE @Bool Boolean
 SET     @Bool = False
 
@@ -68,10 +68,10 @@ INSERT INTO [Mixed]
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@Str,
-	@Date_1,
-	@Double_1,
+	@Date,
+	@Double,
 	@Bool
 )
 

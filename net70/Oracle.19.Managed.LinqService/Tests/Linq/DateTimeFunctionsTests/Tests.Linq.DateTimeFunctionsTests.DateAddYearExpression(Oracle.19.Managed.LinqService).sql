@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p_1 Int32
-SET     @p_1 = 11
+DECLARE @p Int32
+SET     @p = 11
 
 SELECT
-	t."DateTimeValue" + :p_1 * INTERVAL '1' YEAR
+	t."DateTimeValue" + :p * INTERVAL '1' YEAR
 FROM
 	"LinqDataTypes" t
 

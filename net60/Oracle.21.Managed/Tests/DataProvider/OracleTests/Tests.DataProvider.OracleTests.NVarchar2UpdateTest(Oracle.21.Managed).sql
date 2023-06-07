@@ -28,13 +28,13 @@ RETURNING
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @value_1 NVarchar2(8) -- String
-SET     @value_1 = '致我们最爱的母亲'
+DECLARE @value NVarchar2(8) -- String
+SET     @value = '致我们最爱的母亲'
 
 UPDATE
 	"AllTypes"
 SET
-	"AllTypes"."nvarcharDataType" = :value_1
+	"AllTypes"."nvarcharDataType" = :value
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

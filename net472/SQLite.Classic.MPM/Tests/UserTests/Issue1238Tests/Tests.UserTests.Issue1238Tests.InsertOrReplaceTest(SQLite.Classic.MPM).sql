@@ -8,15 +8,15 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Data_1  -- Int32
-SET     @Data_1 = 1
+DECLARE @Data  -- Int32
+SET     @Data = 1
 DECLARE @Key1  -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	[InheritanceParent]
 SET
-	[TypeDiscriminator] = @Data_1
+	[TypeDiscriminator] = @Data
 WHERE
 	[InheritanceParent].[InheritanceParentId] = @Key1 AND
 	[InheritanceParent].[Name] IS NULL
@@ -27,8 +27,8 @@ DECLARE @Key1  -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data_1  -- Int32
-SET     @Data_1 = 1
+DECLARE @Data  -- Int32
+SET     @Data = 1
 
 INSERT INTO [InheritanceParent]
 (
@@ -40,7 +40,7 @@ VALUES
 (
 	@Key1,
 	@Key2,
-	@Data_1
+	@Data
 )
 
 BeforeExecute
@@ -53,15 +53,15 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Data_1  -- Int32
-SET     @Data_1 = 1
+DECLARE @Data  -- Int32
+SET     @Data = 1
 DECLARE @Key1  -- Int32
 SET     @Key1 = 143
 
 UPDATE
 	[InheritanceParent]
 SET
-	[TypeDiscriminator] = @Data_1
+	[TypeDiscriminator] = @Data
 WHERE
 	[InheritanceParent].[InheritanceParentId] = @Key1 AND
 	[InheritanceParent].[Name] IS NULL

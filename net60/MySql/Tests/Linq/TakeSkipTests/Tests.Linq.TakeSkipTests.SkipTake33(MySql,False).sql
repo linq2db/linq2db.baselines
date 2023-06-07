@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
-DECLARE @skip_3 Int32
-SET     @skip_3 = 5
+DECLARE @skip Int32
+SET     @skip = 3
+DECLARE @skip_1 Int32
+SET     @skip_1 = 5
 
 SELECT
 	`t1`.`ParentID`,
@@ -12,14 +12,14 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID`
-LIMIT @skip_2, @skip_3
+LIMIT @skip, @skip_1
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @skip_2 Int32
-SET     @skip_2 = 3
-DECLARE @skip_3 Int32
-SET     @skip_3 = 5
+DECLARE @skip Int32
+SET     @skip = 3
+DECLARE @skip_1 Int32
+SET     @skip_1 = 5
 
 SELECT
 	`t1`.`ParentID`,
@@ -28,5 +28,5 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID`
-LIMIT @skip_2, @skip_3
+LIMIT @skip, @skip_1
 

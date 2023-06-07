@@ -24,8 +24,8 @@ END
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 2
+DECLARE @Int Integer -- Int32
+SET     @Int = 2
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = 2
 DECLARE @String VarChar(3) -- String
@@ -42,7 +42,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -50,8 +50,8 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Int_1 Integer -- Int32
-SET     @Int_1 = 3
+DECLARE @Int Integer -- Int32
+SET     @Int = 3
 DECLARE @NullableInt Integer -- Int32
 SET     @NullableInt = NULL
 DECLARE @String VarChar(3) -- String
@@ -68,7 +68,7 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int_1,
+	@Int,
 	@NullableInt,
 	@String,
 	@NullableString
@@ -76,51 +76,51 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS DISTINCT FROM @value_1
+	"s"."Int" IS DISTINCT FROM @value
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableInt" IS DISTINCT FROM @value_1
+	"s"."NullableInt" IS DISTINCT FROM @value
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" IS NOT DISTINCT FROM @value_1
+	"s"."Int" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 4
+DECLARE @value Integer -- Int32
+SET     @value = 4
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableInt" IS NOT DISTINCT FROM @value_1
+	"s"."NullableInt" IS NOT DISTINCT FROM @value
 
 BeforeExecute
 -- Firebird3 Firebird

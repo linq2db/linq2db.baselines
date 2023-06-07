@@ -20,8 +20,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @_default  -- DateTime
 SET     @_default = '0001-01-01'
-DECLARE @_default_1  -- DateTime
-SET     @_default_1 = '0001-01-01'
+DECLARE @_default  -- DateTime
+SET     @_default = '0001-01-01'
 DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 

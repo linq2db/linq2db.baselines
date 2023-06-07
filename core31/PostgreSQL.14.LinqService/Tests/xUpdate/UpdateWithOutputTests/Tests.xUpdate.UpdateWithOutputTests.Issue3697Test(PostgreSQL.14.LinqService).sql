@@ -37,8 +37,8 @@ CREATE TABLE IF NOT EXISTS "Test3697Item"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 3
+DECLARE @Value Integer -- Int32
+SET     @Value = 3
 DECLARE @TestId Integer -- Int32
 SET     @TestId = 1
 
@@ -49,7 +49,7 @@ INSERT INTO "Test3697Item"
 )
 VALUES
 (
-	:Value_1,
+	:Value,
 	:TestId
 )
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
-	IIF(@p_1 IN (
+	IIF(@p IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM
@@ -13,11 +13,11 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
-	IIF(@p_1 IN (
+	IIF(@p IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM

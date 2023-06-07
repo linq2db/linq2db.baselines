@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @_testValue Int -- Int32
-SET     @_testValue = 3
+DECLARE @testValue Int -- Int32
+SET     @testValue = 3
 
 SELECT
 	[t3].[c1],
@@ -36,7 +36,7 @@ FROM
 			FROM
 				[Child] [p_1]
 			WHERE
-				[p_1].[ParentID] = @_testValue
+				[p_1].[ParentID] = @testValue
 			GROUP BY
 				[p_1].[ParentID]
 		) [t2] ON [t2].[ParentID] = [t3].[c1]

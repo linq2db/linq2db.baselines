@@ -1,60 +1,60 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
+DECLARE @value Int -- Int32
+SET     @value = NULL
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value_1 as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 1
+DECLARE @value Int -- Int32
+SET     @value = 1
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value_1 as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = NULL
+DECLARE @value Int -- Int32
+SET     @value = NULL
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value_1 as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 2
+DECLARE @value Int -- Int32
+SET     @value = 2
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value_1 as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 3
+DECLARE @value Int -- Int32
+SET     @value = 3
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value_1 as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 

@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS "TableWithData"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 100
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ValueStr Text(8) -- String
@@ -30,7 +30,7 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	:Value_1,
+	:Value,
 	:Id,
 	:ValueStr
 )

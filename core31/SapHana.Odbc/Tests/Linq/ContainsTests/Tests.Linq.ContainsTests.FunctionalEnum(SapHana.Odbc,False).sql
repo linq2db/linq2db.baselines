@@ -18,8 +18,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = NULL
+DECLARE @Int  -- Int32
+SET     @Int = NULL
 DECLARE @Enum NVarChar -- String
 SET     @Enum = NULL
 DECLARE @CEnum VarChar -- AnsiString
@@ -44,8 +44,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @Int_1  -- Int32
-SET     @Int_1 = 2
+DECLARE @Int  -- Int32
+SET     @Int = 2
 DECLARE @Enum NVarChar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum VarChar(12) -- AnsiString

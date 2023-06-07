@@ -16,8 +16,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 0
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'key1'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'key1'
 
 INSERT INTO [SampleClass]
 (
@@ -27,15 +27,15 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 0
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'key2'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'key2'
 
 INSERT INTO [SampleClass]
 (
@@ -45,7 +45,7 @@ INSERT INTO [SampleClass]
 VALUES
 (
 	@Id,
-	@Value_1
+	@Value
 )
 
 BeforeExecute

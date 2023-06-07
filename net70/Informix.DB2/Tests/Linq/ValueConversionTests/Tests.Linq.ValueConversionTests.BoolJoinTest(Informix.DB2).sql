@@ -526,8 +526,8 @@ BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue VarChar(1) -- String
 SET     @BoolValue = 'Y'
-DECLARE @BoolValue_2 VarChar(1) -- String
-SET     @BoolValue_2 = 'Y'
+DECLARE @BoolValue_1 VarChar(1) -- String
+SET     @BoolValue_1 = 'Y'
 
 SELECT
 	t1.Enum
@@ -538,7 +538,7 @@ FROM
 				t2.BoolValue
 			FROM
 				ValueConversion t2
-		) t2_1 ON t2_1.BoolValue = @BoolValue AND t1.BoolValue = @BoolValue_2
+		) t2_1 ON t2_1.BoolValue = @BoolValue AND t1.BoolValue = @BoolValue_1
 
 BeforeExecute
 -- Informix.DB2 Informix

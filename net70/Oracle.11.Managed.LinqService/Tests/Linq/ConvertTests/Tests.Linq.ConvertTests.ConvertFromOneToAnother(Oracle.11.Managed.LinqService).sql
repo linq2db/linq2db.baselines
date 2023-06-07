@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	Cast(:value as Real)
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -14,13 +14,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 BinaryFloat -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value BinaryFloat -- Single
+SET     @value = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	:value_1
+	:value
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -28,13 +28,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 BinaryDouble -- Double
-SET     @value_1 = 6579.6464800000003D
+DECLARE @value BinaryDouble -- Double
+SET     @value = 6579.6464800000003D
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Real)
+	Cast(:value as Real)
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -42,13 +42,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	Cast(:value as Float)
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -56,13 +56,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 BinaryFloat -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value BinaryFloat -- Single
+SET     @value = 6579.64648
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	Cast(:value_1 as Float)
+	Cast(:value as Float)
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -70,13 +70,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @value_1 BinaryDouble -- Double
-SET     @value_1 = 6579.6464800000003D
+DECLARE @value BinaryDouble -- Double
+SET     @value = 6579.6464800000003D
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	:value_1
+	:value
 FROM
 	"LinqDataTypes" t1
 WHERE

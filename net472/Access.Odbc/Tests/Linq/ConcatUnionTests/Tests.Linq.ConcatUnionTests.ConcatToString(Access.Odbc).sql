@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @pattern_1 NVarChar(3) -- String
-SET     @pattern_1 = '%1%'
+DECLARE @pattern NVarChar(3) -- String
+SET     @pattern = '%1%'
 
 SELECT TOP 10
 	[t1].[FirstName]

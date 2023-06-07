@@ -21,22 +21,22 @@ IF (OBJECT_ID(N'PR_1598_Insert_Table_Cache') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(4) -- String
-SET     @Name_1 = 'John'
-DECLARE @Age_1 Integer -- Int32
-SET     @Age_1 = 2
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name_1 UniVarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer -- Int32
+SET     @Age_1 = 2
 
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name_1,
-	[t1].[Age] = @Age_1
+	[t1].[Name] = @Name,
+	[t1].[Age] = @Age
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -53,8 +53,8 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name,
-		@Age
+		@Name_1,
+		@Age_1
 	)
 END
 
@@ -72,22 +72,22 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(4) -- String
-SET     @Name_1 = 'John'
-DECLARE @Age_1 Integer -- Int32
-SET     @Age_1 = 2
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name_1 UniVarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer -- Int32
+SET     @Age_1 = 2
 
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name_1,
-	[t1].[Age] = @Age_1
+	[t1].[Name] = @Name,
+	[t1].[Age] = @Age
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -104,8 +104,8 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name,
-		@Age
+		@Name_1,
+		@Age_1
 	)
 END
 

@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @data_1 Bytea -- Binary
-SET     @data_1 = NULL
+DECLARE @data Bytea -- Binary
+SET     @data = NULL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -20,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	:data_1,
+	:data,
 	True
 )
 

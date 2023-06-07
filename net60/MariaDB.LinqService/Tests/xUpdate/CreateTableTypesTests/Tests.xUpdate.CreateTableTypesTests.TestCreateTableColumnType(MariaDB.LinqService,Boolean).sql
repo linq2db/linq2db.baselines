@@ -16,8 +16,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Boolean_1 Bool -- Boolean
-SET     @Boolean_1 = 0
+DECLARE @Boolean Bool -- Boolean
+SET     @Boolean = 0
 
 INSERT INTO `CreateTableTypes`
 (
@@ -27,15 +27,15 @@ INSERT INTO `CreateTableTypes`
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Boolean_1 Bool -- Boolean
-SET     @Boolean_1 = 1
+DECLARE @Boolean Bool -- Boolean
+SET     @Boolean = 1
 
 INSERT INTO `CreateTableTypes`
 (
@@ -45,7 +45,7 @@ INSERT INTO `CreateTableTypes`
 VALUES
 (
 	@Id,
-	@Boolean_1
+	@Boolean
 )
 
 BeforeExecute

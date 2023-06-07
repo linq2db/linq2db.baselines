@@ -32,8 +32,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip_3 Int -- Int32
-SET     @skip_3 = 6
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 
 SELECT
 	[t2].[Value_1]
@@ -46,7 +46,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip_3
+	[t2].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

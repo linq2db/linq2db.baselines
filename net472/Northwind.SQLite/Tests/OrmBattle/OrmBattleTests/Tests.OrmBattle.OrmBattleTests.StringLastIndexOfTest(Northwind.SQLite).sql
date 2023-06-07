@@ -81,8 +81,8 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @Length_2  -- Int32
-SET     @Length_2 = 4
+DECLARE @Length  -- Int32
+SET     @Length = 4
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -104,7 +104,7 @@ WHERE
 	CASE
 		WHEN CharIndex('t', LeftStr([c_1].[City], 4), 2) = 0
 			THEN -1
-		ELSE @Length_2 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))
+		ELSE @Length - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))
 	END = 3
 LIMIT @take
 

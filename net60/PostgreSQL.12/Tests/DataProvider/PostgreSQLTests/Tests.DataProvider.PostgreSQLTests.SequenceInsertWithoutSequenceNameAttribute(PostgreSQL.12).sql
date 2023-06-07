@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value_1 Text(8) -- String
-SET     @Value_1 = 'SeqValue'
+DECLARE @Value Text(8) -- String
+SET     @Value = 'SeqValue'
 
 INSERT INTO "SequenceTest2"
 (
@@ -9,6 +9,6 @@ INSERT INTO "SequenceTest2"
 )
 VALUES
 (
-	:Value_1
+	:Value
 )
 

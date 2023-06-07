@@ -10,8 +10,8 @@ sp_chgattribute KeepIdentityTest, 'identity_burn_max', 0, '0'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 INSERT INTO [KeepIdentityTest]
 (
@@ -19,7 +19,7 @@ INSERT INTO [KeepIdentityTest]
 )
 VALUES
 (
-	@Value_1
+	@Value
 )
 
 SELECT @@IDENTITY

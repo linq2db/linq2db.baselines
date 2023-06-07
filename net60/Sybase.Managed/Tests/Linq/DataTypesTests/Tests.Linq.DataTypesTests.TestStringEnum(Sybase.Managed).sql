@@ -31,8 +31,8 @@ SELECT 2,'value=2','value=33'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Column_1 Unsupported -- Guid
-SET     @Column_1 = 'value=2'
+DECLARE @Column Unsupported -- Guid
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable Unsupported -- Guid
 SET     @ColumnNullable = 'value=33'
 
@@ -43,7 +43,7 @@ SELECT
 FROM
 	[StringEnumTable] [r]
 WHERE
-	[r].[Column] = @Column_1 AND [r].[ColumnNullable] = @ColumnNullable
+	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -68,8 +68,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column_1 UniVarChar(5) -- String
-SET     @Column_1 = 'val=1'
+DECLARE @Column UniVarChar(5) -- String
+SET     @Column = 'val=1'
 DECLARE @ColumnNullable UniVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -82,7 +82,7 @@ INSERT INTO [StringEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 
@@ -90,8 +90,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column_1 UniVarChar(7) -- String
-SET     @Column_1 = 'value=2'
+DECLARE @Column UniVarChar(7) -- String
+SET     @Column = 'value=2'
 DECLARE @ColumnNullable UniVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
@@ -104,7 +104,7 @@ INSERT INTO [StringEnumTable]
 VALUES
 (
 	@Id,
-	@Column_1,
+	@Column,
 	@ColumnNullable
 )
 

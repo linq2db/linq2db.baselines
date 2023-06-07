@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @param_1 VarChar(4) -- String
-SET     @param_1 = 'JOHN'
+DECLARE @param VarChar(4) -- String
+SET     @param = 'JOHN'
 
 SELECT
 	p.FirstName,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	Upper(p.FirstName) = @param_1 AND p.PersonID = 1
+	Upper(p.FirstName) = @param AND p.PersonID = 1
 

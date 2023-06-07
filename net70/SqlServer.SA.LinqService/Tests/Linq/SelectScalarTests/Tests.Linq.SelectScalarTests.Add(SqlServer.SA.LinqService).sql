@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 5
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	@p_1
+	@p
 

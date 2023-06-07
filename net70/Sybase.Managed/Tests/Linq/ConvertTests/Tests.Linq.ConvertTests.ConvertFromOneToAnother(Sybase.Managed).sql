@@ -1,60 +1,60 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 
 SELECT TOP 1
-	Convert(Real, @value_1)
+	Convert(Real, @value)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value Real -- Single
+SET     @value = 6579.64648
 
 SELECT TOP 1
-	@value_1
+	@value
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Double
-SET     @value_1 = 6579.6464800000003
+DECLARE @value Double
+SET     @value = 6579.6464800000003
 
 SELECT TOP 1
-	Convert(Real, @value_1)
+	Convert(Real, @value)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Decimal(9, 5)
-SET     @value_1 = 6579.64648
+DECLARE @value Decimal(9, 5)
+SET     @value = 6579.64648
 
 SELECT TOP 1
-	Convert(Float, @value_1)
+	Convert(Float, @value)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Real -- Single
-SET     @value_1 = 6579.64648
+DECLARE @value Real -- Single
+SET     @value = 6579.64648
 
 SELECT TOP 1
-	Convert(Float, @value_1)
+	Convert(Float, @value)
 FROM
 	[LinqDataTypes] [_]
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value_1 Double
-SET     @value_1 = 6579.6464800000003
+DECLARE @value Double
+SET     @value = 6579.6464800000003
 
 SELECT TOP 1
-	@value_1
+	@value
 FROM
 	[LinqDataTypes] [_]
 

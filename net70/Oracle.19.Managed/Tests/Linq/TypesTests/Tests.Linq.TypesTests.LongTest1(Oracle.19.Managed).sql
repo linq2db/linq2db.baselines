@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @value_1 Int64
-SET     @value_1 = 0
+DECLARE @value Int64
+SET     @value = 0
 
 SELECT
 	t.ID,
@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."BigIntValue" = :value_1
+	t."BigIntValue" = :value
 

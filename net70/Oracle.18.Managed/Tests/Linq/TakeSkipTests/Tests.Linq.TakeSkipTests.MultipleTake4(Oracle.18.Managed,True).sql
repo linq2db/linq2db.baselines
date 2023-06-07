@@ -43,8 +43,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take_3 Int32
-SET     @take_3 = 1
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	t1."Value"
@@ -52,7 +52,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-FETCH NEXT :take_3 ROWS ONLY
+FETCH NEXT :take ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @param4 Int16
-SET     @param4 = 0
+DECLARE @param2 Int16
+SET     @param2 = 0
 
 SELECT
 	t.ID,
@@ -15,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."BoolValue" = :param4
+	t."BoolValue" = :param2
 

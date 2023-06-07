@@ -10,61 +10,61 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @nameToCheck_1 VarWChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
-DECLARE @nameToCheck VarWChar(3) -- String
-SET     @nameToCheck = 'Joh'
+DECLARE @nameToCheck VarWChar(4) -- String
+SET     @nameToCheck = 'Joh%'
+DECLARE @nameToCheck_1 VarWChar(3) -- String
+SET     @nameToCheck_1 = 'Joh'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 AND InStr(1, [p].[FirstName], @nameToCheck, 0) = 1 AND
+	[p].[FirstName] LIKE @nameToCheck AND InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1 AND
 	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @nameToCheck_1 VarWChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
-DECLARE @nameToCheck VarWChar(3) -- String
-SET     @nameToCheck = 'Joh'
+DECLARE @nameToCheck VarWChar(4) -- String
+SET     @nameToCheck = 'Joh%'
+DECLARE @nameToCheck_1 VarWChar(3) -- String
+SET     @nameToCheck_1 = 'Joh'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE @nameToCheck_1 OR InStr(1, [p].[FirstName], @nameToCheck, 0) <> 1) AND
-	[p].[PersonID] = 1
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @nameToCheck_1 VarWChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
-DECLARE @nameToCheck VarWChar(3) -- String
-SET     @nameToCheck = 'JOH'
-
-SELECT
-	Count(*)
-FROM
-	[Person] [p]
-WHERE
-	[p].[FirstName] LIKE @nameToCheck_1 AND InStr(1, [p].[FirstName], @nameToCheck, 0) = 1 AND
+	([p].[FirstName] NOT LIKE @nameToCheck OR InStr(1, [p].[FirstName], @nameToCheck_1, 0) <> 1) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @nameToCheck_1 VarWChar(4) -- String
 SET     @nameToCheck_1 = 'JOH%'
-DECLARE @nameToCheck VarWChar(3) -- String
-SET     @nameToCheck = 'JOH'
+DECLARE @nameToCheck_1_1 VarWChar(3) -- String
+SET     @nameToCheck_1_1 = 'JOH'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE @nameToCheck_1 OR InStr(1, [p].[FirstName], @nameToCheck, 0) <> 1) AND
+	[p].[FirstName] LIKE @nameToCheck_1 AND InStr(1, [p].[FirstName], @nameToCheck_1_1, 0) = 1 AND
+	[p].[PersonID] = 1
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @nameToCheck_1 VarWChar(4) -- String
+SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck_1_1 VarWChar(3) -- String
+SET     @nameToCheck_1_1 = 'JOH'
+
+SELECT
+	Count(*)
+FROM
+	[Person] [p]
+WHERE
+	([p].[FirstName] NOT LIKE @nameToCheck_1 OR InStr(1, [p].[FirstName], @nameToCheck_1_1, 0) <> 1) AND
 	[p].[PersonID] = 1
 

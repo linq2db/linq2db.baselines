@@ -26,10 +26,10 @@ FROM
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 DECLARE @take Int32
-SET     @take = 5000
+SET     @take = 1
+DECLARE @take_1 Int32
+SET     @take_1 = 5000
 
 SELECT
 	`t`.`ParentID`,
@@ -61,11 +61,11 @@ SELECT
 		WHERE
 			`c_3`.`ParentID` = `t`.`ParentID` AND `c_3`.`ChildID` > -100 AND
 			`c_3`.`ParentID` > 0
-		LIMIT @take_1
+		LIMIT @take
 	)
 FROM
 	`Parent` `t`
 WHERE
 	`t`.`ParentID` > 0
-LIMIT @take
+LIMIT @take_1
 

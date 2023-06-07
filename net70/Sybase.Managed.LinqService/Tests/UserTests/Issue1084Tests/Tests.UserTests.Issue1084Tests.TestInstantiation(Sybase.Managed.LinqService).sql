@@ -21,8 +21,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Number_1 Integer -- Int32
-SET     @Number_1 = 1
+DECLARE @Number Integer -- Int32
+SET     @Number = 1
 DECLARE @StatusBitmask Integer -- Int32
 SET     @StatusBitmask = 0
 
@@ -35,7 +35,7 @@ INSERT INTO [i1084_person]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -43,8 +43,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Number_1 Integer -- Int32
-SET     @Number_1 = 2
+DECLARE @Number Integer -- Int32
+SET     @Number = 2
 DECLARE @StatusBitmask Integer -- Int32
 SET     @StatusBitmask = 0
 
@@ -57,7 +57,7 @@ INSERT INTO [i1084_person]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -84,8 +84,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Number_1 UniVarChar(1) -- String
-SET     @Number_1 = '1'
+DECLARE @Number UniVarChar(1) -- String
+SET     @Number = '1'
 DECLARE @StatusBitmask Integer -- Int32
 SET     @StatusBitmask = 0
 
@@ -98,7 +98,7 @@ INSERT INTO [i1084_student]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 
@@ -106,8 +106,8 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Number_1 UniVarChar(1) -- String
-SET     @Number_1 = '2'
+DECLARE @Number UniVarChar(1) -- String
+SET     @Number = '2'
 DECLARE @StatusBitmask Integer -- Int32
 SET     @StatusBitmask = 0
 
@@ -120,7 +120,7 @@ INSERT INTO [i1084_student]
 VALUES
 (
 	@Id,
-	@Number_1,
+	@Number,
 	@StatusBitmask
 )
 

@@ -12,8 +12,8 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value_1 NVarchar2(8) -- String
-SET     @value_1 = '致我们最爱的母亲'
+DECLARE @value NVarchar2(8) -- String
+SET     @value = '致我们最爱的母亲'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -23,7 +23,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:value_1
+	:value
 )
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER

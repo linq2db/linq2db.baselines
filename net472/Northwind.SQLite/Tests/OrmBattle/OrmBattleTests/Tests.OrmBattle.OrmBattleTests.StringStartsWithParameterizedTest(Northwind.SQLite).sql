@@ -81,10 +81,10 @@ FROM
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @likeA_1 NVarChar(2) -- String
-SET     @likeA_1 = 'A%'
-DECLARE @likeL_1 NVarChar(2) -- String
-SET     @likeL_1 = 'L%'
+DECLARE @likeA NVarChar(2) -- String
+SET     @likeA = 'A%'
+DECLARE @likeL NVarChar(2) -- String
+SET     @likeL = 'L%'
 
 SELECT
 	[c_1].[CustomerID],
@@ -101,5 +101,5 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	([c_1].[CustomerID] LIKE @likeA_1 ESCAPE '~' OR [c_1].[CustomerID] LIKE @likeL_1 ESCAPE '~')
+	([c_1].[CustomerID] LIKE @likeA ESCAPE '~' OR [c_1].[CustomerID] LIKE @likeL ESCAPE '~')
 

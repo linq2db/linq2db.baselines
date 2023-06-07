@@ -17,8 +17,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
@@ -39,8 +39,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -59,8 +59,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
@@ -117,8 +117,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -157,8 +157,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
@@ -179,8 +179,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
@@ -219,8 +219,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 1
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 1
 DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
@@ -241,8 +241,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column_1 TinyInt(1) -- Byte
-SET     @Column_1 = 255
+DECLARE @Column TinyInt(1) -- Byte
+SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 

@@ -31,10 +31,10 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @skip_3 Int32
-SET     @skip_3 = 3
-DECLARE @skip_4 Int32
-SET     @skip_4 = 1
+DECLARE @skip Int32
+SET     @skip = 3
+DECLARE @skip_1 Int32
+SET     @skip_1 = 1
 
 SELECT
 	`t1`.`Value`
@@ -42,7 +42,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT @skip_3, @skip_4
+LIMIT @skip, @skip_1
 
 BeforeExecute
 -- MySqlConnector MySql

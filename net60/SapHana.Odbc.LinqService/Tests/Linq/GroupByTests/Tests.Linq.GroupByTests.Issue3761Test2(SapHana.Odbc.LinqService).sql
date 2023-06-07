@@ -20,16 +20,16 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @_default  -- DateTime
 SET     @_default = '0001-01-01'
-DECLARE @_default_1  -- DateTime
-SET     @_default_1 = '0001-01-01'
+DECLARE @_default  -- DateTime
+SET     @_default = '0001-01-01'
 DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
-DECLARE @_default_2  -- DateTime
-SET     @_default_2 = '0001-01-01'
-DECLARE @_default_3  -- DateTime
-SET     @_default_3 = '0001-01-01'
-DECLARE @DATUM_1  -- DateTime
-SET     @DATUM_1 = '2019-01-01'
+DECLARE @_default  -- DateTime
+SET     @_default = '0001-01-01'
+DECLARE @_default  -- DateTime
+SET     @_default = '0001-01-01'
+DECLARE @DATUM  -- DateTime
+SET     @DATUM = '2019-01-01'
 
 SELECT
 	"t1"."Year_1",

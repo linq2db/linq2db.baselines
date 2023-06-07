@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p_1  -- DateTime
-SET     @p_1 = '2018-01-02'
+DECLARE @Parameter1  -- DateTime
+SET     @Parameter1 = '2018-01-02'
 
 SELECT
 	Count(*)

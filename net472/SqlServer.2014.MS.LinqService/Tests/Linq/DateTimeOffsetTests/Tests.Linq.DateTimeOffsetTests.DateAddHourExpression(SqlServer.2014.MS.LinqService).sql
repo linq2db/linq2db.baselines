@@ -486,11 +486,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
-	DatePart(hour, DateAdd(hour, @p_1, [t].[TransactionDate]))
+	DatePart(hour, DateAdd(hour, @p, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

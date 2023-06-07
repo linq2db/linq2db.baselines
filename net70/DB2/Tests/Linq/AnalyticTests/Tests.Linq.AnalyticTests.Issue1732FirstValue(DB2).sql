@@ -38,8 +38,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @group_1 Integer(4) -- Int32
-SET     @group_1 = 7
+DECLARE @group Integer(4) -- Int32
+SET     @group = 7
 
 SELECT
 	"p"."Id",
@@ -47,7 +47,7 @@ SELECT
 FROM
 	"Position" "p"
 WHERE
-	"p"."Group" = @group_1
+	"p"."Group" = @group
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

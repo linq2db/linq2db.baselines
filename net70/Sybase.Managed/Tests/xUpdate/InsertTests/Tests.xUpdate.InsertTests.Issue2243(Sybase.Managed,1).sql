@@ -22,21 +22,21 @@ IF (OBJECT_ID(N'test_insert_or_replace') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(5) -- String
-SET     @Name_1 = 'Test1'
+DECLARE @Name UniVarChar(5) -- String
+SET     @Name = 'Test1'
 DECLARE @UpdatedBy UniVarChar -- String
 SET     @UpdatedBy = NULL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name UniVarChar(5) -- String
-SET     @Name = 'Test1'
+DECLARE @Name_1 UniVarChar(5) -- String
+SET     @Name_1 = 'Test1'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER1'
 
 UPDATE
 	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name_1,
+	[t1].[name] = @Name,
 	[t1].[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
@@ -54,7 +54,7 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name,
+		@Name_1,
 		@CreatedBy
 	)
 END
@@ -72,21 +72,21 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Name_1 UniVarChar(5) -- String
-SET     @Name_1 = 'Test2'
+DECLARE @Name UniVarChar(5) -- String
+SET     @Name = 'Test2'
 DECLARE @UpdatedBy UniVarChar(10) -- String
 SET     @UpdatedBy = 'TEST_USER1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name UniVarChar(5) -- String
-SET     @Name = 'Test2'
+DECLARE @Name_1 UniVarChar(5) -- String
+SET     @Name_1 = 'Test2'
 DECLARE @CreatedBy UniVarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER1'
 
 UPDATE
 	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name_1,
+	[t1].[name] = @Name,
 	[t1].[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
@@ -104,7 +104,7 @@ BEGIN
 	VALUES
 	(
 		@Id,
-		@Name,
+		@Name_1,
 		@CreatedBy
 	)
 END

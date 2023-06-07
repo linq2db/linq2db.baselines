@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @pattern_1 NVarChar(3) -- String
-SET     @pattern_1 = '%1%'
+DECLARE @pattern NVarChar(3) -- String
+SET     @pattern = '%1%'
 DECLARE @take  -- Int32
 SET     @take = 10
 

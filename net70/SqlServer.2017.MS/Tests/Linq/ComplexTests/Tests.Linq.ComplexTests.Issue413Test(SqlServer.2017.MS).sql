@@ -191,8 +191,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @cond_1 NVarChar(4000) -- String
-SET     @cond_1 = N'aaa%'
+DECLARE @cond NVarChar(4000) -- String
+SET     @cond = N'aaa%'
 DECLARE @uptoDate DateTime2
 SET     @uptoDate = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
@@ -208,7 +208,7 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond_1 ESCAPE N'~' AND
+			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE N'~' AND
 			[_].[CreateDate] <= @uptoDate
 	) [t4]
 ORDER BY

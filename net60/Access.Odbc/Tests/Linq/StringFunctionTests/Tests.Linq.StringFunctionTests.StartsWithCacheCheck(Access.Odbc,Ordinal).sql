@@ -10,8 +10,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck NVarChar(3) -- String
 SET     @nameToCheck = 'Joh'
 
@@ -25,8 +25,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'Joh%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck NVarChar(3) -- String
 SET     @nameToCheck = 'Joh'
 
@@ -40,8 +40,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck NVarChar(3) -- String
 SET     @nameToCheck = 'JOH'
 
@@ -55,8 +55,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nameToCheck_1 NVarChar(4) -- String
-SET     @nameToCheck_1 = 'JOH%'
+DECLARE @nameToCheck NVarChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck NVarChar(3) -- String
 SET     @nameToCheck = 'JOH'
 

@@ -36,13 +36,13 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value_1 String(1) -- StringFixedLength
-SET     @Value_1 = 'O'
+DECLARE @Value String(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	`Person` `_`
 SET
-	`_`.`Gender` = @Value_1
+	`_`.`Gender` = @Value
 WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

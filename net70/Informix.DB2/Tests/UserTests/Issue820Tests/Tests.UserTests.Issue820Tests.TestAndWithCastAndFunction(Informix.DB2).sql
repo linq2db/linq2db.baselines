@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @param_1 SmallInt(2) -- Int16
-SET     @param_1 = 1
+DECLARE @param SmallInt(2) -- Int16
+SET     @param = 1
 
 SELECT
 	t1.ID,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	(@param_1 = t1.SmallIntValue OR @param_1 IS NULL AND t1.SmallIntValue IS NULL)
+	(@param = t1.SmallIntValue OR @param IS NULL AND t1.SmallIntValue IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Date_1 DateTime
-SET     @Date_1 = '2009-09-20'
+DECLARE @Date DateTime
+SET     @Date = '2009-09-20'
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Convert(Date, [t].[DateTimeValue]) > @Date_1
+	Convert(Date, [t].[DateTimeValue]) > @Date
 

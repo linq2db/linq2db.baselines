@@ -16,8 +16,8 @@ IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Value_1 Int -- Int32
-SET     @Value_1 = 200
+DECLARE @Value Int -- Int32
+SET     @Value = 200
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @ValueStr NVarChar(50) -- String
@@ -35,7 +35,7 @@ OUTPUT
 	[INSERTED].[ValueStr]
 VALUES
 (
-	@Value_1,
+	@Value,
 	@Id,
 	@ValueStr
 )

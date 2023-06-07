@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Length_1 Int32
-SET     @Length_1 = 4
+DECLARE @Length Int32
+SET     @Length = 4
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."FirstName") = :Length_1 AND p."PersonID" = 1
+	Length(p."FirstName") = :Length AND p."PersonID" = 1
 

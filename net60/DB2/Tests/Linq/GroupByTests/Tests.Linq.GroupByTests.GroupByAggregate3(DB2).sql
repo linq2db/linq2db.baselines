@@ -26,8 +26,8 @@ GROUP BY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p_1 SmallInt(4) -- Int16
-SET     @p_1 = 0
+DECLARE @p SmallInt(4) -- Int16
+SET     @p = 0
 
 SELECT
 	"underscore"."ParentID",
@@ -53,5 +53,5 @@ FROM
 			"Parent" "selectParam"
 	) "underscore"
 WHERE
-	"underscore"."Key_1" = @p_1
+	"underscore"."Key_1" = @p
 
