@@ -842,6 +842,7 @@ BeforeExecute
 
 -- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
+
 -- SKIP SqlServer.2008 BEGIN
 -- SKIP SqlServer.2008.MS END
 -- SKIP SqlServer.2012 END
@@ -1363,6 +1364,7 @@ BeforeExecute
 
 -- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
+
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
 BEGIN
@@ -1613,21 +1615,11 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 -- SKIP SqlServer.2008 BEGIN
-IF EXISTS (SELECT name FROM sys.sequences  WHERE name = N'TestSequence')
-	DROP SEQUENCE dbo.TestSequence
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-CREATE SEQUENCE dbo.TestSequence
-	START WITH 1
-	INCREMENT BY 1;
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
+-- SKIP SqlServer.2008.MS END
 -- SKIP SqlServer.2008 END
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 -- one-to-one (by primary key) relation for scaffold testing

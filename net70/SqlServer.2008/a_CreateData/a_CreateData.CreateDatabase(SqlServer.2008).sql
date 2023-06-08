@@ -842,6 +842,7 @@ BeforeExecute
 
 -- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
+
 -- SKIP SqlServer.2008 END
 -- SKIP SqlServer.2008.MS END
 -- SKIP SqlServer.2012 END
@@ -1363,6 +1364,7 @@ BeforeExecute
 
 -- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
+
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
 BEGIN
@@ -1613,7 +1615,9 @@ BeforeExecute
 -- SqlServer.2008
 
 -- SKIP SqlServer.2005 BEGIN
+-- SKIP SqlServer.2005.MS BEGIN
 -- SKIP SqlServer.2008 END
+-- SKIP SqlServer.2005.MS END
 -- SKIP SqlServer.2005 END
 
 -- one-to-one (by primary key) relation for scaffold testing
