@@ -795,6 +795,7 @@ BeforeExecute
 -- SqlServer.2005
 
 -- SKIP SqlServer.2005 END
+
 -- SKIP SqlServer.2008 BEGIN
 -- SKIP SqlServer.2008.MS BEGIN
 -- SKIP SqlServer.2012 BEGIN
@@ -1254,6 +1255,7 @@ BeforeExecute
 -- SqlServer.2005
 
 -- SKIP SqlServer.2005 END
+
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
 BEGIN
