@@ -3,9 +3,9 @@
 
 SELECT
 	p."PersonID",
-	Nvl(p."MiddleName", Nvl(p."FirstName", 'None')),
-	Nvl(p."LastName", Nvl(p."FirstName", 'None')),
-	Nvl(p."MiddleName", Nvl(p."MiddleName", 'None'))
+	Coalesce(p."MiddleName", p."FirstName", 'None'),
+	Coalesce(p."LastName", p."FirstName", 'None'),
+	Coalesce(p."MiddleName", p."MiddleName", 'None')
 FROM
 	"Person" p
 WHERE
