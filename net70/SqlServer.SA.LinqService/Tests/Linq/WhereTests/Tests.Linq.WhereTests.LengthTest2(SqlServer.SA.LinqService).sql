@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	Len([nm].[FirstName]) <> 0
+	LEN(REPLACE([nm].[FirstName],' ','.')) <> 0
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
