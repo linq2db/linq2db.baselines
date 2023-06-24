@@ -11,9 +11,9 @@ FROM
 	[Person] [p]
 WHERE
 	CASE
-		WHEN Len([p].[FirstName]) > 6
+		WHEN LEN(REPLACE([p].[FirstName],' ','.')) > 6
 			THEN [p].[FirstName]
-		ELSE [p].[FirstName] + Replicate(N' ', 6 - Len([p].[FirstName]))
+		ELSE [p].[FirstName] + Replicate(N' ', 6 - LEN(REPLACE([p].[FirstName],' ','.')))
 	END + N'123' = N'John  123' AND
 	[p].[PersonID] = 1
 
