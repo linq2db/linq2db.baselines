@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Convert(NVarChar(11), Len(@name) + @idx),
+	Convert(NVarChar(11), LEN(REPLACE(@name,' ','.')) + @idx),
 	'M'
 )
 

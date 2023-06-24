@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Substring([p].[FirstName], Len([p].[FirstName]) - 2, 3) = 'ohn' AND
+	Substring([p].[FirstName], LEN(REPLACE([p].[FirstName],' ','.')) - 2, 3) = 'ohn' AND
 	[p].[PersonID] = 1
 

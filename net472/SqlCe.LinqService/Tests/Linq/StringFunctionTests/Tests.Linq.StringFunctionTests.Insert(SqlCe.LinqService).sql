@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 WHERE
 	CASE
-		WHEN Len([p].[FirstName]) = 2
+		WHEN LEN(REPLACE([p].[FirstName],' ','.')) = 2
 			THEN [p].[FirstName] + '123'
 		ELSE Stuff([p].[FirstName], 3, 0, '123')
 	END = 'Jo123hn' AND

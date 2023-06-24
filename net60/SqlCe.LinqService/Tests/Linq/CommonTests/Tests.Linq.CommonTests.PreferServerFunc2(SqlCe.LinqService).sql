@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Len([p].[FirstName])
+	LEN(REPLACE([p].[FirstName],' ','.'))
 FROM
 	[Person] [p]
 

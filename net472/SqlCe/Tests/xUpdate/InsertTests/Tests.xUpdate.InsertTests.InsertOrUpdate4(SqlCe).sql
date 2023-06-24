@@ -44,7 +44,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([Patient].[Diagnosis],' ','.')) + @i)
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -65,7 +65,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	Convert(NVarChar(11), Len(@diagnosis) + @i)
+	Convert(NVarChar(11), LEN(REPLACE(@diagnosis,' ','.')) + @i)
 )
 
 BeforeExecute
@@ -78,7 +78,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([Patient].[Diagnosis],' ','.')) + @i)
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -92,7 +92,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Patient].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([Patient].[Diagnosis],' ','.')) + @i)
 WHERE
 	[Patient].[PersonID] = @id
 

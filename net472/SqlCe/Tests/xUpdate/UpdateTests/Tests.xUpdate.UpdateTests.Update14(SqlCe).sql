@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	[Person]
 SET
-	[Person].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
+	[Person].[LastName] = Convert(NVarChar(11), LEN(REPLACE(@name,' ','.')) + @idx)
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
