@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF(CharIndex(N'p', [p].[LastName]) = 0, -1, Len([p].[LastName]) - CharIndex(N'p', Reverse([p].[LastName]))) = 2 AND
+	IIF(CharIndex(N'p', [p].[LastName]) = 0, -1, LEN(REPLACE([p].[LastName],' ','.')) - CharIndex(N'p', Reverse([p].[LastName]))) = 2 AND
 	[p].[PersonID] = 1
 

@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[FirstName] IS NULL OR Len([nm].[FirstName]) = 0)
+	NOT ([nm].[FirstName] IS NULL OR LEN(REPLACE([nm].[FirstName],' ','.')) = 0)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

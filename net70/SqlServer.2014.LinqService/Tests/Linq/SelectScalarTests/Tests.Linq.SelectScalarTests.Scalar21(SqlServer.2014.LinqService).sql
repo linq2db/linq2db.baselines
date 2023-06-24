@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	Len([p].[FirstName])
+	LEN(REPLACE([p].[FirstName],' ','.'))
 FROM
 	[Person] [p]
 
