@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	[_]
 SET
-	[_].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
+	[_].[LastName] = Convert(NVarChar(11), LEN(REPLACE(@name,' ','.')) + @idx)
 FROM
 	[Person] [_]
 WHERE
