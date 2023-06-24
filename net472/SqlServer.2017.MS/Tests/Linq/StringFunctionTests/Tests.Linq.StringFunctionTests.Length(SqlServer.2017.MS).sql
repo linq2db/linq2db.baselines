@@ -12,5 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) = @Length AND [p].[PersonID] = 1
+	LEN(REPLACE([p].[FirstName],' ','.')) = @Length AND
+	[p].[PersonID] = 1
 
