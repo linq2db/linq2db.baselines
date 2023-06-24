@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Len(Convert(NVarChar(31), [t].[MoneyValue])) > 0
+	LEN(REPLACE(Convert(NVarChar(31), [t].[MoneyValue]),' ','.')) > 0
 
