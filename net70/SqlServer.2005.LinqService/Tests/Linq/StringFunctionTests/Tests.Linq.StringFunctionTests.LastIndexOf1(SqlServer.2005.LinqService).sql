@@ -13,7 +13,7 @@ WHERE
 	CASE
 		WHEN CharIndex(N'p', [p].[LastName]) = 0
 			THEN -1
-		ELSE Len([p].[LastName]) - CharIndex(N'p', Reverse([p].[LastName]))
+		ELSE LEN(REPLACE([p].[LastName],' ','.')) - CharIndex(N'p', Reverse([p].[LastName]))
 	END = 2 AND
 	[p].[PersonID] = 1
 

@@ -19,6 +19,6 @@ WHERE
 	CASE
 		WHEN CharIndex(N'123', [p_1].[FirstName], 6) = 0
 			THEN -1
-		ELSE Len([p_1].[FirstName]) - CharIndex(N'321', Reverse(Substring([p_1].[FirstName], 6, Len([p_1].[FirstName]) - 5))) - 2
+		ELSE LEN(REPLACE([p_1].[FirstName],' ','.')) - CharIndex(N'321', Reverse(Substring([p_1].[FirstName], 6, LEN(REPLACE([p_1].[FirstName],' ','.')) - 5))) - 2
 	END = 8
 
