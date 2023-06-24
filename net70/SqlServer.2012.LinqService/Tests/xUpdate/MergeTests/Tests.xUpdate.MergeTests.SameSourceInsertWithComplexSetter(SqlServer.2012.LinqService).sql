@@ -255,7 +255,7 @@ VALUES
 (
 	10 + [Source].[Id],
 	123,
-	Len(@name) + @idx,
+	LEN(REPLACE(@name,' ','.')) + @idx,
 	[Source].[Field2],
 	999,
 	888

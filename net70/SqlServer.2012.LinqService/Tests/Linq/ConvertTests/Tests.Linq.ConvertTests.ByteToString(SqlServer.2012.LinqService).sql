@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [t]
 	) [p]
 WHERE
-	Len([p].[c1]) > 0
+	LEN(REPLACE([p].[c1],' ','.')) > 0
 
