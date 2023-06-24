@@ -1,6 +1,54 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue681Table"
+		(
+			ID      Int NOT NULL,
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_Issue681Table" PRIMARY KEY (ID)
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue681Table4"
+		(
+			ID      Int GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"Value" Int                              NOT NULL,
+
+			CONSTRAINT "PK_Issue681Table4" PRIMARY KEY (ID)
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 SELECT
 	current schema
 FROM
@@ -9,9 +57,132 @@ FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+INSERT INTO DB2INST1."Issue681Table"
+(
+	ID,
+	"Value"
+)
+VALUES
+(
+	@ID,
+	@Value
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 123
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+
+UPDATE
+	DB2INST1."Issue681Table"
+SET
+	DB2INST1."Issue681Table"."Value" = @Value
+WHERE
+	DB2INST1."Issue681Table".ID = @ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1".ID
+	"t1".ID,
+	"t1"."Value"
 FROM
-	DB2INST1."LinqDataTypes" "t1"
+	DB2INST1."Issue681Table" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+
+DELETE FROM
+	DB2INST1."Issue681Table" "t1"
+WHERE
+	"t1".ID = @ID
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 123
+
+MERGE INTO DB2INST1."Issue681Table" "t1"
+USING (SELECT @ID AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+(
+	"t1".ID = "s".ID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"t1"."Value" = @Value
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		ID,
+		"Value"
+	)
+	VALUES
+	(
+		@ID,
+		@Value
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+SELECT
+	ID
+FROM
+	NEW TABLE
+	(
+		INSERT INTO DB2INST1."Issue681Table4"
+		(
+			"Value"
+		)
+		VALUES
+		(
+			@Value
+		)
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE DB2INST1."Issue681Table2"
+(
+	ID      Int NOT NULL,
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE DB2INST1."Issue681Table2"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table"';
+END
 
