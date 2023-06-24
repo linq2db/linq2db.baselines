@@ -1,0 +1,77 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "IsNullOrEmptyTable"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "IsNullOrEmptyTable"
+		(
+			"Id"    Int           NOT NULL,
+			"Value" NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Value VarChar(3) -- String
+SET     @Value = '   '
+
+INSERT INTO "IsNullOrEmptyTable"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Value VarChar -- String
+SET     @Value = ''
+
+INSERT INTO "IsNullOrEmptyTable"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"p"."Id",
+	"p"."Value"
+FROM
+	"IsNullOrEmptyTable" "p"
+WHERE
+	CHARACTER_LENGTH("p"."Value",CODEUNITS32) = 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "IsNullOrEmptyTable"';
+END
+
