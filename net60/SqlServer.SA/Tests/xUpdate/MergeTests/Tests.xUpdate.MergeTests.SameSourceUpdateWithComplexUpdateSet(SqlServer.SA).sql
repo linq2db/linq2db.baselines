@@ -251,7 +251,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	[Target].[Field1] = [Target].[Field1] + [Source].[Field1],
-	[Target].[Field2] = Len(@name) + @idx,
+	[Target].[Field2] = LEN(REPLACE(@name,' ','.')) + @idx,
 	[Target].[Field3] = [Target].[Field3] + [Source].[Field3],
 	[Target].[Field4] = [Target].[Field4] + [Source].[Field4],
 	[Target].[Field5] = [Target].[Field5] + [Source].[Field5]

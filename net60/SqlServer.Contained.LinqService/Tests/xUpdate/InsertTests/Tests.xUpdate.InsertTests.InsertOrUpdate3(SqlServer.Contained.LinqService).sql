@@ -44,7 +44,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+		[t1].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([t1].[Diagnosis],' ','.')))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -72,7 +72,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[t1].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([t1].[Diagnosis],' ','.')) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -100,7 +100,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[t1].[Diagnosis] = Convert(NVarChar(11), LEN(REPLACE([t1].[Diagnosis],' ','.')) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(

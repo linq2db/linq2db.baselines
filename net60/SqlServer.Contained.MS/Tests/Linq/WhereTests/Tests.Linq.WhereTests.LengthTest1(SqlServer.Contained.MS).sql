@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	(Len([nm].[MiddleName]) <> 0 OR Len([nm].[MiddleName]) IS NULL)
+	(LEN(REPLACE([nm].[MiddleName],' ','.')) <> 0 OR LEN(REPLACE([nm].[MiddleName],' ','.')) IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

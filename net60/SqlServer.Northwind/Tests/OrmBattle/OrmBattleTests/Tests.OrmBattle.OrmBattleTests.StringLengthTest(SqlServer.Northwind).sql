@@ -99,5 +99,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	Len([c_1].[City]) = 7
+	LEN(REPLACE([c_1].[City],' ','.')) = 7
 
