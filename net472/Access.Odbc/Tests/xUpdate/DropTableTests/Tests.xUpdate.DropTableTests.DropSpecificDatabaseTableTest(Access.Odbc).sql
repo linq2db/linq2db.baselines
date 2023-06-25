@@ -6,7 +6,7 @@ DROP TABLE [DropTableTest]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-CREATE TABLE [Database\TestData].[DropTableTest]
+CREATE TABLE [Database\TestData.ODBC.mdb].[DropTableTest]
 (
 	[ID] Int NOT NULL
 )
@@ -14,7 +14,7 @@ CREATE TABLE [Database\TestData].[DropTableTest]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-INSERT INTO [Database\TestData].[DropTableTest]
+INSERT INTO [Database\TestData.ODBC.mdb].[DropTableTest]
 (
 	[ID]
 )
@@ -29,12 +29,12 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[Database\TestData].[DropTableTest] [t1]
+	[Database\TestData.ODBC.mdb].[DropTableTest] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [Database\TestData].[DropTableTest]
+DROP TABLE [Database\TestData.ODBC.mdb].[DropTableTest]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -42,5 +42,5 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[Database\TestData].[DropTableTest] [t1]
+	[Database\TestData.ODBC.mdb].[DropTableTest] [t1]
 
