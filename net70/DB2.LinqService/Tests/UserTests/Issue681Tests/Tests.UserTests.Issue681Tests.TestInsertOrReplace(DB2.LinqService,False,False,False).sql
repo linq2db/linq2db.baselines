@@ -1,0 +1,88 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue681Table"
+		(
+			ID      Int NOT NULL,
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_Issue681Table" PRIMARY KEY (ID)
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+MERGE INTO "Issue681Table" "t1"
+USING (SELECT @ID AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+(
+	"t1".ID = "s".ID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"t1"."Value" = @Value
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		ID,
+		"Value"
+	)
+	VALUES
+	(
+		@ID,
+		@Value
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 5
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+MERGE INTO "Issue681Table" "t1"
+USING (SELECT @ID AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+(
+	"t1".ID = "s".ID
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"t1"."Value" = @Value
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		ID,
+		"Value"
+	)
+	VALUES
+	(
+		@ID,
+		@Value
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table"';
+END
+
