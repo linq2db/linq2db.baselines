@@ -7,10 +7,12 @@ SELECT
 FROM
 	Parent c_1
 WHERE
-	NULL IN (
+	toInt32(1) IN (
 		SELECT
-			p.Value1
+			toInt32(1)
 		FROM
 			Parent p
+		WHERE
+			p.Value1 IS NULL
 	)
 
