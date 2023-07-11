@@ -15,7 +15,7 @@ FROM
 		WHERE
 			c_1."ParentID" = p."ParentID"
 		FOR SHARE
-	) p_1
+			) p_1
 WHERE
 	p_1."ParentID" < -100
 FOR SHARE

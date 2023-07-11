@@ -12,7 +12,7 @@ FROM
 			FROM
 				"Child" t1
 			FOR UPDATE
-		) c_1 ON p."ParentID" = c_1."ParentID"
+					) c_1 ON p."ParentID" = c_1."ParentID"
 FOR SHARE
 FOR KEY SHARE NOWAIT
 
