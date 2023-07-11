@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[t].[ParentID],
+	[t].[ChildID]
+FROM
+	[Child] [t]
+WITH OWNERACCESS OPTION
+UNION
+SELECT
+	[t_1].[ParentID],
+	[t_1].[ChildID]
+FROM
+	[Child] [t_1]
+WHERE
+	[t_1].[ChildID] < 10
+
