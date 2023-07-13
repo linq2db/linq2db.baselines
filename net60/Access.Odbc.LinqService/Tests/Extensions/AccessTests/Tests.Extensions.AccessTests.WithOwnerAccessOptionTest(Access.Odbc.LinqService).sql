@@ -12,6 +12,6 @@ FROM
 		FROM
 			[Parent] [p]
 		WITH OWNERACCESS OPTION
-			) [p_1]
+	) [p_1]
 WITH OWNERACCESS OPTION
 
