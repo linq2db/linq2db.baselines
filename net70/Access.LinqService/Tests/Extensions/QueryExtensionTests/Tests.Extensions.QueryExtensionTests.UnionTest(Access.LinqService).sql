@@ -6,7 +6,6 @@ SELECT
 	[t].[ChildID]
 FROM
 	[Child] [t]
-WITH OWNERACCESS OPTION
 UNION
 SELECT
 	[t_1].[ParentID],
@@ -15,4 +14,5 @@ FROM
 	[Child] [t_1]
 WHERE
 	[t_1].[ChildID] < 10
+WITH OWNERACCESS OPTION
 
