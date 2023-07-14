@@ -1,0 +1,16 @@
+﻿BeforeExecute
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	pmp1."ChildID"
+FROM
+	"Child" pmp1,
+	(
+		SELECT
+			pmp."ParentID"
+		FROM
+			"Child" pmp
+		GROUP BY
+			pmp."ParentID"
+	) t1
+
