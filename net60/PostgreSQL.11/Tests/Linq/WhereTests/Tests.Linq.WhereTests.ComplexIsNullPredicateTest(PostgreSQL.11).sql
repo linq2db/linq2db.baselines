@@ -13,11 +13,15 @@ SELECT
 					WHEN t1."MiddleName" = '123'
 						THEN True
 					ELSE False
-				END = (CASE
-					WHEN t1."MiddleName" = '1'
-						THEN 'test'
-					ELSE t1."MiddleName"
-				END = 'test')
+				END = CASE
+					WHEN CASE
+						WHEN t1."MiddleName" = '1'
+							THEN 'test'
+						ELSE t1."MiddleName"
+					END = 'test'
+						THEN True
+					ELSE False
+				END
 		)
 			THEN True
 		ELSE False
