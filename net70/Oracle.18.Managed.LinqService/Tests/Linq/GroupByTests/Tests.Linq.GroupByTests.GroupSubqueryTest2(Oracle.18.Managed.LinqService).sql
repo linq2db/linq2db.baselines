@@ -14,3 +14,173 @@ FROM
 			pmp."ParentID"
 	) t1
 
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID"
+FROM
+	"Child" t1
+GROUP BY
+	t1."ParentID"
+
