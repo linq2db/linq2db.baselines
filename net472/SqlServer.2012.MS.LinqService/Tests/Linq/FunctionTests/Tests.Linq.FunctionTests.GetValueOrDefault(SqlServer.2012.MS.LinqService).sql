@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @default Int -- Int32
+SET     @default = 0
+
+SELECT
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	Coalesce([p].[Value1], @default) > 0
+

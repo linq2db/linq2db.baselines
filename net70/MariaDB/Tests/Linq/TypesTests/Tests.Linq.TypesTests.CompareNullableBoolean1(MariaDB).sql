@@ -1,0 +1,34 @@
+﻿BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+SELECT
+	`t`.`ID`,
+	`t`.`MoneyValue`,
+	`t`.`DateTimeValue`,
+	`t`.`BoolValue`,
+	`t`.`GuidValue`,
+	`t`.`BinaryValue`,
+	`t`.`SmallIntValue`,
+	`t`.`StringValue`
+FROM
+	`LinqDataTypes` `t`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+DECLARE @param Bool -- Boolean
+SET     @param = 1
+
+SELECT
+	`t`.`ID`,
+	`t`.`MoneyValue`,
+	`t`.`DateTimeValue`,
+	`t`.`BoolValue`,
+	`t`.`GuidValue`,
+	`t`.`BinaryValue`,
+	`t`.`SmallIntValue`,
+	`t`.`StringValue`
+FROM
+	`LinqDataTypes` `t`
+WHERE
+	`t`.`BoolValue` = @param
+
