@@ -1,0 +1,108 @@
+﻿BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	lw_Parent.ParentID,
+	detail.ParentID,
+	detail.ChildID
+FROM
+	(
+		SELECT DISTINCT
+			t1.ParentID as ParentID
+		FROM
+			(
+				SELECT
+					x.ParentID as ParentID
+				FROM
+					Parent x
+				WHERE
+					x.ParentID = toInt32(3)
+				LIMIT toInt32(1)
+			) t1
+	) lw_Parent
+		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	x.ParentID,
+	x.Value1
+FROM
+	Parent x
+WHERE
+	x.ParentID = toInt32(3)
+LIMIT toInt32(1)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	lw_Parent.ParentID,
+	detail.ParentID,
+	detail.ChildID
+FROM
+	(
+		SELECT DISTINCT
+			t1.ParentID as ParentID
+		FROM
+			(
+				SELECT
+					x.ParentID as ParentID
+				FROM
+					Parent x
+				WHERE
+					x.ParentID = toInt32(3)
+				LIMIT toInt32(1)
+			) t1
+	) lw_Parent
+		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	x.ParentID,
+	x.Value1
+FROM
+	Parent x
+WHERE
+	x.ParentID = toInt32(3)
+LIMIT toInt32(1)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	lw_Parent.ParentID,
+	detail.ParentID,
+	detail.ChildID
+FROM
+	(
+		SELECT DISTINCT
+			t1.ParentID as ParentID
+		FROM
+			(
+				SELECT
+					x.ParentID as ParentID
+				FROM
+					Parent x
+				WHERE
+					x.ParentID = toInt32(3)
+				LIMIT toInt32(1)
+			) t1
+	) lw_Parent
+		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	x.ParentID,
+	x.Value1
+FROM
+	Parent x
+WHERE
+	x.ParentID = toInt32(3)
+LIMIT toInt32(1)
+
