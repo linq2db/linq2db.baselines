@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(ReadCommitted)
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	1
+FROM
+	"Parent" p
+
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
@@ -10,12 +16,56 @@ FROM
 	"Child" t1
 
 BeforeExecute
-DisposeTransaction
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	1
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	"Parent" p
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
 
