@@ -10,6 +10,8 @@ FROM
 	(
 		SELECT
 			' ' + CStr(Iif([e].[Value1] IS NULL, 0, [e].[Value1])) as [c1],
+			[e].[ParentID],
+			[e].[Value1],
 			(
 				SELECT
 					Sum([c_1].[ChildID])
