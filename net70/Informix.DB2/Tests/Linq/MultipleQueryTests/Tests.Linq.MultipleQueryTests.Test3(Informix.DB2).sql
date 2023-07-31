@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- Informix.DB2 Informix
+
+SELECT
+	1
+FROM
+	Parent p
+
 BeforeExecute
 -- Informix.DB2 Informix
 
@@ -10,12 +16,56 @@ FROM
 	Child t1
 
 BeforeExecute
-DisposeTransaction
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	1
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Parent p
+	Child t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
 
