@@ -2,6 +2,14 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	1
+FROM
+	[Parent] [p]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
@@ -11,7 +19,53 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	1
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
