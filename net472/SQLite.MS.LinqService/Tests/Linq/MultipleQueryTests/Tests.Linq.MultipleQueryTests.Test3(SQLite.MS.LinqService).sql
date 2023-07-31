@@ -2,6 +2,14 @@
 -- SQLite.MS SQLite
 
 SELECT
+	1
+FROM
+	[Parent] [p]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
@@ -11,7 +19,53 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	1
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
