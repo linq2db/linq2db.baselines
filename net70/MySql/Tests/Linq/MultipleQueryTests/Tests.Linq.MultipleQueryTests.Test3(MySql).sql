@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- MySql MySql.Official MySql
+
+SELECT
+	1
+FROM
+	`Parent` `p`
+
 BeforeExecute
 -- MySql MySql.Official MySql
 
@@ -10,12 +16,56 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
-DisposeTransaction
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
+
 BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	1
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
 FROM
-	`Parent` `p`
+	`Child` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
 
