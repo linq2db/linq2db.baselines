@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- SqlCe
+
+SELECT
+	1
+FROM
+	[Parent] [p]
+
 BeforeExecute
 -- SqlCe
 
@@ -10,12 +16,56 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
-DisposeTransaction
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
 BeforeExecute
 -- SqlCe
 
 SELECT
-	1
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t1]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
