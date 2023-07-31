@@ -31,7 +31,7 @@ END;
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
-SET     @:p1 = System.Object[]
+SET     @:p1 = {11,12}
 
 INSERT INTO "NativeIdentity" ("Field") VALUES (:p1)
 
