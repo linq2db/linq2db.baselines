@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- Firebird4 Firebird
+
+SELECT
+	1
+FROM
+	"Parent" "p"
+
 BeforeExecute
 -- Firebird4 Firebird
 
@@ -10,12 +16,56 @@ FROM
 	"Child" "t1"
 
 BeforeExecute
-DisposeTransaction
+-- Firebird4 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
 BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	1
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Parent" "p"
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird4 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
 
