@@ -10,6 +10,8 @@ FROM
 	(
 		SELECT
 			' ' || Cast(Coalesce("e"."Value1", 0) as NVarChar(11)) as "c1",
+			"e"."ParentID",
+			"e"."Value1",
 			(
 				SELECT
 					Sum("c_1"."ChildID")
