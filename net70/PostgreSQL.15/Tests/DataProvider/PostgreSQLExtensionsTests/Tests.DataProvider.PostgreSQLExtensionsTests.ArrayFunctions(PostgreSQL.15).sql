@@ -24,105 +24,105 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @:p1 -2147483629 -- Object
-SET     @:p1 = System.String[]
+SET     @:p1 = {'V01'}
 DECLARE @:p2 -2147483639 -- Object
-SET     @:p2 = System.Int32[]
+SET     @:p2 = {1}
 DECLARE @:p3 -2147483647 -- Object
-SET     @:p3 = System.Int64[]
+SET     @:p3 = {1}
 DECLARE @:p4 -2147483640 -- Object
-SET     @:p4 = System.Double[]
+SET     @:p4 = {1}
 DECLARE @:p5 -2147483635 -- Object
-SET     @:p5 = System.Decimal[]
+SET     @:p5 = {1}
 DECLARE @:p6 -2147483629 -- Object
-SET     @:p6 = System.String[]
+SET     @:p6 = {'V02','V03'}
 DECLARE @:p7 -2147483639 -- Object
-SET     @:p7 = System.Int32[]
+SET     @:p7 = {2,3}
 DECLARE @:p8 -2147483647 -- Object
-SET     @:p8 = System.Int64[]
+SET     @:p8 = {2,3}
 DECLARE @:p9 -2147483640 -- Object
-SET     @:p9 = System.Double[]
+SET     @:p9 = {2,3}
 DECLARE @:p10 -2147483635 -- Object
-SET     @:p10 = System.Decimal[]
+SET     @:p10 = {2,3}
 DECLARE @:p11 -2147483629 -- Object
-SET     @:p11 = System.String[]
+SET     @:p11 = {'V03','V04','V05'}
 DECLARE @:p12 -2147483639 -- Object
-SET     @:p12 = System.Int32[]
+SET     @:p12 = {3,4,5}
 DECLARE @:p13 -2147483647 -- Object
-SET     @:p13 = System.Int64[]
+SET     @:p13 = {3,4,5}
 DECLARE @:p14 -2147483640 -- Object
-SET     @:p14 = System.Double[]
+SET     @:p14 = {3,4,5}
 DECLARE @:p15 -2147483635 -- Object
-SET     @:p15 = System.Decimal[]
+SET     @:p15 = {3,4,5}
 DECLARE @:p16 -2147483629 -- Object
-SET     @:p16 = System.String[]
+SET     @:p16 = {'V04','V05','V06','V07'}
 DECLARE @:p17 -2147483639 -- Object
-SET     @:p17 = System.Int32[]
+SET     @:p17 = {4,5,6,7}
 DECLARE @:p18 -2147483647 -- Object
-SET     @:p18 = System.Int64[]
+SET     @:p18 = {4,5,6,7}
 DECLARE @:p19 -2147483640 -- Object
-SET     @:p19 = System.Double[]
+SET     @:p19 = {4,5,6,7}
 DECLARE @:p20 -2147483635 -- Object
-SET     @:p20 = System.Decimal[]
+SET     @:p20 = {4,5,6,7}
 DECLARE @:p21 -2147483629 -- Object
-SET     @:p21 = System.String[]
+SET     @:p21 = {'V05','V06','V07','V08','V09'}
 DECLARE @:p22 -2147483639 -- Object
-SET     @:p22 = System.Int32[]
+SET     @:p22 = {5,6,7,8,9}
 DECLARE @:p23 -2147483647 -- Object
-SET     @:p23 = System.Int64[]
+SET     @:p23 = {5,6,7,8,9}
 DECLARE @:p24 -2147483640 -- Object
-SET     @:p24 = System.Double[]
+SET     @:p24 = {5,6,7,8,9}
 DECLARE @:p25 -2147483635 -- Object
-SET     @:p25 = System.Decimal[]
+SET     @:p25 = {5,6,7,8,9}
 DECLARE @:p26 -2147483629 -- Object
-SET     @:p26 = System.String[]
+SET     @:p26 = {'V06','V07','V08','V09','V10','V11'}
 DECLARE @:p27 -2147483639 -- Object
-SET     @:p27 = System.Int32[]
+SET     @:p27 = {6,7,8,9,10,11}
 DECLARE @:p28 -2147483647 -- Object
-SET     @:p28 = System.Int64[]
+SET     @:p28 = {6,7,8,9,10,11}
 DECLARE @:p29 -2147483640 -- Object
-SET     @:p29 = System.Double[]
+SET     @:p29 = {6,7,8,9,10,11}
 DECLARE @:p30 -2147483635 -- Object
-SET     @:p30 = System.Decimal[]
+SET     @:p30 = {6,7,8,9,10,11}
 DECLARE @:p31 -2147483629 -- Object
-SET     @:p31 = System.String[]
+SET     @:p31 = {'V07','V08','V09','V10','V11','V12','V13'}
 DECLARE @:p32 -2147483639 -- Object
-SET     @:p32 = System.Int32[]
+SET     @:p32 = {7,8,9,10,11,12,13}
 DECLARE @:p33 -2147483647 -- Object
-SET     @:p33 = System.Int64[]
+SET     @:p33 = {7,8,9,10,11,12,13}
 DECLARE @:p34 -2147483640 -- Object
-SET     @:p34 = System.Double[]
+SET     @:p34 = {7,8,9,10,11,12,13}
 DECLARE @:p35 -2147483635 -- Object
-SET     @:p35 = System.Decimal[]
+SET     @:p35 = {7,8,9,10,11,12,13}
 DECLARE @:p36 -2147483629 -- Object
-SET     @:p36 = System.String[]
+SET     @:p36 = {'V08','V09','V10','V11','V12','V13','V14','V15'}
 DECLARE @:p37 -2147483639 -- Object
-SET     @:p37 = System.Int32[]
+SET     @:p37 = {8,9,10,11,12,13,14,15}
 DECLARE @:p38 -2147483647 -- Object
-SET     @:p38 = System.Int64[]
+SET     @:p38 = {8,9,10,11,12,13,14,15}
 DECLARE @:p39 -2147483640 -- Object
-SET     @:p39 = System.Double[]
+SET     @:p39 = {8,9,10,11,12,13,14,15}
 DECLARE @:p40 -2147483635 -- Object
-SET     @:p40 = System.Decimal[]
+SET     @:p40 = {8,9,10,11,12,13,14,15}
 DECLARE @:p41 -2147483629 -- Object
-SET     @:p41 = System.String[]
+SET     @:p41 = {'V09','V10','V11','V12','V13','V14','V15','V16','V17'}
 DECLARE @:p42 -2147483639 -- Object
-SET     @:p42 = System.Int32[]
+SET     @:p42 = {9,10,11,12,13,14,15,16,17}
 DECLARE @:p43 -2147483647 -- Object
-SET     @:p43 = System.Int64[]
+SET     @:p43 = {9,10,11,12,13,14,15,16,17}
 DECLARE @:p44 -2147483640 -- Object
-SET     @:p44 = System.Double[]
+SET     @:p44 = {9,10,11,12,13,14,15,16,17}
 DECLARE @:p45 -2147483635 -- Object
-SET     @:p45 = System.Decimal[]
+SET     @:p45 = {9,10,11,12,13,14,15,16,17}
 DECLARE @:p46 -2147483629 -- Object
-SET     @:p46 = System.String[]
+SET     @:p46 = {'V10','V11','V12','V13','V14','V15','V16','V17','V18','V19'}
 DECLARE @:p47 -2147483639 -- Object
-SET     @:p47 = System.Int32[]
+SET     @:p47 = {10,11,12,13,14,15,16,17,18,19}
 DECLARE @:p48 -2147483647 -- Object
-SET     @:p48 = System.Int64[]
+SET     @:p48 = {10,11,12,13,14,15,16,17,18,19}
 DECLARE @:p49 -2147483640 -- Object
-SET     @:p49 = System.Double[]
+SET     @:p49 = {10,11,12,13,14,15,16,17,18,19}
 DECLARE @:p50 -2147483635 -- Object
-SET     @:p50 = System.Decimal[]
+SET     @:p50 = {10,11,12,13,14,15,16,17,18,19}
 
 INSERT INTO "SampleClass"
 (
@@ -153,7 +153,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @arr -2147483639 -- Object
-SET     @arr = System.Int32[]
+SET     @arr = {1,2,3}
 
 SELECT
 	t1."StrArray" || t2."StrArray",
