@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	1
+FROM
+	[Parent] [p]
+
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -10,12 +16,56 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
-DisposeTransaction
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	1
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
