@@ -1,5 +1,11 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
+-- Sybase.Managed Sybase
+
+SELECT
+	1
+FROM
+	[Parent] [p]
+
 BeforeExecute
 -- Sybase.Managed Sybase
 
@@ -10,12 +16,56 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
-DisposeTransaction
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	1
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
