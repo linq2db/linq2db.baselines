@@ -19,8 +19,7 @@ BeforeExecute
 -- SqlServer.2014
 DECLARE @NVarChar NVarChar(5000) -- String
 SET     @NVarChar = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'
--- value above truncated for logging, actual length is 5000
-
+-- value above truncated for logging
 INSERT INTO [AllTypesCustomMaxLength]
 (
 	[NVarChar]
