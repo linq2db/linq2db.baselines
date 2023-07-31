@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @arr VarBinary(4) -- Binary
-SET     @arr = System.Byte[]
+SET     @arr = {1,2,3,4}
 
 INSERT INTO LinqDataTypes
 (

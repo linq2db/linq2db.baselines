@@ -13,7 +13,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0000'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {0}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 0
 DECLARE @IntValue Integer(4) -- Int32
@@ -67,7 +67,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0001'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {1}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue Integer(4) -- Int32
@@ -121,7 +121,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0002'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {2}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 2
 DECLARE @IntValue Integer(4) -- Int32
@@ -175,7 +175,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0003'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {3}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 3
 DECLARE @IntValue Integer(4) -- Int32
@@ -229,7 +229,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0004'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {4}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 4
 DECLARE @IntValue Integer(4) -- Int32
@@ -283,7 +283,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0005'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {5}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 5
 DECLARE @IntValue Integer(4) -- Int32
@@ -337,7 +337,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0006'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {6}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 6
 DECLARE @IntValue Integer(4) -- Int32
@@ -391,7 +391,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0007'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {7}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 7
 DECLARE @IntValue Integer(4) -- Int32
@@ -445,7 +445,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0008'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {8}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 8
 DECLARE @IntValue Integer(4) -- Int32
@@ -499,7 +499,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '233bf399-9710-4e79-873d-2ec7bf1e0009'
 DECLARE @BinaryValue VarBinary(1) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {9}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 9
 DECLARE @IntValue Integer(4) -- Int32

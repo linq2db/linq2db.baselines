@@ -18,9 +18,9 @@ CREATE TABLE IF NOT EXISTS Issue1303
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = System.Byte[]
+SET     @Array = {1,2,3}
 DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = System.Byte[]
+SET     @Binary = {4,5}
 
 INSERT INTO Issue1303
 (

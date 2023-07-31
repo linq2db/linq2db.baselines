@@ -443,7 +443,7 @@ INSERT BULK InheritanceChild
 BeforeExecute
 --  Informix.DB2 Informix
 DECLARE @blob VarBinary(2) -- Binary
-SET     @blob = System.Byte[]
+SET     @blob = {1,2}
 DECLARE @text VarChar(255) -- String
 SET     @text = 'BBBBB'
 
