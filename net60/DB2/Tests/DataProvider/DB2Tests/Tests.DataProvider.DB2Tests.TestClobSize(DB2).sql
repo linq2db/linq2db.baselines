@@ -3,6 +3,7 @@
 DECLARE @data VarChar(100000) -- String
 SET     @data = ' !"#$%&''()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæç'
 -- value above truncated for logging
+
 INSERT INTO ALLTYPES
 (
 	INTDATATYPE,
