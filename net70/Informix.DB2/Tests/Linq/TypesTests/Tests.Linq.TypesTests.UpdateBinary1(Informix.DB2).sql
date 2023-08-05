@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {1,2,3,4,5}
 
 UPDATE
 	LinqDataTypes

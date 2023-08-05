@@ -19,7 +19,7 @@ BeforeExecute
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
-SET     @BlobValue = System.Byte[]
+SET     @BlobValue = {1,2,3}
 
 INSERT INTO BlobClass
 (
@@ -46,7 +46,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BlobValue VarBinary(3) -- Binary
-SET     @BlobValue = System.Byte[]
+SET     @BlobValue = {3,2,1}
 
 UPDATE
 	BlobClass

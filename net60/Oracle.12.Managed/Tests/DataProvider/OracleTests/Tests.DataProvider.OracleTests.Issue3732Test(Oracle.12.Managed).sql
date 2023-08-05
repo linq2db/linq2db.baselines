@@ -30,7 +30,8 @@ END;
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
-SET     @:p1 = System.Object[]
+SET     @:p1 = {1,2,3,4,5,6,7,8}
+-- value above truncated for logging
 
 INSERT INTO BULKCOPYTABLE (ID) VALUES (:p1)
 

@@ -19,7 +19,7 @@ BeforeExecute
 -- SqlServer.2008
 DECLARE @VarChar VarChar(10000) -- AnsiString
 SET     @VarChar = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
--- value above truncated for logging, actual length is 10000
+-- value above truncated for logging
 
 INSERT INTO [AllTypesCustomMaxLength]
 (

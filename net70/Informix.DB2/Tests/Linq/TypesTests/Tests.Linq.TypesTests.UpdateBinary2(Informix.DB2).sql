@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {1,2,3,4,5}
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {5,4,3,2,1}
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 2
 

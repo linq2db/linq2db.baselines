@@ -19,7 +19,7 @@ SET     @BoolValue = 't'
 DECLARE @GuidValue Char(36) -- StringFixedLength
 SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @BinaryValue VarBinary(4) -- Binary
-SET     @BinaryValue = System.Byte[]
+SET     @BinaryValue = {1,2,3,4}
 DECLARE @SmallIntValue SmallInt(2) -- Int16
 SET     @SmallIntValue = 0
 

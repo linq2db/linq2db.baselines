@@ -14,9 +14,9 @@ SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @:p1 Int32
-SET     @:p1 = System.Object[]
+SET     @:p1 = {17,18,19,20}
 DECLARE @:p2 Varchar2 -- String
-SET     @:p2 = System.Object[]
+SET     @:p2 = {'Value','Value','Value','Value'}
 
 INSERT INTO SEQUENCETEST (ID, VALUE) VALUES (:p1, :p2)
 
