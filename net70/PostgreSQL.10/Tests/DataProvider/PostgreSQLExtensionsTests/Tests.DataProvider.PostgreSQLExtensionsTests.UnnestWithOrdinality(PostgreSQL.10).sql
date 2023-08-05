@@ -104,25 +104,35 @@ SET     @:p39 = {8,9,10,11,12,13,14,15}
 DECLARE @:p40 -2147483635 -- Object
 SET     @:p40 = {8,9,10,11,12,13,14,15}
 DECLARE @:p41 -2147483629 -- Object
-SET     @:p41 = {'V09','V10','V11','V12','V13','V14','V15','V16','V17'}
+SET     @:p41 = {'V09','V10','V11','V12','V13','V14','V15','V16'}
+-- value above truncated for logging
 DECLARE @:p42 -2147483639 -- Object
-SET     @:p42 = {9,10,11,12,13,14,15,16,17}
+SET     @:p42 = {9,10,11,12,13,14,15,16}
+-- value above truncated for logging
 DECLARE @:p43 -2147483647 -- Object
-SET     @:p43 = {9,10,11,12,13,14,15,16,17}
+SET     @:p43 = {9,10,11,12,13,14,15,16}
+-- value above truncated for logging
 DECLARE @:p44 -2147483640 -- Object
-SET     @:p44 = {9,10,11,12,13,14,15,16,17}
+SET     @:p44 = {9,10,11,12,13,14,15,16}
+-- value above truncated for logging
 DECLARE @:p45 -2147483635 -- Object
-SET     @:p45 = {9,10,11,12,13,14,15,16,17}
+SET     @:p45 = {9,10,11,12,13,14,15,16}
+-- value above truncated for logging
 DECLARE @:p46 -2147483629 -- Object
-SET     @:p46 = {'V10','V11','V12','V13','V14','V15','V16','V17','V18','V19'}
+SET     @:p46 = {'V10','V11','V12','V13','V14','V15','V16','V17'}
+-- value above truncated for logging
 DECLARE @:p47 -2147483639 -- Object
-SET     @:p47 = {10,11,12,13,14,15,16,17,18,19}
+SET     @:p47 = {10,11,12,13,14,15,16,17}
+-- value above truncated for logging
 DECLARE @:p48 -2147483647 -- Object
-SET     @:p48 = {10,11,12,13,14,15,16,17,18,19}
+SET     @:p48 = {10,11,12,13,14,15,16,17}
+-- value above truncated for logging
 DECLARE @:p49 -2147483640 -- Object
-SET     @:p49 = {10,11,12,13,14,15,16,17,18,19}
+SET     @:p49 = {10,11,12,13,14,15,16,17}
+-- value above truncated for logging
 DECLARE @:p50 -2147483635 -- Object
-SET     @:p50 = {10,11,12,13,14,15,16,17,18,19}
+SET     @:p50 = {10,11,12,13,14,15,16,17}
+-- value above truncated for logging
 
 INSERT INTO "SampleClass"
 (
