@@ -21,6 +21,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @default DateTime2
 SET     @default = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @default_1 DateTime2
+SET     @default_1 = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
@@ -32,7 +34,7 @@ FROM
 	(
 		SELECT
 			DatePart(year, Coalesce([n].[DATUM], @default)) as [Key_1],
-			DatePart(month, Coalesce([n].[DATUM], @default)) as [Key_2],
+			DatePart(month, Coalesce([n].[DATUM], @default_1)) as [Key_2],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]

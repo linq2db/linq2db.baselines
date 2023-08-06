@@ -97,6 +97,8 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
+DECLARE @take_2 Int -- Int32
+SET     @take_2 = 1
 
 SELECT
 	[t2].[ID3_1],
@@ -118,7 +120,7 @@ FROM
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
-						SELECT TOP (@take_1)
+						SELECT TOP (@take_2)
 							[x].[ID3]
 						FROM
 							[TABLE3] [x]
