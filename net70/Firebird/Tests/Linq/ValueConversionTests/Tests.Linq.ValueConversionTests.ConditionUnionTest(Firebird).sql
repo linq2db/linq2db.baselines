@@ -63,6 +63,10 @@ DECLARE @EnumNullable VarChar -- String
 SET     @EnumNullable = NULL
 DECLARE @EnumNullable_1 VarChar -- String
 SET     @EnumNullable_1 = NULL
+DECLARE @EnumNullable_2 VarChar -- String
+SET     @EnumNullable_2 = NULL
+DECLARE @EnumNullable_3 VarChar -- String
+SET     @EnumNullable_3 = NULL
 
 SELECT
 	CASE
@@ -75,7 +79,7 @@ FROM
 UNION ALL
 SELECT
 	CASE
-		WHEN ("t1_1"."EnumNullable" <> Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) OR "t1_1"."EnumNullable" IS NULL AND Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NOT NULL OR "t1_1"."EnumNullable" IS NOT NULL AND Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NULL)
+		WHEN ("t1_1"."EnumNullable" <> Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) OR "t1_1"."EnumNullable" IS NULL AND Cast(@EnumNullable_2 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NOT NULL OR "t1_1"."EnumNullable" IS NOT NULL AND Cast(@EnumNullable_3 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NULL)
 			THEN "t1_1"."EnumNullable"
 		ELSE "t1_1"."Enum"
 	END
