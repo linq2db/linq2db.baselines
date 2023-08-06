@@ -35,49 +35,57 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value Integer -- Int32
 SET     @value = 4
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value Integer -- Int32
 SET     @value = 4
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value Integer -- Int32
 SET     @value = 4
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value Integer -- Int32
 SET     @value = 4
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 4
 
 SELECT
 	Count(*)
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase

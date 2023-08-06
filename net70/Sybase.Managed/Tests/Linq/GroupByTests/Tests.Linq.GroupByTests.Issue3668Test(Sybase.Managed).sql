@@ -45,6 +45,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @LastName UniVarChar(4) -- String
 SET     @LastName = 'test'
+DECLARE @LastName_1 UniVarChar(4) -- String
+SET     @LastName_1 = 'test'
 DECLARE @p Integer -- Int32
 SET     @p = 2
 DECLARE @ID_1 Integer -- Int32
@@ -59,6 +61,6 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName AND [x].[PersonID] = @p) AND
+	([x].[PersonID] = @ID AND [x].[LastName] <> @LastName OR [x].[FirstName] <> @LastName_1 AND [x].[PersonID] = @p) AND
 	[x].[PersonID] = @ID_1
 

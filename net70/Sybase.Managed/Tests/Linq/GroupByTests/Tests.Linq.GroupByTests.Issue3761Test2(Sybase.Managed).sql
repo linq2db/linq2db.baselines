@@ -24,8 +24,14 @@ BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @default DateTime
 SET     @default = '0001-01-01'
+DECLARE @default_1 DateTime
+SET     @default_1 = '0001-01-01'
 DECLARE @DATUM DateTime
 SET     @DATUM = '2019-01-01'
+DECLARE @default_2 DateTime
+SET     @default_2 = '0001-01-01'
+DECLARE @default_3 DateTime
+SET     @default_3 = '0001-01-01'
 
 SELECT
 	[t1].[Year_1],
@@ -35,7 +41,7 @@ FROM
 	(
 		SELECT
 			DatePart(year, Coalesce([n].[DATUM], @default)) as [Year_1],
-			DatePart(month, Coalesce([n].[DATUM], @default)) as [Month_1],
+			DatePart(month, Coalesce([n].[DATUM], @default_1)) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
@@ -53,8 +59,8 @@ SELECT
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n_1].[DATUM], @default)) as [Year_1],
-			DatePart(month, Coalesce([n_1].[DATUM], @default)) as [Month_1],
+			DatePart(year, Coalesce([n_1].[DATUM], @default_2)) as [Year_1],
+			DatePart(month, Coalesce([n_1].[DATUM], @default_3)) as [Month_1],
 			[n_1].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n_1]
