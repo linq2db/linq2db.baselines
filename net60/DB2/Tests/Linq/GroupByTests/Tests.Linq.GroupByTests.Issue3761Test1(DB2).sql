@@ -28,6 +28,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @default Timestamp(20) -- DateTime
 SET     @default = '0001-01-01-00.00.00.000000'
+DECLARE @default_1 Timestamp(20) -- DateTime
+SET     @default_1 = '0001-01-01-00.00.00.000000'
 DECLARE @DATUM Timestamp(20) -- DateTime
 SET     @DATUM = '2019-01-01-00.00.00.000000'
 
@@ -39,7 +41,7 @@ FROM
 	(
 		SELECT
 			To_Number(To_Char(Coalesce("n".DATUM, @default), 'YYYY')) as "Key_1",
-			To_Number(To_Char(Coalesce("n".DATUM, @default), 'MM')) as "Key_2",
+			To_Number(To_Char(Coalesce("n".DATUM, @default_1), 'MM')) as "Key_2",
 			"n".SKUPAJ
 		FROM
 			"Issue3761Table" "n"

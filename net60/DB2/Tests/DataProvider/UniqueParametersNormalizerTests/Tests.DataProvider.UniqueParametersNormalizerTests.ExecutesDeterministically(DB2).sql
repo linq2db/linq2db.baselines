@@ -1,0 +1,118 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+DECLARE GLOBAL TEMPORARY TABLE SESSION."table1"
+(
+	"Id"     Int           NOT NULL,
+	"Field1" NVarChar(255)     NULL
+)
+ON COMMIT PRESERVE ROWS
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+DECLARE GLOBAL TEMPORARY TABLE SESSION."table2"
+(
+	"Table1Id" Int           NOT NULL,
+	"Field2"   NVarChar(255)     NULL
+)
+ON COMMIT PRESERVE ROWS
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+DECLARE GLOBAL TEMPORARY TABLE SESSION."table3"
+(
+	"Table1Id" Int           NOT NULL,
+	"Field3"   NVarChar(255)     NULL
+)
+ON COMMIT PRESERVE ROWS
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+DECLARE @search VarChar(5) -- String
+SET     @search = 'test%'
+DECLARE @search_1 VarChar(4) -- String
+SET     @search_1 = 'test'
+DECLARE @search_2 VarChar(5) -- String
+SET     @search_2 = 'test%'
+
+SELECT
+	"row1"."Id"
+FROM
+	SESSION."table1" "row1"
+		INNER JOIN SESSION."table2" "row2" ON "row1"."Id" = "row2"."Table1Id"
+WHERE
+	"row2"."Field2" LIKE @search ESCAPE '~'
+UNION
+SELECT
+	"row1_1"."Id"
+FROM
+	SESSION."table1" "row1_1"
+		INNER JOIN SESSION."table3" "row3" ON "row1_1"."Id" = "row3"."Table1Id"
+WHERE
+	"row3"."Field3" = @search_1
+UNION
+SELECT
+	"row1_2"."Id"
+FROM
+	SESSION."table1" "row1_2"
+WHERE
+	"row1_2"."Field1" LIKE @search_2 ESCAPE '~'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+DECLARE @search VarChar(5) -- String
+SET     @search = 'test%'
+DECLARE @search_1 VarChar(4) -- String
+SET     @search_1 = 'test'
+DECLARE @search_2 VarChar(5) -- String
+SET     @search_2 = 'test%'
+
+SELECT
+	"row1"."Id"
+FROM
+	SESSION."table1" "row1"
+		INNER JOIN SESSION."table2" "row2" ON "row1"."Id" = "row2"."Table1Id"
+WHERE
+	"row2"."Field2" LIKE @search ESCAPE '~'
+UNION
+SELECT
+	"row1_1"."Id"
+FROM
+	SESSION."table1" "row1_1"
+		INNER JOIN SESSION."table3" "row3" ON "row1_1"."Id" = "row3"."Table1Id"
+WHERE
+	"row3"."Field3" = @search_1
+UNION
+SELECT
+	"row1_2"."Id"
+FROM
+	SESSION."table1" "row1_2"
+WHERE
+	"row1_2"."Field1" LIKE @search_2 ESCAPE '~'
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."table3"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."table2"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."table1"';
+END
+
