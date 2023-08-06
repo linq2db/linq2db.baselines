@@ -20,6 +20,8 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @default  -- DateTime
 SET     @default = '0001-01-01'
+DECLARE @default_1  -- DateTime
+SET     @default_1 = '0001-01-01'
 DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 
@@ -31,7 +33,7 @@ FROM
 	(
 		SELECT
 			Cast(StrFTime('%Y', Coalesce([n].[DATUM], @default)) as int) as [Key_1],
-			Cast(StrFTime('%m', Coalesce([n].[DATUM], @default)) as int) as [Key_2],
+			Cast(StrFTime('%m', Coalesce([n].[DATUM], @default_1)) as int) as [Key_2],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
