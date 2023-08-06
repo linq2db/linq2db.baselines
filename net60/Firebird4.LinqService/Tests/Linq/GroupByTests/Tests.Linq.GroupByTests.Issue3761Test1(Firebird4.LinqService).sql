@@ -28,6 +28,8 @@ BeforeExecute
 -- Firebird4 Firebird
 DECLARE @default TimeStamp -- DateTime
 SET     @default = CAST('0001-01-01' AS timestamp)
+DECLARE @default_1 TimeStamp -- DateTime
+SET     @default_1 = CAST('0001-01-01' AS timestamp)
 DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = CAST('2019-01-01' AS timestamp)
 
@@ -39,7 +41,7 @@ FROM
 	(
 		SELECT
 			Cast(Floor(Extract(year from Coalesce("n".DATUM, Cast(@default as TimeStamp)))) as int) as "Key_1",
-			Cast(Floor(Extract(month from Coalesce("n".DATUM, Cast(@default as TimeStamp)))) as int) as "Key_2",
+			Cast(Floor(Extract(month from Coalesce("n".DATUM, Cast(@default_1 as TimeStamp)))) as int) as "Key_2",
 			"n".SKUPAJ
 		FROM
 			"Issue3761Table" "n"
