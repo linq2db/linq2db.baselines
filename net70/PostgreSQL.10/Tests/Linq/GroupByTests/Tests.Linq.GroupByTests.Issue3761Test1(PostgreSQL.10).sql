@@ -20,6 +20,8 @@ BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @default Timestamp -- DateTime2
 SET     @default = '0001-01-01'::date
+DECLARE @default_1 Timestamp -- DateTime2
+SET     @default_1 = '0001-01-01'::date
 DECLARE @DATUM Timestamp -- DateTime2
 SET     @DATUM = '2019-01-01'::date
 
@@ -31,7 +33,7 @@ FROM
 	(
 		SELECT
 			Cast(Floor(Extract(year from Coalesce(n."DATUM", :default))) as int) as "Key_1",
-			Cast(Floor(Extract(month from Coalesce(n."DATUM", :default))) as int) as "Key_2",
+			Cast(Floor(Extract(month from Coalesce(n."DATUM", :default_1))) as int) as "Key_2",
 			n."SKUPAJ"
 		FROM
 			"Issue3761Table" n
