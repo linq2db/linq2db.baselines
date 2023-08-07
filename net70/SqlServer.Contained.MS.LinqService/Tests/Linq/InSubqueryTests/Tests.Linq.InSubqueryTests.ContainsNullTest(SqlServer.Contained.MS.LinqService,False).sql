@@ -11,8 +11,6 @@ SELECT
 			[c_1].[Value1] IS NULL AND
 			[c_1].[Value1] IS NULL AND
 			[c_1].[Value1] IS NULL AND
-			[c_1].[Value1] IS NULL AND
-			[c_1].[Value1] IS NULL AND
 			[c_1].[Value1] IS NULL
 	), 1, 0)
 
