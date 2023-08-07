@@ -107,6 +107,8 @@ WHERE
 			[p].[ID] = [t].[ID] AND
 			[p].[ID] = [t].[ID] AND
 			[p].[ID] = [t].[ID] AND
+			[p].[ID] = [t].[ID] AND
+			[p].[ID] = [t].[ID] AND
 			[p].[ID] = [t].[ID]
 	)
 

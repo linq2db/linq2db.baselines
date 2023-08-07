@@ -118,7 +118,10 @@ WHERE
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] = [t].[ID] AND [p].[ID] = [t].[ID]
+			[p].[ID] = [t].[ID] AND
+			[p].[ID] = [t].[ID] AND
+			[p].[ID] = [t].[ID] AND
+			[p].[ID] = [t].[ID]
 	)
 
 BeforeExecute
