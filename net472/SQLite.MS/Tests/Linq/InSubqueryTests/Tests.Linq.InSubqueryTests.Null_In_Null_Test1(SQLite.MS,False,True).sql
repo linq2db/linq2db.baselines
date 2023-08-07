@@ -70,7 +70,6 @@ WHERE
 		FROM
 			[test_in_2] [p]
 		WHERE
-			([p].[ID] = [t].[ID] OR [p].[ID] IS NULL AND [t].[ID] IS NULL) AND
 			([p].[ID] = [t].[ID] OR [p].[ID] IS NULL AND [t].[ID] IS NULL)
 	)
 
