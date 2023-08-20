@@ -65,8 +65,6 @@ SELECT N'Prod 5',1,N'q 5' UNION ALL
 SELECT N'Prod 6',1,N'q 6'
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -79,8 +77,6 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
