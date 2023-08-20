@@ -1,11 +1,6 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
-DROP TABLE [Categories]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
 CREATE TABLE [Categories]
 (
 	[CategoryID]   Int            NOT NULL IDENTITY,
@@ -202,8 +197,6 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
@@ -216,8 +209,6 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON ([lw_Category].[CategoryID] = [detail].[CategoryID])
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
 
