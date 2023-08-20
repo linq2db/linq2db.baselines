@@ -294,3 +294,8 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable] [t1]
 
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable]
+
