@@ -33,5 +33,10 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS temp.[CreateIfNotExistsTable]
 
