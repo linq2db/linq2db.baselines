@@ -79,3 +79,15 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#DestinationTable_destination]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NOT NULL)
+	DROP TABLE [TableWithData_source]
+
