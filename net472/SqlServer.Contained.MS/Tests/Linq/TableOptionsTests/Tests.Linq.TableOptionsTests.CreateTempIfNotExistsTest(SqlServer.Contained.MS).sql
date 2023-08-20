@@ -34,5 +34,10 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
 DROP TABLE IF EXISTS [tempdb]..[#CreateIfNotExistsTable]
 
