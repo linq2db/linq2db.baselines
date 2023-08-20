@@ -53,3 +53,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [CreateIfNotExistsTable]
 
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
+	DROP TABLE [CreateIfNotExistsTable]
+
