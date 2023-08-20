@@ -34,5 +34,10 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2016
 
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
+
+BeforeExecute
+-- SqlServer.2016
+
 DROP TABLE IF EXISTS [tempdb]..[#CreateIfNotExistsTable]
 

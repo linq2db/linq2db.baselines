@@ -78,3 +78,13 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [TableWithData_source]
+
