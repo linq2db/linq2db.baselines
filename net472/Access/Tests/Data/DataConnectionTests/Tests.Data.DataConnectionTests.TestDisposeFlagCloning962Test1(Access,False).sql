@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [Categories]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [Categories]
 (
 	[CategoryID]   Int            NOT NULL IDENTITY,
@@ -197,6 +202,8 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
@@ -209,6 +216,8 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON ([lw_Category].[CategoryID] = [detail].[CategoryID])
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- Access AccessOleDb
 
