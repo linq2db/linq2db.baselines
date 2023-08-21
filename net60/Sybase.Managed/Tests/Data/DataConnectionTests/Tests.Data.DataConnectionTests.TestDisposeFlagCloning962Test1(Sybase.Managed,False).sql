@@ -69,8 +69,6 @@ SELECT 'Prod 5',1,'q 5' UNION ALL
 SELECT 'Prod 6',1,'q 6'
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -83,8 +81,6 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
 

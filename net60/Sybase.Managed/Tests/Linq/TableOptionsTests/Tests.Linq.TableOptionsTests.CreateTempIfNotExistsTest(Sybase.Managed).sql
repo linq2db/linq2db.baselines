@@ -37,6 +37,12 @@ IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
+IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NOT NULL)
+	DROP TABLE [CreateIfNotExistsTable]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'#CreateIfNotExistsTable') IS NOT NULL)
 	DROP TABLE #CreateIfNotExistsTable
 
