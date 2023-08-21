@@ -65,6 +65,8 @@ VALUES
 (N'Prod 6',1,N'q 6')
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -77,6 +79,8 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
 
