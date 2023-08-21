@@ -202,8 +202,6 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -216,8 +214,6 @@ FROM
 	"Categories" "lw_Category"
 		INNER JOIN "Products" "detail" ON "lw_Category"."CategoryID" = "detail"."CategoryID"
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
