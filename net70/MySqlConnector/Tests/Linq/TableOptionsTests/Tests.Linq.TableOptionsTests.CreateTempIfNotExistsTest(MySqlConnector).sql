@@ -35,3 +35,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
+BeforeExecute
+-- MySqlConnector MySql
+
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+
