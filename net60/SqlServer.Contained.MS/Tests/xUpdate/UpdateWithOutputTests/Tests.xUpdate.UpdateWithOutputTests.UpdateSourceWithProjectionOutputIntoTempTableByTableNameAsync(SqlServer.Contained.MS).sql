@@ -78,3 +78,13 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [TableWithData_source]
+
