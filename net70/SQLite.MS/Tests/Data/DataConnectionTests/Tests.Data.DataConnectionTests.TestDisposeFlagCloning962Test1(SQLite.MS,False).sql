@@ -59,6 +59,8 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -71,6 +73,8 @@ FROM
 	[Categories] [lw_Category]
 		INNER JOIN [Products] [detail] ON [lw_Category].[CategoryID] = [detail].[CategoryID]
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 
