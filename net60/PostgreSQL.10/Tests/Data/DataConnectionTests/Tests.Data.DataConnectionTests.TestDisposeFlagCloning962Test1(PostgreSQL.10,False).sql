@@ -63,6 +63,8 @@ VALUES
 ('Prod 6',1,'q 6')
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
 SELECT
@@ -75,6 +77,8 @@ FROM
 	"Categories" "lw_Category"
 		INNER JOIN "Products" detail ON "lw_Category"."CategoryID" = detail."CategoryID"
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 
