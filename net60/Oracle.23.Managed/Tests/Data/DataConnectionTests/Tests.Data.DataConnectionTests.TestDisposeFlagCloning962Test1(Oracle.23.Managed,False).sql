@@ -150,6 +150,8 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -162,6 +164,8 @@ FROM
 	"Categories" lw_Category
 		INNER JOIN "Products" detail ON lw_Category."CategoryID" = detail."CategoryID"
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
