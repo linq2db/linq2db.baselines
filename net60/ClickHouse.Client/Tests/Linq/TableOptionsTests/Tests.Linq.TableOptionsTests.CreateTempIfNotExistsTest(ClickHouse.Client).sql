@@ -37,3 +37,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+DROP TABLE IF EXISTS CreateIfNotExistsTable
+

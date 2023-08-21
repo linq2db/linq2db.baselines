@@ -35,3 +35,8 @@ VALUES
 	'Used'
 )
 
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+DROP TABLE IF EXISTS InventoryResource
+

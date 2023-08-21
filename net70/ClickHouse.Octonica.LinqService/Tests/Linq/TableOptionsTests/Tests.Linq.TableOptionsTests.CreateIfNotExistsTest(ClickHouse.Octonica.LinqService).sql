@@ -51,3 +51,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS CreateIfNotExistsTable
+
