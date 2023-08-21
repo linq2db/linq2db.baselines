@@ -49,3 +49,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
+BeforeExecute
+-- MySql55 MySql.Official MySql
+
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+
