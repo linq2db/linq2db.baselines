@@ -51,3 +51,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
+BeforeExecute
+-- SqlServer.2017
+
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
+

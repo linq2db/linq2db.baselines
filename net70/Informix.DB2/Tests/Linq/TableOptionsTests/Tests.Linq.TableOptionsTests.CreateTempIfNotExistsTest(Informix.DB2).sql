@@ -35,3 +35,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS CreateIfNotExistsTable
+

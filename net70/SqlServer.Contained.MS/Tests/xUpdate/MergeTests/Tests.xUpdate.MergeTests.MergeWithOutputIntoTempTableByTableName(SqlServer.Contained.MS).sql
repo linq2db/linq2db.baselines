@@ -292,3 +292,8 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable_42]
+

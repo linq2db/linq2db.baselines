@@ -292,3 +292,8 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable_42]
+

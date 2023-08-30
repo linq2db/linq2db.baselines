@@ -292,3 +292,9 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable] [t1]
 
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[tempdb]..[#InsertTempTable]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#InsertTempTable]
+

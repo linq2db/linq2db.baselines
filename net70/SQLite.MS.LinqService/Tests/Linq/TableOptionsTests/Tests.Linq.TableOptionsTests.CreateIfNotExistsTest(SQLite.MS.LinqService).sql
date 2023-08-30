@@ -49,3 +49,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
+BeforeExecute
+-- SQLite.MS SQLite
+
+DROP TABLE IF EXISTS [CreateIfNotExistsTable]
+

@@ -51,3 +51,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+DROP TABLE IF EXISTS CreateIfNotExistsTable
+

@@ -49,3 +49,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+

@@ -49,3 +49,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+

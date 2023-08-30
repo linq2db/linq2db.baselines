@@ -49,3 +49,8 @@ BeforeExecute
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS "CreateIfNotExistsTable"
+

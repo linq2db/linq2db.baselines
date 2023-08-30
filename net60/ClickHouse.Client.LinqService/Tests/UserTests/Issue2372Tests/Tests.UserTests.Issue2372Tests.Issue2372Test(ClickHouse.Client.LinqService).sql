@@ -35,3 +35,8 @@ VALUES
 	'Used'
 )
 
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+DROP TABLE IF EXISTS InventoryResource
+

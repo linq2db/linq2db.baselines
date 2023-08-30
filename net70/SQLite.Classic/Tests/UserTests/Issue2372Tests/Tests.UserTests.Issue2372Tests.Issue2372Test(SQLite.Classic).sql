@@ -37,3 +37,8 @@ VALUES
 	@Status
 )
 
+BeforeExecute
+-- SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [InventoryResource]
+
