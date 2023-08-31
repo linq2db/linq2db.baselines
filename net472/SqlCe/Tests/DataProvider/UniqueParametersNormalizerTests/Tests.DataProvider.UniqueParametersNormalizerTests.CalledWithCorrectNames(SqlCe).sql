@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
+
+DROP TABLE [table1]
+
+BeforeExecute
+-- SqlCe
 
 CREATE TABLE [table1]
 (
@@ -8,7 +13,12 @@ CREATE TABLE [table1]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
+
+DROP TABLE [table2]
+
+BeforeExecute
+-- SqlCe
 
 CREATE TABLE [table2]
 (
@@ -17,7 +27,12 @@ CREATE TABLE [table2]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
+
+DROP TABLE [table3]
+
+BeforeExecute
+-- SqlCe
 
 CREATE TABLE [table3]
 (
