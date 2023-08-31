@@ -54,9 +54,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'b6c39d6c-50ee-4ba6-b762-22271ad522d9'
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 1056714, 7)
+SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[key_data_result].[id],
@@ -93,13 +93,11 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 1056714, 7)
+SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'b6c39d6c-50ee-4ba6-b762-22271ad522d9'
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now_1 DateTime2
-SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 1056714, 7)
-DECLARE @now_2 DateTime2
-SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 1056714, 7)
+SET     @now_1 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[x].[id],
@@ -129,7 +127,7 @@ WHERE
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_2
+			[y_2].[expires_at] > @now_1
 	))
 
 BeforeExecute
@@ -137,9 +135,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '0aaed962-0716-440b-8996-b599d74e3393'
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 2619196, 7)
+SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 SELECT
 	[key_data_result].[id],
@@ -176,13 +174,11 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 2619196, 7)
+SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '0aaed962-0716-440b-8996-b599d74e3393'
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now_1 DateTime2
-SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 2619196, 7)
-DECLARE @now_2 DateTime2
-SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 17, 43, 19, 2619196, 7)
+SET     @now_1 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 SELECT
 	[x].[id],
@@ -212,7 +208,7 @@ WHERE
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_2
+			[y_2].[expires_at] > @now_1
 	))
 
 BeforeExecute
