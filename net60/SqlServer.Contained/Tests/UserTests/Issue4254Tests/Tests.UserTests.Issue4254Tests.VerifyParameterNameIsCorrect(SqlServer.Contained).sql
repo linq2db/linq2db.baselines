@@ -1,20 +1,20 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [issue_4254_media_items]
 (
@@ -24,7 +24,7 @@ CREATE TABLE [issue_4254_media_items]
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [issue_4254_media_item_user_share]
 (
@@ -38,7 +38,7 @@ CREATE TABLE [issue_4254_media_item_user_share]
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 (
@@ -52,11 +52,11 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '330d6c07-a13c-41ad-b2fe-d29c354070b6'
+SET     @userId = 'db009fc5-e1ec-4301-b5d5-a8cd96e8e99f'
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 599686, 7)
+SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 3265119, 7)
 
 SELECT
 	[key_data_result].[id],
@@ -91,15 +91,15 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 599686, 7)
+SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 3265119, 7)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '330d6c07-a13c-41ad-b2fe-d29c354070b6'
+SET     @userId = 'db009fc5-e1ec-4301-b5d5-a8cd96e8e99f'
 DECLARE @now_1 DateTime2
-SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 599686, 7)
+SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 3265119, 7)
 DECLARE @now_2 DateTime2
-SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 599686, 7)
+SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 3265119, 7)
 
 SELECT
 	[x].[id],
@@ -135,11 +135,11 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'fd725095-04bd-41c2-b18e-9ee22a4ce759'
+SET     @userId = 'c6a1fcca-fd2a-423f-9a94-de4e6e312442'
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 1387805, 7)
+SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 4065340, 7)
 
 SELECT
 	[key_data_result].[id],
@@ -174,15 +174,15 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 1387805, 7)
+SET     @now = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 4065340, 7)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'fd725095-04bd-41c2-b18e-9ee22a4ce759'
+SET     @userId = 'c6a1fcca-fd2a-423f-9a94-de4e6e312442'
 DECLARE @now_1 DateTime2
-SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 1387805, 7)
+SET     @now_1 = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 4065340, 7)
 DECLARE @now_2 DateTime2
-SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 8, 26, 28, 1387805, 7)
+SET     @now_2 = DATETIME2FROMPARTS(2023, 8, 31, 8, 1, 36, 4065340, 7)
 
 SELECT
 	[x].[id],
@@ -216,17 +216,17 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 
