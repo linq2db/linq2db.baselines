@@ -1,45 +1,66 @@
 ﻿BeforeExecute
--- Firebird4 Firebird (asynchronously)
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table1')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "table1"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table1')) THEN
 		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "table1"
+			CREATE TABLE "table1"
 			(
 				"Id"     Int                                    NOT NULL,
 				"Field1" VarChar(255) CHARACTER SET UNICODE_FSS
 			)
-			ON COMMIT PRESERVE ROWS
 		';
 END
 
 BeforeExecute
--- Firebird4 Firebird (asynchronously)
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table2')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "table2"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table2')) THEN
 		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "table2"
+			CREATE TABLE "table2"
 			(
 				"Table1Id" Int                                    NOT NULL,
 				"Field2"   VarChar(255) CHARACTER SET UNICODE_FSS
 			)
-			ON COMMIT PRESERVE ROWS
 		';
 END
 
 BeforeExecute
--- Firebird4 Firebird (asynchronously)
+-- Firebird4 Firebird
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table3')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "table3"';
+END
+
+BeforeExecute
+-- Firebird4 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'table3')) THEN
 		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "table3"
+			CREATE TABLE "table3"
 			(
 				"Table1Id" Int                                    NOT NULL,
 				"Field3"   VarChar(255) CHARACTER SET UNICODE_FSS
 			)
-			ON COMMIT PRESERVE ROWS
 		';
 END
 
