@@ -54,9 +54,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @userId Uuid -- Guid
-SET     @userId = '24508d5b-10ba-42c4-ba0d-df4e017ce57f'::uuid
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @now Timestamp -- DateTime2
-SET     @now = '2023-08-30 17:44:16.537'::timestamp
+SET     @now = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	key_data_result.id,
@@ -93,13 +93,11 @@ DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @now Timestamp -- DateTime2
-SET     @now = '2023-08-30 17:44:16.537'::timestamp
+SET     @now = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @userId Uuid -- Guid
-SET     @userId = '24508d5b-10ba-42c4-ba0d-df4e017ce57f'::uuid
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @now_1 Timestamp -- DateTime2
-SET     @now_1 = '2023-08-30 17:44:16.537'::timestamp
-DECLARE @now_2 Timestamp -- DateTime2
-SET     @now_2 = '2023-08-30 17:44:16.537'::timestamp
+SET     @now_1 = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	x.id,
@@ -133,7 +131,7 @@ WHERE
 			issue_4254_media_item_user_share y_2
 		WHERE
 			x.id = y_2.media_item_id AND y_2.created_by_id = :userId AND
-			y_2.expires_at > :now_2
+			y_2.expires_at > :now_1
 	))
 
 BeforeExecute
@@ -141,9 +139,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @userId Uuid -- Guid
-SET     @userId = '9ecd0a88-9972-411b-b51e-7213898078b3'::uuid
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @now Timestamp -- DateTime2
-SET     @now = '2023-08-30 17:44:16.632'::timestamp
+SET     @now = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	key_data_result.id,
@@ -180,13 +178,11 @@ DisposeTransaction
 BeforeExecute
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DECLARE @now Timestamp -- DateTime2
-SET     @now = '2023-08-30 17:44:16.632'::timestamp
+SET     @now = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @userId Uuid -- Guid
-SET     @userId = '9ecd0a88-9972-411b-b51e-7213898078b3'::uuid
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @now_1 Timestamp -- DateTime2
-SET     @now_1 = '2023-08-30 17:44:16.632'::timestamp
-DECLARE @now_2 Timestamp -- DateTime2
-SET     @now_2 = '2023-08-30 17:44:16.632'::timestamp
+SET     @now_1 = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	x.id,
@@ -220,7 +216,7 @@ WHERE
 			issue_4254_media_item_user_share y_2
 		WHERE
 			x.id = y_2.media_item_id AND y_2.created_by_id = :userId AND
-			y_2.expires_at > :now_2
+			y_2.expires_at > :now_1
 	))
 
 BeforeExecute
