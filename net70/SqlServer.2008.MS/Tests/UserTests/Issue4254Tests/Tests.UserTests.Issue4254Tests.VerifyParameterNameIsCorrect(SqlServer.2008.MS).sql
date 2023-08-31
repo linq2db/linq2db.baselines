@@ -57,9 +57,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '485d49b9-9bbc-49af-86b5-8830f443e2af'
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
+SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 
 SELECT
 	[key_data_result].[id],
@@ -96,13 +96,11 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
+SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '485d49b9-9bbc-49af-86b5-8830f443e2af'
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now_1 DateTime2
-SET     @now_1 = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
-DECLARE @now_2 DateTime2
-SET     @now_2 = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
+SET     @now_1 = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 
 SELECT
 	[x].[id],
@@ -136,7 +134,7 @@ WHERE
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_2
+			[y_2].[expires_at] > @now_1
 	))
 
 BeforeExecute
@@ -144,9 +142,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '802e107b-6d44-4d4f-bec6-64494e73bb33'
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
+SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
 
 SELECT
 	[key_data_result].[id],
@@ -183,13 +181,11 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
+SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '802e107b-6d44-4d4f-bec6-64494e73bb33'
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now_1 DateTime2
-SET     @now_1 = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
-DECLARE @now_2 DateTime2
-SET     @now_2 = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
+SET     @now_1 = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
 
 SELECT
 	[x].[id],
@@ -223,7 +219,7 @@ WHERE
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_2
+			[y_2].[expires_at] > @now_1
 	))
 
 BeforeExecute
