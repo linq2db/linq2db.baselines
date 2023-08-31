@@ -1,25 +1,40 @@
 ﻿BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `table1`
+DROP TABLE IF EXISTS `table1`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `table1`
 (
 	`Id`     INT           NOT NULL,
 	`Field1` VARCHAR(4000)     NULL
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `table2`
+DROP TABLE IF EXISTS `table2`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `table2`
 (
 	`Table1Id` INT           NOT NULL,
 	`Field2`   VARCHAR(4000)     NULL
 )
 
 BeforeExecute
--- MariaDB MySqlConnector MySql (asynchronously)
+-- MariaDB MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `table3`
+DROP TABLE IF EXISTS `table3`
+
+BeforeExecute
+-- MariaDB MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `table3`
 (
 	`Table1Id` INT           NOT NULL,
 	`Field3`   VARCHAR(4000)     NULL

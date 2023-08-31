@@ -20,8 +20,6 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @default Datetime -- DateTime
 SET     @default = '0001-01-01'
-DECLARE @default_1 Datetime -- DateTime
-SET     @default_1 = '0001-01-01'
 DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
@@ -33,7 +31,7 @@ FROM
 	(
 		SELECT
 			Extract(year from Coalesce(`n`.`DATUM`, @default)) as `Key_1`,
-			Extract(month from Coalesce(`n`.`DATUM`, @default_1)) as `Key_2`,
+			Extract(month from Coalesce(`n`.`DATUM`, @default)) as `Key_2`,
 			`n`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n`
