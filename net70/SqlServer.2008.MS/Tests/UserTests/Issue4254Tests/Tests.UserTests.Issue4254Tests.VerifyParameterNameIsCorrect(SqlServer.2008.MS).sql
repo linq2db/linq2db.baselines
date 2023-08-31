@@ -57,9 +57,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '6624b9df-0cef-4982-8586-23d2d26abb11'
+SET     @userId = '485d49b9-9bbc-49af-86b5-8830f443e2af'
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-30T21:18:25.2647917' AS DATETIME2)
+SET     @now = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
 
 SELECT
 	[key_data_result].[id],
@@ -96,13 +96,13 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-30T21:18:25.2647917' AS DATETIME2)
+SET     @now = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = '6624b9df-0cef-4982-8586-23d2d26abb11'
+SET     @userId = '485d49b9-9bbc-49af-86b5-8830f443e2af'
 DECLARE @now_1 DateTime2
-SET     @now_1 = CAST('2023-08-30T21:18:25.2647917' AS DATETIME2)
+SET     @now_1 = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
 DECLARE @now_2 DateTime2
-SET     @now_2 = CAST('2023-08-30T21:18:25.2647917' AS DATETIME2)
+SET     @now_2 = CAST('2023-08-31T17:35:48.9641960' AS DATETIME2)
 
 SELECT
 	[x].[id],
@@ -144,9 +144,9 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'aa6e1c79-11d3-43e0-b072-6947075ff88d'
+SET     @userId = '802e107b-6d44-4d4f-bec6-64494e73bb33'
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-30T21:18:25.3302667' AS DATETIME2)
+SET     @now = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
 
 SELECT
 	[key_data_result].[id],
@@ -183,13 +183,13 @@ DisposeTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @now DateTime2
-SET     @now = CAST('2023-08-30T21:18:25.3302667' AS DATETIME2)
+SET     @now = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
 DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'aa6e1c79-11d3-43e0-b072-6947075ff88d'
+SET     @userId = '802e107b-6d44-4d4f-bec6-64494e73bb33'
 DECLARE @now_1 DateTime2
-SET     @now_1 = CAST('2023-08-30T21:18:25.3302667' AS DATETIME2)
+SET     @now_1 = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
 DECLARE @now_2 DateTime2
-SET     @now_2 = CAST('2023-08-30T21:18:25.3302667' AS DATETIME2)
+SET     @now_2 = CAST('2023-08-31T17:35:49.0284411' AS DATETIME2)
 
 SELECT
 	[x].[id],
