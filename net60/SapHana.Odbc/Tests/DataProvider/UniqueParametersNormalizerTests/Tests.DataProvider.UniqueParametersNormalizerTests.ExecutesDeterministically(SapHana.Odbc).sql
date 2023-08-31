@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "table1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "table1"
 (
@@ -8,7 +13,12 @@ CREATE COLUMN TABLE "table1"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "table2"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "table2"
 (
@@ -17,7 +27,12 @@ CREATE COLUMN TABLE "table2"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "table3"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "table3"
 (
