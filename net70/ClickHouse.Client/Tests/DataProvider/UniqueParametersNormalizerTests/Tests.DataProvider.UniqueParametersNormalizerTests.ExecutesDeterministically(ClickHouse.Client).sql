@@ -1,7 +1,12 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+-- ClickHouse.Client ClickHouse
 
-CREATE TEMPORARY TABLE table1
+DROP TABLE IF EXISTS table1
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+CREATE TABLE IF NOT EXISTS table1
 (
 	Id     Int32,
 	Field1 Nullable(String)
@@ -9,9 +14,14 @@ CREATE TEMPORARY TABLE table1
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+-- ClickHouse.Client ClickHouse
 
-CREATE TEMPORARY TABLE table2
+DROP TABLE IF EXISTS table2
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+CREATE TABLE IF NOT EXISTS table2
 (
 	Table1Id Int32,
 	Field2   Nullable(String)
@@ -19,9 +29,14 @@ CREATE TEMPORARY TABLE table2
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+-- ClickHouse.Client ClickHouse
 
-CREATE TEMPORARY TABLE table3
+DROP TABLE IF EXISTS table3
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+CREATE TABLE IF NOT EXISTS table3
 (
 	Table1Id Int32,
 	Field3   Nullable(String)
