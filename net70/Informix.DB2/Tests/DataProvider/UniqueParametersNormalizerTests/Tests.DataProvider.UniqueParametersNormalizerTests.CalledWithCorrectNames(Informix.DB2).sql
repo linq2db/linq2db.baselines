@@ -1,25 +1,40 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
-CREATE TEMP TABLE table1
+DROP TABLE IF EXISTS table1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS table1
 (
 	Id     Int           NOT NULL,
 	Field1 NVarChar(255)     NULL
 )
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
-CREATE TEMP TABLE table2
+DROP TABLE IF EXISTS table2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS table2
 (
 	Table1Id Int           NOT NULL,
 	Field2   NVarChar(255)     NULL
 )
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
-CREATE TEMP TABLE table3
+DROP TABLE IF EXISTS table3
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS table3
 (
 	Table1Id Int           NOT NULL,
 	Field3   NVarChar(255)     NULL
