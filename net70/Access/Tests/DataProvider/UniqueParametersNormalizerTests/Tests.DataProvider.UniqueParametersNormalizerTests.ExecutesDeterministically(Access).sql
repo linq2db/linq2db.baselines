@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
+
+DROP TABLE [table1]
+
+BeforeExecute
+-- Access AccessOleDb
 
 CREATE TABLE [table1]
 (
@@ -8,7 +13,12 @@ CREATE TABLE [table1]
 )
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
+
+DROP TABLE [table2]
+
+BeforeExecute
+-- Access AccessOleDb
 
 CREATE TABLE [table2]
 (
@@ -17,7 +27,12 @@ CREATE TABLE [table2]
 )
 
 BeforeExecute
--- Access AccessOleDb (asynchronously)
+-- Access AccessOleDb
+
+DROP TABLE [table3]
+
+BeforeExecute
+-- Access AccessOleDb
 
 CREATE TABLE [table3]
 (

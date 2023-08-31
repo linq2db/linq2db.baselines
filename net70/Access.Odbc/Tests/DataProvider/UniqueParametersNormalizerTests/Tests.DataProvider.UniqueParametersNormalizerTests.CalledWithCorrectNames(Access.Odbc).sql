@@ -1,5 +1,10 @@
 ﻿BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
+
+DROP TABLE [table1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 
 CREATE TABLE [table1]
 (
@@ -8,7 +13,12 @@ CREATE TABLE [table1]
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
+
+DROP TABLE [table2]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 
 CREATE TABLE [table2]
 (
@@ -17,7 +27,12 @@ CREATE TABLE [table2]
 )
 
 BeforeExecute
--- Access.Odbc AccessODBC (asynchronously)
+-- Access.Odbc AccessODBC
+
+DROP TABLE [table3]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
 
 CREATE TABLE [table3]
 (
