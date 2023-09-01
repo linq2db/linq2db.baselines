@@ -10,25 +10,25 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @nameToCheck_1_1 VarWChar(4) -- String
-SET     @nameToCheck_1_1 = 'JOH%'
+DECLARE @nameToCheck VarWChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @nameToCheck_1_1 AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE @nameToCheck AND [p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @nameToCheck_1_1 VarWChar(4) -- String
-SET     @nameToCheck_1_1 = 'JOH%'
+DECLARE @nameToCheck VarWChar(4) -- String
+SET     @nameToCheck = 'JOH%'
 
 SELECT
 	Count(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] NOT LIKE @nameToCheck_1_1 AND [p].[PersonID] = 1
+	[p].[FirstName] NOT LIKE @nameToCheck AND [p].[PersonID] = 1
 
