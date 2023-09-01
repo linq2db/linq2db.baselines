@@ -10,8 +10,6 @@ FROM
 	(
 		SELECT
 			' ' || Cast(Nvl(e."Value1", 0) as VarChar(11)) as "c1",
-			e."ParentID",
-			e."Value1",
 			(
 				SELECT
 					Sum(c_1."ChildID")
