@@ -1,0 +1,38 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Issue681Table
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS Issue681Table
+(
+	ID      Int NOT NULL,
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	user
+FROM
+	LinqDataTypes t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.ID,
+	t1."Value"
+FROM
+	informix.Issue681Table t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS Issue681Table
+
