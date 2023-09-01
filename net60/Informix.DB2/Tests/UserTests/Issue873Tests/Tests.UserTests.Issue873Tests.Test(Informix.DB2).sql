@@ -10,8 +10,6 @@ FROM
 	(
 		SELECT
 			' ' || To_Char(Nvl(e.Value1, 0)) as c1,
-			e.ParentID,
-			e.Value1,
 			(
 				SELECT
 					Sum(c_1.ChildID)
