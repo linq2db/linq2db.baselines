@@ -126,6 +126,7 @@ SELECT
 FROM
 	(
 		SELECT
+			[cu].[Id],
 			(
 				SELECT
 					Count(*)
@@ -142,7 +143,6 @@ FROM
 				WHERE
 					[card_3].[PersonId] = [cu].[Id] AND [card_3].[CardType] = 2
 			) as [ex],
-			[cu].[Id],
 			[cu].[Name],
 			[cu].[CountOfCards],
 			[cu].[CountOfCards2],
