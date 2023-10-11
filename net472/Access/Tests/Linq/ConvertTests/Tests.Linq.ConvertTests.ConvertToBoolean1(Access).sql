@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[MoneyValue]
+	CBool([t].[MoneyValue])
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[MoneyValue] = True
+	CBool([t].[MoneyValue]) = True
 
