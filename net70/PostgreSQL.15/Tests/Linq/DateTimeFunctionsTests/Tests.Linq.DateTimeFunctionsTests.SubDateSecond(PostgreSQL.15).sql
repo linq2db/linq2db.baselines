@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	EXTRACT(EPOCH FROM ((t."DateTimeValue" + 100 * Interval '1 Minute')::timestamp - t."DateTimeValue"::timestamp))
+	Cast((extract(epoch from ((t."DateTimeValue" + 100 * Interval '1 Minute')::timestamp - t."DateTimeValue"::timestamp))) as Float)
 FROM
 	"LinqDataTypes" t
 
