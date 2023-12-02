@@ -272,11 +272,11 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	Convert(Date, N'2010-01-' + REPLICATE('0', CASE WHEN LEN(CAST([t].[TransactionId] as NVARCHAR)) > 2 THEN 0 ELSE (2 - LEN(CAST([t].[TransactionId] as NVARCHAR))) END) + CAST([t].[TransactionId] as NVARCHAR))
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, Convert(Date, N'2010-01-' + REPLICATE('0', CASE WHEN LEN(CAST([t].[TransactionId] as NVARCHAR)) > 2 THEN 0 ELSE (2 - LEN(CAST([t].[TransactionId] as NVARCHAR))) END) + CAST([t].[TransactionId] as NVARCHAR))) > 0
 
 BeforeExecute
 -- SqlServer.2008
