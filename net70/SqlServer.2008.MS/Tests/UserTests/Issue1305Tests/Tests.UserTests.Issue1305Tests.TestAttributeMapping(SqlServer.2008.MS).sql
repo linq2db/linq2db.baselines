@@ -194,102 +194,6 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-[TestDataMS].[dbo].[SelectImplicitColumn]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-[TestDataMS].[dbo].[DuplicateColumnNames]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-[TestDataMS].[dbo].[AddIssue792Record]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = NULL
-
-[TestDataMS].[dbo].[TableTypeTestProc]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-[TestDataMS].[TestSchema].[TestProcedure]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @nameFilter NVarChar(512) -- String
-SET     @nameFilter = N''
-
-[TestDataMS].[dbo].[PersonSearch]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-[TestDataMS].[dbo].[Issue1897]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-
-[TestDataMS].[dbo].[QueryProcParameters]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-DECLARE @output3 Int -- Int32
-SET     @output3 = 0
-
-[TestDataMS].[dbo].[QueryProcMultipleParameters]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcIntParameters]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcStringParameters]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 0
 
@@ -423,6 +327,102 @@ DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N''
 
 [TestDataMS].[dbo].[OutRefEnumTest]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+[TestDataMS].[dbo].[SelectImplicitColumn]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+[TestDataMS].[dbo].[DuplicateColumnNames]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+[TestDataMS].[dbo].[AddIssue792Record]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = NULL
+
+[TestDataMS].[dbo].[TableTypeTestProc]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+[TestDataMS].[TestSchema].[TestProcedure]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @nameFilter NVarChar(512) -- String
+SET     @nameFilter = N''
+
+[TestDataMS].[dbo].[PersonSearch]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+[TestDataMS].[dbo].[Issue1897]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+
+[TestDataMS].[dbo].[QueryProcParameters]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+DECLARE @output3 Int -- Int32
+SET     @output3 = 0
+
+[TestDataMS].[dbo].[QueryProcMultipleParameters]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcIntParameters]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcStringParameters]
 
 BeforeExecute
 RollbackTransaction
