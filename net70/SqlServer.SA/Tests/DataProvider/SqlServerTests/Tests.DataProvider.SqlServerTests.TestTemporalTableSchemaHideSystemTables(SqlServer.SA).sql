@@ -215,6 +215,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -453,11 +454,6 @@ sp_describe_first_result_set
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-
-EXEC('SELECT * FROM [TestDataSA].[TestSchema].[SchemaTableFunction](NULL)')
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataSA].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
@@ -484,15 +480,6 @@ SET     @table = NULL
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataSA].[TestSchema].[TestProcedure] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataSA].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@ReturnFullRow bit'
@@ -505,6 +492,20 @@ DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataSA].[dbo].[VariableResults]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataSA].[TestSchema].[SchemaTableFunction](NULL)')
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataSA].[TestSchema].[TestProcedure] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
 
 BeforeExecute
 RollbackTransaction
