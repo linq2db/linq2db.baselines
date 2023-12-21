@@ -170,8 +170,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Date
-SET     @value = CAST('2020-02-29T17:54:55.123' AS DATETIME)
+DECLARE @value DateTime
+SET     @value = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 
 SELECT
 	[t1].[Value]
@@ -584,8 +584,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Date
-SET     @value = CAST('2020-02-29T17:54:55.123' AS DATETIME)
+DECLARE @value DateTime
+SET     @value = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 
 SELECT
 	[t1].[Value]
@@ -994,52 +994,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT N'17:54:55' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT CAST(644951000000 AS BIGINT) AS [Value]) [t1]
 
 BeforeExecute
@@ -1184,52 +1138,6 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'17:54:55.1'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1000000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1000000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1000000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1000000'
 
 SELECT
 	[t1].[Value]
@@ -1408,52 +1316,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT N'17:54:55.1200000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1200000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1200000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1200000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT CAST(644951230000 AS BIGINT) AS [Value]) [t1]
 
 BeforeExecute
@@ -1598,52 +1460,6 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'17:54:55.123'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1230000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1230000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1230000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1230000'
 
 SELECT
 	[t1].[Value]
@@ -1822,52 +1638,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT N'17:54:55.1231000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1231000' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231000'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT CAST(644951231200 AS BIGINT) AS [Value]) [t1]
 
 BeforeExecute
@@ -2012,52 +1782,6 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'17:54:55.12312'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1231200' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231200'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1231200' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231200'
 
 SELECT
 	[t1].[Value]
@@ -2236,52 +1960,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT N'17:54:55.1231230' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231230'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1231230' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231230'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT CAST(644951231234 AS BIGINT) AS [Value]) [t1]
 
 BeforeExecute
@@ -2443,57 +2121,11 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT N'17:54:55.1231234' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231234'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT N'17:54:55.1231234' AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Time
-SET     @value = N'17:54:55.1231234'
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT CAST('2020-02-29' AS DATETIME) AS [Value]) [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @value Date
+DECLARE @value DateTime
 SET     @value = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 
 SELECT
@@ -2719,52 +2351,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT CAST('2020-02-29T17:14:55' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.000' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.000' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT '2020-02-29T17:54:55.1+00:40' AS [Value]) [t1]
 
 BeforeExecute
@@ -2908,52 +2494,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value DateTime
-SET     @value = CAST('2020-02-29T17:14:55.100' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.1' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.100' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.1' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
 SET     @value = CAST('2020-02-29T17:14:55.100' AS DATETIME)
 
 SELECT
@@ -3133,52 +2673,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT CAST('2020-02-29T17:14:55.12' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.120' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.12' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.120' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT '2020-02-29T17:54:55.123+00:40' AS [Value]) [t1]
 
 BeforeExecute
@@ -3322,52 +2816,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value DateTime
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
 SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
 
 SELECT
@@ -3547,52 +2995,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT '2020-02-29T17:54:55.12312+00:40' AS [Value]) [t1]
 
 BeforeExecute
@@ -3736,52 +3138,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value DateTime
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
 SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
 
 SELECT
@@ -3961,52 +3317,6 @@ SELECT
 	[t1].[Value]
 FROM
 	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
 		SELECT '2020-02-29T17:54:55.1231234+00:40' AS [Value]) [t1]
 
 BeforeExecute
@@ -4150,52 +3460,6 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @value DateTime
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
-SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		select 1 as one
-	) [x],
-	(
-		SELECT @value AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[Value]
-FROM
-	(
-		SELECT CAST('2020-02-29T17:14:55.123' AS DATETIME) AS [Value]) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @value DateTimeOffset
 SET     @value = CAST('2020-02-29T17:14:55.123' AS DATETIME)
 
 SELECT

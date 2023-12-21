@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Convert(Date, format(DatePart(year, [p].[DateTimeValue]), 'd4') + N'-10-01') as [c1]
+			Convert(Date, REPLICATE('0', CASE WHEN LEN(CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR)) > 4 THEN 0 ELSE (4 - LEN(CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR))) END) + CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR) + N'-10-01') as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

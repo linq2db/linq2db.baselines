@@ -162,6 +162,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.2008
@@ -398,11 +399,6 @@ SET     @output2 = 0
 BeforeExecute
 -- SqlServer.2008
 
-SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
-
-BeforeExecute
--- SqlServer.2008
-
 [TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
@@ -414,15 +410,20 @@ SET     @table = NULL
 
 BeforeExecute
 -- SqlServer.2008
-
-[TestData].[TestSchema].[TestProcedure]
-
-BeforeExecute
--- SqlServer.2008
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestData].[dbo].[VariableResults]
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2008
+
+[TestData].[TestSchema].[TestProcedure]
 
 BeforeExecute
 RollbackTransaction

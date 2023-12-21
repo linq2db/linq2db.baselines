@@ -145,6 +145,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.2016
@@ -383,11 +384,6 @@ sp_describe_first_result_set
 
 BeforeExecute
 -- SqlServer.2016
-
-SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
-
-BeforeExecute
--- SqlServer.2016
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
@@ -414,15 +410,6 @@ SET     @table = NULL
 BeforeExecute
 -- SqlServer.2016
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestData].[TestSchema].[TestProcedure] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@ReturnFullRow bit'
@@ -435,6 +422,20 @@ DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestData].[dbo].[VariableResults]
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
+
+BeforeExecute
+-- SqlServer.2016
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestData].[TestSchema].[TestProcedure] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
 
 BeforeExecute
 RollbackTransaction
@@ -585,6 +586,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.2016
@@ -764,6 +766,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.2016

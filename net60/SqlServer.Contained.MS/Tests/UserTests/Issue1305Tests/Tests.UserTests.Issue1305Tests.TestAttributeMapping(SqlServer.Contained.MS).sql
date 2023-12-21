@@ -168,6 +168,7 @@ SELECT
 					LEFT JOIN sys.extended_properties x
 						ON OBJECT_ID('[' + SPECIFIC_SCHEMA + '].[' + SPECIFIC_NAME + ']') = x.major_id AND
 							x.name = 'MS_Description' AND x.class = 1
+				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -406,11 +407,6 @@ sp_describe_first_result_set
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-
-EXEC('SELECT * FROM [TestDataMSContained].[TestSchema].[SchemaTableFunction](NULL)')
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
@@ -437,15 +433,6 @@ SET     @table = NULL
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMSContained].[TestSchema].[TestProcedure] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@ReturnFullRow bit'
@@ -458,6 +445,20 @@ DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMSContained].[dbo].[VariableResults]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataMSContained].[TestSchema].[SchemaTableFunction](NULL)')
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMSContained].[TestSchema].[TestProcedure] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
 
 BeforeExecute
 RollbackTransaction

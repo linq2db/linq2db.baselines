@@ -29,9 +29,9 @@ SELECT 2,CAST('2020-02-29' AS DATETIME),CAST('2200-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Column Date
+DECLARE @Column DateTime
 SET     @Column = CAST('2020-02-29T00:00:00.000' AS DATETIME)
-DECLARE @ColumnNullable Date
+DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
 
 SELECT
@@ -67,9 +67,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column Date
+DECLARE @Column DateTime
 SET     @Column = CAST('1950-01-01T00:00:00.000' AS DATETIME)
-DECLARE @ColumnNullable Date
+DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -89,9 +89,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column Date
+DECLARE @Column DateTime
 SET     @Column = CAST('2020-02-29T00:00:00.000' AS DATETIME)
-DECLARE @ColumnNullable Date
+DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
 
 INSERT INTO [DateOnlyTable]
