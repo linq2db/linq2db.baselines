@@ -2,8 +2,6 @@
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
-DECLARE @skip  -- Int32
-SET     @skip = 1
 
 SELECT
 	[t2].[ParentID],
@@ -18,5 +16,14 @@ FROM
 	) [t2]
 ORDER BY
 	[t2].[ParentID]
-LIMIT @take OFFSET @skip
+LIMIT @take OFFSET @take
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -83,18 +83,12 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[ProductID],
-	[t1].[ProductName],
-	[c_1].[CategoryName]
+	[p].[ProductID],
+	[p].[ProductName],
+	[t1].[CategoryName]
 FROM
-	[Categories] [c_1]
-		LEFT JOIN (
-			SELECT
-				[a_Category].[CategoryID] as [p],
-				[g_1].[ProductID],
-				[g_1].[ProductName]
-			FROM
-				[Products] [g_1]
-					LEFT JOIN [Categories] [a_Category] ON [g_1].[CategoryID] = [a_Category].[CategoryID]
-		) [t1] ON [c_1].[CategoryID] = [t1].[p]
+	[Categories] [t1]
+		LEFT JOIN ([Products] [p]
+			LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID])
+		ON [t1].[CategoryID] = [a_Category].[CategoryID]
 

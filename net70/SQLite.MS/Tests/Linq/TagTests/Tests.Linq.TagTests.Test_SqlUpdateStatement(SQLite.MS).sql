@@ -16,12 +16,14 @@ CREATE TABLE IF NOT EXISTS [TestTable]
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @Fd  -- Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
 	[TestTable]
 SET
-	[Fd] = 1
+	[Fd] = @Fd
 
 BeforeExecute
 -- SQLite.MS SQLite

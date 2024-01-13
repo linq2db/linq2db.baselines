@@ -42,18 +42,18 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[e1].[Id1],
+	[e1].[Value],
+	[e1].[ByteValues]
+FROM
+	[MasterClass] [e1]
+UNION ALL
+SELECT
 	[e].[Id1],
-	[e].[Value],
+	'Str',
 	[e].[ByteValues]
 FROM
 	[MasterClass] [e]
-UNION ALL
-SELECT
-	[e_1].[Id1],
-	'Str',
-	[e_1].[ByteValues]
-FROM
-	[MasterClass] [e_1]
 
 BeforeExecute
 -- SQLite.Classic SQLite

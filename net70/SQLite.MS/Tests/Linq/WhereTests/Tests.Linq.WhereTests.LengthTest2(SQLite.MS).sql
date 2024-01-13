@@ -2,11 +2,17 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[nm].[FirstName]
+	[nm_1].[FirstName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			Length([nm].[FirstName]) as [Length_1],
+			[nm].[FirstName]
+		FROM
+			[Person] [nm]
+	) [nm_1]
 WHERE
-	Length([nm].[FirstName]) <> 0
+	([nm_1].[Length_1] <> 0 OR [nm_1].[Length_1] IS NULL)
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -101,11 +101,11 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				[Orders] [param]
+					INNER JOIN [Customers] [a_Customer] ON ([param].[CustomerID] = [a_Customer].[CustomerID] OR [param].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 			WHERE
-				DateTime([o].[OrderDate]) > DateTime(@OrderDate) AND
-				([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+				([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL) AND
+				DateTime([param].[OrderDate]) > DateTime(@OrderDate)
 		)
 			THEN 1
 		ELSE 0

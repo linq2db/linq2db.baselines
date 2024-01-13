@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -106,13 +106,13 @@ WHERE
 				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
 			([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL) AND
-			NOT EXISTS(
+			NOT (EXISTS(
 				SELECT
 					*
 				FROM
 					[Employees] [e]
 				WHERE
 					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [e].[FirstName] LIKE 'A%' ESCAPE '~'
-			)
+			))
 	)
 

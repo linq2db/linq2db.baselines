@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,83 +75,91 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
-	[t1].[Key_1]
-FROM
-	(
-		SELECT
-			CASE
-				WHEN (
-					SELECT
-						Avg([o].[Freight])
-					FROM
-						[Orders] [o]
-					WHERE
-						([selectParam].[CustomerID] = [o].[CustomerID] OR [selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
-				) >= 80
-					THEN 1
-				ELSE 0
-			END as [Key_1]
-		FROM
-			[Customers] [selectParam]
-	) [t1]
-GROUP BY
-	[t1].[Key_1]
-
+BeginTransaction(Serializable)
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @p  -- Boolean
-SET     @p = 0
 
 SELECT
-	[underscore].[CustomerID],
-	[underscore].[CompanyName],
-	[underscore].[ContactName],
-	[underscore].[ContactTitle],
-	[underscore].[Address],
-	[underscore].[City],
-	[underscore].[Region],
-	[underscore].[PostalCode],
-	[underscore].[Country],
-	[underscore].[Phone],
-	[underscore].[Fax]
+	[m_1].[c1],
+	[d].[CustomerID],
+	[d].[CompanyName],
+	[d].[ContactName],
+	[d].[ContactTitle],
+	[d].[Address],
+	[d].[City],
+	[d].[Region],
+	[d].[PostalCode],
+	[d].[Country],
+	[d].[Phone],
+	[d].[Fax]
+FROM
+	(
+		SELECT DISTINCT
+			[t2].[c1]
+		FROM
+			(
+				SELECT
+					CASE
+						WHEN (
+							SELECT
+								Avg([a_Orders].[Freight])
+							FROM
+								[Orders] [a_Orders]
+							WHERE
+								([t1].[CustomerID] = [a_Orders].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
+						) >= 80
+							THEN 1
+						ELSE 0
+					END as [c1]
+				FROM
+					[Customers] [t1]
+			) [t2]
+		GROUP BY
+			[t2].[c1]
+	) [m_1]
+		INNER JOIN [Customers] [d] ON [m_1].[c1] = CASE
+			WHEN (
+				SELECT
+					Avg([a_Orders_1].[Freight]) as [Average]
+				FROM
+					[Orders] [a_Orders_1]
+				WHERE
+					([d].[CustomerID] = [a_Orders_1].[CustomerID] OR [d].[CustomerID] IS NULL AND [a_Orders_1].[CustomerID] IS NULL)
+			) >= 80
+				THEN 1
+			ELSE 0
+		END
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Northwind.SQLite SQLite.Classic SQLite
+
+SELECT
+	[t2].[c1]
 FROM
 	(
 		SELECT
 			CASE
 				WHEN (
 					SELECT
-						Avg([o].[Freight])
+						Avg([a_Orders].[Freight])
 					FROM
-						[Orders] [o]
+						[Orders] [a_Orders]
 					WHERE
-						([selectParam].[CustomerID] = [o].[CustomerID] OR [selectParam].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+						([t1].[CustomerID] = [a_Orders].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
 				) >= 80
 					THEN 1
 				ELSE 0
-			END as [Key_1],
-			[selectParam].[CustomerID],
-			[selectParam].[CompanyName],
-			[selectParam].[ContactName],
-			[selectParam].[ContactTitle],
-			[selectParam].[Address],
-			[selectParam].[City],
-			[selectParam].[Region],
-			[selectParam].[PostalCode],
-			[selectParam].[Country],
-			[selectParam].[Phone],
-			[selectParam].[Fax]
+			END as [c1]
 		FROM
-			[Customers] [selectParam]
-	) [underscore]
-WHERE
-	[underscore].[Key_1] = @p
+			[Customers] [t1]
+	) [t2]
+GROUP BY
+	[t2].[c1]
 

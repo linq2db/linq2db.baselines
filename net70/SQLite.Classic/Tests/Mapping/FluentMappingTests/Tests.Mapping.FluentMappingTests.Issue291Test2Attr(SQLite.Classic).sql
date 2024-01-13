@@ -59,18 +59,16 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[my_col1],
 	[t1].[itemType],
+	[t1].[my_col1],
 	[t1].[my_other_col]
 FROM
 	[my_table] [t1]
 WHERE
 	[t1].[itemType] <> 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

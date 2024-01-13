@@ -110,11 +110,13 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	[t].[ID] IN (
+	EXISTS(
 		SELECT
-			[p].[ID]
+			*
 		FROM
-			[test_in_2] [p]
+			[test_in_2] [param]
+		WHERE
+			[param].[ID] = [t].[ID]
 	)
 
 BeforeExecute

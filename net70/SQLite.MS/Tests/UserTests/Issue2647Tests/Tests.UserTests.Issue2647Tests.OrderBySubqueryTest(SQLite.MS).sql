@@ -30,16 +30,16 @@ ORDER BY
 		SELECT
 			Count(*)
 		FROM
-			[Issue2647Table] [ss2]
+			[Issue2647Table] [t2]
 		WHERE
-			[ss2].[Id] = [t1].[Id]
+			[t2].[Id] = [t1].[Id]
 	) * 10000) / (
 		SELECT
 			Count(*)
 		FROM
-			[Issue2647Table] [ss3]
+			[Issue2647Table] [t3]
 		WHERE
-			[ss3].[Id] = [t1].[Id]
+			[t3].[Id] = [t1].[Id]
 	) DESC
 
 BeforeExecute

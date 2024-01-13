@@ -82,17 +82,15 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id] OR [v].[RelationId] IS NULL AND [a_Relation].[id] IS NULL)
 WHERE
 	[a_Relation].[RelatedValue1] = 11
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

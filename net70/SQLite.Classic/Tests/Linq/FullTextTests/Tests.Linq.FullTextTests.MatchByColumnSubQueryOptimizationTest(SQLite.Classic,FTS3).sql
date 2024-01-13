@@ -11,9 +11,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			[FTS3_TABLE] [r_1]
+			[FTS3_TABLE] [param]
 		WHERE
-			([r_1].[rowid] = [r].[rowid] OR [r_1].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
-			[r_1].[text1] MATCH 'found'
+			([param].[rowid] = [r].[rowid] OR [param].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
+			[param].[text1] MATCH 'found'
 	)
 

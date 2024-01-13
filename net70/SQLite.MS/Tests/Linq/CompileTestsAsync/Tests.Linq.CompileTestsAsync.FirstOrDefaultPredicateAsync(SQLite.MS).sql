@@ -36,8 +36,6 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Id]
@@ -45,7 +43,7 @@ FROM
 	[AsyncDataTable] [c_1]
 WHERE
 	[c_1].[Id] = @Id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite

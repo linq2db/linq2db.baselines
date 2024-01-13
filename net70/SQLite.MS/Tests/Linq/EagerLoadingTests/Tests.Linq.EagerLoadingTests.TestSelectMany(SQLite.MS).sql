@@ -1788,10 +1788,10 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[key_data_result].[DetailId],
-	[_sd].[SubDetailId],
-	[_sd].[DetailId],
-	[_sd].[SubDetailValue]
+	[m_1].[DetailId],
+	[d_1].[SubDetailId],
+	[d_1].[DetailId],
+	[d_1].[SubDetailValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -1803,10 +1803,10 @@ FROM
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
-			) [m_1],
-			[DetailClass] [d]
-	) [key_data_result]
-		INNER JOIN [SubDetailClass] [_sd] ON [_sd].[DetailId] = [key_data_result].[DetailId]
+			) [t2]
+				CROSS JOIN [DetailClass] [d]
+	) [m_1]
+		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_1].[DetailId]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -1814,10 +1814,10 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[key_data_result].[DetailId],
-	[detail].[SubDetailId],
-	[detail].[DetailId],
-	[detail].[SubDetailValue]
+	[m_1].[DetailId],
+	[d_1].[SubDetailId],
+	[d_1].[DetailId],
+	[d_1].[SubDetailValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -1829,10 +1829,10 @@ FROM
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
-			) [m_1],
-			[DetailClass] [d]
-	) [key_data_result]
-		INNER JOIN [SubDetailClass] [detail] ON [key_data_result].[DetailId] = [detail].[DetailId]
+			) [t2]
+				CROSS JOIN [DetailClass] [d]
+	) [m_1]
+		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
 
 BeforeExecute
 DisposeTransaction
@@ -1852,8 +1852,8 @@ FROM
 		FROM
 			[MasterClass] [t1]
 		LIMIT @take
-	) [m_1],
-	[DetailClass] [d]
+	) [m_1]
+		CROSS JOIN [DetailClass] [d]
 
 BeforeExecute
 -- SQLite.MS SQLite

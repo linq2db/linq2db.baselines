@@ -34,6 +34,17 @@ SELECT
 	[x].[Name]
 FROM
 	[Car] [x]
+WHERE
+	1 = 1
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -50,6 +61,15 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
@@ -61,10 +81,30 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
 	[Car] [x]
+WHERE
+	1 = 1
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -81,12 +121,30 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
 	[x].[Id],
 	[x].[Name]
 FROM
 	[Car] [x]
 WHERE
 	[x].[Name] = 'Special'
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Car] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -4,7 +4,7 @@ DECLARE @p  -- Int32
 SET     @p = 41
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p || ' Second')
+	Cast(StrFTime('%S', (strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p || ' Second'))) as int)
 FROM
 	[LinqDataTypes] [t]
 

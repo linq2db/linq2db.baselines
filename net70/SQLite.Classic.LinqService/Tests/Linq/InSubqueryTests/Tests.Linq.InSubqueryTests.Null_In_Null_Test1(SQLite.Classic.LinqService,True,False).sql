@@ -119,6 +119,23 @@ FROM
 BeforeExecute
 -- SQLite.Classic SQLite
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [param]
+		WHERE
+			[param].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute

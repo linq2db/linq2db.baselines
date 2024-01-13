@@ -38,20 +38,10 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(3) -- String
+SET     @Diagnosis = 'abc'
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast(Length([Patient].[Diagnosis]) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
-
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -59,43 +49,59 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	'abc'
+	@Diagnosis
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast(Length([t1].[Diagnosis]) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @Diagnosis NVarChar(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @Diagnosis NVarChar(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -104,5 +110,5 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 

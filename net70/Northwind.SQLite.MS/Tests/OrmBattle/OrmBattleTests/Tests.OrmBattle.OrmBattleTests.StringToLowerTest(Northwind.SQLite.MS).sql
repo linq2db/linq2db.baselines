@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,15 +75,12 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[CustomerID],
@@ -100,5 +98,5 @@ FROM
 	[Customers] [c_1]
 WHERE
 	Lower([c_1].[City]) = 'seattle'
-LIMIT @take
+LIMIT 1
 
