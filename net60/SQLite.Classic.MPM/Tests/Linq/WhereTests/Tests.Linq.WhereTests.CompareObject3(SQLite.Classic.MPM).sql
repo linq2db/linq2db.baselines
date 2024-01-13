@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Child] [ch]
 WHERE
-	([ch].[ParentID] <> @ParentID OR [ch].[ChildID] <> @ChildID)
+	NOT ([ch].[ParentID] = @ParentID AND [ch].[ChildID] = @ChildID)
 

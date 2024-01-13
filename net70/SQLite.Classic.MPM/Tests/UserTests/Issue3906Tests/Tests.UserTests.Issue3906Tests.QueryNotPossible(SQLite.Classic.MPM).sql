@@ -93,46 +93,37 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id],
-	[_ir].[Id],
-	[_ir].[Nr]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Nr]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id]
+		SELECT
+			[infeed].[Id]
 		FROM
-			(
-				SELECT
-					[oto].[Id]
-				FROM
-					[InfeedAdvicePositionDTO] [oto]
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		LEFT JOIN [MlogInfeedAddonsDTO] [_ir] ON [_ir].[Id] = [key_data_result].[Id]
+			[InfeedAdvicePositionDTO] [infeed]
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [MlogInfeedAddonsDTO] [d] ON [d].[Id] = [m_1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[oto].[Id],
+	[infeed].[Id],
 	(
 		SELECT
 			Sum([x].[Quantity])
 		FROM
 			[InventoryResourceDTO] [x]
 		WHERE
-			[x].[InfeedAdviceID] = [oto].[Id]
+			[x].[InfeedAdviceID] = [infeed].[Id]
 	)
 FROM
-	[InfeedAdvicePositionDTO] [oto]
-LIMIT @take
+	[InfeedAdvicePositionDTO] [infeed]
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

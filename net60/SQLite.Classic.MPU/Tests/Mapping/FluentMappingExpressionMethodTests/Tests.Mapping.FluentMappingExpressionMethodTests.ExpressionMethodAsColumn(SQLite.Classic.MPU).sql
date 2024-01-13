@@ -48,7 +48,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Value],
-	'M' || Cast([t1].[Id] as NVarChar(11))
+	'M' || Cast([t1].[Id] as NVarChar(255))
 FROM
 	[InstanceClass] [t1]
 

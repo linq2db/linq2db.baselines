@@ -11,9 +11,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			[FTS4_TABLE] [r_1]
+			[FTS4_TABLE] [param]
 		WHERE
-			([r_1].[rowid] = [r].[rowid] OR [r_1].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
-			[r_1].[FTS4_TABLE] MATCH 'something'
+			([param].[rowid] = [r].[rowid] OR [param].[rowid] IS NULL AND [r].[rowid] IS NULL) AND
+			[param].[FTS4_TABLE] MATCH 'something'
 	)
 

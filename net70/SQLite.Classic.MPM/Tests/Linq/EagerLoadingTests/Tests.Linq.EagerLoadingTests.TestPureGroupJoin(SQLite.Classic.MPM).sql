@@ -99,24 +99,24 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[key_data_result].[Id1],
-	[_gjd_d].[DetailId],
-	[_gjd_d].[MasterId],
-	[_gjd_d].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[m1].[Id1]
+			[t1].[Id1]
 		FROM
 			(
 				SELECT
-					[t1].[Id1]
+					[Master].[Id1]
 				FROM
-					[MasterClass] [t1]
+					[MasterClass] [Master]
 				LIMIT @take
-			) [m1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [_gjd_d] ON [_gjd_d].[MasterId] = [key_data_result].[Id1]
+			) [t1]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction
@@ -126,21 +126,13 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m1].[Id1],
-	[m1].[Id2],
-	[m1].[Value_1],
-	[m1].[ByteValues]
+	[Master].[Id1],
+	[Master].[Id2],
+	[Master].[Value],
+	[Master].[ByteValues]
 FROM
-	(
-		SELECT
-			[t1].[Id1],
-			[t1].[Id2],
-			[t1].[Value] as [Value_1],
-			[t1].[ByteValues]
-		FROM
-			[MasterClass] [t1]
-		LIMIT @take
-	) [m1]
+	[MasterClass] [Master]
+LIMIT @take
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

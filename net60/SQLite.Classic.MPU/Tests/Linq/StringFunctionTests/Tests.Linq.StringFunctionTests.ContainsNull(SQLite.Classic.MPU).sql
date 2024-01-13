@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 0
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] IS NULL
+	[p].[PersonID] = @id
 

@@ -4,20 +4,20 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND ([a_Parent].[ParentID] IS NOT NULL OR [a_Parent].[Value1] IS NOT NULL)
-			LEFT JOIN [Parent] [a_Parent] ON [_c].[ParentID] = [a_Parent].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
+WHERE
+	[a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -25,8 +25,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 
@@ -36,20 +35,20 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND ([a_Parent].[ParentID] IS NOT NULL OR [a_Parent].[Value1] IS NOT NULL)
-			LEFT JOIN [Parent] [a_Parent] ON [_c].[ParentID] = [a_Parent].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
+WHERE
+	[a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -57,8 +56,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

@@ -73,6 +73,7 @@ SELECT
 	Count(*)
 FROM
 	[NotNullParent] [p]
+		LEFT JOIN [NotNullChild] [a_ChildOuter] ON [p].[ID] = [a_ChildOuter].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

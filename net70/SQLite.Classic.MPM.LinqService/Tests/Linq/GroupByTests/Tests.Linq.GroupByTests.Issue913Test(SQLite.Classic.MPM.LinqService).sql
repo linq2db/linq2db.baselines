@@ -72,27 +72,21 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[c1],
+	[g_2].[c1],
 	Count(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [selectParam].[TradingStatus] = 'D'
-					THEN 1
-				ELSE 0
-			END as [Key_1],
-			CASE
-				WHEN [selectParam].[TradingStatus] = 'D'
+				WHEN [g_1].[TradingStatus] = 'D'
 					THEN 1
 				ELSE 0
 			END as [c1]
 		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+			[Issue913Test] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	[g_2].[c1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

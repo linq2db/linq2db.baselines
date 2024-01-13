@@ -7,17 +7,17 @@ SELECT
 FROM
 	(
 		SELECT
-			Sum([t1].[ID]) as [Sum_1],
-			[t1].[ParentID]
+			Sum([gr_1].[ID]) as [Sum_1],
+			[gr_1].[ParentID]
 		FROM
 			(
 				SELECT
-					[c_1].[ParentID],
-					[c_1].[ChildID] as [ID]
+					[gr].[ParentID],
+					[gr].[ChildID] as [ID]
 				FROM
-					[Child] [c_1]
+					[Child] [gr]
 				WHERE
-					[c_1].[ParentID] < 4
+					[gr].[ParentID] < 4
 				UNION ALL
 				SELECT
 					Coalesce([g_1].[ParentID], 0) as [ParentID],
@@ -26,9 +26,9 @@ FROM
 					[GrandChild] [g_1]
 				WHERE
 					[g_1].[ParentID] >= 4
-			) [t1]
+			) [gr_1]
 		GROUP BY
-			[t1].[ParentID]
+			[gr_1].[ParentID]
 	) [tt]
 WHERE
 	([tt].[Sum_1] <> 0 OR [tt].[Sum_1] IS NULL)

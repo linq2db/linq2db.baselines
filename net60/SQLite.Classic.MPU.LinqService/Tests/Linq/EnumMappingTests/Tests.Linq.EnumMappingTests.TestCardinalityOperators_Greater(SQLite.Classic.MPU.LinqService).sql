@@ -133,8 +133,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[_].[Id],
@@ -148,7 +146,7 @@ FROM
 	[EnumCardinality] [_]
 WHERE
 	[_].[Property1] > 'B'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

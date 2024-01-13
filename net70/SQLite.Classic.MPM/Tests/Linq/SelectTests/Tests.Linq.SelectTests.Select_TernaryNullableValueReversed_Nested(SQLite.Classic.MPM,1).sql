@@ -1,8 +1,14 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 1
+DECLARE @value  -- Int32
+SET     @value = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
-	@Value
+	@value,
+	CASE
+		WHEN 1 = 1 THEN @p
+		ELSE 5
+	END
 
