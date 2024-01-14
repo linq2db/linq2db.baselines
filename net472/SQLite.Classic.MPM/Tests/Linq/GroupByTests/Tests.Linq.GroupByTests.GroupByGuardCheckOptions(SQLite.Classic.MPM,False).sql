@@ -1,4 +1,27 @@
 ﻿BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[m_1].[Gender],
+	[d].[FirstName],
+	[d].[PersonID],
+	[d].[LastName],
+	[d].[MiddleName],
+	[d].[Gender]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[Gender]
+		FROM
+			[Person] [t1]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [m_1].[Gender] = [d].[Gender]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

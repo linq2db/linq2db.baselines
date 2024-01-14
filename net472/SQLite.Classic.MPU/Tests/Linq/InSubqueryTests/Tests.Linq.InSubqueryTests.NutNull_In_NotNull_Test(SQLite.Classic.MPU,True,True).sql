@@ -68,9 +68,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			[test_in_2] [p]
+			[test_in_2] [param]
 		WHERE
-			[p].[ID] = [t].[ID]
+			[param].[ID] = [t].[ID]
 	)
 
 BeforeExecute

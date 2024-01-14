@@ -4,12 +4,12 @@
 SELECT
 	(
 		SELECT
-			Sum([c_1].[ChildID])
+			Sum([a_Children].[ChildID])
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1 AND
-			[c_1].[ParentID] < 10
+			[a_Children].[ParentID] > 1 AND [a_Children].[ParentID] < 10 AND
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]
@@ -18,9 +18,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Child] [c_2]
+			[Child] [c_1]
 		WHERE
-			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1 AND
-			[c_2].[ParentID] < 10
+			[c_1].[ParentID] > 1 AND [c_1].[ParentID] < 10 AND
+			[p].[ParentID] = [c_1].[ParentID]
 	)
 

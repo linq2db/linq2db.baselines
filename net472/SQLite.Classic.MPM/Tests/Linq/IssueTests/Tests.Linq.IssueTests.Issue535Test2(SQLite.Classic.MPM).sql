@@ -26,11 +26,12 @@ SELECT
 	[q].[Id],
 	[q].[Name],
 	[q].[ContactEmail],
-	Coalesce([q].[Enabled], 0)
+	[q].[Enabled]
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE '~')
+	([q].[Name] LIKE @filter ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE '~') AND
+	[q].[ClientType] = 'Client'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

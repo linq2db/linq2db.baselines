@@ -49,15 +49,15 @@ SELECT
 FROM
 	[Table860_1] [it]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[Table860_2] [d]
 				LEFT JOIN [Table860_3] [a_Table3] ON [d].[cId] = [a_Table3].[Id]
 		WHERE
-			[it].[bId] = [d].[Id] AND [a_Table3].[Prop] = 'aaa'
-	))
+			[a_Table3].[Prop] = 'aaa' AND [it].[bId] = [d].[Id]
+	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

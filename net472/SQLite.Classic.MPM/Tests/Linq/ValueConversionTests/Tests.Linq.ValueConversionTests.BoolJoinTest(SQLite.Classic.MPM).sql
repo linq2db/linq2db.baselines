@@ -63,10 +63,21 @@ FROM
 	[ValueConversion] [t1]
 		INNER JOIN (
 			SELECT
-				[t2].[BoolValue]
+				[t2].[Id],
+				[t2].[Value1],
+				[t2].[Value2],
+				[t2].[Enum],
+				[t2].[EnumNullable],
+				[t2].[EnumWithNull],
+				[t2].[EnumWithNullDeclarative],
+				[t2].[BoolValue],
+				[t2].[AnotherBoolValue],
+				[t2].[DateTimeNullable]
 			FROM
 				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_1
+			WHERE
+				[t2].[BoolValue] = @BoolValue
+		) [t2_1] ON [t1].[BoolValue] = @BoolValue_1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

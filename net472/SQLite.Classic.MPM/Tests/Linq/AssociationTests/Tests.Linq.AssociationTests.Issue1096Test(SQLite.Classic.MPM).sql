@@ -90,15 +90,24 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-SELECT DISTINCT
-	[t].[Id],
-	[t].[TargetName],
-	[a_ActualStage].[Id],
-	[a_ActualStage].[TaskId],
-	[a_ActualStage].[Actual]
+SELECT
+	[t_1].[Id],
+	[t_1].[TargetName],
+	[t_1].[Id_1],
+	[t_1].[TaskId],
+	[t_1].[Actual]
 FROM
-	[Issue1096Task] [t]
-		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+	(
+		SELECT DISTINCT
+			[t].[Id],
+			[t].[TargetName],
+			[a_ActualStage].[Id] as [Id_1],
+			[a_ActualStage].[TaskId],
+			[a_ActualStage].[Actual]
+		FROM
+			[Issue1096Task] [t]
+				LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1 AND [a_ActualStage].[Actual] IS NOT NULL
+	) [t_1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

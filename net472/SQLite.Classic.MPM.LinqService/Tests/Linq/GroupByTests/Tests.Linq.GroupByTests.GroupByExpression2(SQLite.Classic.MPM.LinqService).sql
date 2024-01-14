@@ -2,10 +2,10 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[selectParam].[ChildID],
-	Avg([selectParam].[ParentID])
+	[_].[ChildID],
+	Avg([_].[ParentID])
 FROM
-	[Child] [selectParam]
+	[Child] [_]
 GROUP BY
-	[selectParam].[ChildID]
+	[_].[ChildID]
 

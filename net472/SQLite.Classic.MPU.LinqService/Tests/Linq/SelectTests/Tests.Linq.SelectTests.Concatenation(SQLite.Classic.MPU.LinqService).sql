@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[PersonID],
-	[p].[FirstName]
+	'123' || [p].[FirstName] || '456'
 FROM
 	[Person] [p]
 WHERE
