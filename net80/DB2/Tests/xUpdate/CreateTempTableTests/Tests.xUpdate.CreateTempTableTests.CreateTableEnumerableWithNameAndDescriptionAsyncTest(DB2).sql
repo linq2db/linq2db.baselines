@@ -1,0 +1,49 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TempTable"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		DECLARE GLOBAL TEMPORARY TABLE SESSION."TempTable"
+		(
+			"Name" NVarChar(20) NOT NULL
+		)
+		ON COMMIT PRESERVE ROWS
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+INSERT INTO SESSION."TempTable"
+(
+	"Name"
+)
+VALUES
+('John')
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+SELECT
+	"t"."Name"
+FROM
+	"Person" "p"
+		INNER JOIN SESSION."TempTable" "t" ON "p"."FirstName" = "t"."Name"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TempTable"';
+END
+
