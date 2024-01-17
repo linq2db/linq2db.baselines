@@ -1,0 +1,31 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."FirstName",
+	"t1".ID,
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
+FROM
+	(
+		SELECT
+			"p"."FirstName",
+			"p"."PersonID" as ID,
+			"p"."LastName",
+			"p"."MiddleName",
+			"p"."Gender"
+		FROM
+			"Person" "p"
+		FETCH FIRST 2 ROWS ONLY
+	) "t1"
+UNION ALL
+SELECT
+	"t2"."FirstName",
+	"t2"."PersonID",
+	"t2"."LastName",
+	"t2"."MiddleName",
+	"t2"."Gender"
+FROM
+	"Person" "t2"
+
