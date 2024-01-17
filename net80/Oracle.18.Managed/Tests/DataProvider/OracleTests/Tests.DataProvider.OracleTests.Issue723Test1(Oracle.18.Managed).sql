@@ -1,0 +1,101 @@
+﻿BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT user FROM dual
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+GRANT CREATE ANY TRIGGER TO SYSTEM
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+GRANT CREATE ANY SEQUENCE TO SYSTEM
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+GRANT DROP ANY TRIGGER TO SYSTEM
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+GRANT DROP ANY SEQUENCE TO SYSTEM
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+DROP USER C##ISSUE723SCHEMA CASCADE
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE USER C##ISSUE723SCHEMA IDENTIFIED BY password
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT default_tablespace FROM sys.dba_users WHERE username = 'C##ISSUE723SCHEMA'
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+ALTER USER C##ISSUE723SCHEMA quota unlimited on USERS
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
+(
+	"Id" Int  NOT NULL,
+
+	CONSTRAINT PK_ISSUE723TABLE PRIMARY KEY ("Id")
+)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE OR REPLACE TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE
+BEFORE INSERT ON C##ISSUE723SCHEMA.ISSUE723TABLE FOR EACH ROW
+BEGIN
+	SELECT C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE.NEXTVAL INTO :NEW."Id" FROM dual;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO C##ISSUE723SCHEMA.ISSUE723TABLE VALUES (DEFAULT)
+RETURNING 
+	"Id" INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO C##ISSUE723SCHEMA.ISSUE723TABLE VALUES (DEFAULT)
+RETURNING 
+	"Id" INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE';
+	EXECUTE IMMEDIATE 'DROP SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE';
+	EXECUTE IMMEDIATE 'DROP TABLE C##ISSUE723SCHEMA.ISSUE723TABLE';
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+DROP USER C##ISSUE723SCHEMA CASCADE
+
