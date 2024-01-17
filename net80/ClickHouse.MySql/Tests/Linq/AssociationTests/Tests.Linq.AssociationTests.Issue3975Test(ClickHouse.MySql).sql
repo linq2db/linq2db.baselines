@@ -1,0 +1,31 @@
+﻿BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	lw_Issue3975TestClass.ParentID,
+	detail.ParentID,
+	detail.ChildID
+FROM
+	(
+		SELECT DISTINCT
+			t2.ParentID as ParentID
+		FROM
+			(
+				SELECT
+					t1.ParentID as ParentID
+				FROM
+					Parent t1
+				LIMIT toInt32(1)
+			) t2
+	) lw_Issue3975TestClass
+		INNER JOIN Child detail ON lw_Issue3975TestClass.ParentID = detail.ParentID
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	t1.ParentID
+FROM
+	Parent t1
+LIMIT toInt32(1)
+
