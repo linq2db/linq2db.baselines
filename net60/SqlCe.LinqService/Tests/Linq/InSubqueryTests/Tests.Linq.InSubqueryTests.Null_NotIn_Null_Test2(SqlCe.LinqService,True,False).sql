@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- SqlCe
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [test_in_2]
 
 BeforeExecute
