@@ -123,6 +123,21 @@ FROM
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	[t].[ID] IN (
+		SELECT
+			[p].[ID]
+		FROM
+			[test_in_2] [p]
+	)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
 IF (OBJECT_ID(N'[test_in_2]', N'U') IS NOT NULL)
 	DROP TABLE [test_in_2]
 
