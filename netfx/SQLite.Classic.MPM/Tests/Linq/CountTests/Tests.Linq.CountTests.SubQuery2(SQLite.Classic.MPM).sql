@@ -7,17 +7,17 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	),
 	(
 		SELECT
 			Count(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children_1]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] = [p].[ParentID]
+			[a_Children_1].[ParentID] = [p].[ParentID] AND [p].[ParentID] = [a_Children_1].[ParentID]
 	)
 FROM
 	[Parent] [p]

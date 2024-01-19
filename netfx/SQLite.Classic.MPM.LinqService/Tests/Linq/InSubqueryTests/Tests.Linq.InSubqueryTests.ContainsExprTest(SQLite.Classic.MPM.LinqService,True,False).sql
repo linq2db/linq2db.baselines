@@ -13,8 +13,8 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Child] [c_1]
+			[Child] [param]
 		WHERE
-			[c_1].[ParentID] = [p].[ParentID] + @n
+			[param].[ParentID] = [p].[ParentID] + @n
 	)
 

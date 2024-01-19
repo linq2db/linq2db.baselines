@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -15,13 +13,13 @@ WHERE
 		FROM
 			(
 				SELECT
-					[p].[ParentID],
-					[p].[Value1] as [Value_1]
+					[param].[ParentID],
+					[param].[Value1] as [Value_1]
 				FROM
-					[Parent] [p]
-				LIMIT @take
-			) [t1]
+					[Parent] [param]
+				LIMIT 100
+			) [param_1]
 		WHERE
-			[t1].[ParentID] = [c_1].[ParentID] AND [t1].[Value_1] = [c_1].[ParentID]
+			[param_1].[ParentID] = [c_1].[ParentID] AND [param_1].[Value_1] = [c_1].[ParentID]
 	)
 

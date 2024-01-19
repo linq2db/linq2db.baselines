@@ -57,21 +57,15 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[a_1].[Id],
-	[t1].[bc],
-	[t1].[bid],
-	[t1].[cid]
+	[t1].[Id],
+	[bc].[AId],
+	[bc].[Id],
+	[c_1].[Id]
 FROM
-	[A] [a_1]
-		LEFT JOIN (
-			SELECT
-				[b_1].[AId] as [bc],
-				[b_1].[Id] as [bid],
-				[c_1].[Id] as [cid]
-			FROM
-				[B] [b_1]
-					INNER JOIN [C] [c_1] ON [b_1].[Id] = [c_1].[BId]
-		) [t1] ON [a_1].[Id] = [t1].[bc]
+	[A] [t1]
+		LEFT JOIN ([B] [bc]
+			INNER JOIN [C] [c_1] ON [bc].[Id] = [c_1].[BId])
+		ON [t1].[Id] = [bc].[AId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
