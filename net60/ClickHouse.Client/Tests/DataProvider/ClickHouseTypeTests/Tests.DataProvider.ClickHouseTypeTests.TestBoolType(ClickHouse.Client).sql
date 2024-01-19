@@ -139,6 +139,27 @@ WHERE
 	r.Column = false AND r.ColumnNullable IS NULL
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = false AND r.ColumnNullable IS NULL
+
+BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -284,6 +305,27 @@ WHERE
 	r.Column = true AND r.ColumnNullable = false
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = true AND r.ColumnNullable = false
+
+BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -388,6 +430,27 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = false AND r.ColumnNullable = true
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -574,6 +637,27 @@ WHERE
 	r.Column = false AND r.ColumnNullable IS NULL
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = false AND r.ColumnNullable IS NULL
+
+BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -719,6 +803,27 @@ WHERE
 	r.Column = true AND r.ColumnNullable = false
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = true AND r.ColumnNullable = false
+
+BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -823,6 +928,27 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = false AND r.ColumnNullable = true
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -968,6 +1094,27 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -1154,6 +1301,27 @@ WHERE
 	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
 
 BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -1258,6 +1426,27 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
