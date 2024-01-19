@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -9,16 +7,18 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] IN (
+	EXISTS(
 		SELECT
-			[t1].[ParentID]
+			*
 		FROM
 			(
 				SELECT
-					[p].[ParentID]
+					[param].[ParentID]
 				FROM
-					[Parent] [p]
-				LIMIT @take
-			) [t1]
+					[Parent] [param]
+				LIMIT 100
+			) [param_1]
+		WHERE
+			[param_1].[ParentID] = [c_1].[ParentID]
 	)
 

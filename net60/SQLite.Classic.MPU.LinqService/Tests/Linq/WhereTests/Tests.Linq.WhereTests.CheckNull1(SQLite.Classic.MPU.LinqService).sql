@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] IS NOT NULL OR [p].[Value1] IS NOT NULL)
+	[p].[ParentID] IS NOT NULL
 

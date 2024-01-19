@@ -29,8 +29,6 @@ CREATE TABLE IF NOT EXISTS [person649]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @added  -- DateTime
-SET     @added = '2017-01-01'
 
 SELECT
 	[a_Person].[personid],
@@ -40,7 +38,7 @@ FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]
 WHERE
-	DateTime([f].[added]) >= DateTime(@added)
+	DateTime([f].[added]) >= DateTime(Date('2017-01-01'))
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]

@@ -44,25 +44,29 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Value  -- Int32
+SET     @Value = 1
 
 UPDATE
 	[Test3697Item]
 SET
-	[Value] = 1
+	[Value] = @Value
 FROM
-	[Test3697] [cp]
+	[Test3697] [a]
 WHERE
-	[cp].[Id] = [Test3697Item].[TestId]
+	[a].[Id] = [Test3697Item].[TestId]
 RETURNING
 	[Test3697Item].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Value  -- Int32
+SET     @Value = 1
 
 UPDATE
 	[Test3697Item]
 SET
-	[Value] = 1
+	[Value] = @Value
 FROM
 	[Test3697] [a]
 WHERE

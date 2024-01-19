@@ -41,17 +41,17 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @SomeValue1  -- Int32
 SET     @SomeValue1 = 8
+DECLARE @SomeValue2  -- Int32
+SET     @SomeValue2 = 4
 
 UPDATE
 	[ValuesTable]
 SET
 	[SomeValue1] = @SomeValue1,
-	[SomeValue2] = 4
+	[SomeValue2] = @SomeValue2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -59,7 +59,7 @@ SELECT
 	[t1].[SomeValue2]
 FROM
 	[ValuesTable] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -73,8 +73,6 @@ SET
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -82,7 +80,7 @@ SELECT
 	[t1].[SomeValue2]
 FROM
 	[ValuesTable] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

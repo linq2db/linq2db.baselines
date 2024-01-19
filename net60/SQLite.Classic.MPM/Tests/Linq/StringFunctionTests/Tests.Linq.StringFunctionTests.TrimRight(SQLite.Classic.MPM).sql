@@ -2,11 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[PersonID],
-	[p].[FirstName]
+	[pp].[PersonID],
+	'  ' || [pp].[FirstName] || ' '
 FROM
-	[Person] [p]
+	[Person] [pp]
 WHERE
-	RTRIM('  ' || [p].[FirstName] || ' ') = '  John' AND
-	[p].[PersonID] = 1
+	RTRIM('  ' || [pp].[FirstName] || ' ') = '  John' AND
+	[pp].[PersonID] = 1
 

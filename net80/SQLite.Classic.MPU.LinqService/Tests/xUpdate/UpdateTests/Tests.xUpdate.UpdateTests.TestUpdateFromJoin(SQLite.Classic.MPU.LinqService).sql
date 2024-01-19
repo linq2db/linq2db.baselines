@@ -53,12 +53,18 @@ SET
 	[col6] = CASE
 		WHEN [gt_s_one].[col3] = 'empty'
 			THEN ''
-		ELSE Cast([am].[id] as NVarChar(11))
+		ELSE Cast([y1_1].[id] as NVarChar(255))
 	END
 FROM
-	[access_mode] [am]
+	(
+		SELECT
+			[y1].[id],
+			Upper([y1].[code]) as [c1]
+		FROM
+			[access_mode] [y1]
+	) [y1_1]
 WHERE
-	(Upper(Replace([gt_s_one].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
+	(Upper(Replace([gt_s_one].[col3], 'auth.', '')) = [y1_1].[c1] OR Upper(Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND [y1_1].[c1] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

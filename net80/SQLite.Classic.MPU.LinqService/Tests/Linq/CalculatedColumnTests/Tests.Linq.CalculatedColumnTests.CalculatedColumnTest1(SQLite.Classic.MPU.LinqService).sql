@@ -8,13 +8,14 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] || ', ' || [i].[FirstName],
+	[i].[LastName] || ', ' || [i].[FirstName],
 	(
 		SELECT
 			Count(*)
 		FROM
-			[Doctor] [d]
+			[Doctor] [t1]
 		WHERE
-			[d].[PersonID] = [i].[PersonID]
+			[t1].[PersonID] = [i].[PersonID]
 	)
 FROM
 	[Person] [i]

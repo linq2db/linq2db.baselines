@@ -36,26 +36,12 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'abc0'
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 5
-
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = @Diagnosis
-WHERE
-	[Patient].[PersonID] = @PersonID
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -65,41 +51,53 @@ VALUES
 	@PersonID,
 	@Diagnosis
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = @Diagnosis
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @PersonID  -- Int32
+SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 5
 
-UPDATE
-	[Patient]
-SET
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
-WHERE
-	[Patient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'abc2'
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'abc2'
 
-UPDATE
-	[Patient]
-SET
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
-WHERE
-	[Patient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -108,5 +106,5 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 

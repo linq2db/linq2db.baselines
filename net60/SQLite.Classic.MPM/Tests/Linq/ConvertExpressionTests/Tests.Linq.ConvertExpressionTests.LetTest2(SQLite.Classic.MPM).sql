@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -11,11 +9,11 @@ FROM
 WHERE
 	(
 		SELECT
-			1
+			[a_Children].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
-		LIMIT @take
+			[p].[ParentID] = [a_Children].[ParentID]
+		LIMIT 1
 	) IS NOT NULL
 

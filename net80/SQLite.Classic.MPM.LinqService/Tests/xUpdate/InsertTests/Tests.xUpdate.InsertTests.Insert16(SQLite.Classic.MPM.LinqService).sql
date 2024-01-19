@@ -20,7 +20,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Cast(@idx as NVarChar(11)),
+	Cast(@idx as NVarChar(255)),
 	'M'
 )
 

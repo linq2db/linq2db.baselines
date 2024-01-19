@@ -9,9 +9,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Parent] [p]
+				[Parent] [param]
 			WHERE
-				[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+				[param].[ParentID] = @ParentID AND [param].[ParentID] = 1
 		)
 			THEN 1
 		ELSE 0
@@ -28,9 +28,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Parent] [p]
+				[Parent] [param]
 			WHERE
-				[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+				[param].[ParentID] = @ParentID AND [param].[ParentID] = 1
 		)
 			THEN 1
 		ELSE 0

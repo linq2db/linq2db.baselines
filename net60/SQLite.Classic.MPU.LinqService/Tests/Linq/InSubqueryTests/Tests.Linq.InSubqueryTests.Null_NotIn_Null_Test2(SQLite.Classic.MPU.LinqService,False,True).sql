@@ -166,14 +166,14 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	NOT EXISTS(
+	NOT (EXISTS(
 		SELECT
-			[p].[ID]
+			*
 		FROM
-			[test_in_2] [p]
+			[test_in_2] [param]
 		WHERE
-			([p].[ID] = [t].[ID] OR [p].[ID] IS NULL AND [t].[ID] IS NULL)
-	)
+			([param].[ID] = [t].[ID] OR [param].[ID] IS NULL AND [t].[ID] IS NULL)
+	))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

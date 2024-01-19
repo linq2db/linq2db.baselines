@@ -6,12 +6,12 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [id]
+			[Child] [ch]
 		WHERE
-			[t1].[ParentID] = [id].[ParentID] AND [id].[ChildID] < 30
+			[ch].[ChildID] < 30 AND [g_1].[ParentID] = [ch].[ParentID]
 	)
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 
