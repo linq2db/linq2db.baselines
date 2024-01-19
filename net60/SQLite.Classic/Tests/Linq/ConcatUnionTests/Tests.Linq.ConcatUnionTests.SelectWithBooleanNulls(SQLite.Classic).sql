@@ -25,7 +25,7 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Child] [t2]
+				[Child] [t1]
 		)
 			THEN 1
 		ELSE 0

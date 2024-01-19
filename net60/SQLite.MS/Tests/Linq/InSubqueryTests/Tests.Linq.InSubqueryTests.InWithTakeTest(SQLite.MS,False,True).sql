@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -18,7 +16,7 @@ WHERE
 					[p].[ParentID]
 				FROM
 					[Parent] [p]
-				LIMIT @take
+				LIMIT 100
 			) [t1]
 	)
 

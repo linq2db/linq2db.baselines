@@ -20,9 +20,9 @@ WHERE
 		SELECT
 			Count(*)
 		FROM
-			[Orders] [t1]
+			[Orders] [a_Orders]
 		WHERE
-			([c_1].[CustomerID] = [t1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
+			([c_1].[CustomerID] = [a_Orders].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
 	) <= 1
 UNION ALL
 SELECT
@@ -44,8 +44,8 @@ WHERE
 		SELECT
 			Count(*)
 		FROM
-			[Orders] [t2]
+			[Orders] [a_Orders_1]
 		WHERE
-			([c_2].[CustomerID] = [t2].[CustomerID] OR [c_2].[CustomerID] IS NULL AND [t2].[CustomerID] IS NULL)
+			([c_2].[CustomerID] = [a_Orders_1].[CustomerID] OR [c_2].[CustomerID] IS NULL AND [a_Orders_1].[CustomerID] IS NULL)
 	) > 1
 

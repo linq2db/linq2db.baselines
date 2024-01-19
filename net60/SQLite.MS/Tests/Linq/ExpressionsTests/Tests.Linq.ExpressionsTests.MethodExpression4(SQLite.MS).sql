@@ -8,10 +8,10 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > @n
-	)
+			[a_Children].[ChildID] > @n AND [p].[ParentID] = [a_Children].[ParentID]
+	) + 4
 FROM
 	[Parent] [p]
 

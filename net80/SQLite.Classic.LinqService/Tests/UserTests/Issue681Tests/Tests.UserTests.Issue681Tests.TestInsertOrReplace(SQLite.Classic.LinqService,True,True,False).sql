@@ -16,26 +16,12 @@ CREATE TABLE IF NOT EXISTS [Issue681Table]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 10
-DECLARE @ID  -- Int32
-SET     @ID = 5
-
-UPDATE
-	[main].[Issue681Table]
-SET
-	[Value] = @Value
-WHERE
-	[main].[Issue681Table].[ID] = @ID
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
 DECLARE @Value  -- Int32
 SET     @Value = 10
 
-INSERT INTO [main].[Issue681Table]
+INSERT INTO [main].[Issue681Table] AS [t1]
 (
 	[ID],
 	[Value]
@@ -45,20 +31,28 @@ VALUES
 	@ID,
 	@Value
 )
+ON CONFLICT ([ID]) DO UPDATE SET
+	[Value] = @Value
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 10
 DECLARE @ID  -- Int32
 SET     @ID = 5
+DECLARE @Value  -- Int32
+SET     @Value = 10
 
-UPDATE
-	[main].[Issue681Table]
-SET
+INSERT INTO [main].[Issue681Table] AS [t1]
+(
+	[ID],
+	[Value]
+)
+VALUES
+(
+	@ID,
+	@Value
+)
+ON CONFLICT ([ID]) DO UPDATE SET
 	[Value] = @Value
-WHERE
-	[main].[Issue681Table].[ID] = @ID
 
 BeforeExecute
 -- SQLite.Classic SQLite

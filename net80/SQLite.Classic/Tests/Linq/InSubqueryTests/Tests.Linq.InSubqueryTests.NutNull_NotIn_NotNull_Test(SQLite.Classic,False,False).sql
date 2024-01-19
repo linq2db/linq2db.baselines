@@ -62,12 +62,14 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	[t].[ID] NOT IN (
+	NOT (EXISTS(
 		SELECT
-			[p].[ID]
+			*
 		FROM
-			[test_in_2] [p]
-	)
+			[test_in_2] [param]
+		WHERE
+			[param].[ID] = [t].[ID]
+	))
 ORDER BY
 	[t].[ID]
 

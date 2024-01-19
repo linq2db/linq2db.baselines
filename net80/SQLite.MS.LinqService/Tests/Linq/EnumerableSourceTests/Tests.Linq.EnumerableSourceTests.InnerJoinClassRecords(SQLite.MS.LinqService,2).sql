@@ -10,9 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL [PersonID] WHERE 1 = 0
+			SELECT NULL [ID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(1), (2)
-			) [n] ON [p].[PersonID] = [n].[PersonID]
+			) [n] ON [p].[PersonID] = [n].[ID]
 

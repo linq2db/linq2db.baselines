@@ -35,11 +35,12 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 
-WITH [CTE_1] ([ParentID])
+WITH [CTE_1] ([ParentID], [ChildID])
 AS
 (
 	SELECT
-		[c_1].[ParentID]
+		[c_1].[ParentID],
+		[c_1].[ChildID]
 	FROM
 		[CteChild] [c_1]
 	WHERE
@@ -50,7 +51,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			[ct].[ParentID]
 		FROM
 			[CteChild] [c_2]
 				INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]

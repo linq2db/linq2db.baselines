@@ -7,9 +7,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Child] [c_1]
+				[Child] [param]
 			WHERE
-				[c_1].[ParentID] = 1
+				[param].[ParentID] = 1
 		)
 			THEN 1
 		ELSE 0

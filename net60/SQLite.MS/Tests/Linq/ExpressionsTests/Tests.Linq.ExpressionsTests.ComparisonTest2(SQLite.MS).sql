@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @personId  -- Int32
-SET     @personId = 2
+SET     @personId = 0
+DECLARE @personId_1  -- Int32
+SET     @personId_1 = 2
 
 SELECT
 	CASE
@@ -9,48 +11,38 @@ SELECT
 			SELECT
 				*
 			FROM
+				[Person] [_]
+			WHERE
 				(
 					SELECT
-						(
-							SELECT
-								Count(*)
-							FROM
-								[Patient] [_]
-							WHERE
-								[_].[PersonID] IS NULL AND [_].[PersonID] NOT IN (
-									SELECT
-										[_1].[PersonID]
-									FROM
-										[Patient] [_1]
-									WHERE
-										[_1].[PersonID] = @personId
-								)
-						) as [cnt],
-						(
-							SELECT
-								Count(*)
-							FROM
-								[Patient] [_2]
-							WHERE
-								[_2].[PersonID] = @personId AND [_2].[PersonID] NOT IN (
-									SELECT
-										[_3].[PersonID]
-									FROM
-										[Patient] [_3]
-									WHERE
-										[_3].[PersonID] IS NULL
-								)
-						) as [ex],
-						[_4].[FirstName],
-						[_4].[PersonID],
-						[_4].[LastName],
-						[_4].[MiddleName],
-						[_4].[Gender]
+						Count(*)
 					FROM
-						[Person] [_4]
-				) [_5]
-			WHERE
-				[_5].[cnt] = 0 AND [_5].[ex] = 0
+						[Patient] [_1]
+					WHERE
+						[_1].[PersonID] = @personId AND NOT (EXISTS(
+							SELECT
+								*
+							FROM
+								[Patient] [param]
+							WHERE
+								[param].[PersonID] = [_1].[PersonID] AND [param].[PersonID] = @personId_1
+						))
+				) = 0 AND
+				(
+					SELECT
+						Count(*)
+					FROM
+						[Patient] [_2]
+					WHERE
+						[_2].[PersonID] = @personId_1 AND NOT (EXISTS(
+							SELECT
+								*
+							FROM
+								[Patient] [param_1]
+							WHERE
+								[param_1].[PersonID] = [_2].[PersonID] AND [param_1].[PersonID] = @personId
+						))
+				) = 0
 		)
 			THEN 1
 		ELSE 0

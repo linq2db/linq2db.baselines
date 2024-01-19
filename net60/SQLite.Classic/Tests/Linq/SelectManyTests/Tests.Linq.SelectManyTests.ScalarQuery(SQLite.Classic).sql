@@ -3,10 +3,10 @@
 
 SELECT
 	[p2].[PersonID],
-	[p1].[FirstName]
+	[t1].[FirstName]
 FROM
-	[Person] [p1],
-	[Person] [p2]
+	[Person] [t1]
+		CROSS JOIN [Person] [p2]
 WHERE
-	[p1].[PersonID] = [p2].[PersonID]
+	[t1].[PersonID] = [p2].[PersonID]
 

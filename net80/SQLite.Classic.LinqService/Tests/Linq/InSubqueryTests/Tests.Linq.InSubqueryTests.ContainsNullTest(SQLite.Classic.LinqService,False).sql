@@ -5,11 +5,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				[c_1].[Value1]
+				*
 			FROM
-				[Parent] [c_1]
+				[Parent] [param]
 			WHERE
-				[c_1].[Value1] IS NULL
+				[param].[Value1] IS NULL
 		)
 			THEN 1
 		ELSE 0

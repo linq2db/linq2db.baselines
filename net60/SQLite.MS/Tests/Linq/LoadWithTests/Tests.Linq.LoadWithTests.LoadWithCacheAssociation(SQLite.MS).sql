@@ -212,16 +212,15 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m2]
-		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
+		LEFT JOIN [MainItem] [a_MainItem] ON ([m2].[MainItemId] = [a_MainItem].[Id] OR [m2].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
 WHERE
-	([a_MainItem].[Id] IS NOT NULL OR [a_MainItem].[Value] IS NOT NULL) AND
-	(
+	[a_MainItem].[Id] IS NOT NULL AND (
 		SELECT
 			Count(*)
 		FROM
-			[SubItem1] [t1]
+			[SubItem1] [a_SubItems1]
 		WHERE
-			[a_MainItem].[Id] = [t1].[ParentId]
+			[a_MainItem].[Id] IS NOT NULL AND [a_MainItem].[Id] = [a_SubItems1].[ParentId]
 	) > 1
 
 BeforeExecute

@@ -11,8 +11,8 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Parent] [p]
+			[Parent] [param]
 		WHERE
-			[p].[Value1] = 1
+			[param].[Value1] = 1
 	)
 

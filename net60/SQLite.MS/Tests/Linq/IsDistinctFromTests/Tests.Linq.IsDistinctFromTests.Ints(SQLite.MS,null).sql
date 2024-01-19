@@ -35,6 +35,8 @@ SELECT
 	Count(*)
 FROM
 	[Src] [s]
+WHERE
+	1 = 1
 
 BeforeExecute
 -- SQLite.MS SQLite

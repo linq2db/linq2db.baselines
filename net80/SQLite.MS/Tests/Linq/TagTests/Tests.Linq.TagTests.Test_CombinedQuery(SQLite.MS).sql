@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[LastName] = 'a' AND [p].[FirstName] = 'a'
+	[p].[FirstName] = 'a' AND [p].[LastName] = 'a'
 

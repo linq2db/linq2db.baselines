@@ -30,15 +30,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[event_id],
 	[t1].[event_description]
 FROM
 	[Issue1403Tests_2] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

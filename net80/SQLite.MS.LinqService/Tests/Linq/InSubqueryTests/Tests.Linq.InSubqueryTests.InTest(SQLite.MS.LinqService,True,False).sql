@@ -11,8 +11,8 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Parent] [p]
+			[Parent] [param]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
+			[param].[ParentID] = [c_1].[ParentID]
 	)
 

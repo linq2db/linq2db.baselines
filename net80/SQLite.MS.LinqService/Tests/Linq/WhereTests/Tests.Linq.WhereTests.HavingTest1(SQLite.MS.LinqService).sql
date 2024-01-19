@@ -2,11 +2,16 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	[c_2].[Count_1]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
-HAVING
-	Count(*) > 1
+	(
+		SELECT
+			Count(*) as [Count_1]
+		FROM
+			[Child] [c_1]
+		GROUP BY
+			[c_1].[ParentID]
+	) [c_2]
+WHERE
+	[c_2].[Count_1] > 1
 

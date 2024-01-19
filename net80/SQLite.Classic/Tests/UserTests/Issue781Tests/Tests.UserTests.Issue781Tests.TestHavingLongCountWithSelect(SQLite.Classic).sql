@@ -6,18 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			0 as [c1]
+			'test' || [a_Patient].[Diagnosis] as [c1]
 		FROM
-			(
-				SELECT
-					'test' || [a_Patient].[Diagnosis] as [Key_1]
-				FROM
-					[Person] [selectParam]
-						LEFT JOIN [Patient] [a_Patient] ON [selectParam].[PersonID] = [a_Patient].[PersonID]
-			) [t1]
+			[Person] [_]
+				LEFT JOIN [Patient] [a_Patient] ON [_].[PersonID] = [a_Patient].[PersonID]
 		GROUP BY
-			[t1].[Key_1]
+			'test' || [a_Patient].[Diagnosis]
 		HAVING
-			[t1].[Key_1] IS NOT NULL
-	) [t2]
+			'test' || [a_Patient].[Diagnosis] IS NOT NULL
+	) [t1]
 

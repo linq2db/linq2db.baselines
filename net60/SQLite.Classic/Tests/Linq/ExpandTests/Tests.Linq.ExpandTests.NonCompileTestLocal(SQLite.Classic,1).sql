@@ -34,10 +34,10 @@ SELECT
 	[t].[Id],
 	[t].[Value]
 FROM
-	[SampleClass] [t],
-	[SampleClass] [c_1]
+	[SampleClass] [t]
+		CROSS JOIN [SampleClass] [t2]
 WHERE
-	[c_1].[Value] > @param
+	[t2].[Value] > @param
 
 BeforeExecute
 -- SQLite.Classic SQLite

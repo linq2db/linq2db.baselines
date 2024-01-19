@@ -32,24 +32,31 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[selectParam].[Title],
+	[g_2].[Title],
 	(
 		SELECT
 			Count(*)
 		FROM
 			(
 				SELECT DISTINCT
-					[_].[Title]
+					[it].[Title]
 				FROM
-					[odata_person] [_]
+					[odata_person] [it]
 				WHERE
-					[selectParam].[Title] = [_].[Title]
+					[g_2].[c1] = 'Title' AND [g_2].[Title] = [it].[Title]
 			) [t1]
 	)
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			'Title' as [c1],
+			[g_1].[Title]
+		FROM
+			[odata_person] [g_1]
+	) [g_2]
 GROUP BY
-	[selectParam].[Title]
+	[g_2].[c1],
+	[g_2].[Title]
 
 BeforeExecute
 -- SQLite.Classic SQLite

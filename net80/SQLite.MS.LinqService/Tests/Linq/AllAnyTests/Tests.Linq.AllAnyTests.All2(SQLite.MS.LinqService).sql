@@ -13,6 +13,6 @@ WHERE
 		FROM
 			[Child] [c_1]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] <= 3
+			[c_1].[ParentID] <= 3 AND [p].[ParentID] = [c_1].[ParentID]
 	)
 

@@ -18,9 +18,9 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[GrandChild] [g_2]
+			[GrandChild] [t1]
 		WHERE
-			[g_2].[ChildID] = [c_1].[ChildID] AND [g_2].[GrandChildID] > 0
+			[t1].[ChildID] = [c_1].[ChildID] AND [t1].[GrandChildID] > 0
 	)
 FROM
 	[Child] [c_1]

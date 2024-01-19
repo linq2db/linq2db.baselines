@@ -36,28 +36,10 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @i  -- Int32
-SET     @i = 0
 DECLARE @id  -- Int32
 SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
-DECLARE @i  -- Int32
-SET     @i = 0
-
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -65,43 +47,59 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	Cast((Length(@diagnosis) + @i) as NVarChar(11))
+	Cast(3 as NVarChar(255))
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast(Length([t1].[Diagnosis]) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @i  -- Int32
-SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
+SET     @i = 4
+DECLARE @i_1  -- Int32
+SET     @i_1 = 1
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	Cast(@i as NVarChar(255))
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i_1) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @i  -- Int32
-SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
+SET     @i = 5
+DECLARE @i_1  -- Int32
+SET     @i_1 = 2
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	Cast(@i as NVarChar(255))
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i_1) as NVarChar(255))
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -110,5 +108,5 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 

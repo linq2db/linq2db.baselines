@@ -42,19 +42,17 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @part1  -- Int32
+DECLARE @part1  -- Int16
 SET     @part1 = 4
 DECLARE @part2  -- Int32
 SET     @part2 = 4
-DECLARE @p  -- DateTime
-SET     @p = '2018-01-02'
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(([t].[SmallIntValue] + @part1) - @part2) || ' Day')) < DateTime(@p)
+	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],((Cast([t].[SmallIntValue] as INTEGER) + @part1) - @part2) || ' Day')) < DateTime(Date('2018-01-02'))
 
 BeforeExecute
 -- SQLite.Classic SQLite

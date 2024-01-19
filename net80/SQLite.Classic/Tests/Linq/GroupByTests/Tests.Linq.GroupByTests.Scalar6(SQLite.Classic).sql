@@ -8,13 +8,12 @@ SELECT
 		FROM
 			[Child] [ch]
 		WHERE
-			[ch_1].[ParentID] = [ch].[ParentID] AND [ch].[ParentID] < 3 AND
-			[ch].[ParentID] < 3
+			[ch].[ParentID] < 3 AND [ch].[ParentID] < 3 AND [g_1].[ParentID] = [ch].[ParentID]
 	)
 FROM
-	[Child] [ch_1]
+	[Child] [g_1]
 WHERE
-	[ch_1].[ParentID] < 3
+	[g_1].[ParentID] < 3
 GROUP BY
-	[ch_1].[ParentID]
+	[g_1].[ParentID]
 

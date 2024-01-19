@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -97,15 +97,17 @@ SELECT
 FROM
 	(
 		SELECT
+			Count(*) as [Count_1],
 			[a_Customer].[CustomerID]
 		FROM
-			[Orders] [t1]
-				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			[Orders] [g_1]
+				INNER JOIN [Customers] [a_Customer] ON ([g_1].[CustomerID] = [a_Customer].[CustomerID] OR [g_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 		GROUP BY
 			[a_Customer].[CustomerID]
-		HAVING
-			Count(*) > 20
-	) [cp]
-		INNER JOIN [Orders] [c_1] ON ([cp].[CustomerID] = [a_Customer_1].[CustomerID] OR [cp].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
-			INNER JOIN [Customers] [a_Customer_1] ON ([c_1].[CustomerID] = [a_Customer_1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
+	) [g_2]
+		INNER JOIN ([Orders] [o]
+			INNER JOIN [Customers] [a_Customer_1] ON ([o].[CustomerID] = [a_Customer_1].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL))
+		ON ([g_2].[CustomerID] = [a_Customer_1].[CustomerID] OR [g_2].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
+WHERE
+	[g_2].[Count_1] > 20
 

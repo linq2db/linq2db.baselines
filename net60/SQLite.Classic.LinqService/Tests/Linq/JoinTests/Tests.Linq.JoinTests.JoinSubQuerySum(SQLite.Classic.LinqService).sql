@@ -9,7 +9,7 @@ SELECT
 		FROM
 			[Child] [c_1]
 		WHERE
-			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] <> [p].[ParentID] * 10 + 1
+			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] <> [p].[ParentID] * 10 + 1
 	)
 FROM
 	[Parent] [p]

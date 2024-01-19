@@ -9,9 +9,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [t1]
+				[Person] [param]
 			WHERE
-				[t1].[PersonID] = @ID
+				[param].[PersonID] = @ID
 		)
 			THEN 1
 		ELSE 0

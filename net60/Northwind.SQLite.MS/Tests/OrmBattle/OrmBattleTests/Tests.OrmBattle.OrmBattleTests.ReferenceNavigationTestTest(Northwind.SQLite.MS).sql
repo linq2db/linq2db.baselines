@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -98,6 +98,7 @@ SELECT
 	[a_Order].[ShipPostalCode],
 	[a_Order].[ShipCountry],
 	[a_Product].[ProductID],
+	[a_Product].[Discontinued],
 	[a_Product].[ProductName],
 	[a_Product].[SupplierID],
 	[a_Product].[CategoryID],
@@ -105,12 +106,11 @@ SELECT
 	[a_Product].[UnitPrice],
 	[a_Product].[UnitsInStock],
 	[a_Product].[UnitsOnOrder],
-	[a_Product].[ReorderLevel],
-	[a_Product].[Discontinued]
+	[a_Product].[ReorderLevel]
 FROM
 	[Order Details] [od]
 		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
-		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON ([a_Product].[CategoryID] = [a_Category].[CategoryID] OR [a_Product].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
 		LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 WHERE
 	[a_Category].[CategoryName] = 'Seafood'

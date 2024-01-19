@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @value2  -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id  -- Int32
 SET     @id = 100500
@@ -66,8 +66,6 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 100500
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[SmallIntValue]
@@ -75,5 +73,5 @@ FROM
 	[LinqDataTypes] [_]
 WHERE
 	[_].[ID] = @id
-LIMIT @take
+LIMIT 1
 

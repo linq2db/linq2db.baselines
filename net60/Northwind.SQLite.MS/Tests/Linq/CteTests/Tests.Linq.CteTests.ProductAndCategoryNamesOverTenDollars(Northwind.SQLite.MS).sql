@@ -10,7 +10,7 @@ AS
 		[p].[ProductName]
 	FROM
 		[Products] [p]
-			LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+			LEFT JOIN [Categories] [a_Category] ON ([p].[CategoryID] = [a_Category].[CategoryID] OR [p].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
 	WHERE
 		[p].[UnitPrice] > 10
 )
@@ -34,7 +34,7 @@ SELECT
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
-		LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON ([p].[CategoryID] = [a_Category].[CategoryID] OR [p].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
 WHERE
 	[p].[UnitPrice] > 10
 ORDER BY

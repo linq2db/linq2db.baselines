@@ -19,7 +19,7 @@ SELECT
 FROM
 	[Orders] [o]
 		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+		LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID] OR [o].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
 WHERE
 	(NOT EXISTS(
 		SELECT

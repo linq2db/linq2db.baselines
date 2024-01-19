@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[ParentID],
@@ -14,6 +12,6 @@ WHERE
 			[r].[GuidValue]
 		FROM
 			[LinqDataTypes] [r]
-		LIMIT @take
+		LIMIT 1
 	) IS NOT NULL
 
