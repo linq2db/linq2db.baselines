@@ -36,7 +36,7 @@ SELECT
 	[a_Association].[Id]
 FROM
 	[Issue3791Table] [t1]
-		LEFT JOIN [Issue3791GuidTable] [a_Association] ON [t1].[OtherId] = Cast([a_Association].[Id] as NVarChar(255))
+		LEFT JOIN [Issue3791GuidTable] [a_Association] ON [t1].[OtherId] = (substr(hex([a_Association].[Id]), 7, 2) || substr(hex([a_Association].[Id]), 5, 2) || substr(hex([a_Association].[Id]), 3, 2) || substr(hex([a_Association].[Id]), 1, 2) || '-' || substr(hex([a_Association].[Id]), 11, 2) || substr(hex([a_Association].[Id]), 9, 2) || '-' || substr(hex([a_Association].[Id]), 15, 2) || substr(hex([a_Association].[Id]), 13, 2) || '-' || substr(hex([a_Association].[Id]), 17, 4) || '-' || substr(hex([a_Association].[Id]), 21, 12))
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
