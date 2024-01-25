@@ -100,7 +100,7 @@ SELECT TOP (@take)
 	Convert(NVarChar(4000), [x].[Prop_ushort]),
 	Convert(NVarChar(4000), [x].[Prop_uint]),
 	Convert(NVarChar(4000), [x].[Prop_ulong]),
-	Convert(NVarChar(4000), [x].[Prop_Guid]),
+	[x].[Prop_Guid],
 	Convert(NVarChar(4000), [x].[Prop_DateTime]),
 	Convert(NVarChar(1), [x].[NullableProp_bool]),
 	Convert(NVarChar(3), [x].[NullableProp_byte]),
