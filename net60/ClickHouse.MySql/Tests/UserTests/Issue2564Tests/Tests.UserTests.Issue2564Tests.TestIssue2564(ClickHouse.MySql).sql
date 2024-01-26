@@ -29,7 +29,7 @@ SELECT
 	t1.Key_2,
 	t1.Key_3,
 	Count(*),
-	sumOrNull((toUnixTimestamp64Milli(toDateTime64(t1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(t1.TimestampGenerated, 3))) * 10000 / 10000)
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(t1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(t1.TimestampGenerated, 3)))
 FROM
 	(
 		SELECT

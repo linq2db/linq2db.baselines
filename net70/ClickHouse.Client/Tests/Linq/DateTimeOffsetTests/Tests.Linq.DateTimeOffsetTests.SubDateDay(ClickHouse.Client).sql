@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toFloat64((toUnixTimestamp64Milli(toDateTime64(addHours(t.TransactionDate, toFloat64(96)), 3)) - toUnixTimestamp64Milli(toDateTime64(t.TransactionDate, 3))) * 10000 / 864000000000)
+	date_diff('day', t.TransactionDate, addHours(t.TransactionDate, toFloat64(96)))
 FROM
 	Transactions t
 
