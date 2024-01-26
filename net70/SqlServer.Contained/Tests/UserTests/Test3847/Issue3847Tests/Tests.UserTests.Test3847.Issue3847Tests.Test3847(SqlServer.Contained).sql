@@ -30,9 +30,9 @@ FROM
 				[x].[Value] as [LastCheck]
 			FROM
 				(VALUES
-					('66aa54cc-c3a5-4c01-8300-6fb58f9ebad5',DATETIME2FROMPARTS(2024, 1, 26, 9, 35, 56, 9180925, 7)),
-					('744b382f-463c-4fef-aa3f-280ebb1dcc12',DATETIME2FROMPARTS(2024, 1, 26, 9, 35, 56, 9180940, 7)),
-					('752561df-6f13-4707-85ab-18c13accd137',DATETIME2FROMPARTS(2024, 1, 26, 9, 35, 56, 9180942, 7))
+					('ff9d2e6f-5b68-4a7d-ab45-b19197f8ba57',DATETIME2FROMPARTS(2024, 1, 26, 10, 24, 32, 9464977, 7)),
+					('c09a3b1c-6285-445f-99b6-be3b630d0b78',DATETIME2FROMPARTS(2024, 1, 26, 10, 24, 32, 9465002, 7)),
+					('ebba4fee-a108-41e9-9cae-4f62fc95e9d1',DATETIME2FROMPARTS(2024, 1, 26, 10, 24, 32, 9465013, 7))
 				) [x]([Key], [Value])
 			WHERE
 				[x].[Key] = [outfeed].[Id]
@@ -42,8 +42,8 @@ FROM
 				[x_1].[Value] as [NextCheck]
 			FROM
 				(VALUES
-					('0eed4dcc-ea06-4b0b-999a-b80328d2ff88',DATETIME2FROMPARTS(2024, 1, 26, 9, 35, 56, 9180944, 7)),
-					('e5e84d8b-754a-4026-9233-577661261d55',DATETIME2FROMPARTS(2024, 1, 26, 9, 35, 56, 9180956, 7))
+					('98f823d7-2e8a-4c71-85f5-311ef9edb0e1',DATETIME2FROMPARTS(2024, 1, 26, 10, 24, 32, 9465023, 7)),
+					('9a0982b6-7539-42d2-b0c7-e1e7bba8a86b',DATETIME2FROMPARTS(2024, 1, 26, 10, 24, 32, 9465033, 7))
 				) [x_1]([Key], [Value])
 			WHERE
 				[x_1].[Key] = [outfeed].[Id]
