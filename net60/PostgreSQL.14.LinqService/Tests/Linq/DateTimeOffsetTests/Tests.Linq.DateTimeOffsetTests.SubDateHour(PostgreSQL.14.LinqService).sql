@@ -288,7 +288,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast((extract(epoch from ((t."TransactionDate" + 100 * Interval '1 Hour')::timestamp - t."TransactionDate"::timestamp)) / 3600) as Float)
+	Cast((extract(epoch from (t."TransactionDate" + 100 * Interval '1 Hour') - t."TransactionDate") / 3600) as Float)
 FROM
 	"Transactions" t
 
