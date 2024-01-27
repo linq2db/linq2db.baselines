@@ -38,7 +38,7 @@ SELECT
 	`a_Association`.`Id`
 FROM
 	`Issue3791Table` `t1`
-		LEFT JOIN `Issue3791GuidTable` `a_Association` ON `t1`.`OtherId` = Cast(`a_Association`.`Id` as CHAR(255))
+		LEFT JOIN `Issue3791GuidTable` `a_Association` ON `t1`.`OtherId` = Cast(`a_Association`.`Id` as CHAR(36))
 
 BeforeExecute
 -- MySqlConnector MySql
