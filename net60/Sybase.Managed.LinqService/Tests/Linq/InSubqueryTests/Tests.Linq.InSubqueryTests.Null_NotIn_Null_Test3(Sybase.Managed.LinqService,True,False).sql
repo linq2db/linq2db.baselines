@@ -186,46 +186,6 @@ WHERE
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'test_in_2') IS NOT NULL)
 	DROP TABLE [test_in_2]
 

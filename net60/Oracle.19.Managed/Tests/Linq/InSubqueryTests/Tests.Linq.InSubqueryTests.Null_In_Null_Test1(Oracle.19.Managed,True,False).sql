@@ -85,6 +85,23 @@ FROM
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
+SELECT
+	t.ID
+FROM
+	"test_in_1" t
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"test_in_2" p
+		WHERE
+			p.ID = t.ID
+	)
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';
 EXCEPTION

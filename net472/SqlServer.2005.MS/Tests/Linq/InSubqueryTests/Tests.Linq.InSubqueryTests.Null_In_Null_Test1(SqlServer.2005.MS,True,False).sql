@@ -61,6 +61,23 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
 IF (OBJECT_ID(N'[test_in_2]', N'U') IS NOT NULL)
 	DROP TABLE [test_in_2]
 

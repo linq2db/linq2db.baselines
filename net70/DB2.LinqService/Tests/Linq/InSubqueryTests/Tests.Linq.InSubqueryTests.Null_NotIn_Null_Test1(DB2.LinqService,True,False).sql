@@ -191,6 +191,23 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
+SELECT
+	"t".ID
+FROM
+	"test_in_1" "t"
+WHERE
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			"test_in_2" "p"
+		WHERE
+			"p".ID = "t".ID
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';

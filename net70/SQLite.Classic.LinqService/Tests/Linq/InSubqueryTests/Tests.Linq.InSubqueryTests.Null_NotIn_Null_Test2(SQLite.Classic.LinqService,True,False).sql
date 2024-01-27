@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- SQLite.Classic SQLite
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute

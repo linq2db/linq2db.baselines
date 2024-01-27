@@ -119,6 +119,23 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 DROP TABLE [test_in_2]
 
 BeforeExecute
