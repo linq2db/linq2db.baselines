@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- MySql55 MySql.Official MySql
 
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql55 MySql.Official MySql
-
 DROP TABLE IF EXISTS `test_in_2`
 
 BeforeExecute

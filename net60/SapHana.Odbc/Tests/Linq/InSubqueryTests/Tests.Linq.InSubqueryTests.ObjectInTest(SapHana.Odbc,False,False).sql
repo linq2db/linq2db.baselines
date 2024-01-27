@@ -13,6 +13,6 @@ WHERE
 		FROM
 			"Parent" "p"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID" AND "p"."Value1" = "c_1"."ParentID"
+			"p"."ParentID" = "c_1"."ParentID" AND Coalesce("p"."Value1", -1) = "c_1"."ParentID"
 	)
 

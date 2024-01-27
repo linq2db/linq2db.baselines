@@ -112,14 +112,12 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	NOT EXISTS(
+	([t].[ID] IS NULL OR [t].[ID] NOT IN (
 		SELECT
 			[p].[ID]
 		FROM
 			[test_in_2] [p]
-		WHERE
-			[p].[ID] = [t].[ID]
-	)
+	))
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

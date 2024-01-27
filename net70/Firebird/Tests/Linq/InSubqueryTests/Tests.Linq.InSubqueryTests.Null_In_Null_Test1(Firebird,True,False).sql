@@ -73,6 +73,23 @@ FROM
 BeforeExecute
 -- Firebird
 
+SELECT
+	"t".ID
+FROM
+	"test_in_1" "t"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"test_in_2" "p"
+		WHERE
+			"p".ID = "t".ID
+	)
+
+BeforeExecute
+-- Firebird
+
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'test_in_2')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "test_in_2"';

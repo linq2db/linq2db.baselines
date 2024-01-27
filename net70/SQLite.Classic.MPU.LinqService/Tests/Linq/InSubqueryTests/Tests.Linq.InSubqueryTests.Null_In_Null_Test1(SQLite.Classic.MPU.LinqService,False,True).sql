@@ -124,14 +124,19 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	EXISTS(
+	([t].[ID] IS NULL AND 1 IN (
+		SELECT
+			1
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] IS NULL
+	) OR [t].[ID] IS NOT NULL AND [t].[ID] IN (
 		SELECT
 			[p].[ID]
 		FROM
 			[test_in_2] [p]
-		WHERE
-			([p].[ID] = [t].[ID] OR [p].[ID] IS NULL AND [t].[ID] IS NULL)
-	)
+	))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

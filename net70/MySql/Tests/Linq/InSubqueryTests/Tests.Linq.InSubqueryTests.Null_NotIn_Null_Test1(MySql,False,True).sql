@@ -68,14 +68,23 @@ SELECT
 FROM
 	`test_in_1` `t`
 WHERE
-	NOT EXISTS(
-		SELECT
-			`p`.`ID`
-		FROM
-			`test_in_2` `p`
-		WHERE
-			(`p`.`ID` = `t`.`ID` OR `p`.`ID` IS NULL AND `t`.`ID` IS NULL)
-	)
+	CASE
+		WHEN `t`.`ID` IS NULL AND 1 IN (
+			SELECT
+				1
+			FROM
+				`test_in_2` `p`
+			WHERE
+				`p`.`ID` IS NULL
+		) OR `t`.`ID` IS NOT NULL AND `t`.`ID` IN (
+			SELECT
+				`p`.`ID`
+			FROM
+				`test_in_2` `p`
+		)
+			THEN 1
+		ELSE 0
+	END = 0
 
 BeforeExecute
 -- MySql MySql.Official MySql
