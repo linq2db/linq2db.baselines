@@ -39,6 +39,16 @@ FROM
 LIMIT toInt32(1)
 
 BeforeExecute
+-- ClickHouse.Octonica ClickHouse (asynchronously)
+
+SELECT
+	t1.Id,
+	t1.Name
+FROM
+	User t1
+LIMIT toInt32(1)
+
+BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS User
