@@ -46,7 +46,7 @@ SELECT
 	[a_Association].[Id]
 FROM
 	[Issue3791Table] [t1]
-		LEFT JOIN [Issue3791GuidTable] [a_Association] ON [t1].[OtherId] = Convert(NVarChar(255), [a_Association].[Id])
+		LEFT JOIN [Issue3791GuidTable] [a_Association] ON [t1].[OtherId] = Convert(NVarChar(36), [a_Association].[Id])
 
 BeforeExecute
 -- Sybase.Managed Sybase
