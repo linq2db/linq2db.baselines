@@ -1,0 +1,105 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TrimTestTable]', N'U') IS NOT NULL)
+	DROP TABLE [TrimTestTable]
+
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TrimTestTable]', N'U') IS NULL)
+	CREATE TABLE [TrimTestTable]
+	(
+		[ID]   Int          NOT NULL,
+		[Data] NVarChar(50)     NULL,
+
+		CONSTRAINT [PK_TrimTestTable] PRIMARY KEY CLUSTERED ([ID])
+	)
+
+BeforeExecute
+-- SqlServer.2012
+
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+VALUES
+(1,N'***XXX***'),
+(2,N'***HHH***'),
+(3,N'***VVV***')
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @Data NVarChar(50) -- String
+SET     @Data = N'***III***'
+DECLARE @ID Int -- Int32
+SET     @ID = 3
+
+UPDATE
+	[t1]
+SET
+	[t1].[Data] = @Data
+FROM
+	[TrimTestTable] [t1]
+WHERE
+	[t1].[ID] = @ID
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @Data NVarChar(50) -- String
+SET     @Data = N'***OOO***'
+
+UPDATE
+	[t]
+SET
+	[t].[Data] = @Data
+FROM
+	[TrimTestTable] [t]
+WHERE
+	[t].[Data] = N'***XXX***'
+
+BeforeExecute
+-- SqlServer.2012
+DECLARE @Data NVarChar(50) -- String
+SET     @Data = N'***SSS***'
+DECLARE @p NVarChar(50) -- String
+SET     @p = N'***HHH***'
+
+UPDATE
+	[t]
+SET
+	[t].[Data] = @Data
+FROM
+	[TrimTestTable] [t]
+WHERE
+	[t].[Data] = @p
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+
+BeforeExecute
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TrimTestTable]', N'U') IS NOT NULL)
+	DROP TABLE [TrimTestTable]
+
