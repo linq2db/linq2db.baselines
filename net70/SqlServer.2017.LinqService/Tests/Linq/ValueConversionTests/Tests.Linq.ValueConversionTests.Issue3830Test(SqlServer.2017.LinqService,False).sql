@@ -212,10 +212,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = @Bool3 AND
-	[r].[Bool3] IS NOT NULL AND
-	[r].[Bool1] = @Bool1 AND
-	[r].[Bool2] IS NULL
+	[r].[Bool3] = @Bool3 AND [r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL
 
 BeforeExecute
 -- SqlServer.2017
@@ -374,10 +371,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = @Bool3 AND
-	[r].[Bool3] IS NOT NULL AND
-	[r].[Bool1] = @Bool1 AND
-	[r].[Bool2] = @Bool2
+	[r].[Bool3] = @Bool3 AND [r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2
 
 BeforeExecute
 -- SqlServer.2017
