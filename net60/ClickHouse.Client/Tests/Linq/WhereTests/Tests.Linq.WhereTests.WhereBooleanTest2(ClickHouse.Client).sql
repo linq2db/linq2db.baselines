@@ -228,8 +228,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL AND
-	t.Id > toInt32(0)
+	t.NullableBoolValue = true AND t.Id > toInt32(0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -399,9 +398,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND
-	t.NullableBoolValue = false AND
-	t.NullableBoolValue IS NOT NULL AND
+	t.BoolValue = false AND t.NullableBoolValue = false AND
 	t.Id > toInt32(0)
 
 BeforeExecute
