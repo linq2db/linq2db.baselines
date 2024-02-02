@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	date_diff('hour', t.TransactionDate, addHours(t.TransactionDate, toFloat64(100)))
+	toFloat64((toUnixTimestamp64Milli(toDateTime64(addHours(t.TransactionDate, toFloat64(100)), 3)) - toUnixTimestamp64Milli(toDateTime64(t.TransactionDate, 3))) * 10000 / 36000000000)
 FROM
 	Transactions t
 

@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	date_diff('minute', t.TransactionDate, addMinutes(t.TransactionDate, toFloat64(100)))
+	toFloat64((toUnixTimestamp64Milli(toDateTime64(addMinutes(t.TransactionDate, toFloat64(100)), 3)) - toUnixTimestamp64Milli(toDateTime64(t.TransactionDate, 3))) * 10000 / 600000000)
 FROM
 	Transactions t
 
