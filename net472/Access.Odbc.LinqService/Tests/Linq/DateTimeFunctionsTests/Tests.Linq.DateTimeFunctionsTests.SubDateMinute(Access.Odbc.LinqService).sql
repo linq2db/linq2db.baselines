@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	DATEDIFF('n', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue]))
+	(DATEDIFF('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])) * 10000000) / 600000000
 FROM
 	[LinqDataTypes] [t]
 
