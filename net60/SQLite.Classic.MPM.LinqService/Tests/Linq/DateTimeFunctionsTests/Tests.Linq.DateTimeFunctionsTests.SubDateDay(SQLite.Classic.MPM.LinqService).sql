@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	round((julianday(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],100 || ' Hour')) - julianday([t].[DateTimeValue])))
+	Cast((round((round((julianday(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],100 || ' Hour')) - julianday([t].[DateTimeValue])) * 864000000000)) / 864000000000)) as Float)
 FROM
 	[LinqDataTypes] [t]
 
