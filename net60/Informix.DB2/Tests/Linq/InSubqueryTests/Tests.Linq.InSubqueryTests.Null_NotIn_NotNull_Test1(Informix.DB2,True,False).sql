@@ -122,30 +122,6 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT
-	t1.ID
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.ID
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.ID
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS test_in_2
 
 BeforeExecute

@@ -119,6 +119,23 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t.ID
+FROM
+	test_in_1 t
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			test_in_2 p
+		WHERE
+			p.ID = t.ID
+	)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS test_in_2
 
 BeforeExecute
