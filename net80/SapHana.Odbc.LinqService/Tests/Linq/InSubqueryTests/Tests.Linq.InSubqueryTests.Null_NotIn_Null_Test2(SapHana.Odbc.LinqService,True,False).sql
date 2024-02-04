@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	"t1"."ID"
-FROM
-	"test_in_2" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID"
-FROM
-	"test_in_2" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID"
-FROM
-	"test_in_2" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"t1"."ID"
-FROM
-	"test_in_2" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "test_in_2"
 
 BeforeExecute
