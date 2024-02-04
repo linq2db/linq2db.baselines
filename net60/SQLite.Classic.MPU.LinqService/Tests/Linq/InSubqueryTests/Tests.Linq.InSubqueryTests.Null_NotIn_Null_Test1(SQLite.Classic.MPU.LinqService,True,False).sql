@@ -175,6 +175,23 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute
