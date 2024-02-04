@@ -67,54 +67,12 @@ SELECT
 FROM
 	test_in_1 t
 WHERE
-	NOT EXISTS(
+	t."ID" NOT IN (
 		SELECT
 			p."ID"
 		FROM
 			test_in_2 p
-		WHERE
-			(p."ID" = t."ID" OR p."ID" IS NULL AND t."ID" IS NULL)
 	)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
