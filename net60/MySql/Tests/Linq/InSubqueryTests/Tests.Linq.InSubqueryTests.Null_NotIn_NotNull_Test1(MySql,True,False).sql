@@ -75,30 +75,6 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySql MySql.Official MySql
-
 DROP TABLE IF EXISTS `test_in_2`
 
 BeforeExecute

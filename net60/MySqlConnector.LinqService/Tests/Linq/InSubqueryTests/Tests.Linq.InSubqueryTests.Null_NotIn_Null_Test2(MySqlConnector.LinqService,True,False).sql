@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MySqlConnector MySql
-
 DROP TABLE IF EXISTS `test_in_2`
 
 BeforeExecute
