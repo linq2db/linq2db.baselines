@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MariaDB MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MariaDB MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MariaDB MySqlConnector MySql
-
-SELECT
-	`t1`.`ID`
-FROM
-	`test_in_2` `t1`
-
-BeforeExecute
--- MariaDB MySqlConnector MySql
-
 DROP TABLE IF EXISTS `test_in_2`
 
 BeforeExecute
