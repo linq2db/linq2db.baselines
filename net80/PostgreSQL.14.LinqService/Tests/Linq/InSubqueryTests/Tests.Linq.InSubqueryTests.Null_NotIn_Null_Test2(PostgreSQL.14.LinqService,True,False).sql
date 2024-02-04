@@ -178,38 +178,6 @@ WHERE
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ID"
-FROM
-	test_in_2 t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 DROP TABLE IF EXISTS test_in_2
 
 BeforeExecute
