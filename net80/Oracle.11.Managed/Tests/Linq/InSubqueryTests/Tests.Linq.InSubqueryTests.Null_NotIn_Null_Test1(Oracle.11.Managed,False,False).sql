@@ -89,6 +89,21 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
+SELECT
+	t.ID
+FROM
+	"test_in_1" t
+WHERE
+	t.ID NOT IN (
+		SELECT
+			p.ID
+		FROM
+			"test_in_2" p
+	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';
 EXCEPTION

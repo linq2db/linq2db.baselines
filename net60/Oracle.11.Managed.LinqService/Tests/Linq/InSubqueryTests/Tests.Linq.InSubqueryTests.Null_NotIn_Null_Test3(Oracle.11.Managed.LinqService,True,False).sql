@@ -210,46 +210,6 @@ WHERE
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-SELECT
-	t1.ID
-FROM
-	"test_in_2" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1.ID
-FROM
-	"test_in_2" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1.ID
-FROM
-	"test_in_2" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1.ID
-FROM
-	"test_in_2" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1.ID
-FROM
-	"test_in_2" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';
 EXCEPTION
