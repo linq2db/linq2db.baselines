@@ -121,6 +121,23 @@ FROM
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute

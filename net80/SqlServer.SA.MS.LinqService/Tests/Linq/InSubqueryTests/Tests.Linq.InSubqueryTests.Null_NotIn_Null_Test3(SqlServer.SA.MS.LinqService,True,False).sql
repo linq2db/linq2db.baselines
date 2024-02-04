@@ -180,46 +180,6 @@ WHERE
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute
