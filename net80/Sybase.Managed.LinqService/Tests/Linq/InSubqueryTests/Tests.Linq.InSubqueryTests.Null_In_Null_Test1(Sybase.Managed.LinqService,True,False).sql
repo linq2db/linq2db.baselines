@@ -127,6 +127,23 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[test_in_2] [p]
+		WHERE
+			[p].[ID] = [t].[ID]
+	)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 IF (OBJECT_ID(N'test_in_2') IS NOT NULL)
 	DROP TABLE [test_in_2]
 
