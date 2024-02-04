@@ -162,19 +162,23 @@ SELECT
 FROM
 	test_in_1 t
 WHERE
-	NOT (t.ID IS NULL AND toInt32(1) IN (
-		SELECT
-			toInt32(1)
-		FROM
-			test_in_2 p
-		WHERE
-			p.ID IS NULL
-	) OR t.ID IS NOT NULL AND t.ID IN (
-		SELECT
-			p.ID
-		FROM
-			test_in_2 p
-	))
+	CASE
+		WHEN t.ID IS NULL AND toInt32(1) IN (
+			SELECT
+				toInt32(1)
+			FROM
+				test_in_2 p
+			WHERE
+				p.ID IS NULL
+		) OR t.ID IS NOT NULL AND t.ID IN (
+			SELECT
+				p.ID
+			FROM
+				test_in_2 p
+		)
+			THEN toUInt8(1)
+		ELSE toUInt8(0)
+	END = false
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

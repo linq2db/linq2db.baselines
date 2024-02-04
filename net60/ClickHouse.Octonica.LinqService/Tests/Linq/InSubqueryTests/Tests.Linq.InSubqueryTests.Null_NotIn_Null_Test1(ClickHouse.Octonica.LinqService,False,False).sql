@@ -157,6 +157,21 @@ FROM
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
+SELECT
+	t.ID
+FROM
+	test_in_1 t
+WHERE
+	t.ID NOT IN (
+		SELECT
+			p.ID
+		FROM
+			test_in_2 p
+	)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
 DROP TABLE IF EXISTS test_in_2
 
 BeforeExecute

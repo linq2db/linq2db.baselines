@@ -1,0 +1,24 @@
+﻿BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	c_1.ParentID,
+	c_1.ChildID,
+	c_1.GrandChildID
+FROM
+	GrandChild c_1
+WHERE
+	(c_1.ParentID IS NULL AND toInt32(1) IN (
+		SELECT
+			toInt32(1)
+		FROM
+			Parent p
+		WHERE
+			p.Value1 IS NULL
+	) OR c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
+		SELECT
+			p.Value1
+		FROM
+			Parent p
+	))
+
