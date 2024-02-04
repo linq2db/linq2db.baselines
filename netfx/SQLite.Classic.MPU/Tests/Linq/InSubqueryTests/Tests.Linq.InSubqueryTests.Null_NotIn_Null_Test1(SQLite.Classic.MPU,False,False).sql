@@ -63,6 +63,21 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	[t].[ID] NOT IN (
+		SELECT
+			[p].[ID]
+		FROM
+			[test_in_2] [p]
+	)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute
