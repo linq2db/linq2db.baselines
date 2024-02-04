@@ -178,46 +178,6 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
 DROP TABLE [test_in_2]
 
 BeforeExecute
