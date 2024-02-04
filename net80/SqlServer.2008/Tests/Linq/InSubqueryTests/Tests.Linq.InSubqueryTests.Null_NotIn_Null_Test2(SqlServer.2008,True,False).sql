@@ -83,38 +83,6 @@ WHERE
 BeforeExecute
 -- SqlServer.2008
 
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
 IF (OBJECT_ID(N'[test_in_2]', N'U') IS NOT NULL)
 	DROP TABLE [test_in_2]
 
