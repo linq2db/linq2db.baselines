@@ -61,6 +61,21 @@ FROM
 BeforeExecute
 -- SqlServer.2017
 
+SELECT
+	[t].[ID]
+FROM
+	[test_in_1] [t]
+WHERE
+	[t].[ID] IN (
+		SELECT
+			[p].[ID]
+		FROM
+			[test_in_2] [p]
+	)
+
+BeforeExecute
+-- SqlServer.2017
+
 DROP TABLE IF EXISTS [test_in_2]
 
 BeforeExecute
