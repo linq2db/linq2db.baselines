@@ -1,0 +1,131 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue681Table4"
+		(
+			ID      Int  NOT NULL,
+			"Value" Int  NOT NULL,
+
+			CONSTRAINT "PK_Issue681Table4" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE SEQUENCE "SIDENTITY_Issue681Table4"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE OR REPLACE TRIGGER "TIDENTITY_Issue681Table4"
+BEFORE INSERT ON "Issue681Table4" FOR EACH ROW
+BEGIN
+	SELECT "SIDENTITY_Issue681Table4".NEXTVAL INTO :NEW.ID FROM dual;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	sys_context('userenv','service_name')
+FROM SYS.DUAL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	sys_context('userenv', 'current_schema')
+FROM
+	"LinqDataTypes" t1
+WHERE
+	ROWNUM <= :take
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @Value Int32
+SET     @Value = 10
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO TEST."Issue681Table4"@XE
+(
+	"Value"
+)
+VALUES
+(
+	:Value
+)
+RETURNING 
+	ID INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
