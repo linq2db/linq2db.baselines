@@ -1,0 +1,66 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1438"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue1438"
+		(
+			"Id"  Int      GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"Has" smallint                              NOT NULL,
+
+			CONSTRAINT "PK_Issue1438" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Has SmallInt(4) -- Int16
+SET     @Has = 1
+
+SELECT
+	"Id"
+FROM
+	NEW TABLE
+	(
+		INSERT INTO "Issue1438"
+		(
+			"Has"
+		)
+		VALUES
+		(
+			@Has
+		)
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 1
+
+SELECT
+	"_"."Id",
+	"_"."Has"
+FROM
+	"Issue1438" "_"
+WHERE
+	"_"."Id" = @id
+FETCH FIRST 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue1438"';
+END
+

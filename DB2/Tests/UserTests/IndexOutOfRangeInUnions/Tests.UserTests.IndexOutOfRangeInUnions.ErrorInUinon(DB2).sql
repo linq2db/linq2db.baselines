@@ -1,0 +1,132 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O1';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE O1
+		(
+			"DocEntry"    Int           NOT NULL,
+			"BplId"       Int           NOT NULL,
+			"ChaveAcesso" NVarChar(255)     NULL,
+			"DocStatus"   NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O2';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE O2
+		(
+			"DocEntry"    Int           NOT NULL,
+			"BplId"       Int           NOT NULL,
+			"ChaveAcesso" NVarChar(255)     NULL,
+			"DocStatus"   NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O3';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE O3
+		(
+			"DocEntry"    Int           NOT NULL,
+			"BplId"       Int           NOT NULL,
+			"ChaveAcesso" NVarChar(255)     NULL,
+			"DocStatus"   NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"doSap"."DocEntry",
+	CASE
+		WHEN "doSap"."DocStatus" = 'O'
+			THEN 'Aberto'
+		ELSE 'Fechado'
+	END,
+	'Manual/Externo'
+FROM
+	O1 "doSap"
+UNION
+SELECT
+	"doSap_1"."DocEntry",
+	CASE
+		WHEN "doSap_1"."DocStatus" = 'O'
+			THEN 'Aberto'
+		ELSE 'Fechado'
+	END,
+	'Manual/Externo'
+FROM
+	O2 "doSap_1"
+UNION
+SELECT
+	"doSap_2"."DocEntry",
+	CASE
+		WHEN "doSap_2"."DocStatus" = 'O'
+			THEN 'Aberto'
+		ELSE 'Fechado'
+	END,
+	'Manual/Externo'
+FROM
+	O3 "doSap_2"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O3';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O2';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE O1';
+END
+

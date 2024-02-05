@@ -1,0 +1,70 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue681Table4"
+		(
+			ID      Int GENERATED ALWAYS AS IDENTITY NOT NULL,
+			"Value" Int                              NOT NULL,
+
+			CONSTRAINT "PK_Issue681Table4" PRIMARY KEY (ID)
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	current server
+FROM
+	"LinqDataTypes" "_"
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	current schema
+FROM
+	"LinqDataTypes" "_"
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+SELECT
+	ID
+FROM
+	NEW TABLE
+	(
+		INSERT INTO TESTDB.DB2INST1."Issue681Table4"
+		(
+			"Value"
+		)
+		VALUES
+		(
+			@Value
+		)
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
+END
+
