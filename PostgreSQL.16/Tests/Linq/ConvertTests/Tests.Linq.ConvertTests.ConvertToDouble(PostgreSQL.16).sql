@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	Cast(t."MoneyValue" as Float)
+FROM
+	"LinqDataTypes" t
+WHERE
+	Cast(t."MoneyValue" as Float) > 0
+
