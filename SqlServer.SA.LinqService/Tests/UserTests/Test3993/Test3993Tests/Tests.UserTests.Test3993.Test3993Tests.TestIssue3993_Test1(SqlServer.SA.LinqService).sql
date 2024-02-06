@@ -98,7 +98,7 @@ BeforeExecute
 DECLARE @p BigInt -- Int64
 SET     @p = 300000000000
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 2, 6, 23, 1, 0, 8100734, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 2, 6, 23, 45, 15, 230586, 7)
 
 SELECT
 	[x].[StartDateTime],
@@ -119,7 +119,7 @@ BeforeExecute
 DECLARE @p BigInt -- Int64
 SET     @p = 3153600000000000000
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 2, 6, 23, 1, 0, 8214544, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 2, 6, 23, 45, 15, 267426, 7)
 
 SELECT
 	[x].[StartDateTime],
