@@ -45,11 +45,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -150,11 +150,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
