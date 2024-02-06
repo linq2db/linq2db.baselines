@@ -10,21 +10,21 @@ SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT @p
