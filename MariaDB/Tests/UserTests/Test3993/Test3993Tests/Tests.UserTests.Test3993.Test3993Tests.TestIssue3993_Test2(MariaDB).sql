@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @UtcNow Datetime -- DateTime
-SET     @UtcNow = '2024-02-06 20:52:58.222'
+SET     @UtcNow = '2024-02-06 23:04:13.423'
 DECLARE @Date Datetime -- DateTime
 SET     @Date = '2024-02-06'
 
