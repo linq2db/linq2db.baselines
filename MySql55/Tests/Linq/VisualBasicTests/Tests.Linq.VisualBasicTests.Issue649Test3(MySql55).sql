@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `person649`
 
 BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @added DateTime
+DECLARE @added Datetime -- DateTime
 SET     @added = '2017-01-01'
 
 SELECT

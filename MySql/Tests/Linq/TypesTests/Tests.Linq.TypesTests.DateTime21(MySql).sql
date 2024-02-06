@@ -22,7 +22,7 @@ LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @dt DateTime
+DECLARE @dt Datetime -- DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
@@ -56,7 +56,7 @@ LIMIT @take
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @pdt DateTime
+DECLARE @pdt Datetime -- DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'
 
 UPDATE

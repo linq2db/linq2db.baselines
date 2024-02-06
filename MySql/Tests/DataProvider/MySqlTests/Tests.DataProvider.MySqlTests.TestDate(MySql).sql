@@ -10,14 +10,14 @@ SELECT Cast('2012-12-12' as date)
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12'
 
 SELECT @p
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12'
 
 SELECT @p

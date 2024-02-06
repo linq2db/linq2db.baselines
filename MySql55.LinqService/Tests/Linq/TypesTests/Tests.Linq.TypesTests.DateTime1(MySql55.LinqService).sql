@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql55 MySql.Official MySql
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = '2009-09-20'
 
 SELECT

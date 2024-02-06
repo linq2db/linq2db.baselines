@@ -18,9 +18,9 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @default DateTime
+DECLARE @default Datetime -- DateTime
 SET     @default = '0001-01-01'
-DECLARE @DATUM DateTime
+DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT

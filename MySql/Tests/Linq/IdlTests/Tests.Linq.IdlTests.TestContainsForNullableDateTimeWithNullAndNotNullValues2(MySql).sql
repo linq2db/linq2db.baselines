@@ -17,7 +17,7 @@ FROM
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
