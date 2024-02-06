@@ -97,7 +97,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 3000000000
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-02-06 13:59:56.007'
+SET     @UtcNow = '2024-02-06 14:58:06.307'
 
 SELECT
 	[x].[StartDateTime],
@@ -118,7 +118,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 31536000000000000
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-02-06 13:59:56.011'
+SET     @UtcNow = '2024-02-06 14:58:06.31'
 
 SELECT
 	[x].[StartDateTime],
