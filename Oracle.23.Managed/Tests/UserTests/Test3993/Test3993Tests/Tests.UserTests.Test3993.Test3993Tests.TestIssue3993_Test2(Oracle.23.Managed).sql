@@ -57,7 +57,7 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-02-07 15:55:13.209523'
+SET     @UtcNow = TIMESTAMP '2024-02-07 19:43:12.656359'
 DECLARE @Date_1 TimeStamp -- DateTime
 SET     @Date_1 = TIMESTAMP '2024-02-07 00:00:00.000000'
 
