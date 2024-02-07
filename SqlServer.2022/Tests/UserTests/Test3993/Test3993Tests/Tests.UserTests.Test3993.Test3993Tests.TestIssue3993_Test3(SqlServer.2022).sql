@@ -1,0 +1,128 @@
+﻿BeforeExecute
+-- SqlServer.2022
+
+DROP TABLE IF EXISTS [Common_Topology_Locations]
+
+BeforeExecute
+-- SqlServer.2022
+
+IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
+	CREATE TABLE [Common_Topology_Locations]
+	(
+		[StartDateTime]    DateTime2          NULL,
+		[StartDateTime2]   DateTime2      NOT NULL,
+		[EndDateTime]      DateTime2          NULL,
+		[PreNotification]  BigInt             NULL,
+		[PreNotification2] BigInt             NULL,
+		[PreNotification3] BigInt         NOT NULL,
+		[StrField]         DateTime2          NULL,
+		[Status]           NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2022
+
+INSERT INTO [Common_Topology_Locations]
+(
+	[StartDateTime],
+	[StartDateTime2],
+	[EndDateTime],
+	[PreNotification],
+	[PreNotification2],
+	[PreNotification3],
+	[StrField],
+	[Status]
+)
+VALUES
+(DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7),DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7),NULL,CAST(145820000000 AS BIGINT),NULL,CAST(0 AS BIGINT),NULL,NULL)
+
+BeforeExecute
+-- SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[StartDateTime],
+	[t].[StartDateTime2],
+	[t].[EndDateTime],
+	[t].[PreNotification],
+	[t].[PreNotification2],
+	[t].[PreNotification3],
+	[t].[StrField],
+	[t].[Status]
+FROM
+	[Common_Topology_Locations] [t]
+
+BeforeExecute
+-- SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[x].[StartDateTime],
+	[x].[PreNotification]
+FROM
+	[Common_Topology_Locations] [x]
+
+BeforeExecute
+-- SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[StartDateTime],
+	[t].[StartDateTime2],
+	[t].[EndDateTime],
+	[t].[PreNotification],
+	[t].[PreNotification2],
+	[t].[PreNotification3],
+	[t].[StrField],
+	[t].[Status]
+FROM
+	[Common_Topology_Locations] [t]
+WHERE
+	DatePart(hour, DateAdd(hour, cast((([t].[PreNotification] * -1 * 100) / 3600000000000) as int), DateAdd(millisecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) / 1000000, DateAdd(nanosecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) % 1000000, [t].[StartDateTime])))) = 13
+
+BeforeExecute
+-- SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[StartDateTime],
+	[t].[StartDateTime2],
+	[t].[EndDateTime],
+	[t].[PreNotification],
+	[t].[PreNotification2],
+	[t].[PreNotification3],
+	[t].[StrField],
+	[t].[Status]
+FROM
+	[Common_Topology_Locations] [t]
+WHERE
+	DatePart(minute, DateAdd(hour, cast((([t].[PreNotification] * -1 * 100) / 3600000000000) as int), DateAdd(millisecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) / 1000000, DateAdd(nanosecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) % 1000000, [t].[StartDateTime])))) = 51
+
+BeforeExecute
+-- SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 1
+
+SELECT TOP (@take)
+	[t].[StartDateTime],
+	[t].[StartDateTime2],
+	[t].[EndDateTime],
+	[t].[PreNotification],
+	[t].[PreNotification2],
+	[t].[PreNotification3],
+	[t].[StrField],
+	[t].[Status]
+FROM
+	[Common_Topology_Locations] [t]
+WHERE
+	DatePart(second, DateAdd(hour, cast((([t].[PreNotification] * -1 * 100) / 3600000000000) as int), DateAdd(millisecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) / 1000000, DateAdd(nanosecond, (([t].[PreNotification] * -1 * 100) % 3600000000000) % 1000000, [t].[StartDateTime])))) = 53
+
+BeforeExecute
+-- SqlServer.2022
+
+DROP TABLE IF EXISTS [Common_Topology_Locations]
+
