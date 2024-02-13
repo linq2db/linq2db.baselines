@@ -74,9 +74,7 @@ SELECT
 FROM
 	Stone s
 WHERE
-	s.Enabled = true AND
-	s.Enabled IS NOT NULL AND
-	NOT startsWith(s.Name, 'level - ') AND
+	s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
 	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0)
 GROUP BY
 	s.Name
@@ -93,7 +91,6 @@ FROM
 	Stone s
 WHERE
 	s.Enabled = true AND
-	s.Enabled IS NOT NULL AND
 	NOT startsWith(s.Name, 'level - ') AND
 	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0) AND
 	s.Name = 'group2'
@@ -110,7 +107,6 @@ FROM
 	Stone s
 WHERE
 	s.Enabled = true AND
-	s.Enabled IS NOT NULL AND
 	NOT startsWith(s.Name, 'level - ') AND
 	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0) AND
 	s.Name = 'group1'

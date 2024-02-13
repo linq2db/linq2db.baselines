@@ -15,5 +15,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	(t.BoolValue = true AND t.BoolValue IS NOT NULL)
+	t.BoolValue = true
 

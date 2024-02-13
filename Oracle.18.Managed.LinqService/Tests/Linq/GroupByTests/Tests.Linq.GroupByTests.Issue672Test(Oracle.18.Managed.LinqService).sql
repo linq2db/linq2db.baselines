@@ -138,9 +138,7 @@ SELECT
 FROM
 	"Stone" s
 WHERE
-	s."Enabled" = 1 AND
-	s."Enabled" IS NOT NULL AND
-	s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
+	s."Enabled" = 1 AND s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 	Length(s."ImageFullUrl") > 0
 GROUP BY
 	s."Name"
@@ -159,7 +157,6 @@ FROM
 	"Stone" s
 WHERE
 	s."Enabled" = 1 AND
-	s."Enabled" IS NOT NULL AND
 	s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 	Length(s."ImageFullUrl") > 0 AND
 	s."Name" = :Name
@@ -178,7 +175,6 @@ FROM
 	"Stone" s
 WHERE
 	s."Enabled" = 1 AND
-	s."Enabled" IS NOT NULL AND
 	s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 	Length(s."ImageFullUrl") > 0 AND
 	s."Name" = :Name
