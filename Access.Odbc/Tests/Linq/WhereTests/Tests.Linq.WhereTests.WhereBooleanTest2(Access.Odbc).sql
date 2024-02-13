@@ -425,8 +425,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND
-	[t].[Id] > 0
+	[t].[NullableBoolValue] = True AND [t].[Id] > 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -500,9 +499,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = False AND
-	[t].[NullableBoolValue] = False AND
-	[t].[NullableBoolValue] IS NOT NULL AND
+	[t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND
 	[t].[Id] > 0
 
 BeforeExecute
