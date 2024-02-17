@@ -6,4 +6,6 @@ SELECT
 	f."Value1"
 FROM
 	"Parent" f
+WHERE
+	1 = 1
 

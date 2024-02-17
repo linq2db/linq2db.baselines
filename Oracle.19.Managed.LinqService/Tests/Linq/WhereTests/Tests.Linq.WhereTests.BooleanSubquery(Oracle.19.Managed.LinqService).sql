@@ -56,15 +56,9 @@ SELECT
 	t."BoolValue"
 FROM
 	"WhereWithBool" t
+		CROSS JOIN "WhereWithBool" x
 WHERE
-	(
-		SELECT
-			x."BoolValue"
-		FROM
-			"WhereWithBool" x
-		WHERE
-			x."Id" = 1
-	) = 1
+	x."BoolValue" = 1 AND x."Id" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
