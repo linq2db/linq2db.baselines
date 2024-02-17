@@ -33,15 +33,30 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Sum([selectParam].[YearsExperience])
+	[$it_2].[Name],
+	[$it_2].[Value_1],
+	[$it_2].[Sum_1]
 FROM
-	[odata_person] [selectParam]
-GROUP BY
-	[selectParam].[Title]
+	(
+		SELECT
+			Sum([$it_1].[Value_1]) as [Sum_1],
+			[$it_1].[c1] as [Name],
+			[$it_1].[Title] as [Value_1]
+		FROM
+			(
+				SELECT
+					N'Title' as [c1],
+					[$it].[Title],
+					[$it].[YearsExperience] as [Value_1]
+				FROM
+					[odata_person] [$it]
+			) [$it_1]
+		GROUP BY
+			[$it_1].[c1],
+			[$it_1].[Title]
+	) [$it_2]
 ORDER BY
-	Sum([selectParam].[YearsExperience])
+	[$it_2].[Sum_1]
 
 BeforeExecute
 -- SqlServer.2017

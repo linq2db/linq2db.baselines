@@ -69,7 +69,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
+	([t].[BoolValue] = 1 OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -93,7 +93,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
+	([t].[BoolValue] = 0 OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -117,7 +117,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
+	([t].[BoolValue] = 0 OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -141,7 +141,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
+	([t].[BoolValue] = 1 OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -165,7 +165,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
+	([t].[BoolValue] = 1 OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -190,32 +190,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
-	[t].[NullableBoolValue]
-FROM
-	[WhereCases] [t]
-WHERE
-	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
-	[t].[Id] > 0
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-SELECT
-	[t].[Id],
-	[t].[BoolValue],
-	[t].[NullableBoolValue]
-FROM
-	[WhereCases] [t]
-WHERE
-	NOT (([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -240,7 +215,32 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL OR [t].[Id] <= 0)
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
+	[t].[Id] > 0
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t].[Id],
+	[t].[BoolValue],
+	[t].[NullableBoolValue]
+FROM
+	[WhereCases] [t]
+WHERE
+	([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -264,7 +264,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
+	([t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -288,7 +288,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	([t].[NullableBoolValue] IS NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -312,7 +312,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	([t].[NullableBoolValue] IS NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -336,7 +336,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
+	([t].[NullableBoolValue] IS NOT NULL OR [t].[Id] <= 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -373,7 +373,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND
+	([t].[BoolValue] = 1 OR [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -386,7 +386,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
+	NOT (([t].[BoolValue] = 1 OR [t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -425,7 +425,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
+	([t].[BoolValue] = 1 OR [t].[NullableBoolValue] = 1 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -438,7 +438,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT (([t].[BoolValue] = 1 OR [t].[NullableBoolValue] = 1 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
