@@ -76,13 +76,18 @@ SET     @take = 1
 SELECT
 	IIF(EXISTS(
 		SELECT TOP (@take)
-			[t1].[Value]
+			*
 		FROM
-			[TakeSkipClass] [t1]
-		GROUP BY
-			[t1].[Value]
-		HAVING
-			Count(*) > 1
+			(
+				SELECT
+					Count(*) as [Count_1]
+				FROM
+					[TakeSkipClass] [group_1]
+				GROUP BY
+					[group_1].[Value]
+			) [group_2]
+		WHERE
+			[group_2].[Count_1] > 1
 	), 1, 0)
 
 BeforeExecute

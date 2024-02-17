@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -10,11 +8,11 @@ FROM
 	[Parent] [p]
 WHERE
 	(
-		SELECT TOP (@take)
-			1
+		SELECT TOP (1)
+			[a_Children].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	) IS NOT NULL
 

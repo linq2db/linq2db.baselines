@@ -2,32 +2,44 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[_].[SmallIntValue],
-	[_].[SmallIntValue],
-	3
+	[t1].[month_1],
+	[t1].[month_1],
+	[t1].[int_1]
 FROM
-	[LinqDataTypes] [_]
+	(
+		SELECT
+			[_].[SmallIntValue] as [month_1],
+			3 as [int_1]
+		FROM
+			[LinqDataTypes] [_]
+	) [t1]
 UNION
 SELECT
-	[t1].[month_1],
-	[t1].[year_1],
+	[t2].[Month_1],
+	[t2].[Year_1],
 	1
 FROM
 	(
 		SELECT
-			DatePart(month, [selectParam].[DateTimeValue]) as [month_1],
-			DatePart(year, [selectParam].[DateTimeValue]) as [year_1]
+			DatePart(month, [_1].[DateTimeValue]) as [Month_1],
+			DatePart(year, [_1].[DateTimeValue]) as [Year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [_1]
+	) [t2]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	[t2].[Month_1],
+	[t2].[Year_1]
 UNION
 SELECT
-	DatePart(year, [_1].[DateTimeValue]),
-	DatePart(year, [_1].[DateTimeValue]),
-	2
+	[t3].[month_1],
+	[t3].[month_1],
+	[t3].[int_1]
 FROM
-	[LinqDataTypes] [_1]
+	(
+		SELECT
+			DatePart(year, [_2].[DateTimeValue]) as [month_1],
+			2 as [int_1]
+		FROM
+			[LinqDataTypes] [_2]
+	) [t3]
 
