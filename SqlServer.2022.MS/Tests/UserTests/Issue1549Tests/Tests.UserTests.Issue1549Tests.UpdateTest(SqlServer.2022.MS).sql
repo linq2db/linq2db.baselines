@@ -92,32 +92,28 @@ FROM
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 UPDATE
-	[t1]
+	[billing_TempReading]
 SET
-	[t1].[DevReadingTypeId] = (
-		SELECT TOP (@take)
+	[DevReadingTypeId] = (
+		SELECT TOP (1)
 			[w].[Id]
 		FROM
 			[billing_DevReadingType] [w]
 		WHERE
-			[w].[Name] = [t1].[ReadingTypeName] AND [w].[DevTypeId] = [t1].[Devtypeid]
+			[w].[Name] = [billing_TempReading].[ReadingTypeName] AND
+			[w].[DevTypeId] = [billing_TempReading].[Devtypeid]
 	),
-	[t1].[Responsibility] = (
-		SELECT TOP (@take_1)
+	[Responsibility] = (
+		SELECT TOP (1)
 			[w_1].[Responsibility]
 		FROM
 			[billing_DevReadingType] [w_1]
 		WHERE
-			[w_1].[Name] = [t1].[ReadingTypeName] AND [w_1].[DevTypeId] = [t1].[Devtypeid]
+			[w_1].[Name] = [billing_TempReading].[ReadingTypeName] AND
+			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid]
 	)
-FROM
-	[billing_TempReading] [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

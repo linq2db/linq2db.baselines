@@ -222,24 +222,30 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
+DECLARE @Field1 Int -- Int32
+SET     @Field1 = 123
 DECLARE @name NVarChar(4000) -- String
 SET     @name = N'test'
 DECLARE @idx Int -- Int32
 SET     @idx = 6
+DECLARE @Field4 Int -- Int32
+SET     @Field4 = 999
+DECLARE @Field5 Int -- Int32
+SET     @Field5 = 888
 
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id],
-		[t1].[Field2]
+		[t1].[Id] as [source_Id],
+		[t1].[Field2] as [source_Field2]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id],
-	[Field2]
+	[source_Id],
+	[source_Field2]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -253,12 +259,12 @@ INSERT
 )
 VALUES
 (
-	10 + [Source].[Id],
-	123,
+	10 + [Source].[source_Id],
+	@Field1,
 	Len(@name) + @idx,
-	[Source].[Field2],
-	999,
-	888
+	[Source].[source_Field2],
+	@Field4,
+	@Field5
 )
 ;
 

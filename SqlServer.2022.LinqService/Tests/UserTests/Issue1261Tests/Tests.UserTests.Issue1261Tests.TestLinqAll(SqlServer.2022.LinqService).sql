@@ -2,25 +2,25 @@
 -- SqlServer.2022
 
 SELECT
-	IIF((NOT EXISTS(
+	IIF(NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[GrandChild] [x]
 		WHERE
-			[x].[ParentID] = 1 AND NOT ([x].[ChildID] = 11 AND [x].[GrandChildID] = 777)
-	)), 1, 0)
+			[x].[ParentID] = 1 AND ([x].[ChildID] <> 11 OR [x].[ChildID] IS NULL OR [x].[GrandChildID] <> 777 OR [x].[GrandChildID] IS NULL)
+	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	IIF((NOT EXISTS(
+	IIF(NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[GrandChild] [x]
 		WHERE
-			[x].[ParentID] = 1 AND NOT ([x].[GrandChildID] = 777 AND [x].[ChildID] = 11)
-	)), 1, 0)
+			[x].[ParentID] = 1 AND ([x].[GrandChildID] <> 777 OR [x].[GrandChildID] IS NULL OR [x].[ChildID] <> 11 OR [x].[ChildID] IS NULL)
+	), 1, 0)
 

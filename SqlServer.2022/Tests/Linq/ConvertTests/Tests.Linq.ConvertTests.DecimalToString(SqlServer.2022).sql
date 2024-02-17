@@ -2,9 +2,9 @@
 -- SqlServer.2022
 
 SELECT
-	Convert(NVarChar(31), [t].[MoneyValue])
+	RTRIM(Replace(Convert(NVarChar(31), [p].[MoneyValue]), N',', N'.'), N'0.')
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	Len(Convert(NVarChar(31), [t].[MoneyValue])) > 0
+	Len(Convert(NVarChar(31), [p].[MoneyValue])) > 0
 

@@ -13,13 +13,13 @@ WHERE
 		FROM
 			(
 				SELECT
-					Max([t1].[ChildID]) as [c1]
+					Max([x_1].[ChildID]) as [Max_1]
 				FROM
-					[Child] [t1]
+					[Child] [x_1]
 				GROUP BY
-					[t1].[ParentID]
+					[x_1].[ParentID]
 			) [y]
 		WHERE
-			[y].[c1] = [x].[ChildID]
+			[y].[Max_1] = [x].[ChildID]
 	)
 
