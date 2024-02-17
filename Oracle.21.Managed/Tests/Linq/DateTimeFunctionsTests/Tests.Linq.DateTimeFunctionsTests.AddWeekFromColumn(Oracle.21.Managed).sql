@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * INTERVAL '7' DAY
+	Trunc(t."DateTimeValue" + t."SmallIntValue" * INTERVAL '7' DAY, 'DD')
 FROM
 	"LinqDataTypes" t
 

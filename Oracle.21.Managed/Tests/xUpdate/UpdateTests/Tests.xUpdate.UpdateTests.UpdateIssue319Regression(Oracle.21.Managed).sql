@@ -20,8 +20,6 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 100500
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID"
@@ -29,7 +27,7 @@ FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -39,36 +37,16 @@ DECLARE @id Int32
 SET     @id = 100500
 
 UPDATE
-	"Parent"
+	"Parent" t1
 SET
-	"Parent"."Value1" = :ParentID
+	"Value1" = :ParentID
 WHERE
-	EXISTS(
+	t1."ParentID" = :id AND (
 		SELECT
-			*
+			Count(*)
 		FROM
-			(
-				SELECT
-					t3."ParentID"
-				FROM
-					(
-						SELECT
-							t2."ParentID",
-							(
-								SELECT
-									Count(*)
-								FROM
-									"Parent" t1
-								WHERE
-									t1."ParentID" = :id
-							) as "ex"
-						FROM
-							"Parent" t2
-					) t3
-				WHERE
-					t3."ParentID" = :id AND t3."ex" > 0
-			) t4
+			"Parent" t2
 		WHERE
-			"Parent"."ParentID" = t4."ParentID"
-	)
+			t2."ParentID" = :id
+	) > 0
 

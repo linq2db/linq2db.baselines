@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	e.ID,
-	t7."SmallIntValue"
+	p."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -54,7 +54,13 @@ FROM
 		LEFT JOIN (
 			SELECT
 				t6.ID,
-				t6."SmallIntValue"
+				t6."MoneyValue",
+				t6."DateTimeValue",
+				t6."BoolValue",
+				t6."GuidValue",
+				t6."BinaryValue",
+				t6."SmallIntValue",
+				t6."StringValue"
 			FROM
 				(
 					SELECT
@@ -82,8 +88,8 @@ FROM
 						"LinqDataTypes" t5
 				) t6
 			FETCH NEXT 15 ROWS ONLY
-		) t7 ON t7.ID = e.ID
+		) p ON p.ID = e.ID
 ORDER BY
-	t7.ID,
-	e.ID
+	e.ID,
+	p.ID
 

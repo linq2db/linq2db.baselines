@@ -11,5 +11,5 @@ SELECT
 FROM
 	"Child" ch
 WHERE
-	NOT (ch."ParentID" = :ParentID AND ch."ChildID" = :ChildID)
+	(ch."ParentID" <> :ParentID OR ch."ChildID" <> :ChildID)
 
