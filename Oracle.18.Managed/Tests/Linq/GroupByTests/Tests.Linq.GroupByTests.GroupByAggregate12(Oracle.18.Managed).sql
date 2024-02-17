@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2."Key_1"
+	g_2."c1"
 FROM
 	(
 		SELECT
@@ -11,23 +11,23 @@ FROM
 					SELECT
 						Count(*)
 					FROM
-						"Child" t1
+						"Child" a_Children
 					WHERE
-						selectParam."ParentID" = t1."ParentID"
+						g_1."ParentID" = a_Children."ParentID"
 				) > 0 AND (
 					SELECT
-						Round(AVG(c_1."ParentID"), 27)
+						Round(AVG(a_Children_1."ParentID"), 27)
 					FROM
-						"Child" c_1
+						"Child" a_Children_1
 					WHERE
-						selectParam."ParentID" = c_1."ParentID"
+						g_1."ParentID" = a_Children_1."ParentID"
 				) > 3D
 					THEN 1
 				ELSE 0
-			END as "Key_1"
+			END as "c1"
 		FROM
-			"Parent" selectParam
-	) t2
+			"Parent" g_1
+	) g_2
 GROUP BY
-	t2."Key_1"
+	g_2."c1"
 

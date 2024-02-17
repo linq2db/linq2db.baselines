@@ -220,17 +220,23 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @Field1 Int32
+SET     @Field1 = 123
+DECLARE @Field4 Int32
+SET     @Field4 = 999
+DECLARE @Field5 Int32
+SET     @Field5 = 888
 
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		t1."Id",
-		t1."Field1",
-		t1."Field2"
+		t1."Id" as "source_Id",
+		t1."Field1" as "source_Field1",
+		t1."Field2" as "source_Field2"
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON (Target."Id" = "Source"."Id")
+ON (Target."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -244,14 +250,14 @@ INSERT
 )
 VALUES
 (
-	10 + "Source"."Id",
-	123,
-	"Source"."Field1",
-	"Source"."Field2",
-	999,
-	888
+	10 + "Source"."source_Id",
+	:Field1,
+	"Source"."source_Field1",
+	"Source"."source_Field2",
+	:Field4,
+	:Field5
 )
- WHERE "Source"."Field2" IS NOT NULL
+ WHERE "Source"."source_Field2" IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

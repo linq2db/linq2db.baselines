@@ -76,11 +76,12 @@ SELECT
 	q."Id",
 	q."Name",
 	q."ContactEmail",
-	Nvl(q."Enabled", 0)
+	q."Enabled"
 FROM
 	"CustomerBase" q
 WHERE
-	q."ClientType" = 'Client' AND (q."Name" LIKE :filter ESCAPE '~' OR q."ContactEmail" LIKE :filter_1 ESCAPE '~')
+	(q."Name" LIKE :filter ESCAPE '~' OR q."ContactEmail" LIKE :filter_1 ESCAPE '~') AND
+	q."ClientType" = 'Client'
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

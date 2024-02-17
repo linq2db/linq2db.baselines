@@ -2,22 +2,20 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Child" t1
-		WHERE
-			p."ParentID" = t1."ParentID"
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Child" t2
-		WHERE
-			p."ParentID" = t2."ParentID"
-	)
+	t3."Count_1" + t3."Count_1"
 FROM
-	"Parent" p
+	(
+		SELECT
+			t1."Count_1"
+		FROM
+			"Parent" t2
+				OUTER APPLY (
+					SELECT
+						Count(*) as "Count_1"
+					FROM
+						"Child" c_1
+					WHERE
+						t2."ParentID" = c_1."ParentID"
+				) t1
+	) t3
 
