@@ -6,10 +6,8 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 
 SELECT
-	[left_1].[ParentID],
-	[left_1].[Value1],
 	[t1].[ParentID],
-	[t1].[Value1]
+	[right_2].[ParentID]
 FROM
 	(
 		SELECT
@@ -19,16 +17,16 @@ FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] <> @id1
-	) [left_1]
+	) [t1]
 		FULL JOIN (
 			SELECT
-				[p_1].[ParentID],
-				[p_1].[Value1]
+				[right_1].[ParentID],
+				[right_1].[Value1]
 			FROM
-				[Parent] [p_1]
+				[Parent] [right_1]
 			WHERE
-				[p_1].[ParentID] <> @id2
-		) [t1] ON [t1].[ParentID] = [left_1].[ParentID]
+				[right_1].[ParentID] <> @id2
+		) [right_2] ON [right_2].[ParentID] = [t1].[ParentID]
 ORDER BY
-	[left_1].[ParentID]
+	IIF([t1].[ParentID] IS NOT NULL, [t1].[ParentID], NULL)
 

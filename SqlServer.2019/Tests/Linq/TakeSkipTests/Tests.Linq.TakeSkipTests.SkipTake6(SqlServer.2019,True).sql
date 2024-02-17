@@ -1,43 +1,37 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
-	[Child] [c_1],
-	(
-		SELECT TOP (@take)
-			[p].[ParentID]
-		FROM
-			[GrandChild] [p]
-	) [t1]
+	[Child] [c_1]
+		CROSS JOIN (
+			SELECT TOP (3)
+				[p].[ParentID]
+			FROM
+				[GrandChild] [p]
+		) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @skip Int -- Int32
-SET     @skip = 12
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
-	[Child] [c_1],
-	(
-		SELECT
-			[p].[ParentID]
-		FROM
-			[GrandChild] [p]
-		ORDER BY
-			1
-		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-	) [t1]
+	[Child] [c_1]
+		CROSS JOIN (
+			SELECT
+				[p].[ParentID]
+			FROM
+				[GrandChild] [p]
+			ORDER BY
+				1
+			OFFSET 12 ROWS FETCH NEXT 3 ROWS ONLY 
+		) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 

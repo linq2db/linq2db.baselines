@@ -10,8 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID],
-			[t1].[ChildID]
+			[t1].[ParentID]
 		FROM
 			[Child] [t1]
 		ORDER BY

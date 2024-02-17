@@ -4,12 +4,12 @@
 SELECT
 	(
 		SELECT
-			Sum([c_1].[ChildID])
+			Sum([a_Children].[ChildID])
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[t].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1 AND
-			[c_1].[ParentID] < 10
+			[a_Children].[ParentID] > 1 AND [a_Children].[ParentID] < 10 AND
+			[t].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [t]

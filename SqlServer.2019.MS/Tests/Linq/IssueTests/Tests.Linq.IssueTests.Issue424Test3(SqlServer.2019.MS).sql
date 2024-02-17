@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @skip Int -- Int32
-SET     @skip = 1
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -18,5 +16,14 @@ FROM
 	) [t2]
 ORDER BY
 	[t2].[ParentID] DESC
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @take ROWS FETCH NEXT @take ROWS ONLY 
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
