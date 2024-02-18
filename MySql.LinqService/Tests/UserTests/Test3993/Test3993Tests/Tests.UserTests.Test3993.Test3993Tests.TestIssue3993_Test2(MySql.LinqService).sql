@@ -105,7 +105,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @UtcNow DateTime
-SET     @UtcNow = '2024-02-18 01:33:37.229'
+SET     @UtcNow = '2024-02-18 08:33:28.895'
 DECLARE @Date DateTime
 SET     @Date = '2024-02-18'
 
