@@ -84,7 +84,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 00:05:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-02-18 01:57:20.242073'
+SET     @UtcNow = TIMESTAMP '2024-02-18 09:00:46.563025'
 
 SELECT
 	x."StartDateTime",
@@ -105,7 +105,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 36500.00:00:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-02-18 01:57:20.248307'
+SET     @UtcNow = TIMESTAMP '2024-02-18 09:00:46.569575'
 
 SELECT
 	x."StartDateTime",
