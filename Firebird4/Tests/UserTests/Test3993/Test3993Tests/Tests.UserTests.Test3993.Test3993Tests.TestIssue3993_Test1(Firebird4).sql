@@ -85,7 +85,7 @@ BeforeExecute
 DECLARE @p BigInt -- Int64
 SET     @p = 300000
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-02-18 01:28:09.452' AS timestamp)
+SET     @UtcNow = CAST('2024-02-18 08:28:46.558' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
@@ -106,7 +106,7 @@ BeforeExecute
 DECLARE @p BigInt -- Int64
 SET     @p = 3153600000000
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-02-18 01:28:09.457' AS timestamp)
+SET     @UtcNow = CAST('2024-02-18 08:28:46.563' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
