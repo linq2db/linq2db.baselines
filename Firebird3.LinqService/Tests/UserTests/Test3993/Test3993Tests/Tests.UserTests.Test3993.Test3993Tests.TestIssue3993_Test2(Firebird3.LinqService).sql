@@ -113,7 +113,7 @@ VALUES
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-02-18 01:27:17.076' AS timestamp)
+SET     @UtcNow = CAST('2024-02-18 08:27:40.752' AS timestamp)
 DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2024-02-18' AS timestamp)
 

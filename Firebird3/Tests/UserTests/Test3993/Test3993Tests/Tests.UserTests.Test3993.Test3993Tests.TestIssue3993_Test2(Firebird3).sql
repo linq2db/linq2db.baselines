@@ -58,7 +58,7 @@ SELECT CAST('2023-10-17 09:40:23' AS timestamp),CAST('2020-02-29 17:54:55.123' A
 BeforeExecute
 -- Firebird3 Firebird
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-02-18 01:27:16.979' AS timestamp)
+SET     @UtcNow = CAST('2024-02-18 08:27:40.670' AS timestamp)
 DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2024-02-18' AS timestamp)
 
