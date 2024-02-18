@@ -105,7 +105,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-02-18 13:59:53.458'
+SET     @UtcNow = '2024-02-18 15:10:34.838'
 DECLARE @Date  -- DateTime
 SET     @Date = '2024-02-18'
 
