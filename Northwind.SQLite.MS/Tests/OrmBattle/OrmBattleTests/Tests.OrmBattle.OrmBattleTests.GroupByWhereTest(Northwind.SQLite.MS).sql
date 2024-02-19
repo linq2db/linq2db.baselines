@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,20 +75,67 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[OrderDate]
+	[m_1].[OrderDate],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
 FROM
-	[Orders] [t1]
-GROUP BY
-	[t1].[OrderDate]
-HAVING
-	Count(*) > 5
+	(
+		SELECT DISTINCT
+			[t1].[OrderDate]
+		FROM
+			(
+				SELECT
+					Count(*) as [Count_1],
+					[g_1].[OrderDate]
+				FROM
+					[Orders] [g_1]
+				GROUP BY
+					[g_1].[OrderDate]
+			) [t1]
+		WHERE
+			[t1].[Count_1] > 5
+	) [m_1]
+		INNER JOIN [Orders] [d] ON DateTime([m_1].[OrderDate]) = DateTime([d].[OrderDate])
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT
+	[g_2].[OrderDate]
+FROM
+	(
+		SELECT
+			Count(*) as [Count_1],
+			[g_1].[OrderDate]
+		FROM
+			[Orders] [g_1]
+		GROUP BY
+			[g_1].[OrderDate]
+	) [g_2]
+WHERE
+	[g_2].[Count_1] > 5
 

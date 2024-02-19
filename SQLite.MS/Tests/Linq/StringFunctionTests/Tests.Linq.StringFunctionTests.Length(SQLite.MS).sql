@@ -1,16 +1,24 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 4
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p_1].[FirstName],
+	[p_1].[ID],
+	[p_1].[LastName],
+	[p_1].[MiddleName],
+	[p_1].[Gender]
 FROM
-	[Person] [p]
+	(
+		SELECT
+			Length([p].[FirstName]) as [Length_1],
+			[p].[PersonID] as [ID],
+			[p].[FirstName],
+			[p].[LastName],
+			[p].[MiddleName],
+			[p].[Gender]
+		FROM
+			[Person] [p]
+	) [p_1]
 WHERE
-	Length([p].[FirstName]) = @Length AND [p].[PersonID] = 1
+	[p_1].[Length_1] = 4 AND [p_1].[ID] = 1
 

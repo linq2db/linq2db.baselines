@@ -17,12 +17,10 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 15
-DECLARE @take_1  -- Int32
-SET     @take_1 = 15
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT
@@ -57,10 +55,28 @@ FROM
 	) [e]
 		LEFT JOIN (
 			SELECT
-				[t6].[ID],
-				[t6].[SmallIntValue]
+				[_1].[ID],
+				[_1].[MoneyValue],
+				[_1].[DateTimeValue],
+				[_1].[BoolValue],
+				[_1].[GuidValue],
+				[_1].[BinaryValue],
+				[_1].[SmallIntValue],
+				[_1].[StringValue]
 			FROM
 				(
+					SELECT
+						[_].[ID],
+						[_].[MoneyValue],
+						[_].[DateTimeValue],
+						[_].[BoolValue],
+						[_].[GuidValue],
+						[_].[BinaryValue],
+						[_].[SmallIntValue],
+						[_].[StringValue]
+					FROM
+						[LinqDataTypes] [_]
+					UNION ALL
 					SELECT
 						[t4].[ID],
 						[t4].[MoneyValue],
@@ -72,22 +88,10 @@ FROM
 						[t4].[StringValue]
 					FROM
 						[LinqDataTypes] [t4]
-					UNION ALL
-					SELECT
-						[t5].[ID],
-						[t5].[MoneyValue],
-						[t5].[DateTimeValue],
-						[t5].[BoolValue],
-						[t5].[GuidValue],
-						[t5].[BinaryValue],
-						[t5].[SmallIntValue],
-						[t5].[StringValue]
-					FROM
-						[LinqDataTypes] [t5]
-				) [t6]
-			LIMIT @take_1
-		) [_] ON [_].[ID] = [e].[ID]
+				) [_1]
+			LIMIT @take
+		) [p] ON [p].[ID] = [e].[ID]
 ORDER BY
-	[_].[ID],
-	[e].[ID]
+	[e].[ID],
+	[p].[ID]
 

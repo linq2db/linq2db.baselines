@@ -54,18 +54,30 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Coalesce([t1].[EnumNullable], [t1].[Enum]),
-	[t1].[Value1],
-	Coalesce([t1].[EnumNullable], [t1].[Enum])
+	[t2].[Converted1],
+	[t2].[Converted2],
+	[t2].[Converted1]
 FROM
-	[ValueConversion] [t1]
+	(
+		SELECT
+			Coalesce([t1].[EnumNullable], [t1].[Enum]) as [Converted1],
+			[t1].[Value1] as [Converted2]
+		FROM
+			[ValueConversion] [t1]
+	) [t2]
 UNION
 SELECT
-	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]),
-	[t1_1].[Value1],
-	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum])
+	[t3].[Converted1],
+	[t3].[Converted2],
+	[t3].[Converted1]
 FROM
-	[ValueConversion] [t1_1]
+	(
+		SELECT
+			Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]) as [Converted1],
+			[t1_1].[Value1] as [Converted2]
+		FROM
+			[ValueConversion] [t1_1]
+	) [t3]
 
 BeforeExecute
 -- SQLite.MS SQLite

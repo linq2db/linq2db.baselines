@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -85,19 +85,17 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[SupplierID],
-	[key_data_result].[ProductID],
-	[detail].[CompanyName]
+	[m_1].[SupplierID],
+	[d].[CompanyName]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Supplier].[SupplierID],
-			[p].[ProductID]
+			[a_Supplier].[SupplierID]
 		FROM
 			[Products] [p]
-				LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
-	) [key_data_result]
-		INNER JOIN [Suppliers] [detail] ON [detail].[SupplierID] = [key_data_result].[SupplierID]
+				LEFT JOIN [Suppliers] [a_Supplier] ON ([p].[SupplierID] = [a_Supplier].[SupplierID] OR [p].[SupplierID] IS NULL AND [a_Supplier].[SupplierID] IS NULL)
+	) [m_1]
+		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute
 DisposeTransaction
@@ -105,6 +103,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[p].[Discontinued],
 	[p].[ProductID],
 	[p].[ProductName],
 	[p].[SupplierID],
@@ -114,9 +113,8 @@ SELECT
 	[p].[UnitsInStock],
 	[p].[UnitsOnOrder],
 	[p].[ReorderLevel],
-	[p].[Discontinued],
 	[a_Supplier].[SupplierID]
 FROM
 	[Products] [p]
-		LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
+		LEFT JOIN [Suppliers] [a_Supplier] ON ([p].[SupplierID] = [a_Supplier].[SupplierID] OR [p].[SupplierID] IS NULL AND [a_Supplier].[SupplierID] IS NULL)
 

@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,39 +75,53 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[a_Customer].[CustomerID],
-	[a_Customer].[CompanyName],
-	[a_Customer].[ContactName],
-	[a_Customer].[ContactTitle],
-	[a_Customer].[Address],
-	[a_Customer].[City],
-	[a_Customer].[Region],
-	[a_Customer].[PostalCode],
-	[a_Customer].[Country],
-	[a_Customer].[Phone],
-	[a_Customer].[Fax]
+	[m_1].[CustomerID],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Customer].[CustomerID]
+		FROM
+			[Orders] [t1]
+				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+	) [m_1]
+		INNER JOIN ([Orders] [d]
+			INNER JOIN [Customers] [a_Customer_1] ON ([d].[CustomerID] = [a_Customer_1].[CustomerID] OR [d].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL))
+		ON ([m_1].[CustomerID] = [a_Customer_1].[CustomerID] OR [m_1].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT
+	[a_Customer].[CustomerID]
 FROM
 	[Orders] [t1]
 		INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
 GROUP BY
-	[a_Customer].[CustomerID],
-	[a_Customer].[CompanyName],
-	[a_Customer].[ContactName],
-	[a_Customer].[ContactTitle],
-	[a_Customer].[Address],
-	[a_Customer].[City],
-	[a_Customer].[Region],
-	[a_Customer].[PostalCode],
-	[a_Customer].[Country],
-	[a_Customer].[Phone],
-	[a_Customer].[Fax]
+	[a_Customer].[CustomerID]
 

@@ -1,33 +1,17 @@
 ﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID]
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[p].[ParentID],
-	[p].[Value1]
-FROM
-	[Parent] [p]
+	[Parent] [t2]
+		LEFT JOIN (
+			SELECT
+				[c_1].[ParentID],
+				[c_1].[ChildID],
+				ROW_NUMBER() OVER (PARTITION BY [c_1].[ParentID] ORDER BY [c_1].[ChildID]) as [rn]
+			FROM
+				[Child] [c_1]
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 

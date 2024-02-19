@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -83,12 +83,12 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[c_1].[CustomerID],
+	[t1].[CustomerID],
 	[o].[OrderID],
 	[o].[Freight]
 FROM
-	[Customers] [c_1]
-		INNER JOIN [Orders] [o] ON ([c_1].[CustomerID] = [o].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+	[Customers] [t1]
+		INNER JOIN [Orders] [o] ON ([t1].[CustomerID] = [o].[CustomerID] OR [t1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
 WHERE
 	[o].[Freight] < 500.00
 
