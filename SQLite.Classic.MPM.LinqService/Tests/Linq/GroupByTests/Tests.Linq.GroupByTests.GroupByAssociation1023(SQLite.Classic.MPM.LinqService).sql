@@ -2,48 +2,41 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[g_1].[Value1]
+	[g_2].[Value1]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[GrandChild] [_]
-						INNER JOIN [Parent] [a_Parent] ON [_].[ParentID] = [a_Parent].[ParentID]
-				WHERE
-					[a_Parent_3].[ParentID] = [a_Parent].[ParentID] AND
-					[_].[ChildID] >= 20
-			) as [cnt],
-			(
-				SELECT
-					Sum([p].[ParentID])
-				FROM
-					[GrandChild] [p]
-						INNER JOIN [Parent] [a_Parent_1] ON [p].[ParentID] = [a_Parent_1].[ParentID]
-				WHERE
-					[a_Parent_3].[ParentID] = [a_Parent_1].[ParentID] AND
-					[p].[ChildID] >= 19
-			) as [Sum_1],
-			(
-				SELECT
-					Max([p_1].[ParentID])
-				FROM
-					[GrandChild] [p_1]
-						INNER JOIN [Parent] [a_Parent_2] ON [p_1].[ParentID] = [a_Parent_2].[ParentID]
-				WHERE
-					[a_Parent_3].[ParentID] = [a_Parent_2].[ParentID] AND
-					[p_1].[ChildID] >= 19
-			) as [ex],
-			[a_Parent_3].[Value1]
+			Count(CASE
+				WHEN [g_1].[ChildID] >= 20
+					THEN 1
+				ELSE NULL
+			END) as [Count_1],
+			[a_Parent].[Value1],
+			[a_Parent].[ParentID]
 		FROM
-			[GrandChild] [t1]
-				INNER JOIN [Parent] [a_Parent_3] ON [t1].[ParentID] = [a_Parent_3].[ParentID]
+			[GrandChild] [g_1]
+				INNER JOIN [Parent] [a_Parent] ON [g_1].[ParentID] = [a_Parent].[ParentID]
 		GROUP BY
-			[a_Parent_3].[ParentID],
-			[a_Parent_3].[Value1]
-	) [g_1]
+			[a_Parent].[ParentID],
+			[a_Parent].[Value1]
+	) [g_2]
 WHERE
-	[g_1].[cnt] > 2 AND [g_1].[Sum_1] > 0 AND [g_1].[ex] > 0
+	[g_2].[Count_1] > 2 AND (
+		SELECT
+			Sum([ch].[ParentID])
+		FROM
+			[GrandChild] [ch]
+				INNER JOIN [Parent] [a_Parent_1] ON [ch].[ParentID] = [a_Parent_1].[ParentID]
+		WHERE
+			[ch].[ChildID] >= 19 AND [g_2].[ParentID] = [a_Parent_1].[ParentID]
+	) > 0 AND
+	(
+		SELECT
+			Max([ch_1].[ParentID])
+		FROM
+			[GrandChild] [ch_1]
+				INNER JOIN [Parent] [a_Parent_2] ON [ch_1].[ParentID] = [a_Parent_2].[ParentID]
+		WHERE
+			[ch_1].[ChildID] >= 19 AND [g_2].[ParentID] = [a_Parent_2].[ParentID]
+	) > 0
 

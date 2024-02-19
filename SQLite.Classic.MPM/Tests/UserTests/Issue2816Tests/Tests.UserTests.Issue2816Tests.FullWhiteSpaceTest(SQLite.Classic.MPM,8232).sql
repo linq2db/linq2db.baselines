@@ -36,8 +36,8 @@ SELECT
 FROM
 	[Issue2816Table] [p]
 WHERE
-	NOT ([p].[Text] IS NULL OR LTRIM([p].[Text], '	
-                 　') = '')
+	NOT (([p].[Text] IS NULL OR LTRIM([p].[Text], '	
+                 　') = ''))
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

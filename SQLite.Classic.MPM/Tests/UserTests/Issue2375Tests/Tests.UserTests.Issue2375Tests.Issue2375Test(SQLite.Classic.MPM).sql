@@ -99,37 +99,65 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
-	[inventory].[Status],
-	[lc].[ResourceLabel]
-FROM
-	[InventoryResourceDTO] [inventory]
-		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [inventory].[ResourceID] = [lc].[Id]
-GROUP BY
-	[inventory].[Status],
-	[lc].[ResourceLabel]
-HAVING
-	Count(*) > 1
-
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Status  -- Int32
-SET     @Status = 40
-DECLARE @ResourceLabel NVarChar(1) -- String
-SET     @ResourceLabel = 'b'
 
 SELECT
-	[inventory].[Id],
-	[inventory].[Status],
-	[inventory].[ResourceID],
-	[inventory].[ModifiedTimeStamp]
+	[m_1].[Status],
+	[m_1].[ResourceLabel],
+	[d].[Id],
+	[d].[Status],
+	[d].[ResourceID],
+	[d].[ModifiedTimeStamp]
 FROM
-	[InventoryResourceDTO] [inventory]
-		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [inventory].[ResourceID] = [lc].[Id]
+	(
+		SELECT DISTINCT
+			[t1].[Status],
+			[t1].[ResourceLabel]
+		FROM
+			(
+				SELECT
+					Count(*) as [Count_1],
+					[grp].[Status],
+					[lc].[ResourceLabel]
+				FROM
+					[InventoryResourceDTO] [grp]
+						INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
+				GROUP BY
+					[grp].[Status],
+					[lc].[ResourceLabel]
+			) [t1]
+		WHERE
+			[t1].[Count_1] > 1
+	) [m_1]
+		INNER JOIN ([InventoryResourceDTO] [d]
+			INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id])
+		ON [m_1].[Status] = [d].[Status] AND ([m_1].[ResourceLabel] = [lc_1].[ResourceLabel] OR [m_1].[ResourceLabel] IS NULL AND [lc_1].[ResourceLabel] IS NULL)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[grp_1].[Status],
+	[grp_1].[ResourceLabel]
+FROM
+	(
+		SELECT
+			Count(*) as [Count_1],
+			[grp].[Status],
+			[lc].[ResourceLabel]
+		FROM
+			[InventoryResourceDTO] [grp]
+				INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
+		GROUP BY
+			[grp].[Status],
+			[lc].[ResourceLabel]
+	) [grp_1]
 WHERE
-	[inventory].[Status] = @Status AND [lc].[ResourceLabel] = @ResourceLabel
+	[grp_1].[Count_1] > 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -604,12 +604,17 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[Key1]
+			*
 		FROM
-			[FirstOptimizerData] [t1]
-		GROUP BY
-			[t1].[Key1]
-	) [x]
+			(
+				SELECT
+					[x].[Key1]
+				FROM
+					[FirstOptimizerData] [x]
+				GROUP BY
+					[x].[Key1]
+			) [x_1]
+	) [x_2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

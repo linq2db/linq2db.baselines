@@ -98,7 +98,7 @@ SELECT
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1 AND [a_ActualStage].[Actual] IS NOT NULL
 WHERE
 	[p].[TargetName] = 'bda.Requests'
 
@@ -106,12 +106,12 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[Id],
 	[p].[TargetName],
+	[p].[Id],
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1 AND [a_ActualStage].[Actual] IS NOT NULL
 ORDER BY
 	[p].[Id]
 

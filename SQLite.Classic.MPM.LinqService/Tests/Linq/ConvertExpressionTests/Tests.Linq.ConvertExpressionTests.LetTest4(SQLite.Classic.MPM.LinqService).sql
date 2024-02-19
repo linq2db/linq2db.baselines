@@ -2,42 +2,6 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
-FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100 AND [_c].[ParentID] > 0
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
-FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -58,7 +22,52 @@ SELECT
 		WHERE
 			[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
 	),
-	[p].[ParentID]
+	(
+		SELECT
+			[c_3].[ParentID]
+		FROM
+			[Child] [c_3]
+		WHERE
+			[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100 AND
+			[c_3].[ParentID] > 0
+		ORDER BY
+			[c_3].[ChildID]
+		LIMIT 1
+	),
+	(
+		SELECT
+			[c_4].[ChildID]
+		FROM
+			[Child] [c_4]
+		WHERE
+			[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100 AND
+			[c_4].[ParentID] > 0
+		ORDER BY
+			[c_4].[ChildID]
+		LIMIT 1
+	),
+	(
+		SELECT
+			[c_5].[ParentID]
+		FROM
+			[Child] [c_5]
+		WHERE
+			[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
+		ORDER BY
+			[c_5].[ChildID]
+		LIMIT 1
+	),
+	(
+		SELECT
+			[c_6].[ChildID]
+		FROM
+			[Child] [c_6]
+		WHERE
+			[c_6].[ParentID] = [p].[ParentID] AND [c_6].[ChildID] > -100
+		ORDER BY
+			[c_6].[ChildID]
+		LIMIT 1
+	)
 FROM
 	[Parent] [p]
 

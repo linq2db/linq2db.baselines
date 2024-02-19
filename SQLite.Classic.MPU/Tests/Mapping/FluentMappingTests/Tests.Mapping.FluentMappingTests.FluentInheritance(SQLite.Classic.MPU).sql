@@ -1,32 +1,28 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
 	[_].[Gender],
-	[_].[FirstName],
-	[_].[LastName]
+	[_].[PersonID],
+	[_].[LastName],
+	[_].[FirstName]
 FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
 	[_].[Gender],
-	[_].[FirstName],
-	[_].[LastName]
+	[_].[PersonID],
+	[_].[LastName],
+	[_].[FirstName]
 FROM
 	[Person] [_]
 WHERE
 	[_].[PersonID] = 3
-LIMIT @take
+LIMIT 1
 

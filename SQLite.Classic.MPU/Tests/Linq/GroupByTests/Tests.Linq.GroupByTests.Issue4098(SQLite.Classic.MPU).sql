@@ -144,10 +144,10 @@ SELECT
 	[t1].[Units],
 	Sum([ip].[NetPayment])
 FROM
-	[PaymentEvent] [pe]
-		INNER JOIN [InvestorPayment] [ip] ON [pe].[Id] = [ip].[Id]
+	[PaymentEvent] [g_1]
+		INNER JOIN [InvestorPayment] [ip] ON [g_1].[Id] = [ip].[Id]
 		INNER JOIN [InvestorPaymentDetail] [ipd] ON [ip].[InvestorId] = [ipd].[InvestorId]
-		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [pe].[Id] = [pc].[EventId]
+		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [g_1].[Id] = [pc].[EventId]
 		INNER JOIN (
 			SELECT
 				[b].[InvestorId],
@@ -158,7 +158,7 @@ FROM
 			GROUP BY
 				[b].[SecurityClass],
 				[b].[InvestorId]
-		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [pe].[SecurityClass] = [t1].[SecurityClass]
+		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [g_1].[SecurityClass] = [t1].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
 	[t1].[Units]

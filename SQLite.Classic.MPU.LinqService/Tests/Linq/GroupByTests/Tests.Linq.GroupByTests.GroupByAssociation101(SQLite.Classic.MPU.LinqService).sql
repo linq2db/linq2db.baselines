@@ -2,13 +2,19 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[a_Parent].[Value1]
+	[g_2].[Value1]
 FROM
-	[GrandChild] [t1]
-		INNER JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-GROUP BY
-	[a_Parent].[ParentID],
-	[a_Parent].[Value1]
-HAVING
-	Max([t1].[ParentID]) > 2
+	(
+		SELECT
+			Max([g_1].[ParentID]) as [Max_1],
+			[a_Parent].[Value1]
+		FROM
+			[GrandChild] [g_1]
+				INNER JOIN [Parent] [a_Parent] ON [g_1].[ParentID] = [a_Parent].[ParentID]
+		GROUP BY
+			[a_Parent].[ParentID],
+			[a_Parent].[Value1]
+	) [g_2]
+WHERE
+	[g_2].[Max_1] > 2
 

@@ -52,8 +52,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -61,8 +59,8 @@ SELECT
 	[a_Other].[IsActual]
 FROM
 	[SomeEntity] [t]
-		LEFT JOIN [SomeOtherEntity] [a_Other] ON [t].[OtherId] = [a_Other].[Id]
-LIMIT @take
+		LEFT JOIN [SomeOtherEntity] [a_Other] ON ([t].[OtherId] = [a_Other].[Id] OR [t].[OtherId] IS NULL AND [a_Other].[Id] IS NULL)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
