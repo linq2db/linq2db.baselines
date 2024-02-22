@@ -3,30 +3,22 @@
 
 SELECT
 	p_1."ParentID",
-	p_1."Sum_2"
+	p_1."Sum_1" / 2
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					Sum(t."ParentID")
+					Sum(a_Children."ParentID")
 				FROM
-					"Child" t
+					"Child" a_Children
 				WHERE
-					p."ParentID" = t."ParentID" AND t."ParentID" > 0
-			) / 2 as "Sum_1",
-			p."ParentID",
-			(
-				SELECT
-					Sum(t."ParentID")
-				FROM
-					"Child" t
-				WHERE
-					p."ParentID" = t."ParentID" AND t."ParentID" > 0
-			) as "Sum_2"
+					a_Children."ParentID" > 0 AND p."ParentID" = a_Children."ParentID"
+			) as "Sum_1",
+			p."ParentID"
 		FROM
 			"Parent" p
 	) p_1
 WHERE
-	p_1."Sum_1" > 1
+	p_1."Sum_1" / 2 > 1
 

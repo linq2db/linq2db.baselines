@@ -4,7 +4,7 @@ DECLARE @doe Varchar2(3) -- String
 SET     @doe = 'Doe'
 
 SELECT
-	t1."item"
+	n."item"
 FROM
 	"Person" p
 		CROSS APPLY (
@@ -14,7 +14,7 @@ FROM
 			UNION ALL
 			SELECT 'John' FROM sys.dual
 			UNION ALL
-			SELECT :doe FROM sys.dual) t1
+			SELECT :doe FROM sys.dual) n
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -22,7 +22,7 @@ DECLARE @doe Varchar2(4) -- String
 SET     @doe = 'Doe1'
 
 SELECT
-	t1."item"
+	n."item"
 FROM
 	"Person" p
 		CROSS APPLY (
@@ -32,5 +32,5 @@ FROM
 			UNION ALL
 			SELECT 'John' FROM sys.dual
 			UNION ALL
-			SELECT :doe FROM sys.dual) t1
+			SELECT :doe FROM sys.dual) n
 
