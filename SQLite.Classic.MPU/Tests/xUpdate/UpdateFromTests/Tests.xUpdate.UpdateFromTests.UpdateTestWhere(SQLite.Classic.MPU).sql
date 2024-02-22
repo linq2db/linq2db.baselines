@@ -86,9 +86,11 @@ SET
 	[Value2] = ([UpdatedEntities].[Value2] * [t].[Value2]) * @int2,
 	[Value3] = ([UpdatedEntities].[Value3] * [t].[Value3]) * @int3
 FROM
-	[NewEntities] [t]
+	[UpdatedEntities] [c_1]
+		CROSS JOIN [NewEntities] [t]
 WHERE
-	[t].[id] = [UpdatedEntities].[id] AND [t].[id] <> @someId
+	[t].[id] = [UpdatedEntities].[id] AND [t].[id] <> @someId AND
+	[c_1].[id] = [UpdatedEntities].[id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

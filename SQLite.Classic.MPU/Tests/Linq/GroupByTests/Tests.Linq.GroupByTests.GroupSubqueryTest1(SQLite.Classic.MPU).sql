@@ -11,8 +11,8 @@ FROM
 			[Child] [g_1]
 		GROUP BY
 			[g_1].[ParentID]
-	) [pmp],
-	[Child] [pmp1]
+	) [pmp]
+		CROSS JOIN [Child] [pmp1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

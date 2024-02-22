@@ -63,16 +63,7 @@ FROM
 	[ValueConversion] [t1]
 		INNER JOIN (
 			SELECT
-				[t2].[Id],
-				[t2].[Value1],
-				[t2].[Value2],
-				[t2].[Enum],
-				[t2].[EnumNullable],
-				[t2].[EnumWithNull],
-				[t2].[EnumWithNullDeclarative],
-				[t2].[BoolValue],
-				[t2].[AnotherBoolValue],
-				[t2].[DateTimeNullable]
+				[t2].[Id]
 			FROM
 				[ValueConversion] [t2]
 			WHERE

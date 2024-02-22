@@ -14,8 +14,8 @@ FROM
 			[Child] [g_1]
 		GROUP BY
 			[g_1].[ParentID]
-	) [t1],
-	[Parent] [p]
+	) [t1]
+		CROSS JOIN [Parent] [p]
 WHERE
 	[p].[ParentID] = [t1].[ParentID]
 

@@ -35,25 +35,40 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[cu_1].[Id],
-	[cu_1].[CountOfCards]
-FROM
+	[cu].[Id],
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Issue1983Card] [t1]
-				WHERE
-					[t1].[PersonId] = [cu].[Id] AND [t1].[CardType] = 2
-			) as [CountOfCards],
-			[cu].[Id]
+			Count(*)
 		FROM
-			[Issue1983Person] [cu]
-	) [cu_1]
+			[Issue1983Card] [t1]
+		WHERE
+			[t1].[PersonId] = [cu].[Id] AND [t1].[CardType] = 2
+	)
+FROM
+	[Issue1983Person] [cu]
 WHERE
-	([cu_1].[CountOfCards] = 0 OR [cu_1].[CountOfCards] <> 0 OR [cu_1].[CountOfCards] IS NULL)
+	((
+		SELECT
+			Count(*)
+		FROM
+			[Issue1983Card] [t1]
+		WHERE
+			[t1].[PersonId] = [cu].[Id] AND [t1].[CardType] = 2
+	) = 0 OR (
+		SELECT
+			Count(*)
+		FROM
+			[Issue1983Card] [t1]
+		WHERE
+			[t1].[PersonId] = [cu].[Id] AND [t1].[CardType] = 2
+	) <> 0 OR (
+		SELECT
+			Count(*)
+		FROM
+			[Issue1983Card] [t1]
+		WHERE
+			[t1].[PersonId] = [cu].[Id] AND [t1].[CardType] = 2
+	) IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

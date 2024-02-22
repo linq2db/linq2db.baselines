@@ -2,18 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[c_1].[count_1]
+	Count(*)
 FROM
-	(
-		SELECT
-			Count(*) as [count_1]
-		FROM
-			[Child] [g_1]
-		GROUP BY
-			[g_1].[ParentID]
-		HAVING
-			Count(*) > 1
-	) [c_1]
-WHERE
-	[c_1].[count_1] > 1
+	[Child] [c_1]
+GROUP BY
+	[c_1].[ParentID]
+HAVING
+	Count(*) > 1 AND Count(*) > 1
 

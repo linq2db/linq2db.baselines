@@ -33,18 +33,13 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				[group_1].[Value]
 			FROM
-				(
-					SELECT
-						Count(*) as [Count_1]
-					FROM
-						[TakeSkipClass] [group_1]
-					GROUP BY
-						[group_1].[Value]
-				) [group_2]
-			WHERE
-				[group_2].[Count_1] > 1
+				[TakeSkipClass] [group_1]
+			GROUP BY
+				[group_1].[Value]
+			HAVING
+				Count(*) > 1
 			LIMIT @take
 		)
 			THEN 1

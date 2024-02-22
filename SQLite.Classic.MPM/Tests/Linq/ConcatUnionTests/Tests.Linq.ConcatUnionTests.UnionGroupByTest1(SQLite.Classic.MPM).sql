@@ -18,28 +18,16 @@ GROUP BY
 	[t1].[Year_1]
 UNION
 SELECT
-	[t2].[month_1],
-	[t2].[month_1],
-	[t2].[int_1]
+	Cast([_1].[SmallIntValue] as INTEGER),
+	Cast([_1].[SmallIntValue] as INTEGER),
+	3
 FROM
-	(
-		SELECT
-			Cast([_1].[SmallIntValue] as INTEGER) as [month_1],
-			3 as [int_1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t2]
+	[LinqDataTypes] [_1]
 UNION
 SELECT
-	[t3].[month_1],
-	[t3].[month_1],
-	[t3].[int_1]
+	Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int),
+	2
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int) as [month_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_2]
-	) [t3]
+	[LinqDataTypes] [_2]
 

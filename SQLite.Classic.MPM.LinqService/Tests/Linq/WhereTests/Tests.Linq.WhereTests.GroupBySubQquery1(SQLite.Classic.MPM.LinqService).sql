@@ -9,17 +9,12 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			[y].[ParentID]
 		FROM
-			(
-				SELECT
-					Max([x_1].[ChildID]) as [Max_1]
-				FROM
-					[Child] [x_1]
-				GROUP BY
-					[x_1].[ParentID]
-			) [y]
-		WHERE
-			[y].[Max_1] = [x].[ChildID]
+			[Child] [y]
+		GROUP BY
+			[y].[ParentID]
+		HAVING
+			Max([y].[ChildID]) = [x].[ChildID]
 	)
 

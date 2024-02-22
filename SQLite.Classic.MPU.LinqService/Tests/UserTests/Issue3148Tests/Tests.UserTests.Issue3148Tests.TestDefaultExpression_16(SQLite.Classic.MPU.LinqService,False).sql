@@ -19,8 +19,7 @@ FROM
 GROUP BY
 	[g_2].[LastName],
 	[g_2].[c1],
-	[g_2].[c2],
-	[g_2].[c3]
+	[g_2].[c2]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -43,6 +42,5 @@ FROM
 GROUP BY
 	[g_2].[LastName],
 	[g_2].[c1],
-	[g_2].[c2],
-	[g_2].[c3]
+	[g_2].[c2]
 

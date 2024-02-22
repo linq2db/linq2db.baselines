@@ -31,15 +31,9 @@ GROUP BY
 	[t2].[Year_1]
 UNION
 SELECT
-	[t3].[month_1],
-	[t3].[month_1],
-	[t3].[int_1]
+	Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int),
+	Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int),
+	2
 FROM
-	(
-		SELECT
-			Cast(StrFTime('%Y', [_2].[DateTimeValue]) as int) as [month_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_2]
-	) [t3]
+	[LinqDataTypes] [_2]
 

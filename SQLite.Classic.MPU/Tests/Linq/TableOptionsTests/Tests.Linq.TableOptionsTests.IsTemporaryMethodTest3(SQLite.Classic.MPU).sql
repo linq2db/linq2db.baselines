@@ -23,8 +23,8 @@ SELECT
 	[t3].[Id],
 	[t3].[Value]
 FROM
-	temp.[TestTable] [t1],
-	temp.[TestTable] [t2]
+	temp.[TestTable] [t1]
+		CROSS JOIN temp.[TestTable] [t2]
 		INNER JOIN temp.[TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 WHERE
 	[t1].[Id] = [t2].[Id]

@@ -4,8 +4,8 @@
 SELECT
 	[_].[ParentID] + 1
 FROM
-	[Parent] [p],
-	[Child] [_]
+	[Parent] [p]
+		CROSS JOIN [Child] [_]
 WHERE
 	[_].[ParentID] + 1 > 1
 

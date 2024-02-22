@@ -6,9 +6,9 @@ SELECT
 	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	[Person] [t1],
-	[Patient] [pt],
-	[Doctor] [d]
+	[Person] [t1]
+		CROSS JOIN [Patient] [pt]
+		CROSS JOIN [Doctor] [d]
 ORDER BY
 	[t1].[PersonID],
 	[pt].[PersonID],

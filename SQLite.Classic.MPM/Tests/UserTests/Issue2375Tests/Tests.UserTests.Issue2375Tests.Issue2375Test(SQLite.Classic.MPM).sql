@@ -118,7 +118,6 @@ FROM
 		FROM
 			(
 				SELECT
-					Count(*) as [Count_1],
 					[grp].[Status],
 					[lc].[ResourceLabel]
 				FROM
@@ -127,9 +126,9 @@ FROM
 				GROUP BY
 					[grp].[Status],
 					[lc].[ResourceLabel]
+				HAVING
+					Count(*) > 1
 			) [t1]
-		WHERE
-			[t1].[Count_1] > 1
 	) [m_1]
 		INNER JOIN ([InventoryResourceDTO] [d]
 			INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id])
@@ -141,23 +140,16 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[grp_1].[Status],
-	[grp_1].[ResourceLabel]
+	[grp].[Status],
+	[lc].[ResourceLabel]
 FROM
-	(
-		SELECT
-			Count(*) as [Count_1],
-			[grp].[Status],
-			[lc].[ResourceLabel]
-		FROM
-			[InventoryResourceDTO] [grp]
-				INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
-		GROUP BY
-			[grp].[Status],
-			[lc].[ResourceLabel]
-	) [grp_1]
-WHERE
-	[grp_1].[Count_1] > 1
+	[InventoryResourceDTO] [grp]
+		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
+GROUP BY
+	[grp].[Status],
+	[lc].[ResourceLabel]
+HAVING
+	Count(*) > 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

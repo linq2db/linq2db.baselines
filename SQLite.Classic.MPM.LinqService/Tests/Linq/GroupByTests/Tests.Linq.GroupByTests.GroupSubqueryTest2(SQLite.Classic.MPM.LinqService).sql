@@ -4,15 +4,15 @@
 SELECT
 	[pmp1].[ChildID]
 FROM
-	[Child] [pmp1],
-	(
-		SELECT
-			[g_1].[ParentID]
-		FROM
-			[Child] [g_1]
-		GROUP BY
-			[g_1].[ParentID]
-	) [pmp]
+	[Child] [pmp1]
+		CROSS JOIN (
+			SELECT
+				[pmp].[ParentID]
+			FROM
+				[Child] [pmp]
+			GROUP BY
+				[pmp].[ParentID]
+		) [pmp_1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

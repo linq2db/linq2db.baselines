@@ -42,9 +42,17 @@ SET
 	([Two], [Three]) = ([Ints].[Two] * 10, [j].[Three] * 100),
 	([Four], [Nil]) = ([Ints].[One] * [Ints].[Four], 600)
 FROM
-	[Ints] [j]
+	[Ints] [i]
+		CROSS JOIN [Ints] [j]
 WHERE
-	[Ints].[One] = 10 AND [j].[One] = 1
+	[Ints].[One] = 10 AND
+	[j].[One] = 1 AND
+	[i].[One] = [Ints].[One] AND
+	[i].[Two] = [Ints].[Two] AND
+	[i].[Three] = [Ints].[Three] AND
+	[i].[Four] = [Ints].[Four] AND
+	[i].[Five] = [Ints].[Five] AND
+	([i].[Nil] = [Ints].[Nil] OR [i].[Nil] IS NULL AND [Ints].[Nil] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
