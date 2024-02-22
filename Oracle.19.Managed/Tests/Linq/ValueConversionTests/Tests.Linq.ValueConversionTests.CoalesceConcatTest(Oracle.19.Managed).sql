@@ -71,17 +71,11 @@ FROM
 	) t2
 UNION
 SELECT
-	t3."Converted1",
-	t3."Converted2",
-	t3."Converted1"
+	Nvl(t1_1."EnumNullable", t1_1."Enum"),
+	t1_1."Value1",
+	Nvl(t1_1."EnumNullable", t1_1."Enum")
 FROM
-	(
-		SELECT
-			Nvl(t1_1."EnumNullable", t1_1."Enum") as "Converted1",
-			t1_1."Value1" as "Converted2"
-		FROM
-			"ValueConversion" t1_1
-	) t3
+	"ValueConversion" t1_1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

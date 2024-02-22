@@ -34,32 +34,32 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	x_1."ParentID",
-	x_1."CountResult",
-	x_1."Sum_1"
-FROM
+	x."ParentID",
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Child" od
-				WHERE
-					x."ParentID" = od."ParentID"
-			) as "CountResult",
-			x."ParentID",
-			(
-				SELECT
-					Sum(od_1."ParentID")
-				FROM
-					"Child" od_1
-				WHERE
-					x."ParentID" = od_1."ParentID"
-			) as "Sum_1"
+			Count(*)
 		FROM
-			"Parent" x
-	) x_1
+			"Child" od
+		WHERE
+			x."ParentID" = od."ParentID"
+	),
+	(
+		SELECT
+			Sum(od_1."ParentID")
+		FROM
+			"Child" od_1
+		WHERE
+			x."ParentID" = od_1."ParentID"
+	)
+FROM
+	"Parent" x
 WHERE
-	x_1."CountResult" > 0
+	(
+		SELECT
+			Count(*)
+		FROM
+			"Child" od
+		WHERE
+			x."ParentID" = od."ParentID"
+	) > 0
 

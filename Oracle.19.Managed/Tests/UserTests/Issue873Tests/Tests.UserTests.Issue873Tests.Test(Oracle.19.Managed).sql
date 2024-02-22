@@ -2,49 +2,49 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	f_1."Label_1",
-	f_1."SubSum",
-	f_1."Any_1",
-	f_1."Count_1"
-FROM
+	' ' || Cast(Nvl(f."Value1", 0) as VarChar(255)),
 	(
 		SELECT
-			' ' || Cast(Nvl(f."Value1", 0) as VarChar(255)) as "Label",
-			(
-				SELECT
-					Sum(c_1."ChildID")
-				FROM
-					"Child" c_1
-						LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
-				WHERE
-					a_Parent."ParentID" = f."ParentID" AND (a_Parent."Value1" = f."Value1" OR a_Parent."Value1" IS NULL AND f."Value1" IS NULL)
-			) as "SubSum",
-			' ' || Cast(Nvl(f."Value1", 0) as VarChar(255)) as "Label_1",
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						"Child" c_2
-							LEFT JOIN "Parent" a_Parent_1 ON c_2."ParentID" = a_Parent_1."ParentID"
-					WHERE
-						a_Parent_1."ParentID" = f."ParentID" AND (a_Parent_1."Value1" = f."Value1" OR a_Parent_1."Value1" IS NULL AND f."Value1" IS NULL)
-				)
-					THEN 1
-				ELSE 0
-			END as "Any_1",
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Child" p
-						LEFT JOIN "Parent" a_Parent_2 ON p."ParentID" = a_Parent_2."ParentID"
-				WHERE
-					a_Parent_2."ParentID" = f."ParentID" AND (a_Parent_2."Value1" = f."Value1" OR a_Parent_2."Value1" IS NULL AND f."Value1" IS NULL)
-			) as "Count_1"
+			Sum(c_1."ChildID")
 		FROM
-			"Parent" f
-	) f_1
+			"Child" c_1
+				LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
+		WHERE
+			a_Parent."ParentID" = f."ParentID" AND (a_Parent."Value1" = f."Value1" OR a_Parent."Value1" IS NULL AND f."Value1" IS NULL)
+	),
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" c_2
+					LEFT JOIN "Parent" a_Parent_1 ON c_2."ParentID" = a_Parent_1."ParentID"
+			WHERE
+				a_Parent_1."ParentID" = f."ParentID" AND (a_Parent_1."Value1" = f."Value1" OR a_Parent_1."Value1" IS NULL AND f."Value1" IS NULL)
+		)
+			THEN 1
+		ELSE 0
+	END,
+	(
+		SELECT
+			Count(*)
+		FROM
+			"Child" p
+				LEFT JOIN "Parent" a_Parent_2 ON p."ParentID" = a_Parent_2."ParentID"
+		WHERE
+			a_Parent_2."ParentID" = f."ParentID" AND (a_Parent_2."Value1" = f."Value1" OR a_Parent_2."Value1" IS NULL AND f."Value1" IS NULL)
+	)
+FROM
+	"Parent" f
 WHERE
-	f_1."Label" LIKE '%1%' ESCAPE '~' AND f_1."SubSum" > 0
+	' ' || Cast(Nvl(f."Value1", 0) as VarChar(255)) LIKE '%1%' ESCAPE '~' AND
+	(
+		SELECT
+			Sum(c_1."ChildID")
+		FROM
+			"Child" c_1
+				LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
+		WHERE
+			a_Parent."ParentID" = f."ParentID" AND (a_Parent."Value1" = f."Value1" OR a_Parent."Value1" IS NULL AND f."Value1" IS NULL)
+	) > 0
 

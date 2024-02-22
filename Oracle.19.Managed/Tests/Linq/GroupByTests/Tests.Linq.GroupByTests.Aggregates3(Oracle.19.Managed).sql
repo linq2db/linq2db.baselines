@@ -8,7 +8,7 @@ SELECT
 		FROM
 			"Child" ch
 		WHERE
-			ch."ChildID" > 30 AND ch."ChildID" > 30 AND g_1."ParentID" = ch."ParentID"
+			ch."ChildID" > 30 AND ch."ChildID" > 30 AND g_2."ParentID" = ch."ParentID"
 	),
 	(
 		SELECT
@@ -16,7 +16,7 @@ SELECT
 		FROM
 			"Child" ch_1
 		WHERE
-			ch_1."ChildID" > 30 AND ch_1."ChildID" > 30 AND g_1."ParentID" = ch_1."ParentID"
+			ch_1."ChildID" > 30 AND ch_1."ChildID" > 30 AND g_2."ParentID" = ch_1."ParentID"
 	),
 	(
 		SELECT
@@ -24,7 +24,7 @@ SELECT
 		FROM
 			"Child" ch_2
 		WHERE
-			ch_2."ChildID" > 30 AND ch_2."ChildID" > 30 AND g_1."ParentID" = ch_2."ParentID"
+			ch_2."ChildID" > 30 AND ch_2."ChildID" > 30 AND g_2."ParentID" = ch_2."ParentID"
 	),
 	(
 		SELECT
@@ -32,7 +32,7 @@ SELECT
 		FROM
 			"Child" ch_3
 		WHERE
-			ch_3."ChildID" > 30 AND ch_3."ChildID" > 30 AND g_1."ParentID" = ch_3."ParentID"
+			ch_3."ChildID" > 30 AND ch_3."ChildID" > 30 AND g_2."ParentID" = ch_3."ParentID"
 	),
 	(
 		SELECT
@@ -40,12 +40,17 @@ SELECT
 		FROM
 			"Child" ch_4
 		WHERE
-			ch_4."ChildID" > 30 AND ch_4."ChildID" > 30 AND g_1."ParentID" = ch_4."ParentID"
+			ch_4."ChildID" > 30 AND ch_4."ChildID" > 30 AND g_2."ParentID" = ch_4."ParentID"
 	)
 FROM
-	"Child" g_1
-WHERE
-	g_1."ChildID" > 30
-GROUP BY
-	g_1."ParentID"
+	(
+		SELECT
+			g_1."ParentID"
+		FROM
+			"Child" g_1
+		WHERE
+			g_1."ChildID" > 30
+		GROUP BY
+			g_1."ParentID"
+	) g_2
 

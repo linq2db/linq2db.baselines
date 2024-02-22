@@ -21,7 +21,6 @@ FROM
 		FULL JOIN (
 			SELECT
 				right_1."ParentID",
-				right_1."Value1",
 				right_1."Value1" + 2 as "c1"
 			FROM
 				"Parent" right_1
