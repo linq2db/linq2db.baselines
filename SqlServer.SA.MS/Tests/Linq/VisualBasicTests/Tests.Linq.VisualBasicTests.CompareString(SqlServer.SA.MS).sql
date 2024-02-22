@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = N'John'
+	IIF([p].[FirstName] > N'John', 1, IIF([p].[FirstName] = N'John', 0, -1)) = 0
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

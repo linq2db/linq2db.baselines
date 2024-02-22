@@ -6,8 +6,7 @@ SELECT
 FROM
 	(
 		SELECT TOP (5)
-			[t1].[ParentID],
-			[t1].[ChildID]
+			[t1].[ParentID]
 		FROM
 			[Child] [t1]
 	) [t2]

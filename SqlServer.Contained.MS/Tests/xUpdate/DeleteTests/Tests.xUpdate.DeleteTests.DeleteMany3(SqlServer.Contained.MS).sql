@@ -1,29 +1,29 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -86,38 +86,38 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [c_2]
+DELETE [a_GrandChildren]
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		INNER JOIN [GrandChild] [c_2] ON [c_1].[ParentID] = [c_2].[ParentID] AND [c_1].[ChildID] = [c_2].[ChildID]
+	[Parent] [gc]
+		INNER JOIN [Child] [a_Children] ON [gc].[ParentID] = [a_Children].[ParentID]
+		INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
 WHERE
-	[p].[ParentID] IN (1001)
+	[gc].[ParentID] IN (1001)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
