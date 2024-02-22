@@ -2,23 +2,24 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t_1].[ParentID],
-	[t_1].[count_1]
-FROM
+	[t].[ParentID],
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Child] [c_1]
-				WHERE
-					[t].[ParentID] = [c_1].[ParentID]
-			) as [count_1],
-			[t].[ParentID]
+			Count(*)
 		FROM
-			[Parent] [t]
-	) [t_1]
+			[Child] [c_1]
+		WHERE
+			[t].[ParentID] = [c_1].[ParentID]
+	)
+FROM
+	[Parent] [t]
 WHERE
-	[t_1].[count_1] > 0
+	(
+		SELECT
+			Count(*)
+		FROM
+			[Child] [c_1]
+		WHERE
+			[t].[ParentID] = [c_1].[ParentID]
+	) > 0
 

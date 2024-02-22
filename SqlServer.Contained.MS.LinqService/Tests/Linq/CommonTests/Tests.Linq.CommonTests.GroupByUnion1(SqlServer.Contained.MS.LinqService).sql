@@ -3,33 +3,27 @@
 
 SELECT
 	[tt].[ParentID],
-	[tt].[Sum_1]
+	Sum([tt].[ID])
 FROM
 	(
 		SELECT
-			Sum([gr_1].[ID]) as [Sum_1],
-			[gr_1].[ParentID]
+			[gr].[ParentID],
+			[gr].[ChildID] as [ID]
 		FROM
-			(
-				SELECT
-					[gr].[ParentID],
-					[gr].[ChildID] as [ID]
-				FROM
-					[Child] [gr]
-				WHERE
-					[gr].[ParentID] < 4
-				UNION ALL
-				SELECT
-					Coalesce([g_1].[ParentID], 0) as [ParentID],
-					Coalesce([g_1].[GrandChildID], 0) as [ID]
-				FROM
-					[GrandChild] [g_1]
-				WHERE
-					[g_1].[ParentID] >= 4
-			) [gr_1]
-		GROUP BY
-			[gr_1].[ParentID]
+			[Child] [gr]
+		WHERE
+			[gr].[ParentID] < 4
+		UNION ALL
+		SELECT
+			Coalesce([g_1].[ParentID], 0) as [ParentID],
+			Coalesce([g_1].[GrandChildID], 0) as [ID]
+		FROM
+			[GrandChild] [g_1]
+		WHERE
+			[g_1].[ParentID] >= 4
 	) [tt]
-WHERE
-	([tt].[Sum_1] <> 0 OR [tt].[Sum_1] IS NULL)
+GROUP BY
+	[tt].[ParentID]
+HAVING
+	(Sum([tt].[ID]) <> 0 OR Sum([tt].[ID]) IS NULL)
 

@@ -53,13 +53,7 @@ FROM
 		LEFT JOIN (
 			SELECT TOP (15)
 				[_1].[ID],
-				[_1].[MoneyValue],
-				[_1].[DateTimeValue],
-				[_1].[BoolValue],
-				[_1].[GuidValue],
-				[_1].[BinaryValue],
-				[_1].[SmallIntValue],
-				[_1].[StringValue]
+				[_1].[SmallIntValue]
 			FROM
 				(
 					SELECT

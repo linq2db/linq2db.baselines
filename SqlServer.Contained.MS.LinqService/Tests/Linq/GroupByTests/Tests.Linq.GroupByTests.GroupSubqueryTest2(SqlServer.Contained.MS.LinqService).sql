@@ -7,12 +7,12 @@ FROM
 	[Child] [pmp1]
 		CROSS JOIN (
 			SELECT
-				[g_1].[ParentID]
+				[pmp].[ParentID]
 			FROM
-				[Child] [g_1]
+				[Child] [pmp]
 			GROUP BY
-				[g_1].[ParentID]
-		) [pmp]
+				[pmp].[ParentID]
+		) [pmp_1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

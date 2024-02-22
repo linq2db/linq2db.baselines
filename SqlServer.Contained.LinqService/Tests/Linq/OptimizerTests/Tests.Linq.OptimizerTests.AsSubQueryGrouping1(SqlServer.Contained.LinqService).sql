@@ -606,17 +606,12 @@ SELECT
 FROM
 	(
 		SELECT
-			*
+			[x].[Key1]
 		FROM
-			(
-				SELECT
-					[x].[Key1]
-				FROM
-					[FirstOptimizerData] [x]
-				GROUP BY
-					[x].[Key1]
-			) [x_1]
-	) [x_2]
+			[FirstOptimizerData] [x]
+		GROUP BY
+			[x].[Key1]
+	) [x_1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

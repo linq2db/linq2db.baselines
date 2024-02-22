@@ -68,17 +68,11 @@ FROM
 	) [t2]
 UNION
 SELECT
-	[t3].[Converted1],
-	[t3].[Converted2],
-	[t3].[Converted1]
+	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]),
+	[t1_1].[Value1],
+	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum])
 FROM
-	(
-		SELECT
-			Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]) as [Converted1],
-			[t1_1].[Value1] as [Converted2]
-		FROM
-			[ValueConversion] [t1_1]
-	) [t3]
+	[ValueConversion] [t1_1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

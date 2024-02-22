@@ -31,15 +31,9 @@ GROUP BY
 	[t2].[Year_1]
 UNION
 SELECT
-	[t3].[month_1],
-	[t3].[month_1],
-	[t3].[int_1]
+	DatePart(year, [_2].[DateTimeValue]),
+	DatePart(year, [_2].[DateTimeValue]),
+	2
 FROM
-	(
-		SELECT
-			DatePart(year, [_2].[DateTimeValue]) as [month_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_2]
-	) [t3]
+	[LinqDataTypes] [_2]
 
