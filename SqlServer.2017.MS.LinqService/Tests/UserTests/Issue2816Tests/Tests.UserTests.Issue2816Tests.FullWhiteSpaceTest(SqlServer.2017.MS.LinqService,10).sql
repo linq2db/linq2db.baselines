@@ -81,8 +81,9 @@ SELECT
 FROM
 	[Issue2816Table] [p]
 WHERE
-	NOT (([p].[Text] IS NULL OR (TRIM(N'	
-                 　' FROM [p].[Text])) = N''))
+	[p].[Text] IS NOT NULL AND ((TRIM(N'	
+                 　' FROM [p].[Text])) <> N'' OR (TRIM(N'	
+                 　' FROM [p].[Text])) IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

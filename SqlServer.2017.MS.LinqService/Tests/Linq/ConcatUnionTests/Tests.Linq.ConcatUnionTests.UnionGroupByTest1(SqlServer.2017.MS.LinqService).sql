@@ -18,28 +18,16 @@ GROUP BY
 	[t1].[Year_1]
 UNION
 SELECT
-	[t2].[month_1],
-	[t2].[month_1],
-	[t2].[int_1]
+	[_1].[SmallIntValue],
+	[_1].[SmallIntValue],
+	3
 FROM
-	(
-		SELECT
-			[_1].[SmallIntValue] as [month_1],
-			3 as [int_1]
-		FROM
-			[LinqDataTypes] [_1]
-	) [t2]
+	[LinqDataTypes] [_1]
 UNION
 SELECT
-	[t3].[month_1],
-	[t3].[month_1],
-	[t3].[int_1]
+	DatePart(year, [_2].[DateTimeValue]),
+	DatePart(year, [_2].[DateTimeValue]),
+	2
 FROM
-	(
-		SELECT
-			DatePart(year, [_2].[DateTimeValue]) as [month_1],
-			2 as [int_1]
-		FROM
-			[LinqDataTypes] [_2]
-	) [t3]
+	[LinqDataTypes] [_2]
 

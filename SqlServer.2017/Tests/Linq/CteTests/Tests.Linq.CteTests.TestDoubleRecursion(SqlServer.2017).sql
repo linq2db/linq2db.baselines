@@ -78,28 +78,12 @@ AS
 	FROM
 		[hierarchyDown] [t3]
 			INNER JOIN [CTE_2] [t_1] ON ([t_1].[ParentId] = [t3].[Id] OR [t_1].[ParentId] IS NULL AND [t3].[Id] IS NULL)
-),
-[hierarchyDown0] ([Level], [Id])
-AS
-(
-	SELECT
-		0,
-		[t4].[Id]
-	FROM
-		[CTE_1] [t4]
-	UNION ALL
-	SELECT
-		[t5].[Level] + 1,
-		[t_2].[Id]
-	FROM
-		[hierarchyDown0] [t5]
-			INNER JOIN [CTE_2] [t_2] ON ([t_2].[ParentId] = [t5].[Id] OR [t_2].[ParentId] IS NULL AND [t5].[Id] IS NULL)
 )
 SELECT
 	Count(*)
 FROM
-	[hierarchyDown] [t6]
-		INNER JOIN [hierarchyDown0] [h2] ON ([h2].[Id] = [t6].[Id] OR [h2].[Id] IS NULL AND [t6].[Id] IS NULL)
+	[hierarchyDown] [t4]
+		INNER JOIN [hierarchyDown] [h2] ON ([h2].[Id] = [t4].[Id] OR [h2].[Id] IS NULL AND [t4].[Id] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017
