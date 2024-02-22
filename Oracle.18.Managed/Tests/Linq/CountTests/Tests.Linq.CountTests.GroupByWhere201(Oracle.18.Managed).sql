@@ -2,20 +2,14 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	g_2."ParentID"
+	g_1."ParentID"
 FROM
-	(
-		SELECT
-			Count(CASE
-				WHEN g_1."ChildID" > 20 THEN 1
-				ELSE NULL
-			END) as "Count_1",
-			g_1."ParentID"
-		FROM
-			"Child" g_1
-		GROUP BY
-			g_1."ParentID"
-	) g_2
-WHERE
-	g_2."Count_1" > 2
+	"Child" g_1
+GROUP BY
+	g_1."ParentID"
+HAVING
+	Count(CASE
+		WHEN g_1."ChildID" > 20 THEN 1
+		ELSE NULL
+	END) > 2
 

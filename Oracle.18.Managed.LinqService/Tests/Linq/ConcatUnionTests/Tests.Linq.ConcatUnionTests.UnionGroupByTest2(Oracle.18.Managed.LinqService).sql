@@ -31,15 +31,9 @@ GROUP BY
 	t4."Year_1"
 UNION
 SELECT
-	t6."month_1",
-	t6."month_1",
-	t6."int_1"
+	To_Number(To_Char(t5."DateTimeValue", 'YYYY')),
+	To_Number(To_Char(t5."DateTimeValue", 'YYYY')),
+	2
 FROM
-	(
-		SELECT
-			To_Number(To_Char(t5."DateTimeValue", 'YYYY')) as "month_1",
-			2 as "int_1"
-		FROM
-			"LinqDataTypes" t5
-	) t6
+	"LinqDataTypes" t5
 
