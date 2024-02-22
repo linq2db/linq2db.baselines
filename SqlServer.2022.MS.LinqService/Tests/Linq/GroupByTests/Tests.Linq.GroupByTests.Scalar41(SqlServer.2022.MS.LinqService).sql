@@ -4,23 +4,15 @@
 SELECT
 	(
 		SELECT
-			Min([keyParam].[ChildID])
+			Min([ch].[ChildID])
 		FROM
-			[Child] [keyParam]
+			[Child] [ch]
 		WHERE
-			[g_2].[ParentID] = [keyParam].[ParentID] AND [keyParam].[ParentID] > 2
+			[ch].[ParentID] > 2 AND [g_2].[ParentID] = [ch].[ParentID]
 	)
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Min([keyParam_1].[ChildID])
-				FROM
-					[Child] [keyParam_1]
-				WHERE
-					[g_1].[ParentID] = [keyParam_1].[ParentID] AND [keyParam_1].[ParentID] > 2
-			) as [ex],
 			[g_1].[ParentID]
 		FROM
 			[Child] [g_1]
@@ -28,5 +20,12 @@ FROM
 			[g_1].[ParentID]
 	) [g_2]
 WHERE
-	[g_2].[ex] IS NOT NULL
+	(
+		SELECT
+			Min([ch_1].[ChildID])
+		FROM
+			[Child] [ch_1]
+		WHERE
+			[ch_1].[ParentID] > 2 AND [g_2].[ParentID] = [ch_1].[ParentID]
+	) IS NOT NULL
 

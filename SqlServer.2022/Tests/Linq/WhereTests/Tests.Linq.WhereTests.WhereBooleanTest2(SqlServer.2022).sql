@@ -202,7 +202,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
+	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -215,7 +215,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- SqlServer.2022

@@ -2,14 +2,14 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			IIF(Convert(Float, [p].[MoneyValue]) - Floor(Convert(Float, [p].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [p].[MoneyValue]))) % 2) = 0, Floor(Convert(Float, [p].[MoneyValue])), Round(Convert(Float, [p].[MoneyValue]), 0)) as [c1]
+			IIF(Convert(Float, [t].[MoneyValue]) - Floor(Convert(Float, [t].[MoneyValue])) = 0.5 AND (Convert(Int, Floor(Convert(Float, [t].[MoneyValue]))) % 2) = 0, Floor(Convert(Float, [t].[MoneyValue])), Round(Convert(Float, [t].[MoneyValue]), 0)) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0
+	([t_1].[c1] <> 0 OR [t_1].[c1] IS NULL)
 
