@@ -54,13 +54,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				t6.ID,
-				t6."MoneyValue",
-				t6."DateTimeValue",
-				t6."BoolValue",
-				t6."GuidValue",
-				t6."BinaryValue",
-				t6."SmallIntValue",
-				t6."StringValue"
+				t6."SmallIntValue"
 			FROM
 				(
 					SELECT

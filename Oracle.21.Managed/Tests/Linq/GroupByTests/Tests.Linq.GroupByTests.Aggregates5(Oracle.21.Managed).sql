@@ -2,21 +2,28 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(CASE
-		WHEN g_1."ChildID" > 30 THEN 1
-		ELSE NULL
-	END),
+	g_2."Count_1",
 	(
 		SELECT
 			Count(*)
 		FROM
 			"Child" ch
 		WHERE
-			ch."ChildID" > 30 AND g_1."ParentID" = ch."ParentID"
+			ch."ChildID" > 30 AND g_2."ParentID" = ch."ParentID"
 	),
-	Count(*)
+	g_2."Count_2"
 FROM
-	"Child" g_1
-GROUP BY
-	g_1."ParentID"
+	(
+		SELECT
+			Count(CASE
+				WHEN g_1."ChildID" > 30 THEN 1
+				ELSE NULL
+			END) as "Count_1",
+			Count(*) as "Count_2",
+			g_1."ParentID"
+		FROM
+			"Child" g_1
+		GROUP BY
+			g_1."ParentID"
+	) g_2
 
