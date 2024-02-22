@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- SqlServer.2017
@@ -18,6 +18,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -25,6 +27,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -33,16 +37,14 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -64,6 +66,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -71,6 +75,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -79,16 +85,14 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -102,9 +106,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
