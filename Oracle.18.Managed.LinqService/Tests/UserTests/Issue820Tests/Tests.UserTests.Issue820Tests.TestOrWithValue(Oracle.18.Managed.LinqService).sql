@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Value Int16
-SET     @Value = 1
+DECLARE @param Int16
+SET     @param = 1
 
 SELECT
 	t1.ID,
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:Value = t1."SmallIntValue"
+	:param = t1."SmallIntValue"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -43,4 +43,6 @@ SELECT
 	t1."StringValue"
 FROM
 	"LinqDataTypes" t1
+WHERE
+	1 = 1
 
