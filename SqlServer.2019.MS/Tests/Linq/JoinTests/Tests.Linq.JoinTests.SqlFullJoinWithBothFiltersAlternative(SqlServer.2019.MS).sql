@@ -11,8 +11,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[left_1].[ParentID] as [left_1],
-			[left_1].[Value1]
+			[left_1].[ParentID] as [left_1]
 		FROM
 			[Parent] [left_1]
 		WHERE
@@ -20,8 +19,7 @@ FROM
 	) [t2]
 		FULL JOIN (
 			SELECT
-				[right_1].[ParentID],
-				[right_1].[Value1]
+				[right_1].[ParentID]
 			FROM
 				[Parent] [right_1]
 			WHERE

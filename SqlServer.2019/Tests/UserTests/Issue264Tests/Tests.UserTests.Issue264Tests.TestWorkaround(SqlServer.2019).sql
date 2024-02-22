@@ -6,19 +6,14 @@ SELECT
 FROM
 	(
 		SELECT
-			[t2].[c1]
+			MONTH([t1].[DateTimeValue]) as [c1],
+			YEAR([t1].[DateTimeValue]) as [c2]
 		FROM
-			(
-				SELECT
-					MONTH([t1].[DateTimeValue]) as [c1],
-					YEAR([t1].[DateTimeValue]) as [c2]
-				FROM
-					[LinqDataTypes] [t1]
-			) [t2]
+			[LinqDataTypes] [t1]
 		GROUP BY
-			[t2].[c1],
-			[t2].[c2]
-	) [t3]
+			MONTH([t1].[DateTimeValue]),
+			YEAR([t1].[DateTimeValue])
+	) [t2]
 
 BeforeExecute
 -- SqlServer.2019

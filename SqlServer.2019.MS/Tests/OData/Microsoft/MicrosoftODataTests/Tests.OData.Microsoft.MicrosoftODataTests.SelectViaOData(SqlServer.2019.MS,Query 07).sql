@@ -33,15 +33,27 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[t3].[Name],
-	[t3].[Value_1],
-	[t3].[Count_1]
+	[t2].[Name],
+	[t2].[Value_1],
+	[t2].[Count_1]
 FROM
 	(
 		SELECT
-			[$it_3].[Name],
-			[$it_3].[Value_1],
-			[t2].[Count_1]
+			[$it_2].[Name],
+			[$it_2].[Value_1],
+			(
+				SELECT
+					Count(*)
+				FROM
+					(
+						SELECT DISTINCT
+							[$it_3].[YearsExperience] as [Value_1]
+						FROM
+							[odata_person] [$it_3]
+						WHERE
+							[$it_2].[Name] = N'Title' AND [$it_2].[Value_1] = [$it_3].[Title]
+					) [t1]
+			) as [Count_1]
 		FROM
 			(
 				SELECT
@@ -58,23 +70,10 @@ FROM
 				GROUP BY
 					[$it_1].[c1],
 					[$it_1].[Title]
-			) [$it_3]
-				OUTER APPLY (
-					SELECT
-						Count(*) as [Count_1]
-					FROM
-						(
-							SELECT DISTINCT
-								[$it_2].[YearsExperience] as [Value_1]
-							FROM
-								[odata_person] [$it_2]
-							WHERE
-								[$it_3].[Name] = N'Title' AND [$it_3].[Value_1] = [$it_2].[Title]
-						) [t1]
-				) [t2]
-	) [t3]
+			) [$it_2]
+	) [t2]
 ORDER BY
-	[t3].[Count_1]
+	[t2].[Count_1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

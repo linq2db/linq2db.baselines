@@ -64,16 +64,17 @@ WHERE
 		FROM
 			(
 				SELECT
-					Count(*) as [Count_1],
 					[groupedProduct].[Id]
 				FROM
 					[ProductTable] [groupedProduct]
 						INNER JOIN [ProductAttributeMapping] [pam_1] ON [groupedProduct].[Id] = [pam_1].[ProductId]
 				GROUP BY
 					[groupedProduct].[Id]
+				HAVING
+					Count(*) = 1
 			) [p]
 		WHERE
-			[p].[Id] >= [pam].[ProductId] AND [p].[Count_1] = 1
+			[p].[Id] >= [pam].[ProductId]
 	)
 
 BeforeExecute
