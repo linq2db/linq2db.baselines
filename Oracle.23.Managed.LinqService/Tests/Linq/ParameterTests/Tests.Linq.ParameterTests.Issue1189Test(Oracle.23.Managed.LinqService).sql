@@ -41,6 +41,8 @@ SELECT
 	:DateTime
 FROM
 	"Issue1189Customer" k_1
+WHERE
+	1 = 1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
