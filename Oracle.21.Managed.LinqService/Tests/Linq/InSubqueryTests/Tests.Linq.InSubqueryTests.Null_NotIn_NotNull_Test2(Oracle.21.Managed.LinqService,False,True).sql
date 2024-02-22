@@ -116,14 +116,6 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1.ID
-FROM
-	"test_in_1" t1
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-SELECT
 	t.ID
 FROM
 	"test_in_1" t
@@ -133,6 +125,8 @@ WHERE
 			p.ID
 		FROM
 			"test_in_2" p
+		WHERE
+			1 = 1
 	))
 
 BeforeExecute
@@ -141,7 +135,7 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	"test_in_2" t1
+	"test_in_1" t1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
