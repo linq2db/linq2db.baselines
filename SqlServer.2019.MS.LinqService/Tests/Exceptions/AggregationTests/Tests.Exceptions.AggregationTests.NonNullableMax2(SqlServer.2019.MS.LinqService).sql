@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			Max([_].[ParentID])
+			Max([a_Children].[ParentID])
 		FROM
-			[Child] [_]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [_].[ParentID] AND [_].[ParentID] < 0
+			[a_Children].[ParentID] < 0 AND [p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]

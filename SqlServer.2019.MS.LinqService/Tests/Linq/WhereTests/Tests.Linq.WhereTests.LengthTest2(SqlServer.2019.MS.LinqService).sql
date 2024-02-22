@@ -2,11 +2,17 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[nm].[FirstName]
+	[nm_1].[FirstName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			Len([nm].[FirstName]) as [Length_1],
+			[nm].[FirstName]
+		FROM
+			[Person] [nm]
+	) [nm_1]
 WHERE
-	Len([nm].[FirstName]) <> 0
+	([nm_1].[Length_1] <> 0 OR [nm_1].[Length_1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
