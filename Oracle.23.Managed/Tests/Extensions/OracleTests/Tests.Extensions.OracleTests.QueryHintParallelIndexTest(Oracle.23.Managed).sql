@@ -5,8 +5,8 @@ SELECT /*+ PARALLEL_INDEX(p, index1, 3) */
 	p."ParentID",
 	p."Value1"
 FROM
-	"Child" c_1,
-	"Parent" p
+	"Child" t1
+		CROSS JOIN "Parent" p
 WHERE
-	c_1."ParentID" = p."ParentID"
+	t1."ParentID" = p."ParentID"
 

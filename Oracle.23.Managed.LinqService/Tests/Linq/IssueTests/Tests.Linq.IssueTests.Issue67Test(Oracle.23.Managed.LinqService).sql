@@ -3,22 +3,23 @@
 
 SELECT
 	t."ParentID",
-	t."count_1"
-FROM
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Child" t1
-				WHERE
-					p."ParentID" = t1."ParentID"
-			) as "count_1",
-			p."ParentID"
+			Count(*)
 		FROM
-			"Parent" p
-	) t
+			"Child" c_1
+		WHERE
+			t."ParentID" = c_1."ParentID"
+	)
+FROM
+	"Parent" t
 WHERE
-	t."count_1" > 0
+	(
+		SELECT
+			Count(*)
+		FROM
+			"Child" c_1
+		WHERE
+			t."ParentID" = c_1."ParentID"
+	) > 0
 

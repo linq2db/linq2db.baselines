@@ -2,25 +2,25 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	o."ParentID",
+	t1."ParentID",
 	(
 		SELECT
 			Count(*)
 		FROM
-			"Child" t1
+			"Child" od
 		WHERE
-			o."ParentID" = t1."ParentID"
+			t1."ParentID" = od."ParentID"
 	),
 	(
 		SELECT
-			Sum(od."ParentID")
+			Sum(od_1."ParentID")
 		FROM
-			"Child" od
+			"Child" od_1
 		WHERE
-			od."ParentID" = o."ParentID"
+			t1."ParentID" = od_1."ParentID"
 	)
 FROM
-	"Parent" o
+	"Parent" t1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -28,38 +28,38 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Parent" o
+	"Parent" t1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	x."ParentID",
-	x."CountResult",
-	x."Sum_1"
-FROM
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Child" t1
-				WHERE
-					o."ParentID" = t1."ParentID"
-			) as "CountResult",
-			o."ParentID",
-			(
-				SELECT
-					Sum(od."ParentID")
-				FROM
-					"Child" od
-				WHERE
-					od."ParentID" = o."ParentID"
-			) as "Sum_1"
+			Count(*)
 		FROM
-			"Parent" o
-	) x
+			"Child" od
+		WHERE
+			x."ParentID" = od."ParentID"
+	),
+	(
+		SELECT
+			Sum(od_1."ParentID")
+		FROM
+			"Child" od_1
+		WHERE
+			x."ParentID" = od_1."ParentID"
+	)
+FROM
+	"Parent" x
 WHERE
-	x."CountResult" > 0
+	(
+		SELECT
+			Count(*)
+		FROM
+			"Child" od
+		WHERE
+			x."ParentID" = od."ParentID"
+	) > 0
 
