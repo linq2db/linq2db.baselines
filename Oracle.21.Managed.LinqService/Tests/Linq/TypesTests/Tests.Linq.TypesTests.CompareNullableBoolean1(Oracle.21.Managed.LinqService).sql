@@ -12,6 +12,8 @@ SELECT
 	t."StringValue"
 FROM
 	"LinqDataTypes" t
+WHERE
+	1 = 1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
