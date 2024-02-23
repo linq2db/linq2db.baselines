@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Date  -- DateTime
-SET     @Date = '2009-09-20'
+DECLARE @dt  -- DateTime
+SET     @dt = '2009-09-20 09:19:29.09'
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	DateTime(Date([t].[DateTimeValue])) > DateTime(@Date)
+	DateTime(Date([t].[DateTimeValue])) > DateTime(Date(@dt))
 
