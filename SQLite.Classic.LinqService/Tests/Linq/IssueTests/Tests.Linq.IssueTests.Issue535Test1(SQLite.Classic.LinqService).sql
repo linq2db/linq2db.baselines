@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[PersonID],
@@ -10,6 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'J%' ESCAPE '~' AND ([p].[PersonID] = 1 OR [p].[LastName] = 'fail')
-LIMIT @take
+	([p].[PersonID] = 1 OR [p].[LastName] = 'fail') AND
+	[p].[FirstName] LIKE 'J%' ESCAPE '~'
+LIMIT 1
 

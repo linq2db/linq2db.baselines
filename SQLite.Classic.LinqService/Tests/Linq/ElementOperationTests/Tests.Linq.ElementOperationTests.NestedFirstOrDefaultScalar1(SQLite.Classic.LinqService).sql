@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT
-			[p].[ChildID]
+			[t1].[ChildID]
 		FROM
-			[Child] [p]
-		LIMIT @take
+			[Child] [t1]
+		LIMIT 1
 	)
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
 

@@ -12,9 +12,9 @@ FROM
 WHERE
 	CASE
 		WHEN CASE
-			WHEN [p].[FirstName] IS NULL
-				THEN NULL
-			ELSE [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
+			WHEN [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
+				THEN 1
+			ELSE 0
 		END IS NULL
 			THEN 0
 		WHEN [p].[FirstName] IS NULL
