@@ -129,8 +129,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @added TimeStamp -- DateTime
-SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 
 SELECT
 	a_Person."personid",
@@ -140,7 +138,7 @@ FROM
 	"activity649" f
 		INNER JOIN "person649" a_Person ON f."personid" = a_Person."personid"
 WHERE
-	f."added" >= :added
+	f."added" >= TO_DATE('2017-01-01', 'YYYY-MM-DD')
 GROUP BY
 	a_Person."personid",
 	a_Person."personname"

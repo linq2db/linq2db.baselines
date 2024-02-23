@@ -55,6 +55,10 @@ SELECT
 	t1."Id",
 	t1."Value1",
 	t1."Value2",
+	t1."Value3",
+	t1."Id",
+	t1."Value1",
+	t1."Value2",
 	t1."Value3"
 FROM
 	(
@@ -85,11 +89,11 @@ WHERE
 		FROM
 			"SampleData" t_2
 		WHERE
-			MOD(t_2."Id", 4) = 0 AND
 			t1."Id" = t_2."Id" AND
 			t1."Value1" = t_2."Value1" AND
 			t1."Value2" = t_2."Value2" AND
-			t1."Value3" = t_2."Value3"
+			t1."Value3" = t_2."Value3" AND
+			MOD(t_2."Id", 4) = 0
 	)
 
 BeforeExecute
