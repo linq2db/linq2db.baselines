@@ -35,7 +35,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -61,7 +61,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -79,7 +79,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -105,7 +105,7 @@ FROM
 		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
 
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
