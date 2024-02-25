@@ -2,23 +2,23 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t3].[ParentID]
+	[p_2].[ParentID]
 FROM
 	(
 		SELECT
-			[t2].[ParentID]
+			[p_1].[ParentID]
 		FROM
 			(
 				SELECT
-					[t1].[ParentID]
+					[p].[ParentID]
 				FROM
-					[Child] [t1]
+					[Child] [p]
 				GROUP BY
-					[t1].[ParentID]
-			) [t2]
+					[p].[ParentID]
+			) [p_1]
 		GROUP BY
-			[t2].[ParentID]
-	) [t3]
+			[p_1].[ParentID]
+	) [p_2]
 GROUP BY
-	[t3].[ParentID]
+	[p_2].[ParentID]
 

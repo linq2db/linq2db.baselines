@@ -3,17 +3,19 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[Count_1]
+	[c_2].[not_null],
+	[c_2].[Count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1]
+				Count(*) as [Count_1],
+				1 as [not_null]
 			FROM
-				[Child] [t]
+				[Child] [c_1]
 			WHERE
-				[t].[ParentID] = [p].[ParentID]
-		) [t1]
+				[c_1].[ParentID] = [p].[ParentID]
+		) [c_2]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -21,13 +23,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 		OUTER APPLY (
 			SELECT
 				Count(*) as [Count_1]
 			FROM
-				[Child] [t]
+				[Child] [c_1]
 			WHERE
-				[t].[ParentID] = [p].[ParentID]
-		) [t1]
+				[c_1].[ParentID] = [t1].[ParentID]
+		) [c_2]
 
