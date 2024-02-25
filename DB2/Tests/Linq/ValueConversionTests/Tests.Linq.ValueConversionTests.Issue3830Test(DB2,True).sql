@@ -115,10 +115,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	"r"."Bool3" = 'Y' AND
-	"r"."Bool3" IS NOT NULL AND
-	"r"."Bool1" = 'N' AND
-	"r"."Bool2" IS NULL
+	"r"."Bool3" = 'Y' AND "r"."Bool1" = 'N' AND "r"."Bool2" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -236,10 +233,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	"r"."Bool3" = 'Y' AND
-	"r"."Bool3" IS NOT NULL AND
-	"r"."Bool1" = 'Y' AND
-	"r"."Bool2" = 'N'
+	"r"."Bool3" = 'Y' AND "r"."Bool1" = 'Y' AND "r"."Bool2" = 'N'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
