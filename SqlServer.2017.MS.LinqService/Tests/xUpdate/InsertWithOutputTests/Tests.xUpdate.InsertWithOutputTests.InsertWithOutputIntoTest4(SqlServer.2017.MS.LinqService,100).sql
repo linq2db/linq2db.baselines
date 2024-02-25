@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -26,8 +26,8 @@ IF (OBJECT_ID(N'[TInserted]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @param Int -- Int32
-SET     @param = 1101
+DECLARE @id Int -- Int32
+SET     @id = 1101
 
 INSERT INTO [Child]
 (
@@ -44,7 +44,7 @@ INTO [TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	@param
+	@id
 FROM
 	[Child] [c_1]
 WHERE
@@ -78,9 +78,9 @@ DROP TABLE IF EXISTS [TInserted]
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

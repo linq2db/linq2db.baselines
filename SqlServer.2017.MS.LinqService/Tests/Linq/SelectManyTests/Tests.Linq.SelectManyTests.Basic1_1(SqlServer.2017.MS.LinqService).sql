@@ -2,18 +2,11 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
+	[t2].[ParentID],
+	[t2].[ChildID],
+	[t2].[GrandChildID]
 FROM
-	[Parent] [cp],
-	(
-		SELECT
-			[c_1].[ParentID],
-			[c_1].[ChildID],
-			[c_1].[GrandChildID]
-		FROM
-			[Child] [cp_1],
-			[GrandChild] [c_1]
-	) [t1]
+	[Parent] [p]
+		CROSS JOIN [Child] [t1]
+		CROSS JOIN [GrandChild] [t2]
 
