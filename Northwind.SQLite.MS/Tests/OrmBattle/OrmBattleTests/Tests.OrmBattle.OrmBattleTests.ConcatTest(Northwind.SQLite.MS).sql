@@ -103,7 +103,7 @@ WHERE
 		FROM
 			[Orders] [a_Orders]
 		WHERE
-			([c_1].[CustomerID] = [a_Orders].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
+			[c_1].[CustomerID] = [a_Orders].[CustomerID]
 	) <= 1
 UNION ALL
 SELECT
@@ -127,6 +127,6 @@ WHERE
 		FROM
 			[Orders] [a_Orders_1]
 		WHERE
-			([c_2].[CustomerID] = [a_Orders_1].[CustomerID] OR [c_2].[CustomerID] IS NULL AND [a_Orders_1].[CustomerID] IS NULL)
+			[c_2].[CustomerID] = [a_Orders_1].[CustomerID]
 	) > 1
 

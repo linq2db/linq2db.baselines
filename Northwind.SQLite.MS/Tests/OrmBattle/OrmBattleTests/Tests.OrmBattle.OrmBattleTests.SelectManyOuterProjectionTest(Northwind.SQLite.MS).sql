@@ -96,5 +96,5 @@ SELECT
 	[i].[Fax]
 FROM
 	[Customers] [i]
-		INNER JOIN [Orders] [a_Orders] ON ([i].[CustomerID] = [a_Orders].[CustomerID] OR [i].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
+		INNER JOIN [Orders] [a_Orders] ON [i].[CustomerID] = [a_Orders].[CustomerID]
 

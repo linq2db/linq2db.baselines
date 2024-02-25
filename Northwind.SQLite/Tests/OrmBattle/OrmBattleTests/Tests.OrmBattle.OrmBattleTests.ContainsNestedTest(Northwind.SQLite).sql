@@ -97,15 +97,14 @@ SELECT
 	[c_1].[Phone],
 	[c_1].[Fax],
 	CASE
-		WHEN EXISTS(
+		WHEN [c_1].[CustomerID] IN (
 			SELECT
-				*
+				[a_Customer].[CustomerID]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 			WHERE
-				DateTime([o].[OrderDate]) > DateTime(@OrderDate) AND
-				([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				DateTime([o].[OrderDate]) > DateTime(@OrderDate)
 		)
 			THEN 1
 		ELSE 0

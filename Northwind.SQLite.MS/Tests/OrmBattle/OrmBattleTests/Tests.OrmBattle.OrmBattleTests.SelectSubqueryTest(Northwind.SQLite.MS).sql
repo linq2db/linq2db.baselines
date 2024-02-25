@@ -103,9 +103,9 @@ FROM
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON ([d].[CustomerID] = [m_1].[CustomerID] OR [d].[CustomerID] IS NULL AND [m_1].[CustomerID] IS NULL)
+		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
 
 BeforeExecute
 DisposeTransaction
@@ -116,5 +116,5 @@ SELECT
 	[a_Customer].[CustomerID]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 

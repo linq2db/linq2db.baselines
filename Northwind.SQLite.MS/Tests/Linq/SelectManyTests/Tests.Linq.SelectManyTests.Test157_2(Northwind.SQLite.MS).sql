@@ -98,7 +98,7 @@ FROM
 		LEFT JOIN [Orders] [bind2] ON [e].[EmployeeID] = [bind2].[EmployeeID]
 		LEFT JOIN [Shippers] [a_Shipper] ON ([bind2].[ShipVia] = [a_Shipper].[ShipperID] OR [bind2].[ShipVia] IS NULL AND [a_Shipper].[ShipperID] IS NULL)
 		LEFT JOIN [Employees] [a_Employee] ON ([bind2].[EmployeeID] = [a_Employee].[EmployeeID] OR [bind2].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
-		INNER JOIN [Customers] [a_Customer] ON ([bind2].[CustomerID] = [a_Customer].[CustomerID] OR [bind2].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+		INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
 		LEFT JOIN [Order Details] [bind3] ON ([bind2].[OrderID] = [bind3].[OrderID] OR [bind2].[OrderID] IS NULL AND [bind3].[OrderID] IS NULL)
 		LEFT JOIN [EmployeeTerritories] [bind4] ON [e].[EmployeeID] = [bind4].[EmployeeID]
 		LEFT JOIN [Employees] [a_Employee_1] ON [bind4].[EmployeeID] = [a_Employee_1].[EmployeeID]

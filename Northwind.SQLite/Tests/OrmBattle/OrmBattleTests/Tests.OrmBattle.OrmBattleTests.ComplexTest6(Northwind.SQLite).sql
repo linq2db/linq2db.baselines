@@ -111,6 +111,6 @@ SELECT
 FROM
 	[Customers] [i]
 		INNER JOIN ([Orders] [o]
-			INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL))
-		ON ([a_Customer].[CustomerID] = [i].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [i].[CustomerID] IS NULL)
+			INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID])
+		ON [a_Customer].[CustomerID] = [i].[CustomerID]
 

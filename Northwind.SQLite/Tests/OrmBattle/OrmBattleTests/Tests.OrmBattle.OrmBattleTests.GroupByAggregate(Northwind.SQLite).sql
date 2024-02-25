@@ -111,7 +111,7 @@ FROM
 							FROM
 								[Orders] [a_Orders]
 							WHERE
-								([t1].[CustomerID] = [a_Orders].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
+								[t1].[CustomerID] = [a_Orders].[CustomerID]
 						) >= 80
 							THEN 1
 						ELSE 0
@@ -129,7 +129,7 @@ FROM
 				FROM
 					[Orders] [a_Orders_1]
 				WHERE
-					([d].[CustomerID] = [a_Orders_1].[CustomerID] OR [d].[CustomerID] IS NULL AND [a_Orders_1].[CustomerID] IS NULL)
+					[d].[CustomerID] = [a_Orders_1].[CustomerID]
 			) >= 80
 				THEN 1
 			ELSE 0
@@ -152,7 +152,7 @@ FROM
 					FROM
 						[Orders] [a_Orders]
 					WHERE
-						([t1].[CustomerID] = [a_Orders].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Orders].[CustomerID] IS NULL)
+						[t1].[CustomerID] = [a_Orders].[CustomerID]
 				) >= 80
 					THEN 1
 				ELSE 0

@@ -88,9 +88,9 @@ SELECT
 			Count(*)
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			[t1].[CustomerID] = [a_Customer].[CustomerID]
 	),
 	(
 		SELECT

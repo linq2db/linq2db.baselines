@@ -103,6 +103,6 @@ WHERE
 		FROM
 			[Orders] [o]
 		WHERE
-			[o].[Freight] > 400 AND ([c_1].[CustomerID] = [o].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+			[o].[Freight] > 400 AND [c_1].[CustomerID] = [o].[CustomerID]
 	)
 

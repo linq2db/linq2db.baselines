@@ -88,7 +88,7 @@ SELECT
 	[o].[Freight]
 FROM
 	[Customers] [t1]
-		INNER JOIN [Orders] [o] ON ([t1].[CustomerID] = [o].[CustomerID] OR [t1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+		INNER JOIN [Orders] [o] ON [t1].[CustomerID] = [o].[CustomerID]
 WHERE
 	[o].[Freight] < 500.00
 
