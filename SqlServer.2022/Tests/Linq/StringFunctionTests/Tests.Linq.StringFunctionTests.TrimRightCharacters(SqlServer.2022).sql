@@ -2,11 +2,11 @@
 -- SqlServer.2022
 
 SELECT
-	[p].[PersonID],
-	[p].[FirstName]
+	[pp].[PersonID],
+	N'  ' + [pp].[FirstName] + N' '
 FROM
-	[Person] [p]
+	[Person] [pp]
 WHERE
-	RTRIM((N'  ' + [p].[FirstName] + N' '), N' n') = N'  Joh' AND
-	[p].[PersonID] = 1
+	RTRIM((N'  ' + [pp].[FirstName] + N' '), N' n') = N'  Joh' AND
+	[pp].[PersonID] = 1
 

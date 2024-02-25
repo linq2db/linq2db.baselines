@@ -7,21 +7,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID] as [p],
-			[p].[Value1] as [p_1]
+			[p].[ParentID],
+			[p].[Value1]
 		FROM
 			[Parent] [p]
 				INNER JOIN [GrandChild] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-				INNER JOIN [LinqDataTypes] [_] ON [c_1].[ParentID] = [_].[ID]
+				INNER JOIN [LinqDataTypes] [t] ON [c_1].[ParentID] = [t].[ID]
 		WHERE
-			[p].[ParentID] = 1 AND [_].[ID] > 1 AND [_].[ID] > 2
-	) [p_1]
-		INNER JOIN [GrandChild] [g_1] ON [p_1].[p] = [g_1].[ParentID]
-		LEFT JOIN [Child] [a_Child] ON [g_1].[ParentID] = [a_Child].[ParentID] AND [g_1].[ChildID] = [a_Child].[ChildID],
-	[Parent] [c_2]
+			[p].[ParentID] = 1 AND [t].[ID] > 1 AND [t].[ID] > 2
+	) [_]
+		INNER JOIN [GrandChild] [g_1] ON [_].[ParentID] = [g_1].[ParentID]
+		LEFT JOIN [Child] [a_Child] ON ([g_1].[ParentID] = [a_Child].[ParentID] OR [g_1].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([g_1].[ChildID] = [a_Child].[ChildID] OR [g_1].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
+		CROSS JOIN [Parent] [c_2]
 WHERE
-	[p_1].[p] = [g_1].[ParentID] AND [g_1].[ParentID] = [c_2].[ParentID] AND
-	[a_Child].[ChildID] = 1
+	[a_Child].[ChildID] = 1 AND [_].[ParentID] = [g_1].[ParentID] AND
+	[g_1].[ParentID] = [c_2].[ParentID]
 ORDER BY
-	[p_1].[p]
+	[_].[ParentID]
 

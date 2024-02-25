@@ -2,14 +2,15 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Convert(Date, N'2010-' + format([p].[ID], 'd2') + N'-01') as [c1]
+			DatePart(year, Convert(Date, N'2010-' + format([t].[ID], 'd2') + N'-01')) as [Year_1],
+			Convert(Date, N'2010-' + format([t].[ID], 'd2') + N'-01') as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	[t_1].[Year_1] = 2010
 
