@@ -57,7 +57,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	1 = 0
+	i."One" IS NOT NULL AND i."Nil" IS NOT NULL AND NULL IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	1 = 0
+	i."Nil" IS NOT NULL AND NULL IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

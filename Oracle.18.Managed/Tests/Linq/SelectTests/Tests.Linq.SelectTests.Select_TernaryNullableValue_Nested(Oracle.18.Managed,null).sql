@@ -1,7 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @value Int32
+SET     @value = NULL
+DECLARE @p Int32
+SET     @p = 0
 
 SELECT
-	NULL
+	:value,
+	CASE
+		WHEN :p < 2 THEN :p
+		ELSE 2 + :p
+	END
 FROM SYS.DUAL
 
