@@ -39,8 +39,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -48,13 +46,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+	0 <= CASE
+		WHEN i."StrValue" > '4' THEN 1
+		WHEN i."StrValue" = '4' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -62,13 +62,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '4' THEN 1
+		WHEN i."StrValue" = '4' THEN 0
+		ELSE -1
+	END >= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -76,13 +78,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+	0 >= CASE
+		WHEN i."StrValue" > '2' THEN 1
+		WHEN i."StrValue" = '2' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -90,13 +94,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '2' THEN 1
+		WHEN i."StrValue" = '2' THEN 0
+		ELSE -1
+	END <= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -104,13 +110,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+	0 < CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -118,13 +126,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END > 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -132,13 +142,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+	0 > CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -146,13 +158,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END < 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -160,13 +174,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '3'
-FETCH NEXT :take ROWS ONLY
+	0 = CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -174,13 +190,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '3'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END = 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -188,13 +206,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+	0 >= CASE
+		WHEN i."StrValue" > '2' THEN 1
+		WHEN i."StrValue" = '2' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -202,13 +222,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '2' THEN 1
+		WHEN i."StrValue" = '2' THEN 0
+		ELSE -1
+	END <= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -216,13 +238,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+	0 <= CASE
+		WHEN i."StrValue" > '4' THEN 1
+		WHEN i."StrValue" = '4' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -230,13 +254,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '4' THEN 1
+		WHEN i."StrValue" = '4' THEN 0
+		ELSE -1
+	END >= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -244,13 +270,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+	0 > CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -258,13 +286,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END < 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -272,13 +302,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+	0 < CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -286,13 +318,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '3' THEN 1
+		WHEN i."StrValue" = '3' THEN 0
+		ELSE -1
+	END > 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -300,13 +334,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '5'
-FETCH NEXT :take ROWS ONLY
+	0 <= CASE
+		WHEN i."StrValue" > '5' THEN 1
+		WHEN i."StrValue" = '5' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -314,13 +350,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '5'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '5' THEN 1
+		WHEN i."StrValue" = '5' THEN 0
+		ELSE -1
+	END >= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -328,13 +366,15 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '1'
-FETCH NEXT :take ROWS ONLY
+	0 >= CASE
+		WHEN i."StrValue" > '1' THEN 1
+		WHEN i."StrValue" = '1' THEN 0
+		ELSE -1
+	END
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -342,8 +382,12 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '1'
-FETCH NEXT :take ROWS ONLY
+	CASE
+		WHEN i."StrValue" > '1' THEN 1
+		WHEN i."StrValue" = '1' THEN 0
+		ELSE -1
+	END <= 0
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

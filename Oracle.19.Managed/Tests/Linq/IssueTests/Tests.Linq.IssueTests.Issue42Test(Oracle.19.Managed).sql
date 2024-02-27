@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	r.ID,
@@ -18,7 +16,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -44,26 +42,24 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t1
 SET
-	"LinqDataTypes"."MoneyValue" = :MoneyValue,
-	"LinqDataTypes"."DateTimeValue" = :DateTimeValue,
-	"LinqDataTypes"."DateTimeValue2" = :DateTimeValue2,
-	"LinqDataTypes"."BoolValue" = :BoolValue,
-	"LinqDataTypes"."GuidValue" = :GuidValue,
-	"LinqDataTypes"."SmallIntValue" = :SmallIntValue,
-	"LinqDataTypes"."IntValue" = :IntValue,
-	"LinqDataTypes"."BigIntValue" = :BigIntValue,
-	"LinqDataTypes"."StringValue" = :StringValue
+	"MoneyValue" = :MoneyValue,
+	"DateTimeValue" = :DateTimeValue,
+	"DateTimeValue2" = :DateTimeValue2,
+	"BoolValue" = :BoolValue,
+	"GuidValue" = :GuidValue,
+	"SmallIntValue" = :SmallIntValue,
+	"IntValue" = :IntValue,
+	"BigIntValue" = :BigIntValue,
+	"StringValue" = :StringValue
 WHERE
-	"LinqDataTypes".ID = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	r.ID,
@@ -80,7 +76,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID = :ID
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -106,17 +102,17 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t1
 SET
-	"LinqDataTypes"."MoneyValue" = :MoneyValue,
-	"LinqDataTypes"."DateTimeValue" = :DateTimeValue,
-	"LinqDataTypes"."DateTimeValue2" = :DateTimeValue2,
-	"LinqDataTypes"."BoolValue" = :BoolValue,
-	"LinqDataTypes"."GuidValue" = :GuidValue,
-	"LinqDataTypes"."SmallIntValue" = :SmallIntValue,
-	"LinqDataTypes"."IntValue" = :IntValue,
-	"LinqDataTypes"."BigIntValue" = :BigIntValue,
-	"LinqDataTypes"."StringValue" = :StringValue
+	"MoneyValue" = :MoneyValue,
+	"DateTimeValue" = :DateTimeValue,
+	"DateTimeValue2" = :DateTimeValue2,
+	"BoolValue" = :BoolValue,
+	"GuidValue" = :GuidValue,
+	"SmallIntValue" = :SmallIntValue,
+	"IntValue" = :IntValue,
+	"BigIntValue" = :BigIntValue,
+	"StringValue" = :StringValue
 WHERE
-	"LinqDataTypes".ID = :ID
+	t1.ID = :ID
 
