@@ -2,10 +2,10 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."PersonID" + 1,
+	p."PersonID" + 0,
 	p."FirstName"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1
+	p."PersonID" + 1 = 2
 
