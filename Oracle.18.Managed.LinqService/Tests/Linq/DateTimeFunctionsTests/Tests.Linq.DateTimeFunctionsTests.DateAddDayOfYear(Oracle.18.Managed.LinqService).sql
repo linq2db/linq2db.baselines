@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + 3 * INTERVAL '1' DAY
+	Trunc(t."DateTimeValue" + 3 * INTERVAL '1' DAY, 'DD')
 FROM
 	"LinqDataTypes" t
 

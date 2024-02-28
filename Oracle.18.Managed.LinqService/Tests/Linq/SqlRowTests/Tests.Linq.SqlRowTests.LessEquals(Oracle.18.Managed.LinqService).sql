@@ -114,7 +114,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	(0 < i."One" OR 0 = i."One" AND NULL < i."Two" OR 0 = i."One" AND i."Two" IS NULL AND 3 <= i."Three")
+	(0 < i."One" OR 0 = i."One" AND NULL < i."Two" OR 0 = i."One" AND 1 = 0 AND 3 <= i."Three")
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
