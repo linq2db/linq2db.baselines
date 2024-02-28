@@ -6,5 +6,5 @@ SELECT
 FROM
 	[AllTypes] [_]
 WHERE
-	[_].[charDataType] = '1'
+	([_].[charDataType] = '1')
 

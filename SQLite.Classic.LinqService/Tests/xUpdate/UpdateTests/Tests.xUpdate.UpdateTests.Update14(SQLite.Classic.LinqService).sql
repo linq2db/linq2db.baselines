@@ -26,13 +26,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @name NVarChar(8) -- String
+SET     @name = 'Update14'
 DECLARE @idx  -- Int32
-SET     @idx = 12
+SET     @idx = 4
 
 UPDATE
 	[Person]
 SET
-	[LastName] = Cast(@idx as NVarChar(11))
+	[LastName] = Cast((Length(@name) + @idx) as NVarChar(255))
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

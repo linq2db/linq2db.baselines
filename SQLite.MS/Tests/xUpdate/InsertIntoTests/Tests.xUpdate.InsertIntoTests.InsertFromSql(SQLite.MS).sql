@@ -44,9 +44,11 @@ BeforeExecute
 
 INSERT INTO [InsertTestClassDest]
 (
+	[Id],
 	[Value]
 )
 SELECT
+	[x].[Id] + 1,
 	[x].[Value]
 FROM
 	(
@@ -55,8 +57,6 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -64,12 +64,10 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClass] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -77,7 +75,7 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClassDest] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

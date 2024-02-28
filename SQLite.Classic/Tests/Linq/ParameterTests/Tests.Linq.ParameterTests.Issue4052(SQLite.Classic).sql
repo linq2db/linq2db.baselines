@@ -12,9 +12,9 @@ SELECT
 FROM
 	[Person] [c_1]
 WHERE
-	[c_1].[PersonID] = @ID AND CASE
+	[c_1].[PersonID] = @ID AND (CASE
 		WHEN [c_1].[MiddleName] IS NOT NULL
 			THEN Lower(Trim([c_1].[MiddleName]))
 		ELSE ''
-	END = ''
+	END = '')
 

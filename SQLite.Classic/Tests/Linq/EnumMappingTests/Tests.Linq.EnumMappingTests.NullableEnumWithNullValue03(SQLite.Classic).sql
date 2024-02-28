@@ -71,7 +71,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] <= 103
+	([r].[ID] >= 101) AND ([r].[ID] <= 103)
 ORDER BY
 	[r].[ID]
 

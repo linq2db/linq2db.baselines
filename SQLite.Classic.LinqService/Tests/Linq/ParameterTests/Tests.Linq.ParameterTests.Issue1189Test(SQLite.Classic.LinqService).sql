@@ -18,6 +18,10 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @DateTime  -- DateTime
 SET     @DateTime = '2020-02-29 17:54:55.123'
+DECLARE @DateTime_1  -- DateTime
+SET     @DateTime_1 = '2020-02-29 17:54:55.123'
+DECLARE @DateTime_2  -- DateTime
+SET     @DateTime_2 = '2020-02-29 17:54:55.123'
 
 SELECT
 	[k_1].[ID],
@@ -25,6 +29,8 @@ SELECT
 	@DateTime
 FROM
 	[Issue1189Customer] [k_1]
+WHERE
+	DateTime(@DateTime_1) <= DateTime(@DateTime_2)
 
 BeforeExecute
 -- SQLite.Classic SQLite

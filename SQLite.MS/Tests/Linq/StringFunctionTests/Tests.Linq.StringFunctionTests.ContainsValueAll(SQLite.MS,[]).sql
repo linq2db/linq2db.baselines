@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE '%~[~]%' ESCAPE '~'
+	[p].[PersonID] = 1 AND @s LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace('[]', '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s NOT LIKE '%~[~]%' ESCAPE '~'
+	[p].[PersonID] = 1 AND @s NOT LIKE '%' || Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace('[]', '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 

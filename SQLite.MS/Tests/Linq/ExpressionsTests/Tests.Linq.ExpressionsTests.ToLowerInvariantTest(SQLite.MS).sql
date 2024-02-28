@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Doctor] [p]
 WHERE
-	Lower([p].[Taxonomy]) = 'psychiatry'
+	(Lower([p].[Taxonomy]) = 'psychiatry')
 
