@@ -28,14 +28,16 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 5
 
 UPDATE
-	[Parent]
+	[a_Parent]
 SET
-	[Parent].[Value1] = 5
+	[a_Parent].[Value1] = @Value1
 FROM
 	[Child] [child_1]
-		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON ([child_1].[ParentID] = [a_Parent].[ParentID])
 WHERE
 	[child_1].[ChildID] = 10000
 

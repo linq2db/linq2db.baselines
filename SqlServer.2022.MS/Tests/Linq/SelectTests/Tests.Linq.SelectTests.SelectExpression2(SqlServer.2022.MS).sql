@@ -34,8 +34,7 @@ DECLARE @p_1 UniqueIdentifier -- Guid
 SET     @p_1 = '61efdcd4-659d-41e8-910c-506a9c2f31c5'
 
 SELECT TOP (@take)
-	@p,
-	@p_1
+	IIF((@p <> @p_1 OR @p IS NULL AND @p_1 IS NOT NULL OR @p IS NOT NULL AND @p_1 IS NULL), 1, 0)
 FROM
 	[SelectExpressionTable] [_]
 

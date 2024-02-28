@@ -32,16 +32,16 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[Child]
+	[c_1]
 SET
-	[Child].[ChildID] = [c_1].[ChildID] + 1,
-	[Child].[ParentID] = [p].[ParentID]
+	[c_1].[ChildID] = [c_1].[ChildID] + 1,
+	[c_1].[ParentID] = [p].[ParentID]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
 WHERE
-	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
+	[c_1].[ChildID] = @id AND ([a_Parent].[Value1] = 1)
 
 BeforeExecute
 -- SqlServer.2022

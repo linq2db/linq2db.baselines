@@ -73,19 +73,17 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t1].[c1],
+	[g_2].[c1],
 	Count(*)
 FROM
 	(
 		SELECT
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [Key_1],
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1]
+			IIF(([g_1].[TradingStatus] = N'D'), 1, 0) as [c1]
 		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+			[Issue913Test] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	[g_2].[c1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

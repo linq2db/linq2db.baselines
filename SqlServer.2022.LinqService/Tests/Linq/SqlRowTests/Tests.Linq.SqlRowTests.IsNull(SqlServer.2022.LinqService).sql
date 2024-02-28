@@ -69,7 +69,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NULL AND [i].[Nil] IS NULL
+	[i].[One] IS NULL AND [i].[Nil] IS NULL AND NULL IS NULL
 
 BeforeExecute
 -- SqlServer.2022
@@ -79,7 +79,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[Nil] IS NULL
+	[i].[Nil] IS NULL AND NULL IS NULL
 
 BeforeExecute
 -- SqlServer.2022

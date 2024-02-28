@@ -2,25 +2,18 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
+	Count(IIF([g_1].[ChildID] > 30, 1, NULL)),
 	(
 		SELECT
 			Count(*)
 		FROM
-			[Child] [c_1]
+			[Child] [ch]
 		WHERE
-			[t1].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > 30
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [_]
-		WHERE
-			[t1].[ParentID] = [_].[ParentID] AND [_].[ChildID] > 30
+			[ch].[ChildID] > 30 AND [g_1].[ParentID] = [ch].[ParentID]
 	),
 	Count(*)
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 

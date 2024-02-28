@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 1
+	[p].[ParentID] = @id AND ([p].[Value1] = 1)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -36,13 +36,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -54,7 +52,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 2
+	[p].[ParentID] = @id AND ([p].[Value1] = 2)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -64,13 +62,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -82,5 +78,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 3
+	[p].[ParentID] = @id AND ([p].[Value1] = 3)
 

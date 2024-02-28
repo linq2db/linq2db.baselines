@@ -35,25 +35,25 @@ SET
 	[a_Parent].[Value1] = @Value1
 FROM
 	[Child] [child_1]
-		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON ([child_1].[ParentID] = [a_Parent].[ParentID])
 WHERE
 	[child_1].[ChildID] = 10000
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [t1]
+DELETE [x]
 FROM
-	[Child] [t1]
+	[Child] [x]
 WHERE
-	[t1].[ChildID] = 10000
+	[x].[ChildID] = 10000
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [t1]
+DELETE [x]
 FROM
-	[Parent] [t1]
+	[Parent] [x]
 WHERE
-	[t1].[ParentID] = 20000
+	[x].[ParentID] = 20000
 
