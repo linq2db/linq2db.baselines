@@ -41,17 +41,23 @@ BeforeExecute
 -- SqlServer.2017
 
 UPDATE
-	[gt_s_one]
+	[x]
 SET
-	[gt_s_one].[col1] = [x].[col1],
-	[gt_s_one].[col2] = [x].[col2],
-	[gt_s_one].[col3] = Replace([x].[col3], N'auth.', N''),
-	[gt_s_one].[col4] = [x].[col4],
-	[gt_s_one].[col5] = IIF([x].[col3] = N'empty', N'1', N'0'),
-	[gt_s_one].[col6] = IIF([x].[col3] = N'empty', N'', Convert(NVarChar(11), [am].[id]))
+	[x].[col1] = [x].[col1],
+	[x].[col2] = [x].[col2],
+	[x].[col3] = Replace([x].[col3], N'auth.', N''),
+	[x].[col4] = [x].[col4],
+	[x].[col5] = IIF(([x].[col3] = N'empty'), N'1', N'0'),
+	[x].[col6] = IIF(([x].[col3] = N'empty'), N'', Convert(NVarChar(11), [y1_1].[id]))
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([am].[code]) IS NULL)
+		LEFT JOIN (
+			SELECT
+				[y1].[id],
+				Upper([y1].[code]) as [c1]
+			FROM
+				[access_mode] [y1]
+		) [y1_1] ON (Upper(Replace([x].[col3], N'auth.', N'')) = [y1_1].[c1] OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND [y1_1].[c1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017

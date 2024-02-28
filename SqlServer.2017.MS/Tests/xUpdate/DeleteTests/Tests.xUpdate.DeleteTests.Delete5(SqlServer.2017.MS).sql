@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -61,11 +61,11 @@ WHERE
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] IN (1001, 1002)
+	[_].[ParentID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

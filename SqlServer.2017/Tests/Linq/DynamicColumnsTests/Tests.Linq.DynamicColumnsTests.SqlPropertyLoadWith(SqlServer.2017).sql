@@ -10,5 +10,5 @@ SELECT
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [t1]
-		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+		LEFT JOIN [Patient] [a_Patient] ON ([t1].[PersonID] = [a_Patient].[PersonID])
 

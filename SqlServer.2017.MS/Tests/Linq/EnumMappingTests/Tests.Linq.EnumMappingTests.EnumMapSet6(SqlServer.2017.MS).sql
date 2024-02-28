@@ -25,15 +25,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @Int32Field Int -- Int32
+SET     @Int32Field = 4
 
 UPDATE
-	[r]
+	[LinqDataTypes]
 SET
-	[r].[IntValue] = 4
-FROM
-	[LinqDataTypes] [r]
+	[IntValue] = @Int32Field
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	([LinqDataTypes].[ID] = 101) AND ([LinqDataTypes].[IntValue] = 3)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

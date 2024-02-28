@@ -72,7 +72,7 @@ SELECT
 	[a_Details].[Age]
 FROM
 	[UserIssue3128] [t1]
-		LEFT JOIN [UserDetailsIssue3128] [a_Details] ON [t1].[Id] = [a_Details].[UserId]
+		LEFT JOIN [UserDetailsIssue3128] [a_Details] ON ([t1].[Id] = [a_Details].[UserId])
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

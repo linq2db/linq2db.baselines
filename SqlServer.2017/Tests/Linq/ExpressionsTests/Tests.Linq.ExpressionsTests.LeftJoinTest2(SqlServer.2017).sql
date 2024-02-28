@@ -13,8 +13,8 @@ WHERE
 			*
 		FROM
 			[Child] [t]
-				LEFT JOIN [Parent] [gr] ON [t].[ParentID] = [gr].[ParentID]
+				LEFT JOIN [Parent] [i] ON [t].[ParentID] = [i].[ParentID]
 		WHERE
-			[t].[ChildID] = [g_1].[ChildID]
+			([t].[ChildID] = [g_1].[ChildID])
 	)
 
