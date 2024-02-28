@@ -32,17 +32,23 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Fd Int32
+SET     @Fd = 2
+DECLARE @Fd_1 Int32
+SET     @Fd_1 = 2
 
 /* My Test */
 MERGE INTO "TestTable" t1
-USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
+USING (SELECT :Id AS "Id" FROM SYS.DUAL) s ON
 (
 	t1."Id" = s."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Fd" = 2
+		"Fd" = :Fd
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -51,8 +57,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		1,
-		2
+		:Id,
+		:Fd_1
 	)
 
 BeforeExecute
