@@ -34,6 +34,10 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @DateTime TimeStamp -- DateTime
 SET     @DateTime = TIMESTAMP '2020-02-29 17:54:55.123123'
+DECLARE @DateTime_1 TimeStamp -- DateTime
+SET     @DateTime_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
+DECLARE @DateTime_2 TimeStamp -- DateTime
+SET     @DateTime_2 = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
 	k_1.ID,
@@ -41,6 +45,8 @@ SELECT
 	:DateTime
 FROM
 	"Issue1189Customer" k_1
+WHERE
+	:DateTime_1 <= :DateTime_2
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	i."One" IS NULL AND i."Nil" IS NULL
+	i."One" IS NULL AND i."Nil" IS NULL AND NULL IS NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -94,7 +94,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	i."Nil" IS NULL
+	i."Nil" IS NULL AND NULL IS NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
