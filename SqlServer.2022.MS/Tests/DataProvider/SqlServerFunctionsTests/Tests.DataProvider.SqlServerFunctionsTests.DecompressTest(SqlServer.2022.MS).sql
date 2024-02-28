@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+DECLARE @p VarBinary(8000) -- Binary
+SET     @p = 0x1F8B080000000000040073647062706600001AF48F9F06000000
+
+SELECT
+	Convert(NVarChar(4000), DECOMPRESS(@p))
+
