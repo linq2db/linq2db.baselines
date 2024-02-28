@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	([p].[Value1] = 11)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -31,14 +31,14 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[Value1] = 11
+	([p].[Value1] = 11)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	([p].[Value1] = 11)
 
