@@ -41,7 +41,7 @@ SELECT
 FROM
 	[Issue4167Table] [t]
 WHERE
-	[t].[Value] = N'000001'
+	([t].[Value] = N'000001')
 GROUP BY
 	[t].[Value],
 	[t].[EnumValue]

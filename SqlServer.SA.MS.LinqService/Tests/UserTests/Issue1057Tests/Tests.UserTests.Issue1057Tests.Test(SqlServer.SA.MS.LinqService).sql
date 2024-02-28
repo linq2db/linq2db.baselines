@@ -100,9 +100,9 @@ SELECT
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = 1
 WHERE
-	[p].[TargetName] = N'bda.Requests'
+	([p].[TargetName] = N'bda.Requests')
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

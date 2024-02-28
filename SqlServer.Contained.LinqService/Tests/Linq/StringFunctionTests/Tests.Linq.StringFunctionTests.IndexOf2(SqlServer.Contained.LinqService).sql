@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'e'
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex(N'e', [p].[LastName], 3) = 5 AND [p].[PersonID] = 2
+	(IIF(1 = 0, 2, CharIndex(@p, [p].[LastName], 3) - 1) = 4) AND
+	[p].[PersonID] = 2
 

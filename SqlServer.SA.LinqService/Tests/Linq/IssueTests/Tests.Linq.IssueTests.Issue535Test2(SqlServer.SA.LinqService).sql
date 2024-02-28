@@ -29,11 +29,12 @@ SELECT
 	[q].[Id],
 	[q].[Name],
 	[q].[ContactEmail],
-	Coalesce([q].[Enabled], 0)
+	[q].[Enabled]
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = N'Client' AND ([q].[Name] LIKE @filter ESCAPE N'~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE N'~')
+	([q].[Name] LIKE @filter ESCAPE N'~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE N'~') AND
+	[q].[ClientType] = N'Client'
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
