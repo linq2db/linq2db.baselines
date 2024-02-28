@@ -52,7 +52,7 @@ BeforeExecute
 SELECT
 	[doSap].[DocEntry],
 	CASE
-		WHEN [doSap].[DocStatus] = 'O'
+		WHEN ([doSap].[DocStatus] = 'O')
 			THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
@@ -63,7 +63,7 @@ UNION
 SELECT
 	[doSap_1].[DocEntry],
 	CASE
-		WHEN [doSap_1].[DocStatus] = 'O'
+		WHEN ([doSap_1].[DocStatus] = 'O')
 			THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
@@ -74,7 +74,7 @@ UNION
 SELECT
 	[doSap_2].[DocEntry],
 	CASE
-		WHEN [doSap_2].[DocStatus] = 'O'
+		WHEN ([doSap_2].[DocStatus] = 'O')
 			THEN 'Aberto'
 		ELSE 'Fechado'
 	END,

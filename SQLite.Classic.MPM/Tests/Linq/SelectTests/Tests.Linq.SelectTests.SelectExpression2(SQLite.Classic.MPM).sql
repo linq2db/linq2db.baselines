@@ -33,8 +33,11 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	@p,
-	@p_1
+	CASE
+		WHEN (@p <> @p_1 OR @p IS NULL AND @p_1 IS NOT NULL OR @p IS NOT NULL AND @p_1 IS NULL)
+			THEN 1
+		ELSE 0
+	END
 FROM
 	[SelectExpressionTable] [_]
 LIMIT @take
