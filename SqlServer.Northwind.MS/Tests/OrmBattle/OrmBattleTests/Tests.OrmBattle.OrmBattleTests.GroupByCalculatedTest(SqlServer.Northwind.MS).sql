@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,23 +75,54 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[t1].[Key_1]
+	[m_1].[c1],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
+FROM
+	(
+		SELECT DISTINCT
+			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [c1]
+		FROM
+			[Orders] [g_1]
+	) [m_1]
+		INNER JOIN [Orders] [d] ON ([m_1].[c1] = IIF([d].[Freight] > 50, IIF([d].[Freight] > 100, N'expensive', N'average'), N'cheap'))
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SqlServer.Northwind.MS SqlServer.2019
+
+SELECT
+	[g_2].[c1]
 FROM
 	(
 		SELECT
-			IIF([selectParam].[Freight] > 50, IIF([selectParam].[Freight] > 100, N'expensive', N'average'), N'cheap') as [Key_1]
+			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [c1]
 		FROM
-			[Orders] [selectParam]
-	) [t1]
+			[Orders] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[c1]
 

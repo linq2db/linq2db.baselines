@@ -21,17 +21,18 @@ WHERE
 			*
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+				LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID])
 		WHERE
-			([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL) AND
+			[a_Customer].[CustomerID] = [c_1].[CustomerID] AND
 			NOT EXISTS(
 				SELECT
 					*
 				FROM
 					[Employees] [e]
 				WHERE
-					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [e].[FirstName] LIKE N'A%' ESCAPE N'~'
+					([a_Employee].[EmployeeID] = [e].[EmployeeID]) AND
+					[e].[FirstName] LIKE N'A%' ESCAPE N'~'
 			)
 	)
 

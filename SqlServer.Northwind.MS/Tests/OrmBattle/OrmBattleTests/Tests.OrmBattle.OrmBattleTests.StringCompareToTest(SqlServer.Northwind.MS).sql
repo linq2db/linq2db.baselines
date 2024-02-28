@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,17 +75,14 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],
 	[c_1].[ContactName],
@@ -99,5 +97,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	[c_1].[City] >= N'Seattle'
+	IIF([c_1].[City] > N'Seattle', 1, IIF([c_1].[City] = N'Seattle', 0, -1)) >= 0
 
