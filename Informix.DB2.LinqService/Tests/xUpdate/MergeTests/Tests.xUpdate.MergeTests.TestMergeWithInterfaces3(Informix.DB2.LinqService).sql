@@ -1,0 +1,50 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS ReviewIndexes
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ReviewIndexes
+(
+	Id      Int           NOT NULL,
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY (Id)
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+MERGE INTO ReviewIndexes Target
+USING (
+	SELECT 1::Int AS Id, '2'::NVarChar(255) AS Value_1 FROM table(set{1})) Source
+(
+	Id,
+	Value_1
+)
+ON (Target.Id = Source.Id)
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	Target."Value" = Source.Value_1
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	Source.Id,
+	Source.Value_1
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS ReviewIndexes
+
