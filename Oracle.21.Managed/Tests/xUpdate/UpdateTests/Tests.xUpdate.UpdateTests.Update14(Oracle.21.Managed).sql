@@ -32,11 +32,11 @@ DECLARE @idx Int32
 SET     @idx = 4
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."LastName" = Cast((Length(:name) + :idx) as VarChar(11))
+	"LastName" = Cast((Length(:name) + :idx) as VarChar(255))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

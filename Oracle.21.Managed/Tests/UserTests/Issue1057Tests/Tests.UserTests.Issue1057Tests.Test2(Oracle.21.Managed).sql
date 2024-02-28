@@ -138,12 +138,12 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."Id",
 	p."TargetName",
+	p."Id",
 	a_ActualStage."Id"
 FROM
 	"Task" p
-		LEFT JOIN "TaskStage" a_ActualStage ON p."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
+		LEFT JOIN "TaskStage" a_ActualStage ON (p."Id" = a_ActualStage."TaskId") AND a_ActualStage."Actual" = 1
 ORDER BY
 	p."Id"
 

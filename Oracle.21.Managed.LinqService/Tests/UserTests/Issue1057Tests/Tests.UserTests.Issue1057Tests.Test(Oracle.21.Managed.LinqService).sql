@@ -130,9 +130,9 @@ SELECT
 	a_ActualStage."Id"
 FROM
 	"Task" p
-		LEFT JOIN "TaskStage" a_ActualStage ON p."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
+		LEFT JOIN "TaskStage" a_ActualStage ON (p."Id" = a_ActualStage."TaskId") AND a_ActualStage."Actual" = 1
 WHERE
-	p."TargetName" = 'bda.Requests'
+	(p."TargetName" = 'bda.Requests')
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
