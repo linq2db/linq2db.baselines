@@ -46,8 +46,6 @@ DECLARE @i Int32
 SET     @i = 0
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
@@ -67,7 +65,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		:Diagnosis
+		'abc'
 	)
 
 BeforeExecute
@@ -78,8 +76,6 @@ DECLARE @i Int32
 SET     @i = 1
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
@@ -99,7 +95,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		:Diagnosis
+		'abc'
 	)
 
 BeforeExecute
@@ -110,8 +106,6 @@ DECLARE @i Int32
 SET     @i = 2
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id2 AS "PersonID" FROM SYS.DUAL) s ON
@@ -131,7 +125,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		:Diagnosis
+		'abc'
 	)
 
 BeforeExecute

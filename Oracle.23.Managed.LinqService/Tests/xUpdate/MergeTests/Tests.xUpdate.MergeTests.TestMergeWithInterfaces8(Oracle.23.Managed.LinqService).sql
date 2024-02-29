@@ -32,10 +32,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Value Varchar2(1) -- String
-SET     @Value = '3'
 
 MERGE INTO "ReviewIndexes" Target
 USING (
@@ -50,8 +46,8 @@ INSERT
 )
 VALUES
 (
-	:Id,
-	:Value
+	2,
+	'3'
 )
  WHERE "Source"."source_Id" > 1
 

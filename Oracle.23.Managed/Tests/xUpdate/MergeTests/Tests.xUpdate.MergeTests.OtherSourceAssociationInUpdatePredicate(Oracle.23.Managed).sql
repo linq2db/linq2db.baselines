@@ -12,8 +12,6 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @LastName Varchar2(7) -- String
-SET     @LastName = 'Updated'
 
 MERGE INTO "Person" Target
 USING (
@@ -34,7 +32,7 @@ ON (Target."PersonID" = "Source"."source_ID" AND "Source"."source_FirstName" = '
 WHEN MATCHED THEN
 UPDATE
 SET
-	"LastName" = :LastName
+	"LastName" = 'Updated'
 WHERE
 	("Source"."source_Patient_Diagnosis" = "Source"."target_Patient_Diagnosis" OR "Source"."source_Patient_Diagnosis" IS NULL AND "Source"."target_Patient_Diagnosis" IS NULL) AND
 "Source"."target_Patient_Diagnosis" LIKE '%very%' ESCAPE '~'

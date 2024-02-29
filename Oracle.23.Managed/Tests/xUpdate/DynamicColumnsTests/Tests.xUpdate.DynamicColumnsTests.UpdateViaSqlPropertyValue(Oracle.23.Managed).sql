@@ -28,15 +28,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @ChildID Int32
-SET     @ChildID = 5000
 DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
 	"Child"
 SET
-	"ChildID" = :ChildID
+	"ChildID" = 5000
 WHERE
 	EXISTS(
 		SELECT

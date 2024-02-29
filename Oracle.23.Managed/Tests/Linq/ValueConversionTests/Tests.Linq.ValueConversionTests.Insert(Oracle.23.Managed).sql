@@ -40,8 +40,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
 DECLARE @Value1 NVarchar2(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum NVarchar2(6) -- String
@@ -64,7 +62,7 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	:Id,
+	1,
 	:Value1,
 	:Enum,
 	:Value2,
@@ -94,8 +92,6 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 2
 DECLARE @Value1 NVarchar2 -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarchar2 -- String
@@ -118,7 +114,7 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	:Id,
+	2,
 	:Value1,
 	:Value2,
 	:Enum,

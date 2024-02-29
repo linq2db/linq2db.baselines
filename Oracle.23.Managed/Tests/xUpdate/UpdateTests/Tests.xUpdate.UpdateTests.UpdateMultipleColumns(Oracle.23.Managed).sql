@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Int16
@@ -15,25 +13,21 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	:ID,
+	1001,
 	:MoneyValue,
 	:SmallIntValue
 )
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @MoneyValue Decimal(4, 0)
-SET     @MoneyValue = 2000
-DECLARE @SmallIntValue Int16
-SET     @SmallIntValue = 200
 DECLARE @ID Int32
 SET     @ID = 1001
 
 UPDATE
 	"LinqDataTypes" t
 SET
-	"MoneyValue" = :MoneyValue,
-	"SmallIntValue" = :SmallIntValue
+	"MoneyValue" = 2000,
+	"SmallIntValue" = 200
 WHERE
 	t.ID = :ID
 

@@ -34,10 +34,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 123
-DECLARE @FirstName Varchar2(4) -- String
-SET     @FirstName = 'John'
 
 INSERT INTO "TestInsertOrReplaceTable"
 (
@@ -46,8 +42,8 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	:ID,
-	:FirstName
+	123,
+	'John'
 )
 
 BeforeExecute

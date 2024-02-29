@@ -90,7 +90,7 @@ UPDATE
 SET
 	"Data" = '***OOO***'
 WHERE
-	t."Data" = '***XXX***'
+	(t."Data" = '***XXX***')
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

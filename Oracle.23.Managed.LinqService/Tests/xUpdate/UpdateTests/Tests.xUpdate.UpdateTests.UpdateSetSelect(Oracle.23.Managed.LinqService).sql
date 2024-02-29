@@ -38,13 +38,11 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 
 UPDATE
 	"Parent" t1
 SET
-	"ParentID" = :ParentID
+	"ParentID" = 1
 WHERE
 	t1."ParentID" = 1001
 

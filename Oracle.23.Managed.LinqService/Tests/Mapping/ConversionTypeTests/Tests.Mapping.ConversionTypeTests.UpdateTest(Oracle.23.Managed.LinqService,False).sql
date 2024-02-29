@@ -100,27 +100,23 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
 	"TrimTestTable" t
 SET
-	"Data" = :Data
+	"Data" = '***OOO***'
 WHERE
 	(t."Data" = '***XXX***')
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p Varchar2(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
 	"TrimTestTable" t
 SET
-	"Data" = :Data
+	"Data" = '***SSS***'
 WHERE
 	t."Data" = :p
 

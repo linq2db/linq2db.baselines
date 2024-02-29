@@ -20,13 +20,11 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = 1012
 
 UPDATE
 	"Parent" t
 SET
-	"Value1" = :Value1
+	"Value1" = 1012
 WHERE
 	t."ParentID" = 1010
 

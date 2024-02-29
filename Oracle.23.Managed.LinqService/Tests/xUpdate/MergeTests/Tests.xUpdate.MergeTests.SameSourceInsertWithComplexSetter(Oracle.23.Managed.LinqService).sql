@@ -220,14 +220,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Field1 Int32
-SET     @Field1 = 123
 DECLARE @idx Int32
 SET     @idx = 10
-DECLARE @Field4 Int32
-SET     @Field4 = 999
-DECLARE @Field5 Int32
-SET     @Field5 = 888
 
 MERGE INTO "TestMerge1" Target
 USING (
@@ -252,11 +246,11 @@ INSERT
 VALUES
 (
 	10 + "Source"."source_Id",
-	:Field1,
+	123,
 	:idx,
 	"Source"."source_Field2",
-	:Field4,
-	:Field5
+	999,
+	888
 )
 
 BeforeExecute

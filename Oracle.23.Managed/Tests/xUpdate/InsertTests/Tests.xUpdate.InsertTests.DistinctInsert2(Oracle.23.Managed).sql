@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Int16
-SET     @BoolValue = 1
 
 INSERT INTO "LinqDataTypes"
 (
@@ -20,7 +18,7 @@ INSERT INTO "LinqDataTypes"
 SELECT
 	Cast(Floor(t2."c1" + 1001D) as Int),
 	Sys_Guid(),
-	:BoolValue
+	1
 FROM
 	(
 		SELECT DISTINCT

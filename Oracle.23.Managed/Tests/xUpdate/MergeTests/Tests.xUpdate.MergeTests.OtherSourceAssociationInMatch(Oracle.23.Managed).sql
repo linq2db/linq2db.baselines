@@ -12,8 +12,6 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @MiddleName Varchar2(6) -- String
-SET     @MiddleName = 'R.I.P.'
 
 MERGE INTO "Person" Target
 USING (
@@ -39,7 +37,7 @@ ON (EXISTS(
 WHEN MATCHED THEN
 UPDATE
 SET
-	"MiddleName" = :MiddleName
+	"MiddleName" = 'R.I.P.'
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

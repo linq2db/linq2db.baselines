@@ -32,8 +32,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
 DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('010203')
 
@@ -44,7 +42,7 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	:Id,
+	1,
 	:BlobValue
 )
 
