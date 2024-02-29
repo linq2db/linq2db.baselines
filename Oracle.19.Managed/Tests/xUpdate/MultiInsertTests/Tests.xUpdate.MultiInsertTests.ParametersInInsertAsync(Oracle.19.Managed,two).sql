@@ -37,10 +37,6 @@ DECLARE @value Varchar2(3) -- String
 SET     @value = 'two'
 DECLARE @id2 Int32
 SET     @id2 = 4000
-DECLARE @value_1 Varchar2(3) -- String
-SET     @value_1 = 'two'
-DECLARE @value_2 Varchar2(3) -- String
-SET     @value_2 = 'two'
 
 INSERT ALL
 WHEN "source_Value" IS NULL THEN
@@ -63,10 +59,10 @@ WHEN "source_Value" IS NOT NULL THEN
 	VALUES
 	(
 		:id2,
-		:value_1
+		:value
 	)
 SELECT
-	:value_2 as "source_Value"
+	:value as "source_Value"
 FROM SYS.DUAL
 
 BeforeExecute

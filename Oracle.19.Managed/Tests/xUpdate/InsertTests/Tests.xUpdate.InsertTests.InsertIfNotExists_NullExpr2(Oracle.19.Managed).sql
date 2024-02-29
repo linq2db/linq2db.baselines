@@ -34,15 +34,9 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Id_1 Int32
-SET     @Id_1 = 1
-DECLARE @Name Varchar2(4) -- String
-SET     @Name = 'test'
 
 MERGE INTO "test_insert_or_replace" t1
-USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
+USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON
 (
 	t1."id" = s."id"
 )
@@ -54,21 +48,15 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:Id_1,
-		:Name
+		1,
+		'test'
 	)
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Id_1 Int32
-SET     @Id_1 = 1
-DECLARE @Name Varchar2(4) -- String
-SET     @Name = 'test'
 
 MERGE INTO "test_insert_or_replace" t1
-USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
+USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON
 (
 	t1."id" = s."id"
 )
@@ -80,8 +68,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:Id_1,
-		:Name
+		1,
+		'test'
 	)
 
 BeforeExecute

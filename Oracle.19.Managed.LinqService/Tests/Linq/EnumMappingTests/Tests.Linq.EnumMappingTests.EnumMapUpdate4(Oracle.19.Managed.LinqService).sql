@@ -24,13 +24,11 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @TestField Int64
-SET     @TestField = 12
 
 UPDATE
 	"LinqDataTypes" r
 SET
-	"BigIntValue" = :TestField
+	"BigIntValue" = 12
 WHERE
 	(r.ID = 101) AND (r."BigIntValue" = 11)
 

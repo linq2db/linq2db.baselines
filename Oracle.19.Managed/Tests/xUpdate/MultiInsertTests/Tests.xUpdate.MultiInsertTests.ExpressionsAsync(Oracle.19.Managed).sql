@@ -31,8 +31,6 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @ID Int32
-SET     @ID = 3002
 
 INSERT ALL
 WHEN "source_N" < 0 THEN
@@ -54,7 +52,7 @@ WHEN "source_N" > 40 THEN
 	)
 	VALUES
 	(
-		:ID,
+		3002,
 		"source_N"
 	)
 SELECT
@@ -82,8 +80,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @ID Int32
-SET     @ID = 4002
 
 INSERT ALL
 WHEN 1 = 1 THEN
@@ -105,7 +101,7 @@ WHEN "source_N" > 40 THEN
 	)
 	VALUES
 	(
-		:ID,
+		4002,
 		"source_N"
 	)
 SELECT

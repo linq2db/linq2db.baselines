@@ -220,8 +220,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Field2 Int32
-SET     @Field2 = 123
 
 MERGE INTO "TestMerge1" Target
 USING (
@@ -237,7 +235,7 @@ ON ((Target."Field1" = "Source"."source_Field1" OR Target."Field1" IS NULL AND "
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field2" = :Field2
+	"Field2" = 123
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

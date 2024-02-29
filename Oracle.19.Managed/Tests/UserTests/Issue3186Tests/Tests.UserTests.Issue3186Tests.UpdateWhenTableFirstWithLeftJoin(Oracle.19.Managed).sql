@@ -128,13 +128,11 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @is_deleted Int16
-SET     @is_deleted = 1
 
 UPDATE
 	"component_categories"
 SET
-	"is_deleted" = :is_deleted
+	"is_deleted" = 1
 WHERE
 	EXISTS(
 		SELECT

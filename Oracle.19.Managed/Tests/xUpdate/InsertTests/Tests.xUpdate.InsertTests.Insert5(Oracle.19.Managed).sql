@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @ChildID Int32
-SET     @ChildID = 1001
 
 INSERT INTO "Child"
 (
@@ -18,7 +16,7 @@ INSERT INTO "Child"
 )
 SELECT
 	c_1."ParentID",
-	:ChildID
+	1001
 FROM
 	"Child" c_1
 WHERE

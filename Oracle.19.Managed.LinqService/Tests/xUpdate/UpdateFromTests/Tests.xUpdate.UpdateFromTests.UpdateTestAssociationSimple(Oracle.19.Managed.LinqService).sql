@@ -293,15 +293,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value3 Int32
-SET     @Value3 = 1
 
 UPDATE
 	"UpdatedEntities"
 SET
 	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
 	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"Value3" = :Value3
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT

@@ -42,10 +42,6 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @id_1 Int32
-SET     @id_1 = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -64,8 +60,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id_1,
-		:Diagnosis
+		:id,
+		'abc'
 	)
 
 BeforeExecute
@@ -74,10 +70,6 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 1
-DECLARE @id_1 Int32
-SET     @id_1 = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -96,8 +88,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id_1,
-		:Diagnosis
+		:id,
+		'abc'
 	)
 
 BeforeExecute
@@ -106,10 +98,6 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 2
-DECLARE @id_1 Int32
-SET     @id_1 = 5
-DECLARE @Diagnosis Varchar2(3) -- String
-SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -128,8 +116,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id_1,
-		:Diagnosis
+		:id,
+		'abc'
 	)
 
 BeforeExecute

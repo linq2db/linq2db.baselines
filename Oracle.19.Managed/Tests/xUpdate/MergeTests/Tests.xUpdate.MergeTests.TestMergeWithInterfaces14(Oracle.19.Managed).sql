@@ -32,8 +32,6 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value Varchar2(1) -- String
-SET     @Value = '3'
 
 MERGE INTO "ReviewIndexes" Target
 USING (
@@ -43,7 +41,7 @@ ON (Target."Id" = "Source"."source_Id")
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Value" = :Value
+	"Value" = '3'
 
 DELETE WHERE
 	(Target."Value" <> "Source"."source_Value" OR Target."Value" IS NULL AND "Source"."source_Value" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."source_Value" IS NULL)

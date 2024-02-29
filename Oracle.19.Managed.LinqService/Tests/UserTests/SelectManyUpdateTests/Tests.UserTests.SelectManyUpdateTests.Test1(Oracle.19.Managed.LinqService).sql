@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = NULL
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = :Value1
+	"Value1" = NULL
 WHERE
 	EXISTS(
 		SELECT
