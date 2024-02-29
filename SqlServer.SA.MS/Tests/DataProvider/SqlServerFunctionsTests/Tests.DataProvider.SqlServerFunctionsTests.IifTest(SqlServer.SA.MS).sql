@@ -2,5 +2,5 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	IIF(1 > 2, N'A', N'B')
+	IIF(1 = 0, N'A', N'B')
 

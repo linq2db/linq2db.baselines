@@ -4,8 +4,10 @@ DECLARE @value Int -- Int32
 SET     @value = 1
 DECLARE @p Int -- Int32
 SET     @p = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 5
 
 SELECT
 	@value,
-	IIF(@p < 2, @p, @p + 4)
+	IIF(1 = 1, @p, @p_1)
 
