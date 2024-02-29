@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	Round([p].[MoneyValue], 0, 1)
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	Round([p].[MoneyValue], 0, 1) <> 0.1
+

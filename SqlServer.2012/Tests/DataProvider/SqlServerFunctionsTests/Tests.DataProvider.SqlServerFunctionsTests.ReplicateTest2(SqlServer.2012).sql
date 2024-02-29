@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlServer.2012
+DECLARE @p VarBinary(8000) -- Binary
+SET     @p = 0x61
+
+SELECT
+	REPLICATE(@p, 2)
+

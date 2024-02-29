@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	toInt32(1)
+FROM
+	Person _
+LIMIT toInt32(1)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	toInt32(1)
+FROM
+	Person _
+LIMIT toInt32(1)
+
