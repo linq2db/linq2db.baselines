@@ -8,7 +8,7 @@ SET     @p = 0
 SELECT
 	@value,
 	CASE
-		WHEN @p < 2 THEN @p
-		ELSE 2 + @p
+		WHEN 1 = 1 THEN @p
+		ELSE 2
 	END
 
