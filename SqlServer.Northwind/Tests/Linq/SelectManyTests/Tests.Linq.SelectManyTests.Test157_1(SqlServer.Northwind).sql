@@ -88,8 +88,8 @@ SELECT
 	[a_Employee_1].[ReportsTo],
 	[a_Employee_1].[PhotoPath],
 	[bind_4].[TerritoryID],
-	[bind_4].[RegionID],
 	[bind_4].[TerritoryDescription],
+	[bind_4].[RegionID],
 	[bind_5].[RegionID],
 	[bind_5].[RegionDescription]
 FROM
