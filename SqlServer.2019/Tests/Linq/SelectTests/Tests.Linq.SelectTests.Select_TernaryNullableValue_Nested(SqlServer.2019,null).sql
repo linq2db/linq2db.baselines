@@ -7,5 +7,5 @@ SET     @p = 0
 
 SELECT
 	@value,
-	IIF(@p < 2, @p, 2 + @p)
+	IIF(1 = 1, @p, 2)
 
