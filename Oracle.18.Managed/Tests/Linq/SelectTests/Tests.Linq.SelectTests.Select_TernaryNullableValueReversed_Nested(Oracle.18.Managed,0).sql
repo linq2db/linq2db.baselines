@@ -8,8 +8,8 @@ SET     @p = 0
 SELECT
 	:value,
 	CASE
-		WHEN :p < 2 THEN :p
-		ELSE :p + 4
+		WHEN 1 = 1 THEN :p
+		ELSE 4
 	END
 FROM SYS.DUAL
 

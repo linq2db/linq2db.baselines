@@ -26,15 +26,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @name Varchar2(8) -- String
-SET     @name = 'Update14'
 DECLARE @idx Int32
-SET     @idx = 4
+SET     @idx = 12
 
 UPDATE
 	"Person" t1
 SET
-	"LastName" = Cast((Length(:name) + :idx) as VarChar(255))
+	"LastName" = Cast(:idx as VarChar(255))
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
