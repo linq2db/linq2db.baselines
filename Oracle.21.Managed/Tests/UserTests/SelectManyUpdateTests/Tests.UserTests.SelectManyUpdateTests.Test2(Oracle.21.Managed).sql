@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @ChildID Int32
-SET     @ChildID = 10
 
 UPDATE
 	"Child"
 SET
-	"ChildID" = :ChildID
+	"ChildID" = 10
 WHERE
 	EXISTS(
 		SELECT

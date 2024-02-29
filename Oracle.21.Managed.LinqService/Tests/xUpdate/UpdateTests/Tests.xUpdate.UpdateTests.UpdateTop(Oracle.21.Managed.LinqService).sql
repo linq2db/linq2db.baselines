@@ -180,15 +180,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = 1
 DECLARE @take Int32
 SET     @take = 5
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = :Value1
+	"Value1" = 1
 WHERE
 	EXISTS(
 		SELECT

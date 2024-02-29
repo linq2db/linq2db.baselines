@@ -12,12 +12,6 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(10) -- String
-SET     @FirstName = 'Inserted 1'
-DECLARE @LastName Varchar2(10) -- String
-SET     @LastName = 'Inserted 2'
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 MERGE INTO "Person" Target
 USING (
@@ -39,9 +33,9 @@ INSERT
 )
 VALUES
 (
-	:FirstName,
-	:LastName,
-	:Gender
+	'Inserted 1',
+	'Inserted 2',
+	'M'
 )
  WHERE "Source"."source_Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
 

@@ -28,13 +28,11 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Value1 Int32
-SET     @Value1 = 5
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = :Value1
+	"Value1" = 5
 WHERE
 	EXISTS(
 		SELECT

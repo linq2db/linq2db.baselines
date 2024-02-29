@@ -33,12 +33,8 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 0
 DECLARE @ClaimedKeyType Varchar2(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO "Issue1554Table"
 (
@@ -48,9 +44,9 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	:Id,
+	0,
 	:ClaimedKeyType,
-	:ClaimedKeyTypeN
+	'EC'
 )
 
 BeforeExecute

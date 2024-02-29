@@ -57,14 +57,12 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ClaimedKeyType Varchar2(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	"Issue1554Table" p
 SET
 	"ClaimedKeyType" = :ClaimedKeyType,
-	"ClaimedKeyTypeN" = :ClaimedKeyTypeN
+	"ClaimedKeyTypeN" = 'EC'
 WHERE
 	p."Id" = 0
 

@@ -24,13 +24,11 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Int32Field Int32
-SET     @Int32Field = 4
 
 UPDATE
 	"LinqDataTypes" r
 SET
-	"IntValue" = :Int32Field
+	"IntValue" = 4
 WHERE
 	r.ID = 101 AND r."IntValue" = 3
 

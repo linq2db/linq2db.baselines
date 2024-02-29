@@ -76,15 +76,13 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Field Varchar2(4) -- String
-SET     @Field = 'test'
 DECLARE @id Int32
 SET     @id = 3
 
 UPDATE
 	"MainTable"
 SET
-	"Field" = :Field
+	"Field" = 'test'
 WHERE
 	EXISTS(
 		SELECT

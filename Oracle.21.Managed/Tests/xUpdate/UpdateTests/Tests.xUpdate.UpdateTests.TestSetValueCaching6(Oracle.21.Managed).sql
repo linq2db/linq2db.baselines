@@ -44,15 +44,13 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value6 Int32
-SET     @Value6 = 7
 DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
 	"UpdateSetTest" t1
 SET
-	"Value6" = :Value6
+	"Value6" = 7
 WHERE
 	t1."Id" = :id
 
@@ -71,15 +69,13 @@ FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value6 Int32
-SET     @Value6 = 8
 DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
 	"UpdateSetTest" t1
 SET
-	"Value6" = :Value6
+	"Value6" = 8
 WHERE
 	t1."Id" = :id
 
