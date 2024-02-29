@@ -261,15 +261,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value3  -- Int32
-SET     @Value3 = 1
 
 UPDATE
 	[UpdatedEntities]
 SET
 	[Value1] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
 	[Value2] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
-	[Value3] = @Value3
+	[Value3] = 1
 FROM
 	[UpdateRelation] [a_Relation]
 WHERE

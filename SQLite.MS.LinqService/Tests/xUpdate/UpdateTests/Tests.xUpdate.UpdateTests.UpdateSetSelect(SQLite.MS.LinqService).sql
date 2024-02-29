@@ -22,13 +22,11 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
 
 UPDATE
 	[Parent]
 SET
-	[ParentID] = @ParentID
+	[ParentID] = 1
 WHERE
 	[Parent].[ParentID] = 1001
 

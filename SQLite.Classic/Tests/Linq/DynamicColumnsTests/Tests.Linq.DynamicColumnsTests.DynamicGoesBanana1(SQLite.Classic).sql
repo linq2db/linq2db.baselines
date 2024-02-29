@@ -37,15 +37,13 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Property  -- Object
-SET     @Property = 'banana'
 DECLARE @filter  -- Object
 SET     @filter = 1
 
 UPDATE
 	[BananaTable]
 SET
-	[Property] = @Property
+	[Property] = 'banana'
 WHERE
 	[BananaTable].[Id] = @filter
 

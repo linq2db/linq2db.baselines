@@ -24,13 +24,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Int32Field  -- Int32
-SET     @Int32Field = 4
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[IntValue] = @Int32Field
+	[IntValue] = 4
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 

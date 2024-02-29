@@ -28,15 +28,13 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 5000
 DECLARE @id  -- Int32
 SET     @id = 1001
 
 UPDATE
 	[Child]
 SET
-	[ChildID] = @ChildID
+	[ChildID] = 5000
 FROM
 	[Parent] [a_Parent]
 WHERE

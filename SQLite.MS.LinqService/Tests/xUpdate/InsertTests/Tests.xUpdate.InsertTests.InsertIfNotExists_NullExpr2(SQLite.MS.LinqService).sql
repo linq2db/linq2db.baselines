@@ -18,10 +18,6 @@ CREATE TABLE IF NOT EXISTS [test_insert_or_replace]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Name NVarChar(4) -- String
-SET     @Name = 'test'
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (
@@ -30,17 +26,13 @@ INSERT INTO [test_insert_or_replace] AS [t1]
 )
 VALUES
 (
-	@Id,
-	@Name
+	1,
+	'test'
 )
 ON CONFLICT ([id]) DO NOTHING
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Name NVarChar(4) -- String
-SET     @Name = 'test'
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (
@@ -49,8 +41,8 @@ INSERT INTO [test_insert_or_replace] AS [t1]
 )
 VALUES
 (
-	@Id,
-	@Name
+	1,
+	'test'
 )
 ON CONFLICT ([id]) DO NOTHING
 

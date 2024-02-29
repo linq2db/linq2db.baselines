@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS [testparams]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @from  -- Int32
-SET     @from = 2
 
 UPDATE
 	[testparams]
 SET
-	[from] = @from
+	[from] = 2
 WHERE
 	[testparams].[from] = 1
 

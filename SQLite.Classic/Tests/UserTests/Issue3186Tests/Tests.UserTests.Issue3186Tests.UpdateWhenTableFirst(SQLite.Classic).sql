@@ -96,13 +96,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @is_deleted  -- Boolean
-SET     @is_deleted = 1
 
 UPDATE
 	[component_categories]
 SET
-	[is_deleted] = @is_deleted
+	[is_deleted] = 1
 FROM
 	[element_services] [sr],
 	[Components] [cm]

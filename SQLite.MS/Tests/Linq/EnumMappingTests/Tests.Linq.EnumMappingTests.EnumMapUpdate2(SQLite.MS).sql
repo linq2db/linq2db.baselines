@@ -24,13 +24,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @TestField  -- Int64
-SET     @TestField = 12
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[BigIntValue] = @TestField
+	[BigIntValue] = 12
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 

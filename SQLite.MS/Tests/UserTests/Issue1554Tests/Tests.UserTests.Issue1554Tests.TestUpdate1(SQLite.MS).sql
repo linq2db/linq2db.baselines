@@ -39,16 +39,12 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ClaimedKeyType NVarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	[Issue1554Table]
 SET
-	[ClaimedKeyType] = @ClaimedKeyType,
-	[ClaimedKeyTypeN] = @ClaimedKeyTypeN
+	[ClaimedKeyType] = 'EC',
+	[ClaimedKeyTypeN] = 'EC'
 WHERE
 	[Issue1554Table].[Id] = 0
 

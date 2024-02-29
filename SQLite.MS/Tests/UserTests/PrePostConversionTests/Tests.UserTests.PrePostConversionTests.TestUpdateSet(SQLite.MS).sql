@@ -39,16 +39,12 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @SomeValue1  -- Int32
-SET     @SomeValue1 = 8
-DECLARE @SomeValue2  -- Int32
-SET     @SomeValue2 = 4
 
 UPDATE
 	[ValuesTable]
 SET
-	[SomeValue1] = @SomeValue1,
-	[SomeValue2] = @SomeValue2
+	[SomeValue1] = 8,
+	[SomeValue2] = 4
 
 BeforeExecute
 -- SQLite.MS SQLite

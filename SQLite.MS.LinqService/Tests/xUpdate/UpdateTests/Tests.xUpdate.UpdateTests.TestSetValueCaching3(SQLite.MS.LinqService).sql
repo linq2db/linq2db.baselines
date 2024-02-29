@@ -59,15 +59,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value3  -- Int32
-SET     @Value3 = 7
 DECLARE @id  -- Int32
 SET     @id = 1
 
 UPDATE
 	[UpdateSetTest]
 SET
-	[Value3] = @Value3
+	[Value3] = 7
 WHERE
 	[UpdateSetTest].[Id] = @id
 
@@ -86,15 +84,13 @@ LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value3  -- Int32
-SET     @Value3 = 8
 DECLARE @id  -- Int32
 SET     @id = 1
 
 UPDATE
 	[UpdateSetTest]
 SET
-	[Value3] = @Value3
+	[Value3] = 8
 WHERE
 	[UpdateSetTest].[Id] = @id
 

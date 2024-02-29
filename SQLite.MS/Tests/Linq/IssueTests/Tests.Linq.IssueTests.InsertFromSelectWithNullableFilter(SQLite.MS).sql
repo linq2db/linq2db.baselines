@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int16
-SET     @ID = 123
-DECLARE @ID_1  -- Int16
-SET     @ID_1 = 0
+SET     @ID = 0
 
 INSERT INTO [AllTypes]
 (
@@ -11,7 +9,7 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	@ID,
+	123,
 	Cast([t1].[ID] as INTEGER)
 FROM
 	(
@@ -21,15 +19,13 @@ FROM
 			[AllTypes] [_]
 				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			Cast([_].[smallintDataType] as INTEGER) = @ID_1
+			Cast([_].[smallintDataType] as INTEGER) = @ID
 	) [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int16
-SET     @ID = 123
-DECLARE @ID_1  -- Int16
-SET     @ID_1 = 1234
+SET     @ID = 1234
 
 INSERT INTO [AllTypes]
 (
@@ -37,7 +33,7 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	@ID,
+	123,
 	Cast([t1].[ID] as INTEGER)
 FROM
 	(
@@ -47,6 +43,6 @@ FROM
 			[AllTypes] [_]
 				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			Cast([_].[smallintDataType] as INTEGER) = @ID_1
+			Cast([_].[smallintDataType] as INTEGER) = @ID
 	) [t1]
 

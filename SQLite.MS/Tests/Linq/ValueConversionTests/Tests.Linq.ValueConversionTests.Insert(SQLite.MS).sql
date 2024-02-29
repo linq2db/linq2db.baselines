@@ -24,8 +24,6 @@ CREATE TABLE IF NOT EXISTS [ValueConversion]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum NVarChar(6) -- String
@@ -48,7 +46,7 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	@Id,
+	1,
 	@Value1,
 	@Enum,
 	@Value2,
@@ -78,8 +76,6 @@ LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 2
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar -- String
@@ -102,7 +98,7 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	@Id,
+	2,
 	@Value1,
 	@Value2,
 	@Enum,

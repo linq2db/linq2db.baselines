@@ -8,10 +8,6 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -20,16 +16,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = '	'
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = '	'
 
 INSERT INTO [AllTypes]
 (
@@ -38,36 +30,28 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	'	',
+	'	'
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	'
+',
+	'
 '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = '
-'
-
-INSERT INTO [AllTypes]
-(
-	[ncharDataType],
-	[char20DataType]
-)
-VALUES
-(
-	@NChar,
-	@Char
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ''
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -76,16 +60,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	'',
+	''
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ''
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -94,16 +74,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	'',
+	''
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ''
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ''
 
 INSERT INTO [AllTypes]
 (
@@ -112,16 +88,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	'',
+	''
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -130,16 +102,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -148,16 +116,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -166,16 +130,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -184,16 +144,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -202,16 +158,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -220,16 +172,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -238,16 +186,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -256,16 +200,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -274,16 +214,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -292,16 +228,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -310,16 +242,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = ' '
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -328,16 +256,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	' ',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = '　'
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -346,16 +270,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	'　',
+	' '
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = char(0)
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = char(0)
 
 INSERT INTO [AllTypes]
 (
@@ -364,16 +284,12 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	char(0),
+	char(0)
 )
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NChar NChar -- StringFixedLength
-SET     @NChar = NULL
-DECLARE @Char NChar -- StringFixedLength
-SET     @Char = NULL
 
 INSERT INTO [AllTypes]
 (
@@ -382,8 +298,8 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	@NChar,
-	@Char
+	NULL,
+	NULL
 )
 
 BeforeExecute
