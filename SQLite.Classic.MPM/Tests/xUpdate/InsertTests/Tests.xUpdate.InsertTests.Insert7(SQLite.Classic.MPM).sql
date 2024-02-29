@@ -10,8 +10,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
 
 INSERT INTO [Child]
 (
@@ -21,7 +19,7 @@ INSERT INTO [Child]
 VALUES
 (
 	@id,
-	@ParentID
+	1
 )
 
 BeforeExecute

@@ -8,7 +8,6 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Issue4371Table]
 (
-	[ColumnDO]  VarChar     NULL,
 	[ColumnDT]  VarChar     NULL,
 	[ColumnDTO] VarChar     NULL,
 	[ColumnTS]  VarChar     NULL
@@ -16,8 +15,6 @@ CREATE TABLE IF NOT EXISTS [Issue4371Table]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ColumnDO VarChar -- AnsiString
-SET     @ColumnDO = NULL
 DECLARE @ColumnDT VarChar -- AnsiString
 SET     @ColumnDT = NULL
 DECLARE @ColumnDTO VarChar -- AnsiString
@@ -27,14 +24,12 @@ SET     @ColumnTS = '17:54:55.123'
 
 INSERT INTO [Issue4371Table]
 (
-	[ColumnDO],
 	[ColumnDT],
 	[ColumnDTO],
 	[ColumnTS]
 )
 VALUES
 (
-	@ColumnDO,
 	@ColumnDT,
 	@ColumnDTO,
 	@ColumnTS

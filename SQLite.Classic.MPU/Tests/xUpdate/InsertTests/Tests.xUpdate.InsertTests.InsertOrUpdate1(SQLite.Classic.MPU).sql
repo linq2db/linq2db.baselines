@@ -38,8 +38,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @Diagnosis NVarChar(3) -- String
-SET     @Diagnosis = 'abc'
 DECLARE @i  -- Int32
 SET     @i = 0
 
@@ -51,7 +49,7 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	@Diagnosis
+	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i) as NVarChar(255))
@@ -60,8 +58,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @Diagnosis NVarChar(3) -- String
-SET     @Diagnosis = 'abc'
 DECLARE @i  -- Int32
 SET     @i = 1
 
@@ -73,7 +69,7 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	@Diagnosis
+	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i) as NVarChar(255))
@@ -82,8 +78,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @Diagnosis NVarChar(3) -- String
-SET     @Diagnosis = 'abc'
 DECLARE @i  -- Int32
 SET     @i = 2
 
@@ -95,7 +89,7 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	@Diagnosis
+	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = Cast((Length([t1].[Diagnosis]) + @i) as NVarChar(255))

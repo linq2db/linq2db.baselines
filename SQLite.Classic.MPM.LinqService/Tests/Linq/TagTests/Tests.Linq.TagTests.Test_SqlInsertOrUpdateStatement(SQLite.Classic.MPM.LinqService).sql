@@ -16,12 +16,6 @@ CREATE TABLE IF NOT EXISTS [TestTable]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Fd  -- Int32
-SET     @Fd = 2
-DECLARE @Fd_1  -- Int32
-SET     @Fd_1 = 2
 
 /* My Test */
 INSERT INTO [TestTable] AS [t1]
@@ -31,11 +25,11 @@ INSERT INTO [TestTable] AS [t1]
 )
 VALUES
 (
-	@Id,
-	@Fd
+	1,
+	2
 )
 ON CONFLICT ([Id]) DO UPDATE SET
-	[Fd] = @Fd_1
+	[Fd] = 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

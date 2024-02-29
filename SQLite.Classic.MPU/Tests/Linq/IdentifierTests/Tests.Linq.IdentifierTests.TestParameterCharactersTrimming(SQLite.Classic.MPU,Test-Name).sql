@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS [testparams]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @TestName  -- Int32
-SET     @TestName = 2
 
 UPDATE
 	[testparams]
 SET
-	[Test-Name] = @TestName
+	[Test-Name] = 2
 WHERE
 	[testparams].[Test-Name] = 1
 

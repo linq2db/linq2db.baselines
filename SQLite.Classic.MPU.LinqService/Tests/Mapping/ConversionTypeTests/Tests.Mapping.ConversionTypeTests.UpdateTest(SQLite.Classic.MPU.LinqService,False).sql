@@ -84,27 +84,23 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Data NVarChar(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
 	[TrimTestTable]
 SET
-	[Data] = @Data
+	[Data] = '***OOO***'
 WHERE
 	([TrimTestTable].[Data] = '***XXX***')
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Data NVarChar(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p NVarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
 	[TrimTestTable]
 SET
-	[Data] = @Data
+	[Data] = '***SSS***'
 WHERE
 	[TrimTestTable].[Data] = @p
 

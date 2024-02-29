@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 10
 
 UPDATE
 	[Child]
 SET
-	[ChildID] = @ChildID
+	[ChildID] = 10
 FROM
 	[Parent] [x]
 		INNER JOIN [Child] [a_Children] ON [x].[ParentID] = [a_Children].[ParentID]

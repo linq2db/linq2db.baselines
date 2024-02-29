@@ -51,13 +51,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 1
 
 UPDATE
 	[Test3697Item]
 SET
-	[Value] = @Value
+	[Value] = 1
 FROM
 	[Test3697] [a]
 WHERE
@@ -67,13 +65,11 @@ RETURNING
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 1
 
 UPDATE
 	[Test3697Item]
 SET
-	[Value] = @Value
+	[Value] = 1
 FROM
 	[Test3697] [a]
 WHERE

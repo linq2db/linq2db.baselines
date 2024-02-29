@@ -109,15 +109,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Field NVarChar(4) -- String
-SET     @Field = 'test'
 DECLARE @id  -- Int32
 SET     @id = 3
 
 UPDATE
 	[MainTable]
 SET
-	[Field] = @Field
+	[Field] = 'test'
 FROM
 	[MainTable] [_]
 		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [_].[Id] = [a_AssociatedRequired].[Id]

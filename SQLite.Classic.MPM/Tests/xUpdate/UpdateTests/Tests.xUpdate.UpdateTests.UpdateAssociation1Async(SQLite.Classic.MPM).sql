@@ -28,13 +28,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @Value1  -- Int32
-SET     @Value1 = 5
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = @Value1
+	[Value1] = 5
 FROM
 	[Child] [child_1]
 WHERE

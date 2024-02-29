@@ -34,10 +34,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
-SET     @ID = 2
-DECLARE @Data NVarChar(9) -- String
-SET     @Data = '***HHH***'
 
 INSERT INTO [TrimTestTable]
 (
@@ -46,8 +42,8 @@ INSERT INTO [TrimTestTable]
 )
 VALUES
 (
-	@ID,
-	@Data
+	2,
+	'***HHH***'
 )
 
 BeforeExecute

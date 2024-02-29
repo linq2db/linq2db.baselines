@@ -17,12 +17,8 @@ CREATE TABLE IF NOT EXISTS [Issue1554Table]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO [Issue1554Table]
 (
@@ -32,9 +28,9 @@ INSERT INTO [Issue1554Table]
 )
 VALUES
 (
-	@Id,
+	0,
 	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	'EC'
 )
 
 BeforeExecute

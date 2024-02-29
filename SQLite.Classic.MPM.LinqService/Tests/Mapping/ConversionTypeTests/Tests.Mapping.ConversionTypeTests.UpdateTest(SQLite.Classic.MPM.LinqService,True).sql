@@ -74,7 +74,7 @@ UPDATE
 SET
 	[Data] = '***OOO***'
 WHERE
-	[TrimTestTable].[Data] = '***XXX***'
+	([TrimTestTable].[Data] = '***XXX***')
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

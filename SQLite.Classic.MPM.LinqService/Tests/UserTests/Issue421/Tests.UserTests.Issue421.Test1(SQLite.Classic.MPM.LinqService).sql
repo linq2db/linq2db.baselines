@@ -16,8 +16,6 @@ CREATE TABLE IF NOT EXISTS [BlobClass]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'010203'
 
@@ -28,7 +26,7 @@ INSERT INTO [BlobClass]
 )
 VALUES
 (
-	@Id,
+	1,
 	@BlobValue
 )
 

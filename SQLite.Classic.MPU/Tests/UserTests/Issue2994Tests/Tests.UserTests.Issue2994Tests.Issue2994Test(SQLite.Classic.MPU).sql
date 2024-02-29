@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @LastName NVarChar(1) -- String
-SET     @LastName = 'a'
 
 UPDATE
 	[Person]
 SET
-	[LastName] = @LastName
+	[LastName] = 'a'
 WHERE
 	EXISTS(
 		SELECT

@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1001
-DECLARE @Value1  -- Int32
-SET     @Value1 = NULL
 
 INSERT INTO [Parent]
 (
@@ -12,8 +8,8 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	1001,
+	NULL
 )
 
 BeforeExecute

@@ -38,8 +38,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @Diagnosis NVarChar(8) -- String
-SET     @Diagnosis = 'negative'
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -49,7 +47,7 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	@Diagnosis
+	'negative'
 )
 ON CONFLICT ([PersonID]) DO NOTHING
 
@@ -70,8 +68,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @Diagnosis NVarChar(8) -- String
-SET     @Diagnosis = 'positive'
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -81,7 +77,7 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	@Diagnosis
+	'positive'
 )
 ON CONFLICT ([PersonID]) DO NOTHING
 

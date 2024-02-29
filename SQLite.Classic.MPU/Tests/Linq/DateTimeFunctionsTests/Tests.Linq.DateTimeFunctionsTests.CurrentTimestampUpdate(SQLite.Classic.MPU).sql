@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue  -- Boolean
-SET     @BoolValue = 1
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[BoolValue] = @BoolValue,
+	[BoolValue] = 1,
 	[DateTimeValue] = CURRENT_TIMESTAMP
 WHERE
 	[LinqDataTypes].[ID] = 100000

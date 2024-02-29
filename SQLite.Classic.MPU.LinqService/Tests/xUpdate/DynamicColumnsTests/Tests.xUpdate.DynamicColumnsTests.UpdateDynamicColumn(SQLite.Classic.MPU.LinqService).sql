@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @FirstName NVarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName NVarChar(10) -- String
-SET     @LastName = 'Limonadovy'
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -15,9 +9,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	'John',
+	'Limonadovy',
+	'M'
 )
 
 BeforeExecute
@@ -32,13 +26,11 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @FirstName NVarChar(6) -- String
-SET     @FirstName = 'Johnny'
 
 UPDATE
 	[Person]
 SET
-	[FirstName] = @FirstName
+	[FirstName] = 'Johnny'
 WHERE
 	[Person].[LastName] = 'Limonadovy'
 

@@ -20,13 +20,11 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
-SET     @Value1 = 1011
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = @Value1
+	[Value1] = 1011
 WHERE
 	[Parent].[ParentID] = 1010
 
