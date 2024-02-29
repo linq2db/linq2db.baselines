@@ -222,10 +222,8 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Field1 Int32
 SET     @Field1 = 123
-DECLARE @name Varchar2(4) -- String
-SET     @name = 'test'
 DECLARE @idx Int32
-SET     @idx = 6
+SET     @idx = 10
 DECLARE @Field4 Int32
 SET     @Field4 = 999
 DECLARE @Field5 Int32
@@ -255,7 +253,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	:Field1,
-	Length(:name) + :idx,
+	:idx,
 	"Source"."source_Field2",
 	:Field4,
 	:Field5
