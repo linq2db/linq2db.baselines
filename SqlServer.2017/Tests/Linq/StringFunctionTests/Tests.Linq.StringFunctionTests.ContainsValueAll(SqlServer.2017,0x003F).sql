@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(N'?', N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
+	[p].[PersonID] = 1 AND @s LIKE N'%~?%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017
@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s NOT LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(N'?', N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
+	[p].[PersonID] = 1 AND @s NOT LIKE N'%~?%' ESCAPE N'~'
 
