@@ -220,10 +220,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @name Varchar2(4) -- String
-SET     @name = 'test'
 DECLARE @idx Int32
-SET     @idx = 6
+SET     @idx = 10
 
 MERGE INTO "TestMerge1" Target
 USING (
@@ -242,7 +240,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Field1" = Target."Field1" + "Source"."source_Field1",
-	"Field2" = Length(:name) + :idx,
+	"Field2" = :idx,
 	"Field3" = Target."Field3" + "Source"."source_Field3",
 	"Field4" = Target."Field4" + "Source"."source_Field4",
 	"Field5" = Target."Field5" + "Source"."source_Field5"
