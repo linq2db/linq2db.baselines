@@ -17,12 +17,10 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 15
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 15
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT TOP (@take)
@@ -55,11 +53,23 @@ FROM
 			) [t3]
 	) [e]
 		LEFT JOIN (
-			SELECT TOP (@take_1)
-				[t6].[ID],
-				[t6].[SmallIntValue]
+			SELECT TOP (@take)
+				[_1].[ID],
+				[_1].[SmallIntValue]
 			FROM
 				(
+					SELECT
+						[_].[ID],
+						[_].[MoneyValue],
+						[_].[DateTimeValue],
+						[_].[BoolValue],
+						[_].[GuidValue],
+						[_].[BinaryValue],
+						[_].[SmallIntValue],
+						[_].[StringValue]
+					FROM
+						[LinqDataTypes] [_]
+					UNION ALL
 					SELECT
 						[t4].[ID],
 						[t4].[MoneyValue],
@@ -71,21 +81,9 @@ FROM
 						[t4].[StringValue]
 					FROM
 						[LinqDataTypes] [t4]
-					UNION ALL
-					SELECT
-						[t5].[ID],
-						[t5].[MoneyValue],
-						[t5].[DateTimeValue],
-						[t5].[BoolValue],
-						[t5].[GuidValue],
-						[t5].[BinaryValue],
-						[t5].[SmallIntValue],
-						[t5].[StringValue]
-					FROM
-						[LinqDataTypes] [t5]
-				) [t6]
-		) [_] ON [_].[ID] = [e].[ID]
+				) [_1]
+		) [p] ON ([p].[ID] = [e].[ID])
 ORDER BY
-	[_].[ID],
-	[e].[ID]
+	[e].[ID],
+	[p].[ID]
 

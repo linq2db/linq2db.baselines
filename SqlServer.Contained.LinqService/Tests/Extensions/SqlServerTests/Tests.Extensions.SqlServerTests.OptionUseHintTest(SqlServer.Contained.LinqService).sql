@@ -12,6 +12,6 @@ FROM
 	[Child] [c_1]
 		INNER JOIN [Parent] [p] ON [c_1].[ParentID] = [p].[ParentID]
 WHERE
-	[p].[Value1] = @n AND [p].[ParentID] = @id
+	([p].[Value1] = @n) AND [p].[ParentID] = @id
 OPTION (USE HINT('ASSUME_JOIN_PREDICATE_DEPENDS_ON_FILTERS'))
 

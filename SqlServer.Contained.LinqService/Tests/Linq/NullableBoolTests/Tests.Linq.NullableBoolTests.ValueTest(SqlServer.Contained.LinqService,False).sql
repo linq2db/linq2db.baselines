@@ -64,7 +64,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] = @value
+	([t].[Value] = @value)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] = @value
+	([t].[Value] = @value)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -100,7 +100,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] <> @value
+	([t].[Value] <> @value)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

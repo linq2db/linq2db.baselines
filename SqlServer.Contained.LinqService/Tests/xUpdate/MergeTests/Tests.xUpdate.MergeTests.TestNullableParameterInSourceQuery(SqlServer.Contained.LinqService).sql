@@ -33,22 +33,24 @@ IF (OBJECT_ID(N'[TestNullableParameterSource]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT
-		2 as [source_field0],
-		[_].[Id]
+		2 as [source_Id1],
+		[_].[Id] as [source_Id2]
 	FROM
 		[TestNullableParameterSource] [_]
 	WHERE
-		[_].[Id] IS NULL
+		([_].[Id] = @id)
 ) [Source]
 (
-	[source_field0],
-	[Id]
+	[source_Id1],
+	[source_Id2]
 )
-ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])
+ON ([Target].[Id1] = [Source].[source_Id1] AND [Target].[Id2] = [Source].[source_Id2])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -58,8 +60,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_field0],
-	[Source].[Id]
+	[Source].[source_Id1],
+	[Source].[source_Id2]
 )
 ;
 
@@ -71,18 +73,18 @@ SET     @id = 1
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT
-		2 as [source_field0],
-		[_].[Id]
+		2 as [source_Id1],
+		[_].[Id] as [source_Id2]
 	FROM
 		[TestNullableParameterSource] [_]
 	WHERE
-		[_].[Id] = @id
+		([_].[Id] = @id)
 ) [Source]
 (
-	[source_field0],
-	[Id]
+	[source_Id1],
+	[source_Id2]
 )
-ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])
+ON ([Target].[Id1] = [Source].[source_Id1] AND [Target].[Id2] = [Source].[source_Id2])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -92,8 +94,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_field0],
-	[Source].[Id]
+	[Source].[source_Id1],
+	[Source].[source_Id2]
 )
 ;
 

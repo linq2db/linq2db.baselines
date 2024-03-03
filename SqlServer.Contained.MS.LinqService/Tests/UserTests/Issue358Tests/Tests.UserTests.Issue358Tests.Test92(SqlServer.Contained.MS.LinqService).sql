@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	IIF([_].[BoolValue] IN (1), 1, 0) = 1
+	[_].[BoolValue] IN (1)
 

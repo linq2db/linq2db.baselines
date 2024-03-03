@@ -6,5 +6,5 @@ SELECT
 FROM
 	[AllTypes] [_]
 WHERE
-	[_].[charDataType] = N'1'
+	([_].[charDataType] = N'1')
 

@@ -111,17 +111,19 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'test'
 DECLARE @id Int -- Int32
 SET     @id = 3
 
 UPDATE
 	[a_MainRequired]
 SET
-	[a_MainRequired].[Field] = N'test'
+	[a_MainRequired].[Field] = @Field
 FROM
 	[MainTable] [_]
 		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [_].[Id] = [a_AssociatedRequired].[Id]
-		INNER JOIN [MainTable] [a_MainRequired] ON [a_AssociatedRequired].[Id] = [a_MainRequired].[Id]
+		LEFT JOIN [MainTable] [a_MainRequired] ON ([a_AssociatedRequired].[Id] = [a_MainRequired].[Id])
 WHERE
 	[_].[Id] = @id
 

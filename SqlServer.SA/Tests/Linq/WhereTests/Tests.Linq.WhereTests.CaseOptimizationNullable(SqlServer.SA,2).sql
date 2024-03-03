@@ -37,7 +37,7 @@ SELECT
 FROM
 	[WhereWithString] [x]
 WHERE
-	[x].[Id] = @filterValue
+	([x].[Id] = @filterValue)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

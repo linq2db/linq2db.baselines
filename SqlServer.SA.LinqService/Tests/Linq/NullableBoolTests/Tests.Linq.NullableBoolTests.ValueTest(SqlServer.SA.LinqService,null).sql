@@ -72,7 +72,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -92,7 +92,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] IS NOT NULL
+	1 = 1
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

@@ -33,25 +33,32 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
+	[$it_1].[c1],
+	[$it_1].[Title],
 	(
 		SELECT
 			Count(*)
 		FROM
 			(
 				SELECT DISTINCT
-					[$it].[YearsExperience]
+					[$it_2].[YearsExperience] as [Value_1]
 				FROM
-					[odata_person] [$it]
+					[odata_person] [$it_2]
 				WHERE
-					[selectParam].[Title] = [$it].[Title]
+					[$it_1].[c1] = N'Title' AND [$it_1].[Title] = [$it_2].[Title]
 			) [t1]
 	)
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			N'Title' as [c1],
+			[$it].[Title]
+		FROM
+			[odata_person] [$it]
+	) [$it_1]
 GROUP BY
-	[selectParam].[Title]
+	[$it_1].[c1],
+	[$it_1].[Title]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

@@ -63,7 +63,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	@testedList = [t].[Value2]
+	(@testedList = [t].[Value2])
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

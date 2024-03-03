@@ -100,7 +100,7 @@ SELECT DISTINCT
 	[a_ActualStage].[Actual]
 FROM
 	[Issue1096Task] [t]
-		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON ([t].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = 1
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

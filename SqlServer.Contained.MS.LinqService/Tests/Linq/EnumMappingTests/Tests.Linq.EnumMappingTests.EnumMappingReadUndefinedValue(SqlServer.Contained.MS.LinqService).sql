@@ -32,7 +32,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101
+	([r].[ID] = 101)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

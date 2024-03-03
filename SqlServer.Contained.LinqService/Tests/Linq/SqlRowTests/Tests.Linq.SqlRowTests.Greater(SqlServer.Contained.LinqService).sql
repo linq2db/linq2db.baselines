@@ -99,7 +99,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	(2 > [i].[One] OR 2 = [i].[One] AND NULL > [i].[Two] OR 2 = [i].[One] AND [i].[Two] IS NULL AND 3 > [i].[Three])
+	(2 > [i].[One] OR 2 = [i].[One] AND NULL > [i].[Two] OR 2 = [i].[One] AND 1 = 0 AND 3 > [i].[Three])
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
