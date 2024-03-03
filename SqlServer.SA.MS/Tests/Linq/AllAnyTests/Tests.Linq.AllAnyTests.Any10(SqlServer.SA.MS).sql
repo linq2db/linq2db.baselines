@@ -15,6 +15,6 @@ WHERE
 		FROM
 			[GrandChild] [x]
 		WHERE
-			[p].[ParentID] = [x].[ParentID] AND [x].[ParentID] < 0
+			[x].[ParentID] < 0 AND [p].[ParentID] = [x].[ParentID]
 	)
 

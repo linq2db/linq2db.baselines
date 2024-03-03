@@ -4,13 +4,11 @@ DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

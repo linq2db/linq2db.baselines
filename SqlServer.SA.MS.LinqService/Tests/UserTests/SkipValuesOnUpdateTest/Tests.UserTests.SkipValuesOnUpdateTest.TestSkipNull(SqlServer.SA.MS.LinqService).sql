@@ -40,10 +40,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -62,21 +60,17 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[t1]
+	[PR_1598_Update_Null_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
-FROM
-	[PR_1598_Update_Null_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Null_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -93,20 +87,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[t1]
+	[PR_1598_Update_Null_Table]
 SET
-	[t1].[Name] = @Name
-FROM
-	[PR_1598_Update_Null_Table] [t1]
+	[Name] = @Name
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Null_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
