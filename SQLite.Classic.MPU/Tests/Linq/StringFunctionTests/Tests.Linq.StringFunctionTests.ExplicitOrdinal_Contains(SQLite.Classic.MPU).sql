@@ -44,7 +44,8 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE '%stSt%' ESCAPE '~' AND InStr([r].[CaseInsensitive], 'stSt') > 0
+	[r].[CaseInsensitive] LIKE '%stSt%' ESCAPE '~' AND
+	InStr([r].[CaseInsensitive], 'stSt') > 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -64,5 +65,6 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE '%stst%' ESCAPE '~' AND InStr([r].[CaseInsensitive], 'stst') > 0
+	[r].[CaseInsensitive] LIKE '%stst%' ESCAPE '~' AND
+	InStr([r].[CaseInsensitive], 'stst') > 0
 
