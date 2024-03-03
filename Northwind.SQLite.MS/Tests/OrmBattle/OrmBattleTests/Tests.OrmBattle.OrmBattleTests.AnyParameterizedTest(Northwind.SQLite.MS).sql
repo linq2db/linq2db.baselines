@@ -108,6 +108,6 @@ WHERE
 					('ABCDE'), ('ALFKI')
 				) [id]
 		WHERE
-			([c_1].[CustomerID] = [id].[item])
+			[c_1].[CustomerID] = [id].[item]
 	)
 

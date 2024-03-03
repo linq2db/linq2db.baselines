@@ -11,14 +11,14 @@ FROM
 		FROM
 			[Patient] [y]
 		WHERE
-			([y].[Diagnosis] = 'a')
+			[y].[Diagnosis] = 'a'
 		UNION ALL
 		SELECT
 			[pat].[PersonID]
 		FROM
 			[Patient] [pat]
 		WHERE
-			([pat].[Diagnosis] = 'b')
+			[pat].[Diagnosis] = 'b'
 	) [y_1]
 		INNER JOIN [Person] [person_1] ON [y_1].[PersonID] = [person_1].[PersonID]
 ORDER BY

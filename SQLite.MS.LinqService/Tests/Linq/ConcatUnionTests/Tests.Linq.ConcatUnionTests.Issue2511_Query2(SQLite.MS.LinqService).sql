@@ -24,7 +24,7 @@ FROM
 			[a_Patient].[Diagnosis]
 		FROM
 			[Person] [p]
-				LEFT JOIN [Patient] [a_Patient] ON ([p].[PersonID] = [a_Patient].[PersonID])
+				LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 		LIMIT @take
 	) [t1]
 UNION ALL
@@ -39,5 +39,5 @@ SELECT
 	[a_Patient_1].[Diagnosis]
 FROM
 	[Person] [t2]
-		LEFT JOIN [Patient] [a_Patient_1] ON ([t2].[PersonID] = [a_Patient_1].[PersonID])
+		LEFT JOIN [Patient] [a_Patient_1] ON [t2].[PersonID] = [a_Patient_1].[PersonID]
 

@@ -27,9 +27,9 @@ FROM
 			) [t1]
 				INNER JOIN [Child] [d] ON [t1].[ParentID] = [d].[ParentID]
 	) [m_1]
-		INNER JOIN [GrandChild] [d_1] ON ([m_1].[ParentID] = [d_1].[ParentID]) AND ([m_1].[ChildID] = [d_1].[ChildID])
+		INNER JOIN [GrandChild] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID] AND [m_1].[ChildID] = [d_1].[ChildID]
 		LEFT JOIN [Child] [a_Child] ON ([d_1].[ParentID] = [a_Child].[ParentID] OR [d_1].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([d_1].[ChildID] = [a_Child].[ChildID] OR [d_1].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
-		LEFT JOIN [Parent] [a_Parent] ON ([a_Child].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -57,7 +57,7 @@ SELECT
 		FROM
 			[GrandChild] [a_GrandChildren]
 		WHERE
-			([p].[ParentID] = [a_GrandChildren].[ParentID])
+			[p].[ParentID] = [a_GrandChildren].[ParentID]
 	),
 	[p].[ParentID],
 	[p].[Value1]

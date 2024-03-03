@@ -90,7 +90,7 @@ SELECT
 	[r].[OrderDate]
 FROM
 	[Orders] [r]
-		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [r].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
 	DateTime([r].[OrderDate]) > DateTime(@OrderDate)
 

@@ -118,6 +118,6 @@ WHERE
 		FROM
 			[Orders] [a_Orders]
 		WHERE
-			([c_1].[CustomerID] = [a_Orders].[CustomerID])
+			[c_1].[CustomerID] = [a_Orders].[CustomerID]
 	) > 0
 

@@ -23,5 +23,5 @@ FROM
 				)
 			GROUP BY
 				[g_1].[ParentID]
-		) [p2] ON ([p2].[ParentID] = [p1].[ParentID])
+		) [p2] ON [p2].[ParentID] = [p1].[ParentID]
 

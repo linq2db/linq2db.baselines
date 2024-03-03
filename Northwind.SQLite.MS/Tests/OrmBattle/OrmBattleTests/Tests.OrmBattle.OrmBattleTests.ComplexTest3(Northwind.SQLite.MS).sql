@@ -95,7 +95,7 @@ FROM
 			[Products] [p]
 				LEFT JOIN [Suppliers] [a_Supplier] ON ([p].[SupplierID] = [a_Supplier].[SupplierID] OR [p].[SupplierID] IS NULL AND [a_Supplier].[SupplierID] IS NULL)
 	) [m_1]
-		INNER JOIN [Suppliers] [d] ON ([d].[SupplierID] = [m_1].[SupplierID])
+		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute
 DisposeTransaction

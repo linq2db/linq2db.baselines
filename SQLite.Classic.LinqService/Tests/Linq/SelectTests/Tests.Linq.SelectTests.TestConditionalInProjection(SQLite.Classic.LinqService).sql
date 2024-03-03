@@ -93,7 +93,7 @@ SELECT
 	[t1].[Value_1]
 FROM
 	[MainEntityObject] [m_1]
-		LEFT JOIN [ChildEntityObject] [c_1] ON ([c_1].[Id] = [m_1].[Id])
+		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
 		LEFT JOIN (
 			SELECT
 				[sc].[Id],

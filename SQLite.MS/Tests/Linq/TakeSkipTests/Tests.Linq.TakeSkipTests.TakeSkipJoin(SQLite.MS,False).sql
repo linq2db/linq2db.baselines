@@ -82,7 +82,7 @@ FROM
 						[LinqDataTypes] [t4]
 				) [_1]
 			LIMIT 15
-		) [p] ON ([p].[ID] = [e].[ID])
+		) [p] ON [p].[ID] = [e].[ID]
 ORDER BY
 	[e].[ID],
 	[p].[ID]

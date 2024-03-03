@@ -110,7 +110,7 @@ FROM
 					[al_group].[CreationDate]
 				FROM
 					[Alert] [al_group]
-						LEFT JOIN [AuditAlert] [au] ON ([au].[AlertKey] = [al_group].[AlertKey]) AND [au].[AlertCode] = [au].[AlertCode]
+						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey] AND [au].[AlertCode] = [au].[AlertCode]
 				GROUP BY
 					[al_group].[AlertKey],
 					[al_group].[AlertCode],
@@ -122,14 +122,14 @@ FROM
 						Cast([trade_1].[DealId] as NVarChar(255)) as [c1]
 					FROM
 						[Trade] [trade_1]
-				) [trade_2] ON ([al_group_1].[AlertKey] = [trade_2].[c1])
+				) [trade_2] ON [al_group_1].[AlertKey] = [trade_2].[c1]
 				LEFT JOIN (
 					SELECT
 						[nomin_1].[DeliveryCounterParty],
 						Cast([nomin_1].[CargoId] as NVarChar(255)) as [c1]
 					FROM
 						[Nomin] [nomin_1]
-				) [nomin_2] ON ([al_group_1].[AlertKey] = [nomin_2].[c1])
+				) [nomin_2] ON [al_group_1].[AlertKey] = [nomin_2].[c1]
 		WHERE
 			([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [al_group_1].[AlertCode] LIKE @DeliveryCounterParty)
 		GROUP BY
@@ -160,7 +160,7 @@ FROM
 						Max([au_1].[TransactionDate]) as [Max_1]
 					FROM
 						[Alert] [al_group_2]
-							LEFT JOIN [AuditAlert] [au_1] ON ([au_1].[AlertKey] = [al_group_2].[AlertKey]) AND [au_1].[AlertCode] = [au_1].[AlertCode]
+							LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_2].[AlertKey] AND [au_1].[AlertCode] = [au_1].[AlertCode]
 					GROUP BY
 						[al_group_2].[AlertKey],
 						[al_group_2].[AlertCode],
@@ -174,7 +174,7 @@ FROM
 							Cast([trade_3].[DealId] as NVarChar(255)) as [c1]
 						FROM
 							[Trade] [trade_3]
-					) [trade_4] ON ([t1].[AlertKey] = [trade_4].[c1])
+					) [trade_4] ON [t1].[AlertKey] = [trade_4].[c1]
 					LEFT JOIN (
 						SELECT
 							[nomin_3].[DeliveryCounterParty],
@@ -183,10 +183,10 @@ FROM
 							Cast([nomin_3].[CargoId] as NVarChar(255)) as [c1]
 						FROM
 							[Nomin] [nomin_3]
-					) [nomin_4] ON ([t1].[AlertKey] = [nomin_4].[c1])
+					) [nomin_4] ON [t1].[AlertKey] = [nomin_4].[c1]
 			WHERE
 				([nomin_4].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_4].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty)
-		) [t2] ON ([al_group_3].[AlertKey] = [t2].[AlertKey]) AND ([al_group_3].[AlertCode] = [t2].[AlertCode]) AND DateTime([al_group_3].[CreationDate]) = DateTime([t2].[CreationDate]) AND [t2].[rn] <= 1
+		) [t2] ON [al_group_3].[AlertKey] = [t2].[AlertKey] AND [al_group_3].[AlertCode] = [t2].[AlertCode] AND DateTime([al_group_3].[CreationDate]) = DateTime([t2].[CreationDate]) AND [t2].[rn] <= 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

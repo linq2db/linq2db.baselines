@@ -49,7 +49,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NULL AND [i].[Nil] IS NULL AND NULL IS NULL
+	[i].[One] IS NULL AND [i].[Nil] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -59,7 +59,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[Nil] IS NULL AND NULL IS NULL
+	[i].[Nil] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

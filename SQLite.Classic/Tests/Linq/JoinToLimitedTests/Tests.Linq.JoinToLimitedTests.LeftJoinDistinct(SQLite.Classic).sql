@@ -14,5 +14,5 @@ FROM
 				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
-		) [c_2] ON ([o].[ParentID] = [c_2].[ParentID])
+		) [c_2] ON [o].[ParentID] = [c_2].[ParentID]
 

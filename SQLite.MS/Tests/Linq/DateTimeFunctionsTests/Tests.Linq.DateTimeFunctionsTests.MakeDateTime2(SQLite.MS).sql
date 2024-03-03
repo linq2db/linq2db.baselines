@@ -12,5 +12,5 @@ FROM
 			[LinqDataTypes] [t]
 	) [t_1]
 WHERE
-	([t_1].[Year_1] = 2010)
+	[t_1].[Year_1] = 2010
 

@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[PersonID] = @id)
+	[p].[PersonID] = @id
 

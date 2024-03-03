@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	([_].[PersonID] = @id)
+	[_].[PersonID] = @id
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	([_].[PersonID] = @id)
+	[_].[PersonID] = @id
 

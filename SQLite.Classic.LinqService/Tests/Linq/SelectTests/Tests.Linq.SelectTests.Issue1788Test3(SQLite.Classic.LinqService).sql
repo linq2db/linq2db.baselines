@@ -84,7 +84,7 @@ SELECT
 	[l].[Value1]
 FROM
 	[Table1788] [p]
-		LEFT JOIN [Table1788] [l] ON ([l].[Id] = [p].[Id] + 1)
+		LEFT JOIN [Table1788] [l] ON [l].[Id] = [p].[Id] + 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

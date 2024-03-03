@@ -97,10 +97,10 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	(CASE
-		WHEN (CharIndex('t', LeftStr([c_1].[City], 4), 2) = 0)
+	CASE
+		WHEN CharIndex('t', LeftStr([c_1].[City], 4), 2) = 0
 			THEN -1
 		ELSE 4 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))
-	END = 3)
+	END = 3
 LIMIT 1
 

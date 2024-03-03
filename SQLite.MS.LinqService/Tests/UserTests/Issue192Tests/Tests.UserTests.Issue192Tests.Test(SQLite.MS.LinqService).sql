@@ -87,7 +87,7 @@ SELECT
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	([_].[GuidValue] = @GuidValue)
+	[_].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -251,7 +251,7 @@ SELECT
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	([_].[GuidValue] = @GuidValue)
+	[_].[GuidValue] = @GuidValue
 LIMIT 1
 
 BeforeExecute
@@ -266,7 +266,7 @@ SELECT
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	([_].[GuidValue] = @GuidValue)
+	[_].[GuidValue] = @GuidValue
 LIMIT 1
 
 BeforeExecute

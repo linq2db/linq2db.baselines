@@ -48,14 +48,14 @@ FROM
 			CASE
 				WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
 					THEN '2'
-				WHEN ([x].[StringProp] = '2')
+				WHEN [x].[StringProp] = '2'
 					THEN [x].[StringProp]
 				ELSE [x].[StringProp] || '2'
 			END as [StringProp],
 			CASE
 				WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
 					THEN NULL
-				WHEN ([x].[StringProp] = '2')
+				WHEN [x].[StringProp] = '2'
 					THEN 1
 				ELSE 2
 			END as [IntProp],
@@ -71,7 +71,7 @@ FROM
 			[ConditionalData] [x]
 	) [x_1]
 WHERE
-	[x_1].[StringProp] LIKE '%2' ESCAPE '~' AND ([x_1].[IntProp] = 2)
+	[x_1].[StringProp] LIKE '%2' ESCAPE '~' AND [x_1].[IntProp] = 2
 
 BeforeExecute
 -- SQLite.Classic SQLite

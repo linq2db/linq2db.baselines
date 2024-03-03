@@ -7,6 +7,6 @@ SELECT
 FROM
 	[Person] [pp]
 WHERE
-	(RTRIM(('  ' || [pp].[FirstName] || ' '), ' n') = '  Joh') AND
+	RTRIM(('  ' || [pp].[FirstName] || ' '), ' n') = '  Joh' AND
 	[pp].[PersonID] = 1
 

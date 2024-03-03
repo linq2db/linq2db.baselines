@@ -100,5 +100,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	([o].[ShipCity] = 'Seattle')
+	[o].[ShipCity] = 'Seattle'
 

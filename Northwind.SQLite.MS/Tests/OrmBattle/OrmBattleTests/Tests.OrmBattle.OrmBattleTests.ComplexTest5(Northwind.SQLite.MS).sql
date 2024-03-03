@@ -102,7 +102,7 @@ SELECT
 	[d].[ShipCountry]
 FROM
 	[Customers] [m_1]
-		INNER JOIN [Orders] [d] ON ([m_1].[CustomerID] = [d].[CustomerID])
+		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
 
 BeforeExecute
 DisposeTransaction

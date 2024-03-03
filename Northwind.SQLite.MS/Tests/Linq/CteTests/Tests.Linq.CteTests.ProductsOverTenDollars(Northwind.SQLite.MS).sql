@@ -25,7 +25,7 @@ AS
 			FROM
 				[Products] [p_1]
 			WHERE
-				([p_1].[CategoryID] = [c_1].[CategoryID])
+				[p_1].[CategoryID] = [c_1].[CategoryID]
 		)
 	FROM
 		[Categories] [c_1]
@@ -37,7 +37,7 @@ SELECT
 	[p_2].[UnitPrice]
 FROM
 	[ProductsOverTenDollars] [p_2]
-		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON ([c_2].[CategoryID] = [p_2].[CategoryID])
+		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON [c_2].[CategoryID] = [p_2].[CategoryID]
 ORDER BY
 	[p_2].[ProductName]
 
@@ -52,13 +52,13 @@ SELECT
 		FROM
 			[Products] [p_1]
 		WHERE
-			([p_1].[CategoryID] = [c_1].[CategoryID])
+			[p_1].[CategoryID] = [c_1].[CategoryID]
 	),
 	[p].[ProductName],
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
-		INNER JOIN [Categories] [c_1] ON ([c_1].[CategoryID] = [p].[CategoryID])
+		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
 WHERE
 	[p].[UnitPrice] > 10
 ORDER BY

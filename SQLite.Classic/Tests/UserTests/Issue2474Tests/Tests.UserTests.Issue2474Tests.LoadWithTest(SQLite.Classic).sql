@@ -71,7 +71,7 @@ SELECT
 	[a_Status].[NR]
 FROM
 	[DETAIL] [n]
-		LEFT JOIN [STATUS_DATA] [a_Status] ON ([a_Status].[STATUS_TYPE_ID] = [n].[TYP_STATUS]) AND ([a_Status].[NR] = [n].[NR])
+		LEFT JOIN [STATUS_DATA] [a_Status] ON [a_Status].[STATUS_TYPE_ID] = [n].[TYP_STATUS] AND [a_Status].[NR] = [n].[NR]
 WHERE
 	[n].[TYP_STATUS] = 2
 

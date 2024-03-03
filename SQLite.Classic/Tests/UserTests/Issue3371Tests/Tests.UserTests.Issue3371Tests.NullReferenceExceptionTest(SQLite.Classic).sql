@@ -63,7 +63,7 @@ FROM
 	[Employees] [item_1]
 		LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
 WHERE
-	([a_PayRate].[Name] = 'test')
+	[a_PayRate].[Name] = 'test'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -88,7 +88,7 @@ FROM
 				LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
 	) [item_2]
 WHERE
-	([item_2].[Name] = 'test')
+	[item_2].[Name] = 'test'
 
 BeforeExecute
 -- SQLite.Classic SQLite

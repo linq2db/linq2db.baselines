@@ -7,5 +7,5 @@ SELECT
 	[ch].[ChildID]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [ch] ON ([p].[ParentID] = [ch].[ParentID])
+		LEFT JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
 

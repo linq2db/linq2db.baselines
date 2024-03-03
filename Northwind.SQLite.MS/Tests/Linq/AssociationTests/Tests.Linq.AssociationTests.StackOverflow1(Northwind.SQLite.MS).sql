@@ -29,7 +29,7 @@ WHERE
 		FROM
 			[Employees] [a_Employees]
 		WHERE
-			([employee].[EmployeeID] = [a_Employees].[ReportsTo])
+			[employee].[EmployeeID] = [a_Employees].[ReportsTo]
 	) > 0
 LIMIT 1
 

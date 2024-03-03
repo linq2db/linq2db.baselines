@@ -9,5 +9,5 @@ FROM
 GROUP BY
 	[a_Category].[CategoryID]
 HAVING
-	(Count(*) = 12)
+	Count(*) = 12
 

@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 2
 
 BeforeExecute

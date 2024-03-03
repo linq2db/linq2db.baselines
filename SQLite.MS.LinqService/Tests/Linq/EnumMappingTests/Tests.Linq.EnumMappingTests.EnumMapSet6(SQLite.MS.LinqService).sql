@@ -32,7 +32,7 @@ UPDATE
 SET
 	[IntValue] = @Int32Field
 WHERE
-	([LinqDataTypes].[ID] = 101) AND ([LinqDataTypes].[IntValue] = 3)
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 BeforeExecute
 -- SQLite.MS SQLite

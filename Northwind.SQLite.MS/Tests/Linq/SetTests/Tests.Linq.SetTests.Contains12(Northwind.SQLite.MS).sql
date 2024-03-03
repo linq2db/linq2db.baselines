@@ -11,7 +11,7 @@ FROM
 			[a_Employee].[EmployeeID]
 		FROM
 			[EmployeeTerritories] [g_1]
-				LEFT JOIN [Employees] [a_Employee] ON ([g_1].[EmployeeID] = [a_Employee].[EmployeeID])
+				LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]
 		GROUP BY
 			[a_Employee].[EmployeeID],
 			[a_Employee].[LastName]

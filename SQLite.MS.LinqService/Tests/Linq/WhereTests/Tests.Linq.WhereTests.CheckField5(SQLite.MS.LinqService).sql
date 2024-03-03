@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] + 1 = 2) AND [p].[ParentID] = 1
+	[p].[Value1] + 1 = 2 AND [p].[ParentID] = 1
 

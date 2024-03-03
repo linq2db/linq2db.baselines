@@ -13,36 +13,36 @@ SELECT
 			FROM
 				[Person] [_]
 			WHERE
-				((
+				(
 					SELECT
 						Count(*)
 					FROM
 						[Patient] [_1]
 					WHERE
-						([_1].[PersonID] = @personId) AND [_1].[PersonID] NOT IN (
+						[_1].[PersonID] = @personId AND [_1].[PersonID] NOT IN (
 							SELECT
 								[_2].[PersonID]
 							FROM
 								[Patient] [_2]
 							WHERE
-								([_2].[PersonID] = @personId_1)
+								[_2].[PersonID] = @personId_1
 						)
-				) = 0) AND
-				((
+				) = 0 AND
+				(
 					SELECT
 						Count(*)
 					FROM
 						[Patient] [_3]
 					WHERE
-						([_3].[PersonID] = @personId_1) AND [_3].[PersonID] NOT IN (
+						[_3].[PersonID] = @personId_1 AND [_3].[PersonID] NOT IN (
 							SELECT
 								[_4].[PersonID]
 							FROM
 								[Patient] [_4]
 							WHERE
-								([_4].[PersonID] = @personId)
+								[_4].[PersonID] = @personId
 						)
-				) = 0)
+				) = 0
 		)
 			THEN 1
 		ELSE 0

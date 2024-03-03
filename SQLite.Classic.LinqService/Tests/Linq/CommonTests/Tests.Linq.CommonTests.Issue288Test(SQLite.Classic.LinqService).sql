@@ -19,6 +19,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] = @ID)
+	[p].[FirstName] = @ID
 LIMIT 1
 

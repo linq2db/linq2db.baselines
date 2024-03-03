@@ -13,13 +13,13 @@ WHERE
 		FROM
 			[Parent] [a_Children]
 		WHERE
-			([p].[ParentID] = [a_Children].[Value1])
+			[p].[ParentID] = [a_Children].[Value1]
 	) <> 0 OR (
 		SELECT
 			Count(*)
 		FROM
 			[Parent] [a_Children]
 		WHERE
-			([p].[ParentID] = [a_Children].[Value1])
+			[p].[ParentID] = [a_Children].[Value1]
 	) IS NULL)
 

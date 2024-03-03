@@ -102,7 +102,7 @@ WHERE
 			Count(*)
 		FROM
 			[Orders] [t1]
-				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID])
+				INNER JOIN [Customers] [a_Customer] ON [t1].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
 			[a_Customer].[CustomerID] = [c_1].[CustomerID]
 	) > 5
@@ -116,9 +116,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -129,9 +129,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -142,9 +142,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -155,9 +155,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -168,9 +168,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -181,9 +181,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -194,9 +194,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -207,9 +207,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -220,9 +220,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -233,9 +233,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -246,9 +246,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -259,9 +259,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -272,9 +272,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -285,9 +285,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -298,9 +298,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -311,9 +311,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -324,9 +324,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -337,9 +337,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -350,9 +350,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -363,9 +363,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -376,9 +376,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -389,9 +389,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -402,9 +402,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -415,9 +415,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -428,9 +428,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -441,9 +441,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -454,9 +454,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -467,9 +467,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -480,9 +480,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -493,9 +493,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -506,9 +506,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -519,9 +519,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -532,9 +532,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -545,9 +545,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -558,9 +558,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -571,9 +571,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -584,9 +584,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -597,9 +597,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -610,9 +610,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -623,9 +623,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -636,9 +636,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -649,9 +649,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -662,9 +662,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -675,9 +675,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -688,9 +688,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -701,9 +701,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -714,9 +714,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -727,9 +727,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -740,9 +740,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -753,9 +753,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -766,9 +766,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -779,9 +779,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -792,9 +792,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -805,9 +805,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -818,9 +818,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -831,9 +831,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -844,9 +844,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -857,9 +857,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -870,9 +870,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -883,9 +883,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -896,9 +896,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -909,9 +909,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -922,9 +922,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -935,9 +935,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -948,9 +948,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -961,9 +961,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -974,9 +974,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -987,9 +987,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1000,9 +1000,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1013,9 +1013,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1026,9 +1026,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1039,9 +1039,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1052,9 +1052,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1065,9 +1065,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1078,9 +1078,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1091,9 +1091,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1104,9 +1104,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1117,9 +1117,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1130,9 +1130,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1143,9 +1143,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1156,9 +1156,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1169,9 +1169,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1182,9 +1182,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1195,9 +1195,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1208,9 +1208,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1221,9 +1221,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1234,9 +1234,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1247,9 +1247,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1260,9 +1260,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1273,9 +1273,9 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -1286,7 +1286,7 @@ SELECT
 	Count(*)
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	([a_Customer].[CustomerID] = @CustomerID)
+	[a_Customer].[CustomerID] = @CustomerID
 

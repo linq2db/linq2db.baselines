@@ -96,5 +96,5 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[UnitsInStock] < [p].[ReorderLevel] AND ([p].[UnitsOnOrder] = 0)
+	[p].[UnitsInStock] < [p].[ReorderLevel] AND [p].[UnitsOnOrder] = 0
 

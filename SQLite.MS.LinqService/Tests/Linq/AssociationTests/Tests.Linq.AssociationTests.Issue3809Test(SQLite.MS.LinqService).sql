@@ -11,7 +11,7 @@ FROM
 			[a_ParentTest].[ParentID]
 		FROM
 			[Parent] [a]
-				LEFT JOIN [Parent] [a_ParentTest] ON ([a].[ParentID] = [a_ParentTest].[ParentID]) AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
+				LEFT JOIN [Parent] [a_ParentTest] ON [a].[ParentID] = [a_ParentTest].[ParentID] AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
 		WHERE
 			([a_ParentTest].[ParentID] IS NULL OR EXISTS(
 				SELECT
@@ -23,7 +23,7 @@ FROM
 					[a_ParentTest].[ParentID] = [a_1].[ParentID]
 			))
 	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] IS NOT NULL AND ([m_1].[ParentID] = [d].[ParentID])
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] IS NOT NULL AND [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
 	[d].[ChildID]
 
@@ -35,7 +35,7 @@ SELECT
 	[a_ParentTest].[ParentID]
 FROM
 	[Parent] [a]
-		LEFT JOIN [Parent] [a_ParentTest] ON ([a].[ParentID] = [a_ParentTest].[ParentID]) AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
+		LEFT JOIN [Parent] [a_ParentTest] ON [a].[ParentID] = [a_ParentTest].[ParentID] AND ([a].[Value1] = [a_ParentTest].[Value1] OR [a].[Value1] IS NULL AND [a_ParentTest].[Value1] IS NULL)
 WHERE
 	([a_ParentTest].[ParentID] IS NULL OR EXISTS(
 		SELECT

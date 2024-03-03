@@ -97,10 +97,10 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	('123' || CASE
+	'123' || CASE
 		WHEN Length([c_1].[City]) > 8
 			THEN [c_1].[City]
 		ELSE Replicate(' ', 8 - Length([c_1].[City])) || [c_1].[City]
-	END = '123 Seattle')
+	END = '123 Seattle'
 LIMIT 1
 

@@ -341,7 +341,7 @@ FROM
 			GROUP BY
 				[b].[SecurityClass],
 				[b].[InvestorId]
-		) [t1] ON ([ip].[InvestorId] = [t1].[InvestorId]) AND [g_1].[SecurityClass] = [t1].[SecurityClass]
+		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [g_1].[SecurityClass] = [t1].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
 	[t1].[Units]

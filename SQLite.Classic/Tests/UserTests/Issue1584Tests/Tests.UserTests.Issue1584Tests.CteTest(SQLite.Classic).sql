@@ -218,18 +218,18 @@ AS
 			ELSE 0
 		END),
 		Sum(CASE
-			WHEN ([rateLineItem_1].[TM_Type] = 'MIN')
+			WHEN [rateLineItem_1].[TM_Type] = 'MIN'
 				THEN [rateLineItem_1].[TM_Value]
 			ELSE 0
 		END),
 		Sum(CASE
-			WHEN ([rateLineItem_1].[TM_Type] = 'UNT')
+			WHEN [rateLineItem_1].[TM_Type] = 'UNT'
 				THEN [rateLineItem_1].[TM_Value]
 			ELSE 0
 		END)
 	FROM
 		[RateEntry] [s]
-			LEFT JOIN [RateLines] [rateLine] ON ([rateLine].[TL_TI] = [s].[TI_PK])
+			LEFT JOIN [RateLines] [rateLine] ON [rateLine].[TL_TI] = [s].[TI_PK]
 			LEFT JOIN [RateLineItem] [rateLineItem_1] ON ([rateLineItem_1].[TM_TL] = [rateLine].[TL_PK] OR [rateLineItem_1].[TM_TL] IS NULL AND [rateLine].[TL_PK] IS NULL)
 	WHERE
 		([s].[TI_RateEndDate] IS NULL OR DateTime([s].[TI_RateEndDate]) > DateTime(CURRENT_TIMESTAMP)) AND

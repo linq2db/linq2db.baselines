@@ -97,7 +97,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	([x].[Name] = 'Special')
+	[x].[Name] = 'Special'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -155,7 +155,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	([x].[Name] = 'Special')
+	[x].[Name] = 'Special'
 
 BeforeExecute
 -- SQLite.Classic SQLite

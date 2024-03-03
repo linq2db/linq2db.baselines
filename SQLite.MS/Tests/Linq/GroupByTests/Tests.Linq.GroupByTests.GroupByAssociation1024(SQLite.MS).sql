@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			Count(CASE
-				WHEN ([g_1].[ChildID] >= 20)
+				WHEN [g_1].[ChildID] >= 20
 					THEN 1
 				ELSE NULL
 			END) as [Count_1],
@@ -29,7 +29,7 @@ WHERE
 			[GrandChild] [ch]
 				INNER JOIN [Parent] [a_Parent_1] ON [ch].[ParentID] = [a_Parent_1].[ParentID]
 		WHERE
-			([ch].[ChildID] >= 19) AND [g_2].[ParentID] = [a_Parent_1].[ParentID]
+			[ch].[ChildID] >= 19 AND [g_2].[ParentID] = [a_Parent_1].[ParentID]
 	) > 0 AND
 	(
 		SELECT
@@ -38,7 +38,7 @@ WHERE
 			[GrandChild] [ch_1]
 				INNER JOIN [Parent] [a_Parent_2] ON [ch_1].[ParentID] = [a_Parent_2].[ParentID]
 		WHERE
-			([ch_1].[ChildID] >= 19) AND [g_2].[ParentID] = [a_Parent_2].[ParentID]
+			[ch_1].[ChildID] >= 19 AND [g_2].[ParentID] = [a_Parent_2].[ParentID]
 	) > 0 AND
 	(
 		SELECT
@@ -47,6 +47,6 @@ WHERE
 			[GrandChild] [ch_2]
 				INNER JOIN [Parent] [a_Parent_3] ON [ch_2].[ParentID] = [a_Parent_3].[ParentID]
 		WHERE
-			([ch_2].[ChildID] >= 18) AND [g_2].[ParentID] = [a_Parent_3].[ParentID]
+			[ch_2].[ChildID] >= 18 AND [g_2].[ParentID] = [a_Parent_3].[ParentID]
 	) > 0
 

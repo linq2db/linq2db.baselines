@@ -99,7 +99,7 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
 	[a_Customer].[CustomerID] IN ('ALFKI', 'ANATR', 'AROUT', 'BERGS')
 

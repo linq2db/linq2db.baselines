@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	([t].[BoolValue] = @param2)
+	[t].[BoolValue] = @param2
 

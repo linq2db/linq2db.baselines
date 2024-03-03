@@ -22,7 +22,7 @@ FROM
 				FROM
 					[Orders] [x]
 				WHERE
-					([x].[ShipVia] = 1)
+					[x].[ShipVia] = 1
 			) [x_1]
 		UNION
 		SELECT
@@ -39,7 +39,7 @@ FROM
 				FROM
 					[Orders] [x_2]
 				WHERE
-					([x_2].[ShipVia] = 2)
+					[x_2].[ShipVia] = 2
 			) [t1]
 		UNION
 		SELECT
@@ -56,7 +56,7 @@ FROM
 				FROM
 					[Orders] [x_3]
 				WHERE
-					([x_3].[ShipVia] = 3)
+					[x_3].[ShipVia] = 3
 			) [t2]
 	) [t3]
 GROUP BY
@@ -73,7 +73,7 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	([x].[ShipCountry] = @ShipCountry) AND ([x].[ShipVia] = 1)
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	([x].[ShipCountry] = @ShipCountry) AND ([x].[ShipVia] = 2)
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 2
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -97,5 +97,5 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	([x].[ShipCountry] = @ShipCountry) AND ([x].[ShipVia] = 3)
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 3
 

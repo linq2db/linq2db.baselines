@@ -184,7 +184,7 @@ WHERE
 			[Table4] [id]
 		WHERE
 			[id].[ID] = [r].[ID] AND [a_Table3].[ID] IS NOT NULL AND
-			([a_Table3].[ID] = [id].[ID3])
+			[a_Table3].[ID] = [id].[ID3]
 	)
 
 BeforeExecute

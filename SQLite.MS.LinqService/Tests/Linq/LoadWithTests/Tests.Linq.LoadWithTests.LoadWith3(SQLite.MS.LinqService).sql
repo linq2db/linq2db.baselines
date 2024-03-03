@@ -24,7 +24,7 @@ SELECT
 		FROM
 			[GrandChild] [a_GrandChildren]
 		WHERE
-			([p].[ParentID] = [a_GrandChildren].[ParentID])
+			[p].[ParentID] = [a_GrandChildren].[ParentID]
 	),
 	[p].[ParentID],
 	[p].[Value1]

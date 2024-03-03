@@ -19,9 +19,9 @@ FROM
 			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [a_Association] ON ([_].[smallintDataType] = [a_Association].[intDataType])
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			(Cast([_].[smallintDataType] as INTEGER) = @ID_1)
+			Cast([_].[smallintDataType] as INTEGER) = @ID_1
 	) [t1]
 
 BeforeExecute
@@ -45,8 +45,8 @@ FROM
 			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [a_Association] ON ([_].[smallintDataType] = [a_Association].[intDataType])
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			(Cast([_].[smallintDataType] as INTEGER) = @ID_1)
+			Cast([_].[smallintDataType] as INTEGER) = @ID_1
 	) [t1]
 

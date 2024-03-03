@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN ([i].[item] = 0) THEN NULL
+				WHEN [i].[item] = 0 THEN NULL
 				ELSE [p].[ParentID]
 			END as [ID],
 			[p].[Value1] as [Value_1],

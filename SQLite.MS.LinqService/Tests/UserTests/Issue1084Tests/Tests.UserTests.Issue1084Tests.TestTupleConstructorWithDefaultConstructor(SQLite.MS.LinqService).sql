@@ -36,7 +36,7 @@ SELECT
 	[g_1].[StatusBitmask] & 128
 FROM
 	[i1084_person] [t1]
-		LEFT JOIN [i1084_student] [g_1] ON ([t1].[Id] = [g_1].[Id]) AND (Cast([t1].[Number] as NVarChar(255)) = [g_1].[Number])
+		LEFT JOIN [i1084_student] [g_1] ON [t1].[Id] = [g_1].[Id] AND Cast([t1].[Number] as NVarChar(255)) = [g_1].[Number]
 
 BeforeExecute
 -- SQLite.MS SQLite

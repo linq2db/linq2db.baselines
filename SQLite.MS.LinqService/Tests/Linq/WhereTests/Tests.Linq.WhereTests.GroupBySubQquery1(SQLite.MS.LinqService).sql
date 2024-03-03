@@ -15,6 +15,6 @@ WHERE
 		GROUP BY
 			[y].[ParentID]
 		HAVING
-			(Max([y].[ChildID]) = [x].[ChildID])
+			Max([y].[ChildID]) = [x].[ChildID]
 	)
 

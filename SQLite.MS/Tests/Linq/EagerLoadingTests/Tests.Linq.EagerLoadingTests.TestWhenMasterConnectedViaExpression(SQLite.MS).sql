@@ -148,7 +148,7 @@ FROM
 		FROM
 			[MasterManyId] [g_1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON ([d].[MasterId] = [m_1].[Id1])
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 
 BeforeExecute
 -- SQLite.MS SQLite

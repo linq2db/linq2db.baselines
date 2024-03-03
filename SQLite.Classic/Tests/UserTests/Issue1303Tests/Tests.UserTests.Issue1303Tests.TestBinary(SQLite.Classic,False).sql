@@ -60,7 +60,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	([_].[Array] = @Array)
+	[_].[Array] = @Array
 LIMIT 2
 
 BeforeExecute
@@ -75,7 +75,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	([_].[Binary] = @Binary)
+	[_].[Binary] = @Binary
 LIMIT 2
 
 BeforeExecute

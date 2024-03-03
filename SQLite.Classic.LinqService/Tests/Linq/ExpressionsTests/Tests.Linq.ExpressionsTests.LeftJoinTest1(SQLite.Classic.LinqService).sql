@@ -8,5 +8,5 @@ SELECT
 	[i].[Value1]
 FROM
 	[Child] [t]
-		LEFT JOIN [Parent] [i] ON ([t].[ParentID] = [i].[ParentID])
+		LEFT JOIN [Parent] [i] ON [t].[ParentID] = [i].[ParentID]
 

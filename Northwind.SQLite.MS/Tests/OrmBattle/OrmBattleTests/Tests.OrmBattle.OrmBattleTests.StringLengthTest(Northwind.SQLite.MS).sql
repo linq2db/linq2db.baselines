@@ -113,6 +113,6 @@ FROM
 			[Customers] [c_1]
 	) [t1]
 WHERE
-	([t1].[Length_1] = 7)
+	[t1].[Length_1] = 7
 LIMIT 1
 

@@ -97,6 +97,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	(LeftStr([c_1].[City], 3) = 'Sea')
+	LeftStr([c_1].[City], 3) = 'Sea'
 LIMIT 1
 

@@ -11,7 +11,7 @@ GROUP BY
 	[a_Parent].[Value1]
 HAVING
 	Count(CASE
-		WHEN ([g_1].[ChildID] >= 20)
+		WHEN [g_1].[ChildID] >= 20
 			THEN 1
 		ELSE NULL
 	END) > 2

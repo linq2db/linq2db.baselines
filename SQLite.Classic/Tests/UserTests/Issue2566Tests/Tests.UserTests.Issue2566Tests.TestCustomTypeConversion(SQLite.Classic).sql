@@ -37,7 +37,7 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	([m_1].[Value] = @Value)
+	[m_1].[Value] = @Value
 
 BeforeExecute
 -- SQLite.Classic SQLite

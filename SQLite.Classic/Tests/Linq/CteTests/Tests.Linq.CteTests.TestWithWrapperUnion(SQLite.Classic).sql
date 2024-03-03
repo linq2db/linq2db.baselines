@@ -17,7 +17,7 @@ AS
 		[a_Parent].[Value1]
 	FROM
 		[Child] [child_1]
-			LEFT JOIN [Parent] [a_Parent] ON ([child_1].[ParentID] = [a_Parent].[ParentID])
+			LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
 )
 SELECT
 	[a_Parent_1].[ParentID],
@@ -27,7 +27,7 @@ SELECT
 	[child_2].[ChildID]
 FROM
 	[Child] [child_2]
-		LEFT JOIN [Parent] [a_Parent_1] ON ([child_2].[ParentID] = [a_Parent_1].[ParentID])
+		LEFT JOIN [Parent] [a_Parent_1] ON [child_2].[ParentID] = [a_Parent_1].[ParentID]
 UNION
 SELECT
 	[t1].[Parent_ParentID],
@@ -57,7 +57,7 @@ AS
 		[a_Parent].[Value1]
 	FROM
 		[Child] [child_1]
-			LEFT JOIN [Parent] [a_Parent] ON ([child_1].[ParentID] = [a_Parent].[ParentID])
+			LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
 )
 SELECT
 	[t1].[Child_ParentID],
@@ -76,5 +76,5 @@ SELECT
 	[a_Parent_1].[Value1]
 FROM
 	[Child] [child_2]
-		LEFT JOIN [Parent] [a_Parent_1] ON ([child_2].[ParentID] = [a_Parent_1].[ParentID])
+		LEFT JOIN [Parent] [a_Parent_1] ON [child_2].[ParentID] = [a_Parent_1].[ParentID]
 

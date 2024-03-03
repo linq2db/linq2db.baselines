@@ -26,7 +26,7 @@ SELECT
 FROM
 	[GrandChild] [a_GrandChildren]
 WHERE
-	(0 = [a_GrandChildren].[ParentID])
+	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 DisposeTransaction
@@ -66,7 +66,7 @@ SELECT
 FROM
 	[GrandChild] [a_GrandChildren]
 WHERE
-	(0 = [a_GrandChildren].[ParentID])
+	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 DisposeTransaction

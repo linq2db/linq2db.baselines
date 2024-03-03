@@ -18,7 +18,7 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID])
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID] OR [o].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
 WHERE
 	(NOT EXISTS(
@@ -35,7 +35,6 @@ WHERE
 		FROM
 			[Employees] [e]
 		WHERE
-			([e].[EmployeeID] = [a_Employee].[EmployeeID]) AND
-			[e].[FirstName] NOT LIKE '%t' ESCAPE '~'
+			[e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[FirstName] NOT LIKE '%t' ESCAPE '~'
 	))
 

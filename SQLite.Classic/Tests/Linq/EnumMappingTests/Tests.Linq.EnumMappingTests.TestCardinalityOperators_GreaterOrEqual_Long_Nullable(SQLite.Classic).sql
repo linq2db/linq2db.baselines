@@ -49,7 +49,7 @@ SELECT
 FROM
 	[EnumCardinality] [_]
 WHERE
-	([_].[Property6] >= 'C')
+	[_].[Property6] >= 'C'
 LIMIT 2
 
 BeforeExecute

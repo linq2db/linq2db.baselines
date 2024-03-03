@@ -112,7 +112,7 @@ FROM
 				CROSS JOIN [Products] [d]
 	) [m_1]
 		INNER JOIN ([Products] [d_1]
-			LEFT JOIN [Suppliers] [a_Supplier] ON ([d_1].[SupplierID] = [a_Supplier].[SupplierID]))
+			LEFT JOIN [Suppliers] [a_Supplier] ON [d_1].[SupplierID] = [a_Supplier].[SupplierID])
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute

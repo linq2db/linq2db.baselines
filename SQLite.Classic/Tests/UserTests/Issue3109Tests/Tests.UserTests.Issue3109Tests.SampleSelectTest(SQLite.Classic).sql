@@ -91,8 +91,8 @@ SELECT
 	[a_Right].[RightData]
 FROM
 	[LeftRight] [t1]
-		LEFT JOIN [Left] [a_Left] ON ([t1].[LeftId] = [a_Left].[LeftId])
-		LEFT JOIN [Right] [a_Right] ON ([t1].[RightId] = [a_Right].[RightId])
+		LEFT JOIN [Left] [a_Left] ON [t1].[LeftId] = [a_Left].[LeftId]
+		LEFT JOIN [Right] [a_Right] ON [t1].[RightId] = [a_Right].[RightId]
 LIMIT 1
 
 BeforeExecute

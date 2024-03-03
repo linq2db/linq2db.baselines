@@ -12,6 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] = @ParameterP)
+	[p].[FirstName] = @ParameterP
 LIMIT 2
 

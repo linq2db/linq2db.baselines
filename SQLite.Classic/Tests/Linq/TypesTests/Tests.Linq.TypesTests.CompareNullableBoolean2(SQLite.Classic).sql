@@ -13,8 +13,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -34,5 +32,5 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 WHERE
-	([t1].[BoolValue] = @param2)
+	[t1].[BoolValue] = @param2
 

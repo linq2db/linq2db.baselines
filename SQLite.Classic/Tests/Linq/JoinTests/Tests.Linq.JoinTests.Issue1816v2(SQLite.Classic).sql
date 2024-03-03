@@ -56,7 +56,7 @@ SELECT
 FROM
 	[stVersions] [v]
 		INNER JOIN [stMain] [a_Main] ON [v].[inIdMain] = [a_Main].[inId]
-		LEFT JOIN [rlStatesTypesAndUserGroups] [t] ON ([t].[inIdType] = [a_Main].[inIdType])
+		LEFT JOIN [rlStatesTypesAndUserGroups] [t] ON [t].[inIdType] = [a_Main].[inIdType]
 
 BeforeExecute
 -- SQLite.Classic SQLite

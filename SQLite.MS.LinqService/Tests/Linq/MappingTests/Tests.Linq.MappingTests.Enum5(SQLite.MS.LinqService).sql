@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] = 3)
+	[p].[Value1] = 3
 

@@ -220,12 +220,12 @@ FROM
 				INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
 		WHERE
 			[cda].[Contract_Id] = 198827882 AND
-			([cda].[Distributor_Type_Code] = 'CC') AND
-			([cda].[Distributor_Agent_Type_Prefix] = 'OFFICE') AND
-			([cda].[Represents_Type_Prefix] = 'REPRESENTS') AND
-			([cd].[Type_Code] = 'ESTCOE') AND
-			([d].[Type_Code] = 'RE') AND
-			([dcp].[Distributor_Type_Code] = 'RE')
+			[cda].[Distributor_Type_Code] = 'CC' AND
+			[cda].[Distributor_Agent_Type_Prefix] = 'OFFICE' AND
+			[cda].[Represents_Type_Prefix] = 'REPRESENTS' AND
+			[cd].[Type_Code] = 'ESTCOE' AND
+			[d].[Type_Code] = 'RE' AND
+			[dcp].[Distributor_Type_Code] = 'RE'
 	) [m_1]
 		INNER JOIN [Cities] [d_1] ON ([d_1].[City_Code] = [m_1].[City_Code] OR [d_1].[City_Code] IS NULL AND [m_1].[City_Code] IS NULL)
 
@@ -254,12 +254,12 @@ FROM
 		INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
 WHERE
 	[cda].[Contract_Id] = 198827882 AND
-	([cda].[Distributor_Type_Code] = 'CC') AND
-	([cda].[Distributor_Agent_Type_Prefix] = 'OFFICE') AND
-	([cda].[Represents_Type_Prefix] = 'REPRESENTS') AND
-	([cd].[Type_Code] = 'ESTCOE') AND
-	([d].[Type_Code] = 'RE') AND
-	([dcp].[Distributor_Type_Code] = 'RE')
+	[cda].[Distributor_Type_Code] = 'CC' AND
+	[cda].[Distributor_Agent_Type_Prefix] = 'OFFICE' AND
+	[cda].[Represents_Type_Prefix] = 'REPRESENTS' AND
+	[cd].[Type_Code] = 'ESTCOE' AND
+	[d].[Type_Code] = 'RE' AND
+	[dcp].[Distributor_Type_Code] = 'RE'
 
 BeforeExecute
 -- SQLite.MS SQLite

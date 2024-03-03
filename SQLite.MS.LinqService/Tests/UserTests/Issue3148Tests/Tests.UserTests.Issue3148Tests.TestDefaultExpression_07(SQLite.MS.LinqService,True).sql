@@ -13,7 +13,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] IS NOT NULL
 
@@ -27,7 +27,7 @@ SELECT
 FROM
 	[GrandChild] [a_GrandChildren]
 WHERE
-	(0 = [a_GrandChildren].[ParentID])
+	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -52,7 +52,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] IS NOT NULL
 
@@ -66,7 +66,7 @@ SELECT
 FROM
 	[GrandChild] [a_GrandChildren]
 WHERE
-	(0 = [a_GrandChildren].[ParentID])
+	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite

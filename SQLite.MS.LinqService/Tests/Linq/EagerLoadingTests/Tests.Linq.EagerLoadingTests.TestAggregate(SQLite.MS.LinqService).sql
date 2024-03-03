@@ -861,7 +861,7 @@ SELECT
 						FROM
 							[DetailClass] [a_Details]
 						WHERE
-							([m_1].[Id1] = [a_Details].[MasterId])
+							[m_1].[Id1] = [a_Details].[MasterId]
 					) [t1]
 				ORDER BY
 					[t1].[DetailId]
@@ -882,7 +882,7 @@ SELECT
 						FROM
 							[DetailClass] [a_Details_1]
 						WHERE
-							([m_1].[Id1] = [a_Details_1].[MasterId])
+							[m_1].[Id1] = [a_Details_1].[MasterId]
 					) [t3]
 				ORDER BY
 					[t3].[DetailValue]
@@ -907,7 +907,7 @@ FROM
 		FROM
 			[MasterClass] [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.MS SQLite

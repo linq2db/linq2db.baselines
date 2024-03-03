@@ -119,6 +119,6 @@ FROM
 			[Orders] [o]
 	) [t1]
 WHERE
-	([t1].[DayOfYear] = 360)
+	[t1].[DayOfYear] = 360
 LIMIT 1
 

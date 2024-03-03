@@ -32,7 +32,7 @@ FROM
 		VALUES
 			(3,'Janet'), (4,'Doe')
 		) [t1]
-		LEFT JOIN [TableToInsert] [t] ON ([t].[Id] = [t1].[Id])
+		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
 
@@ -54,7 +54,7 @@ FROM
 		VALUES
 			(3,'Janet'), (4,'Doe')
 		) [t1]
-		LEFT JOIN [TableToInsert] [t] ON ([t].[Id] = [t1].[Id])
+		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
 

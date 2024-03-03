@@ -160,7 +160,7 @@ FROM
 		FROM
 			[University] [t1]
 	) [m_1]
-		INNER JOIN [Faculty] [d] ON ([m_1].[Id] = [d].[UniversityId])
+		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -185,7 +185,7 @@ FROM
 			FROM
 				[Faculty] [m_1]
 			WHERE
-				([m_1].[Id] = [d].[FacultyId]) AND ([m_2].[Id] = [m_1].[UniversityId])
+				[m_1].[Id] = [d].[FacultyId] AND [m_2].[Id] = [m_1].[UniversityId]
 		)
 
 BeforeExecute

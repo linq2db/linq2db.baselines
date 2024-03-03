@@ -92,7 +92,7 @@ UPDATE
 SET
 	[Data] = @Data
 WHERE
-	([TrimTestTable].[Data] = '***XXX***')
+	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -106,7 +106,7 @@ UPDATE
 SET
 	[Data] = @Data
 WHERE
-	([TrimTestTable].[Data] = @p)
+	[TrimTestTable].[Data] = @p
 
 BeforeExecute
 -- SQLite.MS SQLite

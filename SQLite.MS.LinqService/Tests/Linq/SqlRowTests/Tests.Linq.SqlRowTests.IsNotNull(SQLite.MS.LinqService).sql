@@ -58,7 +58,8 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NOT NULL AND [i].[Two] IS NOT NULL AND [i].[Three] IS NOT NULL
+	[i].[One] IS NOT NULL AND [i].[Two] IS NOT NULL AND
+	[i].[Three] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -68,7 +69,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NOT NULL AND [i].[Nil] IS NOT NULL AND NULL IS NOT NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -78,7 +79,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[Nil] IS NOT NULL AND NULL IS NOT NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite

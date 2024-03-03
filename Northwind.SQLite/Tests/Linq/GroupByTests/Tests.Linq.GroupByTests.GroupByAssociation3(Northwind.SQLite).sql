@@ -10,5 +10,5 @@ GROUP BY
 	[a_Category].[CategoryID],
 	[a_Category].[CategoryName]
 HAVING
-	(Count(*) = 12)
+	Count(*) = 12
 

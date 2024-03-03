@@ -223,12 +223,12 @@ FROM
 		INNER JOIN [Cities] [c_1] ON ([c_1].[City_Code] = [cp].[City_Code] OR [c_1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL)
 WHERE
 	[cda].[Contract_Id] = 198827882 AND
-	([cda].[Distributor_Type_Code] = 'CC') AND
-	([cda].[Distributor_Agent_Type_Prefix] = 'OFFICE') AND
-	([cda].[Represents_Type_Prefix] = 'REPRESENTS') AND
-	([cd].[Type_Code] = 'ESTCOE') AND
-	([d].[Type_Code] = 'RE') AND
-	([dcp].[Distributor_Type_Code] = 'RE')
+	[cda].[Distributor_Type_Code] = 'CC' AND
+	[cda].[Distributor_Agent_Type_Prefix] = 'OFFICE' AND
+	[cda].[Represents_Type_Prefix] = 'REPRESENTS' AND
+	[cd].[Type_Code] = 'ESTCOE' AND
+	[d].[Type_Code] = 'RE' AND
+	[dcp].[Distributor_Type_Code] = 'RE'
 
 BeforeExecute
 -- SQLite.MS SQLite

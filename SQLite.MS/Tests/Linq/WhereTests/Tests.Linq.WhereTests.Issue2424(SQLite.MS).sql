@@ -36,8 +36,7 @@ FROM
 WHERE
 	0 <= CASE
 		WHEN [i].[StrValue] > '4' THEN 1
-		WHEN ([i].[StrValue] = '4')
-			THEN 0
+		WHEN [i].[StrValue] = '4' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -53,8 +52,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '4' THEN 1
-		WHEN ([i].[StrValue] = '4')
-			THEN 0
+		WHEN [i].[StrValue] = '4' THEN 0
 		ELSE -1
 	END >= 0
 LIMIT 2
@@ -70,8 +68,7 @@ FROM
 WHERE
 	0 >= CASE
 		WHEN [i].[StrValue] > '2' THEN 1
-		WHEN ([i].[StrValue] = '2')
-			THEN 0
+		WHEN [i].[StrValue] = '2' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -87,8 +84,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '2' THEN 1
-		WHEN ([i].[StrValue] = '2')
-			THEN 0
+		WHEN [i].[StrValue] = '2' THEN 0
 		ELSE -1
 	END <= 0
 LIMIT 2
@@ -104,8 +100,7 @@ FROM
 WHERE
 	0 < CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -121,8 +116,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END > 0
 LIMIT 2
@@ -138,8 +132,7 @@ FROM
 WHERE
 	0 > CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -155,8 +148,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END < 0
 LIMIT 2
@@ -172,8 +164,7 @@ FROM
 WHERE
 	0 = CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -189,8 +180,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END = 0
 LIMIT 2
@@ -206,8 +196,7 @@ FROM
 WHERE
 	0 >= CASE
 		WHEN [i].[StrValue] > '2' THEN 1
-		WHEN ([i].[StrValue] = '2')
-			THEN 0
+		WHEN [i].[StrValue] = '2' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -223,8 +212,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '2' THEN 1
-		WHEN ([i].[StrValue] = '2')
-			THEN 0
+		WHEN [i].[StrValue] = '2' THEN 0
 		ELSE -1
 	END <= 0
 LIMIT 2
@@ -240,8 +228,7 @@ FROM
 WHERE
 	0 <= CASE
 		WHEN [i].[StrValue] > '4' THEN 1
-		WHEN ([i].[StrValue] = '4')
-			THEN 0
+		WHEN [i].[StrValue] = '4' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -257,8 +244,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '4' THEN 1
-		WHEN ([i].[StrValue] = '4')
-			THEN 0
+		WHEN [i].[StrValue] = '4' THEN 0
 		ELSE -1
 	END >= 0
 LIMIT 2
@@ -274,8 +260,7 @@ FROM
 WHERE
 	0 > CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -291,8 +276,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END < 0
 LIMIT 2
@@ -308,8 +292,7 @@ FROM
 WHERE
 	0 < CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -325,8 +308,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '3' THEN 1
-		WHEN ([i].[StrValue] = '3')
-			THEN 0
+		WHEN [i].[StrValue] = '3' THEN 0
 		ELSE -1
 	END > 0
 LIMIT 2
@@ -342,8 +324,7 @@ FROM
 WHERE
 	0 <= CASE
 		WHEN [i].[StrValue] > '5' THEN 1
-		WHEN ([i].[StrValue] = '5')
-			THEN 0
+		WHEN [i].[StrValue] = '5' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -359,8 +340,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '5' THEN 1
-		WHEN ([i].[StrValue] = '5')
-			THEN 0
+		WHEN [i].[StrValue] = '5' THEN 0
 		ELSE -1
 	END >= 0
 LIMIT 2
@@ -376,8 +356,7 @@ FROM
 WHERE
 	0 >= CASE
 		WHEN [i].[StrValue] > '1' THEN 1
-		WHEN ([i].[StrValue] = '1')
-			THEN 0
+		WHEN [i].[StrValue] = '1' THEN 0
 		ELSE -1
 	END
 LIMIT 2
@@ -393,8 +372,7 @@ FROM
 WHERE
 	CASE
 		WHEN [i].[StrValue] > '1' THEN 1
-		WHEN ([i].[StrValue] = '1')
-			THEN 0
+		WHEN [i].[StrValue] = '1' THEN 0
 		ELSE -1
 	END <= 0
 LIMIT 2

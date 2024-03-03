@@ -34,7 +34,7 @@ SELECT
 FROM
 	[Parent] [_]
 WHERE
-	[_].[ParentID] = @id AND ([_].[Value1] = @Value1)
+	[_].[ParentID] = @id AND [_].[Value1] = @Value1
 
 BeforeExecute
 -- SQLite.Classic SQLite

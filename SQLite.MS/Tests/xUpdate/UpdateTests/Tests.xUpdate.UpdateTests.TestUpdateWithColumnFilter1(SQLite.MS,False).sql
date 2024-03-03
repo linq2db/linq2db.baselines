@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute
@@ -80,6 +80,6 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 1
 

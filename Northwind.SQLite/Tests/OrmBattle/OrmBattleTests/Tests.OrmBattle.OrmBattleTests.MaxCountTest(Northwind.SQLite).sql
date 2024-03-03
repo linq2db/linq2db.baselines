@@ -88,7 +88,7 @@ SELECT
 			Count(*)
 		FROM
 			[Orders] [t2]
-				INNER JOIN [Customers] [a_Customer] ON ([t2].[CustomerID] = [a_Customer].[CustomerID])
+				INNER JOIN [Customers] [a_Customer] ON [t2].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
 			[a_Customer].[CustomerID] = [t1].[CustomerID]
 	))

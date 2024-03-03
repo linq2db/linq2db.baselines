@@ -30,5 +30,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	([t].[BoolValue] = @param)
+	[t].[BoolValue] = @param
 

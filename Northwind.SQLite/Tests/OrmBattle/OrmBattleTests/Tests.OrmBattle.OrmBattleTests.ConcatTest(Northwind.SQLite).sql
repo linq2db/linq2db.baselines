@@ -97,14 +97,14 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	((
+	(
 		SELECT
 			Count(*)
 		FROM
 			[Orders] [a_Orders]
 		WHERE
-			([c_1].[CustomerID] = [a_Orders].[CustomerID])
-	) <= 1)
+			[c_1].[CustomerID] = [a_Orders].[CustomerID]
+	) <= 1
 UNION ALL
 SELECT
 	[c_2].[CustomerID],
@@ -127,6 +127,6 @@ WHERE
 		FROM
 			[Orders] [a_Orders_1]
 		WHERE
-			([c_2].[CustomerID] = [a_Orders_1].[CustomerID])
+			[c_2].[CustomerID] = [a_Orders_1].[CustomerID]
 	) > 1
 

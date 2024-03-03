@@ -102,7 +102,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	([o].[ShipCity] = @city)
+	[o].[ShipCity] = @city
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -127,5 +127,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	([o].[ShipCity] = @city)
+	[o].[ShipCity] = @city
 

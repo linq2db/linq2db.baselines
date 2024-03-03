@@ -38,7 +38,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute
@@ -49,5 +49,5 @@ SET     @newName = 'InsertColumnFilter'
 DELETE FROM
 	[Person]
 WHERE
-	([Person].[FirstName] = @newName)
+	[Person].[FirstName] = @newName
 

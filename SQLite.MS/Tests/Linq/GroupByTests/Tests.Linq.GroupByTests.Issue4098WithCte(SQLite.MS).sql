@@ -161,7 +161,7 @@ FROM
 		INNER JOIN [InvestorPayment] [ip] ON [g_2].[Id] = [ip].[Id]
 		INNER JOIN [InvestorPaymentDetail] [ipd] ON [ip].[InvestorId] = [ipd].[InvestorId]
 		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [g_2].[Id] = [pc].[EventId]
-		INNER JOIN [CTE_1] [b] ON ([ip].[InvestorId] = [b].[InvestorId]) AND [g_2].[SecurityClass] = [b].[SecurityClass]
+		INNER JOIN [CTE_1] [b] ON [ip].[InvestorId] = [b].[InvestorId] AND [g_2].[SecurityClass] = [b].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
 	[b].[Units]

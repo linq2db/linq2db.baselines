@@ -17,11 +17,11 @@ FROM
 					[a_Parent].[ParentID]
 				FROM
 					[Child] [t1]
-						LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
+						LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 				LIMIT 1
 			) [t2]
 	) [m_1]
-		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 --  SQLite.MS SQLite
@@ -33,7 +33,7 @@ SELECT
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]
-		LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 LIMIT 1
 
 BeforeExecute

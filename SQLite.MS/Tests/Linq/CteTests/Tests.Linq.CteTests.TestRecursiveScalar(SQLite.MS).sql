@@ -21,7 +21,7 @@ AS
 		[t2].[ChildID] + 1
 	FROM
 		[Child] [t2]
-			INNER JOIN [MY_CTE] [ct] ON ([ct].[field] = [t2].[ChildID] + 1)
+			INNER JOIN [MY_CTE] [ct] ON [ct].[field] = [t2].[ChildID] + 1
 )
 SELECT
 	[t3].[field]

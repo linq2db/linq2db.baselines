@@ -20,7 +20,7 @@ FROM
 		FROM
 			[GrandChild] [g_1]
 		WHERE
-			([g_1].[ParentID] >= 4)
+			[g_1].[ParentID] >= 4
 	) [tt]
 GROUP BY
 	[tt].[ParentID]

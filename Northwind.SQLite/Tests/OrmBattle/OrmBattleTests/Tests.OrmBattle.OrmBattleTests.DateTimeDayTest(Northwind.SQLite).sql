@@ -119,6 +119,6 @@ FROM
 			[Orders] [o]
 	) [t1]
 WHERE
-	([t1].[Day_1] = 5)
+	[t1].[Day_1] = 5
 LIMIT 1
 

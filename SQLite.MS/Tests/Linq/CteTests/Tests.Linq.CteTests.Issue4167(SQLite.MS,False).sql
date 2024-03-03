@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Issue4167Table] [t]
 WHERE
-	([t].[Value] = '000001')
+	[t].[Value] = '000001'
 GROUP BY
 	[t].[Value],
 	[t].[EnumValue]

@@ -28,7 +28,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	([r].[ID] = 101)
+	[r].[ID] = 101
 LIMIT 1
 
 BeforeExecute

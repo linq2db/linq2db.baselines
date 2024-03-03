@@ -101,10 +101,10 @@ FROM
 			END as [Value_1]
 		FROM
 			[MainEntityObject] [q]
-				LEFT JOIN [ChildEntityObject] [c_1] ON ([c_1].[Id] = [q].[Id])
+				LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [q].[Id]
 	) [q_1]
 WHERE
-	([q_1].[Id] % 2 = 0)
+	[q_1].[Id] % 2 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite

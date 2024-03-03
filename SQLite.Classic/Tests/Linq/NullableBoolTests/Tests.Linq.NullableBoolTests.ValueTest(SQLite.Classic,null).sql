@@ -60,8 +60,6 @@ SELECT
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

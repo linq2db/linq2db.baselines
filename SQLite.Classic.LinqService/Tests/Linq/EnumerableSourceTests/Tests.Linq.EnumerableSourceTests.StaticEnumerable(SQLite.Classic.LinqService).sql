@@ -21,7 +21,7 @@ WHERE
 					(1), (2), (3)
 				) [v]
 		WHERE
-			([v].[item] = [p].[PersonID])
+			[v].[item] = [p].[PersonID]
 	)
 
 BeforeExecute

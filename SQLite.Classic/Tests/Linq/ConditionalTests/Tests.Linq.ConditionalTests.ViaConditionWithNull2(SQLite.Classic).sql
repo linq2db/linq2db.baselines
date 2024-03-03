@@ -44,7 +44,7 @@ FROM
 	[ConditionalData] [x]
 WHERE
 	CASE
-		WHEN ([x].[StringProp] = '1')
+		WHEN [x].[StringProp] = '1'
 			THEN [x].[StringProp]
 		ELSE NULL
 	END LIKE '%2%' ESCAPE '~'
