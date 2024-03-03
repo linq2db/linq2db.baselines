@@ -2,8 +2,8 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[p5].[PersonID],
-	[p5].[FirstName]
+	[p2].[PersonID],
+	[p2].[FirstName]
 FROM
-	[Person] [p5]
+	[Person] [p2]
 

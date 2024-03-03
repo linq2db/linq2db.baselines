@@ -214,28 +214,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @Id Int -- Int32
+SET     @Id = 20
 DECLARE @take Int -- Int32
 SET     @take = 1
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Id] = 20,
-	[t1].[Value_1] = [t1].[Value_1],
-	[t1].[ValueStr] = [t1].[ValueStr]
+	[u].[Id] = @Id,
+	[u].[Value] = [t1].[Value_1],
+	[u].[ValueStr] = [t1].[ValueStr]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value_1],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value_1],
-	[INSERTED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 FROM
+	[TableWithData] [u],
 	(
 		SELECT TOP (@take)
-			[i].[Id],
 			[i].[Value] as [Value_1],
-			[i].[ValueStr]
+			[i].[ValueStr],
+			[i].[Id]
 		FROM
 			[TableWithData] [i]
 		WHERE
@@ -243,6 +246,9 @@ FROM
 		ORDER BY
 			[i].[Id]
 	) [t1]
+WHERE
+	[t1].[Id] = [u].[Id] AND [t1].[Value_1] = [u].[Value] AND
+	([t1].[ValueStr] = [u].[ValueStr] OR [t1].[ValueStr] IS NULL AND [u].[ValueStr] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017
