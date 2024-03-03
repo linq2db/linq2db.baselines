@@ -59,7 +59,7 @@ SELECT
 	[c_1].[Value]
 FROM
 	[MainEntityObject] [m_1]
-		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
+		LEFT JOIN [ChildEntityObject] [c_1] ON ([c_1].[Id] = [m_1].[Id])
 ORDER BY
 	[c_1].[Id] DESC
 

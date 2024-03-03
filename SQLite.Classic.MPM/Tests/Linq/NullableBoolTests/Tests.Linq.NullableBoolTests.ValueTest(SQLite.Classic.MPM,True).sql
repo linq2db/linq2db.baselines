@@ -33,7 +33,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] = @value
+	([t].[Value] = @value)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -45,7 +45,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] = @value
+	([t].[Value] = @value)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -69,7 +69,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] <> @value
+	([t].[Value] <> @value)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -83,8 +83,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[Id],
@@ -96,8 +94,8 @@ SELECT
 FROM
 	[Pet3001] [x]
 		INNER JOIN [Person3001] [a_Person] ON [x].[PersonId] = [a_Person].[Id]
-		LEFT JOIN [House3001] [a_House] ON [a_Person].[HouseId] = [a_House].[Id]
-LIMIT @take
+		LEFT JOIN [House3001] [a_House] ON ([a_Person].[HouseId] = [a_House].[Id])
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

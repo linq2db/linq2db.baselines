@@ -47,7 +47,7 @@ UPDATE
 SET
 	[Property] = @Property
 WHERE
-	[BananaTable].[Id] = @filter
+	([BananaTable].[Id] = @filter)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

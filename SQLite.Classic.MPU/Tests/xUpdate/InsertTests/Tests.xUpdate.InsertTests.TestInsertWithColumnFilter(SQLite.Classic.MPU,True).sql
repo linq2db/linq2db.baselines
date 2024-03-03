@@ -28,8 +28,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[FirstName],
@@ -40,8 +38,8 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
-LIMIT @take
+	([x].[FirstName] = @FirstName)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -51,5 +49,5 @@ SET     @newName = 'InsertColumnFilter'
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[FirstName] = @newName
+	([Person].[FirstName] = @newName)
 

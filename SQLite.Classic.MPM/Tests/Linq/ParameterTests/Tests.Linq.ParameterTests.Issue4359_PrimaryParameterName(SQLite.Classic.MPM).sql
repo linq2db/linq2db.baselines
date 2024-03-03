@@ -2,8 +2,6 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParameterP NVarChar(4) -- String
 SET     @ParameterP = 'John'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -14,6 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @ParameterP
-LIMIT @take
+	([p].[FirstName] = @ParameterP)
+LIMIT 2
 

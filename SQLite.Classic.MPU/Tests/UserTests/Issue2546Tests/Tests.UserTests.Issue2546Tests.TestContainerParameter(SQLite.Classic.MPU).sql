@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Issue2546Class] [x]
 WHERE
-	[x].[Value] = @Value2
+	([x].[Value] = @Value2)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

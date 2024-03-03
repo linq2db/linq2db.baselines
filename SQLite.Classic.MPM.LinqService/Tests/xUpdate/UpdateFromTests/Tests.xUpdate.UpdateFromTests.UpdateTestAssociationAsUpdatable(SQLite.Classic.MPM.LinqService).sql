@@ -269,21 +269,19 @@ SET
 FROM
 	[UpdateRelation] [a_Relation]
 WHERE
-	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[RelationId] = [a_Relation].[id]
+	([a_Relation].[RelatedValue1] = 11) AND ([UpdatedEntities].[RelationId] = [a_Relation].[id])
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id] OR [v].[RelationId] IS NULL AND [a_Relation].[id] IS NULL)
 WHERE
-	[a_Relation].[RelatedValue1] = 11
-LIMIT @take
+	([a_Relation].[RelatedValue1] = 11)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

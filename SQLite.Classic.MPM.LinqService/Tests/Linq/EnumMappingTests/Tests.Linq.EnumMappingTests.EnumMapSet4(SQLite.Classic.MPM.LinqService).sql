@@ -32,12 +32,10 @@ UPDATE
 SET
 	[BigIntValue] = @TestField
 WHERE
-	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
+	([LinqDataTypes].[ID] = 101) AND ([LinqDataTypes].[BigIntValue] = 11)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[r].[BigIntValue]
@@ -45,7 +43,7 @@ FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

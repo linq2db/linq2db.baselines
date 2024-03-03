@@ -37,8 +37,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[_].[Id],
@@ -51,8 +49,8 @@ SELECT
 FROM
 	[EnumCardinality] [_]
 WHERE
-	[_].[Property4] <= 'A'
-LIMIT @take
+	([_].[Property4] <= 'A')
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

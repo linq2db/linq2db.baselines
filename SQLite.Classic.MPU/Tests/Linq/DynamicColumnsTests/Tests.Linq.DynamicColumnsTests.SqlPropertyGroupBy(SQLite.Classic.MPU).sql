@@ -2,10 +2,10 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[FirstName],
+	[p].[FirstName],
 	Count(*)
 FROM
-	[Person] [t1]
+	[Person] [p]
 GROUP BY
-	[t1].[FirstName]
+	[p].[FirstName]
 

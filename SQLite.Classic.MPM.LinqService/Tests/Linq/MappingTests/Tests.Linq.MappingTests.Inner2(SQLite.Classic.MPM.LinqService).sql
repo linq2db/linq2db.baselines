@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,6 +7,6 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = 1 AND [p].[Value1] = 1
-LIMIT @take
+	[p].[ParentID] = 1 AND ([p].[Value1] = 1)
+LIMIT 1
 

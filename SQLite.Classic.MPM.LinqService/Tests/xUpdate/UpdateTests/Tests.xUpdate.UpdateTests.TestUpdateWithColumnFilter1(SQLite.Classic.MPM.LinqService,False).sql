@@ -33,8 +33,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[FirstName],
@@ -45,8 +43,8 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
-LIMIT @take
+	([x].[FirstName] = @FirstName)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -72,8 +70,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[FirstName],
@@ -84,6 +80,6 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
-LIMIT @take
+	([x].[FirstName] = @FirstName)
+LIMIT 1
 
