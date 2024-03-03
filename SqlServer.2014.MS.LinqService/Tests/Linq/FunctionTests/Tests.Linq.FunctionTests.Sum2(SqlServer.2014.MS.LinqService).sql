@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			Sum([c_1].[ParentID] * [c_1].[ChildID])
+			Sum([a_Children].[ParentID] * [a_Children].[ChildID])
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 2
+			[a_Children].[ParentID] > 2 AND [p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]
