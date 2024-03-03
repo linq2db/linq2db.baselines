@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 WHERE
-	[t1].[ID] > 1000
+	[_].[ID] > 1000
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -28,9 +28,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 WHERE
-	[t1].[ID] > 1000
+	[_].[ID] > 1000
 

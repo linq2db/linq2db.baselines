@@ -37,18 +37,16 @@ IF (OBJECT_ID(N'[person649]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @added DateTime2
-SET     @added = DATETIME2FROMPARTS(2017, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	Max([p].[added])
+	Max([$VB$It].[added])
 FROM
-	[activity649] [p]
-		INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
+	[activity649] [$VB$It]
+		INNER JOIN [person649] [a_Person] ON [$VB$It].[personid] = [a_Person].[personid]
 WHERE
-	[p].[added] >= @added
+	[$VB$It].[added] >= DATETIME2FROMPARTS(2017, 1, 1, 0, 0, 0, 0, 7)
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]
