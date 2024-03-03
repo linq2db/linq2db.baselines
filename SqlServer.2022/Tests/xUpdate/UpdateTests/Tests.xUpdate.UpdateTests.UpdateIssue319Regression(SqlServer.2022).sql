@@ -18,12 +18,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[ParentID]
 FROM
 	[Parent] [_]
@@ -38,25 +36,16 @@ DECLARE @id Int -- Int32
 SET     @id = 100500
 
 UPDATE
-	[_2]
+	[Parent]
 SET
-	[_2].[Value1] = @ParentID
-FROM
-	(
-		SELECT
-			[_1].[ParentID],
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Parent] [_]
-				WHERE
-					[_].[ParentID] = @id
-			) as [ex],
-			[_1].[Value1]
-		FROM
-			[Parent] [_1]
-	) [_2]
+	[Value1] = @ParentID
 WHERE
-	[_2].[ParentID] = @id AND [_2].[ex] > 0
+	[Parent].[ParentID] = @id AND (
+		SELECT
+			Count(*)
+		FROM
+			[Parent] [_]
+		WHERE
+			[_].[ParentID] = @id
+	) > 0
 
