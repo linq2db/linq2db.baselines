@@ -8,7 +8,7 @@ SELECT
 FROM
 	[AllTypes] [_]
 WHERE
-	[_].[char20DataType] = 'issue792'
+	([_].[char20DataType] = 'issue792')
 
 BeforeExecute
 -- Access AccessOleDb
@@ -25,7 +25,7 @@ SELECT
 FROM
 	[AllTypes] [_]
 WHERE
-	[_].[char20DataType] = 'issue792'
+	([_].[char20DataType] = 'issue792')
 
 BeforeExecute
 DisposeTransaction

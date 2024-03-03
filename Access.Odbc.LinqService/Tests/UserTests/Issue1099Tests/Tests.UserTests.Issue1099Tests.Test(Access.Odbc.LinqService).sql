@@ -53,7 +53,7 @@ SELECT
 FROM
 	[BackgroundTask] [task_1]
 WHERE
-	[task_1].[PersonID] = ?
+	([task_1].[PersonID] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -98,9 +98,9 @@ SELECT
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+		LEFT JOIN [TaskStage] [a_ActualStage] ON (([p].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = True)
 WHERE
-	[p].[TargetName] = 'bda.Requests'
+	([p].[TargetName] = 'bda.Requests')
 
 BeforeExecute
 -- Access.Odbc AccessODBC

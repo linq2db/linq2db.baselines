@@ -32,7 +32,7 @@ UPDATE
 SET
 	[r].[BigIntValue] = ?
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	([r].[ID] = 101) AND ([r].[BigIntValue] = 11)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

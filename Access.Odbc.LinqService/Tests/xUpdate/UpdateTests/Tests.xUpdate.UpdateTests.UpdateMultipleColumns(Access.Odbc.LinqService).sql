@@ -22,14 +22,18 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @MoneyValue VarChar(4, 0) -- AnsiString
+SET     @MoneyValue = 2000
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 200
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
 UPDATE
 	[LinqDataTypes] [t]
 SET
-	[t].[MoneyValue] = 2000,
-	[t].[SmallIntValue] = 200
+	[t].[MoneyValue] = ?,
+	[t].[SmallIntValue] = ?
 WHERE
 	[t].[ID] = ?
 

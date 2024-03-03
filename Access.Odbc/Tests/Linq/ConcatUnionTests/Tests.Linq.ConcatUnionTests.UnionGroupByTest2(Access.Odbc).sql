@@ -2,32 +2,38 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[_].[SmallIntValue],
-	[_].[SmallIntValue],
-	3
+	[t1].[month_1],
+	[t1].[month_1],
+	[t1].[int_1]
 FROM
-	[LinqDataTypes] [_]
+	(
+		SELECT
+			[_].[SmallIntValue] as [month_1],
+			3 as [int_1]
+		FROM
+			[LinqDataTypes] [_]
+	) [t1]
 UNION
 SELECT
-	[t1].[month_1],
-	[t1].[year_1],
+	[t2].[Month_1],
+	[t2].[Year_1],
 	1
 FROM
 	(
 		SELECT
-			DatePart('m', [selectParam].[DateTimeValue]) as [month_1],
-			DatePart('yyyy', [selectParam].[DateTimeValue]) as [year_1]
+			DatePart('m', [_1].[DateTimeValue]) as [Month_1],
+			DatePart('yyyy', [_1].[DateTimeValue]) as [Year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [_1]
+	) [t2]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	[t2].[Month_1],
+	[t2].[Year_1]
 UNION
 SELECT
-	DatePart('yyyy', [_1].[DateTimeValue]),
-	DatePart('yyyy', [_1].[DateTimeValue]),
+	DatePart('yyyy', [_2].[DateTimeValue]),
+	DatePart('yyyy', [_2].[DateTimeValue]),
 	2
 FROM
-	[LinqDataTypes] [_1]
+	[LinqDataTypes] [_2]
 

@@ -34,7 +34,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	([x].[FirstName] = @FirstName)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -44,5 +44,5 @@ SET     @newName = 'InsertColumnFilter'
 DELETE FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @newName
+	([x].[FirstName] = @newName)
 

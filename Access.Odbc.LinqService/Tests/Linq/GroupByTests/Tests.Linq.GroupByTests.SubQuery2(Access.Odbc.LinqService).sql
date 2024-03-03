@@ -1,19 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @n Int -- Int32
-SET     @n = 0
+SET     @n = 1
 
 SELECT
-	[t1].[ParentID]
+	[g_1].[ParentID] + 1
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + 1 as [ParentID]
-		FROM
-			[Child] [ch]
-		WHERE
-			[ch].[ParentID] > ?
-	) [t1]
+	[Child] [g_1]
+WHERE
+	[g_1].[ParentID] + 1 > ?
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID] + 1
 

@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = 1
+	[p].[ParentID] = ? AND ([p].[Value1] = 1)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = 2
+	[p].[ParentID] = ? AND ([p].[Value1] = 2)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -78,5 +78,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = 3
+	[p].[ParentID] = ? AND ([p].[Value1] = 3)
 

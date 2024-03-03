@@ -68,7 +68,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	([x].[FirstName] = @FirstName)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -103,7 +103,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	([x].[FirstName] = @FirstName)
 
 BeforeExecute
 -- Access AccessOleDb

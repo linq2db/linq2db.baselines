@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @id Integer -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] IS NULL
+	([_].[PersonID] = @id)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -18,5 +20,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = @id
+	([_].[PersonID] = @id)
 

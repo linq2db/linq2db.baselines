@@ -72,19 +72,17 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[c1],
+	[g_2].[c1],
 	Count(*)
 FROM
 	(
 		SELECT
-			Iif([selectParam].[TradingStatus] = 'D', True, False) as [Key_1],
-			Iif([selectParam].[TradingStatus] = 'D', True, False) as [c1]
+			IIF(([g_1].[TradingStatus] = 'D'), True, False) as [c1]
 		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+			[Issue913Test] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	[g_2].[c1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

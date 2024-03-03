@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Person] [_]
 ORDER BY
-	Iif([_].[PersonID] IN (1, 3), True, False)
+	IIF([_].[PersonID] IN (1, 3), True, False)
 

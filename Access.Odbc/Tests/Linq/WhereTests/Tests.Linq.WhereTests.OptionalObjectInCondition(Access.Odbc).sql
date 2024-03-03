@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = ?
+	([r].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -42,5 +42,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = ?
+	([r].[FirstName] = ?)
 

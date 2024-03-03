@@ -92,7 +92,7 @@ UPDATE
 SET
 	[t].[Data] = @Data
 WHERE
-	[t].[Data] = '***XXX***'
+	([t].[Data] = '***XXX***')
 
 BeforeExecute
 -- Access AccessOleDb
@@ -106,7 +106,7 @@ UPDATE
 SET
 	[t].[Data] = @Data
 WHERE
-	[t].[Data] = @p
+	([t].[Data] = @p)
 
 BeforeExecute
 -- Access AccessOleDb

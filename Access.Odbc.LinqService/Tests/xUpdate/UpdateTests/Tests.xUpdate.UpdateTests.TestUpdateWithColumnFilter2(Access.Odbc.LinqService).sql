@@ -63,7 +63,7 @@ SELECT TOP 2
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

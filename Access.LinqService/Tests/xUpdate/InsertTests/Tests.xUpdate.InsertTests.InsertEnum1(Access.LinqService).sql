@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- Access AccessOleDb
@@ -34,13 +34,13 @@ SELECT
 FROM
 	[Parent] [_]
 WHERE
-	[_].[ParentID] = @id AND [_].[Value1] = @Value1
+	[_].[ParentID] = @id AND ([_].[Value1] = @Value1)
 
 BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 

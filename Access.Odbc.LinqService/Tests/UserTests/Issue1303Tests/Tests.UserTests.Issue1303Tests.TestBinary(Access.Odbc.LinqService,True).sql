@@ -57,7 +57,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = 0x010203
+	([_].[Array] = 0x010203)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -69,7 +69,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = 0x0405
+	([_].[Binary] = 0x0405)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

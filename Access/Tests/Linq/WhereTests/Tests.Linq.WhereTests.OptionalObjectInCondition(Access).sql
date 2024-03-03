@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName
+	([r].[FirstName] = @FirstName)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -42,5 +42,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName
+	([r].[FirstName] = @FirstName)
 

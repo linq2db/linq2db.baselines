@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] IS NULL
+	([_].[PersonID] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -18,5 +20,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] = ?
+	([_].[PersonID] = ?)
 

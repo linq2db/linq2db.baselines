@@ -63,7 +63,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -99,5 +99,5 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 

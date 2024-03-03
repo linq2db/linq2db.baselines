@@ -26,17 +26,19 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 1
+	[p].[ParentID] = @id AND ([p].[Value1] = 1)
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	[Parent] [p]
 SET
-	[p].[Value1] = 2
+	[p].[Value1] = @Value1
 WHERE
 	[p].[ParentID] = @id
 
@@ -50,5 +52,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 2
+	[p].[ParentID] = @id AND ([p].[Value1] = 2)
 

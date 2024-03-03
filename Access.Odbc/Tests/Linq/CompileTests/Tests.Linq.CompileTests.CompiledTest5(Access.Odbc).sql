@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = ?
+	[p].[ParentID] = ? AND ([p].[Value1] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

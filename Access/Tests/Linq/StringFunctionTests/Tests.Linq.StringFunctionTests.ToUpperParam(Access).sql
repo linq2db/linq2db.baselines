@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	UCase([p].[FirstName]) = @param AND [p].[PersonID] = 1
+	(UCase([p].[FirstName]) = @param) AND [p].[PersonID] = 1
 

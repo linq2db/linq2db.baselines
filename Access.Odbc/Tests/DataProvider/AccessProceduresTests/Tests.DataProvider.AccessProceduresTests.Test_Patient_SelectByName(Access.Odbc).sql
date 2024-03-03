@@ -22,7 +22,7 @@ FROM
 	[Patient] [_]
 		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
 WHERE
-	[a_Person].[FirstName] = ? AND [a_Person].[LastName] = ?
+	([a_Person].[FirstName] = ?) AND ([a_Person].[LastName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -42,7 +42,7 @@ FROM
 	[Patient] [_]
 		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
 WHERE
-	[a_Person].[FirstName] = ? AND [a_Person].[LastName] = ?
+	([a_Person].[FirstName] = ?) AND ([a_Person].[LastName] = ?)
 ORDER BY
 	[a_Person].[PersonID]
 

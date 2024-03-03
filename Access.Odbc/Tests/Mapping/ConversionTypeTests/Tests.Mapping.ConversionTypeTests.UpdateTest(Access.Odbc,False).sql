@@ -92,7 +92,7 @@ UPDATE
 SET
 	[t].[Data] = ?
 WHERE
-	[t].[Data] = '***XXX***'
+	([t].[Data] = '***XXX***')
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -106,7 +106,7 @@ UPDATE
 SET
 	[t].[Data] = ?
 WHERE
-	[t].[Data] = ?
+	([t].[Data] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

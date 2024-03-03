@@ -152,15 +152,15 @@ SELECT
 	[a_SubData].[Id],
 	(
 		SELECT TOP 1
-			[s].[Reason]
+			[a_SubDatas].[Reason]
 		FROM
-			[SubData2] [s]
+			[SubData2] [a_SubDatas]
 		WHERE
-			[a_SubData].[Id] = [s].[Id]
+			[a_SubData].[Id] IS NOT NULL AND [a_SubData].[Id] = [a_SubDatas].[Id]
 	)
 FROM
 	[Data] [i]
-		LEFT JOIN [SubData1] [a_SubData] ON ([i].[Id] = [a_SubData].[Id])
+		LEFT JOIN [SubData1] [a_SubData] ON (([i].[Id] = [a_SubData].[Id]))
 ORDER BY
 	[i].[Id]
 

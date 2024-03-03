@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	? = [_].[SmallIntValue]
+	(? = [_].[SmallIntValue])
 
 BeforeExecute
 -- Access.Odbc AccessODBC

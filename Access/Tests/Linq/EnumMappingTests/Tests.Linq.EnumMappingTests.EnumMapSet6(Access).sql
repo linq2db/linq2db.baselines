@@ -24,13 +24,15 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Int32Field Integer -- Int32
+SET     @Int32Field = 4
 
 UPDATE
 	[LinqDataTypes] [r]
 SET
-	[r].[IntValue] = 4
+	[r].[IntValue] = @Int32Field
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	([r].[ID] = 101) AND ([r].[IntValue] = 3)
 
 BeforeExecute
 -- Access AccessOleDb

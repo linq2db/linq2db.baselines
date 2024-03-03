@@ -43,7 +43,7 @@ SELECT
 FROM
 	[WhereWithString] [x]
 WHERE
-	[x].[Id] = ?
+	([x].[Id] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

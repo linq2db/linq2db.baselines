@@ -33,13 +33,13 @@ SET     @id = 1001
 
 UPDATE
 	([Child] [c_1]
-		LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID]))
+		LEFT JOIN [Parent] [a_Parent] ON (([c_1].[ParentID] = [a_Parent].[ParentID])))
 		INNER JOIN [Parent] [p] ON ([c_1].[ParentID] = [p].[ParentID])
 SET
 	[c_1].[ChildID] = [c_1].[ChildID] + 1,
 	[c_1].[ParentID] = [p].[ParentID]
 WHERE
-	[c_1].[ChildID] = ? AND [a_Parent].[Value1] = 1
+	[c_1].[ChildID] = ? AND ([a_Parent].[Value1] = 1)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

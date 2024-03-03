@@ -32,5 +32,5 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON ([t1].[ID] = [t2].[ID])
 WHERE
-	[t1].[BoolValue] = ?
+	([t1].[BoolValue] = ?)
 

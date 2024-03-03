@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) = @param AND [p].[PersonID] = 1
+	(LCase([p].[FirstName]) = @param) AND [p].[PersonID] = 1
 

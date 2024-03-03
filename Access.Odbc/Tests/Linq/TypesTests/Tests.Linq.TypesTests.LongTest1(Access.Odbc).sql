@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BigIntValue] = ?
+	([t].[BigIntValue] = ?)
 

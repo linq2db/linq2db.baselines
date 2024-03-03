@@ -75,7 +75,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -110,7 +110,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

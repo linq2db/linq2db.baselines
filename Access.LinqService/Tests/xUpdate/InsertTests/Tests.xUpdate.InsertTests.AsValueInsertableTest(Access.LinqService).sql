@@ -42,7 +42,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[ID] = 123 AND [x].[FirstName] = 'John'
+	[x].[ID] = 123 AND ([x].[FirstName] = 'John')
 
 BeforeExecute
 -- Access AccessOleDb

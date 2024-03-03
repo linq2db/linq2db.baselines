@@ -63,7 +63,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -102,7 +102,7 @@ SELECT TOP 1
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -112,5 +112,5 @@ SET     @newName = 'InsertColumnFilter'
 DELETE FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = ?
+	([x].[FirstName] = ?)
 

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Parameter1 NVarChar(1) -- String
+SET     @Parameter1 = 'e'
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	InStr(3, [p].[LastName], 'e', 1) = 5 AND [p].[PersonID] = 2
+	(IIF(1 = 0, 2, InStr(3, [p].[LastName], CVar(?), 1) - 1) = 4) AND
+	[p].[PersonID] = 2
 

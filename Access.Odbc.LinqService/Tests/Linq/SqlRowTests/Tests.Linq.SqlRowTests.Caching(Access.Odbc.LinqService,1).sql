@@ -60,8 +60,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND
-	[i].[Three] = ?
+	[i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND [i].[Three] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

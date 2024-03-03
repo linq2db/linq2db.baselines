@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[DateTimeValue] = ?
+	([_].[DateTimeValue] = ?)
 

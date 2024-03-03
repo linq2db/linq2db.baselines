@@ -22,7 +22,7 @@ FROM
 	[Patient] [_]
 		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
 WHERE
-	[a_Person].[FirstName] = @firstName AND [a_Person].[LastName] = @lastName
+	([a_Person].[FirstName] = @firstName) AND ([a_Person].[LastName] = @lastName)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -42,7 +42,7 @@ FROM
 	[Patient] [_]
 		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
 WHERE
-	[a_Person].[FirstName] = @firstName AND [a_Person].[LastName] = @lastName
+	([a_Person].[FirstName] = @firstName) AND ([a_Person].[LastName] = @lastName)
 ORDER BY
 	[a_Person].[PersonID]
 

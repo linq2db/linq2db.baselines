@@ -59,7 +59,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = @Array
+	([_].[Array] = @Array)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -73,7 +73,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = @Binary
+	([_].[Binary] = @Binary)
 
 BeforeExecute
 -- Access AccessOleDb

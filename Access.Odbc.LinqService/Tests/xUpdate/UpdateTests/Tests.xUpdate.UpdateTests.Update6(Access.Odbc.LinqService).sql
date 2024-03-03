@@ -26,17 +26,19 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = 1
+	[p].[ParentID] = ? AND ([p].[Value1] = 1)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 2
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
 	[Parent] [p]
 SET
-	[p].[Value1] = 2
+	[p].[Value1] = ?
 WHERE
 	[p].[ParentID] = ?
 
@@ -50,5 +52,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = 2
+	[p].[ParentID] = ? AND ([p].[Value1] = 2)
 

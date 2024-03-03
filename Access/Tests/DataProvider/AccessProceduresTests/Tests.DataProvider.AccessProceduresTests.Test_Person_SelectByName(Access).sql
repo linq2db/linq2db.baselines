@@ -21,7 +21,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
+	([_].[FirstName] = @firstName) AND ([_].[LastName] = @lastName)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -39,7 +39,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
+	([_].[FirstName] = @firstName) AND ([_].[LastName] = @lastName)
 
 BeforeExecute
 DisposeTransaction

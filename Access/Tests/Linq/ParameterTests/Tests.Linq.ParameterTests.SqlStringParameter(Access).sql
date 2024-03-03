@@ -12,7 +12,7 @@ SELECT TOP 2
 FROM
 	[Person] [t]
 WHERE
-	[t].[FirstName] = @p
+	([t].[FirstName] = @p)
 
 BeforeExecute
 -- Access AccessOleDb
@@ -28,5 +28,5 @@ SELECT TOP 2
 FROM
 	[Person] [t]
 WHERE
-	[t].[FirstName] = @p
+	([t].[FirstName] = @p)
 

@@ -21,7 +21,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] = ? AND [_].[LastName] = ?
+	([_].[FirstName] = ?) AND ([_].[LastName] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -39,7 +39,7 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	[_].[FirstName] = ? AND [_].[LastName] = ?
+	([_].[FirstName] = ?) AND ([_].[LastName] = ?)
 
 BeforeExecute
 DisposeTransaction

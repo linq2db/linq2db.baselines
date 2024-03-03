@@ -534,7 +534,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	? = [t].[Value2]
+	(? = [t].[Value2])
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -74,7 +74,7 @@ UPDATE
 SET
 	[t].[Data] = '***OOO***'
 WHERE
-	[t].[Data] = '***XXX***'
+	([t].[Data] = '***XXX***')
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -84,7 +84,7 @@ UPDATE
 SET
 	[t].[Data] = '***SSS***'
 WHERE
-	[t].[Data] = '***HHH***'
+	([t].[Data] = '***HHH***')
 
 BeforeExecute
 -- Access.Odbc AccessODBC

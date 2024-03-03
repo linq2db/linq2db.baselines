@@ -83,10 +83,7 @@ SELECT
 FROM
 	[Mixed] [t]
 WHERE
-	[t].[Int] > 0 AND
-	[t].[Str] = 'One' AND
-	[t].[Double] = 1 AND
-	[t].[Bool] = True AND
+	[t].[Int] > 0 AND [t].[Str] = 'One' AND [t].[Double] = 1 AND [t].[Bool] = True AND
 	EXISTS(
 		SELECT
 			*

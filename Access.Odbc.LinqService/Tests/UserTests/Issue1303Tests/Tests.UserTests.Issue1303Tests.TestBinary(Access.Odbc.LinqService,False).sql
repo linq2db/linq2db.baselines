@@ -59,7 +59,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = ?
+	([_].[Array] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -73,7 +73,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = ?
+	([_].[Binary] = ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

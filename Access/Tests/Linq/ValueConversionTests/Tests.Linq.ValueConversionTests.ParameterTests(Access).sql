@@ -534,7 +534,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	@testedList = [t].[Value2]
+	(@testedList = [t].[Value2])
 
 BeforeExecute
 -- Access AccessOleDb
