@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[PersonID],
-	[p].[FirstName]
+	N'123' + [p].[FirstName] + N'456'
 FROM
 	[Person] [p]
 WHERE

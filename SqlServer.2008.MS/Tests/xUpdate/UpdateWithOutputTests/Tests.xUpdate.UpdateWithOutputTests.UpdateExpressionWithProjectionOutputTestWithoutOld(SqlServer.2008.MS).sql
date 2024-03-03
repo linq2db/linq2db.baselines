@@ -83,7 +83,7 @@ SET
 	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
 	[s].[ValueStr],
-	[INSERTED].[Value]
+	INSERTED.[Value]
 FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
