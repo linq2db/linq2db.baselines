@@ -75,7 +75,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= IIF([i].[StrValue] > '4', 1, IIF([i].[StrValue] = '4', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -86,7 +86,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	IIF([i].[StrValue] > '4', 1, IIF([i].[StrValue] = '4', 0, -1)) >= 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -97,7 +97,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= IIF([i].[StrValue] > '2', 1, IIF([i].[StrValue] = '2', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -108,7 +108,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	IIF([i].[StrValue] > '2', 1, IIF([i].[StrValue] = '2', 0, -1)) <= 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -119,7 +119,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -130,7 +130,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1)) > 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -141,7 +141,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -152,7 +152,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1)) < 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -163,7 +163,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	0 = IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -174,7 +174,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1)) = 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -185,7 +185,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	0 >= IIF([i].[StrValue] > '2', 1, IIF([i].[StrValue] = '2', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -196,7 +196,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
+	IIF([i].[StrValue] > '2', 1, IIF([i].[StrValue] = '2', 0, -1)) <= 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -207,7 +207,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	0 <= IIF([i].[StrValue] > '4', 1, IIF([i].[StrValue] = '4', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -218,7 +218,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
+	IIF([i].[StrValue] > '4', 1, IIF([i].[StrValue] = '4', 0, -1)) >= 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -229,7 +229,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	0 > IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -240,7 +240,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1)) < 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -251,7 +251,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	0 < IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -262,7 +262,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	IIF([i].[StrValue] > '3', 1, IIF([i].[StrValue] = '3', 0, -1)) > 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -273,7 +273,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	0 <= IIF([i].[StrValue] > '5', 1, IIF([i].[StrValue] = '5', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -284,7 +284,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	IIF([i].[StrValue] > '5', 1, IIF([i].[StrValue] = '5', 0, -1)) >= 0
 
 BeforeExecute
 -- Access AccessOleDb
@@ -295,7 +295,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	0 >= IIF([i].[StrValue] > '1', 1, IIF([i].[StrValue] = '1', 0, -1))
 
 BeforeExecute
 -- Access AccessOleDb
@@ -306,7 +306,7 @@ SELECT TOP 2
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	IIF([i].[StrValue] > '1', 1, IIF([i].[StrValue] = '1', 0, -1)) <= 0
 
 BeforeExecute
 -- Access AccessOleDb

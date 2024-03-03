@@ -2,9 +2,9 @@
 -- Access AccessOleDb (asynchronously)
 
 SELECT
-	Max([x].[PersonID])
+	Max([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)

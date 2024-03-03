@@ -4,14 +4,14 @@ DECLARE @input VarWChar(6) -- String
 SET     @input = '%test%'
 
 SELECT
-	[p].[PersonID],
-	[_gjd_ri].[PersonID],
-	[_gjd_ri].[Diagnosis]
+	[m_1].[PersonID],
+	[d].[PersonID],
+	[d].[Diagnosis]
 FROM
-	[Person] [p]
-		INNER JOIN [Patient] [_gjd_ri] ON ([_gjd_ri].[PersonID] = [p].[PersonID])
+	[Person] [m_1]
+		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	LCase([p].[FirstName]) LIKE @input
+	LCase([m_1].[FirstName]) LIKE @input
 
 BeforeExecute
 -- Access AccessOleDb
