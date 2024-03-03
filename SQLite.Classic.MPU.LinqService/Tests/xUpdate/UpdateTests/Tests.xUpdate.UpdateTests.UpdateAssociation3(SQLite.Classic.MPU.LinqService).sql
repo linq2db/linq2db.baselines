@@ -28,14 +28,16 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Value1  -- Int32
+SET     @Value1 = 5
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = 5
+	[Value1] = @Value1
 FROM
 	[Child] [child_1]
 WHERE
-	[child_1].[ChildID] = 10000 AND [Parent].[ParentID] > 0 AND
+	[Parent].[ParentID] > 0 AND [child_1].[ChildID] = 10000 AND
 	[child_1].[ParentID] = [Parent].[ParentID]
 
