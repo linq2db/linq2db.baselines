@@ -11,5 +11,5 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	@hid.IsDescendantOf([t].[HID]) = @True
+	(@hid.IsDescendantOf([t].[HID]) = @True)
 

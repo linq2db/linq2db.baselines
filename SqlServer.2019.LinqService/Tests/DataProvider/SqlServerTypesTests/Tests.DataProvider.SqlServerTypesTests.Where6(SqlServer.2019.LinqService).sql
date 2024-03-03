@@ -11,7 +11,7 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	@hid.IsDescendantOf([t].[HID]) = @True AND [t].[ID] <> 1
+	(@hid.IsDescendantOf([t].[HID]) = @True) AND [t].[ID] <> 1
 ORDER BY
 	[t].[HID]
 

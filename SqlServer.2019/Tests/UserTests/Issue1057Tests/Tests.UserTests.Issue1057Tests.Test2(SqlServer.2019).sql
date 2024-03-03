@@ -100,20 +100,20 @@ SELECT
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = 1
 WHERE
-	[p].[TargetName] = N'bda.Requests'
+	([p].[TargetName] = N'bda.Requests')
 
 BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	[p].[Id],
 	[p].[TargetName],
+	[p].[Id],
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = 1
 ORDER BY
 	[p].[Id]
 

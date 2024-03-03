@@ -111,16 +111,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'test'
 DECLARE @id Int -- Int32
 SET     @id = 3
 
 UPDATE
 	[a_MainOptional]
 SET
-	[a_MainOptional].[Field] = N'test'
+	[a_MainOptional].[Field] = @Field
 FROM
 	[AssociatedTable] [pat]
-		LEFT JOIN [MainTable] [a_MainOptional] ON [pat].[Id] = [a_MainOptional].[Id]
+		LEFT JOIN [MainTable] [a_MainOptional] ON ([pat].[Id] = [a_MainOptional].[Id])
 WHERE
 	[pat].[Id] = @id
 

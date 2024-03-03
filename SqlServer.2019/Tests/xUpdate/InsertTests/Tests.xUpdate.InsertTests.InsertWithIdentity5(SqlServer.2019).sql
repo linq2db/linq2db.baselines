@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- SqlServer.2019
@@ -37,12 +37,10 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -51,7 +49,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
+	([p].[FirstName] = @FirstName) AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
 -- SqlServer.2019
@@ -83,12 +81,10 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -97,14 +93,14 @@ SELECT TOP (@take)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
+	([p].[FirstName] = @FirstName) AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
 -- SqlServer.2019
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 

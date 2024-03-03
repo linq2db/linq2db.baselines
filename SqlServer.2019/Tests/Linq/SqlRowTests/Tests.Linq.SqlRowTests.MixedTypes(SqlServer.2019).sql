@@ -39,10 +39,7 @@ SELECT
 FROM
 	[Mixed] [t]
 WHERE
-	[t].[Int] > 0 AND
-	[t].[Str] = N'One' AND
-	[t].[Double] = 1 AND
-	[t].[Bool] = 1 AND
+	[t].[Int] > 0 AND [t].[Str] = N'One' AND [t].[Double] = 1 AND [t].[Bool] = 1 AND
 	EXISTS(
 		SELECT
 			*

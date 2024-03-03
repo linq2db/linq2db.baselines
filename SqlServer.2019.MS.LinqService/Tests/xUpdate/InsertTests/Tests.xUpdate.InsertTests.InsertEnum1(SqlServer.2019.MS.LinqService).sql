@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -35,14 +35,14 @@ SELECT
 FROM
 	[Parent] [_]
 WHERE
-	[_].[ParentID] = @id AND [_].[Value1] = @Value1
+	[_].[ParentID] = @id AND ([_].[Value1] = @Value1)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 

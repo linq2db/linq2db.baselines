@@ -54,7 +54,7 @@ SELECT
 FROM
 	[BackgroundTask] [task_1]
 WHERE
-	[task_1].[PersonID] = @personId
+	([task_1].[PersonID] = @personId)
 
 BeforeExecute
 -- SqlServer.2019

@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param = [_].[SmallIntValue]
+	(@param = [_].[SmallIntValue])
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

@@ -31,7 +31,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 12
+	([r].[ID] = 101) AND ([r].[BigIntValue] = 12)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

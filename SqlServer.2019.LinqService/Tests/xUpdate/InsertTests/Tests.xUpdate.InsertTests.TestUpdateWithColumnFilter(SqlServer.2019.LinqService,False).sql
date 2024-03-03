@@ -31,12 +31,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -45,7 +43,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	([x].[FirstName] = @FirstName)
 
 BeforeExecute
 -- SqlServer.2019
@@ -59,24 +57,20 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[Gender] = @Gender
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[Gender] = @Gender
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -85,7 +79,7 @@ SELECT TOP (@take)
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	([x].[FirstName] = @FirstName)
 
 BeforeExecute
 -- SqlServer.2019
@@ -96,5 +90,5 @@ DELETE [x]
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @newName
+	([x].[FirstName] = @newName)
 
