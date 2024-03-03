@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	([r].[FirstName] = @FirstName)
+	[r].[FirstName] = @FirstName
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -42,5 +42,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	([r].[FirstName] = @FirstName)
+	[r].[FirstName] = @FirstName
 

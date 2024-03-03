@@ -42,7 +42,7 @@ AS
 		[parent_1].[Depth] + 1
 	FROM
 		[OrgGroup] [child]
-			INNER JOIN [previous] [parent_1] ON ([parent_1].[OrgGroup_Id] = [child].[ParentId])
+			INNER JOIN [previous] [parent_1] ON [parent_1].[OrgGroup_Id] = [child].[ParentId]
 )
 SELECT
 	[t1].[OrgGroup_Id],

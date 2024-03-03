@@ -13,7 +13,7 @@ WHERE
 		FROM
 			[GrandChild] [a_GrandChildrenX]
 		WHERE
-			([t].[ParentID] = [a_GrandChildrenX].[ParentID]) AND
+			[t].[ParentID] = [a_GrandChildrenX].[ParentID] AND
 			[a_GrandChildrenX].[ChildID] > 22
 	) > 1
 ORDER BY

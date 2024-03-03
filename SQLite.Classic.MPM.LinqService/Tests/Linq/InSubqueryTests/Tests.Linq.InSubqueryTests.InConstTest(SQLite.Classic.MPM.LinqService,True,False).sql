@@ -13,7 +13,7 @@ WHERE
 		FROM
 			[Parent] [p]
 		WHERE
-			(1 = [p].[Value1])
+			1 = [p].[Value1]
 	)
 
 BeforeExecute

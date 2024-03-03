@@ -37,7 +37,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN ([g_1].[TradingStatus] = 'D')
+				WHEN [g_1].[TradingStatus] = 'D'
 					THEN 1
 				ELSE 0
 			END as [c1]

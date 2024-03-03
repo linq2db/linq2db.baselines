@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [t]
 WHERE
-	([t].[FirstName] = @p)
+	[t].[FirstName] = @p
 LIMIT 2
 
 BeforeExecute
@@ -29,6 +29,6 @@ SELECT
 FROM
 	[Person] [t]
 WHERE
-	([t].[FirstName] = @p)
+	[t].[FirstName] = @p
 LIMIT 2
 

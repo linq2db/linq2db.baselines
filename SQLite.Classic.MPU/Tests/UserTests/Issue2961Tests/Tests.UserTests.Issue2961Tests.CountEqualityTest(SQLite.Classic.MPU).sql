@@ -83,7 +83,7 @@ FROM
 				[CondoTags] [g2]
 			GROUP BY
 				[g2].[CondoId]
-		) [subct] ON ([c_1].[Id] = [subct].[CondoId])
+		) [subct] ON [c_1].[Id] = [subct].[CondoId]
 		LEFT JOIN (
 			SELECT
 				[g1].[CondoId],
@@ -92,7 +92,7 @@ FROM
 				[CategoryCondos] [g1]
 			GROUP BY
 				[g1].[CondoId]
-		) [subcc] ON ([c_1].[Id] = [subcc].[CondoId])
+		) [subcc] ON [c_1].[Id] = [subcc].[CondoId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

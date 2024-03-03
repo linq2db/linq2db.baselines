@@ -50,7 +50,7 @@ FROM
 			1 as [__projection__set_id__]
 		FROM
 			[Person] [t2]
-				LEFT JOIN [Patient] [a_Patient] ON ([t2].[PersonID] = [a_Patient].[PersonID])
+				LEFT JOIN [Patient] [a_Patient] ON [t2].[PersonID] = [a_Patient].[PersonID]
 	) [t3]
 ORDER BY
 	[t3].[ID]

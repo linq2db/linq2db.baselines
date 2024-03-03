@@ -99,7 +99,7 @@ FROM
 			[a_ActualStage].[Id] as [Id_1]
 		FROM
 			[Task] [it]
-				LEFT JOIN [TaskStage] [a_ActualStage] ON ([it].[Id] = [a_ActualStage].[TaskId]) AND [a_ActualStage].[Actual] = 1
+				LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 	) [it_1]
 GROUP BY
 	[it_1].[c1],

@@ -65,7 +65,7 @@ FROM
 	[A] [t1]
 		LEFT JOIN ([B] [bc]
 			INNER JOIN [C] [c_1] ON [bc].[Id] = [c_1].[BId])
-		ON ([t1].[Id] = [bc].[AId])
+		ON [t1].[Id] = [bc].[AId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

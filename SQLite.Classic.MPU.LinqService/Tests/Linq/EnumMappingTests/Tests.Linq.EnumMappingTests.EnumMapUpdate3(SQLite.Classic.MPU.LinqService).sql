@@ -32,7 +32,7 @@ UPDATE
 SET
 	[BigIntValue] = @TestField
 WHERE
-	([LinqDataTypes].[ID] = 101) AND ([LinqDataTypes].[BigIntValue] = 11)
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

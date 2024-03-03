@@ -20,7 +20,7 @@ WHERE
 					[GrandChild] [g_1]
 				WHERE
 					([g_1].[ParentID] <= 3 OR [g_1].[ParentID] IS NULL) AND
-					([c_1].[ParentID] = [g_1].[ParentID]) AND ([c_1].[ChildID] = [g_1].[ChildID])
+					[c_1].[ParentID] = [g_1].[ParentID] AND [c_1].[ChildID] = [g_1].[ChildID]
 			)) AND
 			[p].[ParentID] = [c_1].[ParentID]
 	)

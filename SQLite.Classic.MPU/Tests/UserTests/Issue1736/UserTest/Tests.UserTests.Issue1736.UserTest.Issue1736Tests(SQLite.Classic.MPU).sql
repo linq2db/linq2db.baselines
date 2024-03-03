@@ -177,7 +177,7 @@ FROM
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x]
 				WHERE
-					([x].[InventoryResourceID] = [ir].[Id])
+					[x].[InventoryResourceID] = [ir].[Id]
 			), 0) + Cast((
 				SELECT
 					Count(*)

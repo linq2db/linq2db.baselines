@@ -120,7 +120,7 @@ FROM
 			) [t1]
 				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
 	) [m_2]
-		INNER JOIN [MasterClass] [d_1] ON ([m_2].[Id1] = [m_2].[MasterId])
+		INNER JOIN [MasterClass] [d_1] ON [m_2].[Id1] = [m_2].[MasterId]
 
 BeforeExecute
 DisposeTransaction

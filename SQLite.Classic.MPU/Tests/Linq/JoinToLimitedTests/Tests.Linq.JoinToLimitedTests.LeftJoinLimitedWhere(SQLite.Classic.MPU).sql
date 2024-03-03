@@ -15,5 +15,5 @@ FROM
 			FROM
 				[Child] [x]
 			LIMIT 1
-		) [c_1] ON ([c_1].[ParentID] = [o].[ParentID])
+		) [c_1] ON [c_1].[ParentID] = [o].[ParentID]
 

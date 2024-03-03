@@ -38,5 +38,5 @@ FROM
 				)
 			GROUP BY
 				[g_2].[ParentID]
-		) [p2] ON ([t1].[ParentID] = [p2].[ParentID])
+		) [p2] ON [t1].[ParentID] = [p2].[ParentID]
 

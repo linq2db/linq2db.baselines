@@ -33,7 +33,7 @@ VALUES
 		FROM
 			[Issue1363] [_]
 		WHERE
-			([_].[required_field] = @testId)
+			[_].[required_field] = @testId
 	)
 )
 
@@ -58,7 +58,7 @@ VALUES
 		FROM
 			[Issue1363] [_]
 		WHERE
-			([_].[required_field] = @testId)
+			[_].[required_field] = @testId
 	)
 )
 

@@ -51,7 +51,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] = @FirstName) AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 LIMIT 2
 
 BeforeExecute
@@ -99,7 +99,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] = @FirstName) AND [p].[LastName] = 'Shepard'
+	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
 LIMIT 2
 
 BeforeExecute

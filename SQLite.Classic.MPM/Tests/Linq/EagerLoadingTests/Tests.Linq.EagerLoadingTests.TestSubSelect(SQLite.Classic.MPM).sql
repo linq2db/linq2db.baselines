@@ -117,7 +117,7 @@ FROM
 				LIMIT @take
 			) [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction

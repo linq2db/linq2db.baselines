@@ -14,8 +14,8 @@ FROM
 			FROM
 				[GrandChild] [y]
 			WHERE
-				([y].[ParentID] = [p].[ParentID]) AND ([c_1].[ParentID] = [y].[ParentID]) AND
-				([c_1].[ChildID] = [y].[ChildID])
+				[y].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] = [y].[ParentID] AND
+				[c_1].[ChildID] = [y].[ChildID]
 		))
 
 BeforeExecute
@@ -36,7 +36,7 @@ WHERE
 		FROM
 			[GrandChild] [y]
 		WHERE
-			([y].[ParentID] = [p].[ParentID]) AND ([c_1].[ParentID] = [y].[ParentID]) AND
-			([c_1].[ChildID] = [y].[ChildID])
+			[y].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] = [y].[ParentID] AND
+			[c_1].[ChildID] = [y].[ChildID]
 	))
 

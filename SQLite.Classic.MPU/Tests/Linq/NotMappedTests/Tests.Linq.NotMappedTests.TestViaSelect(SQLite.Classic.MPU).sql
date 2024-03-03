@@ -136,7 +136,7 @@ SELECT
 	[s_1].[ParentId]
 FROM
 	[SuperClass] [q]
-		LEFT JOIN [Subclass1] [s] ON ([s].[ParentId] = [q].[Id])
+		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [q].[Id]
 		LEFT JOIN [Subclass2] [s_1] ON ([s_1].[ParentId] = [s].[Id] OR [s_1].[ParentId] IS NULL AND [s].[Id] IS NULL)
 
 BeforeExecute

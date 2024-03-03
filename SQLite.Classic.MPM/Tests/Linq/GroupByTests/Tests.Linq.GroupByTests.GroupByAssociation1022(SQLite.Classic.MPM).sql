@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			Count(CASE
-				WHEN ([g_1].[ChildID] >= 20)
+				WHEN [g_1].[ChildID] >= 20
 					THEN 1
 				ELSE NULL
 			END) as [Count_1],
@@ -28,6 +28,6 @@ WHERE
 			[GrandChild] [ch]
 				INNER JOIN [Parent] [a_Parent_1] ON [ch].[ParentID] = [a_Parent_1].[ParentID]
 		WHERE
-			([ch].[ChildID] >= 19) AND [g_2].[ParentID] = [a_Parent_1].[ParentID]
+			[ch].[ChildID] >= 19 AND [g_2].[ParentID] = [a_Parent_1].[ParentID]
 	) > 0
 

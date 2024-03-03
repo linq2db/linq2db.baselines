@@ -59,7 +59,7 @@ SELECT
 	Count(*)
 FROM
 	[catz] [cat]
-		INNER JOIN [owners] [owner_1] ON [cat].[OwnerId] IS NOT NULL AND ([cat].[OwnerId] = [owner_1].[Id])
+		INNER JOIN [owners] [owner_1] ON [cat].[OwnerId] IS NOT NULL AND [cat].[OwnerId] = [owner_1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

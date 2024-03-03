@@ -14,7 +14,7 @@ FROM
 			[a_Doctor].[PersonID]
 		FROM
 			[Person] [_]
-				LEFT JOIN [Doctor] [a_Doctor] ON ([_].[PersonID] = [a_Doctor].[PersonID])
+				LEFT JOIN [Doctor] [a_Doctor] ON [_].[PersonID] = [a_Doctor].[PersonID]
 	) [_1]
 WHERE
 	([_1].[Length_1] >= 0 OR [_1].[Taxonomy] IS NULL)

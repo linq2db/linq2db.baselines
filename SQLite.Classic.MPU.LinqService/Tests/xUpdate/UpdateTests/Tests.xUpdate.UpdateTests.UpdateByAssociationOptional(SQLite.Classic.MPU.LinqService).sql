@@ -120,7 +120,7 @@ SET
 	[Field] = @Field
 FROM
 	[MainTable] [_]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON ([_].[Id] = [a_AssociatedOptional].[Id])
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
 WHERE
 	[_].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 

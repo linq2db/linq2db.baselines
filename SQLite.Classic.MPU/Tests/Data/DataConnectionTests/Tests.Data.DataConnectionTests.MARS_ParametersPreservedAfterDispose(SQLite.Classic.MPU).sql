@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	([_].[LastName] = @param)
+	[_].[LastName] = @param
 

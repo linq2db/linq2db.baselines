@@ -219,7 +219,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON ([m_2].[Id] = [d].[ParentId])
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		INNER JOIN [MainItem2] [mm] ON [d].[Id] / 10 = [mm].[Id]
 WHERE
 	[d].[Id] % 2 = 0
@@ -262,9 +262,9 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON ([t1].[Id] = [d].[ParentId])
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON ([m_2].[Id] = [d_1].[ParentId])
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -283,7 +283,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON ([m_2].[Id] = [d].[ParentId])
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
 BeforeExecute
 DisposeTransaction

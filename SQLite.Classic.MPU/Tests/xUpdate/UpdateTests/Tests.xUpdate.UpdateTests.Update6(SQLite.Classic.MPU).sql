@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND ([p].[Value1] = 1)
+	[p].[ParentID] = @id AND [p].[Value1] = 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -52,5 +52,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND ([p].[Value1] = 2)
+	[p].[ParentID] = @id AND [p].[Value1] = 2
 

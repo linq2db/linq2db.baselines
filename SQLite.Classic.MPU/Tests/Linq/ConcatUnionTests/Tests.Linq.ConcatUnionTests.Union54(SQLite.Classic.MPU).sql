@@ -27,5 +27,5 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn]
 			FROM
 				[Child] [a_Children]
-		) [t1] ON ([p2].[ParentID] = [t1].[ParentID]) AND [t1].[rn] <= 1
+		) [t1] ON [p2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 

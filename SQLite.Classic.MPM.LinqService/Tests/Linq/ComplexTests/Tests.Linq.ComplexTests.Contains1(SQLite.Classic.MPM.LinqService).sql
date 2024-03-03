@@ -26,7 +26,7 @@ FROM
 						GROUP BY
 							[max_1].[ChildID]
 					) [t1] ON [gc3].[GrandChildID] = [t1].[Max_1]
-		) [gc3_1] ON ([p].[ParentID] = [gc3_1].[ParentID])
+		) [gc3_1] ON [p].[ParentID] = [gc3_1].[ParentID]
 WHERE
 	([gc3_1].[not_null] IS NULL OR ([gc3_1].[GrandChildID] NOT IN (111, 222) OR [gc3_1].[GrandChildID] IS NULL))
 

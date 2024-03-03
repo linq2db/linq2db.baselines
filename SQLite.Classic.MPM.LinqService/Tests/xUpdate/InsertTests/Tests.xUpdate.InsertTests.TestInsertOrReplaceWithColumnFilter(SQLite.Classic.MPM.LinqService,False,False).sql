@@ -59,7 +59,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute
@@ -100,7 +100,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	([x].[FirstName] = @FirstName)
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute

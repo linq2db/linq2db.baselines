@@ -41,7 +41,7 @@ WHERE
 		FROM
 			[TestEqualsTable2] [__]
 		WHERE
-			([__].[Id] = @param) AND ([_].[Id] = [__].[FK])
+			[__].[Id] = @param AND [_].[Id] = [__].[FK]
 	)
 
 BeforeExecute

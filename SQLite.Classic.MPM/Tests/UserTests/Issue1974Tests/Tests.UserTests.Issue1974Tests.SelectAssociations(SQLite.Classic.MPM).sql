@@ -65,8 +65,8 @@ SELECT
 	[a_BoughtQuery].[Price]
 FROM
 	[Person1974] [t1]
-		LEFT JOIN [Article] [a_Bought] ON ([t1].[ID] = [a_Bought].[PersonId])
-		LEFT JOIN [Article] [a_BoughtQuery] ON ([a_BoughtQuery].[PersonId] = [t1].[ID])
+		LEFT JOIN [Article] [a_Bought] ON [t1].[ID] = [a_Bought].[PersonId]
+		LEFT JOIN [Article] [a_BoughtQuery] ON [a_BoughtQuery].[PersonId] = [t1].[ID]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

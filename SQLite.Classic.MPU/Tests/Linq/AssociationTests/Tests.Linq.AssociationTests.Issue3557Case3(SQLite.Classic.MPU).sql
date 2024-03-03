@@ -89,7 +89,7 @@ SELECT
 	)
 FROM
 	[Data] [i]
-		LEFT JOIN [SubData1] [a_SubData] ON ([i].[Id] = [a_SubData].[Id])
+		LEFT JOIN [SubData1] [a_SubData] ON [i].[Id] = [a_SubData].[Id]
 ORDER BY
 	[i].[Id]
 

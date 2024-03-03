@@ -132,7 +132,7 @@ FROM
 					[Table4] [id]
 				WHERE
 					[id].[ID] = [r].[ID] AND [a_Table3_1].[ID] IS NOT NULL AND
-					([a_Table3_1].[ID] = [id].[ID3])
+					[a_Table3_1].[ID] = [id].[ID3]
 			)
 	) [m_1]
 		INNER JOIN [Table4] [d] ON ([m_1].[ID] = [d].[ID3] OR [m_1].[ID] IS NULL AND [d].[ID3] IS NULL)
@@ -161,7 +161,7 @@ WHERE
 			[Table4] [id]
 		WHERE
 			[id].[ID] = [r].[ID] AND [a_Table3_1].[ID] IS NOT NULL AND
-			([a_Table3_1].[ID] = [id].[ID3])
+			[a_Table3_1].[ID] = [id].[ID3]
 	)
 
 BeforeExecute

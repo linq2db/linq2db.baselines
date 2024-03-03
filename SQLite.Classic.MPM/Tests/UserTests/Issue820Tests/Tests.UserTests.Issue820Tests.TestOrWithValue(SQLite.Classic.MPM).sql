@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	(@param = [_].[SmallIntValue])
+	@param = [_].[SmallIntValue]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

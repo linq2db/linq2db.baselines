@@ -13,5 +13,5 @@ SELECT
 FROM
 	[Person] [x_1]
 WHERE
-	([x_1].[FirstName] = @t)
+	[x_1].[FirstName] = @t
 

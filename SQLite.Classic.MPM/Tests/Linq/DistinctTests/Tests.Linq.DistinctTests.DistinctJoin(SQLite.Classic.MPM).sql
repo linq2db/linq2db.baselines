@@ -18,5 +18,5 @@ FROM
 				[_1].[SmallIntValue]
 			FROM
 				[LinqDataTypes] [_1]
-		) [p] ON ([p].[ID] = [e].[ID])
+		) [p] ON [p].[ID] = [e].[ID]
 

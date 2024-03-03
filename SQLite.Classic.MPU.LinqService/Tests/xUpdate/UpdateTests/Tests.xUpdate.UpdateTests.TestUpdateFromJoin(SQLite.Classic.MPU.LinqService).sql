@@ -46,12 +46,12 @@ SET
 	[col3] = Replace([gt_s_one].[col3], 'auth.', ''),
 	[col4] = [gt_s_one].[col4],
 	[col5] = CASE
-		WHEN ([gt_s_one].[col3] = 'empty')
+		WHEN [gt_s_one].[col3] = 'empty'
 			THEN '1'
 		ELSE '0'
 	END,
 	[col6] = CASE
-		WHEN ([gt_s_one].[col3] = 'empty')
+		WHEN [gt_s_one].[col3] = 'empty'
 			THEN ''
 		ELSE Cast([y1_1].[id] as NVarChar(255))
 	END

@@ -12,7 +12,7 @@ SELECT
 		FROM
 			[GrandChild] [g_1]
 		WHERE
-			([g_1].[ChildID] = [c_1].[ChildID]) AND [g_1].[GrandChildID] > 0
+			[g_1].[ChildID] = [c_1].[ChildID] AND [g_1].[GrandChildID] > 0
 	),
 	(
 		SELECT
@@ -20,7 +20,7 @@ SELECT
 		FROM
 			[GrandChild] [t1]
 		WHERE
-			([t1].[ChildID] = [c_1].[ChildID]) AND [t1].[GrandChildID] > 0
+			[t1].[ChildID] = [c_1].[ChildID] AND [t1].[GrandChildID] > 0
 	)
 FROM
 	[Child] [c_1]

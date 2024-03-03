@@ -168,7 +168,7 @@ FROM
 	[Item] [m_1]
 		INNER JOIN [ItemText] [d] ON [m_1].[Id] = [d].[ItemId]
 WHERE
-	([d].[Lang] = @lang)
+	[d].[Lang] = @lang
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -46,7 +46,7 @@ SET
 FROM
 	[Parent] [a_Parent]
 WHERE
-	[Child].[ChildID] = @id AND ([a_Parent].[Value1] = 1) AND
+	[Child].[ChildID] = @id AND [a_Parent].[Value1] = 1 AND
 	[Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute

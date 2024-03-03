@@ -31,9 +31,9 @@ FROM
 					) [t1]
 			) [t2]
 				INNER JOIN [Child] [d] ON [t2].[ParentID] = [d].[ParentID]
-				LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
+				LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
-		INNER JOIN [Child] [d_1] ON ([m_1].[ParentID] = [d_1].[ParentID])
+		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -57,7 +57,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

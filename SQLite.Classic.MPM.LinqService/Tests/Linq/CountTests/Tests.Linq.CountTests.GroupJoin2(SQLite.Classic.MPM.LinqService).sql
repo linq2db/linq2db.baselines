@@ -16,7 +16,7 @@ SELECT
 		FROM
 			[GrandChild] [g_1]
 		WHERE
-			([t1].[ParentID] = [g_1].[ParentID])
+			[t1].[ParentID] = [g_1].[ParentID]
 	)
 FROM
 	[Parent] [t1]

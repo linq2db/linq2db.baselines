@@ -69,7 +69,7 @@ SELECT
 	[e].[InMaxQuantity]
 FROM
 	[StLink] [t1]
-		LEFT JOIN [EdtLink] [e] ON ([t1].[InId] = [e].[InId])
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
 	[t1].[InId] = 1
 LIMIT 2
@@ -86,7 +86,7 @@ SELECT
 	[e].[InMaxQuantity]
 FROM
 	[StLink] [t1]
-		LEFT JOIN [EdtLink] [e] ON ([t1].[InId] = [e].[InId])
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
 	[t1].[InId] = 2
 LIMIT 2

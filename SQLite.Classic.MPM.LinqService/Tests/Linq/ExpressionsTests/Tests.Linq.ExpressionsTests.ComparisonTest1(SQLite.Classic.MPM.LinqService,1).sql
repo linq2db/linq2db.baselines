@@ -18,13 +18,13 @@ SELECT
 						FROM
 							[Patient] [_]
 						WHERE
-							([_].[PersonID] = @personId) AND [_].[PersonID] NOT IN (
+							[_].[PersonID] = @personId AND [_].[PersonID] NOT IN (
 								SELECT
 									[_1].[PersonID]
 								FROM
 									[Patient] [_1]
 								WHERE
-									([_1].[PersonID] = @personId_1)
+									[_1].[PersonID] = @personId_1
 							)
 					) [t1]
 					CROSS JOIN (
@@ -33,13 +33,13 @@ SELECT
 						FROM
 							[Patient] [_2]
 						WHERE
-							([_2].[PersonID] = @personId_1) AND [_2].[PersonID] NOT IN (
+							[_2].[PersonID] = @personId_1 AND [_2].[PersonID] NOT IN (
 								SELECT
 									[_3].[PersonID]
 								FROM
 									[Patient] [_3]
 								WHERE
-									([_3].[PersonID] = @personId)
+									[_3].[PersonID] = @personId
 							)
 					) [t2]
 			WHERE

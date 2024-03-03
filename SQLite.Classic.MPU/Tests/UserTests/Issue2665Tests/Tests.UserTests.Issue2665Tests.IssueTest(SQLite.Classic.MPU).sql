@@ -68,7 +68,7 @@ WHERE
 				GROUP BY
 					[groupedProduct].[Id]
 				HAVING
-					(Count(*) = 1)
+					Count(*) = 1
 			) [p]
 		WHERE
 			[p].[Id] >= [pam].[ProductId]

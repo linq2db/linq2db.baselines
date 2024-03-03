@@ -30,7 +30,7 @@ FROM
 		WHERE
 			[x_1].[PersonID] = 2
 	) [t1]
-		LEFT JOIN [Person] [y] ON ([y].[PersonID] = [t1].[ID])
+		LEFT JOIN [Person] [y] ON [y].[PersonID] = [t1].[ID]
 WHERE
 	[t1].[ID] = 3
 

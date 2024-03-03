@@ -120,9 +120,9 @@ FROM
 					[m_1].[Id2] DESC
 				LIMIT @take
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON ([t1].[Id1] = [dd].[MasterId])
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
-		INNER JOIN [MasterClass] [d] ON ([m_2].[Id1] = [m_2].[MasterId])
+		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [m_2].[MasterId]
 
 BeforeExecute
 DisposeTransaction
@@ -152,7 +152,7 @@ FROM
 			[m_1].[Id2] DESC
 		LIMIT @take
 	) [t1]
-		INNER JOIN [DetailClass] [dd] ON ([t1].[Id1] = [dd].[MasterId])
+		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

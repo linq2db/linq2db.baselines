@@ -67,13 +67,11 @@ SET
 	[col3] = Replace([x].[col3], 'auth.', ''),
 	[col4] = [x].[col4],
 	[col5] = CASE
-		WHEN ([x].[col3] = 'empty')
-			THEN '1'
+		WHEN [x].[col3] = 'empty' THEN '1'
 		ELSE '0'
 	END,
 	[col6] = CASE
-		WHEN ([x].[col3] = 'empty')
-			THEN ''
+		WHEN [x].[col3] = 'empty' THEN ''
 		ELSE Cast([y1_1].[id] as NVarChar(255))
 	END
 FROM

@@ -53,10 +53,10 @@ FROM
 			[p2].[StringProp] as [StringProp_1]
 		FROM
 			[ConditionalData] [p]
-				LEFT JOIN [ConditionalData] [p2] ON ([p2].[Id] = [p].[Id]) AND [p2].[StringProp] IS NOT NULL
+				LEFT JOIN [ConditionalData] [p2] ON [p2].[Id] = [p].[Id] AND [p2].[StringProp] IS NOT NULL
 	) [x]
 WHERE
-	([x].[StringProp] = '-1')
+	[x].[StringProp] = '-1'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

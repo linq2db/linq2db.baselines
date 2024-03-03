@@ -14,7 +14,7 @@ FROM
 				[GrandChild] [ch]
 			WHERE
 				[ch].[ParentID] > 0
-		) [ch_1] ON ([p].[ParentID] = [ch_1].[ParentID])
+		) [ch_1] ON [p].[ParentID] = [ch_1].[ParentID]
 WHERE
 	[ch_1].[not_null] IS NULL AND [ch_1].[not_null] IS NULL
 

@@ -109,7 +109,7 @@ SELECT
 						FROM
 							[DetailClass] [a_Details]
 						WHERE
-							([m_1].[Id1] = [a_Details].[MasterId])
+							[m_1].[Id1] = [a_Details].[MasterId]
 					) [t1]
 				ORDER BY
 					[t1].[DetailId]
@@ -125,7 +125,7 @@ WHERE
 		FROM
 			[DetailClass] [a_Details_1]
 		WHERE
-			([m_1].[Id1] = [a_Details_1].[MasterId])
+			[m_1].[Id1] = [a_Details_1].[MasterId]
 	) > 1
 
 BeforeExecute
@@ -145,7 +145,7 @@ FROM
 		FROM
 			[MasterClass] [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction

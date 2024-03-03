@@ -19,7 +19,7 @@ FROM
 				[c_1].[ChildID] as [ChildID_1]
 			FROM
 				[Child] [c_1]
-		) [c_2] ON ([s].[ParentID] = [c_2].[ParentID])
+		) [c_2] ON [s].[ParentID] = [c_2].[ParentID]
 WHERE
 	[c_2].[ChildID] < 0
 

@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] = 1)
+	[p].[Value1] = 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -47,7 +47,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	(1 = [p].[Value1])
+	1 = [p].[Value1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

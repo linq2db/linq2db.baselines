@@ -79,7 +79,7 @@ FROM
 				[ili].[Suppressed] = 0
 			GROUP BY
 				[g_1].[InvoiceID]
-		) [ia] ON ([ia].[InvoiceId] = [t1].[InvoiceID])
+		) [ia] ON [ia].[InvoiceId] = [t1].[InvoiceID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -116,7 +116,7 @@ FROM
 				[ili].[Suppressed] = 0
 			GROUP BY
 				[g_1].[InvoiceID]
-		) [ia] ON ([ia].[InvoiceId] = [t1].[InvoiceID])
+		) [ia] ON [ia].[InvoiceId] = [t1].[InvoiceID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

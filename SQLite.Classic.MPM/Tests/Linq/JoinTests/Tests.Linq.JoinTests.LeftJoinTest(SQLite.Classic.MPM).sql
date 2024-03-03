@@ -14,5 +14,5 @@ SELECT
 	[p2].[Gender]
 FROM
 	[Person] [p1]
-		LEFT JOIN [Person] [p2] ON ([p1].[PersonID] = [p2].[PersonID])
+		LEFT JOIN [Person] [p2] ON [p1].[PersonID] = [p2].[PersonID]
 

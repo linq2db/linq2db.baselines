@@ -1802,11 +1802,11 @@ FROM
 					[m_1].[Id1]
 				FROM
 					[MasterClass] [m_1]
-						INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+						INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 			) [t1]
-				INNER JOIN [DetailClass] [d_1] ON ([t1].[Id1] = [d_1].[MasterId])
+				INNER JOIN [DetailClass] [d_1] ON [t1].[Id1] = [d_1].[MasterId]
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_2] ON ([m_2].[DetailId] = [d_2].[DetailId])
+		INNER JOIN [SubDetailClass] [d_2] ON [m_2].[DetailId] = [d_2].[DetailId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -1822,9 +1822,9 @@ FROM
 			[m_1].[Id1]
 		FROM
 			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 	) [m_2]
-		INNER JOIN [DetailClass] [d_1] ON ([m_2].[Id1] = [d_1].[MasterId])
+		INNER JOIN [DetailClass] [d_1] ON [m_2].[Id1] = [d_1].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -1843,9 +1843,9 @@ FROM
 			[d].[DetailId]
 		FROM
 			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_1] ON ([m_2].[DetailId] = [d_1].[DetailId])
+		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
 		LEFT JOIN [SubDetailClass] [a_Detail] ON ([d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
 BeforeExecute
@@ -1863,7 +1863,7 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

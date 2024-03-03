@@ -54,7 +54,7 @@ FROM
 						[a_Children].[ParentId]
 					FROM
 						[Test3799Item] [a_Children]
-				) [t1] ON ([item_1].[Id] = [t1].[ParentId]) AND [t1].[rn] <= 1
+				) [t1] ON [item_1].[Id] = [t1].[ParentId] AND [t1].[rn] <= 1
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON ([m_1].[Id] = [d].[ParentId] OR [m_1].[Id] IS NULL AND [d].[ParentId] IS NULL)
 
@@ -77,7 +77,7 @@ FROM
 				[a_Children].[ParentId]
 			FROM
 				[Test3799Item] [a_Children]
-		) [t1] ON ([item_1].[Id] = [t1].[ParentId]) AND [t1].[rn] <= 1
+		) [t1] ON [item_1].[Id] = [t1].[ParentId] AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

@@ -18,7 +18,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

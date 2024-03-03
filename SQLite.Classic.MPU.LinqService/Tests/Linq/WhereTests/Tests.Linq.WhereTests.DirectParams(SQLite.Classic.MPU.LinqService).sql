@@ -14,5 +14,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @id AND ([p].[FirstName] = @name)
+	[p].[PersonID] = @id AND [p].[FirstName] = @name
 

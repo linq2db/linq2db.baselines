@@ -8,7 +8,7 @@ SELECT
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [c_1] ON ([p].[ParentID] = [c_1].[ParentID])
+		LEFT JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
 WHERE
 	[p].[ParentID] >= 4
 

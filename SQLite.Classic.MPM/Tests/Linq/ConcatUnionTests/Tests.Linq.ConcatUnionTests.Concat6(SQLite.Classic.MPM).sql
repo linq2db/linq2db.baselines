@@ -7,15 +7,15 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	((
+	(
 		SELECT
 			Count(*)
 		FROM
 			[GrandChild] [a_GrandChildren]
 		WHERE
-			([c_1].[ParentID] = [a_GrandChildren].[ParentID]) AND
-			([c_1].[ChildID] = [a_GrandChildren].[ChildID])
-	) = 2)
+			[c_1].[ParentID] = [a_GrandChildren].[ParentID] AND
+			[c_1].[ChildID] = [a_GrandChildren].[ChildID]
+	) = 2
 UNION ALL
 SELECT
 	[c_2].[ParentID],
@@ -23,13 +23,13 @@ SELECT
 FROM
 	[Child] [c_2]
 WHERE
-	((
+	(
 		SELECT
 			Count(*)
 		FROM
 			[GrandChild] [a_GrandChildren_1]
 		WHERE
-			([c_2].[ParentID] = [a_GrandChildren_1].[ParentID]) AND
-			([c_2].[ChildID] = [a_GrandChildren_1].[ChildID])
-	) = 3)
+			[c_2].[ParentID] = [a_GrandChildren_1].[ParentID] AND
+			[c_2].[ChildID] = [a_GrandChildren_1].[ChildID]
+	) = 3
 

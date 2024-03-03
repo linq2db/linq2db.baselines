@@ -164,7 +164,7 @@ SELECT
 FROM
 	[TPHTable] [x]
 WHERE
-	([x].[Value1] = 'Str1')
+	[x].[Value1] = 'Str1'
 LIMIT 2
 
 BeforeExecute
@@ -180,7 +180,7 @@ SELECT
 FROM
 	[TPHTable] [x]
 WHERE
-	([x].[Value2] = 'Str2')
+	[x].[Value2] = 'Str2'
 LIMIT 2
 
 BeforeExecute
@@ -196,7 +196,7 @@ SELECT
 FROM
 	[TPHTable] [x]
 WHERE
-	([x].[Value3] = 'Str3')
+	[x].[Value3] = 'Str3'
 LIMIT 2
 
 BeforeExecute
