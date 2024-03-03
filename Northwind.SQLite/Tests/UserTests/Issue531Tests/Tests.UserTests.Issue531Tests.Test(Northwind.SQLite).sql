@@ -25,7 +25,7 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	[e].[Extension] = @ext
+	([e].[Extension] = @ext)
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -13,15 +11,13 @@ SELECT
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
-		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
+		LEFT JOIN [Patient] [a_Patient] ON ([p].[PersonID] = [a_Patient].[PersonID])
 WHERE
 	[p].[PersonID] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -33,8 +29,8 @@ SELECT
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
-		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
+		LEFT JOIN [Patient] [a_Patient] ON ([p].[PersonID] = [a_Patient].[PersonID])
 WHERE
 	[p].[PersonID] = 2
-LIMIT @take
+LIMIT 2
 

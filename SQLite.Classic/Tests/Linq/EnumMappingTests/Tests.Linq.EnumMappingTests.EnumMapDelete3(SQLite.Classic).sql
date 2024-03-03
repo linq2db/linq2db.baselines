@@ -28,7 +28,7 @@ BeforeExecute
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 12
+	([LinqDataTypes].[ID] = 101) AND ([LinqDataTypes].[BigIntValue] = 12)
 
 BeforeExecute
 -- SQLite.Classic SQLite

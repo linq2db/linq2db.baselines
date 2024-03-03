@@ -58,7 +58,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Array] = X'010203'
+	([_].[Array] = X'010203')
 LIMIT 2
 
 BeforeExecute
@@ -71,7 +71,7 @@ SELECT
 FROM
 	[Issue1303] [_]
 WHERE
-	[_].[Binary] = X'0405'
+	([_].[Binary] = X'0405')
 LIMIT 2
 
 BeforeExecute

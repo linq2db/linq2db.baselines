@@ -31,7 +31,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101
+	([r].[ID] = 101)
 
 BeforeExecute
 -- SQLite.MS SQLite

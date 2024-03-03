@@ -41,7 +41,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -61,7 +61,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] IS NOT NULL
+	1 = 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

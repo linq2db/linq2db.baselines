@@ -1786,10 +1786,10 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_DetailClass].[DetailId],
-	[detail].[SubDetailId],
-	[detail].[DetailId],
-	[detail].[SubDetailValue],
+	[m_2].[DetailId],
+	[d_1].[SubDetailId],
+	[d_1].[DetailId],
+	[d_1].[SubDetailValue],
 	[a_Detail].[SubDetailId],
 	[a_Detail].[DetailId],
 	[a_Detail].[SubDetailValue]
@@ -1799,12 +1799,12 @@ FROM
 			[d].[DetailId]
 		FROM
 			[DetailClass] [d]
-				INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [d].[MasterId]
+				INNER JOIN [MasterClass] [m_1] ON ([m_1].[Id1] = [d].[MasterId])
 		WHERE
 			[m_1].[Id1] IN (1, 2)
-	) [lw_DetailClass]
-		INNER JOIN [SubDetailClass] [detail] ON [lw_DetailClass].[DetailId] = [detail].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON ([detail].[DetailId] = [a_Detail].[DetailId] OR [detail].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
+	) [m_2]
+		INNER JOIN [SubDetailClass] [d_1] ON ([m_2].[DetailId] = [d_1].[DetailId])
+		LEFT JOIN [SubDetailClass] [a_Detail] ON ([d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
 
 BeforeExecute
 DisposeTransaction
@@ -1817,7 +1817,7 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[DetailClass] [d]
-		INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [MasterClass] [m_1] ON ([m_1].[Id1] = [d].[MasterId])
 WHERE
 	[m_1].[Id1] IN (1, 2)
 

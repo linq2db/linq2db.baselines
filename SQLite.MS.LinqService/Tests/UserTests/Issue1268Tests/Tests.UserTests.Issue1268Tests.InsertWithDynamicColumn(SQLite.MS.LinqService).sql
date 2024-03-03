@@ -59,8 +59,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -69,13 +67,11 @@ SELECT
 FROM
 	[DynamicColumnTable] [e]
 WHERE
-	[e].[Name] = 'Some1'
-LIMIT @take
+	([e].[Name] = 'Some1')
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[e].[Id],
@@ -84,8 +80,8 @@ SELECT
 FROM
 	[DynamicColumnTable] [e]
 WHERE
-	[e].[Name] = 'Some2'
-LIMIT @take
+	([e].[Name] = 'Some2')
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite

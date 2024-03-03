@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Min([p].[ParentID])
+	Min([t1].[ParentID])
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 

@@ -24,16 +24,14 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 12
-LIMIT @take
+	([r].[ID] = 101) AND ([r].[BigIntValue] = 12)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite

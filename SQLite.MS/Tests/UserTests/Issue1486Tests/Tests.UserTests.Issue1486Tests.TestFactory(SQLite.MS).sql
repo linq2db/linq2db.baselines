@@ -2,13 +2,11 @@
 BeginTransaction(Serializable)
 BeforeExecute
 --  SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
@@ -19,16 +17,14 @@ FROM
 					[a_Parent].[ParentID]
 				FROM
 					[Child] [t1]
-						LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-				LIMIT @take
+						LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
+				LIMIT 1
 			) [t2]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 BeforeExecute
 --  SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID],
@@ -37,8 +33,8 @@ SELECT
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]
-		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-LIMIT @take
+		LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

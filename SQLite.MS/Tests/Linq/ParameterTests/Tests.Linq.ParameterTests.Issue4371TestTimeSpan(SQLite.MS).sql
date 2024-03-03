@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnTS] = @ts
+	([r].[ColumnTS] = @ts)
 
 BeforeExecute
 -- SQLite.MS SQLite

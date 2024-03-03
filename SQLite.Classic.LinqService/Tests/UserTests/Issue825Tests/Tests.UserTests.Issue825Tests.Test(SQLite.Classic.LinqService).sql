@@ -6,17 +6,17 @@ DECLARE @userId  -- Int32
 SET     @userId = 32
 
 SELECT
-	[p].[ParentID]
+	[child_1].[ParentID]
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+	[Parent] [child_1]
+		INNER JOIN [Child] [a_Childs] ON [child_1].[ParentID] = [a_Childs].[ParentID]
 WHERE
-	[c_1].[ChildID] = @childId AND EXISTS(
+	[a_Childs].[ChildID] = @childId AND EXISTS(
 		SELECT
 			*
 		FROM
 			[GrandChild] [permission]
 		WHERE
-			[p].[ParentID] = [permission].[ParentID] AND [permission].[ChildID] = @userId
+			[permission].[ChildID] = @userId AND [child_1].[ParentID] = [permission].[ParentID]
 	)
 
