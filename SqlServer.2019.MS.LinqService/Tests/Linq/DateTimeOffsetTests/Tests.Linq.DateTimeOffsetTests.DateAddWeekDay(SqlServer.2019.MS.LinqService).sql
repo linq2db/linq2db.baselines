@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	DateAdd(weekday, 1, [t].[TransactionDate])
+	Convert(Date, DateAdd(weekday, 1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

@@ -22,27 +22,27 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @MoneyValue Decimal(4, 0)
+SET     @MoneyValue = 2000
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 200
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[MoneyValue] = 2000,
-	[t].[SmallIntValue] = 200
-FROM
-	[LinqDataTypes] [t]
+	[MoneyValue] = @MoneyValue,
+	[SmallIntValue] = @SmallIntValue
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
