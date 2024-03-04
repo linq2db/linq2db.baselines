@@ -15,10 +15,10 @@ SELECT
 					FROM
 						[Child] [c_1]
 					WHERE
-						[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1
+						[c_1].[ParentID] > 1 AND [p].[ParentID] = [c_1].[ParentID]
 				)
 		)
 			THEN 1
 		ELSE 0
-	END
+	END as [c1]
 

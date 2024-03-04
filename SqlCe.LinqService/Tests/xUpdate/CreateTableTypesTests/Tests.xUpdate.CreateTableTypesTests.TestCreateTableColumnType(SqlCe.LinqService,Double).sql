@@ -53,7 +53,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Double]
+	[t1].[Double] as [Double_1]
 FROM
 	[CreateTableTypes] [t1]
 ORDER BY

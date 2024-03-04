@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @Date DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	Cast(Floor(Cast([_].[DateTimeValue] as Float)) as DateTime) = @Date
+	Cast(Floor(Cast([_].[DateTimeValue] as Float)) as DateTime) = Cast(Floor(Cast(Convert(Datetime, '2009-09-20') as Float)) as DateTime)
 

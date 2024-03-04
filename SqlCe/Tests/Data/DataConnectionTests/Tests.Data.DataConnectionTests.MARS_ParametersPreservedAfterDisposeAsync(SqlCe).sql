@@ -5,7 +5,7 @@ SET     @param = 'test'
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]

@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p NVarChar(2) -- String
-SET     @p = '23'
 
 SELECT
-	@p
+	'23' as [c1]
 

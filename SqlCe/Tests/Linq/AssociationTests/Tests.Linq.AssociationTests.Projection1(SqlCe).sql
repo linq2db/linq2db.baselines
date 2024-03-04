@@ -4,7 +4,7 @@
 SELECT
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]

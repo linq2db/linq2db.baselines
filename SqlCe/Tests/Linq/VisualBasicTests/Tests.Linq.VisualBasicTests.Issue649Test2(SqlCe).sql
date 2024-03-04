@@ -33,18 +33,16 @@ CREATE TABLE [person649]
 
 BeforeExecute
 -- SqlCe
-DECLARE @added DateTime
-SET     @added = '2017-01-01'
 
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	Max([p].[added])
+	Max([$VB$It].[added]) as [Max_1]
 FROM
-	[activity649] [p]
-		INNER JOIN [person649] [a_Person] ON [p].[personid] = [a_Person].[personid]
+	[activity649] [$VB$It]
+		INNER JOIN [person649] [a_Person] ON [$VB$It].[personid] = [a_Person].[personid]
 WHERE
-	[p].[added] >= @added
+	[$VB$It].[added] >= Convert(Datetime, '2017-01-01')
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]

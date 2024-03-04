@@ -2,24 +2,24 @@
 -- SqlCe
 
 SELECT
-	[t2].[PersonID],
-	[t2].[FirstName],
-	[t2].[LastName],
-	[t2].[MiddleName],
-	[t2].[Gender],
-	[t2].[LastName] + ', ' + [t2].[FirstName],
-	[t1].[cnt]
+	[t3].[PersonID],
+	[t3].[FirstName],
+	[t3].[LastName],
+	[t3].[MiddleName],
+	[t3].[Gender],
+	[t3].[LastName] + ', ' + [t3].[FirstName] as [FullName],
+	[t3].[LastName] + ', ' + [t3].[FirstName] as [AsSqlFullName],
+	[t2].[Count_1] as [DoctorCount]
 FROM
-	[Person] [t2]
-		LEFT JOIN (
+	[Person] [t3]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
+				Count(*) as [Count_1]
 			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON [t1].[PersonID] = [t2].[PersonID]
+				[Doctor] [t1]
+			WHERE
+				[t1].[PersonID] = [t3].[PersonID]
+		) [t2]
 
 BeforeExecute
 -- SqlCe
@@ -30,19 +30,19 @@ SELECT
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[i].[LastName] + ', ' + [i].[FirstName],
-	[t1].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+	[i].[LastName] + ', ' + [i].[FirstName] as [AsSqlFullName],
+	[t2].[Count_1] as [DoctorCount]
 FROM
 	[Person] [i]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
+				Count(*) as [Count_1]
 			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON [t1].[PersonID] = [i].[PersonID]
+				[Doctor] [t1]
+			WHERE
+				[t1].[PersonID] = [i].[PersonID]
+		) [t2]
 WHERE
 	[i].[LastName] + ', ' + [i].[FirstName] <> 'Pupkin, John'
 
