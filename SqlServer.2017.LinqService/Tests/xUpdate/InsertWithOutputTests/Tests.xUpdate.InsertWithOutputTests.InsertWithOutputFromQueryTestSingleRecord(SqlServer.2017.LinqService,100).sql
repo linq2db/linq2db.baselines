@@ -270,7 +270,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + Convert(VarChar(100), @param_1)
+	[s].[ValueStr] + Convert(VarChar(11), @param_1)
 FROM
 	[TableWithData] [s]
 WHERE
