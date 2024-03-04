@@ -3,9 +3,9 @@
 
 SELECT
 	Count(*),
-	Max([t1].[ChildID])
+	Max([g_1].[ChildID])
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 

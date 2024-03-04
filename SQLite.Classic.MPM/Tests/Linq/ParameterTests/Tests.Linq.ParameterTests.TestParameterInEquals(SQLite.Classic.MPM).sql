@@ -27,6 +27,8 @@ CREATE TABLE IF NOT EXISTS [TestEqualsTable2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @param  -- Int32
+SET     @param = 0
 
 SELECT
 	[_].[Id]
@@ -39,7 +41,7 @@ WHERE
 		FROM
 			[TestEqualsTable2] [__]
 		WHERE
-			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
+			[__].[Id] = @param AND [_].[Id] = [__].[FK]
 	)
 
 BeforeExecute

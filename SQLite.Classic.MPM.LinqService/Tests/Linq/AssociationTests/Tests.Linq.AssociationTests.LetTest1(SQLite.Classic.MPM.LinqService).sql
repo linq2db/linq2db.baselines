@@ -7,9 +7,9 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]
