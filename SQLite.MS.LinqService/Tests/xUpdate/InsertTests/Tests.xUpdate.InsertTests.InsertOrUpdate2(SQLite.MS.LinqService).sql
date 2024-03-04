@@ -38,20 +38,10 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(8) -- String
+SET     @Diagnosis = 'negative'
 
-SELECT
-	1
-FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = @id
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
-
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -59,8 +49,9 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	'negative'
+	@Diagnosis
 )
+ON CONFLICT ([PersonID]) DO NOTHING
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -79,13 +70,20 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(8) -- String
+SET     @Diagnosis = 'positive'
 
-SELECT
-	1
-FROM
-	[Patient] [t1]
-WHERE
-	[t1].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO NOTHING
 
 BeforeExecute
 -- SQLite.MS SQLite

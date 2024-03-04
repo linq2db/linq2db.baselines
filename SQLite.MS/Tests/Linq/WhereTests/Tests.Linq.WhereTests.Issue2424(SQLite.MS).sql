@@ -27,8 +27,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -36,13 +34,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
-LIMIT @take
+	0 <= CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -50,13 +50,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END >= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -64,13 +66,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
-LIMIT @take
+	0 >= CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -78,13 +82,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END <= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -92,13 +98,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
-LIMIT @take
+	0 < CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -106,13 +114,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END > 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -120,13 +130,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
-LIMIT @take
+	0 > CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -134,13 +146,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END < 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -148,13 +162,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
-LIMIT @take
+	0 = CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -162,13 +178,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END = 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -176,13 +194,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
-LIMIT @take
+	0 >= CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -190,13 +210,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '2'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '2' THEN 1
+		WHEN [i].[StrValue] = '2' THEN 0
+		ELSE -1
+	END <= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -204,13 +226,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
-LIMIT @take
+	0 <= CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -218,13 +242,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '4'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '4' THEN 1
+		WHEN [i].[StrValue] = '4' THEN 0
+		ELSE -1
+	END >= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -232,13 +258,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
-LIMIT @take
+	0 > CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -246,13 +274,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END < 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -260,13 +290,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
-LIMIT @take
+	0 < CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -274,13 +306,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '3' THEN 1
+		WHEN [i].[StrValue] = '3' THEN 0
+		ELSE -1
+	END > 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -288,13 +322,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
-LIMIT @take
+	0 <= CASE
+		WHEN [i].[StrValue] > '5' THEN 1
+		WHEN [i].[StrValue] = '5' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -302,13 +338,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '5' THEN 1
+		WHEN [i].[StrValue] = '5' THEN 0
+		ELSE -1
+	END >= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -316,13 +354,15 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
-LIMIT @take
+	0 >= CASE
+		WHEN [i].[StrValue] > '1' THEN 1
+		WHEN [i].[StrValue] = '1' THEN 0
+		ELSE -1
+	END
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[i].[Id],
@@ -330,8 +370,12 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
-LIMIT @take
+	CASE
+		WHEN [i].[StrValue] > '1' THEN 1
+		WHEN [i].[StrValue] = '1' THEN 0
+		ELSE -1
+	END <= 0
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

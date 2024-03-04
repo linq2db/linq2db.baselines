@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2009-09-27'
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateTime([_].[DateTimeValue]) = DateTime(@DateTimeValue)
+	DateTime([_].[DateTimeValue]) = DateTime(Date('2009-09-27'))
 

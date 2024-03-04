@@ -2,11 +2,11 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p].[PersonID],
-	[p].[FirstName]
+	[pp].[PersonID],
+	'  ' || [pp].[FirstName] || ' '
 FROM
-	[Person] [p]
+	[Person] [pp]
 WHERE
-	RTRIM(('  ' || [p].[FirstName] || ' '), ' n') = '  Joh' AND
-	[p].[PersonID] = 1
+	RTRIM(('  ' || [pp].[FirstName] || ' '), ' n') = '  Joh' AND
+	[pp].[PersonID] = 1
 

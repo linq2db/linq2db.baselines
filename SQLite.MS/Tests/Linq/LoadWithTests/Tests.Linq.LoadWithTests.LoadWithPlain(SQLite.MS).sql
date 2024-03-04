@@ -207,21 +207,21 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MainItem].[Id],
-	[detail].[Id],
-	[detail].[Value],
-	[detail].[ParentId]
+	[m_2].[Id],
+	[d].[Id],
+	[d].[Value],
+	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
 			[a_MainItem].[Id]
 		FROM
 			[MainItem2] [m_1]
-				LEFT JOIN [MainItem] [a_MainItem] ON [m_1].[MainItemId] = [a_MainItem].[Id]
+				LEFT JOIN [MainItem] [a_MainItem] ON ([m_1].[MainItemId] = [a_MainItem].[Id] OR [m_1].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
 		WHERE
 			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem2] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
+	) [m_2]
+		INNER JOIN [SubItem2] [d] ON ([m_2].[Id] = [d].[ParentId] OR [m_2].[Id] IS NULL AND [d].[ParentId] IS NULL)
 
 BeforeExecute
 DisposeTransaction
@@ -236,7 +236,7 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m_1]
-		LEFT JOIN [MainItem] [a_MainItem] ON [m_1].[MainItemId] = [a_MainItem].[Id]
+		LEFT JOIN [MainItem] [a_MainItem] ON ([m_1].[MainItemId] = [a_MainItem].[Id] OR [m_1].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
 WHERE
 	[m_1].[Id] > 1
 

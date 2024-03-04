@@ -9,13 +9,13 @@ FROM
 	[LinqDataTypes] [t1_1]
 		INNER JOIN (
 			SELECT
-				[sub].[ID],
-				Max([sub].[DateTimeValue]) as [DateTimeValue]
+				[t2].[ID],
+				Max([t2].[DateTimeValue]) as [DateTimeValue]
 			FROM
-				[LinqDataTypes] [sub]
+				[LinqDataTypes] [t2]
 			WHERE
-				[sub].[ID] = 1 AND DateTime([sub].[DateTimeValue]) <= DateTime(@Date)
+				[t2].[ID] = 1 AND DateTime([t2].[DateTimeValue]) <= DateTime(@Date)
 			GROUP BY
-				[sub].[ID]
+				[t2].[ID]
 		) [t1] ON [t1_1].[ID] = [t1].[ID] AND DateTime([t1_1].[DateTimeValue]) = DateTime([t1].[DateTimeValue])
 

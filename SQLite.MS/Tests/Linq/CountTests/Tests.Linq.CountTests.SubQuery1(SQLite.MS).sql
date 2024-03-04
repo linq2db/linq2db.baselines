@@ -7,10 +7,10 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] = [p].[ParentID] AND
-			Cast([c_1].[ChildID] as Decimal) <> 0
+			[a_Children].[ParentID] = [p].[ParentID] AND Cast([a_Children].[ChildID] as Decimal) <> 0 AND
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]

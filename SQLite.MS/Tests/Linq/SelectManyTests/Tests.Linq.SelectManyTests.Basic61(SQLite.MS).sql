@@ -2,10 +2,11 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[_].[ParentID] + 1
+	[a_Children].[ParentID] + 1
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [_] ON ([_].[ParentID] > 0 OR [_].[ParentID] > 1) AND [cp].[ParentID] = [_].[ParentID]
+	[Parent] [_]
+		INNER JOIN [Child] [a_Children] ON [_].[ParentID] = [a_Children].[ParentID]
 WHERE
-	([_].[ParentID] > -1 OR [_].[ParentID] > 2)
+	([a_Children].[ParentID] + 1 > 0 OR [a_Children].[ParentID] + 1 > 3) AND
+	([a_Children].[ParentID] + 1 > 1 OR [a_Children].[ParentID] + 1 > 2)
 
