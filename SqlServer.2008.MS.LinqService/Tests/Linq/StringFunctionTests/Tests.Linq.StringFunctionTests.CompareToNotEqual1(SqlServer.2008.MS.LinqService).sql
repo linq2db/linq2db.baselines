@@ -10,5 +10,12 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] <> N'Jo' AND [p].[PersonID] = 1
+	CASE
+		WHEN [p].[FirstName] > N'Jo'
+			THEN 1
+		WHEN [p].[FirstName] = N'Jo'
+			THEN 0
+		ELSE -1
+	END <> 0 AND
+	[p].[PersonID] = 1
 

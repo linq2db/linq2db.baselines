@@ -29,289 +29,377 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	0 <= CASE
+		WHEN [i].[StrValue] > N'4'
+			THEN 1
+		WHEN [i].[StrValue] = N'4'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	CASE
+		WHEN [i].[StrValue] > N'4'
+			THEN 1
+		WHEN [i].[StrValue] = N'4'
+			THEN 0
+		ELSE -1
+	END >= 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	0 >= CASE
+		WHEN [i].[StrValue] > N'2'
+			THEN 1
+		WHEN [i].[StrValue] = N'2'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	CASE
+		WHEN [i].[StrValue] > N'2'
+			THEN 1
+		WHEN [i].[StrValue] = N'2'
+			THEN 0
+		ELSE -1
+	END <= 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	0 < CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END > 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	0 > CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END < 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'3'
+	0 = CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'3'
+	CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END = 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	0 >= CASE
+		WHEN [i].[StrValue] > N'2'
+			THEN 1
+		WHEN [i].[StrValue] = N'2'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	CASE
+		WHEN [i].[StrValue] > N'2'
+			THEN 1
+		WHEN [i].[StrValue] = N'2'
+			THEN 0
+		ELSE -1
+	END <= 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	0 <= CASE
+		WHEN [i].[StrValue] > N'4'
+			THEN 1
+		WHEN [i].[StrValue] = N'4'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	CASE
+		WHEN [i].[StrValue] > N'4'
+			THEN 1
+		WHEN [i].[StrValue] = N'4'
+			THEN 0
+		ELSE -1
+	END >= 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	0 > CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END < 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	0 < CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	CASE
+		WHEN [i].[StrValue] > N'3'
+			THEN 1
+		WHEN [i].[StrValue] = N'3'
+			THEN 0
+		ELSE -1
+	END > 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	0 <= CASE
+		WHEN [i].[StrValue] > N'5'
+			THEN 1
+		WHEN [i].[StrValue] = N'5'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	CASE
+		WHEN [i].[StrValue] > N'5'
+			THEN 1
+		WHEN [i].[StrValue] = N'5'
+			THEN 0
+		ELSE -1
+	END >= 0
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'1'
+	0 >= CASE
+		WHEN [i].[StrValue] > N'1'
+			THEN 1
+		WHEN [i].[StrValue] = N'1'
+			THEN 0
+		ELSE -1
+	END
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'1'
+	CASE
+		WHEN [i].[StrValue] > N'1'
+			THEN 1
+		WHEN [i].[StrValue] = N'1'
+			THEN 0
+		ELSE -1
+	END <= 0
 
 BeforeExecute
 -- SqlServer.2008
