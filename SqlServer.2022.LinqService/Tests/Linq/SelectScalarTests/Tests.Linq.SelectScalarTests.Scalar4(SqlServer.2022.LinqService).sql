@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
 WHERE
-	[c_1].[ChildID] > 20 AND [p].[ParentID] = 3
+	[p].[ParentID] = 3 AND [c_1].[ChildID] > 20
 
