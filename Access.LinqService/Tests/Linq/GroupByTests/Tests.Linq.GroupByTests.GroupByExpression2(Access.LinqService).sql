@@ -2,10 +2,16 @@
 -- Access AccessOleDb
 
 SELECT
-	[selectParam].[ChildID],
-	Avg([selectParam].[ParentID])
+	[_1].[ChildID],
+	Avg([_1].[ParentID])
 FROM
-	[Child] [selectParam]
+	(
+		SELECT
+			[_].[ChildID],
+			[_].[ParentID]
+		FROM
+			[Child] [_]
+	) [_1]
 GROUP BY
-	[selectParam].[ChildID]
+	[_1].[ChildID]
 

@@ -2,63 +2,53 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
-FROM
 	(
-		SELECT DISTINCT
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON ([_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100 AND [_c].[ParentID] > 0)
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
-FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON ([_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100)
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
-SELECT
-	[p].[ParentID],
-	Iif(EXISTS(
-		SELECT
-			*
+		SELECT TOP 1
+			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
 		WHERE
-			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100
+			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ChildID] > -100 AND
+			[c_1].[ParentID] > 0
+		ORDER BY
+			[c_1].[ChildID]
+	),
+	IIF(EXISTS(
+		SELECT
+			*
+		FROM
+			[Child] [c_2]
+		WHERE
+			[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
 	), True, False),
-	[t1].[Count_1]
+	(
+		SELECT
+			Count(*)
+		FROM
+			[Child] [c_3]
+		WHERE
+			[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
+	),
+	(
+		SELECT TOP 1
+			[c_4].[ParentID]
+		FROM
+			[Child] [c_4]
+		WHERE
+			[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
+		ORDER BY
+			[c_4].[ChildID]
+	),
+	(
+		SELECT TOP 1
+			[c_5].[ChildID]
+		FROM
+			[Child] [c_5]
+		WHERE
+			[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
+		ORDER BY
+			[c_5].[ChildID]
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[c_2].[ParentID]
-			FROM
-				[Child] [c_2]
-			WHERE
-				[c_2].[ChildID] > -100
-			GROUP BY
-				[c_2].[ParentID]
-		) [t1] ON ([t1].[ParentID] = [p].[ParentID])
 

@@ -2,17 +2,15 @@
 -- Access.Odbc AccessODBC (asynchronously)
 
 SELECT
-	Max([t1].[cnt])
+	Max((
+		SELECT
+			Count(*)
+		FROM
+			[Child] [t2]
+				LEFT JOIN [Parent] [a_Parent] ON ([t2].[ParentID] = [a_Parent].[ParentID])
+		WHERE
+			[a_Parent].[ParentID] = [t1].[ParentID]
+	))
 FROM
-	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[a_Parent].[ParentID]
-			FROM
-				[Child] [c_1]
-					LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
-			GROUP BY
-				[a_Parent].[ParentID]
-		) [t1] ON ([t1].[ParentID] = [p].[ParentID])
+	[Parent] [t1]
 

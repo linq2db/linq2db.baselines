@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p Date -- DateTime
-SET     @p = #2018-01-02#
 
 SELECT
 	Count(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) < @p
+	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) < #2018-01-02#
 
 BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 

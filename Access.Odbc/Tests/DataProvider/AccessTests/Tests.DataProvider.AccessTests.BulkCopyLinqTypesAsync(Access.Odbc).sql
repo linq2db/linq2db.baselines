@@ -422,9 +422,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [p]
 WHERE
-	[t1].[ID] >= 4000
+	[p].[ID] >= 4000
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
@@ -850,7 +850,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [p]
 WHERE
-	[t1].[ID] >= 4000
+	[p].[ID] >= 4000
 
