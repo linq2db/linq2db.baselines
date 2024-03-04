@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @ID Int -- Int32
+SET     @ID = 0
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] IS NOT NULL
+	[p].[PersonID] <> @ID
 

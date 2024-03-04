@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] <> 1
+	NOT ([p].[ParentID] = 1)
 

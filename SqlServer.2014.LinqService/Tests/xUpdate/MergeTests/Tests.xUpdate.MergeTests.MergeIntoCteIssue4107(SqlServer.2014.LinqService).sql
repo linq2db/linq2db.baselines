@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'unpdated'
 
 WITH [CTE_1] ([ID], [MiddleName])
 AS
@@ -15,18 +17,18 @@ AS
 MERGE INTO [CTE_1] [Target]
 USING (
 	SELECT
-		[t1].[ChildID]
+		[t1].[ChildID] as [source_ChildID]
 	FROM
 		[Child] [t1]
 ) [Source]
 (
-	[ChildID]
+	[source_ChildID]
 )
-ON ([Target].[ID] = [Source].[ChildID])
+ON ([Target].[ID] = [Source].[source_ChildID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[MiddleName] = N'unpdated'
+	[MiddleName] = @p
 ;
 
