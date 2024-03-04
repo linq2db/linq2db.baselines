@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Date DateTime2
-SET     @Date = DATETIME2FROMPARTS(2009, 9, 20, 0, 0, 0, 0, 7)
+DECLARE @dt DateTime2
+SET     @dt = DATETIME2FROMPARTS(2009, 9, 20, 9, 19, 29, 900000, 7)
 
 SELECT
 	[t].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Convert(Date, [t].[DateTimeValue]) > @Date
+	Convert(Date, [t].[DateTimeValue]) > Convert(Date, @dt)
 

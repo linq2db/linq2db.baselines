@@ -7,21 +7,25 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Inserted 2'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'U'
 
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID],
-		[a_Patient].[Diagnosis]
+		[t1].[PersonID] as [source_ID],
+		[a_Patient].[Diagnosis] as [source_Patient_Diagnosis]
 	FROM
 		[Person] [t1]
-			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID],
-	[Diagnosis]
+	[source_ID],
+	[source_Patient_Diagnosis]
 )
-ON ([Target].[PersonID] = [Source].[ID] AND [Target].[FirstName] <> N'first 3')
+ON ([Target].[PersonID] = [Source].[source_ID] AND [Target].[FirstName] <> N'first 3')
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -32,9 +36,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[Diagnosis],
-	N'Inserted 2',
-	N'U'
+	[Source].[source_Patient_Diagnosis],
+	@LastName,
+	@Gender
 )
 ;
 
