@@ -2,11 +2,17 @@
 -- SqlServer.2019
 
 SELECT
-	[nm].[MiddleName]
+	[nm_1].[MiddleName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			Len([nm].[MiddleName]) as [Length_1],
+			[nm].[MiddleName]
+		FROM
+			[Person] [nm]
+	) [nm_1]
 WHERE
-	(Len([nm].[MiddleName]) <> 0 OR Len([nm].[MiddleName]) IS NULL)
+	([nm_1].[Length_1] <> 0 OR [nm_1].[Length_1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019
