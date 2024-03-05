@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,33 +75,49 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[o].[OrderID],
-	[o].[CustomerID],
-	[o].[EmployeeID],
-	[o].[OrderDate],
-	[o].[RequiredDate],
-	[o].[ShippedDate],
-	[o].[ShipVia],
-	[o].[Freight],
-	[o].[ShipName],
-	[o].[ShipAddress],
-	[o].[ShipCity],
-	[o].[ShipRegion],
-	[o].[ShipPostalCode],
-	[o].[ShipCountry]
+SELECT TOP (1)
+	[t1].[OrderID],
+	[t1].[CustomerID],
+	[t1].[EmployeeID],
+	[t1].[OrderDate],
+	[t1].[RequiredDate],
+	[t1].[ShippedDate],
+	[t1].[ShipVia],
+	[t1].[Freight],
+	[t1].[ShipName],
+	[t1].[ShipAddress],
+	[t1].[ShipCity],
+	[t1].[ShipRegion],
+	[t1].[ShipPostalCode],
+	[t1].[ShipCountry]
 FROM
-	[Orders] [o]
+	(
+		SELECT
+			DatePart(dayofyear, [o].[OrderDate]) as [DayOfYear],
+			[o].[OrderID],
+			[o].[CustomerID],
+			[o].[EmployeeID],
+			[o].[OrderDate],
+			[o].[RequiredDate],
+			[o].[ShippedDate],
+			[o].[ShipVia],
+			[o].[Freight],
+			[o].[ShipName],
+			[o].[ShipAddress],
+			[o].[ShipCity],
+			[o].[ShipRegion],
+			[o].[ShipPostalCode],
+			[o].[ShipCountry]
+		FROM
+			[Orders] [o]
+	) [t1]
 WHERE
-	DatePart(dayofyear, [o].[OrderDate]) = 360
+	[t1].[DayOfYear] = 360
 
