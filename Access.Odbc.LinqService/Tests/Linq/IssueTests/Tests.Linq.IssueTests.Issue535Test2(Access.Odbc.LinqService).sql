@@ -28,11 +28,12 @@ SELECT
 	[q].[Id],
 	[q].[Name],
 	[q].[ContactEmail],
-	Iif([q].[Enabled] IS NULL, False, [q].[Enabled])
+	[q].[Enabled]
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE ? OR [q].[ContactEmail] LIKE ?)
+	([q].[Name] LIKE ? OR [q].[ContactEmail] LIKE ?) AND
+	[q].[ClientType] = 'Client'
 
 BeforeExecute
 -- Access.Odbc AccessODBC
