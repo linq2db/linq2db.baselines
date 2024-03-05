@@ -2,9 +2,9 @@
 -- SqlServer.2017 (asynchronously)
 
 SELECT
-	Max([x].[PersonID])
+	Max([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SqlServer.2017 (asynchronously)
