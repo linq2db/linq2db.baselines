@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -112,22 +112,20 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[o].[RequiredDate]
+			[t1].[RequiredDate]
 		FROM
 			(
 				SELECT
-					[t1].[RequiredDate],
-					[t1].[OrderDate]
+					[o].[RequiredDate],
+					[o].[OrderDate]
 				FROM
-					[Orders] [t1]
+					[Orders] [o]
 				ORDER BY
-					[t1].[OrderDate]
+					[o].[OrderDate]
 				LIMIT @take OFFSET @skip
-			) [o]
+			) [t1]
 		WHERE
-			[o].[OrderDate] IS NOT NULL
-		ORDER BY
-			[o].[RequiredDate]
+			[t1].[OrderDate] IS NOT NULL
 	) [t2]
 ORDER BY
 	[t2].[RequiredDate] DESC
