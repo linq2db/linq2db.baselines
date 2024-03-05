@@ -4,14 +4,14 @@ DECLARE @testValue  -- Int32
 SET     @testValue = 3
 
 SELECT
-	[t1].[c1],
+	[id_1].[c1],
 	(
 		SELECT
 			Count(*)
 		FROM
 			[Child] [p]
 		WHERE
-			[p].[ParentID] = [t1].[c1]
+			[p].[ParentID] = [id_1].[c1]
 	),
 	(
 		SELECT
@@ -19,7 +19,7 @@ SELECT
 		FROM
 			[Child] [p_1]
 		WHERE
-			[p_1].[ParentID] = [t1].[c1] AND [p_1].[ParentID] = @testValue
+			[p_1].[ParentID] = [id_1].[c1] AND [p_1].[ParentID] = @testValue
 	)
 FROM
 	(
@@ -33,5 +33,5 @@ FROM
 			[Parent] [id]
 		WHERE
 			[id].[ParentID] IN (1, 2)
-	) [t1]
+	) [id_1]
 

@@ -254,7 +254,7 @@ WHERE
 	[TableWithData].[Id] > 3
 RETURNING
 	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || Cast(1 as VarChar(11))
+	[TableWithData].[ValueStr] || 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
