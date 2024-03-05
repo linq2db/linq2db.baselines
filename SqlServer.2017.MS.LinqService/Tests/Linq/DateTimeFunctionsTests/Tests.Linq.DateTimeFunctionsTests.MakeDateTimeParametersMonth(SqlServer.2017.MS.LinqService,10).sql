@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t].[ID]
+	DateAdd(month, ((2010 + [t].[ID]) - 1900) * 12 + 9, 0)
 FROM
 	[LinqDataTypes] [t]
 
