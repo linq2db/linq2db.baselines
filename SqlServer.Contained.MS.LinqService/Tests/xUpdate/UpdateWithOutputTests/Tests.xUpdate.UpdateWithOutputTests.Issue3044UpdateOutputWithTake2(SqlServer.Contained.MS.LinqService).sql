@@ -214,33 +214,40 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @Value Int -- Int32
+SET     @Value = 20
 DECLARE @take Int -- Int32
 SET     @take = 1
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Id] = 20,
-	[t1].[ValueStr] = [t1].[ValueStr]
+	[u].[Value] = @Value,
+	[u].[ValueStr] = [t1].[ValueStr]
 OUTPUT
-	[DELETED].[Id],
-	NULL /* Value */,
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	NULL /* Value */,
-	[INSERTED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 FROM
+	[TableWithData] [u],
 	(
 		SELECT TOP (@take)
+			[i].[ValueStr],
 			[i].[Id],
-			[i].[ValueStr]
+			[i].[Value] as [Value_1]
 		FROM
 			[TableWithData] [i]
 		WHERE
-			[i].[Id] >= 7
+			[i].[Id] = 7
 		ORDER BY
 			[i].[Id]
 	) [t1]
+WHERE
+	[t1].[Id] = [u].[Id] AND [t1].[Value_1] = [u].[Value] AND
+	([t1].[ValueStr] = [u].[ValueStr] OR [t1].[ValueStr] IS NULL AND [u].[ValueStr] IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
