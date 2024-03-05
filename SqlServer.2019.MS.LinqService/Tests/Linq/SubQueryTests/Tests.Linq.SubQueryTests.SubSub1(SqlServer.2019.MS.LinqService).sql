@@ -6,12 +6,13 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[c_1].[ParentID] + 1 < [p2].[ParentID] + 1 AND [p2].[ParentID] = [c_1].[ParentID]
+			[a_Children].[ParentID] + 1 < [p1].[ParentID] + 1 AND
+			[p1].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
-	[Parent] [p2]
+	[Parent] [p1]
 WHERE
-	[p2].[ParentID] > -1
+	[p1].[ParentID] + 1 > 0
 

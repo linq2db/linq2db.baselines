@@ -602,19 +602,19 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	COUNT([x].[Key2]),
-	COUNT([x].[Key1])
+	COUNT([x_1].[Key2]),
+	COUNT([x_1].[Key1])
 FROM
 	(
 		SELECT
-			[t1].[Key1],
-			[t1].[Key2]
+			[x].[Key2],
+			[x].[Key1]
 		FROM
-			[FirstOptimizerData] [t1]
+			[FirstOptimizerData] [x]
 		GROUP BY
-			[t1].[Key1],
-			[t1].[Key2]
-	) [x]
+			[x].[Key1],
+			[x].[Key2]
+	) [x_1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
