@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @Value Integer -- Int32
-SET     @Value = 1
+DECLARE @value Integer -- Int32
+SET     @value = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	@Value
+	CVar(@value),
+	CVar(@p)
 

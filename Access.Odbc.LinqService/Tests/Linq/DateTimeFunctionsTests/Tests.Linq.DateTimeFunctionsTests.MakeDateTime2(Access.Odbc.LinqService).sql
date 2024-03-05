@@ -2,14 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	[t_1].[ID]
 FROM
 	(
 		SELECT
-			CDate('2010-' + Format([p].[ID], String('0', 2)) + '-01 20:35:44') as [c1]
+			DatePart('yyyy', CDate('2010-' + Format([t].[ID], String('0', 2)) + '-01 20:35:44')) as [Year_1],
+			[t].[ID]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	DatePart('yyyy', [t].[c1]) = 2010
+	[t_1].[Year_1] = 2010
 

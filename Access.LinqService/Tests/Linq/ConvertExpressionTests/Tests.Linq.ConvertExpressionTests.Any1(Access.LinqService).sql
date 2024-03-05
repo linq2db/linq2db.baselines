@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*) > 0
+	IIF(Count(*) > 0, True, False)
 FROM
 	[Parent] [p]
 WHERE
@@ -12,6 +12,6 @@ WHERE
 		FROM
 			[Child] [c_1]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1
+			[c_1].[ParentID] > 1 AND [p].[ParentID] = [c_1].[ParentID]
 	)
 
