@@ -4,9 +4,9 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Person] [_]
 WHERE
-	(([_].[PersonID] = @id OR [_].[PersonID] <= @id) OR [_].[PersonID] = @id)
+	([_].[PersonID] = @id OR [_].[PersonID] <= @id OR [_].[PersonID] = @id)
 

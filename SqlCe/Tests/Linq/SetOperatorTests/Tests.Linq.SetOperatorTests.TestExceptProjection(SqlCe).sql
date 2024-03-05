@@ -41,33 +41,37 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[r].[Value_1]
+	[r_2].[Id],
+	[r_2].[Value_1],
+	[r_2].[Value_1] as [Value_2]
 FROM
 	(
 		SELECT DISTINCT
-			[t].[Id],
-			[t].[Value1] as [Value_1]
+			[r].[Id],
+			[r].[Value1] as [Value_1]
 		FROM
-			[SampleData] [t]
+			[SampleData] [r]
 		WHERE
 			NOT EXISTS(
 				SELECT
 					*
 				FROM
-					[SampleData] [t_1]
+					[SampleData] [r_1]
 				WHERE
-					[t_1].[Id] % 4 = 0 AND [t].[Id] = [t_1].[Id] AND [t].[Value1] = [t_1].[Value2] / 10
+					[r].[Id] = [r_1].[Id] AND [r].[Value1] = [r_1].[Value2] / 10 AND
+					[r_1].[Id] % 4 = 0
 			) AND
-			[t].[Id] % 2 = 0
-	) [r]
+			[r].[Id] % 2 = 0
+	) [r_2]
 WHERE
 	NOT EXISTS(
 		SELECT
 			*
 		FROM
-			[SampleData] [t_2]
+			[SampleData] [r_3]
 		WHERE
-			[t_2].[Id] % 6 = 0 AND [r].[Id] = [t_2].[Id] AND [r].[Value_1] = [t_2].[Value1]
+			[r_2].[Id] = [r_3].[Id] AND [r_2].[Value_1] = [r_3].[Value1] AND
+			[r_3].[Id] % 6 = 0
 	)
 
 BeforeExecute

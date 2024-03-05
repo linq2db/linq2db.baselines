@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[a_Children].[ChildID],
+	[a_Children].[ParentID]
 FROM
-	[Parent] [_]
-		INNER JOIN [Child] [c_1] ON [_].[ParentID] = [c_1].[ParentID]
+	[Parent] [c_1]
+		INNER JOIN [Child] [a_Children] ON [c_1].[ParentID] = [a_Children].[ParentID]
 WHERE
-	[_].[ParentID] = 1
+	[c_1].[ParentID] = 1
 

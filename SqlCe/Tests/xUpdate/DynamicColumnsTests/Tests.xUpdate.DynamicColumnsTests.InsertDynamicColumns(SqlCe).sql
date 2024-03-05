@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Person] [c_1]
 WHERE

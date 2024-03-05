@@ -1,14 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[p].[PersonID],
+SELECT TOP (1)
+	[p].[PersonID] as [ID],
 	[p].[FirstName],
-	[p].[LastName]
+	[p].[LastName] as [SecondName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'J%' ESCAPE '~' AND ([p].[PersonID] = 1 OR [p].[LastName] = 'fail')
+	([p].[PersonID] = 1 OR [p].[LastName] = 'fail') AND
+	[p].[FirstName] LIKE 'J%' ESCAPE '~'
 

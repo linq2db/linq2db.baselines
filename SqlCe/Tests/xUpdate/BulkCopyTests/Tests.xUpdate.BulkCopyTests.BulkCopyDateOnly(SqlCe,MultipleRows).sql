@@ -22,11 +22,9 @@ SELECT '2021-01-01'
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[t1].[Date]
+SELECT TOP (2)
+	[t1].[Date] as [Date_1]
 FROM
 	[DateOnlyTable] [t1]
 
