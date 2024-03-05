@@ -180,16 +180,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
 DECLARE @take Int -- Int32
 SET     @take = 5
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Value1] = 1
+	[u].[Value1] = @Value1
 FROM
+	[Parent] [u],
 	(
 		SELECT TOP (@take)
+			[x].[ParentID],
 			[x].[Value1]
 		FROM
 			[Parent] [x]
@@ -198,4 +202,6 @@ FROM
 		ORDER BY
 			[x].[ParentID] DESC
 	) [t1]
+WHERE
+	[t1].[ParentID] = [u].[ParentID] AND ([t1].[Value1] = [u].[Value1] OR [t1].[Value1] IS NULL AND [u].[Value1] IS NULL)
 
