@@ -75,8 +75,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[_].[Value1]
@@ -84,7 +82,7 @@ FROM
 	[UpdateSetTest] [_]
 WHERE
 	[_].[Id] = @id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -104,8 +102,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[_].[Value1]
@@ -113,7 +109,7 @@ FROM
 	[UpdateSetTest] [_]
 WHERE
 	[_].[Id] = @id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

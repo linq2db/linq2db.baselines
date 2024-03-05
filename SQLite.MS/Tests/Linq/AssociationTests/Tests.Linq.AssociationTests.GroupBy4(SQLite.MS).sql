@@ -2,14 +2,14 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[Year_1]
 FROM
 	(
 		SELECT
-			Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [Key_1]
+			Cast(StrFTime('%Y', [g_1].[DateTimeValue]) as int) as [Year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[Year_1]
 
