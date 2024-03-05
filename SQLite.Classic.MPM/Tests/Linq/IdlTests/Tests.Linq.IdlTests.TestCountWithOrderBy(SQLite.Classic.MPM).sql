@@ -2,9 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([x].[PersonID])
+	Max([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

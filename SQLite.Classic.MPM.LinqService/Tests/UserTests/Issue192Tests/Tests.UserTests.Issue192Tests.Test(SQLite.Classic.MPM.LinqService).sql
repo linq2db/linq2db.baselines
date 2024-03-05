@@ -93,8 +93,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -104,14 +102,12 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -121,14 +117,27 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'Y'
+
+SELECT
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -137,32 +146,13 @@ SELECT
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[_].[BoolValue] <> @BoolValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -172,14 +162,12 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -189,14 +177,12 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -206,14 +192,12 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -223,14 +207,27 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[BoolValue] = @BoolValue
-LIMIT @take
+LIMIT 1
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @BoolValue Char -- AnsiStringFixedLength
+SET     @BoolValue = 'Y'
+
+SELECT
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -239,32 +236,13 @@ SELECT
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[_].[BoolValue] <> @BoolValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -274,14 +252,12 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[GuidValue] = @GuidValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Name],
@@ -291,7 +267,7 @@ FROM
 	[TypeConvertTable] [_]
 WHERE
 	[_].[GuidValue] = @GuidValue
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
