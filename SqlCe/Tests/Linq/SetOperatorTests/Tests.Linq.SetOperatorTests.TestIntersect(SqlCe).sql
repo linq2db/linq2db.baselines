@@ -44,7 +44,11 @@ SELECT DISTINCT
 	[t1].[Id],
 	[t1].[Value1],
 	[t1].[Value2],
-	[t1].[Value3]
+	[t1].[Value3],
+	[t1].[Id] as [Id_1],
+	[t1].[Value1] as [Value1_1],
+	[t1].[Value2] as [Value2_1],
+	[t1].[Value3] as [Value3_1]
 FROM
 	(
 		SELECT
@@ -74,11 +78,11 @@ WHERE
 		FROM
 			[SampleData] [t_2]
 		WHERE
-			[t_2].[Id] % 4 = 0 AND
 			[t1].[Id] = [t_2].[Id] AND
 			[t1].[Value1] = [t_2].[Value1] AND
 			[t1].[Value2] = [t_2].[Value2] AND
-			[t1].[Value3] = [t_2].[Value3]
+			[t1].[Value3] = [t_2].[Value3] AND
+			[t_2].[Id] % 4 = 0
 	)
 
 BeforeExecute

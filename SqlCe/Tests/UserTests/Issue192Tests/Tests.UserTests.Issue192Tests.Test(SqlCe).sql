@@ -61,7 +61,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[TypeConvertTable] [_]
 WHERE
@@ -71,7 +71,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[TypeConvertTable] [_]
 WHERE
@@ -83,7 +83,7 @@ DECLARE @GuidValue NVarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[TypeConvertTable] [_]
 WHERE
@@ -91,12 +91,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'N'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -107,12 +105,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'Y'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -123,44 +119,38 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'Y'
+
+SELECT TOP (1)
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+
+BeforeExecute
+-- SqlCe
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'N'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[_].[BoolValue] <> @BoolValue
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue NVarChar -- String
-SET     @BoolValue = 'Y'
-
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'N'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -171,12 +161,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'Y'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -187,12 +175,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'N'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -203,12 +189,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'Y'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -219,44 +203,38 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'Y'
+
+SELECT TOP (1)
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+
+BeforeExecute
+-- SqlCe
 DECLARE @BoolValue NVarChar -- String
 SET     @BoolValue = 'N'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[_].[BoolValue] <> @BoolValue
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue NVarChar -- String
-SET     @BoolValue = 'Y'
-
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
-
-BeforeExecute
--- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @GuidValue NVarChar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]
@@ -267,12 +245,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @GuidValue NVarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Name],
 	[_].[BoolValue],
 	[_].[GuidValue]

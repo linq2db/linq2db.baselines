@@ -5,15 +5,12 @@ SELECT
 	[t1].[Sum_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Sum([c_1].[ChildID]) as [Sum_1],
-				[c_1].[ParentID]
+				Sum([a_Children].[ChildID]) as [Sum_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[c_1].[ParentID] > 1
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+				[a_Children].[ParentID] > 1 AND [p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 

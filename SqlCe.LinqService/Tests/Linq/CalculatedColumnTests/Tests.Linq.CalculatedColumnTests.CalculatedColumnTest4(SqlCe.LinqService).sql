@@ -2,23 +2,23 @@
 -- SqlCe
 
 SELECT
-	[c_1].[PersonID],
-	[c_1].[FirstName],
-	[c_1].[LastName],
-	[c_1].[MiddleName],
-	[c_1].[Gender],
-	[c_1].[LastName] + ', ' + [c_1].[FirstName],
-	[t1].[cnt]
+	[a_PersonDoctor].[PersonID],
+	[a_PersonDoctor].[FirstName],
+	[a_PersonDoctor].[LastName],
+	[a_PersonDoctor].[MiddleName],
+	[a_PersonDoctor].[Gender],
+	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName] as [FullName],
+	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName] as [AsSqlFullName],
+	[t2].[Count_1] as [DoctorCount]
 FROM
-	[Doctor] [cp]
-		INNER JOIN [Person] [c_1] ON [cp].[PersonID] = [c_1].[PersonID]
-		LEFT JOIN (
+	[Doctor] [d]
+		INNER JOIN [Person] [a_PersonDoctor] ON [d].[PersonID] = [a_PersonDoctor].[PersonID]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
+				Count(*) as [Count_1]
 			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON [t1].[PersonID] = [c_1].[PersonID]
+				[Doctor] [t1]
+			WHERE
+				[t1].[PersonID] = [a_PersonDoctor].[PersonID]
+		) [t2]
 

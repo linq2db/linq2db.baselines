@@ -18,12 +18,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[ParentID]
 FROM
 	[Parent] [_]
@@ -40,29 +38,22 @@ SET     @id = 100500
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = @ParentID
+	[Value1] = @ParentID
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			(
-				SELECT
-					[_1].[ParentID]
-				FROM
-					[Parent] [_1]
-						LEFT JOIN (
-							SELECT
-								Count(*) as [cnt]
-							FROM
-								[Parent] [_]
-							WHERE
-								[_].[ParentID] = @id
-						) [t1] ON 1=1
-				WHERE
-					[_1].[ParentID] = @id AND [t1].[cnt] > 0
-			) [t2]
+			[Parent] [_1]
+				LEFT JOIN (
+					SELECT
+						Count(*) as [Count_1]
+					FROM
+						[Parent] [_]
+					WHERE
+						[_].[ParentID] = @id
+				) [t1] ON 1=1
 		WHERE
-			[Parent].[ParentID] = [t2].[ParentID]
+			[_1].[ParentID] = @id AND [t1].[Count_1] > 0 AND [Parent].[ParentID] = [_1].[ParentID]
 	)
 

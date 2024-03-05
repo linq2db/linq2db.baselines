@@ -4,7 +4,7 @@
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID]
 FROM
 	[Parent] [p]
@@ -14,8 +14,8 @@ FROM
 			FROM
 				[GrandChild] [y]
 			WHERE
-				[c_1].[ParentID] = [y].[ParentID] AND [c_1].[ChildID] = [y].[ChildID] AND
-				[y].[ParentID] = [p].[ParentID]
+				[y].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] = [y].[ParentID] AND
+				[c_1].[ChildID] = [y].[ChildID]
 		))
 
 BeforeExecute
@@ -24,7 +24,7 @@ BeforeExecute
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID]
 FROM
 	[Parent] [p],
@@ -36,7 +36,7 @@ WHERE
 		FROM
 			[GrandChild] [y]
 		WHERE
-			[c_1].[ParentID] = [y].[ParentID] AND [c_1].[ChildID] = [y].[ChildID] AND
-			[y].[ParentID] = [p].[ParentID]
+			[y].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] = [y].[ParentID] AND
+			[c_1].[ChildID] = [y].[ChildID]
 	))
 
