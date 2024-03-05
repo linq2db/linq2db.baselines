@@ -55,13 +55,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'test'
 DECLARE @id Int -- Int32
 SET     @id = 3
 
 UPDATE
 	[a_MainRequired]
 SET
-	[a_MainRequired].[Field] = N'test'
+	[a_MainRequired].[Field] = @Field
 FROM
 	[AssociatedTable] [pat]
 		INNER JOIN [MainTable] [a_MainRequired] ON [pat].[Id] = [a_MainRequired].[Id]

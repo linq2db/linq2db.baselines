@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2012
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = 1
 
 UPDATE
-	[p]
+	[LinqDataTypes]
 SET
-	[p].[BoolValue] = 1,
-	[p].[DateTimeValue] = CURRENT_TIMESTAMP
-FROM
-	[LinqDataTypes] [p]
+	[BoolValue] = @BoolValue,
+	[DateTimeValue] = CURRENT_TIMESTAMP
 WHERE
-	[p].[ID] = 100000
+	[LinqDataTypes].[ID] = 100000
 
