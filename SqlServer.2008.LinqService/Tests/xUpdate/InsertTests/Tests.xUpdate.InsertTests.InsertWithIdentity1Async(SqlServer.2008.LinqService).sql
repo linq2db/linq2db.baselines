@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
@@ -28,9 +28,9 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2008
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
