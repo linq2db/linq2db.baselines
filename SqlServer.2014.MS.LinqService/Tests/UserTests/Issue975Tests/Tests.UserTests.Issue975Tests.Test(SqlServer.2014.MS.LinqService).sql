@@ -140,31 +140,31 @@ DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 
 SELECT
-	[it].[Id],
-	[it].[DateBegin],
-	[it].[DateEnd],
-	[it].[DirectionId],
-	[it].[Text],
-	[it].[TargetName],
-	[it].[TargetId],
-	[it].[ParentId]
+	[it_1].[Id],
+	[it_1].[DateBegin],
+	[it_1].[DateEnd],
+	[it_1].[DirectionId],
+	[it_1].[Text],
+	[it_1].[TargetName],
+	[it_1].[TargetId],
+	[it_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[t].[Id],
-			[t].[DateBegin],
-			[t].[DateEnd],
-			[t].[DirectionId],
-			[t].[Text],
-			[t].[TargetName],
-			[t].[TargetId],
-			[t].[ParentId]
+			[it].[Id],
+			[it].[DateBegin],
+			[it].[DateEnd],
+			[it].[DirectionId],
+			[it].[Text],
+			[it].[TargetName],
+			[it].[TargetId],
+			[it].[ParentId]
 		FROM
-			[Tasks] [t]
-				INNER JOIN [Assignments] [a] ON [t].[DirectionId] = [a].[DirectionId] AND [t].[TargetId] = [a].[TargetId] AND [t].[TargetName] = [a].[TargetName]
+			[Tasks] [it]
+				INNER JOIN [Assignments] [a] ON [it].[DirectionId] = [a].[DirectionId] AND [it].[TargetId] = [a].[TargetId] AND [it].[TargetName] = [a].[TargetName]
 		WHERE
 			[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate())
-	) [it]
+	) [it_1]
 WHERE
 	EXISTS(
 		SELECT
@@ -172,7 +172,8 @@ WHERE
 		FROM
 			[TaskStages] [d]
 		WHERE
-			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND ([d].[StageId] < 9000 OR [d].[StageId] IS NULL)
+			([d].[StageId] < 9000 OR [d].[StageId] IS NULL) AND
+			[it_1].[Id] = [d].[TaskId] AND [d].[Actual] = 1
 	)
 
 BeforeExecute
