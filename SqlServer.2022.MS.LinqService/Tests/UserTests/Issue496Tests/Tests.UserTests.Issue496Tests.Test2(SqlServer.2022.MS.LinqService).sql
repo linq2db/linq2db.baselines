@@ -2,23 +2,23 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[key_data_result].[ParentID],
-	[detail].[ChildID],
-	[detail].[ParentID]
+	[m_1].[ParentID],
+	[d].[ChildID],
+	[d].[ParentID]
 FROM
 	(
 		SELECT DISTINCT
-			[_].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [_]
-	) [key_data_result]
-		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+			[Parent] [p]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[_].[ParentID]
+	[p].[ParentID]
 FROM
-	[Parent] [_]
+	[Parent] [p]
 
