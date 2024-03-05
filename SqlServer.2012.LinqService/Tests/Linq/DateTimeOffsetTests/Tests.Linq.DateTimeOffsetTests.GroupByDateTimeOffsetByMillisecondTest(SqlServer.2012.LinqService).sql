@@ -488,19 +488,19 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t1].[Key_1],
+	[x_1].[Millisecond],
 	Count(*)
 FROM
 	(
 		SELECT
-			DatePart(millisecond, [selectParam].[TransactionDate]) as [Key_1]
+			DatePart(millisecond, [x].[TransactionDate]) as [Millisecond]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[Millisecond]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[Millisecond]
 
 BeforeExecute
 -- SqlServer.2012

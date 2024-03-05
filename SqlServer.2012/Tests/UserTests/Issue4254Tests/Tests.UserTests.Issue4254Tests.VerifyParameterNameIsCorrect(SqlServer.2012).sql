@@ -62,12 +62,12 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
-	[key_data_result].[id],
-	[detail].[category_id]
+	[m_1].[Id],
+	[d].[category_id]
 FROM
 	(
 		SELECT DISTINCT
-			[x].[id]
+			[x].[id] as [Id]
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
@@ -77,19 +77,19 @@ FROM
 				FROM
 					[issue_4254_media_item_user_share] [y]
 				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
+					[y].[user_id] = @userId AND [y].[expires_at] > @now AND
+					[x].[id] = [y].[media_item_id]
 			) OR EXISTS(
 				SELECT
 					*
 				FROM
 					[issue_4254_media_item_user_share] [y_1]
 				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
+					[y_1].[created_by_id] = @userId AND [y_1].[expires_at] > @now AND
+					[x].[id] = [y_1].[media_item_id]
 			))
-	) [key_data_result]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [detail] ON [key_data_result].[id] = [detail].[media_item_id]
+	) [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
 
 BeforeExecute
 DisposeTransaction
@@ -110,7 +110,7 @@ SELECT
 		FROM
 			[issue_4254_media_item_user_share] [y]
 		WHERE
-			[x].[id] = [y].[media_item_id] AND [y].[expires_at] > @now
+			[y].[expires_at] > @now AND [x].[id] = [y].[media_item_id]
 	), 1, 0)
 FROM
 	[issue_4254_media_items] [x]
@@ -121,16 +121,16 @@ WHERE
 		FROM
 			[issue_4254_media_item_user_share] [y_1]
 		WHERE
-			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
-			[y_1].[expires_at] > @now_1
+			[y_1].[user_id] = @userId AND [y_1].[expires_at] > @now_1 AND
+			[x].[id] = [y_1].[media_item_id]
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
-			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_1
+			[y_2].[created_by_id] = @userId AND [y_2].[expires_at] > @now_1 AND
+			[x].[id] = [y_2].[media_item_id]
 	))
 
 BeforeExecute
@@ -143,12 +143,12 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 SELECT
-	[key_data_result].[id],
-	[detail].[category_id]
+	[m_1].[Id],
+	[d].[category_id]
 FROM
 	(
 		SELECT DISTINCT
-			[x].[id]
+			[x].[id] as [Id]
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
@@ -158,19 +158,19 @@ FROM
 				FROM
 					[issue_4254_media_item_user_share] [y]
 				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
+					[y].[user_id] = @userId AND [y].[expires_at] > @now AND
+					[x].[id] = [y].[media_item_id]
 			) OR EXISTS(
 				SELECT
 					*
 				FROM
 					[issue_4254_media_item_user_share] [y_1]
 				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
+					[y_1].[created_by_id] = @userId AND [y_1].[expires_at] > @now AND
+					[x].[id] = [y_1].[media_item_id]
 			))
-	) [key_data_result]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [detail] ON [key_data_result].[id] = [detail].[media_item_id]
+	) [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
 
 BeforeExecute
 DisposeTransaction
@@ -191,7 +191,7 @@ SELECT
 		FROM
 			[issue_4254_media_item_user_share] [y]
 		WHERE
-			[x].[id] = [y].[media_item_id] AND [y].[expires_at] > @now
+			[y].[expires_at] > @now AND [x].[id] = [y].[media_item_id]
 	), 1, 0)
 FROM
 	[issue_4254_media_items] [x]
@@ -202,16 +202,16 @@ WHERE
 		FROM
 			[issue_4254_media_item_user_share] [y_1]
 		WHERE
-			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
-			[y_1].[expires_at] > @now_1
+			[y_1].[user_id] = @userId AND [y_1].[expires_at] > @now_1 AND
+			[x].[id] = [y_1].[media_item_id]
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
-			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
-			[y_2].[expires_at] > @now_1
+			[y_2].[created_by_id] = @userId AND [y_2].[expires_at] > @now_1 AND
+			[x].[id] = [y_2].[media_item_id]
 	))
 
 BeforeExecute

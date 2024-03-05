@@ -7,45 +7,34 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Updated'
 
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID]
+		[t1].[PersonID] as [source_ID]
 	FROM
 		[Person] [t1]
 ) [Source]
 (
-	[ID]
+	[source_ID]
 )
-ON ([Target].[PersonID] = [Source].[ID] + 10)
+ON ([Target].[PersonID] = [Source].[source_ID] + 10)
 
 WHEN NOT MATCHED By Source AND [Target].[FirstName] = N'first 3' THEN UPDATE
 SET
-	[Target].[FirstName] = N'Updated',
-	[Target].[LastName] = (
+	[FirstName] = @FirstName,
+	[LastName] = (
 		SELECT
-			[a_Person].[Diagnosis]
+			[a_Patient_1].[Diagnosis]
 		FROM
+			[Patient] [a_Patient],
+			[Person] [a_Person],
 			[Patient] [a_Patient_1]
-				CROSS APPLY (
-					SELECT
-						[a_Patient].[Diagnosis]
-					FROM
-						[Person] [t3]
-							CROSS APPLY (
-								SELECT
-									[t2].[Diagnosis]
-								FROM
-									[Patient] [t2]
-								WHERE
-									[t3].[PersonID] = [t2].[PersonID]
-							) [a_Patient]
-					WHERE
-						[a_Patient_1].[PersonID] = [t3].[PersonID]
-				) [a_Person]
 		WHERE
-			[Target].[PersonID] = [a_Patient_1].[PersonID]
+			[Target].[PersonID] = [a_Patient].[PersonID] AND [a_Patient].[PersonID] = [a_Person].[PersonID] AND
+			[a_Person].[PersonID] = [a_Patient_1].[PersonID]
 	)
 ;
 

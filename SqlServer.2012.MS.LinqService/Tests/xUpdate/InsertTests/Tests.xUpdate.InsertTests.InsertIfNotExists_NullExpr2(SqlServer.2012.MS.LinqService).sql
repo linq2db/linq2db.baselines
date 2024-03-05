@@ -20,9 +20,15 @@ IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Id_1 Int -- Int32
+SET     @Id_1 = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'test'
 
 MERGE INTO [test_insert_or_replace] [t1]
-USING (SELECT 1 AS [id]) [s] ON
+USING (SELECT @Id AS [id]) [s] ON
 (
 	[t1].[id] = [s].[id]
 )
@@ -34,15 +40,21 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		1,
-		N'test'
+		@Id_1,
+		@Name
 	);
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Id_1 Int -- Int32
+SET     @Id_1 = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'test'
 
 MERGE INTO [test_insert_or_replace] [t1]
-USING (SELECT 1 AS [id]) [s] ON
+USING (SELECT @Id AS [id]) [s] ON
 (
 	[t1].[id] = [s].[id]
 )
@@ -54,8 +66,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		1,
-		N'test'
+		@Id_1,
+		@Name
 	);
 
 BeforeExecute
