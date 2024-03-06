@@ -7,6 +7,8 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @PersonID  -- Int32
+SET     @PersonID = 0
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'Test'
 DECLARE @LastName NVarChar(4) -- String
@@ -18,6 +20,7 @@ SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
+	[PersonID],
 	[FirstName],
 	[LastName],
 	[MiddleName],
@@ -25,6 +28,7 @@ INSERT INTO [Person]
 )
 VALUES
 (
+	@PersonID,
 	@FirstName,
 	@LastName,
 	@MiddleName,
@@ -39,7 +43,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
-SET     @PersonID = 5
+SET     @PersonID = 0
 
 DELETE FROM
 	[Person]

@@ -270,16 +270,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[d].[c1]
+	[d].[TransactionDate]
 FROM
-	(
-		SELECT
-			[t].[TransactionDate] as [c1]
-		FROM
-			[Transactions] [t]
-	) [d]
+	[Transactions] [d]
 WHERE
-	Cast(StrFTime('%d', [d].[c1]) as int) > 0
+	Cast(StrFTime('%d', [d].[TransactionDate]) as int) > 0
 
 BeforeExecute
 -- SQLite.MS SQLite
