@@ -46,7 +46,7 @@ DECLARE @p DateTime
 SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE

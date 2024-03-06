@@ -1,74 +1,33 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[FirstName]
+	[m_1].[FirstName],
+	[d].[FirstName] as [FirstName_1],
+	[d].[PersonID] as [ID],
+	[d].[LastName],
+	[d].[MiddleName],
+	[d].[Gender]
 FROM
-	[Person] [t1]
+	(
+		SELECT DISTINCT
+			[_].[FirstName]
+		FROM
+			[Person] [_]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [m_1].[FirstName] = [d].[FirstName]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[_].[FirstName]
+FROM
+	[Person] [_]
 GROUP BY
-	[t1].[FirstName]
-
-BeforeExecute
--- SqlCe
-DECLARE @FirstName NVarChar(4) -- String
-SET     @FirstName = 'Jane'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlCe
-DECLARE @FirstName NVarChar(4) -- String
-SET     @FirstName = 'John'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlCe
-DECLARE @FirstName NVarChar(6) -- String
-SET     @FirstName = 'Jürgen'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlCe
-DECLARE @FirstName NVarChar(6) -- String
-SET     @FirstName = 'Tester'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
+	[_].[FirstName]
 
