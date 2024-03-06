@@ -4,7 +4,7 @@ DECLARE @n  -- Int32
 SET     @n = 1
 
 SELECT
-	[p].[PersonID] + @n,
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]

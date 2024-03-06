@@ -2,25 +2,25 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[o].[ParentID],
+	[t1].[ParentID],
 	(
 		SELECT
 			Count(*)
 		FROM
-			[Child] [t1]
+			[Child] [od]
 		WHERE
-			[o].[ParentID] = [t1].[ParentID]
+			[t1].[ParentID] = [od].[ParentID]
 	),
 	(
 		SELECT
-			Sum([od].[ParentID])
+			Sum([od_1].[ParentID])
 		FROM
-			[Child] [od]
+			[Child] [od_1]
 		WHERE
-			[od].[ParentID] = [o].[ParentID]
+			[t1].[ParentID] = [od_1].[ParentID]
 	)
 FROM
-	[Parent] [o]
+	[Parent] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -28,15 +28,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[Parent] [o]
+	[Parent] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[ParentID],
-	[x].[CountResult],
-	[x].[Sum_1]
+	[x_1].[ParentID],
+	[x_1].[CountResult],
+	[x_1].[Sum_1]
 FROM
 	(
 		SELECT
@@ -44,22 +44,22 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					[Child] [t1]
-				WHERE
-					[o].[ParentID] = [t1].[ParentID]
-			) as [CountResult],
-			[o].[ParentID],
-			(
-				SELECT
-					Sum([od].[ParentID])
-				FROM
 					[Child] [od]
 				WHERE
-					[od].[ParentID] = [o].[ParentID]
+					[x].[ParentID] = [od].[ParentID]
+			) as [CountResult],
+			[x].[ParentID],
+			(
+				SELECT
+					Sum([od_1].[ParentID])
+				FROM
+					[Child] [od_1]
+				WHERE
+					[x].[ParentID] = [od_1].[ParentID]
 			) as [Sum_1]
 		FROM
-			[Parent] [o]
-	) [x]
+			[Parent] [x]
+	) [x_1]
 WHERE
-	[x].[CountResult] > 0
+	[x_1].[CountResult] > 0
 

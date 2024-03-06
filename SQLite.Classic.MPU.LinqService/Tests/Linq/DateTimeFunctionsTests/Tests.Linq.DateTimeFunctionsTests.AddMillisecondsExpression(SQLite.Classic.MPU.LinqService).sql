@@ -12,7 +12,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[DateTimeValue]
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(226/1000.0) || ' Second')
 FROM
 	[LinqDataTypes] [t]
 

@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT DISTINCT
-			[c_1].[ParentID]
+			[a_Children].[ParentID]
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
-		LIMIT @take
+			[p].[ParentID] = [a_Children].[ParentID]
+		LIMIT 1
 	)
 FROM
 	[Parent] [p]

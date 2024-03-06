@@ -2,8 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[DateTimeValue],
-	[t].[SmallIntValue]
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],[t].[SmallIntValue] || ' Day')
 FROM
 	[LinqDataTypes] [t]
 
