@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	DateAdd(weekday, 1, [t].[TransactionDate])
+	Convert(Date, DateAdd(weekday, 1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 
