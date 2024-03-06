@@ -11,23 +11,22 @@ BeforeExecute
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID]
+		[t1].[PersonID] as [source_ID]
 	FROM
 		[Person] [t1]
 ) [Source]
 (
-	[ID]
+	[source_ID]
 )
-ON ([Target].[PersonID] = [Source].[ID] + 10)
-WHEN NOT MATCHED BY SOURCE AND EXISTS(
+ON ([Target].[PersonID] = [Source].[source_ID] + 10)
+WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
-		*
+		[a_Patient].[Diagnosis]
 	FROM
 		[Patient] [a_Patient]
 	WHERE
-		[a_Patient].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
 		[Target].[PersonID] = [a_Patient].[PersonID]
-) THEN DELETE
+) LIKE N'%very%' ESCAPE N'~' THEN DELETE
 ;
 
 BeforeExecute
