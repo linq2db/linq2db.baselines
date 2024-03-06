@@ -2,18 +2,22 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN [t_1].[c1] * 2 = Round([t_1].[c1] * 2, 5) AND [t_1].[c1] <> Round([t_1].[c1], 5)
+			THEN Round([t_1].[c1] / 2, 5) * 2
+		ELSE Round([t_1].[c1], 5)
+	END
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
-					THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
-				ELSE Round(Cast([p].[MoneyValue] as Float), 1)
+				WHEN Cast([t].[MoneyValue] as Float) * 2 = Round(Cast([t].[MoneyValue] as Float) * 2, 1) AND Cast([t].[MoneyValue] as Float) <> Round(Cast([t].[MoneyValue] as Float), 1)
+					THEN Round(Cast([t].[MoneyValue] as Float) / 2, 1) * 2
+				ELSE Round(Cast([t].[MoneyValue] as Float), 1)
 			END as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0
+	[t_1].[c1] <> 0
 

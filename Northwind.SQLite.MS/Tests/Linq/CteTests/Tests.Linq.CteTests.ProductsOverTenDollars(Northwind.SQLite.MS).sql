@@ -45,29 +45,22 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[CategoryName],
-	[t1].[NumberOfProducts],
-	[p_1].[ProductName],
-	[p_1].[UnitPrice]
+	[c_1].[CategoryName],
+	(
+		SELECT
+			Count(*)
+		FROM
+			[Products] [p_1]
+		WHERE
+			[p_1].[CategoryID] = [c_1].[CategoryID]
+	),
+	[p].[ProductName],
+	[p].[UnitPrice]
 FROM
-	[Products] [p_1]
-		INNER JOIN (
-			SELECT
-				[c_1].[CategoryID],
-				[c_1].[CategoryName],
-				(
-					SELECT
-						Count(*)
-					FROM
-						[Products] [p]
-					WHERE
-						[p].[CategoryID] = [c_1].[CategoryID]
-				) as [NumberOfProducts]
-			FROM
-				[Categories] [c_1]
-		) [t1] ON [t1].[CategoryID] = [p_1].[CategoryID]
+	[Products] [p]
+		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
 WHERE
-	[p_1].[UnitPrice] > 10
+	[p].[UnitPrice] > 10
 ORDER BY
-	[p_1].[ProductName]
+	[p].[ProductName]
 
