@@ -99,16 +99,20 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[detail].[DetailId],
-	[detail].[MasterId],
-	[detail].[DetailValue]
+	[m_2].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId]
-WHERE
-	[m_1].[Id1] >= @intParam
+	(
+		SELECT DISTINCT
+			[m_1].[Id1]
+		FROM
+			[MasterClass] [m_1]
+		WHERE
+			[m_1].[Id1] >= @intParam
+	) [m_2]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
@@ -116,16 +120,22 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[_d].[DetailId],
-	[_d].[MasterId],
-	[_d].[DetailValue]
+	[m_2].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [_d] ON [m_1].[Id1] = [_d].[MasterId] AND [_d].[DetailId] % 2 = 0
+	(
+		SELECT DISTINCT
+			[m_1].[Id1]
+		FROM
+			[MasterClass] [m_1]
+		WHERE
+			[m_1].[Id1] >= @intParam
+	) [m_2]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 WHERE
-	[m_1].[Id1] >= @intParam
+	[d].[DetailId] % 2 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
@@ -133,14 +143,20 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[detail].[DetailId]
+	[m_2].[Id1],
+	[d].[DetailId]
 FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId] AND [detail].[DetailId] % 2 = 0
+	(
+		SELECT DISTINCT
+			[m_1].[Id1]
+		FROM
+			[MasterClass] [m_1]
+		WHERE
+			[m_1].[Id1] >= @intParam
+	) [m_2]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 WHERE
-	[m_1].[Id1] >= @intParam
+	[d].[DetailId] % 2 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
@@ -148,25 +164,8 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[_d].[DetailId],
-	[_d].[MasterId],
-	[_d].[DetailValue]
-FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [_d] ON [m_1].[Id1] = [_d].[MasterId] AND [_d].[DetailId] % 2 = 0
-WHERE
-	[m_1].[Id1] >= @intParam
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-DECLARE @intParam  -- Int32
-SET     @intParam = 0
-
-SELECT
-	[m_1].[Id1],
-	[m_1].[Id2]
+	[m_1].[Id1] + 100,
+	[m_1].[Id1]
 FROM
 	[MasterClass] [m_1]
 WHERE

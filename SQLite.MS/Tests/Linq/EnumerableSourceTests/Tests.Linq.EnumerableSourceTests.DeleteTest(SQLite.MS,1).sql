@@ -34,7 +34,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			[r].[Id]
 		FROM
 			[TableToInsert] [t]
 				INNER JOIN (
