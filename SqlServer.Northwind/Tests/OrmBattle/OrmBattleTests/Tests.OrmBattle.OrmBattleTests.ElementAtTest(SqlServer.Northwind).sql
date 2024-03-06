@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -83,8 +83,6 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 15
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[CustomerID],
@@ -102,5 +100,5 @@ FROM
 	[Customers] [t1]
 ORDER BY
 	[t1].[CustomerID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
