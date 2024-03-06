@@ -32,14 +32,25 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	([Child] [p]
-		INNER JOIN [Parent] [c_1] ON ([c_1].[ParentID] = [p].[ParentID]))
-		LEFT JOIN [Parent] [a_Parent] ON ([p].[ParentID] = [a_Parent].[ParentID])
+	((
+		SELECT
+			[p].[ParentID],
+			[u].[ChildID],
+			[u].[ParentID] as [ParentID_1]
+		FROM
+			[Child] [u],
+			[Parent] [p]
+	) [cross_1]
+		INNER JOIN [Child] [c_1] ON ([cross_1].[ParentID] = [c_1].[ParentID]))
+		LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
 SET
-	[p].[ChildID] = [p].[ChildID] + 1,
-	[p].[ParentID] = [c_1].[ParentID]
+	[cross_1].[ChildID] = [cross_1].[ChildID] + 1,
+	[cross_1].[ParentID_1] = [cross_1].[ParentID]
 WHERE
-	[p].[ChildID] = ? AND [a_Parent].[Value1] = 1
+	[cross_1].[ChildID] = ? AND
+	[a_Parent].[Value1] = 1 AND
+	[c_1].[ParentID] = [cross_1].[ParentID_1] AND
+	[c_1].[ChildID] = [cross_1].[ChildID]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

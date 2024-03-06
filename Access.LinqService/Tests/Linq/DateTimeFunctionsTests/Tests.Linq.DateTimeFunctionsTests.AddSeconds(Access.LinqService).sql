@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	DateAdd('s', -35, [t].[DateTimeValue])
+	DatePart('s', DateAdd('s', -35, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

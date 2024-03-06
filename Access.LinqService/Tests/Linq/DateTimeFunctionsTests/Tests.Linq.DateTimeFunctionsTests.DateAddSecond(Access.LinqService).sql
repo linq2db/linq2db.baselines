@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	DateAdd('s', 41, [t].[DateTimeValue])
+	DatePart('s', DateAdd('s', 41, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 
