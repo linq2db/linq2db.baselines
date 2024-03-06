@@ -109,16 +109,18 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Field VarWChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
 UPDATE
-	[MainTable] [t1]
-		INNER JOIN [AssociatedTable] [a_MainRequired] ON ([a_MainRequired].[Id] = [t1].[Id])
+	[MainTable] [a_MainRequired],
+	[AssociatedTable] [pat]
 SET
-	[t1].[Field] = 'test'
+	[a_MainRequired].[Field] = @Field
 WHERE
-	[a_MainRequired].[Id] = @id
+	[pat].[Id] = @id AND [pat].[Id] = [a_MainRequired].[Id]
 
 BeforeExecute
 -- Access AccessOleDb
