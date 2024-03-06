@@ -34,7 +34,7 @@ SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 SELECT
 	[r].[Id],
-	[r].[Column],
+	[r].[Column] as [Column_1],
 	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
@@ -46,7 +46,7 @@ BeforeExecute
 
 SELECT
 	[r].[Id],
-	[r].[Column],
+	[r].[Column] as [Column_1],
 	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
@@ -109,7 +109,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
@@ -139,7 +139,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
@@ -169,7 +169,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]

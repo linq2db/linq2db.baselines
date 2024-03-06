@@ -59,12 +59,12 @@ BeforeExecute
 
 SELECT
 	[fact_1].[Id],
-	[tag_1].[Id],
-	[tag_1].[FactId],
-	[tag_1].[Name]
+	[leftTag].[Id] as [Id_1],
+	[leftTag].[FactId],
+	[leftTag].[Name]
 FROM
 	[Fact] [fact_1]
-		LEFT JOIN [Tag] [tag_1] ON [tag_1].[FactId] = [fact_1].[Id]
+		LEFT JOIN [Tag] [leftTag] ON [leftTag].[FactId] = [fact_1].[Id]
 WHERE
 	[fact_1].[Id] > 3
 ORDER BY

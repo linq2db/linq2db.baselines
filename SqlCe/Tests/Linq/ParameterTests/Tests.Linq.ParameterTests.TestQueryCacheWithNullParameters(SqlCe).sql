@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] IS NULL
+	[_].[PersonID] = @id
 
 BeforeExecute
 -- SqlCe
@@ -14,7 +16,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Person] [_]
 WHERE
