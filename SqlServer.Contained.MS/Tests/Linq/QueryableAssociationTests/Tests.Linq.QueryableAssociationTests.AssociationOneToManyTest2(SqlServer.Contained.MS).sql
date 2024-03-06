@@ -70,23 +70,21 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[Id],
-	[t1].[StrValue]
+	[o_1].[Id],
+	[o_1].[StrValue]
 FROM
 	[SomeEntity] [e]
 		CROSS APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[o].[Id],
-				[o].[StrValue]
+				[o].[StrValue] + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [o]
 			WHERE
 				[o].[Id] = [e].[Id]
-		) [t1]
+		) [o_1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
