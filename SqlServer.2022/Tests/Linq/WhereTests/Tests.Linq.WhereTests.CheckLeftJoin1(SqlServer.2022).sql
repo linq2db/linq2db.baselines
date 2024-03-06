@@ -6,7 +6,7 @@ SELECT
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [lj1] ON [p].[ParentID] = [lj1].[ParentID]
+		LEFT JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
 WHERE
-	[lj1].[ParentID] IS NULL AND [lj1].[ChildID] IS NULL
+	[ch].[ParentID] IS NULL
 

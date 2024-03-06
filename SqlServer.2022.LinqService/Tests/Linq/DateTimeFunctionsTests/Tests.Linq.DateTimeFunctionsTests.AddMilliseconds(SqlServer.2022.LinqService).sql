@@ -10,7 +10,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	[t].[DateTimeValue]
+	DateAdd(millisecond, 226, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

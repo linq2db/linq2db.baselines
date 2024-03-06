@@ -2,7 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Sum([c_1].[ParentID])
+	Sum([t1].[ParentID])
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 
