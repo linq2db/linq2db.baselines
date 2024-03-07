@@ -438,12 +438,12 @@ SET
 	[t].[Value] = [_].[Value],
 	[t].[ValueStr] = [_].[ValueStr]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 FROM
 	[TableWithData] [_]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [_].[Id]
