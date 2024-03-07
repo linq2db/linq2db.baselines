@@ -11,17 +11,16 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	[t1].[cnt]
+	[t1].[Count_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[cp].[ParentID]
+				Count(*) as [Count_1]
 			FROM
-				[Child] [cp]
-					INNER JOIN [GrandChild] [c_1] ON [cp].[ParentID] = [c_1].[ParentID] AND [cp].[ChildID] = [c_1].[ChildID]
-			GROUP BY
-				[cp].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+				[Child] [a_Children]
+					INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 

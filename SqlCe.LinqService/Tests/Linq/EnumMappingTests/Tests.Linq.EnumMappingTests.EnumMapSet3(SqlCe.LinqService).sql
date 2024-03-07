@@ -24,11 +24,13 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @Int32Field Int -- Int32
+SET     @Int32Field = 4
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[IntValue] = 4
+	[IntValue] = @Int32Field
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
@@ -36,7 +38,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[LinqDataTypes] [r]
 WHERE

@@ -25,7 +25,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -35,7 +35,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -45,7 +45,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -65,7 +65,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -75,7 +75,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE

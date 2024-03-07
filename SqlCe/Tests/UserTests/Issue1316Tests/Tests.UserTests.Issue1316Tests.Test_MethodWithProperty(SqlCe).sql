@@ -29,12 +29,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[ID]
 FROM
 	[Issue1316Tests] [_]

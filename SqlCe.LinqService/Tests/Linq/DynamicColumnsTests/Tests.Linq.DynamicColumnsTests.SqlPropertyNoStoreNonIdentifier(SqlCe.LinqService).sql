@@ -37,7 +37,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[d].[Not Identifier]
+	[d].[Not Identifier] as [NI]
 FROM
 	[DynamicTable] [d]
 

@@ -3,7 +3,7 @@
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -17,7 +17,7 @@ BeforeExecute
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]

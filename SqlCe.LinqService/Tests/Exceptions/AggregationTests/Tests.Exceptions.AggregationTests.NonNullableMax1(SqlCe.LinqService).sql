@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Max([_].[ParentID])
+	Max([_].[ParentID]) as [Max_1]
 FROM
 	[Parent] [_]
 WHERE
