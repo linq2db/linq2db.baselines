@@ -34,33 +34,46 @@ BeforeExecute
 
 SELECT
 	[t2].[Name],
-	[t2].[Key_1],
-	[t2].[Value_1]
+	[t2].[Value_1],
+	[t2].[Count_1]
 FROM
 	(
 		SELECT
+			[$it_2].[Name],
+			[$it_2].[Value_1],
 			(
 				SELECT
 					Count(*)
 				FROM
 					(
 						SELECT DISTINCT
-							[$it].[YearsExperience]
+							[$it_3].[YearsExperience] as [Value_1]
+						FROM
+							[odata_person] [$it_3]
+						WHERE
+							[$it_2].[Name] = N'Title' AND [$it_2].[Value_1] = [$it_3].[Title]
+					) [t1]
+			) as [Count_1]
+		FROM
+			(
+				SELECT
+					[$it_1].[c1] as [Name],
+					[$it_1].[Title] as [Value_1]
+				FROM
+					(
+						SELECT
+							N'Title' as [c1],
+							[$it].[Title]
 						FROM
 							[odata_person] [$it]
-						WHERE
-							[selectParam].[Title] = [$it].[Title]
-					) [t1]
-			) as [Value_1],
-			N'Title' as [Name],
-			[selectParam].[Title] as [Key_1]
-		FROM
-			[odata_person] [selectParam]
-		GROUP BY
-			[selectParam].[Title]
+					) [$it_1]
+				GROUP BY
+					[$it_1].[c1],
+					[$it_1].[Title]
+			) [$it_2]
 	) [t2]
 ORDER BY
-	[t2].[Value_1]
+	[t2].[Count_1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
