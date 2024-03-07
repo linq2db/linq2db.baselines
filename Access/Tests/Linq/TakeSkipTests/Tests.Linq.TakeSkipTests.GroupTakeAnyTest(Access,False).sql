@@ -71,11 +71,11 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	Count(*) > 0
+	IIF(Count(*) > 0, True, False)
 FROM
-	[TakeSkipClass] [t1]
+	[TakeSkipClass] [group_1]
 GROUP BY
-	[t1].[Value]
+	[group_1].[Value]
 HAVING
 	Count(*) > 1
 
