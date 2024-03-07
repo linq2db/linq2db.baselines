@@ -2,7 +2,8 @@
 -- SqlServer.2008
 
 SELECT
-	[t].[ID]
+	((2010 + [t].[ID]) - 1900) * 12,
+	0
 FROM
 	[LinqDataTypes] [t]
 
