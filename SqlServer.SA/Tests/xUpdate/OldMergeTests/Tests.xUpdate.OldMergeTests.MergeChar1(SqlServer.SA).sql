@@ -43,26 +43,26 @@ SET     @id = 3
 MERGE INTO [AllTypes] [Target]
 USING (
 	SELECT
-		[t].[ID],
-		[t].[charDataType],
-		[t].[ncharDataType]
+		[t].[ID] as [source_ID],
+		[t].[charDataType] as [source_charDataType],
+		[t].[ncharDataType] as [source_ncharDataType]
 	FROM
 		[AllTypes] [t]
 	WHERE
 		[t].[ID] = @id
 ) [Source]
 (
-	[ID],
-	[charDataType],
-	[ncharDataType]
+	[source_ID],
+	[source_charDataType],
+	[source_ncharDataType]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[charDataType] = [Source].[charDataType],
-	[Target].[ncharDataType] = [Source].[ncharDataType]
+	[charDataType] = [Source].[source_charDataType],
+	[ncharDataType] = [Source].[source_ncharDataType]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -72,8 +72,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[charDataType],
-	[Source].[ncharDataType]
+	[Source].[source_charDataType],
+	[Source].[source_ncharDataType]
 )
 ;
 

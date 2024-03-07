@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	DateAdd(quarter, -1, [t].[DateTimeValue])
+	Convert(Date, DateAdd(quarter, -1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 
