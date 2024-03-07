@@ -61,7 +61,7 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+		LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
 WHERE
 	[a_PayRate].[Name] = 'test'
 
@@ -69,14 +69,26 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[item_1].[Id],
-	[item_1].[PayRateId],
-	[a_PayRate].[Name]
+	[item_2].[Id],
+	[item_2].[PayRate],
+	[item_2].[Name_1]
 FROM
-	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+	(
+		SELECT
+			CASE
+				WHEN [item_1].[PayRateId] IS NULL
+					THEN NULL
+				ELSE [a_PayRate].[Name]
+			END as [Name],
+			[item_1].[Id],
+			[item_1].[PayRateId] as [PayRate],
+			[a_PayRate].[Name] as [Name_1]
+		FROM
+			[Employees] [item_1]
+				LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
+	) [item_2]
 WHERE
-	[a_PayRate].[Name] = 'test'
+	[item_2].[Name] = 'test'
 
 BeforeExecute
 -- SQLite.Classic SQLite
