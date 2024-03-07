@@ -41,8 +41,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -54,7 +52,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -91,8 +89,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[FirstName],
@@ -104,7 +100,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] = @FirstName AND [p].[LastName] = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

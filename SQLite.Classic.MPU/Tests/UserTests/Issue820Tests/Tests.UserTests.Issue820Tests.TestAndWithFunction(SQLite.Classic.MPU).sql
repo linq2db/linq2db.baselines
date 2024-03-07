@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param = [_].[SmallIntValue]
+	(Cast(@param as INTEGER) = [_].[SmallIntValue] OR Cast(@param as INTEGER) IS NULL AND [_].[SmallIntValue] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
