@@ -10,7 +10,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t].[DateTimeValue]
+	DateAdd(millisecond, 226, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
