@@ -2,11 +2,11 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[x].[ParentID],
+	[g_1].[ParentID],
 	Count(*)
 FROM
-	[Child] [x]
-		INNER JOIN [GrandChild] [y] ON [x].[ParentID] = [y].[ParentID] AND [x].[ChildID] = [y].[ChildID]
+	[Child] [g_1]
+		INNER JOIN [GrandChild] [y] ON [g_1].[ParentID] = [y].[ParentID] AND [g_1].[ChildID] = [y].[ChildID]
 GROUP BY
-	[x].[ParentID]
+	[g_1].[ParentID]
 

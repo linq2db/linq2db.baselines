@@ -358,27 +358,27 @@ AS
 	FROM
 		[HierarchyTree] [t1]
 ),
-[hierarchyDown] ([Id], [Level])
+[hierarchyDown] ([Level], [Id])
 AS
 (
 	SELECT
-		[t_1].[Id],
-		0
+		0,
+		[t2].[Id]
 	FROM
-		[CTE_1] [t_1]
+		[CTE_1] [t2]
 	UNION ALL
 	SELECT
-		[t_2].[Id],
-		[h].[Level] + 1
+		[t3].[Level] + 1,
+		[t_1].[Id]
 	FROM
-		[hierarchyDown] [h]
-			INNER JOIN [CTE_2] [t_2] ON [t_2].[ParentId] = [h].[Id]
+		[hierarchyDown] [t3]
+			INNER JOIN [CTE_2] [t_1] ON ([t_1].[ParentId] = [t3].[Id] OR [t_1].[ParentId] IS NULL AND [t3].[Id] IS NULL)
 )
 SELECT
 	Count(*)
 FROM
-	[hierarchyDown] [h1]
-		INNER JOIN [hierarchyDown] [h2] ON [h2].[Id] = [h1].[Id]
+	[hierarchyDown] [t4]
+		INNER JOIN [hierarchyDown] [h2] ON ([h2].[Id] = [t4].[Id] OR [h2].[Id] IS NULL AND [t4].[Id] IS NULL)
 
 BeforeExecute
 -- SQLite.MS SQLite

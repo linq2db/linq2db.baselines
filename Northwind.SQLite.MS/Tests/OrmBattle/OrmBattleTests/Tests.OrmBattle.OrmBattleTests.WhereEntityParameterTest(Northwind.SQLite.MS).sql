@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,15 +75,12 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[OrderID],
@@ -103,7 +101,7 @@ FROM
 	[Orders] [t1]
 ORDER BY
 	[t1].[OrderDate]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
