@@ -3,7 +3,7 @@
 
 SELECT
 	[e].[ID],
-	[_2].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -18,5 +18,5 @@ FROM
 				[_1].[SmallIntValue]
 			FROM
 				[LinqDataTypes] [_1]
-		) [_2] ON [_2].[ID] = [e].[ID]
+		) [p] ON [p].[ID] = [e].[ID]
 
