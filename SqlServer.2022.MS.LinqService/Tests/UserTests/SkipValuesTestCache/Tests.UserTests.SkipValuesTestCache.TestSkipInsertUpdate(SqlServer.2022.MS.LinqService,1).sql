@@ -36,10 +36,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -56,20 +54,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[t1]
+	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name
-FROM
-	[PR_1598_Insert_Table_Cache] [t1]
+	[Name] = @Name
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
