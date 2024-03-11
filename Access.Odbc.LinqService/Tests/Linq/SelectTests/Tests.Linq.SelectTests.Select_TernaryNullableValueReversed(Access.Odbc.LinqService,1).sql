@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value Int -- Int32
-SET     @Value = 1
+DECLARE @value Int -- Int32
+SET     @value = 1
+DECLARE @Parameter1 Int -- Int32
+SET     @Parameter1 = 1
 
 SELECT
-	?
+	CVar(?),
+	CVar(?)
 

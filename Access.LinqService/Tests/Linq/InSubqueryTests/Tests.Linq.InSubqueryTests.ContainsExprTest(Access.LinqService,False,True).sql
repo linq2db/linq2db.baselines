@@ -9,10 +9,28 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] + @n IN (
+	[p].[ParentID] + CVar(@n) IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
 	)
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 
