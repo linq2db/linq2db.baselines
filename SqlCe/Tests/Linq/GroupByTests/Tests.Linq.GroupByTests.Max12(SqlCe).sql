@@ -3,9 +3,9 @@
 
 SELECT
 	Max(CASE
-		WHEN [c_1].[ChildID] > 20 THEN 1
+		WHEN [t1].[ChildID] > 20 THEN 1
 		ELSE 0
-	END)
+	END) as [Max_1]
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 

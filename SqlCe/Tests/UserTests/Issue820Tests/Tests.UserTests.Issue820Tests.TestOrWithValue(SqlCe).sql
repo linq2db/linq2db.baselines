@@ -2,14 +2,14 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value SmallInt -- Int16
-SET     @Value = 1
+DECLARE @param SmallInt -- Int16
+SET     @param = 1
 
 SELECT
 	[_].[ID],
@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@Value = [_].[SmallIntValue]
+	@param = [_].[SmallIntValue]
 
 BeforeExecute
 -- SqlCe

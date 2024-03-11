@@ -26,7 +26,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[LinqDataTypes] [r]
 WHERE

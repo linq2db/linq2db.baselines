@@ -55,13 +55,13 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[Not Identifier],
-	Count(*),
-	Sum([t1].[Some Value])
+	[g_1].[Not Identifier],
+	Count(*) as [Count_1],
+	Sum([g_1].[Some Value]) as [Sum_1]
 FROM
-	[DynamicTable] [t1]
+	[DynamicTable] [g_1]
 GROUP BY
-	[t1].[Not Identifier]
+	[g_1].[Not Identifier]
 
 BeforeExecute
 -- SqlCe

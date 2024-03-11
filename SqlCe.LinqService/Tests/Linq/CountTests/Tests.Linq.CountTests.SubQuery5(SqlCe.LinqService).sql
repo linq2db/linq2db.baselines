@@ -5,13 +5,12 @@ SELECT
 	[t1].[Count_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[p1].[ParentID]
+				Count(*) as [Count_1]
 			FROM
 				[Parent] [p1]
-			GROUP BY
-				[p1].[ParentID]
-		) [t1] ON [t1].[ParentID] = [p].[ParentID]
+			WHERE
+				[p1].[ParentID] = [p].[ParentID]
+		) [t1]
 

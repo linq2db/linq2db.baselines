@@ -4,18 +4,15 @@ DECLARE @n Int -- Int32
 SET     @n = 3
 
 SELECT
-	[t1].[cnt]
+	[t1].[Count_1] + 4 as [Count4]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[c_1].[ParentID]
+				Count(*) as [Count_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[c_1].[ChildID] > @n
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+				[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ChildID] > @n
+		) [t1]
 

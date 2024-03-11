@@ -2,16 +2,16 @@
 -- SqlCe
 
 SELECT
-	[t1].[n],
-	Sum([t1].[ParentID])
+	[g_2].[c1] as [n],
+	Sum([g_2].[ParentID]) as [Sum_1]
 FROM
 	(
 		SELECT
-			[selectParam].[ChildID] + 1 as [n],
-			[selectParam].[ParentID]
+			[g_1].[ChildID] + 1 as [c1],
+			[g_1].[ParentID]
 		FROM
-			[Child] [selectParam]
-	) [t1]
+			[Child] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[n]
+	[g_2].[c1]
 

@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @arr VarBinary -- Binary
-SET     @arr = NULL
 
 INSERT INTO [LinqDataTypes]
 (
@@ -21,15 +19,13 @@ VALUES
 (
 	1001,
 	1,
-	@arr
+	NULL
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
