@@ -55,14 +55,16 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 UPDATE
-	[t]
+	[u]
 SET
-	[t].[Value] = [r].[Value]
+	[u].[Value] = [r].[Value]
 FROM
-	[TableToInsert] [t]
-		INNER JOIN (VALUES
-			(3,N'Janet Updated'), (4,N'Doe Updated')
-		) [r]([Id], [Value]) ON [t].[Id] = [r].[Id]
+	[TableToInsert] [u],
+	(VALUES
+		(3,N'Janet Updated'), (4,N'Doe Updated')
+	) [r]([Id], [Value])
+WHERE
+	[u].[Id] = [r].[Id]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
