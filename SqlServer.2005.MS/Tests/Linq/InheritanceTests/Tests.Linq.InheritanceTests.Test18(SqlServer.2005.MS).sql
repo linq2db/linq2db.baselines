@@ -1,13 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-SELECT DISTINCT
-	[p1].[PersonID],
-	[p1].[Gender],
-	[p1].[FirstName],
-	[p1].[LastName]
+SELECT
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[LastName]
 FROM
-	[Person] [p1]
+	(
+		SELECT DISTINCT
+			[p1].[PersonID],
+			[p1].[Gender],
+			[p1].[FirstName],
+			[p1].[LastName]
+		FROM
+			[Person] [p1]
+		WHERE
+			[p1].[PersonID] IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+	) [t1]
 WHERE
-	[p1].[Gender] = N'F' AND [p1].[PersonID] IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+	[t1].[Gender] = N'F'
 

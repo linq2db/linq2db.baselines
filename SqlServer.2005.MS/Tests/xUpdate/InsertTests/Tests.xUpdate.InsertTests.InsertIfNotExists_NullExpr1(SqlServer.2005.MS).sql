@@ -20,13 +20,17 @@ IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'test'
 
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
 		[test_insert_or_replace] [t1]
 	WHERE
-		[t1].[id] = 1
+		[t1].[id] = @Id
 )
 BEGIN
 	INSERT INTO [test_insert_or_replace]
@@ -36,20 +40,24 @@ BEGIN
 	)
 	VALUES
 	(
-		1,
-		N'test'
+		@Id,
+		@Name
 	)
 END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'test'
 
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
 		[test_insert_or_replace] [t1]
 	WHERE
-		[t1].[id] = 1
+		[t1].[id] = @Id
 )
 BEGIN
 	INSERT INTO [test_insert_or_replace]
@@ -59,8 +67,8 @@ BEGIN
 	)
 	VALUES
 	(
-		1,
-		N'test'
+		@Id,
+		@Name
 	)
 END
 
