@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @Value Int -- Int32
-SET     @Value = NULL
+DECLARE @value Int -- Int32
+SET     @value = NULL
+DECLARE @p Int -- Int32
+SET     @p = 0
 
 SELECT
-	@Value
+	@value,
+	@p
 

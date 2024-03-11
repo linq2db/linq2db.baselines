@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	DateAdd(year, 11, [t].[TransactionDate])
+	Convert(Date, DateAdd(year, 11, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 
