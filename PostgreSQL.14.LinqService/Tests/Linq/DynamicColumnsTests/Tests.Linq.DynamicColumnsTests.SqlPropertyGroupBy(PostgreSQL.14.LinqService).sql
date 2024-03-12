@@ -2,10 +2,10 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."FirstName",
+	p."FirstName",
 	Count(*)
 FROM
-	"Person" t1
+	"Person" p
 GROUP BY
-	t1."FirstName"
+	p."FirstName"
 
