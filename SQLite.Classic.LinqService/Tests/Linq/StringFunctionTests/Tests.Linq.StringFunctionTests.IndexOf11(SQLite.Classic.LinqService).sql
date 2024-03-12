@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex('oh', [p].[FirstName]) = 2 AND [p].[PersonID] = 1
+	CharIndex('oh', [p].[FirstName]) - 1 = 1 AND [p].[PersonID] = 1
 
