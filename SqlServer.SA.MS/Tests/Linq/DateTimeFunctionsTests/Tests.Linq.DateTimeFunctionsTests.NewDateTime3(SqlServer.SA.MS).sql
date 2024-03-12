@@ -2,14 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t].[c1]
+	DatePart(year, [t].[DateTimeValue])
 FROM
-	(
-		SELECT
-			Convert(DateTime2, format(DatePart(year, [p].[DateTimeValue]), 'd4') + N'-10-01 20:35:44') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
-WHERE
-	DatePart(month, [t].[c1]) = 10
+	[LinqDataTypes] [t]
 

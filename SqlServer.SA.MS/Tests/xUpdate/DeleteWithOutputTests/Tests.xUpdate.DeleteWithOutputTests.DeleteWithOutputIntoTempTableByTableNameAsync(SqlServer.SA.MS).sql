@@ -62,9 +62,9 @@ BeforeExecute
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr]
 INTO [tempdb]..[#TableWithData_target]
 (
 	[Id],

@@ -2,19 +2,15 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = [t1].[FirstName]
-FROM
-	[Person] [t1]
+	[FirstName] = [Person].[FirstName]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = [t1].[FirstName]
-FROM
-	[Person] [t1] WITH (TABLOCK)
+	[FirstName] = [Person].[FirstName]
 
