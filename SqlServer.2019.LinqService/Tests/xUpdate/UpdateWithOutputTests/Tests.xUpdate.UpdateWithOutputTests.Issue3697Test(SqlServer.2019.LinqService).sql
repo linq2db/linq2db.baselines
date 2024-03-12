@@ -57,26 +57,30 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 UPDATE
-	[c_1]
+	[a_Items]
 SET
-	[c_1].[Value] = 1
+	[a_Items].[Value] = @Value
 OUTPUT
-	[INSERTED].[Id]
+	INSERTED.[Id]
 FROM
-	[Test3697] [cp]
-		INNER JOIN [Test3697Item] [c_1] ON [cp].[Id] = [c_1].[TestId]
+	[Test3697] [a]
+		INNER JOIN [Test3697Item] [a_Items] ON [a].[Id] = [a_Items].[TestId]
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 UPDATE
 	[b]
 SET
-	[b].[Value] = 1
+	[b].[Value] = @Value
 OUTPUT
-	[INSERTED].[Id]
+	INSERTED.[Id]
 FROM
 	[Test3697] [a]
 		INNER JOIN [Test3697Item] [b] ON [a].[Id] = [b].[TestId]
