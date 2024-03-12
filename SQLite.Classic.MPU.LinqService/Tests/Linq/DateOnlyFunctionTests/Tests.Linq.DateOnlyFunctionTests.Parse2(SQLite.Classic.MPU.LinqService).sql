@@ -270,16 +270,11 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[d].[c1]
+	Cast([d].[TransactionDate] as NVarChar(255))
 FROM
-	(
-		SELECT
-			[t].[TransactionDate] as [c1]
-		FROM
-			[Transactions] [t]
-	) [d]
+	[Transactions] [d]
 WHERE
-	Cast(StrFTime('%d', [d].[c1]) as int) > 0
+	Cast(StrFTime('%d', [d].[TransactionDate]) as int) > 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
