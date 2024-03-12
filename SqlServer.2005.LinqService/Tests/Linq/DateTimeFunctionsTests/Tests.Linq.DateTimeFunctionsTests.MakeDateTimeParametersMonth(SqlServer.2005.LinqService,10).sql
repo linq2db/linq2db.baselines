@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[t].[ID]
+	2010 + [t].[ID]
 FROM
 	[LinqDataTypes] [t]
 
