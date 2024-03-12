@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [t1]
+DELETE [gc]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [gc]
 WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
+	[gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
