@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Position('oh' in p."FirstName") = 2 AND p."PersonID" = 1
+	Position('oh' in p."FirstName") - 1 = 1 AND p."PersonID" = 1
 

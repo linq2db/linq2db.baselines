@@ -74,13 +74,13 @@ BeforeExecute
 UPDATE
 	"DestinationTable"
 SET
-	"Id" = t1."Id",
-	"Value" = t1."Value",
-	"ValueStr" = t1."ValueStr"
+	"Id" = s."Id",
+	"Value" = s."Value",
+	"ValueStr" = s."ValueStr"
 FROM
-	"TableWithData" t1
+	"TableWithData" s
 WHERE
-	t1."Id" = 3 AND "DestinationTable"."Id" = t1."Id"
+	s."Id" = 3 AND "DestinationTable"."Id" = s."Id"
 RETURNING
 	"DestinationTable"."Value"
 
