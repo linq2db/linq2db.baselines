@@ -16,6 +16,12 @@ CREATE TABLE IF NOT EXISTS "TestTable"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Fd Integer -- Int32
+SET     @Fd = 2
+DECLARE @Fd_1 Integer -- Int32
+SET     @Fd_1 = 2
 
 /* My Test */
 INSERT INTO "TestTable" AS t1
@@ -25,11 +31,11 @@ INSERT INTO "TestTable" AS t1
 )
 VALUES
 (
-	1,
-	2
+	:Id,
+	:Fd
 )
 ON CONFLICT ("Id") DO UPDATE SET
-	"Fd" = 2
+	"Fd" = :Fd_1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

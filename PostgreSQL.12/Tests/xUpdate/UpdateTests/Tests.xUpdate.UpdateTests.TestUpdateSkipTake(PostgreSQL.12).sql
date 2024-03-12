@@ -180,6 +180,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5
 DECLARE @skip Integer -- Int32
@@ -188,12 +190,12 @@ SET     @skip = 1
 UPDATE
 	"Parent"
 SET
-	"Value1" = 1
+	"Value1" = :Value1
 FROM
 	(
 		SELECT
-			x."Value1",
-			x."ParentID"
+			x."ParentID",
+			x."Value1"
 		FROM
 			"Parent" x
 		WHERE
@@ -207,8 +209,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."ParentID",
@@ -217,5 +217,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 1009
-LIMIT :take
+LIMIT 2
 
