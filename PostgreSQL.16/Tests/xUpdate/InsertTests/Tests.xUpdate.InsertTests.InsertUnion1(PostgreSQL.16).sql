@@ -2,9 +2,9 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -46,7 +46,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 
