@@ -263,67 +263,31 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[key_data_result_1].[Id],
-	[key_data_result_1].[EmailId],
-	[key_data_result_1].[AdminId],
-	[key_data_result_1].[Id_1],
-	[key_data_result_1].[Id_1_1],
-	[__c].[Name]
+	[m_1].[Id],
+	[a_Documents].[Name]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Email_1].[Id],
-			[detail].[EmailId],
-			[detail].[AdminId],
-			[key_data_result].[Id] as [Id_1],
-			[key_data_result].[Id_1] as [Id_1_1]
-		FROM
-			(
-				SELECT DISTINCT
-					[a_Admin].[Id],
-					[r].[Id] as [Id_1]
-				FROM
-					[Request] [r]
-						LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
-						LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
-			) [key_data_result]
-				INNER JOIN [EmailAdminAssociation] [detail]
-					LEFT JOIN [Email] [a_Email]
-						LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
-					ON [detail].[EmailId] = [a_Email].[Id]
-				ON [key_data_result].[Id] = [detail].[AdminId]
-				LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-	) [key_data_result_1]
-		INNER JOIN [EmailAttachmentAssociation] [detail_1]
-			LEFT JOIN [Attachment] [a_Attachment] ON [detail_1].[AttachmentId] = [a_Attachment].[Id]
-		ON [key_data_result_1].[Id] = [detail_1].[EmailId]
-		INNER JOIN [Document] [__c] ON [a_Attachment].[Id] = [__c].[AttachmentId]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Id_1],
-	[a_Email_1].[Id],
-	[detail].[EmailId],
-	[detail].[AdminId]
-FROM
-	(
-		SELECT DISTINCT
-			[a_Admin].[Id],
-			[r].[Id] as [Id_1]
+			[t1].[Id]
 		FROM
 			[Request] [r]
 				LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 				LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
-	) [key_data_result]
-		INNER JOIN [EmailAdminAssociation] [detail]
-			LEFT JOIN [Email] [a_Email]
-				LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
-			ON [detail].[EmailId] = [a_Email].[Id]
-		ON [key_data_result].[Id] = [detail].[AdminId]
-		LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
+				OUTER APPLY (
+					SELECT TOP (1)
+						[a_Email_1].[Id]
+					FROM
+						[EmailAdminAssociation] [a_EmailAdminAssociations]
+							LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
+							LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
+							LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
+					WHERE
+						[a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
+				) [t1]
+	) [m_1]
+		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] IS NOT NULL AND [m_1].[Id] = [d].[EmailId]
+		LEFT JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
+		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] IS NOT NULL AND [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 BeforeExecute
 DisposeTransaction
@@ -331,12 +295,24 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[a_Admin].[Id],
-	[r].[Id]
+	[t1].[not_null],
+	[t1].[Id]
 FROM
 	[Request] [r]
 		LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 		LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
+		OUTER APPLY (
+			SELECT TOP (1)
+				1 as [not_null],
+				[a_Email_1].[Id]
+			FROM
+				[EmailAdminAssociation] [a_EmailAdminAssociations]
+					LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
+					LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
+					LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
+			WHERE
+				[a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
