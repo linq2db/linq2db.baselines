@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
 	o."Value1",
-	t1.c_1,
-	t1."ChildID"
+	c_2."ParentID",
+	c_2."ChildID"
 FROM
 	"Parent" o
 		LEFT JOIN LATERAL (
 			SELECT
-				cg."ParentID" as c_1,
-				cg."ChildID"
+				c_1."ParentID",
+				c_1."ChildID"
 			FROM
-				"Child" cg
+				"Child" c_1
 			WHERE
-				o."ParentID" = cg."ParentID"
-			LIMIT :take
-		) t1 ON 1=1
+				o."ParentID" = c_1."ParentID"
+			ORDER BY
+				c_1."ChildID" DESC
+			LIMIT 1
+		) c_2 ON 1=1
 
