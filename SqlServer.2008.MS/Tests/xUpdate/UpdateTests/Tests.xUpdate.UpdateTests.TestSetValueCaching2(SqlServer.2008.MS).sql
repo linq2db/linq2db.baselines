@@ -45,22 +45,18 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[UpdateSetTest]
 SET
-	[_].[Value2] = @Value2
-FROM
-	[UpdateSetTest] [_]
+	[Value2] = @Value2
 WHERE
-	[_].[Id] = @id
+	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Value2]
 FROM
 	[UpdateSetTest] [_]
@@ -75,22 +71,18 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[UpdateSetTest]
 SET
-	[_].[Value2] = @Value2
-FROM
-	[UpdateSetTest] [_]
+	[Value2] = @Value2
 WHERE
-	[_].[Id] = @id
+	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Value2]
 FROM
 	[UpdateSetTest] [_]
