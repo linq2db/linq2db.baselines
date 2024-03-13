@@ -2,8 +2,8 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Min(t1."ParentID"),
-	Max(t1."ParentID")
+	Min(gr."ParentID"),
+	Max(gr."ParentID")
 FROM
-	"Parent" t1
+	"Parent" gr
 
