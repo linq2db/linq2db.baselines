@@ -4,7 +4,7 @@ DECLARE @defValue Integer -- Int32
 SET     @defValue = 10
 
 SELECT
-	Iif(Min([t1].[ParentID]) IS NULL, @defValue, Min([t1].[ParentID]))
+	IIF(Min([gr].[ParentID]) IS NULL, CVar(@defValue), Min([gr].[ParentID]))
 FROM
-	[Parent] [t1]
+	[Parent] [gr]
 

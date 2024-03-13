@@ -70,6 +70,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis VarWChar(3) -- String
+SET     @Diagnosis = 'abc'
 
 INSERT INTO [Patient]
 (
@@ -79,7 +81,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	'abc'
+	@Diagnosis
 )
 
 BeforeExecute

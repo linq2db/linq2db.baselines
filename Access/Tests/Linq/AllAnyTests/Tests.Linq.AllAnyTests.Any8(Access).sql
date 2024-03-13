@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif(EXISTS(
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
