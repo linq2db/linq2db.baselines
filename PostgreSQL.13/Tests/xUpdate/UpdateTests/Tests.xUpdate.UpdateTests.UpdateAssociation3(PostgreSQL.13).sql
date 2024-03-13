@@ -28,11 +28,13 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 5
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = 5
+	"Value1" = :Value1
 FROM
 	"Child" child_1
 WHERE
