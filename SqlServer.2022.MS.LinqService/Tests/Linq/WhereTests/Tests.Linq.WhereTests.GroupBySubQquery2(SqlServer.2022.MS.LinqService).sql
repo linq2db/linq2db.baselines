@@ -9,10 +9,15 @@ FROM
 WHERE
 	[x].[ChildID] IN (
 		SELECT
-			Max([t1].[ChildID])
+			[t1].[Max_1]
 		FROM
-			[Child] [t1]
-		GROUP BY
-			[t1].[ParentID]
+			(
+				SELECT
+					Max([x_1].[ChildID]) as [Max_1]
+				FROM
+					[Child] [x_1]
+				GROUP BY
+					[x_1].[ParentID]
+			) [t1]
 	)
 
