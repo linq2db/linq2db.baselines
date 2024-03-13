@@ -3,13 +3,19 @@
 
 SELECT
 	p."ParentID",
-	p."Value1"
+	p."Value1",
+	Cast(NULL as Int),
+	Cast(NULL as Int),
+	Cast(NULL as Int)
 FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 1
 UNION ALL
 SELECT
+	Cast(NULL as Int),
+	Cast(NULL as Int),
+	"a_Parent"."ParentID",
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM

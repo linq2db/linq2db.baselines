@@ -18,6 +18,10 @@ CREATE TABLE IF NOT EXISTS test_insert_or_replace
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name Text(4) -- String
+SET     @Name = 'test'
 
 INSERT INTO test_insert_or_replace AS t1
 (
@@ -26,13 +30,17 @@ INSERT INTO test_insert_or_replace AS t1
 )
 VALUES
 (
-	1,
-	'test'
+	:Id,
+	:Name
 )
 ON CONFLICT (id) DO NOTHING
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name Text(4) -- String
+SET     @Name = 'test'
 
 INSERT INTO test_insert_or_replace AS t1
 (
@@ -41,8 +49,8 @@ INSERT INTO test_insert_or_replace AS t1
 )
 VALUES
 (
-	1,
-	'test'
+	:Id,
+	:Name
 )
 ON CONFLICT (id) DO NOTHING
 

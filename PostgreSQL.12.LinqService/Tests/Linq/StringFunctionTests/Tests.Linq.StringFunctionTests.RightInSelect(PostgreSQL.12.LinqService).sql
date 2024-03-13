@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Substring(p."FirstName", Length(p."FirstName") - 2, 3)
+	Right(p."FirstName", 3)
 FROM
 	"Person" p
 WHERE
