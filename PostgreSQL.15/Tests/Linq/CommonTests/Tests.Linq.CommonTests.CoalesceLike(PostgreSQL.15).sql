@@ -12,9 +12,9 @@ FROM
 WHERE
 	CASE
 		WHEN CASE
-			WHEN p."FirstName" IS NULL
-				THEN NULL
-			ELSE p."FirstName" LIKE 'Jo%' ESCAPE '~'
+			WHEN p."FirstName" LIKE 'Jo%' ESCAPE '~'
+				THEN True
+			ELSE False
 		END IS NULL
 			THEN False
 		WHEN p."FirstName" IS NULL

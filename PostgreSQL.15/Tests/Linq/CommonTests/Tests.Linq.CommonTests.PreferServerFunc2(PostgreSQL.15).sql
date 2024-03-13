@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 0
 
 SELECT
-	Length(p."FirstName")
+	Length(p."FirstName") + :p
 FROM
 	"Person" p
 

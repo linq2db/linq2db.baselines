@@ -220,25 +220,27 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Field2 Integer -- Int32
+SET     @Field2 = 123
 
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		s."Field1" - 5 as "Field1"
+		s."Field1" - 5 as "source_Field1"
 	FROM
 		"TestMerge2" s
 	WHERE
 		s."Field1" IS NOT NULL
 ) "Source"
 (
-	"Field1"
+	"source_Field1"
 )
-ON (("Target"."Field1" = "Source"."Field1" OR "Target"."Field1" IS NULL AND "Source"."Field1" IS NULL))
+ON (("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field2" = 123
+	"Field2" = :Field2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
