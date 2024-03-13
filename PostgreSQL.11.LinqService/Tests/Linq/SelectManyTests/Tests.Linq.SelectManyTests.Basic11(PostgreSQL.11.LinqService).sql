@@ -2,11 +2,11 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	c_1."ParentID"
+	o."ParentID"
 FROM
 	(
 		SELECT
-			"a_ParentID2"."ParentID",
+			"a_ParentID2"."ParentID" as "ParentID2",
 			"a_ParentID2"."Value1"
 		FROM
 			"Child" t1
@@ -14,8 +14,8 @@ FROM
 		GROUP BY
 			"a_ParentID2"."ParentID",
 			"a_ParentID2"."Value1"
-	) cp
-		INNER JOIN "Child" c_1
-			INNER JOIN "Parent" "a_ParentID2_1" ON c_1."ParentID" = "a_ParentID2_1"."ParentID"
-		ON "a_ParentID2_1"."ParentID" = cp."ParentID" AND ("a_ParentID2_1"."Value1" = cp."Value1" OR "a_ParentID2_1"."Value1" IS NULL AND cp."Value1" IS NULL)
+	) g_1
+		INNER JOIN "Child" o
+			INNER JOIN "Parent" "a_ParentID2_1" ON o."ParentID" = "a_ParentID2_1"."ParentID"
+		ON "a_ParentID2_1"."ParentID" = g_1."ParentID2" AND ("a_ParentID2_1"."Value1" = g_1."Value1" OR "a_ParentID2_1"."Value1" IS NULL AND g_1."Value1" IS NULL)
 
