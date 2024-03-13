@@ -35,6 +35,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'negative'
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -52,7 +54,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		N'negative'
+		@Diagnosis
 	)
 END
 
@@ -73,6 +75,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'positive'
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -90,7 +94,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		N'positive'
+		@Diagnosis
 	)
 END
 
