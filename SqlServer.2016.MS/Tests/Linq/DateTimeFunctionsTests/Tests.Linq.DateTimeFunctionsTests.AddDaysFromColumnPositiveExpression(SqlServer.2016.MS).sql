@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @part1 Int -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32
 SET     @part2 = 4
@@ -59,9 +59,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 
