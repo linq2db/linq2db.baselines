@@ -2,18 +2,18 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[c1],
+	[groupedData_1].[Value_1],
 	Count(*)
 FROM
 	(
 		SELECT
-			IIF([child].[FirstName] = N'John', [child].[FirstName], N'a') as [c1]
+			IIF([child].[FirstName] = N'John', [child].[FirstName], N'a') as [Value_1]
 		FROM
-			[Parent] [parent_1],
+			[Parent] [groupedData],
 			[Person] [child]
 		WHERE
-			[child].[PersonID] = [parent_1].[ParentID]
-	) [t1]
+			[child].[PersonID] = [groupedData].[ParentID]
+	) [groupedData_1]
 GROUP BY
-	[t1].[c1]
+	[groupedData_1].[Value_1]
 
