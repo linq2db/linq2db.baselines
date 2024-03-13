@@ -10,9 +10,9 @@ WHERE
 		SELECT
 			Count(*)
 		FROM
-			[Orders] [t1]
+			[Orders] [a_Orders]
 		WHERE
-			([cust].[CustomerID] = [t1].[CustomerID] OR [cust].[CustomerID] IS NULL AND [t1].[CustomerID] IS NULL)
+			[cust].[CustomerID] = [a_Orders].[CustomerID]
 	) > 0 AND
 	[cust].[CompanyName] LIKE N'H%' ESCAPE N'~'
 
