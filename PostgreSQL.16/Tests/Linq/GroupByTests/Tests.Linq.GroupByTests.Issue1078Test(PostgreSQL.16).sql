@@ -39,24 +39,20 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."SiteID",
+	grp."SiteID",
 	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1078Table" u
-		WHERE
-			CASE
-				WHEN u."Active" = True THEN 1
-				ELSE 0
-			END = 0 AND
-			t1."SiteID" = u."SiteID"
-	)
+	Count(CASE
+		WHEN CASE
+			WHEN grp."Active" = True THEN 1
+			ELSE 0
+		END = 0
+			THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1078Table" t1
+	"Issue1078Table" grp
 GROUP BY
-	t1."SiteID"
+	grp."SiteID"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

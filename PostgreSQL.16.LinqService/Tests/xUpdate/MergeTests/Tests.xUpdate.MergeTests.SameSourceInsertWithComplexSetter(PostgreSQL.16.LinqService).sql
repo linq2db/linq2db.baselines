@@ -220,22 +220,28 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @Field1 Integer -- Int32
+SET     @Field1 = 123
 DECLARE @idx Integer -- Int32
 SET     @idx = 10
+DECLARE @Field4 Integer -- Int32
+SET     @Field4 = 999
+DECLARE @Field5 Integer -- Int32
+SET     @Field5 = 888
 
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id",
-		t1."Field2"
+		t1."Id" as "source_Id",
+		t1."Field2" as "source_Field2"
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	"Id",
-	"Field2"
+	"source_Id",
+	"source_Field2"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -249,12 +255,12 @@ INSERT
 )
 VALUES
 (
-	10 + "Source"."Id",
-	123,
+	10 + "Source"."source_Id",
+	:Field1,
 	:idx,
-	"Source"."Field2",
-	999,
-	888
+	"Source"."source_Field2",
+	:Field4,
+	:Field5
 )
 
 BeforeExecute

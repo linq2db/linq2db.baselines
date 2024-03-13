@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @ID Smallint -- Int16
+SET     @ID = 123
+DECLARE @ID_1 Smallint -- Int16
+SET     @ID_1 = 0
 
 INSERT INTO "AllTypes"
 (
@@ -7,23 +11,25 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
-	t2."smallintDataType"
+	:ID,
+	Cast(t2."ID" as Int)
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON t1."smallintDataType" = "a_Association"."intDataType"
 		WHERE
-			t1."smallintDataType" IS NULL
+			Cast(t1."smallintDataType" as Int) = :ID_1
 	) t2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Smallint -- Int16
-SET     @ID = 1234
+SET     @ID = 123
+DECLARE @ID_1 Smallint -- Int16
+SET     @ID_1 = 1234
 
 INSERT INTO "AllTypes"
 (
@@ -31,16 +37,16 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
-	t2."smallintDataType"
+	:ID,
+	Cast(t2."ID" as Int)
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON t1."smallintDataType" = "a_Association"."intDataType"
 		WHERE
-			t1."smallintDataType" = :ID
+			Cast(t1."smallintDataType" as Int) = :ID_1
 	) t2
 
