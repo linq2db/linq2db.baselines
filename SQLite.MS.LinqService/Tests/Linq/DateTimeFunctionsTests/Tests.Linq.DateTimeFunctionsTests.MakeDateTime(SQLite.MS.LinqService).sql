@@ -2,14 +2,15 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t].[c1]
+	[t_1].[ID]
 FROM
 	(
 		SELECT
-			Date('2010-' || printf('%02d', [p].[ID]) || '-01') as [c1]
+			Cast(StrFTime('%Y', Date('2010-' || printf('%02d', [t].[ID]) || '-01')) as int) as [Year_1],
+			[t].[ID]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Cast(StrFTime('%Y', [t].[c1]) as int) = 2010
+	[t_1].[Year_1] = 2010
 

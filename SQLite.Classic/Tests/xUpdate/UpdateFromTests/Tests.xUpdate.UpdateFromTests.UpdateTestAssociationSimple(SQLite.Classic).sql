@@ -70,13 +70,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Value3  -- Int32
+SET     @Value3 = 1
 
 UPDATE
 	[UpdatedEntities]
 SET
 	[Value1] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
 	[Value2] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
-	[Value3] = 1
+	[Value3] = @Value3
 FROM
 	[UpdateRelation] [a_Relation]
 WHERE
@@ -84,8 +86,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[v].[Value1],
@@ -93,10 +93,10 @@ SELECT
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id] OR [v].[RelationId] IS NULL AND [a_Relation].[id] IS NULL)
 WHERE
 	[a_Relation].[RelatedValue1] = 11
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
