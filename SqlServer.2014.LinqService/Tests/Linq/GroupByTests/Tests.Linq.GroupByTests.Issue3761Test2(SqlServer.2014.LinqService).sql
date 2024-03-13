@@ -24,6 +24,8 @@ DECLARE @default DateTime2
 SET     @default = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @default_1 DateTime2
+SET     @default_1 = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[t1].[Year_1],
@@ -51,8 +53,8 @@ SELECT
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n_1].[DATUM], @default)) as [Year_1],
-			DatePart(month, Coalesce([n_1].[DATUM], @default)) as [Month_1],
+			DatePart(year, Coalesce([n_1].[DATUM], @default_1)) as [Year_1],
+			DatePart(month, Coalesce([n_1].[DATUM], @default_1)) as [Month_1],
 			[n_1].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n_1]

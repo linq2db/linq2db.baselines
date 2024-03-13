@@ -87,22 +87,22 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[Date_1]
 FROM
 	(
 		SELECT
-			Convert(Date, [selectParam].[dt]) as [Key_1]
+			Convert(Date, [g_1].[dt]) as [Date_1]
 		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+			[Issue1613] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[Date_1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[r].[dt]
+	Convert(Date, [r].[dt])
 FROM
 	[Issue1613] [r]
 
