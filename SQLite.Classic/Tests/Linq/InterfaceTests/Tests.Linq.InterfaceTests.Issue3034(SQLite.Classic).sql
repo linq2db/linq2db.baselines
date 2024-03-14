@@ -26,11 +26,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Name NVarChar(8) -- String
+SET     @Name = 'new_name'
 
 UPDATE
 	[MyTable]
 SET
-	[Name] = 'new_name'
+	[Name] = @Name
 WHERE
 	[MyTable].[Id] = 1
 
