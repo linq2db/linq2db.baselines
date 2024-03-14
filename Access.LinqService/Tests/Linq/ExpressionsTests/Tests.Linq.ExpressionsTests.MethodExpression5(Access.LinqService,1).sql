@@ -11,7 +11,7 @@ SELECT
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID]
-	) + @n
+	) + CVar(@n)
 FROM
 	[Parent] [p]
 

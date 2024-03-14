@@ -20,13 +20,15 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1011
 
 UPDATE
-	[Parent] [t1]
+	[Parent] [t]
 SET
-	[t1].[Value1] = 1011
+	[t].[Value1] = ?
 WHERE
-	[t1].[ParentID] = 1010
+	[t].[ParentID] = 1010
 
 BeforeExecute
 CommitTransaction
