@@ -31,9 +31,11 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @ID Int32
+SET     @ID = 3002
 
 INSERT ALL
-WHEN N < 0 THEN
+WHEN "source_N" < 0 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -41,10 +43,10 @@ WHEN N < 0 THEN
 	)
 	VALUES
 	(
-		ID + 1,
-		N
+		"source_ID" + 1,
+		"source_N"
 	)
-WHEN N > 40 THEN
+WHEN "source_N" > 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -52,12 +54,12 @@ WHEN N > 40 THEN
 	)
 	VALUES
 	(
-		3002,
-		N
+		:ID,
+		"source_N"
 	)
 SELECT
-	42 as N,
-	3000 as ID
+	42 as "source_N",
+	3000 as "source_ID"
 FROM SYS.DUAL
 
 BeforeExecute
@@ -80,6 +82,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @ID Int32
+SET     @ID = 4002
 
 INSERT ALL
 WHEN 1 = 1 THEN
@@ -90,10 +94,10 @@ WHEN 1 = 1 THEN
 	)
 	VALUES
 	(
-		ID + 1,
-		N
+		"source_ID" + 1,
+		"source_N"
 	)
-WHEN N > 40 THEN
+WHEN "source_N" > 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -101,12 +105,12 @@ WHEN N > 40 THEN
 	)
 	VALUES
 	(
-		4002,
-		N
+		:ID,
+		"source_N"
 	)
 SELECT
-	4000 as ID,
-	42 as N
+	4000 as "source_ID",
+	42 as "source_N"
 FROM SYS.DUAL
 
 BeforeExecute

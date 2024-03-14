@@ -2,19 +2,19 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Sum(t1."MoneyValue"),
-	t1."Key_2",
-	t1."Key_1"
+	Sum(grp_1."MoneyValue"),
+	grp_1."Year_1",
+	grp_1."Month_1"
 FROM
 	(
 		SELECT
-			To_Number(To_Char(selectParam."DateTimeValue", 'MM')) as "Key_1",
-			To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "Key_2",
-			selectParam."MoneyValue"
+			To_Number(To_Char(grp."DateTimeValue", 'MM')) as "Month_1",
+			To_Number(To_Char(grp."DateTimeValue", 'YYYY')) as "Year_1",
+			grp."MoneyValue"
 		FROM
-			"LinqDataTypes" selectParam
-	) t1
+			"LinqDataTypes" grp
+	) grp_1
 GROUP BY
-	t1."Key_1",
-	t1."Key_2"
+	grp_1."Month_1",
+	grp_1."Year_1"
 

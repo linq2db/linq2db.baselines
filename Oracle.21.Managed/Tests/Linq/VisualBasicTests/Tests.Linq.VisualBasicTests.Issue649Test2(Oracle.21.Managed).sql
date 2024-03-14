@@ -135,12 +135,12 @@ SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 SELECT
 	a_Person."personid",
 	a_Person."personname",
-	Max(p."added")
+	Max(VBIt."added")
 FROM
-	"activity649" p
-		INNER JOIN "person649" a_Person ON p."personid" = a_Person."personid"
+	"activity649" VBIt
+		INNER JOIN "person649" a_Person ON VBIt."personid" = a_Person."personid"
 WHERE
-	p."added" >= :added
+	VBIt."added" >= :added
 GROUP BY
 	a_Person."personid",
 	a_Person."personname"
