@@ -39,11 +39,13 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -59,7 +61,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	)
 END
 
@@ -71,11 +73,13 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -91,7 +95,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	)
 END
 
@@ -103,11 +107,13 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,18 +129,16 @@ BEGIN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	)
 END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM
