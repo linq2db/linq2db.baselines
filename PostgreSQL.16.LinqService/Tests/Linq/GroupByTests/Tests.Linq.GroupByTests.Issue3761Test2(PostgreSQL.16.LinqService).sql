@@ -22,6 +22,8 @@ DECLARE @default Timestamp -- DateTime2
 SET     @default = '0001-01-01'::date
 DECLARE @DATUM Timestamp -- DateTime2
 SET     @DATUM = '2019-01-01'::date
+DECLARE @default_1 Timestamp -- DateTime2
+SET     @default_1 = '0001-01-01'::date
 
 SELECT
 	t1."Year_1",
@@ -49,8 +51,8 @@ SELECT
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce(n_1."DATUM", :default))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce(n_1."DATUM", :default))) as int) as "Month_1",
+			Cast(Floor(Extract(year from Coalesce(n_1."DATUM", :default_1))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Coalesce(n_1."DATUM", :default_1))) as int) as "Month_1",
 			n_1."SKUPAJ"
 		FROM
 			"Issue3761Table" n_1
