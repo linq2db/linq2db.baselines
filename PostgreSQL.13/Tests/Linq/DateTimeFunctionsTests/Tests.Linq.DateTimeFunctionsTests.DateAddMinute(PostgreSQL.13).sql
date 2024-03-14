@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + 5 * Interval '1 Minute'
+	Cast(Floor(Extract(minute from (t."DateTimeValue" + 5 * Interval '1 Minute'))) as int)
 FROM
 	"LinqDataTypes" t
 

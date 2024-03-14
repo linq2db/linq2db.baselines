@@ -2,17 +2,21 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Sum(t1."MoneyValue"),
-	Cast(Floor(Extract(year from t1."Key_1")) as int),
-	Cast(Floor(Extract(month from t1."Key_1")) as int)
+	Sum(grp_1."MoneyValue"),
+	grp_1."Year_1",
+	grp_1."Month_1"
 FROM
 	(
 		SELECT
-			Cast((Lpad(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int)::text,4,'0') || '-' || Lpad(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int)::text,2,'0') || '-01') as Date) as "Key_1",
-			"selectParam"."MoneyValue"
+			Cast((Lpad(Cast(Floor(Extract(year from grp."DateTimeValue")) as int)::text,4,'0') || '-' || Lpad(Cast(Floor(Extract(month from grp."DateTimeValue")) as int)::text,2,'0') || '-01') as Date) as c1,
+			grp."MoneyValue",
+			Cast(Floor(Extract(year from Cast((Lpad(Cast(Floor(Extract(year from grp."DateTimeValue")) as int)::text,4,'0') || '-' || Lpad(Cast(Floor(Extract(month from grp."DateTimeValue")) as int)::text,2,'0') || '-01') as Date))) as int) as "Year_1",
+			Cast(Floor(Extract(month from Cast((Lpad(Cast(Floor(Extract(year from grp."DateTimeValue")) as int)::text,4,'0') || '-' || Lpad(Cast(Floor(Extract(month from grp."DateTimeValue")) as int)::text,2,'0') || '-01') as Date))) as int) as "Month_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) t1
+			"LinqDataTypes" grp
+	) grp_1
 GROUP BY
-	t1."Key_1"
+	grp_1.c1,
+	grp_1."Year_1",
+	grp_1."Month_1"
 
