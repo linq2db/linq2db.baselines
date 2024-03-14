@@ -32,8 +32,6 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Decimal(1, 0)
 SET     @id = 3
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."nvarcharDataType"
@@ -41,7 +39,7 @@ FROM
 	"AllTypes" p
 WHERE
 	p.ID = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 DisposeTransaction

@@ -38,12 +38,10 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	x."FirstName",
-	x."PersonID",
+	x."PersonID" as ID,
 	x."LastName",
 	x."MiddleName",
 	x."Gender"
@@ -51,7 +49,7 @@ FROM
 	"Person" x
 WHERE
 	x."FirstName" = :FirstName
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -61,22 +59,20 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."FirstName" = :FirstName
+	"FirstName" = :FirstName
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	x."FirstName",
-	x."PersonID",
+	x."PersonID" as ID,
 	x."LastName",
 	x."MiddleName",
 	x."Gender"
@@ -84,7 +80,7 @@ FROM
 	"Person" x
 WHERE
 	x."PersonID" = :ID
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -100,25 +96,23 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."FirstName" = :FirstName,
-	"Person"."LastName" = :LastName,
-	"Person"."MiddleName" = :MiddleName,
-	"Person"."Gender" = :Gender
+	"FirstName" = :FirstName,
+	"LastName" = :LastName,
+	"MiddleName" = :MiddleName,
+	"Gender" = :Gender
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
@@ -126,5 +120,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :ID
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
