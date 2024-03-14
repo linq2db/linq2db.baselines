@@ -2,14 +2,14 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	`t_1`.`c1`
 FROM
 	(
 		SELECT
-			Degrees(Cast(Floor(`p`.`MoneyValue`) as SIGNED)) as `c1`
+			Degrees(Cast(Floor(`t`.`MoneyValue`) as SIGNED)) as `c1`
 		FROM
-			`LinqDataTypes` `p`
-	) `t`
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Cast(`t`.`c1` as Decimal(29, 10)) <> 0.10000000000000001
+	Cast(`t_1`.`c1` as Decimal(29, 10)) <> 0.10000000000000001
 

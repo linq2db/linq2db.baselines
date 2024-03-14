@@ -2,9 +2,9 @@
 -- MySqlConnector MySql (asynchronously)
 
 SELECT
-	Max(`x`.`PersonID`)
+	Max(`p`.`PersonID`)
 FROM
-	`Person` `x`
+	`Person` `p`
 
 BeforeExecute
 -- MySqlConnector MySql (asynchronously)

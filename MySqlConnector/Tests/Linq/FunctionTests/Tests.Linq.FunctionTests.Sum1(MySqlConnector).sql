@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	Sum(`c_1`.`ParentID`)
+	Sum(`t1`.`ParentID`)
 FROM
-	`Child` `c_1`
+	`Child` `t1`
 

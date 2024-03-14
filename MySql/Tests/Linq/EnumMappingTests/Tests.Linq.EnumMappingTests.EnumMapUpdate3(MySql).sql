@@ -25,18 +25,18 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @TestField Int64
+SET     @TestField = 12
 
 UPDATE
 	`LinqDataTypes` `r`
 SET
-	`r`.`BigIntValue` = 12
+	`r`.`BigIntValue` = @TestField
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`BigIntValue`
@@ -44,7 +44,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql

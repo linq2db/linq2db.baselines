@@ -2,19 +2,14 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Max(`t2`.`cnt`)
-FROM
-	(
+	Max((
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					`Child` `t1`
-				WHERE
-					`p`.`ParentID` = `t1`.`ParentID`
-			) as `cnt`
+			Count(*)
 		FROM
-			`Parent` `p`
-	) `t2`
+			`Child` `a_Children`
+		WHERE
+			`t1`.`ParentID` = `a_Children`.`ParentID`
+	))
+FROM
+	`Parent` `t1`
 

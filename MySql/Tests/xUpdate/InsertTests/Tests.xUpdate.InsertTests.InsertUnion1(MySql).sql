@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` > 1000
+	`p`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -46,9 +46,9 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` > 1000
+	`p`.`ParentID` > 1000
 
