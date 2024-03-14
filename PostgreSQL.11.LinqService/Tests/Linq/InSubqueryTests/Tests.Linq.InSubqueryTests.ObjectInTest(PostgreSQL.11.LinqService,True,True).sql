@@ -11,8 +11,35 @@ WHERE
 		SELECT
 			*
 		FROM
-			"Parent" p
+			(
+				SELECT
+					param."ParentID",
+					Coalesce(param."Value1", -1) as "Value_1"
+				FROM
+					"Parent" param
+			) param_1
 		WHERE
-			p."ParentID" = c_1."ParentID" AND Coalesce(p."Value1", -1) = c_1."ParentID"
+			param_1."ParentID" = c_1."ParentID" AND
+			param_1."Value_1" = c_1."ParentID" AND
+			param_1."ParentID" = c_1."ParentID" AND
+			param_1."Value_1" = c_1."ParentID"
 	)
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

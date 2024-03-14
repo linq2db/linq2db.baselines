@@ -39,14 +39,14 @@ SELECT
 FROM
 	"VEMPLOYEE_SCH_SEC" ess
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			"VEMPLOYEE_SCHDL_PERM" y
 		WHERE
 			ess."ID" = y."ID" AND y."IS_ACTIVE" = True
-	))
+	)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -55,6 +55,8 @@ SELECT
 	ess."ID"
 FROM
 	"VEMPLOYEE_SCH_SEC" ess
+WHERE
+	1 = 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

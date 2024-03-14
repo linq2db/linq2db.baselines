@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @param Text(4) -- String
-SET     @param = 'john'
+DECLARE @p Text(4) -- String
+SET     @p = 'john'
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") = :param AND p."PersonID" = 1
+	Lower(p."FirstName") = :p AND p."PersonID" = 1
 
