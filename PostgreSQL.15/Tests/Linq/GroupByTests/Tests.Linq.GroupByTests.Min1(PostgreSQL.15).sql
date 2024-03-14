@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Min(c_1."ChildID")
+	Min(t1."ChildID")
 FROM
-	"Child" c_1
+	"Child" t1
 
