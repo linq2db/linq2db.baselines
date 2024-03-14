@@ -36,7 +36,7 @@ DECLARE @r3 Int -- Int32
 SET     @r3 = 2
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Ints] [i]
 WHERE

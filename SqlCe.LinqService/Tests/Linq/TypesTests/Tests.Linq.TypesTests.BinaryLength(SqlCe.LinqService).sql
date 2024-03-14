@@ -6,17 +6,15 @@ SET     @BinaryValue = 0x0102030405
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[BinaryValue] = @BinaryValue
+	[BinaryValue] = @BinaryValue
 WHERE
 	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	DataLength([t].[BinaryValue])
+SELECT TOP (1)
+	DataLength([t].[BinaryValue]) as [Length_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE
@@ -30,7 +28,7 @@ SET     @BinaryValue = NULL
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[BinaryValue] = @BinaryValue
+	[BinaryValue] = @BinaryValue
 WHERE
 	[LinqDataTypes].[ID] = 1
 

@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	(
 		SELECT DISTINCT

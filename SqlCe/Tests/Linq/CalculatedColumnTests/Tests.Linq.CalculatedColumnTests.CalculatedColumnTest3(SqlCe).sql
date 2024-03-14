@@ -2,34 +2,33 @@
 -- SqlCe
 
 SELECT
-	[t1].[cnt],
+	[t4].[Count_1],
 	[i].[PersonID],
 	[i].[FirstName],
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[i].[LastName] + ', ' + [i].[FirstName],
-	[t2].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+	[i].[LastName] + ', ' + [i].[FirstName] as [AsSqlFullName],
+	[t2].[Count_1] as [DoctorCount]
 FROM
 	[Person] [i]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
+				Count(*) as [Count_1]
 			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON [t1].[PersonID] = [i].[PersonID]
-		LEFT JOIN (
+				[Doctor] [t1]
+			WHERE
+				[t1].[PersonID] = [i].[PersonID]
+		) [t2]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d_1].[PersonID]
+				Count(*) as [Count_1]
 			FROM
-				[Doctor] [d_1]
-			GROUP BY
-				[d_1].[PersonID]
-		) [t2] ON [t2].[PersonID] = [i].[PersonID]
+				[Doctor] [t3]
+			WHERE
+				[t3].[PersonID] = [i].[PersonID]
+		) [t4]
 WHERE
 	[i].[FirstName] <> 'John'
 

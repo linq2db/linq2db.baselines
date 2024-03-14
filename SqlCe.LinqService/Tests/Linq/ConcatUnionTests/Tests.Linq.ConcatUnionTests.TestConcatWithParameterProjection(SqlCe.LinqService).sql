@@ -4,7 +4,7 @@ DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 
 SELECT
-	@someValue,
+	@someValue as [Value_1],
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -12,7 +12,7 @@ WHERE
 	[c_1].[ChildID] <= @someValue
 UNION ALL
 SELECT
-	@someValue,
+	@someValue as [Value_1],
 	[c_2].[ChildID]
 FROM
 	[Child] [c_2]

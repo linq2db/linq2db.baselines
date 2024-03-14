@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],

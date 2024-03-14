@@ -5,24 +5,22 @@ SELECT
 	[t1].[Sum_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Sum([c_1].[ChildID]) as [Sum_1],
-				[c_1].[ParentID]
+				Sum([a_Children].[ChildID]) as [Sum_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[c_1].[ParentID] > 1 AND [c_1].[ParentID] < 10
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+				[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 1 AND
+				[a_Children].[ParentID] < 10
+		) [t1]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[Child] [c_2]
+			[Child] [c_1]
 		WHERE
-			[p].[ParentID] = [c_2].[ParentID] AND [c_2].[ParentID] > 1
+			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1
 	)
 
