@@ -42,10 +42,8 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @i Int32
-SET     @i = 0
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int32
+SET     @diagnosis = 3
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -55,7 +53,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -65,7 +63,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar(11))
+		Cast(:diagnosis as VarChar(255))
 	)
 
 BeforeExecute
@@ -74,8 +72,8 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 1
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @i_1 Int32
+SET     @i_1 = 4
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -85,7 +83,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -95,7 +93,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar(11))
+		Cast(:i_1 as VarChar(255))
 	)
 
 BeforeExecute
@@ -104,8 +102,8 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 2
-DECLARE @diagnosis Varchar2(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @i_1 Int32
+SET     @i_1 = 5
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -115,7 +113,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -125,15 +123,13 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast((Length(:diagnosis) + :i) as VarChar(11))
+		Cast(:i_1 as VarChar(255))
 	)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -142,5 +138,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

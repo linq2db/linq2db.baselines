@@ -75,11 +75,16 @@ FROM
 WHERE
 	x."LanguageID" IN (
 		SELECT
-			Max(t1."LanguageID")
+			t1."Max_1"
 		FROM
-			"Common_Language" t1
-		GROUP BY
-			t1."Name"
+			(
+				SELECT
+					Max(x_1."LanguageID") as "Max_1"
+				FROM
+					"Common_Language" x_1
+				GROUP BY
+					x_1."Name"
+			) t1
 	)
 
 BeforeExecute

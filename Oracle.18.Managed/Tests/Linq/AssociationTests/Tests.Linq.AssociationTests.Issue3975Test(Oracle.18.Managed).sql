@@ -2,38 +2,29 @@
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	lw_Issue3975TestClass."ParentID",
-	detail."ParentID",
-	detail."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
-		SELECT DISTINCT
-			t2."ParentID"
+		SELECT
+			t1."ParentID"
 		FROM
-			(
-				SELECT
-					t1."ParentID"
-				FROM
-					"Parent" t1
-				FETCH NEXT :take ROWS ONLY
-			) t2
-	) lw_Issue3975TestClass
-		INNER JOIN "Child" detail ON lw_Issue3975TestClass."ParentID" = detail."ParentID"
+			"Parent" t1
+		FETCH NEXT 1 ROWS ONLY
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID"
 FROM
 	"Parent" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransaction
