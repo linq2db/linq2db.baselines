@@ -2,14 +2,9 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[p].[c1]
+	[p].[ID]
 FROM
-	(
-		SELECT
-			Convert(NVarChar(3), Convert(TinyInt, [t].[ID])) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [p]
 WHERE
-	Len([p].[c1]) > 0
+	Len(Convert(NVarChar(3), Convert(TinyInt, [p].[ID]))) > 0
 
