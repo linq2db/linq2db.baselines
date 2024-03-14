@@ -2,11 +2,16 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[ParentID]
+	[g_2].[ParentID]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
-HAVING
-	[t1].[ParentID] > 2
+	(
+		SELECT
+			[g_1].[ParentID]
+		FROM
+			[Child] [g_1]
+		GROUP BY
+			[g_1].[ParentID]
+	) [g_2]
+WHERE
+	[g_2].[ParentID] > 2
 
