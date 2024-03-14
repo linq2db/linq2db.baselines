@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -1 * Interval '1 Day' * 7
+	Cast((t."TransactionDate" + -1 * Interval '1 Day' * 7) as Date)
 FROM
 	"Transactions" t
 
