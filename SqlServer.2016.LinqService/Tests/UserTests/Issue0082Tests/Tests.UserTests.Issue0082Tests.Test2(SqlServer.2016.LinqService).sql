@@ -7,17 +7,17 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[o].[ParentID] = [t1].[ParentID]
+			[o].[ParentID] = [a_Children].[ParentID]
 	),
 	(
 		SELECT
-			Sum([x].[ParentID])
+			Sum([a_Children_1].[ParentID])
 		FROM
-			[Child] [x]
+			[Child] [a_Children_1]
 		WHERE
-			[o].[ParentID] = [x].[ParentID]
+			[o].[ParentID] = [a_Children_1].[ParentID]
 	)
 FROM
 	[Parent] [o]
@@ -36,7 +36,7 @@ BeforeExecute
 SELECT
 	[x_1].[ParentID],
 	[x_1].[CountResult],
-	[x_1].[SumResult]
+	[x_1].[Sum_1]
 FROM
 	(
 		SELECT
@@ -44,21 +44,21 @@ FROM
 				SELECT
 					Count(*)
 				FROM
-					[Child] [t1]
+					[Child] [a_Children]
 				WHERE
-					[o].[ParentID] = [t1].[ParentID]
+					[x].[ParentID] = [a_Children].[ParentID]
 			) as [CountResult],
-			[o].[ParentID],
+			[x].[ParentID],
 			(
 				SELECT
-					Sum([x].[ParentID])
+					Sum([a_Children_1].[ParentID])
 				FROM
-					[Child] [x]
+					[Child] [a_Children_1]
 				WHERE
-					[o].[ParentID] = [x].[ParentID]
-			) as [SumResult]
+					[x].[ParentID] = [a_Children_1].[ParentID]
+			) as [Sum_1]
 		FROM
-			[Parent] [o]
+			[Parent] [x]
 	) [x_1]
 WHERE
 	[x_1].[CountResult] > 0

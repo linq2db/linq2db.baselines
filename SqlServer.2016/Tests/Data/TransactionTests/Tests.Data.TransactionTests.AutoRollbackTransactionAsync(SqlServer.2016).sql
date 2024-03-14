@@ -20,24 +20,22 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2016
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1012
 
 UPDATE
-	[t1]
+	[Parent]
 SET
-	[t1].[Value1] = 1012
-FROM
-	[Parent] [t1]
+	[Value1] = @Value1
 WHERE
-	[t1].[ParentID] = 1010
+	[Parent].[ParentID] = 1010
 
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
 -- SqlServer.2016 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM

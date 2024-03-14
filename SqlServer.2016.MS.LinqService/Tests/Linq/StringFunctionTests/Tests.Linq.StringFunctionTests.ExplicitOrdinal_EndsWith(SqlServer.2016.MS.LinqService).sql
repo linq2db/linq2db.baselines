@@ -36,7 +36,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE N'%stString' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], 8)) = Convert(VarBinary(8000), N'stString')
+	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -47,7 +47,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE N'%stString' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], 8)) = Convert(VarBinary(8000), N'stString')
+	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -58,7 +58,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE N'%ststring' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], 8)) = Convert(VarBinary(8000), N'ststring')
+	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'ststring'))) = Convert(VarBinary(8000), N'ststring')
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -69,5 +69,5 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE N'%ststring' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], 8)) = Convert(VarBinary(8000), N'ststring')
+	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], LEN(N'ststring'))) = Convert(VarBinary(8000), N'ststring')
 
