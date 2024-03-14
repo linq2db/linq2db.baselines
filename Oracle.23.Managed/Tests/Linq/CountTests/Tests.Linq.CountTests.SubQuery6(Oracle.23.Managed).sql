@@ -8,18 +8,18 @@ SELECT
 		SELECT
 			Count(*)
 		FROM
-			"Child" t1
+			"Child" a_Children
 		WHERE
-			p."ParentID" = t1."ParentID"
+			p_1."ParentID" = a_Children."ParentID"
 	)
 FROM
 	(
 		SELECT
-			t2."ParentID"
+			p."ParentID"
 		FROM
-			"Parent" t2
+			"Parent" p
 		FETCH NEXT :take ROWS ONLY
-	) p
+	) p_1
 ORDER BY
-	p."ParentID" DESC
+	p_1."ParentID" DESC
 
