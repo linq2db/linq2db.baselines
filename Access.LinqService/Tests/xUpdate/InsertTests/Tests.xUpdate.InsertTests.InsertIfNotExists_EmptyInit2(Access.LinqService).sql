@@ -18,16 +18,22 @@ CREATE TABLE [test_insert_or_replace]
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 SELECT
 	1
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
-	[t1].[id] = 1
+	[t1].[id] = @Id
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name VarWChar(4) -- String
+SET     @Name = 'test'
 
 INSERT INTO [test_insert_or_replace]
 (
@@ -36,19 +42,21 @@ INSERT INTO [test_insert_or_replace]
 )
 VALUES
 (
-	1,
-	'test'
+	@Id,
+	@Name
 )
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 
 SELECT
 	1
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
-	[t1].[id] = 1
+	[t1].[id] = @Id
 
 BeforeExecute
 -- Access AccessOleDb

@@ -2,24 +2,23 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t2].[PersonID],
-	[t2].[FirstName],
-	[t2].[LastName],
-	[t2].[MiddleName],
-	[t2].[Gender],
-	[t2].[LastName] + ', ' + [t2].[FirstName],
-	[t1].[cnt]
+	[t1].[PersonID],
+	[t1].[FirstName],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender],
+	[t1].[LastName] + ', ' + [t1].[FirstName],
+	[t1].[LastName] + ', ' + [t1].[FirstName],
+	(
+		SELECT
+			Count(*)
+		FROM
+			[Doctor] [t2]
+		WHERE
+			[t2].[PersonID] = [t1].[PersonID]
+	)
 FROM
-	[Person] [t2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [t2].[PersonID])
+	[Person] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -31,18 +30,17 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
-	[t1].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName],
+	(
+		SELECT
+			Count(*)
+		FROM
+			[Doctor] [t1]
+		WHERE
+			[t1].[PersonID] = [i].[PersonID]
+	)
 FROM
 	[Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [i].[PersonID])
 WHERE
 	[i].[LastName] + ', ' + [i].[FirstName] <> 'Pupkin, John'
 

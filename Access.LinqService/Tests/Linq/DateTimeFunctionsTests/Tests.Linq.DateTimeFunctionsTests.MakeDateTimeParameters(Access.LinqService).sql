@@ -2,13 +2,17 @@
 -- Access AccessOleDb
 DECLARE @year Integer -- Int32
 SET     @year = 2010
-DECLARE @year_1 Integer -- Int32
-SET     @year_1 = 2010
 
 SELECT
-	DateSerial(@year, [p].[ID], 1)
+	[t_1].[ID]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			DatePart('yyyy', DateSerial(CVar(@year), [t].[ID], 1)) as [Year_1],
+			[t].[ID]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	DatePart('yyyy', DateSerial(@year_1, [p].[ID], 1)) = 2010
+	[t_1].[Year_1] = 2010
 
