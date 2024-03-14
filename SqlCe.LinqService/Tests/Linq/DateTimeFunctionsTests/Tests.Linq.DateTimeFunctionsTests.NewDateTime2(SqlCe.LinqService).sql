@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[p].[DateTimeValue]
+	DatePart(year, [p].[DateTimeValue]) as [Year_1]
 FROM
 	[LinqDataTypes] [p]
 

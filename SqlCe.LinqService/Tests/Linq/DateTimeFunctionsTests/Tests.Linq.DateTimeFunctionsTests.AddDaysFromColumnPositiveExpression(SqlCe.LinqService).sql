@@ -42,15 +42,19 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @part1 SmallInt -- Int16
+SET     @part1 = 4
+DECLARE @part2 Int -- Int32
+SET     @part2 = 4
 DECLARE @p DateTime
 SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
+	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p
 
 BeforeExecute
 -- SqlCe

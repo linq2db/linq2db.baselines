@@ -2,10 +2,10 @@
 -- SqlCe
 
 SELECT
-	[_].[ParentID] + 1
+	[_].[ParentID] + 1 as [c1]
 FROM
-	[Parent] [cp],
+	[Parent] [p],
 	[Child] [_]
 WHERE
-	[_].[ParentID] > 0
+	[_].[ParentID] + 1 > 1
 

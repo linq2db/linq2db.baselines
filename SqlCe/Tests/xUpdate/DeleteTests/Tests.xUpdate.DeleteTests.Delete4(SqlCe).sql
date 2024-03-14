@@ -42,7 +42,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[GrandChild] [gc]
 WHERE

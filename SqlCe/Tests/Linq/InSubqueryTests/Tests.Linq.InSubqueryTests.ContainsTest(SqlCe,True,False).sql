@@ -9,9 +9,9 @@ SELECT
 			FROM
 				[Child] [c_1]
 			WHERE
-				[c_1].[ParentID] = 1
+				1 = [c_1].[ParentID]
 		)
 			THEN 1
 		ELSE 0
-	END
+	END as [c1]
 

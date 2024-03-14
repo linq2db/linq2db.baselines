@@ -780,7 +780,7 @@ DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 111149
 
 SELECT
-	Count(*)
+	Count(*) as [Count_1]
 FROM
 	[Parent] [r]
 WHERE
