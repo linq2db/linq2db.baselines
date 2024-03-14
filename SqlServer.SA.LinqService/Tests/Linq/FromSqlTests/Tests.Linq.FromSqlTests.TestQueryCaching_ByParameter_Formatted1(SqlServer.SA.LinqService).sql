@@ -1,60 +1,60 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @value Int -- Int32
-SET     @value = NULL
+DECLARE @p Int -- Int32
+SET     @p = NULL
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @value Int -- Int32
-SET     @value = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @value Int -- Int32
-SET     @value = NULL
+DECLARE @p Int -- Int32
+SET     @p = NULL
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @value Int -- Int32
-SET     @value = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @value Int -- Int32
-SET     @value = 3
+DECLARE @p Int -- Int32
+SET     @p = 3
 
 SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @value as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
