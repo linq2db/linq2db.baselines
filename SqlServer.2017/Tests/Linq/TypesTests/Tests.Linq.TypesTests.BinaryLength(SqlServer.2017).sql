@@ -4,20 +4,16 @@ DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DataLength([t].[BinaryValue])
 FROM
 	[LinqDataTypes] [t]
@@ -30,11 +26,9 @@ DECLARE @BinaryValue VarBinary(8000) -- Binary
 SET     @BinaryValue = NULL
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 

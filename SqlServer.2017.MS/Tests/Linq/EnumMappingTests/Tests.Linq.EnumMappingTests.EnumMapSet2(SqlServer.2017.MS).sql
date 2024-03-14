@@ -29,20 +29,16 @@ DECLARE @TestField BigInt -- Int64
 SET     @TestField = 12
 
 UPDATE
-	[r]
+	[LinqDataTypes]
 SET
-	[r].[BigIntValue] = @TestField
-FROM
-	[LinqDataTypes] [r]
+	[BigIntValue] = @TestField
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]
