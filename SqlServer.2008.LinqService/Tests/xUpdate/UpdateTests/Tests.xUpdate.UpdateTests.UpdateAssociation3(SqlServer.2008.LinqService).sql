@@ -28,11 +28,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 5
 
 UPDATE
 	[a_Parent]
 SET
-	[a_Parent].[Value1] = 5
+	[a_Parent].[Value1] = @Value1
 FROM
 	[Child] [child_1]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
