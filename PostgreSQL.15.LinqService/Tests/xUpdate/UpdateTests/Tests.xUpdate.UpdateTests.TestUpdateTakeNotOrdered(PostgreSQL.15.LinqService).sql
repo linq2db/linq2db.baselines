@@ -180,18 +180,21 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = 1
+	"Value1" = t1.c1
 FROM
 	(
 		SELECT
-			x."Value1",
-			x."ParentID"
+			:Value1 as c1,
+			x."ParentID",
+			x."Value1"
 		FROM
 			"Parent" x
 		WHERE
