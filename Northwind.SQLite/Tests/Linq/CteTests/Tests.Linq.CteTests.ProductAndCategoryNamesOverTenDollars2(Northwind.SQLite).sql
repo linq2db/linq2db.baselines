@@ -10,20 +10,20 @@ AS
 		[p].[ProductName]
 	FROM
 		[Products] [p]
-			LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+			LEFT JOIN [Categories] [a_Category] ON ([p].[CategoryID] = [a_Category].[CategoryID] OR [p].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
 	WHERE
 		[p].[UnitPrice] > 10
 )
 SELECT
-	[p_1].[ProductName],
-	[p_1].[CategoryName],
-	[p_1].[UnitPrice]
+	[t1].[ProductName],
+	[t1].[CategoryName],
+	[t1].[UnitPrice]
 FROM
-	[ProductAndCategoryNamesOverTenDollars] [p_1]
+	[ProductAndCategoryNamesOverTenDollars] [t1]
 ORDER BY
-	[p_1].[CategoryName],
-	[p_1].[UnitPrice],
-	[p_1].[ProductName]
+	[t1].[CategoryName],
+	[t1].[UnitPrice],
+	[t1].[ProductName]
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -34,7 +34,7 @@ SELECT
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
-		LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON ([p].[CategoryID] = [a_Category].[CategoryID] OR [p].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
 WHERE
 	[p].[UnitPrice] > 10
 ORDER BY

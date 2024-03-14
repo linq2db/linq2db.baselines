@@ -2,17 +2,21 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	Cast(StrFTime('%Y', [t1].[Key_1]) as int),
-	Cast(StrFTime('%m', [t1].[Key_1]) as int)
+	Sum([grp_1].[MoneyValue]),
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 FROM
 	(
 		SELECT
-			Date(printf('%04d', Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int)) || '-' || printf('%02d', Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int)) || '-01') as [Key_1],
-			[selectParam].[MoneyValue]
+			Date(printf('%04d', Cast(StrFTime('%Y', [grp].[DateTimeValue]) as int)) || '-' || printf('%02d', Cast(StrFTime('%m', [grp].[DateTimeValue]) as int)) || '-01') as [c1],
+			[grp].[MoneyValue],
+			Cast(StrFTime('%Y', Date(printf('%04d', Cast(StrFTime('%Y', [grp].[DateTimeValue]) as int)) || '-' || printf('%02d', Cast(StrFTime('%m', [grp].[DateTimeValue]) as int)) || '-01')) as int) as [Year_1],
+			Cast(StrFTime('%m', Date(printf('%04d', Cast(StrFTime('%Y', [grp].[DateTimeValue]) as int)) || '-' || printf('%02d', Cast(StrFTime('%m', [grp].[DateTimeValue]) as int)) || '-01')) as int) as [Month_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [grp]
+	) [grp_1]
 GROUP BY
-	[t1].[Key_1]
+	[grp_1].[c1],
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 

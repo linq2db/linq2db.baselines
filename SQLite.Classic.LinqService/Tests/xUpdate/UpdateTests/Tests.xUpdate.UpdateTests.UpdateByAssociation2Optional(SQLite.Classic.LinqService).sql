@@ -109,13 +109,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Field NVarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id  -- Int32
 SET     @id = 3
 
 UPDATE
 	[MainTable]
 SET
-	[Field] = 'test'
+	[Field] = @Field
 FROM
 	[AssociatedTable] [pat]
 WHERE
