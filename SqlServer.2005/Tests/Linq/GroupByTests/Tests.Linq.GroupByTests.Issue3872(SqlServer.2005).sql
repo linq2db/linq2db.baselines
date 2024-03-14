@@ -22,14 +22,14 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	Max([selectParam].[PersonID])
-FROM
-	[Person] [selectParam]
-UNION ALL
-SELECT
-	[r].[PersonID]
+	Max([r].[PersonID])
 FROM
 	[Person] [r]
+UNION ALL
+SELECT
+	[r_1].[PersonID]
+FROM
+	[Person] [r_1]
 
 BeforeExecute
 -- SqlServer.2005
