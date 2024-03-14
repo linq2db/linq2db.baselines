@@ -68,8 +68,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -77,12 +75,10 @@ FROM
 	"Src" s
 WHERE
 	s."Int" IN (-1, -2)
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -90,12 +86,10 @@ FROM
 	"Src" s
 WHERE
 	s."Int" IN (-1, NULL)
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -103,12 +97,10 @@ FROM
 	"Src" s
 WHERE
 	s."Int" IN (-1, 2)
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -116,12 +108,10 @@ FROM
 	"Src" s
 WHERE
 	s."Int" NOT IN (NULL, 2)
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -129,7 +119,7 @@ FROM
 	"Src" s
 WHERE
 	s."Int" NOT IN (-1, 2)
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
