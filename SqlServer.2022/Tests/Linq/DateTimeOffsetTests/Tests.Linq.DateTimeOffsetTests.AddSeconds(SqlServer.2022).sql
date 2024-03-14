@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	DateAdd(second, -35, [t].[TransactionDate])
+	DatePart(second, DateAdd(second, -35, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

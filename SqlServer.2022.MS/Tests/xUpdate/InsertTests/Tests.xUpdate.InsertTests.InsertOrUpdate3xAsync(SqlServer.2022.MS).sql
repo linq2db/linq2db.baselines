@@ -39,6 +39,8 @@ DECLARE @i Int -- Int32
 SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id2 AS [PersonID]) [s] ON
@@ -48,7 +50,7 @@ USING (SELECT @id2 AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -58,7 +60,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
@@ -69,6 +71,8 @@ DECLARE @i Int -- Int32
 SET     @i = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id2 AS [PersonID]) [s] ON
@@ -78,7 +82,7 @@ USING (SELECT @id2 AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,7 +92,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
@@ -99,6 +103,8 @@ DECLARE @i Int -- Int32
 SET     @i = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id2 AS [PersonID]) [s] ON
@@ -108,7 +114,7 @@ USING (SELECT @id2 AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -118,17 +124,15 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

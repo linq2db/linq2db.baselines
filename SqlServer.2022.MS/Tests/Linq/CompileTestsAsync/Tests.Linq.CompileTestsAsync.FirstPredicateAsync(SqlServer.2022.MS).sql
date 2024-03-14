@@ -35,12 +35,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
