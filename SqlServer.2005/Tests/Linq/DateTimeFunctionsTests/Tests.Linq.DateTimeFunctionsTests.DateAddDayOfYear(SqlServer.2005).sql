@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	DateAdd(dayofyear, 3, [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(dayofyear, 3, [t].[DateTimeValue]) as Float)) as DateTime)
 FROM
 	[LinqDataTypes] [t]
 
