@@ -180,18 +180,22 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
 SET     @take = 5
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Value1] = 1
+	[u].[Value1] = @Value1
 FROM
+	[Parent] [u],
 	(
 		SELECT
+			[x].[ParentID],
 			[x].[Value1]
 		FROM
 			[Parent] [x]
@@ -201,13 +205,13 @@ FROM
 			[x].[ParentID] DESC
 		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 	) [t1]
+WHERE
+	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]
 FROM
