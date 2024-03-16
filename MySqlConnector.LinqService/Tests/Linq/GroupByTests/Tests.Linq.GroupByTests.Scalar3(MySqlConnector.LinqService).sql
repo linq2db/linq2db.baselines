@@ -4,14 +4,14 @@
 SELECT
 	(
 		SELECT
-			Max(`id`.`ChildID`)
+			Max(`ch`.`ChildID`)
 		FROM
-			`Child` `id`
+			`Child` `ch`
 		WHERE
-			`t1`.`ParentID` = `id`.`ParentID` AND `id`.`ChildID` > 0
+			`g_1`.`ParentID` = `ch`.`ParentID` AND `ch`.`ChildID` > 0
 	)
 FROM
-	`Child` `t1`
+	`Child` `g_1`
 GROUP BY
-	`t1`.`ParentID`
+	`g_1`.`ParentID`
 

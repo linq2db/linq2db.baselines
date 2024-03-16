@@ -491,14 +491,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
-GROUP BY
-	`x`.`DuplicateData`
-ORDER BY
-	Min(`x`.`OrderData1`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -509,13 +505,26 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
+	`g_1`.`DuplicateData`
+FROM
+	`OrderByDistinctData` `g_1`
+GROUP BY
+	`g_1`.`DuplicateData`
+ORDER BY
+	Max(`g_1`.`OrderData1`)
+LIMIT @skip, @take
+
+BeforeExecute
+-- MySql MySql.Official MySql
+DECLARE @skip Int32
+SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
+
+SELECT DISTINCT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
-GROUP BY
-	`x`.`DuplicateData`
-ORDER BY
-	Max(`x`.`OrderData1`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -526,30 +535,13 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	`x`.`DuplicateData`
+	`g_1`.`DuplicateData`
 FROM
-	`OrderByDistinctData` `x`
+	`OrderByDistinctData` `g_1`
 GROUP BY
-	`x`.`DuplicateData`
+	`g_1`.`DuplicateData`
 ORDER BY
-	Max(`x`.`OrderData1`) DESC
-LIMIT @skip, @take
-
-BeforeExecute
--- MySql MySql.Official MySql
-DECLARE @skip Int32
-SET     @skip = 0
-DECLARE @take Int32
-SET     @take = 3
-
-SELECT
-	`x`.`DuplicateData`
-FROM
-	`OrderByDistinctData` `x`
-GROUP BY
-	`x`.`DuplicateData`
-ORDER BY
-	Min(`x`.`OrderData1`) DESC
+	Min(`g_1`.`OrderData1`) DESC
 LIMIT @skip, @take
 
 BeforeExecute

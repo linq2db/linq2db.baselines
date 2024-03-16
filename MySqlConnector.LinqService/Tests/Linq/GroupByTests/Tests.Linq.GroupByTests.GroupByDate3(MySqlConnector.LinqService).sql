@@ -2,17 +2,21 @@
 -- MySqlConnector MySql
 
 SELECT
-	Sum(`t1`.`MoneyValue`),
-	Extract(year from `t1`.`Key_1`),
-	Extract(month from `t1`.`Key_1`)
+	Sum(`grp_1`.`MoneyValue`),
+	`grp_1`.`Year_1`,
+	`grp_1`.`Month_1`
 FROM
 	(
 		SELECT
-			Cast(Concat(Lpad(Extract(year from `selectParam`.`DateTimeValue`),4,'0'), '-', Lpad(Extract(month from `selectParam`.`DateTimeValue`),2,'0'), '-01') as Date) as `Key_1`,
-			`selectParam`.`MoneyValue`
+			Cast(Concat(Lpad(Extract(year from `grp`.`DateTimeValue`),4,'0'), '-', Lpad(Extract(month from `grp`.`DateTimeValue`),2,'0'), '-01') as Date) as `c1`,
+			`grp`.`MoneyValue`,
+			Extract(year from Cast(Concat(Lpad(Extract(year from `grp`.`DateTimeValue`),4,'0'), '-', Lpad(Extract(month from `grp`.`DateTimeValue`),2,'0'), '-01') as Date)) as `Year_1`,
+			Extract(month from Cast(Concat(Lpad(Extract(year from `grp`.`DateTimeValue`),4,'0'), '-', Lpad(Extract(month from `grp`.`DateTimeValue`),2,'0'), '-01') as Date)) as `Month_1`
 		FROM
-			`LinqDataTypes` `selectParam`
-	) `t1`
+			`LinqDataTypes` `grp`
+	) `grp_1`
 GROUP BY
-	`t1`.`Key_1`
+	`grp_1`.`c1`,
+	`grp_1`.`Year_1`,
+	`grp_1`.`Month_1`
 
