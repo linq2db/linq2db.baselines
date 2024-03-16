@@ -4,13 +4,13 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
 SELECT
-	IIF(EXISTS(
+	IIF(@ParentID IN (
 		SELECT
-			*
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+			[p].[ParentID] = 1
 	), 1, 0)
 
 BeforeExecute
@@ -19,12 +19,12 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 
 SELECT
-	IIF(EXISTS(
+	IIF(@ParentID IN (
 		SELECT
-			*
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+			[p].[ParentID] = 1
 	), 1, 0)
 

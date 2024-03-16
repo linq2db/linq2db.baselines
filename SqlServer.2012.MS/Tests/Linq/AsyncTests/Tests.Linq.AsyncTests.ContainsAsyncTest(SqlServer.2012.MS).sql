@@ -4,12 +4,10 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 SELECT
-	IIF(EXISTS(
+	IIF(@ID IN (
 		SELECT
-			*
+			[t1].[PersonID]
 		FROM
 			[Person] [t1]
-		WHERE
-			[t1].[PersonID] = @ID
 	), 1, 0)
 
