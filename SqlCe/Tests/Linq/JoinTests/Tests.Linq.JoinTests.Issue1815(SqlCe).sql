@@ -57,39 +57,35 @@ SELECT 2,4,3
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
-	[x].[InMaxQuantity]
+SELECT TOP (2)
+	[t1].[InId] as [LinkId],
+	[e].[InId],
+	[t1].[InMinQuantity],
+	[e].[InMinQuantity] as [InMinQuantity_1],
+	[t1].[InMaxQuantity],
+	[e].[InMaxQuantity] as [InMaxQuantity_1]
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 1
+	[t1].[InId] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	[j].[InId],
-	[j].[InMaxQuantity],
-	[j].[InMinQuantity],
-	[x].[InMinQuantity],
-	[x].[InMaxQuantity]
+SELECT TOP (2)
+	[t1].[InId] as [LinkId],
+	[e].[InId],
+	[t1].[InMinQuantity],
+	[e].[InMinQuantity] as [InMinQuantity_1],
+	[t1].[InMaxQuantity],
+	[e].[InMaxQuantity] as [InMaxQuantity_1]
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 2
+	[t1].[InId] = 2
 
 BeforeExecute
 -- SqlCe
