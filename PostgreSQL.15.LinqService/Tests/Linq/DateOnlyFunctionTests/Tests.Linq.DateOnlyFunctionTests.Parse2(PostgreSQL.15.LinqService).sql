@@ -270,16 +270,11 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	d.c1
+	d."TransactionDate"
 FROM
-	(
-		SELECT
-			t."TransactionDate" as c1
-		FROM
-			"Transactions" t
-	) d
+	"Transactions" d
 WHERE
-	Cast(Floor(Extract(day from d.c1)) as int) > 0
+	Cast(Floor(Extract(day from d."TransactionDate")) as int) > 0
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
