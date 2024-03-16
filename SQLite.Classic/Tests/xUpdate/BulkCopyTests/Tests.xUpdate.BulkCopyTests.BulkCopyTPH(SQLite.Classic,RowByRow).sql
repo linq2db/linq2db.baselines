@@ -92,12 +92,12 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[Id],
 	[t1].[Discriminator],
-	[t1].[Value1],
-	[t1].[Value2],
+	[t1].[Id],
 	[t1].[Value3],
-	[t1].[NullableBool]
+	[t1].[NullableBool],
+	[t1].[Value2],
+	[t1].[Value1]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -105,111 +105,99 @@ ORDER BY
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Discriminator] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Discriminator] = 2
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Discriminator] = 3
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value1] = 'Str1'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value2] = 'Str2'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value3] = 'Str3'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
