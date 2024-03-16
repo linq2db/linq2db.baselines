@@ -18,13 +18,11 @@ DECLARE @TestName Int -- Int32
 SET     @TestName = 2
 
 UPDATE
-	[t]
+	[testparams]
 SET
-	[t].[Test-Name] = @TestName
-FROM
-	[testparams] [t]
+	[Test-Name] = @TestName
 WHERE
-	[t].[Test-Name] = 1
+	[testparams].[Test-Name] = 1
 
 BeforeExecute
 -- SqlServer.2022
