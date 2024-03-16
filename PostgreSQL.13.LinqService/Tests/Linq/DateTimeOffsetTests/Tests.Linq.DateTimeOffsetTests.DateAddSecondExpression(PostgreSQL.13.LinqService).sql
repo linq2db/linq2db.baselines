@@ -290,7 +290,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 41
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Second'
+	Cast(Floor(Extract(second from (t."TransactionDate" + :p * Interval '1 Second'))) as int)
 FROM
 	"Transactions" t
 
