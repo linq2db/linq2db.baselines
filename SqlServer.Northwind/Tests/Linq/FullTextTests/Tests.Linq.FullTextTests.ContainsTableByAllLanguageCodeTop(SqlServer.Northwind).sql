@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'NEAR(seafood, "bread")'
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1053
-DECLARE @p_2 Int -- Int32
-SET     @p_2 = 2
+DECLARE @search NVarChar(4000) -- String
+SET     @search = N'NEAR(seafood, "bread")'
+DECLARE @language Int -- Int32
+SET     @language = 1053
+DECLARE @top Int -- Int32
+SET     @top = 2
 
 SELECT
 	[c_1].[CategoryID],
@@ -14,7 +14,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN CONTAINSTABLE([Categories], *, @p, LANGUAGE @p_1, @p_2) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN CONTAINSTABLE([Categories], *, @search, LANGUAGE @language, @top) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 
