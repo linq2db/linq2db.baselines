@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	InStr(p."FirstName", 'oh') = 2 AND p."PersonID" = 1
+	InStr(p."FirstName", 'oh') - 1 = 1 AND p."PersonID" = 1
 

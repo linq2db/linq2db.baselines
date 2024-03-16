@@ -47,9 +47,9 @@ SELECT
 	r."Id",
 	r."Decimal1",
 	r."Decimal2",
-	Nvl(r."Decimal3", 0.1),
+	r."Decimal3",
 	r."Int1",
-	Nvl(r."Int2", 22)
+	r."Int2"
 FROM
 	"Issue2032Table" r
 ORDER BY

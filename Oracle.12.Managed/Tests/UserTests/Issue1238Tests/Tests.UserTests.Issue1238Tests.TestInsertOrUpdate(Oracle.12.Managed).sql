@@ -8,9 +8,17 @@ DELETE FROM
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Key1 Int32
+SET     @Key1 = 143
+DECLARE @Key2 Varchar2 -- String
+SET     @Key2 = NULL
+DECLARE @Data Int32
+SET     @Data = 1
+DECLARE @Data_1 Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" t1
-USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
+USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s ON
 (
 	t1."InheritanceParentId" = s."InheritanceParentId" AND
 	(t1."Name" IS NULL AND s."Name" IS NULL OR t1."Name" = s."Name")
@@ -18,7 +26,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = 1
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -28,9 +36,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		143,
-		NULL,
-		1
+		:Key1,
+		:Key2,
+		:Data_1
 	)
 
 BeforeExecute
@@ -43,9 +51,17 @@ FROM
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Key1 Int32
+SET     @Key1 = 143
+DECLARE @Key2 Varchar2 -- String
+SET     @Key2 = NULL
+DECLARE @Data Int32
+SET     @Data = 1
+DECLARE @Data_1 Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" t1
-USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
+USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s ON
 (
 	t1."InheritanceParentId" = s."InheritanceParentId" AND
 	(t1."Name" IS NULL AND s."Name" IS NULL OR t1."Name" = s."Name")
@@ -53,7 +69,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = 1
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -63,9 +79,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		143,
-		NULL,
-		1
+		:Key1,
+		:Key2,
+		:Data_1
 	)
 
 BeforeExecute

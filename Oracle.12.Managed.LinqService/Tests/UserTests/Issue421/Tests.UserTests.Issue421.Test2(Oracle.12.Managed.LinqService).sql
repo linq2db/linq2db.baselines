@@ -60,11 +60,11 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"BlobClass"
+	"BlobClass" t1
 SET
-	"BlobClass"."BlobValue" = HEXTORAW('030201')
+	"BlobValue" = HEXTORAW('030201')
 WHERE
-	"BlobClass"."Id" = 1
+	t1."Id" = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
