@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	[Person] [_]
 WHERE
-	[_].[PersonID] IS NULL
+	[_].[PersonID] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
