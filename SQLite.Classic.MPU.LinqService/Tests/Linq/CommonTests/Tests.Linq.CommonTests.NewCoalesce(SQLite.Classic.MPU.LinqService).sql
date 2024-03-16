@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Coalesce([p].[Value1], 100)
+	[p].[Value1]
 FROM
 	[Parent] [p]
 
