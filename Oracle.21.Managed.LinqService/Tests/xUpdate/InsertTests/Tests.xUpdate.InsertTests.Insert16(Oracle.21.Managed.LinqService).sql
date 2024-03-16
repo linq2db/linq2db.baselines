@@ -20,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast(:idx as VarChar(11)),
+	Cast(:idx as VarChar(255)),
 	'M'
 )
 

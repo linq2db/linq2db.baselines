@@ -2,8 +2,8 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Min(t1."ParentID"),
-	Max(t1."ParentID")
+	Min(gr."ParentID"),
+	Max(gr."ParentID")
 FROM
-	"Parent" t1
+	"Parent" gr
 
