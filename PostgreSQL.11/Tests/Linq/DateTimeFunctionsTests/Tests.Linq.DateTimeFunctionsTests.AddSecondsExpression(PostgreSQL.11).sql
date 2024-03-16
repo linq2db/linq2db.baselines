@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = -35
 
 SELECT
-	t."DateTimeValue" + :p * Interval '1 Second'
+	Cast(Floor(Extract(second from (t."DateTimeValue" + :p * Interval '1 Second'))) as int)
 FROM
 	"LinqDataTypes" t
 
