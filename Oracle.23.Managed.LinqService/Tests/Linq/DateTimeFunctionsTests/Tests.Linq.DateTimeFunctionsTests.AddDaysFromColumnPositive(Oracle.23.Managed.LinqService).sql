@@ -56,7 +56,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID = 5000
+	t.ID = 5000
 
