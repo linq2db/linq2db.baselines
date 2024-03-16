@@ -2,5 +2,5 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	2147483647
+	1
 

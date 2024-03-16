@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[p].[PersonID],
-	[_gjd_ri].[PersonID],
-	[_gjd_ri].[Diagnosis]
+	[m_1].[PersonID],
+	[d].[PersonID],
+	[d].[Diagnosis]
 FROM
-	[Person] [p]
-		INNER JOIN [Patient] [_gjd_ri] ON ([_gjd_ri].[PersonID] = [p].[PersonID])
+	[Person] [m_1]
+		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	LCase([p].[FirstName]) LIKE '%test%'
+	LCase([m_1].[FirstName]) LIKE '%test%'
 
 BeforeExecute
 -- Access.Odbc AccessODBC

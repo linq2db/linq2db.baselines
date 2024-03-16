@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([t].[PersonID])
+	Max([t1].[PersonID])
 FROM
-	[Person] [t]
+	[Person] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
