@@ -18,13 +18,11 @@ DECLARE @Test Int -- Int32
 SET     @Test = 2
 
 UPDATE
-	[t]
+	[testparams]
 SET
-	[t].[TestИмя] = @Test
-FROM
-	[testparams] [t]
+	[TestИмя] = @Test
 WHERE
-	[t].[TestИмя] = 1
+	[testparams].[TestИмя] = 1
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
