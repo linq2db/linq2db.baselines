@@ -2,10 +2,12 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	Count(*)
 FROM
-	[Child] [t1]
+	[Parent] [p]
+		INNER JOIN [GrandChild] [g_1] ON [p].[ParentID] = [g_1].[ParentID]
+		INNER JOIN [Child] [c_1] ON [g_1].[ChildID] = [c_1].[ChildID]
+		INNER JOIN [LinqDataTypes] [t] ON [c_1].[ParentID] = [t].[ID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -26,10 +28,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
-		INNER JOIN [GrandChild] [g_1] ON [p].[ParentID] = [g_1].[ParentID]
-		INNER JOIN [Child] [c_1] ON [g_1].[ChildID] = [c_1].[ChildID]
-		INNER JOIN [LinqDataTypes] [t] ON [c_1].[ParentID] = [t].[ID]
+	[Child] [t1]
 
