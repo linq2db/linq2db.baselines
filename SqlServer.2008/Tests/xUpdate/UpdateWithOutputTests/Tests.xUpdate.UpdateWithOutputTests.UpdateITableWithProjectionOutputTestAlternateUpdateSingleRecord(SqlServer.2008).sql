@@ -76,14 +76,14 @@ BeforeExecute
 -- SqlServer.2008
 
 UPDATE
-	[DestinationTable]
+	[t]
 SET
-	[DestinationTable].[Id] = [_].[Id],
-	[DestinationTable].[Value] = [_].[Value],
-	[DestinationTable].[ValueStr] = [_].[ValueStr]
+	[t].[Id] = [_].[Id],
+	[t].[Value] = [_].[Value],
+	[t].[ValueStr] = [_].[ValueStr]
 OUTPUT
-	[DELETED].[Value],
-	[INSERTED].[Value]
+	DELETED.[Value],
+	INSERTED.[Value]
 FROM
 	[TableWithData] [_]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [_].[Id]
