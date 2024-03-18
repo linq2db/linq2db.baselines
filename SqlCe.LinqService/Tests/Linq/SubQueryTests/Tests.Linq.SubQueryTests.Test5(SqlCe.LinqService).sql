@@ -4,9 +4,9 @@ DECLARE @testValue Int -- Int32
 SET     @testValue = 3
 
 SELECT
-	[t3].[c1],
-	[t1].[Count1],
-	[t2].[Count2]
+	[id_1].[c1] as [id],
+	[t1].[COUNT_1],
+	[t2].[COUNT_1] as [COUNT_2]
 FROM
 	(
 		SELECT DISTINCT
@@ -19,25 +19,21 @@ FROM
 			[Parent] [id]
 		WHERE
 			[id].[ParentID] IN (1, 2)
-	) [t3]
-		LEFT JOIN (
+	) [id_1]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count1],
-				[p].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [p]
-			GROUP BY
-				[p].[ParentID]
-		) [t1] ON [t1].[ParentID] = [t3].[c1]
-		LEFT JOIN (
+			WHERE
+				[p].[ParentID] = [id_1].[c1]
+		) [t1]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count2],
-				[p_1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [p_1]
 			WHERE
-				[p_1].[ParentID] = @testValue
-			GROUP BY
-				[p_1].[ParentID]
-		) [t2] ON [t2].[ParentID] = [t3].[c1]
+				[p_1].[ParentID] = [id_1].[c1] AND [p_1].[ParentID] = @testValue
+		) [t2]
 

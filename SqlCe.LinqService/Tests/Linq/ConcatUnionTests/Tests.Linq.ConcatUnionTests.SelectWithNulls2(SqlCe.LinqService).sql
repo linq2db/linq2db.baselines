@@ -16,16 +16,16 @@ FROM
 	[LinqDataTypes] [t1]
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	NULL as [ID],
+	NULL as [MoneyValue],
+	NULL as [DateTimeValue],
+	NULL as [DateTimeValue2],
+	NULL as [BoolValue],
+	NULL as [GuidValue],
+	NULL as [SmallIntValue],
+	NULL as [IntValue],
+	NULL as [BigIntValue],
+	NULL as [StringValue]
 FROM
 	[LinqDataTypes] [d]
 

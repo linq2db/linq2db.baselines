@@ -18,7 +18,7 @@ DECLARE @default Int -- Int32
 SET     @default = 0
 
 SELECT
-	[a].[Id],
+	[a].[Id] as [RECORDNAME],
 	[a].[NullValue]
 FROM
 	[SampleClass] [a]

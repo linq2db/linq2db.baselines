@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[ch].[ParentID],
+	[ch].[ChildID]
 FROM
-	[Parent] [p]
-		LEFT JOIN [Child] [t1] ON 1=1
+	[Parent] [t1]
+		LEFT JOIN [Child] [ch] ON 1=1
 WHERE
-	[p].[ParentID] = [t1].[ParentID]
+	[t1].[ParentID] = [ch].[ParentID]
 
