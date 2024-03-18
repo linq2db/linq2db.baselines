@@ -23,7 +23,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Max([_].[Id])
+	MAX([_].[Id])
 FROM
 	[TestMergeIdentity] [_]
 
@@ -35,7 +35,7 @@ USING (VALUES
 	(10)
 ) [Source]
 (
-	[Field]
+	[source_Field]
 )
 ON ([Target].[Field] IS NULL)
 
@@ -46,13 +46,13 @@ INSERT
 )
 VALUES
 (
-	[Source].[Field]
+	[Source].[source_Field]
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Field] = [Source].[Field]
+	[Field] = [Source].[source_Field]
 ;
 
 BeforeExecute
