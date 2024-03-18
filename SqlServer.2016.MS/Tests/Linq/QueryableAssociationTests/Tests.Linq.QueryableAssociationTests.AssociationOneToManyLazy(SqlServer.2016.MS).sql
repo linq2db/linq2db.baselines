@@ -93,9 +93,9 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
-	[detail].[StrValue]
+	[m_1].[Id],
+	[d_1].[Id],
+	[d_1].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -107,8 +107,16 @@ FROM
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
 			) [t2]
-	) [lw_SomeEntity]
-		INNER JOIN [SomeOtherEntity] [detail] ON [detail].[Id] = [lw_SomeEntity].[Id]
+	) [m_1]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[d].[Id],
+				[d].[StrValue] + N'_A' as [StrValue]
+			FROM
+				[SomeOtherEntity] [d]
+			WHERE
+				[d].[Id] = [m_1].[Id]
+		) [d_1]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -116,9 +124,9 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
-	[detail].[StrValue]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -130,8 +138,8 @@ FROM
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
 			) [t2]
-	) [lw_SomeEntity]
-		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
+	) [m_1]
+		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
 BeforeExecute
 DisposeTransaction
@@ -139,25 +147,23 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT TOP (@take)
+	[t2].[Id],
+	[t2].[OwnerStr],
 	[t1].[Id],
-	[t1].[OwnerStr],
-	[a_Other].[Id],
-	[a_Other].[StrValue]
+	[t1].[StrValue]
 FROM
-	[SomeEntity] [t1] WITH (NOLOCK)
+	[SomeEntity] [t2] WITH (NOLOCK)
 		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[se].[Id],
-				[se].[StrValue]
+			SELECT TOP (1)
+				[a_Other].[Id],
+				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
-				[SomeOtherEntity] [se]
+				[SomeOtherEntity] [a_Other]
 			WHERE
-				[se].[Id] = [t1].[Id]
-		) [a_Other]
+				[a_Other].[Id] = [t2].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
