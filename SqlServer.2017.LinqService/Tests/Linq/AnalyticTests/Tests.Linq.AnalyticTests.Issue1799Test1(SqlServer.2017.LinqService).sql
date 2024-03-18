@@ -50,25 +50,25 @@ DECLARE @take Int -- Int32
 SET     @take = 10
 
 SELECT TOP (@take)
-	[q].[User_1],
+	[g_1].[User_1],
 	[p].[ProcessName],
 	[u].[UserGroups],
-	Sum([q].[Diff])
+	SUM([g_1].[Diff]) / 60
 FROM
 	(
 		SELECT
-			DateDiff(minute, LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]), [x].[EventTime]) as [Diff],
-			[x].[EventUser] as [User_1],
-			[x].[ProcessID] as [Proc]
+			DateDiff(minute, LAG([q].[EventTime]) OVER(PARTITION BY [q].[EventUser], [q].[ProcessID] ORDER BY [q].[EventTime]), [q].[EventTime]) as [Diff],
+			[q].[EventUser] as [User_1],
+			[q].[ProcessID] as [Proc]
 		FROM
-			[Issue1799Table1] [x]
-	) [q]
-		INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [q].[User_1]
-		INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [q].[Proc]
+			[Issue1799Table1] [q]
+	) [g_1]
+		INNER JOIN [Issue1799Table2] [u] ON [u].[UserId] = [g_1].[User_1]
+		INNER JOIN [Issue1799Table3] [p] ON [p].[ProcessID] = [g_1].[Proc]
 WHERE
-	[q].[Diff] > 0 AND [q].[Diff] <= 5
+	[g_1].[Diff] > 0 AND [g_1].[Diff] <= 5
 GROUP BY
-	[q].[User_1],
+	[g_1].[User_1],
 	[u].[UserGroups],
 	[p].[ProcessName]
 
