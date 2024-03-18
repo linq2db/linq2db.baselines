@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval -1 Week)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval -1 Week) as Date)
 FROM
 	`LinqDataTypes` `t`
 

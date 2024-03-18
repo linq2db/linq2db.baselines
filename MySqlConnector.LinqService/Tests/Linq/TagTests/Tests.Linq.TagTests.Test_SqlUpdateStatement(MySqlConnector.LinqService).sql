@@ -16,12 +16,14 @@ CREATE TABLE IF NOT EXISTS `TestTable`
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @Fd Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
 	`TestTable` `t1`
 SET
-	`t1`.`Fd` = 1
+	`t1`.`Fd` = @Fd
 
 BeforeExecute
 -- MySqlConnector MySql

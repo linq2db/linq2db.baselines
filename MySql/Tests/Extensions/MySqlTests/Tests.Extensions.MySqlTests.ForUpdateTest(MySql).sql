@@ -21,22 +21,26 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`t_1`.`Count_1`
+	`t1`.`Count_1`
 FROM
 	(
 		SELECT
-			Count(*) as `Count_1`
+			COUNT(*) as `Count_1`
 		FROM
-			`ForUpdateTestTable` `t`
+			`ForUpdateTestTable` `g_1`
 		WHERE
-			`t`.`Id` = 1
-	) `t_1`
+			`g_1`.`Id` = 1
+	) `t1`
 WHERE
-	`t_1`.`Count_1` = 0
+	`t1`.`Count_1` = 0
 FOR UPDATE
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Data VarChar(9) -- String
+SET     @Data = 'Some data'
 DECLARE @p Datetime -- DateTime
 SET     @p = '2020-02-29 17:54:55.123'
 
@@ -47,20 +51,20 @@ INSERT INTO `ForUpdateTestTable`
 	`timestampUpdated`
 )
 SELECT
-	1,
-	'Some data',
+	@Id,
+	@Data,
 	@p
 FROM
 	(
 		SELECT
-			Count(*) as `Count_1`
+			COUNT(*) as `Count_1`
 		FROM
-			`ForUpdateTestTable` `t`
+			`ForUpdateTestTable` `g_1`
 		WHERE
-			`t`.`Id` = 1
-	) `t_1`
+			`g_1`.`Id` = 1
+	) `t1`
 WHERE
-	`t_1`.`Count_1` = 0
+	`t1`.`Count_1` = 0
 FOR UPDATE
 
 BeforeExecute
