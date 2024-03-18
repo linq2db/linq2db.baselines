@@ -138,8 +138,8 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."Id",
 	p."TargetName",
+	p."Id",
 	a_ActualStage."Id"
 FROM
 	"Task" p
