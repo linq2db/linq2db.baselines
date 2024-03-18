@@ -6,13 +6,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -22,13 +20,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 2
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

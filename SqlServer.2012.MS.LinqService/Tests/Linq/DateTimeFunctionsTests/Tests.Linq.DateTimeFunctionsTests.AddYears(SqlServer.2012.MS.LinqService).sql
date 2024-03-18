@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	DateAdd(year, 1, [t].[DateTimeValue])
+	Convert(Date, DateAdd(year, 1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 
