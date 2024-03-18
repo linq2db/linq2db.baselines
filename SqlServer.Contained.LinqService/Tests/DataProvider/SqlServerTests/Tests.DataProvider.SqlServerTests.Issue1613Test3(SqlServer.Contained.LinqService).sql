@@ -86,16 +86,16 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[TimeOfDay]
 FROM
 	(
 		SELECT
-			CAST([selectParam].[dt] AS TIME) as [Key_1]
+			CAST([g_1].[dt] AS TIME) as [TimeOfDay]
 		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+			[Issue1613] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[TimeOfDay]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

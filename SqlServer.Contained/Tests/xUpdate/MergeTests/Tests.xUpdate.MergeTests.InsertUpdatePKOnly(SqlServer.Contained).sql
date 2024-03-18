@@ -32,9 +32,9 @@ USING (VALUES
 	(1), (2), (3)
 ) [Source]
 (
-	[ID]
+	[source_ID]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -43,7 +43,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[ID]
+	[Source].[source_ID]
 )
 ;
 
