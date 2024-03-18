@@ -116,18 +116,32 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	'Id',
-	selectParam."Id",
-	Sum(CASE
-		WHEN a_ActualStage."Id" IS NULL
-			THEN NULL
-		ELSE a_ActualStage."Id"
-	END)
+	it_1."c1",
+	it_1."Id",
+	(
+		SELECT
+			SUM(CASE
+				WHEN a_ActualStage."Id" IS NULL
+					THEN NULL
+				ELSE a_ActualStage."Id"
+			END)
+		FROM
+			"Task" it_2
+				LEFT JOIN "TaskStage" a_ActualStage ON it_2."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
+		WHERE
+			it_1."c1" = 'Id' AND it_1."Id" = it_2."Id"
+	)
 FROM
-	"Task" selectParam
-		LEFT JOIN "TaskStage" a_ActualStage ON selectParam."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
+	(
+		SELECT
+			'Id' as "c1",
+			it."Id"
+		FROM
+			"Task" it
+	) it_1
 GROUP BY
-	selectParam."Id"
+	it_1."c1",
+	it_1."Id"
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
