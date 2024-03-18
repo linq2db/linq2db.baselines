@@ -88,14 +88,33 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	N'Id',
-	[selectParam].[Id],
-	Sum(IIF([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
+	[it_1].[c1],
+	[it_1].[Id],
+	(
+		SELECT
+			SUM(IIF([t1].[Id] IS NULL, NULL, [t1].[Id]))
+		FROM
+			(
+				SELECT
+					[a_ActualStage].[Id]
+				FROM
+					[Task] [it_2]
+						LEFT JOIN [TaskStage] [a_ActualStage] ON [it_2].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+				WHERE
+					[it_1].[c1] = N'Id' AND [it_1].[Id] = [it_2].[Id]
+			) [t1]
+	)
 FROM
-	[Task] [selectParam]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+	(
+		SELECT
+			N'Id' as [c1],
+			[it].[Id]
+		FROM
+			[Task] [it]
+	) [it_1]
 GROUP BY
-	[selectParam].[Id]
+	[it_1].[c1],
+	[it_1].[Id]
 
 BeforeExecute
 -- SqlServer.2014
