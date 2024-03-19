@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[t1].[c_1],
-	[t1].[ChildID]
+	[c_2].[ParentID],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[cg].[ParentID] as [c_1],
-				[cg].[ChildID]
+			SELECT TOP (1)
+				[c_1].[ParentID],
+				[c_1].[ChildID]
 			FROM
-				[Child] [cg]
+				[Child] [c_1]
 			WHERE
-				[o].[ParentID] = [cg].[ParentID]
-		) [t1]
+				[o].[ParentID] = [c_1].[ParentID]
+			ORDER BY
+				[c_1].[ChildID] DESC
+		) [c_2]
 
