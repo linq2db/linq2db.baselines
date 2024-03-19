@@ -2,9 +2,9 @@
 -- SqlServer.2017
 
 UPDATE
-	[Child]
+	[c_1]
 SET
-	[Child].[ChildID] = [c_1].[ChildID] * 2
+	[c_1].[ChildID] = [c_1].[ChildID] * 2
 FROM
 	[Child] [c_1] WITH (NoLock)
 WHERE
