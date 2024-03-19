@@ -49,8 +49,8 @@ DECLARE @p Int -- Int32
 SET     @p = 15
 
 SELECT
-	[s].[value],
-	[s].[id]
+	[s].[value] as [Value_1],
+	[s].[id] as [Id]
 FROM
 	[sample_class] [c_1]
 		INNER JOIN (
@@ -69,8 +69,8 @@ DECLARE @endId Int -- Int32
 SET     @endId = 15
 
 SELECT
-	[t].[value],
-	[t].[id]
+	[t].[value] as [Value_1],
+	[t].[id] as [Id]
 FROM
 	[sample_class] [t]
 WHERE

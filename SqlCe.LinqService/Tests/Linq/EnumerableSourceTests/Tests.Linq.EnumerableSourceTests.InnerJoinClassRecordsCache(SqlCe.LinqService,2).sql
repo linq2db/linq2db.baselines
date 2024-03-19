@@ -3,30 +3,30 @@
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 3 AS [PersonID]
+			SELECT 3 AS [ID]
 			UNION ALL
-			SELECT 4 AS [PersonID]) [n] ON [p].[PersonID] = [n].[PersonID]
+			SELECT 4 AS [ID]) [n] ON [p].[PersonID] = [n].[ID]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 5 AS [PersonID]
+			SELECT 5 AS [ID]
 			UNION ALL
-			SELECT 6 AS [PersonID]) [n] ON [p].[PersonID] = [n].[PersonID]
+			SELECT 6 AS [ID]) [n] ON [p].[PersonID] = [n].[ID]
 
