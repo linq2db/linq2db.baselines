@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(t1."ParentID")
+	MAX(t1."ParentID")
 FROM
 	(
 		SELECT DISTINCT
