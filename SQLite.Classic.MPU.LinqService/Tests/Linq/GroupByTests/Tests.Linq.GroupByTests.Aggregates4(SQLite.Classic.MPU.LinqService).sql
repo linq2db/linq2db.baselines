@@ -2,24 +2,16 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [_]
-		WHERE
-			[t1].[ParentID] = [_].[ParentID] AND [_].[ChildID] > 30
-	),
-	(
-		SELECT
-			Sum([c_1].[ChildID])
-		FROM
-			[Child] [c_1]
-		WHERE
-			[t1].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > 30
-	)
+	COUNT(CASE
+		WHEN [g_1].[ChildID] > 30 THEN 1
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
+		ELSE NULL
+	END)
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 
