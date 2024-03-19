@@ -2,8 +2,8 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Min([t1].[ParentID]),
-	Max([t1].[ParentID])
+	MIN([gr].[ParentID]),
+	MAX([gr].[ParentID])
 FROM
-	[Parent] [t1]
+	[Parent] [gr]
 
