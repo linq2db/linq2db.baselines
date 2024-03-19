@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 11 * Interval '1 Year'
+	Cast((t."TransactionDate" + 11 * Interval '1 Year') as Date)
 FROM
 	"Transactions" t
 

@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 3 * Interval '1 Day'
+	Cast((t."TransactionDate" + 3 * Interval '1 Day') as Date)
 FROM
 	"Transactions" t
 

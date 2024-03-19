@@ -109,15 +109,22 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Max(t1."Value4"),
-	STRING_AGG(t1."Value4", ' -> ')
+	(
+		SELECT
+			MAX(t."Value4")
+		FROM
+			"SampleClass" t
+		WHERE
+			g_1."Id" = t."Id" AND (g_1."Value4" = t."Value4" OR g_1."Value4" IS NULL AND t."Value4" IS NULL)
+	),
+	STRING_AGG(g_1."Value4", ' -> ')
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value4"
+	g_1."Id",
+	g_1."Value4"
 ORDER BY
-	t1."Id"
+	g_1."Id"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
