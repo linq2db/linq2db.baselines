@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2(1) -- String
+SET     @p = 'e'
 
 SELECT
 	p."FirstName",
@@ -10,5 +12,9 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	InStr(p."LastName", 'e', 3) - 1 = 4 AND p."PersonID" = 2
+	CASE
+		WHEN 1 = 0 THEN 2
+		ELSE InStr(p."LastName", :p, 3) - 1
+	END = 4 AND
+	p."PersonID" = 2
 
