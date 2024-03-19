@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	DateAdd(week, -1, [t].[TransactionDate])
+	Convert(Date, DateAdd(week, -1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

@@ -26,11 +26,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 5
 
 UPDATE
-	[Parent]
+	[a_Parent]
 SET
-	[Parent].[Value1] = 5
+	[a_Parent].[Value1] = @Value1
 FROM
 	[Child] [child_1]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
@@ -40,18 +42,18 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [x]
 FROM
-	[Child] [t1]
+	[Child] [x]
 WHERE
-	[t1].[ChildID] = 10000
+	[x].[ChildID] = 10000
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [x]
 FROM
-	[Parent] [t1]
+	[Parent] [x]
 WHERE
-	[t1].[ParentID] = 20000
+	[x].[ParentID] = 20000
 
