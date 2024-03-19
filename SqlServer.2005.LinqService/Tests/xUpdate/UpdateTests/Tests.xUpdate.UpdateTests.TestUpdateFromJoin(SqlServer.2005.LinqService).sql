@@ -43,25 +43,25 @@ BeforeExecute
 -- SqlServer.2005
 
 UPDATE
-	[gt_s_one]
+	[x]
 SET
-	[gt_s_one].[col1] = [x].[col1],
-	[gt_s_one].[col2] = [x].[col2],
-	[gt_s_one].[col3] = Replace([x].[col3], N'auth.', N''),
-	[gt_s_one].[col4] = [x].[col4],
-	[gt_s_one].[col5] = CASE
+	[x].[col1] = [x].[col1],
+	[x].[col2] = [x].[col2],
+	[x].[col3] = Replace([x].[col3], N'auth.', N''),
+	[x].[col4] = [x].[col4],
+	[x].[col5] = CASE
 		WHEN [x].[col3] = N'empty'
 			THEN N'1'
 		ELSE N'0'
 	END,
-	[gt_s_one].[col6] = CASE
+	[x].[col6] = CASE
 		WHEN [x].[col3] = N'empty'
 			THEN N''
-		ELSE Convert(NVarChar(11), [am].[id])
+		ELSE Convert(NVarChar(11), [y1].[id])
 	END
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([am].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([am].[code]) IS NULL)
+		LEFT JOIN [access_mode] [y1] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL)
 
 BeforeExecute
 -- SqlServer.2005
