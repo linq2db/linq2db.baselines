@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [Categories]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [Categories]
 (
 	[CategoryID]   Int            NOT NULL IDENTITY,
