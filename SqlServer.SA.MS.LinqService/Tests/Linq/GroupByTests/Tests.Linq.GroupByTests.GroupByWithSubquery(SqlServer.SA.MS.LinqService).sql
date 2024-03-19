@@ -2,8 +2,8 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[_1].[c1],
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -12,7 +12,7 @@ FROM
 			[Person] [_]
 		WHERE
 			1 = 0
-	) [t1]
+	) [_1]
 GROUP BY
-	[t1].[c1]
+	[_1].[c1]
 
