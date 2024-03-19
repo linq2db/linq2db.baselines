@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`MoneyValue`
+	Cast(`t`.`MoneyValue` as Decimal(29,10))
 FROM
 	`LinqDataTypes` `t`
 
