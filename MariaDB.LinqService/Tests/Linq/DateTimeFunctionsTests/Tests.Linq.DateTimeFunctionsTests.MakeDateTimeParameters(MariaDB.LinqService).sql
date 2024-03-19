@@ -4,14 +4,15 @@ DECLARE @p VarChar(5) -- String
 SET     @p = '2010-'
 
 SELECT
-	`t`.`c1`
+	`t_1`.`ID`
 FROM
 	(
 		SELECT
-			Cast(Concat(@p, Lpad(`p`.`ID`,2,'0'), '-01') as Date) as `c1`
+			Extract(year from Cast(Concat(@p, Lpad(`t`.`ID`,2,'0'), '-01') as Date)) as `Year_1`,
+			`t`.`ID`
 		FROM
-			`LinqDataTypes` `p`
-	) `t`
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Extract(year from `t`.`c1`) = 2010
+	`t_1`.`Year_1` = 2010
 

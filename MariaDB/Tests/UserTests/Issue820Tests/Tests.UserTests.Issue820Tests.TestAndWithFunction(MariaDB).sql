@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	@param = `_`.`SmallIntValue`
+	(Cast(@param as SIGNED) = `_`.`SmallIntValue` OR Cast(@param as SIGNED) IS NULL AND `_`.`SmallIntValue` IS NULL)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

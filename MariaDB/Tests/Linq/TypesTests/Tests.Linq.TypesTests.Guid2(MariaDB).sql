@@ -2,8 +2,6 @@
 -- MariaDB MySqlConnector MySql
 DECLARE @GuidValue Guid
 SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`ID`,
@@ -18,14 +16,12 @@ FROM
 	`LinqDataTypes` `p`
 WHERE
 	`p`.`GuidValue` = @GuidValue
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @GuidValue Guid
 SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`ID`,
@@ -40,5 +36,5 @@ FROM
 	`LinqDataTypes` `p`
 WHERE
 	`p`.`GuidValue` = @GuidValue
-LIMIT @take
+LIMIT 2
 

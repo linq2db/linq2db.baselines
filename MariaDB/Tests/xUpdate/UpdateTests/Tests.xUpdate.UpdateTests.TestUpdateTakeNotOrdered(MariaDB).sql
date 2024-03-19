@@ -180,13 +180,15 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @Value1 Int32
+SET     @Value1 = 1
 DECLARE @take Int32
 SET     @take = 5
 
 UPDATE
 	`Parent` `x`
 SET
-	`x`.`Value1` = 1
+	`x`.`Value1` = @Value1
 WHERE
 	`x`.`ParentID` > 1000
 LIMIT @take
