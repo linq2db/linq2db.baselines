@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
-	[Field1]    NVarChar(50)       NULL,
 	[ID]        Int            NOT NULL,
+	[Field1]    NVarChar(50)       NULL,
 	[Field2]    NVarChar(4000)     NULL,
 	[CreatedOn] DateTime2          NULL
 )
@@ -18,8 +18,8 @@ BeforeExecute
 -- SqlServer.2019 (asynchronously)
 
 SELECT
-	[t1].[Field1],
 	[t1].[ID],
+	[t1].[Field1],
 	[t1].[Field2],
 	[t1].[CreatedOn]
 FROM
