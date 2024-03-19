@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 41 * Interval '1 Second'
+	Cast(Floor(Extract(second from (t."TransactionDate" + 41 * Interval '1 Second'))) as int)
 FROM
 	"Transactions" t
 

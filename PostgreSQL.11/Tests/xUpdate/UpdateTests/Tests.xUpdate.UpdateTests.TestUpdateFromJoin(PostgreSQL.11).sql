@@ -53,12 +53,12 @@ SET
 	col6 = CASE
 		WHEN gt_s_one.col3 = 'empty'
 			THEN ''
-		ELSE Cast(am.id as text)
+		ELSE Cast(y1.id as text)
 	END
 FROM
-	access_mode am
+	access_mode y1
 WHERE
-	(Upper(Replace(gt_s_one.col3, 'auth.', '')) = Upper(am.code) OR Upper(Replace(gt_s_one.col3, 'auth.', '')) IS NULL AND Upper(am.code) IS NULL)
+	(Upper(Replace(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR Upper(Replace(gt_s_one.col3, 'auth.', '')) IS NULL AND Upper(y1.code) IS NULL)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

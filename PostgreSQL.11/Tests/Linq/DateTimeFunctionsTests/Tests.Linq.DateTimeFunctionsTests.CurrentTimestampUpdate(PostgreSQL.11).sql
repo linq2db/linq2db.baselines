@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @BoolValue Boolean
+SET     @BoolValue = True
 
 UPDATE
 	"LinqDataTypes"
 SET
-	"BoolValue" = True,
+	"BoolValue" = :BoolValue,
 	"DateTimeValue" = CURRENT_TIMESTAMP
 WHERE
 	"LinqDataTypes"."ID" = 100000
