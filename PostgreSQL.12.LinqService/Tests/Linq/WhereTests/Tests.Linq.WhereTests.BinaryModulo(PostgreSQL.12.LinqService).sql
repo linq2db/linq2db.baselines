@@ -10,5 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" % 2 = 1 AND p."PersonID" = 1
+	Cast(Floor(Cast(p."PersonID" as decimal) % 2) as Int) = 1 AND
+	p."PersonID" = 1
 
