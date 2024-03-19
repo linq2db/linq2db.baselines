@@ -2,14 +2,15 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	t_1.ID
 FROM
 	(
 		SELECT
-			TO_DATE('2010-' || Lpad(p.ID,2,'0') || '-01', 'YYYY-MM-DD') as "c1"
+			To_Number(To_Char(TO_DATE('2010-' || Lpad(t.ID,2,'0') || '-01', 'YYYY-MM-DD'), 'YYYY')) as "Year_1",
+			t.ID
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	To_Number(To_Char(t."c1", 'YYYY')) = 2010
+	t_1."Year_1" = 2010
 
