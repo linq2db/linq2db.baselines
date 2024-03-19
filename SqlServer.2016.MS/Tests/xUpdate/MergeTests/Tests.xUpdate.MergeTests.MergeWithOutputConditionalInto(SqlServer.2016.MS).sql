@@ -237,22 +237,22 @@ BeforeExecute
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[_].[Id],
-		[_].[Field1],
-		[_].[Field2],
-		[_].[Field4]
+		[_].[Id] as [source_Id],
+		[_].[Field1] as [source_Field1],
+		[_].[Field2] as [source_Field2],
+		[_].[Field4] as [source_Field4]
 	FROM
 		[TestMerge2] [_]
 	WHERE
 		[_].[Id] = 5
 ) [Source]
 (
-	[Id],
-	[Field1],
-	[Field2],
-	[Field4]
+	[source_Id],
+	[source_Field1],
+	[source_Field2],
+	[source_Field4]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -264,16 +264,16 @@ INSERT
 )
 VALUES
 (
-	[Source].[Id],
-	[Source].[Field1],
-	[Source].[Field2],
-	[Source].[Field4]
+	[Source].[source_Id],
+	[Source].[source_Field1],
+	[Source].[source_Field2],
+	[Source].[source_Field4]
 )
 OUTPUT
 	IIF($action = N'DELETE', N'Row Deleted', IIF($action = N'INSERT', N'Row Inserted', N'Row Updated')),
-	[INSERTED].[Id],
-	[DELETED].[Id],
-	[Source].[Id] + 1
+	INSERTED.[Id],
+	DELETED.[Id],
+	[Source].[source_Id] + 1
 INTO [tempdb]..[#InsertTempTable]
 (
 	[Action],
