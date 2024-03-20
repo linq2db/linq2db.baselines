@@ -290,7 +290,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 226
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Millisecond'
+	Cast(To_Char((t."TransactionDate" + :p * Interval '1 Millisecond'), 'MS') as int)
 FROM
 	"Transactions" t
 
