@@ -99,33 +99,30 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[key_data_result].[Id1],
-	[key_data_result].[Id2],
-	[key_data_result].[MasterId],
-	[_mm].[Id1],
-	[_mm].[Id2],
-	[_mm].[Value],
-	[_mm].[ByteValues]
+	[m_2].[Id1],
+	[m_2].[MasterId],
+	[d].[Id1],
+	[d].[Id2],
+	[d].[Value],
+	[d].[ByteValues]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id1],
-			[j].[MasterId],
-			[m_1].[Id2]
+			[t1].[Id1],
+			[dd].[MasterId]
 		FROM
 			(
 				SELECT
-					[t1].[Id1],
-					[t1].[Id2]
+					[m_1].[Id1]
 				FROM
-					[MasterClass] [t1]
+					[MasterClass] [m_1]
 				ORDER BY
-					[t1].[Id2] DESC
+					[m_1].[Id2] DESC
 				LIMIT @take
-			) [m_1]
-				INNER JOIN [DetailClass] [j] ON [m_1].[Id1] = [j].[MasterId]
-	) [key_data_result]
-		INNER JOIN [MasterClass] [_mm] ON [key_data_result].[Id1] = [key_data_result].[MasterId]
+			) [t1]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+	) [m_2]
+		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [m_2].[MasterId]
 
 BeforeExecute
 DisposeTransaction
@@ -135,27 +132,27 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[m_1].[Value_1],
-	[m_1].[ByteValues],
-	[j].[DetailId],
-	[j].[MasterId],
-	[j].[DetailValue]
+	[t1].[Id1],
+	[t1].[Id2],
+	[t1].[Value_1],
+	[t1].[ByteValues],
+	[dd].[DetailId],
+	[dd].[MasterId],
+	[dd].[DetailValue]
 FROM
 	(
 		SELECT
-			[t1].[Id1],
-			[t1].[Id2],
-			[t1].[Value] as [Value_1],
-			[t1].[ByteValues]
+			[m_1].[Id1],
+			[m_1].[Id2],
+			[m_1].[Value] as [Value_1],
+			[m_1].[ByteValues]
 		FROM
-			[MasterClass] [t1]
+			[MasterClass] [m_1]
 		ORDER BY
-			[t1].[Id2] DESC
+			[m_1].[Id2] DESC
 		LIMIT @take
-	) [m_1]
-		INNER JOIN [DetailClass] [j] ON [m_1].[Id1] = [j].[MasterId]
+	) [t1]
+		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

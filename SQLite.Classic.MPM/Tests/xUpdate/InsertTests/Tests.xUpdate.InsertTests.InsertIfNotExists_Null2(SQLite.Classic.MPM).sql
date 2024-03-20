@@ -18,37 +18,41 @@ CREATE TABLE IF NOT EXISTS [test_insert_or_replace]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'test'
 
-SELECT
-	1
-FROM
-	[test_insert_or_replace] [t1]
-WHERE
-	[t1].[id] = 1
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [test_insert_or_replace]
+INSERT INTO [test_insert_or_replace] AS [t1]
 (
 	[id],
 	[name]
 )
 VALUES
 (
-	1,
-	'test'
+	@Id,
+	@Name
 )
+ON CONFLICT ([id]) DO NOTHING
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'test'
 
-SELECT
-	1
-FROM
-	[test_insert_or_replace] [t1]
-WHERE
-	[t1].[id] = 1
+INSERT INTO [test_insert_or_replace] AS [t1]
+(
+	[id],
+	[name]
+)
+VALUES
+(
+	@Id,
+	@Name
+)
+ON CONFLICT ([id]) DO NOTHING
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

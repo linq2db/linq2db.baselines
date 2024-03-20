@@ -37,7 +37,7 @@ BeforeExecute
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Field1 NVarChar -- String
-SET     @Field1 = NULL
+SET     @Field1 = ''
 
 INSERT INTO [Issue1373Tests]
 (
