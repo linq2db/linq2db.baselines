@@ -9,11 +9,14 @@ SELECT
 			FROM
 				`Person` `_`
 			WHERE
-				(`_`.`FirstName` = `_`.`FirstName`) <> CASE
-					WHEN `_`.`MiddleName` <> `_`.`LastName`
+				(CASE
+					WHEN `_`.`FirstName` = `_`.`FirstName` THEN 1
+					ELSE 0
+				END) <> (CASE
+					WHEN (`_`.`MiddleName` <> `_`.`LastName` OR `_`.`MiddleName` IS NULL)
 						THEN 1
 					ELSE 0
-				END
+				END)
 		)
 			THEN 1
 		ELSE 0

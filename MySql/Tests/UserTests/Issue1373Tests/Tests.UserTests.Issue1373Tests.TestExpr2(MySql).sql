@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
+SET     @Field1 = ''
 
 INSERT INTO `Issue1373Tests`
 (

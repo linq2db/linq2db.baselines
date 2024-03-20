@@ -270,11 +270,20 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	Cast(Concat('2010-01-', Lpad(`t`.`TransactionId`,2,'0')) as DATE)
+	Concat('2010-01-', Lpad(`t`.`TransactionId`,2,'0'))
 FROM
 	`Transactions` `t`
 WHERE
 	Extract(day from Cast(Concat('2010-01-', Lpad(`t`.`TransactionId`,2,'0')) as DATE)) > 0
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`TransactionId`,
+	`t1`.`TransactionDate`
+FROM
+	`Transactions` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
