@@ -4,11 +4,11 @@
 SELECT
 	p."ParentID",
 	p."Value1",
-	lj1."ParentID",
-	lj1."ChildID"
+	ch."ParentID",
+	ch."ChildID"
 FROM
 	"Parent" p
-		LEFT JOIN "Child" lj1 ON p."ParentID" = lj1."ParentID"
+		LEFT JOIN "Child" ch ON p."ParentID" = ch."ParentID"
 WHERE
-	lj1."ParentID" IS NULL AND lj1."ChildID" IS NULL
+	ch."ParentID" IS NULL
 
