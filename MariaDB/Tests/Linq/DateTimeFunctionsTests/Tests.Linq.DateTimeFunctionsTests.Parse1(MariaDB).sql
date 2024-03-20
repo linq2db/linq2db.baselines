@@ -2,14 +2,9 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`d`.`c1`
+	Cast(`d`.`DateTimeValue` as Date)
 FROM
-	(
-		SELECT
-			`t`.`DateTimeValue` as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `d`
+	`LinqDataTypes` `d`
 WHERE
-	Extract(day from `d`.`c1`) > 0
+	Extract(day from `d`.`DateTimeValue`) > 0
 
