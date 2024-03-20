@@ -2,10 +2,10 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Sum([ch].[ParentID])
+	SUM([g_1].[ParentID])
 FROM
-	[Child] [ch]
-		LEFT JOIN [Parent] [pg] ON [ch].[ParentID] = [pg].[ParentID]
+	[Child] [g_1]
+		LEFT JOIN [Parent] [p] ON [g_1].[ParentID] = [p].[ParentID]
 GROUP BY
-	[ch].[ChildID]
+	[g_1].[ChildID]
 

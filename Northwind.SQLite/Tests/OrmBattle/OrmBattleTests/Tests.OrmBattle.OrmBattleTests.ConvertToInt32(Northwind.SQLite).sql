@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -100,9 +100,9 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	Cast(CASE
+	Cast((CASE
 		WHEN [o].[Freight] * 10 - Floor([o].[Freight] * 10) = 0.5 AND Floor([o].[Freight] * 10) % 2 = 0
 			THEN Floor([o].[Freight] * 10)
 		ELSE Round([o].[Freight] * 10, 0)
-	END as INTEGER) = 592
+	END) as INTEGER) = 592
 
