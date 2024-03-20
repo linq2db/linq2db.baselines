@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[p2].[PersonID],
-	[p1].[FirstName]
+	[p2].[PersonID] as [p2],
+	[t1].[FirstName]
 FROM
-	[Person] [p1],
+	[Person] [t1],
 	[Person] [p2]
 WHERE
-	[p1].[PersonID] = [p2].[PersonID]
+	[t1].[PersonID] = [p2].[PersonID]
 

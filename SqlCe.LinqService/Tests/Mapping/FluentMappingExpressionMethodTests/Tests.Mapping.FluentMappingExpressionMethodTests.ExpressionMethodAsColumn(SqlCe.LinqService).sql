@@ -377,8 +377,8 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Value],
-	'M' + Convert(NVarChar(11), [t1].[Id])
+	[t1].[Value] as [Value_1],
+	'M' + Convert(NVarChar(11), [t1].[Id]) as [EntityMaterialized]
 FROM
 	[InstanceClass] [t1]
 

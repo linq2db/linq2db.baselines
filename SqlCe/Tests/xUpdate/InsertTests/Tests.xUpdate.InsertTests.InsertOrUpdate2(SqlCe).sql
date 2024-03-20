@@ -40,7 +40,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[Patient] [t1]
 WHERE
@@ -50,6 +50,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(8) -- String
+SET     @Diagnosis = 'negative'
 
 INSERT INTO [Patient]
 (
@@ -59,7 +61,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	'negative'
+	@Diagnosis
 )
 
 BeforeExecute
@@ -81,7 +83,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[Patient] [t1]
 WHERE

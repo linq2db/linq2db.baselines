@@ -2,10 +2,10 @@
 -- SqlCe
 
 SELECT
-	[selectParam].[ChildID],
-	Avg([selectParam].[ParentID])
+	[_].[ChildID] as [x],
+	AVG([_].[ParentID]) as [AVG_1]
 FROM
-	[Child] [selectParam]
+	[Child] [_]
 GROUP BY
-	[selectParam].[ChildID]
+	[_].[ChildID]
 
