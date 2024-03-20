@@ -75,7 +75,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Month'
+	Cast((t."TransactionDate" + :p * Interval '1 Month') as Date)
 FROM
 	"Transactions" t
 
