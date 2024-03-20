@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -100,5 +100,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	IIF(([o].[Freight] / 10) * 2 = Round(([o].[Freight] / 10) * 2, 1) AND [o].[Freight] / 10 <> Round([o].[Freight] / 10, 1), Round(([o].[Freight] / 10) / 2, 1) * 2, Round([o].[Freight] / 10, 1)) = 6.5
+	(IIF(([o].[Freight] / 10) * 2 = Round(([o].[Freight] / 10) * 2, 1) AND [o].[Freight] / 10 <> Round([o].[Freight] / 10, 1), Round(([o].[Freight] / 10) / 2, 1) * 2, Round([o].[Freight] / 10, 1))) = 6.5
 
