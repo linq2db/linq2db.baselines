@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Varchar2(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender Varchar2(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
 
 BeforeExecute
@@ -26,13 +32,15 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(6) -- String
+SET     @FirstName = 'Johnny'
 
 UPDATE
-	"Person"
+	"Person" c_1
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = :FirstName
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
