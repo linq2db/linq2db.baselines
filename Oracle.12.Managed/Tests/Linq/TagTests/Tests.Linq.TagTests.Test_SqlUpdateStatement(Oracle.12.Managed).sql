@@ -32,12 +32,14 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Fd Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" t1
 SET
-	"TestTable"."Fd" = 1
+	"Fd" = :Fd
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
