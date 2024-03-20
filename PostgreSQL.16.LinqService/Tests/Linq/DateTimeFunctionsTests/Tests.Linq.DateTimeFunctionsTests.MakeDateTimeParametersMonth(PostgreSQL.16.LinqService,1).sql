@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast((Lpad((2010 + t."ID")::text,4,'0') || '-01-01') as Date)
+	2010 + t."ID"
 FROM
 	"LinqDataTypes" t
 
