@@ -10,10 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN Len([p].[FirstName]) = 2
-			THEN [p].[FirstName] + N'123'
+	(CASE
+		WHEN Len([p].[FirstName]) = 2 THEN [p].[FirstName] + N'123'
 		ELSE Stuff([p].[FirstName], 3, 0, N'123')
-	END = N'Jo123hn' AND
+	END) = N'Jo123hn' AND
 	[p].[PersonID] = 1
 

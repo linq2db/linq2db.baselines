@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = 5
 
 SELECT
-	DateAdd(day, @p, [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(day, @p, [t].[DateTimeValue]) as Float)) as DateTime)
 FROM
 	[LinqDataTypes] [t]
 

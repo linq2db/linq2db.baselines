@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	Max([_].[ParentID])
+	MAX([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE
