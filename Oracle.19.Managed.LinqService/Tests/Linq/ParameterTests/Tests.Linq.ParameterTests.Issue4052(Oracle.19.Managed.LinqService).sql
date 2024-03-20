@@ -12,13 +12,5 @@ SELECT
 FROM
 	"Person" c_1
 WHERE
-	c_1."PersonID" = :ID AND (CASE
-		WHEN c_1."MiddleName" IS NOT NULL
-			THEN Lower(Trim(c_1."MiddleName"))
-		ELSE ''
-	END = '' OR CASE
-		WHEN c_1."MiddleName" IS NOT NULL
-			THEN Lower(Trim(c_1."MiddleName"))
-		ELSE ''
-	END IS NULL)
+	c_1."PersonID" = :ID AND c_1."MiddleName" IS NULL
 
