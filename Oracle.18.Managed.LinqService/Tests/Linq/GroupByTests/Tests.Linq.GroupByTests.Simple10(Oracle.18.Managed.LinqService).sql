@@ -2,22 +2,25 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ParentID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
-	"Child" t1
-GROUP BY
-	t1."ParentID"
+	(
+		SELECT DISTINCT
+			g_1."ParentID"
+		FROM
+			"Child" g_1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 
 SELECT
-	keyParam."ParentID",
-	keyParam."ChildID"
+	g_1."ParentID"
 FROM
-	"Child" keyParam
-WHERE
-	keyParam."ParentID" = :ParentID
+	"Child" g_1
+GROUP BY
+	g_1."ParentID"
 
