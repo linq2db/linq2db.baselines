@@ -19,10 +19,10 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[x_1].[PersonID],
 	[x].[PersonID],
-	[x].[FirstName]
+	[person_1].[PersonID],
+	[person_1].[FirstName]
 FROM
-	[Patient] [x_1]
-		INNER JOIN [Person] [x] ON [x_1].[PersonID] = [x].[PersonID]
+	[Patient] [x]
+		INNER JOIN [Person] [person_1] ON [x].[PersonID] = [person_1].[PersonID]
 
