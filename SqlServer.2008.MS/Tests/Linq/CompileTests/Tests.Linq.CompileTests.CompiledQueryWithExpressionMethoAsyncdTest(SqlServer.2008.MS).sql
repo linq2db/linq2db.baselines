@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
 FROM

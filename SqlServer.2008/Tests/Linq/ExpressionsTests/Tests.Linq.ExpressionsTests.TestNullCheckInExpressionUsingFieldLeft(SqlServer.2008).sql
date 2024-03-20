@@ -9,10 +9,10 @@ SELECT
 			FROM
 				[Parent] [p]
 			WHERE
-				[p].[Value1] IS NULL AND [p].[ParentID] = CASE
+				[p].[Value1] IS NULL AND [p].[ParentID] = (CASE
 					WHEN [p].[Value1] IS NULL THEN NULL
 					ELSE CAST(N'SHOULD NOT BE CALLED' AS INT)
-				END
+				END)
 		)
 			THEN 1
 		ELSE 0
