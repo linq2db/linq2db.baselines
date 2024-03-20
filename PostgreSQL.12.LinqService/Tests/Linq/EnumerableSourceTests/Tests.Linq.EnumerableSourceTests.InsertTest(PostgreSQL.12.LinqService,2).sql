@@ -23,13 +23,13 @@ INSERT INTO "TableToInsert"
 	"Value"
 )
 SELECT
-	r."Id",
-	r."Value"
+	t1."Id",
+	t1."Value"
 FROM
 	(VALUES
 		(3,'Janet'), (4,'Doe')
-	) r("Id", "Value")
-		LEFT JOIN "TableToInsert" t ON t."Id" = r."Id"
+	) t1("Id", "Value")
+		LEFT JOIN "TableToInsert" t ON t."Id" = t1."Id"
 WHERE
 	t."Id" IS NULL
 
@@ -42,13 +42,13 @@ INSERT INTO "TableToInsert"
 	"Value"
 )
 SELECT
-	r."Id",
-	r."Value"
+	t1."Id",
+	t1."Value"
 FROM
 	(VALUES
 		(3,'Janet'), (4,'Doe')
-	) r("Id", "Value")
-		LEFT JOIN "TableToInsert" t ON t."Id" = r."Id"
+	) t1("Id", "Value")
+		LEFT JOIN "TableToInsert" t ON t."Id" = t1."Id"
 WHERE
 	t."Id" IS NULL
 
