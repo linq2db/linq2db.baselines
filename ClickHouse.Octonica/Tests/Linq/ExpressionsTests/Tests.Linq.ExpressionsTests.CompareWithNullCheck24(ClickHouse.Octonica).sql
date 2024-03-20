@@ -1,0 +1,17 @@
+﻿BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				AllTypes p
+			WHERE
+				p.ID = toInt32(2) AND (COALESCE(CASE WHEN p.varcharDataType IS NULL THEN NULL ELSE CAST('7777777' AS INT) END, CASE WHEN p.varcharDataType IS NULL THEN NULL ELSE CAST('7777777' AS INT) END) = p.intDataType OR COALESCE(CASE WHEN p.varcharDataType IS NULL THEN NULL ELSE CAST('7777777' AS INT) END, CASE WHEN p.varcharDataType IS NULL THEN NULL ELSE CAST('7777777' AS INT) END) IS NULL AND p.intDataType IS NULL)
+		)
+			THEN toUInt8(1)
+		ELSE toUInt8(0)
+	END
+

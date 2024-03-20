@@ -22,7 +22,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -53,7 +53,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	'value2',
-	'value1'
+	NULL
 )
 
 BeforeExecute
@@ -65,7 +65,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -83,7 +83,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -94,7 +94,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -115,7 +115,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -136,7 +136,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -157,7 +157,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -354,7 +354,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -365,7 +365,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -385,7 +385,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	'value2',
-	'value1'
+	NULL
 )
 
 BeforeExecute
@@ -397,7 +397,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -415,7 +415,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -426,7 +426,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -447,7 +447,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -468,7 +468,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -489,7 +489,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -686,7 +686,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value 2','value1')
+('value 2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -697,7 +697,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -717,7 +717,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	'value 2',
-	'value1'
+	NULL
 )
 
 BeforeExecute
@@ -729,7 +729,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -747,7 +747,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value 2','value1')
+('value 2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -758,7 +758,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -779,7 +779,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -800,7 +800,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -821,7 +821,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value 2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value 2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1018,7 +1018,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1029,7 +1029,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1049,7 +1049,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	'value2',
-	'value1'
+	NULL
 )
 
 BeforeExecute
@@ -1061,7 +1061,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1079,7 +1079,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-('value2','value1')
+('value2',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1090,7 +1090,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1111,7 +1111,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1132,7 +1132,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1153,7 +1153,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = 'value2' AND r.ColumnNullable = 'value1'
+	r.Column = 'value2' AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
