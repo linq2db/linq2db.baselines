@@ -7,8 +7,6 @@ SELECT
 	[t].[geographyDataType].Long,
 	[t].[geographyDataType].Z,
 	[t].[geographyDataType].M,
-	geography::GeomFromGml([t].[geographyDataType].AsGml(), 4326),
-	[t].[geographyDataType].AsGml(),
 	[t].[geographyDataType],
 	geography::Parse('LINESTRING(-122.360 47.656, -122.343 47.656)'),
 	geography::Point(1, 1, 4326),
