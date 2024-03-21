@@ -32,10 +32,10 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[Child]
+	[c_1]
 SET
-	[Child].[ChildID] = [c_1].[ChildID] + 1,
-	[Child].[ParentID] = [p].[ParentID]
+	[c_1].[ChildID] = [c_1].[ChildID] + 1,
+	[c_1].[ParentID] = [p].[ParentID]
 FROM
 	[Child] [c_1]
 		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]

@@ -222,24 +222,30 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @Field1 Int -- Int32
+SET     @Field1 = 123
+DECLARE @Field4 Int -- Int32
+SET     @Field4 = 999
+DECLARE @Field5 Int -- Int32
+SET     @Field5 = 888
 
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id],
-		[t1].[Field1],
-		[t1].[Field2]
+		[t1].[Id] as [source_Id],
+		[t1].[Field1] as [source_Field1],
+		[t1].[Field2] as [source_Field2]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id],
-	[Field1],
-	[Field2]
+	[source_Id],
+	[source_Field1],
+	[source_Field2]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
-WHEN NOT MATCHED AND [Source].[Field2] IS NOT NULL THEN
+WHEN NOT MATCHED AND [Source].[source_Field2] IS NOT NULL THEN
 INSERT
 (
 	[Id],
@@ -251,12 +257,12 @@ INSERT
 )
 VALUES
 (
-	10 + [Source].[Id],
-	123,
-	[Source].[Field1],
-	[Source].[Field2],
-	999,
-	888
+	10 + [Source].[source_Id],
+	@Field1,
+	[Source].[source_Field1],
+	[Source].[source_Field2],
+	@Field4,
+	@Field5
 )
 ;
 

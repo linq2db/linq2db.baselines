@@ -93,37 +93,32 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[OwnerStr],
-	[t2].[Id],
-	[t2].[StrValue]
+	[m_1].[Id],
+	[d_1].[Id],
+	[d_1].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[OwnerStr]
+			[t1].[Id]
 		FROM
 			(
 				SELECT TOP (@take)
-					[e].[Id],
-					[e].[OwnerStr]
+					[e].[Id]
 				FROM
 					[SomeEntity] [e] WITH (NOLOCK)
 			) [t1]
-	) [key_data_result]
+	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (@take_1)
-				[detail].[Id],
-				[detail].[StrValue]
+			SELECT TOP (1)
+				[d].[Id],
+				[d].[StrValue] + N'_A' as [StrValue]
 			FROM
-				[SomeOtherEntity] [detail]
+				[SomeOtherEntity] [d]
 			WHERE
-				[detail].[Id] = [key_data_result].[Id]
-		) [t2]
+				[d].[Id] = [m_1].[Id]
+		) [d_1]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -131,25 +126,22 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[OwnerStr],
-	[detail].[Id],
-	[detail].[StrValue]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[OwnerStr]
+			[t1].[Id]
 		FROM
 			(
 				SELECT TOP (@take)
-					[e].[Id],
-					[e].[OwnerStr]
+					[e].[Id]
 				FROM
 					[SomeEntity] [e] WITH (NOLOCK)
 			) [t1]
-	) [key_data_result]
-		CROSS APPLY dbo.fn_SomeFunction([key_data_result].[Id]) [detail]
+	) [m_1]
+		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
 BeforeExecute
 DisposeTransaction
@@ -157,36 +149,31 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 1
 
 SELECT TOP (@take)
 	[e].[Id],
-	[e].[OwnerStr],
-	[a_Other].[Id],
-	[a_Other].[StrValue],
-	[a_OtherFromSql].[Id],
-	[a_OtherFromSql].[StrValue]
+	[t1].[Id],
+	[t1].[StrValue],
+	[t2].[Id],
+	[t2].[StrValue]
 FROM
 	[SomeEntity] [e] WITH (NOLOCK)
 		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[se].[Id],
-				[se].[StrValue]
+			SELECT TOP (1)
+				[a_Other].[Id],
+				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
-				[SomeOtherEntity] [se]
+				[SomeOtherEntity] [a_Other]
 			WHERE
-				[se].[Id] = [e].[Id]
-		) [a_Other]
+				[a_Other].[Id] = [e].[Id]
+		) [t1]
 		OUTER APPLY (
-			SELECT TOP (@take_2)
-				[t1].[Id],
-				[t1].[StrValue]
+			SELECT TOP (1)
+				[a_OtherFromSql].[Id],
+				[a_OtherFromSql].[StrValue]
 			FROM
-				dbo.fn_SomeFunction([e].[Id]) [t1]
-		) [a_OtherFromSql]
+				dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
+		) [t2]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2012
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'oh'
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex(N'oh', [p].[FirstName]) = 2 AND [p].[PersonID] = 1
+	CharIndex(@p, [p].[FirstName]) - 1 = 1 AND [p].[PersonID] = 1
 

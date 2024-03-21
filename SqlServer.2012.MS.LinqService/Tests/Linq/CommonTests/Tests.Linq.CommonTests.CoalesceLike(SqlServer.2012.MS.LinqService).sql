@@ -10,5 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF(IIF([p].[FirstName] IS NULL, NULL, IIF([p].[FirstName] LIKE N'Jo%' ESCAPE N'~', 1, 0)) IS NULL, 0, IIF([p].[FirstName] IS NULL, NULL, IIF([p].[FirstName] LIKE N'Jo%' ESCAPE N'~', 1, 0))) = 1
+	CASE
+		WHEN [p].[FirstName] IS NULL THEN NULL
+		WHEN [p].[FirstName] LIKE N'Jo%' ESCAPE N'~' THEN 1
+		ELSE 0
+	END = 1
 
