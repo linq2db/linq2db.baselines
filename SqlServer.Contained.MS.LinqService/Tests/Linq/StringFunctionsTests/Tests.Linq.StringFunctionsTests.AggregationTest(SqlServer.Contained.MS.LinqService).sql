@@ -110,15 +110,22 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Max([t1].[Value1]),
-	STRING_AGG([t1].[Value1], N' -> ')
+	(
+		SELECT
+			MAX([t].[Value1])
+		FROM
+			[SampleClass] [t]
+		WHERE
+			[g_1].[Id] = [t].[Id] AND ([g_1].[Value1] = [t].[Value1] OR [g_1].[Value1] IS NULL AND [t].[Value1] IS NULL)
+	),
+	STRING_AGG([g_1].[Value1], N' -> ')
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value1]
+	[g_1].[Id],
+	[g_1].[Value1]
 ORDER BY
-	[t1].[Id]
+	[g_1].[Id]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
