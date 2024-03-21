@@ -32,11 +32,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[k_1].[StatusBitmask],
-	[joinedTable].[StatusBitmask]
+	[t1].[StatusBitmask] AND 128,
+	[g_1].[StatusBitmask] AND 128
 FROM
-	[i1084_person] [k_1]
-		LEFT JOIN [i1084_student] [joinedTable] ON ([k_1].[Id] = [joinedTable].[Id] AND CStr([k_1].[Number]) = [joinedTable].[Number])
+	[i1084_person] [t1]
+		LEFT JOIN [i1084_student] [g_1] ON ([t1].[Id] = [g_1].[Id] AND CStr([t1].[Number]) = [g_1].[Number])
 
 BeforeExecute
 -- Access.Odbc AccessODBC

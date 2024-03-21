@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*) > 0
+	IIF(Count(*) > 0, True, False)
 FROM
 	[Person] [_]
 WHERE
-	Iif([_].[MiddleName] = '123', True, False) = Iif(Iif([_].[MiddleName] = '1', 'test', [_].[MiddleName]) = 'test', True, False)
+	IIF([_].[MiddleName] = '123', True, False) = IIF([_].[MiddleName] = '1', True, False)
 

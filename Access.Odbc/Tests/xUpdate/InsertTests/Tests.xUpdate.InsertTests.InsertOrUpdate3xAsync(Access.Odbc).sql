@@ -72,6 +72,8 @@ BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(3) -- String
+SET     @Diagnosis = 'abc'
 
 INSERT INTO [Patient]
 (
@@ -81,7 +83,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	?,
-	'abc'
+	?
 )
 
 BeforeExecute
