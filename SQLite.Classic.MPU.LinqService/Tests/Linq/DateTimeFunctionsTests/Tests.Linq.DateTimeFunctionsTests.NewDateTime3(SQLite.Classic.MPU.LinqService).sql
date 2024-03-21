@@ -2,14 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	Cast(StrFTime('%Y', [t].[DateTimeValue]) as int)
 FROM
-	(
-		SELECT
-			DateTime(printf('%04d', Cast(StrFTime('%Y', [p].[DateTimeValue]) as int)) || '-10-01 20:35:44') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
-WHERE
-	Cast(StrFTime('%m', [t].[c1]) as int) = 10
+	[LinqDataTypes] [t]
 

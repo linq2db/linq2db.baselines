@@ -55,6 +55,8 @@ SELECT
 	[ess].[ID]
 FROM
 	[VEMPLOYEE_SCH_SEC] [ess]
+WHERE
+	1 = 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
