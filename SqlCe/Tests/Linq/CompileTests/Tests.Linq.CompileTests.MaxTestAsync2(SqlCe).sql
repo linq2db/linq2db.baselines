@@ -4,7 +4,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
 SELECT
-	Max([c_1].[ParentID])
+	MAX([c_1].[ParentID]) as [MAX_1]
 FROM
 	[Child] [c_1]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = -1
 
 SELECT
-	Max([c_1].[ParentID])
+	MAX([c_1].[ParentID]) as [MAX_1]
 FROM
 	[Child] [c_1]
 WHERE

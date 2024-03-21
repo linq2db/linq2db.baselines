@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime)
+	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

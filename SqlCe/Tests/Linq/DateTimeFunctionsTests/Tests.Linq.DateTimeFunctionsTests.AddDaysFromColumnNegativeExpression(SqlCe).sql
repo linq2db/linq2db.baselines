@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @part1 Int -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32
 SET     @part2 = 4
@@ -50,7 +50,7 @@ DECLARE @p DateTime
 SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE

@@ -36,13 +36,11 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],
@@ -68,22 +66,20 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[Person].[Gender] = @Gender,
-	[Person].[FirstName] = @Name_FirstName,
-	[Person].[MiddleName] = @Name_MiddleName,
-	[Person].[LastName] = @Name_LastName
+	[Gender] = @Gender,
+	[FirstName] = @Name_FirstName,
+	[MiddleName] = @Name_MiddleName,
+	[LastName] = @Name_LastName
 WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],

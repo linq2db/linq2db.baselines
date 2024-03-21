@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Person] [c_1]
 WHERE
@@ -26,11 +26,13 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Johnny'
 
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = 'Johnny'
+	[FirstName] = @FirstName
 WHERE
 	[Person].[LastName] = 'Limonadovy'
 
@@ -38,7 +40,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Person] [c_1]
 WHERE

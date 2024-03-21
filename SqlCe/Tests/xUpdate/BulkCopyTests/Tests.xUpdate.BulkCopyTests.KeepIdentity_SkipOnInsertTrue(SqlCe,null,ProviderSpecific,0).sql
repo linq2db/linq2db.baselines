@@ -39,7 +39,7 @@ SET     @lastId = 3
 
 SELECT
 	[_].[ID],
-	[_].[intDataType]
+	[_].[intDataType] as [Value_1]
 FROM
 	[AllTypes] [_]
 WHERE
