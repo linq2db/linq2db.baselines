@@ -2,10 +2,17 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Sum([t1].[Value1]),
-	SUM([t1].[Value1])
+	SUM([g_1].[Value1]),
+	(
+		SELECT
+			SUM([p].[Value1])
+		FROM
+			[Parent] [p]
+		WHERE
+			[g_1].[ParentID] = [p].[ParentID]
+	)
 FROM
-	[Parent] [t1]
+	[Parent] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 

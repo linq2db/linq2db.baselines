@@ -249,12 +249,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @param Int -- Int32
+SET     @param = 100
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + Convert(VarChar(11), @param)
 FROM
 	[TableWithData] [s]
 WHERE
