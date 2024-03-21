@@ -11,14 +11,8 @@ FROM
 	"Person" p
 WHERE
 	CASE
-		WHEN CASE
-			WHEN p."FirstName" IS NULL
-				THEN NULL
-			ELSE p."FirstName" LIKE 'Jo%' ESCAPE '~'
-		END IS NULL
-			THEN False
-		WHEN p."FirstName" IS NULL
-			THEN NULL
-		ELSE p."FirstName" LIKE 'Jo%' ESCAPE '~'
+		WHEN p."FirstName" IS NULL THEN NULL
+		WHEN p."FirstName" LIKE 'Jo%' ESCAPE '~' THEN True
+		ELSE False
 	END = True
 

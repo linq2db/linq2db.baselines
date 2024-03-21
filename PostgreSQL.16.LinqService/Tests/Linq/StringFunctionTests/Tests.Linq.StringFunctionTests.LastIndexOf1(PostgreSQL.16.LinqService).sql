@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @p Text(1) -- String
+SET     @p = 'p'
 
 SELECT
 	p."FirstName",
@@ -11,8 +13,7 @@ FROM
 	"Person" p
 WHERE
 	CASE
-		WHEN Position('p' in p."LastName") = 0
-			THEN -1
+		WHEN Position(:p in p."LastName") = 0 THEN -1
 		ELSE Length(p."LastName") - Position('p' in Reverse(p."LastName"))
 	END = 2 AND
 	p."PersonID" = 1
