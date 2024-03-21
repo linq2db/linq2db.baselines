@@ -12,6 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF(1 = 0, 2, InStr(3, [p].[LastName], CVar(?), 1) - 1) = 4 AND
-	[p].[PersonID] = 2
+	InStr(3, [p].[LastName], CVar(?), 1) - 1 = 4 AND [p].[PersonID] = 2
 

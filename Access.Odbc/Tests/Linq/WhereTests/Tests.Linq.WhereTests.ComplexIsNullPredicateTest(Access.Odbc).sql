@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	IIF([_].[MiddleName] = '123', True, False) = IIF(IIF([_].[MiddleName] = '1', 'test', [_].[MiddleName]) = 'test', True, False)
+	IIF([_].[MiddleName] = '123', True, False) = IIF([_].[MiddleName] = '1', True, False)
 

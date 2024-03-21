@@ -198,24 +198,15 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[x_1].[Id],
-	[x_1].[child],
-	[x_1].[child_1],
-	[x_1].[StringProp_1]
+	[x].[Id],
+	IIF(([x].[StringProp] = '1' OR [x].[StringProp] IS NULL), True, False),
+	[x].[StringProp],
+	[x].[StringProp] + '2'
 FROM
-	(
-		SELECT
-			IIF(([x].[StringProp] = '1' OR [x].[StringProp] IS NULL), '2', IIF([x].[StringProp] = '2', [x].[StringProp], [x].[StringProp] + '2')) as [StringProp],
-			IIF(([x].[StringProp] = '1' OR [x].[StringProp] IS NULL), NULL, IIF([x].[StringProp] = '2', 1, 2)) as [IntProp],
-			[x].[Id],
-			IIF(([x].[StringProp] = '1' OR [x].[StringProp] IS NULL), True, False) as [child],
-			[x].[StringProp] as [child_1],
-			[x].[StringProp] + '2' as [StringProp_1]
-		FROM
-			[ConditionalData] [x]
-	) [x_1]
+	[ConditionalData] [x]
 WHERE
-	[x_1].[StringProp] LIKE '%2' AND [x_1].[IntProp] = 2
+	IIF(([x].[StringProp] = '1' OR [x].[StringProp] IS NULL), '2', IIF([x].[StringProp] = '2', [x].[StringProp], [x].[StringProp] + '2')) LIKE '%2' AND
+	NOT ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
 
 BeforeExecute
 -- Access AccessOleDb

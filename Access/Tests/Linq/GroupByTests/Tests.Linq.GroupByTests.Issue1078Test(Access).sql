@@ -219,7 +219,7 @@ BeforeExecute
 SELECT
 	[grp].[SiteID],
 	COUNT(*),
-	COUNT(IIF(IIF([grp].[Active], 1, 0) = 0, 1, NULL))
+	COUNT(IIF([grp].[Active] = False, 1, NULL))
 FROM
 	[Issue1078Table] [grp]
 GROUP BY

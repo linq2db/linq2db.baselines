@@ -112,7 +112,7 @@ FROM
 				(
 					SELECT
 						[g_2].[MonthNumber],
-						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty])) as [Ftq]
+						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok] = True, 0, [g_2].[Qty])) as [Ftq]
 					FROM
 						(
 							SELECT
