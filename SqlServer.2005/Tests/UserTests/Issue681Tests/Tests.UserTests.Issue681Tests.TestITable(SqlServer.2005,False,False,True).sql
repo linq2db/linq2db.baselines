@@ -18,10 +18,8 @@ IF (OBJECT_ID(N'[Issue681Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]

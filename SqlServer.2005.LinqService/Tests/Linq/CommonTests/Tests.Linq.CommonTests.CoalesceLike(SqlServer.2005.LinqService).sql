@@ -11,22 +11,8 @@ FROM
 	[Person] [p]
 WHERE
 	CASE
-		WHEN CASE
-			WHEN [p].[FirstName] IS NULL
-				THEN NULL
-			ELSE CASE
-				WHEN [p].[FirstName] LIKE N'Jo%' ESCAPE N'~'
-					THEN 1
-				ELSE 0
-			END
-		END IS NULL
-			THEN 0
-		WHEN [p].[FirstName] IS NULL
-			THEN NULL
-		ELSE CASE
-			WHEN [p].[FirstName] LIKE N'Jo%' ESCAPE N'~'
-				THEN 1
-			ELSE 0
-		END
+		WHEN [p].[FirstName] IS NULL THEN NULL
+		WHEN [p].[FirstName] LIKE N'Jo%' ESCAPE N'~' THEN 1
+		ELSE 0
 	END = 1
 

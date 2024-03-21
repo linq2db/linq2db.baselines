@@ -26,3 +26,12 @@ FROM
 WHERE
 	[t3].[RN] > @skip AND [t3].[RN] <= @take
 
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
