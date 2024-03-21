@@ -18,6 +18,10 @@ CREATE TABLE IF NOT EXISTS `test_insert_or_replace`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'test'
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -26,12 +30,16 @@ INSERT IGNORE INTO `test_insert_or_replace`
 )
 VALUES
 (
-	1,
-	'test'
+	@Id,
+	@Name
 )
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'test'
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -40,8 +48,8 @@ INSERT IGNORE INTO `test_insert_or_replace`
 )
 VALUES
 (
-	1,
-	'test'
+	@Id,
+	@Name
 )
 
 BeforeExecute

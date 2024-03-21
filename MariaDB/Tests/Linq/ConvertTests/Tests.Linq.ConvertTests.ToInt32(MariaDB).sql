@@ -2,9 +2,14 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Cast(Floor(`t`.`MoneyValue`) as SIGNED)
+	`p_1`.`c1`
 FROM
-	`LinqDataTypes` `t`
+	(
+		SELECT
+			Cast(Floor(`p`.`MoneyValue`) as SIGNED) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `p_1`
 WHERE
-	Cast(Floor(`t`.`MoneyValue`) as SIGNED) > 0
+	`p_1`.`c1` > 0
 
