@@ -11,8 +11,7 @@ FROM
 		SELECT
 			[x].[PersonID] as [ID],
 			CASE
-				WHEN [x].[FirstName] = '123'
-					THEN 'Y'
+				WHEN [x].[FirstName] = '123' THEN 'Y'
 				ELSE 'N'
 			END as [OK],
 			'A' as [FirstName]

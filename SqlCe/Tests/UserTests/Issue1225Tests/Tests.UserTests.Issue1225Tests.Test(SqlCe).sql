@@ -87,8 +87,7 @@ SELECT
 	[it_1].[c1] as [Name],
 	[it_1].[Id] as [Value_1],
 	SUM(CASE
-		WHEN [it_1].[Id_1] IS NULL
-			THEN NULL
+		WHEN [it_1].[Id_1] IS NULL THEN NULL
 		ELSE [it_1].[Id_1]
 	END) as [SUM_1]
 FROM

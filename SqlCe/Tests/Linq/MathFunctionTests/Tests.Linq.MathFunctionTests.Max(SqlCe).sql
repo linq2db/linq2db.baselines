@@ -7,8 +7,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [t].[MoneyValue] > 5.1
-					THEN [t].[MoneyValue]
+				WHEN [t].[MoneyValue] > 5.1 THEN [t].[MoneyValue]
 				ELSE 5.1
 			END as [c1]
 		FROM

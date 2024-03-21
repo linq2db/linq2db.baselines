@@ -58,13 +58,11 @@ FROM
 			MIN([g_1].[DataValue]) as [MIN_1],
 			MIN([g_1].[DataValue]) as [MIN_2],
 			MIN(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MIN_3],
 			MIN(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MIN_4]
 		FROM

@@ -8,8 +8,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [child].[FirstName] = 'John'
-					THEN [child].[FirstName]
+				WHEN [child].[FirstName] = 'John' THEN [child].[FirstName]
 				ELSE 'a'
 			END as [Value_1]
 		FROM

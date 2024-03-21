@@ -59,14 +59,12 @@ FROM
 			[g_1].[GroupId],
 			COUNT(*) as [COUNT_1],
 			COUNT(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN 1
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN 1
 				ELSE NULL
 			END) as [COUNT_2],
 			COUNT(*) as [COUNT_3],
 			COUNT(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN 1
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN 1
 				ELSE NULL
 			END) as [COUNT_4]
 		FROM

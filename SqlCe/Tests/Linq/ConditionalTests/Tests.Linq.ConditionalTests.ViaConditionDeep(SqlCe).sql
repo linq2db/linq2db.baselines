@@ -37,40 +37,24 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[x_1].[Id],
-	[x_1].[child],
-	[x_1].[child_1],
-	[x_1].[StringProp_1] as [StringProp]
+	[x].[Id],
+	CASE
+		WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
+			THEN 1
+		ELSE 0
+	END as [child],
+	[x].[StringProp] as [child_1],
+	[x].[StringProp] + '2' as [StringProp]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
-					THEN '2'
-				WHEN [x].[StringProp] = '2'
-					THEN [x].[StringProp]
-				ELSE [x].[StringProp] + '2'
-			END as [StringProp],
-			CASE
-				WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
-					THEN NULL
-				WHEN [x].[StringProp] = '2'
-					THEN 1
-				ELSE 2
-			END as [IntProp],
-			[x].[Id],
-			CASE
-				WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
-					THEN 1
-				ELSE 0
-			END as [child],
-			[x].[StringProp] as [child_1],
-			[x].[StringProp] + '2' as [StringProp_1]
-		FROM
-			[ConditionalData] [x]
-	) [x_1]
+	[ConditionalData] [x]
 WHERE
-	[x_1].[StringProp] LIKE '%2' ESCAPE '~' AND [x_1].[IntProp] = 2
+	CASE
+		WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
+			THEN '2'
+		WHEN [x].[StringProp] = '2' THEN [x].[StringProp]
+		ELSE [x].[StringProp] + '2'
+	END LIKE '%2' ESCAPE '~' AND
+	NOT ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
 
 BeforeExecute
 -- SqlCe

@@ -18,8 +18,7 @@ SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	COUNT(CASE
-		WHEN [g_1].[TimeStamp] > @DateTime
-			THEN 1
+		WHEN [g_1].[TimeStamp] > @DateTime THEN 1
 		ELSE NULL
 	END) as [COUNT_1]
 FROM

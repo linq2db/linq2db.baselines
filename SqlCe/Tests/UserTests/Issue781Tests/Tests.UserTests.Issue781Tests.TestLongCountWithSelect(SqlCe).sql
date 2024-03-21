@@ -32,8 +32,7 @@ FROM
 			(
 				SELECT
 					CASE
-						WHEN [a_Patient].[PersonID] IS NULL
-							THEN NULL
+						WHEN [a_Patient].[PersonID] IS NULL THEN NULL
 						ELSE 'test' + [a_Patient].[Diagnosis]
 					END as [c1]
 				FROM

@@ -355,13 +355,11 @@ FROM
 			MAX([g_1].[DataValue]) as [MAX_1],
 			MAX([g_1].[DataValue]) as [MAX_2],
 			MAX(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MAX_3],
 			MAX(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MAX_4]
 		FROM

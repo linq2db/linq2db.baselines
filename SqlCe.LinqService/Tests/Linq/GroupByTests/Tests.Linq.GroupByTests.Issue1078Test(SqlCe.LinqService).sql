@@ -220,11 +220,7 @@ SELECT
 	[grp].[SiteID],
 	COUNT(*) as [COUNT_1],
 	COUNT(CASE
-		WHEN CASE
-			WHEN [grp].[Active] = 1 THEN 1
-			ELSE 0
-		END = 0
-			THEN 1
+		WHEN [grp].[Active] = 0 THEN 1
 		ELSE NULL
 	END) as [COUNT_2]
 FROM

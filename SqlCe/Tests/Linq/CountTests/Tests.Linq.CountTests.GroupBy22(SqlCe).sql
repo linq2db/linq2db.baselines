@@ -5,8 +5,7 @@ SET     @n = 1
 
 SELECT
 	COUNT(CASE
-		WHEN [g_1].[ParentID] + 1 < 3
-			THEN 1
+		WHEN [g_1].[ParentID] + 1 < 3 THEN 1
 		ELSE NULL
 	END) as [COUNT_1]
 FROM

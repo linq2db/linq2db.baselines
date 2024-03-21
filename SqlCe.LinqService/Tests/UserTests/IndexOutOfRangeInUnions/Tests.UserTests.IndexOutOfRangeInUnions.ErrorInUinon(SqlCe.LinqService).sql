@@ -52,8 +52,7 @@ BeforeExecute
 SELECT
 	[doSap].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap].[DocStatus] = 'O'
-			THEN 'Aberto'
+		WHEN [doSap].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	'Manual/Externo' as [DescricaoStatus]
@@ -63,8 +62,7 @@ UNION
 SELECT
 	[doSap_1].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap_1].[DocStatus] = 'O'
-			THEN 'Aberto'
+		WHEN [doSap_1].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	'Manual/Externo' as [DescricaoStatus]
@@ -74,8 +72,7 @@ UNION
 SELECT
 	[doSap_2].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap_2].[DocStatus] = 'O'
-			THEN 'Aberto'
+		WHEN [doSap_2].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	'Manual/Externo' as [DescricaoStatus]

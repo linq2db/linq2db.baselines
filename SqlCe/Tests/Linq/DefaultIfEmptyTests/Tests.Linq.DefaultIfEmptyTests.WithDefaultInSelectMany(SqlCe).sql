@@ -11,8 +11,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				CASE
-					WHEN [c_1].[ParentID] IS NOT NULL
-						THEN [c_1].[ChildID]
+					WHEN [c_1].[ParentID] IS NOT NULL THEN [c_1].[ChildID]
 					ELSE -100
 				END as [ChildID],
 				[c_1].[ParentID],

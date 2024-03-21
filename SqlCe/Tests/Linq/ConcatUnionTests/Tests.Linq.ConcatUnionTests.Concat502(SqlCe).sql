@@ -29,12 +29,10 @@ FROM
 	) [p_1]
 WHERE
 	(CASE
-		WHEN [p_1].[ParentID] IS NOT NULL
-			THEN [p_1].[Value1]
+		WHEN [p_1].[ParentID] IS NOT NULL THEN [p_1].[Value1]
 		ELSE NULL
 	END <> 2 OR CASE
-		WHEN [p_1].[ParentID] IS NOT NULL
-			THEN [p_1].[Value1]
+		WHEN [p_1].[ParentID] IS NOT NULL THEN [p_1].[Value1]
 		ELSE NULL
 	END IS NULL)
 

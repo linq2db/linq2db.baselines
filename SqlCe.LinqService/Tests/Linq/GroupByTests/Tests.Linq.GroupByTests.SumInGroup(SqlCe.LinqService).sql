@@ -355,13 +355,11 @@ FROM
 			SUM([g_1].[DataValue]) as [SUM_1],
 			SUM([g_1].[DataValue]) as [SUM_2],
 			SUM(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [SUM_3],
 			SUM(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [SUM_4]
 		FROM

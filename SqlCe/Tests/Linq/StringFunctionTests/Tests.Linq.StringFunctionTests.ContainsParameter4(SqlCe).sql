@@ -11,8 +11,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [p].[FirstName] LIKE '%Jo%' ESCAPE '~'
-					THEN 1
+				WHEN [p].[FirstName] LIKE '%Jo%' ESCAPE '~' THEN 1
 				ELSE 0
 			END as [Field1],
 			[p].[FirstName],

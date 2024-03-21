@@ -12,9 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN 1 = 0 THEN 2
-		ELSE CharIndex(@p, [p].[LastName], 3) - 1
-	END = 4 AND
-	[p].[PersonID] = 2
+	CharIndex(@p, [p].[LastName], 3) - 1 = 4 AND [p].[PersonID] = 2
 

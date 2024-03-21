@@ -58,13 +58,11 @@ FROM
 			AVG([g_1].[DataValue]) as [AVG_1],
 			AVG([g_1].[DataValue]) as [AVG_2],
 			AVG(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [AVG_3],
 			AVG(CASE
-				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0
-					THEN [g_1].[DataValue]
+				WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [AVG_4]
 		FROM

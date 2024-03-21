@@ -7,8 +7,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [i].[MiddleName] IS NULL
-					THEN 'M'
+				WHEN [i].[MiddleName] IS NULL THEN 'M'
 				ELSE 'O'
 			END as [Gender],
 			[i].[FirstName],
@@ -18,8 +17,7 @@ FROM
 		UNION ALL
 		SELECT
 			CASE
-				WHEN [i_1].[MiddleName] IS NULL
-					THEN 'M'
+				WHEN [i_1].[MiddleName] IS NULL THEN 'M'
 				ELSE 'O'
 			END as [Gender],
 			[i_1].[FirstName],

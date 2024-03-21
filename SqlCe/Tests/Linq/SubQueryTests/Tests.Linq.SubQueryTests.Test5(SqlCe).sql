@@ -11,8 +11,7 @@ FROM
 	(
 		SELECT DISTINCT
 			CASE
-				WHEN [id].[Value1] IS NULL
-					THEN [id].[ParentID]
+				WHEN [id].[Value1] IS NULL THEN [id].[ParentID]
 				ELSE [id].[ParentID] + 1
 			END as [c1]
 		FROM
