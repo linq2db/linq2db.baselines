@@ -4,14 +4,15 @@ DECLARE @p NVarChar(5) -- String
 SET     @p = '2010-'
 
 SELECT
-	[t].[c1]
+	[t_1].[ID]
 FROM
 	(
 		SELECT
-			Convert(Datetime, @p + REPLICATE('0', 2 - LEN(CAST([p].[ID] as NVARCHAR(2)))) + CAST([p].[ID] as NVARCHAR(2)) + '-01') as [c1]
+			DatePart(year, Convert(Datetime, @p + REPLICATE('0', 2 - LEN(CAST([t].[ID] as NVARCHAR(2)))) + CAST([t].[ID] as NVARCHAR(2)) + '-01')) as [Year_1],
+			[t].[ID]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	[t_1].[Year_1] = 2010
 

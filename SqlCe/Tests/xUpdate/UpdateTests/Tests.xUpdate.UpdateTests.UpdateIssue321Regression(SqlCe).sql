@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @value2 Int -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
@@ -58,18 +58,16 @@ SET     @id = 100500
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[SmallIntValue] = Convert(SmallInt, [LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]))
+	[SmallIntValue] = Convert(SmallInt, [LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]))
 WHERE
 	[LinqDataTypes].[ID] = @id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[SmallIntValue]
 FROM
 	[LinqDataTypes] [_]

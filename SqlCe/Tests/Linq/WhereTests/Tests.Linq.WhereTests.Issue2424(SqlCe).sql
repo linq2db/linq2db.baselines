@@ -26,10 +26,8 @@ SELECT 5,'5'
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -39,10 +37,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -52,10 +48,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -65,10 +59,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -78,10 +70,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -91,10 +81,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -104,10 +92,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -117,10 +103,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -130,10 +114,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -143,10 +125,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -156,10 +136,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -169,10 +147,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -182,10 +158,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -195,10 +169,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -208,10 +180,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -221,10 +191,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -234,10 +202,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -247,10 +213,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -260,10 +224,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -273,10 +235,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -286,10 +246,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM
@@ -299,10 +257,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[i].[Id],
 	[i].[StrValue]
 FROM

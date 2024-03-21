@@ -150,6 +150,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @Bool3 NVarChar -- String
+SET     @Bool3 = NULL
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -161,7 +163,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = @Bool1 AND
+	([r].[Bool3] = @Bool3 OR [r].[Bool3] IS NULL) AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool2] IS NULL
 
 BeforeExecute
@@ -283,6 +285,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @Bool3 NVarChar -- String
+SET     @Bool3 = NULL
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -296,7 +300,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = @Bool1 AND
+	([r].[Bool3] = @Bool3 OR [r].[Bool3] IS NULL) AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool2] = @Bool2
 
 BeforeExecute
