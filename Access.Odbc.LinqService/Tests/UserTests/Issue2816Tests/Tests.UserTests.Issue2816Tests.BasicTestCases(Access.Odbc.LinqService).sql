@@ -136,5 +136,14 @@ WHERE
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+SELECT
+	[t1].[Id],
+	[t1].[Text]
+FROM
+	[Issue2816Table] [t1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 DROP TABLE [Issue2816Table]
 
