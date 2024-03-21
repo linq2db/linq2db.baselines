@@ -11,5 +11,5 @@ FROM
 	"Person" p
 		INNER JOIN (VALUES
 			(1), (2)
-		) n("PersonID") ON p."PersonID" = n."PersonID"
+		) n("ID") ON p."PersonID" = n."ID"
 
