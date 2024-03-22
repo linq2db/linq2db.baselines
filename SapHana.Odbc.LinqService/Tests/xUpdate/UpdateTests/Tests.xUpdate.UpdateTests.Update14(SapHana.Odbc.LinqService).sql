@@ -30,11 +30,11 @@ DECLARE @idx  -- Int32
 SET     @idx = 12
 
 UPDATE
-	"Person"
+	"Person" "_"
 SET
-	"Person"."LastName" = Cast(? as NVarChar(11))
+	"LastName" = Cast(? as NVarChar(255))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -19,7 +19,7 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	(? = "_"."SmallIntValue" OR ? IS NULL AND "_"."SmallIntValue" IS NULL)
+	(Cast(? as Integer) = "_"."SmallIntValue" OR Cast(? as Integer) IS NULL AND "_"."SmallIntValue" IS NULL)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

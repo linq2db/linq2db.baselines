@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."ID",
@@ -68,7 +66,7 @@ FROM
 	"LinqDataTypes" "_"
 WHERE
 	"_"."ID" = 1000
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

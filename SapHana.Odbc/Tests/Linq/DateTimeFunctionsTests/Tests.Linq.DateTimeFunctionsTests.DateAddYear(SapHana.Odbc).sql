@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Years("t"."DateTimeValue", 11)
+	Cast(Add_Years("t"."DateTimeValue", 11) as Date)
 FROM
 	"LinqDataTypes" "t"
 

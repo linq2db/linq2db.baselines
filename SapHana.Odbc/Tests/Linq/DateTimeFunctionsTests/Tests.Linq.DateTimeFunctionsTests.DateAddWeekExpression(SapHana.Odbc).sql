@@ -4,7 +4,7 @@ DECLARE @Parameter1  -- Int32
 SET     @Parameter1 = -7
 
 SELECT
-	Add_Days("t"."DateTimeValue", ?)
+	Cast(Add_Days("t"."DateTimeValue", ?) as Date)
 FROM
 	"LinqDataTypes" "t"
 

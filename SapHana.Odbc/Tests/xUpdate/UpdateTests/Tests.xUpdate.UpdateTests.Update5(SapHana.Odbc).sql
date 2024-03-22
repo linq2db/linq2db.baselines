@@ -36,7 +36,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = ?
+	"ChildID" = ?
 WHERE
 	EXISTS(
 		SELECT

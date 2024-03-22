@@ -109,13 +109,15 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Field NVarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id  -- Int32
 SET     @id = 3
 
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = ?
 WHERE
 	EXISTS(
 		SELECT
@@ -125,7 +127,8 @@ WHERE
 				LEFT JOIN "AssociatedTable" "a_AssociatedOptional" ON "_"."Id" = "a_AssociatedOptional"."Id"
 				LEFT JOIN "MainTable" "a_MainOptional" ON "a_AssociatedOptional"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"_"."Id" = ? AND "MainTable"."Id" = "_"."Id" AND ("MainTable"."Field" = "_"."Field" OR "MainTable"."Field" IS NULL AND "_"."Field" IS NULL)
+			"_"."Id" = ? AND "MainTable"."Id" = "a_MainOptional"."Id" AND
+			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
 	)
 
 BeforeExecute

@@ -220,17 +220,23 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Field1  -- Int32
+SET     @Field1 = 123
+DECLARE @Field4  -- Int32
+SET     @Field4 = 999
+DECLARE @Field5  -- Int32
+SET     @Field5 = 888
 
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"s"."Id",
-		"s"."Field1",
-		"s"."Field2"
+		"s"."Id" as "source_Id",
+		"s"."Field1" as "source_Field1",
+		"s"."Field2" as "source_Field2"
 	FROM
 		"TestMerge2" "s"
 ) "Source"
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -244,12 +250,12 @@ INSERT
 )
 VALUES
 (
-	10 + "Source"."Id",
-	123,
-	"Source"."Field1",
-	"Source"."Field2",
-	999,
-	888
+	10 + "Source"."source_Id",
+	?,
+	"Source"."source_Field1",
+	"Source"."source_Field2",
+	?,
+	?
 )
 
 BeforeExecute

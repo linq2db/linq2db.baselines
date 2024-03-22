@@ -2,6 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @param  -- Int16
 SET     @param = 1
+DECLARE @param  -- Int16
+SET     @param = 1
 
 SELECT
 	"_"."ID",
@@ -17,7 +19,7 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	? = "_"."SmallIntValue"
+	(Cast(? as Integer) = "_"."SmallIntValue" OR Cast(? as Integer) IS NULL AND "_"."SmallIntValue" IS NULL)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

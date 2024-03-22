@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Days("t"."DateTimeValue", 5)
+	Cast(Add_Days("t"."DateTimeValue", 5) as Date)
 FROM
 	"LinqDataTypes" "t"
 

@@ -4,18 +4,18 @@
 SELECT /* Main */
 	"p"."ParentID",
 	"p"."Value1",
-	"c_1"."Count_1"
+	"t1"."COUNT_1"
 FROM
 	(
 		SELECT /* Inline */
-			"t1"."ParentID",
-			Count(*) as "Count_1"
+			"g_1"."ParentID",
+			COUNT(*) as "COUNT_1"
 		FROM
-			"Child" "t1"
+			"Child" "g_1"
 		GROUP BY
-			"t1"."ParentID"
-	) "c_1",
+			"g_1"."ParentID"
+	) "t1",
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = "c_1"."ParentID"
+	"p"."ParentID" = "t1"."ParentID"
 

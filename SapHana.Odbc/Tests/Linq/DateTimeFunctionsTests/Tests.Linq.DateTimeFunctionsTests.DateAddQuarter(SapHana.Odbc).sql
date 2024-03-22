@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Months("t"."DateTimeValue", -3)
+	Cast(Add_Months("t"."DateTimeValue", -3) as Date)
 FROM
 	"LinqDataTypes" "t"
 

@@ -16,12 +16,14 @@ CREATE COLUMN TABLE "TestTable"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Fd  -- Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" "t1"
 SET
-	"TestTable"."Fd" = 1
+	"Fd" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

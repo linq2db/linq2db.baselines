@@ -190,80 +190,84 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
+DECLARE @Usage NVarChar -- String
 SET     @Usage = 0
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
+WHERE
+	"d"."Usage" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
+DECLARE @Usage NVarChar -- String
 SET     @Usage = 1
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
+WHERE
+	"d"."Usage" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -467,80 +471,84 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
+DECLARE @Usage NVarChar -- String
 SET     @Usage = 0
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
+WHERE
+	"d"."Usage" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
+DECLARE @Usage NVarChar -- String
 SET     @Usage = 1
 
 SELECT
-	"key_data_result"."Id",
-	"_v"."Id",
-	"_v"."Usage",
-	"_v"."FirstTableId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."Usage",
+	"d"."FirstTableId"
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."Id"
+			"t1"."Id"
 		FROM
-			"Table404One" "c_1"
-	) "key_data_result"
-		INNER JOIN "Table404Two" "_v" ON "_v"."Usage" = ? AND "_v"."FirstTableId" = "key_data_result"."Id"
+			"Table404One" "t1"
+	) "m_1"
+		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
+WHERE
+	"d"."Usage" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"c_1"."Id"
+	"t1"."Id"
 FROM
-	"Table404One" "c_1"
+	"Table404One" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

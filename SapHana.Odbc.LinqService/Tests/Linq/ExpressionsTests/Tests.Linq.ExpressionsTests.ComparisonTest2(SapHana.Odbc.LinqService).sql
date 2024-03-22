@@ -1,9 +1,13 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @personId  -- Int32
+SET     @personId = 0
+DECLARE @personId  -- Int32
 SET     @personId = 2
 DECLARE @personId  -- Int32
 SET     @personId = 2
+DECLARE @personId  -- Int32
+SET     @personId = 0
 
 SELECT
 	CASE
@@ -11,48 +15,38 @@ SELECT
 			SELECT
 				*
 			FROM
+				"Person" "_"
+			WHERE
 				(
 					SELECT
-						(
+						COUNT(*)
+					FROM
+						"Patient" "_1"
+					WHERE
+						"_1"."PersonID" = ? AND "_1"."PersonID" NOT IN (
 							SELECT
-								Count(*)
-							FROM
-								"Patient" "_"
-							WHERE
-								"_"."PersonID" IS NULL AND "_"."PersonID" NOT IN (
-									SELECT
-										"_1"."PersonID"
-									FROM
-										"Patient" "_1"
-									WHERE
-										"_1"."PersonID" = ?
-								)
-						) as "cnt",
-						(
-							SELECT
-								Count(*)
+								"_2"."PersonID"
 							FROM
 								"Patient" "_2"
 							WHERE
-								"_2"."PersonID" = ? AND "_2"."PersonID" NOT IN (
-									SELECT
-										"_3"."PersonID"
-									FROM
-										"Patient" "_3"
-									WHERE
-										"_3"."PersonID" IS NULL
-								)
-						) as "ex",
-						"_4"."FirstName",
-						"_4"."PersonID",
-						"_4"."LastName",
-						"_4"."MiddleName",
-						"_4"."Gender"
+								"_2"."PersonID" = ?
+						)
+				) = 0 AND
+				(
+					SELECT
+						COUNT(*)
 					FROM
-						"Person" "_4"
-				) "_5"
-			WHERE
-				"_5"."cnt" = 0 AND "_5"."ex" = 0
+						"Patient" "_3"
+					WHERE
+						"_3"."PersonID" = ? AND "_3"."PersonID" NOT IN (
+							SELECT
+								"_4"."PersonID"
+							FROM
+								"Patient" "_4"
+							WHERE
+								"_4"."PersonID" = ?
+						)
+				) = 0
 		)
 			THEN 1
 		ELSE 0

@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -50,7 +48,7 @@ FROM
 	"PR_1598_Mixed_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -60,16 +58,14 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Age" = ?
+	"Age" = ?
 WHERE
-	"PR_1598_Mixed_Table"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -79,7 +75,7 @@ FROM
 	"PR_1598_Mixed_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -101,8 +97,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -112,7 +106,7 @@ FROM
 	"PR_1598_Mixed_Table" "t"
 WHERE
 	"t"."Id" = 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -124,17 +118,15 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Name" = ?,
-	"PR_1598_Mixed_Table"."Age" = ?
+	"Name" = ?,
+	"Age" = ?
 WHERE
-	"PR_1598_Mixed_Table"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -144,7 +136,7 @@ FROM
 	"PR_1598_Mixed_Table" "t"
 WHERE
 	"t"."Id" = 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -16,17 +16,25 @@ CREATE COLUMN TABLE "TestTable"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Fd  -- Int32
+SET     @Fd = 2
+DECLARE @Id  -- Int32
+SET     @Id = 1
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" "t1"
 SET
-	"TestTable"."Fd" = 2
+	"Fd" = ?
 WHERE
-	"TestTable"."Id" = 1
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Fd  -- Int32
+SET     @Fd = 2
 
 /* My Test */
 INSERT INTO "TestTable"
@@ -36,8 +44,8 @@ INSERT INTO "TestTable"
 )
 VALUES
 (
-	1,
-	2
+	?,
+	?
 )
 
 BeforeExecute

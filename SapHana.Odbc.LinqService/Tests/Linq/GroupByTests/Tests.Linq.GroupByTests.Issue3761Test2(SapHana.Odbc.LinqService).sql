@@ -34,7 +34,7 @@ SET     @DATUM = '2019-01-01'
 SELECT
 	"t1"."Year_1",
 	"t1"."Month_1",
-	Sum("t1"."SKUPAJ")
+	SUM("t1"."SKUPAJ")
 FROM
 	(
 		SELECT
@@ -53,7 +53,7 @@ UNION ALL
 SELECT
 	"t2"."Year_1",
 	"t2"."Month_1",
-	Sum("t2"."SKUPAJ")
+	SUM("t2"."SKUPAJ")
 FROM
 	(
 		SELECT

@@ -22,23 +22,25 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @MoneyValue Decimal(4, 0)
+SET     @MoneyValue = 2000
+DECLARE @SmallIntValue  -- Int16
+SET     @SmallIntValue = 200
 DECLARE @ID  -- Int32
 SET     @ID = 1001
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."MoneyValue" = 2000,
-	"LinqDataTypes"."SmallIntValue" = 200
+	"MoneyValue" = ?,
+	"SmallIntValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t"."ID",
@@ -53,5 +55,5 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" = ?
-LIMIT ?
+LIMIT 2
 
