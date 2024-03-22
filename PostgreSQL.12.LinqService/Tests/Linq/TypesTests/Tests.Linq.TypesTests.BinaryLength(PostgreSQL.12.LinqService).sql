@@ -12,8 +12,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	Length(t."BinaryValue")
@@ -21,7 +19,7 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
