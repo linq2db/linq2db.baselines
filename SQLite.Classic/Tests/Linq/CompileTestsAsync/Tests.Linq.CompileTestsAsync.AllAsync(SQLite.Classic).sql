@@ -39,14 +39,14 @@ SET     @Id = 2
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				[AsyncDataTable] [c_1]
 			WHERE
 				[c_1].[Id] <> @Id
-		))
+		)
 			THEN 1
 		ELSE 0
 	END

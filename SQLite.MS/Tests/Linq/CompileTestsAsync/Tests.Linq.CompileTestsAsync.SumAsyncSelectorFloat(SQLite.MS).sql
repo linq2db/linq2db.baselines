@@ -38,7 +38,7 @@ DECLARE @Id  -- Int32
 SET     @Id = 5
 
 SELECT
-	Sum(Cast([c_1].[Id] as Real))
+	SUM(Cast([c_1].[Id] as Real))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

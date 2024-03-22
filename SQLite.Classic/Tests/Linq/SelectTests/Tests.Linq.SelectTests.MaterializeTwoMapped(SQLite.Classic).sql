@@ -27,8 +27,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[test_number],
@@ -37,7 +35,7 @@ SELECT
 	[t1].[id]
 FROM
 	[test_mapping_column_2_prop] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
