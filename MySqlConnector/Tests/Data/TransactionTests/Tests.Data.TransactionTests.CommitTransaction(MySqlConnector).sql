@@ -20,20 +20,20 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @Value1 Int32
+SET     @Value1 = 1011
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `t`
 SET
-	`t1`.`Value1` = 1011
+	`t`.`Value1` = @Value1
 WHERE
-	`t1`.`ParentID` = 1010
+	`t`.`ParentID` = 1010
 
 BeforeExecute
 CommitTransaction
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ParentID`,
@@ -42,5 +42,5 @@ FROM
 	`Parent` `t`
 WHERE
 	`t`.`ParentID` = 1010
-LIMIT @take
+LIMIT 1
 

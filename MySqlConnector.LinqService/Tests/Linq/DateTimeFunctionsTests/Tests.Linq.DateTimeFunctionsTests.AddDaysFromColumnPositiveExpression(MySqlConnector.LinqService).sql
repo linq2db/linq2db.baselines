@@ -42,6 +42,10 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @part1 Int16
+SET     @part1 = 4
+DECLARE @part2 Int32
+SET     @part2 = 4
 DECLARE @p Datetime -- DateTime
 SET     @p = '2018-01-02'
 
@@ -50,14 +54,14 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > @p
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval ((Cast(`t`.`SmallIntValue` as SIGNED) + @part1) - @part2) Day) > @p
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `t`
 WHERE
-	`t1`.`ID` = 5000
+	`t`.`ID` = 5000
 
