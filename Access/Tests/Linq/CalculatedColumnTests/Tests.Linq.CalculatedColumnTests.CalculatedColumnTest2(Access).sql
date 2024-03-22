@@ -2,24 +2,23 @@
 -- Access AccessOleDb
 
 SELECT
-	[t2].[PersonID],
-	[t2].[FirstName],
-	[t2].[LastName],
-	[t2].[MiddleName],
-	[t2].[Gender],
-	[t2].[LastName] + ', ' + [t2].[FirstName],
-	[t1].[cnt]
+	[t1].[PersonID],
+	[t1].[FirstName],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender],
+	[t1].[LastName] + ', ' + [t1].[FirstName],
+	[t1].[LastName] + ', ' + [t1].[FirstName],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d]
+		WHERE
+			[d].[PersonID] = [t1].[PersonID]
+	)
 FROM
-	[Person] [t2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [t2].[PersonID])
+	[Person] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -31,18 +30,17 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
-	[t1].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d]
+		WHERE
+			[d].[PersonID] = [i].[PersonID]
+	)
 FROM
 	[Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [i].[PersonID])
 WHERE
 	[i].[LastName] + ', ' + [i].[FirstName] <> 'Pupkin, John'
 
