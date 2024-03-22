@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @ID Int -- Int32
-SET     @ID = 1320
+DECLARE @p Int -- Int32
+SET     @p = 1320
 
 SELECT
-	[t].[c1]
+	[t].[ID]
 FROM
-	(
-		SELECT
-			DateAdd(month, (@ID + [p].[ID]) - 1, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, DateAdd(month, (@p + [t].[ID]) - 1, 0)) = 2010
 
