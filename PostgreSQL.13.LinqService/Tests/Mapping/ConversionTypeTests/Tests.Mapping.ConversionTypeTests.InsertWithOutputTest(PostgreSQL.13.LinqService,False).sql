@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Data Text(9) -- String
+SET     @Data = '***HHH***'
 
 INSERT INTO "TrimTestTable"
 (
@@ -42,7 +44,7 @@ INSERT INTO "TrimTestTable"
 )
 SELECT
 	t1."ID" + 1,
-	'***HHH***'
+	:Data
 FROM
 	"TrimTestTable" t1
 RETURNING
