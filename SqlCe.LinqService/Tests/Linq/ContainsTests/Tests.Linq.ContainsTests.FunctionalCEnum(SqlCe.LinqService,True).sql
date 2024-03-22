@@ -68,14 +68,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @CEnum NVarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 NVarChar(12) -- String
 SET     @CEnum_1 = '___Value4___'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -84,12 +82,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @CEnum NVarChar(12) -- String
 SET     @CEnum = '___Value3___'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -98,14 +94,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @CEnum NVarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 NVarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -114,12 +108,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @CEnum NVarChar(12) -- String
 SET     @CEnum = '___Value2___'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -128,14 +120,12 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @CEnum NVarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 NVarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
