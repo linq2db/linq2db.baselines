@@ -2,33 +2,19 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Max([t1].[ChildID]),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [ch]
-		WHERE
-			[t1].[ParentID] = [ch].[ParentID] AND [ch].[ChildID] > 20
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [ch_1]
-		WHERE
-			[t1].[ParentID] = [ch_1].[ParentID] AND [ch_1].[ChildID] > 20
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [ch_2]
-		WHERE
-			[t1].[ParentID] = [ch_2].[ParentID] AND [ch_2].[ChildID] > 10
-	)
+	[g_2].[MAX_1],
+	[g_2].[COUNT_1] + 1,
+	[g_2].[COUNT_1],
+	[g_2].[COUNT_2]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
+	(
+		SELECT
+			MAX([g_1].[ChildID]) as [MAX_1],
+			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [COUNT_1],
+			COUNT(IIF([g_1].[ChildID] > 10, 1, NULL)) as [COUNT_2]
+		FROM
+			[Child] [g_1]
+		GROUP BY
+			[g_1].[ParentID]
+	) [g_2]
 

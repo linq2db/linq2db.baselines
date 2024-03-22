@@ -32,37 +32,31 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[t1]
+	[TrimTestTable]
 SET
-	[t1].[Data] = N'***III***'
-FROM
-	[TrimTestTable] [t1]
+	[Data] = N'***III***'
 WHERE
-	[t1].[ID] = 3
+	[TrimTestTable].[ID] = 3
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[t]
+	[TrimTestTable]
 SET
-	[t].[Data] = N'***OOO***'
-FROM
-	[TrimTestTable] [t]
+	[Data] = N'***OOO***'
 WHERE
-	[t].[Data] = N'***XXX***'
+	[TrimTestTable].[Data] = N'***XXX***'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[t]
+	[TrimTestTable]
 SET
-	[t].[Data] = N'***SSS***'
-FROM
-	[TrimTestTable] [t]
+	[Data] = N'***SSS***'
 WHERE
-	[t].[Data] = N'***HHH***'
+	[TrimTestTable].[Data] = N'***HHH***'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

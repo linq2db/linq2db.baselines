@@ -25,14 +25,14 @@ DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
-	[t1].[Key_1],
-	[t1].[Key_2],
-	Sum([t1].[SKUPAJ])
+	[t1].[Year_1],
+	[t1].[Month_1],
+	SUM([t1].[SKUPAJ])
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n].[DATUM], @default)) as [Key_1],
-			DatePart(month, Coalesce([n].[DATUM], @default)) as [Key_2],
+			DatePart(year, Coalesce([n].[DATUM], @default)) as [Year_1],
+			DatePart(month, Coalesce([n].[DATUM], @default)) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
@@ -40,8 +40,8 @@ FROM
 			[n].[DATUM] < @DATUM
 	) [t1]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	[t1].[Year_1],
+	[t1].[Month_1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
