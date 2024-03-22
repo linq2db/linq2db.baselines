@@ -84,15 +84,15 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 UPDATE
-	[DestinationTable_target]
+	[t]
 SET
-	[DestinationTable_target].[Id] = [s].[Id],
-	[DestinationTable_target].[Value] = [s].[Value],
-	[DestinationTable_target].[ValueStr] = [s].[ValueStr]
+	[t].[Id] = [s].[Id],
+	[t].[Value] = [s].[Value],
+	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_destination]
 (
 	[Id],
