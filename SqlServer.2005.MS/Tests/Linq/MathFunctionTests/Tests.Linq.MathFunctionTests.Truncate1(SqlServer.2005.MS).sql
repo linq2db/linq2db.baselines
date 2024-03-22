@@ -2,9 +2,14 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Round([p].[MoneyValue], 0, 1)
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Round([t].[MoneyValue], 0, 1) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Round([p].[MoneyValue], 0, 1) <> 0.1
+	[t_1].[c1] <> 0.1
 
