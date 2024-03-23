@@ -4,14 +4,9 @@ DECLARE @p Varchar2(5) -- String
 SET     @p = '2010-'
 
 SELECT
-	t."c1"
+	t.ID
 FROM
-	(
-		SELECT
-			TO_DATE(:p || Lpad(p.ID,2,'0') || '-01', 'YYYY-MM-DD') as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	To_Number(To_Char(t."c1", 'YYYY')) = 2010
+	To_Number(To_Char(TO_DATE(:p || Lpad(t.ID,2,'0') || '-01', 'YYYY-MM-DD'), 'YYYY')) = 2010
 
