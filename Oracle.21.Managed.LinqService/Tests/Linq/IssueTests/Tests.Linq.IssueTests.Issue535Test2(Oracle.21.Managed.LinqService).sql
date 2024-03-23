@@ -76,7 +76,7 @@ SELECT
 	q."Id",
 	q."Name",
 	q."ContactEmail",
-	Nvl(q."Enabled", 0)
+	q."Enabled"
 FROM
 	"CustomerBase" q
 WHERE
