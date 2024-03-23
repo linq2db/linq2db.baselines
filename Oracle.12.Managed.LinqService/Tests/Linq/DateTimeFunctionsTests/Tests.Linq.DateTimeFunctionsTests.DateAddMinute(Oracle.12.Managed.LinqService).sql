@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + 5 * INTERVAL '1' MINUTE
+	To_Number(To_Char((t."DateTimeValue" + 5 * INTERVAL '1' MINUTE), 'MI'))
 FROM
 	"LinqDataTypes" t
 

@@ -20,20 +20,20 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Value1 Int32
+SET     @Value1 = 1012
 
 UPDATE
-	"Parent"
+	"Parent" t
 SET
-	"Parent"."Value1" = 1012
+	"Value1" = :Value1
 WHERE
-	"Parent"."ParentID" = 1010
+	t."ParentID" = 1010
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -42,5 +42,5 @@ FROM
 	"Parent" t
 WHERE
 	t."ParentID" = 1010
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

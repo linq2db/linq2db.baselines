@@ -32,11 +32,15 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Value Varchar2(1) -- String
+SET     @Value = '3'
 
 MERGE INTO "ReviewIndexes" Target
 USING (
-	SELECT 1 AS "Id" FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id" FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -46,10 +50,10 @@ INSERT
 )
 VALUES
 (
-	2,
-	'3'
+	:Id,
+	:Value
 )
- WHERE "Source"."Id" > 1
+ WHERE "Source"."source_Id" > 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

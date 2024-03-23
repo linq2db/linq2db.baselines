@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = 1
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '1' YEAR
+	Trunc(t."DateTimeValue" + :p * INTERVAL '1' YEAR, 'DD')
 FROM
 	"LinqDataTypes" t
 
