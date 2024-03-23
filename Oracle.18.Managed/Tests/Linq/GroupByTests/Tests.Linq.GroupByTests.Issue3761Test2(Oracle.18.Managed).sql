@@ -38,11 +38,13 @@ DECLARE @default_1 TimeStamp -- DateTime
 SET     @default_1 = TIMESTAMP '0001-01-01 00:00:00.000000'
 DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = TIMESTAMP '2019-01-01 00:00:00.000000'
+DECLARE @default_2 TimeStamp -- DateTime
+SET     @default_2 = TIMESTAMP '0001-01-01 00:00:00.000000'
 
 SELECT
 	t1."Year_1",
 	t1."Month_1",
-	Sum(t1.SKUPAJ)
+	SUM(t1.SKUPAJ)
 FROM
 	(
 		SELECT
@@ -61,12 +63,12 @@ UNION ALL
 SELECT
 	t2."Year_1",
 	t2."Month_1",
-	Sum(t2.SKUPAJ)
+	SUM(t2.SKUPAJ)
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'YYYY')) as "Year_1",
-			To_Number(To_Char(Nvl(n_1.DATUM, :default_1), 'MM')) as "Month_1",
+			To_Number(To_Char(Nvl(n_1.DATUM, :default_2), 'YYYY')) as "Year_1",
+			To_Number(To_Char(Nvl(n_1.DATUM, :default_2), 'MM')) as "Month_1",
 			n_1.SKUPAJ
 		FROM
 			"Issue3761Table" n_1
