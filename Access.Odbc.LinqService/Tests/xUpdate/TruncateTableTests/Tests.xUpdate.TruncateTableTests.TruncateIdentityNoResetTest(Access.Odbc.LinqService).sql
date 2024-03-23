@@ -12,6 +12,11 @@ CREATE TABLE [test_temp]
 BeforeExecute
 -- Access.Odbc AccessODBC
 
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 INSERT INTO [test_temp]
 (
 	[Field1]

@@ -98,11 +98,15 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id1],
-	[m_1].[Id2],
-	[detail].[DetailValue]
+	[d].[DetailValue]
 FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [detail] ON [m_1].[Id1] = [detail].[MasterId]
+	(
+		SELECT DISTINCT
+			[x].[Id1]
+		FROM
+			[MasterClass] [x]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction
@@ -110,8 +114,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2]
+	[m_1].[Id1]
 FROM
 	[MasterClass] [m_1]
 

@@ -1,11 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = 1
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[BoolValue] = 1,
-	[LinqDataTypes].[DateTimeValue] = GetDate()
+	[BoolValue] = @BoolValue,
+	[DateTimeValue] = GetDate()
 WHERE
 	[LinqDataTypes].[ID] = 100000
 

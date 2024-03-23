@@ -93,8 +93,6 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -104,14 +102,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -121,14 +117,27 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'Y'
+
+SELECT
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
+FROM
+	"TypeConvertTable" t1
+WHERE
+	t1."BoolValue" <> :BoolValue
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -137,32 +146,13 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."Name",
-	t1."BoolValue",
-	t1."GuidValue"
-FROM
-	"TypeConvertTable" t1
-WHERE
-	t1."BoolValue" = :BoolValue
-LIMIT :take
+	t1."BoolValue" <> :BoolValue
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -172,14 +162,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -189,14 +177,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -206,14 +192,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -223,14 +207,27 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."BoolValue" = :BoolValue
-LIMIT :take
+LIMIT 1
+
+BeforeExecute
+-- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'Y'
+
+SELECT
+	t1."Name",
+	t1."BoolValue",
+	t1."GuidValue"
+FROM
+	"TypeConvertTable" t1
+WHERE
+	t1."BoolValue" <> :BoolValue
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -239,32 +236,13 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-LIMIT :take
-
-BeforeExecute
--- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	t1."Name",
-	t1."BoolValue",
-	t1."GuidValue"
-FROM
-	"TypeConvertTable" t1
-WHERE
-	t1."BoolValue" = :BoolValue
-LIMIT :take
+	t1."BoolValue" <> :BoolValue
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -274,14 +252,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."GuidValue" = :GuidValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -291,7 +267,7 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."GuidValue" = :GuidValue
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

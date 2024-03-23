@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Max([_].[ID])
+	MAX([_].[ID]) as [MAX_1]
 FROM
 	[AllTypes] [_]
 
@@ -265,8 +265,8 @@ DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 SELECT
-	[_].[ID],
-	[_].[ncharDataType]
+	[_].[ID] as [Id],
+	[_].[ncharDataType] as [NString]
 FROM
 	[AllTypes] [_]
 WHERE

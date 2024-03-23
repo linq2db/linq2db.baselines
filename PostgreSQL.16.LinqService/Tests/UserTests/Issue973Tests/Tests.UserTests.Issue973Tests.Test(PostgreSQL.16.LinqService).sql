@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @values Integer -- Int32
-SET     @values = 1
-DECLARE @values_1 Integer -- Int32
-SET     @values_1 = 2
-DECLARE @values_2 Integer -- Int32
-SET     @values_2 = 3
+DECLARE @p Integer -- Int32
+SET     @p = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 2
+DECLARE @p_2 Integer -- Int32
+SET     @p_2 = 3
 DECLARE @param Integer -- Int32
 SET     @param = 4
 
@@ -15,7 +15,7 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (:values, :values_1, :values_2) OR o."ParentID" = :param)
+	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -32,12 +32,12 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @values Integer -- Int32
-SET     @values = 4
-DECLARE @values_1 Integer -- Int32
-SET     @values_1 = 5
-DECLARE @values_2 Integer -- Int32
-SET     @values_2 = 6
+DECLARE @p Integer -- Int32
+SET     @p = 4
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 5
+DECLARE @p_2 Integer -- Int32
+SET     @p_2 = 6
 DECLARE @param Integer -- Int32
 SET     @param = 4
 
@@ -47,7 +47,7 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (:values, :values_1, :values_2) OR o."ParentID" = :param)
+	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

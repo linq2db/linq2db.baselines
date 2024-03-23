@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	Coalesce(`p`.`Value1`, 100)
+	`p`.`Value1`
 FROM
 	`Parent` `p`
 

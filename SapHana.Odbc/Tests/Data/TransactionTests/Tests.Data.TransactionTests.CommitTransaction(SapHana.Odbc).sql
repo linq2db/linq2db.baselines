@@ -20,20 +20,20 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Value1  -- Int32
+SET     @Value1 = 1011
 
 UPDATE
-	"Parent"
+	"Parent" "t"
 SET
-	"Parent"."Value1" = 1011
+	"Value1" = ?
 WHERE
-	"Parent"."ParentID" = 1010
+	"t"."ParentID" = 1010
 
 BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."ParentID",
@@ -42,5 +42,5 @@ FROM
 	"Parent" "t"
 WHERE
 	"t"."ParentID" = 1010
-LIMIT ?
+LIMIT 1
 

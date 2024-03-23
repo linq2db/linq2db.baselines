@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	IIF([_].[BigIntValue] IN (2), 1, 0) = 1
+	[_].[BigIntValue] IN (2)
 

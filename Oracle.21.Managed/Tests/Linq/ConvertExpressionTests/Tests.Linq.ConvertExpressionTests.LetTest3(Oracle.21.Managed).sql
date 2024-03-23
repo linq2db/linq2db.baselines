@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID"
+	t2."ParentID"
 FROM
-	"Parent" p_1
-		OUTER APPLY (
+	"Parent" p
+		LEFT JOIN (
 			SELECT
-				p."ParentID"
+				t1."ParentID"
 			FROM
-				"Child" p
-			FETCH NEXT :take ROWS ONLY
-		) t1
+				"Child" t1
+			FETCH NEXT 1 ROWS ONLY
+		) t2 ON 1=1
 

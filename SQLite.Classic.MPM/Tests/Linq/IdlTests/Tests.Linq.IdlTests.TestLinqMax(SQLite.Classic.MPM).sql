@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE

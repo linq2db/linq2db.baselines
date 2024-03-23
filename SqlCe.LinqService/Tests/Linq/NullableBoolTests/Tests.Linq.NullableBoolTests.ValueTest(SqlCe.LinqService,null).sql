@@ -57,7 +57,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
 WHERE
@@ -67,17 +67,17 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	[t].[Value] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
 WHERE
@@ -87,11 +87,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
-WHERE
-	[t].[Value] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

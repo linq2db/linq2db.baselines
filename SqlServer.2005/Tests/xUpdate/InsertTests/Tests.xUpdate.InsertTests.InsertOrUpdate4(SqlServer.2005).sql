@@ -41,9 +41,9 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -73,9 +73,9 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -105,9 +105,9 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 FROM
 	[Patient] [t1]
 WHERE
@@ -129,12 +129,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

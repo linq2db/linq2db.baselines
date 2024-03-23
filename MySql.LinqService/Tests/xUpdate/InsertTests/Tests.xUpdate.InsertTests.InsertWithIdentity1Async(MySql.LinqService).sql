@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
@@ -31,9 +31,9 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 

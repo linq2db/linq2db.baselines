@@ -6,9 +6,9 @@ DECLARE @v1  -- Int32
 SET     @v1 = 1
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"Parent"."Value1" = ?
+	"p"."Value1" = ?
 

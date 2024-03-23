@@ -33,12 +33,10 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id],
 	[_].[Has]
 FROM

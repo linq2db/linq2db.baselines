@@ -13,6 +13,15 @@ WHERE
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[Value1] = 1
+			1 = [p].[Value1]
 	)
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

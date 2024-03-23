@@ -487,19 +487,19 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[Month_1],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DatePart(month, [selectParam].[TransactionDate]) as [Key_1]
+			DatePart(month, [x].[TransactionDate]) as [Month_1]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[Month_1]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[Month_1]
 
 BeforeExecute
 -- SqlServer.2022

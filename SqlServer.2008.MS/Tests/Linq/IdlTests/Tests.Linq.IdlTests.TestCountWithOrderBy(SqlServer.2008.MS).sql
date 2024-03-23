@@ -2,9 +2,9 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Max([x].[PersonID])
+	MAX([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

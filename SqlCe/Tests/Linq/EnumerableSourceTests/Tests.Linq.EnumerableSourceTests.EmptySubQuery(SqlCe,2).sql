@@ -19,7 +19,7 @@ BeforeExecute
 
 SELECT
 	[t].[Id],
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[TableToInsert] [t]
 WHERE

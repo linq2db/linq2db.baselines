@@ -2,29 +2,19 @@
 -- Access AccessOleDb
 
 SELECT
-	[t2].[ParentID],
-	Min([t2].[ChildID]),
-	Count([t1].[ParentID])
+	[g_2].[ParentID],
+	MIN([g_2].[ChildID]),
+	COUNT(IIF([g_2].[ChildID] > 25, 1, NULL))
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [ParentID],
-			[ch].[ChildID]
+			[g_1].[ParentID] + 1 as [ParentID],
+			[g_1].[ChildID]
 		FROM
-			[Child] [ch]
+			[Child] [g_1]
 		WHERE
-			[ch].[ParentID] > 0
-	) [t2]
-		LEFT JOIN (
-			SELECT
-				[ch_1].[ParentID]
-			FROM
-				[Child] [ch_1]
-			WHERE
-				[ch_1].[ChildID] > 25 AND [ch_1].[ParentID] > 0
-			GROUP BY
-				[ch_1].[ParentID]
-		) [t1] ON ([t2].[ParentID] = [t1].[ParentID] + 1)
+			[g_1].[ParentID] > 0
+	) [g_2]
 GROUP BY
-	[t2].[ParentID]
+	[g_2].[ParentID]
 

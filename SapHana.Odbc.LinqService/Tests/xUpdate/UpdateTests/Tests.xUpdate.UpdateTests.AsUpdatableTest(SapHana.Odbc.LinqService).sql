@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -42,7 +42,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = "Child"."ChildID" + 1
+	"ChildID" = "Child"."ChildID" + 1
 WHERE
 	EXISTS(
 		SELECT

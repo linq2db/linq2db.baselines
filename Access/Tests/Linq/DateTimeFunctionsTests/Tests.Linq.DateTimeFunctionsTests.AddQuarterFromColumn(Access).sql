@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	DateAdd('q', [t].[SmallIntValue], [t].[DateTimeValue])
+	DateValue(DateAdd('q', [t].[SmallIntValue], [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

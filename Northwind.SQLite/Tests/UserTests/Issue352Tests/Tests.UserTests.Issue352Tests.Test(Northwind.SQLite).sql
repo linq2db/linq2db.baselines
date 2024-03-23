@@ -1,29 +1,22 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[EmployeeID],
+	[g_1].[EmployeeID],
 	(
 		SELECT
 			[em].[FirstName]
 		FROM
 			[Employees] [em]
 		WHERE
-			[em].[EmployeeID] = [t1].[EmployeeID]
-		LIMIT @take
+			[em].[EmployeeID] = [g_1].[EmployeeID]
+		LIMIT 1
 	)
 FROM
-	(
-		SELECT
-			[e].[EmployeeID]
-		FROM
-			[Employees] [e],
-			[EmployeeTerritories] [et]
-		WHERE
-			[et].[EmployeeID] = [e].[EmployeeID]
-	) [t1]
+	[Employees] [g_1],
+	[EmployeeTerritories] [et]
+WHERE
+	[et].[EmployeeID] = [g_1].[EmployeeID]
 GROUP BY
-	[t1].[EmployeeID]
+	[g_1].[EmployeeID]
 

@@ -2,9 +2,9 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[c_1].[ParentID],
-	[c_1].[ChildID]
+	[a_Children].[ParentID],
+	[a_Children].[ChildID]
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [c_1] ON [cp].[ParentID] = [c_1].[ParentID]
+	[Parent] [_]
+		INNER JOIN [Child] [a_Children] ON [_].[ParentID] = [a_Children].[ParentID]
 

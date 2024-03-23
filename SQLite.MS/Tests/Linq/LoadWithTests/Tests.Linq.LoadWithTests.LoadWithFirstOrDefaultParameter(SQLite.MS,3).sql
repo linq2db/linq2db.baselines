@@ -4,22 +4,17 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 3
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent_1].[ParentID_1],
-	[lw_Parent_1].[ParentID_2],
-	[lw_Parent_1].[ChildID],
-	[detail_1].[ParentID],
-	[detail_1].[ChildID]
+	[m_1].[ParentID],
+	[m_1].[ParentID_1],
+	[d_1].[ParentID],
+	[d_1].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Parent].[ParentID],
-			[lw_Parent].[ParentID] as [ParentID_1],
-			[detail].[ParentID] as [ParentID_2],
-			[detail].[ChildID]
+			[t2].[ParentID] as [ParentID_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -32,51 +27,42 @@ FROM
 							[Parent] [p]
 						WHERE
 							[p].[ParentID] = @id
-						LIMIT @take
+						LIMIT 1
 					) [t1]
-			) [lw_Parent]
-				INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
-				LEFT JOIN [Parent] [a_Parent] ON [detail].[ParentID] = [a_Parent].[ParentID]
-	) [lw_Parent_1]
-		INNER JOIN [Child] [detail_1] ON [lw_Parent_1].[ParentID] = [detail_1].[ParentID]
+			) [t2]
+				INNER JOIN [Child] [d] ON [t2].[ParentID] = [d].[ParentID]
+				LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 3
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID],
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID],
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[p].[ParentID]
 		FROM
-			(
-				SELECT
-					[p].[ParentID]
-				FROM
-					[Parent] [p]
-				WHERE
-					[p].[ParentID] = @id
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
-		LEFT JOIN [Parent] [a_Parent] ON [detail].[ParentID] = [a_Parent].[ParentID]
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] = @id
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 3
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
@@ -85,7 +71,7 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

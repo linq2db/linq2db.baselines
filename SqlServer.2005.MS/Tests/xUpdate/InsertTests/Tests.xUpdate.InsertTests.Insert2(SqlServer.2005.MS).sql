@@ -1,14 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -19,7 +21,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1,
+	@ParentID,
 	@id
 )
 
@@ -38,9 +40,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

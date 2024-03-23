@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[_].[ParentID]
+	[_].[ParentID] + 1
 FROM
 	[Parent] [_]
 

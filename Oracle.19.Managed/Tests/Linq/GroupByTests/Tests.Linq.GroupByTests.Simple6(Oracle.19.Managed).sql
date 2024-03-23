@@ -1,4 +1,25 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	m_1."ParentID",
+	m_1."ChildID",
+	d."GrandChildID"
+FROM
+	(
+		SELECT DISTINCT
+			t1."ParentID",
+			t1."ChildID"
+		FROM
+			"GrandChild" t1
+	) m_1
+		INNER JOIN "GrandChild" d ON (m_1."ParentID" = d."ParentID" OR m_1."ParentID" IS NULL AND d."ParentID" IS NULL) AND (m_1."ChildID" = d."ChildID" OR m_1."ChildID" IS NULL AND d."ChildID" IS NULL)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -9,18 +30,4 @@ FROM
 GROUP BY
 	t1."ParentID",
 	t1."ChildID"
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @ParentID Int32
-SET     @ParentID = 2
-DECLARE @ChildID Int32
-SET     @ChildID = 22
-
-SELECT
-	ch."GrandChildID"
-FROM
-	"GrandChild" ch
-WHERE
-	ch."ParentID" = :ParentID AND ch."ChildID" = :ChildID
 

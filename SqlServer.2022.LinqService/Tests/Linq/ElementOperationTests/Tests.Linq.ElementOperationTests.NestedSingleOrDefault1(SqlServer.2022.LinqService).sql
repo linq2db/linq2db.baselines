@@ -2,15 +2,14 @@
 -- SqlServer.2022
 
 SELECT
-	[t1].[ParentID]
+	(
+		SELECT DISTINCT
+			[a_Children].[ParentID]
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT DISTINCT
-				[c_1].[ParentID]
-			FROM
-				[Child] [c_1]
-			WHERE
-				[p].[ParentID] = [c_1].[ParentID]
-		) [t1]
 

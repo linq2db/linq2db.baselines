@@ -17,26 +17,12 @@ CREATE TABLE IF NOT EXISTS [PR_1598_Insert_Table_Cache]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Name NVarChar(4) -- String
-SET     @Name = 'John'
-DECLARE @Id  -- Int32
-SET     @Id = 1
-
-UPDATE
-	[PR_1598_Insert_Table_Cache]
-SET
-	[Name] = @Name
-WHERE
-	[PR_1598_Insert_Table_Cache].[Id] = @Id
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [PR_1598_Insert_Table_Cache]
+INSERT INTO [PR_1598_Insert_Table_Cache] AS [t1]
 (
 	[Id],
 	[Name]
@@ -46,11 +32,11 @@ VALUES
 	@Id,
 	@Name
 )
+ON CONFLICT ([Id]) DO UPDATE SET
+	[Name] = @Name
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -60,26 +46,30 @@ FROM
 	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Name NVarChar(4) -- String
-SET     @Name = 'John'
 DECLARE @Id  -- Int32
 SET     @Id = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'John'
 
-UPDATE
-	[PR_1598_Insert_Table_Cache]
-SET
+INSERT INTO [PR_1598_Insert_Table_Cache] AS [t1]
+(
+	[Id],
+	[Name]
+)
+VALUES
+(
+	@Id,
+	@Name
+)
+ON CONFLICT ([Id]) DO UPDATE SET
 	[Name] = @Name
-WHERE
-	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[Id],
@@ -89,7 +79,7 @@ FROM
 	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -2,21 +2,19 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	gjd_c."ParentID",
-	gjd_c."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID",
-			p."Value1"
+			p."ParentID"
 		FROM
 			"Parent" p
 		WHERE
 			p."ParentID" = 1
-	) key_data_result
-		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" = key_data_result."ParentID"
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

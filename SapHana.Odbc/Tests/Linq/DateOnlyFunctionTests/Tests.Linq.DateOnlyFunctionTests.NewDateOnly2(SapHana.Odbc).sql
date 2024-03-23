@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."DateTimeValue"
+	Year("p"."DateTimeValue")
 FROM
 	"LinqDataTypes" "p"
 

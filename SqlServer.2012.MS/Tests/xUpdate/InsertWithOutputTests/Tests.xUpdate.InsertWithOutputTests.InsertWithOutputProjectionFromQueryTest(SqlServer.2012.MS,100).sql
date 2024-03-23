@@ -90,8 +90,8 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t].[Id],
-	[t].[ValueStr]
+	[t].[Id] + 1,
+	[t].[ValueStr] + Convert(VarChar(11), 1)
 FROM
 	[DestinationTable] [t]
 

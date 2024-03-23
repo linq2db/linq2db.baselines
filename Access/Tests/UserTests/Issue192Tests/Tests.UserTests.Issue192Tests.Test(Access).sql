@@ -120,6 +120,34 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'Y'
+
+SELECT TOP 1
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
+SET     @BoolValue = 'N'
+
+SELECT TOP 1
+	[_].[Name],
+	[_].[BoolValue],
+	[_].[GuidValue]
+FROM
+	[TypeConvertTable] [_]
+WHERE
+	[_].[BoolValue] <> @BoolValue
+
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
 
 SELECT TOP 1
@@ -176,20 +204,6 @@ WHERE
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-
-SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'
 
 SELECT TOP 1
@@ -199,7 +213,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[_].[BoolValue] <> @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb
@@ -213,21 +227,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [_]
 WHERE
-	[_].[BoolValue] = @BoolValue
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-
-SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
-FROM
-	[TypeConvertTable] [_]
-WHERE
-	[_].[BoolValue] = @BoolValue
+	[_].[BoolValue] <> @BoolValue
 
 BeforeExecute
 -- Access AccessOleDb

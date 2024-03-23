@@ -35,14 +35,12 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	GROUP_CONCAT(`t1`.`Value1` SEPARATOR ' -> ')
+	GROUP_CONCAT(`g_1`.`Value1` SEPARATOR ' -> ')
 FROM
-	`SampleClass` `t1`
+	`SampleClass` `g_1`
 GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value1`
-ORDER BY
-	`t1`.`Id`
+	`g_1`.`Id`,
+	`g_1`.`Value1`
 
 BeforeExecute
 -- MySql MySql.Official MySql

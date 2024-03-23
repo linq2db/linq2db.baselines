@@ -26,15 +26,13 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @name Text(8) -- String
-SET     @name = 'Update14'
 DECLARE @idx Integer -- Int32
-SET     @idx = 4
+SET     @idx = 12
 
 UPDATE
 	"Person"
 SET
-	"LastName" = Cast((Length(:name) + :idx) as text)
+	"LastName" = Cast(:idx as text)
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

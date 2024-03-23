@@ -114,18 +114,30 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t].[Id],
-	[t].[Value],
+	[q].[Id],
+	[q].[Value],
+	CASE
+		WHEN [s].[Id] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN 1
+		ELSE 0
+	END,
 	[s].[Id],
-	[s].[ParentId],
 	[s].[Value],
+	[s].[ParentId],
+	CASE
+		WHEN [s_1].[Id] IS NULL THEN 1
+		ELSE 0
+	END,
 	[s_1].[Id],
 	[s_1].[Value],
 	[s_1].[ParentId]
 FROM
-	[SuperClass] [t]
-		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [t].[Id]
-		LEFT JOIN [Subclass2] [s_1] ON [s_1].[ParentId] = [s].[Id]
+	[SuperClass] [q]
+		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [q].[Id]
+		LEFT JOIN [Subclass2] [s_1] ON ([s_1].[ParentId] = [s].[Id] OR [s_1].[ParentId] IS NULL AND [s].[Id] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic SQLite

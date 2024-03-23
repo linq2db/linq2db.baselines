@@ -8,18 +8,18 @@ FROM
 	"Parent" "m_1"
 		INNER JOIN (
 			SELECT
+				"id"."ParentID"
+			FROM
+				"Parent" "id"
+			WHERE
+				"id"."ParentID" = 1
+			UNION ALL
+			SELECT
 				"t"."ParentID"
 			FROM
 				"Parent" "t"
 			WHERE
-				"t"."ParentID" = 1
-			UNION ALL
-			SELECT
-				"t_1"."ParentID"
-			FROM
-				"Parent" "t_1"
-			WHERE
-				"t_1"."ParentID" = 2
+				"t"."ParentID" = 2
 		) "t1" ON "m_1"."ParentID" = "t1"."ParentID"
 
 BeforeExecute
@@ -32,19 +32,19 @@ FROM
 	"Parent" "m_1",
 	(
 		SELECT
+			"id"."ParentID"
+		FROM
+			"Parent" "id"
+		WHERE
+			"id"."ParentID" = 1
+		UNION ALL
+		SELECT
 			"t"."ParentID"
 		FROM
 			"Parent" "t"
 		WHERE
-			"t"."ParentID" = 1
-		UNION ALL
-		SELECT
-			"t_1"."ParentID"
-		FROM
-			"Parent" "t_1"
-		WHERE
-			"t_1"."ParentID" = 2
-	) "t1"
+			"t"."ParentID" = 2
+	) "id_1"
 WHERE
-	"t1"."ParentID" = "m_1"."ParentID"
+	"id_1"."ParentID" = "m_1"."ParentID"
 

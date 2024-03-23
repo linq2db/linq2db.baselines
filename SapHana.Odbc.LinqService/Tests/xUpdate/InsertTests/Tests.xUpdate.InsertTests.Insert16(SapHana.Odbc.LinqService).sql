@@ -20,7 +20,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast(? as NVarChar(11)),
+	Cast(? as NVarChar(255)),
 	'M'
 )
 

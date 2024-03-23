@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -96,14 +96,14 @@ SELECT
 	[c_1].[Country],
 	[c_1].[Phone],
 	[c_1].[Fax],
-	IIF(EXISTS(
+	IIF([c_1].[CustomerID] IN (
 		SELECT
-			*
+			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			[o].[OrderDate] > @OrderDate AND ([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+			[o].[OrderDate] > @OrderDate
 	), 1, 0)
 FROM
 	[Customers] [c_1]

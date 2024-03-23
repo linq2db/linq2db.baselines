@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t."ID",
@@ -16,5 +14,5 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."MoneyValue" * t."ID" = 1.11
-LIMIT :take
+LIMIT 2
 

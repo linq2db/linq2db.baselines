@@ -2,24 +2,19 @@
 -- SQLite.Classic SQLite
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
-DECLARE @p2  -- Int32
-SET     @p2 = 1
+DECLARE @Value  -- Int32
+SET     @Value = 1
 
 SELECT
-	[y].[FirstName]
+	[x].[FirstName]
 FROM
-	[Person] [y]
+	[Person] [x]
 UNION ALL
 SELECT
-	[t1].[Name]
+	[x_1].[FirstName]
 FROM
-	(
-		SELECT
-			[x].[FirstName] as [Name]
-		FROM
-			[Person] [x],
-			[Patient] [z]
-		WHERE
-			([x].[FirstName] = @p1 OR [z].[PersonID] = @p2)
-	) [t1]
+	[Person] [x_1],
+	[Patient] [z]
+WHERE
+	([x_1].[FirstName] = @p1 OR [z].[PersonID] = @Value)
 

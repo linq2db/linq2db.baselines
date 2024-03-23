@@ -66,7 +66,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = 'Y' AND
+	([r].[Bool3] = NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = 'Y' AND
 	[r].[Bool2] IS NULL
 
 BeforeExecute
@@ -171,7 +171,7 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = 'N' AND
+	([r].[Bool3] = NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = 'N' AND
 	[r].[Bool2] = 'Y'
 
 BeforeExecute

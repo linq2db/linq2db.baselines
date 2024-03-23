@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	(@param = `_`.`SmallIntValue` OR @param IS NULL AND `_`.`SmallIntValue` IS NULL)
+	(Cast(@param as SIGNED) = `_`.`SmallIntValue` OR Cast(@param as SIGNED) IS NULL AND `_`.`SmallIntValue` IS NULL)
 
 BeforeExecute
 -- MySql MySql.Official MySql

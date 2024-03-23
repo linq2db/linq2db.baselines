@@ -166,10 +166,10 @@ BeforeExecute
 SELECT
 	v
 FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+	"SampleClass" t1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 WHERE
-	v.* LIKE 'V%' ESCAPE '~'
+	v LIKE 'V%' ESCAPE '~'
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

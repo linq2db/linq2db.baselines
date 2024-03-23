@@ -523,41 +523,46 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
+-- Access.Odbc AccessODBC
+DECLARE @testedList NVarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+DECLARE @testedList NVarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Id],
+	[m_1].[Value1],
+	[m_1].[Value2],
+	[m_1].[Enum],
+	[m_1].[EnumNullable],
+	[m_1].[EnumWithNull],
+	[m_1].[EnumWithNullDeclarative],
+	[m_1].[BoolValue],
+	[m_1].[AnotherBoolValue],
+	[m_1].[DateTimeNullable]
+FROM
+	[ValueConversion] [m_1]
+WHERE
+	? = [m_1].[Value2] AND ? = [m_1].[Value2]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	[t].[Id]
+	[g_1].[Id]
 FROM
-	[ValueConversion] [t]
+	[ValueConversion] [g_1]
 WHERE
-	? = [t].[Value2]
+	? = [g_1].[Value2]
 GROUP BY
-	[t].[Id]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @Value2 NVarChar(20) -- String
-SET     @Value2 = '[{"Value":"Value1"}]'
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue],
-	[t].[AnotherBoolValue],
-	[t].[DateTimeNullable]
-FROM
-	[ValueConversion] [t]
-WHERE
-	? = [t].[Value2] AND [t].[Id] = ?
+	[g_1].[Id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

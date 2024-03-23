@@ -59,7 +59,6 @@ SELECT DISTINCT
 FROM
 	[OrderByDistinctData] [x]
 ORDER BY
-	[x].[OrderData1],
 	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 

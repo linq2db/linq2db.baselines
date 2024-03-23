@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t]

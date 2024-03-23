@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Date(printf('%04d', (2010 + [t].[ID])) || '-01-01')
+	2010 + [t].[ID]
 FROM
 	[LinqDataTypes] [t]
 

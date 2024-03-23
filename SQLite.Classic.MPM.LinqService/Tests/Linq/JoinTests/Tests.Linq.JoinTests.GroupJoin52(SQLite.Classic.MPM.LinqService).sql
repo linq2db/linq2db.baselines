@@ -1,20 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			[ch].[ParentID]
-		FROM
-			[Child] [ch]
-		WHERE
-			[ch].[ParentID] = [p].[ParentID]
-		LIMIT @take
-	)
+	[t1].[ParentID]
 FROM
-	[Parent] [p]
+	[Parent] [t2]
+		INNER JOIN (
+			SELECT
+				[ch].[ParentID],
+				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ParentID]) as [rn]
+			FROM
+				[Child] [ch]
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
-	[p].[ParentID] = 1
+	[t2].[ParentID] = 1
 

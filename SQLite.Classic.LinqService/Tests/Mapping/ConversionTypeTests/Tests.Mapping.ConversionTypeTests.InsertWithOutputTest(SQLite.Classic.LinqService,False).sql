@@ -34,6 +34,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Data NVarChar(9) -- String
+SET     @Data = '***HHH***'
 
 INSERT INTO [TrimTestTable]
 (
@@ -42,7 +44,7 @@ INSERT INTO [TrimTestTable]
 )
 SELECT
 	[t1].[ID] + 1,
-	'***HHH***'
+	@Data
 FROM
 	[TrimTestTable] [t1]
 RETURNING

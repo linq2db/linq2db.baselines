@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = 5
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p Day)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval @p Day) as Date)
 FROM
 	`LinqDataTypes` `t`
 

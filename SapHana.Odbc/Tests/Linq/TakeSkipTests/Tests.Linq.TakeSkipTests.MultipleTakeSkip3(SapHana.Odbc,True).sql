@@ -139,8 +139,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 1
+DECLARE @take  -- Int32
+SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 3
 

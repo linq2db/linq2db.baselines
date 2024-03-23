@@ -2,10 +2,10 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p1."ParentID",
-	p1."Value1"
+	p."ParentID",
+	p."Value1"
 FROM
-	"Parent" p1
+	"Parent" p
 UNION
 SELECT
 	p2."ParentID",

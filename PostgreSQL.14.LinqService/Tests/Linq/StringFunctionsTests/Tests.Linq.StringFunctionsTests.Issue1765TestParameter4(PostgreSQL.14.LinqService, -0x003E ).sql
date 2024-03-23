@@ -111,15 +111,22 @@ DECLARE @separator Text(4) -- String
 SET     @separator = ' -> '
 
 SELECT
-	Max(t1."Value4"),
-	STRING_AGG(t1."Value4", :separator)
+	(
+		SELECT
+			MAX(t."Value4")
+		FROM
+			"SampleClass" t
+		WHERE
+			g_1."Id" = t."Id" AND (g_1."Value4" = t."Value4" OR g_1."Value4" IS NULL AND t."Value4" IS NULL)
+	),
+	STRING_AGG(g_1."Value4", :separator)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value4"
+	g_1."Id",
+	g_1."Value4"
 ORDER BY
-	t1."Id"
+	g_1."Id"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

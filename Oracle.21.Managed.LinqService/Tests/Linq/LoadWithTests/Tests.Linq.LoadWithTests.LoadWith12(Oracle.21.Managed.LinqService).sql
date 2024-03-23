@@ -1,81 +1,60 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	lw_Parent."ParentID_1",
-	lw_Parent."Value1",
-	lw_Parent."ParentID_2",
-	lw_Parent."ChildID",
-	detail_1."ParentID",
-	detail_1."ChildID"
+	m_1."ParentID",
+	m_1."ParentID_1",
+	d_1."ParentID",
+	d_1."ChildID"
 FROM
 	(
 		SELECT DISTINCT
 			a_Parent."ParentID",
-			key_data_result."ParentID" as "ParentID_1",
-			key_data_result."Value1",
-			detail."ParentID" as "ParentID_2",
-			detail."ChildID"
+			t2."ParentID" as "ParentID_1"
 		FROM
 			(
 				SELECT DISTINCT
-					t1."ParentID",
-					t1."Value1"
+					t1."ParentID"
 				FROM
 					(
 						SELECT
-							p."ParentID",
-							p."Value1"
+							p."ParentID"
 						FROM
 							"Parent" p
 						WHERE
 							p."ParentID" < 2
-						FETCH NEXT :take ROWS ONLY
+						FETCH NEXT 1 ROWS ONLY
 					) t1
-			) key_data_result
-				INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
-				LEFT JOIN "Parent" a_Parent ON detail."ParentID" = a_Parent."ParentID"
-	) lw_Parent
-		INNER JOIN "Child" detail_1 ON lw_Parent."ParentID" = detail_1."ParentID"
+			) t2
+				INNER JOIN "Child" d ON t2."ParentID" = d."ParentID"
+				LEFT JOIN "Parent" a_Parent ON d."ParentID" = a_Parent."ParentID"
+	) m_1
+		INNER JOIN "Child" d_1 ON m_1."ParentID" = d_1."ParentID"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	detail."ParentID",
-	detail."ChildID",
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID",
 	a_Parent."ParentID",
 	a_Parent."Value1"
 FROM
 	(
-		SELECT DISTINCT
-			t1."ParentID",
-			t1."Value1"
+		SELECT
+			p."ParentID"
 		FROM
-			(
-				SELECT
-					p."ParentID",
-					p."Value1"
-				FROM
-					"Parent" p
-				WHERE
-					p."ParentID" < 2
-				FETCH NEXT :take ROWS ONLY
-			) t1
-	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
-		LEFT JOIN "Parent" a_Parent ON detail."ParentID" = a_Parent."ParentID"
+			"Parent" p
+		WHERE
+			p."ParentID" < 2
+		FETCH NEXT 1 ROWS ONLY
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
+		LEFT JOIN "Parent" a_Parent ON d."ParentID" = a_Parent."ParentID"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -84,5 +63,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" < 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

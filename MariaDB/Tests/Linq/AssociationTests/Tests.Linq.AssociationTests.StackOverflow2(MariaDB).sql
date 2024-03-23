@@ -7,12 +7,19 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	(
+	((
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			`Parent` `t1`
+			`Parent` `a_Children`
 		WHERE
-			`p`.`ParentID` = `t1`.`Value1`
-	) <> 0
+			`p`.`ParentID` = `a_Children`.`Value1`
+	) <> 0 OR (
+		SELECT
+			COUNT(*)
+		FROM
+			`Parent` `a_Children`
+		WHERE
+			`p`.`ParentID` = `a_Children`.`Value1`
+	) IS NULL)
 

@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = 5
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '1' DAY
+	Trunc(t."DateTimeValue" + :p * INTERVAL '1' DAY, 'DD')
 FROM
 	"LinqDataTypes" t
 

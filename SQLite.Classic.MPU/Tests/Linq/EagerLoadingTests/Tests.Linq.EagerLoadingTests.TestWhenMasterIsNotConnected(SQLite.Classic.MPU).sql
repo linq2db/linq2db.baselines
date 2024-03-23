@@ -151,17 +151,17 @@ DECLARE @take  -- Int32
 SET     @take = 11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			[t1].[Id1]
+			[g_1].[Id1]
 		FROM
-			[MasterManyId] [t1]
+			[MasterManyId] [g_1]
 		LIMIT @take
-	) [t2]
+	) [g_2]
 GROUP BY
-	[t2].[Id1]
+	[g_2].[Id1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

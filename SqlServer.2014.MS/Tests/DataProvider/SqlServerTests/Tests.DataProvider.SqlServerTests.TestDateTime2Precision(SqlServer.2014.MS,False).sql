@@ -44,12 +44,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -70,12 +68,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1000000, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -84,12 +80,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1200000, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -98,12 +92,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1230000, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -112,12 +104,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231000, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -126,12 +116,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231200, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -140,12 +128,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231230, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -154,12 +140,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1231234, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -168,12 +152,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -194,12 +176,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -208,12 +188,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -222,12 +200,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -236,12 +212,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1000, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -250,12 +224,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1200, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -264,12 +236,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1230, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]
@@ -278,12 +248,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 1234, 7)
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[Id]
 FROM
 	[DateTime2Table] [_]

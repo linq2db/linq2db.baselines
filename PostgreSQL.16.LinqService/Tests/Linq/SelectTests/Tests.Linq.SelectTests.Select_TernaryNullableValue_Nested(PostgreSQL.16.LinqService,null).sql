@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @value Integer -- Int32
+SET     @value = NULL
+DECLARE @p Integer -- Int32
+SET     @p = 0
 
 SELECT
-	Cast(NULL as Int)
+	:value,
+	CASE
+		WHEN 1 = 1 THEN :p
+		ELSE 2
+	END
 

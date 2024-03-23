@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + 2 * Interval '1 Month'
+	Cast((t."DateTimeValue" + 2 * Interval '1 Month') as Date)
 FROM
 	"LinqDataTypes" t
 

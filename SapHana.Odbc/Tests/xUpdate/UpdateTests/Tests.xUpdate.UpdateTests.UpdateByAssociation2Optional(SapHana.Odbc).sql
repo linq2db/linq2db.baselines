@@ -109,13 +109,15 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Field NVarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id  -- Int32
 SET     @id = 3
 
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = ?
 WHERE
 	EXISTS(
 		SELECT

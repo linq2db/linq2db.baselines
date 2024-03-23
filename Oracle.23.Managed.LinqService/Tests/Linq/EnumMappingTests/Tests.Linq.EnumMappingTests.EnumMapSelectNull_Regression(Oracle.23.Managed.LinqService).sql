@@ -24,16 +24,14 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	r."BigIntValue"
+	r."BigIntValue" as "TestField"
 FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID = 101
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

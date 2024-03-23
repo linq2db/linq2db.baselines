@@ -3,8 +3,8 @@
 
 WITH cte
 (
-	"ID",
 	"FirstName",
+	"ID",
 	"LastName",
 	"MiddleName",
 	"Gender"
@@ -12,13 +12,13 @@ WITH cte
 AS
 (
 	SELECT
-		person_1."PersonID",
-		person_1."FirstName",
-		person_1."LastName",
-		person_1."MiddleName",
-		person_1."Gender"
+		x."FirstName",
+		x."PersonID",
+		x."LastName",
+		x."MiddleName",
+		x."Gender"
 	FROM
-		"Person" person_1
+		"Person" x
 )
 SELECT
 	t1."FirstName",
@@ -33,11 +33,11 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	person_1."FirstName",
-	person_1."PersonID",
-	person_1."LastName",
-	person_1."MiddleName",
-	person_1."Gender"
+	x."FirstName",
+	x."PersonID",
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
-	"Person" person_1
+	"Person" x
 

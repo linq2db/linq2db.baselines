@@ -48,24 +48,22 @@ BeforeExecute
 -- SqlServer.2022
 
 UPDATE
-	[s]
+	[TableWithData_source]
 SET
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
+	[Value] = [TableWithData_source].[Value] + 1,
+	[ValueStr] = [TableWithData_source].[ValueStr] + N'Upd'
 OUTPUT
-	[INSERTED].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_destination]
 (
 	[Id],
 	[Value],
 	[ValueStr]
 )
-FROM
-	[TableWithData_source] [s]
 WHERE
-	[s].[Id] > 3
+	[TableWithData_source].[Id] > 3
 
 BeforeExecute
 -- SqlServer.2022

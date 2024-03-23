@@ -1,23 +1,30 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."ParentID"
-FROM
-	"Child" t1
-GROUP BY
-	t1."ParentID"
-
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
 
 SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = :ParentID
+	(
+		SELECT DISTINCT
+			g_1."ParentID"
+		FROM
+			"Child" g_1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	g_1."ParentID"
+FROM
+	"Child" g_1
+GROUP BY
+	g_1."ParentID"
 

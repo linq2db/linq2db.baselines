@@ -30,15 +30,17 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Value1  -- Int32
+SET     @Value1 = 2
 DECLARE @id  -- Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = 2
+	"Value1" = ?
 WHERE
-	"Parent"."ParentID" = ?
+	"p"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

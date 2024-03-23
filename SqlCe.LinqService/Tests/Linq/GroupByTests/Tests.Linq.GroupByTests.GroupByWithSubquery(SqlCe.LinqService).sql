@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[_1].[c1] as [Key_1],
+	COUNT(*) as [COUNT_1]
 FROM
 	(
 		SELECT
@@ -12,7 +12,7 @@ FROM
 			[Person] [_]
 		WHERE
 			1 = 0
-	) [t1]
+	) [_1]
 GROUP BY
-	[t1].[c1]
+	[_1].[c1]
 

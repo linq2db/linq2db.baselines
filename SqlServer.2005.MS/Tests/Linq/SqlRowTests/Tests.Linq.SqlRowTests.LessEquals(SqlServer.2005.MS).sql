@@ -80,7 +80,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two] OR 0 = [i].[One] AND [i].[Two] IS NULL AND 3 <= [i].[Three])
+	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two])
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

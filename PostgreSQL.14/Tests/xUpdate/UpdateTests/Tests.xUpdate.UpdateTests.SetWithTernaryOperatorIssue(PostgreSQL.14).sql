@@ -33,13 +33,13 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value Text(1) -- String
-SET     @Value = 'O'
+DECLARE @nullableGender Text(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
 	"Person"
 SET
-	"Gender" = :Value
+	"Gender" = :nullableGender
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
@@ -47,8 +47,6 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -60,5 +58,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-LIMIT :take
+LIMIT 1
 

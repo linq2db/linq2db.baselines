@@ -9,17 +9,12 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			"y"."ParentID"
 		FROM
-			(
-				SELECT
-					Max("t1"."ChildID") as "c1"
-				FROM
-					"Child" "t1"
-				GROUP BY
-					"t1"."ParentID"
-			) "y"
-		WHERE
-			"y"."c1" = "x"."ChildID"
+			"Child" "y"
+		GROUP BY
+			"y"."ParentID"
+		HAVING
+			MAX("y"."ChildID") = "x"."ChildID"
 	)
 

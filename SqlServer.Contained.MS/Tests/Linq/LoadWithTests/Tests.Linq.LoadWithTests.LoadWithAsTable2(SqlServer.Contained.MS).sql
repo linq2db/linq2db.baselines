@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[ChildID],
 	[t].[GrandChildID],
@@ -13,6 +11,6 @@ SELECT TOP (@take)
 	[a_Parent].[Value1]
 FROM
 	[GrandChild] [t]
-		LEFT JOIN [Child] [a_Child] ON [t].[ParentID] = [a_Child].[ParentID] AND [t].[ChildID] = [a_Child].[ChildID]
+		LEFT JOIN [Child] [a_Child] ON ([t].[ParentID] = [a_Child].[ParentID] OR [t].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([t].[ChildID] = [a_Child].[ChildID] OR [t].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 

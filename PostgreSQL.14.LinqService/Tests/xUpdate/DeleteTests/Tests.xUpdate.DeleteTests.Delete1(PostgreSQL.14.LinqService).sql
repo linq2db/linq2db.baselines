@@ -44,9 +44,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

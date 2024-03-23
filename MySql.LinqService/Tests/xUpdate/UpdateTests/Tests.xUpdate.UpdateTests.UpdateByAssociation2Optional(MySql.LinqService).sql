@@ -109,16 +109,18 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
+DECLARE @Field VarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id Int32
 SET     @id = 3
 
 UPDATE
-	`MainTable` `t1`
-		INNER JOIN `AssociatedTable` `a_MainOptional` ON `a_MainOptional`.`Id` = `t1`.`Id`
+	`MainTable` `a_MainOptional`,
+	`AssociatedTable` `pat`
 SET
-	`t1`.`Field` = 'test'
+	`a_MainOptional`.`Field` = @Field
 WHERE
-	`a_MainOptional`.`Id` = @id
+	`pat`.`Id` = @id AND `pat`.`Id` = `a_MainOptional`.`Id`
 
 BeforeExecute
 -- MySql MySql.Official MySql

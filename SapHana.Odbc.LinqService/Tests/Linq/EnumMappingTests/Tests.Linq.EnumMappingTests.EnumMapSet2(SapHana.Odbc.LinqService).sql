@@ -28,16 +28,14 @@ DECLARE @TestField  -- Int64
 SET     @TestField = 12
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "r"
 SET
-	"LinqDataTypes"."BigIntValue" = ?
+	"BigIntValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	"r"."ID" = 101 AND "r"."BigIntValue" = 11
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"r"."BigIntValue"
@@ -45,7 +43,7 @@ FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r"."ID" = 101 AND "r"."BigIntValue" = 12
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

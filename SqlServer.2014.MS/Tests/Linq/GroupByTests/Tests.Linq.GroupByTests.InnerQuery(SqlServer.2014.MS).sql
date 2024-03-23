@@ -1,19 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT TOP (@take)
-			[d].[Taxonomy]
-		FROM
-			[Doctor] [d]
-		WHERE
-			[t1].[PersonID] = [d].[PersonID]
-	)
+	[t1].[Taxonomy]
 FROM
-	[Doctor] [t1]
-GROUP BY
-	[t1].[PersonID]
+	(
+		SELECT
+			[s].[PersonID]
+		FROM
+			[Doctor] [s]
+		GROUP BY
+			[s].[PersonID]
+	) [s_2]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[s_1].[Taxonomy]
+			FROM
+				[Doctor] [s_1]
+			WHERE
+				[s_2].[PersonID] = [s_1].[PersonID]
+		) [t1]
 

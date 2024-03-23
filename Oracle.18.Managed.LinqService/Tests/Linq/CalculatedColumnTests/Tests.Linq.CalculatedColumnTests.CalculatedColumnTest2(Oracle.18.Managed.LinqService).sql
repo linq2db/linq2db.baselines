@@ -8,9 +8,10 @@ SELECT
 	t1."MiddleName",
 	t1."Gender",
 	t1."LastName" || ', ' || t1."FirstName",
+	t1."LastName" || ', ' || t1."FirstName",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Doctor" d
 		WHERE
@@ -29,9 +30,10 @@ SELECT
 	i."MiddleName",
 	i."Gender",
 	i."LastName" || ', ' || i."FirstName",
+	i."LastName" || ', ' || i."FirstName",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Doctor" d
 		WHERE

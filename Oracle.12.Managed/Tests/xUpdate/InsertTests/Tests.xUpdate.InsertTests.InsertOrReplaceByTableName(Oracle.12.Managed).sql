@@ -36,7 +36,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -64,7 +64,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -100,7 +100,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -128,7 +128,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(

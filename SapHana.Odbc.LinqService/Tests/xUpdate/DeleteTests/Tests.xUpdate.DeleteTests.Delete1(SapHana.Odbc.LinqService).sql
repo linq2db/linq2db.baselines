@@ -44,9 +44,9 @@ DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = ?
+	"p"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

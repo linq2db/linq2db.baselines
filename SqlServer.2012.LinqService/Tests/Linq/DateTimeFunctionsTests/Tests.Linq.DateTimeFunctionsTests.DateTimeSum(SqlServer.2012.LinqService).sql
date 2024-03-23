@@ -2,12 +2,12 @@
 -- SqlServer.2012
 
 SELECT
-	[t1].[ID],
-	Count(*),
-	Sum(DateDiff(millisecond, [t1].[DateTimeValue], DateAdd(day, 1, [t1].[DateTimeValue]))),
-	Max(DateDiff(millisecond, [t1].[DateTimeValue], DateAdd(day, 1, [t1].[DateTimeValue])))
+	[g_1].[ID],
+	COUNT(*),
+	SUM(DateDiff(millisecond, [g_1].[DateTimeValue], DateAdd(day, 1, [g_1].[DateTimeValue]))),
+	MAX(DateDiff(millisecond, [g_1].[DateTimeValue], DateAdd(day, 1, [g_1].[DateTimeValue])))
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [g_1]
 GROUP BY
-	[t1].[ID]
+	[g_1].[ID]
 

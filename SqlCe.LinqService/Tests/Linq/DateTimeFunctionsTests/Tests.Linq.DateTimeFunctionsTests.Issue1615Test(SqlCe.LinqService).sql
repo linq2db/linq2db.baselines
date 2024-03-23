@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	DateAdd(day, 5, [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(day, 5, [t].[DateTimeValue]) as Float)) as DateTime) as [Date_1]
 FROM
 	[LinqDataTypes] [t]
 

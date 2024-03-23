@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Quarter)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Quarter) as Date)
 FROM
 	`LinqDataTypes` `t`
 

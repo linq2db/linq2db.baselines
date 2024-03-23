@@ -12,14 +12,7 @@ CREATE TABLE IF NOT EXISTS test_temp
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-INSERT INTO test_temp
-(
-	"Field1"
-)
-VALUES
-(
-	1
-)
+TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -35,8 +28,18 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
+
+INSERT INTO test_temp
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -47,7 +50,7 @@ FROM
 	test_temp t1
 ORDER BY
 	t1."ID"
-LIMIT :take OFFSET :skip 
+LIMIT 2 OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -80,8 +83,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -92,7 +93,7 @@ FROM
 	test_temp t1
 ORDER BY
 	t1."ID"
-LIMIT :take OFFSET :skip 
+LIMIT 2 OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

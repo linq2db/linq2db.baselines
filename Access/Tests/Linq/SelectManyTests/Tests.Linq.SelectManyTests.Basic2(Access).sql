@@ -2,8 +2,8 @@
 -- Access AccessOleDb
 
 SELECT
-	[c_1].[ParentID]
+	[_].[ParentID] + 1
 FROM
-	[Parent] [cp],
-	[Child] [c_1]
+	[Parent] [p],
+	[Child] [_]
 

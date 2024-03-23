@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Limonadovy'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -9,9 +15,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'John',
-	N'Limonadovy',
-	N'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
@@ -26,15 +32,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Johnny'
 
 UPDATE
-	[c_1]
+	[Person]
 SET
-	[c_1].[FirstName] = N'Johnny'
-FROM
-	[Person] [c_1]
+	[FirstName] = @FirstName
 WHERE
-	[c_1].[LastName] = N'Limonadovy'
+	[Person].[LastName] = N'Limonadovy'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

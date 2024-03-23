@@ -60,8 +60,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -72,7 +70,7 @@ FROM
 	"PR_1598_Insert_Enum_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -98,8 +96,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -110,7 +106,7 @@ FROM
 	"PR_1598_Insert_Enum_Table" t
 WHERE
 	t."Id" = 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

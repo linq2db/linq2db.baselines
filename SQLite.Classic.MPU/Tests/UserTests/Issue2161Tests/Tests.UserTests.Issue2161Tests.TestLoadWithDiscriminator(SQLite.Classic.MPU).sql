@@ -60,45 +60,36 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Order].[OrderId],
-	[detail].[OrderDetailId],
-	[detail].[Title],
-	[detail].[OrderId]
+	[m_1].[OrderId],
+	[d].[OrderDetailId],
+	[d].[Title],
+	[d].[OrderId]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[OrderId]
+		SELECT
+			[o].[OrderId]
 		FROM
-			(
-				SELECT
-					[o].[OrderId]
-				FROM
-					[Order] [o]
-				WHERE
-					[o].[OrderId] = 1
-				LIMIT @take
-			) [t1]
-	) [lw_Order]
-		INNER JOIN [OrderDetail] [detail] ON [lw_Order].[OrderId] = [detail].[OrderId]
+			[Order] [o]
+		WHERE
+			[o].[OrderId] = 1
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [OrderDetail] [d] ON [m_1].[OrderId] = [d].[OrderId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[o].[OrderId],
 	[o].[OrderType],
+	[o].[OrderId],
 	[o].[OrderName]
 FROM
 	[Order] [o]
 WHERE
 	[o].[OrderId] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

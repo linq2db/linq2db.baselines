@@ -32,18 +32,18 @@ BeforeExecute
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[p].[PersonID] as [ID],
-		[a_Patient].[Diagnosis]
+		[p].[PersonID] as [source_ID],
+		[a_Patient].[Diagnosis] as [source_Diagnosis]
 	FROM
 		[Person] [p]
 			INNER JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID],
-	[Diagnosis]
+	[source_ID],
+	[source_Diagnosis]
 )
-ON ([Target].[PersonID] = [Source].[ID])
-WHEN MATCHED AND ([Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NULL) THEN DELETE
+ON ([Target].[PersonID] = [Source].[source_ID])
+WHEN MATCHED AND ([Source].[source_Diagnosis] <> N'sick' OR [Source].[source_Diagnosis] IS NULL) THEN DELETE
 ;
 
 BeforeExecute

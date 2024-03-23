@@ -34,7 +34,7 @@ SET     @Value1 = 5
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = ?
+	"Value1" = ?
 WHERE
 	EXISTS(
 		SELECT

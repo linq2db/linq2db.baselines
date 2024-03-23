@@ -139,22 +139,20 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[q].[Value2]
+	[t1].[Value2]
 FROM
 	(
 		SELECT
-			[t].[Id],
-			[t].[Value2]
+			[q].[Id],
+			[q].[Value2]
 		FROM
-			[ValueConversion] [t]
-	) [q]
+			[ValueConversion] [q]
+	) [t1]
 ORDER BY
-	[q].[Id]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	[t1].[Id]
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

@@ -66,7 +66,7 @@ BeforeExecute
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -74,12 +74,12 @@ FROM
 	[Person] [p]
 		LEFT JOIN (
 			SELECT
-				Count(*) as [cnt]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[UserIssue3128] [t1]
 		) [t2] ON 1=1
 WHERE
-	[t2].[cnt] > 0
+	[t2].[COUNT_1] > 0
 
 BeforeExecute
 -- SqlCe

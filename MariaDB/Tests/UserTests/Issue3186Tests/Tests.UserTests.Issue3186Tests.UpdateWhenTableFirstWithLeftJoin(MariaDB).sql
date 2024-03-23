@@ -100,13 +100,13 @@ DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 1
 
 UPDATE
-	`component_categories` `ctg`
-		INNER JOIN `element_services` `ie` ON `ie`.`id` = `ctg`.`service_id`
-		LEFT JOIN `Components` `cm` ON `ctg`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
+	`component_categories` `ct`
+		INNER JOIN `element_services` `sr` ON `sr`.`id` = `ct`.`service_id`
+		LEFT JOIN `Components` `cm` ON `ct`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
 SET
-	`ctg`.`is_deleted` = @is_deleted
+	`ct`.`is_deleted` = @is_deleted
 WHERE
-	`ie`.`id` = 'TestProcessService'
+	`sr`.`id` = 'TestProcessService'
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

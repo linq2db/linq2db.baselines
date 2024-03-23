@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval 3 Day)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval 3 Day) as Date)
 FROM
 	`LinqDataTypes` `t`
 

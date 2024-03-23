@@ -1,20 +1,24 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
+	t1."Taxonomy"
+FROM
 	(
 		SELECT
-			d."Taxonomy"
+			s."PersonID"
 		FROM
-			"Doctor" d
-		WHERE
-			t1."PersonID" = d."PersonID"
-		LIMIT :take
-	)
-FROM
-	"Doctor" t1
-GROUP BY
-	t1."PersonID"
+			"Doctor" s
+		GROUP BY
+			s."PersonID"
+	) s_2
+		INNER JOIN LATERAL (
+			SELECT
+				s_1."Taxonomy"
+			FROM
+				"Doctor" s_1
+			WHERE
+				s_2."PersonID" = s_1."PersonID"
+			LIMIT 1
+		) t1 ON 1=1
 

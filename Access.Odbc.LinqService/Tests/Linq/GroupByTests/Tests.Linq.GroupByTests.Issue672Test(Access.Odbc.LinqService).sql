@@ -86,50 +86,38 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[s].[Name]
+	[m_1].[Name],
+	[d].[Id],
+	[d].[Name],
+	[d].[Enabled],
+	[d].[ImageFullUrl]
 FROM
-	[Stone] [s]
+	(
+		SELECT DISTINCT
+			[s].[Name]
+		FROM
+			[Stone] [s]
+		WHERE
+			[s].[Enabled] = True AND [s].[Name] NOT LIKE 'level [-] %' AND
+			Len([s].[ImageFullUrl]) > 0
+	) [m_1]
+		INNER JOIN [Stone] [d] ON ([m_1].[Name] = [d].[Name])
 WHERE
-	[s].[Enabled] = True AND [s].[Name] NOT LIKE 'level [-] %' AND
-	Len([s].[ImageFullUrl]) > 0
+	[d].[Enabled] = True AND [d].[Name] NOT LIKE 'level [-] %' AND
+	Len([d].[ImageFullUrl]) > 0
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[sG].[Name]
+FROM
+	[Stone] [sG]
+WHERE
+	[sG].[Enabled] = True AND [sG].[Name] NOT LIKE 'level [-] %' AND
+	Len([sG].[ImageFullUrl]) > 0
 GROUP BY
-	[s].[Name]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @Name NVarChar(6) -- String
-SET     @Name = 'group1'
-
-SELECT
-	[s].[Id],
-	[s].[Name],
-	[s].[Enabled],
-	[s].[ImageFullUrl]
-FROM
-	[Stone] [s]
-WHERE
-	[s].[Enabled] = True AND
-	[s].[Name] NOT LIKE 'level [-] %' AND
-	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = ?
-
-BeforeExecute
--- Access.Odbc AccessODBC
-DECLARE @Name NVarChar(6) -- String
-SET     @Name = 'group2'
-
-SELECT
-	[s].[Id],
-	[s].[Name],
-	[s].[Enabled],
-	[s].[ImageFullUrl]
-FROM
-	[Stone] [s]
-WHERE
-	[s].[Enabled] = True AND
-	[s].[Name] NOT LIKE 'level [-] %' AND
-	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = ?
+	[sG].[Name]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

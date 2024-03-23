@@ -43,21 +43,19 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @SomeValue1 Int -- Int32
 SET     @SomeValue1 = 8
+DECLARE @SomeValue2 Int -- Int32
+SET     @SomeValue2 = 4
 
 UPDATE
-	[t1]
+	[ValuesTable]
 SET
-	[t1].[SomeValue1] = @SomeValue1,
-	[t1].[SomeValue2] = 4
-FROM
-	[ValuesTable] [t1]
+	[SomeValue1] = @SomeValue1,
+	[SomeValue2] = @SomeValue2
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
 	[t1].[SomeValue2]
@@ -70,18 +68,14 @@ DECLARE @param Int -- Int32
 SET     @param = 8
 
 UPDATE
-	[t1]
+	[ValuesTable]
 SET
-	[t1].[SomeValue2] = @param
-FROM
-	[ValuesTable] [t1]
+	[SomeValue2] = @param
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
 	[t1].[SomeValue2]

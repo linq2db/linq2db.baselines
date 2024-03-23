@@ -4,9 +4,9 @@ DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT
-	key_data_result."ParentID",
-	gjd_c."ParentID",
-	gjd_c."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT DISTINCT
@@ -15,8 +15,8 @@ FROM
 			"Parent" p
 		WHERE
 			p."ParentID" = 1
-	) key_data_result
-		INNER JOIN "Child" gjd_c ON gjd_c."ParentID" = key_data_result."ParentID" + :n
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

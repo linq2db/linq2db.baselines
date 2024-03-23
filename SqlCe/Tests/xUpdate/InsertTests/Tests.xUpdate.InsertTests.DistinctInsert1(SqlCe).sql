@@ -18,9 +18,9 @@ INSERT INTO [LinqDataTypes]
 	[BoolValue]
 )
 SELECT
-	Convert(Int, [t1].[c1] + 1001),
-	NewID(),
-	1
+	Convert(Int, [t1].[c1] + 1001) as [c1],
+	NewID() as [c2],
+	1 as [c3]
 FROM
 	(
 		SELECT DISTINCT

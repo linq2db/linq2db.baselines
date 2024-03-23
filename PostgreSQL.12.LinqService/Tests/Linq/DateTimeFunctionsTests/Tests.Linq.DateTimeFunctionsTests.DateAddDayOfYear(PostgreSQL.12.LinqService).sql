@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + 3 * Interval '1 Day'
+	Cast((t."DateTimeValue" + 3 * Interval '1 Day') as Date)
 FROM
 	"LinqDataTypes" t
 

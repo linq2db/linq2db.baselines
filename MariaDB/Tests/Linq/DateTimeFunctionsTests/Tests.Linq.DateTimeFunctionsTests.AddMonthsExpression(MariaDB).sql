@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = -2
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval @p Month)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval @p Month) as Date)
 FROM
 	`LinqDataTypes` `t`
 

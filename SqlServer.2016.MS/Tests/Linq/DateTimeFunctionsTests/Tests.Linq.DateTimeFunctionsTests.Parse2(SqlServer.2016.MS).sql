@@ -2,14 +2,9 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[d].[c1]
+	Convert(DateTime2, Convert(VarChar(11), DatePart(year, [d].[DateTimeValue])) + N'-02-24 00:00:00')
 FROM
-	(
-		SELECT
-			Convert(DateTime2, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + N'-02-24 00:00:00') as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, Convert(DateTime2, Convert(VarChar(11), DatePart(year, [d].[DateTimeValue])) + N'-02-24 00:00:00')) > 0
 

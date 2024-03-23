@@ -2,20 +2,16 @@
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Max([t1].[cnt])
+	MAX([t1].[COUNT_1])
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Child] [c_1]
-						LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-				WHERE
-					[a_Parent].[ParentID] = [p].[ParentID]
-			) as [cnt]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [t2]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [COUNT_1]
+			FROM
+				[Child] [c_1]
+					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
+			WHERE
+				[a_Parent].[ParentID] = [t2].[ParentID]
+		) [t1]
 

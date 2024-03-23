@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -11,7 +9,7 @@ SELECT
 			[Child] [ch]
 		WHERE
 			[ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	[Parent] [p]

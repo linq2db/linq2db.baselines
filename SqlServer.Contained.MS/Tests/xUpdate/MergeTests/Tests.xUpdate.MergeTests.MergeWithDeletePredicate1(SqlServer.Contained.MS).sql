@@ -6,47 +6,47 @@ BeforeExecute
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT
-		[t].[ID],
-		[t].[MoneyValue],
-		[t].[DateTimeValue],
-		[t].[DateTimeValue2],
-		[t].[BoolValue],
-		[t].[GuidValue],
-		[t].[SmallIntValue],
-		[t].[IntValue],
-		[t].[BigIntValue],
-		[t].[StringValue]
+		[t].[ID] as [source_ID],
+		[t].[MoneyValue] as [source_MoneyValue],
+		[t].[DateTimeValue] as [source_DateTimeValue],
+		[t].[DateTimeValue2] as [source_DateTimeValue2],
+		[t].[BoolValue] as [source_BoolValue],
+		[t].[GuidValue] as [source_GuidValue],
+		[t].[SmallIntValue] as [source_SmallIntValue],
+		[t].[IntValue] as [source_IntValue],
+		[t].[BigIntValue] as [source_BigIntValue],
+		[t].[StringValue] as [source_StringValue]
 	FROM
 		[LinqDataTypes] [t]
 	WHERE
 		[t].[ID] > 5
 ) [Source]
 (
-	[ID],
-	[MoneyValue],
-	[DateTimeValue],
-	[DateTimeValue2],
-	[BoolValue],
-	[GuidValue],
-	[SmallIntValue],
-	[IntValue],
-	[BigIntValue],
-	[StringValue]
+	[source_ID],
+	[source_MoneyValue],
+	[source_DateTimeValue],
+	[source_DateTimeValue2],
+	[source_BoolValue],
+	[source_GuidValue],
+	[source_SmallIntValue],
+	[source_IntValue],
+	[source_BigIntValue],
+	[source_StringValue]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[MoneyValue] = [Source].[MoneyValue],
-	[Target].[DateTimeValue] = [Source].[DateTimeValue],
-	[Target].[DateTimeValue2] = [Source].[DateTimeValue2],
-	[Target].[BoolValue] = [Source].[BoolValue],
-	[Target].[GuidValue] = [Source].[GuidValue],
-	[Target].[SmallIntValue] = [Source].[SmallIntValue],
-	[Target].[IntValue] = [Source].[IntValue],
-	[Target].[BigIntValue] = [Source].[BigIntValue],
-	[Target].[StringValue] = [Source].[StringValue]
+	[MoneyValue] = [Source].[source_MoneyValue],
+	[DateTimeValue] = [Source].[source_DateTimeValue],
+	[DateTimeValue2] = [Source].[source_DateTimeValue2],
+	[BoolValue] = [Source].[source_BoolValue],
+	[GuidValue] = [Source].[source_GuidValue],
+	[SmallIntValue] = [Source].[source_SmallIntValue],
+	[IntValue] = [Source].[source_IntValue],
+	[BigIntValue] = [Source].[source_BigIntValue],
+	[StringValue] = [Source].[source_StringValue]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -64,16 +64,16 @@ INSERT
 )
 VALUES
 (
-	[Source].[ID],
-	[Source].[MoneyValue],
-	[Source].[DateTimeValue],
-	[Source].[DateTimeValue2],
-	[Source].[BoolValue],
-	[Source].[GuidValue],
-	[Source].[SmallIntValue],
-	[Source].[IntValue],
-	[Source].[BigIntValue],
-	[Source].[StringValue]
+	[Source].[source_ID],
+	[Source].[source_MoneyValue],
+	[Source].[source_DateTimeValue],
+	[Source].[source_DateTimeValue2],
+	[Source].[source_BoolValue],
+	[Source].[source_GuidValue],
+	[Source].[source_SmallIntValue],
+	[Source].[source_IntValue],
+	[Source].[source_BigIntValue],
+	[Source].[source_StringValue]
 )
 WHEN NOT MATCHED BY SOURCE AND [Target].[ID] > 5 THEN DELETE
 ;

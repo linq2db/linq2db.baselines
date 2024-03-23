@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[_].[ParentID]
+	[_].[ParentID] + 1
 FROM
 	[Parent] [_]
 

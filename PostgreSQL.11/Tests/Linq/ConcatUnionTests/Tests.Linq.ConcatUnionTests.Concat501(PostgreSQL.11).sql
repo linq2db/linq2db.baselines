@@ -3,12 +3,12 @@
 
 SELECT
 	c_3."ParentID",
-	c_3."ChildID"
+	c_3.c1
 FROM
 	(
 		SELECT
 			c_1."ParentID",
-			Cast(NULL as Int) as "ChildID"
+			Cast(NULL as Int) as c1
 		FROM
 			"Child" c_1
 		WHERE
@@ -16,7 +16,7 @@ FROM
 		UNION ALL
 		SELECT
 			Cast(NULL as Int) as "ParentID",
-			c_2."ChildID" + 1000 as "ChildID"
+			c_2."ChildID" + 1000 as c1
 		FROM
 			"Child" c_2
 		WHERE

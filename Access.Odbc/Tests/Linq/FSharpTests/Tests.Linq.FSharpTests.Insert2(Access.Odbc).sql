@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([p].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [p]
+	[Person] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -37,10 +37,10 @@ BeforeExecute
 
 SELECT TOP 2
 	[p].[PersonID],
-	[p].[Gender],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName]
+	[p].[LastName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
@@ -50,7 +50,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [t]
 WHERE
-	[t1].[PersonID] > 4
+	[t].[PersonID] > 4
 

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @id Integer -- Int32
+SET     @id = 0
 
 SELECT
 	p."FirstName",
@@ -10,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" IS NULL
+	p."PersonID" = :id
 

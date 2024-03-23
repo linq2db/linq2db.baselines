@@ -3,20 +3,14 @@
 
 SELECT
 	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	(
-		SELECT
-			[p].[PersonID],
-			[pt].[PersonID] as [PersonID_1]
-		FROM
-			[Person] [p],
-			[Patient] [pt]
-	) [t1],
+	[Person] [t1],
+	[Patient] [pt],
 	[Doctor] [d]
 ORDER BY
 	[t1].[PersonID],
-	[t1].[PersonID_1],
+	[pt].[PersonID],
 	[d].[Taxonomy]
 

@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -25,20 +23,16 @@ DECLARE @dt DateTime
 SET     @dt = CAST('2010-12-14T05:00:07.4250141' AS DATETIME2)
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue] = @dt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue] = @dt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -60,11 +54,9 @@ DECLARE @pdt DateTime
 SET     @pdt = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue] = @pdt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue] = @pdt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 

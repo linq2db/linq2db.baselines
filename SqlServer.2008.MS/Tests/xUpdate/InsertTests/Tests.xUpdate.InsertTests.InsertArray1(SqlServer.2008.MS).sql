@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -25,10 +25,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -44,9 +42,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 

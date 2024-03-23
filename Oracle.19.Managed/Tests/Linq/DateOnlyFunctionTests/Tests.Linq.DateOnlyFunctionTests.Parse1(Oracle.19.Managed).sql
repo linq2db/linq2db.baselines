@@ -54,11 +54,20 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	TO_DATE('2010-01-' || Lpad(t."TransactionId",2,'0'), 'YYYY-MM-DD')
+	'2010-01-' || Lpad(t."TransactionId",2,'0')
 FROM
 	"Transactions" t
 WHERE
 	To_Number(To_Char(TO_DATE('2010-01-' || Lpad(t."TransactionId",2,'0'), 'YYYY-MM-DD'), 'DD')) > 0
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."TransactionId",
+	t1."TransactionDate"
+FROM
+	"Transactions" t1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

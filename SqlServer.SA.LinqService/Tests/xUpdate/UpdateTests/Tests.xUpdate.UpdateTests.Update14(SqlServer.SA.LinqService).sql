@@ -32,13 +32,11 @@ DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
-	[_]
+	[Person]
 SET
-	[_].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
-FROM
-	[Person] [_]
+	[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
 WHERE
-	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
+	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

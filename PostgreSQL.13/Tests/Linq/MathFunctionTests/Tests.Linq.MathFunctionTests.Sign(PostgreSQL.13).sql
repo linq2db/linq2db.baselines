@@ -2,9 +2,14 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Sign(p."MoneyValue")
+	t_1.c1
 FROM
-	"LinqDataTypes" p
+	(
+		SELECT
+			Sign(t."MoneyValue") as c1
+		FROM
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	Sign(p."MoneyValue") <> 0
+	t_1.c1 <> 0
 

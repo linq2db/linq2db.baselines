@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	DateAdd(day, 5, [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(day, 5, [t].[DateTimeValue]) as Float)) as DateTime)
 FROM
 	[LinqDataTypes] [t]
 

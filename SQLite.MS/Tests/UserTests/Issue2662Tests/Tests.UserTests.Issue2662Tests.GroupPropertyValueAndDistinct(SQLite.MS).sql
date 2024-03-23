@@ -132,11 +132,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t2].[GroupCol],
-	Count(*),
+	[grp].[GroupCol],
+	COUNT(*),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			(
 				SELECT DISTINCT
@@ -144,13 +144,13 @@ SELECT
 				FROM
 					[CountDistinctTest] [row_1]
 				WHERE
-					[t2].[GroupCol] = [row_1].[GroupCol]
+					[grp].[GroupCol] = [row_1].[GroupCol]
 			) [t1]
 	)
 FROM
-	[CountDistinctTest] [t2]
+	[CountDistinctTest] [grp]
 GROUP BY
-	[t2].[GroupCol]
+	[grp].[GroupCol]
 
 BeforeExecute
 -- SQLite.MS SQLite

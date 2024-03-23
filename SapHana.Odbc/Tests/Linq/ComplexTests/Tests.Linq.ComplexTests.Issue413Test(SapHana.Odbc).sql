@@ -205,8 +205,8 @@ FROM
 				INNER JOIN "T3" "w" ON "idx"."IndexId" = "w"."IndexId"
 				INNER JOIN "T1" "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 		WHERE
-			"ins"."SourceInstrumentCode" IS NOT NULL AND "_"."InstrumentCode" LIKE ? ESCAPE '~' AND
-			"_"."CreateDate" <= ?
+			"_"."InstrumentCode" LIKE ? ESCAPE '~' AND "_"."CreateDate" <= ? AND
+			"ins"."SourceInstrumentCode" IS NOT NULL
 	) "t4"
 ORDER BY
 	"t4"."SourceInstrumentCode"

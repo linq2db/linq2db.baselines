@@ -2,7 +2,20 @@
 -- SqlCe
 
 SELECT
-	[t1].[PersonID]
+	[m_1].[PersonID] as [ID],
+	[m_1].[FirstName],
+	[m_1].[PersonID] as [ID_1],
+	[m_1].[LastName],
+	[m_1].[MiddleName],
+	[m_1].[Gender]
+FROM
+	[Person] [m_1]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[PersonID] as [ID]
 FROM
 	[Person] [t1]
 GROUP BY
@@ -10,139 +23,24 @@ GROUP BY
 
 BeforeExecute
 -- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 1
 
 SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[m_1].[PersonID] as [ID],
+	[m_1].[FirstName],
+	[m_1].[PersonID] as [ID_1],
+	[m_1].[LastName],
+	[m_1].[MiddleName],
+	[m_1].[Gender]
 FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 2
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 3
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 4
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
+	[Person] [m_1]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[PersonID]
+	[t1].[PersonID] as [ID]
 FROM
 	[Person] [t1]
 GROUP BY
 	[t1].[PersonID]
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 1
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 2
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 3
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlCe
-DECLARE @ID Int -- Int32
-SET     @ID = 4
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
 

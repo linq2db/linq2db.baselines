@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
 FROM
 	(
 		SELECT DISTINCT
@@ -13,17 +13,17 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" < 2
-	) "lw_Parent"
-		INNER JOIN "Child" "detail" ON "lw_Parent"."ParentID" = "detail"."ParentID"
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"lw_Parent"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID",
-	"detail"."GrandChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID",
+	"d"."GrandChildID"
 FROM
 	(
 		SELECT DISTINCT
@@ -32,8 +32,8 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" < 2
-	) "lw_Parent"
-		INNER JOIN "GrandChild" "detail" ON "lw_Parent"."ParentID" = "detail"."ParentID"
+	) "m_1"
+		INNER JOIN "GrandChild" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

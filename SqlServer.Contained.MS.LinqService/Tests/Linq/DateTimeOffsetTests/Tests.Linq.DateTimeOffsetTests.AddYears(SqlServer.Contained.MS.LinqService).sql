@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	DateAdd(year, 1, [t].[TransactionDate])
+	Convert(Date, DateAdd(year, 1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Max([_].[ID])
+	MAX([_].[ID])
 FROM
 	[AllTypes] [_]
 

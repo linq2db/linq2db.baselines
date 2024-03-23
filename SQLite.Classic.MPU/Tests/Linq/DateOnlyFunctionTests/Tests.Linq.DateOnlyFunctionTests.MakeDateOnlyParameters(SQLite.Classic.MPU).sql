@@ -4,14 +4,9 @@ DECLARE @p NVarChar(5) -- String
 SET     @p = '2010-'
 
 SELECT
-	[t].[c1]
+	[t].[ID]
 FROM
-	(
-		SELECT
-			Date(@p || printf('%02d', [p].[ID]) || '-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	Cast(StrFTime('%Y', [t].[c1]) as int) = 2010
+	Cast(StrFTime('%Y', Date(@p || printf('%02d', [t].[ID]) || '-01')) as int) = 2010
 

@@ -3,11 +3,11 @@
 DECLARE @ID Int -- Int32
 SET     @ID = 700
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[AllTypes] [t1]
+	[AllTypes] [p]
 WHERE
-	[t1].[ID] >= @ID
+	[p].[ID] >= @ID
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -127,9 +127,9 @@ BeforeExecute
 DECLARE @ID Int -- Int32
 SET     @ID = 700
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[AllTypes] [t1]
+	[AllTypes] [p]
 WHERE
-	[t1].[ID] >= @ID
+	[p].[ID] >= @ID
 

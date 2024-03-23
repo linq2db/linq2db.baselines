@@ -27,67 +27,61 @@ TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	TEST_FUNCTION(1)
+	TEST_FUNCTION(1) as "c1"
 FROM
 	"Person" p
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	TEST_PACKAGE1.TEST_FUNCTION(1)
+	TEST_PACKAGE1.TEST_FUNCTION(1) as "c1"
 FROM
 	"Person" p
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	TEST_PACKAGE2.TEST_FUNCTION(1)
+	TEST_PACKAGE2.TEST_FUNCTION(1) as "c1"
 FROM
 	"Person" p
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	r.O
 FROM
-	TEST_TABLE_FUNCTION(1) r
-FETCH NEXT :take ROWS ONLY
+	TEST_TABLE_FUNCTION(:p) r
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	r.O
 FROM
-	TEST_PACKAGE1.TEST_TABLE_FUNCTION(1) r
-FETCH NEXT :take ROWS ONLY
+	TEST_PACKAGE1.TEST_TABLE_FUNCTION(:p) r
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	r.O
 FROM
-	TEST_PACKAGE2.TEST_TABLE_FUNCTION(1) r
-FETCH NEXT :take ROWS ONLY
+	TEST_PACKAGE2.TEST_TABLE_FUNCTION(:p) r
+FETCH NEXT 1 ROWS ONLY
 

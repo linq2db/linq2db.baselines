@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Avg([_].[ParentID])
+	AVG([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

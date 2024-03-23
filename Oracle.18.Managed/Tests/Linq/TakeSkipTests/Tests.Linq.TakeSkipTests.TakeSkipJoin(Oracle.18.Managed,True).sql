@@ -17,12 +17,10 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 15
-DECLARE @take_1 Int32
-SET     @take_1 = 15
 
 SELECT
 	e.ID,
-	t7."SmallIntValue"
+	p."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -85,9 +83,9 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			FETCH NEXT :take_1 ROWS ONLY
-		) t7 ON t7.ID = e.ID
+			FETCH NEXT :take ROWS ONLY
+		) p ON p.ID = e.ID
 ORDER BY
-	t7.ID,
-	e.ID
+	e.ID,
+	p.ID
 

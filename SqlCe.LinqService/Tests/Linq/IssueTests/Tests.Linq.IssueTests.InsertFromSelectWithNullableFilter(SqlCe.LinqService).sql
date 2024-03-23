@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 0
 
 INSERT INTO [AllTypes]
 (
@@ -7,17 +9,17 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	123,
-	[t1].[smallintDataType]
+	123 as [c1],
+	[t1].[ID] as [c2]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			[_].[smallintDataType] IS NULL
+			[_].[smallintDataType] = @ID
 	) [t1]
 
 BeforeExecute
@@ -31,15 +33,15 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	123,
-	[t1].[smallintDataType]
+	123 as [c1],
+	[t1].[ID] as [c2]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
 			[_].[smallintDataType] = @ID
 	) [t1]

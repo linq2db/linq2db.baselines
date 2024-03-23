@@ -3,14 +3,16 @@ BeginTransaction
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @BoolValue Bool -- Boolean
+SET     @BoolValue = 1
 
 INSERT INTO `LinqDataTypes`
 (
@@ -21,7 +23,7 @@ INSERT INTO `LinqDataTypes`
 SELECT
 	Cast(Floor(`t1`.`c1` + 1001) as SIGNED),
 	Uuid(),
-	1
+	@BoolValue
 FROM
 	(
 		SELECT DISTINCT
@@ -33,9 +35,9 @@ FROM
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 

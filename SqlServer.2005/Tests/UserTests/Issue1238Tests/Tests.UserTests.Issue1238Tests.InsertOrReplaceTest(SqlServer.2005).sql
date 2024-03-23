@@ -17,9 +17,9 @@ DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -60,9 +60,9 @@ DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE

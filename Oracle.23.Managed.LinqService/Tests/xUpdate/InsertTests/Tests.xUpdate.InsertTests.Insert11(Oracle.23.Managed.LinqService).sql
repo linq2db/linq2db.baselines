@@ -2,9 +2,9 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t."PersonID")
+	MAX(t1."PersonID")
 FROM
-	"Person" t
+	"Person" t1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -36,11 +36,9 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 4
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	p2."PersonID",
+	p2."PersonID" as ID,
 	p2."Gender",
 	p2."FirstName",
 	p2."MiddleName",
@@ -49,5 +47,5 @@ FROM
 	"Person" p2
 WHERE
 	(p2."PersonID" > :id OR p2."PersonID" = 0)
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

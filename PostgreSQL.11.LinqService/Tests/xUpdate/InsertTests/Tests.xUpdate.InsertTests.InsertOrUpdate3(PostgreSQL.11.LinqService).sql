@@ -35,6 +35,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis Text(3) -- String
+SET     @Diagnosis = 'abc'
 
 INSERT INTO "Patient" AS t1
 (
@@ -44,7 +46,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	'abc'
+	:Diagnosis
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = Cast(Length(t1."Diagnosis") as text)
@@ -53,6 +55,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis Text(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i Integer -- Int32
 SET     @i = 1
 
@@ -64,7 +68,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	'abc'
+	:Diagnosis
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
@@ -73,6 +77,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis Text(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i Integer -- Int32
 SET     @i = 2
 
@@ -84,7 +90,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	'abc'
+	:Diagnosis
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
@@ -93,8 +99,6 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -103,5 +107,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-LIMIT :take
+LIMIT 2
 

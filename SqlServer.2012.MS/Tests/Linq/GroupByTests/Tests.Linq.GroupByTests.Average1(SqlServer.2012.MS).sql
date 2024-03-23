@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Avg([c_1].[ChildID])
+	AVG([t1].[ChildID])
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 

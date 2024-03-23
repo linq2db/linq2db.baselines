@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue]) as Float)) as DateTime)
 FROM
 	[LinqDataTypes] [t]
 

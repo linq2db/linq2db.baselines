@@ -40,25 +40,23 @@ RETURNING
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Value Varchar2(1) -- String
-SET     @Value = 'O'
+DECLARE @nullableGender Varchar2(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."Gender" = :Value
+	"Gender" = :nullableGender
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -67,5 +65,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

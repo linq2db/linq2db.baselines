@@ -396,7 +396,7 @@ SELECT
 FROM
 	"InstanceClass" t
 WHERE
-	Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11)) = Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11))
+	Cast(t."Id" as VarChar(255)) || Cast(t."Value" as VarChar(255)) = Cast(t."Id" as VarChar(255)) || t."Value"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

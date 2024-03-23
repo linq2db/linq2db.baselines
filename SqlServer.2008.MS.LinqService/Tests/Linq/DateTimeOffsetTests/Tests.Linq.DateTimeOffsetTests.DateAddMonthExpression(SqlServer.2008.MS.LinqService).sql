@@ -490,7 +490,7 @@ DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT
-	DateAdd(month, @p, [t].[TransactionDate])
+	Convert(Date, DateAdd(month, @p, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

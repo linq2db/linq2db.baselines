@@ -44,7 +44,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	[t].[Id] > 4
+	[t].[Id] + 1 > 5
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	4 < [t].[Id]
+	5 < [t].[Id] + 1
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -68,7 +68,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	[t].[Id] > 4
+	1 + [t].[Id] > 5
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -80,7 +80,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	4 < [t].[Id]
+	5 < 1 + [t].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite

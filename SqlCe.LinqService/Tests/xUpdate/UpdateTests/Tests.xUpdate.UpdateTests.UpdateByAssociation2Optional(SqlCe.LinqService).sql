@@ -109,13 +109,15 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @Field NVarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id Int -- Int32
 SET     @id = 3
 
 UPDATE
 	[MainTable]
 SET
-	[MainTable].[Field] = 'test'
+	[Field] = @Field
 WHERE
 	EXISTS(
 		SELECT

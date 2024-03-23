@@ -2,10 +2,10 @@
 -- Access.Odbc AccessODBC
 
 UPDATE
+	[Parent] [p2],
 	[Parent] [p1]
-		INNER JOIN [Parent] [p2] ON ([p1].[ParentID] = [p2].[ParentID])
 SET
-	[p1].[ParentID] = [p1].[ParentID]
+	[p2].[ParentID] = [p1].[ParentID]
 WHERE
-	[p1].[ParentID] < 3
+	[p1].[ParentID] < 3 AND [p1].[ParentID] = [p2].[ParentID]
 

@@ -28,8 +28,13 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[BigIntValue],
-	[r].[IntValue]
+	CASE
+		WHEN [r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END as [c1],
+	[r].[BigIntValue] as [TargetType],
+	[r].[IntValue] as [TargetID]
 FROM
 	[LinqDataTypes] [r]
 WHERE

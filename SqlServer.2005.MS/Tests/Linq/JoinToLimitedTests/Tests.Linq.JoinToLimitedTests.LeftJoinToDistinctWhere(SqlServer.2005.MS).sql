@@ -4,17 +4,15 @@
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[c_2].[ParentID],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
-		OUTER APPLY (
+		LEFT JOIN (
 			SELECT DISTINCT
-				[x].[ParentID],
-				[x].[ChildID]
+				[c_1].[ParentID],
+				[c_1].[ChildID]
 			FROM
-				[Child] [x]
-			WHERE
-				[x].[ParentID] = [o].[ParentID]
-		) [t1]
+				[Child] [c_1]
+		) [c_2] ON [c_2].[ParentID] = [o].[ParentID]
 

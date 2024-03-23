@@ -2,14 +2,12 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 10
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	x."ChildID"
+	c_1."ChildID"
 FROM
-	"Child" x
+	"Child" c_1
 WHERE
-	x."ChildID" = :id
-LIMIT :take
+	c_1."ChildID" = :id
+LIMIT 1
 

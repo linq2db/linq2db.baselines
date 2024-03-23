@@ -16,6 +16,12 @@ CREATE TABLE IF NOT EXISTS `TestTable`
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Fd Int32
+SET     @Fd = 2
+DECLARE @Fd_1 Int32
+SET     @Fd_1 = 2
 
 /* My Test */
 INSERT INTO `TestTable`
@@ -25,11 +31,11 @@ INSERT INTO `TestTable`
 )
 VALUES
 (
-	1,
-	2
+	@Id,
+	@Fd
 )
 ON DUPLICATE KEY UPDATE
-	`Fd` = 2
+	`Fd` = @Fd_1
 
 BeforeExecute
 -- MySqlConnector MySql

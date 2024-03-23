@@ -4,7 +4,7 @@
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = [Person].[FirstName]
+	[FirstName] = [Person].[FirstName]
 
 BeforeExecute
 -- SqlCe
@@ -12,5 +12,5 @@ BeforeExecute
 UPDATE
 	[Person] WITH (TABLOCK)
 SET
-	[Person].[FirstName] = [Person].[FirstName]
+	[FirstName] = [Person].[FirstName]
 

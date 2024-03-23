@@ -201,8 +201,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND
-	[t].[Id] > 0
+	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -214,7 +213,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

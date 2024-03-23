@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" ("ChildID")
+WITH "CTE1_" ("C_ChildID")
 AS
 (
 	SELECT
@@ -42,11 +42,10 @@ FROM
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" ("ChildID")
-AS
+WITH "CTE1_" AS
 (
 	SELECT
-		c_1."ChildID"
+		*
 	FROM
 		"Child" c_1
 )
@@ -57,8 +56,7 @@ SELECT
 				*
 			FROM
 				"CTE1_" t1
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END
 

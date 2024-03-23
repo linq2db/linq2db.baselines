@@ -16,17 +16,25 @@ CREATE TABLE [TestTable]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Fd Int -- Int32
+SET     @Fd = 2
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 /* My Test */
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Fd] = 2
+	[Fd] = @Fd
 WHERE
-	[TestTable].[Id] = 1
+	[TestTable].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Fd Int -- Int32
+SET     @Fd = 2
 
 /* My Test */
 INSERT INTO [TestTable]
@@ -36,8 +44,8 @@ INSERT INTO [TestTable]
 )
 VALUES
 (
-	1,
-	2
+	@Id,
+	@Fd
 )
 
 BeforeExecute

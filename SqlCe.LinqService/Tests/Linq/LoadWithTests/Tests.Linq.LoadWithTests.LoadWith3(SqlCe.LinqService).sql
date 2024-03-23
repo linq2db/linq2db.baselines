@@ -2,34 +2,33 @@
 -- SqlCe
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID] as [ParentID_1],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [p]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t2].[Count_1],
+	[t1].[COUNT_1],
 	[p].[ParentID],
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[GrandChild] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [p].[ParentID] = [t2].[ParentID]
+				[GrandChild] [a_GrandChildren]
+			WHERE
+				[p].[ParentID] = [a_GrandChildren].[ParentID]
+		) [t1]
 

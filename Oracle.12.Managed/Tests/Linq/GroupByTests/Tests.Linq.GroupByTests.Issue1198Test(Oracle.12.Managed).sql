@@ -31,23 +31,17 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1192Table" t
-		WHERE
-			t."Status" = 3 AND t."MyOtherId" = 12
-	) as "MyGroupedCount"
+	COUNT(CASE
+		WHEN t."Status" = 3 THEN 1
+		ELSE NULL
+	END) as COUNT_1
 FROM
-	"Issue1192Table" t_1
+	"Issue1192Table" t
 WHERE
-	t_1."MyOtherId" = 12
-FETCH NEXT :take ROWS ONLY
+	t."MyOtherId" = 12
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

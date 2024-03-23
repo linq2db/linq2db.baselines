@@ -4,9 +4,9 @@ BeforeExecute
 --  Access AccessOleDb
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
@@ -19,8 +19,8 @@ FROM
 					[Child] [t1]
 						LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
 			) [t2]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON ([lw_Parent].[ParentID] = [detail].[ParentID])
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 BeforeExecute
 --  Access AccessOleDb

@@ -46,10 +46,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -71,22 +69,18 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[t1]
+	[PR_1598_Update_Enum_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age,
-	[t1].[Gender] = @Gender
-FROM
-	[PR_1598_Update_Enum_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age,
+	[Gender] = @Gender
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -106,21 +100,17 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[t1]
+	[PR_1598_Update_Enum_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
-FROM
-	[PR_1598_Update_Enum_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],

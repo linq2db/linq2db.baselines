@@ -2,10 +2,10 @@
 -- SqlCe
 
 SELECT
-	[p].[PersonID] + 1,
+	[p].[PersonID] as [c1],
 	[p].[FirstName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1
+	[p].[PersonID] + 1 = 2
 

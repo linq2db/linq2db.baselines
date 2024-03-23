@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Date_Add(`t`.`DateTimeValue`, Interval 1 Year)
+	Cast(Date_Add(`t`.`DateTimeValue`, Interval 1 Year) as Date)
 FROM
 	`LinqDataTypes` `t`
 

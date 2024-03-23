@@ -59,15 +59,15 @@ USING (VALUES
 	(1,N'***OOO***'), (2,N'***SSS***')
 ) [Source]
 (
-	[ID],
-	[Data_1]
+	[source_ID],
+	[source_Data]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Data] = [Source].[Data_1]
+	[Data] = [Source].[source_Data]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -77,8 +77,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[ID],
-	[Source].[Data_1]
+	[Source].[source_ID],
+	[Source].[source_Data]
 )
 ;
 
@@ -90,15 +90,15 @@ USING (VALUES
 	(3,N'***III***')
 ) [Source]
 (
-	[ID],
-	[Data_1]
+	[source_ID],
+	[source_Data]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Data] = [Source].[Data_1]
+	[Data] = [Source].[source_Data]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -108,8 +108,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[ID],
-	[Source].[Data_1]
+	[Source].[source_ID],
+	[Source].[source_Data]
 )
 ;
 

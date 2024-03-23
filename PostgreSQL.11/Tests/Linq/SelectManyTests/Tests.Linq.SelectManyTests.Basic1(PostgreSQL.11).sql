@@ -2,9 +2,9 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	c_1."ParentID",
-	c_1."ChildID"
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	"Parent" cp,
-	"Child" c_1
+	"Parent" p
+		CROSS JOIN "Child" t1
 

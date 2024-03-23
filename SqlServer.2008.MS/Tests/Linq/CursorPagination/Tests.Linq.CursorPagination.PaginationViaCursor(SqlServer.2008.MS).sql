@@ -151,7 +151,7 @@ DECLARE @take BigInt -- Int64
 SET     @take = 12
 
 SELECT
-	[q].[c1],
+	[q].[TotalCount],
 	[q].[RowNumber],
 	[q].[BookingID],
 	[q].[ServiceDate],
@@ -160,7 +160,7 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
-			COUNT(*) OVER() as [c1],
+			COUNT(*) OVER() as [TotalCount],
 			[t].[BookingID],
 			[t].[ServiceDate],
 			[t].[Value] as [Value_1]
@@ -178,21 +178,23 @@ DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
 	[Cursor],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -203,8 +205,9 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -215,7 +218,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
 	)
 
 BeforeExecute
@@ -224,21 +227,23 @@ DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
 	[Cursor],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -249,8 +254,9 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -261,7 +267,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
 	)
 
 BeforeExecute
@@ -270,21 +276,23 @@ DECLARE @ServiceDate DateTime2
 SET     @ServiceDate = CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
 	[Cursor],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
@@ -295,8 +303,9 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -307,7 +316,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			[q].[RowNumber] <= [c_1].[RowNumber] + @take
+			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
 	)
 
 BeforeExecute

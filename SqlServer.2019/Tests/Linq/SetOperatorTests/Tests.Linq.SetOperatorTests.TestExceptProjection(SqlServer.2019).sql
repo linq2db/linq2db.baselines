@@ -43,33 +43,33 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	[r].[Value_1]
+	[r_3].[Value_1]
 FROM
 	(
 		SELECT
-			[t].[Id],
-			[t].[Value1] as [Value_1]
+			[r].[Id],
+			[r].[Value1] as [Value_1]
 		FROM
-			[SampleData] [t]
+			[SampleData] [r]
 		WHERE
-			[t].[Id] % 2 = 0
+			[r].[Id] % 2 = 0
 		EXCEPT
 		SELECT
-			[t_1].[Id],
-			[t_1].[Value2] / 10 as [Value_1]
+			[r_1].[Id],
+			[r_1].[Value2] / 10 as [Value_1]
 		FROM
-			[SampleData] [t_1]
+			[SampleData] [r_1]
 		WHERE
-			[t_1].[Id] % 4 = 0
+			[r_1].[Id] % 4 = 0
 		EXCEPT
 		SELECT
-			[t_2].[Id],
-			[t_2].[Value1] as [Value_1]
+			[r_2].[Id],
+			[r_2].[Value1] as [Value_1]
 		FROM
-			[SampleData] [t_2]
+			[SampleData] [r_2]
 		WHERE
-			[t_2].[Id] % 6 = 0
-	) [r]
+			[r_2].[Id] % 6 = 0
+	) [r_3]
 
 BeforeExecute
 -- SqlServer.2019

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[AllTypes2] [t1]
+	[AllTypes2] [p]
 WHERE
-	[t1].[ID] >= 3
+	[p].[ID] >= 3
 
 BeforeExecute
 INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)

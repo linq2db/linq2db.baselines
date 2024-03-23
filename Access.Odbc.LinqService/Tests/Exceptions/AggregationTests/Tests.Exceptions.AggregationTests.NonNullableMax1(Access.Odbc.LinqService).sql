@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([_].[ParentID])
+	MAX([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

@@ -16,27 +16,32 @@ FROM
 		) [c_2] ON [p].[ParentID] = [c_2].[ParentID]
 		INNER JOIN (
 			SELECT DISTINCT
-				[c_3].[ParentID],
-				[c_3].[ChildID]
+				[c2].[ParentID],
+				[c2].[ChildID]
 			FROM
-				[Child] [c_3]
+				[Child] [c2]
 			WHERE
-				[c_3].[ParentID] > 1
-		) [c2] ON [p].[ParentID] = [c2].[ParentID]
+				[c2].[ParentID] > 1
+		) [c2_1] ON [p].[ParentID] = [c2_1].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-WITH [CTE_1] ([ParentID], [ChildID])
+WITH [CTE_1] ([ParentID])
 AS
 (
-	SELECT DISTINCT
-		[c_1].[ParentID],
-		[c_1].[ChildID]
+	SELECT
+		[t1].[ParentID]
 	FROM
-		[Child] [c_1]
-	WHERE
-		[c_1].[ParentID] > 1
+		(
+			SELECT DISTINCT
+				[c_1].[ParentID],
+				[c_1].[ChildID]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] > 1
+		) [t1]
 )
 SELECT
 	Count(*)

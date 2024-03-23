@@ -24,13 +24,15 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Int32Field  -- Int32
+SET     @Int32Field = 4
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "r"
 SET
-	"LinqDataTypes"."IntValue" = 4
+	"IntValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."IntValue" = 3
+	"r"."ID" = 101 AND "r"."IntValue" = 3
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

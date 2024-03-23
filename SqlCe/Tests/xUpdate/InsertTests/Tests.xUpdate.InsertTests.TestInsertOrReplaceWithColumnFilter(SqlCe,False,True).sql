@@ -28,8 +28,8 @@ SET     @ID = 0
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[TestInsertOrReplaceTable].[FirstName] = @FirstName,
-	[TestInsertOrReplaceTable].[LastName] = @LastName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName
 WHERE
 	[TestInsertOrReplaceTable].[ID] = @ID
 
@@ -57,12 +57,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],
@@ -86,20 +84,18 @@ SET     @ID = 0
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[TestInsertOrReplaceTable].[FirstName] = @FirstName,
-	[TestInsertOrReplaceTable].[LastName] = @LastName,
-	[TestInsertOrReplaceTable].[MiddleName] = @MiddleName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName
 WHERE
 	[TestInsertOrReplaceTable].[ID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],

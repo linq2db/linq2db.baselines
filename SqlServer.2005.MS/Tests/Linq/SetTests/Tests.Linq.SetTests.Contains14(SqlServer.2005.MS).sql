@@ -5,13 +5,13 @@ SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @ParentID IN (
 			SELECT
-				*
+				[p].[ParentID]
 			FROM
 				[Parent] [p]
 			WHERE
-				[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+				[p].[ParentID] = 1
 		)
 			THEN 1
 		ELSE 0
@@ -24,13 +24,13 @@ SET     @ParentID = 2
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @ParentID IN (
 			SELECT
-				*
+				[p].[ParentID]
 			FROM
 				[Parent] [p]
 			WHERE
-				[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
+				[p].[ParentID] = 1
 		)
 			THEN 1
 		ELSE 0

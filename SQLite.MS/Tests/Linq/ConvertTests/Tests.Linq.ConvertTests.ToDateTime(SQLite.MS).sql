@@ -2,9 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	DateTime(Cast(Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) as VarChar(11)) || '-01-01 00:00:00')
+	Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) || '-01-01 00:00:00'
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	Cast(StrFTime('%d', DateTime(Cast(Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) as VarChar(11)) || '-01-01 00:00:00')) as int) > 0
+	Cast(StrFTime('%d', DateTime(Cast(StrFTime('%Y', [p].[DateTimeValue]) as int) || '-01-01 00:00:00')) as int) > 0
 

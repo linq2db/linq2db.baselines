@@ -18,17 +18,23 @@ IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Fd Int -- Int32
+SET     @Fd = 2
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Fd_1 Int -- Int32
+SET     @Fd_1 = 2
 
 /* My Test */
 /* My Test */
 UPDATE
-	[t1]
+	[TestTable]
 SET
-	[t1].[Fd] = 2
+	[Fd] = @Fd
 FROM
 	[TestTable] [t1]
 WHERE
-	[t1].[Id] = 1
+	[t1].[Id] = @Id
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -40,8 +46,8 @@ BEGIN
 	)
 	VALUES
 	(
-		1,
-		2
+		@Id,
+		@Fd_1
 	)
 END
 

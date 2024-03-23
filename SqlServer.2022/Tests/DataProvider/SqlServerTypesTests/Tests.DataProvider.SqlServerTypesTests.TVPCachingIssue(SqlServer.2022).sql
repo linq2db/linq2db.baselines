@@ -2,16 +2,16 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
-	[key_data_result].[PersonID],
-	[detail].[PersonID]
+	[m_1].[ID],
+	[d].[PersonID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -19,17 +19,17 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table [x]
+					@p [x]
 			)
-	) [key_data_result]
-		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
 	[p].[PersonID]
@@ -40,23 +40,23 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table [x]
+			@p [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
-	[key_data_result].[PersonID],
-	[detail].[PersonID]
+	[m_1].[ID],
+	[d].[PersonID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -64,17 +64,17 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table [x]
+					@p [x]
 			)
-	) [key_data_result]
-		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
 	[p].[PersonID]
@@ -85,23 +85,23 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table [x]
+			@p [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
-	[key_data_result].[PersonID],
-	[detail].[PersonID]
+	[m_1].[ID],
+	[d].[PersonID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -109,17 +109,17 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table [x]
+					@p [x]
 			)
-	) [key_data_result]
-		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
 	[p].[PersonID]
@@ -130,23 +130,23 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table [x]
+			@p [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
-	[key_data_result].[PersonID],
-	[detail].[PersonID]
+	[m_1].[ID],
+	[d].[PersonID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -154,17 +154,17 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@table [x]
+					@p [x]
 			)
-	) [key_data_result]
-		INNER JOIN [Person] [detail] ON [detail].[PersonID] > [key_data_result].[PersonID]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2022
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 SELECT
 	[p].[PersonID]
@@ -175,6 +175,6 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@table [x]
+			@p [x]
 	)
 

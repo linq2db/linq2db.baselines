@@ -3,16 +3,16 @@
 
 SELECT
 	[p_1].[FirstName],
-	[p_1].[PersonID],
+	[p_1].[ID],
 	[p_1].[LastName],
 	[p_1].[MiddleName],
 	[p_1].[Gender]
 FROM
 	(
 		SELECT
-			Iif([p].[FirstName] LIKE '%Jo%', True, False) as [Field1],
+			IIF([p].[FirstName] LIKE '%Jo%', True, False) as [Field1],
 			[p].[FirstName],
-			[p].[PersonID],
+			[p].[PersonID] as [ID],
 			[p].[LastName],
 			[p].[MiddleName],
 			[p].[Gender]

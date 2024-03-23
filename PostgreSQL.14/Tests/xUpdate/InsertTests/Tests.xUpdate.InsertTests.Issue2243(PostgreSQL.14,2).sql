@@ -45,8 +45,6 @@ ON CONFLICT (id) DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1.id,
@@ -55,7 +53,7 @@ SELECT
 	t1.updated_by
 FROM
 	test_insert_or_replace t1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -86,8 +84,6 @@ ON CONFLICT (id) DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1.id,
@@ -96,7 +92,7 @@ SELECT
 	t1.updated_by
 FROM
 	test_insert_or_replace t1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

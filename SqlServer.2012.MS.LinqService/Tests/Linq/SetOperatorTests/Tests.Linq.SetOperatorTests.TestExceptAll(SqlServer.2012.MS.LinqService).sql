@@ -285,6 +285,10 @@ SELECT
 	[t1].[Id],
 	[t1].[Value1],
 	[t1].[Value2],
+	[t1].[Value3],
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
 	[t1].[Value3]
 FROM
 	(

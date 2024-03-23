@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID"
@@ -9,12 +7,10 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 2
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID"
@@ -22,12 +18,10 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 2
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID"
@@ -35,5 +29,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 2
-LIMIT :take
+LIMIT 1
 

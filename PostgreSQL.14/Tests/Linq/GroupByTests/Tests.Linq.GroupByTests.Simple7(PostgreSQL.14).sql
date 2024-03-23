@@ -2,11 +2,11 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	gr."ParentID",
+	gr."ChildID"
 FROM
-	"GrandChild" t1
+	"GrandChild" gr
 GROUP BY
-	t1."ParentID",
-	t1."ChildID"
+	gr."ParentID",
+	gr."ChildID"
 

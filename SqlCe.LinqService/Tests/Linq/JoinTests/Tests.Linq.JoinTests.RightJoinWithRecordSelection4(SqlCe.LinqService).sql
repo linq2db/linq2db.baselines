@@ -143,7 +143,7 @@ BeforeExecute
 
 SELECT
 	[f].[Id],
-	[ft].[Id],
+	[ft].[Id] as [Id_1],
 	[ft].[FactId],
 	[ft].[Name]
 FROM

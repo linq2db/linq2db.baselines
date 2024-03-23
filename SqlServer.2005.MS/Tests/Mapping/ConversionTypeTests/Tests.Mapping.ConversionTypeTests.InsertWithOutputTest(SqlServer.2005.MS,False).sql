@@ -28,6 +28,8 @@ SELECT 1,N'***OOO***'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Data NVarChar(50) -- String
+SET     @Data = N'***HHH***'
 
 INSERT INTO [TrimTestTable]
 (
@@ -39,7 +41,7 @@ OUTPUT
 	[INSERTED].[Data]
 SELECT
 	[t1].[ID] + 1,
-	N'***HHH***'
+	@Data
 FROM
 	[TrimTestTable] [t1]
 

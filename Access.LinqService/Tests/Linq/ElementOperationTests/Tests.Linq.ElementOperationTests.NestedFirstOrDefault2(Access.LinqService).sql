@@ -2,28 +2,26 @@
 -- Access AccessOleDb
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ParentID],
-	[detail].[ChildID]
-FROM
 	(
-		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+		SELECT TOP 1
+			[a_Children].[ParentID]
 		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [detail] ON ([key_data_result].[ParentID] = [detail].[ParentID])
-ORDER BY
-	[detail].[ChildID]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[p].[ParentID],
-	[p].[Value1]
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
+		ORDER BY
+			[a_Children].[ChildID]
+	),
+	(
+		SELECT TOP 1
+			[a_Children_1].[ChildID]
+		FROM
+			[Child] [a_Children_1]
+		WHERE
+			[p].[ParentID] = [a_Children_1].[ParentID]
+		ORDER BY
+			[a_Children_1].[ChildID]
+	)
 FROM
 	[Parent] [p]
 

@@ -40,8 +40,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -52,7 +50,7 @@ FROM
 	"TestIdTrun" t1
 ORDER BY
 	t1."ID"
-LIMIT :take OFFSET :skip 
+LIMIT 2 OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -85,8 +83,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -97,7 +93,7 @@ FROM
 	"TestIdTrun" t1
 ORDER BY
 	t1."ID"
-LIMIT :take OFFSET :skip 
+LIMIT 2 OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -24,7 +24,7 @@ SELECT
 	[cb].[Id],
 	[cb].[Name],
 	[cb].[ContactEmail],
-	Iif([cb].[Enabled] IS NULL, False, [cb].[Enabled])
+	[cb].[Enabled]
 FROM
 	[CustomerBase] [cb]
 WHERE

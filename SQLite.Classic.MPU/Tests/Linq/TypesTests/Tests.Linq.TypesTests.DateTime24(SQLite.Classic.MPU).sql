@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[ID],
@@ -18,12 +16,10 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[ID],
@@ -40,7 +36,7 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -82,8 +78,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[ID],
@@ -100,7 +94,7 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

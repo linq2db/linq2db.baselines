@@ -56,13 +56,13 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[Not Identifier],
-	Count(*),
-	Sum([t1].[Some Value])
+	[g_1].[Not Identifier],
+	COUNT(*),
+	SUM([g_1].[Some Value])
 FROM
-	[DynamicTable] [t1]
+	[DynamicTable] [g_1]
 GROUP BY
-	[t1].[Not Identifier]
+	[g_1].[Not Identifier]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

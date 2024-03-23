@@ -50,17 +50,17 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value2 Int -- Int32
+DECLARE @value2 VarChar(5, 0) -- AnsiString
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
 UPDATE
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 SET
-	[t1].[SmallIntValue] = [t1].[MoneyValue] / (? / [t1].[IntValue])
+	[_].[SmallIntValue] = [_].[MoneyValue] / (? / [_].[IntValue])
 WHERE
-	[t1].[ID] = ?
+	[_].[ID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Iif(Iif([p].[FirstName] IS NULL, NULL, [p].[FirstName] LIKE 'Jo%') IS NULL, False, Iif([p].[FirstName] IS NULL, NULL, [p].[FirstName] LIKE 'Jo%')) = True
+	[p].[FirstName] LIKE 'Jo%' AND [p].[FirstName] IS NOT NULL
 

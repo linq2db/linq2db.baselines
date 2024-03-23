@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -61,11 +61,11 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` IN (1001, 1002)
+	`_`.`ParentID` IN (1001, 1002)
 
 BeforeExecute
 -- MySqlConnector MySql

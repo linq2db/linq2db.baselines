@@ -3125,18 +3125,18 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypes` `t1`
+	`AllTypes` `_`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`_`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear` `_`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`_`.`varcharDataType` = '_btest'
 

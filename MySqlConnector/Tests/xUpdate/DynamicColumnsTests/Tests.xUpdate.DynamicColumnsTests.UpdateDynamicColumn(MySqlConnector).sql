@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender String(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -9,9 +15,9 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
@@ -26,11 +32,13 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
+DECLARE @FirstName VarChar(6) -- String
+SET     @FirstName = 'Johnny'
 
 UPDATE
 	`Person` `c_1`
 SET
-	`c_1`.`FirstName` = 'Johnny'
+	`c_1`.`FirstName` = @FirstName
 WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 

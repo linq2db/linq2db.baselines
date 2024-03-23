@@ -28,14 +28,14 @@ ORDER BY
 	[t1].[LanguageId],
 	((
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Issue2647Table] [ss2]
 		WHERE
 			[ss2].[Id] = [t1].[Id]
 	) * 10000) / (
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Issue2647Table] [ss3]
 		WHERE

@@ -36,13 +36,13 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @Value String(1) -- StringFixedLength
-SET     @Value = 'O'
+DECLARE @nullableGender String(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	`Person` `_`
 SET
-	`_`.`Gender` = @Value
+	`_`.`Gender` = @nullableGender
 WHERE
 	`_`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 
@@ -50,8 +50,6 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`PersonID`,
@@ -63,5 +61,5 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`PersonID` = @id
-LIMIT @take
+LIMIT 1
 

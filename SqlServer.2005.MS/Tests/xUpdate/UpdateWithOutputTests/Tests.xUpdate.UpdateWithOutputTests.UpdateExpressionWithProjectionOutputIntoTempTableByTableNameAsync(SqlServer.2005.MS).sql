@@ -91,8 +91,8 @@ SET
 	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
 	[s].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#TableWithData_destination]
 (
 	[Id],

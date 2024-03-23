@@ -5,7 +5,7 @@ SET     @take = 10
 
 SELECT
 	p_1."ParentID",
-	r."ChildID"
+	c_1."ChildID"
 FROM
 	(
 		SELECT
@@ -16,5 +16,5 @@ FROM
 			p."ParentID" > 0
 		LIMIT :take
 	) p_1
-		RIGHT JOIN "Child" r ON p_1."ParentID" = r."ParentID"
+		RIGHT JOIN "Child" c_1 ON p_1."ParentID" = c_1."ParentID"
 

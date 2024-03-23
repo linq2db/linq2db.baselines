@@ -2,23 +2,23 @@
 -- MySqlConnector MySql
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`detail`.`ChildID`,
-	`detail`.`ParentID`
+	`m_1`.`ParentID`,
+	`d`.`ChildID`,
+	`d`.`ParentID`
 FROM
 	(
 		SELECT DISTINCT
-			`_`.`ParentID`
+			`p`.`ParentID`
 		FROM
-			`Parent` `_`
-	) `key_data_result`
-		INNER JOIN `Child` `detail` ON Cast(`key_data_result`.`ParentID` as SIGNED) = `detail`.`ParentID`
+			`Parent` `p`
+	) `m_1`
+		INNER JOIN `Child` `d` ON Cast(`m_1`.`ParentID` as SIGNED) = `d`.`ParentID`
 
 BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`_`.`ParentID`
+	`p`.`ParentID`
 FROM
-	`Parent` `_`
+	`Parent` `p`
 

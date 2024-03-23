@@ -36,8 +36,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	r."BigIntValue"
@@ -45,7 +43,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

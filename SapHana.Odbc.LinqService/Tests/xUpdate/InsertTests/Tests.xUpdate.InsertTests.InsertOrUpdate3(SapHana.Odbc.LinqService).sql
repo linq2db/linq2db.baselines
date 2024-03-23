@@ -83,16 +83,18 @@ DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = Cast(Length("Patient"."Diagnosis") as NVarChar(11))
+	"Diagnosis" = Cast(Length("t1"."Diagnosis") as NVarChar(255))
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(3) -- String
+SET     @Diagnosis = 'abc'
 
 INSERT INTO "Patient"
 (
@@ -102,7 +104,7 @@ INSERT INTO "Patient"
 VALUES
 (
 	?,
-	'abc'
+	?
 )
 
 BeforeExecute
@@ -113,11 +115,11 @@ DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = Cast((Length("Patient"."Diagnosis") + ?) as NVarChar(11))
+	"Diagnosis" = Cast((Length("t1"."Diagnosis") + ?) as NVarChar(255))
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -127,18 +129,16 @@ DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = Cast((Length("Patient"."Diagnosis") + ?) as NVarChar(11))
+	"Diagnosis" = Cast((Length("t1"."Diagnosis") + ?) as NVarChar(255))
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."PersonID",
@@ -147,5 +147,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = ?
-LIMIT ?
+LIMIT 2
 

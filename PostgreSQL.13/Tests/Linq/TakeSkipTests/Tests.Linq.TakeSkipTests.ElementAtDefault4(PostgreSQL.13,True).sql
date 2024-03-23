@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @n Integer -- Int32
 SET     @n = 300000
 
@@ -12,5 +10,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1
-LIMIT :take OFFSET :n 
+LIMIT 1 OFFSET :n 
 

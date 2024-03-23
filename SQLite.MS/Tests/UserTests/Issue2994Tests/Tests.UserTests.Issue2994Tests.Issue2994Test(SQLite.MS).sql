@@ -12,10 +12,10 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Person] [p]
-				INNER JOIN [Doctor] [d] ON [p].[FirstName] = [d].[Taxonomy]
-				INNER JOIN [Doctor] [g_1] ON [p].[LastName] = [g_1].[Taxonomy]
+			[Person] [y]
+				INNER JOIN [Doctor] [d] ON [y].[FirstName] = [d].[Taxonomy]
+				INNER JOIN [Doctor] [g_1] ON [y].[LastName] = [g_1].[Taxonomy]
 		WHERE
-			[p].[PersonID] = [Person].[PersonID]
+			[y].[PersonID] = [Person].[PersonID]
 	)
 

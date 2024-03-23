@@ -2,5 +2,5 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	10 as `c1`
+	10 as `SomeValue`
 

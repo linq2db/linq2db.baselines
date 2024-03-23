@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -9,9 +15,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	?,
+	?,
+	?
 )
 
 BeforeExecute
@@ -26,11 +32,13 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @FirstName NVarChar(6) -- String
+SET     @FirstName = 'Johnny'
 
 UPDATE
 	[Person] [c_1]
 SET
-	[c_1].[FirstName] = 'Johnny'
+	[c_1].[FirstName] = ?
 WHERE
 	[c_1].[LastName] = 'Limonadovy'
 

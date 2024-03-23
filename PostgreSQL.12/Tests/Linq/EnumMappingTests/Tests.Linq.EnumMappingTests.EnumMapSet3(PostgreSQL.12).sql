@@ -24,11 +24,13 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Int32Field Integer -- Int32
+SET     @Int32Field = 4
 
 UPDATE
 	"LinqDataTypes"
 SET
-	"IntValue" = 4
+	"IntValue" = :Int32Field
 WHERE
 	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."IntValue" = 3
 

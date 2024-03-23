@@ -223,11 +223,11 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT NULL "ID"
+	SELECT NULL "source_ID"
 	FROM DUMMY	WHERE 1 = 0
 )
  "Source"
-ON ("Target"."Id" = "Source"."ID")
+ON ("Target"."Id" = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -236,7 +236,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."ID"
+	"Source"."source_ID"
 )
 
 BeforeExecute

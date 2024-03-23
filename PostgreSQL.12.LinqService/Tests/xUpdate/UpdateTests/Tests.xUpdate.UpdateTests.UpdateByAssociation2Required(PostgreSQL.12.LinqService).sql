@@ -109,13 +109,15 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Field Text(4) -- String
+SET     @Field = 'test'
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
 UPDATE
 	"MainTable"
 SET
-	"Field" = 'test'
+	"Field" = :Field
 FROM
 	"AssociatedTable" pat
 WHERE

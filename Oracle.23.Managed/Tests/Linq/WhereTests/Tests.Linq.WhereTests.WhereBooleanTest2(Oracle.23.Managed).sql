@@ -212,8 +212,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	(t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL) AND
-	t."Id" > 0
+	t."NullableBoolValue" = 1 AND t."Id" > 0
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -225,7 +224,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	NOT (t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

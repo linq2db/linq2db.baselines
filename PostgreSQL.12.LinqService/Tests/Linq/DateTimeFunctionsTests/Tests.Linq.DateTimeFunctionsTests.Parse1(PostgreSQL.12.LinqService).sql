@@ -2,14 +2,9 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	d.c1
+	Cast(d."DateTimeValue" as Date)
 FROM
-	(
-		SELECT
-			t."DateTimeValue" as c1
-		FROM
-			"LinqDataTypes" t
-	) d
+	"LinqDataTypes" d
 WHERE
-	Cast(Floor(Extract(day from d.c1)) as int) > 0
+	Cast(Floor(Extract(day from d."DateTimeValue")) as int) > 0
 

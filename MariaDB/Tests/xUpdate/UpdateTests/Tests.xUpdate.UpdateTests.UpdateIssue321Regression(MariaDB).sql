@@ -50,24 +50,22 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @value2 Int32
+DECLARE @value2 NewDecimal(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
 
 UPDATE
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `_`
 SET
-	`t1`.`SmallIntValue` = Cast(Floor(`t1`.`MoneyValue` / (@value2 / `t1`.`IntValue`)) as SIGNED)
+	`_`.`SmallIntValue` = Cast(Floor(`_`.`MoneyValue` / (@value2 / `_`.`IntValue`)) as SIGNED)
 WHERE
-	`t1`.`ID` = @id
+	`_`.`ID` = @id
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 100500
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`SmallIntValue`
@@ -75,5 +73,5 @@ FROM
 	`LinqDataTypes` `_`
 WHERE
 	`_`.`ID` = @id
-LIMIT @take
+LIMIT 1
 

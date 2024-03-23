@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -36,8 +36,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -49,14 +47,14 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 

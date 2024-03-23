@@ -24,18 +24,16 @@ DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "t1"
 SET
-	"Parent"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"Parent"."ParentID" = ?
+	"t1"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."ParentID",
@@ -44,5 +42,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = ?
-LIMIT ?
+LIMIT 2
 

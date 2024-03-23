@@ -93,6 +93,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(8) -- String
+SET     @Diagnosis = 'negative'
 
 INSERT INTO "Patient"
 (
@@ -102,7 +104,7 @@ INSERT INTO "Patient"
 VALUES
 (
 	?,
-	'negative'
+	?
 )
 
 BeforeExecute

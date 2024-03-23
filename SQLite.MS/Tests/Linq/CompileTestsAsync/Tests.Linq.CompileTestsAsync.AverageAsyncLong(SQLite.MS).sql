@@ -38,7 +38,7 @@ DECLARE @Id  -- Int32
 SET     @Id = 5
 
 SELECT
-	Avg(Cast([c_1].[Id] as BigInt))
+	AVG(Cast([c_1].[Id] as BigInt))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

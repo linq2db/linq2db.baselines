@@ -77,13 +77,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 3
 
 UPDATE
-	[t1]
+	[TrimTestTable]
 SET
-	[t1].[Data] = @Data
-FROM
-	[TrimTestTable] [t1]
+	[Data] = @Data
 WHERE
-	[t1].[ID] = @ID
+	[TrimTestTable].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -91,13 +89,11 @@ DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***OOO***'
 
 UPDATE
-	[t]
+	[TrimTestTable]
 SET
-	[t].[Data] = @Data
-FROM
-	[TrimTestTable] [t]
+	[Data] = @Data
 WHERE
-	[t].[Data] = N'***XXX***'
+	[TrimTestTable].[Data] = N'***XXX***'
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -107,13 +103,11 @@ DECLARE @p NVarChar(50) -- String
 SET     @p = N'***HHH***'
 
 UPDATE
-	[t]
+	[TrimTestTable]
 SET
-	[t].[Data] = @Data
-FROM
-	[TrimTestTable] [t]
+	[Data] = @Data
 WHERE
-	[t].[Data] = @p
+	[TrimTestTable].[Data] = @p
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

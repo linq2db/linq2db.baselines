@@ -59,6 +59,8 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @param Int32
+SET     @param = 0
 
 SELECT
 	t1."Id"
@@ -69,9 +71,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			"TestEqualsTable2" t2
+			"TestEqualsTable2" a_Relation
 		WHERE
-			t1."Id" = t2.FK AND t2."Id" IS NULL
+			t1."Id" = a_Relation.FK AND a_Relation."Id" = :param
 	)
 
 BeforeExecute

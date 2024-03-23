@@ -23,16 +23,16 @@ INSERT INTO [TableToInsert]
 	[Value]
 )
 SELECT
-	[r].[Id],
-	[r].[Value]
+	[t1].[Id],
+	[t1].[Value]
 FROM
 	(
 		SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 		UNION ALL
 		VALUES
 			(3,'Janet'), (4,'Doe')
-		) [r]
-		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id]
+		) [t1]
+		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
 
@@ -45,16 +45,16 @@ INSERT INTO [TableToInsert]
 	[Value]
 )
 SELECT
-	[r].[Id],
-	[r].[Value]
+	[t1].[Id],
+	[t1].[Value]
 FROM
 	(
 		SELECT NULL [Id], NULL [Value] WHERE 1 = 0
 		UNION ALL
 		VALUES
 			(3,'Janet'), (4,'Doe')
-		) [r]
-		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id]
+		) [t1]
+		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
 

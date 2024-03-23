@@ -36,14 +36,12 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	STRING_AGG([t1].[Value1], N' -> ')
+	STRING_AGG([g_1].[Value1], N' -> ')
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value1]
-ORDER BY
-	[t1].[Id]
+	[g_1].[Id],
+	[g_1].[Value1]
 
 BeforeExecute
 -- SqlServer.2019

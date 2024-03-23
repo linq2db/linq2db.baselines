@@ -487,19 +487,19 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[DayOfYear],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DatePart(dayofyear, [selectParam].[TransactionDate]) as [Key_1]
+			DatePart(dayofyear, [x].[TransactionDate]) as [DayOfYear]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[DayOfYear]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[DayOfYear]
 
 BeforeExecute
 -- SqlServer.2016

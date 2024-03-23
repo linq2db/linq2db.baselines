@@ -32,11 +32,11 @@ VALUES
 BeforeExecute
 -- MariaDB MySqlConnector MySql (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -49,9 +49,9 @@ INSERT ASYNC BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, Guid
 BeforeExecute
 -- MariaDB MySqlConnector MySql (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 

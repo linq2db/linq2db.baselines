@@ -55,8 +55,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Id",
@@ -64,7 +62,7 @@ SELECT
 	t1."ClaimedKeyTypeN"
 FROM
 	"Issue1554FluentTable" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

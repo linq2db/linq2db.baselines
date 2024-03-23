@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -36,8 +36,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 4
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p2"."PersonID",
@@ -49,5 +47,5 @@ FROM
 	"Person" "p2"
 WHERE
 	("p2"."PersonID" > ? OR "p2"."PersonID" = 0)
-LIMIT ?
+LIMIT 2
 

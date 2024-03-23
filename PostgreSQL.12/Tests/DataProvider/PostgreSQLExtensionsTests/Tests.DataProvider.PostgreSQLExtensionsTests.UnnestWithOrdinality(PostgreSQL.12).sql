@@ -167,8 +167,8 @@ SELECT
 	v.value,
 	v.idx
 FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") WITH ORDINALITY v(value, idx) ON 1=1
+	"SampleClass" t1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") WITH ORDINALITY v(value, idx) ON 1=1
 WHERE
 	v.value LIKE 'V%' ESCAPE '~'
 

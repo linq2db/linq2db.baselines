@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t].[ID]
+	2010 + [t].[ID]
 FROM
 	[LinqDataTypes] [t]
 

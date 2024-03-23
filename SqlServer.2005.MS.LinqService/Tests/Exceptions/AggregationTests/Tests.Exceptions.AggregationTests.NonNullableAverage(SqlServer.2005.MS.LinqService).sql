@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Avg([_].[ParentID])
+	AVG([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

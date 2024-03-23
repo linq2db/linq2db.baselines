@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	TO_DATE(Lpad((2010 + t.ID),4,'0') || '-01-01', 'YYYY-MM-DD')
+	2010 + t.ID
 FROM
 	"LinqDataTypes" t
 

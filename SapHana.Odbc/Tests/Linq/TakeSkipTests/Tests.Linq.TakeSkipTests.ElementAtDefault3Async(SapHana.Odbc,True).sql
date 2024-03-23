@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @n  -- Int32
 SET     @n = 3
 
@@ -14,5 +12,5 @@ WHERE
 	"p"."ParentID" > 1
 ORDER BY
 	"p"."ParentID"
-LIMIT ? OFFSET ?
+LIMIT 1 OFFSET ?
 

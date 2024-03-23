@@ -28,12 +28,10 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
-	x."PersonID",
+	x."PersonID" as ID,
 	x."LastName",
 	x."MiddleName",
 	x."Gender"
@@ -41,7 +39,7 @@ FROM
 	"Person" x
 WHERE
 	x."FirstName" = :FirstName
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

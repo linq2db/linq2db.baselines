@@ -53,7 +53,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Boolean]
+	[t1].[Boolean] as [Boolean_1]
 FROM
 	[CreateTableTypes] [t1]
 ORDER BY

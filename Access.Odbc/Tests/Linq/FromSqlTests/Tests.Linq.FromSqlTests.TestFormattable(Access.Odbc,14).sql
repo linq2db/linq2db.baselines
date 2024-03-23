@@ -374,17 +374,13 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = 5
-DECLARE @Parameter2 Int -- Int32
-SET     @Parameter2 = 14
 
 SELECT
 	[c_1].[value],
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM [sample_class] where [id] >= ? and [id] < ?
+		SELECT * FROM [sample_class] where [id] >= 5 and [id] < 14
 	) [c_1]
 WHERE
 	[c_1].[id] > 10

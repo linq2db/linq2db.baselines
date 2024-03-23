@@ -136,47 +136,32 @@ DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
 SELECT
-	[key_data_result_1].[Id],
-	[key_data_result_1].[BlogId],
-	[key_data_result_1].[Title],
-	[key_data_result_1].[PostContent],
-	[key_data_result_1].[IsDeleted],
-	[key_data_result_1].[Id_1],
-	[key_data_result_1].[Title_1],
-	[key_data_result_1].[Slogan],
-	[key_data_result_1].[UserId],
-	[detail_1].[TagId],
+	[m_1].[Id],
+	[m_1].[Id_1],
+	[d_1].[TagId],
 	[a_Tag].[Name]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[Id],
-			[detail].[BlogId],
-			[detail].[Title],
-			[detail].[PostContent],
-			[detail].[IsDeleted],
-			[key_data_result].[Id] as [Id_1],
-			[key_data_result].[Title] as [Title_1],
-			[key_data_result].[Slogan],
-			[key_data_result].[UserId]
+			[d].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[b].[Id],
-					[b].[Title],
-					[b].[Slogan],
-					[b].[UserId]
+					[b].[Id]
 				FROM
 					[Blog] [b]
 				WHERE
 					[b].[Id] = @blogId
-			) [key_data_result]
-				INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
-	) [key_data_result_1]
-		INNER JOIN [PostTag] [detail_1] ON [key_data_result_1].[Id] = [detail_1].[PostId] AND [detail_1].[IsDeleted] = 0
-		INNER JOIN [Tag] [a_Tag] ON [detail_1].[TagId] = [a_Tag].[Id]
+			) [t1]
+				INNER JOIN [Post] [d] ON [t1].[Id] = [d].[BlogId]
+	) [m_1]
+		INNER JOIN [PostTag] [d_1] ON [m_1].[Id] = [d_1].[PostId]
+		INNER JOIN [Tag] [a_Tag] ON [d_1].[TagId] = [a_Tag].[Id]
+WHERE
+	[d_1].[IsDeleted] = 0
 ORDER BY
-	[detail_1].[TagId]
+	[d_1].[TagId]
 
 BeforeExecute
 -- SqlServer.2017
@@ -184,30 +169,22 @@ DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Title],
-	[key_data_result].[Slogan],
-	[key_data_result].[UserId],
-	[detail].[Id],
-	[detail].[Title],
-	[detail].[PostContent],
-	[detail].[BlogId],
-	[detail].[IsDeleted]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Title],
+	[d].[PostContent]
 FROM
 	(
 		SELECT DISTINCT
-			[b].[Id],
-			[b].[Title],
-			[b].[Slogan],
-			[b].[UserId]
+			[b].[Id]
 		FROM
 			[Blog] [b]
 		WHERE
 			[b].[Id] = @blogId
-	) [key_data_result]
-		INNER JOIN [Post] [detail] ON [key_data_result].[Id] = [detail].[BlogId]
+	) [m_1]
+		INNER JOIN [Post] [d] ON [m_1].[Id] = [d].[BlogId]
 ORDER BY
-	[detail].[Id]
+	[d].[Id]
 
 BeforeExecute
 DisposeTransaction
@@ -218,9 +195,7 @@ SET     @blogId = 1
 
 SELECT
 	[b].[Id],
-	[b].[Title],
-	[b].[Slogan],
-	[b].[UserId]
+	[b].[Title]
 FROM
 	[Blog] [b]
 WHERE

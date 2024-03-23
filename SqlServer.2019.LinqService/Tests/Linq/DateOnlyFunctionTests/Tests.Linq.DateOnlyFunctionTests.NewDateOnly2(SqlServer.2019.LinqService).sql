@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	[p].[DateTimeValue]
+	DatePart(year, [p].[DateTimeValue])
 FROM
 	[LinqDataTypes] [p]
 

@@ -31,12 +31,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -55,22 +53,18 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = @FirstName
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -95,25 +89,21 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName,
-	[t1].[Gender] = @Gender
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[_].[FirstName],
 	[_].[PersonID],
 	[_].[LastName],

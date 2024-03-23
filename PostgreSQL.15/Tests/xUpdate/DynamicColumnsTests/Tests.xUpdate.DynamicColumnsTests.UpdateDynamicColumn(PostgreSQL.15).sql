@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Text(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender Text(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
 
 BeforeExecute
@@ -26,11 +32,13 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @FirstName Text(6) -- String
+SET     @FirstName = 'Johnny'
 
 UPDATE
 	"Person"
 SET
-	"FirstName" = 'Johnny'
+	"FirstName" = :FirstName
 WHERE
 	"Person"."LastName" = 'Limonadovy'
 

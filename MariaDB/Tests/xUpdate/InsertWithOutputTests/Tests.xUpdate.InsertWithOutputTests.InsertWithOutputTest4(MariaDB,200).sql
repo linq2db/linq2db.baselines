@@ -22,10 +22,11 @@ RETURNING
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @ChildID Int32
+SET     @ChildID = 200
 
 SELECT
-	`c_1`.`ChildID`,
-	`c_1`.`ParentID`
+	`c_1`.`ChildID` + `c_1`.`ParentID` + @ChildID
 FROM
 	`Child` `c_1`
 WHERE
@@ -34,9 +35,9 @@ WHERE
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`Child` `t1`
+	`Child` `c_1`
 WHERE
-	`t1`.`ChildID` > 1000
+	`c_1`.`ChildID` > 1000
 

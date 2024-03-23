@@ -84,8 +84,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -93,12 +91,10 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', 'FOUR')
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -106,12 +102,10 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', NULL)
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -119,12 +113,10 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -132,12 +124,10 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" NOT IN (NULL, 'TWO')
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -145,7 +135,7 @@ FROM
 	"Src" s
 WHERE
 	s."Enum" NOT IN ('THREE', 'TWO')
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

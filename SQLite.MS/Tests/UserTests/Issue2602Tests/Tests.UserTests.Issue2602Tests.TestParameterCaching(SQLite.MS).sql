@@ -32,37 +32,28 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 35
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Email].[Id],
-	[detail].[Id],
-	[detail].[EmailId],
-	[detail].[FileName]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[EmailId],
+	[d].[FileName]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id]
+		SELECT
+			[c_1].[Id]
 		FROM
-			(
-				SELECT
-					[c_1].[Id]
-				FROM
-					[Emails] [c_1]
-				WHERE
-					[c_1].[Id] = @Id
-				LIMIT @take
-			) [t1]
-	) [lw_Email]
-		INNER JOIN [EmailAttachment] [detail] ON [lw_Email].[Id] = [detail].[EmailId]
+			[Emails] [c_1]
+		WHERE
+			[c_1].[Id] = @Id
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 35
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Id]
@@ -70,7 +61,7 @@ FROM
 	[Emails] [c_1]
 WHERE
 	[c_1].[Id] = @Id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction
@@ -80,37 +71,28 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 36
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Email].[Id],
-	[detail].[Id],
-	[detail].[EmailId],
-	[detail].[FileName]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[EmailId],
+	[d].[FileName]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id]
+		SELECT
+			[c_1].[Id]
 		FROM
-			(
-				SELECT
-					[c_1].[Id]
-				FROM
-					[Emails] [c_1]
-				WHERE
-					[c_1].[Id] = @Id
-				LIMIT @take
-			) [t1]
-	) [lw_Email]
-		INNER JOIN [EmailAttachment] [detail] ON [lw_Email].[Id] = [detail].[EmailId]
+			[Emails] [c_1]
+		WHERE
+			[c_1].[Id] = @Id
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 36
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[c_1].[Id]
@@ -118,7 +100,7 @@ FROM
 	[Emails] [c_1]
 WHERE
 	[c_1].[Id] = @Id
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

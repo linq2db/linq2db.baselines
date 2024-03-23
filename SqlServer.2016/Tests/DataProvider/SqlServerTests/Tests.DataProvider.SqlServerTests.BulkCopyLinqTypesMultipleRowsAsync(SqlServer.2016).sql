@@ -26,9 +26,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2016
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[dbo].[LinqDataTypes] [t1]
+	[dbo].[LinqDataTypes] [p]
 WHERE
-	[t1].[ID] >= 4000
+	[p].[ID] >= 4000
 

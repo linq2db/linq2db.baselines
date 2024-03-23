@@ -2,22 +2,25 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
-	"Child" t1
-GROUP BY
-	t1."ParentID"
+	(
+		SELECT DISTINCT
+			g_1."ParentID"
+		FROM
+			"Child" g_1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
 
 SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
+	g_1."ParentID"
 FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = :ParentID
+	"Child" g_1
+GROUP BY
+	g_1."ParentID"
 

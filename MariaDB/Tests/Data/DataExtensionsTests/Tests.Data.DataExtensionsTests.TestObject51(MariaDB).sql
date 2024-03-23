@@ -2,11 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
-	`p`.`Gender`
+	`p`.`FirstName`
 FROM
 	`Person` `p`
 WHERE

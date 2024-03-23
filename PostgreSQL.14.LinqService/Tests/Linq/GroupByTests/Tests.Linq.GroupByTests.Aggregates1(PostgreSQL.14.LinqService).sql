@@ -2,13 +2,13 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*),
-	Sum(t1."ChildID"),
-	Min(t1."ChildID"),
-	Max(t1."ChildID"),
-	Avg(t1."ChildID")
+	COUNT(*),
+	SUM(g_1."ChildID"),
+	MIN(g_1."ChildID"),
+	MAX(g_1."ChildID"),
+	AVG(g_1."ChildID")
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID"
+	g_1."ParentID"
 

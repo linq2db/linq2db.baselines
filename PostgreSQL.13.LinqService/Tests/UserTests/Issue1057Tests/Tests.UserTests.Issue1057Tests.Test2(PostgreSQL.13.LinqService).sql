@@ -106,8 +106,8 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."Id",
 	p."TargetName",
+	p."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" p

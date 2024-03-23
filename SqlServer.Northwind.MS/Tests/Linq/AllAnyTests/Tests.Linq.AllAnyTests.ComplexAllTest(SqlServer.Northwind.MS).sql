@@ -18,8 +18,8 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+		LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID] OR [o].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
 WHERE
 	(NOT EXISTS(
 		SELECT
@@ -27,7 +27,7 @@ WHERE
 		FROM
 			[Customers] [c_1]
 		WHERE
-			([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL) AND
+			[c_1].[CustomerID] = [a_Customer].[CustomerID] AND
 			[c_1].[CompanyName] NOT LIKE N'A%' ESCAPE N'~'
 	) OR NOT EXISTS(
 		SELECT

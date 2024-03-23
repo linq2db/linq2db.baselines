@@ -127,12 +127,12 @@ DECLARE @separator Varchar2(4) -- String
 SET     @separator = ' -> '
 
 SELECT
-	LISTAGG(t1."Value4", :separator) WITHIN GROUP (ORDER BY t1."Value3" DESC, t1."Value4")
+	LISTAGG(g_1."Value4", :separator) WITHIN GROUP (ORDER BY g_1."Value3" DESC, g_1."Value4")
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value4"
+	g_1."Id",
+	g_1."Value4"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

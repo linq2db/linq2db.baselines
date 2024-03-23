@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	(([_].[PersonID] = @id OR [_].[PersonID] <= @id) OR [_].[PersonID] = @id)
+	([_].[PersonID] = @id OR [_].[PersonID] <= @id OR [_].[PersonID] = @id)
 

@@ -4,12 +4,12 @@ DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe'
 
 SELECT
-	[t1].[item]
+	[n].[item]
 FROM
 	[Person] [p]
 		CROSS APPLY (VALUES
 			([p].[FirstName]), ([p].[LastName]), (N'John'), (@doe)
-		) [t1]([item])
+		) [n]([item])
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -17,10 +17,10 @@ DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe1'
 
 SELECT
-	[t1].[item]
+	[n].[item]
 FROM
 	[Person] [p]
 		CROSS APPLY (VALUES
 			([p].[FirstName]), ([p].[LastName]), (N'John'), (@doe)
-		) [t1]([item])
+		) [n]([item])
 

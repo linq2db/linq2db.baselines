@@ -3,28 +3,26 @@
 
 SELECT
 	[p].[Value1],
-	[t2].[Count_1],
-	[t3].[Count_1]
+	[t1].[COUNT_1],
+	[t2].[COUNT_1] as [COUNT_2]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [p].[ParentID] = [t2].[ParentID]
-		LEFT JOIN (
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[c_1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [c_1]
-			GROUP BY
-				[c_1].[ParentID]
-		) [t3] ON [p].[ParentID] = [t3].[ParentID] AND [t3].[ParentID] = [p].[ParentID]
+			WHERE
+				[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] = [p].[ParentID]
+		) [t2]
 WHERE
 	[p].[ParentID] <> 5
 

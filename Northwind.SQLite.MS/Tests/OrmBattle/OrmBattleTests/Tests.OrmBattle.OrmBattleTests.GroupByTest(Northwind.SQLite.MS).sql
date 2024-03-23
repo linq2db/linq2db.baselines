@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,11 +75,42 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
+BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT
+	[m_1].[OrderDate],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[OrderDate]
+		FROM
+			[Orders] [t1]
+	) [m_1]
+		INNER JOIN [Orders] [d] ON DateTime([m_1].[OrderDate]) = DateTime([d].[OrderDate])
+
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 

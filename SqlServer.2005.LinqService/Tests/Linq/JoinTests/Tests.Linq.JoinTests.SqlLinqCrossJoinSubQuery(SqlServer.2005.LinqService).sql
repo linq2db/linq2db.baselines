@@ -7,7 +7,7 @@ SET     @take_1 = 10
 
 SELECT
 	[p_1].[ParentID],
-	[c_1].[ChildID]
+	[t1].[ChildID]
 FROM
 	(
 		SELECT TOP (@take)
@@ -19,8 +19,8 @@ FROM
 	) [p_1],
 	(
 		SELECT TOP (@take_1)
-			[t1].[ChildID]
+			[c_1].[ChildID]
 		FROM
-			[Child] [t1]
-	) [c_1]
+			[Child] [c_1]
+	) [t1]
 

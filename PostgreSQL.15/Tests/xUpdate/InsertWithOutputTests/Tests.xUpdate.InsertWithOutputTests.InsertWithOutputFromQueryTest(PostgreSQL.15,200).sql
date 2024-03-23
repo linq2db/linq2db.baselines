@@ -65,7 +65,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || Cast(:param_1 as VarChar(100))
+	s."ValueStr" || :param_1
 FROM
 	"TableWithData" s
 WHERE
@@ -77,11 +77,17 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 200
+DECLARE @Value Integer -- Int32
+SET     @Value = 200
+DECLARE @p Integer -- Int32
+SET     @p = 200
 
 SELECT
-	s."Id",
-	s."Value",
-	s."ValueStr"
+	s."Id" + :Id,
+	s."Value" + :Value,
+	s."ValueStr" || :p
 FROM
 	"TableWithData" s
 WHERE

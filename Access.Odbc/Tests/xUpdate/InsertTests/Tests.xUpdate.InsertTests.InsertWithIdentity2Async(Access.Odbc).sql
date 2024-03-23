@@ -2,12 +2,18 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -17,9 +23,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	?,
+	?,
+	?
 )
 
 BeforeExecute
@@ -45,7 +51,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 

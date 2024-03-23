@@ -42,11 +42,9 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -55,7 +53,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -71,24 +69,22 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."Gender" = :Gender,
-	"Person"."FirstName" = :Name_FirstName,
-	"Person"."MiddleName" = :Name_MiddleName,
-	"Person"."LastName" = :Name_LastName
+	"Gender" = :Gender,
+	"FirstName" = :Name_FirstName,
+	"MiddleName" = :Name_MiddleName,
+	"LastName" = :Name_LastName
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -97,5 +93,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

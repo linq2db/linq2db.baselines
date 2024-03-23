@@ -33,12 +33,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Json]
 FROM
@@ -52,22 +50,18 @@ DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 UPDATE
-	[o]
+	[TestTable]
 SET
-	[o].[Json] = JSON_MODIFY(JSON_MODIFY([o].[Json], N'$.Number', 10), N'$.String', N'Test1')
-FROM
-	[TestTable] [o]
+	[Json] = JSON_MODIFY(JSON_MODIFY([TestTable].[Json], N'$.Number', 10), N'$.String', N'Test1')
 WHERE
-	[o].[Id] = @Id
+	[TestTable].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Json]
 FROM

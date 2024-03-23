@@ -137,11 +137,21 @@ VALUES
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [c_2]
+DELETE [a_GrandChildren]
 FROM
 	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		INNER JOIN [GrandChild] [c_2] ON [c_1].[ParentID] = [c_2].[ParentID] AND [c_1].[ChildID] = [c_2].[ChildID]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
+		INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
+WHERE
+	[p].[ParentID] >= 1000
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+DELETE [a_Children]
+FROM
+	[Parent] [p]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
 WHERE
 	[p].[ParentID] >= 1000
 
@@ -150,35 +160,25 @@ BeforeExecute
 
 DELETE [c_1]
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+	[GrandChild] [c_1]
 WHERE
-	[p].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[GrandChild] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

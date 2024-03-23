@@ -11,9 +11,9 @@ FROM
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
-	) [t1]
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -31,7 +31,7 @@ FROM
 		ORDER BY
 			1
 		OFFSET 12 ROWS FETCH NEXT 3 ROWS ONLY 
-	) [t1]
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 

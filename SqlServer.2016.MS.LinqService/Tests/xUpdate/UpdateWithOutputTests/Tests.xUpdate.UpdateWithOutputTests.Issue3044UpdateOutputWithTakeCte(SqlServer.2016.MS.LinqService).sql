@@ -216,43 +216,35 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 20
 
-WITH [CTE_1] ([Id], [Value], [ValueStr])
+WITH [CTE_1] ([Value], [ValueStr], [Id])
 AS
 (
-	SELECT
-		[t1].[Id],
-		[t1].[Value_1],
-		[t1].[ValueStr]
+	SELECT TOP (@take)
+		[i].[Value],
+		[i].[ValueStr],
+		[i].[Id]
 	FROM
-		(
-			SELECT TOP (@take)
-				[i].[Id],
-				[i].[Value] as [Value_1],
-				[i].[ValueStr]
-			FROM
-				[TableWithData] [i]
-			WHERE
-				[i].[Id] >= 7
-			ORDER BY
-				[i].[Id]
-		) [t1]
+		[TableWithData] [i]
+	WHERE
+		[i].[Id] = 7
+	ORDER BY
+		[i].[Id]
 )
 UPDATE
-	[t2]
+	[CTE_1]
 SET
-	[t2].[Id] = 20,
-	[t2].[Value] = [t2].[Value],
-	[t2].[ValueStr] = [t2].[ValueStr]
+	[Value] = @p,
+	[ValueStr] = [CTE_1].[ValueStr]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
-FROM
-	[CTE_1] [t2]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

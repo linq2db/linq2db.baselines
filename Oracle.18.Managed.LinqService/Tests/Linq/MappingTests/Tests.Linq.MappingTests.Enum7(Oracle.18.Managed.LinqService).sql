@@ -2,11 +2,13 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @v1 Int32
 SET     @v1 = 1
+DECLARE @v1_1 Int32
+SET     @v1_1 = 1
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."Value1" = :v1
+	"Value1" = :v1
 WHERE
-	"Parent"."Value1" = :v1
+	p."Value1" = :v1_1
 

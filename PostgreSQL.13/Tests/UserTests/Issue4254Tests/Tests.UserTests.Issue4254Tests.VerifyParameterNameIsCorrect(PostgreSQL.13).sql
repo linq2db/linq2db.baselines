@@ -59,12 +59,12 @@ DECLARE @now Timestamp -- DateTime2
 SET     @now = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
-	key_data_result.id,
-	detail.category_id
+	m_1."Id",
+	d.category_id
 FROM
 	(
 		SELECT DISTINCT
-			x.id
+			x.id as "Id"
 		FROM
 			issue_4254_media_items x
 		WHERE
@@ -85,8 +85,8 @@ FROM
 					x.id = y_1.media_item_id AND y_1.created_by_id = :userId AND
 					y_1.expires_at > :now
 			))
-	) key_data_result
-		INNER JOIN issue_4254_media_item_to_media_item_categories detail ON key_data_result.id = detail.media_item_id
+	) m_1
+		INNER JOIN issue_4254_media_item_to_media_item_categories d ON m_1."Id" = d.media_item_id
 
 BeforeExecute
 DisposeTransaction
@@ -144,12 +144,12 @@ DECLARE @now Timestamp -- DateTime2
 SET     @now = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
-	key_data_result.id,
-	detail.category_id
+	m_1."Id",
+	d.category_id
 FROM
 	(
 		SELECT DISTINCT
-			x.id
+			x.id as "Id"
 		FROM
 			issue_4254_media_items x
 		WHERE
@@ -170,8 +170,8 @@ FROM
 					x.id = y_1.media_item_id AND y_1.created_by_id = :userId AND
 					y_1.expires_at > :now
 			))
-	) key_data_result
-		INNER JOIN issue_4254_media_item_to_media_item_categories detail ON key_data_result.id = detail.media_item_id
+	) m_1
+		INNER JOIN issue_4254_media_item_to_media_item_categories d ON m_1."Id" = d.media_item_id
 
 BeforeExecute
 DisposeTransaction

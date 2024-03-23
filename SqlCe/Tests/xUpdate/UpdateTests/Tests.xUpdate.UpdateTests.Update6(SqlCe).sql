@@ -22,7 +22,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE
@@ -30,13 +30,15 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 2
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = 2
+	[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = @id
 
@@ -46,7 +48,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE

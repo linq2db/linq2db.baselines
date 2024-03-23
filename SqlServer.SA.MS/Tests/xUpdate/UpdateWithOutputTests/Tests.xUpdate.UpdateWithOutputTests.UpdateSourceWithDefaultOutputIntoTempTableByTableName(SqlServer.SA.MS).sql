@@ -48,25 +48,23 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 UPDATE
-	[s]
+	[TableWithData_source]
 SET
-	[s].[Id] = [s].[Id],
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
+	[Id] = [TableWithData_source].[Id],
+	[Value] = [TableWithData_source].[Value] + 1,
+	[ValueStr] = [TableWithData_source].[ValueStr] + N'Upd'
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#TableWithData_destination]
 (
 	[Id],
 	[Value],
 	[ValueStr]
 )
-FROM
-	[TableWithData_source] [s]
 WHERE
-	[s].[Id] > 3
+	[TableWithData_source].[Id] > 3
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

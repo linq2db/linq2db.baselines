@@ -8,7 +8,7 @@ SET     @ParentID = 10000
 UPDATE
 	[GrandChild]
 SET
-	[GrandChild].[GrandChildID] = @GrandChildID
+	[GrandChildID] = @GrandChildID
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
@@ -24,7 +24,7 @@ SET     @ChildID = 111
 UPDATE
 	[GrandChild]
 SET
-	[GrandChild].[GrandChildID] = @GrandChildID
+	[GrandChildID] = @GrandChildID
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] = @ChildID
 

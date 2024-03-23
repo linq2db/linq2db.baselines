@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t.ID,
@@ -16,5 +14,5 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."MoneyValue" * t.ID = 1.11
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

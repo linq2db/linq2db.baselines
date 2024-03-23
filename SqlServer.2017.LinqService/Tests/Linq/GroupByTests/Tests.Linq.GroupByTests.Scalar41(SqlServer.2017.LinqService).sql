@@ -2,31 +2,17 @@
 -- SqlServer.2017
 
 SELECT
-	(
-		SELECT
-			Min([keyParam].[ChildID])
-		FROM
-			[Child] [keyParam]
-		WHERE
-			[g_2].[ParentID] = [keyParam].[ParentID] AND [keyParam].[ParentID] > 2
-	)
+	[g_2].[MIN_2]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Min([keyParam_1].[ChildID])
-				FROM
-					[Child] [keyParam_1]
-				WHERE
-					[g_1].[ParentID] = [keyParam_1].[ParentID] AND [keyParam_1].[ParentID] > 2
-			) as [ex],
-			[g_1].[ParentID]
+			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [MIN_1],
+			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [MIN_2]
 		FROM
 			[Child] [g_1]
 		GROUP BY
 			[g_1].[ParentID]
 	) [g_2]
 WHERE
-	[g_2].[ex] IS NOT NULL
+	[g_2].[MIN_1] IS NOT NULL
 

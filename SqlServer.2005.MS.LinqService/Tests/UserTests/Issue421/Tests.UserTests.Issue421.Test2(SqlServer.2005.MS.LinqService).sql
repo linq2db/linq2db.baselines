@@ -45,13 +45,11 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[_]
+	[BlobClass]
 SET
-	[_].[BlobValue] = 0x030201
-FROM
-	[BlobClass] [_]
+	[BlobValue] = 0x030201
 WHERE
-	[_].[Id] = 1
+	[BlobClass].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

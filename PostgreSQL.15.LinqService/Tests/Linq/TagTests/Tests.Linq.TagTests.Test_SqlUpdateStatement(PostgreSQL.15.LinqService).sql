@@ -16,12 +16,14 @@ CREATE TABLE IF NOT EXISTS "TestTable"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Fd Integer -- Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
 	"TestTable"
 SET
-	"Fd" = 1
+	"Fd" = :Fd
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

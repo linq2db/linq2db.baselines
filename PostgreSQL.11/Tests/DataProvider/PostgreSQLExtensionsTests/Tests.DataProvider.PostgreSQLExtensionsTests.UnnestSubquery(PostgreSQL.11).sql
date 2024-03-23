@@ -162,21 +162,18 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
-	t2."First_1"
+	(
+		SELECT
+			t1
+		FROM
+			UNNEST(t."StrArray") t1
+		LIMIT 1
+	)
 FROM
 	"SampleClass" t
-		LEFT JOIN LATERAL (
-			SELECT
-				t1 as "First_1"
-			FROM
-				UNNEST(t."StrArray") t1
-			LIMIT :take
-		) t2 ON 1=1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

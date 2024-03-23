@@ -2,9 +2,9 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -46,7 +46,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 

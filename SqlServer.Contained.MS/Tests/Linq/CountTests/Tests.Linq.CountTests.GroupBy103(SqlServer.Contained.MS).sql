@@ -2,18 +2,10 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [ch]
-		WHERE
-			[t1].[ParentID] = [ch].[ParentID] AND [t1].[ChildID] = [ch].[ChildID] AND
-			[ch].[ChildID] > 20
-	)
+	COUNT(IIF([g_1].[ChildID] > 20, 1, NULL))
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[g_1].[ParentID],
+	[g_1].[ChildID]
 

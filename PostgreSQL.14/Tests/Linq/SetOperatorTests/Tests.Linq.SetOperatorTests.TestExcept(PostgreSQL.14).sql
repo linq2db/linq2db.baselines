@@ -56,7 +56,7 @@ FROM
 		FROM
 			"SampleData" t
 		WHERE
-			t."Id" % 2 = 0
+			Cast(Floor(Cast(t."Id" as decimal) % 2) as Int) = 0
 		UNION ALL
 		SELECT
 			t_1."Id",
@@ -66,7 +66,7 @@ FROM
 		FROM
 			"SampleData" t_1
 		WHERE
-			t_1."Id" % 2 = 0
+			Cast(Floor(Cast(t_1."Id" as decimal) % 2) as Int) = 0
 	) t1
 EXCEPT
 SELECT
@@ -77,7 +77,7 @@ SELECT
 FROM
 	"SampleData" t_2
 WHERE
-	t_2."Id" % 4 = 0
+	Cast(Floor(Cast(t_2."Id" as decimal) % 4) as Int) = 0
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

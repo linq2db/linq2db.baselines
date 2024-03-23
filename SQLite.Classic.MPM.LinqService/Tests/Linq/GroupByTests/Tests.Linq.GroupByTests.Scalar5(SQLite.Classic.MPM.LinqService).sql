@@ -2,9 +2,16 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Max([ch].[ParentID])
+	(
+		SELECT
+			MAX([ch].[ParentID])
+		FROM
+			[Child] [ch]
+		WHERE
+			[g_1].[ParentID] = [ch].[ParentID]
+	)
 FROM
-	[Child] [ch]
+	[Child] [g_1]
 GROUP BY
-	[ch].[ParentID]
+	[g_1].[ParentID]
 

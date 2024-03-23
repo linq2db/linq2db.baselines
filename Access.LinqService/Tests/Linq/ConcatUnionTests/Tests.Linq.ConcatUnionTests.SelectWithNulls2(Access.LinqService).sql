@@ -16,16 +16,16 @@ FROM
 	[LinqDataTypes] [t1]
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
+	IIF(False, #0001-01-01#, NULL),
+	IIF(False, #0001-01-01#, NULL),
+	IIF(False, False, NULL),
+	IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL),
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
+	IIF(False, '', NULL)
 FROM
 	[LinqDataTypes] [d]
 

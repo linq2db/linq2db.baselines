@@ -5,7 +5,7 @@ SET     @FirstName = '1'
 
 SELECT
 	[r].[FirstName],
-	[r].[PersonID],
+	[r].[PersonID] as [ID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]
@@ -19,7 +19,7 @@ BeforeExecute
 
 SELECT
 	[r].[FirstName],
-	[r].[PersonID],
+	[r].[PersonID] as [ID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]
@@ -35,7 +35,7 @@ SET     @FirstName = '1'
 
 SELECT
 	[r].[FirstName],
-	[r].[PersonID],
+	[r].[PersonID] as [ID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]

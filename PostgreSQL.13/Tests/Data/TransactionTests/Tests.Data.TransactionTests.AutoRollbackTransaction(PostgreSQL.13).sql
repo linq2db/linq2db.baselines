@@ -20,11 +20,13 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1012
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = 1012
+	"Value1" = :Value1
 WHERE
 	"Parent"."ParentID" = 1010
 
@@ -32,8 +34,6 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -42,5 +42,5 @@ FROM
 	"Parent" t
 WHERE
 	t."ParentID" = 1010
-LIMIT :take
+LIMIT 1
 

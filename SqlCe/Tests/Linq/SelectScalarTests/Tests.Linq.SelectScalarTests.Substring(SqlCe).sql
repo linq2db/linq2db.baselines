@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p NVarChar(2) -- String
-SET     @p = '23'
 
 SELECT
-	@p
+	Substring('123', 2, 2) as [c1]
 

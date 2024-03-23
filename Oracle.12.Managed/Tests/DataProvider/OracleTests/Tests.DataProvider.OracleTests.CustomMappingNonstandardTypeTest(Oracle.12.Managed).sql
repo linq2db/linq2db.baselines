@@ -15,19 +15,19 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"AllTypes"
+	"AllTypes" mt
 SET
-	"AllTypes"."datetimeoffsetDataType" = :MyDate
+	"datetimeoffsetDataType" = :MyDate
 WHERE
-	"AllTypes".ID = :ID
+	mt.ID = :ID
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"AllTypes"
+	"AllTypes" mt
 SET
-	"AllTypes"."datetimeoffsetDataType" = NULL
+	"datetimeoffsetDataType" = NULL
 WHERE
-	"AllTypes".ID = 1
+	mt.ID = 1
 

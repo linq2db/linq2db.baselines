@@ -30,11 +30,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE
-	[t1]
+	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE
@@ -60,12 +60,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],
@@ -87,11 +85,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE
-	[t1]
+	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE
@@ -117,12 +115,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[ID],
 	[x].[FirstName],
 	[x].[LastName],

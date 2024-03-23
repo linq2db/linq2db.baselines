@@ -47,12 +47,12 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Id",
 	t1."Discriminator",
-	t1."Value1",
-	t1."Value2",
+	t1."Id",
 	t1."Value3",
-	t1."NullableBool"
+	t1."NullableBool",
+	t1."Value2",
+	t1."Value1"
 FROM
 	"TPHTable" t1
 ORDER BY
@@ -60,111 +60,99 @@ ORDER BY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Discriminator" = 3
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Value1" = 'Str1'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Value2" = 'Str2'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
 	x."Value3" = 'Str3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

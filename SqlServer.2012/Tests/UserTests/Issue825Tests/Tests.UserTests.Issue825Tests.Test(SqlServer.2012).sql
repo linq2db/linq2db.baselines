@@ -1,22 +1,24 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @childId Int -- Int32
-SET     @childId = 32
 DECLARE @userId Int -- Int32
 SET     @userId = 32
+DECLARE @childId Int -- Int32
+SET     @childId = 32
 
 SELECT
-	[p].[ParentID]
+	[child_1].[ParentID]
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+	[Parent] [child_1]
+		INNER JOIN [Child] [a_Childs] ON [child_1].[ParentID] = [a_Childs].[ParentID]
 WHERE
-	[c_1].[ChildID] = @childId AND EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[GrandChild] [permission]
 		WHERE
-			[p].[ParentID] = [permission].[ParentID] AND [permission].[ChildID] = @userId
-	)
+			[child_1].[ParentID] = [permission].[ParentID] AND
+			[permission].[ChildID] = @userId
+	) AND
+	[a_Childs].[ChildID] = @childId
 

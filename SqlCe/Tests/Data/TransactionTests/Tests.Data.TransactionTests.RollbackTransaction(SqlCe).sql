@@ -20,11 +20,13 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlCe
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1012
 
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = 1012
+	[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = 1010
 
@@ -32,10 +34,8 @@ BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM

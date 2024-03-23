@@ -22,14 +22,18 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @MoneyValue Decimal(4, 0)
+SET     @MoneyValue = 2000
+DECLARE @SmallIntValue  -- Int16
+SET     @SmallIntValue = 200
 DECLARE @ID  -- Int32
 SET     @ID = 1001
 
 UPDATE
 	[LinqDataTypes]
 SET
-	[MoneyValue] = 2000,
-	[SmallIntValue] = 200
+	[MoneyValue] = @MoneyValue,
+	[SmallIntValue] = @SmallIntValue
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
@@ -37,8 +41,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t].[ID],
@@ -53,5 +55,5 @@ FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = @ID
-LIMIT @take
+LIMIT 2
 

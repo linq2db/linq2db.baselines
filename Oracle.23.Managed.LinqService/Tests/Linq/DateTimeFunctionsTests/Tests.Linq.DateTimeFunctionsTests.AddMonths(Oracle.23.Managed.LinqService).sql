@@ -2,7 +2,7 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + -2 * INTERVAL '1' MONTH
+	Trunc(t."DateTimeValue" + -2 * INTERVAL '1' MONTH, 'DD')
 FROM
 	"LinqDataTypes" t
 

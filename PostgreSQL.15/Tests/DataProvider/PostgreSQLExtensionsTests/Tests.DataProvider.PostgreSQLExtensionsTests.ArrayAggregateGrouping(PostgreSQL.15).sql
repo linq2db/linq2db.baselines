@@ -164,49 +164,49 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."Key_1",
-	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"),
-	ARRAY_AGG(t1.v ORDER BY t1."Id" DESC, t1.v),
-	ARRAY_AGG(t1.v)
+	g_2.c1,
+	ARRAY_AGG(ALL g_2.v ORDER BY g_2."Id"),
+	ARRAY_AGG(g_2.v ORDER BY g_2."Id" DESC, g_2.v),
+	ARRAY_AGG(g_2.v)
 FROM
 	(
 		SELECT
-			"selectParam"."Id" / 3 as "Key_1",
-			"selectParam"."Id",
-			v.* as v
+			g_1."Id" / 3 as c1,
+			g_1."Id",
+			v as v
 		FROM
-			"SampleClass" "selectParam"
-				INNER JOIN LATERAL UNNEST("selectParam"."StrArray") v ON 1=1
-	) t1
+			"SampleClass" g_1
+				INNER JOIN LATERAL UNNEST(g_1."StrArray") v ON 1=1
+	) g_2
 GROUP BY
-	t1."Key_1"
+	g_2.c1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	ARRAY_AGG(v.*)
+	ARRAY_AGG(v)
 FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+	"SampleClass" t1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	ARRAY_AGG(DISTINCT v.*)
+	ARRAY_AGG(DISTINCT v)
 FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+	"SampleClass" t1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	ARRAY_AGG(v.* ORDER BY v.*)
+	ARRAY_AGG(v ORDER BY v)
 FROM
-	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+	"SampleClass" t1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

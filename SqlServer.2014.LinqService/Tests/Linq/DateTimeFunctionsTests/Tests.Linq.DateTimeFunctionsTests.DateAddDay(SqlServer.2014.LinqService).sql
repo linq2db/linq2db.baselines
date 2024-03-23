@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	DateAdd(day, 5, [t].[DateTimeValue])
+	Convert(Date, DateAdd(day, 5, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

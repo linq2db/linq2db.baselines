@@ -34,8 +34,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Id],
@@ -44,12 +42,10 @@ FROM
 	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[Id],
@@ -58,7 +54,7 @@ FROM
 	[BlobClass] [_]
 WHERE
 	[_].[Id] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

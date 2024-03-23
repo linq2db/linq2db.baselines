@@ -45,16 +45,16 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 3
-DECLARE @skip_1 Int32
-SET     @skip_1 = 1
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
-	t1."Value"
+	t1."Value" as "Value_1"
 FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-OFFSET :skip ROWS FETCH NEXT :skip_1 ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

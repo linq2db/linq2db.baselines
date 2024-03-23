@@ -36,9 +36,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @n  -- Int32
+SET     @n = 2
 
 SELECT
-	[t].[Id] - 3
+	([t].[Id] - @n) - @n + 1
 FROM
 	[DataClass] [t]
 
@@ -46,11 +48,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @n  -- Int32
 SET     @n = 2
-DECLARE @n_1  -- Int32
-SET     @n_1 = 2
 
 SELECT
-	([t].[Id] - @n) - @n_1 + 1
+	([t].[Id] - @n) - @n + 1
 FROM
 	[DataClass] [t]
 

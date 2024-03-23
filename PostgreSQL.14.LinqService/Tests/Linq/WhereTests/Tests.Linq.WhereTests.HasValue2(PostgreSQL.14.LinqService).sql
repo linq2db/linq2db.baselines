@@ -7,5 +7,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."Value1" IS NULL
+	NOT (p."Value1" IS NOT NULL)
 

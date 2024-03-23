@@ -38,6 +38,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis VarChar(8) -- String
+SET     @Diagnosis = 'negative'
 
 INSERT IGNORE INTO `Patient`
 (
@@ -47,7 +49,7 @@ INSERT IGNORE INTO `Patient`
 VALUES
 (
 	@id,
-	'negative'
+	@Diagnosis
 )
 
 BeforeExecute
@@ -67,6 +69,8 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis VarChar(8) -- String
+SET     @Diagnosis = 'positive'
 
 INSERT IGNORE INTO `Patient`
 (
@@ -76,7 +80,7 @@ INSERT IGNORE INTO `Patient`
 VALUES
 (
 	@id,
-	'positive'
+	@Diagnosis
 )
 
 BeforeExecute

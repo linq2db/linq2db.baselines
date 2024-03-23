@@ -42,6 +42,8 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis Varchar2(8) -- String
+SET     @Diagnosis = 'negative'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -57,7 +59,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		'negative'
+		:Diagnosis
 	)
 
 BeforeExecute
@@ -77,6 +79,8 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis Varchar2(8) -- String
+SET     @Diagnosis = 'positive'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -92,7 +96,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		'positive'
+		:Diagnosis
 	)
 
 BeforeExecute

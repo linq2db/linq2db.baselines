@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
@@ -104,7 +104,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 

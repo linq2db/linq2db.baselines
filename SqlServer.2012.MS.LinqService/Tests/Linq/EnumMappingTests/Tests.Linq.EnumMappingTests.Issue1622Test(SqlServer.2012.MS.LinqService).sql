@@ -36,10 +36,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]
 FROM
@@ -49,10 +47,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]
 FROM

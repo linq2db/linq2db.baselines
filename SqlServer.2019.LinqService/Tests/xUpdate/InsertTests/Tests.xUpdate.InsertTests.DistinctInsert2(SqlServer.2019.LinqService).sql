@@ -1,14 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [c_1]
 WHERE
-	[t1].[ID] > 1000
+	[c_1].[ID] > 1000
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @BoolValue Bit -- Boolean
+SET     @BoolValue = 1
 
 INSERT INTO [LinqDataTypes]
 (
@@ -19,7 +21,7 @@ INSERT INTO [LinqDataTypes]
 SELECT
 	Convert(Int, [t1].[c1] + 1001),
 	NewID(),
-	1
+	@BoolValue
 FROM
 	(
 		SELECT DISTINCT
@@ -31,9 +33,9 @@ FROM
 BeforeExecute
 -- SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [c_1]
 WHERE
-	[t1].[ID] > 1000
+	[c_1].[ID] > 1000
 

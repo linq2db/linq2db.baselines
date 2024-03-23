@@ -13,6 +13,24 @@ WHERE
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
+			[c_1].[ParentID] = [p].[ParentID]
 	)
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

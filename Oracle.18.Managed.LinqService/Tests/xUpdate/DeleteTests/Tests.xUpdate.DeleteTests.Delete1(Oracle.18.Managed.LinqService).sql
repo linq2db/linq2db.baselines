@@ -44,9 +44,9 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

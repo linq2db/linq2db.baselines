@@ -166,6 +166,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @Bool3 Char -- AnsiStringFixedLength
+SET     @Bool3 = NULL
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -177,7 +179,7 @@ SELECT
 FROM
 	"Issue3830TestTable" r
 WHERE
-	(r."Bool3" IS NULL OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
+	(r."Bool3" = :Bool3 OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
 	r."Bool2" IS NULL
 
 BeforeExecute
@@ -299,6 +301,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @Bool3 Char -- AnsiStringFixedLength
+SET     @Bool3 = NULL
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -312,7 +316,7 @@ SELECT
 FROM
 	"Issue3830TestTable" r
 WHERE
-	(r."Bool3" IS NULL OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
+	(r."Bool3" = :Bool3 OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
 	r."Bool2" = :Bool2
 
 BeforeExecute

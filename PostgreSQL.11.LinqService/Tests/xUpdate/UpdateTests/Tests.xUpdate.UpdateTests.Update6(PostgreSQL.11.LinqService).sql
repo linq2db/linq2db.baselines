@@ -30,13 +30,15 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = 2
+	"Value1" = :Value1
 WHERE
 	"Parent"."ParentID" = :id
 

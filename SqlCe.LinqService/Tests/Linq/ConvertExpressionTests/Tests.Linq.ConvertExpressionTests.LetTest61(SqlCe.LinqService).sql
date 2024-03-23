@@ -1,63 +1,56 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
-	[cp].[ParentID],
+	[t].[ParentID],
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				[Child] [c_1]
+				[Child] [c_4]
 			WHERE
-				[c_1].[ParentID] = [cp].[ParentID] AND [c_1].[ChildID] > -100
+				[c_4].[ParentID] = [t].[ParentID] AND [c_4].[ChildID] > -100
 		)
 			THEN 1
 		ELSE 0
-	END,
-	[t3].[Count_1],
-	[t1].[First1],
-	[t2].[ParentID],
-	[t2].[ChildID]
+	END as [Any_1],
+	[t1].[COUNT_1],
+	[t2].[ParentID] as [ParentID_1],
+	[t3].[ParentID] as [ParentID_2],
+	[t3].[ChildID]
 FROM
-	[Parent] [cp]
+	[Parent] [t]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[c_2].[ParentID] as [First1]
+			SELECT
+				COUNT(*) as [COUNT_1]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = [t].[ParentID] AND [c_1].[ChildID] > -100
+		) [t1]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[c_2].[ParentID]
 			FROM
 				[Child] [c_2]
 			WHERE
-				[c_2].[ParentID] = [cp].[ParentID] AND [c_2].[ChildID] > -100 AND
+				[c_2].[ParentID] = [t].[ParentID] AND [c_2].[ChildID] > -100 AND
 				[c_2].[ParentID] > 0
 			ORDER BY
 				[c_2].[ChildID]
-		) [t1]
+		) [t2]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
+			SELECT TOP (1)
 				[c_3].[ParentID],
 				[c_3].[ChildID]
 			FROM
 				[Child] [c_3]
 			WHERE
-				[c_3].[ParentID] = [cp].[ParentID] AND [c_3].[ChildID] > -100
+				[c_3].[ParentID] = [t].[ParentID] AND [c_3].[ChildID] > -100
 			ORDER BY
 				[c_3].[ChildID]
-		) [t2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[c_4].[ParentID]
-			FROM
-				[Child] [c_4]
-			WHERE
-				[c_4].[ChildID] > -100
-			GROUP BY
-				[c_4].[ParentID]
-		) [t3] ON [t3].[ParentID] = [cp].[ParentID]
+		) [t3]
 WHERE
-	[cp].[ParentID] > 0
+	[t].[ParentID] > 0
 

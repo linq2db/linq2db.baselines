@@ -14,14 +14,12 @@ CREATE COLUMN TABLE "SampleClass"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	Add_Days(CURRENT_TIMESTAMP, 1),
 	Add_Days(CURRENT_TIMESTAMP, 2)
 FROM DUMMY
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

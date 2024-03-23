@@ -103,21 +103,17 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	[t3].[NAME3],
-	[t2].[Name1],
+	[t2].[Id2],
 	[t2].[Id1],
-	[t2].[Name2],
-	[t2].[Id2]
+	[t2].[Name1],
+	[t2].[Name2]
 FROM
 	[TABLE3] [t3]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[t1].[Name1],
 				[t1].[Id1],
 				[x_1].[NAME2] as [Name2],
@@ -125,7 +121,7 @@ FROM
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
-						SELECT TOP (@take_1)
+						SELECT TOP (1)
 							[x].[NAME1] as [Name1],
 							[x].[ID1] as [Id1]
 						FROM
@@ -138,6 +134,35 @@ FROM
 		) [t2]
 ORDER BY
 	[t3].[ID3]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[ID3],
+	[t1].[PARENTID3],
+	[t1].[NAME3]
+FROM
+	[TABLE3] [t1]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[ID2],
+	[t1].[PARENTID2],
+	[t1].[NAME2]
+FROM
+	[TABLE2] [t1]
+
+BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	[t1].[ID1],
+	[t1].[NAME1]
+FROM
+	[TABLE1] [t1]
 
 BeforeExecute
 -- SqlServer.2014

@@ -449,15 +449,15 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[DestinationTable]
+	[t]
 SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
+	[t].[Id] = [s].[Id],
+	[t].[Value] = [s].[Value],
+	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 INTO [Destination]
 (
 	[Id],

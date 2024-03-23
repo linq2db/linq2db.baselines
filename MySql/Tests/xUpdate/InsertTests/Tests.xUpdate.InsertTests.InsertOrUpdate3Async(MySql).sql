@@ -38,6 +38,8 @@ BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis VarChar(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 0
 
@@ -49,15 +51,17 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	'abc'
+	@Diagnosis
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(255))
 
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis VarChar(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 1
 
@@ -69,15 +73,17 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	'abc'
+	@Diagnosis
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(255))
 
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @Diagnosis VarChar(3) -- String
+SET     @Diagnosis = 'abc'
 DECLARE @i Int32
 SET     @i = 2
 
@@ -89,17 +95,15 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	'abc'
+	@Diagnosis
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(255))
 
 BeforeExecute
 -- MySql MySql.Official MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
@@ -108,5 +112,5 @@ FROM
 	`Patient` `p`
 WHERE
 	`p`.`PersonID` = @id
-LIMIT @take
+LIMIT 2
 

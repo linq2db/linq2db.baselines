@@ -137,39 +137,35 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[Id1],
-	[_d].[DetailId],
-	[_d].[MasterId],
-	[_d].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
-		SELECT
-			[t1].[Id1]
+		SELECT DISTINCT
+			[g_1].[Id1]
 		FROM
-			[MasterManyId] [t1]
-		GROUP BY
-			[t1].[Id1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] = [key_data_result].[Id1]
+			[MasterManyId] [g_1]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[Id1],
-	[_d].[DetailId],
-	[_d].[MasterId],
-	[_d].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
-		SELECT
-			[t1].[Id1]
+		SELECT DISTINCT
+			[g_1].[Id1]
 		FROM
-			[MasterManyId] [t1]
-		GROUP BY
-			[t1].[Id1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [_d] ON [_d].[MasterId] > [key_data_result].[Id1]
+			[MasterManyId] [g_1]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Id1]
 
 BeforeExecute
 DisposeTransaction
@@ -177,12 +173,12 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*),
-	[t1].[Id1]
+	COUNT(*),
+	[g_1].[Id1]
 FROM
-	[MasterManyId] [t1]
+	[MasterManyId] [g_1]
 GROUP BY
-	[t1].[Id1]
+	[g_1].[Id1]
 
 BeforeExecute
 -- SQLite.MS SQLite

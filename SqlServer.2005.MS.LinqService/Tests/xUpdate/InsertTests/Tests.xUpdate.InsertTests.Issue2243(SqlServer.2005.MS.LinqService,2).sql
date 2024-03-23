@@ -30,10 +30,10 @@ DECLARE @CreatedBy NVarChar(4000) -- String
 SET     @CreatedBy = N'TEST_USER2'
 
 UPDATE
-	[t1]
+	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name,
-	[t1].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
@@ -57,10 +57,8 @@ END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],
@@ -80,10 +78,10 @@ DECLARE @CreatedBy NVarChar(4000) -- String
 SET     @CreatedBy = N'TEST_USER2'
 
 UPDATE
-	[t1]
+	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name,
-	[t1].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
@@ -107,10 +105,8 @@ END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],

@@ -21,33 +21,33 @@ BeforeExecute
 MERGE INTO "LinqDataTypes" Target
 USING (
 	SELECT
-		t1.ID,
-		t1."MoneyValue",
-		t1."DateTimeValue",
-		t1."DateTimeValue2",
-		t1."BoolValue",
-		t1."GuidValue",
-		t1."SmallIntValue",
-		t1."IntValue",
-		t1."BigIntValue",
-		t1."StringValue"
+		t1.ID as "source_ID",
+		t1."MoneyValue" as "source_MoneyValue",
+		t1."DateTimeValue" as "source_DateTimeValue",
+		t1."DateTimeValue2" as "source_DateTimeValue2",
+		t1."BoolValue" as "source_BoolValue",
+		t1."GuidValue" as "source_GuidValue",
+		t1."SmallIntValue" as "source_SmallIntValue",
+		t1."IntValue" as "source_IntValue",
+		t1."BigIntValue" as "source_BigIntValue",
+		t1."StringValue" as "source_StringValue"
 	FROM
 		"LinqDataTypes" t1
 ) "Source"
-ON (Target.ID = "Source".ID)
+ON (Target.ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."MoneyValue" = "Source"."MoneyValue",
-	Target."DateTimeValue" = "Source"."DateTimeValue",
-	Target."DateTimeValue2" = "Source"."DateTimeValue2",
-	Target."BoolValue" = "Source"."BoolValue",
-	Target."GuidValue" = "Source"."GuidValue",
-	Target."SmallIntValue" = "Source"."SmallIntValue",
-	Target."IntValue" = "Source"."IntValue",
-	Target."BigIntValue" = "Source"."BigIntValue",
-	Target."StringValue" = "Source"."StringValue"
+	"MoneyValue" = "Source"."source_MoneyValue",
+	"DateTimeValue" = "Source"."source_DateTimeValue",
+	"DateTimeValue2" = "Source"."source_DateTimeValue2",
+	"BoolValue" = "Source"."source_BoolValue",
+	"GuidValue" = "Source"."source_GuidValue",
+	"SmallIntValue" = "Source"."source_SmallIntValue",
+	"IntValue" = "Source"."source_IntValue",
+	"BigIntValue" = "Source"."source_BigIntValue",
+	"StringValue" = "Source"."source_StringValue"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -65,15 +65,15 @@ INSERT
 )
 VALUES
 (
-	"Source".ID,
-	"Source"."MoneyValue",
-	"Source"."DateTimeValue",
-	"Source"."DateTimeValue2",
-	"Source"."BoolValue",
-	"Source"."GuidValue",
-	"Source"."SmallIntValue",
-	"Source"."IntValue",
-	"Source"."BigIntValue",
-	"Source"."StringValue"
+	"Source"."source_ID",
+	"Source"."source_MoneyValue",
+	"Source"."source_DateTimeValue",
+	"Source"."source_DateTimeValue2",
+	"Source"."source_BoolValue",
+	"Source"."source_GuidValue",
+	"Source"."source_SmallIntValue",
+	"Source"."source_IntValue",
+	"Source"."source_BigIntValue",
+	"Source"."source_StringValue"
 )
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -14,10 +12,28 @@ WHERE
 			[t1].[ParentID]
 		FROM
 			(
-				SELECT TOP (@take)
-					[p].[ParentID]
+				SELECT TOP (100)
+					[v].[ParentID]
 				FROM
-					[Parent] [p]
+					[Parent] [v]
 			) [t1]
 	)
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

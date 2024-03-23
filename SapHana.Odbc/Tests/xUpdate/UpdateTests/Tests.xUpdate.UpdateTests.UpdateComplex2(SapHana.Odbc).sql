@@ -81,18 +81,16 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"Person"
+	"Person" "_"
 SET
-	"Person"."LastName" = "Person"."FirstName"
+	"LastName" = "_"."FirstName"
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."PersonID",
@@ -104,5 +102,5 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."PersonID" = ?
-LIMIT ?
+LIMIT 1
 

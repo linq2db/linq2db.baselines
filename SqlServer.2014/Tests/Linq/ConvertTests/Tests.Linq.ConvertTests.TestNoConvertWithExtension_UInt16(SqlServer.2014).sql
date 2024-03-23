@@ -57,30 +57,28 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
-	[x].[Byte],
-	[x].[SByte],
-	[x].[Int16],
-	[x].[UInt16],
-	[x].[Int32],
-	[x].[UInt32],
-	[x].[Int64],
-	[x].[UInt64],
-	[x].[ByteN],
-	[x].[SByteN],
-	[x].[Int16N],
-	[x].[UInt16N],
-	[x].[Int32N],
-	[x].[UInt32N],
-	[x].[Int64N],
-	[x].[UInt64N]
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Byte],
+	[t1].[SByte],
+	[t1].[Int16],
+	[t1].[UInt16],
+	[t1].[Int32],
+	[t1].[UInt32],
+	[t1].[Int64],
+	[t1].[UInt64],
+	[t1].[ByteN],
+	[t1].[SByteN],
+	[t1].[Int16N],
+	[t1].[UInt16N],
+	[t1].[Int32N],
+	[t1].[UInt32N],
+	[t1].[Int64N],
+	[t1].[UInt64N]
 FROM
-	[IntegerConverts] [x]
-		INNER JOIN [IntegerConverts] [y] ON [y].[UInt16] = [x].[UInt16]
+	[IntegerConverts] [t1]
+		INNER JOIN [IntegerConverts] [y] ON [y].[UInt16] = [t1].[UInt16]
 
 BeforeExecute
 -- SqlServer.2014

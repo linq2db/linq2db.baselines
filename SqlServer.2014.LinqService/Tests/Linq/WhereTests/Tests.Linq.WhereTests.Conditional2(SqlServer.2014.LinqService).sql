@@ -10,6 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND IIF([p].[MiddleName] IS NOT NULL, 3, IIF([p].[MiddleName] IS NULL, 1, 2)) = 1 AND
-	IIF([p].[FirstName] IS NULL, 3, IIF([p].[FirstName] IS NOT NULL, 1, 2)) = 1
+	[p].[PersonID] = 1 AND
+	[p].[MiddleName] IS NULL AND
+	[p].[MiddleName] IS NULL AND
+	[p].[FirstName] IS NOT NULL AND
+	[p].[FirstName] IS NOT NULL
 

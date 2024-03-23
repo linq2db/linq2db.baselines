@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @part1 Int -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32
 SET     @part2 = 4
 
 SELECT
-	DateAdd(quarter, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue])
+	Convert(Date, DateAdd(quarter, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

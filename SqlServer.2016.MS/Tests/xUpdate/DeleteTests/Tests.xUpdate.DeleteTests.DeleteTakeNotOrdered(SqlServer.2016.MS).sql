@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -206,9 +206,9 @@ FROM
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

@@ -25,11 +25,13 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @Int32Field Int32
+SET     @Int32Field = 4
 
 UPDATE
 	`LinqDataTypes` `r`
 SET
-	`r`.`IntValue` = 4
+	`r`.`IntValue` = @Int32Field
 WHERE
 	`r`.`ID` = 101 AND `r`.`IntValue` = 3
 

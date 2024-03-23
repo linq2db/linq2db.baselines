@@ -32,7 +32,7 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = '***III***'
+	[Data] = '***III***'
 WHERE
 	[TrimTestTable].[ID] = 3
 
@@ -42,7 +42,7 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = '***OOO***'
+	[Data] = '***OOO***'
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
@@ -52,7 +52,7 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = '***SSS***'
+	[Data] = '***SSS***'
 WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
@@ -61,7 +61,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
@@ -72,7 +72,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

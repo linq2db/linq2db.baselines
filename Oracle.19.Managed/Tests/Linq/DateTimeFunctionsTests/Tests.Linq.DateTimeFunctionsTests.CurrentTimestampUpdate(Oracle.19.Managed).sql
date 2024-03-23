@@ -1,11 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @BoolValue Int16
+SET     @BoolValue = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" p
 SET
-	"LinqDataTypes"."BoolValue" = 1,
-	"LinqDataTypes"."DateTimeValue" = CURRENT_TIMESTAMP
+	"BoolValue" = :BoolValue,
+	"DateTimeValue" = CURRENT_TIMESTAMP
 WHERE
-	"LinqDataTypes".ID = 100000
+	p.ID = 100000
 

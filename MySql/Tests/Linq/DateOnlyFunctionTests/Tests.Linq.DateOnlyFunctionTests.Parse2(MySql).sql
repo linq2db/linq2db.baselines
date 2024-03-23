@@ -42,16 +42,11 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	`d`.`c1`
+	`d`.`TransactionDate`
 FROM
-	(
-		SELECT
-			`t`.`TransactionDate` as `c1`
-		FROM
-			`Transactions` `t`
-	) `d`
+	`Transactions` `d`
 WHERE
-	Extract(day from `d`.`c1`) > 0
+	Extract(day from `d`.`TransactionDate`) > 0
 
 BeforeExecute
 -- MySql MySql.Official MySql

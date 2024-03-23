@@ -31,12 +31,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],
@@ -61,25 +59,21 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName,
-	[t1].[Gender] = @Gender
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
 	[x].[PersonID],
 	[x].[LastName],

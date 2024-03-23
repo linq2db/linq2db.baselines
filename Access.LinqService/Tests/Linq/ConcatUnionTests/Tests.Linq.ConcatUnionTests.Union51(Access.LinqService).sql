@@ -9,7 +9,7 @@ FROM
 UNION
 SELECT
 	[p2].[ParentID],
-	NULL
+	IIF(False, 0, NULL)
 FROM
 	[Parent] [p2]
 

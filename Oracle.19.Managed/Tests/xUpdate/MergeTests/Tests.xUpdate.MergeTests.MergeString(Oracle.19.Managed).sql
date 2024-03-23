@@ -14,7 +14,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t1.ID)
+	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
@@ -23,8 +23,8 @@ BeforeExecute
 
 MERGE INTO "AllTypes" Target
 USING (
-	SELECT 3 AS ID, chr(0) AS "charDataType", chr(0) AS "ncharDataType", 'test' || chr(0) || 'it' AS "nvarcharDataType" FROM sys.dual) "Source"
-ON (Target.ID = "Source".ID)
+	SELECT 3 AS "source_ID", chr(0) AS "source_charDataType", chr(0) AS "source_ncharDataType", 'test' || chr(0) || 'it' AS "source_nvarcharDataType" FROM sys.dual) "Source"
+ON (Target.ID = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -35,9 +35,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."charDataType",
-	"Source"."ncharDataType",
-	"Source"."nvarcharDataType"
+	"Source"."source_charDataType",
+	"Source"."source_ncharDataType",
+	"Source"."source_nvarcharDataType"
 )
 
 BeforeExecute

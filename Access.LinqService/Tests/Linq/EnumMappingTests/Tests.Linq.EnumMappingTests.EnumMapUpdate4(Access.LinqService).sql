@@ -24,11 +24,13 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @TestField Integer -- Int32
+SET     @TestField = 12
 
 UPDATE
 	[LinqDataTypes] [r]
 SET
-	[r].[BigIntValue] = 12
+	[r].[BigIntValue] = @TestField
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 

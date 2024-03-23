@@ -1,19 +1,18 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID",
-	t1."Value1"
+	t2."ParentID",
+	t2."Value1"
 FROM
-	"Parent" t1
+	"Parent" t2
+		LEFT JOIN (
+			SELECT
+				r."Value1"
+			FROM
+				"Parent" r
+			FETCH NEXT 1 ROWS ONLY
+		) t1 ON 1=1
 WHERE
-	(
-		SELECT
-			r."Value1"
-		FROM
-			"Parent" r
-		FETCH NEXT :take ROWS ONLY
-	) IS NOT NULL
+	t1."Value1" IS NOT NULL
 

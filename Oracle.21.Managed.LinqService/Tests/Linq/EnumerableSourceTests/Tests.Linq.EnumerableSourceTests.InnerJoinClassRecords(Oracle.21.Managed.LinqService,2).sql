@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (
-			SELECT 1 AS "PersonID" FROM sys.dual
+			SELECT 1 AS ID FROM sys.dual
 			UNION ALL
-			SELECT 2 FROM sys.dual) n ON p."PersonID" = n."PersonID"
+			SELECT 2 FROM sys.dual) n ON p."PersonID" = n.ID
 

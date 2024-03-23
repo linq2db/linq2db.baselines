@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = -8
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '1' MINUTE
+	To_Number(To_Char((t."DateTimeValue" + :p * INTERVAL '1' MINUTE), 'MI'))
 FROM
 	"LinqDataTypes" t
 

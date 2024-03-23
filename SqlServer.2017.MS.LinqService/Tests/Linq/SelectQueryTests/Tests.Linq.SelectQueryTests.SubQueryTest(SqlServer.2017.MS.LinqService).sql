@@ -33,22 +33,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
-	[t3].[Value1],
-	[t3].[Value2],
-	[t3].[is_empty]
+	[t2].[not_null],
+	[t2].[Value1],
+	[t2].[Value2]
 FROM
 	[SampleClass] [t_1]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[t2].[Value1],
-				[t2].[Value2],
-				1 as [is_empty]
+		LEFT JOIN (
+			SELECT TOP (1)
+				[t1].[Value1],
+				[t1].[Value2],
+				1 as [not_null]
 			FROM
 				(
 					SELECT
@@ -60,16 +58,10 @@ FROM
 						[t].[Value] = 1
 					UNION
 					SELECT
-						[t1].[Value1],
-						[t1].[Value2]
-					FROM
-						(
-							SELECT
-								DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
-								DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
-						) [t1]
-				) [t2]
-		) [t3]
+						DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
+						DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
+				) [t1]
+		) [t2] ON 1=1
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

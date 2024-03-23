@@ -30,11 +30,11 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[dt]
+	[g_1].[dt]
 FROM
-	[Issue1613] [t1]
+	[Issue1613] [g_1]
 GROUP BY
-	[t1].[dt]
+	[g_1].[dt]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

@@ -270,16 +270,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"d"."c1"
+	"d"."TransactionDate"
 FROM
-	(
-		SELECT
-			"t"."TransactionDate" as "c1"
-		FROM
-			"Transactions" "t"
-	) "d"
+	"Transactions" "d"
 WHERE
-	DayOfMonth("d"."c1") > 0
+	DayOfMonth("d"."TransactionDate") > 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

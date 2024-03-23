@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	p."PersonID",
+	p."PersonID" as ID,
 	p."FirstName",
 	p."LastName",
 	p."MiddleName",
@@ -16,15 +14,13 @@ FROM
 		LEFT JOIN "Patient" a_Patient ON p."PersonID" = a_Patient."PersonID"
 WHERE
 	p."PersonID" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	p."PersonID",
+	p."PersonID" as ID,
 	p."FirstName",
 	p."LastName",
 	p."MiddleName",
@@ -36,5 +32,5 @@ FROM
 		LEFT JOIN "Patient" a_Patient ON p."PersonID" = a_Patient."PersonID"
 WHERE
 	p."PersonID" = 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

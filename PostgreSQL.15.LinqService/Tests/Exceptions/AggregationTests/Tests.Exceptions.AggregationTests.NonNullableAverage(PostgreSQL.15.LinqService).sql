@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Avg(t1."ParentID")
+	AVG(t1."ParentID")
 FROM
 	"Parent" t1
 WHERE

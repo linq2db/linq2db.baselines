@@ -97,18 +97,18 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MasterClass].[Id1],
-	[detail].[DetailId],
-	[detail].[MasterId],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1]
+			[x].[Id1]
 		FROM
-			[MasterClass] [t1]
-	) [lw_MasterClass]
-		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
+			[MasterClass] [x]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction
@@ -129,18 +129,18 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_MasterClass].[Id1],
-	[detail].[DetailId],
-	[detail].[MasterId],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1]
+			[x].[Id1]
 		FROM
-			[MasterClass] [t1]
-	) [lw_MasterClass]
-		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
+			[MasterClass] [x]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction

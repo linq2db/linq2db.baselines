@@ -73,12 +73,12 @@ DECLARE @Stamp Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" obj
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value
+	"Stamp" = obj."Stamp" + 1,
+	"Value" = :Value
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
+	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -100,12 +100,12 @@ DECLARE @Stamp Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" obj
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value
+	"Stamp" = obj."Stamp" + 1,
+	"Value" = :Value
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
+	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -127,12 +127,12 @@ DECLARE @Stamp Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" obj
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = :Value
+	"Stamp" = obj."Stamp" + 1,
+	"Value" = :Value
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
+	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

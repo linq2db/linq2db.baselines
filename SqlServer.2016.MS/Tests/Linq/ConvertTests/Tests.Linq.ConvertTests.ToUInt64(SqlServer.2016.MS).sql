@@ -2,9 +2,14 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Convert(Decimal, Floor([t].[MoneyValue]))
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Decimal, Floor([p].[MoneyValue])) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Decimal, Floor([t].[MoneyValue])) > 0
+	[p_1].[c1] > 0
 

@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
-	t."DateTimeValue" + :p * Interval '1 Day'
+	Cast((t."DateTimeValue" + :p * Interval '1 Day') as Date)
 FROM
 	"LinqDataTypes" t
 

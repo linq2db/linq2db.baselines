@@ -489,7 +489,7 @@ DECLARE @p Int -- Int32
 SET     @p = 3
 
 SELECT
-	DateAdd(dayofyear, @p, [t].[TransactionDate])
+	Convert(Date, DateAdd(dayofyear, @p, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

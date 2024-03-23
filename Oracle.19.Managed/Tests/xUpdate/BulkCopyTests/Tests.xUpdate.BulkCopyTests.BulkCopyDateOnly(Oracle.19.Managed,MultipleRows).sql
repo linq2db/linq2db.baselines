@@ -36,14 +36,12 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t1."Date"
+	t1."Date" as "Date_1"
 FROM
 	"DateOnlyTable" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

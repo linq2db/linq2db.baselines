@@ -12,17 +12,23 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(10) -- String
+SET     @FirstName = 'Inserted 1'
+DECLARE @LastName Varchar2(10) -- String
+SET     @LastName = 'Inserted 2'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1."PersonID" as ID,
-		a_Patient."Diagnosis"
+		t1."PersonID" as "source_ID",
+		a_Patient."Diagnosis" as "source_Patient_Diagnosis"
 	FROM
 		"Person" t1
-			LEFT JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
+			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
 ) "Source"
-ON (Target."PersonID" = "Source".ID AND Target."FirstName" <> 'first 3')
+ON (Target."PersonID" = "Source"."source_ID" AND Target."FirstName" <> 'first 3')
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -33,11 +39,11 @@ INSERT
 )
 VALUES
 (
-	'Inserted 1',
-	'Inserted 2',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
- WHERE "Source"."Diagnosis" LIKE '%sick%' ESCAPE '~'
+ WHERE "Source"."source_Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -2,13 +2,18 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*),
-	SUM(Count(*)) OVER(),
-	Sum([_].[ParentID])
+	(Convert(Float, [_1].[COUNT_1]) * 100) / SUM([_1].[COUNT_1]) OVER(),
+	[_1].[SUM_1]
 FROM
-	[Child] [_]
-GROUP BY
-	[_].[ParentID]
-HAVING
-	(Sum([_].[ParentID]) <> 36 OR Sum([_].[ParentID]) IS NULL)
+	(
+		SELECT
+			COUNT(*) as [COUNT_1],
+			SUM([_].[ParentID]) as [SUM_1]
+		FROM
+			[Child] [_]
+		GROUP BY
+			[_].[ParentID]
+		HAVING
+			(SUM([_].[ParentID]) <> 36 OR SUM([_].[ParentID]) IS NULL)
+	) [_1]
 

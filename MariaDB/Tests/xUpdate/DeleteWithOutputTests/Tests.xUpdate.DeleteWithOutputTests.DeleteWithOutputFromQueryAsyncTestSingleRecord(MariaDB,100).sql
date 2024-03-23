@@ -48,6 +48,10 @@ WHERE
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql (asynchronously)
+DECLARE @param Int32
+SET     @param = 100
+DECLARE @param_1 Int32
+SET     @param_1 = 100
 
 DELETE  
 FROM
@@ -55,9 +59,9 @@ FROM
 WHERE
 	`TableWithData`.`Id` = 3
 RETURNING
-	`TableWithData`.`Id`,
-	`TableWithData`.`Value`,
-	`TableWithData`.`ValueStr`
+	`TableWithData`.`Id` + @param,
+	`TableWithData`.`Value` + @param,
+	Concat(`TableWithData`.`ValueStr`, @param_1)
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

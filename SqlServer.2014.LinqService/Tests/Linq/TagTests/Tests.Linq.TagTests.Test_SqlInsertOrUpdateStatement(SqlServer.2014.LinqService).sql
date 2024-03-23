@@ -18,17 +18,23 @@ IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Fd Int -- Int32
+SET     @Fd = 2
+DECLARE @Fd_1 Int -- Int32
+SET     @Fd_1 = 2
 
 /* My Test */
 MERGE INTO [TestTable] [t1]
-USING (SELECT 1 AS [Id]) [s] ON
+USING (SELECT @Id AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Fd] = 2
+		[Fd] = @Fd
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -37,8 +43,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		1,
-		2
+		@Id,
+		@Fd_1
 	);
 
 BeforeExecute

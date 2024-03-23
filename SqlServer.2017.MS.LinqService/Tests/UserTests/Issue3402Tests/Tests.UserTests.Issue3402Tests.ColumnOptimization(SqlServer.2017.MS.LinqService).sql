@@ -57,6 +57,8 @@ SELECT
 	[ess].[ID]
 FROM
 	[VEMPLOYEE_SCH_SEC] [ess]
+WHERE
+	1 = 1
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

@@ -2,9 +2,14 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Abs([p].[MoneyValue])
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Abs([t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Abs([p].[MoneyValue]) > 0
+	[t_1].[c1] > 0
 

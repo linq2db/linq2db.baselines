@@ -4,9 +4,9 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	[p].[ParentID]
+	[g_1].[ParentID]
 FROM
-	[Child] [p]
+	[Child] [g_1]
 WHERE
 	EXISTS(
 		SELECT
@@ -14,10 +14,10 @@ WHERE
 		FROM
 			[Parent] [t]
 		WHERE
-			[t].[ParentID] = ? AND [t].[ParentID] = [p].[ParentID]
+			[t].[ParentID] = ? AND [t].[ParentID] = [g_1].[ParentID]
 	)
 GROUP BY
-	[p].[ParentID]
+	[g_1].[ParentID]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -25,9 +25,9 @@ DECLARE @id Int -- Int32
 SET     @id = 2
 
 SELECT
-	[p].[ParentID]
+	[g_1].[ParentID]
 FROM
-	[Child] [p]
+	[Child] [g_1]
 WHERE
 	EXISTS(
 		SELECT
@@ -35,8 +35,8 @@ WHERE
 		FROM
 			[Parent] [t]
 		WHERE
-			[t].[ParentID] = ? AND [t].[ParentID] = [p].[ParentID]
+			[t].[ParentID] = ? AND [t].[ParentID] = [g_1].[ParentID]
 	)
 GROUP BY
-	[p].[ParentID]
+	[g_1].[ParentID]
 

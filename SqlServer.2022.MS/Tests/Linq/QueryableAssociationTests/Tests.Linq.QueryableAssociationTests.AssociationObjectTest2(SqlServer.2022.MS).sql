@@ -107,17 +107,17 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[lw_SomeEntity].[Id],
-	[detail].[Id],
-	[detail].[StrValue]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[SomeTable] [t1] WITH (NOLOCK)
-	) [lw_SomeEntity]
-		CROSS APPLY dbo.fn_SomeFunction([lw_SomeEntity].[Id]) [detail]
+	) [m_1]
+		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
 BeforeExecute
 DisposeTransaction

@@ -1,9 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Value Int32
-SET     @Value = NULL
+DECLARE @value Int32
+SET     @value = NULL
+DECLARE @value_1 Int32
+SET     @value_1 = 0
 
 SELECT
-	:Value
+	:value,
+	:value_1
 FROM SYS.DUAL
 

@@ -217,24 +217,16 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[SiteID],
-	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Issue1078Table] [u]
-		WHERE
-			CASE
-				WHEN [u].[Active] = 1 THEN 1
-				ELSE 0
-			END = 0 AND
-			[t1].[SiteID] = [u].[SiteID]
-	)
+	[grp].[SiteID],
+	COUNT(*),
+	COUNT(CASE
+		WHEN [grp].[Active] = 0 THEN 1
+		ELSE NULL
+	END)
 FROM
-	[Issue1078Table] [t1]
+	[Issue1078Table] [grp]
 GROUP BY
-	[t1].[SiteID]
+	[grp].[SiteID]
 
 BeforeExecute
 -- SQLite.Classic SQLite

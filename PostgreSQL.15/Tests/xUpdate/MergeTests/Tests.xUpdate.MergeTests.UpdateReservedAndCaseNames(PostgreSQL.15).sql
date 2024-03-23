@@ -224,33 +224,33 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id" as "OtherId",
-		t1."Field1" as delete_1,
-		t1."Field2" as "Delete_2",
-		t1."Field3" as "Field",
-		t1."Field4" as field_1,
-		t1."Field5" as "As_1"
+		t1."Id" as source_order,
+		t1."Field1" as source_delete,
+		t1."Field2" as "source_Delete_1",
+		t1."Field3" as "source_Field",
+		t1."Field4" as source_field_1,
+		t1."Field5" as "source_As"
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	"OtherId",
-	delete_1,
-	"Delete_2",
-	"Field",
-	field_1,
-	"As_1"
+	source_order,
+	source_delete,
+	"source_Delete_1",
+	"source_Field",
+	source_field_1,
+	"source_As"
 )
-ON ("Target"."Id" = "Source"."OtherId")
+ON ("Target"."Id" = "Source".source_order)
 
-WHEN MATCHED AND "Source".field_1 = 214 THEN
+WHEN MATCHED AND "Source".source_field_1 = 214 THEN
 UPDATE
 SET
-	"Field1" = "Source".delete_1,
-	"Field2" = "Source"."Delete_2",
-	"Field3" = "Source"."Field",
-	"Field4" = "Source".field_1,
-	"Field5" = "Source"."As_1"
+	"Field1" = "Source".source_delete,
+	"Field2" = "Source"."source_Delete_1",
+	"Field3" = "Source"."source_Field",
+	"Field4" = "Source".source_field_1,
+	"Field5" = "Source"."source_As"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

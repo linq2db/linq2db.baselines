@@ -2,41 +2,35 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 10
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 10
 
 SELECT
-	cp."ParentID",
-	c_1."ChildID"
+	x."ParentID",
+	t2."ChildID"
 FROM
-	"Parent" cp
-		INNER JOIN LATERAL (
+	"Parent" x
+		INNER JOIN (
 			SELECT
-				t3."ParentID",
-				t3."ChildID"
+				c_2."ParentID",
+				c_2."ChildID"
 			FROM
 				(
+					SELECT
+						c_1."ParentID",
+						c_1."ChildID"
+					FROM
+						"Child" c_1
+					UNION
 					SELECT
 						t1."ParentID",
 						t1."ChildID"
 					FROM
 						"Child" t1
-					UNION
-					SELECT
-						t2."ParentID",
-						t2."ChildID"
-					FROM
-						"Child" t2
-				) t3
+				) c_2
 			ORDER BY
-				t3."ParentID"
-			LIMIT :take OFFSET :skip 
-		) c_1 ON 1=1
-WHERE
-	c_1."ParentID" = cp."ParentID"
+				c_2."ParentID"
+			LIMIT 10 OFFSET 10 
+		) t2 ON t2."ParentID" = x."ParentID"
 ORDER BY
-	cp."ParentID"
-LIMIT :take_1
+	x."ParentID"
+LIMIT :take
 

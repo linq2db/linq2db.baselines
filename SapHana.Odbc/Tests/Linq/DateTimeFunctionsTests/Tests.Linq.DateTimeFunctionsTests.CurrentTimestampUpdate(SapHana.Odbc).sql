@@ -1,11 +1,13 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @BoolValue  -- Byte
+SET     @BoolValue = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "p"
 SET
-	"LinqDataTypes"."BoolValue" = 1,
-	"LinqDataTypes"."DateTimeValue" = CURRENT_TIMESTAMP
+	"BoolValue" = ?,
+	"DateTimeValue" = CURRENT_TIMESTAMP
 WHERE
-	"LinqDataTypes"."ID" = 100000
+	"p"."ID" = 100000
 

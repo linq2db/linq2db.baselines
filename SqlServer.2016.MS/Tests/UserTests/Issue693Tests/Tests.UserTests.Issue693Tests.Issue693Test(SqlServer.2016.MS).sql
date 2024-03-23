@@ -61,12 +61,10 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[PersonID],
 	[_].[Gender],
 	[_].[FirstName],
@@ -79,12 +77,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[PersonID],
 	[_].[Gender],
 	[_].[FirstName],

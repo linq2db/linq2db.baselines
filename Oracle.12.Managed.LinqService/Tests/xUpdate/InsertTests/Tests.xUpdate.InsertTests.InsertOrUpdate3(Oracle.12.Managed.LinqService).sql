@@ -42,6 +42,10 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @id_1 Int32
+SET     @id_1 = 5
+DECLARE @Diagnosis Varchar2(3) -- String
+SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -51,7 +55,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
+		"Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -60,8 +64,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id,
-		'abc'
+		:id_1,
+		:Diagnosis
 	)
 
 BeforeExecute
@@ -70,6 +74,10 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 1
+DECLARE @id_1 Int32
+SET     @id_1 = 5
+DECLARE @Diagnosis Varchar2(3) -- String
+SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -79,7 +87,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,8 +96,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id,
-		'abc'
+		:id_1,
+		:Diagnosis
 	)
 
 BeforeExecute
@@ -98,6 +106,10 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 2
+DECLARE @id_1 Int32
+SET     @id_1 = 5
+DECLARE @Diagnosis Varchar2(3) -- String
+SET     @Diagnosis = 'abc'
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -107,7 +119,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -116,16 +128,14 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		:id,
-		'abc'
+		:id_1,
+		:Diagnosis
 	)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -134,5 +144,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

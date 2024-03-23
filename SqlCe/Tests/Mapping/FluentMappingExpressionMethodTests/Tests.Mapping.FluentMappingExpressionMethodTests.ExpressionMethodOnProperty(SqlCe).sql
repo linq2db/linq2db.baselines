@@ -45,7 +45,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[InstanceClass] [t]
 WHERE

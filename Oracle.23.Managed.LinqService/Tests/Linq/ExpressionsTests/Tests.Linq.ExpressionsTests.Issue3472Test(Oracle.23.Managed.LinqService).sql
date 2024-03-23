@@ -48,7 +48,7 @@ SELECT
 	t1."Id",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Person" p
 		WHERE

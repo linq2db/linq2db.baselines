@@ -15,23 +15,17 @@ CREATE TABLE IF NOT EXISTS [Issue1192Table]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Issue1192Table] [t]
-		WHERE
-			[t].[Status] = 3 AND [t].[MyOtherId] = 12
-	)
+	COUNT(CASE
+		WHEN [t].[Status] = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	[Issue1192Table] [t_1]
+	[Issue1192Table] [t]
 WHERE
-	[t_1].[MyOtherId] = 12
-LIMIT @take
+	[t].[MyOtherId] = 12
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

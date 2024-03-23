@@ -2,8 +2,8 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[x].[ParentID],
-	[x].[Value1]
+	[x].[Value1],
+	[x].[ParentID]
 FROM
 	[Parent] [x]
 WHERE

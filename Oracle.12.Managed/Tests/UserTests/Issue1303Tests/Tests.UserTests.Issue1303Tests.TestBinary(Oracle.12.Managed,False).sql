@@ -53,52 +53,46 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
 	t1.ID = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Array Raw(3) -- Binary
 SET     @Array = HEXTORAW('010203')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
 	t1."Array" = :Array
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Binary Raw(2) -- Binary
 SET     @Binary = HEXTORAW('0405')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Array",
-	t1."Binary"
+	t1."Array" as "Array_1",
+	t1."Binary" as "Binary_1"
 FROM
 	"Issue1303" t1
 WHERE
 	t1."Binary" = :Binary
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

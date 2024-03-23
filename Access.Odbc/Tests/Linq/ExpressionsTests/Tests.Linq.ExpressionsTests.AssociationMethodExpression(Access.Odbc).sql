@@ -2,17 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[cnt]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children]
+				INNER JOIN [GrandChild] [a_GrandChildren] ON ([a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID])
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[cp].[ParentID]
-			FROM
-				[Child] [cp]
-					INNER JOIN [GrandChild] [c_1] ON ([cp].[ParentID] = [c_1].[ParentID] AND [cp].[ChildID] = [c_1].[ChildID])
-			GROUP BY
-				[cp].[ParentID]
-		) [t1] ON ([p].[ParentID] = [t1].[ParentID])
 

@@ -19,13 +19,13 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "Id", '2' AS "Value_1" FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id", '2' AS "source_Value" FROM DUMMY) "Source"
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Value" = "Source"."Value_1"
+	"Value" = "Source"."source_Value"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -35,8 +35,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
-	"Source"."Value_1"
+	"Source"."source_Id",
+	"Source"."source_Value"
 )
 
 BeforeExecute

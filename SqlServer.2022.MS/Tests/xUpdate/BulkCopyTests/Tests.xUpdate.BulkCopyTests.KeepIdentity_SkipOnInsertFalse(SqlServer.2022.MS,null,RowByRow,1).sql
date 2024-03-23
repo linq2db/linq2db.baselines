@@ -67,9 +67,9 @@ BeforeExecute
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[AllTypes] [t1]
+	[AllTypes] [_]
 WHERE
-	[t1].[ID] >= @lastId
+	[_].[ID] >= @lastId
 

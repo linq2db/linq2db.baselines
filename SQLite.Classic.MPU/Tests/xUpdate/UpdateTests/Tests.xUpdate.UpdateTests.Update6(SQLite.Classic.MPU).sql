@@ -30,13 +30,15 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Value1  -- Int32
+SET     @Value1 = 2
 DECLARE @id  -- Int32
 SET     @id = 1001
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = 2
+	[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = @id
 

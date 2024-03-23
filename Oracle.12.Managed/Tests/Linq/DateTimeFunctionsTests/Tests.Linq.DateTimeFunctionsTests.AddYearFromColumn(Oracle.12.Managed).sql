@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' YEAR
+	Trunc(t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' YEAR, 'DD')
 FROM
 	"LinqDataTypes" t
 

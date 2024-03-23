@@ -23,14 +23,14 @@ INSERT INTO "TableToInsert"
 	"Value"
 )
 SELECT
-	"r"."Id",
-	"r"."Value"
+	"t1"."Id",
+	"t1"."Value"
 FROM
 	(
 		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM DUMMY) "r"
-		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "r"."Id"
+		SELECT 4, 'Doe' FROM DUMMY) "t1"
+		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "t1"."Id"
 WHERE
 	"t"."Id" IS NULL
 
@@ -43,14 +43,14 @@ INSERT INTO "TableToInsert"
 	"Value"
 )
 SELECT
-	"r"."Id",
-	"r"."Value"
+	"t1"."Id",
+	"t1"."Value"
 FROM
 	(
 		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM DUMMY) "r"
-		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "r"."Id"
+		SELECT 4, 'Doe' FROM DUMMY) "t1"
+		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "t1"."Id"
 WHERE
 	"t"."Id" IS NULL
 

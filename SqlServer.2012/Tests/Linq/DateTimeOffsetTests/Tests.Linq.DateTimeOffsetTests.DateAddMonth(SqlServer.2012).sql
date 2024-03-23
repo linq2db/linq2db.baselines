@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	DateAdd(month, 2, [t].[TransactionDate])
+	Convert(Date, DateAdd(month, 2, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

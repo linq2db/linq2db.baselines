@@ -17,10 +17,6 @@ CREATE TABLE [Issue1303]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]
 (
@@ -31,8 +27,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	0x010203,
+	0x0405
 )
 
 BeforeExecute
@@ -40,8 +36,8 @@ BeforeExecute
 
 SELECT TOP (2)
 	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[_].[Array] as [Array_1],
+	[_].[Binary] as [Binary_1]
 FROM
 	[Issue1303] [_]
 WHERE
@@ -52,8 +48,8 @@ BeforeExecute
 
 SELECT TOP (2)
 	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[_].[Array] as [Array_1],
+	[_].[Binary] as [Binary_1]
 FROM
 	[Issue1303] [_]
 WHERE
@@ -64,8 +60,8 @@ BeforeExecute
 
 SELECT TOP (2)
 	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[_].[Array] as [Array_1],
+	[_].[Binary] as [Binary_1]
 FROM
 	[Issue1303] [_]
 WHERE

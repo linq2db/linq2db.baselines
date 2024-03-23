@@ -7,6 +7,8 @@ UPDATE
 	[Person] INDEXED BY IX_PersonDesc
 SET
 	[FirstName] = @FirstName
+FROM
+	[Person] [p] INDEXED BY IX_PersonDesc
 WHERE
-	[Person].[PersonID] > 1000000
+	[p].[PersonID] > 1000000 AND [Person].[PersonID] = [p].[PersonID]
 

@@ -53,8 +53,6 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."Value4"
@@ -62,7 +60,7 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -82,8 +80,6 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."Value4"
@@ -91,7 +87,7 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

@@ -69,8 +69,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Id`,
@@ -78,7 +76,7 @@ SELECT
 	`t1`.`DecimalN`
 FROM
 	`BigDecimalMySqlDataTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -127,8 +125,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Id`,
@@ -136,7 +132,7 @@ SELECT
 	`t1`.`DecimalN`
 FROM
 	`BigDecimalMySqlDataTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -160,8 +156,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Id`,
@@ -169,7 +163,7 @@ SELECT
 	`t1`.`DecimalN`
 FROM
 	`BigDecimalMySqlDataTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql

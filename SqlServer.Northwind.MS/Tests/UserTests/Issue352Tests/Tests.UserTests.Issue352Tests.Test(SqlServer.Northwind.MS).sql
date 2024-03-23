@@ -1,28 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[EmployeeID],
+	[g_1].[EmployeeID],
 	(
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[em].[FirstName]
 		FROM
 			[Employees] [em]
 		WHERE
-			[em].[EmployeeID] = [t1].[EmployeeID]
+			[em].[EmployeeID] = [g_1].[EmployeeID]
 	)
 FROM
-	(
-		SELECT
-			[e].[EmployeeID]
-		FROM
-			[Employees] [e],
-			[EmployeeTerritories] [et]
-		WHERE
-			[et].[EmployeeID] = [e].[EmployeeID]
-	) [t1]
+	[Employees] [g_1],
+	[EmployeeTerritories] [et]
+WHERE
+	[et].[EmployeeID] = [g_1].[EmployeeID]
 GROUP BY
-	[t1].[EmployeeID]
+	[g_1].[EmployeeID]
 

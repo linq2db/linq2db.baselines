@@ -9,7 +9,7 @@ SET     @ID_1 = 2
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -51,7 +51,7 @@ SET     @ID_1 = 3
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -93,7 +93,7 @@ SET     @paramCopy = 3
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -135,7 +135,7 @@ SET     @ID_1 = 2
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -177,7 +177,7 @@ SET     @paramCopy = 3
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]
@@ -219,7 +219,7 @@ SET     @ID_1 = 3
 
 SELECT
 	[_].[FirstName],
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[_].[LastName],
 	[_].[MiddleName],
 	[_].[Gender]

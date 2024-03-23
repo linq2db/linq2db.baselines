@@ -24,10 +24,8 @@ SELECT CAST('2021-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Date]
 FROM
 	[DateOnlyTable] [t1]

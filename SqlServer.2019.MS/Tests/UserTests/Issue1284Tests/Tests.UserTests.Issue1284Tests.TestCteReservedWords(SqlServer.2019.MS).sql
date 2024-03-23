@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-WITH [CTE_1] ([Operator])
+WITH [CTE_1] ([Obj_Operator])
 AS
 (
 	SELECT
@@ -11,18 +9,16 @@ AS
 	FROM
 		[Person] [x]
 )
-SELECT TOP (@take)
-	[t1].[Operator]
+SELECT TOP (1)
+	[t1].[Obj_Operator]
 FROM
 	[CTE_1] [t1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[x].[LastName]
+SELECT TOP (1)
+	[person_1].[LastName]
 FROM
-	[Person] [x]
+	[Person] [person_1]
 

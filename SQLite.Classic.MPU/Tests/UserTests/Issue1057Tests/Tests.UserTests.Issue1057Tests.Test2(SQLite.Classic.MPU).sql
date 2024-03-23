@@ -106,8 +106,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[Id],
 	[p].[TargetName],
+	[p].[Id],
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

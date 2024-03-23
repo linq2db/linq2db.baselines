@@ -8,14 +8,12 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema
 FROM
 	"LinqDataTypes" "_"
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -398,7 +396,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"AllTypes" "t1"
+	"AllTypes" "_"
 WHERE
-	"t1"."char20DataType" = 'issue792'
+	"_"."char20DataType" = 'issue792'
 

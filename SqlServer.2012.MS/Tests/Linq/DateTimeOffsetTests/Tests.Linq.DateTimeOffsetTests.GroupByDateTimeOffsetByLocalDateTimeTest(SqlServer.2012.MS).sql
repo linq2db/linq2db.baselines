@@ -56,14 +56,14 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[TransactionDate],
-	Count(*)
+	[x].[TransactionDate],
+	COUNT(*)
 FROM
-	[Transactions] [t1]
+	[Transactions] [x]
 GROUP BY
-	[t1].[TransactionDate]
+	[x].[TransactionDate]
 ORDER BY
-	[t1].[TransactionDate]
+	[x].[TransactionDate]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

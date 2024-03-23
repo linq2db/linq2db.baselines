@@ -31,10 +31,8 @@ SELECT 6,N']x'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[r].[Id]
 FROM
 	[SampleClass] [r]
@@ -43,10 +41,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[r].[Id]
 FROM
 	[SampleClass] [r]
@@ -55,10 +51,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[r].[Id]
 FROM
 	[SampleClass] [r]

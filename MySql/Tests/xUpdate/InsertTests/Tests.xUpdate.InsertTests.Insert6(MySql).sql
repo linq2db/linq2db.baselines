@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`Value1` = 11
+	`p`.`Value1` = 11
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -36,9 +36,9 @@ WHERE
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`Value1` = 11
+	`p`.`Value1` = 11
 

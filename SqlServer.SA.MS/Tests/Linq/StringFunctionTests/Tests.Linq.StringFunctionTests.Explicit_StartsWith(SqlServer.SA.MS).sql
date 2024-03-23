@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'Hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], 4)) = Convert(VarBinary(8000), N'Hall')
+	[r].[Diagnosis] LIKE N'Hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], LEN(N'Hall'))) = Convert(VarBinary(8000), N'Hall')
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], 4)) = Convert(VarBinary(8000), N'hall')
+	[r].[Diagnosis] LIKE N'hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], LEN(N'hall'))) = Convert(VarBinary(8000), N'hall')
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

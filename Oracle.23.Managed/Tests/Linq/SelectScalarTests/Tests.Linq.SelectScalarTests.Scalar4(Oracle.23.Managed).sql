@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -11,5 +9,5 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 WHERE
 	c_1."ChildID" > 20 AND p."ParentID" = 3
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

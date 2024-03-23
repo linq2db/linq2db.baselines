@@ -2,40 +2,35 @@
 -- Access AccessOleDb
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_ch].[ParentID],
-	[_ch].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t1]
 		WHERE
-			[p].[ParentID] = 1
-	) [key_data_result]
-		INNER JOIN [Child] [_ch] ON ([_ch].[ParentID] = [key_data_result].[ParentID])
+			[t1].[ParentID] = 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t2].[p1],
-	[p].[ParentID],
-	[p].[Value1]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [ch]
+		WHERE
+			[t1].[ParentID] = [ch].[ParentID]
+	),
+	[t1].[ParentID]
 FROM
-	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [p1],
-				[t1].[ParentID]
-			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON ([p].[ParentID] = [t2].[ParentID])
+	[Parent] [t1]
 WHERE
-	[p].[ParentID] = 1
+	[t1].[ParentID] = 1
 

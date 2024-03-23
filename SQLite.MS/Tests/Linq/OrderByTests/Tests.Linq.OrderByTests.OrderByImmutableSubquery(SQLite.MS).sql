@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @param  -- Int32
-SET     @param = 2
 
 SELECT
 	[t1].[ChildID],
@@ -9,7 +7,6 @@ SELECT
 FROM
 	(
 		SELECT
-			@param as [OrderElement],
 			[ch].[ChildID],
 			[ch].[ParentID]
 		FROM

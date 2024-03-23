@@ -2,9 +2,9 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."MoneyValue"
+	p."MoneyValue"
 FROM
-	"LinqDataTypes" t
+	"LinqDataTypes" p
 WHERE
-	(t."BoolValue" = False)
+	p."BoolValue" = False
 

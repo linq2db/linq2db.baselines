@@ -4,7 +4,7 @@ DECLARE @Parameter1 Int -- Int32
 SET     @Parameter1 = 1
 
 SELECT
-	Count(*) > 0
+	IIF(Count(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @Parameter1 Int -- Int32
 SET     @Parameter1 = -1
 
 SELECT
-	Count(*) > 0
+	IIF(Count(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE

@@ -2,9 +2,9 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`t`.`MoneyValue`
+	`p`.`MoneyValue`
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes` `p`
 WHERE
-	`t`.`BoolValue` <> 0
+	NOT (`p`.`BoolValue` = 0)
 

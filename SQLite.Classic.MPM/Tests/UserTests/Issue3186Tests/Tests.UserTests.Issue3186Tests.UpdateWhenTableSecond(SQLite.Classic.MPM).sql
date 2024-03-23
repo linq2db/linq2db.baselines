@@ -104,11 +104,11 @@ UPDATE
 SET
 	[is_deleted] = @is_deleted
 FROM
-	[element_services] [ie]
-		INNER JOIN [component_categories] [ctg] ON [ie].[id] = [ctg].[service_id]
+	[element_services] [ct]
+		INNER JOIN [component_categories] [ctg] ON [ct].[id] = [ctg].[service_id]
 		INNER JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
-	[ie].[id] = 'TestProcessService' AND [component_categories].[id] = [ctg].[id]
+	[ct].[id] = 'TestProcessService' AND [component_categories].[id] = [ctg].[id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

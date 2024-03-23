@@ -14,11 +14,11 @@ DECLARE @Key1  -- Int32
 SET     @Key1 = 143
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = ?
+	"TypeDiscriminator" = ?
 WHERE
-	"InheritanceParent"."InheritanceParentId" = ? AND "InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -58,11 +58,11 @@ DECLARE @Key1  -- Int32
 SET     @Key1 = 143
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = ?
+	"TypeDiscriminator" = ?
 WHERE
-	"InheritanceParent"."InheritanceParentId" = ? AND "InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

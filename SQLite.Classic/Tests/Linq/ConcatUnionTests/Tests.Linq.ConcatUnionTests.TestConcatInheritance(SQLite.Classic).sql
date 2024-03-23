@@ -34,8 +34,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[EntityId],
+	0,
 	[t1].[Discr],
+	[t1].[EntityId],
 	[t1].[Value]
 FROM
 	[ConcatTest] [t1]
@@ -43,8 +44,9 @@ WHERE
 	[t1].[Discr] <> 1
 UNION ALL
 SELECT
-	[t2].[EntityId],
+	1,
 	[t2].[Discr],
+	[t2].[EntityId],
 	[t2].[Value]
 FROM
 	[ConcatTest] [t2]

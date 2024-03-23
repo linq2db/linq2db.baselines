@@ -137,5 +137,14 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
+SELECT
+	"t1"."Id",
+	"t1"."Text"
+FROM
+	"Issue2816Table" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
 DROP TABLE "Issue2816Table"
 

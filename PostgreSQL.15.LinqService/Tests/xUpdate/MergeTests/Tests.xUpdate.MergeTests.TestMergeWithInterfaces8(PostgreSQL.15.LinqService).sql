@@ -16,17 +16,21 @@ CREATE TABLE IF NOT EXISTS "ReviewIndexes"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Value Text(1) -- String
+SET     @Value = '3'
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (VALUES
 	(1)
 ) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN NOT MATCHED AND "Source"."Id" > 1 THEN
+WHEN NOT MATCHED AND "Source"."source_Id" > 1 THEN
 INSERT
 (
 	"Id",
@@ -34,8 +38,8 @@ INSERT
 )
 VALUES
 (
-	2,
-	'3'
+	:Id,
+	:Value
 )
 
 BeforeExecute

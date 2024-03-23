@@ -46,21 +46,17 @@ DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
 SET     @ClaimedKeyTypeN = N'EC'
 
 UPDATE
-	[p]
+	[Issue1554FluentTable]
 SET
-	[p].[ClaimedKeyType] = @ClaimedKeyType,
-	[p].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
-FROM
-	[Issue1554FluentTable] [p]
+	[ClaimedKeyType] = @ClaimedKeyType,
+	[ClaimedKeyTypeN] = @ClaimedKeyTypeN
 WHERE
-	[p].[Id] = 0
+	[Issue1554FluentTable].[Id] = 0
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],
 	[t1].[ClaimedKeyTypeN]

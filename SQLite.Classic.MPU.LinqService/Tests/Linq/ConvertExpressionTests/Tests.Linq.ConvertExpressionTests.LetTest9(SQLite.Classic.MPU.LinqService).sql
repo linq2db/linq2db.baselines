@@ -4,38 +4,17 @@ DECLARE @take  -- Int32
 SET     @take = 10
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
-FROM
-	(
-		SELECT DISTINCT
-			[t1].[ParentID],
-			[t1].[Value1]
-		FROM
-			(
-				SELECT
-					[p].[ParentID],
-					[p].[Value1]
-				FROM
-					[Parent] [p]
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID]
-ORDER BY
-	[_c].[ChildID]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 10
-
-SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
 	[Parent] [p]
+		LEFT JOIN (
+			SELECT
+				[c_1].[ParentID],
+				[c_1].[ChildID],
+				ROW_NUMBER() OVER (PARTITION BY [c_1].[ParentID] ORDER BY [c_1].[ChildID]) as [rn]
+			FROM
+				[Child] [c_1]
+		) [t1] ON [t1].[ParentID] = [p].[ParentID] AND [t1].[rn] <= 1
 LIMIT @take
 

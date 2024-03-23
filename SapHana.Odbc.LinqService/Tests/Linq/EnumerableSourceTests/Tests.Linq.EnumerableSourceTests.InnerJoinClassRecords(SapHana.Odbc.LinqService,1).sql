@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 1 AS "PersonID" FROM DUMMY
+			SELECT 1 AS "ID" FROM DUMMY
 			UNION ALL
-			SELECT 2 FROM DUMMY) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 2 FROM DUMMY) "n" ON "p"."PersonID" = "n"."ID"
 

@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @skip Int32
-SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 100
 
 SELECT
 	`c_1`.`ParentID`,
@@ -20,7 +16,7 @@ WHERE
 					`p`.`ParentID`
 				FROM
 					`Parent` `p`
-				LIMIT @skip, @take
+				LIMIT 1, 100
 			) `t1`
 	)
 

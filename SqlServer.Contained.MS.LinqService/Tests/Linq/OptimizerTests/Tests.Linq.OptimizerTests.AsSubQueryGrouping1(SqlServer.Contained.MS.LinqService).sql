@@ -606,12 +606,12 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[Key1]
+			[x].[Key1]
 		FROM
-			[FirstOptimizerData] [t1]
+			[FirstOptimizerData] [x]
 		GROUP BY
-			[t1].[Key1]
-	) [x]
+			[x].[Key1]
+	) [x_1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

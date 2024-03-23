@@ -2,8 +2,6 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 SELECT
 	t2."FirstName",
@@ -44,6 +42,6 @@ FROM
 			"Person" t3
 		ORDER BY
 			t3."LastName"
-		FETCH NEXT :take_1 ROWS ONLY
+		FETCH NEXT :take ROWS ONLY
 	) t4
 

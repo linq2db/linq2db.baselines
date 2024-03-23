@@ -6,8 +6,13 @@ SELECT /* aa */
 	p."Value1"
 FROM
 	"Parent" p
-		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
-FOR SHARE
+		INNER JOIN (
+			SELECT
+				c_1."ParentID"
+			FROM
+				"Child" c_1
+			FOR UPDATE
+		) t1 ON p."ParentID" = t1."ParentID"
 FOR KEY SHARE
-FOR UPDATE
+FOR SHARE
 

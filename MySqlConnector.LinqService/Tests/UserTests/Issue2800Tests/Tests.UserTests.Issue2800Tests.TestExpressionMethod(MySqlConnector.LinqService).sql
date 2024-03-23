@@ -63,32 +63,10 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
-	`x`.`Id`,
-	`x`.`Name`
+	`t1`.`Id`,
+	`t1`.`Name`
 FROM
-	`Car` `x`
-WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
-WHERE
-	`x`.`Name` = 'Special'
-
-BeforeExecute
--- MySqlConnector MySql
-
-SELECT
-	`x`.`Id`,
-	`x`.`Name`
-FROM
-	`Car` `x`
+	`Car` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql
@@ -105,12 +83,88 @@ BeforeExecute
 -- MySqlConnector MySql
 
 SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
 	`x`.`Id`,
 	`x`.`Name`
 FROM
 	`Car` `x`
 WHERE
 	`x`.`Name` = 'Special'
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Name`
+FROM
+	`Car` `x`
+WHERE
+	`x`.`Name` = 'Special'
+
+BeforeExecute
+-- MySqlConnector MySql
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`
+FROM
+	`Car` `t1`
 
 BeforeExecute
 -- MySqlConnector MySql

@@ -22,8 +22,7 @@ FROM
 		SELECT
 			[c_1].[ParentID],
 			CASE
-				WHEN Cast([c_1].[ChildID] as Float) / 10 > 0
-					THEN Cast((Cast([c_1].[ChildID] as Float) / 10) as INTEGER)
+				WHEN Cast([c_1].[ChildID] as Float) / 10 > 0 THEN Cast((Cast([c_1].[ChildID] as Float) / 10) as INTEGER)
 				ELSE Cast((Cast([c_1].[ChildID] as Float) / 10 - 0.99999999999999989) as INTEGER)
 			END as [Value1]
 		FROM

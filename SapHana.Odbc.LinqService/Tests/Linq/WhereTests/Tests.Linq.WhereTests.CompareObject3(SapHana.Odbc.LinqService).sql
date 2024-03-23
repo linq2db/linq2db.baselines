@@ -11,5 +11,5 @@ SELECT
 FROM
 	"Child" "ch"
 WHERE
-	("ch"."ParentID" <> ? OR "ch"."ChildID" <> ?)
+	NOT ("ch"."ParentID" = ? AND "ch"."ChildID" = ?)
 

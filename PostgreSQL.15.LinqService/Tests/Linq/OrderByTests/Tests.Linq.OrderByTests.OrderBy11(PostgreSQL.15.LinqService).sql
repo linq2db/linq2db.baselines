@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Child" x
 ORDER BY
-	x."ChildID" % 2,
+	Cast(Floor(Cast(x."ChildID" as decimal) % 2) as Int),
 	x."ChildID" DESC
 

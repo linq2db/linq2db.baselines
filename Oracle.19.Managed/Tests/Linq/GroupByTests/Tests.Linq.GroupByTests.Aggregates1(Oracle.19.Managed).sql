@@ -2,13 +2,13 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*),
-	Sum(t1."ChildID"),
-	Min(t1."ChildID"),
-	Max(t1."ChildID"),
-	Round(AVG(t1."ChildID"), 27)
+	COUNT(*),
+	SUM(g_1."ChildID"),
+	MIN(g_1."ChildID"),
+	MAX(g_1."ChildID"),
+	AVG(g_1."ChildID")
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID"
+	g_1."ParentID"
 

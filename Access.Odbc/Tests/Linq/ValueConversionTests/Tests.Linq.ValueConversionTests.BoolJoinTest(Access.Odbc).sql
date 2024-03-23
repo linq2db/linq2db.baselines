@@ -532,13 +532,17 @@ SET     @BoolValue = 'Y'
 SELECT
 	[t1].[Enum]
 FROM
-	[ValueConversion] [t1]
-		INNER JOIN (
-			SELECT
-				[t2].[BoolValue]
-			FROM
-				[ValueConversion] [t2]
-		) [t2_1] ON ([t2_1].[BoolValue] = ? AND [t1].[BoolValue] = ?)
+	[ValueConversion] [t1],
+	(
+		SELECT
+			*
+		FROM
+			[ValueConversion] [t2]
+		WHERE
+			[t2].[BoolValue] = ?
+	) [t2_1]
+WHERE
+	[t1].[BoolValue] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Max(t1."ID")
+	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 

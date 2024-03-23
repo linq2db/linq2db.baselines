@@ -22,7 +22,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE
@@ -38,7 +38,7 @@ SET     @id = 1001
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = @Value1
+	[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = @id
 
@@ -48,7 +48,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE
@@ -64,7 +64,7 @@ SET     @id = 1001
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = @Value1
+	[Value1] = @Value1
 WHERE
 	[Parent].[ParentID] = @id
 
@@ -74,7 +74,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE

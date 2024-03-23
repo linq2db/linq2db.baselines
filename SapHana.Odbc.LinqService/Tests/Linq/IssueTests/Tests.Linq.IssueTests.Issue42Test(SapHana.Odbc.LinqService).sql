@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"r"."ID",
@@ -18,7 +16,27 @@ FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r"."ID" = 1
-LIMIT ?
+LIMIT 1
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"r"."ID",
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r"."ID" = 1
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -44,26 +62,24 @@ DECLARE @ID  -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t1"
 SET
-	"LinqDataTypes"."MoneyValue" = ?,
-	"LinqDataTypes"."DateTimeValue" = ?,
-	"LinqDataTypes"."DateTimeValue2" = ?,
-	"LinqDataTypes"."BoolValue" = ?,
-	"LinqDataTypes"."GuidValue" = ?,
-	"LinqDataTypes"."SmallIntValue" = ?,
-	"LinqDataTypes"."IntValue" = ?,
-	"LinqDataTypes"."BigIntValue" = ?,
-	"LinqDataTypes"."StringValue" = ?
+	"MoneyValue" = ?,
+	"DateTimeValue" = ?,
+	"DateTimeValue2" = ?,
+	"BoolValue" = ?,
+	"GuidValue" = ?,
+	"SmallIntValue" = ?,
+	"IntValue" = ?,
+	"BigIntValue" = ?,
+	"StringValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t1"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"r"."ID",
@@ -80,7 +96,7 @@ FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r"."ID" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -106,17 +122,37 @@ DECLARE @ID  -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t1"
 SET
-	"LinqDataTypes"."MoneyValue" = ?,
-	"LinqDataTypes"."DateTimeValue" = ?,
-	"LinqDataTypes"."DateTimeValue2" = ?,
-	"LinqDataTypes"."BoolValue" = ?,
-	"LinqDataTypes"."GuidValue" = ?,
-	"LinqDataTypes"."SmallIntValue" = ?,
-	"LinqDataTypes"."IntValue" = ?,
-	"LinqDataTypes"."BigIntValue" = ?,
-	"LinqDataTypes"."StringValue" = ?
+	"MoneyValue" = ?,
+	"DateTimeValue" = ?,
+	"DateTimeValue2" = ?,
+	"BoolValue" = ?,
+	"GuidValue" = ?,
+	"SmallIntValue" = ?,
+	"IntValue" = ?,
+	"BigIntValue" = ?,
+	"StringValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t1"."ID" = ?
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"r"."ID",
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r"."ID" = 1
+LIMIT 1
 

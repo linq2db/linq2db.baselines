@@ -35,6 +35,8 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis Text(8) -- String
+SET     @Diagnosis = 'negative'
 
 INSERT INTO "Patient" AS t1
 (
@@ -44,7 +46,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	'negative'
+	:Diagnosis
 )
 ON CONFLICT ("PersonID") DO NOTHING
 
@@ -65,6 +67,8 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @Diagnosis Text(8) -- String
+SET     @Diagnosis = 'positive'
 
 INSERT INTO "Patient" AS t1
 (
@@ -74,7 +78,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	'positive'
+	:Diagnosis
 )
 ON CONFLICT ("PersonID") DO NOTHING
 

@@ -84,26 +84,24 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[sc].[Id],
-	[sc].[Value]
-FROM
-	[ChildEntityObject] [sc]
-LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
 	[c_1].[Id],
-	[c_1].[Value]
+	[c_1].[Value],
+	[t1].[Id],
+	[t1].[Value_1]
 FROM
 	[MainEntityObject] [m_1]
 		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
+		LEFT JOIN (
+			SELECT
+				[sc].[Id],
+				[sc].[Value] as [Value_1]
+			FROM
+				[ChildEntityObject] [sc]
+			LIMIT 1
+		) [t1] ON 1=1
 ORDER BY
 	[m_1].[Id]
 

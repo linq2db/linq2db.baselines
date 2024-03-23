@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 3
 
 SELECT
 	p."ParentID",
@@ -20,7 +18,7 @@ WHERE
 					"Parent" p1
 				WHERE
 					(p1."Value1" = p."Value1" OR p1."Value1" IS NULL AND p."Value1" IS NULL)
-				LIMIT :take
+				LIMIT 3
 			) t1
 	)
 

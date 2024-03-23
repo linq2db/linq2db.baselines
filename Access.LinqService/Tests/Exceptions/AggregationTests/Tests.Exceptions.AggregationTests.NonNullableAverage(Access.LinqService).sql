@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Avg([_].[ParentID])
+	AVG([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

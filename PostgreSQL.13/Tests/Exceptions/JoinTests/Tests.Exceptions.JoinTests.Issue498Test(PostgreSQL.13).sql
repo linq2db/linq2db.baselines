@@ -11,10 +11,10 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	x."ParentID"
+	g_1."ParentID"
 FROM
-	"Parent" x
-		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
+	"Parent" g_1
+		INNER JOIN "Child" y ON g_1."ParentID" = y."ParentID"
 GROUP BY
-	x."ParentID"
+	g_1."ParentID"
 

@@ -22,14 +22,18 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
+SET     @MoneyValue = 2000
+DECLARE @SmallIntValue Int16
+SET     @SmallIntValue = 200
 DECLARE @ID Int32
 SET     @ID = 1001
 
 UPDATE
 	`LinqDataTypes` `t`
 SET
-	`t`.`MoneyValue` = 2000,
-	`t`.`SmallIntValue` = 200
+	`t`.`MoneyValue` = @MoneyValue,
+	`t`.`SmallIntValue` = @SmallIntValue
 WHERE
 	`t`.`ID` = @ID
 
@@ -37,8 +41,6 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -53,5 +55,5 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = @ID
-LIMIT @take
+LIMIT 2
 

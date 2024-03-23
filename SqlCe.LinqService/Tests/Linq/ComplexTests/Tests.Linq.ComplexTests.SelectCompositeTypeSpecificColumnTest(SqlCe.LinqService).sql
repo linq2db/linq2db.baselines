@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[u].[city]
+	[u].[city] as [City]
 FROM
 	[User] [u]
 
@@ -26,7 +26,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[u].[street]
+	[u].[street] as [Street]
 FROM
 	[User] [u]
 

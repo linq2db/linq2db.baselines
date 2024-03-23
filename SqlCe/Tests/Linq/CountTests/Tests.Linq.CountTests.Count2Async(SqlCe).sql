@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE

@@ -9,10 +9,28 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] + ? IN (
+	[p].[ParentID] + CVar(?) IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
 	)
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 

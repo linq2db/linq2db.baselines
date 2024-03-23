@@ -6,7 +6,7 @@ SELECT
 	"ch"."ChildID"
 FROM
 	"Child" "ch"
-		INNER JOIN "Parent" "p" ON "p"."ParentID" = Floor(Cast("ch"."ChildID" as Double) / 10)
+		INNER JOIN "Parent" "p" ON "p"."ParentID" = Cast(Floor(Floor(Cast("ch"."ChildID" as Double) / 10)) as Integer)
 WHERE
 	"ch"."ParentID" = "p"."ParentID"
 

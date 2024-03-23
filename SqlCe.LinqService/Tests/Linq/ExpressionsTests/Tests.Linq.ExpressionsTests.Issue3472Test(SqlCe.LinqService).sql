@@ -30,18 +30,17 @@ BeforeExecute
 
 SELECT
 	[t2].[Id],
-	[t1].[cnt]
+	[t1].[COUNT_1] as [PersonsCount]
 FROM
 	[Issue3472TableDCTX] [t2]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[p].[PersonID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Person] [p]
-			GROUP BY
-				[p].[PersonID]
-		) [t1] ON [t1].[PersonID] = [t2].[Id]
+			WHERE
+				[p].[PersonID] = [t2].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlCe

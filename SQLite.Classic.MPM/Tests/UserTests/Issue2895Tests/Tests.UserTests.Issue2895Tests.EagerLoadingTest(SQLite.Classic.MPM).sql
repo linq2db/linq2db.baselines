@@ -245,61 +245,50 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result_1].[Id],
-	[key_data_result_1].[EmailId],
-	[key_data_result_1].[AdminId],
-	[key_data_result_1].[Id_1],
-	[key_data_result_1].[Id_1_1],
-	[__c].[Name]
+	[m_1].[Id],
+	[m_1].[Id_1],
+	[a_Documents].[Name]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Email_1].[Id],
-			[detail].[EmailId],
-			[detail].[AdminId],
-			[key_data_result].[Id] as [Id_1],
-			[key_data_result].[Id_1] as [Id_1_1]
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[a_Admin].[Id],
-					[r].[Id] as [Id_1]
+					[a_Admin].[Id]
 				FROM
 					[Request] [r]
 						LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 						LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
-			) [key_data_result]
-				INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
-					LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
-						LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
+			) [t1]
+				INNER JOIN [EmailAdminAssociation] [d] ON [t1].[Id] IS NOT NULL AND [t1].[Id] = [d].[AdminId]
+				LEFT JOIN [Email] [a_Email] ON [d].[EmailId] = [a_Email].[Id]
+				LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 				LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-	) [key_data_result_1]
-		INNER JOIN [EmailAttachmentAssociation] [detail_1] ON [key_data_result_1].[Id] = [detail_1].[EmailId]
-			LEFT JOIN [Attachment] [a_Attachment] ON [detail_1].[AttachmentId] = [a_Attachment].[Id]
-		INNER JOIN [Document] [__c] ON [a_Attachment].[Id] = [__c].[AttachmentId]
+	) [m_1]
+		INNER JOIN [EmailAttachmentAssociation] [d_1] ON [m_1].[Id] IS NOT NULL AND [m_1].[Id] = [d_1].[EmailId]
+		LEFT JOIN [Attachment] [a_Attachment] ON [d_1].[AttachmentId] = [a_Attachment].[Id]
+		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] IS NOT NULL AND [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Id_1],
-	[a_Email_1].[Id],
-	[detail].[EmailId],
-	[detail].[AdminId]
+	[m_1].[Id],
+	[a_Email_1].[Id]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Admin].[Id],
-			[r].[Id] as [Id_1]
+			[a_Admin].[Id]
 		FROM
 			[Request] [r]
 				LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]
 				LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
-	) [key_data_result]
-		INNER JOIN [EmailAdminAssociation] [detail] ON [key_data_result].[Id] = [detail].[AdminId]
-			LEFT JOIN [Email] [a_Email] ON [detail].[EmailId] = [a_Email].[Id]
-				LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
+	) [m_1]
+		INNER JOIN [EmailAdminAssociation] [d] ON [m_1].[Id] IS NOT NULL AND [m_1].[Id] = [d].[AdminId]
+		LEFT JOIN [Email] [a_Email] ON [d].[EmailId] = [a_Email].[Id]
+		LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 		LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 
 BeforeExecute
@@ -308,8 +297,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[a_Admin].[Id],
-	[r].[Id]
+	[a_Admin].[Id]
 FROM
 	[Request] [r]
 		LEFT JOIN [User] [a_User] ON [r].[UserId] = [a_User].[Id]

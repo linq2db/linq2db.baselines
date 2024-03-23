@@ -106,15 +106,15 @@ DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
 UPDATE
-	[ctg]
+	[ct]
 SET
-	[ctg].[is_deleted] = @is_deleted
+	[ct].[is_deleted] = @is_deleted
 FROM
-	[component_categories] [ctg]
-		INNER JOIN [element_services] [ie] ON [ie].[id] = [ctg].[service_id]
-		LEFT JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+	[component_categories] [ct]
+		INNER JOIN [element_services] [sr] ON [sr].[id] = [ct].[service_id]
+		LEFT JOIN [Components] [cm] ON [ct].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
-	[ie].[id] = N'TestProcessService'
+	[sr].[id] = N'TestProcessService'
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

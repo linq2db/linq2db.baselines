@@ -8,10 +8,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [_]
@@ -311,9 +309,9 @@ FROM
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[AllTypes] [t1]
+	[AllTypes] [_]
 WHERE
-	[t1].[char20DataType] = N'issue792'
+	[_].[char20DataType] = N'issue792'
 

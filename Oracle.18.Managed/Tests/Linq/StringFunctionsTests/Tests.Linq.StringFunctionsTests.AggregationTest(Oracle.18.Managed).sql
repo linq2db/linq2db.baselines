@@ -44,15 +44,22 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t1."Value1"),
-	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+	(
+		SELECT
+			MAX(t."Value1")
+		FROM
+			"SampleClass" t
+		WHERE
+			g_1."Id" = t."Id" AND (g_1."Value1" = t."Value1" OR g_1."Value1" IS NULL AND t."Value1" IS NULL)
+	),
+	LISTAGG(g_1."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value1"
+	g_1."Id",
+	g_1."Value1"
 ORDER BY
-	t1."Id"
+	g_1."Id"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -26,7 +26,7 @@ SELECT
 	[cb].[Id],
 	[cb].[Name],
 	[cb].[ContactEmail],
-	Coalesce([cb].[Enabled], 0)
+	[cb].[Enabled]
 FROM
 	[CustomerBase] [cb]
 WHERE

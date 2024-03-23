@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(2) -- String
-SET     @p = '23'
 
 SELECT
-	:p
+	Substr('123', 2, 2)
 FROM SYS.DUAL
 

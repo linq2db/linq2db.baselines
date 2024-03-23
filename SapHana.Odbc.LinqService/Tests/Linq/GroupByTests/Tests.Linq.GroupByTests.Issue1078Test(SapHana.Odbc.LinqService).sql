@@ -217,20 +217,16 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."SiteID",
-	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1078Table" "u"
-		WHERE
-			"u"."Active" <> 1 AND "t1"."SiteID" = "u"."SiteID"
-	)
+	"grp"."SiteID",
+	COUNT(*),
+	COUNT(CASE
+		WHEN "grp"."Active" = 0 THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1078Table" "t1"
+	"Issue1078Table" "grp"
 GROUP BY
-	"t1"."SiteID"
+	"grp"."SiteID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

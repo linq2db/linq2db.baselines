@@ -18,16 +18,22 @@ CREATE TABLE [test_insert_or_replace]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
-	[t1].[id] = 1
+	[t1].[id] = @Id
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'test'
 
 INSERT INTO [test_insert_or_replace]
 (
@@ -36,19 +42,21 @@ INSERT INTO [test_insert_or_replace]
 )
 VALUES
 (
-	1,
-	'test'
+	@Id,
+	@Name
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
-	[t1].[id] = 1
+	[t1].[id] = @Id
 
 BeforeExecute
 -- SqlCe

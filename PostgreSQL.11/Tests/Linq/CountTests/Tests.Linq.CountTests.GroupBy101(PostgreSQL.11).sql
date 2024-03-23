@@ -2,9 +2,9 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID"
+	g_1."ParentID"
 

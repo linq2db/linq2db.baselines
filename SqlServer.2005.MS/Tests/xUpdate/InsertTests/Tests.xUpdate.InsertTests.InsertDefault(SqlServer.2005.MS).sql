@@ -19,9 +19,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Person] [t1]
+	[Person] [p]
 WHERE
-	[t1].[FirstName] = N'InsertDefault'
+	[p].[FirstName] = N'InsertDefault'
 

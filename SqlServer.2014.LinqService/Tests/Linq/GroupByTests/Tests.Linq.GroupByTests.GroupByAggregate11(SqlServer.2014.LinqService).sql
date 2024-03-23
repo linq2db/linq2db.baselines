@@ -2,30 +2,30 @@
 -- SqlServer.2014
 
 SELECT
-	[t2].[Key_1]
+	[g_2].[c1]
 FROM
 	(
 		SELECT
 			IIF((
 				SELECT
-					Avg([c_1].[ParentID])
+					AVG([a_Children].[ParentID])
 				FROM
-					[Child] [c_1]
+					[Child] [a_Children]
 				WHERE
-					[p].[ParentID] = [c_1].[ParentID]
-			) > 3, 1, 0) as [Key_1]
+					[g_1].[ParentID] = [a_Children].[ParentID]
+			) > 3, 1, 0) as [c1]
 		FROM
-			[Parent] [p]
+			[Parent] [g_1]
 		WHERE
 			(
 				SELECT
-					Count(*)
+					COUNT(*)
 				FROM
-					[Child] [t1]
+					[Child] [a_Children_1]
 				WHERE
-					[p].[ParentID] = [t1].[ParentID]
+					[g_1].[ParentID] = [a_Children_1].[ParentID]
 			) > 0
-	) [t2]
+	) [g_2]
 GROUP BY
-	[t2].[Key_1]
+	[g_2].[c1]
 

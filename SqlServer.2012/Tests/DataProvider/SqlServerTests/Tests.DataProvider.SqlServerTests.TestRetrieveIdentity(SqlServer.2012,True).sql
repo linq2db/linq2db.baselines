@@ -84,7 +84,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Max([_].[PersonID])
+	MAX([_].[PersonID])
 FROM
 	[Person] [_]
 

@@ -1,20 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID]
 FROM
-	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[ch].[ParentID]
+	[Parent] [t2]
+		INNER JOIN (
+			SELECT
+				[ch].[ParentID],
+				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ParentID]) as [rn]
 			FROM
 				[Child] [ch]
-			WHERE
-				[ch].[ParentID] = [p].[ParentID]
-		) [t1]
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
-	[p].[ParentID] = 1
+	[t2].[ParentID] = 1
 

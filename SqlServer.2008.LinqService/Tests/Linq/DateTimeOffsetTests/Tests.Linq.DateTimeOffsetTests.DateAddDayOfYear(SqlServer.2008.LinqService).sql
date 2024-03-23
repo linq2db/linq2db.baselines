@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	DateAdd(dayofyear, 3, [t].[TransactionDate])
+	Convert(Date, DateAdd(dayofyear, 3, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

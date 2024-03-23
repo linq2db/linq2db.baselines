@@ -2,23 +2,23 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Min(c_1."ChildID"),
+	MIN(c_1."ChildID"),
 	MIN(c_1."ChildID"),
 	MIN(ALL c_1."ChildID"),
 	MIN(DISTINCT c_1."ChildID")
 FROM
-	"Parent" p
-		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
+	"Parent" g_1
+		INNER JOIN "Child" c_1 ON g_1."ParentID" = c_1."ParentID"
 GROUP BY
-	p."ParentID"
+	g_1."ParentID"
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Min(c_1."ParentID")
+	MIN(t1."ParentID")
 FROM
-	"Child" c_1
+	"Child" t1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

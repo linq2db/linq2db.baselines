@@ -130,14 +130,6 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1.ID
-FROM
-	"test_in_1" t1
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-SELECT
 	t.ID
 FROM
 	"test_in_1" t
@@ -155,7 +147,7 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	"test_in_2" t1
+	"test_in_1" t1
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

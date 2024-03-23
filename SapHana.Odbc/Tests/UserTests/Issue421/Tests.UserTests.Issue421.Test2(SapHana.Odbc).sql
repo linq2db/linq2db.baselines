@@ -44,11 +44,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "_"
 SET
-	"BlobClass"."BlobValue" = x'030201'
+	"BlobValue" = x'030201'
 WHERE
-	"BlobClass"."Id" = 1
+	"_"."Id" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

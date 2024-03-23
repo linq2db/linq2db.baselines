@@ -28,11 +28,13 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 5
 
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = 5
+	[Value1] = @Value1
 WHERE
 	EXISTS(
 		SELECT

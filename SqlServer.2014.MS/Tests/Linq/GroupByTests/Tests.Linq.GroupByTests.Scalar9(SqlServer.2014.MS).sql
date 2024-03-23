@@ -2,16 +2,9 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [id]
-		WHERE
-			[t1].[ParentID] = [id].[ParentID] AND [id].[ChildID] < 30
-	)
+	COUNT(IIF([g_1].[ChildID] < 30, 1, NULL))
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 

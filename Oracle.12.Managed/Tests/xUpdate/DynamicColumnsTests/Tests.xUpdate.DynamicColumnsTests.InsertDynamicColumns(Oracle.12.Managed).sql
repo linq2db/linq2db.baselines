@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Varchar2(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender Varchar2(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
 
 BeforeExecute

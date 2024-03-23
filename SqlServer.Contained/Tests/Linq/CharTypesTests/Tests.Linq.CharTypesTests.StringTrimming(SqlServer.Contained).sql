@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Max([_].[ID])
+	MAX([_].[ID])
 FROM
 	[AllTypes] [_]
 

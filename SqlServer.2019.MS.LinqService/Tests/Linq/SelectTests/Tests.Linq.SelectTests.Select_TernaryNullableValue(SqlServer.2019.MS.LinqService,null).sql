@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @Value Int -- Int32
-SET     @Value = NULL
+DECLARE @value Int -- Int32
+SET     @value = NULL
+DECLARE @value_1 Int -- Int32
+SET     @value_1 = 0
 
 SELECT
-	@Value
+	@value,
+	@value_1
 

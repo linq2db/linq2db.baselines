@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -21,10 +19,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -64,28 +60,24 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[MoneyValue] = @MoneyValue,
-	[t1].[DateTimeValue] = @DateTimeValue,
-	[t1].[DateTimeValue2] = @DateTimeValue2,
-	[t1].[BoolValue] = @BoolValue,
-	[t1].[GuidValue] = @GuidValue,
-	[t1].[SmallIntValue] = @SmallIntValue,
-	[t1].[IntValue] = @IntValue,
-	[t1].[BigIntValue] = @BigIntValue,
-	[t1].[StringValue] = @StringValue
-FROM
-	[LinqDataTypes] [t1]
+	[MoneyValue] = @MoneyValue,
+	[DateTimeValue] = @DateTimeValue,
+	[DateTimeValue2] = @DateTimeValue2,
+	[BoolValue] = @BoolValue,
+	[GuidValue] = @GuidValue,
+	[SmallIntValue] = @SmallIntValue,
+	[IntValue] = @IntValue,
+	[BigIntValue] = @BigIntValue,
+	[StringValue] = @StringValue
 WHERE
-	[t1].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -107,11 +99,9 @@ DECLARE @pdt DateTime2
 SET     @pdt = NULL
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue2] = @pdt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue2] = @pdt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 

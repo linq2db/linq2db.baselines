@@ -137,5 +137,14 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+SELECT
+	[t1].[Id],
+	[t1].[Text]
+FROM
+	[Issue2816Table] [t1]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 DROP TABLE IF EXISTS [Issue2816Table]
 

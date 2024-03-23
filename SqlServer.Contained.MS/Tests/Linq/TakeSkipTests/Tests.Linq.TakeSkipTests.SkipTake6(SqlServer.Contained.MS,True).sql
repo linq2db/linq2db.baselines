@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[c_1].[ParentID],
@@ -9,20 +7,16 @@ SELECT
 FROM
 	[Child] [c_1],
 	(
-		SELECT TOP (@take)
+		SELECT TOP (3)
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
-	) [t1]
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @skip Int -- Int32
-SET     @skip = 12
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[c_1].[ParentID],
@@ -36,8 +30,8 @@ FROM
 			[GrandChild] [p]
 		ORDER BY
 			1
-		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-	) [t1]
+		OFFSET 12 ROWS FETCH NEXT 3 ROWS ONLY 
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 

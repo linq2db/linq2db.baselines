@@ -6,11 +6,11 @@ DECLARE @ID  -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = ?
+	"BinaryValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -20,11 +20,11 @@ DECLARE @ID  -- Int32
 SET     @ID = 2
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = ?
+	"BinaryValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

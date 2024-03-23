@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:param = t1."SmallIntValue"
+	(Cast(:param as Int) = t1."SmallIntValue" OR Cast(:param as Int) IS NULL AND t1."SmallIntValue" IS NULL)
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

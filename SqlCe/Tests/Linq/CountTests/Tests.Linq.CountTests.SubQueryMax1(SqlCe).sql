@@ -2,17 +2,16 @@
 -- SqlCe
 
 SELECT
-	Max([t1].[cnt])
+	MAX([t1].[COUNT_1]) as [MAX_1]
 FROM
-	[Parent] [p]
-		LEFT JOIN (
+	[Parent] [t2]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[a_Parent].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [c_1]
 					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-			GROUP BY
-				[a_Parent].[ParentID]
-		) [t1] ON [t1].[ParentID] = [p].[ParentID]
+			WHERE
+				[a_Parent].[ParentID] = [t2].[ParentID]
+		) [t1]
 

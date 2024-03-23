@@ -6,6 +6,7 @@ SELECT
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1" NULLS LAST, c_1."ParentID" DESC NULLS FIRST),
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1" NULLS FIRST, c_1."ParentID", c_1."ParentID" NULLS FIRST),
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1" DESC, a_ParentTest."Value1", c_1."ParentID" DESC),
+	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1" DESC, a_ParentTest."Value1", c_1."ParentID" DESC),
 	LISTAGG(c_1."ChildID", '..') WITHIN GROUP (ORDER BY p."Value1" DESC, a_ParentTest."Value1", c_1."ParentID" DESC)
 FROM
 	"Parent" p

@@ -30,10 +30,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 1
 DECLARE @skip Integer -- Int32
-SET     @skip = 1
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 3
+SET     @skip = 3
 
 SELECT
 	t1."Value"
@@ -41,7 +41,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-LIMIT :skip OFFSET :skip_1 
+LIMIT :take OFFSET :skip 
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

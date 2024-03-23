@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	c_1."ParentID",
@@ -11,5 +9,5 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
 WHERE
 	a_Parent."Value1" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

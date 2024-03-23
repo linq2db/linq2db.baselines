@@ -9,13 +9,13 @@ FROM
 	"LinqDataTypes" "t1_1"
 		INNER JOIN (
 			SELECT
-				"sub"."ID",
-				Max("sub"."DateTimeValue") as "DateTimeValue"
+				"t2"."ID",
+				MAX("t2"."DateTimeValue") as "DateTimeValue"
 			FROM
-				"LinqDataTypes" "sub"
+				"LinqDataTypes" "t2"
 			WHERE
-				"sub"."ID" = 1 AND "sub"."DateTimeValue" <= ?
+				"t2"."ID" = 1 AND "t2"."DateTimeValue" <= ?
 			GROUP BY
-				"sub"."ID"
+				"t2"."ID"
 		) "t1" ON "t1_1"."ID" = "t1"."ID" AND "t1_1"."DateTimeValue" = "t1"."DateTimeValue"
 

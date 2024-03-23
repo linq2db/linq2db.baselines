@@ -44,8 +44,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1.city,
 	t1.user_name,
+	t1.city,
 	t1.street,
 	t1.building_number
 FROM

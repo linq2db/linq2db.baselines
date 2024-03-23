@@ -1,22 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[c_2].[ParentID],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
-		CROSS APPLY (
-			SELECT TOP (@take)
-				[cg].[ParentID],
-				[cg].[ChildID]
+		INNER JOIN (
+			SELECT
+				[c_1].[ParentID],
+				[c_1].[ChildID],
+				ROW_NUMBER() OVER (PARTITION BY [c_1].[ParentID] ORDER BY [c_1].[ChildID] DESC) as [rn]
 			FROM
-				[Child] [cg]
-			WHERE
-				[o].[ParentID] = [cg].[ParentID]
-		) [t1]
+				[Child] [c_1]
+		) [c_2] ON [o].[ParentID] = [c_2].[ParentID] AND [c_2].[rn] <= 1
 

@@ -17,10 +17,10 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[a_A1].[ID],
-	[a_A2].[ID]
+	[a_A1].[ID] as [TypeCode],
+	[a_A2].[ID] as [TypeCode_1]
 FROM
 	[LinqDataTypes] [ia]
-		LEFT JOIN [LinqDataTypes] [a_A1] ON [a_A1].[ID] = 2 AND [ia].[GuidValue] = [a_A1].[GuidValue]
-		LEFT JOIN [LinqDataTypes] [a_A2] ON [a_A2].[ID] <> 2 AND [ia].[GuidValue] = [a_A2].[GuidValue]
+		LEFT JOIN [LinqDataTypes] [a_A1] ON [ia].[GuidValue] = [a_A1].[GuidValue] AND [a_A1].[ID] = 2
+		LEFT JOIN [LinqDataTypes] [a_A2] ON [ia].[GuidValue] = [a_A2].[GuidValue] AND ([a_A2].[ID] <> 2 OR [a_A2].[ID] IS NULL)
 

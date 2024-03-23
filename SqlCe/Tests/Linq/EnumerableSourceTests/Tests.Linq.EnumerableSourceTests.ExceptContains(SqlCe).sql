@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[r].[PersonID]
+	[r].[PersonID] as [ID]
 FROM
 	[Person] [r]
 

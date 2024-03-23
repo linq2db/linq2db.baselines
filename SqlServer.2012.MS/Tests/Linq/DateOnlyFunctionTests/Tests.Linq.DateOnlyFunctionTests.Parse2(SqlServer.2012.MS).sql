@@ -44,16 +44,11 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[d].[c1]
+	[d].[TransactionDate]
 FROM
-	(
-		SELECT
-			[t].[TransactionDate] as [c1]
-		FROM
-			[Transactions] [t]
-	) [d]
+	[Transactions] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, [d].[TransactionDate]) > 0
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

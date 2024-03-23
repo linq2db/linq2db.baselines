@@ -378,7 +378,7 @@ BeforeExecute
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`,
-	Concat('M', Cast(`t1`.`Id` as CHAR(11)))
+	Concat('M', Cast(`t1`.`Id` as CHAR(255)))
 FROM
 	`InstanceClass` `t1`
 

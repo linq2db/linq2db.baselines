@@ -2,21 +2,19 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	gjd_ch."ParentID",
-	gjd_ch."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			t."ParentID",
-			t."Value1"
+			p."ParentID"
 		FROM
-			"Parent" t
+			"Parent" p
 		WHERE
-			t."ParentID" = 2
-	) key_data_result
-		INNER JOIN "Child" gjd_ch ON gjd_ch."ParentID" = key_data_result."ParentID"
+			p."ParentID" = 2
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

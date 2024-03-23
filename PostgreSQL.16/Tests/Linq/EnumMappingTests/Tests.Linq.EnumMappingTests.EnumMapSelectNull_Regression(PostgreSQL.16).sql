@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	r."BigIntValue"
@@ -33,7 +31,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" = 101
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

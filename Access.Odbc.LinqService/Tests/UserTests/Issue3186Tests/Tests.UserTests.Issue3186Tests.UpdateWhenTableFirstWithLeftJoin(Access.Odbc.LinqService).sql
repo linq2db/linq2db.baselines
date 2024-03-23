@@ -292,13 +292,13 @@ DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = True
 
 UPDATE
-	([component_categories] [ctg]
-		INNER JOIN [element_services] [ie] ON ([ie].[id] = [ctg].[service_id]))
-		LEFT JOIN [Components] [cm] ON ([ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = False)
+	([component_categories] [ct]
+		INNER JOIN [element_services] [sr] ON ([sr].[id] = [ct].[service_id]))
+		LEFT JOIN [Components] [cm] ON ([ct].[id] = [cm].[category_id] AND [cm].[is_deleted] = False)
 SET
-	[ctg].[is_deleted] = ?
+	[ct].[is_deleted] = ?
 WHERE
-	[ie].[id] = 'TestProcessService'
+	[sr].[id] = 'TestProcessService'
 
 BeforeExecute
 -- Access.Odbc AccessODBC

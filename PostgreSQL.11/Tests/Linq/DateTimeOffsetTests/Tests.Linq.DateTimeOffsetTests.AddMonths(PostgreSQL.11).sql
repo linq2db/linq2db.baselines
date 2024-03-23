@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -2 * Interval '1 Month'
+	Cast((t."TransactionDate" + -2 * Interval '1 Month') as Date)
 FROM
 	"Transactions" t
 

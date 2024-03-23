@@ -16,22 +16,13 @@ IF (OBJECT_ID(N'[Issue1192Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Issue1192Table] [t]
-		WHERE
-			[t].[Status] = 3 AND [t].[MyOtherId] = 12
-	)
+SELECT TOP (1)
+	COUNT(IIF([t].[Status] = 3, 1, NULL))
 FROM
-	[Issue1192Table] [t_1]
+	[Issue1192Table] [t]
 WHERE
-	[t_1].[MyOtherId] = 12
+	[t].[MyOtherId] = 12
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

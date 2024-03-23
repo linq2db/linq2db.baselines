@@ -8,9 +8,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		CROSS APPLY FREETEXTTABLE([Categories], ([CategoryName], [Description]), N'meat bread') [t]
-WHERE
-	[c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN FREETEXTTABLE([Categories], ([CategoryName], [Description]), N'meat bread') [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 

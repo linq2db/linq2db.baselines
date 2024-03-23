@@ -4,24 +4,22 @@ DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."BinaryValue" = :BinaryValue
+	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes".ID = 1
+	t.ID = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Length(t."BinaryValue")
+	Length(t."BinaryValue") as "Length_1"
 FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -29,9 +27,9 @@ DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = NULL
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."BinaryValue" = :BinaryValue
+	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes".ID = 1
+	t.ID = 1
 

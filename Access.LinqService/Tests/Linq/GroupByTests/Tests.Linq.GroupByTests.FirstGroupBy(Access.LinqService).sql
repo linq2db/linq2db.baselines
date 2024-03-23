@@ -2,87 +2,27 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[ParentID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
-	[Child] [t1]
+	(
+		SELECT DISTINCT
+			[gr].[ParentID]
+		FROM
+			[Child] [gr]
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+ORDER BY
+	[d].[ChildID] DESC
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[gr].[ParentID]
+FROM
+	[Child] [gr]
 GROUP BY
-	[t1].[ParentID]
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 2
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 3
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 4
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 6
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 7
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
+	[gr].[ParentID]
 

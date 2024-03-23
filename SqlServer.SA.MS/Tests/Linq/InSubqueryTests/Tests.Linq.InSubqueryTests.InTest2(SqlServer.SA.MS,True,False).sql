@@ -8,12 +8,31 @@ SELECT
 FROM
 	[GrandChild] [c_1]
 WHERE
-	EXISTS(
+	[c_1].[ParentID] IS NOT NULL AND EXISTS(
 		SELECT
 			*
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[Value1] = [c_1].[ParentID]
+			[p].[Value1] IS NOT NULL AND [c_1].[ParentID] = [p].[Value1]
 	)
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID],
+	[t1].[GrandChildID]
+FROM
+	[GrandChild] [t1]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

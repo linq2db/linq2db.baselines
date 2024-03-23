@@ -83,10 +83,10 @@ SELECT
 	c4."ChildID",
 	c4."ParentID"
 FROM
-	"Child" c_1
-		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
+	"Child" p
+		INNER JOIN "Child" c4 ON c4."ParentID" = p."ParentID"
 WHERE
-	MOD(c4."ParentID", 2) = 0 AND c_1."ParentID" > 1
+	p."ParentID" > 1 AND MOD(c4."ParentID", 2) = 0
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"

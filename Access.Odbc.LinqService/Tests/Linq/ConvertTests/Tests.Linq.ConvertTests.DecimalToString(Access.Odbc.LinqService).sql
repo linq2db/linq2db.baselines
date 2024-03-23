@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	CStr([t].[MoneyValue])
+	[p].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	Len(CStr([t].[MoneyValue])) > 0
+	Len(CStr([p].[MoneyValue])) > 0
 

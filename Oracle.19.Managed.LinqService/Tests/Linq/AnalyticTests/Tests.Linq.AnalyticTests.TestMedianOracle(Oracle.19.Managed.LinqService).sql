@@ -14,10 +14,10 @@ BeforeExecute
 SELECT
 	MEDIAN(c_1."ParentID")
 FROM
-	"Parent" p
-		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
+	"Parent" g_1
+		INNER JOIN "Child" c_1 ON g_1."ParentID" = c_1."ParentID"
 GROUP BY
-	p."ParentID"
+	g_1."ParentID"
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

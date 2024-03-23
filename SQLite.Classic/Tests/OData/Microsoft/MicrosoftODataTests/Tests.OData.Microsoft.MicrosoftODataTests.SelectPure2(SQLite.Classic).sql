@@ -32,25 +32,24 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	'Title',
-	[selectParam].[Title],
+	[it_1].[c1],
+	[it_1].[c2],
+	COUNT(DISTINCT [it_1].[Value_1])
+FROM
 	(
 		SELECT
-			Count(*)
+			'Title' as [c1],
+			CASE
+				WHEN [it].[Name] IS NULL THEN NULL
+				ELSE [it].[Title]
+			END as [c2],
+			[it].[YearsExperience] as [Value_1]
 		FROM
-			(
-				SELECT DISTINCT
-					[it2].[YearsExperience]
-				FROM
-					[odata_person] [it2]
-				WHERE
-					[selectParam].[Title] = [it2].[Title]
-			) [t1]
-	)
-FROM
-	[odata_person] [selectParam]
+			[odata_person] [it]
+	) [it_1]
 GROUP BY
-	[selectParam].[Title]
+	[it_1].[c1],
+	[it_1].[c2]
 
 BeforeExecute
 -- SQLite.Classic SQLite

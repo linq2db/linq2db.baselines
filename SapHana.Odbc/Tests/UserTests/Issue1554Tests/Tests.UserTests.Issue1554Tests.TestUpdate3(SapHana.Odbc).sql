@@ -45,17 +45,15 @@ DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554Table"
+	"Issue1554Table" "p"
 SET
-	"Issue1554Table"."ClaimedKeyType" = ?,
-	"Issue1554Table"."ClaimedKeyTypeN" = ?
+	"ClaimedKeyType" = ?,
+	"ClaimedKeyTypeN" = ?
 WHERE
-	"Issue1554Table"."Id" = 0
+	"p"."Id" = 0
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."Id",
@@ -63,7 +61,7 @@ SELECT
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554Table" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

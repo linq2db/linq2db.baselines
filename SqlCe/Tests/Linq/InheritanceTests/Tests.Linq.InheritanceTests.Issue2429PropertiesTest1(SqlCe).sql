@@ -26,12 +26,10 @@ SELECT 1,100
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
-	[x].[Value]
+	[x].[Value] as [BaseValue]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -39,12 +37,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
-	[x].[Value]
+	[x].[Value] as [BaseValue]
 FROM
 	[BaseTable] [x]
 WHERE

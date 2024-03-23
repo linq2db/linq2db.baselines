@@ -52,17 +52,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[t].[Id],
-	[t].[OtherId],
+	[t1].[Id],
+	[t1].[OtherId],
 	[t2].[IsActual]
 FROM
-	[SomeEntity] [t]
-		LEFT JOIN [SomeOtherEntity] [t2] ON [t2].[Id] = [t].[OtherId]
-LIMIT @take
+	[SomeEntity] [t1]
+		LEFT JOIN [SomeOtherEntity] [t2] ON ([t2].[Id] = [t1].[OtherId] OR [t2].[Id] IS NULL AND [t1].[OtherId] IS NULL)
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

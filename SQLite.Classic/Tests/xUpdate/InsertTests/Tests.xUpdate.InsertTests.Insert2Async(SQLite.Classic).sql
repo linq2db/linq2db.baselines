@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -18,7 +20,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1,
+	@ParentID,
 	@id
 )
 

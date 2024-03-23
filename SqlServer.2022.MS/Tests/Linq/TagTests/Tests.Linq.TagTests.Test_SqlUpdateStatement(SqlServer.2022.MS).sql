@@ -17,14 +17,14 @@ IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+DECLARE @Fd Int -- Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
-	[t1]
+	[TestTable]
 SET
-	[t1].[Fd] = 1
-FROM
-	[TestTable] [t1]
+	[Fd] = @Fd
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

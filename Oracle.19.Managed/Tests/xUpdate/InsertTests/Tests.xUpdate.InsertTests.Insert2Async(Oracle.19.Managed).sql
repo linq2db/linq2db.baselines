@@ -2,12 +2,14 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -18,7 +20,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	1,
+	:ParentID,
 	:id
 )
 
@@ -38,7 +40,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 

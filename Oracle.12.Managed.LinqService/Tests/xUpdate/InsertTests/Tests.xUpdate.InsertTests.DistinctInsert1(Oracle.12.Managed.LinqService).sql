@@ -2,12 +2,14 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" c_1
 WHERE
-	t1.ID > 1000
+	c_1.ID > 1000
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @BoolValue Int16
+SET     @BoolValue = 1
 
 INSERT INTO "LinqDataTypes"
 (
@@ -18,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 SELECT
 	Cast(Floor(t2."c1" + 1001D) as Int),
 	Sys_Guid(),
-	1
+	:BoolValue
 FROM
 	(
 		SELECT DISTINCT
@@ -31,7 +33,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" c_1
 WHERE
-	t1.ID > 1000
+	c_1.ID > 1000
 

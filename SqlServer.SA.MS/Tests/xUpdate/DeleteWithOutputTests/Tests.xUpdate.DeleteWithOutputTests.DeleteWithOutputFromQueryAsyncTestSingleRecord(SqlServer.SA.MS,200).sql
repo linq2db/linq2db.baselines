@@ -49,12 +49,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + Convert(VarChar(11), @param)
 FROM
 	[TableWithData] [s]
 WHERE

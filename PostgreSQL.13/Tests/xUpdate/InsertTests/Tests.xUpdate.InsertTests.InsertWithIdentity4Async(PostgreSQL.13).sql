@@ -38,8 +38,6 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -51,7 +49,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
@@ -85,8 +83,6 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -98,7 +94,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

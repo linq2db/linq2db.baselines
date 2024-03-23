@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	DateAdd(quarter, -1, [t].[TransactionDate])
+	Convert(Date, DateAdd(quarter, -1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

@@ -109,17 +109,26 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @Field VarWChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
 UPDATE
-	([MainTable] [_]
-		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON ([_].[Id] = [a_AssociatedRequired].[Id]))
-		INNER JOIN [MainTable] [a_MainRequired] ON ([a_AssociatedRequired].[Id] = [a_MainRequired].[Id])
+	(
+		SELECT
+			[_].[Id],
+			[a_MainRequired].[Id] as [Id_1],
+			[a_MainRequired].[Field]
+		FROM
+			[MainTable] [a_MainRequired],
+			[MainTable] [_]
+	) [cross_1]
+		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON ([cross_1].[Id] = [a_AssociatedRequired].[Id])
 SET
-	[_].[Field] = 'test'
+	[cross_1].[Field] = @Field
 WHERE
-	[_].[Id] = @id
+	[cross_1].[Id] = @id AND [a_AssociatedRequired].[Id] = [cross_1].[Id_1]
 
 BeforeExecute
 -- Access AccessOleDb

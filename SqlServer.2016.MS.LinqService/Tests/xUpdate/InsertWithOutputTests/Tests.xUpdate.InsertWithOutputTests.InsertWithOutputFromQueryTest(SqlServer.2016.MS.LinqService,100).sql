@@ -270,7 +270,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + Convert(VarChar(100), @param_1)
+	[s].[ValueStr] + Convert(VarChar(11), @param_1)
 FROM
 	[TableWithData] [s]
 WHERE
@@ -278,11 +278,17 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @Id Int -- Int32
+SET     @Id = 100
+DECLARE @Value Int -- Int32
+SET     @Value = 100
+DECLARE @p Int -- Int32
+SET     @p = 100
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @Id,
+	[s].[Value] + @Value,
+	[s].[ValueStr] + Convert(VarChar(100), @p)
 FROM
 	[TableWithData] [s]
 WHERE

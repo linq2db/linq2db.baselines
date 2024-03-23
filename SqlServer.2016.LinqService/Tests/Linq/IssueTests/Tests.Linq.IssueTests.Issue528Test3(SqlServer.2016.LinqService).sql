@@ -2,73 +2,28 @@
 -- SqlServer.2016
 
 SELECT
-	[t1].[FirstName]
+	[m_1].[FirstName],
+	[d].[FirstName],
+	[d].[PersonID],
+	[d].[LastName],
+	[d].[MiddleName],
+	[d].[Gender]
 FROM
-	[Person] [t1]
+	(
+		SELECT DISTINCT
+			[_].[FirstName]
+		FROM
+			[Person] [_]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [m_1].[FirstName] = [d].[FirstName]
+
+BeforeExecute
+-- SqlServer.2016
+
+SELECT
+	[_].[FirstName]
+FROM
+	[Person] [_]
 GROUP BY
-	[t1].[FirstName]
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'Jane'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'John'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'Jürgen'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'Tester'
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[FirstName] = @FirstName
+	[_].[FirstName]
 

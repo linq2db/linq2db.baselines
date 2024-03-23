@@ -60,8 +60,6 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -78,7 +76,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = :iteration
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

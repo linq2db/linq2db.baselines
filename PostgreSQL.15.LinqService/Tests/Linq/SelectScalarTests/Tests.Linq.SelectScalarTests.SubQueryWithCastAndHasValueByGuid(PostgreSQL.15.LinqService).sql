@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
@@ -11,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			r."GuidValue"
+			CASE
+				WHEN r."GuidValue" IS NOT NULL THEN True
+				ELSE False
+			END
 		FROM
 			"LinqDataTypes" r
-		LIMIT :take
-	) IS NOT NULL
+		LIMIT 1
+	) = True
 

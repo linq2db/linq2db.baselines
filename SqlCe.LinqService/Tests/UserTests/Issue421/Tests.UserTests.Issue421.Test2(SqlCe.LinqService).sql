@@ -45,7 +45,7 @@ BeforeExecute
 UPDATE
 	[BlobClass]
 SET
-	[BlobClass].[BlobValue] = 0x030201
+	[BlobValue] = 0x030201
 WHERE
 	[BlobClass].[Id] = 1
 

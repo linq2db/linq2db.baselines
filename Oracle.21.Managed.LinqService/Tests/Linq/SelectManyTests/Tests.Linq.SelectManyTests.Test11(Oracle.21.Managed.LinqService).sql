@@ -2,11 +2,11 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	p1."PersonID",
+	t."PersonID",
 	p2."FirstName"
 FROM
-	"Person" p1,
+	"Person" t,
 	"Person" p2
 WHERE
-	p1."PersonID" = p2."PersonID" AND p1."PersonID" = 1
+	t."PersonID" = p2."PersonID" AND t."PersonID" = 1
 

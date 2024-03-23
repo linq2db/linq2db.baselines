@@ -68,9 +68,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."DeviceType",
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."DeviceType",
 	"t1"."Location"
 FROM
 	"Issue4280" "t1"
@@ -89,13 +89,13 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 
 UPDATE
-	"Issue4280"
+	"Issue4280" "t1"
 SET
-	"Issue4280"."SerialNumber" = ?,
-	"Issue4280"."DeviceType" = ?,
-	"Issue4280"."Location" = ?
+	"SerialNumber" = ?,
+	"DeviceType" = ?,
+	"Location" = ?
 WHERE
-	"Issue4280"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -107,20 +107,20 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"Issue4280"
+	"Issue4280" "t1"
 SET
-	"Issue4280"."SerialNumber" = ?,
-	"Issue4280"."DeviceType" = ?
+	"SerialNumber" = ?,
+	"DeviceType" = ?
 WHERE
-	"Issue4280"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."DeviceType",
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."DeviceType",
 	"t1"."Location"
 FROM
 	"Issue4280" "t1"

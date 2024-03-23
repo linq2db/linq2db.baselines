@@ -234,25 +234,23 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 UPDATE
-	[s]
+	[TableWithData]
 SET
-	[s].[Id] = [s].[Id],
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
+	[Id] = [TableWithData].[Id],
+	[Value] = [TableWithData].[Value] + 1,
+	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
 OUTPUT
-	[INSERTED].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [destination]
 (
 	[Id],
 	[Value],
 	[ValueStr]
 )
-FROM
-	[TableWithData] [s]
 WHERE
-	[s].[Id] > 3
+	[TableWithData].[Id] > 3
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

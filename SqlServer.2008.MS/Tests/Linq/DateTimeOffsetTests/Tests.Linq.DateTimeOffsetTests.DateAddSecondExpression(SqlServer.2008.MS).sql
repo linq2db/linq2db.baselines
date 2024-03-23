@@ -58,7 +58,7 @@ DECLARE @p Int -- Int32
 SET     @p = 41
 
 SELECT
-	DateAdd(second, @p, [t].[TransactionDate])
+	DatePart(second, DateAdd(second, @p, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

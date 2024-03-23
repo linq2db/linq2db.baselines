@@ -17,17 +17,21 @@ IF (OBJECT_ID(N'[ReviewIndexes]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value NVarChar(4000) -- String
+SET     @Value = N'3'
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
 	(1)
 ) [Source]
 (
-	[Id]
+	[source_Id]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
-WHEN NOT MATCHED AND [Source].[Id] > 1 THEN
+WHEN NOT MATCHED AND [Source].[source_Id] > 1 THEN
 INSERT
 (
 	[Id],
@@ -35,8 +39,8 @@ INSERT
 )
 VALUES
 (
-	2,
-	N'3'
+	@Id,
+	@Value
 )
 ;
 

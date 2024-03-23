@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -25,20 +23,16 @@ DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = DATETIME2FROMPARTS(2010, 12, 14, 5, 0, 7, 4250141, 7)
 
 UPDATE
-	[t]
+	[LinqDataTypes]
 SET
-	[t].[DateTimeValue2] = @DateTimeValue2
-FROM
-	[LinqDataTypes] [t]
+	[DateTimeValue2] = @DateTimeValue2
 WHERE
-	[t].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],
@@ -60,11 +54,9 @@ DECLARE @pdt DateTime2
 SET     @pdt = NULL
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue2] = @pdt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue2] = @pdt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 

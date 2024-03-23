@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."DateTimeValue"
+	Cast(Floor(Extract(year from p."DateTimeValue")) as int)
 FROM
 	"LinqDataTypes" p
 

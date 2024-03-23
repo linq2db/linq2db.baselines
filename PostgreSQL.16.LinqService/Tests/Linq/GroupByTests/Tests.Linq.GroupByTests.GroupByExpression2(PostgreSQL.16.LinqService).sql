@@ -2,10 +2,10 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	"selectParam"."ChildID",
-	Avg("selectParam"."ParentID")
+	t1."ChildID",
+	AVG(t1."ParentID")
 FROM
-	"Child" "selectParam"
+	"Child" t1
 GROUP BY
-	"selectParam"."ChildID"
+	t1."ChildID"
 

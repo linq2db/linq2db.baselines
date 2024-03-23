@@ -490,26 +490,26 @@ DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
-	t."DuplicateData",
+	t_1."DuplicateData",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"OrderByDistinctData" s
+			"OrderByDistinctData" c_1
 		WHERE
-			(s."DuplicateData" = t."DuplicateData" OR s."DuplicateData" IS NULL AND t."DuplicateData" IS NULL)
+			(c_1."DuplicateData" = t_1."DuplicateData" OR c_1."DuplicateData" IS NULL AND t_1."DuplicateData" IS NULL)
 	)
 FROM
 	(
 		SELECT
-			t1."Id",
-			t1."DuplicateData"
+			t."Id",
+			t."DuplicateData"
 		FROM
-			"OrderByDistinctData" t1
+			"OrderByDistinctData" t
 		LIMIT :take
-	) t
+	) t_1
 ORDER BY
-	t."Id" DESC
+	t_1."Id" DESC
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

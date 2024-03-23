@@ -55,6 +55,8 @@ SELECT
 	ess."ID"
 FROM
 	"VEMPLOYEE_SCH_SEC" ess
+WHERE
+	1 = 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

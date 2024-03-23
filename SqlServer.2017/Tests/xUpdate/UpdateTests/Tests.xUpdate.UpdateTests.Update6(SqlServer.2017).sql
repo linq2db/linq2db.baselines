@@ -30,17 +30,17 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 2
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[Value1] = 2
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- SqlServer.2017

@@ -35,6 +35,8 @@ BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'negative'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -50,7 +52,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'negative'
+		@Diagnosis
 	);
 
 BeforeExecute
@@ -70,6 +72,8 @@ BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'positive'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -85,7 +89,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'positive'
+		@Diagnosis
 	);
 
 BeforeExecute

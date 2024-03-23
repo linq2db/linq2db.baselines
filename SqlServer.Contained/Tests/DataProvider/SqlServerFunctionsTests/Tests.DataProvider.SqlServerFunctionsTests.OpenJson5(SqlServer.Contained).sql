@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'{ "test" : [ 10, 20 ] }'
-DECLARE @p_1 NVarChar(4000) -- String
-SET     @p_1 = N'$.test'
+DECLARE @json NVarChar(4000) -- String
+SET     @json = N'{ "test" : [ 10, 20 ] }'
+DECLARE @path NVarChar(4000) -- String
+SET     @path = N'$.test'
 
 SELECT
 	[t1].[key],
 	[t1].[value],
 	[t1].[type]
 FROM
-	OPENJSON(@p, @p_1) [t1]
+	OPENJSON(@json, @path) [t1]
 

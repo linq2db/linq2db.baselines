@@ -1,16 +1,25 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	[l].[ParentID]
-FROM
-	[Child] [l]
-
-BeforeExecute
--- Access AccessOleDb
-
 SELECT
-	1
+	(
+		SELECT TOP 1
+			[l].[ParentID] + 1
+		FROM
+			[Child] [l]
+	),
+	(
+		SELECT TOP 1
+			[l_1].[ParentID] + 1
+		FROM
+			[Child] [l_1]
+	),
+	(
+		SELECT TOP 1
+			[l_2].[ParentID]
+		FROM
+			[Child] [l_2]
+	)
 FROM
 	[Parent] [sep]
 

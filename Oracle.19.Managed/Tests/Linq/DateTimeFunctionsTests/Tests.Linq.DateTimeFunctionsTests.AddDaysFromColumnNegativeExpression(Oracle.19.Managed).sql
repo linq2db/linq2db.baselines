@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @part1 Int32
+DECLARE @part1 Int16
 SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4
@@ -54,13 +54,13 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY < :p
+	t.ID = 5000 AND t."DateTimeValue" + ((Cast(t."SmallIntValue" as Int) + :part1) - :part2) * INTERVAL '1' DAY < :p
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID = 5000
+	t.ID = 5000
 

@@ -4,16 +4,16 @@ DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT
-	[t1].[ParentID]
+	[g_2].[ParentID]
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [ParentID]
+			[g_1].[ParentID] + 1 as [ParentID]
 		FROM
-			[Child] [ch]
+			[Child] [g_1]
 		WHERE
-			[ch].[ParentID] + 1 > ?
-	) [t1]
+			[g_1].[ParentID] + 1 > ?
+	) [g_2]
 GROUP BY
-	[t1].[ParentID]
+	[g_2].[ParentID]
 

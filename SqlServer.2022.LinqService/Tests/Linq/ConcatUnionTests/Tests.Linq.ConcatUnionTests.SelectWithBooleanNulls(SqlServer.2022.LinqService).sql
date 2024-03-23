@@ -17,7 +17,7 @@ SELECT
 		SELECT
 			*
 		FROM
-			[Child] [t2]
+			[Child] [t1]
 	), 1, 0),
 	NULL
 FROM

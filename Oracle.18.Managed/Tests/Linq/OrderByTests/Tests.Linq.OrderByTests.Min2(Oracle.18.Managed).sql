@@ -4,15 +4,15 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	Min(t1."ParentID")
+	MIN(t2."ParentID")
 FROM
 	(
 		SELECT
-			p."ParentID"
+			t1."ParentID"
 		FROM
-			"Parent" p
+			"Parent" t1
 		ORDER BY
-			p."ParentID"
+			t1."ParentID"
 		FETCH NEXT :take ROWS ONLY
-	) t1
+	) t2
 

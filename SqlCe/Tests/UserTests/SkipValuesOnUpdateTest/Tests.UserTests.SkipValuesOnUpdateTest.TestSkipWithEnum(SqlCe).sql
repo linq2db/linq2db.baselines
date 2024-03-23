@@ -44,10 +44,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -71,18 +69,16 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Update_Enum_Table]
 SET
-	[PR_1598_Update_Enum_Table].[Name] = @Name,
-	[PR_1598_Update_Enum_Table].[Age] = @Age,
-	[PR_1598_Update_Enum_Table].[Gender] = @Gender
+	[Name] = @Name,
+	[Age] = @Age,
+	[Gender] = @Gender
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],
@@ -104,17 +100,15 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Update_Enum_Table]
 SET
-	[PR_1598_Update_Enum_Table].[Name] = @Name,
-	[PR_1598_Update_Enum_Table].[Age] = @Age
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age],

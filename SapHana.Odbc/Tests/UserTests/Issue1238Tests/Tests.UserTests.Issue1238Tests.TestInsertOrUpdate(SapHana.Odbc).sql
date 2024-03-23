@@ -8,17 +8,26 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Data  -- Int32
+SET     @Data = 1
+DECLARE @Key1  -- Int32
+SET     @Key1 = 143
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = 1
+	"TypeDiscriminator" = ?
 WHERE
-	"InheritanceParent"."InheritanceParentId" = 143 AND
-	"InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Key1  -- Int32
+SET     @Key1 = 143
+DECLARE @Key2 NVarChar -- String
+SET     @Key2 = NULL
+DECLARE @Data  -- Int32
+SET     @Data = 1
 
 INSERT INTO "InheritanceParent"
 (
@@ -28,9 +37,9 @@ INSERT INTO "InheritanceParent"
 )
 VALUES
 (
-	143,
-	NULL,
-	1
+	?,
+	?,
+	?
 )
 
 BeforeExecute
@@ -43,14 +52,17 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Data  -- Int32
+SET     @Data = 1
+DECLARE @Key1  -- Int32
+SET     @Key1 = 143
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = 1
+	"TypeDiscriminator" = ?
 WHERE
-	"InheritanceParent"."InheritanceParentId" = 143 AND
-	"InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -10,5 +8,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

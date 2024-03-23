@@ -224,27 +224,27 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		t1."Id" as "OtherId",
-		t1."Field1" as "Field01",
-		t1."Field2" as "Field02",
-		t1."Field3" as "Field03",
-		t1."Field4" as "Field04",
-		t1."Field5" as "Field05"
+		t1."Id" as "source_Key",
+		t1."Field1" as "source_Field01",
+		t1."Field2" as "source_Field02",
+		t1."Field3" as "source_Field03",
+		t1."Field4" as "source_Field04",
+		t1."Field5" as "source_Field05"
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON (Target."Id" = "Source"."OtherId")
+ON (Target."Id" = "Source"."source_Key")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Field1" = "Source"."Field01",
-	Target."Field2" = "Source"."Field02",
-	Target."Field3" = "Source"."Field03",
-	Target."Field4" = "Source"."Field04",
-	Target."Field5" = "Source"."Field05"
+	"Field1" = "Source"."source_Field01",
+	"Field2" = "Source"."source_Field02",
+	"Field3" = "Source"."source_Field03",
+	"Field4" = "Source"."source_Field04",
+	"Field5" = "Source"."source_Field05"
 WHERE
-	"Source"."Field04" = 214
+	"Source"."source_Field04" = 214
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

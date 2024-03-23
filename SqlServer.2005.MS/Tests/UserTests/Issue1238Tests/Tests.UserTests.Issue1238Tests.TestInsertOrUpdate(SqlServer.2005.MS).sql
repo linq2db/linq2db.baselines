@@ -9,16 +9,24 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Data Int -- Int32
+SET     @Data = 1
+DECLARE @Key1 Int -- Int32
+SET     @Key1 = 143
+DECLARE @Key2 NVarChar(4000) -- String
+SET     @Key2 = NULL
+DECLARE @Data_1 Int -- Int32
+SET     @Data_1 = 1
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
-	[t1].[InheritanceParentId] = 143 AND
-	([t1].[Name] IS NULL OR [t1].[Name] = NULL)
+	[t1].[InheritanceParentId] = @Key1 AND
+	([t1].[Name] IS NULL OR [t1].[Name] = @Key2)
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -30,9 +38,9 @@ BEGIN
 	)
 	VALUES
 	(
-		143,
-		NULL,
-		1
+		@Key1,
+		@Key2,
+		@Data_1
 	)
 END
 
@@ -46,16 +54,24 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Data Int -- Int32
+SET     @Data = 1
+DECLARE @Key1 Int -- Int32
+SET     @Key1 = 143
+DECLARE @Key2 NVarChar(4000) -- String
+SET     @Key2 = NULL
+DECLARE @Data_1 Int -- Int32
+SET     @Data_1 = 1
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
-	[t1].[InheritanceParentId] = 143 AND
-	([t1].[Name] IS NULL OR [t1].[Name] = NULL)
+	[t1].[InheritanceParentId] = @Key1 AND
+	([t1].[Name] IS NULL OR [t1].[Name] = @Key2)
 
 IF @@ROWCOUNT = 0
 BEGIN
@@ -67,9 +83,9 @@ BEGIN
 	)
 	VALUES
 	(
-		143,
-		NULL,
-		1
+		@Key1,
+		@Key2,
+		@Data_1
 	)
 END
 

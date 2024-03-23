@@ -7,19 +7,19 @@ SELECT
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[i].[LastName] + ', ' + [i].[FirstName],
-	[t1].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+	[i].[LastName] + ', ' + [i].[FirstName] as [AsSqlFullName],
+	[t1].[COUNT_1] as [DoctorCount]
 FROM
 	[Person] [i]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON [t1].[PersonID] = [i].[PersonID]
+			WHERE
+				[d].[PersonID] = [i].[PersonID]
+		) [t1]
 WHERE
 	[i].[FirstName] <> 'John'
 

@@ -607,24 +607,22 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
 SELECT
-	"q"."Value2"
+	"t1"."Value2"
 FROM
 	(
 		SELECT
-			"t"."Id",
-			"t"."Value2"
+			"q"."Id",
+			"q"."Value2"
 		FROM
-			"ValueConversion" "t"
-	) "q"
+			"ValueConversion" "q"
+	) "t1"
 ORDER BY
-	"q"."Id"
-LIMIT ? OFFSET ?
+	"t1"."Id"
+LIMIT 1 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

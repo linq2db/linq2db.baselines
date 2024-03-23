@@ -16,29 +16,26 @@ CREATE TABLE IF NOT EXISTS [TestTable]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Fd  -- Int32
+SET     @Fd = 2
+DECLARE @Fd_1  -- Int32
+SET     @Fd_1 = 2
 
 /* My Test */
-UPDATE
-	[TestTable]
-SET
-	[Fd] = 2
-WHERE
-	[TestTable].[Id] = 1
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-/* My Test */
-INSERT INTO [TestTable]
+INSERT INTO [TestTable] AS [t1]
 (
 	[Id],
 	[Fd]
 )
 VALUES
 (
-	1,
-	2
+	@Id,
+	@Fd
 )
+ON CONFLICT ([Id]) DO UPDATE SET
+	[Fd] = @Fd_1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

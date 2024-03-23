@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Avg([_].[ParentID])
+	AVG([_].[ParentID]) as [AVG_1]
 FROM
 	[Parent] [_]
 WHERE

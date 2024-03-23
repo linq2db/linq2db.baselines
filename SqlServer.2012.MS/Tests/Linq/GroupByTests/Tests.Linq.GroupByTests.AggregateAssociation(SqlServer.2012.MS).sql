@@ -2,10 +2,16 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Sum(Coalesce([a_Parent].[Value1], 0))
+	SUM(Coalesce([grp_1].[Value1], 0))
 FROM
-	[Child] [t1]
-		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
+	(
+		SELECT
+			[grp].[ParentID],
+			[a_Parent].[Value1]
+		FROM
+			[Child] [grp]
+				LEFT JOIN [Parent] [a_Parent] ON [grp].[ParentID] = [a_Parent].[ParentID]
+	) [grp_1]
 GROUP BY
-	[t1].[ParentID]
+	[grp_1].[ParentID]
 

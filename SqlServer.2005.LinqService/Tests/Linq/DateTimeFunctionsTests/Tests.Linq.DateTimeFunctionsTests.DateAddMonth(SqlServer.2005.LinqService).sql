@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	DateAdd(month, 2, [t].[DateTimeValue])
+	Cast(Floor(Cast(DateAdd(month, 2, [t].[DateTimeValue]) as Float)) as DateTime)
 FROM
 	[LinqDataTypes] [t]
 

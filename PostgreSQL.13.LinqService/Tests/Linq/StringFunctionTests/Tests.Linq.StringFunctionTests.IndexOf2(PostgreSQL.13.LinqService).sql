@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Text(1) -- String
+SET     @p = 'e'
 
 SELECT
 	p."FirstName",
@@ -10,6 +12,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Position('e' in Substring(p."LastName", 3, Length(p."LastName") - 3)) + 2 = 5 AND
+	Position(:p in Substring(p."LastName", 3, Length(p."LastName") - 3)) + 1 = 4 AND
 	p."PersonID" = 2
 

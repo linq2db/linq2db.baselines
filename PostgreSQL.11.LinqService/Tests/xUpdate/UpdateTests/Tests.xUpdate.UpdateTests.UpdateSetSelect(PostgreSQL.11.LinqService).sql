@@ -12,18 +12,13 @@ BeforeExecute
 UPDATE
 	"Parent"
 SET
-	"ParentID" = (
-		SELECT
-			c_1."ParentID"
-		FROM
-			"Child" c_1
-		WHERE
-			c_1."ChildID" = 11
-	) + 1000
+	"ParentID" = c_2."ParentID" + 1000
 FROM
+	"Child" c_1,
 	"Child" c_2
 WHERE
-	"Parent"."ParentID" = 1 AND "Parent"."ParentID" = c_2."ParentID"
+	"Parent"."ParentID" = 1 AND "Parent"."ParentID" = c_1."ParentID" AND
+	c_2."ChildID" = 11
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

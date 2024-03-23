@@ -19,7 +19,7 @@ SET     @TestName = 2
 UPDATE
 	[testparams]
 SET
-	[testparams].[Test-Name] = @TestName
+	[Test-Name] = @TestName
 WHERE
 	[testparams].[Test-Name] = 1
 

@@ -38,21 +38,19 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 UPDATE
-	[s]
+	[TableWithData]
 SET
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
+	[Value] = [TableWithData].[Value] + 1,
+	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
-FROM
-	[TableWithData] [s]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 WHERE
-	[s].[Id] > 3
+	[TableWithData].[Id] > 3
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

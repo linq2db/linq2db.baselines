@@ -11,7 +11,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[Parent] [p]
 

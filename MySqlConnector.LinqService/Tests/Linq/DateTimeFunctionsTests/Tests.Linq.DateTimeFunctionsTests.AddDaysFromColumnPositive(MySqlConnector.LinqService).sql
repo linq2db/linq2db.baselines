@@ -55,9 +55,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `t`
 WHERE
-	`t1`.`ID` = 5000
+	`t`.`ID` = 5000
 

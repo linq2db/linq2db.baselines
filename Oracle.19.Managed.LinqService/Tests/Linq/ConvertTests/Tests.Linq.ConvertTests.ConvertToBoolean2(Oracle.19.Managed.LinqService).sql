@@ -2,13 +2,17 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	CASE
-		WHEN t."MoneyValue" <> 4.5
-			THEN 1
-		ELSE 0
-	END
+	p_1."c1"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN p."MoneyValue" <> 4.5 THEN 1
+				ELSE 0
+			END as "c1"
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	t."MoneyValue" = 4.5
+	p_1."c1" = 0
 

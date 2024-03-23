@@ -50,17 +50,17 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @value2 Integer -- Int32
+DECLARE @value2 VarChar(5, 0) -- AnsiString
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 
 UPDATE
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 SET
-	[t1].[SmallIntValue] = [t1].[MoneyValue] / (@value2 / [t1].[IntValue])
+	[_].[SmallIntValue] = [_].[MoneyValue] / (@value2 / [_].[IntValue])
 WHERE
-	[t1].[ID] = @id
+	[_].[ID] = @id
 
 BeforeExecute
 -- Access AccessOleDb

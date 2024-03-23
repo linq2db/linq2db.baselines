@@ -7,7 +7,7 @@ SET     @ID_1 = 4
 
 SELECT
 	[n].[FirstName],
-	[n].[PersonID]
+	[n].[PersonID] as [ID]
 FROM
 	[Person] [p]
 		INNER JOIN (

@@ -3,6 +3,8 @@
 
 SELECT DISTINCT
 	`t1`.`ParentID`,
+	`t1`.`ChildID`,
+	`t1`.`ParentID`,
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`

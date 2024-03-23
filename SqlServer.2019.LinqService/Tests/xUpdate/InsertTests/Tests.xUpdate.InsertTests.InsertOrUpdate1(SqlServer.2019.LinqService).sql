@@ -35,6 +35,8 @@ BeforeExecute
 -- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -44,7 +46,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -54,7 +56,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
@@ -63,6 +65,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -72,7 +76,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -82,7 +86,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
@@ -91,6 +95,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 2
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc'
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -100,7 +106,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -110,17 +116,15 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		N'abc'
+		@Diagnosis
 	);
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

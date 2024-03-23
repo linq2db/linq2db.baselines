@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -10,5 +8,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 100
-LIMIT @take
+LIMIT 1
 

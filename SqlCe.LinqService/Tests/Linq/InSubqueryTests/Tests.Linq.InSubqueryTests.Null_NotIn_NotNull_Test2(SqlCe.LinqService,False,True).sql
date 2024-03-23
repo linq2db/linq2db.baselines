@@ -84,14 +84,6 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
@@ -109,7 +101,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SqlCe

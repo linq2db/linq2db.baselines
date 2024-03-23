@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ChildID"
@@ -14,7 +12,7 @@ FROM
 				"Child" ch
 			WHERE
 				ch."ParentID" = p."ParentID" AND ch."ChildID" = ch."ParentID" * 10 + 1
-			FETCH NEXT :take ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) t1
 WHERE
 	p."ParentID" <> 5

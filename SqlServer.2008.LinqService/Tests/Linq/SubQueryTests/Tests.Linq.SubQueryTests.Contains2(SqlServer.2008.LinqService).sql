@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[p].[ParentID],
@@ -14,7 +12,7 @@ WHERE
 			[t1].[ParentID]
 		FROM
 			(
-				SELECT TOP (@take)
+				SELECT TOP (3)
 					[p1].[ParentID]
 				FROM
 					[Parent] [p1]

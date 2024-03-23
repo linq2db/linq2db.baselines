@@ -24,11 +24,13 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @TestField Int -- Int32
+SET     @TestField = 12
 
 UPDATE
 	[LinqDataTypes] [r]
 SET
-	[r].[BigIntValue] = 12
+	[r].[BigIntValue] = ?
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 

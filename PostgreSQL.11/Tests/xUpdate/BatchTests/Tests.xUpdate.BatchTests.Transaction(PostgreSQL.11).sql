@@ -4,9 +4,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -14,9 +14,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -24,9 +24,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -34,9 +34,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 BeginTransaction
@@ -62,9 +62,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -72,9 +72,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -82,9 +82,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -92,7 +92,7 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 

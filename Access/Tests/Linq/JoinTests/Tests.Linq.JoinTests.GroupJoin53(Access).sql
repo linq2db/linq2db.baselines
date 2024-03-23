@@ -1,17 +1,31 @@
 ﻿BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	(
-		SELECT TOP 1
-			[ch].[ParentID]
-		FROM
-			[Child] [ch]
-		WHERE
-			[ch].[ParentID] = [p].[ParentID]
-	)
+	[m_1].[ParentID],
+	[d].[ParentID]
 FROM
-	[Parent] [p]
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			[Parent] [t1]
+		WHERE
+			[t1].[ParentID] = 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[t1].[ParentID]
+FROM
+	[Parent] [t1]
 WHERE
-	[p].[ParentID] = 1
+	[t1].[ParentID] = 1
 

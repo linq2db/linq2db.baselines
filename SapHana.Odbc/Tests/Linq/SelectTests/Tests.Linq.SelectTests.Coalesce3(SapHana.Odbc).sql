@@ -3,9 +3,9 @@
 
 SELECT
 	"p"."PersonID",
-	Coalesce("p"."MiddleName", "p"."FirstName", 'None'),
-	Coalesce("p"."LastName", "p"."FirstName", 'None'),
-	Coalesce("p"."MiddleName", "p"."MiddleName", 'None')
+	"p"."MiddleName",
+	"p"."FirstName",
+	"p"."LastName"
 FROM
 	"Person" "p"
 WHERE

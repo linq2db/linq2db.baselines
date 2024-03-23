@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value SmallInt -- Int16
-SET     @Value = 1
+DECLARE @param SmallInt -- Int16
+SET     @param = 1
 
 SELECT
 	[_].[ID],

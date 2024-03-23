@@ -2,21 +2,28 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[a_Employee].[LastName]
+	[g_2].[LastName]
 FROM
-	[EmployeeTerritories] [t1]
-		LEFT JOIN [Employees] [a_Employee] ON [t1].[EmployeeID] = [a_Employee].[EmployeeID]
-GROUP BY
-	[a_Employee].[EmployeeID],
-	[a_Employee].[LastName]
-HAVING
 	(
 		SELECT
-			Count(*)
+			COUNT(*) as [COUNT_1],
+			[a_Employee].[LastName],
+			[a_Employee].[EmployeeID]
 		FROM
-			[EmployeeTerritories] [t2]
+			[EmployeeTerritories] [g_1]
+				LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]
+		GROUP BY
+			[a_Employee].[EmployeeID],
+			[a_Employee].[LastName]
+	) [g_2]
+WHERE
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[EmployeeTerritories] [a_EmployeeTerritories]
 		WHERE
-			[a_Employee].[EmployeeID] = [t2].[EmployeeID]
+			[g_2].[EmployeeID] IS NOT NULL AND [g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
 	) > 1 AND
-	Count(*) > 2
+	[g_2].[COUNT_1] > 2
 

@@ -2,14 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t.c1
+	Cast(Floor(Extract(year from t."DateTimeValue")) as int)
 FROM
-	(
-		SELECT
-			Cast((Lpad(Cast(Floor(Extract(year from p."DateTimeValue")) as int)::text,4,'0') || '-10-01 20:35:44') as TimeStamp) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
-WHERE
-	Cast(Floor(Extract(month from t.c1)) as int) = 10
+	"LinqDataTypes" t
 

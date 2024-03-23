@@ -228,18 +228,18 @@ SET     @param = 123
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id]
+		[t1].[Id] as [source_Id]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id]
+	[source_Id]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED By Source AND [Target].[Id] = 1 THEN UPDATE
 SET
-	[Target].[Field1] = @param
+	[Field1] = @param
 ;
 
 BeforeExecute

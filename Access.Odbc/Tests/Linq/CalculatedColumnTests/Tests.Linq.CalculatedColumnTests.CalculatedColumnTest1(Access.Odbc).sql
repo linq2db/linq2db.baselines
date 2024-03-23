@@ -8,18 +8,17 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
-	[t1].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d]
+		WHERE
+			[d].[PersonID] = [i].[PersonID]
+	)
 FROM
 	[Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [i].[PersonID])
 WHERE
 	[i].[FirstName] <> 'John'
 

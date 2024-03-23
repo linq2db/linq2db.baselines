@@ -48,8 +48,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Field1 NVarchar2 -- String
-SET     @Field1 = NULL
+DECLARE @Field1 Varchar2 -- String
+SET     @Field1 = ''
 
 INSERT INTO "Issue1373Tests"
 (
@@ -64,7 +64,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Field1 NVarchar2(4) -- String
+DECLARE @Field1 Varchar2(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"

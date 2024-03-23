@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 100
 
 SELECT
 	"c_1"."ParentID",
@@ -15,10 +13,28 @@ WHERE
 		FROM
 			(
 				SELECT
-					"p"."ParentID"
+					"v"."ParentID"
 				FROM
-					"Parent" "p"
-				LIMIT ?
+					"Parent" "v"
+				LIMIT 100
 			) "t1"
 	)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 

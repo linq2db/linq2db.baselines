@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = NULL
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = NULL
 
 SELECT
 	[record_1].[Id],
 	[record_1].[Name]
 FROM
 	(
-		select * from  @table
+		select * from  @p
 	) [record_1]
 

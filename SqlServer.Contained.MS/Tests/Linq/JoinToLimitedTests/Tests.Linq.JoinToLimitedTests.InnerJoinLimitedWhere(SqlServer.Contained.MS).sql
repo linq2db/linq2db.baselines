@@ -1,20 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[x].[ParentID],
-	[x].[ChildID]
+	[c_1].[ParentID],
+	[c_1].[ChildID]
 FROM
 	[Parent] [o]
 		INNER JOIN (
-			SELECT TOP (@take)
-				[t1].[ParentID],
-				[t1].[ChildID]
+			SELECT TOP (1)
+				[x].[ParentID],
+				[x].[ChildID]
 			FROM
-				[Child] [t1]
-		) [x] ON [x].[ParentID] = [o].[ParentID]
+				[Child] [x]
+		) [c_1] ON [c_1].[ParentID] = [o].[ParentID]
 

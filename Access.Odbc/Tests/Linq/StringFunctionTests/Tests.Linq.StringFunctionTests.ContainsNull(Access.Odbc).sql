@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] IS NULL
+	[p].[PersonID] = ?
 

@@ -37,8 +37,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."ID",
@@ -48,14 +46,12 @@ FROM
 	"Issue1303" t1
 WHERE
 	t1."ID" = 1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Array Bytea(3) -- Binary
 SET     @Array = E'\\x010203'::bytea
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."ID",
@@ -65,14 +61,12 @@ FROM
 	"Issue1303" t1
 WHERE
 	t1."Array" = :Array
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @Binary Bytea(2) -- Binary
 SET     @Binary = E'\\x0405'::bytea
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."ID",
@@ -82,7 +76,7 @@ FROM
 	"Issue1303" t1
 WHERE
 	t1."Binary" = :Binary
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

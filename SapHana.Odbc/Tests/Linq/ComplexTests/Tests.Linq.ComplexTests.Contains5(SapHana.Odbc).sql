@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 100
-DECLARE @skip  -- Int32
-SET     @skip = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -20,7 +16,7 @@ WHERE
 					"p"."ParentID"
 				FROM
 					"Parent" "p"
-				LIMIT ? OFFSET ?
+				LIMIT 100 OFFSET 1
 			) "t1"
 	)
 

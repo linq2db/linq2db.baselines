@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value  -- Int16
-SET     @Value = 1
+DECLARE @param  -- Int16
+SET     @param = 1
 
 SELECT
 	[_].[ID],
@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@Value = [_].[SmallIntValue]
+	@param = [_].[SmallIntValue]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

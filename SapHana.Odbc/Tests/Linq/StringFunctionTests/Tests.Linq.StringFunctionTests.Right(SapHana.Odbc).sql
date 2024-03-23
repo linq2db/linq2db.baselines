@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Right("p"."FirstName", 3) = 'ohn' AND "p"."PersonID" = 1
+	RIGHT("p"."FirstName", 3) = 'ohn' AND "p"."PersonID" = 1
 

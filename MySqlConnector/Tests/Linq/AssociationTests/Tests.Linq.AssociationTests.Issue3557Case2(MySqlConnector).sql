@@ -74,21 +74,31 @@ VALUES
 (3,'прст2')
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
+
+SELECT
+	`m_1`.`Id`,
+	`d`.`Reason`
+FROM
+	(
+		SELECT DISTINCT
+			`a_SubData`.`Id`
+		FROM
+			`Data` `i`
+				LEFT JOIN `SubData1` `a_SubData` ON `i`.`Id` = `a_SubData`.`Id`
+	) `m_1`
+		INNER JOIN `SubData2` `d` ON `m_1`.`Id` IS NOT NULL AND `m_1`.`Id` = `d`.`Id`
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- MySqlConnector MySql
 
 SELECT
 	`i`.`Id`,
-	(
-		SELECT
-			`s`.`Reason`
-		FROM
-			`SubData2` `s`
-		WHERE
-			`a_SubData`.`Id` = `s`.`Id`
-		LIMIT @take
-	)
+	`a_SubData`.`Id`
 FROM
 	`Data` `i`
 		LEFT JOIN `SubData1` `a_SubData` ON `i`.`Id` = `a_SubData`.`Id`

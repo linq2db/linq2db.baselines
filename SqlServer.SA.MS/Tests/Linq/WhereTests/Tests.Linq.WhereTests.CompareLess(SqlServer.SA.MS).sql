@@ -58,6 +58,17 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[t1].[Id],
+	[t1].[NotNullable],
+	[t1].[Nullable],
+	[t1].[OtherNullable]
+FROM
+	[WhereCompareData] [t1]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
 	[p].[Id],
 	[p].[NotNullable],
 	[p].[Nullable],
@@ -66,6 +77,17 @@ FROM
 	[WhereCompareData] [p]
 WHERE
 	([p].[Nullable] >= [p].[OtherNullable] OR [p].[Nullable] IS NULL OR [p].[OtherNullable] IS NULL)
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[NotNullable],
+	[t1].[Nullable],
+	[t1].[OtherNullable]
+FROM
+	[WhereCompareData] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -84,6 +106,17 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[t1].[Id],
+	[t1].[NotNullable],
+	[t1].[Nullable],
+	[t1].[OtherNullable]
+FROM
+	[WhereCompareData] [t1]
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
 	[p].[Id],
 	[p].[NotNullable],
 	[p].[Nullable],
@@ -92,6 +125,17 @@ FROM
 	[WhereCompareData] [p]
 WHERE
 	([p].[OtherNullable] <= [p].[Nullable] OR [p].[OtherNullable] IS NULL OR [p].[Nullable] IS NULL)
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[NotNullable],
+	[t1].[Nullable],
+	[t1].[OtherNullable]
+FROM
+	[WhereCompareData] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[LinqDataTypes] [p]
 WHERE

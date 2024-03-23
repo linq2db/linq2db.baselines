@@ -54,40 +54,25 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Title],
-	[key_data_result].[Text],
-	[detail].[Id]
+	[m_1].[Id],
+	[d].[Id]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[Title],
-			[t1].[Text]
+		SELECT TOP (1)
+			[x].[Id]
 		FROM
-			(
-				SELECT TOP (@take)
-					[x].[Id],
-					[x].[Title],
-					[x].[Text]
-				FROM
-					[Topic] [x]
-				WHERE
-					[x].[Id] = 6
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [Message] [detail] ON [key_data_result].[Id] = [detail].[TopicId]
+			[Topic] [x]
+		WHERE
+			[x].[Id] = 6
+	) [m_1]
+		INNER JOIN [Message] [d] ON [m_1].[Id] = [d].[TopicId]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],
 	[x].[Text]

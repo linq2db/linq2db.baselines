@@ -18,13 +18,11 @@ DECLARE @p_p Int -- Int32
 SET     @p_p = 2
 
 UPDATE
-	[t]
+	[testparams]
 SET
-	[t].[p_p] = @p_p
-FROM
-	[testparams] [t]
+	[p_p] = @p_p
 WHERE
-	[t].[p_p] = 1
+	[testparams].[p_p] = 1
 
 BeforeExecute
 -- SqlServer.2019

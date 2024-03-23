@@ -22,6 +22,10 @@ RETURNING
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @ContractNo Int64
+SET     @ContractNo = 1
+DECLARE @Name Varchar2(8) -- String
+SET     @Name = 'contract'
 
 INSERT INTO "t_test_user_contract"
 (
@@ -33,8 +37,8 @@ INSERT INTO "t_test_user_contract"
 SELECT
 	"sq_test_user_contract".nextval,
 	t1."user_id",
-	1,
-	'contract'
+	:ContractNo,
+	:Name
 FROM
 	"t_test_user" t1
 

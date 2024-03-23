@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[employee].[EmployeeID],
 	[employee].[LastName],
 	[employee].[FirstName],
@@ -27,10 +25,10 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Employees] [t1]
+			[Employees] [a_Employees]
 		WHERE
-			[employee].[EmployeeID] = [t1].[ReportsTo]
+			[employee].[EmployeeID] = [a_Employees].[ReportsTo]
 	) > 0
 

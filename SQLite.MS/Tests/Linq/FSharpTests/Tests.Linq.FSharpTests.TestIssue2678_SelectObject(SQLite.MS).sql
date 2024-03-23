@@ -34,15 +34,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[MetadataVersion],
 	[t1].[DictionaryKey]
 FROM
 	[R] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + t."SmallIntValue" * Interval '1 Year'
+	Cast((t."DateTimeValue" + t."SmallIntValue" * Interval '1 Year') as Date)
 FROM
 	"LinqDataTypes" t
 

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @n  -- Int32
-SET     @n = 1
+DECLARE @ID  -- Int32
+SET     @ID = 1
 DECLARE @n  -- Int32
 SET     @n = 1
 
 SELECT
-	"p"."PersonID" + ?,
+	("p"."PersonID" + ?) - 1,
 	"p"."FirstName"
 FROM
 	"Person" "p"

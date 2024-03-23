@@ -4,11 +4,11 @@ DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = x'0102030405'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = ?
+	"BinaryValue" = ?
 WHERE
-	"LinqDataTypes"."ID" = 1
+	"t"."ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

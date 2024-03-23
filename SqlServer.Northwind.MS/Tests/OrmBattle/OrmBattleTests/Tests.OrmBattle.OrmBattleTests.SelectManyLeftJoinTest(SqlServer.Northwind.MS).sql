@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -88,5 +88,5 @@ SELECT
 	[c_1].[CompanyName]
 FROM
 	[Customers] [c_1]
-		LEFT JOIN [Orders] [o] ON ([c_1].[CustomerID] = [o].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+		LEFT JOIN [Orders] [o] ON [c_1].[CustomerID] = [o].[CustomerID]
 

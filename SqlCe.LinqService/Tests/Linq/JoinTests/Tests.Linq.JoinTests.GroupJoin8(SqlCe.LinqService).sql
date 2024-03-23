@@ -1,21 +1,19 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Parent] [t2]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[c_1].[ParentID],
 				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
 			WHERE
-				[c_1].[ParentID] = [p].[ParentID]
+				[t2].[ParentID] = [c_1].[ParentID]
 			ORDER BY
 				[c_1].[ChildID]
 		) [t1]

@@ -2,35 +2,33 @@
 -- SqlCe
 
 SELECT
-	[t].[ParentID],
-	[t2].[Count_1]
+	[pp].[ParentID],
+	[t1].[COUNT_1]
 FROM
-	[Parent] [t]
-		LEFT JOIN (
+	[Parent] [pp]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [t].[ParentID] = [t2].[ParentID]
+				[Child] [a_Children]
+			WHERE
+				[pp].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[t].[ParentID],
-	[t2].[Count_1]
+	[pp].[ParentID],
+	[t1].[COUNT_1]
 FROM
-	[Parent] [t]
-		LEFT JOIN (
+	[Parent] [pp]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [t].[ParentID] = [t2].[ParentID]
+				[Child] [a_Children]
+			WHERE
+				[pp].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 

@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	DateAdd(year, 11, [t].[DateTimeValue])
+	Convert(Date, DateAdd(year, 11, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

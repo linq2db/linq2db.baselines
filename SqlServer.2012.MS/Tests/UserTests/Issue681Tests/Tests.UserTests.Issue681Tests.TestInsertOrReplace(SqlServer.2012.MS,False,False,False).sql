@@ -31,7 +31,7 @@ USING (SELECT @ID AS [ID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Value] = @Value
+		[Value] = @Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -59,7 +59,7 @@ USING (SELECT @ID AS [ID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Value] = @Value
+		[Value] = @Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(

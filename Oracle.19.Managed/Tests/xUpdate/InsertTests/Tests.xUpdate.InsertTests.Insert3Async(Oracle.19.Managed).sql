@@ -2,9 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
@@ -40,7 +40,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 

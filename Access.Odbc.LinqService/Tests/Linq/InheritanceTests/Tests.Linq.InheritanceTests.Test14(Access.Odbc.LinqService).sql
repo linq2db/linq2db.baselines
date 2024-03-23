@@ -4,9 +4,9 @@ DECLARE @id Int -- Int32
 SET     @id = 10
 
 SELECT TOP 1
-	[x].[ChildID]
+	[c_1].[ChildID]
 FROM
-	[Child] [x]
+	[Child] [c_1]
 WHERE
-	[x].[ChildID] = ?
+	[c_1].[ChildID] = ?
 

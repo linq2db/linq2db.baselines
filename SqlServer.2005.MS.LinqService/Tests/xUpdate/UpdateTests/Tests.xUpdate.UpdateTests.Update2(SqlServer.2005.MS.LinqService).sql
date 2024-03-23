@@ -34,13 +34,11 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[ParentID] = [p].[ParentID] + 1
-FROM
-	[Parent] [p]
+	[ParentID] = [Parent].[ParentID] + 1
 WHERE
-	[p].[ParentID] = @ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

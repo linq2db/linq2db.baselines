@@ -1,20 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
 	[Parent] [p]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_Children].[ParentID]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 WHERE
-	(
-		SELECT TOP (@take)
-			1
-		FROM
-			[Child] [t1]
-		WHERE
-			[p].[ParentID] = [t1].[ParentID]
-	) IS NOT NULL
+	[t1].[ParentID] IS NOT NULL
 

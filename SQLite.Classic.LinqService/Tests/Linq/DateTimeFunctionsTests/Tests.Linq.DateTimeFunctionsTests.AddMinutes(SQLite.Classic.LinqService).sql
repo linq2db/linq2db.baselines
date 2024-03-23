@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],-8 || ' Minute')
+	Cast(StrFTime('%M', (strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],-8 || ' Minute'))) as int)
 FROM
 	[LinqDataTypes] [t]
 

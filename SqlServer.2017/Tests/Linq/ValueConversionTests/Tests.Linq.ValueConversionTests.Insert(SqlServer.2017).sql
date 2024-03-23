@@ -59,10 +59,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -114,10 +112,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -185,10 +181,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],

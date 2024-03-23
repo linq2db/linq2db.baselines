@@ -2,9 +2,14 @@
 -- SqlServer.2016
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			Convert(Int, [p].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Int, [t].[MoneyValue]) > 0
+	[p_1].[c1] > 0
 

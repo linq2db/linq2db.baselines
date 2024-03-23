@@ -3,12 +3,12 @@
 
 SELECT
 	[c_1].[Value1],
-	NULL
+	IIF(False, 0, NULL)
 FROM
 	[Parent] [c_1]
 UNION ALL
 SELECT
-	NULL,
+	IIF(False, 0, NULL),
 	[c_2].[ParentID]
 FROM
 	[Child] [c_2]

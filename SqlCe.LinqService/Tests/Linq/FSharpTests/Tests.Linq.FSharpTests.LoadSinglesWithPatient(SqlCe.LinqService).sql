@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[PersonID],
+SELECT TOP (2)
+	[p].[PersonID] as [ID],
 	[p].[FirstName],
 	[p].[LastName],
 	[p].[MiddleName],
@@ -19,11 +17,9 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[PersonID],
+SELECT TOP (2)
+	[p].[PersonID] as [ID],
 	[p].[FirstName],
 	[p].[LastName],
 	[p].[MiddleName],

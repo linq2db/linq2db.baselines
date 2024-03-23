@@ -81,8 +81,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."PersonID",
@@ -94,7 +92,7 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."PersonID" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -110,21 +108,19 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = ?,
-	"Person"."FirstName" = ?,
-	"Person"."MiddleName" = ?,
-	"Person"."LastName" = ?
+	"Gender" = ?,
+	"FirstName" = ?,
+	"MiddleName" = ?,
+	"LastName" = ?
 WHERE
-	"Person"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."PersonID",
@@ -136,5 +132,5 @@ FROM
 	"Person" "_"
 WHERE
 	"_"."PersonID" = ?
-LIMIT ?
+LIMIT 1
 

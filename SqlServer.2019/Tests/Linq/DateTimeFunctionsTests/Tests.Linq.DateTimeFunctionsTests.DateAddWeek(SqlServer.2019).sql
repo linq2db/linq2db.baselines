@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	DateAdd(week, -1, [t].[DateTimeValue])
+	Convert(Date, DateAdd(week, -1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

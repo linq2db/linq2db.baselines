@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Cast(Convert(NChar, [t].[DateTimeValue], 114) as DateTime)
+	Cast(Convert(NChar, [t].[DateTimeValue], 114) as DateTime) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

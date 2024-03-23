@@ -27,7 +27,7 @@ SELECT
 FROM
 	[SampleClass] [a]
 WHERE
-	([a].[Id] = 0 AND Iif([a].[NullValue] IS NULL, @default, [a].[NullValue]) = 0 OR [a].[Id] = 1 AND Iif([a].[NullValue] IS NULL, @default_1, [a].[NullValue]) = 1 OR [a].[Id] = 2 AND Iif([a].[NullValue] IS NULL, @default_2, [a].[NullValue]) = 2)
+	([a].[Id] = 0 AND IIF([a].[NullValue] IS NULL, @default, [a].[NullValue]) = 0 OR [a].[Id] = 1 AND IIF([a].[NullValue] IS NULL, @default_1, [a].[NullValue]) = 1 OR [a].[Id] = 2 AND IIF([a].[NullValue] IS NULL, @default_2, [a].[NullValue]) = 2)
 
 BeforeExecute
 -- Access AccessOleDb

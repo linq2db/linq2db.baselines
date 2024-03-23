@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	IIF([_].[BoolValue] IN (1), 1, 0) = 0
+	([_].[BoolValue] NOT IN (1) OR [_].[BoolValue] IS NULL)
 

@@ -180,22 +180,27 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Value1 Int -- Int32
-SET     @Value1 = 1
 DECLARE @take Int -- Int32
 SET     @take = 5
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Value1] = @Value1
+	[u].[Value1] = [t1].[c1]
 FROM
+	[Parent] [u],
 	(
 		SELECT TOP (@take)
+			@Value1 as [c1],
+			[p].[ParentID],
 			[p].[Value1]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] >= 1000
 	) [t1]
+WHERE
+	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 

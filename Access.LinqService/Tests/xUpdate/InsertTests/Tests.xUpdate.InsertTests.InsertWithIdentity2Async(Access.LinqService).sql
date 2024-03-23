@@ -2,12 +2,18 @@
 -- Access AccessOleDb
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
+DECLARE @FirstName VarWChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarWChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -17,9 +23,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
@@ -31,7 +37,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 

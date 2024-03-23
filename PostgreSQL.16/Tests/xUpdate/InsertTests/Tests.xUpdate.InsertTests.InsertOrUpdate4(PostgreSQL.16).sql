@@ -35,10 +35,8 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis Text(3) -- String
-SET     @diagnosis = 'abc'
-DECLARE @i Integer -- Int32
-SET     @i = 0
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 INSERT INTO "Patient" AS t1
 (
@@ -48,19 +46,19 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as text)
+	Cast(:diagnosis as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast(Length(t1."Diagnosis") as text)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis Text(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
-SET     @i = 1
+SET     @i = 4
+DECLARE @i_1 Integer -- Int32
+SET     @i_1 = 1
 
 INSERT INTO "Patient" AS t1
 (
@@ -70,19 +68,19 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as text)
+	Cast(:i as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as text)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis Text(3) -- String
-SET     @diagnosis = 'abc'
 DECLARE @i Integer -- Int32
-SET     @i = 2
+SET     @i = 5
+DECLARE @i_1 Integer -- Int32
+SET     @i_1 = 2
 
 INSERT INTO "Patient" AS t1
 (
@@ -92,17 +90,15 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	Cast((Length(:diagnosis) + :i) as text)
+	Cast(:i as text)
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
+	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i_1) as text)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -111,5 +107,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-LIMIT :take
+LIMIT 2
 

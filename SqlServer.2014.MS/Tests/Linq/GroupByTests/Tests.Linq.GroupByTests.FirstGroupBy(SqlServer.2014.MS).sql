@@ -2,87 +2,26 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t1].[ParentID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 2
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 3
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 4
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 6
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 7
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
+	(
+		SELECT
+			[gr].[ParentID]
+		FROM
+			[Child] [gr]
+		GROUP BY
+			[gr].[ParentID]
+	) [gr_1]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[t].[ParentID],
+				[t].[ChildID]
+			FROM
+				[Child] [t]
+			WHERE
+				[gr_1].[ParentID] = [t].[ParentID]
+			ORDER BY
+				[t].[ChildID] DESC
+		) [t1]
 

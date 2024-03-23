@@ -53,14 +53,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	`x`.`DuplicateData`
 FROM
 	`OrderByDistinctData` `x`
-GROUP BY
-	`x`.`DuplicateData`
-ORDER BY
-	Min(`x`.`OrderData1` % 3)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -71,13 +67,13 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	`x`.`DuplicateData`
+	`g_1`.`DuplicateData`
 FROM
-	`OrderByDistinctData` `x`
+	`OrderByDistinctData` `g_1`
 GROUP BY
-	`x`.`DuplicateData`
+	`g_1`.`DuplicateData`
 ORDER BY
-	Max(`x`.`OrderData1` % 3)
+	MAX(`g_1`.`OrderData1` % 3)
 LIMIT @skip, @take
 
 BeforeExecute

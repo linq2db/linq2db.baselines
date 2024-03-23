@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,15 +75,14 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
+DECLARE @p NVarChar(2) -- String
+SET     @p = 'tt'
 
 SELECT
 	[c_1].[CustomerID],
@@ -99,6 +99,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	CharIndex('tt', [c_1].[City]) - 1 = 3
-LIMIT @take
+	CharIndex(@p, [c_1].[City]) - 1 = 3
+LIMIT 1
 

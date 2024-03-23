@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Coalesce([p].[Value1], 100)
+	Coalesce([p].[Value1], 100) + 50
 FROM
 	[Parent] [p]
 

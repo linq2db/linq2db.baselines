@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Text(2) -- String
-SET     @p = '10'
 
 SELECT
-	Cast((Lpad((2010 + t."ID")::text,4,'0') || '-' || :p || '-01') as Date)
+	2010 + t."ID"
 FROM
 	"LinqDataTypes" t
 

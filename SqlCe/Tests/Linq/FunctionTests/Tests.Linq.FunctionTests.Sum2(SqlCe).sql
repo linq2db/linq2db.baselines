@@ -2,18 +2,15 @@
 -- SqlCe
 
 SELECT
-	[t1].[Sum_1]
+	[t1].[SUM_1] as [ChildCount]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Sum([c_1].[ParentID] * [c_1].[ChildID]) as [Sum_1],
-				[c_1].[ParentID]
+				SUM([a_Children].[ParentID] * [a_Children].[ChildID]) as [SUM_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[c_1].[ParentID] > 2
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+				[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 2
+		) [t1]
 

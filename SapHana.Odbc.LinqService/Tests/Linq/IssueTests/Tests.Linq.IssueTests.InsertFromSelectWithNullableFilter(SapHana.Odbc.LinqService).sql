@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @ID  -- Int16
+SET     @ID = 123
+DECLARE @ID  -- Int16
+SET     @ID = 0
 
 INSERT INTO "AllTypes"
 (
@@ -7,21 +11,23 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
-	"t1"."smallintDataType"
+	?,
+	Cast("t1"."ID" as Integer)
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" "_"
-				INNER JOIN "AllTypes" "c_1" ON "_"."smallintDataType" = "c_1"."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON "_"."smallintDataType" = "a_Association"."intDataType"
 		WHERE
-			"_"."smallintDataType" IS NULL
+			Cast("_"."smallintDataType" as Integer) = ?
 	) "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @ID  -- Int16
+SET     @ID = 123
 DECLARE @ID  -- Int16
 SET     @ID = 1234
 
@@ -31,16 +37,16 @@ INSERT INTO "AllTypes"
 	"intDataType"
 )
 SELECT
-	123,
-	"t1"."smallintDataType"
+	?,
+	Cast("t1"."ID" as Integer)
 FROM
 	(
 		SELECT DISTINCT
-			"c_1"."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" "_"
-				INNER JOIN "AllTypes" "c_1" ON "_"."smallintDataType" = "c_1"."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON "_"."smallintDataType" = "a_Association"."intDataType"
 		WHERE
-			"_"."smallintDataType" = ?
+			Cast("_"."smallintDataType" as Integer) = ?
 	) "t1"
 

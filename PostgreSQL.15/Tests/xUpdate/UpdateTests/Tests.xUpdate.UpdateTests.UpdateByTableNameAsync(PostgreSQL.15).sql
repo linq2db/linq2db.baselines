@@ -53,8 +53,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -64,7 +62,7 @@ SELECT
 	t1."Gender"
 FROM
 	"xxPerson" t1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
@@ -91,8 +89,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -102,7 +98,7 @@ SELECT
 	t1."Gender"
 FROM
 	"xxPerson" t1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)

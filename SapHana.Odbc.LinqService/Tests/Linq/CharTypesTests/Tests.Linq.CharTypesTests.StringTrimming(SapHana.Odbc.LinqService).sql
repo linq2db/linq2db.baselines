@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Max("_"."ID")
+	MAX("_"."ID")
 FROM
 	"AllTypes" "_"
 

@@ -201,8 +201,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	(t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND
-	t."Id" > 0
+	t."NullableBoolValue" = True AND t."Id" > 0
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -214,7 +213,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT ((t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
+	NOT (t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

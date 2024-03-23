@@ -19,13 +19,11 @@ DECLARE @p Int -- Int32
 SET     @p = 2
 
 UPDATE
-	[t]
+	[testparams]
 SET
-	[t].[1p] = @p
-FROM
-	[testparams] [t]
+	[1p] = @p
 WHERE
-	[t].[1p] = 1
+	[testparams].[1p] = 1
 
 BeforeExecute
 -- SqlServer.2008

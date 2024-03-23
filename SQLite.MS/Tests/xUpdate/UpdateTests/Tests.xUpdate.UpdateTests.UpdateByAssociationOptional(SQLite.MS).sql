@@ -51,20 +51,20 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @Field NVarChar(4) -- String
+SET     @Field = 'test'
 DECLARE @id  -- Int32
 SET     @id = 3
 
 UPDATE
 	[MainTable]
 SET
-	[Field] = 'test'
+	[Field] = @Field
 FROM
 	[MainTable] [_]
 		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
-		LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id]
 WHERE
-	[_].[Id] = @id AND [MainTable].[Id] = [a_MainOptional].[Id] AND
-	([MainTable].[Field] = [a_MainOptional].[Field] OR [MainTable].[Field] IS NULL AND [a_MainOptional].[Field] IS NULL)
+	[_].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite

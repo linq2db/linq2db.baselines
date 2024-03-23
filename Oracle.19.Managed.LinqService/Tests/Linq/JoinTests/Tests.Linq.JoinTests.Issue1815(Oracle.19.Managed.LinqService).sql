@@ -132,41 +132,37 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId" as "LinkId",
-	j."InId",
-	j."InMaxQuantity",
-	j."InMinQuantity",
-	x."InMinQuantity" as "MinQuantity",
-	x."InMaxQuantity" as "MaxQuantity"
+	t1."InId" as "LinkId",
+	e."InId",
+	t1."InMinQuantity",
+	e."InMinQuantity" as "InMinQuantity_1",
+	t1."InMaxQuantity",
+	e."InMaxQuantity" as "InMaxQuantity_1"
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 1
-FETCH NEXT :take ROWS ONLY
+	t1."InId" = 1
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId" as "LinkId",
-	j."InId",
-	j."InMaxQuantity",
-	j."InMinQuantity",
-	x."InMinQuantity" as "MinQuantity",
-	x."InMaxQuantity" as "MaxQuantity"
+	t1."InId" as "LinkId",
+	e."InId",
+	t1."InMinQuantity",
+	e."InMinQuantity" as "InMinQuantity_1",
+	t1."InMaxQuantity",
+	e."InMaxQuantity" as "InMaxQuantity_1"
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 2
-FETCH NEXT :take ROWS ONLY
+	t1."InId" = 2
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

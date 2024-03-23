@@ -4,9 +4,9 @@ INSERT BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, Guid
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[dbo].[LinqDataTypes] [t1]
+	[dbo].[LinqDataTypes] [p]
 WHERE
-	[t1].[ID] >= 4000
+	[p].[ID] >= 4000
 

@@ -42,8 +42,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -53,7 +51,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -82,8 +80,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -93,7 +89,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

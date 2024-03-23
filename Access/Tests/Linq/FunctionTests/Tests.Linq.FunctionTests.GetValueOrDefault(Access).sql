@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	Iif([p].[Value1] IS NULL, @default, [p].[Value1]) > 0
+	IIF([p].[Value1] IS NULL, @default, [p].[Value1]) > 0
 

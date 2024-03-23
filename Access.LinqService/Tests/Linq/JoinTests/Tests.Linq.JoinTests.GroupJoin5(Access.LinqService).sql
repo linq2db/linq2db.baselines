@@ -2,34 +2,30 @@
 -- Access AccessOleDb
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_ch].[ParentID],
-	[_ch].[ChildID]
-FROM
 	(
-		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+		SELECT TOP 1
+			[ch].[ParentID]
 		FROM
-			[Parent] [p]
+			[Child] [ch]
 		WHERE
-			[p].[ParentID] >= 1
-	) [key_data_result]
-		INNER JOIN [Child] [_ch] ON ([_ch].[ParentID] = [key_data_result].[ParentID])
-ORDER BY
-	[_ch].[ChildID]
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[p].[ParentID],
-	[p].[Value1]
+			[t1].[ParentID] = [ch].[ParentID]
+		ORDER BY
+			[ch].[ChildID]
+	),
+	(
+		SELECT TOP 1
+			[ch_1].[ChildID]
+		FROM
+			[Child] [ch_1]
+		WHERE
+			[t1].[ParentID] = [ch_1].[ParentID]
+		ORDER BY
+			[ch_1].[ChildID]
+	)
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 WHERE
-	[p].[ParentID] >= 1
+	[t1].[ParentID] >= 1
 ORDER BY
-	[p].[ParentID]
+	[t1].[ParentID]
 

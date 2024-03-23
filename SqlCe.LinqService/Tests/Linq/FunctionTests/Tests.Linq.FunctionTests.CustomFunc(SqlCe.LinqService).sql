@@ -2,11 +2,7 @@
 -- SqlCe
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[LastName] + ', ' + [p].[FirstName] as [c1]
 FROM
 	[Person] [p]
 WHERE

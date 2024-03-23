@@ -2,9 +2,9 @@
 -- SqlServer.2022
 
 SELECT
-	Max([p].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [p]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlServer.2022
@@ -34,15 +34,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
-	[p].[Gender],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName]
+	[p].[LastName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
@@ -51,9 +49,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2022
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[Person] [t1]
+	[Person] [t]
 WHERE
-	[t1].[PersonID] > 4
+	[t].[PersonID] > 4
 

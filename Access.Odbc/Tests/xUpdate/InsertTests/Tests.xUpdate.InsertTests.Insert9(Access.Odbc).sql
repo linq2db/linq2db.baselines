@@ -2,17 +2,17 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] > 1000
+	[c_1].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] > 1000
+	[p].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -66,15 +66,15 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] > 1000
+	[c_1].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] > 1000
+	[p].[ParentID] > 1000
 

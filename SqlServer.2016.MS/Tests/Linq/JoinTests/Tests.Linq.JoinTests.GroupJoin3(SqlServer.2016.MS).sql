@@ -4,21 +4,19 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_gjd_ch].[ParentID],
-	[_gjd_ch].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t].[ParentID],
-			[t].[Value1]
+			[p].[ParentID]
 		FROM
-			[Parent] [t]
+			[Parent] [p]
 		WHERE
-			[t].[ParentID] = 2
-	) [key_data_result]
-		INNER JOIN [Child] [_gjd_ch] ON [_gjd_ch].[ParentID] = [key_data_result].[ParentID]
+			[p].[ParentID] = 2
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 DisposeTransaction

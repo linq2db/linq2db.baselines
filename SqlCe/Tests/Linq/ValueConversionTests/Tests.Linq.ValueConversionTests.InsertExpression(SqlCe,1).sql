@@ -24,18 +24,6 @@ CREATE TABLE [ValueConversion]
 
 BeforeExecute
 -- SqlCe
-DECLARE @iteration Int -- Int32
-SET     @iteration = 1
-DECLARE @Value1 NVarChar(2) -- String
-SET     @Value1 = '[]'
-DECLARE @Enum NVarChar(6) -- String
-SET     @Enum = 'Value1'
-DECLARE @inserted NVarChar(22) -- String
-SET     @inserted = '[{"Value":"inserted"}]'
-DECLARE @boolValue NVarChar -- String
-SET     @boolValue = 'N'
-DECLARE @boolValue_1 NVarChar -- String
-SET     @boolValue_1 = 'F'
 
 INSERT INTO [ValueConversion]
 (
@@ -48,22 +36,20 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	@iteration,
-	@Value1,
-	@Enum,
-	@inserted,
-	@boolValue,
-	@boolValue_1
+	1,
+	'[]',
+	'Value1',
+	'[{"Value":"inserted"}]',
+	'N',
+	'F'
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],

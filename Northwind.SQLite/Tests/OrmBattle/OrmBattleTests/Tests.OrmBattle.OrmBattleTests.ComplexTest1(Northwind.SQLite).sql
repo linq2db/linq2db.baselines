@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -85,39 +85,45 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ProductID],
-	[key_data_result].[SupplierID],
-	[__p].[ProductID],
-	[__p].[ProductName],
-	[__p].[SupplierID],
-	[__p].[CategoryID],
-	[__p].[QuantityPerUnit],
-	[__p].[UnitPrice],
-	[__p].[UnitsInStock],
-	[__p].[UnitsOnOrder],
-	[__p].[ReorderLevel],
-	[__p].[Discontinued]
+	[m_1].[ProductID],
+	[m_1].[SupplierID],
+	[d_1].[Discontinued],
+	[d_1].[ProductID],
+	[d_1].[ProductName],
+	[d_1].[SupplierID],
+	[d_1].[CategoryID],
+	[d_1].[QuantityPerUnit],
+	[d_1].[UnitPrice],
+	[d_1].[UnitsInStock],
+	[d_1].[UnitsOnOrder],
+	[d_1].[ReorderLevel]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[ProductID],
-			[supplier].[SupplierID]
+			[d].[ProductID],
+			[t1].[SupplierID]
 		FROM
-			[Suppliers] [supplier],
-			[Products] [detail]
-	) [key_data_result]
-		INNER JOIN [Products] [__p] ON [__p].[ProductID] = [key_data_result].[ProductID] AND [a_Supplier].[SupplierID] = [key_data_result].[SupplierID]
-			LEFT JOIN [Suppliers] [a_Supplier] ON [__p].[SupplierID] = [a_Supplier].[SupplierID]
+			(
+				SELECT DISTINCT
+					[supplier].[SupplierID]
+				FROM
+					[Suppliers] [supplier]
+			) [t1]
+				CROSS JOIN [Products] [d]
+	) [m_1]
+		INNER JOIN ([Products] [d_1]
+			LEFT JOIN [Suppliers] [a_Supplier] ON [d_1].[SupplierID] = [a_Supplier].[SupplierID])
+		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[supplier].[SupplierID],
-	[detail].[ProductID]
+	[m_1].[SupplierID],
+	[d].[ProductID]
 FROM
-	[Suppliers] [supplier],
-	[Products] [detail]
+	[Suppliers] [m_1]
+		CROSS JOIN [Products] [d]
 
 BeforeExecute
 DisposeTransaction

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] IN (1001, 1002)
+	[c_1].[ChildID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

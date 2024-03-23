@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'meat NEAR bread'
+DECLARE @search NVarChar(4000) -- String
+SET     @search = N'meat NEAR bread'
 
 SELECT
 	[c_1].[CategoryID],
@@ -10,7 +10,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN CONTAINSTABLE([Categories], ([CategoryName], [Description]), @p) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN CONTAINSTABLE([Categories], ([CategoryName], [Description]), @search) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 

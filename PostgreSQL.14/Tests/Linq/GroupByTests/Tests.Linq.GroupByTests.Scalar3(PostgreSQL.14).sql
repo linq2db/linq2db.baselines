@@ -2,16 +2,12 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	(
-		SELECT
-			Max(id."ChildID")
-		FROM
-			"Child" id
-		WHERE
-			t1."ParentID" = id."ParentID" AND id."ChildID" > 0
-	)
+	MAX(CASE
+		WHEN g_1."ChildID" > 0 THEN g_1."ChildID"
+		ELSE NULL
+	END)
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID"
+	g_1."ParentID"
 

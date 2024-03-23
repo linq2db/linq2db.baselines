@@ -16,12 +16,14 @@ CREATE TABLE [TestTable]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Fd Int -- Int32
+SET     @Fd = 1
 
 /* My Test */
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Fd] = 1
+	[Fd] = @Fd
 
 BeforeExecute
 -- SqlCe

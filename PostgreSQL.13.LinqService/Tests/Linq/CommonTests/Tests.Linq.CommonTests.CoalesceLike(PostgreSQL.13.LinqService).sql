@@ -10,15 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	CASE
-		WHEN CASE
-			WHEN p."FirstName" IS NULL
-				THEN NULL
-			ELSE p."FirstName" LIKE 'Jo%' ESCAPE '~'
-		END IS NULL
-			THEN False
-		WHEN p."FirstName" IS NULL
-			THEN NULL
-		ELSE p."FirstName" LIKE 'Jo%' ESCAPE '~'
-	END = True
+	p."FirstName" LIKE 'Jo%' ESCAPE '~' AND p."FirstName" IS NOT NULL
 

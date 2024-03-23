@@ -2,32 +2,32 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1.month_1,
-	t1.year_1,
+	t2."Month_1",
+	t2."Year_1",
 	1
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as month_1,
-			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as year_1
+			Cast(Floor(Extract(month from t1."DateTimeValue")) as int) as "Month_1",
+			Cast(Floor(Extract(year from t1."DateTimeValue")) as int) as "Year_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) t1
+			"LinqDataTypes" t1
+	) t2
 GROUP BY
-	t1.month_1,
-	t1.year_1
+	t2."Month_1",
+	t2."Year_1"
 UNION
 SELECT
-	t2."SmallIntValue",
-	t2."SmallIntValue",
+	Cast(t3."SmallIntValue" as Int),
+	Cast(t3."SmallIntValue" as Int),
 	3
 FROM
-	"LinqDataTypes" t2
+	"LinqDataTypes" t3
 UNION
 SELECT
-	Cast(Floor(Extract(year from t3."DateTimeValue")) as int),
-	Cast(Floor(Extract(year from t3."DateTimeValue")) as int),
+	Cast(Floor(Extract(year from t4."DateTimeValue")) as int),
+	Cast(Floor(Extract(year from t4."DateTimeValue")) as int),
 	2
 FROM
-	"LinqDataTypes" t3
+	"LinqDataTypes" t4
 

@@ -1,77 +1,20 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-SELECT
-	[t1].[PersonID]
-FROM
-	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
-
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 1
 
 SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[m_1].[PersonID],
+	[m_1].[FirstName],
+	[m_1].[PersonID],
+	[m_1].[LastName],
+	[m_1].[MiddleName],
+	[m_1].[Gender]
 FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
+	[Person] [m_1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 2
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 3
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 4
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
@@ -83,66 +26,29 @@ GROUP BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 1
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
+BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 2
 
 SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[m_1].[PersonID],
+	[m_1].[FirstName],
+	[m_1].[PersonID],
+	[m_1].[LastName],
+	[m_1].[MiddleName],
+	[m_1].[Gender]
 FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
+	[Person] [m_1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 3
-
-SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
-FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
-
+DisposeTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @ID Int -- Int32
-SET     @ID = 4
 
 SELECT
-	[keyParam].[FirstName],
-	[keyParam].[PersonID],
-	[keyParam].[LastName],
-	[keyParam].[MiddleName],
-	[keyParam].[Gender]
+	[t1].[PersonID]
 FROM
-	[Person] [keyParam]
-WHERE
-	[keyParam].[PersonID] = @ID
+	[Person] [t1]
+GROUP BY
+	[t1].[PersonID]
 

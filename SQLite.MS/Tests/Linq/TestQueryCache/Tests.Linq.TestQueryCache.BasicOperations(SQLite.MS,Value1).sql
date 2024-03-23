@@ -75,22 +75,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value NVarChar(2) -- String
-SET     @Value = 'V3'
-DECLARE @Id  -- Int32
-SET     @Id = 3
-DECLARE @StrKey NVarChar(2) -- String
-SET     @StrKey = 'K3'
-
-UPDATE
-	[SampleClass]
-SET
-	[Value1] = @Value
-WHERE
-	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue1] = @StrKey
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
 DECLARE @StrKey NVarChar(2) -- String
@@ -98,7 +82,7 @@ SET     @StrKey = 'K3'
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'V3'
 
-INSERT INTO [SampleClass]
+INSERT INTO [SampleClass] AS [t1]
 (
 	[Id],
 	[KeyValue1],
@@ -110,6 +94,8 @@ VALUES
 	@StrKey,
 	@Value
 )
+ON CONFLICT ([Id], [KeyValue1]) DO UPDATE SET
+	[Value1] = @Value
 
 BeforeExecute
 -- SQLite.MS SQLite

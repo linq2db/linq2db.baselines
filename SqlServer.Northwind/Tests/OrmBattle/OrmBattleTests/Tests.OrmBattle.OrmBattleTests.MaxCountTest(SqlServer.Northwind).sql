@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -83,20 +83,16 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	Max([t1].[cnt])
+	MAX([t1].[COUNT_1])
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Orders] [o]
-						INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-				WHERE
-					([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
-			) as [cnt]
-		FROM
-			[Customers] [c_1]
-	) [t1]
+	[Customers] [t2]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [COUNT_1]
+			FROM
+				[Orders] [o]
+					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+			WHERE
+				[a_Customer].[CustomerID] = [t2].[CustomerID]
+		) [t1]
 
