@@ -2,39 +2,35 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 10
-DECLARE @take_1 Int32
-SET     @take_1 = 10
 
 SELECT
-	cp."ParentID",
-	c_1."ChildID"
+	x."ParentID",
+	t2."ChildID"
 FROM
-	"Parent" cp
-		CROSS APPLY (
+	"Parent" x
+		INNER JOIN (
 			SELECT
-				t3."ParentID",
-				t3."ChildID"
+				c_2."ParentID",
+				c_2."ChildID"
 			FROM
 				(
+					SELECT
+						c_1."ParentID",
+						c_1."ChildID"
+					FROM
+						"Child" c_1
+					UNION
 					SELECT
 						t1."ParentID",
 						t1."ChildID"
 					FROM
 						"Child" t1
-					UNION
-					SELECT
-						t2."ParentID",
-						t2."ChildID"
-					FROM
-						"Child" t2
-				) t3
+				) c_2
 			ORDER BY
-				t3."ParentID"
-			FETCH NEXT :take ROWS ONLY
-		) c_1
-WHERE
-	c_1."ParentID" = cp."ParentID"
+				c_2."ParentID"
+			FETCH NEXT 10 ROWS ONLY
+		) t2 ON t2."ParentID" = x."ParentID"
 ORDER BY
-	cp."ParentID"
-FETCH NEXT :take_1 ROWS ONLY
+	x."ParentID"
+FETCH NEXT :take ROWS ONLY
 
