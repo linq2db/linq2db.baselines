@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'::uuid
+SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -23,7 +23,7 @@ LIMIT :take
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
+SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'::uuid
 DECLARE @take Integer -- Int32
 SET     @take = 2
 

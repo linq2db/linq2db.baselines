@@ -2,6 +2,17 @@
 -- MySql55Connector MySqlConnector MySql
 
 SELECT
+	Count(*)
+FROM
+	`Parent` `p`
+		INNER JOIN `GrandChild` `g_1` ON `p`.`ParentID` = `g_1`.`ParentID`
+		INNER JOIN `Child` `c_1` ON `g_1`.`ChildID` = `c_1`.`ChildID`
+		INNER JOIN `LinqDataTypes` `t` ON `c_1`.`ParentID` = `t`.`ID`
+
+BeforeExecute
+-- MySql55Connector MySqlConnector MySql
+
+SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
 FROM
@@ -21,15 +32,4 @@ SELECT
 	`t1`.`StringValue`
 FROM
 	`LinqDataTypes` `t1`
-
-BeforeExecute
--- MySql55Connector MySqlConnector MySql
-
-SELECT
-	Count(*)
-FROM
-	`Parent` `p`
-		INNER JOIN `GrandChild` `g_1` ON `p`.`ParentID` = `g_1`.`ParentID`
-		INNER JOIN `Child` `c_1` ON `g_1`.`ChildID` = `c_1`.`ChildID`
-		INNER JOIN `LinqDataTypes` `t` ON `c_1`.`ParentID` = `t`.`ID`
 
