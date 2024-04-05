@@ -35,15 +35,16 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE_1" ("ParentID")
+WITH "CTE_1" ("ParentID", "ChildID")
 AS
 (
 	SELECT
-		c_1."ParentID"
+		c_1."ParentID",
+		c_1."ChildID"
 	FROM
 		"CteChild" c_1
 	WHERE
-		c_1."ParentID" % 2 = 0
+		(c_1."ParentID"::decimal % 2)::decimal = 0
 )
 UPDATE
 	"CteChild"
@@ -63,7 +64,7 @@ SELECT
 FROM
 	"CteChild" c_1
 WHERE
-	c_1."ParentID" % 2 = 0
+	(c_1."ParentID"::decimal % 2)::decimal = 0
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -73,7 +74,7 @@ SELECT
 FROM
 	"CteChild" c_1
 WHERE
-	c_1."ParentID" % 2 = 0
+	(c_1."ParentID"::decimal % 2)::decimal = 0
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

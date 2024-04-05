@@ -43,27 +43,23 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Data Text(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
 	"TrimTestTable"
 SET
-	"Data" = :Data
+	"Data" = '***OOO***'
 WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Data Text(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p Text(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
 	"TrimTestTable"
 SET
-	"Data" = :Data
+	"Data" = '***SSS***'
 WHERE
 	"TrimTestTable"."Data" = :p
 

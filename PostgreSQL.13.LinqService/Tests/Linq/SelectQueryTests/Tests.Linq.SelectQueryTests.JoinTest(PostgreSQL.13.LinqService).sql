@@ -36,15 +36,10 @@ BeforeExecute
 SELECT
 	t."Id",
 	t."Value",
-	s."Key_1",
-	s."SecondValue"
+	1,
+	3
 FROM
 	"SampleClass" t
-		INNER JOIN (
-			SELECT
-				1 as "Key_1",
-				3 as "SecondValue"
-		) s ON s."Key_1" = t."Id"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
