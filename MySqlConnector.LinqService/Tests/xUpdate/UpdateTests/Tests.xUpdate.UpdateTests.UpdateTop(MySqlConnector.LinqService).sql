@@ -180,15 +180,13 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value1 Int32
-SET     @Value1 = 1
 DECLARE @take Int32
 SET     @take = 5
 
 UPDATE
 	`Parent` `p`
 SET
-	`p`.`Value1` = @Value1
+	`p`.`Value1` = 1
 WHERE
 	`p`.`ParentID` >= 1000
 LIMIT @take

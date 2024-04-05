@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS `testparams`
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Test Int32
-SET     @Test = 2
 
 UPDATE
 	`testparams` `t`
 SET
-	`t`.`TestИмя` = @Test
+	`t`.`TestИмя` = 2
 WHERE
 	`t`.`TestИмя` = 1
 

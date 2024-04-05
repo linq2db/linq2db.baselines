@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS `testparams`
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @p Int32
-SET     @p = 2
 
 UPDATE
 	`testparams` `t`
 SET
-	`t`.`_p` = @p
+	`t`.`_p` = 2
 WHERE
 	`t`.`_p` = 1
 

@@ -2,14 +2,9 @@
 -- MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	STR_TO_DATE(Concat('2010-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 20:35:44.000'), '%Y-%m-%d %H:%i:%s.%f')
 FROM
-	(
-		SELECT
-			Cast(Concat('2010-', Lpad(`p`.`ID`,2,'0'), '-01 20:35:44') as DateTime) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `t`
 WHERE
-	Extract(year from `t`.`c1`) = 2010
+	Extract(year from STR_TO_DATE(Concat('2010-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 20:35:44.000'), '%Y-%m-%d %H:%i:%s.%f')) = 2010
 

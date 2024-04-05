@@ -84,27 +84,23 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
 	`TrimTestTable` `t`
 SET
-	`t`.`Data` = @Data
+	`t`.`Data` = '***OOO***'
 WHERE
 	`t`.`Data` = '***XXX***'
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p VarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
 	`TrimTestTable` `t`
 SET
-	`t`.`Data` = @Data
+	`t`.`Data` = '***SSS***'
 WHERE
 	`t`.`Data` = @p
 

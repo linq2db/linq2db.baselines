@@ -30,15 +30,13 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value1 Int32
-SET     @Value1 = 2
 DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
 	`Parent` `p`
 SET
-	`p`.`Value1` = @Value1
+	`p`.`Value1` = 2
 WHERE
 	`p`.`ParentID` = @id
 
@@ -56,15 +54,13 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @Value1 Int32
-SET     @Value1 = 3
 DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
 	`Parent` `p`
 SET
-	`p`.`Value1` = @Value1
+	`p`.`Value1` = 3
 WHERE
 	`p`.`ParentID` = @id
 

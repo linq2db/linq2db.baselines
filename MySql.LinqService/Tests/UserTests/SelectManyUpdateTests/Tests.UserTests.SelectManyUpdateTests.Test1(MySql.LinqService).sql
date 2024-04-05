@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @Value1 Int32
-SET     @Value1 = NULL
 
 UPDATE
+	`Parent` `a_Values`,
 	`Parent` `x`
-		INNER JOIN `Parent` `c_1` ON `x`.`ParentID` = `c_1`.`Value1`
 SET
-	`x`.`Value1` = @Value1
+	`a_Values`.`Value1` = NULL
 WHERE
-	`x`.`ParentID` IN (0, 0)
+	`x`.`ParentID` IN (0, 0) AND `x`.`ParentID` = `a_Values`.`Value1`
 
