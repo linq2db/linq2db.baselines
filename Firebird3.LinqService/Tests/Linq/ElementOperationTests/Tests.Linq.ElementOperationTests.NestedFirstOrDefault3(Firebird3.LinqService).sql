@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST @take DISTINCT
-			"c_1"."ParentID"
+		SELECT FIRST 1 DISTINCT
+			"a_Children"."ParentID"
 		FROM
-			"Child" "c_1"
+			"Child" "a_Children"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID"
+			"p"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
 	"Parent" "p"

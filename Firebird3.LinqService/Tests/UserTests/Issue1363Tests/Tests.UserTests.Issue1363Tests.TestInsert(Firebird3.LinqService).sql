@@ -24,6 +24,8 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @id Guid
 SET     @id = X'BC7B663D0FDE43278F925D8CC3A11D11'
+DECLARE @testId Guid
+SET     @testId = X'00000000000000000000000000000000'
 
 INSERT INTO "Issue1363"
 (
@@ -32,14 +34,14 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
 	(
 		SELECT
 			"t1"."required_field"
 		FROM
 			"Issue1363" "t1"
 		WHERE
-			"t1"."required_field" IS NULL
+			"t1"."required_field" = @testId
 	)
 )
 
@@ -57,7 +59,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
 	(
 		SELECT
 			"t1"."required_field"
@@ -70,12 +72,10 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id2 Guid
 SET     @id2 = X'A948600DDE214F748AC29516B287076E'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."required_field",
 	"t1"."optional_field"
 FROM

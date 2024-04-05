@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"GrandChild" "g_1"
 		WHERE

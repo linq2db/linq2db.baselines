@@ -22,15 +22,13 @@ END
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @A123456789b123456789c123456789d123456789e123456789 Integer -- Int32
-SET     @A123456789b123456789c123456789d123456789e123456789 = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."col1" = @A123456789b123456789c123456789d123456789e123456789
+	"col1" = 2
 WHERE
-	"testparams"."Column1" = 1
+	"t"."Column1" = 1
 
 BeforeExecute
 -- Firebird3 Firebird

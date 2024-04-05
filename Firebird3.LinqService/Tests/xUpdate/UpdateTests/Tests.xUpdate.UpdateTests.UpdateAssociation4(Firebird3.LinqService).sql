@@ -28,13 +28,11 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 5
 
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = @Value1
+	"Value1" = 5
 WHERE
 	EXISTS(
 		SELECT

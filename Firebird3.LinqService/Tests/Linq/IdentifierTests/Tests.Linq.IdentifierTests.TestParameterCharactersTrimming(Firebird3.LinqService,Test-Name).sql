@@ -21,15 +21,13 @@ END
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @TestName Integer -- Int32
-SET     @TestName = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."Test-Name" = @TestName
+	"Test-Name" = 2
 WHERE
-	"testparams"."Test-Name" = 1
+	"t"."Test-Name" = 1
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -11,7 +11,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	@id
+	CAST(@id AS Int)
 )
 
 BeforeExecute
@@ -28,15 +28,13 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 5000
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = @ChildID
+	"ChildID" = 5000
 WHERE
 	EXISTS(
 		SELECT

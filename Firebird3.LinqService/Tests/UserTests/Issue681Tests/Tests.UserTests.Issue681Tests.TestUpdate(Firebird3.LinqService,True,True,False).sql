@@ -30,11 +30,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Issue681Table"
+	"Issue681Table" "t1"
 SET
-	"Issue681Table"."Value" = @Value
+	"Value" = CAST(@Value AS Int)
 WHERE
-	"Issue681Table".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- Firebird3 Firebird
