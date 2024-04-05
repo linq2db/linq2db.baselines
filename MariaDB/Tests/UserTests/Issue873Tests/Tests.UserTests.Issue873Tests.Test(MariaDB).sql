@@ -2,24 +2,24 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`f`.`Label`,
-	`f`.`SubSum`,
-	`f`.`c2`,
-	`f`.`Count_1`
+	`f_1`.`Label_1`,
+	`f_1`.`SubSum`,
+	`f_1`.`Any_1`,
+	`f_1`.`COUNT_1`
 FROM
 	(
 		SELECT
-			Concat(' ', Cast(Coalesce(`e`.`Value1`, 0) as CHAR(11))) as `c1`,
+			Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))) as `Label`,
 			(
 				SELECT
-					Sum(`c_1`.`ChildID`)
+					SUM(`c_1`.`ChildID`)
 				FROM
 					`Child` `c_1`
 						LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
 				WHERE
-					`a_Parent`.`ParentID` = `e`.`ParentID` AND (`a_Parent`.`Value1` = `e`.`Value1` OR `a_Parent`.`Value1` IS NULL AND `e`.`Value1` IS NULL)
+					`a_Parent`.`ParentID` = `f`.`ParentID` AND (`a_Parent`.`Value1` = `f`.`Value1` OR `a_Parent`.`Value1` IS NULL AND `f`.`Value1` IS NULL)
 			) as `SubSum`,
-			Coalesce(`e`.`Value1`, 0) as `Label`,
+			Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))) as `Label_1`,
 			CASE
 				WHEN EXISTS(
 					SELECT
@@ -28,23 +28,23 @@ FROM
 						`Child` `c_2`
 							LEFT JOIN `Parent` `a_Parent_1` ON `c_2`.`ParentID` = `a_Parent_1`.`ParentID`
 					WHERE
-						`a_Parent_1`.`ParentID` = `e`.`ParentID` AND (`a_Parent_1`.`Value1` = `e`.`Value1` OR `a_Parent_1`.`Value1` IS NULL AND `e`.`Value1` IS NULL)
+						`a_Parent_1`.`ParentID` = `f`.`ParentID` AND (`a_Parent_1`.`Value1` = `f`.`Value1` OR `a_Parent_1`.`Value1` IS NULL AND `f`.`Value1` IS NULL)
 				)
 					THEN 1
 				ELSE 0
-			END as `c2`,
+			END as `Any_1`,
 			(
 				SELECT
-					Count(*)
+					COUNT(*)
 				FROM
 					`Child` `p`
 						LEFT JOIN `Parent` `a_Parent_2` ON `p`.`ParentID` = `a_Parent_2`.`ParentID`
 				WHERE
-					`a_Parent_2`.`ParentID` = `e`.`ParentID` AND (`a_Parent_2`.`Value1` = `e`.`Value1` OR `a_Parent_2`.`Value1` IS NULL AND `e`.`Value1` IS NULL)
-			) as `Count_1`
+					`a_Parent_2`.`ParentID` = `f`.`ParentID` AND (`a_Parent_2`.`Value1` = `f`.`Value1` OR `a_Parent_2`.`Value1` IS NULL AND `f`.`Value1` IS NULL)
+			) as `COUNT_1`
 		FROM
-			`Parent` `e`
-	) `f`
+			`Parent` `f`
+	) `f_1`
 WHERE
-	LOCATE('1', `f`.`c1`) > 0 AND `f`.`SubSum` > 0
+	LOCATE('1', `f_1`.`Label`) > 0 AND `f_1`.`SubSum` > 0
 

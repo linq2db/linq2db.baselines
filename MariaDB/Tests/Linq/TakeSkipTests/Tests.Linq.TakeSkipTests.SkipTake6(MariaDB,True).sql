@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 3
 
 SELECT
 	`c_1`.`ParentID`,
@@ -13,17 +11,13 @@ FROM
 			`p`.`ParentID`
 		FROM
 			`GrandChild` `p`
-		LIMIT @take
-	) `t1`
+		LIMIT 3
+	) `p_1`
 WHERE
-	`c_1`.`ParentID` = `t1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @skip Int32
-SET     @skip = 12
-DECLARE @take Int32
-SET     @take = 3
 
 SELECT
 	`c_1`.`ParentID`,
@@ -35,8 +29,8 @@ FROM
 			`p`.`ParentID`
 		FROM
 			`GrandChild` `p`
-		LIMIT @skip, @take
-	) `t1`
+		LIMIT 12, 3
+	) `p_1`
 WHERE
-	`c_1`.`ParentID` = `t1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 

@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @ChildID Int32
-SET     @ChildID = 10
 
 UPDATE
-	`Child` `c_2`
-		INNER JOIN `Parent` `x` ON `x`.`ParentID` = `c_2`.`ParentID`
-		INNER JOIN `Child` `c_1` ON `c_2`.`ParentID` = `c_2`.`ChildID`
+	`Child` `a_Children`,
+	`Parent` `x`
+		INNER JOIN `Child` `a_Children_1` ON `x`.`ParentID` = `a_Children_1`.`ParentID`
 SET
-	`c_2`.`ChildID` = @ChildID
+	`a_Children`.`ChildID` = 10
 WHERE
-	1 = 0
+	1 = 0 AND `a_Children_1`.`ParentID` = `a_Children`.`ChildID`
 

@@ -25,20 +25,16 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @TestField Int64
-SET     @TestField = 12
 
 UPDATE
 	`LinqDataTypes` `r`
 SET
-	`r`.`BigIntValue` = @TestField
+	`r`.`BigIntValue` = 12
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`BigIntValue`
@@ -46,7 +42,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

@@ -41,21 +41,17 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	`Issue1554FluentTable` `p`
 SET
 	`p`.`ClaimedKeyType` = @ClaimedKeyType,
-	`p`.`ClaimedKeyTypeN` = @ClaimedKeyTypeN
+	`p`.`ClaimedKeyTypeN` = 'EC'
 WHERE
 	`p`.`Id` = 0
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Id`,
@@ -63,7 +59,7 @@ SELECT
 	`t1`.`ClaimedKeyTypeN`
 FROM
 	`Issue1554FluentTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

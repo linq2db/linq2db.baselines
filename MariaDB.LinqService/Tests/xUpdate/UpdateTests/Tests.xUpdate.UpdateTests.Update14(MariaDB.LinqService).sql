@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	`Person` `_`
 SET
-	`_`.`LastName` = Cast((Char_Length(@name) + @idx) as CHAR(11))
+	`_`.`LastName` = CAST(Char_Length(@name) + @idx AS CHAR(11))
 WHERE
 	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 

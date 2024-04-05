@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS `testparams`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @TestName Int32
-SET     @TestName = 2
 
 UPDATE
 	`testparams` `t`
 SET
-	`t`.`Test-Name` = @TestName
+	`t`.`Test-Name` = 2
 WHERE
 	`t`.`Test-Name` = 1
 
