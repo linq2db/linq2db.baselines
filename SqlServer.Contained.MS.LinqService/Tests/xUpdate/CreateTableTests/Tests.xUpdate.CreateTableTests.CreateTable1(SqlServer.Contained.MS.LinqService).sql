@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE [TestTable]
 (
-	[ID]        Int             NOT NULL IDENTITY,
 	[Field1]    NVarChar(50)        NULL,
+	[ID]        Int             NOT NULL IDENTITY,
 	[Field2]    NVarChar(4000)      NULL,
 	[CreatedOn] DateTime2           NULL,
 
@@ -20,8 +20,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ID],
 	[t1].[Field1],
+	[t1].[ID],
 	[t1].[Field2],
 	[t1].[CreatedOn]
 FROM
