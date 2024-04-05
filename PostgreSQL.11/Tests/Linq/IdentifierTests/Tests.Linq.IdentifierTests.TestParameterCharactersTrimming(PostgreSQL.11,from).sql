@@ -13,13 +13,11 @@ CREATE TABLE IF NOT EXISTS testparams
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @from Integer -- Int32
-SET     @from = 2
 
 UPDATE
 	testparams
 SET
-	"from" = :from
+	"from" = 2
 WHERE
 	testparams."from" = 1
 
