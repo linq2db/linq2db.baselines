@@ -28,15 +28,13 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 5000
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
 	"Child"
 SET
-	"ChildID" = :ChildID
+	"ChildID" = 5000
 FROM
 	"Parent" "a_Parent"
 WHERE

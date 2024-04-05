@@ -39,23 +39,17 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @ClaimedKeyType Text(2) -- String
-SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Text(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	"Issue1554FluentTable"
 SET
-	"ClaimedKeyType" = :ClaimedKeyType,
-	"ClaimedKeyTypeN" = :ClaimedKeyTypeN
+	"ClaimedKeyType" = 'EC',
+	"ClaimedKeyTypeN" = 'EC'
 WHERE
 	"Issue1554FluentTable"."Id" = 0
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."Id",
@@ -63,7 +57,7 @@ SELECT
 	t1."ClaimedKeyTypeN"
 FROM
 	"Issue1554FluentTable" t1
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
