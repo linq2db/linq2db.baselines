@@ -30,17 +30,15 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = 2
 DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."Value1" = :Value1
+	"Value1" = 2
 WHERE
-	"Parent"."ParentID" = :id
+	p."ParentID" = :id
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -56,17 +54,15 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = 3
 DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."Value1" = :Value1
+	"Value1" = 3
 WHERE
-	"Parent"."ParentID" = :id
+	p."ParentID" = :id
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

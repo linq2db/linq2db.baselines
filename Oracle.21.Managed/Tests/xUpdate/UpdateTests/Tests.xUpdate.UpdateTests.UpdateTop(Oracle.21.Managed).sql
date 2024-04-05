@@ -180,15 +180,28 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value1 Int32
-SET     @Value1 = 1
 DECLARE @take Int32
 SET     @take = 5
 
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = :Value1
+	"Value1" = 1
 WHERE
-	"Parent"."ParentID" >= 1000 AND ROWNUM <= :take
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT
+					p."ParentID",
+					p."Value1"
+				FROM
+					"Parent" p
+				WHERE
+					p."ParentID" >= 1000 AND ROWNUM <= :take
+			) t1
+		WHERE
+			"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
+	)
 

@@ -43,20 +43,26 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @default_1 Int32
-SET     @default_1 = 0
+DECLARE @p Int32
+SET     @p = 0
 
 SELECT
-	t."EnumValue"
+	CASE
+		WHEN g_1."EnumValue" IS NULL THEN :p
+		ELSE g_1."EnumValue"
+	END
 FROM
-	"Issue4167Table" t
+	"Issue4167Table" g_1
 WHERE
-	t."Value" = '000001'
+	g_1."Value" = '000001'
 GROUP BY
-	t."Value",
-	t."EnumValue"
+	g_1."Value",
+	g_1."EnumValue"
 ORDER BY
-	Nvl(t."EnumValue", :default_1)
+	CASE
+		WHEN g_1."EnumValue" IS NULL THEN :p
+		ELSE g_1."EnumValue"
+	END
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -44,24 +44,20 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value6 Int32
-SET     @Value6 = 7
 DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value6" = :Value6
+	"Value6" = 7
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value6"
@@ -69,28 +65,24 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Value6 Int32
-SET     @Value6 = 8
 DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value6" = :Value6
+	"Value6" = 8
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value6"
@@ -98,7 +90,7 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
