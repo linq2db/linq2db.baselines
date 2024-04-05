@@ -37,16 +37,14 @@ INSERT INTO "PR_1598_Insert_Null_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(5))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"

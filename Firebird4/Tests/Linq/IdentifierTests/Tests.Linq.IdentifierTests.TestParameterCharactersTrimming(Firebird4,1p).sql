@@ -21,15 +21,13 @@ END
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."1p" = @p
+	"1p" = 2
 WHERE
-	"testparams"."1p" = 1
+	"t"."1p" = 1
 
 BeforeExecute
 -- Firebird4 Firebird

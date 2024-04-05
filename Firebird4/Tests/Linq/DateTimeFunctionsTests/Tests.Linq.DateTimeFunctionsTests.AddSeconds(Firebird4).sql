@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	DateAdd(Second, -35, "t"."DateTimeValue")
+	CAST(Floor(Extract(second from DateAdd(Second, -35, "t"."DateTimeValue"))) AS Int)
 FROM
 	"LinqDataTypes" "t"
 

@@ -2,9 +2,9 @@
 -- Firebird4 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -35,21 +35,19 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@BoolValue,
-	@GuidValue,
-	@BinaryValue,
-	@SmallIntValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS TimeStamp),
+	CAST(@BoolValue AS CHAR),
+	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@BinaryValue AS BLOB),
+	CAST(@SmallIntValue AS SmallInt)
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",
@@ -66,7 +64,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 

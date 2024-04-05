@@ -59,15 +59,10 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL FROM rdb$da
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @EnumNullable VarChar -- String
-SET     @EnumNullable = NULL
-DECLARE @EnumNullable_1 VarChar -- String
-SET     @EnumNullable_1 = NULL
 
 SELECT
 	CASE
-		WHEN ("t1"."EnumNullable" <> Cast(@EnumNullable as VarChar(50) CHARACTER SET UNICODE_FSS) OR "t1"."EnumNullable" IS NULL AND Cast(@EnumNullable as VarChar(50) CHARACTER SET UNICODE_FSS) IS NOT NULL OR "t1"."EnumNullable" IS NOT NULL AND Cast(@EnumNullable as VarChar(50) CHARACTER SET UNICODE_FSS) IS NULL)
-			THEN "t1"."EnumNullable"
+		WHEN "t1"."EnumNullable" IS NOT NULL THEN "t1"."EnumNullable"
 		ELSE "t1"."Enum"
 	END
 FROM
@@ -75,8 +70,7 @@ FROM
 UNION ALL
 SELECT
 	CASE
-		WHEN ("t1_1"."EnumNullable" <> Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) OR "t1_1"."EnumNullable" IS NULL AND Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NOT NULL OR "t1_1"."EnumNullable" IS NOT NULL AND Cast(@EnumNullable_1 as VarChar(50) CHARACTER SET UNICODE_FSS) IS NULL)
-			THEN "t1_1"."EnumNullable"
+		WHEN "t1_1"."EnumNullable" IS NOT NULL THEN "t1_1"."EnumNullable"
 		ELSE "t1_1"."Enum"
 	END
 FROM

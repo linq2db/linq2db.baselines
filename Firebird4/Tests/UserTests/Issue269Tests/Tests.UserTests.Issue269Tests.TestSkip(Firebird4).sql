@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @skip Integer -- Int32
-SET     @skip = 0
 
 SELECT
 	"pat"."PersonID",
@@ -14,7 +12,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT SKIP @skip
+				SELECT SKIP 0
 					"a_Patient"."Diagnosis"
 				FROM
 					"Person" "per"

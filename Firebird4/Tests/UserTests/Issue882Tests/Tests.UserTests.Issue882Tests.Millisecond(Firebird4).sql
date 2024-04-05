@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	Mod(Cast(Floor(Extract(millisecond from "t"."DateTimeValue")) as int), 7)
+	Mod(CAST(Floor(Extract(millisecond from "t"."DateTimeValue")) AS Int), 7)
 FROM
 	"LinqDataTypes" "t"
 

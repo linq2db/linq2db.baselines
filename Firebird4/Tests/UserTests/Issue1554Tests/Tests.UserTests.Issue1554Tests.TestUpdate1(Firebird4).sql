@@ -40,32 +40,26 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS VARCHAR(3)),
+	CAST(@ClaimedKeyTypeN AS VARCHAR(3))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @ClaimedKeyType VarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarChar(2) -- String
-SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554Table"
+	"Issue1554Table" "p"
 SET
-	"Issue1554Table"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554Table"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"ClaimedKeyType" = 'EC',
+	"ClaimedKeyTypeN" = 'EC'
 WHERE
-	"Issue1554Table"."Id" = 0
+	"p"."Id" = 0
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Id",
 	"t1"."ClaimedKeyType",
 	"t1"."ClaimedKeyTypeN"

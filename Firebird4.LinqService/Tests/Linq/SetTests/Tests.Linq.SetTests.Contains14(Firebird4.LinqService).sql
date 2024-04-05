@@ -11,7 +11,7 @@ SELECT
 			FROM
 				"Parent" "p"
 			WHERE
-				"p"."ParentID" = 1 AND "p"."ParentID" = @ParentID
+				"p"."ParentID" = 1 AND CAST(@ParentID AS Int) = "p"."ParentID"
 		)
 			THEN 1
 		ELSE 0
@@ -31,7 +31,7 @@ SELECT
 			FROM
 				"Parent" "p"
 			WHERE
-				"p"."ParentID" = 1 AND "p"."ParentID" = @ParentID
+				"p"."ParentID" = 1 AND CAST(@ParentID AS Int) = "p"."ParentID"
 		)
 			THEN 1
 		ELSE 0
