@@ -2,6 +2,6 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	2147483647
+	1
 FROM SYS.DUAL
 

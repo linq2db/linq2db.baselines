@@ -29,15 +29,13 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @TestName Int32
-SET     @TestName = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."Test-Name" = :TestName
+	"Test-Name" = 2
 WHERE
-	"testparams"."Test-Name" = 1
+	t."Test-Name" = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

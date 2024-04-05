@@ -26,12 +26,10 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
-	p."PersonID",
+	p."PersonID" as ID,
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -39,5 +37,5 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

@@ -30,15 +30,13 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @A123456789b123456789c123456789 Int32
-SET     @A123456789b123456789c123456789 = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."col1" = :A123456789b123456789c123456789
+	"col1" = 2
 WHERE
-	"testparams"."Column1" = 1
+	t."Column1" = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
