@@ -1,31 +1,19 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT
 	t1."ParentID"
 FROM
-	"Parent" p_1
+	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
-				p."ParentID"
+				"a_Children"."ParentID"
 			FROM
-				"Child" p
+				"Child" "a_Children"
 			WHERE
-				p_1."ParentID" = p."ParentID"
-			LIMIT :take
+				p."ParentID" = "a_Children"."ParentID"
+			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			"Child" t2
-		WHERE
-			p_1."ParentID" = t2."ParentID"
-		LIMIT :take_1
-	) IS NOT NULL
+	t1."ParentID" IS NOT NULL
 

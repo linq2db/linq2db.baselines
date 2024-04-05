@@ -18,20 +18,28 @@ CREATE TABLE IF NOT EXISTS "Issue3761Table"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @default Timestamp -- DateTime2
-SET     @default = '0001-01-01'::date
+DECLARE @p Timestamp -- DateTime2
+SET     @p = '0001-01-01'::date
 DECLARE @DATUM Timestamp -- DateTime2
 SET     @DATUM = '2019-01-01'::date
+DECLARE @p_1 Timestamp -- DateTime2
+SET     @p_1 = '0001-01-01'::date
 
 SELECT
 	t1."Year_1",
 	t1."Month_1",
-	Sum(t1."SKUPAJ")
+	SUM(t1."SKUPAJ")
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce(n."DATUM", :default))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce(n."DATUM", :default))) as int) as "Month_1",
+			Floor(Extract(year From CASE
+				WHEN n."DATUM" IS NULL THEN :p
+				ELSE n."DATUM"
+			END))::Int as "Year_1",
+			Floor(Extract(month From CASE
+				WHEN n."DATUM" IS NULL THEN :p
+				ELSE n."DATUM"
+			END))::Int as "Month_1",
 			n."SKUPAJ"
 		FROM
 			"Issue3761Table" n
@@ -45,12 +53,18 @@ UNION ALL
 SELECT
 	t2."Year_1",
 	t2."Month_1",
-	Sum(t2."SKUPAJ")
+	SUM(t2."SKUPAJ")
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce(n_1."DATUM", :default))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce(n_1."DATUM", :default))) as int) as "Month_1",
+			Floor(Extract(year From CASE
+				WHEN n_1."DATUM" IS NULL THEN :p_1
+				ELSE n_1."DATUM"
+			END))::Int as "Year_1",
+			Floor(Extract(month From CASE
+				WHEN n_1."DATUM" IS NULL THEN :p_1
+				ELSE n_1."DATUM"
+			END))::Int as "Month_1",
 			n_1."SKUPAJ"
 		FROM
 			"Issue3761Table" n_1
