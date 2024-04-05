@@ -29,15 +29,13 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p_p Int32
-SET     @p_p = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."p_p" = :p_p
+	"p_p" = 2
 WHERE
-	"testparams"."p_p" = 1
+	t."p_p" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

@@ -128,23 +128,21 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @is_deleted Int16
-SET     @is_deleted = 1
 
 UPDATE
 	"component_categories"
 SET
-	"component_categories"."is_deleted" = :is_deleted
+	"is_deleted" = 1
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"component_categories" ctg
-				INNER JOIN "element_services" ie ON ie."id" = ctg."service_id"
-				INNER JOIN "Components" cm ON ctg."id" = cm."category_id" AND cm."is_deleted" = 0
+			"component_categories" ct
+				INNER JOIN "element_services" sr ON sr."id" = ct."service_id"
+				INNER JOIN "Components" cm ON ct."id" = cm."category_id" AND cm."is_deleted" = 0
 		WHERE
-			ie."id" = 'TestProcessService' AND "component_categories"."id" = ctg."id"
+			sr."id" = 'TestProcessService' AND "component_categories"."id" = ct."id"
 	)
 
 BeforeExecute
