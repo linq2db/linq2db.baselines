@@ -1,12 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @default Integer -- Int32
-SET     @default = 0
+DECLARE @p Integer -- Int32
+SET     @p = 0
 
 SELECT
-	p."Value1"
+	CASE
+		WHEN p."Value1" IS NULL THEN :p
+		ELSE p."Value1"
+	END
 FROM
 	"Parent" p
 WHERE
-	Coalesce(p."Value1", :default) > 0
+	p."Value1" > 0 AND p."Value1" IS NOT NULL
 
