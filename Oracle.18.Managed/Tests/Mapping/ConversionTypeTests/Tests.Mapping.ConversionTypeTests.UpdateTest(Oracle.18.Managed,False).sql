@@ -47,37 +47,33 @@ DECLARE @ID Int32
 SET     @ID = 3
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t1
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = :Data
 WHERE
-	"TrimTestTable".ID = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = '***OOO***'
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	t."Data" = '***XXX***'
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p Varchar2(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = '***SSS***'
 WHERE
-	"TrimTestTable"."Data" = :p
+	t."Data" = :p
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -297,24 +297,22 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value3" = 1
+	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
 			"UpdatedEntities" v
-				LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
+				LEFT JOIN "UpdateRelation" a_Relation ON (v."RelationId" = a_Relation."id" OR v."RelationId" IS NULL AND a_Relation."id" IS NULL)
 		WHERE
 			a_Relation."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v."id"
 	)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	v."Value1",
@@ -322,10 +320,10 @@ SELECT
 	v."Value3"
 FROM
 	"UpdatedEntities" v
-		LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
+		LEFT JOIN "UpdateRelation" a_Relation ON (v."RelationId" = a_Relation."id" OR v."RelationId" IS NULL AND a_Relation."id" IS NULL)
 WHERE
 	a_Relation."RelatedValue1" = 11
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

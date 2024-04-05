@@ -507,16 +507,12 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData",
 	x."OrderData2"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData",
-	x."OrderData2"
 ORDER BY
-	Min(x."OrderData1"),
 	x."OrderData2" DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
