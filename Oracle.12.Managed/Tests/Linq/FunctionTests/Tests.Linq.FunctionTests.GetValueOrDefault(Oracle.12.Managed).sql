@@ -1,12 +1,20 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @default_1 Int32
-SET     @default_1 = 0
+DECLARE @p Int32
+SET     @p = 0
+DECLARE @p_1 Int32
+SET     @p_1 = 0
 
 SELECT
-	p."Value1"
+	CASE
+		WHEN p."Value1" IS NULL THEN :p
+		ELSE p."Value1"
+	END
 FROM
 	"Parent" p
 WHERE
-	Nvl(p."Value1", :default_1) > 0
+	CASE
+		WHEN p."Value1" IS NULL THEN :p_1
+		ELSE p."Value1"
+	END > 0
 
