@@ -18,20 +18,28 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @default Datetime -- DateTime
-SET     @default = '0001-01-01'
+DECLARE @p Datetime -- DateTime
+SET     @p = '0001-01-01'
 DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
+DECLARE @p_1 Datetime -- DateTime
+SET     @p_1 = '0001-01-01'
 
 SELECT
 	`t1`.`Year_1`,
 	`t1`.`Month_1`,
-	Sum(`t1`.`SKUPAJ`)
+	SUM(`t1`.`SKUPAJ`)
 FROM
 	(
 		SELECT
-			Extract(year from Coalesce(`n`.`DATUM`, @default)) as `Year_1`,
-			Extract(month from Coalesce(`n`.`DATUM`, @default)) as `Month_1`,
+			Extract(year from CASE
+				WHEN `n`.`DATUM` IS NULL THEN @p
+				ELSE `n`.`DATUM`
+			END) as `Year_1`,
+			Extract(month from CASE
+				WHEN `n`.`DATUM` IS NULL THEN @p
+				ELSE `n`.`DATUM`
+			END) as `Month_1`,
 			`n`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n`
@@ -45,12 +53,18 @@ UNION ALL
 SELECT
 	`t2`.`Year_1`,
 	`t2`.`Month_1`,
-	Sum(`t2`.`SKUPAJ`)
+	SUM(`t2`.`SKUPAJ`)
 FROM
 	(
 		SELECT
-			Extract(year from Coalesce(`n_1`.`DATUM`, @default)) as `Year_1`,
-			Extract(month from Coalesce(`n_1`.`DATUM`, @default)) as `Month_1`,
+			Extract(year from CASE
+				WHEN `n_1`.`DATUM` IS NULL THEN @p_1
+				ELSE `n_1`.`DATUM`
+			END) as `Year_1`,
+			Extract(month from CASE
+				WHEN `n_1`.`DATUM` IS NULL THEN @p_1
+				ELSE `n_1`.`DATUM`
+			END) as `Month_1`,
 			`n_1`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n_1`
