@@ -35,9 +35,9 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" t1
 SET
-	"TestTable"."Fd" = 1
+	"Fd" = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
