@@ -30,7 +30,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR)
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	"t"."Value" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -98,8 +98,6 @@ SELECT
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
-WHERE
-	"t"."Value" IS NOT NULL
 
 BeforeExecute
 -- Firebird4 Firebird

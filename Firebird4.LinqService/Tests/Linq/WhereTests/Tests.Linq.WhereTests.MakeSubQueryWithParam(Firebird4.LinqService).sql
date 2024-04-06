@@ -4,10 +4,10 @@ DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT
-	"p"."PersonID" + Cast(@n as Int),
+	"p"."PersonID",
 	"p"."FirstName"
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" + Cast(@n as Int) = 2
+	"p"."PersonID" + CAST(@n AS Int) = 2
 

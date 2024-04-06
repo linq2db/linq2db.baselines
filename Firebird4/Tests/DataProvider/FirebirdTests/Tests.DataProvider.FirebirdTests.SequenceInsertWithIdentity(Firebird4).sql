@@ -21,17 +21,15 @@ INSERT INTO "SequenceTest"
 VALUES
 (
 	GEN_ID("SequenceTestSeq", 1),
-	@Value
+	CAST(@Value AS VARCHAR(8))
 )
 RETURNING
 	ID
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1".ID,
 	"t1"."Value_"
 FROM

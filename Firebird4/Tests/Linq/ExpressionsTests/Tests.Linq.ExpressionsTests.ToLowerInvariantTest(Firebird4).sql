@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	Lower("p"."Taxonomy")
+	"p"."Taxonomy"
 FROM
 	"Doctor" "p"
 WHERE

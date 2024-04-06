@@ -1,22 +1,16 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"l"."ParentID"
-FROM
-	"Child" "l"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird4 Firebird
 
 SELECT
-	1
+	"t1"."Id_1",
+	"t1"."Id"
 FROM
 	"Parent" "sep"
+		LEFT JOIN (
+			SELECT FIRST 1
+				"l"."ParentID" + 1 as "Id",
+				"l"."ParentID" + 1 as "Id_1"
+			FROM
+				"Child" "l"
+		) "t1" ON 1=1
 

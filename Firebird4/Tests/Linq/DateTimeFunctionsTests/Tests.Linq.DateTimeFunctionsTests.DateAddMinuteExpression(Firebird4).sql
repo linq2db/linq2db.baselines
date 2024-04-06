@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 5
 
 SELECT
-	DateAdd(Minute, Cast(@p as Int), "t"."DateTimeValue")
+	Extract(minute from DateAdd(Minute, CAST(@p AS Int), "t"."DateTimeValue"))
 FROM
 	"LinqDataTypes" "t"
 

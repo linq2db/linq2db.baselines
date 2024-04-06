@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@Int32
+	CAST(@Id AS Int),
+	CAST(@Int32 AS Int)
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@Int32
+	CAST(@Id AS Int),
+	CAST(@Int32 AS Int)
 )
 
 BeforeExecute

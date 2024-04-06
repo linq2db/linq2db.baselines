@@ -1,28 +1,17 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT
-	(
-		SELECT FIRST @take
-			"p"."ParentID"
-		FROM
-			"Child" "p"
-		WHERE
-			"p_1"."ParentID" = "p"."ParentID"
-	)
+	"t1"."ParentID"
 FROM
-	"Parent" "p_1"
+	"Parent" "p"
+		LEFT JOIN (
+			SELECT
+				"a_Children"."ParentID",
+				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentID" ORDER BY "a_Children"."ParentID") as "rn"
+			FROM
+				"Child" "a_Children"
+		) "t1" ON "p"."ParentID" = "t1"."ParentID" AND "t1"."rn" <= 1
 WHERE
-	(
-		SELECT FIRST @take_1
-			1
-		FROM
-			"Child" "t1"
-		WHERE
-			"p_1"."ParentID" = "t1"."ParentID"
-	) IS NOT NULL
+	"t1"."ParentID" IS NOT NULL
 
