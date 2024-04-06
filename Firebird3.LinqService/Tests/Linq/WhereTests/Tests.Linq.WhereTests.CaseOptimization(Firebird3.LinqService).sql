@@ -36,8 +36,8 @@ INSERT INTO "WhereWithString"
 )
 VALUES
 (
-	@Id,
-	@StringValue
+	CAST(@Id AS Int),
+	CAST(@StringValue AS VARCHAR(4))
 )
 
 BeforeExecute

@@ -61,47 +61,32 @@ INSERT INTO "Topic"
 )
 VALUES
 (
-	@Id,
-	@Title,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Title AS VARCHAR(5)),
+	CAST(@Text AS VARCHAR(4))
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	"key_data_result"."Id",
-	"key_data_result"."Title",
-	"key_data_result"."Text",
-	"detail"."Id"
+	"m_1"."Id",
+	"d"."Id"
 FROM
 	(
-		SELECT DISTINCT
-			"t1"."Id",
-			"t1"."Title",
-			"t1"."Text"
+		SELECT FIRST 1
+			"x"."Id"
 		FROM
-			(
-				SELECT FIRST @take
-					"x"."Id",
-					"x"."Title",
-					"x"."Text"
-				FROM
-					"Topic" "x"
-				WHERE
-					"x"."Id" = 6
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Message" "detail" ON "key_data_result"."Id" = "detail"."TopicId"
+			"Topic" "x"
+		WHERE
+			"x"."Id" = 6
+	) "m_1"
+		INNER JOIN "Message" "d" ON "m_1"."Id" = "d"."TopicId"
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x"."Id",
 	"x"."Title",
 	"x"."Text"

@@ -85,9 +85,9 @@ INSERT INTO "GuidTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@ColumnNullable AS CHAR(16) CHARACTER SET OCTETS)
 )
 
 BeforeExecute
@@ -107,9 +107,9 @@ INSERT INTO "GuidTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@ColumnNullable AS CHAR(16) CHARACTER SET OCTETS)
 )
 
 BeforeExecute

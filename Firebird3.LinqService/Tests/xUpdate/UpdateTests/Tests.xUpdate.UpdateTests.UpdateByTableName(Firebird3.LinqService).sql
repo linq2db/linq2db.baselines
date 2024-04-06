@@ -58,10 +58,10 @@ INSERT INTO "xxPerson_f3l_32"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(6)),
+	CAST(@LastName AS VARCHAR(4)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -74,10 +74,8 @@ FROM
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",
@@ -100,21 +98,19 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson_f3l_32"
+	"xxPerson_f3l_32" "t1"
 SET
-	"xxPerson_f3l_32"."FirstName" = @FirstName,
-	"xxPerson_f3l_32"."LastName" = @LastName,
-	"xxPerson_f3l_32"."MiddleName" = @MiddleName,
-	"xxPerson_f3l_32"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(6)),
+	"LastName" = CAST(@LastName AS VARCHAR(4)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(4)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"xxPerson_f3l_32"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",

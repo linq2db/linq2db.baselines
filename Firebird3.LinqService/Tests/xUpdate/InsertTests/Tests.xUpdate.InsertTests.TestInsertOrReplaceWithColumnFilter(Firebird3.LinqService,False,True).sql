@@ -34,15 +34,15 @@ DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
-USING (SELECT Cast(@ID as Int) AS ID FROM rdb$database) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."FirstName" = @FirstName,
-		"t1"."LastName" = @LastName
+		"FirstName" = CAST(@FirstName AS VARCHAR(27)),
+		"LastName" = CAST(@LastName AS VARCHAR(8))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -52,19 +52,17 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
-		@FirstName,
-		@LastName
+		CAST(@ID AS Int),
+		CAST(@FirstName AS VARCHAR(27)),
+		CAST(@LastName AS VARCHAR(8))
 	)
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x".ID,
 	"x"."FirstName",
 	"x"."LastName",
@@ -86,16 +84,16 @@ DECLARE @MiddleName VarChar(12) -- String
 SET     @MiddleName = 'updated name'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
-USING (SELECT Cast(@ID as Int) AS ID FROM rdb$database) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."FirstName" = @FirstName,
-		"t1"."LastName" = @LastName,
-		"t1"."MiddleName" = @MiddleName
+		"FirstName" = CAST(@FirstName AS VARCHAR(27)),
+		"LastName" = CAST(@LastName AS VARCHAR(8)),
+		"MiddleName" = CAST(@MiddleName AS VARCHAR(12))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -106,20 +104,18 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
-		@FirstName,
-		@LastName,
-		@MiddleName
+		CAST(@ID AS Int),
+		CAST(@FirstName AS VARCHAR(27)),
+		CAST(@LastName AS VARCHAR(8)),
+		CAST(@MiddleName AS VARCHAR(12))
 	)
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x".ID,
 	"x"."FirstName",
 	"x"."LastName",
