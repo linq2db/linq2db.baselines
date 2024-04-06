@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."FirstName" COLLATE "POSIX"
+	'1' || t1."FirstName" COLLATE "POSIX" || '2'
 FROM
 	"Person" t1
 
