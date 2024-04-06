@@ -22,7 +22,8 @@ FROM
 					*
 				FROM
 					ReplacingMergeTreeTable t1
-			) c_1 FINAL
+			) c_1
 	) t2
+SETTINGS max_threads=1
 SETTINGS convert_query_to_cnf=false
 
