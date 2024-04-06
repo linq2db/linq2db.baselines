@@ -42,14 +42,24 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 0
+DECLARE @p_1 Int32
+SET     @p_1 = 0
 
 SELECT
 	r."Id",
 	r."Decimal1",
-	r."Decimal2",
-	Nvl(r."Decimal3", 0.1),
-	r."Int1",
-	Nvl(r."Int2", 22)
+	CASE
+		WHEN r."Decimal2" IS NULL THEN :p
+		ELSE r."Decimal2"
+	END,
+	r."Decimal3",
+	CASE
+		WHEN r."Int1" IS NULL THEN :p_1
+		ELSE r."Int1"
+	END,
+	r."Int2"
 FROM
 	"Issue2032Table" r
 ORDER BY
