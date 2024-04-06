@@ -2,21 +2,35 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."IsActive",
-	t1."Other"
+	it_1."IsActive",
+	it_1."Other"
 FROM
 	(
 		SELECT
 			True as "IsActive",
 			CASE
-				WHEN it."SmallIntValue" <> 0
-					THEN True
+				WHEN it."SmallIntValue" <> 0 THEN True
 				ELSE False
 			END as "Other"
 		FROM
 			"LinqDataTypes" it
-	) t1
+	) it_1
 GROUP BY
-	t1."IsActive",
-	t1."Other"
+	it_1."IsActive",
+	it_1."Other"
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."ID",
+	t1."MoneyValue",
+	t1."DateTimeValue",
+	t1."BoolValue",
+	t1."GuidValue",
+	t1."BinaryValue",
+	t1."SmallIntValue",
+	t1."StringValue"
+FROM
+	"LinqDataTypes" t1
 

@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(quarter from t."DateTimeValue")) as int)
+	Floor(Extract(quarter From t."DateTimeValue"))::Int
 FROM
 	"LinqDataTypes" t
 

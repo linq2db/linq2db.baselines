@@ -223,14 +223,14 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT CAST(NULL AS Int)
+	SELECT NULL::Int
 	FROM "TestMerge1"	WHERE 1 = 0
 )
  "Source"
 (
-	"ID"
+	"source_ID"
 )
-ON ("Target"."Id" = "Source"."ID")
+ON ("Target"."Id" = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -239,7 +239,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."ID"
+	"Source"."source_ID"
 )
 
 BeforeExecute
