@@ -30,22 +30,20 @@ IF (OBJECT_ID(N'[CustomerApplication]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[i].[DocumentNo],
-	[a_CustomerApplication].[Id]
+	[t1].[Id]
 FROM
 	[PropertyHistory] [i]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[a].[Id]
+			SELECT TOP (1)
+				[a_CustomerApplication].[Id]
 			FROM
-				[CustomerApplication] [a]
+				[CustomerApplication] [a_CustomerApplication]
 			WHERE
-				[a].[Id] = Convert(Int, [i].[DocumentNo])
-		) [a_CustomerApplication]
+				[a_CustomerApplication].[Id] = CAST([i].[DocumentNo] AS Int)
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2016
