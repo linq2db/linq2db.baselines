@@ -2,25 +2,25 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'%test%'
 
 SELECT
-	[p].[PersonID],
-	[_gjd_ri].[PersonID],
-	[_gjd_ri].[Diagnosis]
+	[m_1].[PersonID],
+	[d].[PersonID],
+	[d].[Diagnosis]
 FROM
-	[Person] [p]
-		INNER JOIN [Patient] [_gjd_ri] ON [_gjd_ri].[PersonID] = [p].[PersonID]
+	[Person] [m_1]
+		INNER JOIN [Patient] [d] ON [m_1].[PersonID] = [d].[PersonID]
 WHERE
-	Lower([p].[FirstName]) LIKE @input ESCAPE N'~'
+	Lower([m_1].[FirstName]) LIKE @p ESCAPE N'~'
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'%test%'
 
 SELECT
 	[p].[FirstName],
@@ -28,5 +28,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) LIKE @input ESCAPE N'~'
+	Lower([p].[FirstName]) LIKE @p ESCAPE N'~'
 
