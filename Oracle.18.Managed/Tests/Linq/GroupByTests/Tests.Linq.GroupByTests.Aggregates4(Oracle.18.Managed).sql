@@ -2,24 +2,16 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Child" t1
-		WHERE
-			t2."ParentID" = t1."ParentID" AND t1."ChildID" > 30
-	),
-	(
-		SELECT
-			Sum(c_1."ChildID")
-		FROM
-			"Child" c_1
-		WHERE
-			t2."ParentID" = c_1."ParentID" AND c_1."ChildID" > 30
-	)
+	COUNT(CASE
+		WHEN g_1."ChildID" > 30 THEN 1
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN g_1."ChildID" > 30 THEN g_1."ChildID"
+		ELSE NULL
+	END)
 FROM
-	"Child" t2
+	"Child" g_1
 GROUP BY
-	t2."ParentID"
+	g_1."ParentID"
 
