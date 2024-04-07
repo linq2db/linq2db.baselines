@@ -1,33 +1,18 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @n  -- Int32
-SET     @n = -1
-DECLARE @n  -- Int32
-SET     @n = -1
+SET     @n = 1
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Child" "ch"
-		WHERE
-			"ch"."ParentID" < 2 AND
-			"t1"."ParentID" = "ch"."ParentID" + 1 AND
-			"t1"."ChildID" = "ch"."ChildID" AND
-			"ch"."ParentID" > ?
-	)
+	COUNT(CASE
+		WHEN "g_1"."ParentID" + 1 < 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	(
-		SELECT
-			"ch_1"."ParentID" + 1 as "ParentID",
-			"ch_1"."ChildID"
-		FROM
-			"Child" "ch_1"
-		WHERE
-			"ch_1"."ParentID" > ?
-	) "t1"
+	"Child" "g_1"
+WHERE
+	"g_1"."ParentID" + 2 > ?
 GROUP BY
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"g_1"."ParentID" + 1,
+	"g_1"."ChildID"
 

@@ -2,14 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	"t_1"."c1"
 FROM
 	(
 		SELECT
-			Cast(Cast(Floor("p"."MoneyValue") as Integer) as Double) * 57.295779513082323 as "c1"
+			CAST(CAST("t"."MoneyValue" AS Integer) AS Double) * 57.295779513082323 as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "t"
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	Cast("t"."c1" as Double) <> 0.10000000000000001
+	CAST("t_1"."c1" AS Double) <> 0.10000000000000001
 

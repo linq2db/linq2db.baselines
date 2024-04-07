@@ -44,8 +44,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -56,7 +54,7 @@ FROM
 	"PR_1598_Insert_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -82,8 +80,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -94,7 +90,7 @@ FROM
 	"PR_1598_Insert_Enum_Table" "t"
 WHERE
 	"t"."Id" = 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

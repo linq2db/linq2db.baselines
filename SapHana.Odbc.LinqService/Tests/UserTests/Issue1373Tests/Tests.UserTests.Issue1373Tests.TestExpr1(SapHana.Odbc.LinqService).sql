@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Field1 NVarChar -- String
-SET     @Field1 = NULL
+SET     @Field1 = ''
 
 INSERT INTO "Issue1373Tests"
 (
