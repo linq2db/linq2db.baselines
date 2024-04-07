@@ -71,7 +71,7 @@ SELECT
 FROM
 	`NullableBoolClass` `t`
 WHERE
-	`t`.`Value` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -90,8 +90,6 @@ SELECT
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
-WHERE
-	`t`.`Value` IS NOT NULL
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
