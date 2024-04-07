@@ -2,9 +2,9 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(p."PersonID")
+	MAX(t1."PersonID")
 FROM
-	"Person" p
+	"Person" t1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -34,26 +34,24 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	p."PersonID",
-	p."Gender",
+	p."PersonID" as ID,
 	p."FirstName",
 	p."MiddleName",
-	p."LastName"
+	p."LastName",
+	p."Gender"
 FROM
 	"Person" p
 WHERE
 	p."PersonID" > 4
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Person" t1
+	"Person" t
 WHERE
-	t1."PersonID" > 4
+	t."PersonID" > 4
 
