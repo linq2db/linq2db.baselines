@@ -2,14 +2,14 @@
 -- Firebird3 Firebird
 
 SELECT
-	"t"."c1"
+	"t_1"."c1"
 FROM
 	(
 		SELECT
-			Floor(("p"."MoneyValue" * 180) / PI()) as "c1"
+			Floor(("t"."MoneyValue" * 180) / PI()) as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "t"
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	"t"."c1" <> 0.1
+	"t_1"."c1" <> 0.1
 

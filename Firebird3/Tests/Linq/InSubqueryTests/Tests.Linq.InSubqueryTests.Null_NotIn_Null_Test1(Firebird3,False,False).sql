@@ -70,6 +70,23 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
+	"t".ID
+FROM
+	"test_in_1" "t"
+WHERE
+	"t".ID IS NOT NULL AND NOT EXISTS(
+		SELECT
+			*
+		FROM
+			"test_in_2" "p"
+		WHERE
+			"p".ID IS NOT NULL AND "t".ID = "p".ID
+	)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
 	"t1".ID
 FROM
 	"test_in_1" "t1"
@@ -78,18 +95,9 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t".ID
+	"t1".ID
 FROM
-	"test_in_1" "t"
-WHERE
-	NOT EXISTS(
-		SELECT
-			*
-		FROM
-			"test_in_2" "p"
-		WHERE
-			"p".ID = "t".ID
-	)
+	"test_in_2" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird

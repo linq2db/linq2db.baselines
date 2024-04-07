@@ -67,21 +67,19 @@ DECLARE @EnumWithNullDeclarative VarChar -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "e"
 SET
-	"ValueConversion"."Value1" = "ValueConversion"."Value1",
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative
+	"Value1" = "e"."Value1",
+	"Value2" = CAST(@Value2 AS VARCHAR(21)),
+	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	"EnumWithNullDeclarative" = CAST(@EnumWithNullDeclarative AS VarChar(50) CHARACTER SET UNICODE_FSS)
 WHERE
-	"ValueConversion"."Id" = 1
+	"e"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -121,26 +119,24 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = @Value1,
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."Enum" = @Enum,
-	"ValueConversion"."EnumNullable" = @EnumNullable,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = @BoolValue,
-	"ValueConversion"."AnotherBoolValue" = @AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = @DateTimeNullable
+	"Value1" = CAST(@Value1 AS VARCHAR(20)),
+	"Value2" = CAST(@Value2 AS VARCHAR(22)),
+	"Enum" = CAST(@Enum AS VARCHAR(6)),
+	"EnumNullable" = CAST(@EnumNullable AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(6) CHARACTER SET UNICODE_FSS),
+	"EnumWithNullDeclarative" = CAST(@EnumWithNullDeclarative AS VarChar(6) CHARACTER SET UNICODE_FSS),
+	"BoolValue" = CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	"AnotherBoolValue" = CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	"DateTimeNullable" = CAST(@DateTimeNullable AS TimeStamp)
 WHERE
-	"ValueConversion"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -180,26 +176,24 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 3
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = @Value1,
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."Enum" = @Enum,
-	"ValueConversion"."EnumNullable" = @EnumNullable,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = @BoolValue,
-	"ValueConversion"."AnotherBoolValue" = @AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = @DateTimeNullable
+	"Value1" = CAST(@Value1 AS VARCHAR(8191)),
+	"Value2" = CAST(@Value2 AS VARCHAR(8191)),
+	"Enum" = CAST(@Enum AS VARCHAR(6)),
+	"EnumNullable" = CAST(@EnumNullable AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	"EnumWithNullDeclarative" = CAST(@EnumWithNullDeclarative AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	"BoolValue" = CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	"AnotherBoolValue" = CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	"DateTimeNullable" = CAST(@DateTimeNullable AS TimeStamp)
 WHERE
-	"ValueConversion"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",

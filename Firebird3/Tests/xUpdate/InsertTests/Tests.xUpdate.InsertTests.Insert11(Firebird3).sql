@@ -2,9 +2,9 @@
 -- Firebird3 Firebird
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -28,20 +28,18 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@Name_FirstName AS VARCHAR(2)),
+	CAST(@Name_MiddleName AS VARCHAR(8191)),
+	CAST(@Name_LastName AS VARCHAR(2))
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 4
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p2"."PersonID",
 	"p2"."Gender",
 	"p2"."FirstName",
