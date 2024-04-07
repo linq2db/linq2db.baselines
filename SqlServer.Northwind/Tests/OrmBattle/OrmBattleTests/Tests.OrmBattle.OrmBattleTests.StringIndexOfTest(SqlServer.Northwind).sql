@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,17 +75,16 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'tt'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],
 	[c_1].[ContactName],
@@ -99,5 +99,5 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	CharIndex(N'tt', [c_1].[City]) - 1 = 3
+	CharIndex(@p, [c_1].[City]) - 1 = 3
 
