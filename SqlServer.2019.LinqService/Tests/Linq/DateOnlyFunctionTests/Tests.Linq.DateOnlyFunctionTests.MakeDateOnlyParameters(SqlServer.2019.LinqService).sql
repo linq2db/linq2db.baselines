@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'2010-'
+DECLARE @year Int -- Int32
+SET     @year = 2010
 
 SELECT
-	[t].[c1]
+	DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)
 FROM
-	(
-		SELECT
-			Convert(Date, @p + format([p].[ID], 'd2') + N'-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)) = 2010
 
