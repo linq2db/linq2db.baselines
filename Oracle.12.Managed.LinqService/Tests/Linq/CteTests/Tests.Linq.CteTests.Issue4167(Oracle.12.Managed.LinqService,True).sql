@@ -121,28 +121,29 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @default_1 Int32
-SET     @default_1 = 0
 
 WITH CTE_1 ("EnumValue")
 AS
 (
 	SELECT
-		Nvl(t."EnumValue", :default_1)
+		CASE
+			WHEN g_1."EnumValue" IS NOT NULL THEN g_1."EnumValue"
+			ELSE 0
+		END
 	FROM
-		"Issue4167Table" t
+		"Issue4167Table" g_1
 	WHERE
-		t."Value" = '000001'
+		g_1."Value" = '000001'
 	GROUP BY
-		t."Value",
-		t."EnumValue"
+		g_1."Value",
+		g_1."EnumValue"
 )
 SELECT
-	r."EnumValue"
+	t1."EnumValue"
 FROM
-	CTE_1 r
+	CTE_1 t1
 ORDER BY
-	r."EnumValue"
+	t1."EnumValue"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
