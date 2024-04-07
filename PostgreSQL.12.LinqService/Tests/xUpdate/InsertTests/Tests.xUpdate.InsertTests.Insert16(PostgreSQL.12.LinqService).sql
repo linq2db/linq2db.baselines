@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @idx Integer -- Int32
-SET     @idx = 12
 
 INSERT INTO "Person"
 (
@@ -20,7 +18,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast(:idx as text),
+	12::text,
 	'M'
 )
 
