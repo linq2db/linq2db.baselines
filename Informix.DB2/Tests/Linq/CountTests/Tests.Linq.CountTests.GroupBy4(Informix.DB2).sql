@@ -1,8 +1,0 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	Count(*)
-FROM
-	Child t1
-
