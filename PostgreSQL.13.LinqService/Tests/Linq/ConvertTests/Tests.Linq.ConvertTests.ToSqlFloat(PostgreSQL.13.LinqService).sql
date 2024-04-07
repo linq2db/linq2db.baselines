@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as Float)
+	t."MoneyValue"::Float
 FROM
 	"LinqDataTypes" t
 

@@ -2,18 +2,13 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Child" ch
-		WHERE
-			t1."ParentID" = ch."ParentID" AND t1."ChildID" = ch."ChildID" AND
-			ch."ChildID" > 20
-	)
+	COUNT(CASE
+		WHEN g_1."ChildID" > 20 THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID",
-	t1."ChildID"
+	g_1."ParentID",
+	g_1."ChildID"
 
