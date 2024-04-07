@@ -487,19 +487,19 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[c1],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DateAdd(hour, -1, [selectParam].[TransactionDate]) as [Key_1]
+			DateAdd(hour, -1, [x].[TransactionDate]) as [c1]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[c1]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[c1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

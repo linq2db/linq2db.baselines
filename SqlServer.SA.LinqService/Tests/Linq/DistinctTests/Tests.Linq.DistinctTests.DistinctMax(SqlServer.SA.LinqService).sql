@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Max([t1].[ParentID])
+	MAX([t1].[ParentID])
 FROM
 	(
 		SELECT DISTINCT

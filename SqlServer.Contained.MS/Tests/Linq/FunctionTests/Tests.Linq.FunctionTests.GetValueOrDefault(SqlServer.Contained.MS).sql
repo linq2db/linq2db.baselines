@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 SELECT
-	[p].[Value1]
+	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 0)
 FROM
 	[Parent] [p]
 WHERE
-	Coalesce([p].[Value1], @default) > 0
+	[p].[Value1] > 0 AND [p].[Value1] IS NOT NULL
 

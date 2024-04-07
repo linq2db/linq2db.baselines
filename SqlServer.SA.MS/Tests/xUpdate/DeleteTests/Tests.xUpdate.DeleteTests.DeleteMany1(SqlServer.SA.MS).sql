@@ -41,28 +41,28 @@ VALUES
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DELETE [c_1]
+DELETE [a_Children]
 FROM
 	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
 WHERE
 	[p].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
