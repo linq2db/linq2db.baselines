@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	Cast("t"."MoneyValue" as Char(20))
+	CAST("t"."MoneyValue" AS Char(20))
 FROM
 	"LinqDataTypes" "t"
 

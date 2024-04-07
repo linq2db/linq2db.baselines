@@ -27,10 +27,10 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@Name_FirstName AS VARCHAR(13)),
+	CAST(@Name_MiddleName AS VARCHAR(8191)),
+	CAST(@Name_LastName AS VARCHAR(5))
 )
 RETURNING
 	"PersonID"

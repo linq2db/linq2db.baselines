@@ -44,10 +44,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(3)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(3)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(5)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -113,8 +113,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1"
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -141,8 +139,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -169,9 +165,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2"
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -199,9 +192,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -229,9 +219,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC,
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -259,9 +246,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird4 Firebird

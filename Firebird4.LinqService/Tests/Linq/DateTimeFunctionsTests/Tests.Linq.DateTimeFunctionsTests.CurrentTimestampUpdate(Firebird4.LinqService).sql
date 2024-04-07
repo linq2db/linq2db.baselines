@@ -2,10 +2,10 @@
 -- Firebird4 Firebird
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "p"
 SET
-	"LinqDataTypes"."BoolValue" = 1,
-	"LinqDataTypes"."DateTimeValue" = LOCALTIMESTAMP
+	"BoolValue" = 1,
+	"DateTimeValue" = LOCALTIMESTAMP
 WHERE
-	"LinqDataTypes".ID = 100000
+	"p".ID = 100000
 

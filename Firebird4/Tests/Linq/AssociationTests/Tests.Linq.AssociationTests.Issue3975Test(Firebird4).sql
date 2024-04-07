@@ -2,33 +2,24 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	"lw_Issue3975TestClass"."ParentID",
-	"detail"."ParentID",
-	"detail"."ChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
 FROM
 	(
-		SELECT DISTINCT
-			"t2"."ParentID"
+		SELECT FIRST 1
+			"t1"."ParentID"
 		FROM
-			(
-				SELECT FIRST @take
-					"t1"."ParentID"
-				FROM
-					"Parent" "t1"
-			) "t2"
-	) "lw_Issue3975TestClass"
-		INNER JOIN "Child" "detail" ON "lw_Issue3975TestClass"."ParentID" = "detail"."ParentID"
+			"Parent" "t1"
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."ParentID"
 FROM
 	"Parent" "t1"

@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	Cast("t"."MoneyValue" as Float)
+	CAST("t"."MoneyValue" AS Float)
 FROM
 	"LinqDataTypes" "t"
 

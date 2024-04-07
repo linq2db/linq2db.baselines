@@ -88,36 +88,34 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	"Value1" = (
 		SELECT
-			"a_Relation"."RelatedValue3"
+			"a_Relation_1"."RelatedValue3"
 		FROM
-			"UpdatedEntities" "v"
-				LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
+			"UpdatedEntities" "v_1"
+				LEFT JOIN "UpdateRelation" "a_Relation_1" ON ("v_1"."RelationId" = "a_Relation_1"."id" OR "v_1"."RelationId" IS NULL AND "a_Relation_1"."id" IS NULL)
 		WHERE
-			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
+			"a_Relation_1"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v_1"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" "v_1"
-				LEFT JOIN "UpdateRelation" "a_Relation_1" ON "v_1"."RelationId" = "a_Relation_1"."id"
+			"UpdatedEntities" "v"
+				LEFT JOIN "UpdateRelation" "a_Relation" ON ("v"."RelationId" = "a_Relation"."id" OR "v"."RelationId" IS NULL AND "a_Relation"."id" IS NULL)
 		WHERE
-			"a_Relation_1"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v_1"."id"
+			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
 	)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"v"."Value1"
 FROM
 	"UpdatedEntities" "v"
-		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
+		LEFT JOIN "UpdateRelation" "a_Relation" ON ("v"."RelationId" = "a_Relation"."id" OR "v"."RelationId" IS NULL AND "a_Relation"."id" IS NULL)
 WHERE
 	"a_Relation"."RelatedValue1" = 11
 
