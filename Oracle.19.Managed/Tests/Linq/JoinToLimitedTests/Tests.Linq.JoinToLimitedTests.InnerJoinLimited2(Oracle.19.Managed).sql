@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
 	o."Value1",
-	t1."ParentID",
-	t1."ChildID"
+	c_2."ParentID",
+	c_2."ChildID"
 FROM
 	"Parent" o
 		CROSS APPLY (
 			SELECT
-				cg."ParentID",
-				cg."ChildID"
+				c_1."ParentID",
+				c_1."ChildID"
 			FROM
-				"Child" cg
+				"Child" c_1
 			WHERE
-				o."ParentID" = cg."ParentID"
-			FETCH NEXT :take ROWS ONLY
-		) t1
+				o."ParentID" = c_1."ParentID"
+			ORDER BY
+				c_1."ChildID" DESC
+			FETCH NEXT 1 ROWS ONLY
+		) c_2
 
