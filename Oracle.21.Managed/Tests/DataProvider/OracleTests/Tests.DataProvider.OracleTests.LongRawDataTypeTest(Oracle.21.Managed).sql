@@ -1,0 +1,60 @@
+﻿BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+DELETE FROM
+	"LongRawTable" t
+WHERE
+	t.ID > 2
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+SELECT
+	t."longRawDataType"
+FROM
+	"LongRawTable" t
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @bytes1 LongRaw(10000) -- Binary
+SET     @bytes1 = HEXTORAW('41414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141')
+-- value above truncated for logging
+
+INSERT INTO "LongRawTable"
+(
+	ID,
+	"longRawDataType"
+)
+VALUES
+(
+	3,
+	:bytes1
+)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @bytes2 LongRaw(10000) -- Binary
+SET     @bytes2 = HEXTORAW('42424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242')
+-- value above truncated for logging
+
+INSERT INTO "LongRawTable"
+(
+	ID,
+	"longRawDataType"
+)
+VALUES
+(
+	4,
+	:bytes2
+)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+SELECT
+	t."longRawDataType"
+FROM
+	"LongRawTable" t
+WHERE
+	t.ID IN (3, 4)
+
