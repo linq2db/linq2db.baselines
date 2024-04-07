@@ -1,0 +1,30 @@
+﻿BeforeExecute
+BeginTransactionAsync
+BeforeExecute
+-- Access.Odbc AccessODBC (asynchronously)
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1010
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1010
+
+INSERT INTO [Parent]
+(
+	[ParentID],
+	[Value1]
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+CommitTransactionAsync
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DELETE FROM
+	[Parent] [_]
+WHERE
+	[_].[ParentID] = 1010
+
