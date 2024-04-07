@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
 	t1."ChildID"
 FROM
-	"Parent" p
+	"Parent" t2
 		LEFT JOIN LATERAL (
 			SELECT
 				c_1."ParentID",
@@ -15,9 +13,9 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				c_1."ParentID" = p."ParentID"
+				t2."ParentID" = c_1."ParentID"
 			ORDER BY
 				c_1."ChildID"
-			LIMIT :take
+			LIMIT 1
 		) t1 ON 1=1
 

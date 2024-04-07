@@ -2,9 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"GrandChild" t1
+	"GrandChild" gc
 WHERE
-	t1."GrandChildID" IN (1001, 1002)
+	gc."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
