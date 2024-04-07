@@ -2,16 +2,9 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	(
-		SELECT
-			Max([id].[ChildID])
-		FROM
-			[Child] [id]
-		WHERE
-			[t1].[ParentID] = [id].[ParentID] AND [id].[ChildID] > 0
-	)
+	MAX(IIF([g_1].[ChildID] > 0, [g_1].[ChildID], NULL))
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 
