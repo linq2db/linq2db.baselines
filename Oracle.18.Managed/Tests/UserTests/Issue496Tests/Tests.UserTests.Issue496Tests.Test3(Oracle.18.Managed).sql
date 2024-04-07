@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	c_1."ChildID",
+	c_1."ParentID"
+FROM
+	"Parent" cp
+		INNER JOIN "Child" c_1 ON Cast(cp."ParentID" as Number(19)) = c_1."ParentID"
+WHERE
+	cp."ParentID" = 1
+
