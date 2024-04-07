@@ -18,20 +18,24 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @default Datetime -- DateTime
-SET     @default = '0001-01-01'
 DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	`t1`.`Key_1`,
-	`t1`.`Key_2`,
-	Sum(`t1`.`SKUPAJ`)
+	`t1`.`Year_1`,
+	`t1`.`Month_1`,
+	SUM(`t1`.`SKUPAJ`)
 FROM
 	(
 		SELECT
-			Extract(year from Coalesce(`n`.`DATUM`, @default)) as `Key_1`,
-			Extract(month from Coalesce(`n`.`DATUM`, @default)) as `Key_2`,
+			Extract(year from CASE
+				WHEN `n`.`DATUM` IS NOT NULL THEN `n`.`DATUM`
+				ELSE '0001-01-01'
+			END) as `Year_1`,
+			Extract(month from CASE
+				WHEN `n`.`DATUM` IS NOT NULL THEN `n`.`DATUM`
+				ELSE '0001-01-01'
+			END) as `Month_1`,
 			`n`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n`
@@ -39,8 +43,8 @@ FROM
 			`n`.`DATUM` < @DATUM
 	) `t1`
 GROUP BY
-	`t1`.`Key_1`,
-	`t1`.`Key_2`
+	`t1`.`Year_1`,
+	`t1`.`Month_1`
 
 BeforeExecute
 -- MySqlConnector MySql

@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Cast(`t`.`MoneyValue` as Char)
+	CAST(`t`.`MoneyValue` AS CHAR(31))
 FROM
 	`LinqDataTypes` `t`
 
