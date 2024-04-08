@@ -286,11 +286,9 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 1
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Day'
+	Date_Trunc('day', (t."TransactionDate" + Interval '1 Day') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 
