@@ -43,31 +43,31 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t1
 SET
-	"TrimTestTable"."Data" = '***III***'
+	"Data" = '***III***'
 WHERE
-	"TrimTestTable".ID = 3
+	t1.ID = 3
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = '***OOO***'
+	"Data" = '***OOO***'
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	t."Data" = '***XXX***'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = '***SSS***'
+	"Data" = '***SSS***'
 WHERE
-	"TrimTestTable"."Data" = '***HHH***'
+	t."Data" = '***HHH***'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
