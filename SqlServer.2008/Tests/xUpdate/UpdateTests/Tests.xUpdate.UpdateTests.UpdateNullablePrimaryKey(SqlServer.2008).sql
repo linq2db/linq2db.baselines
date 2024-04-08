@@ -6,13 +6,11 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 10000
 
 UPDATE
-	[t1]
+	[GrandChild]
 SET
-	[t1].[GrandChildID] = @GrandChildID
-FROM
-	[GrandChild] [t1]
+	[GrandChildID] = @GrandChildID
 WHERE
-	[t1].[ParentID] = @ParentID AND [t1].[ChildID] IS NULL
+	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
 BeforeExecute
 -- SqlServer.2008
@@ -24,11 +22,9 @@ DECLARE @ChildID Int -- Int32
 SET     @ChildID = 111
 
 UPDATE
-	[t1]
+	[GrandChild]
 SET
-	[t1].[GrandChildID] = @GrandChildID
-FROM
-	[GrandChild] [t1]
+	[GrandChildID] = @GrandChildID
 WHERE
-	[t1].[ParentID] = @ParentID AND [t1].[ChildID] = @ChildID
+	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] = @ChildID
 

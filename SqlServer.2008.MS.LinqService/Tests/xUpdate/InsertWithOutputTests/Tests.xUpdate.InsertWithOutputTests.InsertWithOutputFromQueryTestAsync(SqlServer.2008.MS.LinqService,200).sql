@@ -254,11 +254,17 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @Id Int -- Int32
+SET     @Id = 200
+DECLARE @Value Int -- Int32
+SET     @Value = 200
+DECLARE @p Int -- Int32
+SET     @p = 200
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @Id,
+	[s].[Value] + @Value,
+	[s].[ValueStr] + CAST(@p AS VarChar(Max))
 FROM
 	[TableWithData] [s]
 WHERE

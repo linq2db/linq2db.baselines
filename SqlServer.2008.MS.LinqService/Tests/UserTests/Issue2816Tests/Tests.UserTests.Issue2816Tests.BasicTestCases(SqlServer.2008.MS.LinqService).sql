@@ -139,6 +139,15 @@ WHERE
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
+SELECT
+	[t1].[Id],
+	[t1].[Text]
+FROM
+	[Issue2816Table] [t1]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
 IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
 	DROP TABLE [Issue2816Table]
 
