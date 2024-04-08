@@ -14,16 +14,14 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 SELECT
-	[a].[Id],
+	[a].[Id] as [RECORDNAME],
 	[a].[NullValue]
 FROM
 	[SampleClass] [a]
 WHERE
-	([a].[Id] = 0 AND Coalesce([a].[NullValue], @default) = 0 OR [a].[Id] = 1 AND Coalesce([a].[NullValue], @default) = 1 OR [a].[Id] = 2 AND Coalesce([a].[NullValue], @default) = 2)
+	([a].[Id] = 0 AND ([a].[NullValue] = 0 AND [a].[NullValue] IS NOT NULL OR [a].[NullValue] IS NULL) OR [a].[Id] = 1 AND [a].[NullValue] = 1 AND [a].[NullValue] IS NOT NULL OR [a].[Id] = 2 AND [a].[NullValue] = 2 AND [a].[NullValue] IS NOT NULL)
 
 BeforeExecute
 -- SqlCe

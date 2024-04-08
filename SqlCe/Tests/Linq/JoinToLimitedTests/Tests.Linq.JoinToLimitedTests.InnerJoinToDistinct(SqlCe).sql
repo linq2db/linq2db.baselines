@@ -4,17 +4,17 @@
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[c_2].[ParentID] as [ParentID_1],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
 		CROSS APPLY (
 			SELECT DISTINCT
-				[cg].[ParentID],
-				[cg].[ChildID]
+				[c_1].[ParentID],
+				[c_1].[ChildID]
 			FROM
-				[Child] [cg]
+				[Child] [c_1]
 			WHERE
-				[o].[ParentID] = [cg].[ParentID]
-		) [t1]
+				[o].[ParentID] = [c_1].[ParentID]
+		) [c_2]
 

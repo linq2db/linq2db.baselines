@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	NewID()
+SELECT TOP (1)
+	NewID() as [c1]
 FROM
 	[LinqDataTypes] [p]
 
