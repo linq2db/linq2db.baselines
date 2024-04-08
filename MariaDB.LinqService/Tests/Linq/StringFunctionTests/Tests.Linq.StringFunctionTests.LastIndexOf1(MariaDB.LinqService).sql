@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @p VarChar(1) -- String
+SET     @p = 'p'
 
 SELECT
 	`p`.`FirstName`,
@@ -10,10 +12,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	CASE
-		WHEN Locate('p', `p`.`LastName`) = 0
-			THEN -1
-		ELSE Char_Length(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`))
-	END = 2 AND
+	Char_Length(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`)) = 2 AND
+	(Locate(@p, `p`.`LastName`) <> 0 OR Locate(@p, `p`.`LastName`) IS NULL) AND
 	`p`.`PersonID` = 1
 

@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`ID`,
@@ -66,7 +64,7 @@ FROM
 	`LinqDataTypes` `_`
 WHERE
 	`_`.`ID` = 1000
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

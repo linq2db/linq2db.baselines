@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `_`
 WHERE
-	`t1`.`ID` > 1000
+	`_`.`ID` > 1000
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -28,9 +28,9 @@ VALUES
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `_`
 WHERE
-	`t1`.`ID` > 1000
+	`_`.`ID` > 1000
 
