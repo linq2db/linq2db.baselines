@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Cast(t."DateTimeValue" as Date) > :Date
+	Date_Trunc('day', t."DateTimeValue") > :Date
 
