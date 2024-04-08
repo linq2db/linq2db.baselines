@@ -37,9 +37,9 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -67,9 +67,9 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -97,9 +97,9 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -121,12 +121,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM
