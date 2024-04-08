@@ -55,19 +55,19 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[TimeOfDay],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			CAST([selectParam].[TransactionDate] AS TIME) as [Key_1]
+			CAST([x].[TransactionDate] AS Time) as [TimeOfDay]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[TimeOfDay]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[TimeOfDay]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

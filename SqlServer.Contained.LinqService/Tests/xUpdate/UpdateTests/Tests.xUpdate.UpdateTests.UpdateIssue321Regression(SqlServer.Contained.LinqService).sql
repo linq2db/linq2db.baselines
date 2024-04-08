@@ -50,28 +50,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @value2 Int -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[SmallIntValue] = Convert(SmallInt, [t1].[MoneyValue] / (@value2 / [t1].[IntValue]))
-FROM
-	[LinqDataTypes] [t1]
+	[SmallIntValue] = CAST(Floor([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue])) AS SmallInt)
 WHERE
-	[t1].[ID] = @id
+	[LinqDataTypes].[ID] = @id
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[SmallIntValue]
 FROM
 	[LinqDataTypes] [_]
