@@ -3,7 +3,7 @@
 
 SELECT
 	p1."Value1",
-	Cast(NULL as Int)
+	NULL::Int
 FROM
 	"Parent" p1
 UNION
