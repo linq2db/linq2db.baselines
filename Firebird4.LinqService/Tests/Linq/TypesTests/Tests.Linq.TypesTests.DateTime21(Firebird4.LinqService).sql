@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",
@@ -25,18 +23,16 @@ DECLARE @dt TimeStamp -- DateTime
 SET     @dt = CAST('2010-12-14 05:00:07.425' AS timestamp)
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."DateTimeValue" = @dt
+	"DateTimeValue" = CAST(@dt AS TimeStamp)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",
@@ -58,9 +54,9 @@ DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = CAST('2001-01-11 01:11:21.100' AS timestamp)
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."DateTimeValue" = @pdt
+	"DateTimeValue" = CAST(@pdt AS TimeStamp)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 

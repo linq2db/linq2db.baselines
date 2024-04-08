@@ -160,62 +160,56 @@ BeforeExecute
 UPDATE
 	"billing_TempReading"
 SET
-	"billing_TempReading"."DevReadingTypeId" = (
+	"DevReadingTypeId" = (
 		SELECT
-			"drt"."Id"
-		FROM
-			"billing_TempReading" "tr"
-				INNER JOIN "billing_DevReadType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
-		WHERE
-			"billing_TempReading"."id" = "tr"."id"
-	),
-	"billing_TempReading"."Responsibility" = (
-		SELECT
-			"drt_1"."Responsibility"
+			"drt_1"."Id"
 		FROM
 			"billing_TempReading" "tr_1"
 				INNER JOIN "billing_DevReadType" "drt_1" ON "drt_1"."Name" = "tr_1"."ReadingTypeName" AND "drt_1"."DevTypeId" = "tr_1"."Devtypeid"
 		WHERE
 			"billing_TempReading"."id" = "tr_1"."id"
-	)
-WHERE
-	EXISTS(
+	),
+	"Responsibility" = (
 		SELECT
-			*
+			"drt_2"."Responsibility"
 		FROM
 			"billing_TempReading" "tr_2"
 				INNER JOIN "billing_DevReadType" "drt_2" ON "drt_2"."Name" = "tr_2"."ReadingTypeName" AND "drt_2"."DevTypeId" = "tr_2"."Devtypeid"
 		WHERE
 			"billing_TempReading"."id" = "tr_2"."id"
 	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"billing_TempReading" "tr"
+				INNER JOIN "billing_DevReadType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
+		WHERE
+			"billing_TempReading"."id" = "tr"."id"
+	)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 UPDATE
-	"billing_TempReading"
+	"billing_TempReading" "t1"
 SET
-	"billing_TempReading"."DevReadingTypeId" = (
-		SELECT FIRST @take
+	"DevReadingTypeId" = (
+		SELECT FIRST 1
 			"w"."Id"
 		FROM
 			"billing_DevReadType" "w"
 		WHERE
-			"w"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"w"."Name" = "t1"."ReadingTypeName" AND "w"."DevTypeId" = "t1"."Devtypeid"
 	),
-	"billing_TempReading"."Responsibility" = (
-		SELECT FIRST @take_1
+	"Responsibility" = (
+		SELECT FIRST 1
 			"w_1"."Responsibility"
 		FROM
 			"billing_DevReadType" "w_1"
 		WHERE
-			"w_1"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w_1"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"w_1"."Name" = "t1"."ReadingTypeName" AND "w_1"."DevTypeId" = "t1"."Devtypeid"
 	)
 
 BeforeExecute

@@ -22,8 +22,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
@@ -44,9 +44,9 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- Firebird4 Firebird

@@ -15,9 +15,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT CAST('John' AS VarChar(255) CHARACTER SET UNICODE_FSS) AS "item" FROM rdb$database
+				SELECT CAST('John' AS VARCHAR(4)) AS "item" FROM rdb$database
 				UNION ALL
-				SELECT CAST('Not John' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database) "y"
+				SELECT CAST('Not John' AS VARCHAR(8)) FROM rdb$database) "y"
 		WHERE
 			"y"."item" = "x"."FirstName"
 	)

@@ -23,22 +23,16 @@ END
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1192Table" "t"
-		WHERE
-			"t"."Status" = 3 AND "t"."MyOtherId" = 12
-	)
+SELECT FIRST 1
+	COUNT(CASE
+		WHEN "t"."Status" = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1192Table" "t_1"
+	"Issue1192Table" "t"
 WHERE
-	"t_1"."MyOtherId" = 12
+	"t"."MyOtherId" = 12
 
 BeforeExecute
 -- Firebird4 Firebird

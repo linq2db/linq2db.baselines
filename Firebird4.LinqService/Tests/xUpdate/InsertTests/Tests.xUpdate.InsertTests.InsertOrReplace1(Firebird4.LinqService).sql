@@ -25,10 +25,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
@@ -41,14 +41,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -57,8 +57,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -69,14 +69,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc1'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -85,8 +85,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -97,14 +97,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc2'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -113,18 +113,16 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."PersonID",
 	"p"."Diagnosis"
 FROM
