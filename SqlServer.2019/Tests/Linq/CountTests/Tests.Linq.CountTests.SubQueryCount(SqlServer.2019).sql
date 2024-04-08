@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[GetParentByID]([p].[ParentID]) [t1]
 	)
