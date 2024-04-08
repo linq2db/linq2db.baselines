@@ -34,8 +34,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -106,7 +106,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -120,7 +120,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -131,7 +131,7 @@ SET     @id = 3
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = 'test'
 WHERE
 	EXISTS(
 		SELECT
@@ -141,8 +141,8 @@ WHERE
 				LEFT JOIN "AssociatedTable" "a_AssociatedOptional" ON "t1"."Id" = "a_AssociatedOptional"."Id"
 				LEFT JOIN "MainTable" "a_MainOptional" ON "a_AssociatedOptional"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"t1"."Id" = @id AND "MainTable"."Id" = "t1"."Id" AND
-			("MainTable"."Field" = "t1"."Field" OR "MainTable"."Field" IS NULL AND "t1"."Field" IS NULL)
+			"t1"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id" AND
+			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
 	)
 
 BeforeExecute
