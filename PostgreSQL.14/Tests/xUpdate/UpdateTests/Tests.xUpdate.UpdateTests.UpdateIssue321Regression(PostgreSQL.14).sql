@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @value2 Integer -- Int32
+DECLARE @value2 Numeric(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	"LinqDataTypes"
 SET
-	"SmallIntValue" = Cast(Floor("LinqDataTypes"."MoneyValue" / (:value2 / "LinqDataTypes"."IntValue")) as SmallInt)
+	"SmallIntValue" = Floor("LinqDataTypes"."MoneyValue" / (:value2 / "LinqDataTypes"."IntValue"))::SmallInt
 WHERE
 	"LinqDataTypes"."ID" = :id
 
@@ -66,8 +66,6 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 100500
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t1."SmallIntValue"
@@ -75,5 +73,5 @@ FROM
 	"LinqDataTypes" t1
 WHERE
 	t1."ID" = :id
-LIMIT :take
+LIMIT 1
 

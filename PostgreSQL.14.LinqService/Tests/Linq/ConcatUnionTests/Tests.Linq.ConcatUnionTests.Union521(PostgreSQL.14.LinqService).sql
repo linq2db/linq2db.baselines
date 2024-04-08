@@ -2,19 +2,19 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."Value1"
+	p_1.c1
 FROM
 	(
 		SELECT
-			p1."ParentID",
-			Cast(NULL as Int) as "Value1"
+			p."ParentID",
+			NULL::Int as c1
 		FROM
-			"Parent" p1
+			"Parent" p
 		UNION
 		SELECT
 			p2."ParentID",
-			p2."Value1"
+			p2."Value1" as c1
 		FROM
 			"Parent" p2
-	) p
+	) p_1
 
