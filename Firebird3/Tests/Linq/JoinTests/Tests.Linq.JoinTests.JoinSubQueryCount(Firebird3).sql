@@ -7,11 +7,11 @@ SELECT
 	"p"."ParentID",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Child" "c_1"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ChildID" <> "p"."ParentID" * 10 + @n
+			"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ChildID" <> "p"."ParentID" * 10 + CAST(@n AS Int)
 	)
 FROM
 	"Parent" "p"

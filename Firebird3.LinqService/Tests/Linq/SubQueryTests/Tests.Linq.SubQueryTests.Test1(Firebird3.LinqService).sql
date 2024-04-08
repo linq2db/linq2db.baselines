@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			Max("ch"."ChildID")
+			MAX("ch"."ChildID")
 		FROM
 			"Child" "ch"
 		WHERE

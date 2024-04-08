@@ -36,8 +36,8 @@ SELECT
 	"c4"."ParentID",
 	"c4"."ChildID"
 FROM
-	"Child" "c_1"
-		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "c_1"."ParentID"
+	"Child" "p"
+		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "p"."ParentID"
 WHERE
-	Mod("c4"."ParentID", 2) = 0 AND "c_1"."ParentID" > 1
+	"p"."ParentID" > 1 AND Mod("c4"."ParentID", 2) = 0
 

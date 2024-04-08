@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"pat"."PersonID",
@@ -14,7 +12,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT FIRST @take
+				SELECT FIRST 1
 					"a_Patient"."Diagnosis"
 				FROM
 					"Person" "per"

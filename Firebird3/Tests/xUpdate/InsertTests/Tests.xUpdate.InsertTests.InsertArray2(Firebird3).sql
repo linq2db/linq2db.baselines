@@ -2,9 +2,9 @@
 -- Firebird3 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -21,15 +21,13 @@ VALUES
 (
 	1001,
 	1,
-	@arr
+	CAST(@arr AS BLOB)
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",
@@ -46,7 +44,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 

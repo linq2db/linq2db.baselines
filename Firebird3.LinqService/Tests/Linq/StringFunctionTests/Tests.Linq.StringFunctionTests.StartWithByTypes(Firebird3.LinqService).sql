@@ -46,11 +46,11 @@ INSERT INTO "StringTypesTable"
 )
 VALUES
 (
-	@Id,
-	@CharColumn,
-	@NCharColumn,
-	@VarCharColumn,
-	@NVarCharColumn
+	CAST(@Id AS Int),
+	CAST(@CharColumn AS Char(10)),
+	CAST(@NCharColumn AS CHAR(10)),
+	CAST(@VarCharColumn AS VarChar(10) CHARACTER SET UNICODE_FSS),
+	CAST(@NVarCharColumn AS VARCHAR(10))
 )
 
 BeforeExecute

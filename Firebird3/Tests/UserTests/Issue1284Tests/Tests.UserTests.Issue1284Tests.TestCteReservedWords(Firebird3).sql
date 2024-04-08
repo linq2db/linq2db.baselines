@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-WITH CTE_1 ("Operator")
+WITH CTE_1 ("Obj_Operator")
 AS
 (
 	SELECT
@@ -11,18 +9,16 @@ AS
 	FROM
 		"Person" "x"
 )
-SELECT FIRST @take
-	"t1"."Operator"
+SELECT FIRST 1
+	"t1"."Obj_Operator"
 FROM
 	CTE_1 "t1"
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
-	"x"."LastName"
+SELECT FIRST 1
+	"person_1"."LastName"
 FROM
-	"Person" "x"
+	"Person" "person_1"
 

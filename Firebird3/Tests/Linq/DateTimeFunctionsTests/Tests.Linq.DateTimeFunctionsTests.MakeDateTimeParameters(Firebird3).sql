@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @p VarChar(5) -- String
-SET     @p = '2010-'
+DECLARE @year Integer -- Int32
+SET     @year = 2010
 
 SELECT
-	"t"."c1"
+	CAST(LPad(CAST(@year AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-' || LPad(CAST("t".ID AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)
 FROM
-	(
-		SELECT
-			Cast((Cast(@p as VarChar(255) CHARACTER SET UNICODE_FSS) || Lpad("p".ID,2,'0') || '-01') as Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Cast(Floor(Extract(year from "t"."c1")) as int) = 2010
+	Extract(year from CAST(LPad(CAST(@year AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-' || LPad(CAST("t".ID AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)) = 2010
 

@@ -36,8 +36,8 @@ INSERT INTO "WhereWithBool"
 )
 VALUES
 (
-	@Id,
-	@BoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS CHAR)
 )
 
 BeforeExecute
@@ -47,16 +47,10 @@ SELECT
 	"t"."Id",
 	"t"."BoolValue"
 FROM
-	"WhereWithBool" "t"
+	"WhereWithBool" "t",
+	"WhereWithBool" "x"
 WHERE
-	(
-		SELECT
-			"x"."BoolValue"
-		FROM
-			"WhereWithBool" "x"
-		WHERE
-			"x"."Id" = 1
-	) = 1
+	"x"."BoolValue" = 1 AND "x"."Id" = 1
 
 BeforeExecute
 -- Firebird3 Firebird
