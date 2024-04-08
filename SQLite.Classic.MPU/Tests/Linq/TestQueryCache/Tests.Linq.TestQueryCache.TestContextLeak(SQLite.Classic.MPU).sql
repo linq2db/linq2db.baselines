@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[FirstName],
@@ -11,5 +9,5 @@ SELECT
 	[t1].[Gender]
 FROM
 	[Person] [t1]
-LIMIT @take
+LIMIT 1
 

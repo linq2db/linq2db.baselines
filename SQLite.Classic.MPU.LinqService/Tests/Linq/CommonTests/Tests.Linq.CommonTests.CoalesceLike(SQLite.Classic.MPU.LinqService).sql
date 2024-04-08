@@ -10,15 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN CASE
-			WHEN [p].[FirstName] IS NULL
-				THEN NULL
-			ELSE [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
-		END IS NULL
-			THEN 0
-		WHEN [p].[FirstName] IS NULL
-			THEN NULL
-		ELSE [p].[FirstName] LIKE 'Jo%' ESCAPE '~'
-	END = 1
+	[p].[FirstName] LIKE 'Jo%' ESCAPE '~' AND [p].[FirstName] IS NOT NULL
 

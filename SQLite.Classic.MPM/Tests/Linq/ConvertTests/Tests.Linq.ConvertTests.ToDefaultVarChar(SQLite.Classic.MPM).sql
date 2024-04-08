@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as VarChar)
+	CAST([t].[MoneyValue] AS VarChar(31))
 FROM
 	[LinqDataTypes] [t]
 

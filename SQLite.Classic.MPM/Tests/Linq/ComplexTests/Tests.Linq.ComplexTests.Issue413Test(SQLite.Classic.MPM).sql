@@ -140,7 +140,7 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate VarChar(23) -- AnsiString
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode NVarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -166,7 +166,7 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate VarChar(23) -- AnsiString
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode NVarChar -- String
 SET     @SourceInstrumentCode = NULL
@@ -190,7 +190,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'aaa%'
-DECLARE @uptoDate  -- DateTime
+DECLARE @uptoDate VarChar(23) -- AnsiString
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT
@@ -205,8 +205,8 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE '~' AND
-			DateTime([_].[CreateDate]) <= DateTime(@uptoDate)
+			[_].[InstrumentCode] LIKE @cond ESCAPE '~' AND strftime('%Y-%m-%d %H:%M:%f', [_].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate) AND
+			[ins].[SourceInstrumentCode] IS NOT NULL
 	) [t4]
 ORDER BY
 	[t4].[SourceInstrumentCode]
