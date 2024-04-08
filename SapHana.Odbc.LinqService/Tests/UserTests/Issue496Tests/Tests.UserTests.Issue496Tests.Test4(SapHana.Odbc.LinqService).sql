@@ -2,23 +2,23 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"key_data_result"."ParentID",
-	"detail"."ChildID",
-	"detail"."ParentID"
+	"m_1"."ParentID",
+	"d"."ChildID",
+	"d"."ParentID"
 FROM
 	(
 		SELECT DISTINCT
-			"_"."ParentID"
+			"p"."ParentID"
 		FROM
-			"Parent" "_"
-	) "key_data_result"
-		INNER JOIN "Child" "detail" ON Cast("key_data_result"."ParentID" as BigInt) = "detail"."ParentID"
+			"Parent" "p"
+	) "m_1"
+		INNER JOIN "Child" "d" ON CAST("m_1"."ParentID" AS BigInt) = "d"."ParentID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"_"."ParentID"
+	"p"."ParentID"
 FROM
-	"Parent" "_"
+	"Parent" "p"
 

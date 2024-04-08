@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast((Cast(Year("t"."DateTimeValue") as VarChar(11)) || '-01-01 00:20:00') as SecondDate)
+	CAST(Year("t"."DateTimeValue") || '-01-01 00:20:00' AS SecondDate)
 FROM
 	"LinqDataTypes" "t"
 

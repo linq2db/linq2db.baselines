@@ -34,8 +34,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."Id",
@@ -44,7 +42,7 @@ FROM
 	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -52,16 +50,14 @@ DECLARE @BlobValue Binary(3)
 SET     @BlobValue = x'030201'
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "_"
 SET
-	"BlobClass"."BlobValue" = ?
+	"BlobValue" = ?
 WHERE
-	"BlobClass"."Id" = 1
+	"_"."Id" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."Id",
@@ -70,7 +66,7 @@ FROM
 	"BlobClass" "_"
 WHERE
 	"_"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

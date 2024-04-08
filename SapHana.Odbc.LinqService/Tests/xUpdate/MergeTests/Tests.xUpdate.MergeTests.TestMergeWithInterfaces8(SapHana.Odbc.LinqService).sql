@@ -19,10 +19,10 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "Id" FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id" FROM DUMMY) "Source"
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN NOT MATCHED AND "Source"."Id" > 1 THEN
+WHEN NOT MATCHED AND "Source"."source_Id" > 1 THEN
 INSERT
 (
 	"Id",

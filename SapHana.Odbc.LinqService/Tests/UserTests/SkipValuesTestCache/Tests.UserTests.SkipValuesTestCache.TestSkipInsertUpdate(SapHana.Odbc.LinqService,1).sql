@@ -35,8 +35,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -46,7 +44,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -56,16 +54,14 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"PR_1598_Insert_Table_Cache" "t1"
 SET
-	"PR_1598_Insert_Table_Cache"."Name" = ?
+	"Name" = ?
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -75,7 +71,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
