@@ -45,11 +45,11 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Issue681Table"@"xe"
+	"Issue681Table"@"xe" t1
 SET
-	"Issue681Table"."Value"@"xe" = :Value
+	"Value" = :Value
 WHERE
-	"Issue681Table".ID@"xe" = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
