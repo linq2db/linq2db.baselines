@@ -36,8 +36,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	Cast(@ID as Int),
-	Cast(@Data as VarChar(50) CHARACTER SET UNICODE_FSS)
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute

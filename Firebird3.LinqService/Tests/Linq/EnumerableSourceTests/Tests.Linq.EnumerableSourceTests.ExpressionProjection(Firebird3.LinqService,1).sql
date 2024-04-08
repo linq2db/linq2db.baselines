@@ -11,9 +11,9 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT CAST('Janet' AS VARCHAR(5)) AS "FirstName", Cast(@ID as Int) AS "PersonID" FROM rdb$database
+			SELECT CAST('Janet' AS VARCHAR(5)) AS "FirstName", CAST(@ID AS Int) AS "PersonID" FROM rdb$database
 			UNION ALL
-			SELECT CAST('Doe' AS VARCHAR(3)), Cast(@ID_1 as Int) FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT CAST('Doe' AS VARCHAR(3)), CAST(@ID_1 AS Int) FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
 ORDER BY
 	"n"."PersonID"
 
