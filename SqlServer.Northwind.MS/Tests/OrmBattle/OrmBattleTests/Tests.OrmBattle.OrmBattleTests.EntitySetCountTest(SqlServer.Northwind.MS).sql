@@ -66,6 +66,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,8 +75,7 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
@@ -92,10 +92,10 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Products] [t1]
+			[Products] [a_Products]
 		WHERE
-			[c_1].[CategoryID] = [t1].[CategoryID]
+			[c_1].[CategoryID] = [a_Products].[CategoryID]
 	) > 10
 
