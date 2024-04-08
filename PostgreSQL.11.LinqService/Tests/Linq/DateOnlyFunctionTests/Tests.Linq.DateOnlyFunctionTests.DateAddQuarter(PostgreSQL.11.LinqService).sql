@@ -270,7 +270,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -1 * Interval '1 Month' * 3
+	t."TransactionDate" + (-Interval '1 Month') * 3
 FROM
 	"Transactions" t
 
