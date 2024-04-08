@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate  -- DateTime
-SET     @OrderDate = '1997-11-14'
+DECLARE @OrderDate VarChar(23) -- AnsiString
+SET     @OrderDate = '1997-11-14 00:00:00.000'
 
 SELECT
 	[order_1].[OrderID]
 FROM
 	[Orders] [order_1]
 WHERE
-	DateTime([order_1].[OrderDate]) = DateTime(@OrderDate)
+	strftime('%Y-%m-%d %H:%M:%f', [order_1].[OrderDate]) = strftime('%Y-%m-%d %H:%M:%f', @OrderDate)
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate  -- DateTime
-SET     @OrderDate = '1997-11-14'
+DECLARE @OrderDate VarChar(23) -- AnsiString
+SET     @OrderDate = '1997-11-14 00:00:00.000'
 
 SELECT
 	[order_1].[OrderID]
 FROM
 	[Orders] [order_1]
 WHERE
-	DateTime(@OrderDate) = DateTime([order_1].[OrderDate])
+	strftime('%Y-%m-%d %H:%M:%f', @OrderDate) = strftime('%Y-%m-%d %H:%M:%f', [order_1].[OrderDate])
 

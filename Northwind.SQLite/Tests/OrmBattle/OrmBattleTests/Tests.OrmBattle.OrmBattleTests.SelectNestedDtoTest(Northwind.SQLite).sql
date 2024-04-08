@@ -66,6 +66,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -74,15 +75,14 @@ SELECT
 	[t1].[UnitPrice],
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
+	[t1].[ReorderLevel]
 FROM
 	[Products] [t1]
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate  -- DateTime
-SET     @OrderDate = '1998-01-01'
+DECLARE @OrderDate VarChar(23) -- AnsiString
+SET     @OrderDate = '1998-01-01 00:00:00.000'
 
 SELECT
 	[r].[OrderID],
@@ -90,7 +90,7 @@ SELECT
 	[r].[OrderDate]
 FROM
 	[Orders] [r]
-		INNER JOIN [Customers] [a_Customer] ON ([r].[CustomerID] = [a_Customer].[CustomerID] OR [r].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+		INNER JOIN [Customers] [a_Customer] ON [r].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	DateTime([r].[OrderDate]) > DateTime(@OrderDate)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', @OrderDate)
 
