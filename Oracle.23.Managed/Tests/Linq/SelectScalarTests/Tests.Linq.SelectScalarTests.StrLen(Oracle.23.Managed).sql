@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Length Int32
-SET     @Length = 1
 
 SELECT
-	:Length
+	1
 FROM SYS.DUAL
 
