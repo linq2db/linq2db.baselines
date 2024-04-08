@@ -27,8 +27,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -37,12 +35,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -51,12 +47,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -65,12 +59,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -79,12 +71,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -93,12 +83,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -107,12 +95,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -121,12 +107,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -135,12 +119,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -149,12 +131,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" = '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -163,12 +143,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" = '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -177,12 +155,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -191,12 +167,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -205,12 +179,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -219,12 +191,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -233,12 +203,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -247,12 +215,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -261,12 +227,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -275,12 +239,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -289,12 +251,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '5'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -303,12 +263,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '5'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -317,12 +275,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '1'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -331,7 +287,7 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '1'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
