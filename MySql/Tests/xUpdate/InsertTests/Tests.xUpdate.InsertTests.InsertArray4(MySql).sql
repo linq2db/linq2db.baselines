@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `t`
 WHERE
-	`t1`.`ID` > 1000
+	`t`.`ID` > 1000
 
 BeforeExecute
 -- MySql MySql.Official MySql
@@ -47,8 +47,6 @@ VALUES
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -62,14 +60,14 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1001
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql MySql.Official MySql
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `t`
 WHERE
-	`t1`.`ID` > 1000
+	`t`.`ID` > 1000
 
