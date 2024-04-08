@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 11 * Interval '1 Year'
+	Date_Trunc('day', (t."TransactionDate" + 11 * Interval '1 Year') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 
