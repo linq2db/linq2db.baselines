@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = -35
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '1' SECOND
+	EXTRACT(SECOND FROM (t."DateTimeValue" + :p * INTERVAL '1' SECOND))
 FROM
 	"LinqDataTypes" t
 

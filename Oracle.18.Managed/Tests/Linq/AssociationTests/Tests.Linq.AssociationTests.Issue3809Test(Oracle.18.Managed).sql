@@ -4,31 +4,30 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	detail."ParentID",
-	detail."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			a_ParentTest."ParentID",
-			a_ParentTest."Value1"
+			a_ParentTest."ParentID"
 		FROM
-			"Parent" cp
-				LEFT JOIN "Parent" a_ParentTest ON cp."ParentID" = a_ParentTest."ParentID" AND (cp."Value1" = a_ParentTest."Value1" OR cp."Value1" IS NULL AND a_ParentTest."Value1" IS NULL)
+			"Parent" a
+				LEFT JOIN "Parent" a_ParentTest ON a."ParentID" = a_ParentTest."ParentID" AND (a."Value1" = a_ParentTest."Value1" OR a."Value1" IS NULL AND a_ParentTest."Value1" IS NULL)
 		WHERE
 			(a_ParentTest."ParentID" IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
-					"Child" a
+					"Child" a_1
 				WHERE
-					a_ParentTest."ParentID" = a."ParentID" AND a."ChildID" = 11
+					a_ParentTest."ParentID" IS NOT NULL AND a_ParentTest."ParentID" = a_1."ParentID" AND
+					a_1."ChildID" = 11
 			))
-	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" IS NOT NULL AND m_1."ParentID" = d."ParentID"
 ORDER BY
-	detail."ChildID"
+	d."ChildID"
 
 BeforeExecute
 DisposeTransaction
@@ -36,19 +35,19 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	cp."ParentID",
-	a_ParentTest."ParentID",
-	a_ParentTest."Value1"
+	a."ParentID",
+	a_ParentTest."ParentID"
 FROM
-	"Parent" cp
-		LEFT JOIN "Parent" a_ParentTest ON cp."ParentID" = a_ParentTest."ParentID" AND (cp."Value1" = a_ParentTest."Value1" OR cp."Value1" IS NULL AND a_ParentTest."Value1" IS NULL)
+	"Parent" a
+		LEFT JOIN "Parent" a_ParentTest ON a."ParentID" = a_ParentTest."ParentID" AND (a."Value1" = a_ParentTest."Value1" OR a."Value1" IS NULL AND a_ParentTest."Value1" IS NULL)
 WHERE
 	(a_ParentTest."ParentID" IS NULL OR EXISTS(
 		SELECT
 			*
 		FROM
-			"Child" a
+			"Child" a_1
 		WHERE
-			a_ParentTest."ParentID" = a."ParentID" AND a."ChildID" = 11
+			a_ParentTest."ParentID" IS NOT NULL AND a_ParentTest."ParentID" = a_1."ParentID" AND
+			a_1."ChildID" = 11
 	))
 
