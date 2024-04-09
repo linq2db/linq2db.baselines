@@ -3,7 +3,7 @@
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
+SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 SELECT TOP (@take)
 	[p].[ID],
@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
+SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 
 SELECT TOP (@take)
 	[p].[ID],
