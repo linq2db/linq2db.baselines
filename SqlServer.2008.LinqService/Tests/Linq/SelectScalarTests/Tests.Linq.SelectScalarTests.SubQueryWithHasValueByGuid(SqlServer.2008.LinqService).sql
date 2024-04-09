@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[ParentID],
@@ -10,9 +8,12 @@ FROM
 	[Parent] [_]
 WHERE
 	(
-		SELECT TOP (@take)
-			[r].[GuidValue]
+		SELECT TOP (1)
+			CASE
+				WHEN [r].[GuidValue] IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			[LinqDataTypes] [r]
-	) IS NOT NULL
+	) = 1
 

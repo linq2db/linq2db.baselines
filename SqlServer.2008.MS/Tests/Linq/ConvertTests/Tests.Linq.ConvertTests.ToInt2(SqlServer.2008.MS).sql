@@ -2,7 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS Int)
 FROM
 	[LinqDataTypes] [t]
 
