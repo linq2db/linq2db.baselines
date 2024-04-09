@@ -81,44 +81,44 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[t1].[textCol],
-	[t1].[b1],
-	[t1].[b2],
-	[t1].[b3]
+	[s_1].[TextCol],
+	[s_1].[b1],
+	[s_1].[b2],
+	[s_1].[b3]
 FROM
 	(
 		SELECT
 			Coalesce([btbl].[col1], '') as [b1],
 			Coalesce([btbl].[col2], '') as [b2],
 			Coalesce([btbl].[col3], '') as [b3],
-			[bt1].[textCol]
+			[bt1].[textCol] as [TextCol]
 		FROM
-			[table1] [w_1]
-				LEFT JOIN [table2] [bt1] ON [w_1].[c_tb1l_Id] = [bt1].[id]
+			[table1] [s]
+				LEFT JOIN [table2] [bt1] ON [s].[c_tb1l_Id] = [bt1].[id]
 				LEFT JOIN (
 					SELECT
-						Max([tbl3].[id]) as [maxCol],
+						MAX([tbl3].[id]) as [maxCol],
 						[tbl2].[col3] as [Col3]
 					FROM
 						[table1] [w]
 							INNER JOIN [table2] [tbl2] ON [w].[id_tbl2] = [tbl2].[id]
 							INNER JOIN [table3] [tbl3] ON [w].[id_tbl3] = [tbl3].[id]
 					WHERE
-						[tbl2].[col3] IS NOT NULL AND [w].[commonTableId] = @id
+						[w].[commonTableId] = @id AND [tbl2].[col3] IS NOT NULL
 					GROUP BY
 						[tbl2].[col3]
-				) [allG] ON [bt1].[col3] = Coalesce([allG].[Col3], 0)
-					LEFT JOIN [table3] [tbl3_1] ON [allG].[maxCol] = [tbl3_1].[id]
+				) [ctb] ON [bt1].[col3] = Coalesce([ctb].[Col3], 0)
+				LEFT JOIN [table3] [tbl3_1] ON [ctb].[maxCol] = [tbl3_1].[id]
 				LEFT JOIN [b_table2] [btbl] ON [tbl3_1].[col] = [btbl].[id]
 				LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 		WHERE
-			[w_1].[commonTableId] = @id
-	) [t1]
+			[s].[commonTableId] = @id
+	) [s_1]
 GROUP BY
-	[t1].[b1],
-	[t1].[b2],
-	[t1].[b3],
-	[t1].[textCol]
+	[s_1].[b1],
+	[s_1].[b2],
+	[s_1].[b3],
+	[s_1].[TextCol]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
