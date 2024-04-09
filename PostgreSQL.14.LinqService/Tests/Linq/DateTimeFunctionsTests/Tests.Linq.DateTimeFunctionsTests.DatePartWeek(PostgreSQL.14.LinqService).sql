@@ -2,7 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from t."DateTimeValue")) as int)
+	Floor(Extract(week From t."DateTimeValue"))::Int
 FROM
 	"LinqDataTypes" t
 
