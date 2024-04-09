@@ -36,16 +36,14 @@ INSERT INTO "Issue1622Table"
 )
 VALUES
 (
-	@Id,
-	@SomeText
+	CAST(@Id AS Int),
+	CAST(@SomeText AS VARCHAR(13))
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"
 FROM
@@ -55,10 +53,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"
 FROM

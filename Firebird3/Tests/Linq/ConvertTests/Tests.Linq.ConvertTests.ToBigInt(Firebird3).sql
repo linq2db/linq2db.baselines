@@ -2,7 +2,7 @@
 -- Firebird3 Firebird
 
 SELECT
-	Cast(Floor("t"."MoneyValue") as BigInt)
+	CAST(Floor("t"."MoneyValue") AS BigInt)
 FROM
 	"LinqDataTypes" "t"
 
