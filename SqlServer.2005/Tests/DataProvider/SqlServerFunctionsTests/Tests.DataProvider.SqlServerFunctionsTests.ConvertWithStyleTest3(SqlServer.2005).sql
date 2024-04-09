@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @p DateTime
-SET     @p = CAST('2022-02-22T00:00:00.000' AS DATETIME)
 
 SELECT
-	CONVERT(nvarchar(10), @p, 105)
+	CONVERT(nvarchar(10), CAST(N'2022-02-22' AS DateTime), 105)
 

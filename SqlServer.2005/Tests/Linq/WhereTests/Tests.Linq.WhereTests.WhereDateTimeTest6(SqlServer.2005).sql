@@ -1,21 +1,34 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @Date DateTime
-SET     @Date = CAST('2009-09-20T00:00:00.000' AS DATETIME)
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+	[_1].[ID],
+	[_1].[MoneyValue],
+	[_1].[DateTimeValue],
+	[_1].[DateTimeValue2],
+	[_1].[BoolValue],
+	[_1].[GuidValue],
+	[_1].[SmallIntValue],
+	[_1].[IntValue],
+	[_1].[BigIntValue],
+	[_1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	(
+		SELECT
+			DateAdd(dd, DateDiff(dd, 0, [_].[DateTimeValue]), 0) as [Date_1],
+			[_].[ID],
+			[_].[MoneyValue],
+			[_].[DateTimeValue],
+			[_].[DateTimeValue2],
+			[_].[BoolValue],
+			[_].[GuidValue],
+			[_].[SmallIntValue],
+			[_].[IntValue],
+			[_].[BigIntValue],
+			[_].[StringValue]
+		FROM
+			[LinqDataTypes] [_]
+	) [_1]
 WHERE
-	Cast(Floor(Cast([_].[DateTimeValue] as Float)) as DateTime) = @Date
+	([_1].[Date_1] = DateAdd(dd, DateDiff(dd, 0, CAST(N'2009-09-20' AS DateTime)), 0) OR [_1].[Date_1] IS NULL AND DateAdd(dd, DateDiff(dd, 0, CAST(N'2009-09-20' AS DateTime)), 0) IS NULL)
 
