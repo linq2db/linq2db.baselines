@@ -2,8 +2,6 @@
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	[t2].[FirstName],
@@ -33,7 +31,7 @@ SELECT
 	[t4].[Gender]
 FROM
 	(
-		SELECT TOP (@take_1)
+		SELECT TOP (@take)
 			[t3].[FirstName],
 			[t3].[PersonID] as [ID],
 			[t3].[LastName],

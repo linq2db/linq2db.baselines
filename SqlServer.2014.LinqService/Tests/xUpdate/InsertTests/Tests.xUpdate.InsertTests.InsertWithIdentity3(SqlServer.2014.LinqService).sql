@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- SqlServer.2014
@@ -33,10 +33,8 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],
@@ -50,9 +48,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2014
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
