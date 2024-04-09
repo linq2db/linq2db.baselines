@@ -208,8 +208,8 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE N'~' AND
-			[_].[CreateDate] <= @uptoDate
+			[_].[InstrumentCode] LIKE @cond ESCAPE N'~' AND [_].[CreateDate] <= @uptoDate AND
+			[ins].[SourceInstrumentCode] IS NOT NULL
 	) [t4]
 ORDER BY
 	[t4].[SourceInstrumentCode]

@@ -61,19 +61,17 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1_1].[NAME1],
-	[t1].[Name2],
-	[t1].[Value2]
+	[t1].[Id2],
+	[t1].[Name2]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[x].[NAME2] as [Name2],
-				[x].[ID2] as [Value2]
+				[x].[ID2] as [Id2]
 			FROM
 				[TABLE2] [x]
 			WHERE

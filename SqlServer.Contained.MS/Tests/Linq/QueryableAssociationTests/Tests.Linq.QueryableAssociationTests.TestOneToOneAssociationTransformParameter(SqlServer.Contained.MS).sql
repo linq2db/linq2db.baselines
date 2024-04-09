@@ -81,31 +81,29 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
+SELECT TOP (1)
+	[x].[Id],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[User] [x]
-				LEFT JOIN [Language] [a_Language] ON [x].[LanguageId] = [a_Language].[Id]
+			[User] [x_1]
+				LEFT JOIN [Language] [a_Language] ON [x_1].[LanguageId] = [a_Language].[Id]
 		WHERE
-			[x].[UserGroupId] = [x_2].[Id] AND [a_Language].[Name] LIKE N'%En%' ESCAPE N'~'
+			[x_1].[UserGroupId] = [x].[Id] AND [a_Language].[Name] LIKE N'%En%' ESCAPE N'~'
 	),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[User] [x_1]
-				LEFT JOIN [Language] [a_Language_1] ON [x_1].[LanguageId] = [a_Language_1].[Id]
+			[User] [x_2]
+				LEFT JOIN [Language] [a_Language_1] ON [x_2].[LanguageId] = [a_Language_1].[Id]
 		WHERE
-			[x_1].[UserGroupId] = [x_2].[Id] AND [a_Language_1].[Name] LIKE N'%Lis%' ESCAPE N'~'
+			[x_2].[UserGroupId] = [x].[Id] AND [a_Language_1].[Name] LIKE N'%Lis%' ESCAPE N'~'
 	)
 FROM
-	[UserGroup] [x_2]
+	[UserGroup] [x]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
