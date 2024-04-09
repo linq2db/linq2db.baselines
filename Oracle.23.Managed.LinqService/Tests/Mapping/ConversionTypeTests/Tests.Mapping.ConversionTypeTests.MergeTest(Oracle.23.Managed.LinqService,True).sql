@@ -63,15 +63,15 @@ BeforeExecute
 
 MERGE INTO "TrimTestTable" Target
 USING (
-	SELECT 1 AS ID, '***OOO***' AS "Data_1" FROM sys.dual
+	SELECT 1 AS "source_ID", '***OOO***' AS "source_Data" FROM sys.dual
 	UNION ALL
 	SELECT 2, '***SSS***' FROM sys.dual) "Source"
-ON (Target.ID = "Source".ID)
+ON (Target.ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Data" = "Source"."Data_1"
+	"Data" = "Source"."source_Data"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -81,8 +81,8 @@ INSERT
 )
 VALUES
 (
-	"Source".ID,
-	"Source"."Data_1"
+	"Source"."source_ID",
+	"Source"."source_Data"
 )
 
 BeforeExecute
@@ -90,13 +90,13 @@ BeforeExecute
 
 MERGE INTO "TrimTestTable" Target
 USING (
-	SELECT 3 AS ID, '***III***' AS "Data_1" FROM sys.dual) "Source"
-ON (Target.ID = "Source".ID)
+	SELECT 3 AS "source_ID", '***III***' AS "source_Data" FROM sys.dual) "Source"
+ON (Target.ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Data" = "Source"."Data_1"
+	"Data" = "Source"."source_Data"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -106,8 +106,8 @@ INSERT
 )
 VALUES
 (
-	"Source".ID,
-	"Source"."Data_1"
+	"Source"."source_ID",
+	"Source"."source_Data"
 )
 
 BeforeExecute

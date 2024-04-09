@@ -5,7 +5,7 @@ SET     @take = 10
 
 SELECT
 	p_1."ParentID",
-	r."ChildID"
+	c_1."ChildID"
 FROM
 	(
 		SELECT
@@ -16,5 +16,5 @@ FROM
 			p."ParentID" > 0
 		FETCH NEXT :take ROWS ONLY
 	) p_1
-		INNER JOIN "Child" r ON p_1."ParentID" = r."ParentID"
+		INNER JOIN "Child" c_1 ON p_1."ParentID" = c_1."ParentID"
 
