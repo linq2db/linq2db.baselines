@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'p'
 
 SELECT
 	[p].[FirstName],
@@ -10,10 +12,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN CharIndex('p', [p].[LastName]) = 0
-			THEN -1
-		ELSE Length([p].[LastName]) - CharIndex('p', Reverse([p].[LastName]))
-	END = 2 AND
+	Length([p].[LastName]) - CharIndex('p', Reverse([p].[LastName])) = 2 AND
+	(CharIndex(@p, [p].[LastName]) <> 0 OR CharIndex(@p, [p].[LastName]) IS NULL) AND
 	[p].[PersonID] = 1
 

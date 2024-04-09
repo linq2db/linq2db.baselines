@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Max([_].[ParentID])
+	MAX([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

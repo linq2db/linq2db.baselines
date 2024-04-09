@@ -35,15 +35,13 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Max([t1].[Value1]),
-	GROUP_CONCAT([t1].[Value1], ' -> ')
+	MAX([g_1].[Value1]),
+	GROUP_CONCAT([g_1].[Value1], ' -> ')
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value1]
-ORDER BY
-	[t1].[Id]
+	[g_1].[Id],
+	[g_1].[Value1]
 
 BeforeExecute
 -- SQLite.MS SQLite

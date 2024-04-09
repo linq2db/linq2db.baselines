@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],([t].[SmallIntValue]*7) || ' Day')
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST([t].[SmallIntValue] * 7 AS NVarChar(6)) || ' Day'))
 FROM
 	[LinqDataTypes] [t]
 
