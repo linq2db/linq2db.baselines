@@ -58,7 +58,7 @@ DECLARE @p Int -- Int32
 SET     @p = 5
 
 SELECT
-	DateAdd(day, @p, [t].[TransactionDate])
+	CAST(DateAdd(day, @p, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 
