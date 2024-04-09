@@ -437,8 +437,8 @@ SET
 	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
 	[s].[ValueStr],
-	[DELETED].[Value],
-	[INSERTED].[Value]
+	DELETED.[Value],
+	INSERTED.[Value]
 FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]

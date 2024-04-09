@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[p].[ParentID],
-	[t1].[MaxChild]
+	[t1].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[c_1].[ChildID] as [MaxChild]
+			SELECT TOP (1)
+				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
 					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]

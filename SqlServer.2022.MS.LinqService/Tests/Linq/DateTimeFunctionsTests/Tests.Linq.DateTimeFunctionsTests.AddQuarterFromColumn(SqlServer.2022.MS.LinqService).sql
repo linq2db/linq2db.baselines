@@ -2,7 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue])
+	CAST(DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

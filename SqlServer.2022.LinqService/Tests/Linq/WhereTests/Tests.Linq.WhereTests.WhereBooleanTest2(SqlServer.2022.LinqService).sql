@@ -401,8 +401,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND
-	[t].[Id] > 0
+	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
 BeforeExecute
 -- SqlServer.2022

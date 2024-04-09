@@ -2,11 +2,11 @@
 -- SqlServer.2022
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[a_Children].[ChildID],
+	[a_Children].[ParentID]
 FROM
-	[Parent] [_]
-		INNER JOIN [Child] [c_1] ON Convert(BigInt, [_].[ParentID]) = [c_1].[ParentID]
+	[Parent] [p]
+		INNER JOIN [Child] [a_Children] ON CAST([p].[ParentID] AS BigInt) = [a_Children].[ParentID]
 WHERE
-	[_].[ParentID] = 1
+	[p].[ParentID] = 1
 
