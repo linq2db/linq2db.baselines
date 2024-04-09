@@ -125,14 +125,12 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+	LISTAGG(g_1."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value1"
-ORDER BY
-	t1."Id"
+	g_1."Id",
+	g_1."Value1"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -129,18 +129,16 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @added TimeStamp -- DateTime
-SET     @added = TIMESTAMP '2017-01-01 00:00:00.000000'
 
 SELECT
 	a_Person."personid",
 	a_Person."personname",
-	Max(p."added")
+	MAX(VBIt."added")
 FROM
-	"activity649" p
-		INNER JOIN "person649" a_Person ON p."personid" = a_Person."personid"
+	"activity649" VBIt
+		INNER JOIN "person649" a_Person ON VBIt."personid" = a_Person."personid"
 WHERE
-	p."added" >= :added
+	VBIt."added" >= TO_TIMESTAMP('2017-01-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 GROUP BY
 	a_Person."personid",
 	a_Person."personname"
