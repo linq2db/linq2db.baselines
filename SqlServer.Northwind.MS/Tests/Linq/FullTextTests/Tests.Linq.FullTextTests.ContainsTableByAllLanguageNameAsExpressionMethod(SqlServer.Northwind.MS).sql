@@ -8,9 +8,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		CROSS APPLY CONTAINSTABLE([Categories], *, N'seafood OR bread', LANGUAGE N'Russian') [t]
-WHERE
-	[c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN CONTAINSTABLE([Categories], *, N'seafood OR bread', LANGUAGE N'Russian') [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 
