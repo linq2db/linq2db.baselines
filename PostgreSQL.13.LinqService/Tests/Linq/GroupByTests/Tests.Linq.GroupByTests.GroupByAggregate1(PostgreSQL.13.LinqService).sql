@@ -2,32 +2,32 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t2."Key_1"
+	g_2.c1
 FROM
 	(
 		SELECT
 			CASE
 				WHEN (
 					SELECT
-						Count(*)
+						COUNT(*)
 					FROM
-						"Child" t1
+						"Child" "a_Children"
 					WHERE
-						"selectParam"."ParentID" = t1."ParentID"
+						g_1."ParentID" = "a_Children"."ParentID"
 				) > 0 AND (
 					SELECT
-						Avg(c_1."ParentID")
+						AVG("a_Children_1"."ParentID")
 					FROM
-						"Child" c_1
+						"Child" "a_Children_1"
 					WHERE
-						"selectParam"."ParentID" = c_1."ParentID"
+						g_1."ParentID" = "a_Children_1"."ParentID"
 				) > 3
 					THEN True
 				ELSE False
-			END as "Key_1"
+			END as c1
 		FROM
-			"Parent" "selectParam"
-	) t2
+			"Parent" g_1
+	) g_2
 GROUP BY
-	t2."Key_1"
+	g_2.c1
 
