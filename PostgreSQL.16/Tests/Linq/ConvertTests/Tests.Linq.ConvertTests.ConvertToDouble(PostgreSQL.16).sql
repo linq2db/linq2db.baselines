@@ -2,9 +2,14 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as Float)
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			p."MoneyValue"::Float as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(t."MoneyValue" as Float) > 0
+	p_1.c1 > 0
 
