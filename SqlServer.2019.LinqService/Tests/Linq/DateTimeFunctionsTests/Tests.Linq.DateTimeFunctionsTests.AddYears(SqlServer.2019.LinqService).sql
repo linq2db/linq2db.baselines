@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	DateAdd(year, 1, [t].[DateTimeValue])
+	CAST(DateAdd(year, 1, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

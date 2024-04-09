@@ -1,34 +1,30 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
+	[t1].[not_null],
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[t1].[GrandChildID],
-	[t1].[is_empty],
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[a].[ParentID],
 				[a].[ChildID],
 				[a].[GrandChildID],
-				1 as [is_empty]
+				1 as [not_null]
 			FROM
 				[GrandChild] [a]
 			WHERE
 				[a].[ParentID] = [p].[ParentID]
 		) [t1]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
+			SELECT TOP (1)
 				[a_1].[ParentID],
 				[a_1].[ChildID]
 			FROM
