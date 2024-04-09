@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @str String(5) -- AnsiStringFixedLength
+DECLARE @str VarChar(5) -- String
 SET     @str = 'some%'
-DECLARE @str_1 String(5) -- StringFixedLength
+DECLARE @str_1 VarChar(5) -- String
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- AnsiString
+DECLARE @str_2 VarChar(5) -- String
 SET     @str_2 = 'some%'
 DECLARE @str_3 VarChar(5) -- String
 SET     @str_3 = 'some%'
