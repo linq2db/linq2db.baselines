@@ -2,32 +2,32 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[month_1],
-	[t1].[year_1],
+	[t1].[Month_1],
+	[t1].[Year_1],
 	1
 FROM
 	(
 		SELECT
-			DatePart('m', [selectParam].[DateTimeValue]) as [month_1],
-			DatePart('yyyy', [selectParam].[DateTimeValue]) as [year_1]
+			DatePart('m', [_].[DateTimeValue]) as [Month_1],
+			DatePart('yyyy', [_].[DateTimeValue]) as [Year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
+			[LinqDataTypes] [_]
 	) [t1]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	[t1].[Month_1],
+	[t1].[Year_1]
 UNION
 SELECT
-	[_].[SmallIntValue],
-	[_].[SmallIntValue],
+	[_1].[SmallIntValue],
+	[_1].[SmallIntValue],
 	3
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [_1]
 UNION
 SELECT
-	DatePart('yyyy', [_1].[DateTimeValue]),
-	DatePart('yyyy', [_1].[DateTimeValue]),
+	DatePart('yyyy', [_2].[DateTimeValue]),
+	DatePart('yyyy', [_2].[DateTimeValue]),
 	2
 FROM
-	[LinqDataTypes] [_1]
+	[LinqDataTypes] [_2]
 

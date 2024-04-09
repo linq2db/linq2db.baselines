@@ -2,34 +2,31 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[cnt],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d]
+		WHERE
+			[d].[PersonID] = [i].[PersonID]
+	),
 	[i].[PersonID],
 	[i].[FirstName],
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
-	[t2].[cnt]
+	[i].[LastName] + ', ' + [i].[FirstName],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d_1]
+		WHERE
+			[d_1].[PersonID] = [i].[PersonID]
+	)
 FROM
-	([Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [i].[PersonID]))
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d_1].[PersonID]
-			FROM
-				[Doctor] [d_1]
-			GROUP BY
-				[d_1].[PersonID]
-		) [t2] ON ([t2].[PersonID] = [i].[PersonID])
+	[Person] [i]
 WHERE
 	[i].[FirstName] <> 'John'
 

@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	CBool([t].[MoneyValue] - 4.5) = False
+	NOT CBool([t].[MoneyValue] - 4.5)
 
