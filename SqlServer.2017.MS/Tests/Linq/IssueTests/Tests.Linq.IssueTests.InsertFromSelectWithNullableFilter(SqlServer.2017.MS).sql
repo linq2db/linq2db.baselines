@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 0
 
 INSERT INTO [AllTypes]
 (
@@ -8,16 +10,16 @@ INSERT INTO [AllTypes]
 )
 SELECT
 	123,
-	[t1].[smallintDataType]
+	[t1].[ID]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			[_].[smallintDataType] IS NULL
+			[_].[smallintDataType] = @ID
 	) [t1]
 
 BeforeExecute
@@ -32,14 +34,14 @@ INSERT INTO [AllTypes]
 )
 SELECT
 	123,
-	[t1].[smallintDataType]
+	[t1].[ID]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
 			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+				INNER JOIN [AllTypes] [a_Association] ON [_].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
 			[_].[smallintDataType] = @ID
 	) [t1]

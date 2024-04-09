@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[ParentID],
@@ -10,9 +8,9 @@ FROM
 	[Parent] [_]
 WHERE
 	(
-		SELECT TOP (@take)
-			[r].[GuidValue]
+		SELECT TOP (1)
+			IIF([r].[GuidValue] IS NOT NULL, 1, 0)
 		FROM
 			[LinqDataTypes] [r]
-	) IS NOT NULL
+	) = 1
 
