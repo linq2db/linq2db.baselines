@@ -378,7 +378,7 @@ BeforeExecute
 SELECT
 	t1."Id",
 	t1."Value",
-	'M' || Cast(t1."Id" as text)
+	'M' || t1."Id"::text
 FROM
 	"InstanceClass" t1
 
