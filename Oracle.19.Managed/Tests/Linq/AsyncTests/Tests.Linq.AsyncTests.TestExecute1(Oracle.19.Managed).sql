@@ -2,11 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	p."FirstName"
 FROM
 	"Person" p
 WHERE
