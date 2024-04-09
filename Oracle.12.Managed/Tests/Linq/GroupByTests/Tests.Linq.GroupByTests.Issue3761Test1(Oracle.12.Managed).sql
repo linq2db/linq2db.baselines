@@ -34,20 +34,24 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @default_1 TimeStamp -- DateTime
-SET     @default_1 = TIMESTAMP '0001-01-01 00:00:00.000000'
 DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = TIMESTAMP '2019-01-01 00:00:00.000000'
 
 SELECT
-	t1."Key_1",
-	t1."Key_2",
-	Sum(t1.SKUPAJ)
+	t1."Year_1",
+	t1."Month_1",
+	SUM(t1.SKUPAJ)
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'YYYY')) as "Key_1",
-			To_Number(To_Char(Nvl(n.DATUM, :default_1), 'MM')) as "Key_2",
+			EXTRACT(YEAR FROM CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TIMESTAMP '0001-01-01 00:00:00.000000'
+			END) as "Year_1",
+			EXTRACT(MONTH FROM CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TIMESTAMP '0001-01-01 00:00:00.000000'
+			END) as "Month_1",
 			n.SKUPAJ
 		FROM
 			"Issue3761Table" n
@@ -55,8 +59,8 @@ FROM
 			n.DATUM < :DATUM
 	) t1
 GROUP BY
-	t1."Key_1",
-	t1."Key_2"
+	t1."Year_1",
+	t1."Month_1"
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

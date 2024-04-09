@@ -2,9 +2,9 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID > 1000
+	t.ID > 1000
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -46,8 +46,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t.ID,
@@ -61,13 +59,13 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID = 1001
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID > 1000
+	t.ID > 1000
 

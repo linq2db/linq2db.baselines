@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Trunc(t."DateTimeValue", 'DD') > :Date_1
+	TRUNC(t."DateTimeValue") > :Date_1
 

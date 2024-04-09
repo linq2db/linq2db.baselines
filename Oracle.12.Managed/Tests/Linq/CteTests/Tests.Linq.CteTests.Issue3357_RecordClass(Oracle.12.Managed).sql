@@ -16,13 +16,13 @@ AS
 		r."FirstName",
 		r."LastName"
 	FROM
-		"cte" p_1
-			INNER JOIN "Person" r ON p_1."FirstName" = r."LastName"
+		"cte" t1
+			INNER JOIN "Person" r ON t1."FirstName" = r."LastName"
 )
 SELECT
-	t1."Id",
-	t1."FirstName",
-	t1."LastName"
+	t2."Id",
+	t2."FirstName",
+	t2."LastName"
 FROM
-	"cte" t1
+	"cte" t2
 
