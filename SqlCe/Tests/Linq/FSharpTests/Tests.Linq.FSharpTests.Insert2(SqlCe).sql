@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Max([p].[PersonID])
+	MAX([t1].[PersonID]) as [MAX_1]
 FROM
-	[Person] [p]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlCe
@@ -34,15 +34,13 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[p].[PersonID],
-	[p].[Gender],
+SELECT TOP (2)
+	[p].[PersonID] as [ID],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName]
+	[p].[LastName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE

@@ -34,10 +34,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Id],
 	[_].[BlobValue]
 FROM
@@ -47,10 +45,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[_].[Id],
 	[_].[BlobValue]
 FROM
