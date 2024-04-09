@@ -86,32 +86,30 @@ SET
 
 BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 UPDATE
-	`billing_TempReading` `t1`
+	`billing_TempReading` `t3`
+		LEFT JOIN (
+			SELECT
+				`w`.`Id`,
+				ROW_NUMBER() OVER (PARTITION BY `w`.`Name`, `w`.`DevTypeId` ORDER BY `w`.`Name`) as `rn`,
+				`w`.`Name`,
+				`w`.`DevTypeId`
+			FROM
+				`billing_DevReadingType` `w`
+		) `t1` ON (`t1`.`Name` = `t3`.`ReadingTypeName` OR `t1`.`Name` IS NULL AND `t3`.`ReadingTypeName` IS NULL) AND (`t1`.`DevTypeId` = `t3`.`Devtypeid` OR `t1`.`DevTypeId` IS NULL AND `t3`.`Devtypeid` IS NULL) AND `t1`.`rn` <= 1
+		LEFT JOIN (
+			SELECT
+				`w_1`.`Responsibility`,
+				ROW_NUMBER() OVER (PARTITION BY `w_1`.`Name`, `w_1`.`DevTypeId` ORDER BY `w_1`.`Name`) as `rn`,
+				`w_1`.`Name`,
+				`w_1`.`DevTypeId`
+			FROM
+				`billing_DevReadingType` `w_1`
+		) `t2` ON (`t2`.`Name` = `t3`.`ReadingTypeName` OR `t2`.`Name` IS NULL AND `t3`.`ReadingTypeName` IS NULL) AND (`t2`.`DevTypeId` = `t3`.`Devtypeid` OR `t2`.`DevTypeId` IS NULL AND `t3`.`Devtypeid` IS NULL) AND `t2`.`rn` <= 1
 SET
-	`t1`.`DevReadingTypeId` = (
-		SELECT
-			`w`.`Id`
-		FROM
-			`billing_DevReadingType` `w`
-		WHERE
-			`w`.`Name` = `t1`.`ReadingTypeName` AND `w`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take
-	),
-	`t1`.`Responsibility` = (
-		SELECT
-			`w_1`.`Responsibility`
-		FROM
-			`billing_DevReadingType` `w_1`
-		WHERE
-			`w_1`.`Name` = `t1`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take_1
-	)
+	`t3`.`DevReadingTypeId` = `t1`.`Id`,
+	`t3`.`Responsibility` = `t2`.`Responsibility`
 
 BeforeExecute
 -- MySqlConnector MySql
