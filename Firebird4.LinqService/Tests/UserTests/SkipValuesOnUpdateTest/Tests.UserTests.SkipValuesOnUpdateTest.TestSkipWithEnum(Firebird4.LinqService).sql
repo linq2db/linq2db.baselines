@@ -44,18 +44,16 @@ INSERT INTO "PR_1598_Update_Enum_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age,
-	@Gender
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(3)),
+	CAST(@Age AS Int),
+	CAST(@Gender AS VARCHAR(6))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age",
@@ -77,20 +75,18 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age,
-	"PR_1598_Update_Enum_Table"."Gender" = @Gender
+	"Name" = CAST(@Name AS VARCHAR(4)),
+	"Age" = CAST(@Age AS Int),
+	"Gender" = CAST(@Gender AS VARCHAR(4))
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age",
@@ -110,19 +106,17 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(8)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age",

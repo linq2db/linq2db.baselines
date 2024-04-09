@@ -51,19 +51,17 @@ INSERT INTO "Issue1438"
 )
 VALUES
 (
-	@Has
+	CAST(@Has AS CHAR)
 )
 RETURNING
 	"Id"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Has"
 FROM
