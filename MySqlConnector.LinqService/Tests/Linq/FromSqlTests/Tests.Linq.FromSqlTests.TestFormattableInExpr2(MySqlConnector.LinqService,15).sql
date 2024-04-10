@@ -376,7 +376,7 @@ BeforeExecute
 -- MySqlConnector MySql
 DECLARE @startId Int64
 SET     @startId = 5
-DECLARE @endId Int32
+DECLARE @endId Null -- Object
 SET     @endId = 15
 
 SELECT

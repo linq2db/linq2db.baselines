@@ -12,5 +12,25 @@ WHERE
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
+		WHERE
+			`p`.`ParentID` IS NOT NULL
 	)
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
+FROM
+	`Child` `t1`
+
+BeforeExecute
+-- MySql MySql.Official MySql
+
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`Value1`
+FROM
+	`Parent` `t1`
 

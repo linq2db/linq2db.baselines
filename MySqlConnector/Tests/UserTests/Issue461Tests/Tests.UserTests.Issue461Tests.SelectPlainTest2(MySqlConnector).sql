@@ -1,17 +1,16 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
-	(
-		SELECT
-			`c_1`.`ParentID` + 1
-		FROM
-			`Child` `c_1`
-		LIMIT @take
-	)
+	`t1`.`V`
 FROM
 	`Parent` `p`
+		LEFT JOIN (
+			SELECT
+				`c_1`.`ParentID` + 1 as `V`
+			FROM
+				`Child` `c_1`
+			LIMIT 1
+		) `t1` ON 1=1
 

@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Cast(`t`.`DateTimeValue` as Date)
+	Date(`t`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `t`
 

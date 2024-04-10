@@ -376,7 +376,7 @@ BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @startId Int64
 SET     @startId = 5
-DECLARE @endId Int32
+DECLARE @endId Blob -- Object
 SET     @endId = 14
 
 SELECT
