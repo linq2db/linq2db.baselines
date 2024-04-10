@@ -38,7 +38,7 @@ FROM
 		)
 		VALUES
 		(
-			@Has
+			CAST(@Has AS smallint)
 		)
 	)
 

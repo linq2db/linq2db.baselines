@@ -23,10 +23,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS NVarChar(18)),
+	CAST(@LastName AS NVarChar(8)),
+	CAST(@MiddleName AS NVarChar(15)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -58,13 +58,13 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."Gender" = @Gender
+	"FirstName" = @FirstName,
+	"LastName" = @LastName,
+	"Gender" = @Gender
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

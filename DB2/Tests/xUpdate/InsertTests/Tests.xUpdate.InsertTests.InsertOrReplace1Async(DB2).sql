@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(4)),
+			CAST(@LastName AS NVarChar(7)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 
@@ -43,14 +43,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -59,8 +59,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -71,14 +71,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc1'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -87,8 +87,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -99,14 +99,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc2'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -115,8 +115,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute

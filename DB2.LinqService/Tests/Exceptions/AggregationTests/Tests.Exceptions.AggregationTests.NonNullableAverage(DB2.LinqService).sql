@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Avg("_"."ParentID")
+	AVG("_"."ParentID")
 FROM
 	"Parent" "_"
 WHERE

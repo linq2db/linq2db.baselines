@@ -34,8 +34,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -88,8 +88,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -106,8 +106,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -124,8 +124,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -142,8 +142,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -160,8 +160,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -178,8 +178,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -196,8 +196,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -214,8 +214,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -232,8 +232,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -250,8 +250,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -268,8 +268,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -286,8 +286,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -304,8 +304,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -322,8 +322,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -340,8 +340,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -358,8 +358,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
@@ -376,8 +376,8 @@ INSERT INTO "InstanceClass"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute

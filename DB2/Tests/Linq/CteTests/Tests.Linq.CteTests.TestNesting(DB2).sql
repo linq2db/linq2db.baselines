@@ -67,7 +67,7 @@ END
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 ("Property2")
+WITH CTE_1 ("Property1")
 AS
 (
 	SELECT
@@ -80,13 +80,8 @@ SELECT
 	"t_1"."Property2",
 	"t_1"."Property3"
 FROM
-	(
-		SELECT
-			"c1"."Property2" as "Property1"
-		FROM
-			CTE_1 "c1",
-			"NestingC" "t"
-	) "c2",
+	CTE_1 "c2",
+	"NestingC" "t",
 	"NestingC" "t_1"
 
 BeforeExecute

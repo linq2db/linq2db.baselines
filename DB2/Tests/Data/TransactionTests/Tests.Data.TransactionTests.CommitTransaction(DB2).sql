@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
@@ -22,11 +22,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Parent"
+	"Parent" "t"
 SET
-	"Parent"."Value1" = 1011
+	"Value1" = 1011
 WHERE
-	"Parent"."ParentID" = 1010
+	"t"."ParentID" = 1010
 
 BeforeExecute
 CommitTransaction

@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + ("t"."SmallIntValue" * 7) Day
+	DATE("t"."DateTimeValue" + ("t"."SmallIntValue" * 7) DAY)
 FROM
 	"LinqDataTypes" "t"
 

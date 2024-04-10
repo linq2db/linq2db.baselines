@@ -35,13 +35,13 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	@Field1
+	CAST(@Field1 AS NVarChar(8168))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
+SET     @Field1 = ''
 
 INSERT INTO "Issue1373Tests"
 (

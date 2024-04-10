@@ -25,11 +25,11 @@ DECLARE @Test Integer(4) -- Int32
 SET     @Test = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."TestИмя" = @Test
+	"TestИмя" = CAST(@Test AS Int)
 WHERE
-	"testparams"."TestИмя" = 1
+	"t"."TestИмя" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

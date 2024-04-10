@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "_"
 WHERE
-	"t1"."PersonID" > 4
+	"_"."PersonID" > 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -31,10 +31,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(5)),
+			CAST(@LastName AS NVarChar(7)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 
@@ -80,10 +80,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(5)),
+			CAST(@LastName AS NVarChar(7)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 
@@ -108,7 +108,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "_"
 WHERE
-	"t1"."PersonID" > 4
+	"_"."PersonID" > 4
 

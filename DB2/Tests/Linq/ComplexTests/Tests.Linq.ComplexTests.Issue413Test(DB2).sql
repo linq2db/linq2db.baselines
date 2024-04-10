@@ -82,8 +82,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -100,8 +100,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -118,8 +118,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -136,8 +136,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -154,8 +154,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -178,10 +178,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	@InstrumentId,
-	@InstrumentCode,
-	@CreateDate,
-	@SourceInstrumentCode
+	CAST(@InstrumentId AS Int),
+	CAST(@InstrumentCode AS NVarChar(4)),
+	CAST(@CreateDate AS timestamp),
+	CAST(@SourceInstrumentCode AS NVarChar(7))
 )
 
 BeforeExecute
@@ -204,10 +204,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	@InstrumentId,
-	@InstrumentCode,
-	@CreateDate,
-	@SourceInstrumentCode
+	CAST(@InstrumentId AS Int),
+	CAST(@InstrumentCode AS NVarChar(4)),
+	CAST(@CreateDate AS timestamp),
+	CAST(@SourceInstrumentCode AS NVarChar(255))
 )
 
 BeforeExecute
@@ -229,8 +229,8 @@ FROM
 				INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 				INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 		WHERE
-			"ins"."SourceInstrumentCode" IS NOT NULL AND "_"."InstrumentCode" LIKE @cond ESCAPE '~' AND
-			"_"."CreateDate" <= @uptoDate
+			"_"."InstrumentCode" LIKE @cond ESCAPE '~' AND "_"."CreateDate" <= @uptoDate AND
+			"ins"."SourceInstrumentCode" IS NOT NULL
 	) "t4"
 ORDER BY
 	"t4"."SourceInstrumentCode"

@@ -2,11 +2,17 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"nm"."MiddleName"
+	"nm_1"."MiddleName"
 FROM
-	"Person" "nm"
+	(
+		SELECT
+			CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) as "Length_1",
+			"nm"."MiddleName"
+		FROM
+			"Person" "nm"
+	) "nm_1"
 WHERE
-	(CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) <> 0 OR CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) IS NULL)
+	("nm_1"."Length_1" <> 0 OR "nm_1"."Length_1" IS NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
