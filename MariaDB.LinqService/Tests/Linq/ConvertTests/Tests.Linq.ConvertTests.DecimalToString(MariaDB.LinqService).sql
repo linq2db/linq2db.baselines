@@ -2,9 +2,9 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Cast(`t`.`MoneyValue` as CHAR(31))
+	CAST(`p`.`MoneyValue` AS CHAR(31))
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes` `p`
 WHERE
-	Char_Length(Cast(`t`.`MoneyValue` as CHAR(31))) > 0
+	Char_Length(CAST(`p`.`MoneyValue` AS CHAR(31))) > 0
 

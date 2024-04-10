@@ -3,11 +3,11 @@ BeginTransaction
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
@@ -19,13 +19,13 @@ INSERT INTO `LinqDataTypes`
 	`BoolValue`
 )
 SELECT
-	Cast(Floor(`t1`.`c1` + 1001) as SIGNED),
+	CAST(Floor(`t1`.`c1` + 1001) AS SIGNED),
 	Uuid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast(`_`.`ID` as Decimal(29, 10)) / 3) as `c1`
+			Floor(CAST(`_`.`ID` AS Decimal(29, 10)) / 3) as `c1`
 		FROM
 			`LinqDataTypes` `_`
 	) `t1`
@@ -33,9 +33,9 @@ FROM
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 

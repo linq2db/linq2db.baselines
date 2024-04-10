@@ -65,7 +65,7 @@ INSERT INTO `DestinationTable`
 SELECT
 	`s`.`Id` + @param,
 	`s`.`Value` + @param,
-	Concat(`s`.`ValueStr`, Cast(@param_1 as CHAR(100)))
+	Concat(`s`.`ValueStr`, @param_1)
 FROM
 	`TableWithData` `s`
 WHERE
@@ -77,11 +77,17 @@ RETURNING
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 200
+DECLARE @Value Int32
+SET     @Value = 200
+DECLARE @p Null -- Object
+SET     @p = 200
 
 SELECT
-	`s`.`Id`,
-	`s`.`Value`,
-	`s`.`ValueStr`
+	`s`.`Id` + @Id,
+	`s`.`Value` + @Value,
+	Concat(`s`.`ValueStr`, @p)
 FROM
 	`TableWithData` `s`
 WHERE

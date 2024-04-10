@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	`_`.`FirstName` COLLATE utf8_bin
+	Concat('1', `_`.`FirstName` COLLATE utf8_bin, '2')
 FROM
 	`Person` `_`
 

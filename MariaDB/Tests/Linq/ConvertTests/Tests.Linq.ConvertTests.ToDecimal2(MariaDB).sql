@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Cast(`t`.`MoneyValue` as Decimal(10, 4))
+	CAST(`t`.`MoneyValue` AS DECIMAL(10, 4))
 FROM
 	`LinqDataTypes` `t`
 

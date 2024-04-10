@@ -374,9 +374,9 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @startId Int32
+DECLARE @startId Null -- Object
 SET     @startId = 5
-DECLARE @endId Int32
+DECLARE @endId Null -- Object
 SET     @endId = 15
 
 SELECT
