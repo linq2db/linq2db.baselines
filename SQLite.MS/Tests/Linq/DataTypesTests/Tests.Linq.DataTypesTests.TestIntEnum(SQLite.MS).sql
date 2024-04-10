@@ -28,9 +28,9 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Column NVarChar -- String
+DECLARE @Column  -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
 SELECT

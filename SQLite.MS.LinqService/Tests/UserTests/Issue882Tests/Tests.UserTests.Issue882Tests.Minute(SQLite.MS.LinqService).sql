@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast(StrFTime('%M', [t].[DateTimeValue]) as int) % 7
+	CAST(strftime('%M', [t].[DateTimeValue]) AS INTEGER) % 7
 FROM
 	[LinqDataTypes] [t]
 

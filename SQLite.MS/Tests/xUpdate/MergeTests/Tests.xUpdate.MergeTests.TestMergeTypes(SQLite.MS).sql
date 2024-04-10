@@ -113,7 +113,7 @@ SET     @FieldBinary = X''
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'00000000000000000000000000000000'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2000-11-23'
+SET     @FieldDate = '2000-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = 'FIRST'
 DECLARE @FieldEnumNumber  -- Int32
@@ -189,7 +189,7 @@ SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32
@@ -264,7 +264,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2110-11-23'
+SET     @FieldDate = '2110-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = ''
 DECLARE @FieldEnumNumber  -- Int32
@@ -338,7 +338,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2111-11-23'
+SET     @FieldDate = '2111-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32
@@ -414,7 +414,7 @@ SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32
@@ -488,7 +488,7 @@ SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2010-11-23'
+SET     @FieldDate = '2010-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32
@@ -564,7 +564,7 @@ SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32
