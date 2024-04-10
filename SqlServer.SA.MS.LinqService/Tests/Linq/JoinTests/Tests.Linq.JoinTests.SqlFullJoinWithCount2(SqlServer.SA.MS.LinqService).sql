@@ -1,22 +1,23 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
-	COUNT([left_1].[ParentID]),
-	COUNT([p_1].[ParentID]),
-	COUNT(*)
+SELECT TOP (2)
+	[t1].[c1]
 FROM
 	(
 		SELECT
-			[p].[ParentID]
+			IIF(COUNT([left_1].[ParentID]) = COUNT([right_1].[ParentID]) AND COUNT([left_1].[ParentID]) = COUNT(*), 1, 0) as [c1]
 		FROM
-			[Parent] [p]
-		WHERE
-			[p].[ParentID] <> @id
-	) [left_1]
-		FULL JOIN [Parent] [p_1] ON [p_1].[ParentID] = [left_1].[ParentID]
+			(
+				SELECT
+					[p].[ParentID]
+				FROM
+					[Parent] [p]
+				WHERE
+					[p].[ParentID] <> @id
+			) [left_1]
+				FULL JOIN [Parent] [right_1] ON [right_1].[ParentID] = [left_1].[ParentID]
+	) [t1]
 

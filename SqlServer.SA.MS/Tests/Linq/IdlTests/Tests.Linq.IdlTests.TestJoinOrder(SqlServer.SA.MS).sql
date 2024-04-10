@@ -2,25 +2,25 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[x_2].[ChildID],
-	[x_2].[ParentID],
-	[x_1].[PersonID],
-	[x_1].[FirstName]
+	[x].[ChildID],
+	[x].[ParentID],
+	[p3].[PersonID],
+	[p3].[FirstName]
 FROM
-	[GrandChild] [x_2]
-		INNER JOIN [Person] [x] ON [x_2].[ParentID] = [x].[PersonID]
-		INNER JOIN [Person] [x_1] ON [x_2].[ChildID] = [x_1].[PersonID]
+	[GrandChild] [x]
+		INNER JOIN [Person] [p2] ON [x].[ParentID] = [p2].[PersonID]
+		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[x_2].[ChildID],
-	[x_2].[ParentID],
-	[x].[PersonID],
-	[x].[FirstName]
+	[x].[ChildID],
+	[x].[ParentID],
+	[p2].[PersonID],
+	[p2].[FirstName]
 FROM
-	[GrandChild] [x_2]
-		INNER JOIN [Person] [x] ON [x_2].[ParentID] = [x].[PersonID]
-		INNER JOIN [Person] [x_1] ON [x_2].[ChildID] = [x_1].[PersonID]
+	[GrandChild] [x]
+		INNER JOIN [Person] [p2] ON [x].[ParentID] = [p2].[PersonID]
+		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 

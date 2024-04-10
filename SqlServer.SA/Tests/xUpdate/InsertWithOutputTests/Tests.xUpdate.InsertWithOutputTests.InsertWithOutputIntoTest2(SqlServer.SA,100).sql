@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -20,10 +20,6 @@ CREATE TABLE [tempdb]..[#TInserted]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 1001
-DECLARE @param Int -- Int32
-SET     @param = 100
 
 INSERT INTO [Child]
 (
@@ -40,7 +36,7 @@ INTO [tempdb]..[#TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	@id + @param
+	1101
 FROM
 	[Child] [c_1]
 WHERE
@@ -74,9 +70,9 @@ DROP TABLE [tempdb]..[#TInserted]
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
