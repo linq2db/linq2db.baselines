@@ -16,6 +16,8 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @id Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @testId Guid
+SET     @testId = '00000000-0000-0000-0000-000000000000'
 
 INSERT INTO `Issue1363`
 (
@@ -31,7 +33,7 @@ VALUES
 		FROM
 			`Issue1363` `_`
 		WHERE
-			`_`.`required_field` IS NULL
+			`_`.`required_field` = @testId
 	)
 )
 
@@ -64,8 +66,6 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 DECLARE @id2 Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`required_field`,
@@ -74,7 +74,7 @@ FROM
 	`Issue1363` `_`
 WHERE
 	`_`.`required_field` = @id2
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql

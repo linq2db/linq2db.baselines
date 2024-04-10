@@ -2,7 +2,7 @@
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Cast(Floor(`t`.`MoneyValue`) as Unsigned)
+	CAST(Floor(`t`.`MoneyValue`) AS SIGNED)
 FROM
 	`LinqDataTypes` `t`
 
