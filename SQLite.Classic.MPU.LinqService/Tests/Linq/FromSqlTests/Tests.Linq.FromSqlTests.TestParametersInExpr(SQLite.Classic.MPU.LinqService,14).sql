@@ -376,7 +376,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @startId  -- Int64
 SET     @startId = 1
-DECLARE @endId  -- Int32
+DECLARE @endId  -- Object
 SET     @endId = 14
 
 SELECT

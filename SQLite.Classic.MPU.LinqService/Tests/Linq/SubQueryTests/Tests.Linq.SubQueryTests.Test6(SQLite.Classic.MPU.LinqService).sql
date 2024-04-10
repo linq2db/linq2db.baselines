@@ -8,7 +8,7 @@ SELECT
 	[c_1].[ParentID],
 	(
 		SELECT
-			Sum([g_1].[ChildID] * [g_1].[GrandChildID])
+			SUM([g_1].[ChildID] * [g_1].[GrandChildID])
 		FROM
 			[GrandChild] [g_1]
 		WHERE
@@ -16,7 +16,7 @@ SELECT
 	),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[GrandChild] [g_2]
 		WHERE

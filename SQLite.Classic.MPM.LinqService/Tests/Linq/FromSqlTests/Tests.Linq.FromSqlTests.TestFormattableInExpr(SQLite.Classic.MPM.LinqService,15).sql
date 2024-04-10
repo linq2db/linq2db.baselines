@@ -374,9 +374,9 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @startId  -- Int32
+DECLARE @startId  -- Object
 SET     @startId = 5
-DECLARE @endId  -- Int32
+DECLARE @endId  -- Object
 SET     @endId = 15
 
 SELECT

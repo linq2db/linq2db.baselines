@@ -29,18 +29,16 @@ CREATE TABLE IF NOT EXISTS [person649]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @added  -- DateTime
-SET     @added = '2017-01-01'
 
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	Max([f].[added])
+	MAX([f].[added])
 FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]
 WHERE
-	DateTime([f].[added]) >= DateTime(@added)
+	strftime('%Y-%m-%d %H:%M:%f', [f].[added]) >= strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2017-01-01 00:00:00.000'))
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]
