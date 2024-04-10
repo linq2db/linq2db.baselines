@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	DateAdd(weekday, 1, [t].[TransactionDate])
+	CAST(DateAdd(weekday, 1, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

@@ -272,7 +272,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + Convert(VarChar(100), @param_1)
+	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
@@ -280,11 +280,17 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
+DECLARE @Id Int -- Int32
+SET     @Id = 200
+DECLARE @Value Int -- Int32
+SET     @Value = 200
+DECLARE @p Variant -- Object
+SET     @p = 200
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @Id,
+	[s].[Value] + @Value,
+	[s].[ValueStr] + CAST(@p AS VarChar(Max))
 FROM
 	[TableWithData] [s]
 WHERE
