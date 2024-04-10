@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[p].[ParentID],
@@ -11,11 +9,11 @@ FROM
 WHERE
 	[p].[ParentID] IN (
 		SELECT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
 			(
-				SELECT TOP (@take)
-					[p].[ParentID]
+				SELECT TOP (3)
+					*
 				FROM
 					[Parent] [p1]
 				WHERE
