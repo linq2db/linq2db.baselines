@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date DateTime
-SET     @Date = #2009-09-20#
 
 SELECT
 	[_].[ID],
@@ -17,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateValue([_].[DateTimeValue]) = ?
+	DateValue([_].[DateTimeValue]) = DateValue(DateSerial(2009, 9, 20))
 

@@ -2,8 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[DateTimeValue],
-	[t].[SmallIntValue]
+	DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

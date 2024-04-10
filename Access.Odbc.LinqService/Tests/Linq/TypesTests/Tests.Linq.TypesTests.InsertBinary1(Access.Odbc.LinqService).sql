@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 WHERE
-	[t1].[ID] > 1000
+	[_].[ID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -28,7 +28,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [_]
 WHERE
-	[t1].[ID] > 1000
+	[_].[ID] > 1000
 

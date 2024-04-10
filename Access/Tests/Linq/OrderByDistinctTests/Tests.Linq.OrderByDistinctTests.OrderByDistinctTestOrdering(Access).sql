@@ -97,14 +97,10 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1])
 
 BeforeExecute
 -- Access AccessOleDb
@@ -119,14 +115,10 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Access AccessOleDb
@@ -141,15 +133,10 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Min([x].[OrderData2])
 
 BeforeExecute
 -- Access AccessOleDb
@@ -165,15 +152,10 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Access AccessOleDb
@@ -189,15 +171,10 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1]) DESC,
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Access AccessOleDb
@@ -213,15 +190,10 @@ ORDER BY
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Access AccessOleDb

@@ -3,7 +3,7 @@ BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
+SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM

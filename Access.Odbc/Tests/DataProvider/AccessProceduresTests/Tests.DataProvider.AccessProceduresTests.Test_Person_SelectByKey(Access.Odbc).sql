@@ -4,7 +4,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([_].[PersonID])
+	MAX([_].[PersonID])
 FROM
 	[Person] [_]
 

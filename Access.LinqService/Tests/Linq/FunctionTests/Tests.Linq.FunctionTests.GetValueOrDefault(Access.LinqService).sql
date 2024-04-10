@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @default Integer -- Int32
-SET     @default = 0
 
 SELECT
-	[p].[Value1]
+	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 0)
 FROM
 	[Parent] [p]
 WHERE
-	Iif([p].[Value1] IS NULL, @default, [p].[Value1]) > 0
+	[p].[Value1] > 0 AND [p].[Value1] IS NOT NULL
 
