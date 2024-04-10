@@ -375,9 +375,9 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @startId Int -- Int32
+DECLARE @startId Variant -- Object
 SET     @startId = 5
-DECLARE @endId Int -- Int32
+DECLARE @endId Variant -- Object
 SET     @endId = 15
 
 SELECT
