@@ -42,8 +42,6 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @diagnosis Int32
-SET     @diagnosis = 3
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -53,7 +51,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast(Length(t1."Diagnosis") as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -63,7 +61,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:diagnosis as VarChar(11))
+		CAST(3 AS VarChar(255))
 	)
 
 BeforeExecute
@@ -72,8 +70,6 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 1
-DECLARE @i_1 Int32
-SET     @i_1 = 4
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -83,7 +79,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -93,7 +89,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i_1 as VarChar(11))
+		CAST(4 AS VarChar(255))
 	)
 
 BeforeExecute
@@ -102,8 +98,6 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @i Int32
 SET     @i = 2
-DECLARE @i_1 Int32
-SET     @i_1 = 5
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -113,7 +107,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -123,15 +117,13 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		:id,
-		Cast(:i_1 as VarChar(11))
+		CAST(5 AS VarChar(255))
 	)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -140,5 +132,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
