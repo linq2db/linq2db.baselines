@@ -2,10 +2,10 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Avg(t1."doubleDataType"),
-	test_avg(t1."doubleDataType")
+	AVG(g_1."doubleDataType"),
+	test_avg(g_1."doubleDataType")
 FROM
-	"AllTypes" t1
+	"AllTypes" g_1
 GROUP BY
-	t1."bitDataType"
+	g_1."bitDataType"
 
