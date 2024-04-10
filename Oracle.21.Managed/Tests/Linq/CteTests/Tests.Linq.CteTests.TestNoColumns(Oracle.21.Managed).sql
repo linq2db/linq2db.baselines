@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-WITH CTE1_ ("ChildID")
+WITH CTE1_ ("C_ChildID")
 AS
 (
 	SELECT
@@ -42,11 +42,10 @@ FROM
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-WITH CTE1_ ("ChildID")
-AS
+WITH CTE1_ AS
 (
 	SELECT
-		c_1."ChildID"
+		*
 	FROM
 		"Child" c_1
 )
@@ -57,8 +56,7 @@ SELECT
 				*
 			FROM
 				CTE1_ t1
-		)
-			THEN 1
+		) THEN 1
 		ELSE 0
 	END
 FROM SYS.DUAL
