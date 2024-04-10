@@ -27,10 +27,10 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@FirstName,
-	@MiddleName,
-	@LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@FirstName AS VARCHAR(1)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@LastName AS VARCHAR(1))
 )
 RETURNING
 	"PersonID"
@@ -59,22 +59,20 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@FirstName,
+	CAST(@Gender AS CHAR(1)),
+	CAST(@FirstName AS VARCHAR(1)),
 	@MiddleName,
-	@LastName
+	CAST(@LastName AS VARCHAR(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",
@@ -87,12 +85,10 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 8
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",

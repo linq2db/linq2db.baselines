@@ -2,14 +2,9 @@
 -- Firebird3 Firebird
 
 SELECT
-	"t"."c1"
+	Extract(year from "t"."DateTimeValue")
 FROM
-	(
-		SELECT
-			Cast((Lpad(Cast(Floor(Extract(year from "p"."DateTimeValue")) as int),4,'0') || '-10-01') as Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Cast(Floor(Extract(month from "t"."c1")) as int) = 10
+	Extract(month from CAST(LPad(CAST(Extract(year from "t"."DateTimeValue") AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-10-01' AS TimeStamp)) = 10
 
