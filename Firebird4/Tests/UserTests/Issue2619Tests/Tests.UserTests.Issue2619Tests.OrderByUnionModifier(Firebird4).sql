@@ -2,8 +2,6 @@
 -- Firebird4 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT
 	"t2"."FirstName",
@@ -33,7 +31,7 @@ SELECT
 	"t4"."Gender"
 FROM
 	(
-		SELECT FIRST @take_1
+		SELECT FIRST @take
 			"t3"."FirstName",
 			"t3"."PersonID" as ID,
 			"t3"."LastName",

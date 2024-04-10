@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = -1
 
 SELECT
-	DateAdd(Day, Cast(@p as Int) * 7, "t"."DateTimeValue")
+	CAST(DateAdd(Day, -7, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 

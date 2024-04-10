@@ -36,8 +36,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -84,11 +84,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 3
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t1"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = CAST(@Data AS VARCHAR(9))
 WHERE
-	"TrimTestTable".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -96,11 +96,11 @@ DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = CAST(@Data AS VARCHAR(9))
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"t"."Data" = '***XXX***'
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -110,11 +110,11 @@ DECLARE @p VarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = CAST(@Data AS VARCHAR(9))
 WHERE
-	"TrimTestTable"."Data" = @p
+	"t"."Data" = @p
 
 BeforeExecute
 -- Firebird4 Firebird

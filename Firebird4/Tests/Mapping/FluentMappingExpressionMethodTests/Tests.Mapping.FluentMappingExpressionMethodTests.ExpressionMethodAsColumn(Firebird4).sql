@@ -55,7 +55,7 @@ BeforeExecute
 SELECT
 	"t1"."Id",
 	"t1"."Value",
-	'M' || Cast("t1"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS)
+	'M' || "t1"."Id"
 FROM
 	"InstanceClass" "t1"
 

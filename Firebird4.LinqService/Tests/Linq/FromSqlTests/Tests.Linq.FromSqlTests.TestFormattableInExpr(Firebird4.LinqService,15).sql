@@ -34,8 +34,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -88,8 +88,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -106,8 +106,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -124,8 +124,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -142,8 +142,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -160,8 +160,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -178,8 +178,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -196,8 +196,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -214,8 +214,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -232,8 +232,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -250,8 +250,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -268,8 +268,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -286,8 +286,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -304,8 +304,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -322,8 +322,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -340,8 +340,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -358,8 +358,8 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -376,15 +376,15 @@ INSERT INTO "sample_class"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(6))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @startId Integer -- Int32
+DECLARE @startId Binary
 SET     @startId = 5
-DECLARE @endId Integer -- Int32
+DECLARE @endId Binary
 SET     @endId = 15
 
 SELECT

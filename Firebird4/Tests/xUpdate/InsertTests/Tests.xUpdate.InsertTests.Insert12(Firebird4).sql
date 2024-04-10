@@ -2,6 +2,8 @@
 -- Firebird4 Firebird
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
+DECLARE @LastName VarChar(8) -- String
+SET     @LastName = 'LastName'
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'F'
 
@@ -15,8 +17,8 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	Cast(@FirstName as VarChar(255) CHARACTER SET UNICODE_FSS),
-	'LastName',
-	Cast(@Gender as NChar(1))
+	CAST(@FirstName AS VARCHAR(9)),
+	CAST(@LastName AS VARCHAR(8)),
+	CAST(@Gender AS CHAR(1))
 )
 
