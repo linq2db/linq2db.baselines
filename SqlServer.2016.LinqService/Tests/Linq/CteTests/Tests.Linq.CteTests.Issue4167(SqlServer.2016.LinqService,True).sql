@@ -106,28 +106,26 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 WITH [CTE_1] ([EnumValue])
 AS
 (
 	SELECT
-		Coalesce([t].[EnumValue], @default)
+		IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
 	FROM
-		[Issue4167Table] [t]
+		[Issue4167Table] [g_1]
 	WHERE
-		[t].[Value] = N'000001'
+		[g_1].[Value] = N'000001'
 	GROUP BY
-		[t].[Value],
-		[t].[EnumValue]
+		[g_1].[Value],
+		[g_1].[EnumValue]
 )
 SELECT
-	[r].[EnumValue]
+	[t1].[EnumValue]
 FROM
-	[CTE_1] [r]
+	[CTE_1] [t1]
 ORDER BY
-	[r].[EnumValue]
+	[t1].[EnumValue]
 
 BeforeExecute
 -- SqlServer.2016
