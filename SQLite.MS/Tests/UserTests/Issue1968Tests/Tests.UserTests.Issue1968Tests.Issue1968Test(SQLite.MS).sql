@@ -145,51 +145,47 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_University].[Id],
-	[detail].[Id],
-	[detail].[Code],
-	[detail].[FacultyName],
-	[detail].[Direction],
-	[detail].[Grant],
-	[detail].[Contract],
-	[detail].[UniversityId]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Code],
+	[d].[FacultyName],
+	[d].[Direction],
+	[d].[Grant],
+	[d].[Contract],
+	[d].[UniversityId]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[University] [t1]
-	) [lw_University]
-		INNER JOIN [Faculty] [detail] ON [lw_University].[Id] = [detail].[UniversityId]
+	) [m_1]
+		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_University].[Id],
-	[lw_University].[Name],
-	[lw_University].[Location],
-	[x].[SubjectId],
-	[x].[FirstSubject],
-	[x].[SecondSubject],
-	[x].[ThirdSubject],
-	[x].[FacultyId]
+	[m_2].[Id],
+	[d].[SubjectId],
+	[d].[FirstSubject],
+	[d].[SecondSubject],
+	[d].[ThirdSubject],
+	[d].[FacultyId]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id],
-			[t1].[Name],
-			[t1].[Location]
+			[t1].[Id]
 		FROM
 			[University] [t1]
-	) [lw_University]
-		INNER JOIN [Subject] [x] ON EXISTS(
+	) [m_2]
+		INNER JOIN [Subject] [d] ON EXISTS(
 			SELECT
 				*
 			FROM
 				[Faculty] [m_1]
 			WHERE
-				[lw_University].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [x].[FacultyId]
+				[m_2].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
 		)
 
 BeforeExecute

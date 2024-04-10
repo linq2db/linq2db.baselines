@@ -38,7 +38,7 @@ DECLARE @Id  -- Int32
 SET     @Id = 5
 
 SELECT
-	Sum(Cast([c_1].[Id] as Decimal))
+	SUM(CAST([c_1].[Id] AS Decimal))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

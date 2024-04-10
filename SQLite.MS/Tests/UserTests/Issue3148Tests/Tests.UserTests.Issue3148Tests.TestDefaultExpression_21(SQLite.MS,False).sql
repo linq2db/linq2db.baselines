@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @var1  -- Int32
+DECLARE @var1  -- Object
 SET     @var1 = 4
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @var1  -- Int32
+DECLARE @var1  -- Object
 SET     @var1 = 4
 
 SELECT

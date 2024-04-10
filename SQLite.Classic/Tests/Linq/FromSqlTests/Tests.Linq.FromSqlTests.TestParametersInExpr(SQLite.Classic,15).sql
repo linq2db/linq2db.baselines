@@ -46,7 +46,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @startId  -- Int64
 SET     @startId = 1
-DECLARE @endId  -- Int32
+DECLARE @endId  -- Object
 SET     @endId = 15
 
 SELECT
