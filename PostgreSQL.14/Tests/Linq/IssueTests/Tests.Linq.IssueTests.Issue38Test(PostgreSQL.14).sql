@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"GrandChild" t1
+			"GrandChild" "a_GrandChildren1"
 		WHERE
-			a."ParentID" = t1."ParentID" AND a."ChildID" = t1."ChildID"
+			a."ParentID" = "a_GrandChildren1"."ParentID" AND a."ChildID" = "a_GrandChildren1"."ChildID"
 	)
 FROM
 	"Child" a
