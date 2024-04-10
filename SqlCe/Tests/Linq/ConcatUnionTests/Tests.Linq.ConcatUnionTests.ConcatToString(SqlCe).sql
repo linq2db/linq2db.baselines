@@ -21,6 +21,6 @@ FROM
 		FROM
 			[Person] [p_1]
 		WHERE
-			Convert(NVarChar(11), [p_1].[PersonID]) LIKE @pattern ESCAPE '~'
+			CAST([p_1].[PersonID] AS NVarChar(11)) LIKE @pattern ESCAPE '~'
 	) [t1]
 

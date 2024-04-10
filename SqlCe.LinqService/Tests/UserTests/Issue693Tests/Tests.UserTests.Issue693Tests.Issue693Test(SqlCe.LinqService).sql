@@ -67,13 +67,11 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],
@@ -85,13 +83,11 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],

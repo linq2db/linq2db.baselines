@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[a_Parent].[Value1]
 FROM
 	[Parent] [x]
