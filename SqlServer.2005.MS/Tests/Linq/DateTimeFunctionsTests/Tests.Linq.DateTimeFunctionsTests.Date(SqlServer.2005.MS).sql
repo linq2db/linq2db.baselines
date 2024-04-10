@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime)
+	DateAdd(dd, DateDiff(dd, 0, [t].[DateTimeValue]), 0)
 FROM
 	[LinqDataTypes] [t]
 

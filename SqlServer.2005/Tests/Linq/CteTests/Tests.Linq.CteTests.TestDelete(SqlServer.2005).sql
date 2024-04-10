@@ -36,11 +36,12 @@ SELECT 1009,9
 BeforeExecute
 -- SqlServer.2005
 
-WITH [CTE_1] ([ParentID])
+WITH [CTE_1] ([ParentID], [ChildID])
 AS
 (
 	SELECT
-		[c_1].[ParentID]
+		[c_1].[ParentID],
+		[c_1].[ChildID]
 	FROM
 		[CteChild] [c_1]
 	WHERE

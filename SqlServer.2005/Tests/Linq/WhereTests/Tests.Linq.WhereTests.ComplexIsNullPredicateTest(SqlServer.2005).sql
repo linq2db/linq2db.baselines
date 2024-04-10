@@ -10,15 +10,10 @@ SELECT
 				[Person] [_]
 			WHERE
 				CASE
-					WHEN [_].[MiddleName] = N'123'
-						THEN 1
+					WHEN [_].[MiddleName] = N'123' THEN 1
 					ELSE 0
 				END = CASE
-					WHEN CASE
-						WHEN [_].[MiddleName] = N'1'
-							THEN N'test'
-						ELSE [_].[MiddleName]
-					END = N'test'
+					WHEN ([_].[MiddleName] = N'1' OR [_].[MiddleName] = N'test' AND ([_].[MiddleName] <> N'1' OR [_].[MiddleName] IS NULL))
 						THEN 1
 					ELSE 0
 				END

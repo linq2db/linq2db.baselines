@@ -11,9 +11,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -48,9 +48,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE

@@ -80,36 +80,25 @@ SELECT 2,N'French'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
-	[a_FirstUsersWithLanguage].[Id],
-	[a_FirstUsersWithLanguage_1].[Name]
+SELECT TOP (1)
+	[x].[Id],
+	[t1].[Id],
+	[a_Language].[Name]
 FROM
-	[UserGroup] [x_2]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[Id]
+	[UserGroup] [x]
+		LEFT JOIN (
+			SELECT
+				[a_FirstUsersWithLanguage].[Id],
+				[a_FirstUsersWithLanguage].[LanguageId],
+				ROW_NUMBER() OVER (PARTITION BY [a_FirstUsersWithLanguage].[UserGroupId] ORDER BY [a_FirstUsersWithLanguage].[UserGroupId]) as [rn],
+				[a_FirstUsersWithLanguage].[UserGroupId]
 			FROM
-				[User] [x]
+				[User] [a_FirstUsersWithLanguage]
 			WHERE
-				[x].[UserGroupId] = [x_2].[Id] AND [x].[LanguageId] = 1
-		) [a_FirstUsersWithLanguage]
-		OUTER APPLY (
-			SELECT TOP (@take_2)
-				[a_Language].[Name]
-			FROM
-				[User] [x_1]
-					LEFT JOIN [Language] [a_Language] ON [x_1].[LanguageId] = [a_Language].[Id]
-			WHERE
-				[x_1].[UserGroupId] = [x_2].[Id] AND [x_1].[LanguageId] = 1
-		) [a_FirstUsersWithLanguage_1]
+				[a_FirstUsersWithLanguage].[LanguageId] = 1
+		) [t1] ON [t1].[UserGroupId] = [x].[Id] AND [t1].[rn] <= 1
+		LEFT JOIN [Language] [a_Language] ON [t1].[LanguageId] = [a_Language].[Id]
 
 BeforeExecute
 -- SqlServer.2005
