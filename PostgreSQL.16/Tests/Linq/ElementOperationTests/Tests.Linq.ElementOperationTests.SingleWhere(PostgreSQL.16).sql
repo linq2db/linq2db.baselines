@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."ParentID",
@@ -10,5 +8,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" = 2
-LIMIT :take
+LIMIT 2
 
