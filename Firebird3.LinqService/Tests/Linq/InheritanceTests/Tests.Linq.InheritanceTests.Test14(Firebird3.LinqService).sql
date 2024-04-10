@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 10
 
-SELECT FIRST @take
-	"x"."ChildID"
+SELECT FIRST 1
+	"c_1"."ChildID"
 FROM
-	"Child" "x"
+	"Child" "c_1"
 WHERE
-	"x"."ChildID" = @id
+	"c_1"."ChildID" = @id
 

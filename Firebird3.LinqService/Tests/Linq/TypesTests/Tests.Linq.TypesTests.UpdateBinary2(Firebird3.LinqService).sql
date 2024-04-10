@@ -6,11 +6,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -20,11 +20,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 2
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- Firebird3 Firebird

@@ -53,7 +53,7 @@ BeforeExecute
 -- Firebird3 Firebird
 DECLARE @startId BigInt -- Int64
 SET     @startId = 5
-DECLARE @endId Integer -- Int32
+DECLARE @endId Binary
 SET     @endId = 14
 
 SELECT

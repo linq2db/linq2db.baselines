@@ -51,9 +51,9 @@ SELECT 20,'Str_20' FROM rdb$database
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @startId Integer -- Int32
+DECLARE @startId Binary
 SET     @startId = 5
-DECLARE @endId Integer -- Int32
+DECLARE @endId Binary
 SET     @endId = 15
 
 SELECT

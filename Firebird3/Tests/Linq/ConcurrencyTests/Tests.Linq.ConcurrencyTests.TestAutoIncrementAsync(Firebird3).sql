@@ -40,9 +40,9 @@ INSERT INTO "ConcurrencyAutoIncrement"
 )
 VALUES
 (
-	@Id,
-	@Stamp,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Stamp AS Int),
+	CAST(@Value AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -65,12 +65,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS VARCHAR(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -92,12 +92,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS VARCHAR(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -119,12 +119,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS VARCHAR(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- Firebird3 Firebird

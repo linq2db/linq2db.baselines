@@ -2,22 +2,22 @@
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass19')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "BlobClass19"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass16')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BlobClass16"';
 END
 
 BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass19')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass16')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "BlobClass19"
+			CREATE TABLE "BlobClass16"
 			(
 				"Id"        Int  NOT NULL,
 				"BlobValue" Blob,
 
-				CONSTRAINT "PK_BlobClass19" PRIMARY KEY ("Id")
+				CONSTRAINT "PK_BlobClass16" PRIMARY KEY ("Id")
 			)
 		';
 END
@@ -25,7 +25,7 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-INSERT INTO "BlobClass19"
+INSERT INTO "BlobClass16"
 (
 	"Id",
 	"BlobValue"
@@ -43,7 +43,7 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass19" "t1"
+	"BlobClass16" "t1"
 WHERE
 	"t1"."Id" = 1
 
@@ -54,7 +54,7 @@ SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass19" "t1"
+	"BlobClass16" "t1"
 WHERE
 	"t1"."Id" = 1
 
@@ -62,7 +62,7 @@ BeforeExecute
 -- Firebird3 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass19')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "BlobClass19"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BlobClass16')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "BlobClass16"';
 END
 

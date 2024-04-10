@@ -30,7 +30,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -107,7 +107,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -146,8 +146,8 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -164,25 +164,23 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS VARCHAR(9))
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"i"."Id",
 	"a_SubData"."Id",
 	(
-		SELECT FIRST @take
-			"s"."Reason"
+		SELECT FIRST 1
+			"a_SubDatas"."Reason"
 		FROM
-			"SubData2" "s"
+			"SubData2" "a_SubDatas"
 		WHERE
-			"a_SubData"."Id" = "s"."Id"
+			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
 	)
 FROM
 	"Data" "i"

@@ -84,9 +84,9 @@ INSERT INTO "BooleanTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS CHAR),
+	CAST(@ColumnNullable AS CHAR)
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "BooleanTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS CHAR),
+	CAST(@ColumnNullable AS CHAR)
 )
 
 BeforeExecute

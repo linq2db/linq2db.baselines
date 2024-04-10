@@ -42,18 +42,18 @@ INSERT INTO "User"
 )
 VALUES
 (
-	@Residence_City,
-	@Name,
-	@Residence_Street,
-	@Residence_Building
+	CAST(@Residence_City AS VARCHAR(10)),
+	CAST(@Name AS VARCHAR(6)),
+	CAST(@Residence_Street AS VARCHAR(10)),
+	CAST(@Residence_Building AS Int)
 )
 
 BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
-	"t1"."city",
 	"t1"."user_name",
+	"t1"."city",
 	"t1"."street",
 	"t1"."building_number"
 FROM
