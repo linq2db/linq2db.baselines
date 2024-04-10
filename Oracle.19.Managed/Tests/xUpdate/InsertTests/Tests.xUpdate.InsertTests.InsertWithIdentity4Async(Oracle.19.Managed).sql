@@ -40,12 +40,10 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
-	p."PersonID",
+	p."PersonID" as ID,
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -53,7 +51,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
@@ -89,12 +87,10 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
-	p."PersonID",
+	p."PersonID" as ID,
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -102,7 +98,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

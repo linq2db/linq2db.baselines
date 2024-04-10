@@ -2,9 +2,14 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Cast(Floor(t."MoneyValue") as Decimal)
+	p_1."c1"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CAST(Floor(p."MoneyValue") AS Decimal) as "c1"
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(Floor(t."MoneyValue") as Decimal) > 0
+	p_1."c1" > 0
 
