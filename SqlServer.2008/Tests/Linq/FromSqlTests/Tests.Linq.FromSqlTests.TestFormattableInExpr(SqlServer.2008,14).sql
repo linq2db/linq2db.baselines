@@ -46,9 +46,9 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @startId Int -- Int32
+DECLARE @startId Variant -- Object
 SET     @startId = 5
-DECLARE @endId Int -- Int32
+DECLARE @endId Variant -- Object
 SET     @endId = 14
 
 SELECT
