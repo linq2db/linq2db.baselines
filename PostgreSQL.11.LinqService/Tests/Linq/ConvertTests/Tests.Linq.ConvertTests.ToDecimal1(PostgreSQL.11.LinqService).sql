@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast((t."MoneyValue" * 1000) as Decimal(10))
+	(t."MoneyValue" * 1000)::decimal(10, 4)
 FROM
 	"LinqDataTypes" t
 

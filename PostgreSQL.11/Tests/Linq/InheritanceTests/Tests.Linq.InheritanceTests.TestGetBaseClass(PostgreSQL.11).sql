@@ -2,8 +2,8 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	x."ParentID",
-	x."Value1"
+	x."Value1",
+	x."ParentID"
 FROM
 	"Parent" x
 WHERE
