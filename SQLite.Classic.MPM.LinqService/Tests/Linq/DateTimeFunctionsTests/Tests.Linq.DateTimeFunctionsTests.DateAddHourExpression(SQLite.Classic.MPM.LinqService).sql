@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 1
 
 SELECT
-	Cast(StrFTime('%H', (strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p || ' Hour'))) as int)
+	CAST(strftime('%H', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '1 Hour')) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 
