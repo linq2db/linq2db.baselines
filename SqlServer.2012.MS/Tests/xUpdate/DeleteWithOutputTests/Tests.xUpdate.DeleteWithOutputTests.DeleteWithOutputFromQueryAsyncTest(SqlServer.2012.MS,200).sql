@@ -50,12 +50,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + CAST(@param AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
