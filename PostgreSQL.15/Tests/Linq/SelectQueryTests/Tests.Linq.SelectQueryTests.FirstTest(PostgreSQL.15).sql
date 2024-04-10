@@ -14,13 +14,11 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	CURRENT_TIMESTAMP + 1 * Interval '1 Day',
+	CURRENT_TIMESTAMP + Interval '1 Day',
 	CURRENT_TIMESTAMP + 2 * Interval '1 Day'
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
