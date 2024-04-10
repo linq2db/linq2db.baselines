@@ -48,7 +48,7 @@ BeforeExecute
 -- SqlServer.2012
 DECLARE @startId BigInt -- Int64
 SET     @startId = 1
-DECLARE @endId Int -- Int32
+DECLARE @endId Variant -- Object
 SET     @endId = 15
 
 SELECT
