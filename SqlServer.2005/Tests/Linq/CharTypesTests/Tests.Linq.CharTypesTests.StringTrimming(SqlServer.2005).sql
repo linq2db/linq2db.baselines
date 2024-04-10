@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	Max([_].[ID])
+	MAX([_].[ID])
 FROM
 	[AllTypes] [_]
 
