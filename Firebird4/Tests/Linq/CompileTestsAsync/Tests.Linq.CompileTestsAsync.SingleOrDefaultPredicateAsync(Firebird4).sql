@@ -41,12 +41,10 @@ SELECT 10 FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"

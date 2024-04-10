@@ -2,9 +2,9 @@
 -- Firebird4 Firebird
 
 SELECT
-	Max("p"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "p"
+	"Person" "t1"
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -28,23 +28,21 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS VARCHAR(1)),
+	CAST(@Name_FirstName AS VARCHAR(2)),
+	CAST(@Name_MiddleName AS VARCHAR(1)),
+	CAST(@Name_LastName AS VARCHAR(2))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
@@ -54,7 +52,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "t"
 WHERE
-	"t1"."PersonID" > 4
+	"t"."PersonID" > 4
 

@@ -4,8 +4,8 @@ DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT FIRST @n
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Child" "ch"
+	"Child" "t1"
 

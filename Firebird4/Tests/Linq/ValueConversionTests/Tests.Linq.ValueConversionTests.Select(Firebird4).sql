@@ -142,23 +142,21 @@ ORDER BY
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST @take SKIP @skip
-	"q"."Value2"
+SELECT FIRST 1 SKIP @skip
+	"t1"."Value2"
 FROM
 	(
 		SELECT
-			"t"."Id",
-			"t"."Value2"
+			"q"."Id",
+			"q"."Value2"
 		FROM
-			"ValueConversion" "t"
-	) "q"
+			"ValueConversion" "q"
+	) "t1"
 ORDER BY
-	"q"."Id"
+	"t1"."Id"
 
 BeforeExecute
 -- Firebird4 Firebird
