@@ -32,8 +32,6 @@ BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -42,5 +40,5 @@ FROM
 	"Parent" t
 WHERE
 	t."ParentID" = 1010
-LIMIT :take
+LIMIT 1
 
