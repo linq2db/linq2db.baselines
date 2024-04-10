@@ -69,10 +69,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -81,10 +79,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -93,10 +89,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -105,10 +99,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
@@ -117,10 +109,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]

@@ -2,17 +2,17 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [p]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -20,11 +20,11 @@ BeforeExecute
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[GrandChild] [t1]
+			[GrandChild] [a_GrandChildren]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_GrandChildren].[ParentID]
 	),
 	[p].[ParentID],
 	[p].[Value1]
