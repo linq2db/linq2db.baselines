@@ -72,8 +72,6 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value4___'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -81,7 +79,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (?, ?)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -89,8 +87,6 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum VarChar -- AnsiString
 SET     @CEnum = NULL
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -98,7 +94,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (?, ?)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -106,8 +102,6 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value2___'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -115,7 +109,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (?, ?)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -123,8 +117,6 @@ DECLARE @CEnum VarChar -- AnsiString
 SET     @CEnum = NULL
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value2___'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -132,7 +124,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (?, ?)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -140,8 +132,6 @@ DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum VarChar(12) -- AnsiString
 SET     @CEnum = '___Value2___'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -149,7 +139,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (?, ?)
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

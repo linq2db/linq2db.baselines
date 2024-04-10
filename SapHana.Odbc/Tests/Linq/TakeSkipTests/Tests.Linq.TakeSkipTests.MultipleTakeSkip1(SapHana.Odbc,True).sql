@@ -125,10 +125,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 1
-DECLARE @skip  -- Int32
-SET     @skip = 3
+DECLARE @take  -- Int32
+SET     @take = 1
 
 SELECT
 	"t1"."Value"
@@ -136,7 +134,7 @@ FROM
 	"TakeSkipClass" "t1"
 ORDER BY
 	"t1"."Value"
-LIMIT ? OFFSET ?
+LIMIT ? OFFSET 3
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

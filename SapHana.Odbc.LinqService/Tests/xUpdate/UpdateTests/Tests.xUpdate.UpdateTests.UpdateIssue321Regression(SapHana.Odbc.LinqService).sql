@@ -50,24 +50,22 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value2  -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id  -- Int32
 SET     @id = 100500
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "_"
 SET
-	"LinqDataTypes"."SmallIntValue" = Cast(Floor("LinqDataTypes"."MoneyValue" / (? / "LinqDataTypes"."IntValue")) as SmallInt)
+	"SmallIntValue" = CAST("_"."MoneyValue" / (? / "_"."IntValue") AS SmallInt)
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"_"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 100500
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"_"."SmallIntValue"
@@ -75,5 +73,5 @@ FROM
 	"LinqDataTypes" "_"
 WHERE
 	"_"."ID" = ?
-LIMIT ?
+LIMIT 1
 

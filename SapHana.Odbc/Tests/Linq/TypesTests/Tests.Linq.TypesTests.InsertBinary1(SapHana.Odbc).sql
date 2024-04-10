@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "_"
 WHERE
-	"t1"."ID" > 1000
+	"_"."ID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -28,7 +28,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "_"
 WHERE
-	"t1"."ID" > 1000
+	"_"."ID" > 1000
 

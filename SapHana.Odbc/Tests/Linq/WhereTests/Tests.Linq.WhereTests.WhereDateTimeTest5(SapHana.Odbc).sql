@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Date  -- DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
 	"_"."ID",
@@ -15,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	Cast("_"."DateTimeValue" as Date) = ?
+	To_Date("_"."DateTimeValue") = To_Date(To_Timestamp('2009-09-20 00:00:00.000'))
 
