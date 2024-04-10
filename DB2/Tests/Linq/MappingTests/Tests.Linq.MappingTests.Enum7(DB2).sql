@@ -6,9 +6,9 @@ DECLARE @v1 Integer(4) -- Int32
 SET     @v1 = 1
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = @v1
+	"Value1" = CAST(@v1 AS Int)
 WHERE
-	"Parent"."Value1" = @v1
+	"p"."Value1" = CAST(@v1 AS Int)
 

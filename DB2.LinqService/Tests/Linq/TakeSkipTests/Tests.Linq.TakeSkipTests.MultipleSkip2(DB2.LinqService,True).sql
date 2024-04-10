@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5))
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5))
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5))
 )
 
 BeforeExecute
@@ -72,13 +72,11 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 3
 
 SELECT
 	"t2"."Value_1"
@@ -91,12 +89,10 @@ FROM
 			"TakeSkipClass" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip
+	"t2".RN > 3
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 4
 
 SELECT
 	"t2"."Value_1"
@@ -109,7 +105,7 @@ FROM
 			"TakeSkipClass" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip
+	"t2".RN > 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

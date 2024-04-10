@@ -24,7 +24,7 @@ FROM
 		)
 		VALUES
 		(
-			@Value
+			CAST(@Value AS Int)
 		)
 	)
 
@@ -61,7 +61,7 @@ DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1
 
 DELETE FROM
-	"KeepIdentityTest" "t1"
+	"KeepIdentityTest" "_"
 WHERE
-	"t1".ID >= @lastId
+	"_".ID >= @lastId
 

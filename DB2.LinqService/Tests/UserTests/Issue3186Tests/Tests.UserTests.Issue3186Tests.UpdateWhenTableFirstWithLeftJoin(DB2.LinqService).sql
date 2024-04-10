@@ -40,9 +40,9 @@ INSERT INTO "element_services"
 )
 VALUES
 (
-	@id,
-	@is_process_service,
-	@is_deleted
+	CAST(@id AS NVarChar(18)),
+	CAST(@is_process_service AS smallint),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "element_services"
 )
 VALUES
 (
-	@id,
-	@is_process_service,
-	@is_deleted
+	CAST(@id AS NVarChar(18)),
+	CAST(@is_process_service AS smallint),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -109,9 +109,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	@id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -131,9 +131,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	@id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -153,9 +153,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	@id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -175,9 +175,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	@id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	@id,
-	@category_id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(21)),
+	CAST(@category_id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	@id,
-	@category_id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(21)),
+	CAST(@category_id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -278,10 +278,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	@id,
-	@category_id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(21)),
+	CAST(@category_id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -304,10 +304,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	@id,
-	@category_id,
-	@service_id,
-	@is_deleted
+	CAST(@id AS NVarChar(21)),
+	CAST(@category_id AS NVarChar(20)),
+	CAST(@service_id AS NVarChar(18)),
+	CAST(@is_deleted AS smallint)
 )
 
 BeforeExecute
@@ -318,17 +318,17 @@ SET     @is_deleted = 1
 UPDATE
 	"component_categories"
 SET
-	"component_categories"."is_deleted" = @is_deleted
+	"is_deleted" = CAST(@is_deleted AS smallint)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"component_categories" "ctg"
-				INNER JOIN "element_services" "ie" ON "ie"."id" = "ctg"."service_id"
-				LEFT JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
+			"component_categories" "ct"
+				INNER JOIN "element_services" "sr" ON "sr"."id" = "ct"."service_id"
+				LEFT JOIN "Components" "cm" ON "ct"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
 		WHERE
-			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
+			"sr"."id" = 'TestProcessService' AND "component_categories"."id" = "ct"."id"
 	)
 
 BeforeExecute

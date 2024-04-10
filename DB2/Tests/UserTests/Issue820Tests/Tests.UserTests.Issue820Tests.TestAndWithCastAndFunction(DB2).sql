@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	(@param = "_"."SmallIntValue" OR @param IS NULL AND "_"."SmallIntValue" IS NULL)
+	@param = "_"."SmallIntValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

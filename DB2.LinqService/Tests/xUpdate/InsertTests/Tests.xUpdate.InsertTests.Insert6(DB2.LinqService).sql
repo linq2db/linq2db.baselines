@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -36,7 +36,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 

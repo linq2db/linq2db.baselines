@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("_".ID)
+	MAX("_".ID)
 FROM
 	ALLTYPES "_"
 
@@ -17,7 +17,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NChar
+	CAST(@NChar AS NChar(1))
 )
 
 BeforeExecute

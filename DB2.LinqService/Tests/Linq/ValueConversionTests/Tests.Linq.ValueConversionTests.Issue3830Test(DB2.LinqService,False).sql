@@ -42,10 +42,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -94,10 +94,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -120,10 +120,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -158,6 +158,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Bool3 Char -- StringFixedLength
+SET     @Bool3 = NULL
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -169,7 +171,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	("r"."Bool3" IS NULL OR "r"."Bool3" IS NULL) AND "r"."Bool1" = @Bool1 AND
+	("r"."Bool3" = @Bool3 OR "r"."Bool3" IS NULL) AND "r"."Bool1" = @Bool1 AND
 	"r"."Bool2" IS NULL
 
 BeforeExecute
@@ -291,6 +293,8 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Bool3 Char -- StringFixedLength
+SET     @Bool3 = NULL
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -304,7 +308,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	("r"."Bool3" IS NULL OR "r"."Bool3" IS NULL) AND "r"."Bool1" = @Bool1 AND
+	("r"."Bool3" = @Bool3 OR "r"."Bool3" IS NULL) AND "r"."Bool1" = @Bool1 AND
 	"r"."Bool2" = @Bool2
 
 BeforeExecute

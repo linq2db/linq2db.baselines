@@ -2,12 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 
@@ -18,8 +20,8 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	1,
-	@id
+	CAST(@ParentID AS Int),
+	CAST(@id AS Int)
 )
 
 BeforeExecute
@@ -38,7 +40,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
