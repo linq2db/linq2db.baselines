@@ -391,7 +391,7 @@ IF (OBJECT_ID(N'[sample_other_class]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @idFilter Int -- Int32
+DECLARE @idFilter Variant -- Object
 SET     @idFilter = 1
 
 SELECT
