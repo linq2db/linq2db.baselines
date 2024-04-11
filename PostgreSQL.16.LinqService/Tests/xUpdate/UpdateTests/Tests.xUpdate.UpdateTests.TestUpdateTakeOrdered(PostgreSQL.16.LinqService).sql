@@ -190,8 +190,8 @@ SET
 FROM
 	(
 		SELECT
-			x."Value1",
-			x."ParentID"
+			x."ParentID",
+			x."Value1"
 		FROM
 			"Parent" x
 		WHERE

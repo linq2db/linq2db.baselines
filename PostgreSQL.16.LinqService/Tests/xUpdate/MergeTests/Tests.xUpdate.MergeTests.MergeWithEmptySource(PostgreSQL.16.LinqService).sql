@@ -3,26 +3,26 @@
 
 MERGE INTO "Person" "Target"
 USING (
-	SELECT CAST(NULL AS Int), CAST(NULL AS text), CAST(NULL AS text), CAST(NULL AS text), CAST(NULL AS Char(1))
+	SELECT NULL::Int, NULL::text, NULL::text, NULL::text, NULL::Char(1)
 	FROM "Person"	WHERE 1 = 0
 )
  "Source"
 (
-	"ID",
-	"FirstName",
-	"LastName",
-	"MiddleName",
-	"Gender"
+	"source_ID",
+	"source_FirstName",
+	"source_LastName",
+	"source_MiddleName",
+	"source_Gender"
 )
-ON ("Target"."PersonID" = "Source"."ID")
+ON ("Target"."PersonID" = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"FirstName" = "Source"."FirstName",
-	"LastName" = "Source"."LastName",
-	"MiddleName" = "Source"."MiddleName",
-	"Gender" = "Source"."Gender"
+	"FirstName" = "Source"."source_FirstName",
+	"LastName" = "Source"."source_LastName",
+	"MiddleName" = "Source"."source_MiddleName",
+	"Gender" = "Source"."source_Gender"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -34,9 +34,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."FirstName",
-	"Source"."LastName",
-	"Source"."MiddleName",
-	"Source"."Gender"
+	"Source"."source_FirstName",
+	"Source"."source_LastName",
+	"Source"."source_MiddleName",
+	"Source"."source_Gender"
 )
 
