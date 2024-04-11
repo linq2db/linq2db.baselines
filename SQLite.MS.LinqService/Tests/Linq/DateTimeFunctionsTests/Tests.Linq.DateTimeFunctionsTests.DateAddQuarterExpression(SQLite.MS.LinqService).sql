@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = -1
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(@p*3) || ' Month')
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '-3 Month'))
 FROM
 	[LinqDataTypes] [t]
 

@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as Money)
+	CAST([t].[MoneyValue] AS Money)
 FROM
 	[LinqDataTypes] [t]
 

@@ -45,23 +45,6 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[ProductID],
-	[t1].[ProductName],
-	[t1].[SupplierID],
-	[t1].[CategoryID],
-	[t1].[QuantityPerUnit],
-	[t1].[UnitPrice],
-	[t1].[UnitsInStock],
-	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
-FROM
-	[Products] [t1]
-
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
 	[t1].[OrderID],
 	[t1].[CustomerID],
 	[t1].[EmployeeID],
@@ -78,6 +61,23 @@ SELECT
 	[t1].[ShipCountry]
 FROM
 	[Orders] [t1]
+
+BeforeExecute
+-- Northwind.SQLite SQLite.Classic SQLite
+
+SELECT
+	[t1].[Discontinued],
+	[t1].[ProductID],
+	[t1].[ProductName],
+	[t1].[SupplierID],
+	[t1].[CategoryID],
+	[t1].[QuantityPerUnit],
+	[t1].[UnitPrice],
+	[t1].[UnitsInStock],
+	[t1].[UnitsOnOrder],
+	[t1].[ReorderLevel]
+FROM
+	[Products] [t1]
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -102,10 +102,10 @@ WHERE
 			*
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID] OR [o].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
 		WHERE
-			([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL) AND
+			[a_Customer].[CustomerID] = [c_1].[CustomerID] AND
 			NOT EXISTS(
 				SELECT
 					*
