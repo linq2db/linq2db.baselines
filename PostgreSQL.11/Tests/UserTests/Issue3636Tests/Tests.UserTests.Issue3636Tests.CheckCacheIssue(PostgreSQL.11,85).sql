@@ -55,59 +55,59 @@ VALUES
 (2,85)
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	x_1.id
+	m_1."ID",
+	d.id,
+	d.id2,
+	d.id3,
+	order_2.id,
+	order_2.id2
 FROM
-	"T1" x_1
-		LEFT JOIN (
-			SELECT
-				x.id as order_1
-			FROM
-				"T2" x
-			WHERE
-				x.id2 = :myId
-		) t3 ON x_1.id = t3.order_1
+	(
+		SELECT
+			x.id as "ID"
+		FROM
+			"T1" x
+				LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
+		WHERE
+			x.id2 = :myId
+		GROUP BY
+			x.id
+		ORDER BY
+			x.id
+		LIMIT 1
+	) m_1
+		INNER JOIN "T1" d ON m_1."ID" = d.id
+		LEFT JOIN "T2" order_2 ON d.id = order_2.id AND order_2.id2 = :myId
 WHERE
-	x_1.id2 = :myId
-GROUP BY
-	x_1.id
-ORDER BY
-	x_1.id
-LIMIT :take
+	d.id2 = :myId
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @ID2 Integer -- Int32
-SET     @ID2 = 85
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
+DECLARE @myId Integer -- Int32
+SET     @myId = 85
 
 SELECT
-	x_1.id,
-	x_1.id2,
-	x_1.id3,
-	t3.order_1,
-	t3.id2
+	x.id
 FROM
-	"T1" x_1
-		LEFT JOIN (
-			SELECT
-				x.id as order_1,
-				x.id2
-			FROM
-				"T2" x
-			WHERE
-				x.id2 = :ID2
-		) t3 ON x_1.id = t3.order_1
+	"T1" x
+		LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
 WHERE
-	x_1.id = :ID AND x_1.id2 = :ID2
+	x.id2 = :myId
+GROUP BY
+	x.id
+ORDER BY
+	x.id
+LIMIT 1
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
