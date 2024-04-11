@@ -18,18 +18,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 /* My Test */
-UPDATE
-	[TestTable]
-SET
-	[Fd] = 2
-WHERE
-	[TestTable].[Id] = 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-/* My Test */
-INSERT INTO [TestTable]
+INSERT INTO [TestTable] AS [t1]
 (
 	[Id],
 	[Fd]
@@ -39,6 +28,8 @@ VALUES
 	1,
 	2
 )
+ON CONFLICT ([Id]) DO UPDATE SET
+	[Fd] = 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

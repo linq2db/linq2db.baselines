@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	Cast([p].[ParentID] as BigInt) >> 1 > 0
+	CAST([p].[ParentID] AS BigInt) >> 1 > 0
 

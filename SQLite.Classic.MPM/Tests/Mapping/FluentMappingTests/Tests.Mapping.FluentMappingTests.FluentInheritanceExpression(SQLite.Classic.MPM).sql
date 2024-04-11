@@ -30,7 +30,7 @@ SELECT
 FROM
 	[DescendantEntity] [e]
 WHERE
-	[e].[Id] = 1
+	[e].[Id] + 100 = 101
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[DescendantEntity] [e]
 WHERE
-	[e].[Id] = 1
+	[e].[Id] + 1000 = 1001
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
