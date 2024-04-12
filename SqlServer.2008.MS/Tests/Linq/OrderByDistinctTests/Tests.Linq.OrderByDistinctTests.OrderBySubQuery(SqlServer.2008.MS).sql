@@ -54,25 +54,25 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[t].[DuplicateData],
+	[t_1].[DuplicateData],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[OrderByDistinctData] [s]
+			[OrderByDistinctData] [c_1]
 		WHERE
-			([s].[DuplicateData] = [t].[DuplicateData] OR [s].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL)
+			([c_1].[DuplicateData] = [t_1].[DuplicateData] OR [c_1].[DuplicateData] IS NULL AND [t_1].[DuplicateData] IS NULL)
 	)
 FROM
 	(
 		SELECT TOP (@take)
-			[t1].[Id],
-			[t1].[DuplicateData]
+			[t].[Id],
+			[t].[DuplicateData]
 		FROM
-			[OrderByDistinctData] [t1]
-	) [t]
+			[OrderByDistinctData] [t]
+	) [t_1]
 ORDER BY
-	[t].[Id] DESC
+	[t_1].[Id] DESC
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
