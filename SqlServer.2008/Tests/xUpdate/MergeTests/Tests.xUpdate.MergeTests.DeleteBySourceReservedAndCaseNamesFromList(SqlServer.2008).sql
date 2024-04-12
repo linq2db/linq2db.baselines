@@ -241,9 +241,9 @@ USING (VALUES
 	(3), (4), (5), (6)
 ) [Source]
 (
-	[INSERT_1]
+	[source_INSERT]
 )
-ON ([Source].[INSERT_1] = [Target].[Id])
+ON ([Source].[source_INSERT] = [Target].[Id])
 
 WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 2 THEN DELETE
 ;
