@@ -50,11 +50,20 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Date('2010-01-' || Lpad("t"."TransactionId",2,'0'))
+	CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)
 FROM
 	"Transactions" "t"
 WHERE
-	To_Number(To_Char(Date('2010-01-' || Lpad("t"."TransactionId",2,'0')), 'DD')) > 0
+	Extract(day from CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)) > 0
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."TransactionId",
+	"t1"."TransactionDate"
+FROM
+	"Transactions" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

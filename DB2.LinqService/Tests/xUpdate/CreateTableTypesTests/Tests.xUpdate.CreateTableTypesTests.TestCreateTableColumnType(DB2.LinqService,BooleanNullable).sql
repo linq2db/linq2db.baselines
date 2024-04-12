@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@BooleanNullable
+	CAST(@Id AS Int),
+	CAST(@BooleanNullable AS smallint)
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@BooleanNullable
+	CAST(@Id AS Int),
+	CAST(@BooleanNullable AS smallint)
 )
 
 BeforeExecute

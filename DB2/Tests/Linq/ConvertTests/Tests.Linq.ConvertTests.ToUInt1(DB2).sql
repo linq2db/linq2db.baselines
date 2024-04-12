@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	BigInt("t"."MoneyValue")
+	CAST(Floor("t"."MoneyValue") AS BigInt)
 FROM
 	"LinqDataTypes" "t"
 

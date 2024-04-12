@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(5)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
@@ -75,9 +75,9 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(5)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute

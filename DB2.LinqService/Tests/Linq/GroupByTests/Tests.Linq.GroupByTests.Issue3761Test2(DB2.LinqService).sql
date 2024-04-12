@@ -26,20 +26,24 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @default Timestamp(20) -- DateTime
-SET     @default = '0001-01-01-00.00.00.000000'
 DECLARE @DATUM Timestamp(20) -- DateTime
 SET     @DATUM = '2019-01-01-00.00.00.000000'
 
 SELECT
 	"t1"."Year_1",
 	"t1"."Month_1",
-	Sum("t1".SKUPAJ)
+	SUM("t1".SKUPAJ)
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Coalesce("n".DATUM, @default), 'YYYY')) as "Year_1",
-			To_Number(To_Char(Coalesce("n".DATUM, @default), 'MM')) as "Month_1",
+			Extract(year from CASE
+				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
+				ELSE '0001-01-01-00.00.00.000000'
+			END) as "Year_1",
+			Extract(month from CASE
+				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
+				ELSE '0001-01-01-00.00.00.000000'
+			END) as "Month_1",
 			"n".SKUPAJ
 		FROM
 			"Issue3761Table" "n"
@@ -53,12 +57,18 @@ UNION ALL
 SELECT
 	"t2"."Year_1",
 	"t2"."Month_1",
-	Sum("t2".SKUPAJ)
+	SUM("t2".SKUPAJ)
 FROM
 	(
 		SELECT
-			To_Number(To_Char(Coalesce("n_1".DATUM, @default), 'YYYY')) as "Year_1",
-			To_Number(To_Char(Coalesce("n_1".DATUM, @default), 'MM')) as "Month_1",
+			Extract(year from CASE
+				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
+				ELSE '0001-01-01-00.00.00.000000'
+			END) as "Year_1",
+			Extract(month from CASE
+				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
+				ELSE '0001-01-01-00.00.00.000000'
+			END) as "Month_1",
 			"n_1".SKUPAJ
 		FROM
 			"Issue3761Table" "n_1"

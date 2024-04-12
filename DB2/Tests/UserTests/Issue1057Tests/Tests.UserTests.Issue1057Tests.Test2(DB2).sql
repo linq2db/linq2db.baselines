@@ -61,8 +61,8 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS NVarChar(12))
 )
 
 BeforeExecute
@@ -79,8 +79,8 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS NVarChar(4))
 )
 
 BeforeExecute
@@ -100,9 +100,9 @@ INSERT INTO "TaskStage"
 )
 VALUES
 (
-	@Id,
-	@TaskId,
-	@Actual
+	CAST(@Id AS Int),
+	CAST(@TaskId AS Int),
+	CAST(@Actual AS char)
 )
 
 BeforeExecute
@@ -122,8 +122,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."Id",
 	"p"."TargetName",
+	"p"."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

@@ -12,9 +12,9 @@ FROM
 		FROM
 			"GrandChild" "p"
 		FETCH FIRST 3 ROWS ONLY
-	) "t1"
+	) "p_1"
 WHERE
-	"c_1"."ParentID" = "t1"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -37,7 +37,7 @@ FROM
 			) "t1"
 		WHERE
 			"t1".RN > 12 AND "t1".RN <= 15
-	) "t2"
+	) "p_1"
 WHERE
-	"c_1"."ParentID" = "t2"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID"
 

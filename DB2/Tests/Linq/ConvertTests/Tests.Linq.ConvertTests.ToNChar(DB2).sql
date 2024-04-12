@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Char("t"."MoneyValue")
+	RTrim(Char("t"."MoneyValue"))
 FROM
 	"LinqDataTypes" "t"
 

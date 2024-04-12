@@ -44,10 +44,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -122,10 +122,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -148,10 +148,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -200,10 +200,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -278,43 +278,43 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"r"."Value_1"
+	"r_3"."Value_1"
 FROM
 	(
 		SELECT
-			"t"."Id",
-			"t"."Value1" as "Value_1"
+			"r"."Id",
+			"r"."Value1" as "Value_1"
 		FROM
-			"SampleData" "t"
+			"SampleData" "r"
 		WHERE
-			Mod("t"."Id", 2) = 0
+			Mod("r"."Id", 2) = 0
 		EXCEPT
 		SELECT
-			"t_1"."Id",
-			"t_1"."Value2" / 10 as "Value_1"
+			"r_1"."Id",
+			"r_1"."Value2" / 10 as "Value_1"
 		FROM
-			"SampleData" "t_1"
+			"SampleData" "r_1"
 		WHERE
-			Mod("t_1"."Id", 4) = 0
+			Mod("r_1"."Id", 4) = 0
 		EXCEPT
 		SELECT
-			"t_2"."Id",
-			"t_2"."Value1" as "Value_1"
+			"r_2"."Id",
+			"r_2"."Value1" as "Value_1"
 		FROM
-			"SampleData" "t_2"
+			"SampleData" "r_2"
 		WHERE
-			Mod("t_2"."Id", 6) = 0
-	) "r"
+			Mod("r_2"."Id", 6) = 0
+	) "r_3"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
