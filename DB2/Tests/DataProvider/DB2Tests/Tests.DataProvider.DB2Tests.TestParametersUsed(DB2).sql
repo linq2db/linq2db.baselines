@@ -34,8 +34,8 @@ INSERT INTO "TestParametersTable"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(11))
 )
 
 BeforeExecute

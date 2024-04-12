@@ -3,7 +3,7 @@
 
 SELECT
 	"p_1"."ParentID",
-	"c_1"."ChildID"
+	"t1"."ChildID"
 FROM
 	(
 		SELECT
@@ -16,9 +16,9 @@ FROM
 	) "p_1",
 	(
 		SELECT
-			"t1"."ChildID"
+			"c_1"."ChildID"
 		FROM
-			"Child" "t1"
+			"Child" "c_1"
 		FETCH FIRST 10 ROWS ONLY
-	) "c_1"
+	) "t1"
 

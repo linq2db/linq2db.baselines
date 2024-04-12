@@ -4,9 +4,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -14,9 +14,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -24,9 +24,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -34,9 +34,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 BeginTransaction
@@ -62,9 +62,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -72,9 +72,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -82,9 +82,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -92,7 +92,7 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 

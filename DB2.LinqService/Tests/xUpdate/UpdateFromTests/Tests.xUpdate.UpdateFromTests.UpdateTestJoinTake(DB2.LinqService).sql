@@ -48,11 +48,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -78,11 +78,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -108,11 +108,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -138,11 +138,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -191,10 +191,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -217,10 +217,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -243,10 +243,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -269,10 +269,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -289,30 +289,27 @@ SET     @someId = 100
 UPDATE
 	"UpdatedEntities"
 SET
-	("UpdatedEntities"."Value1", "UpdatedEntities"."Value2", "UpdatedEntities"."Value3") = (
+	("Value1", "Value2", "Value3") = (
 		SELECT
-			("t1"."Value1" * "t1"."Value1_1") * @int1,
-			("t1"."Value2" * "t1"."Value2_1") * @int2,
-			("t1"."Value3" * "t1"."Value3_1") * @int3
+			("UpdatedEntities"."Value1" * "t4"."Value1") * CAST(@int1 AS Int),
+			("UpdatedEntities"."Value2" * "t4"."Value2") * CAST(@int2 AS Int),
+			("UpdatedEntities"."Value3" * "t4"."Value3") * CAST(@int3 AS Int)
 		FROM
 			(
 				SELECT
-					"c_1"."Value1",
-					"t"."Value1" as "Value1_1",
-					"c_1"."Value2",
-					"t"."Value2" as "Value2_1",
-					"c_1"."Value3",
-					"t"."Value3" as "Value3_1",
-					"c_1"."id"
+					"t_1"."Value1",
+					"t_1"."Value2",
+					"t_1"."Value3",
+					"t3"."id"
 				FROM
-					"UpdatedEntities" "c_1"
-						INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"
+					"UpdatedEntities" "t3"
+						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
 				WHERE
-					"t"."id" <> @someId
+					"t_1"."id" <> @someId
 				FETCH FIRST 2 ROWS ONLY
-			) "t1"
+			) "t4"
 		WHERE
-			"UpdatedEntities"."id" = "t1"."id"
+			"UpdatedEntities"."id" = "t4"."id"
 	)
 WHERE
 	EXISTS(
@@ -321,12 +318,12 @@ WHERE
 		FROM
 			(
 				SELECT
-					"c_2"."id"
+					"t1"."id"
 				FROM
-					"UpdatedEntities" "c_2"
-						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "c_2"."id"
+					"UpdatedEntities" "t1"
+						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 				WHERE
-					"t_1"."id" <> @someId
+					"t"."id" <> @someId
 				FETCH FIRST 2 ROWS ONLY
 			) "t2"
 		WHERE

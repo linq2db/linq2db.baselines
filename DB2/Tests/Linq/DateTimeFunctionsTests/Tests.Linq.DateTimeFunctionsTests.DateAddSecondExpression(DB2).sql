@@ -4,7 +4,7 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = 41
 
 SELECT
-	"t"."DateTimeValue" + @p Second
+	Extract(second from ("t"."DateTimeValue" + CAST(@p AS Int) SECOND))
 FROM
 	"LinqDataTypes" "t"
 

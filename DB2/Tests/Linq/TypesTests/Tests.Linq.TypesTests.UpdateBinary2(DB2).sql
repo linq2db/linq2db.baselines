@@ -6,11 +6,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS VARBINARY(32672))
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -20,11 +20,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 2
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS VARBINARY(32672))
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

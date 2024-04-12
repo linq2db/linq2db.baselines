@@ -34,7 +34,7 @@ INSERT INTO "LinqDataTypes"
 )
 SELECT
 	"r".ID,
-	@param
+	CAST(@param AS BigInt)
 FROM
 	"LinqDataTypes" "r"
 WHERE

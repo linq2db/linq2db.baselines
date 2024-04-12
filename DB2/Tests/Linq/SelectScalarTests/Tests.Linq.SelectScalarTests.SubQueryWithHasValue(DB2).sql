@@ -9,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			"r"."Value1"
+			CASE
+				WHEN "r"."Value1" IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			"Parent" "r"
 		FETCH FIRST 1 ROWS ONLY
-	) IS NOT NULL
+	) = 1
 

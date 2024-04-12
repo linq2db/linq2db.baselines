@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Coalesce("p"."Value1", 100)
+	"p"."Value1"
 FROM
 	"Parent" "p"
 

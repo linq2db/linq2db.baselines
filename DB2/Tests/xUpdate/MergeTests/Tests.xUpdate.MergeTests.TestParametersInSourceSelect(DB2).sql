@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -226,21 +226,21 @@ SET     @param = 3
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"_"."Id",
-		@param as "source_field0"
+		"_"."Id" as "source_Id",
+		CAST(@param AS Int) as "source_Val"
 	FROM
 		"TestMerge2" "_"
 ) "Source"
 (
-	"Id",
-	"source_field0"
+	"source_Id",
+	"source_Val"
 )
-ON ("Target"."Id" = "Source"."Id" AND "Target"."Id" = "Source"."source_field0")
+ON ("Target"."Id" = "Source"."source_Id" AND "Target"."Id" = "Source"."source_Val")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Field1" = "Source"."source_field0" + 111
+	"Field1" = "Source"."source_Val" + 111
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

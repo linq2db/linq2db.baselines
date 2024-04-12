@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	SmallInt("t"."MoneyValue")
+	CAST(Floor("t"."MoneyValue") AS SmallInt)
 FROM
 	"LinqDataTypes" "t"
 

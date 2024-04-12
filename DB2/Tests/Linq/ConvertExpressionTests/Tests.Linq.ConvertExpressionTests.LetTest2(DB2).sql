@@ -6,14 +6,13 @@ SELECT
 	"p"."Value1"
 FROM
 	"Parent" "p"
+		LEFT JOIN (
+			SELECT
+				"a_Children"."ParentID",
+				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentID" ORDER BY "a_Children"."ParentID") as "rn"
+			FROM
+				"Child" "a_Children"
+		) "t1" ON "p"."ParentID" = "t1"."ParentID" AND "t1"."rn" <= 1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			"Child" "t1"
-		WHERE
-			"p"."ParentID" = "t1"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
-	) IS NOT NULL
+	"t1"."ParentID" IS NOT NULL
 
