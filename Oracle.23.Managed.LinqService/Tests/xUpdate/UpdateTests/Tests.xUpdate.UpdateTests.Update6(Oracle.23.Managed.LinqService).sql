@@ -34,11 +34,11 @@ DECLARE @id Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."Value1" = 2
+	"Value1" = 2
 WHERE
-	"Parent"."ParentID" = :id
+	p."ParentID" = :id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

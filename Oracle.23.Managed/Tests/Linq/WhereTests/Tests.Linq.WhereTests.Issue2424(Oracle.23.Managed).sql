@@ -39,8 +39,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -49,12 +47,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -63,12 +59,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -77,12 +71,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -91,12 +83,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -105,12 +95,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -119,12 +107,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -133,12 +119,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -147,12 +131,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -161,12 +143,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" = '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -175,12 +155,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" = '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -189,12 +167,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -203,12 +179,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '2'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -217,12 +191,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -231,12 +203,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '4'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -245,12 +215,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -259,12 +227,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" < '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -273,12 +239,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -287,12 +251,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" > '3'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -301,12 +263,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '5'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -315,12 +275,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" >= '5'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -329,12 +287,10 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '1'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -343,7 +299,7 @@ FROM
 	"Isue2424Table" i
 WHERE
 	i."StrValue" <= '1'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
