@@ -2,7 +2,7 @@
 -- MySqlConnector MySql
 
 SELECT
-	Cast(Concat(Cast(Extract(year from `t`.`DateTimeValue`) as CHAR(11)), '-01-01 00:20:00') as DateTime)
+	CAST(Concat(Extract(year from `t`.`DateTimeValue`), '-01-01 00:20:00') AS DATETIME)
 FROM
 	`LinqDataTypes` `t`
 

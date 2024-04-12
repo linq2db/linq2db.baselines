@@ -2,10 +2,10 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`selectParam`.`ChildID`,
-	Avg(`selectParam`.`ParentID`)
+	`_`.`ChildID`,
+	AVG(`_`.`ParentID`)
 FROM
-	`Child` `selectParam`
+	`Child` `_`
 GROUP BY
-	`selectParam`.`ChildID`
+	`_`.`ChildID`
 

@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	`p`.`DateTimeValue`
+	Extract(year from `p`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `p`
 

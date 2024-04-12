@@ -264,7 +264,7 @@ BeforeExecute
 
 UPDATE
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
+		LEFT JOIN `UpdateRelation` `a_Relation` ON (`v`.`RelationId` = `a_Relation`.`id` OR `v`.`RelationId` IS NULL AND `a_Relation`.`id` IS NULL)
 SET
 	`v`.`Value1` = `v`.`Value1` + `v`.`Value2` + `v`.`Value3`,
 	`v`.`Value2` = `v`.`Value1` + `v`.`Value2` + `v`.`Value3`,
@@ -274,8 +274,6 @@ WHERE
 
 BeforeExecute
 -- MySql MySql.Official MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`v`.`Value1`,
@@ -283,10 +281,10 @@ SELECT
 	`v`.`Value3`
 FROM
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
+		LEFT JOIN `UpdateRelation` `a_Relation` ON (`v`.`RelationId` = `a_Relation`.`id` OR `v`.`RelationId` IS NULL AND `a_Relation`.`id` IS NULL)
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql MySql.Official MySql

@@ -3,44 +3,44 @@
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 BeginTransaction
@@ -65,42 +65,42 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql MySql.Official MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
