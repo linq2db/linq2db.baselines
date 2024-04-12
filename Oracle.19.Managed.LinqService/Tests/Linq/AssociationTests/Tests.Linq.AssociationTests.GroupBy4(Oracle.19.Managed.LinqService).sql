@@ -2,14 +2,14 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Key_1"
+	g_2."Year_1"
 FROM
 	(
 		SELECT
-			To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "Key_1"
+			EXTRACT(YEAR FROM g_1."DateTimeValue") as "Year_1"
 		FROM
-			"LinqDataTypes" selectParam
-	) t1
+			"LinqDataTypes" g_1
+	) g_2
 GROUP BY
-	t1."Key_1"
+	g_2."Year_1"
 

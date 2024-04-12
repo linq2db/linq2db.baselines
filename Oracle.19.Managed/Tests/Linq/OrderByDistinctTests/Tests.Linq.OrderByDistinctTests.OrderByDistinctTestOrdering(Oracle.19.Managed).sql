@@ -48,14 +48,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Min(x."OrderData1")
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -80,14 +76,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Max(x."OrderData1") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -112,15 +104,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Min(x."OrderData1"),
-	Min(x."OrderData2")
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -146,15 +133,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Min(x."OrderData1"),
-	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -180,15 +162,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Max(x."OrderData1") DESC,
-	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
@@ -214,15 +191,10 @@ SET     @skip = 0
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
+SELECT DISTINCT
 	x."DuplicateData"
 FROM
 	"OrderByDistinctData" x
-GROUP BY
-	x."DuplicateData"
-ORDER BY
-	Min(x."OrderData1"),
-	Max(x."OrderData2") DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute

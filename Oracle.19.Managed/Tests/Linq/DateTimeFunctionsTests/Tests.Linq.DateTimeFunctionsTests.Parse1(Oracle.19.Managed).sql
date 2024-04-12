@@ -2,14 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	d."c1"
+	TRUNC(d."DateTimeValue")
 FROM
-	(
-		SELECT
-			t."DateTimeValue" as "c1"
-		FROM
-			"LinqDataTypes" t
-	) d
+	"LinqDataTypes" d
 WHERE
-	To_Number(To_Char(d."c1", 'DD')) > 0
+	EXTRACT(DAY FROM d."DateTimeValue") > 0
 
