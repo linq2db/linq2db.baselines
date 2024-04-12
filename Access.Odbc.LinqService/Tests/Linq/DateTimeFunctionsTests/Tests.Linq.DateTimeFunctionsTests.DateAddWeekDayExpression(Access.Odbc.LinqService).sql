@@ -4,7 +4,7 @@ DECLARE @Parameter1 Int -- Int32
 SET     @Parameter1 = 1
 
 SELECT
-	DateAdd('w', ?, [t].[DateTimeValue])
+	DateValue(DateAdd('w', ?, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

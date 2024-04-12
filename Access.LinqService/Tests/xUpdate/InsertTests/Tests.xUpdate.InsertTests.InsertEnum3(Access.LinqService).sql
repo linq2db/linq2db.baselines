@@ -2,14 +2,16 @@
 -- Access AccessOleDb
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 
 INSERT INTO [Parent]
 (
@@ -19,7 +21,7 @@ INSERT INTO [Parent]
 VALUES
 (
 	@ParentID,
-	1
+	@Value1
 )
 
 BeforeExecute
@@ -38,7 +40,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
