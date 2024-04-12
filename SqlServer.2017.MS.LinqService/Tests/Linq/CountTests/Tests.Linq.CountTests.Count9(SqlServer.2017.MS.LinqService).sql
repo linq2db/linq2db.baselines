@@ -2,19 +2,19 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	[a_Parent].[ParentID]
 FROM
-	[Child] [p]
-		LEFT JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
-WHERE
-	[a_Parent].[ParentID] = 1
+	[Child] [ch]
+		LEFT JOIN [Parent] [a_Parent] ON ([ch].[ParentID] = [a_Parent].[ParentID] OR [ch].[ParentID] IS NULL AND [a_Parent].[ParentID] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[a_Parent].[ParentID]
+	Count(*)
 FROM
-	[Child] [ch]
-		LEFT JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
+	[Child] [p]
+		LEFT JOIN [Parent] [a_Parent] ON ([p].[ParentID] = [a_Parent].[ParentID] OR [p].[ParentID] IS NULL AND [a_Parent].[ParentID] IS NULL)
+WHERE
+	[a_Parent].[ParentID] = 1
 
