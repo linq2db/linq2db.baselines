@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @ID Integer -- Int32
+SET     @ID = 2
 
 SELECT
-	p5."PersonID",
-	p5."FirstName"
+	(p2."PersonID" * :ID) / 2,
+	p2."FirstName"
 FROM
-	"Person" p5
+	"Person" p2
 

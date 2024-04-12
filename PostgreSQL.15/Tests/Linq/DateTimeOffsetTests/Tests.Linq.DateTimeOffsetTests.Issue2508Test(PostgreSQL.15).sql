@@ -71,15 +71,15 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @TransactionDate TimestampTz -- DateTime
-SET     @TransactionDate = '2020-02-29T20:34:55.1231234+00:00'
+DECLARE @DateTimeOffset TimestampTz -- DateTime
+SET     @DateTimeOffset = '2020-02-29T17:14:55.1231234+00:00'
 
 SELECT
 	t."TransactionId"
 FROM
 	"Transactions" t
 WHERE
-	t."TransactionDate" > :TransactionDate
+	t."TransactionDate" > :DateTimeOffset + 200 * Interval '1 Minute'
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
