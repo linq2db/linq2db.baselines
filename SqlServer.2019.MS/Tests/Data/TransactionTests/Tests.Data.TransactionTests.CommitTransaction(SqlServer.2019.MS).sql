@@ -22,22 +22,18 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
-	[t1]
+	[Parent]
 SET
-	[t1].[Value1] = 1011
-FROM
-	[Parent] [t1]
+	[Value1] = 1011
 WHERE
-	[t1].[ParentID] = 1010
+	[Parent].[ParentID] = 1010
 
 BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM
