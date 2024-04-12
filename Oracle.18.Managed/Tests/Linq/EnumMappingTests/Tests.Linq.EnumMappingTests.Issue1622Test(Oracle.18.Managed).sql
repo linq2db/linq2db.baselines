@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -60,12 +58,10 @@ FROM
 	"Issue1622Table" e
 WHERE
 	e."SomeText" = 'Value1_suffix'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -74,7 +70,7 @@ FROM
 	"Issue1622Table" e
 WHERE
 	e."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -18,7 +18,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = 1
+		"TypeDiscriminator" = 1
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -53,7 +53,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = 1
+		"TypeDiscriminator" = 1
 WHEN NOT MATCHED THEN
 	INSERT
 	(

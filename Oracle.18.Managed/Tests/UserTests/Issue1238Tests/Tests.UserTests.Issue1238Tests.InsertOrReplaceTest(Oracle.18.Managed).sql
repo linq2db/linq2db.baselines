@@ -24,7 +24,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -65,7 +65,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
