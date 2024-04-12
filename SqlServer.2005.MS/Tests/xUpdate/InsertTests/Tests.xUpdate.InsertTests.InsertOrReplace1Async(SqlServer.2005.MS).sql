@@ -39,9 +39,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -69,9 +69,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -99,9 +99,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,12 +123,10 @@ END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

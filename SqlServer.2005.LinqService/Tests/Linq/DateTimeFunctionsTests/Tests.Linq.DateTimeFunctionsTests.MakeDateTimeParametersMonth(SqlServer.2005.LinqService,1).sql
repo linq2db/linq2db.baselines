@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[t].[ID]
+	CAST(RIGHT('0' + CAST(2010 + [t].[ID] AS VarChar(4)), 4) + '-' + RIGHT(N'01', 2) + N'-01' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 

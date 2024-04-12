@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Convert(Money, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Money)
 FROM
 	[LinqDataTypes] [t]
 
