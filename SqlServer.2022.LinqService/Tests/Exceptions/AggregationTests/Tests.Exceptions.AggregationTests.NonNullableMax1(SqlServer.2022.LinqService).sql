@@ -2,7 +2,7 @@
 -- SqlServer.2022
 
 SELECT
-	Max([_].[ParentID])
+	MAX([_].[ParentID])
 FROM
 	[Parent] [_]
 WHERE

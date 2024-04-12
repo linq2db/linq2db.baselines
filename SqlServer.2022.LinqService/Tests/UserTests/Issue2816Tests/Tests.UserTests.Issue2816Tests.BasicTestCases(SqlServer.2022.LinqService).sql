@@ -138,5 +138,14 @@ WHERE
 BeforeExecute
 -- SqlServer.2022
 
+SELECT
+	[t1].[Id],
+	[t1].[Text]
+FROM
+	[Issue2816Table] [t1]
+
+BeforeExecute
+-- SqlServer.2022
+
 DROP TABLE IF EXISTS [Issue2816Table]
 

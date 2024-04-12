@@ -1,14 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
 BeforeExecute
 -- SqlServer.2022 (asynchronously)
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Shepard'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -18,9 +24,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'John',
-	N'Shepard',
-	N'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 SELECT SCOPE_IDENTITY()
@@ -28,9 +34,9 @@ SELECT SCOPE_IDENTITY()
 BeforeExecute
 -- SqlServer.2022
 
-DELETE [t1]
+DELETE [_]
 FROM
-	[Person] [t1]
+	[Person] [_]
 WHERE
-	[t1].[PersonID] > 4
+	[_].[PersonID] > 4
 
