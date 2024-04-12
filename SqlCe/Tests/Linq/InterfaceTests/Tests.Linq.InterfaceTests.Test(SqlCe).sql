@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [t1]
+	[Parent] [gr]
 GROUP BY
-	[t1].[ParentID]
+	[gr].[ParentID]
 

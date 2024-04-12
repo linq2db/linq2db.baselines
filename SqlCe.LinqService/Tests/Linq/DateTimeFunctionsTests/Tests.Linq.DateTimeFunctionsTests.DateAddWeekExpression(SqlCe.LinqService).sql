@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	DateAdd(week, @p, [t].[DateTimeValue])
+	CAST(CONVERT(NVarChar(10), DateAdd(week, @p, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
 FROM
 	[LinqDataTypes] [t]
 

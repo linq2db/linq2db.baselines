@@ -2,11 +2,10 @@
 -- SqlCe
 
 SELECT
-	[p].[PersonID],
-	[p].[FirstName]
+	[p].[PersonID] as [ID],
+	'123' + [p].[FirstName] + '456' as [FirstName]
 FROM
 	[Person] [p]
 WHERE
-	'123' + [p].[FirstName] + '456' = '123John456' AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND '123' + [p].[FirstName] + '456' = '123John456'
 

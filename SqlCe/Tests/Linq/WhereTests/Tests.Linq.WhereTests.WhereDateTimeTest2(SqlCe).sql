@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = '2009-01-01'
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[DateTimeValue] > @DateTimeValue
+	[_].[DateTimeValue] > CAST('2009-01-01' AS DateTime)
 

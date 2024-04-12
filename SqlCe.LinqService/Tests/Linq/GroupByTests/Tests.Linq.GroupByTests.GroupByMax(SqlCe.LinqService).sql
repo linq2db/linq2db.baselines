@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Max([t1].[ParentID])
+	MAX([g_1].[ParentID]) as [MAX_1]
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ChildID]
+	[g_1].[ChildID]
 
