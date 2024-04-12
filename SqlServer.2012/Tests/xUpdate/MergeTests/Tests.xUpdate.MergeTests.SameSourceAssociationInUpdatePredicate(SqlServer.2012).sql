@@ -11,33 +11,30 @@ BeforeExecute
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID],
-		[t1].[FirstName],
-		[a_Patient].[Diagnosis]
+		[t1].[PersonID] as [source_ID],
+		[t1].[FirstName] as [source_FirstName],
+		[a_Patient].[Diagnosis] as [source_Patient_Diagnosis],
+		[a_Patient_1].[Diagnosis] as [target_Patient_Diagnosis]
 	FROM
 		[Person] [t1]
-			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+			LEFT JOIN [Person] [Target_1]
+				INNER JOIN [Patient] [a_Patient_1] ON [Target_1].[PersonID] = [a_Patient_1].[PersonID]
+			ON [Target_1].[PersonID] = [t1].[PersonID] AND [t1].[FirstName] = N'first 4'
 ) [Source]
 (
-	[ID],
-	[FirstName],
-	[Diagnosis]
+	[source_ID],
+	[source_FirstName],
+	[source_Patient_Diagnosis],
+	[target_Patient_Diagnosis]
 )
-ON ([Target].[PersonID] = [Source].[ID] AND [Source].[FirstName] = N'first 4')
+ON ([Target].[PersonID] = [Source].[source_ID] AND [Source].[source_FirstName] = N'first 4')
 
-WHEN MATCHED AND EXISTS(
-	SELECT
-		*
-	FROM
-		[Patient] [a_Patient_1]
-	WHERE
-		[Source].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
-		[a_Patient_1].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
-		[Target].[PersonID] = [a_Patient_1].[PersonID]
-) THEN
+WHEN MATCHED AND [Source].[source_Patient_Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
+[Source].[target_Patient_Diagnosis] LIKE N'%very%' ESCAPE N'~' THEN
 UPDATE
 SET
-	[Target].[MiddleName] = N'Updated'
+	[MiddleName] = N'Updated'
 ;
 
 BeforeExecute

@@ -2,12 +2,10 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 UPDATE
-	[p]
+	[LinqDataTypes]
 SET
-	[p].[BoolValue] = 1,
-	[p].[DateTimeValue] = CURRENT_TIMESTAMP
-FROM
-	[LinqDataTypes] [p]
+	[BoolValue] = 1,
+	[DateTimeValue] = CURRENT_TIMESTAMP
 WHERE
-	[p].[ID] = 100000
+	[LinqDataTypes].[ID] = 100000
 
