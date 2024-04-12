@@ -73,45 +73,41 @@ SELECT 2,4,3 FROM rdb$database
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
+SELECT FIRST 2
+	"t1"."InId",
 	CASE
-		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
-		ELSE "j"."InMinQuantity"
+		WHEN "e"."InId" IS NULL THEN "t1"."InMinQuantity"
+		ELSE "e"."InMinQuantity"
 	END,
 	CASE
-		WHEN "j"."InId" IS NULL THEN "x"."InMaxQuantity"
-		ELSE "j"."InMaxQuantity"
+		WHEN "e"."InId" IS NULL THEN "t1"."InMaxQuantity"
+		ELSE "e"."InMaxQuantity"
 	END
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 1
+	"t1"."InId" = 1
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
+SELECT FIRST 2
+	"t1"."InId",
 	CASE
-		WHEN "j"."InId" IS NULL THEN "x"."InMinQuantity"
-		ELSE "j"."InMinQuantity"
+		WHEN "e"."InId" IS NULL THEN "t1"."InMinQuantity"
+		ELSE "e"."InMinQuantity"
 	END,
 	CASE
-		WHEN "j"."InId" IS NULL THEN "x"."InMaxQuantity"
-		ELSE "j"."InMaxQuantity"
+		WHEN "e"."InId" IS NULL THEN "t1"."InMaxQuantity"
+		ELSE "e"."InMaxQuantity"
 	END
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 2
+	"t1"."InId" = 2
 
 BeforeExecute
 -- Firebird4 Firebird

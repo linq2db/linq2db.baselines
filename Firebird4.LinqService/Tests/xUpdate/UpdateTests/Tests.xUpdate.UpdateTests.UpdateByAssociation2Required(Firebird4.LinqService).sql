@@ -34,8 +34,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -106,7 +106,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -120,7 +120,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -131,7 +131,7 @@ SET     @id = 3
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = 'test'
 WHERE
 	EXISTS(
 		SELECT

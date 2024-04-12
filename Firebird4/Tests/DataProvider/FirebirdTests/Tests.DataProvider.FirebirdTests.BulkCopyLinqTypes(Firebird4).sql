@@ -27,9 +27,9 @@ BeforeExecute
 -- Firebird4 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "p"
 WHERE
-	"t1".ID >= 4000
+	"p".ID >= 4000
 
 BeforeExecute
 -- Firebird4 Firebird
@@ -60,7 +60,7 @@ BeforeExecute
 -- Firebird4 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "p"
 WHERE
-	"t1".ID >= 4000
+	"p".ID >= 4000
 

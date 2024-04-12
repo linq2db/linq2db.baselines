@@ -40,17 +40,15 @@ INSERT INTO "PR_1598_Update_Null_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(5)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -69,19 +67,17 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Null_Table"
+	"PR_1598_Update_Null_Table" "t1"
 SET
-	"PR_1598_Update_Null_Table"."Name" = @Name,
-	"PR_1598_Update_Null_Table"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(4)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Update_Null_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -98,18 +94,16 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Null_Table"
+	"PR_1598_Update_Null_Table" "t1"
 SET
-	"PR_1598_Update_Null_Table"."Name" = @Name
+	"Name" = CAST(@Name AS VARCHAR(6))
 WHERE
-	"PR_1598_Update_Null_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"

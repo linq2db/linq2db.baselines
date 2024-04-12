@@ -44,10 +44,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -122,10 +122,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -148,10 +148,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -200,10 +200,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
@@ -278,16 +278,20 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3
+	CAST(@Id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int)
 )
 
 BeforeExecute
 -- Firebird4 Firebird
 
 SELECT DISTINCT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2",
+	"t1"."Value3",
 	"t1"."Id",
 	"t1"."Value1",
 	"t1"."Value2",

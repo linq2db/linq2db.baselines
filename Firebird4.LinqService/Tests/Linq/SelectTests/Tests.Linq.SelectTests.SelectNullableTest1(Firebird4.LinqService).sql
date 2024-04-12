@@ -36,24 +36,22 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@DateTimeValue2,
-	@BoolValue,
-	@GuidValue,
-	@SmallIntValue,
-	@IntValue,
-	@BigIntValue,
-	@StringValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS TimeStamp),
+	CAST(@DateTimeValue2 AS TimeStamp),
+	CAST(@BoolValue AS CHAR),
+	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@SmallIntValue AS SmallInt),
+	CAST(@IntValue AS Int),
+	CAST(@BigIntValue AS BigInt),
+	CAST(@StringValue AS VARCHAR(8191))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1".ID,
 	"t1"."MoneyValue",
 	"t1"."DateTimeValue",
