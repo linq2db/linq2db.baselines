@@ -14,14 +14,14 @@ FROM
 	LinqDataTypes t1
 UNION ALL
 SELECT
-	Cast(NULL as Int),
-	Cast(NULL as Decimal),
-	Cast(NULL as datetime year to fraction),
-	Cast(NULL as BOOLEAN),
-	Cast(NULL as Char(36)),
-	Cast(NULL as BYTE),
-	Cast(NULL as SmallInt),
-	Cast(NULL as NVarChar(255))
+	NULL::Int,
+	NULL::Decimal,
+	NULL::datetime year to fraction,
+	NULL::BOOLEAN,
+	NULL::Char(36),
+	NULL::BYTE,
+	NULL::SmallInt,
+	NULL::NVarChar(255)
 FROM
 	LinqDataTypes d
 

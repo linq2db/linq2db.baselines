@@ -68,9 +68,9 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.DeviceType,
 	t1.Id,
 	t1.SerialNumber,
-	t1.DeviceType,
 	t1.Location
 FROM
 	Issue4280 t1
@@ -89,13 +89,13 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 UPDATE
-	Issue4280
+	Issue4280 t1
 SET
-	Issue4280.SerialNumber = @SerialNumber,
-	Issue4280.DeviceType = @DeviceType,
-	Issue4280.Location = @Location
+	SerialNumber = @SerialNumber,
+	DeviceType = @DeviceType,
+	Location = @Location
 WHERE
-	Issue4280.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -107,20 +107,20 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	Issue4280
+	Issue4280 t1
 SET
-	Issue4280.SerialNumber = @SerialNumber,
-	Issue4280.DeviceType = @DeviceType
+	SerialNumber = @SerialNumber,
+	DeviceType = @DeviceType
 WHERE
-	Issue4280.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.DeviceType,
 	t1.Id,
 	t1.SerialNumber,
-	t1.DeviceType,
 	t1.Location
 FROM
 	Issue4280 t1

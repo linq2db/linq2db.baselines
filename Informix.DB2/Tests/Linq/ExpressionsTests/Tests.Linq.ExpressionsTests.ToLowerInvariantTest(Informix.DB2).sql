@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Lower(p.Taxonomy)
+	p.Taxonomy
 FROM
 	Doctor p
 WHERE

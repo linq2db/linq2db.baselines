@@ -13,7 +13,7 @@ WHERE
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 1 AND p.ParentID = c_1.ParentID
+			p.ParentID = 1 AND c_1.ParentID = p.ParentID
 	)
 
 BeforeExecute
@@ -31,6 +31,6 @@ WHERE
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 2 AND p.ParentID = c_1.ParentID
+			p.ParentID = 2 AND c_1.ParentID = p.ParentID
 	)
 

@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.ID
+	Mdy(10, 1, 2010 + t.ID)
 FROM
 	LinqDataTypes t
 
