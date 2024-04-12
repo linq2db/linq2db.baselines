@@ -27,8 +27,8 @@ SET     @filter_1 = '%test%'
 SELECT
 	[q].[Id],
 	[q].[Name],
-	[q].[ContactEmail],
-	Coalesce([q].[Enabled], 0)
+	[q].[ContactEmail] as [CompositeEmails],
+	[q].[Enabled]
 FROM
 	[CustomerBase] [q]
 WHERE

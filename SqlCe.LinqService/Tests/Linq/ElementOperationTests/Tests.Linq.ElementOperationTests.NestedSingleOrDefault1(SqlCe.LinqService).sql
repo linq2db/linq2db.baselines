@@ -7,10 +7,10 @@ FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT DISTINCT
-				[c_1].[ParentID]
+				[a_Children].[ParentID]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[p].[ParentID] = [c_1].[ParentID]
+				[p].[ParentID] = [a_Children].[ParentID]
 		) [t1]
 

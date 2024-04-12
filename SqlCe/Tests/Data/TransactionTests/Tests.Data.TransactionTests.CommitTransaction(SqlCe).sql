@@ -24,7 +24,7 @@ BeforeExecute
 UPDATE
 	[Parent]
 SET
-	[Parent].[Value1] = 1011
+	[Value1] = 1011
 WHERE
 	[Parent].[ParentID] = 1010
 
@@ -32,10 +32,8 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM
