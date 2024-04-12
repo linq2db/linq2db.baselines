@@ -60,8 +60,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -72,7 +70,7 @@ FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -86,18 +84,16 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" t1
 SET
-	"PR_1598_Update_Enum_Table"."Name" = :Name,
-	"PR_1598_Update_Enum_Table"."Age" = :Age,
-	"PR_1598_Update_Enum_Table"."Gender" = :Gender
+	"Name" = :Name,
+	"Age" = :Age,
+	"Gender" = :Gender
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -108,7 +104,7 @@ FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -120,17 +116,15 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" t1
 SET
-	"PR_1598_Update_Enum_Table"."Name" = :Name,
-	"PR_1598_Update_Enum_Table"."Age" = :Age
+	"Name" = :Name,
+	"Age" = :Age
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -141,7 +135,7 @@ FROM
 	"PR_1598_Update_Enum_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
