@@ -9,8 +9,8 @@ FROM
 WHERE
 	(
 		SELECT TOP 1
-			[r].[GuidValue]
+			IIF([r].[GuidValue] IS NOT NULL, True, False)
 		FROM
 			[LinqDataTypes] [r]
-	) IS NOT NULL
+	) = True
 

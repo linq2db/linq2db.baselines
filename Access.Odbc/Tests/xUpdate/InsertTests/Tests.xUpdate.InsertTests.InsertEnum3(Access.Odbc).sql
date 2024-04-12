@@ -2,14 +2,16 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
 
 INSERT INTO [Parent]
 (
@@ -19,7 +21,7 @@ INSERT INTO [Parent]
 VALUES
 (
 	?,
-	1
+	?
 )
 
 BeforeExecute
@@ -38,7 +40,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [_]
 WHERE
-	[t1].[ParentID] > 1000
+	[_].[ParentID] > 1000
 

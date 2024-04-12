@@ -22,11 +22,11 @@ BeforeExecute
 -- Access AccessOleDb
 
 UPDATE
-	[Parent] [t1]
+	[Parent] [t]
 SET
-	[t1].[Value1] = 1012
+	[t].[Value1] = 1012
 WHERE
-	[t1].[ParentID] = 1010
+	[t].[ParentID] = 1010
 
 BeforeExecute
 RollbackTransaction

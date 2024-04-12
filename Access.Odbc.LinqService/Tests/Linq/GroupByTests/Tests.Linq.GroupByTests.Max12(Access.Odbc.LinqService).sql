@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max(Iif([c_1].[ChildID] > 20, 1, 0))
+	MAX(IIF([t1].[ChildID] > 20, 1, 0))
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 
