@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 300
 
 SELECT
-	Add_Seconds("t"."DateTimeValue", ?)
+	Minute(Add_Seconds("t"."DateTimeValue", 300))
 FROM
 	"LinqDataTypes" "t"
 

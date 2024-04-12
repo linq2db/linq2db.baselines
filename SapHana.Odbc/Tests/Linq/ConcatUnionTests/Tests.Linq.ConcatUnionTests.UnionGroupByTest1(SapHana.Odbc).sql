@@ -2,32 +2,32 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."month_1",
-	"t1"."year_1",
+	"t1"."Month_1",
+	"t1"."Year_1",
 	1
 FROM
 	(
 		SELECT
-			Month("selectParam"."DateTimeValue") as "month_1",
-			Year("selectParam"."DateTimeValue") as "year_1"
+			Month("_"."DateTimeValue") as "Month_1",
+			Year("_"."DateTimeValue") as "Year_1"
 		FROM
-			"LinqDataTypes" "selectParam"
+			"LinqDataTypes" "_"
 	) "t1"
 GROUP BY
-	"t1"."month_1",
-	"t1"."year_1"
+	"t1"."Month_1",
+	"t1"."Year_1"
 UNION
 SELECT
-	"_"."SmallIntValue",
-	"_"."SmallIntValue",
+	"_1"."SmallIntValue",
+	"_1"."SmallIntValue",
 	3
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "_1"
 UNION
 SELECT
-	Year("_1"."DateTimeValue"),
-	Year("_1"."DateTimeValue"),
+	Year("_2"."DateTimeValue"),
+	Year("_2"."DateTimeValue"),
 	2
 FROM
-	"LinqDataTypes" "_1"
+	"LinqDataTypes" "_2"
 

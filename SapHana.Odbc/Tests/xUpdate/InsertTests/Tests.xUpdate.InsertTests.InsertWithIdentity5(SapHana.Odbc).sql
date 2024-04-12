@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "_"
 WHERE
-	"t1"."PersonID" > 4
+	"_"."PersonID" > 4
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -41,8 +41,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -54,7 +52,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = ? AND "p"."LastName" = 'Shepard'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -91,8 +89,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -104,13 +100,13 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = ? AND "p"."LastName" = 'Shepard'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "_"
 WHERE
-	"t1"."PersonID" > 4
+	"_"."PersonID" > 4
 

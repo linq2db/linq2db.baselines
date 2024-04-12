@@ -270,7 +270,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	MOD(Weekday("t"."TransactionDate") + 1, 7) + 1
+	Mod(Weekday("t"."TransactionDate") + 1, 7) + 1
 FROM
 	"Transactions" "t"
 

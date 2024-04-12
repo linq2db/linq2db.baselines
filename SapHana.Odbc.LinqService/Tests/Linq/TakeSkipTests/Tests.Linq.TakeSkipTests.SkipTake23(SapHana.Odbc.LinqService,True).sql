@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 5
-DECLARE @skip  -- Int32
-SET     @skip = 3
 
 SELECT
 	"t1"."ParentID",
@@ -12,14 +8,10 @@ FROM
 	"Child" "t1"
 ORDER BY
 	"t1"."ChildID"
-LIMIT ? OFFSET ?
+LIMIT 5 OFFSET 3
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 5
-DECLARE @skip  -- Int32
-SET     @skip = 3
 
 SELECT
 	"t1"."ParentID",
@@ -28,5 +20,5 @@ FROM
 	"Child" "t1"
 ORDER BY
 	"t1"."ChildID"
-LIMIT ? OFFSET ?
+LIMIT 5 OFFSET 3
 
