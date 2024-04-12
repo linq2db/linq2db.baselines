@@ -226,16 +226,16 @@ SET     @val = 123
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id"
+		t1."Id" as "source_Id"
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN NOT MATCHED AND "Source"."Id" = 5 THEN
+WHEN NOT MATCHED AND "Source"."source_Id" = 5 THEN
 INSERT
 (
 	"Id",
@@ -243,7 +243,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
+	"Source"."source_Id",
 	:val
 )
 
