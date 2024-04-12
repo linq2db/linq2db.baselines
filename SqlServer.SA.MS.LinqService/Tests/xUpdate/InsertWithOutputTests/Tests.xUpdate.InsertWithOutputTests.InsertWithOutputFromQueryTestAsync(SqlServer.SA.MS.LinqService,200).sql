@@ -252,11 +252,17 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 200
+DECLARE @Value Int -- Int32
+SET     @Value = 200
+DECLARE @p Variant -- Object
+SET     @p = 200
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @Id,
+	[s].[Value] + @Value,
+	[s].[ValueStr] + CAST(@p AS VarChar(Max))
 FROM
 	[TableWithData] [s]
 WHERE

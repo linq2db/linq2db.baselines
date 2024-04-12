@@ -28,7 +28,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	IIF(N'Issue1977Table/' + Convert(VarChar(36), [f].[firstField]) + N'/' + Convert(VarChar(36), [f].[secondField]) = CONCAT_WS(N'/', N'Issue1977Table', Convert(NVarChar(36), [f].[firstField]), Convert(NVarChar(36), [f].[secondField])), 1, 0)
+	IIF(N'Issue1977Table/' + CAST([f].[firstField] AS VarChar(36)) + N'/' + CAST([f].[secondField] AS VarChar(36)) = CONCAT_WS(N'/', N'Issue1977Table', CAST([f].[firstField] AS NVarChar(36)), CAST([f].[secondField] AS NVarChar(36))), 1, 0)
 FROM
 	[Issue1977Table] [f]
 
