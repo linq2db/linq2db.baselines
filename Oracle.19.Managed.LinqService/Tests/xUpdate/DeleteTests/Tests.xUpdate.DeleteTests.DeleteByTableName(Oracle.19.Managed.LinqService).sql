@@ -101,18 +101,16 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
 FROM
 	"xxPerson_ol" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
