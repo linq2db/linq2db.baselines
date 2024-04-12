@@ -4,9 +4,14 @@ DECLARE @p Bigint -- Int64
 SET     @p = 0
 
 SELECT
-	Cast(Floor(t."MoneyValue") as BigInt)
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Floor(p."MoneyValue")::BigInt as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(Floor(t."MoneyValue") as BigInt) > :p
+	p_1.c1 > :p
 
