@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	Coalesce((
-		SELECT FIRST @take
+		SELECT FIRST 1
 			"a_Parent"."Value1"
 		FROM
 			"Child" "ch"

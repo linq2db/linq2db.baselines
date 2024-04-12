@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Firebird3 Firebird
+DECLARE @p VarChar(2) -- String
+SET     @p = 'oh'
 
 SELECT
 	"p"."FirstName",
@@ -10,5 +12,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Position('oh', "p"."FirstName") = 2 AND "p"."PersonID" = 1
+	Position(CAST(@p AS VARCHAR(2)), "p"."FirstName") - 1 = 1 AND
+	"p"."PersonID" = 1
 

@@ -30,15 +30,13 @@ INSERT INTO "DateOnlyTable"
 )
 VALUES
 (
-	@Date
+	CAST(@Date AS Date)
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"

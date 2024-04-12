@@ -40,9 +40,9 @@ INSERT INTO "StLink"
 )
 VALUES
 (
-	@InId,
-	@InMaxQuantity,
-	@InMinQuantity
+	CAST(@InId AS Int),
+	CAST(@InMaxQuantity AS Float),
+	CAST(@InMinQuantity AS Float)
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "StLink"
 )
 VALUES
 (
-	@InId,
-	@InMaxQuantity,
-	@InMinQuantity
+	CAST(@InId AS Int),
+	CAST(@InMaxQuantity AS Float),
+	CAST(@InMinQuantity AS Float)
 )
 
 BeforeExecute
@@ -109,46 +109,42 @@ INSERT INTO "EdtLink"
 )
 VALUES
 (
-	@InId,
-	@InMaxQuantity,
-	@InMinQuantity
+	CAST(@InId AS Int),
+	CAST(@InMaxQuantity AS Float),
+	CAST(@InMinQuantity AS Float)
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
-	"x"."InMaxQuantity"
+SELECT FIRST 2
+	"t1"."InId",
+	"e"."InId",
+	"t1"."InMinQuantity",
+	"e"."InMinQuantity",
+	"t1"."InMaxQuantity",
+	"e"."InMaxQuantity"
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 1
+	"t1"."InId" = 1
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
-	"x"."InMaxQuantity"
+SELECT FIRST 2
+	"t1"."InId",
+	"e"."InId",
+	"t1"."InMinQuantity",
+	"e"."InMinQuantity",
+	"t1"."InMaxQuantity",
+	"e"."InMaxQuantity"
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 2
+	"t1"."InId" = 2
 
 BeforeExecute
 -- Firebird3 Firebird

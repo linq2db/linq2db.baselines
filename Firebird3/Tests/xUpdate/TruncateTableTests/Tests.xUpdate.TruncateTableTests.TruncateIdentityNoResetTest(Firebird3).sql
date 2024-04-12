@@ -29,14 +29,7 @@ END
 BeforeExecute
 -- Firebird3 Firebird
 
-INSERT INTO "test_temp"
-(
-	"Field1"
-)
-VALUES
-(
-	1
-)
+DELETE FROM "test_temp"
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -52,12 +45,22 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
+
+INSERT INTO "test_temp"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Firebird3 Firebird
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST 2 SKIP @skip
 	"t1".ID,
 	"t1"."Field1"
 FROM
@@ -96,12 +99,10 @@ VALUES
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST 2 SKIP @skip
 	"t1".ID,
 	"t1"."Field1"
 FROM

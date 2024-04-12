@@ -2,37 +2,33 @@
 -- Firebird3 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 10
 
 SELECT FIRST @take
-	"cp"."ParentID",
-	"c_1"."ChildID"
+	"x"."ParentID",
+	"t2"."ChildID"
 FROM
-	"Parent" "cp"
-		CROSS JOIN (
-			SELECT FIRST @take_1
-				"t3"."ParentID",
-				"t3"."ChildID"
+	"Parent" "x"
+		INNER JOIN (
+			SELECT FIRST 10
+				"c_2"."ParentID",
+				"c_2"."ChildID"
 			FROM
 				(
+					SELECT
+						"c_1"."ParentID",
+						"c_1"."ChildID"
+					FROM
+						"Child" "c_1"
+					UNION
 					SELECT
 						"t1"."ParentID",
 						"t1"."ChildID"
 					FROM
 						"Child" "t1"
-					UNION
-					SELECT
-						"t2"."ParentID",
-						"t2"."ChildID"
-					FROM
-						"Child" "t2"
-				) "t3"
+				) "c_2"
 			ORDER BY
-				"t3"."ParentID"
-		) "c_1"
-WHERE
-	"c_1"."ParentID" = "cp"."ParentID"
+				"c_2"."ParentID"
+		) "t2" ON "t2"."ParentID" = "x"."ParentID"
 ORDER BY
-	"cp"."ParentID"
+	"x"."ParentID"
 
