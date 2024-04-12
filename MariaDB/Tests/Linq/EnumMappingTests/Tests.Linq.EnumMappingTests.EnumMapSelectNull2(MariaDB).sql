@@ -23,8 +23,6 @@ VALUES
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`BigIntValue`
@@ -32,7 +30,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 101
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
