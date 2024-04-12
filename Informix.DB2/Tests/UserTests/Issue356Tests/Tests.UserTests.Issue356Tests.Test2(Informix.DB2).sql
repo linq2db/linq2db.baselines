@@ -2,33 +2,31 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 10
-	cp.ParentID,
-	c_1.ChildID
+	x.ParentID,
+	t2.ChildID
 FROM
-	Parent cp
+	Parent x
 		INNER JOIN (
 			SELECT FIRST 10
-				t3.ParentID,
-				t3.ChildID
+				c_2.ParentID,
+				c_2.ChildID
 			FROM
 				(
+					SELECT
+						c_1.ParentID,
+						c_1.ChildID
+					FROM
+						Child c_1
+					UNION
 					SELECT
 						t1.ParentID,
 						t1.ChildID
 					FROM
 						Child t1
-					UNION
-					SELECT
-						t2.ParentID,
-						t2.ChildID
-					FROM
-						Child t2
-				) t3
+				) c_2
 			ORDER BY
-				t3.ParentID
-		) c_1 ON 1=1
-WHERE
-	c_1.ParentID = cp.ParentID
+				c_2.ParentID
+		) t2 ON t2.ParentID = x.ParentID
 ORDER BY
-	cp.ParentID
+	x.ParentID
 

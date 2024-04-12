@@ -63,11 +63,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
-	Person
+	Person t1
 SET
-	Person.LastName = Person.FirstName
+	LastName = t1.FirstName
 WHERE
-	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
+	t1.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix

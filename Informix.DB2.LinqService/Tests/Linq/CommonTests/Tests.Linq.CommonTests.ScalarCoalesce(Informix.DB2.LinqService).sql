@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Nvl(p.Value1, 100)
+	p.Value1
 FROM
 	Parent p
 
