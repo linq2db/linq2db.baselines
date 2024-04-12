@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = DATETIME2FROMPARTS(2009, 9, 27, 0, 0, 0, 0, 7)
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	[_].[DateTimeValue] = @DateTimeValue
+	[_].[DateTimeValue] = DATETIMEFROMPARTS(2009, 9, 27, 0, 0, 0, 0)
 

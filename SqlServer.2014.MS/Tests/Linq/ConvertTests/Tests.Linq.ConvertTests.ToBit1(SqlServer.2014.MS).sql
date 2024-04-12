@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Convert(Bit, [t].[MoneyValue]) = 1
+	[t].[MoneyValue] <> 0
 
