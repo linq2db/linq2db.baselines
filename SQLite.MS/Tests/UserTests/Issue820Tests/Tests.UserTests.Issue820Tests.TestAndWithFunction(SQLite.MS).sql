@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param = [_].[SmallIntValue]
+	CAST(@param AS INTEGER) = [_].[SmallIntValue]
 
 BeforeExecute
 -- SQLite.MS SQLite
