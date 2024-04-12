@@ -17,11 +17,11 @@ DECLARE @_p  -- Int32
 SET     @_p = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."_p" = ?
+	"_p" = ?
 WHERE
-	"testparams"."_p" = 1
+	"t"."_p" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

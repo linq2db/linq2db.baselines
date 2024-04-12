@@ -2,17 +2,17 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" > 1000
+	"_"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" > 1000
+	"_"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -60,9 +60,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" IN (1001, 1002)
+	"_"."ParentID" IN (1001, 1002)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

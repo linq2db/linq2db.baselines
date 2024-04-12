@@ -422,7 +422,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
-	"BulkInsertUpperCaseColumns" "t1"
+	"BulkInsertUpperCaseColumns" "p"
 WHERE
-	"t1"."ID" >= 4000
+	"p"."ID" >= 4000
 

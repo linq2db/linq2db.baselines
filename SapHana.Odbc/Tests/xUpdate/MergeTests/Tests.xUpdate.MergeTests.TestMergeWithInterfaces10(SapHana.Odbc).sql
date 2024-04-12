@@ -19,14 +19,14 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "Id" FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id" FROM DUMMY) "Source"
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Id" = 2,
-	"Target"."Value" = '3'
+	"Id" = 2,
+	"Value" = '3'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

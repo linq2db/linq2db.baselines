@@ -26,19 +26,17 @@ DECLARE @ID  -- Int32
 SET     @ID = 1001
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."MoneyValue" = 2000,
-	"LinqDataTypes"."SmallIntValue" = 200
+	"MoneyValue" = 2000,
+	"SmallIntValue" = 200
 WHERE
-	"LinqDataTypes"."ID" = ?
+	"t"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t"."ID",
@@ -53,5 +51,5 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" = ?
-LIMIT ?
+LIMIT 2
 
