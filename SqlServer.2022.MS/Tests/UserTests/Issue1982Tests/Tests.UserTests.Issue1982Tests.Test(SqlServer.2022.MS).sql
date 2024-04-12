@@ -23,7 +23,7 @@ SELECT
 		FROM
 			[Issue1982Table] [_]
 		WHERE
-			[_].[Time] < CAST([_].[DateTime] AS TIME)
+			[_].[Time] < CAST([_].[DateTime] AS Time)
 	), 1, 0)
 
 BeforeExecute

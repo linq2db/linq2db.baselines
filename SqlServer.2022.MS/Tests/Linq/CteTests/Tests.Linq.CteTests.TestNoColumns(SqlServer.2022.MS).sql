@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-WITH [CTE1_] ([ChildID])
+WITH [CTE1_] ([C_ChildID])
 AS
 (
 	SELECT
@@ -42,11 +42,10 @@ FROM
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-WITH [CTE1_] ([ChildID])
-AS
+WITH [CTE1_] AS
 (
 	SELECT
-		[c_1].[ChildID]
+		*
 	FROM
 		[Child] [c_1]
 )
