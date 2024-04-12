@@ -35,8 +35,8 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" Target
 USING (
-	SELECT 1 AS "Id" FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id" FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -49,7 +49,7 @@ VALUES
 	2,
 	'3'
 )
- WHERE "Source"."Id" > 1
+ WHERE "Source"."source_Id" > 1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
