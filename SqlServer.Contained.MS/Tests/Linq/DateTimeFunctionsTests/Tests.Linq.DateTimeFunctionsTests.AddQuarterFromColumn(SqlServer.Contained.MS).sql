@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue])
+	CAST(DateAdd(quarter, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

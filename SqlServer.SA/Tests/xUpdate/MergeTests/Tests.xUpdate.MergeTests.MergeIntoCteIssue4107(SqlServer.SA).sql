@@ -15,18 +15,18 @@ AS
 MERGE INTO [CTE_1] [Target]
 USING (
 	SELECT
-		[t1].[ChildID]
+		[t1].[ChildID] as [source_ChildID]
 	FROM
 		[Child] [t1]
 ) [Source]
 (
-	[ChildID]
+	[source_ChildID]
 )
-ON ([Target].[ID] = [Source].[ChildID])
+ON ([Target].[ID] = [Source].[source_ChildID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[MiddleName] = N'unpdated'
+	[MiddleName] = N'unpdated'
 ;
 

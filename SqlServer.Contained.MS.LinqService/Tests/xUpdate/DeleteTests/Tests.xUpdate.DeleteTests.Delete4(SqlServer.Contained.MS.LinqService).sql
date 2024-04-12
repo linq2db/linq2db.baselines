@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [gc]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [gc]
 WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
+	[gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

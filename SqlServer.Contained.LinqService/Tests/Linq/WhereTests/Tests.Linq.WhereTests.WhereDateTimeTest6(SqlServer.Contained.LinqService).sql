@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @Date DateTime2
-SET     @Date = DATETIME2FROMPARTS(2009, 9, 20, 0, 0, 0, 0, 7)
 
 SELECT
 	[_].[ID],
@@ -17,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	Convert(Date, [_].[DateTimeValue]) = @Date
+	CAST([_].[DateTimeValue] AS Date) = CAST(DATETIMEFROMPARTS(2009, 9, 20, 0, 0, 0, 0) AS Date)
 

@@ -59,19 +59,17 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[ParameterDeduplication]
 SET
-	[_].[Int1] = @Int1,
-	[_].[Int2] = @Int2,
-	[_].[IntN1] = @IntN1,
-	[_].[IntN2] = @IntN2,
-	[_].[String1] = @String1,
-	[_].[String2] = @String2,
-	[_].[String3] = @String3
-FROM
-	[ParameterDeduplication] [_]
+	[Int1] = @Int1,
+	[Int2] = @Int2,
+	[IntN1] = @IntN1,
+	[IntN2] = @IntN2,
+	[String1] = @String1,
+	[String2] = @String2,
+	[String3] = @String3
 WHERE
-	[_].[Id] = @id
+	[ParameterDeduplication].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -93,19 +91,17 @@ DECLARE @id Int -- Int32
 SET     @id = 2
 
 UPDATE
-	[_]
+	[ParameterDeduplication]
 SET
-	[_].[Int1] = @Int1,
-	[_].[Int2] = @Int2,
-	[_].[IntN1] = @IntN1,
-	[_].[IntN2] = @IntN2,
-	[_].[String1] = @String1,
-	[_].[String2] = @String2,
-	[_].[String3] = @String3
-FROM
-	[ParameterDeduplication] [_]
+	[Int1] = @Int1,
+	[Int2] = @Int2,
+	[IntN1] = @IntN1,
+	[IntN2] = @IntN2,
+	[String1] = @String1,
+	[String2] = @String2,
+	[String3] = @String3
 WHERE
-	[_].[Id] = @id
+	[ParameterDeduplication].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

@@ -64,10 +64,12 @@ FROM
 	[ValueConversion] [t1]
 		INNER JOIN (
 			SELECT
-				[t2].[BoolValue]
+				*
 			FROM
 				[ValueConversion] [t2]
-		) [t2_1] ON [t2_1].[BoolValue] = @BoolValue AND [t1].[BoolValue] = @BoolValue_1
+			WHERE
+				[t2].[BoolValue] = @BoolValue
+		) [t2_1] ON [t1].[BoolValue] = @BoolValue_1
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param = [_].[SmallIntValue]
+	CAST(@param AS Int) = [_].[SmallIntValue]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

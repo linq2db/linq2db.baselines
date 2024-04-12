@@ -81,41 +81,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
-DECLARE @take_2 Int -- Int32
-SET     @take_2 = 1
 
-SELECT TOP (@take)
-	[x_2].[Id],
-	[a_FirstUsersWithLanguage_1].[Id]
+SELECT TOP (1)
+	[x].[Id],
+	[t2].[Id]
 FROM
-	[UserGroup] [x_2]
+	[UserGroup] [x]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[a_UserGroup].[Id]
+			SELECT TOP (1)
+				[a_FirstUsersWithLanguage].[UserGroupId]
 			FROM
-				[User] [x_1]
-					LEFT JOIN (
-						SELECT
-							[a_FirstUsersWithLanguage].[Id],
-							[t1].[Id] as [Id_1]
-						FROM
-							[UserGroup] [t1]
-								OUTER APPLY (
-									SELECT TOP (@take_2)
-										[x].[Id]
-									FROM
-										[User] [x]
-									WHERE
-										[x].[UserGroupId] = [t1].[Id] AND [x].[LanguageId] = 2
-								) [a_FirstUsersWithLanguage]
-					) [a_UserGroup] ON [x_1].[UserGroupId] = [a_UserGroup].[Id_1]
+				[User] [a_FirstUsersWithLanguage]
 			WHERE
-				[x_1].[UserGroupId] = [x_2].[Id] AND [x_1].[LanguageId] = 1
-		) [a_FirstUsersWithLanguage_1]
+				[a_FirstUsersWithLanguage].[UserGroupId] = [x].[Id] AND
+				[a_FirstUsersWithLanguage].[LanguageId] = 1
+		) [t1]
+		LEFT JOIN [UserGroup] [a_UserGroup] ON [t1].[UserGroupId] = [a_UserGroup].[Id]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_FirstUsersWithLanguage_1].[Id]
+			FROM
+				[User] [a_FirstUsersWithLanguage_1]
+			WHERE
+				[a_FirstUsersWithLanguage_1].[UserGroupId] = [a_UserGroup].[Id] AND
+				[a_FirstUsersWithLanguage_1].[LanguageId] = 2
+		) [t2]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
