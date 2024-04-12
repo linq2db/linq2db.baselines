@@ -2,7 +2,7 @@
 -- MySql MySql.Official MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- MySql MySql.Official MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
