@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Len([p].[FirstName])
+	Len([p].[FirstName]) as [Length_1]
 FROM
 	[Person] [p]
 

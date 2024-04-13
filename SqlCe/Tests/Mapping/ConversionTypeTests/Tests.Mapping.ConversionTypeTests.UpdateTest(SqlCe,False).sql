@@ -36,7 +36,7 @@ SET     @ID = 3
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = @Data
+	[Data] = @Data
 WHERE
 	[TrimTestTable].[ID] = @ID
 
@@ -48,7 +48,7 @@ SET     @Data = '***OOO***'
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = @Data
+	[Data] = @Data
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
@@ -62,7 +62,7 @@ SET     @p = '***HHH***'
 UPDATE
 	[TrimTestTable]
 SET
-	[TrimTestTable].[Data] = @Data
+	[Data] = @Data
 WHERE
 	[TrimTestTable].[Data] = @p
 
@@ -71,7 +71,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
@@ -82,7 +82,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

@@ -3,25 +3,16 @@
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND CASE
-		WHEN [p].[MiddleName] IS NOT NULL
-			THEN 3
-		WHEN [p].[MiddleName] IS NULL
-			THEN 1
-		ELSE 2
-	END = 1 AND
-	CASE
-		WHEN [p].[FirstName] IS NULL
-			THEN 3
-		WHEN [p].[FirstName] IS NOT NULL
-			THEN 1
-		ELSE 2
-	END = 1
+	[p].[PersonID] = 1 AND
+	[p].[MiddleName] IS NULL AND
+	[p].[MiddleName] IS NULL AND
+	[p].[FirstName] IS NOT NULL AND
+	[p].[FirstName] IS NOT NULL
 
