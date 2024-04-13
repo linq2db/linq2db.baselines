@@ -33,18 +33,16 @@ CREATE TABLE IF NOT EXISTS person649
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @added Timestamp -- DateTime2
-SET     @added = '2017-01-01'::date
 
 SELECT
 	"a_Person".personid,
 	"a_Person".personname,
-	Max(f.added)
+	MAX(f.added)
 FROM
 	activity649 f
 		INNER JOIN person649 "a_Person" ON f.personid = "a_Person".personid
 WHERE
-	f.added >= :added
+	f.added >= make_timestamp(2017, 1, 1, 0, 0, 0)
 GROUP BY
 	"a_Person".personid,
 	"a_Person".personname

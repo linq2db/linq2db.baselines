@@ -2,11 +2,11 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	p."ParentID",
+	t1."ParentID",
 	ch."ChildID"
 FROM
-	"Parent" p
-		INNER JOIN "Child" ch ON p."ParentID" = ch."ParentID"
+	"Parent" t1
+		INNER JOIN "Child" ch ON t1."ParentID" = ch."ParentID"
 WHERE
 	(ch."ParentID" < 4 OR ch."ParentID" >= 4)
 
