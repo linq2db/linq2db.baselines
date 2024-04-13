@@ -125,10 +125,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @skip Integer -- Int32
-SET     @skip = 1
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 3
 
 SELECT
 	t1."Value"
@@ -136,7 +132,7 @@ FROM
 	"TakeSkipClass" t1
 ORDER BY
 	t1."Value"
-LIMIT :skip OFFSET :skip_1 
+LIMIT 1 OFFSET 3 
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -14,5 +12,5 @@ WHERE
 	p."ParentID" > 1
 ORDER BY
 	p."ParentID"
-LIMIT :take OFFSET :skip 
+LIMIT 1 OFFSET :skip 
 
