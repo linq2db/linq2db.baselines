@@ -8,6 +8,12 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Text(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -17,17 +23,15 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
 RETURNING 
 	"PersonID"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -39,7 +43,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

@@ -16,7 +16,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(NULL as TimeStamp)
+	NULL::TimeStamp
 FROM
 	"TableTime" x
 UNION
@@ -26,12 +26,12 @@ FROM
 	"TableTime" x_1
 UNION
 SELECT
-	Cast(NULL as TimeStamp)
+	NULL::TimeStamp
 FROM
 	"TableTime" x_2
 UNION
 SELECT
-	Cast(NULL as TimeStamp)
+	NULL::TimeStamp
 FROM
 	"TableTime" x_3
 
