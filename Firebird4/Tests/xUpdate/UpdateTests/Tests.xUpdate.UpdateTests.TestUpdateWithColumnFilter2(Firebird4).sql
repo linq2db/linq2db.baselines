@@ -23,20 +23,18 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(18)),
+	CAST(@LastName AS VARCHAR(8)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",
@@ -55,20 +53,18 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName
+	"FirstName" = CAST(@FirstName AS VARCHAR(25))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",
@@ -93,23 +89,21 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(25)),
+	"LastName" = CAST(@LastName AS VARCHAR(25)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(8191)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",

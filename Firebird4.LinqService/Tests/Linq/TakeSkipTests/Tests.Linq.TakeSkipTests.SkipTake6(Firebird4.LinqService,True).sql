@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 3
 
 SELECT
 	"c_1"."ParentID",
@@ -9,20 +7,16 @@ SELECT
 FROM
 	"Child" "c_1",
 	(
-		SELECT FIRST @take
+		SELECT FIRST 3
 			"p"."ParentID"
 		FROM
 			"GrandChild" "p"
-	) "t1"
+	) "p_1"
 WHERE
-	"c_1"."ParentID" = "t1"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 3
-DECLARE @skip Integer -- Int32
-SET     @skip = 12
 
 SELECT
 	"c_1"."ParentID",
@@ -30,11 +24,11 @@ SELECT
 FROM
 	"Child" "c_1",
 	(
-		SELECT FIRST @take SKIP @skip
+		SELECT FIRST 3 SKIP 12
 			"p"."ParentID"
 		FROM
 			"GrandChild" "p"
-	) "t1"
+	) "p_1"
 WHERE
-	"c_1"."ParentID" = "t1"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID"
 

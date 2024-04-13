@@ -25,19 +25,17 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	Cast(@FirstName as VarChar(255) CHARACTER SET UNICODE_FSS),
-	Cast(@LastName as VarChar(255) CHARACTER SET UNICODE_FSS),
-	Cast(@Gender as Char(1))
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird4 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",

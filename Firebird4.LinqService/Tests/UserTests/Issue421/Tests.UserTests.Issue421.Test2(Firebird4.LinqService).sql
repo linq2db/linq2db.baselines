@@ -51,11 +51,11 @@ BeforeExecute
 -- Firebird4 Firebird
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "t1"
 SET
-	"BlobClass"."BlobValue" = X'030201'
+	"BlobValue" = X'030201'
 WHERE
-	"BlobClass"."Id" = 1
+	"t1"."Id" = 1
 
 BeforeExecute
 -- Firebird4 Firebird

@@ -16,7 +16,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS Int)
 )
 RETURNING
 	ID
