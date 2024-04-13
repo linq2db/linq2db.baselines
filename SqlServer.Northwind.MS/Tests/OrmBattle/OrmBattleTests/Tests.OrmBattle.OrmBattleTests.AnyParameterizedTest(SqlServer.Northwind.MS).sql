@@ -24,6 +24,6 @@ WHERE
 				(N'ABCDE'), (N'ALFKI')
 			) [id]([item])
 		WHERE
-			([c_1].[CustomerID] = [id].[item] OR [c_1].[CustomerID] IS NULL AND [id].[item] IS NULL)
+			[c_1].[CustomerID] = [id].[item]
 	)
 

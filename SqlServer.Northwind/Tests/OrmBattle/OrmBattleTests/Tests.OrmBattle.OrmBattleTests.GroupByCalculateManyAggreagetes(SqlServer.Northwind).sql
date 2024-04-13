@@ -2,13 +2,13 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	Sum([t1].[Freight]),
-	Min([t1].[Freight]),
-	Max([t1].[Freight]),
-	Avg([t1].[Freight])
+	SUM([g_1].[Freight]),
+	MIN([g_1].[Freight]),
+	MAX([g_1].[Freight]),
+	AVG([g_1].[Freight])
 FROM
-	[Orders] [t1]
-		INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+	[Orders] [g_1]
+		INNER JOIN [Customers] [a_Customer] ON [g_1].[CustomerID] = [a_Customer].[CustomerID]
 GROUP BY
 	[a_Customer].[CustomerID]
 
