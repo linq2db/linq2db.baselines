@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @Date DateTime2
-SET     @Date = CAST('2009-09-20T00:00:00.0000000' AS DATETIME2)
 
 SELECT
 	[_].[ID],
@@ -17,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	Convert(Date, [_].[DateTimeValue]) = @Date
+	CAST([_].[DateTimeValue] AS Date) = CAST(CAST(N'2009-09-20' AS DateTime2) AS Date)
 

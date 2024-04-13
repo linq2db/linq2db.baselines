@@ -37,18 +37,16 @@ IF (OBJECT_ID(N'[person649]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @added DateTime2
-SET     @added = CAST('2017-01-01T00:00:00.0000000' AS DATETIME2)
 
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	Max([f].[added])
+	MAX([f].[added])
 FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]
 WHERE
-	[f].[added] >= @added
+	[f].[added] >= CAST(N'2017-01-01' AS DateTime2)
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]
