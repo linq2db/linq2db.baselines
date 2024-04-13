@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -126,9 +126,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -148,9 +148,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -170,9 +170,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -192,9 +192,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -214,9 +214,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -236,9 +236,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -262,7 +262,11 @@ WHERE
 	"s"."Id" = 3
 RETURNING
 	"s"."Id" + 1,
-	"s"."ValueStr" || Cast(1 as VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS),
+	CASE
+		WHEN "s"."ValueStr" IS NOT NULL THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- Firebird3 Firebird

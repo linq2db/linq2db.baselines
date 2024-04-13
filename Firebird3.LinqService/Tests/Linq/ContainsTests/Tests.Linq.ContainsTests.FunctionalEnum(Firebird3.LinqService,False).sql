@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(8191)),
+	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -68,18 +68,16 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(3)),
+	CAST(@CEnum AS VarChar(12) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -88,10 +86,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -100,10 +96,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -112,10 +106,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -124,10 +116,8 @@ WHERE
 
 BeforeExecute
 -- Firebird3 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"

@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" < "i"."One" * 2) OR ("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" > "i"."One" + "i"."One"))
+	NOT (("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" >= "i"."One" * 2) AND ("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" <= "i"."One" + "i"."One"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Three" < "i"."One") OR ("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Three" > "i"."Four"))
+	NOT (("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Three" >= "i"."One") AND ("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Three" <= "i"."Four"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -66,7 +66,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" < "i"."Three") OR ("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" > "i"."Two"))
+	NOT (("i"."One" > "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" >= "i"."Three") AND ("i"."One" < "i"."One" OR "i"."One" = "i"."One" AND "i"."Two" <= "i"."Two"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -76,7 +76,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" < "i"."One") OR ("i"."Two" > "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Five" > "i"."Two"))
+	NOT (("i"."Two" > "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" >= "i"."One") AND ("i"."Two" < "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Five" <= "i"."Two"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -86,7 +86,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" < "i"."One") OR ("i"."Two" > "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Five" > "i"."Two"))
+	NOT (("i"."Two" > "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" >= "i"."One") AND ("i"."Two" < "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Five" <= "i"."Two"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -96,7 +96,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."One" OR "i"."Two" = "i"."One" AND "i"."Nil" < "i"."One") OR ("i"."Two" > "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Nil" > "i"."One"))
+	NOT (("i"."Two" > "i"."One" OR "i"."Two" = "i"."One" AND "i"."Nil" >= "i"."One") AND ("i"."Two" < "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Nil" <= "i"."One"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Nil" < "i"."One") OR ("i"."Two" > "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Nil" > "i"."Three"))
+	NOT (("i"."Two" > "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Nil" >= "i"."One") AND ("i"."Two" < "i"."Two" OR "i"."Two" = "i"."Two" AND "i"."Nil" <= "i"."Three"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -116,7 +116,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" < "i"."Nil") OR ("i"."Two" > "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Five" > "i"."Nil"))
+	NOT (("i"."Two" > "i"."One" OR "i"."Two" = "i"."One" AND "i"."Five" >= "i"."Nil") AND ("i"."Two" < "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Five" <= "i"."Nil"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -126,7 +126,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."One" OR "i"."Two" = "i"."One" AND "i"."Nil" < "i"."Nil") OR ("i"."Two" > "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Nil" > "i"."Nil"))
+	NOT (("i"."Two" > "i"."One" OR "i"."Two" = "i"."One" AND "i"."Nil" >= "i"."Nil") AND ("i"."Two" < "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Nil" <= "i"."Nil"))
 
 BeforeExecute
 -- Firebird3 Firebird
@@ -136,7 +136,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(("i"."Two" < "i"."Nil" OR "i"."Two" = "i"."Nil" AND "i"."Two" < "i"."One") OR ("i"."Two" > "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Two" > "i"."Five"))
+	NOT (("i"."Two" > "i"."Nil" OR "i"."Two" = "i"."Nil" AND "i"."Two" >= "i"."One") AND ("i"."Two" < "i"."Three" OR "i"."Two" = "i"."Three" AND "i"."Two" <= "i"."Five"))
 
 BeforeExecute
 -- Firebird3 Firebird

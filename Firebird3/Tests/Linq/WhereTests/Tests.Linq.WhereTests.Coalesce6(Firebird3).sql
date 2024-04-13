@@ -7,8 +7,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	CASE
-		WHEN "p"."Value1" = 1 THEN 10
-		ELSE 20
-	END = 20
+	("p"."Value1" <> 1 OR "p"."Value1" IS NULL)
 

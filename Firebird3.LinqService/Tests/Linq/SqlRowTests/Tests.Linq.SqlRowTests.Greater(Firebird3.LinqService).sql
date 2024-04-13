@@ -50,12 +50,12 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	(2 > "i"."One" OR 2 = "i"."One" AND NULL > "i"."Two" OR 2 = "i"."One" AND "i"."Two" IS NULL AND 3 > "i"."Three")
+	(2 > "i"."One" OR 2 = "i"."One" AND NULL > "i"."Two")
 
 BeforeExecute
 -- Firebird3 Firebird

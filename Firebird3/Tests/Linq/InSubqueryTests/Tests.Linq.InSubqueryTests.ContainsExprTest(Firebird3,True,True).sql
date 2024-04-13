@@ -15,6 +15,24 @@ WHERE
 		FROM
 			"Child" "c_1"
 		WHERE
-			"c_1"."ParentID" = "p"."ParentID" + @n
+			"p"."ParentID" + CAST(@n AS Int) = "c_1"."ParentID"
 	)
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+BeforeExecute
+-- Firebird3 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
 
