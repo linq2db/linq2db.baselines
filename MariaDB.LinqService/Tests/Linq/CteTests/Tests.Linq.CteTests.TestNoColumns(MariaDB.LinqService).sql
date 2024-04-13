@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-WITH `CTE1_` (`ChildID`)
+WITH `CTE1_` (`C_ChildID`)
 AS
 (
 	SELECT
@@ -42,11 +42,10 @@ FROM
 BeforeExecute
 -- MariaDB MySqlConnector MySql
 
-WITH `CTE1_` (`ChildID`)
-AS
+WITH `CTE1_` AS
 (
 	SELECT
-		`c_1`.`ChildID` as `C_1`
+		*
 	FROM
 		`Child` `c_1`
 )
