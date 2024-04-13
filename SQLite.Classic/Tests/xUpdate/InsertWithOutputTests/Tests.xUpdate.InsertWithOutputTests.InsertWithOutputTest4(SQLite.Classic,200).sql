@@ -22,10 +22,11 @@ RETURNING
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @ChildID  -- Int32
+SET     @ChildID = 200
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[c_1].[ChildID] + [c_1].[ParentID] + @ChildID
 FROM
 	[Child] [c_1]
 WHERE

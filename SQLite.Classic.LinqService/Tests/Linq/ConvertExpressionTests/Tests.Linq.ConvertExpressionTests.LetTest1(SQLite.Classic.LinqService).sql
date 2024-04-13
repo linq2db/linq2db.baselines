@@ -1,30 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-DECLARE @take_1  -- Int32
-SET     @take_1 = 1
 
 SELECT
-	(
-		SELECT
-			[p].[ParentID]
-		FROM
-			[Child] [p]
-		WHERE
-			[p_1].[ParentID] = [p].[ParentID]
-		LIMIT @take
-	)
+	[t1].[ParentID]
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
+		LEFT JOIN (
+			SELECT
+				[a_Children].[ParentID],
+				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn]
+			FROM
+				[Child] [a_Children]
+		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			[Child] [t1]
-		WHERE
-			[p_1].[ParentID] = [t1].[ParentID]
-		LIMIT @take_1
-	) IS NOT NULL
+	[t1].[ParentID] IS NOT NULL
 

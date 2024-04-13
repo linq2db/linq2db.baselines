@@ -11,10 +11,10 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Products] [t1]
+			[Products] [a_Products]
 		WHERE
-			[c_1].[CategoryID] = [t1].[CategoryID]
+			[c_1].[CategoryID] = [a_Products].[CategoryID]
 	) > 10
 

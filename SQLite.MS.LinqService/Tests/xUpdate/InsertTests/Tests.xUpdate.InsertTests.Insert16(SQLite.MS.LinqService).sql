@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @idx  -- Int32
-SET     @idx = 12
 
 INSERT INTO [Person]
 (
@@ -20,7 +18,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Cast(@idx as NVarChar(11)),
+	CAST(12 AS NVarChar(11)),
 	'M'
 )
 
