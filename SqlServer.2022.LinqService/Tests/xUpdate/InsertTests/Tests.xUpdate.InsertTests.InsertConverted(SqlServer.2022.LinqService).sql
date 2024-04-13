@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DELETE [t1]
+DELETE [r]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [r]
 WHERE
-	[t1].[ID] >= 1000
+	[r].[ID] >= 1000
 
 BeforeExecute
 -- SqlServer.2022
@@ -25,10 +25,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ID],
 	[t].[BigIntValue]
 FROM
@@ -39,9 +37,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2022
 
-DELETE [t1]
+DELETE [r]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [r]
 WHERE
-	[t1].[ID] >= 1000
+	[r].[ID] >= 1000
 

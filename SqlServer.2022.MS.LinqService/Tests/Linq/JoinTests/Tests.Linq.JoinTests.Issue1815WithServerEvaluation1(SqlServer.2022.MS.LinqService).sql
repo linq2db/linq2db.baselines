@@ -102,33 +102,29 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
-	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
+SELECT TOP (2)
+	[t1].[InId],
+	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
+	IIF([e].[InId] IS NULL, [t1].[InMaxQuantity], [e].[InMaxQuantity])
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 1
+	[t1].[InId] = 1
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[InId],
-	IIF([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
-	IIF([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
+SELECT TOP (2)
+	[t1].[InId],
+	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
+	IIF([e].[InId] IS NULL, [t1].[InMaxQuantity], [e].[InMaxQuantity])
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 2
+	[t1].[InId] = 2
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
