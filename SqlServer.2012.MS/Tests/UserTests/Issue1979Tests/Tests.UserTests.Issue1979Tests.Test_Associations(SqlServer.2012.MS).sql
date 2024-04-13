@@ -53,8 +53,6 @@ IF (OBJECT_ID(N'[Issue]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[i].[Id]
@@ -65,18 +63,18 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Tagging] [_1]
+			[Tagging] [x]
 				OUTER APPLY (
-					SELECT TOP (@take)
-						[_].[Name]
+					SELECT TOP (1)
+						[a_Tag].[Name]
 					FROM
-						[Tag] [_]
+						[Tag] [a_Tag]
 					WHERE
-						Convert(BigInt, [_1].[TagId]) = [_].[Id]
-				) [a_Tag]
+						CAST([x].[TagId] AS BigInt) = [a_Tag].[Id]
+				) [t1]
 		WHERE
-			[_1].[TaggableType] = N'Issue' AND [i].[Id] = [_1].[TaggableId] AND
-			[a_Tag].[Name] = N'Visu'
+			[x].[TaggableType] = N'Issue' AND [i].[Id] = [x].[TaggableId] AND
+			[t1].[Name] = N'Visu'
 	)
 
 BeforeExecute

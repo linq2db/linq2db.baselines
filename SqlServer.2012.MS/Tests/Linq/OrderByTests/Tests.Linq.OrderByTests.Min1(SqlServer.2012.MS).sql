@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Min([p].[ParentID])
+	MIN([t1].[ParentID])
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 
