@@ -14,12 +14,6 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @_default Int -- Int32
-SET     @_default = 0
-DECLARE @_default Int -- Int32
-SET     @_default = 0
-DECLARE @_default Int -- Int32
-SET     @_default = 0
 
 SELECT
 	[a].[Id],
@@ -27,7 +21,7 @@ SELECT
 FROM
 	[SampleClass] [a]
 WHERE
-	([a].[Id] = 0 AND Iif([a].[NullValue] IS NULL, ?, [a].[NullValue]) = 0 OR [a].[Id] = 1 AND Iif([a].[NullValue] IS NULL, ?, [a].[NullValue]) = 1 OR [a].[Id] = 2 AND Iif([a].[NullValue] IS NULL, ?, [a].[NullValue]) = 2)
+	([a].[Id] = 0 AND ([a].[NullValue] = 0 AND [a].[NullValue] IS NOT NULL OR [a].[NullValue] IS NULL) OR [a].[Id] = 1 AND [a].[NullValue] = 1 AND [a].[NullValue] IS NOT NULL OR [a].[Id] = 2 AND [a].[NullValue] = 2 AND [a].[NullValue] IS NOT NULL)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

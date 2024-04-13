@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif([p].[ParentID] - 1 IN (
+	IIF([p].[ParentID] - 1 IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM

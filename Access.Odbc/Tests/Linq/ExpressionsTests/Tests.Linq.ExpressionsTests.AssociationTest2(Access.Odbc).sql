@@ -6,6 +6,8 @@ SELECT
 	[gc].[ChildID],
 	[gc].[GrandChildID]
 FROM
-	[Parent] [cp]
-		INNER JOIN [GrandChild] [gc] ON ([cp].[ParentID] = [gc].[ParentID] AND [gc].[ChildID] = 22)
+	[Parent] [p]
+		INNER JOIN [GrandChild] [gc] ON ([p].[ParentID] = [gc].[ParentID])
+WHERE
+	[gc].[ChildID] = 22
 
