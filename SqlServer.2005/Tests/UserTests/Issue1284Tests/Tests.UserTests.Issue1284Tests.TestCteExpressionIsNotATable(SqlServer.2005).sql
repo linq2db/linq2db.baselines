@@ -4,10 +4,10 @@
 WITH [CTE_1]
 (
 	[entry_ID],
-	[FirstName],
-	[LastName],
-	[MiddleName],
-	[Gender]
+	[entry_FirstName],
+	[entry_LastName],
+	[entry_MiddleName],
+	[entry_Gender]
 )
 AS
 (
@@ -21,11 +21,11 @@ AS
 		[Person] [person_1]
 )
 SELECT
-	[x].[FirstName],
+	[x].[entry_FirstName],
 	[x].[entry_ID],
-	[x].[LastName],
-	[x].[MiddleName],
-	[x].[Gender]
+	[x].[entry_LastName],
+	[x].[entry_MiddleName],
+	[x].[entry_Gender]
 FROM
 	[CTE_1] [x]
 WHERE

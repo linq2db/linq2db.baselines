@@ -81,24 +81,20 @@ SELECT 2,N'French'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_1].[Id],
-	[a_FirstUserWithMultipleParameters].[Id]
+SELECT TOP (1)
+	[x].[Id],
+	[t1].[Id]
 FROM
-	[UserGroup] [x_1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[Id]
+	[UserGroup] [x]
+		LEFT JOIN (
+			SELECT
+				[a_FirstUserWithMultipleParameters].[Id],
+				ROW_NUMBER() OVER (PARTITION BY [a_FirstUserWithMultipleParameters].[UserGroupId] ORDER BY [a_FirstUserWithMultipleParameters].[UserGroupId]) as [rn],
+				[a_FirstUserWithMultipleParameters].[UserGroupId]
 			FROM
-				[User] [x]
-			WHERE
-				[x].[UserGroupId] = [x_1].[Id]
-		) [a_FirstUserWithMultipleParameters]
+				[User] [a_FirstUserWithMultipleParameters]
+		) [t1] ON [t1].[UserGroupId] = [x].[Id] AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

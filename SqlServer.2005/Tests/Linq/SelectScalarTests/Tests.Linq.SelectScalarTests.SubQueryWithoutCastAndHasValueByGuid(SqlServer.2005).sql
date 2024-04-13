@@ -1,18 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[_].[ParentID],
 	[_].[Value1]
 FROM
 	[Parent] [_]
+		LEFT JOIN (
+			SELECT TOP (1)
+				[r].[GuidValue]
+			FROM
+				[LinqDataTypes] [r]
+		) [t1] ON 1=1
 WHERE
-	(
-		SELECT TOP (@take)
-			[r].[GuidValue]
-		FROM
-			[LinqDataTypes] [r]
-	) IS NOT NULL
+	[t1].[GuidValue] IS NOT NULL
 
