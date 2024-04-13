@@ -2,19 +2,19 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Sum(t1."MoneyValue"),
-	t1."Key_2",
-	t1."Key_1"
+	SUM(grp_1."MoneyValue"),
+	grp_1."Year_1",
+	grp_1."Month_1"
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "Key_1",
-			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "Key_2",
-			"selectParam"."MoneyValue"
+			Floor(Extract(month From grp."DateTimeValue"))::Int as "Month_1",
+			Floor(Extract(year From grp."DateTimeValue"))::Int as "Year_1",
+			grp."MoneyValue"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) t1
+			"LinqDataTypes" grp
+	) grp_1
 GROUP BY
-	t1."Key_1",
-	t1."Key_2"
+	grp_1."Month_1",
+	grp_1."Year_1"
 
