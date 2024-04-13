@@ -44,33 +44,31 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime VarChar(23) -- AnsiString
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[AddTime],
-	[detail].[Id],
-	[detail].[EmailId],
-	[detail].[Data]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[EmailId],
+	[d].[Data]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[Id],
-			[p].[AddTime]
+			[p].[Id]
 		FROM
 			[mails] [p]
 				INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 		WHERE
-			DateTime([p].[AddTime]) > DateTime(@DateTime)
-	) [key_data_result]
-		INNER JOIN [EmailAttachments] [detail] ON [key_data_result].[Id] = [detail].[EmailId]
+			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', @DateTime)
+	) [m_1]
+		INNER JOIN [EmailAttachments] [d] ON [m_1].[Id] = [d].[EmailId]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime VarChar(23) -- AnsiString
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
@@ -80,7 +78,7 @@ FROM
 	[mails] [p]
 		INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 WHERE
-	DateTime([p].[AddTime]) > DateTime(@DateTime)
+	strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', @DateTime)
 ORDER BY
 	[p].[AddTime]
 

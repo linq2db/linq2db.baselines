@@ -109,15 +109,13 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Max([t1].[Value4]),
-	GROUP_CONCAT([t1].[Value4], ' -> ')
+	MAX([g_1].[Value4]),
+	GROUP_CONCAT([g_1].[Value4], ' -> ')
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value4]
-ORDER BY
-	[t1].[Id]
+	[g_1].[Id],
+	[g_1].[Value4]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
