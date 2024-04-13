@@ -2,19 +2,19 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."Value1"
+	p_1."c1"
 FROM
 	(
 		SELECT
-			p1."ParentID",
-			NULL as "Value1"
+			p."ParentID",
+			NULL as "c1"
 		FROM
-			"Parent" p1
+			"Parent" p
 		UNION
 		SELECT
 			p2."ParentID",
-			p2."Value1"
+			p2."Value1" as "c1"
 		FROM
 			"Parent" p2
-	) p
+	) p_1
 

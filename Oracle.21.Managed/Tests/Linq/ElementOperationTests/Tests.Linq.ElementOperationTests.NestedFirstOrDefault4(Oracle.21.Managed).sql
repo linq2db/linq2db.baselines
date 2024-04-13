@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t2."ParentID",
@@ -15,15 +13,15 @@ FROM
 			FROM
 				(
 					SELECT DISTINCT
-						c_1."ParentID",
-						c_1."ChildID"
+						a_Children."ParentID",
+						a_Children."ChildID"
 					FROM
-						"Child" c_1
+						"Child" a_Children
 					WHERE
-						p."ParentID" = c_1."ParentID" AND c_1."ParentID" > 0
+						p."ParentID" = a_Children."ParentID" AND a_Children."ParentID" > 0
 				) t1
 			ORDER BY
 				t1."ChildID"
-			FETCH NEXT :take ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) t2
 

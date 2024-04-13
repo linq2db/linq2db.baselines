@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-SELECT /*+ FULL(p_2.p) FULL(p_2.p_1) */
-	p_2."ParentID"
+SELECT /*+ FULL(p_3.p) FULL(p_3.p_2) */
+	p_3."ParentID"
 FROM
 	(
 		SELECT
 			p."ParentID",
 			p."Value1"
 		FROM
-			"Child" c_1
-				INNER JOIN "Parent" p ON c_1."ParentID" = p."ParentID"
+			"Child" p_1
+				INNER JOIN "Parent" p ON p_1."ParentID" = p."ParentID"
 		UNION
 		SELECT
-			p_1."ParentID",
-			p_1."Value1"
+			p_2."ParentID",
+			p_2."Value1"
 		FROM
-			"Child" c_2
-				INNER JOIN "Parent" p_1 ON c_2."ParentID" = p_1."ParentID"
-	) p_2
+			"Child" c_1
+				INNER JOIN "Parent" p_2 ON c_1."ParentID" = p_2."ParentID"
+	) p_3
 WHERE
-	p_2."ParentID" > 0
+	p_3."ParentID" > 0
 
