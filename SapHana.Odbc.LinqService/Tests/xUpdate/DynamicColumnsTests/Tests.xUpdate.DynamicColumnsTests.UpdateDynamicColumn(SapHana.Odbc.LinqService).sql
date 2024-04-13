@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	?,
+	?,
+	?
 )
 
 BeforeExecute
@@ -28,11 +34,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

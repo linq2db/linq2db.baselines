@@ -19,11 +19,11 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" "t1"
 SET
-	"TestTable"."Fd" = 2
+	"Fd" = 2
 WHERE
-	"TestTable"."Id" = 1
+	"t1"."Id" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

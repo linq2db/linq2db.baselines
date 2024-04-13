@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -41,5 +39,5 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
-LIMIT ?
+LIMIT 2
 

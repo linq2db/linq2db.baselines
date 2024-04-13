@@ -532,19 +532,17 @@ DECLARE @EnumWithNullDeclarative VarChar -- AnsiString
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "e"
 SET
-	"ValueConversion"."Value1" = "ValueConversion"."Value1",
-	"ValueConversion"."Value2" = ?,
-	"ValueConversion"."EnumWithNull" = ?,
-	"ValueConversion"."EnumWithNullDeclarative" = ?
+	"Value1" = "e"."Value1",
+	"Value2" = ?,
+	"EnumWithNull" = ?,
+	"EnumWithNullDeclarative" = ?
 WHERE
-	"ValueConversion"."Id" = 1
+	"e"."Id" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -561,7 +559,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -587,24 +585,22 @@ DECLARE @Id  -- Int32
 SET     @Id = 2
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = ?,
-	"ValueConversion"."Value2" = ?,
-	"ValueConversion"."Enum" = ?,
-	"ValueConversion"."EnumNullable" = ?,
-	"ValueConversion"."EnumWithNull" = ?,
-	"ValueConversion"."EnumWithNullDeclarative" = ?,
-	"ValueConversion"."BoolValue" = ?,
-	"ValueConversion"."AnotherBoolValue" = ?,
-	"ValueConversion"."DateTimeNullable" = ?
+	"Value1" = ?,
+	"Value2" = ?,
+	"Enum" = ?,
+	"EnumNullable" = ?,
+	"EnumWithNull" = ?,
+	"EnumWithNullDeclarative" = ?,
+	"BoolValue" = ?,
+	"AnotherBoolValue" = ?,
+	"DateTimeNullable" = ?
 WHERE
-	"ValueConversion"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -621,7 +617,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -647,24 +643,22 @@ DECLARE @Id  -- Int32
 SET     @Id = 3
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = ?,
-	"ValueConversion"."Value2" = ?,
-	"ValueConversion"."Enum" = ?,
-	"ValueConversion"."EnumNullable" = ?,
-	"ValueConversion"."EnumWithNull" = ?,
-	"ValueConversion"."EnumWithNullDeclarative" = ?,
-	"ValueConversion"."BoolValue" = ?,
-	"ValueConversion"."AnotherBoolValue" = ?,
-	"ValueConversion"."DateTimeNullable" = ?
+	"Value1" = ?,
+	"Value2" = ?,
+	"Enum" = ?,
+	"EnumNullable" = ?,
+	"EnumWithNull" = ?,
+	"EnumWithNullDeclarative" = ?,
+	"BoolValue" = ?,
+	"AnotherBoolValue" = ?,
+	"DateTimeNullable" = ?
 WHERE
-	"ValueConversion"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -681,7 +675,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

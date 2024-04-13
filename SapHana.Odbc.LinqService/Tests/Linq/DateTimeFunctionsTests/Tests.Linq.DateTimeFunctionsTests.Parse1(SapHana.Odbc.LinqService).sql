@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"d"."c1"
+	To_Date("d"."DateTimeValue")
 FROM
-	(
-		SELECT
-			"t"."DateTimeValue" as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "d"
+	"LinqDataTypes" "d"
 WHERE
-	DayOfMonth("d"."c1") > 0
+	DayOfMonth("d"."DateTimeValue") > 0
 

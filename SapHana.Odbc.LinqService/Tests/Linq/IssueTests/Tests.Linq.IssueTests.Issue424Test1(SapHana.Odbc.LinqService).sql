@@ -18,3 +18,12 @@ ORDER BY
 	"t2"."ParentID"
 LIMIT ?
 
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
