@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(5))
 )
 
 BeforeExecute
@@ -68,8 +68,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(5))
 )
 
 BeforeExecute

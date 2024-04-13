@@ -36,8 +36,8 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	CAST(@Id AS Int),
+	CAST(@BlobValue AS Blob(3))
 )
 
 BeforeExecute
@@ -58,11 +58,11 @@ DECLARE @BlobValue Blob(3) -- Binary
 SET     @BlobValue = BX'030201'
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "_"
 SET
-	"BlobClass"."BlobValue" = @BlobValue
+	"BlobValue" = CAST(@BlobValue AS Blob(3))
 WHERE
-	"BlobClass"."Id" = 1
+	"_"."Id" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

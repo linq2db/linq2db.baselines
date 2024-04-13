@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."DateTimeValue"
+	Extract(year from "p"."DateTimeValue")
 FROM
 	"LinqDataTypes" "p"
 

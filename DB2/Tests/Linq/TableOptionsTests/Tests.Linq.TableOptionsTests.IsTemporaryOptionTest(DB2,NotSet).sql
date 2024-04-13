@@ -86,8 +86,8 @@ INSERT INTO SESSION."temp_table1"
 )
 VALUES
 (
-	@ID,
-	@Value
+	CAST(@ID AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute

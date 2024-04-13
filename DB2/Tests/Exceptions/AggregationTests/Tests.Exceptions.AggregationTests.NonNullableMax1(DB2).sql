@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("_"."ParentID")
+	MAX("_"."ParentID")
 FROM
 	"Parent" "_"
 WHERE

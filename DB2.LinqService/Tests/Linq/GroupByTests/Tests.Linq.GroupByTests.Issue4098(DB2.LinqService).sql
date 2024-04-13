@@ -38,9 +38,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	@InvestorId,
-	@SecurityClass,
-	@Units
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@SecurityClass AS NVarChar(4)),
+	CAST(@Units AS Int)
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	@InvestorId,
-	@SecurityClass,
-	@Units
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@SecurityClass AS NVarChar(4)),
+	CAST(@Units AS Int)
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	@InvestorId,
-	@SecurityClass,
-	@Units
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@SecurityClass AS NVarChar(4)),
+	CAST(@Units AS Int)
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	@InvestorId,
-	@SecurityClass,
-	@Units
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@SecurityClass AS NVarChar(4)),
+	CAST(@Units AS Int)
 )
 
 BeforeExecute
@@ -149,9 +149,9 @@ INSERT INTO "InvestorPayment"
 )
 VALUES
 (
-	@Id,
-	@InvestorId,
-	@NetPayment
+	CAST(@Id AS Int),
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@NetPayment AS Int)
 )
 
 BeforeExecute
@@ -171,9 +171,9 @@ INSERT INTO "InvestorPayment"
 )
 VALUES
 (
-	@Id,
-	@InvestorId,
-	@NetPayment
+	CAST(@Id AS Int),
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@NetPayment AS Int)
 )
 
 BeforeExecute
@@ -216,9 +216,9 @@ INSERT INTO "PaymentEvent"
 )
 VALUES
 (
-	@Id,
-	@Description,
-	@SecurityClass
+	CAST(@Id AS Int),
+	CAST(@Description AS NVarChar(3)),
+	CAST(@SecurityClass AS NVarChar(4))
 )
 
 BeforeExecute
@@ -238,9 +238,9 @@ INSERT INTO "PaymentEvent"
 )
 VALUES
 (
-	@Id,
-	@Description,
-	@SecurityClass
+	CAST(@Id AS Int),
+	CAST(@Description AS NVarChar(3)),
+	CAST(@SecurityClass AS NVarChar(4))
 )
 
 BeforeExecute
@@ -279,8 +279,8 @@ INSERT INTO "InvestorPaymentDetail"
 )
 VALUES
 (
-	@InvestorId,
-	@CalculationId
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@CalculationId AS Int)
 )
 
 BeforeExecute
@@ -297,8 +297,8 @@ INSERT INTO "InvestorPaymentDetail"
 )
 VALUES
 (
-	@InvestorId,
-	@CalculationId
+	CAST(@InvestorId AS NVarChar(4)),
+	CAST(@CalculationId AS Int)
 )
 
 BeforeExecute
@@ -337,8 +337,8 @@ INSERT INTO "PaymentCalculation"
 )
 VALUES
 (
-	@Id,
-	@EventId
+	CAST(@Id AS Int),
+	CAST(@EventId AS Int)
 )
 
 BeforeExecute
@@ -355,8 +355,8 @@ INSERT INTO "PaymentCalculation"
 )
 VALUES
 (
-	@Id,
-	@EventId
+	CAST(@Id AS Int),
+	CAST(@EventId AS Int)
 )
 
 BeforeExecute
@@ -365,23 +365,23 @@ BeforeExecute
 SELECT
 	"ip"."InvestorId",
 	"t1"."Units",
-	Sum("ip"."NetPayment")
+	SUM("ip"."NetPayment")
 FROM
-	"PaymentEvent" "pe"
-		INNER JOIN "InvestorPayment" "ip" ON "pe"."Id" = "ip"."Id"
+	"PaymentEvent" "g_1"
+		INNER JOIN "InvestorPayment" "ip" ON "g_1"."Id" = "ip"."Id"
 		INNER JOIN "InvestorPaymentDetail" "ipd" ON "ip"."InvestorId" = "ipd"."InvestorId"
-		INNER JOIN "PaymentCalculation" "pc" ON "ipd"."CalculationId" = "pc"."Id" AND "pe"."Id" = "pc"."EventId"
+		INNER JOIN "PaymentCalculation" "pc" ON "ipd"."CalculationId" = "pc"."Id" AND "g_1"."Id" = "pc"."EventId"
 		INNER JOIN (
 			SELECT
 				"b"."InvestorId",
 				"b"."SecurityClass",
-				Sum("b"."Units") as "Units"
+				SUM("b"."Units") as "Units"
 			FROM
 				"Transaction" "b"
 			GROUP BY
 				"b"."SecurityClass",
 				"b"."InvestorId"
-		) "t1" ON "ip"."InvestorId" = "t1"."InvestorId" AND "pe"."SecurityClass" = "t1"."SecurityClass"
+		) "t1" ON "ip"."InvestorId" = "t1"."InvestorId" AND "g_1"."SecurityClass" = "t1"."SecurityClass"
 GROUP BY
 	"ip"."InvestorId",
 	"t1"."Units"

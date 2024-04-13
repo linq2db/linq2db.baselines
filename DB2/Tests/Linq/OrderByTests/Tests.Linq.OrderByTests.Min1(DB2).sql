@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Min("p"."ParentID")
+	MIN("t1"."ParentID")
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 

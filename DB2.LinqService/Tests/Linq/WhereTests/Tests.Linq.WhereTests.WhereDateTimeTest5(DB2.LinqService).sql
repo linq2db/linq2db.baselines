@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Date Timestamp(20) -- DateTime
-SET     @Date = '2009-09-20-00.00.00.000000'
 
 SELECT
 	"_".ID,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "_"
 WHERE
-	Date("_"."DateTimeValue") = @Date
+	DATE("_"."DateTimeValue") = DATE(CAST('2009-09-20' AS timestamp))
 

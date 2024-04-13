@@ -36,8 +36,8 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	CAST(@Id AS Int),
+	CAST(@BlobValue AS Blob(3))
 )
 
 BeforeExecute
