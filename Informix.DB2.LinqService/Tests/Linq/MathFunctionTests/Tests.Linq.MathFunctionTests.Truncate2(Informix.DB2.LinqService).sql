@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Trunc(Cast((-p.MoneyValue) as Float), 0)
+	t_1.c1
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			Trunc((-t.MoneyValue)::Float, 0) as c1
+		FROM
+			LinqDataTypes t
+	) t_1
 WHERE
-	Trunc(Cast((-p.MoneyValue) as Float), 0) <> 0.10000000000000001
+	t_1.c1 <> 0.10000000000000001
 

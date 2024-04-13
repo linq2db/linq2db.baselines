@@ -16,8 +16,6 @@ CREATE TABLE IF NOT EXISTS BlobClass
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = {1,2,3}
 
@@ -28,7 +26,7 @@ INSERT INTO BlobClass
 )
 VALUES
 (
-	@Id,
+	1,
 	@BlobValue
 )
 
@@ -49,11 +47,11 @@ DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = {3,2,1}
 
 UPDATE
-	BlobClass
+	BlobClass t1
 SET
-	BlobClass.BlobValue = @BlobValue
+	BlobValue = @BlobValue
 WHERE
-	BlobClass.Id = 1
+	t1.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

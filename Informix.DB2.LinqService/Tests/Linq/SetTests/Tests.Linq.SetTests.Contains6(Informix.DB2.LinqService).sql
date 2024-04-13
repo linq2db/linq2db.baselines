@@ -15,6 +15,6 @@ WHERE
 		FROM
 			Child c_1
 		WHERE
-			c_1.ParentID = p.ParentID + @n
+			p.ParentID + @n = c_1.ParentID
 	)
 

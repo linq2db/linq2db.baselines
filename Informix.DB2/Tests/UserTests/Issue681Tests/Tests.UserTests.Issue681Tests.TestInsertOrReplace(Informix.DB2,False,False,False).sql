@@ -22,11 +22,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	Issue681Table
+	Issue681Table t1
 SET
-	Issue681Table."Value" = @Value
+	"Value" = @Value
 WHERE
-	Issue681Table.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -54,11 +54,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	Issue681Table
+	Issue681Table t1
 SET
-	Issue681Table."Value" = @Value
+	"Value" = @Value
 WHERE
-	Issue681Table.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -136,5 +136,14 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
+SELECT
+	t1.Id,
+	t1.Text
+FROM
+	Issue2816Table t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 DROP TABLE IF EXISTS Issue2816Table
 

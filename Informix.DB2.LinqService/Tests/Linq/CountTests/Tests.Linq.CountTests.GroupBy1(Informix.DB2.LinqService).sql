@@ -2,16 +2,12 @@
 -- Informix.DB2 Informix
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			Child ch
-		WHERE
-			t1.ParentID = ch.ParentID AND ch.ChildID > 20
-	)
+	COUNT(CASE
+		WHEN g_1.ChildID > 20 THEN 1
+		ELSE NULL
+	END)
 FROM
-	Child t1
+	Child g_1
 GROUP BY
-	t1.ParentID
+	g_1.ParentID
 
