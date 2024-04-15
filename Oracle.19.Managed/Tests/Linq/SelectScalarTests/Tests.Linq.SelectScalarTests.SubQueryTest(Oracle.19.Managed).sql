@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	(
@@ -9,7 +7,7 @@ SELECT
 			p."Value1"
 		FROM
 			"Parent" p
-		FETCH NEXT :take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM SYS.DUAL
 

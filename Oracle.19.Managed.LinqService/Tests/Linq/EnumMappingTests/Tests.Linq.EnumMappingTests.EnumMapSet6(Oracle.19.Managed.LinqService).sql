@@ -26,11 +26,11 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" r
 SET
-	"LinqDataTypes"."IntValue" = 4
+	"IntValue" = 4
 WHERE
-	"LinqDataTypes".ID = 101 AND "LinqDataTypes"."IntValue" = 3
+	r.ID = 101 AND r."IntValue" = 3
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

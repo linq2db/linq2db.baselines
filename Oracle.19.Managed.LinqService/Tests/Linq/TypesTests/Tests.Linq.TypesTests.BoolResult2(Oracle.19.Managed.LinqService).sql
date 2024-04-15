@@ -3,8 +3,7 @@
 
 SELECT
 	CASE
-		WHEN a_Patient."PersonID" IS NOT NULL
-			THEN 1
+		WHEN a_Patient."PersonID" IS NOT NULL THEN 1
 		ELSE 0
 	END
 FROM
