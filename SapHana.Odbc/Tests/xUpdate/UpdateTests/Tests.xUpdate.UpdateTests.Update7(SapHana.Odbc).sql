@@ -36,11 +36,11 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"Parent"."ParentID" = ?
+	"p"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -62,11 +62,11 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"Parent"."ParentID" = ?
+	"p"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -80,33 +80,33 @@ BeforeExecute
 UPDATE
 	"billing_TempReading"
 SET
-	"billing_TempReading"."DevReadingTypeId" = (
+	"DevReadingTypeId" = (
 		SELECT
-			"drt"."Id"
-		FROM
-			"billing_TempReading" "tr"
-				INNER JOIN "billing_DevReadingType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
-		WHERE
-			"billing_TempReading"."id" = "tr"."id"
-	),
-	"billing_TempReading"."Responsibility" = (
-		SELECT
-			"drt_1"."Responsibility"
+			"drt_1"."Id"
 		FROM
 			"billing_TempReading" "tr_1"
 				INNER JOIN "billing_DevReadingType" "drt_1" ON "drt_1"."Name" = "tr_1"."ReadingTypeName" AND "drt_1"."DevTypeId" = "tr_1"."Devtypeid"
 		WHERE
 			"billing_TempReading"."id" = "tr_1"."id"
+	),
+	"Responsibility" = (
+		SELECT
+			"drt_2"."Responsibility"
+		FROM
+			"billing_TempReading" "tr_2"
+				INNER JOIN "billing_DevReadingType" "drt_2" ON "drt_2"."Name" = "tr_2"."ReadingTypeName" AND "drt_2"."DevTypeId" = "tr_2"."Devtypeid"
+		WHERE
+			"billing_TempReading"."id" = "tr_2"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"billing_TempReading" "tr_2"
-				INNER JOIN "billing_DevReadingType" "drt_2" ON "drt_2"."Name" = "tr_2"."ReadingTypeName" AND "drt_2"."DevTypeId" = "tr_2"."Devtypeid"
+			"billing_TempReading" "tr"
+				INNER JOIN "billing_DevReadingType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
 		WHERE
-			"billing_TempReading"."id" = "tr_2"."id"
+			"billing_TempReading"."id" = "tr"."id"
 	)
 
 BeforeExecute
@@ -115,23 +115,80 @@ BeforeExecute
 UPDATE
 	"billing_TempReading"
 SET
-	"billing_TempReading"."DevReadingTypeId" = (
+	"DevReadingTypeId" = (
 		SELECT
-			"w"."Id"
+			"t4"."Id"
 		FROM
-			"billing_DevReadingType" "w"
+			"billing_TempReading" "t6"
+				LEFT JOIN (
+					SELECT
+						"w_2"."Id",
+						ROW_NUMBER() OVER (PARTITION BY "w_2"."Name", "w_2"."DevTypeId" ORDER BY "w_2"."Name") as "rn",
+						"w_2"."Name",
+						"w_2"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w_2"
+				) "t4" ON ("t4"."Name" = "t6"."ReadingTypeName" OR "t4"."Name" IS NULL AND "t6"."ReadingTypeName" IS NULL) AND ("t4"."DevTypeId" = "t6"."Devtypeid" OR "t4"."DevTypeId" IS NULL AND "t6"."Devtypeid" IS NULL) AND "t4"."rn" <= 1
+				LEFT JOIN (
+					SELECT
+						ROW_NUMBER() OVER (PARTITION BY "w_3"."Name", "w_3"."DevTypeId" ORDER BY "w_3"."Name") as "rn",
+						"w_3"."Name",
+						"w_3"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w_3"
+				) "t5" ON ("t5"."Name" = "t6"."ReadingTypeName" OR "t5"."Name" IS NULL AND "t6"."ReadingTypeName" IS NULL) AND ("t5"."DevTypeId" = "t6"."Devtypeid" OR "t5"."DevTypeId" IS NULL AND "t6"."Devtypeid" IS NULL) AND "t5"."rn" <= 1
 		WHERE
-			"w"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"billing_TempReading"."id" = "t6"."id"
 	),
-	"billing_TempReading"."Responsibility" = (
+	"Responsibility" = (
 		SELECT
-			"w_1"."Responsibility"
+			"t8"."Responsibility"
 		FROM
-			"billing_DevReadingType" "w_1"
+			"billing_TempReading" "t9"
+				LEFT JOIN (
+					SELECT
+						ROW_NUMBER() OVER (PARTITION BY "w_4"."Name", "w_4"."DevTypeId" ORDER BY "w_4"."Name") as "rn",
+						"w_4"."Name",
+						"w_4"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w_4"
+				) "t7" ON ("t7"."Name" = "t9"."ReadingTypeName" OR "t7"."Name" IS NULL AND "t9"."ReadingTypeName" IS NULL) AND ("t7"."DevTypeId" = "t9"."Devtypeid" OR "t7"."DevTypeId" IS NULL AND "t9"."Devtypeid" IS NULL) AND "t7"."rn" <= 1
+				LEFT JOIN (
+					SELECT
+						"w_5"."Responsibility",
+						ROW_NUMBER() OVER (PARTITION BY "w_5"."Name", "w_5"."DevTypeId" ORDER BY "w_5"."Name") as "rn",
+						"w_5"."Name",
+						"w_5"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w_5"
+				) "t8" ON ("t8"."Name" = "t9"."ReadingTypeName" OR "t8"."Name" IS NULL AND "t9"."ReadingTypeName" IS NULL) AND ("t8"."DevTypeId" = "t9"."Devtypeid" OR "t8"."DevTypeId" IS NULL AND "t9"."Devtypeid" IS NULL) AND "t8"."rn" <= 1
 		WHERE
-			"w_1"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w_1"."DevTypeId" = "billing_TempReading"."Devtypeid"
+			"billing_TempReading"."id" = "t9"."id"
+	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"billing_TempReading" "t3"
+				LEFT JOIN (
+					SELECT
+						ROW_NUMBER() OVER (PARTITION BY "w"."Name", "w"."DevTypeId" ORDER BY "w"."Name") as "rn",
+						"w"."Name",
+						"w"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w"
+				) "t1" ON ("t1"."Name" = "t3"."ReadingTypeName" OR "t1"."Name" IS NULL AND "t3"."ReadingTypeName" IS NULL) AND ("t1"."DevTypeId" = "t3"."Devtypeid" OR "t1"."DevTypeId" IS NULL AND "t3"."Devtypeid" IS NULL) AND "t1"."rn" <= 1
+				LEFT JOIN (
+					SELECT
+						ROW_NUMBER() OVER (PARTITION BY "w_1"."Name", "w_1"."DevTypeId" ORDER BY "w_1"."Name") as "rn",
+						"w_1"."Name",
+						"w_1"."DevTypeId"
+					FROM
+						"billing_DevReadingType" "w_1"
+				) "t2" ON ("t2"."Name" = "t3"."ReadingTypeName" OR "t2"."Name" IS NULL AND "t3"."ReadingTypeName" IS NULL) AND ("t2"."DevTypeId" = "t3"."Devtypeid" OR "t2"."DevTypeId" IS NULL AND "t3"."Devtypeid" IS NULL) AND "t2"."rn" <= 1
+		WHERE
+			"billing_TempReading"."id" = "t3"."id"
 	)
 
 BeforeExecute
