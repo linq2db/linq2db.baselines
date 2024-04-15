@@ -1,8 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value Integer -- Int32
-SET     @Value = 1
+DECLARE @value Integer -- Int32
+SET     @value = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	:Value
+	:value,
+	CASE
+		WHEN 1 = 1 THEN :p
+		ELSE 5
+	END
 
