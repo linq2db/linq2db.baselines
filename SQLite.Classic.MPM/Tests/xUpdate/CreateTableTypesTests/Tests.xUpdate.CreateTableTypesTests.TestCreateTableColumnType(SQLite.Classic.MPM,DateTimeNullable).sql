@@ -34,8 +34,8 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @DateTimeNullable  -- DateTime
-SET     @DateTimeNullable = '2018-11-25 01:02:03'
+DECLARE @DateTimeNullable VarChar(23) -- AnsiString
+SET     @DateTimeNullable = '2018-11-25 01:02:03.000'
 
 INSERT INTO [CreateTableTypes]
 (
