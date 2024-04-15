@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -9,9 +15,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute

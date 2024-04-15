@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[CustomerID],
@@ -17,5 +15,5 @@ SELECT
 	[t1].[Fax]
 FROM
 	[Customers] [t1]
-LIMIT @take
+LIMIT 1
 
