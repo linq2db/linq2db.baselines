@@ -22,7 +22,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[AllTypes] [t1]
+	[AllTypes] [_]
 WHERE
-	[t1].[char20DataType] = 'issue792'
+	[_].[char20DataType] = 'issue792'
 

@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT TOP 15
@@ -52,10 +52,22 @@ FROM
 	) [e]
 		LEFT JOIN (
 			SELECT TOP 15
-				[t6].[ID],
-				[t6].[SmallIntValue]
+				[_1].[ID],
+				[_1].[SmallIntValue]
 			FROM
 				(
+					SELECT
+						[_].[ID],
+						[_].[MoneyValue],
+						[_].[DateTimeValue],
+						[_].[BoolValue],
+						[_].[GuidValue],
+						[_].[BinaryValue],
+						[_].[SmallIntValue],
+						[_].[StringValue]
+					FROM
+						[LinqDataTypes] [_]
+					UNION ALL
 					SELECT
 						[t4].[ID],
 						[t4].[MoneyValue],
@@ -67,18 +79,6 @@ FROM
 						[t4].[StringValue]
 					FROM
 						[LinqDataTypes] [t4]
-					UNION ALL
-					SELECT
-						[t5].[ID],
-						[t5].[MoneyValue],
-						[t5].[DateTimeValue],
-						[t5].[BoolValue],
-						[t5].[GuidValue],
-						[t5].[BinaryValue],
-						[t5].[SmallIntValue],
-						[t5].[StringValue]
-					FROM
-						[LinqDataTypes] [t5]
-				) [t6]
-		) [_] ON ([_].[ID] = [e].[ID])
+				) [_1]
+		) [p] ON ([p].[ID] = [e].[ID])
 

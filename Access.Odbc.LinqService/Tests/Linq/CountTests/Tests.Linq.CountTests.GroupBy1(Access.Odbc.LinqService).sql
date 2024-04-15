@@ -2,19 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count([t1].[ParentID])
+	COUNT(IIF([g_1].[ChildID] > 20, 1, NULL))
 FROM
-	[Child] [t2]
-		LEFT JOIN (
-			SELECT
-				[ch].[ParentID]
-			FROM
-				[Child] [ch]
-			WHERE
-				[ch].[ChildID] > 20
-			GROUP BY
-				[ch].[ParentID]
-		) [t1] ON ([t2].[ParentID] = [t1].[ParentID])
+	[Child] [g_1]
 GROUP BY
-	[t2].[ParentID]
+	[g_1].[ParentID]
 
