@@ -61,14 +61,14 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 UPDATE
-	[c_1]
+	[a_Items]
 SET
-	[c_1].[Value] = 1
+	[a_Items].[Value] = 1
 OUTPUT
-	[INSERTED].[Id]
+	INSERTED.[Id]
 FROM
-	[Test3697] [cp]
-		INNER JOIN [Test3697Item] [c_1] ON [cp].[Id] = [c_1].[TestId]
+	[Test3697] [a]
+		INNER JOIN [Test3697Item] [a_Items] ON [a].[Id] = [a_Items].[TestId]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -78,7 +78,7 @@ UPDATE
 SET
 	[b].[Value] = 1
 OUTPUT
-	[INSERTED].[Id]
+	INSERTED.[Id]
 FROM
 	[Test3697] [a]
 		INNER JOIN [Test3697Item] [b] ON [a].[Id] = [b].[TestId]
