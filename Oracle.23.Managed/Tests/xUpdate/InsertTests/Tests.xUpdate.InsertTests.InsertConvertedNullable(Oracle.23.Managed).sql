@@ -2,9 +2,9 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
 WHERE
-	t1.ID >= 1000
+	r.ID >= 1000
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t.ID,
@@ -34,13 +32,13 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID = 1001
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
 WHERE
-	t1.ID >= 1000
+	r.ID >= 1000
 
