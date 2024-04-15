@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(p."ParentID")
+	MAX(p."ParentID")
 FROM
 	"Parent" p
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"

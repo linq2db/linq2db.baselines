@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Floor(t."MoneyValue") as Int)
+	Floor(t."MoneyValue")::Int
 FROM
 	"LinqDataTypes" t
 
