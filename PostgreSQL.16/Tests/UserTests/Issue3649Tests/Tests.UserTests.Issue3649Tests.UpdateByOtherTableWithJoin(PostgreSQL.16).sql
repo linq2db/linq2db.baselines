@@ -38,12 +38,12 @@ SET
 FROM
 	(
 		SELECT
-			t1."TotalId",
-			Sum(t1."Sum") as "SumAggr"
+			eg."TotalId",
+			SUM(eg."Sum") as "SumAggr"
 		FROM
-			"Entry" t1
+			"Entry" eg
 		GROUP BY
-			t1."TotalId"
+			eg."TotalId"
 	) r
 WHERE
 	"Total"."Label" = 'spendings' AND "Total"."Id" = r."TotalId"

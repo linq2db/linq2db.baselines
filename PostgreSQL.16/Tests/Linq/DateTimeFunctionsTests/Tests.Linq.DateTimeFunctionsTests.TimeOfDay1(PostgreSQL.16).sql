@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(t."DateTimeValue" as Time)
+	t."DateTimeValue"::Time
 FROM
 	"LinqDataTypes" t
 
