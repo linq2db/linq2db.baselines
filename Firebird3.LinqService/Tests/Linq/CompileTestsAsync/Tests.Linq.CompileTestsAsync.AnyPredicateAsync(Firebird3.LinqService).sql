@@ -32,7 +32,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO "AsyncDataTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute

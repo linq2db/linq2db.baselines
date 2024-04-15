@@ -2,7 +2,7 @@
 -- Firebird3 Firebird
 
 SELECT
-	DateAdd(Month, "t"."SmallIntValue" * 3, "t"."DateTimeValue")
+	CAST(DateAdd(Month, "t"."SmallIntValue" * 3, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 

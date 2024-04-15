@@ -47,29 +47,29 @@ BeforeExecute
 -- Firebird3 Firebird
 
 SELECT
+	t2.Id,
+	t2.CardName,
+	t2.OwnerId,
 	t1.Id,
-	t1.CardName,
-	t1.OwnerId,
-	a_Owner.Id,
-	a_Owner.Name,
-	a_Owner.CountOfTCards
+	t1.Name,
+	t1.CountOfTCards
 FROM
-	Card t1
+	Card t2
 		LEFT JOIN (
 			SELECT
-				cl.Id,
-				cl.Name,
+				a_Owner.Id,
+				a_Owner.Name,
 				(
 					SELECT
-						Count(*)
+						COUNT(*)
 					FROM
 						Card t
 					WHERE
-						t.OwnerId = cl.Id
+						t.OwnerId = a_Owner.Id
 				) as CountOfTCards
 			FROM
-				Client cl
-		) a_Owner ON a_Owner.Id = t1.OwnerId
+				Client a_Owner
+		) t1 ON t1.Id = t2.OwnerId
 
 BeforeExecute
 -- Firebird3 Firebird

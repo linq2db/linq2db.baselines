@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "as_1", NULL AS "take", 3 AS "skip", NULL AS "Skip_1", NULL AS "insert_1", NULL AS SELECT_1 FROM rdb$database
+	SELECT 3 AS "source_as", NULL AS "source_take", 3 AS "source_skip", NULL AS "source_Skip_1", NULL AS "source_insert", NULL AS "source_SELECT" FROM rdb$database
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL FROM rdb$database
 	UNION ALL
@@ -244,16 +244,16 @@ USING (
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
 (
-	"as_1",
-	"take",
-	"skip",
-	"Skip_1",
-	"insert_1",
-	SELECT_1
+	"source_as",
+	"source_take",
+	"source_skip",
+	"source_Skip_1",
+	"source_insert",
+	"source_SELECT"
 )
-ON ("Target"."Id" = "Source"."as_1")
+ON ("Target"."Id" = "Source"."source_as")
 
-WHEN NOT MATCHED AND "Source"."insert_1" = 216 THEN
+WHEN NOT MATCHED AND "Source"."source_insert" = 216 THEN
 INSERT
 (
 	"Id",
@@ -265,12 +265,12 @@ INSERT
 )
 VALUES
 (
-	"Source"."as_1",
-	"Source"."take",
-	"Source"."skip",
-	"Source"."Skip_1",
-	"Source"."insert_1",
-	"Source".SELECT_1
+	"Source"."source_as",
+	"Source"."source_take",
+	"Source"."source_skip",
+	"Source"."source_Skip_1",
+	"Source"."source_insert",
+	"Source"."source_SELECT"
 )
 
 BeforeExecute

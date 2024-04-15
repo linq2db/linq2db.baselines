@@ -32,7 +32,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -105,9 +105,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -127,9 +127,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -149,9 +149,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -171,9 +171,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -181,14 +181,14 @@ BeforeExecute
 
 SELECT
 	"fact_1"."Id",
-	"leftTag"."Id",
-	"leftTag"."FactId",
-	"leftTag"."Name"
+	"t1"."Id",
+	"t1"."FactId",
+	"t1"."Name"
 FROM
-	"Tag" "leftTag"
-		FULL JOIN "Fact" "fact_1" ON "leftTag"."FactId" = "fact_1"."Id"
+	"Tag" "t1"
+		FULL JOIN "Fact" "fact_1" ON "t1"."FactId" = "fact_1"."Id"
 WHERE
-	("fact_1"."Id" > 3 OR "leftTag"."FactId" > 3)
+	("fact_1"."Id" > 3 OR "t1"."FactId" > 3)
 
 BeforeExecute
 -- Firebird3 Firebird
