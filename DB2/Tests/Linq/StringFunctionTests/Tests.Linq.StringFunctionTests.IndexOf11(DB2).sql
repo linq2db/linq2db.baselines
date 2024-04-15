@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @p VarChar(2) -- String
+SET     @p = 'oh'
 
 SELECT
 	"p"."FirstName",
@@ -10,5 +12,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate('oh', "p"."FirstName") = 2 AND "p"."PersonID" = 1
+	Locate(CAST(@p AS NVarChar(2)), "p"."FirstName") - 1 = 1 AND
+	"p"."PersonID" = 1
 

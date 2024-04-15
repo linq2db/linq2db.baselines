@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(4)),
+			CAST(@LastName AS NVarChar(7)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 
@@ -39,8 +39,6 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 5
-DECLARE @i Integer(4) -- Int32
-SET     @i = 0
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
@@ -52,7 +50,7 @@ USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -61,7 +59,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -82,7 +80,7 @@ USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -91,7 +89,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -112,7 +110,7 @@ USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -121,7 +119,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 

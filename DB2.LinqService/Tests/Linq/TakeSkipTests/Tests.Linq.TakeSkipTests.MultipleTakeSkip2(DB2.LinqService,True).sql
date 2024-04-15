@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -86,7 +86,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -100,7 +100,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -114,7 +114,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
@@ -128,15 +128,11 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 3
-DECLARE @take Integer(4) -- Int32
-SET     @take = 5
 
 SELECT
 	"t2"."Value_1"
@@ -149,7 +145,7 @@ FROM
 			"TakeSkipClass" "t1"
 	) "t2"
 WHERE
-	"t2".RN > @skip AND "t2".RN <= @take
+	"t2".RN > 3 AND "t2".RN <= 5
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

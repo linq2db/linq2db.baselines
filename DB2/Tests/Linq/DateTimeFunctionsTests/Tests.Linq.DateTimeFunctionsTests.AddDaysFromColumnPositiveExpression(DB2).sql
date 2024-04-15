@@ -30,37 +30,35 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@BoolValue,
-	@GuidValue,
-	@BinaryValue,
-	@SmallIntValue,
-	@StringValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS timestamp),
+	CAST(@BoolValue AS smallint),
+	CAST(@GuidValue AS char(16) for bit data),
+	CAST(@BinaryValue AS VARBINARY(32672)),
+	CAST(@SmallIntValue AS SmallInt),
+	CAST(@StringValue AS NVarChar(255))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @part1 Integer(4) -- Int32
+DECLARE @part1 SmallInt(2) -- Int16
 SET     @part1 = 4
 DECLARE @part2 Integer(4) -- Int32
 SET     @part2 = 4
-DECLARE @p Timestamp(20) -- DateTime
-SET     @p = '2018-01-02-00.00.00.000000'
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) Day > @p
+	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + CAST(@part1 AS SmallInt)) - CAST(@part2 AS Int)) DAY > CAST('2018-01-02' AS timestamp)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID = 5000
+	"t".ID = 5000
 

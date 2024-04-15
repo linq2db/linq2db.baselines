@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Avg("c_1"."ChildID")
+	AVG("t1"."ChildID")
 FROM
-	"Child" "c_1"
+	"Child" "t1"
 

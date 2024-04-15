@@ -39,8 +39,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	CAST(@Array AS VARBINARY(3)),
+	CAST(@Binary AS VARBINARY(10))
 )
 
 BeforeExecute

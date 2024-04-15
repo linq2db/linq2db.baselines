@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int,
-	@NullableInt,
-	@String,
-	@NullableString
+	CAST(@Int AS Int),
+	CAST(@NullableInt AS Int),
+	CAST(@String AS NVarChar(3)),
+	CAST(@NullableString AS NVarChar(3))
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int,
-	@NullableInt,
-	@String,
-	@NullableString
+	CAST(@Int AS Int),
+	CAST(@NullableInt AS Int),
+	CAST(@String AS NVarChar(3)),
+	CAST(@NullableString AS NVarChar(255))
 )
 
 BeforeExecute

@@ -86,9 +86,9 @@ INSERT INTO "GuidTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS char(16) for bit data),
+	CAST(@ColumnNullable AS char(16) for bit data)
 )
 
 BeforeExecute
@@ -108,9 +108,9 @@ INSERT INTO "GuidTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS char(16) for bit data),
+	CAST(@ColumnNullable AS char(16) for bit data)
 )
 
 BeforeExecute

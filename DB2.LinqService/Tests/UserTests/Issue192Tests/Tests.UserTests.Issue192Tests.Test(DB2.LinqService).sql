@@ -38,9 +38,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS NVarChar(11)),
+	CAST(@BoolValue AS Char),
+	CAST(@GuidValue AS VarChar(36))
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS NVarChar(8)),
+	CAST(@BoolValue AS Char),
+	CAST(@GuidValue AS VarChar(36))
 )
 
 BeforeExecute
@@ -130,6 +130,36 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
+
+SELECT
+	"_"."Name",
+	"_"."BoolValue",
+	"_"."GuidValue"
+FROM
+	"TypeConvertTable" "_"
+WHERE
+	"_"."BoolValue" <> @BoolValue
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
+
+SELECT
+	"_"."Name",
+	"_"."BoolValue",
+	"_"."GuidValue"
+FROM
+	"TypeConvertTable" "_"
+WHERE
+	"_"."BoolValue" <> @BoolValue
+FETCH FIRST 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 'N'
 
 SELECT
@@ -190,21 +220,6 @@ FETCH FIRST 1 ROWS ONLY
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
-
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
-FROM
-	"TypeConvertTable" "_"
-WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 'Y'
 
 SELECT
@@ -214,7 +229,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue
+	"_"."BoolValue" <> @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -229,22 +244,7 @@ SELECT
 FROM
 	"TypeConvertTable" "_"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
-
-SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
-FROM
-	"TypeConvertTable" "_"
-WHERE
-	"_"."BoolValue" = @BoolValue
+	"_"."BoolValue" <> @BoolValue
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
