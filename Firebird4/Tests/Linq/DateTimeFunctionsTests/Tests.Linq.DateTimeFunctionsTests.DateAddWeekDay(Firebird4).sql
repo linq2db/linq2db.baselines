@@ -2,7 +2,7 @@
 -- Firebird4 Firebird
 
 SELECT
-	DateAdd(Day, 1, "t"."DateTimeValue")
+	CAST(DateAdd(Day, 1, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 

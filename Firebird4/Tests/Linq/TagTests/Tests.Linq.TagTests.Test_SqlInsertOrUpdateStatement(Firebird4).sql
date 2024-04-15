@@ -34,7 +34,7 @@ USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Fd" = 2
+		"Fd" = 2
 WHEN NOT MATCHED THEN
 	INSERT
 	(
