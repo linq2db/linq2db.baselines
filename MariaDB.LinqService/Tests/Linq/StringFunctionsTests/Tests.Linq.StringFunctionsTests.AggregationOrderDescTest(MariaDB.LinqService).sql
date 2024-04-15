@@ -109,13 +109,13 @@ BeforeExecute
 -- MariaDB MySqlConnector MySql
 
 SELECT
-	Max(`t1`.`Value1`),
-	GROUP_CONCAT(`t1`.`Value1` ORDER BY `t1`.`Value1` DESC SEPARATOR ' -> ')
+	MAX(`g_1`.`Value1`),
+	GROUP_CONCAT(`g_1`.`Value1` ORDER BY `g_1`.`Value1` DESC SEPARATOR ' -> ')
 FROM
-	`SampleClass` `t1`
+	`SampleClass` `g_1`
 GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value1`
+	`g_1`.`Id`,
+	`g_1`.`Value1`
 
 BeforeExecute
 -- MariaDB MySqlConnector MySql
