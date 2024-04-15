@@ -6,22 +6,16 @@ SELECT
 FROM
 	(
 		SELECT
+			IIF([i].[MiddleName] IS NULL, N'M', N'O') as [Gender],
 			[i].[FirstName],
-			[i].[PersonID] as [ID],
-			[i].[LastName],
-			[i].[MiddleName],
-			[i].[Gender] as [Person_Gender],
-			IIF([i].[MiddleName] IS NULL, N'M', N'O') as [Gender]
+			[i].[LastName]
 		FROM
 			[Person] [i]
 		UNION ALL
 		SELECT
+			IIF([i_1].[MiddleName] IS NULL, N'M', N'O') as [Gender],
 			[i_1].[FirstName],
-			[i_1].[PersonID] as [ID],
-			[i_1].[LastName],
-			[i_1].[MiddleName],
-			[i_1].[Gender] as [Person_Gender],
-			IIF([i_1].[MiddleName] IS NULL, N'M', N'O') as [Gender]
+			[i_1].[LastName]
 		FROM
 			[Person] [i_1]
 	) [i_2]

@@ -2,7 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Convert(Decimal(10), [t].[MoneyValue] * 1000)
+	CAST([t].[MoneyValue] * 1000 AS Decimal(10, 4))
 FROM
 	[LinqDataTypes] [t]
 

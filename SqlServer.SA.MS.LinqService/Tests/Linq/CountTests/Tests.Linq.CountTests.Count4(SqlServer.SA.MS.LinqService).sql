@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Child] [t1]
 	)
