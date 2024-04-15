@@ -23,7 +23,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Max([_].[Id])
+	MAX([_].[Id])
 FROM
 	[TestMergeIdentity] [_]
 
@@ -35,9 +35,9 @@ USING (VALUES
 	(22), (23)
 ) [Source]
 (
-	[Field]
+	[source_Field]
 )
-ON (([Target].[Field] = [Source].[Field] OR [Target].[Field] IS NULL AND [Source].[Field] IS NULL))
+ON (([Target].[Field] = [Source].[source_Field] OR [Target].[Field] IS NULL AND [Source].[source_Field] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -46,7 +46,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[Field]
+	[Source].[source_Field]
 )
 ;
 
