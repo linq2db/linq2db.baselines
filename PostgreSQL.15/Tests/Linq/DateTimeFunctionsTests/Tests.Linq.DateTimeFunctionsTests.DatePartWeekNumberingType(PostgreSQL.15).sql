@@ -2,71 +2,71 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2018-12-28'::date)) as int)
+	Floor(Extract(week From '2018-12-28'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2018-12-29'::date)) as int)
+	Floor(Extract(week From '2018-12-29'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2018-12-30'::date)) as int)
+	Floor(Extract(week From '2018-12-30'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2018-12-31'::date)) as int)
+	Floor(Extract(week From '2018-12-31'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-01'::date)) as int)
+	Floor(Extract(week From '2019-01-01'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-02'::date)) as int)
+	Floor(Extract(week From '2019-01-02'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-03'::date)) as int)
+	Floor(Extract(week From '2019-01-03'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-04'::date)) as int)
+	Floor(Extract(week From '2019-01-04'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-05'::date)) as int)
+	Floor(Extract(week From '2019-01-05'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-06'::date)) as int)
+	Floor(Extract(week From '2019-01-06'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-07'::date)) as int)
+	Floor(Extract(week From '2019-01-07'::date))::Int
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(week from '2019-01-08'::date)) as int)
+	Floor(Extract(week From '2019-01-08'::date))::Int
 
