@@ -2,15 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				Child t1
-		)
-			THEN 't'
+		) THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END::BOOLEAN
 FROM table(set{1})
 

@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	ch.ParentID,
-	ch.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Child ch
+	Child t1
 

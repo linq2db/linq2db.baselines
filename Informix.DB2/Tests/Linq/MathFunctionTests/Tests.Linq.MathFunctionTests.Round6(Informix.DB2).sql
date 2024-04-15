@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Round(Cast(p.MoneyValue as Float), 0) as c1
+			Round(t.MoneyValue::Float, 0) as c1
 		FROM
-			LinqDataTypes p
-	) t
+			LinqDataTypes t
+	) t_1
 WHERE
-	t.c1 <> 0
+	t_1.c1 <> 0
 

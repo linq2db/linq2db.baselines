@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(t.MoneyValue as Money)
+	t.MoneyValue::Decimal(19, 4)
 FROM
 	LinqDataTypes t
 

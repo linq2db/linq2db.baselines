@@ -17,12 +17,6 @@ CREATE TABLE IF NOT EXISTS Issue1554FluentTable
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 0
-DECLARE @ClaimedKeyType VarChar(2) -- String
-SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN VarChar -- String
-SET     @ClaimedKeyTypeN = NULL
 
 INSERT INTO Issue1554FluentTable
 (
@@ -32,9 +26,9 @@ INSERT INTO Issue1554FluentTable
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	0,
+	'EC',
+	NULL
 )
 
 BeforeExecute

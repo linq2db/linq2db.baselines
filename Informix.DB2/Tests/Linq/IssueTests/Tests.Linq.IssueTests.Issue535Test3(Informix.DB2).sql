@@ -24,7 +24,7 @@ SELECT
 	cb.Id,
 	cb.Name,
 	cb.ContactEmail,
-	Nvl(cb.Enabled, 'f')
+	cb.Enabled
 FROM
 	CustomerBase cb
 WHERE

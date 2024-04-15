@@ -22,11 +22,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
-	Parent
+	Parent t
 SET
-	Parent.Value1 = 1012
+	Value1 = 1012
 WHERE
-	Parent.ParentID = 1010
+	t.ParentID = 1010
 
 BeforeExecute
 DisposeTransactionAsync
