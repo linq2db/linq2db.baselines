@@ -84,8 +84,8 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[ID],
-	[r].[IntValue]
+	[r].[ID] as [Id],
+	[r].[IntValue] as [Value_1]
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -97,9 +97,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[ID],
-	[r].[IntValue],
-	[r].[StringValue]
+	[r].[ID] as [Id],
+	[r].[IntValue] as [Int32],
+	[r].[StringValue] as [String]
 FROM
 	[LinqDataTypes] [r]
 WHERE

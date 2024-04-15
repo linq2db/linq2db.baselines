@@ -21,7 +21,7 @@ BeforeExecute
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Fd] = 1
+	[Fd] = 1
 
 BeforeExecute
 -- SqlCe
