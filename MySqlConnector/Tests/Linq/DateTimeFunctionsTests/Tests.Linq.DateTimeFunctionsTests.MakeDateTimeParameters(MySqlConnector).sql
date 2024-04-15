@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- MySqlConnector MySql
-DECLARE @p VarChar(5) -- String
-SET     @p = '2010-'
+DECLARE @year Int32
+SET     @year = 2010
 
 SELECT
-	`t`.`c1`
+	STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')
 FROM
-	(
-		SELECT
-			Cast(Concat(@p, Lpad(`p`.`ID`,2,'0'), '-01') as Date) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `t`
 WHERE
-	Extract(year from `t`.`c1`) = 2010
+	Extract(year from STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) = 2010
 
