@@ -235,7 +235,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[OtherId])
 
-WHEN NOT MATCHED By Source AND [Target].[Field1] = 2 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Field1] = 2 THEN UPDATE
 SET
 	[Target].[Id] = [Target].[Id],
 	[Target].[Field1] = [Target].[Field5],
