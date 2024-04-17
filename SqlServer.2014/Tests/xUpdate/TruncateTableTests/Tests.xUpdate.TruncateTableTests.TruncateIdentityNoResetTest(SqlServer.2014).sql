@@ -1,6 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
+IF (OBJECT_ID(N'[test_temp]', N'U') IS NOT NULL)
+	DROP TABLE [test_temp]
+
+BeforeExecute
+-- SqlServer.2014
+
 IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 	CREATE TABLE [test_temp]
 	(
