@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [test_temp]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [test_temp]
 (
 	[ID]     Int      NOT NULL IDENTITY,
