@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	Sum("c_1"."ParentID")
+FROM
+	"Child" "c_1"
+
