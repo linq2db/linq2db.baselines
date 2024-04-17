@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
+DROP TABLE IF EXISTS [test_temp]
+
+BeforeExecute
+-- SqlServer.2022
+
 IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 	CREATE TABLE [test_temp]
 	(
