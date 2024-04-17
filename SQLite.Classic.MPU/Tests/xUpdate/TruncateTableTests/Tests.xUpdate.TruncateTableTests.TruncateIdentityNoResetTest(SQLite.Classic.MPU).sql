@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+DROP TABLE IF EXISTS [test_temp]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 CREATE TABLE IF NOT EXISTS [test_temp]
 (
 	[ID]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
