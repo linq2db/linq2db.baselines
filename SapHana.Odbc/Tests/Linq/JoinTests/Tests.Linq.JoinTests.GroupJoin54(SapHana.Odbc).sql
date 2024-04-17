@@ -1,28 +1,4 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"_ch"."ParentID",
-	"_ch"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
-		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "_ch" ON "_ch"."ParentID" = "key_data_result"."ParentID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -34,10 +10,11 @@ SELECT
 		WHERE
 			"p"."ParentID" = "t1"."ParentID"
 	),
-	"p"."ParentID",
-	"p"."Value1"
+	"ch"."ParentID",
+	"ch"."ChildID"
 FROM
 	"Parent" "p"
+		LEFT JOIN "Child" "ch" ON "ch"."ParentID" = "p"."ParentID"
 WHERE
 	"p"."ParentID" = 1
 
