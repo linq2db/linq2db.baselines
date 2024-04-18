@@ -1,0 +1,17 @@
+﻿BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`t1`.`n`,
+	Sum(`t1`.`ParentID`)
+FROM
+	(
+		SELECT
+			`ch`.`ChildID` + 1 as `n`,
+			`ch`.`ParentID`
+		FROM
+			`Child` `ch`
+	) `t1`
+GROUP BY
+	`t1`.`n`
+
