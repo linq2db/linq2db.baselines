@@ -1,0 +1,22 @@
+﻿BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`IsActive`,
+	`t1`.`Other`
+FROM
+	(
+		SELECT
+			1 as `IsActive`,
+			CASE
+				WHEN `it`.`SmallIntValue` <> 0
+					THEN 1
+				ELSE 0
+			END as `Other`
+		FROM
+			`LinqDataTypes` `it`
+	) `t1`
+GROUP BY
+	`t1`.`IsActive`,
+	`t1`.`Other`
+
