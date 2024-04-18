@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
+DROP TABLE IF EXISTS [test_temp]
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
 IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 	CREATE TABLE [test_temp]
 	(
