@@ -253,7 +253,7 @@ USING (VALUES
 )
 ON (([Target].[Id] = [Source].[Id] OR [Target].[Id] = @Val4))
 
-WHEN NOT MATCHED By Source AND [Target].[Id] = @Val3 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = @Val3 THEN UPDATE
 SET
 	[Target].[Field4] = @Val5
 

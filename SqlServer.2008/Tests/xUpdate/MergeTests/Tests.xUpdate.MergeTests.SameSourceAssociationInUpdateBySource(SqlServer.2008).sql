@@ -20,7 +20,7 @@ USING (
 )
 ON ([Target].[PersonID] = [Source].[ID] + 10)
 
-WHEN NOT MATCHED By Source AND [Target].[FirstName] = N'first 3' THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[FirstName] = N'first 3' THEN UPDATE
 SET
 	[Target].[FirstName] = N'Updated',
 	[Target].[LastName] = (
