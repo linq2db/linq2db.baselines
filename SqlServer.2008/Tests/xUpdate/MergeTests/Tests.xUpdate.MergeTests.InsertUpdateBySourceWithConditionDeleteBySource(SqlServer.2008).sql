@@ -257,7 +257,7 @@ VALUES
 	[Source].[Field4]
 )
 
-WHEN NOT MATCHED By Source AND [Target].[Id] = 2 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 2 THEN UPDATE
 SET
 	[Target].[Field1] = 44
 

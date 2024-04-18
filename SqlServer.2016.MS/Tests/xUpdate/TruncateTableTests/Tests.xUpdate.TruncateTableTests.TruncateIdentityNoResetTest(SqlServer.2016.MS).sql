@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
+DROP TABLE IF EXISTS [test_temp]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
 IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 	CREATE TABLE [test_temp]
 	(

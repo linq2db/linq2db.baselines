@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`t`.`ParentID`,
+	`t`.`Value1`
+FROM
+	`Parent` `t`
+		INNER JOIN `GrandChild` `g_1` ON `t`.`ParentID` = `g_1`.`ParentID` AND `g_1`.`ChildID` > 22
+ORDER BY
+	`g_1`.`ParentID`
+

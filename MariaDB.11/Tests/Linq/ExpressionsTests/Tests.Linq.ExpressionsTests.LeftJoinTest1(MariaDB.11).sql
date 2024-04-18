@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`t`.`ParentID`,
+	`t`.`ChildID`,
+	`gr`.`ParentID`,
+	`gr`.`Value1`
+FROM
+	`Child` `t`
+		LEFT JOIN `Parent` `gr` ON `t`.`ParentID` = `gr`.`ParentID`
+

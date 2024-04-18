@@ -237,7 +237,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[Id])
 
-WHEN NOT MATCHED By Source AND [Target].[Id] = @param THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = @param THEN UPDATE
 SET
 	[Target].[Field1] = [Target].[Field1]
 ;

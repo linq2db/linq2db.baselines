@@ -8,14 +8,14 @@ SELECT
 	"t1"."Sum_1"
 FROM
 	"Parent" "p1"
-		INNER JOIN (
+		INNER JOIN LATERAL (
 			SELECT
 				"p"."ParentID",
 				Sum("p"."ParentID") as "Sum_1"
 			FROM
 				"Parent" "p"
 			WHERE
-				"p"."ParentID" IN (
+				"p"."ParentID" = "p1"."ParentID" AND "p"."ParentID" IN (
 					SELECT
 						"ch"."ParentID"
 					FROM
@@ -23,5 +23,5 @@ FROM
 				)
 			GROUP BY
 				"p"."ParentID"
-		) "t1" ON "t1"."ParentID" = "p1"."ParentID"
+		) "t1" ON 1=1
 

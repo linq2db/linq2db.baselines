@@ -1,0 +1,39 @@
+﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`lw_Issue3975TestClass`.`ParentID`,
+	`detail`.`ParentID`,
+	`detail`.`ChildID`
+FROM
+	(
+		SELECT DISTINCT
+			`t2`.`ParentID`
+		FROM
+			(
+				SELECT
+					`t1`.`ParentID`
+				FROM
+					`Parent` `t1`
+				LIMIT @take
+			) `t2`
+	) `lw_Issue3975TestClass`
+		INNER JOIN `Child` `detail` ON `lw_Issue3975TestClass`.`ParentID` = `detail`.`ParentID`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @take Int32
+SET     @take = 1
+
+SELECT
+	`t1`.`ParentID`
+FROM
+	`Parent` `t1`
+LIMIT @take
+
+BeforeExecute
+DisposeTransaction

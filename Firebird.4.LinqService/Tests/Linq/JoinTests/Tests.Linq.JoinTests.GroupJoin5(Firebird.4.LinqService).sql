@@ -1,0 +1,27 @@
+﻿BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @take Integer -- Int32
+SET     @take = 1
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Parent" "p"
+		LEFT JOIN LATERAL (
+			SELECT
+				"ch"."ParentID",
+				"ch"."ChildID"
+			FROM
+				"Child" "ch"
+			WHERE
+				"ch"."ParentID" = "p"."ParentID"
+			ORDER BY
+				"ch"."ChildID"
+			FETCH NEXT @take ROWS ONLY
+		) "t1" ON 1=1
+WHERE
+	"p"."ParentID" >= 1
+ORDER BY
+	"p"."ParentID"
+

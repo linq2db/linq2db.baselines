@@ -28,7 +28,7 @@ USING (VALUES
 )
 ON ([Target].[Id] = [Source].[Id])
 
-WHEN NOT MATCHED By Source AND [Target].[Id] = 3 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Id] = 3 THEN UPDATE
 SET
 	[Target].[Id] = 2,
 	[Target].[Value] = N'3'

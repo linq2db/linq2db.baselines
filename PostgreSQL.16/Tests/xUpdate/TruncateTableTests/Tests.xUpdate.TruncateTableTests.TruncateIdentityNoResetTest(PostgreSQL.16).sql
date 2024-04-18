@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
+DROP TABLE IF EXISTS test_temp
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
 CREATE TABLE IF NOT EXISTS test_temp
 (
 	"ID"     SERIAL   NOT NULL,

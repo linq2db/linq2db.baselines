@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @ID Int32
+SET     @ID = 1
+DECLARE @take Int32
+SET     @take = 2
+
+SELECT
+	`p`.`LastName`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`PersonID` = @ID
+LIMIT @take
+

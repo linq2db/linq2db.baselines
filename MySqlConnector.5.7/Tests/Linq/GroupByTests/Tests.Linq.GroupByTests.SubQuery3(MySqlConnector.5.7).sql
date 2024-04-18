@@ -1,0 +1,17 @@
+﻿BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`n`,
+	Sum(`t1`.`ParentID`)
+FROM
+	(
+		SELECT
+			`ch`.`ChildID` + 1 as `n`,
+			`ch`.`ParentID`
+		FROM
+			`Child` `ch`
+	) `t1`
+GROUP BY
+	`t1`.`n`
+
