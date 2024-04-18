@@ -10,7 +10,7 @@ SELECT
 	"c_1"."ChildID"
 FROM
 	"Parent" "cp"
-		CROSS JOIN (
+		CROSS JOIN LATERAL (
 			SELECT
 				"t3"."ParentID",
 				"t3"."ChildID"

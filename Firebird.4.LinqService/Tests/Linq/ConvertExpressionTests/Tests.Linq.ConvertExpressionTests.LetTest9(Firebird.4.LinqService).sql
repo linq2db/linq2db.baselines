@@ -1,41 +1,26 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
-SET     @take = 10
+SET     @take = 1
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 10
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"t1"."ParentID",
-			"t1"."Value1"
-		FROM
-			(
-				SELECT
-					"p"."ParentID",
-					"p"."Value1"
-				FROM
-					"Parent" "p"
-				FETCH NEXT @take ROWS ONLY
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID"
-ORDER BY
-	"c_1"."ChildID"
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 10
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
 	"Parent" "p"
-FETCH NEXT @take ROWS ONLY
+		LEFT JOIN LATERAL (
+			SELECT
+				"c_1"."ParentID",
+				"c_1"."ChildID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = "p"."ParentID"
+			ORDER BY
+				"c_1"."ChildID"
+			FETCH NEXT @take ROWS ONLY
+		) "t1" ON 1=1
+FETCH NEXT @take_1 ROWS ONLY
 
