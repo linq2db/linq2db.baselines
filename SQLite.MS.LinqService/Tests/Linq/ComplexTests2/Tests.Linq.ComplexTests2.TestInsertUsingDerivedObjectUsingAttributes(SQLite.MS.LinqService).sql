@@ -62,7 +62,7 @@ SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'U'
 DECLARE @ID  -- Int32
-SET     @ID = 6
+SET     @ID = 5
 
 UPDATE
 	[Person]
@@ -94,7 +94,7 @@ LIMIT @take
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
-SET     @ID = 6
+SET     @ID = 5
 
 DELETE FROM
 	[Person]
