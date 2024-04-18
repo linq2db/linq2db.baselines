@@ -1,27 +1,9 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"cp"."ParentID"
-		FROM
-			"Parent" "cp"
-		WHERE
-			"cp"."ParentID" > 0
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID" AND "c_1"."ChildID" > -100
-ORDER BY
-	"c_1"."ChildID"
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 1
+DECLARE @take_1 Integer -- Int32
+SET     @take_1 = 1
 
 SELECT
 	"cp"."ParentID",
@@ -45,20 +27,35 @@ SELECT
 		WHERE
 			"c_2"."ParentID" = "cp"."ParentID" AND "c_2"."ChildID" > -100
 	),
-	(
-		SELECT
-			"c_3"."ParentID"
-		FROM
-			"Child" "c_3"
-		WHERE
-			"c_3"."ParentID" = "cp"."ParentID" AND "c_3"."ChildID" > -100 AND
-			"c_3"."ParentID" > 0
-		ORDER BY
-			"c_3"."ChildID"
-		FETCH NEXT @take ROWS ONLY
-	)
+	"t1"."First1",
+	"t2"."ParentID",
+	"t2"."ChildID"
 FROM
 	"Parent" "cp"
+		LEFT JOIN LATERAL (
+			SELECT
+				"c_3"."ParentID" as "First1"
+			FROM
+				"Child" "c_3"
+			WHERE
+				"c_3"."ParentID" = "cp"."ParentID" AND "c_3"."ChildID" > -100 AND
+				"c_3"."ParentID" > 0
+			ORDER BY
+				"c_3"."ChildID"
+			FETCH NEXT @take ROWS ONLY
+		) "t1" ON 1=1
+		LEFT JOIN LATERAL (
+			SELECT
+				"c_4"."ParentID",
+				"c_4"."ChildID"
+			FROM
+				"Child" "c_4"
+			WHERE
+				"c_4"."ParentID" = "cp"."ParentID" AND "c_4"."ChildID" > -100
+			ORDER BY
+				"c_4"."ChildID"
+			FETCH NEXT @take_1 ROWS ONLY
+		) "t2" ON 1=1
 WHERE
 	"cp"."ParentID" > 0
 

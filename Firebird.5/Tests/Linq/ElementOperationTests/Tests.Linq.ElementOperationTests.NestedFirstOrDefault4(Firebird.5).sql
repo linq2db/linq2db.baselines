@@ -1,31 +1,29 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.5 Firebird4
+DECLARE @take Integer -- Int32
+SET     @take = 1
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
-		FROM
-			"Parent" "p"
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "key_data_result"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 0
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Firebird.5 Firebird4
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t2"."ParentID",
+	"t2"."ChildID"
 FROM
 	"Parent" "p"
+		LEFT JOIN LATERAL (
+			SELECT
+				"t1"."ParentID",
+				"t1"."ChildID"
+			FROM
+				(
+					SELECT DISTINCT
+						"c_1"."ParentID",
+						"c_1"."ChildID"
+					FROM
+						"Child" "c_1"
+					WHERE
+						"p"."ParentID" = "c_1"."ParentID" AND "c_1"."ParentID" > 0
+				) "t1"
+			ORDER BY
+				"t1"."ChildID"
+			FETCH NEXT @take ROWS ONLY
+		) "t2" ON 1=1
 

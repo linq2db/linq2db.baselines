@@ -101,18 +101,21 @@ SET     @take = 1
 
 SELECT
 	"i"."Id",
-	(
-		SELECT
-			"s"."Reason"
-		FROM
-			"SubData2" "s"
-		WHERE
-			"a_SubData"."Id" = "s"."Id"
-		FETCH NEXT @take ROWS ONLY
-	)
+	"t1"."Reason",
+	"t1"."is_empty"
 FROM
 	"Data" "i"
 		LEFT JOIN "SubData1" "a_SubData" ON "i"."Id" = "a_SubData"."Id"
+		LEFT JOIN LATERAL (
+			SELECT
+				"s"."Reason",
+				1 as "is_empty"
+			FROM
+				"SubData2" "s"
+			WHERE
+				"a_SubData"."Id" = "s"."Id"
+			FETCH NEXT @take ROWS ONLY
+		) "t1" ON 1=1
 ORDER BY
 	"i"."Id"
 

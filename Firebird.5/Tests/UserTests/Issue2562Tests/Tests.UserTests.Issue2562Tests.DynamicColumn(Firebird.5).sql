@@ -75,18 +75,21 @@ SET     @take = 1
 SELECT
 	"person"."CardNumber",
 	"person"."CardTypeId",
-	(
-		SELECT
-			LIST("x"."Id")
-		FROM
-			"ExternalId2562" "x"
-		WHERE
-			"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
-			"x"."TypeId" = 2
-		FETCH NEXT @take ROWS ONLY
-	)
+	"t1"."c1",
+	"t1"."is_empty"
 FROM
 	"Person2562" "person"
+		LEFT JOIN LATERAL (
+			SELECT
+				LIST("x"."Id") as "c1",
+				1 as "is_empty"
+			FROM
+				"ExternalId2562" "x"
+			WHERE
+				"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
+				"x"."TypeId" = 2
+			FETCH NEXT @take ROWS ONLY
+		) "t1" ON 1=1
 
 BeforeExecute
 -- Firebird.5 Firebird4
