@@ -2,16 +2,10 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	(
-		SELECT
-			"ch"."ParentID"
-		FROM
-			"Child" "ch"
-		WHERE
-			"ch"."ParentID" = "p"."ParentID"
-	)
+	"ch"."ParentID"
 FROM
 	"Parent" "p"
+		LEFT JOIN "Child" "ch" ON "ch"."ParentID" = "p"."ParentID"
 WHERE
 	"p"."ParentID" = 1
 
