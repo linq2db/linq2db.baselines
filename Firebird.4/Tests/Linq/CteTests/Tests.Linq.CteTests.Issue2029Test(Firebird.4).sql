@@ -1,0 +1,70 @@
+﻿BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_CODE')) THEN
+		EXECUTE STATEMENT 'DROP TABLE NC_CODE';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_CODE')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE NC_CODE
+			(
+				HANDLE             VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+				CHANGE_STAMP       Decimal,
+				SITE               VarChar(18) CHARACTER SET UNICODE_FSS,
+				NC_CODE            VarChar(48) CHARACTER SET UNICODE_FSS,
+				DESCRIPTION        VarChar(120) CHARACTER SET UNICODE_FSS,
+				STATUS_BO          VarChar(255) CHARACTER SET UNICODE_FSS,
+				CREATED_DATE_TIME  TimeStamp,
+				MODIFIED_DATE_TIME TimeStamp,
+				NC_CATEGORY        VarChar(255) CHARACTER SET UNICODE_FSS,
+				DPMO_CATEGORY_BO   VarChar(255) CHARACTER SET UNICODE_FSS
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_GROUP_MEMBER')) THEN
+		EXECUTE STATEMENT 'DROP TABLE NC_GROUP_MEMBER';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_GROUP_MEMBER')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE NC_GROUP_MEMBER
+			(
+				HANDLE               VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+				NC_GROUP_BO          VarChar(255) CHARACTER SET UNICODE_FSS,
+				NC_CODE_OR_GROUP_GBO VarChar(255) CHARACTER SET UNICODE_FSS,
+				SEQUENCE             Decimal
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_GROUP_MEMBER')) THEN
+		EXECUTE STATEMENT 'DROP TABLE NC_GROUP_MEMBER';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'NC_CODE')) THEN
+		EXECUTE STATEMENT 'DROP TABLE NC_CODE';
+END
+
