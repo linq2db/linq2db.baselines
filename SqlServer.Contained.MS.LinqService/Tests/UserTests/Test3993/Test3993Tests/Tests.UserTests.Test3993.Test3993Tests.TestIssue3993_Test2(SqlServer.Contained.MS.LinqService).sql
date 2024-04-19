@@ -106,7 +106,7 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 4, 19, 14, 37, 15, 6423643, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 4, 19, 15, 25, 14, 7005143, 7)
 DECLARE @Date DateTime2
 SET     @Date = DATETIME2FROMPARTS(2024, 4, 19, 0, 0, 0, 0, 7)
 
