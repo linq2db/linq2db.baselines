@@ -23,14 +23,14 @@ USING (VALUES
 	(1)
 ) [Source]
 (
-	[Id]
+	[source_Id]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED By Source AND [Target].[Id] = 3 THEN UPDATE
 SET
-	[Target].[Id] = 2,
-	[Target].[Value] = N'3'
+	[Id] = 2,
+	[Value] = N'3'
 ;
 
 BeforeExecute

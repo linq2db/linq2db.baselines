@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Convert(SmallInt, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS SmallInt)
 FROM
 	[LinqDataTypes] [t]
 
