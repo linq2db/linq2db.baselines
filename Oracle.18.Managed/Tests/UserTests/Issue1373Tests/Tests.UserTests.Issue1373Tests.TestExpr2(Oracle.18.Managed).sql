@@ -49,7 +49,7 @@ VALUES
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Field1 Varchar2 -- String
-SET     @Field1 = ''
+SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
