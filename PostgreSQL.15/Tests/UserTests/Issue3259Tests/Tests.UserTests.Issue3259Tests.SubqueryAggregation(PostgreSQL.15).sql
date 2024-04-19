@@ -122,74 +122,123 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."WithParentReference",
-	t1."WithParentReferenceCustom1",
-	t1."WithParentReferenceCustom2",
-	t1."WithoutParentReference"
+	t5."SUM_1",
+	t5."WithParentReferenceCustom1",
+	t5."WithParentReferenceCustom2",
+	t5."WithoutParentReference"
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					Sum(CASE
-						WHEN tracking."TrackingTimeType" = 0
-							THEN c_1."StartHour"
-						ELSE c_1."EndHour"
+					SUM(CASE
+						WHEN d.not_null IS NOT NULL THEN d.c1
+						ELSE 0
 					END)
 				FROM
-					"LeaveRequest" e
-						INNER JOIN "LeaveRequestDateEntry" c_1 ON e."Id" = c_1."LeaveRequestId"
-				WHERE
-					"a_Employee"."EmployeeId" = e."EmployeeId"
-			) as "WithParentReference",
+					(
+						SELECT
+							0 as c1
+					) t1
+						LEFT JOIN (
+							SELECT
+								1 as not_null,
+								CASE
+									WHEN tracking."TrackingTimeType" = 0 THEN "a_LeaveRequestDateEntries"."StartHour"
+									ELSE "a_LeaveRequestDateEntries"."EndHour"
+								END as c1
+							FROM
+								"LeaveRequest" e
+									INNER JOIN "LeaveRequestDateEntry" "a_LeaveRequestDateEntries" ON e."Id" = "a_LeaveRequestDateEntries"."LeaveRequestId"
+							WHERE
+								"a_Employee"."EmployeeId" = e."EmployeeId"
+						) d ON 1=1
+			) as "SUM_1",
 			(
 				SELECT
 					Sum(CASE
-						WHEN tracking."TrackingTimeType" = 0
-							THEN c_2."StartHour"
-						ELSE c_2."EndHour"
+						WHEN d_1.not_null IS NOT NULL THEN d_1.c1
+						ELSE 0
 					END)
 				FROM
-					"LeaveRequest" e_1
-						INNER JOIN "LeaveRequestDateEntry" c_2 ON e_1."Id" = c_2."LeaveRequestId"
-				WHERE
-					"a_Employee"."EmployeeId" = e_1."EmployeeId"
+					(
+						SELECT
+							0 as c1
+					) t2
+						LEFT JOIN (
+							SELECT
+								1 as not_null,
+								CASE
+									WHEN tracking."TrackingTimeType" = 0 THEN "a_LeaveRequestDateEntries_1"."StartHour"
+									ELSE "a_LeaveRequestDateEntries_1"."EndHour"
+								END as c1
+							FROM
+								"LeaveRequest" e_1
+									INNER JOIN "LeaveRequestDateEntry" "a_LeaveRequestDateEntries_1" ON e_1."Id" = "a_LeaveRequestDateEntries_1"."LeaveRequestId"
+							WHERE
+								"a_Employee"."EmployeeId" = e_1."EmployeeId"
+						) d_1 ON 1=1
 			) as "WithParentReferenceCustom1",
 			(
 				SELECT
 					Sum(CASE
-						WHEN tracking."TrackingTimeType" = 0
-							THEN c_3."StartHour"
-						ELSE c_3."EndHour"
+						WHEN d_2.not_null IS NOT NULL THEN d_2.c1
+						ELSE 0
 					END)
 				FROM
-					"LeaveRequest" e_2
-						INNER JOIN "LeaveRequestDateEntry" c_3 ON e_2."Id" = c_3."LeaveRequestId"
-				WHERE
-					"a_Employee"."EmployeeId" = e_2."EmployeeId"
+					(
+						SELECT
+							0 as c1
+					) t3
+						LEFT JOIN (
+							SELECT
+								1 as not_null,
+								CASE
+									WHEN tracking."TrackingTimeType" = 0 THEN "a_LeaveRequestDateEntries_2"."StartHour"
+									ELSE "a_LeaveRequestDateEntries_2"."EndHour"
+								END as c1
+							FROM
+								"LeaveRequest" e_2
+									INNER JOIN "LeaveRequestDateEntry" "a_LeaveRequestDateEntries_2" ON e_2."Id" = "a_LeaveRequestDateEntries_2"."LeaveRequestId"
+							WHERE
+								"a_Employee"."EmployeeId" = e_2."EmployeeId"
+						) d_2 ON 1=1
 			) as "WithParentReferenceCustom2",
 			(
 				SELECT
-					Sum(CASE
-						WHEN c_4."StartHour" IS NOT NULL
-							THEN c_4."StartHour"
-						ELSE c_4."EndHour"
+					SUM(CASE
+						WHEN d_3.not_null IS NOT NULL THEN d_3.c1
+						ELSE 0
 					END)
 				FROM
-					"LeaveRequest" e_3
-						INNER JOIN "LeaveRequestDateEntry" c_4 ON e_3."Id" = c_4."LeaveRequestId"
-				WHERE
-					"a_Employee"."EmployeeId" = e_3."EmployeeId"
+					(
+						SELECT
+							0 as c1
+					) t4
+						LEFT JOIN (
+							SELECT
+								1 as not_null,
+								CASE
+									WHEN "a_LeaveRequestDateEntries_3"."StartHour" IS NOT NULL
+										THEN "a_LeaveRequestDateEntries_3"."StartHour"
+									ELSE "a_LeaveRequestDateEntries_3"."EndHour"
+								END as c1
+							FROM
+								"LeaveRequest" e_3
+									INNER JOIN "LeaveRequestDateEntry" "a_LeaveRequestDateEntries_3" ON e_3."Id" = "a_LeaveRequestDateEntries_3"."LeaveRequestId"
+							WHERE
+								"a_Employee"."EmployeeId" = e_3."EmployeeId"
+						) d_3 ON 1=1
 			) as "WithoutParentReference"
 		FROM
 			"EmployeeTimeOffBalance" tracking
 				INNER JOIN "Employee" "a_Employee" ON tracking."EmployeeId" = "a_Employee"."EmployeeId"
-	) t1
+	) t5
 ORDER BY
-	Coalesce(t1."WithParentReference", 0),
-	Coalesce(t1."WithParentReferenceCustom1", 0),
-	Coalesce(t1."WithParentReferenceCustom2", 0),
-	Coalesce(t1."WithoutParentReference", 0) DESC
+	Coalesce(t5."SUM_1", 0),
+	Coalesce(t5."WithParentReferenceCustom1", 0),
+	Coalesce(t5."WithParentReferenceCustom2", 0),
+	Coalesce(t5."WithoutParentReference", 0) DESC
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
