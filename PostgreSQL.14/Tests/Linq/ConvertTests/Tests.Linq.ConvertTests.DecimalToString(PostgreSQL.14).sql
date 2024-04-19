@@ -2,9 +2,9 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as text)
+	p."MoneyValue"::text
 FROM
-	"LinqDataTypes" t
+	"LinqDataTypes" p
 WHERE
-	Length(Cast(t."MoneyValue" as text)) > 0
+	Length(p."MoneyValue"::text) > 0
 
