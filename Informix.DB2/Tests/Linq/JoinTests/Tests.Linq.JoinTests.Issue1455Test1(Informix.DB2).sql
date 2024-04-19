@@ -114,22 +114,10 @@ FROM
 					al_group.AlertCode,
 					al_group.CreationDate
 			) al_group_1
-				LEFT JOIN (
-					SELECT
-						trade_1.CounterParty,
-						To_Char(trade_1.DealId) as c1
-					FROM
-						Trade trade_1
-				) trade_2 ON al_group_1.AlertKey = trade_2.c1
-				LEFT JOIN (
-					SELECT
-						nomin_1.DeliveryCounterParty,
-						To_Char(nomin_1.CargoId) as c1
-					FROM
-						Nomin nomin_1
-				) nomin_2 ON al_group_1.AlertKey = nomin_2.c1
+				LEFT JOIN Trade trade_1 ON al_group_1.AlertKey = To_Char(trade_1.DealId)
+				LEFT JOIN Nomin nomin_1 ON al_group_1.AlertKey = To_Char(nomin_1.CargoId)
 		WHERE
-			(nomin_2.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR trade_2.CounterParty LIKE '%C%' ESCAPE '~' OR al_group_1.AlertCode LIKE '%C%' ESCAPE '~')
+			(nomin_1.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR trade_1.CounterParty LIKE '%C%' ESCAPE '~' OR al_group_1.AlertCode LIKE '%C%' ESCAPE '~')
 		GROUP BY
 			al_group_1.AlertKey,
 			al_group_1.AlertCode,
@@ -137,12 +125,12 @@ FROM
 	) al_group_3
 		LEFT JOIN (
 			SELECT
-				nomin_4.CargoId,
-				nomin_4.DeliveryId,
-				nomin_4.DeliveryCounterParty,
-				trade_4.DealId,
-				trade_4.ParcelId,
-				trade_4.CounterParty,
+				nomin_2.CargoId,
+				nomin_2.DeliveryId,
+				nomin_2.DeliveryCounterParty,
+				trade_2.DealId,
+				trade_2.ParcelId,
+				trade_2.CounterParty,
 				Nvl(t1.MAX_1, t1.CreationDate) as LastUpdate,
 				Nvl(t1.MAX_1, t1.CreationDate) as LastUpdate_1,
 				ROW_NUMBER() OVER (PARTITION BY t1.AlertKey, t1.AlertCode, t1.CreationDate ORDER BY t1.AlertKey) as rn,
@@ -164,26 +152,10 @@ FROM
 						al_group_2.AlertCode,
 						al_group_2.CreationDate
 				) t1
-					LEFT JOIN (
-						SELECT
-							trade_3.CounterParty,
-							trade_3.DealId,
-							trade_3.ParcelId,
-							To_Char(trade_3.DealId) as c1
-						FROM
-							Trade trade_3
-					) trade_4 ON t1.AlertKey = trade_4.c1
-					LEFT JOIN (
-						SELECT
-							nomin_3.DeliveryCounterParty,
-							nomin_3.CargoId,
-							nomin_3.DeliveryId,
-							To_Char(nomin_3.CargoId) as c1
-						FROM
-							Nomin nomin_3
-					) nomin_4 ON t1.AlertKey = nomin_4.c1
+					LEFT JOIN Trade trade_2 ON t1.AlertKey = To_Char(trade_2.DealId)
+					LEFT JOIN Nomin nomin_2 ON t1.AlertKey = To_Char(nomin_2.CargoId)
 			WHERE
-				(nomin_4.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR trade_4.CounterParty LIKE '%C%' ESCAPE '~' OR t1.AlertCode LIKE '%C%' ESCAPE '~')
+				(nomin_2.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR trade_2.CounterParty LIKE '%C%' ESCAPE '~' OR t1.AlertCode LIKE '%C%' ESCAPE '~')
 		) t2 ON al_group_3.AlertKey = t2.AlertKey AND al_group_3.AlertCode = t2.AlertCode AND al_group_3.CreationDate = t2.CreationDate AND t2.rn <= 1
 
 BeforeExecute

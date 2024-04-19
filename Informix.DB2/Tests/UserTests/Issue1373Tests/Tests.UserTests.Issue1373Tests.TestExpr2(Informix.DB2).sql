@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Field1 VarChar -- String
-SET     @Field1 = ''
+SET     @Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
