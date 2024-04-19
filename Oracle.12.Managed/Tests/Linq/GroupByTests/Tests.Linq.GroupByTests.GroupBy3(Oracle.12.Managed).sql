@@ -2,15 +2,15 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Key_1"
+	gr_1."c1"
 FROM
 	(
 		SELECT
-			Nvl(selectParam."Value1", c_1."ChildID") as "Key_1"
+			Nvl(gr."Value1", c_1."ChildID") as "c1"
 		FROM
-			"Parent" selectParam
-				INNER JOIN "Child" c_1 ON selectParam."ParentID" = c_1."ParentID"
-	) t1
+			"Parent" gr
+				INNER JOIN "Child" c_1 ON gr."ParentID" = c_1."ParentID"
+	) gr_1
 GROUP BY
-	t1."Key_1"
+	gr_1."c1"
 
