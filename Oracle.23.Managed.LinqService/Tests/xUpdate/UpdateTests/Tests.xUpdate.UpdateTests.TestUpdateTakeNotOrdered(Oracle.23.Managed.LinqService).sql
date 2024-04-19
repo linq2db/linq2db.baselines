@@ -186,7 +186,22 @@ SET     @take = 5
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = 1
+	"Value1" = 1
 WHERE
-	"Parent"."ParentID" > 1000 AND ROWNUM <= :take
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT
+					x."ParentID",
+					x."Value1"
+				FROM
+					"Parent" x
+				WHERE
+					x."ParentID" > 1000 AND ROWNUM <= :take
+			) t1
+		WHERE
+			"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
+	)
 

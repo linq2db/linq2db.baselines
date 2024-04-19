@@ -2,9 +2,9 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" IN (1001, 1002)
+	c_1."ChildID" IN (1001, 1002)
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
