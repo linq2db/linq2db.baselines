@@ -27,14 +27,12 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Date`
 FROM
 	`DateOnlyTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

@@ -2,8 +2,8 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`c_1`.`ParentID`
+	`_`.`ParentID` + 1
 FROM
-	`Parent` `cp`,
-	`Child` `c_1`
+	`Parent` `p`
+		CROSS JOIN `Child` `_`
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @DateTimeValue Datetime -- DateTime
-SET     @DateTimeValue = '2009-09-27'
 
 SELECT
 	`_`.`ID`,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	`_`.`DateTimeValue` = @DateTimeValue
+	`_`.`DateTimeValue` = STR_TO_DATE('2009-09-27 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 

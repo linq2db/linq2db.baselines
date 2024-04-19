@@ -1,19 +1,18 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`ParentID`,
 	`_`.`Value1`
 FROM
 	`Parent` `_`
+		LEFT JOIN (
+			SELECT
+				`r`.`GuidValue`
+			FROM
+				`LinqDataTypes` `r`
+			LIMIT 1
+		) `t1` ON 1=1
 WHERE
-	(
-		SELECT
-			`r`.`GuidValue`
-		FROM
-			`LinqDataTypes` `r`
-		LIMIT @take
-	) IS NOT NULL
+	`t1`.`GuidValue` IS NOT NULL
 

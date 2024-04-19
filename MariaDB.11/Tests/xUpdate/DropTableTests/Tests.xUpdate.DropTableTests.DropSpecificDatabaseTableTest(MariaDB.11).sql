@@ -5,14 +5,12 @@ DROP TABLE IF EXISTS `DropTableTest`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
 	`LinqDataTypes` `_`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

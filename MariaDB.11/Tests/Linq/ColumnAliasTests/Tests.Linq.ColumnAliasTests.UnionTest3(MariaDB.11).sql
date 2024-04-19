@@ -2,19 +2,19 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p`.`ParentID`
+	`p_1`.`ParentID`
 FROM
 	(
+		SELECT
+			`p`.`ParentID`,
+			`p`.`Value1`
+		FROM
+			`Parent` `p`
+		UNION
 		SELECT
 			`t1`.`ParentID`,
 			`t1`.`Value1`
 		FROM
 			`Parent` `t1`
-		UNION
-		SELECT
-			`t2`.`ParentID`,
-			`t2`.`Value1`
-		FROM
-			`Parent` `t2`
-	) `p`
+	) `p_1`
 

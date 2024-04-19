@@ -36,8 +36,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -49,7 +47,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -76,8 +74,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -89,7 +85,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

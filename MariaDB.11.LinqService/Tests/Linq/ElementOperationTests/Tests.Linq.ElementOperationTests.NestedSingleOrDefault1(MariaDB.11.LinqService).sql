@@ -2,14 +2,13 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	(
-		SELECT DISTINCT
-			`c_1`.`ParentID`
-		FROM
-			`Child` `c_1`
-		WHERE
-			`p`.`ParentID` = `c_1`.`ParentID`
-	)
+	`t1`.`ParentID`
 FROM
 	`Parent` `p`
+		LEFT JOIN (
+			SELECT DISTINCT
+				`a_Children`.`ParentID`
+			FROM
+				`Child` `a_Children`
+		) `t1` ON `p`.`ParentID` = `t1`.`ParentID`
 

@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`x`.`PersonID`)
 FROM
 	`Patient` `x`
 WHERE

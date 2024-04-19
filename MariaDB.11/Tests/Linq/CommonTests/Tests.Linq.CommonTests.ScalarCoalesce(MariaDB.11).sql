@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Coalesce(`p`.`Value1`, 100)
+	`p`.`Value1`
 FROM
 	`Parent` `p`
 

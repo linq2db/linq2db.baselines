@@ -2,14 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	`t_1`.`c1`
 FROM
 	(
 		SELECT
-			Degrees(`p`.`MoneyValue`) as `c1`
+			Degrees(`t`.`MoneyValue`) as `c1`
 		FROM
-			`LinqDataTypes` `p`
-	) `t`
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	`t_1`.`c1` <> 0.10000000000000001
 

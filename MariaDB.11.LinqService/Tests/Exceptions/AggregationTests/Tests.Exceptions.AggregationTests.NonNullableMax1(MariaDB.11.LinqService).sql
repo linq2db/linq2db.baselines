@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`_`.`ParentID`)
+	MAX(`_`.`ParentID`)
 FROM
 	`Parent` `_`
 WHERE
