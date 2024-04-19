@@ -48,7 +48,7 @@ WHEN 1 = 1 THEN
 	VALUES
 	(
 		:id1,
-		"Value_1"
+		"source_Value"
 	)
 WHEN 1 = 0 THEN
 	INTO "Dest1"
@@ -59,26 +59,24 @@ WHEN 1 = 0 THEN
 	VALUES
 	(
 		:id2,
-		"Value_1"
+		"source_Value"
 	)
 SELECT
-	:value as "Value_1"
+	:value as "source_Value"
 FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1."Value",
+	t1."Value" as "Value_1",
 	t1."StringValue"
 FROM
 	"Dest1" t1
 WHERE
 	t1.ID > 1000
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
