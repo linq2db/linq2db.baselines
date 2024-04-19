@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Cast(t."MoneyValue" as Number(19,4))
+	CAST(t."MoneyValue" AS Decimal(19, 4))
 FROM
 	"LinqDataTypes" t
 
