@@ -10,6 +10,8 @@ BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
@@ -18,8 +20,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	Cast(@ParentID as Int),
-	1
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute

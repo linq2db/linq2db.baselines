@@ -22,8 +22,8 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS CHAR(2))
 )
 
 BeforeExecute
@@ -40,8 +40,8 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS CHAR(2))
 )
 
 BeforeExecute
@@ -58,8 +58,8 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS CHAR(8191))
 )
 
 BeforeExecute

@@ -9,19 +9,7 @@ SELECT
 			FROM
 				"Person" "t1"
 			WHERE
-				CASE
-					WHEN "t1"."MiddleName" = '123'
-						THEN TRUE
-					ELSE FALSE
-				END = CASE
-					WHEN CASE
-						WHEN "t1"."MiddleName" = '1'
-							THEN 'test'
-						ELSE "t1"."MiddleName"
-					END = 'test'
-						THEN TRUE
-					ELSE FALSE
-				END
+				("t1"."MiddleName" = '123') = (("t1"."MiddleName" = '1' OR "t1"."MiddleName" = 'test' AND ("t1"."MiddleName" <> '1' OR "t1"."MiddleName" IS NULL)))
 		)
 			THEN TRUE
 		ELSE FALSE

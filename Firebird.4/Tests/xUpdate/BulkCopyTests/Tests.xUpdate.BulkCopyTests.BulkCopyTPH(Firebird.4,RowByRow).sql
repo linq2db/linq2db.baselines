@@ -43,9 +43,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	@Id,
-	@Discriminator,
-	@Value1
+	CAST(@Id AS Int),
+	CAST(@Discriminator AS Int),
+	CAST(@Value1 AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	@Id,
-	@Discriminator,
-	@Value2
+	CAST(@Id AS Int),
+	CAST(@Discriminator AS Int),
+	CAST(@Value2 AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -90,22 +90,22 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	@Id,
-	@Discriminator,
-	@Value3,
-	@NullableBool
+	CAST(@Id AS Int),
+	CAST(@Discriminator AS Int),
+	CAST(@Value3 AS VARCHAR(4)),
+	CAST(@NullableBool AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"t1"."Id",
 	"t1"."Discriminator",
-	"t1"."Value1",
-	"t1"."Value2",
+	"t1"."Id",
 	"t1"."Value3",
-	"t1"."NullableBool"
+	"t1"."NullableBool",
+	"t1"."Value2",
+	"t1"."Value1"
 FROM
 	"TPHTable" "t1"
 ORDER BY
@@ -113,111 +113,99 @@ ORDER BY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 2
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 3
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value1" = 'Str1'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value2" = 'Str2'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
-	"x"."Id",
 	"x"."Discriminator",
-	"x"."Value1",
-	"x"."Value2",
+	"x"."Id",
 	"x"."Value3",
-	"x"."NullableBool"
+	"x"."NullableBool",
+	"x"."Value2",
+	"x"."Value1"
 FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value3" = 'Str3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

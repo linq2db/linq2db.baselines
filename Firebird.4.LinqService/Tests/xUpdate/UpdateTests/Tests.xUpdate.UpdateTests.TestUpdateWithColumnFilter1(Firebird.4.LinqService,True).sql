@@ -23,18 +23,16 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(25)),
+	CAST(@LastName AS VARCHAR(8)),
+	CAST(@MiddleName AS VARCHAR(15)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -46,7 +44,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -62,21 +60,19 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(25)),
+	"LastName" = CAST(@LastName AS VARCHAR(8)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(12)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -88,5 +84,5 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

@@ -1,64 +1,40 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
 SET     @name = 'test'
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 2
+
+SELECT
+	"m_1"."PersonID",
+	"m_1"."FirstName",
+	"m_1"."PersonID",
+	"m_1"."LastName",
+	"m_1"."MiddleName",
+	"m_1"."Gender"
+FROM
+	"Person" "m_1"
+WHERE
+	("m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR "m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id) AND
+	("m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR "m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @id Integer -- Int32
+SET     @id = 1
+DECLARE @name VarChar(4) -- String
+SET     @name = 'test'
 
 SELECT
 	"x"."PersonID"
 FROM
 	"Person" "x"
 WHERE
-	("x"."PersonID" = @id AND "x"."LastName" <> @name OR "x"."FirstName" <> @name AND "x"."PersonID" = @id_1)
+	("x"."PersonID" = @id AND "x"."LastName" <> @name OR "x"."FirstName" <> @name AND "x"."PersonID" - 1 = @id)
 GROUP BY
 	"x"."PersonID"
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
-DECLARE @LastName VarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @p Integer -- Int32
-SET     @p = 2
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 1
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @LastName AND "x"."PersonID" = @p) AND
-	"x"."PersonID" = @ID_1
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
-DECLARE @LastName VarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @p Integer -- Int32
-SET     @p = 2
-DECLARE @ID_1 Integer -- Int32
-SET     @ID_1 = 2
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	("x"."PersonID" = @ID AND "x"."LastName" <> @LastName OR "x"."FirstName" <> @LastName AND "x"."PersonID" = @p) AND
-	"x"."PersonID" = @ID_1
 

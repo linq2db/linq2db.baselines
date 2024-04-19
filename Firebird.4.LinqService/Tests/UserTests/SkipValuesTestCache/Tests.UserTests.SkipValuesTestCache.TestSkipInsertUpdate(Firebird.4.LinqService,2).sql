@@ -40,15 +40,13 @@ INSERT INTO "PR_1598_Insert_Table_Cache"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(4)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -58,7 +56,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -70,17 +68,15 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"PR_1598_Insert_Table_Cache" "t1"
 SET
-	"PR_1598_Insert_Table_Cache"."Name" = @Name,
-	"PR_1598_Insert_Table_Cache"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(4)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -90,7 +86,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

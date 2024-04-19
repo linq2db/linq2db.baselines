@@ -49,16 +49,11 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"d"."c1"
+	"d"."TransactionDate"
 FROM
-	(
-		SELECT
-			"t"."TransactionDate" as "c1"
-		FROM
-			"Transactions" "t"
-	) "d"
+	"Transactions" "d"
 WHERE
-	Cast(Floor(Extract(day from "d"."c1")) as int) > 0
+	Extract(day from "d"."TransactionDate") > 0
 
 BeforeExecute
 -- Firebird.4 Firebird4

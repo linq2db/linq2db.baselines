@@ -46,11 +46,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Value2 AS VARCHAR(2)),
+	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	CAST(@Value4 AS VARCHAR(2))
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(8191)),
+	CAST(@Value2 AS VARCHAR(2)),
+	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	CAST(@Value4 AS VARCHAR(8191))
 )
 
 BeforeExecute
@@ -106,25 +106,23 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Value2 AS VARCHAR(8191)),
+	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
+	CAST(@Value4 AS VARCHAR(2))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	LIST("t1"."Value1", ' -> ')
+	LIST("g_1"."Value1", ' -> ')
 FROM
-	"SampleClass" "t1"
+	"SampleClass" "g_1"
 GROUP BY
-	"t1"."Id",
-	"t1"."Value1"
-ORDER BY
-	"t1"."Id"
+	"g_1"."Id",
+	"g_1"."Value1"
 
 BeforeExecute
 -- Firebird.4 Firebird4

@@ -43,8 +43,6 @@ BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"c_1"."Id"
@@ -52,7 +50,7 @@ FROM
 	"AsyncDataTable" "c_1"
 WHERE
 	"c_1"."Id" = @Id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

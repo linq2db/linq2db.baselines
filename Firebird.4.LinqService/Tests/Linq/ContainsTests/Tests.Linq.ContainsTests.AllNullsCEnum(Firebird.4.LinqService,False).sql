@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(8191)),
+	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -68,39 +68,35 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(3)),
+	CAST(@CEnum AS VarChar(12) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @CEnum VarChar -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum_1)
+	"s"."CEnum" IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @CEnum VarChar -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT
 	Count(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
+	"s"."CEnum" NOT IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- Firebird.4 Firebird4
