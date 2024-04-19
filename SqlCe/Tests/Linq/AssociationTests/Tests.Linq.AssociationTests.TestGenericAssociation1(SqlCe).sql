@@ -3,8 +3,7 @@
 
 SELECT
 	[a_MiddleGeneric].[ParentID],
-	[a_MiddleGeneric].[ChildID],
-	[a_Bottom].[ParentID],
+	[a_Bottom].[ParentID] as [ParentID_1],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]
 FROM

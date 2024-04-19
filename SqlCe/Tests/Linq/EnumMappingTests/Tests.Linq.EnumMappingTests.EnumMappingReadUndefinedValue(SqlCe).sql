@@ -26,8 +26,8 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[ID],
-	[r].[BigIntValue]
+	[r].[ID] as [Id],
+	[r].[BigIntValue] as [TestField]
 FROM
 	[LinqDataTypes] [r]
 WHERE

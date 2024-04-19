@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[_].[PersonID],
+	[_].[PersonID] as [ID],
 	[a_Doctor].[PersonID],
 	[a_Doctor].[Taxonomy]
 FROM

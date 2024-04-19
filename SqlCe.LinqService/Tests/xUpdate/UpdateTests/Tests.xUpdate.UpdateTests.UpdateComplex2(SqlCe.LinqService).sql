@@ -40,19 +40,17 @@ BeforeExecute
 UPDATE
 	[Person]
 SET
-	[Person].[LastName] = [Person].[FirstName]
+	[LastName] = [Person].[FirstName]
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
+SELECT TOP (1)
+	[_].[PersonID] as [ID],
 	[_].[Gender],
 	[_].[FirstName],
 	[_].[MiddleName],
