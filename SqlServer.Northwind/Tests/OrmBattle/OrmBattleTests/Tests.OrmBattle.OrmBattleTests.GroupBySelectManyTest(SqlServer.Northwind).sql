@@ -16,11 +16,11 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[City]
+			[t1].[City] as [Key_1]
 		FROM
 			[Customers] [t1]
 		GROUP BY
 			[t1].[City]
-	) [cp]
-		INNER JOIN [Customers] [c_1] ON ([cp].[City] = [c_1].[City] OR [cp].[City] IS NULL AND [c_1].[City] IS NULL)
+	) [g_1]
+		INNER JOIN [Customers] [c_1] ON ([g_1].[Key_1] = [c_1].[City] OR [g_1].[Key_1] IS NULL AND [c_1].[City] IS NULL)
 
