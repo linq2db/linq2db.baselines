@@ -30,22 +30,22 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[TimeOfDay]
 FROM
 	(
 		SELECT
-			CAST([selectParam].[dt] AS TIME) as [Key_1]
+			CAST([g_1].[dt] AS Time) as [TimeOfDay]
 		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+			[Issue1613] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[TimeOfDay]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT DISTINCT
-	CAST([r].[dt] AS TIME)
+	CAST([r].[dt] AS Time)
 FROM
 	[Issue1613] [r]
 
