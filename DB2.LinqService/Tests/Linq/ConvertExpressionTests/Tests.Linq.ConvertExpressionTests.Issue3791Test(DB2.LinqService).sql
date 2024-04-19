@@ -49,18 +49,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."Id",
-	"t2"."OtherId",
-	"t1"."Id"
+	"t1"."Id",
+	"t1"."OtherId",
+	"a_Association"."Id"
 FROM
-	"Issue3791Table" "t2"
-		LEFT JOIN (
-			SELECT
-				"a_Association"."Id",
-				RTrim(Char("a_Association"."Id")) as "c1"
-			FROM
-				"Issue3791GuidTable" "a_Association"
-		) "t1" ON ("t2"."OtherId" = "t1"."c1" OR "t2"."OtherId" IS NULL AND "t1"."c1" IS NULL)
+	"Issue3791Table" "t1"
+		LEFT JOIN "Issue3791GuidTable" "a_Association" ON ("t1"."OtherId" = RTrim(Char("a_Association"."Id")) OR "t1"."OtherId" IS NULL AND RTrim(Char("a_Association"."Id")) IS NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
