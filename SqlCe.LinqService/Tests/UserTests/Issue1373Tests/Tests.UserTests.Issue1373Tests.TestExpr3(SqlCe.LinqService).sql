@@ -39,7 +39,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	2,
-	''
+	NULL
 )
 
 BeforeExecute
