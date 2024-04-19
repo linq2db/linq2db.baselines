@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS Int)
 FROM
 	[LinqDataTypes] [t]
 
