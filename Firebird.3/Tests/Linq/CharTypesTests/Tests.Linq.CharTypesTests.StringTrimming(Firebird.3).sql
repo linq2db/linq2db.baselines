@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Max("t1".ID)
+	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
@@ -17,7 +17,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(6))
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -45,7 +45,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8))
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(11))
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(10))
 )
 
 BeforeExecute
@@ -298,7 +298,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	Cast(@String as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@String AS VARCHAR(8191))
 )
 
 BeforeExecute

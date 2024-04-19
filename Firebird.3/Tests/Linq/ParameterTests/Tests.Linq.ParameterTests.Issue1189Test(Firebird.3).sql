@@ -26,17 +26,13 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @DateTime TimeStamp -- DateTime
 SET     @DateTime = CAST('2020-02-29 17:54:55.123' AS timestamp)
-DECLARE @DateTime_1 TimeStamp -- DateTime
-SET     @DateTime_1 = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
 	"k_1".ID,
 	"k_1".NAME,
-	Cast(@DateTime as TimeStamp)
+	CAST(@DateTime AS TimeStamp)
 FROM
 	"Issue1189Customer" "k_1"
-WHERE
-	Cast(@DateTime as TimeStamp) <= @DateTime_1
 
 BeforeExecute
 -- Firebird.3 Firebird3

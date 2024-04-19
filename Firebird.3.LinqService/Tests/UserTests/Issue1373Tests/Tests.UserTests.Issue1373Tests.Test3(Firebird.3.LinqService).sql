@@ -36,8 +36,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS VARCHAR(8191))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS VARCHAR(8191))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS VARCHAR(4))
 )
 
 BeforeExecute

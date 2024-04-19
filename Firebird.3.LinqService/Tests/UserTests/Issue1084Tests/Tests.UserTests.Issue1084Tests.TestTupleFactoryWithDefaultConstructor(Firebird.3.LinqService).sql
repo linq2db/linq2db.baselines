@@ -48,11 +48,11 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"k_1"."StatusBitmask",
-	"joinedTable"."StatusBitmask"
+	Bin_And("t1"."StatusBitmask", 128),
+	Bin_And("g_1"."StatusBitmask", 128)
 FROM
-	"i1084_person" "k_1"
-		LEFT JOIN "i1084_student" "joinedTable" ON "k_1"."Id" = "joinedTable"."Id" AND Cast("k_1"."Number" as VarChar(11) CHARACTER SET UNICODE_FSS) = "joinedTable"."Number"
+	"i1084_person" "t1"
+		LEFT JOIN "i1084_student" "g_1" ON "t1"."Id" = "g_1"."Id" AND "t1"."Number" = "g_1"."Number"
 
 BeforeExecute
 -- Firebird.3 Firebird3

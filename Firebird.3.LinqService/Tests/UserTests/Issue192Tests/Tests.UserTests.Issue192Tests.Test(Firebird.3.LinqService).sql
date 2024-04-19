@@ -38,9 +38,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS VARCHAR(11)),
+	CAST(@BoolValue AS Char),
+	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS VARCHAR(8)),
+	CAST(@BoolValue AS Char),
+	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -101,8 +101,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -112,14 +110,12 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -129,14 +125,27 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
+
+BeforeExecute
+-- Firebird.3 Firebird3
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'Y'
+
+SELECT
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
+FROM
+	"TypeConvertTable" "t1"
+WHERE
+	"t1"."BoolValue" <> @BoolValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -145,32 +154,13 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	"t1"."Name",
-	"t1"."BoolValue",
-	"t1"."GuidValue"
-FROM
-	"TypeConvertTable" "t1"
-WHERE
-	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+	"t1"."BoolValue" <> @BoolValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -180,14 +170,12 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -197,14 +185,12 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -214,14 +200,12 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -231,14 +215,27 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
+
+BeforeExecute
+-- Firebird.3 Firebird3
+DECLARE @BoolValue Char -- String
+SET     @BoolValue = 'Y'
+
+SELECT
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
+FROM
+	"TypeConvertTable" "t1"
+WHERE
+	"t1"."BoolValue" <> @BoolValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -247,32 +244,13 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	"t1"."Name",
-	"t1"."BoolValue",
-	"t1"."GuidValue"
-FROM
-	"TypeConvertTable" "t1"
-WHERE
-	"t1"."BoolValue" = @BoolValue
-FETCH NEXT @take ROWS ONLY
+	"t1"."BoolValue" <> @BoolValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -282,14 +260,12 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."GuidValue" = @GuidValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Name",
@@ -299,7 +275,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."GuidValue" = @GuidValue
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

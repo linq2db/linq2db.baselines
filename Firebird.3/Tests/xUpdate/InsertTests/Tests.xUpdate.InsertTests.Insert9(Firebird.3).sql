@@ -2,17 +2,17 @@
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ParentID" > 1000
+	"c_1"."ParentID" > 1000
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -28,8 +28,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
@@ -66,15 +66,15 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ParentID" > 1000
+	"c_1"."ParentID" > 1000
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 

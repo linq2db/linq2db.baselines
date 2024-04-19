@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(11)),
+	CAST(@Gender AS CHAR(1))
 )
 
 BeforeExecute
