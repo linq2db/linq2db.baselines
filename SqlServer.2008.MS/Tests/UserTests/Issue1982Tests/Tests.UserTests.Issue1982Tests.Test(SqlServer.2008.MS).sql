@@ -25,7 +25,7 @@ SELECT
 			FROM
 				[Issue1982Table] [_]
 			WHERE
-				[_].[Time] < CAST([_].[DateTime] AS TIME)
+				[_].[Time] < CAST([_].[DateTime] AS Time)
 		)
 			THEN 1
 		ELSE 0
