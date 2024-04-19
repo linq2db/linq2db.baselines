@@ -16,14 +16,12 @@ CREATE TABLE IF NOT EXISTS `Issue681Table4`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
 	`LinqDataTypes` `_`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

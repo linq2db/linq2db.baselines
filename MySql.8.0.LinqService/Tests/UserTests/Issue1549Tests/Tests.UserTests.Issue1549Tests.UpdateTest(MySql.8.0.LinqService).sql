@@ -86,32 +86,30 @@ SET
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 UPDATE
-	`billing_TempReading` `t1`
+	`billing_TempReading` `t3`
+		LEFT JOIN LATERAL (
+			SELECT
+				`w`.`Id`
+			FROM
+				`billing_DevReadingType` `w`
+			WHERE
+				`w`.`Name` = `t3`.`ReadingTypeName` AND `w`.`DevTypeId` = `t3`.`Devtypeid`
+			LIMIT 1
+		) `t1` ON 1=1
+		LEFT JOIN LATERAL (
+			SELECT
+				`w_1`.`Responsibility`
+			FROM
+				`billing_DevReadingType` `w_1`
+			WHERE
+				`w_1`.`Name` = `t3`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t3`.`Devtypeid`
+			LIMIT 1
+		) `t2` ON 1=1
 SET
-	`t1`.`DevReadingTypeId` = (
-		SELECT
-			`w`.`Id`
-		FROM
-			`billing_DevReadingType` `w`
-		WHERE
-			`w`.`Name` = `t1`.`ReadingTypeName` AND `w`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take
-	),
-	`t1`.`Responsibility` = (
-		SELECT
-			`w_1`.`Responsibility`
-		FROM
-			`billing_DevReadingType` `w_1`
-		WHERE
-			`w_1`.`Name` = `t1`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t1`.`Devtypeid`
-		LIMIT @take_1
-	)
+	`t3`.`DevReadingTypeId` = `t1`.`Id`,
+	`t3`.`Responsibility` = `t2`.`Responsibility`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

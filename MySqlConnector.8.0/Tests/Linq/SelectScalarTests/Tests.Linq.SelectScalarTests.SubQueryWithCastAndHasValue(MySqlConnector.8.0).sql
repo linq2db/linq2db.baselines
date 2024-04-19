@@ -1,19 +1,21 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`ParentID`,
 	`_`.`Value1`
 FROM
 	`Parent` `_`
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN `r`.`Value1` IS NOT NULL THEN 1
+					ELSE 0
+				END as `HasValue`
+			FROM
+				`Parent` `r`
+			LIMIT 1
+		) `t1` ON 1=1
 WHERE
-	(
-		SELECT
-			`r`.`Value1`
-		FROM
-			`Parent` `r`
-		LIMIT @take
-	) IS NOT NULL
+	`t1`.`HasValue` = 1
 

@@ -1,27 +1,21 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`Parent` `p`
-		INNER JOIN `Child` `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
+		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
+		LEFT JOIN `Child` `c_2` ON `c_2`.`ChildID` = 11
 SET
-	`p`.`ParentID` = (
-		SELECT
-			`c_1`.`ParentID`
-		FROM
-			`Child` `c_1`
-		WHERE
-			`c_1`.`ChildID` = 11
-	) + 1000
+	`p`.`ParentID` = `c_2`.`ParentID` + 1000
 WHERE
 	`p`.`ParentID` = 1
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -40,9 +40,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 

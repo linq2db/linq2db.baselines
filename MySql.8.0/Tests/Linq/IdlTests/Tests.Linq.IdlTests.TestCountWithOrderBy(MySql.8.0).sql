@@ -2,9 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`p`.`PersonID`)
 FROM
-	`Person` `x`
+	`Person` `p`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @DateTimeValue Datetime -- DateTime
-SET     @DateTimeValue = '2009-01-01'
 
 SELECT
 	`_`.`ID`,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	`_`.`DateTimeValue` > @DateTimeValue
+	`_`.`DateTimeValue` > STR_TO_DATE('2009-01-01 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 

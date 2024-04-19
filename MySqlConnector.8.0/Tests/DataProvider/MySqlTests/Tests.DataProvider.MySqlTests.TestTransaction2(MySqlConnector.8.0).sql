@@ -2,11 +2,11 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `p`
 SET
-	`t1`.`Value1` = 1
+	`p`.`Value1` = 1
 WHERE
-	`t1`.`ParentID` = 1
+	`p`.`ParentID` = 1
 
 BeforeExecute
 BeginTransaction
@@ -14,16 +14,14 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `p`
 SET
-	`t1`.`Value1` = NULL
+	`p`.`Value1` = NULL
 WHERE
-	`t1`.`ParentID` = 1
+	`p`.`ParentID` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -32,14 +30,12 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -48,5 +44,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 

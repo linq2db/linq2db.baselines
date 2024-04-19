@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Date Datetime -- DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
 	`_`.`ID`,
@@ -17,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	Cast(`_`.`DateTimeValue` as Date) = @Date
+	Date(`_`.`DateTimeValue`) = Date(STR_TO_DATE('2009-09-20 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f'))
 

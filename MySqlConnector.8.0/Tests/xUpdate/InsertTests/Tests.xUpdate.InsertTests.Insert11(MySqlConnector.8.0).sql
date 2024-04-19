@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Max(`t`.`PersonID`)
+	MAX(`t1`.`PersonID`)
 FROM
-	`Person` `t`
+	`Person` `t1`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -36,8 +36,6 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32
 SET     @id = 4
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p2`.`PersonID`,
@@ -49,5 +47,5 @@ FROM
 	`Person` `p2`
 WHERE
 	(`p2`.`PersonID` > @id OR `p2`.`PersonID` = 0)
-LIMIT @take
+LIMIT 2
 

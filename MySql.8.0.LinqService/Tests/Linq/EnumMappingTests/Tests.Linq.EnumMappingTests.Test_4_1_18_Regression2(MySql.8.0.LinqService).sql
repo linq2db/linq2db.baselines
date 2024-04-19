@@ -29,6 +29,11 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
+	CASE
+		WHEN `r`.`BigIntValue` IS NOT NULL AND `r`.`IntValue` IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	`r`.`BigIntValue`,
 	`r`.`IntValue`
 FROM

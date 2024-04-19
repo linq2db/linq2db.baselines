@@ -1,16 +1,18 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Int32
+SET     @Value1 = 1
 
 INSERT INTO `Parent`
 (
@@ -20,7 +22,7 @@ INSERT INTO `Parent`
 VALUES
 (
 	@ParentID,
-	1
+	@Value1
 )
 
 BeforeExecute
@@ -38,9 +40,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Parent` `t1`
+	`Parent` `_`
 WHERE
-	`t1`.`ParentID` > 1000
+	`_`.`ParentID` > 1000
 

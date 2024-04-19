@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `_`
 WHERE
-	`t1`.`ID` > 1000
+	`_`.`ID` > 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -28,9 +28,9 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `_`
 WHERE
-	`t1`.`ID` > 1000
+	`_`.`ID` > 1000
 

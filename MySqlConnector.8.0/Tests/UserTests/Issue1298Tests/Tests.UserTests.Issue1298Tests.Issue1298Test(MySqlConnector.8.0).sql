@@ -108,27 +108,23 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 2
+SET     @take = 2
 
 SELECT
 	`x`.`ref1`,
-	`t1`.`asdfgh`,
-	`t1`.`is_empty`
+	`t1`.`asdfgh`
 FROM
 	`mega_composites` `x`
 		LEFT JOIN LATERAL (
 			SELECT
-				`q`.`asdfgh`,
-				1 as `is_empty`
+				`q`.`asdfgh`
 			FROM
 				`qwerty` `q`
 			WHERE
 				`q`.`Id` = `x`.`ref1`
-			LIMIT @take
+			LIMIT 1
 		) `t1` ON 1=1
-LIMIT @take_1
+LIMIT @take
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

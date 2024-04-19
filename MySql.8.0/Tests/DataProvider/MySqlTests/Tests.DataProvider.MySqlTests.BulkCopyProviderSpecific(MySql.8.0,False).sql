@@ -3114,18 +3114,18 @@ LIMIT @take
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypes` `t1`
+	`AllTypes` `_`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`_`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear` `_`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`_`.`varcharDataType` = '_btest'
 

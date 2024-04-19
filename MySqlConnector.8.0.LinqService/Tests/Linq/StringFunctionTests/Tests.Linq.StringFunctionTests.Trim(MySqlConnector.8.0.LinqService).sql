@@ -2,11 +2,10 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`p`.`PersonID`,
-	`p`.`FirstName`
+	`pp`.`PersonID`,
+	Concat('  ', `pp`.`FirstName`, ' ')
 FROM
-	`Person` `p`
+	`Person` `pp`
 WHERE
-	Trim(Concat('  ', `p`.`FirstName`, ' ')) = 'John' AND
-	`p`.`PersonID` = 1
+	`pp`.`PersonID` = 1 AND Trim(Concat('  ', `pp`.`FirstName`, ' ')) = 'John'
 

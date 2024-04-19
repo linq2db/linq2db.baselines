@@ -37,8 +37,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`,
@@ -48,14 +46,12 @@ FROM
 	`Issue1303` `_`
 WHERE
 	`_`.`ID` = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Array Blob(3) -- Binary
 SET     @Array = 0x010203
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`,
@@ -65,14 +61,12 @@ FROM
 	`Issue1303` `_`
 WHERE
 	`_`.`Array` = @Array
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Binary Blob(2) -- Binary
 SET     @Binary = 0x0405
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`,
@@ -82,7 +76,7 @@ FROM
 	`Issue1303` `_`
 WHERE
 	`_`.`Binary` = @Binary
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

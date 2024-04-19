@@ -2,8 +2,6 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`PersonID`,
@@ -15,14 +13,12 @@ FROM
 	`Person` `t`
 WHERE
 	`t`.`FirstName` = @p
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`PersonID`,
@@ -34,5 +30,5 @@ FROM
 	`Person` `t`
 WHERE
 	`t`.`FirstName` = @p
-LIMIT @take
+LIMIT 2
 

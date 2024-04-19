@@ -8,5 +8,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	Lower(Cast(`t`.`GuidValue` as CHAR(36))) = @guid
+	Lower(CAST(`t`.`GuidValue` AS CHAR(36))) = @guid
 

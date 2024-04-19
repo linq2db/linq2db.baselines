@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`
@@ -38,7 +36,7 @@ FROM
 	`Issue1316Tests` `_`
 WHERE
 	`_`.`ID` IN (4, 5, 6)
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

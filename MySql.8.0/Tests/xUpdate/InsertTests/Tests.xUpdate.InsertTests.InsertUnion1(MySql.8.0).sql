@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` > 1000
+	`p`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -22,13 +22,13 @@ FROM
 	(
 		SELECT
 			`c_1`.`ParentID`,
-			Cast(Floor(Floor(Cast(`c_1`.`ChildID` as DOUBLE) / 10)) as SIGNED) as `Value1`
+			CAST(Floor(CAST(`c_1`.`ChildID` AS DOUBLE) / 10) AS SIGNED) as `Value1`
 		FROM
 			`Child` `c_1`
 		UNION
 		SELECT
 			Coalesce(`c_2`.`ParentID`, 0) as `ParentID`,
-			Floor(Cast(Coalesce(`c_2`.`GrandChildID`, 0) as DOUBLE) / 100) as `Value1`
+			Floor(CAST(Coalesce(`c_2`.`GrandChildID`, 0) AS DOUBLE) / 100) as `Value1`
 		FROM
 			`GrandChild` `c_2`
 	) `t1`
@@ -46,9 +46,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` > 1000
+	`p`.`ParentID` > 1000
 

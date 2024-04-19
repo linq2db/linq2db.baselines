@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Cast(`t`.`DateTimeValue` as Time)
+	CAST(`t`.`DateTimeValue` AS TIME)
 FROM
 	`LinqDataTypes` `t`
 
