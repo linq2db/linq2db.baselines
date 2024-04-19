@@ -6,17 +6,10 @@ SELECT
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		OUTER APPLY (
+		LEFT JOIN [GrandChild] [g_1] ON [c_1].[ChildID] IN (
 			SELECT
-				*
+				[r].[PersonID] as [ID]
 			FROM
-				[GrandChild] [t]
-			WHERE
-				[c_1].[ChildID] IN (
-					SELECT
-						[r].[PersonID]
-					FROM
-						[Person] [r]
-				)
-		) [t1]
+				[Person] [r]
+		)
 
