@@ -34,7 +34,7 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Field1 NVarChar(4000) -- String
-SET     @Field1 = N''
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
