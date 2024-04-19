@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Date  -- DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateTime(Date([_].[DateTimeValue])) = DateTime(@Date)
+	strftime('%Y-%m-%d %H:%M:%f', Date([_].[DateTimeValue])) = strftime('%Y-%m-%d %H:%M:%f', Date(strftime('%Y-%m-%d %H:%M:%f', '2009-09-20 00:00:00.000')))
 

@@ -1,26 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
-	[t1].[OrderID],
-	[t1].[CustomerID],
-	[t1].[EmployeeID],
-	[t1].[OrderDate],
-	[t1].[RequiredDate],
-	[t1].[ShippedDate],
-	[t1].[ShipVia],
-	[t1].[Freight],
-	[t1].[ShipName],
-	[t1].[ShipAddress],
-	[t1].[ShipCity],
-	[t1].[ShipRegion],
-	[t1].[ShipPostalCode],
-	[t1].[ShipCountry]
-FROM
-	[Orders] [t1]
-
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 50
 DECLARE @skip  -- Int32
@@ -31,22 +10,20 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[o].[RequiredDate]
+			[t1].[RequiredDate]
 		FROM
 			(
 				SELECT
-					[t1].[RequiredDate],
-					[t1].[OrderDate]
+					[o].[RequiredDate],
+					[o].[OrderDate]
 				FROM
-					[Orders] [t1]
+					[Orders] [o]
 				ORDER BY
-					[t1].[OrderDate]
+					[o].[OrderDate]
 				LIMIT @take OFFSET @skip
-			) [o]
+			) [t1]
 		WHERE
-			[o].[OrderDate] IS NOT NULL
-		ORDER BY
-			[o].[RequiredDate]
+			[t1].[OrderDate] IS NOT NULL
 	) [t2]
 ORDER BY
 	[t2].[RequiredDate] DESC

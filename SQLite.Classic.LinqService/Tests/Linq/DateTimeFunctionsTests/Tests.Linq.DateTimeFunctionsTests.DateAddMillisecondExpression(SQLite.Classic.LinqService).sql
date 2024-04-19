@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 226
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(@p/1000.0) || ' Second')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '0.226 Second')
 FROM
 	[LinqDataTypes] [t]
 

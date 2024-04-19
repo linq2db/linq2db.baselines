@@ -33,10 +33,10 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Orders] [t2]
+			[Orders] [a_Orders]
 		WHERE
-			([c_1].[CustomerID] = [t2].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [t2].[CustomerID] IS NULL)
+			[c_1].[CustomerID] = [a_Orders].[CustomerID]
 	) > 0
 

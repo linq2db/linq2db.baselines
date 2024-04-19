@@ -2,7 +2,7 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[o].[Freight]
+	[o].[Freight] * 1000
 FROM
 	[Orders] [o]
 

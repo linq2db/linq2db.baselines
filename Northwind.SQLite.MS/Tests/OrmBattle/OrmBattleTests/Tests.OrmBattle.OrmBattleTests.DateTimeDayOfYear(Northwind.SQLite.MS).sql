@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[OrderID],
@@ -21,6 +19,6 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	Cast(StrFTime('%j', [o].[OrderDate]) as int) = 360
-LIMIT @take
+	CAST(strftime('%j', [o].[OrderDate]) AS INTEGER) = 360
+LIMIT 1
 

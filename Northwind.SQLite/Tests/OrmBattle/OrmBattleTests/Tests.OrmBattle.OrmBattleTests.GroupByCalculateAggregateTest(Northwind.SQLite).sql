@@ -2,10 +2,10 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	Sum([t1].[Freight])
+	SUM([g_1].[Freight])
 FROM
-	[Orders] [t1]
-		INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+	[Orders] [g_1]
+		INNER JOIN [Customers] [a_Customer] ON [g_1].[CustomerID] = [a_Customer].[CustomerID]
 GROUP BY
 	[a_Customer].[CustomerID]
 
