@@ -46,11 +46,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Value2 AS NVarChar(2)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(2))
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(50)),
+	CAST(@Value2 AS NVarChar(2)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(50))
 )
 
 BeforeExecute
@@ -106,26 +106,24 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Value2 AS NVarChar(50)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(2))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("t1"."Value4"),
-	LISTAGG("t1"."Value4", ' -> ')
+	MAX("g_1"."Value4"),
+	LISTAGG("g_1"."Value4", ' -> ')
 FROM
-	"SampleClass" "t1"
+	"SampleClass" "g_1"
 GROUP BY
-	"t1"."Id",
-	"t1"."Value4"
-ORDER BY
-	"t1"."Id"
+	"g_1"."Id",
+	"g_1"."Value4"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

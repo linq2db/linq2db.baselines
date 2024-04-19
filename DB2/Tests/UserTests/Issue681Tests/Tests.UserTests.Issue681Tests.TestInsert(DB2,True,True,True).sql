@@ -54,8 +54,8 @@ INSERT INTO TESTDB.DB2INST1."Issue681Table"
 )
 VALUES
 (
-	@ID,
-	@Value
+	CAST(@ID AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute

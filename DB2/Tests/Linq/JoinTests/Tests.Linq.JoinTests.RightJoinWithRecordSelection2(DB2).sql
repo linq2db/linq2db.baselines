@@ -77,12 +77,12 @@ BeforeExecute
 
 SELECT
 	"fact_1"."Id",
-	"leftTag"."Id",
-	"leftTag"."FactId",
-	"leftTag"."Name"
+	"t1"."Id",
+	"t1"."FactId",
+	"t1"."Name"
 FROM
-	"Tag" "leftTag"
-		RIGHT JOIN "Fact" "fact_1" ON "leftTag"."FactId" = "fact_1"."Id"
+	"Tag" "t1"
+		RIGHT JOIN "Fact" "fact_1" ON "t1"."FactId" = "fact_1"."Id"
 WHERE
 	"fact_1"."Id" > 3
 

@@ -43,6 +43,8 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @param Integer(4) -- Int32
+SET     @param = 0
 
 SELECT
 	"_"."Id"
@@ -55,7 +57,7 @@ WHERE
 		FROM
 			"TestEqualsTable2" "__"
 		WHERE
-			"_"."Id" = "__".FK AND "__"."Id" IS NULL
+			"_"."Id" = "__".FK AND "__"."Id" = @param
 	)
 
 BeforeExecute

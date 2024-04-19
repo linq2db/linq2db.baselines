@@ -13,13 +13,34 @@ WHERE
 		FROM
 			(
 				SELECT
-					"p"."ParentID",
-					"p"."Value1" as "Value_1"
+					"param"."ParentID",
+					"param"."Value1" as "Value_1"
 				FROM
-					"Parent" "p"
+					"Parent" "param"
 				FETCH FIRST 100 ROWS ONLY
-			) "t1"
+			) "param_1"
 		WHERE
-			"t1"."ParentID" = "c_1"."ParentID" AND "t1"."Value_1" = "c_1"."ParentID"
+			"param_1"."ParentID" = "c_1"."ParentID" AND
+			"param_1"."Value_1" = "c_1"."ParentID" AND
+			"param_1"."ParentID" = "c_1"."ParentID" AND
+			"param_1"."Value_1" = "c_1"."ParentID"
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 

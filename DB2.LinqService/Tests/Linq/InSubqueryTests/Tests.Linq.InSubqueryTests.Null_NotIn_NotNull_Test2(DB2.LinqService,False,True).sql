@@ -30,7 +30,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -93,16 +93,8 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"t1".ID
-FROM
-	"test_in_1" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -125,7 +117,7 @@ BeforeExecute
 SELECT
 	"t1".ID
 FROM
-	"test_in_2" "t1"
+	"test_in_1" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

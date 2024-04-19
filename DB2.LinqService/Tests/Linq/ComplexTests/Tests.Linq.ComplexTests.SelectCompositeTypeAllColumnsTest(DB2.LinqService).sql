@@ -42,18 +42,18 @@ INSERT INTO "User"
 )
 VALUES
 (
-	@Residence_City,
-	@Name,
-	@Residence_Street,
-	@Residence_Building
+	CAST(@Residence_City AS NVarChar(10)),
+	CAST(@Name AS NVarChar(6)),
+	CAST(@Residence_Street AS NVarChar(10)),
+	CAST(@Residence_Building AS Int)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."city",
 	"t1"."user_name",
+	"t1"."city",
 	"t1"."street",
 	"t1"."building_number"
 FROM

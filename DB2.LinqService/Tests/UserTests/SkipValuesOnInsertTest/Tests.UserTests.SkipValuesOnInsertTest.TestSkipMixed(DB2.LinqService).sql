@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Mixed_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(5)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
@@ -66,11 +66,11 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Age" = @Age
+	"Age" = @Age
 WHERE
-	"PR_1598_Mixed_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -99,8 +99,8 @@ INSERT INTO "PR_1598_Mixed_Table"
 )
 VALUES
 (
-	@Id,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
@@ -126,12 +126,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Name" = @Name,
-	"PR_1598_Mixed_Table"."Age" = @Age
+	"Name" = @Name,
+	"Age" = @Age
 WHERE
-	"PR_1598_Mixed_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

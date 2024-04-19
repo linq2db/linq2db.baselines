@@ -36,8 +36,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS NVarChar(8168))
 )
 
 BeforeExecute
@@ -45,7 +45,7 @@ BeforeExecute
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
+SET     @Field1 = ''
 
 INSERT INTO "Issue1373Tests"
 (
@@ -54,8 +54,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS NVarChar(8168))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Issue1373Tests"
 )
 VALUES
 (
-	@Id,
-	@Field1
+	CAST(@Id AS Int),
+	CAST(@Field1 AS NVarChar(4))
 )
 
 BeforeExecute

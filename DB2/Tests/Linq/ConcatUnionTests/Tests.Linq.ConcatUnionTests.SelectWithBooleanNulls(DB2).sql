@@ -25,12 +25,12 @@ SELECT
 			SELECT
 				*
 			FROM
-				"Child" "t2"
+				"Child" "t1"
 		)
 			THEN 1
 		ELSE 0
 	END,
-	Cast(NULL as smallint)
+	CAST(NULL AS smallint)
 FROM
 	"Parent" "x_1"
 

@@ -37,8 +37,8 @@ INSERT INTO "DynamicTable"
 )
 VALUES
 (
-	@NotIdentifier,
-	@Value
+	CAST(@NotIdentifier AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
