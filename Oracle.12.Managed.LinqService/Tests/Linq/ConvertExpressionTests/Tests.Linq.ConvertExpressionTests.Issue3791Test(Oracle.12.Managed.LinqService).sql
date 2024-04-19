@@ -97,18 +97,12 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2."Id",
-	t2."OtherId",
-	t1."Id"
+	t1."Id",
+	t1."OtherId",
+	a_Association."Id"
 FROM
-	"Issue3791Table" t2
-		LEFT JOIN (
-			SELECT
-				a_Association."Id",
-				CAST(a_Association."Id" AS VarChar(255)) as "c1"
-			FROM
-				"Issue3791GuidTable" a_Association
-		) t1 ON (t2."OtherId" = t1."c1" OR t2."OtherId" IS NULL AND t1."c1" IS NULL)
+	"Issue3791Table" t1
+		LEFT JOIN "Issue3791GuidTable" a_Association ON (t1."OtherId" = CAST(a_Association."Id" AS VarChar(255)) OR t1."OtherId" IS NULL AND CAST(a_Association."Id" AS VarChar(255)) IS NULL)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
