@@ -53,7 +53,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Field1 Varchar2 -- String
-SET     @Field1 = ''
+SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
