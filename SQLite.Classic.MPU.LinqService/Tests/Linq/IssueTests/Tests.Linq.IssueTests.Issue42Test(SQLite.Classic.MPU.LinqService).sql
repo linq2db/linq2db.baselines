@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[r].[ID],
@@ -18,14 +16,34 @@ FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] = 1
-LIMIT @take
+LIMIT 1
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.1'
+DECLARE @DateTimeValue VarChar(23) -- AnsiString
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 DECLARE @DateTimeValue2  -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
@@ -62,8 +80,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[r].[ID],
@@ -80,14 +96,14 @@ FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] = @ID
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.1'
+DECLARE @DateTimeValue VarChar(23) -- AnsiString
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 DECLARE @DateTimeValue2  -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
@@ -119,4 +135,24 @@ SET
 	[StringValue] = @StringValue
 WHERE
 	[LinqDataTypes].[ID] = @ID
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+LIMIT 1
 

@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = -35
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p || ' Second')
+	CAST(strftime('%S', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '-35 Second')) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

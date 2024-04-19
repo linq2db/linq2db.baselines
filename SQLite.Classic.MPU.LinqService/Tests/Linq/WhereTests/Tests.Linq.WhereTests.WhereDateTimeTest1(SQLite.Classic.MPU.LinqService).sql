@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2009-01-01'
 
 SELECT
 	[_].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateTime([_].[DateTimeValue]) > DateTime(@DateTimeValue)
+	strftime('%Y-%m-%d %H:%M:%f', [_].[DateTimeValue]) > strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2009-01-01 00:00:00.000'))
 

@@ -2,23 +2,23 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[y_4].[ParentID],
-	[y_4].[Value1],
-	[y_2].[ParentID],
-	[y_2].[Value1],
-	[yid].[ParentID],
-	[yid].[Value1],
+	[a_2].[ParentID],
+	[a_2].[Value1],
+	[z_1].[ParentID],
+	[z_1].[Value1],
 	[y].[ParentID],
 	[y].[Value1],
-	[y_1].[ParentID],
-	[y_1].[Value1],
-	[y_3].[ParentID],
-	[y_3].[Value1]
+	[a].[ParentID],
+	[a].[Value1],
+	[z].[ParentID],
+	[z].[Value1],
+	[a_1].[ParentID],
+	[a_1].[Value1]
 FROM
-	[Parent] [y_4]
-		LEFT JOIN [Parent] [yid] ON [y_4].[ParentID] = [yid].[ParentID]
-		LEFT JOIN [Parent] [y] ON [y_4].[ParentID] = [y].[ParentID]
-		LEFT JOIN [Parent] [y_1] ON [y_4].[ParentID] = [y_1].[ParentID]
-		LEFT JOIN [Parent] [y_2] ON [y_4].[ParentID] = Coalesce([y_2].[Value1], 1)
-		LEFT JOIN [Parent] [y_3] ON [y_4].[ParentID] = [y_3].[ParentID]
+	[Parent] [a_2]
+		LEFT JOIN [Parent] [y] ON [a_2].[ParentID] = [y].[ParentID]
+		LEFT JOIN [Parent] [a] ON [a_2].[ParentID] = [a].[ParentID]
+		LEFT JOIN [Parent] [z] ON [a_2].[ParentID] = [z].[ParentID]
+		LEFT JOIN [Parent] [z_1] ON [a_2].[ParentID] = Coalesce([z_1].[Value1], 1)
+		LEFT JOIN [Parent] [a_1] ON [a_2].[ParentID] = [a_1].[ParentID]
 

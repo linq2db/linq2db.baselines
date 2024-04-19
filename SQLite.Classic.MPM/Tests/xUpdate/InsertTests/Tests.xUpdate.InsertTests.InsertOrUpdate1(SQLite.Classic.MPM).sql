@@ -36,24 +36,12 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @i  -- Int32
 SET     @i = 0
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
-
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -63,41 +51,53 @@ VALUES
 	@id,
 	'abc'
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -106,5 +106,5 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 

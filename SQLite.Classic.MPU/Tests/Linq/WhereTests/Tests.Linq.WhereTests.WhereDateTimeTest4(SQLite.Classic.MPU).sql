@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2009-09-27'
+DECLARE @DateTimeValue VarChar(23) -- AnsiString
+SET     @DateTimeValue = '2009-09-27 00:00:00.000'
 
 SELECT
 	[_].[ID],
@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	DateTime([_].[DateTimeValue]) = DateTime(@DateTimeValue)
+	strftime('%Y-%m-%d %H:%M:%f', [_].[DateTimeValue]) = strftime('%Y-%m-%d %H:%M:%f', @DateTimeValue)
 
