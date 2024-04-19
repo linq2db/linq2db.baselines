@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Field1 VarWChar -- String
-SET     @Field1 = ''
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (

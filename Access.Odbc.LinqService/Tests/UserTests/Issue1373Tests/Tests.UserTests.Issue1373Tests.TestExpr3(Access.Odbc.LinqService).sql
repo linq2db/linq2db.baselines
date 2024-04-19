@@ -33,7 +33,7 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Field1 NVarChar -- String
-SET     @Field1 = ''
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
