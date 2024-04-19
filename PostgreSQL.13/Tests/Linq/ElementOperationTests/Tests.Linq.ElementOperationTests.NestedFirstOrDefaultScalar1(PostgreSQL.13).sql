@@ -1,17 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	t1."ChildID"
+	(
+		SELECT
+			t1."ChildID"
+		FROM
+			"Child" t1
+		LIMIT 1
+	)
 FROM
-	"Parent" p_1
-		LEFT JOIN LATERAL (
-			SELECT
-				p."ChildID"
-			FROM
-				"Child" p
-			LIMIT :take
-		) t1 ON 1=1
+	"Parent" p
 
