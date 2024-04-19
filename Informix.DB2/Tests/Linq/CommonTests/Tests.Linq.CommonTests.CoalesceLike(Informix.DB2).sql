@@ -11,20 +11,8 @@ FROM
 	Person p
 WHERE
 	CASE
-		WHEN CASE
-			WHEN p.FirstName IS NULL THEN NULL
-			ELSE CASE
-				WHEN p.FirstName LIKE 'Jo%' ESCAPE '~'
-					THEN 't'
-				ELSE 'f'
-			END
-		END IS NULL
-			THEN 'f'
-		WHEN p.FirstName IS NULL THEN NULL
-		ELSE CASE
-			WHEN p.FirstName LIKE 'Jo%' ESCAPE '~'
-				THEN 't'
-			ELSE 'f'
-		END
-	END = 't'
+		WHEN p.FirstName LIKE 'Jo%' ESCAPE '~' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN = 't' AND
+	p.FirstName IS NOT NULL
 

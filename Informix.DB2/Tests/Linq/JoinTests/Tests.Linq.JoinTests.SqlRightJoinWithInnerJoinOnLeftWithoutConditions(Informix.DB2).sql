@@ -4,10 +4,11 @@ DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 
 SELECT
-	left_1.ParentID,
-	left_1.Value1,
-	t1.right_2,
-	t1.right_1
+	CASE
+		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
+		ELSE NULL
+	END,
+	right_1.ParentID
 FROM
 	(
 		SELECT
@@ -18,14 +19,12 @@ FROM
 		WHERE
 			p.ParentID <> @id1
 	) left_1
-		RIGHT JOIN (
-			SELECT
-				right_1.Value1 as right_1,
-				right_1.ParentID as right_2
-			FROM
-				Parent right_1
-					INNER JOIN Parent right2 ON right_1.Value1 = right2.Value1 + 2
-		) t1 ON t1.right_1 + 2 = left_1.Value1
+		RIGHT JOIN Parent right_1
+			INNER JOIN Parent right2 ON right_1.Value1 = right2.Value1 + 2
+		ON (right_1.Value1 + 2 = left_1.Value1 OR right_1.Value1 + 2 IS NULL AND left_1.Value1 IS NULL)
 ORDER BY
-	left_1.ParentID
+	CASE
+		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
+		ELSE NULL
+	END
 

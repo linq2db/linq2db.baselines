@@ -33,12 +33,18 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.Id,
-	t1.OtherId,
-	a_Association.Id
+	t2.Id,
+	t2.OtherId,
+	t1.Id
 FROM
-	Issue3791Table t1
-		LEFT JOIN Issue3791GuidTable a_Association ON (t1.OtherId = To_Char(a_Association.Id) OR t1.OtherId IS NULL AND To_Char(a_Association.Id) IS NULL)
+	Issue3791Table t2
+		LEFT JOIN (
+			SELECT
+				a_Association.Id,
+				a_Association.Id::NVarChar(36) as c1
+			FROM
+				Issue3791GuidTable a_Association
+		) t1 ON (t2.OtherId = t1.c1 OR t2.OtherId IS NULL AND t1.c1 IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix

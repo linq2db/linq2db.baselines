@@ -120,6 +120,34 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'Y'
+
+SELECT FIRST 1
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
+FROM
+	TypeConvertTable t1
+WHERE
+	t1.BoolValue <> @BoolValue
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @BoolValue Char(1) -- StringFixedLength
+SET     @BoolValue = 'N'
+
+SELECT FIRST 1
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
+FROM
+	TypeConvertTable t1
+WHERE
+	t1.BoolValue <> @BoolValue
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 'N'
 
 SELECT FIRST 1
@@ -176,20 +204,6 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
-
-SELECT FIRST 1
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
-FROM
-	TypeConvertTable t1
-WHERE
-	t1.BoolValue = @BoolValue
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @BoolValue Char(1) -- StringFixedLength
 SET     @BoolValue = 'Y'
 
 SELECT FIRST 1
@@ -199,7 +213,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue
+	t1.BoolValue <> @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -213,21 +227,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.BoolValue = @BoolValue
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
-
-SELECT FIRST 1
-	t1.Name,
-	t1.BoolValue,
-	t1.GuidValue
-FROM
-	TypeConvertTable t1
-WHERE
-	t1.BoolValue = @BoolValue
+	t1.BoolValue <> @BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix

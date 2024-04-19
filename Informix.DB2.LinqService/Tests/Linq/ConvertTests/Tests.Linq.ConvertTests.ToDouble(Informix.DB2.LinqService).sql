@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	p_1.c1
 FROM
 	(
 		SELECT
-			Cast(Cast(t.MoneyValue as Float) as Int) as c1
+			p.MoneyValue::Float::Int as c1
 		FROM
-			LinqDataTypes t
-	) p
+			LinqDataTypes p
+	) p_1
 WHERE
-	p.c1 > 0
+	p_1.c1 > 0
 

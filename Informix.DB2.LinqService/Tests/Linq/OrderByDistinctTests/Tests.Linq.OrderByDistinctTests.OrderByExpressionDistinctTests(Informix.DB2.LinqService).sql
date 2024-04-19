@@ -487,26 +487,22 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 0 FIRST 3
+SELECT SKIP 0 FIRST 3 DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-GROUP BY
-	x.DuplicateData
-ORDER BY
-	Min(Mod(x.OrderData1, 3))
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT SKIP 0 FIRST 3
-	x.DuplicateData
+	g_1.DuplicateData
 FROM
-	OrderByDistinctData x
+	OrderByDistinctData g_1
 GROUP BY
-	x.DuplicateData
+	g_1.DuplicateData
 ORDER BY
-	Max(Mod(x.OrderData1, 3))
+	MAX(Mod(g_1.OrderData1, 3))
 
 BeforeExecute
 -- Informix.DB2 Informix
