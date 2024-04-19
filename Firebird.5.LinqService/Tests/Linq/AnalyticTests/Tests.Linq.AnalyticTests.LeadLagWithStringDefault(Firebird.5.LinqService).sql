@@ -34,8 +34,8 @@ INSERT INTO "Issue1799Table3"
 )
 VALUES
 (
-	@ProcessID,
-	@ProcessName
+	CAST(@ProcessID AS Int),
+	CAST(@ProcessName AS VARCHAR(3))
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "Issue1799Table3"
 )
 VALUES
 (
-	@ProcessID,
-	@ProcessName
+	CAST(@ProcessID AS Int),
+	CAST(@ProcessName AS VARCHAR(3))
 )
 
 BeforeExecute

@@ -16,7 +16,7 @@ DECLARE @Data Integer -- Int32
 SET     @Data = 1
 
 MERGE INTO "InheritanceParent" "t1"
-USING (SELECT Cast(@Key1 as Int) AS "InheritanceParentId", Cast(@Key2 as VarChar(255) CHARACTER SET UNICODE_FSS) AS "Name" FROM rdb$database) "s" ON
+USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS VARCHAR(8191)) AS "Name" FROM rdb$database) "s" ON
 (
 	"t1"."InheritanceParentId" = "s"."InheritanceParentId" AND
 	("t1"."Name" IS NULL AND "s"."Name" IS NULL OR "t1"."Name" = "s"."Name")
@@ -24,7 +24,7 @@ USING (SELECT Cast(@Key1 as Int) AS "InheritanceParentId", Cast(@Key2 as VarChar
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."TypeDiscriminator" = @Data
+		"TypeDiscriminator" = CAST(@Data AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -34,9 +34,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@Key1 as Int),
-		Cast(@Key2 as VarChar(255) CHARACTER SET UNICODE_FSS),
-		@Data
+		CAST(@Key1 AS Int),
+		CAST(@Key2 AS VARCHAR(8191)),
+		CAST(@Data AS Int)
 	)
 
 BeforeExecute
@@ -57,7 +57,7 @@ DECLARE @Data Integer -- Int32
 SET     @Data = 1
 
 MERGE INTO "InheritanceParent" "t1"
-USING (SELECT Cast(@Key1 as Int) AS "InheritanceParentId", Cast(@Key2 as VarChar(255) CHARACTER SET UNICODE_FSS) AS "Name" FROM rdb$database) "s" ON
+USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS VARCHAR(8191)) AS "Name" FROM rdb$database) "s" ON
 (
 	"t1"."InheritanceParentId" = "s"."InheritanceParentId" AND
 	("t1"."Name" IS NULL AND "s"."Name" IS NULL OR "t1"."Name" = "s"."Name")
@@ -65,7 +65,7 @@ USING (SELECT Cast(@Key1 as Int) AS "InheritanceParentId", Cast(@Key2 as VarChar
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."TypeDiscriminator" = @Data
+		"TypeDiscriminator" = CAST(@Data AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -75,9 +75,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@Key1 as Int),
-		Cast(@Key2 as VarChar(255) CHARACTER SET UNICODE_FSS),
-		@Data
+		CAST(@Key1 AS Int),
+		CAST(@Key2 AS VARCHAR(8191)),
+		CAST(@Data AS Int)
 	)
 
 BeforeExecute

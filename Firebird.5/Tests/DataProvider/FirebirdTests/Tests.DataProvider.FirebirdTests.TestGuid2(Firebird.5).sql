@@ -8,8 +8,6 @@ FROM
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t".ID,
@@ -24,7 +22,7 @@ SELECT
 	"t"."StringValue"
 FROM
 	"LinqDataTypes" "t"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -50,19 +48,19 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t1"
 SET
-	"LinqDataTypes"."MoneyValue" = @MoneyValue,
-	"LinqDataTypes"."DateTimeValue" = @DateTimeValue,
-	"LinqDataTypes"."DateTimeValue2" = @DateTimeValue2,
-	"LinqDataTypes"."BoolValue" = @BoolValue,
-	"LinqDataTypes"."GuidValue" = @GuidValue,
-	"LinqDataTypes"."SmallIntValue" = @SmallIntValue,
-	"LinqDataTypes"."IntValue" = @IntValue,
-	"LinqDataTypes"."BigIntValue" = @BigIntValue,
-	"LinqDataTypes"."StringValue" = @StringValue
+	"MoneyValue" = CAST(@MoneyValue AS Decimal(3, 2)),
+	"DateTimeValue" = CAST(@DateTimeValue AS TimeStamp),
+	"DateTimeValue2" = CAST(@DateTimeValue2 AS TimeStamp),
+	"BoolValue" = CAST(@BoolValue AS BOOLEAN),
+	"GuidValue" = CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
+	"SmallIntValue" = CAST(@SmallIntValue AS SmallInt),
+	"IntValue" = CAST(@IntValue AS Int),
+	"BigIntValue" = CAST(@BigIntValue AS BigInt),
+	"StringValue" = CAST(@StringValue AS VARCHAR(8191))
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -72,9 +70,9 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."GuidValue" = @GuidValue
+	"GuidValue" = CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS)
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 

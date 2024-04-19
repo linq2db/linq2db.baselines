@@ -63,21 +63,21 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(8191)),
+	CAST(@FieldNString AS VARCHAR(8191)),
+	CAST(@FieldChar AS CHAR(8191)),
+	CAST(@FieldNChar AS CHAR(8191)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -133,21 +133,21 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(13)),
+	CAST(@FieldNString AS VARCHAR(25)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(2)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(18, 10)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(5)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -204,21 +204,21 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(10)),
+	CAST(@FieldNString AS VARCHAR(25)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(10, 10)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(1)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -275,21 +275,21 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(20)),
+	CAST(@FieldNString AS VARCHAR(14)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(10, 10)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(1)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -345,21 +345,21 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(12)),
+	CAST(@FieldNString AS VARCHAR(20)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(3, 3)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -416,21 +416,21 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(9)),
+	CAST(@FieldNString AS VARCHAR(25)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(10, 10)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(1)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -486,21 +486,21 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(12)),
+	CAST(@FieldNString AS VARCHAR(20)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(3, 3)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute
@@ -557,21 +557,21 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@FieldInt32,
-	@FieldInt64,
-	@FieldBoolean,
-	@FieldString,
-	@FieldNString,
-	@FieldChar,
-	@FieldNChar,
-	@FieldFloat,
-	@FieldDateTime,
-	@FieldGuid,
-	@FieldDecimal,
-	@FieldDate,
-	@FieldEnumString,
-	@FieldEnumNumber
+	CAST(@Id AS Int),
+	CAST(@FieldInt32 AS Int),
+	CAST(@FieldInt64 AS BigInt),
+	CAST(@FieldBoolean AS BOOLEAN),
+	CAST(@FieldString AS VARCHAR(12)),
+	CAST(@FieldNString AS VARCHAR(28)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
+	CAST(@FieldFloat AS Real),
+	CAST(@FieldDateTime AS TimeStamp),
+	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@FieldDecimal AS Decimal(10, 10)),
+	CAST(@FieldDate AS TimeStamp),
+	CAST(@FieldEnumString AS VARCHAR(1)),
+	CAST(@FieldEnumNumber AS Int)
 )
 
 BeforeExecute

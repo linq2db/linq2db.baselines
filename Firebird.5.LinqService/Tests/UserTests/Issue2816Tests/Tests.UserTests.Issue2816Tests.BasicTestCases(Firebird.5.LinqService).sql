@@ -36,8 +36,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(1))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(1))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(3))
 )
 
 BeforeExecute
@@ -90,8 +90,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(1))
 )
 
 BeforeExecute
@@ -108,8 +108,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(2))
 )
 
 BeforeExecute
@@ -126,8 +126,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS VARCHAR(8191))
 )
 
 BeforeExecute
@@ -140,6 +140,15 @@ FROM
 	"Issue2816Table" "p"
 WHERE
 	("p"."Text" IS NULL OR NOT "p"."Text" SIMILAR TO _utf8 x'255B5E090A0B0C0D20C285C2A0E19A80E28080E28081E28082E28083E28084E28085E28086E28087E28088E28089E2808AE280A8E280A9E2819FE380805D25')
+
+BeforeExecute
+-- Firebird.5 Firebird4
+
+SELECT
+	"t1"."Id",
+	"t1"."Text"
+FROM
+	"Issue2816Table" "t1"
 
 BeforeExecute
 -- Firebird.5 Firebird4

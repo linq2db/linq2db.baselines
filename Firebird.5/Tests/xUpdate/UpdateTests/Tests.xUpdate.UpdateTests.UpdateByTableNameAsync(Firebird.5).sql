@@ -58,10 +58,10 @@ INSERT INTO "xxPerson_f_33"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(6)),
+	CAST(@LastName AS VARCHAR(4)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -74,8 +74,6 @@ FROM
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -85,7 +83,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson_f_33" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
@@ -101,19 +99,17 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson_f_33"
+	"xxPerson_f_33" "t1"
 SET
-	"xxPerson_f_33"."FirstName" = @FirstName,
-	"xxPerson_f_33"."LastName" = @LastName,
-	"xxPerson_f_33"."MiddleName" = @MiddleName,
-	"xxPerson_f_33"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(6)),
+	"LastName" = CAST(@LastName AS VARCHAR(4)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(4)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"xxPerson_f_33"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -123,7 +119,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson_f_33" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)

@@ -28,6 +28,11 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
+	CASE
+		WHEN "r"."BigIntValue" IS NOT NULL AND "r"."IntValue" IS NOT NULL
+			THEN TRUE
+		ELSE FALSE
+	END,
 	"r"."BigIntValue",
 	"r"."IntValue"
 FROM

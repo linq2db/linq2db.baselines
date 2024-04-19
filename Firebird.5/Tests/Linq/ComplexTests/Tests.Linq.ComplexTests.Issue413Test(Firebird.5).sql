@@ -82,8 +82,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -100,8 +100,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -118,8 +118,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -136,8 +136,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -154,8 +154,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	@InstrumentId,
-	@IndexId
+	CAST(@InstrumentId AS Int),
+	CAST(@IndexId AS Int)
 )
 
 BeforeExecute
@@ -178,10 +178,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	@InstrumentId,
-	@InstrumentCode,
-	@CreateDate,
-	@SourceInstrumentCode
+	CAST(@InstrumentId AS Int),
+	CAST(@InstrumentCode AS VARCHAR(4)),
+	CAST(@CreateDate AS TimeStamp),
+	CAST(@SourceInstrumentCode AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -204,10 +204,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	@InstrumentId,
-	@InstrumentCode,
-	@CreateDate,
-	@SourceInstrumentCode
+	CAST(@InstrumentId AS Int),
+	CAST(@InstrumentCode AS VARCHAR(4)),
+	CAST(@CreateDate AS TimeStamp),
+	CAST(@SourceInstrumentCode AS VARCHAR(8191))
 )
 
 BeforeExecute
@@ -216,22 +216,22 @@ DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
-	"t4"."SourceInstrumentCode"
+	"t5"."SourceInstrumentCode"
 FROM
 	(
 		SELECT DISTINCT
 			"ins"."SourceInstrumentCode"
 		FROM
-			T1 "ins_1"
-				INNER JOIN T2 "idx" ON "ins_1"."InstrumentId" = "idx"."InstrumentId"
+			T1 "t4"
+				INNER JOIN T2 "idx" ON "t4"."InstrumentId" = "idx"."InstrumentId"
 				INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 				INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 		WHERE
-			"ins"."SourceInstrumentCode" IS NOT NULL AND "ins_1"."InstrumentCode" STARTING WITH 'aaa' AND
-			"ins_1"."CreateDate" <= @uptoDate
-	) "t4"
+			"t4"."InstrumentCode" STARTING WITH 'aaa' AND "t4"."CreateDate" <= @uptoDate AND
+			"ins"."SourceInstrumentCode" IS NOT NULL
+	) "t5"
 ORDER BY
-	"t4"."SourceInstrumentCode"
+	"t5"."SourceInstrumentCode"
 
 BeforeExecute
 -- Firebird.5 Firebird4

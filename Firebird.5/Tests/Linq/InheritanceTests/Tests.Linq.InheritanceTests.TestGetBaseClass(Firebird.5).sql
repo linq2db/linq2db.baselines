@@ -2,8 +2,8 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	"x"."ParentID",
-	"x"."Value1"
+	"x"."Value1",
+	"x"."ParentID"
 FROM
 	"Parent" "x"
 WHERE

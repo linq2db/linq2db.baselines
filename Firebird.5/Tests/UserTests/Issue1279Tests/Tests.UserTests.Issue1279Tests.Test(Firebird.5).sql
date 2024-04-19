@@ -49,20 +49,18 @@ INSERT INTO "Issue1279Table"
 )
 VALUES
 (
-	@CharFld
+	CAST(@CharFld AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."Id",
 	"t1"."CharFld"
 FROM
 	"Issue1279Table" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

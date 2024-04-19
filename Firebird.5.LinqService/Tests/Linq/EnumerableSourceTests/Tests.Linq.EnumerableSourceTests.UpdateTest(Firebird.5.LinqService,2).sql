@@ -36,8 +36,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS VARCHAR(3))
 )
 
 BeforeExecute
@@ -64,22 +64,9 @@ BeforeExecute
 UPDATE
 	"TableToInsert"
 SET
-	"TableToInsert"."Value" = (
+	"Value" = (
 		SELECT
-			"r"."Value"
-		FROM
-			"TableToInsert" "t"
-				INNER JOIN (
-					SELECT 3 AS "Id", CAST('Janet Updated' AS VARCHAR(13)) AS "Value" FROM rdb$database
-					UNION ALL
-					SELECT 4, CAST('Doe Updated' AS VARCHAR(11)) FROM rdb$database) "r" ON "t"."Id" = "r"."Id"
-		WHERE
-			"TableToInsert"."Id" = "t"."Id"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
+			"r_1"."Value"
 		FROM
 			"TableToInsert" "t_1"
 				INNER JOIN (
@@ -88,6 +75,19 @@ WHERE
 					SELECT 4, CAST('Doe Updated' AS VARCHAR(11)) FROM rdb$database) "r_1" ON "t_1"."Id" = "r_1"."Id"
 		WHERE
 			"TableToInsert"."Id" = "t_1"."Id"
+	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"TableToInsert" "t"
+				INNER JOIN (
+					SELECT 3 AS "Id", CAST('Janet Updated' AS VARCHAR(13)) AS "Value" FROM rdb$database
+					UNION ALL
+					SELECT 4, CAST('Doe Updated' AS VARCHAR(11)) FROM rdb$database) "r" ON "t"."Id" = "r"."Id"
+		WHERE
+			"TableToInsert"."Id" = "t"."Id"
 	)
 
 BeforeExecute

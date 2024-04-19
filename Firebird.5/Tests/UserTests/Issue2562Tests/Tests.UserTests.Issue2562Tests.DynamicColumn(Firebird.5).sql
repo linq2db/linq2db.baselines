@@ -47,13 +47,10 @@ END
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
-	"t1"."Lics",
 	(
 		SELECT
 			LIST("x"."Id")
@@ -62,34 +59,29 @@ SELECT
 		WHERE
 			"x"."CardTypeId" = "t1"."CardTypeId" AND ("x"."CardNumber" = "t1"."CardNumber" OR "x"."CardNumber" IS NULL AND "t1"."CardNumber" IS NULL) AND
 			"x"."TypeId" = 2
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Person2562" "t1"
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"person"."CardNumber",
 	"person"."CardTypeId",
-	"t1"."c1",
-	"t1"."is_empty"
+	(
+		SELECT
+			LIST("x"."Id")
+		FROM
+			"ExternalId2562" "x"
+		WHERE
+			"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
+			"x"."TypeId" = 2
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Person2562" "person"
-		LEFT JOIN LATERAL (
-			SELECT
-				LIST("x"."Id") as "c1",
-				1 as "is_empty"
-			FROM
-				"ExternalId2562" "x"
-			WHERE
-				"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
-				"x"."TypeId" = 2
-			FETCH NEXT @take ROWS ONLY
-		) "t1" ON 1=1
 
 BeforeExecute
 -- Firebird.5 Firebird4

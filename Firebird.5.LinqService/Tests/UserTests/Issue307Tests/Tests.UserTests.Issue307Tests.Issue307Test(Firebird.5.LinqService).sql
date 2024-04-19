@@ -25,10 +25,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@Gender,
-	@FirstName,
-	@MiddleName,
-	@LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@FirstName AS VARCHAR(12)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@LastName AS VARCHAR(11))
 )
 RETURNING
 	"PersonID"
@@ -37,8 +37,6 @@ BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."PersonID",
@@ -50,5 +48,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

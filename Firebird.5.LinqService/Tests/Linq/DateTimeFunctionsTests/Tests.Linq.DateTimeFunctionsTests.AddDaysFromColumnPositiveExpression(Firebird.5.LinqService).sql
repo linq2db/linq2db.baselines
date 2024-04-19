@@ -30,33 +30,35 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@BoolValue,
-	@GuidValue,
-	@BinaryValue,
-	@SmallIntValue,
-	@StringValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS TimeStamp),
+	CAST(@BoolValue AS BOOLEAN),
+	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@BinaryValue AS BLOB),
+	CAST(@SmallIntValue AS SmallInt),
+	CAST(@StringValue AS VARCHAR(8191))
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2018-01-02' AS timestamp)
+DECLARE @part1 SmallInt -- Int16
+SET     @part1 = 4
+DECLARE @part2 Integer -- Int32
+SET     @part2 = 4
 
 SELECT
 	Count(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > @p
+	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + CAST(@part1 AS SmallInt)) - CAST(@part2 AS Int), "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID = 5000
+	"t".ID = 5000
 

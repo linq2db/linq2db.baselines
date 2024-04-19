@@ -2,6 +2,6 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	2147483647
+	1
 FROM rdb$database
 

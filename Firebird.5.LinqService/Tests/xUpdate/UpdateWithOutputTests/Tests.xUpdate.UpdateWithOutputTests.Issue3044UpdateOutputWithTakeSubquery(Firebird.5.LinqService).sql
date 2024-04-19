@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -126,9 +126,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -148,9 +148,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -170,9 +170,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -192,9 +192,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -214,9 +214,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -227,37 +227,16 @@ SET     @take = 1
 UPDATE
 	"TableWithData"
 SET
-	"TableWithData"."Id" = 20,
-	"TableWithData"."Value" = (
+	"Id" = 20,
+	"Value" = (
 		SELECT
-			"t1"."Value_1"
+			"t2"."Value_1"
 		FROM
 			(
 				SELECT
-					"i"."Id",
-					"i"."Value" as "Value_1",
-					"i"."ValueStr"
-				FROM
-					"TableWithData" "i"
-				WHERE
-					"i"."Id" >= 7
-				ORDER BY
-					"i"."Id"
-				FETCH NEXT @take ROWS ONLY
-			) "t1"
-		WHERE
-			"TableWithData"."Id" = "t1"."Id" AND "TableWithData"."Value" = "t1"."Value_1" AND
-			("TableWithData"."ValueStr" = "t1"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t1"."ValueStr" IS NULL)
-	),
-	"TableWithData"."ValueStr" = (
-		SELECT
-			"t2"."ValueStr"
-		FROM
-			(
-				SELECT
-					"i_1"."Id",
 					"i_1"."Value" as "Value_1",
-					"i_1"."ValueStr"
+					"i_1"."ValueStr",
+					"i_1"."Id"
 				FROM
 					"TableWithData" "i_1"
 				WHERE
@@ -269,17 +248,16 @@ SET
 		WHERE
 			"TableWithData"."Id" = "t2"."Id" AND "TableWithData"."Value" = "t2"."Value_1" AND
 			("TableWithData"."ValueStr" = "t2"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t2"."ValueStr" IS NULL)
-	)
-WHERE
-	EXISTS(
+	),
+	"ValueStr" = (
 		SELECT
-			*
+			"t3"."ValueStr"
 		FROM
 			(
 				SELECT
-					"i_2"."Id",
 					"i_2"."Value" as "Value_1",
-					"i_2"."ValueStr"
+					"i_2"."ValueStr",
+					"i_2"."Id"
 				FROM
 					"TableWithData" "i_2"
 				WHERE
@@ -291,6 +269,28 @@ WHERE
 		WHERE
 			"TableWithData"."Id" = "t3"."Id" AND "TableWithData"."Value" = "t3"."Value_1" AND
 			("TableWithData"."ValueStr" = "t3"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t3"."ValueStr" IS NULL)
+	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT
+					"i"."Value" as "Value_1",
+					"i"."ValueStr",
+					"i"."Id"
+				FROM
+					"TableWithData" "i"
+				WHERE
+					"i"."Id" >= 7
+				ORDER BY
+					"i"."Id"
+				FETCH NEXT @take ROWS ONLY
+			) "t1"
+		WHERE
+			"TableWithData"."Id" = "t1"."Id" AND "TableWithData"."Value" = "t1"."Value_1" AND
+			("TableWithData"."ValueStr" = "t1"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t1"."ValueStr" IS NULL)
 	)
 RETURNING
 	OLD."Id",

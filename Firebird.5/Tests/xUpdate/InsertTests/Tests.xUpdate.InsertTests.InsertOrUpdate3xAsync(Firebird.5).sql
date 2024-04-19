@@ -25,10 +25,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
@@ -37,20 +37,18 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 5
-DECLARE @i Integer -- Int32
-SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"Diagnosis" = Char_Length("t1"."Diagnosis")
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -59,7 +57,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -73,14 +71,14 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -89,7 +87,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -103,14 +101,14 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id2 as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = Cast((Char_Length("t1"."Diagnosis") + Cast(@i as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -119,7 +117,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -127,8 +125,6 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."PersonID",
@@ -137,5 +133,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

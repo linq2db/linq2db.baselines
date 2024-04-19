@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast(Floor(Extract(weekday from "t"."DateTimeValue")) as int)
+	Extract(weekday from "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 
