@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [_]
 WHERE
-	(([_].[PersonID] = @id OR [_].[PersonID] <= @id_1) OR [_].[PersonID] = @id_2)
+	([_].[PersonID] = @id OR [_].[PersonID] <= @id_1 OR [_].[PersonID] = @id_2)
 
