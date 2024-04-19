@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2022
+DECLARE @month Int -- Int32
+SET     @month = 10
 
 SELECT
-	Convert(Date, format((2010 + [t].[ID]), 'd4') + N'-10-01')
+	DATETIMEFROMPARTS(2010 + [t].[ID], @month, 1, 0, 0, 0, 0)
 FROM
 	[LinqDataTypes] [t]
 
