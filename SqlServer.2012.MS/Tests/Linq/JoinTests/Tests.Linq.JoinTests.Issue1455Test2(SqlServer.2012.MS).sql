@@ -126,22 +126,10 @@ FROM
 					[al_group].[AlertCode],
 					[al_group].[CreationDate]
 			) [al_group_1]
-				LEFT JOIN (
-					SELECT
-						[trade_1].[CounterParty],
-						CAST([trade_1].[DealId] AS NVarChar(11)) as [c1]
-					FROM
-						[Trade] [trade_1]
-				) [trade_2] ON [al_group_1].[AlertKey] = [trade_2].[c1]
-				LEFT JOIN (
-					SELECT
-						[nomin_1].[DeliveryCounterParty],
-						CAST([nomin_1].[CargoId] AS NVarChar(11)) as [c1]
-					FROM
-						[Nomin] [nomin_1]
-				) [nomin_2] ON [al_group_1].[AlertKey] = [nomin_2].[c1]
+				LEFT JOIN [Trade] [trade_1] ON [al_group_1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
+				LEFT JOIN [Nomin] [nomin_1] ON [al_group_1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
 		WHERE
-			([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [al_group_1].[AlertCode] LIKE @DeliveryCounterParty)
+			([nomin_1].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_1].[CounterParty] LIKE @DeliveryCounterParty OR [al_group_1].[AlertCode] LIKE @DeliveryCounterParty)
 		GROUP BY
 			[al_group_1].[AlertKey],
 			[al_group_1].[AlertCode],
@@ -149,12 +137,12 @@ FROM
 	) [al_group_4]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[nomin_4].[CargoId],
-				[nomin_4].[DeliveryId],
-				[nomin_4].[DeliveryCounterParty],
-				[trade_4].[DealId],
-				[trade_4].[ParcelId],
-				[trade_4].[CounterParty],
+				[nomin_2].[CargoId],
+				[nomin_2].[DeliveryId],
+				[nomin_2].[DeliveryCounterParty],
+				[trade_2].[DealId],
+				[trade_2].[ParcelId],
+				[trade_2].[CounterParty],
 				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate],
 				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate_1]
 			FROM
@@ -180,26 +168,10 @@ FROM
 						[al_group_3].[AlertCode],
 						[al_group_3].[CreationDate]
 				) [t1]
-					LEFT JOIN (
-						SELECT
-							[trade_3].[CounterParty],
-							[trade_3].[DealId],
-							[trade_3].[ParcelId],
-							CAST([trade_3].[DealId] AS NVarChar(11)) as [c1]
-						FROM
-							[Trade] [trade_3]
-					) [trade_4] ON [t1].[AlertKey] = [trade_4].[c1]
-					LEFT JOIN (
-						SELECT
-							[nomin_3].[DeliveryCounterParty],
-							[nomin_3].[CargoId],
-							[nomin_3].[DeliveryId],
-							CAST([nomin_3].[CargoId] AS NVarChar(11)) as [c1]
-						FROM
-							[Nomin] [nomin_3]
-					) [nomin_4] ON [t1].[AlertKey] = [nomin_4].[c1]
+					LEFT JOIN [Trade] [trade_2] ON [t1].[AlertKey] = CAST([trade_2].[DealId] AS NVarChar(11))
+					LEFT JOIN [Nomin] [nomin_2] ON [t1].[AlertKey] = CAST([nomin_2].[CargoId] AS NVarChar(11))
 			WHERE
-				([nomin_4].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_4].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty) AND
+				([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty) AND
 				[al_group_4].[AlertKey] = [t1].[AlertKey] AND
 				[al_group_4].[AlertCode] = [t1].[AlertCode] AND
 				[al_group_4].[CreationDate] = [t1].[CreationDate]
