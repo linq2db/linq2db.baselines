@@ -123,15 +123,7 @@ FROM
 					SELECT
 						1 as [c1]
 				) [t1]
-					LEFT JOIN (
-						SELECT
-							[ir].[Id],
-							[ir].[Nr]
-						FROM
-							[MlogInfeedAddonsDTO] [ir]
-						WHERE
-							[ir].[Id] = [infeed].[Id]
-					) [d] ON 1=1
+					LEFT JOIN [MlogInfeedAddonsDTO] [d] ON [d].[Id] = [infeed].[Id]
 		) [t2]
 
 BeforeExecute
