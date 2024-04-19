@@ -2,9 +2,9 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Convert(NVarChar(31), [t].[MoneyValue])
+	CAST([p].[MoneyValue] AS NVarChar(31))
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	Len(Convert(NVarChar(31), [t].[MoneyValue])) > 0
+	Len(CAST([p].[MoneyValue] AS NVarChar(31))) > 0
 
