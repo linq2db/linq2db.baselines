@@ -107,8 +107,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -117,13 +115,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -132,13 +128,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -147,13 +141,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'N'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -162,13 +154,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'Y'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -177,13 +167,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -192,13 +180,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -207,13 +193,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -222,13 +206,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -237,13 +219,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'N'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -252,7 +232,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'Y'
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
