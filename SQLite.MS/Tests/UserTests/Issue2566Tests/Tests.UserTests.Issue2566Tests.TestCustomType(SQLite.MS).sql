@@ -39,10 +39,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value NVarChar(4) -- String
-SET     @Value = 'Frau'
-DECLARE @Value_1 NVarChar(4) -- String
-SET     @Value_1 = 'Herr'
 
 SELECT
 	[m_1].[Id],
@@ -50,7 +46,7 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	[m_1].[Value] IN (@Value, @Value_1)
+	[m_1].[Value] IN ('Frau', 'Herr')
 
 BeforeExecute
 -- SQLite.MS SQLite
