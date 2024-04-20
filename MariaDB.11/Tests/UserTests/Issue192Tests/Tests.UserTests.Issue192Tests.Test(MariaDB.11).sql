@@ -91,8 +91,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	`_`.`Name`,
@@ -101,13 +99,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'N'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	`_`.`Name`,
@@ -116,13 +112,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	`_`.`Name`,
@@ -131,13 +125,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` <> @BoolValue
+	`_`.`BoolValue` = 'N'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	`_`.`Name`,
@@ -146,13 +138,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` <> @BoolValue
+	`_`.`BoolValue` = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	`_`.`Name`,
@@ -161,13 +151,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'N'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	`_`.`Name`,
@@ -176,13 +164,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	`_`.`Name`,
@@ -191,13 +177,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'N'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	`_`.`Name`,
@@ -206,13 +190,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` = @BoolValue
+	`_`.`BoolValue` = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
 	`_`.`Name`,
@@ -221,13 +203,11 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` <> @BoolValue
+	`_`.`BoolValue` = 'N'
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @BoolValue String -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
 	`_`.`Name`,
@@ -236,7 +216,7 @@ SELECT
 FROM
 	`TypeConvertTable` `_`
 WHERE
-	`_`.`BoolValue` <> @BoolValue
+	`_`.`BoolValue` = 'Y'
 LIMIT 1
 
 BeforeExecute
