@@ -91,8 +91,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -101,13 +99,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -116,13 +112,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -131,13 +125,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'N'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -146,13 +138,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -161,13 +151,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -176,13 +164,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -191,13 +177,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'N'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -206,13 +190,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
+	t1."BoolValue" = 'Y'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
 SELECT
 	t1."Name",
@@ -221,13 +203,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'N'
 LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
 SELECT
 	t1."Name",
@@ -236,7 +216,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" <> :BoolValue
+	t1."BoolValue" = 'Y'
 LIMIT 1
 
 BeforeExecute
