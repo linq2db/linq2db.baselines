@@ -207,7 +207,7 @@ VALUES
 	CAST(@InstrumentId AS Int),
 	CAST(@InstrumentCode AS VARCHAR(4)),
 	CAST(@CreateDate AS TimeStamp),
-	CAST(@SourceInstrumentCode AS VARCHAR(8191))
+	CAST(@SourceInstrumentCode AS VARCHAR(1))
 )
 
 BeforeExecute

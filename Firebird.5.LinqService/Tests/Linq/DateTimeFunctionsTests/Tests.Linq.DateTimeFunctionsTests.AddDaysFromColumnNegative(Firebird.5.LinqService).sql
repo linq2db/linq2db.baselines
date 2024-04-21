@@ -37,7 +37,7 @@ VALUES
 	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
 	CAST(@BinaryValue AS BLOB),
 	CAST(@SmallIntValue AS SmallInt),
-	CAST(@StringValue AS VARCHAR(8191))
+	CAST(@StringValue AS VARCHAR(1))
 )
 
 BeforeExecute

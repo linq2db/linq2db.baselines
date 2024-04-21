@@ -174,7 +174,7 @@ VALUES
 	CAST(@BoolValue AS BOOLEAN),
 	CAST(@BoolValueNullable AS BOOLEAN),
 	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(8191))
+	CAST(@StringValueNullable AS VARCHAR(1))
 )
 
 BeforeExecute
@@ -212,7 +212,7 @@ VALUES
 	CAST(@BoolValue AS BOOLEAN),
 	CAST(@BoolValueNullable AS BOOLEAN),
 	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(8191))
+	CAST(@StringValueNullable AS VARCHAR(1))
 )
 
 BeforeExecute

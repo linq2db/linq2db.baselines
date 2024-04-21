@@ -29,7 +29,7 @@ VALUES
 	GEN_ID("PersonID", 1),
 	CAST(@Gender AS CHAR(1)),
 	CAST(@Name_FirstName AS VARCHAR(13)),
-	CAST(@Name_MiddleName AS VARCHAR(8191)),
+	CAST(@Name_MiddleName AS VARCHAR(1)),
 	CAST(@Name_LastName AS VARCHAR(5))
 )
 RETURNING
@@ -70,7 +70,7 @@ UPDATE
 SET
 	"Gender" = CAST(@Gender AS CHAR(1)),
 	"FirstName" = CAST(@Name_FirstName AS VARCHAR(13)),
-	"MiddleName" = CAST(@Name_MiddleName AS VARCHAR(8191)),
+	"MiddleName" = CAST(@Name_MiddleName AS VARCHAR(1)),
 	"LastName" = CAST(@Name_LastName AS VARCHAR(13))
 WHERE
 	"t1"."PersonID" = @ID

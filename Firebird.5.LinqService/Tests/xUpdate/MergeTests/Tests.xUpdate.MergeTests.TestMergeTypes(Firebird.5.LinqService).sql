@@ -67,16 +67,16 @@ VALUES
 	CAST(@FieldInt32 AS Int),
 	CAST(@FieldInt64 AS BigInt),
 	CAST(@FieldBoolean AS BOOLEAN),
-	CAST(@FieldString AS VARCHAR(8191)),
-	CAST(@FieldNString AS VARCHAR(8191)),
-	CAST(@FieldChar AS CHAR(8191)),
-	CAST(@FieldNChar AS CHAR(8191)),
+	CAST(@FieldString AS VARCHAR(1)),
+	CAST(@FieldNString AS VARCHAR(1)),
+	CAST(@FieldChar AS CHAR(1)),
+	CAST(@FieldNChar AS CHAR(1)),
 	CAST(@FieldFloat AS Real),
 	CAST(@FieldDateTime AS TimeStamp),
 	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
 	CAST(@FieldDecimal AS Decimal),
 	CAST(@FieldDate AS TimeStamp),
-	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumString AS VARCHAR(1)),
 	CAST(@FieldEnumNumber AS Int)
 )
 
@@ -358,7 +358,7 @@ VALUES
 	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
 	CAST(@FieldDecimal AS Decimal(3, 3)),
 	CAST(@FieldDate AS TimeStamp),
-	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumString AS VARCHAR(1)),
 	CAST(@FieldEnumNumber AS Int)
 )
 
@@ -499,7 +499,7 @@ VALUES
 	CAST(@FieldGuid AS CHAR(16) CHARACTER SET OCTETS),
 	CAST(@FieldDecimal AS Decimal(3, 3)),
 	CAST(@FieldDate AS TimeStamp),
-	CAST(@FieldEnumString AS VARCHAR(8191)),
+	CAST(@FieldEnumString AS VARCHAR(1)),
 	CAST(@FieldEnumNumber AS Int)
 )
 

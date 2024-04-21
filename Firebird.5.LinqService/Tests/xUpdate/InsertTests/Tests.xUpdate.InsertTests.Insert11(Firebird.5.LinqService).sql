@@ -30,7 +30,7 @@ VALUES
 	GEN_ID("PersonID", 1),
 	CAST(@Gender AS CHAR(1)),
 	CAST(@Name_FirstName AS VARCHAR(2)),
-	CAST(@Name_MiddleName AS VARCHAR(8191)),
+	CAST(@Name_MiddleName AS VARCHAR(1)),
 	CAST(@Name_LastName AS VARCHAR(2))
 )
 

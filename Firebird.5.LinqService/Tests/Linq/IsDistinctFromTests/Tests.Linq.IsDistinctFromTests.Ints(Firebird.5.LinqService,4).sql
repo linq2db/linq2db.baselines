@@ -71,7 +71,7 @@ VALUES
 	CAST(@Int AS Int),
 	CAST(@NullableInt AS Int),
 	CAST(@String AS VARCHAR(3)),
-	CAST(@NullableString AS VARCHAR(8191))
+	CAST(@NullableString AS VARCHAR(1))
 )
 
 BeforeExecute

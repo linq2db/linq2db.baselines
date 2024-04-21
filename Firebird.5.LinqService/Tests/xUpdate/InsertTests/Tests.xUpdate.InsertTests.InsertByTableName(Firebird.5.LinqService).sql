@@ -60,7 +60,7 @@ VALUES
 (
 	CAST(@FirstName AS VARCHAR(6)),
 	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@MiddleName AS VARCHAR(1)),
 	CAST(@Gender AS Char(1))
 )
 
@@ -88,7 +88,7 @@ VALUES
 (
 	CAST(@FirstName AS VARCHAR(6)),
 	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@MiddleName AS VARCHAR(1)),
 	CAST(@Gender AS Char(1))
 )
 RETURNING
@@ -118,7 +118,7 @@ VALUES
 (
 	CAST(@FirstName AS VARCHAR(6)),
 	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@MiddleName AS VARCHAR(1)),
 	CAST(@Gender AS Char(1))
 )
 RETURNING

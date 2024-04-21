@@ -86,7 +86,7 @@ VALUES
 (
 	CAST(@Id AS Int),
 	CAST(@Column AS VARCHAR(5)),
-	CAST(@ColumnNullable AS VARCHAR(8191))
+	CAST(@ColumnNullable AS VARCHAR(1))
 )
 
 BeforeExecute

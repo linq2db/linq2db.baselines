@@ -35,7 +35,7 @@ INSERT INTO "CreateTableTypes"
 VALUES
 (
 	CAST(@Id AS Int),
-	CAST(@String AS VARCHAR(8191))
+	CAST(@String AS VARCHAR(1))
 )
 
 BeforeExecute

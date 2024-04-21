@@ -37,7 +37,7 @@ INSERT INTO "Issue913Test"
 VALUES
 (
 	CAST(@InstrumentID AS Int),
-	CAST(@TradingStatus AS CHAR(8191))
+	CAST(@TradingStatus AS CHAR(1))
 )
 
 BeforeExecute
