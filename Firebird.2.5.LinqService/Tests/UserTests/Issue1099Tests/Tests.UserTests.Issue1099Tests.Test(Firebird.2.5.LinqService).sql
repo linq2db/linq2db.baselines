@@ -42,10 +42,10 @@ INSERT INTO "BackgroundTask"
 )
 VALUES
 (
-	@ID,
-	@DurationID,
-	@DurationInterval,
-	@PersonID
+	CAST(@ID AS Int),
+	CAST(@DurationID AS Int),
+	CAST(@DurationInterval AS Int),
+	CAST(@PersonID AS Int)
 )
 
 BeforeExecute

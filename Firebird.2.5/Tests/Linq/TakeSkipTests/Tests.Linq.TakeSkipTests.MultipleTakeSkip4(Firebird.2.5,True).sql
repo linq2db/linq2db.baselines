@@ -40,10 +40,8 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
-DECLARE @skip Integer -- Int32
-SET     @skip = 3
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST @take SKIP 3
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

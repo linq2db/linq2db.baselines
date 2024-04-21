@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			"ch"."ChildID"
 		FROM
 			"Child" "ch"

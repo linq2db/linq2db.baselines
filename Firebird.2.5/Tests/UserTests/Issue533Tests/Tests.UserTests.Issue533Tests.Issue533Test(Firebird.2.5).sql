@@ -27,22 +27,20 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@FirstName,
-	@MiddleName,
-	@LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@FirstName AS VARCHAR(12)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@LastName AS VARCHAR(11))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",

@@ -30,12 +30,12 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value Char(1) -- String
+DECLARE @Value Char -- String
 SET     @Value = '1'
 
 INSERT INTO "NullableBoolClass"
@@ -44,12 +44,12 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value Char(1) -- String
+DECLARE @Value Char -- String
 SET     @Value = '0'
 
 INSERT INTO "NullableBoolClass"
@@ -58,7 +58,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS CHAR(1))
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	"t"."Value" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -98,8 +98,6 @@ SELECT
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
-WHERE
-	"t"."Value" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

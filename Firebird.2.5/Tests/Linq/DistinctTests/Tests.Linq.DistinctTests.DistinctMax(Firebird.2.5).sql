@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Max("t1"."ParentID")
+	MAX("t1"."ParentID")
 FROM
 	(
 		SELECT DISTINCT

@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	DateAdd(Minute, 5, "t"."DateTimeValue")
+	Extract(minute from DateAdd(Minute, 5, "t"."DateTimeValue"))
 FROM
 	"LinqDataTypes" "t"
 

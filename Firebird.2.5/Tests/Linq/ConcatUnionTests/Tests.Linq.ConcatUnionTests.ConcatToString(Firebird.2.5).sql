@@ -21,6 +21,6 @@ FROM
 		FROM
 			"Person" "p_1"
 		WHERE
-			Cast("p_1"."PersonID" as VarChar(11) CHARACTER SET UNICODE_FSS) LIKE @pattern ESCAPE '~'
+			"p_1"."PersonID" LIKE @pattern ESCAPE '~'
 	) "t1"
 

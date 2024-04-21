@@ -68,31 +68,31 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t1"
 SET
-	"TrimTestTable"."Data" = '***III***'
+	"Data" = '***III***'
 WHERE
-	"TrimTestTable".ID = 3
+	"t1".ID = 3
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = '***OOO***'
+	"Data" = '***OOO***'
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"t"."Data" = '***XXX***'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = '***SSS***'
+	"Data" = '***SSS***'
 WHERE
-	"TrimTestTable"."Data" = '***HHH***'
+	"t"."Data" = '***HHH***'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
