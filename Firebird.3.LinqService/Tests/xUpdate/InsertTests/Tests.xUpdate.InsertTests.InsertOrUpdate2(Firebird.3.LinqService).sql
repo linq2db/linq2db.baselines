@@ -27,7 +27,7 @@ VALUES
 (
 	CAST(@FirstName AS VARCHAR(4)),
 	CAST(@LastName AS VARCHAR(7)),
-	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@MiddleName AS VARCHAR(1)),
 	CAST(@Gender AS Char(1))
 )
 RETURNING

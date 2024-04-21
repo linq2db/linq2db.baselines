@@ -59,7 +59,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	CAST(@Id AS Int),
-	CAST(@Value AS CHAR(8191))
+	CAST(@Value AS CHAR(1))
 )
 
 BeforeExecute
@@ -77,7 +77,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	CAST(@Id AS Int),
-	CAST(@Value AS CHAR(8191))
+	CAST(@Value AS CHAR(1))
 )
 
 BeforeExecute

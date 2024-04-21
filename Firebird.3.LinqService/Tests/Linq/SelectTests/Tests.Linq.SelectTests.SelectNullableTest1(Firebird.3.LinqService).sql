@@ -45,7 +45,7 @@ VALUES
 	CAST(@SmallIntValue AS SmallInt),
 	CAST(@IntValue AS Int),
 	CAST(@BigIntValue AS BigInt),
-	CAST(@StringValue AS VARCHAR(8191))
+	CAST(@StringValue AS VARCHAR(1))
 )
 
 BeforeExecute

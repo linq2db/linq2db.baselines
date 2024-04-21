@@ -127,7 +127,7 @@ INSERT INTO "Issue2816Table"
 VALUES
 (
 	CAST(@Id AS Int),
-	CAST(@Text AS VARCHAR(8191))
+	CAST(@Text AS VARCHAR(1))
 )
 
 BeforeExecute
