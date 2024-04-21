@@ -180,8 +180,8 @@ SET     @Id = 3
 UPDATE
 	"ValueConversion" "t1"
 SET
-	"Value1" = CAST(@Value1 AS VARCHAR(8191)),
-	"Value2" = CAST(@Value2 AS VARCHAR(8191)),
+	"Value1" = CAST(@Value1 AS VARCHAR(1)),
+	"Value2" = CAST(@Value2 AS VARCHAR(1)),
 	"Enum" = CAST(@Enum AS VARCHAR(6)),
 	"EnumNullable" = CAST(@EnumNullable AS VarChar(50) CHARACTER SET UNICODE_FSS),
 	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(50) CHARACTER SET UNICODE_FSS),

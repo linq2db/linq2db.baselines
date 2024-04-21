@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(8191))
+	CAST(@Char AS CHAR(1))
 )
 
 BeforeExecute

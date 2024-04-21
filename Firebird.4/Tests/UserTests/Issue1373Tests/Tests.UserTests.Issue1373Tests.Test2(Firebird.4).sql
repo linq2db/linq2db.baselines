@@ -37,7 +37,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	CAST(@Id AS Int),
-	CAST(@Field1 AS VARCHAR(8191))
+	CAST(@Field1 AS VARCHAR(1))
 )
 
 BeforeExecute

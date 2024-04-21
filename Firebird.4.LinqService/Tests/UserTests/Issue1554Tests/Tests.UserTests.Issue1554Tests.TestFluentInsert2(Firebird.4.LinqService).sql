@@ -42,7 +42,7 @@ VALUES
 (
 	CAST(@Id AS Int),
 	CAST(@ClaimedKeyType AS VARCHAR(2)),
-	CAST(@ClaimedKeyTypeN AS VARCHAR(8191))
+	CAST(@ClaimedKeyTypeN AS VARCHAR(1))
 )
 
 BeforeExecute

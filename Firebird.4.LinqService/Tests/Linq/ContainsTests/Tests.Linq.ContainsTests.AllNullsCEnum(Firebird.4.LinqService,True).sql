@@ -44,7 +44,7 @@ VALUES
 (
 	CAST(@Id AS Int),
 	CAST(@Int AS Int),
-	CAST(@Enum AS VARCHAR(8191)),
+	CAST(@Enum AS VARCHAR(1)),
 	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
 )
 

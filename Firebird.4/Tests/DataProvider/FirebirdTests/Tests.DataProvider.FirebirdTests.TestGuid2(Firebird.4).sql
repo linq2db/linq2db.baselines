@@ -58,7 +58,7 @@ SET
 	"SmallIntValue" = CAST(@SmallIntValue AS SmallInt),
 	"IntValue" = CAST(@IntValue AS Int),
 	"BigIntValue" = CAST(@BigIntValue AS BigInt),
-	"StringValue" = CAST(@StringValue AS VARCHAR(8191))
+	"StringValue" = CAST(@StringValue AS VARCHAR(1))
 WHERE
 	"t1".ID = @ID
 

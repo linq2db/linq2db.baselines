@@ -298,7 +298,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8191))
+	CAST(@String AS VARCHAR(1))
 )
 
 BeforeExecute

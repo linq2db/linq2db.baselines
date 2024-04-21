@@ -25,7 +25,7 @@ VALUES
 (
 	CAST(@FirstName AS VARCHAR(18)),
 	CAST(@LastName AS VARCHAR(8)),
-	CAST(@MiddleName AS VARCHAR(8191)),
+	CAST(@MiddleName AS VARCHAR(1)),
 	CAST(@Gender AS Char(1))
 )
 
@@ -95,7 +95,7 @@ UPDATE
 SET
 	"FirstName" = CAST(@FirstName AS VARCHAR(25)),
 	"LastName" = CAST(@LastName AS VARCHAR(25)),
-	"MiddleName" = CAST(@MiddleName AS VARCHAR(8191)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(1)),
 	"Gender" = CAST(@Gender AS Char(1))
 WHERE
 	"t1"."PersonID" = @ID
