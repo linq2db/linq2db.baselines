@@ -139,27 +139,6 @@ WHERE
 	r.Column = false AND r.ColumnNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = false AND r.ColumnNullable IS NULL
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -305,27 +284,6 @@ WHERE
 	r.Column = true AND r.ColumnNullable = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = true AND r.ColumnNullable = false
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -430,27 +388,6 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = false AND r.ColumnNullable = true
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -637,27 +574,6 @@ WHERE
 	r.Column = false AND r.ColumnNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = false AND r.ColumnNullable IS NULL
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -803,27 +719,6 @@ WHERE
 	r.Column = true AND r.ColumnNullable = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = true AND r.ColumnNullable = false
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -928,27 +823,6 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = false AND r.ColumnNullable = true
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -1094,27 +968,6 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
@@ -1301,27 +1154,6 @@ WHERE
 	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS `TypeTable``2`
@@ -1426,27 +1258,6 @@ WHERE
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
