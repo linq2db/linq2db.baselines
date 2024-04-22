@@ -88,28 +88,26 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
-	`billing_TempReading` `t3`
-		LEFT JOIN LATERAL (
-			SELECT
-				`w`.`Id`
-			FROM
-				`billing_DevReadingType` `w`
-			WHERE
-				`w`.`Name` = `t3`.`ReadingTypeName` AND `w`.`DevTypeId` = `t3`.`Devtypeid`
-			LIMIT 1
-		) `t1` ON 1=1
-		LEFT JOIN LATERAL (
-			SELECT
-				`w_1`.`Responsibility`
-			FROM
-				`billing_DevReadingType` `w_1`
-			WHERE
-				`w_1`.`Name` = `t3`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t3`.`Devtypeid`
-			LIMIT 1
-		) `t2` ON 1=1
+	`billing_TempReading` `t1`
 SET
-	`t3`.`DevReadingTypeId` = `t1`.`Id`,
-	`t3`.`Responsibility` = `t2`.`Responsibility`
+	`t1`.`DevReadingTypeId` = (
+		SELECT
+			`w`.`Id`
+		FROM
+			`billing_DevReadingType` `w`
+		WHERE
+			`w`.`Name` = `t1`.`ReadingTypeName` AND `w`.`DevTypeId` = `t1`.`Devtypeid`
+		LIMIT 1
+	),
+	`t1`.`Responsibility` = (
+		SELECT
+			`w_1`.`Responsibility`
+		FROM
+			`billing_DevReadingType` `w_1`
+		WHERE
+			`w_1`.`Name` = `t1`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t1`.`Devtypeid`
+		LIMIT 1
+	)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

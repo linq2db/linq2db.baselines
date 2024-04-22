@@ -3,14 +3,13 @@
 
 SELECT
 	`p`.`ParentID`,
-	`t1`.`V`
+	(
+		SELECT
+			`c_1`.`ParentID` + 1
+		FROM
+			`Child` `c_1`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT
-				`c_1`.`ParentID` + 1 as `V`
-			FROM
-				`Child` `c_1`
-			LIMIT 1
-		) `t1` ON 1=1
 

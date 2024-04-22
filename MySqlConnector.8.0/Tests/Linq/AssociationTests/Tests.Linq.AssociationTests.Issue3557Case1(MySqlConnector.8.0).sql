@@ -79,19 +79,18 @@ BeforeExecute
 SELECT
 	`i`.`Id`,
 	`a_SubData`.`Id`,
-	`t1`.`Reason`
+	(
+		SELECT
+			`a_SubDatas`.`Reason`
+		FROM
+			`SubData2` `a_SubDatas`
+		WHERE
+			`a_SubData`.`Id` IS NOT NULL AND `a_SubData`.`Id` = `a_SubDatas`.`Id`
+		LIMIT 1
+	)
 FROM
 	`Data` `i`
 		LEFT JOIN `SubData1` `a_SubData` ON `i`.`Id` = `a_SubData`.`Id`
-		LEFT JOIN LATERAL (
-			SELECT
-				`a_SubDatas`.`Reason`
-			FROM
-				`SubData2` `a_SubDatas`
-			WHERE
-				`a_SubData`.`Id` IS NOT NULL AND `a_SubData`.`Id` = `a_SubDatas`.`Id`
-			LIMIT 1
-		) `t1` ON 1=1
 ORDER BY
 	`i`.`Id`
 

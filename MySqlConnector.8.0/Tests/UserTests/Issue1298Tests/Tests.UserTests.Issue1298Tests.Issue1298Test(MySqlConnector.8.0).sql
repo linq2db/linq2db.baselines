@@ -112,18 +112,17 @@ SET     @take = 2
 
 SELECT
 	`x`.`ref1`,
-	`t1`.`asdfgh`
+	(
+		SELECT
+			`q`.`asdfgh`
+		FROM
+			`qwerty` `q`
+		WHERE
+			`q`.`Id` = `x`.`ref1`
+		LIMIT 1
+	)
 FROM
 	`mega_composites` `x`
-		LEFT JOIN LATERAL (
-			SELECT
-				`q`.`asdfgh`
-			FROM
-				`qwerty` `q`
-			WHERE
-				`q`.`Id` = `x`.`ref1`
-			LIMIT 1
-		) `t1` ON 1=1
 LIMIT @take
 
 BeforeExecute
