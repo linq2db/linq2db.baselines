@@ -1,29 +1,17 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`m_1`.`ParentID`,
-	`d`.`ParentID` + 1
-FROM
 	(
-		SELECT DISTINCT
-			`p2`.`ParentID`
+		SELECT
+			`a_Children`.`ParentID` + 1
 		FROM
-			`Parent` `p2`
+			`Child` `a_Children`
 		WHERE
-			`p2`.`ParentID` + 1 > 0 AND `p2`.`ParentID` + 2 > 0
-	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID` AND `d`.`ParentID` + 1 < `m_1`.`ParentID` + 2 AND `d`.`ParentID` + 1 < `m_1`.`ParentID` + 2
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`p1`.`ParentID`
+			`p1`.`ParentID` = `a_Children`.`ParentID` AND `a_Children`.`ParentID` + 1 < `p1`.`ParentID` + 2 AND
+			`a_Children`.`ParentID` + 1 < `p1`.`ParentID` + 2
+		LIMIT 1
+	)
 FROM
 	`Parent` `p1`
 WHERE

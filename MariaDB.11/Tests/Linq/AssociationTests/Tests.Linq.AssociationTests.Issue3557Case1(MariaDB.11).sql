@@ -74,31 +74,20 @@ VALUES
 (3,'прст2')
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`m_1`.`Id`,
-	`d`.`Reason`
-FROM
-	(
-		SELECT DISTINCT
-			`a_SubData`.`Id`
-		FROM
-			`Data` `i`
-				LEFT JOIN `SubData1` `a_SubData` ON `i`.`Id` = `a_SubData`.`Id`
-	) `m_1`
-		INNER JOIN `SubData2` `d` ON `m_1`.`Id` IS NOT NULL AND `m_1`.`Id` = `d`.`Id`
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`i`.`Id`,
-	`a_SubData`.`Id`
+	`a_SubData`.`Id`,
+	(
+		SELECT
+			`a_SubDatas`.`Reason`
+		FROM
+			`SubData2` `a_SubDatas`
+		WHERE
+			`a_SubData`.`Id` IS NOT NULL AND `a_SubData`.`Id` = `a_SubDatas`.`Id`
+		LIMIT 1
+	)
 FROM
 	`Data` `i`
 		LEFT JOIN `SubData1` `a_SubData` ON `i`.`Id` = `a_SubData`.`Id`

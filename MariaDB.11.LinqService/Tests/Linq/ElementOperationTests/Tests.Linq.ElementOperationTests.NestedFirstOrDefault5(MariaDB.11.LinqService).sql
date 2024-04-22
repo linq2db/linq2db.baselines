@@ -2,29 +2,28 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`m_1`.`ParentID`,
-	`d`.`ParentID`,
-	`d`.`ChildID`
-FROM
 	(
-		SELECT DISTINCT
-			`a_Parent`.`ParentID`
+		SELECT
+			`a_Children`.`ParentID`
 		FROM
-			`GrandChild` `p`
-				LEFT JOIN `Child` `a_Child` ON (`p`.`ParentID` = `a_Child`.`ParentID` OR `p`.`ParentID` IS NULL AND `a_Child`.`ParentID` IS NULL) AND (`p`.`ChildID` = `a_Child`.`ChildID` OR `p`.`ChildID` IS NULL AND `a_Child`.`ChildID` IS NULL)
-				LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`
+			`Child` `a_Children`
 		WHERE
-			`p`.`ChildID` > 0
-	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`ParentID` IS NOT NULL AND `m_1`.`ParentID` = `d`.`ParentID`
-ORDER BY
-	`d`.`ChildID`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`a_Parent`.`ParentID`
+			`a_Parent`.`ParentID` IS NOT NULL AND `a_Parent`.`ParentID` = `a_Children`.`ParentID`
+		ORDER BY
+			`a_Children`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`a_Children_1`.`ChildID`
+		FROM
+			`Child` `a_Children_1`
+		WHERE
+			`a_Parent`.`ParentID` IS NOT NULL AND `a_Parent`.`ParentID` = `a_Children_1`.`ParentID`
+		ORDER BY
+			`a_Children_1`.`ChildID`
+		LIMIT 1
+	)
 FROM
 	`GrandChild` `p`
 		LEFT JOIN `Child` `a_Child` ON (`p`.`ParentID` = `a_Child`.`ParentID` OR `p`.`ParentID` IS NULL AND `a_Child`.`ParentID` IS NULL) AND (`p`.`ChildID` = `a_Child`.`ChildID` OR `p`.`ChildID` IS NULL AND `a_Child`.`ChildID` IS NULL)

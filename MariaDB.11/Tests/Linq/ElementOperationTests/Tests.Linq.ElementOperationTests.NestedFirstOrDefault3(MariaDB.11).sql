@@ -2,14 +2,15 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t1`.`ParentID`
+	(
+		SELECT DISTINCT
+			`a_Children`.`ParentID`
+		FROM
+			`Child` `a_Children`
+		WHERE
+			`p`.`ParentID` = `a_Children`.`ParentID`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT DISTINCT
-				`a_Children`.`ParentID`,
-				ROW_NUMBER() OVER (PARTITION BY `a_Children`.`ParentID` ORDER BY `a_Children`.`ParentID`) as `rn`
-			FROM
-				`Child` `a_Children`
-		) `t1` ON `p`.`ParentID` = `t1`.`ParentID` AND `t1`.`rn` <= 1
 

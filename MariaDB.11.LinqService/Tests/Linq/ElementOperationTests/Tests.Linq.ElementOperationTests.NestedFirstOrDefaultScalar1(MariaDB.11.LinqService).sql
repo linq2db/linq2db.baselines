@@ -2,14 +2,13 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t2`.`ChildID`
+	(
+		SELECT
+			`t1`.`ChildID`
+		FROM
+			`Child` `t1`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
-		LEFT JOIN (
-			SELECT
-				`t1`.`ChildID`
-			FROM
-				`Child` `t1`
-			LIMIT 1
-		) `t2` ON 1=1
 

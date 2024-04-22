@@ -112,17 +112,17 @@ SET     @take = 2
 
 SELECT
 	`x`.`ref1`,
-	`t1`.`asdfgh`
+	(
+		SELECT
+			`q`.`asdfgh`
+		FROM
+			`qwerty` `q`
+		WHERE
+			`q`.`Id` = `x`.`ref1`
+		LIMIT 1
+	)
 FROM
 	`mega_composites` `x`
-		LEFT JOIN (
-			SELECT
-				`q`.`asdfgh`,
-				ROW_NUMBER() OVER (PARTITION BY `q`.`Id` ORDER BY `q`.`Id`) as `rn`,
-				`q`.`Id`
-			FROM
-				`qwerty` `q`
-		) `t1` ON (`t1`.`Id` = `x`.`ref1` OR `t1`.`Id` IS NULL AND `x`.`ref1` IS NULL) AND `t1`.`rn` <= 1
 LIMIT @take
 
 BeforeExecute
