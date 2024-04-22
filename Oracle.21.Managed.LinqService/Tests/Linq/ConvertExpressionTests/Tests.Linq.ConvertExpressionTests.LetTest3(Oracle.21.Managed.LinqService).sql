@@ -2,14 +2,13 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2."ParentID"
+	(
+		SELECT
+			t1."ParentID"
+		FROM
+			"Child" t1
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" p
-		LEFT JOIN (
-			SELECT
-				t1."ParentID"
-			FROM
-				"Child" t1
-			FETCH NEXT 1 ROWS ONLY
-		) t2 ON 1=1
 
