@@ -15,17 +15,5 @@ CREATE TABLE IF NOT EXISTS [ExpressionTestClass]
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	1
-
-BeforeExecute
--- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [ExpressionTestClass]
 
