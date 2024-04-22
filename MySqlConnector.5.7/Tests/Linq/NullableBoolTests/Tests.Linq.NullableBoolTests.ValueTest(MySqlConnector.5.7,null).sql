@@ -41,7 +41,7 @@ SELECT
 FROM
 	`NullableBoolClass` `t`
 WHERE
-	`t`.`Value` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -60,8 +60,6 @@ SELECT
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
-WHERE
-	`t`.`Value` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

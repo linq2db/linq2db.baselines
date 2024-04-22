@@ -292,13 +292,14 @@ DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 1
 
 UPDATE
-	`component_categories` `t1`
-		INNER JOIN `element_services` `ctg` ON `ctg`.`id` = `t1`.`service_id`
-		INNER JOIN `Components` `cm` ON `t1`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
+	`component_categories` `ctg`,
+	`element_services` `ct`
+		INNER JOIN `component_categories` `ctg_1` ON `ct`.`id` = `ctg_1`.`service_id`
+		INNER JOIN `Components` `cm` ON `ctg_1`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
 SET
-	`t1`.`is_deleted` = @is_deleted
+	`ctg`.`is_deleted` = @is_deleted
 WHERE
-	`ctg`.`id` = 'TestProcessService'
+	`ct`.`id` = 'TestProcessService' AND `ctg`.`id` = `ctg_1`.`id`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Value Int32
-SET     @Value = 0
+DECLARE @value Int32
+SET     @value = 0
+DECLARE @value_1 Int32
+SET     @value_1 = 0
 
 SELECT
-	@Value as `c1`
+	@value as `c1`,
+	@value_1 as `c2`
 

@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @default Int32
-SET     @default = 0
 
 SELECT
-	`p`.`Value1`
+	CASE
+		WHEN `p`.`Value1` IS NOT NULL THEN `p`.`Value1`
+		ELSE 0
+	END
 FROM
 	`Parent` `p`
 WHERE
-	Coalesce(`p`.`Value1`, @default) > 0
+	`p`.`Value1` > 0 AND `p`.`Value1` IS NOT NULL
 

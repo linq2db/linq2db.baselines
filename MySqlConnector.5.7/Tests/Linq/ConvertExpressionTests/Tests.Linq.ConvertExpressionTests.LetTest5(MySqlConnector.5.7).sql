@@ -1,29 +1,5 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
-FROM
-	(
-		SELECT DISTINCT
-			`p`.`ParentID`
-		FROM
-			`Parent` `p`
-	) `key_data_result`
-		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100
-ORDER BY
-	`_c`.`ChildID`
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	CASE
@@ -40,7 +16,7 @@ SELECT
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			`Child` `c_2`
 		WHERE
@@ -56,9 +32,30 @@ SELECT
 			`c_3`.`ParentID` > 0
 		ORDER BY
 			`c_3`.`ChildID`
-		LIMIT @take
+		LIMIT 1
 	),
-	`p`.`ParentID`
+	(
+		SELECT
+			`c_4`.`ParentID`
+		FROM
+			`Child` `c_4`
+		WHERE
+			`c_4`.`ParentID` = `p`.`ParentID` AND `c_4`.`ChildID` > -100
+		ORDER BY
+			`c_4`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`c_5`.`ChildID`
+		FROM
+			`Child` `c_5`
+		WHERE
+			`c_5`.`ParentID` = `p`.`ParentID` AND `c_5`.`ChildID` > -100
+		ORDER BY
+			`c_5`.`ChildID`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
 

@@ -31,8 +31,6 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`_`.`ID`
@@ -40,7 +38,7 @@ FROM
 	`Issue1316Tests` `_`
 WHERE
 	`_`.`ID` = @Id
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

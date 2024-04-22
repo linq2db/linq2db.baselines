@@ -2,14 +2,9 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`p`.`c1`
+	CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(3))
 FROM
-	(
-		SELECT
-			Cast(Cast(`t`.`ID` as UNSIGNED) as CHAR(3)) as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `p`
+	`LinqDataTypes` `p`
 WHERE
-	Char_Length(`p`.`c1`) > 0
+	Char_Length(CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(3))) > 0
 

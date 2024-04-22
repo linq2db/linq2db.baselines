@@ -27,14 +27,12 @@ VALUES
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`Date`
 FROM
 	`DateOnlyTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t1`.`ParentID`,
@@ -11,5 +9,5 @@ SELECT
 FROM
 	`Child` `t1`
 		INNER JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
-LIMIT @take
+LIMIT 1
 

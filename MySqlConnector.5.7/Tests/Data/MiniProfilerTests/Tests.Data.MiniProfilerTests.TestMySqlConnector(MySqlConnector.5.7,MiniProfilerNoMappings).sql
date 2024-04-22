@@ -1065,11 +1065,11 @@ VALUES
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear` `p`
 WHERE
-	`t1`.`ID` >= 2000
+	`p`.`ID` >= 2000
 
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57 (asynchronously)
@@ -2105,11 +2105,11 @@ VALUES
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear` `p`
 WHERE
-	`t1`.`ID` >= 2000
+	`p`.`ID` >= 2000
 
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57

@@ -21,18 +21,18 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t_1`.`Count_1`
+	`t1`.`Count_1`
 FROM
 	(
 		SELECT
-			Count(*) as `Count_1`
+			COUNT(*) as `Count_1`
 		FROM
-			`ForUpdateTestTable` `t`
+			`ForUpdateTestTable` `g_1`
 		WHERE
-			`t`.`Id` = 1
-	) `t_1`
+			`g_1`.`Id` = 1
+	) `t1`
 WHERE
-	`t_1`.`Count_1` = 0
+	`t1`.`Count_1` = 0
 FOR UPDATE
 
 BeforeExecute
@@ -53,14 +53,14 @@ SELECT
 FROM
 	(
 		SELECT
-			Count(*) as `Count_1`
+			COUNT(*) as `Count_1`
 		FROM
-			`ForUpdateTestTable` `t`
+			`ForUpdateTestTable` `g_1`
 		WHERE
-			`t`.`Id` = 1
-	) `t_1`
+			`g_1`.`Id` = 1
+	) `t1`
 WHERE
-	`t_1`.`Count_1` = 0
+	`t1`.`Count_1` = 0
 FOR UPDATE
 
 BeforeExecute

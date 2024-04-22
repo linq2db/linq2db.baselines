@@ -2,9 +2,14 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Truncate((-`p`.`MoneyValue`), 0)
+	`t_1`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Truncate((-`t`.`MoneyValue`), 0) as `c1`
+		FROM
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Truncate((-`p`.`MoneyValue`), 0) <> 0.10000000000000001
+	`t_1`.`c1` <> 0.10000000000000001
 

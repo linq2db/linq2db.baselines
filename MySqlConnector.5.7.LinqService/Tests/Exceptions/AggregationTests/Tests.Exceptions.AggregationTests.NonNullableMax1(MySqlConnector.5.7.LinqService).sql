@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Max(`_`.`ParentID`)
+	MAX(`_`.`ParentID`)
 FROM
 	`Parent` `_`
 WHERE

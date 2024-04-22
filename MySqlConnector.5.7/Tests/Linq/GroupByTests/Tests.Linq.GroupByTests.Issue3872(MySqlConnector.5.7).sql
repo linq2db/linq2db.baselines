@@ -20,14 +20,14 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Max(`selectParam`.`PersonID`)
-FROM
-	`Person` `selectParam`
-UNION ALL
-SELECT
-	`r`.`PersonID`
+	MAX(`r`.`PersonID`)
 FROM
 	`Person` `r`
+UNION ALL
+SELECT
+	`r_1`.`PersonID`
+FROM
+	`Person` `r_1`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
