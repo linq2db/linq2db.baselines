@@ -22,14 +22,12 @@ END
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	DateAdd(Day, 1, LOCALTIMESTAMP),
 	DateAdd(Day, 2, LOCALTIMESTAMP)
 FROM rdb$database
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

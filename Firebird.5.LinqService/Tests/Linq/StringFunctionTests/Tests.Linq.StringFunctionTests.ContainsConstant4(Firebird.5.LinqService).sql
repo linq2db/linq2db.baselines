@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123[456' LIKE '%[%' ESCAPE '~'
+	"p"."PersonID" = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -16,5 +16,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND '123[456' NOT LIKE '%[%' ESCAPE '~'
+	1 = 0
 

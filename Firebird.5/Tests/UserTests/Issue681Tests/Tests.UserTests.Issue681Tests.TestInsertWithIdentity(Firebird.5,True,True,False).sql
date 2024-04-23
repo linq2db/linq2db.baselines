@@ -51,7 +51,7 @@ INSERT INTO "Issue681Table4"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS Int)
 )
 RETURNING
 	ID

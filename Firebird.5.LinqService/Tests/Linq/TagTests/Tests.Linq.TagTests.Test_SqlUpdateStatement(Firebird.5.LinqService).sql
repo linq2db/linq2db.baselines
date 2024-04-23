@@ -27,9 +27,9 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" "t1"
 SET
-	"TestTable"."Fd" = 1
+	"Fd" = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4

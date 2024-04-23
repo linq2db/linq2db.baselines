@@ -58,10 +58,10 @@ INSERT INTO "xxPerson_f_30"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(6)),
+	CAST(@LastName AS VARCHAR(4)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -74,8 +74,6 @@ FROM
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -85,7 +83,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson_f_30" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)

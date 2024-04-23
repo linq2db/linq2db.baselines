@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 1 AS "PersonID" FROM rdb$database
+			SELECT 1 AS ID FROM rdb$database
 			UNION ALL
-			SELECT 2 FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 2 FROM rdb$database) "n" ON "p"."PersonID" = "n".ID
 

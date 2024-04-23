@@ -10,23 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN CASE
-			WHEN "p"."FirstName" IS NULL
-				THEN NULL
-			ELSE CASE
-				WHEN "p"."FirstName" STARTING WITH 'Jo'
-					THEN TRUE
-				ELSE FALSE
-			END
-		END IS NULL
-			THEN FALSE
-		WHEN "p"."FirstName" IS NULL
-			THEN NULL
-		ELSE CASE
-			WHEN "p"."FirstName" STARTING WITH 'Jo'
-				THEN TRUE
-			ELSE FALSE
-		END
-	END = TRUE
+	"p"."FirstName" STARTING WITH 'Jo' AND "p"."FirstName" IS NOT NULL
 
