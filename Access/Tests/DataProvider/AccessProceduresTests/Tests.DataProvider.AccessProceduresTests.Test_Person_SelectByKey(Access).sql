@@ -4,7 +4,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Max([_].[PersonID])
+	MAX([_].[PersonID])
 FROM
 	[Person] [_]
 

@@ -9,8 +9,8 @@ FROM
 WHERE
 	(
 		SELECT TOP 1
-			[r].[Value1]
+			IIF([r].[Value1] IS NOT NULL, True, False)
 		FROM
 			[Parent] [r]
-	) IS NOT NULL
+	) = True
 

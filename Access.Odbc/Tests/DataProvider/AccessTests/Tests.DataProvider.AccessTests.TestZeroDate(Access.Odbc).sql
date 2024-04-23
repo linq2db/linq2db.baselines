@@ -14,8 +14,6 @@ CREATE TABLE [DateTable]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date DateTime
-SET     @Date = #1899-12-29#
 
 INSERT INTO [DateTable]
 (
@@ -25,13 +23,11 @@ INSERT INTO [DateTable]
 VALUES
 (
 	1,
-	?
+	DateSerial(1899, 12, 29)
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date DateTime
-SET     @Date = #1899-12-30#
 
 INSERT INTO [DateTable]
 (
@@ -41,13 +37,11 @@ INSERT INTO [DateTable]
 VALUES
 (
 	2,
-	?
+	DateSerial(1899, 12, 30)
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date DateTime
-SET     @Date = #1899-12-31#
 
 INSERT INTO [DateTable]
 (
@@ -57,13 +51,11 @@ INSERT INTO [DateTable]
 VALUES
 (
 	3,
-	?
+	DateSerial(1899, 12, 31)
 )
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Date DateTime
-SET     @Date = #1900-01-01#
 
 INSERT INTO [DateTable]
 (
@@ -73,7 +65,7 @@ INSERT INTO [DateTable]
 VALUES
 (
 	4,
-	?
+	DateSerial(1900, 1, 1)
 )
 
 BeforeExecute
