@@ -24,12 +24,18 @@ SET     @DATUM = TO_DATE('2019-01-01', '%Y-%m-%d')
 SELECT
 	t1.Year_1,
 	t1.Month_1,
-	Sum(t1.SKUPAJ)
+	SUM(t1.SKUPAJ)
 FROM
 	(
 		SELECT
-			Year(Nvl(n.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Year_1,
-			Month(Nvl(n.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Month_1,
+			Year(CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Year_1,
+			Month(CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Month_1,
 			n.SKUPAJ
 		FROM
 			Issue3761Table n
@@ -43,12 +49,18 @@ UNION ALL
 SELECT
 	t2.Year_1,
 	t2.Month_1,
-	Sum(t2.SKUPAJ)
+	SUM(t2.SKUPAJ)
 FROM
 	(
 		SELECT
-			Year(Nvl(n_1.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Year_1,
-			Month(Nvl(n_1.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Month_1,
+			Year(CASE
+				WHEN n_1.DATUM IS NOT NULL THEN n_1.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Year_1,
+			Month(CASE
+				WHEN n_1.DATUM IS NOT NULL THEN n_1.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Month_1,
 			n_1.SKUPAJ
 		FROM
 			Issue3761Table n_1

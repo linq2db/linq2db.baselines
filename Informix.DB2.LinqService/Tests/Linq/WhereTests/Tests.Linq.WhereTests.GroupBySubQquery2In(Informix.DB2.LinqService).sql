@@ -13,13 +13,13 @@ WHERE
 		FROM
 			(
 				SELECT
-					Max(t1.ChildID) as c1
+					MAX(x_1.ChildID) as MAX_1
 				FROM
-					Child t1
+					Child x_1
 				GROUP BY
-					t1.ParentID
-			) t2
+					x_1.ParentID
+			) t1
 		WHERE
-			t2.c1 = x.ChildID
+			x.ChildID = t1.MAX_1
 	)
 

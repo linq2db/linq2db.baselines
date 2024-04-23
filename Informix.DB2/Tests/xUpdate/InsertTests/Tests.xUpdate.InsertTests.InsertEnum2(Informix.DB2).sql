@@ -8,10 +8,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1001
-DECLARE @Value1 Integer(4) -- Int32
-SET     @Value1 = 1
 
 INSERT INTO Parent
 (
@@ -20,8 +16,8 @@ INSERT INTO Parent
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	1001,
+	1
 )
 
 BeforeExecute

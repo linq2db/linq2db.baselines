@@ -13,6 +13,6 @@ WHERE
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = c_1.ParentID
+			c_1.ParentID = p.ParentID
 	)
 

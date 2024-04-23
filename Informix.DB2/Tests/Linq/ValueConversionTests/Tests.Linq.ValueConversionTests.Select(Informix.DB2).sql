@@ -609,17 +609,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT SKIP 1 FIRST 1
-	q.Value2
+	t1.Value2
 FROM
 	(
 		SELECT
-			t.Id,
-			t.Value2
+			q.Id,
+			q.Value2
 		FROM
-			ValueConversion t
-	) q
+			ValueConversion q
+	) t1
 ORDER BY
-	q.Id
+	t1.Id
 
 BeforeExecute
 -- Informix.DB2 Informix

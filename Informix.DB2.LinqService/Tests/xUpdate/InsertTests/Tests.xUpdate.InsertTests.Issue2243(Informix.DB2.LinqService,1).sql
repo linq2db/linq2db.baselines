@@ -26,12 +26,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	test_insert_or_replace
+	test_insert_or_replace t1
 SET
-	test_insert_or_replace.name = @Name,
-	test_insert_or_replace.updated_by = @UpdatedBy
+	name = @Name,
+	updated_by = @UpdatedBy
 WHERE
-	test_insert_or_replace.id = @Id
+	t1.id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -76,12 +76,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	test_insert_or_replace
+	test_insert_or_replace t1
 SET
-	test_insert_or_replace.name = @Name,
-	test_insert_or_replace.updated_by = @UpdatedBy
+	name = @Name,
+	updated_by = @UpdatedBy
 WHERE
-	test_insert_or_replace.id = @Id
+	t1.id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
