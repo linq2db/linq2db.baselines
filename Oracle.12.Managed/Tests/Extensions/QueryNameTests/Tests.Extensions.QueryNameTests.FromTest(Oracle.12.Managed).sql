@@ -2,22 +2,22 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	t1."ParentID",
+	t1."Value1"
 FROM
 	(
 		SELECT /*+ QB_NAME(PARENT) */
-			t1."ParentID",
-			t1."Value1"
+			p."ParentID",
+			p."Value1"
 		FROM
-			"Parent" t1
-	) p,
+			"Parent" p
+	) t1,
 	(
 		SELECT /*+ QB_NAME(CHILD) */
 			c_1."ParentID"
 		FROM
 			"Child" c_1
-	) t2
+	) c_2
 WHERE
-	p."ParentID" = t2."ParentID"
+	t1."ParentID" = c_2."ParentID"
 

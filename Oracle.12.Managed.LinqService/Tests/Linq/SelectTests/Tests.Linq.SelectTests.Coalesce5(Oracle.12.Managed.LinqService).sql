@@ -4,11 +4,11 @@
 SELECT
 	Nvl((
 		SELECT
-			Max(c_1."ChildID")
+			MAX(a_Children."ChildID")
 		FROM
-			"Child" c_1
+			"Child" a_Children
 		WHERE
-			p."ParentID" = c_1."ParentID"
+			p."ParentID" = a_Children."ParentID"
 	), p."Value1")
 FROM
 	"Parent" p

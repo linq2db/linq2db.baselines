@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	TO_DATE(Cast(To_Number(To_Char(t."DateTimeValue", 'YYYY')) as VarChar(11)) || '-01-01', 'YYYY-MM-DD')
+	TO_DATE(EXTRACT(YEAR FROM t."DateTimeValue") || '-01-01', 'YYYY-MM-DD')
 FROM
 	"LinqDataTypes" t
 

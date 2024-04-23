@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -60,7 +58,7 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -68,16 +66,14 @@ DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('030201')
 
 UPDATE
-	"BlobClass"
+	"BlobClass" t1
 SET
-	"BlobClass"."BlobValue" = :BlobValue
+	"BlobValue" = :BlobValue
 WHERE
-	"BlobClass"."Id" = 1
+	t1."Id" = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -86,7 +82,7 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

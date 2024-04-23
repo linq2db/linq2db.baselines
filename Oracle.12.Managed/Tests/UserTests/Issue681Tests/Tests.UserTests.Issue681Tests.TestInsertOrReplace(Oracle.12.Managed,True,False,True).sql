@@ -39,14 +39,12 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	sys_context('userenv', 'current_schema')
+	sys_context('userenv', 'current_schema') as "c1"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -63,7 +61,7 @@ USING (SELECT :ID AS ID FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Value" = :Value
+		"Value" = :Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -91,7 +89,7 @@ USING (SELECT :ID AS ID FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Value" = :Value
+		"Value" = :Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(
