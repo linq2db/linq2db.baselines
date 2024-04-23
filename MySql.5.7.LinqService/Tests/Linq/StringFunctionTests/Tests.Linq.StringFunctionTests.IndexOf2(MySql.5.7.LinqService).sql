@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @p VarChar(1) -- String
+SET     @p = 'e'
 
 SELECT
 	`p`.`FirstName`,
@@ -10,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Locate('e', `p`.`LastName`, 3) = 5 AND `p`.`PersonID` = 2
+	Locate(@p, `p`.`LastName`, 3) - 1 = 4 AND `p`.`PersonID` = 2
 

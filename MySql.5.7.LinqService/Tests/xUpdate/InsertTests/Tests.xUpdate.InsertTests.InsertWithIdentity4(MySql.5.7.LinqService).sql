@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -42,8 +42,6 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -55,7 +53,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -92,8 +90,6 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -105,14 +101,14 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = @FirstName AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 

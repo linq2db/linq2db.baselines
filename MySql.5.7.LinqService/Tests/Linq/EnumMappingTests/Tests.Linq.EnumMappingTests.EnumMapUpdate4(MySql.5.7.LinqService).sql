@@ -35,8 +35,6 @@ WHERE
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`BigIntValue`
@@ -44,7 +42,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

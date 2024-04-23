@@ -106,8 +106,8 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`p`.`Id`,
 	`p`.`TargetName`,
+	`p`.`Id`,
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`

@@ -1,74 +1,33 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`FirstName`
+	`m_1`.`FirstName`,
+	`d`.`FirstName`,
+	`d`.`PersonID`,
+	`d`.`LastName`,
+	`d`.`MiddleName`,
+	`d`.`Gender`
 FROM
-	`Person` `t1`
+	(
+		SELECT DISTINCT
+			`_`.`FirstName`
+		FROM
+			`Person` `_`
+	) `m_1`
+		INNER JOIN `Person` `d` ON `m_1`.`FirstName` = `d`.`FirstName`
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`_`.`FirstName`
+FROM
+	`Person` `_`
 GROUP BY
-	`t1`.`FirstName`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'Jane'
-
-SELECT
-	`keyParam`.`FirstName`,
-	`keyParam`.`PersonID`,
-	`keyParam`.`LastName`,
-	`keyParam`.`MiddleName`,
-	`keyParam`.`Gender`
-FROM
-	`Person` `keyParam`
-WHERE
-	`keyParam`.`FirstName` = @FirstName
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-
-SELECT
-	`keyParam`.`FirstName`,
-	`keyParam`.`PersonID`,
-	`keyParam`.`LastName`,
-	`keyParam`.`MiddleName`,
-	`keyParam`.`Gender`
-FROM
-	`Person` `keyParam`
-WHERE
-	`keyParam`.`FirstName` = @FirstName
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(6) -- String
-SET     @FirstName = 'Jürgen'
-
-SELECT
-	`keyParam`.`FirstName`,
-	`keyParam`.`PersonID`,
-	`keyParam`.`LastName`,
-	`keyParam`.`MiddleName`,
-	`keyParam`.`Gender`
-FROM
-	`Person` `keyParam`
-WHERE
-	`keyParam`.`FirstName` = @FirstName
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(6) -- String
-SET     @FirstName = 'Tester'
-
-SELECT
-	`keyParam`.`FirstName`,
-	`keyParam`.`PersonID`,
-	`keyParam`.`LastName`,
-	`keyParam`.`MiddleName`,
-	`keyParam`.`Gender`
-FROM
-	`Person` `keyParam`
-WHERE
-	`keyParam`.`FirstName` = @FirstName
+	`_`.`FirstName`
 

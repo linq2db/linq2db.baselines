@@ -23,7 +23,7 @@ INSERT INTO `Person`
 VALUES
 (
 	'Insert16',
-	Cast((Char_Length(@name) + @idx) as CHAR(11)),
+	CAST(Char_Length(@name) + @idx AS CHAR(11)),
 	'M'
 )
 

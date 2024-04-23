@@ -2,28 +2,28 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`detail`.`ParentID`,
-	`detail`.`ChildID`
-FROM
 	(
-		SELECT DISTINCT
-			`p`.`ParentID`,
-			`p`.`Value1`
+		SELECT
+			`a_Children`.`ParentID`
 		FROM
-			`Parent` `p`
-	) `key_data_result`
-		INNER JOIN `Child` `detail` ON `key_data_result`.`ParentID` = `detail`.`ParentID`
-ORDER BY
-	`detail`.`ChildID`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
+			`Child` `a_Children`
+		WHERE
+			`p`.`ParentID` = `a_Children`.`ParentID`
+		ORDER BY
+			`a_Children`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`a_Children_1`.`ChildID`
+		FROM
+			`Child` `a_Children_1`
+		WHERE
+			`p`.`ParentID` = `a_Children_1`.`ParentID`
+		ORDER BY
+			`a_Children_1`.`ChildID`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
 

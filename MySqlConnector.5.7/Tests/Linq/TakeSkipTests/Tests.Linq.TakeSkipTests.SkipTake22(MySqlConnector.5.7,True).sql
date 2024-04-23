@@ -2,8 +2,6 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 2
-DECLARE @skip_1 Int32
-SET     @skip_1 = 5
 
 SELECT
 	`t1`.`ParentID`,
@@ -12,14 +10,12 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT @skip, @skip_1
+LIMIT @skip, 5
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 2
-DECLARE @skip_1 Int32
-SET     @skip_1 = 5
 
 SELECT
 	`t1`.`ParentID`,
@@ -28,5 +24,5 @@ FROM
 	`Child` `t1`
 ORDER BY
 	`t1`.`ChildID` DESC
-LIMIT @skip, @skip_1
+LIMIT @skip, 5
 

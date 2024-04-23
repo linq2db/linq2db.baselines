@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @id Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	`Person` `_`
 WHERE
-	`_`.`PersonID` IS NULL
+	`_`.`PersonID` = @id
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

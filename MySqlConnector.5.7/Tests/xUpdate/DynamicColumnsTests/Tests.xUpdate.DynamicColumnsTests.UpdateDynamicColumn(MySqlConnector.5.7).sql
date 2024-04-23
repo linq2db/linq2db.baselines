@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender String(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -9,9 +15,9 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute

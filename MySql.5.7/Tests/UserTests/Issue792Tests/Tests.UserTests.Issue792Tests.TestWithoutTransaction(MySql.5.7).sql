@@ -248,9 +248,9 @@ FROM
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypes` `t1`
+	`AllTypes` `_`
 WHERE
-	`t1`.`char20DataType` = 'issue792'
+	`_`.`char20DataType` = 'issue792'
 

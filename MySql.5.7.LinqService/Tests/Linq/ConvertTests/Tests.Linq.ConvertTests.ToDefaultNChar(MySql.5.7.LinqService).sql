@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Cast(`t`.`MoneyValue` as NChar)
+	CAST(`t`.`MoneyValue` AS CHAR(255))
 FROM
 	`LinqDataTypes` `t`
 

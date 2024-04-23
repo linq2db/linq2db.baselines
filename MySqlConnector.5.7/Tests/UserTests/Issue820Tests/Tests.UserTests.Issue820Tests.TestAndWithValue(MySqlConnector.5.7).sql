@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Value Int16
-SET     @Value = 1
+DECLARE @param Int16
+SET     @param = 1
 
 SELECT
 	`_`.`ID`,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	@Value = `_`.`SmallIntValue`
+	@param = `_`.`SmallIntValue`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

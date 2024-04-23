@@ -2,9 +2,9 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Child` `c_1`
+	`Child` `g_1`
 GROUP BY
-	`c_1`.`ParentID`
+	`g_1`.`ParentID`
 

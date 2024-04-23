@@ -2,14 +2,14 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t`.`c1`
+	`t_1`.`c1`
 FROM
 	(
 		SELECT
-			Floor(Log10(`p`.`MoneyValue`)) as `c1`
+			Floor(Log10(`t`.`MoneyValue`)) as `c1`
 		FROM
-			`LinqDataTypes` `p`
-	) `t`
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	`t_1`.`c1` <> 0.10000000000000001
 

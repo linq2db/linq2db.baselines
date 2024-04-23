@@ -2,10 +2,10 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`FirstName`,
-	Count(*)
+	`p`.`FirstName`,
+	COUNT(*)
 FROM
-	`Person` `t1`
+	`Person` `p`
 GROUP BY
-	`t1`.`FirstName`
+	`p`.`FirstName`
 

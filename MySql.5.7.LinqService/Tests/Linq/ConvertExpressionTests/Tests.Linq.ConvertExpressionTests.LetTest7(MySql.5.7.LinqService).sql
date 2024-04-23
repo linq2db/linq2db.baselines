@@ -4,34 +4,6 @@ DECLARE @take Int32
 SET     @take = 5000
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
-FROM
-	(
-		SELECT DISTINCT
-			`t1`.`ParentID`
-		FROM
-			(
-				SELECT
-					`t`.`ParentID`
-				FROM
-					`Parent` `t`
-				WHERE
-					`t`.`ParentID` > 0
-				LIMIT @take
-			) `t1`
-	) `key_data_result`
-		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 5000
-
-SELECT
 	`t`.`ParentID`,
 	CASE
 		WHEN EXISTS(
@@ -47,7 +19,7 @@ SELECT
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			`Child` `c_2`
 		WHERE
@@ -61,11 +33,35 @@ SELECT
 		WHERE
 			`c_3`.`ParentID` = `t`.`ParentID` AND `c_3`.`ChildID` > -100 AND
 			`c_3`.`ParentID` > 0
-		LIMIT @take
+		ORDER BY
+			`c_3`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`c_4`.`ParentID`
+		FROM
+			`Child` `c_4`
+		WHERE
+			`c_4`.`ParentID` = `t`.`ParentID` AND `c_4`.`ChildID` > -100
+		ORDER BY
+			`c_4`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`c_5`.`ChildID`
+		FROM
+			`Child` `c_5`
+		WHERE
+			`c_5`.`ParentID` = `t`.`ParentID` AND `c_5`.`ChildID` > -100
+		ORDER BY
+			`c_5`.`ChildID`
+		LIMIT 1
 	)
 FROM
 	`Parent` `t`
 WHERE
 	`t`.`ParentID` > 0
-LIMIT @take_1
+LIMIT @take
 

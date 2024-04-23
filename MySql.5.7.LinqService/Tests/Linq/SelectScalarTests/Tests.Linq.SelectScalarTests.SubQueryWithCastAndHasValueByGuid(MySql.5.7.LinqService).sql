@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`ParentID`,
@@ -11,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			`r`.`GuidValue`
+			CASE
+				WHEN `r`.`GuidValue` IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			`LinqDataTypes` `r`
-		LIMIT @take
-	) IS NOT NULL
+		LIMIT 1
+	) = 1
 

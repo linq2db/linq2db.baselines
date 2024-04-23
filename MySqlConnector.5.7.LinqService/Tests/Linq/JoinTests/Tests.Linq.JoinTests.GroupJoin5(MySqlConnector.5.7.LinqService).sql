@@ -2,34 +2,32 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_ch`.`ParentID`,
-	`_ch`.`ChildID`
-FROM
 	(
-		SELECT DISTINCT
-			`p`.`ParentID`,
-			`p`.`Value1`
+		SELECT
+			`ch`.`ParentID`
 		FROM
-			`Parent` `p`
+			`Child` `ch`
 		WHERE
-			`p`.`ParentID` >= 1
-	) `key_data_result`
-		INNER JOIN `Child` `_ch` ON `_ch`.`ParentID` = `key_data_result`.`ParentID`
-ORDER BY
-	`_ch`.`ChildID`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
+			`t1`.`ParentID` = `ch`.`ParentID`
+		ORDER BY
+			`ch`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`ch_1`.`ChildID`
+		FROM
+			`Child` `ch_1`
+		WHERE
+			`t1`.`ParentID` = `ch_1`.`ParentID`
+		ORDER BY
+			`ch_1`.`ChildID`
+		LIMIT 1
+	)
 FROM
-	`Parent` `p`
+	`Parent` `t1`
 WHERE
-	`p`.`ParentID` >= 1
+	`t1`.`ParentID` >= 1
 ORDER BY
-	`p`.`ParentID`
+	`t1`.`ParentID`
 

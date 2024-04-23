@@ -297,8 +297,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`VarCharDefault`,
@@ -358,7 +356,7 @@ SELECT
 	`t1`.`Guid`
 FROM
 	`CreateTable` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
