@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[x].[PersonID],
-	[x].[FirstName]
+	[x].[PersonID] as [PersonId],
+	[x].[FirstName] as [Name]
 FROM
 	[Person] [x]
 

@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Convert(NVarChar(11), Len(@name) + @idx),
+	CAST(Len(@name) + @idx AS NVarChar(11)),
 	'M'
 )
 
@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	Count(*) as [COUNT_1]
 FROM
 	[Person] [_]
 WHERE

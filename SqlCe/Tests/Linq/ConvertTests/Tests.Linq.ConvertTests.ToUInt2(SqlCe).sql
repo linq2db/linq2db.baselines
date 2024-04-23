@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Convert(BigInt, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS BigInt) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @param NVarChar(4) -- String
-SET     @param = 'JOHN'
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'JOHN'
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
-	Upper([p].[FirstName]) = @param AND [p].[PersonID] = 1
+	Upper([p].[FirstName]) = @p AND [p].[PersonID] = 1
 
