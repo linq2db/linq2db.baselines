@@ -2,7 +2,7 @@
 -- SqlServer.2008
 
 SELECT
-	CAST([t].[DateTimeValue] AS TIME)
+	CAST([t].[DateTimeValue] AS Time)
 FROM
 	[LinqDataTypes] [t]
 

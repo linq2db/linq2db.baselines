@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 8
 
 SELECT
 	[t2].[ParentID],
@@ -18,14 +14,10 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > 3 AND [t2].[RN] <= 8
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 8
 
 SELECT
 	[t2].[ParentID],
@@ -40,5 +32,5 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @skip_1
+	[t2].[RN] > 3 AND [t2].[RN] <= 8
 

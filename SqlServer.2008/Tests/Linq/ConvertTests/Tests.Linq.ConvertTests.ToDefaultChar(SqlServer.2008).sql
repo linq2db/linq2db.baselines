@@ -2,7 +2,7 @@
 -- SqlServer.2008
 
 SELECT
-	Convert(Char, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS NChar)
 FROM
 	[LinqDataTypes] [t]
 
