@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
@@ -11,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			r."Value1"
+			CASE
+				WHEN r."Value1" IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			"Parent" r
-		FETCH NEXT :take ROWS ONLY
-	) IS NOT NULL
+		FETCH NEXT 1 ROWS ONLY
+	) = 1
 
