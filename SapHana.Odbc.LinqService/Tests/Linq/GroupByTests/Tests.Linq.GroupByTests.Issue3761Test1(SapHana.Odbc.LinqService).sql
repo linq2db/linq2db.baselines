@@ -18,22 +18,24 @@ CREATE COLUMN TABLE "Issue3761Table"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @_default  -- DateTime
-SET     @_default = '0001-01-01'
-DECLARE @_default  -- DateTime
-SET     @_default = '0001-01-01'
 DECLARE @DATUM  -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	"t1"."Key_1",
-	"t1"."Key_2",
-	Sum("t1"."SKUPAJ")
+	"t1"."Year_1",
+	"t1"."Month_1",
+	SUM("t1"."SKUPAJ")
 FROM
 	(
 		SELECT
-			Year(Coalesce("n"."DATUM", ?)) as "Key_1",
-			Month(Coalesce("n"."DATUM", ?)) as "Key_2",
+			Year(CASE
+				WHEN "n"."DATUM" IS NOT NULL THEN "n"."DATUM"
+				ELSE '0001-01-01'
+			END) as "Year_1",
+			Month(CASE
+				WHEN "n"."DATUM" IS NOT NULL THEN "n"."DATUM"
+				ELSE '0001-01-01'
+			END) as "Month_1",
 			"n"."SKUPAJ"
 		FROM
 			"Issue3761Table" "n"
@@ -41,8 +43,8 @@ FROM
 			"n"."DATUM" < ?
 	) "t1"
 GROUP BY
-	"t1"."Key_1",
-	"t1"."Key_2"
+	"t1"."Year_1",
+	"t1"."Month_1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

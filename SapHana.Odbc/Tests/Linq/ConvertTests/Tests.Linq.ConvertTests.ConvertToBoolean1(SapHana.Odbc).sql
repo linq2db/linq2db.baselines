@@ -2,13 +2,17 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CASE
-		WHEN "t"."MoneyValue" <> 0
-			THEN 1
-		ELSE 0
-	END
+	"p_1"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CASE
+				WHEN "p"."MoneyValue" <> 0 THEN 1
+				ELSE 0
+			END as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "p_1"
 WHERE
-	("t"."MoneyValue" <> 0)
+	"p_1"."c1" = 1
 

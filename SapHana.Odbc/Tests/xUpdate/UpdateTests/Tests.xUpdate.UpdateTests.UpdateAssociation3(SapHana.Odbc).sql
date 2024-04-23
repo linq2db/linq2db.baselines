@@ -32,7 +32,7 @@ BeforeExecute
 UPDATE
 	"Parent"
 SET
-	"Parent"."Value1" = 5
+	"Value1" = 5
 WHERE
 	EXISTS(
 		SELECT

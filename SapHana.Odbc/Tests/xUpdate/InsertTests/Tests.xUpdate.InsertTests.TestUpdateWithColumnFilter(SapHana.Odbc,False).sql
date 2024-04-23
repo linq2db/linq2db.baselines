@@ -76,8 +76,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -89,7 +87,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -103,20 +101,18 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = ?,
-	"Person"."LastName" = ?,
-	"Person"."Gender" = ?
+	"FirstName" = ?,
+	"LastName" = ?,
+	"Gender" = ?
 WHERE
-	"Person"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -128,7 +124,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
