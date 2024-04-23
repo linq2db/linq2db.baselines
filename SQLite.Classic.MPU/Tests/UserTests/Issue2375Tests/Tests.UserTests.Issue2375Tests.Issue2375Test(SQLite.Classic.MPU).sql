@@ -54,7 +54,7 @@ DECLARE @Status  -- Int32
 SET     @Status = 40
 DECLARE @ResourceID  -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @ModifiedTimeStamp  -- DateTime
+DECLARE @ModifiedTimeStamp VarChar(23) -- AnsiString
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
 
 INSERT INTO [InventoryResourceDTO]
@@ -80,7 +80,7 @@ DECLARE @Status  -- Int32
 SET     @Status = 40
 DECLARE @ResourceID  -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @ModifiedTimeStamp  -- DateTime
+DECLARE @ModifiedTimeStamp VarChar(23) -- AnsiString
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
 
 INSERT INTO [InventoryResourceDTO]
@@ -99,37 +99,57 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[inventory].[Status],
-	[lc].[ResourceLabel]
-FROM
-	[InventoryResourceDTO] [inventory]
-		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [inventory].[ResourceID] = [lc].[Id]
-GROUP BY
-	[inventory].[Status],
-	[lc].[ResourceLabel]
-HAVING
-	Count(*) > 1
-
+BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Status  -- Int32
-SET     @Status = 40
-DECLARE @ResourceLabel NVarChar(1) -- String
-SET     @ResourceLabel = 'b'
 
 SELECT
-	[inventory].[Id],
-	[inventory].[Status],
-	[inventory].[ResourceID],
-	[inventory].[ModifiedTimeStamp]
+	[m_1].[Status],
+	[m_1].[ResourceLabel],
+	[d].[Id],
+	[d].[Status],
+	[d].[ResourceID],
+	[d].[ModifiedTimeStamp]
 FROM
-	[InventoryResourceDTO] [inventory]
-		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [inventory].[ResourceID] = [lc].[Id]
-WHERE
-	[inventory].[Status] = @Status AND [lc].[ResourceLabel] = @ResourceLabel
+	(
+		SELECT DISTINCT
+			[t1].[Status],
+			[t1].[ResourceLabel]
+		FROM
+			(
+				SELECT
+					[grp].[Status],
+					[lc].[ResourceLabel]
+				FROM
+					[InventoryResourceDTO] [grp]
+						INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
+				GROUP BY
+					[grp].[Status],
+					[lc].[ResourceLabel]
+				HAVING
+					COUNT(*) > 1
+			) [t1]
+	) [m_1]
+		INNER JOIN ([InventoryResourceDTO] [d]
+			INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id])
+		ON [m_1].[Status] = [d].[Status] AND ([m_1].[ResourceLabel] = [lc_1].[ResourceLabel] OR [m_1].[ResourceLabel] IS NULL AND [lc_1].[ResourceLabel] IS NULL)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[grp].[Status],
+	[lc].[ResourceLabel]
+FROM
+	[InventoryResourceDTO] [grp]
+		INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
+GROUP BY
+	[grp].[Status],
+	[lc].[ResourceLabel]
+HAVING
+	COUNT(*) > 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

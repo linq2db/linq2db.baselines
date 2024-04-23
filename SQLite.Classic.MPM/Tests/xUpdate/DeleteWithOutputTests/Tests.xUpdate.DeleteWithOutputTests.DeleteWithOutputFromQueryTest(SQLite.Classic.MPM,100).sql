@@ -48,15 +48,19 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @param  -- Int32
+SET     @param = 100
+DECLARE @param_1  -- Int32
+SET     @param_1 = 100
 
 DELETE FROM
 	[TableWithData]
 WHERE
 	[TableWithData].[Id] > 3
 RETURNING
-	[TableWithData].[Id],
-	[TableWithData].[Value],
-	[TableWithData].[ValueStr]
+	[TableWithData].[Id] + @param,
+	[TableWithData].[Value] + @param,
+	[TableWithData].[ValueStr] || @param_1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

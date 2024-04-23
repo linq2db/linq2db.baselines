@@ -250,11 +250,17 @@ CREATE TABLE IF NOT EXISTS [DestinationTable]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 100
+DECLARE @Value  -- Int32
+SET     @Value = 100
+DECLARE @p  -- Object
+SET     @p = 100
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @Id,
+	[s].[Value] + @Value,
+	[s].[ValueStr] || @p
 FROM
 	[TableWithData] [s]
 WHERE

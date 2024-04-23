@@ -19,7 +19,7 @@ BeforeExecute
 DECLARE @ColumnDO VarChar -- AnsiString
 SET     @ColumnDO = NULL
 DECLARE @ColumnDT VarChar(23) -- AnsiString
-SET     @ColumnDT = '0160-05-06T18:13:59.154'
+SET     @ColumnDT = '0160-05-06 18:13:59.154'
 DECLARE @ColumnDTO VarChar -- AnsiString
 SET     @ColumnDTO = NULL
 DECLARE @ColumnTS VarChar -- AnsiString
@@ -43,14 +43,14 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @dt VarChar(23) -- AnsiString
-SET     @dt = '0160-05-06T18:13:59.154'
+SET     @dt = '0160-05-06 18:13:59.154'
 
 SELECT
 	Count(*)
 FROM
 	[Issue4371Table] [r]
 WHERE
-	DateTime([r].[ColumnDT]) = DateTime(@dt)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[ColumnDT]) = strftime('%Y-%m-%d %H:%M:%f', @dt)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 DECLARE @skip  -- Int32
 SET     @skip = 300000
 
@@ -12,5 +10,5 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1
-LIMIT @take OFFSET @skip
+LIMIT 1 OFFSET @skip
 
