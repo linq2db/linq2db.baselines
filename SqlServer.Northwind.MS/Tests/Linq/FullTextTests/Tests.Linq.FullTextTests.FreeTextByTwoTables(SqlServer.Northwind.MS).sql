@@ -8,7 +8,9 @@ SELECT
 	[c1].[Picture]
 FROM
 	[Categories] [c1]
-		INNER JOIN [Categories] [c_1] ON FREETEXT(([c_1].*), N'bread') AND FREETEXT(([c1].*), N'meat')
+		INNER JOIN [Categories] [c2] ON FREETEXT(([c1].*), N'meat')
+WHERE
+	FREETEXT(([c2].*), N'bread')
 ORDER BY
 	[c1].[CategoryID] DESC
 

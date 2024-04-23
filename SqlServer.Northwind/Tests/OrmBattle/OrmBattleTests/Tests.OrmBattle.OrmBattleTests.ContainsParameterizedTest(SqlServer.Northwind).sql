@@ -18,7 +18,7 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
 	[a_Customer].[CustomerID] IN (N'ALFKI', N'ANATR', N'AROUT', N'BERGS')
 
