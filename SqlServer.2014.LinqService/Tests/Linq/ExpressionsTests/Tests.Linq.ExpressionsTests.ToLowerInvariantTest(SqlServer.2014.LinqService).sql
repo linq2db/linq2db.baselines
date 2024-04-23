@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	Lower([p].[Taxonomy])
+	[p].[Taxonomy]
 FROM
 	[Doctor] [p]
 WHERE

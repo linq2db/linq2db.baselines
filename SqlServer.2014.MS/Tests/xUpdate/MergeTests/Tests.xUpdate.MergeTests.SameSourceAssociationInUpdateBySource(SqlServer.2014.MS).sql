@@ -11,19 +11,19 @@ BeforeExecute
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID]
+		[t1].[PersonID] as [source_ID]
 	FROM
 		[Person] [t1]
 ) [Source]
 (
-	[ID]
+	[source_ID]
 )
-ON ([Target].[PersonID] = [Source].[ID] + 10)
+ON ([Target].[PersonID] = [Source].[source_ID] + 10)
 
 WHEN NOT MATCHED By Source AND [Target].[FirstName] = N'first 3' THEN UPDATE
 SET
-	[Target].[FirstName] = N'Updated',
-	[Target].[LastName] = (
+	[FirstName] = N'Updated',
+	[LastName] = (
 		SELECT
 			[a_Patient].[Diagnosis]
 		FROM
