@@ -22,22 +22,18 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[t1]
+	[Parent]
 SET
-	[t1].[Value1] = 1012
-FROM
-	[Parent] [t1]
+	[Value1] = 1012
 WHERE
-	[t1].[ParentID] = 1010
+	[Parent].[ParentID] = 1010
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM

@@ -29,6 +29,11 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
+	CASE
+		WHEN [r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	[r].[BigIntValue],
 	[r].[IntValue]
 FROM
