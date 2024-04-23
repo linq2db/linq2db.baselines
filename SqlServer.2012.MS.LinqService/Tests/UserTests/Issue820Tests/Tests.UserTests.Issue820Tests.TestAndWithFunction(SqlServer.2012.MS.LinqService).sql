@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [_]
 WHERE
-	@param = [_].[SmallIntValue]
+	(CAST(@param AS Int) = [_].[SmallIntValue] OR CAST(@param AS Int) IS NULL AND [_].[SmallIntValue] IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
