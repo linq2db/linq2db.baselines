@@ -44,12 +44,12 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 UPDATE
-	"TableWithData"
+	"TableWithData" "s"
 SET
-	"TableWithData"."Value" = "TableWithData"."Value" + 1,
-	"TableWithData"."ValueStr" = "TableWithData"."ValueStr" || 'Upd'
+	"Value" = "s"."Value" + 1,
+	"ValueStr" = "s"."ValueStr" || 'Upd'
 WHERE
-	"TableWithData"."Id" = 3
+	"s"."Id" = 3
 RETURNING
 	OLD."Value",
 	NEW."Value"

@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@Value1,
-	@ParentID
+	CAST(@Value1 AS Int),
+	CAST(@ParentID AS Int)
 )
 
 BeforeExecute
@@ -34,11 +34,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = 2
+	"Value1" = 2
 WHERE
-	"Parent"."ParentID" = @id
+	"p"."ParentID" = @id
 
 BeforeExecute
 -- Firebird.4 Firebird4

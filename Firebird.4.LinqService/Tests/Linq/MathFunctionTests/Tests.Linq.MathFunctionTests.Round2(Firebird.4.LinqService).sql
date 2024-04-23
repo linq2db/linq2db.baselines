@@ -2,18 +2,18 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t"."c1"
+	"t_1"."c1"
 FROM
 	(
 		SELECT
-			Cast(CASE
-				WHEN "p"."MoneyValue" - Floor("p"."MoneyValue") = 0.5 AND Mod(Floor("p"."MoneyValue"), 2) = 0
-					THEN Floor("p"."MoneyValue")
-				ELSE Round("p"."MoneyValue", 0)
-			END as Float) as "c1"
+			CAST(CASE
+				WHEN "t"."MoneyValue" - Floor("t"."MoneyValue") = 0.5 AND Mod(Floor("t"."MoneyValue"), 2) = 0
+					THEN Floor("t"."MoneyValue")
+				ELSE Round("t"."MoneyValue", 0)
+			END AS Float) as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "t"
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	"t"."c1" <> 0
+	"t_1"."c1" <> 0
 

@@ -32,7 +32,7 @@ INSERT INTO "AttributeBase"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute

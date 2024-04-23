@@ -18,10 +18,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(8)),
+	CAST(@LastName AS VARCHAR(8)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -32,11 +32,11 @@ DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."LastName" = Cast((Char_Length(Cast(@name as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@idx as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+	"LastName" = Char_Length(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int)
 WHERE
-	"Person"."FirstName" STARTING WITH 'Update14'
+	"t1"."FirstName" STARTING WITH 'Update14'
 
 BeforeExecute
 -- Firebird.4 Firebird4

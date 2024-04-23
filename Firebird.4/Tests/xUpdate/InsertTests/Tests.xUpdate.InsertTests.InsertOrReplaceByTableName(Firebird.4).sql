@@ -2,19 +2,19 @@
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient21')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient21"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient18')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "xxPatient18"';
 END
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
-CREATE TABLE "xxPatient21"
+CREATE TABLE "xxPatient18"
 (
 	"PersonID"  Int                                    NOT NULL,
 	"Diagnosis" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_xxPatient21" PRIMARY KEY ("PersonID")
+	CONSTRAINT "PK_xxPatient18" PRIMARY KEY ("PersonID")
 )
 
 BeforeExecute
@@ -24,15 +24,15 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient21" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+MERGE INTO "xxPatient18" "t1"
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -41,8 +41,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -52,15 +52,15 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient21" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+MERGE INTO "xxPatient18" "t1"
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,8 +69,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -79,7 +79,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient18" "t1"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -88,15 +88,15 @@ SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient21" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+MERGE INTO "xxPatient18" "t1"
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -105,8 +105,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -116,15 +116,15 @@ SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient21" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+MERGE INTO "xxPatient18" "t1"
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -133,8 +133,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
 BeforeExecute
@@ -143,13 +143,13 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"xxPatient21" "t1"
+	"xxPatient18" "t1"
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient21')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient21"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient18')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "xxPatient18"';
 END
 

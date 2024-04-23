@@ -49,7 +49,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Cast(Floor(Extract(week from "t"."TransactionDate")) as int)
+	Extract(week from "t"."TransactionDate")
 FROM
 	"Transactions" "t"
 

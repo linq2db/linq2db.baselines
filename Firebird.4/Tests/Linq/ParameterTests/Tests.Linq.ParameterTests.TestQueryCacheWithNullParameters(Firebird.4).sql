@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
+DECLARE @id Integer -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	"Person" "t1"
 WHERE
-	"t1"."PersonID" IS NULL
+	"t1"."PersonID" = @id
 
 BeforeExecute
 -- Firebird.4 Firebird4

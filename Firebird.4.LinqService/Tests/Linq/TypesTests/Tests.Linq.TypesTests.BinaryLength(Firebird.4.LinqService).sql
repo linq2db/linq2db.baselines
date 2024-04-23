@@ -4,16 +4,14 @@ DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	Octet_Length("t"."BinaryValue")
@@ -21,7 +19,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -29,9 +27,9 @@ DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 
