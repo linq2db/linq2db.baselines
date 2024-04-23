@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`a_Parent`.`Value1`
@@ -10,5 +8,5 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `x`.`ParentID` = `a_Parent`.`Value1`
 WHERE
 	`x`.`Value1` IS NULL
-LIMIT @take
+LIMIT 1
 

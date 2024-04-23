@@ -1,0 +1,13 @@
+﻿BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`Item1`.`ParentID`,
+	`Item1`.`ChildID`
+FROM
+	`Child` `Item1`
+		LEFT JOIN `Parent` `_arg2` ON `Item1`.`ParentID` = `_arg2`.`ParentID`
+WHERE
+	`_arg2`.`Value1` = 6
+LIMIT 1
+

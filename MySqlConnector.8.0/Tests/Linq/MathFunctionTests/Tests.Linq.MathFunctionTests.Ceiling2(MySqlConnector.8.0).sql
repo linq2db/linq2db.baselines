@@ -2,9 +2,14 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Ceiling(`p`.`MoneyValue`)
+	`t_1`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Ceiling(`t`.`MoneyValue`) as `c1`
+		FROM
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Ceiling(`p`.`MoneyValue`) <> 0
+	`t_1`.`c1` <> 0
 

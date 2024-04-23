@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`ParentID`,
@@ -11,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			`r`.`Value1`
+			CASE
+				WHEN `r`.`Value1` IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			`Parent` `r`
-		LIMIT @take
-	) IS NOT NULL
+		LIMIT 1
+	) = 1
 

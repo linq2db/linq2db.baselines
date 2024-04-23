@@ -36,8 +36,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -49,7 +47,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -76,8 +74,6 @@ WHERE
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`_`.`FirstName`,
@@ -89,7 +85,7 @@ FROM
 	`Person` `_`
 WHERE
 	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

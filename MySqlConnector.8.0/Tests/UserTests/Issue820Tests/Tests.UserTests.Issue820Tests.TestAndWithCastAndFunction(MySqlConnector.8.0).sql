@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	(@param = `_`.`SmallIntValue` OR @param IS NULL AND `_`.`SmallIntValue` IS NULL)
+	@param = `_`.`SmallIntValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

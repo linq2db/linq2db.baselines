@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @id Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	`Person` `_`
 WHERE
-	`_`.`PersonID` IS NULL
+	`_`.`PersonID` = @id
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -2,11 +2,10 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`p`.`PersonID`,
-	`p`.`FirstName`
+	`pp`.`PersonID`,
+	Concat('  ', `pp`.`FirstName`, ' ')
 FROM
-	`Person` `p`
+	`Person` `pp`
 WHERE
-	RTrim(Concat('  ', `p`.`FirstName`, ' ')) = '  John' AND
-	`p`.`PersonID` = 1
+	`pp`.`PersonID` = 1 AND (TRIM(TRAILING FROM Concat('  ', `pp`.`FirstName`, ' '))) = '  John'
 

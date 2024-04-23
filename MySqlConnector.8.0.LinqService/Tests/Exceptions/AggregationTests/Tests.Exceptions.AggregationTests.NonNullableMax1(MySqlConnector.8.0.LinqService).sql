@@ -2,7 +2,7 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Max(`_`.`ParentID`)
+	MAX(`_`.`ParentID`)
 FROM
 	`Parent` `_`
 WHERE

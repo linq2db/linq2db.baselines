@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Cast(Floor(`t`.`MoneyValue`) as Unsigned)
+	CAST(Floor(`t`.`MoneyValue`) AS SIGNED)
 FROM
 	`LinqDataTypes` `t`
 

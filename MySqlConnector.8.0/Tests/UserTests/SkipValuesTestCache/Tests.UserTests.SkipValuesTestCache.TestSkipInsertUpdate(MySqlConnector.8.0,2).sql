@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -50,7 +48,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -71,8 +69,6 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -82,7 +78,7 @@ FROM
 	`PR_1598_Insert_Table_Cache` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -37,8 +37,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -53,5 +51,5 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = @ID
-LIMIT @take
+LIMIT 2
 
