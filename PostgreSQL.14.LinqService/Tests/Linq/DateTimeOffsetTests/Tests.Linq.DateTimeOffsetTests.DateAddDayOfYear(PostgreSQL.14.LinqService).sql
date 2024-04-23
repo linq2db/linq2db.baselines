@@ -288,7 +288,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 3 * Interval '1 Day'
+	Date_Trunc('day', (t."TransactionDate" + 3 * Interval '1 Day') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 
