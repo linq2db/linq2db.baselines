@@ -50,12 +50,12 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
@@ -76,7 +76,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT ("i"."One" = "i"."One" AND "i"."Two" = "i"."One" * 2 AND "i"."Three" = "i"."Four" - 1 OR "i"."One" = 0 AND "i"."Two" = 7 AND "i"."Three" = 9 OR "i"."One" >= NULL AND "i"."Two" = -1 AND "i"."Three" = "i"."Four")
+	("i"."One" <> "i"."One" OR "i"."Two" <> "i"."One" * 2 OR "i"."Three" <> "i"."Four" - 1) AND
+	("i"."One" <> 0 OR "i"."Two" <> 7 OR "i"."Three" <> 9) AND
+	("i"."One" >= NULL OR "i"."Two" <> -1 OR "i"."Three" <> "i"."Four")
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -86,7 +88,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT ("i"."One" = "i"."One" AND "i"."Three" = "i"."One" * 2 AND "i"."Four" = "i"."Four" - 1 OR "i"."One" = 0 AND "i"."Three" = 7 AND "i"."Four" = 9 OR "i"."One" >= NULL AND "i"."Three" = 2 AND "i"."Four" = "i"."Four")
+	("i"."One" <> "i"."One" OR "i"."Three" <> "i"."One" * 2 OR "i"."Four" <> "i"."Four" - 1) AND
+	("i"."One" <> 0 OR "i"."Three" <> 7 OR "i"."Four" <> 9) AND
+	("i"."One" >= NULL OR "i"."Three" <> 2 OR "i"."Four" <> "i"."Four")
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -96,7 +100,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT ("i"."One" = "i"."One" AND "i"."Two" = "i"."One" * 2 AND "i"."Four" = "i"."Four" - 1 OR "i"."One" = 0 AND "i"."Two" = 7 AND "i"."Four" = 9 OR "i"."One" >= NULL AND "i"."Two" = 2 AND "i"."Four" = "i"."Four")
+	("i"."One" <> "i"."One" OR "i"."Two" <> "i"."One" * 2 OR "i"."Four" <> "i"."Four" - 1) AND
+	("i"."One" <> 0 OR "i"."Two" <> 7 OR "i"."Four" <> 9) AND
+	("i"."One" >= NULL OR "i"."Two" <> 2 OR "i"."Four" <> "i"."Four")
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -106,7 +112,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT ("i"."Nil" = "i"."One" AND "i"."Two" = "i"."One" * 2 AND "i"."Four" = "i"."Four" - 1 OR "i"."Nil" = 0 AND "i"."Two" = 7 AND "i"."Four" = 9 OR "i"."Nil" >= NULL AND "i"."Two" = 2 AND "i"."Four" = "i"."Four")
+	("i"."Nil" <> "i"."One" OR "i"."Two" <> "i"."One" * 2 OR "i"."Four" <> "i"."Four" - 1) AND
+	("i"."Nil" <> 0 OR "i"."Two" <> 7 OR "i"."Four" <> 9) AND
+	("i"."Nil" >= NULL OR "i"."Two" <> 2 OR "i"."Four" <> "i"."Four")
 
 BeforeExecute
 -- Firebird.3 Firebird3

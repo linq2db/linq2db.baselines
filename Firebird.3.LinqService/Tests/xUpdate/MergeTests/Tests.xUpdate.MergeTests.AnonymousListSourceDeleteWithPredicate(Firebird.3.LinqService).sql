@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "Key_1" FROM rdb$database
+	SELECT 3 AS "source_Key" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -244,10 +244,10 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	"Key_1"
+	"source_Key"
 )
-ON ("Source"."Key_1" = "Target"."Id")
-WHEN MATCHED AND "Source"."Key_1" = 4 THEN DELETE
+ON ("Source"."source_Key" = "Target"."Id")
+WHEN MATCHED AND "Source"."source_Key" = 4 THEN DELETE
 
 BeforeExecute
 -- Firebird.3 Firebird3

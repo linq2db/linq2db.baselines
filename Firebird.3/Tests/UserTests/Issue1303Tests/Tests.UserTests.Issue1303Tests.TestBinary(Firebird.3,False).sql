@@ -39,14 +39,12 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	CAST(@Array AS BLOB),
+	CAST(@Binary AS BLOB)
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1".ID,
@@ -56,14 +54,12 @@ FROM
 	"Issue1303" "t1"
 WHERE
 	"t1".ID = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Array Binary(3)
 SET     @Array = X'010203'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1".ID,
@@ -73,14 +69,12 @@ FROM
 	"Issue1303" "t1"
 WHERE
 	"t1"."Array" = @Array
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Binary Binary(2)
 SET     @Binary = X'0405'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1".ID,
@@ -90,7 +84,7 @@ FROM
 	"Issue1303" "t1"
 WHERE
 	"t1"."Binary" = @Binary
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

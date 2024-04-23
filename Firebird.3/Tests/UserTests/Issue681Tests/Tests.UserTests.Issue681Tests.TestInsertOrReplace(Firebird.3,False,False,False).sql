@@ -30,14 +30,14 @@ DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 MERGE INTO "Issue681Table" "t1"
-USING (SELECT Cast(@ID as Int) AS ID FROM rdb$database) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Value" = @Value
+		"Value" = CAST(@Value AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -46,8 +46,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
-		@Value
+		CAST(@ID AS Int),
+		CAST(@Value AS Int)
 	)
 
 BeforeExecute
@@ -58,14 +58,14 @@ DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 MERGE INTO "Issue681Table" "t1"
-USING (SELECT Cast(@ID as Int) AS ID FROM rdb$database) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Value" = @Value
+		"Value" = CAST(@Value AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,8 +74,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@ID as Int),
-		@Value
+		CAST(@ID AS Int),
+		CAST(@Value AS Int)
 	)
 
 BeforeExecute

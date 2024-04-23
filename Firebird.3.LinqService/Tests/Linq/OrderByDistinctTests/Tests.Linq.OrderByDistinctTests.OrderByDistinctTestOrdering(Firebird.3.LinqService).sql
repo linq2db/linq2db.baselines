@@ -44,10 +44,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(3)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(3)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	@Id,
-	@DuplicateData,
-	@OrderData1,
-	@OrderData2
+	CAST(@Id AS Int),
+	CAST(@DuplicateData AS VARCHAR(5)),
+	CAST(@OrderData1 AS Int),
+	CAST(@OrderData2 AS Int)
 )
 
 BeforeExecute
@@ -113,8 +113,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -143,8 +141,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -173,9 +169,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -205,9 +198,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -237,9 +227,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC,
-	"x"."OrderData2" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -269,9 +256,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

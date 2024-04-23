@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 100
 
 SELECT
 	"c_1"."ParentID",
@@ -9,16 +7,36 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" IN (
+	EXISTS(
 		SELECT
-			"t1"."ParentID"
+			*
 		FROM
 			(
 				SELECT
-					"p"."ParentID"
+					"v"."ParentID"
 				FROM
-					"Parent" "p"
-				FETCH NEXT @take ROWS ONLY
+					"Parent" "v"
+				FETCH NEXT 100 ROWS ONLY
 			) "t1"
+		WHERE
+			"c_1"."ParentID" = "t1"."ParentID"
 	)
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 
