@@ -47,7 +47,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast(Length(t1."Diagnosis") as text)
+	"Diagnosis" = Length(t1."Diagnosis")::text
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -67,7 +67,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -87,14 +87,12 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as text)
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -103,5 +101,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-LIMIT :take
+LIMIT 2
 

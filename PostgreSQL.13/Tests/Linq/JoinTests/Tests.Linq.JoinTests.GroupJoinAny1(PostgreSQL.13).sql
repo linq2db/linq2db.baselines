@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."ParentID",
+	t1."ParentID",
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -10,11 +10,11 @@ SELECT
 			FROM
 				"Child" c_1
 			WHERE
-				c_1."ParentID" = p."ParentID"
+				t1."ParentID" = c_1."ParentID"
 		)
 			THEN True
 		ELSE False
 	END
 FROM
-	"Parent" p
+	"Parent" t1
 
