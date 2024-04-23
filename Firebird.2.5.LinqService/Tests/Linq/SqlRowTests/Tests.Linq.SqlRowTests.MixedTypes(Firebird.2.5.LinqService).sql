@@ -33,7 +33,7 @@ DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2001-01-01' AS timestamp)
 DECLARE @Double Double
 SET     @Double = 1
-DECLARE @Bool Char(1) -- String
+DECLARE @Bool Char -- String
 SET     @Bool = '1'
 
 INSERT INTO "Mixed"
@@ -46,11 +46,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS VARCHAR(3)),
+	CAST(@Date AS TimeStamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS CHAR(1))
 )
 
 BeforeExecute
@@ -63,7 +63,7 @@ DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2002-02-02' AS timestamp)
 DECLARE @Double Double
 SET     @Double = 2
-DECLARE @Bool Char(1) -- String
+DECLARE @Bool Char -- String
 SET     @Bool = '0'
 
 INSERT INTO "Mixed"
@@ -76,11 +76,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS VARCHAR(3)),
+	CAST(@Date AS TimeStamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS CHAR(1))
 )
 
 BeforeExecute

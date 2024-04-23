@@ -30,7 +30,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -93,16 +93,8 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"t1".ID
-FROM
-	"test_in_1" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -118,7 +110,7 @@ WHERE
 		FROM
 			"test_in_2" "p"
 		WHERE
-			"p".ID = "t".ID
+			"t".ID = "p".ID
 	)
 ORDER BY
 	"t".ID
@@ -129,7 +121,7 @@ BeforeExecute
 SELECT
 	"t1".ID
 FROM
-	"test_in_2" "t1"
+	"test_in_1" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

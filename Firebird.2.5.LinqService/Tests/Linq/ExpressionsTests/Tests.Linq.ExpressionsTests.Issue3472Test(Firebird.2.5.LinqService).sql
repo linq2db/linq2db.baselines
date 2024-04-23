@@ -30,7 +30,7 @@ INSERT INTO "Issue3472TableDCTX"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -40,7 +40,7 @@ SELECT
 	"t1"."Id",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Person" "p"
 		WHERE

@@ -24,8 +24,6 @@ END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -35,7 +33,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	@Field1
+	NULL
 )
 
 BeforeExecute
@@ -51,7 +49,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	@Field1
+	CAST(@Field1 AS VARCHAR(1))
 )
 
 BeforeExecute
@@ -67,7 +65,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	@Field1
+	CAST(@Field1 AS VARCHAR(4))
 )
 
 BeforeExecute

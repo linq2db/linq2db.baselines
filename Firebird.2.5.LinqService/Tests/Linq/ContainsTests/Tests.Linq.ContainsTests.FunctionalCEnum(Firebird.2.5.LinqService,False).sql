@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(1)),
+	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -68,22 +68,20 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(3)),
+	CAST(@CEnum AS VarChar(12) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value4___'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -92,14 +90,12 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar -- String
 SET     @CEnum_1 = NULL
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -108,14 +104,12 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -124,14 +118,12 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @CEnum VarChar -- String
 SET     @CEnum = NULL
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"
@@ -140,14 +132,12 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"s"."Id"
 FROM
 	"Src" "s"

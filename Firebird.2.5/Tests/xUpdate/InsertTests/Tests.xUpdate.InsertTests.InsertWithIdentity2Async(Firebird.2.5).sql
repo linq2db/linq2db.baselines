@@ -8,6 +8,12 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -19,19 +25,17 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",

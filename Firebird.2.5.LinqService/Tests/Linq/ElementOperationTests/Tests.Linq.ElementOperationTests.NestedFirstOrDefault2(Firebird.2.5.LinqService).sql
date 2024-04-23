@@ -2,28 +2,26 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"detail"."ParentID",
-	"detail"."ChildID"
-FROM
 	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
+		SELECT FIRST 1
+			"a_Children"."ParentID"
 		FROM
-			"Parent" "p"
-	) "key_data_result"
-		INNER JOIN "Child" "detail" ON "key_data_result"."ParentID" = "detail"."ParentID"
-ORDER BY
-	"detail"."ChildID"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+			"Child" "a_Children"
+		WHERE
+			"p"."ParentID" = "a_Children"."ParentID"
+		ORDER BY
+			"a_Children"."ChildID"
+	),
+	(
+		SELECT FIRST 1
+			"a_Children_1"."ChildID"
+		FROM
+			"Child" "a_Children_1"
+		WHERE
+			"p"."ParentID" = "a_Children_1"."ParentID"
+		ORDER BY
+			"a_Children_1"."ChildID"
+	)
 FROM
 	"Parent" "p"
 

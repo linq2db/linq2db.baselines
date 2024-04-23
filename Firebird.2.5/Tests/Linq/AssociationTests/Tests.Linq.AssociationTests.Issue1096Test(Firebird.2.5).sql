@@ -59,8 +59,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS VARCHAR(12))
 )
 
 BeforeExecute
@@ -77,8 +77,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS VARCHAR(12))
 )
 
 BeforeExecute
@@ -87,7 +87,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Char(1) -- String
+DECLARE @Actual Char -- String
 SET     @Actual = '1'
 
 INSERT INTO "Issue1096TaskStage"
@@ -98,9 +98,9 @@ INSERT INTO "Issue1096TaskStage"
 )
 VALUES
 (
-	@Id,
-	@TaskId,
-	@Actual
+	CAST(@Id AS Int),
+	CAST(@TaskId AS Int),
+	CAST(@Actual AS CHAR(1))
 )
 
 BeforeExecute

@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Max("t1".ID)
+	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 

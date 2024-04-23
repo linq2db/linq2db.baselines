@@ -38,9 +38,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS VARCHAR(11)),
+	CAST(@BoolValue AS Char(1)),
+	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	@Name,
-	@BoolValue,
-	@GuidValue
+	CAST(@Name AS VARCHAR(8)),
+	CAST(@BoolValue AS Char(1)),
+	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -99,172 +99,130 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'N'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char -- String
-SET     @BoolValue = 'Y'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."BoolValue" = @BoolValue
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
@@ -275,12 +233,10 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Name",
 	"t1"."BoolValue",
 	"t1"."GuidValue"
