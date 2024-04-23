@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'UpdateColumnFilter',
-	toInt32(100),
+	100,
 	'whatever',
 	NULL,
 	'M'
@@ -31,7 +31,7 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'UpdateColumnFilter'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -41,7 +41,7 @@ ALTER TABLE
 UPDATE
 	FirstName = 'UpdateColumnFilterUpdated'
 WHERE
-	PersonID = toInt32(100)
+	PersonID = 100
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -55,8 +55,8 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(100)
-LIMIT toInt32(2)
+	x.PersonID = 100
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ UPDATE
 	MiddleName = NULL,
 	Gender = 'M'
 WHERE
-	PersonID = toInt32(100)
+	PersonID = 100
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -83,6 +83,6 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(100)
-LIMIT toInt32(2)
+	_.PersonID = 100
+LIMIT 2
 

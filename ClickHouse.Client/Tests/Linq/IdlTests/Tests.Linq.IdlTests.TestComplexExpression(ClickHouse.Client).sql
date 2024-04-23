@@ -6,5 +6,5 @@ SELECT
 FROM
 	GrandChild e
 WHERE
-	e.ChildID = toInt32(1)
+	e.ChildID = 1
 

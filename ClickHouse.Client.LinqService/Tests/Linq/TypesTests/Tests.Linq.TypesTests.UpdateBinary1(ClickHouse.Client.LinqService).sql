@@ -6,7 +6,7 @@ ALTER TABLE
 UPDATE
 	BinaryValue = '\x01\x02\x03\x04\x05'
 WHERE
-	ID = toInt32(1)
+	ID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,5 +16,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1)
+	t.ID = 1
 

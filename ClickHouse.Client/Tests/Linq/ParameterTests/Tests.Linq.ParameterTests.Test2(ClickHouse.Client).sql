@@ -7,10 +7,10 @@ SELECT
 FROM
 	Parent p
 WHERE
-	((p.ParentID = toInt32(1) OR p.ParentID >= toInt32(1)) OR p.ParentID >= toInt32(10000))
+	(p.ParentID = 1 OR p.ParentID >= 1 OR p.ParentID >= 10000)
 ORDER BY
 	p.ParentID
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -21,8 +21,8 @@ SELECT
 FROM
 	Parent p
 WHERE
-	((p.ParentID = toInt32(2) OR p.ParentID >= toInt32(2)) OR p.ParentID >= toInt32(10000))
+	(p.ParentID = 2 OR p.ParentID >= 2 OR p.ParentID >= 10000)
 ORDER BY
 	p.ParentID
-LIMIT toInt32(1)
+LIMIT 1
 

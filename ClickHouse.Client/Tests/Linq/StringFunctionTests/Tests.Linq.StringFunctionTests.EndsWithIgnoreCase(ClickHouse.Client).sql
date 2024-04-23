@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	endsWith(p.FirstName, 'JOHN') AND p.PersonID = toInt32(1)
+	endsWith(p.FirstName, 'JOHN') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,5 +16,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(NOT endsWith(p.FirstName, 'JOHN')) AND p.PersonID = toInt32(1)
+	NOT endsWith(p.FirstName, 'JOHN') AND p.PersonID = 1
 

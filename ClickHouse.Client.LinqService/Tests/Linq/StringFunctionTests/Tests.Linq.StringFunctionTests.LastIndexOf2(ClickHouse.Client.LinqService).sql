@@ -2,23 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p_1.ID,
-	p_1.FirstName_1
+	p.PersonID,
+	concat('123', p.FirstName, '012345')
 FROM
-	(
-		SELECT
-			concat('123', p.FirstName, '012345') as FirstName,
-			p.PersonID as ID,
-			p.FirstName as FirstName_1
-		FROM
-			Person p
-		WHERE
-			p.PersonID = toInt32(1)
-	) p_1
+	Person p
 WHERE
-	CASE
-		WHEN positionUTF8(p_1.FirstName, '123', toUInt32(toInt32(6))) = toInt32(0)
-			THEN toInt32(-1)
-		ELSE CHAR_LENGTH(p_1.FirstName) - positionUTF8(reverseUTF8(Substring(p_1.FirstName, toInt32(6), CHAR_LENGTH(p_1.FirstName) - toInt32(5))), '321') - toInt32(2)
-	END = toInt32(8)
+	p.PersonID = 1 AND CHAR_LENGTH(concat('123', p.FirstName, '012345')) - positionUTF8(reverseUTF8(Substring(concat('123', p.FirstName, '012345'), 6, CHAR_LENGTH(concat('123', p.FirstName, '012345')) - 5)), '321') = 10 AND
+	(positionUTF8(concat('123', p.FirstName, '012345'), '123', toUInt32(6)) <> 0 OR positionUTF8(concat('123', p.FirstName, '012345'), '123', toUInt32(6)) IS NULL)
 

@@ -6,5 +6,5 @@ SELECT
 FROM
 	Parent _
 WHERE
-	_.ParentID < toInt32(0)
+	_.ParentID < 0
 

@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID IN (toInt32(2), toInt32(3), toInt32(4))
+	_.PersonID IN (2, 3, 4)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID IN (toInt32(1), toInt32(3), toInt32(4))
+	_.PersonID IN (1, 3, 4)
 

@@ -2,10 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.ParentID,
-	x.Value1
+	x.Value1,
+	x.ParentID
 FROM
 	Parent x
 WHERE
-	(x.Value1 = toInt32(1) OR x.Value1 = toInt32(2))
+	(x.Value1 = 1 OR x.Value1 = 2)
 

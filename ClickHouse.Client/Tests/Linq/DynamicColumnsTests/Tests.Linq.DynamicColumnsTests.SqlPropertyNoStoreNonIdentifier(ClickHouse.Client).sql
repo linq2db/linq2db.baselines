@@ -26,7 +26,7 @@ INSERT INTO DynamicTable
 	`Some Value`
 )
 VALUES
-(toInt32(77),toInt32(0))
+(77,0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

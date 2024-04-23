@@ -3,13 +3,16 @@
 
 SELECT
 	_.PersonID,
-	_.LastName
+	_.LastName,
+	CASE
+		WHEN _.PersonID IN (1, 3) THEN true
+		ELSE false
+	END
 FROM
 	Person _
 ORDER BY
 	CASE
-		WHEN _.PersonID IN (toInt32(1), toInt32(3))
-			THEN true
+		WHEN _.PersonID IN (1, 3) THEN true
 		ELSE false
 	END
 

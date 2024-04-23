@@ -23,7 +23,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'null'
 )
 
@@ -37,7 +37,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'[{"Item1":1,"Item2":"one"},{"Item1":2,"Item2":"two"}]'
 )
 

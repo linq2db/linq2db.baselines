@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	(_.ID NOT IN (toInt32(1)) AND _.ID NOT IN (toInt32(2)))
+	(_.ID NOT IN (1) AND _.ID NOT IN (2))
 

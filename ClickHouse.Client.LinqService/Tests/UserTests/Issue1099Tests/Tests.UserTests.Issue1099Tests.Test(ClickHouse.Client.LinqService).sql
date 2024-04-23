@@ -27,10 +27,10 @@ INSERT INTO BackgroundTask
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(2),
-	toInt32(4),
-	toInt32(1)
+	3,
+	2,
+	4,
+	1
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ SELECT
 FROM
 	BackgroundTask task_1
 WHERE
-	task_1.PersonID = toInt32(1)
+	task_1.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -2,17 +2,17 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Person _
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Person _
-LIMIT toInt32(1)
+LIMIT 1
 

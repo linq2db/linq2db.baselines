@@ -2,17 +2,17 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.c1,
-	Count(*)
+	_1.c1,
+	COUNT(*)
 FROM
 	(
 		SELECT
-			toInt32(1) as c1
+			1 as c1
 		FROM
 			Person _
 		WHERE
 			1 = 0
-	) t1
+	) _1
 GROUP BY
-	t1.c1
+	_1.c1
 

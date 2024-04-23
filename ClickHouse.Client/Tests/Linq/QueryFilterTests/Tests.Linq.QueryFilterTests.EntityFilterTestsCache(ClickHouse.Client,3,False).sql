@@ -24,26 +24,27 @@ INSERT INTO MasterClass
 	IsDeleted
 )
 VALUES
-(toInt32(1),'MasterValue_1',false),
-(toInt32(2),'MasterValue_2',false),
-(toInt32(3),'MasterValue_3',true),
-(toInt32(4),'MasterValue_4',false),
-(toInt32(5),'MasterValue_5',false),
-(toInt32(6),'MasterValue_6',true),
-(toInt32(7),'MasterValue_7',false),
-(toInt32(8),'MasterValue_8',false),
-(toInt32(9),'MasterValue_9',true),
-(toInt32(10),'MasterValue_10',false)
+(1,'MasterValue_1',false),
+(2,'MasterValue_2',false),
+(3,'MasterValue_3',true),
+(4,'MasterValue_4',false),
+(5,'MasterValue_5',false),
+(6,'MasterValue_6',true),
+(7,'MasterValue_7',false),
+(8,'MasterValue_8',false),
+(9,'MasterValue_9',true),
+(10,'MasterValue_10',false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	e.Id,
-	e.Value,
-	e.IsDeleted
+	m_1.Id,
+	m_1.Value,
+	m_1.IsDeleted
 FROM
-	MasterClass e
+	MasterClass m_1
+		INNER JOIN MasterClass d ON d.Id = m_1.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

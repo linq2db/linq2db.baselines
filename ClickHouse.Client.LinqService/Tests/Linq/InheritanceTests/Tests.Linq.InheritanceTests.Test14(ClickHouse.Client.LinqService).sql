@@ -2,10 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.ChildID
+	c_1.ChildID
 FROM
-	Child x
+	Child c_1
 WHERE
-	x.ChildID = toInt32(10)
-LIMIT toInt32(1)
+	c_1.ChildID = 10
+LIMIT 1
 

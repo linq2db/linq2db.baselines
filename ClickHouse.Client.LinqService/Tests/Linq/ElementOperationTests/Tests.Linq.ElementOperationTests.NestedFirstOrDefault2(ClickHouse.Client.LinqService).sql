@@ -2,28 +2,16 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	detail.ParentID,
-	detail.ChildID
-FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
-		FROM
-			Parent p
-	) key_data_result
-		INNER JOIN Child detail ON key_data_result.ParentID = detail.ParentID
-ORDER BY
-	detail.ChildID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	p.ParentID,
-	p.Value1
+	t1.ParentID,
+	t1.ChildID
 FROM
 	Parent p
+		LEFT JOIN (
+			SELECT
+				a_Children.ParentID as ParentID,
+				a_Children.ChildID as ChildID,
+				ROW_NUMBER() OVER (PARTITION BY a_Children.ParentID ORDER BY a_Children.ChildID) as rn
+			FROM
+				Child a_Children
+		) t1 ON p.ParentID = t1.ParentID AND t1.rn <= 1
 

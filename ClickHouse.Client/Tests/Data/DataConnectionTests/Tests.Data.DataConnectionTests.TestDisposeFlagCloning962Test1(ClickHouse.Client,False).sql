@@ -59,25 +59,25 @@ INSERT INTO Products
 	QuantityPerUnit
 )
 VALUES
-('Prod 1',toInt32(1),'q 1'),
-('Prod 2',toInt32(1),'q 2'),
-('Prod 3',toInt32(3),'q 3'),
-('Prod 4',toInt32(3),'q 4'),
-('Prod 5',toInt32(1),'q 5'),
-('Prod 6',toInt32(1),'q 6')
+('Prod 1',1,'q 1'),
+('Prod 2',1,'q 2'),
+('Prod 3',3,'q 3'),
+('Prod 4',3,'q 4'),
+('Prod 5',1,'q 5'),
+('Prod 6',1,'q 6')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_Category.CategoryID,
-	detail.ProductID,
-	detail.ProductName,
-	detail.CategoryID,
-	detail.QuantityPerUnit
+	m_1.CategoryID,
+	d.ProductID,
+	d.ProductName,
+	d.CategoryID,
+	d.QuantityPerUnit
 FROM
-	Categories lw_Category
-		INNER JOIN Products detail ON lw_Category.CategoryID = detail.CategoryID
+	Categories m_1
+		INNER JOIN Products d ON m_1.CategoryID = d.CategoryID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

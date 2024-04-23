@@ -8,8 +8,7 @@ SELECT
 				*
 			FROM
 				Person _
-		)
-			THEN true
+		) THEN true
 		ELSE false
 	END
 

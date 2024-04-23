@@ -33,7 +33,7 @@ INSERT INTO EnumCardinality
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'A',
 	'A',
 	'A',
@@ -57,7 +57,7 @@ INSERT INTO EnumCardinality
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'B',
 	'B',
 	'B',
@@ -81,7 +81,7 @@ INSERT INTO EnumCardinality
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'C',
 	'C',
 	'C',
@@ -105,7 +105,7 @@ FROM
 	EnumCardinality _
 WHERE
 	_.Property4 > 'B'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -12,6 +12,6 @@ WHERE
 			r.Value1
 		FROM
 			Parent r
-		LIMIT toInt32(1)
+		LIMIT 1
 	) IS NOT NULL
 

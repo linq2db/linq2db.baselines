@@ -30,7 +30,7 @@ INSERT INTO Ints
 	Nil
 )
 VALUES
-(toInt32(1),toInt32(2),toInt32(3),toInt32(4),toInt32(5),NULL)
+(1,2,3,4,5,NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

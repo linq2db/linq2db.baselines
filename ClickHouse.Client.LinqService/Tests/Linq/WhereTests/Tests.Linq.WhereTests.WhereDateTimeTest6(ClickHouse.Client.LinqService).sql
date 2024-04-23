@@ -15,5 +15,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	toDate32(_.DateTimeValue) = toDateTime64('2009-09-20 00:00:00.0000000', 7)
+	toDate(_.DateTimeValue) = toDate(makeDateTime(2009, 9, 20, 0, 0, 0))
 

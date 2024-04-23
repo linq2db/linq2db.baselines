@@ -25,7 +25,7 @@ INSERT INTO Issue2546Class
 	Value
 )
 VALUES
-(toInt32(1),'Hello World')
+(1,'Hello World')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

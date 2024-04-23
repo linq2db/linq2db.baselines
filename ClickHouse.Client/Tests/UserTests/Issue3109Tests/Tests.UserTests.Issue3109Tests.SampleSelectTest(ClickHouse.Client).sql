@@ -25,7 +25,7 @@ INSERT INTO Left
 	LeftData
 )
 VALUES
-(toInt32(1),NULL)
+(1,NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -83,7 +83,7 @@ INSERT INTO LeftRight
 	RightId
 )
 VALUES
-(toInt32(1),'\x02')
+(1,'\x02')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -99,29 +99,24 @@ FROM
 	LeftRight t1
 		LEFT JOIN Left a_Left ON t1.LeftId = a_Left.LeftId
 		LEFT JOIN Right a_Right ON t1.RightId = a_Right.RightId
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_Left.LeftId,
-	detail.LeftId,
-	detail.RightId
+	m_1.LeftId,
+	d.LeftId,
+	d.RightId
 FROM
 	(
-		SELECT DISTINCT
-			t2.LeftId as LeftId
+		SELECT
+			t1.LeftId as LeftId
 		FROM
-			(
-				SELECT
-					t1.LeftId as LeftId
-				FROM
-					Left t1
-				LIMIT toInt32(1)
-			) t2
-	) lw_Left
-		INNER JOIN LeftRight detail ON lw_Left.LeftId = detail.LeftId
+			Left t1
+		LIMIT 1
+	) m_1
+		INNER JOIN LeftRight d ON m_1.LeftId = d.LeftId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -131,29 +126,24 @@ SELECT
 	t1.LeftData
 FROM
 	Left t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_Right.RightId,
-	detail.LeftId,
-	detail.RightId
+	m_1.RightId,
+	d.LeftId,
+	d.RightId
 FROM
 	(
-		SELECT DISTINCT
-			t2.RightId as RightId
+		SELECT
+			t1.RightId as RightId
 		FROM
-			(
-				SELECT
-					t1.RightId as RightId
-				FROM
-					Right t1
-				LIMIT toInt32(1)
-			) t2
-	) lw_Right
-		INNER JOIN LeftRight detail ON lw_Right.RightId = detail.RightId
+			Right t1
+		LIMIT 1
+	) m_1
+		INNER JOIN LeftRight d ON m_1.RightId = d.RightId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -163,7 +153,7 @@ SELECT
 	t1.RightData
 FROM
 	Right t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

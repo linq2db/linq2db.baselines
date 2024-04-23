@@ -10,11 +10,10 @@ SELECT
 				Person _
 			WHERE
 				CASE
-					WHEN _.FirstName = _.FirstName
-						THEN true
+					WHEN _.FirstName = _.FirstName THEN true
 					ELSE false
 				END <> CASE
-					WHEN _.MiddleName <> _.LastName
+					WHEN (_.MiddleName <> _.LastName OR _.MiddleName IS NULL)
 						THEN true
 					ELSE false
 				END

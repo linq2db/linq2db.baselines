@@ -13,10 +13,7 @@ SELECT
 					WHEN _.MiddleName = '123' THEN true
 					ELSE false
 				END = CASE
-					WHEN CASE
-						WHEN _.MiddleName = '1' THEN 'test'
-						ELSE _.MiddleName
-					END = 'test'
+					WHEN (_.MiddleName = '1' OR _.MiddleName = 'test' AND (_.MiddleName <> '1' OR _.MiddleName IS NULL))
 						THEN true
 					ELSE false
 				END

@@ -24,8 +24,8 @@ INSERT INTO StringEnumTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),'val=1',NULL),
-(toInt32(2),'value=2','value=33')
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ INSERT INTO StringEnumTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'val=1',
 	NULL
 )
@@ -85,7 +85,7 @@ INSERT INTO StringEnumTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'value=2',
 	'value=33'
 )
@@ -119,8 +119,8 @@ INSERT INTO StringEnumTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),'val=1',NULL),
-(toInt32(2),'value=2','value=33')
+(1,'val=1',NULL),
+(2,'value=2','value=33')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

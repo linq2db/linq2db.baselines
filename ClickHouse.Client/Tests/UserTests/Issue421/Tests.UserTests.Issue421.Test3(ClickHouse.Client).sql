@@ -26,7 +26,7 @@ INSERT INTO BlobClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'\x01\x02\x03'
 )
 
@@ -39,8 +39,8 @@ SELECT
 FROM
 	BlobClass _
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(1)
+	_.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -51,8 +51,8 @@ SELECT
 FROM
 	BlobClass _
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(1)
+	_.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

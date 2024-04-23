@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	(r.PersonID <> toInt32(0))
+	r.PersonID <> 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	(r.PersonID <> toInt32(0))
+	r.PersonID <> 0
 
