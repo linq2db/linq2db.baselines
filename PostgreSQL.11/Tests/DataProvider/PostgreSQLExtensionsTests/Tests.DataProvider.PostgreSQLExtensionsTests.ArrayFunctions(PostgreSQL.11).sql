@@ -171,6 +171,7 @@ SELECT
 	t1."StrArray" < t2."StrArray",
 	t1."StrArray" <= t2."StrArray",
 	t1."StrArray" > t2."StrArray",
+	t1."StrArray" > t2."StrArray",
 	t1."StrArray" @> t2."StrArray",
 	t1."StrArray" <@ t2."StrArray",
 	t1."StrArray" && t2."StrArray",
@@ -183,7 +184,7 @@ SELECT
 	ARRAY_APPEND(t1."StrArray", t2."StrValue"),
 	ARRAY_APPEND(t1."IntArray", t2."Id"),
 	ARRAY_APPEND(t1."LongArray", t2."LongValue"),
-	ARRAY_APPEND(t1."LongArray", Cast((t2."IntValue" + 2) as BigInt)),
+	ARRAY_APPEND(t1."LongArray", (t2."IntValue" + 2)::BigInt),
 	ARRAY_APPEND(t1."DoubleArray", t2."DoubleValue"),
 	ARRAY_APPEND(t1."DecimalArray", t2."DecimalValue"),
 	ARRAY_CAT(t1."StrArray", t2."StrArray"),
@@ -207,7 +208,7 @@ FROM
 	"SampleClass" t1
 		INNER JOIN "SampleClass" t2 ON t2."Id" <> t1."Id"
 WHERE
-	(((((t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray") OR (t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray")) OR ((t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray")) OR (t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")))) OR (((t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray")) OR (t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray"))) OR ((t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray")) OR (t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray"))))) OR (((t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(:arr)) OR (t1."IntValue" < ANY(:arr) OR t1."IntValue" <= ANY(:arr))) OR ((t1."IntValue" > ANY(:arr) OR t1."IntValue" >= ANY(:arr)) OR t1."IntValue" <> ANY(:arr))))
+	(t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray" OR t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray" OR t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray") OR t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray") OR t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray") OR t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray") OR t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray") OR t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray") OR t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(:arr) OR t1."IntValue" < ANY(:arr) OR t1."IntValue" <= ANY(:arr) OR t1."IntValue" > ANY(:arr) OR t1."IntValue" >= ANY(:arr) OR t1."IntValue" <> ANY(:arr))
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

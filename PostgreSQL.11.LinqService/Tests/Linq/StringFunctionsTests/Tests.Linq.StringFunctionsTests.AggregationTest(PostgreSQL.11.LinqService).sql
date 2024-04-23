@@ -109,15 +109,13 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(t1."Value1"),
-	STRING_AGG(t1."Value1", ' -> ')
+	MAX(g_1."Value1"),
+	STRING_AGG(g_1."Value1", ' -> ')
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value1"
-ORDER BY
-	t1."Id"
+	g_1."Id",
+	g_1."Value1"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
