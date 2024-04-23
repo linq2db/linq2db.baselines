@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -30,8 +30,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -43,14 +41,14 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`Person` `t1`
+	`Person` `_`
 WHERE
-	`t1`.`PersonID` > 4
+	`_`.`PersonID` > 4
 

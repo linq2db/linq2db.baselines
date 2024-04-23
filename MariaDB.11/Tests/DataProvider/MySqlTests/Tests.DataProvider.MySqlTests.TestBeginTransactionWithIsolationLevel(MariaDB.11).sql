@@ -2,11 +2,11 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `p`
 SET
-	`t1`.`Value1` = 1
+	`p`.`Value1` = 1
 WHERE
-	`t1`.`ParentID` = 1
+	`p`.`ParentID` = 1
 
 BeforeExecute
 BeginTransaction(Unspecified)
@@ -14,16 +14,14 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `p`
 SET
-	`t1`.`Value1` = NULL
+	`p`.`Value1` = NULL
 WHERE
-	`t1`.`ParentID` = 1
+	`p`.`ParentID` = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -32,14 +30,12 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -48,5 +44,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-LIMIT @take
+LIMIT 1
 

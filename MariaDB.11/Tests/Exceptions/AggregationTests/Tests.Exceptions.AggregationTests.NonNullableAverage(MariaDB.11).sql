@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Avg(`_`.`ParentID`)
+	AVG(`_`.`ParentID`)
 FROM
 	`Parent` `_`
 WHERE

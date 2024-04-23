@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p`.`DateTimeValue`
+	Extract(year from `p`.`DateTimeValue`)
 FROM
 	`LinqDataTypes` `p`
 

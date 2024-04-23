@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `_`
 WHERE
-	@param = `_`.`SmallIntValue`
+	CAST(@param AS SIGNED) = `_`.`SmallIntValue`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

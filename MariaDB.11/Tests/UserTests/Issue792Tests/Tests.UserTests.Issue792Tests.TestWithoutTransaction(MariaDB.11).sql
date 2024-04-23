@@ -273,9 +273,9 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `_`
 FROM
-	`AllTypes` `t1`
+	`AllTypes` `_`
 WHERE
-	`t1`.`char20DataType` = 'issue792'
+	`_`.`char20DataType` = 'issue792'
 

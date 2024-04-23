@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @id Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	`Person` `_`
 WHERE
-	`_`.`PersonID` IS NULL
+	`_`.`PersonID` = @id
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

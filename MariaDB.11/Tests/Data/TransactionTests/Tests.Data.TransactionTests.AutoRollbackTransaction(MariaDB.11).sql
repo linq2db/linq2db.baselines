@@ -22,18 +22,16 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 UPDATE
-	`Parent` `t1`
+	`Parent` `t`
 SET
-	`t1`.`Value1` = 1012
+	`t`.`Value1` = 1012
 WHERE
-	`t1`.`ParentID` = 1010
+	`t`.`ParentID` = 1010
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`ParentID`,
@@ -42,5 +40,5 @@ FROM
 	`Parent` `t`
 WHERE
 	`t`.`ParentID` = 1010
-LIMIT @take
+LIMIT 1
 

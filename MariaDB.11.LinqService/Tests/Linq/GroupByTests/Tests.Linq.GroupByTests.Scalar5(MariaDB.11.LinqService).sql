@@ -2,9 +2,9 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Max(`ch`.`ParentID`)
+	MAX(`g_1`.`ParentID`)
 FROM
-	`Child` `ch`
+	`Child` `g_1`
 GROUP BY
-	`ch`.`ParentID`
+	`g_1`.`ParentID`
 

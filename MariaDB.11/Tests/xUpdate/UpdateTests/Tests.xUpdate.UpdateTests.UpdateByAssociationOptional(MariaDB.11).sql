@@ -55,13 +55,13 @@ DECLARE @id Int32
 SET     @id = 3
 
 UPDATE
+	`MainTable` `a_MainOptional`,
 	`MainTable` `_`
 		LEFT JOIN `AssociatedTable` `a_AssociatedOptional` ON `_`.`Id` = `a_AssociatedOptional`.`Id`
-		LEFT JOIN `MainTable` `a_MainOptional` ON `a_AssociatedOptional`.`Id` = `a_MainOptional`.`Id`
 SET
-	`_`.`Field` = 'test'
+	`a_MainOptional`.`Field` = 'test'
 WHERE
-	`_`.`Id` = @id
+	`_`.`Id` = @id AND `a_AssociatedOptional`.`Id` = `a_MainOptional`.`Id`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

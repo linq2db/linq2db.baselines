@@ -45,5 +45,14 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Text`
+FROM
+	`Issue2816Table` `t1`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
 DROP TABLE IF EXISTS `Issue2816Table`
 
