@@ -36,8 +36,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(8168))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(1))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(3))
 )
 
 BeforeExecute
@@ -90,8 +90,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(1))
 )
 
 BeforeExecute
@@ -108,8 +108,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(2))
 )
 
 BeforeExecute
@@ -126,8 +126,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	@Id,
-	@Text
+	CAST(@Id AS Int),
+	CAST(@Text AS NVarChar(255))
 )
 
 BeforeExecute
@@ -141,6 +141,15 @@ FROM
 WHERE
 	("p"."Text" IS NULL OR LTRIM("p"."Text", '	
                  　') = '')
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id",
+	"t1"."Text"
+FROM
+	"Issue2816Table" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

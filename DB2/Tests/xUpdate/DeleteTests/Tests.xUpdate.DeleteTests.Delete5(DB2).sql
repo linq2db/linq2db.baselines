@@ -2,17 +2,17 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" > 1000
+	"_"."ParentID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" > 1000
+	"_"."ParentID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -26,7 +26,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -42,7 +42,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -60,9 +60,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "_"
 WHERE
-	"t1"."ParentID" IN (1001, 1002)
+	"_"."ParentID" IN (1001, 1002)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -50,12 +50,12 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
@@ -84,25 +84,25 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Ints"
+	"Ints" "i"
 SET
-	"Ints"."One" = "Ints"."Two" * 5,
-	("Ints"."Two", "Ints"."Three") = (200, "Ints"."Three" * 10),
-	("Ints"."Four", "Ints"."Nil") = ("Ints"."One" * "Ints"."Four", 600)
+	"One" = "i"."Two" * 5,
+	("Two", "Three") = (200, "i"."Three" * 10),
+	("Four", "Nil") = ("i"."One" * "i"."Four", 600)
 WHERE
-	"Ints"."One" = 10
+	"i"."One" = 10
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

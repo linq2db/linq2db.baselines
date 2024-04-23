@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	CAST(@FirstName AS NVarChar(4)),
+	CAST(@LastName AS NVarChar(10)),
+	CAST(@Gender AS NChar(1))
 )
 
 BeforeExecute
@@ -28,11 +34,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

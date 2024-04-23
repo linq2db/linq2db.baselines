@@ -5,7 +5,7 @@ SET     @p = 1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN CAST(@p AS Int) IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM
@@ -23,7 +23,7 @@ SET     @p = -1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN CAST(@p AS Int) IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM

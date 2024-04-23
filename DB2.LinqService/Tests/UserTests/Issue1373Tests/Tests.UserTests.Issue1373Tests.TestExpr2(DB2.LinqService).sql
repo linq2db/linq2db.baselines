@@ -24,8 +24,6 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -35,7 +33,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	@Field1
+	NULL
 )
 
 BeforeExecute

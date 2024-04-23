@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Date("t"."DateTimeValue")
+	DATE("t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

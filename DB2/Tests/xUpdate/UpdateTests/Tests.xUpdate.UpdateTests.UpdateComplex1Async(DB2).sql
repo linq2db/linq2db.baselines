@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@Gender,
-			@Name_FirstName,
-			@Name_MiddleName,
-			@Name_LastName
+			CAST(@Gender AS NChar(1)),
+			CAST(@Name_FirstName AS NVarChar(13)),
+			CAST(@Name_MiddleName AS NVarChar(255)),
+			CAST(@Name_LastName AS NVarChar(5))
 		)
 	)
 
@@ -66,14 +66,14 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = @Gender,
-	"Person"."FirstName" = @Name_FirstName,
-	"Person"."MiddleName" = @Name_MiddleName,
-	"Person"."LastName" = @Name_LastName
+	"Gender" = @Gender,
+	"FirstName" = @Name_FirstName,
+	"MiddleName" = @Name_MiddleName,
+	"LastName" = @Name_LastName
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)

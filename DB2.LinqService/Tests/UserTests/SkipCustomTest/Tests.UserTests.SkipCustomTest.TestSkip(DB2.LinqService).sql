@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_SkipCustom_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(4)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "PR_1598_SkipCustom_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(3))
 )
 
 BeforeExecute

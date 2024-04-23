@@ -50,12 +50,12 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
@@ -76,7 +76,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT (("i"."One", "i"."Two", "i"."Three") = ("i"."One", "i"."One" * 2, "i"."Four" - 1) OR ("i"."One", "i"."Two", "i"."Three") = (0, 7, 9) OR ("i"."One", "i"."Two", "i"."Three") = (NULL, -1, "i"."Four"))
+	("i"."One", "i"."Two", "i"."Three") <> ("i"."One", "i"."One" * 2, "i"."Four" - 1) AND
+	("i"."One", "i"."Two", "i"."Three") <> (0, 7, 9) AND
+	("i"."One", "i"."Two", "i"."Three") <> (NULL, -1, "i"."Four")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -86,7 +88,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT (("i"."One", "i"."Three", "i"."Four") = ("i"."One", "i"."One" * 2, "i"."Four" - 1) OR ("i"."One", "i"."Three", "i"."Four") = (0, 7, 9) OR ("i"."One", "i"."Three", "i"."Four") = (NULL, 2, "i"."Four"))
+	("i"."One", "i"."Three", "i"."Four") <> ("i"."One", "i"."One" * 2, "i"."Four" - 1) AND
+	("i"."One", "i"."Three", "i"."Four") <> (0, 7, 9) AND
+	("i"."One", "i"."Three", "i"."Four") <> (NULL, 2, "i"."Four")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -96,7 +100,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT (("i"."One", "i"."Two", "i"."Four") = ("i"."One", "i"."One" * 2, "i"."Four" - 1) OR ("i"."One", "i"."Two", "i"."Four") = (0, 7, 9) OR ("i"."One", "i"."Two", "i"."Four") = (NULL, 2, "i"."Four"))
+	("i"."One", "i"."Two", "i"."Four") <> ("i"."One", "i"."One" * 2, "i"."Four" - 1) AND
+	("i"."One", "i"."Two", "i"."Four") <> (0, 7, 9) AND
+	("i"."One", "i"."Two", "i"."Four") <> (NULL, 2, "i"."Four")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -106,7 +112,9 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	NOT (("i"."Nil", "i"."Two", "i"."Four") = ("i"."One", "i"."One" * 2, "i"."Four" - 1) OR ("i"."Nil", "i"."Two", "i"."Four") = (0, 7, 9) OR ("i"."Nil", "i"."Two", "i"."Four") = (NULL, 2, "i"."Four"))
+	("i"."Nil", "i"."Two", "i"."Four") <> ("i"."One", "i"."One" * 2, "i"."Four" - 1) AND
+	("i"."Nil", "i"."Two", "i"."Four") <> (0, 7, 9) AND
+	("i"."Nil", "i"."Two", "i"."Four") <> (NULL, 2, "i"."Four")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

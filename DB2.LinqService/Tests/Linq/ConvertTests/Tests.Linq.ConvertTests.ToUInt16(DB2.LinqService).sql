@@ -2,9 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Int("t"."MoneyValue")
+	"p_1"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CAST(Floor("p"."MoneyValue") AS Int) as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "p_1"
 WHERE
-	Int("t"."MoneyValue") > 0
+	"p_1"."c1" > 0
 

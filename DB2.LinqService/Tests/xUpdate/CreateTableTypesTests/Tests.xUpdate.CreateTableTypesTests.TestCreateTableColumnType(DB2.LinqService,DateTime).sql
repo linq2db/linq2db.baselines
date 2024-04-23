@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@DateTime
+	CAST(@Id AS Int),
+	CAST(@DateTime AS timestamp)
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@DateTime
+	CAST(@Id AS Int),
+	CAST(@DateTime AS timestamp)
 )
 
 BeforeExecute

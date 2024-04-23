@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@Gender,
-			@Name_FirstName,
-			@Name_MiddleName,
-			@Name_LastName
+			CAST(@Gender AS NChar(1)),
+			CAST(@Name_FirstName AS NVarChar(13)),
+			CAST(@Name_MiddleName AS NVarChar(255)),
+			CAST(@Name_LastName AS NVarChar(5))
 		)
 	)
 
@@ -39,11 +39,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Person"
+	"Person" "_"
 SET
-	"Person"."LastName" = "Person"."FirstName"
+	"LastName" = "_"."FirstName"
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	"_"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
