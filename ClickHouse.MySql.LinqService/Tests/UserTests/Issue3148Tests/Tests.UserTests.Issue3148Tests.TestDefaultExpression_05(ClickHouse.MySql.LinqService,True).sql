@@ -2,26 +2,35 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			p.ParentID as ParentID
 		FROM
 			Parent p
-	) key_data_result
-		INNER JOIN Child detail ON key_data_result.ParentID = detail.ParentID
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.ParentID,
-	p.Value1
+	a_GrandChildren.ParentID,
+	a_GrandChildren.ChildID,
+	a_GrandChildren.GrandChildID
+FROM
+	GrandChild a_GrandChildren
+WHERE
+	0 = a_GrandChildren.ParentID
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	p.ParentID
 FROM
 	Parent p
 
@@ -29,26 +38,35 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			p.ParentID as ParentID
 		FROM
 			Parent p
-	) key_data_result
-		INNER JOIN Child detail ON key_data_result.ParentID = detail.ParentID
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.ParentID,
-	p.Value1
+	a_GrandChildren.ParentID,
+	a_GrandChildren.ChildID,
+	a_GrandChildren.GrandChildID
+FROM
+	GrandChild a_GrandChildren
+WHERE
+	0 = a_GrandChildren.ParentID
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	p.ParentID
 FROM
 	Parent p
 

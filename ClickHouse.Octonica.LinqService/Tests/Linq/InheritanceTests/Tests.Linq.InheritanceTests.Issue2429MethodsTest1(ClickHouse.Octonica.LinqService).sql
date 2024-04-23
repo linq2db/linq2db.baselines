@@ -26,8 +26,8 @@ INSERT INTO BaseTable
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(100)
+	1,
+	100
 )
 
 BeforeExecute
@@ -39,8 +39,8 @@ SELECT
 FROM
 	BaseTable x
 WHERE
-	x.Id = toInt32(1)
-LIMIT toInt32(1)
+	x.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -51,8 +51,8 @@ SELECT
 FROM
 	BaseTable x
 WHERE
-	x.Id = toInt32(1) AND x.Value = toInt32(100)
-LIMIT toInt32(1)
+	x.Id = 1 AND x.Value = 100
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

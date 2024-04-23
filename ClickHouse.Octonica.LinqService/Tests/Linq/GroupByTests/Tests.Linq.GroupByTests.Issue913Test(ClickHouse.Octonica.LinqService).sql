@@ -26,7 +26,7 @@ INSERT INTO Issue913Test
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Issue913Test
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'A'
 )
 
@@ -54,7 +54,7 @@ INSERT INTO Issue913Test
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'D'
 )
 
@@ -62,27 +62,20 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.c1,
-	Count(*)
+	g_2.c1,
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN toUInt8(1)
-				ELSE toUInt8(0)
-			END as Key_1,
-			CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN toUInt8(1)
-				ELSE toUInt8(0)
+				WHEN g_1.TradingStatus = 'D' THEN true
+				ELSE false
 			END as c1
 		FROM
-			Issue913Test selectParam
-	) t1
+			Issue913Test g_1
+	) g_2
 GROUP BY
-	t1.Key_1,
-	t1.c1
+	g_2.c1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

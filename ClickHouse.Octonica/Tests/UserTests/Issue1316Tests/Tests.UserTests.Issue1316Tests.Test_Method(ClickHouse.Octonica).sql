@@ -24,7 +24,7 @@ INSERT INTO Issue1316Tests
 )
 VALUES
 (
-	toInt32(5)
+	5
 )
 
 BeforeExecute
@@ -35,8 +35,8 @@ SELECT
 FROM
 	Issue1316Tests _
 WHERE
-	_.ID = toInt32(5)
-LIMIT toInt32(2)
+	_.ID = 5
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

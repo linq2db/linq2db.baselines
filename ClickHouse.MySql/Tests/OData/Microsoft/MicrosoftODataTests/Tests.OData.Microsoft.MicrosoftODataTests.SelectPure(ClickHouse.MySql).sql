@@ -27,20 +27,31 @@ INSERT INTO odata_person
 	Title
 )
 VALUES
-('N1',toInt32(3),'Engineer'),
-('N2',toInt32(4),'Engineer')
+('N1',3,'Engineer'),
+('N2',4,'Engineer')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	'Title',
-	selectParam.Title,
-	sumOrNull(selectParam.YearsExperience)
+	it_1.c1,
+	it_1.c2,
+	sumOrNull(it_1.Value_1)
 FROM
-	odata_person selectParam
+	(
+		SELECT
+			'Title' as c1,
+			CASE
+				WHEN it.Name IS NULL THEN NULL
+				ELSE it.Title
+			END as c2,
+			it.YearsExperience as Value_1
+		FROM
+			odata_person it
+	) it_1
 GROUP BY
-	selectParam.Title
+	it_1.c1,
+	it_1.c2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

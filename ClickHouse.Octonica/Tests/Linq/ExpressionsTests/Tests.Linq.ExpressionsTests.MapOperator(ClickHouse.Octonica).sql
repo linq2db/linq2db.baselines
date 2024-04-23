@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	bitShiftRight(toInt64(p.ParentID), toInt32(1)) > toInt32(0)
+	bitShiftRight(toInt64(p.ParentID), 1) > toInt64(0)
 

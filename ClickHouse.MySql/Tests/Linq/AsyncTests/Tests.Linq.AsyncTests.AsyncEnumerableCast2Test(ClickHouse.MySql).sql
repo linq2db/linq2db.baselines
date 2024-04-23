@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent x
 WHERE
-	x.ParentID > toInt32(1)
+	x.ParentID > 1
 

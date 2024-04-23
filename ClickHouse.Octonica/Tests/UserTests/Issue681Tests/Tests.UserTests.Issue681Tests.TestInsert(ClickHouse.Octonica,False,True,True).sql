@@ -23,7 +23,7 @@ SELECT
 	currentDatabase()
 FROM
 	LinqDataTypes _
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -35,8 +35,8 @@ INSERT INTO testdb1.Issue681Table
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(10)
+	5,
+	10
 )
 
 BeforeExecute

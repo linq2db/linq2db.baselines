@@ -28,7 +28,7 @@ INSERT INTO Issue1303
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'\x01\x02\x03',
 	'\x04\x05'
 )
@@ -43,8 +43,8 @@ SELECT
 FROM
 	Issue1303 _
 WHERE
-	_.ID = toInt32(1)
-LIMIT toInt32(2)
+	_.ID = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,7 +57,7 @@ FROM
 	Issue1303 _
 WHERE
 	_.Array = '\x01\x02\x03'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -70,7 +70,7 @@ FROM
 	Issue1303 _
 WHERE
 	_.Binary = '\x04\x05'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

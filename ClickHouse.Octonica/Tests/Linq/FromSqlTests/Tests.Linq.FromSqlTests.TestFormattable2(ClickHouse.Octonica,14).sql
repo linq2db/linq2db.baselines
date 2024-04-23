@@ -22,26 +22,26 @@ INSERT INTO sample_class
 	value
 )
 VALUES
-(toInt32(1),'Str_1'),
-(toInt32(2),'Str_2'),
-(toInt32(3),'Str_3'),
-(toInt32(4),'Str_4'),
-(toInt32(5),'Str_5'),
-(toInt32(6),'Str_6'),
-(toInt32(7),'Str_7'),
-(toInt32(8),'Str_8'),
-(toInt32(9),'Str_9'),
-(toInt32(10),'Str_10'),
-(toInt32(11),'Str_11'),
-(toInt32(12),'Str_12'),
-(toInt32(13),'Str_13'),
-(toInt32(14),'Str_14'),
-(toInt32(15),'Str_15'),
-(toInt32(16),'Str_16'),
-(toInt32(17),'Str_17'),
-(toInt32(18),'Str_18'),
-(toInt32(19),'Str_19'),
-(toInt32(20),'Str_20')
+(1,'Str_1'),
+(2,'Str_2'),
+(3,'Str_3'),
+(4,'Str_4'),
+(5,'Str_5'),
+(6,'Str_6'),
+(7,'Str_7'),
+(8,'Str_8'),
+(9,'Str_9'),
+(10,'Str_10'),
+(11,'Str_11'),
+(12,'Str_12'),
+(13,'Str_13'),
+(14,'Str_14'),
+(15,'Str_15'),
+(16,'Str_16'),
+(17,'Str_17'),
+(18,'Str_18'),
+(19,'Str_19'),
+(20,'Str_20')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -51,10 +51,10 @@ SELECT
 	c_1.id
 FROM
 	(
-		SELECT * FROM sample_class where id >= toInt64(5) and id < toInt32(14)
+		SELECT * FROM sample_class where id >= toInt64(5) and id < 14
 	) c_1
 WHERE
-	c_1.id > toInt32(10)
+	c_1.id > 10
 ORDER BY
 	c_1.id
 
@@ -67,7 +67,7 @@ SELECT
 FROM
 	sample_class t
 WHERE
-	t.id >= toInt32(5) AND t.id < toInt32(14) AND t.id > toInt32(10)
+	t.id >= 5 AND t.id < 14 AND t.id > 10
 ORDER BY
 	t.id
 

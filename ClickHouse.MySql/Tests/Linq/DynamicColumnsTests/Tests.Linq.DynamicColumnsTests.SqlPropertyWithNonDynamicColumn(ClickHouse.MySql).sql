@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(1)
+	x.PersonID = 1
 

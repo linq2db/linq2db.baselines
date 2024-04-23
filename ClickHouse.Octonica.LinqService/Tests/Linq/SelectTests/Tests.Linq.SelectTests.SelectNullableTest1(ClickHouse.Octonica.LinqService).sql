@@ -16,7 +16,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1000),
+	1000,
 	toDecimal128('0', 10),
 	NULL,
 	NULL,
@@ -45,8 +45,8 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	_.ID = toInt32(1000)
-LIMIT toInt32(1)
+	_.ID = 1000
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -54,5 +54,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID = toInt32(1000)
+	ID = 1000
 

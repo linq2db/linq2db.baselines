@@ -30,7 +30,7 @@ INSERT INTO Ints
 	Nil
 )
 VALUES
-(toInt32(1),toInt32(2),toInt32(3),toInt32(4),toInt32(5),NULL)
+(1,2,3,4,5,NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -40,7 +40,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	(i.One, i.Two) NOT BETWEEN (i.One, i.One * toInt32(2)) AND (i.One, i.One + i.One)
+	(i.One, i.Two) NOT BETWEEN (i.One, i.One * 2) AND (i.One, i.One + i.One)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

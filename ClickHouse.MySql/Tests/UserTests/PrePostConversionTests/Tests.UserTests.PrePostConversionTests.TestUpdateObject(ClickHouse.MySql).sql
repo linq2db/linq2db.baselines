@@ -29,8 +29,8 @@ INSERT INTO ValuesTable
 VALUES
 (
 	toInt64(1),
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -42,7 +42,7 @@ SELECT
 	t1.SomeValue2
 FROM
 	ValuesTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -50,8 +50,8 @@ BeforeExecute
 ALTER TABLE
 	ValuesTable
 UPDATE
-	SomeValue1 = toInt32(8),
-	SomeValue2 = toInt32(8)
+	SomeValue1 = 8,
+	SomeValue2 = 8
 WHERE
 	Id = toInt64(1)
 
@@ -64,7 +64,7 @@ SELECT
 	t1.SomeValue2
 FROM
 	ValuesTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

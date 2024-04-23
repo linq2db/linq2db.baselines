@@ -29,7 +29,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'V1',
 	'V2',
 	NULL,
@@ -49,7 +49,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL,
 	'Z2',
 	NULL,
@@ -69,7 +69,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'Z1',
 	NULL,
 	NULL,

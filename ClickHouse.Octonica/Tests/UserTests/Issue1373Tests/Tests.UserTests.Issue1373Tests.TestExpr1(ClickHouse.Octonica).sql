@@ -26,7 +26,7 @@ INSERT INTO Issue1373Tests
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Issue1373Tests
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL
 )
 
@@ -54,7 +54,7 @@ INSERT INTO Issue1373Tests
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'test'
 )
 

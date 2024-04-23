@@ -28,13 +28,13 @@ INSERT INTO TempTable
 	ID
 )
 VALUES
-(toInt32(1)),
-(toInt32(2)),
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5)),
-(toInt32(6)),
-(toInt32(7))
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

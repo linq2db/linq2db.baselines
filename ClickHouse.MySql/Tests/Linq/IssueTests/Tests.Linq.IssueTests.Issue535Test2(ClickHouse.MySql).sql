@@ -26,11 +26,11 @@ SELECT
 	q.Id,
 	q.Name,
 	q.ContactEmail,
-	Coalesce(q.Enabled, false)
+	q.Enabled
 FROM
 	CustomerBase q
 WHERE
-	q.ClientType = 'Client' AND (position(q.Name, 'test') > toInt32(0) OR position(q.ContactEmail, 'test') > toInt32(0))
+	q.ClientType = 'Client' AND (position(q.Name, 'test') > 0 OR position(q.ContactEmail, 'test') > 0)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

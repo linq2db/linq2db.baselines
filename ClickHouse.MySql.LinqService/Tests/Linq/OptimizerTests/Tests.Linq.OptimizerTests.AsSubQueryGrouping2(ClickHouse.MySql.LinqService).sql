@@ -40,14 +40,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(10),
-	toInt32(100),
-	toInt32(200),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(3000),
+	1,
+	2,
+	10,
+	100,
+	200,
+	1000,
+	2000,
+	3000,
 	'Str_0'
 )
 
@@ -68,14 +68,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(3),
-	toInt32(20),
-	toInt32(100),
-	toInt32(300),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(4000),
+	1,
+	3,
+	20,
+	100,
+	300,
+	1000,
+	2000,
+	4000,
 	'Str_1'
 )
 
@@ -96,14 +96,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(4),
-	toInt32(30),
-	toInt32(100),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(5000),
+	1,
+	4,
+	30,
+	100,
+	400,
+	1000,
+	2000,
+	5000,
 	'Str_2'
 )
 
@@ -124,14 +124,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(3),
-	toInt32(40),
-	toInt32(200),
-	toInt32(300),
-	toInt32(1000),
-	toInt32(3000),
-	toInt32(4000),
+	2,
+	3,
+	40,
+	200,
+	300,
+	1000,
+	3000,
+	4000,
 	'Str_3'
 )
 
@@ -152,14 +152,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(4),
-	toInt32(50),
-	toInt32(200),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(3000),
-	toInt32(5000),
+	2,
+	4,
+	50,
+	200,
+	400,
+	1000,
+	3000,
+	5000,
 	'Str_4'
 )
 
@@ -180,14 +180,14 @@ INSERT INTO FirstOptimizerData
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(4),
-	toInt32(60),
-	toInt32(300),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(4000),
-	toInt32(5000),
+	3,
+	4,
+	60,
+	300,
+	400,
+	1000,
+	4000,
+	5000,
 	'Str_5'
 )
 
@@ -233,14 +233,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(10),
-	toInt32(100),
-	toInt32(200),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(3000),
+	1,
+	2,
+	10,
+	100,
+	200,
+	1000,
+	2000,
+	3000,
 	'Str_0'
 )
 
@@ -261,14 +261,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(3),
-	toInt32(20),
-	toInt32(100),
-	toInt32(300),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(4000),
+	1,
+	3,
+	20,
+	100,
+	300,
+	1000,
+	2000,
+	4000,
 	'Str_1'
 )
 
@@ -289,14 +289,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(4),
-	toInt32(30),
-	toInt32(100),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(2000),
-	toInt32(5000),
+	1,
+	4,
+	30,
+	100,
+	400,
+	1000,
+	2000,
+	5000,
 	'Str_2'
 )
 
@@ -317,14 +317,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(3),
-	toInt32(40),
-	toInt32(200),
-	toInt32(300),
-	toInt32(1000),
-	toInt32(3000),
-	toInt32(4000),
+	2,
+	3,
+	40,
+	200,
+	300,
+	1000,
+	3000,
+	4000,
 	'Str_3'
 )
 
@@ -345,14 +345,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(4),
-	toInt32(50),
-	toInt32(200),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(3000),
-	toInt32(5000),
+	2,
+	4,
+	50,
+	200,
+	400,
+	1000,
+	3000,
+	5000,
 	'Str_4'
 )
 
@@ -373,14 +373,14 @@ INSERT INTO SecondOptimizerData
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(4),
-	toInt32(60),
-	toInt32(300),
-	toInt32(400),
-	toInt32(1000),
-	toInt32(4000),
-	toInt32(5000),
+	3,
+	4,
+	60,
+	300,
+	400,
+	1000,
+	4000,
+	5000,
 	'Str_5'
 )
 
@@ -388,19 +388,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	COUNT(x.Key2),
-	COUNT(x.Key1)
+	COUNT(x_1.Key2),
+	COUNT(x_1.Key1)
 FROM
 	(
 		SELECT
-			t1.Key1 as Key1,
-			t1.Key2 as Key2
+			x.Key2 as Key2,
+			x.Key1 as Key1
 		FROM
-			FirstOptimizerData t1
+			FirstOptimizerData x
 		GROUP BY
-			t1.Key1,
-			t1.Key2
-	) x
+			x.Key1,
+			x.Key2
+	) x_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

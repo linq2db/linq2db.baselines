@@ -2,67 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.PersonID
+	m_1.PersonID,
+	m_1.FirstName,
+	m_1.PersonID,
+	m_1.LastName,
+	m_1.MiddleName,
+	m_1.Gender
 FROM
-	Person t1
-GROUP BY
-	t1.PersonID
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(4)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(3)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(2)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(1)
+	Person m_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -78,55 +25,22 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	m_1.PersonID,
+	m_1.FirstName,
+	m_1.PersonID,
+	m_1.LastName,
+	m_1.MiddleName,
+	m_1.Gender
 FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(4)
+	Person m_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
+	t1.PersonID
 FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(3)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(2)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.PersonID = toInt32(1)
+	Person t1
+GROUP BY
+	t1.PersonID
 

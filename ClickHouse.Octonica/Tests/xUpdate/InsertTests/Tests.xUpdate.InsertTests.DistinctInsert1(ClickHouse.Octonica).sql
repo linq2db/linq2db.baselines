@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -33,5 +33,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

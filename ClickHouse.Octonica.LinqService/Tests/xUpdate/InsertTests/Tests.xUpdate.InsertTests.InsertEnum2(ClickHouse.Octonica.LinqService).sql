@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16,8 +16,8 @@ INSERT INTO Parent
 )
 VALUES
 (
-	toInt32(1001),
-	toInt32(1)
+	1001,
+	1
 )
 
 BeforeExecute
@@ -28,7 +28,7 @@ SELECT
 FROM
 	Parent _
 WHERE
-	_.ParentID = toInt32(1001)
+	_.ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -36,5 +36,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 

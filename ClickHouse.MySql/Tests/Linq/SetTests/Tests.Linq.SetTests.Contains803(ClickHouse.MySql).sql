@@ -9,5 +9,5 @@ FROM
 		INNER JOIN Child ch ON p.ParentID = ch.ParentID
 		INNER JOIN GrandChild gc ON ch.ChildID = gc.ChildID
 WHERE
-	ch.ChildID = toInt32(11) AND gc.GrandChildID = toInt32(111)
+	ch.ChildID = 11 AND gc.GrandChildID = 111
 

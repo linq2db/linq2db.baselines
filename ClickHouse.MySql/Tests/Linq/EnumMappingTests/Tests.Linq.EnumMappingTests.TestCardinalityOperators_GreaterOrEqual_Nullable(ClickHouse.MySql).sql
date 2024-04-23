@@ -32,9 +32,9 @@ INSERT INTO EnumCardinality
 	Property6
 )
 VALUES
-(toInt32(1),'A','A','A','A','A','A'),
-(toInt32(2),'B','B','B','B','B','B'),
-(toInt32(3),'C','C','C','C','C','C')
+(1,'A','A','A','A','A','A'),
+(2,'B','B','B','B','B','B'),
+(3,'C','C','C','C','C','C')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -51,7 +51,7 @@ FROM
 	EnumCardinality _
 WHERE
 	_.Property2 >= 'C'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

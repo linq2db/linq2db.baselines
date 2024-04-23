@@ -11,7 +11,7 @@ FROM
 	Person t
 WHERE
 	t.FirstName = 'John'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -26,5 +26,5 @@ FROM
 	Person t
 WHERE
 	t.FirstName = 'Tester'
-LIMIT toInt32(2)
+LIMIT 2
 

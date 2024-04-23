@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent `тбл`
 WHERE
-	`тбл`.ParentID = toInt32(3)
+	`тбл`.ParentID = 3
 

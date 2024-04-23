@@ -28,7 +28,7 @@ INSERT INTO PR_1598_Update_Null_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Tommy',
 	NULL
 )
@@ -43,8 +43,8 @@ SELECT
 FROM
 	PR_1598_Update_Null_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -53,9 +53,9 @@ ALTER TABLE
 	PR_1598_Update_Null_Table
 UPDATE
 	Name = 'Jack',
-	Age = toInt32(2)
+	Age = 2
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -67,8 +67,8 @@ SELECT
 FROM
 	PR_1598_Update_Null_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -78,7 +78,7 @@ ALTER TABLE
 UPDATE
 	Name = 'Franki'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -90,8 +90,8 @@ SELECT
 FROM
 	PR_1598_Update_Null_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

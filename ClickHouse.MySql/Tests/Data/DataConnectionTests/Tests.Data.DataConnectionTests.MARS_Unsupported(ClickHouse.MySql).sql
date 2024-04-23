@@ -19,5 +19,5 @@ SELECT
 FROM
 	Doctor _
 WHERE
-	_.PersonID = toInt32(1)
+	_.PersonID = 1
 

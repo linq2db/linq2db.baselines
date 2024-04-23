@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName <> 'Jo' AND p.PersonID = toInt32(1)
+	p.FirstName <> 'Jo' AND p.PersonID = 1
 

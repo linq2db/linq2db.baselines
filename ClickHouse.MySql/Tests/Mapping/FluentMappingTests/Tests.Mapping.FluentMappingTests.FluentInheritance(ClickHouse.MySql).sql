@@ -2,27 +2,27 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.PersonID,
 	_.Gender,
-	_.FirstName,
-	_.LastName
+	_.PersonID,
+	_.LastName,
+	_.FirstName
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(1)
-LIMIT toInt32(1)
+	_.PersonID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.PersonID,
 	_.Gender,
-	_.FirstName,
-	_.LastName
+	_.PersonID,
+	_.LastName,
+	_.FirstName
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(3)
-LIMIT toInt32(1)
+	_.PersonID = 3
+LIMIT 1
 

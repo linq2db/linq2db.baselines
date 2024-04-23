@@ -2,18 +2,25 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	COUNT(left_1.ParentID),
-	COUNT(t1.ParentID),
-	COUNT(*)
+	t1.c1
 FROM
-	Parent left_1
-		FULL JOIN (
-			SELECT
-				p.ParentID as ParentID
-			FROM
-				Parent p
-			WHERE
-				p.ParentID <> toInt32(1)
-		) t1 ON t1.ParentID = left_1.ParentID
-LIMIT toInt32(2)
+	(
+		SELECT
+			CASE
+				WHEN COUNT(left_1.ParentID) = COUNT(right_2.ParentID) AND COUNT(left_1.ParentID) = COUNT(*)
+					THEN true
+				ELSE false
+			END as c1
+		FROM
+			Parent left_1
+				FULL JOIN (
+					SELECT
+						right_1.ParentID as ParentID
+					FROM
+						Parent right_1
+					WHERE
+						right_1.ParentID <> 1
+				) right_2 ON right_2.ParentID = left_1.ParentID
+	) t1
+LIMIT 2
 

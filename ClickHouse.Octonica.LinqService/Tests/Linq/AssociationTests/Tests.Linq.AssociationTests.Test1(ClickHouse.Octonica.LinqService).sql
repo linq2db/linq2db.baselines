@@ -10,5 +10,5 @@ FROM
 	Child ch
 		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
 WHERE
-	ch.ParentID = toInt32(1)
+	ch.ParentID = 1
 

@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	maxOrNull(ch.ParentID)
+	maxOrNull(g_1.ParentID)
 FROM
-	Child ch
+	Child g_1
 GROUP BY
-	ch.ParentID
+	g_1.ParentID
 

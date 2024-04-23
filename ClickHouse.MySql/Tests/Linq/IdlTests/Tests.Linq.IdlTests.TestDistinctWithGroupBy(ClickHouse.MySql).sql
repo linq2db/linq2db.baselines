@@ -17,7 +17,7 @@ FROM
 	(
 		SELECT DISTINCT
 			x.Value1 as Key_1,
-			toInt32(4) as MatchScore
+			4 as MatchScore
 		FROM
 			Parent x
 	) x_1

@@ -6,8 +6,8 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(2)
-LIMIT toInt32(1)
+	p.ParentID = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -17,8 +17,8 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(2)
-LIMIT toInt32(1)
+	p.ParentID = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -28,6 +28,6 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(2)
-LIMIT toInt32(1)
+	p.ParentID = 2
+LIMIT 1
 

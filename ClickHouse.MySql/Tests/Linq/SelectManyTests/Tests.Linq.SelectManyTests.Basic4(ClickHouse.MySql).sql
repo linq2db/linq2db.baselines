@@ -2,8 +2,8 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.ParentID + toInt32(1)
+	_.ParentID + 1
 FROM
-	Parent cp
-		INNER JOIN Child _ ON cp.ParentID = _.ParentID + toInt32(1)
+	Parent p
+		INNER JOIN Child _ ON p.ParentID = _.ParentID + 1
 

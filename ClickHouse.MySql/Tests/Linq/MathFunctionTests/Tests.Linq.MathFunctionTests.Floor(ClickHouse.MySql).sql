@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Floor(negate(p.MoneyValue + toDecimal64('1', 10))) as c1
+			Floor(negate(t.MoneyValue + toDecimal64('1', 10))) as c1
 		FROM
-			LinqDataTypes p
-	) t
+			LinqDataTypes t
+	) t_1
 WHERE
-	t.c1 <> toDecimal64('0', 10)
+	t_1.c1 <> toDecimal128('0', 10)
 

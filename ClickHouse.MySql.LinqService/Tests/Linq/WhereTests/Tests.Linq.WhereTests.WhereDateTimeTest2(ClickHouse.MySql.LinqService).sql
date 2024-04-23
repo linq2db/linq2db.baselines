@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	_.DateTimeValue > toDateTime64('2009-01-01 00:00:00.000', 3)
+	_.DateTimeValue > makeDateTime(2009, 1, 1, 0, 0, 0)
 

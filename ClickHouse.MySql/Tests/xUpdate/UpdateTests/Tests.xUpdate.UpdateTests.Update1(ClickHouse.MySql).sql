@@ -8,8 +8,8 @@ INSERT INTO Parent
 )
 VALUES
 (
-	toInt32(1001),
-	toInt32(1001)
+	1001,
+	1001
 )
 
 BeforeExecute
@@ -20,7 +20,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001)
+	p.ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -28,9 +28,9 @@ BeforeExecute
 ALTER TABLE
 	Parent
 UPDATE
-	ParentID = ParentID + toInt32(1)
+	ParentID = ParentID + 1
 WHERE
-	ParentID = toInt32(1001)
+	ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -40,5 +40,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1002)
+	p.ParentID = 1002
 

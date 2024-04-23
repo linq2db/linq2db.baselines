@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Avg(c_1.ChildID)
+	avgOrNull(t1.ChildID)
 FROM
-	Child c_1
+	Child t1
 

@@ -28,7 +28,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		c_1.ChildID
+		c_1.ChildID as C_ChildID
 	FROM
 		Child c_1
 )
@@ -43,7 +43,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		c_1.ChildID
+		*
 	FROM
 		Child c_1
 )
@@ -54,8 +54,7 @@ SELECT
 				*
 			FROM
 				CTE1_ t1
-		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+		) THEN true
+		ELSE false
 	END
 

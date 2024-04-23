@@ -11,7 +11,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'M',
 	'a',
 	'A',
@@ -31,7 +31,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(101),
+	101,
 	'M',
 	'c',
 	NULL,
@@ -50,8 +50,8 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(100)
-LIMIT toInt32(1)
+	_.PersonID = 100
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -65,6 +65,6 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(101)
-LIMIT toInt32(1)
+	_.PersonID = 101
+LIMIT 1
 

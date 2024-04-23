@@ -23,7 +23,7 @@ SELECT
 	currentDatabase()
 FROM
 	LinqDataTypes _
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

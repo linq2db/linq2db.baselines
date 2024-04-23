@@ -87,7 +87,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'N'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -100,7 +100,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -113,7 +113,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'N'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -126,7 +126,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -139,7 +139,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'N'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -152,7 +152,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -165,7 +165,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'N'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -178,7 +178,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -191,7 +191,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'N'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -204,7 +204,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -217,7 +217,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -230,7 +230,7 @@ FROM
 	TypeConvertTable _
 WHERE
 	_.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

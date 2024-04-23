@@ -11,5 +11,5 @@ FROM
 	Person t1
 ORDER BY
 	t1.LastName
-LIMIT toInt32(2), toInt32(1)
+LIMIT 2, 1
 

@@ -6,5 +6,5 @@ SELECT
 	t1.ChildID
 FROM
 	Child t1
-LIMIT toInt32(3)
+LIMIT 3
 

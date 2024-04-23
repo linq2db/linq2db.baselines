@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	position(p.FirstName, 'Joh') > toInt32(0) AND p.PersonID = toInt32(1)
+	position(p.FirstName, 'Joh') > 0 AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16,5 +16,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(position(p.FirstName, 'Joh') <= toInt32(0)) AND p.PersonID = toInt32(1)
+	position(p.FirstName, 'Joh') <= 0 AND p.PersonID = 1
 

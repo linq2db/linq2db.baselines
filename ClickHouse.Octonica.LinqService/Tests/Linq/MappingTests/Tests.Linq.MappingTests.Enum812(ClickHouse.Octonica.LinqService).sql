@@ -6,5 +6,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	p.ID = toInt32(1)
+	p.ID = 1
 

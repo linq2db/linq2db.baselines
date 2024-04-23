@@ -26,8 +26,8 @@ SELECT
 			WHERE
 				_.Time < toInt64((toUnixTimestamp64Nano(toDateTime64(_.DateTime, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(_.DateTime), 7))) / 100)
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute

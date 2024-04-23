@@ -2,18 +2,25 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	COUNT(left_1.ParentID),
-	COUNT(p_1.ParentID),
-	COUNT(*)
+	t1.c1
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID
+			CASE
+				WHEN COUNT(left_1.ParentID) = COUNT(right_1.ParentID) AND COUNT(left_1.ParentID) = COUNT(*)
+					THEN true
+				ELSE false
+			END as c1
 		FROM
-			Parent p
-		WHERE
-			p.ParentID <> toInt32(1)
-	) left_1
-		FULL JOIN Parent p_1 ON p_1.ParentID = left_1.ParentID
-LIMIT toInt32(2)
+			(
+				SELECT
+					p.ParentID as ParentID
+				FROM
+					Parent p
+				WHERE
+					p.ParentID <> 1
+			) left_1
+				FULL JOIN Parent right_1 ON right_1.ParentID = left_1.ParentID
+	) t1
+LIMIT 2
 

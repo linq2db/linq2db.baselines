@@ -7,6 +7,6 @@ SELECT
 FROM
 	Child x
 ORDER BY
-	x.ChildID % toInt32(2) DESC,
+	x.ChildID % 2 DESC,
 	x.ChildID DESC
 

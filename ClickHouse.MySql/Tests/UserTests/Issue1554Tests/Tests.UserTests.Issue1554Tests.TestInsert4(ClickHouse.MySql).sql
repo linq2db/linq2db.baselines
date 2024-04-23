@@ -28,7 +28,7 @@ INSERT INTO Issue1554Table
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'EC',
 	'EC'
 )
@@ -42,7 +42,7 @@ SELECT
 	t1.ClaimedKeyTypeN
 FROM
 	Issue1554Table t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

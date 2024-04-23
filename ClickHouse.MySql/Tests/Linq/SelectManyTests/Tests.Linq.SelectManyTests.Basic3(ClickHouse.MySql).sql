@@ -2,10 +2,10 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.ParentID + toInt32(1)
+	_.ParentID + 1
 FROM
-	Parent cp,
+	Parent p,
 	Child _
 WHERE
-	_.ParentID > toInt32(0)
+	_.ParentID + 1 > 1
 

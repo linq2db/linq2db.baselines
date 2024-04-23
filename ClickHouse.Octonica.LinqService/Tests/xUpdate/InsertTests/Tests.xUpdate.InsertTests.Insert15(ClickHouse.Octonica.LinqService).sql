@@ -19,7 +19,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'M',
 	'Insert15',
 	NULL,

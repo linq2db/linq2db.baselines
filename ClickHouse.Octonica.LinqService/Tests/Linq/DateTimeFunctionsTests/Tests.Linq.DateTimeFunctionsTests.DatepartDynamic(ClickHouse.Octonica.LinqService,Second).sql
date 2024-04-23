@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	SECOND(t.DateTimeValue)
+	toSecond(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

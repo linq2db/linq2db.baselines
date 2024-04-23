@@ -32,7 +32,7 @@ SELECT DISTINCT
 	t1.Value
 FROM
 	TakeSkipClass t1
-LIMIT toInt32(3)
+LIMIT 3
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

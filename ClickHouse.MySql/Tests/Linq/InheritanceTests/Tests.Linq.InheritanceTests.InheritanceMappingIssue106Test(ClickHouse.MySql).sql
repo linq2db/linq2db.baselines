@@ -6,5 +6,5 @@ SELECT
 FROM
 	Child t1
 WHERE
-	(t1.ChildID = toInt32(11) OR t1.ChildID = toInt32(21))
+	(t1.ChildID = 11 OR t1.ChildID = 21)
 

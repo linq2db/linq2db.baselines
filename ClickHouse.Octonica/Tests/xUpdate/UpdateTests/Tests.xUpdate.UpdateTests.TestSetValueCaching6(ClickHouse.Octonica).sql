@@ -35,7 +35,7 @@ INSERT INTO UpdateSetTest
 	Value6
 )
 VALUES
-(toInt32(1),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'),toInt32(10),toInt32(6),NULL,NULL,NULL)
+(1,toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'),10,6,NULL,NULL,NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -43,9 +43,9 @@ BeforeExecute
 ALTER TABLE
 	UpdateSetTest
 UPDATE
-	Value6 = toInt32(7)
+	Value6 = 7
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -55,8 +55,8 @@ SELECT
 FROM
 	UpdateSetTest _
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(2)
+	_.Id = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -64,9 +64,9 @@ BeforeExecute
 ALTER TABLE
 	UpdateSetTest
 UPDATE
-	Value6 = toInt32(8)
+	Value6 = 8
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -76,8 +76,8 @@ SELECT
 FROM
 	UpdateSetTest _
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(2)
+	_.Id = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

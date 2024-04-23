@@ -21,7 +21,7 @@ INSERT INTO test_in_1
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO test_in_1
 )
 VALUES
 (
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -71,7 +71,7 @@ INSERT INTO test_in_2
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -83,16 +83,8 @@ INSERT INTO test_in_2
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t1.ID
-FROM
-	test_in_1 t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -102,9 +94,9 @@ SELECT
 FROM
 	test_in_1 t
 WHERE
-	(t.ID IS NULL AND toInt32(1) IN (
+	(t.ID IS NULL AND 1 IN (
 		SELECT
-			toInt32(1)
+			1
 		FROM
 			test_in_2 p
 		WHERE
@@ -122,15 +114,7 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	test_in_2 t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t1.ID
-FROM
-	test_in_2 t1
+	test_in_1 t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

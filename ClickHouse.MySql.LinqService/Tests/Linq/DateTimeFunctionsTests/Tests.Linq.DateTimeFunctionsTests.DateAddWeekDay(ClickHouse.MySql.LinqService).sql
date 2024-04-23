@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addDays(t.DateTimeValue, toInt32(1))
+	toDate(addDays(t.DateTimeValue, 1))
 FROM
 	LinqDataTypes t
 

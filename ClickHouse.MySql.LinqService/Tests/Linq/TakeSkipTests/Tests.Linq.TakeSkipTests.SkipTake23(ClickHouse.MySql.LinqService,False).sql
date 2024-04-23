@@ -8,7 +8,7 @@ FROM
 	Child t1
 ORDER BY
 	t1.ChildID
-LIMIT toInt32(3), toInt32(5)
+LIMIT 3, 5
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -20,5 +20,5 @@ FROM
 	Child t1
 ORDER BY
 	t1.ChildID
-LIMIT toInt32(3), toInt32(5)
+LIMIT 3, 5
 

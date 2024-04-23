@@ -6,5 +6,5 @@ SELECT
 FROM
 	Person _
 WHERE
-	((_.PersonID = toInt32(1) OR _.PersonID <= toInt32(1)) OR _.PersonID = toInt32(1))
+	(_.PersonID = 1 OR _.PersonID <= 1 OR _.PersonID = 1)
 

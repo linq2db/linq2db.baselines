@@ -9,5 +9,5 @@ FROM
 GROUP BY
 	_.ParentID
 HAVING
-	(sumOrNull(_.ParentID) <> toInt32(36) OR sumOrNull(_.ParentID) IS NULL)
+	(sumOrNull(_.ParentID) <> 36 OR sumOrNull(_.ParentID) IS NULL)
 

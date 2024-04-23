@@ -25,8 +25,8 @@ INSERT INTO DataClass
 	Value
 )
 VALUES
-(toInt32(1),'Frau'),
-(toInt32(2),'Herr')
+(1,'Frau'),
+(2,'Herr')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

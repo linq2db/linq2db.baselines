@@ -20,8 +20,8 @@ INSERT INTO Table404One
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -49,87 +49,91 @@ INSERT INTO Table404Two
 	FirstTableId
 )
 VALUES
-(toInt32(1),toInt32(0),toInt32(1)),
-(toInt32(2),toInt32(0),toInt32(1)),
-(toInt32(3),toInt32(1),toInt32(1)),
-(toInt32(4),toInt32(0),toInt32(2)),
-(toInt32(5),toInt32(1),toInt32(2)),
-(toInt32(6),toInt32(1),toInt32(2))
+(1,0,1),
+(2,0,1),
+(3,1,1),
+(4,0,2),
+(5,1,2),
+(6,1,2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.Usage = toInt32(0) AND _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
+WHERE
+	d.Usage = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.Usage = toInt32(1) AND _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
+WHERE
+	d.Usage = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -163,8 +167,8 @@ INSERT INTO Table404One
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -192,87 +196,91 @@ INSERT INTO Table404Two
 	FirstTableId
 )
 VALUES
-(toInt32(1),toInt32(0),toInt32(1)),
-(toInt32(2),toInt32(0),toInt32(1)),
-(toInt32(3),toInt32(1),toInt32(1)),
-(toInt32(4),toInt32(0),toInt32(2)),
-(toInt32(5),toInt32(1),toInt32(2)),
-(toInt32(6),toInt32(1),toInt32(2))
+(1,0,1),
+(2,0,1),
+(3,1,1),
+(4,0,2),
+(5,1,2),
+(6,1,2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.Usage = toInt32(0) AND _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
+WHERE
+	d.Usage = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	_v.Id,
-	_v.Usage,
-	_v.FirstTableId
+	m_1.Id,
+	d.Id,
+	d.Usage,
+	d.FirstTableId
 FROM
 	(
 		SELECT DISTINCT
-			c_1.Id as Id
+			t1.Id as Id
 		FROM
-			Table404One c_1
-	) key_data_result
-		INNER JOIN Table404Two _v ON _v.Usage = toInt32(1) AND _v.FirstTableId = key_data_result.Id
+			Table404One t1
+	) m_1
+		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
+WHERE
+	d.Usage = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.Id
+	t1.Id
 FROM
-	Table404One c_1
+	Table404One t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

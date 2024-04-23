@@ -23,7 +23,7 @@ INSERT INTO InsertTestClass
 	OtherValue
 )
 VALUES
-(toInt32(1),toInt32(100))
+(1,100)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -46,6 +46,7 @@ BeforeExecute
 
 INSERT INTO InsertTestClassDest
 (
+	Id,
 	Value,
 	OtherValue
 )
@@ -59,6 +60,7 @@ WITH CTE_1 AS
 		InsertTestClass t1
 )
 SELECT
+	t2.Id,
 	t2.Value,
 	t2.OtherValue
 FROM
@@ -73,7 +75,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClass t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -84,7 +86,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClassDest t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

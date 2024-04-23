@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	maxOrNull(c_1.ChildID > toInt32(20))
+	maxOrNull(t1.ChildID > 20)
 FROM
-	Child c_1
+	Child t1
 

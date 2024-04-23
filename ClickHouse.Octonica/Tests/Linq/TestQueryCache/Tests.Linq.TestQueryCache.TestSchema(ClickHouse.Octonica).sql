@@ -28,7 +28,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'K1',
 	'V1'
 )
@@ -68,7 +68,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'K1',
 	'V1'
 )
@@ -108,7 +108,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'K1',
 	'V1'
 )
@@ -148,7 +148,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'K1',
 	'V1'
 )

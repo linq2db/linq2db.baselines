@@ -9,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			r.Value1
+			CASE
+				WHEN r.Value1 IS NOT NULL THEN true
+				ELSE false
+			END
 		FROM
 			Parent r
-		LIMIT toInt32(1)
-	) IS NOT NULL
+		LIMIT 1
+	) = true
 

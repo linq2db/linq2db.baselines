@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addWeeks(t.DateTimeValue, toInt32(-1))
+	toDate(addWeeks(t.DateTimeValue, -1))
 FROM
 	LinqDataTypes t
 

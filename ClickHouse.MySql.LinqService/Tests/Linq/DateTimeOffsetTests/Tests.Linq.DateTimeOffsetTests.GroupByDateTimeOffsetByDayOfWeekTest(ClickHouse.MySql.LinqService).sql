@@ -26,7 +26,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toDateTime64('2020-02-29 17:14:55.1231234', 7)
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	toDateTime64('2021-02-28 17:14:55.1231234', 7)
 )
 
@@ -54,7 +54,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	toDateTime64('2019-02-28 17:14:55.1231234', 7)
 )
 
@@ -68,7 +68,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	toDateTime64('2020-03-29 17:14:55.1231234', 7)
 )
 
@@ -82,7 +82,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	toDateTime64('2020-01-29 17:14:55.1231234', 7)
 )
 
@@ -96,7 +96,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(7),
+	7,
 	toDateTime64('2020-03-01 17:14:55.1231234', 7)
 )
 
@@ -110,7 +110,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(8),
+	8,
 	toDateTime64('2020-02-28 17:14:55.1231234', 7)
 )
 
@@ -124,7 +124,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(9),
+	9,
 	toDateTime64('2020-02-29 18:14:55.1231234', 7)
 )
 
@@ -138,7 +138,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	toDateTime64('2020-02-29 16:14:55.1231234', 7)
 )
 
@@ -152,7 +152,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(11),
+	11,
 	toDateTime64('2020-02-29 17:15:55.1231234', 7)
 )
 
@@ -166,7 +166,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(12),
+	12,
 	toDateTime64('2020-02-29 17:13:55.1231234', 7)
 )
 
@@ -180,7 +180,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(13),
+	13,
 	toDateTime64('2020-02-29 17:14:56.1231234', 7)
 )
 
@@ -194,7 +194,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(14),
+	14,
 	toDateTime64('2020-02-29 17:14:54.1231234', 7)
 )
 
@@ -208,7 +208,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(15),
+	15,
 	toDateTime64('2020-02-29 17:14:55.1241234', 7)
 )
 
@@ -222,7 +222,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(16),
+	16,
 	toDateTime64('2020-02-29 17:14:55.1221234', 7)
 )
 
@@ -230,19 +230,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Key_1,
-	Count(*)
+	x_1.DayOfWeek,
+	COUNT(*)
 FROM
 	(
 		SELECT
-			(DAYOFWEEK(addDays(selectParam.TransactionDate, 1))) - toInt32(1) as Key_1
+			toDayOfWeek(addDays(x.TransactionDate, 1)) - 1 as DayOfWeek
 		FROM
-			Transactions selectParam
-	) t1
+			Transactions x
+	) x_1
 GROUP BY
-	t1.Key_1
+	x_1.DayOfWeek
 ORDER BY
-	t1.Key_1
+	x_1.DayOfWeek
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -25,8 +25,8 @@ INSERT INTO TABLE1
 	NAME1
 )
 VALUES
-(toInt32(1),'Some1'),
-(toInt32(2),'Some2')
+(1,'Some1'),
+(2,'Some2')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -57,9 +57,9 @@ INSERT INTO TABLE2
 	NAME2
 )
 VALUES
-(toInt32(11),toInt32(1),'Child11'),
-(toInt32(12),toInt32(1),'Child12'),
-(toInt32(13),toInt32(2),'Child13')
+(11,1,'Child11'),
+(12,1,'Child12'),
+(13,2,'Child13')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -90,48 +90,42 @@ INSERT INTO TABLE3
 	NAME3
 )
 VALUES
-(toInt32(21),toInt32(11),'Child21'),
-(toInt32(22),toInt32(11),'Child22'),
-(toInt32(23),toInt32(12),'Child23')
+(21,11,'Child21'),
+(22,11,'Child22'),
+(23,12,'Child23')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ID2,
-	key_data_result.ID1,
-	detail_1.ID3,
-	detail_1.NAME3
+	t2.not_null,
+	t2.Id3,
+	t2.Id3,
+	t2.Name3,
+	t2.Name2,
+	t1_1.NAME1
 FROM
-	(
-		SELECT DISTINCT
-			detail.ID2 as ID2,
-			t1.ID1 as ID1
-		FROM
-			TABLE1 t1
-				INNER JOIN TABLE2 detail ON detail.PARENTID2 = t1.ID1
-	) key_data_result
-		INNER JOIN TABLE3 detail_1 ON detail_1.PARENTID3 = key_data_result.ID2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.ID1,
-	detail.ID2,
-	detail.NAME2
-FROM
-	TABLE1 t1
-		INNER JOIN TABLE2 detail ON detail.PARENTID2 = t1.ID1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.ID1,
-	t1.NAME1
-FROM
-	TABLE1 t1
+	TABLE1 t1_1
+		LEFT JOIN (
+			SELECT
+				t1.Id3 as Id3,
+				t1.Name3 as Name3,
+				x_1.NAME2 as Name2,
+				1 as not_null,
+				ROW_NUMBER() OVER (PARTITION BY x_1.PARENTID2 ORDER BY x_1.PARENTID2) as rn,
+				x_1.PARENTID2 as PARENTID2
+			FROM
+				TABLE2 x_1
+					LEFT JOIN (
+						SELECT
+							x.ID3 as Id3,
+							x.NAME3 as Name3,
+							ROW_NUMBER() OVER (PARTITION BY x.PARENTID3 ORDER BY x.PARENTID3) as rn,
+							x.PARENTID3 as PARENTID3
+						FROM
+							TABLE3 x
+					) t1 ON t1.PARENTID3 = x_1.ID2 AND t1.rn <= 1
+		) t2 ON t2.PARENTID2 = t1_1.ID1 AND t2.rn <= 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

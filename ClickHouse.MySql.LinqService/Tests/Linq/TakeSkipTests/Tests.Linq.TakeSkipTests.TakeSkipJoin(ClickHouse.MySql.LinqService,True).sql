@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	e.ID,
-	_.SmallIntValue
+	p.SmallIntValue
 FROM
 	(
 		SELECT
@@ -49,14 +49,26 @@ FROM
 				FROM
 					LinqDataTypes t2
 			) t3
-		LIMIT toInt32(15)
+		LIMIT 15
 	) e
 		LEFT JOIN (
 			SELECT
-				t6.ID as ID,
-				t6.SmallIntValue as SmallIntValue
+				_1.ID as ID,
+				_1.SmallIntValue as SmallIntValue
 			FROM
 				(
+					SELECT
+						_.ID as ID,
+						_.MoneyValue as MoneyValue,
+						_.DateTimeValue as DateTimeValue,
+						_.BoolValue as BoolValue,
+						_.GuidValue as GuidValue,
+						_.BinaryValue as BinaryValue,
+						_.SmallIntValue as SmallIntValue,
+						_.StringValue as StringValue
+					FROM
+						LinqDataTypes _
+					UNION ALL
 					SELECT
 						t4.ID as ID,
 						t4.MoneyValue as MoneyValue,
@@ -68,22 +80,10 @@ FROM
 						t4.StringValue as StringValue
 					FROM
 						LinqDataTypes t4
-					UNION ALL
-					SELECT
-						t5.ID as ID,
-						t5.MoneyValue as MoneyValue,
-						t5.DateTimeValue as DateTimeValue,
-						t5.BoolValue as BoolValue,
-						t5.GuidValue as GuidValue,
-						t5.BinaryValue as BinaryValue,
-						t5.SmallIntValue as SmallIntValue,
-						t5.StringValue as StringValue
-					FROM
-						LinqDataTypes t5
-				) t6
-			LIMIT toInt32(15)
-		) _ ON _.ID = e.ID
+				) _1
+			LIMIT 15
+		) p ON p.ID = e.ID
 ORDER BY
-	_.ID,
-	e.ID
+	e.ID,
+	p.ID
 

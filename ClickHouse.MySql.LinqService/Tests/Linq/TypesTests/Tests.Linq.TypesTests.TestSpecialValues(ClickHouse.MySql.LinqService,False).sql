@@ -17,7 +17,7 @@ INSERT INTO AllTypes
 )
 VALUES
 (
-	toInt32(1000),
+	1000,
 	toFloat32(NaN),
 	toFloat64(NaN)
 )
@@ -33,7 +33,7 @@ INSERT INTO AllTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	toFloat32(-Infinity),
 	toFloat64(-Infinity)
 )
@@ -49,7 +49,7 @@ INSERT INTO AllTypes
 )
 VALUES
 (
-	toInt32(1002),
+	1002,
 	toFloat32(Infinity),
 	toFloat64(Infinity)
 )
@@ -63,7 +63,7 @@ SELECT
 FROM
 	AllTypes _
 WHERE
-	_.ID > toInt32(2)
+	_.ID > 2
 ORDER BY
 	_.ID
 

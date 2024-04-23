@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID IS NULL
+	_.PersonID = 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16,5 +16,5 @@ SELECT
 FROM
 	Person _
 WHERE
-	_.PersonID = toInt32(1)
+	_.PersonID = 1
 

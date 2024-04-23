@@ -2,29 +2,31 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.is_empty
+	r_1.PersonID,
+	r_1.Taxonomy
 FROM
-	Person person_1
+	Person t1
 		LEFT JOIN (
 			SELECT
-				NULL as r,
-				toInt32(1) as is_empty
+				0 as PersonID,
+				toString(NULL) as Taxonomy
 			FROM
-				Doctor d
-		) t1 ON person_1.PersonID = toInt32(0) AND person_1.FirstName IS NULL AND person_1.LastName = t1.r AND person_1.Gender IS NULL
+				Doctor r
+		) r_1 ON 1 = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.is_empty
+	r_1.PersonID,
+	r_1.Taxonomy
 FROM
-	Person person_1
+	Person t1
 		LEFT JOIN (
 			SELECT
-				NULL as r,
-				toInt32(1) as is_empty
+				0 as PersonID,
+				toString(NULL) as Taxonomy
 			FROM
-				Doctor d
-		) t1 ON person_1.PersonID = toInt32(0) AND person_1.FirstName IS NULL AND person_1.LastName = t1.r AND person_1.Gender IS NULL
+				Doctor r
+		) r_1 ON 1 = 0
 

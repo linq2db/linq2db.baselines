@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addMinutes(t.DateTimeValue, toInt32(-8))
+	toMinute(addMinutes(t.DateTimeValue, -8))
 FROM
 	LinqDataTypes t
 

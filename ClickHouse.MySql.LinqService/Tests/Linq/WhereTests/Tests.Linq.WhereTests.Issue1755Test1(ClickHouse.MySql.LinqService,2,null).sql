@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent c_1
 WHERE
-	c_1.ParentID = toInt32(2)
+	c_1.ParentID = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

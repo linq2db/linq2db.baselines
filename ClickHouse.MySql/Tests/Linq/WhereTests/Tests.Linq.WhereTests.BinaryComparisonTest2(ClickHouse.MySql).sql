@@ -10,16 +10,15 @@ SELECT
 				Person _
 			WHERE
 				CASE
-					WHEN _.FirstName = _.FirstName
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
+					WHEN _.FirstName = _.FirstName THEN true
+					ELSE false
 				END <> CASE
-					WHEN _.MiddleName <> _.LastName
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
+					WHEN (_.MiddleName <> _.LastName OR _.MiddleName IS NULL)
+						THEN true
+					ELSE false
 				END
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

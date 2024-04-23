@@ -2,20 +2,15 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	y.FirstName
+	x.FirstName
 FROM
-	Person y
+	Person x
 UNION ALL
 SELECT
-	t1.Name
+	x_1.FirstName as FirstName
 FROM
-	(
-		SELECT
-			x.FirstName as Name
-		FROM
-			Person x,
-			Patient z
-		WHERE
-			(x.FirstName = 'A' OR z.PersonID = toInt32(1))
-	) t1
+	Person x_1,
+	Patient z
+WHERE
+	(x_1.FirstName = 'A' OR z.PersonID = 1)
 

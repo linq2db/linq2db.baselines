@@ -15,9 +15,5 @@ SELECT
 FROM
 	LinqDataTypes _
 WHERE
-	CASE
-		WHEN _.BoolValue IN (true)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
-	END = false
+	(_.BoolValue NOT IN (true) OR _.BoolValue IS NULL)
 

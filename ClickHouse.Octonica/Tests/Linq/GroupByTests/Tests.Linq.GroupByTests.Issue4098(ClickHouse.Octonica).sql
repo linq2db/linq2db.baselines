@@ -24,10 +24,10 @@ INSERT INTO Transaction
 	Units
 )
 VALUES
-('inv1','test',toInt32(100)),
-('inv1','test',toInt32(200)),
-('inv2','test',toInt32(300)),
-('inv2','test',toInt32(400))
+('inv1','test',100),
+('inv1','test',200),
+('inv2','test',300),
+('inv2','test',400)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -55,8 +55,8 @@ INSERT INTO InvestorPayment
 	NetPayment
 )
 VALUES
-(toInt32(1),'inv1',toInt32(100)),
-(toInt32(2),'inv2',toInt32(200))
+(1,'inv1',100),
+(2,'inv2',200)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -84,8 +84,8 @@ INSERT INTO PaymentEvent
 	SecurityClass
 )
 VALUES
-(toInt32(1),'one','test'),
-(toInt32(2),'two','test')
+(1,'one','test'),
+(2,'two','test')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -111,8 +111,8 @@ INSERT INTO InvestorPaymentDetail
 	CalculationId
 )
 VALUES
-('inv1',toInt32(1)),
-('inv2',toInt32(2))
+('inv1',1),
+('inv2',2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -138,8 +138,8 @@ INSERT INTO PaymentCalculation
 	EventId
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2))
+(1,1),
+(2,2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -149,10 +149,10 @@ SELECT
 	t1.Units,
 	sumOrNull(ip.NetPayment)
 FROM
-	PaymentEvent pe
-		INNER JOIN InvestorPayment ip ON pe.Id = ip.Id
+	PaymentEvent g_1
+		INNER JOIN InvestorPayment ip ON g_1.Id = ip.Id
 		INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
-		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND pe.Id = pc.EventId
+		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND g_1.Id = pc.EventId
 		INNER JOIN (
 			SELECT
 				b.InvestorId as InvestorId,
@@ -163,7 +163,7 @@ FROM
 			GROUP BY
 				b.SecurityClass,
 				b.InvestorId
-		) t1 ON ip.InvestorId = t1.InvestorId AND pe.SecurityClass = t1.SecurityClass
+		) t1 ON ip.InvestorId = t1.InvestorId AND g_1.SecurityClass = t1.SecurityClass
 GROUP BY
 	ip.InvestorId,
 	t1.Units
