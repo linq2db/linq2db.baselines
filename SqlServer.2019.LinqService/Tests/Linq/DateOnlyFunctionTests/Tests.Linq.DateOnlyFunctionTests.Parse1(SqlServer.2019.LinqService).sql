@@ -271,11 +271,20 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))
+	CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, Convert(Date, N'2010-01-' + format([t].[TransactionId], 'd2'))) > 0
+	DatePart(day, CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)) > 0
+
+BeforeExecute
+-- SqlServer.2019
+
+SELECT
+	[t1].[TransactionId],
+	[t1].[TransactionDate]
+FROM
+	[Transactions] [t1]
 
 BeforeExecute
 -- SqlServer.2019

@@ -18,6 +18,11 @@ IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019
 
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- SqlServer.2019
+
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -43,8 +48,6 @@ BeforeExecute
 -- SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[ID],
@@ -53,7 +56,7 @@ FROM
 	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2019
@@ -88,8 +91,6 @@ BeforeExecute
 -- SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[ID],
@@ -98,7 +99,7 @@ FROM
 	[test_temp] [t1]
 ORDER BY
 	[t1].[ID]
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2019
