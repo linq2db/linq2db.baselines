@@ -48,15 +48,19 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @param Integer -- Int32
+SET     @param = 100
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 100
 
 DELETE FROM
 	"TableWithData" s
 WHERE
 	s."Id" = 3
 RETURNING
-	s."Id",
-	s."Value",
-	s."ValueStr"
+	s."Id" + :param,
+	s."Value" + :param,
+	s."ValueStr" || :param_1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
