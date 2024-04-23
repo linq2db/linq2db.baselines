@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTimeValue2  -- DateTime
-SET     @DateTimeValue2 = '2009-09-24 09:19:29.09'
+SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
 	Count(*)

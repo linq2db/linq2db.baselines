@@ -270,7 +270,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d', [t].[TransactionDate],(-1*3) || ' Month')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '-3 Month')
 FROM
 	[Transactions] [t]
 

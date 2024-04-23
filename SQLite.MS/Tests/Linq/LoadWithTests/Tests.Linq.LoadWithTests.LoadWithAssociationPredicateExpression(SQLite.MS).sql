@@ -56,35 +56,37 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_ParentRecord].[Id],
-	[detail].[Id],
-	[detail].[ParentId],
-	[detail].[IsActive]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[ParentId],
+	[d].[IsActive]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[ParentRecord] [t1]
-	) [lw_ParentRecord]
-		INNER JOIN [ChildRecord] [detail] ON [lw_ParentRecord].[Id] = [detail].[ParentId]
+	) [m_1]
+		INNER JOIN [ChildRecord] [d] ON [m_1].[Id] = [d].[ParentId]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_ParentRecord].[Id],
-	[detail].[Id],
-	[detail].[ParentId],
-	[detail].[IsActive]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[ParentId],
+	[d].[IsActive]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[ParentRecord] [t1]
-	) [lw_ParentRecord]
-		INNER JOIN [ChildRecord] [detail] ON [lw_ParentRecord].[Id] = [detail].[ParentId] AND [detail].[IsActive] = 1
+	) [m_1]
+		INNER JOIN [ChildRecord] [d] ON [m_1].[Id] = [d].[ParentId]
+WHERE
+	[d].[IsActive] = 1
 
 BeforeExecute
 DisposeTransaction

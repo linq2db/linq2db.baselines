@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	DateTime([r].[ColumnDTO]) = DateTime(@dto)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[ColumnDTO]) = strftime('%Y-%m-%d %H:%M:%f', @dto)
 
 BeforeExecute
 -- SQLite.Classic SQLite

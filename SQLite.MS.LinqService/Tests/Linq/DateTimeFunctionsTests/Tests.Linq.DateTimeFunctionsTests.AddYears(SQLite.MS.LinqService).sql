@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],1 || ' Year')
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '1 Year'))
 FROM
 	[LinqDataTypes] [t]
 

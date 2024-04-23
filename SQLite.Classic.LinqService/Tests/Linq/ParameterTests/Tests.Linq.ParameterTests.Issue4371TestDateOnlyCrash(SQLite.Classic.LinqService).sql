@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnDO] = @dt
+	Date([r].[ColumnDO]) = Date(@dt)
 
 BeforeExecute
 -- SQLite.Classic SQLite
