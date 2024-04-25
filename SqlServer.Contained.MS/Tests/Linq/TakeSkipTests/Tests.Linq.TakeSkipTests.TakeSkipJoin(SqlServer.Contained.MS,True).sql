@@ -17,12 +17,10 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 15
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 15
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT TOP (@take)
@@ -55,7 +53,7 @@ FROM
 			) [t3]
 	) [e]
 		LEFT JOIN (
-			SELECT TOP (@take_1)
+			SELECT TOP (@take)
 				[t6].[ID],
 				[t6].[SmallIntValue]
 			FROM
@@ -84,8 +82,8 @@ FROM
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]
-		) [_] ON [_].[ID] = [e].[ID]
+		) [p] ON [p].[ID] = [e].[ID]
 ORDER BY
-	[_].[ID],
-	[e].[ID]
+	[e].[ID],
+	[p].[ID]
 

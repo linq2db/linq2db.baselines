@@ -3,11 +3,11 @@ BeginTransaction
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [c_1]
 WHERE
-	[t1].[ID] > 1000
+	[c_1].[ID] > 1000
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -19,23 +19,23 @@ INSERT INTO [LinqDataTypes]
 	[BoolValue]
 )
 SELECT
-	Convert(Int, [t1].[c1] + 1001),
+	CAST(Floor([t2].[c1] + 1001) AS Int),
 	NewID(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Convert(Float, [_].[ID]) / 3) as [c1]
+			Floor(CAST([t1].[ID] AS Float) / 3) as [c1]
 		FROM
-			[LinqDataTypes] [_]
-	) [t1]
+			[LinqDataTypes] [t1]
+	) [t2]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [c_1]
 WHERE
-	[t1].[ID] > 1000
+	[c_1].[ID] > 1000
 
