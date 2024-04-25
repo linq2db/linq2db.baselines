@@ -27,13 +27,11 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 UPDATE
-	[r]
+	[LinqDataTypes]
 SET
-	[r].[IntValue] = 4
-FROM
-	[LinqDataTypes] [r]
+	[IntValue] = 4
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

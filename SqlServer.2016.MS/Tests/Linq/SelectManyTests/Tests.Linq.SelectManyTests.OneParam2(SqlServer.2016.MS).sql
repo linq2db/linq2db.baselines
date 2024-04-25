@@ -2,11 +2,11 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[c_1].[ParentID],
-	[c_1].[ChildID]
+	[a_Children].[ParentID],
+	[a_Children].[ChildID]
 FROM
 	[Parent] [t]
-		INNER JOIN [Child] [c_1] ON [t].[ParentID] = [c_1].[ParentID]
+		INNER JOIN [Child] [a_Children] ON [t].[ParentID] = [a_Children].[ParentID]
 WHERE
-	[c_1].[ParentID] = 1
+	[a_Children].[ParentID] = 1
 
