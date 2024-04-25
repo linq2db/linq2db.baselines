@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Max("t1".ID)
+	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
@@ -22,8 +22,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS Float)
 )
 
 BeforeExecute
@@ -42,8 +42,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS Float)
 )
 
 BeforeExecute
@@ -62,8 +62,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS Float)
 )
 
 BeforeExecute

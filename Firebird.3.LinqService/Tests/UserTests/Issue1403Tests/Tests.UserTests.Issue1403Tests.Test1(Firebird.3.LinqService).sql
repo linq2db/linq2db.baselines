@@ -38,15 +38,13 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."event_id",
 	"t1"."event_description"
 FROM
 	"Issue1403Tests_1" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

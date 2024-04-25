@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@IntEnum
+	CAST(@Id AS Int),
+	CAST(@IntEnum AS Int)
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@IntEnum
+	CAST(@Id AS Int),
+	CAST(@IntEnum AS Int)
 )
 
 BeforeExecute

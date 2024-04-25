@@ -2,9 +2,9 @@
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -36,7 +36,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 

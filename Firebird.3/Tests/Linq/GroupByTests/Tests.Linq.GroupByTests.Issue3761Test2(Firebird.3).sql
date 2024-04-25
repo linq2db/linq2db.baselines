@@ -26,20 +26,24 @@ END
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @default TimeStamp -- DateTime
-SET     @default = CAST('0001-01-01' AS timestamp)
 DECLARE @DATUM TimeStamp -- DateTime
 SET     @DATUM = CAST('2019-01-01' AS timestamp)
 
 SELECT
 	"t1"."Year_1",
 	"t1"."Month_1",
-	Sum("t1".SKUPAJ)
+	SUM("t1".SKUPAJ)
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce("n".DATUM, Cast(@default as TimeStamp)))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce("n".DATUM, Cast(@default as TimeStamp)))) as int) as "Month_1",
+			Extract(year from CASE
+				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
+				ELSE CAST('0001-01-01' AS timestamp)
+			END) as "Year_1",
+			Extract(month from CASE
+				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
+				ELSE CAST('0001-01-01' AS timestamp)
+			END) as "Month_1",
 			"n".SKUPAJ
 		FROM
 			"Issue3761Table" "n"
@@ -53,12 +57,18 @@ UNION ALL
 SELECT
 	"t2"."Year_1",
 	"t2"."Month_1",
-	Sum("t2".SKUPAJ)
+	SUM("t2".SKUPAJ)
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from Coalesce("n_1".DATUM, Cast(@default as TimeStamp)))) as int) as "Year_1",
-			Cast(Floor(Extract(month from Coalesce("n_1".DATUM, Cast(@default as TimeStamp)))) as int) as "Month_1",
+			Extract(year from CASE
+				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
+				ELSE CAST('0001-01-01' AS timestamp)
+			END) as "Year_1",
+			Extract(month from CASE
+				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
+				ELSE CAST('0001-01-01' AS timestamp)
+			END) as "Month_1",
 			"n_1".SKUPAJ
 		FROM
 			"Issue3761Table" "n_1"
