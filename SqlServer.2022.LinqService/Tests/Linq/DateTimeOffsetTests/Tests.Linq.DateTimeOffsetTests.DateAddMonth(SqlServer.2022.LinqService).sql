@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	DateAdd(month, 2, [t].[TransactionDate])
+	CAST(DateAdd(month, 2, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

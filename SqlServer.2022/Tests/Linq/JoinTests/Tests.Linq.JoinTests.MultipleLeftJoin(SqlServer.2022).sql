@@ -2,11 +2,11 @@
 -- SqlServer.2022
 
 SELECT
-	[parent_1].[ParentID],
-	[childTemp].[ChildID],
-	[grandChildTemp].[GrandChildID]
+	[t1].[ParentID],
+	[childLeftJoin].[ChildID],
+	[grandChildLeftJoin].[GrandChildID]
 FROM
-	[Parent] [parent_1]
-		LEFT JOIN [Child] [childTemp] ON [parent_1].[ParentID] = [childTemp].[ParentID]
-		LEFT JOIN [GrandChild] [grandChildTemp] ON [parent_1].[ParentID] = [grandChildTemp].[ParentID]
+	[Parent] [t1]
+		LEFT JOIN [GrandChild] [grandChildLeftJoin] ON [t1].[ParentID] = [grandChildLeftJoin].[ParentID]
+		LEFT JOIN [Child] [childLeftJoin] ON [t1].[ParentID] = [childLeftJoin].[ParentID]
 
