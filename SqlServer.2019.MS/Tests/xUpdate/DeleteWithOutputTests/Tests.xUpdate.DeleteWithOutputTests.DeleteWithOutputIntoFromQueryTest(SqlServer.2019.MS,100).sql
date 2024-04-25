@@ -67,14 +67,12 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 100
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 100
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id] + @param,
-	[DELETED].[Value] + @param,
-	[DELETED].[ValueStr] + Convert(VarChar(100), @param_1)
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + CAST(@param AS VarChar(11))
 INTO [DestinationTable]
 (
 	[Id],

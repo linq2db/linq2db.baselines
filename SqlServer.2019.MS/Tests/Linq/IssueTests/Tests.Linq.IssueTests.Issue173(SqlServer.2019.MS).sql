@@ -2,9 +2,9 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[_].[ParentID]
+	[t1].[ParentID]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = 1
+	[t1].[ParentID] = 1
 
