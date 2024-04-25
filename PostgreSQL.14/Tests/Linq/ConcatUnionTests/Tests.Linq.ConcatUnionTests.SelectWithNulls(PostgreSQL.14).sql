@@ -14,14 +14,14 @@ FROM
 	"LinqDataTypes" t1
 UNION ALL
 SELECT
-	Cast(NULL as Int),
-	Cast(NULL as decimal),
-	Cast(NULL as TimeStamp),
-	Cast(NULL as Boolean),
-	Cast(NULL as uuid),
-	Cast(NULL as bytea),
-	Cast(NULL as SmallInt),
-	Cast(NULL as text)
+	NULL::Int,
+	NULL::decimal,
+	NULL::TimeStamp,
+	NULL,
+	NULL::uuid,
+	NULL::bytea,
+	NULL::SmallInt,
+	NULL::text
 FROM
 	"LinqDataTypes" d
 
