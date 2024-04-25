@@ -56,14 +56,14 @@ DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
 SELECT
-	[_].[ID],
-	[_].[intDataType]
+	[t1].[ID],
+	[t1].[intDataType] as [Value_1]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > @lastId
+	[t1].[ID] > @lastId
 ORDER BY
-	[_].[ID]
+	[t1].[ID]
 
 BeforeExecute
 -- SqlCe

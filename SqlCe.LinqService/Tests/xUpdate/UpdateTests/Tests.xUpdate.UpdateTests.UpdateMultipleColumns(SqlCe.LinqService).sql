@@ -22,19 +22,17 @@ SET     @ID = 1001
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[MoneyValue] = 2000,
-	[LinqDataTypes].[SmallIntValue] = 200
+	[MoneyValue] = 2000,
+	[SmallIntValue] = 200
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
 	[t].[DateTimeValue],

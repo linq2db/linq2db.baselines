@@ -28,9 +28,9 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	1
+	1 as [c1]
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- SqlCe

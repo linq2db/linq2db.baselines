@@ -2,8 +2,7 @@
 -- SqlCe
 
 SELECT
-	[t].[DateTimeValue],
-	[t].[SmallIntValue]
+	DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

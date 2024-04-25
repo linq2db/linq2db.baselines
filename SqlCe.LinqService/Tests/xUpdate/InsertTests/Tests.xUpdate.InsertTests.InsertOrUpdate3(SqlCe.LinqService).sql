@@ -42,7 +42,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]))
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -72,7 +72,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -86,18 +86,16 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Patient].[Diagnosis] = Convert(NVarChar(11), Len([Patient].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

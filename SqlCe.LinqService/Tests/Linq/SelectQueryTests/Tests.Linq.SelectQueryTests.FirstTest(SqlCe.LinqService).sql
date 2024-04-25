@@ -14,12 +14,10 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	DateAdd(day, 1, GetDate()),
-	DateAdd(day, 2, GetDate())
+SELECT TOP (1)
+	DateAdd(day, 1, GetDate()) as [Value1],
+	DateAdd(day, 2, GetDate()) as [Value2]
 
 BeforeExecute
 -- SqlCe
