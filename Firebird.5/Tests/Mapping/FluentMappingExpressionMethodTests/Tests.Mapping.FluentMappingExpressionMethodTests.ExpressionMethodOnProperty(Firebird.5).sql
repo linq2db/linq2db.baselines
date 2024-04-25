@@ -57,7 +57,7 @@ SELECT
 FROM
 	"InstanceClass" "t"
 WHERE
-	Cast("t"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS) || Cast("t"."Value" as VarChar(11) CHARACTER SET UNICODE_FSS) = Cast("t"."Id" as VarChar(11) CHARACTER SET UNICODE_FSS) || Cast("t"."Value" as VarChar(11) CHARACTER SET UNICODE_FSS)
+	"t"."Id" || "t"."Value" = "t"."Id" || CAST("t"."Value" AS VarChar(11) CHARACTER SET UNICODE_FSS)
 
 BeforeExecute
 -- Firebird.5 Firebird4

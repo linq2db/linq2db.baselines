@@ -34,8 +34,6 @@ SELECT 5,'5' FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -44,12 +42,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -58,12 +54,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -72,12 +66,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -86,12 +78,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -100,12 +90,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -114,12 +102,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -128,12 +114,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -142,12 +126,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -156,12 +138,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" = '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -170,12 +150,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" = '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -184,12 +162,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -198,12 +174,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -212,12 +186,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -226,12 +198,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -240,12 +210,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -254,12 +222,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -268,12 +234,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -282,12 +246,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -296,12 +258,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '5'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -310,12 +270,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '5'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -324,12 +282,10 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '1'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"i"."Id",
@@ -338,7 +294,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '1'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

@@ -20,7 +20,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."FirstName" = 'InsertDefault'
+	"p"."FirstName" = 'InsertDefault'
 

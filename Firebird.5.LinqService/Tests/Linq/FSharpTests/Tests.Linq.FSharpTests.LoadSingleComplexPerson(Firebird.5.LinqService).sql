@@ -2,18 +2,16 @@
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" = @ID
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

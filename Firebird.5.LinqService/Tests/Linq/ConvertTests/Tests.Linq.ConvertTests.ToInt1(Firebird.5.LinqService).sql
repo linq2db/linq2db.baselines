@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast(Floor("t"."MoneyValue") as Int)
+	CAST(Floor("t"."MoneyValue") AS Int)
 FROM
 	"LinqDataTypes" "t"
 

@@ -54,8 +54,8 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	@Type,
-	@StringValue
+	CAST(@Type AS VARCHAR(9)),
+	CAST(@StringValue AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	@Type,
-	@IntValue
+	CAST(@Type AS VARCHAR(9)),
+	CAST(@IntValue AS Int)
 )
 
 BeforeExecute

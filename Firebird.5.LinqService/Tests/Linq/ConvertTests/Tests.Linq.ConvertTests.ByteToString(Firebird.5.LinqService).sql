@@ -2,14 +2,9 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	"p"."c1"
+	CAST("p".ID AS SmallInt)
 FROM
-	(
-		SELECT
-			Cast(Cast("t".ID as SmallInt) as VarChar(3) CHARACTER SET UNICODE_FSS) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "p"
 WHERE
-	Char_Length("p"."c1") > 0
+	Char_Length(CAST("p".ID AS SmallInt)) > 0
 

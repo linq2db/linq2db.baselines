@@ -52,7 +52,7 @@ SELECT
 	"q"."Id",
 	"q"."Name",
 	"q"."ContactEmail",
-	Coalesce("q"."Enabled", FALSE)
+	"q"."Enabled"
 FROM
 	"CustomerBase" "q"
 WHERE

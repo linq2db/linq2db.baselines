@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast("t"."MoneyValue" as Real)
+	CAST("t"."MoneyValue" AS Real)
 FROM
 	"LinqDataTypes" "t"
 

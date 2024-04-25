@@ -1,21 +1,19 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ParentID"
 FROM
-	"Parent" "p"
-		LEFT JOIN LATERAL (
+	"Parent" "t2"
+		CROSS JOIN LATERAL (
 			SELECT
 				"ch"."ParentID"
 			FROM
 				"Child" "ch"
 			WHERE
-				"ch"."ParentID" = "p"."ParentID"
-			FETCH NEXT @take ROWS ONLY
-		) "t1" ON 1=1
+				"t2"."ParentID" = "ch"."ParentID"
+			FETCH NEXT 1 ROWS ONLY
+		) "t1"
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 

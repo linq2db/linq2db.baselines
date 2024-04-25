@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 226
 
 SELECT
-	DateAdd(Millisecond, Cast(@p as Int), "t"."DateTimeValue")
+	DateAdd(Millisecond, CAST(@p AS Int), "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

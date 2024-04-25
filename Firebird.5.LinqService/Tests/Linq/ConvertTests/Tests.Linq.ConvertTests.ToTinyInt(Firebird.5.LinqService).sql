@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast(Floor("t"."MoneyValue") as SmallInt)
+	CAST(Floor("t"."MoneyValue") AS SmallInt)
 FROM
 	"LinqDataTypes" "t"
 
