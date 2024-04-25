@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @ID Int16
+SET     @ID = 0
 
 INSERT INTO "AllTypes"
 (
@@ -8,16 +10,16 @@ INSERT INTO "AllTypes"
 )
 SELECT
 	123,
-	t2."smallintDataType"
+	CAST(t2.ID AS Int)
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			a_Association."smallintDataType" as ID
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" a_Association ON t1."smallintDataType" = a_Association."intDataType"
 		WHERE
-			t1."smallintDataType" IS NULL
+			CAST(t1."smallintDataType" AS Int) = :ID
 	) t2
 
 BeforeExecute
@@ -32,15 +34,15 @@ INSERT INTO "AllTypes"
 )
 SELECT
 	123,
-	t2."smallintDataType"
+	CAST(t2.ID AS Int)
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			a_Association."smallintDataType" as ID
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" a_Association ON t1."smallintDataType" = a_Association."intDataType"
 		WHERE
-			t1."smallintDataType" = :ID
+			CAST(t1."smallintDataType" AS Int) = :ID
 	) t2
 

@@ -54,16 +54,11 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	d."c1"
+	d."TransactionDate"
 FROM
-	(
-		SELECT
-			t."TransactionDate" as "c1"
-		FROM
-			"Transactions" t
-	) d
+	"Transactions" d
 WHERE
-	To_Number(To_Char(d."c1", 'DD')) > 0
+	EXTRACT(DAY FROM d."TransactionDate") > 0
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
