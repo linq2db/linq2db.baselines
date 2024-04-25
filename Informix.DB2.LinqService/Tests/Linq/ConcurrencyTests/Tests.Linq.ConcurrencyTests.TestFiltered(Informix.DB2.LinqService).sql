@@ -49,21 +49,18 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value VarChar(7) -- String
-SET     @Value = 'value 1'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	ConcurrencyFiltered
+	ConcurrencyFiltered r
 SET
-	ConcurrencyFiltered.Stamp = ConcurrencyFiltered.Stamp + 1,
-	ConcurrencyFiltered."Value" = @Value
+	Stamp = r.Stamp + 1,
+	"Value" = 'value 1'
 WHERE
-	ConcurrencyFiltered.Id = 2 AND ConcurrencyFiltered.Id = @Id AND
-	ConcurrencyFiltered.Stamp = @Stamp
+	r.Id = 2 AND r.Id = @Id AND r.Stamp = @Stamp
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -77,21 +74,18 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value VarChar(7) -- String
-SET     @Value = 'value 2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	ConcurrencyFiltered
+	ConcurrencyFiltered r
 SET
-	ConcurrencyFiltered.Stamp = ConcurrencyFiltered.Stamp + 1,
-	ConcurrencyFiltered."Value" = @Value
+	Stamp = r.Stamp + 1,
+	"Value" = 'value 2'
 WHERE
-	ConcurrencyFiltered.Id = 1 AND ConcurrencyFiltered.Id = @Id AND
-	ConcurrencyFiltered.Stamp = @Stamp
+	r.Id = 1 AND r.Id = @Id AND r.Stamp = @Stamp
 
 BeforeExecute
 -- Informix.DB2 Informix

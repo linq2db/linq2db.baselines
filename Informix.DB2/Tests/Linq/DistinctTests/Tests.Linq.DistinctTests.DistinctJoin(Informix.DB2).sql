@@ -3,7 +3,7 @@
 
 SELECT
 	e.ID,
-	t3.SmallIntValue
+	p.SmallIntValue
 FROM
 	(
 		SELECT DISTINCT
@@ -18,5 +18,5 @@ FROM
 				t2.SmallIntValue
 			FROM
 				LinqDataTypes t2
-		) t3 ON t3.ID = e.ID
+		) p ON p.ID = e.ID
 

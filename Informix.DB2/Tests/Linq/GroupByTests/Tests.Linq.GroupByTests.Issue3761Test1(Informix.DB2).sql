@@ -22,14 +22,20 @@ DECLARE @DATUM Timestamp(16) -- DateTime
 SET     @DATUM = TO_DATE('2019-01-01', '%Y-%m-%d')
 
 SELECT
-	t1.Key_1,
-	t1.Key_2,
-	Sum(t1.SKUPAJ)
+	t1.Year_1,
+	t1.Month_1,
+	SUM(t1.SKUPAJ)
 FROM
 	(
 		SELECT
-			Year(Nvl(n.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Key_1,
-			Month(Nvl(n.DATUM, TO_DATE('0001-01-01', '%Y-%m-%d'))) as Key_2,
+			Year(CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Year_1,
+			Month(CASE
+				WHEN n.DATUM IS NOT NULL THEN n.DATUM
+				ELSE TO_DATE('0001-01-01', '%Y-%m-%d')
+			END) as Month_1,
 			n.SKUPAJ
 		FROM
 			Issue3761Table n
@@ -37,8 +43,8 @@ FROM
 			n.DATUM < @DATUM
 	) t1
 GROUP BY
-	t1.Key_1,
-	t1.Key_2
+	t1.Year_1,
+	t1.Month_1
 
 BeforeExecute
 -- Informix.DB2 Informix

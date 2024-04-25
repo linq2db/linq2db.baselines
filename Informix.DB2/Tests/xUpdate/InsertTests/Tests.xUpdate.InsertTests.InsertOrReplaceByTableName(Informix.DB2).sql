@@ -22,11 +22,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient
+	xxPatient t1
 SET
-	xxPatient.Diagnosis = @Diagnosis
+	Diagnosis = @Diagnosis
 WHERE
-	xxPatient.PersonID = @PersonID
+	t1.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -54,11 +54,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient
+	xxPatient t1
 SET
-	xxPatient.Diagnosis = @Diagnosis
+	Diagnosis = @Diagnosis
 WHERE
-	xxPatient.PersonID = @PersonID
+	t1.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -94,11 +94,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	xxPatient
+	xxPatient t1
 SET
-	xxPatient.Diagnosis = @Diagnosis
+	Diagnosis = @Diagnosis
 WHERE
-	xxPatient.PersonID = @PersonID
+	t1.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -108,11 +108,11 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	xxPatient
+	xxPatient t1
 SET
-	xxPatient.Diagnosis = @Diagnosis
+	Diagnosis = @Diagnosis
 WHERE
-	xxPatient.PersonID = @PersonID
+	t1.PersonID = @PersonID
 
 BeforeExecute
 -- Informix.DB2 Informix
