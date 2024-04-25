@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Max(`p`.`PersonID`)
+	MAX(`t1`.`PersonID`)
 FROM
-	`Person` `p`
+	`Person` `t1`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -34,27 +34,25 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
-	`p`.`Gender`,
 	`p`.`FirstName`,
 	`p`.`MiddleName`,
-	`p`.`LastName`
+	`p`.`LastName`,
+	`p`.`Gender`
 FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` > 4
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`Person` `t1`
+	`Person` `t`
 WHERE
-	`t1`.`PersonID` > 4
+	`t`.`PersonID` > 4
 

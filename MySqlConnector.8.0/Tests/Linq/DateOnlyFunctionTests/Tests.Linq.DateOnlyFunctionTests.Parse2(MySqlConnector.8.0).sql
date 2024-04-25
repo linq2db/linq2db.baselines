@@ -42,16 +42,11 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`d`.`c1`
+	`d`.`TransactionDate`
 FROM
-	(
-		SELECT
-			`t`.`TransactionDate` as `c1`
-		FROM
-			`Transactions` `t`
-	) `d`
+	`Transactions` `d`
 WHERE
-	Extract(day from `d`.`c1`) > 0
+	Extract(day from `d`.`TransactionDate`) > 0
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

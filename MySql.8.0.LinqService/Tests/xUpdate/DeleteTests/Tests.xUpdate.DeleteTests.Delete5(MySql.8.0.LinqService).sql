@@ -54,9 +54,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` > 1000
+	`t1`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -73,7 +73,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` > 1000
+	`t1`.`ParentID` > 1000
 

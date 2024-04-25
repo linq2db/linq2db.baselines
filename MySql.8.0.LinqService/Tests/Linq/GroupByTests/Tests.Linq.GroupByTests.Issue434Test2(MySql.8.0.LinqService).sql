@@ -2,14 +2,14 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`p`.`PersonID`,
-	`_gjd_ri`.`PersonID`,
-	`_gjd_ri`.`Diagnosis`
+	`m_1`.`PersonID`,
+	`d`.`PersonID`,
+	`d`.`Diagnosis`
 FROM
-	`Person` `p`
-		INNER JOIN `Patient` `_gjd_ri` ON `_gjd_ri`.`PersonID` = `p`.`PersonID`
+	`Person` `m_1`
+		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
-	LOCATE('test', Lower(`p`.`FirstName`)) > 0
+	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

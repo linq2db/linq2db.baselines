@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @id Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`PersonID` IS NULL
+	`t1`.`PersonID` = @id
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -16,7 +18,7 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`PersonID` = @id
+	`t1`.`PersonID` = @id
 

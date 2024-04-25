@@ -35,8 +35,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`t`.`Id`,
@@ -46,7 +44,7 @@ FROM
 	`PR_1598_Insert_Fluent_Table` `t`
 WHERE
 	`t`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

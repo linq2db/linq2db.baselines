@@ -2,9 +2,14 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Sign(`p`.`MoneyValue`)
+	`t_1`.`c1`
 FROM
-	`LinqDataTypes` `p`
+	(
+		SELECT
+			Sign(`t`.`MoneyValue`) as `c1`
+		FROM
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Sign(`p`.`MoneyValue`) <> 0
+	`t_1`.`c1` <> 0
 

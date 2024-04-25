@@ -2,8 +2,8 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`p4`.`PersonID`,
-	`p4`.`FirstName`
+	`p2`.`PersonID`,
+	`p2`.`FirstName`
 FROM
-	`Person` `p4`
+	`Person` `p2`
 

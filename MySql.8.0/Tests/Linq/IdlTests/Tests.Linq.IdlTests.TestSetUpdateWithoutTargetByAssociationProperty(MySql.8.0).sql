@@ -30,28 +30,28 @@ DECLARE @Value1 Int32
 SET     @Value1 = 5
 
 UPDATE
-	`Parent` `t1`
-		INNER JOIN `Child` `a_Parent` ON `a_Parent`.`ParentID` = `t1`.`ParentID`
+	`Parent` `a_Parent`,
+	`Child` `child_1`
 SET
-	`t1`.`Value1` = @Value1
+	`a_Parent`.`Value1` = @Value1
 WHERE
-	`a_Parent`.`ChildID` = 10000
+	`child_1`.`ChildID` = 10000 AND `child_1`.`ParentID` = `a_Parent`.`ParentID`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `x`
 FROM
-	`Child` `t1`
+	`Child` `x`
 WHERE
-	`t1`.`ChildID` = 10000
+	`x`.`ChildID` = 10000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `x`
 FROM
-	`Parent` `t1`
+	`Parent` `x`
 WHERE
-	`t1`.`ParentID` = 20000
+	`x`.`ParentID` = 20000
 

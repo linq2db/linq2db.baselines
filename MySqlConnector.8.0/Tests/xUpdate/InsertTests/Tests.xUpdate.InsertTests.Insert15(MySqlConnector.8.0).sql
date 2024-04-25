@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -39,16 +39,16 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 

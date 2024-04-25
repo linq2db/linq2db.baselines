@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Max(`ch`.`ParentID`)
+	MAX(`g_1`.`ParentID`)
 FROM
-	`Child` `ch`
+	`Child` `g_1`
 GROUP BY
-	`ch`.`ParentID`
+	`g_1`.`ParentID`
 
