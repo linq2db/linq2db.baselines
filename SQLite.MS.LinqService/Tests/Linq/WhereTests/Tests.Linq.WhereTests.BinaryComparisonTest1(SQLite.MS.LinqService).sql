@@ -7,10 +7,13 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [_]
+				[Person] [t1]
 			WHERE
-				([_].[FirstName] = [_].[FirstName]) = CASE
-					WHEN [_].[MiddleName] <> [_].[LastName]
+				CASE
+					WHEN [t1].[FirstName] = [t1].[FirstName] THEN 1
+					ELSE 0
+				END = CASE
+					WHEN ([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL)
 						THEN 1
 					ELSE 0
 				END

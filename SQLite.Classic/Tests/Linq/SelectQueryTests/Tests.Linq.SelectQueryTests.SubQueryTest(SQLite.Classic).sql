@@ -24,47 +24,37 @@ VALUES
 (1,100)
 
 BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
+	[t_1].[Id],
+	[t_1].[Value],
+	[t2].[not_null],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM
-	(
-		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [Value1],
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [Value2]
-		FROM
-			[SampleClass] [t]
-		WHERE
-			[t].[Value] = 1
-		UNION
-		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
-		FROM
-			(
-				SELECT
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
-			) [t1]
-	) [t2]
-LIMIT @take
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t].[Id],
-	[t].[Value]
-FROM
-	[SampleClass] [t]
+	[SampleClass] [t_1]
+		LEFT JOIN (
+			SELECT
+				[t1].[Value1],
+				[t1].[Value2],
+				1 as [not_null]
+			FROM
+				(
+					SELECT
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([t].[Value] AS NVarChar(11)) || ' Day') as [Value1],
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day') as [Value2]
+					FROM
+						[SampleClass] [t]
+					WHERE
+						[t].[Value] = 1
+					UNION
+					SELECT
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day') as [Value1],
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day') as [Value2]
+				) [t1]
+			LIMIT 1
+		) [t2] ON 1=1
 
 BeforeExecute
 -- SQLite.Classic SQLite

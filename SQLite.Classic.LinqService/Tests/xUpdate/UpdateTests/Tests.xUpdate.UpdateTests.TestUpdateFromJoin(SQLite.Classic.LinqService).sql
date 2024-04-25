@@ -46,19 +46,17 @@ SET
 	[col3] = Replace([gt_s_one].[col3], 'auth.', ''),
 	[col4] = [gt_s_one].[col4],
 	[col5] = CASE
-		WHEN [gt_s_one].[col3] = 'empty'
-			THEN '1'
+		WHEN [gt_s_one].[col3] = 'empty' THEN '1'
 		ELSE '0'
 	END,
 	[col6] = CASE
-		WHEN [gt_s_one].[col3] = 'empty'
-			THEN ''
-		ELSE Cast([am].[id] as NVarChar(11))
+		WHEN [gt_s_one].[col3] = 'empty' THEN ''
+		ELSE CAST([y1].[id] AS NVarChar(11))
 	END
 FROM
-	[access_mode] [am]
+	[access_mode] [y1]
 WHERE
-	(Upper(Replace([gt_s_one].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
+	(Upper(Replace([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL)
 
 BeforeExecute
 -- SQLite.Classic SQLite
