@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'10'
+DECLARE @month Int -- Int32
+SET     @month = 10
 
 SELECT
-	Convert(Date, REPLICATE('0', CASE WHEN LEN(CAST((2010 + [t].[ID]) as NVARCHAR)) > 4 THEN 0 ELSE (4 - LEN(CAST((2010 + [t].[ID]) as NVARCHAR))) END) + CAST((2010 + [t].[ID]) as NVARCHAR) + N'-' + @p + N'-01')
+	CAST(RIGHT('0' + CAST(2010 + [t].[ID] AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(@month AS VarChar(2)), 2) + N'-01' AS Date)
 FROM
 	[LinqDataTypes] [t]
 

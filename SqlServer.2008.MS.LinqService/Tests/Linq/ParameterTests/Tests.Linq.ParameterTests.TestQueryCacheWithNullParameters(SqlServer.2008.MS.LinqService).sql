@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @id Int -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] IS NULL
+	[t1].[PersonID] = @id
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -16,7 +18,7 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 
