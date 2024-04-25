@@ -2,9 +2,9 @@
 -- Firebird.4 Firebird4
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
 WHERE
-	"t1".ID >= 1000
+	"r".ID >= 1000
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -19,13 +19,11 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	@tt
+	CAST(@tt AS BigInt)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t".ID,
@@ -34,13 +32,13 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1001
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
 WHERE
-	"t1".ID >= 1000
+	"r".ID >= 1000
 

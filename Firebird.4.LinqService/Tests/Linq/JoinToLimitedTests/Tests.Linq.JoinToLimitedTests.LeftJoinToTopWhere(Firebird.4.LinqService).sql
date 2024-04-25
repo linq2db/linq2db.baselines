@@ -1,23 +1,23 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"o"."ParentID",
 	"o"."Value1",
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"c_2"."ParentID",
+	"c_2"."ChildID"
 FROM
 	"Parent" "o"
 		LEFT JOIN LATERAL (
 			SELECT
-				"x"."ParentID",
-				"x"."ChildID"
+				"c_1"."ParentID",
+				"c_1"."ChildID"
 			FROM
-				"Child" "x"
+				"Child" "c_1"
 			WHERE
-				"x"."ParentID" = "o"."ParentID"
-			FETCH NEXT @take ROWS ONLY
-		) "t1" ON 1=1
+				"c_1"."ParentID" = "o"."ParentID"
+			ORDER BY
+				"c_1"."ChildID" DESC
+			FETCH NEXT 1 ROWS ONLY
+		) "c_2" ON 1=1
 

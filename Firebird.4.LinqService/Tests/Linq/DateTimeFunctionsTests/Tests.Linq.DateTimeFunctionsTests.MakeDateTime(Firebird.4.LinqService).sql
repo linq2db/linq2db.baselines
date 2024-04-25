@@ -2,14 +2,9 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t"."c1"
+	CAST('2010-' || LPad(CAST("t".ID AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)
 FROM
-	(
-		SELECT
-			Cast(('2010-' || Lpad("p".ID,2,'0') || '-01') as Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Cast(Floor(Extract(year from "t"."c1")) as int) = 2010
+	Extract(year from CAST('2010-' || LPad(CAST("t".ID AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)) = 2010
 

@@ -2,8 +2,6 @@
 -- Firebird.4 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 2
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."FirstName",
@@ -15,5 +13,5 @@ FROM
 	"Person" "t1"
 ORDER BY
 	"t1"."LastName"
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 

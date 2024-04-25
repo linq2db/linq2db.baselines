@@ -25,10 +25,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
@@ -39,7 +39,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -51,7 +51,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
+		CAST(@id AS Int),
 		'negative'
 	)
 
@@ -74,7 +74,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@id as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -86,7 +86,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@id as Int),
+		CAST(@id AS Int),
 		'positive'
 	)
 

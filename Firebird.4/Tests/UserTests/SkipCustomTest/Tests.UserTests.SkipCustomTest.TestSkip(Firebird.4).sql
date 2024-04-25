@@ -40,15 +40,13 @@ INSERT INTO "PR_1598_SkipCustom_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(4)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -58,7 +56,7 @@ FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -74,14 +72,12 @@ INSERT INTO "PR_1598_SkipCustom_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(3))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -91,7 +87,7 @@ FROM
 	"PR_1598_SkipCustom_Table" "t"
 WHERE
 	"t"."Id" = 2
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

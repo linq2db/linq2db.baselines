@@ -2,9 +2,9 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	Cast((Cast(Cast(Floor(Extract(year from "t"."DateTimeValue")) as int) as VarChar(11) CHARACTER SET UNICODE_FSS) || '-02-24 00:00:00') as TimeStamp)
+	CAST(CAST(Extract(year from "d"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-02-24 00:00:00' AS TimeStamp)
 FROM
-	"LinqDataTypes" "t"
+	"LinqDataTypes" "d"
 WHERE
-	Cast(Floor(Extract(day from Cast((Cast(Cast(Floor(Extract(year from "t"."DateTimeValue")) as int) as VarChar(11) CHARACTER SET UNICODE_FSS) || '-02-24 00:00:00') as TimeStamp))) as int) > 0
+	Extract(day from CAST(CAST(Extract(year from "d"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-02-24 00:00:00' AS TimeStamp)) > 0
 

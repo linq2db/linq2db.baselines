@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(1)),
+	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -68,16 +68,14 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS VARCHAR(3)),
+	CAST(@CEnum AS VarChar(12) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -85,12 +83,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -98,12 +94,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', NULL)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -111,12 +105,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -124,12 +116,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN (NULL, 'TWO')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -137,7 +127,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN ('THREE', 'TWO')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

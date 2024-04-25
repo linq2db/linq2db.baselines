@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
+DECLARE @p VarChar(1) -- String
+SET     @p = 'p'
 
 SELECT
 	"p"."FirstName",
@@ -10,10 +12,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN Position('p', "p"."LastName") = 0
-			THEN -1
-		ELSE Char_Length("p"."LastName") - Position('p', Reverse("p"."LastName"))
-	END = 2 AND
+	Char_Length("p"."LastName") - Position('p', Reverse("p"."LastName")) = 2 AND
+	(Position(@p, "p"."LastName") <> 0 OR Position(@p, "p"."LastName") IS NULL) AND
 	"p"."PersonID" = 1
 
