@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Max([c_1].[ChildID])
+	MAX([t1].[ChildID])
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 
