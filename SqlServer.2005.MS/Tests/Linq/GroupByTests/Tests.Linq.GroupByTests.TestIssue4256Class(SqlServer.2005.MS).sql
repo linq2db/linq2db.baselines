@@ -2,17 +2,35 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[IsActive],
-	[t1].[Other]
+	[it_1].[IsActive],
+	[it_1].[Other]
 FROM
 	(
 		SELECT
 			1 as [IsActive],
-			Convert(Bit, [it].[SmallIntValue]) as [Other]
+			CASE
+				WHEN [it].[SmallIntValue] <> 0 THEN 1
+				ELSE 0
+			END as [Other]
 		FROM
 			[LinqDataTypes] [it]
-	) [t1]
+	) [it_1]
 GROUP BY
-	[t1].[IsActive],
-	[t1].[Other]
+	[it_1].[IsActive],
+	[it_1].[Other]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
+FROM
+	[LinqDataTypes] [t1]
 

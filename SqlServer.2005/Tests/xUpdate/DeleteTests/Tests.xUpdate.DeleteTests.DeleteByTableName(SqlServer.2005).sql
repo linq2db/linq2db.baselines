@@ -55,10 +55,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
