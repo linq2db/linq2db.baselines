@@ -2,9 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast((Cast(Cast(Floor(Extract(year from t."DateTimeValue")) as int) as VarChar(11)) || '-01-01 00:00:00') as TimeStamp)
+	(Floor(Extract(year From p."DateTimeValue"))::Int || '-01-01 00:00:00')::TimeStamp
 FROM
-	"LinqDataTypes" t
+	"LinqDataTypes" p
 WHERE
-	Cast(Floor(Extract(day from Cast((Cast(Cast(Floor(Extract(year from t."DateTimeValue")) as int) as VarChar(11)) || '-01-01 00:00:00') as TimeStamp))) as int) > 0
+	Floor(Extract(day From (Floor(Extract(year From p."DateTimeValue"))::Int || '-01-01 00:00:00')::TimeStamp))::Int > 0
 
