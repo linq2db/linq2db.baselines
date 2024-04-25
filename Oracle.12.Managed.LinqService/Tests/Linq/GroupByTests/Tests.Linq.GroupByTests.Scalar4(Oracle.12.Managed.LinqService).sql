@@ -2,31 +2,23 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
-		SELECT
-			Min(keyParam."ChildID")
-		FROM
-			"Child" keyParam
-		WHERE
-			g_1."ParentID" = keyParam."ParentID" AND keyParam."ParentID" > 2
-	)
+	g_2.MIN_2
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Min(ch."ChildID")
-				FROM
-					"Child" ch
-				WHERE
-					t1."ParentID" = ch."ParentID" AND ch."ParentID" > 2
-			) as "ex",
-			t1."ParentID"
+			MIN(CASE
+				WHEN g_1."ParentID" > 2 THEN g_1."ChildID"
+				ELSE NULL
+			END) as MIN_1,
+			MIN(CASE
+				WHEN g_1."ParentID" > 2 THEN g_1."ChildID"
+				ELSE NULL
+			END) as MIN_2
 		FROM
-			"Child" t1
+			"Child" g_1
 		GROUP BY
-			t1."ParentID"
-	) g_1
+			g_1."ParentID"
+	) g_2
 WHERE
-	g_1."ex" IS NOT NULL
+	g_2.MIN_1 IS NOT NULL
 

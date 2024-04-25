@@ -2,14 +2,14 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	t_1."c1"
 FROM
 	(
 		SELECT
-			Round(Cast(p."MoneyValue" as Float), 0) as "c1"
+			Round(CAST(t."MoneyValue" AS Float), 0) as "c1"
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t."c1" <> 0D
+	t_1."c1" <> 0D
 
