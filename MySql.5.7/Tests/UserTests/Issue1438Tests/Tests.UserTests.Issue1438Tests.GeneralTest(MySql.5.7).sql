@@ -37,17 +37,15 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`Id`,
-	`_`.`Has`
+	`t1`.`Id`,
+	`t1`.`Has`
 FROM
-	`Issue1438` `_`
+	`Issue1438` `t1`
 WHERE
-	`_`.`Id` = @id
-LIMIT @take
+	`t1`.`Id` = @id
+LIMIT 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

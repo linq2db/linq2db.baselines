@@ -2,8 +2,6 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`ParentID`,
@@ -14,5 +12,5 @@ WHERE
 	`x`.`ParentID` = @ParentID
 ORDER BY
 	`x`.`ParentID` DESC
-LIMIT @take
+LIMIT 1
 

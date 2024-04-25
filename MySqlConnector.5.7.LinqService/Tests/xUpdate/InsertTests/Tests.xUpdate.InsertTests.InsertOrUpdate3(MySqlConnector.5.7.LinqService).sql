@@ -50,7 +50,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast(Char_Length(`Diagnosis`) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -70,7 +70,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -90,14 +90,12 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
@@ -106,5 +104,5 @@ FROM
 	`Patient` `p`
 WHERE
 	`p`.`PersonID` = @id
-LIMIT @take
+LIMIT 2
 

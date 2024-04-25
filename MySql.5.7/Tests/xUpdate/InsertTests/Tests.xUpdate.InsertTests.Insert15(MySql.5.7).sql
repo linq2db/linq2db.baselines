@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -39,16 +39,16 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 

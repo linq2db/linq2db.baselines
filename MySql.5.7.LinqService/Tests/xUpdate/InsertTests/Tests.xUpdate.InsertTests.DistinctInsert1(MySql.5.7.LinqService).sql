@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -17,23 +17,23 @@ INSERT INTO `LinqDataTypes`
 	`BoolValue`
 )
 SELECT
-	Cast(Floor(`t1`.`c1` + 1001) as SIGNED),
+	CAST(Floor(`t2`.`c1` + 1001) AS SIGNED),
 	Uuid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast(`_`.`ID` as DECIMAL(29, 10)) / 3) as `c1`
+			Floor(CAST(`t1`.`ID` AS DECIMAL(29, 10)) / 3) as `c1`
 		FROM
-			`LinqDataTypes` `_`
-	) `t1`
+			`LinqDataTypes` `t1`
+	) `t2`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `c_1`
 WHERE
-	`t1`.`ID` > 1000
+	`c_1`.`ID` > 1000
 

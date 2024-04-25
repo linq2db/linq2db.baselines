@@ -5,14 +5,12 @@ DROP TABLE IF EXISTS `DropTableTest`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
-	`LinqDataTypes` `_`
-LIMIT @take
+	`LinqDataTypes` `t1`
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

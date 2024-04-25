@@ -380,7 +380,7 @@ SELECT
 FROM
 	`InstanceClass` `t`
 WHERE
-	(Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) = Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) OR Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL AND Concat(Cast(`t`.`Id` as CHAR(11)), Cast(`t`.`Value` as CHAR(11))) IS NULL)
+	Concat(CAST(`t`.`Id` AS CHAR(11)), CAST(`t`.`Value` AS CHAR(11))) = Concat(CAST(`t`.`Id` AS CHAR(11)), `t`.`Value`)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`ParentID`,
-	`_`.`Value1`
+	`t1`.`ParentID`,
+	`t1`.`Value1`
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
 	(
 		SELECT
 			`r`.`GuidValue`
 		FROM
 			`LinqDataTypes` `r`
-		LIMIT @take
+		LIMIT 1
 	) IS NOT NULL
 

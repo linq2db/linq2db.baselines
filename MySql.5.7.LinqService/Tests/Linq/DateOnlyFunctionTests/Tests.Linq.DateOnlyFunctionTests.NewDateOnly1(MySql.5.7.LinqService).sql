@@ -2,14 +2,9 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t`.`c1`
+	Extract(year from `t`.`DateTimeValue`)
 FROM
-	(
-		SELECT
-			Cast(Concat(Lpad(Extract(year from `p`.`DateTimeValue`),4,'0'), '-10-01') as Date) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `t`
+	`LinqDataTypes` `t`
 WHERE
-	Extract(month from `t`.`c1`) = 10
+	Extract(month from STR_TO_DATE(Concat(CAST(Extract(year from `t`.`DateTimeValue`) AS CHAR(4)), '-10-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) = 10
 

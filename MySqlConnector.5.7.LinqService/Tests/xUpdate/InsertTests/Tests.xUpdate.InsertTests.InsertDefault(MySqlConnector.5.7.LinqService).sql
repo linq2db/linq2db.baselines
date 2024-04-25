@@ -19,9 +19,9 @@ VALUES
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Person` `t1`
+	`Person` `p`
 WHERE
-	`t1`.`FirstName` = 'InsertDefault'
+	`p`.`FirstName` = 'InsertDefault'
 

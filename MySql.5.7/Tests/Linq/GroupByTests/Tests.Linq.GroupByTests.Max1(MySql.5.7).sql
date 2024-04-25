@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Max(`c_1`.`ChildID`)
+	MAX(`t1`.`ChildID`)
 FROM
-	`Child` `c_1`
+	`Child` `t1`
 
