@@ -31,11 +31,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 2
-	[_].[ID]
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] IN (4, 5, 6)
+	[t1].[ID] IN (4, 5, 6)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

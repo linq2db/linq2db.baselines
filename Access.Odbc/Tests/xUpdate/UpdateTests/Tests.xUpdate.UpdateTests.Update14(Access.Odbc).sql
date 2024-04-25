@@ -32,11 +32,11 @@ DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
-	[Person] [_]
+	[Person] [t1]
 SET
-	[_].[LastName] = CStr(Len(?) + ?)
+	[t1].[LastName] = CStr(Len(?) + ?)
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[t1].[FirstName] LIKE 'Update14%'
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -44,7 +44,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[t1].[FirstName] LIKE 'Update14%'
 

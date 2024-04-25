@@ -4,21 +4,45 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[cp].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [cp]
+			[Parent] [p]
 		WHERE
-			[cp].[ParentID] > 0
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON ([_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100)
+			[p].[ParentID] > 0
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([d].[ParentID] = [m_1].[ParentID])
+WHERE
+	[d].[ChildID] > -100 AND [d].[ParentID] > 0
 ORDER BY
-	[_c].[ChildID]
+	[d].[ChildID]
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] > 0
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([d].[ParentID] = [m_1].[ParentID])
+WHERE
+	[d].[ChildID] > -100
+ORDER BY
+	[d].[ChildID]
 
 BeforeExecute
 DisposeTransaction
@@ -26,40 +50,25 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[cp].[ParentID],
-	Iif(EXISTS(
+	[t].[ParentID],
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c_1]
 		WHERE
-			[c_1].[ParentID] = [cp].[ParentID] AND [c_1].[ChildID] > -100
+			[c_1].[ParentID] = [t].[ParentID] AND [c_1].[ChildID] > -100
 	), True, False),
-	[t1].[Count_1],
 	(
-		SELECT TOP 1
-			[c_2].[ParentID]
+		SELECT
+			COUNT(*)
 		FROM
 			[Child] [c_2]
 		WHERE
-			[c_2].[ParentID] = [cp].[ParentID] AND [c_2].[ChildID] > -100 AND
-			[c_2].[ParentID] > 0
-		ORDER BY
-			[c_2].[ChildID]
+			[c_2].[ParentID] = [t].[ParentID] AND [c_2].[ChildID] > -100
 	)
 FROM
-	[Parent] [cp]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[c_3].[ParentID]
-			FROM
-				[Child] [c_3]
-			WHERE
-				[c_3].[ChildID] > -100
-			GROUP BY
-				[c_3].[ParentID]
-		) [t1] ON ([t1].[ParentID] = [cp].[ParentID])
+	[Parent] [t]
 WHERE
-	[cp].[ParentID] > 0
+	[t].[ParentID] > 0
 

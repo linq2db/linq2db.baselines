@@ -6,9 +6,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[char20DataType] = 'issue792'
+	[t1].[char20DataType] = 'issue792'
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -21,9 +21,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[char20DataType] = 'issue792'
+	[t1].[char20DataType] = 'issue792'
 
 BeforeExecute
 DisposeTransaction

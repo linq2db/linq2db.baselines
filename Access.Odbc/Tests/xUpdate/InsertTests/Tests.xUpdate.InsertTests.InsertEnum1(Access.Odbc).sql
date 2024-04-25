@@ -32,9 +32,9 @@ SET     @Value1 = 2
 SELECT
 	Count(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = ? AND [_].[Value1] = ?
+	[t1].[ParentID] = ? AND [t1].[Value1] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

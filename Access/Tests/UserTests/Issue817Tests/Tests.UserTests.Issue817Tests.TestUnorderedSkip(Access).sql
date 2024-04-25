@@ -12,5 +12,5 @@ BeforeExecute
 SELECT
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 

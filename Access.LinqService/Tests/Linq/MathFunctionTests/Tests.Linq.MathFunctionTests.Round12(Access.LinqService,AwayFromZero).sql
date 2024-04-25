@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Iif([p].[MoneyValue] * 10 - Int([p].[MoneyValue] * 10) = 0.5 AND Int([p].[MoneyValue] * 10) MOD 2 = 0, -Int(-([p].[MoneyValue] * 10)), Round([p].[MoneyValue] * 10, 0)) / 10 as [c1]
+			IIF([t].[MoneyValue] * 10 - Int([t].[MoneyValue] * 10) = 0.5 AND Int([t].[MoneyValue] * 10) MOD 2 = 0, -Int(-([t].[MoneyValue] * 10)), Round([t].[MoneyValue] * 10, 0)) / 10 as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0 AND [t].[c1] <> 7
+	[t_1].[c1] <> 0 AND [t_1].[c1] <> 7
 
