@@ -28,22 +28,20 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(5)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",
@@ -76,22 +74,20 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(5)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",

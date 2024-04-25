@@ -30,10 +30,8 @@ SELECT CAST('2021-01-01' AS date) FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @param VarChar(4) -- String
-SET     @param = 'JOHN'
+DECLARE @p VarChar(4) -- String
+SET     @p = 'JOHN'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Upper("p"."FirstName") = @param AND "p"."PersonID" = 1
+	Upper("p"."FirstName") = @p AND "p"."PersonID" = 1
 

@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Cast(Floor(Extract(second from "t"."DateTimeValue")) as int)
+	CAST(Floor(Extract(second from "t"."DateTimeValue")) AS Int)
 FROM
 	"LinqDataTypes" "t"
 

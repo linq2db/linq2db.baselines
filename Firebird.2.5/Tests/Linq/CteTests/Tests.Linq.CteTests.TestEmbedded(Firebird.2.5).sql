@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-WITH CTE_1 ("cte_field_1")
+WITH RECURSIVE CTE_1 ("ChildID")
 AS
 (
 	SELECT
@@ -9,27 +9,27 @@ AS
 	FROM
 		"Child" "c_1"
 ),
-CTE_2 ("cte_field_1")
+CTE_2 ("ChildID")
 AS
 (
 	SELECT DISTINCT
-		"t1"."cte_field_1"
+		"t1"."ChildID"
 	FROM
 		CTE_1 "t1"
 ),
-CTE_3 ("cte_field_1")
+CTE_3 ("ChildID")
 AS
 (
 	SELECT DISTINCT
-		"t2"."cte_field_1"
+		"t2"."ChildID"
 	FROM
 		CTE_2 "t2"
 ),
-CTE_4 ("cte_field_1")
+CTE_4 ("ChildID")
 AS
 (
 	SELECT DISTINCT
-		"t3"."cte_field_1"
+		"t3"."ChildID"
 	FROM
 		CTE_3 "t3"
 )
@@ -45,6 +45,6 @@ WHERE
 		FROM
 			CTE_4 "t4"
 		WHERE
-			"t4"."cte_field_1" = "w"."ChildID"
+			"w"."ChildID" = "t4"."ChildID"
 	)
 

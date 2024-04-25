@@ -96,19 +96,17 @@ SELECT 3,_utf8 x'D0BFD180D181D18232' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"i"."Id",
 	"a_SubData"."Id",
 	(
-		SELECT FIRST @take
-			"s"."Reason"
+		SELECT FIRST 1
+			"a_SubDatas"."Reason"
 		FROM
-			"SubData2" "s"
+			"SubData2" "a_SubDatas"
 		WHERE
-			"a_SubData"."Id" = "s"."Id"
+			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
 	)
 FROM
 	"Data" "i"
