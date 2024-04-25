@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Date  -- DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
-	"_"."ID",
-	"_"."MoneyValue",
-	"_"."DateTimeValue",
-	"_"."BoolValue",
-	"_"."GuidValue",
-	"_"."BinaryValue",
-	"_"."SmallIntValue",
-	"_"."StringValue"
+	"t1"."ID",
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."BinaryValue",
+	"t1"."SmallIntValue",
+	"t1"."StringValue"
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	Cast("_"."DateTimeValue" as Date) = ?
+	To_Date("t1"."DateTimeValue") = To_Date(To_Timestamp('2009-09-20 00:00:00.000'))
 

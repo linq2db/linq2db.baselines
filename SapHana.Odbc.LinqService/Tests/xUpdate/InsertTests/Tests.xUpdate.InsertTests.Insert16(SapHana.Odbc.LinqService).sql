@@ -2,14 +2,12 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert16%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idx  -- Int32
-SET     @idx = 12
 
 INSERT INTO "Person"
 (
@@ -20,7 +18,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast(? as NVarChar(11)),
+	CAST(12 AS NVarChar(11)),
 	'M'
 )
 
@@ -30,15 +28,15 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert16%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert16%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 

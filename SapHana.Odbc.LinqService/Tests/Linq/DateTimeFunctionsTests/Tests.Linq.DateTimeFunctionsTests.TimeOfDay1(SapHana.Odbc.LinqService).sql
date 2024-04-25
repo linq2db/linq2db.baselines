@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast("t"."DateTimeValue" as Time)
+	CAST("t"."DateTimeValue" AS Time)
 FROM
 	"LinqDataTypes" "t"
 

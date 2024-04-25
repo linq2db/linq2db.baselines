@@ -14,6 +14,6 @@ SET     @skip = 1
 SELECT
 	1
 FROM
-	"Person" "_"
+	"Person" "t1"
 LIMIT 4200000000 OFFSET ?
 

@@ -1,22 +1,18 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	1
 FROM
-	"Person" "_"
-LIMIT ?
+	"Person" "t1"
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	1
 FROM
-	"Person" "_"
-LIMIT ?
+	"Person" "t1"
+LIMIT 1
 
