@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] IS NULL
+	[t1].[PersonID] = @id
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -16,7 +18,7 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

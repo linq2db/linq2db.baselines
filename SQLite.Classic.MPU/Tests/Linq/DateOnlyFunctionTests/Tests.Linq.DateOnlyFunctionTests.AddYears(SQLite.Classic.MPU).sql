@@ -42,7 +42,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d', [t].[TransactionDate],12 || ' Year')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '12 Year')
 FROM
 	[Transactions] [t]
 

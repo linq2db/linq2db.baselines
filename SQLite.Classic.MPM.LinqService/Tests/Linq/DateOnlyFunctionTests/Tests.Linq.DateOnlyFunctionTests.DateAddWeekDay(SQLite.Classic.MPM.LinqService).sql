@@ -270,7 +270,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d', [t].[TransactionDate],1 || ' Day')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '1 Day')
 FROM
 	[Transactions] [t]
 
