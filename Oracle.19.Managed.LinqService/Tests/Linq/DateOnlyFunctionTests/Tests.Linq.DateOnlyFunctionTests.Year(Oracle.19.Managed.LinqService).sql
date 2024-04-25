@@ -286,7 +286,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	To_Number(To_Char(t."TransactionDate", 'YYYY'))
+	EXTRACT(YEAR FROM t."TransactionDate")
 FROM
 	"Transactions" t
 
