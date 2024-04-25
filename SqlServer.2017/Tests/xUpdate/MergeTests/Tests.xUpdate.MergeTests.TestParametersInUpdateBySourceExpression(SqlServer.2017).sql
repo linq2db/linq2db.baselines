@@ -228,32 +228,32 @@ SET     @param = 123
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id]
+		[t1].[Id] as [source_Id]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id]
+	[source_Id]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED By Source AND [Target].[Id] = 1 THEN UPDATE
 SET
-	[Target].[Field1] = @param
+	[Field1] = @param
 ;
 
 BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	[_].[Id],
-	[_].[Field1],
-	[_].[Field2],
-	[_].[Field3],
-	[_].[Field4],
-	[_].[Field5]
+	[t1].[Id],
+	[t1].[Field1],
+	[t1].[Field2],
+	[t1].[Field3],
+	[t1].[Field4],
+	[t1].[Field5]
 FROM
-	[TestMerge1] [_]
+	[TestMerge1] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 

@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT TOP (15)
@@ -80,8 +80,8 @@ FROM
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]
-		) [_] ON [_].[ID] = [e].[ID]
+		) [p] ON [p].[ID] = [e].[ID]
 ORDER BY
-	[_].[ID],
-	[e].[ID]
+	[e].[ID],
+	[p].[ID]
 
