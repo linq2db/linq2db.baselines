@@ -18,10 +18,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS NVarChar(8)),
+	CAST(@LastName AS NVarChar(8)),
+	CAST(@MiddleName AS NVarChar(255)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -32,11 +32,11 @@ DECLARE @idx Integer(4) -- Int32
 SET     @idx = 4
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."LastName" = RTrim(Char(CHARACTER_LENGTH(@name,CODEUNITS32) + @idx))
+	"LastName" = RTrim(Char(CHARACTER_LENGTH(CAST(@name AS NVarChar(8)),CODEUNITS32) + CAST(@idx AS Int)))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -44,7 +44,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

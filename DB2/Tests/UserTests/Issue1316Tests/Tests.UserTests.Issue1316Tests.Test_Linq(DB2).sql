@@ -32,18 +32,18 @@ INSERT INTO "Issue1316Tests"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID
+	"t1".ID
 FROM
-	"Issue1316Tests" "_"
+	"Issue1316Tests" "t1"
 WHERE
-	"_".ID IN (4, 5, 6)
+	"t1".ID IN (4, 5, 6)
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

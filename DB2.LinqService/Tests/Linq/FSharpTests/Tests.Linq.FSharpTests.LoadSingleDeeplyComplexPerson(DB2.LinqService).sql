@@ -5,10 +5,10 @@ SET     @ID = 1
 
 SELECT
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE

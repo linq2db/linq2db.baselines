@@ -30,7 +30,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -107,7 +107,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -146,8 +146,8 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS NVarChar(5))
 )
 
 BeforeExecute
@@ -164,8 +164,8 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS NVarChar(5))
 )
 
 BeforeExecute
@@ -175,11 +175,11 @@ SELECT
 	"i"."Id",
 	(
 		SELECT
-			"s"."Reason"
+			"a_SubDatas"."Reason"
 		FROM
-			"SubData2" "s"
+			"SubData2" "a_SubDatas"
 		WHERE
-			"a_SubData"."Id" = "s"."Id"
+			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
 		FETCH FIRST 1 ROWS ONLY
 	)
 FROM

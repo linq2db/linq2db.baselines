@@ -32,10 +32,10 @@ INSERT INTO "xxPerson"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS NVarChar(6)),
+	CAST(@LastName AS NVarChar(4)),
+	CAST(@MiddleName AS NVarChar(255)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
@@ -63,10 +63,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(6)),
+			CAST(@LastName AS NVarChar(4)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 
@@ -95,10 +95,10 @@ FROM
 		)
 		VALUES
 		(
-			@FirstName,
-			@LastName,
-			@MiddleName,
-			@Gender
+			CAST(@FirstName AS NVarChar(6)),
+			CAST(@LastName AS NVarChar(4)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@Gender AS Char(1))
 		)
 	)
 

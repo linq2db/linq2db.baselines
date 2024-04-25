@@ -28,7 +28,7 @@ BeforeExecute
 SELECT
 	current server
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -37,7 +37,7 @@ BeforeExecute
 SELECT
 	current schema
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -48,11 +48,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	TESTDB.DB2INST1."Issue681Table"
+	TESTDB.DB2INST1."Issue681Table" "t1"
 SET
-	TESTDB.DB2INST1."Issue681Table"."Value" = @Value
+	"Value" = @Value
 WHERE
-	TESTDB.DB2INST1."Issue681Table".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

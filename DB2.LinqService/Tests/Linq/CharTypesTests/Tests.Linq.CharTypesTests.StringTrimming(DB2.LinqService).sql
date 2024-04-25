@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("_".ID)
+	MAX("t1".ID)
 FROM
-	ALLTYPES "_"
+	ALLTYPES "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -17,7 +17,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(6))
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -45,7 +45,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 BeforeExecute
@@ -298,7 +298,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(255))
 )
 
 BeforeExecute
@@ -307,14 +307,14 @@ DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
 
 SELECT
-	"_".ID,
-	"_".CHAR20DATATYPE
+	"t1".ID,
+	"t1".CHAR20DATATYPE
 FROM
-	ALLTYPES "_"
+	ALLTYPES "t1"
 WHERE
-	"_".ID > @lastId
+	"t1".ID > @lastId
 ORDER BY
-	"_".ID
+	"t1".ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -322,7 +322,7 @@ DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
 
 DELETE FROM
-	ALLTYPES "_"
+	ALLTYPES "t1"
 WHERE
-	"_".ID > @lastId
+	"t1".ID > @lastId
 

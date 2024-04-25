@@ -24,6 +24,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id VarBinary(16) -- Binary
 SET     @id = BX'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @testId VarBinary(16) -- Binary
+SET     @testId = BX'00000000000000000000000000000000'
 
 INSERT INTO "Issue1363"
 (
@@ -32,14 +34,14 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS char(16) for bit data),
 	(
 		SELECT
-			"_"."required_field"
+			"t1"."required_field"
 		FROM
-			"Issue1363" "_"
+			"Issue1363" "t1"
 		WHERE
-			"_"."required_field" IS NULL
+			"t1"."required_field" = @testId
 	)
 )
 
@@ -57,14 +59,14 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS char(16) for bit data),
 	(
 		SELECT
-			"_"."required_field"
+			"t1"."required_field"
 		FROM
-			"Issue1363" "_"
+			"Issue1363" "t1"
 		WHERE
-			"_"."required_field" = @testId
+			"t1"."required_field" = @testId
 	)
 )
 
@@ -74,12 +76,12 @@ DECLARE @id2 VarBinary(16) -- Binary
 SET     @id2 = BX'0D6048A921DE744F8AC29516B287076E'
 
 SELECT
-	"_"."required_field",
-	"_"."optional_field"
+	"t1"."required_field",
+	"t1"."optional_field"
 FROM
-	"Issue1363" "_"
+	"Issue1363" "t1"
 WHERE
-	"_"."required_field" = @id2
+	"t1"."required_field" = @id2
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

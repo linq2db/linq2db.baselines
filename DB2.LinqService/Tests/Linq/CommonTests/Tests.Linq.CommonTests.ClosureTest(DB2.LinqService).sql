@@ -4,7 +4,7 @@
 SELECT
 	1
 FROM
-	"Person" "_"
+	"Person" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -13,6 +13,6 @@ BeforeExecute
 SELECT
 	1
 FROM
-	"Person" "_"
+	"Person" "t1"
 FETCH FIRST 1 ROWS ONLY
 

@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -43,7 +43,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
