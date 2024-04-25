@@ -2,6 +2,8 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
+DECLARE @LastName VarChar(8) -- String
+SET     @LastName = 'LastName'
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'F'
 
@@ -14,7 +16,7 @@ INSERT INTO `Person`
 VALUES
 (
 	@FirstName,
-	'LastName',
+	@LastName,
 	@Gender
 )
 

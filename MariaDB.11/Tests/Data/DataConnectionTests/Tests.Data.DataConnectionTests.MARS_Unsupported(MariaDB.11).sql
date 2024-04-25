@@ -16,10 +16,10 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 SELECT
-	`_`.`PersonID`,
-	`_`.`Taxonomy`
+	`t1`.`PersonID`,
+	`t1`.`Taxonomy`
 FROM
-	`Doctor` `_`
+	`Doctor` `t1`
 WHERE
-	`_`.`PersonID` = @ID
+	`t1`.`PersonID` = @ID
 

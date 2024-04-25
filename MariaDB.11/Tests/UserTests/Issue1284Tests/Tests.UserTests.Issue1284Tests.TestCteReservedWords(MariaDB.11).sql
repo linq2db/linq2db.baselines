@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
-WITH `CTE_1` (`Operator`)
+WITH `CTE_1` (`Obj_Operator`)
 AS
 (
 	SELECT
@@ -12,19 +10,17 @@ AS
 		`Person` `x`
 )
 SELECT
-	`t1`.`Operator`
+	`t1`.`Obj_Operator`
 FROM
 	`CTE_1` `t1`
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`x`.`LastName`
+	`person_1`.`LastName`
 FROM
-	`Person` `x`
-LIMIT @take
+	`Person` `person_1`
+LIMIT 1
 

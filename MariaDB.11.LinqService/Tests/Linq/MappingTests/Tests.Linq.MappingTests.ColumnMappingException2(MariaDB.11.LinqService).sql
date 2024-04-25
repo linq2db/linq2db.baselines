@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`_`.`LastName`
+	`t1`.`LastName`
 FROM
-	`Person` `_`
+	`Person` `t1`
 

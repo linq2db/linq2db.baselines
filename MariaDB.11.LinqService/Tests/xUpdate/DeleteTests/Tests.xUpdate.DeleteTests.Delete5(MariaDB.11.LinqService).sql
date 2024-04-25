@@ -54,9 +54,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` > 1000
+	`t1`.`ParentID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -73,7 +73,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` > 1000
+	`t1`.`ParentID` > 1000
 

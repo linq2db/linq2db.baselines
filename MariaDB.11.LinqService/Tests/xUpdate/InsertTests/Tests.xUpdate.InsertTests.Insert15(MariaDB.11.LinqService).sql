@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -39,16 +39,16 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 

@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Person` `t1`
+	`Person` `p`
 WHERE
-	`t1`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 INSERT INTO `Person`
 (
@@ -27,7 +25,6 @@ VALUES
 			`Person` `p`
 		WHERE
 			`p`.`PersonID` = 1
-		LIMIT @take
 	)),
 	'Shepard',
 	'M'
@@ -46,9 +43,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Person` `t1`
+	`Person` `p`
 WHERE
-	`t1`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 

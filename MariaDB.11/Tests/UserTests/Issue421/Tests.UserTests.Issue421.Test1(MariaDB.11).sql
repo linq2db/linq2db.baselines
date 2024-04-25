@@ -34,17 +34,15 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
-LIMIT @take
+	`t1`.`Id` = 1
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -52,25 +50,23 @@ DECLARE @BlobValue Blob(3) -- Binary
 SET     @BlobValue = 0x030201
 
 UPDATE
-	`BlobClass` `_`
+	`BlobClass` `t1`
 SET
-	`_`.`BlobValue` = @BlobValue
+	`t1`.`BlobValue` = @BlobValue
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
-LIMIT @take
+	`t1`.`Id` = 1
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
