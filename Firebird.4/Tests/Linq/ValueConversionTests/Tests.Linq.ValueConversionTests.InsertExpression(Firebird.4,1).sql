@@ -56,20 +56,18 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@iteration,
-	@Value1,
-	@Enum,
-	@inserted,
-	@boolValue,
-	@boolValue_1
+	CAST(@iteration AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@inserted AS VARCHAR(22)),
+	CAST(@boolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@boolValue_1 AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -86,7 +84,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = @iteration
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

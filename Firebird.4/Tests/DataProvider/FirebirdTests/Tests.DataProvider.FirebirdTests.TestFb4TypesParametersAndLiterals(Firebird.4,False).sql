@@ -62,7 +62,7 @@ DECLARE @DecFloat16 Dec34 -- Object
 SET     @DecFloat16 = 1234567890123456E5
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -74,7 +74,7 @@ DECLARE @DecFloat30 Dec34 -- Object
 SET     @DecFloat30 = 1234567890123456789012345678901234E15
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -86,7 +86,7 @@ DECLARE @DecFloat34 Dec34 -- Object
 SET     @DecFloat34 = 1234567890123456789012345678901235E15
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -98,7 +98,7 @@ DECLARE @DecFloat Dec34 -- Object
 SET     @DecFloat = 1234567890123456789012345678901236E15
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -110,7 +110,7 @@ DECLARE @DateTimeTZ TimeStampTZ -- Object
 SET     @DateTimeTZ = 02/29/2020 17:54:55 UTC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -122,7 +122,7 @@ DECLARE @TimeTZ TimeTZ -- Object
 SET     @TimeTZ = 17:54:55.1231234 UTC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
@@ -134,7 +134,7 @@ DECLARE @Int128 Int128 -- Object
 SET     @Int128 = -170141183460469231731687303715884105728
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
