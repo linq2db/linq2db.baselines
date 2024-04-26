@@ -2,16 +2,19 @@
 -- Informix.DB2 Informix
 
 SELECT
-	(
-		SELECT
-			ch.ChildID
-		FROM
-			Child ch
-		WHERE
-			ch.ParentID = p.ParentID AND ch.ChildID = ch.ParentID * 10 + 1
-	)
+	t1.ChildID
 FROM
 	Parent p
+		LEFT JOIN (
+			SELECT
+				ch.ChildID,
+				ROW_NUMBER() OVER (PARTITION BY ch.ParentID ORDER BY ch.ParentID) as rn,
+				ch.ParentID
+			FROM
+				Child ch
+			WHERE
+				ch.ChildID = ch.ParentID * 10 + 1
+		) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
 WHERE
 	p.ParentID <> 5
 

@@ -2,10 +2,10 @@
 -- Informix.DB2 Informix
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes p
 SET
-	LinqDataTypes.BoolValue = 't',
-	LinqDataTypes.DateTimeValue = CURRENT
+	BoolValue = 't',
+	DateTimeValue = CURRENT
 WHERE
-	LinqDataTypes.ID = 100000
+	p.ID = 100000
 

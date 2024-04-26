@@ -4,22 +4,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	lw_Issue3975TestClass.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
-		SELECT DISTINCT
-			t2.ParentID
+		SELECT FIRST 1
+			t1.ParentID
 		FROM
-			(
-				SELECT FIRST 1
-					t1.ParentID
-				FROM
-					Parent t1
-			) t2
-	) lw_Issue3975TestClass
-		INNER JOIN Child detail ON lw_Issue3975TestClass.ParentID = detail.ParentID
+			Parent t1
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix

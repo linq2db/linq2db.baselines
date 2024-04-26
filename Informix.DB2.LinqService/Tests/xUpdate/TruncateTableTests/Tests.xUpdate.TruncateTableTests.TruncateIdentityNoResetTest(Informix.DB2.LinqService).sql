@@ -17,6 +17,11 @@ CREATE TABLE IF NOT EXISTS test_temp
 BeforeExecute
 -- Informix.DB2 Informix
 
+TRUNCATE TABLE test_temp
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 INSERT INTO test_temp
 (
 	Field1

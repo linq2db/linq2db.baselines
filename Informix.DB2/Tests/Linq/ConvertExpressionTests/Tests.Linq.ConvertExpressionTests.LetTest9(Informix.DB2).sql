@@ -1,39 +1,17 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	c_1.ParentID,
-	c_1.ChildID
-FROM
-	(
-		SELECT DISTINCT
-			t1.ParentID,
-			t1.Value1
-		FROM
-			(
-				SELECT FIRST 10
-					p.ParentID,
-					p.Value1
-				FROM
-					Parent p
-			) t1
-	) key_data_result
-		INNER JOIN Child c_1 ON c_1.ParentID = key_data_result.ParentID
-ORDER BY
-	c_1.ChildID
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 10
-	p.ParentID,
-	p.Value1
+	t1.ParentID,
+	t1.ChildID
 FROM
 	Parent p
+		LEFT JOIN (
+			SELECT
+				c_1.ParentID,
+				c_1.ChildID,
+				ROW_NUMBER() OVER (PARTITION BY c_1.ParentID ORDER BY c_1.ChildID) as rn
+			FROM
+				Child c_1
+		) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
 

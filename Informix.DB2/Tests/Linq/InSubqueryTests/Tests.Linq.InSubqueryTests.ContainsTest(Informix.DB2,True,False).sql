@@ -2,17 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID = 1
+				1 = c_1.ParentID
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END::BOOLEAN
 FROM table(set{1})
 
