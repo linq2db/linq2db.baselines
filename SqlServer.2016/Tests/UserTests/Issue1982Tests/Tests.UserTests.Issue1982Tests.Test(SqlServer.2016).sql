@@ -21,9 +21,9 @@ SELECT
 		SELECT
 			*
 		FROM
-			[Issue1982Table] [_]
+			[Issue1982Table] [t1]
 		WHERE
-			[_].[Time] < CAST([_].[DateTime] AS TIME)
+			[t1].[Time] < CAST([t1].[DateTime] AS Time)
 	), 1, 0)
 
 BeforeExecute

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -10,7 +12,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1,
+	@ParentID,
 	@id
 )
 
@@ -20,7 +22,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

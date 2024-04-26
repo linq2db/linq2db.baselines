@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @ID Int -- Int32
-SET     @ID = 1320
+DECLARE @year Int -- Int32
+SET     @year = 2010
 
 SELECT
-	[t].[c1]
+	DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)
 FROM
-	(
-		SELECT
-			DateAdd(month, (@ID + [p].[ID]) - 1, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)) = 2010
 

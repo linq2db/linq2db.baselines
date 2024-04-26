@@ -80,7 +80,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

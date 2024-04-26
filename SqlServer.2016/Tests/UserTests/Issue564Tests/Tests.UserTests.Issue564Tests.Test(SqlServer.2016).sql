@@ -57,7 +57,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent564] [t1]
 
