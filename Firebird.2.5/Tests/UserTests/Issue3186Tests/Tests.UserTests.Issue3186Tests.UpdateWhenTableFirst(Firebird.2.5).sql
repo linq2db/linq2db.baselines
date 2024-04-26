@@ -117,23 +117,23 @@ SELECT 'TestElementComponent2','TestElementCategory2','TestElementService','0' F
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '1'
 
 UPDATE
 	"component_categories"
 SET
-	"component_categories"."is_deleted" = @is_deleted
+	"is_deleted" = CAST(@is_deleted AS CHAR(1))
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"component_categories" "ctg"
-				INNER JOIN "element_services" "ie" ON "ie"."id" = "ctg"."service_id"
-				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = '0'
+			"component_categories" "ct"
+				INNER JOIN "element_services" "sr" ON "sr"."id" = "ct"."service_id"
+				INNER JOIN "Components" "cm" ON "ct"."id" = "cm"."category_id" AND "cm"."is_deleted" = '0'
 		WHERE
-			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
+			"sr"."id" = 'TestProcessService' AND "component_categories"."id" = "ct"."id"
 	)
 
 BeforeExecute

@@ -27,6 +27,7 @@ BeforeExecute
 SELECT
 	"f"."Id",
 	"f"."Caption",
+	"f"."ParentId",
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -41,7 +42,7 @@ SELECT
 	END
 FROM
 	"Issue76Entity" "f"
-		INNER JOIN "Issue76Entity" "folder2" ON "folder2"."Id" IS NULL
+		INNER JOIN "Issue76Entity" "folder2" ON "f"."ParentId" = "folder2"."Id"
 WHERE
 	"folder2"."Caption" = 'dewde'
 

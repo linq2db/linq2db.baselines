@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
@@ -10,9 +8,12 @@ FROM
 	"Parent" "t1"
 WHERE
 	(
-		SELECT FIRST @take
-			"r"."Value1"
+		SELECT FIRST 1
+			CASE
+				WHEN "r"."Value1" IS NOT NULL THEN '1'
+				ELSE '0'
+			END
 		FROM
 			"Parent" "r"
-	) IS NOT NULL
+	) = '1'
 

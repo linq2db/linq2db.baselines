@@ -33,15 +33,15 @@ DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"Name" = CAST(@Name AS VARCHAR(4)),
+		"Age" = CAST(@Age AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -51,17 +51,15 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@Id as Int),
-		@Name,
-		@Age
+		CAST(@Id AS Int),
+		CAST(@Name AS VARCHAR(4)),
+		CAST(@Age AS Int)
 	)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -80,15 +78,15 @@ DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT Cast(@Id as Int) AS "Id" FROM rdb$database) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"Name" = CAST(@Name AS VARCHAR(4)),
+		"Age" = CAST(@Age AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -98,17 +96,15 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@Id as Int),
-		@Name,
-		@Age
+		CAST(@Id AS Int),
+		CAST(@Name AS VARCHAR(4)),
+		CAST(@Age AS Int)
 	)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"

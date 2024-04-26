@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 100
 
 SELECT
 	"c_1"."ParentID",
@@ -9,15 +7,35 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" IN (
+	EXISTS(
 		SELECT
-			"t1"."ParentID"
+			*
 		FROM
 			(
-				SELECT FIRST @take
-					"p"."ParentID"
+				SELECT FIRST 100
+					"v"."ParentID"
 				FROM
-					"Parent" "p"
+					"Parent" "v"
 			) "t1"
+		WHERE
+			"c_1"."ParentID" = "t1"."ParentID"
 	)
+
+BeforeExecute
+-- Firebird.2.5 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- Firebird.2.5 Firebird
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 

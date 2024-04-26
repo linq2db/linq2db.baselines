@@ -34,15 +34,15 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@BooleanNullable
+	CAST(@Id AS Int),
+	CAST(@BooleanNullable AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @BooleanNullable Char(1) -- String
+DECLARE @BooleanNullable Char -- String
 SET     @BooleanNullable = '1'
 
 INSERT INTO "CreateTableTypes"
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@BooleanNullable
+	CAST(@Id AS Int),
+	CAST(@BooleanNullable AS CHAR(1))
 )
 
 BeforeExecute
