@@ -47,7 +47,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	SEQUENCETEST t1
 WHERE

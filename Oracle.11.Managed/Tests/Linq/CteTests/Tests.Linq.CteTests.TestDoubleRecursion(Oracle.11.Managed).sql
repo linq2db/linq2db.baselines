@@ -91,7 +91,7 @@ AS
 			INNER JOIN CTE_2 t_1 ON (t_1."ParentId" = t3."Id" OR t_1."ParentId" IS NULL AND t3."Id" IS NULL)
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"hierarchyDown" t4
 		INNER JOIN "hierarchyDown" h2 ON (h2."Id" = t4."Id" OR h2."Id" IS NULL AND t4."Id" IS NULL)
