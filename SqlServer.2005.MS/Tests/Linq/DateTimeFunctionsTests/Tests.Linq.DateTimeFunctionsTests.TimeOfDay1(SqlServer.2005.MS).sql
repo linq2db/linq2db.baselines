@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Cast(Convert(Char, [t].[DateTimeValue], 114) as DateTime)
+	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]
 

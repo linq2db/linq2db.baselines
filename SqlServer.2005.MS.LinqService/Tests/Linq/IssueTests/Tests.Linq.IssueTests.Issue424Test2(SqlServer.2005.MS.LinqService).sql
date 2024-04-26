@@ -2,8 +2,6 @@
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
 
 SELECT
 	[t3].[ParentID],
@@ -24,5 +22,14 @@ FROM
 			) [t2]
 	) [t3]
 WHERE
-	[t3].[RN] > @skip AND [t3].[RN] <= @take
+	[t3].[RN] > @skip AND [t3].[RN] <= 2
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
