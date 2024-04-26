@@ -2,24 +2,17 @@
 -- SqlServer.2014
 
 SELECT
-	[t1].[PersonID_1],
-	[t1].[FirstName],
-	[x].[Taxonomy]
+	[t1].[PersonID],
+	[person_1].[FirstName],
+	[doctor_1].[Taxonomy]
 FROM
-	(
-		SELECT
-			[person_1].[PersonID],
-			[patient_1].[PersonID] as [PersonID_1],
-			[person_1].[FirstName]
-		FROM
-			[Patient] [patient_1],
-			[Person] [person_1]
-	) [t1]
-		LEFT JOIN [Doctor] [x] ON [x].[PersonID] = [t1].[PersonID] AND [x].[PersonID] = [t1].[PersonID_1]
+	[Patient] [t1]
+		CROSS JOIN [Person] [person_1]
+		LEFT JOIN [Doctor] [doctor_1] ON [doctor_1].[PersonID] = [person_1].[PersonID] AND [doctor_1].[PersonID] = [t1].[PersonID]
 WHERE
-	[t1].[FirstName] LIKE N'J%' ESCAPE N'~'
+	[person_1].[FirstName] LIKE N'J%' ESCAPE N'~'
 ORDER BY
-	[t1].[PersonID_1],
-	[t1].[FirstName],
-	[x].[Taxonomy]
+	[t1].[PersonID],
+	[person_1].[FirstName],
+	[doctor_1].[Taxonomy]
 
