@@ -9,24 +9,24 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
+DECLARE @p [dbo].[TestTableType] -- Structured -- Object
+SET     @p = 
 
 MERGE INTO [tempdb]..[#TestMergeTVPTable] [Target]
 USING (
 	SELECT
-		[_].[Id],
-		[_].[Name]
+		[t1].[Id] as [source_Id],
+		[t1].[Name] as [source_Name]
 	FROM
-		@table [_]
+		@p [t1]
 	WHERE
-		[_].[Id] IS NOT NULL
+		[t1].[Id] IS NOT NULL
 ) [Source]
 (
-	[Id],
-	[Name]
+	[source_Id],
+	[source_Name]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -36,8 +36,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[Id],
-	[Source].[Name]
+	[Source].[source_Id],
+	[Source].[source_Name]
 )
 ;
 

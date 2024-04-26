@@ -6,8 +6,8 @@ SELECT
 		SELECT
 			*
 		FROM
-			[Person] [_]
+			[Person] [t1]
 		WHERE
-			IIF([_].[FirstName] = [_].[FirstName], 1, 0) <> IIF([_].[MiddleName] <> [_].[LastName], 1, 0)
+			IIF([t1].[FirstName] = [t1].[FirstName], 1, 0) <> IIF(([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL), 1, 0)
 	), 1, 0)
 

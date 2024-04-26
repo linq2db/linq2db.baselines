@@ -2,10 +2,11 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[_].[PersonID],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[LastName],
+	IIF([t1].[PersonID] IN (1, 3), 1, 0)
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	IIF([_].[PersonID] IN (1, 3), 1, 0)
+	IIF([t1].[PersonID] IN (1, 3), 1, 0)
 

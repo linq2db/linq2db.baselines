@@ -5,12 +5,12 @@ SELECT
 	[p].[ParentID],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] = [p].[ParentID] AND
-			Convert(Decimal, [c_1].[ChildID]) <> 0
+			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] = [p].[ParentID] AND
+			CAST([a_Children].[ChildID] AS Decimal) <> 0
 	)
 FROM
 	[Parent] [p]
