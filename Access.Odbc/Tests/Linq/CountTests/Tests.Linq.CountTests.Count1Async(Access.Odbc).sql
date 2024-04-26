@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [t1]
 

@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 
@@ -12,5 +12,5 @@ BeforeExecute
 SELECT
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 

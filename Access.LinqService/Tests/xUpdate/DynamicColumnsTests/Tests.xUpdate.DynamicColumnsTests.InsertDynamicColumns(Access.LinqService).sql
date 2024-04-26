@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @FirstName VarWChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarWChar(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender WChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -9,16 +15,16 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

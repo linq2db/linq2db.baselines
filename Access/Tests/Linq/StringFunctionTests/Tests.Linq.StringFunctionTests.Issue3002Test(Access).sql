@@ -53,7 +53,7 @@ DECLARE @test_1 VarWChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -67,7 +67,7 @@ DECLARE @test_1 VarWChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -81,7 +81,7 @@ DECLARE @test_1 VarWChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -95,7 +95,7 @@ DECLARE @test_1 VarWChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -109,7 +109,7 @@ DECLARE @test_1 VarWChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -123,7 +123,7 @@ DECLARE @test_1 VarWChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE

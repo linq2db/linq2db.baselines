@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*) = 0
+	IIF(COUNT(*) = 0, True, False)
 FROM
 	[GrandChild] [x]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*) = 0
+	IIF(COUNT(*) = 0, True, False)
 FROM
 	[GrandChild] [x]
 WHERE

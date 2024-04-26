@@ -104,7 +104,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -112,7 +112,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [p]
 WHERE

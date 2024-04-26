@@ -29,19 +29,17 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t2].[Id],
-	[t1].[cnt]
+	[t1].[Id],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = [t1].[Id]
+	)
 FROM
-	[Issue3472TableDCTX] [t2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[p].[PersonID]
-			FROM
-				[Person] [p]
-			GROUP BY
-				[p].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [t2].[Id])
+	[Issue3472TableDCTX] [t1]
 
 BeforeExecute
 -- Access AccessOleDb

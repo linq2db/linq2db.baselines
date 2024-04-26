@@ -42,25 +42,23 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @part1 Integer -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
-DECLARE @p Date -- DateTime
-SET     @p = #2018-01-02#
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > @p
+	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + CVar(@part1)) - CVar(@part2), [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 

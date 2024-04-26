@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] > 1000
+	[p].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -26,8 +26,8 @@ FROM
 			[Child] [c_1]
 		UNION
 		SELECT
-			Iif([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID],
-			Int(Iif([c_2].[GrandChildID] IS NULL, 0, [c_2].[GrandChildID]) / 100) as [Value1]
+			IIF([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID],
+			Int(IIF([c_2].[GrandChildID] IS NULL, 0, [c_2].[GrandChildID]) / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
@@ -36,7 +36,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [c_1]
 WHERE
@@ -46,7 +46,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] > 1000
+	[p].[ParentID] > 1000
 

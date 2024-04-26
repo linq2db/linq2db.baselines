@@ -17,6 +17,11 @@ CREATE TABLE [test_temp]
 BeforeExecute
 -- Access AccessOleDb
 
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- Access AccessOleDb
+
 INSERT INTO [test_temp]
 (
 	[Field1]

@@ -65,11 +65,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 SET
-	[_].[Value6] = ?
+	[t1].[Value6] = ?
 WHERE
-	[_].[Id] = ?
+	[t1].[Id] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -77,11 +77,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2
-	[_].[Value6]
+	[t1].[Value6]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = ?
+	[t1].[Id] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -91,11 +91,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 SET
-	[_].[Value6] = ?
+	[t1].[Value6] = ?
 WHERE
-	[_].[Id] = ?
+	[t1].[Id] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -103,11 +103,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2
-	[_].[Value6]
+	[t1].[Value6]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = ?
+	[t1].[Id] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

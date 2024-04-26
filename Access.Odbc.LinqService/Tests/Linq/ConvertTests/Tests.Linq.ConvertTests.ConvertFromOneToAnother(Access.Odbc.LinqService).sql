@@ -6,7 +6,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -16,7 +16,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -26,7 +26,7 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -36,7 +36,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -46,7 +46,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -56,7 +56,7 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -66,7 +66,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -76,7 +76,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -86,5 +86,5 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	?
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 

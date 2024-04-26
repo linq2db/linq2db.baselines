@@ -33,7 +33,7 @@ BeforeExecute
 SELECT TOP 1
 	1
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

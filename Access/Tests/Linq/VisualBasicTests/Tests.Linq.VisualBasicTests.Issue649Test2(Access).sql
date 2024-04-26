@@ -33,18 +33,16 @@ CREATE TABLE [person649]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @added Date -- DateTime
-SET     @added = #2017-01-01#
 
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	Max([p].[added])
+	MAX([VBIt].[added])
 FROM
-	[activity649] [p]
-		INNER JOIN [person649] [a_Person] ON ([p].[personid] = [a_Person].[personid])
+	[activity649] [VBIt]
+		INNER JOIN [person649] [a_Person] ON ([VBIt].[personid] = [a_Person].[personid])
 WHERE
-	[p].[added] >= @added
+	[VBIt].[added] >= DateSerial(2017, 1, 1)
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]
