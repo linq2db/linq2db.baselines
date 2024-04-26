@@ -2,9 +2,9 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" c_1
 WHERE
-	t1."ParentID" >= 1000
+	c_1."ParentID" >= 1000
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -200,7 +200,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" c_1
 WHERE
-	t1."ParentID" >= 1000
+	c_1."ParentID" >= 1000
 

@@ -101,7 +101,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-WHEN N > 40 THEN
+WHEN "source_N" > 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -109,10 +109,10 @@ WHEN N > 40 THEN
 	)
 	VALUES
 	(
-		ID + 1,
-		N
+		"source_ID" + 1,
+		"source_N"
 	)
-WHEN N < 40 THEN
+WHEN "source_N" < 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -120,8 +120,8 @@ WHEN N < 40 THEN
 	)
 	VALUES
 	(
-		ID + 2,
-		N
+		"source_ID" + 2,
+		"source_N"
 	)
 WHEN 1 = 1 THEN
 	INTO "Dest2"
@@ -131,12 +131,12 @@ WHEN 1 = 1 THEN
 	)
 	VALUES
 	(
-		ID + 3,
-		ID + 1
+		"source_ID" + 3,
+		"source_ID" + 1
 	)
 SELECT
-	s.N,
-	s.ID
+	s.N as "source_N",
+	s.ID as "source_ID"
 FROM
 	"TestSource" s
 		INNER JOIN "TestSource" s2 ON s.ID = s2.ID
@@ -145,7 +145,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" t1
 
@@ -153,7 +153,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest2" t1
 
@@ -161,7 +161,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" x
 WHERE
@@ -171,7 +171,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest2" x
 WHERE
