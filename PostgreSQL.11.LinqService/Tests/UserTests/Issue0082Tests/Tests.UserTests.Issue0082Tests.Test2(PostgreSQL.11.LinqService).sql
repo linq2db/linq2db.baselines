@@ -5,19 +5,19 @@ SELECT
 	o."ParentID",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" t1
+			"Child" "a_Children"
 		WHERE
-			o."ParentID" = t1."ParentID"
+			o."ParentID" = "a_Children"."ParentID"
 	),
 	(
 		SELECT
-			Sum(x."ParentID")
+			SUM("a_Children_1"."ParentID")
 		FROM
-			"Child" x
+			"Child" "a_Children_1"
 		WHERE
-			o."ParentID" = x."ParentID"
+			o."ParentID" = "a_Children_1"."ParentID"
 	)
 FROM
 	"Parent" o
@@ -26,7 +26,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" o
 
@@ -36,29 +36,29 @@ BeforeExecute
 SELECT
 	x_1."ParentID",
 	x_1."CountResult",
-	x_1."SumResult"
+	x_1."SUM_1"
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					Count(*)
+					COUNT(*)
 				FROM
-					"Child" t1
+					"Child" "a_Children"
 				WHERE
-					o."ParentID" = t1."ParentID"
+					x."ParentID" = "a_Children"."ParentID"
 			) as "CountResult",
-			o."ParentID",
+			x."ParentID",
 			(
 				SELECT
-					Sum(x."ParentID")
+					SUM("a_Children_1"."ParentID")
 				FROM
-					"Child" x
+					"Child" "a_Children_1"
 				WHERE
-					o."ParentID" = x."ParentID"
-			) as "SumResult"
+					x."ParentID" = "a_Children_1"."ParentID"
+			) as "SUM_1"
 		FROM
-			"Parent" o
+			"Parent" x
 	) x_1
 WHERE
 	x_1."CountResult" > 0
