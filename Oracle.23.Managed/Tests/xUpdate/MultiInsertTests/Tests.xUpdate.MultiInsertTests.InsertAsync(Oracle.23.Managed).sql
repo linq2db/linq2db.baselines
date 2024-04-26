@@ -102,7 +102,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" t1
 
@@ -110,7 +110,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" t1
 
@@ -118,7 +118,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest2" x
 WHERE

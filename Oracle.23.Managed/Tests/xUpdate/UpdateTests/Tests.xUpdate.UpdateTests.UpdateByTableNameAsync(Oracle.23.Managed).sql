@@ -86,7 +86,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_o" t1
 
