@@ -2,13 +2,23 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as [ID]
+	) [s]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as [ID]
+	) [s]
 WHERE
 	1 = 0
 

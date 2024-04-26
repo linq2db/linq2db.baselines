@@ -1,19 +1,20 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
 		SELECT
-			[r].[Value1]
+			CASE
+				WHEN [r].[Value1] IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			[Parent] [r]
-		LIMIT @take
-	) IS NOT NULL
+		LIMIT 1
+	) = 1
 

@@ -2,14 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Degrees(Cast([p].[MoneyValue] as INTEGER)) as [c1]
+			Degrees(CAST([t].[MoneyValue] AS INTEGER)) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Cast([t].[c1] as Float) <> 0.10000000000000001
+	CAST([t_1].[c1] AS Float) <> 0.10000000000000001
 

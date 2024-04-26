@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [t1]
 

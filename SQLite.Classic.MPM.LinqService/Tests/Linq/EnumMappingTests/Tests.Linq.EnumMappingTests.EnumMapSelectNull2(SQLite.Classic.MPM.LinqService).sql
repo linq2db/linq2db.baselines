@@ -22,8 +22,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[r].[BigIntValue]
@@ -31,7 +29,7 @@ FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] = 101
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

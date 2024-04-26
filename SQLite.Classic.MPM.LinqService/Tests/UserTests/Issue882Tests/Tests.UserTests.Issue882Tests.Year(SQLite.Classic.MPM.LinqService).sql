@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Cast(StrFTime('%Y', [t].[DateTimeValue]) as int) % 7
+	CAST(strftime('%Y', [t].[DateTimeValue]) AS INTEGER) % 7
 FROM
 	[LinqDataTypes] [t]
 

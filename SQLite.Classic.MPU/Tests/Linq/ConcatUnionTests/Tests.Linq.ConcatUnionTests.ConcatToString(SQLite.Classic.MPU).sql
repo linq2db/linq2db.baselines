@@ -21,7 +21,7 @@ FROM
 		FROM
 			[Person] [p_1]
 		WHERE
-			Cast([p_1].[PersonID] as NVarChar(11)) LIKE @pattern ESCAPE '~'
+			CAST([p_1].[PersonID] AS NVarChar(11)) LIKE @pattern ESCAPE '~'
 	) [t1]
 LIMIT @take
 
