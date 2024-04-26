@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	Nvl((
@@ -12,7 +10,7 @@ SELECT
 				LEFT JOIN "Parent" a_Parent ON ch."ParentID" = a_Parent."ParentID"
 		WHERE
 			ch."ChildID" = c_1."ChildID"
-		FETCH NEXT :take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	), c_1."ChildID")
 FROM
 	"Child" c_1
