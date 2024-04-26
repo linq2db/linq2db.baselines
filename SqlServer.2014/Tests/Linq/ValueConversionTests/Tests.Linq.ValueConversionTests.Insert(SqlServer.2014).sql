@@ -203,7 +203,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[ValueConversion] [t1]
 

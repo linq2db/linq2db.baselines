@@ -49,7 +49,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -80,7 +80,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

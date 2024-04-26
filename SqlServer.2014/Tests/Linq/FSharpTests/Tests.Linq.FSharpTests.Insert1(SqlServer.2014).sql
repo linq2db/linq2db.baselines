@@ -29,7 +29,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
