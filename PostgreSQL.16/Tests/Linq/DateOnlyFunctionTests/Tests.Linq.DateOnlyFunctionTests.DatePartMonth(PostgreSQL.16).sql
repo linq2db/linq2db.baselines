@@ -42,7 +42,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(month from t."TransactionDate")) as int)
+	Floor(Extract(month From t."TransactionDate"))::Int
 FROM
 	"Transactions" t
 
