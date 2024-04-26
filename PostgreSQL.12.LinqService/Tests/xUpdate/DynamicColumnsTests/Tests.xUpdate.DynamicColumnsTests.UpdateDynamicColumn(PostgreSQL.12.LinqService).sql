@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @FirstName Text(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName Text(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender Text(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,16 +15,16 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	:FirstName,
+	:LastName,
+	:Gender
 )
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" c_1
 WHERE
@@ -38,7 +44,7 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" c_1
 WHERE
