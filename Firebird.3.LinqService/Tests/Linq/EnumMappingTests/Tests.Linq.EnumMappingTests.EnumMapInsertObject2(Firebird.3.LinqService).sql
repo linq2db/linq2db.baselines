@@ -25,16 +25,16 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@Id,
-	@TestField,
-	@Int32Field
+	CAST(@Id AS Int),
+	CAST(@TestField AS BigInt),
+	CAST(@Int32Field AS Int)
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "r"
 WHERE

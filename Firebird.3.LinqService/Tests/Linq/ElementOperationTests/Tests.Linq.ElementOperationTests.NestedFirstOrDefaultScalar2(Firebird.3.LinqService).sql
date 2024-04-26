@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -15,7 +13,7 @@ SELECT
 			"a_Parent"."ParentID" = "p"."ParentID" AND ("a_Parent"."Value1" = "p"."Value1" OR "a_Parent"."Value1" IS NULL AND "p"."Value1" IS NULL)
 		ORDER BY
 			"c_1"."ChildID" * "c_1"."ParentID" DESC
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

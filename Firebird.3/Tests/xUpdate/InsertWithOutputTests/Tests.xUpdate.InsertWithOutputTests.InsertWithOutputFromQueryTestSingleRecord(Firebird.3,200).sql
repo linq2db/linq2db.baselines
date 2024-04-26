@@ -78,9 +78,9 @@ INSERT INTO "DestinationTable"
 	"ValueStr"
 )
 SELECT
-	"s"."Id" + Cast(@param as Int),
-	"s"."Value" + Cast(@param as Int),
-	"s"."ValueStr" || Cast(@param_1 as VarChar(100) CHARACTER SET UNICODE_FSS)
+	"s"."Id" + CAST(@param AS Int),
+	"s"."Value" + CAST(@param AS Int),
+	"s"."ValueStr" || CAST(@param_1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE
@@ -92,11 +92,17 @@ RETURNING
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @Id Integer -- Int32
+SET     @Id = 200
+DECLARE @Value Integer -- Int32
+SET     @Value = 200
+DECLARE @p Binary
+SET     @p = 200
 
 SELECT
-	"s"."Id",
-	"s"."Value",
-	"s"."ValueStr"
+	"s"."Id" + CAST(@Id AS Int),
+	"s"."Value" + CAST(@Value AS Int),
+	"s"."ValueStr" || CAST(@p AS VarChar(255) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE

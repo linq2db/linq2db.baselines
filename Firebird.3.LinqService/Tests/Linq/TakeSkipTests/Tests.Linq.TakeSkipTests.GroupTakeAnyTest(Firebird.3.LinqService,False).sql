@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -82,13 +82,13 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				"t1"."Value"
+				"group_1"."Value"
 			FROM
-				"TakeSkipClass" "t1"
+				"TakeSkipClass" "group_1"
 			GROUP BY
-				"t1"."Value"
+				"group_1"."Value"
 			HAVING
-				Count(*) > 1
+				COUNT(*) > 1
 			FETCH NEXT 1 ROWS ONLY
 		)
 			THEN TRUE

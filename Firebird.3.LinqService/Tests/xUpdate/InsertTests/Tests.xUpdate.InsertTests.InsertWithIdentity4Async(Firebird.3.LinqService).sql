@@ -28,10 +28,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(5)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"
@@ -58,10 +58,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(5)),
+	CAST(@LastName AS VARCHAR(7)),
+	CAST(@MiddleName AS VARCHAR(1)),
+	CAST(@Gender AS Char(1))
 )
 RETURNING
 	"PersonID"

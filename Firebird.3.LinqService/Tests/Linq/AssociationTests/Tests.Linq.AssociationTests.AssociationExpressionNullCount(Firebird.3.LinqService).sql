@@ -30,7 +30,7 @@ INSERT INTO "NotNullParent"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "NotNullParent"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -79,16 +79,17 @@ INSERT INTO "NotNullChild"
 )
 VALUES
 (
-	@ParentID
+	CAST(@ParentID AS Int)
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"NotNullParent" "p"
+		LEFT JOIN "NotNullChild" "a_ChildOuter" ON "p".ID = "a_ChildOuter"."ParentID"
 
 BeforeExecute
 -- Firebird.3 Firebird3

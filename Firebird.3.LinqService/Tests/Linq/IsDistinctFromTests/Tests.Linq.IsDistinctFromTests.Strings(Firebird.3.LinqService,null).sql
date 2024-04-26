@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int,
-	@NullableInt,
-	@String,
-	@NullableString
+	CAST(@Int AS Int),
+	CAST(@NullableInt AS Int),
+	CAST(@String AS VARCHAR(3)),
+	CAST(@NullableString AS VARCHAR(3))
 )
 
 BeforeExecute
@@ -68,17 +68,17 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Int,
-	@NullableInt,
-	@String,
-	@NullableString
+	CAST(@Int AS Int),
+	CAST(@NullableInt AS Int),
+	CAST(@String AS VARCHAR(3)),
+	CAST(@NullableString AS VARCHAR(1))
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -88,7 +88,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -98,7 +98,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -108,7 +108,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE

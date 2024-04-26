@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Sum("c_1"."ParentID")
+	SUM("t1"."ParentID")
 FROM
-	"Child" "c_1"
+	"Child" "t1"
 
