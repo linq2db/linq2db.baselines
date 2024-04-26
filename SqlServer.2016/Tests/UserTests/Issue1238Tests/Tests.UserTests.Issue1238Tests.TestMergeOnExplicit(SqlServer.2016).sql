@@ -46,7 +46,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -89,7 +89,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

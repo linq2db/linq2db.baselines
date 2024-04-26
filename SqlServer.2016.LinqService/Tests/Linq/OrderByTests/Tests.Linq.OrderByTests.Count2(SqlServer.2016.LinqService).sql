@@ -4,7 +4,7 @@ DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT TOP (@take)
