@@ -30,16 +30,14 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlCe
@@ -49,22 +47,20 @@ SET     @BlobValue = 0x030201
 UPDATE
 	[BlobClass]
 SET
-	[BlobClass].[BlobValue] = @BlobValue
+	[BlobValue] = @BlobValue
 WHERE
 	[BlobClass].[Id] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlCe

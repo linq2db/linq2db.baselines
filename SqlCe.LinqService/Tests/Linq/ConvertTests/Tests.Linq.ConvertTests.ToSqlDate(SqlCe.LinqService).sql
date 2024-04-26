@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Convert(Datetime, Convert(NVarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01')
+	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS NVarChar(11)) + '-01-01' AS DateTime) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

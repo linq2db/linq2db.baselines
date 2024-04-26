@@ -2,14 +2,9 @@
 -- SqlCe
 
 SELECT
-	[d].[c1]
+	CAST(CONVERT(NVarChar(10), [d].[DateTimeValue], 101) AS DateTime) as [Date_1]
 FROM
-	(
-		SELECT
-			[t].[DateTimeValue] as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, [d].[DateTimeValue]) > 0
 

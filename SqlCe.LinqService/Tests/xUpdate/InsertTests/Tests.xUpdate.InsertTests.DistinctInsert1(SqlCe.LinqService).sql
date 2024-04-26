@@ -16,16 +16,16 @@ INSERT INTO [LinqDataTypes]
 	[BoolValue]
 )
 SELECT
-	Convert(Int, [t1].[c1] + 1001),
-	NewID(),
-	1
+	CAST([t2].[c1] + 1001 AS Int) as [c1],
+	NewID() as [c2],
+	1 as [c3]
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Convert(Float, [_].[ID]) / 3) as [c1]
+			Floor(CAST([t1].[ID] AS Float) / 3) as [c1]
 		FROM
-			[LinqDataTypes] [_]
-	) [t1]
+			[LinqDataTypes] [t1]
+	) [t2]
 
 BeforeExecute
 -- SqlCe

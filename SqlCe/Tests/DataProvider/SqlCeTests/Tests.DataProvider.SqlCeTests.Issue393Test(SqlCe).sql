@@ -22,18 +22,16 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 3
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[imageDataType]
+SELECT TOP (1)
+	[t1].[ID],
+	[t1].[imageDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] = @id
+	[t1].[ID] = @id
 
 BeforeExecute
 DisposeTransaction

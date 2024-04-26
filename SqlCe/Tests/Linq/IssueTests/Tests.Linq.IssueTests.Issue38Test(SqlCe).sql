@@ -2,18 +2,16 @@
 -- SqlCe
 
 SELECT
-	[t2].[Count_1]
+	[t1].[COUNT_1]
 FROM
 	[Child] [a]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID],
-				[t1].[ChildID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[GrandChild] [t1]
-			GROUP BY
-				[t1].[ParentID],
-				[t1].[ChildID]
-		) [t2] ON [a].[ParentID] = [t2].[ParentID] AND [a].[ChildID] = [t2].[ChildID]
+				[GrandChild] [a_GrandChildren1]
+			WHERE
+				[a].[ParentID] = [a_GrandChildren1].[ParentID] AND
+				[a].[ChildID] = [a_GrandChildren1].[ChildID]
+		) [t1]
 
