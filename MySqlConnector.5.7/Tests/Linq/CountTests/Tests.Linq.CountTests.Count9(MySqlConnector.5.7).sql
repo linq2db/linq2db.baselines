@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `p`
 		LEFT JOIN `Parent` `a_Parent` ON (`p`.`ParentID` = `a_Parent`.`ParentID` OR `p`.`ParentID` IS NULL AND `a_Parent`.`ParentID` IS NULL)

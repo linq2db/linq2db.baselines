@@ -24,7 +24,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE
@@ -44,7 +44,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE
