@@ -68,7 +68,7 @@ BeforeExecute
 -- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_33" "t1"
 
