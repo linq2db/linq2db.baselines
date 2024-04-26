@@ -18,7 +18,7 @@ AS
 		) `t1`
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 		INNER JOIN `CTE_1` `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
@@ -28,7 +28,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 		INNER JOIN (

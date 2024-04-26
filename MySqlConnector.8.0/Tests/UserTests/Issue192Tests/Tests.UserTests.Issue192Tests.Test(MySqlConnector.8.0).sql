@@ -61,7 +61,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`TypeConvertTable` `t1`
 WHERE
@@ -71,7 +71,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`TypeConvertTable` `t1`
 WHERE
@@ -83,7 +83,7 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`TypeConvertTable` `t1`
 WHERE

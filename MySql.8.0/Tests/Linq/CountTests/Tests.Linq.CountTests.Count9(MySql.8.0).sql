@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `p`
 		LEFT JOIN `Parent` `a_Parent` ON (`p`.`ParentID` = `a_Parent`.`ParentID` OR `p`.`ParentID` IS NULL AND `a_Parent`.`ParentID` IS NULL)
