@@ -42,7 +42,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

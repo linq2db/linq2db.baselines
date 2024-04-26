@@ -68,7 +68,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [x],
 	[Ints2] [y]
@@ -80,7 +80,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [x],
 	[Ints2] [y]
@@ -92,7 +92,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [x],
 	[Ints2] [y]
@@ -104,7 +104,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [x],
 	[Ints2] [y]
@@ -116,7 +116,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [x],
 	[Ints2] [y]

@@ -95,14 +95,7 @@ WHERE
 			[Issue1983Card] [a_Cards]
 		WHERE
 			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
-	) <> 0 OR (
-		SELECT
-			COUNT(*)
-		FROM
-			[Issue1983Card] [a_Cards]
-		WHERE
-			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
-	) IS NULL)
+	) <> 0)
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -144,14 +137,7 @@ WHERE
 			[Issue1983Card] [card_1]
 		WHERE
 			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
-	) <> 0 OR (
-		SELECT
-			COUNT(*)
-		FROM
-			[Issue1983Card] [card_1]
-		WHERE
-			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
-	) IS NULL)
+	) <> 0)
 
 BeforeExecute
 -- SQLite.Classic SQLite

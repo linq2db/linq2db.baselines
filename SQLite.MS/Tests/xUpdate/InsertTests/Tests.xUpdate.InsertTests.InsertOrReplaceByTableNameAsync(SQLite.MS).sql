@@ -58,7 +58,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -106,7 +106,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

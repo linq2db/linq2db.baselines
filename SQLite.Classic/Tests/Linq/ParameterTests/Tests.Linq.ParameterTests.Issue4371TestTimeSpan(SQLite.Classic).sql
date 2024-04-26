@@ -41,7 +41,7 @@ DECLARE @ts VarChar(12) -- AnsiString
 SET     @ts = '17:54:55.123'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table] [r]
 WHERE

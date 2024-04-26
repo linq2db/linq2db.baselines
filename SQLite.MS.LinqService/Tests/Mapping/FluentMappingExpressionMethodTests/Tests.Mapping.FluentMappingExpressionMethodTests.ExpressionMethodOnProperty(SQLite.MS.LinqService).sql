@@ -376,7 +376,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InstanceClass] [t]
 WHERE

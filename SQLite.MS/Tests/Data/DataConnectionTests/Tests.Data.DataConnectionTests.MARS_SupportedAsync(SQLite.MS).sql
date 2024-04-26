@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 

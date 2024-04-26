@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [ch]
 WHERE

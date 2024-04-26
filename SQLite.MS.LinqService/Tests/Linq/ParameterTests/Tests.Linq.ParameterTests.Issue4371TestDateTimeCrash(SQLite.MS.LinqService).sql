@@ -41,7 +41,7 @@ DECLARE @dt VarChar(23) -- AnsiString
 SET     @dt = '0160-05-06 18:13:59.154'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table] [r]
 WHERE
