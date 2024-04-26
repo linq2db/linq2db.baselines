@@ -2,8 +2,6 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @date_1 Date
 SET     @date_1 = TIMESTAMP '2020-02-29 00:00:00.000000'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	a.ID,
@@ -36,5 +34,5 @@ SELECT
 FROM
 	"AllTypes" a
 WHERE
-	a."datetimeDataType" = :date_1 AND ROWNUM <= :take
+	a."datetimeDataType" = :date_1 AND ROWNUM <= 1
 

@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Max(t1."ParentID")
+	MAX(t1."ParentID")
 FROM
 	"Parent" t1
 WHERE

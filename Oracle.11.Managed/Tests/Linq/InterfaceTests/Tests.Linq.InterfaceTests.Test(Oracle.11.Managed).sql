@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" t1
+	"Parent" gr
 GROUP BY
-	t1."ParentID"
+	gr."ParentID"
 

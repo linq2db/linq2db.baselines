@@ -26,19 +26,17 @@ DECLARE @ID Int32
 SET     @ID = 1001
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."MoneyValue" = 2000,
-	"LinqDataTypes"."SmallIntValue" = 200
+	"MoneyValue" = 2000,
+	"SmallIntValue" = 200
 WHERE
-	"LinqDataTypes".ID = :ID
+	t.ID = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1001
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t.ID,
@@ -52,5 +50,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = :ID AND ROWNUM <= :take
+	t.ID = :ID AND ROWNUM <= 2
 

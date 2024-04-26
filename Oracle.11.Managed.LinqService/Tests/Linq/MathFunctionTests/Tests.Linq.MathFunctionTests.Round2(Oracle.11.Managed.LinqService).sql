@@ -2,18 +2,18 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t."c1"
+	t_1."c1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Cast(p."MoneyValue" as Float) - Floor(Cast(p."MoneyValue" as Float)) = 0.5D AND MOD(Floor(Cast(p."MoneyValue" as Float)), 2D) = 0D
-					THEN Floor(Cast(p."MoneyValue" as Float))
-				ELSE Round(Cast(p."MoneyValue" as Float), 0)
+				WHEN CAST(t."MoneyValue" AS Float) - Floor(CAST(t."MoneyValue" AS Float)) = 0.5D AND MOD(Floor(CAST(t."MoneyValue" AS Float)), 2) = 0D
+					THEN Floor(CAST(t."MoneyValue" AS Float))
+				ELSE Round(CAST(t."MoneyValue" AS Float), 0)
 			END as "c1"
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t."c1" <> 0D
+	t_1."c1" <> 0D
 

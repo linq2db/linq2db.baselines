@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	MOD(To_Number(To_Char(t."DateTimeValue", 'HH24')), 7)
+	MOD(EXTRACT(HOUR FROM t."DateTimeValue"), 7)
 FROM
 	"LinqDataTypes" t
 

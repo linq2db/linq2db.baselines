@@ -32,8 +32,6 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Field1 NVarchar2 -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -43,12 +41,12 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	:Field1
+	NULL
 )
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Field1 NVarchar2 -- String
+DECLARE @Field1 Varchar2 -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -64,7 +62,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Field1 NVarchar2(4) -- String
+DECLARE @Field1 Varchar2(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"

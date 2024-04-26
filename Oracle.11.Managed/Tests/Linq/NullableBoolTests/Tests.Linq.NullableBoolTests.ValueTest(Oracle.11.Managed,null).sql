@@ -54,7 +54,7 @@ SELECT
 FROM
 	"NullableBoolClass" t
 WHERE
-	t."Value" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -73,8 +73,6 @@ SELECT
 	t."Value"
 FROM
 	"NullableBoolClass" t
-WHERE
-	t."Value" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

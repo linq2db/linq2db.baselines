@@ -58,8 +58,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
 
@@ -72,25 +70,19 @@ FROM
 			ROWNUM as RN
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					x."DuplicateData"
 				FROM
 					"OrderByDistinctData" x
-				GROUP BY
-					x."DuplicateData"
-				ORDER BY
-					Min(MOD(x."OrderData1", 3))
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 3
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
 
@@ -104,16 +96,16 @@ FROM
 		FROM
 			(
 				SELECT
-					x."DuplicateData"
+					g_1."DuplicateData"
 				FROM
-					"OrderByDistinctData" x
+					"OrderByDistinctData" g_1
 				GROUP BY
-					x."DuplicateData"
+					g_1."DuplicateData"
 				ORDER BY
-					Max(MOD(x."OrderData1", 3))
+					MAX(MOD(g_1."OrderData1", 3))
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 3
 	) t2
 WHERE
 	t2.RN > :skip

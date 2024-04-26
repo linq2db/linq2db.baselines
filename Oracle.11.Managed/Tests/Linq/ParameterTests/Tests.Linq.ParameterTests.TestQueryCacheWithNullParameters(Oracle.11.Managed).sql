@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
+DECLARE @id Int32
+SET     @id = 0
 
 SELECT
 	Count(*)
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" IS NULL
+	t1."PersonID" = :id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

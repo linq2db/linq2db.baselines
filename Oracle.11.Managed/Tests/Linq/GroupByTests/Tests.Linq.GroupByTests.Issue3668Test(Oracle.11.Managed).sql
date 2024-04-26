@@ -1,64 +1,40 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String
 SET     @name = 'test'
-DECLARE @id_1 Int32
-SET     @id_1 = 2
+
+SELECT
+	m_1."PersonID",
+	m_1."FirstName",
+	m_1."PersonID",
+	m_1."LastName",
+	m_1."MiddleName",
+	m_1."Gender"
+FROM
+	"Person" m_1
+WHERE
+	(m_1."PersonID" = :id AND m_1."LastName" <> :name OR m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id) AND
+	(m_1."PersonID" = :id AND m_1."LastName" <> :name OR m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id)
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @id Int32
+SET     @id = 1
+DECLARE @name Varchar2(4) -- String
+SET     @name = 'test'
 
 SELECT
 	x."PersonID"
 FROM
 	"Person" x
 WHERE
-	(x."PersonID" = :id AND x."LastName" <> :name OR x."FirstName" <> :name AND x."PersonID" = :id_1)
+	(x."PersonID" = :id AND x."LastName" <> :name OR x."FirstName" <> :name AND x."PersonID" - 1 = :id)
 GROUP BY
 	x."PersonID"
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @ID Int32
-SET     @ID = 1
-DECLARE @LastName Varchar2(4) -- String
-SET     @LastName = 'test'
-DECLARE @p Int32
-SET     @p = 2
-DECLARE @ID_1 Int32
-SET     @ID_1 = 1
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	(x."PersonID" = :ID AND x."LastName" <> :LastName OR x."FirstName" <> :LastName AND x."PersonID" = :p) AND
-	x."PersonID" = :ID_1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @ID Int32
-SET     @ID = 1
-DECLARE @LastName Varchar2(4) -- String
-SET     @LastName = 'test'
-DECLARE @p Int32
-SET     @p = 2
-DECLARE @ID_1 Int32
-SET     @ID_1 = 2
-
-SELECT
-	x."FirstName",
-	x."PersonID",
-	x."LastName",
-	x."MiddleName",
-	x."Gender"
-FROM
-	"Person" x
-WHERE
-	(x."PersonID" = :ID AND x."LastName" <> :LastName OR x."FirstName" <> :LastName AND x."PersonID" = :p) AND
-	x."PersonID" = :ID_1
 

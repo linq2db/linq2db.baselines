@@ -4,21 +4,21 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	Min(t2."ParentID")
+	MIN(t3."ParentID")
 FROM
 	(
 		SELECT
-			t1."ParentID"
+			t2."ParentID"
 		FROM
 			(
 				SELECT
-					p."ParentID"
+					t1."ParentID"
 				FROM
-					"Parent" p
+					"Parent" t1
 				ORDER BY
-					p."ParentID"
-			) t1
+					t1."ParentID"
+			) t2
 		WHERE
 			ROWNUM <= :take
-	) t2
+	) t3
 

@@ -502,8 +502,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
 
@@ -527,7 +525,7 @@ FROM
 					x."OrderData1"
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 3
 	) t2
 WHERE
 	t2.RN > :skip

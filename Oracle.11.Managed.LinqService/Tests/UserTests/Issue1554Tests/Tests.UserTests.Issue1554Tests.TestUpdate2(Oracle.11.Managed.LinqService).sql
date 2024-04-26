@@ -61,17 +61,15 @@ DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554Table"
+	"Issue1554Table" p
 SET
-	"Issue1554Table"."ClaimedKeyType" = :ClaimedKeyType,
-	"Issue1554Table"."ClaimedKeyTypeN" = :ClaimedKeyTypeN
+	"ClaimedKeyType" = :ClaimedKeyType,
+	"ClaimedKeyTypeN" = :ClaimedKeyTypeN
 WHERE
-	"Issue1554Table"."Id" = 0
+	p."Id" = 0
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Id",
@@ -80,7 +78,7 @@ SELECT
 FROM
 	"Issue1554Table" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

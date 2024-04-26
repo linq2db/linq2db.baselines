@@ -286,7 +286,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	To_Number(To_Char(t."TransactionDate", 'MM'))
+	EXTRACT(MONTH FROM t."TransactionDate")
 FROM
 	"Transactions" t
 

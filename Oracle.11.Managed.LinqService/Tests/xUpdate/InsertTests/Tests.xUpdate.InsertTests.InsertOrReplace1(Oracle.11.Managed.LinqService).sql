@@ -53,7 +53,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -81,7 +81,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -109,7 +109,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -126,8 +126,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -135,5 +133,5 @@ SELECT
 FROM
 	"Patient" p
 WHERE
-	p."PersonID" = :id AND ROWNUM <= :take
+	p."PersonID" = :id AND ROWNUM <= 2
 

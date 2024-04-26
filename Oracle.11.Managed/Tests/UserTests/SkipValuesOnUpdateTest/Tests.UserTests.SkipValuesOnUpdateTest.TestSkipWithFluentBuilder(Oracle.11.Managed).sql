@@ -55,8 +55,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -65,7 +63,7 @@ SELECT
 FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -77,17 +75,15 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table"
+	"PR_1598_Update_Fluent_Table" t1
 SET
-	"PR_1598_Update_Fluent_Table"."Name" = :Name,
-	"PR_1598_Update_Fluent_Table"."Age" = :Age
+	"Name" = :Name,
+	"Age" = :Age
 WHERE
-	"PR_1598_Update_Fluent_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -96,7 +92,7 @@ SELECT
 FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -106,16 +102,14 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table"
+	"PR_1598_Update_Fluent_Table" t1
 SET
-	"PR_1598_Update_Fluent_Table"."Name" = :Name
+	"Name" = :Name
 WHERE
-	"PR_1598_Update_Fluent_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -124,7 +118,7 @@ SELECT
 FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

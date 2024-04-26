@@ -2,8 +2,8 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	x."ParentID",
-	x."Value1"
+	x."Value1",
+	x."ParentID"
 FROM
 	"Parent" x
 WHERE

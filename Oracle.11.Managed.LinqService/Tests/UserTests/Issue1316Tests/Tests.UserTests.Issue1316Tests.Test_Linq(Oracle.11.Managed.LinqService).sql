@@ -45,15 +45,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1.ID IN (4, 5, 6) AND ROWNUM <= :take
+	t1.ID IN (4, 5, 6) AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

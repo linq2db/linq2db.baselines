@@ -44,29 +44,25 @@ DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
 SET     @CEnum_1 = '___Value4___'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
+	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL) AND ROWNUM <= :take
+	(s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL) AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -74,22 +70,18 @@ DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
 SET     @CEnum_1 = '___Value2___'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= :take
+	s."CEnum" IN (:CEnum, :CEnum_1) AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value2___'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -97,7 +89,7 @@ FROM
 	"Src" s
 WHERE
 	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL) AND
-	ROWNUM <= :take
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -105,8 +97,6 @@ DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 Varchar2(12) -- String
 SET     @CEnum_1 = '___Value2___'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	s."Id"
@@ -114,7 +104,7 @@ FROM
 	"Src" s
 WHERE
 	(s."CEnum" NOT IN (:CEnum, :CEnum_1) OR s."CEnum" IS NULL) AND
-	ROWNUM <= :take
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
