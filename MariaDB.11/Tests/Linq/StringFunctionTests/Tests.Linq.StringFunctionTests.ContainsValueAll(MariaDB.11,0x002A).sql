@@ -4,7 +4,7 @@ DECLARE @s VarChar(7) -- String
 SET     @s = '123*456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
@@ -16,9 +16,9 @@ DECLARE @s VarChar(7) -- String
 SET     @s = '123*456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND (LOCATE('*', @s) <= 0)
+	`p`.`PersonID` = 1 AND LOCATE('*', @s) <= 0
 

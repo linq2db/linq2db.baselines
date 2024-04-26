@@ -37,52 +37,46 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`ID` = 1
-LIMIT @take
+	`t1`.`ID` = 1
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Array Blob(3) -- Binary
 SET     @Array = 0x010203
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`Array` = @Array
-LIMIT @take
+	`t1`.`Array` = @Array
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Binary Blob(2) -- Binary
 SET     @Binary = 0x0405
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`Binary` = @Binary
-LIMIT @take
+	`t1`.`Binary` = @Binary
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

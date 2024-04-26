@@ -2,12 +2,11 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			`t1`.`ParentID`,
-			`t1`.`ChildID`
+			*
 		FROM
 			`Child` `t1`
 		LIMIT 5

@@ -2,41 +2,44 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as `c1`
+			`t2`.`c1`
 		FROM
 			(
 				SELECT
-					Concat('test', `a_Patient`.`Diagnosis`) as `Key_1`
+					Concat('test', `a_Patient`.`Diagnosis`) as `c1`
 				FROM
-					`Person` `selectParam`
-						LEFT JOIN `Patient` `a_Patient` ON `selectParam`.`PersonID` = `a_Patient`.`PersonID`
-			) `t1`
+					`Person` `t1`
+						LEFT JOIN `Patient` `a_Patient` ON `t1`.`PersonID` = `a_Patient`.`PersonID`
+			) `t2`
 		GROUP BY
-			`t1`.`Key_1`
-	) `t2`
+			`t2`.`c1`
+	) `t3`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as `c1`
+			`t2`.`c1`
 		FROM
 			(
 				SELECT
-					Concat('test', `a_Patient`.`Diagnosis`) as `Key_1`
+					CASE
+						WHEN `a_Patient`.`PersonID` IS NULL THEN NULL
+						ELSE Concat('test', `a_Patient`.`Diagnosis`)
+					END as `c1`
 				FROM
-					`Person` `selectParam`
-						LEFT JOIN `Patient` `a_Patient` ON `selectParam`.`PersonID` = `a_Patient`.`PersonID`
-			) `t1`
+					`Person` `t1`
+						LEFT JOIN `Patient` `a_Patient` ON `t1`.`PersonID` = `a_Patient`.`PersonID`
+			) `t2`
 		GROUP BY
-			`t1`.`Key_1`
-	) `t2`
+			`t2`.`c1`
+	) `t3`
 
