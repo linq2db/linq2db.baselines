@@ -228,35 +228,35 @@ SET     @param = 3
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[_].[Id],
-		@param as [source_field0]
+		[t1].[Id] as [source_Id],
+		@param as [source_Val]
 	FROM
-		[TestMerge2] [_]
+		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id],
-	[source_field0]
+	[source_Id],
+	[source_Val]
 )
-ON ([Target].[Id] = [Source].[Id] AND [Target].[Id] = [Source].[source_field0])
+ON ([Target].[Id] = [Source].[source_Id] AND [Target].[Id] = [Source].[source_Val])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Field1] = [Source].[source_field0] + 111
+	[Field1] = [Source].[source_Val] + 111
 ;
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[_].[Id],
-	[_].[Field1],
-	[_].[Field2],
-	[_].[Field3],
-	[_].[Field4],
-	[_].[Field5]
+	[t1].[Id],
+	[t1].[Field1],
+	[t1].[Field2],
+	[t1].[Field3],
+	[t1].[Field4],
+	[t1].[Field5]
 FROM
-	[TestMerge1] [_]
+	[TestMerge1] [t1]
 WHERE
-	[_].[Id] = 3
+	[t1].[Id] = 3
 
