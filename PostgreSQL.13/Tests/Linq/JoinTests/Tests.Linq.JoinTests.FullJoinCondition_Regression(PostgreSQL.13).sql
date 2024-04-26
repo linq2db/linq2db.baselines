@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -21,7 +21,7 @@ FROM
 				"Patient" q2
 			GROUP BY
 				q2."PersonID"
-		) t1 ON t2."Key_1" = t1."Key_1" AND (t2."Count_1" = t1."Count_1" OR t2."Count_1" IS NULL AND t1."Count_1" IS NULL)
+		) t1 ON t2."Key_1" = t1."Key_1" AND t2."Count_1" = t1."Count_1"
 WHERE
 	(t2."Count_1" IS NULL OR t1."Count_1" IS NULL)
 
