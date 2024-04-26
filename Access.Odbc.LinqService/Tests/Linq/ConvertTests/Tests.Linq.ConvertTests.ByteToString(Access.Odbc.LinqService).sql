@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[p].[c1]
+	CStr([p].[ID])
 FROM
-	(
-		SELECT
-			CStr([t].[ID]) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [p]
 WHERE
-	Len([p].[c1]) > 0
+	Len(CStr([p].[ID])) > 0
 

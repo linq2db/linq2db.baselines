@@ -4,9 +4,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([_].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [_]
+	[Person] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -21,15 +21,15 @@ DECLARE @id Int -- Int32
 SET     @id = 4
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = ?
+	[t1].[PersonID] = ?
 
 BeforeExecute
 DisposeTransaction

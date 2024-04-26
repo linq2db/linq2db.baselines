@@ -19,9 +19,9 @@ SET     @lastName = 'König'
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = ? AND [_].[LastName] = ?
+	[t1].[FirstName] = ? AND [t1].[LastName] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -31,15 +31,15 @@ DECLARE @lastName NVarChar(5) -- String
 SET     @lastName = 'König'
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = ? AND [_].[LastName] = ?
+	[t1].[FirstName] = ? AND [t1].[LastName] = ?
 
 BeforeExecute
 DisposeTransaction

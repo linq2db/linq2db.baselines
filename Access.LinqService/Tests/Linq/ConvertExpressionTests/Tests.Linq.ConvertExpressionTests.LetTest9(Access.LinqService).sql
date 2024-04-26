@@ -2,34 +2,30 @@
 -- Access AccessOleDb
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID],
-			[t1].[Value1]
+			[t1].[ParentID]
 		FROM
 			(
 				SELECT TOP 10
-					[p].[ParentID],
-					[p].[Value1]
+					[p].[ParentID]
 				FROM
 					[Parent] [p]
 			) [t1]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON ([_c].[ParentID] = [key_data_result].[ParentID])
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([d].[ParentID] = [m_1].[ParentID])
 ORDER BY
-	[_c].[ChildID]
+	[d].[ChildID]
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 10
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

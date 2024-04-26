@@ -10,7 +10,7 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	(([_].[PersonID] = ? OR [_].[PersonID] <= ?) OR [_].[PersonID] = ?)
+	([t1].[PersonID] = ? OR [t1].[PersonID] <= ? OR [t1].[PersonID] = ?)
 

@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Min([t1].[ParentID])
+	MIN([t2].[ParentID])
 FROM
 	(
 		SELECT TOP 3
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t1]
 		ORDER BY
-			[p].[ParentID]
-	) [t1]
+			[t1].[ParentID]
+	) [t2]
 

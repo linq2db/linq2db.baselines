@@ -26,9 +26,9 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 
 BeforeExecute
 -- Access AccessOleDb
@@ -45,9 +45,9 @@ SET     @id = 1
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 
 BeforeExecute
 DisposeTransaction

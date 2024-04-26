@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	Max([_].[ID])
+	MAX([t1].[ID])
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -392,15 +392,15 @@ DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
 SELECT
-	[_].[ID],
-	[_].[char20DataType],
-	[_].[ncharDataType]
+	[t1].[ID],
+	[t1].[char20DataType],
+	[t1].[ncharDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > @lastId
+	[t1].[ID] > @lastId
 ORDER BY
-	[_].[ID]
+	[t1].[ID]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -408,7 +408,7 @@ DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
 DELETE FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > @lastId
+	[t1].[ID] > @lastId
 

@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	DateAdd('y', 3, [t].[DateTimeValue])
+	DateValue(DateAdd('y', 3, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

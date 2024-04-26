@@ -4,5 +4,5 @@
 SELECT TOP 2
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 
