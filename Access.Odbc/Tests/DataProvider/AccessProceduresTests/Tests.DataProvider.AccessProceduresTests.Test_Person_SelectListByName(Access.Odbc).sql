@@ -17,7 +17,7 @@ DECLARE @lastName NVarChar(3) -- String
 SET     @lastName = '%o%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

@@ -17,7 +17,7 @@ DECLARE @lastName VarWChar(9) -- String
 SET     @lastName = 'Testerson'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [t1]
 		INNER JOIN [Person] [a_Person] ON ([t1].[PersonID] = [a_Person].[PersonID])

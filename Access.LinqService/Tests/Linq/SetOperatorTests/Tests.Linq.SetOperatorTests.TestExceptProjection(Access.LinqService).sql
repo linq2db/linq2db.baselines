@@ -280,36 +280,29 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT DISTINCT
-	[r_2].[Id],
-	[r_2].[Value_1],
-	[r_2].[Value_1]
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value1]
 FROM
-	(
-		SELECT DISTINCT
-			[r].[Id],
-			[r].[Value1] as [Value_1]
-		FROM
-			[SampleData] [r]
-		WHERE
-			[r].[Id] MOD 2 = 0 AND NOT EXISTS(
-				SELECT
-					*
-				FROM
-					[SampleData] [r_1]
-				WHERE
-					[r_1].[Id] MOD 4 = 0 AND [r].[Id] = [r_1].[Id] AND
-					[r].[Value1] = [r_1].[Value2] / 10
-			)
-	) [r_2]
+	[SampleData] [r]
 WHERE
+	[r].[Id] MOD 2 = 0 AND NOT EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleData] [r_1]
+		WHERE
+			[r_1].[Id] MOD 4 = 0 AND [r].[Id] = [r_1].[Id] AND
+			[r].[Value1] = [r_1].[Value2] / 10
+	) AND
 	NOT EXISTS(
 		SELECT
 			*
 		FROM
-			[SampleData] [r_3]
+			[SampleData] [r_2]
 		WHERE
-			[r_3].[Id] MOD 6 = 0 AND [r_2].[Id] = [r_3].[Id] AND
-			[r_2].[Value_1] = [r_3].[Value1]
+			[r_2].[Id] MOD 6 = 0 AND [r].[Id] = [r_2].[Id] AND
+			[r].[Value1] = [r_2].[Value1]
 	)
 
 BeforeExecute

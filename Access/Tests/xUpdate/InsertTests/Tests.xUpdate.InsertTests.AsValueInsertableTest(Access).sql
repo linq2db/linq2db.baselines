@@ -38,7 +38,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE

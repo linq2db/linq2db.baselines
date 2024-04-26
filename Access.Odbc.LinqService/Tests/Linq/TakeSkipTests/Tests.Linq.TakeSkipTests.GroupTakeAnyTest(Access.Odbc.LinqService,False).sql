@@ -71,7 +71,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 1
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[TakeSkipClass] [group_1]
 GROUP BY

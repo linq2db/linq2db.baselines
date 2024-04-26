@@ -10,7 +10,7 @@ DECLARE @personId Int -- Int32
 SET     @personId = 0
 
 SELECT
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Person] [t1],
 	(

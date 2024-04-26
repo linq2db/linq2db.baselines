@@ -8,7 +8,7 @@ DECLARE @id_2 Integer -- Int32
 SET     @id_2 = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

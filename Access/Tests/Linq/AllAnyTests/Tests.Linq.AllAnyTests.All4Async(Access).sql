@@ -2,7 +2,7 @@
 -- Access AccessOleDb (asynchronously)
 
 SELECT
-	IIF(Count(*) = 0, True, False)
+	IIF(COUNT(*) = 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE

@@ -4,7 +4,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
 SELECT
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Parent] [p]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 
 SELECT
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Parent] [p]
 WHERE

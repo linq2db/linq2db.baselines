@@ -17,7 +17,7 @@ DECLARE @lastName VarWChar(5) -- String
 SET     @lastName = 'König'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

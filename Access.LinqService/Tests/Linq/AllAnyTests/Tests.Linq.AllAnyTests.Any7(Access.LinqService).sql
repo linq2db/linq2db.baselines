@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [t1]
 

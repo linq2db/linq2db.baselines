@@ -10,7 +10,7 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 11
 
 SELECT
-	IIF(Count(*) > 0, True, False)
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [param]
 		LEFT JOIN [Parent] [a_Parent] ON ([param].[ParentID] = [a_Parent].[ParentID])
