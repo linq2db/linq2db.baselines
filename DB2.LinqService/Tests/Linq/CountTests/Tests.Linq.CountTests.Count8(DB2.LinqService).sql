@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "p"
 		LEFT JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"
@@ -13,7 +13,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "p"
 		LEFT JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"

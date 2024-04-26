@@ -38,7 +38,7 @@ FROM
 		)
 		VALUES
 		(
-			@Has
+			CAST(@Has AS smallint)
 		)
 	)
 
@@ -48,12 +48,12 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
 SELECT
-	"_"."Id",
-	"_"."Has"
+	"t1"."Id",
+	"t1"."Has"
 FROM
-	"Issue1438" "_"
+	"Issue1438" "t1"
 WHERE
-	"_"."Id" = @id
+	"t1"."Id" = @id
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

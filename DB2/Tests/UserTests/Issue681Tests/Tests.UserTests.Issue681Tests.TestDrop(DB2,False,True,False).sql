@@ -28,7 +28,7 @@ BeforeExecute
 SELECT
 	current server
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

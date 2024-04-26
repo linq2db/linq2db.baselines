@@ -2,10 +2,10 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."PersonID" + 1,
+	"p"."PersonID",
 	"p"."FirstName"
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1
+	"p"."PersonID" + 1 = 2
 

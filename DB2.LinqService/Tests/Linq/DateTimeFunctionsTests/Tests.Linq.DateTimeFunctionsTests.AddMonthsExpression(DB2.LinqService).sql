@@ -4,7 +4,7 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = -2
 
 SELECT
-	"t"."DateTimeValue" + @p Month
+	DATE("t"."DateTimeValue" + CAST(@p AS Int) MONTH)
 FROM
 	"LinqDataTypes" "t"
 

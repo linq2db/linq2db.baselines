@@ -39,31 +39,31 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t1"
 SET
-	"TrimTestTable"."Data" = '***III***'
+	"Data" = '***III***'
 WHERE
-	"TrimTestTable".ID = 3
+	"t1".ID = 3
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = '***OOO***'
+	"Data" = '***OOO***'
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"t"."Data" = '***XXX***'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = '***SSS***'
+	"Data" = '***SSS***'
 WHERE
-	"TrimTestTable"."Data" = '***HHH***'
+	"t"."Data" = '***HHH***'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

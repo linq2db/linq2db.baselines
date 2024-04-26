@@ -45,17 +45,17 @@ INSERT INTO "xxPerson"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS NVarChar(6)),
+	CAST(@LastName AS NVarChar(4)),
+	CAST(@MiddleName AS NVarChar(255)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
@@ -86,7 +86,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 

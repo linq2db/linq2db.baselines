@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Date Timestamp(20) -- DateTime
-SET     @Date = '2009-09-20-00.00.00.000000'
 
 SELECT
-	"_".ID,
-	"_"."MoneyValue",
-	"_"."DateTimeValue",
-	"_"."BoolValue",
-	"_"."GuidValue",
-	"_"."BinaryValue",
-	"_"."SmallIntValue",
-	"_"."StringValue"
+	"t1".ID,
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."BinaryValue",
+	"t1"."SmallIntValue",
+	"t1"."StringValue"
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	Date("_"."DateTimeValue") = @Date
+	DATE("t1"."DateTimeValue") = DATE(CAST('2009-09-20' AS timestamp))
 

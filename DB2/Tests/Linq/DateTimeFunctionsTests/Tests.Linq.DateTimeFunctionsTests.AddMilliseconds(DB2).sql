@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + (226 / 1000.0) Second
+	"t"."DateTimeValue" + 0.22600000000000001 SECOND
 FROM
 	"LinqDataTypes" "t"
 

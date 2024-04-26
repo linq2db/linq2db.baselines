@@ -59,8 +59,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS NVarChar(12))
 )
 
 BeforeExecute
@@ -77,8 +77,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS NVarChar(12))
 )
 
 BeforeExecute
@@ -98,9 +98,9 @@ INSERT INTO "Issue1096TaskStage"
 )
 VALUES
 (
-	@Id,
-	@TaskId,
-	@Actual
+	CAST(@Id AS Int),
+	CAST(@TaskId AS Int),
+	CAST(@Actual AS smallint)
 )
 
 BeforeExecute

@@ -36,32 +36,32 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	CAST(@Id AS Int),
+	CAST(@BlobValue AS Blob(3))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"t1"."Id",
+	"t1"."BlobValue"
 FROM
-	"BlobClass" "_"
+	"BlobClass" "t1"
 WHERE
-	"_"."Id" = 1
+	"t1"."Id" = 1
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"t1"."Id",
+	"t1"."BlobValue"
 FROM
-	"BlobClass" "_"
+	"BlobClass" "t1"
 WHERE
-	"_"."Id" = 1
+	"t1"."Id" = 1
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute

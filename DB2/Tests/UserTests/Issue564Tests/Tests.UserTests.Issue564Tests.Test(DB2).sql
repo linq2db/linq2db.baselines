@@ -38,8 +38,8 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	@Type,
-	@StringValue
+	CAST(@Type AS NVarChar(9)),
+	CAST(@StringValue AS NVarChar(9))
 )
 
 BeforeExecute
@@ -56,15 +56,15 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	@Type,
-	@IntValue
+	CAST(@Type AS NVarChar(9)),
+	CAST(@IntValue AS Int)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent564" "t1"
 

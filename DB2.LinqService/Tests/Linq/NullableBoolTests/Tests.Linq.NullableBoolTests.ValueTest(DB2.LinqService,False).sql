@@ -30,7 +30,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS smallint)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS smallint)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "NullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS smallint)
 )
 
 BeforeExecute

@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,16 +15,16 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	CAST(@FirstName AS NVarChar(4)),
+	CAST(@LastName AS NVarChar(11)),
+	CAST(@Gender AS NChar(1))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE

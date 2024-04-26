@@ -28,7 +28,7 @@ BeforeExecute
 SELECT
 	current schema
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -45,8 +45,8 @@ INSERT INTO DB2INST1."Issue681Table"
 )
 VALUES
 (
-	@ID,
-	@Value
+	CAST(@ID AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute
