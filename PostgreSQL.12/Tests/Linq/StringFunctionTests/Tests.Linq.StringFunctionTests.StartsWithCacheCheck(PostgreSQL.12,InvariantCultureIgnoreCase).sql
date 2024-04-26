@@ -15,7 +15,7 @@ DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -27,7 +27,7 @@ DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE

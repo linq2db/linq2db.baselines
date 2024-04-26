@@ -5,7 +5,7 @@ BeforeExecute
 
 commit;
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 
