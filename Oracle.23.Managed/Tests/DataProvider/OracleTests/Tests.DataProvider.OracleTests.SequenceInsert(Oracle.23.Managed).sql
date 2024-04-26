@@ -24,22 +24,20 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
-	t1.VALUE
+	t1.VALUE as "Value_1"
 FROM
 	SEQUENCETEST t1
 WHERE
 	t1.VALUE = 'SeqValue'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
-SET     @id = 1111
+SET     @id = 193
 
 DELETE FROM
 	SEQUENCETEST t1
@@ -50,7 +48,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	SEQUENCETEST t1
 WHERE

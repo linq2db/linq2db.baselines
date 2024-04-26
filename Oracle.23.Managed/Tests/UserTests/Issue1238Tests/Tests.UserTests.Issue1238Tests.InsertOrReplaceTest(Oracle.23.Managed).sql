@@ -24,7 +24,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -43,7 +43,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InheritanceParent" t1
 
@@ -65,7 +65,7 @@ USING (SELECT :Key1 AS "InheritanceParentId", :Key2 AS "Name" FROM SYS.DUAL) s O
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."TypeDiscriminator" = :Data
+		"TypeDiscriminator" = :Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -84,7 +84,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InheritanceParent" t1
 

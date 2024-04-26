@@ -53,7 +53,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -81,7 +81,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -109,7 +109,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = Cast((Length(t1."Diagnosis") + :i) as VarChar(11))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -126,8 +126,6 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -136,5 +134,5 @@ FROM
 	"Patient" p
 WHERE
 	p."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
