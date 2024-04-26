@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" t1
 
@@ -19,14 +19,14 @@ AS
 		"Child" t1
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CTE1_" t2
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE1_" ("ChildID")
+WITH "CTE1_" ("C_ChildID")
 AS
 (
 	SELECT
@@ -35,18 +35,17 @@ AS
 		"Child" c_1
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CTE1_" t1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE1_" ("ChildID")
-AS
+WITH "CTE1_" AS
 (
 	SELECT
-		c_1."ChildID"
+		*
 	FROM
 		"Child" c_1
 )
@@ -57,8 +56,7 @@ SELECT
 				*
 			FROM
 				"CTE1_" t1
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END
 
