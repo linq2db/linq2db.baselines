@@ -18,7 +18,7 @@ AS
 		) "t1"
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 		INNER JOIN CTE_1 "c_2" ON "p"."ParentID" = "c_2"."ParentID"
@@ -28,7 +28,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 		INNER JOIN (

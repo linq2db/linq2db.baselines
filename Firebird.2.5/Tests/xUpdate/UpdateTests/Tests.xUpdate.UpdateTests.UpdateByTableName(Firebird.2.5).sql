@@ -68,7 +68,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_32" "t1"
 

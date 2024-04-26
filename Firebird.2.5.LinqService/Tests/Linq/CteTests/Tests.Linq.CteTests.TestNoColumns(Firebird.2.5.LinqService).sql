@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "t1"
 
@@ -19,7 +19,7 @@ AS
 		"Child" "t1"
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ "t2"
 
@@ -35,7 +35,7 @@ AS
 		"Child" "c_1"
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ "t1"
 

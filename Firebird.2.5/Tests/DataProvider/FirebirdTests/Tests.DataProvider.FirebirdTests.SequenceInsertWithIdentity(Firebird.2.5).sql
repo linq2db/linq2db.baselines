@@ -51,7 +51,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SequenceTest" "t1"
 WHERE

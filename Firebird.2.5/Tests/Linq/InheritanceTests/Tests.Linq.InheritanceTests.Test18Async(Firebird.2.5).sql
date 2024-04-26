@@ -1,23 +1,14 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
 
-SELECT
-	"t1"."PersonID",
-	"t1"."Gender",
-	"t1"."FirstName",
-	"t1"."LastName"
+SELECT DISTINCT
+	"p1"."PersonID",
+	"p1"."Gender",
+	"p1"."FirstName",
+	"p1"."LastName"
 FROM
-	(
-		SELECT DISTINCT
-			"p1"."PersonID",
-			"p1"."Gender",
-			"p1"."FirstName",
-			"p1"."LastName"
-		FROM
-			"Person" "p1"
-		WHERE
-			"p1"."PersonID" IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-	) "t1"
+	"Person" "p1"
 WHERE
-	"t1"."Gender" = 'F'
+	"p1"."PersonID" IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) AND
+	"p1"."Gender" = 'F'
 
