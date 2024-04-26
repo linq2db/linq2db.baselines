@@ -32,34 +32,34 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
-	`BlobClass` `_`
+	`BlobClass` `t1`
 SET
-	`_`.`BlobValue` = 0x030201
+	`t1`.`BlobValue` = 0x030201
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute

@@ -9,6 +9,12 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender String(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -18,9 +24,9 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute

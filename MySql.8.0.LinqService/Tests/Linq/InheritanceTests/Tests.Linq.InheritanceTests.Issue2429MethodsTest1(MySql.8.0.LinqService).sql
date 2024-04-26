@@ -34,8 +34,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`Id`,
@@ -44,12 +42,10 @@ FROM
 	`BaseTable` `x`
 WHERE
 	`x`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`Id`,
@@ -58,7 +54,7 @@ FROM
 	`BaseTable` `x`
 WHERE
 	`x`.`Id` = 1 AND `x`.`Value` = 100
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

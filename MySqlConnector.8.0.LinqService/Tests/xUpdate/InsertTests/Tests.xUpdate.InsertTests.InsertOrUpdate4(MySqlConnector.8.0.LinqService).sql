@@ -49,10 +49,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	Cast(Char_Length(@diagnosis) as CHAR(11))
+	CAST(Char_Length(@diagnosis) AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast(Char_Length(`Diagnosis`) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -71,10 +71,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	Cast((Char_Length(@diagnosis) + @i) as CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -93,17 +93,15 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	Cast((Char_Length(@diagnosis) + @i) as CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = Cast((Char_Length(`Diagnosis`) + @i) as CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
@@ -112,5 +110,5 @@ FROM
 	`Patient` `p`
 WHERE
 	`p`.`PersonID` = @id
-LIMIT @take
+LIMIT 2
 

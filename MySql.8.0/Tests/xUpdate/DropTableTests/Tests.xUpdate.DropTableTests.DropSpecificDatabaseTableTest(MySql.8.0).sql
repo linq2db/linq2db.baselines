@@ -5,14 +5,12 @@ DROP TABLE IF EXISTS `DropTableTest`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
-	`LinqDataTypes` `_`
-LIMIT @take
+	`LinqDataTypes` `t1`
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

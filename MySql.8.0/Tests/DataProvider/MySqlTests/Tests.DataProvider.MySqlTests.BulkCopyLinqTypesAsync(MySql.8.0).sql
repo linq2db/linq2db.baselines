@@ -27,11 +27,11 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
@@ -62,9 +62,9 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 

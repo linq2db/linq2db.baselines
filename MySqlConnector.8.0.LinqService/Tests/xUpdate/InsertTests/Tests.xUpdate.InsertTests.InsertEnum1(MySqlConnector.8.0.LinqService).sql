@@ -33,9 +33,9 @@ SET     @Value1 = 2
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` = @id AND `_`.`Value1` = @Value1
+	`t1`.`ParentID` = @id AND `t1`.`Value1` = @Value1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

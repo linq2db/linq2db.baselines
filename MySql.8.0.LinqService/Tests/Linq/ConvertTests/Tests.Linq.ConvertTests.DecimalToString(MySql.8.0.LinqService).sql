@@ -2,9 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Cast(`t`.`MoneyValue` as CHAR(31))
+	CAST(`p`.`MoneyValue` AS CHAR(31))
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes` `p`
 WHERE
-	Char_Length(Cast(`t`.`MoneyValue` as CHAR(31))) > 0
+	Char_Length(CAST(`p`.`MoneyValue` AS CHAR(31))) > 0
 

@@ -42,8 +42,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -52,7 +50,7 @@ FROM
 	`TestIdTrun` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, @take
+LIMIT @skip, 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -87,8 +85,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`ID`,
@@ -97,7 +93,7 @@ FROM
 	`TestIdTrun` `t1`
 ORDER BY
 	`t1`.`ID`
-LIMIT @skip, @take
+LIMIT @skip, 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

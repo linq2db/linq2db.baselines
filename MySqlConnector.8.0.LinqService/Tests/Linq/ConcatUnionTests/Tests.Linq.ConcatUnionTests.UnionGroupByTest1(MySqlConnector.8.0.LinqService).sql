@@ -2,32 +2,32 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`month_1`,
-	`t1`.`year_1`,
+	`t2`.`Month_1`,
+	`t2`.`Year_1`,
 	1
 FROM
 	(
 		SELECT
-			Extract(month from `selectParam`.`DateTimeValue`) as `month_1`,
-			Extract(year from `selectParam`.`DateTimeValue`) as `year_1`
+			Extract(month from `t1`.`DateTimeValue`) as `Month_1`,
+			Extract(year from `t1`.`DateTimeValue`) as `Year_1`
 		FROM
-			`LinqDataTypes` `selectParam`
-	) `t1`
+			`LinqDataTypes` `t1`
+	) `t2`
 GROUP BY
-	`t1`.`month_1`,
-	`t1`.`year_1`
+	`t2`.`Month_1`,
+	`t2`.`Year_1`
 UNION
 SELECT
-	`_`.`SmallIntValue`,
-	`_`.`SmallIntValue`,
+	`t3`.`SmallIntValue`,
+	`t3`.`SmallIntValue`,
 	3
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes` `t3`
 UNION
 SELECT
-	Extract(year from `_1`.`DateTimeValue`),
-	Extract(year from `_1`.`DateTimeValue`),
+	Extract(year from `t4`.`DateTimeValue`),
+	Extract(year from `t4`.`DateTimeValue`),
 	2
 FROM
-	`LinqDataTypes` `_1`
+	`LinqDataTypes` `t4`
 

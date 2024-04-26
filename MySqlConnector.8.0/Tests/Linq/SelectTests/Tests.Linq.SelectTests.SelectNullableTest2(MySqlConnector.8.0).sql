@@ -50,30 +50,28 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
-	`_`.`DateTimeValue`,
-	`_`.`BoolValue`,
-	`_`.`GuidValue`,
-	`_`.`BinaryValue`,
-	`_`.`SmallIntValue`,
-	`_`.`StringValue`
+	`t1`.`ID`,
+	`t1`.`MoneyValue`,
+	`t1`.`DateTimeValue`,
+	`t1`.`BoolValue`,
+	`t1`.`GuidValue`,
+	`t1`.`BinaryValue`,
+	`t1`.`SmallIntValue`,
+	`t1`.`StringValue`
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes` `t1`
 WHERE
-	`_`.`ID` = 1000
-LIMIT @take
+	`t1`.`ID` = 1000
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes` `t1`
 WHERE
-	`_`.`ID` = 1000
+	`t1`.`ID` = 1000
 

@@ -33,9 +33,9 @@ SET     @id = 1001
 SELECT
 	Count(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` = @id
+	`t1`.`ParentID` = @id
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

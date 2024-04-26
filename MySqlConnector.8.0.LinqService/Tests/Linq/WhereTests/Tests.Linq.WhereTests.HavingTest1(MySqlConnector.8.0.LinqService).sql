@@ -2,11 +2,11 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Child` `t1`
+	`Child` `c_1`
 GROUP BY
-	`t1`.`ParentID`
+	`c_1`.`ParentID`
 HAVING
-	Count(*) > 1
+	COUNT(*) > 1
 

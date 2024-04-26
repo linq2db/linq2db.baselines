@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`p`.`ParentID`,
-	`q`.`GrandChildID`
+	`t1`.`ParentID`,
+	`q1`.`GrandChildID`
 FROM
-	`Parent` `p`
-		INNER JOIN `GrandChild` `q` ON `p`.`ParentID` = `q`.`ParentID`
+	`Parent` `t1`
+		INNER JOIN `GrandChild` `q1` ON `t1`.`ParentID` = `q1`.`ParentID`
 

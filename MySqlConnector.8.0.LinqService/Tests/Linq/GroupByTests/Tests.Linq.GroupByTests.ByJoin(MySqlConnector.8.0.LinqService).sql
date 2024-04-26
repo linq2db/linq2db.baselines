@@ -2,10 +2,10 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Sum(`c2`.`ChildID`)
+	SUM(`c2`.`ChildID`)
 FROM
-	`Child` `c1`
-		INNER JOIN `Child` `c2` ON `c1`.`ChildID` = `c2`.`ChildID` + 1
+	`Child` `g_1`
+		INNER JOIN `Child` `c2` ON `g_1`.`ChildID` = `c2`.`ChildID` + 1
 GROUP BY
-	`c1`.`ParentID`
+	`g_1`.`ParentID`
 
