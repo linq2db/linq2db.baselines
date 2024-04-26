@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast((Char_Length(Cast(@name as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@idx as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS),
+	Char_Length(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int),
 	'M'
 )
 
@@ -30,7 +30,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "t1"
 WHERE

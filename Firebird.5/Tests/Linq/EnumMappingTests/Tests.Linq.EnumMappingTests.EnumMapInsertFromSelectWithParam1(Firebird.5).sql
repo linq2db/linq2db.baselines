@@ -34,7 +34,7 @@ INSERT INTO "LinqDataTypes"
 )
 SELECT
 	"r".ID,
-	Cast(@param as BigInt)
+	CAST(@param AS BigInt)
 FROM
 	"LinqDataTypes" "r"
 WHERE
@@ -44,7 +44,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "r"
 WHERE

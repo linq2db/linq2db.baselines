@@ -30,7 +30,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "Data"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -107,7 +107,7 @@ INSERT INTO "SubData1"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -146,8 +146,8 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -164,33 +164,28 @@ INSERT INTO "SubData2"
 )
 VALUES
 (
-	@Id,
-	@Reason
+	CAST(@Id AS Int),
+	CAST(@Reason AS VARCHAR(9))
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"i"."Id",
 	"a_SubData"."Id",
-	"t1"."Reason",
-	"t1"."is_empty"
+	(
+		SELECT
+			"a_SubDatas"."Reason"
+		FROM
+			"SubData2" "a_SubDatas"
+		WHERE
+			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Data" "i"
 		LEFT JOIN "SubData1" "a_SubData" ON "i"."Id" = "a_SubData"."Id"
-		LEFT JOIN LATERAL (
-			SELECT
-				"s"."Reason",
-				1 as "is_empty"
-			FROM
-				"SubData2" "s"
-			WHERE
-				"a_SubData"."Id" = "s"."Id"
-			FETCH NEXT @take ROWS ONLY
-		) "t1" ON 1=1
 ORDER BY
 	"i"."Id"
 

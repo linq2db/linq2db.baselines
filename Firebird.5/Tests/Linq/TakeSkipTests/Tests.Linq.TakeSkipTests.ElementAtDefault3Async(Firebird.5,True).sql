@@ -2,8 +2,6 @@
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @n Integer -- Int32
 SET     @n = 3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -14,5 +12,5 @@ WHERE
 	"p"."ParentID" > 1
 ORDER BY
 	"p"."ParentID"
-OFFSET @n ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET @n ROWS FETCH NEXT 1 ROWS ONLY 
 

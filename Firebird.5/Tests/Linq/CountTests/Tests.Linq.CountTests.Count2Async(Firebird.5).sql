@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE

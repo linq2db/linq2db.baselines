@@ -28,17 +28,17 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@Name_FirstName AS VARCHAR(8)),
+	CAST(@Name_MiddleName AS VARCHAR(1)),
+	CAST(@Name_LastName AS VARCHAR(8))
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "t1"
 WHERE

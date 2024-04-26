@@ -27,67 +27,61 @@ TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	TEST_FUNCTION(1)
 FROM
 	"Person" "p"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	TEST_PACKAGE1.TEST_FUNCTION(1)
 FROM
 	"Person" "p"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	TEST_PACKAGE2.TEST_FUNCTION(1)
 FROM
 	"Person" "p"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	"r".O
 FROM
-	TEST_TABLE_FUNCTION(1) "r"
-FETCH NEXT @take ROWS ONLY
+	TEST_TABLE_FUNCTION(@p) "r"
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	"r".O
 FROM
-	TEST_PACKAGE1.TEST_TABLE_FUNCTION(1) "r"
-FETCH NEXT @take ROWS ONLY
+	TEST_PACKAGE1.TEST_TABLE_FUNCTION(@p) "r"
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	"r".O
 FROM
-	TEST_PACKAGE2.TEST_TABLE_FUNCTION(1) "r"
-FETCH NEXT @take ROWS ONLY
+	TEST_PACKAGE2.TEST_TABLE_FUNCTION(@p) "r"
+FETCH NEXT 1 ROWS ONLY
 

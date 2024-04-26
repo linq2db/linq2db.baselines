@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -86,7 +86,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -100,7 +100,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -114,7 +114,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -128,13 +128,11 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @skip Integer -- Int32
-SET     @skip = 3
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -144,7 +142,7 @@ FROM
 	"TakeSkipClass" "t1"
 ORDER BY
 	"t1"."Value"
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+OFFSET 3 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- Firebird.5 Firebird4

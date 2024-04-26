@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
-	DateAdd(Day, Cast(@p as Int), "t"."DateTimeValue")
+	CAST(DateAdd(Day, @p, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 
