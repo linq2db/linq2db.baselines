@@ -43,7 +43,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`GrandChild` `gc`
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`GrandChild` `gc`
 WHERE

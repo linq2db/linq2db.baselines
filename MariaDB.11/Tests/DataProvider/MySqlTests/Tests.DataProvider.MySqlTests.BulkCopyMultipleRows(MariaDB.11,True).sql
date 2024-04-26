@@ -3073,7 +3073,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`AllTypes` `t1`
 WHERE

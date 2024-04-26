@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Patient` `r`
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Patient` `r`
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Patient` `r`
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Patient` `r`
 WHERE

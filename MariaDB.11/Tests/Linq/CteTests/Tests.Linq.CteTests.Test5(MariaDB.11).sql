@@ -18,7 +18,7 @@ AS
 		) `t1`
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 		INNER JOIN `CTE_1` `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
@@ -28,7 +28,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 		INNER JOIN (
