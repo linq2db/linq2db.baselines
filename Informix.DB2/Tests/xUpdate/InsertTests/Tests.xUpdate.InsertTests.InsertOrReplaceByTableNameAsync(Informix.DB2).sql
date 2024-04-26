@@ -82,7 +82,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPatient t1
 
@@ -118,7 +118,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPatient t1
 

@@ -47,7 +47,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 

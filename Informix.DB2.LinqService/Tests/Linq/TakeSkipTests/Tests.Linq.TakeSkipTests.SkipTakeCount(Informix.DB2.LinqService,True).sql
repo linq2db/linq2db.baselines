@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT SKIP 2 FIRST 5
