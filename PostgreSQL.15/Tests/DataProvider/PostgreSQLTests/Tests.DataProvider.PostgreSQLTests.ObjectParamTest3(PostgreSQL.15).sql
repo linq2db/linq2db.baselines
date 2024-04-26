@@ -4,7 +4,7 @@ DECLARE @categoryParam Integer -- Int32
 SET     @categoryParam = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
