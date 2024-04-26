@@ -4,9 +4,9 @@
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[lj1].[ParentID],
-	[lj1].[ChildID]
+	[ch].[ParentID],
+	[ch].[ChildID]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [lj1] ON [p].[ParentID] = [lj1].[ParentID]
+		LEFT JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
 

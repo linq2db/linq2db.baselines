@@ -2,17 +2,17 @@
 -- SqlServer.2019
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[t2].[c1],
+	COUNT(*)
 FROM
 	(
 		SELECT
 			1 as [c1]
 		FROM
-			[Person] [_]
+			[Person] [t1]
 		WHERE
 			1 = 0
-	) [t1]
+	) [t2]
 GROUP BY
-	[t1].[c1]
+	[t2].[c1]
 
