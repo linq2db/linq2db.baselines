@@ -47,7 +47,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	InstanceClass t
 WHERE

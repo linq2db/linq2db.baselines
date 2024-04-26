@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child p
 		LEFT JOIN Parent a_Parent ON p.ParentID = a_Parent.ParentID

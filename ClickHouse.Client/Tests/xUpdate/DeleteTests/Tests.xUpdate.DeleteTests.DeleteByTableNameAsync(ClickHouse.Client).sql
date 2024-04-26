@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 
@@ -72,7 +72,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 

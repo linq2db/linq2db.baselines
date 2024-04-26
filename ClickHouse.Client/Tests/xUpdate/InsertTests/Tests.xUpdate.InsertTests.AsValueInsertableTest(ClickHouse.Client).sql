@@ -36,7 +36,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	TestInsertOrReplaceTable x
 WHERE
