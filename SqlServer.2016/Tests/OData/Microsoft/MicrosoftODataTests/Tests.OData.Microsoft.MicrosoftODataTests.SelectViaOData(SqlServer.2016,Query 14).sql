@@ -37,15 +37,22 @@ DECLARE @TypedProperty_1 NVarChar(4000) -- String
 SET     @TypedProperty_1 = N'QA'
 
 SELECT
-	N'Title',
-	[$it].[Title],
-	Count(*)
+	[it_1].[c1],
+	[it_1].[Title],
+	COUNT(*)
 FROM
-	[odata_person] [$it]
-WHERE
-	([$it].[Title] = @TypedProperty OR [$it].[Title] = @TypedProperty_1)
+	(
+		SELECT
+			N'Title' as [c1],
+			[it].[Title]
+		FROM
+			[odata_person] [it]
+		WHERE
+			([it].[Title] = @TypedProperty OR [it].[Title] = @TypedProperty_1)
+	) [it_1]
 GROUP BY
-	[$it].[Title]
+	[it_1].[c1],
+	[it_1].[Title]
 
 BeforeExecute
 -- SqlServer.2016
