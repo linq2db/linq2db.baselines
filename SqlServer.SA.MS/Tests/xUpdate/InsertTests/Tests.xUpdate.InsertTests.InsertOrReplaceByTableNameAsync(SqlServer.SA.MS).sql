@@ -74,7 +74,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -138,7 +138,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

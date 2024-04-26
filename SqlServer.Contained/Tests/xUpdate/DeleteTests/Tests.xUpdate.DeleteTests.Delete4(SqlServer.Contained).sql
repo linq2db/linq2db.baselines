@@ -43,7 +43,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

@@ -38,7 +38,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -73,7 +73,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

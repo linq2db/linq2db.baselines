@@ -47,7 +47,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -78,7 +78,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

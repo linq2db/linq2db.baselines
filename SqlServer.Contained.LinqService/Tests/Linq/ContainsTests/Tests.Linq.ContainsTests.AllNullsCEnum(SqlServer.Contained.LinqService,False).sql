@@ -73,7 +73,7 @@ DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -85,7 +85,7 @@ DECLARE @CEnum VarChar(20) -- AnsiString
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

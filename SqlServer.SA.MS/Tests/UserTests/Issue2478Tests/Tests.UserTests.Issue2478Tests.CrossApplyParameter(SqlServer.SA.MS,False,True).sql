@@ -21,7 +21,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [t1]
 		CROSS APPLY (

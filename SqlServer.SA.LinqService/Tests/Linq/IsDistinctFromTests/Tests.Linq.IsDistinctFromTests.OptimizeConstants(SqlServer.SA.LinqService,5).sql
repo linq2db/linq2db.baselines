@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -15,7 +15,7 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT

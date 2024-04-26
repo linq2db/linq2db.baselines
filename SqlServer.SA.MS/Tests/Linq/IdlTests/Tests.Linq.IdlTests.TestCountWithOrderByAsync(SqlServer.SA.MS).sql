@@ -10,7 +10,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 
