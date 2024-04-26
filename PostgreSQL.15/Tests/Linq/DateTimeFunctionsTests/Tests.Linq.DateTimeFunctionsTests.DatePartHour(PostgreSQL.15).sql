@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(hour from t."DateTimeValue")) as int)
+	Floor(Extract(hour From t."DateTimeValue"))::Int
 FROM
 	"LinqDataTypes" t
 
