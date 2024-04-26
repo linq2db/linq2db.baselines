@@ -42,7 +42,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

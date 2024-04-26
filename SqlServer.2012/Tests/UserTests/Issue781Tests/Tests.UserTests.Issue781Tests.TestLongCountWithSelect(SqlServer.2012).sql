@@ -2,7 +2,7 @@
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -23,7 +23,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT

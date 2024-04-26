@@ -60,7 +60,7 @@ DECLARE @dt2 DateTime2
 SET     @dt2 = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE
@@ -168,7 +168,7 @@ DECLARE @dt2NoMs DateTime2
 SET     @dt2NoMs = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 0, 7)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE

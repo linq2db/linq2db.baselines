@@ -17,7 +17,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [t1]
 

@@ -75,7 +75,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -139,7 +139,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
