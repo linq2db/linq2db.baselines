@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`Parent` `t1`
+	`Parent` `c_1`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`c_1`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -22,18 +22,18 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	(`t1`.`ParentID` = 1000 AND `t1`.`Value1` IS NULL OR `t1`.`ParentID` = 1001 AND `t1`.`Value1` IS NULL)
+	(`p`.`ParentID` = 1000 AND `p`.`Value1` IS NULL OR `p`.`ParentID` = 1001 AND `p`.`Value1` IS NULL)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`Parent` `t1`
+	`Parent` `c_1`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`c_1`.`ParentID` >= 1000
 

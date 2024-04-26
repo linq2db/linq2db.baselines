@@ -109,12 +109,12 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	GROUP_CONCAT(`t1`.`Value1` ORDER BY `t1`.`Value3`, `t1`.`Value1` DESC SEPARATOR ' -> ')
+	GROUP_CONCAT(`g_1`.`Value1` ORDER BY `g_1`.`Value3`, `g_1`.`Value1` DESC SEPARATOR ' -> ')
 FROM
-	`SampleClass` `t1`
+	`SampleClass` `g_1`
 GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value1`
+	`g_1`.`Id`,
+	`g_1`.`Value1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

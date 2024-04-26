@@ -60,8 +60,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @iteration Int32
 SET     @iteration = 2
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`e`.`Id`,
@@ -78,7 +76,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = @iteration
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

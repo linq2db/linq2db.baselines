@@ -3068,11 +3068,11 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`AllTypes` `_`
+	`AllTypes` `t1`
 WHERE
-	`_`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -3080,37 +3080,37 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	`_`.`ID`,
-	`_`.`bigintDataType`,
-	`_`.`smallintDataType`,
-	`_`.`tinyintDataType`,
-	`_`.`mediumintDataType`,
-	`_`.`intDataType`,
-	`_`.`numericDataType`,
-	`_`.`decimalDataType`,
-	`_`.`doubleDataType`,
-	`_`.`floatDataType`,
-	`_`.`dateDataType`,
-	`_`.`datetimeDataType`,
-	`_`.`timestampDataType`,
-	`_`.`timeDataType`,
-	`_`.`charDataType`,
-	`_`.`varcharDataType`,
-	`_`.`textDataType`,
-	`_`.`binaryDataType`,
-	`_`.`varbinaryDataType`,
-	`_`.`blobDataType`,
-	`_`.`bitDataType`,
-	`_`.`enumDataType`,
-	`_`.`setDataType`,
-	`_`.`intUnsignedDataType`,
-	`_`.`yearDataType`
+	`t1`.`ID`,
+	`t1`.`bigintDataType`,
+	`t1`.`smallintDataType`,
+	`t1`.`tinyintDataType`,
+	`t1`.`mediumintDataType`,
+	`t1`.`intDataType`,
+	`t1`.`numericDataType`,
+	`t1`.`decimalDataType`,
+	`t1`.`doubleDataType`,
+	`t1`.`floatDataType`,
+	`t1`.`dateDataType`,
+	`t1`.`datetimeDataType`,
+	`t1`.`timestampDataType`,
+	`t1`.`timeDataType`,
+	`t1`.`charDataType`,
+	`t1`.`varcharDataType`,
+	`t1`.`textDataType`,
+	`t1`.`binaryDataType`,
+	`t1`.`varbinaryDataType`,
+	`t1`.`blobDataType`,
+	`t1`.`bitDataType`,
+	`t1`.`enumDataType`,
+	`t1`.`setDataType`,
+	`t1`.`intUnsignedDataType`,
+	`t1`.`yearDataType`
 FROM
-	`AllTypes` `_`
+	`AllTypes` `t1`
 WHERE
-	`_`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest'
 ORDER BY
-	`_`.`ID`
+	`t1`.`ID`
 LIMIT @take
 
 BeforeExecute

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`Child` `t1`
+	`Child` `c_1`
 WHERE
-	`t1`.`ChildID` > 1000
+	`c_1`.`ChildID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
@@ -31,7 +31,7 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `c_1`
 WHERE
@@ -40,9 +40,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `c_1`
 FROM
-	`Child` `t1`
+	`Child` `c_1`
 WHERE
-	`t1`.`ChildID` > 1000
+	`c_1`.`ChildID` > 1000
 

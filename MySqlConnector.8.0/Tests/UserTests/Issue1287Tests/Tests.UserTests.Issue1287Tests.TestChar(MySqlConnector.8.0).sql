@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`_`.`charDataType`
+	`t1`.`charDataType`
 FROM
-	`AllTypes` `_`
+	`AllTypes` `t1`
 WHERE
-	`_`.`charDataType` = '1'
+	`t1`.`charDataType` = '1'
 

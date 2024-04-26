@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -23,7 +23,7 @@ INSERT INTO `Person`
 VALUES
 (
 	'Insert16',
-	Cast((Char_Length(@name) + @idx) as CHAR(11)),
+	CAST(Char_Length(@name) + @idx AS CHAR(11)),
 	'M'
 )
 
@@ -31,18 +31,18 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 

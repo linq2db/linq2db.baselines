@@ -31,16 +31,14 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`ID`
+	`t1`.`ID`
 FROM
-	`Issue1316Tests` `_`
+	`Issue1316Tests` `t1`
 WHERE
-	`_`.`ID` = @Id
-LIMIT @take
+	`t1`.`ID` = @Id
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

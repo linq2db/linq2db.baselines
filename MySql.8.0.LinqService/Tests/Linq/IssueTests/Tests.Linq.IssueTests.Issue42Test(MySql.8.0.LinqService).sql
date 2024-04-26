@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`ID`,
@@ -18,7 +16,27 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = 1
-LIMIT @take
+LIMIT 1
+
+BeforeExecute
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+
+SELECT
+	`r`.`ID`,
+	`r`.`MoneyValue`,
+	`r`.`DateTimeValue`,
+	`r`.`DateTimeValue2`,
+	`r`.`BoolValue`,
+	`r`.`GuidValue`,
+	`r`.`SmallIntValue`,
+	`r`.`IntValue`,
+	`r`.`BigIntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 1
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -62,8 +80,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`r`.`ID`,
@@ -80,7 +96,7 @@ FROM
 	`LinqDataTypes` `r`
 WHERE
 	`r`.`ID` = @ID
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -119,4 +135,24 @@ SET
 	`t1`.`StringValue` = @StringValue
 WHERE
 	`t1`.`ID` = @ID
+
+BeforeExecute
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+
+SELECT
+	`r`.`ID`,
+	`r`.`MoneyValue`,
+	`r`.`DateTimeValue`,
+	`r`.`DateTimeValue2`,
+	`r`.`BoolValue`,
+	`r`.`GuidValue`,
+	`r`.`SmallIntValue`,
+	`r`.`IntValue`,
+	`r`.`BigIntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 1
+LIMIT 1
 

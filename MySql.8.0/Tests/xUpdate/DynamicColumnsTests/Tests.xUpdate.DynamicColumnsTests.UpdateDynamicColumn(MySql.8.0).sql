@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender String(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -9,16 +15,16 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE
@@ -38,7 +44,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE

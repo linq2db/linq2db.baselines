@@ -34,8 +34,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`e`.`Id`,
@@ -44,12 +42,10 @@ FROM
 	`Issue1622Table` `e`
 WHERE
 	`e`.`SomeText` = 'Value1_suffix'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`e`.`Id`,
@@ -58,7 +54,7 @@ FROM
 	`Issue1622Table` `e`
 WHERE
 	`e`.`Id` = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
