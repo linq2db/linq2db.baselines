@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -65,7 +65,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -75,7 +75,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -85,7 +85,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -95,11 +95,11 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two] OR 0 = [i].[One] AND [i].[Two] IS NULL AND 3 <= [i].[Three])
+	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two])
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

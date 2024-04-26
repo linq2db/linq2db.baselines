@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
@@ -31,7 +31,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -40,9 +40,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
