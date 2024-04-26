@@ -25,11 +25,11 @@ DECLARE @from Integer -- Int32
 SET     @from = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."from" = @from
+	"from" = CAST(@from AS Int)
 WHERE
-	"testparams"."from" = 1
+	"t"."from" = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4

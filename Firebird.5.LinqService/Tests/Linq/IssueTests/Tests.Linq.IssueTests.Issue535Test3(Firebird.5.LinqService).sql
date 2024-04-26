@@ -48,7 +48,7 @@ SELECT
 	"cb"."Id",
 	"cb"."Name",
 	"cb"."ContactEmail",
-	Coalesce("cb"."Enabled", FALSE)
+	"cb"."Enabled"
 FROM
 	"CustomerBase" "cb"
 WHERE

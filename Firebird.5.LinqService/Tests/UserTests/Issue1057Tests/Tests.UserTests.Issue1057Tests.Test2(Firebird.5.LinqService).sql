@@ -61,8 +61,8 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS VARCHAR(12))
 )
 
 BeforeExecute
@@ -79,8 +79,8 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	@Id,
-	@TargetName
+	CAST(@Id AS Int),
+	CAST(@TargetName AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -100,9 +100,9 @@ INSERT INTO "TaskStage"
 )
 VALUES
 (
-	@Id,
-	@TaskId,
-	@Actual
+	CAST(@Id AS Int),
+	CAST(@TaskId AS Int),
+	CAST(@Actual AS BOOLEAN)
 )
 
 BeforeExecute
@@ -122,8 +122,8 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	"p"."Id",
 	"p"."TargetName",
+	"p"."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

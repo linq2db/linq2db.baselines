@@ -37,10 +37,6 @@ SELECT 'Value8' FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @skip Integer -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 1
 
 SELECT
 	"t1"."Value"
@@ -48,7 +44,7 @@ FROM
 	"TakeSkipClass" "t1"
 ORDER BY
 	"t1"."Value"
-OFFSET @skip ROWS FETCH NEXT @skip_1 ROWS ONLY 
+OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- Firebird.5 Firebird4

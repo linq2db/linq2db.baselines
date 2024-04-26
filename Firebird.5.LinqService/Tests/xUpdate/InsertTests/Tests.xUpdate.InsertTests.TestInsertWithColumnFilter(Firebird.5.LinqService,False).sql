@@ -15,17 +15,15 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(18)),
+	CAST(@LastName AS VARCHAR(8)),
+	CAST(@Gender AS Char(1))
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -37,7 +35,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

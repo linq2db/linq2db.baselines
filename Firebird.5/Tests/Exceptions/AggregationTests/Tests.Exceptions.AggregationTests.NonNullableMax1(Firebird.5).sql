@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Max("t1"."ParentID")
+	MAX("t1"."ParentID")
 FROM
 	"Parent" "t1"
 WHERE

@@ -10,9 +10,9 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 3 AS "PersonID" FROM rdb$database
+			SELECT 3 AS ID FROM rdb$database
 			UNION ALL
-			SELECT 4 FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 4 FROM rdb$database) "n" ON "p"."PersonID" = "n".ID
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 5 AS "PersonID" FROM rdb$database
+			SELECT 5 AS ID FROM rdb$database
 			UNION ALL
-			SELECT 6 FROM rdb$database) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 6 FROM rdb$database) "n" ON "p"."PersonID" = "n".ID
 

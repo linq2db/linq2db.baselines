@@ -32,7 +32,7 @@ INSERT INTO "PKOnlyTable"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -40,15 +40,15 @@ BeforeExecute
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (
-	SELECT 1 AS ID FROM rdb$database
+	SELECT 1 AS "source_ID" FROM rdb$database
 	UNION ALL
 	SELECT 2 FROM rdb$database
 	UNION ALL
 	SELECT 3 FROM rdb$database) "Source"
 (
-	ID
+	"source_ID"
 )
-ON ("Target".ID = "Source".ID)
+ON ("Target".ID = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -57,7 +57,7 @@ INSERT
 )
 VALUES
 (
-	"Source".ID
+	"Source"."source_ID"
 )
 
 BeforeExecute
