@@ -1,18 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
-		SELECT TOP (@take)
-			[r].[GuidValue]
+		SELECT TOP (1)
+			IIF([r].[GuidValue] IS NOT NULL, 1, 0)
 		FROM
 			[LinqDataTypes] [r]
-	) IS NOT NULL
+	) = 1
 

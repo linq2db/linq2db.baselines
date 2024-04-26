@@ -226,22 +226,24 @@ BeforeExecute
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[_].[Id] as [OtherId],
-		[_].[Id] + [_].[Id] as [OtherField3],
-		[_].[Field2] as [OtherField2],
-		[_].[Field1] as [OtherField1],
-		[_].[Field5] as [OtherField5]
+		[t1].[Id] as [source_OtherId],
+		[t1].[Id] + [t1].[Id] as [source_OtherField3],
+		[t1].[Field2] as [source_OtherField2],
+		[t1].[Field1] as [source_OtherField1],
+		[t1].[Id] + [t1].[Id] as [source_OtherField4],
+		[t1].[Field5] as [source_OtherField5]
 	FROM
-		[TestMerge2] [_]
+		[TestMerge2] [t1]
 ) [Source]
 (
-	[OtherId],
-	[OtherField3],
-	[OtherField2],
-	[OtherField1],
-	[OtherField5]
+	[source_OtherId],
+	[source_OtherField3],
+	[source_OtherField2],
+	[source_OtherField1],
+	[source_OtherField4],
+	[source_OtherField5]
 )
-ON ([Target].[Id] = [Source].[OtherId])
+ON ([Target].[Id] = [Source].[source_OtherId])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -255,12 +257,12 @@ INSERT
 )
 VALUES
 (
-	[Source].[OtherId],
-	[Source].[OtherField3],
-	[Source].[OtherField2],
-	[Source].[OtherField1],
-	[Source].[OtherField3],
-	[Source].[OtherField5]
+	[Source].[source_OtherId],
+	[Source].[source_OtherField3],
+	[Source].[source_OtherField2],
+	[Source].[source_OtherField1],
+	[Source].[source_OtherField4],
+	[Source].[source_OtherField5]
 )
 ;
 

@@ -29,7 +29,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -57,7 +57,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,7 +74,7 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -93,7 +93,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -121,7 +121,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -138,7 +138,7 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

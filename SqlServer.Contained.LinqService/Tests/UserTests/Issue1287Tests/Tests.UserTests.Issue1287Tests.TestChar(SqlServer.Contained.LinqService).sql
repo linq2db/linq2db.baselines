@@ -2,9 +2,9 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[_].[charDataType]
+	[t1].[charDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[charDataType] = N'1'
+	[t1].[charDataType] = N'1'
 

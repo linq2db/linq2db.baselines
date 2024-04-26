@@ -33,13 +33,21 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Sum([selectParam].[YearsExperience])
+	[it_1].[c1],
+	[it_1].[Title],
+	SUM([it_1].[Value_1])
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			N'Title' as [c1],
+			[it].[Title],
+			[it].[YearsExperience] as [Value_1]
+		FROM
+			[odata_person] [it]
+	) [it_1]
 GROUP BY
-	[selectParam].[Title]
+	[it_1].[c1],
+	[it_1].[Title]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
