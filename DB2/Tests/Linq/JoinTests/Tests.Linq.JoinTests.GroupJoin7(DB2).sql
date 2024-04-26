@@ -6,9 +6,9 @@ DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 
 SELECT
-	"key_data_result"."ParentID",
-	"_gjd_c"."ParentID",
-	"_gjd_c"."ChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,8 +17,8 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "_gjd_c" ON "_gjd_c"."ParentID" - @n = "key_data_result"."ParentID"
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID" - CAST(@n AS Int)
 
 BeforeExecute
 DisposeTransaction

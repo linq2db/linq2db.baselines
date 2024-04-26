@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."LastName"
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 

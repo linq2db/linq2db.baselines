@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -26,10 +26,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS NChar(1)),
+	CAST(@Name_FirstName AS NVarChar(2)),
+	CAST(@Name_MiddleName AS NVarChar(255)),
+	CAST(@Name_LastName AS NVarChar(2))
 )
 
 BeforeExecute

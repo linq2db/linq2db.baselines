@@ -2,73 +2,28 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"m_1"."FirstName",
+	"d"."FirstName",
+	"d"."PersonID",
+	"d"."LastName",
+	"d"."MiddleName",
+	"d"."Gender"
+FROM
+	(
+		SELECT DISTINCT
+			"t1"."FirstName"
+		FROM
+			"Person" "t1"
+	) "m_1"
+		INNER JOIN "Person" "d" ON "m_1"."FirstName" = "d"."FirstName"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
 	"t1"."FirstName"
 FROM
 	"Person" "t1"
 GROUP BY
 	"t1"."FirstName"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'Jane'
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."FirstName" = @FirstName
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."FirstName" = @FirstName
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(6) -- String
-SET     @FirstName = 'Jürgen'
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."FirstName" = @FirstName
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(6) -- String
-SET     @FirstName = 'Tester'
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."FirstName" = @FirstName
 

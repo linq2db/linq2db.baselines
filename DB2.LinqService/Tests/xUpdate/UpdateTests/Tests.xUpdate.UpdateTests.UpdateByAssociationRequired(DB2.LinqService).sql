@@ -34,8 +34,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS NVarChar(7))
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS NVarChar(7))
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	@Id,
-	@Field
+	CAST(@Id AS Int),
+	CAST(@Field AS NVarChar(7))
 )
 
 BeforeExecute
@@ -106,7 +106,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -120,7 +120,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -131,18 +131,18 @@ SET     @id = 3
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = 'test'
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"MainTable" "_"
-				INNER JOIN "AssociatedTable" "a_AssociatedRequired" ON "_"."Id" = "a_AssociatedRequired"."Id"
-				INNER JOIN "MainTable" "a_MainRequired" ON "a_AssociatedRequired"."Id" = "a_MainRequired"."Id"
+			"MainTable" "t1"
+				INNER JOIN "AssociatedTable" "a_AssociatedRequired" ON "t1"."Id" = "a_AssociatedRequired"."Id"
+				LEFT JOIN "MainTable" "a_MainRequired" ON "a_AssociatedRequired"."Id" = "a_MainRequired"."Id"
 		WHERE
-			"_"."Id" = @id AND "MainTable"."Id" = "_"."Id" AND
-			("MainTable"."Field" = "_"."Field" OR "MainTable"."Field" IS NULL AND "_"."Field" IS NULL)
+			"t1"."Id" = @id AND "MainTable"."Id" = "a_MainRequired"."Id" AND
+			("MainTable"."Field" = "a_MainRequired"."Field" OR "MainTable"."Field" IS NULL AND "a_MainRequired"."Field" IS NULL)
 	)
 
 BeforeExecute

@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("t1"."ParentID")
+	MAX("t1"."ParentID")
 FROM
 	(
 		SELECT DISTINCT

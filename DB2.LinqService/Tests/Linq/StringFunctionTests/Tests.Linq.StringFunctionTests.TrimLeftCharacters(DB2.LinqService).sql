@@ -2,11 +2,10 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."PersonID",
-	"p"."FirstName"
+	"pp"."PersonID",
+	'  ' || "pp"."FirstName" || ' '
 FROM
-	"Person" "p"
+	"Person" "pp"
 WHERE
-	LTRIM(('  ' || "p"."FirstName" || ' '), ' J') = 'ohn ' AND
-	"p"."PersonID" = 1
+	"pp"."PersonID" = 1 AND LTRIM(('  ' || "pp"."FirstName" || ' '), (' J')) = 'ohn '
 

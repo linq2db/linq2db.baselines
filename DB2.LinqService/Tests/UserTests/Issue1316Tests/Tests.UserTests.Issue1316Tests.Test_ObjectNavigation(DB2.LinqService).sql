@@ -32,7 +32,7 @@ INSERT INTO "Issue1316Tests"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -41,11 +41,11 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
 
 SELECT
-	"_".ID
+	"t1".ID
 FROM
-	"Issue1316Tests" "_"
+	"Issue1316Tests" "t1"
 WHERE
-	"_".ID = @Id
+	"t1".ID = @Id
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

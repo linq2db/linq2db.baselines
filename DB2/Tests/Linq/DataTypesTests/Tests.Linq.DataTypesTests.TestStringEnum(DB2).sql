@@ -85,9 +85,9 @@ INSERT INTO "StringEnumTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS NVarChar(5)),
+	CAST(@ColumnNullable AS NVarChar(8))
 )
 
 BeforeExecute
@@ -107,9 +107,9 @@ INSERT INTO "StringEnumTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS NVarChar(7)),
+	CAST(@ColumnNullable AS NVarChar(8))
 )
 
 BeforeExecute

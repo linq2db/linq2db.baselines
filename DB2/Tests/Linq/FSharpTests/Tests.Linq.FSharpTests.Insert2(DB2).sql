@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("p"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "p"
+	"Person" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -26,10 +26,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS NVarChar(1)),
+	CAST(@Name_FirstName AS NVarChar(2)),
+	CAST(@Name_MiddleName AS NVarChar(8168)),
+	CAST(@Name_LastName AS NVarChar(2))
 )
 
 BeforeExecute
@@ -37,10 +37,10 @@ BeforeExecute
 
 SELECT
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
@@ -51,7 +51,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "t"
 WHERE
-	"t1"."PersonID" > 4
+	"t"."PersonID" > 4
 
