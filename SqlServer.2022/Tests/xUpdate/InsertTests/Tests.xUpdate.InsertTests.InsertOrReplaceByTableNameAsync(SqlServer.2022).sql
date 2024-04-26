@@ -74,7 +74,7 @@ BeforeExecute
 -- SqlServer.2022 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -138,7 +138,7 @@ BeforeExecute
 -- SqlServer.2022 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

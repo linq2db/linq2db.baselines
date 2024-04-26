@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE
@@ -145,7 +145,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE

@@ -202,7 +202,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[ValueConversion] [t1]
 

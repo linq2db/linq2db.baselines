@@ -43,7 +43,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

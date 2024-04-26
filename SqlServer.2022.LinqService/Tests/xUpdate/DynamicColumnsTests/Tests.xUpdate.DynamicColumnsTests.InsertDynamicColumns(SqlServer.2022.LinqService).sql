@@ -24,7 +24,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE
