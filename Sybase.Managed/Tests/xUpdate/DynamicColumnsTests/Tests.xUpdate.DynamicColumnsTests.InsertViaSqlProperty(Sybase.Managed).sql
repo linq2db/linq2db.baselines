@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -10,7 +12,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1,
+	@ParentID,
 	@id
 )
 

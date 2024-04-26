@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @FirstName UniVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName UniVarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender UniChar(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -9,9 +15,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
@@ -30,11 +36,9 @@ BeforeExecute
 UPDATE
 	[Person]
 SET
-	[c_1].[FirstName] = 'Johnny'
-FROM
-	[Person] [c_1]
+	[FirstName] = 'Johnny'
 WHERE
-	[c_1].[LastName] = 'Limonadovy'
+	[Person].[LastName] = 'Limonadovy'
 
 BeforeExecute
 -- Sybase.Managed Sybase

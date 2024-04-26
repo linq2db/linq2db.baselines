@@ -31,7 +31,7 @@ SET     @Name_1 = 'John'
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name
+	[Name] = @Name
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -75,7 +75,7 @@ SET     @Name_1 = 'John'
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name
+	[Name] = @Name
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE

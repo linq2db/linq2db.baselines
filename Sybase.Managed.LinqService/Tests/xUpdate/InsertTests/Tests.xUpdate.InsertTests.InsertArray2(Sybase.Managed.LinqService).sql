@@ -3,9 +3,9 @@
 
 DELETE FROM [LinqDataTypes]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -46,7 +46,7 @@ BeforeExecute
 
 DELETE FROM [LinqDataTypes]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 

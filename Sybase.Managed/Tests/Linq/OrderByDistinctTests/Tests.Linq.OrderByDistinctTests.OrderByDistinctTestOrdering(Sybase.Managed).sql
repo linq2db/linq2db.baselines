@@ -37,14 +37,10 @@ SELECT 100,'Three',1,1
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1])
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -59,14 +55,10 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -81,15 +73,10 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Min([x].[OrderData2])
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -105,15 +92,10 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -129,15 +111,10 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1]) DESC,
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -153,15 +130,10 @@ ORDER BY
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]),
-	Max([x].[OrderData2]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase

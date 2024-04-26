@@ -51,12 +51,10 @@ SET     @ClaimedKeyTypeN = 'EC'
 UPDATE
 	[Issue1554Table]
 SET
-	[p].[ClaimedKeyType] = @ClaimedKeyType,
-	[p].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
-FROM
-	[Issue1554Table] [p]
+	[ClaimedKeyType] = @ClaimedKeyType,
+	[ClaimedKeyTypeN] = @ClaimedKeyTypeN
 WHERE
-	[p].[Id] = 0
+	[Issue1554Table].[Id] = 0
 
 BeforeExecute
 -- Sybase.Managed Sybase

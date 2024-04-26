@@ -3,12 +3,14 @@
 
 DELETE FROM [Child]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -19,7 +21,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1,
+	@ParentID,
 	@id
 )
 
@@ -40,7 +42,7 @@ BeforeExecute
 
 DELETE FROM [Child]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

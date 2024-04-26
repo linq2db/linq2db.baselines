@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Time, Convert(VarChar(11), DatePart(hour, [t].[DateTimeValue])) + ':01:01')
+	CAST(CAST(DatePart(hour, [t].[DateTimeValue]) AS VarChar(11)) + ':01:01' AS Time)
 FROM
 	[LinqDataTypes] [t]
 

@@ -27,7 +27,7 @@ SET     @Diagnosis_1 = 'ABC1'
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -59,7 +59,7 @@ SET     @Diagnosis_1 = 'ABC2'
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -99,7 +99,7 @@ SET     @Diagnosis_1 = 'ABC1'
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -131,7 +131,7 @@ SET     @Diagnosis_1 = 'ABC2'
 UPDATE
 	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE

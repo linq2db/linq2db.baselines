@@ -96,12 +96,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[Id],
 	[t1].[Discriminator],
-	[t1].[Value1],
-	[t1].[Value2],
+	[t1].[Id],
 	[t1].[Value3],
-	[t1].[NullableBool]
+	[t1].[NullableBool],
+	[t1].[Value2],
+	[t1].[Value1]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -111,12 +111,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -126,12 +126,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -141,12 +141,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -156,12 +156,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -171,12 +171,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -186,12 +186,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[Id],
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE

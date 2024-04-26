@@ -34,11 +34,9 @@ SET     @idx = 4
 UPDATE
 	[Person]
 SET
-	[_].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
-FROM
-	[Person] [_]
+	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
 WHERE
-	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
+	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -46,7 +44,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

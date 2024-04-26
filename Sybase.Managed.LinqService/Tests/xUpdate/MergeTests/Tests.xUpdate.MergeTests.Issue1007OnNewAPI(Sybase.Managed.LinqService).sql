@@ -23,18 +23,18 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Max([_].[Id])
+	MAX([t1].[Id])
 FROM
-	[TestMergeIdentity] [_]
+	[TestMergeIdentity] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMergeIdentity] [Target]
 USING (
-	SELECT 10 AS [Field]) [Source]
+	SELECT 10 AS [source_Field]) [Source]
 (
-	[Field]
+	[source_Field]
 )
 ON ([Target].[Field] IS NULL)
 
@@ -45,13 +45,13 @@ INSERT
 )
 VALUES
 (
-	[Source].[Field]
+	[Source].[source_Field]
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Field] = [Source].[Field]
+	[Field] = [Source].[source_Field]
 
 BeforeExecute
 -- Sybase.Managed Sybase

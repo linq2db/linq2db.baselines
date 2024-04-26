@@ -41,7 +41,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -71,7 +71,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -101,7 +101,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE

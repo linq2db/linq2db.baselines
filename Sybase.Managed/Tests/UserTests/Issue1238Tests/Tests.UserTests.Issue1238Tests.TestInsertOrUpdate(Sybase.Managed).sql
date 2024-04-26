@@ -13,7 +13,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -50,7 +50,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE

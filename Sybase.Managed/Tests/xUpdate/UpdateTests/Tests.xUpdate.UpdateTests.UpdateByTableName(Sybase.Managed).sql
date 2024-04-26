@@ -80,14 +80,12 @@ SET     @ID = 1
 UPDATE
 	[xxPerson]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName,
-	[t1].[Gender] = @Gender
-FROM
-	[xxPerson] [t1]
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
-	[t1].[PersonID] = @ID
+	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase

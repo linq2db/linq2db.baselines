@@ -2,10 +2,10 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[_p].[ParentID],
-	[_p].[Value1]
+	[p].[ParentID],
+	[p].[Value1]
 FROM
-	[Parent] [_p]
+	[Parent] [p]
 WHERE
-	[_p].[ParentID] = 3
+	[p].[ParentID] = 3
 

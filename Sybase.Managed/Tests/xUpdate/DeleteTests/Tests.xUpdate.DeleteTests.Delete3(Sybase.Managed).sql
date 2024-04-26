@@ -3,9 +3,9 @@
 
 DELETE FROM [Child]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] IN (1001, 1002)
+	[c_1].[ChildID] IN (1001, 1002)
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -36,7 +36,7 @@ SET     @Value_1 = 10
 UPDATE
 	[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[Issue681Table] [t1]
 WHERE
@@ -68,7 +68,7 @@ SET     @Value_1 = 10
 UPDATE
 	[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[Issue681Table] [t1]
 WHERE

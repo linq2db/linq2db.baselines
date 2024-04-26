@@ -36,11 +36,9 @@ SET     @ParentID = 1001
 UPDATE
 	[Parent]
 SET
-	[t1].[ParentID] = [t1].[ParentID] + 1
-FROM
-	[Parent] [t1]
+	[ParentID] = [Parent].[ParentID] + 1
 WHERE
-	[t1].[ParentID] = @ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)

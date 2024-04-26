@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	DateAdd(quarter, -1, [t].[DateTimeValue])
+	CONVERT(Date, DateAdd(quarter, -1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

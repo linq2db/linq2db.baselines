@@ -21,6 +21,11 @@ IF (OBJECT_ID(N'test_temp') IS NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
+TRUNCATE TABLE [test_temp]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 INSERT INTO [test_temp]
 (
 	[Field1]

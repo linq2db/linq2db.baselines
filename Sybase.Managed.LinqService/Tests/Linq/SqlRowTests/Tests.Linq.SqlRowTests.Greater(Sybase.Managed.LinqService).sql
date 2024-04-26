@@ -102,7 +102,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	(2 > [i].[One] OR 2 = [i].[One] AND NULL > [i].[Two] OR 2 = [i].[One] AND [i].[Two] IS NULL AND 3 > [i].[Three])
+	(2 > [i].[One] OR 2 = [i].[One] AND NULL > [i].[Two])
 
 BeforeExecute
 -- Sybase.Managed Sybase

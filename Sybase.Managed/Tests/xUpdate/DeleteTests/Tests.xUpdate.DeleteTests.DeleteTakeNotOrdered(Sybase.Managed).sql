@@ -3,9 +3,9 @@
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -201,7 +201,7 @@ BeforeExecute
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

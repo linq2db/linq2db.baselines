@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	DateAdd(dayofyear, 3, [t].[DateTimeValue])
+	CONVERT(Date, DateAdd(dayofyear, 3, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

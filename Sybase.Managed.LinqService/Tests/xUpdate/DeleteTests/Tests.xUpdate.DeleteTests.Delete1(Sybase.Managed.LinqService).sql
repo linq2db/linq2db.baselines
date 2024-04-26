@@ -46,9 +46,9 @@ SET     @ParentID = 1001
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
