@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 SELECT
 	t1."ParentID",
@@ -23,16 +19,8 @@ FROM
 					LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
 			WHERE
 				c_1."ChildID" = s."ChildID"
-			FETCH NEXT :take ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) t1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			"Child" c_2
-		WHERE
-			c_2."ChildID" = s."ChildID"
-		FETCH NEXT :take_1 ROWS ONLY
-	) IS NOT NULL
+	t1."ParentID" IS NOT NULL
 
