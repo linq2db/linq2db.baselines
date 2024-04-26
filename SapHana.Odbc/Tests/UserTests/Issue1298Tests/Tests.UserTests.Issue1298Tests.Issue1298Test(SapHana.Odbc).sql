@@ -112,18 +112,18 @@ SET     @take = 2
 
 SELECT
 	"x"."ref1",
-	"t1"."asdfgh",
-	"t1"."is_empty"
+	"t1"."asdfgh"
 FROM
 	"mega_composites" "x"
-		LEFT JOIN (
+		LEFT JOIN LATERAL (
 			SELECT
-				"q"."asdfgh",
-				1 as "is_empty",
-				"q"."Id"
+				"q"."asdfgh"
 			FROM
 				"qwerty" "q"
-		) "t1" ON "t1"."Id" = "x"."ref1"
+			WHERE
+				"q"."Id" = "x"."ref1"
+			LIMIT 1
+		) "t1" ON 1=1
 LIMIT ?
 
 BeforeExecute

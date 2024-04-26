@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."FirstName" LIKE 'Insert14%' ESCAPE '~'
+	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -43,7 +43,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."FirstName" LIKE 'Insert14%' ESCAPE '~'
+	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 

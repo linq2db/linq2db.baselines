@@ -1,45 +1,24 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 10
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"_c"."ParentID",
-	"_c"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"t1"."ParentID",
-			"t1"."Value1"
-		FROM
-			(
-				SELECT
-					"p"."ParentID",
-					"p"."Value1"
-				FROM
-					"Parent" "p"
-				LIMIT ?
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Child" "_c" ON "_c"."ParentID" = "key_data_result"."ParentID"
-ORDER BY
-	"_c"."ChildID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 10
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
 	"Parent" "p"
+		LEFT JOIN LATERAL (
+			SELECT
+				"c_1"."ParentID",
+				"c_1"."ChildID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" = "p"."ParentID"
+			ORDER BY
+				"c_1"."ChildID"
+			LIMIT 1
+		) "t1" ON 1=1
 LIMIT ?
 
