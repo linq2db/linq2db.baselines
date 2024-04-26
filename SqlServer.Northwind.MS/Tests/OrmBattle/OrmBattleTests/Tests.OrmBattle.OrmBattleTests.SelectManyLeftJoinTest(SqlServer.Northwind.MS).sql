@@ -7,5 +7,5 @@ SELECT
 	[c_1].[CompanyName]
 FROM
 	[Customers] [c_1]
-		LEFT JOIN [Orders] [o] ON ([c_1].[CustomerID] = [o].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+		LEFT JOIN [Orders] [o] ON [c_1].[CustomerID] = [o].[CustomerID]
 

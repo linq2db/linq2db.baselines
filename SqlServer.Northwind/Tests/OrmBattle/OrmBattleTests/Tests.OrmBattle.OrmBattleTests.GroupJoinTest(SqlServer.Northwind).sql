@@ -4,21 +4,21 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Orders] [t1]
-				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			[Orders] [o]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			([c_1].[CustomerID] = [a_Customer].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			[t1].[CustomerID] = [a_Customer].[CustomerID]
 	),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Employees] [t2]
+			[Employees] [e]
 		WHERE
-			([c_1].[City] = [t2].[City] OR [c_1].[City] IS NULL AND [t2].[City] IS NULL)
+			([t1].[City] = [e].[City] OR [t1].[City] IS NULL AND [e].[City] IS NULL)
 	)
 FROM
-	[Customers] [c_1]
+	[Customers] [t1]
 

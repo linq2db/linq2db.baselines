@@ -2,7 +2,7 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	Sum([o].[Freight])
+	SUM([o].[Freight])
 FROM
 	[Orders] [o]
 
