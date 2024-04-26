@@ -128,7 +128,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_35" "t1"
 
@@ -136,7 +136,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_35" "p"
 WHERE

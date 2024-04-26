@@ -6,7 +6,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 5
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
