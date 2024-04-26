@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"pat"."PersonID",
@@ -23,7 +21,7 @@ WHERE
 					"per"."PersonID" = "pat"."PersonID"
 				ORDER BY
 					"per"."FirstName" DESC
-				FETCH NEXT @take ROWS ONLY
+				FETCH NEXT 1 ROWS ONLY
 			) "t1"
 		WHERE
 			"t1"."Diagnosis" LIKE '%with%' ESCAPE '~'

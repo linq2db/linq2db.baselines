@@ -11,7 +11,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	@id
+	CAST(@id AS Int)
 )
 
 BeforeExecute
@@ -36,7 +36,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = @ChildID
+	"ChildID" = CAST(@ChildID AS Int)
 WHERE
 	EXISTS(
 		SELECT

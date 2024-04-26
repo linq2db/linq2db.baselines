@@ -42,10 +42,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -94,10 +94,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute
@@ -120,10 +120,10 @@ INSERT INTO "Issue3830TestTable"
 )
 VALUES
 (
-	@Id,
-	@Bool1,
-	@Bool2,
-	@Bool3
+	CAST(@Id AS Int),
+	CAST(@Bool1 AS Char(1)),
+	CAST(@Bool2 AS Char(1)),
+	CAST(@Bool3 AS Char(1))
 )
 
 BeforeExecute

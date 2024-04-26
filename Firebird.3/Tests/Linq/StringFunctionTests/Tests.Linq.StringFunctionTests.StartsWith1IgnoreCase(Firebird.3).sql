@@ -16,6 +16,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	(Lower("p"."FirstName") NOT STARTING WITH 'joh') AND
+	Lower("p"."FirstName") NOT STARTING WITH 'joh' AND
 	"p"."PersonID" = 1
 

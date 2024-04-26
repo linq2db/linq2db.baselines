@@ -18,7 +18,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM rdb$database) "s
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."TypeDiscriminator" = 1
+		"TypeDiscriminator" = 1
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -53,7 +53,7 @@ USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM rdb$database) "s
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."TypeDiscriminator" = 1
+		"TypeDiscriminator" = 1
 WHEN NOT MATCHED THEN
 	INSERT
 	(

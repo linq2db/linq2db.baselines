@@ -2,77 +2,65 @@
 -- Firebird.3 Firebird3
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Real)
+	CAST(@value AS Real)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Real)
+	CAST(@value AS Real)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Double
 SET     @value = 6579.6464800000003
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Real)
+	CAST(@value AS Real)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Float)
+	CAST(@value AS Float)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Float)
+	CAST(@value AS Float)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Double
 SET     @value = 6579.6464800000003
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(@value as Float)
+	CAST(@value AS Float)
 FROM
 	"LinqDataTypes" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

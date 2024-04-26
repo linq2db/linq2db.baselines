@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Cast(("t"."MoneyValue" * 1000) as Decimal)
+	CAST("t"."MoneyValue" * 1000 AS Decimal)
 FROM
 	"LinqDataTypes" "t"
 

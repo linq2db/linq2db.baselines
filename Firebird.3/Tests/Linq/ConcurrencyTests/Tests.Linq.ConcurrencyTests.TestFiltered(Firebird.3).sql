@@ -40,9 +40,9 @@ INSERT INTO "ConcurrencyFiltered"
 )
 VALUES
 (
-	@Id,
-	@Stamp,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Stamp AS Int),
+	CAST(@Value AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -65,13 +65,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyFiltered"
+	"ConcurrencyFiltered" "r"
 SET
-	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = @Value
+	"Stamp" = "r"."Stamp" + 1,
+	"Value" = CAST(@Value AS VARCHAR(7))
 WHERE
-	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = @Id AND
-	"ConcurrencyFiltered"."Stamp" = @Stamp
+	"r"."Id" = 2 AND "r"."Id" = @Id AND "r"."Stamp" = @Stamp
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -93,13 +92,12 @@ DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyFiltered"
+	"ConcurrencyFiltered" "r"
 SET
-	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = @Value
+	"Stamp" = "r"."Stamp" + 1,
+	"Value" = CAST(@Value AS VARCHAR(7))
 WHERE
-	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = @Id AND
-	"ConcurrencyFiltered"."Stamp" = @Stamp
+	"r"."Id" = 1 AND "r"."Id" = @Id AND "r"."Stamp" = @Stamp
 
 BeforeExecute
 -- Firebird.3 Firebird3

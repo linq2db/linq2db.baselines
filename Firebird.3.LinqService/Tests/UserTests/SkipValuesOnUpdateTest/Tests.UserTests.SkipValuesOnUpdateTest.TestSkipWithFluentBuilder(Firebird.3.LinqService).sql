@@ -40,15 +40,13 @@ INSERT INTO "PR_1598_Update_Fluent_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(1)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -58,7 +56,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -70,17 +68,15 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table"
+	"PR_1598_Update_Fluent_Table" "t1"
 SET
-	"PR_1598_Update_Fluent_Table"."Name" = @Name,
-	"PR_1598_Update_Fluent_Table"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(6)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Update_Fluent_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -90,7 +86,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -100,16 +96,14 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table"
+	"PR_1598_Update_Fluent_Table" "t1"
 SET
-	"PR_1598_Update_Fluent_Table"."Name" = @Name
+	"Name" = CAST(@Name AS VARCHAR(4))
 WHERE
-	"PR_1598_Update_Fluent_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -119,7 +113,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
