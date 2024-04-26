@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
-SET     @GuidValue = '0ca02079-6622-4142-b955-9359b619a6bb'
+SET     @GuidValue = 'e4360f2b-ba33-4210-ab72-dd5cbff3eecc'
 
 SELECT
 	"p"."GuidValue"

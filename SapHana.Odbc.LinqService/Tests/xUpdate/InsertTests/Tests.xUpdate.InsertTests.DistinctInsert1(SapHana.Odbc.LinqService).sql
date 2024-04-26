@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
-SET     @GuidValue = '31ceb0fe-111b-49a1-955c-1c0611f280e4'
+SET     @GuidValue = '3d6a12bd-3fa1-42ad-ac31-9a6b03e8f415'
 
 INSERT INTO "LinqDataTypes"
 (

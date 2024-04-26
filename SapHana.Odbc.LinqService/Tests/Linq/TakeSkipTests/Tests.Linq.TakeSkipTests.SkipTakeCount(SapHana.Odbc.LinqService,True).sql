@@ -6,7 +6,7 @@ DECLARE @skip  -- Int32
 SET     @skip = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT

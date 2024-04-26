@@ -48,7 +48,7 @@ DECLARE @part2  -- Int32
 SET     @part2 = 4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE

@@ -47,7 +47,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
@@ -78,7 +78,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
