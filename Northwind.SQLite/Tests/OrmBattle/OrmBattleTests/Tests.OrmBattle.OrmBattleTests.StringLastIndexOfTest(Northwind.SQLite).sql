@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 4
-DECLARE @take  -- Int32
-SET     @take = 1
+DECLARE @p NVarChar(1) -- String
+SET     @p = 't'
 
 SELECT
 	[c_1].[CustomerID],
@@ -20,10 +18,7 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	CASE
-		WHEN CharIndex('t', LeftStr([c_1].[City], 4), 2) = 0
-			THEN -1
-		ELSE @Length - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3)))
-	END = 3
-LIMIT @take
+	4 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3))) = 3 AND
+	(CharIndex(@p, LeftStr([c_1].[City], 4), 2) <> 0 OR CharIndex(@p, LeftStr([c_1].[City], 4), 2) IS NULL)
+LIMIT 1
 

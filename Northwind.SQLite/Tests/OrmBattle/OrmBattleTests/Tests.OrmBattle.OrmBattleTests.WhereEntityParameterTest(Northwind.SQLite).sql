@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[OrderID],
@@ -22,7 +20,7 @@ FROM
 	[Orders] [t1]
 ORDER BY
 	[t1].[OrderDate]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite

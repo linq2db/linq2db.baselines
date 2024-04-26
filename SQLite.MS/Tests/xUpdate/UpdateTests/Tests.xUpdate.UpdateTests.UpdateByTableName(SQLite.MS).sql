@@ -45,14 +45,12 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[FirstName],
@@ -62,7 +60,7 @@ SELECT
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -89,8 +87,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[FirstName],
@@ -100,7 +96,7 @@ SELECT
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

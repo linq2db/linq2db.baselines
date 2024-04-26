@@ -2,9 +2,14 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as INTEGER)
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST([p].[MoneyValue] AS INTEGER) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Cast([t].[MoneyValue] as INTEGER) > 0
+	[p_1].[c1] > 0
 

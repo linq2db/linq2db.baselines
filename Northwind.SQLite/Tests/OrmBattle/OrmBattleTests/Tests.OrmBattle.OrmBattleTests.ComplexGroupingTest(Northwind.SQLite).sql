@@ -4,24 +4,24 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[c_1].[CustomerID],
-	[detail].[OrderDate],
-	[detail].[OrderID],
-	[detail].[CustomerID],
-	[detail].[EmployeeID],
-	[detail].[RequiredDate],
-	[detail].[ShippedDate],
-	[detail].[ShipVia],
-	[detail].[Freight],
-	[detail].[ShipName],
-	[detail].[ShipAddress],
-	[detail].[ShipCity],
-	[detail].[ShipRegion],
-	[detail].[ShipPostalCode],
-	[detail].[ShipCountry]
+	[m_1].[CustomerID],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
 FROM
-	[Customers] [c_1]
-		INNER JOIN [Orders] [detail] ON ([c_1].[CustomerID] = [detail].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
+	[Customers] [m_1]
+		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
 
 BeforeExecute
 DisposeTransaction

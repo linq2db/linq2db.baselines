@@ -32,7 +32,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -42,7 +42,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

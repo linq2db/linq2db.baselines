@@ -69,37 +69,33 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id1  -- Int32
 SET     @id1 = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id1
-LIMIT @take
+	[t1].[PersonID] = @id1
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id2  -- Int32
 SET     @id2 = 6
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id2
-LIMIT @take
+	[t1].[PersonID] = @id2
+LIMIT 1
 

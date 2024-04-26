@@ -41,11 +41,11 @@ DECLARE @ts VarChar(12) -- AnsiString
 SET     @ts = '17:54:55.123'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnTS] = @ts
+	CAST([r].[ColumnTS] AS Time) = CAST(@ts AS Time)
 
 BeforeExecute
 -- SQLite.MS SQLite

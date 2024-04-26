@@ -54,33 +54,18 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	[q].[Id],
-	[q].[Value_2],
-	[q].[Value_3]
+SELECT DISTINCT
+	[c_1].[Id],
+	CASE
+		WHEN [c_1].[Id] IS NOT NULL THEN [c_1].[Value]
+		WHEN [q].[MainValue] IS NOT NULL THEN [q].[MainValue]
+		ELSE ''
+	END
 FROM
-	(
-		SELECT DISTINCT
-			[c_1].[Id],
-			CASE
-				WHEN ([c_1].[Id] IS NOT NULL OR [c_1].[Value] IS NOT NULL)
-					THEN [c_1].[Value]
-				WHEN [m_1].[MainValue] IS NOT NULL
-					THEN [m_1].[MainValue]
-				ELSE ''
-			END as [Value_1],
-			[c_1].[Value] as [Value_2],
-			CASE
-				WHEN [m_1].[MainValue] IS NOT NULL
-					THEN [m_1].[MainValue]
-				ELSE ''
-			END as [Value_3]
-		FROM
-			[MainEntityObject] [m_1]
-				LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
-	) [q]
+	[MainEntityObject] [q]
+		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [q].[Id]
 WHERE
-	[q].[Id] % 2 = 0
+	[c_1].[Id] % 2 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite

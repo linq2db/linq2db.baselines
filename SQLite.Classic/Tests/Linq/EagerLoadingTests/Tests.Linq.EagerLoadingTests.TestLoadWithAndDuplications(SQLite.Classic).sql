@@ -97,19 +97,19 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_MasterClass].[Id1],
-	[detail].[DetailId],
-	[detail].[MasterId],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d_1].[DetailId],
+	[d_1].[MasterId],
+	[d_1].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id1]
+			[t1].[Id1]
 		FROM
-			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-	) [lw_MasterClass]
-		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
+			[MasterClass] [t1]
+				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+	) [m_1]
+		INNER JOIN [DetailClass] [d_1] ON [m_1].[Id1] = [d_1].[MasterId]
 
 BeforeExecute
 DisposeTransaction
