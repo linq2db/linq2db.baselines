@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -67,7 +67,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -78,7 +78,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -89,7 +89,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -100,7 +100,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -111,7 +111,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -122,7 +122,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -133,7 +133,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -144,7 +144,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -155,7 +155,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

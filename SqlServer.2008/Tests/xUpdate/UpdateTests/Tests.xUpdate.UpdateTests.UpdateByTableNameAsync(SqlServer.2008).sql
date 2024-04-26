@@ -48,7 +48,7 @@ BeforeExecute
 -- SqlServer.2008 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

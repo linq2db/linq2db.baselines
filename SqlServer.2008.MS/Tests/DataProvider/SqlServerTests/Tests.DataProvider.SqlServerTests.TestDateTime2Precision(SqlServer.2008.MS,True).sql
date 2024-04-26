@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE
@@ -146,7 +146,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[DateTime2Table] [t1]
 WHERE

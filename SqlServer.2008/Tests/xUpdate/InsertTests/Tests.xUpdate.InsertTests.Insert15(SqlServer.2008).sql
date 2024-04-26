@@ -37,7 +37,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

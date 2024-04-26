@@ -63,7 +63,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -73,7 +73,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -85,7 +85,7 @@ DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
