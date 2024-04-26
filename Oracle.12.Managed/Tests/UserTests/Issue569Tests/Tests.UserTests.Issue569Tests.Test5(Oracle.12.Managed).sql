@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" t1
 		CROSS JOIN "Child" child_1

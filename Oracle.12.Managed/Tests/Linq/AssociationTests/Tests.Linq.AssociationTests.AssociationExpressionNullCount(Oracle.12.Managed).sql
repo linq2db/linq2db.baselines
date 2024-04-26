@@ -75,7 +75,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"NotNullParent" p
 		LEFT JOIN "NotNullChild" a_ChildOuter ON p.ID = a_ChildOuter."ParentID"
