@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 
@@ -14,7 +14,7 @@ SET     @skip = 1
 SELECT
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
 	1
 OFFSET @skip ROWS

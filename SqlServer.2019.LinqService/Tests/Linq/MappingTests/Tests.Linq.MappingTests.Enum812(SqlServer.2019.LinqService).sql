@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [p]
 WHERE
