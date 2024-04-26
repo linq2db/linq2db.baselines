@@ -23,9 +23,9 @@ CommitTransactionAsync
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = 1010
+	[t1].[ParentID] = 1010
 

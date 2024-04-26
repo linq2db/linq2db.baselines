@@ -54,15 +54,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @TransactionDate DateTimeOffset
-SET     @TransactionDate = CAST('2020-02-29T21:14:55.1231234+00:40' AS DATETIMEOFFSET)
+DECLARE @DateTimeOffset DateTimeOffset
+SET     @DateTimeOffset = CAST('2020-02-29T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 SELECT
 	[t].[TransactionId]
 FROM
 	[Transactions] [t]
 WHERE
-	[t].[TransactionDate] > @TransactionDate
+	[t].[TransactionDate] > DateAdd(minute, 200, @DateTimeOffset)
 
 BeforeExecute
 -- SqlServer.2008
