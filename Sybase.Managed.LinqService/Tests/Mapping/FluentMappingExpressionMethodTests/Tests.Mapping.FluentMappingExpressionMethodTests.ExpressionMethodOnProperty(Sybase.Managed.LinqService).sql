@@ -380,7 +380,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InstanceClass] [t]
 WHERE

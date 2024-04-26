@@ -83,7 +83,7 @@ BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -155,7 +155,7 @@ BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

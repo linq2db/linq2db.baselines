@@ -65,7 +65,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -75,7 +75,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -87,7 +87,7 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE

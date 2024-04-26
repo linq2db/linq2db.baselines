@@ -4,7 +4,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 0
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE

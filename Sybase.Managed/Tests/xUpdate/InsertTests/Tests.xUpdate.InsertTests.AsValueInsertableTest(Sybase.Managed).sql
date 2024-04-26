@@ -42,7 +42,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE

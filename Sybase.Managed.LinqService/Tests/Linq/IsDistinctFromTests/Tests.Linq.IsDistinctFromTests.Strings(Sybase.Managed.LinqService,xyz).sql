@@ -76,7 +76,7 @@ DECLARE @value UniVarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -88,7 +88,7 @@ DECLARE @value UniVarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -100,7 +100,7 @@ DECLARE @value UniVarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -112,7 +112,7 @@ DECLARE @value UniVarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
