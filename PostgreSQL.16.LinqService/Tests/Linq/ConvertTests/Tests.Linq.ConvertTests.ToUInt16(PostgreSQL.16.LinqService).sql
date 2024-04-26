@@ -1,12 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 0
 
 SELECT
-	Cast(Floor(t."MoneyValue") as Int)
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Floor(p."MoneyValue")::Int as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(Floor(t."MoneyValue") as Int) > :p
+	p_1.c1 > 0
 

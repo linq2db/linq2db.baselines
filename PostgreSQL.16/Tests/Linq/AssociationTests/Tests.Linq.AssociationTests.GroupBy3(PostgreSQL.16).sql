@@ -2,15 +2,15 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."Key_1"
+	g_2."Year_1"
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(year from "a_Types"."DateTimeValue")) as int) as "Key_1"
+			Floor(Extract(year From "a_Types"."DateTimeValue"))::Int as "Year_1"
 		FROM
-			"Parent" "selectParam"
-				LEFT JOIN "LinqDataTypes" "a_Types" ON "selectParam"."ParentID" = "a_Types"."ID"
-	) t1
+			"Parent" g_1
+				LEFT JOIN "LinqDataTypes" "a_Types" ON g_1."ParentID" = "a_Types"."ID"
+	) g_2
 GROUP BY
-	t1."Key_1"
+	g_2."Year_1"
 
