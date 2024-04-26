@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	To_Number(To_Char(t."DateTimeValue", 'MM'))
+	EXTRACT(MONTH FROM t."DateTimeValue")
 FROM
 	"LinqDataTypes" t
 

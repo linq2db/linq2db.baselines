@@ -21,7 +21,7 @@ FROM
 		FROM
 			"Person" p_1
 		WHERE
-			Cast(p_1."PersonID" as VarChar(11)) LIKE :pattern ESCAPE '~'
+			CAST(p_1."PersonID" AS VarChar(255)) LIKE :pattern ESCAPE '~'
 	) t1
 FETCH NEXT :take ROWS ONLY
 

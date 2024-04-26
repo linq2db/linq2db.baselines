@@ -16,8 +16,8 @@ BeforeExecute
 MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1."PersonID" as ID,
-		a_Patient."Diagnosis"
+		t1."PersonID" as "source_ID",
+		a_Patient."Diagnosis" as "source_Patient_Diagnosis"
 	FROM
 		"Person" t1
 			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
@@ -28,16 +28,16 @@ ON (EXISTS(
 	FROM
 		"Patient" a_Patient_1
 	WHERE
-		Target."PersonID" = "Source".ID AND
+		Target."PersonID" = a_Patient_1."PersonID" AND
+		Target."PersonID" = "Source"."source_ID" AND
 		a_Patient_1."Diagnosis" LIKE '%very%' ESCAPE '~' AND
-		"Source"."Diagnosis" LIKE '%sick%' ESCAPE '~' AND
-		Target."PersonID" = a_Patient_1."PersonID"
+		"Source"."source_Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
 ))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."MiddleName" = 'R.I.P.'
+	"MiddleName" = 'R.I.P.'
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

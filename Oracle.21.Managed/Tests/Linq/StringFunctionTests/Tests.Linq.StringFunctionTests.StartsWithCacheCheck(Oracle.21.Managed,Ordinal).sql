@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName"
@@ -9,7 +7,7 @@ FROM
 	"Person" p
 WHERE
 	p."PersonID" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -17,7 +15,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -29,7 +27,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -42,7 +40,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -54,7 +52,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
