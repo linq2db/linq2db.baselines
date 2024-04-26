@@ -15,8 +15,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1)
-LIMIT toInt32(1)
+	t.ID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	DateTimeValue = toDateTime64('2010-12-14 05:00:07.425', 3)
 WHERE
-	ID = toInt32(1)
+	ID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,8 +45,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1)
-LIMIT toInt32(1)
+	t.ID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -56,5 +56,5 @@ ALTER TABLE
 UPDATE
 	DateTimeValue = toDateTime64('2001-01-11 01:11:21.100', 3)
 WHERE
-	ID = toInt32(1)
+	ID = 1
 

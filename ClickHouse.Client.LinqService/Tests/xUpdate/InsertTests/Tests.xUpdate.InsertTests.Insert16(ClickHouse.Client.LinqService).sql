@@ -18,7 +18,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	toString(CHAR_LENGTH('Insert16') + toInt32(4)),
+	toString(CHAR_LENGTH('Insert16') + 4),
 	'M'
 )
 
@@ -28,9 +28,9 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	startsWith(_.FirstName, 'Insert16')
+	startsWith(t1.FirstName, 'Insert16')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

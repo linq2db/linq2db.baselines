@@ -22,7 +22,7 @@ BeforeExecute
 ALTER TABLE
 	Issue681Table
 DELETE WHERE
-	ID = toInt32(5)
+	ID = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

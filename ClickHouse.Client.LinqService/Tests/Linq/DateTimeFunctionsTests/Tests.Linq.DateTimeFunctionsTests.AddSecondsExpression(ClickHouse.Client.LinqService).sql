@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addSeconds(t.DateTimeValue, toInt32(-35))
+	toSecond(addSeconds(t.DateTimeValue, -35))
 FROM
 	LinqDataTypes t
 

@@ -17,9 +17,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addDays(now(), toInt32(1)),
-	addDays(now(), toInt32(2))
-LIMIT toInt32(1)
+	addDays(now(), 1),
+	addDays(now(), 2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

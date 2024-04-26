@@ -6,5 +6,5 @@ SELECT
 	t1.Value1
 FROM
 	Parent t1
-LIMIT toInt32(2)
+LIMIT 2
 

@@ -25,7 +25,7 @@ INSERT INTO DynamicColumnTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Some1',
 	true
 )
@@ -41,7 +41,7 @@ INSERT INTO DynamicColumnTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'Some2',
 	false
 )
@@ -57,7 +57,7 @@ FROM
 	DynamicColumnTable e
 WHERE
 	e.Name = 'Some1'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,7 +70,7 @@ FROM
 	DynamicColumnTable e
 WHERE
 	e.Name = 'Some2'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

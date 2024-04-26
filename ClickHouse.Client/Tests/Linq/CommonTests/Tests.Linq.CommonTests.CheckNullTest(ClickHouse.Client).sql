@@ -2,47 +2,34 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	_a.ParentID,
-	_a.ChildID,
-	_a.GrandChildID
-FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as ParentID
-		FROM
-			Parent p
-		WHERE
-			p.ParentID = toInt32(6)
-	) key_data_result
-		INNER JOIN GrandChild _a ON _a.ParentID = key_data_result.ParentID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	key_data_result.ParentID,
-	_a.ParentID,
-	_a.ChildID
-FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as ParentID
-		FROM
-			Parent p
-		WHERE
-			p.ParentID = toInt32(6)
-	) key_data_result
-		INNER JOIN Child _a ON _a.ParentID = key_data_result.ParentID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
 	p.ParentID,
-	p.Value1
+	p.Value1,
+	t1.not_null,
+	t1.ParentID,
+	t1.ChildID,
+	t1.GrandChildID,
+	t2.ParentID,
+	t2.ChildID
 FROM
 	Parent p
+		LEFT JOIN (
+			SELECT
+				a.ParentID as ParentID,
+				a.ChildID as ChildID,
+				a.GrandChildID as GrandChildID,
+				1 as not_null,
+				ROW_NUMBER() OVER (PARTITION BY a.ParentID ORDER BY a.ParentID) as rn
+			FROM
+				GrandChild a
+		) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
+		LEFT JOIN (
+			SELECT
+				a_1.ParentID as ParentID,
+				a_1.ChildID as ChildID,
+				ROW_NUMBER() OVER (PARTITION BY a_1.ParentID ORDER BY a_1.ParentID) as rn
+			FROM
+				Child a_1
+		) t2 ON t2.ParentID = p.ParentID AND t2.rn <= 1
 WHERE
-	p.ParentID = toInt32(6)
+	p.ParentID = 6
 

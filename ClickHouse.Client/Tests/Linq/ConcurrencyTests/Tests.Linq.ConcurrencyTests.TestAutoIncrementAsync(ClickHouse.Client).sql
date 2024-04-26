@@ -28,8 +28,8 @@ INSERT INTO ConcurrencyAutoIncrement
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(-10),
+	1,
+	-10,
 	'initial'
 )
 
@@ -49,10 +49,10 @@ BeforeExecute
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
-	Stamp = Stamp + toInt32(1),
+	Stamp = Stamp + 1,
 	Value = 'value 1'
 WHERE
-	Id = toInt32(1) AND Stamp = toInt32(-10)
+	Id = 1 AND Stamp = -10
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,10 +70,10 @@ BeforeExecute
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
-	Stamp = Stamp + toInt32(1),
+	Stamp = Stamp + 1,
 	Value = 'value 2'
 WHERE
-	Id = toInt32(1) AND Stamp = toInt32(-9)
+	Id = 1 AND Stamp = -9
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -91,10 +91,10 @@ BeforeExecute
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
-	Stamp = Stamp + toInt32(1),
+	Stamp = Stamp + 1,
 	Value = 'value 3'
 WHERE
-	Id = toInt32(1) AND Stamp = toInt32(-9)
+	Id = 1 AND Stamp = -9
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -112,7 +112,7 @@ BeforeExecute
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
-	Id = toInt32(1) AND Stamp = toInt32(-9)
+	Id = 1 AND Stamp = -9
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -130,7 +130,7 @@ BeforeExecute
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
-	Id = toInt32(1) AND Stamp = toInt32(-8)
+	Id = 1 AND Stamp = -8
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

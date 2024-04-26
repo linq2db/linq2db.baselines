@@ -28,7 +28,7 @@ INSERT INTO TestInsertOrReplaceTable
 )
 VALUES
 (
-	toInt32(123),
+	123,
 	'John'
 )
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	TestInsertOrReplaceTable x
 WHERE
-	x.ID = toInt32(123) AND x.FirstName = 'John'
+	x.ID = 123 AND x.FirstName = 'John'
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

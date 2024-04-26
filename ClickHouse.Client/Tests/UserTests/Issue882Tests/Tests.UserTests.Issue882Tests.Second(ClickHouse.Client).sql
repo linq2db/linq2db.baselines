@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	SECOND(t.DateTimeValue) % toInt32(7)
+	toSecond(t.DateTimeValue) % 7
 FROM
 	LinqDataTypes t
 

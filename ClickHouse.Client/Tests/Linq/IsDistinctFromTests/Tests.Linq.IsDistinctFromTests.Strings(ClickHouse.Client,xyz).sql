@@ -26,8 +26,8 @@ INSERT INTO Src
 	NullableString
 )
 VALUES
-(toInt32(2),toInt32(2),'abc','abc'),
-(toInt32(3),NULL,'def',NULL)
+(2,2,'abc','abc'),
+(3,NULL,'def',NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

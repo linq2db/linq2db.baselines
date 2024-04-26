@@ -3,20 +3,20 @@
 
 SELECT
 	e.ID,
-	_2.SmallIntValue
+	p.SmallIntValue
 FROM
 	(
 		SELECT DISTINCT
-			_.ID as ID,
-			_.SmallIntValue as SmallIntValue
+			t1.ID as ID,
+			t1.SmallIntValue as SmallIntValue
 		FROM
-			LinqDataTypes _
+			LinqDataTypes t1
 	) e
 		LEFT JOIN (
 			SELECT DISTINCT
-				_1.ID as ID,
-				_1.SmallIntValue as SmallIntValue
+				t2.ID as ID,
+				t2.SmallIntValue as SmallIntValue
 			FROM
-				LinqDataTypes _1
-		) _2 ON _2.ID = e.ID
+				LinqDataTypes t2
+		) p ON p.ID = e.ID
 

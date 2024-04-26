@@ -31,11 +31,11 @@ INSERT INTO Ints
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(3),
-	toInt32(4),
-	toInt32(5),
+	1,
+	2,
+	3,
+	4,
+	5,
 	NULL
 )
 
@@ -47,7 +47,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Two = i.One * toInt32(2) AND i.Three = i.Four - toInt32(1)
+	i.One = i.One AND i.Two = i.One * 2 AND i.Three = i.Four - 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -77,7 +77,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	toInt32(1) = i.One AND i.Nil = i.Nil AND toInt32(3) = i.Three
+	1 = i.One AND i.Nil = i.Nil AND 3 = i.Three
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -87,7 +87,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	toInt32(1) = i.One AND NULL >= i.Nil AND toInt32(3) = i.Three
+	1 = i.One AND NULL >= i.Nil AND 3 = i.Three
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

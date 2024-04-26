@@ -21,7 +21,7 @@ INSERT INTO test_in_1
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO test_in_1
 )
 VALUES
 (
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -71,7 +71,7 @@ INSERT INTO test_in_2
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -83,7 +83,7 @@ INSERT INTO test_in_2
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -102,6 +102,30 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	t.ID
+FROM
+	test_in_1 t
+WHERE
+	t.ID IS NOT NULL AND (t.ID IS NULL AND 1 IN (
+		SELECT
+			1
+		FROM
+			test_in_2 p
+		WHERE
+			p.ID IS NOT NULL AND p.ID IS NULL
+	) OR t.ID IS NOT NULL AND t.ID IN (
+		SELECT
+			p_1.ID
+		FROM
+			test_in_2 p_1
+		WHERE
+			p_1.ID IS NOT NULL
+	))
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
 	t1.ID
 FROM
 	test_in_1 t1
@@ -110,16 +134,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t.ID
+	t1.ID
 FROM
-	test_in_1 t
-WHERE
-	t.ID IN (
-		SELECT
-			p.ID
-		FROM
-			test_in_2 p
-	)
+	test_in_2 t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -7,7 +7,7 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(5)
+	x.PersonID = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -18,7 +18,7 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(5)
+	x.PersonID = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -29,5 +29,5 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(5)
+	x.PersonID = 5
 

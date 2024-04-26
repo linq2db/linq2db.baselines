@@ -23,8 +23,8 @@ INSERT INTO CreateIfNotExistsTable
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2)
+	1,
+	2
 )
 
 BeforeExecute

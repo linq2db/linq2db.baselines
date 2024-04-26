@@ -4,48 +4,24 @@
 WITH CTE_1 AS
 (
 	SELECT
-		t1.Id,
-		t1.Value_1 as Value
-	FROM
-		(
-			SELECT
-				toInt32(1) as Id,
-				toInt32(11) as Value_1
-		) t1
+		1 as Id,
+		11 as Value_1
 	UNION ALL
 	SELECT
-		t2.Id as Id,
-		t2.Value_1 as Value_1
-	FROM
-		(
-			SELECT
-				toInt32(2) as Id,
-				toInt32(22) as Value_1
-		) t2
+		2 as Id,
+		22 as Value_1
 	UNION ALL
 	SELECT
-		t3.Id as Id,
-		t3.Value_1 as Value_1
-	FROM
-		(
-			SELECT
-				toInt32(3) as Id,
-				toInt32(33) as Value_1
-		) t3
+		3 as Id,
+		33 as Value_1
 	UNION ALL
 	SELECT
-		t4.Id as Id,
-		t4.Value_1 as Value_1
-	FROM
-		(
-			SELECT
-				toInt32(4) as Id,
-				toInt32(44) as Value_1
-		) t4
+		4 as Id,
+		44 as Value_1
 )
 SELECT
-	t5.Id,
-	t5.Value
+	t1.Id,
+	t1.Value_1
 FROM
-	CTE_1 t5
+	CTE_1 t1
 

@@ -23,8 +23,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(101)
+	1,
+	101
 )
 
 BeforeExecute
@@ -37,8 +37,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(102)
+	2,
+	102
 )
 
 BeforeExecute
@@ -51,8 +51,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(103)
+	3,
+	103
 )
 
 BeforeExecute
@@ -65,8 +65,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(104)
+	4,
+	104
 )
 
 BeforeExecute
@@ -79,8 +79,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(105)
+	5,
+	105
 )
 
 BeforeExecute
@@ -93,8 +93,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(6),
-	toInt32(106)
+	6,
+	106
 )
 
 BeforeExecute
@@ -107,8 +107,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(7),
-	toInt32(107)
+	7,
+	107
 )
 
 BeforeExecute
@@ -121,8 +121,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(8),
-	toInt32(108)
+	8,
+	108
 )
 
 BeforeExecute
@@ -135,8 +135,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(9),
-	toInt32(109)
+	9,
+	109
 )
 
 BeforeExecute
@@ -149,8 +149,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(10),
-	toInt32(110)
+	10,
+	110
 )
 
 BeforeExecute
@@ -163,8 +163,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(11),
-	toInt32(111)
+	11,
+	111
 )
 
 BeforeExecute
@@ -177,8 +177,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(12),
-	toInt32(112)
+	12,
+	112
 )
 
 BeforeExecute
@@ -191,8 +191,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(13),
-	toInt32(113)
+	13,
+	113
 )
 
 BeforeExecute
@@ -205,8 +205,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(14),
-	toInt32(114)
+	14,
+	114
 )
 
 BeforeExecute
@@ -219,8 +219,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(15),
-	toInt32(115)
+	15,
+	115
 )
 
 BeforeExecute
@@ -233,8 +233,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(16),
-	toInt32(116)
+	16,
+	116
 )
 
 BeforeExecute
@@ -247,8 +247,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(17),
-	toInt32(117)
+	17,
+	117
 )
 
 BeforeExecute
@@ -261,8 +261,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(18),
-	toInt32(118)
+	18,
+	118
 )
 
 BeforeExecute
@@ -275,8 +275,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(19),
-	toInt32(119)
+	19,
+	119
 )
 
 BeforeExecute
@@ -289,8 +289,8 @@ INSERT INTO InstanceClass
 )
 VALUES
 (
-	toInt32(20),
-	toInt32(120)
+	20,
+	120
 )
 
 BeforeExecute

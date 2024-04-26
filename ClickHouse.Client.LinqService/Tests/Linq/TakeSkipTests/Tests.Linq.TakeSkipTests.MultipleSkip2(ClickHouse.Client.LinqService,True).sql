@@ -69,7 +69,7 @@ FROM
 	TakeSkipClass t1
 ORDER BY
 	t1.Value
-LIMIT toInt32(3), 18446744073709551615
+LIMIT 3, 18446744073709551615
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -80,7 +80,7 @@ FROM
 	TakeSkipClass t1
 ORDER BY
 	t1.Value
-LIMIT toInt32(4), 18446744073709551615
+LIMIT 4, 18446744073709551615
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

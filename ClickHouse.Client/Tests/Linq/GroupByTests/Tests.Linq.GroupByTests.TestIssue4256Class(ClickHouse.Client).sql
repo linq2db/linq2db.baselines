@@ -2,17 +2,35 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.IsActive,
-	t1.Other
+	it_1.IsActive,
+	it_1.Other
 FROM
 	(
 		SELECT
 			true as IsActive,
-			toBool(it.SmallIntValue) as Other
+			CASE
+				WHEN it.SmallIntValue <> 0 THEN true
+				ELSE false
+			END as Other
 		FROM
 			LinqDataTypes it
-	) t1
+	) it_1
 GROUP BY
-	t1.IsActive,
-	t1.Other
+	it_1.IsActive,
+	it_1.Other
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.BinaryValue,
+	t1.SmallIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
 

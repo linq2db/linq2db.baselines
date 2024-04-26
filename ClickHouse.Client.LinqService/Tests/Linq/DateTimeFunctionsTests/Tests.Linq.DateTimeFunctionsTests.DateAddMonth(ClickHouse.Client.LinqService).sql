@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addMonths(t.DateTimeValue, toInt32(2))
+	toDate(addMonths(t.DateTimeValue, 2))
 FROM
 	LinqDataTypes t
 

@@ -43,7 +43,7 @@ INSERT INTO Parent564
 VALUES
 (
 	'Child564B',
-	toInt32(911)
+	911
 )
 
 BeforeExecute
