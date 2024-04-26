@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
@@ -327,7 +327,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 

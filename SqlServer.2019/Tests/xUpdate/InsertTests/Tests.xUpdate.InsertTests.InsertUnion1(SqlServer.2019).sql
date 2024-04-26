@@ -37,7 +37,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [c_1]
 WHERE

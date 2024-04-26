@@ -29,7 +29,7 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
