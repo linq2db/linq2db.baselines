@@ -24,11 +24,9 @@ BeforeExecute
 UPDATE
 	[Parent]
 SET
-	[t1].[Value1] = 1012
-FROM
-	[Parent] [t1]
+	[Value1] = 1012
 WHERE
-	[t1].[ParentID] = 1010
+	[Parent].[ParentID] = 1010
 
 BeforeExecute
 DisposeTransactionAsync

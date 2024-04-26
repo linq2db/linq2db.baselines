@@ -55,11 +55,9 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[t1].[FirstName] = @FirstName
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -93,14 +91,12 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName,
-	[t1].[Gender] = @Gender
-FROM
-	[Person] [t1]
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -108,13 +104,13 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 

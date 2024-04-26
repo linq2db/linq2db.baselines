@@ -40,7 +40,7 @@ DECLARE @r3 Integer -- Int32
 SET     @r3 = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

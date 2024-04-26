@@ -5,9 +5,9 @@ SET     @ParentID = 1111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -16,9 +16,9 @@ SET     @ParentID = 2111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -27,9 +27,9 @@ SET     @ParentID = 3111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -38,9 +38,9 @@ SET     @ParentID = 4111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 BeginTransaction
@@ -66,9 +66,9 @@ SET     @ParentID = 1111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -77,9 +77,9 @@ SET     @ParentID = 2111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -88,9 +88,9 @@ SET     @ParentID = 3111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -99,7 +99,7 @@ SET     @ParentID = 4111
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 

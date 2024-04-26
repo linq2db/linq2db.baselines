@@ -88,14 +88,13 @@ SET     @someId = 100
 UPDATE
 	[UpdatedEntities]
 SET
-	[c_1].[Value1] = ([c_1].[Value1] * [t].[Value1]) * @int1,
-	[c_1].[Value2] = ([c_1].[Value2] * [t].[Value2]) * @int2,
-	[c_1].[Value3] = ([c_1].[Value3] * [t].[Value3]) * @int3
+	[Value1] = ([UpdatedEntities].[Value1] * [t].[Value1]) * @int1,
+	[Value2] = ([UpdatedEntities].[Value2] * [t].[Value2]) * @int2,
+	[Value3] = ([UpdatedEntities].[Value3] * [t].[Value3]) * @int3
 FROM
-	[UpdatedEntities] [c_1]
-		INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
+	[NewEntities] [t]
 WHERE
-	[t].[id] <> @someId
+	[t].[id] <> @someId AND [t].[id] = [UpdatedEntities].[id]
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -28,16 +28,14 @@ SELECT 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Char(36) -- AnsiStringFixedLength
-SET     @p = 'b3d9b51c-89f9-442a-893b-cd8a6f667d37'
-DECLARE @p_1 Char(36) -- AnsiStringFixedLength
-SET     @p_1 = '61efdcd4-659d-41e8-910c-506a9c2f31c5'
 
 SELECT TOP 1
-	@p,
-	@p_1
+	CASE
+		WHEN 1 = 1 THEN 1
+		ELSE 0
+	END
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

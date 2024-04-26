@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(SmallDateTime, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01 00:20:00')
+	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(11)) + '-01-01 00:20:00' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 

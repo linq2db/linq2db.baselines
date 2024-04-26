@@ -35,19 +35,21 @@ IF (OBJECT_ID(N'TestEqualsTable2') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @param Integer -- Int32
+SET     @param = 0
 
 SELECT
-	[_].[Id]
+	[t1].[Id]
 FROM
-	[TestEqualsTable1] [_]
+	[TestEqualsTable1] [t1]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[TestEqualsTable2] [__]
+			[TestEqualsTable2] [t2]
 		WHERE
-			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
+			[t1].[Id] = [t2].[FK] AND [t2].[Id] = @param
 	)
 
 BeforeExecute

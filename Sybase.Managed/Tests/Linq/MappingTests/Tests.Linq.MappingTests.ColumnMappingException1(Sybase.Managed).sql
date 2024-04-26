@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[_].[FirstName]
+	[t1].[FirstName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 

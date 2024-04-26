@@ -22,7 +22,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -38,11 +38,9 @@ SET     @id = 1001
 UPDATE
 	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -50,7 +48,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -66,11 +64,9 @@ SET     @id = 1001
 UPDATE
 	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -78,7 +74,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

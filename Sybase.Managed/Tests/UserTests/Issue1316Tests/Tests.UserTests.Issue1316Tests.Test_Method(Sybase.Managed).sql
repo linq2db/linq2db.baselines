@@ -37,11 +37,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 SELECT TOP 2
-	[_].[ID]
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = @ID
+	[t1].[ID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase
