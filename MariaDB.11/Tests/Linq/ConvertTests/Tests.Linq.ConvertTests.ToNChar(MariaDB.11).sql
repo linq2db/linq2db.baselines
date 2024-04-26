@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Cast(`t`.`MoneyValue` as NChar(20))
+	CAST(`t`.`MoneyValue` AS CHAR(20))
 FROM
 	`LinqDataTypes` `t`
 

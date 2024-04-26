@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`FirstName`,
@@ -13,5 +11,5 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` = 1
-LIMIT @take
+LIMIT 1
 

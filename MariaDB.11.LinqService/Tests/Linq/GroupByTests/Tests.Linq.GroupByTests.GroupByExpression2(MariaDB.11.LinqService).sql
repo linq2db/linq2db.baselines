@@ -2,10 +2,10 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`selectParam`.`ChildID`,
-	Avg(`selectParam`.`ParentID`)
+	`t1`.`ChildID`,
+	AVG(`t1`.`ParentID`)
 FROM
-	`Child` `selectParam`
+	`Child` `t1`
 GROUP BY
-	`selectParam`.`ChildID`
+	`t1`.`ChildID`
 

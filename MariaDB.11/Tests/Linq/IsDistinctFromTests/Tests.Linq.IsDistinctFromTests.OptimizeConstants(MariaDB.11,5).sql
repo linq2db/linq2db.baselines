@@ -2,7 +2,12 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*) as `cnt`
+	Count(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 WHERE
 	1 = 0
 
@@ -10,5 +15,10 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*) as `cnt`
+	Count(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 

@@ -2,9 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t`.`MoneyValue`
+	`p_1`.`MoneyValue`
 FROM
-	`LinqDataTypes` `t`
+	(
+		SELECT
+			`p`.`MoneyValue`
+		FROM
+			`LinqDataTypes` `p`
+	) `p_1`
 WHERE
-	`t`.`MoneyValue` > 0
+	`p_1`.`MoneyValue` > 0
 
