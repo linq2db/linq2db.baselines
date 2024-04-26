@@ -41,7 +41,7 @@ DECLARE @dto VarChar(33) -- AnsiString
 SET     @dto = '2020-02-29T17:54:55.123123 +00:40'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table] [r]
 WHERE
