@@ -1,54 +1,46 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @personId Int -- Int32
-SET     @personId = 2
+SET     @personId = 0
+DECLARE @personId_1 Int -- Int32
+SET     @personId_1 = 2
 
 SELECT
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
+			[Person] [t1]
+		WHERE
 			(
 				SELECT
-					(
-						SELECT
-							Count(*)
-						FROM
-							[Patient] [_]
-						WHERE
-							[_].[PersonID] IS NULL AND [_].[PersonID] NOT IN (
-								SELECT
-									[_1].[PersonID]
-								FROM
-									[Patient] [_1]
-								WHERE
-									[_1].[PersonID] = @personId
-							)
-					) as [cnt],
-					(
-						SELECT
-							Count(*)
-						FROM
-							[Patient] [_2]
-						WHERE
-							[_2].[PersonID] = @personId AND [_2].[PersonID] NOT IN (
-								SELECT
-									[_3].[PersonID]
-								FROM
-									[Patient] [_3]
-								WHERE
-									[_3].[PersonID] IS NULL
-							)
-					) as [ex],
-					[_4].[FirstName],
-					[_4].[PersonID],
-					[_4].[LastName],
-					[_4].[MiddleName],
-					[_4].[Gender]
+					COUNT(*)
 				FROM
-					[Person] [_4]
-			) [_5]
-		WHERE
-			[_5].[cnt] = 0 AND [_5].[ex] = 0
+					[Patient] [t2]
+				WHERE
+					[t2].[PersonID] = @personId AND [t2].[PersonID] NOT IN (
+						SELECT
+							[t3].[PersonID]
+						FROM
+							[Patient] [t3]
+						WHERE
+							[t3].[PersonID] = @personId_1
+					)
+			) = 0 AND
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Patient] [t4]
+				WHERE
+					[t4].[PersonID] = @personId_1 AND [t4].[PersonID] NOT IN (
+						SELECT
+							[t5].[PersonID]
+						FROM
+							[Patient] [t5]
+						WHERE
+							[t5].[PersonID] = @personId
+					)
+			) = 0
 	), 1, 0)
 

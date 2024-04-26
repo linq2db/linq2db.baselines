@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
-		SELECT TOP (@take)
+		SELECT TOP (1)
 			[r].[Value1]
 		FROM
 			[Parent] [r]
