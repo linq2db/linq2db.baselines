@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'Limonadovy'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -9,16 +15,16 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'John',
-	N'Limonadovy',
-	N'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE
@@ -28,19 +34,17 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[c_1]
+	[Person]
 SET
-	[c_1].[FirstName] = N'Johnny'
-FROM
-	[Person] [c_1]
+	[FirstName] = N'Johnny'
 WHERE
-	[c_1].[LastName] = N'Limonadovy'
+	[Person].[LastName] = N'Limonadovy'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

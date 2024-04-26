@@ -2,7 +2,7 @@
 -- SqlServer.2005 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [t1]
 
