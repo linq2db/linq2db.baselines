@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	Convert(Real, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Real)
 FROM
 	[LinqDataTypes] [t]
 

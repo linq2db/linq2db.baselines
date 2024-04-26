@@ -184,16 +184,21 @@ DECLARE @take Int -- Int32
 SET     @take = 5
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Value1] = 1
+	[u].[Value1] = [t1].[c1]
 FROM
+	[Parent] [u],
 	(
 		SELECT TOP (@take)
+			1 as [c1],
+			[x].[ParentID],
 			[x].[Value1]
 		FROM
 			[Parent] [x]
 		WHERE
 			[x].[ParentID] > 1000
 	) [t1]
+WHERE
+	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 

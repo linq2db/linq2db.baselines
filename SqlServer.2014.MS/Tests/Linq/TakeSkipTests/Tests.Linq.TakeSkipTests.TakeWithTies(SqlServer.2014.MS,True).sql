@@ -4,13 +4,13 @@ DECLARE @take Int -- Int32
 SET     @take = 50
 
 SELECT TOP (@take) PERCENT WITH TIES
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	[_].[FirstName]
+	[t1].[FirstName]
 

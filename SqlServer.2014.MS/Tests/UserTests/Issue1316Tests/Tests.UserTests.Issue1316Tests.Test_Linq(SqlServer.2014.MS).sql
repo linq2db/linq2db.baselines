@@ -31,15 +31,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[_].[ID]
+SELECT TOP (2)
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] IN (4, 5, 6)
+	[t1].[ID] IN (4, 5, 6)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
