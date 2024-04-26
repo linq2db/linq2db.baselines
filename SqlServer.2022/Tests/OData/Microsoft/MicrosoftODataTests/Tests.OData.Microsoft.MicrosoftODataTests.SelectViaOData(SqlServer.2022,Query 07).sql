@@ -33,34 +33,30 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	[t2].[Name],
-	[t2].[Key_1],
-	[t2].[Value_1]
+	[it_2].[Name],
+	[it_2].[Value_1],
+	[it_2].[COUNT_1]
 FROM
 	(
 		SELECT
+			COUNT(DISTINCT [it_1].[Value_1]) as [COUNT_1],
+			[it_1].[c1] as [Name],
+			[it_1].[Title] as [Value_1]
+		FROM
 			(
 				SELECT
-					Count(*)
+					N'Title' as [c1],
+					[it].[Title],
+					[it].[YearsExperience] as [Value_1]
 				FROM
-					(
-						SELECT DISTINCT
-							[$it].[YearsExperience]
-						FROM
-							[odata_person] [$it]
-						WHERE
-							[selectParam].[Title] = [$it].[Title]
-					) [t1]
-			) as [Value_1],
-			N'Title' as [Name],
-			[selectParam].[Title] as [Key_1]
-		FROM
-			[odata_person] [selectParam]
+					[odata_person] [it]
+			) [it_1]
 		GROUP BY
-			[selectParam].[Title]
-	) [t2]
+			[it_1].[c1],
+			[it_1].[Title]
+	) [it_2]
 ORDER BY
-	[t2].[Value_1]
+	[it_2].[COUNT_1]
 
 BeforeExecute
 -- SqlServer.2022

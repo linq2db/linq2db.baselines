@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] = DATETIMEFROMPARTS(2020, 2, 29, 17, 54, 55, 123)
+	[t].[DateTimeValue] = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
