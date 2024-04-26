@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -50,7 +48,7 @@ FROM
 	"PR_1598_Update_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -62,17 +60,15 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Table"
+	"PR_1598_Update_Table" "t1"
 SET
-	"PR_1598_Update_Table"."Name" = ?,
-	"PR_1598_Update_Table"."Age" = ?
+	"Name" = ?,
+	"Age" = ?
 WHERE
-	"PR_1598_Update_Table"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -82,7 +78,7 @@ FROM
 	"PR_1598_Update_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -92,16 +88,14 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Table"
+	"PR_1598_Update_Table" "t1"
 SET
-	"PR_1598_Update_Table"."Name" = ?
+	"Name" = ?
 WHERE
-	"PR_1598_Update_Table"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -111,7 +105,7 @@ FROM
 	"PR_1598_Update_Table" "t"
 WHERE
 	"t"."Id" = 1
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

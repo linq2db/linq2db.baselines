@@ -26,25 +26,21 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Update14'
-DECLARE @idx  -- Int32
-SET     @idx = 4
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."LastName" = Cast((Length(?) + ?) as NVarChar(11))
+	"LastName" = CAST(12 AS NVarChar(11))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

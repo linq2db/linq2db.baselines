@@ -37,52 +37,46 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
+	"t1"."ID",
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_"."ID" = 1
-LIMIT ?
+	"t1"."ID" = 1
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Array Binary(3)
 SET     @Array = x'010203'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
+	"t1"."ID",
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_"."Array" = ?
-LIMIT ?
+	"t1"."Array" = ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Binary Binary(2)
 SET     @Binary = x'0405'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."ID",
-	"_"."Array",
-	"_"."Binary"
+	"t1"."ID",
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_"."Binary" = ?
-LIMIT ?
+	"t1"."Binary" = ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

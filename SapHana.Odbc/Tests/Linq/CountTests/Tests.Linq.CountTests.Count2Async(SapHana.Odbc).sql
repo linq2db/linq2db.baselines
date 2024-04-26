@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE

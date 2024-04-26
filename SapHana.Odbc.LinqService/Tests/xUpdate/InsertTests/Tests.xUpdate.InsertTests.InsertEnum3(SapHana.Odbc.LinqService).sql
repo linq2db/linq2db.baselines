@@ -10,6 +10,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1  -- Int32
+SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
@@ -19,7 +21,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	?,
-	1
+	?
 )
 
 BeforeExecute
@@ -28,11 +30,11 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" = ?
+	"t1"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -2,17 +2,17 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ParentID" > 1000
+	"c_1"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -56,7 +56,7 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -66,15 +66,15 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ParentID" > 1000
+	"c_1"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 

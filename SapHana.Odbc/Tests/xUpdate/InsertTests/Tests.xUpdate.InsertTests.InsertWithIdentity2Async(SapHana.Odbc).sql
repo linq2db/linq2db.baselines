@@ -8,6 +8,12 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName NVarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -17,9 +23,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	?,
+	?,
+	?
 )
 
 BeforeExecute
@@ -29,8 +35,6 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -42,7 +46,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

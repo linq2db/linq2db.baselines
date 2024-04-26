@@ -2,12 +2,16 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "c_1"
 WHERE
-	"t1"."ID" > 1000
+	"c_1"."ID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
+SET     @GuidValue = 'fa7f150d-9a71-4dad-b28e-5066e775d8df'
+DECLARE @BoolValue  -- Byte
+SET     @BoolValue = 1
 
 INSERT INTO "LinqDataTypes"
 (
@@ -16,22 +20,22 @@ INSERT INTO "LinqDataTypes"
 	"BoolValue"
 )
 SELECT
-	Cast(Floor("t1"."c1" + 1001) as Integer),
-	SYSUUID,
-	1
+	CAST("t2"."c1" + 1001 AS Integer),
+	?,
+	?
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast("_"."ID" as Double) / 3) as "c1"
+			Floor(CAST("t1"."ID" AS Double) / 3) as "c1"
 		FROM
-			"LinqDataTypes" "_"
-	) "t1"
+			"LinqDataTypes" "t1"
+	) "t2"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "c_1"
 WHERE
-	"t1"."ID" > 1000
+	"c_1"."ID" > 1000
 

@@ -36,16 +36,16 @@ BeforeExecute
 SELECT
 	"t_1"."Id",
 	"t_1"."Value",
-	"t3"."Value1",
-	"t3"."Value2",
-	"t3"."is_empty"
+	"t2"."not_null",
+	"t2"."Value1",
+	"t2"."Value2"
 FROM
 	"SampleClass" "t_1"
 		LEFT JOIN (
 			SELECT
-				"t2"."Value1",
-				"t2"."Value2",
-				1 as "is_empty"
+				"t1"."Value1",
+				"t1"."Value2",
+				1 as "not_null"
 			FROM
 				(
 					SELECT
@@ -57,17 +57,12 @@ FROM
 						"t"."Value" = 1
 					UNION
 					SELECT
-						"t1"."Value1",
-						"t1"."Value2"
-					FROM
-						(
-							SELECT
-								Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
-								Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
+						Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
+						Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
 FROM DUMMY
-						) "t1"
-				) "t2"
-		) "t3" ON 1=1
+				) "t1"
+			LIMIT 1
+		) "t2" ON 1=1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
