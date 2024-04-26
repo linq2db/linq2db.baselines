@@ -48,7 +48,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -79,7 +79,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
