@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" t1
 

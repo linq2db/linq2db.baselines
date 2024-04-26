@@ -2,9 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" IN (1001, 1002)
+	c_1."ChildID" IN (1001, 1002)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -38,7 +38,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
@@ -67,7 +67,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
