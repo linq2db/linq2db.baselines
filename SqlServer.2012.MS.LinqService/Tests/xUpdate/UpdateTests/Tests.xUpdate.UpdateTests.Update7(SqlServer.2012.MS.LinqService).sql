@@ -22,7 +22,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -36,13 +36,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -50,7 +48,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -64,13 +62,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	[p]
+	[Parent]
 SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
+	[Value1] = @Value1
 WHERE
-	[p].[ParentID] = @id
+	[Parent].[ParentID] = @id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -78,7 +74,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

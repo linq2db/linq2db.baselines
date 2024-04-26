@@ -33,33 +33,29 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @Value NChar(1) -- StringFixedLength
-SET     @Value = N'O'
+DECLARE @nullableGender NChar(1) -- StringFixedLength
+SET     @nullableGender = N'O'
 
 UPDATE
-	[_]
+	[Person]
 SET
-	[_].[Gender] = @Value
-FROM
-	[Person] [_]
+	[Gender] = @nullableGender
 WHERE
-	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
+	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+SELECT TOP (1)
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

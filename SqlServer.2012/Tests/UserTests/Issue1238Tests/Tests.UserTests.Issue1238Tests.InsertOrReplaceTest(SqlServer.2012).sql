@@ -25,7 +25,7 @@ USING (SELECT @Key1 AS [InheritanceParentId], @Key2 AS [Name]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[TypeDiscriminator] = @Data
+		[TypeDiscriminator] = @Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -44,7 +44,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -66,7 +66,7 @@ USING (SELECT @Key1 AS [InheritanceParentId], @Key2 AS [Name]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[TypeDiscriminator] = @Data
+		[TypeDiscriminator] = @Data
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -85,7 +85,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

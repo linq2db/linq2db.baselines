@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DB_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2012
@@ -26,9 +24,9 @@ BeforeExecute
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Person] [t1]
+	[Person] [p]
 WHERE
-	[t1].[FirstName] = @FirstName
+	[p].[FirstName] = @FirstName
 
