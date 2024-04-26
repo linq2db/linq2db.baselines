@@ -2,9 +2,9 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Max(`x`.`PersonID`)
+	MAX(`p`.`PersonID`)
 FROM
-	`Person` `x`
+	`Person` `p`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

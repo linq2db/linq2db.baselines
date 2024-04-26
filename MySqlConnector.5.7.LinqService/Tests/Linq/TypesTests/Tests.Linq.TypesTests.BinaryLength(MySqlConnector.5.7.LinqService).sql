@@ -12,8 +12,6 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	Length(`t`.`BinaryValue`)
@@ -21,7 +19,7 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`ID` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -2,16 +2,16 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`Key_2`
+	`t2`.`ChildID`
 FROM
 	(
 		SELECT
-			`selectParam`.`ParentID` + 1 as `Key_1`,
-			`selectParam`.`ChildID` as `Key_2`
+			`t1`.`ParentID` + 1 as `c1`,
+			`t1`.`ChildID`
 		FROM
-			`GrandChild` `selectParam`
-	) `t1`
+			`GrandChild` `t1`
+	) `t2`
 GROUP BY
-	`t1`.`Key_1`,
-	`t1`.`Key_2`
+	`t2`.`c1`,
+	`t2`.`ChildID`
 

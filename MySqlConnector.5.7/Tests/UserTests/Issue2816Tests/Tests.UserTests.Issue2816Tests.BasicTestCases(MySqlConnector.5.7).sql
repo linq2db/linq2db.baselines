@@ -45,5 +45,14 @@ WHERE
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Text`
+FROM
+	`Issue2816Table` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
 DROP TABLE IF EXISTS `Issue2816Table`
 

@@ -2,21 +2,19 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_ch`.`ParentID`,
-	`_ch`.`ChildID`
+	`m_1`.`ParentID`,
+	`d`.`ParentID`,
+	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`p`.`ParentID`,
-			`p`.`Value1`
+			`t1`.`ParentID`
 		FROM
-			`Parent` `p`
+			`Parent` `t1`
 		WHERE
-			`p`.`ParentID` = 1
-	) `key_data_result`
-		INNER JOIN `Child` `_ch` ON `_ch`.`ParentID` = `key_data_result`.`ParentID`
+			`t1`.`ParentID` = 1
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -24,16 +22,15 @@ BeforeExecute
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			`Child` `t1`
+			`Child` `ch`
 		WHERE
-			`p`.`ParentID` = `t1`.`ParentID`
+			`t1`.`ParentID` = `ch`.`ParentID`
 	),
-	`p`.`ParentID`,
-	`p`.`Value1`
+	`t1`.`ParentID`
 FROM
-	`Parent` `p`
+	`Parent` `t1`
 WHERE
-	`p`.`ParentID` = 1
+	`t1`.`ParentID` = 1
 

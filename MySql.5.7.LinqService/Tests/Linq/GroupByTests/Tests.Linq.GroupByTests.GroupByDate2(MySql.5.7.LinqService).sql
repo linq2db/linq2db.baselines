@@ -2,19 +2,23 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Sum(`t1`.`MoneyValue`),
-	`t1`.`Key_2`,
-	`t1`.`Key_1`
+	SUM(`grp_1`.`MoneyValue`),
+	`grp_1`.`Year_2`,
+	`grp_1`.`Month_2`
 FROM
 	(
 		SELECT
-			Extract(month from `selectParam`.`DateTimeValue`) as `Key_1`,
-			Extract(year from `selectParam`.`DateTimeValue`) as `Key_2`,
-			`selectParam`.`MoneyValue`
+			Extract(month from `grp`.`DateTimeValue`) as `Month_1`,
+			Extract(year from `grp`.`DateTimeValue`) as `Year_1`,
+			`grp`.`MoneyValue`,
+			Extract(year from `grp`.`DateTimeValue`) as `Year_2`,
+			Extract(month from `grp`.`DateTimeValue`) as `Month_2`
 		FROM
-			`LinqDataTypes` `selectParam`
-	) `t1`
+			`LinqDataTypes` `grp`
+	) `grp_1`
 GROUP BY
-	`t1`.`Key_1`,
-	`t1`.`Key_2`
+	`grp_1`.`Month_1`,
+	`grp_1`.`Year_1`,
+	`grp_1`.`Year_2`,
+	`grp_1`.`Month_2`
 

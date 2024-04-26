@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE   `gc`
 FROM
-	`GrandChild` `t1`
+	`GrandChild` `gc`
 WHERE
-	`t1`.`GrandChildID` IN (1001, 1002)
+	`gc`.`GrandChildID` IN (1001, 1002)
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

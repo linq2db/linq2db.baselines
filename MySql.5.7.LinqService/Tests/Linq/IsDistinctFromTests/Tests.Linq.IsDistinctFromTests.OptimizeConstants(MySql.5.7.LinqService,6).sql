@@ -2,14 +2,23 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*) as `cnt`
+	Count(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*) as `cnt`
-FROM DUAL
+	Count(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 WHERE
 	1 = 0
 

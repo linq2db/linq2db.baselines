@@ -1,8 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Value Int32
-SET     @Value = NULL
+DECLARE @value Int32
+SET     @value = NULL
+DECLARE @p Int32
+SET     @p = 0
 
 SELECT
-	@Value as `c1`
+	@value as `c1`,
+	CASE
+		WHEN 1 = 1 THEN @p
+		ELSE 4
+	END as `c2`
 
