@@ -88,7 +88,7 @@ DECLARE @value Int32
 SET     @value = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -100,7 +100,7 @@ DECLARE @value Int32
 SET     @value = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -112,7 +112,7 @@ DECLARE @value Int32
 SET     @value = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -124,7 +124,7 @@ DECLARE @value Int32
 SET     @value = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE

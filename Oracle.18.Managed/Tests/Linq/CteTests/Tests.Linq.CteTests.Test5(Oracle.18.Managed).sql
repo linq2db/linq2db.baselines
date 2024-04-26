@@ -18,7 +18,7 @@ AS
 		) t1
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 		INNER JOIN CTE_1 c_2 ON p."ParentID" = c_2."ParentID"
@@ -28,7 +28,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 		INNER JOIN (
