@@ -44,18 +44,16 @@ INSERT INTO "PR_1598_Insert_Enum_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age,
-	@Gender
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(3)),
+	CAST(@Age AS Int),
+	CAST(@Gender AS VARCHAR(4))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age",
@@ -82,17 +80,15 @@ INSERT INTO "PR_1598_Insert_Enum_Table"
 )
 VALUES
 (
-	@Id,
-	@Name,
-	@Age
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(5)),
+	CAST(@Age AS Int)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age",

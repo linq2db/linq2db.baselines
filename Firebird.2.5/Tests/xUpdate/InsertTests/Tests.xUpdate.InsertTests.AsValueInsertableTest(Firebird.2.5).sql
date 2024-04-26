@@ -38,15 +38,15 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	Cast(@ID as Int),
-	Cast(@FirstName as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@ID AS Int),
+	CAST(@FirstName AS VARCHAR(4))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE

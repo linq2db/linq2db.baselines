@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."PersonID",
 	"p"."FirstName",
 	"p"."LastName",
@@ -19,10 +17,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."PersonID",
 	"p"."FirstName",
 	"p"."LastName",

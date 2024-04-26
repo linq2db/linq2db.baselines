@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 100
-DECLARE @skip Integer -- Int32
-SET     @skip = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -11,15 +7,17 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" IN (
+	EXISTS(
 		SELECT
-			"t1"."ParentID"
+			*
 		FROM
 			(
-				SELECT FIRST @take SKIP @skip
+				SELECT FIRST 100 SKIP 1
 					"p"."ParentID"
 				FROM
 					"Parent" "p"
 			) "t1"
+		WHERE
+			"c_1"."ParentID" = "t1"."ParentID"
 	)
 

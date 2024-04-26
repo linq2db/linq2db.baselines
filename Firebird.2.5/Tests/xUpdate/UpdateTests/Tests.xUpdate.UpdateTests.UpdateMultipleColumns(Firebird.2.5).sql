@@ -15,9 +15,9 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	Cast(@ID as Int),
-	Cast(@MoneyValue as Decimal),
-	Cast(@SmallIntValue as SmallInt)
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal(4, 0)),
+	CAST(@SmallIntValue AS SmallInt)
 )
 
 BeforeExecute
@@ -26,21 +26,19 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."MoneyValue" = 2000,
-	"LinqDataTypes"."SmallIntValue" = 200
+	"MoneyValue" = 2000,
+	"SmallIntValue" = 200
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
 	"t"."DateTimeValue",

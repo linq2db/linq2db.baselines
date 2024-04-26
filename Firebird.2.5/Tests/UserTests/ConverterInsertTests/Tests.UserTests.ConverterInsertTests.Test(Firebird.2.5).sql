@@ -25,22 +25,20 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
+	CAST(@FirstName AS VARCHAR(3)),
+	CAST(@LastName AS VARCHAR(3)),
+	CAST(@MiddleName AS VARCHAR(3)),
+	CAST(@Gender AS VARCHAR(1))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."PersonID",
 	"t"."FirstName",
 	"t"."LastName",
@@ -53,12 +51,10 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."PersonID",
 	"t"."FirstName",
 	"t"."LastName",

@@ -2,14 +2,14 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value SmallInt -- Int16
-SET     @Value = 1
+DECLARE @param SmallInt -- Int16
+SET     @param = 1
 
 SELECT
 	"t1".ID,
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	@Value = "t1"."SmallIntValue"
+	@param = "t1"."SmallIntValue"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

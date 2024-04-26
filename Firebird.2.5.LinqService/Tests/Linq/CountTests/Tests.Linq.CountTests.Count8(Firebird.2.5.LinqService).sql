@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "p"
 		LEFT JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"
@@ -13,7 +13,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "p"
 		LEFT JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"
