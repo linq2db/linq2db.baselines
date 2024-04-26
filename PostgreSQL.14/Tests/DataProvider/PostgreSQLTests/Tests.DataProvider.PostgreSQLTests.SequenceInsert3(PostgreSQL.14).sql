@@ -53,7 +53,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SequenceTest3" t1
 WHERE

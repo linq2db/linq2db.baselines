@@ -61,7 +61,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -71,7 +71,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -83,7 +83,7 @@ DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE

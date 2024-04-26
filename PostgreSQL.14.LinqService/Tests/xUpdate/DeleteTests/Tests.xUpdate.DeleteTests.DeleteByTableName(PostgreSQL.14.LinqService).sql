@@ -47,7 +47,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" t1
 
@@ -78,7 +78,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" t1
 
