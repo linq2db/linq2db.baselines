@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND ROWNUM <= :take
+	p."PersonID" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -16,7 +14,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -28,7 +26,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -41,7 +39,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -53,7 +51,7 @@ DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE

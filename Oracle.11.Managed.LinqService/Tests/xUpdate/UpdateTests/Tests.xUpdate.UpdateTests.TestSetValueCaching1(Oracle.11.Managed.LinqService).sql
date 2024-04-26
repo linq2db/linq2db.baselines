@@ -81,25 +81,23 @@ DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value1" = :Value1
+	"Value1" = :Value1
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value1"
 FROM
 	"UpdateSetTest" t1
 WHERE
-	t1."Id" = :id AND ROWNUM <= :take
+	t1."Id" = :id AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -109,25 +107,23 @@ DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value1" = :Value1
+	"Value1" = :Value1
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value1"
 FROM
 	"UpdateSetTest" t1
 WHERE
-	t1."Id" = :id AND ROWNUM <= :take
+	t1."Id" = :id AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

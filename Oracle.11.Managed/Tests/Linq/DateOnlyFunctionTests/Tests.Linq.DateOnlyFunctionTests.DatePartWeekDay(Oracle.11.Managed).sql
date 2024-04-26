@@ -54,7 +54,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Mod(1 + Trunc(t."TransactionDate") - Trunc(t."TransactionDate", 'IW'), 7) + 1
+	MOD(TRUNC(t."TransactionDate") - TRUNC(t."TransactionDate", 'IW') + 1, 7) + 1
 FROM
 	"Transactions" t
 

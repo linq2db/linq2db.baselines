@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT
-			p."ParentID"
+			t1."ParentID"
 		FROM
-			"Child" p
+			"Child" t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 1
 	)
 FROM
-	"Parent" p_1
+	"Parent" p
 

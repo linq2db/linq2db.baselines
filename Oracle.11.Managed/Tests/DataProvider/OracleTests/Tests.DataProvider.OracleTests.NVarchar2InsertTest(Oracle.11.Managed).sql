@@ -32,15 +32,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Decimal(1, 0)
 SET     @id = 3
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."nvarcharDataType"
 FROM
 	"AllTypes" p
 WHERE
-	p.ID = :id AND ROWNUM <= :take
+	p.ID = :id AND ROWNUM <= 2
 
 BeforeExecute
 DisposeTransaction

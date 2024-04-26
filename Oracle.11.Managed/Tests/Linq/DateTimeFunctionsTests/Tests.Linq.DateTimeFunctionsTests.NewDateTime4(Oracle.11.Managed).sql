@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	p."DateTimeValue"
+	EXTRACT(YEAR FROM p."DateTimeValue")
 FROM
 	"LinqDataTypes" p
 

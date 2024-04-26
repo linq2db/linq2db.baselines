@@ -39,8 +39,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."Id",
@@ -48,12 +46,10 @@ SELECT
 FROM
 	"BaseTable" x
 WHERE
-	x."Id" = 1 AND ROWNUM <= :take
+	x."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."Id",
@@ -61,7 +57,7 @@ SELECT
 FROM
 	"BaseTable" x
 WHERE
-	x."Id" = 1 AND x."Value" = 100 AND ROWNUM <= :take
+	x."Id" = 1 AND x."Value" = 100 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

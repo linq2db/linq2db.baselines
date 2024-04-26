@@ -2,17 +2,17 @@
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ParentID" > 1000
+	c_1."ParentID" > 1000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -56,7 +56,7 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
@@ -66,15 +66,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ParentID" > 1000
+	c_1."ParentID" > 1000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" > 1000
+	p."ParentID" > 1000
 

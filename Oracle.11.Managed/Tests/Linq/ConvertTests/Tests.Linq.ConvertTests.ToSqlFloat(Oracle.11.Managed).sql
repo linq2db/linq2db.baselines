@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Cast(t."MoneyValue" as Float)
+	CAST(t."MoneyValue" AS Float)
 FROM
 	"LinqDataTypes" t
 

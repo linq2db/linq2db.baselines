@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Max(t."PersonID")
+	MAX(t1."PersonID")
 FROM
-	"Person" t
+	"Person" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -36,8 +36,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 4
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p2."PersonID",
@@ -48,5 +46,5 @@ SELECT
 FROM
 	"Person" p2
 WHERE
-	(p2."PersonID" > :id OR p2."PersonID" = 0) AND ROWNUM <= :take
+	(p2."PersonID" > :id OR p2."PersonID" = 0) AND ROWNUM <= 2
 

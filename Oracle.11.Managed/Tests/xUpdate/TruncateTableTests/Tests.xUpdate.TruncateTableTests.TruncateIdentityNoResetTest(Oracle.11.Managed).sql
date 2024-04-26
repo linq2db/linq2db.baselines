@@ -65,14 +65,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-INSERT INTO "test_temp"
-(
-	"Field1"
-)
-VALUES
-(
-	1
-)
+TRUNCATE TABLE "test_temp"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -88,8 +81,18 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
+
+INSERT INTO "test_temp"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -113,7 +116,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 3
 	) t3
 WHERE
 	t3.RN > :skip
@@ -149,8 +152,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -174,7 +175,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 3
 	) t3
 WHERE
 	t3.RN > :skip

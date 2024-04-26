@@ -44,13 +44,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Max(t1."Value1"),
-	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1" DESC)
+	MAX(g_1."Value1"),
+	LISTAGG(g_1."Value1", ' -> ') WITHIN GROUP (ORDER BY g_1."Value1" DESC)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value1"
+	g_1."Id",
+	g_1."Value1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

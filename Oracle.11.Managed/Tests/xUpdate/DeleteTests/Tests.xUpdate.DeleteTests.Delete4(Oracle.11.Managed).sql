@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"GrandChild" t1
+	"GrandChild" gc
 WHERE
-	t1."GrandChildID" IN (1001, 1002)
+	gc."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -42,7 +42,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" gc
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" gc
 WHERE

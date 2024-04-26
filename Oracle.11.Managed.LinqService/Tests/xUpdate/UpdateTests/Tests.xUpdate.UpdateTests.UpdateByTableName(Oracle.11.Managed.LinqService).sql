@@ -86,14 +86,12 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_ol" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -104,7 +102,7 @@ SELECT
 FROM
 	"xxPerson_ol" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -120,19 +118,17 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson_ol"
+	"xxPerson_ol" t1
 SET
-	"xxPerson_ol"."FirstName" = :FirstName,
-	"xxPerson_ol"."LastName" = :LastName,
-	"xxPerson_ol"."MiddleName" = :MiddleName,
-	"xxPerson_ol"."Gender" = :Gender
+	"FirstName" = :FirstName,
+	"LastName" = :LastName,
+	"MiddleName" = :MiddleName,
+	"Gender" = :Gender
 WHERE
-	"xxPerson_ol"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
@@ -143,7 +139,7 @@ SELECT
 FROM
 	"xxPerson_ol" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
