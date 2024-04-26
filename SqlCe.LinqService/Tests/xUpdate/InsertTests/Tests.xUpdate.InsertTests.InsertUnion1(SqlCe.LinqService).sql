@@ -36,7 +36,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [c_1]
 WHERE

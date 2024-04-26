@@ -26,7 +26,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE
@@ -61,7 +61,7 @@ DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE

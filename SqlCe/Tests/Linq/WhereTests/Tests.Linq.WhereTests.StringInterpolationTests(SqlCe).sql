@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
@@ -16,7 +16,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [t1]
 

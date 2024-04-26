@@ -33,7 +33,7 @@ DECLARE @CEnum NVarChar -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
@@ -45,7 +45,7 @@ DECLARE @CEnum NVarChar -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE

@@ -32,7 +32,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE
@@ -54,7 +54,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE

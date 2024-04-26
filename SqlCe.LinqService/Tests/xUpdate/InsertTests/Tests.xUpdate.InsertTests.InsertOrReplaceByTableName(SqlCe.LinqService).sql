@@ -82,7 +82,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[xxPatient] [t1]
 
@@ -118,7 +118,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[xxPatient] [t1]
 

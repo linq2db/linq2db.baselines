@@ -61,7 +61,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -71,7 +71,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -83,7 +83,7 @@ DECLARE @GuidValue NVarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE

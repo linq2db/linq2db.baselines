@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Patient] [r]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Patient] [r]
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Patient] [r]
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Patient] [r]
 WHERE

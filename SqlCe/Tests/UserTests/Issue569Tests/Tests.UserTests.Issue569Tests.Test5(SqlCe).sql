@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*) as [COUNT_1]
+	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [t1]
 		CROSS JOIN [Child] [child_1]
