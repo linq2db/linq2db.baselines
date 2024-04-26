@@ -6,15 +6,7 @@ SELECT
 	p."Value1"
 FROM
 	"Parent" p
-		LEFT JOIN (
-			SELECT
-				c_1."ParentID" as ch,
-				c_1."ChildID"
-			FROM
-				"Child" c_1
-			WHERE
-				c_1."ParentID" > 0
-		) t1 ON p."ParentID" = t1.ch
+		LEFT JOIN "Child" ch ON p."ParentID" = ch."ParentID" AND ch."ParentID" > 0
 WHERE
-	t1.ch IS NULL AND t1."ChildID" IS NULL
+	ch."ParentID" IS NULL
 

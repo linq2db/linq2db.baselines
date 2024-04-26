@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(month from t."DateTimeValue")) as int)
+	Floor(Extract(month From t."DateTimeValue"))::Int
 FROM
 	"LinqDataTypes" t
 
