@@ -53,9 +53,10 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[NotNullParent] [p]
+		LEFT JOIN [NotNullChild] [a_ChildOuter] ON [p].[ID] = [a_ChildOuter].[ParentID]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

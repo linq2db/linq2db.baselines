@@ -34,20 +34,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 SELECT
-	[t].[EnumValue]
+	CASE
+		WHEN [g_1].[EnumValue] IS NOT NULL THEN [g_1].[EnumValue]
+		ELSE 0
+	END
 FROM
-	[Issue4167Table] [t]
+	[Issue4167Table] [g_1]
 WHERE
-	[t].[Value] = N'000001'
+	[g_1].[Value] = N'000001'
 GROUP BY
-	[t].[Value],
-	[t].[EnumValue]
+	[g_1].[Value],
+	[g_1].[EnumValue]
 ORDER BY
-	Coalesce([t].[EnumValue], @default)
+	CASE
+		WHEN [g_1].[EnumValue] IS NOT NULL THEN [g_1].[EnumValue]
+		ELSE 0
+	END
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

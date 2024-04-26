@@ -12,9 +12,5 @@ SELECT
 FROM
 	[Person] [c_1]
 WHERE
-	[c_1].[PersonID] = @ID AND CASE
-		WHEN [c_1].[MiddleName] IS NOT NULL
-			THEN Lower(LTrim(RTrim([c_1].[MiddleName])))
-		ELSE N''
-	END = N''
+	[c_1].[PersonID] = @ID AND (Lower(LTrim(RTrim([c_1].[MiddleName]))) = N'' AND [c_1].[MiddleName] IS NOT NULL OR [c_1].[MiddleName] IS NULL)
 

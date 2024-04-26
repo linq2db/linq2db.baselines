@@ -2,17 +2,12 @@
 -- SqlServer.2008
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [id]
-		WHERE
-			[t1].[ParentID] = [id].[ParentID] AND [id].[ChildID] < 30 AND
-			[id].[ChildID] >= 20
-	)
+	COUNT(CASE
+		WHEN [g_1].[ChildID] < 30 AND [g_1].[ChildID] >= 20 THEN 1
+		ELSE NULL
+	END)
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 
