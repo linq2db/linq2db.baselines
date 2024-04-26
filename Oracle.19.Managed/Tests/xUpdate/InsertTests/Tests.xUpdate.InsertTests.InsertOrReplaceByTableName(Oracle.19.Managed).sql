@@ -81,7 +81,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 
@@ -145,7 +145,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 

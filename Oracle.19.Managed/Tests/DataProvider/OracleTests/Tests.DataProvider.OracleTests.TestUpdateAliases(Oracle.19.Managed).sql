@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" t1
 		INNER JOIN "Parent" parent_1 ON parent_1."ParentID" = t1."ParentID"

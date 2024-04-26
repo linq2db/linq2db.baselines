@@ -88,7 +88,7 @@ DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -100,7 +100,7 @@ DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
