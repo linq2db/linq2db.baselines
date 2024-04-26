@@ -2,7 +2,7 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	Sum([o].[OrderID])
+	SUM([o].[OrderID])
 FROM
 	[Orders] [o]
 

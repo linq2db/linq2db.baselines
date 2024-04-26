@@ -38,7 +38,7 @@ DECLARE @Id  -- Int32
 SET     @Id = 5
 
 SELECT
-	Sum([c_1].[Id])
+	SUM([c_1].[Id])
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

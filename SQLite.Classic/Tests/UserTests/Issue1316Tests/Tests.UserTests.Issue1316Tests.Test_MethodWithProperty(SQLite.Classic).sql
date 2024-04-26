@@ -31,16 +31,14 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Item1  -- Int32
 SET     @Item1 = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[ID]
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = @Item1
-LIMIT @take
+	[t1].[ID] = @Item1
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
