@@ -224,29 +224,29 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		t1."Id",
-		t1."Field5",
-		t1."Field4",
-		t1."Field3",
-		t1."Field2",
-		t1."Field1"
+		t1."Id" as "source_Id",
+		t1."Field5" as "source_Field5",
+		t1."Field4" as "source_Field4",
+		t1."Field3" as "source_Field3",
+		t1."Field2" as "source_Field2",
+		t1."Field1" as "source_Field1"
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON (Target."Id" = "Source"."Id")
+ON (Target."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Field1" = Target."Field1" + "Source"."Field5",
-	Target."Field2" = Target."Field2" + "Source"."Field4",
-	Target."Field3" = Target."Field3" + "Source"."Field3",
-	Target."Field4" = Target."Field4" + "Source"."Field2",
-	Target."Field5" = Target."Field5" + "Source"."Field1"
+	"Field1" = Target."Field1" + "Source"."source_Field5",
+	"Field2" = Target."Field2" + "Source"."source_Field4",
+	"Field3" = Target."Field3" + "Source"."source_Field3",
+	"Field4" = Target."Field4" + "Source"."source_Field2",
+	"Field5" = Target."Field5" + "Source"."source_Field1"
 WHERE
-	("Source"."Id" = 3 OR Target."Id" = 4)
+	("Source"."source_Id" = 3 OR Target."Id" = 4)
 DELETE WHERE
-	"Source"."Id" = 3
+	"Source"."source_Id" = 3
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

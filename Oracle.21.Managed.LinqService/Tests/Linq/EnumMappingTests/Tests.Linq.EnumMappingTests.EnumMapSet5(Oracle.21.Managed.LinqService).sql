@@ -28,24 +28,22 @@ DECLARE @TestField Int64
 SET     @TestField = 12
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" r
 SET
-	"LinqDataTypes"."BigIntValue" = :TestField
+	"BigIntValue" = :TestField
 WHERE
-	"LinqDataTypes".ID = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	r.ID = 101 AND r."BigIntValue" = 11
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	r."BigIntValue"
+	r."BigIntValue" as "TestField"
 FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID = 101 AND r."BigIntValue" = 12
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
