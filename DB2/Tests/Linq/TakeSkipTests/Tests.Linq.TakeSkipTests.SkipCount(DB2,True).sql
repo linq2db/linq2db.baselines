@@ -4,7 +4,7 @@ DECLARE @skip Integer(4) -- Int32
 SET     @skip = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
