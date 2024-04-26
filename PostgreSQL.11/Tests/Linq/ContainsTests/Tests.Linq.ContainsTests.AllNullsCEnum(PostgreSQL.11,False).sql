@@ -34,7 +34,7 @@ DECLARE @CEnum Varchar -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -46,7 +46,7 @@ DECLARE @CEnum Varchar -- String
 SET     @CEnum = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
