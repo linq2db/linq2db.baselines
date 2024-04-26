@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	Coalesce((
@@ -12,7 +10,7 @@ SELECT
 				LEFT JOIN `Parent` `a_Parent` ON `ch`.`ParentID` = `a_Parent`.`ParentID`
 		WHERE
 			`ch`.`ChildID` = `c_1`.`ChildID`
-		LIMIT @take
+		LIMIT 1
 	), `c_1`.`ChildID`)
 FROM
 	`Child` `c_1`

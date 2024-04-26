@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Min(`c_1`.`ChildID`)
+	MIN(`c_1`.`ChildID`)
 FROM
 	`Child` `c_1`
 

@@ -29,6 +29,11 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	CASE
+		WHEN `r`.`BigIntValue` IS NOT NULL AND `r`.`IntValue` IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	`r`.`BigIntValue`,
 	`r`.`IntValue`
 FROM

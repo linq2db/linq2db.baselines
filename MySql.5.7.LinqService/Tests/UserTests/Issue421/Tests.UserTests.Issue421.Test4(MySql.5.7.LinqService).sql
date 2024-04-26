@@ -32,24 +32,24 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute

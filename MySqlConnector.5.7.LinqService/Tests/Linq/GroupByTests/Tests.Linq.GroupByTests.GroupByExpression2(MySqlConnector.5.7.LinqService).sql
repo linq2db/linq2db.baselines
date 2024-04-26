@@ -2,10 +2,10 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`selectParam`.`ChildID`,
-	Avg(`selectParam`.`ParentID`)
+	`t1`.`ChildID`,
+	AVG(`t1`.`ParentID`)
 FROM
-	`Child` `selectParam`
+	`Child` `t1`
 GROUP BY
-	`selectParam`.`ChildID`
+	`t1`.`ChildID`
 

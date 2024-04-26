@@ -2,31 +2,31 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t`.`ParentID`,
+	`pp`.`ParentID`,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			`Child` `t1`
+			`Child` `a_Children`
 		WHERE
-			`t`.`ParentID` = `t1`.`ParentID`
+			`pp`.`ParentID` = `a_Children`.`ParentID`
 	)
 FROM
-	`Parent` `t`
+	`Parent` `pp`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t`.`ParentID`,
+	`pp`.`ParentID`,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			`Child` `t1`
+			`Child` `a_Children`
 		WHERE
-			`t`.`ParentID` = `t1`.`ParentID`
+			`pp`.`ParentID` = `a_Children`.`ParentID`
 	)
 FROM
-	`Parent` `t`
+	`Parent` `pp`
 

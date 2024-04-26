@@ -2,9 +2,14 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t`.`MoneyValue`
+	`p_1`.`MoneyValue`
 FROM
-	`LinqDataTypes` `t`
+	(
+		SELECT
+			`p`.`MoneyValue`
+		FROM
+			`LinqDataTypes` `p`
+	) `p_1`
 WHERE
-	`t`.`MoneyValue` > 0
+	`p_1`.`MoneyValue` > 0
 

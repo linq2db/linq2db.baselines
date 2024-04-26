@@ -2,8 +2,8 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Parent` `p`
-		LEFT JOIN `Child` `o` ON `p`.`ParentID` = `o`.`ParentID`
+	`Parent` `t1`
+		LEFT JOIN `Child` `c_1` ON `t1`.`ParentID` = `c_1`.`ParentID`
 

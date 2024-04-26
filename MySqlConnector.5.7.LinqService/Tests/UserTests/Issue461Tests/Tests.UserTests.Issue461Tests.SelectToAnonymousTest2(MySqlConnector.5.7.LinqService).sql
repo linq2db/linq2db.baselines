@@ -1,19 +1,28 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`l`.`ParentID`
-FROM
-	`Child` `l`
-LIMIT @take
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	1
+	(
+		SELECT
+			`l`.`ParentID` + 1
+		FROM
+			`Child` `l`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`l_1`.`ParentID` + 1
+		FROM
+			`Child` `l_1`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`l_2`.`ParentID`
+		FROM
+			`Child` `l_2`
+		LIMIT 1
+	)
 FROM
 	`Parent` `sep`
 

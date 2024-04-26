@@ -2,21 +2,21 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
-	(Concat(`p`.`LastName`, ', ', `p`.`FirstName`) = Concat(`p`.`LastName`, ', ', `p`.`FirstName`) OR Concat(`p`.`LastName`, ', ', `p`.`FirstName`) IS NULL AND Concat(`p`.`LastName`, ', ', `p`.`FirstName`) IS NULL) AND
-	(Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') = Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') OR Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') IS NULL AND Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') IS NULL) AND
-	(Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') = Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') OR Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') IS NULL AND Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') IS NULL) AND
-	(Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') = Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') OR Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') IS NULL AND Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') IS NULL) AND
-	(Concat('{}', `p`.`LastName`) = Concat('{}', `p`.`LastName`) OR Concat('{}', `p`.`LastName`) IS NULL AND Concat('{}', `p`.`LastName`) IS NULL)
+	Concat(`p`.`LastName`, ', ', `p`.`FirstName`) = Concat(`p`.`LastName`, ', ', `p`.`FirstName`) AND
+	Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') = Concat('<', `p`.`LastName`, ', ', `p`.`FirstName`, '>') AND
+	Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') = Concat('<', `p`.`LastName`, `p`.`FirstName`, '>') AND
+	Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') = Concat('<{p.LastName}, ', `p`.`FirstName`, ' {', `p`.`LastName`, '}>') AND
+	Concat('{}', `p`.`LastName`) = Concat('{}', `p`.`LastName`)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `t1`
 

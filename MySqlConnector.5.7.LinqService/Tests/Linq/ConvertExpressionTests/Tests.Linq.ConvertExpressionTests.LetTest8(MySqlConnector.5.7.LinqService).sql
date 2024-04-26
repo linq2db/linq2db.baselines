@@ -2,62 +2,59 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
-FROM
 	(
-		SELECT DISTINCT
-			`p`.`ParentID`
+		SELECT
+			`c_1`.`ParentID`
 		FROM
-			`Parent` `p`
-	) `key_data_result`
-		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100 AND `_c`.`ParentID` > 0
-ORDER BY
-	`_c`.`ChildID`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`key_data_result`.`ParentID`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
-FROM
-	(
-		SELECT DISTINCT
-			`p`.`ParentID`
-		FROM
-			`Parent` `p`
-	) `key_data_result`
-		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID` AND `_c`.`ChildID` > -100
-ORDER BY
-	`_c`.`ChildID`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`p`.`ParentID`,
+			`Child` `c_1`
+		WHERE
+			`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100 AND
+			`c_1`.`ParentID` > 0
+		ORDER BY
+			`c_1`.`ChildID`
+		LIMIT 1
+	),
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				`Child` `c_1`
+				`Child` `c_2`
 			WHERE
-				`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100
+				`c_2`.`ParentID` = `p`.`ParentID` AND `c_2`.`ChildID` > -100
 		)
 			THEN 1
 		ELSE 0
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			`Child` `c_2`
+			`Child` `c_3`
 		WHERE
-			`c_2`.`ParentID` = `p`.`ParentID` AND `c_2`.`ChildID` > -100
+			`c_3`.`ParentID` = `p`.`ParentID` AND `c_3`.`ChildID` > -100
+	),
+	(
+		SELECT
+			`c_4`.`ParentID`
+		FROM
+			`Child` `c_4`
+		WHERE
+			`c_4`.`ParentID` = `p`.`ParentID` AND `c_4`.`ChildID` > -100
+		ORDER BY
+			`c_4`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`c_5`.`ChildID`
+		FROM
+			`Child` `c_5`
+		WHERE
+			`c_5`.`ParentID` = `p`.`ParentID` AND `c_5`.`ChildID` > -100
+		ORDER BY
+			`c_5`.`ChildID`
+		LIMIT 1
 	)
 FROM
 	`Parent` `p`

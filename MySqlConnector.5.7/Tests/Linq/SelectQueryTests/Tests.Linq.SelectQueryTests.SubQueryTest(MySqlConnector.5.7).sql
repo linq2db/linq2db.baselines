@@ -24,45 +24,68 @@ VALUES
 (1,100)
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`t2`.`Value1`,
-	`t2`.`Value2`
-FROM
-	(
-		SELECT
-			Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day) as `Value1`,
-			Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
-		FROM
-			`SampleClass` `t`
-		WHERE
-			`t`.`Value` = 1
-		UNION
-		SELECT
-			`t1`.`Value1`,
-			`t1`.`Value2`
-		FROM
-			(
-				SELECT
-					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
-					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
-			) `t1`
-	) `t2`
-LIMIT @take
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t`.`Id`,
-	`t`.`Value`
+	`t`.`Value`,
+	(
+		SELECT
+			1
+		FROM
+			(
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval `t_1`.`Value` Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+				FROM
+					`SampleClass` `t_1`
+				WHERE
+					`t_1`.`Value` = 1
+				UNION
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
+			) `t1`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`t2`.`Value1`
+		FROM
+			(
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval `t_2`.`Value` Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+				FROM
+					`SampleClass` `t_2`
+				WHERE
+					`t_2`.`Value` = 1
+				UNION
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
+			) `t2`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`t3`.`Value2`
+		FROM
+			(
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval `t_3`.`Value` Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+				FROM
+					`SampleClass` `t_3`
+				WHERE
+					`t_3`.`Value` = 1
+				UNION
+				SELECT
+					Date_Add(CURRENT_TIMESTAMP, Interval 3 Day) as `Value1`,
+					Date_Add(CURRENT_TIMESTAMP, Interval 4 Day) as `Value2`
+			) `t3`
+		LIMIT 1
+	)
 FROM
 	`SampleClass` `t`
 

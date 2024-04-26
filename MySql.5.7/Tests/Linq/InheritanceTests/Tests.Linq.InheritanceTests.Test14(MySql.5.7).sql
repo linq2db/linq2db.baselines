@@ -2,14 +2,12 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 10
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`x`.`ChildID`
+	`c_1`.`ChildID`
 FROM
-	`Child` `x`
+	`Child` `c_1`
 WHERE
-	`x`.`ChildID` = @id
-LIMIT @take
+	`c_1`.`ChildID` = @id
+LIMIT 1
 

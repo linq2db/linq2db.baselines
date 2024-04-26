@@ -2,14 +2,23 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*) as `cnt`
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*) as `cnt`
-FROM DUAL
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as `ID`
+	) `s`
 WHERE
 	1 = 0
 

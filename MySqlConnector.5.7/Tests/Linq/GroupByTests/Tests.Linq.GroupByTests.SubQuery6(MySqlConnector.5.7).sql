@@ -2,14 +2,14 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`ParentID`
+	`g_2`.`ParentID`
 FROM
 	(
 		SELECT
-			`ch`.`ParentID` + 1 as `ParentID`
+			`g_1`.`ParentID` + 1 as `ParentID`
 		FROM
-			`Child` `ch`
-	) `t1`
+			`Child` `g_1`
+	) `g_2`
 GROUP BY
-	`t1`.`ParentID`
+	`g_2`.`ParentID`
 

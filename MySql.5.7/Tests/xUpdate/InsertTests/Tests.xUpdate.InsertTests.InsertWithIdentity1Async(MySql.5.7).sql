@@ -30,8 +30,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -43,7 +41,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

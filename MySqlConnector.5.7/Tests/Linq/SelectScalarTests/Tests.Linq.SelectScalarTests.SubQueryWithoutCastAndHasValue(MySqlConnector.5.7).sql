@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`ParentID`,
-	`_`.`Value1`
+	`t1`.`ParentID`,
+	`t1`.`Value1`
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
 	(
 		SELECT
 			`r`.`Value1`
 		FROM
 			`Parent` `r`
-		LIMIT @take
+		LIMIT 1
 	) IS NOT NULL
 

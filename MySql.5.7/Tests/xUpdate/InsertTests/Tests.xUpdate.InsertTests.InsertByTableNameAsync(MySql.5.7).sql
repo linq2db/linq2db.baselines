@@ -104,7 +104,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
@@ -112,7 +112,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `p`
 WHERE

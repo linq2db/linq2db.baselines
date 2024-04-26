@@ -2,7 +2,8 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`_`.`ParentID`
+	`t1`.`ParentID` + 1,
+	`t1`.`ParentID`
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 

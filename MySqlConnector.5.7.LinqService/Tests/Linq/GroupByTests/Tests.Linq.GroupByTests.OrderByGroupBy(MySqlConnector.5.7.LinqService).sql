@@ -2,11 +2,11 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`ParentID`
+	`c2`.`ParentID`
 FROM
-	`Child` `t1`
+	`Child` `c2`
 GROUP BY
-	`t1`.`ParentID`
+	`c2`.`ParentID`
 ORDER BY
-	`t1`.`ParentID`
+	`c2`.`ParentID`
 
