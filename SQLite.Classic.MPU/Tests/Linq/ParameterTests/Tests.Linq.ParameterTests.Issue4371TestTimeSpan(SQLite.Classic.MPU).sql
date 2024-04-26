@@ -45,7 +45,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnTS] = @ts
+	CAST([r].[ColumnTS] AS Time) = CAST(@ts AS Time)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

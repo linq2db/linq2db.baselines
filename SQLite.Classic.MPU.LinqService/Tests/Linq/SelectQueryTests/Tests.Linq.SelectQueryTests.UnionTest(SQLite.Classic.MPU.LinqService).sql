@@ -16,48 +16,36 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day'),
-	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day')
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([t].[Value] AS NVarChar(11)) || ' Day'),
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day')
 FROM
 	[SampleClass] [t]
 WHERE
 	[t].[Value] = 1
 UNION
 SELECT
-	[t1].[Value1],
-	[t1].[Value2]
-FROM
-	(
-		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
-	) [t1]
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day'),
+	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day')
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[v].[Value2]
+	[v_1].[Value2]
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,[t].[Value] || ' Day') as [Value1],
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,2 || ' Day') as [Value2]
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([v].[Value] AS NVarChar(11)) || ' Day') as [Value1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day') as [Value2]
 		FROM
-			[SampleClass] [t]
+			[SampleClass] [v]
 		WHERE
-			[t].[Value] = 1
+			[v].[Value] = 1
 		UNION
 		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
-		FROM
-			(
-				SELECT
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,3 || ' Day') as [Value1],
-					strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP,4 || ' Day') as [Value2]
-			) [t1]
-	) [v]
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day') as [Value1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day') as [Value2]
+	) [v_1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

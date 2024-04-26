@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param NVarChar(4) -- String
-SET     @param = 'john'
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'john'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) = @param AND [p].[PersonID] = 1
+	Lower([p].[FirstName]) = @p AND [p].[PersonID] = 1
 

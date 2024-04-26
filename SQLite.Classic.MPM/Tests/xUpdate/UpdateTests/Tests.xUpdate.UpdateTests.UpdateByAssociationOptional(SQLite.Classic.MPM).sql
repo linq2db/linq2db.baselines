@@ -59,12 +59,10 @@ UPDATE
 SET
 	[Field] = 'test'
 FROM
-	[MainTable] [_]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
-		LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id]
+	[MainTable] [t1]
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [t1].[Id] = [a_AssociatedOptional].[Id]
 WHERE
-	[_].[Id] = @id AND [MainTable].[Id] = [a_MainOptional].[Id] AND
-	([MainTable].[Field] = [a_MainOptional].[Field] OR [MainTable].[Field] IS NULL AND [a_MainOptional].[Field] IS NULL)
+	[t1].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

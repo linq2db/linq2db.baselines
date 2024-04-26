@@ -2,11 +2,11 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 GROUP BY
-	[t1].[ParentID]
+	[c_1].[ParentID]
 HAVING
-	Count(*) > 1
+	COUNT(*) > 1
 

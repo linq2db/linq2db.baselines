@@ -10,22 +10,22 @@ SELECT '2012-12-12 12:12:12'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- DateTime
-SET     @p = '2012-12-12 12:12:12'
+DECLARE @p VarChar(23) -- AnsiString
+SET     @p = '2012-12-12 12:12:12.000'
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- DateTime
-SET     @p = '2012-12-12 12:12:12'
+DECLARE @p VarChar(23) -- AnsiString
+SET     @p = '2012-12-12 12:12:12.000'
 
 SELECT @p
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- DateTime
-SET     @p = '2012-12-12 12:12:12'
+DECLARE @p VarChar(23) -- AnsiString
+SET     @p = '2012-12-12 12:12:12.000'
 
 SELECT @p
 
