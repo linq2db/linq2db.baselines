@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "t1"
 		CROSS JOIN "Child" "child_1"
