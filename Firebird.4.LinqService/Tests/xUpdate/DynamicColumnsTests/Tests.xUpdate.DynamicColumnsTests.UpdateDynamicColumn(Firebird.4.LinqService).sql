@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -9,9 +15,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	CAST(@FirstName AS VARCHAR(4)),
+	CAST(@LastName AS VARCHAR(10)),
+	CAST(@Gender AS CHAR(1))
 )
 
 BeforeExecute
@@ -28,11 +34,11 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Firebird.4 Firebird4

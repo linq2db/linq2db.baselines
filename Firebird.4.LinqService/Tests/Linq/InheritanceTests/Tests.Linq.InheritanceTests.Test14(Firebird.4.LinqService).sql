@@ -2,14 +2,12 @@
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 10
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	"x"."ChildID"
+	"c_1"."ChildID"
 FROM
-	"Child" "x"
+	"Child" "c_1"
 WHERE
-	"x"."ChildID" = @id
-FETCH NEXT @take ROWS ONLY
+	"c_1"."ChildID" = @id
+FETCH NEXT 1 ROWS ONLY
 

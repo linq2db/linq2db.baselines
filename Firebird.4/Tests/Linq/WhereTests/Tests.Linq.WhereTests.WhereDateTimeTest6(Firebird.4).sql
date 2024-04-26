@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Date TimeStamp -- DateTime
-SET     @Date = CAST('2009-09-20' AS timestamp)
 
 SELECT
 	"t1".ID,
@@ -17,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	Cast("t1"."DateTimeValue" as Date) = @Date
+	CAST("t1"."DateTimeValue" AS Date) = CAST(CAST('2009-09-20' AS TimeStamp) AS Date)
 

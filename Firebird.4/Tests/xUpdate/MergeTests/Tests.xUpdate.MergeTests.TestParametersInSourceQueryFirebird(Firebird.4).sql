@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -226,21 +226,21 @@ SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id",
-		Cast(@param as TimeStamp) as "source_field0"
+		"t1"."Id" as "source_Id",
+		CAST(@param AS TimeStamp) as "source_Val"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"Id",
-	"source_field0"
+	"source_Id",
+	"source_Val"
 )
-ON ("Target"."Id" = "Source"."Id" AND "Source"."source_field0" IS NOT NULL)
+ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Field1" = 111
+	"Field1" = 111
 
 BeforeExecute
 -- Firebird.4 Firebird4

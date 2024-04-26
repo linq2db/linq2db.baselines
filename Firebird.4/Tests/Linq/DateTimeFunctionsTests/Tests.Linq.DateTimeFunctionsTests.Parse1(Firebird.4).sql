@@ -2,14 +2,9 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"d"."c1"
+	CAST("d"."DateTimeValue" AS Date)
 FROM
-	(
-		SELECT
-			"t"."DateTimeValue" as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "d"
+	"LinqDataTypes" "d"
 WHERE
-	Cast(Floor(Extract(day from "d"."c1")) as int) > 0
+	Extract(day from "d"."DateTimeValue") > 0
 

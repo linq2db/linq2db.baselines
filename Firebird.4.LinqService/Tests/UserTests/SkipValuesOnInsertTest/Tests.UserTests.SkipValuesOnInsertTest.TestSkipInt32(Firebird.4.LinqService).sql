@@ -37,14 +37,12 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(5))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -54,7 +52,7 @@ FROM
 	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -70,14 +68,12 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS VARCHAR(5))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -87,7 +83,7 @@ FROM
 	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 2
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

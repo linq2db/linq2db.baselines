@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -228,16 +228,16 @@ SET     @idx = 6
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id",
-		"t1"."Field2"
+		"t1"."Id" as "source_Id",
+		"t1"."Field2" as "source_Field2"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"Id",
-	"Field2"
+	"source_Id",
+	"source_Field2"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -251,10 +251,10 @@ INSERT
 )
 VALUES
 (
-	10 + "Source"."Id",
+	10 + "Source"."source_Id",
 	123,
-	Char_Length(Cast(@name as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@idx as Int),
-	"Source"."Field2",
+	Char_Length(CAST(@name AS VARCHAR(4))) + CAST(@idx AS Int),
+	"Source"."source_Field2",
 	999,
 	888
 )

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."ParentID",
@@ -11,5 +9,5 @@ SELECT
 FROM
 	"Child" "t"
 		LEFT JOIN "Parent" "a_Parent" ON "t"."ParentID" = "a_Parent"."ParentID"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

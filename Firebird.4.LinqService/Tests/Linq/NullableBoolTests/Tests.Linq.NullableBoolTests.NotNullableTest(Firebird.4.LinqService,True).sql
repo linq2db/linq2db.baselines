@@ -30,7 +30,7 @@ INSERT INTO "NotNullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS BOOLEAN)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "NotNullableBoolClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS BOOLEAN)
 )
 
 BeforeExecute

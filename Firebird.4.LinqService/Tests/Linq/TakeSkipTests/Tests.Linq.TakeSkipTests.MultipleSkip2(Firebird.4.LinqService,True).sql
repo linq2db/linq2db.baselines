@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
@@ -72,13 +72,11 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	@Value
+	CAST(@Value AS VarChar(5) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @skip Integer -- Int32
-SET     @skip = 3
 
 SELECT
 	"t1"."Value"
@@ -86,12 +84,10 @@ FROM
 	"TakeSkipClass" "t1"
 ORDER BY
 	"t1"."Value"
-OFFSET @skip ROWS
+OFFSET 3 ROWS
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @skip Integer -- Int32
-SET     @skip = 4
 
 SELECT
 	"t1"."Value"
@@ -99,7 +95,7 @@ FROM
 	"TakeSkipClass" "t1"
 ORDER BY
 	"t1"."Value"
-OFFSET @skip ROWS
+OFFSET 4 ROWS
 
 BeforeExecute
 -- Firebird.4 Firebird4
