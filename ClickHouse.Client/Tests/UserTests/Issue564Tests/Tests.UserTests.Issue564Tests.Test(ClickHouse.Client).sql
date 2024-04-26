@@ -43,14 +43,14 @@ INSERT INTO Parent564
 VALUES
 (
 	'Child564B',
-	toInt32(911)
+	911
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent564 t1
 

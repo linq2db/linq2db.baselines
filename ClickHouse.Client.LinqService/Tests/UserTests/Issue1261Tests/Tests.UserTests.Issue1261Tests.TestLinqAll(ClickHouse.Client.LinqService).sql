@@ -3,14 +3,14 @@
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				GrandChild x
 			WHERE
-				x.ParentID = toInt32(1) AND NOT (x.ChildID = toInt32(11) AND x.GrandChildID = toInt32(777))
-		))
+				x.ParentID = 1 AND NOT (x.ChildID = 11 AND x.GrandChildID = 777)
+		)
 			THEN true
 		ELSE false
 	END
@@ -20,14 +20,14 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				GrandChild x
 			WHERE
-				x.ParentID = toInt32(1) AND NOT (x.GrandChildID = toInt32(777) AND x.ChildID = toInt32(11))
-		))
+				x.ParentID = 1 AND NOT (x.GrandChildID = 777 AND x.ChildID = 11)
+		)
 			THEN true
 		ELSE false
 	END

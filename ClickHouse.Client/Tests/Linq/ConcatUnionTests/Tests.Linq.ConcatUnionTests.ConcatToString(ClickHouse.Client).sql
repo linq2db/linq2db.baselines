@@ -17,7 +17,7 @@ FROM
 		FROM
 			Person p_1
 		WHERE
-			(position(toString(p_1.PersonID), '1') > toInt32(0))
+			position(toString(p_1.PersonID), '1') > 0
 	) t1
-LIMIT toInt32(10)
+LIMIT 10
 

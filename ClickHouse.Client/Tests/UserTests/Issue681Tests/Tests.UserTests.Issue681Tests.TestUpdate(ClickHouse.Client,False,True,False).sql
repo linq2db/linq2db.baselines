@@ -22,8 +22,8 @@ BeforeExecute
 SELECT
 	currentDatabase()
 FROM
-	LinqDataTypes _
-LIMIT toInt32(1)
+	LinqDataTypes t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -31,9 +31,9 @@ BeforeExecute
 ALTER TABLE
 	testdb2.Issue681Table
 UPDATE
-	Value = toInt32(10)
+	Value = 10
 WHERE
-	ID = toInt32(5)
+	ID = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

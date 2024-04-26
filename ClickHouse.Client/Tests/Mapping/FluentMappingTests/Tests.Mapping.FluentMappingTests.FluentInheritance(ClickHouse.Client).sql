@@ -2,27 +2,27 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.PersonID,
-	_.Gender,
-	_.FirstName,
-	_.LastName
+	t1.Gender,
+	t1.PersonID,
+	t1.LastName,
+	t1.FirstName
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1)
-LIMIT toInt32(1)
+	t1.PersonID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.PersonID,
-	_.Gender,
-	_.FirstName,
-	_.LastName
+	t1.Gender,
+	t1.PersonID,
+	t1.LastName,
+	t1.FirstName
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(3)
-LIMIT toInt32(1)
+	t1.PersonID = 3
+LIMIT 1
 

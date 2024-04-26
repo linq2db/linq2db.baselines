@@ -7,7 +7,7 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
+				Person t1
 			WHERE
 				1 = 0
 		)

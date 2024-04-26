@@ -7,9 +7,9 @@ SELECT
 FROM
 	Child ch
 WHERE
-	(ch.ChildID > toInt32(3) OR ch.ChildID < toInt32(4))
+	(ch.ChildID > 3 OR ch.ChildID < 4)
 ORDER BY
 	ch.ParentID,
 	ch.ChildID
-LIMIT toInt32(3), 18446744073709551615
+LIMIT 3, 18446744073709551615
 

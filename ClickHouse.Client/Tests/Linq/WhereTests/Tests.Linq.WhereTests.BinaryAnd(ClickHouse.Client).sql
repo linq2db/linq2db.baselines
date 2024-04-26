@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	bitAnd(p.PersonID, toInt32(3)) = toInt32(1)
+	bitAnd(p.PersonID, 3) = 1
 

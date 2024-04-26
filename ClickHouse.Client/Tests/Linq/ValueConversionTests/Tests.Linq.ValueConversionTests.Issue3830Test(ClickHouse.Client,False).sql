@@ -26,10 +26,10 @@ INSERT INTO Issue3830TestTable
 	Bool3
 )
 VALUES
-(toInt32(1),'Y',NULL,NULL),
-(toInt32(2),'N',NULL,'Y'),
-(toInt32(3),'N','Y',NULL),
-(toInt32(4),'Y','N','Y')
+(1,'Y',NULL,NULL),
+(2,'N',NULL,'Y'),
+(3,'N','Y',NULL),
+(4,'Y','N','Y')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

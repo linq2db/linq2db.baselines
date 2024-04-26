@@ -27,16 +27,16 @@ INSERT INTO WhereCases
 	NullableBoolValue
 )
 VALUES
-(toInt32(1),true,NULL),
-(toInt32(2),true,true),
-(toInt32(3),true,NULL),
-(toInt32(4),true,true),
-(toInt32(5),true,true),
-(toInt32(11),false,NULL),
-(toInt32(12),false,false),
-(toInt32(13),false,NULL),
-(toInt32(14),false,false),
-(toInt32(15),false,false)
+(1,true,NULL),
+(2,true,true),
+(3,true,NULL),
+(4,true,true),
+(5,true,true),
+(11,false,NULL),
+(12,false,false),
+(13,false,NULL),
+(14,false,false),
+(15,false,false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -58,7 +58,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.Id > toInt32(0)
+	t.BoolValue = false AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,7 +70,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.Id > toInt32(0))
+	NOT (t.BoolValue = false AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -82,7 +82,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = true AND t.Id > toInt32(0)
+	t.BoolValue = true AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -94,7 +94,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = true AND t.Id > toInt32(0))
+	NOT (t.BoolValue = true AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -106,7 +106,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = true AND t.Id > toInt32(0)
+	t.BoolValue = true AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -118,7 +118,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = true AND t.Id > toInt32(0))
+	NOT (t.BoolValue = true AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -130,7 +130,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.Id > toInt32(0)
+	t.BoolValue = false AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -142,7 +142,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.Id > toInt32(0))
+	NOT (t.BoolValue = false AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -154,7 +154,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.Id > toInt32(0)
+	t.BoolValue = false AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -166,7 +166,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.Id > toInt32(0))
+	NOT (t.BoolValue = false AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -179,7 +179,7 @@ FROM
 	WhereCases t
 WHERE
 	(t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
-	t.Id > toInt32(0)
+	t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -191,7 +191,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT ((t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > toInt32(0))
+	NOT ((t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -203,8 +203,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	(t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL) AND
-	t.Id > toInt32(0)
+	t.NullableBoolValue = true AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -216,7 +215,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT ((t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL) AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -228,7 +227,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue = true AND t.Id > toInt32(0)
+	t.NullableBoolValue = true AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -240,7 +239,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue = true AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -252,7 +251,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue IS NULL AND t.Id > toInt32(0)
+	t.NullableBoolValue IS NULL AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -264,7 +263,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.NullableBoolValue IS NULL AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue IS NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -276,7 +275,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0)
+	t.NullableBoolValue IS NOT NULL AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -288,7 +287,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -300,7 +299,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0)
+	t.NullableBoolValue IS NOT NULL AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -312,7 +311,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -324,7 +323,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.NullableBoolValue IS NULL AND t.Id > toInt32(0)
+	t.NullableBoolValue IS NULL AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -336,7 +335,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.NullableBoolValue IS NULL AND t.Id > toInt32(0))
+	NOT (t.NullableBoolValue IS NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -349,7 +348,7 @@ FROM
 	WhereCases t
 WHERE
 	t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
-	t.Id > toInt32(0)
+	t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -361,7 +360,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > toInt32(0))
+	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -374,7 +373,7 @@ FROM
 	WhereCases t
 WHERE
 	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND
-	t.Id > toInt32(0)
+	t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -386,7 +385,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > toInt32(0))
+	NOT (NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -399,7 +398,7 @@ FROM
 	WhereCases t
 WHERE
 	t.BoolValue = false AND t.NullableBoolValue = false AND
-	t.Id > toInt32(0)
+	t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -411,7 +410,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > toInt32(0))
+	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -424,7 +423,7 @@ FROM
 	WhereCases t
 WHERE
 	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND
-	t.Id > toInt32(0)
+	t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -436,7 +435,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > toInt32(0))
+	NOT (NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

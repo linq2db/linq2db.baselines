@@ -23,9 +23,9 @@ INSERT INTO Fact
 	Id
 )
 VALUES
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5))
+(3),
+(4),
+(5)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -56,10 +56,10 @@ INSERT INTO Tag
 	Name
 )
 VALUES
-(toInt32(1),toInt32(3),'Tag3'),
-(toInt32(2),toInt32(3),'Tag3'),
-(toInt32(3),toInt32(4),'Tag4'),
-(toInt32(4),toInt32(6),'Tag6')
+(1,3,'Tag3'),
+(2,3,'Tag3'),
+(3,4,'Tag4'),
+(4,6,'Tag6')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -73,7 +73,7 @@ FROM
 	Tag ft
 		FULL JOIN Fact f ON ft.FactId = f.Id
 WHERE
-	(f.Id > toInt32(3) OR ft.FactId > toInt32(3))
+	(f.Id > 3 OR ft.FactId > 3)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -24,8 +24,8 @@ INSERT INTO GuidTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL),
-(toInt32(2),toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
+(1,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL),
+(2,toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -71,7 +71,7 @@ INSERT INTO GuidTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),
 	NULL
 )
@@ -87,7 +87,7 @@ INSERT INTO GuidTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),
 	toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 )
@@ -121,8 +121,8 @@ INSERT INTO GuidTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL),
-(toInt32(2),toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
+(1,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL),
+(2,toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

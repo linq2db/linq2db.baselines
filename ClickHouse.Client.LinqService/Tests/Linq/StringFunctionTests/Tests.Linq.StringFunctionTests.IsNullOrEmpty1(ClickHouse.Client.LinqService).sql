@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT (p.FirstName IS NULL OR CHAR_LENGTH(p.FirstName) = toInt32(0)) AND
-	p.PersonID = toInt32(1)
+	NOT (p.FirstName IS NULL OR CHAR_LENGTH(p.FirstName) = 0) AND
+	p.PersonID = 1
 

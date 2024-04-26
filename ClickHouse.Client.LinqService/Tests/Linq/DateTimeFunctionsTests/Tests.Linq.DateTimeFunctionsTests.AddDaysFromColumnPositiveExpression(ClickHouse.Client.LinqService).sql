@@ -14,7 +14,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(5000),
+	5000,
 	toDecimal64('0', 4),
 	toDateTime64('2018-01-03 00:00:00.000', 3),
 	false,
@@ -28,11 +28,11 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(5000) AND addDays(t.DateTimeValue, toInt32(t.SmallIntValue)) > toDateTime64('2018-01-02 00:00:00.0000000', 7)
+	t.ID = 5000 AND addDays(t.DateTimeValue, (toInt32(t.SmallIntValue) + toInt16(4)) - 4) > makeDateTime(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -40,5 +40,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID = toInt32(5000)
+	ID = 5000
 

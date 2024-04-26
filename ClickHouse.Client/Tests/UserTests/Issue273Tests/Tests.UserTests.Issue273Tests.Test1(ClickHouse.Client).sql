@@ -7,5 +7,5 @@ SELECT
 FROM
 	LinqDataTypes x
 WHERE
-	x.BigIntValue IN (toInt32(0), toInt32(1))
+	x.BigIntValue IN (0, 1)
 

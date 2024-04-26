@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	CHAR_LENGTH(nm.FirstName) <> toInt32(0)
+	CHAR_LENGTH(nm.FirstName) <> 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
