@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Convert(NVarChar(11), Len(@name) + @idx),
+	CAST(Len(@name) + @idx AS NVarChar(11)),
 	'M'
 )
 
@@ -30,11 +30,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe

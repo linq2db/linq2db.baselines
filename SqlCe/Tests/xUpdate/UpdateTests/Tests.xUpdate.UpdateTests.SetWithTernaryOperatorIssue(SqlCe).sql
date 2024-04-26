@@ -36,31 +36,29 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value NVarChar(1) -- String
-SET     @Value = 'O'
+DECLARE @nullableGender NVarChar(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
 	[Person]
 SET
-	[Person].[Gender] = @Value
+	[Gender] = @nullableGender
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+SELECT TOP (1)
+	[t1].[PersonID] as [ID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

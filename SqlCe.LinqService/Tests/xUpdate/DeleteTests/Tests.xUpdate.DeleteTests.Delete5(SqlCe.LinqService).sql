@@ -16,8 +16,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1001
 
 INSERT INTO [Parent]
 (
@@ -26,14 +24,12 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@ParentID,
+	1001,
 	1
 )
 
 BeforeExecute
 -- SqlCe
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1002
 
 INSERT INTO [Parent]
 (
@@ -42,7 +38,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@ParentID,
+	1002,
 	1
 )
 
@@ -50,11 +46,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- SqlCe
@@ -68,9 +64,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

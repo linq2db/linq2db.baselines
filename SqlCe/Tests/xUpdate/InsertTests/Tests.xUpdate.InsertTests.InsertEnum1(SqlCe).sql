@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Value1 Int -- Int32
-SET     @Value1 = 2
 
 INSERT INTO [Parent]
 (
@@ -19,7 +17,7 @@ INSERT INTO [Parent]
 VALUES
 (
 	1001,
-	@Value1
+	2
 )
 
 BeforeExecute
@@ -30,11 +28,11 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = @id AND [_].[Value1] = @Value1
+	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 BeforeExecute
 -- SqlCe

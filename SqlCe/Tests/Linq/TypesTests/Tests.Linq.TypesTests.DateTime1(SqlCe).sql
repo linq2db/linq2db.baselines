@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime) > @Date
+	CAST(CONVERT(NVarChar(10), [t].[DateTimeValue], 101) AS DateTime) > @Date
 

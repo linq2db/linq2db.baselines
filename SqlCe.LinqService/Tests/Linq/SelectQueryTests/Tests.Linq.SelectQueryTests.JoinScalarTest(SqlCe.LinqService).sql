@@ -35,14 +35,10 @@ BeforeExecute
 
 SELECT
 	[t].[Id],
-	[t].[Value],
-	[s].[c1]
+	[t].[Value] as [Value_1],
+	1 as [s]
 FROM
 	[SampleClass] [t]
-		INNER JOIN (
-			SELECT
-				1 as [c1]
-		) [s] ON [s].[c1] = [t].[Id]
 
 BeforeExecute
 -- SqlCe
