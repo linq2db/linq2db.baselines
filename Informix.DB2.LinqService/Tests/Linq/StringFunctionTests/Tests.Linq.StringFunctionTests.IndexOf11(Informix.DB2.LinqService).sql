@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @p VarChar(2) -- String
+SET     @p = 'oh'
 
 SELECT
 	p.FirstName,
@@ -10,5 +12,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CharIndex('oh', p.FirstName) = 2 AND p.PersonID = 1
+	CharIndex(@p, p.FirstName) - 1 = 1 AND p.PersonID = 1
 

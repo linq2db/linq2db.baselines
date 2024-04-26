@@ -9,8 +9,8 @@ FROM
 		SELECT
 			c_1.ParentID
 		FROM
-			Parent p,
+			Parent t1,
 			Child c_1
-	) t1
-		INNER JOIN Patient t ON t1.ParentID = t.PersonID
+	) sub
+		INNER JOIN Patient t ON sub.ParentID = t.PersonID
 

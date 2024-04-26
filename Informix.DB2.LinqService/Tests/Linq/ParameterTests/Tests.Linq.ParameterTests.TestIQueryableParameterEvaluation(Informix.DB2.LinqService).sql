@@ -22,7 +22,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -30,14 +30,14 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			p_1.PersonID = @ID AND p_1.PersonID = t1.PersonID
+			p_1.PersonID = @ID AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			@ID_1 <> p_2.PersonID AND p_2.PersonID = t1.PersonID
+			@ID_1 <> p_2.PersonID AND t1.PersonID = p_2.PersonID
 	))
 
 BeforeExecute
@@ -64,7 +64,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			@ID <> p.PersonID AND p.PersonID = t1.PersonID
+			@ID <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -72,14 +72,14 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			@paramCopy = p_1.PersonID AND p_1.PersonID = t1.PersonID
+			@paramCopy = p_1.PersonID AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			@ID_1 <> p_2.PersonID AND p_2.PersonID = t1.PersonID
+			@ID_1 <> p_2.PersonID AND t1.PersonID = p_2.PersonID
 	))
 
 BeforeExecute
@@ -106,7 +106,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			@ID <> p.PersonID AND p.PersonID = t1.PersonID
+			@ID <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -114,14 +114,14 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			p_1.PersonID = @ID_1 AND p_1.PersonID = t1.PersonID
+			p_1.PersonID = @ID_1 AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			p_2.PersonID = @paramCopy AND p_2.PersonID = t1.PersonID
+			p_2.PersonID = @paramCopy AND t1.PersonID = p_2.PersonID
 	))
 
 BeforeExecute
@@ -148,7 +148,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -156,14 +156,14 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			p_1.PersonID = @ID AND p_1.PersonID = t1.PersonID
+			p_1.PersonID = @ID AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			@ID_1 <> p_2.PersonID AND p_2.PersonID = t1.PersonID
+			@ID_1 <> p_2.PersonID AND t1.PersonID = p_2.PersonID
 	))
 
 BeforeExecute
@@ -190,7 +190,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			@ID <> p.PersonID AND p.PersonID = t1.PersonID
+			@ID <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -198,14 +198,14 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			p_1.PersonID = @ID_1 AND p_1.PersonID = t1.PersonID
+			p_1.PersonID = @ID_1 AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			p_2.PersonID = @paramCopy AND p_2.PersonID = t1.PersonID
+			p_2.PersonID = @paramCopy AND t1.PersonID = p_2.PersonID
 	))
 
 BeforeExecute
@@ -232,7 +232,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			@ID <> p.PersonID AND p.PersonID = t1.PersonID
+			@ID <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
 	(EXISTS(
 		SELECT
@@ -240,13 +240,13 @@ WHERE
 		FROM
 			Person p_1
 		WHERE
-			@paramCopy = p_1.PersonID AND p_1.PersonID = t1.PersonID
+			@paramCopy = p_1.PersonID AND t1.PersonID = p_1.PersonID
 	) OR EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_2
 		WHERE
-			@ID_1 <> p_2.PersonID AND p_2.PersonID = t1.PersonID
+			@ID_1 <> p_2.PersonID AND t1.PersonID = p_2.PersonID
 	))
 

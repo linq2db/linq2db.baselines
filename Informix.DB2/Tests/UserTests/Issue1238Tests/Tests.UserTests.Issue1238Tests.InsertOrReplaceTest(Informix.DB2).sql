@@ -14,11 +14,11 @@ DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 
 UPDATE
-	InheritanceParent
+	InheritanceParent t1
 SET
-	InheritanceParent.TypeDiscriminator = @Data
+	TypeDiscriminator = @Data
 WHERE
-	InheritanceParent.InheritanceParentId = @Key1 AND InheritanceParent.Name IS NULL
+	t1.InheritanceParentId = @Key1 AND t1.Name IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -46,7 +46,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	InheritanceParent t1
 
@@ -58,17 +58,17 @@ DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 
 UPDATE
-	InheritanceParent
+	InheritanceParent t1
 SET
-	InheritanceParent.TypeDiscriminator = @Data
+	TypeDiscriminator = @Data
 WHERE
-	InheritanceParent.InheritanceParentId = @Key1 AND InheritanceParent.Name IS NULL
+	t1.InheritanceParentId = @Key1 AND t1.Name IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	InheritanceParent t1
 
