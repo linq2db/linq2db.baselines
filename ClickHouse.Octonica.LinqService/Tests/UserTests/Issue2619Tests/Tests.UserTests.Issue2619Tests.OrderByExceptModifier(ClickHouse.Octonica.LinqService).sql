@@ -19,15 +19,15 @@ FROM
 			Person t1
 		ORDER BY
 			t1.LastName
-		LIMIT toInt32(1)
+		LIMIT 1
 	) t2
 EXCEPT DISTINCT
 SELECT
-	t4.FirstName,
-	t4.ID,
-	t4.LastName,
-	t4.MiddleName,
-	t4.Gender
+	t4.FirstName as FirstName,
+	t4.ID as ID,
+	t4.LastName as LastName,
+	t4.MiddleName as MiddleName,
+	t4.Gender as Gender
 FROM
 	(
 		SELECT
@@ -40,6 +40,6 @@ FROM
 			Person t3
 		ORDER BY
 			t3.LastName
-		LIMIT toInt32(1)
+		LIMIT 1
 	) t4
 

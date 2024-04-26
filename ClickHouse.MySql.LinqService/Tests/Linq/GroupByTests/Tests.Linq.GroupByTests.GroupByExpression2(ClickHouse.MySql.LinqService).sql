@@ -2,10 +2,10 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	selectParam.ChildID,
-	Avg(selectParam.ParentID)
+	t1.ChildID,
+	avgOrNull(t1.ParentID)
 FROM
-	Child selectParam
+	Child t1
 GROUP BY
-	selectParam.ChildID
+	t1.ChildID
 

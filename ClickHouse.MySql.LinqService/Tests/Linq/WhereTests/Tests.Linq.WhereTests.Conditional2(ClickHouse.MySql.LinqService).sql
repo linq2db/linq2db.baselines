@@ -10,16 +10,9 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1) AND CASE
-		WHEN p.MiddleName IS NOT NULL
-			THEN toInt32(3)
-		WHEN p.MiddleName IS NULL THEN toInt32(1)
-		ELSE toInt32(2)
-	END = toInt32(1) AND
-	CASE
-		WHEN p.FirstName IS NULL THEN toInt32(3)
-		WHEN p.FirstName IS NOT NULL
-			THEN toInt32(1)
-		ELSE toInt32(2)
-	END = toInt32(1)
+	p.PersonID = 1 AND
+	p.MiddleName IS NULL AND
+	p.MiddleName IS NULL AND
+	p.FirstName IS NOT NULL AND
+	p.FirstName IS NOT NULL
 

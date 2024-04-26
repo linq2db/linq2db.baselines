@@ -2,5 +2,5 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	'23'
+	Substring('123', 2, 2)
 

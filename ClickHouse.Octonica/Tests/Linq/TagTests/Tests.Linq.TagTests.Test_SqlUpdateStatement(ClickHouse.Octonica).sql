@@ -23,7 +23,7 @@ BeforeExecute
 ALTER TABLE
 	TestTable
 UPDATE
-	Fd = toInt32(1)
+	Fd = 1
 WHERE 1
 
 BeforeExecute

@@ -2,10 +2,11 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.Value1,
-	p.ParentID
+	p.Value1 + 1,
+	p.ParentID,
+	p.Value1
 FROM
 	Parent p
 WHERE
-	p.Value1 + toInt32(1) = toInt32(2) AND p.ParentID = toInt32(1)
+	p.Value1 + 1 = 2 AND p.ParentID = 1
 

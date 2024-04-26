@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	addQuarters(t.DateTimeValue, toInt32(-1))
+	toDate(addQuarters(t.DateTimeValue, -1))
 FROM
 	LinqDataTypes t
 

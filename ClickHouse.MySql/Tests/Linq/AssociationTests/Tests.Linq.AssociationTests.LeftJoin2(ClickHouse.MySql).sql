@@ -2,13 +2,13 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.ChildID,
+	c_1.ParentID,
+	c_1.ChildID,
 	p.ParentID,
 	p.Value1
 FROM
 	Parent p
-		LEFT JOIN Child t1 ON p.ParentID = t1.ParentID
+		LEFT JOIN Child c_1 ON p.ParentID = c_1.ParentID
 WHERE
-	p.ParentID >= toInt32(4)
+	p.ParentID >= 4
 

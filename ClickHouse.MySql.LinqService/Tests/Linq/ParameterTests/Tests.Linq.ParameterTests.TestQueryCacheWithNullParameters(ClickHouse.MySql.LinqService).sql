@@ -4,9 +4,9 @@
 SELECT
 	Count(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID IS NULL
+	t1.PersonID = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -14,7 +14,7 @@ BeforeExecute
 SELECT
 	Count(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1)
+	t1.PersonID = 1
 

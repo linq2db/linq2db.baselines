@@ -23,7 +23,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Str_1'
 )
 
@@ -37,7 +37,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'Str_2'
 )
 
@@ -51,7 +51,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'Str_3'
 )
 
@@ -65,7 +65,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	'Str_4'
 )
 
@@ -79,7 +79,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	'Str_5'
 )
 
@@ -93,7 +93,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	'Str_6'
 )
 
@@ -107,7 +107,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(7),
+	7,
 	'Str_7'
 )
 
@@ -121,7 +121,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(8),
+	8,
 	'Str_8'
 )
 
@@ -135,7 +135,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(9),
+	9,
 	'Str_9'
 )
 
@@ -149,7 +149,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	'Str_10'
 )
 
@@ -163,7 +163,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(11),
+	11,
 	'Str_11'
 )
 
@@ -177,7 +177,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(12),
+	12,
 	'Str_12'
 )
 
@@ -191,7 +191,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(13),
+	13,
 	'Str_13'
 )
 
@@ -205,7 +205,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(14),
+	14,
 	'Str_14'
 )
 
@@ -219,7 +219,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(15),
+	15,
 	'Str_15'
 )
 
@@ -233,7 +233,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(16),
+	16,
 	'Str_16'
 )
 
@@ -247,7 +247,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(17),
+	17,
 	'Str_17'
 )
 
@@ -261,7 +261,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(18),
+	18,
 	'Str_18'
 )
 
@@ -275,7 +275,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(19),
+	19,
 	'Str_19'
 )
 
@@ -289,7 +289,7 @@ INSERT INTO sample_class
 )
 VALUES
 (
-	toInt32(20),
+	20,
 	'Str_20'
 )
 
@@ -302,10 +302,10 @@ SELECT
 FROM
 	sample_class c_1
 		INNER JOIN (
-			SELECT * FROM sample_class where id >= toInt32(5) and id < toInt32(15)
+			SELECT * FROM sample_class where id >= 5 and id < 15
 		) s ON s.id = c_1.id
 WHERE
-	s.id > toInt32(10)
+	s.id > 10
 ORDER BY
 	s.id
 
@@ -318,7 +318,7 @@ SELECT
 FROM
 	sample_class t
 WHERE
-	t.id >= toInt32(5) AND t.id < toInt32(15) AND t.id > toInt32(10)
+	t.id >= 5 AND t.id < 15 AND t.id > 10
 ORDER BY
 	t.id
 

@@ -24,8 +24,8 @@ INSERT INTO TextData
 	Items2
 )
 VALUES
-(toInt32(1),'T1','Z1'),
-(toInt32(2),'T2','Z2')
+(1,'T1','Z1'),
+(2,'T2','Z2')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -36,7 +36,7 @@ UPDATE
 	Items1 = concat(Items1, 'zz'),
 	Items2 = concat(Items2, 'zz')
 WHERE
-	Id >= toInt32(1)
+	Id >= 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

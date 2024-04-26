@@ -2,14 +2,10 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	p.FirstName
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
-LIMIT toInt32(1)
+	p.PersonID = 1
+LIMIT 1
 

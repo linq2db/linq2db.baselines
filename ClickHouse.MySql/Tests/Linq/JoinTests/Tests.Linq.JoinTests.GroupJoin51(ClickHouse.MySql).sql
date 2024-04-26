@@ -2,52 +2,44 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	_gjd_ch.ParentID,
-	_gjd_ch.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			t2.ParentID as ParentID
 		FROM
-			Parent p
+			Parent t2
+				INNER JOIN (
+					SELECT
+						ch.ParentID as ParentID,
+						ROW_NUMBER() OVER (PARTITION BY ch.ParentID ORDER BY ch.ChildID DESC) as rn
+					FROM
+						Child ch
+				) t1 ON t2.ParentID = t1.ParentID AND t1.rn <= 1
 		WHERE
-			p.ParentID = toInt32(1)
-	) key_data_result
-		INNER JOIN Child _gjd_ch ON _gjd_ch.ParentID = key_data_result.ParentID
+			t2.ParentID = 1
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	_ch.ParentID,
-	_ch.ChildID
+	t2.ParentID,
+	t1.ParentID,
+	t1.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
-		FROM
-			Parent p
-		WHERE
-			p.ParentID = toInt32(1)
-	) key_data_result
-		INNER JOIN Child _ch ON _ch.ParentID = key_data_result.ParentID
-ORDER BY
-	_ch.ChildID DESC
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	p.ParentID,
-	p.Value1
-FROM
-	Parent p
+	Parent t2
+		INNER JOIN (
+			SELECT
+				ch.ParentID as ParentID,
+				ch.ChildID as ChildID,
+				ROW_NUMBER() OVER (PARTITION BY ch.ParentID ORDER BY ch.ChildID DESC) as rn
+			FROM
+				Child ch
+		) t1 ON t2.ParentID = t1.ParentID AND t1.rn <= 1
 WHERE
-	p.ParentID = toInt32(1)
+	t2.ParentID = 1
 

@@ -20,7 +20,7 @@ INSERT INTO catz
 	OwnerId
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -44,7 +44,7 @@ INSERT INTO owners
 	Id
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

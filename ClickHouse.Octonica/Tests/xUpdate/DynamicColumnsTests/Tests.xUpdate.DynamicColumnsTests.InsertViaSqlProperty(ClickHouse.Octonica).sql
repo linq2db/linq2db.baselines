@@ -8,8 +8,8 @@ INSERT INTO Child
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1001)
+	1,
+	1001
 )
 
 BeforeExecute
@@ -20,5 +20,5 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ChildID = toInt32(1001)
+	c_1.ChildID = 1001
 

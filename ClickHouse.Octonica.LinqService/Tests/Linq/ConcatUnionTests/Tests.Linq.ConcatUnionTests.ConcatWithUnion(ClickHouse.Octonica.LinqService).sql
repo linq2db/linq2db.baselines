@@ -17,7 +17,7 @@ FROM
 	) t1
 UNION ALL
 SELECT
-	t2.ParentID
+	t2.ParentID as ParentID
 FROM
 	(
 		SELECT

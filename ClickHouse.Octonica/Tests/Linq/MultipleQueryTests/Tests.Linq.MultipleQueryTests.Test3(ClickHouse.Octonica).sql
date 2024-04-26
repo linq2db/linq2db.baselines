@@ -11,7 +11,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Parent p
 

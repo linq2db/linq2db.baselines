@@ -2,55 +2,55 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1) AND _.Gender = 'M'
+	t1.PersonID = 1 AND t1.Gender = 'M'
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1) AND 'M' = _.Gender
+	t1.PersonID = 1 AND 'M' = t1.Gender
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1) AND _.Gender = 'M'
+	t1.PersonID = 1 AND t1.Gender = 'M'
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(1) AND 'M' = _.Gender
+	t1.PersonID = 1 AND 'M' = t1.Gender
 

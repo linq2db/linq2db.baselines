@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -12,9 +12,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -25,15 +25,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -41,9 +41,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -54,15 +54,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -70,9 +70,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -83,15 +83,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -99,9 +99,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -112,15 +112,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -128,9 +128,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -141,15 +141,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -157,9 +157,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -170,15 +170,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -186,9 +186,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -199,15 +199,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -215,9 +215,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -228,15 +228,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -244,9 +244,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -257,15 +257,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -273,9 +273,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -286,15 +286,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -302,9 +302,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -315,15 +315,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -331,9 +331,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -344,15 +344,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -360,9 +360,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -373,15 +373,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -389,9 +389,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -402,15 +402,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -418,9 +418,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -431,15 +431,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -447,9 +447,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -460,15 +460,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -476,9 +476,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -489,15 +489,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -505,9 +505,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -518,15 +518,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -534,9 +534,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -547,15 +547,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -563,9 +563,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -576,15 +576,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -592,9 +592,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -605,15 +605,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -621,9 +621,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -634,15 +634,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -650,9 +650,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -663,15 +663,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -679,9 +679,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -692,15 +692,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -708,9 +708,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -721,15 +721,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -737,9 +737,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -750,15 +750,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -766,9 +766,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -779,15 +779,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -795,9 +795,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -808,15 +808,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -824,9 +824,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -837,15 +837,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -853,9 +853,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -866,15 +866,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -882,9 +882,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -895,15 +895,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -911,9 +911,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -924,15 +924,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -940,9 +940,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -953,15 +953,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -969,9 +969,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -982,15 +982,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -998,9 +998,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1011,15 +1011,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1027,9 +1027,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1040,15 +1040,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1056,9 +1056,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1069,15 +1069,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1085,9 +1085,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1098,15 +1098,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1114,9 +1114,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1127,15 +1127,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1143,9 +1143,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1156,15 +1156,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1172,9 +1172,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1185,15 +1185,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1201,9 +1201,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1214,15 +1214,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1230,9 +1230,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1243,15 +1243,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1259,9 +1259,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1272,15 +1272,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1288,9 +1288,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1301,15 +1301,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1317,9 +1317,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1330,15 +1330,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1346,9 +1346,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1359,15 +1359,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1375,9 +1375,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1388,15 +1388,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1404,9 +1404,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1417,15 +1417,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1433,9 +1433,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1446,15 +1446,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1462,9 +1462,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1475,15 +1475,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1491,9 +1491,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1504,15 +1504,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1520,9 +1520,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1533,15 +1533,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1549,9 +1549,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1562,15 +1562,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1578,9 +1578,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1591,15 +1591,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1607,9 +1607,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1620,15 +1620,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1636,9 +1636,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1649,15 +1649,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1665,9 +1665,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1678,15 +1678,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1694,9 +1694,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1707,15 +1707,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1723,9 +1723,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1736,15 +1736,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1752,9 +1752,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1765,15 +1765,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1781,9 +1781,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1794,15 +1794,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1810,9 +1810,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1823,15 +1823,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1839,9 +1839,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1852,15 +1852,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1868,9 +1868,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1881,15 +1881,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1897,9 +1897,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1910,15 +1910,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1926,9 +1926,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1939,15 +1939,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1955,9 +1955,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1968,15 +1968,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -1984,9 +1984,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1997,15 +1997,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2013,9 +2013,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2026,15 +2026,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2042,9 +2042,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2055,15 +2055,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2071,9 +2071,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2084,15 +2084,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2100,9 +2100,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2113,15 +2113,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2129,9 +2129,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2142,15 +2142,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2158,9 +2158,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2171,15 +2171,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2187,9 +2187,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2200,15 +2200,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2216,9 +2216,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2229,15 +2229,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2245,9 +2245,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2258,15 +2258,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2274,9 +2274,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2287,15 +2287,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2303,9 +2303,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2316,15 +2316,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2332,9 +2332,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2345,15 +2345,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2361,9 +2361,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2374,15 +2374,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2390,9 +2390,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2403,15 +2403,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2419,9 +2419,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2432,15 +2432,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2448,9 +2448,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2461,15 +2461,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2477,9 +2477,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2490,15 +2490,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2506,9 +2506,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2519,15 +2519,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2535,9 +2535,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2548,15 +2548,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2564,9 +2564,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2577,15 +2577,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2593,9 +2593,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2606,15 +2606,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2622,9 +2622,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2635,15 +2635,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2651,9 +2651,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2664,15 +2664,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2680,9 +2680,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2693,15 +2693,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2709,9 +2709,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2722,15 +2722,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2738,9 +2738,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2751,15 +2751,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2767,9 +2767,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2780,15 +2780,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2796,9 +2796,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2809,15 +2809,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2825,9 +2825,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2838,15 +2838,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2854,9 +2854,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2867,15 +2867,15 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
@@ -2883,9 +2883,9 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID < toInt32(2)
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			p.ParentID < 2
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2896,5 +2896,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID < toInt32(2)
+	p.ParentID < 2
 

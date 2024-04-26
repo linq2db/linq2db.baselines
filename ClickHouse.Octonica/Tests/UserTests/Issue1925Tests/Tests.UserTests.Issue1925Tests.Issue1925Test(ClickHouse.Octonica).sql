@@ -22,12 +22,12 @@ INSERT INTO SampleClass
 	Value
 )
 VALUES
-(toInt32(1),'6'),
-(toInt32(2),'x[0-9]x'),
-(toInt32(3),'x[0x'),
-(toInt32(4),'x[]x'),
-(toInt32(5),'x]'),
-(toInt32(6),']x')
+(1,'6'),
+(2,'x[0-9]x'),
+(3,'x[0x'),
+(4,'x[]x'),
+(5,'x]'),
+(6,']x')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -38,7 +38,7 @@ FROM
 	SampleClass r
 WHERE
 	endsWith(r.Value, ']')
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,7 +49,7 @@ FROM
 	SampleClass r
 WHERE
 	startsWith(r.Value, ']')
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -59,8 +59,8 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '-') > toInt32(0)
-LIMIT toInt32(2)
+	position(r.Value, '-') > 0
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -71,7 +71,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '[]') > toInt32(0)
+	position(r.Value, '[]') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -82,7 +82,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '[0') > toInt32(0)
+	position(r.Value, '[0') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -93,7 +93,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '[0') > toInt32(0)
+	position(r.Value, '[0') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -104,7 +104,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '[0-9]') > toInt32(0)
+	position(r.Value, '[0-9]') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -115,7 +115,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	position(r.Value, '6') > toInt32(0)
+	position(r.Value, '6') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -7,11 +7,11 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
+				Person t1
 			WHERE
 				1 = 0
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

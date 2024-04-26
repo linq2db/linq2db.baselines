@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.Value1 = toInt32(1)
+	p.Value1 = 1
 

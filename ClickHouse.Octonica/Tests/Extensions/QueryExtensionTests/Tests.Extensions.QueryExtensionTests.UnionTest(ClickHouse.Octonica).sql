@@ -8,10 +8,10 @@ FROM
 	Child t
 UNION DISTINCT
 SELECT
-	t_1.ParentID,
-	t_1.ChildID
+	t_1.ParentID as ParentID,
+	t_1.ChildID as ChildID
 FROM
 	Child t_1
 WHERE
-	t_1.ChildID < toInt32(10)
+	t_1.ChildID < 10
 

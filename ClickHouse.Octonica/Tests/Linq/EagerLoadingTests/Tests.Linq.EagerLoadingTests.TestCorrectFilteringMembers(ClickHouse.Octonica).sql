@@ -29,33 +29,33 @@ INSERT INTO MasterClass
 	ByteValues
 )
 VALUES
-(toInt32(1),toInt32(1),'Str1',NULL),
-(toInt32(2),toInt32(2),'Str2',NULL),
-(toInt32(3),toInt32(3),'Str3',NULL),
-(toInt32(4),toInt32(4),'Str4',NULL),
-(toInt32(5),toInt32(5),'Str5',NULL),
-(toInt32(6),toInt32(6),'Str6',NULL),
-(toInt32(7),toInt32(7),'Str7',NULL),
-(toInt32(8),toInt32(8),'Str8',NULL),
-(toInt32(9),toInt32(9),'Str9',NULL),
-(toInt32(10),toInt32(10),'Str10',NULL)
+(1,1,'Str1',NULL),
+(2,2,'Str2',NULL),
+(3,3,'Str3',NULL),
+(4,4,'Str4',NULL),
+(5,5,'Str5',NULL),
+(6,6,'Str6',NULL),
+(7,7,'Str7',NULL),
+(8,8,'Str8',NULL),
+(9,9,'Str9',NULL),
+(10,10,'Str10',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	e.Id1,
-	e.Value,
-	e.ByteValues
+	e1.Id1,
+	e1.Value as Value_1,
+	e1.ByteValues
 FROM
-	MasterClass e
+	MasterClass e1
 UNION ALL
 SELECT
-	e_1.Id1,
-	'Str',
-	e_1.ByteValues
+	e.Id1 as Id1,
+	'Str' as Value_1,
+	e.ByteValues as ByteValues
 FROM
-	MasterClass e_1
+	MasterClass e
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

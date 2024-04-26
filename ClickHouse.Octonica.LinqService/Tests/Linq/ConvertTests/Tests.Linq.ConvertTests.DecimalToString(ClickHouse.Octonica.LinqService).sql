@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toString(t.MoneyValue)
+	toString(p.MoneyValue)
 FROM
-	LinqDataTypes t
+	LinqDataTypes p
 WHERE
-	CHAR_LENGTH(toString(t.MoneyValue)) > toInt32(0)
+	CHAR_LENGTH(toString(p.MoneyValue)) > 0
 

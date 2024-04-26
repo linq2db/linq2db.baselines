@@ -25,7 +25,7 @@ INSERT INTO WhereWithString
 	StringValue
 )
 VALUES
-(toInt32(1),'Str1')
+(1,'Str1')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -36,7 +36,7 @@ SELECT
 FROM
 	WhereWithString x
 WHERE
-	x.Id = toInt32(2)
+	x.Id = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

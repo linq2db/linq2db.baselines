@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	bitXor(p.PersonID, toInt32(2)) = toInt32(3)
+	bitXor(p.PersonID, 2) = 3
 

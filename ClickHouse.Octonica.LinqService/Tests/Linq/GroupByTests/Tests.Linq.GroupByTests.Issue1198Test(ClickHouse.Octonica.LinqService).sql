@@ -18,19 +18,15 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			Issue1192Table t
-		WHERE
-			t.Status = toInt32(3) AND t.MyOtherId = toInt32(12)
-	)
+	COUNT(CASE
+		WHEN t.Status = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	Issue1192Table t_1
+	Issue1192Table t
 WHERE
-	t_1.MyOtherId = toInt32(12)
-LIMIT toInt32(1)
+	t.MyOtherId = 12
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

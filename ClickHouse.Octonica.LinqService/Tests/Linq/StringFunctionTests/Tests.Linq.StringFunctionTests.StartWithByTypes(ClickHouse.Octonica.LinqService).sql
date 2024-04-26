@@ -29,7 +29,7 @@ INSERT INTO StringTypesTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'someString',
 	'someString',
 	'someString',

@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.ID,
-	p.TS
+	p_1.ID,
+	p_1.TS
 FROM
 	(
 		SELECT
-			t1.ID as ID,
-			t1.TS as TS
+			p.ID as ID,
+			p.TS as TS
 		FROM
-			ReplacingMergeTreeTable t1 FINAL
-	) p
+			ReplacingMergeTreeTable p FINAL
+	) p_1
 

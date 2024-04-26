@@ -4,11 +4,11 @@
 SELECT
 	p.ParentID,
 	p.Value1,
-	c_1.ParentID,
-	c_1.ChildID
+	ch.ParentID,
+	ch.ChildID
 FROM
 	Parent p
-		LEFT JOIN Child c_1 ON p.ParentID = c_1.ParentID
+		LEFT JOIN Child ch ON p.ParentID = ch.ParentID
 WHERE
-	p.ParentID >= toInt32(4)
+	p.ParentID >= 4
 

@@ -10,6 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(p.PersonID + toInt32(9)) / toInt32(10) = toInt32(1) AND
-	p.PersonID = toInt32(1)
+	(p.PersonID + 9) / 10 = 1 AND p.PersonID = 1
 

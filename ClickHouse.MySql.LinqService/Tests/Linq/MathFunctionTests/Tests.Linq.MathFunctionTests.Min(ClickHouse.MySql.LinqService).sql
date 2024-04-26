@@ -2,18 +2,17 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
 			CASE
-				WHEN p.MoneyValue < toDecimal64('5', 4)
-					THEN p.MoneyValue
-				ELSE toDecimal64('5', 4)
+				WHEN t.MoneyValue <= toDecimal64('5', 10) THEN t.MoneyValue
+				ELSE toDecimal64(toDecimal64('5', 10), toUInt8(4))
 			END as c1
 		FROM
-			LinqDataTypes p
-	) t
+			LinqDataTypes t
+	) t_1
 WHERE
-	(t.c1 <> toDecimal64('0', 4) OR t.c1 IS NULL)
+	t_1.c1 <> toDecimal64('0', 4)
 

@@ -2,22 +2,18 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.ID,
-	_.MoneyValue,
-	_.DateTimeValue,
-	_.DateTimeValue2,
-	_.BoolValue,
-	_.GuidValue,
-	_.SmallIntValue,
-	_.IntValue,
-	_.BigIntValue,
-	_.StringValue
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.DateTimeValue2,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.SmallIntValue,
+	t1.IntValue,
+	t1.BigIntValue,
+	t1.StringValue
 FROM
-	LinqDataTypes _
+	LinqDataTypes t1
 WHERE
-	CASE
-		WHEN _.BoolValue IN (true)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
-	END = false
+	(t1.BoolValue NOT IN (true) OR t1.BoolValue IS NULL)
 

@@ -23,7 +23,7 @@ INSERT INTO BananaTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'test1'
 )
 
@@ -44,7 +44,7 @@ ALTER TABLE
 UPDATE
 	Property = 'banana'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

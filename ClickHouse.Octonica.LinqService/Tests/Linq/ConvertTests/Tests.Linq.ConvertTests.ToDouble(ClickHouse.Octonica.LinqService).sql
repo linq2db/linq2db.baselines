@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.c1
+	p_1.c1
 FROM
 	(
 		SELECT
-			toInt32(toFloat64(t.MoneyValue)) as c1
+			toInt32(toFloat64(p.MoneyValue)) as c1
 		FROM
-			LinqDataTypes t
-	) p
+			LinqDataTypes p
+	) p_1
 WHERE
-	p.c1 > toInt32(0)
+	p_1.c1 > 0
 

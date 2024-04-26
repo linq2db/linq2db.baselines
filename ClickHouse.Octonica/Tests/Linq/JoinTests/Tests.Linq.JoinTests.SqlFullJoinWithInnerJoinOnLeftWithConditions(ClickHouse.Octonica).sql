@@ -2,10 +2,11 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	left_1.ParentID,
-	left_1.Value1,
-	t1.right_2,
-	t1.right_1
+	CASE
+		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
+		ELSE NULL
+	END,
+	right_2.ParentID
 FROM
 	(
 		SELECT
@@ -14,18 +15,21 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID <> toInt32(1)
+			p.ParentID <> 1
 	) left_1
 		FULL JOIN (
 			SELECT
-				p_2.Value1 as right_1,
-				p_2.ParentID as right_2
+				right_1.ParentID as ParentID,
+				right_1.Value1 + 2 as c1
 			FROM
-				Parent p_2
-					INNER JOIN Parent p_1 ON p_2.Value1 = p_1.Value1 + toInt32(2)
+				Parent right_1
+					INNER JOIN Parent right2 ON right_1.Value1 = right2.Value1 + 2
 			WHERE
-				p_1.ParentID <> toInt32(1) AND p_2.ParentID <> toInt32(2)
-		) t1 ON t1.right_1 + toInt32(2) = left_1.Value1
+				right_1.ParentID <> 2 AND right2.ParentID <> 1
+		) right_2 ON right_2.c1 = left_1.Value1
 ORDER BY
-	left_1.ParentID
+	CASE
+		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
+		ELSE NULL
+	END
 

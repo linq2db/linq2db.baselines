@@ -2,5 +2,5 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(5)
+	1
 

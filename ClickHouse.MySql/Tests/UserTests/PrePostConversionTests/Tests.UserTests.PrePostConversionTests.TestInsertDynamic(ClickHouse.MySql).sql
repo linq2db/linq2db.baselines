@@ -29,8 +29,8 @@ INSERT INTO ValuesTable
 VALUES
 (
 	toInt64(1),
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -42,7 +42,7 @@ SELECT
 	t1.SomeValue2
 FROM
 	ValuesTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

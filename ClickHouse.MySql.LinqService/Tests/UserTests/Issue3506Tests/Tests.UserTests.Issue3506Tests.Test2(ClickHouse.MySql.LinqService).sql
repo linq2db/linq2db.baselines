@@ -21,7 +21,7 @@ INSERT INTO catz
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -47,7 +47,7 @@ INSERT INTO owners
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute

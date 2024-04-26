@@ -30,9 +30,9 @@ INSERT INTO PR_1598_Insert_Enum_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Max',
-	toInt32(20),
+	20,
 	'Male'
 )
 
@@ -47,8 +47,8 @@ SELECT
 FROM
 	PR_1598_Insert_Enum_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -61,9 +61,9 @@ INSERT INTO PR_1598_Insert_Enum_Table
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'Jenny',
-	toInt32(25)
+	25
 )
 
 BeforeExecute
@@ -77,8 +77,8 @@ SELECT
 FROM
 	PR_1598_Insert_Enum_Table t
 WHERE
-	t.Id = toInt32(2)
-LIMIT toInt32(1)
+	t.Id = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

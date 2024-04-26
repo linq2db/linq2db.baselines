@@ -13,8 +13,8 @@ FROM
 	Person p
 		LEFT JOIN Patient a_Patient ON p.PersonID = a_Patient.PersonID
 WHERE
-	p.PersonID = toInt32(1)
-LIMIT toInt32(2)
+	p.PersonID = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -31,6 +31,6 @@ FROM
 	Person p
 		LEFT JOIN Patient a_Patient ON p.PersonID = a_Patient.PersonID
 WHERE
-	p.PersonID = toInt32(2)
-LIMIT toInt32(2)
+	p.PersonID = 2
+LIMIT 2
 

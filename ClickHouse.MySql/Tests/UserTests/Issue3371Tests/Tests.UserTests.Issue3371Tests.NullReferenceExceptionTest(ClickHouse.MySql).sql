@@ -22,9 +22,9 @@ INSERT INTO PayRate
 	Name
 )
 VALUES
-(toInt32(1),'Name1'),
-(toInt32(2),'Name2'),
-(toInt32(3),'test')
+(1,'Name1'),
+(2,'Name2'),
+(3,'test')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -50,9 +50,9 @@ INSERT INTO Employees
 	PayRateId
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),NULL),
-(toInt32(3),toInt32(3))
+(1,1),
+(2,NULL),
+(3,3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -78,7 +78,7 @@ FROM
 	Employees item_1
 		LEFT JOIN PayRate a_PayRate ON item_1.PayRateId = a_PayRate.Id
 WHERE
-	a_PayRate.Name = 'test'
+	a_PayRate.Name = 'test' AND item_1.PayRateId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

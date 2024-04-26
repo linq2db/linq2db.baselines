@@ -7,7 +7,7 @@ FROM
 	Person p
 WHERE
 	p.FirstName IS NULL
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -18,5 +18,5 @@ FROM
 	Person p
 WHERE
 	p.FirstName = 'John'
-LIMIT toInt32(1)
+LIMIT 1
 

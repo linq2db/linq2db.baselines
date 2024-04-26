@@ -7,13 +7,13 @@ FROM
 	LinqDataTypes t1_1
 		INNER JOIN (
 			SELECT
-				sub.ID as ID,
-				maxOrNull(sub.DateTimeValue) as DateTimeValue
+				t2.ID as ID,
+				maxOrNull(t2.DateTimeValue) as DateTimeValue
 			FROM
-				LinqDataTypes sub
+				LinqDataTypes t2
 			WHERE
-				sub.ID = toInt32(1) AND sub.DateTimeValue <= toDateTime64('2020-02-29 00:00:00.000', 3)
+				t2.ID = 1 AND t2.DateTimeValue <= toDateTime64('2020-02-29 00:00:00.000', 3)
 			GROUP BY
-				sub.ID
+				t2.ID
 		) t1 ON t1_1.ID = t1.ID AND t1_1.DateTimeValue = t1.DateTimeValue
 

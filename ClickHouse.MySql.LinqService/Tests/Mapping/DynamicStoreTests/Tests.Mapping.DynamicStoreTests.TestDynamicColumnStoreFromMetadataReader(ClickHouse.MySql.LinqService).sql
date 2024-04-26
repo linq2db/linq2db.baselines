@@ -23,7 +23,7 @@ INSERT INTO DynamicColumnsTestTable
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	'test_name'
 )
 

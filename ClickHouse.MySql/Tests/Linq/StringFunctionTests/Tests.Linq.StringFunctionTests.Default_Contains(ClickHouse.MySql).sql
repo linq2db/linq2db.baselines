@@ -16,7 +16,7 @@ INSERT INTO CollatedTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'TestString',
 	'TestString'
 )
@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	position(r.CaseSensitive, 'stSt') > toInt32(0)
+	position(r.CaseSensitive, 'stSt') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	position(r.CaseInsensitive, 'stSt') > toInt32(0)
+	position(r.CaseInsensitive, 'stSt') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	position(r.CaseSensitive, 'stst') > toInt32(0)
+	position(r.CaseSensitive, 'stst') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	position(r.CaseInsensitive, 'stst') > toInt32(0)
+	position(r.CaseInsensitive, 'stst') > 0
 

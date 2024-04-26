@@ -23,7 +23,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'{"Property1":"Pr1"}'
 )
 

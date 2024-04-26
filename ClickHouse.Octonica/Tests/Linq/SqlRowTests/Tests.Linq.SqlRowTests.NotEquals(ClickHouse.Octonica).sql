@@ -30,7 +30,7 @@ INSERT INTO Ints
 	Nil
 )
 VALUES
-(toInt32(1),toInt32(2),toInt32(3),toInt32(4),toInt32(5),NULL)
+(1,2,3,4,5,NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -40,7 +40,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	(i.One <> i.One OR i.Two <> i.One * toInt32(2) OR i.Three <> i.Four - toInt32(1))
+	(i.One <> i.One OR i.Two <> i.One * 2 OR i.Three <> i.Four - 1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -70,7 +70,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	(toInt32(1) <> i.One OR i.Nil <> i.Nil OR toInt32(4) <> i.Three)
+	(1 <> i.One OR i.Nil <> i.Nil OR 4 <> i.Three)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -80,7 +80,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	(toInt32(1) <> i.One OR NULL >= i.Nil OR toInt32(4) <> i.Three)
+	(1 <> i.One OR NULL >= i.Nil OR 4 <> i.Three)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

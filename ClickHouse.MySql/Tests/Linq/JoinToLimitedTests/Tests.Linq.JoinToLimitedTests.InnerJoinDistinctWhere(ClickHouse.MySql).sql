@@ -4,15 +4,15 @@
 SELECT
 	o.ParentID,
 	o.Value1,
-	x.ParentID,
-	x.ChildID
+	c_1.ParentID,
+	c_1.ChildID
 FROM
 	Parent o
 		INNER JOIN (
 			SELECT DISTINCT
-				t1.ParentID as ParentID,
-				t1.ChildID as ChildID
+				x.ParentID as ParentID,
+				x.ChildID as ChildID
 			FROM
-				Child t1
-		) x ON x.ParentID = o.ParentID
+				Child x
+		) c_1 ON c_1.ParentID = o.ParentID
 

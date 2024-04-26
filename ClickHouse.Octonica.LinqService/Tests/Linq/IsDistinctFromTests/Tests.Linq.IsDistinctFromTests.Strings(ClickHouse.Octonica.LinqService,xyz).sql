@@ -27,8 +27,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'abc',
 	'abc'
 )
@@ -45,7 +45,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
 	'def',
 	NULL

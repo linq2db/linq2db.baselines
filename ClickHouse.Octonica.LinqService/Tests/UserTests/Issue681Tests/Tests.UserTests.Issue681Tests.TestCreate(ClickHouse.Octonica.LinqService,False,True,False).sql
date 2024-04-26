@@ -22,8 +22,8 @@ BeforeExecute
 SELECT
 	currentDatabase()
 FROM
-	LinqDataTypes _
-LIMIT toInt32(1)
+	LinqDataTypes t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

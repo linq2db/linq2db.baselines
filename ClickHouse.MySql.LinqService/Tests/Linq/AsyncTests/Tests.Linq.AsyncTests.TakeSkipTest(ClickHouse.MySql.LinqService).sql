@@ -8,5 +8,5 @@ FROM
 	Parent t1
 ORDER BY
 	t1.ParentID
-LIMIT toInt32(1), toInt32(2)
+LIMIT 1, 2
 

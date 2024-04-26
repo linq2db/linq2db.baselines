@@ -2,14 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.c1
+	toString(toUInt8(p.ID))
 FROM
-	(
-		SELECT
-			toString(toUInt8(t.ID)) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	CHAR_LENGTH(p.c1) > toInt32(0)
+	CHAR_LENGTH(toString(toUInt8(p.ID))) > 0
 

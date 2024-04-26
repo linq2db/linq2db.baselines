@@ -28,9 +28,9 @@ INSERT INTO Issue4167Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'000001',
-	toInt32(0)
+	0
 )
 
 BeforeExecute
@@ -44,9 +44,9 @@ INSERT INTO Issue4167Table
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'000001',
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO Issue4167Table
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'000001',
 	NULL
 )
@@ -76,25 +76,31 @@ INSERT INTO Issue4167Table
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	'000002',
-	toInt32(0)
+	0
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.EnumValue
+	CASE
+		WHEN g_1.EnumValue IS NOT NULL THEN g_1.EnumValue
+		ELSE 0
+	END
 FROM
-	Issue4167Table t
+	Issue4167Table g_1
 WHERE
-	t.Value = '000001'
+	g_1.Value = '000001'
 GROUP BY
-	t.Value,
-	t.EnumValue
+	g_1.Value,
+	g_1.EnumValue
 ORDER BY
-	Coalesce(t.EnumValue, toInt32(0))
+	CASE
+		WHEN g_1.EnumValue IS NOT NULL THEN g_1.EnumValue
+		ELSE 0
+	END
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

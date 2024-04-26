@@ -9,5 +9,5 @@ FROM
 ORDER BY
 	t1.ParentID DESC,
 	t1.ChildID,
-	t1.ParentID + toInt32(1) DESC
+	t1.ParentID + 1 DESC
 

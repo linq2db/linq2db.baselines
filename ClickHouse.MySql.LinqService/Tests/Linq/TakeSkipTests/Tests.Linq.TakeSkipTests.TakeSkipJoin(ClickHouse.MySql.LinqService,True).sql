@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	e.ID,
-	_.SmallIntValue
+	p.SmallIntValue
 FROM
 	(
 		SELECT
@@ -49,7 +49,7 @@ FROM
 				FROM
 					LinqDataTypes t2
 			) t3
-		LIMIT toInt32(15)
+		LIMIT 15
 	) e
 		LEFT JOIN (
 			SELECT
@@ -81,9 +81,9 @@ FROM
 					FROM
 						LinqDataTypes t5
 				) t6
-			LIMIT toInt32(15)
-		) _ ON _.ID = e.ID
+			LIMIT 15
+		) p ON p.ID = e.ID
 ORDER BY
-	_.ID,
-	e.ID
+	e.ID,
+	p.ID
 

@@ -21,7 +21,7 @@ INSERT INTO NotNullParent
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO NotNullParent
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -59,7 +59,7 @@ INSERT INTO NotNullChild
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute

@@ -2,9 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	maxOrNull(x.PersonID)
+	maxOrNull(p.PersonID)
 FROM
-	Person x
+	Person p
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

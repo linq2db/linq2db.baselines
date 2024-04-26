@@ -23,7 +23,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toFloat64(0)
 )
 
@@ -37,7 +37,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toFloat64(3.1400000000000001)
 )
 
