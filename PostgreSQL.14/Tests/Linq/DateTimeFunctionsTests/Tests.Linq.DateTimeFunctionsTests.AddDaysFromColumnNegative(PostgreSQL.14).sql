@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Timestamp -- DateTime2
-SET     @p = '2018-01-02'::date
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' < :p
+	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' < make_timestamp(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1."ID" = 5000
+	t."ID" = 5000
 
