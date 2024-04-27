@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
-SET     @GuidValue = '911ef4fd-e177-4870-8f23-ece1ff1bd22f'
+SET     @GuidValue = 'cbbfdcb9-0a54-4bbe-8b30-e8a36ed196a5'
 DECLARE @BoolValue  -- Byte
 SET     @BoolValue = 1
 
