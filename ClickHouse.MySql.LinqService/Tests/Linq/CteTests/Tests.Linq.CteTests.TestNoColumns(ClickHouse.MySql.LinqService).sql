@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child t1
 
@@ -18,7 +18,7 @@ WITH CTE1_ AS
 		Child t1
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ t2
 
@@ -33,7 +33,7 @@ WITH CTE1_ AS
 		Child c_1
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ t1
 

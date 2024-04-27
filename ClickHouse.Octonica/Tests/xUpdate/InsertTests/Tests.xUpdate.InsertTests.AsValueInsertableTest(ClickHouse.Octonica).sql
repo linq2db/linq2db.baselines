@@ -36,7 +36,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	TestInsertOrReplaceTable x
 WHERE

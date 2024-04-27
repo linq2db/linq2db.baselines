@@ -36,7 +36,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	TestInsertOrReplaceTable x
 WHERE

@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 

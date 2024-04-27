@@ -38,7 +38,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	AsyncDataTable c_1
 WHERE

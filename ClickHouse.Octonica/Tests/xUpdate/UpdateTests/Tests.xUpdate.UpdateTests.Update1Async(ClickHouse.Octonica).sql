@@ -16,7 +16,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE

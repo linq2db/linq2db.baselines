@@ -38,7 +38,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	AsyncDataTable c_1
 WHERE

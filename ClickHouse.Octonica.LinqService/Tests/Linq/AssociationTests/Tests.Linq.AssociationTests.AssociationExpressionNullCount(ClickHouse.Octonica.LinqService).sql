@@ -66,7 +66,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	NotNullParent p
 		LEFT JOIN NotNullChild a_ChildOuter ON p.ID = a_ChildOuter.ParentID

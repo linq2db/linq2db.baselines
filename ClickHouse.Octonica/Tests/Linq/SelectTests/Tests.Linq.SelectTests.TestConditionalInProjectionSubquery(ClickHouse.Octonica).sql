@@ -57,24 +57,18 @@ VALUES
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-SELECT
-	q_1.Id,
-	q_1.Value_1
+SELECT DISTINCT
+	c_1.Id,
+	CASE
+		WHEN c_1.Id IS NOT NULL THEN c_1.Value
+		WHEN q.MainValue IS NOT NULL THEN q.MainValue
+		ELSE ''
+	END
 FROM
-	(
-		SELECT DISTINCT
-			c_1.Id as Id,
-			CASE
-				WHEN c_1.Id IS NOT NULL THEN c_1.Value
-				WHEN q.MainValue IS NOT NULL THEN q.MainValue
-				ELSE ''
-			END as Value_1
-		FROM
-			MainEntityObject q
-				LEFT JOIN ChildEntityObject c_1 ON c_1.Id = q.Id
-	) q_1
+	MainEntityObject q
+		LEFT JOIN ChildEntityObject c_1 ON c_1.Id = q.Id
 WHERE
-	q_1.Id % 2 = 0
+	c_1.Id % 2 = 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

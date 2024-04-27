@@ -10,7 +10,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 

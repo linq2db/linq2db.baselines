@@ -24,7 +24,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child c_1
 WHERE
