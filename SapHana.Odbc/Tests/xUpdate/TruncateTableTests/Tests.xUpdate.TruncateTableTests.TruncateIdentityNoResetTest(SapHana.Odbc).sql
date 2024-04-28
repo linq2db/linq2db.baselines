@@ -17,14 +17,7 @@ CREATE COLUMN TABLE "test_temp"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-INSERT INTO "test_temp"
-(
-	"Field1"
-)
-VALUES
-(
-	1
-)
+DELETE FROM "test_temp"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -40,8 +33,18 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
+
+INSERT INTO "test_temp"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -52,7 +55,7 @@ FROM
 	"test_temp" "t1"
 ORDER BY
 	"t1"."ID"
-LIMIT ? OFFSET ?
+LIMIT 2 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -85,8 +88,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 DECLARE @skip  -- Int32
 SET     @skip = 1
 
@@ -97,7 +98,7 @@ FROM
 	"test_temp" "t1"
 ORDER BY
 	"t1"."ID"
-LIMIT ? OFFSET ?
+LIMIT 2 OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

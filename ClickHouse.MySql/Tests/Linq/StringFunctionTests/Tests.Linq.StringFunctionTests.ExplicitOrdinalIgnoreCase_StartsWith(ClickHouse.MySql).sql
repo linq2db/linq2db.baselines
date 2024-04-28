@@ -16,7 +16,7 @@ INSERT INTO CollatedTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'TestString',
 	'TestString'
 )
@@ -25,7 +25,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
@@ -35,7 +35,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
@@ -55,7 +55,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE

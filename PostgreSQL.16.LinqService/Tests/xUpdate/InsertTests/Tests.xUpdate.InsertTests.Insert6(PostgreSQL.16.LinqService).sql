@@ -2,9 +2,9 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."Value1" = 11
+	p."Value1" = 11
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -26,7 +26,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."Value1" = 11
+	p."Value1" = 11
 

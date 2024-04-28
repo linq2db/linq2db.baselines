@@ -7,6 +7,6 @@ SELECT
 FROM
 	Child ch
 WHERE
-	(ch.ChildID > toInt32(3) OR ch.ChildID < toInt32(4))
-LIMIT toInt32(3)
+	(ch.ChildID > 3 OR ch.ChildID < 4)
+LIMIT 3
 

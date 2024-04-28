@@ -100,41 +100,37 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`x`.`InId`,
-	`j`.`InId`,
-	`j`.`InMaxQuantity`,
-	`j`.`InMinQuantity`,
-	`x`.`InMinQuantity`,
-	`x`.`InMaxQuantity`
+	`t1`.`InId`,
+	`e`.`InId`,
+	`t1`.`InMinQuantity`,
+	`e`.`InMinQuantity`,
+	`t1`.`InMaxQuantity`,
+	`e`.`InMaxQuantity`
 FROM
-	`StLink` `x`
-		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
+	`StLink` `t1`
+		LEFT JOIN `EdtLink` `e` ON `t1`.`InId` = `e`.`InId`
 WHERE
-	`x`.`InId` = 1
-LIMIT @take
+	`t1`.`InId` = 1
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`x`.`InId`,
-	`j`.`InId`,
-	`j`.`InMaxQuantity`,
-	`j`.`InMinQuantity`,
-	`x`.`InMinQuantity`,
-	`x`.`InMaxQuantity`
+	`t1`.`InId`,
+	`e`.`InId`,
+	`t1`.`InMinQuantity`,
+	`e`.`InMinQuantity`,
+	`t1`.`InMaxQuantity`,
+	`e`.`InMaxQuantity`
 FROM
-	`StLink` `x`
-		LEFT JOIN `EdtLink` `j` ON `x`.`InId` = `j`.`InId`
+	`StLink` `t1`
+		LEFT JOIN `EdtLink` `e` ON `t1`.`InId` = `e`.`InId`
 WHERE
-	`x`.`InId` = 2
-LIMIT @take
+	`t1`.`InId` = 2
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

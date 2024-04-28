@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"p"."DateTimeValue"
+	Extract(year from "p"."DateTimeValue")
 FROM
 	"LinqDataTypes" "p"
 

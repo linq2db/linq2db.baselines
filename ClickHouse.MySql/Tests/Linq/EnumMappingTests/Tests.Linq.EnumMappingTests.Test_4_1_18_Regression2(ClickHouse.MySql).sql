@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(102)
+	ID >= 101 AND ID < 102
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -17,21 +17,26 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(101),
+	101,
 	toInt64(4),
-	toInt32(10)
+	10
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	CASE
+		WHEN r.BigIntValue IS NOT NULL AND r.IntValue IS NOT NULL
+			THEN true
+		ELSE false
+	END,
 	r.BigIntValue,
 	r.IntValue
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID = toInt32(101)
+	r.ID = 101
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -39,5 +44,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(102)
+	ID >= 101 AND ID < 102
 

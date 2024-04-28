@@ -28,8 +28,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -40,7 +38,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

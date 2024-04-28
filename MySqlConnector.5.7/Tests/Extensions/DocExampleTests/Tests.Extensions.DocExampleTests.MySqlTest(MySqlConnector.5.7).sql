@@ -10,7 +10,7 @@ FROM
 			`p`.`ParentID`,
 			`p`.`Value1`
 		FROM
-			`Parent` `p`,
-			`Child` `c_1` USE KEY FOR ORDER BY(IX_ChildIndex, IX_ChildIndex2)
+			`Parent` `p`
+				CROSS JOIN `Child` `c_1` USE KEY FOR ORDER BY(IX_ChildIndex, IX_ChildIndex2)
 	) `p_1`
 

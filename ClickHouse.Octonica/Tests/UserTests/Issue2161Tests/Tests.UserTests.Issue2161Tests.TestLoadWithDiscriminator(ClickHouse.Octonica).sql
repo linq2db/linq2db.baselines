@@ -27,7 +27,7 @@ INSERT INTO Order
 	OrderName
 )
 VALUES
-(toInt32(1),toInt32(0),'Order1')
+(1,0,'Order1')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -58,45 +58,40 @@ INSERT INTO OrderDetail
 	OrderId
 )
 VALUES
-(toInt32(100),'Detail1',toInt32(1))
+(100,'Detail1',1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Order.OrderId,
-	detail.OrderDetailId,
-	detail.Title,
-	detail.OrderId
+	m_1.OrderId,
+	d.OrderDetailId,
+	d.Title,
+	d.OrderId
 FROM
 	(
-		SELECT DISTINCT
-			t1.OrderId as OrderId
+		SELECT
+			o.OrderId as OrderId
 		FROM
-			(
-				SELECT
-					o.OrderId as OrderId
-				FROM
-					Order o
-				WHERE
-					o.OrderId = toInt32(1)
-				LIMIT toInt32(1)
-			) t1
-	) lw_Order
-		INNER JOIN OrderDetail detail ON lw_Order.OrderId = detail.OrderId
+			Order o
+		WHERE
+			o.OrderId = 1
+		LIMIT 1
+	) m_1
+		INNER JOIN OrderDetail d ON m_1.OrderId = d.OrderId
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	o.OrderId,
 	o.OrderType,
+	o.OrderId,
 	o.OrderName
 FROM
 	Order o
 WHERE
-	o.OrderId = toInt32(1)
-LIMIT toInt32(1)
+	o.OrderId = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

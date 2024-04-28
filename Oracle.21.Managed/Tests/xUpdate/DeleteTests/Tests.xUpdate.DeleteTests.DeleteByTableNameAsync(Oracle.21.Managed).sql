@@ -86,24 +86,22 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_o" t1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."FirstName",
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
 FROM
 	"xxPerson_o" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
@@ -119,7 +117,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_o" t1
 

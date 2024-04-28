@@ -2,15 +2,15 @@
 -- SqlServer.2008 (asynchronously)
 
 SELECT
-	Max([x].[PersonID])
+	MAX([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 

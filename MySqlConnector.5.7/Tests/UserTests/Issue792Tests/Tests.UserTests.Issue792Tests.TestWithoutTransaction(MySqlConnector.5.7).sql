@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`AllTypes` `t1`
 
@@ -259,7 +259,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`AllTypes` `t1`
 

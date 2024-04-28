@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Round([p].[MoneyValue], 1)
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Round([t].[MoneyValue], 1) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Round([p].[MoneyValue], 1) <> 0 AND Round([p].[MoneyValue], 1) <> 7
+	[t_1].[c1] <> 0 AND [t_1].[c1] <> 7
 

@@ -29,17 +29,15 @@ BeforeExecute
 UPDATE
 	[LinqDataTypes]
 SET
-	[r].[IntValue] = 4
-FROM
-	[LinqDataTypes] [r]
+	[IntValue] = 4
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE

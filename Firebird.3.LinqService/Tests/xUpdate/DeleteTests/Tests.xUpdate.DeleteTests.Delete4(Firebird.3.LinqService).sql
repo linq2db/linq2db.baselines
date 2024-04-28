@@ -2,9 +2,9 @@
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"GrandChild" "t1"
+	"GrandChild" "gc"
 WHERE
-	"t1"."GrandChildID" IN (1001, 1002)
+	"gc"."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -42,7 +42,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" "gc"
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" "gc"
 WHERE

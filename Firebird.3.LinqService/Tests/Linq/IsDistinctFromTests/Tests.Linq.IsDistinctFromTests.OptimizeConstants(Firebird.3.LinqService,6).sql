@@ -2,15 +2,25 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
-FROM rdb$database
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as ID
+		FROM rdb$database
+	) "s"
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
-FROM rdb$database
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as ID
+		FROM rdb$database
+	) "s"
 WHERE
 	1 = 0
 

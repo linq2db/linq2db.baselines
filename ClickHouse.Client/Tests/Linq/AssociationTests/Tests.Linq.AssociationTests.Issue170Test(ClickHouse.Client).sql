@@ -8,5 +8,5 @@ FROM
 		LEFT JOIN Parent a_Parent ON x.ParentID = a_Parent.Value1
 WHERE
 	x.Value1 IS NULL
-LIMIT toInt32(1)
+LIMIT 1
 

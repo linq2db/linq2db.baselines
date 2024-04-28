@@ -2,10 +2,18 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"ch"."ChildID"
+	"t1"."ChildID"
 FROM
 	"Parent" "p"
-		LEFT JOIN "Child" "ch" ON "ch"."ParentID" = "p"."ParentID" AND "ch"."ChildID" = "ch"."ParentID" * 10 + 1
+		LEFT JOIN LATERAL (
+			SELECT
+				"ch"."ChildID"
+			FROM
+				"Child" "ch"
+			WHERE
+				"ch"."ParentID" = "p"."ParentID" AND "ch"."ChildID" = "ch"."ParentID" * 10 + 1
+			LIMIT 1
+		) "t1" ON 1=1
 WHERE
 	"p"."ParentID" <> 5
 

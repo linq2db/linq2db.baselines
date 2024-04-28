@@ -17,5 +17,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	Date(t.DateTimeValue) > @Date
+	Extend(t.DateTimeValue, Year to Day) > @Date
 

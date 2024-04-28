@@ -47,23 +47,21 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	key_data_result.Id,
-	key_data_result.AddTime,
-	detail.Id,
-	detail.EmailId,
-	detail.Data
+	m_1.Id,
+	d.Id,
+	d.EmailId,
+	d.Data
 FROM
 	(
 		SELECT DISTINCT
-			p.Id as Id,
-			p.AddTime as AddTime
+			p.Id as Id
 		FROM
 			mails p
 				INNER JOIN IIRs i ON p.Id = i.Id
 		WHERE
 			p.AddTime > toDateTime64('2020-02-29 17:54:55.1231234', 7)
-	) key_data_result
-		INNER JOIN EmailAttachments detail ON key_data_result.Id = detail.EmailId
+	) m_1
+		INNER JOIN EmailAttachments d ON m_1.Id = d.EmailId
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

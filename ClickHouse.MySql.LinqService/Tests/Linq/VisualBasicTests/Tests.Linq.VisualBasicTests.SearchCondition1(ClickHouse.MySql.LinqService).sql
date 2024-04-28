@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.BoolValue = false AND ((toInt32(t.SmallIntValue) = toInt32(5) OR toInt32(t.SmallIntValue) = toInt32(7)) OR bitOr(toInt32(t.SmallIntValue), toInt32(2)) = toInt32(10))
+	t.BoolValue = false AND (toInt32(t.SmallIntValue) = 5 OR toInt32(t.SmallIntValue) = 7 OR bitOr(toInt32(t.SmallIntValue), 2) = 10)
 

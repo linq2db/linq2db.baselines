@@ -21,16 +21,16 @@ INSERT INTO "CollatedTable"
 )
 VALUES
 (
-	@Id,
-	@CaseSensitive,
-	@CaseInsensitive
+	CAST(@Id AS Int),
+	CAST(@CaseSensitive AS VARCHAR(10)),
+	CAST(@CaseInsensitive AS VARCHAR(10))
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" "r"
 WHERE
@@ -40,7 +40,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" "r"
 WHERE
@@ -50,7 +50,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" "r"
 WHERE
@@ -60,7 +60,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" "r"
 WHERE

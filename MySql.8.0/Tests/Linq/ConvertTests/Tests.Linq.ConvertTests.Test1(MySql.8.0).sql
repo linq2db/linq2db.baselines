@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t`.`ID`,
@@ -16,5 +14,5 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	`t`.`MoneyValue` * `t`.`ID` = 1.11
-LIMIT @take
+LIMIT 2
 

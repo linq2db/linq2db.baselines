@@ -7,5 +7,5 @@ SELECT
 FROM
 	Child ch
 WHERE
-	NOT (ch.ParentID = toInt32(2) AND ch.ChildID = toInt32(21))
+	NOT (ch.ParentID = 2 AND ch.ChildID = 21)
 

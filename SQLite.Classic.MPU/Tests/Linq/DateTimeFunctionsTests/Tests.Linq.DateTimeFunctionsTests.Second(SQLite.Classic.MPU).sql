@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Cast(StrFTime('%S', [t].[DateTimeValue]) as int)
+	CAST(strftime('%S', [t].[DateTimeValue]) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

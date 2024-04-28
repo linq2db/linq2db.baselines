@@ -72,9 +72,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[DeviceType],
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[DeviceType],
 	[t1].[Location]
 FROM
 	[Issue4280] [t1]
@@ -95,13 +95,11 @@ SET     @Id = 2
 UPDATE
 	[Issue4280]
 SET
-	[t1].[SerialNumber] = @SerialNumber,
-	[t1].[DeviceType] = @DeviceType,
-	[t1].[Location] = @Location
-FROM
-	[Issue4280] [t1]
+	[SerialNumber] = @SerialNumber,
+	[DeviceType] = @DeviceType,
+	[Location] = @Location
 WHERE
-	[t1].[Id] = @Id
+	[Issue4280].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -115,20 +113,18 @@ SET     @Id = 1
 UPDATE
 	[Issue4280]
 SET
-	[t1].[SerialNumber] = @SerialNumber,
-	[t1].[DeviceType] = @DeviceType
-FROM
-	[Issue4280] [t1]
+	[SerialNumber] = @SerialNumber,
+	[DeviceType] = @DeviceType
 WHERE
-	[t1].[Id] = @Id
+	[Issue4280].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[DeviceType],
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[DeviceType],
 	[t1].[Location]
 FROM
 	[Issue4280] [t1]

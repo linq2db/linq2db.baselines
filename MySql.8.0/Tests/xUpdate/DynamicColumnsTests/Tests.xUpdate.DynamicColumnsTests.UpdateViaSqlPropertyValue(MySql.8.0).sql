@@ -20,7 +20,7 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `c_1`
 WHERE
@@ -45,7 +45,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `c_1`
 WHERE

@@ -2,10 +2,10 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`selectParam`.`ChildID`,
-	Avg(`selectParam`.`ParentID`)
+	`t1`.`ChildID`,
+	AVG(`t1`.`ParentID`)
 FROM
-	`Child` `selectParam`
+	`Child` `t1`
 GROUP BY
-	`selectParam`.`ChildID`
+	`t1`.`ChildID`
 

@@ -52,33 +52,33 @@ INSERT INTO IntegerConverts
 	UInt64N
 )
 VALUES
-(toInt32(1),toUInt8(0),toInt8(0),toInt16(0),toUInt16(0),toInt32(0),toUInt32(0),toInt64(0),toUInt64(0),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+(1,toUInt8(0),toInt8(0),toInt16(0),toUInt16(0),0,toUInt32(0),toInt64(0),toUInt64(0),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x.Id,
-	x.Byte,
-	x.SByte,
-	x.Int16,
-	x.UInt16,
-	x.Int32,
-	x.UInt32,
-	x.Int64,
-	x.UInt64,
-	x.ByteN,
-	x.SByteN,
-	x.Int16N,
-	x.UInt16N,
-	x.Int32N,
-	x.UInt32N,
-	x.Int64N,
-	x.UInt64N
+	t1.Id,
+	t1.Byte,
+	t1.SByte,
+	t1.Int16,
+	t1.UInt16,
+	t1.Int32,
+	t1.UInt32,
+	t1.Int64,
+	t1.UInt64,
+	t1.ByteN,
+	t1.SByteN,
+	t1.Int16N,
+	t1.UInt16N,
+	t1.Int32N,
+	t1.UInt32N,
+	t1.Int64N,
+	t1.UInt64N
 FROM
-	IntegerConverts x
-		INNER JOIN IntegerConverts y ON y.UInt64 = x.UInt64
-LIMIT toInt32(2)
+	IntegerConverts t1
+		INNER JOIN IntegerConverts y ON y.UInt64 = t1.UInt64
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

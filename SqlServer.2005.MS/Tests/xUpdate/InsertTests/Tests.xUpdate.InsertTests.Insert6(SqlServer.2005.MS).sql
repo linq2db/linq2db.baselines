@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -27,7 +27,7 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -36,9 +36,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 

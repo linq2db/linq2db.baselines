@@ -27,8 +27,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'abc',
 	'abc'
 )
@@ -45,7 +45,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
 	'def',
 	NULL
@@ -55,7 +55,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.Int, toInt32(2))
+	NULLIF(s.Int, 2)
 FROM
 	Src s
 ORDER BY
@@ -65,7 +65,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.Int, toInt32(4))
+	NULLIF(s.Int, 4)
 FROM
 	Src s
 ORDER BY
@@ -85,7 +85,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.NullableInt, toInt32(2))
+	NULLIF(s.NullableInt, 2)
 FROM
 	Src s
 ORDER BY
@@ -95,7 +95,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.NullableInt, toInt32(4))
+	NULLIF(s.NullableInt, 4)
 FROM
 	Src s
 ORDER BY

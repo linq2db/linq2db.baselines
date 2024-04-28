@@ -288,7 +288,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -1 * Interval '1 Day' * 7
+	Date_Trunc('day', (t."TransactionDate" + (-Interval '1 Day') * 7) AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 

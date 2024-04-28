@@ -36,8 +36,8 @@ INSERT INTO "Issue681Table"
 )
 VALUES
 (
-	@ID,
-	@Value
+	CAST(@ID AS Int),
+	CAST(@Value AS Int)
 )
 
 BeforeExecute

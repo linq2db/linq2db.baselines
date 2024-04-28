@@ -3,13 +3,15 @@
 
 SELECT
 	CASE
-		WHEN NULL IN (
+		WHEN 1 IN (
 			SELECT
-				c_1.Value1
+				1
 			FROM
 				Parent c_1
+			WHERE
+				c_1.Value1 IS NULL
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

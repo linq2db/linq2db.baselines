@@ -21,8 +21,8 @@ DECLARE @Int  -- Int32
 SET     @Int = 1
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date  -- DateTime
-SET     @Date = '2001-01-01'
+DECLARE @Date VarChar(23) -- AnsiString
+SET     @Date = '2001-01-01 00:00:00.000'
 DECLARE @Double  -- Double
 SET     @Double = 1
 DECLARE @Bool  -- Boolean
@@ -51,8 +51,8 @@ DECLARE @Int  -- Int32
 SET     @Int = 2
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date  -- DateTime
-SET     @Date = '2002-02-02'
+DECLARE @Date VarChar(23) -- AnsiString
+SET     @Date = '2002-02-02 00:00:00.000'
 DECLARE @Double  -- Double
 SET     @Double = 2
 DECLARE @Bool  -- Boolean
@@ -79,7 +79,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

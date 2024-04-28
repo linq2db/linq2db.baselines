@@ -2,17 +2,14 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	t_1."c1"
 FROM
 	(
 		SELECT
-			CASE
-				WHEN p."MoneyValue" < 5 THEN p."MoneyValue"
-				ELSE 5
-			END as "c1"
+			LEAST(t."MoneyValue", 5) as "c1"
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t."c1" <> 0
+	t_1."c1" <> 0
 

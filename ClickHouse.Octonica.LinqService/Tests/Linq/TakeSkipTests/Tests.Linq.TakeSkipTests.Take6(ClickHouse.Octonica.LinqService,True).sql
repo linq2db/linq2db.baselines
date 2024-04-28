@@ -8,5 +8,5 @@ FROM
 	Child t1
 ORDER BY
 	t1.ChildID
-LIMIT toInt32(3)
+LIMIT 3
 

@@ -4,12 +4,12 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 UPDATE
-	[c_1]
+	[a_Values]
 SET
-	[c_1].[Value1] = @Value1
+	[a_Values].[Value1] = @Value1
 FROM
 	[Parent] [x]
-		INNER JOIN [Parent] [c_1] ON [x].[ParentID] = [c_1].[Value1]
+		INNER JOIN [Parent] [a_Values] ON [x].[ParentID] = [a_Values].[Value1]
 WHERE
 	[x].[ParentID] IN (0, 0)
 

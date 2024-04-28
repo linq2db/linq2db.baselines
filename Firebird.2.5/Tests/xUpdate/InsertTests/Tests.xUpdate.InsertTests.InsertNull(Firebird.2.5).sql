@@ -12,15 +12,15 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	Cast(@ParentID as Int),
-	Cast(@Value1 as Int)
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE

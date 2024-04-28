@@ -2,11 +2,11 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child c_1
 GROUP BY
 	c_1.ParentID
 HAVING
-	Count(*) > toInt32(1) AND Count(*) > toInt32(1)
+	COUNT(*) > 1 AND COUNT(*) > 1
 

@@ -3,9 +3,9 @@
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -27,7 +27,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -38,7 +38,7 @@ BeforeExecute
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 

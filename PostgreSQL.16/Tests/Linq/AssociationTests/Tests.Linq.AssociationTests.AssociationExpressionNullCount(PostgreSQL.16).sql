@@ -49,9 +49,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"NotNullParent" p
+		LEFT JOIN "NotNullChild" "a_ChildOuter" ON p."ID" = "a_ChildOuter"."ParentID"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

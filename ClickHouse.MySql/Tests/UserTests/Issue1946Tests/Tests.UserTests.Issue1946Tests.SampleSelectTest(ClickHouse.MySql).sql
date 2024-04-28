@@ -25,7 +25,7 @@ INSERT INTO Users
 	Version
 )
 VALUES
-(toInt32(1),toInt32(0))
+(1,0)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -35,7 +35,7 @@ SELECT
 FROM
 	Users u
 WHERE
-	u.Version < toInt32(1)
+	u.Version < 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

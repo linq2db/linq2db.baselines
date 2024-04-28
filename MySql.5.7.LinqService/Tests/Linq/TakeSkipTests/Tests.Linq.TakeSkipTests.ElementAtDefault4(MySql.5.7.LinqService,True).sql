@@ -2,8 +2,6 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @n Int32
 SET     @n = 300000
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`ParentID`,
@@ -12,5 +10,5 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` > 1
-LIMIT @n, @take
+LIMIT @n, 1
 

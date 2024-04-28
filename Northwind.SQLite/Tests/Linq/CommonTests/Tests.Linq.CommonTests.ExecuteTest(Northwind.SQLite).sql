@@ -2,7 +2,7 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Employees] [t1]
 

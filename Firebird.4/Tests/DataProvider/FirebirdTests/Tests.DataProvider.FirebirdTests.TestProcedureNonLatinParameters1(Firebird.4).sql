@@ -17,8 +17,6 @@ BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -30,7 +28,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -38,7 +36,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."PersonID" = @id
+	"p"."PersonID" = @id
 

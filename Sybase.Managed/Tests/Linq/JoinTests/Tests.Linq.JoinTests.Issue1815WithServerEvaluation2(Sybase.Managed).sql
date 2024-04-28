@@ -67,39 +67,39 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[InId],
+	[t1].[InId],
 	CASE
-		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
-		ELSE [j].[InMinQuantity]
+		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
+		ELSE [e].[InMinQuantity]
 	END,
 	CASE
-		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
-		ELSE [j].[InMaxQuantity]
+		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
+		ELSE [e].[InMaxQuantity]
 	END
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 1
+	[t1].[InId] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	[x].[InId],
+	[t1].[InId],
 	CASE
-		WHEN [j].[InId] IS NULL THEN [x].[InMinQuantity]
-		ELSE [j].[InMinQuantity]
+		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
+		ELSE [e].[InMinQuantity]
 	END,
 	CASE
-		WHEN [j].[InId] IS NULL THEN [x].[InMaxQuantity]
-		ELSE [j].[InMaxQuantity]
+		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
+		ELSE [e].[InMaxQuantity]
 	END
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON [x].[InId] = [j].[InId]
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
 WHERE
-	[x].[InId] = 2
+	[t1].[InId] = 2
 
 BeforeExecute
 -- Sybase.Managed Sybase

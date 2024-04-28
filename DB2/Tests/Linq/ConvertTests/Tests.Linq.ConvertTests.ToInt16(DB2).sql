@@ -2,9 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	SmallInt("t"."MoneyValue")
+	"p_1"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CAST(Floor("p"."MoneyValue") AS SmallInt) as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "p_1"
 WHERE
-	SmallInt("t"."MoneyValue") > 0
+	"p_1"."c1" > 0
 

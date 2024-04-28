@@ -376,7 +376,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InstanceClass] [t]
 WHERE

@@ -33,15 +33,29 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Count(*)
+	[it_2].[Name],
+	[it_2].[Value_1],
+	[it_2].[COUNT_1]
 FROM
-	[odata_person] [selectParam]
-GROUP BY
-	[selectParam].[Title]
+	(
+		SELECT
+			COUNT(*) as [COUNT_1],
+			[it_1].[c1] as [Name],
+			[it_1].[Title] as [Value_1]
+		FROM
+			(
+				SELECT
+					N'Title' as [c1],
+					[it].[Title]
+				FROM
+					[odata_person] [it]
+			) [it_1]
+		GROUP BY
+			[it_1].[c1],
+			[it_1].[Title]
+	) [it_2]
 ORDER BY
-	Count(*)
+	[it_2].[COUNT_1]
 
 BeforeExecute
 -- SqlServer.2022

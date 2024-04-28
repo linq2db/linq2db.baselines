@@ -19,7 +19,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	1001,
-	@Value1
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
@@ -30,7 +30,7 @@ DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "t1"
 WHERE

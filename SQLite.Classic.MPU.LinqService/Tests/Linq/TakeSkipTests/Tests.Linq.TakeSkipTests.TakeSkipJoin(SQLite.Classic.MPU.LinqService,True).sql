@@ -17,12 +17,10 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 15
-DECLARE @take_1  -- Int32
-SET     @take_1 = 15
 
 SELECT
 	[e].[ID],
-	[_].[SmallIntValue]
+	[p].[SmallIntValue]
 FROM
 	(
 		SELECT
@@ -85,9 +83,9 @@ FROM
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]
-			LIMIT @take_1
-		) [_] ON [_].[ID] = [e].[ID]
+			LIMIT @take
+		) [p] ON [p].[ID] = [e].[ID]
 ORDER BY
-	[_].[ID],
-	[e].[ID]
+	[e].[ID],
+	[p].[ID]
 

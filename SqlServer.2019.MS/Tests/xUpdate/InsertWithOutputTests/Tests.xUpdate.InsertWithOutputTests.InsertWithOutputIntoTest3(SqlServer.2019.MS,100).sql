@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -54,9 +54,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 100
 
 SELECT
-	[c_1].[ParentID],
+	[c_1].[ParentID] - @ParentID,
 	[c_1].[ChildID]
 FROM
 	[TInserted] [c_1]
@@ -80,9 +82,9 @@ DROP TABLE IF EXISTS [TInserted]
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

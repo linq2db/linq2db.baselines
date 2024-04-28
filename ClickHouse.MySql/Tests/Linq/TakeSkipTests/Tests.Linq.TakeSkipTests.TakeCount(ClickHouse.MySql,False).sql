@@ -2,14 +2,13 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID,
-			t1.ChildID as ChildID
+			*
 		FROM
 			Child t1
-		LIMIT toInt32(5)
+		LIMIT 5
 	) t2
 

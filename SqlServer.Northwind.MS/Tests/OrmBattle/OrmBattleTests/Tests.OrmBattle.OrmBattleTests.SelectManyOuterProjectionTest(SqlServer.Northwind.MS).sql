@@ -2,18 +2,18 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[cp].[CustomerID],
-	[cp].[CompanyName],
-	[cp].[ContactName],
-	[cp].[ContactTitle],
-	[cp].[Address],
-	[cp].[City],
-	[cp].[Region],
-	[cp].[PostalCode],
-	[cp].[Country],
-	[cp].[Phone],
-	[cp].[Fax]
+	[i].[CustomerID],
+	[i].[CompanyName],
+	[i].[ContactName],
+	[i].[ContactTitle],
+	[i].[Address],
+	[i].[City],
+	[i].[Region],
+	[i].[PostalCode],
+	[i].[Country],
+	[i].[Phone],
+	[i].[Fax]
 FROM
-	[Customers] [cp]
-		INNER JOIN [Orders] [c_1] ON ([cp].[CustomerID] = [c_1].[CustomerID] OR [cp].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+	[Customers] [i]
+		INNER JOIN [Orders] [a_Orders] ON [i].[CustomerID] = [a_Orders].[CustomerID]
 

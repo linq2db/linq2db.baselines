@@ -2,26 +2,26 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			p."PersonID" as "Key_1",
-			Count(*) as "Count_1"
+			q1."PersonID" as "Key_1",
+			COUNT(*) as "Count_1"
 		FROM
-			"Person" p
+			"Person" q1
 		GROUP BY
-			p."PersonID"
-	) q1
+			q1."PersonID"
+	) t2
 		FULL JOIN (
 			SELECT
-				p_1."PersonID" as "Key_1",
-				Count(*) as "Count_1"
+				q2."PersonID" as "Key_1",
+				COUNT(*) as "Count_1"
 			FROM
-				"Patient" p_1
+				"Patient" q2
 			GROUP BY
-				p_1."PersonID"
-		) t1 ON q1."Key_1" = t1."Key_1" AND (q1."Count_1" = t1."Count_1" OR q1."Count_1" IS NULL AND t1."Count_1" IS NULL)
+				q2."PersonID"
+		) t1 ON t2."Key_1" = t1."Key_1" AND t2."Count_1" = t1."Count_1"
 WHERE
-	(q1."Count_1" IS NULL OR t1."Count_1" IS NULL)
+	(t2."Count_1" IS NULL OR t1."Count_1" IS NULL)
 

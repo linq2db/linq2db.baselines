@@ -2,17 +2,10 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" parent_1,
-	(
-		SELECT
-			child_1."ParentID",
-			child_1."ChildID",
-			parent_2."ParentID" as "ParentID_1"
-		FROM
-			"Parent" parent_2,
-			"Child" child_1
-	) s
-		LEFT JOIN "GrandChild" t1 ON s."ParentID" = t1."ParentID" AND s."ChildID" = t1."ChildID"
+	"Parent" parent_1
+		CROSS JOIN "Parent" s
+		CROSS JOIN "Child" child_1
+		LEFT JOIN "GrandChild" grandChild_1 ON child_1."ParentID" = grandChild_1."ParentID" AND child_1."ChildID" = grandChild_1."ChildID"
 

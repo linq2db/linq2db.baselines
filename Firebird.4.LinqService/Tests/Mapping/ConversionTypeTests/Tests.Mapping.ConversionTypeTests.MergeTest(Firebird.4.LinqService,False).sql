@@ -36,8 +36,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -63,19 +63,19 @@ BeforeExecute
 
 MERGE INTO "TrimTestTable" "Target"
 USING (
-	SELECT 1 AS ID, CAST('***OOO***' AS VARCHAR(9)) AS "Data_1" FROM rdb$database
+	SELECT 1 AS "source_ID", CAST('***OOO***' AS VARCHAR(9)) AS "source_Data" FROM rdb$database
 	UNION ALL
 	SELECT 2, CAST('***SSS***' AS VARCHAR(9)) FROM rdb$database) "Source"
 (
-	ID,
-	"Data_1"
+	"source_ID",
+	"source_Data"
 )
-ON ("Target".ID = "Source".ID)
+ON ("Target".ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Data" = "Source"."Data_1"
+	"Data" = "Source"."source_Data"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -85,8 +85,8 @@ INSERT
 )
 VALUES
 (
-	"Source".ID,
-	"Source"."Data_1"
+	"Source"."source_ID",
+	"Source"."source_Data"
 )
 
 BeforeExecute
@@ -94,17 +94,17 @@ BeforeExecute
 
 MERGE INTO "TrimTestTable" "Target"
 USING (
-	SELECT 3 AS ID, CAST('***III***' AS VARCHAR(9)) AS "Data_1" FROM rdb$database) "Source"
+	SELECT 3 AS "source_ID", CAST('***III***' AS VARCHAR(9)) AS "source_Data" FROM rdb$database) "Source"
 (
-	ID,
-	"Data_1"
+	"source_ID",
+	"source_Data"
 )
-ON ("Target".ID = "Source".ID)
+ON ("Target".ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Data" = "Source"."Data_1"
+	"Data" = "Source"."source_Data"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -114,8 +114,8 @@ INSERT
 )
 VALUES
 (
-	"Source".ID,
-	"Source"."Data_1"
+	"Source"."source_ID",
+	"Source"."source_Data"
 )
 
 BeforeExecute

@@ -2,11 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.ParentID,
+	t1.ParentID,
 	ch.ChildID
 FROM
-	Parent p
-		INNER JOIN Child ch ON p.ParentID = ch.ParentID
+	Parent t1
+		INNER JOIN Child ch ON t1.ParentID = ch.ParentID
 WHERE
-	(ch.ParentID < toInt32(4) OR ch.ParentID >= toInt32(4))
+	(ch.ParentID < 4 OR ch.ParentID >= 4)
 

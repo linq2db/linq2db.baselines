@@ -36,10 +36,10 @@ INSERT INTO UpdateSetTest
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'),
-	toInt32(10),
-	toInt32(6),
+	10,
+	6,
 	NULL,
 	NULL,
 	NULL
@@ -51,20 +51,20 @@ BeforeExecute
 ALTER TABLE
 	UpdateSetTest
 UPDATE
-	Value5 = toInt32(11)
+	Value5 = 11
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Value5
+	t1.Value5
 FROM
-	UpdateSetTest _
+	UpdateSetTest t1
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(2)
+	t1.Id = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -72,20 +72,20 @@ BeforeExecute
 ALTER TABLE
 	UpdateSetTest
 UPDATE
-	Value5 = toInt32(12)
+	Value5 = 12
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Value5
+	t1.Value5
 FROM
-	UpdateSetTest _
+	UpdateSetTest t1
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(2)
+	t1.Id = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -24,8 +24,6 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`x`.`FirstName`,
@@ -37,7 +35,7 @@ FROM
 	`Person` `x`
 WHERE
 	`x`.`FirstName` = @FirstName
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

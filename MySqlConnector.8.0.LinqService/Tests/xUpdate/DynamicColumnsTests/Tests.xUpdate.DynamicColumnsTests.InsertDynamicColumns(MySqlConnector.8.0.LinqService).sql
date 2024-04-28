@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(11) -- String
+SET     @LastName = 'The Dynamic'
+DECLARE @Gender String(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -9,16 +15,16 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'The Dynamic',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE

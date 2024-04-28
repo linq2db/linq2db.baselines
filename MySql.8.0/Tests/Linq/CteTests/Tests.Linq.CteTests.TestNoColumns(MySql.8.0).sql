@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `t1`
 
@@ -19,14 +19,14 @@ AS
 		`Child` `t1`
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CTE1_` `t2`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `CTE1_` (`ChildID`)
+WITH `CTE1_` (`C_ChildID`)
 AS
 (
 	SELECT
@@ -35,18 +35,17 @@ AS
 		`Child` `c_1`
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CTE1_` `t1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `CTE1_` (`ChildID`)
-AS
+WITH `CTE1_` AS
 (
 	SELECT
-		`c_1`.`ChildID` as `C_1`
+		*
 	FROM
 		`Child` `c_1`
 )

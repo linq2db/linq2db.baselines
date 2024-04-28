@@ -50,187 +50,187 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
+	t1.BoolValue = 'N'
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
+	t1.BoolValue = 'Y'
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
-LIMIT toInt32(1)
+	t1.BoolValue = 'N'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+	t1.BoolValue = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
-LIMIT toInt32(1)
+	t1.BoolValue = 'N'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+	t1.BoolValue = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
-LIMIT toInt32(1)
+	t1.BoolValue = 'N'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+	t1.BoolValue = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
-LIMIT toInt32(1)
+	t1.BoolValue = 'N'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+	t1.BoolValue = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'N'
-LIMIT toInt32(1)
+	t1.BoolValue = 'N'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.BoolValue = 'Y'
-LIMIT toInt32(1)
+	t1.BoolValue = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-LIMIT toInt32(1)
+	t1.GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Name,
-	_.BoolValue,
-	_.GuidValue
+	t1.Name,
+	t1.BoolValue,
+	t1.GuidValue
 FROM
-	TypeConvertTable _
+	TypeConvertTable t1
 WHERE
-	_.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-LIMIT toInt32(1)
+	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [gc]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [gc]
 WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
+	[gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -43,7 +43,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

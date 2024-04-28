@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

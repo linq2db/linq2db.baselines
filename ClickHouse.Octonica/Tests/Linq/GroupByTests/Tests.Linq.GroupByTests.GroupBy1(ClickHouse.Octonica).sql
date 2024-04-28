@@ -2,23 +2,23 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t3.ParentID
+	p_2.ParentID
 FROM
 	(
 		SELECT
-			t2.ParentID as ParentID
+			p_1.ParentID as ParentID
 		FROM
 			(
 				SELECT
-					t1.ParentID as ParentID
+					p.ParentID as ParentID
 				FROM
-					Child t1
+					Child p
 				GROUP BY
-					t1.ParentID
-			) t2
+					p.ParentID
+			) p_1
 		GROUP BY
-			t2.ParentID
-	) t3
+			p_1.ParentID
+	) p_2
 GROUP BY
-	t3.ParentID
+	p_2.ParentID
 

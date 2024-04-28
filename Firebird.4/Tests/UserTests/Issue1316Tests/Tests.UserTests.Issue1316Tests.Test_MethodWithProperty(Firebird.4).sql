@@ -32,15 +32,13 @@ INSERT INTO "Issue1316Tests"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 5
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1".ID
@@ -48,7 +46,7 @@ FROM
 	"Issue1316Tests" "t1"
 WHERE
 	"t1".ID = @Item1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

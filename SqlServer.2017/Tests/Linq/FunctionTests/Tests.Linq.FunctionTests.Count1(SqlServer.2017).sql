@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

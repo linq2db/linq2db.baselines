@@ -50,19 +50,19 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	@One,
-	@Two,
-	@Three,
-	@Four,
-	@Five,
-	@Nil
+	CAST(@One AS Int),
+	CAST(@Two AS Int),
+	CAST(@Three AS Int),
+	CAST(@Four AS Int),
+	CAST(@Five AS Int),
+	CAST(@Nil AS Int)
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -73,7 +73,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -84,7 +84,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -95,7 +95,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -106,7 +106,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -117,7 +117,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -128,7 +128,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -139,7 +139,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -150,7 +150,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE
@@ -161,7 +161,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" "i"
 WHERE

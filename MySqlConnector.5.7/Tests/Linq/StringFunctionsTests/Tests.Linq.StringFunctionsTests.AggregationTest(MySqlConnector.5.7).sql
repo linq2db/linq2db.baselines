@@ -35,15 +35,13 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Max(`t1`.`Value1`),
-	GROUP_CONCAT(`t1`.`Value1` SEPARATOR ' -> ')
+	MAX(`g_1`.`Value1`),
+	GROUP_CONCAT(`g_1`.`Value1` SEPARATOR ' -> ')
 FROM
-	`SampleClass` `t1`
+	`SampleClass` `g_1`
 GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value1`
-ORDER BY
-	`t1`.`Id`
+	`g_1`.`Id`,
+	`g_1`.`Value1`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

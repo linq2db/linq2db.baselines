@@ -2,9 +2,9 @@
 -- Firebird.4 Firebird4
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -26,7 +26,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 

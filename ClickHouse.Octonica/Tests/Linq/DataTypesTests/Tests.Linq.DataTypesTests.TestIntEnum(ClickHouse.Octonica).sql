@@ -24,8 +24,8 @@ INSERT INTO IntEnumTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toInt32(1),NULL),
-(toInt32(2),toInt32(2),toInt32(3))
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -37,7 +37,7 @@ SELECT
 FROM
 	IntEnumTable r
 WHERE
-	r.Column = toInt32(2) AND r.ColumnNullable = toInt32(3)
+	r.Column = 2 AND r.ColumnNullable = 3
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	IntEnumTable r
 WHERE
-	r.Column = toInt32(2) AND r.ColumnNullable = toInt32(3)
+	r.Column = 2 AND r.ColumnNullable = 3
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -69,8 +69,8 @@ INSERT INTO IntEnumTable
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1),
+	1,
+	1,
 	NULL
 )
 
@@ -85,9 +85,9 @@ INSERT INTO IntEnumTable
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
-	toInt32(3)
+	2,
+	2,
+	3
 )
 
 BeforeExecute
@@ -119,8 +119,8 @@ INSERT INTO IntEnumTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toInt32(1),NULL),
-(toInt32(2),toInt32(2),toInt32(3))
+(1,1,NULL),
+(2,2,3)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -36,7 +36,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -47,7 +47,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -58,7 +58,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -69,7 +69,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -79,7 +79,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

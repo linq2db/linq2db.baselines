@@ -2,9 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Parent t1
+	Parent gr
 GROUP BY
-	t1.ParentID
+	gr.ParentID
 

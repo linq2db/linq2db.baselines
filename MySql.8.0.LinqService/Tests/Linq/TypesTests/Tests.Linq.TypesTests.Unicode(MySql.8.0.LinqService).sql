@@ -26,8 +26,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -39,5 +37,5 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = '擊敗奴隸' AND `p`.`LastName` = 'Юникодкин'
-LIMIT @take
+LIMIT 2
 

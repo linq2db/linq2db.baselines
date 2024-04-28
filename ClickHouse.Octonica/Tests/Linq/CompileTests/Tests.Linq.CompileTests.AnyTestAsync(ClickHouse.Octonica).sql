@@ -9,10 +9,10 @@ SELECT
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID = toInt32(1)
+				c_1.ParentID = 1
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute
@@ -26,9 +26,9 @@ SELECT
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID = toInt32(-1)
+				c_1.ParentID = -1
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

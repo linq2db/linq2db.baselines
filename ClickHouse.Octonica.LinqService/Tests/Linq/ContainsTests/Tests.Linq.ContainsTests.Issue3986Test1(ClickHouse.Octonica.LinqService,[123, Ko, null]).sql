@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID = toInt32(3) AND (r.MiddleName IN ('123', 'Ko') OR r.MiddleName IS NULL)
+	r.PersonID = 3 AND (r.MiddleName IN ('123', 'Ko') OR r.MiddleName IS NULL)
 

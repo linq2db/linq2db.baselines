@@ -2,14 +2,14 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as "c1"
+			gr."ParentID" as "Key_1"
 		FROM
-			"Child" t1
+			"Child" gr
 		GROUP BY
-			t1."ParentID"
-	) t2
+			gr."ParentID"
+	) t1
 

@@ -42,22 +42,24 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p Datetime -- DateTime
-SET     @p = '2018-01-02'
+DECLARE @part1 Int16
+SET     @part1 = 4
+DECLARE @part2 Int32
+SET     @part2 = 4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) < @p
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval ((`t`.`SmallIntValue` + @part1) - @part2) Day) < STR_TO_DATE('2018-01-02 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `t`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `t`
 WHERE
-	`t1`.`ID` = 5000
+	`t`.`ID` = 5000
 

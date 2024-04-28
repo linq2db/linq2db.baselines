@@ -27,8 +27,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'abc',
 	'abc'
 )
@@ -45,7 +45,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
 	'def',
 	NULL
@@ -55,7 +55,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -65,7 +65,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -75,7 +75,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -85,7 +85,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE

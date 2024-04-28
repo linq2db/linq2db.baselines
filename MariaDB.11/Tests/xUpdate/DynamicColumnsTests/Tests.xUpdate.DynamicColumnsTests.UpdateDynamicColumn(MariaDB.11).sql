@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(10) -- String
+SET     @LastName = 'Limonadovy'
+DECLARE @Gender String(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -9,16 +15,16 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	'John',
-	'Limonadovy',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE
@@ -38,7 +44,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `c_1`
 WHERE

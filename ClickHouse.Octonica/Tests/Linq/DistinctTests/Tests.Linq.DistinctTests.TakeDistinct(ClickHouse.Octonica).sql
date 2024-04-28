@@ -11,6 +11,6 @@ FROM
 			Child ch
 		ORDER BY
 			ch.ParentID
-		LIMIT toInt32(4)
+		LIMIT 4
 	) t1
 

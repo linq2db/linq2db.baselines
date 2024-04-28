@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
@@ -11,9 +9,12 @@ FROM
 WHERE
 	(
 		SELECT
-			"r"."GuidValue"
+			CASE
+				WHEN "r"."GuidValue" IS NOT NULL THEN TRUE
+				ELSE FALSE
+			END
 		FROM
 			"LinqDataTypes" "r"
-		FETCH NEXT @take ROWS ONLY
-	) IS NOT NULL
+		FETCH NEXT 1 ROWS ONLY
+	) = TRUE
 

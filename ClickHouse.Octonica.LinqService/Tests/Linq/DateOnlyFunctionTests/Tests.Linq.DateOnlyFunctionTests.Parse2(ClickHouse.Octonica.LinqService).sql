@@ -26,7 +26,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toDate32('2020-02-29')
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toDate32('2021-02-28')
 )
 
@@ -54,7 +54,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	toDate32('2019-02-28')
 )
 
@@ -68,7 +68,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	toDate32('2020-03-29')
 )
 
@@ -82,7 +82,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	toDate32('2020-01-29')
 )
 
@@ -96,7 +96,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	toDate32('2020-03-01')
 )
 
@@ -110,7 +110,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(7),
+	7,
 	toDate32('2020-02-28')
 )
 
@@ -124,7 +124,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(8),
+	8,
 	toDate32('2020-08-09')
 )
 
@@ -138,7 +138,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(9),
+	9,
 	toDate32('2021-08-09')
 )
 
@@ -152,7 +152,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	toDate32('2019-08-09')
 )
 
@@ -166,7 +166,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(11),
+	11,
 	toDate32('2020-09-09')
 )
 
@@ -180,7 +180,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(12),
+	12,
 	toDate32('2020-07-09')
 )
 
@@ -194,7 +194,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(13),
+	13,
 	toDate32('2020-08-10')
 )
 
@@ -208,7 +208,7 @@ INSERT INTO Transactions
 )
 VALUES
 (
-	toInt32(14),
+	14,
 	toDate32('2020-08-08')
 )
 
@@ -216,16 +216,11 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	d.c1
+	d.TransactionDate
 FROM
-	(
-		SELECT
-			t.TransactionDate as c1
-		FROM
-			Transactions t
-	) d
+	Transactions d
 WHERE
-	DAY(d.c1) > toInt32(0)
+	toDayOfMonth(d.TransactionDate) > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

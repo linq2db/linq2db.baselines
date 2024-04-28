@@ -33,7 +33,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -43,7 +43,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -53,7 +53,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

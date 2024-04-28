@@ -2,15 +2,15 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Max([x].[PersonID])
+	MAX([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 

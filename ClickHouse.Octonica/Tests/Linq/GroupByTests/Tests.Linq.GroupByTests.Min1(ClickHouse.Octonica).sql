@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	minOrNull(c_1.ChildID)
+	minOrNull(t1.ChildID)
 FROM
-	Child c_1
+	Child t1
 

@@ -31,11 +31,11 @@ INSERT INTO Ints
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(3),
-	toInt32(4),
-	toInt32(5),
+	1,
+	2,
+	3,
+	4,
+	5,
 	NULL
 )
 
@@ -43,101 +43,111 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One, i.Two) BETWEEN (i.One, i.One * toInt32(2)) AND (i.One, i.One + i.One)
+	(i.One > i.One OR i.One = i.One AND i.Two >= i.One * 2) AND
+	(i.One < i.One OR i.One = i.One AND i.Two <= i.One + i.One)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One, i.Three) BETWEEN (i.One, i.One) AND (i.One, i.Four)
+	(i.One > i.One OR i.One = i.One AND i.Three >= i.One) AND
+	(i.One < i.One OR i.One = i.One AND i.Three <= i.Four)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One, i.Two) BETWEEN (i.One, i.Three) AND (i.One, i.Two)
+	(i.One > i.One OR i.One = i.One AND i.Two >= i.Three) AND
+	(i.One < i.One OR i.One = i.One AND i.Two <= i.Two)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Five) BETWEEN (i.One, i.One) AND (i.Three, i.Two)
+	(i.Two > i.One OR i.Two = i.One AND i.Five >= i.One) AND
+	(i.Two < i.Three OR i.Two = i.Three AND i.Five <= i.Two)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Five) BETWEEN (i.One, i.One) AND (i.Two, i.Two)
+	(i.Two > i.One OR i.Two = i.One AND i.Five >= i.One) AND
+	(i.Two < i.Two OR i.Two = i.Two AND i.Five <= i.Two)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Nil) BETWEEN (i.One, i.One) AND (i.Three, i.One)
+	(i.Two > i.One OR i.Two = i.One AND i.Nil >= i.One) AND
+	(i.Two < i.Three OR i.Two = i.Three AND i.Nil <= i.One)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Nil) BETWEEN (i.Two, i.One) AND (i.Two, i.Three)
+	(i.Two > i.Two OR i.Two = i.Two AND i.Nil >= i.One) AND
+	(i.Two < i.Two OR i.Two = i.Two AND i.Nil <= i.Three)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Five) BETWEEN (i.One, i.Nil) AND (i.Three, i.Nil)
+	(i.Two > i.One OR i.Two = i.One AND i.Five >= i.Nil) AND
+	(i.Two < i.Three OR i.Two = i.Three AND i.Five <= i.Nil)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Nil) BETWEEN (i.One, i.Nil) AND (i.Three, i.Nil)
+	(i.Two > i.One OR i.Two = i.One AND i.Nil >= i.Nil) AND
+	(i.Two < i.Three OR i.Two = i.Three AND i.Nil <= i.Nil)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.Two, i.Two) BETWEEN (i.Nil, i.One) AND (i.Three, i.Five)
+	(i.Two > i.Nil OR i.Two = i.Nil AND i.Two >= i.One) AND
+	(i.Two < i.Three OR i.Two = i.Three AND i.Two <= i.Five)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

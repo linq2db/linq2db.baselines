@@ -2,14 +2,14 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[Key_1]
+	[t2].[c1]
 FROM
 	(
 		SELECT
-			MONTH([selectParam].[DateTimeValue]) as [Key_1]
+			MONTH([t1].[DateTimeValue]) as [c1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [t1]
+	) [t2]
 GROUP BY
-	[t1].[Key_1]
+	[t2].[c1]
 

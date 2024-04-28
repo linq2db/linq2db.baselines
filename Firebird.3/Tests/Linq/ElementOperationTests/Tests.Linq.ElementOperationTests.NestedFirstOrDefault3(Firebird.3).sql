@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT DISTINCT
-			"c_1"."ParentID"
+			"a_Children"."ParentID"
 		FROM
-			"Child" "c_1"
+			"Child" "a_Children"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID"
-		FETCH NEXT @take ROWS ONLY
+			"p"."ParentID" = "a_Children"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

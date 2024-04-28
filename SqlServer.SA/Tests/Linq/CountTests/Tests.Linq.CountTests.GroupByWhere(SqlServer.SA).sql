@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [ch]
 WHERE

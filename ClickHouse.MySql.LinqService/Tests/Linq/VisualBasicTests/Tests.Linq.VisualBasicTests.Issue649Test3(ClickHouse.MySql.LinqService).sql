@@ -46,7 +46,7 @@ FROM
 	activity649 f
 		INNER JOIN person649 a_Person ON f.personid = a_Person.personid
 WHERE
-	f.added >= toDateTime64('2017-01-01 00:00:00.0000000', 7)
+	f.added >= makeDateTime(2017, 1, 1, 0, 0, 0)
 GROUP BY
 	a_Person.personid,
 	a_Person.personname

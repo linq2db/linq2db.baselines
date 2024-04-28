@@ -32,11 +32,11 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -49,9 +49,9 @@ INSERT ASYNC BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, Guid
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `p`
 WHERE
-	`t1`.`ID` >= 4000
+	`p`.`ID` >= 4000
 

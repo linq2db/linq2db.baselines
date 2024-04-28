@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Max("p"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "p"
+	"Person" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -34,26 +34,24 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" > 4
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "t"
 WHERE
-	"t1"."PersonID" > 4
+	"t"."PersonID" > 4
 

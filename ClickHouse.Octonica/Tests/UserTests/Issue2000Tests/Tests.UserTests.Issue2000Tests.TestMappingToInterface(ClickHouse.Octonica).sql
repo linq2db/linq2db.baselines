@@ -23,7 +23,7 @@ INSERT INTO TestTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'{}'
 )
 

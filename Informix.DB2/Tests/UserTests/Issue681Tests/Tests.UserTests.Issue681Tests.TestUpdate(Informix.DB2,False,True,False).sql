@@ -30,11 +30,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	testdb:Issue681Table
+	testdb:Issue681Table t1
 SET
-	testdb:Issue681Table."Value" = @Value
+	"Value" = @Value
 WHERE
-	testdb:Issue681Table.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix

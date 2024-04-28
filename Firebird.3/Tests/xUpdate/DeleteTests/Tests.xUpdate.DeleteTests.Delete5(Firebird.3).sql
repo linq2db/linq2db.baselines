@@ -26,7 +26,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -42,7 +42,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -50,7 +50,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "t1"
 WHERE
@@ -68,7 +68,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "t1"
 WHERE

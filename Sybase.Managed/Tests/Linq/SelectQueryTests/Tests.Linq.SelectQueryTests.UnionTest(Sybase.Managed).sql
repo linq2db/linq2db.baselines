@@ -28,40 +28,28 @@ WHERE
 	[t].[Value] = 1
 UNION
 SELECT
-	[t1].[Value1],
-	[t1].[Value2]
-FROM
-	(
-		SELECT
-			DateAdd(day, 3, GetDate()) as [Value1],
-			DateAdd(day, 4, GetDate()) as [Value2]
-	) [t1]
+	DateAdd(day, 3, GetDate()),
+	DateAdd(day, 4, GetDate())
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[v].[Value2]
+	[v_1].[Value2]
 FROM
 	(
 		SELECT
-			DateAdd(day, [t].[Value], GetDate()) as [Value1],
+			DateAdd(day, [v].[Value], GetDate()) as [Value1],
 			DateAdd(day, 2, GetDate()) as [Value2]
 		FROM
-			[SampleClass] [t]
+			[SampleClass] [v]
 		WHERE
-			[t].[Value] = 1
+			[v].[Value] = 1
 		UNION
 		SELECT
-			[t1].[Value1],
-			[t1].[Value2]
-		FROM
-			(
-				SELECT
-					DateAdd(day, 3, GetDate()) as [Value1],
-					DateAdd(day, 4, GetDate()) as [Value2]
-			) [t1]
-	) [v]
+			DateAdd(day, 3, GetDate()) as [Value1],
+			DateAdd(day, 4, GetDate()) as [Value2]
+	) [v_1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

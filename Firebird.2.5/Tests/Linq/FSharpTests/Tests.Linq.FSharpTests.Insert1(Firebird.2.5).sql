@@ -2,9 +2,9 @@
 -- Firebird.2.5 Firebird
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -20,15 +20,15 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	@ParentID,
-	@ChildID
+	CAST(@ParentID AS Int),
+	CAST(@ChildID AS Int)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -38,7 +38,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 

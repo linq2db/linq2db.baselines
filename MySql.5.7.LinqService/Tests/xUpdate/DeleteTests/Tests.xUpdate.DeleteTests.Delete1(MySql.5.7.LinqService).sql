@@ -33,7 +33,7 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 WHERE
@@ -44,11 +44,11 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`p`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -56,7 +56,7 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Parent` `p`
 WHERE

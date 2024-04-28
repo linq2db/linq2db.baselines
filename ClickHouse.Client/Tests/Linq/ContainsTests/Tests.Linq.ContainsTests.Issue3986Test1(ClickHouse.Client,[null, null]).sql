@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID = toInt32(3) AND r.MiddleName IS NULL
+	r.PersonID = 3 AND r.MiddleName IS NULL
 

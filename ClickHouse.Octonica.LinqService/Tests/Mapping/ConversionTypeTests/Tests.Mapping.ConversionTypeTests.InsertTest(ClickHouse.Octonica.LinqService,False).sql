@@ -26,7 +26,7 @@ INSERT INTO TrimTestTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'***OOO***'
 )
 
@@ -40,7 +40,7 @@ INSERT INTO TrimTestTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'***HHH***'
 )
 
@@ -54,7 +54,7 @@ INSERT INTO TrimTestTable
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'***VVV***'
 )
 

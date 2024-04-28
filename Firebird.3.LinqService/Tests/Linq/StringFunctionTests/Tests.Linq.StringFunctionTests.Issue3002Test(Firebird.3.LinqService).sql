@@ -83,7 +83,7 @@ DECLARE @test_1 VarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
@@ -119,7 +119,7 @@ DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
@@ -155,7 +155,7 @@ DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE

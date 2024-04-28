@@ -38,8 +38,8 @@ BeforeExecute
 WITH [accountsInfo]
 (
 	[Id],
-	[Number],
-	[Type],
+	[Number_1],
+	[Type_1],
 	[Name],
 	[incomeBalance],
 	[outgoingBalance]
@@ -59,34 +59,34 @@ AS
 		[a].[Id] IN (1, 2, 3, 4)
 )
 SELECT
-	[cte].[Id],
-	[cte].[Number],
-	[cte].[Type],
-	[cte].[Name],
+	[t1].[Id],
+	[t1].[Number_1],
+	[t1].[Type_1],
+	[t1].[Name],
 	(
 		SELECT
-			Max([t1].[OperDate])
+			MAX([t4].[OperDate])
 		FROM
 			(
 				SELECT
-					[_].[OperDate]
+					[t2].[OperDate]
 				FROM
-					[Transaction] [_]
+					[Transaction] [t2]
 				WHERE
-					[_].[DebitAccountId] = [cte].[Id]
+					[t2].[DebitAccountId] = [t1].[Id]
 				UNION
 				SELECT
-					[_1].[OperDate]
+					[t3].[OperDate]
 				FROM
-					[Transaction] [_1]
+					[Transaction] [t3]
 				WHERE
-					[_1].[CreditAccountId] = [cte].[Id]
-			) [t1]
+					[t3].[CreditAccountId] = [t1].[Id]
+			) [t4]
 	),
-	[cte].[incomeBalance],
-	[cte].[outgoingBalance]
+	[t1].[incomeBalance],
+	[t1].[outgoingBalance]
 FROM
-	[accountsInfo] [cte]
+	[accountsInfo] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

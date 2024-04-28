@@ -32,7 +32,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 
@@ -40,7 +40,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
@@ -50,7 +50,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
@@ -60,7 +60,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 WHERE

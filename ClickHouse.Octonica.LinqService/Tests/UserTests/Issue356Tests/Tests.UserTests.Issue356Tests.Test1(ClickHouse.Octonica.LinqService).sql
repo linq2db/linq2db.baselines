@@ -2,33 +2,31 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	cp.ParentID,
-	c_1.ChildID
+	x.ParentID,
+	t2.ChildID
 FROM
-	Parent cp
-		CROSS JOIN (
+	Parent x
+		INNER JOIN (
 			SELECT DISTINCT
-				t3.ParentID as ParentID,
-				t3.ChildID as ChildID
+				c_2.ParentID as ParentID,
+				c_2.ChildID as ChildID
 			FROM
 				(
+					SELECT
+						c_1.ParentID as ParentID,
+						c_1.ChildID as ChildID
+					FROM
+						Child c_1
+					UNION DISTINCT
 					SELECT
 						t1.ParentID as ParentID,
 						t1.ChildID as ChildID
 					FROM
 						Child t1
-					UNION DISTINCT
-					SELECT
-						t2.ParentID as ParentID,
-						t2.ChildID as ChildID
-					FROM
-						Child t2
-				) t3
-		) c_1
-WHERE
-	c_1.ParentID = cp.ParentID
+				) c_2
+		) t2 ON t2.ParentID = x.ParentID
 ORDER BY
-	cp.ParentID,
-	c_1.ChildID
-LIMIT toInt32(10)
+	x.ParentID,
+	t2.ChildID
+LIMIT 10
 

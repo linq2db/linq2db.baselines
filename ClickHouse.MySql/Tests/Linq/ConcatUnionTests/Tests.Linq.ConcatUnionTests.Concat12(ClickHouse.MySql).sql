@@ -3,18 +3,24 @@
 
 SELECT
 	p.ParentID,
-	p.Value1
+	p.Value1,
+	toInt32(NULL) as c1,
+	toInt32(NULL) as c2,
+	toInt32(NULL) as c3
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 UNION ALL
 SELECT
-	a_Parent.ParentID,
-	a_Parent.Value1
+	toInt32(NULL) as ParentID,
+	toInt32(NULL) as Value1,
+	a_Parent.ParentID as c1,
+	a_Parent.ParentID as c2,
+	a_Parent.Value1 as c3
 FROM
 	Child ch
 		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
 WHERE
-	ch.ParentID = toInt32(2)
+	ch.ParentID = 2
 

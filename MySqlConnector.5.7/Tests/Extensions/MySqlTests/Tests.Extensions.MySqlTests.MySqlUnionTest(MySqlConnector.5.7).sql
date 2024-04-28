@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 (
-	SELECT /*+ NO_BNL(p, t2.c_1.t1) */
+	SELECT /*+ NO_BNL(p, c_2.c_1) */
 		`p`.`ParentID`,
 		`p`.`Value1`
 	FROM
@@ -22,23 +22,17 @@ UNION
 UNION
 (
 	SELECT
-		`t2`.`ParentID`,
-		`t2`.`Value1`
+		`t1`.`ParentID`,
+		`t1`.`Value1`
 	FROM
-		(
-			SELECT
-				`p_2`.`ParentID`,
-				`p_2`.`Value1`
-			FROM
-				`Parent` `p_2`,
-				(
-					SELECT
-						*
-					FROM
-						`Child` `t1`
-				) `c_1`
-			FOR UPDATE
-		) `t2`
+		`Parent` `t1`
+			CROSS JOIN (
+				SELECT
+					*
+				FROM
+					`Child` `c_1`
+				FOR UPDATE
+			) `c_2`
 	FOR UPDATE
 )
 

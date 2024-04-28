@@ -39,7 +39,7 @@ FROM
 	TakeSkipClass t1
 ORDER BY
 	t1.Value
-LIMIT toInt32(3), toInt32(2)
+LIMIT 3, 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -26,14 +26,14 @@ INSERT INTO Src
 	CEnum
 )
 VALUES
-(toInt32(1),NULL,NULL,NULL),
-(toInt32(2),toInt32(2),'TWO','___Value2___')
+(1,NULL,NULL,NULL),
+(2,2,'TWO','___Value2___')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -53,7 +53,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE

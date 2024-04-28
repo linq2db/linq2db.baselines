@@ -14,7 +14,7 @@ FROM
 	LinqDataTypes p
 WHERE
 	p.GuidValue = toUUID('40932fdb-1543-4e4a-ac2c-ca371604fb4b')
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -32,5 +32,5 @@ FROM
 	LinqDataTypes p
 WHERE
 	p.GuidValue = toUUID('d2f970c0-35ac-4987-9cd5-5badb1757436')
-LIMIT toInt32(2)
+LIMIT 2
 

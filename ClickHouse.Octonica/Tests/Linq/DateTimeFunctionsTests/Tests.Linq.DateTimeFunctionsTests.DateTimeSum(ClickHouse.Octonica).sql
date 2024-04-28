@@ -2,12 +2,12 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ID,
-	Count(*),
-	sumOrNull(toUnixTimestamp64Milli(toDateTime64(addDays(t1.DateTimeValue, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(t1.DateTimeValue, 3))),
-	maxOrNull(toUnixTimestamp64Milli(toDateTime64(addDays(t1.DateTimeValue, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(t1.DateTimeValue, 3)))
+	g_1.ID,
+	COUNT(*),
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(addDays(g_1.DateTimeValue, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(g_1.DateTimeValue, 3))),
+	maxOrNull(toUnixTimestamp64Milli(toDateTime64(addDays(g_1.DateTimeValue, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(g_1.DateTimeValue, 3)))
 FROM
-	LinqDataTypes t1
+	LinqDataTypes g_1
 GROUP BY
-	t1.ID
+	g_1.ID
 

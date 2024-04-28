@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes p
 WHERE
-	p.ID = toInt32(1)
+	p.ID = 1
 

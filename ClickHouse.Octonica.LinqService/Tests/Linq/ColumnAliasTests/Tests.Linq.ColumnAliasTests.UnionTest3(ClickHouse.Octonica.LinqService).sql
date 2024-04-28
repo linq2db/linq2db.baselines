@@ -2,19 +2,19 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.ParentID
+	p_1.ParentID
 FROM
 	(
+		SELECT
+			p.ParentID as ParentID,
+			p.Value1 as Value1
+		FROM
+			Parent p
+		UNION DISTINCT
 		SELECT
 			t1.ParentID as ParentID,
 			t1.Value1 as Value1
 		FROM
 			Parent t1
-		UNION DISTINCT
-		SELECT
-			t2.ParentID as ParentID,
-			t2.Value1 as Value1
-		FROM
-			Parent t2
-	) p
+	) p_1
 

@@ -2,13 +2,23 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as [ID]
+	) [s]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as [ID]
+	) [s]
 WHERE
 	1 = 0
 

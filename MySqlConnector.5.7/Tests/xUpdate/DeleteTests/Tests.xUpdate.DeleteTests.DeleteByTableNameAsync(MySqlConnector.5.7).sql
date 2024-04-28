@@ -47,14 +47,12 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`FirstName`,
@@ -64,7 +62,7 @@ SELECT
 	`t1`.`Gender`
 FROM
 	`xxPerson` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
@@ -81,7 +79,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `t1`
 

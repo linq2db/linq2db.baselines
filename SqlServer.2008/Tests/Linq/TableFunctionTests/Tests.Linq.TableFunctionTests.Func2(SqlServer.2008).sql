@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
-	[Child] [c_1],
-	[GetParentByID](2) [p]
+	[Child] [c_1]
+		CROSS JOIN [GetParentByID](@p) [p]
 

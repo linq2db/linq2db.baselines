@@ -26,21 +26,19 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @idx Int32
-SET     @idx = 12
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."LastName" = Cast(:idx as VarChar(11))
+	"LastName" = CAST(12 AS VarChar(255))
 WHERE
-	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
+	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 WHERE

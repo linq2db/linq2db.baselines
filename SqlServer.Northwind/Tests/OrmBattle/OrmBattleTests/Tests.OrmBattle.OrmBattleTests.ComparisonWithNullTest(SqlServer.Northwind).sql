@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],
 	[c_1].[ContactName],

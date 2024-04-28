@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"r"."BigIntValue"
@@ -33,7 +31,7 @@ FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 12
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

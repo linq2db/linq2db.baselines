@@ -3,15 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN 1 IN (
 			SELECT
-				*
+				t1.PersonID
 			FROM
 				Person t1
-			WHERE
-				t1.PersonID = toInt32(1)
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

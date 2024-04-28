@@ -39,21 +39,21 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	CAST(@Array AS VARBINARY(3)),
+	CAST(@Binary AS VARBINARY(10))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_".ID = 1
+	"t1".ID = 1
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
@@ -62,13 +62,13 @@ DECLARE @Array VarBinary(3) -- Binary
 SET     @Array = BX'010203'
 
 SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_"."Array" = @Array
+	"t1"."Array" = @Array
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute
@@ -77,13 +77,13 @@ DECLARE @Binary VarBinary(2) -- Binary
 SET     @Binary = BX'0405'
 
 SELECT
-	"_".ID,
-	"_"."Array",
-	"_"."Binary"
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
 FROM
-	"Issue1303" "_"
+	"Issue1303" "t1"
 WHERE
-	"_"."Binary" = @Binary
+	"t1"."Binary" = @Binary
 FETCH FIRST 2 ROWS ONLY
 
 BeforeExecute

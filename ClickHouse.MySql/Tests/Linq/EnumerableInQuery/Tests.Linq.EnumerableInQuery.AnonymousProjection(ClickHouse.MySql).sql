@@ -2,43 +2,52 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.ParentID
+	t1.ParentID
 FROM
-	Parent _
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	_c1.ParentID
+	m_1.ParentID,
+	d.ParentID
 FROM
 	(
 		SELECT DISTINCT
-			_.ParentID as ParentID
+			t1.ParentID as ParentID
 		FROM
-			Parent _
-	) key_data_result
+			Parent t1
+	) m_1
 		INNER JOIN (
-			SELECT toInt32(1) AS ParentID
+			SELECT 1 AS ParentID
 			UNION ALL
-			SELECT toInt32(2)
+			SELECT 2
 			UNION ALL
-			SELECT toInt32(3)
+			SELECT 3
 			UNION ALL
-			SELECT toInt32(4)
+			SELECT 4
 			UNION ALL
-			SELECT toInt32(5)
+			SELECT 5
 			UNION ALL
-			SELECT toInt32(6)
+			SELECT 6
 			UNION ALL
-			SELECT toInt32(7)) _c1 ON _c1.ParentID = key_data_result.ParentID
+			SELECT 7) d ON d.ParentID = m_1.ParentID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.ParentID
+	t1.ParentID
 FROM
-	Parent _
+	Parent t1
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

@@ -31,8 +31,6 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."ID",
@@ -41,7 +39,7 @@ FROM
 	"SequenceTest3" t1
 WHERE
 	t1."Value" = 'SeqValue'
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -57,7 +55,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SequenceTest3" t1
 WHERE

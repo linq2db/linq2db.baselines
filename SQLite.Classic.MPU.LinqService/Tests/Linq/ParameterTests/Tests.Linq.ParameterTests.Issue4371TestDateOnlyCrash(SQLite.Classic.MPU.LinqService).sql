@@ -31,11 +31,11 @@ DECLARE @dt VarChar(10) -- AnsiString
 SET     @dt = '0160-05-06'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table2] [r]
 WHERE
-	[r].[ColumnDO] = @dt
+	Date([r].[ColumnDO]) = Date(@dt)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

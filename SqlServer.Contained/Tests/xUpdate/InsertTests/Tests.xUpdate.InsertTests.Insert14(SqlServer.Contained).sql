@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Person] [t1]
+	[Person] [p]
 WHERE
-	[t1].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
+	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 INSERT INTO [Person]
 (
@@ -21,7 +19,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert14' + (
-		SELECT TOP (@take)
+		SELECT
 			[p].[FirstName]
 		FROM
 			[Person] [p]
@@ -36,7 +34,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -45,9 +43,9 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Person] [t1]
+	[Person] [p]
 WHERE
-	[t1].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
+	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 

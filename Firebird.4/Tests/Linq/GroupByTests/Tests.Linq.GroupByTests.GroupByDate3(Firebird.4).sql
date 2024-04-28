@@ -2,17 +2,21 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	Cast(Floor(Extract(year from "t1"."Key_1")) as int),
-	Cast(Floor(Extract(month from "t1"."Key_1")) as int)
+	SUM("grp_1"."MoneyValue"),
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 FROM
 	(
 		SELECT
-			Cast((Lpad(Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int),4,'0') || '-' || Lpad(Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int),2,'0') || '-01') as Date) as "Key_1",
-			"selectParam"."MoneyValue"
+			CAST(LPad(CAST(Extract(year from "grp"."DateTimeValue") AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-' || LPad(CAST(Extract(month from "grp"."DateTimeValue") AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp) as "c1",
+			"grp"."MoneyValue",
+			Extract(year from CAST(LPad(CAST(Extract(year from "grp"."DateTimeValue") AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-' || LPad(CAST(Extract(month from "grp"."DateTimeValue") AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)) as "Year_1",
+			Extract(month from CAST(LPad(CAST(Extract(year from "grp"."DateTimeValue") AS VarChar(4) CHARACTER SET UNICODE_FSS), 4, '0') || '-' || LPad(CAST(Extract(month from "grp"."DateTimeValue") AS VarChar(2) CHARACTER SET UNICODE_FSS), 2, '0') || '-01' AS TimeStamp)) as "Month_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+			"LinqDataTypes" "grp"
+	) "grp_1"
 GROUP BY
-	"t1"."Key_1"
+	"grp_1"."c1",
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 

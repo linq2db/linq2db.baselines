@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21,7 +21,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	toDecimal128('0', 10),
 	NULL,
 	true,
@@ -44,8 +44,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1001)
-LIMIT toInt32(2)
+	t.ID = 1001
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -53,5 +53,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

@@ -84,9 +84,9 @@ INSERT INTO "ByteTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS SmallInt),
+	CAST(@ColumnNullable AS SmallInt)
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "ByteTable"
 )
 VALUES
 (
-	@Id,
-	@Column,
-	@ColumnNullable
+	CAST(@Id AS Int),
+	CAST(@Column AS SmallInt),
+	CAST(@ColumnNullable AS SmallInt)
 )
 
 BeforeExecute

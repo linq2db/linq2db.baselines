@@ -27,9 +27,9 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	"TestTable"
+	"TestTable" "t1"
 SET
-	"TestTable"."Fd" = 1
+	"Fd" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

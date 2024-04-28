@@ -23,7 +23,7 @@ WHERE
 		FROM
 			LinqDataTypes t2
 		WHERE
-			t2.ID = @id AND t2.ID = t1.ID
+			t2.ID = @id AND t1.ID = t2.ID
 	)
 
 BeforeExecute
@@ -51,6 +51,6 @@ WHERE
 		FROM
 			LinqDataTypes t2
 		WHERE
-			t2.ID = @id AND t2.ID = t1.ID
+			t2.ID = @id AND t1.ID = t2.ID
 	)
 

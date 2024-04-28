@@ -2,18 +2,18 @@
 -- Access.Odbc AccessODBC
 
 SELECT TOP 5
-	[t1].[c1],
-	Count(*)
+	[g_2].[Date_1],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DateValue(Now) as [c1]
+			DateValue(Now) as [Date_1]
 		FROM
-			[Parent] [v]
-				INNER JOIN [Child] [s] ON ([v].[ParentID] = [s].[ParentID])
+			[Parent] [g_1]
+				INNER JOIN [Child] [s] ON ([g_1].[ParentID] = [s].[ParentID])
 		WHERE
-			[v].[Value1] > 0
-	) [t1]
+			[g_1].[Value1] > 0
+	) [g_2]
 GROUP BY
-	[t1].[c1]
+	[g_2].[Date_1]
 

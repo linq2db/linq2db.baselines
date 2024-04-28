@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

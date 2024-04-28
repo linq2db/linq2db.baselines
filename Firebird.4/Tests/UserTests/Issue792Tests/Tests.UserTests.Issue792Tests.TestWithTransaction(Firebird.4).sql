@@ -4,7 +4,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 
@@ -22,7 +22,7 @@ SELECT * FROM (
 	FROM RDB$PROCEDURES
 	WHERE RDB$SYSTEM_FLAG = 0 AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0) AND RDB$PROCEDURE_TYPE IS NOT NULL
 	UNION ALL
-	SELECT 
+	SELECT
 		RDB$PACKAGE_NAME,
 		RDB$FUNCTION_NAME,
 		RDB$DESCRIPTION,
@@ -211,7 +211,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 

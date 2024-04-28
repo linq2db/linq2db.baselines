@@ -63,16 +63,21 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			[p].[Id]
+			*
 		FROM
-			[ProductTable] [p]
-				INNER JOIN [ProductAttributeMapping] [pam_1] ON [p].[Id] = [pam_1].[ProductId]
+			(
+				SELECT
+					[groupedProduct].[Id]
+				FROM
+					[ProductTable] [groupedProduct]
+						INNER JOIN [ProductAttributeMapping] [pam_1] ON [groupedProduct].[Id] = [pam_1].[ProductId]
+				GROUP BY
+					[groupedProduct].[Id]
+				HAVING
+					COUNT(*) = 1
+			) [p]
 		WHERE
 			[p].[Id] >= [pam].[ProductId]
-		GROUP BY
-			[p].[Id]
-		HAVING
-			Count(*) = 1
 	)
 
 BeforeExecute

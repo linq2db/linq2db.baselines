@@ -22,7 +22,7 @@ SELECT
 FROM
 	SampleClass a
 WHERE
-	(a.Id = toInt32(0) AND Coalesce(a.NullValue, toInt32(0)) = toInt32(0) OR a.Id = toInt32(1) AND Coalesce(a.NullValue, toInt32(0)) = toInt32(1) OR a.Id = toInt32(2) AND Coalesce(a.NullValue, toInt32(0)) = toInt32(2))
+	(a.Id = 0 AND (a.NullValue = 0 AND a.NullValue IS NOT NULL OR a.NullValue IS NULL) OR a.Id = 1 AND a.NullValue = 1 AND a.NullValue IS NOT NULL OR a.Id = 2 AND a.NullValue = 2 AND a.NullValue IS NOT NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

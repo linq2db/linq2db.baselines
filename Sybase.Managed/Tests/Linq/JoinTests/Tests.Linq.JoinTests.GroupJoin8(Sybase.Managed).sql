@@ -4,21 +4,19 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID]
+			[Parent] [t1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
-	[_c].[ChildID]
+	[d].[ChildID]
 
 BeforeExecute
 DisposeTransaction
@@ -26,8 +24,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t1].[ParentID]
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 

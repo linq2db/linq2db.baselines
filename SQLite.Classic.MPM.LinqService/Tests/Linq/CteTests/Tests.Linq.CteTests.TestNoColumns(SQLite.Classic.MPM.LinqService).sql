@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [t1]
 
@@ -19,14 +19,14 @@ AS
 		[Child] [t1]
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CTE1_] [t2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE1_] ([ChildID])
+WITH [CTE1_] ([C_ChildID])
 AS
 (
 	SELECT
@@ -35,18 +35,17 @@ AS
 		[Child] [c_1]
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CTE1_] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE1_] ([ChildID])
-AS
+WITH [CTE1_] AS
 (
 	SELECT
-		[c_1].[ChildID]
+		*
 	FROM
 		[Child] [c_1]
 )

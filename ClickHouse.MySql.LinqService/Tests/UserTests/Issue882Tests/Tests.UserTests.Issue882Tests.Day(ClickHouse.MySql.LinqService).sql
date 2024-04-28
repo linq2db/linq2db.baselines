@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	DAY(t.DateTimeValue) % toInt32(7)
+	toDayOfMonth(t.DateTimeValue) % 7
 FROM
 	LinqDataTypes t
 

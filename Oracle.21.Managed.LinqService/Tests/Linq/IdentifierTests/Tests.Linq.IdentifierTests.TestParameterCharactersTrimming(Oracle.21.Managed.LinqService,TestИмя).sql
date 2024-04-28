@@ -33,11 +33,11 @@ DECLARE @Test Int32
 SET     @Test = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."TestИмя" = :Test
+	"TestИмя" = :Test
 WHERE
-	"testparams"."TestИмя" = 1
+	t."TestИмя" = 1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

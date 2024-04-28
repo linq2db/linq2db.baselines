@@ -136,7 +136,7 @@ BeforeExecute
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 
-SELECT
+SELECT DISTINCT
 	[it].[Id],
 	[it].[DateBegin],
 	[it].[DateEnd],
@@ -146,23 +146,10 @@ SELECT
 	[it].[TargetId],
 	[it].[ParentId]
 FROM
-	(
-		SELECT DISTINCT
-			[t].[Id],
-			[t].[DateBegin],
-			[t].[DateEnd],
-			[t].[DirectionId],
-			[t].[Text],
-			[t].[TargetName],
-			[t].[TargetId],
-			[t].[ParentId]
-		FROM
-			[Tasks] [t]
-				INNER JOIN [Assignments] [a] ON [t].[DirectionId] = [a].[DirectionId] AND [t].[TargetId] = [a].[TargetId] AND [t].[TargetName] = [a].[TargetName]
-		WHERE
-			[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate())
-	) [it]
+	[Tasks] [it]
+		INNER JOIN [Assignments] [a] ON [it].[DirectionId] = [a].[DirectionId] AND [it].[TargetId] = [a].[TargetId] AND [it].[TargetName] = [a].[TargetName]
 WHERE
+	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate()) AND
 	EXISTS(
 		SELECT
 			*

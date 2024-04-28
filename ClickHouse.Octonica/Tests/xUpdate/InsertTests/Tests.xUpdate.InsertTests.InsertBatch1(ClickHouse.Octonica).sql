@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 INSERT INTO LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES
@@ -18,5 +18,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

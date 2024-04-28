@@ -25,7 +25,7 @@ INSERT INTO ConstructorTestTable
 	Value
 )
 VALUES
-(toInt32(1),'Some')
+(1,'Some')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

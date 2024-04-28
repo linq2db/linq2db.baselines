@@ -26,7 +26,7 @@ INSERT INTO my_table
 VALUES
 (
 	'MyCol1',
-	toInt32(0),
+	0,
 	NULL
 )
 
@@ -42,7 +42,7 @@ INSERT INTO my_table
 VALUES
 (
 	'MyCol2',
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -57,13 +57,13 @@ FROM
 	my_table o
 WHERE
 	o.my_col1 = 'MyCol1'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	my_table t1
 

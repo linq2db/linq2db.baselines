@@ -8,10 +8,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @name Text(8) -- String
-SET     @name = 'Insert16'
-DECLARE @idx Integer -- Int32
-SET     @idx = 4
 
 INSERT INTO "Person"
 (
@@ -22,7 +18,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast((Length(:name) + :idx) as text),
+	12::text,
 	'M'
 )
 
@@ -30,7 +26,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 WHERE

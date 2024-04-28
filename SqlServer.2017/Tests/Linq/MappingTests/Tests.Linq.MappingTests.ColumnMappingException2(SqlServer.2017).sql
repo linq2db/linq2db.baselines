@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT
-	[_].[LastName]
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 

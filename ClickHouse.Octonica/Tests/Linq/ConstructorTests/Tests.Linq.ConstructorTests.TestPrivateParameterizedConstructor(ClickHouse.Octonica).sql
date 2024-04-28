@@ -25,7 +25,7 @@ INSERT INTO ConstructorTestTable
 	Value
 )
 VALUES
-(toInt32(5),'Some')
+(5,'Some')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -35,7 +35,7 @@ SELECT
 	t1.Value
 FROM
 	ConstructorTestTable t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

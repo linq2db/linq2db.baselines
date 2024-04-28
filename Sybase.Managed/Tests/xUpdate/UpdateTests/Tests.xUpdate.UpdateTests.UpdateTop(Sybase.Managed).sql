@@ -178,17 +178,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
-
-UPDATE TOP 5
-	[Parent]
-SET
-	[p].[Value1] = @Value1
-FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] >= 1000
-

@@ -2,27 +2,27 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'Hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], 4)) = Convert(VarBinary(8000), N'Hall')
+	[r].[Diagnosis] LIKE N'Hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], LEN(N'Hall'))) = Convert(VarBinary(8000), N'Hall')
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
-	[r].[Diagnosis] LIKE N'hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], 4)) = Convert(VarBinary(8000), N'hall')
+	[r].[Diagnosis] LIKE N'hall%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([r].[Diagnosis], LEN(N'hall'))) = Convert(VarBinary(8000), N'hall')
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE

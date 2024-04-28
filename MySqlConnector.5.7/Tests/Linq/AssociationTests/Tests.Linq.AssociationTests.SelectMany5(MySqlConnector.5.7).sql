@@ -2,8 +2,8 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`cp`.`ParentID`
+	`p`.`ParentID`
 FROM
-	`Parent` `cp`
-		INNER JOIN `Child` `c_1` ON `cp`.`ParentID` = `c_1`.`ParentID`
+	`Parent` `p`
+		INNER JOIN `Child` `a_Children` ON `p`.`ParentID` = `a_Children`.`ParentID`
 

@@ -35,14 +35,14 @@ BeforeExecute
 SELECT
 	ka.PersonId,
 	ka.ValidationEnd,
-	p.Id,
-	p.Name,
-	p.Age
+	a_PersonData.Id,
+	a_PersonData.Name,
+	a_PersonData.Age
 FROM
 	Chipcard ka
-		LEFT JOIN Issue1965Person p ON p.Id = ka.PersonId
+		LEFT JOIN Issue1965Person a_PersonData ON a_PersonData.Id = ka.PersonId
 WHERE
-	(p.Id IS NOT NULL OR p.Name IS NOT NULL OR p.Age IS NOT NULL)
+	a_PersonData.Id IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

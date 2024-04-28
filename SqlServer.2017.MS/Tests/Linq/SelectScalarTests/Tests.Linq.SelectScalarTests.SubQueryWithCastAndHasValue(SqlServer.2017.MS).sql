@@ -1,18 +1,16 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
-		SELECT TOP (@take)
-			[r].[Value1]
+		SELECT TOP (1)
+			IIF([r].[Value1] IS NOT NULL, 1, 0)
 		FROM
 			[Parent] [r]
-	) IS NOT NULL
+	) = 1
 

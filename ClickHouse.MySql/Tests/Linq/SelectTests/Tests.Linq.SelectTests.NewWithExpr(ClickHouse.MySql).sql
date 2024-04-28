@@ -3,7 +3,7 @@
 
 SELECT
 	p.PersonID,
-	p.FirstName
+	concat(p.FirstName, '1')
 FROM
 	Person p
 

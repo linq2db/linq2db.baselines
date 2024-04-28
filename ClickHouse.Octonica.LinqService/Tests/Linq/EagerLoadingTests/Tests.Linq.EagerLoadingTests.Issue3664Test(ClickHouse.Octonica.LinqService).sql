@@ -24,7 +24,7 @@ INSERT INTO Test3664
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -55,8 +55,8 @@ INSERT INTO Test3664Item
 )
 VALUES
 (
-	toInt32(11),
-	toInt32(1)
+	11,
+	1
 )
 
 BeforeExecute
@@ -69,20 +69,22 @@ INSERT INTO Test3664Item
 )
 VALUES
 (
-	toInt32(12),
-	toInt32(1)
+	12,
+	1
 )
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Test3664.Id,
-	a.Id,
-	a.TestId
+	m_1.Id,
+	d.Id,
+	d.TestId
 FROM
-	Test3664 lw_Test3664
-		INNER JOIN Test3664Item a ON lw_Test3664.Id = a.TestId AND a.Id = toInt32(11)
+	Test3664 m_1
+		INNER JOIN Test3664Item d ON m_1.Id = d.TestId
+WHERE
+	d.Id = 11
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -96,12 +98,14 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Test3664.Id,
-	a.Id,
-	a.TestId
+	m_1.Id,
+	d.Id,
+	d.TestId
 FROM
-	Test3664 lw_Test3664
-		INNER JOIN Test3664Item a ON lw_Test3664.Id = a.TestId AND a.Id = toInt32(12)
+	Test3664 m_1
+		INNER JOIN Test3664Item d ON m_1.Id = d.TestId
+WHERE
+	d.Id = 12
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

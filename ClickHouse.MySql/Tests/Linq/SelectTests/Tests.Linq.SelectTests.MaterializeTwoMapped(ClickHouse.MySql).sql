@@ -37,7 +37,7 @@ SELECT
 	t1.id
 FROM
 	test_mapping_column_2_prop t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

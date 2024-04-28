@@ -11,9 +11,8 @@ FROM
 	Person p
 WHERE
 	CASE
-		WHEN CHAR_LENGTH(p.FirstName) = toInt32(2)
-			THEN concat(p.FirstName, '123')
-		ELSE concat(substringUTF8(p.FirstName, 1, toInt32(3) - 1), '123', substringUTF8(p.FirstName, toInt32(3) + toInt32(0)))
+		WHEN CHAR_LENGTH(p.FirstName) = 2 THEN concat(p.FirstName, '123')
+		ELSE concat(substringUTF8(p.FirstName, 1, 3 - 1), '123', substringUTF8(p.FirstName, 3 + 0))
 	END = 'Jo123hn' AND
-	p.PersonID = toInt32(1)
+	p.PersonID = 1
 

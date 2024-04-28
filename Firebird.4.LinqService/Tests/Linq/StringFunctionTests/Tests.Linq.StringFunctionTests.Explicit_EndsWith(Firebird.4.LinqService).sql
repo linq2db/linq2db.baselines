@@ -2,7 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Patient" "r"
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Patient" "r"
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Patient" "r"
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Patient" "r"
 WHERE

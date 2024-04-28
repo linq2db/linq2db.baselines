@@ -2,14 +2,14 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			[t1].[ParentID]
+			[gr].[ParentID] as [Key_1]
 		FROM
-			[Child] [t1]
+			[Child] [gr]
 		GROUP BY
-			[t1].[ParentID]
-	) [t2]
+			[gr].[ParentID]
+	) [t1]
 

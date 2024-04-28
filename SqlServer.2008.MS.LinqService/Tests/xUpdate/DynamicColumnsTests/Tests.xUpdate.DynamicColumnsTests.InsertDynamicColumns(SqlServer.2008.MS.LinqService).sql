@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'John'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'The Dynamic'
+DECLARE @Gender NChar(1) -- StringFixedLength
+SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -9,16 +15,16 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'John',
-	N'The Dynamic',
-	N'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

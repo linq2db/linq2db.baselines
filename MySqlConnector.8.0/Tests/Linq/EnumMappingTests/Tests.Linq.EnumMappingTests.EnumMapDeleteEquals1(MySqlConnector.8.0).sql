@@ -26,11 +26,11 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `r`
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes` `r`
 WHERE
-	`t1`.`ID` = 101 AND `t1`.`BigIntValue` = 12
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -14,14 +14,14 @@ FROM
 	LinqDataTypes t1
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	toInt32(NULL) as ID,
+	toDecimal64(NULL, toUInt8(4)) as MoneyValue,
+	toDateTime64(NULL, toUInt8(3)) as DateTimeValue,
+	toBool(NULL) as BoolValue,
+	toUUID(NULL) as GuidValue,
+	toString(NULL) as BinaryValue,
+	toInt16(NULL) as SmallIntValue,
+	toString(NULL) as StringValue
 FROM
 	LinqDataTypes d
 

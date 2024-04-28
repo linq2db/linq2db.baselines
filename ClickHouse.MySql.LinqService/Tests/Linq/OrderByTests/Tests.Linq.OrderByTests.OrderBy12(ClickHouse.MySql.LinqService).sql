@@ -7,5 +7,5 @@ SELECT
 FROM
 	Child ch
 ORDER BY
-	ch.ChildID % toInt32(2) DESC
+	ch.ChildID % 2 DESC
 

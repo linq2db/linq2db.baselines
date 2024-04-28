@@ -22,11 +22,11 @@ USING (VALUES
 	(1)
 ) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN MATCHED AND "Target"."Id" <> "Source"."Id" THEN
+WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" THEN
 UPDATE
 SET
 	"Id" = 2,

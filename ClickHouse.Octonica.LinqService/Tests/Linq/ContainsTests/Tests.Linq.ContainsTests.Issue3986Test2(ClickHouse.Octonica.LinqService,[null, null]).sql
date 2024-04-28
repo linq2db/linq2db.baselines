@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID = toInt32(4) AND r.MiddleName IS NOT NULL
+	r.PersonID = 4 AND r.MiddleName IS NOT NULL
 

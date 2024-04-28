@@ -27,7 +27,7 @@ INSERT INTO PR_1598_Insert_Table_Cache
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'John'
 )
 
@@ -41,8 +41,8 @@ SELECT
 FROM
 	PR_1598_Insert_Table_Cache t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -52,7 +52,7 @@ ALTER TABLE
 UPDATE
 	Name = 'John'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -64,8 +64,8 @@ SELECT
 FROM
 	PR_1598_Insert_Table_Cache t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

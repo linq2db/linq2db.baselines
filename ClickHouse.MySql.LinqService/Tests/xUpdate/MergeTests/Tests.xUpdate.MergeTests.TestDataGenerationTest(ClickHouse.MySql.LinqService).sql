@@ -17,7 +17,7 @@ INSERT INTO TestMerge1
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL,
 	NULL,
 	NULL
@@ -35,8 +35,8 @@ INSERT INTO TestMerge1
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	NULL,
 	NULL
 )
@@ -53,10 +53,10 @@ INSERT INTO TestMerge1
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
-	toInt32(3),
-	toInt32(203)
+	3,
+	203
 )
 
 BeforeExecute
@@ -71,9 +71,9 @@ INSERT INTO TestMerge1
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(5),
-	toInt32(6),
+	4,
+	5,
+	6,
 	NULL
 )
 
@@ -96,9 +96,9 @@ INSERT INTO TestMerge2
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
-	toInt32(3),
+	3,
 	NULL
 )
 
@@ -114,10 +114,10 @@ INSERT INTO TestMerge2
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(5),
-	toInt32(7),
-	toInt32(214)
+	4,
+	5,
+	7,
+	214
 )
 
 BeforeExecute
@@ -132,9 +132,9 @@ INSERT INTO TestMerge2
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(10),
-	toInt32(4),
+	5,
+	10,
+	4,
 	NULL
 )
 
@@ -150,10 +150,10 @@ INSERT INTO TestMerge2
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	NULL,
 	NULL,
-	toInt32(216)
+	216
 )
 
 BeforeExecute

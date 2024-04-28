@@ -29,18 +29,14 @@ SELECT 'Value8'
 
 BeforeExecute
 -- SqlCe
-DECLARE @skip Int -- Int32
-SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 1
 
 SELECT
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip ROWS FETCH NEXT @skip_1 ROWS ONLY 
+OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- SqlCe

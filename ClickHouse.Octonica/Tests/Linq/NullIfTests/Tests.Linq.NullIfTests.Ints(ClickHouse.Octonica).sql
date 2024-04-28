@@ -26,14 +26,14 @@ INSERT INTO Src
 	NullableString
 )
 VALUES
-(toInt32(2),toInt32(2),'abc','abc'),
-(toInt32(3),NULL,'def',NULL)
+(2,2,'abc','abc'),
+(3,NULL,'def',NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	NULLIF(s.Int, toInt32(2))
+	NULLIF(s.Int, 2)
 FROM
 	Src s
 ORDER BY
@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	NULLIF(s.Int, toInt32(4))
+	NULLIF(s.Int, 4)
 FROM
 	Src s
 ORDER BY
@@ -63,7 +63,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	NULLIF(s.NullableInt, toInt32(2))
+	NULLIF(s.NullableInt, 2)
 FROM
 	Src s
 ORDER BY
@@ -73,7 +73,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	NULLIF(s.NullableInt, toInt32(4))
+	NULLIF(s.NullableInt, 4)
 FROM
 	Src s
 ORDER BY

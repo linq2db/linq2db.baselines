@@ -2,9 +2,9 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	"t"."MoneyValue"
+	"p"."MoneyValue"
 FROM
-	"LinqDataTypes" "t"
+	"LinqDataTypes" "p"
 WHERE
-	"t"."BoolValue" = FALSE
+	"p"."BoolValue" = FALSE
 

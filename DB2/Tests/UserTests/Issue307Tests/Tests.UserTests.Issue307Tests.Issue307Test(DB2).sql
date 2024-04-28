@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@Gender,
-			@FirstName,
-			@MiddleName,
-			@LastName
+			CAST(@Gender AS NChar(1)),
+			CAST(@FirstName AS NVarChar(12)),
+			CAST(@MiddleName AS NVarChar(255)),
+			CAST(@LastName AS NVarChar(11))
 		)
 	)
 
@@ -41,14 +41,14 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id
+	"t1"."PersonID" = @id
 FETCH FIRST 1 ROWS ONLY
 

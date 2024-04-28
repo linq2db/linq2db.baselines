@@ -2,9 +2,9 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND LOCATE('[', '123[456') > 0
+	`p`.`PersonID` = 1
 

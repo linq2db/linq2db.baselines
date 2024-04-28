@@ -41,7 +41,7 @@ DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -53,7 +53,7 @@ DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -65,7 +65,7 @@ DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -77,7 +77,7 @@ DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE

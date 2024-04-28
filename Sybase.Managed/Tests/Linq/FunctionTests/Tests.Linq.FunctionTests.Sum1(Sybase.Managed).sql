@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Sum([c_1].[ParentID])
+	SUM([t1].[ParentID])
 FROM
-	[Child] [c_1]
+	[Child] [t1]
 

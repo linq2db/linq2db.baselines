@@ -31,11 +31,11 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` = @id
+	`t1`.`ParentID` = @id
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

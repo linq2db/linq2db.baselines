@@ -24,7 +24,7 @@ INSERT INTO PERSON_1900
 	OPTIONS
 )
 VALUES
-(toInt32(10),'Some',toInt32(4))
+(10,'Some',4)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -32,11 +32,11 @@ BeforeExecute
 SELECT
 	p.AGE,
 	p.NAME,
-	bitAnd(p.OPTIONS, toInt32(15))
+	bitAnd(p.OPTIONS, 15)
 FROM
 	PERSON_1900 p
 WHERE
-	(bitAnd(p.OPTIONS, toInt32(15)) = toInt32(4) OR bitAnd(p.OPTIONS, toInt32(15)) = toInt32(5))
+	(bitAnd(p.OPTIONS, 15) = 4 OR bitAnd(p.OPTIONS, 15) = 5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

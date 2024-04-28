@@ -9,10 +9,28 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" + @n IN (
+	"p"."ParentID" + CAST(@n AS Int) IN (
 		SELECT
 			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
 

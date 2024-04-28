@@ -46,11 +46,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS VARCHAR(3)),
+	CAST(@Date AS TimeStamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS BOOLEAN)
 )
 
 BeforeExecute
@@ -76,18 +76,18 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS VARCHAR(3)),
+	CAST(@Date AS TimeStamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS BOOLEAN)
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Mixed" "t"
 WHERE

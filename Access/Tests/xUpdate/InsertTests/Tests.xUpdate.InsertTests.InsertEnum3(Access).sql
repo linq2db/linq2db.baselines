@@ -10,6 +10,8 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 
 INSERT INTO [Parent]
 (
@@ -19,7 +21,7 @@ INSERT INTO [Parent]
 VALUES
 (
 	@ParentID,
-	1
+	@Value1
 )
 
 BeforeExecute
@@ -28,11 +30,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = @id
+	[t1].[ParentID] = @id
 
 BeforeExecute
 -- Access AccessOleDb

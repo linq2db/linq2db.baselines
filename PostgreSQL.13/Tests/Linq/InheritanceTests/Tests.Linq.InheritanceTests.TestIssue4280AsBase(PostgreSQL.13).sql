@@ -68,9 +68,9 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	t1."DeviceType",
 	t1."Id",
 	t1."SerialNumber",
-	t1."DeviceType",
 	t1."Location"
 FROM
 	"Issue4280" t1
@@ -118,9 +118,9 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	t1."DeviceType",
 	t1."Id",
 	t1."SerialNumber",
-	t1."DeviceType",
 	t1."Location"
 FROM
 	"Issue4280" t1

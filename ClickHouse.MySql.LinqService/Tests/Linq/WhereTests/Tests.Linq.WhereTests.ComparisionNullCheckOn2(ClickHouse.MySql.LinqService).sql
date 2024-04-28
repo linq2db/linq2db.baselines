@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(toInt32(1) <> p.Value1 OR p.Value1 IS NULL)
+	(1 <> p.Value1 OR p.Value1 IS NULL)
 

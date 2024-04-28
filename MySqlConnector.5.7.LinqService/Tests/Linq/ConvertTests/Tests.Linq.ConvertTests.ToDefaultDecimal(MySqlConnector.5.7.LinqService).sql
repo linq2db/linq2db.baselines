@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Cast((`t`.`MoneyValue` * 1000) as Decimal)
+	CAST(`t`.`MoneyValue` * 1000 AS DECIMAL)
 FROM
 	`LinqDataTypes` `t`
 

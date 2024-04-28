@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE

@@ -2,9 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toUInt32(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toUInt32(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toUInt32(t.MoneyValue) > toUInt32(0)
+	p_1.c1 > toUInt32(0)
 

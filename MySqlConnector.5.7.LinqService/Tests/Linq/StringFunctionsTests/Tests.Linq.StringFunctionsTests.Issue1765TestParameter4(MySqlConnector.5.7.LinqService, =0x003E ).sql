@@ -111,15 +111,13 @@ DECLARE @separator VarChar(4) -- String
 SET     @separator = ' => '
 
 SELECT
-	Max(`t1`.`Value4`),
-	GROUP_CONCAT(`t1`.`Value4` SEPARATOR @separator)
+	MAX(`g_1`.`Value4`),
+	GROUP_CONCAT(`g_1`.`Value4` SEPARATOR @separator)
 FROM
-	`SampleClass` `t1`
+	`SampleClass` `g_1`
 GROUP BY
-	`t1`.`Id`,
-	`t1`.`Value4`
-ORDER BY
-	`t1`.`Id`
+	`g_1`.`Id`,
+	`g_1`.`Value4`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

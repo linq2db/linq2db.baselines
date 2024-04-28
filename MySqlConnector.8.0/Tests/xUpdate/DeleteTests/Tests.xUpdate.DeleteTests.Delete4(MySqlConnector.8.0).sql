@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `gc`
 FROM
-	`GrandChild` `t1`
+	`GrandChild` `gc`
 WHERE
-	`t1`.`GrandChildID` IN (1001, 1002)
+	`gc`.`GrandChildID` IN (1001, 1002)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -43,7 +43,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`GrandChild` `gc`
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`GrandChild` `gc`
 WHERE

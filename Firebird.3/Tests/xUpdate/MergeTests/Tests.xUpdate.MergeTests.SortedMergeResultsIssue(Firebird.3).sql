@@ -29,7 +29,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -43,7 +43,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -57,7 +57,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -71,7 +71,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -91,9 +91,9 @@ INSERT INTO "GrandChild"
 )
 VALUES
 (
-	@Id,
-	@LeftId,
-	@RightId
+	CAST(@Id AS Int),
+	CAST(@LeftId AS Int),
+	CAST(@RightId AS Int)
 )
 
 BeforeExecute
@@ -102,15 +102,15 @@ BeforeExecute
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
-		"t2"."ChildID" as "Id"
+		"t2"."ChildID" as "source_RightId"
 	FROM
-		"Parent" "t1",
-		"Child" "t2"
+		"Parent" "t1"
+			CROSS JOIN "Child" "t2"
 ) "Source"
 (
-	"Id"
+	"source_RightId"
 )
-ON ("Target"."GrandChildID" = "Source"."Id")
+ON ("Target"."GrandChildID" = "Source"."source_RightId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -119,7 +119,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id"
+	"Source"."source_RightId"
 )
 
 BeforeExecute

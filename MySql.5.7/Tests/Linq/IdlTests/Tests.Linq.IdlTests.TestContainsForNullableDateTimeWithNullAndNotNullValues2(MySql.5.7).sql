@@ -21,7 +21,7 @@ DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`LinqDataTypes` `x`
 WHERE

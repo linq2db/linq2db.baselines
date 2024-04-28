@@ -2,14 +2,17 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[_].[PersonID],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[LastName],
+	CASE
+		WHEN [t1].[PersonID] IN (1, 3) THEN 1
+		ELSE 0
+	END
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
 	CASE
-		WHEN [_].[PersonID] IN (1, 3)
-			THEN 1
+		WHEN [t1].[PersonID] IN (1, 3) THEN 1
 		ELSE 0
 	END
 

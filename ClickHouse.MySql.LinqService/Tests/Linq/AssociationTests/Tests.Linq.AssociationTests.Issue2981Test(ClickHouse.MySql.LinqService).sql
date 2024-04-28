@@ -21,7 +21,7 @@ INSERT INTO Issue2981Entity
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO Issue2981Entity
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -59,7 +59,7 @@ INSERT INTO Issue2981OwnerEntity
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute

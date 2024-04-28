@@ -2,22 +2,22 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			toInt32(0) as c1
+			t2.c1 as c1
 		FROM
 			(
 				SELECT
-					concat('test', a_Patient.Diagnosis) as Key_1
+					concat('test', a_Patient.Diagnosis) as c1
 				FROM
-					Person selectParam
-						LEFT JOIN Patient a_Patient ON selectParam.PersonID = a_Patient.PersonID
-			) t1
+					Person t1
+						LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
+			) t2
 		GROUP BY
-			t1.Key_1
+			t2.c1
 		HAVING
-			t1.Key_1 IS NOT NULL
-	) t2
+			t2.c1 IS NOT NULL
+	) t3
 

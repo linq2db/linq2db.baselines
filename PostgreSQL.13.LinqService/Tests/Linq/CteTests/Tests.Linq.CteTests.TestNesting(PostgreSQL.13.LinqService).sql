@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS "NestingC"
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE_1" ("Property2")
+WITH "CTE_1" ("Property1")
 AS
 (
 	SELECT
@@ -56,14 +56,9 @@ SELECT
 	t_1."Property2",
 	t_1."Property3"
 FROM
-	(
-		SELECT
-			c1."Property2" as "Property1"
-		FROM
-			"CTE_1" c1,
-			"NestingC" t
-	) c2,
-	"NestingC" t_1
+	"CTE_1" c2
+		CROSS JOIN "NestingC" t
+		CROSS JOIN "NestingC" t_1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

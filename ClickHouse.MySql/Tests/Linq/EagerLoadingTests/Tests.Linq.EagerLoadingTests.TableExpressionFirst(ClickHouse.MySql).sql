@@ -42,7 +42,7 @@ INSERT INTO UserIssue3128
 )
 VALUES
 (
-	toInt32(10)
+	10
 )
 
 BeforeExecute
@@ -55,8 +55,8 @@ INSERT INTO UserDetailsIssue3128
 )
 VALUES
 (
-	toInt32(10),
-	toInt32(18)
+	10,
+	18
 )
 
 BeforeExecute

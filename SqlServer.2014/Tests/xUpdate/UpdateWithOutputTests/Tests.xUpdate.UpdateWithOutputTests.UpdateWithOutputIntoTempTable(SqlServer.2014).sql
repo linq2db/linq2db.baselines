@@ -49,24 +49,22 @@ BeforeExecute
 -- SqlServer.2014 (asynchronously)
 
 UPDATE
-	[s]
+	[TableWithData]
 SET
-	[s].[Value] = [s].[Value] + 1,
-	[s].[ValueStr] = [s].[ValueStr] + N'Upd'
+	[Value] = [TableWithData].[Value] + 1,
+	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
 OUTPUT
-	[INSERTED].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#destination]
 (
 	[Id],
 	[Value],
 	[ValueStr]
 )
-FROM
-	[TableWithData] [s]
 WHERE
-	[s].[Id] > 3
+	[TableWithData].[Id] > 3
 
 BeforeExecute
 -- SqlServer.2014

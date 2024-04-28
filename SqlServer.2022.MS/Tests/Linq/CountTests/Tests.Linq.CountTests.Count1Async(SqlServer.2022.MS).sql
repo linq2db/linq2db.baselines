@@ -2,7 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [t1]
 

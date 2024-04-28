@@ -40,9 +40,9 @@ INSERT INTO "Issue1554FluentTable"
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS VARCHAR(3)),
+	CAST(@ClaimedKeyTypeN AS VARCHAR(3))
 )
 
 BeforeExecute
@@ -53,17 +53,15 @@ DECLARE @ClaimedKeyTypeN VarChar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554FluentTable"
+	"Issue1554FluentTable" "p"
 SET
-	"Issue1554FluentTable"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554FluentTable"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"ClaimedKeyType" = CAST(@ClaimedKeyType AS VARCHAR(2)),
+	"ClaimedKeyTypeN" = CAST(@ClaimedKeyTypeN AS VARCHAR(2))
 WHERE
-	"Issue1554FluentTable"."Id" = 0
+	"p"."Id" = 0
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."Id",
@@ -71,7 +69,7 @@ SELECT
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554FluentTable" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

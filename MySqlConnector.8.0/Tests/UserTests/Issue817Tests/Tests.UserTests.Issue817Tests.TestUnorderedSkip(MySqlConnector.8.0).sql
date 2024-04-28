@@ -2,7 +2,7 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `t1`
 
@@ -14,6 +14,6 @@ SET     @skip = 1
 SELECT
 	1
 FROM
-	`Person` `_`
+	`Person` `t1`
 LIMIT @skip, 9223372036854775807
 

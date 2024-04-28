@@ -32,7 +32,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "Fact"
 )
 VALUES
 (
-	@Id
+	CAST(@Id AS Int)
 )
 
 BeforeExecute
@@ -105,9 +105,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -127,9 +127,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -149,9 +149,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -171,9 +171,9 @@ INSERT INTO "Tag"
 )
 VALUES
 (
-	@Id,
-	@FactId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@FactId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute

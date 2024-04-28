@@ -62,7 +62,7 @@ WHERE
 	"s"."Id" = 3
 RETURNING
 	"s"."Id" + 1,
-	"s"."ValueStr" || Cast(1 as VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
 
 BeforeExecute
 -- Firebird.3 Firebird3

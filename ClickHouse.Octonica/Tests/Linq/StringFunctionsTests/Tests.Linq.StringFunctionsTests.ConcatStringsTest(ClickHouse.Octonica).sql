@@ -28,9 +28,9 @@ INSERT INTO SampleClass
 	Value4
 )
 VALUES
-(toInt32(1),'V1','V2',NULL,'V4'),
-(toInt32(2),NULL,'Z2',NULL,NULL),
-(toInt32(3),'Z1',NULL,NULL,'Z4')
+(1,'V1','V2',NULL,'V4'),
+(2,NULL,'Z2',NULL,NULL),
+(3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -39,8 +39,6 @@ SELECT
 	arrayStringConcat([t.Value2], ' -> ')
 FROM
 	SampleClass t
-ORDER BY
-	t.Id
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,8 +47,6 @@ SELECT
 	arrayStringConcat([t.Value3], ' -> ')
 FROM
 	SampleClass t
-ORDER BY
-	t.Id
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -59,8 +55,6 @@ SELECT
 	arrayStringConcat([t.Value3, t.Value1, t.Value2], ' -> ')
 FROM
 	SampleClass t
-ORDER BY
-	t.Id
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -69,8 +63,6 @@ SELECT
 	arrayStringConcat([t.Value3, t.Value3], ' -> ')
 FROM
 	SampleClass t
-ORDER BY
-	t.Id
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
