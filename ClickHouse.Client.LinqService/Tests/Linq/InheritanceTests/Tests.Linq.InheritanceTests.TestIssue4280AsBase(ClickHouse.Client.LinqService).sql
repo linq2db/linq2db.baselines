@@ -30,7 +30,7 @@ INSERT INTO Issue4280
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'TV00001',
 	'TV',
 	'Something'
@@ -47,7 +47,7 @@ INSERT INTO Issue4280
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Disp00001',
 	'DISPLAY'
 )
@@ -56,9 +56,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	t1.DeviceType,
 	t1.Id,
 	t1.SerialNumber,
-	t1.DeviceType,
 	t1.Location
 FROM
 	Issue4280 t1
@@ -75,7 +75,7 @@ UPDATE
 	DeviceType = 'TV',
 	Location = 'Anything'
 WHERE
-	Id = toInt32(2)
+	Id = 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -86,15 +86,15 @@ UPDATE
 	SerialNumber = 'Disp00002',
 	DeviceType = 'DISPLAY'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	t1.DeviceType,
 	t1.Id,
 	t1.SerialNumber,
-	t1.DeviceType,
 	t1.Location
 FROM
 	Issue4280 t1

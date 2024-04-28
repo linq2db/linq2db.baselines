@@ -2,5 +2,5 @@
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	toInt32(1)
+	1
 

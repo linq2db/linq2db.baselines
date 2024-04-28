@@ -8,7 +8,7 @@ FROM
 	Child t1
 ORDER BY
 	t1.ChildID DESC
-LIMIT toInt32(2), toInt32(5)
+LIMIT 2, 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -20,5 +20,5 @@ FROM
 	Child t1
 ORDER BY
 	t1.ChildID DESC
-LIMIT toInt32(2), toInt32(5)
+LIMIT 2, 5
 

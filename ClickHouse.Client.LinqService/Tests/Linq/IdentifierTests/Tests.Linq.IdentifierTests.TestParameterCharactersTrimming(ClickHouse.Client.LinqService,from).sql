@@ -18,9 +18,9 @@ BeforeExecute
 ALTER TABLE
 	testparams
 UPDATE
-	from = toInt32(2)
+	from = 2
 WHERE
-	from = toInt32(1)
+	from = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

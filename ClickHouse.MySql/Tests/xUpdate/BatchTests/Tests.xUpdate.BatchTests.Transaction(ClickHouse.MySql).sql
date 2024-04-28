@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1111)
+	ParentID = 1111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -12,7 +12,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(2111)
+	ParentID = 2111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -20,7 +20,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(3111)
+	ParentID = 3111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -28,7 +28,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(4111)
+	ParentID = 4111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -39,10 +39,10 @@ INSERT INTO Parent
 	Value1
 )
 VALUES
-(toInt32(1111),toInt32(1111)),
-(toInt32(2111),toInt32(2111)),
-(toInt32(3111),toInt32(3111)),
-(toInt32(4111),toInt32(4111))
+(1111,1111),
+(2111,2111),
+(3111,3111),
+(4111,4111)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -50,7 +50,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1111)
+	ParentID = 1111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -58,7 +58,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(2111)
+	ParentID = 2111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -66,7 +66,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(3111)
+	ParentID = 3111
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -74,5 +74,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(4111)
+	ParentID = 4111
 

@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(105)
+	ID >= 101 AND ID < 105
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,22 +16,8 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(101),
-	toInt32(11)
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO LinqDataTypes
-(
-	ID,
-	IntValue
-)
-VALUES
-(
-	toInt32(102),
-	toInt32(0)
+	101,
+	11
 )
 
 BeforeExecute
@@ -44,7 +30,21 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(103),
+	102,
+	0
+)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	IntValue
+)
+VALUES
+(
+	103,
 	NULL
 )
 
@@ -58,7 +58,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(104),
+	104,
 	NULL
 )
 
@@ -71,7 +71,7 @@ SELECT
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID >= toInt32(101) AND r.ID <= toInt32(104)
+	r.ID >= 101 AND r.ID <= 104
 ORDER BY
 	r.ID
 
@@ -85,7 +85,7 @@ SELECT
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID >= toInt32(101) AND r.ID <= toInt32(104)
+	r.ID >= 101 AND r.ID <= 104
 ORDER BY
 	r.ID
 
@@ -95,5 +95,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(105)
+	ID >= 101 AND ID < 105
 

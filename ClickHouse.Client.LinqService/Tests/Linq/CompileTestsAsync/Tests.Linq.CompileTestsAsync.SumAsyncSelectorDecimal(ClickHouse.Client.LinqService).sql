@@ -24,7 +24,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -36,7 +36,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -48,7 +48,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(4)
+	4
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(5)
+	5
 )
 
 BeforeExecute
@@ -84,7 +84,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(6)
+	6
 )
 
 BeforeExecute
@@ -96,7 +96,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(7)
+	7
 )
 
 BeforeExecute
@@ -108,7 +108,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(8)
+	8
 )
 
 BeforeExecute
@@ -120,7 +120,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(9)
+	9
 )
 
 BeforeExecute
@@ -132,7 +132,7 @@ INSERT INTO AsyncDataTable
 )
 VALUES
 (
-	toInt32(10)
+	10
 )
 
 BeforeExecute

@@ -24,8 +24,8 @@ INSERT INTO BooleanTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),true,NULL),
-(toInt32(2),false,true)
+(1,true,NULL),
+(2,false,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ INSERT INTO BooleanTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	true,
 	NULL
 )
@@ -85,7 +85,7 @@ INSERT INTO BooleanTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	false,
 	true
 )
@@ -119,8 +119,8 @@ INSERT INTO BooleanTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),true,NULL),
-(toInt32(2),false,true)
+(1,true,NULL),
+(2,false,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

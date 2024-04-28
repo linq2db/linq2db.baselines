@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 UPDATE
-	Value1 = toInt32(1)
+	Value1 = 1
 WHERE
-	Value1 = toInt32(1)
+	Value1 = 1
 

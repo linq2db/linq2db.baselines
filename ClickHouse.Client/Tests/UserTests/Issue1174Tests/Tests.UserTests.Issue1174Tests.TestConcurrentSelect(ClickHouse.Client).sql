@@ -36,7 +36,7 @@ SELECT
 	t1.Name
 FROM
 	User t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -46,7 +46,7 @@ SELECT
 	t1.Name
 FROM
 	User t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
