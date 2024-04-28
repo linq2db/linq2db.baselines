@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Parent" "p1"
 		WHERE

@@ -30,23 +30,23 @@ INSERT INTO Ints
 	Nil
 )
 VALUES
-(toInt32(1),toInt32(2),toInt32(3),toInt32(4),toInt32(5),NULL)
+(1,2,3,4,5,NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Two = i.One * toInt32(2) AND i.Three = i.Four - toInt32(1)
+	i.One = i.One AND i.Two = i.One * 2 AND i.Three = i.Four - 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
@@ -56,7 +56,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
@@ -66,21 +66,21 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	toInt32(1) = i.One AND i.Nil = i.Nil AND toInt32(3) = i.Three
+	1 = i.One AND i.Nil = i.Nil AND 3 = i.Three
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	toInt32(1) = i.One AND NULL >= i.Nil AND toInt32(3) = i.Three
+	1 = i.One AND NULL >= i.Nil AND 3 = i.Three
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

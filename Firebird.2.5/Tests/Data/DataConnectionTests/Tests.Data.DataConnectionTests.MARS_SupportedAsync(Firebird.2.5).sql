@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "t1"
 

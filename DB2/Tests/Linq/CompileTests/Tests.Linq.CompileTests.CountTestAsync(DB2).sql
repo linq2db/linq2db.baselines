@@ -4,7 +4,7 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -16,7 +16,7 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = -1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE

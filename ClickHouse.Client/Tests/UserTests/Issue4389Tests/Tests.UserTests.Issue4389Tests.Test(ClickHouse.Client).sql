@@ -17,7 +17,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	UniqueIdTmp t1
 
