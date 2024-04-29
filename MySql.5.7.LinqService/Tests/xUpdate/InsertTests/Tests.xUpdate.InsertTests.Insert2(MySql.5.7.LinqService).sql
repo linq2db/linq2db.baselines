@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -21,7 +19,7 @@ INSERT INTO `Child`
 )
 VALUES
 (
-	@ParentID,
+	1,
 	@id
 )
 

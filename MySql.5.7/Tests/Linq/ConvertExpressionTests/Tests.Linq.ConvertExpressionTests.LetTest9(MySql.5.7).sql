@@ -1,44 +1,31 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_c`.`ParentID`,
-	`_c`.`ChildID`
-FROM
 	(
-		SELECT DISTINCT
-			`t1`.`ParentID`,
-			`t1`.`Value1`
+		SELECT
+			`c_1`.`ParentID`
 		FROM
-			(
-				SELECT
-					`p`.`ParentID`,
-					`p`.`Value1`
-				FROM
-					`Parent` `p`
-				LIMIT @take
-			) `t1`
-	) `key_data_result`
-		INNER JOIN `Child` `_c` ON `_c`.`ParentID` = `key_data_result`.`ParentID`
-ORDER BY
-	`_c`.`ChildID`
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 10
-
-SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
+			`Child` `c_1`
+		WHERE
+			`c_1`.`ParentID` = `p`.`ParentID`
+		ORDER BY
+			`c_1`.`ChildID`
+		LIMIT 1
+	),
+	(
+		SELECT
+			`c_2`.`ChildID`
+		FROM
+			`Child` `c_2`
+		WHERE
+			`c_2`.`ParentID` = `p`.`ParentID`
+		ORDER BY
+			`c_2`.`ChildID`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
 LIMIT @take

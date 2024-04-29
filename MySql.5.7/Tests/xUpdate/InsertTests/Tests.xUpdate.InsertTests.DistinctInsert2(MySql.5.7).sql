@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @BoolValue UByte -- Boolean
-SET     @BoolValue = 1
 
 INSERT INTO `LinqDataTypes`
 (
@@ -21,7 +19,7 @@ INSERT INTO `LinqDataTypes`
 SELECT
 	CAST(Floor(`t2`.`c1` + 1001) AS SIGNED),
 	Uuid(),
-	@BoolValue
+	1
 FROM
 	(
 		SELECT DISTINCT
