@@ -22,7 +22,7 @@ SET     @Int = 1
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'One'
 DECLARE @Date  -- DateTime
-SET     @Date = '2001-01-01'
+SET     @Date = '2001-01-01 00:00:00.000'
 DECLARE @Double  -- Double
 SET     @Double = 1
 DECLARE @Bool  -- Boolean
@@ -52,7 +52,7 @@ SET     @Int = 2
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'Two'
 DECLARE @Date  -- DateTime
-SET     @Date = '2002-02-02'
+SET     @Date = '2002-02-02 00:00:00.000'
 DECLARE @Double  -- Double
 SET     @Double = 2
 DECLARE @Bool  -- Boolean
@@ -79,7 +79,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

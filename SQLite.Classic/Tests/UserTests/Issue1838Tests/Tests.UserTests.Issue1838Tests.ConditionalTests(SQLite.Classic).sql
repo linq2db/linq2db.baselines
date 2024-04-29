@@ -67,7 +67,7 @@ SELECT
 	[ia].[Total]
 FROM
 	[Invoice] [t1]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON ([r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID] OR [r].[InvoiceReferenceNumberID] IS NULL AND [t1].[InvoiceReferenceNumberID] IS NULL)
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID]
 		LEFT JOIN (
 			SELECT
 				[g_1].[InvoiceID] as [InvoiceId],
@@ -91,7 +91,7 @@ SELECT
 	[t1].[SettlementTotalOnIssue]
 FROM
 	[Invoice] [t1]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON ([r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID] OR [r].[InvoiceReferenceNumberID] IS NULL AND [t1].[InvoiceReferenceNumberID] IS NULL)
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -104,7 +104,7 @@ SELECT
 	[ia].[Total]
 FROM
 	[Invoice] [t1]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON ([r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID] OR [r].[InvoiceReferenceNumberID] IS NULL AND [t1].[InvoiceReferenceNumberID] IS NULL)
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [t1].[InvoiceReferenceNumberID]
 		LEFT JOIN (
 			SELECT
 				[g_1].[InvoiceID] as [InvoiceId],

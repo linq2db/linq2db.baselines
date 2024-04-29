@@ -61,7 +61,7 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
+		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
 WHERE
 	[a_PayRate].[Name] = 'test'
 
@@ -74,7 +74,7 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON ([item_1].[PayRateId] = [a_PayRate].[Id] OR [item_1].[PayRateId] IS NULL AND [a_PayRate].[Id] IS NULL)
+		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
 WHERE
 	[a_PayRate].[Name] = 'test' AND [item_1].[PayRateId] IS NOT NULL
 

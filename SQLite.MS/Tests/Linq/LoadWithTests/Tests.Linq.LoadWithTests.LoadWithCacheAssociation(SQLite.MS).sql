@@ -212,7 +212,7 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m2]
-		LEFT JOIN [MainItem] [a_MainItem] ON ([m2].[MainItemId] = [a_MainItem].[Id] OR [m2].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
+		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
 WHERE
 	[a_MainItem].[Id] IS NOT NULL AND (
 		SELECT

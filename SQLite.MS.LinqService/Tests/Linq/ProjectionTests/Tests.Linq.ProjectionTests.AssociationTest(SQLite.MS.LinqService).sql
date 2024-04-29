@@ -76,7 +76,7 @@ SELECT
 	[a_Other].[IsActual]
 FROM
 	[SomeEntity] [t]
-		LEFT JOIN [SomeOtherEntity] [a_Other] ON ([t].[OtherId] = [a_Other].[Id] OR [t].[OtherId] IS NULL AND [a_Other].[Id] IS NULL)
+		LEFT JOIN [SomeOtherEntity] [a_Other] ON [t].[OtherId] = [a_Other].[Id]
 LIMIT 1
 
 BeforeExecute
