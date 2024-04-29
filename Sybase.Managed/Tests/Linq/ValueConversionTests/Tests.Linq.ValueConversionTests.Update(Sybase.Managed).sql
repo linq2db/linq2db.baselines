@@ -65,14 +65,12 @@ SET     @EnumWithNullDeclarative = NULL
 UPDATE
 	[ValueConversion]
 SET
-	[e].[Value1] = [e].[Value1],
-	[e].[Value2] = @Value2,
-	[e].[EnumWithNull] = @EnumWithNull,
-	[e].[EnumWithNullDeclarative] = @EnumWithNullDeclarative
-FROM
-	[ValueConversion] [e]
+	[Value1] = [ValueConversion].[Value1],
+	[Value2] = @Value2,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative
 WHERE
-	[e].[Id] = 1
+	[ValueConversion].[Id] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -119,19 +117,17 @@ SET     @Id = 2
 UPDATE
 	[ValueConversion]
 SET
-	[t1].[Value1] = @Value1,
-	[t1].[Value2] = @Value2,
-	[t1].[Enum] = @Enum,
-	[t1].[EnumNullable] = @EnumNullable,
-	[t1].[EnumWithNull] = @EnumWithNull,
-	[t1].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[t1].[BoolValue] = @BoolValue,
-	[t1].[AnotherBoolValue] = @AnotherBoolValue,
-	[t1].[DateTimeNullable] = @DateTimeNullable
-FROM
-	[ValueConversion] [t1]
+	[Value1] = @Value1,
+	[Value2] = @Value2,
+	[Enum] = @Enum,
+	[EnumNullable] = @EnumNullable,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
+	[BoolValue] = @BoolValue,
+	[AnotherBoolValue] = @AnotherBoolValue,
+	[DateTimeNullable] = @DateTimeNullable
 WHERE
-	[t1].[Id] = @Id
+	[ValueConversion].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -178,19 +174,17 @@ SET     @Id = 3
 UPDATE
 	[ValueConversion]
 SET
-	[t1].[Value1] = @Value1,
-	[t1].[Value2] = @Value2,
-	[t1].[Enum] = @Enum,
-	[t1].[EnumNullable] = @EnumNullable,
-	[t1].[EnumWithNull] = @EnumWithNull,
-	[t1].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[t1].[BoolValue] = @BoolValue,
-	[t1].[AnotherBoolValue] = @AnotherBoolValue,
-	[t1].[DateTimeNullable] = @DateTimeNullable
-FROM
-	[ValueConversion] [t1]
+	[Value1] = @Value1,
+	[Value2] = @Value2,
+	[Enum] = @Enum,
+	[EnumNullable] = @EnumNullable,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
+	[BoolValue] = @BoolValue,
+	[AnotherBoolValue] = @AnotherBoolValue,
+	[DateTimeNullable] = @DateTimeNullable
 WHERE
-	[t1].[Id] = @Id
+	[ValueConversion].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase

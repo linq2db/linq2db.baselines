@@ -29,11 +29,9 @@ BeforeExecute
 UPDATE
 	[LinqDataTypes]
 SET
-	[r].[BigIntValue] = 12
-FROM
-	[LinqDataTypes] [r]
+	[BigIntValue] = 12
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- Sybase.Managed Sybase

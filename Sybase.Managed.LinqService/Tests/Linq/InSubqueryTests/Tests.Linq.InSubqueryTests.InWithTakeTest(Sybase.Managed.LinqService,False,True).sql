@@ -13,9 +13,27 @@ WHERE
 		FROM
 			(
 				SELECT TOP 100
-					[p].[ParentID]
+					[v].[ParentID]
 				FROM
-					[Parent] [p]
+					[Parent] [v]
 			) [t1]
 	)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

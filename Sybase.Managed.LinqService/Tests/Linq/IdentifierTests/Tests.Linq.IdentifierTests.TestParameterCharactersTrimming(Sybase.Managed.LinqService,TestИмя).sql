@@ -23,11 +23,9 @@ SET     @Test = 2
 UPDATE
 	[testparams]
 SET
-	[t].[TestИмя] = @Test
-FROM
-	[testparams] [t]
+	[TestИмя] = @Test
 WHERE
-	[t].[TestИмя] = 1
+	[testparams].[TestИмя] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

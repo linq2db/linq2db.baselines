@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Bit -- Boolean
-SET     @BoolValue = 1
 
 INSERT INTO [LinqDataTypes]
 (
@@ -21,7 +19,7 @@ INSERT INTO [LinqDataTypes]
 SELECT
 	CAST([t2].[c1] + 1001 AS Int),
 	NewID(1),
-	@BoolValue
+	1
 FROM
 	(
 		SELECT DISTINCT

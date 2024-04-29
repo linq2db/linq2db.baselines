@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[d].[c1]
+	CONVERT(Date, [d].[DateTimeValue])
 FROM
-	(
-		SELECT
-			[t].[DateTimeValue] as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, [d].[DateTimeValue]) > 0
 
