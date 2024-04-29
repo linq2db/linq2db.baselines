@@ -3,6 +3,7 @@
 
 SELECT
 	a_Parent.ParentID,
+	a_Parent.ParentID,
 	a_Parent.Value1
 FROM
 	Child ch
@@ -11,6 +12,7 @@ WHERE
 	ch.ParentID = 1
 UNION ALL
 SELECT
+	a_Parent_1.ParentID,
 	a_Parent_1.ParentID,
 	a_Parent_1.Value1
 FROM

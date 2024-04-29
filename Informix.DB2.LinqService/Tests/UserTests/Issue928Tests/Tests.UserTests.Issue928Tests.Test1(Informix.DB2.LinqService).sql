@@ -4,16 +4,16 @@
 SELECT
 	p1.ParentID,
 	p1.Value1,
-	t1.ParentID,
-	t1.Sum_1
+	p2.ParentID,
+	p2.Sum_1
 FROM
 	Parent p1
 		LEFT JOIN (
 			SELECT
-				p.ParentID,
-				Sum(p.ParentID) as Sum_1
+				g_1.ParentID,
+				SUM(g_1.ParentID) as Sum_1
 			FROM
-				Parent p
+				Parent g_1
 			WHERE
 				EXISTS(
 					SELECT
@@ -21,9 +21,9 @@ FROM
 					FROM
 						Child ch
 					WHERE
-						ch.ParentID = p.ParentID
+						g_1.ParentID = ch.ParentID
 				)
 			GROUP BY
-				p.ParentID
-		) t1 ON t1.ParentID = p1.ParentID
+				g_1.ParentID
+		) p2 ON p2.ParentID = p1.ParentID
 

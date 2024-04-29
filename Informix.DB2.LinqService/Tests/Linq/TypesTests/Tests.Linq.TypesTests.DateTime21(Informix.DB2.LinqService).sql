@@ -19,15 +19,13 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @dt Timestamp(16) -- DateTime
-SET     @dt = TO_DATE('2010-12-14 05:00:07.42501', '%Y-%m-%d %H:%M:%S.%F5')
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes t
 SET
-	LinqDataTypes.DateTimeValue = @dt
+	DateTimeValue = TO_DATE('2010-12-14 05:00:07.42501', '%Y-%m-%d %H:%M:%S.%F5')
 WHERE
-	LinqDataTypes.ID = 1
+	t.ID = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -50,13 +48,11 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @pdt Timestamp(16) -- DateTime
-SET     @pdt = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes t
 SET
-	LinqDataTypes.DateTimeValue = @pdt
+	DateTimeValue = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
 WHERE
-	LinqDataTypes.ID = 1
+	t.ID = 1
 

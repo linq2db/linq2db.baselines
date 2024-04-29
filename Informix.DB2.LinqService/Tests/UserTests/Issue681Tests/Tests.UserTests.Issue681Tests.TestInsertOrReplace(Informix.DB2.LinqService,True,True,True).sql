@@ -45,11 +45,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	testdb@informix:informix.Issue681Table
+	testdb@informix:informix.Issue681Table t1
 SET
-	testdb@informix:informix.Issue681Table."Value" = @Value
+	"Value" = @Value
 WHERE
-	testdb@informix:informix.Issue681Table.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -77,11 +77,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	testdb@informix:informix.Issue681Table
+	testdb@informix:informix.Issue681Table t1
 SET
-	testdb@informix:informix.Issue681Table."Value" = @Value
+	"Value" = @Value
 WHERE
-	testdb@informix:informix.Issue681Table.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
