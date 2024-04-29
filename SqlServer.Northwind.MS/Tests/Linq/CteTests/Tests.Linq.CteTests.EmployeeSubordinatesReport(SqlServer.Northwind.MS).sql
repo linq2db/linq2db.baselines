@@ -37,7 +37,7 @@ SELECT
 	[manager].[NumberOfSubordinates]
 FROM
 	[EmployeeSubordinatesReport] [employee]
-		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON ([employee].[ReportsTo] = [manager].[EmployeeID] OR [employee].[ReportsTo] IS NULL AND [manager].[EmployeeID] IS NULL)
+		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
@@ -75,5 +75,5 @@ FROM
 				[manager].[EmployeeID]
 			FROM
 				[Employees] [manager]
-		) [manager_1] ON ([employee].[ReportsTo] = [manager_1].[EmployeeID] OR [employee].[ReportsTo] IS NULL AND [manager_1].[EmployeeID] IS NULL)
+		) [manager_1] ON [employee].[ReportsTo] = [manager_1].[EmployeeID]
 

@@ -29,7 +29,7 @@ SELECT
 FROM
 	[Order Details] [od]
 		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
-		LEFT JOIN [Categories] [a_Category] ON ([a_Product].[CategoryID] = [a_Category].[CategoryID] OR [a_Product].[CategoryID] IS NULL AND [a_Category].[CategoryID] IS NULL)
+		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
 		LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 WHERE
 	[a_Category].[CategoryName] = N'Seafood'

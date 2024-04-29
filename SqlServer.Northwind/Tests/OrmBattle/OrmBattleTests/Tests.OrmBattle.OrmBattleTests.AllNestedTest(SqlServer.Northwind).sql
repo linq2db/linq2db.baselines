@@ -103,7 +103,7 @@ WHERE
 		FROM
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
-				LEFT JOIN [Employees] [a_Employee] ON ([o].[EmployeeID] = [a_Employee].[EmployeeID] OR [o].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
+				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
 			[a_Customer].[CustomerID] = [c_1].[CustomerID] AND
 			NOT EXISTS(

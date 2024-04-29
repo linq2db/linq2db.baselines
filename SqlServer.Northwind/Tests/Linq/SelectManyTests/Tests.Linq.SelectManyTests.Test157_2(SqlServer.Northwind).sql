@@ -94,16 +94,16 @@ SELECT
 	[bind6].[RegionDescription]
 FROM
 	[Employees] [e]
-		LEFT JOIN [Employees] [bind1] ON ([e].[ReportsTo] = [bind1].[EmployeeID] OR [e].[ReportsTo] IS NULL AND [bind1].[EmployeeID] IS NULL)
+		LEFT JOIN [Employees] [bind1] ON [e].[ReportsTo] = [bind1].[EmployeeID]
 		LEFT JOIN [Orders] [bind2] ON [e].[EmployeeID] = [bind2].[EmployeeID]
-		LEFT JOIN [Shippers] [a_Shipper] ON ([bind2].[ShipVia] = [a_Shipper].[ShipperID] OR [bind2].[ShipVia] IS NULL AND [a_Shipper].[ShipperID] IS NULL)
-		LEFT JOIN [Employees] [a_Employee] ON ([bind2].[EmployeeID] = [a_Employee].[EmployeeID] OR [bind2].[EmployeeID] IS NULL AND [a_Employee].[EmployeeID] IS NULL)
+		LEFT JOIN [Shippers] [a_Shipper] ON [bind2].[ShipVia] = [a_Shipper].[ShipperID]
+		LEFT JOIN [Employees] [a_Employee] ON [bind2].[EmployeeID] = [a_Employee].[EmployeeID]
 		INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
-		LEFT JOIN [Order Details] [bind3] ON ([bind2].[OrderID] = [bind3].[OrderID] OR [bind2].[OrderID] IS NULL AND [bind3].[OrderID] IS NULL)
+		LEFT JOIN [Order Details] [bind3] ON [bind2].[OrderID] = [bind3].[OrderID]
 		LEFT JOIN [EmployeeTerritories] [bind4] ON [e].[EmployeeID] = [bind4].[EmployeeID]
 		LEFT JOIN [Employees] [a_Employee_1] ON [bind4].[EmployeeID] = [a_Employee_1].[EmployeeID]
-		LEFT JOIN [Territories] [bind5] ON ([bind4].[TerritoryID] = [bind5].[TerritoryID] OR [bind4].[TerritoryID] IS NULL AND [bind5].[TerritoryID] IS NULL)
-		LEFT JOIN [Region] [bind6] ON ([bind5].[RegionID] = [bind6].[RegionID] OR [bind5].[RegionID] IS NULL AND [bind6].[RegionID] IS NULL)
+		LEFT JOIN [Territories] [bind5] ON [bind4].[TerritoryID] = [bind5].[TerritoryID]
+		LEFT JOIN [Region] [bind6] ON [bind5].[RegionID] = [bind6].[RegionID]
 WHERE
 	[e].[EmployeeID] = 5
 

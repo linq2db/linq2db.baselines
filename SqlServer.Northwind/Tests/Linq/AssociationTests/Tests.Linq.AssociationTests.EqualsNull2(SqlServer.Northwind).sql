@@ -22,7 +22,7 @@ SELECT
 	[employee].[PhotoPath]
 FROM
 	[Employees] [employee]
-		LEFT JOIN [Employees] [a_ReportsToEmployee] ON ([employee].[ReportsTo] = [a_ReportsToEmployee].[EmployeeID] OR [employee].[ReportsTo] IS NULL AND [a_ReportsToEmployee].[EmployeeID] IS NULL)
+		LEFT JOIN [Employees] [a_ReportsToEmployee] ON [employee].[ReportsTo] = [a_ReportsToEmployee].[EmployeeID]
 WHERE
 	[a_ReportsToEmployee].[EmployeeID] IS NOT NULL
 
