@@ -46,11 +46,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS NVarChar(3)),
+	CAST(@Date AS timestamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS smallint)
 )
 
 BeforeExecute
@@ -76,18 +76,18 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	@Int,
-	@Str,
-	@Date,
-	@Double,
-	@Bool
+	CAST(@Int AS Int),
+	CAST(@Str AS NVarChar(3)),
+	CAST(@Date AS timestamp),
+	CAST(@Double AS Float),
+	CAST(@Bool AS smallint)
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Mixed" "t"
 WHERE

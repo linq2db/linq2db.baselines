@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS NVarChar(5)),
+	CAST(@CEnum AS VarChar(20))
 )
 
 BeforeExecute
@@ -68,17 +68,17 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
+	CAST(@Id AS Int),
+	CAST(@Int AS Int),
+	CAST(@Enum AS NVarChar(3)),
+	CAST(@CEnum AS VarChar(12))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -88,7 +88,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE

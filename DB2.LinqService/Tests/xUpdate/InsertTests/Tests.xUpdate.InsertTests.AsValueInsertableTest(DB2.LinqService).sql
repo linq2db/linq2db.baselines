@@ -38,15 +38,15 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	@ID,
-	@FirstName
+	CAST(@ID AS Int),
+	CAST(@FirstName AS NVarChar(4))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
