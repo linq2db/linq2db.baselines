@@ -8,12 +8,6 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
-DECLARE @FirstName VarWChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarWChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -23,9 +17,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	'John',
+	'Shepard',
+	'M'
 )
 
 BeforeExecute
