@@ -27,12 +27,12 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Id,
 	t1.Discriminator,
-	t1.Value1,
-	t1.Value2,
+	t1.Id,
 	t1.Value3,
-	t1.NullableBool
+	t1.NullableBool,
+	t1.Value2,
+	t1.Value1
 FROM
 	TPHTable t1
 ORDER BY
@@ -42,97 +42,97 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
-	x.Discriminator = toInt32(1)
-LIMIT toInt32(2)
+	x.Discriminator = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
-	x.Discriminator = toInt32(2)
-LIMIT toInt32(2)
+	x.Discriminator = 2
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
-	x.Discriminator = toInt32(3)
-LIMIT toInt32(2)
+	x.Discriminator = 3
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
 	x.Value1 = 'Str1'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
 	x.Value2 = 'Str2'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.Id,
 	x.Discriminator,
-	x.Value1,
-	x.Value2,
+	x.Id,
 	x.Value3,
-	x.NullableBool
+	x.NullableBool,
+	x.Value2,
+	x.Value1
 FROM
 	TPHTable x
 WHERE
 	x.Value3 = 'Str3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

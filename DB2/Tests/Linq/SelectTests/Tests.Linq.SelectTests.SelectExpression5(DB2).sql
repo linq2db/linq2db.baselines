@@ -37,7 +37,7 @@ BeforeExecute
 SELECT
 	1
 FROM
-	"SelectExpressionTable" "_"
+	"SelectExpressionTable" "t1"
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
