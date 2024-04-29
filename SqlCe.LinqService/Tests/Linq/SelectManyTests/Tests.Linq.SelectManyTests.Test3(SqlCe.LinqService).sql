@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [p]
+	[Parent] [t1]
+		INNER JOIN [GrandChild] [g_1] ON [t1].[ParentID] = [g_1].[ParentID]
 		CROSS JOIN [Person] [t]
-		INNER JOIN [GrandChild] [g_1] ON [p].[ParentID] = [g_1].[ParentID]
 

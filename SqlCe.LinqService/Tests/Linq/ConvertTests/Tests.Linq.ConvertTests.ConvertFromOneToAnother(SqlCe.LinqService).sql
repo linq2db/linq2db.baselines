@@ -1,72 +1,60 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
-SELECT TOP (@take)
-	Convert(Real, @value)
+SELECT TOP (1)
+	CAST(@value AS Real) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
-SELECT TOP (@take)
-	@value
+SELECT TOP (1)
+	CAST(@value AS Real) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
 
-SELECT TOP (@take)
-	Convert(Real, @value)
+SELECT TOP (1)
+	CAST(@value AS Real) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
-SELECT TOP (@take)
-	Convert(Float, @value)
+SELECT TOP (1)
+	CAST(@value AS Float) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
-SELECT TOP (@take)
-	Convert(Float, @value)
+SELECT TOP (1)
+	CAST(@value AS Float) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
 
-SELECT TOP (@take)
-	@value
+SELECT TOP (1)
+	CAST(@value AS Float) as [ServerConvert]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
