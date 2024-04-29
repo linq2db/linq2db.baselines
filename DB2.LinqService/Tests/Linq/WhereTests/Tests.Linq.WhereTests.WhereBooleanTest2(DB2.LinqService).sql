@@ -40,9 +40,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -172,9 +172,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -194,9 +194,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -216,9 +216,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -238,9 +238,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	@Id,
-	@BoolValue,
-	@NullableBoolValue
+	CAST(@Id AS Int),
+	CAST(@BoolValue AS smallint),
+	CAST(@NullableBoolValue AS smallint)
 )
 
 BeforeExecute
@@ -408,8 +408,7 @@ SELECT
 FROM
 	"WhereCases" "t"
 WHERE
-	"t"."NullableBoolValue" = 1 AND "t"."NullableBoolValue" IS NOT NULL AND
-	"t"."Id" > 0
+	"t"."NullableBoolValue" = 1 AND "t"."Id" > 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

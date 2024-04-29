@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	To_Number(To_Char(("t"."DateTimeValue" + 1 Hour), 'HH24'))
+	Extract(hour from ("t"."DateTimeValue" + 1 HOUR))
 FROM
 	"LinqDataTypes" "t"
 
