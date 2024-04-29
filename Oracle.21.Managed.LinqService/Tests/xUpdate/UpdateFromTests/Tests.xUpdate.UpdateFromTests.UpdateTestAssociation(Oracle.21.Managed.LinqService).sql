@@ -302,7 +302,7 @@ SET
 			a_Relation_1."RelatedValue3"
 		FROM
 			"UpdatedEntities" v_1
-				LEFT JOIN "UpdateRelation" a_Relation_1 ON (v_1."RelationId" = a_Relation_1."id" OR v_1."RelationId" IS NULL AND a_Relation_1."id" IS NULL)
+				LEFT JOIN "UpdateRelation" a_Relation_1 ON v_1."RelationId" = a_Relation_1."id"
 		WHERE
 			a_Relation_1."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v_1."id"
 	)
@@ -312,7 +312,7 @@ WHERE
 			*
 		FROM
 			"UpdatedEntities" v
-				LEFT JOIN "UpdateRelation" a_Relation ON (v."RelationId" = a_Relation."id" OR v."RelationId" IS NULL AND a_Relation."id" IS NULL)
+				LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
 		WHERE
 			a_Relation."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v."id"
 	)
@@ -324,7 +324,7 @@ SELECT
 	v."Value1"
 FROM
 	"UpdatedEntities" v
-		LEFT JOIN "UpdateRelation" a_Relation ON (v."RelationId" = a_Relation."id" OR v."RelationId" IS NULL AND a_Relation."id" IS NULL)
+		LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
 WHERE
 	a_Relation."RelatedValue1" = 11
 FETCH NEXT 1 ROWS ONLY
