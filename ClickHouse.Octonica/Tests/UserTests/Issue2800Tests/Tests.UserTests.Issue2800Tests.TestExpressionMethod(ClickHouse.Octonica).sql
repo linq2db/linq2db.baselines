@@ -25,8 +25,8 @@ INSERT INTO Car
 	Name
 )
 VALUES
-(toInt32(1),'Special'),
-(toInt32(2),'NoSpecial')
+(1,'Special'),
+(2,'NoSpecial')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -41,32 +41,10 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x.Id,
-	x.Name
+	t1.Id,
+	t1.Name
 FROM
-	Car x
-WHERE
-	(x.Name <> 'Special' OR x.Name IS NULL)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	x.Id,
-	x.Name
-FROM
-	Car x
-WHERE
-	x.Name = 'Special'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	x.Id,
-	x.Name
-FROM
-	Car x
+	Car t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -83,12 +61,88 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
+	t1.Name
+FROM
+	Car t1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
 	x.Id,
 	x.Name
 FROM
 	Car x
 WHERE
 	x.Name = 'Special'
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Name
+FROM
+	Car t1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	x.Id,
+	x.Name
+FROM
+	Car x
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Name
+FROM
+	Car t1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	x.Id,
+	x.Name
+FROM
+	Car x
+WHERE
+	(x.Name <> 'Special' OR x.Name IS NULL)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Name
+FROM
+	Car t1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	x.Id,
+	x.Name
+FROM
+	Car x
+WHERE
+	x.Name = 'Special'
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Name
+FROM
+	Car t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
