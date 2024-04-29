@@ -2,9 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[MoneyValue]
+	[p].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[BoolValue] <> 0)
+	[p].[BoolValue] <> 0
 
