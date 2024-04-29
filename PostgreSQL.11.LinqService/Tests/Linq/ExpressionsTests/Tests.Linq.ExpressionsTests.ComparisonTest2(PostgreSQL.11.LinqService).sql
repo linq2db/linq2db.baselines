@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @personId Integer -- Int32
-SET     @personId = 2
+SET     @personId = 0
+DECLARE @personId_1 Integer -- Int32
+SET     @personId_1 = 2
 
 SELECT
 	CASE
@@ -9,48 +11,38 @@ SELECT
 			SELECT
 				*
 			FROM
+				"Person" t1
+			WHERE
 				(
 					SELECT
-						(
+						COUNT(*)
+					FROM
+						"Patient" t2
+					WHERE
+						t2."PersonID" = :personId AND t2."PersonID" NOT IN (
 							SELECT
-								Count(*)
-							FROM
-								"Patient" t1
-							WHERE
-								t1."PersonID" IS NULL AND t1."PersonID" NOT IN (
-									SELECT
-										t2."PersonID"
-									FROM
-										"Patient" t2
-									WHERE
-										t2."PersonID" = :personId
-								)
-						) as cnt,
-						(
-							SELECT
-								Count(*)
+								t3."PersonID"
 							FROM
 								"Patient" t3
 							WHERE
-								t3."PersonID" = :personId AND t3."PersonID" NOT IN (
-									SELECT
-										t4."PersonID"
-									FROM
-										"Patient" t4
-									WHERE
-										t4."PersonID" IS NULL
-								)
-						) as ex,
-						t5."FirstName",
-						t5."PersonID",
-						t5."LastName",
-						t5."MiddleName",
-						t5."Gender"
+								t3."PersonID" = :personId_1
+						)
+				) = 0 AND
+				(
+					SELECT
+						COUNT(*)
 					FROM
-						"Person" t5
-				) t6
-			WHERE
-				t6.cnt = 0 AND t6.ex = 0
+						"Patient" t4
+					WHERE
+						t4."PersonID" = :personId_1 AND t4."PersonID" NOT IN (
+							SELECT
+								t5."PersonID"
+							FROM
+								"Patient" t5
+							WHERE
+								t5."PersonID" = :personId
+						)
+				) = 0
 		)
 			THEN True
 		ELSE False
