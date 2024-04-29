@@ -2,8 +2,6 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(9) -- String
 SET     @FirstName = 'FirstName'
-DECLARE @LastName Text(8) -- String
-SET     @LastName = 'LastName'
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'F'
 
@@ -16,7 +14,7 @@ INSERT INTO "Person"
 VALUES
 (
 	:FirstName,
-	:LastName,
+	'LastName',
 	:Gender
 )
 
