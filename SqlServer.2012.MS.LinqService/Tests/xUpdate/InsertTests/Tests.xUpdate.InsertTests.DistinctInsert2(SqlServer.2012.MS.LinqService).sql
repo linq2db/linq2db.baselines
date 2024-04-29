@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @BoolValue Bit -- Boolean
-SET     @BoolValue = 1
 
 INSERT INTO [LinqDataTypes]
 (
@@ -21,7 +19,7 @@ INSERT INTO [LinqDataTypes]
 SELECT
 	CAST(Floor([t2].[c1] + 1001) AS Int),
 	NewID(),
-	@BoolValue
+	1
 FROM
 	(
 		SELECT DISTINCT
