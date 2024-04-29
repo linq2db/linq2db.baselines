@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
@@ -12,9 +12,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
-	(LOCATE('Joh', `p`.`FirstName`) <= 0) AND `p`.`PersonID` = 1
+	LOCATE('Joh', `p`.`FirstName`) <= 0 AND `p`.`PersonID` = 1
 

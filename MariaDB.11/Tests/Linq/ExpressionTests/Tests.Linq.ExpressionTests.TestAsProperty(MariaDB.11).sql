@@ -2,5 +2,5 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	10 as `c1`
+	10 as `SomeValue`
 

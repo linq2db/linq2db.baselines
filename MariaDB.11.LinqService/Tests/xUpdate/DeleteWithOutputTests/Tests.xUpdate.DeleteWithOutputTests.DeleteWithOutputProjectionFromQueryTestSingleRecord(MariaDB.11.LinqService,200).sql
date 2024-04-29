@@ -255,7 +255,11 @@ WHERE
 	`TableWithData`.`Id` = 3
 RETURNING
 	`TableWithData`.`Id` + 1,
-	Concat(`TableWithData`.`ValueStr`, Cast(1 as CHAR(11)))
+	Concat(`TableWithData`.`ValueStr`, 1),
+	CASE
+		WHEN `TableWithData`.`ValueStr` IS NOT NULL THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

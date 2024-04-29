@@ -30,8 +30,6 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`FirstName`,
@@ -43,7 +41,7 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` = 'John' AND `p`.`LastName` = 'Shepard'
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

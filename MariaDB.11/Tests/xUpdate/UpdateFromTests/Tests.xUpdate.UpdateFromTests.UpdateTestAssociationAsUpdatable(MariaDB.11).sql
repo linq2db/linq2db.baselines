@@ -73,7 +73,7 @@ BeforeExecute
 
 UPDATE
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON (`v`.`RelationId` = `a_Relation`.`id` OR `v`.`RelationId` IS NULL AND `a_Relation`.`id` IS NULL)
+		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
 SET
 	`v`.`Value1` = `a_Relation`.`RelatedValue3`
 WHERE
@@ -86,7 +86,7 @@ SELECT
 	`v`.`Value1`
 FROM
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON (`v`.`RelationId` = `a_Relation`.`id` OR `v`.`RelationId` IS NULL AND `a_Relation`.`id` IS NULL)
+		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
 LIMIT 1
