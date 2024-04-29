@@ -42,8 +42,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -54,5 +52,5 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" = :id AND ROWNUM <= :take
+	t1."PersonID" = :id AND ROWNUM <= 1
 

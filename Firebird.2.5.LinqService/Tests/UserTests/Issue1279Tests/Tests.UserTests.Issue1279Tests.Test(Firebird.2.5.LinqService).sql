@@ -49,15 +49,13 @@ INSERT INTO "Issue1279Table"
 )
 VALUES
 (
-	@CharFld
+	CAST(@CharFld AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Id",
 	"t1"."CharFld"
 FROM

@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -33,7 +31,7 @@ SELECT
 FROM
 	SEQUENCETEST t1
 WHERE
-	t1.VALUE = 'SeqValue' AND ROWNUM <= :take
+	t1.VALUE = 'SeqValue' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -49,7 +47,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	SEQUENCETEST t1
 WHERE

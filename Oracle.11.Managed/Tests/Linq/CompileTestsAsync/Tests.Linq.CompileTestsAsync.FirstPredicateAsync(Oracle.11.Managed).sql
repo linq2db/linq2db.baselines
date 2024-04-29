@@ -49,15 +49,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	c_1."Id"
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id AND ROWNUM <= :take
+	c_1."Id" = :Id AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -34,8 +34,6 @@ SELECT 1,100 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."Id",
@@ -44,12 +42,10 @@ FROM
 	"BaseTable" "x"
 WHERE
 	"x"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."Id",
@@ -58,7 +54,7 @@ FROM
 	"BaseTable" "x"
 WHERE
 	"x"."Id" = 1 AND "x"."Value" = 100
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

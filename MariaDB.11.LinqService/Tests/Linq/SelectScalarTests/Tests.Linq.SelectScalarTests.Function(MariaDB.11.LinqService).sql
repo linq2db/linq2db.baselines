@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`c_1`.`ChildID`
 FROM
 	`Child` `c_1`
-LIMIT @take
+LIMIT 1
 

@@ -60,8 +60,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -71,7 +69,7 @@ SELECT
 FROM
 	"PR_1598_Insert_Enum_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -97,8 +95,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -108,7 +104,7 @@ SELECT
 FROM
 	"PR_1598_Insert_Enum_Table" t
 WHERE
-	t."Id" = 2 AND ROWNUM <= :take
+	t."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

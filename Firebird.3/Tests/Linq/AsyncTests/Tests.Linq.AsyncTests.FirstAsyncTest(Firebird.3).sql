@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3 (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."FirstName",
@@ -13,5 +11,5 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
