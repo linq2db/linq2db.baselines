@@ -2,8 +2,6 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
-DECLARE @LastName NVarChar(8) -- String
-SET     @LastName = 'LastName'
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'F'
 
@@ -16,7 +14,7 @@ INSERT INTO "Person"
 VALUES
 (
 	?,
-	?,
+	'LastName',
 	?
 )
 

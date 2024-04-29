@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
 WHERE
-	"t1"."ID" >= 1000
+	"r"."ID" >= 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."ID",
@@ -34,13 +32,13 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" = 1001
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "r"
 WHERE
-	"t1"."ID" >= 1000
+	"r"."ID" >= 1000
 

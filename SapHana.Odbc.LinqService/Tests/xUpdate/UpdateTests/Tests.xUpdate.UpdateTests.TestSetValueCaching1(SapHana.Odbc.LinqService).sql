@@ -65,26 +65,24 @@ DECLARE @id  -- Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" "t1"
 SET
-	"UpdateSetTest"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"UpdateSetTest"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."Value1"
+	"t1"."Value1"
 FROM
-	"UpdateSetTest" "_"
+	"UpdateSetTest" "t1"
 WHERE
-	"_"."Id" = ?
-LIMIT ?
+	"t1"."Id" = ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -94,26 +92,24 @@ DECLARE @id  -- Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" "t1"
 SET
-	"UpdateSetTest"."Value1" = ?
+	"Value1" = ?
 WHERE
-	"UpdateSetTest"."Id" = ?
+	"t1"."Id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."Value1"
+	"t1"."Value1"
 FROM
-	"UpdateSetTest" "_"
+	"UpdateSetTest" "t1"
 WHERE
-	"_"."Id" = ?
-LIMIT ?
+	"t1"."Id" = ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

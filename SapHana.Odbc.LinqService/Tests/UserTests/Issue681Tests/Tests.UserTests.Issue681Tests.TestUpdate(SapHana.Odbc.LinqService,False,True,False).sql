@@ -22,11 +22,11 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Issue681Table"
+	"Issue681Table" "t1"
 SET
-	"Issue681Table"."Value" = ?
+	"Value" = ?
 WHERE
-	"Issue681Table"."ID" = ?
+	"t1"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -28,11 +28,11 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" = ?
+	"t1"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
