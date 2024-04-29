@@ -8,12 +8,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName Varchar2(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -25,9 +19,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	:FirstName,
-	:LastName,
-	:Gender
+	'John',
+	'Shepard',
+	'M'
 )
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
