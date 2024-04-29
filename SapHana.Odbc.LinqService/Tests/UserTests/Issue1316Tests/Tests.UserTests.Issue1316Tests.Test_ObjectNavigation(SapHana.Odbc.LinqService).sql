@@ -31,16 +31,14 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."ID"
+	"t1"."ID"
 FROM
-	"Issue1316Tests" "_"
+	"Issue1316Tests" "t1"
 WHERE
-	"_"."ID" = ?
-LIMIT ?
+	"t1"."ID" = ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
