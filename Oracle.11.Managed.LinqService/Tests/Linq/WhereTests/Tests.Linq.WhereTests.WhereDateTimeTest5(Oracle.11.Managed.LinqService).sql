@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Date_1 TimeStamp -- DateTime
-SET     @Date_1 = TIMESTAMP '2009-09-20 00:00:00.000000'
 
 SELECT
 	t1.ID,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	Trunc(t1."DateTimeValue", 'DD') = :Date_1
+	TRUNC(t1."DateTimeValue") = TRUNC(TO_TIMESTAMP('2009-09-20 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3'))
 

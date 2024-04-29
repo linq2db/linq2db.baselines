@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @idx Int32
-SET     @idx = 12
 
 INSERT INTO "Person"
 (
@@ -20,7 +18,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Cast(:idx as VarChar(11)),
+	CAST(12 AS VarChar(255)),
 	'M'
 )
 
@@ -28,7 +26,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 WHERE
