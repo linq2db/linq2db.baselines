@@ -15,8 +15,8 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	Cast(@FirstName as VarChar(255) CHARACTER SET UNICODE_FSS),
+	CAST(@FirstName AS VARCHAR(9)),
 	'LastName',
-	Cast(@Gender as NChar(1))
+	CAST(@Gender AS CHAR(1))
 )
 

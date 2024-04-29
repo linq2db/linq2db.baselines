@@ -3,7 +3,8 @@
 
 SELECT
 	"f"."ParentID",
-	"f"."Value1"
+	"f"."Value1",
+	'1'
 FROM
 	"Parent" "f"
 

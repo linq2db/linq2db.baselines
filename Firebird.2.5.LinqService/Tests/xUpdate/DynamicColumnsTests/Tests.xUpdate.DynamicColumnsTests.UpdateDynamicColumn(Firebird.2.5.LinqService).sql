@@ -18,7 +18,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE
@@ -28,17 +28,17 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE

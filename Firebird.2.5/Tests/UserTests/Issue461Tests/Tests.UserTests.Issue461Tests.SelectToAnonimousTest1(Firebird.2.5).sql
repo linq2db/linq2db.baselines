@@ -1,22 +1,19 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT FIRST @take
-	"l"."ParentID"
-FROM
-	"Child" "l"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	1
+	(
+		SELECT FIRST 1
+			"l"."ParentID" + 1
+		FROM
+			"Child" "l"
+	),
+	(
+		SELECT FIRST 1
+			"l_1"."ParentID" + 1
+		FROM
+			"Child" "l_1"
+	)
 FROM
 	"Parent" "sep"
 
