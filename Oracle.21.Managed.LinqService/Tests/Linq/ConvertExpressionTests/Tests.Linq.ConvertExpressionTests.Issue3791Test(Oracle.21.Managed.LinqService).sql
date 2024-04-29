@@ -102,7 +102,7 @@ SELECT
 	a_Association."Id"
 FROM
 	"Issue3791Table" t1
-		LEFT JOIN "Issue3791GuidTable" a_Association ON (t1."OtherId" = CAST(a_Association."Id" AS VarChar(255)) OR t1."OtherId" IS NULL AND CAST(a_Association."Id" AS VarChar(255)) IS NULL)
+		LEFT JOIN "Issue3791GuidTable" a_Association ON t1."OtherId" = CAST(a_Association."Id" AS VarChar(255))
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

@@ -9,12 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'John'
-DECLARE @LastName NVarChar(4000) -- String
-SET     @LastName = N'Shepard'
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -24,9 +18,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	N'John',
+	N'Shepard',
+	N'M'
 )
 
 SELECT SCOPE_IDENTITY()

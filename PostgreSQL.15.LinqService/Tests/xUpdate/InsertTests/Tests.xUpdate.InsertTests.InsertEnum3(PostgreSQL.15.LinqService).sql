@@ -10,8 +10,6 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
@@ -21,7 +19,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	:ParentID,
-	:Value1
+	1
 )
 
 BeforeExecute

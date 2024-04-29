@@ -6,7 +6,7 @@ SELECT
 	`t1`.`ChildID`
 FROM
 	`GrandChild` `p`
-		LEFT JOIN `Child` `a_Child` ON (`p`.`ParentID` = `a_Child`.`ParentID` OR `p`.`ParentID` IS NULL AND `a_Child`.`ParentID` IS NULL) AND (`p`.`ChildID` = `a_Child`.`ChildID` OR `p`.`ChildID` IS NULL AND `a_Child`.`ChildID` IS NULL)
+		LEFT JOIN `Child` `a_Child` ON `p`.`ParentID` = `a_Child`.`ParentID` AND `p`.`ChildID` = `a_Child`.`ChildID`
 		LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`
 		LEFT JOIN LATERAL (
 			SELECT

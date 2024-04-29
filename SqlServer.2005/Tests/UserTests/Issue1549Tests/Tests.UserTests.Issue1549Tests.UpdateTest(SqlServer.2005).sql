@@ -112,7 +112,7 @@ FROM
 				[w].[DevTypeId]
 			FROM
 				[billing_DevReadingType] [w]
-		) [t1] ON ([t1].[Name] = [t3].[ReadingTypeName] OR [t1].[Name] IS NULL AND [t3].[ReadingTypeName] IS NULL) AND ([t1].[DevTypeId] = [t3].[Devtypeid] OR [t1].[DevTypeId] IS NULL AND [t3].[Devtypeid] IS NULL) AND [t1].[rn] <= 1
+		) [t1] ON [t1].[Name] = [t3].[ReadingTypeName] AND [t1].[DevTypeId] = [t3].[Devtypeid] AND [t1].[rn] <= 1
 		LEFT JOIN (
 			SELECT
 				[w_1].[Responsibility],
@@ -121,7 +121,7 @@ FROM
 				[w_1].[DevTypeId]
 			FROM
 				[billing_DevReadingType] [w_1]
-		) [t2] ON ([t2].[Name] = [t3].[ReadingTypeName] OR [t2].[Name] IS NULL AND [t3].[ReadingTypeName] IS NULL) AND ([t2].[DevTypeId] = [t3].[Devtypeid] OR [t2].[DevTypeId] IS NULL AND [t3].[Devtypeid] IS NULL) AND [t2].[rn] <= 1
+		) [t2] ON [t2].[Name] = [t3].[ReadingTypeName] AND [t2].[DevTypeId] = [t3].[Devtypeid] AND [t2].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005

@@ -18,7 +18,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -28,11 +28,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" = @id
+	"t1"."ParentID" = @id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

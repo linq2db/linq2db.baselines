@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -12,7 +10,7 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	@ParentID,
+	1,
 	@id
 )
 

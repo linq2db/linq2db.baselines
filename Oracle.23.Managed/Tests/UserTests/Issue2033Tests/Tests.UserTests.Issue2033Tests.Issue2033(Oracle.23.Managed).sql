@@ -1224,15 +1224,15 @@ AS
 	FROM
 		"FilterByTestOperation" t3
 			LEFT JOIN SITE site_1 ON (site_1.SITE = t3."Parent_Site" OR site_1.SITE IS NULL AND t3."Parent_Site" IS NULL)
-			LEFT JOIN USR usr_1 ON (usr_1.HANDLE = t3."Parent_UserBo" OR usr_1.HANDLE IS NULL AND t3."Parent_UserBo" IS NULL)
-			LEFT JOIN SHOP_ORDER shopOrder ON (shopOrder.HANDLE = t3."Parent_ShopOrderBo" OR shopOrder.HANDLE IS NULL AND t3."Parent_ShopOrderBo" IS NULL)
-			LEFT JOIN RESRCE resrce_1 ON (resrce_1.HANDLE = t3."Parent_ResourceBo" OR resrce_1.HANDLE IS NULL AND t3."Parent_ResourceBo" IS NULL)
-			LEFT JOIN WORK_CENTER workCenter ON (workCenter.HANDLE = t3."Parent_WorkCenterBo" OR workCenter.HANDLE IS NULL AND t3."Parent_WorkCenterBo" IS NULL)
+			LEFT JOIN USR usr_1 ON usr_1.HANDLE = t3."Parent_UserBo"
+			LEFT JOIN SHOP_ORDER shopOrder ON shopOrder.HANDLE = t3."Parent_ShopOrderBo"
+			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = t3."Parent_ResourceBo"
+			LEFT JOIN WORK_CENTER workCenter ON workCenter.HANDLE = t3."Parent_WorkCenterBo"
 			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON (workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = t3."Parent_WorkCenterBo" OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND t3."Parent_WorkCenterBo" IS NULL)
-			LEFT JOIN WORK_CENTER line ON (line.HANDLE = workCenterMember.WORK_CENTER_BO OR line.HANDLE IS NULL AND workCenterMember.WORK_CENTER_BO IS NULL)
-			LEFT JOIN ITEM item_1 ON (item_1.HANDLE = t3."Parent_ItemBo" OR item_1.HANDLE IS NULL AND t3."Parent_ItemBo" IS NULL)
+			LEFT JOIN WORK_CENTER line ON line.HANDLE = workCenterMember.WORK_CENTER_BO
+			LEFT JOIN ITEM item_1 ON item_1.HANDLE = t3."Parent_ItemBo"
 			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON (itemGroupMember.ITEM_BO = t3."Parent_ItemBo" OR itemGroupMember.ITEM_BO IS NULL AND t3."Parent_ItemBo" IS NULL)
-			LEFT JOIN ITEM_GROUP itemGroup ON (itemGroup.HANDLE = itemGroupMember.ITEM_GROUP_BO OR itemGroup.HANDLE IS NULL AND itemGroupMember.ITEM_GROUP_BO IS NULL)
+			LEFT JOIN ITEM_GROUP itemGroup ON itemGroup.HANDLE = itemGroupMember.ITEM_GROUP_BO
 			LEFT JOIN CUSTOM_FIELDS customField ON (customField.HANDLE = t3."Parent_ItemBo" OR customField.HANDLE IS NULL AND t3."Parent_ItemBo" IS NULL) AND customField.ATTRIBUTE = 'PRODUCT_LINE'
 			LEFT JOIN CUSTOM_FIELDS customField2 ON (customField2.HANDLE = t3."Parent_ItemBo" OR customField2.HANDLE IS NULL AND t3."Parent_ItemBo" IS NULL) AND customField2.ATTRIBUTE = 'SPART'
 			LEFT JOIN CUSTOM_FIELDS customField3 ON customField3.HANDLE = t3."RouterOperationBo" AND customField3.ATTRIBUTE = 'TEST_CATEGORY'

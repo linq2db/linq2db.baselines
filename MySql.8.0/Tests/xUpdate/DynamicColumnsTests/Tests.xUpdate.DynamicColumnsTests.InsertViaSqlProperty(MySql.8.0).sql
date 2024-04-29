@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -12,7 +10,7 @@ INSERT INTO `Child`
 )
 VALUES
 (
-	@ParentID,
+	1,
 	@id
 )
 

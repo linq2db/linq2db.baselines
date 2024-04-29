@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'John'
-DECLARE @LastName NVarChar(4000) -- String
-SET     @LastName = N'Limonadovy'
-DECLARE @Gender NChar(1) -- StringFixedLength
-SET     @Gender = N'M'
 
 INSERT INTO [Person]
 (
@@ -15,9 +9,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	N'John',
+	N'Limonadovy',
+	N'M'
 )
 
 BeforeExecute

@@ -10,8 +10,6 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
-DECLARE @Value1 Int32
-SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
@@ -21,7 +19,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	:ParentID,
-	:Value1
+	1
 )
 
 BeforeExecute

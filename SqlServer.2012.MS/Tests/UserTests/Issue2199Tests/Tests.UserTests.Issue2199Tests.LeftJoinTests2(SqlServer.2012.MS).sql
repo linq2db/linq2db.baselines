@@ -51,7 +51,7 @@ SELECT
 	[m_2].[Name_1]
 FROM
 	[Manufacturer] [t1]
-		LEFT JOIN [Country] [co] ON ([co].[Code] = [t1].[CountryCode] OR [co].[Code] IS NULL AND [t1].[CountryCode] IS NULL)
+		LEFT JOIN [Country] [co] ON [co].[Code] = [t1].[CountryCode]
 		LEFT JOIN (
 			SELECT
 				[m_1].[ManufacturerId],
@@ -61,7 +61,7 @@ FROM
 				[co_1].[Name] as [Name_1]
 			FROM
 				[Manufacturer] [m_1]
-					LEFT JOIN [Country] [co_1] ON ([co_1].[Code] = [m_1].[CountryCode] OR [co_1].[Code] IS NULL AND [m_1].[CountryCode] IS NULL)
+					LEFT JOIN [Country] [co_1] ON [co_1].[Code] = [m_1].[CountryCode]
 			WHERE
 				[m_1].[ManufacturerId] = 2
 		) [m_2] ON 1=1

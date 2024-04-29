@@ -38,7 +38,7 @@ SELECT
 	`a_Association`.`Id`
 FROM
 	`Issue3791Table` `t1`
-		LEFT JOIN `Issue3791GuidTable` `a_Association` ON (`t1`.`OtherId` = CAST(`a_Association`.`Id` AS CHAR(36)) OR `t1`.`OtherId` IS NULL AND CAST(`a_Association`.`Id` AS CHAR(36)) IS NULL)
+		LEFT JOIN `Issue3791GuidTable` `a_Association` ON `t1`.`OtherId` = CAST(`a_Association`.`Id` AS CHAR(36))
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
