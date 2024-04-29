@@ -11,8 +11,7 @@ FROM
 	Person t1
 ORDER BY
 	CASE
-		WHEN t1.PersonID IN (toInt32(1), toInt32(3))
-			THEN true
+		WHEN t1.PersonID IN (1, 3) THEN true
 		ELSE false
 	END
 

@@ -3,8 +3,7 @@
 
 SELECT
 	CASE
-		WHEN p.PersonID = toInt32(1)
-			THEN true
+		WHEN p.PersonID = 1 THEN true
 		ELSE false
 	END
 FROM
