@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -21,7 +19,7 @@ INSERT INTO `Child`
 )
 VALUES
 (
-	@ParentID,
+	1,
 	@id
 )
 

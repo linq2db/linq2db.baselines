@@ -137,5 +137,14 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
+SELECT
+	`t1`.`Id`,
+	`t1`.`Text`
+FROM
+	`Issue2816Table` `t1`
+
+BeforeExecute
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+
 DROP TABLE IF EXISTS `Issue2816Table`
 
