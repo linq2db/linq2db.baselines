@@ -309,7 +309,7 @@ SELECT
 	[a_Parent].[Value]
 FROM
 	[SubItem1] [s]
-		LEFT JOIN [MainItem] [a_Parent] ON ([s].[ParentId] = [a_Parent].[Id] OR [s].[ParentId] IS NULL AND [a_Parent].[Id] IS NULL) AND [a_Parent].[Id] % 3 = 0
+		LEFT JOIN [MainItem] [a_Parent] ON [s].[ParentId] = [a_Parent].[Id] AND [a_Parent].[Id] % 3 = 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

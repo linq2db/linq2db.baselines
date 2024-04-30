@@ -16,26 +16,12 @@ CREATE TABLE [xxPatient]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC1'
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 1
-
-UPDATE
-	[xxPatient]
-SET
-	[Diagnosis] = @Diagnosis
-WHERE
-	[xxPatient].[PersonID] = @PersonID
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO [xxPatient]
+INSERT INTO [xxPatient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -45,20 +31,8 @@ VALUES
 	@PersonID,
 	@Diagnosis
 )
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC2'
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 2
-
-UPDATE
-	[xxPatient]
-SET
+ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
-WHERE
-	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -67,7 +41,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO [xxPatient]
+INSERT INTO [xxPatient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -77,48 +51,62 @@ VALUES
 	@PersonID,
 	@Diagnosis
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = @Diagnosis
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'ABC1'
 
-UPDATE
-	[xxPatient]
-SET
+INSERT INTO [xxPatient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
-WHERE
-	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'ABC2'
 
-UPDATE
-	[xxPatient]
-SET
+INSERT INTO [xxPatient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
-WHERE
-	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

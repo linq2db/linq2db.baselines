@@ -234,7 +234,7 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON ([d_1].[ParentId] = [a_ParentSubItem].[Id] OR [d_1].[ParentId] IS NULL AND [a_ParentSubItem].[Id] IS NULL)
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -330,7 +330,7 @@ FROM
 			([d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL)
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON ([d_1].[ParentId] = [a_ParentSubItem].[Id] OR [d_1].[ParentId] IS NULL AND [a_ParentSubItem].[Id] IS NULL)
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -377,7 +377,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON ([d].[ParentId] = [a_Parent].[Id] OR [d].[ParentId] IS NULL AND [a_Parent].[Id] IS NULL)
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 WHERE
 	([d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL)
 
@@ -431,7 +431,7 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON ([d_1].[ParentId] = [a_ParentSubItem].[Id] OR [d_1].[ParentId] IS NULL AND [a_ParentSubItem].[Id] IS NULL)
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -476,7 +476,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON ([d].[ParentId] = [a_Parent].[Id] OR [d].[ParentId] IS NULL AND [a_Parent].[Id] IS NULL)
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 
 BeforeExecute
 DisposeTransaction

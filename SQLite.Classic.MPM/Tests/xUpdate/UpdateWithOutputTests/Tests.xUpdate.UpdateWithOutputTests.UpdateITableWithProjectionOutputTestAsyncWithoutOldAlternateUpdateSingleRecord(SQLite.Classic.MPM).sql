@@ -74,13 +74,13 @@ BeforeExecute
 UPDATE
 	[DestinationTable]
 SET
-	[Id] = [_].[Id],
-	[Value] = [_].[Value],
-	[ValueStr] = [_].[ValueStr]
+	[Id] = [t1].[Id],
+	[Value] = [t1].[Value],
+	[ValueStr] = [t1].[ValueStr]
 FROM
-	[TableWithData] [_]
+	[TableWithData] [t1]
 WHERE
-	[_].[Id] = 3 AND [DestinationTable].[Id] = [_].[Id]
+	[t1].[Id] = 3 AND [DestinationTable].[Id] = [t1].[Id]
 RETURNING
 	[DestinationTable].[Value]
 
