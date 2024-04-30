@@ -133,22 +133,20 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[Id],
-	[_].[Property1],
-	[_].[Property2],
-	[_].[Property3],
-	[_].[Property4],
-	[_].[Property5],
-	[_].[Property6]
+	[t1].[Id],
+	[t1].[Property1],
+	[t1].[Property2],
+	[t1].[Property3],
+	[t1].[Property4],
+	[t1].[Property5],
+	[t1].[Property6]
 FROM
-	[EnumCardinality] [_]
+	[EnumCardinality] [t1]
 WHERE
-	[_].[Property4] >= 'C'
-LIMIT @take
+	[t1].[Property4] >= 'C'
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite
