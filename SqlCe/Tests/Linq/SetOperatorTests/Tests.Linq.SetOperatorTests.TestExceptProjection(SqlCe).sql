@@ -41,9 +41,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[r].[Id],
-	[r].[Value1] as [Value_1],
-	[r].[Value1] as [Value_2]
+	[r].[Value1] as [Value_1]
 FROM
 	[SampleData] [r]
 WHERE
