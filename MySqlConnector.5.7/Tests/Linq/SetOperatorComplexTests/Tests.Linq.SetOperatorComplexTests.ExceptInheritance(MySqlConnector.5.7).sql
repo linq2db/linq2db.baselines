@@ -106,12 +106,6 @@ BeforeExecute
 
 SELECT DISTINCT
 	`t1`.`BookId`,
-	`t1`.`BookId`,
-	`t1`.`Discriminator`,
-	`t1`.`BookName`,
-	`t1`.`RomanScore`,
-	`t1`.`NovelScore`,
-	`t1`.`BookId`,
 	`t1`.`Discriminator`,
 	`t1`.`BookName`,
 	`t1`.`NovelScore`,

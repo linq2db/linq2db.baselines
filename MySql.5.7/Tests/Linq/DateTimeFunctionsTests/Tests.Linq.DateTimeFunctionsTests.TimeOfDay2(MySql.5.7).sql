@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Cast(`t`.`DateTimeValue` as Time)
+	CAST(`t`.`DateTimeValue` AS TIME)
 FROM
 	`LinqDataTypes` `t`
 
