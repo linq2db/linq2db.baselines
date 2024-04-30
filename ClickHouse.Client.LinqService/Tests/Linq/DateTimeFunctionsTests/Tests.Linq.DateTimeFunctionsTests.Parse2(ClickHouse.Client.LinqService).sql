@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDateTime64(concat(toString(YEAR(t.DateTimeValue)), '-02-24 00:00:00'), toUInt8(7))
+	toDateTime64(concat(toString(toYear(d.DateTimeValue)), '-02-24 00:00:00'), toUInt8(7))
 FROM
-	LinqDataTypes t
+	LinqDataTypes d
 WHERE
-	DAY(toDateTime64(concat(toString(YEAR(t.DateTimeValue)), '-02-24 00:00:00'), toUInt8(7))) > toInt32(0)
+	toDayOfMonth(toDateTime64(concat(toString(toYear(d.DateTimeValue)), '-02-24 00:00:00'), toUInt8(7))) > 0
 

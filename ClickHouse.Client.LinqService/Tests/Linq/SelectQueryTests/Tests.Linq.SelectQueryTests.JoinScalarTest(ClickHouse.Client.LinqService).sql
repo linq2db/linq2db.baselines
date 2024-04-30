@@ -23,8 +23,8 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(100)
+	1,
+	100
 )
 
 BeforeExecute
@@ -33,13 +33,9 @@ BeforeExecute
 SELECT
 	t.Id,
 	t.Value,
-	s.c1
+	1
 FROM
 	SampleClass t
-		INNER JOIN (
-			SELECT
-				toInt32(1) as c1
-		) s ON s.c1 = t.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

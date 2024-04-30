@@ -28,23 +28,21 @@ INSERT INTO SampleClass
 	Value4
 )
 VALUES
-(toInt32(1),'V1','V2',NULL,'V4'),
-(toInt32(2),NULL,'Z2',NULL,NULL),
-(toInt32(3),'Z1',NULL,NULL,'Z4')
+(1,'V1','V2',NULL,'V4'),
+(2,NULL,'Z2',NULL,NULL),
+(3,'Z1',NULL,NULL,'Z4')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	maxOrNull(t1.Value4),
-	arrayStringConcat(groupArray(t1.Value4), ' => ')
+	maxOrNull(g_1.Value4),
+	arrayStringConcat(groupArray(g_1.Value4), ' => ')
 FROM
-	SampleClass t1
+	SampleClass g_1
 GROUP BY
-	t1.Id,
-	t1.Value4
-ORDER BY
-	t1.Id
+	g_1.Id,
+	g_1.Value4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
