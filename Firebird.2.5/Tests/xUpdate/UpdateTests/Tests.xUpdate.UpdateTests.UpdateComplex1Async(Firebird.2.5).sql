@@ -27,22 +27,20 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@Gender,
-	@Name_FirstName,
-	@Name_MiddleName,
-	@Name_LastName
+	CAST(@Gender AS CHAR(1)),
+	CAST(@Name_FirstName AS VARCHAR(13)),
+	CAST(@Name_MiddleName AS VARCHAR(1)),
+	CAST(@Name_LastName AS VARCHAR(5))
 )
 RETURNING
 	"PersonID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",
@@ -67,23 +65,21 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 6
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = @Gender,
-	"Person"."FirstName" = @Name_FirstName,
-	"Person"."MiddleName" = @Name_MiddleName,
-	"Person"."LastName" = @Name_LastName
+	"Gender" = CAST(@Gender AS CHAR(1)),
+	"FirstName" = CAST(@Name_FirstName AS VARCHAR(13)),
+	"MiddleName" = CAST(@Name_MiddleName AS VARCHAR(1)),
+	"LastName" = CAST(@Name_LastName AS VARCHAR(13))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @id Integer -- Int32
 SET     @id = 6
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."PersonID",
 	"t1"."Gender",
 	"t1"."FirstName",

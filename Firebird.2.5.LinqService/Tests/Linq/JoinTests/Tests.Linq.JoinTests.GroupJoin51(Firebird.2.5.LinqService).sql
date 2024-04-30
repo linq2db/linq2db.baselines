@@ -2,52 +2,47 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"gjd_ch"."ParentID",
-	"gjd_ch"."ChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
+			"t1"."ParentID"
 		FROM
-			"Parent" "p"
+			"Parent" "t1"
 		WHERE
-			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "gjd_ch" ON "gjd_ch"."ParentID" = "key_data_result"."ParentID"
+			"t1"."ParentID" = 1
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
+			"t1"."ParentID"
 		FROM
-			"Parent" "p"
+			"Parent" "t1"
 		WHERE
-			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "ch" ON "ch"."ParentID" = "key_data_result"."ParentID"
+			"t1"."ParentID" = 1
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 ORDER BY
-	"ch"."ChildID" DESC
+	"d"."ChildID" DESC
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID"
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 WHERE
-	"p"."ParentID" = 1
+	"t1"."ParentID" = 1
 

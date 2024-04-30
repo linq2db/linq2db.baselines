@@ -24,7 +24,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Boolean Char(1) -- String
+DECLARE @Boolean Char -- String
 SET     @Boolean = '0'
 
 INSERT INTO "CreateTableTypes"
@@ -34,15 +34,15 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@Boolean
+	CAST(@Id AS Int),
+	CAST(@Boolean AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Boolean Char(1) -- String
+DECLARE @Boolean Char -- String
 SET     @Boolean = '1'
 
 INSERT INTO "CreateTableTypes"
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	@Id,
-	@Boolean
+	CAST(@Id AS Int),
+	CAST(@Boolean AS CHAR(1))
 )
 
 BeforeExecute

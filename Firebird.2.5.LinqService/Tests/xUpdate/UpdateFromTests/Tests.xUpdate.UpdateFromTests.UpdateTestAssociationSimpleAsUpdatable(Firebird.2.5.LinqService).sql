@@ -48,11 +48,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -78,11 +78,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -108,11 +108,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -138,11 +138,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	@id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@RelationId
+	CAST(@id AS Int),
+	CAST(@Value1 AS Int),
+	CAST(@Value2 AS Int),
+	CAST(@Value3 AS Int),
+	CAST(@RelationId AS Int)
 )
 
 BeforeExecute
@@ -191,10 +191,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	@id,
-	@RelatedValue1,
-	@RelatedValue2,
-	@RelatedValue3
+	CAST(@id AS Int),
+	CAST(@RelatedValue1 AS Int),
+	CAST(@RelatedValue2 AS Int),
+	CAST(@RelatedValue3 AS Int)
 )
 
 BeforeExecute
@@ -217,10 +217,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	@id,
-	@RelatedValue1,
-	@RelatedValue2,
-	@RelatedValue3
+	CAST(@id AS Int),
+	CAST(@RelatedValue1 AS Int),
+	CAST(@RelatedValue2 AS Int),
+	CAST(@RelatedValue3 AS Int)
 )
 
 BeforeExecute
@@ -243,10 +243,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	@id,
-	@RelatedValue1,
-	@RelatedValue2,
-	@RelatedValue3
+	CAST(@id AS Int),
+	CAST(@RelatedValue1 AS Int),
+	CAST(@RelatedValue2 AS Int),
+	CAST(@RelatedValue3 AS Int)
 )
 
 BeforeExecute
@@ -269,10 +269,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	@id,
-	@RelatedValue1,
-	@RelatedValue2,
-	@RelatedValue3
+	CAST(@id AS Int),
+	CAST(@RelatedValue1 AS Int),
+	CAST(@RelatedValue2 AS Int),
+	CAST(@RelatedValue3 AS Int)
 )
 
 BeforeExecute
@@ -281,9 +281,9 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value3" = 1
+	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT
@@ -297,10 +297,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"v"."Value1",
 	"v"."Value2",
 	"v"."Value3"

@@ -40,7 +40,7 @@ END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Has Char(1) -- String
+DECLARE @Has Char -- String
 SET     @Has = '1'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -51,19 +51,17 @@ INSERT INTO "Issue1438"
 )
 VALUES
 (
-	@Has
+	CAST(@Has AS CHAR(1))
 )
 RETURNING
 	"Id"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Has"
 FROM
