@@ -47,13 +47,10 @@ END
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
-	"t1"."Lics",
 	(
 		SELECT
 			LIST("x"."Id")
@@ -62,15 +59,13 @@ SELECT
 		WHERE
 			"x"."CardTypeId" = "t1"."CardTypeId" AND ("x"."CardNumber" = "t1"."CardNumber" OR "x"."CardNumber" IS NULL AND "t1"."CardNumber" IS NULL) AND
 			"x"."TypeId" = 2
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Person2562" "t1"
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"person"."CardNumber",
@@ -83,7 +78,7 @@ SELECT
 		WHERE
 			"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
 			"x"."TypeId" = 2
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Person2562" "person"

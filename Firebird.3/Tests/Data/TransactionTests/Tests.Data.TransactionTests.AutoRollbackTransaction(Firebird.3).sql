@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
-	@Value1
+	CAST(@ParentID AS Int),
+	CAST(@Value1 AS Int)
 )
 
 BeforeExecute
@@ -22,18 +22,16 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
-	"Parent"
+	"Parent" "t"
 SET
-	"Parent"."Value1" = 1012
+	"Value1" = 1012
 WHERE
-	"Parent"."ParentID" = 1010
+	"t"."ParentID" = 1010
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."ParentID",
@@ -42,5 +40,5 @@ FROM
 	"Parent" "t"
 WHERE
 	"t"."ParentID" = 1010
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
