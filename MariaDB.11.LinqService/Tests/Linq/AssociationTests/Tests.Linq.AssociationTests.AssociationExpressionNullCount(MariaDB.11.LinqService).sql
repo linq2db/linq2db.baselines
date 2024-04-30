@@ -70,9 +70,10 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`NotNullParent` `p`
+		LEFT JOIN `NotNullChild` `a_ChildOuter` ON `p`.`ID` = `a_ChildOuter`.`ParentID`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

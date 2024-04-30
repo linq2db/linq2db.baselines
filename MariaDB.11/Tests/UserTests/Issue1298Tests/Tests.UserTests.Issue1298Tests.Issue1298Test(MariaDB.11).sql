@@ -108,9 +108,7 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 2
+SET     @take = 2
 
 SELECT
 	`x`.`ref1`,
@@ -121,11 +119,11 @@ SELECT
 			`qwerty` `q`
 		WHERE
 			`q`.`Id` = `x`.`ref1`
-		LIMIT @take
+		LIMIT 1
 	)
 FROM
 	`mega_composites` `x`
-LIMIT @take_1
+LIMIT @take
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
