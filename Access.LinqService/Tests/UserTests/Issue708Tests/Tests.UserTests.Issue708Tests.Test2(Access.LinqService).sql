@@ -4,18 +4,18 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Child] [_]
+	[Child] [t1]
 WHERE
-	[_].[ParentID] IN (
+	[t1].[ParentID] IN (
 		SELECT
-			[_1].[ParentID]
+			[t2].[ParentID]
 		FROM
-			[Parent] [_1]
+			[Parent] [t2]
 		WHERE
-			[_1].[ParentID] = @id
+			[t2].[ParentID] = @id
 	) AND
-	[_].[ChildID] >= 0 AND [_].[ChildID] <= 100
+	[t1].[ChildID] >= 0 AND [t1].[ChildID] <= 100
 

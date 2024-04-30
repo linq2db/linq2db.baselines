@@ -30,39 +30,39 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE '%stString' AND InStr(LEN([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'stString', 0) = (LEN([r].[CaseSensitive]) - 7)
+	[r].[CaseSensitive] LIKE '%stString' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'stString', 0) = (Len([r].[CaseSensitive]) - 7)
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE '%stString' AND InStr(LEN([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'stString', 0) = (LEN([r].[CaseInsensitive]) - 7)
+	[r].[CaseInsensitive] LIKE '%stString' AND InStr(Len([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'stString', 0) = (Len([r].[CaseInsensitive]) - 7)
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE '%ststring' AND InStr(LEN([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'ststring', 0) = (LEN([r].[CaseSensitive]) - 7)
+	[r].[CaseSensitive] LIKE '%ststring' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'ststring', 0) = (Len([r].[CaseSensitive]) - 7)
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseInsensitive] LIKE '%ststring' AND InStr(LEN([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'ststring', 0) = (LEN([r].[CaseInsensitive]) - 7)
+	[r].[CaseInsensitive] LIKE '%ststring' AND InStr(Len([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'ststring', 0) = (Len([r].[CaseInsensitive]) - 7)
 

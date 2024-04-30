@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @value2 Int -- Int32
+DECLARE @value2 VarChar(5, 0) -- AnsiString
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
@@ -68,9 +68,9 @@ DECLARE @id Int -- Int32
 SET     @id = 100500
 
 SELECT TOP 1
-	[_].[SmallIntValue]
+	[t1].[SmallIntValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[ID] = ?
+	[t1].[ID] = ?
 
