@@ -15,7 +15,7 @@ USING (
 				*
 			FROM
 				[GrandChild] [g_1]
-					LEFT JOIN [Child] [a_Child] ON ([g_1].[ParentID] = [a_Child].[ParentID] OR [g_1].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([g_1].[ChildID] = [a_Child].[ChildID] OR [g_1].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
+					LEFT JOIN [Child] [a_Child] ON [g_1].[ParentID] = [a_Child].[ParentID] AND [g_1].[ChildID] = [a_Child].[ChildID]
 			WHERE
 				[t].[ParentID] = [g_1].[ParentID] AND [t].[ChildID] = [g_1].[ChildID] AND
 				[a_Child].[ChildID] = 22
@@ -53,7 +53,7 @@ EXISTS(
 		*
 	FROM
 		[GrandChild] [g_2]
-			LEFT JOIN [Child] [a_Child_1] ON ([g_2].[ParentID] = [a_Child_1].[ParentID] OR [g_2].[ParentID] IS NULL AND [a_Child_1].[ParentID] IS NULL) AND ([g_2].[ChildID] = [a_Child_1].[ChildID] OR [g_2].[ChildID] IS NULL AND [a_Child_1].[ChildID] IS NULL)
+			LEFT JOIN [Child] [a_Child_1] ON [g_2].[ParentID] = [a_Child_1].[ParentID] AND [g_2].[ChildID] = [a_Child_1].[ChildID]
 	WHERE
 		[Target].[ParentID] = [g_2].[ParentID] AND [Target].[ChildID] = [g_2].[ChildID] AND
 		[a_Child_1].[ChildID] = 22
