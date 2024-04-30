@@ -7,9 +7,9 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID IN (
+	EXISTS(
 		SELECT
-			t1.ParentID
+			*
 		FROM
 			(
 				SELECT SKIP 1 FIRST 100
@@ -17,5 +17,7 @@ WHERE
 				FROM
 					Parent p
 			) t1
+		WHERE
+			c_1.ParentID = t1.ParentID
 	)
 

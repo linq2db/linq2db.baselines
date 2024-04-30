@@ -38,7 +38,7 @@ SELECT
 	a_Association.Id
 FROM
 	Issue3791Table t1
-		LEFT JOIN Issue3791GuidTable a_Association ON (t1.OtherId = a_Association.Id::NVarChar(36) OR t1.OtherId IS NULL AND a_Association.Id::NVarChar(36) IS NULL)
+		LEFT JOIN Issue3791GuidTable a_Association ON t1.OtherId = a_Association.Id::NVarChar(36)
 
 BeforeExecute
 -- Informix.DB2 Informix
