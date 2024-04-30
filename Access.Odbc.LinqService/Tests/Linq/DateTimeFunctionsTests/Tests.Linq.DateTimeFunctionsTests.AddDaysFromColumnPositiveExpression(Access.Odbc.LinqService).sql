@@ -42,21 +42,23 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 DateTime
-SET     @Parameter1 = #2018-01-02#
+DECLARE @part1 SmallInt -- Int16
+SET     @part1 = 4
+DECLARE @part2 Int -- Int32
+SET     @part2 = 4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) > ?
+	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + CVar(?)) - CVar(?), [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 
