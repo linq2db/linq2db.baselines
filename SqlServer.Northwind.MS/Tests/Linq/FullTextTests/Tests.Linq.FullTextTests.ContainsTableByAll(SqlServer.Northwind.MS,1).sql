@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
+DECLARE @search NVarChar(4000) -- String
+SET     @search = N'seafood OR bread'
 
 SELECT
 	[c_1].[CategoryID],
@@ -8,7 +10,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN FREETEXTTABLE([Categories], *, N'seafood bread', LANGUAGE 1062) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN CONTAINSTABLE([Categories], *, @search) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 
