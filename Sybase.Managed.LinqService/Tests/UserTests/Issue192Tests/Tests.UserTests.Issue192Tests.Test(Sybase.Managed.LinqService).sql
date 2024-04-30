@@ -65,21 +65,21 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'N'
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'Y'
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -87,151 +87,131 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -239,13 +219,13 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -253,13 +233,13 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT TOP 1
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- Sybase.Managed Sybase

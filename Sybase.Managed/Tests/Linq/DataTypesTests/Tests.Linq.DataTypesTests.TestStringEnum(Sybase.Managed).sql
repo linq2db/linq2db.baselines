@@ -31,9 +31,9 @@ SELECT 2,'value=2','value=33'
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Column Unsupported -- Guid
+DECLARE @Column UniVarChar(7) -- String
 SET     @Column = 'value=2'
-DECLARE @ColumnNullable Unsupported -- Guid
+DECLARE @ColumnNullable UniVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT

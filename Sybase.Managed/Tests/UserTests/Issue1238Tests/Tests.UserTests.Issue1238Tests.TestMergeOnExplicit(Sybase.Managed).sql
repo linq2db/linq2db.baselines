@@ -12,19 +12,19 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (
-	SELECT 143 AS [Key1], NULL AS [Key2], 1 AS [Data_1]) [Source]
+	SELECT 143 AS [source_Key1], NULL AS [source_Key2], 1 AS [source_Data]) [Source]
 (
-	[Key1],
-	[Key2],
-	[Data_1]
+	[source_Key1],
+	[source_Key2],
+	[source_Data]
 )
-ON ([Target].[InheritanceParentId] = [Source].[Key1] AND
-([Target].[Name] = [Source].[Key2] OR [Target].[Name] IS NULL AND [Source].[Key2] IS NULL))
+ON ([Target].[InheritanceParentId] = [Source].[source_Key1] AND
+([Target].[Name] = [Source].[source_Key2] OR [Target].[Name] IS NULL AND [Source].[source_Key2] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[TypeDiscriminator] = [Source].[Data_1]
+	[TypeDiscriminator] = [Source].[source_Data]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -35,16 +35,16 @@ INSERT
 )
 VALUES
 (
-	[Source].[Key1],
-	[Source].[Key2],
-	[Source].[Data_1]
+	[Source].[source_Key1],
+	[Source].[source_Key2],
+	[Source].[source_Data]
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -53,19 +53,19 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (
-	SELECT 143 AS [Key1], NULL AS [Key2], 1 AS [Data_1]) [Source]
+	SELECT 143 AS [source_Key1], NULL AS [source_Key2], 1 AS [source_Data]) [Source]
 (
-	[Key1],
-	[Key2],
-	[Data_1]
+	[source_Key1],
+	[source_Key2],
+	[source_Data]
 )
-ON ([Target].[InheritanceParentId] = [Source].[Key1] AND
-([Target].[Name] = [Source].[Key2] OR [Target].[Name] IS NULL AND [Source].[Key2] IS NULL))
+ON ([Target].[InheritanceParentId] = [Source].[source_Key1] AND
+([Target].[Name] = [Source].[source_Key2] OR [Target].[Name] IS NULL AND [Source].[source_Key2] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[TypeDiscriminator] = [Source].[Data_1]
+	[TypeDiscriminator] = [Source].[source_Data]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -76,16 +76,16 @@ INSERT
 )
 VALUES
 (
-	[Source].[Key1],
-	[Source].[Key2],
-	[Source].[Data_1]
+	[Source].[source_Key1],
+	[Source].[source_Key2],
+	[Source].[source_Data]
 )
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

@@ -1,21 +1,19 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Date DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[DateTimeValue2],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[SmallIntValue],
+	[t1].[IntValue],
+	[t1].[BigIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	Convert(Date, [_].[DateTimeValue]) = @Date
+	CONVERT(Date, [t1].[DateTimeValue]) = CONVERT(Date, CAST('2009-09-20' AS DateTime))
 

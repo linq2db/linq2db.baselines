@@ -3,9 +3,9 @@
 
 DELETE FROM [Person]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -23,7 +23,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Convert(NVarChar(11), Len(@name) + @idx),
+	CAST(Len(@name) + @idx AS NVarChar(11)),
 	'M'
 )
 
@@ -31,18 +31,18 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
