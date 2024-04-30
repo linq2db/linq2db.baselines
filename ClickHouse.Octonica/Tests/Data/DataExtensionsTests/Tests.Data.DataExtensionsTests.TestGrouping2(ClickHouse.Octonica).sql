@@ -2,65 +2,24 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.FirstName
+	m_1.FirstName,
+	d.PersonID
 FROM
-	Person t1
+	(
+		SELECT DISTINCT
+			g_1.FirstName as FirstName
+		FROM
+			Person g_1
+	) m_1
+		INNER JOIN Person d ON m_1.FirstName = d.FirstName
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	g_1.FirstName
+FROM
+	Person g_1
 GROUP BY
-	t1.FirstName
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.FirstName = 'Tester'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.FirstName = 'John'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.FirstName = 'Jane'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	keyParam.FirstName,
-	keyParam.PersonID,
-	keyParam.LastName,
-	keyParam.MiddleName,
-	keyParam.Gender
-FROM
-	Person keyParam
-WHERE
-	keyParam.FirstName = 'Jürgen'
+	g_1.FirstName
 

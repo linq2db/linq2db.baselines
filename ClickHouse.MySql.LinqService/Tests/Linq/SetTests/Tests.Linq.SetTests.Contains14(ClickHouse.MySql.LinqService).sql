@@ -3,16 +3,16 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN 1 IN (
 			SELECT
-				*
+				p.ParentID
 			FROM
 				Parent p
 			WHERE
-				p.ParentID = toInt32(1) AND p.ParentID = toInt32(1)
+				p.ParentID = 1
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute
@@ -20,15 +20,15 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN 2 IN (
 			SELECT
-				*
+				p.ParentID
 			FROM
 				Parent p
 			WHERE
-				p.ParentID = toInt32(2) AND p.ParentID = toInt32(1)
+				p.ParentID = 1
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
