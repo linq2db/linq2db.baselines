@@ -18,7 +18,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE
@@ -28,17 +28,17 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE

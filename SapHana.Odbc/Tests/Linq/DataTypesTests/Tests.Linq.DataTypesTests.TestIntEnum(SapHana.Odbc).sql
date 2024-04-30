@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar -- String
+DECLARE @Column  -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
 SELECT
