@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -126,9 +126,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -148,9 +148,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -170,9 +170,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -192,9 +192,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -214,9 +214,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -236,9 +236,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	@Id,
-	@Value,
-	@ValueStr
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(5))
 )
 
 BeforeExecute
@@ -266,11 +266,17 @@ END
 
 BeforeExecute
 -- Firebird.5 Firebird4
+DECLARE @Id Integer -- Int32
+SET     @Id = 200
+DECLARE @Value Integer -- Int32
+SET     @Value = 200
+DECLARE @p Binary
+SET     @p = 200
 
 SELECT
-	"s"."Id",
-	"s"."Value",
-	"s"."ValueStr"
+	"s"."Id" + CAST(@Id AS Int),
+	"s"."Value" + CAST(@Value AS Int),
+	"s"."ValueStr" || CAST(@p AS VarChar(255) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE
