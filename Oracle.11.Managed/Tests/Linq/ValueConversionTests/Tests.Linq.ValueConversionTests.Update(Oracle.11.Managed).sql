@@ -64,19 +64,17 @@ DECLARE @EnumWithNullDeclarative Varchar2 -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" e
 SET
-	"ValueConversion"."Value1" = "ValueConversion"."Value1",
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative
+	"Value1" = e."Value1",
+	"Value2" = :Value2,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative
 WHERE
-	"ValueConversion"."Id" = 1
+	e."Id" = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -92,7 +90,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 1 AND ROWNUM <= :take
+	e."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -118,24 +116,22 @@ DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" t1
 SET
-	"ValueConversion"."Value1" = :Value1,
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."Enum" = :Enum,
-	"ValueConversion"."EnumNullable" = :EnumNullable,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = :BoolValue,
-	"ValueConversion"."AnotherBoolValue" = :AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
+	"Value1" = :Value1,
+	"Value2" = :Value2,
+	"Enum" = :Enum,
+	"EnumNullable" = :EnumNullable,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"BoolValue" = :BoolValue,
+	"AnotherBoolValue" = :AnotherBoolValue,
+	"DateTimeNullable" = :DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -151,7 +147,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 2 AND ROWNUM <= :take
+	e."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -177,24 +173,22 @@ DECLARE @Id Int32
 SET     @Id = 3
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" t1
 SET
-	"ValueConversion"."Value1" = :Value1,
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."Enum" = :Enum,
-	"ValueConversion"."EnumNullable" = :EnumNullable,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = :BoolValue,
-	"ValueConversion"."AnotherBoolValue" = :AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
+	"Value1" = :Value1,
+	"Value2" = :Value2,
+	"Enum" = :Enum,
+	"EnumNullable" = :EnumNullable,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"BoolValue" = :BoolValue,
+	"AnotherBoolValue" = :AnotherBoolValue,
+	"DateTimeNullable" = :DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -210,7 +204,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 3 AND ROWNUM <= :take
+	e."Id" = 3 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

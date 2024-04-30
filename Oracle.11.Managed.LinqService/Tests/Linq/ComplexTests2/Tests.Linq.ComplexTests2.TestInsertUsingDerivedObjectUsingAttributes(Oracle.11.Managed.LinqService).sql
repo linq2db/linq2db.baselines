@@ -40,8 +40,6 @@ RETURNING
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."FirstName",
@@ -52,7 +50,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= :take
+	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -68,19 +66,17 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."FirstName" = :FirstName,
-	"Person"."LastName" = :LastName,
-	"Person"."MiddleName" = :MiddleName,
-	"Person"."Gender" = :Gender
+	"FirstName" = :FirstName,
+	"LastName" = :LastName,
+	"MiddleName" = :MiddleName,
+	"Gender" = :Gender
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."FirstName",
@@ -91,7 +87,7 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= :take
+	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -6,21 +6,21 @@ SET     @take = 5
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" t1
+			"Child" a_Children
 		WHERE
-			p."ParentID" = t1."ParentID"
+			p_1."ParentID" = a_Children."ParentID"
 	)
 FROM
 	(
 		SELECT
-			t2."ParentID"
+			p."ParentID"
 		FROM
-			"Parent" t2
+			"Parent" p
 		WHERE
 			ROWNUM <= :take
-	) p
+	) p_1
 ORDER BY
-	p."ParentID" DESC
+	p_1."ParentID" DESC
 

@@ -31,7 +31,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" p
 WHERE
-	t1.ID >= 4000
+	p.ID >= 4000
 
