@@ -12,7 +12,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[InheritanceParent].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 WHERE
 	[InheritanceParent].[InheritanceParentId] = 143 AND
 	[InheritanceParent].[Name] IS NULL
@@ -37,7 +37,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[InheritanceParent] [t1]
 
@@ -47,7 +47,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[InheritanceParent].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 WHERE
 	[InheritanceParent].[InheritanceParentId] = 143 AND
 	[InheritanceParent].[Name] IS NULL
@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[InheritanceParent] [t1]
 

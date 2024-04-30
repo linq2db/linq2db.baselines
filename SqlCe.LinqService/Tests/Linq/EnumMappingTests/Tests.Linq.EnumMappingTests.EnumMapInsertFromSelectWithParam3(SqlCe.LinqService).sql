@@ -32,7 +32,7 @@ INSERT INTO [LinqDataTypes]
 )
 SELECT
 	[r].[ID],
-	11
+	11 as [c1]
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -42,7 +42,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[LinqDataTypes] [r]
 WHERE

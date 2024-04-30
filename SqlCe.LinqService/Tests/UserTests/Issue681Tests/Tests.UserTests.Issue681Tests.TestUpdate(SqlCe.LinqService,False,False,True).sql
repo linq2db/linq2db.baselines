@@ -24,7 +24,7 @@ SET     @ID = 5
 UPDATE
 	[Issue681Table]
 SET
-	[Issue681Table].[Value] = @Value
+	[Value] = @Value
 WHERE
 	[Issue681Table].[ID] = @ID
 

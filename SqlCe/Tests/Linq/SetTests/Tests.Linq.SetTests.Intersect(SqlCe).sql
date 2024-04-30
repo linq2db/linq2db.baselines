@@ -3,9 +3,7 @@
 
 SELECT DISTINCT
 	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[ParentID] as [ParentID_1],
-	[t1].[ChildID] as [ChildID_1]
+	[t1].[ChildID]
 FROM
 	[Child] [t1]
 WHERE

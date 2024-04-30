@@ -137,11 +137,7 @@ BeforeExecute
 
 SELECT DISTINCT
 	[a_Book].[BookId] as [Id],
-	[a_Book].[BookName],
-	[a_Book].[BookId],
-	[a_Book].[BookId] as [BookId_1],
-	[a_Book].[BookId] as [Id_1],
-	[a_Book].[BookName] as [BookName_1]
+	[a_Book].[BookName]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
