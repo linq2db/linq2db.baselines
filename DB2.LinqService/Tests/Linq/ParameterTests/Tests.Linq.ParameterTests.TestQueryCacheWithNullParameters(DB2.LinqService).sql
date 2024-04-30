@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @id Integer(4) -- Int32
+SET     @id = 0
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IS NULL
+	"t1"."PersonID" = @id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -14,9 +16,9 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id
+	"t1"."PersonID" = @id
 

@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table_Cache"
 )
 VALUES
 (
-	@Id,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@Name AS NVarChar(4))
 )
 
 BeforeExecute
@@ -62,11 +62,11 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"PR_1598_Insert_Table_Cache" "t1"
 SET
-	"PR_1598_Insert_Table_Cache"."Name" = @Name
+	"Name" = @Name
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

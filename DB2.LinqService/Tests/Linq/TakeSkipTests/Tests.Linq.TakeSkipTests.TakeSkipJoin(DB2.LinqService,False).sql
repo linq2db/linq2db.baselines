@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	"e".ID,
-	"_"."SmallIntValue"
+	"p"."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -82,8 +82,8 @@ FROM
 						"LinqDataTypes" "t5"
 				) "t6"
 			FETCH FIRST 15 ROWS ONLY
-		) "_" ON "_".ID = "e".ID
+		) "p" ON "p".ID = "e".ID
 ORDER BY
-	"_".ID,
-	"e".ID
+	"e".ID,
+	"p".ID
 

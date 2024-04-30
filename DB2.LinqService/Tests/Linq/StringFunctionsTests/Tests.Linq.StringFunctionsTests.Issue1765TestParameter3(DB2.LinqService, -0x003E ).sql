@@ -46,11 +46,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Value2 AS NVarChar(2)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(2))
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(50)),
+	CAST(@Value2 AS NVarChar(2)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(50))
 )
 
 BeforeExecute
@@ -106,11 +106,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Value3,
-	@Value4
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Value2 AS NVarChar(50)),
+	CAST(@Value3 AS VarChar(50)),
+	CAST(@Value4 AS NVarChar(2))
 )
 
 BeforeExecute
@@ -119,12 +119,12 @@ DECLARE @separator VarChar(4) -- String
 SET     @separator = ' -> '
 
 SELECT
-	LISTAGG("t1"."Value4", @separator) WITHIN GROUP (ORDER BY "t1"."Value3" DESC, "t1"."Value4")
+	LISTAGG("g_1"."Value4", CAST(@separator AS NVarChar(4))) WITHIN GROUP (ORDER BY "g_1"."Value3" DESC, "g_1"."Value4")
 FROM
-	"SampleClass" "t1"
+	"SampleClass" "g_1"
 GROUP BY
-	"t1"."Id",
-	"t1"."Value4"
+	"g_1"."Id",
+	"g_1"."Value4"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

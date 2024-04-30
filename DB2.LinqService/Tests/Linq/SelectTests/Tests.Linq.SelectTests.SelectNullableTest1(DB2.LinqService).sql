@@ -36,43 +36,43 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@DateTimeValue2,
-	@BoolValue,
-	@GuidValue,
-	@SmallIntValue,
-	@IntValue,
-	@BigIntValue,
-	@StringValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS timestamp),
+	CAST(@DateTimeValue2 AS timestamp),
+	CAST(@BoolValue AS smallint),
+	CAST(@GuidValue AS char(16) for bit data),
+	CAST(@SmallIntValue AS SmallInt),
+	CAST(@IntValue AS Int),
+	CAST(@BigIntValue AS BigInt),
+	CAST(@StringValue AS NVarChar(255))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
-	"_"."MoneyValue",
-	"_"."DateTimeValue",
-	"_"."DateTimeValue2",
-	"_"."BoolValue",
-	"_"."GuidValue",
-	"_"."SmallIntValue",
-	"_"."IntValue",
-	"_"."BigIntValue",
-	"_"."StringValue"
+	"t1".ID,
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."DateTimeValue2",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."SmallIntValue",
+	"t1"."IntValue",
+	"t1"."BigIntValue",
+	"t1"."StringValue"
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	"_".ID = 1000
+	"t1".ID = 1000
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	"_".ID = 1000
+	"t1".ID = 1000
 
