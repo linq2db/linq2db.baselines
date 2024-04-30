@@ -17,13 +17,11 @@ IF (OBJECT_ID(N'[Issue681Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DB_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -33,13 +31,13 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Value] = @Value
+	[u].[Value] = @Value
 FROM
-	[TestDataContained]..[Issue681Table] [t1]
+	[TestDataContained]..[Issue681Table] [u]
 WHERE
-	[t1].[ID] = @ID
+	[u].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
