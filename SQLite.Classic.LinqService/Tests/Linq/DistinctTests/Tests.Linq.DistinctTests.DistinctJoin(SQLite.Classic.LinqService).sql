@@ -3,20 +3,20 @@
 
 SELECT
 	[e].[ID],
-	[_2].[SmallIntValue]
+	[p_1].[SmallIntValue]
 FROM
 	(
 		SELECT DISTINCT
-			[_].[ID],
-			[_].[SmallIntValue]
+			[t1].[ID],
+			[t1].[SmallIntValue]
 		FROM
-			[LinqDataTypes] [_]
+			[LinqDataTypes] [t1]
 	) [e]
 		LEFT JOIN (
 			SELECT DISTINCT
-				[_1].[ID],
-				[_1].[SmallIntValue]
+				[p].[ID],
+				[p].[SmallIntValue]
 			FROM
-				[LinqDataTypes] [_1]
-		) [_2] ON [_2].[ID] = [e].[ID]
+				[LinqDataTypes] [p]
+		) [p_1] ON [p_1].[ID] = [e].[ID]
 
