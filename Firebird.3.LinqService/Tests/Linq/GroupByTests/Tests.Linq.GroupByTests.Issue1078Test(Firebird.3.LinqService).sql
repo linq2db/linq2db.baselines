@@ -40,9 +40,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -172,9 +172,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -194,9 +194,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
@@ -216,33 +216,25 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	@UserID,
-	@SiteID,
-	@Active
+	CAST(@UserID AS Int),
+	CAST(@SiteID AS Int),
+	CAST(@Active AS BOOLEAN)
 )
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"t1"."SiteID",
-	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1078Table" "u"
-		WHERE
-			CASE
-				WHEN "u"."Active" = TRUE THEN 1
-				ELSE 0
-			END = 0 AND
-			"t1"."SiteID" = "u"."SiteID"
-	)
+	"grp"."SiteID",
+	COUNT(*),
+	COUNT(CASE
+		WHEN "grp"."Active" = FALSE THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1078Table" "t1"
+	"Issue1078Table" "grp"
 GROUP BY
-	"t1"."SiteID"
+	"grp"."SiteID"
 
 BeforeExecute
 -- Firebird.3 Firebird3
