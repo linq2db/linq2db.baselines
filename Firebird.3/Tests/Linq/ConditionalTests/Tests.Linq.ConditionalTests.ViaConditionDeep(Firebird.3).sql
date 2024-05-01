@@ -43,6 +43,8 @@ SELECT 10,'String10' FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @p Integer -- Int32
+SET     @p = NULL
 
 SELECT
 	"x"."Id",
@@ -64,7 +66,7 @@ WHERE
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN NULL
+			THEN @p
 		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 2
 	END = 2

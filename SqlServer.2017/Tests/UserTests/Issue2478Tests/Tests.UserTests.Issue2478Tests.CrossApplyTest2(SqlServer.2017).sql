@@ -26,8 +26,7 @@ FROM
 	[Parent] [t1]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [Count_1],
-				SUM([c_1].[ChildID]) as [Sum_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c_1]
 			WHERE

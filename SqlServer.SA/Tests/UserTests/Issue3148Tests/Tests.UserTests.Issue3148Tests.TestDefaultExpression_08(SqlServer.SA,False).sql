@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -9,8 +13,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], 0) as [ParentID],
-				IIF([d].[not_null] IS NOT NULL, [d].[Value1], NULL) as [Value1]
+				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], @p) as [ParentID],
+				IIF([d].[not_null] IS NOT NULL, [d].[Value1], @p_1) as [Value1]
 			FROM
 				(
 					SELECT
@@ -53,6 +57,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -62,8 +70,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], 0) as [ParentID],
-				IIF([d].[not_null] IS NOT NULL, [d].[Value1], NULL) as [Value1]
+				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], @p) as [ParentID],
+				IIF([d].[not_null] IS NOT NULL, [d].[Value1], @p_1) as [Value1]
 			FROM
 				(
 					SELECT

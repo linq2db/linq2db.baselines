@@ -36,6 +36,8 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT
 	`x`.`Id`,
@@ -57,7 +59,7 @@ WHERE
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN (`x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL)
-			THEN NULL
+			THEN @p
 		WHEN `x`.`StringProp` = '2' THEN 1
 		ELSE 2
 	END = 2
