@@ -2,11 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p`.`FirstName`,
-	`p`.`PersonID`,
-	`p`.`LastName`,
-	`p`.`MiddleName`,
-	`p`.`Gender`
+	Concat(`p`.`LastName`, ', ', `p`.`FirstName`)
 FROM
 	`Person` `p`
 WHERE

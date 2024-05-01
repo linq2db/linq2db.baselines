@@ -2,16 +2,18 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t1`.`Date_1`,
-	Count(*)
+	`b_1`.`Date_2`,
+	COUNT(*)
 FROM
 	(
 		SELECT
-			Cast(`selectParam`.`DateTimeValue` as Date) as `Date_1`
+			Date(`b`.`DateTimeValue`) as `Date_1`,
+			Date(`b`.`DateTimeValue`) as `Date_2`
 		FROM
-			`LinqDataTypes` `selectParam`
-				INNER JOIN `Parent` `p` ON `selectParam`.`ID` = `p`.`ParentID`
-	) `t1`
+			`LinqDataTypes` `b`
+				INNER JOIN `Parent` `p` ON `b`.`ID` = `p`.`ParentID`
+	) `b_1`
 GROUP BY
-	`t1`.`Date_1`
+	`b_1`.`Date_1`,
+	`b_1`.`Date_2`
 

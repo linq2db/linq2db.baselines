@@ -2,11 +2,10 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`ch`.`ParentID`,
-	`p`.`ParentID`
+	`t`.`ParentID` + `p`.`ParentID`
 FROM
-	`Child` `ch`
-		INNER JOIN `Parent` `p` ON `ch`.`ParentID` = `p`.`ParentID`
+	`Child` `t`
+		INNER JOIN `Parent` `p` ON `t`.`ParentID` = `p`.`ParentID`
 WHERE
-	`ch`.`ParentID` + `p`.`ParentID` > 2
+	`t`.`ParentID` + `p`.`ParentID` > 2
 
