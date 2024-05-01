@@ -19,18 +19,6 @@ WHERE
 	[d].[ParentID] <> 0
 
 BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[a_GrandChildren].[ParentID],
-	[a_GrandChildren].[ChildID],
-	[a_GrandChildren].[GrandChildID]
-FROM
-	[GrandChild] [a_GrandChildren]
-WHERE
-	0 = [a_GrandChildren].[ParentID]
-
-BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
@@ -59,18 +47,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 WHERE
 	[d].[ParentID] <> 0
-
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[a_GrandChildren].[ParentID],
-	[a_GrandChildren].[ChildID],
-	[a_GrandChildren].[GrandChildID]
-FROM
-	[GrandChild] [a_GrandChildren]
-WHERE
-	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 DisposeTransaction

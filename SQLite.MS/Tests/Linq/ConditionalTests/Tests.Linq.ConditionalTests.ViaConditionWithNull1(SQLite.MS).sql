@@ -36,6 +36,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @p NVarChar -- String
+SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -44,7 +46,7 @@ FROM
 	[ConditionalData] [x]
 WHERE
 	CASE
-		WHEN [x].[StringProp] = '1' THEN NULL
+		WHEN [x].[StringProp] = '1' THEN @p
 		ELSE [x].[StringProp]
 	END LIKE '%2%' ESCAPE '~'
 
