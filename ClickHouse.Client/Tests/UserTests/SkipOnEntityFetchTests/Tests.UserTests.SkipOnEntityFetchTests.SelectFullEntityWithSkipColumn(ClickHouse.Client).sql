@@ -16,21 +16,21 @@ SELECT
 FROM
 	Person p
 WHERE
-	Coalesce(p.PersonID, toInt32(0)) >= toInt32(2)
+	Coalesce(p.PersonID, 0) >= 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				Person p
 			WHERE
 				p.PersonID IS NULL
-		))
+		)
 			THEN true
 		ELSE false
 	END
@@ -40,14 +40,14 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				Person p
 			WHERE
 				p.PersonID IS NULL
-		))
+		)
 			THEN true
 		ELSE false
 	END

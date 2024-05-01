@@ -27,7 +27,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL,
 	NULL,
 	NULL
@@ -45,8 +45,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'TWO',
 	'___Value2___'
 )
@@ -59,8 +59,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1), toInt32(-2))
-LIMIT toInt32(1)
+	s.Int IN (-1, -2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,8 +70,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	(s.Int IN (toInt32(-1)) OR s.Int IS NULL)
-LIMIT toInt32(1)
+	(s.Int IN (-1) OR s.Int IS NULL)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -81,8 +81,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1), toInt32(2))
-LIMIT toInt32(1)
+	s.Int IN (-1, 2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -92,8 +92,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	(s.Int NOT IN (toInt32(2)) AND s.Int IS NOT NULL)
-LIMIT toInt32(1)
+	(s.Int NOT IN (2) AND s.Int IS NOT NULL)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -103,8 +103,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	(s.Int NOT IN (toInt32(-1), toInt32(2)) OR s.Int IS NULL)
-LIMIT toInt32(1)
+	(s.Int NOT IN (-1, 2) OR s.Int IS NULL)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

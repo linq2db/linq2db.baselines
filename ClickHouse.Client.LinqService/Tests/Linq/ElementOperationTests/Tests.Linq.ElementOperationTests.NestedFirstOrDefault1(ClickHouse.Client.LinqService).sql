@@ -2,17 +2,16 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.ChildID
-FROM
-	Child t1
-LIMIT toInt32(1)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	toInt32(1)
+	t2.ParentID,
+	t2.ChildID
 FROM
 	Parent p
+		LEFT JOIN (
+			SELECT
+				t1.ParentID as ParentID,
+				t1.ChildID as ChildID
+			FROM
+				Child t1
+			LIMIT 1
+		) t2 ON 1=1
 

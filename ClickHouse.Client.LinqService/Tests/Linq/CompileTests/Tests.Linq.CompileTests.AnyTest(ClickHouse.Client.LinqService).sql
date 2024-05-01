@@ -9,7 +9,7 @@ SELECT
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID = toInt32(1)
+				c_1.ParentID = 1
 		)
 			THEN true
 		ELSE false
@@ -26,7 +26,7 @@ SELECT
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID = toInt32(-1)
+				c_1.ParentID = -1
 		)
 			THEN true
 		ELSE false
