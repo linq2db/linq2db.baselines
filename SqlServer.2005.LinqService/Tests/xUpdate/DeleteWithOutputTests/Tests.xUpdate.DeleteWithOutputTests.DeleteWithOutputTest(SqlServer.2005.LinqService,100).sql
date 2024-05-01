@@ -252,9 +252,9 @@ BeforeExecute
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr]
 FROM
 	[TableWithData] [s]
 WHERE
