@@ -17,9 +17,9 @@ DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -46,7 +46,7 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -60,9 +60,9 @@ DECLARE @Key2 NVarChar(4000) -- String
 SET     @Key2 = NULL
 
 UPDATE
-	[t1]
+	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -89,7 +89,7 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
