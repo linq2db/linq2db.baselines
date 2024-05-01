@@ -17,11 +17,11 @@ DECLARE @lastName VarWChar(3) -- String
 SET     @lastName = '%o%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE @firstName AND [_].[LastName] LIKE @lastName
+	[t1].[FirstName] LIKE @firstName AND [t1].[LastName] LIKE @lastName
 
 BeforeExecute
 -- Access AccessOleDb
@@ -31,17 +31,17 @@ DECLARE @lastName VarWChar(3) -- String
 SET     @lastName = '%o%'
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE @firstName AND [_].[LastName] LIKE @lastName
+	[t1].[FirstName] LIKE @firstName AND [t1].[LastName] LIKE @lastName
 ORDER BY
-	[_].[PersonID]
+	[t1].[PersonID]
 
 BeforeExecute
 DisposeTransaction

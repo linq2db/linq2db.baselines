@@ -48,7 +48,7 @@ DECLARE @z2_9 Integer -- Int32
 SET     @z2_9 = 2
 
 SELECT
-	((((@x3 * (@y10 - @z2) / @x3_1) * @z2_1) * (((((@x3_2 * (@y10_1 - @z2_2) / @x3_3) * @z2_3) * (@y10_2 - @z2_4) / ((@x3_4 * (@y10_3 - @z2_5) / @x3_5) * @z2_6)) * @z2_7) - [child_1].[ChildID]) / ((@x3_6 * (@y10_4 - @z2_8) / @x3_7) * @z2_9)) * [child_1].[ChildID])
+	((((CVar(@x3) * (CVar(@y10) - CVar(@z2)) / CVar(@x3_1)) * CVar(@z2_1)) * (((((CVar(@x3_2) * (CVar(@y10_1) - CVar(@z2_2)) / CVar(@x3_3)) * CVar(@z2_3)) * (CVar(@y10_2) - CVar(@z2_4)) / ((CVar(@x3_4) * (CVar(@y10_3) - CVar(@z2_5)) / CVar(@x3_5)) * CVar(@z2_6))) * CVar(@z2_7)) - [child_1].[ChildID]) / ((CVar(@x3_6) * (CVar(@y10_4) - CVar(@z2_8)) / CVar(@x3_7)) * CVar(@z2_9))) * [child_1].[ChildID])
 FROM
 	[Child] [child_1]
 

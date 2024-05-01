@@ -30,11 +30,11 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = ? AND [_].[Value1] = ?
+	[t1].[ParentID] = ? AND [t1].[Value1] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

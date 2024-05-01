@@ -17,11 +17,11 @@ DECLARE @lastName VarWChar(5) -- String
 SET     @lastName = 'König'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
+	[t1].[FirstName] = @firstName AND [t1].[LastName] = @lastName
 
 BeforeExecute
 -- Access AccessOleDb
@@ -31,15 +31,15 @@ DECLARE @lastName VarWChar(5) -- String
 SET     @lastName = 'König'
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = @firstName AND [_].[LastName] = @lastName
+	[t1].[FirstName] = @firstName AND [t1].[LastName] = @lastName
 
 BeforeExecute
 DisposeTransaction
