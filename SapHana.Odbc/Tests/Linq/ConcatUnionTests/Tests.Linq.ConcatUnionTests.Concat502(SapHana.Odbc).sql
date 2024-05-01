@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Value1  -- Int32
+SET     @Value1 = NULL
+DECLARE @Value1  -- Int32
+SET     @Value1 = NULL
 
 SELECT
 	"p_1"."ParentID",
@@ -28,5 +32,11 @@ FROM
 			"c_1"."ParentID" = 3
 	) "p_1"
 WHERE
-	(("p_1"."Value1" <> 2 OR "p_1"."Value1" IS NULL) AND "p_1"."ParentID" IS NOT NULL OR "p_1"."ParentID" IS NULL)
+	(CASE
+		WHEN "p_1"."ParentID" IS NOT NULL THEN "p_1"."Value1"
+		ELSE ?
+	END <> 2 OR CASE
+		WHEN "p_1"."ParentID" IS NOT NULL THEN "p_1"."Value1"
+		ELSE ?
+	END IS NULL)
 

@@ -196,6 +196,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Parameter1  -- Int32
+SET     @Parameter1 = NULL
 
 SELECT
 	"x"."Id",
@@ -217,7 +219,7 @@ WHERE
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN NULL
+			THEN ?
 		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 2
 	END = 2
