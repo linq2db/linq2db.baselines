@@ -3,9 +3,8 @@
 
 SELECT
 	CASE
-		WHEN a_Patient.PersonID IS NOT NULL
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+		WHEN a_Patient.PersonID IS NOT NULL THEN true
+		ELSE false
 	END
 FROM
 	Person p

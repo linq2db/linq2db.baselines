@@ -3,15 +3,15 @@
 
 SELECT
 	CASE
-		WHEN (NOT EXISTS(
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
 				Child c_1
 			WHERE
-				c_1.ParentID <= toInt32(3)
-		))
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+				c_1.ParentID <= 3
+		)
+			THEN true
+		ELSE false
 	END
 
