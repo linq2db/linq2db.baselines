@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'sweetest candy bread and dry meat'
+DECLARE @term NVarChar(4000) -- String
+SET     @term = N'sweetest candy bread and dry meat'
 
 SELECT
 	[c_1].[CategoryID],
@@ -9,6 +9,6 @@ SELECT
 	[c_1].[Description],
 	[c_1].[Picture]
 FROM
-	FREETEXTTABLE([Categories], ([Description]), @p) [t]
+	FREETEXTTABLE([Categories], ([Description]), @term) [t]
 		INNER JOIN [Categories] [c_1] ON [t].[KEY] = [c_1].[CategoryID]
 
