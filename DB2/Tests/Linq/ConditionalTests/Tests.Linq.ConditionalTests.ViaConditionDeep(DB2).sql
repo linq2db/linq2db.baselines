@@ -44,6 +44,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @p Integer -- Int32
+SET     @p = NULL
 
 SELECT
 	"x"."Id",
@@ -65,7 +67,7 @@ WHERE
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN NULL
+			THEN @p
 		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 2
 	END = 2

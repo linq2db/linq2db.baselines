@@ -8,7 +8,7 @@ DECLARE @x3 Integer(4) -- Int32
 SET     @x3 = 3
 
 SELECT
-	((((@x3 * (@y10 - @z2) / @x3) * @z2) * (((((@x3 * (@y10 - @z2) / @x3) * @z2) * (@y10 - @z2) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * @z2) - "child_1"."ChildID") / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * "child_1"."ChildID")
+	((((CAST(@x3 AS Int) * (CAST(@y10 AS Int) - CAST(@z2 AS Int)) / CAST(@x3 AS Int)) * CAST(@z2 AS Int)) * (((((CAST(@x3 AS Int) * (CAST(@y10 AS Int) - CAST(@z2 AS Int)) / CAST(@x3 AS Int)) * CAST(@z2 AS Int)) * (CAST(@y10 AS Int) - CAST(@z2 AS Int)) / ((CAST(@x3 AS Int) * (CAST(@y10 AS Int) - CAST(@z2 AS Int)) / CAST(@x3 AS Int)) * CAST(@z2 AS Int))) * CAST(@z2 AS Int)) - "child_1"."ChildID") / ((CAST(@x3 AS Int) * (CAST(@y10 AS Int) - CAST(@z2 AS Int)) / CAST(@x3 AS Int)) * CAST(@z2 AS Int))) * "child_1"."ChildID")
 FROM
 	"Child" "child_1"
 

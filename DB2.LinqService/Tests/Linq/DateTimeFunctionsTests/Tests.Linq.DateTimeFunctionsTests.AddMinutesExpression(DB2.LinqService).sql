@@ -4,7 +4,7 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = -8
 
 SELECT
-	"t"."DateTimeValue" + @p Minute
+	Extract(minute from ("t"."DateTimeValue" + CAST(@p AS Int) MINUTE))
 FROM
 	"LinqDataTypes" "t"
 

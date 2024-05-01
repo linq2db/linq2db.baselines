@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 
@@ -12,7 +10,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
+	1,
 	CAST(@id AS Int)
 )
 
