@@ -288,8 +288,6 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT DISTINCT
-	"r"."Id",
-	"r"."Value1",
 	"r"."Value1"
 FROM
 	"SampleData" "r"

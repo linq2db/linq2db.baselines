@@ -532,10 +532,6 @@ BeforeExecute
 
 SELECT DISTINCT
 	`a_Book`.`BookId`,
-	`a_Book`.`BookName`,
-	`a_Book`.`BookId`,
-	`a_Book`.`BookId`,
-	`a_Book`.`BookId`,
 	`a_Book`.`BookName`
 FROM
 	`Author` `t1`

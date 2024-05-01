@@ -8,11 +8,6 @@ SELECT DISTINCT
 	`t2`.`ID`,
 	`t2`.`LastName`,
 	`t2`.`MiddleName`,
-	`t2`.`Gender`,
-	`t2`.`FirstName`,
-	`t2`.`ID`,
-	`t2`.`LastName`,
-	`t2`.`MiddleName`,
 	`t2`.`Gender`
 FROM
 	(

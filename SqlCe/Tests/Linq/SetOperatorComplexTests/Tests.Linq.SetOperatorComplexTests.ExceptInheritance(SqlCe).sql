@@ -103,16 +103,10 @@ BeforeExecute
 
 SELECT DISTINCT
 	[t1].[BookId],
-	[t1].[BookId] as [BookId_1],
 	[t1].[Discriminator],
 	[t1].[BookName],
-	[t1].[RomanScore],
 	[t1].[NovelScore],
-	[t1].[BookId] as [BookId_2],
-	[t1].[Discriminator] as [Discriminator_1],
-	[t1].[BookName] as [BookName_1],
-	[t1].[NovelScore] as [NovelScore_1],
-	[t1].[RomanScore] as [RomanScore_1]
+	[t1].[RomanScore]
 FROM
 	(
 		SELECT

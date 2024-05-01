@@ -139,9 +139,6 @@ BeforeExecute
 
 SELECT
 	a_Book."Discriminator",
-	a_Book."BookName",
-	a_Book."BookName",
-	a_Book."Discriminator",
 	a_Book."BookName"
 FROM
 	"Author" t1

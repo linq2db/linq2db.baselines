@@ -103,10 +103,7 @@ BeforeExecute
 
 SELECT DISTINCT
 	[a_Book].[Discriminator],
-	[a_Book].[BookName],
-	[a_Book].[BookName] as [BookName_1],
-	[a_Book].[Discriminator] as [Discriminator_1],
-	[a_Book].[BookName] as [BookName_2]
+	[a_Book].[BookName]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
