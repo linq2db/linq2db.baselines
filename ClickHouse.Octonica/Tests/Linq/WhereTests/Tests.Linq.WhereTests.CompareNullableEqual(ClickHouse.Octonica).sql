@@ -7,7 +7,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.Value1 = toInt32(1)
+	p.Value1 = 1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18,7 +27,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.Value1 <> toInt32(1) OR p.Value1 IS NULL)
+	(p.Value1 <> 1 OR p.Value1 IS NULL)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -29,7 +47,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	toInt32(1) = p.Value1
+	1 = p.Value1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -40,5 +67,14 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(toInt32(1) <> p.Value1 OR p.Value1 IS NULL)
+	(1 <> p.Value1 OR p.Value1 IS NULL)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

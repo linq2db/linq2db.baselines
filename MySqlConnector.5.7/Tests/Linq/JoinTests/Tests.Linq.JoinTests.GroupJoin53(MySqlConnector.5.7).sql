@@ -1,20 +1,31 @@
 ﻿BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			`ch`.`ParentID`
-		FROM
-			`Child` `ch`
-		WHERE
-			`ch`.`ParentID` = `p`.`ParentID`
-		LIMIT @take
-	)
+	`m_1`.`ParentID`,
+	`d`.`ParentID`
 FROM
-	`Parent` `p`
+	(
+		SELECT DISTINCT
+			`t1`.`ParentID`
+		FROM
+			`Parent` `t1`
+		WHERE
+			`t1`.`ParentID` = 1
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`ParentID`
+FROM
+	`Parent` `t1`
 WHERE
-	`p`.`ParentID` = 1
+	`t1`.`ParentID` = 1
 
