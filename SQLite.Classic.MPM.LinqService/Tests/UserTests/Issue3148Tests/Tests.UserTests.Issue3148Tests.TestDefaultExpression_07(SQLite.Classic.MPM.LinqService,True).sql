@@ -21,18 +21,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[a_GrandChildren].[ParentID],
-	[a_GrandChildren].[ChildID],
-	[a_GrandChildren].[GrandChildID]
-FROM
-	[GrandChild] [a_GrandChildren]
-WHERE
-	0 = [a_GrandChildren].[ParentID]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -55,18 +43,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] IS NOT NULL
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
-	[a_GrandChildren].[ParentID],
-	[a_GrandChildren].[ChildID],
-	[a_GrandChildren].[GrandChildID]
-FROM
-	[GrandChild] [a_GrandChildren]
-WHERE
-	0 = [a_GrandChildren].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
