@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName Text(10) -- String
-SET     @LastName = 'Limonadovy'
-DECLARE @Gender Text(1) -- String
-SET     @Gender = 'M'
 
 INSERT INTO "Person"
 (
@@ -15,9 +9,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	:FirstName,
-	:LastName,
-	:Gender
+	'John',
+	'Limonadovy',
+	'M'
 )
 
 BeforeExecute
