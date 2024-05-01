@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 0
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	x."ParentID",
@@ -11,11 +15,11 @@ FROM
 			SELECT
 				CASE
 					WHEN d.not_null IS NOT NULL THEN d."ParentID"
-					ELSE 0
+					ELSE :p
 				END as "ParentID",
 				CASE
 					WHEN d.not_null IS NOT NULL THEN d."Value1"
-					ELSE NULL
+					ELSE :p_1
 				END as "Value1"
 			FROM
 				(
@@ -68,6 +72,10 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 0
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	x."ParentID",
@@ -79,11 +87,11 @@ FROM
 			SELECT
 				CASE
 					WHEN d.not_null IS NOT NULL THEN d."ParentID"
-					ELSE 0
+					ELSE :p
 				END as "ParentID",
 				CASE
 					WHEN d.not_null IS NOT NULL THEN d."Value1"
-					ELSE NULL
+					ELSE :p_1
 				END as "Value1"
 			FROM
 				(
