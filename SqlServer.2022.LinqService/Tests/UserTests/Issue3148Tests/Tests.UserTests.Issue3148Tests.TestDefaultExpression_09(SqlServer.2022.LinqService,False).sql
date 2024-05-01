@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2022
+DECLARE @p Int -- Int32
+SET     @p = NULL
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
+DECLARE @p_2 Int -- Int32
+SET     @p_2 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -19,9 +25,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], NULL) as [ParentID],
-				IIF([d].[not_null] IS NOT NULL, [d].[ChildID], NULL) as [ChildID],
-				IIF([d].[not_null] IS NOT NULL, [d].[GrandChildID], NULL) as [GrandChildID]
+				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], @p) as [ParentID],
+				IIF([d].[not_null] IS NOT NULL, [d].[ChildID], @p_1) as [ChildID],
+				IIF([d].[not_null] IS NOT NULL, [d].[GrandChildID], @p_2) as [GrandChildID]
 			FROM
 				(
 					SELECT
@@ -64,6 +70,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
+DECLARE @p Int -- Int32
+SET     @p = NULL
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
+DECLARE @p_2 Int -- Int32
+SET     @p_2 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -83,9 +95,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], NULL) as [ParentID],
-				IIF([d].[not_null] IS NOT NULL, [d].[ChildID], NULL) as [ChildID],
-				IIF([d].[not_null] IS NOT NULL, [d].[GrandChildID], NULL) as [GrandChildID]
+				IIF([d].[not_null] IS NOT NULL, [d].[ParentID], @p) as [ParentID],
+				IIF([d].[not_null] IS NOT NULL, [d].[ChildID], @p_1) as [ChildID],
+				IIF([d].[not_null] IS NOT NULL, [d].[GrandChildID], @p_2) as [GrandChildID]
 			FROM
 				(
 					SELECT
