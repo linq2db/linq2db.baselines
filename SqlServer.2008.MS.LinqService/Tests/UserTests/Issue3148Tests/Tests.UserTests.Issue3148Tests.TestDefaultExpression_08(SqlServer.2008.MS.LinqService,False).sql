@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -11,11 +15,11 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE 0
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[Value1]
-					ELSE NULL
+					ELSE @p_1
 				END as [Value1]
 			FROM
 				(
@@ -65,6 +69,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -76,11 +84,11 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE 0
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[Value1]
-					ELSE NULL
+					ELSE @p_1
 				END as [Value1]
 			FROM
 				(

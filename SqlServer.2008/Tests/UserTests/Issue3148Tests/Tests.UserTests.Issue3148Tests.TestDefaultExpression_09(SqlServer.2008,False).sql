@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = NULL
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
+DECLARE @p_2 Int -- Int32
+SET     @p_2 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -21,15 +27,15 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE NULL
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ChildID]
-					ELSE NULL
+					ELSE @p_1
 				END as [ChildID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[GrandChildID]
-					ELSE NULL
+					ELSE @p_2
 				END as [GrandChildID]
 			FROM
 				(
@@ -79,6 +85,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = NULL
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
+DECLARE @p_2 Int -- Int32
+SET     @p_2 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -100,15 +112,15 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE NULL
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ChildID]
-					ELSE NULL
+					ELSE @p_1
 				END as [ChildID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[GrandChildID]
-					ELSE NULL
+					ELSE @p_2
 				END as [GrandChildID]
 			FROM
 				(

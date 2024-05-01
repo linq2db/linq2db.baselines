@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -11,11 +15,11 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE 0
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[Value1]
-					ELSE NULL
+					ELSE @p_1
 				END as [Value1]
 			FROM
 				(
@@ -29,7 +33,7 @@ FROM
 							[a_Parent_1].[Value1]
 						FROM
 							[GrandChild] [a_GrandChildren]
-								LEFT JOIN [Child] [a_Child] ON ([a_GrandChildren].[ParentID] = [a_Child].[ParentID] OR [a_GrandChildren].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([a_GrandChildren].[ChildID] = [a_Child].[ChildID] OR [a_GrandChildren].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
+								LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
 								LEFT JOIN [Parent] [a_Parent_1] ON [a_Child].[ParentID] = [a_Parent_1].[ParentID]
 						WHERE
 							[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
@@ -65,6 +69,10 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = NULL
 
 SELECT
 	[x].[ParentID],
@@ -76,11 +84,11 @@ FROM
 			SELECT TOP (1)
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[ParentID]
-					ELSE 0
+					ELSE @p
 				END as [ParentID],
 				CASE
 					WHEN [d].[not_null] IS NOT NULL THEN [d].[Value1]
-					ELSE NULL
+					ELSE @p_1
 				END as [Value1]
 			FROM
 				(
@@ -94,7 +102,7 @@ FROM
 							[a_Parent_1].[Value1]
 						FROM
 							[GrandChild] [a_GrandChildren]
-								LEFT JOIN [Child] [a_Child] ON ([a_GrandChildren].[ParentID] = [a_Child].[ParentID] OR [a_GrandChildren].[ParentID] IS NULL AND [a_Child].[ParentID] IS NULL) AND ([a_GrandChildren].[ChildID] = [a_Child].[ChildID] OR [a_GrandChildren].[ChildID] IS NULL AND [a_Child].[ChildID] IS NULL)
+								LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
 								LEFT JOIN [Parent] [a_Parent_1] ON [a_Child].[ParentID] = [a_Parent_1].[ParentID]
 						WHERE
 							[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
