@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Mod(1 + Trunc(t."DateTimeValue") - Trunc(t."DateTimeValue", 'IW'), 7)
+	MOD(TRUNC(t."DateTimeValue") - TRUNC(t."DateTimeValue", 'IW') + 1, 7)
 FROM
 	"LinqDataTypes" t
 

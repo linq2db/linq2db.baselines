@@ -24,18 +24,16 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 UPDATE
-	"Parent"
+	"Parent" t1
 SET
-	"Parent"."Value1" = :Value1
+	"Value1" = :Value1
 WHERE
-	"Parent"."ParentID" = :ParentID
+	t1."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."ParentID",
@@ -43,5 +41,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :ParentID AND ROWNUM <= :take
+	p."ParentID" = :ParentID AND ROWNUM <= 2
 
