@@ -37,6 +37,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @p Int -- Int32
+SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -54,7 +56,7 @@ WHERE
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
 		WHEN ([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL)
-			THEN NULL
+			THEN @p
 		WHEN [x].[StringProp] = N'2' THEN 1
 		ELSE 2
 	END = 2
