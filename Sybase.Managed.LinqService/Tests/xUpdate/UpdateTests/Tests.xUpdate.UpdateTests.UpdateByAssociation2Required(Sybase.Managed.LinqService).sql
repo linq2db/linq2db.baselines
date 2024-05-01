@@ -123,12 +123,11 @@ SET     @id = 3
 UPDATE
 	[MainTable]
 SET
-	[a_MainRequired].[Field] = 'test'
+	[Field] = 'test'
 FROM
-	[MainTable] [a_MainRequired],
 	[AssociatedTable] [pat]
 WHERE
-	[pat].[Id] = @id AND [pat].[Id] = [a_MainRequired].[Id]
+	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- Sybase.Managed Sybase

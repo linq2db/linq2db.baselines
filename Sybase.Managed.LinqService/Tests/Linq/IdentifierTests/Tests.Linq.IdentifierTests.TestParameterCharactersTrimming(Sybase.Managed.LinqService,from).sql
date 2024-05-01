@@ -23,11 +23,9 @@ SET     @from = 2
 UPDATE
 	[testparams]
 SET
-	[t].[from] = @from
-FROM
-	[testparams] [t]
+	[from] = @from
 WHERE
-	[t].[from] = 1
+	[testparams].[from] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

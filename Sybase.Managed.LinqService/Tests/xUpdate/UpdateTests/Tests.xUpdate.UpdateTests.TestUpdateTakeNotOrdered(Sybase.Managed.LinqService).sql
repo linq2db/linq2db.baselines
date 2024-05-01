@@ -178,15 +178,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
--- Sybase.Managed Sybase
-
-UPDATE TOP 5
-	[Parent]
-SET
-	[x].[Value1] = 1
-FROM
-	[Parent] [x]
-WHERE
-	[x].[ParentID] > 1000
-

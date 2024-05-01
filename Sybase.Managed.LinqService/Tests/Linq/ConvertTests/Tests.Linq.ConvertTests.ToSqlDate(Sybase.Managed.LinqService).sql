@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Date, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + '-01-01')
+	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(11)) + '-01-01' AS Date)
 FROM
 	[LinqDataTypes] [t]
 

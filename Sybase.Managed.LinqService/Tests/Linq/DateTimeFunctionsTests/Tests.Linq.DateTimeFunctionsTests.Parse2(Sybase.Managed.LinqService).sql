@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[d].[c1]
+	CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS VarChar(11)) + '-02-24 00:00:00' AS DateTime)
 FROM
-	(
-		SELECT
-			Convert(DateTime, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + '-02-24 00:00:00') as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS VarChar(11)) + '-02-24 00:00:00' AS DateTime)) > 0
 

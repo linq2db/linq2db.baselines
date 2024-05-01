@@ -23,11 +23,9 @@ SET     @TestName = 2
 UPDATE
 	[testparams]
 SET
-	[t].[Test-Name] = @TestName
-FROM
-	[testparams] [t]
+	[Test-Name] = @TestName
 WHERE
-	[t].[Test-Name] = 1
+	[testparams].[Test-Name] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
