@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Cast(Floor(`t`.`MoneyValue`) as Signed)
+	CAST(Floor(`t`.`MoneyValue`) AS SIGNED)
 FROM
 	`LinqDataTypes` `t`
 

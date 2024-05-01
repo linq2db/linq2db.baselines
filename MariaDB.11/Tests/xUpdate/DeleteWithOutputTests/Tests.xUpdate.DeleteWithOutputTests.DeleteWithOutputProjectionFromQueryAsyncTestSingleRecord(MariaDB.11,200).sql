@@ -56,7 +56,7 @@ WHERE
 	`TableWithData`.`Id` = 3
 RETURNING
 	`TableWithData`.`Id` + 1,
-	Concat(`TableWithData`.`ValueStr`, Cast(1 as CHAR(11)))
+	Concat(`TableWithData`.`ValueStr`, 1)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

@@ -20,8 +20,8 @@ INSERT INTO test_in_1
 	ID
 )
 VALUES
-(toInt32(1)),
-(toInt32(3)),
+(1),
+(3),
 (NULL)
 
 BeforeExecute
@@ -46,17 +46,9 @@ INSERT INTO test_in_2
 	ID
 )
 VALUES
-(toInt32(1)),
-(toInt32(2)),
+(1),
+(2),
 (NULL)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	t1.ID
-FROM
-	test_in_1 t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -66,9 +58,9 @@ SELECT
 FROM
 	test_in_1 t
 WHERE
-	(t.ID IS NULL AND toInt32(1) IN (
+	(t.ID IS NULL AND 1 IN (
 		SELECT
-			toInt32(1)
+			1
 		FROM
 			test_in_2 p
 		WHERE
@@ -86,15 +78,7 @@ BeforeExecute
 SELECT
 	t1.ID
 FROM
-	test_in_2 t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	t1.ID
-FROM
-	test_in_2 t1
+	test_in_1 t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

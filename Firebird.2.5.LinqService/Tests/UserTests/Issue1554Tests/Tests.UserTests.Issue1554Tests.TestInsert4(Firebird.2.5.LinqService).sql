@@ -40,17 +40,15 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@ClaimedKeyType as VarChar(3) CHARACTER SET UNICODE_FSS),
-	Cast(@ClaimedKeyTypeN as VarChar(3) CHARACTER SET UNICODE_FSS)
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS VARCHAR(2)),
+	CAST(@ClaimedKeyTypeN AS VARCHAR(2))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Id",
 	"t1"."ClaimedKeyType",
 	"t1"."ClaimedKeyTypeN"

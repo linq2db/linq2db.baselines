@@ -36,8 +36,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS NVarChar(5))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	@Id,
-	@Value
+	CAST(@Id AS Int),
+	CAST(@Value AS NVarChar(3))
 )
 
 BeforeExecute
@@ -66,7 +66,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			"r"."Id"
 		FROM
 			"TableToInsert" "t"
 				INNER JOIN (VALUES

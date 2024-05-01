@@ -8,12 +8,6 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 SELECT
 	"PersonID"
@@ -28,9 +22,9 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(4)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@Gender AS Char(1))
+			'John',
+			'Shepard',
+			'M'
 		)
 	)
 

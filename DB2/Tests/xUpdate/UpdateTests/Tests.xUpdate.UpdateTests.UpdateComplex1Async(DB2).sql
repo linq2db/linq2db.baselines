@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			@Gender,
-			@Name_FirstName,
-			@Name_MiddleName,
-			@Name_LastName
+			CAST(@Gender AS NChar(1)),
+			CAST(@Name_FirstName AS NVarChar(13)),
+			CAST(@Name_MiddleName AS NVarChar(255)),
+			CAST(@Name_LastName AS NVarChar(5))
 		)
 	)
 
@@ -41,15 +41,15 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id
+	"t1"."PersonID" = @id
 FETCH FIRST 1 ROWS ONLY
 
 BeforeExecute
@@ -66,14 +66,14 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = @Gender,
-	"Person"."FirstName" = @Name_FirstName,
-	"Person"."MiddleName" = @Name_MiddleName,
-	"Person"."LastName" = @Name_LastName
+	"Gender" = @Gender,
+	"FirstName" = @Name_FirstName,
+	"MiddleName" = @Name_MiddleName,
+	"LastName" = @Name_LastName
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
@@ -81,14 +81,14 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id
+	"t1"."PersonID" = @id
 FETCH FIRST 1 ROWS ONLY
 

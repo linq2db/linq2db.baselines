@@ -26,18 +26,16 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "r"
 SET
-	"LinqDataTypes"."BigIntValue" = 12
+	"BigIntValue" = 12
 WHERE
-	"LinqDataTypes".ID = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	"r".ID = 101 AND "r"."BigIntValue" = 11
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"r"."BigIntValue"
 FROM
 	"LinqDataTypes" "r"

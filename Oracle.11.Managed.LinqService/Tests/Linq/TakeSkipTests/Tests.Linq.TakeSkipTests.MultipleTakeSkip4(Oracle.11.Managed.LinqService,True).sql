@@ -155,10 +155,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 5
-DECLARE @skip Int32
-SET     @skip = 3
 
 SELECT
 	t3."Value_1"
@@ -177,10 +173,10 @@ FROM
 					t1."Value"
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 5
 	) t3
 WHERE
-	t3.RN > :skip
+	t3.RN > 3
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

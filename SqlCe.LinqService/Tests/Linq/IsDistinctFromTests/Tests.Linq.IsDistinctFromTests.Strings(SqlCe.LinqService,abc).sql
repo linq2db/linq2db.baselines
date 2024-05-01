@@ -72,7 +72,7 @@ DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
@@ -84,7 +84,7 @@ DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
@@ -96,7 +96,7 @@ DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
@@ -108,7 +108,7 @@ DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE

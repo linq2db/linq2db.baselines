@@ -90,9 +90,9 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value3" = 1
+	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT

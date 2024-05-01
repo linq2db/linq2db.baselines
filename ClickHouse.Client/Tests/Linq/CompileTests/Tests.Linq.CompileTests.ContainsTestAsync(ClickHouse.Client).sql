@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN toInt32(1) IN (
+		WHEN 1 IN (
 			SELECT
 				c_1.ParentID
 			FROM
@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN toInt32(-1) IN (
+		WHEN -1 IN (
 			SELECT
 				c_1.ParentID
 			FROM
