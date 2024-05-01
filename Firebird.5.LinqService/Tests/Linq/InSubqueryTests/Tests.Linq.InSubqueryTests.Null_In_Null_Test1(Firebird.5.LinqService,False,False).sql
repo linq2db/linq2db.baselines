@@ -30,7 +30,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -107,7 +107,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
 
 BeforeExecute
@@ -121,8 +121,25 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	@ID
+	CAST(@ID AS Int)
 )
+
+BeforeExecute
+-- Firebird.5 Firebird4
+
+SELECT
+	"t".ID
+FROM
+	"test_in_1" "t"
+WHERE
+	"t".ID IS NOT NULL AND EXISTS(
+		SELECT
+			*
+		FROM
+			"test_in_2" "p"
+		WHERE
+			"p".ID IS NOT NULL AND ("t".ID = "p".ID OR "t".ID IS NULL AND "p".ID IS NULL)
+	)
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -136,18 +153,9 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	"t".ID
+	"t1".ID
 FROM
-	"test_in_1" "t"
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"test_in_2" "p"
-		WHERE
-			"p".ID = "t".ID
-	)
+	"test_in_2" "t1"
 
 BeforeExecute
 -- Firebird.5 Firebird4

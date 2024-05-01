@@ -2,75 +2,14 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"t1"."PersonID"
+	"m_1"."PersonID",
+	"m_1"."FirstName",
+	"m_1"."PersonID",
+	"m_1"."LastName",
+	"m_1"."MiddleName",
+	"m_1"."Gender"
 FROM
-	"Person" "t1"
-GROUP BY
-	"t1"."PersonID"
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 3
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 4
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
+	"Person" "m_1"
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -84,65 +23,24 @@ GROUP BY
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
 
 SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"m_1"."PersonID",
+	"m_1"."FirstName",
+	"m_1"."PersonID",
+	"m_1"."LastName",
+	"m_1"."MiddleName",
+	"m_1"."Gender"
 FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
+	"Person" "m_1"
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
 
 SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
+	"t1"."PersonID"
 FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 3
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
-
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @ID Integer -- Int32
-SET     @ID = 4
-
-SELECT
-	"keyParam"."FirstName",
-	"keyParam"."PersonID",
-	"keyParam"."LastName",
-	"keyParam"."MiddleName",
-	"keyParam"."Gender"
-FROM
-	"Person" "keyParam"
-WHERE
-	"keyParam"."PersonID" = @ID
+	"Person" "t1"
+GROUP BY
+	"t1"."PersonID"
 

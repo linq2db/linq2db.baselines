@@ -4,183 +4,22 @@
 SELECT
 	`pmp1`.`ChildID`
 FROM
-	`Child` `pmp1`,
-	(
-		SELECT
-			`pmp`.`ParentID`
-		FROM
-			`Child` `pmp`
-		GROUP BY
-			`pmp`.`ParentID`
-	) `t1`
+	`Child` `pmp1`
+		CROSS JOIN (
+			SELECT
+				`pmp`.`ParentID`
+			FROM
+				`Child` `pmp`
+			GROUP BY
+				`pmp`.`ParentID`
+		) `pmp_1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t1`.`ParentID`
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
 FROM
 	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-SELECT
-	`t1`.`ParentID`
-FROM
-	`Child` `t1`
-GROUP BY
-	`t1`.`ParentID`
 
