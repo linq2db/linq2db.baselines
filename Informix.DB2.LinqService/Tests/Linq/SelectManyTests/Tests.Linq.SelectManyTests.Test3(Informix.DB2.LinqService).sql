@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Parent p
-		INNER JOIN GrandChild g_1 ON p.ParentID = g_1.ParentID,
-	Person t
+	(
+		SELECT
+			t1.ParentID
+		FROM
+			Parent t1,
+			Person t
+	) sub
+		INNER JOIN GrandChild g_1 ON sub.ParentID = g_1.ParentID
 

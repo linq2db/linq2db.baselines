@@ -2,15 +2,22 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.ParentID,
-	c_1.ChildID
+	sub.ParentID_1,
+	sub.ChildID
 FROM
-	Parent p,
-	Child c_1
-		INNER JOIN Parent a_Parent1 ON c_1.ParentID = a_Parent1.ParentID
+	(
+		SELECT
+			c_1.ParentID,
+			p.ParentID as ParentID_1,
+			c_1.ChildID
+		FROM
+			Parent p,
+			Child c_1
+	) sub
+		INNER JOIN Parent a_Parent1 ON sub.ParentID = a_Parent1.ParentID
 WHERE
-	p.ParentID = a_Parent1.ParentID
+	sub.ParentID_1 = a_Parent1.ParentID
 ORDER BY
-	p.ParentID,
-	c_1.ChildID
+	sub.ParentID_1,
+	sub.ChildID
 
