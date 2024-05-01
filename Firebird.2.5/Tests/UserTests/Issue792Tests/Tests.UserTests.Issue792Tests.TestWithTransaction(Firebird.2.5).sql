@@ -4,7 +4,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 
@@ -22,7 +22,7 @@ SELECT * FROM (
 	FROM RDB$PROCEDURES
 	WHERE RDB$SYSTEM_FLAG = 0 AND RDB$PROCEDURE_TYPE IS NOT NULL
 	UNION ALL
-	SELECT 
+	SELECT
 		NULL,
 		RDB$FUNCTION_NAME,
 		RDB$DESCRIPTION,
@@ -160,7 +160,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 

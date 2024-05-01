@@ -2,8 +2,6 @@
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
-DECLARE @LastName VarChar(8) -- String
-SET     @LastName = 'LastName'
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'F'
 
@@ -18,7 +16,7 @@ VALUES
 (
 	GEN_ID("PersonID", 1),
 	CAST(@FirstName AS VARCHAR(9)),
-	CAST(@LastName AS VARCHAR(8)),
+	'LastName',
 	CAST(@Gender AS CHAR(1))
 )
 

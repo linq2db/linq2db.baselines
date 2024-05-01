@@ -35,6 +35,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
+	'0',
 	"row_1"."Value"
 FROM
 	"ValueItem" "row_1"

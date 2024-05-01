@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	@Id,
-	@Field1,
-	@Field2,
-	@Field4
+	CAST(@Id AS Int),
+	CAST(@Field1 AS Int),
+	CAST(@Field2 AS Int),
+	CAST(@Field4 AS Int)
 )
 
 BeforeExecute
@@ -235,26 +235,32 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @value Time
 SET     @value = 00:05:00
+DECLARE @value_1 Time
+SET     @value_1 = 00:05:00
+DECLARE @value_2 Time
+SET     @value_2 = 00:05:00
+DECLARE @value_3 Time
+SET     @value_3 = 00:05:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "Id", CAST(@value AS Time) AS "Val" FROM rdb$database
+	SELECT 3 AS "source_Id", CAST(@value AS Time) AS "source_Val" FROM rdb$database
 	UNION ALL
-	SELECT 4, CAST(@value AS Time) FROM rdb$database
+	SELECT 4, CAST(@value_1 AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 5, CAST(@value AS Time) FROM rdb$database
+	SELECT 5, CAST(@value_2 AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 6, CAST(@value AS Time) FROM rdb$database) "Source"
+	SELECT 6, CAST(@value_3 AS Time) FROM rdb$database) "Source"
 (
-	"Id",
-	"Val"
+	"source_Id",
+	"source_Val"
 )
-ON ("Target"."Id" = "Source"."Id" AND "Source"."Val" IS NOT NULL)
+ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Field1" = 111
+	"Field1" = 111
 
 BeforeExecute
 -- Firebird.2.5 Firebird

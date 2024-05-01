@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @skip Integer -- Int32
-SET     @skip = 0
 
 SELECT
 	"pat"."PersonID",
@@ -14,17 +12,22 @@ WHERE
 			*
 		FROM
 			(
-				SELECT SKIP @skip
-					"a_Patient"."Diagnosis"
+				SELECT DISTINCT
+					"t2"."Diagnosis"
 				FROM
-					"Person" "per"
-						LEFT JOIN "Patient" "a_Patient" ON "per"."PersonID" = "a_Patient"."PersonID"
-				WHERE
-					"per"."PersonID" = "pat"."PersonID"
-				ORDER BY
-					"per"."FirstName" DESC
-			) "t1"
+					(
+						SELECT SKIP 0
+							"a_Patient"."Diagnosis"
+						FROM
+							"Person" "t1"
+								LEFT JOIN "Patient" "a_Patient" ON "t1"."PersonID" = "a_Patient"."PersonID"
+						WHERE
+							"t1"."PersonID" = "pat"."PersonID"
+						ORDER BY
+							"t1"."FirstName" DESC
+					) "t2"
+			) "t3"
 		WHERE
-			"t1"."Diagnosis" LIKE '%with%' ESCAPE '~'
+			"t3"."Diagnosis" LIKE '%with%' ESCAPE '~'
 	)
 

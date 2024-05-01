@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE
@@ -12,10 +12,10 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE
-	(Lower("p"."FirstName") NOT STARTING WITH 'joh') AND
+	Lower("p"."FirstName") NOT STARTING WITH 'joh' AND
 	"p"."PersonID" = 1
 
