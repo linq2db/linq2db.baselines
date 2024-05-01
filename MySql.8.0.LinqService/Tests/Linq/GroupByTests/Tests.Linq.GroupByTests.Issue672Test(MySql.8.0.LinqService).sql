@@ -86,50 +86,37 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`s`.`Name`
+	`t1`.`Id`,
+	`t1`.`Name`,
+	`t1`.`Enabled`,
+	`t1`.`ImageFullUrl`
 FROM
-	`Stone` `s`
-WHERE
-	`s`.`Enabled` = 1 AND `s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0
-GROUP BY
-	`s`.`Name`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
-	`s`.`ImageFullUrl`
-FROM
-	`Stone` `s`
-WHERE
-	`s`.`Enabled` = 1 AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0 AND
-	`s`.`Name` = @Name
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group2'
-
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
-	`s`.`ImageFullUrl`
-FROM
-	`Stone` `s`
-WHERE
-	`s`.`Enabled` = 1 AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0 AND
-	`s`.`Name` = @Name
+	(
+		SELECT
+			`sG`.`Name`
+		FROM
+			`Stone` `sG`
+		WHERE
+			`sG`.`Enabled` = 1 AND `sG`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+			Char_Length(`sG`.`ImageFullUrl`) > 0
+		GROUP BY
+			`sG`.`Name`
+	) `sG_1`
+		INNER JOIN LATERAL (
+			SELECT
+				`s`.`Id`,
+				`s`.`Name`,
+				`s`.`Enabled`,
+				`s`.`ImageFullUrl`
+			FROM
+				`Stone` `s`
+			WHERE
+				`s`.`Enabled` = 1 AND
+				`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+				Char_Length(`s`.`ImageFullUrl`) > 0 AND
+				`sG_1`.`Name` = `s`.`Name`
+			LIMIT 1
+		) `t1` ON 1=1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
