@@ -8,12 +8,7 @@ SELECT DISTINCT
 	[t2].[ID],
 	[t2].[LastName],
 	[t2].[MiddleName],
-	[t2].[Gender],
-	[t2].[FirstName] as [FirstName_1],
-	[t2].[ID] as [ID_1],
-	[t2].[LastName] as [LastName_1],
-	[t2].[MiddleName] as [MiddleName_1],
-	[t2].[Gender] as [Gender_1]
+	[t2].[Gender]
 FROM
 	(
 		SELECT TOP (@take)
