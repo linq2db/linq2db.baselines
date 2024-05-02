@@ -2,12 +2,11 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	(
 		SELECT TOP (5)
-			[t1].[ParentID],
-			[t1].[ChildID]
+			*
 		FROM
 			[Child] [t1]
 	) [t2]
