@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @part1 Integer -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
 
 SELECT
-	DateAdd(quarter, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue])
+	CONVERT(Date, DateAdd(quarter, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

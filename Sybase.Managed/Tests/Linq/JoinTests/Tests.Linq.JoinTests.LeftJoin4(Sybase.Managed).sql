@@ -15,7 +15,7 @@ FROM
 			[Parent_1].[Value1]
 		FROM
 			[Parent] [Parent_1]
-				LEFT JOIN [Child] [y4] ON [Parent_1].[ParentID] = [y4].[ParentID] AND ([Parent_1].[Value1] = [y4].[ParentID] OR [Parent_1].[Value1] IS NULL AND [y4].[ParentID] IS NULL)
+				LEFT JOIN [Child] [y4] ON [Parent_1].[ParentID] = [y4].[ParentID] AND [Parent_1].[Value1] = [y4].[ParentID]
 		WHERE
 			[Parent_1].[ParentID] = 1 AND [Parent_1].[Value1] IS NOT NULL
 	) [m_1]
@@ -31,7 +31,7 @@ SELECT
 	[x5].[Value1]
 FROM
 	[Parent] [x5]
-		LEFT JOIN [Child] [y4] ON [x5].[ParentID] = [y4].[ParentID] AND ([x5].[Value1] = [y4].[ParentID] OR [x5].[Value1] IS NULL AND [y4].[ParentID] IS NULL)
+		LEFT JOIN [Child] [y4] ON [x5].[ParentID] = [y4].[ParentID] AND [x5].[Value1] = [y4].[ParentID]
 WHERE
 	[x5].[ParentID] = 1 AND [x5].[Value1] IS NOT NULL
 ORDER BY

@@ -21,18 +21,14 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Issue1192Table] [t]
-		WHERE
-			[t].[Status] = 3 AND [t].[MyOtherId] = 12
-	)
+	COUNT(CASE
+		WHEN [t].[Status] = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	[Issue1192Table] [t_1]
+	[Issue1192Table] [t]
 WHERE
-	[t_1].[MyOtherId] = 12
+	[t].[MyOtherId] = 12
 
 BeforeExecute
 -- Sybase.Managed Sybase
