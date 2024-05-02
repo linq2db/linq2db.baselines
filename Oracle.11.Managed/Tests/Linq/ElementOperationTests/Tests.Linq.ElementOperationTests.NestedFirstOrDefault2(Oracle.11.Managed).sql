@@ -1,33 +1,17 @@
 ﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	detail."ParentID",
-	detail."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			p."ParentID",
-			p."Value1"
-		FROM
-			"Parent" p
-	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
-ORDER BY
-	detail."ChildID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	p."ParentID",
-	p."Value1"
+	t1."ParentID",
+	t1."ChildID"
 FROM
 	"Parent" p
+		LEFT JOIN (
+			SELECT
+				a_Children."ParentID",
+				a_Children."ChildID",
+				ROW_NUMBER() OVER (PARTITION BY a_Children."ParentID" ORDER BY a_Children."ChildID") as "rn"
+			FROM
+				"Child" a_Children
+		) t1 ON p."ParentID" = t1."ParentID" AND t1."rn" <= 1
 
