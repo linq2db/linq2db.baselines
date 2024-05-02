@@ -117,16 +117,11 @@ WHERE
 			t1.MIN_1 IS NULL
 	) OR t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			t2.MIN_1
+			minOrNull(g_2.ID)
 		FROM
-			(
-				SELECT
-					minOrNull(g_2.ID) as MIN_1
-				FROM
-					test_in_2 g_2
-				GROUP BY
-					g_2.GV
-			) t2
+			test_in_2 g_2
+		GROUP BY
+			g_2.GV
 	))
 
 BeforeExecute
