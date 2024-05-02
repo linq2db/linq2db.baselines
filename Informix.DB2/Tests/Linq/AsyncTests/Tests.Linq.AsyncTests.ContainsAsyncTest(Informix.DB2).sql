@@ -2,17 +2,17 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				Person t1
 			WHERE
-				t1.PersonID = 1
+				1 = t1.PersonID
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END
 FROM table(set{1})
 
