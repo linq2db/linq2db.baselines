@@ -14,23 +14,23 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Max([_].[ID])
+	MAX([t1].[ID])
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
 USING (
-	SELECT 3 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], 'test' + char(0) + 'it' AS [nvarcharDataType]) [Source]
+	SELECT 3 AS [source_ID], char(0) AS [source_charDataType], char(0) AS [source_ncharDataType], 'test' + char(0) + 'it' AS [source_nvarcharDataType]) [Source]
 (
-	[ID],
-	[charDataType],
-	[ncharDataType],
-	[nvarcharDataType]
+	[source_ID],
+	[source_charDataType],
+	[source_ncharDataType],
+	[source_nvarcharDataType]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -41,9 +41,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[charDataType],
-	[Source].[ncharDataType],
-	[Source].[nvarcharDataType]
+	[Source].[source_charDataType],
+	[Source].[source_ncharDataType],
+	[Source].[source_nvarcharDataType]
 )
 
 BeforeExecute

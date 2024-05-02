@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -35,13 +35,13 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@DateTimeValue,
-	@BoolValue,
-	@GuidValue,
-	@BinaryValue,
-	@SmallIntValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal),
+	CAST(@DateTimeValue AS timestamp),
+	CAST(@BoolValue AS smallint),
+	CAST(@GuidValue AS char(16) for bit data),
+	CAST(@BinaryValue AS VARBINARY(4)),
+	CAST(@SmallIntValue AS SmallInt)
 )
 
 BeforeExecute
@@ -65,7 +65,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 

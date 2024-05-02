@@ -10,8 +10,6 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
-DECLARE @Value1 Integer(4) -- Int32
-SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
@@ -21,7 +19,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	CAST(@ParentID AS Int),
-	CAST(@Value1 AS Int)
+	1
 )
 
 BeforeExecute
