@@ -1,55 +1,24 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`key_data_result`.`ChildID`,
-	`detail`.`ParentID`,
-	`detail`.`ChildID`,
-	`a_Parent`.`ParentID`,
-	`a_Parent`.`Value1`
-FROM
-	(
-		SELECT DISTINCT
-			`s`.`ChildID`
-		FROM
-			`Child` `s`
-		WHERE
-			(
-				SELECT
-					1
-				FROM
-					`Child` `c_1`
-				WHERE
-					`c_1`.`ChildID` = `s`.`ChildID`
-				LIMIT @take
-			) IS NOT NULL
-	) `key_data_result`
-		INNER JOIN `Child` `detail` ON `detail`.`ChildID` = `key_data_result`.`ChildID`
-		LEFT JOIN `Parent` `a_Parent` ON `detail`.`ParentID` = `a_Parent`.`ParentID`
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	`s`.`ChildID`
+	`t1`.`ParentID`,
+	`t1`.`ChildID`,
+	`t1`.`ParentID_1`,
+	`t1`.`Value1`
 FROM
 	`Child` `s`
+		LEFT JOIN (
+			SELECT
+				`c_1`.`ParentID`,
+				`c_1`.`ChildID`,
+				`a_Parent`.`ParentID` as `ParentID_1`,
+				`a_Parent`.`Value1`,
+				ROW_NUMBER() OVER (PARTITION BY `c_1`.`ChildID` ORDER BY `c_1`.`ChildID`) as `rn`
+			FROM
+				`Child` `c_1`
+					LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
+		) `t1` ON `t1`.`ChildID` = `s`.`ChildID` AND `t1`.`rn` <= 1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			`Child` `c_1`
-		WHERE
-			`c_1`.`ChildID` = `s`.`ChildID`
-		LIMIT @take
-	) IS NOT NULL
+	`t1`.`ParentID` IS NOT NULL
 
