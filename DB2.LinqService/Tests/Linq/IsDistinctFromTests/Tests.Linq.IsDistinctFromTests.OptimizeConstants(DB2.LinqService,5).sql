@@ -2,8 +2,13 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
-FROM SYSIBM.SYSDUMMY1
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as ID
+		FROM SYSIBM.SYSDUMMY1
+	) "s"
 WHERE
 	1 = 0
 
@@ -11,6 +16,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
-FROM SYSIBM.SYSDUMMY1
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as ID
+		FROM SYSIBM.SYSDUMMY1
+	) "s"
 
