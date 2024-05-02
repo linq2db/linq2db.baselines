@@ -40,9 +40,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(4))
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(7))
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(9))
 )
 
 BeforeExecute
@@ -172,46 +172,54 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	@Id,
-	@ParentId,
-	@Name
+	CAST(@Id AS Int),
+	CAST(@ParentId AS Int),
+	CAST(@Name AS VARCHAR(9))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."Id",
-	"key_data_result"."Id_1",
-	"detail_1"."Name"
+	"m_1"."Id",
+	"d"."Name"
 FROM
 	(
 		SELECT DISTINCT
-			"detail"."Id",
-			"item_1"."Id" as "Id_1"
+			(
+				SELECT FIRST 1
+					"a_Children"."Id"
+				FROM
+					"Test3799Item" "a_Children"
+				WHERE
+					"item_1"."Id" = "a_Children"."ParentId"
+			) as "Id"
 		FROM
 			"Test3799Item" "item_1"
-				INNER JOIN "Test3799Item" "detail" ON "item_1"."Id" = "detail"."ParentId"
-	) "key_data_result"
-		INNER JOIN "Test3799Item" "detail_1" ON "key_data_result"."Id" = "detail_1"."ParentId"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"item_1"."Id",
-	"detail"."Name",
-	"detail"."Id"
-FROM
-	"Test3799Item" "item_1"
-		INNER JOIN "Test3799Item" "detail" ON "item_1"."Id" = "detail"."ParentId"
+	) "m_1"
+		INNER JOIN "Test3799Item" "d" ON ("m_1"."Id" = "d"."ParentId" OR "m_1"."Id" IS NULL AND "d"."ParentId" IS NULL)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
 	"item_1"."Name",
-	"item_1"."Id"
+	(
+		SELECT FIRST 1
+			"a_Children"."Name"
+		FROM
+			"Test3799Item" "a_Children"
+		WHERE
+			"item_1"."Id" = "a_Children"."ParentId"
+	),
+	(
+		SELECT FIRST 1
+			"a_Children_1"."Id"
+		FROM
+			"Test3799Item" "a_Children_1"
+		WHERE
+			"item_1"."Id" = "a_Children_1"."ParentId"
+	)
 FROM
 	"Test3799Item" "item_1"
 

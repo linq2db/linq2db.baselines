@@ -2,26 +2,6 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID"
-		FROM
-			"Parent" "p"
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID" AND "c_1"."ChildID" > -100
-ORDER BY
-	"c_1"."ChildID"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -36,14 +16,14 @@ SELECT
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
 	),
 	(
-		SELECT FIRST @take
+		SELECT FIRST 1
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"
@@ -53,7 +33,26 @@ SELECT
 		ORDER BY
 			"c_3"."ChildID"
 	),
-	"p"."ParentID"
+	(
+		SELECT FIRST 1
+			"c_4"."ParentID"
+		FROM
+			"Child" "c_4"
+		WHERE
+			"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
+		ORDER BY
+			"c_4"."ChildID"
+	),
+	(
+		SELECT FIRST 1
+			"c_5"."ChildID"
+		FROM
+			"Child" "c_5"
+		WHERE
+			"c_5"."ParentID" = "p"."ParentID" AND "c_5"."ChildID" > -100
+		ORDER BY
+			"c_5"."ChildID"
+	)
 FROM
 	"Parent" "p"
 

@@ -10,13 +10,13 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT CAST('Janet' AS VarChar(255) CHARACTER SET UNICODE_FSS) AS "item" FROM rdb$database
+			SELECT CAST('Janet' AS VARCHAR(5)) AS "item" FROM rdb$database
 			UNION ALL
-			SELECT CAST('Doe' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+			SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database
 			UNION ALL
-			SELECT CAST('John' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+			SELECT CAST('John' AS VARCHAR(4)) FROM rdb$database
 			UNION ALL
-			SELECT CAST('Doe' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
+			SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -30,11 +30,11 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT CAST('Janet' AS VarChar(255) CHARACTER SET UNICODE_FSS) AS "item" FROM rdb$database
+			SELECT CAST('Janet' AS VARCHAR(5)) AS "item" FROM rdb$database
 			UNION ALL
-			SELECT CAST('Doe1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+			SELECT CAST('Doe1' AS VARCHAR(4)) FROM rdb$database
 			UNION ALL
-			SELECT CAST('John' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+			SELECT CAST('John' AS VARCHAR(4)) FROM rdb$database
 			UNION ALL
-			SELECT CAST('Doe' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
+			SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
 
