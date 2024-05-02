@@ -1,11 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @Length Int -- Int32
-SET     @Length = 4
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N't'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],
 	[c_1].[ContactName],
@@ -20,5 +18,6 @@ SELECT TOP (@take)
 FROM
 	[Customers] [c_1]
 WHERE
-	IIF(CharIndex(N't', Left([c_1].[City], 4), 2) = 0, -1, @Length - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) = 3
+	4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3))) = 3 AND
+	(CharIndex(@p, Left([c_1].[City], 4), 2) <> 0 OR CharIndex(@p, Left([c_1].[City], 4), 2) IS NULL)
 
