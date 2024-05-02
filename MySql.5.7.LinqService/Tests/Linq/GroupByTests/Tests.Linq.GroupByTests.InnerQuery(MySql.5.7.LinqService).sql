@@ -1,20 +1,25 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			`d`.`Taxonomy`
-		FROM
-			`Doctor` `d`
-		WHERE
-			`t1`.`PersonID` = `d`.`PersonID`
-		LIMIT @take
-	)
+	`m_1`.`PersonID`,
+	`d`.`Taxonomy`
 FROM
-	`Doctor` `t1`
+	(
+		SELECT DISTINCT
+			`s`.`PersonID`
+		FROM
+			`Doctor` `s`
+	) `m_1`
+		INNER JOIN `Doctor` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
+
+BeforeExecute
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`s`.`PersonID`
+FROM
+	`Doctor` `s`
 GROUP BY
-	`t1`.`PersonID`
+	`s`.`PersonID`
 
