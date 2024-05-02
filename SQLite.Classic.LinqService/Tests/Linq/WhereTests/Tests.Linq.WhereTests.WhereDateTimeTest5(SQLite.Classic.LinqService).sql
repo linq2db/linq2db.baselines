@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Date  -- DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	DateTime(Date([_].[DateTimeValue])) = DateTime(@Date)
+	strftime('%Y-%m-%d %H:%M:%f', Date([t1].[DateTimeValue])) = strftime('%Y-%m-%d %H:%M:%f', Date(strftime('%Y-%m-%d %H:%M:%f', '2009-09-20 00:00:00.000')))
 
