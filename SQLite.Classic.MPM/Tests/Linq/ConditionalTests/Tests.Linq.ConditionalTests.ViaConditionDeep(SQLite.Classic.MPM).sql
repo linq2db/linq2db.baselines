@@ -36,6 +36,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -57,7 +59,7 @@ WHERE
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN ([x].[StringProp] = '1' OR [x].[StringProp] IS NULL)
-			THEN NULL
+			THEN @p
 		WHEN [x].[StringProp] = '2' THEN 1
 		ELSE 2
 	END = 2

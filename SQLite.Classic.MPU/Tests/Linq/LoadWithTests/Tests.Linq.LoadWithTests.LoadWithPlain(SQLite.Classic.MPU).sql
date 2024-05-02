@@ -217,7 +217,7 @@ FROM
 			[a_MainItem].[Id]
 		FROM
 			[MainItem2] [m_1]
-				LEFT JOIN [MainItem] [a_MainItem] ON ([m_1].[MainItemId] = [a_MainItem].[Id] OR [m_1].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
+				LEFT JOIN [MainItem] [a_MainItem] ON [m_1].[MainItemId] = [a_MainItem].[Id]
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
@@ -236,7 +236,7 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m_1]
-		LEFT JOIN [MainItem] [a_MainItem] ON ([m_1].[MainItemId] = [a_MainItem].[Id] OR [m_1].[MainItemId] IS NULL AND [a_MainItem].[Id] IS NULL)
+		LEFT JOIN [MainItem] [a_MainItem] ON [m_1].[MainItemId] = [a_MainItem].[Id]
 WHERE
 	[m_1].[Id] > 1
 

@@ -17,11 +17,11 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @DateTimeValue2  -- DateTime
-SET     @DateTimeValue2 = '2009-09-24 09:19:29.09'
+DECLARE @DateTimeValue2 VarChar(23) -- AnsiString
+SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
