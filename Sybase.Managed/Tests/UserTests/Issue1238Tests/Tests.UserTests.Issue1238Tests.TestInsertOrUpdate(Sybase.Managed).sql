@@ -13,7 +13,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -40,7 +40,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -50,7 +50,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -77,7 +77,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

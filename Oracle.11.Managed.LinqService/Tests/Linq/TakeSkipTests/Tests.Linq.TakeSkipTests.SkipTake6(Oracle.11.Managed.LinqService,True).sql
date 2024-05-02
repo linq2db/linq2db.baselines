@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 
 SELECT
 	c_1."ParentID",
@@ -14,17 +12,13 @@ FROM
 		FROM
 			"GrandChild" p
 		WHERE
-			ROWNUM <= :take
-	) t1
+			ROWNUM <= 3
+	) p_1
 WHERE
-	c_1."ParentID" = t1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 15
-DECLARE @skip Int32
-SET     @skip = 12
 
 SELECT
 	c_1."ParentID",
@@ -47,11 +41,11 @@ FROM
 							"GrandChild" p
 					) t1
 				WHERE
-					ROWNUM <= :take
+					ROWNUM <= 15
 			) t2
 		WHERE
-			t2.RN > :skip
-	) t3
+			t2.RN > 12
+	) p_1
 WHERE
-	c_1."ParentID" = t3."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 

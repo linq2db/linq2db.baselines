@@ -33,17 +33,15 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value UniChar(1) -- StringFixedLength
-SET     @Value = 'O'
+DECLARE @nullableGender UniChar(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
 	[Person]
 SET
-	[_].[Gender] = @Value
-FROM
-	[Person] [_]
+	[Gender] = @nullableGender
 WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
+	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -51,13 +49,13 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 
