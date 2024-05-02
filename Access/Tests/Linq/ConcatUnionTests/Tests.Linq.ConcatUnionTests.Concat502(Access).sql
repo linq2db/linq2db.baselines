@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+DECLARE @Value1_1 Integer -- Int32
+SET     @Value1_1 = NULL
 
 SELECT
 	[p_1].[ParentID],
@@ -28,5 +32,5 @@ FROM
 			[c_1].[ParentID] = 3
 	) [p_1]
 WHERE
-	(([p_1].[Value1] <> 2 OR [p_1].[Value1] IS NULL) AND [p_1].[ParentID] IS NOT NULL OR [p_1].[ParentID] IS NULL)
+	(IIF([p_1].[ParentID] IS NOT NULL, [p_1].[Value1], @Value1) <> 2 OR IIF([p_1].[ParentID] IS NOT NULL, [p_1].[Value1], @Value1_1) IS NULL)
 
