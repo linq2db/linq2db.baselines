@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarChar(10) -- String
-SET     @LastName = 'Limonadovy'
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO `Person`
 (
@@ -15,9 +9,9 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	'John',
+	'Limonadovy',
+	'M'
 )
 
 BeforeExecute
