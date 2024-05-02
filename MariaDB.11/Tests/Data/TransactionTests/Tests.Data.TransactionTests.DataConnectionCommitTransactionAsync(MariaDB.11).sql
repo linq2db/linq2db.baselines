@@ -23,9 +23,9 @@ CommitTransactionAsync
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `_`
+DELETE   `t1`
 FROM
-	`Parent` `_`
+	`Parent` `t1`
 WHERE
-	`_`.`ParentID` = 1010
+	`t1`.`ParentID` = 1010
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -191,8 +191,6 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 6
 
 DELETE [t2]
 FROM
@@ -209,15 +207,13 @@ FROM
 					[x].[ParentID] > 1000
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= @take
+			[t1].[RN] > @skip AND [t1].[RN] <= 6
 	) [t2]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]
 FROM
@@ -228,9 +224,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

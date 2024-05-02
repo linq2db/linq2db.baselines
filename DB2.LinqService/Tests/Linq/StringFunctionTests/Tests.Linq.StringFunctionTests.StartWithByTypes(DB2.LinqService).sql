@@ -46,18 +46,18 @@ INSERT INTO "StringTypesTable"
 )
 VALUES
 (
-	@Id,
-	@CharColumn,
-	@NCharColumn,
-	@VarCharColumn,
-	@NVarCharColumn
+	CAST(@Id AS Int),
+	CAST(@CharColumn AS Char(10)),
+	CAST(@NCharColumn AS NChar(10)),
+	CAST(@VarCharColumn AS VarChar(10)),
+	CAST(@NVarCharColumn AS NVarChar(10))
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @str Char(5) -- StringFixedLength
+DECLARE @str VarChar(5) -- String
 SET     @str = 'some%'
-DECLARE @str_1 Char(5) -- StringFixedLength
+DECLARE @str_1 VarChar(5) -- String
 SET     @str_1 = 'some%'
 DECLARE @str_2 VarChar(5) -- String
 SET     @str_2 = 'some%'
