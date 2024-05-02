@@ -20,8 +20,8 @@ INSERT INTO NotNullParent
 	ID
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,15 +45,16 @@ INSERT INTO NotNullChild
 	ParentID
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	NotNullParent p
+		LEFT JOIN NotNullChild a_ChildOuter ON p.ID = a_ChildOuter.ParentID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -42,7 +42,7 @@ INSERT INTO UserIssue3128
 )
 VALUES
 (
-	toInt32(10)
+	10
 )
 
 BeforeExecute
@@ -55,38 +55,28 @@ INSERT INTO UserDetailsIssue3128
 )
 VALUES
 (
-	toInt32(10),
-	toInt32(18)
+	10,
+	18
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p_1.FirstName,
-	p_1.PersonID,
-	p_1.LastName,
-	p_1.MiddleName,
-	p_1.Gender
+	p.FirstName,
+	p.PersonID,
+	p.LastName,
+	p.MiddleName,
+	p.Gender
 FROM
+	Person p
+WHERE
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					UserIssue3128 t1
-			) as ex,
-			p.FirstName as FirstName,
-			p.PersonID as PersonID,
-			p.LastName as LastName,
-			p.MiddleName as MiddleName,
-			p.Gender as Gender
+			COUNT(*)
 		FROM
-			Person p
-	) p_1
-WHERE
-	p_1.ex > toInt32(0)
+			UserIssue3128 t1
+	) > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

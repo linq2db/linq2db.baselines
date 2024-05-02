@@ -2,9 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toUInt64(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toUInt64(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toUInt64(t.MoneyValue) > toUInt64(0)
+	p_1.c1 > toUInt64(0)
 
