@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	CBool([t].[MoneyValue]) = True
+	CBool([t].[MoneyValue])
 

@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @FirstName VarWChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarWChar(10) -- String
-SET     @LastName = 'Limonadovy'
-DECLARE @Gender WChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -15,9 +9,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	'John',
+	'Limonadovy',
+	'M'
 )
 
 BeforeExecute
