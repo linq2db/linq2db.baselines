@@ -21,7 +21,7 @@ SELECT
 FROM
 	SampleClass a
 WHERE
-	(a.Id = 0 AND Nvl(a.NullValue, 0) = 0 OR a.Id = 1 AND Nvl(a.NullValue, 0) = 1 OR a.Id = 2 AND Nvl(a.NullValue, 0) = 2)
+	(a.Id = 0 AND (a.NullValue = 0 AND a.NullValue IS NOT NULL OR a.NullValue IS NULL) OR a.Id = 1 AND a.NullValue = 1 AND a.NullValue IS NOT NULL OR a.Id = 2 AND a.NullValue = 2 AND a.NullValue IS NOT NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
