@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 5
 
 SELECT
-	Cast(@p as Int)
+	1
 FROM rdb$database
 

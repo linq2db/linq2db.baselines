@@ -2,5 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	NULL
+	NULL,
+	CASE
+		WHEN 1 = 1 THEN 0
+		ELSE 2
+	END
 

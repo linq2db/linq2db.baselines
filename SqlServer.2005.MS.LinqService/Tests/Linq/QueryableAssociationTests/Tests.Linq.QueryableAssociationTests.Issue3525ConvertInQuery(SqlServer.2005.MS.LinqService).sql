@@ -44,7 +44,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [a_CustomerApplication].[Id] ORDER BY [a_CustomerApplication].[Id]) as [rn]
 			FROM
 				[CustomerApplication] [a_CustomerApplication]
-		) [t1] ON ([t1].[Id] = CAST([i].[DocumentNo] AS Int) OR [t1].[Id] IS NULL AND CAST([i].[DocumentNo] AS Int) IS NULL) AND [t1].[rn] <= 1
+		) [t1] ON [t1].[Id] = CAST([i].[DocumentNo] AS Int) AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
