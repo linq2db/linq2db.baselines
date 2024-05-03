@@ -2,12 +2,12 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
 			t3."c1" as "Key_1",
-			Count(*) as "Count_1"
+			COUNT(*) as "Count_1"
 		FROM
 			(
 				SELECT
@@ -24,5 +24,5 @@ FROM
 			t3."c1"
 	) t4
 WHERE
-	t4."Count_1" > 1 AND t4."Key_1" = 1
+	t4."Key_1" = 1 AND t4."Count_1" > 1
 

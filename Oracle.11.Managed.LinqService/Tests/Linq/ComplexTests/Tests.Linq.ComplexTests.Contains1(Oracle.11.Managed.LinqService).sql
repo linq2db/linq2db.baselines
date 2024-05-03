@@ -3,30 +3,30 @@
 
 SELECT
 	p."ParentID",
-	t2."gc3",
-	t2."ChildID",
-	t2."GrandChildID",
-	t2."is_empty"
+	gc3_1."not_null",
+	gc3_1."ParentID",
+	gc3_1."ChildID",
+	gc3_1."GrandChildID"
 FROM
 	"Child" ch
 		INNER JOIN "Parent" p ON ch."ParentID" = p."ParentID"
 		LEFT JOIN (
 			SELECT
-				gc1."ParentID" as "gc3",
-				gc1."ChildID",
-				gc1."GrandChildID",
-				1 as "is_empty"
+				gc3."ParentID",
+				gc3."ChildID",
+				gc3."GrandChildID",
+				1 as "not_null"
 			FROM
-				"GrandChild" gc1
+				"GrandChild" gc3
 					INNER JOIN (
 						SELECT
-							Max(max_1."GrandChildID") as "c1"
+							MAX(max_1."GrandChildID") as MAX_1
 						FROM
 							"GrandChild" max_1
 						GROUP BY
 							max_1."ChildID"
-					) t1 ON (gc1."GrandChildID" = t1."c1" OR gc1."GrandChildID" IS NULL AND t1."c1" IS NULL)
-		) t2 ON p."ParentID" = t2."gc3"
+					) t1 ON gc3."GrandChildID" = t1.MAX_1
+		) gc3_1 ON p."ParentID" = gc3_1."ParentID"
 WHERE
-	(t2."gc3" IS NULL AND t2."ChildID" IS NULL AND t2."GrandChildID" IS NULL OR (t2."GrandChildID" NOT IN (111, 222) OR t2."GrandChildID" IS NULL))
+	(gc3_1."not_null" IS NULL OR (gc3_1."GrandChildID" NOT IN (111, 222) OR gc3_1."GrandChildID" IS NULL))
 

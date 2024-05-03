@@ -8,7 +8,7 @@ SELECT
 	"t1"."ChildID"
 FROM
 	"Parent" "x5"
-		LEFT JOIN "Child" "y4" ON "x5"."ParentID" = "y4"."ParentID" AND ("x5"."Value1" = "y4"."ParentID" OR "x5"."Value1" IS NULL AND "y4"."ParentID" IS NULL)
+		LEFT JOIN "Child" "y4" ON "x5"."ParentID" = "y4"."ParentID" AND "x5"."Value1" = "y4"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"y1"."ParentID",

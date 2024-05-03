@@ -280,8 +280,6 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT DISTINCT
-	[r].[Id],
-	[r].[Value1],
 	[r].[Value1]
 FROM
 	[SampleData] [r]

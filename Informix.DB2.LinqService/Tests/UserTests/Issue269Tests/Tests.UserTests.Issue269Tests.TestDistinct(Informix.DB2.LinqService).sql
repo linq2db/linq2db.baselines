@@ -11,9 +11,16 @@ WHERE
 		SELECT
 			*
 		FROM
-			Person per
-				LEFT JOIN Patient a_Patient ON per.PersonID = a_Patient.PersonID
+			(
+				SELECT DISTINCT
+					a_Patient.Diagnosis
+				FROM
+					Person t1
+						LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
+				WHERE
+					t1.PersonID = pat.PersonID
+			) t2
 		WHERE
-			per.PersonID = pat.PersonID AND a_Patient.Diagnosis LIKE '%with%' ESCAPE '~'
+			t2.Diagnosis LIKE '%with%' ESCAPE '~'
 	)
 
