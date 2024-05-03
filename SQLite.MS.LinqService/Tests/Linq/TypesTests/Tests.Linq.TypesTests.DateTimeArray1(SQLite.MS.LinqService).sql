@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.1'
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 
 SELECT
 	[t].[ID],
