@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
 DECLARE @personId Int -- Int32
-SET     @personId = 2
+SET     @personId = 0
+DECLARE @personId_1 Int -- Int32
+SET     @personId_1 = 2
 
 SELECT
 	CASE
@@ -9,41 +11,41 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [_4]
+				[Person] [t7]
 					LEFT JOIN (
 						SELECT
-							Count(*) as [cnt]
+							COUNT(*) as [COUNT_1]
 						FROM
-							[Patient] [_]
+							[Patient] [t1]
 						WHERE
-							[_].[PersonID] IS NULL AND [_].[PersonID] NOT IN (
+							[t1].[PersonID] = @personId AND [t1].[PersonID] NOT IN (
 								SELECT
-									[_1].[PersonID]
+									[t2].[PersonID]
 								FROM
-									[Patient] [_1]
+									[Patient] [t2]
 								WHERE
-									[_1].[PersonID] = @personId
+									[t2].[PersonID] = @personId_1
 							)
-					) [t1] ON 1=1
+					) [t3] ON 1=1
 					LEFT JOIN (
 						SELECT
-							Count(*) as [cnt]
+							COUNT(*) as [COUNT_1]
 						FROM
-							[Patient] [_2]
+							[Patient] [t4]
 						WHERE
-							[_2].[PersonID] = @personId AND [_2].[PersonID] NOT IN (
+							[t4].[PersonID] = @personId_1 AND [t4].[PersonID] NOT IN (
 								SELECT
-									[_3].[PersonID]
+									[t5].[PersonID]
 								FROM
-									[Patient] [_3]
+									[Patient] [t5]
 								WHERE
-									[_3].[PersonID] IS NULL
+									[t5].[PersonID] = @personId
 							)
-					) [t2] ON 1=1
+					) [t6] ON 1=1
 			WHERE
-				[t1].[cnt] = 0 AND [t2].[cnt] = 0
+				[t3].[COUNT_1] = 0 AND [t6].[COUNT_1] = 0
 		)
 			THEN 1
 		ELSE 0
-	END
+	END as [c1]
 

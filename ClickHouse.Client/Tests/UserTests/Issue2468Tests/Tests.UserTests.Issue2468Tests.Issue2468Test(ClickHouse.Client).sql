@@ -28,9 +28,9 @@ INSERT INTO InventoryResourceDTO
 VALUES
 (
 	toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),
-	toInt32(1),
-	toInt32(0),
-	toInt32(0)
+	1,
+	0,
+	0
 )
 
 BeforeExecute
@@ -44,34 +44,25 @@ SELECT
 FROM
 	InventoryResourceDTO x
 WHERE
-	(position(CASE
-		WHEN toInt32(0) = x.Color THEN 'Blue'
-		WHEN toInt32(10) = x.Color
-			THEN 'Red'
-		WHEN toInt32(20) = x.Color
-			THEN 'Green'
+	position(CASE
+		WHEN 0 = x.Color THEN 'Blue'
+		WHEN 10 = x.Color THEN 'Red'
+		WHEN 20 = x.Color THEN 'Green'
 		ELSE NULL
-	END, 'Bl') > toInt32(0)) AND
-	(position(CASE
-		WHEN toInt32(0) = x.CMYKColor
-			THEN 'Cyan'
-		WHEN toInt32(10) = x.CMYKColor
-			THEN 'Magenta'
-		WHEN toInt32(20) = x.CMYKColor
-			THEN 'Yellow'
-		WHEN toInt32(40) = x.CMYKColor
-			THEN 'Black'
+	END, 'Bl') > 0 AND
+	position(CASE
+		WHEN 0 = x.CMYKColor THEN 'Cyan'
+		WHEN 10 = x.CMYKColor THEN 'Magenta'
+		WHEN 20 = x.CMYKColor THEN 'Yellow'
+		WHEN 40 = x.CMYKColor THEN 'Black'
 		ELSE NULL
-	END, 'Cya') > toInt32(0)) AND
-	(position(CASE
-		WHEN x.Status = toInt32(3)
-			THEN 'Done'
-		WHEN x.Status = toInt32(1)
-			THEN 'Open'
-		WHEN x.Status = toInt32(2)
-			THEN 'InProgress'
+	END, 'Cya') > 0 AND
+	position(CASE
+		WHEN x.Status = 3 THEN 'Done'
+		WHEN x.Status = 1 THEN 'Open'
+		WHEN x.Status = 2 THEN 'InProgress'
 		ELSE 'Unknown'
-	END, 'en') > toInt32(0))
+	END, 'en') > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
