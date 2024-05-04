@@ -1,11 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @FirstName UniVarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName UniVarChar(10) -- String
-SET     @LastName = 'Limonadovy'
-DECLARE @Gender UniChar(1) -- StringFixedLength
-SET     @Gender = 'M'
 
 INSERT INTO [Person]
 (
@@ -15,9 +9,9 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	'John',
+	'Limonadovy',
+	'M'
 )
 
 BeforeExecute

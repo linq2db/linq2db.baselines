@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -12,7 +10,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
+	1,
 	CAST(@id AS Int)
 )
 
