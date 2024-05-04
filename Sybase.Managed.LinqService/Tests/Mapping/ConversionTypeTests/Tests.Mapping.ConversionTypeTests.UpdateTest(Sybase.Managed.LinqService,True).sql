@@ -66,11 +66,9 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[t1].[Data] = '***III***'
-FROM
-	[TrimTestTable] [t1]
+	[Data] = '***III***'
 WHERE
-	[t1].[ID] = 3
+	[TrimTestTable].[ID] = 3
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -78,11 +76,9 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[t].[Data] = '***OOO***'
-FROM
-	[TrimTestTable] [t]
+	[Data] = '***OOO***'
 WHERE
-	[t].[Data] = '***XXX***'
+	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -90,11 +86,9 @@ BeforeExecute
 UPDATE
 	[TrimTestTable]
 SET
-	[t].[Data] = '***SSS***'
-FROM
-	[TrimTestTable] [t]
+	[Data] = '***SSS***'
 WHERE
-	[t].[Data] = '***HHH***'
+	[TrimTestTable].[Data] = '***HHH***'
 
 BeforeExecute
 -- Sybase.Managed Sybase

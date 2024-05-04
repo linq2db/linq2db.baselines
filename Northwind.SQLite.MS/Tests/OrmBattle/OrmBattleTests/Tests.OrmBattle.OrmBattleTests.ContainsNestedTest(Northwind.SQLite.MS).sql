@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @OrderDate  -- DateTime
-SET     @OrderDate = '2001-01-01'
+SET     @OrderDate = '2001-01-01 00:00:00.000'
 
 SELECT
 	[c_1].[CustomerID],
@@ -16,15 +16,14 @@ SELECT
 	[c_1].[Phone],
 	[c_1].[Fax],
 	CASE
-		WHEN EXISTS(
+		WHEN [c_1].[CustomerID] IN (
 			SELECT
-				*
+				[a_Customer].[CustomerID]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON ([o].[CustomerID] = [a_Customer].[CustomerID] OR [o].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 			WHERE
-				DateTime([o].[OrderDate]) > DateTime(@OrderDate) AND
-				([a_Customer].[CustomerID] = [c_1].[CustomerID] OR [a_Customer].[CustomerID] IS NULL AND [c_1].[CustomerID] IS NULL)
+				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', @OrderDate)
 		)
 			THEN 1
 		ELSE 0
