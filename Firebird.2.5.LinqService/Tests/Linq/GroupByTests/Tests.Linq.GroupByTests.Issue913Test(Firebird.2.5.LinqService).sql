@@ -36,8 +36,8 @@ INSERT INTO "Issue913Test"
 )
 VALUES
 (
-	@InstrumentID,
-	@TradingStatus
+	CAST(@InstrumentID AS Int),
+	CAST(@TradingStatus AS CHAR(1))
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Issue913Test"
 )
 VALUES
 (
-	@InstrumentID,
-	@TradingStatus
+	CAST(@InstrumentID AS Int),
+	CAST(@TradingStatus AS CHAR(1))
 )
 
 BeforeExecute
@@ -72,35 +72,28 @@ INSERT INTO "Issue913Test"
 )
 VALUES
 (
-	@InstrumentID,
-	@TradingStatus
+	CAST(@InstrumentID AS Int),
+	CAST(@TradingStatus AS CHAR(1))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."c1",
-	Count(*)
+	"g_2"."c1",
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN '1'
-				ELSE '0'
-			END as "Key_1",
-			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN '1'
+				WHEN "g_1"."TradingStatus" = 'D' THEN '1'
 				ELSE '0'
 			END as "c1"
 		FROM
-			"Issue913Test" "selectParam"
-	) "t1"
+			"Issue913Test" "g_1"
+	) "g_2"
 GROUP BY
-	"t1"."Key_1",
-	"t1"."c1"
+	"g_2"."c1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

@@ -86,50 +86,38 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`s`.`Name`
+	`m_1`.`Name`,
+	`d`.`Id`,
+	`d`.`Name`,
+	`d`.`Enabled`,
+	`d`.`ImageFullUrl`
 FROM
-	`Stone` `s`
+	(
+		SELECT DISTINCT
+			`s`.`Name`
+		FROM
+			`Stone` `s`
+		WHERE
+			`s`.`Enabled` = 1 AND `s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+			Char_Length(`s`.`ImageFullUrl`) > 0
+	) `m_1`
+		INNER JOIN `Stone` `d` ON `m_1`.`Name` = `d`.`Name`
 WHERE
-	`s`.`Enabled` = 1 AND `s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0
+	`d`.`Enabled` = 1 AND `d`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+	Char_Length(`d`.`ImageFullUrl`) > 0
+
+BeforeExecute
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`sG`.`Name`
+FROM
+	`Stone` `sG`
+WHERE
+	`sG`.`Enabled` = 1 AND `sG`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
+	Char_Length(`sG`.`ImageFullUrl`) > 0
 GROUP BY
-	`s`.`Name`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
-	`s`.`ImageFullUrl`
-FROM
-	`Stone` `s`
-WHERE
-	`s`.`Enabled` = 1 AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0 AND
-	`s`.`Name` = @Name
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group2'
-
-SELECT
-	`s`.`Id`,
-	`s`.`Name`,
-	`s`.`Enabled`,
-	`s`.`ImageFullUrl`
-FROM
-	`Stone` `s`
-WHERE
-	`s`.`Enabled` = 1 AND
-	`s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`s`.`ImageFullUrl`) > 0 AND
-	`s`.`Name` = @Name
+	`sG`.`Name`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
