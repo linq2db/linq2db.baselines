@@ -54,7 +54,7 @@ SELECT
 	"a_Association"."Id"
 FROM
 	"Issue3791Table" "t1"
-		LEFT JOIN "Issue3791GuidTable" "a_Association" ON ("t1"."OtherId" = RTrim(Char("a_Association"."Id")) OR "t1"."OtherId" IS NULL AND RTrim(Char("a_Association"."Id")) IS NULL)
+		LEFT JOIN "Issue3791GuidTable" "a_Association" ON "t1"."OtherId" = RTrim(Char("a_Association"."Id"))
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

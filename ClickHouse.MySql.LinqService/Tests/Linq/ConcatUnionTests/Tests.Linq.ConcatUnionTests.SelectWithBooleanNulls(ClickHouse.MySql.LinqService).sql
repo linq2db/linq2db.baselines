@@ -8,15 +8,13 @@ SELECT
 				*
 			FROM
 				Child t1
-		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
-	END,
+		) THEN true
+		ELSE false
+	END as a,
 	CASE
-		WHEN x.ParentID <> toInt32(0)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
-	END
+		WHEN x.ParentID <> 0 THEN true
+		ELSE false
+	END as b
 FROM
 	Parent x
 UNION ALL
@@ -26,12 +24,11 @@ SELECT
 			SELECT
 				*
 			FROM
-				Child t2
-		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
-	END,
-	NULL
+				Child t1
+		) THEN true
+		ELSE false
+	END as a,
+	toBool(NULL) as b
 FROM
 	Parent x_1
 

@@ -8,8 +8,8 @@ FROM
 	"Child" "c_1"
 UNION ALL
 SELECT
-	"c_2"."ParentID",
-	Cast(NULL as Int)
+	CAST(NULL AS Int),
+	"c_2"."ParentID"
 FROM
 	"Parent" "c_2"
 
