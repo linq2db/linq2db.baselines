@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp) as "c1",
+			CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp) as "Date_1",
 			"grp"."MoneyValue",
 			Extract(year from CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp)) as "Year_1",
 			Extract(month from CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp)) as "Month_1"
@@ -16,7 +16,7 @@ FROM
 			"LinqDataTypes" "grp"
 	) "grp_1"
 GROUP BY
-	"grp_1"."c1",
+	"grp_1"."Date_1",
 	"grp_1"."Year_1",
 	"grp_1"."Month_1"
 
