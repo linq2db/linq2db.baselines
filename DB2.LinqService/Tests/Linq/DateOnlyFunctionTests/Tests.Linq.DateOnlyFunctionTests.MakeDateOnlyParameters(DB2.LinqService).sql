@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p VarChar(5) -- String
-SET     @p = '2010-'
+DECLARE @year Integer(4) -- Int32
+SET     @year = 2010
 
 SELECT
-	"t"."c1"
+	CAST(LPad(@year, 4, '0') || '-' || LPad("t".ID, 2, '0') || '-01' AS Date)
 FROM
-	(
-		SELECT
-			Date(@p || Lpad("p".ID,2,'0') || '-01') as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	To_Number(To_Char("t"."c1", 'YYYY')) = 2010
+	Extract(year from CAST(LPad(@year, 4, '0') || '-' || LPad("t".ID, 2, '0') || '-01' AS Date)) = 2010
 
