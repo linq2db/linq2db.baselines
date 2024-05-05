@@ -41,19 +41,19 @@ FROM
 	(
 		SELECT
 			COUNT(*) as [COUNT_1],
-			[it_1].[c1] as [Name],
-			[it_1].[Title] as [Value_1]
+			[it_1].[Name],
+			[it_1].[Value_1]
 		FROM
 			(
 				SELECT
-					N'Title' as [c1],
-					[it].[Title]
+					N'Title' as [Name],
+					[it].[Title] as [Value_1]
 				FROM
 					[odata_person] [it]
 			) [it_1]
 		GROUP BY
-			[it_1].[c1],
-			[it_1].[Title]
+			[it_1].[Name],
+			[it_1].[Value_1]
 	) [it_2]
 ORDER BY
 	[it_2].[COUNT_1]
