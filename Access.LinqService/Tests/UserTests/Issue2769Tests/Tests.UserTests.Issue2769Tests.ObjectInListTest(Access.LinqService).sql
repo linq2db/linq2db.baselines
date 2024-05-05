@@ -14,12 +14,6 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @default Integer -- Int32
-SET     @default = 0
-DECLARE @default_1 Integer -- Int32
-SET     @default_1 = 0
-DECLARE @default_2 Integer -- Int32
-SET     @default_2 = 0
 
 SELECT
 	[a].[Id],
@@ -27,7 +21,7 @@ SELECT
 FROM
 	[SampleClass] [a]
 WHERE
-	([a].[Id] = 0 AND Iif([a].[NullValue] IS NULL, @default, [a].[NullValue]) = 0 OR [a].[Id] = 1 AND Iif([a].[NullValue] IS NULL, @default_1, [a].[NullValue]) = 1 OR [a].[Id] = 2 AND Iif([a].[NullValue] IS NULL, @default_2, [a].[NullValue]) = 2)
+	([a].[Id] = 0 AND ([a].[NullValue] = 0 AND [a].[NullValue] IS NOT NULL OR [a].[NullValue] IS NULL) OR [a].[Id] = 1 AND [a].[NullValue] = 1 AND [a].[NullValue] IS NOT NULL OR [a].[Id] = 2 AND [a].[NullValue] = 2 AND [a].[NullValue] IS NOT NULL)
 
 BeforeExecute
 -- Access AccessOleDb
