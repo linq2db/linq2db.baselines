@@ -33,13 +33,20 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Count(*)
+	[it_1].[Name],
+	[it_1].[Value_1],
+	COUNT(*)
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
+		FROM
+			[odata_person] [it]
+	) [it_1]
 GROUP BY
-	[selectParam].[Title]
+	[it_1].[Name],
+	[it_1].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
