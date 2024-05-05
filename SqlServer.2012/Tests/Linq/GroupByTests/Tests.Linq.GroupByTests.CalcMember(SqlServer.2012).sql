@@ -2,12 +2,12 @@
 -- SqlServer.2012
 
 SELECT
-	[groupedData_1].[Value_1],
+	[groupedData_1].[c1],
 	COUNT(*)
 FROM
 	(
 		SELECT
-			IIF([child].[FirstName] = N'John', [child].[FirstName], N'a') as [Value_1]
+			IIF([child].[FirstName] = N'John', [child].[FirstName], N'a') as [c1]
 		FROM
 			[Parent] [groupedData],
 			[Person] [child]
@@ -15,5 +15,5 @@ FROM
 			[child].[PersonID] = [groupedData].[ParentID]
 	) [groupedData_1]
 GROUP BY
-	[groupedData_1].[Value_1]
+	[groupedData_1].[c1]
 
