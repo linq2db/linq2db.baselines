@@ -23,17 +23,17 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t2`.`c1`,
+	`t2`.`ParentID`,
 	`t2`.`ChildID`
 FROM
 	(
 		SELECT
-			`t1`.`ParentID` + 1 as `c1`,
+			`t1`.`ParentID` + 1 as `ParentID`,
 			`t1`.`ChildID`
 		FROM
 			`GrandChild` `t1`
 	) `t2`
 GROUP BY
-	`t2`.`c1`,
+	`t2`.`ParentID`,
 	`t2`.`ChildID`
 

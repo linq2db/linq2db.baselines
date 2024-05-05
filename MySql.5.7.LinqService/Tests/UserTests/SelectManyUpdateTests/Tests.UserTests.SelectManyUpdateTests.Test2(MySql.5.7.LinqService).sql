@@ -10,5 +10,5 @@ UPDATE
 SET
 	`a_Children`.`ChildID` = @ChildID
 WHERE
-	1 = 0 AND `a_Children_1`.`ParentID` = `a_Children`.`ChildID`
+	1 = 0
 
