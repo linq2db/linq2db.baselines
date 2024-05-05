@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Parameter1  -- Int32
+SET     @Parameter1 = 2
 
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
 FROM
-	"Child" "c_1",
-	"GetParentByID"(2) "p"
+	"Child" "c_1"
+		CROSS JOIN "GetParentByID"(?) "p"
 
