@@ -107,7 +107,6 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.Id,
 	p.Id
 FROM
 	EventScheduleItem p

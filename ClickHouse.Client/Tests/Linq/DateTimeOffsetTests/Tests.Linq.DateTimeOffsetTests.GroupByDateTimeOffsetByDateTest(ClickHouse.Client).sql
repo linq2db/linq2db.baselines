@@ -45,19 +45,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x_1.Date_1,
+	x_1.c1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toDate32(x.TransactionDate) as Date_1
+			toDate32(x.TransactionDate) as c1
 		FROM
 			Transactions x
 	) x_1
 GROUP BY
-	x_1.Date_1
+	x_1.c1
 ORDER BY
-	x_1.Date_1
+	x_1.c1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
