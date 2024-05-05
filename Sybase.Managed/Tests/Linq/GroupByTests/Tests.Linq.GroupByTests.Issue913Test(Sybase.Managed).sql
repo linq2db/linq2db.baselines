@@ -34,7 +34,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[g_2].[c1],
+	[g_2].[IsDelisted],
 	COUNT(*)
 FROM
 	(
@@ -42,12 +42,12 @@ FROM
 			CASE
 				WHEN [g_1].[TradingStatus] = 'D' THEN 1
 				ELSE 0
-			END as [c1]
+			END as [IsDelisted]
 		FROM
 			[Issue913Test] [g_1]
 	) [g_2]
 GROUP BY
-	[g_2].[c1]
+	[g_2].[IsDelisted]
 
 BeforeExecute
 -- Sybase.Managed Sybase
