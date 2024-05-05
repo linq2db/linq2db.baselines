@@ -15,20 +15,20 @@ FROM
 	) "t2"
 UNION
 SELECT
-	"t4"."Month_1",
-	"t4"."Year_1",
+	"t4"."month_1",
+	"t4"."year_1",
 	1
 FROM
 	(
 		SELECT
-			Month("t3"."DateTimeValue") as "Month_1",
-			Year("t3"."DateTimeValue") as "Year_1"
+			Month("t3"."DateTimeValue") as "month_1",
+			Year("t3"."DateTimeValue") as "year_1"
 		FROM
 			"LinqDataTypes" "t3"
 	) "t4"
 GROUP BY
-	"t4"."Month_1",
-	"t4"."Year_1"
+	"t4"."month_1",
+	"t4"."year_1"
 UNION
 SELECT
 	Year("t5"."DateTimeValue"),
