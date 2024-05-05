@@ -91,8 +91,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -101,8 +99,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4
