@@ -2,18 +2,16 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[b_1].[Date_2],
+	[b_1].[Date_1],
 	COUNT(*)
 FROM
 	(
 		SELECT
-			Date([b].[DateTimeValue]) as [Date_1],
-			Date([b].[DateTimeValue]) as [Date_2]
+			Date([b].[DateTimeValue]) as [Date_1]
 		FROM
 			[LinqDataTypes] [b]
 				INNER JOIN [Parent] [p] ON [b].[ID] = [p].[ParentID]
 	) [b_1]
 GROUP BY
-	[b_1].[Date_1],
-	[b_1].[Date_2]
+	[b_1].[Date_1]
 
