@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[t2].[c1] as [Key_1],
+	[t2].[c1],
 	COUNT(*) as [COUNT_1]
 FROM
 	(
