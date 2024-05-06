@@ -33,15 +33,30 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Avg([selectParam].[YearsExperience])
+	[it_2].[Name],
+	[it_2].[Value_1],
+	[it_2].[AVG_1]
 FROM
-	[odata_person] [selectParam]
-GROUP BY
-	[selectParam].[Title]
+	(
+		SELECT
+			AVG([it_1].[Value_2]) as [AVG_1],
+			[it_1].[Name],
+			[it_1].[Value_1]
+		FROM
+			(
+				SELECT
+					N'Title' as [Name],
+					[it].[Title] as [Value_1],
+					[it].[YearsExperience] as [Value_2]
+				FROM
+					[odata_person] [it]
+			) [it_1]
+		GROUP BY
+			[it_1].[Name],
+			[it_1].[Value_1]
+	) [it_2]
 ORDER BY
-	Avg([selectParam].[YearsExperience])
+	[it_2].[AVG_1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
