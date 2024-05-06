@@ -57,21 +57,29 @@ FROM
 			) [t2]
 				CROSS APPLY (
 					SELECT
-						[d_2].[Month_1]
+						[d_2].[Month_2] as [Month_1]
 					FROM
 						(
 							SELECT
-								DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
-								DatePart(month, [a_Orders].[OrderDate]) as [Month_1]
+								[mg].[Month_1],
+								DatePart(month, [mg].[OrderDate]) as [Month_2]
 							FROM
-								[Orders] [a_Orders]
+								(
+									SELECT
+										DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
+										DatePart(month, [a_Orders].[OrderDate]) as [Month_1],
+										[a_Orders].[OrderDate]
+									FROM
+										[Orders] [a_Orders]
+									WHERE
+										[t2].[CustomerID] = [a_Orders].[CustomerID]
+								) [mg]
 							WHERE
-								[t2].[CustomerID] = [a_Orders].[CustomerID]
+								([t2].[Year_1] = [mg].[Year_1] OR [t2].[Year_1] IS NULL AND [mg].[Year_1] IS NULL)
 						) [d_2]
-					WHERE
-						([t2].[Year_1] = [d_2].[Year_1] OR [t2].[Year_1] IS NULL AND [d_2].[Year_1] IS NULL)
 					GROUP BY
-						[d_2].[Month_1]
+						[d_2].[Month_1],
+						[d_2].[Month_2]
 				) [d_3]
 	) [m_1]
 		INNER JOIN [Orders] [d_4] ON [m_1].[CustomerID] = [d_4].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Month_1] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Month_1] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
@@ -82,7 +90,8 @@ BeforeExecute
 SELECT
 	[m_1].[CustomerID],
 	[m_1].[Year_1],
-	[d_3].[Month_1]
+	[d_3].[Month_1],
+	[d_3].[Month_2]
 FROM
 	(
 		SELECT DISTINCT
@@ -113,21 +122,30 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT
-				[d_2].[Month_1]
+				[d_2].[Month_1],
+				[d_2].[Month_2]
 			FROM
 				(
 					SELECT
-						DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
-						DatePart(month, [a_Orders].[OrderDate]) as [Month_1]
+						[mg].[Month_1],
+						DatePart(month, [mg].[OrderDate]) as [Month_2]
 					FROM
-						[Orders] [a_Orders]
+						(
+							SELECT
+								DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
+								DatePart(month, [a_Orders].[OrderDate]) as [Month_1],
+								[a_Orders].[OrderDate]
+							FROM
+								[Orders] [a_Orders]
+							WHERE
+								[m_1].[CustomerID] = [a_Orders].[CustomerID]
+						) [mg]
 					WHERE
-						[m_1].[CustomerID] = [a_Orders].[CustomerID]
+						([m_1].[Year_1] = [mg].[Year_1] OR [m_1].[Year_1] IS NULL AND [mg].[Year_1] IS NULL)
 				) [d_2]
-			WHERE
-				([m_1].[Year_1] = [d_2].[Year_1] OR [m_1].[Year_1] IS NULL AND [d_2].[Year_1] IS NULL)
 			GROUP BY
-				[d_2].[Month_1]
+				[d_2].[Month_1],
+				[d_2].[Month_2]
 		) [d_3]
 
 BeforeExecute
