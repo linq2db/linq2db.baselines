@@ -72,7 +72,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	g_2.c1,
+	g_2.IsDelisted,
 	COUNT(*)
 FROM
 	(
@@ -80,12 +80,12 @@ FROM
 			CASE
 				WHEN g_1.TradingStatus = 'D' THEN 't'
 				ELSE 'f'
-			END::BOOLEAN as c1
+			END::BOOLEAN as IsDelisted
 		FROM
 			Issue913Test g_1
 	) g_2
 GROUP BY
-	g_2.c1
+	g_2.IsDelisted
 
 BeforeExecute
 -- Informix.DB2 Informix
