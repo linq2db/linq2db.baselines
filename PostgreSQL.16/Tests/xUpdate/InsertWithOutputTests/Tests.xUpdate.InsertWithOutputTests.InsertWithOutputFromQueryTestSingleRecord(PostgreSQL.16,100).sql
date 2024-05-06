@@ -77,17 +77,15 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 100
-DECLARE @Value Integer -- Int32
-SET     @Value = 100
-DECLARE @p Integer -- Int32
-SET     @p = 100
+DECLARE @param Integer -- Int32
+SET     @param = 100
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 100
 
 SELECT
-	s."Id" + :Id,
-	s."Value" + :Value,
-	s."ValueStr" || :p
+	s."Id" + :param,
+	s."Value" + :param,
+	s."ValueStr" || :param_1
 FROM
 	"TableWithData" s
 WHERE
