@@ -29,7 +29,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -43,7 +43,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -57,7 +57,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -71,7 +71,7 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -91,9 +91,9 @@ INSERT INTO "GrandChild"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@LeftId AS Int),
-	CAST(@RightId AS Int)
+	@Id,
+	@LeftId,
+	@RightId
 )
 
 BeforeExecute

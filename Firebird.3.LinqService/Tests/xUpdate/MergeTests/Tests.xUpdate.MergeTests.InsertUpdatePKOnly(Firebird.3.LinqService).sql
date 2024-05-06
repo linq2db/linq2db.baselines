@@ -32,7 +32,7 @@ INSERT INTO "PKOnlyTable"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute

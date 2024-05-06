@@ -49,7 +49,7 @@ INSERT INTO "Issue1279Table"
 )
 VALUES
 (
-	CAST(@CharFld AS CHAR(1))
+	@CharFld
 )
 
 BeforeExecute

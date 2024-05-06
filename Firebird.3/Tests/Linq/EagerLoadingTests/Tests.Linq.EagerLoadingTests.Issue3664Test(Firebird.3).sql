@@ -32,7 +32,7 @@ INSERT INTO "Test3664"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
