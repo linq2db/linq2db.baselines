@@ -173,10 +173,10 @@ IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '00000000-0000-0000-0000-000000000000'
-DECLARE @Id_1 UniqueIdentifier -- Guid
-SET     @Id_1 = '00000000-0000-0000-0000-000000000000'
+DECLARE @Empty UniqueIdentifier -- Guid
+SET     @Empty = '00000000-0000-0000-0000-000000000000'
+DECLARE @Empty_1 UniqueIdentifier -- Guid
+SET     @Empty_1 = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_2].[Id],
@@ -196,7 +196,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Id OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL), 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -250,7 +250,7 @@ SELECT
 					[y].[Id] = [x_5].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
 			))
 	), 1, 0),
-	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Id_1 OR [a2].[Id] IS NULL), 1, 0),
+	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty_1 OR [a2].[Id] IS NULL), 1, 0),
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],
