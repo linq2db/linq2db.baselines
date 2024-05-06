@@ -2,16 +2,13 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	l.ParentID
-FROM
-	Child l
-LIMIT toInt32(1)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	toInt32(1)
+	(
+		SELECT
+			l.ParentID + 1
+		FROM
+			Child l
+		LIMIT 1
+	)
 FROM
 	Parent sep
 
