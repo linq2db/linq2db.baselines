@@ -2,20 +2,20 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t2].[Month_1],
-	[t2].[Year_1],
+	[t2].[month_1],
+	[t2].[year_1],
 	1
 FROM
 	(
 		SELECT
-			CAST(strftime('%m', [t1].[DateTimeValue]) AS INTEGER) as [Month_1],
-			CAST(strftime('%Y', [t1].[DateTimeValue]) AS INTEGER) as [Year_1]
+			CAST(strftime('%m', [t1].[DateTimeValue]) AS INTEGER) as [month_1],
+			CAST(strftime('%Y', [t1].[DateTimeValue]) AS INTEGER) as [year_1]
 		FROM
 			[LinqDataTypes] [t1]
 	) [t2]
 GROUP BY
-	[t2].[Month_1],
-	[t2].[Year_1]
+	[t2].[month_1],
+	[t2].[year_1]
 UNION
 SELECT
 	[t3].[SmallIntValue],
