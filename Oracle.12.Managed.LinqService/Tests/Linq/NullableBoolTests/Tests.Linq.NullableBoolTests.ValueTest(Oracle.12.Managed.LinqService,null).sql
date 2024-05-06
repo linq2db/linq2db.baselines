@@ -106,8 +106,6 @@ SELECT
 	t."Value"
 FROM
 	"NullableBoolClass" t
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
