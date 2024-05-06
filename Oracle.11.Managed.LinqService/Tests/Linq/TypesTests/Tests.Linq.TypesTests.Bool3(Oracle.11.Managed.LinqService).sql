@@ -7,5 +7,5 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	(1 = 0 OR p."ParentID" > 2)
+	p."ParentID" > 2
 

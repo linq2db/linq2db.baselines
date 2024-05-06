@@ -4,14 +4,14 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	t1."Diagnosis",
-	t1."PersonID",
+	t1."value_1",
+	t1."id",
 	t1.AVG_1
 FROM
 	(
 		SELECT
-			a_Patient."Diagnosis",
-			a_Patient."PersonID",
+			a_Patient."Diagnosis" as "value_1",
+			a_Patient."PersonID" as "id",
 			AVG(auto16031."PersonID") as AVG_1
 		FROM
 			"Person" auto16031
