@@ -250,17 +250,15 @@ CREATE TABLE IF NOT EXISTS `DestinationTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 100
-DECLARE @Value Int32
-SET     @Value = 100
-DECLARE @p Null -- Object
-SET     @p = 100
+DECLARE @param Int32
+SET     @param = 100
+DECLARE @param_1 Int32
+SET     @param_1 = 100
 
 SELECT
-	`s`.`Id` + @Id,
-	`s`.`Value` + @Value,
-	Concat(`s`.`ValueStr`, @p)
+	`s`.`Id` + @param,
+	`s`.`Value` + @param,
+	Concat(`s`.`ValueStr`, @param_1)
 FROM
 	`TableWithData` `s`
 WHERE
