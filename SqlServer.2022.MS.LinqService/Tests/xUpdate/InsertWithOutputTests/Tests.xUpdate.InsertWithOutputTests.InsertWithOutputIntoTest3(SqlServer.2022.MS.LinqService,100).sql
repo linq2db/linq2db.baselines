@@ -54,11 +54,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 100
+DECLARE @param Int -- Int32
+SET     @param = 100
 
 SELECT
-	[c_1].[ParentID] - @ParentID,
+	[c_1].[ParentID] - @param,
 	[c_1].[ChildID]
 FROM
 	[TInserted] [c_1]
