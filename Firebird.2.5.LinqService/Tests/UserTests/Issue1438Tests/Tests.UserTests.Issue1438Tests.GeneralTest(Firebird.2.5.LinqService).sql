@@ -51,7 +51,7 @@ INSERT INTO "Issue1438"
 )
 VALUES
 (
-	CAST(@Has AS CHAR(1))
+	@Has
 )
 RETURNING
 	"Id"

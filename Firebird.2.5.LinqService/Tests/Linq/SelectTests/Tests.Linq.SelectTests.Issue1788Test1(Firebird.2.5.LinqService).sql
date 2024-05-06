@@ -36,8 +36,8 @@ INSERT INTO "Table1788"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int)
+	@Id,
+	@Value1
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Table1788"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int)
+	@Id,
+	@Value1
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Table1788"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int)
+	@Id,
+	@Value1
 )
 
 BeforeExecute

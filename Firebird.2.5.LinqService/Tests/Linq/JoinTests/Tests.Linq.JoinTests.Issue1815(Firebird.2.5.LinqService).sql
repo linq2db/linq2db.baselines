@@ -40,9 +40,9 @@ INSERT INTO "StLink"
 )
 VALUES
 (
-	CAST(@InId AS Int),
-	CAST(@InMaxQuantity AS Float),
-	CAST(@InMinQuantity AS Float)
+	@InId,
+	@InMaxQuantity,
+	@InMinQuantity
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "StLink"
 )
 VALUES
 (
-	CAST(@InId AS Int),
-	CAST(@InMaxQuantity AS Float),
-	CAST(@InMinQuantity AS Float)
+	@InId,
+	@InMaxQuantity,
+	@InMinQuantity
 )
 
 BeforeExecute
@@ -109,9 +109,9 @@ INSERT INTO "EdtLink"
 )
 VALUES
 (
-	CAST(@InId AS Int),
-	CAST(@InMaxQuantity AS Float),
-	CAST(@InMinQuantity AS Float)
+	@InId,
+	@InMaxQuantity,
+	@InMinQuantity
 )
 
 BeforeExecute

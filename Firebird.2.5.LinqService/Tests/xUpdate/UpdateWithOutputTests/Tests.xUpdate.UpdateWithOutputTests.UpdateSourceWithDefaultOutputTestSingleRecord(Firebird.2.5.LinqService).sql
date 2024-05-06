@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -126,9 +126,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -148,9 +148,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -170,9 +170,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -192,9 +192,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute
@@ -214,9 +214,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(4))
+	@Id,
+	@Value,
+	@ValueStr
 )
 
 BeforeExecute

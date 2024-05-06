@@ -94,8 +94,8 @@ INSERT INTO "temp_table1"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS Int)
+	@ID,
+	@Value
 )
 
 BeforeExecute
