@@ -17,12 +17,19 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[a].[Id],
-	[a].[NullValue]
+	[a_1].[RECORDNAME],
+	[a_1].[NullValue]
 FROM
-	[SampleClass] [a]
+	(
+		SELECT
+			[a].[Id] as [RECORDNAME],
+			IIF([a].[NullValue] IS NOT NULL, [a].[NullValue], 0) as [KEYNUMB],
+			[a].[NullValue]
+		FROM
+			[SampleClass] [a]
+	) [a_1]
 WHERE
-	([a].[Id] = 0 AND ([a].[NullValue] = 0 AND [a].[NullValue] IS NOT NULL OR [a].[NullValue] IS NULL) OR [a].[Id] = 1 AND [a].[NullValue] = 1 AND [a].[NullValue] IS NOT NULL OR [a].[Id] = 2 AND [a].[NullValue] = 2 AND [a].[NullValue] IS NOT NULL)
+	([a_1].[RECORDNAME] = 0 AND [a_1].[KEYNUMB] = 0 OR [a_1].[RECORDNAME] = 1 AND [a_1].[KEYNUMB] = 1 OR [a_1].[RECORDNAME] = 2 AND [a_1].[KEYNUMB] = 2)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
