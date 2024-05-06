@@ -2,7 +2,6 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t1"."Id_1",
 	"t1"."Id",
 	"t1"."ParentId"
 FROM
@@ -10,8 +9,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"l"."ParentID" + 1 as "Id",
-				"l"."ParentID" as "ParentId",
-				"l"."ParentID" + 1 as "Id_1"
+				"l"."ParentID" as "ParentId"
 			FROM
 				"Child" "l"
 			FETCH NEXT 1 ROWS ONLY

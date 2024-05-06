@@ -1,17 +1,14 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	"t1"."Child"
+	(
+		SELECT
+			"l"."ParentID" + 1
+		FROM
+			"Child" "l"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" "sep"
-		LEFT JOIN LATERAL (
-			SELECT
-				"l"."ParentID" as "Child"
-			FROM
-				"Child" "l"
-			FETCH NEXT @take ROWS ONLY
-		) "t1" ON 1=1
 
