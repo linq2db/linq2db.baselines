@@ -32,7 +32,7 @@ INSERT INTO "SelectExpressionTable"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute

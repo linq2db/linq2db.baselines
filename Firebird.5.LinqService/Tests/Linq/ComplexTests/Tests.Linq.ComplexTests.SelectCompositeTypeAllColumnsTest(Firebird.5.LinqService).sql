@@ -42,10 +42,10 @@ INSERT INTO "User"
 )
 VALUES
 (
-	CAST(@Residence_City AS VARCHAR(10)),
-	CAST(@Name AS VARCHAR(6)),
-	CAST(@Residence_Street AS VARCHAR(10)),
-	CAST(@Residence_Building AS Int)
+	@Residence_City,
+	@Name,
+	@Residence_Street,
+	@Residence_Building
 )
 
 BeforeExecute

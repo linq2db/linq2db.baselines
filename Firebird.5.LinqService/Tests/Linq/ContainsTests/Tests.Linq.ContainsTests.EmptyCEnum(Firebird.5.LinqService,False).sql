@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS VARCHAR(1)),
-	CAST(@CEnum AS VarChar(20) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS VARCHAR(3)),
-	CAST(@CEnum AS VarChar(12) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -91,8 +91,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -101,8 +99,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4

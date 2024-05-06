@@ -32,7 +32,7 @@ INSERT INTO "Test3664"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -73,8 +73,8 @@ INSERT INTO "Test3664Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TestId AS Int)
+	@Id,
+	@TestId
 )
 
 BeforeExecute
@@ -91,8 +91,8 @@ INSERT INTO "Test3664Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TestId AS Int)
+	@Id,
+	@TestId
 )
 
 BeforeExecute

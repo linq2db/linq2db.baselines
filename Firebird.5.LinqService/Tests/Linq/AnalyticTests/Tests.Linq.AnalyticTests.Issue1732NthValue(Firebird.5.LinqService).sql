@@ -38,9 +38,9 @@ INSERT INTO "Position"
 )
 VALUES
 (
-	CAST(@Group AS Int),
-	CAST(@Order AS Int),
-	CAST(@Id AS Int)
+	@Group,
+	@Order,
+	@Id
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "Position"
 )
 VALUES
 (
-	CAST(@Group AS Int),
-	CAST(@Order AS Int),
-	CAST(@Id AS Int)
+	@Group,
+	@Order,
+	@Id
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "Position"
 )
 VALUES
 (
-	CAST(@Group AS Int),
-	CAST(@Order AS Int),
-	CAST(@Id AS Int)
+	@Group,
+	@Order,
+	@Id
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "Position"
 )
 VALUES
 (
-	CAST(@Group AS Int),
-	CAST(@Order AS Int),
-	CAST(@Id AS Int)
+	@Group,
+	@Order,
+	@Id
 )
 
 BeforeExecute
