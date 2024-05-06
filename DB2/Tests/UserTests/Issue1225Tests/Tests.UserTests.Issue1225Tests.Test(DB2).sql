@@ -57,7 +57,7 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -71,7 +71,7 @@ INSERT INTO "Task"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -91,34 +91,34 @@ INSERT INTO "TaskStage"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TaskId AS Int),
-	CAST(@Actual AS char)
+	@Id,
+	@TaskId,
+	@Actual
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"it_1"."c1",
-	"it_1"."Id",
+	"it_1"."Name",
+	"it_1"."Value_1",
 	SUM(CASE
-		WHEN "it_1"."Id_1" IS NULL THEN NULL
-		ELSE "it_1"."Id_1"
+		WHEN "it_1"."Id" IS NULL THEN NULL
+		ELSE "it_1"."Id"
 	END)
 FROM
 	(
 		SELECT
-			'Id' as "c1",
-			"it"."Id",
-			"a_ActualStage"."Id" as "Id_1"
+			'Id' as "Name",
+			"it"."Id" as "Value_1",
+			"a_ActualStage"."Id"
 		FROM
 			"Task" "it"
 				LEFT JOIN "TaskStage" "a_ActualStage" ON "it"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = 1
 	) "it_1"
 GROUP BY
-	"it_1"."c1",
-	"it_1"."Id"
+	"it_1"."Name",
+	"it_1"."Value_1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

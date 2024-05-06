@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@Value1 AS Int),
-	CAST(@ParentID AS Int)
+	@Value1,
+	@ParentID
 )
 
 BeforeExecute

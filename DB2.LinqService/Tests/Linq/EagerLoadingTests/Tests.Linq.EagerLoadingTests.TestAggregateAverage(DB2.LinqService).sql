@@ -44,10 +44,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -122,10 +122,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -148,10 +148,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -200,10 +200,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(4)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -278,10 +278,10 @@ INSERT INTO "MasterClass"
 )
 VALUES
 (
-	CAST(@Id1 AS Int),
-	CAST(@Id2 AS Int),
-	CAST(@Value AS NVarChar(5)),
-	CAST(@ByteValues AS VARBINARY(32672))
+	@Id1,
+	@Id2,
+	@Value,
+	@ByteValues
 )
 
 BeforeExecute
@@ -326,9 +326,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -348,9 +348,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -370,9 +370,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -392,9 +392,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -414,9 +414,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -436,9 +436,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -458,9 +458,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -480,9 +480,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -502,9 +502,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -524,9 +524,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -546,9 +546,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -568,9 +568,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -590,9 +590,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -612,9 +612,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -634,9 +634,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -656,9 +656,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -678,9 +678,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -700,9 +700,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -722,9 +722,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -744,9 +744,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -766,9 +766,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -788,9 +788,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -810,9 +810,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -832,9 +832,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute
@@ -854,9 +854,9 @@ INSERT INTO "DetailClass"
 )
 VALUES
 (
-	CAST(@DetailId AS Int),
-	CAST(@MasterId AS Int),
-	CAST(@DetailValue AS NVarChar(16))
+	@DetailId,
+	@MasterId,
+	@DetailValue
 )
 
 BeforeExecute

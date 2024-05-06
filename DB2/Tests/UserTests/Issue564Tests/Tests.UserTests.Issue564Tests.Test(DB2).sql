@@ -38,8 +38,8 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	CAST(@Type AS NVarChar(9)),
-	CAST(@StringValue AS NVarChar(9))
+	@Type,
+	@StringValue
 )
 
 BeforeExecute
@@ -56,8 +56,8 @@ INSERT INTO "Parent564"
 )
 VALUES
 (
-	CAST(@Type AS NVarChar(9)),
-	CAST(@IntValue AS Int)
+	@Type,
+	@IntValue
 )
 
 BeforeExecute

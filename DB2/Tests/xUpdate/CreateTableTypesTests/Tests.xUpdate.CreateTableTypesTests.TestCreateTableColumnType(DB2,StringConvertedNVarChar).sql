@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@StringConverted AS NVarChar(4))
+	@Id,
+	@StringConverted
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@StringConverted AS NVarChar(53))
+	@Id,
+	@StringConverted
 )
 
 BeforeExecute
