@@ -2,24 +2,23 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	(
-		SELECT
-			SUM([a_Children].[ParentID])
-		FROM
-			[Child] [a_Children]
-		WHERE
-			[p].[ParentID] = [a_Children].[ParentID]
-	) / 2
+	[p_1].[ParentID],
+	[p_1].[Sum_1]
 FROM
-	[Parent] [p]
-WHERE
 	(
 		SELECT
-			SUM([a_Children].[ParentID])
+			(
+				SELECT
+					SUM([a_Children].[ParentID])
+				FROM
+					[Child] [a_Children]
+				WHERE
+					[p].[ParentID] = [a_Children].[ParentID]
+			) / 2 as [Sum_1],
+			[p].[ParentID]
 		FROM
-			[Child] [a_Children]
-		WHERE
-			[p].[ParentID] = [a_Children].[ParentID]
-	) / 2 > 1
+			[Parent] [p]
+	) [p_1]
+WHERE
+	[p_1].[Sum_1] > 1
 

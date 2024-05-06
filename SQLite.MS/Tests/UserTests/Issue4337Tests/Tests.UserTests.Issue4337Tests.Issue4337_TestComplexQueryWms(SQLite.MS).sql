@@ -164,10 +164,10 @@ CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Guid
-SET     @Id = X'00000000000000000000000000000000'
-DECLARE @Id_1  -- Guid
-SET     @Id_1 = X'00000000000000000000000000000000'
+DECLARE @Empty  -- Guid
+SET     @Empty = X'00000000000000000000000000000000'
+DECLARE @Empty_1  -- Guid
+SET     @Empty_1 = X'00000000000000000000000000000000'
 
 SELECT
 	[x_2].[Id],
@@ -188,7 +188,7 @@ SELECT
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
 	CASE
-		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Id OR [a1].[Id] IS NULL)
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -254,7 +254,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Id_1 OR [a2].[Id] IS NULL)
+		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty_1 OR [a2].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
