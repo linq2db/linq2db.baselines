@@ -280,17 +280,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Id Int -- Int32
-SET     @Id = 200
-DECLARE @Value Int -- Int32
-SET     @Value = 200
-DECLARE @p Variant -- Object
-SET     @p = 200
+DECLARE @param Int -- Int32
+SET     @param = 200
+DECLARE @param_1 Int -- Int32
+SET     @param_1 = 200
 
 SELECT
-	[s].[Id] + @Id,
-	[s].[Value] + @Value,
-	[s].[ValueStr] + CAST(@p AS VarChar(Max))
+	[s].[Id] + @param,
+	[s].[Value] + @param,
+	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
