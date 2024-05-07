@@ -1,5 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+
+DELETE [c_1]
+FROM
+	[Parent] [c_1]
+WHERE
+	[c_1].[ParentID] >= 1000
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -180,39 +189,31 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-UPDATE
-	[u]
-SET
-	[u].[Value1] = [t1].[c1]
+DELETE [t1]
 FROM
-	[Parent] [u],
 	(
-		SELECT TOP (@take)
-			1 as [c1],
-			[x].[ParentID],
-			[x].[Value1]
+		SELECT
+			*
 		FROM
 			[Parent] [x]
 		WHERE
 			[x].[ParentID] > 1000
 		ORDER BY
-			[x].[ParentID] DESC
+			1
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 	) [t1]
-WHERE
-	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-SELECT
-	[p].[Value1]
+DELETE [c_1]
 FROM
-	[Parent] [p]
+	[Parent] [c_1]
 WHERE
-	[p].[ParentID] >= 1000
-ORDER BY
-	[p].[ParentID]
+	[c_1].[ParentID] >= 1000
 
