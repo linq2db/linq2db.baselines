@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table_Cache"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(4))
+	@Id,
+	@Name
 )
 
 BeforeExecute
