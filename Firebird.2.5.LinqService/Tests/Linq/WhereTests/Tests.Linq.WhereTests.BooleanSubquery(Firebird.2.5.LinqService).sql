@@ -36,8 +36,8 @@ INSERT INTO "WhereWithBool"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS CHAR(1))
+	@Id,
+	@BoolValue
 )
 
 BeforeExecute

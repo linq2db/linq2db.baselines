@@ -36,8 +36,8 @@ INSERT INTO "BaseTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BaseValue AS Int)
+	@Id,
+	@BaseValue
 )
 
 BeforeExecute

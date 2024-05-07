@@ -40,9 +40,9 @@ INSERT INTO "element_services"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(18)),
-	CAST(@is_process_service AS CHAR(1)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@is_process_service,
+	@is_deleted
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "element_services"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(18)),
-	CAST(@is_process_service AS CHAR(1)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@is_process_service,
+	@is_deleted
 )
 
 BeforeExecute
@@ -109,9 +109,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -131,9 +131,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -153,9 +153,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -175,9 +175,9 @@ INSERT INTO "component_categories"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(21)),
-	CAST(@category_id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@category_id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(21)),
-	CAST(@category_id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@category_id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -278,10 +278,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(21)),
-	CAST(@category_id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@category_id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute
@@ -304,10 +304,10 @@ INSERT INTO "Components"
 )
 VALUES
 (
-	CAST(@id AS VARCHAR(21)),
-	CAST(@category_id AS VARCHAR(20)),
-	CAST(@service_id AS VARCHAR(18)),
-	CAST(@is_deleted AS CHAR(1))
+	@id,
+	@category_id,
+	@service_id,
+	@is_deleted
 )
 
 BeforeExecute

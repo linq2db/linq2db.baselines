@@ -23,8 +23,8 @@ INSERT INTO "aa"
 )
 VALUES
 (
-	CAST(@bb AS Int),
-	CAST(@cc AS VARCHAR(5))
+	@bb,
+	@cc
 )
 
 BeforeExecute

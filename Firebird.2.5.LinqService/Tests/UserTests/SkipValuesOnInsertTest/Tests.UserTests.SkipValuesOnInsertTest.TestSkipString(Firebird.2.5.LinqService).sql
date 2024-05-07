@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Age AS Int)
+	@Id,
+	@Age
 )
 
 BeforeExecute
@@ -67,8 +67,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Age AS Int)
+	@Id,
+	@Age
 )
 
 BeforeExecute
