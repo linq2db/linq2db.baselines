@@ -36,7 +36,7 @@ SET     @to_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
 SELECT
 	MIN(tgGroup_1."TranslatedMessage1"),
 	tgGroup_1."TranslatedMessageGroup",
-	tgGroup_1."Hour_2",
+	tgGroup_1."Hour_1",
 	COUNT(*),
 	SUM(1000 * (EXTRACT(SECOND FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP))))))
 FROM
@@ -46,7 +46,6 @@ FROM
 			tgGroup."TranslatedMessageGroup",
 			EXTRACT(HOUR FROM tgGroup."TimestampGenerated") as "Hour_1",
 			tgGroup."TranslatedMessage1",
-			EXTRACT(HOUR FROM tgGroup."TimestampGenerated") as "Hour_2",
 			tgGroup."TimestampGenerated",
 			tgGroup."TimestampGone"
 		FROM
@@ -60,6 +59,5 @@ FROM
 GROUP BY
 	tgGroup_1."ExternID1",
 	tgGroup_1."TranslatedMessageGroup",
-	tgGroup_1."Hour_1",
-	tgGroup_1."Hour_2"
+	tgGroup_1."Hour_1"
 
