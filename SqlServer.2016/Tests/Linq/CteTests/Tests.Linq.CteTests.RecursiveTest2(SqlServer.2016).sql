@@ -77,7 +77,7 @@ AS
 		[t_1].[Id]
 	FROM
 		[hierarchyDown] [t3]
-			INNER JOIN [CTE_2] [t_1] ON ([t_1].[ParentId] = [t3].[Id] OR [t_1].[ParentId] IS NULL AND [t3].[Id] IS NULL)
+			INNER JOIN [CTE_2] [t_1] ON [t_1].[ParentId] = [t3].[Id]
 )
 SELECT
 	[t4].[Id],

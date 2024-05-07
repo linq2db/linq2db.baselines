@@ -252,17 +252,15 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @Id Int -- Int32
-SET     @Id = 100
-DECLARE @Value Int -- Int32
-SET     @Value = 100
-DECLARE @p Variant -- Object
-SET     @p = 100
+DECLARE @param Int -- Int32
+SET     @param = 100
+DECLARE @param_1 Int -- Int32
+SET     @param_1 = 100
 
 SELECT
-	[s].[Id] + @Id,
-	[s].[Value] + @Value,
-	[s].[ValueStr] + CAST(@p AS VarChar(Max))
+	[s].[Id] + @param,
+	[s].[Value] + @param,
+	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
