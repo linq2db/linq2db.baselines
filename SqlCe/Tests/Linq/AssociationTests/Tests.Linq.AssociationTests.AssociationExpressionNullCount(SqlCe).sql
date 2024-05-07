@@ -50,7 +50,6 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[NotNullParent] [p]
-		LEFT JOIN [NotNullChild] [a_ChildOuter] ON [p].[ID] = [a_ChildOuter].[ParentID]
 
 BeforeExecute
 -- SqlCe

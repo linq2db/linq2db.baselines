@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[g_1].[Not Identifier] as [NotIdentifier],
+	[g_1].[Not Identifier] as [NI],
 	COUNT(*) as [COUNT_1],
 	SUM([g_1].[Some Value]) as [SUM_1]
 FROM

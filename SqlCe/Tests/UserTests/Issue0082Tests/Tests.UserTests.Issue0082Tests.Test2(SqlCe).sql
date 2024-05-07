@@ -31,22 +31,6 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [o]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [COUNT_1]
-			FROM
-				[Child] [a_Children]
-			WHERE
-				[o].[ParentID] = [a_Children].[ParentID]
-		) [t1]
-		OUTER APPLY (
-			SELECT
-				SUM([a_Children_1].[ParentID]) as [SUM_1]
-			FROM
-				[Child] [a_Children_1]
-			WHERE
-				[o].[ParentID] = [a_Children_1].[ParentID]
-		) [t2]
 
 BeforeExecute
 -- SqlCe
