@@ -12,22 +12,17 @@ WHERE
 			*
 		FROM
 			(
-				SELECT DISTINCT
-					t2.Diagnosis
+				SELECT SKIP 0
+					a_Patient.Diagnosis
 				FROM
-					(
-						SELECT SKIP 0
-							a_Patient.Diagnosis
-						FROM
-							Person t1
-								LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
-						WHERE
-							t1.PersonID = pat.PersonID
-						ORDER BY
-							t1.FirstName DESC
-					) t2
-			) t3
+					Person t1
+						LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
+				WHERE
+					t1.PersonID = pat.PersonID
+				ORDER BY
+					t1.FirstName DESC
+			) t2
 		WHERE
-			t3.Diagnosis LIKE '%with%' ESCAPE '~'
+			t2.Diagnosis LIKE '%with%' ESCAPE '~'
 	)
 

@@ -521,7 +521,6 @@ FROM
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-						LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 				WHERE
 					1 = 0
 			)
@@ -548,7 +547,6 @@ WHERE
 		FROM
 			Author t2
 				INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-				LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 		WHERE
 			1 = 0
 	)
