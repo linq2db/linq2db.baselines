@@ -37,11 +37,11 @@ INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, 
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
@@ -49,11 +49,11 @@ INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintData
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql

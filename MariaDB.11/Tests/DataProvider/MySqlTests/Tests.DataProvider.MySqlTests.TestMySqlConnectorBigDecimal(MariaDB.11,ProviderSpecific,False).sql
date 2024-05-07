@@ -82,9 +82,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -139,9 +139,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN

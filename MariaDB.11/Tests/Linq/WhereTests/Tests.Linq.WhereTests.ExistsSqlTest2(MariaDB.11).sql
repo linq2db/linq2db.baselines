@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
 	EXISTS(
 		SELECT
@@ -11,7 +11,7 @@ WHERE
 		FROM
 			`Child` `a_Children`
 		WHERE
-			`p`.`ParentID` = `a_Children`.`ParentID`
+			`Parent`.`ParentID` = `a_Children`.`ParentID`
 	) AND
-	`p`.`ParentID` > 100
+	`Parent`.`ParentID` > 100
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` > 1000
+	`Parent`.`ParentID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -46,9 +46,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` > 1000
+	`Parent`.`ParentID` > 1000
 
