@@ -40,9 +40,9 @@ INSERT INTO "ConcurrencyFiltered"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Stamp AS Int),
-	CAST(@Value AS NVarChar(7))
+	@Id,
+	@Stamp,
+	@Value
 )
 
 BeforeExecute

@@ -26,10 +26,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	CAST(@Gender AS NChar(1)),
-	CAST(@Name_FirstName AS NVarChar(2)),
-	CAST(@Name_MiddleName AS NVarChar(255)),
-	CAST(@Name_LastName AS NVarChar(2))
+	@Gender,
+	@Name_FirstName,
+	@Name_MiddleName,
+	@Name_LastName
 )
 
 BeforeExecute

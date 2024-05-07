@@ -47,7 +47,7 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@Value AS Int)
+			@Value
 		)
 	)
 

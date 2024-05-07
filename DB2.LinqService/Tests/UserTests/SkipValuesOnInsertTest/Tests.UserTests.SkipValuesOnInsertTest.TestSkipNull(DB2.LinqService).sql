@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Null_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(5))
+	@Id,
+	@Name
 )
 
 BeforeExecute

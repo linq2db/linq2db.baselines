@@ -46,11 +46,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	CAST(@Int AS Int),
-	CAST(@Str AS NVarChar(3)),
-	CAST(@Date AS timestamp),
-	CAST(@Double AS Float),
-	CAST(@Bool AS smallint)
+	@Int,
+	@Str,
+	@Date,
+	@Double,
+	@Bool
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "Mixed"
 )
 VALUES
 (
-	CAST(@Int AS Int),
-	CAST(@Str AS NVarChar(3)),
-	CAST(@Date AS timestamp),
-	CAST(@Double AS Float),
-	CAST(@Bool AS smallint)
+	@Int,
+	@Str,
+	@Date,
+	@Double,
+	@Bool
 )
 
 BeforeExecute

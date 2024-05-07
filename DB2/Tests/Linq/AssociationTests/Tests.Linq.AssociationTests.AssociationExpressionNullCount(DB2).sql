@@ -68,7 +68,6 @@ SELECT
 	COUNT(*)
 FROM
 	"NotNullParent" "p"
-		LEFT JOIN "NotNullChild" "a_ChildOuter" ON "p".ID = "a_ChildOuter"."ParentID"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

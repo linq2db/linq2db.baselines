@@ -24,7 +24,7 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@Value AS Int)
+			@Value
 		)
 	)
 
@@ -39,7 +39,7 @@ INSERT INTO "KeepIdentityTest"
 )
 VALUES
 (
-	CAST(@Value AS Int)
+	@Value
 )
 
 BeforeExecute
@@ -53,7 +53,7 @@ INSERT INTO "KeepIdentityTest"
 )
 VALUES
 (
-	CAST(@Value AS Int)
+	@Value
 )
 
 BeforeExecute

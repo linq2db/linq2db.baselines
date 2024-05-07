@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Fluent_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(255))
+	@Id,
+	@Name
 )
 
 BeforeExecute

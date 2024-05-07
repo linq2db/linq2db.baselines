@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute

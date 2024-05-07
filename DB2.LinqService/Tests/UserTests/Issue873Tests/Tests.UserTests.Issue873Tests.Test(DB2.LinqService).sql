@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"f_1"."Label_1",
+	"f_1"."Label",
 	"f_1"."SubSum",
 	"f_1"."Any_1",
 	"f_1".COUNT_1
@@ -19,7 +19,6 @@ FROM
 				WHERE
 					"a_Parent"."ParentID" = "f"."ParentID" AND ("a_Parent"."Value1" = "f"."Value1" OR "a_Parent"."Value1" IS NULL AND "f"."Value1" IS NULL)
 			) as "SubSum",
-			' ' || RTrim(Char(Coalesce("f"."Value1", 0))) as "Label_1",
 			CASE
 				WHEN EXISTS(
 					SELECT

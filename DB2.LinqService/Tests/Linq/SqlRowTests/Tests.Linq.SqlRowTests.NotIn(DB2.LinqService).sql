@@ -50,12 +50,12 @@ INSERT INTO "Ints"
 )
 VALUES
 (
-	CAST(@One AS Int),
-	CAST(@Two AS Int),
-	CAST(@Three AS Int),
-	CAST(@Four AS Int),
-	CAST(@Five AS Int),
-	CAST(@Nil AS Int)
+	@One,
+	@Two,
+	@Three,
+	@Four,
+	@Five,
+	@Nil
 )
 
 BeforeExecute

@@ -85,9 +85,9 @@ INSERT INTO "IntEnumTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Column AS Int),
-	CAST(@ColumnNullable AS Int)
+	@Id,
+	@Column,
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -107,9 +107,9 @@ INSERT INTO "IntEnumTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Column AS Int),
-	CAST(@ColumnNullable AS Int)
+	@Id,
+	@Column,
+	@ColumnNullable
 )
 
 BeforeExecute

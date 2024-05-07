@@ -31,10 +31,10 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(5)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@MiddleName AS NVarChar(255)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
 		)
 	)
 
@@ -63,10 +63,10 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(5)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@MiddleName AS NVarChar(255)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
 		)
 	)
 

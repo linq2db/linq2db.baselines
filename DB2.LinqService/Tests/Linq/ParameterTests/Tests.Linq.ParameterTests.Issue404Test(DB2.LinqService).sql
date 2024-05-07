@@ -30,7 +30,7 @@ INSERT INTO "Table404One"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "Table404One"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -87,9 +87,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -109,9 +109,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -131,9 +131,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -153,9 +153,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -175,9 +175,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -197,9 +197,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -333,7 +333,7 @@ INSERT INTO "Table404One"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -347,7 +347,7 @@ INSERT INTO "Table404One"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -390,9 +390,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -412,9 +412,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -434,9 +434,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -456,9 +456,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -478,9 +478,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute
@@ -500,9 +500,9 @@ INSERT INTO "Table404Two"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Usage AS Int),
-	CAST(@FirstTableId AS Int)
+	@Id,
+	@Usage,
+	@FirstTableId
 )
 
 BeforeExecute

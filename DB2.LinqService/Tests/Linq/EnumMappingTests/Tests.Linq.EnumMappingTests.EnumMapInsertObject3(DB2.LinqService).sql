@@ -22,8 +22,8 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TestField AS BigInt)
+	@Id,
+	@TestField
 )
 
 BeforeExecute

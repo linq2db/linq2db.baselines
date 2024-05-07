@@ -44,7 +44,7 @@ WHEN MATCHED THEN
 	UPDATE 
 	SET
 		"name" = CAST(@Name AS NVarChar(5)),
-		"updated_by" = @UpdatedBy
+		"updated_by" = CAST(@UpdatedBy AS NVarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -91,7 +91,7 @@ WHEN MATCHED THEN
 	UPDATE 
 	SET
 		"name" = CAST(@Name AS NVarChar(5)),
-		"updated_by" = @UpdatedBy
+		"updated_by" = CAST(@UpdatedBy AS NVarChar(10))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
