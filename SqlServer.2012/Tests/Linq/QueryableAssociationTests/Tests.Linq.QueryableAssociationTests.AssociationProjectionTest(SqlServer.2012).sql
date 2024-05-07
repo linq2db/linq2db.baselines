@@ -74,8 +74,8 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t1].[StrValue_1] + N'_B',
-	[t1].[StrValue_1] + N'_C',
+	[t1].[StrValue] + N'_B',
+	[t1].[StrValue] + N'_C',
 	[t1].[Id],
 	[t1].[StrValue]
 FROM
@@ -83,7 +83,6 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Other].[StrValue] + N'_A' as [StrValue],
-				[a_Other].[StrValue] + N'_A' as [StrValue_1],
 				[a_Other].[Id]
 			FROM
 				[SomeOtherEntity] [a_Other]
