@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t`
+DELETE  
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes`
 WHERE
-	`t`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -43,9 +43,9 @@ LIMIT 2
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t`
+DELETE  
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes`
 WHERE
-	`t`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`PersonID` > 4
+	`Person`.`PersonID` > 4
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
@@ -72,9 +72,9 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`PersonID` > 4
+	`Person`.`PersonID` > 4
 

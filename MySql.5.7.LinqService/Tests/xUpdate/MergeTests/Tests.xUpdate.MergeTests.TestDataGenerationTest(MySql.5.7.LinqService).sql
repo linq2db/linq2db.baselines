@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestMerge1` `t1`
+	`TestMerge1`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -112,9 +112,9 @@ VALUES
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestMerge2` `t1`
+	`TestMerge2`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

@@ -63,18 +63,18 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypes`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypesNoYear`.`varcharDataType` = '_btest'
 
