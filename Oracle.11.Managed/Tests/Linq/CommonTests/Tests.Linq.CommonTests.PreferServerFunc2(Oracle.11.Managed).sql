@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int32
-SET     @p = 0
 
 SELECT
-	Length(p."FirstName") + :p
+	Length(p."FirstName")
 FROM
 	"Person" p
 
