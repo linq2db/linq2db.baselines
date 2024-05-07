@@ -180,16 +180,14 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5
 
 UPDATE
-	"Parent" "p"
+	"Parent" "x"
 SET
-	"Value1" = CAST(@Value1 AS Int)
+	"Value1" = 1
 WHERE
-	"p"."ParentID" >= 1000
+	"x"."ParentID" > 1000
 ROWS @take
 
