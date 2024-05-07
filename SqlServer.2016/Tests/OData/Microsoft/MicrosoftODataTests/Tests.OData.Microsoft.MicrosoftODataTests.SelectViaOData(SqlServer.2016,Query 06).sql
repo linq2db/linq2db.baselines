@@ -33,30 +33,22 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[it_2].[Name],
-	[it_2].[Value_1],
-	[it_2].[AVG_1]
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[AVG_1]
 FROM
 	(
 		SELECT
-			AVG([it_1].[Value_1]) as [AVG_1],
-			[it_1].[c1] as [Name],
-			[it_1].[Title] as [Value_1]
+			AVG([it].[YearsExperience]) as [AVG_1],
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
 		FROM
-			(
-				SELECT
-					N'Title' as [c1],
-					[it].[Title],
-					[it].[YearsExperience] as [Value_1]
-				FROM
-					[odata_person] [it]
-			) [it_1]
+			[odata_person] [it]
 		GROUP BY
-			[it_1].[c1],
-			[it_1].[Title]
-	) [it_2]
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	[it_2].[AVG_1]
+	[it_1].[AVG_1]
 
 BeforeExecute
 -- SqlServer.2016
