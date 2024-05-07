@@ -59,8 +59,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TargetName AS VARCHAR(12))
+	@Id,
+	@TargetName
 )
 
 BeforeExecute
@@ -77,8 +77,8 @@ INSERT INTO "Issue1096Task"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TargetName AS VARCHAR(12))
+	@Id,
+	@TargetName
 )
 
 BeforeExecute
@@ -98,9 +98,9 @@ INSERT INTO "Issue1096TaskStage"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TaskId AS Int),
-	CAST(@Actual AS BOOLEAN)
+	@Id,
+	@TaskId,
+	@Actual
 )
 
 BeforeExecute

@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Update_Null_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(5)),
-	CAST(@Age AS Int)
+	@Id,
+	@Name,
+	@Age
 )
 
 BeforeExecute

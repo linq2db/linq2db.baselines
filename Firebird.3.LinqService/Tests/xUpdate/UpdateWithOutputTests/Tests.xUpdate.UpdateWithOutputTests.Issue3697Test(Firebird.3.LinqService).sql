@@ -97,8 +97,8 @@ INSERT INTO "Test3697Item"
 )
 VALUES
 (
-	CAST(@Value AS Int),
-	CAST(@TestId AS Int)
+	@Value,
+	@TestId
 )
 
 BeforeExecute

@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -86,7 +86,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -100,7 +100,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -114,7 +114,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -128,7 +128,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
@@ -142,7 +142,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6) CHARACTER SET UNICODE_FSS)
+	@Value
 )
 
 BeforeExecute
