@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@StringEnumNullable AS VARCHAR(1))
+	@Id,
+	@StringEnumNullable
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@StringEnumNullable AS VARCHAR(2))
+	@Id,
+	@StringEnumNullable
 )
 
 BeforeExecute

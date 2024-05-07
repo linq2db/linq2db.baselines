@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[gr_1].[c1] as [Key_1]
+	[gr_1].[c1]
 FROM
 	(
 		SELECT

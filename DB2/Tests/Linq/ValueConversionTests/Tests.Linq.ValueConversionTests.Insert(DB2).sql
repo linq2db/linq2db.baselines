@@ -176,16 +176,16 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(21)),
-	CAST(@Value2 AS NVarChar(23)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@EnumNullable AS VarChar(50)),
-	CAST(@EnumWithNull AS VarChar(6)),
-	CAST(@EnumWithNullDeclarative AS VarChar(6)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1)),
-	CAST(@DateTimeNullable AS timestamp)
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@EnumNullable,
+	@EnumWithNull,
+	@EnumWithNullDeclarative,
+	@BoolValue,
+	@AnotherBoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute

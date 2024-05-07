@@ -35,13 +35,13 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@MoneyValue AS Decimal),
-	CAST(@DateTimeValue AS TimeStamp),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
-	CAST(@BinaryValue AS BLOB),
-	CAST(@SmallIntValue AS SmallInt)
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue
 )
 
 BeforeExecute

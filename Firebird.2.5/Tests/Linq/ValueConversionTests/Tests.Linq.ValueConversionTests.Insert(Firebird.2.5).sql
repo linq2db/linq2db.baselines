@@ -174,16 +174,16 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(21)),
-	CAST(@Value2 AS VARCHAR(23)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@EnumNullable AS VarChar(50) CHARACTER SET UNICODE_FSS),
-	CAST(@EnumWithNull AS VarChar(6) CHARACTER SET UNICODE_FSS),
-	CAST(@EnumWithNullDeclarative AS VarChar(6) CHARACTER SET UNICODE_FSS),
-	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@DateTimeNullable AS TimeStamp)
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@EnumNullable,
+	@EnumWithNull,
+	@EnumWithNullDeclarative,
+	@BoolValue,
+	@AnotherBoolValue,
+	@DateTimeNullable
 )
 
 BeforeExecute

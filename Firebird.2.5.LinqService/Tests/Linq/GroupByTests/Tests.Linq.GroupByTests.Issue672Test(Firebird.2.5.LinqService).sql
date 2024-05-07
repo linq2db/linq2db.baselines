@@ -57,9 +57,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS VARCHAR(6)),
-	CAST(@Enabled AS CHAR(1)),
-	CAST(@ImageFullUrl AS VARCHAR(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute
@@ -79,9 +79,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS VARCHAR(6)),
-	CAST(@Enabled AS CHAR(1)),
-	CAST(@ImageFullUrl AS VARCHAR(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute
@@ -101,9 +101,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS VARCHAR(6)),
-	CAST(@Enabled AS CHAR(1)),
-	CAST(@ImageFullUrl AS VARCHAR(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute

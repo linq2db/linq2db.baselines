@@ -40,9 +40,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(4))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(7))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(9))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(9))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(7))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(9))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute
@@ -172,9 +172,9 @@ INSERT INTO "Test3799Item"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ParentId AS Int),
-	CAST(@Name AS NVarChar(9))
+	@Id,
+	@ParentId,
+	@Name
 )
 
 BeforeExecute

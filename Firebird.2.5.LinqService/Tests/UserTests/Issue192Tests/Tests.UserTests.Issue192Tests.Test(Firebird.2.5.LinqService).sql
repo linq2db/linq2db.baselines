@@ -38,9 +38,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	CAST(@Name AS VARCHAR(11)),
-	CAST(@BoolValue AS Char(1)),
-	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
+	@Name,
+	@BoolValue,
+	@GuidValue
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	CAST(@Name AS VARCHAR(8)),
-	CAST(@BoolValue AS Char(1)),
-	CAST(@GuidValue AS VarChar(36) CHARACTER SET UNICODE_FSS)
+	@Name,
+	@BoolValue,
+	@GuidValue
 )
 
 BeforeExecute
