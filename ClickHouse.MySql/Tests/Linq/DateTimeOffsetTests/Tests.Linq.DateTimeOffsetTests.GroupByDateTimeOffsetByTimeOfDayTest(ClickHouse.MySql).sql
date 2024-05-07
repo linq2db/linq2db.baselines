@@ -45,19 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x_1.TimeOfDay,
+	x_1.c1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toInt64((toUnixTimestamp64Nano(toDateTime64(x.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(x.TransactionDate), 7))) / 100) as TimeOfDay
+			toInt64((toUnixTimestamp64Nano(toDateTime64(x.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(x.TransactionDate), 7))) / 100) as c1
 		FROM
 			Transactions x
 	) x_1
 GROUP BY
-	x_1.TimeOfDay
+	x_1.c1
 ORDER BY
-	x_1.TimeOfDay
+	x_1.c1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -107,7 +107,6 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.Id,
 	p.Id
 FROM
 	EventScheduleItem p
