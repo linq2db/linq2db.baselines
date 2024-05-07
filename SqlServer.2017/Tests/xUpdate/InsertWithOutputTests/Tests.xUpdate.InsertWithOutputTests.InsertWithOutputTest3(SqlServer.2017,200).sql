@@ -22,11 +22,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 200
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 SELECT
-	[c_1].[ChildID] + [c_1].[ParentID] + @ChildID
+	[c_1].[ChildID] + [c_1].[ParentID] + @param
 FROM
 	[Child] [c_1]
 WHERE
