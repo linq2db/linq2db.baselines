@@ -38,9 +38,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	CAST(@Name AS NVarChar(11)),
-	CAST(@BoolValue AS Char),
-	CAST(@GuidValue AS VarChar(36))
+	@Name,
+	@BoolValue,
+	@GuidValue
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "TypeConvertTable"
 )
 VALUES
 (
-	CAST(@Name AS NVarChar(8)),
-	CAST(@BoolValue AS Char),
-	CAST(@GuidValue AS VarChar(36))
+	@Name,
+	@BoolValue,
+	@GuidValue
 )
 
 BeforeExecute

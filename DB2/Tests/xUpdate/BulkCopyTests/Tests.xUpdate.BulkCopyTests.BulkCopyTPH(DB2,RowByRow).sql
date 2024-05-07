@@ -43,9 +43,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value1 AS NVarChar(4))
+	@Id,
+	@Discriminator,
+	@Value1
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value2 AS NVarChar(4))
+	@Id,
+	@Discriminator,
+	@Value2
 )
 
 BeforeExecute
@@ -90,10 +90,10 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value3 AS NVarChar(4)),
-	CAST(@NullableBool AS VarChar(1))
+	@Id,
+	@Discriminator,
+	@Value3,
+	@NullableBool
 )
 
 BeforeExecute

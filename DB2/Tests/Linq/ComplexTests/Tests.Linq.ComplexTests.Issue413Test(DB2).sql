@@ -82,8 +82,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@IndexId AS Int)
+	@InstrumentId,
+	@IndexId
 )
 
 BeforeExecute
@@ -100,8 +100,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@IndexId AS Int)
+	@InstrumentId,
+	@IndexId
 )
 
 BeforeExecute
@@ -118,8 +118,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@IndexId AS Int)
+	@InstrumentId,
+	@IndexId
 )
 
 BeforeExecute
@@ -136,8 +136,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@IndexId AS Int)
+	@InstrumentId,
+	@IndexId
 )
 
 BeforeExecute
@@ -154,8 +154,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@IndexId AS Int)
+	@InstrumentId,
+	@IndexId
 )
 
 BeforeExecute
@@ -178,10 +178,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@InstrumentCode AS NVarChar(4)),
-	CAST(@CreateDate AS timestamp),
-	CAST(@SourceInstrumentCode AS NVarChar(7))
+	@InstrumentId,
+	@InstrumentCode,
+	@CreateDate,
+	@SourceInstrumentCode
 )
 
 BeforeExecute
@@ -204,10 +204,10 @@ INSERT INTO T1
 )
 VALUES
 (
-	CAST(@InstrumentId AS Int),
-	CAST(@InstrumentCode AS NVarChar(4)),
-	CAST(@CreateDate AS timestamp),
-	CAST(@SourceInstrumentCode AS NVarChar(255))
+	@InstrumentId,
+	@InstrumentCode,
+	@CreateDate,
+	@SourceInstrumentCode
 )
 
 BeforeExecute
