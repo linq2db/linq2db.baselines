@@ -49,7 +49,7 @@ AS
 		[t2].[ReportsTo]
 	FROM
 		[CTE_1] [t2]
-			INNER JOIN [employeeHierarchy] [eh] ON ([t2].[ReportsTo] = [eh].[EmployeeID] OR [t2].[ReportsTo] IS NULL AND [eh].[EmployeeID] IS NULL)
+			INNER JOIN [employeeHierarchy] [eh] ON [t2].[ReportsTo] = [eh].[EmployeeID]
 )
 SELECT
 	[t3].[EmployeeID],
