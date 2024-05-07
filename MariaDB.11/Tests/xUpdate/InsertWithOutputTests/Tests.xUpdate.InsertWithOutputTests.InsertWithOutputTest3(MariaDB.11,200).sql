@@ -22,11 +22,11 @@ RETURNING
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ChildID Int32
-SET     @ChildID = 200
+DECLARE @param Int32
+SET     @param = 200
 
 SELECT
-	`c_1`.`ChildID` + `c_1`.`ParentID` + @ChildID
+	`c_1`.`ChildID` + `c_1`.`ParentID` + @param
 FROM
 	`Child` `c_1`
 WHERE
