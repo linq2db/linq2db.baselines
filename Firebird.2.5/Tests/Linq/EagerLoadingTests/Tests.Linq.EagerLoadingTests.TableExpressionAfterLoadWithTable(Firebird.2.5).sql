@@ -56,7 +56,7 @@ INSERT INTO "UserIssue3128"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -73,8 +73,8 @@ INSERT INTO "UserDetailsIssue3128"
 )
 VALUES
 (
-	CAST(@UserId AS Int),
-	CAST(@Age AS Int)
+	@UserId,
+	@Age
 )
 
 BeforeExecute
