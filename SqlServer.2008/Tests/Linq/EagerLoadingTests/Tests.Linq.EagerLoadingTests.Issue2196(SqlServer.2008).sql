@@ -117,7 +117,6 @@ DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
 SELECT
-	[p].[Id],
 	[p].[Id]
 FROM
 	[EventScheduleItem] [p]

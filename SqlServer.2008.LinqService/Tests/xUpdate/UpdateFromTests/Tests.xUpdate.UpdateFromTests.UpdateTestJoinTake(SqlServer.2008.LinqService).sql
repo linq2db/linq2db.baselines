@@ -276,28 +276,17 @@ SET     @int3 = 33
 DECLARE @someId Int -- Int32
 SET     @someId = 100
 
-UPDATE
-	[u]
+UPDATE TOP (@take)
+	[t1]
 SET
-	[u].[Value1] = [t2].[c1],
-	[u].[Value2] = [t2].[c2],
-	[u].[Value3] = [t2].[c3]
+	[t1].[Value1] = ([t1].[Value1] * [t].[Value1]) * @int1,
+	[t1].[Value2] = ([t1].[Value2] * [t].[Value2]) * @int2,
+	[t1].[Value3] = ([t1].[Value3] * [t].[Value3]) * @int3
 FROM
-	[UpdatedEntities] [u],
-	(
-		SELECT TOP (@take)
-			([t1].[Value1] * [t].[Value1]) * @int1 as [c1],
-			([t1].[Value2] * [t].[Value2]) * @int2 as [c2],
-			([t1].[Value3] * [t].[Value3]) * @int3 as [c3],
-			[t1].[id]
-		FROM
-			[UpdatedEntities] [t1]
-				INNER JOIN [NewEntities] [t] ON [t].[id] = [t1].[id]
-		WHERE
-			[t].[id] <> @someId
-	) [t2]
+	[UpdatedEntities] [t1]
+		INNER JOIN [NewEntities] [t] ON [t].[id] = [t1].[id]
 WHERE
-	[u].[id] = [t2].[id]
+	[t].[id] <> @someId
 
 BeforeExecute
 -- SqlServer.2008

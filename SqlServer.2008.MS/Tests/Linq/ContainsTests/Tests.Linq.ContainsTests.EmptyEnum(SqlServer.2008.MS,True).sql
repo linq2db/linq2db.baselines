@@ -47,8 +47,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -57,8 +55,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
