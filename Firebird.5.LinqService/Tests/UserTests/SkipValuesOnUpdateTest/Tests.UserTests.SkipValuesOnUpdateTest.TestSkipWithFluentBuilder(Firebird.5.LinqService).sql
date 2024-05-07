@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Update_Fluent_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(1)),
-	CAST(@Age AS Int)
+	@Id,
+	@Name,
+	@Age
 )
 
 BeforeExecute

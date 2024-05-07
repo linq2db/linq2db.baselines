@@ -46,11 +46,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(2)),
-	CAST(@Value2 AS VARCHAR(2)),
-	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
-	CAST(@Value4 AS VARCHAR(2))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(1)),
-	CAST(@Value2 AS VARCHAR(2)),
-	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
-	CAST(@Value4 AS VARCHAR(1))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute
@@ -106,11 +106,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(2)),
-	CAST(@Value2 AS VARCHAR(1)),
-	CAST(@Value3 AS VarChar(50) CHARACTER SET UNICODE_FSS),
-	CAST(@Value4 AS VARCHAR(2))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute
