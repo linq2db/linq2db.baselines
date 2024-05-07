@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`DateOnlyTable` `t1`
+	`DateOnlyTable`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -120,9 +120,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`DateOnlyTable` `t1`
+	`DateOnlyTable`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -152,9 +152,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`DateOnlyTable` `t1`
+	`DateOnlyTable`
 
 BeforeExecute
 INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable

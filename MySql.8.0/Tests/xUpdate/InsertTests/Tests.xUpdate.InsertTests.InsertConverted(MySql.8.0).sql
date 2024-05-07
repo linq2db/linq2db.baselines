@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 1000
+	`LinqDataTypes`.`ID` >= 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -38,9 +38,9 @@ LIMIT 1
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 1000
+	`LinqDataTypes`.`ID` >= 1000
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `gc`
+DELETE  
 FROM
-	`GrandChild` `gc`
+	`GrandChild`
 WHERE
-	`gc`.`GrandChildID` IN (1001, 1002)
+	`GrandChild`.`GrandChildID` IN (1001, 1002)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

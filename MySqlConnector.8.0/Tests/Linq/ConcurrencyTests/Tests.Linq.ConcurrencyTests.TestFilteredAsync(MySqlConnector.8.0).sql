@@ -108,11 +108,12 @@ SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -9
 
-DELETE   `r`
+DELETE  
 FROM
-	`ConcurrencyFiltered` `r`
+	`ConcurrencyFiltered`
 WHERE
-	`r`.`Id` = 2 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
+	`ConcurrencyFiltered`.`Id` = 2 AND `ConcurrencyFiltered`.`Id` = @Id AND
+	`ConcurrencyFiltered`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -131,11 +132,12 @@ SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -9
 
-DELETE   `r`
+DELETE  
 FROM
-	`ConcurrencyFiltered` `r`
+	`ConcurrencyFiltered`
 WHERE
-	`r`.`Id` = 1 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
+	`ConcurrencyFiltered`.`Id` = 1 AND `ConcurrencyFiltered`.`Id` = @Id AND
+	`ConcurrencyFiltered`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

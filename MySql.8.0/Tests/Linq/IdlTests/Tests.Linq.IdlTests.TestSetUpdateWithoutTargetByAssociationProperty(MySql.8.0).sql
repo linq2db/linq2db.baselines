@@ -40,18 +40,18 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `x`
+DELETE  
 FROM
-	`Child` `x`
+	`Child`
 WHERE
-	`x`.`ChildID` = 10000
+	`Child`.`ChildID` = 10000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `x`
+DELETE  
 FROM
-	`Parent` `x`
+	`Parent`
 WHERE
-	`x`.`ParentID` = 20000
+	`Parent`.`ParentID` = 20000
 

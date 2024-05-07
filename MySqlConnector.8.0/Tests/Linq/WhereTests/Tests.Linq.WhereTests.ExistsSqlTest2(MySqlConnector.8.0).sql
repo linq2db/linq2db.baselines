@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
 	EXISTS(
 		SELECT
@@ -11,7 +11,7 @@ WHERE
 		FROM
 			`Child` `a_Children`
 		WHERE
-			`p`.`ParentID` = `a_Children`.`ParentID`
+			`Parent`.`ParentID` = `a_Children`.`ParentID`
 	) AND
-	`p`.`ParentID` > 100
+	`Parent`.`ParentID` > 100
 
