@@ -30,7 +30,7 @@ INSERT INTO "Issue3472TableDCTX"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute

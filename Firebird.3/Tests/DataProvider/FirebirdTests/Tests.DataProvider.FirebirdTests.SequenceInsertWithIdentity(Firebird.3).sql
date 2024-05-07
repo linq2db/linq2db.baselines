@@ -21,7 +21,7 @@ INSERT INTO "SequenceTest"
 VALUES
 (
 	GEN_ID("SequenceTestSeq", 1),
-	CAST(@Value AS VARCHAR(8))
+	@Value
 )
 RETURNING
 	ID

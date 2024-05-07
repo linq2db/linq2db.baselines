@@ -34,8 +34,8 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int)
+	@Id,
+	@Value
 )
 
 BeforeExecute
