@@ -33,30 +33,22 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[it_2].[Name],
-	[it_2].[Value_1],
-	[it_2].[MAX_1]
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[MAX_1]
 FROM
 	(
 		SELECT
-			MAX([it_1].[Value_1]) as [MAX_1],
-			[it_1].[c1] as [Name],
-			[it_1].[Title] as [Value_1]
+			MAX([it].[YearsExperience]) as [MAX_1],
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
 		FROM
-			(
-				SELECT
-					N'Title' as [c1],
-					[it].[Title],
-					[it].[YearsExperience] as [Value_1]
-				FROM
-					[odata_person] [it]
-			) [it_1]
+			[odata_person] [it]
 		GROUP BY
-			[it_1].[c1],
-			[it_1].[Title]
-	) [it_2]
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	[it_2].[MAX_1]
+	[it_1].[MAX_1]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
