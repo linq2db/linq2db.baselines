@@ -2,14 +2,26 @@
 -- Sybase.Managed Sybase
 
 SELECT
+	[m_1].[ParentID],
+	[d].[ChildID]
+FROM
 	(
-		SELECT
-			[ch].[ChildID]
+		SELECT DISTINCT
+			[p].[ParentID]
 		FROM
-			[Child] [ch]
+			[Parent] [p]
 		WHERE
-			[ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1
-	)
+			[p].[ParentID] <> 5
+	) [m_1]
+		INNER JOIN [Child] [d] ON [d].[ParentID] = [m_1].[ParentID]
+WHERE
+	[d].[ChildID] = [d].[ParentID] * 10 + 1
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 WHERE
