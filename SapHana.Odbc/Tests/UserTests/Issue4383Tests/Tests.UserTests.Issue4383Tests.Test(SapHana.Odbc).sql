@@ -210,7 +210,6 @@ SELECT
 	"m_1"."LINE_ID",
 	"d"."LINE_ID",
 	"d"."CHAIN_ID",
-	"a_Chain"."CHAIN_ID",
 	"a_Chain"."CHAIN_ID"
 FROM
 	"PUMPLINES" "m_1"
@@ -225,7 +224,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."LINE_ID",
 	"t1"."LINE_ID"
 FROM
 	"PUMPLINES" "t1"
