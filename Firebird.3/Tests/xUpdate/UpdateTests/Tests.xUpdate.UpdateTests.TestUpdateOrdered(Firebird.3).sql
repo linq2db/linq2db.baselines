@@ -180,16 +180,25 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
-DECLARE @take Integer -- Int32
-SET     @take = 5
 
 UPDATE
-	"Parent" "p"
+	"Parent" "x"
 SET
-	"Value1" = CAST(@Value1 AS Int)
+	"Value1" = 1
+WHERE
+	"x"."ParentID" > 1000
+ORDER BY
+	"x"."ParentID" DESC
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"p"."Value1"
+FROM
+	"Parent" "p"
 WHERE
 	"p"."ParentID" >= 1000
-ROWS @take
+ORDER BY
+	"p"."ParentID"
 
