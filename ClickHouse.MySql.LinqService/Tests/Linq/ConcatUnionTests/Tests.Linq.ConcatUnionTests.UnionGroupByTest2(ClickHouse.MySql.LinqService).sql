@@ -15,20 +15,20 @@ FROM
 	) t2
 UNION DISTINCT
 SELECT
-	t4.Month_1 as month_1,
-	t4.Year_1 as year_1,
+	t4.month_1 as month_1,
+	t4.year_1 as year_1,
 	1 as int_1
 FROM
 	(
 		SELECT
-			toMonth(t3.DateTimeValue) as Month_1,
-			toYear(t3.DateTimeValue) as Year_1
+			toMonth(t3.DateTimeValue) as month_1,
+			toYear(t3.DateTimeValue) as year_1
 		FROM
 			LinqDataTypes t3
 	) t4
 GROUP BY
-	t4.Month_1,
-	t4.Year_1
+	t4.month_1,
+	t4.year_1
 UNION DISTINCT
 SELECT
 	toYear(t5.DateTimeValue) as month_1,
