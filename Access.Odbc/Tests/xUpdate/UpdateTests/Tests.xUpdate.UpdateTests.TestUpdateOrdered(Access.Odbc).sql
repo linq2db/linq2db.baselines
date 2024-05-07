@@ -182,22 +182,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 UPDATE
-	[Parent] [u],
-	(
-		SELECT TOP 5
-			[x].[ParentID],
-			[x].[Value1]
-		FROM
-			[Parent] [x]
-		WHERE
-			[x].[ParentID] > 1000
-		ORDER BY
-			[x].[ParentID] DESC
-	) [t1]
+	[Parent] [x]
 SET
-	[u].[Value1] = 1
+	[x].[Value1] = 1
 WHERE
-	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
+	[x].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
