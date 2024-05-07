@@ -44,10 +44,10 @@ INSERT INTO "PR_1598_Update_Enum_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(3)),
-	CAST(@Age AS Int),
-	CAST(@Gender AS VARCHAR(6))
+	@Id,
+	@Name,
+	@Age,
+	@Gender
 )
 
 BeforeExecute

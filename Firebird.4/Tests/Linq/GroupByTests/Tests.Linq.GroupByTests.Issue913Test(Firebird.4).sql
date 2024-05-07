@@ -38,7 +38,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"g_2"."c1",
+	"g_2"."IsDelisted",
 	COUNT(*)
 FROM
 	(
@@ -46,12 +46,12 @@ FROM
 			CASE
 				WHEN "g_1"."TradingStatus" = 'D' THEN TRUE
 				ELSE FALSE
-			END as "c1"
+			END as "IsDelisted"
 		FROM
 			"Issue913Test" "g_1"
 	) "g_2"
 GROUP BY
-	"g_2"."c1"
+	"g_2"."IsDelisted"
 
 BeforeExecute
 -- Firebird.4 Firebird4
