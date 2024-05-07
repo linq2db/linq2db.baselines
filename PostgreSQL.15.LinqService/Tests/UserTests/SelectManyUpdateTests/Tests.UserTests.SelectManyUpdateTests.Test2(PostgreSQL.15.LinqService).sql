@@ -11,5 +11,5 @@ FROM
 	"Parent" x
 		INNER JOIN "Child" "a_Children" ON x."ParentID" = "a_Children"."ParentID"
 WHERE
-	1 = 0 AND "a_Children"."ParentID" = "Child"."ChildID"
+	1 = 0
 
