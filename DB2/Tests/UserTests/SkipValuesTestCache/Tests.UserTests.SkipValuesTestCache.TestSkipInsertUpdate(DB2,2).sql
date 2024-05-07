@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Insert_Table_Cache"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(4)),
-	CAST(@Age AS Int)
+	@Id,
+	@Name,
+	@Age
 )
 
 BeforeExecute

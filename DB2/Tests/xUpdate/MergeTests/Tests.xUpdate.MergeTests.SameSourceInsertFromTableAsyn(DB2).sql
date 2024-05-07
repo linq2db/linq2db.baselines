@@ -24,10 +24,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -50,10 +50,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -76,10 +76,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -134,10 +134,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -160,10 +160,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -186,10 +186,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute
@@ -212,10 +212,10 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field1 AS Int),
-	CAST(@Field2 AS Int),
-	CAST(@Field4 AS Int)
+	@Id,
+	@Field1,
+	@Field2,
+	@Field4
 )
 
 BeforeExecute

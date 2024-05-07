@@ -36,8 +36,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS NVarChar(5))
+	@Id,
+	@Value
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "TableToInsert"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS NVarChar(3))
+	@Id,
+	@Value
 )
 
 BeforeExecute

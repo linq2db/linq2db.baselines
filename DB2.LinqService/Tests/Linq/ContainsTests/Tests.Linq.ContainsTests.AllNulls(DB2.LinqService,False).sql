@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS NVarChar(5)),
-	CAST(@CEnum AS VarChar(20))
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS NVarChar(3)),
-	CAST(@CEnum AS VarChar(12))
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute

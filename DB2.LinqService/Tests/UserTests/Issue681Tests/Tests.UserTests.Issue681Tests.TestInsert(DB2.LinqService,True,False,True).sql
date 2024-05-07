@@ -45,8 +45,8 @@ INSERT INTO DB2INST1."Issue681Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS Int)
+	@ID,
+	@Value
 )
 
 BeforeExecute

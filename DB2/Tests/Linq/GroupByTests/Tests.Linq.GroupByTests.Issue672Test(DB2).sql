@@ -41,9 +41,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS NVarChar(6)),
-	CAST(@Enabled AS smallint),
-	CAST(@ImageFullUrl AS NVarChar(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute
@@ -63,9 +63,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS NVarChar(6)),
-	CAST(@Enabled AS smallint),
-	CAST(@ImageFullUrl AS NVarChar(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute
@@ -85,9 +85,9 @@ INSERT INTO "Stone"
 )
 VALUES
 (
-	CAST(@Name AS NVarChar(6)),
-	CAST(@Enabled AS smallint),
-	CAST(@ImageFullUrl AS NVarChar(3))
+	@Name,
+	@Enabled,
+	@ImageFullUrl
 )
 
 BeforeExecute

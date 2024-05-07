@@ -36,8 +36,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -90,8 +90,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -108,8 +108,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -126,8 +126,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -144,8 +144,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -162,8 +162,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -180,8 +180,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -198,8 +198,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -216,8 +216,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -234,8 +234,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -252,8 +252,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute
@@ -270,8 +270,8 @@ INSERT INTO "Transactions"
 )
 VALUES
 (
-	CAST(@TransactionId AS Int),
-	CAST(@TransactionDate AS Date)
+	@TransactionId,
+	@TransactionDate
 )
 
 BeforeExecute

@@ -46,11 +46,11 @@ INSERT INTO "StringTypesTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@CharColumn AS Char(10)),
-	CAST(@NCharColumn AS NChar(10)),
-	CAST(@VarCharColumn AS VarChar(10)),
-	CAST(@NVarCharColumn AS NVarChar(10))
+	@Id,
+	@CharColumn,
+	@NCharColumn,
+	@VarCharColumn,
+	@NVarCharColumn
 )
 
 BeforeExecute

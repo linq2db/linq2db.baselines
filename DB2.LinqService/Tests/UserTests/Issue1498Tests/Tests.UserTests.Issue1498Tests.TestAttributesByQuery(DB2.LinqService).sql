@@ -61,9 +61,9 @@ INSERT INTO "Topic"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Title AS NVarChar(5)),
-	CAST(@Text AS NVarChar(4))
+	@Id,
+	@Title,
+	@Text
 )
 
 BeforeExecute
