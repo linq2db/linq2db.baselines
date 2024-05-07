@@ -36,8 +36,8 @@ INSERT INTO "Issue1110TB"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TimeStamp AS TimeStamp)
+	@Id,
+	@TimeStamp
 )
 
 BeforeExecute

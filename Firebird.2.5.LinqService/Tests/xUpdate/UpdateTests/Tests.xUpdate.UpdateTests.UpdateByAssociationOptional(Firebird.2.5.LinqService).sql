@@ -34,8 +34,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field AS VARCHAR(7))
+	@Id,
+	@Field
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field AS VARCHAR(7))
+	@Id,
+	@Field
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "MainTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Field AS VARCHAR(7))
+	@Id,
+	@Field
 )
 
 BeforeExecute
@@ -106,7 +106,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -120,7 +120,7 @@ INSERT INTO "AssociatedTable"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute

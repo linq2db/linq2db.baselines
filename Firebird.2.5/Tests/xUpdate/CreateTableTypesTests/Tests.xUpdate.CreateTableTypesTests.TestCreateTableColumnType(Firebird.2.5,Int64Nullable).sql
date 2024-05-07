@@ -34,8 +34,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int64Nullable AS BigInt)
+	@Id,
+	@Int64Nullable
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "CreateTableTypes"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int64Nullable AS BigInt)
+	@Id,
+	@Int64Nullable
 )
 
 BeforeExecute
