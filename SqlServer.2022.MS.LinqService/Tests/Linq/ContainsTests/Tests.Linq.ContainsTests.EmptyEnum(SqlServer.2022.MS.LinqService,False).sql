@@ -84,8 +84,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -94,8 +92,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
