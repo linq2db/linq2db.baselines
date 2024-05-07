@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
+
+DELETE FROM
+	"Parent" "c_1"
+WHERE
+	"c_1"."ParentID" >= 1000
+
+BeforeExecute
+-- Firebird.2.5 Firebird
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -180,16 +188,20 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5
 
-UPDATE
+DELETE FROM
 	"Parent" "p"
-SET
-	"Value1" = CAST(@Value1 AS Int)
 WHERE
 	"p"."ParentID" >= 1000
 ROWS @take
+
+BeforeExecute
+-- Firebird.2.5 Firebird
+
+DELETE FROM
+	"Parent" "c_1"
+WHERE
+	"c_1"."ParentID" >= 1000
 
