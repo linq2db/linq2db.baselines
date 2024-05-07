@@ -2,10 +2,15 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."ParentID" + p."ParentID"
+	t.ID
 FROM
-	"Child" t
-		INNER JOIN "Parent" p ON t."ParentID" = p."ParentID"
+	(
+		SELECT
+			ch."ParentID" + p."ParentID" as ID
+		FROM
+			"Child" ch
+				INNER JOIN "Parent" p ON ch."ParentID" = p."ParentID"
+	) t
 WHERE
-	t."ParentID" + p."ParentID" > 2
+	t.ID > 2
 
