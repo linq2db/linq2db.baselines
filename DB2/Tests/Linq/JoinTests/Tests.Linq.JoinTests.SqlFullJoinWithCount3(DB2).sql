@@ -24,5 +24,5 @@ FROM
 						"right_1"."ParentID" <> @id
 				) "right_2" ON "right_2"."ParentID" = "left_1"."ParentID"
 	) "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

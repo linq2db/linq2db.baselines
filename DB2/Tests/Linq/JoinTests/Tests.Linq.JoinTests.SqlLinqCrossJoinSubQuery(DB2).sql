@@ -12,13 +12,13 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" > 0
-		FETCH FIRST 10 ROWS ONLY
+		FETCH NEXT 10 ROWS ONLY
 	) "p_1",
 	(
 		SELECT
 			"c_1"."ChildID"
 		FROM
 			"Child" "c_1"
-		FETCH FIRST 10 ROWS ONLY
+		FETCH NEXT 10 ROWS ONLY
 	) "t1"
 

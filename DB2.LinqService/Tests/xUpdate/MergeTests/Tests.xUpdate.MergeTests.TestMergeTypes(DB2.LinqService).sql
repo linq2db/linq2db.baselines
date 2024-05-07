@@ -72,24 +72,24 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(255)),
-	CAST(@FieldNString AS NVarChar(255)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(32672)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(5)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -154,24 +154,24 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(13)),
-	CAST(@FieldNString AS NVarChar(13)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(32672)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(18, 10)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(5)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -238,24 +238,24 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(10)),
-	CAST(@FieldNString AS NVarChar(14)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(19, 10)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(1)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -321,24 +321,24 @@ INSERT INTO "TestMerge1"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(20)),
-	CAST(@FieldNString AS NVarChar(12)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(19, 10)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(8168)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -403,24 +403,24 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(12)),
-	CAST(@FieldNString AS NVarChar(20)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(3, 3)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(5)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -487,24 +487,24 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(9)),
-	CAST(@FieldNString AS NVarChar(14)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(19, 10)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(1)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -569,24 +569,24 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(12)),
-	CAST(@FieldNString AS NVarChar(20)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(3, 3)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(5)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute
@@ -653,24 +653,24 @@ INSERT INTO "TestMerge2"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@FieldInt32 AS Int),
-	CAST(@FieldInt64 AS BigInt),
-	CAST(@FieldBoolean AS smallint),
-	CAST(@FieldString AS NVarChar(12)),
-	CAST(@FieldNString AS NVarChar(17)),
-	CAST(@FieldChar AS NChar(1)),
-	CAST(@FieldNChar AS NChar(1)),
-	CAST(@FieldFloat AS Real),
-	CAST(@FieldDouble AS Float),
-	CAST(@FieldDateTime AS timestamp),
-	CAST(@FieldBinary AS VARBINARY(6)),
-	CAST(@FieldGuid AS char(16) for bit data),
-	CAST(@FieldDecimal AS Decimal(19, 10)),
-	CAST(@FieldDate AS timestamp),
-	CAST(@FieldTime AS Time),
-	CAST(@FieldEnumString AS NVarChar(1)),
-	CAST(@FieldEnumNumber AS Int)
+	@Id,
+	@FieldInt32,
+	@FieldInt64,
+	@FieldBoolean,
+	@FieldString,
+	@FieldNString,
+	@FieldChar,
+	@FieldNChar,
+	@FieldFloat,
+	@FieldDouble,
+	@FieldDateTime,
+	@FieldBinary,
+	@FieldGuid,
+	@FieldDecimal,
+	@FieldDate,
+	@FieldTime,
+	@FieldEnumString,
+	@FieldEnumNumber
 )
 
 BeforeExecute

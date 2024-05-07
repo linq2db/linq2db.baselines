@@ -14,6 +14,6 @@ FROM
 				"x"."ChildID"
 			FROM
 				"Child" "x"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "c_1" ON "c_1"."ParentID" = "o"."ParentID"
 

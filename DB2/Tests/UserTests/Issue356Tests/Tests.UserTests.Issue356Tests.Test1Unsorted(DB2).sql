@@ -25,5 +25,5 @@ FROM
 						"Child" "t1"
 				) "c_2"
 		) "t2" ON "t2"."ParentID" = "x"."ParentID"
-FETCH FIRST 10 ROWS ONLY
+FETCH NEXT 10 ROWS ONLY
 

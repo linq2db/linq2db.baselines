@@ -40,10 +40,10 @@ INSERT INTO "xxPerson"
 )
 VALUES
 (
-	CAST(@FirstName AS NVarChar(6)),
-	CAST(@LastName AS NVarChar(4)),
-	CAST(@MiddleName AS NVarChar(255)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -65,7 +65,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)

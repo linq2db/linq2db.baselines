@@ -1,40 +1,24 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 2
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID" DESC) as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 7
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID" DESC
+OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 2
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID" DESC) as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 7
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID" DESC
+OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 

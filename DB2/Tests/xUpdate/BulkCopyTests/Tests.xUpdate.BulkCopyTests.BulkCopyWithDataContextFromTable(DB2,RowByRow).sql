@@ -50,7 +50,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute

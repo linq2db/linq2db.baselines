@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@Gender AS NChar(1)),
-			CAST(@Name_FirstName AS NVarChar(13)),
-			CAST(@Name_MiddleName AS NVarChar(255)),
-			CAST(@Name_LastName AS NVarChar(5))
+			@Gender,
+			@Name_FirstName,
+			@Name_MiddleName,
+			@Name_LastName
 		)
 	)
 
@@ -50,7 +50,7 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -90,5 +90,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

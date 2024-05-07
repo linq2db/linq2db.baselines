@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
-	CAST(@Value1 AS Int)
+	@ParentID,
+	@Value1
 )
 
 BeforeExecute
@@ -27,7 +27,7 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -36,16 +36,16 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@MoneyValue AS Decimal),
-	CAST(@DateTimeValue AS timestamp),
-	CAST(@DateTimeValue2 AS timestamp),
-	CAST(@BoolValue AS smallint),
-	CAST(@GuidValue AS char(16) for bit data),
-	CAST(@SmallIntValue AS SmallInt),
-	CAST(@IntValue AS Int),
-	CAST(@BigIntValue AS BigInt),
-	CAST(@StringValue AS NVarChar(255))
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@DateTimeValue2,
+	@BoolValue,
+	@GuidValue,
+	@SmallIntValue,
+	@IntValue,
+	@BigIntValue,
+	@StringValue
 )
 
 BeforeExecute
@@ -66,7 +66,7 @@ FROM
 	"LinqDataTypes" "t1"
 WHERE
 	"t1".ID = 1000
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

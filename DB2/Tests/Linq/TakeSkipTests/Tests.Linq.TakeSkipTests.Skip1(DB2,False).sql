@@ -2,35 +2,23 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID") as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > 3
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
+OFFSET 3 ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID") as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > 4
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
+OFFSET 4 ROWS
 

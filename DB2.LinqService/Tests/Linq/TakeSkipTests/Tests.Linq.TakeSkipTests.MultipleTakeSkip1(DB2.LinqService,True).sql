@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -86,7 +86,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -100,7 +100,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -114,7 +114,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
@@ -128,24 +128,19 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(6))
+	@Value
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."Value_1"
+	"t1"."Value"
 FROM
-	(
-		SELECT
-			"t1"."Value" as "Value_1",
-			ROW_NUMBER() OVER (ORDER BY "t1"."Value") as RN
-		FROM
-			"TakeSkipClass" "t1"
-	) "t2"
-WHERE
-	"t2".RN > 3 AND "t2".RN <= 4
+	"TakeSkipClass" "t1"
+ORDER BY
+	"t1"."Value"
+OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

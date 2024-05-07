@@ -61,9 +61,9 @@ INSERT INTO "Topic"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Title AS NVarChar(5)),
-	CAST(@Text AS NVarChar(4))
+	@Id,
+	@Title,
+	@Text
 )
 
 BeforeExecute
@@ -82,7 +82,7 @@ FROM
 			"Topic" "x"
 		WHERE
 			"x"."Id" = 6
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "m_1"
 		INNER JOIN "Message" "d" ON "d"."TopicId" = "m_1"."Id"
 
@@ -97,7 +97,7 @@ FROM
 	"Topic" "x"
 WHERE
 	"x"."Id" = 6
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransaction

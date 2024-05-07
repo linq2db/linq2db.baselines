@@ -44,10 +44,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -122,10 +122,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -148,10 +148,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -200,10 +200,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -278,10 +278,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -304,10 +304,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -330,10 +330,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -356,10 +356,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -382,10 +382,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -408,10 +408,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -434,10 +434,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -460,10 +460,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -486,37 +486,25 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData",
-	"t2"."OrderData2"
+SELECT DISTINCT
+	"x"."DuplicateData",
+	"x"."OrderData2"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			"t1"."OrderData2",
-			ROW_NUMBER() OVER (ORDER BY "t1"."OrderData2" DESC) as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData",
-					"x"."OrderData2"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData2" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

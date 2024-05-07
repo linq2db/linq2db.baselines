@@ -29,7 +29,7 @@ SELECT
 	current schema
 FROM
 	"LinqDataTypes" "t1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -45,8 +45,8 @@ INSERT INTO DB2INST1."Issue681Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS Int)
+	@ID,
+	@Value
 )
 
 BeforeExecute

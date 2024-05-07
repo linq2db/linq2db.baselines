@@ -12,8 +12,8 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
-	CAST(@Value1 AS Int)
+	@ParentID,
+	@Value1
 )
 
 BeforeExecute
@@ -42,5 +42,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @ParentID
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

@@ -23,10 +23,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	CAST(@FirstName AS NVarChar(25)),
-	CAST(@LastName AS NVarChar(8)),
-	CAST(@MiddleName AS NVarChar(15)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -84,5 +84,5 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

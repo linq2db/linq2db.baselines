@@ -62,7 +62,7 @@ FROM
 						CURRENT_TIMESTAMP + 4 DAY as "Value2"
 					FROM SYSIBM.SYSDUMMY1
 				) "t1"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "t2" ON 1=1
 
 BeforeExecute

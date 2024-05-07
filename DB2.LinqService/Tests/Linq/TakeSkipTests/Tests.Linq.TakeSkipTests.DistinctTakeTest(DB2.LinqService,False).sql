@@ -30,7 +30,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -58,7 +58,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -72,7 +72,7 @@ INSERT INTO "TakeSkipClass"
 )
 VALUES
 (
-	CAST(@Value AS VarChar(5))
+	@Value
 )
 
 BeforeExecute
@@ -82,7 +82,7 @@ SELECT DISTINCT
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
-FETCH FIRST 3 ROWS ONLY
+FETCH NEXT 3 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

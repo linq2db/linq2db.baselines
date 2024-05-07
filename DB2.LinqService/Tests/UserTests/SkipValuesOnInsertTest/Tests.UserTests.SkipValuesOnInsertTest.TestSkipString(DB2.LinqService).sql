@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Age AS Int)
+	@Id,
+	@Age
 )
 
 BeforeExecute
@@ -52,7 +52,7 @@ FROM
 	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -68,8 +68,8 @@ INSERT INTO "PR_1598_Insert_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Age AS Int)
+	@Id,
+	@Age
 )
 
 BeforeExecute
@@ -83,7 +83,7 @@ FROM
 	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 2
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

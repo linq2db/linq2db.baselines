@@ -37,8 +37,8 @@ INSERT INTO "PR_1598_Insert_Table_Cache"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(4))
+	@Id,
+	@Name
 )
 
 BeforeExecute
@@ -52,7 +52,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -79,7 +79,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

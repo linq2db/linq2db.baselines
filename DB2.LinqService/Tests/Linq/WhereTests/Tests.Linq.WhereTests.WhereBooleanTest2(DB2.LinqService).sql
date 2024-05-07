@@ -40,9 +40,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -172,9 +172,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -194,9 +194,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -216,9 +216,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute
@@ -238,9 +238,9 @@ INSERT INTO "WhereCases"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BoolValue AS smallint),
-	CAST(@NullableBoolValue AS smallint)
+	@Id,
+	@BoolValue,
+	@NullableBoolValue
 )
 
 BeforeExecute

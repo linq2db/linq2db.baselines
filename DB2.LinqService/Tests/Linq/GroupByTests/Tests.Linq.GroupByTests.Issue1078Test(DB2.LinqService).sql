@@ -40,9 +40,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -128,9 +128,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -150,9 +150,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -172,9 +172,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -194,9 +194,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute
@@ -216,9 +216,9 @@ INSERT INTO "Issue1078Table"
 )
 VALUES
 (
-	CAST(@UserID AS Int),
-	CAST(@SiteID AS Int),
-	CAST(@Active AS smallint)
+	@UserID,
+	@SiteID,
+	@Active
 )
 
 BeforeExecute

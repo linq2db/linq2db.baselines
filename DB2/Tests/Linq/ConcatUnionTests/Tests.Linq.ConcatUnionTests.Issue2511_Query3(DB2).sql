@@ -33,7 +33,7 @@ FROM
 					"p"."Gender"
 				FROM
 					"Person" "p"
-				FETCH FIRST 2 ROWS ONLY
+				FETCH NEXT 2 ROWS ONLY
 			) "t1"
 		UNION ALL
 		SELECT

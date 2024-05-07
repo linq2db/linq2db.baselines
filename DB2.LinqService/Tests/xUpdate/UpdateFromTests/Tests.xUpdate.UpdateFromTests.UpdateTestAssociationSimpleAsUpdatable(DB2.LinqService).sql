@@ -48,11 +48,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -78,11 +78,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -108,11 +108,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -138,11 +138,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -191,10 +191,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@RelatedValue1 AS Int),
-	CAST(@RelatedValue2 AS Int),
-	CAST(@RelatedValue3 AS Int)
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
 )
 
 BeforeExecute
@@ -217,10 +217,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@RelatedValue1 AS Int),
-	CAST(@RelatedValue2 AS Int),
-	CAST(@RelatedValue3 AS Int)
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
 )
 
 BeforeExecute
@@ -243,10 +243,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@RelatedValue1 AS Int),
-	CAST(@RelatedValue2 AS Int),
-	CAST(@RelatedValue3 AS Int)
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
 )
 
 BeforeExecute
@@ -269,10 +269,10 @@ INSERT INTO "UpdateRelation"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@RelatedValue1 AS Int),
-	CAST(@RelatedValue2 AS Int),
-	CAST(@RelatedValue3 AS Int)
+	@id,
+	@RelatedValue1,
+	@RelatedValue2,
+	@RelatedValue3
 )
 
 BeforeExecute
@@ -307,7 +307,7 @@ FROM
 		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
 WHERE
 	"a_Relation"."RelatedValue1" = 11
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

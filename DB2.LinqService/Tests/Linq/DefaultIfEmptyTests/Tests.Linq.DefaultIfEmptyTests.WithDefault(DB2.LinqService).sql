@@ -16,6 +16,6 @@ FROM
 				"t1"."ChildID"
 			FROM
 				"Child" "t1"
-			FETCH FIRST 0 ROWS ONLY
+			FETCH NEXT 0 ROWS ONLY
 		) "d" ON 1=1
 

@@ -36,8 +36,8 @@ INSERT INTO "Car"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(7))
+	@Id,
+	@Name
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Car"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(9))
+	@Id,
+	@Name
 )
 
 BeforeExecute

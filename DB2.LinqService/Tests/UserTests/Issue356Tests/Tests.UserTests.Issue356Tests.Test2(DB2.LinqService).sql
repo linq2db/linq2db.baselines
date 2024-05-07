@@ -26,9 +26,9 @@ FROM
 				) "c_2"
 			ORDER BY
 				"c_2"."ParentID"
-			FETCH FIRST 10 ROWS ONLY
+			FETCH NEXT 10 ROWS ONLY
 		) "t2" ON "t2"."ParentID" = "x"."ParentID"
 ORDER BY
 	"x"."ParentID"
-FETCH FIRST 10 ROWS ONLY
+FETCH NEXT 10 ROWS ONLY
 

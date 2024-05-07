@@ -20,10 +20,10 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	CAST(@FirstName AS NVarChar(4)),
-	CAST(@LastName AS NVarChar(9)),
-	CAST(@MiddleName AS NVarChar(255)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -39,5 +39,5 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

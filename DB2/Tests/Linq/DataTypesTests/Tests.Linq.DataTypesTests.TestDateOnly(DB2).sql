@@ -85,9 +85,9 @@ INSERT INTO "DateOnlyTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Column AS Date),
-	CAST(@ColumnNullable AS Date)
+	@Id,
+	@Column,
+	@ColumnNullable
 )
 
 BeforeExecute
@@ -107,9 +107,9 @@ INSERT INTO "DateOnlyTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Column AS Date),
-	CAST(@ColumnNullable AS Date)
+	@Id,
+	@Column,
+	@ColumnNullable
 )
 
 BeforeExecute

@@ -15,7 +15,7 @@ FROM
 			"Parent" "x"
 		WHERE
 			"x"."ParentID" = 3
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
@@ -29,7 +29,7 @@ FROM
 	"Parent" "x"
 WHERE
 	"x"."ParentID" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransactionAsync
@@ -50,7 +50,7 @@ FROM
 			"Parent" "x"
 		WHERE
 			"x"."ParentID" = 3
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
@@ -64,7 +64,7 @@ FROM
 	"Parent" "x"
 WHERE
 	"x"."ParentID" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransactionAsync
@@ -85,7 +85,7 @@ FROM
 			"Parent" "x"
 		WHERE
 			"x"."ParentID" = 3
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
@@ -99,7 +99,7 @@ FROM
 	"Parent" "x"
 WHERE
 	"x"."ParentID" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransactionAsync

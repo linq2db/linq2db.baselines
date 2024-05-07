@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(4)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@MiddleName AS NVarChar(255)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
 		)
 	)
 
@@ -131,5 +131,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

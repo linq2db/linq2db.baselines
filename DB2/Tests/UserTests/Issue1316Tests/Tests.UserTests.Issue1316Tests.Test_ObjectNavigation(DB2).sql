@@ -32,7 +32,7 @@ INSERT INTO "Issue1316Tests"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ FROM
 	"Issue1316Tests" "t1"
 WHERE
 	"t1".ID = @Id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

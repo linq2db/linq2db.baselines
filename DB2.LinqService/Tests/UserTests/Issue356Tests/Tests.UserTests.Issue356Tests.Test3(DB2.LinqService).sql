@@ -3,38 +3,32 @@
 
 SELECT
 	"x"."ParentID",
-	"t3"."ChildID"
+	"t2"."ChildID"
 FROM
 	"Parent" "x"
 		INNER JOIN (
 			SELECT
-				"t2"."ParentID",
-				"t2"."ChildID"
+				"c_2"."ParentID",
+				"c_2"."ChildID"
 			FROM
 				(
 					SELECT
-						"c_2"."ParentID",
-						"c_2"."ChildID",
-						ROW_NUMBER() OVER (ORDER BY "c_2"."ParentID") as RN
+						"c_1"."ParentID",
+						"c_1"."ChildID"
 					FROM
-						(
-							SELECT
-								"c_1"."ParentID",
-								"c_1"."ChildID"
-							FROM
-								"Child" "c_1"
-							UNION
-							SELECT
-								"t1"."ParentID",
-								"t1"."ChildID"
-							FROM
-								"Child" "t1"
-						) "c_2"
-				) "t2"
-			WHERE
-				"t2".RN > 10 AND "t2".RN <= 20
-		) "t3" ON "t3"."ParentID" = "x"."ParentID"
+						"Child" "c_1"
+					UNION
+					SELECT
+						"t1"."ParentID",
+						"t1"."ChildID"
+					FROM
+						"Child" "t1"
+				) "c_2"
+			ORDER BY
+				"c_2"."ParentID"
+			OFFSET 10 ROWS FETCH NEXT 10 ROWS ONLY 
+		) "t2" ON "t2"."ParentID" = "x"."ParentID"
 ORDER BY
 	"x"."ParentID"
-FETCH FIRST 10 ROWS ONLY
+FETCH NEXT 10 ROWS ONLY
 

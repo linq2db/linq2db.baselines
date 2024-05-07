@@ -44,10 +44,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(3)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
@@ -96,257 +96,159 @@ INSERT INTO "OrderByDistinctData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@DuplicateData AS NVarChar(5)),
-	CAST(@OrderData1 AS Int),
-	CAST(@OrderData2 AS Int)
+	@Id,
+	@DuplicateData,
+	@OrderData1,
+	@OrderData2
 )
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1") as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1" DESC) as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1", "x"."OrderData2") as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1", "x"."OrderData2" DESC) as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1" DESC, "x"."OrderData2" DESC) as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1" DESC,
+	"x"."OrderData2" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY "x"."OrderData1", "x"."OrderData2" DESC) as RN
-		FROM
-			"OrderByDistinctData" "x"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData1",
+	"x"."OrderData2" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -42,10 +42,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS NVarChar(5)),
-	CAST(@CEnum AS VarChar(20))
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -68,10 +68,10 @@ INSERT INTO "Src"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Int AS Int),
-	CAST(@Enum AS NVarChar(3)),
-	CAST(@CEnum AS VarChar(12))
+	@Id,
+	@Int,
+	@Enum,
+	@CEnum
 )
 
 BeforeExecute
@@ -83,7 +83,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" IN (-1, -2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -94,7 +94,7 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Int" IN (-1) OR "s"."Int" IS NULL)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -105,7 +105,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" IN (-1, 2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -116,7 +116,7 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Int" NOT IN (2) AND "s"."Int" IS NOT NULL)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -127,7 +127,7 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Int" NOT IN (-1, 2) OR "s"."Int" IS NULL)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -43,9 +43,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value1 AS NVarChar(4))
+	@Id,
+	@Discriminator,
+	@Value1
 )
 
 BeforeExecute
@@ -65,9 +65,9 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value2 AS NVarChar(4))
+	@Id,
+	@Discriminator,
+	@Value2
 )
 
 BeforeExecute
@@ -90,10 +90,10 @@ INSERT INTO "TPHTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Discriminator AS Int),
-	CAST(@Value3 AS NVarChar(4)),
-	CAST(@NullableBool AS VarChar(1))
+	@Id,
+	@Discriminator,
+	@Value3,
+	@NullableBool
 )
 
 BeforeExecute
@@ -125,7 +125,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 1
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -141,7 +141,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 2
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -157,7 +157,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 3
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -173,7 +173,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value1" = 'Str1'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -189,7 +189,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value2" = 'Str2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -205,7 +205,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value3" = 'Str3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

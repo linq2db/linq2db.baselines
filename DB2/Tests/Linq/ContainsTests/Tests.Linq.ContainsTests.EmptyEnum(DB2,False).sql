@@ -53,8 +53,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -63,8 +61,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

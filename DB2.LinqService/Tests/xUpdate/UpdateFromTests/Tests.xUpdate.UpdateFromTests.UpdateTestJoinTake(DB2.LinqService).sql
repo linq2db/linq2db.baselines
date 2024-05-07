@@ -48,11 +48,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -78,11 +78,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -108,11 +108,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -138,11 +138,11 @@ INSERT INTO "UpdatedEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int),
-	CAST(@RelationId AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@RelationId
 )
 
 BeforeExecute
@@ -191,10 +191,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -217,10 +217,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -243,10 +243,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -269,10 +269,10 @@ INSERT INTO "NewEntities"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -306,7 +306,7 @@ SET
 						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
 				WHERE
 					"t_1"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
+				FETCH NEXT 2 ROWS ONLY
 			) "t4"
 		WHERE
 			"UpdatedEntities"."id" = "t4"."id"
@@ -324,7 +324,7 @@ WHERE
 						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 				WHERE
 					"t"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
+				FETCH NEXT 2 ROWS ONLY
 			) "t2"
 		WHERE
 			"UpdatedEntities"."id" = "t2"."id"

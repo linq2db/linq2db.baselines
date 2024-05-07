@@ -28,10 +28,10 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(4)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@MiddleName AS NVarChar(255)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@MiddleName,
+			@Gender
 		)
 	)
 
@@ -43,7 +43,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -73,7 +73,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -103,7 +103,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id2 AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -135,5 +135,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

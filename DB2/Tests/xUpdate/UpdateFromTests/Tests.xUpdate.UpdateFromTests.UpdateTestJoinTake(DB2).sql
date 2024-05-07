@@ -115,7 +115,7 @@ SET
 						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
 				WHERE
 					"t_1"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
+				FETCH NEXT 2 ROWS ONLY
 			) "t4"
 		WHERE
 			"UpdatedEntities"."id" = "t4"."id"
@@ -133,7 +133,7 @@ WHERE
 						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 				WHERE
 					"t"."id" <> @someId
-				FETCH FIRST 2 ROWS ONLY
+				FETCH NEXT 2 ROWS ONLY
 			) "t2"
 		WHERE
 			"UpdatedEntities"."id" = "t2"."id"

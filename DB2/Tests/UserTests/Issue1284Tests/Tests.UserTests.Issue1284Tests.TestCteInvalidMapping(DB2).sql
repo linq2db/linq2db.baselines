@@ -13,26 +13,14 @@ WITH CTE_1
 AS
 (
 	SELECT
-		"x_1"."FirstName",
-		"x_1".ID,
-		"x_1"."LastName",
-		"x_1"."MiddleName",
-		"x_1"."Gender",
-		"x_1"."rn"
+		"x"."FirstName",
+		"x"."PersonID",
+		"x"."LastName",
+		"x"."MiddleName",
+		"x"."Gender",
+		1
 	FROM
-		(
-			SELECT
-				1 as "rn",
-				"x"."FirstName",
-				"x"."PersonID" as ID,
-				"x"."LastName",
-				"x"."MiddleName",
-				"x"."Gender"
-			FROM
-				"Person" "x"
-		) "x_1"
-	WHERE
-		"x_1"."rn" = 1
+		"Person" "x"
 )
 SELECT
 	"t1"."entry_FirstName",
@@ -43,7 +31,7 @@ SELECT
 	"t1"."rn"
 FROM
 	CTE_1 "t1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -56,5 +44,5 @@ SELECT
 	"person_1"."Gender"
 FROM
 	"Person" "person_1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

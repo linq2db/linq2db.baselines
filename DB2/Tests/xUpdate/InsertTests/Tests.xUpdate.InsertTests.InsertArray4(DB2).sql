@@ -35,13 +35,13 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@MoneyValue AS Decimal),
-	CAST(@DateTimeValue AS timestamp),
-	CAST(@BoolValue AS smallint),
-	CAST(@GuidValue AS char(16) for bit data),
-	CAST(@BinaryValue AS VARBINARY(4)),
-	CAST(@SmallIntValue AS SmallInt)
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@BoolValue,
+	@GuidValue,
+	@BinaryValue,
+	@SmallIntValue
 )
 
 BeforeExecute
@@ -59,7 +59,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1001
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

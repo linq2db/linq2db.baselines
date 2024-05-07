@@ -8,5 +8,5 @@ FROM
 	"Parent" "t1"
 ORDER BY
 	"t1"."ParentID"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

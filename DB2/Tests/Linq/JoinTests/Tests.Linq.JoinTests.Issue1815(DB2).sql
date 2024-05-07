@@ -88,7 +88,7 @@ FROM
 		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
 	"t1"."InId" = 1
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -105,7 +105,7 @@ FROM
 		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
 	"t1"."InId" = 2
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
