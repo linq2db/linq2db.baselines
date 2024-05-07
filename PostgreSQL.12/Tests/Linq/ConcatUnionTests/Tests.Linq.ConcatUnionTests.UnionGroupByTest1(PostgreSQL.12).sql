@@ -2,20 +2,20 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t2."Month_1",
-	t2."Year_1",
+	t2.month_1,
+	t2.year_1,
 	1
 FROM
 	(
 		SELECT
-			Floor(Extract(month From t1."DateTimeValue"))::Int as "Month_1",
-			Floor(Extract(year From t1."DateTimeValue"))::Int as "Year_1"
+			Floor(Extract(month From t1."DateTimeValue"))::Int as month_1,
+			Floor(Extract(year From t1."DateTimeValue"))::Int as year_1
 		FROM
 			"LinqDataTypes" t1
 	) t2
 GROUP BY
-	t2."Month_1",
-	t2."Year_1"
+	t2.month_1,
+	t2.year_1
 UNION
 SELECT
 	t3."SmallIntValue",
