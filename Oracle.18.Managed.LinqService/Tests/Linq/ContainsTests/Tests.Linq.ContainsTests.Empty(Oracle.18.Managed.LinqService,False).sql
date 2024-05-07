@@ -99,8 +99,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -109,8 +107,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
