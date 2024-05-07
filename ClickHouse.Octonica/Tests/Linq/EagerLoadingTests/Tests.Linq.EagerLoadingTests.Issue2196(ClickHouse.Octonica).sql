@@ -107,7 +107,6 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.Id,
 	p.Id
 FROM
 	EventScheduleItem p

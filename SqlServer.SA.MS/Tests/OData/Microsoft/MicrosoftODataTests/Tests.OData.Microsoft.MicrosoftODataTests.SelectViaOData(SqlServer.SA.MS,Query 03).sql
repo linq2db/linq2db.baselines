@@ -33,30 +33,22 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[it_2].[Name],
-	[it_2].[Value_1],
-	[it_2].[SUM_1]
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[SUM_1]
 FROM
 	(
 		SELECT
-			SUM([it_1].[Value_1]) as [SUM_1],
-			[it_1].[c1] as [Name],
-			[it_1].[Title] as [Value_1]
+			SUM([it].[YearsExperience]) as [SUM_1],
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
 		FROM
-			(
-				SELECT
-					N'Title' as [c1],
-					[it].[Title],
-					[it].[YearsExperience] as [Value_1]
-				FROM
-					[odata_person] [it]
-			) [it_1]
+			[odata_person] [it]
 		GROUP BY
-			[it_1].[c1],
-			[it_1].[Title]
-	) [it_2]
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	[it_2].[SUM_1]
+	[it_1].[SUM_1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

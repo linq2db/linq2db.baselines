@@ -40,9 +40,9 @@ INSERT INTO "InternalEmail"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@RequestId AS Int),
-	CAST(@UserId AS Int)
+	@Id,
+	@RequestId,
+	@UserId
 )
 
 BeforeExecute
@@ -83,8 +83,8 @@ INSERT INTO "Request"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@UserId AS Int)
+	@Id,
+	@UserId
 )
 
 BeforeExecute
@@ -121,7 +121,7 @@ INSERT INTO "User"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO "Admin"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -199,8 +199,8 @@ INSERT INTO "EmailAdminAssociation"
 )
 VALUES
 (
-	CAST(@EmailId AS Int),
-	CAST(@AdminId AS Int)
+	@EmailId,
+	@AdminId
 )
 
 BeforeExecute
@@ -237,7 +237,7 @@ INSERT INTO "Email"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -278,8 +278,8 @@ INSERT INTO "EmailAttachmentAssociation"
 )
 VALUES
 (
-	CAST(@EmailId AS Int),
-	CAST(@AttachmentId AS Int)
+	@EmailId,
+	@AttachmentId
 )
 
 BeforeExecute
@@ -316,7 +316,7 @@ INSERT INTO "Attachment"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -361,9 +361,9 @@ INSERT INTO "Document"
 )
 VALUES
 (
-	CAST(@AttachmentId AS Int),
-	CAST(@Position AS Int),
-	CAST(@Name AS VARCHAR(10))
+	@AttachmentId,
+	@Position,
+	@Name
 )
 
 BeforeExecute
@@ -383,9 +383,9 @@ INSERT INTO "Document"
 )
 VALUES
 (
-	CAST(@AttachmentId AS Int),
-	CAST(@Position AS Int),
-	CAST(@Name AS VARCHAR(10))
+	@AttachmentId,
+	@Position,
+	@Name
 )
 
 BeforeExecute
@@ -405,9 +405,9 @@ INSERT INTO "Document"
 )
 VALUES
 (
-	CAST(@AttachmentId AS Int),
-	CAST(@Position AS Int),
-	CAST(@Name AS VARCHAR(10))
+	@AttachmentId,
+	@Position,
+	@Name
 )
 
 BeforeExecute

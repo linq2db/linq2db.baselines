@@ -40,9 +40,9 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ClaimedKeyType AS NVarChar(3)),
-	CAST(@ClaimedKeyTypeN AS NVarChar(3))
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 BeforeExecute

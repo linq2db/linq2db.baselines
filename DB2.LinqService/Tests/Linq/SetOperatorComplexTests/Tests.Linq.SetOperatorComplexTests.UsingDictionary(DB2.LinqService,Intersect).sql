@@ -36,8 +36,8 @@ INSERT INTO "Author"
 )
 VALUES
 (
-	CAST(@AuthorId AS Int),
-	CAST(@AuthorName AS NVarChar(12))
+	@AuthorId,
+	@AuthorName
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Author"
 )
 VALUES
 (
-	CAST(@AuthorId AS Int),
-	CAST(@AuthorName AS NVarChar(14))
+	@AuthorId,
+	@AuthorName
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Author"
 )
 VALUES
 (
-	CAST(@AuthorId AS Int),
-	CAST(@AuthorName AS NVarChar(20))
+	@AuthorId,
+	@AuthorName
 )
 
 BeforeExecute
@@ -123,10 +123,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(14)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -149,10 +149,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(8)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@NovelScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@NovelScore
 )
 
 BeforeExecute
@@ -175,10 +175,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(17)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -201,10 +201,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(10)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -227,10 +227,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(23)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@NovelScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@NovelScore
 )
 
 BeforeExecute
@@ -253,10 +253,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(20)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -279,10 +279,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(14)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -305,10 +305,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(17)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@NovelScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@NovelScore
 )
 
 BeforeExecute
@@ -331,10 +331,10 @@ INSERT INTO "Book"
 )
 VALUES
 (
-	CAST(@BookId AS Int),
-	CAST(@BookName AS NVarChar(23)),
-	CAST(@Discriminator AS NVarChar(5)),
-	CAST(@RomanScore AS Int)
+	@BookId,
+	@BookName,
+	@Discriminator,
+	@RomanScore
 )
 
 BeforeExecute
@@ -373,8 +373,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -391,8 +391,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -409,8 +409,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -427,8 +427,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -445,8 +445,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -463,8 +463,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -481,8 +481,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -499,8 +499,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute
@@ -517,8 +517,8 @@ INSERT INTO "BookAuthor"
 )
 VALUES
 (
-	CAST(@FkBookId AS Int),
-	CAST(@FkAuthorId AS Int)
+	@FkBookId,
+	@FkAuthorId
 )
 
 BeforeExecute

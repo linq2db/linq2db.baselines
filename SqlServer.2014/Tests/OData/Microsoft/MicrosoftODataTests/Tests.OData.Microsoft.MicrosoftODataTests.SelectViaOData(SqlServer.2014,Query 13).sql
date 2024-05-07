@@ -34,20 +34,13 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	[it_1].[c1],
-	[it_1].[Title],
+	N'Title',
+	[it].[Title],
 	COUNT(*)
 FROM
-	(
-		SELECT
-			N'Title' as [c1],
-			[it].[Title]
-		FROM
-			[odata_person] [it]
-	) [it_1]
+	[odata_person] [it]
 GROUP BY
-	[it_1].[c1],
-	[it_1].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.2014

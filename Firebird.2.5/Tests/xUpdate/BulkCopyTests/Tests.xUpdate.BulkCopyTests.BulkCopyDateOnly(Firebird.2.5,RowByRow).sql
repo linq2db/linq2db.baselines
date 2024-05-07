@@ -30,7 +30,7 @@ INSERT INTO "DateOnlyTable"
 )
 VALUES
 (
-	CAST(@Date AS Date)
+	@Date
 )
 
 BeforeExecute

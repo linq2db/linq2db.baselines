@@ -38,9 +38,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@SecurityClass AS VARCHAR(4)),
-	CAST(@Units AS Int)
+	@InvestorId,
+	@SecurityClass,
+	@Units
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@SecurityClass AS VARCHAR(4)),
-	CAST(@Units AS Int)
+	@InvestorId,
+	@SecurityClass,
+	@Units
 )
 
 BeforeExecute
@@ -82,9 +82,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@SecurityClass AS VARCHAR(4)),
-	CAST(@Units AS Int)
+	@InvestorId,
+	@SecurityClass,
+	@Units
 )
 
 BeforeExecute
@@ -104,9 +104,9 @@ INSERT INTO "Transaction"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@SecurityClass AS VARCHAR(4)),
-	CAST(@Units AS Int)
+	@InvestorId,
+	@SecurityClass,
+	@Units
 )
 
 BeforeExecute
@@ -149,9 +149,9 @@ INSERT INTO "InvestorPayment"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@NetPayment AS Int)
+	@Id,
+	@InvestorId,
+	@NetPayment
 )
 
 BeforeExecute
@@ -171,9 +171,9 @@ INSERT INTO "InvestorPayment"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@NetPayment AS Int)
+	@Id,
+	@InvestorId,
+	@NetPayment
 )
 
 BeforeExecute
@@ -216,9 +216,9 @@ INSERT INTO "PaymentEvent"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Description AS VARCHAR(3)),
-	CAST(@SecurityClass AS VARCHAR(4))
+	@Id,
+	@Description,
+	@SecurityClass
 )
 
 BeforeExecute
@@ -238,9 +238,9 @@ INSERT INTO "PaymentEvent"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Description AS VARCHAR(3)),
-	CAST(@SecurityClass AS VARCHAR(4))
+	@Id,
+	@Description,
+	@SecurityClass
 )
 
 BeforeExecute
@@ -279,8 +279,8 @@ INSERT INTO "InvestorPaymentDetail"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@CalculationId AS Int)
+	@InvestorId,
+	@CalculationId
 )
 
 BeforeExecute
@@ -297,8 +297,8 @@ INSERT INTO "InvestorPaymentDetail"
 )
 VALUES
 (
-	CAST(@InvestorId AS VARCHAR(4)),
-	CAST(@CalculationId AS Int)
+	@InvestorId,
+	@CalculationId
 )
 
 BeforeExecute
@@ -337,8 +337,8 @@ INSERT INTO "PaymentCalculation"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@EventId AS Int)
+	@Id,
+	@EventId
 )
 
 BeforeExecute
@@ -355,8 +355,8 @@ INSERT INTO "PaymentCalculation"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@EventId AS Int)
+	@Id,
+	@EventId
 )
 
 BeforeExecute

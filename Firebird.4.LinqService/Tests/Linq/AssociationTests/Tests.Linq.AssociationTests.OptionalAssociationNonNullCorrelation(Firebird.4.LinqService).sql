@@ -36,8 +36,8 @@ INSERT INTO "Table1"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@ID2 AS Int)
+	@ID,
+	@ID2
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Table1"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@ID2 AS Int)
+	@ID,
+	@ID2
 )
 
 BeforeExecute
@@ -96,8 +96,8 @@ INSERT INTO "Table2"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@ID3 AS Int)
+	@ID,
+	@ID3
 )
 
 BeforeExecute
@@ -134,7 +134,7 @@ INSERT INTO "Table3"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -175,8 +175,8 @@ INSERT INTO "Table4"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@ID3 AS Int)
+	@ID,
+	@ID3
 )
 
 BeforeExecute
@@ -193,8 +193,8 @@ INSERT INTO "Table4"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@ID3 AS Int)
+	@ID,
+	@ID3
 )
 
 BeforeExecute

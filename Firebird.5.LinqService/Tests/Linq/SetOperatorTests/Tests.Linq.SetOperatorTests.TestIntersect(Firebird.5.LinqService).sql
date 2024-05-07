@@ -44,10 +44,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -70,10 +70,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -96,10 +96,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -122,10 +122,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -148,10 +148,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -200,10 +200,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -226,10 +226,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -252,10 +252,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute
@@ -278,10 +278,10 @@ INSERT INTO "SampleData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS Int),
-	CAST(@Value2 AS Int),
-	CAST(@Value3 AS Int)
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3
 )
 
 BeforeExecute

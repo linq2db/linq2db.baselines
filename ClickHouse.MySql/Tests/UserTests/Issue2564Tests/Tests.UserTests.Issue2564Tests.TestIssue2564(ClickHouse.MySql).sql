@@ -27,7 +27,7 @@ BeforeExecute
 SELECT
 	minOrNull(tgGroup_1.TranslatedMessage1),
 	tgGroup_1.TranslatedMessageGroup,
-	tgGroup_1.Hour_2,
+	tgGroup_1.Hour_1,
 	COUNT(*),
 	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
 FROM
@@ -37,7 +37,6 @@ FROM
 			tgGroup.TranslatedMessageGroup as TranslatedMessageGroup,
 			toHour(tgGroup.TimestampGenerated) as Hour_1,
 			tgGroup.TranslatedMessage1 as TranslatedMessage1,
-			toHour(tgGroup.TimestampGenerated) as Hour_2,
 			tgGroup.TimestampGenerated as TimestampGenerated,
 			tgGroup.TimestampGone as TimestampGone
 		FROM
@@ -51,6 +50,5 @@ FROM
 GROUP BY
 	tgGroup_1.ExternID1,
 	tgGroup_1.TranslatedMessageGroup,
-	tgGroup_1.Hour_1,
-	tgGroup_1.Hour_2
+	tgGroup_1.Hour_1
 

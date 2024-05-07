@@ -30,7 +30,7 @@ INSERT INTO "NotNullParent"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "NotNullParent"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ INSERT INTO "NotNullChild"
 )
 VALUES
 (
-	CAST(@ParentID AS Int)
+	@ParentID
 )
 
 BeforeExecute

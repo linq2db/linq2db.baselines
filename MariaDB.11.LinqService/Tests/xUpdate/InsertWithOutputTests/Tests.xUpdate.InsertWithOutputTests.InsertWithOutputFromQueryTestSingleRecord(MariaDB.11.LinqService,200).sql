@@ -276,17 +276,15 @@ RETURNING
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 200
-DECLARE @Value Int32
-SET     @Value = 200
-DECLARE @p Null -- Object
-SET     @p = 200
+DECLARE @param Int32
+SET     @param = 200
+DECLARE @param_1 Int32
+SET     @param_1 = 200
 
 SELECT
-	`s`.`Id` + @Id,
-	`s`.`Value` + @Value,
-	Concat(`s`.`ValueStr`, @p)
+	`s`.`Id` + @param,
+	`s`.`Value` + @param,
+	Concat(`s`.`ValueStr`, @param_1)
 FROM
 	`TableWithData` `s`
 WHERE

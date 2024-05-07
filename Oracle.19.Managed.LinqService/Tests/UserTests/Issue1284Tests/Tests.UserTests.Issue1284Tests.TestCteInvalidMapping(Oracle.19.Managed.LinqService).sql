@@ -13,26 +13,14 @@ WITH CTE_1
 AS
 (
 	SELECT
-		x_1."FirstName" as "entry_FirstName",
-		x_1.ID as "entry_ID",
-		x_1."LastName" as "entry_LastName",
-		x_1."MiddleName" as "entry_MiddleName",
-		x_1."Gender" as "entry_Gender",
-		x_1."rn"
+		x."FirstName" as "entry_FirstName",
+		x."PersonID" as "entry_ID",
+		x."LastName" as "entry_LastName",
+		x."MiddleName" as "entry_MiddleName",
+		x."Gender" as "entry_Gender",
+		1 as "rn"
 	FROM
-		(
-			SELECT
-				1 as "rn",
-				x."FirstName",
-				x."PersonID" as ID,
-				x."LastName",
-				x."MiddleName",
-				x."Gender"
-			FROM
-				"Person" x
-		) x_1
-	WHERE
-		x_1."rn" = 1
+		"Person" x
 )
 SELECT
 	t1."entry_FirstName" as "FirstName",

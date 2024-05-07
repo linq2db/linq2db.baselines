@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p Int32
-SET     @p = 0
 
 SELECT
-	Char_Length(`p`.`FirstName`) + @p
+	Char_Length(`p`.`FirstName`)
 FROM
 	`Person` `p`
 

@@ -34,8 +34,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -52,8 +52,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -70,8 +70,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -88,8 +88,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -106,8 +106,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -124,8 +124,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -142,8 +142,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -160,8 +160,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -178,8 +178,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -196,8 +196,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -214,8 +214,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -232,8 +232,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -250,8 +250,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -268,8 +268,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -286,8 +286,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -304,8 +304,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -322,8 +322,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute
@@ -340,8 +340,8 @@ INSERT INTO "AggregationData"
 )
 VALUES
 (
-	CAST(@GroupId AS Int),
-	CAST(@DataValue AS Float)
+	@GroupId,
+	@DataValue
 )
 
 BeforeExecute

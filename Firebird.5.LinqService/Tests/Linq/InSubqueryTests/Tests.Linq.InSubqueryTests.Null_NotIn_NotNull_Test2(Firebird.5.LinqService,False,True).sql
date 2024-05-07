@@ -30,7 +30,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -44,7 +44,7 @@ INSERT INTO "test_in_1"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -79,7 +79,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute
@@ -93,7 +93,7 @@ INSERT INTO "test_in_2"
 )
 VALUES
 (
-	CAST(@ID AS Int)
+	@ID
 )
 
 BeforeExecute

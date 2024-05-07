@@ -51,7 +51,7 @@ AS
 		[t1].[ParentId]
 	FROM
 		[TestFolder] [t1]
-			INNER JOIN [CTE] [r] ON ([t1].[ParentId] = [r].[Id] OR [t1].[ParentId] IS NULL AND [r].[Id] IS NULL)
+			INNER JOIN [CTE] [r] ON [t1].[ParentId] = [r].[Id]
 )
 SELECT
 	[t2].[Level_1],

@@ -33,7 +33,7 @@ INSERT INTO "Issue1279Table"
 )
 VALUES
 (
-	CAST(@CharFld AS NChar(1))
+	@CharFld
 )
 
 BeforeExecute

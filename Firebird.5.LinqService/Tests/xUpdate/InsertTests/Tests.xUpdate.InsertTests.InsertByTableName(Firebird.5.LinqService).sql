@@ -58,10 +58,10 @@ INSERT INTO "xxPerson_fl_35"
 )
 VALUES
 (
-	CAST(@FirstName AS VARCHAR(6)),
-	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(1)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 
 BeforeExecute
@@ -86,10 +86,10 @@ INSERT INTO "xxPerson_fl_35"
 )
 VALUES
 (
-	CAST(@FirstName AS VARCHAR(6)),
-	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(1)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 RETURNING
 	"PersonID"
@@ -116,10 +116,10 @@ INSERT INTO "xxPerson_fl_35"
 )
 VALUES
 (
-	CAST(@FirstName AS VARCHAR(6)),
-	CAST(@LastName AS VARCHAR(4)),
-	CAST(@MiddleName AS VARCHAR(1)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
 )
 RETURNING
 	"PersonID"

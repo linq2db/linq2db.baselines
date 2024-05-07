@@ -36,16 +36,16 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@MoneyValue AS Decimal),
-	CAST(@DateTimeValue AS TimeStamp),
-	CAST(@DateTimeValue2 AS TimeStamp),
-	CAST(@BoolValue AS CHAR(1)),
-	CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
-	CAST(@SmallIntValue AS SmallInt),
-	CAST(@IntValue AS Int),
-	CAST(@BigIntValue AS BigInt),
-	CAST(@StringValue AS VARCHAR(1))
+	@ID,
+	@MoneyValue,
+	@DateTimeValue,
+	@DateTimeValue2,
+	@BoolValue,
+	@GuidValue,
+	@SmallIntValue,
+	@IntValue,
+	@BigIntValue,
+	@StringValue
 )
 
 BeforeExecute

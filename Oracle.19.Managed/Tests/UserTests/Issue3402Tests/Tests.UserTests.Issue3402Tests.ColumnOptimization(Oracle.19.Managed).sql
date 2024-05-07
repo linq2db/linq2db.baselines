@@ -87,8 +87,6 @@ SELECT
 	ess.ID
 FROM
 	VEMPLOYEE_SCH_SEC ess
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

@@ -32,24 +32,24 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[it_1].[c1],
-	[it_1].[c2],
-	COUNT(DISTINCT [it_1].[Value_1])
+	[it_1].[Name],
+	[it_1].[Value_1],
+	COUNT(DISTINCT [it_1].[Value_2])
 FROM
 	(
 		SELECT
-			'Title' as [c1],
+			'Title' as [Name],
 			CASE
 				WHEN [it].[Name] IS NULL THEN NULL
 				ELSE [it].[Title]
-			END as [c2],
-			[it].[YearsExperience] as [Value_1]
+			END as [Value_1],
+			[it].[YearsExperience] as [Value_2]
 		FROM
 			[odata_person] [it]
 	) [it_1]
 GROUP BY
-	[it_1].[c1],
-	[it_1].[c2]
+	[it_1].[Name],
+	[it_1].[Value_1]
 
 BeforeExecute
 -- SQLite.Classic SQLite

@@ -16,7 +16,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Value AS Int)
+	@Value
 )
 RETURNING
 	ID
@@ -32,7 +32,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Value AS Int)
+	@Value
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Value AS Int)
+	@Value
 )
 
 BeforeExecute

@@ -83,8 +83,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -93,8 +91,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC

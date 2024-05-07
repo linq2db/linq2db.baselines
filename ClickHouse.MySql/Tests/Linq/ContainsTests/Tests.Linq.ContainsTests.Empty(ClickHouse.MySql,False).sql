@@ -46,8 +46,6 @@ SELECT
 	COUNT(*)
 FROM
 	Src s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -56,8 +54,6 @@ SELECT
 	COUNT(*)
 FROM
 	Src s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -46,11 +46,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Value2 AS NVarChar(2)),
-	CAST(@Value3 AS VarChar(50)),
-	CAST(@Value4 AS NVarChar(2))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute
@@ -76,11 +76,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(50)),
-	CAST(@Value2 AS NVarChar(2)),
-	CAST(@Value3 AS VarChar(50)),
-	CAST(@Value4 AS NVarChar(50))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute
@@ -106,11 +106,11 @@ INSERT INTO "SampleClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Value2 AS NVarChar(50)),
-	CAST(@Value3 AS VarChar(50)),
-	CAST(@Value4 AS NVarChar(2))
+	@Id,
+	@Value1,
+	@Value2,
+	@Value3,
+	@Value4
 )
 
 BeforeExecute

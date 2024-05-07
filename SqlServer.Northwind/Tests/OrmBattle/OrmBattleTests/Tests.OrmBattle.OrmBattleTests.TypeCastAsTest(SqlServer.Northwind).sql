@@ -30,8 +30,7 @@ SELECT
 	[product].[UnitPrice],
 	[product].[UnitsInStock],
 	[product].[UnitsOnOrder],
-	[product].[ReorderLevel],
-	[product].[ProductName]
+	[product].[ReorderLevel]
 FROM
 	[Products] [product]
 WHERE

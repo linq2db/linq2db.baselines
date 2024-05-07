@@ -22,11 +22,11 @@ RETURNING
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 100
+DECLARE @param Integer -- Int32
+SET     @param = 100
 
 SELECT
-	"c_1"."ChildID" + "c_1"."ParentID" + CAST(@ChildID AS Int)
+	"c_1"."ChildID" + "c_1"."ParentID" + CAST(@param AS Int)
 FROM
 	"Child" "c_1"
 WHERE

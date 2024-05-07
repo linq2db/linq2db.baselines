@@ -22,11 +22,11 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 100
+DECLARE @param Integer -- Int32
+SET     @param = 100
 
 SELECT
-	c_1."ChildID" + c_1."ParentID" + :ChildID
+	c_1."ChildID" + c_1."ParentID" + :param
 FROM
 	"Child" c_1
 WHERE

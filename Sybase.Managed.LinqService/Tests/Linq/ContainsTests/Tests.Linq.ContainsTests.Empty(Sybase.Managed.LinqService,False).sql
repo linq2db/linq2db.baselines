@@ -87,8 +87,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -97,8 +95,6 @@ SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

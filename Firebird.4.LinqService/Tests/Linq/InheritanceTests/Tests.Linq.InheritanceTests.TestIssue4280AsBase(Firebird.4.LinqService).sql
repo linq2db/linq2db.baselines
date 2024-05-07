@@ -44,10 +44,10 @@ INSERT INTO "Issue4280"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@SerialNumber AS VARCHAR(7)),
-	CAST(@DeviceType AS VARCHAR(2)),
-	CAST(@Location AS VARCHAR(9))
+	@Id,
+	@SerialNumber,
+	@DeviceType,
+	@Location
 )
 
 BeforeExecute
@@ -67,9 +67,9 @@ INSERT INTO "Issue4280"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@SerialNumber AS VARCHAR(9)),
-	CAST(@DeviceType AS VARCHAR(7))
+	@Id,
+	@SerialNumber,
+	@DeviceType
 )
 
 BeforeExecute

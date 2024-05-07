@@ -218,7 +218,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
 BeforeExecute
@@ -267,7 +267,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
 BeforeExecute
@@ -316,7 +316,7 @@ WHERE
 			[CTE_1] [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
-			([q].[RowNumber] <= [c_1].[RowNumber] + @take OR [q].[RowNumber] IS NULL AND [c_1].[RowNumber] + @take IS NULL)
+			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
 BeforeExecute
