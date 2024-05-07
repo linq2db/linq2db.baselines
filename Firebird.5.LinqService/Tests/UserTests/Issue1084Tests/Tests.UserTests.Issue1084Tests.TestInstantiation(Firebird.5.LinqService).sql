@@ -38,9 +38,9 @@ INSERT INTO "i1084_person"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Number AS Int),
-	CAST(@StatusBitmask AS Int)
+	@Id,
+	@Number,
+	@StatusBitmask
 )
 
 BeforeExecute
@@ -60,9 +60,9 @@ INSERT INTO "i1084_person"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Number AS Int),
-	CAST(@StatusBitmask AS Int)
+	@Id,
+	@Number,
+	@StatusBitmask
 )
 
 BeforeExecute
@@ -105,9 +105,9 @@ INSERT INTO "i1084_student"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Number AS VARCHAR(1)),
-	CAST(@StatusBitmask AS Int)
+	@Id,
+	@Number,
+	@StatusBitmask
 )
 
 BeforeExecute
@@ -127,9 +127,9 @@ INSERT INTO "i1084_student"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Number AS VARCHAR(1)),
-	CAST(@StatusBitmask AS Int)
+	@Id,
+	@Number,
+	@StatusBitmask
 )
 
 BeforeExecute

@@ -48,7 +48,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -80,7 +80,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute

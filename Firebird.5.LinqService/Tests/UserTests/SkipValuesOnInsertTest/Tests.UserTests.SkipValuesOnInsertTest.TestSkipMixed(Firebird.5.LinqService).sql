@@ -40,9 +40,9 @@ INSERT INTO "PR_1598_Mixed_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(5)),
-	CAST(@Age AS Int)
+	@Id,
+	@Name,
+	@Age
 )
 
 BeforeExecute
@@ -99,8 +99,8 @@ INSERT INTO "PR_1598_Mixed_Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Age AS Int)
+	@Id,
+	@Age
 )
 
 BeforeExecute
