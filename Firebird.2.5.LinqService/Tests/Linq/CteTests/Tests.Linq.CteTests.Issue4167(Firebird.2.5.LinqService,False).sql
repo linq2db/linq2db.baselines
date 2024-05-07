@@ -40,9 +40,9 @@ INSERT INTO "Issue4167Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS VARCHAR(6)),
-	CAST(@EnumValue AS Int)
+	@ID,
+	@Value,
+	@EnumValue
 )
 
 BeforeExecute
@@ -62,9 +62,9 @@ INSERT INTO "Issue4167Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS VARCHAR(6)),
-	CAST(@EnumValue AS Int)
+	@ID,
+	@Value,
+	@EnumValue
 )
 
 BeforeExecute
@@ -84,9 +84,9 @@ INSERT INTO "Issue4167Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS VARCHAR(6)),
-	CAST(@EnumValue AS Int)
+	@ID,
+	@Value,
+	@EnumValue
 )
 
 BeforeExecute
@@ -106,9 +106,9 @@ INSERT INTO "Issue4167Table"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Value AS VARCHAR(6)),
-	CAST(@EnumValue AS Int)
+	@ID,
+	@Value,
+	@EnumValue
 )
 
 BeforeExecute
