@@ -180,15 +180,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Value1 Int32
-SET     @Value1 = 1
 DECLARE @take Int32
 SET     @take = 5
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = :Value1
+	"Value1" = 1
 WHERE
 	EXISTS(
 		SELECT
@@ -196,14 +194,24 @@ WHERE
 		FROM
 			(
 				SELECT
-					p."ParentID",
-					p."Value1"
+					t1."ParentID",
+					t1."Value1"
 				FROM
-					"Parent" p
+					(
+						SELECT
+							x."ParentID",
+							x."Value1"
+						FROM
+							"Parent" x
+						WHERE
+							x."ParentID" > 1000
+						ORDER BY
+							x."ParentID" DESC
+					) t1
 				WHERE
-					p."ParentID" >= 1000 AND ROWNUM <= :take
-			) t1
+					ROWNUM <= :take
+			) t2
 		WHERE
-			"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
+			"Parent"."ParentID" = t2."ParentID" AND ("Parent"."Value1" = t2."Value1" OR "Parent"."Value1" IS NULL AND t2."Value1" IS NULL)
 	)
 
