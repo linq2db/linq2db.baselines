@@ -1,5 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+
+DELETE [c_1]
+FROM
+	[Parent] [c_1]
+WHERE
+	[c_1].[ParentID] >= 1000
+
+BeforeExecute
+-- SqlServer.2008
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -180,13 +189,33 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 5
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 
-UPDATE TOP (@take)
-	[Parent]
-SET
-	[Value1] = 1
+DELETE [t2]
+FROM
+	(
+		SELECT
+			*
+		FROM
+			(
+				SELECT
+					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+				FROM
+					[Parent] [x]
+				WHERE
+					[x].[ParentID] > 1000
+			) [t1]
+		WHERE
+			[t1].[RN] > @skip AND [t1].[RN] <= 11
+	) [t2]
+
+BeforeExecute
+-- SqlServer.2008
+
+DELETE [c_1]
+FROM
+	[Parent] [c_1]
 WHERE
-	[Parent].[ParentID] > 1000
+	[c_1].[ParentID] >= 1000
 

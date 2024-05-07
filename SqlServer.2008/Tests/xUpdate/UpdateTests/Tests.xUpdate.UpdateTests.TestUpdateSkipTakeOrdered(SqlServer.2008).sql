@@ -180,13 +180,40 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 5
+DECLARE @skip Int -- Int32
+SET     @skip = 2
 
-UPDATE TOP (@take)
-	[Parent]
+UPDATE
+	[u]
 SET
-	[Value1] = 1
+	[u].[Value1] = 1
+FROM
+	[Parent] [u],
+	(
+		SELECT
+			ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN],
+			[x].[ParentID],
+			[x].[Value1]
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+	) [t1]
 WHERE
-	[Parent].[ParentID] > 1000
+	[t1].[RN] > @skip AND
+	[t1].[RN] <= 7 AND
+	[u].[ParentID] = [t1].[ParentID] AND
+	([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
+
+BeforeExecute
+-- SqlServer.2008
+
+SELECT
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] >= 1000
+ORDER BY
+	[p].[ParentID]
 
