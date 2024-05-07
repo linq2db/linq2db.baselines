@@ -189,14 +189,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-DELETE TOP (@take) [p]
+DELETE [t1]
 FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] >= 1000
+	(
+		SELECT
+			*
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+		ORDER BY
+			1
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
