@@ -69,9 +69,9 @@ LIMIT 2
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlDataTable` `t1`
+	`BigDecimalMySqlDataTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -119,9 +119,9 @@ LIMIT 2
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlDataTable` `t1`
+	`BigDecimalMySqlDataTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
