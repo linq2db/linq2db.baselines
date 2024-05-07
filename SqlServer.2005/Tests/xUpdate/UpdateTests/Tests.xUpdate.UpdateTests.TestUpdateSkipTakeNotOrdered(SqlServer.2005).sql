@@ -180,13 +180,28 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 5
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 
-UPDATE TOP (@take)
-	[Parent]
+UPDATE
+	[u]
 SET
-	[Value1] = 1
+	[u].[Value1] = 1
+FROM
+	[Parent] [u],
+	(
+		SELECT
+			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN],
+			[x].[ParentID],
+			[x].[Value1]
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+	) [t1]
 WHERE
-	[Parent].[ParentID] > 1000
+	[t1].[RN] > @skip AND
+	[t1].[RN] <= 11 AND
+	[u].[ParentID] = [t1].[ParentID] AND
+	([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
