@@ -101,17 +101,16 @@ BeforeExecute
 
 SELECT
 	'Id',
-	"selectParam"."Id",
-	Sum(CASE
-		WHEN "a_ActualStage"."Id" IS NULL
-			THEN NULL
+	"it"."Id",
+	SUM(CASE
+		WHEN "a_ActualStage"."Id" IS NULL THEN NULL
 		ELSE "a_ActualStage"."Id"
 	END)
 FROM
-	"Task" "selectParam"
-		LEFT JOIN "TaskStage" "a_ActualStage" ON "selectParam"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = TRUE
+	"Task" "it"
+		LEFT JOIN "TaskStage" "a_ActualStage" ON "it"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = TRUE
 GROUP BY
-	"selectParam"."Id"
+	"it"."Id"
 
 BeforeExecute
 -- Firebird.3 Firebird3

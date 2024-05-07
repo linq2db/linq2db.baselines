@@ -65,9 +65,9 @@ INSERT INTO "Topic"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Title AS VARCHAR(5)),
-	CAST(@Text AS VARCHAR(4))
+	@Id,
+	@Title,
+	@Text
 )
 
 BeforeExecute
@@ -87,9 +87,9 @@ INSERT INTO "Message"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TopicId AS Int),
-	CAST(@Text AS VARCHAR(7))
+	@Id,
+	@TopicId,
+	@Text
 )
 
 BeforeExecute
@@ -109,9 +109,9 @@ INSERT INTO "Message"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@TopicId AS Int),
-	CAST(@Text AS VARCHAR(7))
+	@Id,
+	@TopicId,
+	@Text
 )
 
 BeforeExecute

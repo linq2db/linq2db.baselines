@@ -21,9 +21,9 @@ INSERT INTO "CollatedTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@CaseSensitive AS VARCHAR(10)),
-	CAST(@CaseInsensitive AS VARCHAR(10))
+	@Id,
+	@CaseSensitive,
+	@CaseInsensitive
 )
 
 BeforeExecute
