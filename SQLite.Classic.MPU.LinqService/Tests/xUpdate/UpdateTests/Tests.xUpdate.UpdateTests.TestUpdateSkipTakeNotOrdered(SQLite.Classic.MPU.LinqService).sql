@@ -180,16 +180,16 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
-SET     @Value1 = 1
 DECLARE @take  -- Int32
 SET     @take = 5
+DECLARE @skip  -- Int32
+SET     @skip = 6
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = @Value1
+	[Value1] = 1
 WHERE
-	[Parent].[ParentID] >= 1000
-LIMIT @take
+	[Parent].[ParentID] > 1000
+LIMIT @take OFFSET @skip
 
