@@ -36,8 +36,8 @@ INSERT INTO "Issue1622Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@SomeText AS VARCHAR(13))
+	@Id,
+	@SomeText
 )
 
 BeforeExecute

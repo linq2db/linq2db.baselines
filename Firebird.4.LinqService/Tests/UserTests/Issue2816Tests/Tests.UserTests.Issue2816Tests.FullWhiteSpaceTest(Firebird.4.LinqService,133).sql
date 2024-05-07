@@ -36,8 +36,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Text AS VARCHAR(2))
+	@Id,
+	@Text
 )
 
 BeforeExecute
@@ -54,8 +54,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Text AS VARCHAR(4))
+	@Id,
+	@Text
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO "Issue2816Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Text AS VARCHAR(5))
+	@Id,
+	@Text
 )
 
 BeforeExecute
