@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -38,9 +38,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 

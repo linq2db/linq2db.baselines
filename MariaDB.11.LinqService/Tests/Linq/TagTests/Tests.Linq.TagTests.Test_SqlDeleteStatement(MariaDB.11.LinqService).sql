@@ -18,9 +18,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 /* My Test */
-DELETE   `t1`
+DELETE  
 FROM
-	`TestTable` `t1`
+	`TestTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

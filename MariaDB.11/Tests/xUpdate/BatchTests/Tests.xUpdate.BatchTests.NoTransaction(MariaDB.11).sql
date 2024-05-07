@@ -3,44 +3,44 @@
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -61,42 +61,42 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
