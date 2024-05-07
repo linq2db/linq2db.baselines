@@ -1,5 +1,13 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DELETE FROM
+	[Parent]
+WHERE
+	[Parent].[ParentID] >= 1000
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1  -- Int32
@@ -180,16 +188,22 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
-SET     @Value1 = 1
 DECLARE @take  -- Int32
 SET     @take = 5
+DECLARE @skip  -- Int32
+SET     @skip = 6
 
-UPDATE
+DELETE FROM
 	[Parent]
-SET
-	[Value1] = @Value1
+WHERE
+	[Parent].[ParentID] > 1000
+LIMIT @take OFFSET @skip
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DELETE FROM
+	[Parent]
 WHERE
 	[Parent].[ParentID] >= 1000
-LIMIT @take
 
