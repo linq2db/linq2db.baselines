@@ -30,23 +30,7 @@ BeforeExecute
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [t3]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [COUNT_1]
-			FROM
-				[Child] [od]
-			WHERE
-				[t3].[ParentID] = [od].[ParentID]
-		) [t1]
-		OUTER APPLY (
-			SELECT
-				SUM([od_1].[ParentID]) as [SUM_1]
-			FROM
-				[Child] [od_1]
-			WHERE
-				[t3].[ParentID] = [od_1].[ParentID]
-		) [t2]
+	[Parent] [t1]
 
 BeforeExecute
 -- SqlCe

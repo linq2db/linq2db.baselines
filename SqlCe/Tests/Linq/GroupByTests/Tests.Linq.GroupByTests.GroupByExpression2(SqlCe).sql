@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[t1].[ChildID] as [x],
+	[t1].[ChildID] as [c1],
 	AVG([t1].[ParentID]) as [AVG_1]
 FROM
 	[Child] [t1]

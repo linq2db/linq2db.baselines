@@ -83,8 +83,6 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlCe
@@ -93,8 +91,6 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- SqlCe
