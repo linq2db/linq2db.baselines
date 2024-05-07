@@ -43,7 +43,7 @@ INSERT INTO Task
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -55,7 +55,7 @@ INSERT INTO Task
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -69,8 +69,8 @@ INSERT INTO TaskStage
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(1),
+	2,
+	1,
 	true
 )
 
@@ -79,17 +79,16 @@ BeforeExecute
 
 SELECT
 	'Id',
-	selectParam.Id,
+	it.Id,
 	sumOrNull(CASE
-		WHEN a_ActualStage.Id IS NULL
-			THEN NULL
+		WHEN a_ActualStage.Id IS NULL THEN NULL
 		ELSE a_ActualStage.Id
 	END)
 FROM
-	Task selectParam
-		LEFT JOIN TaskStage a_ActualStage ON selectParam.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = true
+	Task it
+		LEFT JOIN TaskStage a_ActualStage ON it.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = true
 GROUP BY
-	selectParam.Id
+	it.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
