@@ -54,13 +54,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -92,13 +92,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -130,13 +130,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -168,13 +168,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -206,13 +206,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -244,13 +244,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -282,13 +282,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute
@@ -320,13 +320,13 @@ INSERT INTO "OptimizationData"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@IntVlaue AS Int),
-	CAST(@IntVlaueNullable AS Int),
-	CAST(@BoolValue AS BOOLEAN),
-	CAST(@BoolValueNullable AS BOOLEAN),
-	CAST(@StringValue AS VARCHAR(1)),
-	CAST(@StringValueNullable AS VARCHAR(1))
+	@Id,
+	@IntVlaue,
+	@IntVlaueNullable,
+	@BoolValue,
+	@BoolValueNullable,
+	@StringValue,
+	@StringValueNullable
 )
 
 BeforeExecute

@@ -32,7 +32,7 @@ INSERT INTO PUMPLINES
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO PUMPLINES
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -85,8 +85,8 @@ INSERT INTO PUMPLINE_CHAINS
 )
 VALUES
 (
-	CAST(@LineId AS Int),
-	CAST(@ChainId AS Int)
+	@LineId,
+	@ChainId
 )
 
 BeforeExecute
@@ -103,8 +103,8 @@ INSERT INTO PUMPLINE_CHAINS
 )
 VALUES
 (
-	CAST(@LineId AS Int),
-	CAST(@ChainId AS Int)
+	@LineId,
+	@ChainId
 )
 
 BeforeExecute
@@ -141,7 +141,7 @@ INSERT INTO CHAINS
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -155,7 +155,7 @@ INSERT INTO CHAINS
 )
 VALUES
 (
-	CAST(@Id AS Int)
+	@Id
 )
 
 BeforeExecute
@@ -192,7 +192,7 @@ INSERT INTO CHAINPOINTS
 )
 VALUES
 (
-	CAST(@ElementId AS Int)
+	@ElementId
 )
 
 BeforeExecute
@@ -206,7 +206,7 @@ INSERT INTO CHAINPOINTS
 )
 VALUES
 (
-	CAST(@ElementId AS Int)
+	@ElementId
 )
 
 BeforeExecute
@@ -240,7 +240,6 @@ SELECT
 	"m_1".LINE_ID,
 	"d".LINE_ID,
 	"d".CHAIN_ID,
-	"a_Chain".CHAIN_ID,
 	"a_Chain".CHAIN_ID
 FROM
 	PUMPLINES "m_1"
@@ -253,7 +252,6 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"t1".LINE_ID,
 	"t1".LINE_ID
 FROM
 	PUMPLINES "t1"

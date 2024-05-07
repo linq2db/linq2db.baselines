@@ -40,9 +40,9 @@ INSERT INTO "Issue1554FluentTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ClaimedKeyType AS VARCHAR(3)),
-	CAST(@ClaimedKeyTypeN AS VARCHAR(3))
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 BeforeExecute
