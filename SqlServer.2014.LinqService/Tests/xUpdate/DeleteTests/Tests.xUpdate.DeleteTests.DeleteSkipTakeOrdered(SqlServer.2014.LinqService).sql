@@ -189,13 +189,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @skip Int -- Int32
+SET     @skip = 2
 DECLARE @take Int -- Int32
 SET     @take = 5
 
 DELETE [t1]
 FROM
 	(
-		SELECT TOP (@take)
+		SELECT
 			*
 		FROM
 			[Parent] [x]
@@ -203,6 +205,7 @@ FROM
 			[x].[ParentID] > 1000
 		ORDER BY
 			[x].[ParentID] DESC
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 	) [t1]
 
 BeforeExecute
