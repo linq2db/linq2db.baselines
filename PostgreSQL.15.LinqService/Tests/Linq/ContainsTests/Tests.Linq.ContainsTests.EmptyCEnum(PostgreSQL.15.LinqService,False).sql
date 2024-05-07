@@ -83,8 +83,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -93,8 +91,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
