@@ -19,9 +19,9 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` = 'InsertDefault'
+	`Person`.`FirstName` = 'InsertDefault'
 

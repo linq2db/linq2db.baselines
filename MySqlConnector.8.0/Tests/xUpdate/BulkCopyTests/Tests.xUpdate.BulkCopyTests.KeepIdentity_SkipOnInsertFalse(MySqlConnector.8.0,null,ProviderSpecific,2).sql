@@ -45,9 +45,9 @@ BeforeExecute
 DECLARE @lastId Int32
 SET     @lastId = 3
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`ID` >= @lastId
+	`AllTypes`.`ID` >= @lastId
 

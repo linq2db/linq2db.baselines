@@ -53,9 +53,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t`
+DELETE  
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes`
 WHERE
-	`t`.`ID` = 5000
+	`LinqDataTypes`.`ID` = 5000
 
