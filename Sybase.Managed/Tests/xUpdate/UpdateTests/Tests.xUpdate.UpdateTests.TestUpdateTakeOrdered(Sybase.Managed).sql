@@ -1,14 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -186,22 +177,4 @@ VALUES
 	@ParentID,
 	@Value1
 )
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE TOP 5 FROM [Parent]
-FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-DELETE FROM [Parent]
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[ParentID] >= 1000
 

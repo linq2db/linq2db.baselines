@@ -190,15 +190,6 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-DELETE TOP 5 FROM [Parent]
-FROM
-	[Parent] [p]
-WHERE
-	[p].[ParentID] >= 1000
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [c_1]
