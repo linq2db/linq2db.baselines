@@ -180,8 +180,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 5
+DECLARE @skip Int32
+SET     @skip = 6
 
 UPDATE
 	"Parent"
@@ -194,14 +194,31 @@ WHERE
 		FROM
 			(
 				SELECT
-					x."ParentID",
-					x."Value1"
+					t2."ParentID",
+					t2."Value1"
 				FROM
-					"Parent" x
+					(
+						SELECT
+							t1."ParentID",
+							t1."Value1",
+							ROWNUM as RN
+						FROM
+							(
+								SELECT
+									x."ParentID",
+									x."Value1"
+								FROM
+									"Parent" x
+								WHERE
+									x."ParentID" > 1000
+							) t1
+						WHERE
+							ROWNUM <= 11
+					) t2
 				WHERE
-					x."ParentID" > 1000 AND ROWNUM <= :take
-			) t1
+					t2.RN > :skip
+			) t3
 		WHERE
-			"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
+			"Parent"."ParentID" = t3."ParentID" AND ("Parent"."Value1" = t3."Value1" OR "Parent"."Value1" IS NULL AND t3."Value1" IS NULL)
 	)
 
