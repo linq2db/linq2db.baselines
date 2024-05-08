@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @n Int32
-SET     @n = 1
 
 SELECT
 	COUNT(CASE
@@ -15,7 +13,7 @@ FROM
 		FROM
 			`Child` `g_1`
 		WHERE
-			`g_1`.`ParentID` + 2 > @n
+			`g_1`.`ParentID` > -1
 	) `g_2`
 GROUP BY
 	`g_2`.`ParentID`

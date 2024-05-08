@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 1000
+	`LinqDataTypes`.`ID` >= 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -38,9 +38,9 @@ LIMIT 1
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 1000
+	`LinqDataTypes`.`ID` >= 1000
 
