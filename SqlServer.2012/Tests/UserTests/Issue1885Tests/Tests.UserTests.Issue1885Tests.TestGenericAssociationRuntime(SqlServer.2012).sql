@@ -53,7 +53,7 @@ FROM
 				(
 					SELECT 'Testing' AS Data
 				) [a_Data]
-		) [t1] ON [t].[Id] = [t].[Id]
+		) [t1] ON 1=1
 
 BeforeExecute
 -- SqlServer.2012
