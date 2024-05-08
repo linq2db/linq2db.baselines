@@ -88,25 +88,14 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[it_1].[c1],
-	[it_1].[Id],
-	SUM(CASE
-		WHEN [it_1].[Id_1] IS NULL THEN NULL
-		ELSE [it_1].[Id_1]
-	END)
+	N'Id',
+	[it].[Id],
+	SUM([a_ActualStage].[Id])
 FROM
-	(
-		SELECT
-			N'Id' as [c1],
-			[it].[Id],
-			[a_ActualStage].[Id] as [Id_1]
-		FROM
-			[Task] [it]
-				LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-	) [it_1]
+	[Task] [it]
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 GROUP BY
-	[it_1].[c1],
-	[it_1].[Id]
+	[it].[Id]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
