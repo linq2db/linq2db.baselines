@@ -3,12 +3,7 @@
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM table(set{1})
-	) s
+FROM table(set{1})
 WHERE
 	1 = 0
 
@@ -17,10 +12,5 @@ BeforeExecute
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM table(set{1})
-	) s
+FROM table(set{1})
 

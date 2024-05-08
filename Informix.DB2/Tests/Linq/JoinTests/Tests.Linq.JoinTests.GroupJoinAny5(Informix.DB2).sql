@@ -13,7 +13,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END::BOOLEAN
+	END
 FROM
 	Parent t1
 
