@@ -49,5 +49,5 @@ FROM
 		) "t2" ON "t2"."ParentID" = "t"."ParentID" AND "t2"."rn" <= 1
 WHERE
 	"t"."ParentID" > 0
-FETCH FIRST 5000 ROWS ONLY
+FETCH NEXT 5000 ROWS ONLY
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @n Integer(4) -- Int32
-SET     @n = 1
 
 SELECT
 	COUNT(CASE
@@ -16,7 +14,7 @@ FROM
 		FROM
 			"Child" "g_1"
 		WHERE
-			"g_1"."ParentID" + 2 > @n
+			"g_1"."ParentID" > -1
 	) "g_2"
 GROUP BY
 	"g_2"."ParentID",

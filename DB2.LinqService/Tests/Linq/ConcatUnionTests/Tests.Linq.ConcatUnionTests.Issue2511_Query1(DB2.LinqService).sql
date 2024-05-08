@@ -36,6 +36,6 @@ FROM
 		FROM
 			"Person" "t2"
 				LEFT JOIN "Patient" "a_Patient_1" ON "t2"."PersonID" = "a_Patient_1"."PersonID"
-		FETCH FIRST 2 ROWS ONLY
+		FETCH NEXT 2 ROWS ONLY
 	) "t3"
 

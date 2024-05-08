@@ -22,22 +22,22 @@ AS
 	FROM
 		(
 			SELECT
+				1 as "rn",
 				"x"."FirstName",
 				"x"."PersonID" as ID,
 				"x"."LastName",
 				"x"."MiddleName",
-				"x"."Gender",
-				1 as "rn"
+				"x"."Gender"
 			FROM
 				"Person" "x"
 			UNION ALL
 			SELECT
+				2 as "rn",
 				"person_1"."FirstName",
 				"person_1"."PersonID" as ID,
 				"person_1"."LastName",
 				"person_1"."MiddleName",
-				"person_1"."Gender",
-				2 as "rn"
+				"person_1"."Gender"
 			FROM
 				"Person" "person_1"
 		) "x_1"
@@ -53,7 +53,7 @@ SELECT
 	"t1"."rn"
 FROM
 	CTE_1 "t1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -68,26 +68,26 @@ SELECT
 FROM
 	(
 		SELECT
+			1 as "rn",
 			"x"."FirstName",
 			"x"."PersonID" as ID,
 			"x"."LastName",
 			"x"."MiddleName",
-			"x"."Gender",
-			1 as "rn"
+			"x"."Gender"
 		FROM
 			"Person" "x"
 		UNION ALL
 		SELECT
+			2 as "rn",
 			"person_1"."FirstName",
 			"person_1"."PersonID" as ID,
 			"person_1"."LastName",
 			"person_1"."MiddleName",
-			"person_1"."Gender",
-			2 as "rn"
+			"person_1"."Gender"
 		FROM
 			"Person" "person_1"
 	) "t1"
 WHERE
 	"t1"."rn" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

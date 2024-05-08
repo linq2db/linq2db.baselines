@@ -16,7 +16,7 @@ FROM
 			"p"."ParentID"
 		FROM
 			"Parent" "p"
-		FETCH FIRST 5 ROWS ONLY
+		FETCH NEXT 5 ROWS ONLY
 	) "p_1"
 ORDER BY
 	"p_1"."ParentID" DESC

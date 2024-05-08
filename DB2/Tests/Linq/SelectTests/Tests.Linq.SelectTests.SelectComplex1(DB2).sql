@@ -11,5 +11,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

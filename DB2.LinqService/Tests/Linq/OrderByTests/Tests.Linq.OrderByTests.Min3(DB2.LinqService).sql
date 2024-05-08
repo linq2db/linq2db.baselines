@@ -11,6 +11,6 @@ FROM
 			"Parent" "t1"
 		ORDER BY
 			"t1"."Value1"
-		FETCH FIRST 3 ROWS ONLY
+		FETCH NEXT 3 ROWS ONLY
 	) "t2"
 

@@ -129,5 +129,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

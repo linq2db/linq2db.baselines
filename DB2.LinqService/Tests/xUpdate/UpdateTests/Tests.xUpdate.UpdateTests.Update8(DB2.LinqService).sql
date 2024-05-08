@@ -42,5 +42,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @ParentID
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

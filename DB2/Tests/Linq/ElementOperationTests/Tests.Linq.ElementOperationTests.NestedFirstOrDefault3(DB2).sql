@@ -9,7 +9,7 @@ SELECT
 			"Child" "a_Children"
 		WHERE
 			"p"."ParentID" = "a_Children"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

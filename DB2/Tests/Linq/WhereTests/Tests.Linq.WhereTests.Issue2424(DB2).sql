@@ -43,7 +43,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -55,7 +55,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -67,7 +67,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -79,7 +79,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -91,7 +91,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -103,7 +103,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -115,7 +115,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -127,7 +127,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -139,7 +139,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" = '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -151,7 +151,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" = '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -163,7 +163,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -175,7 +175,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -187,7 +187,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -199,7 +199,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '4'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -211,7 +211,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -223,7 +223,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" < '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -235,7 +235,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -247,7 +247,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" > '3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -259,7 +259,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '5'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -271,7 +271,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" >= '5'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -283,7 +283,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '1'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -295,7 +295,7 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValue" <= '1'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

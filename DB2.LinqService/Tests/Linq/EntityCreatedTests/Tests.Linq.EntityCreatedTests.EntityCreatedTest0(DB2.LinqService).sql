@@ -6,5 +6,5 @@ SELECT
 	"t1"."Value1"
 FROM
 	"Parent" "t1"
-FETCH FIRST 5 ROWS ONLY
+FETCH NEXT 5 ROWS ONLY
 
