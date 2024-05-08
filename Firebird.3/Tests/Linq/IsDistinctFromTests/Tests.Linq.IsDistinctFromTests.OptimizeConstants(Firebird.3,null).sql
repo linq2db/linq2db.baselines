@@ -3,24 +3,14 @@
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM rdb$database
-	) "s"
+FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM rdb$database
-	) "s"
+FROM rdb$database
 WHERE
 	1 = 0
 

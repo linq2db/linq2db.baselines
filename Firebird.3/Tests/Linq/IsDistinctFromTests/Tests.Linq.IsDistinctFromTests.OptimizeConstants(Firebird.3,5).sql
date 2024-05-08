@@ -3,12 +3,7 @@
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM rdb$database
-	) "s"
+FROM rdb$database
 WHERE
 	1 = 0
 
@@ -17,10 +12,5 @@ BeforeExecute
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM rdb$database
-	) "s"
+FROM rdb$database
 
