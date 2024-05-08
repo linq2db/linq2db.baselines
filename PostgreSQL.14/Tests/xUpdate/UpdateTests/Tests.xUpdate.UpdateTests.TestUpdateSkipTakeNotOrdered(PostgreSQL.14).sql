@@ -182,22 +182,23 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 5
+DECLARE @skip Integer -- Int32
+SET     @skip = 6
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = t1.c1
+	"Value1" = 1
 FROM
 	(
 		SELECT
-			1 as c1,
 			x."ParentID",
 			x."Value1"
 		FROM
 			"Parent" x
 		WHERE
 			x."ParentID" > 1000
-		LIMIT :take
+		LIMIT :take OFFSET :skip 
 	) t1
 WHERE
 	"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
