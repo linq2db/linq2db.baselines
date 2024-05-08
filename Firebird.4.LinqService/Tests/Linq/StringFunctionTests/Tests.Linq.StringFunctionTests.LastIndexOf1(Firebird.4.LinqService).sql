@@ -13,6 +13,5 @@ FROM
 	"Person" "p"
 WHERE
 	Char_Length("p"."LastName") - Position('p', Reverse("p"."LastName")) = 2 AND
-	(Position(@p, "p"."LastName") <> 0 OR Position(@p, "p"."LastName") IS NULL) AND
-	"p"."PersonID" = 1
+	Position(@p, "p"."LastName") <> 0 AND "p"."PersonID" = 1
 
