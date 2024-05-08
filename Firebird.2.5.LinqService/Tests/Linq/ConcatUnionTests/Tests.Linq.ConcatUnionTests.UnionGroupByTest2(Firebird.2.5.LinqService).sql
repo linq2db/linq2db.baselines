@@ -2,32 +2,38 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."SmallIntValue",
-	"t1"."SmallIntValue",
-	3
+	"t2"."month_1",
+	"t2"."month_1",
+	"t2"."int_1"
 FROM
-	"LinqDataTypes" "t1"
+	(
+		SELECT
+			"t1"."SmallIntValue" as "month_1",
+			3 as "int_1"
+		FROM
+			"LinqDataTypes" "t1"
+	) "t2"
 UNION
 SELECT
-	"t2"."month_1",
-	"t2"."year_1",
+	"t4"."month_1",
+	"t4"."year_1",
 	1
 FROM
 	(
 		SELECT
-			Cast(Floor(Extract(month from "selectParam"."DateTimeValue")) as int) as "month_1",
-			Cast(Floor(Extract(year from "selectParam"."DateTimeValue")) as int) as "year_1"
+			Extract(month from "t3"."DateTimeValue") as "month_1",
+			Extract(year from "t3"."DateTimeValue") as "year_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) "t2"
+			"LinqDataTypes" "t3"
+	) "t4"
 GROUP BY
-	"t2"."month_1",
-	"t2"."year_1"
+	"t4"."month_1",
+	"t4"."year_1"
 UNION
 SELECT
-	Cast(Floor(Extract(year from "t3"."DateTimeValue")) as int),
-	Cast(Floor(Extract(year from "t3"."DateTimeValue")) as int),
+	Extract(year from "t5"."DateTimeValue"),
+	Extract(year from "t5"."DateTimeValue"),
 	2
 FROM
-	"LinqDataTypes" "t3"
+	"LinqDataTypes" "t5"
 
