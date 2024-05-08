@@ -180,27 +180,40 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 DECLARE @take Integer -- Int32
 SET     @take = 5
+DECLARE @skip Integer -- Int32
+SET     @skip = 2
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = t1.c1
+	"Value1" = 1
 FROM
 	(
 		SELECT
-			:Value1 as c1,
-			p."ParentID",
-			p."Value1"
+			x."ParentID",
+			x."Value1"
 		FROM
-			"Parent" p
+			"Parent" x
 		WHERE
-			p."ParentID" >= 1000
-		LIMIT :take
+			x."ParentID" > 1000
+		ORDER BY
+			x."ParentID" DESC
+		LIMIT :take OFFSET :skip 
 	) t1
 WHERE
 	"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" >= 1000
+ORDER BY
+	p."ParentID"
 
