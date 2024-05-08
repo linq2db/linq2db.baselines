@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @n Integer -- Int32
-SET     @n = 1
 
 SELECT
 	g_2.c1
@@ -12,7 +10,7 @@ FROM
 		FROM
 			"Child" g_1
 		WHERE
-			g_1."ParentID" + 1 > :n
+			g_1."ParentID" > 0
 	) g_2
 GROUP BY
 	g_2.c1
