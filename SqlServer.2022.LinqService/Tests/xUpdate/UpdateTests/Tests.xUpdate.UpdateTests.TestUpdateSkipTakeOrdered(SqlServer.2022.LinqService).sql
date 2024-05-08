@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Int -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Int -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Int -- Int32
@@ -107,7 +107,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Int -- Int32
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Int -- Int32
@@ -143,7 +143,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Int -- Int32
@@ -161,7 +161,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Int -- Int32
@@ -179,14 +179,42 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022
+DECLARE @skip Int -- Int32
+SET     @skip = 2
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-UPDATE TOP (@take)
-	[Parent]
+UPDATE
+	[u]
 SET
-	[Value1] = 1
+	[u].[Value1] = 1
+FROM
+	[Parent] [u],
+	(
+		SELECT
+			[x].[ParentID],
+			[x].[Value1]
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+		ORDER BY
+			[x].[ParentID] DESC
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	) [t1]
 WHERE
-	[Parent].[ParentID] > 1000
+	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
+
+BeforeExecute
+-- SqlServer.2022
+
+SELECT
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] >= 1000
+ORDER BY
+	[p].[ParentID]
 

@@ -1,5 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+
+DELETE [c_1]
+FROM
+	[Parent] [c_1]
+WHERE
+	[c_1].[ParentID] >= 1000
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -180,13 +189,43 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+DECLARE @skip Int -- Int32
+SET     @skip = 2
 DECLARE @take Int -- Int32
 SET     @take = 5
 
-UPDATE TOP (@take)
-	[Parent]
-SET
-	[Value1] = 1
+DELETE [t1]
+FROM
+	(
+		SELECT
+			*
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+		ORDER BY
+			[x].[ParentID] DESC
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	) [t1]
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[p].[Value1]
+FROM
+	[Parent] [p]
 WHERE
-	[Parent].[ParentID] > 1000
+	[p].[ParentID] >= 1000
+ORDER BY
+	[p].[ParentID]
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+DELETE [c_1]
+FROM
+	[Parent] [c_1]
+WHERE
+	[c_1].[ParentID] >= 1000
 
