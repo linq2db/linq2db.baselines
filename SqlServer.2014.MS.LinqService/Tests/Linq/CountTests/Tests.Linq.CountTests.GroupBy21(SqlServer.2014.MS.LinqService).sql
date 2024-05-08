@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @n Int -- Int32
-SET     @n = 1
 
 SELECT
 	COUNT(IIF([g_2].[ParentID] < 3, 1, NULL))
@@ -13,7 +11,7 @@ FROM
 		FROM
 			[Child] [g_1]
 		WHERE
-			[g_1].[ParentID] + 2 > @n
+			[g_1].[ParentID] > -1
 	) [g_2]
 GROUP BY
 	[g_2].[ParentID],
