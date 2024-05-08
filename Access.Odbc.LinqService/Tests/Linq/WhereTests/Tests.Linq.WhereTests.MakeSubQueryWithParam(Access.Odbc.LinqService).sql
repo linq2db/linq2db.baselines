@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @n Int -- Int32
-SET     @n = 1
 
 SELECT
 	[p].[PersonID],
@@ -9,5 +7,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] + CVar(?) = 2
+	[p].[PersonID] = 1
 
