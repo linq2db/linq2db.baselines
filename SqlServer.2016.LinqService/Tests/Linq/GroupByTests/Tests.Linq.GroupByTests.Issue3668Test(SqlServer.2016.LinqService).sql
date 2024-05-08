@@ -15,8 +15,8 @@ SELECT
 FROM
 	[Person] [m_1]
 WHERE
-	([m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR [m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id) AND
-	([m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR [m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id)
+	([m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR [m_1].[FirstName] <> @name AND [m_1].[PersonID] = 2) AND
+	([m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR [m_1].[FirstName] <> @name AND [m_1].[PersonID] = 2)
 
 BeforeExecute
 -- SqlServer.2016
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	([x].[PersonID] = @id AND [x].[LastName] <> @name OR [x].[FirstName] <> @name AND [x].[PersonID] - 1 = @id)
+	([x].[PersonID] = @id AND [x].[LastName] <> @name OR [x].[FirstName] <> @name AND [x].[PersonID] = 2)
 GROUP BY
 	[x].[PersonID]
 
