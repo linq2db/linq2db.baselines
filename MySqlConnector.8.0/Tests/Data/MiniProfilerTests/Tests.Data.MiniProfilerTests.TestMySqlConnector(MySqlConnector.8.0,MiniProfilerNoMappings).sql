@@ -1065,11 +1065,11 @@ VALUES
 BeforeExecute
 --  MySql.8.0.MySqlConnector MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -2105,11 +2105,11 @@ VALUES
 BeforeExecute
 --  MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MySql.8.0.MySqlConnector MySql80

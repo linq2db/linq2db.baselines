@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` + 100 IN (
+	`Parent`.`ParentID` + 100 IN (
 		SELECT
 			`c_1`.`ParentID`
 		FROM

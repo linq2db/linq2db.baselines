@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @n Int32
-SET     @n = 1
 
 SELECT
 	`g_2`.`ParentID`
@@ -12,7 +10,7 @@ FROM
 		FROM
 			`Child` `g_1`
 		WHERE
-			`g_1`.`ParentID` + 1 > @n
+			`g_1`.`ParentID` > 0
 	) `g_2`
 GROUP BY
 	`g_2`.`ParentID`
