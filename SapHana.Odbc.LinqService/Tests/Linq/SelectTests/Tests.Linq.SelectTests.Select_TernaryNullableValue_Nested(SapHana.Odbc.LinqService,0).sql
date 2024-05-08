@@ -7,9 +7,6 @@ SET     @Parameter1 = 0
 
 SELECT
 	?,
-	CASE
-		WHEN 1 = 1 THEN ?
-		ELSE 2
-	END
+	?
 FROM DUMMY
 
