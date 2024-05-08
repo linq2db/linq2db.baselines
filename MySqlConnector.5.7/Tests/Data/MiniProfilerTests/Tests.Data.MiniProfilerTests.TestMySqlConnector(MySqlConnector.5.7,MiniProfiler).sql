@@ -37,11 +37,11 @@ INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, 
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
@@ -49,11 +49,11 @@ INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintData
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
-DELETE   `p`
+DELETE  
 FROM
-	`AllTypesNoYear` `p`
+	`AllTypesNoYear`
 WHERE
-	`p`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MySql.5.7.MySqlConnector MySql57
