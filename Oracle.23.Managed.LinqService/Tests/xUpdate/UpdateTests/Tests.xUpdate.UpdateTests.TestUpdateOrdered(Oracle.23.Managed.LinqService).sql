@@ -1,13 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
-DELETE FROM
-	"Parent" c_1
-WHERE
-	c_1."ParentID" >= 1000
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -188,19 +180,25 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 5
 
-DELETE FROM
-	"Parent" p
+UPDATE
+	"Parent" x
+SET
+	"Value1" = 1
 WHERE
-	p."ParentID" >= 1000 AND ROWNUM <= :take
+	x."ParentID" > 1000
+ORDER BY
+	x."ParentID" DESC
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-DELETE FROM
-	"Parent" c_1
+SELECT
+	p."Value1"
+FROM
+	"Parent" p
 WHERE
-	c_1."ParentID" >= 1000
+	p."ParentID" >= 1000
+ORDER BY
+	p."ParentID"
 
