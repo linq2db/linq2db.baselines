@@ -7,8 +7,5 @@ SET     @p = 1
 
 SELECT
 	@value as [c1],
-	CASE
-		WHEN 1 = 1 THEN @p
-		ELSE 3
-	END as [c2]
+	@p as [c2]
 
