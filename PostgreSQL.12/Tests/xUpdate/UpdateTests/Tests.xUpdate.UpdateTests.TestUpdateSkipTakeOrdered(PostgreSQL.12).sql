@@ -182,6 +182,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 5
+DECLARE @skip Integer -- Int32
+SET     @skip = 2
 
 UPDATE
 	"Parent"
@@ -198,7 +200,7 @@ FROM
 			x."ParentID" > 1000
 		ORDER BY
 			x."ParentID" DESC
-		LIMIT :take
+		LIMIT :take OFFSET :skip 
 	) t1
 WHERE
 	"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
