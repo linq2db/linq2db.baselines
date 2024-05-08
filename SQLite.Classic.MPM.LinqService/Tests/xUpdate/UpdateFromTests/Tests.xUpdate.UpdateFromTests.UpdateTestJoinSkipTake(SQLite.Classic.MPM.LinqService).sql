@@ -277,27 +277,16 @@ SET     @skip = 1
 UPDATE
 	[UpdatedEntities]
 SET
-	[Value1] = [t2].[c1],
-	[Value2] = [t2].[c2],
-	[Value3] = [t2].[c3]
+	[Value1] = ([UpdatedEntities].[Value1] * [t].[Value1]) * @int1,
+	[Value2] = ([UpdatedEntities].[Value2] * [t].[Value2]) * @int2,
+	[Value3] = ([UpdatedEntities].[Value3] * [t].[Value3]) * @int3
 FROM
-	(
-		SELECT
-			([t1].[Value1] * [t].[Value1]) * @int1 as [c1],
-			([t1].[Value2] * [t].[Value2]) * @int2 as [c2],
-			([t1].[Value3] * [t].[Value3]) * @int3 as [c3],
-			[t1].[id]
-		FROM
-			[UpdatedEntities] [t1]
-				INNER JOIN [NewEntities] [t] ON [t].[id] = [t1].[id]
-		WHERE
-			[t].[id] <> @someId
-		ORDER BY
-			[t1].[id]
-		LIMIT @take OFFSET @skip
-	) [t2]
+	[NewEntities] [t]
 WHERE
-	[UpdatedEntities].[id] = [t2].[id]
+	[t].[id] <> @someId AND [t].[id] = [UpdatedEntities].[id]
+ORDER BY
+	[UpdatedEntities].[id]
+LIMIT @take OFFSET @skip
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -44,7 +44,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	[t].[Id] + 1 > 5
+	[t].[Id] > 4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	5 < [t].[Id] + 1
+	4 < [t].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -68,7 +68,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	1 + [t].[Id] > 5
+	[t].[Id] > 4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -80,7 +80,7 @@ SELECT
 FROM
 	[DataClass] [t]
 WHERE
-	5 < 1 + [t].[Id]
+	4 < [t].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
