@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @n Integer -- Int32
-SET     @n = 1
 
 SELECT
 	SUM(g_2."ParentID" - 3)
@@ -13,7 +11,7 @@ FROM
 		FROM
 			"Child" g_1
 		WHERE
-			g_1."ParentID" + 2 > :n
+			g_1."ParentID" > -1
 	) g_2
 GROUP BY
 	g_2."ParentID",
