@@ -51,6 +51,8 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
 
 SELECT
 	[t2].[DuplicateData]
@@ -68,12 +70,14 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= 3
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
 
 SELECT
 	[t1].[DuplicateData]
@@ -88,12 +92,14 @@ FROM
 			[g_1].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= 3
+	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
 
 SELECT
 	[t2].[DuplicateData]
@@ -111,12 +117,14 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= 3
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 3
 
 SELECT
 	[t1].[DuplicateData]
@@ -131,7 +139,7 @@ FROM
 			[g_1].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= 3
+	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2005

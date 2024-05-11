@@ -18,5 +18,5 @@ FROM
 			[p].[ParentID] > 1
 	) [t1]
 WHERE
-	[t1].[RN] > @n AND [t1].[RN] <= 300001
+	[t1].[RN] > @n AND [t1].[RN] <= (@n + 1)
 

@@ -6,10 +6,7 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 
 SELECT
-	CASE
-		WHEN [left_2].[left_1] IS NOT NULL THEN [left_2].[left_1]
-		ELSE NULL
-	END,
+	[left_2].[left_1],
 	[t1].[ParentID]
 FROM
 	(
@@ -29,8 +26,5 @@ FROM
 				[right_1].[ParentID] <> @id2
 		) [t1] ON [t1].[ParentID] = [left_2].[left_1]
 ORDER BY
-	CASE
-		WHEN [left_2].[left_1] IS NOT NULL THEN [left_2].[left_1]
-		ELSE NULL
-	END
+	[left_2].[left_1]
 
