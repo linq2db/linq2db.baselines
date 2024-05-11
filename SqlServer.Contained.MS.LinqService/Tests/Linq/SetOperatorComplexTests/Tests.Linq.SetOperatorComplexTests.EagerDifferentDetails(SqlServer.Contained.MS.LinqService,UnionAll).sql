@@ -505,21 +505,18 @@ BeforeExecute
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[BookId_1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId],
-			[t3].[BookId_1]
+			[t3].[BookId]
 		FROM
 			(
 				SELECT
 					[a_Book].[BookId] as [Id],
 					[a_Book].[BookName],
 					[a_Book].[BookId],
-					[a_Book].[BookId] as [BookId_1],
 					NULL as [c1],
 					NULL as [c2],
 					0 as [projection__set_id__]
@@ -534,7 +531,6 @@ FROM
 					[a_Book_1].[BookId] as [Id],
 					[a_Book_1].[BookName],
 					NULL as [BookId],
-					NULL as [BookId_1],
 					[a_Book_1].[BookId] as [c1],
 					[a_Book_1].[BookId] as [c2],
 					1 as [projection__set_id__]
@@ -548,7 +544,7 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 0
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId] AND [m_1].[BookId_1] IS NOT NULL
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -570,7 +566,6 @@ FROM
 					[a_Book].[BookId] as [Id],
 					[a_Book].[BookName],
 					[a_Book].[BookId],
-					[a_Book].[BookId] as [BookId_1],
 					NULL as [c1],
 					NULL as [c2],
 					0 as [projection__set_id__]
@@ -585,7 +580,6 @@ FROM
 					[a_Book_1].[BookId] as [Id],
 					[a_Book_1].[BookName],
 					NULL as [BookId],
-					NULL as [BookId_1],
 					[a_Book_1].[BookId] as [c1],
 					[a_Book_1].[BookId] as [c2],
 					1 as [projection__set_id__]
@@ -612,7 +606,6 @@ SELECT
 	[a_Book].[BookName],
 	0,
 	[a_Book].[BookId],
-	[a_Book].[BookId],
 	NULL,
 	NULL
 FROM
@@ -626,7 +619,6 @@ SELECT
 	[a_Book_1].[BookId],
 	[a_Book_1].[BookName],
 	1,
-	NULL,
 	NULL,
 	[a_Book_1].[BookId],
 	[a_Book_1].[BookId]
