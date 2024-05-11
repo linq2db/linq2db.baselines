@@ -42,6 +42,8 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
+DECLARE @i Int32
+SET     @i = 0
 
 MERGE INTO "Patient" t1
 USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
@@ -51,7 +53,7 @@ USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CAST(Length(t1."Diagnosis") AS VarChar(255))
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(

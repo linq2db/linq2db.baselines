@@ -5,11 +5,17 @@ SELECT
 	p."ParentID",
 	c_1."ChildID"
 FROM
-	"Parent" p
-		CROSS JOIN "Child" c_1
-		INNER JOIN "Parent" a_Parent1 ON c_1."ParentID" = a_Parent1."ParentID"
+	"Parent" p,
+	"Child" c_1
 WHERE
-	p."ParentID" = a_Parent1."ParentID"
+	p."ParentID" = (
+		SELECT
+			a_Parent1."ParentID"
+		FROM
+			"Parent" a_Parent1
+		WHERE
+			c_1."ParentID" = a_Parent1."ParentID"
+	)
 ORDER BY
 	p."ParentID",
 	c_1."ChildID"
