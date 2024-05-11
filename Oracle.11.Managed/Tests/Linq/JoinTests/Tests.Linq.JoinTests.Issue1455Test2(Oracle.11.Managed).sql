@@ -190,7 +190,7 @@ FROM
 					al_group."CreationDate"
 				FROM
 					"Alert" al_group
-						LEFT JOIN "AuditAlert" au ON au."AlertKey" = al_group."AlertKey" AND au."AlertCode" = au."AlertCode"
+						LEFT JOIN "AuditAlert" au ON au."AlertKey" = al_group."AlertKey"
 				GROUP BY
 					al_group."AlertKey",
 					al_group."AlertCode",
@@ -228,7 +228,7 @@ FROM
 						MAX(au_1."TransactionDate") as MAX_1
 					FROM
 						"Alert" al_group_2
-							LEFT JOIN "AuditAlert" au_1 ON au_1."AlertKey" = al_group_2."AlertKey" AND au_1."AlertCode" = au_1."AlertCode"
+							LEFT JOIN "AuditAlert" au_1 ON au_1."AlertKey" = al_group_2."AlertKey"
 					GROUP BY
 						al_group_2."AlertKey",
 						al_group_2."AlertCode",

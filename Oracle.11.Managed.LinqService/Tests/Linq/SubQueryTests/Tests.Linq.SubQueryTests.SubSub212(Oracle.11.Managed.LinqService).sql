@@ -17,7 +17,7 @@ FROM
 			"Child" p2
 				LEFT JOIN "Parent" a_Parent ON p2."ParentID" = a_Parent."ParentID"
 		WHERE
-			p2."ParentID" + 1 > 0 AND p2."ParentID" + 2 > 0
+			p2."ParentID" > -1 AND p2."ParentID" > -2
 	) m_1
 		INNER JOIN "GrandChild" d ON m_1."ParentID" IS NOT NULL AND (m_1."ParentID" = d."ParentID" OR m_1."ParentID" IS NULL AND d."ParentID" IS NULL) AND d."ParentID" + 1 < m_1."ParentID_1" + 2 AND d."ParentID" + 1 < m_1."ParentID_1" + 2
 
@@ -31,5 +31,5 @@ FROM
 	"Child" p1
 		LEFT JOIN "Parent" a_Parent ON p1."ParentID" = a_Parent."ParentID"
 WHERE
-	p1."ParentID" + 1 > 0 AND p1."ParentID" + 2 > 0
+	p1."ParentID" > -1 AND p1."ParentID" > -2
 

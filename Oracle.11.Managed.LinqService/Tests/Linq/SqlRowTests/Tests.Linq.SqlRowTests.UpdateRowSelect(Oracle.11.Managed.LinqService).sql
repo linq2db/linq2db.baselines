@@ -104,26 +104,26 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
-	"Ints"
+	"Ints" i
 SET
-	"Ints"."One" = "Ints"."Two" * 5,
-	("Ints"."Two", "Ints"."Three") = (
+	"One" = i."Two" * 5,
+	("Two", "Three") = (
 		SELECT
-			"Ints"."Two" * 10,
+			i."Two" * 10,
 			j."Three" * 100
 		FROM
 			"Ints" j
 		WHERE
 			j."One" = 1
 	),
-	("Ints"."Four", "Ints"."Nil") = (
+	("Four", "Nil") = (
 		SELECT
-			"Ints"."One" * "Ints"."Four",
+			i."One" * i."Four",
 			600
 		FROM SYS.DUAL
 	)
 WHERE
-	"Ints"."One" = 10
+	i."One" = 10
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
