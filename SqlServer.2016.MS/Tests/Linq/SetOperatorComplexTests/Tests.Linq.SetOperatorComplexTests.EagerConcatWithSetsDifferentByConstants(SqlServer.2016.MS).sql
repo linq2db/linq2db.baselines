@@ -111,20 +111,17 @@ BeforeExecute
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[BookId_1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId],
-			[t3].[BookId_1]
+			[t3].[BookId]
 		FROM
 			(
 				SELECT
 					N'Roman' as [BookType],
 					[a_Book].[BookId],
-					[a_Book].[BookId] as [BookId_1],
 					NULL as [c1],
 					NULL as [c2]
 				FROM
@@ -137,7 +134,6 @@ FROM
 				SELECT
 					N'Novel' as [BookType],
 					NULL as [BookId],
-					NULL as [BookId_1],
 					[a_Book_1].[BookId] as [c1],
 					[a_Book_1].[BookId] as [c2]
 				FROM
@@ -150,7 +146,7 @@ FROM
 		WHERE
 			[t3].[BookType] = N'Roman'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId] AND [m_1].[BookId_1] IS NOT NULL
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -171,7 +167,6 @@ FROM
 				SELECT
 					N'Roman' as [BookType],
 					[a_Book].[BookId],
-					[a_Book].[BookId] as [BookId_1],
 					NULL as [c1],
 					NULL as [c2]
 				FROM
@@ -184,7 +179,6 @@ FROM
 				SELECT
 					N'Novel' as [BookType],
 					NULL as [BookId],
-					NULL as [BookId_1],
 					[a_Book_1].[BookId] as [c1],
 					[a_Book_1].[BookId] as [c2]
 				FROM
@@ -216,7 +210,6 @@ BeforeExecute
 SELECT
 	N'Roman',
 	[a_Book].[BookId],
-	[a_Book].[BookId],
 	NULL,
 	NULL
 FROM
@@ -228,7 +221,6 @@ WHERE
 UNION ALL
 SELECT
 	N'Novel',
-	NULL,
 	NULL,
 	[a_Book_1].[BookId],
 	[a_Book_1].[BookId]
