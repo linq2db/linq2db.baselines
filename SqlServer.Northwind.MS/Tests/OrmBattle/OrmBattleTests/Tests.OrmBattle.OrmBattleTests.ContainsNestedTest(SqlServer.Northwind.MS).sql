@@ -20,7 +20,7 @@ SELECT
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
 			[o].[OrderDate] > @OrderDate
 	), 1, 0)
