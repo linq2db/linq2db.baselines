@@ -143,7 +143,14 @@ SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
 	[d_1].[TagId],
-	[a_Tag].[Name]
+	(
+		SELECT
+			[a_Tag].[Name]
+		FROM
+			[Tag] [a_Tag]
+		WHERE
+			[d_1].[TagId] = [a_Tag].[Id]
+	)
 FROM
 	(
 		SELECT DISTINCT
@@ -161,7 +168,6 @@ FROM
 				INNER JOIN [Post] [d] ON [t1].[Id] = [d].[BlogId]
 	) [m_1]
 		INNER JOIN [PostTag] [d_1] ON [m_1].[Id] = [d_1].[PostId]
-		INNER JOIN [Tag] [a_Tag] ON [d_1].[TagId] = [a_Tag].[Id]
 WHERE
 	[d_1].[IsDeleted] = 0
 ORDER BY
