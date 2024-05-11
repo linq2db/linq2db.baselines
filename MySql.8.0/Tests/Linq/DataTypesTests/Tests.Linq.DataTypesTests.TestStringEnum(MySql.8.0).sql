@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -120,9 +120,9 @@ ORDER BY
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -152,9 +152,9 @@ ORDER BY
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

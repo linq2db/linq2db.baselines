@@ -58,9 +58,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -121,9 +121,9 @@ ORDER BY
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -153,9 +153,9 @@ ORDER BY
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

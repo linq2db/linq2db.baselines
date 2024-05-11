@@ -19,9 +19,9 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` = 'InsertDefault'
+	`Person`.`FirstName` = 'InsertDefault'
 

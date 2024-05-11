@@ -135,11 +135,11 @@ SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -9
 
-DELETE   `obj`
+DELETE  
 FROM
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyAutoIncrement`
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`ConcurrencyAutoIncrement`.`Id` = @Id AND `ConcurrencyAutoIncrement`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -158,11 +158,11 @@ SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -8
 
-DELETE   `obj`
+DELETE  
 FROM
-	`ConcurrencyAutoIncrement` `obj`
+	`ConcurrencyAutoIncrement`
 WHERE
-	`obj`.`Id` = @Id AND `obj`.`Stamp` = @Stamp
+	`ConcurrencyAutoIncrement`.`Id` = @Id AND `ConcurrencyAutoIncrement`.`Stamp` = @Stamp
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
