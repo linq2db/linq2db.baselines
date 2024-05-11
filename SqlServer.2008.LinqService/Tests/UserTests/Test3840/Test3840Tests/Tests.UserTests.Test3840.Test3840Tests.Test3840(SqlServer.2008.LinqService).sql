@@ -54,12 +54,12 @@ SELECT
 	[t].[StartDateTime],
 	[t].[PreNotification],
 	CASE
-		WHEN ([t].[PreNotification] <> CAST(0 AS BIGINT) OR [t].[PreNotification] IS NULL)
+		WHEN [t].[PreNotification] <> CAST(0 AS BIGINT) OR [t].[PreNotification] IS NULL
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN ([t].[PreNotification2] <> CAST('00:00:00.0000000' AS TIME) OR [t].[PreNotification2] IS NULL)
+		WHEN [t].[PreNotification2] <> CAST('00:00:00.0000000' AS TIME) OR [t].[PreNotification2] IS NULL
 			THEN 1
 		ELSE 0
 	END,
