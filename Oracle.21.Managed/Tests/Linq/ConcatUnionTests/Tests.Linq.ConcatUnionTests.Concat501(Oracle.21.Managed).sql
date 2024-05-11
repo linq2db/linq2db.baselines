@@ -3,12 +3,12 @@
 
 SELECT
 	c_3."ParentID",
-	c_3."c1"
+	c_3."ChildID"
 FROM
 	(
 		SELECT
 			c_1."ParentID",
-			NULL as "c1"
+			NULL as "ChildID"
 		FROM
 			"Child" c_1
 		WHERE
@@ -16,7 +16,7 @@ FROM
 		UNION ALL
 		SELECT
 			NULL as "ParentID",
-			c_2."ChildID" + 1000 as "c1"
+			c_2."ChildID" + 1000 as "ChildID"
 		FROM
 			"Child" c_2
 		WHERE
