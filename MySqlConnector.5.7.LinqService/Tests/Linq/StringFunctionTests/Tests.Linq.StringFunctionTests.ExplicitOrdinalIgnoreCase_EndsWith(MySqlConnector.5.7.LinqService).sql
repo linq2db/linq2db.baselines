@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`CollatedTable` `t1`
+	`CollatedTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -3,11 +3,11 @@ BeginTransaction
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`LinqDataTypes` `c_1`
+	`LinqDataTypes`
 WHERE
-	`c_1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -33,9 +33,9 @@ FROM
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`LinqDataTypes` `c_1`
+	`LinqDataTypes`
 WHERE
-	`c_1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 

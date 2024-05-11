@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t`
+DELETE  
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes`
 WHERE
-	`t`.`ID` = 5000
+	`LinqDataTypes`.`ID` = 5000
 

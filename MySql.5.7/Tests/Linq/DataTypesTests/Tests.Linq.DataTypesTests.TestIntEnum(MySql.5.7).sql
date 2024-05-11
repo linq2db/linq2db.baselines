@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -120,9 +120,9 @@ ORDER BY
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -152,9 +152,9 @@ ORDER BY
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

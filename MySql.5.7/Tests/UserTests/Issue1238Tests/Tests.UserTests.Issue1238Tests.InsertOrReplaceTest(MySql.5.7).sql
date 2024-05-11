@@ -3,9 +3,9 @@ BeginTransaction
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`InheritanceParent` `t1`
+	`InheritanceParent`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
