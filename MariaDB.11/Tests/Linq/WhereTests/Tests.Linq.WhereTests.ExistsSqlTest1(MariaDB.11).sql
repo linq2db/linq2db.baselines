@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` + 100 IN (
+	`Parent`.`ParentID` + 100 IN (
 		SELECT
 			`c_1`.`ParentID`
 		FROM
