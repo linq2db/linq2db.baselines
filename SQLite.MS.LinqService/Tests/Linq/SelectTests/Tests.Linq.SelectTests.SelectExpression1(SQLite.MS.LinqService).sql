@@ -33,10 +33,7 @@ DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	CASE
-		WHEN 1 = 1 THEN 1
-		ELSE 0
-	END
+	1
 FROM
 	[SelectExpressionTable] [t1]
 LIMIT @take

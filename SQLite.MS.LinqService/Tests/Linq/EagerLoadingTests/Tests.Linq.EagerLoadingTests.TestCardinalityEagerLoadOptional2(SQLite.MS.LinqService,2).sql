@@ -535,16 +535,16 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_EntityMA].[Id],
-	[detail].[Id],
-	[detail].[FK],
-	[detail].[FKD],
+	[m_1].[Id],
+	[d].[Id],
+	[d].[FK],
+	[d].[FKD],
 	[a_ObjectD].[Id],
 	[a_ObjectD].[FK]
 FROM
-	[EntityMA] [lw_EntityMA]
-		INNER JOIN [EntityMB] [detail] ON [lw_EntityMA].[Id] = [detail].[FK]
-		LEFT JOIN [EntityMD] [a_ObjectD] ON [detail].[FKD] = [a_ObjectD].[Id]
+	[EntityMA] [m_1]
+		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
+		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite

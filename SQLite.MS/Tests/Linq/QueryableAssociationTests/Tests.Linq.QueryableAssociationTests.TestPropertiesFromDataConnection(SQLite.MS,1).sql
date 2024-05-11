@@ -1,34 +1,32 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [EntityWithUser]
+DROP TABLE IF EXISTS [EntityWithUser1]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [EntityWithUser]
+CREATE TABLE IF NOT EXISTS [EntityWithUser1]
 (
-	[UserId]                   INTEGER NOT NULL,
-	[BelongsToCurrentUser]     Bit     NOT NULL,
-	[BelongsToCurrentUserFail] Bit     NOT NULL
+	[UserId]               INTEGER NOT NULL,
+	[BelongsToCurrentUser] Bit     NOT NULL
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-INSERT INTO [EntityWithUser]
+INSERT INTO [EntityWithUser1]
 (
 	[UserId],
-	[BelongsToCurrentUser],
-	[BelongsToCurrentUserFail]
+	[BelongsToCurrentUser]
 )
 VALUES
-(1,0,0),
-(2,0,0),
-(2,0,0),
-(3,0,0),
-(3,0,0),
-(3,0,0)
+(1,0),
+(2,0),
+(2,0),
+(3,0),
+(3,0),
+(3,0)
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -36,14 +34,14 @@ DECLARE @CurrentUserId  -- Int32
 SET     @CurrentUserId = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[EntityWithUser] [x]
+	[EntityWithUser1] [x]
 WHERE
 	[x].[UserId] = @CurrentUserId
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [EntityWithUser]
+DROP TABLE IF EXISTS [EntityWithUser1]
 
