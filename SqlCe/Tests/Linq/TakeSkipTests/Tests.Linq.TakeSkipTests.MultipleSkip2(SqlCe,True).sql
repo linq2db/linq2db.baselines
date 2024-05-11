@@ -25,6 +25,8 @@ SELECT 'BOLTO'
 
 BeforeExecute
 -- SqlCe
+DECLARE @skip Int -- Int32
+SET     @skip = 3
 
 SELECT
 	[t1].[Value] as [Value_1]
@@ -32,10 +34,12 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET 3 ROWS
+OFFSET @skip ROWS
 
 BeforeExecute
 -- SqlCe
+DECLARE @skip Int -- Int32
+SET     @skip = 4
 
 SELECT
 	[t1].[Value] as [Value_1]
@@ -43,7 +47,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET 4 ROWS
+OFFSET @skip ROWS
 
 BeforeExecute
 -- SqlCe
