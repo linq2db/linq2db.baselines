@@ -2,22 +2,21 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[sub].[ParentID_1],
-	[sub].[ChildID]
+	[p].[ParentID],
+	[c_1].[ChildID]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID],
-			[p].[ParentID] as [ParentID_1],
-			[c_1].[ChildID]
-		FROM
-			[Parent] [p],
-			[Child] [c_1]
-	) [sub]
-		INNER JOIN [Parent] [a_Parent1] ON [sub].[ParentID] = [a_Parent1].[ParentID]
+	[Parent] [p],
+	[Child] [c_1]
 WHERE
-	[sub].[ParentID_1] = [a_Parent1].[ParentID]
+	[p].[ParentID] = (
+		SELECT
+			[a_Parent1].[ParentID]
+		FROM
+			[Parent] [a_Parent1]
+		WHERE
+			[c_1].[ParentID] = [a_Parent1].[ParentID]
+	)
 ORDER BY
-	[sub].[ParentID_1],
-	[sub].[ChildID]
+	[p].[ParentID],
+	[c_1].[ChildID]
 
