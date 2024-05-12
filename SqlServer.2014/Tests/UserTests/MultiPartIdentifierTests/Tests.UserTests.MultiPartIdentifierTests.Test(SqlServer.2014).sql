@@ -95,14 +95,8 @@ FROM
 		INNER JOIN [Table1] [t6] ON [t4].[Field3] = [t6].[Field3]
 		INNER JOIN [Table4] [t7] ON [a_Table5Ref].[ProblematicalField] IS NOT NULL AND [a_Table5Ref].[ProblematicalField] = [t7].[Field4]
 		INNER JOIN [Table1] [a_Table1s_1] ON [t7].[Field3] = [a_Table1s_1].[Field3]
-		LEFT JOIN [Table3] [a_Table3Ref] ON (
-			SELECT
-				[a_Table2Ref].[Field4]
-			FROM
-				[Table2] [a_Table2Ref]
-			WHERE
-				[a_Table1s_1].[Field2] = [a_Table2Ref].[Field2]
-		) = [a_Table3Ref].[Field4]
+		LEFT JOIN [Table2] [a_Table2Ref] ON [a_Table1s_1].[Field2] = [a_Table2Ref].[Field2]
+		LEFT JOIN [Table3] [a_Table3Ref] ON [a_Table2Ref].[Field4] = [a_Table3Ref].[Field4]
 		INNER JOIN [Table2] [t9] ON [a_Table3Ref].[Field4] IS NOT NULL AND [a_Table3Ref].[Field4] = [t9].[Field4]
 		INNER JOIN [Table1] [t11] ON [t9].[Field2] = [t11].[Field2]
 WHERE
