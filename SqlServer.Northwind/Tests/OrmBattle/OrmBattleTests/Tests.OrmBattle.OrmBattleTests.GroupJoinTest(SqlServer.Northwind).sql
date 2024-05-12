@@ -7,7 +7,7 @@ SELECT
 			COUNT(*)
 		FROM
 			[Orders] [o]
-				LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
 			[t1].[CustomerID] = [a_Customer].[CustomerID]
 	),

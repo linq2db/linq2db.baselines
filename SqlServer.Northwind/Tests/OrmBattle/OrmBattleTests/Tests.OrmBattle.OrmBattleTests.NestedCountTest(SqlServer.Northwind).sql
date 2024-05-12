@@ -21,7 +21,7 @@ WHERE
 			COUNT(*)
 		FROM
 			[Orders] [o]
-				LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
 			[a_Customer].[CustomerID] = [c_1].[CustomerID]
 	) > 5

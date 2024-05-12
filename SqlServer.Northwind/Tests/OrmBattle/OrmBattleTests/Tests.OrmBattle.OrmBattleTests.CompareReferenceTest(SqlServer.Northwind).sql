@@ -5,15 +5,9 @@ SELECT
 	[c_1].[ContactName],
 	[o].[OrderDate]
 FROM
-	[Customers] [c_1],
-	[Orders] [o]
+	[Customers] [c_1]
+		CROSS JOIN [Orders] [o]
+		LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	[c_1].[CustomerID] = (
-		SELECT
-			[a_Customer].[CustomerID]
-		FROM
-			[Customers] [a_Customer]
-		WHERE
-			[o].[CustomerID] = [a_Customer].[CustomerID]
-	)
+	[c_1].[CustomerID] = [a_Customer].[CustomerID]
 
