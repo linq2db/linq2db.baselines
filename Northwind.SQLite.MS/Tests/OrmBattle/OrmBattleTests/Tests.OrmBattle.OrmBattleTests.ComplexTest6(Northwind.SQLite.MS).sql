@@ -29,12 +29,7 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Customers] [i]
-		INNER JOIN [Orders] [o] ON (
-			SELECT
-				[a_Customer].[CustomerID]
-			FROM
-				[Customers] [a_Customer]
-			WHERE
-				[o].[CustomerID] = [a_Customer].[CustomerID]
-		) = [i].[CustomerID]
+		INNER JOIN ([Orders] [o]
+			LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID])
+		ON [a_Customer].[CustomerID] = [i].[CustomerID]
 
