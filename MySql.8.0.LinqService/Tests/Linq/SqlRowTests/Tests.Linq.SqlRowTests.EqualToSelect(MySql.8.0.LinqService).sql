@@ -108,18 +108,11 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Ints` `x`
+	`Ints` `x`,
+	`Ints2` `y`
 WHERE
-	(`x`.`One`, `x`.`Two`, `x`.`Three`) = (
-		SELECT
-			`y`.`One`,
-			`y`.`One` + 1,
-			3
-		FROM
-			`Ints2` `y`
-		WHERE
-			`y`.`Nil` IS NULL
-	)
+	(`x`.`One`, `x`.`Two`, `x`.`Three`) = (`y`.`One`, `y`.`One` + 1, 3) AND
+	`y`.`Nil` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -127,18 +120,11 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Ints` `x`
+	`Ints` `x`,
+	`Ints2` `y`
 WHERE
-	(`x`.`One`, `x`.`Two`, `x`.`Three`) = (
-		SELECT
-			`y`.`One`,
-			`y`.`One` + 1,
-			3
-		FROM
-			`Ints2` `y`
-		WHERE
-			`y`.`Nil` IS NULL
-	)
+	(`x`.`One`, `x`.`Two`, `x`.`Three`) = (`y`.`One`, `y`.`One` + 1, 3) AND
+	`y`.`Nil` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -146,18 +132,11 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Ints` `x`
+	`Ints` `x`,
+	`Ints2` `y`
 WHERE
-	(`x`.`One`, `x`.`Two`, `x`.`Three`) = (
-		SELECT
-			`y`.`One`,
-			`y`.`One` + 1,
-			3
-		FROM
-			`Ints2` `y`
-		WHERE
-			`y`.`Nil` IS NULL
-	)
+	(`y`.`One`, `y`.`One` + 1, 3) = (`x`.`One`, `x`.`Two`, `x`.`Three`) AND
+	`y`.`Nil` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -165,18 +144,11 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Ints` `x`
+	`Ints` `x`,
+	`Ints2` `y`
 WHERE
-	(`x`.`One`, `x`.`Two`, `x`.`Three`) <> (
-		SELECT
-			`y`.`One`,
-			`y`.`One` + 1,
-			4
-		FROM
-			`Ints2` `y`
-		WHERE
-			`y`.`Nil` IS NULL
-	)
+	(`x`.`One`, `x`.`Two`, `x`.`Three`) <> (`y`.`One`, `y`.`One` + 1, 4) AND
+	`y`.`Nil` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -184,18 +156,11 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Ints` `x`
+	`Ints` `x`,
+	`Ints2` `y`
 WHERE
-	(`x`.`One`, `x`.`Two`, `x`.`Three`) <> (
-		SELECT
-			`y`.`One`,
-			`y`.`One` + 1,
-			4
-		FROM
-			`Ints2` `y`
-		WHERE
-			`y`.`Nil` IS NULL
-	)
+	(`x`.`One`, `x`.`Two`, `x`.`Three`) <> (`y`.`One`, `y`.`One` + 1, 4) AND
+	`y`.`Nil` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
