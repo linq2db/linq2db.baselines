@@ -2,10 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	CASE
-		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
-		ELSE NULL
-	END,
+	left_1.ParentID,
 	right_2.ParentID
 FROM
 	(
@@ -25,8 +22,5 @@ FROM
 				right_1.ParentID <> 2
 		) right_2 ON right_2.ParentID = left_1.ParentID
 ORDER BY
-	CASE
-		WHEN left_1.ParentID IS NOT NULL THEN left_1.ParentID
-		ELSE NULL
-	END
+	left_1.ParentID
 
