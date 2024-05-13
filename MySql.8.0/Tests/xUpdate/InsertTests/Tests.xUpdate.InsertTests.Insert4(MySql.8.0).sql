@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -40,9 +40,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 

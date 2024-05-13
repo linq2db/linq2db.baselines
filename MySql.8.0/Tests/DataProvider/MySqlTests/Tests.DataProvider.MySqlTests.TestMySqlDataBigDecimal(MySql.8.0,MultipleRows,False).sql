@@ -81,9 +81,9 @@ LIMIT 2
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlDataTable` `t1`
+	`BigDecimalMySqlDataTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -137,9 +137,9 @@ LIMIT 2
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlDataTable` `t1`
+	`BigDecimalMySqlDataTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

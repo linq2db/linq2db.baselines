@@ -3119,18 +3119,18 @@ LIMIT @take
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypes`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypesNoYear`.`varcharDataType` = '_btest'
 

@@ -28,11 +28,11 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE   `t1`
+DELETE  
 FROM
-	`testdata`.`Issue681Table` `t1`
+	`testdata`.`Issue681Table`
 WHERE
-	`t1`.`ID` = @ID
+	`testdata`.`Issue681Table`.`ID` = @ID
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
