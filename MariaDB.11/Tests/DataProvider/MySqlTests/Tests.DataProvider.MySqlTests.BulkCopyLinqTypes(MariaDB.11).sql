@@ -32,11 +32,11 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -49,9 +49,9 @@ INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue,
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 

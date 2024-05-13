@@ -63,18 +63,18 @@ LIMIT @take
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypes`.`varcharDataType` = '_btest'
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`AllTypesNoYear`.`varcharDataType` = '_btest'
 

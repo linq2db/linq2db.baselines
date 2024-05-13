@@ -82,9 +82,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -110,6 +110,8 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @value2 VarChar -- String
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
+DECLARE @DecimalN VarChar -- String
+SET     @DecimalN = NULL
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
@@ -121,7 +123,7 @@ VALUES
 (
 	2,
 	@value2,
-	NULL
+	@DecimalN
 )
 
 BeforeExecute
@@ -139,9 +141,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
