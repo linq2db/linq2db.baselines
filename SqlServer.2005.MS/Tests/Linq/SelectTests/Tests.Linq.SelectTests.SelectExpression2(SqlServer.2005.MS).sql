@@ -30,10 +30,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	CASE
-		WHEN 1 = 1 THEN 1
-		ELSE 0
-	END
+	1
 FROM
 	[SelectExpressionTable] [t1]
 
