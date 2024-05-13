@@ -18,9 +18,9 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 /* My Test */
-DELETE   `t1`
+DELETE  
 FROM
-	`TestTable` `t1`
+	`TestTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

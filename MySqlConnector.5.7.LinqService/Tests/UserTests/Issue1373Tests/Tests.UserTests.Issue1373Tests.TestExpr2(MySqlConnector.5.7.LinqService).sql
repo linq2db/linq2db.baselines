@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS `Issue1373Tests`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Field1 VarChar -- String
+SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
 (
@@ -25,7 +27,7 @@ INSERT INTO `Issue1373Tests`
 VALUES
 (
 	1,
-	NULL
+	@Field1
 )
 
 BeforeExecute

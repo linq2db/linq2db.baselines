@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Parent` `c_1`
+	`Parent`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -22,18 +22,18 @@ VALUES
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	(`p`.`ParentID` = 1000 AND `p`.`Value1` IS NULL OR `p`.`ParentID` = 1001 AND `p`.`Value1` IS NULL)
+	(`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR `Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL)
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Parent` `c_1`
+	`Parent`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 
