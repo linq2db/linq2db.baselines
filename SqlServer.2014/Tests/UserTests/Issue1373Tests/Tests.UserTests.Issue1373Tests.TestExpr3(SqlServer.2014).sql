@@ -18,6 +18,8 @@ IF (OBJECT_ID(N'[Issue1373Tests]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
+DECLARE @Field1 NVarChar(4000) -- String
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -27,7 +29,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	1,
-	NULL
+	@Field1
 )
 
 BeforeExecute
