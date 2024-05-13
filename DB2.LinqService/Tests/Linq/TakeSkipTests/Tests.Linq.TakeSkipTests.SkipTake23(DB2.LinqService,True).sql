@@ -1,36 +1,28 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID") as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > 3 AND "t2".RN <= 8
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
+OFFSET 3 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 SELECT
-	"t2"."ParentID",
-	"t2"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	(
-		SELECT
-			"t1"."ParentID",
-			"t1"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "t1"."ChildID") as RN
-		FROM
-			"Child" "t1"
-	) "t2"
-WHERE
-	"t2".RN > 3 AND "t2".RN <= 8
+	"Child" "t1"
+ORDER BY
+	"t1"."ChildID"
+OFFSET 3 ROWS FETCH NEXT @take ROWS ONLY 
 

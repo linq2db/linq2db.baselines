@@ -69,7 +69,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -116,7 +116,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

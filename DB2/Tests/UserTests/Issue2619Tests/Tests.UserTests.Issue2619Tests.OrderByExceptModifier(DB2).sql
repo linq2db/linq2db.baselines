@@ -19,7 +19,7 @@ FROM
 			"Person" "t1"
 		ORDER BY
 			"t1"."LastName"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "t2"
 EXCEPT
 SELECT
@@ -40,6 +40,6 @@ FROM
 			"Person" "t3"
 		ORDER BY
 			"t3"."LastName"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "t4"
 

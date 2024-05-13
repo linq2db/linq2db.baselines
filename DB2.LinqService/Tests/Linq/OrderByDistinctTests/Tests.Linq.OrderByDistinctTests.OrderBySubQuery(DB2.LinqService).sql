@@ -512,7 +512,7 @@ FROM
 			"t"."DuplicateData"
 		FROM
 			"OrderByDistinctData" "t"
-		FETCH FIRST 2 ROWS ONLY
+		FETCH NEXT 2 ROWS ONLY
 	) "t_1"
 ORDER BY
 	"t_1"."Id" DESC

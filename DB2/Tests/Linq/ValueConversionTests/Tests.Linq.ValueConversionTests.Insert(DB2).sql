@@ -82,7 +82,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -136,7 +136,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -206,7 +206,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

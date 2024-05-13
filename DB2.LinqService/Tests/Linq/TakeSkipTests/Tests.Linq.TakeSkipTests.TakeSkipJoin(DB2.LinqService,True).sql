@@ -49,7 +49,7 @@ FROM
 				FROM
 					"LinqDataTypes" "t2"
 			) "t3"
-		FETCH FIRST 15 ROWS ONLY
+		FETCH NEXT 15 ROWS ONLY
 	) "e"
 		LEFT JOIN (
 			SELECT
@@ -81,7 +81,7 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
-			FETCH FIRST 15 ROWS ONLY
+			FETCH NEXT 15 ROWS ONLY
 		) "p" ON "p".ID = "e".ID
 ORDER BY
 	"e".ID,

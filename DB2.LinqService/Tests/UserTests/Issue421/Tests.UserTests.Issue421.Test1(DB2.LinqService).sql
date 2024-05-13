@@ -50,7 +50,7 @@ FROM
 	"BlobClass" "t1"
 WHERE
 	"t1"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -74,7 +74,7 @@ FROM
 	"BlobClass" "t1"
 WHERE
 	"t1"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

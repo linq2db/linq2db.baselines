@@ -94,33 +94,35 @@ DECLARE @int3 Integer(4) -- Int32
 SET     @int3 = 33
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 
 UPDATE
 	"UpdatedEntities"
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			"t4"."c1",
-			"t4"."c2",
-			"t4"."c3"
+			("UpdatedEntities"."Value1" * "t4"."Value1") * CAST(@int1 AS Int),
+			("UpdatedEntities"."Value2" * "t4"."Value2") * CAST(@int2 AS Int),
+			("UpdatedEntities"."Value3" * "t4"."Value3") * CAST(@int3 AS Int)
 		FROM
 			(
 				SELECT
-					("t3"."Value1" * "t_1"."Value1") * CAST(@int1 AS Int) as "c1",
-					("t3"."Value2" * "t_1"."Value2") * CAST(@int2 AS Int) as "c2",
-					("t3"."Value3" * "t_1"."Value3") * CAST(@int3 AS Int) as "c3",
-					ROW_NUMBER() OVER (ORDER BY "t3"."id") as RN,
+					"t_1"."Value1",
+					"t_1"."Value2",
+					"t_1"."Value3",
 					"t3"."id"
 				FROM
 					"UpdatedEntities" "t3"
 						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
 				WHERE
 					"t_1"."id" <> @someId
+				ORDER BY
+					"t3"."id"
+				OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 			) "t4"
 		WHERE
-			"t4".RN > @skip AND "t4".RN <= 3 AND "UpdatedEntities"."id" = "t4"."id"
+			"UpdatedEntities"."id" = "t4"."id"
 	)
 WHERE
 	EXISTS(
@@ -129,16 +131,18 @@ WHERE
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER (ORDER BY "t1"."id") as RN,
 					"t1"."id"
 				FROM
 					"UpdatedEntities" "t1"
 						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 				WHERE
 					"t"."id" <> @someId
+				ORDER BY
+					"t1"."id"
+				OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 			) "t2"
 		WHERE
-			"t2".RN > @skip AND "t2".RN <= 3 AND "UpdatedEntities"."id" = "t2"."id"
+			"UpdatedEntities"."id" = "t2"."id"
 	)
 
 BeforeExecute

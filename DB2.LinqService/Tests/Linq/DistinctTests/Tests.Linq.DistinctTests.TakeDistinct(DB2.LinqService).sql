@@ -11,6 +11,6 @@ FROM
 			"Child" "ch"
 		ORDER BY
 			"ch"."ParentID"
-		FETCH FIRST 4 ROWS ONLY
+		FETCH NEXT 4 ROWS ONLY
 	) "t1"
 

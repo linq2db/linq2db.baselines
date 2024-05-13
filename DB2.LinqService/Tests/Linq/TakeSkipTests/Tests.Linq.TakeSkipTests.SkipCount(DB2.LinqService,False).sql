@@ -8,13 +8,7 @@ FROM
 		SELECT
 			*
 		FROM
-			(
-				SELECT
-					ROW_NUMBER() OVER () as RN
-				FROM
-					"Child" "t1"
-			) "t2"
-		WHERE
-			"t2".RN > 2
-	) "t3"
+			"Child" "t1"
+		OFFSET 2 ROWS
+	) "t2"
 

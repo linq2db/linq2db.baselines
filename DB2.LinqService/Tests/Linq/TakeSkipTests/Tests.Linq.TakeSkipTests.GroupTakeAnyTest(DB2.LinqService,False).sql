@@ -89,7 +89,7 @@ SELECT
 				"group_1"."Value"
 			HAVING
 				COUNT(*) > 1
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		)
 			THEN 1
 		ELSE 0

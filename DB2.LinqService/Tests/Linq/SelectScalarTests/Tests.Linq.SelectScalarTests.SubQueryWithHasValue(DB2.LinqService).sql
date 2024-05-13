@@ -15,6 +15,6 @@ WHERE
 			END
 		FROM
 			"Parent" "r"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) = 1
 

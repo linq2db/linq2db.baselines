@@ -146,7 +146,7 @@ SET
 			"billing_DevReadingType" "w"
 		WHERE
 			"w"."Name" = "t1"."ReadingTypeName" AND "w"."DevTypeId" = "t1"."Devtypeid"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	),
 	"Responsibility" = (
 		SELECT
@@ -155,7 +155,7 @@ SET
 			"billing_DevReadingType" "w_1"
 		WHERE
 			"w_1"."Name" = "t1"."ReadingTypeName" AND "w_1"."DevTypeId" = "t1"."Devtypeid"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 
 BeforeExecute

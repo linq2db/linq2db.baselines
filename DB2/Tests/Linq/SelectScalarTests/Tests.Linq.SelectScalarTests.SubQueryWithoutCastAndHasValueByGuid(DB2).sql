@@ -12,6 +12,6 @@ WHERE
 			"r"."GuidValue"
 		FROM
 			"LinqDataTypes" "r"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) IS NOT NULL
 

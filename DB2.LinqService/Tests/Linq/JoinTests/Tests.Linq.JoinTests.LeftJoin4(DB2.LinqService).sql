@@ -11,7 +11,7 @@ SELECT
 			"Child" "y1"
 		WHERE
 			"x5"."ParentID" = "y1"."ParentID" AND "x5"."Value1" = "y1"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	),
 	(
 		SELECT
@@ -20,7 +20,7 @@ SELECT
 			"Child" "y1_1"
 		WHERE
 			"x5"."ParentID" = "y1_1"."ParentID" AND "x5"."Value1" = "y1_1"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "x5"
