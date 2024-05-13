@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -120,9 +120,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -152,9 +152,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`IntEnumTable` `t1`
+	`IntEnumTable`
 
 BeforeExecute
 INSERT BULK `IntEnumTable`(Id, Column, ColumnNullable

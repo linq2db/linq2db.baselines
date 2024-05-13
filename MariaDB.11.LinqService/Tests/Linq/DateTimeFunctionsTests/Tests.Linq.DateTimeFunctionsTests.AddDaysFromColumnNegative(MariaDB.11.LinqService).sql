@@ -53,9 +53,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t`
+DELETE  
 FROM
-	`LinqDataTypes` `t`
+	`LinqDataTypes`
 WHERE
-	`t`.`ID` = 5000
+	`LinqDataTypes`.`ID` = 5000
 

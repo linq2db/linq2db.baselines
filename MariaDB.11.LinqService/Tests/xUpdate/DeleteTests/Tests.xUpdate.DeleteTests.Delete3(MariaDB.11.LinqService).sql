@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` IN (1001, 1002)
+	`Child`.`ChildID` IN (1001, 1002)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

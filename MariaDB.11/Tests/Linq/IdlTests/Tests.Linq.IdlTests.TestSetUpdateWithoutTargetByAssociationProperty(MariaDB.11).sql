@@ -40,18 +40,18 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `x`
+DELETE  
 FROM
-	`Child` `x`
+	`Child`
 WHERE
-	`x`.`ChildID` = 10000
+	`Child`.`ChildID` = 10000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `x`
+DELETE  
 FROM
-	`Parent` `x`
+	`Parent`
 WHERE
-	`x`.`ParentID` = 20000
+	`Parent`.`ParentID` = 20000
 

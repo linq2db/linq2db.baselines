@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -43,9 +43,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 

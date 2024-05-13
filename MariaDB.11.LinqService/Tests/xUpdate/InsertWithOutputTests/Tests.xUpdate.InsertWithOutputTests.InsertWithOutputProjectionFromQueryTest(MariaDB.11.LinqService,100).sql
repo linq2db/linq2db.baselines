@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `DestinationTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @param Int32
-SET     @param = 200
+SET     @param = 100
 
 INSERT INTO `DestinationTable`
 (
@@ -260,7 +260,7 @@ INSERT INTO `DestinationTable`
 	`ValueStr`
 )
 SELECT
-	`s`.`Id` + @param,
+	`s`.`Id` + 100 + @param,
 	`s`.`Value` + 100,
 	Concat(`s`.`ValueStr`, 100)
 FROM

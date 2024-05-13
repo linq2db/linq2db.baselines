@@ -27,9 +27,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -49,9 +49,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = -12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = NULL
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -82,15 +82,15 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @value1 VarChar -- String
+DECLARE @value1 NewDecimal -- Decimal
 SET     @value1 = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @value2 VarChar -- String
+DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -108,7 +108,7 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @value2 VarChar -- String
+DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -139,17 +139,17 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -169,9 +169,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = -12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = NULL
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
