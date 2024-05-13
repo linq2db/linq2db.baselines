@@ -14,5 +14,5 @@ FROM
 				[p1].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] + 1 < [p1].[ParentID] + 1
 		) [t1]
 WHERE
-	[p1].[ParentID] + 1 > 0
+	[p1].[ParentID] > -1
 

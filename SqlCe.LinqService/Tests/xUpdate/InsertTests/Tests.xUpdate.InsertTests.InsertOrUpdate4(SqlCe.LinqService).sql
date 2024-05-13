@@ -36,13 +36,15 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
+DECLARE @i Int -- Int32
+SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) AS NVarChar(11))
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -52,6 +54,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(3) -- String
 SET     @diagnosis = 'abc'
+DECLARE @i Int -- Int32
+SET     @i = 0
 
 INSERT INTO [Patient]
 (
@@ -61,7 +65,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	CAST(Len(@diagnosis) AS NVarChar(11))
+	CAST(Len(@diagnosis) + @i AS NVarChar(11))
 )
 
 BeforeExecute
