@@ -105,23 +105,19 @@ SELECT TOP (1)
 		WHERE
 			[x].[InfeedAdviceID] = [infeed].[Id]
 	),
-	[t2].[not_null],
-	[t2].[Id],
-	[t2].[Nr]
+	[t1].[Id],
+	[t1].[Nr]
 FROM
 	[InfeedAdvicePositionDTO] [infeed]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[d].[Id],
-				[d].[Nr],
-				1 as [not_null]
+				[ir].[Id],
+				[ir].[Nr]
 			FROM
-				(
-					SELECT
-						1 as [c1]
-				) [t1]
-					LEFT JOIN [MlogInfeedAddonsDTO] [d] ON [d].[Id] = [infeed].[Id]
-		) [t2]
+				[MlogInfeedAddonsDTO] [ir]
+			WHERE
+				[ir].[Id] = [infeed].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
