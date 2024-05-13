@@ -58,9 +58,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -121,9 +121,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -153,9 +153,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 INSERT BULK `GuidTable`(Id, Column, ColumnNullable

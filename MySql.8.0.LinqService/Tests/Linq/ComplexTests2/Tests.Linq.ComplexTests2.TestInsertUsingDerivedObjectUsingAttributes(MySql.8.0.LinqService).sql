@@ -92,9 +92,9 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`PersonID` = @ID
+	`Person`.`PersonID` = @ID
 

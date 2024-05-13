@@ -158,27 +158,27 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`GrandChild` `c_1`
+	`GrandChild`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`GrandChild`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Child`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Parent` `c_1`
+	`Parent`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 

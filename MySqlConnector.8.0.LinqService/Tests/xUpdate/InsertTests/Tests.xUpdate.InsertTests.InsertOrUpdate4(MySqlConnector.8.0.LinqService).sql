@@ -40,6 +40,8 @@ DECLARE @id Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
+DECLARE @i Int32
+SET     @i = 0
 
 INSERT INTO `Patient`
 (
@@ -49,10 +51,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) AS CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) AS CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

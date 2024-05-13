@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -43,9 +43,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Person` `p`
+	`Person`
 WHERE
-	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
