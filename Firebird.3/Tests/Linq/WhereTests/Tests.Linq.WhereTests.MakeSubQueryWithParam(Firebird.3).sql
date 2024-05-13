@@ -4,7 +4,7 @@ DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT
-	"p"."PersonID",
+	("p"."PersonID" + CAST(@n AS Int)) - 1,
 	"p"."FirstName"
 FROM
 	"Person" "p"
