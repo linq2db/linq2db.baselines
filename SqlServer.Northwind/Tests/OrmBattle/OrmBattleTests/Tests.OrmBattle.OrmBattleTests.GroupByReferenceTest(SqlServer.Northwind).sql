@@ -28,7 +28,7 @@ FROM
 				INNER JOIN [Customers] [a_Customer] ON [t1].[CustomerID] = [a_Customer].[CustomerID]
 	) [m_1]
 		INNER JOIN [Orders] [d]
-			INNER JOIN [Customers] [a_Customer_1] ON [d].[CustomerID] = [a_Customer_1].[CustomerID]
+			LEFT JOIN [Customers] [a_Customer_1] ON [d].[CustomerID] = [a_Customer_1].[CustomerID]
 		ON [m_1].[CustomerID] = [a_Customer_1].[CustomerID]
 
 BeforeExecute
