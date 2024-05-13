@@ -25,7 +25,7 @@ FROM
 					p."ParentID"
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + 1)
 	) t2
 WHERE
 	t2.RN > :skip

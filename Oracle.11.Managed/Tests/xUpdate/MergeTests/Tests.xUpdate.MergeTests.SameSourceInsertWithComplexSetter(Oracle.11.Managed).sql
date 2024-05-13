@@ -220,6 +220,10 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
+DECLARE @name Int32
+SET     @name = 4
+DECLARE @idx Int32
+SET     @idx = 6
 
 MERGE INTO "TestMerge1" Target
 USING (
@@ -245,7 +249,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	10,
+	:name + :idx,
 	"Source"."source_Field2",
 	999,
 	888
