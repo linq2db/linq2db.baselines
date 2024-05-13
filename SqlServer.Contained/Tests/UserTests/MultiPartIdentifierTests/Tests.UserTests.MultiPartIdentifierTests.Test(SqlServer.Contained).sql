@@ -84,7 +84,7 @@ FROM
 		INNER JOIN [Table4] [t2] ON [t1].[ProblematicalField] = [t2].[Field4]
 		INNER JOIN [Table1] [a_Table1s] ON [t2].[Field3] = [a_Table1s].[Field3]
 		LEFT JOIN [Table4] [a_Table4Ref] ON [a_Table1s].[Field3] = [a_Table4Ref].[Field3]
-		INNER JOIN [Table5] [a_Table5Ref_1] ON [a_Table4Ref].[Field4] = [a_Table5Ref_1].[ProblematicalField]
+		LEFT JOIN [Table5] [a_Table5Ref_1] ON [a_Table4Ref].[Field4] = [a_Table5Ref_1].[ProblematicalField]
 		LEFT JOIN [Table5] [a_Table5Ref_2] ON [a_Table5Ref_1].[Field5] = [a_Table5Ref_2].[ProblematicalField]
 		INNER JOIN [Table4] [t4] ON [a_Table5Ref_2].[ProblematicalField] IS NOT NULL AND [a_Table5Ref_2].[ProblematicalField] = [t4].[Field4]
 		INNER JOIN [Table1] [t6] ON [t4].[Field3] = [t6].[Field3]
