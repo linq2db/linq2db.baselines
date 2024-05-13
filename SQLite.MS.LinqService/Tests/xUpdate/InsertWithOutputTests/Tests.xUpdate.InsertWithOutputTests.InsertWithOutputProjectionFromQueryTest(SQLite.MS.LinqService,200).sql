@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS [DestinationTable]
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @param  -- Int32
-SET     @param = 300
+SET     @param = 200
 
 INSERT INTO [DestinationTable]
 (
@@ -260,7 +260,7 @@ INSERT INTO [DestinationTable]
 	[ValueStr]
 )
 SELECT
-	[s].[Id] + @param,
+	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
 	[s].[ValueStr] || 100
 FROM
