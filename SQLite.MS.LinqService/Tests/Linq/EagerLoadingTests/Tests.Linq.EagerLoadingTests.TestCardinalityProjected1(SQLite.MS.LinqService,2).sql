@@ -660,9 +660,9 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[Id],
-	[detail].[Id],
-	[detail].[FK]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[FK]
 FROM
 	(
 		SELECT DISTINCT
@@ -670,8 +670,8 @@ FROM
 		FROM
 			[EntityA] [e]
 				INNER JOIN [EntityB] [a_ObjectB] ON [e].[FK] = [a_ObjectB].[Id]
-	) [key_data_result]
-		INNER JOIN [EntityD] [detail] ON [key_data_result].[Id] = [detail].[FK]
+	) [m_1]
+		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
 BeforeExecute
 -- SQLite.MS SQLite

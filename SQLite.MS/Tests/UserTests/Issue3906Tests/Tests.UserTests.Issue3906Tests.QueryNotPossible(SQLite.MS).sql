@@ -90,25 +90,6 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[m_1].[Id],
-	[d].[Id],
-	[d].[Nr]
-FROM
-	(
-		SELECT
-			[infeed].[Id]
-		FROM
-			[InfeedAdvicePositionDTO] [infeed]
-		LIMIT 1
-	) [m_1]
-		LEFT JOIN [MlogInfeedAddonsDTO] [d] ON [d].[Id] = [m_1].[Id]
-
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -120,13 +101,21 @@ SELECT
 			[InventoryResourceDTO] [x]
 		WHERE
 			[x].[InfeedAdviceID] = [infeed].[Id]
-	)
+	),
+	[t1].[Id],
+	[t1].[Nr]
 FROM
 	[InfeedAdvicePositionDTO] [infeed]
+		LEFT JOIN (
+			SELECT
+				[ir].[Id],
+				[ir].[Nr],
+				ROW_NUMBER() OVER (PARTITION BY [ir].[Id] ORDER BY [ir].[Id]) as [rn]
+			FROM
+				[MlogInfeedAddonsDTO] [ir]
+		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] <= 1
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
 

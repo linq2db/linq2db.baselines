@@ -30,6 +30,6 @@ SELECT
 FROM
 	[Customers] [i]
 		INNER JOIN ([Orders] [o]
-			INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID])
+			LEFT JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID])
 		ON [a_Customer].[CustomerID] = [i].[CustomerID]
 
