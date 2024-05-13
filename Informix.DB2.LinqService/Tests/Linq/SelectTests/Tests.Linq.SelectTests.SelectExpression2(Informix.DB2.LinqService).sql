@@ -31,10 +31,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	CASE
-		WHEN 1 = 1 THEN 't'
-		ELSE 'f'
-	END::BOOLEAN
+	't'
 FROM
 	SelectExpressionTable t1
 

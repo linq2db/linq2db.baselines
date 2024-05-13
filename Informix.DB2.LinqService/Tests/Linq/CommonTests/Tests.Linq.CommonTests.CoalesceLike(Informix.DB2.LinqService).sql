@@ -10,9 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CASE
-		WHEN p.FirstName LIKE 'Jo%' ESCAPE '~' THEN 't'
-		ELSE 'f'
-	END::BOOLEAN = 't' AND
-	p.FirstName IS NOT NULL
+	p.FirstName LIKE 'Jo%' ESCAPE '~' AND p.FirstName IS NOT NULL
 
