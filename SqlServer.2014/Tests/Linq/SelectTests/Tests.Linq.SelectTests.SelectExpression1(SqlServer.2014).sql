@@ -31,7 +31,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
-	IIF(1 = 1, 1, 0)
+	1
 FROM
 	[SelectExpressionTable] [t1]
 
