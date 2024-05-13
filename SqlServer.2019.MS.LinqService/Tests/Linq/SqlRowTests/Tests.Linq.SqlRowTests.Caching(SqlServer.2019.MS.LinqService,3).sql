@@ -61,8 +61,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND
-	[i].[Three] = @r3
+	[i].[Two] = [i].[One] * 2 AND [i].[Three] = @r3
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
