@@ -127,6 +127,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @skip Int -- Int32
+SET     @skip = 6
 
 SELECT
 	[t1].[Value]
@@ -134,7 +136,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET 6 ROWS
+OFFSET @skip ROWS
 
 BeforeExecute
 -- SqlServer.2012
