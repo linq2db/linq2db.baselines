@@ -26,6 +26,10 @@ IF (OBJECT_ID(N'[TInserted]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @id Int -- Int32
+SET     @id = 1001
+DECLARE @param Int -- Int32
+SET     @param = 100
 
 INSERT INTO [Child]
 (
@@ -42,7 +46,7 @@ INTO [TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	1101
+	@id + @param
 FROM
 	[Child] [c_1]
 WHERE
