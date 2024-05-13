@@ -156,21 +156,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[ir].[Id],
-			[ir].[Status],
-			[ir].[MaterialID],
-			[ir].[ResourceID],
 			[ir].[Quantity],
-			[ir].[ProductStatus],
-			[r].[Id] as [Id_1],
-			[r].[ResourcePointID],
-			[cr].[Id] as [Id_2],
-			[cr].[AisleID],
-			[cr].[ChannelID],
-			[c_1].[Id] as [Id_3],
-			[aisle].[Status] as [AisleStatus],
-			[rp].[Id] as [Id_4],
-			[rp].[IsStoragePlace],
 			Coalesce((
 				SELECT
 					SUM([x].[Quantity])
@@ -186,6 +172,20 @@ FROM
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
 			) * [ir].[Quantity] as [RefQty],
+			[ir].[Id],
+			[ir].[Status],
+			[ir].[MaterialID],
+			[ir].[ResourceID],
+			[ir].[ProductStatus],
+			[r].[Id] as [Id_1],
+			[r].[ResourcePointID],
+			[cr].[Id] as [Id_2],
+			[cr].[AisleID],
+			[cr].[ChannelID],
+			[c_1].[Id] as [Id_3],
+			[aisle].[Status] as [AisleStatus],
+			[rp].[Id] as [Id_4],
+			[rp].[IsStoragePlace],
 			CASE
 				WHEN EXISTS(
 					SELECT
@@ -215,11 +215,12 @@ FROM
 			[ir].[Quantity] > 0
 		UNION
 		SELECT
+			[ir_1].[Quantity],
+			0 as [RefQty],
 			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
 			[ir_1].[ResourceID],
-			[ir_1].[Quantity],
 			[ir_1].[ProductStatus],
 			[r_1].[Id] as [Id_1],
 			[r_1].[ResourcePointID],
@@ -230,7 +231,6 @@ FROM
 			0 as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [RefQty],
 			0 as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]

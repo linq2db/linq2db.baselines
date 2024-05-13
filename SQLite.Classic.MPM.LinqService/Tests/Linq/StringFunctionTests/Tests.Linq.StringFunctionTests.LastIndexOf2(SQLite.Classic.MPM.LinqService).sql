@@ -10,5 +10,5 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = 1 AND Length('123' || [p].[FirstName] || '012345') - CharIndex('321', Reverse(Substr('123' || [p].[FirstName] || '012345', 6, Length('123' || [p].[FirstName] || '012345') - 5))) = 10 AND
-	(CharIndex(@p, '123' || [p].[FirstName] || '012345', 6) <> 0 OR CharIndex(@p, '123' || [p].[FirstName] || '012345', 6) IS NULL)
+	CharIndex(@p, '123' || [p].[FirstName] || '012345', 6) <> 0
 
