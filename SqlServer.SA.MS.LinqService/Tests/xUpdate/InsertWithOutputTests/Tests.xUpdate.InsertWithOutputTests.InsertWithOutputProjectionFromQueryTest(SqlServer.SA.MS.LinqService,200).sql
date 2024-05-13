@@ -253,7 +253,7 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @param Int -- Int32
-SET     @param = 300
+SET     @param = 200
 
 INSERT INTO [DestinationTable]
 (
@@ -265,7 +265,7 @@ OUTPUT
 	[INSERTED].[Id] + 1,
 	[INSERTED].[ValueStr] + CAST(1 AS VarChar(11))
 SELECT
-	[s].[Id] + @param,
+	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
 	[s].[ValueStr] + CAST(100 AS VarChar(11))
 FROM

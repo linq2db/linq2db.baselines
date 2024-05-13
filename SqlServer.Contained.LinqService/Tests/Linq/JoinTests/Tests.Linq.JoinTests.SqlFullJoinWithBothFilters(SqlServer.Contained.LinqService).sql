@@ -6,7 +6,7 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 
 SELECT
-	IIF([left_1].[ParentID] IS NOT NULL, [left_1].[ParentID], NULL),
+	[left_1].[ParentID],
 	[right_2].[ParentID]
 FROM
 	(
@@ -26,5 +26,5 @@ FROM
 				[right_1].[ParentID] <> @id2
 		) [right_2] ON [right_2].[ParentID] = [left_1].[ParentID]
 ORDER BY
-	IIF([left_1].[ParentID] IS NOT NULL, [left_1].[ParentID], NULL)
+	[left_1].[ParentID]
 

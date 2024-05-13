@@ -35,6 +35,8 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @i Int -- Int32
+SET     @i = 0
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -44,7 +46,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) AS NVarChar(11))
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
