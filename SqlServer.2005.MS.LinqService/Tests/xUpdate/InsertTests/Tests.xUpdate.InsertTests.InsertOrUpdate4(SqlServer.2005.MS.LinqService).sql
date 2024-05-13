@@ -33,6 +33,8 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @i Int -- Int32
+SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(4000) -- String
@@ -41,7 +43,7 @@ SET     @diagnosis = N'abc'
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) AS NVarChar(11))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -57,7 +59,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	)
 END
 

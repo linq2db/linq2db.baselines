@@ -11,18 +11,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			(
-				SELECT
-					[param].[ParentID],
-					Coalesce([param].[Value1], -1) as [Value_1]
-				FROM
-					[Parent] [param]
-			) [param_1]
+			[Parent] [param]
 		WHERE
-			[param_1].[ParentID] = [c_1].[ParentID] AND
-			[param_1].[Value_1] = [c_1].[ParentID] AND
-			[param_1].[ParentID] = [c_1].[ParentID] AND
-			[param_1].[Value_1] = [c_1].[ParentID]
+			[param].[ParentID] = [c_1].[ParentID] AND Coalesce([param].[Value1], -1) = [c_1].[ParentID]
 	)
 
 BeforeExecute
