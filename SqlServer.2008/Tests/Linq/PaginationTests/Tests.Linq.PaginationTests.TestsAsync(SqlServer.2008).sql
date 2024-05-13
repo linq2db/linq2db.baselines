@@ -328,6 +328,8 @@ BeforeExecute
 -- SqlServer.2008 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 0
+DECLARE @take Int -- Int32
+SET     @take = 20
 
 SELECT
 	[t1].[Id],
@@ -344,12 +346,14 @@ FROM
 			[x].[Id] % 2 = 0
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= 20
+	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 20
+DECLARE @take Int -- Int32
+SET     @take = 20
 
 SELECT
 	[t1].[c1],
@@ -368,7 +372,7 @@ FROM
 			[x].[Id] % 2 = 0
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= 40
+	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
