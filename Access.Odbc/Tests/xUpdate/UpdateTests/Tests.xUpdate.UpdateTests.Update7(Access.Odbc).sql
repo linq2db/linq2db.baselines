@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Value1 Int -- Int32
-SET     @Value1 = 1
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
 
 INSERT INTO [Parent]
 (
-	[Value1],
-	[ParentID]
+	[ParentID],
+	[Value1]
 )
 VALUES
 (

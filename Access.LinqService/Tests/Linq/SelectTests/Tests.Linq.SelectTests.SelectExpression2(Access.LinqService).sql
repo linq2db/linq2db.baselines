@@ -31,7 +31,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	IIF(1 = 1, True, False)
+	True
 FROM
 	[SelectExpressionTable] [t1]
 

@@ -7,5 +7,5 @@ SET     @Parameter1 = 1
 
 SELECT
 	CVar(?),
-	IIF(1 = 1, CVar(?), 5)
+	CVar(?)
 
