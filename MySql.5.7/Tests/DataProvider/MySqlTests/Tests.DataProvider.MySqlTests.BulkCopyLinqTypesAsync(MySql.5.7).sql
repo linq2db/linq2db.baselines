@@ -27,11 +27,11 @@ VALUES
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
@@ -62,9 +62,9 @@ VALUES
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 

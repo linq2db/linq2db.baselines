@@ -27,9 +27,9 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -49,9 +49,9 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Decimal VarChar -- String
+DECLARE @Decimal NewDecimal -- Decimal
 SET     @Decimal = -12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @DecimalN VarChar -- String
+DECLARE @DecimalN NewDecimal -- Decimal
 SET     @DecimalN = NULL
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -82,15 +82,15 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @value1 VarChar -- String
+DECLARE @value1 NewDecimal -- Decimal
 SET     @value1 = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @value2 VarChar -- String
+DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -108,7 +108,7 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @value2 VarChar -- String
+DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
@@ -139,18 +139,12 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`BigDecimalMySqlConnectorTable` `t1`
+	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p1 VarChar -- String
-SET     @p1 = 12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @p2 VarChar -- String
-SET     @p2 = -12345678901234567890123456789012345.123456789012345678901234567891
-DECLARE @p3 VarChar -- String
-SET     @p3 = -12345678901234567890123456789012345.123456789012345678901234567891
 
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
@@ -159,8 +153,8 @@ INSERT INTO `BigDecimalMySqlConnectorTable`
 	`DecimalN`
 )
 VALUES
-(1,@p1,@p2),
-(2,@p3,NULL)
+(1,12345678901234567890123456789012345.123456789012345678901234567891,-12345678901234567890123456789012345.123456789012345678901234567891),
+(2,-12345678901234567890123456789012345.123456789012345678901234567891,NULL)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

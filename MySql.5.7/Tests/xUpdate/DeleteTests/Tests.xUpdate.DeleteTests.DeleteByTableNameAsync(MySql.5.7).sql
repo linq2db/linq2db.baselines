@@ -69,11 +69,11 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 1
 
-DELETE   `t1`
+DELETE  
 FROM
-	`xxPerson` `t1`
+	`xxPerson`
 WHERE
-	`t1`.`PersonID` = @ID
+	`xxPerson`.`PersonID` = @ID
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)

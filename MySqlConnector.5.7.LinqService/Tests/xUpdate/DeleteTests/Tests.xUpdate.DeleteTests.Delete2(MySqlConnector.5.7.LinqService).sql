@@ -3,11 +3,11 @@
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -44,11 +44,11 @@ BeforeExecute
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`Parent`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
