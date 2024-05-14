@@ -20,6 +20,10 @@ CREATE TABLE [tempdb]..[#TInserted]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @id Int -- Int32
+SET     @id = 1001
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 INSERT INTO [Child]
 (
@@ -36,7 +40,7 @@ INTO [tempdb]..[#TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	1201
+	@id + @param
 FROM
 	[Child] [c_1]
 WHERE
