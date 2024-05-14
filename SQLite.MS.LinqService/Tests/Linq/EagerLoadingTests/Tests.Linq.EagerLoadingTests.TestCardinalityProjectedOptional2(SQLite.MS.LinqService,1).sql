@@ -535,30 +535,35 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Id_1],
-	[detail_1].[Id],
-	[detail_1].[FK]
+	[m_1].[Id],
+	[m_1].[Id_1],
+	[d_1].[Id],
+	[d_1].[FK]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[Id],
-			[e].[Id] as [Id_1]
+			[d].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
-			[EntityMA] [e]
-				INNER JOIN [EntityMB] [detail] ON [e].[Id] = [detail].[FK]
-	) [key_data_result]
-		INNER JOIN [EntityMC] [detail_1] ON [key_data_result].[Id] = [detail_1].[FK]
+			(
+				SELECT DISTINCT
+					[e].[Id]
+				FROM
+					[EntityMA] [e]
+			) [t1]
+				INNER JOIN [EntityMB] [d] ON [t1].[Id] = [d].[FK]
+	) [m_1]
+		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[e].[Id],
-	[detail].[Id]
+	[m_1].[Id],
+	[d].[Id]
 FROM
-	[EntityMA] [e]
-		INNER JOIN [EntityMB] [detail] ON [e].[Id] = [detail].[FK]
+	[EntityMA] [m_1]
+		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 
 BeforeExecute
 -- SQLite.MS SQLite

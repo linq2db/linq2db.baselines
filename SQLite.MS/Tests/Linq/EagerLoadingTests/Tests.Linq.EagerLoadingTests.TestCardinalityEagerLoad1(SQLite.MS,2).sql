@@ -141,9 +141,9 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[lw_EntityB].[Id],
-	[detail].[Id],
-	[detail].[FK]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[FK]
 FROM
 	(
 		SELECT DISTINCT
@@ -151,8 +151,8 @@ FROM
 		FROM
 			[EntityA] [t1]
 				INNER JOIN [EntityB] [a_ObjectB] ON [t1].[FK] = [a_ObjectB].[Id]
-	) [lw_EntityB]
-		INNER JOIN [EntityD] [detail] ON [lw_EntityB].[Id] = [detail].[FK]
+	) [m_1]
+		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
 BeforeExecute
 DisposeTransaction
