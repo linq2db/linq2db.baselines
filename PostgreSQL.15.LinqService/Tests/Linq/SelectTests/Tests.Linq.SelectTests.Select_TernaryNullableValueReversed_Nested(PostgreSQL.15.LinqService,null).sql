@@ -7,8 +7,5 @@ SET     @p = 0
 
 SELECT
 	:value,
-	CASE
-		WHEN 1 = 1 THEN :p
-		ELSE 4
-	END
+	:p
 
