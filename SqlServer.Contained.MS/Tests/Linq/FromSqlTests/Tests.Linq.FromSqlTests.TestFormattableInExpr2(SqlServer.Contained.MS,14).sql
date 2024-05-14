@@ -45,8 +45,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p BigInt -- Int64
-SET     @p = 5
+DECLARE @startId BigInt -- Int64
+SET     @startId = 5
 DECLARE @endId Int -- Int32
 SET     @endId = 14
 
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[sample_class] [c_1]
 		INNER JOIN (
-			SELECT * FROM [sample_class] where [id] >= @p and [id] < @endId
+			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @endId
 		) [s] ON [s].[id] = [c_1].[id]
 WHERE
 	[s].[id] > 10
