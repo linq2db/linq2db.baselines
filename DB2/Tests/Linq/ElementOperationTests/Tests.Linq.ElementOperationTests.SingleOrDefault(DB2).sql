@@ -8,5 +8,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = 100
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

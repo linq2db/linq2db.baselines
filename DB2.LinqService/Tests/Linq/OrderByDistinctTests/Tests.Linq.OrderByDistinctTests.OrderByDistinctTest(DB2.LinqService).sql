@@ -494,89 +494,55 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"g_1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"g_1"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY MAX("g_1"."OrderData1")) as RN
-		FROM
-			"OrderByDistinctData" "g_1"
-		GROUP BY
-			"g_1"."DuplicateData"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "g_1"
+GROUP BY
+	"g_1"."DuplicateData"
+ORDER BY
+	MAX("g_1"."OrderData1")
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT
-	"t2"."DuplicateData"
+SELECT DISTINCT
+	"x"."DuplicateData"
 FROM
-	(
-		SELECT
-			"t1"."DuplicateData",
-			ROW_NUMBER() OVER () as RN
-		FROM
-			(
-				SELECT DISTINCT
-					"x"."DuplicateData"
-				FROM
-					"OrderByDistinctData" "x"
-			) "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= 3
+	"OrderByDistinctData" "x"
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
-	"t1"."DuplicateData"
+	"g_1"."DuplicateData"
 FROM
-	(
-		SELECT
-			"g_1"."DuplicateData",
-			ROW_NUMBER() OVER (ORDER BY MIN("g_1"."OrderData1") DESC) as RN
-		FROM
-			"OrderByDistinctData" "g_1"
-		GROUP BY
-			"g_1"."DuplicateData"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= 3
+	"OrderByDistinctData" "g_1"
+GROUP BY
+	"g_1"."DuplicateData"
+ORDER BY
+	MIN("g_1"."OrderData1") DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

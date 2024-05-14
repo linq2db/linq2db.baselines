@@ -7,9 +7,6 @@ SET     @p = 1
 
 SELECT
 	CAST(@value AS Int),
-	CASE
-		WHEN 1 = 1 THEN CAST(@p AS Int)
-		ELSE 5
-	END
+	CAST(@p AS Int)
 FROM SYSIBM.SYSDUMMY1
 

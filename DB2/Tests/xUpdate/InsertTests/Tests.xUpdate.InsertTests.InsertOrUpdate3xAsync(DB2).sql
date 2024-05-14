@@ -39,6 +39,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 5
+DECLARE @i Integer(4) -- Int32
+SET     @i = 0
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
@@ -50,7 +52,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32)))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -135,5 +137,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

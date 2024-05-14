@@ -108,7 +108,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'N'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -121,7 +121,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'Y'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -134,7 +134,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'N'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -147,7 +147,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'Y'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -160,7 +160,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'N'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -173,7 +173,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'Y'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -186,7 +186,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'N'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -199,7 +199,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'Y'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -212,7 +212,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'N'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -225,7 +225,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."BoolValue" = 'Y'
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -240,7 +240,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."GuidValue" = @GuidValue
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -255,7 +255,7 @@ FROM
 	"TypeConvertTable" "t1"
 WHERE
 	"t1"."GuidValue" = @GuidValue
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

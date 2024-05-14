@@ -16,7 +16,7 @@ FROM
 				"c_1"."ParentID" > 0
 			ORDER BY
 				"c_1"."ParentID"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "t1" ON 1=1
 		LEFT JOIN (
 			SELECT
@@ -28,7 +28,7 @@ FROM
 				"c_2"."ChildID" > -100
 			ORDER BY
 				"c_2"."ParentID"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "t2" ON 1=1
 ORDER BY
 	"p"."ParentID"

@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + 0.22600000000000001 SECOND
+	"t"."DateTimeValue" + 226000 MICROSECONDS
 FROM
 	"LinqDataTypes" "t"
 

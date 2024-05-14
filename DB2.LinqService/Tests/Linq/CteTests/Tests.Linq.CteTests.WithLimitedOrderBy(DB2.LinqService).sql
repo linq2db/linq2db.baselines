@@ -11,7 +11,7 @@ AS
 		"Parent" "t1"
 	ORDER BY
 		"t1"."ParentID" DESC
-	FETCH FIRST 3 ROWS ONLY
+	FETCH NEXT 3 ROWS ONLY
 )
 SELECT
 	"t2"."ParentID",

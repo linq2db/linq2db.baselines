@@ -8,5 +8,5 @@ FROM
 	"Child" "ch"
 WHERE
 	"ch"."ChildID" >= 0 AND "ch"."ChildID" <= 100
-FETCH FIRST 3 ROWS ONLY
+FETCH NEXT 3 ROWS ONLY
 

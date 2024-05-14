@@ -46,13 +46,11 @@ BeforeExecute
 UPDATE
 	"Ints"
 SET
-	("One", "Two", "Three", "Four", "Nil") = (
+	"One" = "Ints"."Two" * 5,
+	("Two", "Three") = (
 		SELECT
-			"Ints"."Two" * 5,
 			"Ints"."Two" * 10,
-			"j_1"."Three" * 100,
-			"Ints"."One" * "Ints"."Four",
-			600
+			"j_1"."Three" * 100
 		FROM
 			"Ints" "i_1",
 			"Ints" "j_1"
@@ -65,7 +63,8 @@ SET
 			"Ints"."Four" = "i_1"."Four" AND
 			"Ints"."Five" = "i_1"."Five" AND
 			("Ints"."Nil" = "i_1"."Nil" OR "Ints"."Nil" IS NULL AND "i_1"."Nil" IS NULL)
-	)
+	),
+	("Four", "Nil") = ("Ints"."One" * "Ints"."Four", 600)
 WHERE
 	EXISTS(
 		SELECT

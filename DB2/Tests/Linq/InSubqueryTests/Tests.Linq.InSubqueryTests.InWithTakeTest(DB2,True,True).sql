@@ -16,7 +16,7 @@ WHERE
 					"v"."ParentID"
 				FROM
 					"Parent" "v"
-				FETCH FIRST 100 ROWS ONLY
+				FETCH NEXT 100 ROWS ONLY
 			) "t1"
 		WHERE
 			"c_1"."ParentID" = "t1"."ParentID"
