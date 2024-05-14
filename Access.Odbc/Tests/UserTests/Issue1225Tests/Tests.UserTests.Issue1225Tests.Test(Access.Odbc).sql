@@ -86,7 +86,7 @@ BeforeExecute
 SELECT
 	'Id',
 	[it].[Id],
-	SUM(IIF([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
+	SUM([a_ActualStage].[Id])
 FROM
 	[Task] [it]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON ([it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
