@@ -1,7 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar(4) -- String
-SET     @p = 'JOHN'
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Upper("p"."FirstName") = ? AND "p"."PersonID" = 1
+	"p"."PersonID" = 1
+LIMIT 1
 
