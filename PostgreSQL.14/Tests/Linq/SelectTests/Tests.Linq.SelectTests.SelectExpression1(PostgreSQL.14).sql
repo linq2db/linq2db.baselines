@@ -29,10 +29,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	CASE
-		WHEN 1 = 1 THEN True
-		ELSE False
-	END
+	True
 FROM
 	"SelectExpressionTable" t1
 LIMIT :take
