@@ -40,7 +40,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Two = i.One * 2 AND i.Three = i.Four - 1
+	i.Two = i.One * 2 AND i.Three = i.Four - 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -50,7 +50,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Two = i.Two AND i.Four = i.Three
+	i.Four = i.Three
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -60,7 +60,7 @@ SELECT
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Nil = i.Two AND i.Three = i.Three
+	i.Nil = i.Two
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

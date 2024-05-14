@@ -11,8 +11,8 @@ SELECT
 FROM
 	Person m_1
 WHERE
-	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID - 1 = 1) AND
-	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID - 1 = 1)
+	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2) AND
+	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22,7 +22,7 @@ SELECT
 FROM
 	Person x
 WHERE
-	(x.PersonID = 1 AND x.LastName <> 'test' OR x.FirstName <> 'test' AND x.PersonID - 1 = 1)
+	(x.PersonID = 1 AND x.LastName <> 'test' OR x.FirstName <> 'test' AND x.PersonID = 2)
 GROUP BY
 	x.PersonID
 
