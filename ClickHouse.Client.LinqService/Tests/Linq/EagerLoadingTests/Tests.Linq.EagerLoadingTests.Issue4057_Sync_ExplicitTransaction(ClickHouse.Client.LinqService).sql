@@ -2,25 +2,20 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_Parent.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
-		SELECT DISTINCT
-			t1.ParentID as ParentID
+		SELECT
+			x.ParentID as ParentID
 		FROM
-			(
-				SELECT
-					x.ParentID as ParentID
-				FROM
-					Parent x
-				WHERE
-					x.ParentID = toInt32(3)
-				LIMIT toInt32(1)
-			) t1
-	) lw_Parent
-		INNER JOIN Child detail ON lw_Parent.ParentID = detail.ParentID
+			Parent x
+		WHERE
+			x.ParentID = 3
+		LIMIT 1
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -31,41 +26,32 @@ SELECT
 FROM
 	Parent x
 WHERE
-	x.ParentID = toInt32(3)
-LIMIT toInt32(1)
+	x.ParentID = 3
+LIMIT 1
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -74,7 +60,7 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction
@@ -82,34 +68,25 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -118,7 +95,7 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

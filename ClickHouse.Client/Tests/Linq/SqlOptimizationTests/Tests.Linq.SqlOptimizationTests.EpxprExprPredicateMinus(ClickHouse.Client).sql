@@ -45,7 +45,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	t.Id - 1 > 5
+	t.Id > 6
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	7 - t.Id > 5
+	2 > t.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -81,7 +81,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	5 < 7 - t.Id
+	t.Id < 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

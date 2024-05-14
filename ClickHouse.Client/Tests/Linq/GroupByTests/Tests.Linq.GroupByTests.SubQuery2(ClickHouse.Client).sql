@@ -10,7 +10,7 @@ FROM
 		FROM
 			Child g_1
 		WHERE
-			g_1.ParentID + 1 > 1
+			g_1.ParentID > 0
 	) g_2
 GROUP BY
 	g_2.ParentID

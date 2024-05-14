@@ -3,8 +3,5 @@
 
 SELECT
 	0,
-	CASE
-		WHEN 1 = 1 THEN 0
-		ELSE 2
-	END
+	0
 

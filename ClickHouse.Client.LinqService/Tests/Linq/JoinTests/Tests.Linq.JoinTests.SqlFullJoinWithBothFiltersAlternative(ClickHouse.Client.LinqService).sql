@@ -2,29 +2,25 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lr.ParentID,
-	lr.Value1,
-	t1.ParentID,
-	t1.Value1
+	left_2.left_1,
+	t1.ParentID
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			left_1.ParentID as left_1
 		FROM
-			Parent p
+			Parent left_1
 		WHERE
-			p.ParentID <> toInt32(1)
-	) lr
+			left_1.ParentID <> 1
+	) left_2
 		FULL JOIN (
 			SELECT
-				p_1.ParentID as ParentID,
-				p_1.Value1 as Value1
+				right_1.ParentID as ParentID
 			FROM
-				Parent p_1
+				Parent right_1
 			WHERE
-				p_1.ParentID <> toInt32(2)
-		) t1 ON t1.ParentID = lr.ParentID
+				right_1.ParentID <> 2
+		) t1 ON t1.ParentID = left_2.left_1
 ORDER BY
-	lr.ParentID
+	left_2.left_1
 
