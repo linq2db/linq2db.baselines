@@ -91,8 +91,8 @@ DECLARE @DeliveryCounterParty NVarChar(4000) -- String
 SET     @DeliveryCounterParty = N'%C%'
 
 SELECT
-	[al_group_4].[AlertKey],
-	[al_group_4].[AlertCode],
+	[al_group_3].[AlertKey],
+	[al_group_3].[AlertCode],
 	[t2].[LastUpdate_1],
 	[t2].[CargoId],
 	[t2].[DeliveryId],
@@ -115,7 +115,7 @@ FROM
 					[al_group].[CreationDate]
 				FROM
 					[Alert] [al_group]
-						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey] AND [au].[AlertCode] = [au].[AlertCode]
+						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
 				GROUP BY
 					[al_group].[AlertKey],
 					[al_group].[AlertCode],
@@ -129,7 +129,7 @@ FROM
 			[al_group_1].[AlertKey],
 			[al_group_1].[AlertCode],
 			[al_group_1].[CreationDate]
-	) [al_group_4]
+	) [al_group_3]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[nomin_2].[CargoId],
@@ -143,33 +143,25 @@ FROM
 			FROM
 				(
 					SELECT
-						[al_group_3].[AlertKey],
-						[al_group_3].[AlertCode],
-						[al_group_3].[CreationDate],
-						MAX([al_group_3].[TransactionDate]) as [MAX_1]
+						[al_group_2].[AlertKey],
+						[al_group_2].[AlertCode],
+						[al_group_2].[CreationDate],
+						MAX([au_1].[TransactionDate]) as [MAX_1]
 					FROM
-						(
-							SELECT
-								[al_group_2].[AlertKey],
-								[al_group_2].[AlertCode],
-								[al_group_2].[CreationDate],
-								[au_1].[TransactionDate]
-							FROM
-								[Alert] [al_group_2]
-									LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_2].[AlertKey] AND [au_1].[AlertCode] = [au_1].[AlertCode]
-						) [al_group_3]
+						[Alert] [al_group_2]
+							LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_2].[AlertKey]
 					GROUP BY
-						[al_group_3].[AlertKey],
-						[al_group_3].[AlertCode],
-						[al_group_3].[CreationDate]
+						[al_group_2].[AlertKey],
+						[al_group_2].[AlertCode],
+						[al_group_2].[CreationDate]
 				) [t1]
 					LEFT JOIN [Trade] [trade_2] ON [t1].[AlertKey] = CAST([trade_2].[DealId] AS NVarChar(11))
 					LEFT JOIN [Nomin] [nomin_2] ON [t1].[AlertKey] = CAST([nomin_2].[CargoId] AS NVarChar(11))
 			WHERE
 				([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty) AND
-				[al_group_4].[AlertKey] = [t1].[AlertKey] AND
-				[al_group_4].[AlertCode] = [t1].[AlertCode] AND
-				[al_group_4].[CreationDate] = [t1].[CreationDate]
+				[al_group_3].[AlertKey] = [t1].[AlertKey] AND
+				[al_group_3].[AlertCode] = [t1].[AlertCode] AND
+				[al_group_3].[CreationDate] = [t1].[CreationDate]
 		) [t2]
 
 BeforeExecute
