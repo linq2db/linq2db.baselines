@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 NVarChar(1) -- String
-SET     @Parameter1 = 'e'
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'e'
 
 SELECT
 	[p].[FirstName],

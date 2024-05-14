@@ -7,5 +7,5 @@ SET     @p = 1
 
 SELECT
 	CVar(@value),
-	IIF(1 = 1, CVar(@p), 3)
+	CVar(@p)
 

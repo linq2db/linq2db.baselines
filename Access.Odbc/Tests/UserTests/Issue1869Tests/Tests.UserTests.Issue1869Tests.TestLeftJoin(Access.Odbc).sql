@@ -122,8 +122,8 @@ FROM
 							FROM
 								(([tblFtq] [g_1]
 									INNER JOIN [tblDefect] [a_Defect] ON ([g_1].[Id_Defect] = [a_Defect].[Id]))
-									LEFT JOIN [tblWorkstation] [a_Workstation] ON ([a_Defect].[Id_Workstation] = [a_Workstation].[Id]))
-									LEFT JOIN [tblWorkstationGroup] [a_WorkstationGroup] ON ([a_Workstation].[Id_WorkstationGroup] = [a_WorkstationGroup].[Id])
+									INNER JOIN [tblWorkstation] [a_Workstation] ON ([a_Defect].[Id_Workstation] = [a_Workstation].[Id]))
+									INNER JOIN [tblWorkstationGroup] [a_WorkstationGroup] ON ([a_Workstation].[Id_WorkstationGroup] = [a_WorkstationGroup].[Id])
 							WHERE
 								[g_1].[EntryDate] >= ? AND [g_1].[EntryDate] <= ? AND
 								[a_WorkstationGroup].[Id_Sector] = ?

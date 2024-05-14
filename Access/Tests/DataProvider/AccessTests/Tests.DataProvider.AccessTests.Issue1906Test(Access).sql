@@ -65,25 +65,18 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t2].[ResultId],
-	[t2].[DefinitionId],
+	[t1].[ResultId],
+	[t1].[DefinitionId],
 	[a_Definition].[DefinitionId],
 	[a_Definition].[SetId],
-	[t1].[SetId],
-	[t1].[SectorId],
-	[t1].[Id]
+	[a_Set].[SetId],
+	[a_Set].[SectorId],
+	[a_Sector].[Id]
 FROM
-	([CtqResultModel] [t2]
-		INNER JOIN [CtqDefinitionModel] [a_Definition] ON ([t2].[DefinitionId] = [a_Definition].[DefinitionId]))
-		LEFT JOIN (
-			SELECT
-				[a_Set].[SetId],
-				[a_Set].[SectorId],
-				[a_Sector].[Id]
-			FROM
-				[CtqSetModel] [a_Set]
-					INNER JOIN [FtqSectorModel] [a_Sector] ON ([a_Set].[SectorId] = [a_Sector].[Id])
-		) [t1] ON ([a_Definition].[SetId] = [t1].[SetId])
+	(([CtqResultModel] [t1]
+		INNER JOIN [CtqDefinitionModel] [a_Definition] ON ([t1].[DefinitionId] = [a_Definition].[DefinitionId]))
+		LEFT JOIN [CtqSetModel] [a_Set] ON ([a_Definition].[SetId] = [a_Set].[SetId]))
+		LEFT JOIN [FtqSectorModel] [a_Sector] ON ([a_Set].[SectorId] = [a_Sector].[Id])
 
 BeforeExecute
 -- Access AccessOleDb
