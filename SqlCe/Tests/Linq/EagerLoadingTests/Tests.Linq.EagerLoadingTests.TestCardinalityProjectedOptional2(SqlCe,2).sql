@@ -132,7 +132,6 @@ BeforeExecute
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
-	NULL as [ObjectsC],
 	[a_ObjectD].[Id] as [Id_2],
 	[a_ObjectD].[FK]
 FROM

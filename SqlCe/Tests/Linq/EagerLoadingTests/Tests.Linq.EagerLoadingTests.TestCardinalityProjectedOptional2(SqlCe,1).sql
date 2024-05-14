@@ -155,8 +155,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1],
-	NULL as [ObjectD]
+	[d].[Id] as [Id_1]
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
