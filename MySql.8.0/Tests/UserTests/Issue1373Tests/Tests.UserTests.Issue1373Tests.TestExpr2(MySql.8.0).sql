@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS `Issue1373Tests`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @Field1 VarChar -- String
+SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
 (
@@ -25,7 +27,7 @@ INSERT INTO `Issue1373Tests`
 VALUES
 (
 	1,
-	NULL
+	@Field1
 )
 
 BeforeExecute

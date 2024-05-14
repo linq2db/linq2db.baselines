@@ -16,6 +16,6 @@ FROM
 			`a_ParentID2`.`Value1`
 	) `g_1`
 		INNER JOIN (`Child` `o`
-			LEFT JOIN `Parent` `a_ParentID2_1` ON `o`.`ParentID` = `a_ParentID2_1`.`ParentID`)
+			INNER JOIN `Parent` `a_ParentID2_1` ON `o`.`ParentID` = `a_ParentID2_1`.`ParentID`)
 		ON `a_ParentID2_1`.`ParentID` = `g_1`.`ParentID2` AND (`a_ParentID2_1`.`Value1` = `g_1`.`Value1` OR `a_ParentID2_1`.`Value1` IS NULL AND `g_1`.`Value1` IS NULL)
 
