@@ -26,6 +26,6 @@ FROM
 			COUNT(*) > 20
 	) [g_2]
 		INNER JOIN ([Orders] [o]
-			LEFT JOIN [Customers] [a_Customer_1] ON [o].[CustomerID] = [a_Customer_1].[CustomerID])
+			INNER JOIN [Customers] [a_Customer_1] ON [o].[CustomerID] = [a_Customer_1].[CustomerID])
 		ON [g_2].[CustomerID] = [a_Customer_1].[CustomerID]
 
