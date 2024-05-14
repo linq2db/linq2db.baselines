@@ -545,7 +545,6 @@ BeforeExecute
 SELECT
 	[m_1].[Id],
 	[d].[Id],
-	NULL,
 	[a_ObjectD].[Id],
 	[a_ObjectD].[FK]
 FROM
