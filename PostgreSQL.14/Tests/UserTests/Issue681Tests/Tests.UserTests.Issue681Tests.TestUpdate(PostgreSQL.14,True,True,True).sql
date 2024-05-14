@@ -40,11 +40,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	testdata."public"."Issue681Table"
+	testdata.public."Issue681Table"
 SET
 	"Value" = :Value
 WHERE
-	testdata."public"."Issue681Table"."ID" = :ID
+	testdata.public."Issue681Table"."ID" = :ID
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

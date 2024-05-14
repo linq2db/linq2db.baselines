@@ -286,9 +286,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	Floor(Extract(hour From (t."TransactionDate" + Interval '1 Hour')))::Int
+	Floor(Extract(hour From (t."TransactionDate" + :p * Interval '1 Hour')))::Int
 FROM
 	"Transactions" t
 
