@@ -35,6 +35,10 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
+DECLARE @i Integer -- Int32
+SET     @i = 0
 
 INSERT INTO "Patient" AS t1
 (
@@ -44,15 +48,17 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	3::text
+	(:diagnosis + :i)::text
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Length(t1."Diagnosis")::text
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 DECLARE @i Integer -- Int32
 SET     @i = 1
 
@@ -64,7 +70,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	4::text
+	(:diagnosis + :i)::text
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
@@ -73,6 +79,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 DECLARE @i Integer -- Int32
 SET     @i = 2
 
@@ -84,7 +92,7 @@ INSERT INTO "Patient" AS t1
 VALUES
 (
 	:id,
-	5::text
+	(:diagnosis + :i)::text
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
