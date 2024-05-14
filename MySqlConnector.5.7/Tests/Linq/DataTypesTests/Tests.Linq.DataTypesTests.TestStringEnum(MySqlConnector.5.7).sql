@@ -57,9 +57,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -120,9 +120,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -152,9 +152,9 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`StringEnumTable` `t1`
+	`StringEnumTable`
 
 BeforeExecute
 INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable

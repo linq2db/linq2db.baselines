@@ -32,11 +32,11 @@ VALUES
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -49,9 +49,9 @@ INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue,
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `p`
+DELETE  
 FROM
-	`LinqDataTypes` `p`
+	`LinqDataTypes`
 WHERE
-	`p`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 

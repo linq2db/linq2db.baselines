@@ -50,9 +50,9 @@ LIMIT 2
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t`
+DELETE  
 FROM
-	`Person` `t`
+	`Person`
 WHERE
-	`t`.`PersonID` > 4
+	`Person`.`PersonID` > 4
 

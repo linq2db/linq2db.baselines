@@ -40,18 +40,18 @@ WHERE
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `x`
+DELETE  
 FROM
-	`Child` `x`
+	`Child`
 WHERE
-	`x`.`ChildID` = 10000
+	`Child`.`ChildID` = 10000
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `x`
+DELETE  
 FROM
-	`Parent` `x`
+	`Parent`
 WHERE
-	`x`.`ParentID` = 20000
+	`Parent`.`ParentID` = 20000
 
