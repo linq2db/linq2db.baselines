@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	IIF(COUNT(*) > 0, True, False)
@@ -12,8 +12,8 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
 	IIF(COUNT(*) > 0, True, False)

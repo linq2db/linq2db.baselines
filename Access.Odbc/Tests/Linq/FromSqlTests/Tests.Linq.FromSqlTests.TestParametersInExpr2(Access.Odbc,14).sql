@@ -374,10 +374,10 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @startId Int -- Int32
-SET     @startId = 5
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = 14
+DECLARE @p Int -- Int32
+SET     @p = 5
+DECLARE @p Int -- Int32
+SET     @p = 14
 
 SELECT
 	[s].[value],

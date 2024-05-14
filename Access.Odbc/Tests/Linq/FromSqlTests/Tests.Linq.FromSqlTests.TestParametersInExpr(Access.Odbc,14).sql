@@ -374,8 +374,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @startId Int -- Int32
-SET     @startId = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 DECLARE @endId Int -- Int32
 SET     @endId = 14
 
