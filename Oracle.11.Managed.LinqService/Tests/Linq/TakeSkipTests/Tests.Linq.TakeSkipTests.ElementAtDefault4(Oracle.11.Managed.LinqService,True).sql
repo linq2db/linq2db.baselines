@@ -23,7 +23,7 @@ FROM
 					p."ParentID" > 1
 			) t1
 		WHERE
-			ROWNUM <= 300001
+			ROWNUM <= (:n + 1)
 	) t2
 WHERE
 	t2.RN > :n

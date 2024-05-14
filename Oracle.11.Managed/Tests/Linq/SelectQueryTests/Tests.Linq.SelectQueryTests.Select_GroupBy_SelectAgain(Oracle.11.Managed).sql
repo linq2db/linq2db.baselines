@@ -2,6 +2,8 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	t2."c1",
@@ -38,7 +40,7 @@ FROM
 					summary."Count_1" > 5
 			) t1
 		WHERE
-			ROWNUM <= 2
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
