@@ -29,7 +29,7 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 DELETE FROM
-	"public"."Issue681Table" t1
+	public."Issue681Table" t1
 WHERE
 	t1."ID" = :ID
 

@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	Floor(Extract(hour From (t."DateTimeValue" + Interval '1 Hour')))::Int
+	Floor(Extract(hour From (t."DateTimeValue" + :p * Interval '1 Hour')))::Int
 FROM
 	"LinqDataTypes" t
 
