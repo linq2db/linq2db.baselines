@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] <> [i].[One] OR [i].[Two] <> [i].[One] * 2 OR [i].[Three] <> [i].[Four] - 1)
+	([i].[Two] <> [i].[One] * 2 OR [i].[Three] <> [i].[Four] - 1)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] <> [i].[One] OR [i].[Two] <> [i].[Two] OR [i].[Four] <> [i].[Three])
+	[i].[Four] <> [i].[Three]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -60,7 +60,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] <> [i].[One] OR [i].[Nil] <> [i].[Two] OR [i].[Three] <> [i].[Three])
+	[i].[Nil] <> [i].[Two]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
