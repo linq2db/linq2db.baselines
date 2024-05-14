@@ -10,5 +10,5 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" = 1 AND Char_Length('123' || "p"."FirstName" || '012345') - Position('321', Reverse(Substring(('123' || "p"."FirstName" || '012345') from 6 for (Char_Length('123' || "p"."FirstName" || '012345') - 5)))) = 10 AND
-	(Position(@p, '123' || "p"."FirstName" || '012345', 6) <> 0 OR Position(@p, '123' || "p"."FirstName" || '012345', 6) IS NULL)
+	Position(@p, '123' || "p"."FirstName" || '012345', 6) <> 0
 

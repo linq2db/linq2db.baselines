@@ -267,7 +267,7 @@ END
 BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
-SET     @param = 300
+SET     @param = 200
 
 INSERT INTO "DestinationTable"
 (
@@ -276,7 +276,7 @@ INSERT INTO "DestinationTable"
 	"ValueStr"
 )
 SELECT
-	"s"."Id" + CAST(@param AS Int),
+	"s"."Id" + 100 + CAST(@param AS Int),
 	"s"."Value" + 100,
 	"s"."ValueStr" || CAST(100 AS VarChar(11) CHARACTER SET UNICODE_FSS)
 FROM
