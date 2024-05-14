@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Parent` `c_1`
+	`Parent`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -22,18 +22,18 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	(`p`.`ParentID` = 1000 AND `p`.`Value1` IS NULL OR `p`.`ParentID` = 1001 AND `p`.`Value1` IS NULL)
+	(`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR `Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Parent` `c_1`
+	`Parent`
 WHERE
-	`c_1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 

@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	(CAST(@param AS SIGNED) = `t1`.`SmallIntValue` OR CAST(@param AS SIGNED) IS NULL AND `t1`.`SmallIntValue` IS NULL)
+	CAST(@param AS SIGNED) = `t1`.`SmallIntValue`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

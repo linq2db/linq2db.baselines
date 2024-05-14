@@ -3,9 +3,9 @@ BeginTransaction
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`InheritanceParent` `t1`
+	`InheritanceParent`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

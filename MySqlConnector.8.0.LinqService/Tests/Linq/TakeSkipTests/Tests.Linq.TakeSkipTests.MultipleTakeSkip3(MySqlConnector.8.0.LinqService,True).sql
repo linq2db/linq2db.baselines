@@ -139,6 +139,10 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @skip Int32
+SET     @skip = 3
+DECLARE @take Int32
+SET     @take = 1
 
 SELECT
 	`t1`.`Value`
@@ -146,7 +150,7 @@ FROM
 	`TakeSkipClass` `t1`
 ORDER BY
 	`t1`.`Value`
-LIMIT 3, 1
+LIMIT @skip, @take
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
