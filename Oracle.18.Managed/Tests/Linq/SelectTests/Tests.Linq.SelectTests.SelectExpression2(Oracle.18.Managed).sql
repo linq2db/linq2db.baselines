@@ -42,10 +42,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	CASE
-		WHEN 1 = 1 THEN 1
-		ELSE 0
-	END as "c1"
+	1 as "c1"
 FROM
 	"SelectExpressionTable" t1
 FETCH NEXT :take ROWS ONLY
