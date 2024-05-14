@@ -31,7 +31,7 @@ SELECT
 FROM
 	DescendantEntity e
 WHERE
-	e.Id + 100 = 101
+	e.Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -41,7 +41,7 @@ SELECT
 FROM
 	DescendantEntity e
 WHERE
-	e.Id + 1000 = 1001
+	e.Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
