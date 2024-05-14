@@ -200,21 +200,21 @@ BeforeExecute
 SELECT
 	x.Id,
 	CASE
-		WHEN (x.StringProp = '1' OR x.StringProp IS NULL) THEN 't'
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'
 		ELSE 'f'
-	END::BOOLEAN,
+	END,
 	x.StringProp,
 	x.StringProp || '2'
 FROM
 	ConditionalData x
 WHERE
 	CASE
-		WHEN (x.StringProp = '1' OR x.StringProp IS NULL) THEN '2'
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
 		WHEN x.StringProp = '2' THEN x.StringProp
 		ELSE x.StringProp || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN (x.StringProp = '1' OR x.StringProp IS NULL) THEN NULL
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
 		WHEN x.StringProp = '2' THEN 1
 		ELSE 2
 	END = 2

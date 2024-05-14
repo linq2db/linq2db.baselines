@@ -17,6 +17,6 @@ FROM
 	) sub
 		LEFT JOIN Parent a_Parent ON sub.ParentID = a_Parent.ParentID
 WHERE
-	sub.ChildID + 1 > 0 AND sub.ParentID_1 = a_Parent.ParentID AND
+	sub.ChildID > -1 AND sub.ParentID_1 = a_Parent.ParentID AND
 	(sub.Value1 = a_Parent.Value1 OR sub.Value1 IS NULL AND a_Parent.Value1 IS NULL)
 

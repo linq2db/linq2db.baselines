@@ -10,13 +10,10 @@ SELECT
 				Child param
 					LEFT JOIN Parent a_Parent ON param.ParentID = a_Parent.ParentID
 			WHERE
-				a_Parent.ParentID = 11 AND
-				a_Parent.Value1 = 11 AND
-				a_Parent.ParentID = 11 AND
-				a_Parent.Value1 = 11
+				a_Parent.ParentID = 11 AND a_Parent.Value1 = 11
 		)
 			THEN 't'
 		ELSE 'f'
-	END::BOOLEAN
+	END
 FROM table(set{1})
 
