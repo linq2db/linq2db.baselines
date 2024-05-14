@@ -10,5 +10,5 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = 1 AND 1 = CharIndex('321', Reverse(Substring('123' + [p].[FirstName] + '0123451234', 6, 6))) AND
-	(CharIndex(@p, Substring(Left('123' + [p].[FirstName] + '0123451234', 11), 6, Len(Left('123' + [p].[FirstName] + '0123451234', 11)))) + 5 <> 0 OR CharIndex(@p, Substring(Left('123' + [p].[FirstName] + '0123451234', 11), 6, Len(Left('123' + [p].[FirstName] + '0123451234', 11)))) + 5 IS NULL)
+	CharIndex(@p, Substring(Left('123' + [p].[FirstName] + '0123451234', 11), 6, Len(Left('123' + [p].[FirstName] + '0123451234', 11)))) + 5 <> 0
 
