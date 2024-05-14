@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS `Issue1373Tests`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Field1 VarChar -- String
+SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
 (
@@ -25,7 +27,7 @@ INSERT INTO `Issue1373Tests`
 VALUES
 (
 	1,
-	NULL
+	@Field1
 )
 
 BeforeExecute
