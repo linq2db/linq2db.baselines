@@ -9,5 +9,5 @@ FROM
 		LEFT JOIN "Parent" "arg2" ON "Item1"."ParentID" = "arg2"."ParentID"
 WHERE
 	"arg2"."Value1" = 6
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

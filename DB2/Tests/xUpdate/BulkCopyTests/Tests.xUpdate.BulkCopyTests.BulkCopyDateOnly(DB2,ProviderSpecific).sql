@@ -29,7 +29,7 @@ SELECT
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -90,7 +90,7 @@ GROUP BY
 	"g_1"."User_1",
 	"u"."UserGroups",
 	"p"."ProcessName"
-FETCH FIRST 10 ROWS ONLY
+FETCH NEXT 10 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

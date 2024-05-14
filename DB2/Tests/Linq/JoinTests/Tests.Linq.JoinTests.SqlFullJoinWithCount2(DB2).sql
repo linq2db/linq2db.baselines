@@ -24,5 +24,5 @@ FROM
 			) "left_1"
 				FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "left_1"."ParentID"
 	) "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

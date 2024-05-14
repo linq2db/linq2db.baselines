@@ -82,7 +82,7 @@ FROM
 	"Issue1363" "t1"
 WHERE
 	"t1"."required_field" = @id2
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -18,7 +18,7 @@ FROM
 				FROM
 					"Child" "t1"
 						LEFT JOIN "Parent" "a_Parent" ON "t1"."ParentID" = "a_Parent"."ParentID"
-				FETCH FIRST 1 ROWS ONLY
+				FETCH NEXT 1 ROWS ONLY
 			) "t2"
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Child" "t1"
 		LEFT JOIN "Parent" "a_Parent" ON "t1"."ParentID" = "a_Parent"."ParentID"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 DisposeTransaction

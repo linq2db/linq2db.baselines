@@ -9,5 +9,5 @@ FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ChildID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
