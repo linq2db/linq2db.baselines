@@ -192,7 +192,7 @@ SELECT
 					MAX("au_1"."TransactionDate") as MAX_1
 				FROM
 					"Alert" "al_group_2"
-						LEFT JOIN "AuditAlert" "au_1" ON "au_1"."AlertKey" = "al_group_2"."AlertKey" AND "au_1"."AlertCode" = "au_1"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_1" ON "au_1"."AlertKey" = "al_group_2"."AlertKey"
 				GROUP BY
 					"al_group_2"."AlertKey",
 					"al_group_2"."AlertCode",
@@ -217,7 +217,7 @@ SELECT
 					"al_group_3"."CreationDate"
 				FROM
 					"Alert" "al_group_3"
-						LEFT JOIN "AuditAlert" "au_2" ON "au_2"."AlertKey" = "al_group_3"."AlertKey" AND "au_2"."AlertCode" = "au_2"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_2" ON "au_2"."AlertKey" = "al_group_3"."AlertKey"
 				GROUP BY
 					"al_group_3"."AlertKey",
 					"al_group_3"."AlertCode",
@@ -242,7 +242,7 @@ SELECT
 					"al_group_4"."CreationDate"
 				FROM
 					"Alert" "al_group_4"
-						LEFT JOIN "AuditAlert" "au_3" ON "au_3"."AlertKey" = "al_group_4"."AlertKey" AND "au_3"."AlertCode" = "au_3"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_3" ON "au_3"."AlertKey" = "al_group_4"."AlertKey"
 				GROUP BY
 					"al_group_4"."AlertKey",
 					"al_group_4"."AlertCode",
@@ -267,7 +267,7 @@ SELECT
 					"al_group_5"."CreationDate"
 				FROM
 					"Alert" "al_group_5"
-						LEFT JOIN "AuditAlert" "au_4" ON "au_4"."AlertKey" = "al_group_5"."AlertKey" AND "au_4"."AlertCode" = "au_4"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_4" ON "au_4"."AlertKey" = "al_group_5"."AlertKey"
 				GROUP BY
 					"al_group_5"."AlertKey",
 					"al_group_5"."AlertCode",
@@ -292,7 +292,7 @@ SELECT
 					"al_group_6"."CreationDate"
 				FROM
 					"Alert" "al_group_6"
-						LEFT JOIN "AuditAlert" "au_5" ON "au_5"."AlertKey" = "al_group_6"."AlertKey" AND "au_5"."AlertCode" = "au_5"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_5" ON "au_5"."AlertKey" = "al_group_6"."AlertKey"
 				GROUP BY
 					"al_group_6"."AlertKey",
 					"al_group_6"."AlertCode",
@@ -317,7 +317,7 @@ SELECT
 					"al_group_7"."CreationDate"
 				FROM
 					"Alert" "al_group_7"
-						LEFT JOIN "AuditAlert" "au_6" ON "au_6"."AlertKey" = "al_group_7"."AlertKey" AND "au_6"."AlertCode" = "au_6"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_6" ON "au_6"."AlertKey" = "al_group_7"."AlertKey"
 				GROUP BY
 					"al_group_7"."AlertKey",
 					"al_group_7"."AlertCode",
@@ -342,7 +342,7 @@ SELECT
 					"al_group_8"."CreationDate"
 				FROM
 					"Alert" "al_group_8"
-						LEFT JOIN "AuditAlert" "au_7" ON "au_7"."AlertKey" = "al_group_8"."AlertKey" AND "au_7"."AlertCode" = "au_7"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_7" ON "au_7"."AlertKey" = "al_group_8"."AlertKey"
 				GROUP BY
 					"al_group_8"."AlertKey",
 					"al_group_8"."AlertCode",
@@ -368,7 +368,7 @@ SELECT
 					MAX("au_8"."TransactionDate") as MAX_1
 				FROM
 					"Alert" "al_group_9"
-						LEFT JOIN "AuditAlert" "au_8" ON "au_8"."AlertKey" = "al_group_9"."AlertKey" AND "au_8"."AlertCode" = "au_8"."AlertCode"
+						LEFT JOIN "AuditAlert" "au_8" ON "au_8"."AlertKey" = "al_group_9"."AlertKey"
 				GROUP BY
 					"al_group_9"."AlertKey",
 					"al_group_9"."AlertCode",
@@ -390,7 +390,7 @@ FROM
 			"al_group"."CreationDate"
 		FROM
 			"Alert" "al_group"
-				LEFT JOIN "AuditAlert" "au" ON "au"."AlertKey" = "al_group"."AlertKey" AND "au"."AlertCode" = "au"."AlertCode"
+				LEFT JOIN "AuditAlert" "au" ON "au"."AlertKey" = "al_group"."AlertKey"
 		GROUP BY
 			"al_group"."AlertKey",
 			"al_group"."AlertCode",
