@@ -50,9 +50,9 @@ LIMIT 2
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t`
+DELETE  
 FROM
-	`Person` `t`
+	`Person`
 WHERE
-	`t`.`PersonID` > 4
+	`Person`.`PersonID` > 4
 

@@ -58,9 +58,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -121,9 +121,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -153,9 +153,9 @@ ORDER BY
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GuidTable` `t1`
+	`GuidTable`
 
 BeforeExecute
 INSERT BULK `GuidTable`(Id, Column, ColumnNullable

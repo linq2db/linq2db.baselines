@@ -35,9 +35,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`Child` `c_1`
+	`Child`
 WHERE
-	`c_1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 
