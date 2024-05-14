@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS "DestinationTable"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @param Integer -- Int32
-SET     @param = 200
+SET     @param = 100
 
 INSERT INTO "DestinationTable"
 (
@@ -260,7 +260,7 @@ INSERT INTO "DestinationTable"
 	"ValueStr"
 )
 SELECT
-	s."Id" + :param,
+	s."Id" + 100 + :param,
 	s."Value" + 100,
 	s."ValueStr" || 100
 FROM

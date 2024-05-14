@@ -35,6 +35,8 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @i Integer -- Int32
+SET     @i = 0
 
 INSERT INTO "Patient" AS t1
 (
@@ -47,7 +49,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = Length(t1."Diagnosis")::text
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
