@@ -140,7 +140,7 @@ FROM
 					[al_group].[CreationDate]
 				FROM
 					[Alert] [al_group]
-						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey] AND [au].[AlertCode] = [au].[AlertCode]
+						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
 				GROUP BY
 					[al_group].[AlertKey],
 					[al_group].[AlertCode],
@@ -159,7 +159,7 @@ FROM
 				Coalesce(MAX([au_1].[TransactionDate]), [al_group_1].[CreationDate]) as [LastUpdate]
 			FROM
 				[Alert] [al_group_1]
-					LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_1].[AlertKey] AND [au_1].[AlertCode] = [au_1].[AlertCode]
+					LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_1].[AlertKey]
 			GROUP BY
 				[al_group_1].[AlertKey],
 				[al_group_1].[AlertCode],
@@ -191,7 +191,7 @@ FROM
 			[al_group].[CreationDate]
 		FROM
 			[Alert] [al_group]
-				LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey] AND [au].[AlertCode] = [au].[AlertCode]
+				LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
 		GROUP BY
 			[al_group].[AlertKey],
 			[al_group].[AlertCode],
