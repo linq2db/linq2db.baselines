@@ -156,7 +156,7 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= 2
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 1)
 
 BeforeExecute
 -- SqlServer.2005
