@@ -42,7 +42,7 @@ CREATE TABLE "Issue681Table2"
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE "public"."Issue681Table2"
+DROP TABLE public."Issue681Table2"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
