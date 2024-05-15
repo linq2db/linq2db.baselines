@@ -8,9 +8,10 @@ SELECT
 	[i].[MiddleName],
 	[i].[Gender],
 	[i].[LastName] + ', ' + [i].[FirstName],
+	[i].[LastName] + ', ' + [i].[FirstName],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Doctor] [d]
 		WHERE

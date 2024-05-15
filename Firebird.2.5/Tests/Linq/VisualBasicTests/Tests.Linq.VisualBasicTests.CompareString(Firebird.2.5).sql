@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = 'John' AND "p"."FirstName" <= 'John'
+	"p"."FirstName" = 'John'
 
 BeforeExecute
 -- Firebird.2.5 Firebird

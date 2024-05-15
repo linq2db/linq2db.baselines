@@ -17,13 +17,10 @@ WHERE
 					"param"."Value1" as "Value_1"
 				FROM
 					"Parent" "param"
-				FETCH FIRST 100 ROWS ONLY
+				FETCH NEXT 100 ROWS ONLY
 			) "param_1"
 		WHERE
-			"param_1"."ParentID" = "c_1"."ParentID" AND
-			"param_1"."Value_1" = "c_1"."ParentID" AND
-			"param_1"."ParentID" = "c_1"."ParentID" AND
-			"param_1"."Value_1" = "c_1"."ParentID"
+			"param_1"."ParentID" = "c_1"."ParentID" AND "param_1"."Value_1" = "c_1"."ParentID"
 	)
 
 BeforeExecute

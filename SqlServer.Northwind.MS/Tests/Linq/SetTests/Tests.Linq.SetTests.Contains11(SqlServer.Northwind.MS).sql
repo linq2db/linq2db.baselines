@@ -2,28 +2,21 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[g_3].[LastName],
-	[g_3].[COUNT_1]
+	[g_2].[LastName],
+	[g_2].[COUNT_1]
 FROM
 	(
 		SELECT
-			[g_2].[LastName],
-			COUNT(IIF([g_2].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [COUNT_1],
-			[g_2].[EmployeeID]
+			[a_Employee].[LastName],
+			COUNT(IIF([a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [COUNT_1],
+			[a_Employee].[EmployeeID]
 		FROM
-			(
-				SELECT
-					[a_Employee].[EmployeeID],
-					[a_Employee].[LastName],
-					[a_Employee].[FirstName]
-				FROM
-					[EmployeeTerritories] [g_1]
-						LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]
-			) [g_2]
+			[EmployeeTerritories] [g_1]
+				LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]
 		GROUP BY
-			[g_2].[EmployeeID],
-			[g_2].[LastName]
-	) [g_3]
+			[a_Employee].[EmployeeID],
+			[a_Employee].[LastName]
+	) [g_2]
 WHERE
 	(
 		SELECT
@@ -31,6 +24,6 @@ WHERE
 		FROM
 			[EmployeeTerritories] [a_EmployeeTerritories]
 		WHERE
-			[g_3].[EmployeeID] IS NOT NULL AND [g_3].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
+			[g_2].[EmployeeID] IS NOT NULL AND [g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
 	) > 1
 
