@@ -30,7 +30,7 @@ SELECT
 	t1."ID",
 	t1."Value"
 FROM
-	"public"."Issue681Table" t1
+	public."Issue681Table" t1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
