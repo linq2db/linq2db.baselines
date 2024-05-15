@@ -51,7 +51,7 @@ CREATE TABLE "Issue681Table2"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE testdata."public"."Issue681Table2"
+DROP TABLE testdata.public."Issue681Table2"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

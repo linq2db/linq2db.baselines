@@ -28,7 +28,7 @@ SET     @UnitNullable = NULL
 DECLARE @Amount Integer -- Int32
 SET     @Amount = 1
 
-INSERT INTO "public".schedule
+INSERT INTO public.schedule
 (
 	unit,
 	unit_nullable,
@@ -50,7 +50,7 @@ SELECT
 	t1.unit_nullable,
 	t1.amount
 FROM
-	"public".schedule t1
+	public.schedule t1
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -63,7 +63,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit = :unit
 
@@ -78,7 +78,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = :unit
 
@@ -93,7 +93,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = :unitNullable
 
@@ -106,7 +106,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = 'day'
 
@@ -119,7 +119,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable IS NULL
 
@@ -132,5 +132,5 @@ SELECT
 	t1.unit_nullable,
 	t1.amount
 FROM
-	"public".schedule t1
+	public.schedule t1
 
