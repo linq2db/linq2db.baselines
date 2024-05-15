@@ -63,7 +63,7 @@ FROM
 			[test_temp] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= 3
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
 
 BeforeExecute
 -- SqlServer.2005
@@ -112,7 +112,7 @@ FROM
 			[test_temp] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= 3
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
 
 BeforeExecute
 -- SqlServer.2005

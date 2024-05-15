@@ -225,52 +225,15 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 UPDATE
-	"TableWithData"
+	"TableWithData" "i"
 SET
 	"Value" = 20,
-	"ValueStr" = (
-		SELECT
-			"t2"."ValueStr"
-		FROM
-			(
-				SELECT
-					"i_1"."ValueStr",
-					"i_1"."Id",
-					"i_1"."Value" as "Value_1"
-				FROM
-					"TableWithData" "i_1"
-				WHERE
-					"i_1"."Id" = 7
-				ORDER BY
-					"i_1"."Id"
-				FETCH NEXT @take ROWS ONLY
-			) "t2"
-		WHERE
-			"TableWithData"."Id" = "t2"."Id" AND "TableWithData"."Value" = "t2"."Value_1" AND
-			("TableWithData"."ValueStr" = "t2"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t2"."ValueStr" IS NULL)
-	)
+	"ValueStr" = "i"."ValueStr"
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					"i"."ValueStr",
-					"i"."Id",
-					"i"."Value" as "Value_1"
-				FROM
-					"TableWithData" "i"
-				WHERE
-					"i"."Id" = 7
-				ORDER BY
-					"i"."Id"
-				FETCH NEXT @take ROWS ONLY
-			) "t1"
-		WHERE
-			"TableWithData"."Id" = "t1"."Id" AND "TableWithData"."Value" = "t1"."Value_1" AND
-			("TableWithData"."ValueStr" = "t1"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t1"."ValueStr" IS NULL)
-	)
+	"i"."Id" = 7
+ORDER BY
+	"i"."Id"
+ROWS @take
 RETURNING
 	OLD."Id",
 	OLD."Value",
