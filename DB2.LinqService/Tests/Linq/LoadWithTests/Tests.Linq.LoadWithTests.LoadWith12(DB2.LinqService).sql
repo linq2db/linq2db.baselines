@@ -23,7 +23,7 @@ FROM
 							"Parent" "p"
 						WHERE
 							"p"."ParentID" < 2
-						FETCH FIRST 1 ROWS ONLY
+						FETCH NEXT 1 ROWS ONLY
 					) "t1"
 			) "t2"
 				INNER JOIN "Child" "d" ON "t2"."ParentID" = "d"."ParentID"
@@ -48,7 +48,7 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" < 2
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
@@ -63,5 +63,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" < 2
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

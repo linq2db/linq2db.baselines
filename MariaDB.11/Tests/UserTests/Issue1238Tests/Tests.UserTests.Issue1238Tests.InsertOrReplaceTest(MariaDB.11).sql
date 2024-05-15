@@ -3,9 +3,9 @@ BeginTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`InheritanceParent` `t1`
+	`InheritanceParent`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
