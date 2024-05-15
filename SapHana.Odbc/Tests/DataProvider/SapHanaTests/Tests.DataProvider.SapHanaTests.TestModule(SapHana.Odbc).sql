@@ -48,8 +48,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"r"."O"
@@ -59,8 +59,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"r"."O"
@@ -70,8 +70,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"r"."O"
