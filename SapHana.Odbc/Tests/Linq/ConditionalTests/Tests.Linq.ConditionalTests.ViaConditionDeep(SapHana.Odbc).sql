@@ -196,14 +196,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = NULL
+DECLARE @p  -- Int32
+SET     @p = NULL
 
 SELECT
 	"x"."Id",
 	CASE
-		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN 1
+		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN 1
 		ELSE 0
 	END,
 	"x"."StringProp",
@@ -212,14 +211,12 @@ FROM
 	"ConditionalData" "x"
 WHERE
 	CASE
-		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN '2'
+		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN '2'
 		WHEN "x"."StringProp" = '2' THEN "x"."StringProp"
 		ELSE "x"."StringProp" || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN ("x"."StringProp" = '1' OR "x"."StringProp" IS NULL)
-			THEN ?
+		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN ?
 		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 2
 	END = 2

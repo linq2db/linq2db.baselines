@@ -7,64 +7,46 @@ SET     @name = 'test'
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
 DECLARE @id  -- Int32
-SET     @id = 2
+SET     @id = 1
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @name NVarChar(4) -- String
+SET     @name = 'test'
+DECLARE @name NVarChar(4) -- String
+SET     @name = 'test'
+DECLARE @id  -- Int32
+SET     @id = 1
+
+SELECT
+	"m_1"."PersonID",
+	"m_1"."FirstName",
+	"m_1"."PersonID",
+	"m_1"."LastName",
+	"m_1"."MiddleName",
+	"m_1"."Gender"
+FROM
+	"Person" "m_1"
+WHERE
+	("m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?) AND
+	("m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @name NVarChar(4) -- String
+SET     @name = 'test'
+DECLARE @name NVarChar(4) -- String
+SET     @name = 'test'
+DECLARE @id  -- Int32
+SET     @id = 1
 
 SELECT
 	"x"."PersonID"
 FROM
 	"Person" "x"
 WHERE
-	("x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" = ?)
+	("x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" - 1 = ?)
 GROUP BY
 	"x"."PersonID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1
-DECLARE @LastName NVarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @LastName NVarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 2
-DECLARE @ID  -- Int32
-SET     @ID = 1
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	("x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" = ?) AND
-	"x"."PersonID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1
-DECLARE @LastName NVarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @LastName NVarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 2
-DECLARE @ID  -- Int32
-SET     @ID = 2
-
-SELECT
-	"x"."FirstName",
-	"x"."PersonID",
-	"x"."LastName",
-	"x"."MiddleName",
-	"x"."Gender"
-FROM
-	"Person" "x"
-WHERE
-	("x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" = ?) AND
-	"x"."PersonID" = ?
 

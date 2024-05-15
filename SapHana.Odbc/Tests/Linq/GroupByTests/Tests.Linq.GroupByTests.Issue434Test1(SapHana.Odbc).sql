@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1 NVarChar(6) -- String
-SET     @Parameter1 = '%test%'
+DECLARE @p NVarChar(6) -- String
+SET     @p = '%test%'
 
 SELECT
 	"m_1"."PersonID",
@@ -19,8 +19,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1 NVarChar(6) -- String
-SET     @Parameter1 = '%test%'
+DECLARE @p NVarChar(6) -- String
+SET     @p = '%test%'
 
 SELECT
 	"p"."FirstName",
