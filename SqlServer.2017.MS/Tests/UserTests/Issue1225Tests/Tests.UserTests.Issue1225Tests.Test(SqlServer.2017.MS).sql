@@ -86,22 +86,14 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[it_1].[Name],
-	[it_1].[Value_1],
-	SUM(IIF([it_1].[Id] IS NULL, NULL, [it_1].[Id]))
+	N'Id',
+	[it].[Id],
+	SUM([a_ActualStage].[Id])
 FROM
-	(
-		SELECT
-			N'Id' as [Name],
-			[it].[Id] as [Value_1],
-			[a_ActualStage].[Id]
-		FROM
-			[Task] [it]
-				LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-	) [it_1]
+	[Task] [it]
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 GROUP BY
-	[it_1].[Name],
-	[it_1].[Value_1]
+	[it].[Id]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

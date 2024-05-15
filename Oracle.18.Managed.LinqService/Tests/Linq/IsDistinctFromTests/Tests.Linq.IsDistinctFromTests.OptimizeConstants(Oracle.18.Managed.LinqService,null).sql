@@ -3,24 +3,14 @@
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM SYS.DUAL
-	) s
+FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
-FROM
-	(
-		SELECT
-			1 as ID
-		FROM SYS.DUAL
-	) s
+FROM SYS.DUAL
 WHERE
 	1 = 0
 

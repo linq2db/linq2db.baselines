@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestMerge1` `t1`
+	`TestMerge1`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -112,9 +112,9 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestMerge2` `t1`
+	`TestMerge2`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

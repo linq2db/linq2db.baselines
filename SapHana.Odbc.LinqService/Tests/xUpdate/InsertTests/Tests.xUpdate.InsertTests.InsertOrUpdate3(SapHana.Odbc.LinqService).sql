@@ -79,13 +79,15 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @i  -- Int32
+SET     @i = 0
 DECLARE @id  -- Int32
 SET     @id = 5
 
 UPDATE
 	"Patient" "t1"
 SET
-	"Diagnosis" = CAST(Length("t1"."Diagnosis") AS NVarChar(11))
+	"Diagnosis" = CAST(Length("t1"."Diagnosis") + ? AS NVarChar(11))
 WHERE
 	"t1"."PersonID" = ?
 

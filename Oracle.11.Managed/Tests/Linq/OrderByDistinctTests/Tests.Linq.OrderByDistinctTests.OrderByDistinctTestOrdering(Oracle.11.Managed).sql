@@ -45,6 +45,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -61,7 +63,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -70,6 +72,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -88,7 +92,7 @@ FROM
 					x."OrderData1"
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -97,6 +101,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -113,7 +119,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -122,6 +128,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -140,7 +148,7 @@ FROM
 					x."OrderData1" DESC
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -149,6 +157,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -165,7 +175,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -174,6 +184,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -193,7 +205,7 @@ FROM
 					x."OrderData2"
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -202,6 +214,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -218,7 +232,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -227,6 +241,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -246,7 +262,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -255,6 +271,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -271,7 +289,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -280,6 +298,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -299,7 +319,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -308,6 +328,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -324,7 +346,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
@@ -333,6 +355,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -352,7 +376,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= 3
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip

@@ -266,9 +266,9 @@ FROM
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`char20DataType` = 'issue792'
+	`AllTypes`.`char20DataType` = 'issue792'
 

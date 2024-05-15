@@ -165,7 +165,7 @@ FROM
 					t1."Id"
 			) t2
 		WHERE
-			ROWNUM <= 2
+			ROWNUM <= (:skip + 1)
 	) t3
 WHERE
 	t3.RN > :skip

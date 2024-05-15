@@ -9,5 +9,5 @@ SELECT
 FROM
 	"Child" "t1"
 		INNER JOIN "Parent" "a_Parent" ON "t1"."ParentID" = "a_Parent"."ParentID"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

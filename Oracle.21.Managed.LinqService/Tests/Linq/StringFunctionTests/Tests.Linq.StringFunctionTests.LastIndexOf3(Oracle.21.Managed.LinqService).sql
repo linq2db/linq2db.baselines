@@ -10,5 +10,5 @@ FROM
 	"Person" p
 WHERE
 	p."PersonID" = 1 AND 1 = InStr(Reverse(Substr('123' || p."FirstName" || '0123451234', 6, 6)), '321') AND
-	(InStr(Substr('123' || p."FirstName" || '0123451234', 1, 11), :p, 6) <> 0 OR InStr(Substr('123' || p."FirstName" || '0123451234', 1, 11), :p, 6) IS NULL)
+	InStr(Substr('123' || p."FirstName" || '0123451234', 1, 11), :p, 6) <> 0
 

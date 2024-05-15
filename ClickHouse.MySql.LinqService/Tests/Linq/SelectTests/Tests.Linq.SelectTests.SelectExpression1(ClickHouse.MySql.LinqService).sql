@@ -31,10 +31,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN 1 = 1 THEN true
-		ELSE false
-	END
+	true
 FROM
 	SelectExpressionTable t1
 LIMIT 1

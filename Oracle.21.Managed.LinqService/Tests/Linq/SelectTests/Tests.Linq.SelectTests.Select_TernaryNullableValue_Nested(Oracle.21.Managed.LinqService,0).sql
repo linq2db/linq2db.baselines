@@ -7,9 +7,6 @@ SET     @p = 0
 
 SELECT
 	:value,
-	CASE
-		WHEN 1 = 1 THEN :p
-		ELSE 2
-	END
+	:p
 FROM SYS.DUAL
 

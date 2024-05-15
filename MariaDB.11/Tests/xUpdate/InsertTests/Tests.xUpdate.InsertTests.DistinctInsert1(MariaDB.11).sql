@@ -3,11 +3,11 @@ BeginTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`LinqDataTypes` `c_1`
+	`LinqDataTypes`
 WHERE
-	`c_1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -33,9 +33,9 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_1`
+DELETE  
 FROM
-	`LinqDataTypes` `c_1`
+	`LinqDataTypes`
 WHERE
-	`c_1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 

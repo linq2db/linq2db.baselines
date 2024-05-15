@@ -42,17 +42,13 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @part1 SmallInt -- Int16
-SET     @part1 = 4
-DECLARE @part2 Integer -- Int32
-SET     @part2 = 4
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + CAST(@part1 AS SmallInt)) - CAST(@part2 AS Int), "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
+	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
 
 BeforeExecute
 -- Firebird.2.5 Firebird

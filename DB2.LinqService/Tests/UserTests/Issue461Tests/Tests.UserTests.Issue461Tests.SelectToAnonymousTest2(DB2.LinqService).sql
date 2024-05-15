@@ -12,6 +12,6 @@ FROM
 				"l"."ParentID" as "ParentId"
 			FROM
 				"Child" "l"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "t1" ON 1=1
 

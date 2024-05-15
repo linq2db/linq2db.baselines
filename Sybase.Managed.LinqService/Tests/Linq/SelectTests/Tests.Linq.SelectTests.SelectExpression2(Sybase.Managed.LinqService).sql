@@ -35,10 +35,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	CASE
-		WHEN 1 = 1 THEN 1
-		ELSE 0
-	END
+	1
 FROM
 	[SelectExpressionTable] [t1]
 

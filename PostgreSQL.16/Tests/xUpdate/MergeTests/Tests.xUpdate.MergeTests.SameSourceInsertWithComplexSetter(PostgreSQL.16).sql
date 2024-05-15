@@ -220,6 +220,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @name Integer -- Int32
+SET     @name = 4
+DECLARE @idx Integer -- Int32
+SET     @idx = 6
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -249,7 +253,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	10,
+	:name + :idx,
 	"Source"."source_Field2",
 	999,
 	888

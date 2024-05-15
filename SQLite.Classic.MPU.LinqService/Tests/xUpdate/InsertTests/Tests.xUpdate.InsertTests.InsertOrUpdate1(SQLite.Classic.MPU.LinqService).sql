@@ -38,6 +38,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
+DECLARE @i  -- Int32
+SET     @i = 0
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -50,7 +52,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(Length([t1].[Diagnosis]) AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

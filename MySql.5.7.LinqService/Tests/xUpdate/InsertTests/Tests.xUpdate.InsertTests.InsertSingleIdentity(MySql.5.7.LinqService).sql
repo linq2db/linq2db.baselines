@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -18,7 +18,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 

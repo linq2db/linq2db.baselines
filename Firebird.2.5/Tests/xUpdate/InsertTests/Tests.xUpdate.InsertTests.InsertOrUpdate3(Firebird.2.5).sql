@@ -37,6 +37,8 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
+DECLARE @i Integer -- Int32
+SET     @i = 0
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -46,7 +48,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = Char_Length("t1"."Diagnosis")
+		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(

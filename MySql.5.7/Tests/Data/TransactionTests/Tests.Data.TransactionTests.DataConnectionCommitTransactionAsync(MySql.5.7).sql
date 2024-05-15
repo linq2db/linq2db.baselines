@@ -23,9 +23,9 @@ CommitTransactionAsync
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` = 1010
+	`Parent`.`ParentID` = 1010
 

@@ -548,11 +548,10 @@ FROM
 					"a_Book_1"."Discriminator" = 'Novel' AND
 					"a_Book"."BookId" = "a_Book_1"."BookId" AND
 					("a_Book"."BookName" = "a_Book_1"."BookName" OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
-					"a_Book"."BookId" = "a_Book_1"."BookId" AND
 					"a_Book"."BookId" = "a_Book_1"."BookId"
 			)
 	) "m_1"
-		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."BookId" AND "m_1"."BookId" IS NOT NULL
+		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."BookId"
 		LEFT JOIN "Author" "a_Author" ON "d"."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute
@@ -577,7 +576,6 @@ WHERE
 			"a_Book_1"."Discriminator" = 'Novel' AND
 			"a_Book"."BookId" = "a_Book_1"."BookId" AND
 			("a_Book"."BookName" = "a_Book_1"."BookName" OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
-			"a_Book"."BookId" = "a_Book_1"."BookId" AND
 			"a_Book"."BookId" = "a_Book_1"."BookId"
 	)
 

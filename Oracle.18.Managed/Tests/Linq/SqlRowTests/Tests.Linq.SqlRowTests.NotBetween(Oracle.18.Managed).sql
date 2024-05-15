@@ -47,7 +47,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	NOT ((i."One" > i."One" OR i."One" = i."One" AND i."Two" >= i."One" * 2) AND (i."One" < i."One" OR i."One" = i."One" AND i."Two" <= i."One" + i."One"))
+	NOT (i."Two" >= i."One" * 2 AND i."Two" <= i."One" + i."One")
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -57,7 +57,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	NOT ((i."One" > i."One" OR i."One" = i."One" AND i."Three" >= i."One") AND (i."One" < i."One" OR i."One" = i."One" AND i."Three" <= i."Four"))
+	NOT (i."Three" >= i."One" AND i."Three" <= i."Four")
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	NOT ((i."One" > i."One" OR i."One" = i."One" AND i."Two" >= i."Three") AND (i."One" < i."One" OR i."One" = i."One" AND i."Two" <= i."Two"))
+	i."Two" < i."Three"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -87,7 +87,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	NOT ((i."Two" > i."One" OR i."Two" = i."One" AND i."Five" >= i."One") AND (i."Two" < i."Two" OR i."Two" = i."Two" AND i."Five" <= i."Two"))
+	NOT ((i."Two" > i."One" OR i."Two" = i."One" AND i."Five" >= i."One") AND i."Five" <= i."Two")
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -107,7 +107,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	NOT ((i."Two" > i."Two" OR i."Two" = i."Two" AND i."Nil" >= i."One") AND (i."Two" < i."Two" OR i."Two" = i."Two" AND i."Nil" <= i."Three"))
+	NOT (i."Nil" >= i."One" AND i."Nil" <= i."Three")
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

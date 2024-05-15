@@ -111,21 +111,18 @@ BeforeExecute
 
 SELECT
 	m_1.BookId,
-	m_1.BookId_1,
 	a_Author.AuthorId,
 	a_Author.AuthorName
 FROM
 	(
 		SELECT DISTINCT
-			t3.BookId as BookId,
-			t3.BookId_1 as BookId_1
+			t3.BookId as BookId
 		FROM
 			(
 				SELECT
 					a_Book.BookId as Id,
 					a_Book.BookName as BookName,
 					a_Book.BookId as BookId,
-					a_Book.BookId as BookId_1,
 					toInt32(NULL) as c1,
 					toInt32(NULL) as c2,
 					0 as projection__set_id__
@@ -140,7 +137,6 @@ FROM
 					a_Book_1.BookId as Id,
 					a_Book_1.BookName as BookName,
 					toInt32(NULL) as BookId,
-					toInt32(NULL) as BookId_1,
 					a_Book_1.BookId as c1,
 					a_Book_1.BookId as c2,
 					1 as projection__set_id__
@@ -154,7 +150,7 @@ FROM
 		WHERE
 			t3.projection__set_id__ = 0
 	) m_1
-		INNER JOIN BookAuthor d ON d.FkBookId = m_1.BookId AND m_1.BookId_1 IS NOT NULL
+		INNER JOIN BookAuthor d ON d.FkBookId = m_1.BookId
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 
 BeforeExecute
@@ -176,7 +172,6 @@ FROM
 					a_Book.BookId as Id,
 					a_Book.BookName as BookName,
 					a_Book.BookId as BookId,
-					a_Book.BookId as BookId_1,
 					toInt32(NULL) as c1,
 					toInt32(NULL) as c2,
 					0 as projection__set_id__
@@ -191,7 +186,6 @@ FROM
 					a_Book_1.BookId as Id,
 					a_Book_1.BookName as BookName,
 					toInt32(NULL) as BookId,
-					toInt32(NULL) as BookId_1,
 					a_Book_1.BookId as c1,
 					a_Book_1.BookId as c2,
 					1 as projection__set_id__
@@ -218,7 +212,6 @@ SELECT
 	a_Book.BookName,
 	0 as projection__set_id__,
 	a_Book.BookId,
-	a_Book.BookId as BookId_1,
 	toInt32(NULL) as c1,
 	toInt32(NULL) as c2
 FROM
@@ -233,7 +226,6 @@ SELECT
 	a_Book_1.BookName as BookName,
 	1 as projection__set_id__,
 	toInt32(NULL) as BookId,
-	toInt32(NULL) as BookId_1,
 	a_Book_1.BookId as c1,
 	a_Book_1.BookId as c2
 FROM

@@ -51,5 +51,5 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = @ID
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

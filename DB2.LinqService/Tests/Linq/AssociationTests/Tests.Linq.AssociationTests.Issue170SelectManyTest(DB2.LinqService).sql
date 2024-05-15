@@ -9,5 +9,5 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON "a_Children"."ParentID" = "a_Parent"."Value1"
 WHERE
 	"a_Parent"."Value1" IS NULL
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

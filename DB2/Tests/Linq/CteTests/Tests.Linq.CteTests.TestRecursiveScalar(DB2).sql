@@ -12,7 +12,7 @@ AS
 				"c_1"."ChildID"
 			FROM
 				"Child" "c_1"
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "t1"
 	UNION ALL
 	SELECT

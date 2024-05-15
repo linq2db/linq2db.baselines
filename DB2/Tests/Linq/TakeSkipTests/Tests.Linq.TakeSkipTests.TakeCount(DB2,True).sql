@@ -9,6 +9,6 @@ FROM
 			*
 		FROM
 			"Child" "t1"
-		FETCH FIRST 5 ROWS ONLY
+		FETCH NEXT 5 ROWS ONLY
 	) "t2"
 

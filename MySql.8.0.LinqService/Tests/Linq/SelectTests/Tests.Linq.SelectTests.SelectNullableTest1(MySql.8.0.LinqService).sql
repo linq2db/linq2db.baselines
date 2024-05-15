@@ -71,9 +71,9 @@ LIMIT 1
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` = 1000
+	`LinqDataTypes`.`ID` = 1000
 

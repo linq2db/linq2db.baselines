@@ -87,7 +87,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -102,7 +102,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -117,7 +117,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -132,7 +132,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -147,7 +147,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

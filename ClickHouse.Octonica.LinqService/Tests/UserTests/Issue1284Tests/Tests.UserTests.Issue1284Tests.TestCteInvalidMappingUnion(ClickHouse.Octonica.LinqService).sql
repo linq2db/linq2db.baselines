@@ -13,22 +13,22 @@ WITH CTE_1 AS
 	FROM
 		(
 			SELECT
+				1 as rn,
 				x.FirstName as FirstName,
 				x.PersonID as ID,
 				x.LastName as LastName,
 				x.MiddleName as MiddleName,
-				x.Gender as Gender,
-				1 as rn
+				x.Gender as Gender
 			FROM
 				Person x
 			UNION ALL
 			SELECT
+				2 as rn,
 				person_1.FirstName as FirstName,
 				person_1.PersonID as ID,
 				person_1.LastName as LastName,
 				person_1.MiddleName as MiddleName,
-				person_1.Gender as Gender,
-				2 as rn
+				person_1.Gender as Gender
 			FROM
 				Person person_1
 		) x_1
@@ -59,22 +59,22 @@ SELECT
 FROM
 	(
 		SELECT
+			1 as rn,
 			x.FirstName as FirstName,
 			x.PersonID as ID,
 			x.LastName as LastName,
 			x.MiddleName as MiddleName,
-			x.Gender as Gender,
-			1 as rn
+			x.Gender as Gender
 		FROM
 			Person x
 		UNION ALL
 		SELECT
+			2 as rn,
 			person_1.FirstName as FirstName,
 			person_1.PersonID as ID,
 			person_1.LastName as LastName,
 			person_1.MiddleName as MiddleName,
-			person_1.Gender as Gender,
-			2 as rn
+			person_1.Gender as Gender
 		FROM
 			Person person_1
 	) t1

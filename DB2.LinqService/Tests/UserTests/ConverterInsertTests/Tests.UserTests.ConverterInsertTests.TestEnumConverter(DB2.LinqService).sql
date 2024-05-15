@@ -50,5 +50,5 @@ FROM
 	"Person" "t"
 WHERE
 	"t"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

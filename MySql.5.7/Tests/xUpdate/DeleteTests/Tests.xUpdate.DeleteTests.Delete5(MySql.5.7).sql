@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` > 1000
+	`Parent`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` > 1000
+	`Parent`.`ParentID` > 1000
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -61,11 +61,11 @@ WHERE
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` IN (1001, 1002)
+	`Parent`.`ParentID` IN (1001, 1002)
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

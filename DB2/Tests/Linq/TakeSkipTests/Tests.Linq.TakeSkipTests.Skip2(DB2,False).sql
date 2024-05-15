@@ -2,19 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"ch"."ParentID",
+	"ch"."ChildID"
 FROM
-	(
-		SELECT
-			"ch"."ParentID",
-			"ch"."ChildID",
-			ROW_NUMBER() OVER (ORDER BY "ch"."ParentID", "ch"."ChildID") as RN
-		FROM
-			"Child" "ch"
-		WHERE
-			("ch"."ChildID" > 3 OR "ch"."ChildID" < 4)
-	) "t1"
+	"Child" "ch"
 WHERE
-	"t1".RN > 3
+	("ch"."ChildID" > 3 OR "ch"."ChildID" < 4)
+ORDER BY
+	"ch"."ParentID",
+	"ch"."ChildID"
+OFFSET 3 ROWS
 

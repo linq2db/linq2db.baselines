@@ -2,8 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -18,8 +18,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 2
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"c_1"."ParentID",

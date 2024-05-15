@@ -37,6 +37,8 @@ BeforeExecute
 -- Firebird.3 Firebird3 (asynchronously)
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 5
+DECLARE @i Integer -- Int32
+SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -48,7 +50,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = Char_Length("t1"."Diagnosis")
+		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(

@@ -16,6 +16,6 @@ FROM
 				"Child" "x"
 			ORDER BY
 				"x"."ChildID" DESC
-			FETCH FIRST 1 ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) "c_1" ON "c_1"."ParentID" = "o"."ParentID"
 

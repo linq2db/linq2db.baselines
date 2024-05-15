@@ -14,5 +14,5 @@ SELECT
 FROM
 	`Parent` `p1`
 WHERE
-	`p1`.`ParentID` + 1 > 0 AND `p1`.`ParentID` + 2 > 0
+	`p1`.`ParentID` > -1 AND `p1`.`ParentID` > -2
 

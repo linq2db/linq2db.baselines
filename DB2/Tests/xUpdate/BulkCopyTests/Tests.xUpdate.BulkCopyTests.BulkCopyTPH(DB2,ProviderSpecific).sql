@@ -58,7 +58,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 1
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -74,7 +74,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 2
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -90,7 +90,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Discriminator" = 3
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -106,7 +106,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value1" = 'Str1'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -122,7 +122,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value2" = 'Str2'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -138,7 +138,7 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value3" = 'Str3'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @p VarChar(1) -- String
+SET     @p = 'O'
 
 SELECT
 	`i_2`.`LastName`
@@ -26,7 +28,7 @@ FROM
 			`Person` `i_1`
 	) `i_2`
 WHERE
-	`i_2`.`Gender` = 'O'
+	`i_2`.`Gender` = @p
 ORDER BY
 	`i_2`.`FirstName` DESC
 
