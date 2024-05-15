@@ -37,7 +37,7 @@ BeforeExecute
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
-INSERT INTO testdata."public"."Issue681Table4"
+INSERT INTO testdata.public."Issue681Table4"
 (
 	"Value"
 )
