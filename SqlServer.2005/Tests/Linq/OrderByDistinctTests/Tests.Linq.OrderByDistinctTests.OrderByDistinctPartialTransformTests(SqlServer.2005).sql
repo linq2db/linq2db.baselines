@@ -55,22 +55,25 @@ DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	[t1].[DuplicateData],
-	[t1].[OrderData2]
+	[t2].[DuplicateData],
+	[t2].[OrderData2]
 FROM
 	(
 		SELECT
-			[x].[DuplicateData],
-			[x].[OrderData2],
-			ROW_NUMBER() OVER (ORDER BY Min([x].[OrderData1]), [x].[OrderData2] DESC) as [RN]
+			[t1].[DuplicateData],
+			[t1].[OrderData2],
+			ROW_NUMBER() OVER (ORDER BY [t1].[OrderData2] DESC) as [RN]
 		FROM
-			[OrderByDistinctData] [x]
-		GROUP BY
-			[x].[DuplicateData],
-			[x].[OrderData2]
-	) [t1]
+			(
+				SELECT DISTINCT
+					[x].[DuplicateData],
+					[x].[OrderData2]
+				FROM
+					[OrderByDistinctData] [x]
+			) [t1]
+	) [t2]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2005

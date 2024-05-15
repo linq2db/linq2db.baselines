@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `_`
+DELETE  
 FROM
-	`Person` `_`
+	`Person`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -37,18 +37,18 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `_`
+DELETE  
 FROM
-	`Person` `_`
+	`Person`
 WHERE
-	`_`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 

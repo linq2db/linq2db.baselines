@@ -1,17 +1,15 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
+	`p`.`FirstName`,
+	`p`.`PersonID`,
+	`p`.`LastName`,
+	`p`.`MiddleName`,
+	`p`.`Gender`
 FROM
-	`Person` `_`
+	`Person` `p`
 WHERE
-	`_`.`PersonID` = 1
-LIMIT @take
+	`p`.`PersonID` = 1
+LIMIT 2
 

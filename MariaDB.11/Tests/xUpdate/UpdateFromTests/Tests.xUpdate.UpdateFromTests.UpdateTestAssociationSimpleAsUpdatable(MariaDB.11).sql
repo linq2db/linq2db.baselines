@@ -83,8 +83,6 @@ WHERE
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`v`.`Value1`,
@@ -95,7 +93,7 @@ FROM
 		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

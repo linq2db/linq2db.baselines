@@ -281,9 +281,9 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value3" = 1
+	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT
@@ -297,10 +297,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"v"."Value1",
 	"v"."Value2",
 	"v"."Value3"

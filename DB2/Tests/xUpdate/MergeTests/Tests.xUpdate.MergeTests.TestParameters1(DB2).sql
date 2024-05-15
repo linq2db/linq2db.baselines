@@ -228,32 +228,34 @@ DECLARE @Val4 Integer(4) -- Int32
 SET     @Val4 = 34
 DECLARE @Val1 Integer(4) -- Int32
 SET     @Val1 = 1
-DECLARE @Val3 Integer(4) -- Int32
-SET     @Val3 = 3
 DECLARE @Val5_1 Integer(4) -- Int32
 SET     @Val5_1 = 5
+DECLARE @Val3 Integer(4) -- Int32
+SET     @Val3 = 3
+DECLARE @Val5_2 Integer(4) -- Int32
+SET     @Val5_2 = 5
 DECLARE @Field3 Integer(4) -- Int32
 SET     @Field3 = 125
 
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"_"."Id" as "OtherId",
-		"_"."Field1",
-		@Val2 as "Field7"
+		"t1"."Id" as "source_Id",
+		"t1"."Field1" as "source_Field1",
+		CAST(@Val2 AS Int) as "source_Field7"
 	FROM
-		"TestMerge2" "_"
+		"TestMerge2" "t1"
 	WHERE
-		"_"."Id" <> @Val5
+		"t1"."Id" <> @Val5
 ) "Source"
 (
-	"OtherId",
-	"Field1",
-	"Field7"
+	"source_Id",
+	"source_Field1",
+	"source_Field7"
 )
-ON (("Target"."Id" = "Source"."OtherId" OR "Target"."Id" = @Val4))
+ON (("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4))
 
-WHEN NOT MATCHED AND "Source"."Field7" = @Val1 + "Source"."OtherId" THEN
+WHEN NOT MATCHED AND "Source"."source_Field7" = CAST(@Val1 AS Int) + "Source"."source_Id" THEN
 INSERT
 (
 	"Id",
@@ -261,13 +263,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."OtherId" + @Val5,
-	"Source"."Field1"
+	"Source"."source_Id" + CAST(@Val5_1 AS Int),
+	"Source"."source_Field1"
 )
 
-WHEN MATCHED AND "Source"."OtherId" = @Val3 THEN
+WHEN MATCHED AND "Source"."source_Id" = @Val3 THEN
 UPDATE
 SET
-	"Target"."Field4" = @Val5_1
+	"Field4" = @Val5_2
 WHEN MATCHED AND "Target"."Field3" = @Field3 THEN DELETE
 

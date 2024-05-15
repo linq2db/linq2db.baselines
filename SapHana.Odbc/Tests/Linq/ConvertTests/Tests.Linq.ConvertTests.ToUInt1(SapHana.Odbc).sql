@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast(Floor("t"."MoneyValue") as BigInt)
+	CAST("t"."MoneyValue" AS BigInt)
 FROM
 	"LinqDataTypes" "t"
 

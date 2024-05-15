@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 INSERT INTO `Person`
 (
@@ -27,7 +25,6 @@ VALUES
 			`Person` `p`
 		WHERE
 			`p`.`PersonID` = 1
-		LIMIT @take
 	)),
 	'Shepard',
 	'M'
@@ -37,7 +34,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
@@ -46,9 +43,9 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
+	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 

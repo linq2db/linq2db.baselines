@@ -20,7 +20,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -30,7 +30,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(2))
+(2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -40,7 +40,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(3))
+(3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

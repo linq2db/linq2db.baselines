@@ -1,15 +1,13 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	(
-		SELECT FIRST @take
-			"p"."ParentID"
+		SELECT FIRST 1
+			"t1"."ParentID"
 		FROM
-			"Child" "p"
+			"Child" "t1"
 	)
 FROM
-	"Parent" "p_1"
+	"Parent" "p"
 

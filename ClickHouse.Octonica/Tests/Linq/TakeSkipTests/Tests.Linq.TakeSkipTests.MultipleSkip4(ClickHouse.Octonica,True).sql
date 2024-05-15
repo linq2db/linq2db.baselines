@@ -38,7 +38,7 @@ FROM
 	TakeSkipClass t1
 ORDER BY
 	t1.Value
-LIMIT toInt32(6), 18446744073709551615
+LIMIT 6, 18446744073709551615
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -2,8 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ParentID + toInt32(1)
+	a_Children.ParentID + 1
 FROM
-	Parent cp
-		INNER JOIN Child _ ON _.ParentID > toInt32(0) AND cp.ParentID = _.ParentID
+	Parent p
+		INNER JOIN Child a_Children ON p.ParentID = a_Children.ParentID
+WHERE
+	a_Children.ParentID > 0
 

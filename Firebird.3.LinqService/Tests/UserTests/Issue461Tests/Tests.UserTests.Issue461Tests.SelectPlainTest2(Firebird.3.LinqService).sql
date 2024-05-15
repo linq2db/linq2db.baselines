@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +8,7 @@ SELECT
 			"c_1"."ParentID" + 1
 		FROM
 			"Child" "c_1"
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

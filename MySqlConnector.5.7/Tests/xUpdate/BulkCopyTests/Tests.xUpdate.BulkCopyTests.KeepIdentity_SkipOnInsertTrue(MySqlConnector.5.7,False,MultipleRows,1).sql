@@ -39,23 +39,23 @@ DECLARE @lastId Int32
 SET     @lastId = 3
 
 SELECT
-	`_`.`ID`,
-	`_`.`intDataType`
+	`t1`.`ID`,
+	`t1`.`intDataType`
 FROM
-	`AllTypes` `_`
+	`AllTypes` `t1`
 WHERE
-	`_`.`ID` > @lastId
+	`t1`.`ID` > @lastId
 ORDER BY
-	`_`.`ID`
+	`t1`.`ID`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @lastId Int32
 SET     @lastId = 3
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypes` `t1`
+	`AllTypes`
 WHERE
-	`t1`.`ID` >= @lastId
+	`AllTypes`.`ID` >= @lastId
 

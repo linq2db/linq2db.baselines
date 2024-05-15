@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -48,9 +48,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 SELECT
-	[c_1].[ParentID],
+	[c_1].[ParentID] - @param,
 	[c_1].[ChildID]
 FROM
 	[tempdb]..[#TInserted] [c_1]
@@ -74,9 +76,9 @@ DROP TABLE [tempdb]..[#TInserted]
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

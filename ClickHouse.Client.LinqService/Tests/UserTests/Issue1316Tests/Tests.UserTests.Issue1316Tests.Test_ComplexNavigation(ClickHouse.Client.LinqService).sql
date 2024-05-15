@@ -24,30 +24,30 @@ INSERT INTO Issue1316Tests
 )
 VALUES
 (
-	toInt32(5)
+	5
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ID
+	t1.ID
 FROM
-	Issue1316Tests _
+	Issue1316Tests t1
 WHERE
-	_.ID = toInt32(5)
-LIMIT toInt32(2)
+	t1.ID = 5
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ID
+	t1.ID
 FROM
-	Issue1316Tests _
+	Issue1316Tests t1
 WHERE
-	_.ID = toInt32(5)
-LIMIT toInt32(2)
+	t1.ID = 5
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

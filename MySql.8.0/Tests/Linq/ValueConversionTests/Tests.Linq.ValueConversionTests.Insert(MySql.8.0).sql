@@ -58,8 +58,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -76,7 +74,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -114,8 +112,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -132,7 +128,7 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 2
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -186,8 +182,6 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`e`.`Id`,
@@ -204,13 +198,13 @@ FROM
 	`ValueConversion` `e`
 WHERE
 	`e`.`Id` = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`ValueConversion` `t1`
 

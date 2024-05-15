@@ -55,8 +55,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -65,7 +63,7 @@ SELECT
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -75,16 +73,14 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" t1
 SET
-	"PR_1598_Mixed_Table"."Age" = :Age
+	"Age" = :Age
 WHERE
-	"PR_1598_Mixed_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -93,7 +89,7 @@ SELECT
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -115,8 +111,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -125,7 +119,7 @@ SELECT
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
-	t."Id" = 2 AND ROWNUM <= :take
+	t."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -137,17 +131,15 @@ DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" t1
 SET
-	"PR_1598_Mixed_Table"."Name" = :Name,
-	"PR_1598_Mixed_Table"."Age" = :Age
+	"Name" = :Name,
+	"Age" = :Age
 WHERE
-	"PR_1598_Mixed_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -156,7 +148,7 @@ SELECT
 FROM
 	"PR_1598_Mixed_Table" t
 WHERE
-	t."Id" = 2 AND ROWNUM <= :take
+	t."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

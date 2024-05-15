@@ -1,24 +1,14 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
+DECLARE @p VarChar(3) -- String
+SET     @p = '123'
 
 SELECT
-	"p_1".ID,
-	"p_1"."FirstName_1"
+	"p"."PersonID",
+	'123' || "p"."FirstName" || '012345'
 FROM
-	(
-		SELECT
-			'123' || "p"."FirstName" || '012345' as "FirstName",
-			"p"."PersonID" as ID,
-			"p"."FirstName" as "FirstName_1"
-		FROM
-			"Person" "p"
-		WHERE
-			"p"."PersonID" = 1
-	) "p_1"
+	"Person" "p"
 WHERE
-	CASE
-		WHEN Position('123', "p_1"."FirstName", 6) = 0
-			THEN -1
-		ELSE Char_Length("p_1"."FirstName") - Position('321', Reverse(Substring("p_1"."FirstName" from 6 for (Char_Length("p_1"."FirstName") - 5)))) - 2
-	END = 8
+	"p"."PersonID" = 1 AND Char_Length('123' || "p"."FirstName" || '012345') - Position('321', Reverse(Substring(('123' || "p"."FirstName" || '012345') from 6 for (Char_Length('123' || "p"."FirstName" || '012345') - 5)))) = 10 AND
+	Position(@p, '123' || "p"."FirstName" || '012345', 6) <> 0
 

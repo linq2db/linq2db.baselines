@@ -2,7 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	Avg("t1"."ParentID")
+	AVG("t1"."ParentID")
 FROM
 	"Parent" "t1"
 WHERE

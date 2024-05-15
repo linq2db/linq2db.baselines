@@ -41,11 +41,11 @@ DECLARE @dto VarChar(33) -- AnsiString
 SET     @dto = '2020-02-29T17:54:55.123123 +00:40'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Issue4371Table] [r]
 WHERE
-	DateTime([r].[ColumnDTO]) = DateTime(@dto)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[ColumnDTO]) = strftime('%Y-%m-%d %H:%M:%f', @dto)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

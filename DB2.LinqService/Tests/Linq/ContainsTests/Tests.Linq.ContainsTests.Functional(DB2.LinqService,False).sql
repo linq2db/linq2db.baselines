@@ -83,7 +83,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" IN (-1, -2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -94,7 +94,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" IN (-1, NULL)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -105,7 +105,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" IN (-1, 2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -116,7 +116,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" NOT IN (NULL, 2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -127,7 +127,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Int" NOT IN (-1, 2)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

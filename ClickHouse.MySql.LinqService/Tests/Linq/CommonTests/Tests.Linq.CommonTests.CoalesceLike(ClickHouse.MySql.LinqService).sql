@@ -10,13 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CASE
-		WHEN CASE
-			WHEN p.FirstName IS NULL THEN NULL
-			ELSE startsWith(p.FirstName, 'Jo')
-		END IS NULL
-			THEN false
-		WHEN p.FirstName IS NULL THEN NULL
-		ELSE startsWith(p.FirstName, 'Jo')
-	END = true
+	startsWith(p.FirstName, 'Jo') AND p.FirstName IS NOT NULL
 

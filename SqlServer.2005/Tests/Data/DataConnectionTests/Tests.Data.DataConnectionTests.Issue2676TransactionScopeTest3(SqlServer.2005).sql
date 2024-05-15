@@ -52,11 +52,11 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[_].[Id]
+	[t1].[Id]
 FROM
-	[TransactionScopeTable] [_]
+	[TransactionScopeTable] [t1]
 ORDER BY
-	[_].[Id]
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2005

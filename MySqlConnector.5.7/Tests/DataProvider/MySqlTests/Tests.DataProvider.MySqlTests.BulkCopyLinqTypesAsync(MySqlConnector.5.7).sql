@@ -32,11 +32,11 @@ VALUES
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -49,9 +49,9 @@ INSERT ASYNC BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, Guid
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` >= 4000
+	`LinqDataTypes`.`ID` >= 4000
 

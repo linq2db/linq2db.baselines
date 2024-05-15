@@ -45,7 +45,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -56,7 +56,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', NULL)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -67,7 +67,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -78,7 +78,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN (NULL, 'TWO')
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -89,7 +89,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" NOT IN ('THREE', 'TWO')
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

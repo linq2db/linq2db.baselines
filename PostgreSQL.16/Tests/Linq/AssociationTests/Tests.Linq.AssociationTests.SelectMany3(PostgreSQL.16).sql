@@ -10,15 +10,15 @@ FROM
 			"a_Parent"."ParentID",
 			"a_Parent"."Value1"
 		FROM
-			"Child" t1
-				LEFT JOIN "Parent" "a_Parent" ON t1."ParentID" = "a_Parent"."ParentID"
+			"Child" g_1
+				LEFT JOIN "Parent" "a_Parent" ON g_1."ParentID" = "a_Parent"."ParentID"
 		GROUP BY
 			"a_Parent"."ParentID",
 			"a_Parent"."Value1"
 		HAVING
-			Count(*) > 2
-	) cp
-		INNER JOIN "Child" c_1
-			LEFT JOIN "Parent" "a_Parent_1" ON c_1."ParentID" = "a_Parent_1"."ParentID"
-		ON cp."ParentID" = "a_Parent_1"."ParentID" AND (cp."Value1" = "a_Parent_1"."Value1" OR cp."Value1" IS NULL AND "a_Parent_1"."Value1" IS NULL)
+			COUNT(*) > 2
+	) g_2
+		INNER JOIN "Child" ch
+			LEFT JOIN "Parent" "a_Parent_1" ON ch."ParentID" = "a_Parent_1"."ParentID"
+		ON (g_2."ParentID" = "a_Parent_1"."ParentID" OR g_2."ParentID" IS NULL AND "a_Parent_1"."ParentID" IS NULL) AND (g_2."Value1" = "a_Parent_1"."Value1" OR g_2."Value1" IS NULL AND "a_Parent_1"."Value1" IS NULL)
 

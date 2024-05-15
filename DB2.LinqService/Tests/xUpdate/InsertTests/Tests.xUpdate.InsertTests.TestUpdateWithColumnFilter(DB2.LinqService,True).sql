@@ -44,7 +44,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -60,14 +60,14 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = @FirstName,
+	"LastName" = @LastName,
+	"MiddleName" = @MiddleName,
+	"Gender" = @Gender
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -84,7 +84,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

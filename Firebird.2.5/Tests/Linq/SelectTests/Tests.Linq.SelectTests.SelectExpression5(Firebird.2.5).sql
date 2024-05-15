@@ -34,9 +34,11 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
+DECLARE @p Char -- String
+SET     @p = '1'
 
 SELECT FIRST @take
-	1
+	CAST(@p AS CHAR(1))
 FROM
 	"SelectExpressionTable" "t1"
 

@@ -2,10 +2,15 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[ch].[ParentID] + [p].[ParentID]
+	[t].[c1]
 FROM
-	[Child] [ch]
-		INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
+	(
+		SELECT
+			[ch].[ParentID] + [p].[ParentID] as [c1]
+		FROM
+			[Child] [ch]
+				INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
+	) [t]
 WHERE
-	[ch].[ParentID] + [p].[ParentID] > 2
+	[t].[c1] > 2
 

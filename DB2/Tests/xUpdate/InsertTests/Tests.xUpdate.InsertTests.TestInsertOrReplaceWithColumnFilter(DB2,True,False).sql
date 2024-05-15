@@ -36,16 +36,16 @@ DECLARE @MiddleName VarChar(15) -- String
 SET     @MiddleName = 'som middle name'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
-USING (SELECT @ID AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."FirstName" = @FirstName,
-		"t1"."LastName" = @LastName,
-		"t1"."MiddleName" = @MiddleName
+		"FirstName" = CAST(@FirstName AS NVarChar(27)),
+		"LastName" = CAST(@LastName AS NVarChar(8)),
+		"MiddleName" = CAST(@MiddleName AS NVarChar(15))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -56,10 +56,10 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@ID,
-		@FirstName,
-		@LastName,
-		@MiddleName
+		CAST(@ID AS Int),
+		CAST(@FirstName AS NVarChar(27)),
+		CAST(@LastName AS NVarChar(8)),
+		CAST(@MiddleName AS NVarChar(15))
 	)
 
 BeforeExecute
@@ -76,7 +76,7 @@ FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -90,16 +90,16 @@ DECLARE @MiddleName VarChar(12) -- String
 SET     @MiddleName = 'updated name'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
-USING (SELECT @ID AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1".ID = "s".ID
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."FirstName" = @FirstName,
-		"t1"."LastName" = @LastName,
-		"t1"."MiddleName" = @MiddleName
+		"FirstName" = CAST(@FirstName AS NVarChar(27)),
+		"LastName" = CAST(@LastName AS NVarChar(8)),
+		"MiddleName" = CAST(@MiddleName AS NVarChar(12))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -110,10 +110,10 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@ID,
-		@FirstName,
-		@LastName,
-		@MiddleName
+		CAST(@ID AS Int),
+		CAST(@FirstName AS NVarChar(27)),
+		CAST(@LastName AS NVarChar(8)),
+		CAST(@MiddleName AS NVarChar(12))
 	)
 
 BeforeExecute
@@ -130,7 +130,7 @@ FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -2,12 +2,12 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[c_1].[CustomerID],
+	[t1].[CustomerID],
 	[o].[OrderID],
 	[o].[Freight]
 FROM
-	[Customers] [c_1]
-		INNER JOIN [Orders] [o] ON ([c_1].[CustomerID] = [o].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [o].[CustomerID] IS NULL)
+	[Customers] [t1]
+		INNER JOIN [Orders] [o] ON [t1].[CustomerID] = [o].[CustomerID]
 WHERE
 	[o].[Freight] < 500.00
 

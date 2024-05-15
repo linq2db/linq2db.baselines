@@ -70,46 +70,35 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	s.Name
+	t1.Id,
+	t1.Name,
+	t1.Enabled,
+	t1.ImageFullUrl
 FROM
-	Stone s
-WHERE
-	s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
-	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0)
-GROUP BY
-	s.Name
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	s.Id,
-	s.Name,
-	s.Enabled,
-	s.ImageFullUrl
-FROM
-	Stone s
-WHERE
-	s.Enabled = true AND
-	NOT startsWith(s.Name, 'level - ') AND
-	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0) AND
-	s.Name = 'group2'
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	s.Id,
-	s.Name,
-	s.Enabled,
-	s.ImageFullUrl
-FROM
-	Stone s
-WHERE
-	s.Enabled = true AND
-	NOT startsWith(s.Name, 'level - ') AND
-	CHAR_LENGTH(s.ImageFullUrl) > toInt32(0) AND
-	s.Name = 'group1'
+	(
+		SELECT
+			sG.Name as Name
+		FROM
+			Stone sG
+		WHERE
+			sG.Enabled = true AND NOT startsWith(sG.Name, 'level - ') AND
+			CHAR_LENGTH(sG.ImageFullUrl) > 0
+		GROUP BY
+			sG.Name
+	) sG_1
+		INNER JOIN (
+			SELECT
+				s.Id as Id,
+				s.Name as Name,
+				s.Enabled as Enabled,
+				s.ImageFullUrl as ImageFullUrl,
+				ROW_NUMBER() OVER (PARTITION BY s.Name ORDER BY s.Name) as rn
+			FROM
+				Stone s
+			WHERE
+				s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
+				CHAR_LENGTH(s.ImageFullUrl) > 0
+		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

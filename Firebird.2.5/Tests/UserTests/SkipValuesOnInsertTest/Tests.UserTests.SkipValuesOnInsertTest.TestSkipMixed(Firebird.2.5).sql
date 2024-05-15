@@ -47,10 +47,8 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -67,18 +65,16 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Age" = @Age
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Mixed_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -107,10 +103,8 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"
@@ -129,19 +123,17 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
-	"PR_1598_Mixed_Table"
+	"PR_1598_Mixed_Table" "t1"
 SET
-	"PR_1598_Mixed_Table"."Name" = @Name,
-	"PR_1598_Mixed_Table"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(5)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Mixed_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
 	"t"."Age"

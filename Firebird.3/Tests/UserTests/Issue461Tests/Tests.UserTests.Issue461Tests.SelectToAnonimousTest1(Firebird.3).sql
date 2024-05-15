@@ -1,23 +1,14 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	"l"."ParentID"
-FROM
-	"Child" "l"
-FETCH NEXT @take ROWS ONLY
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	1
+	(
+		SELECT
+			"l"."ParentID" + 1
+		FROM
+			"Child" "l"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" "sep"
 

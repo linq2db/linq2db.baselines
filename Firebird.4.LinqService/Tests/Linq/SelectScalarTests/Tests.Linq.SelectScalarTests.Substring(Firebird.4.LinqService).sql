@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @p VarChar(2) -- String
-SET     @p = '23'
 
 SELECT
-	Cast(@p as VarChar(255) CHARACTER SET UNICODE_FSS)
+	Substring('123' from 2 for 2)
 FROM rdb$database
 

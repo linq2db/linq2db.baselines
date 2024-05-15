@@ -110,50 +110,37 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	"s"."Name"
+	"t1"."Id",
+	"t1"."Name",
+	"t1"."Enabled",
+	"t1"."ImageFullUrl"
 FROM
-	"Stone" "s"
-WHERE
-	"s"."Enabled" = TRUE AND ("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0
-GROUP BY
-	"s"."Name"
-
-BeforeExecute
--- Firebird.5 Firebird4
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-
-SELECT
-	"s"."Id",
-	"s"."Name",
-	"s"."Enabled",
-	"s"."ImageFullUrl"
-FROM
-	"Stone" "s"
-WHERE
-	"s"."Enabled" = TRUE AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0 AND
-	"s"."Name" = @Name
-
-BeforeExecute
--- Firebird.5 Firebird4
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group2'
-
-SELECT
-	"s"."Id",
-	"s"."Name",
-	"s"."Enabled",
-	"s"."ImageFullUrl"
-FROM
-	"Stone" "s"
-WHERE
-	"s"."Enabled" = TRUE AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0 AND
-	"s"."Name" = @Name
+	(
+		SELECT
+			"sG"."Name"
+		FROM
+			"Stone" "sG"
+		WHERE
+			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
+			Char_Length("sG"."ImageFullUrl") > 0
+		GROUP BY
+			"sG"."Name"
+	) "sG_1"
+		CROSS JOIN LATERAL (
+			SELECT
+				"s"."Id",
+				"s"."Name",
+				"s"."Enabled",
+				"s"."ImageFullUrl"
+			FROM
+				"Stone" "s"
+			WHERE
+				"s"."Enabled" = TRUE AND
+				"s"."Name" NOT STARTING WITH 'level - ' AND
+				Char_Length("s"."ImageFullUrl") > 0 AND
+				"sG_1"."Name" = "s"."Name"
+			FETCH NEXT 1 ROWS ONLY
+		) "t1"
 
 BeforeExecute
 -- Firebird.5 Firebird4

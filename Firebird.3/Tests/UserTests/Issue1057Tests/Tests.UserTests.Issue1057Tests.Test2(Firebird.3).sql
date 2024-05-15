@@ -122,8 +122,8 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"p"."Id",
 	"p"."TargetName",
+	"p"."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

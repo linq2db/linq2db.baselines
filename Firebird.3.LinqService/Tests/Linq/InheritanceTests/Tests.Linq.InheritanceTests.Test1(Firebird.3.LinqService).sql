@@ -2,6 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Value1",
 	"t1"."ParentID",
 	"t1"."Value1"
 FROM

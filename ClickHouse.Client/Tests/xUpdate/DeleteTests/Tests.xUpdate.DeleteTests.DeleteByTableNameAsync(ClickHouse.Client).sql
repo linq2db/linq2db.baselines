@@ -33,7 +33,7 @@ INSERT INTO xxPerson
 VALUES
 (
 	'Steven',
-	toInt32(0),
+	0,
 	'King',
 	NULL,
 	'M'
@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 
@@ -58,7 +58,7 @@ SELECT
 	t1.Gender
 FROM
 	xxPerson t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -66,13 +66,13 @@ BeforeExecute
 ALTER TABLE
 	xxPerson
 DELETE WHERE
-	PersonID = toInt32(0)
+	PersonID = 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 

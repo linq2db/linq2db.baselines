@@ -2,9 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	maxOrNull(t.PersonID)
+	maxOrNull(t1.PersonID)
 FROM
-	Person t
+	Person t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -19,7 +19,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'M',
 	'fn',
 	NULL,
@@ -38,6 +38,6 @@ SELECT
 FROM
 	Person p2
 WHERE
-	(p2.PersonID > toInt32(4) OR p2.PersonID = toInt32(0))
-LIMIT toInt32(2)
+	(p2.PersonID > 4 OR p2.PersonID = 0)
+LIMIT 2
 

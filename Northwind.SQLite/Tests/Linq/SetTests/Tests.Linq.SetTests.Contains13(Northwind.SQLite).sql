@@ -2,17 +2,14 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[EmployeeID],
-	(
-		SELECT
-			Count(*)
-		FROM
-			[EmployeeTerritories] [t]
-		WHERE
-			[t1].[EmployeeID] = [t].[EmployeeID] AND ([t].[EmployeeID] = 1 AND [t].[TerritoryID] = '01581' OR [t].[EmployeeID] = 1 AND [t].[TerritoryID] = '02116' OR [t].[EmployeeID] = 1 AND [t].[TerritoryID] = '31406')
-	)
+	[g_1].[EmployeeID],
+	COUNT(CASE
+		WHEN [g_1].[EmployeeID] = 1 AND [g_1].[TerritoryID] = '01581' OR [g_1].[EmployeeID] = 1 AND [g_1].[TerritoryID] = '02116' OR [g_1].[EmployeeID] = 1 AND [g_1].[TerritoryID] = '31406'
+			THEN 1
+		ELSE NULL
+	END)
 FROM
-	[EmployeeTerritories] [t1]
+	[EmployeeTerritories] [g_1]
 GROUP BY
-	[t1].[EmployeeID]
+	[g_1].[EmployeeID]
 

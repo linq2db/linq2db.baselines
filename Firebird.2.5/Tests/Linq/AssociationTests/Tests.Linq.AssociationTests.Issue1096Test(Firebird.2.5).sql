@@ -87,7 +87,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Char(1) -- String
+DECLARE @Actual Char -- String
 SET     @Actual = '1'
 
 INSERT INTO "Issue1096TaskStage"

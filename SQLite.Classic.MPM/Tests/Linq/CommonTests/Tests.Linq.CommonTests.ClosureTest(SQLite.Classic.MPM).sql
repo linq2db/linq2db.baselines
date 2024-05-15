@@ -1,22 +1,18 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	1
 FROM
-	[Person] [_]
-LIMIT @take
+	[Person] [t1]
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	1
 FROM
-	[Person] [_]
-LIMIT @take
+	[Person] [t1]
+LIMIT 1
 

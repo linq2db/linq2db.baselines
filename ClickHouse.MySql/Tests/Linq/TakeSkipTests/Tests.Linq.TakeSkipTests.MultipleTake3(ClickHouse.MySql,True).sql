@@ -38,7 +38,7 @@ FROM
 	TakeSkipClass t1
 ORDER BY
 	t1.Value
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

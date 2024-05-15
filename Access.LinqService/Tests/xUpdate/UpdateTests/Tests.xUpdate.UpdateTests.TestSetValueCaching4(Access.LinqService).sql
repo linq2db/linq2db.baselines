@@ -65,11 +65,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 SET
-	[_].[Value4] = @Value4
+	[t1].[Value4] = @Value4
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- Access AccessOleDb
@@ -77,11 +77,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT TOP 2
-	[_].[Value4]
+	[t1].[Value4]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- Access AccessOleDb
@@ -91,11 +91,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 SET
-	[_].[Value4] = @Value4
+	[t1].[Value4] = @Value4
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- Access AccessOleDb
@@ -103,11 +103,11 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT TOP 2
-	[_].[Value4]
+	[t1].[Value4]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- Access AccessOleDb

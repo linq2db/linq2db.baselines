@@ -41,12 +41,12 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 SELECT
-	"_".ID
+	"t1".ID
 FROM
-	"Issue1316Tests" "_"
+	"Issue1316Tests" "t1"
 WHERE
-	"_".ID = @ID
-FETCH FIRST 2 ROWS ONLY
+	"t1".ID = @ID
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -54,12 +54,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
 
 SELECT
-	"_".ID
+	"t1".ID
 FROM
-	"Issue1316Tests" "_"
+	"Issue1316Tests" "t1"
 WHERE
-	"_".ID = @Id
-FETCH FIRST 2 ROWS ONLY
+	"t1".ID = @Id
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

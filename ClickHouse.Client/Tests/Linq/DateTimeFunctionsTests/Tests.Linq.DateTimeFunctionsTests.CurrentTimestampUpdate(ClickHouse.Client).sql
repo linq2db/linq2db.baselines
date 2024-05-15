@@ -7,5 +7,5 @@ UPDATE
 	BoolValue = true,
 	DateTimeValue = now()
 WHERE
-	ID = toInt32(100000)
+	ID = 100000
 

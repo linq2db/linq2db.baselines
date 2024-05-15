@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	"e".ID,
-	"_"."SmallIntValue"
+	"p"."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -49,7 +49,7 @@ FROM
 				FROM
 					"LinqDataTypes" "t2"
 			) "t3"
-		FETCH FIRST 15 ROWS ONLY
+		FETCH NEXT 15 ROWS ONLY
 	) "e"
 		LEFT JOIN (
 			SELECT
@@ -81,9 +81,9 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
-			FETCH FIRST 15 ROWS ONLY
-		) "_" ON "_".ID = "e".ID
+			FETCH NEXT 15 ROWS ONLY
+		) "p" ON "p".ID = "e".ID
 ORDER BY
-	"_".ID,
-	"e".ID
+	"e".ID,
+	"p".ID
 

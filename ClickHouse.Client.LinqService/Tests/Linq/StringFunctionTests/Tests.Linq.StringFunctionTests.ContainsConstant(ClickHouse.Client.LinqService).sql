@@ -2,19 +2,19 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	position(p.FirstName, 'jOh') > toInt32(0) AND p.PersonID = toInt32(1)
+	position(p.FirstName, 'jOh') > 0 AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	position(p.FirstName, 'jOh') <= toInt32(0) AND p.PersonID = toInt32(1)
+	position(p.FirstName, 'jOh') <= 0 AND p.PersonID = 1
 

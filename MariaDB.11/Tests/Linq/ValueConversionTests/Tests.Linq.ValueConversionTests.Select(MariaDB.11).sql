@@ -137,22 +137,20 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`q`.`Value2`
+	`t1`.`Value2`
 FROM
 	(
 		SELECT
-			`t`.`Id`,
-			`t`.`Value2`
+			`q`.`Id`,
+			`q`.`Value2`
 		FROM
-			`ValueConversion` `t`
-	) `q`
+			`ValueConversion` `q`
+	) `t1`
 ORDER BY
-	`q`.`Id`
-LIMIT @skip, @take
+	`t1`.`Id`
+LIMIT @skip, 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

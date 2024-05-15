@@ -27,17 +27,17 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "Id" FROM rdb$database) "Source"
+	SELECT 1 AS "source_Id" FROM rdb$database) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN MATCHED AND "Target"."Id" <> "Source"."Id" THEN
+WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" THEN
 UPDATE
 SET
-	"Target"."Id" = 2,
-	"Target"."Value" = '3'
+	"Id" = 2,
+	"Value" = '3'
 
 BeforeExecute
 -- Firebird.3 Firebird3

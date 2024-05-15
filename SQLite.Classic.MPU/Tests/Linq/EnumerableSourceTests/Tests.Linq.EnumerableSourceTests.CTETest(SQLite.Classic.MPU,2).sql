@@ -29,7 +29,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-WITH [CTE_1] ([Id], [Value])
+WITH [CTE_1] ([Id], [Value_1])
 AS
 (
 	SELECT
@@ -48,7 +48,7 @@ SELECT
 	[t].[Value]
 FROM
 	[CTE_1] [r]
-		INNER JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
+		INNER JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value_1] OR [t].[Value] IS NULL AND [r].[Value_1] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

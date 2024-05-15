@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t."DateTimeValue" + -1 * INTERVAL '7' DAY
+	TRUNC(t."DateTimeValue" - INTERVAL '7' DAY)
 FROM
 	"LinqDataTypes" t
 

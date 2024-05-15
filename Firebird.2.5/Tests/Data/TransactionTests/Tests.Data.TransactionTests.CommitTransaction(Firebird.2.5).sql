@@ -22,20 +22,18 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"Parent"
+	"Parent" "t"
 SET
-	"Parent"."Value1" = 1011
+	"Value1" = 1011
 WHERE
-	"Parent"."ParentID" = 1010
+	"t"."ParentID" = 1010
 
 BeforeExecute
 CommitTransaction
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t"."ParentID",
 	"t"."Value1"
 FROM

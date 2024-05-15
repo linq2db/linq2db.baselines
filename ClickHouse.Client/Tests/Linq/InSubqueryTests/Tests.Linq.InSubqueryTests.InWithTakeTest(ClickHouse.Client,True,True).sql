@@ -13,10 +13,28 @@ WHERE
 		FROM
 			(
 				SELECT
-					p.ParentID as ParentID
+					v.ParentID as ParentID
 				FROM
-					Parent p
-				LIMIT toInt32(100)
+					Parent v
+				LIMIT 100
 			) t1
 	)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

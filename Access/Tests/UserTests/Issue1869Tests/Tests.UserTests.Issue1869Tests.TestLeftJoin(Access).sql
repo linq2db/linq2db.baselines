@@ -99,42 +99,42 @@ SET     @sectorId = 1
 
 SELECT
 	[m_1].[MonthNumber],
-	[t2].[MonthNumber],
-	[t2].[Ftq]
+	[q].[MonthNumber],
+	[q].[Ftq]
 FROM
 	[tblMonth] [m_1]
 		LEFT JOIN (
 			SELECT
-				[q_1].[MonthNumber],
-				Sum([q_1].[Ftq]) as [Ftq]
+				[g_3].[MonthNumber],
+				SUM([g_3].[Ftq]) as [Ftq]
 			FROM
 				(
 					SELECT
-						[t1].[MonthNumber],
-						Sum([t1].[Qty]) / Sum(Iif([t1].[Ok], 0, [t1].[Qty])) as [Ftq]
+						[g_2].[MonthNumber],
+						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok] = True, 0, [g_2].[Qty])) as [Ftq]
 					FROM
 						(
 							SELECT
-								DatePart('m', [q].[EntryDate]) as [MonthNumber],
+								DatePart('m', [g_1].[EntryDate]) as [MonthNumber],
 								[a_Workstation].[Id_WorkstationGroup],
-								[a_Defect].[Ok],
-								[q].[Qty]
+								[g_1].[Qty],
+								[a_Defect].[Ok]
 							FROM
-								(([tblFtq] [q]
-									INNER JOIN [tblDefect] [a_Defect] ON ([q].[Id_Defect] = [a_Defect].[Id]))
-										INNER JOIN [tblWorkstation] [a_Workstation] ON ([a_Defect].[Id_Workstation] = [a_Workstation].[Id]))
+								(([tblFtq] [g_1]
+									INNER JOIN [tblDefect] [a_Defect] ON ([g_1].[Id_Defect] = [a_Defect].[Id]))
+									INNER JOIN [tblWorkstation] [a_Workstation] ON ([a_Defect].[Id_Workstation] = [a_Workstation].[Id]))
 									INNER JOIN [tblWorkstationGroup] [a_WorkstationGroup] ON ([a_Workstation].[Id_WorkstationGroup] = [a_WorkstationGroup].[Id])
 							WHERE
-								[q].[EntryDate] >= @dateMin AND [q].[EntryDate] <= @dateMax AND
+								[g_1].[EntryDate] >= @dateMin AND [g_1].[EntryDate] <= @dateMax AND
 								[a_WorkstationGroup].[Id_Sector] = @sectorId
-						) [t1]
+						) [g_2]
 					GROUP BY
-						[t1].[MonthNumber],
-						[t1].[Id_WorkstationGroup]
-				) [q_1]
+						[g_2].[MonthNumber],
+						[g_2].[Id_WorkstationGroup]
+				) [g_3]
 			GROUP BY
-				[q_1].[MonthNumber]
-		) [t2] ON ([t2].[MonthNumber] = [m_1].[MonthNumber])
+				[g_3].[MonthNumber]
+		) [q] ON ([q].[MonthNumber] = [m_1].[MonthNumber])
 
 BeforeExecute
 -- Access AccessOleDb

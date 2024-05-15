@@ -139,38 +139,36 @@ ORDER BY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 DECLARE @skip Int32
 SET     @skip = 1
 
 SELECT
-	t2."Value2"
+	t3."Value2"
 FROM
 	(
 		SELECT
-			t1."Value2",
+			t2."Value2",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
-					q."Value2"
+					t1."Value2"
 				FROM
 					(
 						SELECT
-							t."Id",
-							t."Value2"
+							q."Id",
+							q."Value2"
 						FROM
-							"ValueConversion" t
-					) q
+							"ValueConversion" q
+					) t1
 				ORDER BY
-					q."Id"
-			) t1
+					t1."Id"
+			) t2
 		WHERE
-			ROWNUM <= :take
-	) t2
+			ROWNUM <= (:skip + 1)
+	) t3
 WHERE
-	t2.RN > :skip
+	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

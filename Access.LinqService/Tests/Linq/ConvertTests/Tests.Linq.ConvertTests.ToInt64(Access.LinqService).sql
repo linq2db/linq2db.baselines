@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t].[MoneyValue]
+	[p_1].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			[p].[MoneyValue]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	[t].[MoneyValue] > 0
+	[p_1].[MoneyValue] > 0
 

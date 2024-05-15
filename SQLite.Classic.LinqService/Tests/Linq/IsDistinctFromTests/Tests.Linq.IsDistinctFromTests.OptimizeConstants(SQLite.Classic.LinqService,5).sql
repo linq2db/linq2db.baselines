@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 
@@ -10,5 +10,5 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 

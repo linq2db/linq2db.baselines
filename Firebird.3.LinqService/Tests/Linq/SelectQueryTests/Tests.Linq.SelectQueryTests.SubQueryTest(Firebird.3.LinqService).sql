@@ -40,43 +40,37 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
+	"t_1"."Id",
+	"t_1"."Value",
+	"t2"."not_null",
 	"t2"."Value1",
 	"t2"."Value2"
 FROM
-	(
-		SELECT
-			DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "Value1",
-			DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
-		FROM
-			"SampleClass" "t"
-		WHERE
-			"t"."Value" = 1
-		UNION
-		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-				FROM rdb$database
-			) "t1"
-	) "t2"
-FETCH NEXT @take ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-SELECT
-	"t"."Id",
-	"t"."Value"
-FROM
-	"SampleClass" "t"
+	"SampleClass" "t_1"
+		LEFT JOIN (
+			SELECT
+				"t1"."Value1",
+				"t1"."Value2",
+				1 as "not_null"
+			FROM
+				(
+					SELECT
+						DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "Value1",
+						DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
+					FROM
+						"SampleClass" "t"
+					WHERE
+						"t"."Value" = 1
+					UNION
+					SELECT
+						DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+						DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+					FROM rdb$database
+				) "t1"
+			FETCH NEXT 1 ROWS ONLY
+		) "t2" ON 1=1
 
 BeforeExecute
 -- Firebird.3 Firebird3

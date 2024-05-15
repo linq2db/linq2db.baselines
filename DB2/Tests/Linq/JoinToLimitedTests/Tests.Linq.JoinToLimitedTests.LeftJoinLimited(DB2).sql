@@ -4,16 +4,18 @@
 SELECT
 	"o"."ParentID",
 	"o"."Value1",
-	"cg"."ParentID",
-	"cg"."ChildID"
+	"c_2"."ParentID",
+	"c_2"."ChildID"
 FROM
 	"Parent" "o"
 		LEFT JOIN (
 			SELECT
-				"t1"."ParentID",
-				"t1"."ChildID"
+				"c_1"."ParentID",
+				"c_1"."ChildID"
 			FROM
-				"Child" "t1"
-			FETCH FIRST 1 ROWS ONLY
-		) "cg" ON "o"."ParentID" = "cg"."ParentID"
+				"Child" "c_1"
+			FETCH NEXT 1 ROWS ONLY
+		) "c_2" ON "o"."ParentID" = "c_2"."ParentID"
+ORDER BY
+	"c_2"."ChildID" DESC
 

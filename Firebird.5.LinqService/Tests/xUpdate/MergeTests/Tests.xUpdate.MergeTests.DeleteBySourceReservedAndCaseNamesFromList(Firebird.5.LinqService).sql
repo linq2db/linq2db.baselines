@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS INSERT_1 FROM rdb$database
+	SELECT 3 AS "source_INSERT" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -244,9 +244,9 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	INSERT_1
+	"source_INSERT"
 )
-ON ("Source".INSERT_1 = "Target"."Id")
+ON ("Source"."source_INSERT" = "Target"."Id")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = 2 THEN DELETE
 

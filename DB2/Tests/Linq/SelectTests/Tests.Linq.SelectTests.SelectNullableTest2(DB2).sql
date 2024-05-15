@@ -52,25 +52,25 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_".ID,
-	"_"."MoneyValue",
-	"_"."DateTimeValue",
-	"_"."BoolValue",
-	"_"."GuidValue",
-	"_"."BinaryValue",
-	"_"."SmallIntValue",
-	"_"."StringValue"
+	"t1".ID,
+	"t1"."MoneyValue",
+	"t1"."DateTimeValue",
+	"t1"."BoolValue",
+	"t1"."GuidValue",
+	"t1"."BinaryValue",
+	"t1"."SmallIntValue",
+	"t1"."StringValue"
 FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	"_".ID = 1000
-FETCH FIRST 1 ROWS ONLY
+	"t1".ID = 1000
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "_"
+	"LinqDataTypes" "t1"
 WHERE
-	"_".ID = 1000
+	"t1".ID = 1000
 

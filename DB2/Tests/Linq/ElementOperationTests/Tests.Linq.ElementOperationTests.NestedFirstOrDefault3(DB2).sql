@@ -4,12 +4,12 @@
 SELECT
 	(
 		SELECT DISTINCT
-			"c_1"."ParentID"
+			"a_Children"."ParentID"
 		FROM
-			"Child" "c_1"
+			"Child" "a_Children"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
+			"p"."ParentID" = "a_Children"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

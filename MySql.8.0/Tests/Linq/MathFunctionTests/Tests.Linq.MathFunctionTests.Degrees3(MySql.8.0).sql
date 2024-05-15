@@ -2,14 +2,14 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t`.`c1`
+	`t_1`.`c1`
 FROM
 	(
 		SELECT
-			Degrees(Cast(Floor(`p`.`MoneyValue`) as SIGNED)) as `c1`
+			Degrees(CAST(Floor(`t`.`MoneyValue`) AS SIGNED)) as `c1`
 		FROM
-			`LinqDataTypes` `p`
-	) `t`
+			`LinqDataTypes` `t`
+	) `t_1`
 WHERE
-	Cast(`t`.`c1` as DOUBLE) <> 0.10000000000000001
+	CAST(`t_1`.`c1` AS DOUBLE) <> 0.10000000000000001
 

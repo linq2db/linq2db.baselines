@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE

@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.c1
+	p_1.c1
 FROM
 	(
 		SELECT
-			toInt16(roundBankers(t.MoneyValue)) as c1
+			toInt16(roundBankers(p.MoneyValue)) as c1
 		FROM
-			LinqDataTypes t
-	) p
+			LinqDataTypes p
+	) p_1
 WHERE
-	p.c1 > toInt16(0)
+	p_1.c1 > toInt16(0)
 

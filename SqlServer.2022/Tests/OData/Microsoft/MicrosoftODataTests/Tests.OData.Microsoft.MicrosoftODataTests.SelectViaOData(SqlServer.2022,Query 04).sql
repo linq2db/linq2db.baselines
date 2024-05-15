@@ -33,15 +33,22 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Min([selectParam].[YearsExperience])
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[MIN_1]
 FROM
-	[odata_person] [selectParam]
-GROUP BY
-	[selectParam].[Title]
+	(
+		SELECT
+			MIN([it].[YearsExperience]) as [MIN_1],
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
+		FROM
+			[odata_person] [it]
+		GROUP BY
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	Min([selectParam].[YearsExperience])
+	[it_1].[MIN_1]
 
 BeforeExecute
 -- SqlServer.2022

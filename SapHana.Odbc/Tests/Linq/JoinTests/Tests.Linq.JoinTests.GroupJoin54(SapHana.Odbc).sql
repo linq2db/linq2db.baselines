@@ -4,17 +4,26 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "ch_1"
 		WHERE
-			"p"."ParentID" = "t1"."ParentID"
+			"t2"."ParentID" = "ch_1"."ParentID"
 	),
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Parent" "p"
-		LEFT JOIN "Child" "ch" ON "ch"."ParentID" = "p"."ParentID"
+	"Parent" "t2"
+		INNER JOIN LATERAL (
+			SELECT
+				"ch"."ParentID",
+				"ch"."ChildID"
+			FROM
+				"Child" "ch"
+			WHERE
+				"t2"."ParentID" = "ch"."ParentID"
+			LIMIT 1
+		) "t1" ON 1=1
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 

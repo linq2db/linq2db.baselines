@@ -64,19 +64,17 @@ DECLARE @EnumWithNullDeclarative Varchar2 -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" e
 SET
-	"ValueConversion"."Value1" = "ValueConversion"."Value1",
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative
+	"Value1" = e."Value1",
+	"Value2" = :Value2,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative
 WHERE
-	"ValueConversion"."Id" = 1
+	e."Id" = 1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -93,7 +91,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -119,24 +117,22 @@ DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" t1
 SET
-	"ValueConversion"."Value1" = :Value1,
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."Enum" = :Enum,
-	"ValueConversion"."EnumNullable" = :EnumNullable,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = :BoolValue,
-	"ValueConversion"."AnotherBoolValue" = :AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
+	"Value1" = :Value1,
+	"Value2" = :Value2,
+	"Enum" = :Enum,
+	"EnumNullable" = :EnumNullable,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"BoolValue" = :BoolValue,
+	"AnotherBoolValue" = :AnotherBoolValue,
+	"DateTimeNullable" = :DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -153,7 +149,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -179,24 +175,22 @@ DECLARE @Id Int32
 SET     @Id = 3
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" t1
 SET
-	"ValueConversion"."Value1" = :Value1,
-	"ValueConversion"."Value2" = :Value2,
-	"ValueConversion"."Enum" = :Enum,
-	"ValueConversion"."EnumNullable" = :EnumNullable,
-	"ValueConversion"."EnumWithNull" = :EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = :EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = :BoolValue,
-	"ValueConversion"."AnotherBoolValue" = :AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = :DateTimeNullable
+	"Value1" = :Value1,
+	"Value2" = :Value2,
+	"Enum" = :Enum,
+	"EnumNullable" = :EnumNullable,
+	"EnumWithNull" = :EnumWithNull,
+	"EnumWithNullDeclarative" = :EnumWithNullDeclarative,
+	"BoolValue" = :BoolValue,
+	"AnotherBoolValue" = :AnotherBoolValue,
+	"DateTimeNullable" = :DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -213,7 +207,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 3
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

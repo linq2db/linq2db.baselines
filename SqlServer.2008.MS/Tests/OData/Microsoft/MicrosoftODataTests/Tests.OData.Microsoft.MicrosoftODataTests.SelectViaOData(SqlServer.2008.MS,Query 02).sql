@@ -35,24 +35,12 @@ BeforeExecute
 
 SELECT
 	N'Title',
-	[selectParam].[Title],
-	(
-		SELECT
-			Count(*)
-		FROM
-			(
-				SELECT DISTINCT
-					[$it].[YearsExperience]
-				FROM
-					[odata_person] [$it]
-				WHERE
-					[selectParam].[Title] = [$it].[Title]
-			) [t1]
-	)
+	[it].[Title],
+	COUNT(DISTINCT [it].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	[odata_person] [it]
 GROUP BY
-	[selectParam].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

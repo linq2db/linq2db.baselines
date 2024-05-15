@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 226
 
 SELECT
-	DateAdd(Millisecond, Cast(@p as Int), "t"."DateTimeValue")
+	DateAdd(Millisecond, 226, "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

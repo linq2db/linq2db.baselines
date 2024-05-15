@@ -2,17 +2,21 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	DatePart(year, [t1].[Key_1]),
-	DatePart(month, [t1].[Key_1])
+	SUM([grp_1].[MoneyValue]),
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 FROM
 	(
 		SELECT
-			DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0) as [Key_1],
-			[selectParam].[MoneyValue]
+			DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0) as [Date_1],
+			[grp].[MoneyValue],
+			DatePart(year, DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0)) as [Year_1],
+			DatePart(month, DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0)) as [Month_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [grp]
+	) [grp_1]
 GROUP BY
-	[t1].[Key_1]
+	[grp_1].[Date_1],
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 

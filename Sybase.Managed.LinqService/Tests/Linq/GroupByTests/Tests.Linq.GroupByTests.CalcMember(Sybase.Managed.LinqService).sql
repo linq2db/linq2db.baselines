@@ -2,22 +2,21 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[groupedData_1].[c1],
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [child].[FirstName] = 'John'
-					THEN [child].[FirstName]
+				WHEN [child].[FirstName] = 'John' THEN [child].[FirstName]
 				ELSE 'a'
 			END as [c1]
 		FROM
-			[Parent] [parent_1],
+			[Parent] [groupedData],
 			[Person] [child]
 		WHERE
-			[child].[PersonID] = [parent_1].[ParentID]
-	) [t1]
+			[child].[PersonID] = [groupedData].[ParentID]
+	) [groupedData_1]
 GROUP BY
-	[t1].[c1]
+	[groupedData_1].[c1]
 

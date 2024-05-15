@@ -31,12 +31,10 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",
@@ -61,23 +59,21 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(18)),
+	"LastName" = CAST(@LastName AS VARCHAR(8)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(12)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"x"."FirstName",
 	"x"."PersonID",
 	"x"."LastName",

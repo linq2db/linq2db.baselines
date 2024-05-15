@@ -4,6 +4,7 @@ DECLARE @take Int -- Int32
 SET     @take = 5
 
 SELECT TOP (@take)
+	[t1].[Discontinued],
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -13,7 +14,6 @@ SELECT TOP (@take)
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
 	[t1].[ReorderLevel],
-	[t1].[Discontinued],
 	[t1].[CategoryName],
 	[t1].[ProductName_1]
 FROM
@@ -29,11 +29,11 @@ FROM
 			[p].[UnitsOnOrder],
 			[p].[ReorderLevel],
 			[p].[Discontinued],
-			[g_1].[CategoryName],
+			[c_1].[CategoryName],
 			[p].[ProductName] as [ProductName_1]
 		FROM
 			[Products] [p]
-				LEFT JOIN [Categories] [g_1] ON [p].[CategoryID] = [g_1].[CategoryID]
+				LEFT JOIN [Categories] [c_1] ON [p].[CategoryID] = [c_1].[CategoryID]
 		UNION
 		SELECT
 			[p_1].[ProductID],
@@ -46,10 +46,10 @@ FROM
 			[p_1].[UnitsOnOrder],
 			[p_1].[ReorderLevel],
 			[p_1].[Discontinued],
-			[g_2].[CategoryName],
+			[c_2].[CategoryName],
 			[p_1].[ProductName] as [ProductName_1]
 		FROM
 			[Products] [p_1]
-				LEFT JOIN [Categories] [g_2] ON [p_1].[CategoryID] = [g_2].[CategoryID]
+				LEFT JOIN [Categories] [c_2] ON [p_1].[CategoryID] = [c_2].[CategoryID]
 	) [t1]
 

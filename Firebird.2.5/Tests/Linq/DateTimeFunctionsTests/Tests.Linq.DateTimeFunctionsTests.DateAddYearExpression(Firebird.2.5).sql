@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 11
 
 SELECT
-	DateAdd(Year, Cast(@p as Int), "t"."DateTimeValue")
+	CAST(DateAdd(Year, 11, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 

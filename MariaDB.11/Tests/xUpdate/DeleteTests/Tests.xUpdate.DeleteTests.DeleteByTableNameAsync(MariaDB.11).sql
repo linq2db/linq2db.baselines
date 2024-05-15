@@ -47,14 +47,12 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`t1`.`FirstName`,
@@ -64,24 +62,24 @@ SELECT
 	`t1`.`Gender`
 FROM
 	`xxPerson` `t1`
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 
-DELETE   `t1`
+DELETE  
 FROM
-	`xxPerson` `t1`
+	`xxPerson`
 WHERE
-	`t1`.`PersonID` = @ID
+	`xxPerson`.`PersonID` = @ID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPerson` `t1`
 

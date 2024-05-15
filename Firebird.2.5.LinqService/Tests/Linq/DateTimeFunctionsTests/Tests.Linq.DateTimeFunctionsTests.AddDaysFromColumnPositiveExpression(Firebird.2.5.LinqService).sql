@@ -6,7 +6,7 @@ DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = CAST('2018-01-03' AS timestamp)
-DECLARE @BoolValue Char(1) -- String
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = '0'
 DECLARE @GuidValue Guid
 SET     @GuidValue = X'00000000000000000000000000000000'
@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2018-01-02' AS timestamp)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > @p
+	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID = 5000
+	"t".ID = 5000
 

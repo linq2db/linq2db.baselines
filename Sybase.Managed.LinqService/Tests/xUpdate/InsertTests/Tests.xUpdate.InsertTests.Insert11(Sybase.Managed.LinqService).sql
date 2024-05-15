@@ -2,9 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Max([t].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [t]
+	[Person] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

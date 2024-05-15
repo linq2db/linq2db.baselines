@@ -50,32 +50,30 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`ID`,
-	`_`.`MoneyValue`,
-	`_`.`DateTimeValue`,
-	`_`.`DateTimeValue2`,
-	`_`.`BoolValue`,
-	`_`.`GuidValue`,
-	`_`.`SmallIntValue`,
-	`_`.`IntValue`,
-	`_`.`BigIntValue`,
-	`_`.`StringValue`
+	`t1`.`ID`,
+	`t1`.`MoneyValue`,
+	`t1`.`DateTimeValue`,
+	`t1`.`DateTimeValue2`,
+	`t1`.`BoolValue`,
+	`t1`.`GuidValue`,
+	`t1`.`SmallIntValue`,
+	`t1`.`IntValue`,
+	`t1`.`BigIntValue`,
+	`t1`.`StringValue`
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes` `t1`
 WHERE
-	`_`.`ID` = 1000
-LIMIT @take
+	`t1`.`ID` = 1000
+LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `_`
+DELETE  
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes`
 WHERE
-	`_`.`ID` = 1000
+	`LinqDataTypes`.`ID` = 1000
 

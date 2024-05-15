@@ -58,10 +58,10 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData",
@@ -83,7 +83,7 @@ FROM
 					x."OrderData1"
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip

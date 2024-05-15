@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	DateAdd(quarter, -1, [t].[TransactionDate])
+	CAST(DateAdd(quarter, -1, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

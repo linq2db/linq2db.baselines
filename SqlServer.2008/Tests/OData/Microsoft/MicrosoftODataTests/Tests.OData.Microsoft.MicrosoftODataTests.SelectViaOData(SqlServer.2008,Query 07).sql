@@ -34,34 +34,22 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t2].[Name],
-	[t2].[Key_1],
-	[t2].[Value_1]
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[COUNT_1]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					(
-						SELECT DISTINCT
-							[$it].[YearsExperience]
-						FROM
-							[odata_person] [$it]
-						WHERE
-							[selectParam].[Title] = [$it].[Title]
-					) [t1]
-			) as [Value_1],
+			COUNT(DISTINCT [it].[YearsExperience]) as [COUNT_1],
 			N'Title' as [Name],
-			[selectParam].[Title] as [Key_1]
+			[it].[Title] as [Value_1]
 		FROM
-			[odata_person] [selectParam]
+			[odata_person] [it]
 		GROUP BY
-			[selectParam].[Title]
-	) [t2]
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	[t2].[Value_1]
+	[it_1].[COUNT_1]
 
 BeforeExecute
 -- SqlServer.2008

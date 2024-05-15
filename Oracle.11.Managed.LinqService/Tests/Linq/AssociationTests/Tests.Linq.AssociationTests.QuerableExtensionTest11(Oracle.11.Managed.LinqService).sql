@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	c_1."ParentID",
-	c_1."ChildID"
+	a_QueryableChildren."ParentID",
+	a_QueryableChildren."ChildID"
 FROM
-	"Parent" cp
-		INNER JOIN "Child" c_1 ON cp."ParentID" = c_1."ParentID"
+	"Parent" t1
+		INNER JOIN "Child" a_QueryableChildren ON t1."ParentID" = a_QueryableChildren."ParentID"
 

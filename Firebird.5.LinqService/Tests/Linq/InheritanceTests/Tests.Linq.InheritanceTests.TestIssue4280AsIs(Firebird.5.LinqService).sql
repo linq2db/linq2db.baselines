@@ -76,9 +76,9 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
+	"t1"."DeviceType",
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."DeviceType",
 	"t1"."Location"
 FROM
 	"Issue4280" "t1"
@@ -97,13 +97,13 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
-	"Issue4280"
+	"Issue4280" "t1"
 SET
-	"Issue4280"."SerialNumber" = @SerialNumber,
-	"Issue4280"."DeviceType" = @DeviceType,
-	"Issue4280"."Location" = @Location
+	"SerialNumber" = CAST(@SerialNumber AS VARCHAR(7)),
+	"DeviceType" = CAST(@DeviceType AS VARCHAR(2)),
+	"Location" = CAST(@Location AS VARCHAR(8))
 WHERE
-	"Issue4280"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -115,20 +115,20 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"Issue4280"
+	"Issue4280" "t1"
 SET
-	"Issue4280"."SerialNumber" = @SerialNumber,
-	"Issue4280"."DeviceType" = @DeviceType
+	"SerialNumber" = CAST(@SerialNumber AS VARCHAR(9)),
+	"DeviceType" = CAST(@DeviceType AS VARCHAR(7))
 WHERE
-	"Issue4280"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
+	"t1"."DeviceType",
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."DeviceType",
 	"t1"."Location"
 FROM
 	"Issue4280" "t1"

@@ -494,28 +494,17 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
-SELECT
-	"t1"."DuplicateData",
-	"t1"."OrderData2"
+SELECT DISTINCT
+	"x"."DuplicateData",
+	"x"."OrderData2"
 FROM
-	(
-		SELECT
-			"x"."DuplicateData",
-			"x"."OrderData2",
-			ROW_NUMBER() OVER (ORDER BY Min("x"."OrderData1"), "x"."OrderData2" DESC) as RN
-		FROM
-			"OrderByDistinctData" "x"
-		GROUP BY
-			"x"."DuplicateData",
-			"x"."OrderData2"
-	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= @take
+	"OrderByDistinctData" "x"
+ORDER BY
+	"x"."OrderData2" DESC
+OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

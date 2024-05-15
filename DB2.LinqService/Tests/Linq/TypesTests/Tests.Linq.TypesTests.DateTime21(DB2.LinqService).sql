@@ -16,7 +16,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -24,11 +24,11 @@ DECLARE @dt Timestamp(20) -- DateTime
 SET     @dt = '2010-12-14-05.00.07.425014'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."DateTimeValue" = @dt
+	"DateTimeValue" = CAST(@dt AS timestamp)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -48,7 +48,7 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -56,9 +56,9 @@ DECLARE @pdt Timestamp(20) -- DateTime
 SET     @pdt = '2001-01-11-01.11.21.100000'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."DateTimeValue" = @pdt
+	"DateTimeValue" = CAST(@pdt AS timestamp)
 WHERE
-	"LinqDataTypes".ID = 1
+	"t".ID = 1
 

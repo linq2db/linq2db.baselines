@@ -218,22 +218,22 @@ DECLARE @uptoDate Timestamp(20) -- DateTime
 SET     @uptoDate = '2020-02-29-17.54.55.123123'
 
 SELECT
-	"t4"."SourceInstrumentCode"
+	"t5"."SourceInstrumentCode"
 FROM
 	(
 		SELECT DISTINCT
 			"ins"."SourceInstrumentCode"
 		FROM
-			T1 "_"
-				INNER JOIN T2 "idx" ON "_"."InstrumentId" = "idx"."InstrumentId"
+			T1 "t4"
+				INNER JOIN T2 "idx" ON "t4"."InstrumentId" = "idx"."InstrumentId"
 				INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 				INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 		WHERE
-			"ins"."SourceInstrumentCode" IS NOT NULL AND "_"."InstrumentCode" LIKE @cond ESCAPE '~' AND
-			"_"."CreateDate" <= @uptoDate
-	) "t4"
+			"t4"."InstrumentCode" LIKE @cond ESCAPE '~' AND "t4"."CreateDate" <= @uptoDate AND
+			"ins"."SourceInstrumentCode" IS NOT NULL
+	) "t5"
 ORDER BY
-	"t4"."SourceInstrumentCode"
+	"t5"."SourceInstrumentCode"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

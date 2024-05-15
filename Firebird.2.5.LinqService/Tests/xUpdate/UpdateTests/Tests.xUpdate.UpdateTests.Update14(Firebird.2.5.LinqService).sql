@@ -32,17 +32,17 @@ DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."LastName" = Cast((Char_Length(Cast(@name as VarChar(255) CHARACTER SET UNICODE_FSS)) + Cast(@idx as Int)) as VarChar(11) CHARACTER SET UNICODE_FSS)
+	"LastName" = Char_Length(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int)
 WHERE
-	"Person"."FirstName" STARTING WITH 'Update14'
+	"t1"."FirstName" STARTING WITH 'Update14'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "t1"
 WHERE

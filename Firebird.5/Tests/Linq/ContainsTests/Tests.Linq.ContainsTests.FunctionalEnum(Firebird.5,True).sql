@@ -37,8 +37,6 @@ SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -46,12 +44,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -59,12 +55,10 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -72,12 +66,10 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -85,12 +77,10 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -98,7 +88,7 @@ FROM
 	"Src" "s"
 WHERE
 	("s"."Enum" NOT IN ('THREE', 'TWO') OR "s"."Enum" IS NULL)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

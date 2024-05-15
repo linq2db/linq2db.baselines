@@ -74,8 +74,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -91,7 +89,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 1 AND ROWNUM <= :take
+	e."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -129,8 +127,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -146,7 +142,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 2 AND ROWNUM <= :take
+	e."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -200,8 +196,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -217,13 +211,13 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = 3 AND ROWNUM <= :take
+	e."Id" = 3 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"ValueConversion" t1
 

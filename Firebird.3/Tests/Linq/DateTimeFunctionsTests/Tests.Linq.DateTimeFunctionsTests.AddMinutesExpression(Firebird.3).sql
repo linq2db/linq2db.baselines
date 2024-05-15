@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = -8
 
 SELECT
-	DateAdd(Minute, Cast(@p as Int), "t"."DateTimeValue")
+	Extract(minute from DateAdd(Minute, -8, "t"."DateTimeValue"))
 FROM
 	"LinqDataTypes" "t"
 

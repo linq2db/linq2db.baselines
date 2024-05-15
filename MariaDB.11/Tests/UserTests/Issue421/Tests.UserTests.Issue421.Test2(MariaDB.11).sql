@@ -32,34 +32,34 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 UPDATE
-	`BlobClass` `_`
+	`BlobClass` `t1`
 SET
-	`_`.`BlobValue` = 0x030201
+	`t1`.`BlobValue` = 0x030201
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`_`.`Id`,
-	`_`.`BlobValue`
+	`t1`.`Id`,
+	`t1`.`BlobValue`
 FROM
-	`BlobClass` `_`
+	`BlobClass` `t1`
 WHERE
-	`_`.`Id` = 1
+	`t1`.`Id` = 1
 LIMIT 1
 
 BeforeExecute

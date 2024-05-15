@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	((_.PersonID = toInt32(1) OR _.PersonID <= toInt32(1)) OR _.PersonID = toInt32(1))
+	(t1.PersonID = 1 OR t1.PersonID <= 1 OR t1.PersonID = 1)
 

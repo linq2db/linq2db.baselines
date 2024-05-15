@@ -107,16 +107,16 @@ BeforeExecute
 UPDATE
 	"Test3697Item"
 SET
-	"Test3697Item"."Value" = 1
+	"Value" = 1
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"Test3697" "cp"
-				INNER JOIN "Test3697Item" "c_1" ON "cp"."Id" = "c_1"."TestId"
+			"Test3697" "a"
+				INNER JOIN "Test3697Item" "a_Items" ON "a"."Id" = "a_Items"."TestId"
 		WHERE
-			"Test3697Item"."Id" = "c_1"."Id"
+			"Test3697Item"."Id" = "a_Items"."Id"
 	)
 RETURNING
 	NEW."Id"
@@ -127,7 +127,7 @@ BeforeExecute
 UPDATE
 	"Test3697Item"
 SET
-	"Test3697Item"."Value" = 1
+	"Value" = 1
 WHERE
 	EXISTS(
 		SELECT

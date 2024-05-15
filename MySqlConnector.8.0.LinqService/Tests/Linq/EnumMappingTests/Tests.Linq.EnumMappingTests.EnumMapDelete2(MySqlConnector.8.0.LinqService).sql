@@ -3,11 +3,11 @@
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -26,20 +26,20 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` = 101 AND `t1`.`BigIntValue` = 12
+	`LinqDataTypes`.`ID` = 101 AND `LinqDataTypes`.`BigIntValue` = 12
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
 

@@ -3,7 +3,7 @@
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @take Int -- Int32
-SET     @take = 7
+SET     @take = 5
 
 SELECT
 	[t2].[ParentID],
@@ -18,5 +18,5 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 

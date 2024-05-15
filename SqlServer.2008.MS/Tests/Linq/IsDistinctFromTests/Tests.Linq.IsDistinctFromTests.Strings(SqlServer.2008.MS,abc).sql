@@ -36,7 +36,7 @@ DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -48,7 +48,7 @@ DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -60,7 +60,7 @@ DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -72,7 +72,7 @@ DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

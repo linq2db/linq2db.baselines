@@ -263,38 +263,28 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+DECLARE @take Int -- Int32
+SET     @take = 2
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
 SET     @int2 = 22
 DECLARE @int3 Int -- Int32
 SET     @int3 = 33
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @someId Int -- Int32
 SET     @someId = 100
 
-UPDATE
+UPDATE TOP (@take)
 	[t1]
 SET
-	[t1].[Value1] = ([t1].[Value1] * [t1].[Value1_1]) * @int1,
-	[t1].[Value2] = ([t1].[Value2] * [t1].[Value2_1]) * @int2,
-	[t1].[Value3] = ([t1].[Value3] * [t1].[Value3_1]) * @int3
+	[t1].[Value1] = ([t1].[Value1] * [t].[Value1]) * @int1,
+	[t1].[Value2] = ([t1].[Value2] * [t].[Value2]) * @int2,
+	[t1].[Value3] = ([t1].[Value3] * [t].[Value3]) * @int3
 FROM
-	(
-		SELECT TOP (@take)
-			[c_1].[Value1],
-			[t].[Value1] as [Value1_1],
-			[c_1].[Value2],
-			[t].[Value2] as [Value2_1],
-			[c_1].[Value3],
-			[t].[Value3] as [Value3_1]
-		FROM
-			[UpdatedEntities] [c_1]
-				INNER JOIN [NewEntities] [t] ON [t].[id] = [c_1].[id]
-		WHERE
-			[t].[id] <> @someId
-	) [t1]
+	[UpdatedEntities] [t1]
+		INNER JOIN [NewEntities] [t] ON [t].[id] = [t1].[id]
+WHERE
+	[t].[id] <> @someId
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

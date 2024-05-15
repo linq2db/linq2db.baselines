@@ -278,7 +278,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Cast(Floor(Extract(month from "t"."TransactionDate")) as int)
+	Extract(month from "t"."TransactionDate")
 FROM
 	"Transactions" "t"
 

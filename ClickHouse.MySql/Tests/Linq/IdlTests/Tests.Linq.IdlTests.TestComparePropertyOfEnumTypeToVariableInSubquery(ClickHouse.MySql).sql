@@ -6,7 +6,7 @@ SELECT
 	x.Diagnosis
 FROM
 	Patient x
-		INNER JOIN Person x1 ON x.PersonID = x1.PersonID
+		INNER JOIN Person y ON x.PersonID = y.PersonID
 WHERE
-	x1.Gender = 'O'
+	y.Gender = 'O'
 

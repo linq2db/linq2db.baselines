@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" p
 		LEFT JOIN "Parent" "a_Parent" ON p."ParentID" = "a_Parent"."ParentID"

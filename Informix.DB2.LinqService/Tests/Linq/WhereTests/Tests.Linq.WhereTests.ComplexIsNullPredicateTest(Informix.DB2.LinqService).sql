@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -10,20 +10,16 @@ SELECT
 				Person t1
 			WHERE
 				CASE
-					WHEN t1.MiddleName = '123'
+					WHEN t1.MiddleName = '123' THEN 't'
+					ELSE 'f'
+				END::BOOLEAN = CASE
+					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
 						THEN 't'
 					ELSE 'f'
-				END = CASE
-					WHEN CASE
-						WHEN t1.MiddleName = '1' THEN 'test'
-						ELSE t1.MiddleName
-					END = 'test'
-						THEN 't'
-					ELSE 'f'
-				END
+				END::BOOLEAN
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END::BOOLEAN
 FROM table(set{1})
 

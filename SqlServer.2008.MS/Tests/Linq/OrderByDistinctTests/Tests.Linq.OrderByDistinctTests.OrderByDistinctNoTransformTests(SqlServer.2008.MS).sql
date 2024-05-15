@@ -74,7 +74,7 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

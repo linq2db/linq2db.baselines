@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'Update14',
-	toInt32(100),
+	100,
 	'whatever',
 	NULL,
 	'M'
@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE
 	Person
 UPDATE
-	LastName = toString(CHAR_LENGTH('Update14') + toInt32(4))
+	LastName = toString(CHAR_LENGTH('Update14') + 4)
 WHERE
 	startsWith(FirstName, 'Update14')
 
@@ -32,9 +32,9 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	startsWith(_.FirstName, 'Update14')
+	startsWith(t1.FirstName, 'Update14')
 

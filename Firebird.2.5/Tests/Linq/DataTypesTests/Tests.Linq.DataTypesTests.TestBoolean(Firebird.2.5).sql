@@ -35,9 +35,9 @@ SELECT 2,'0','1' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Column Char(1) -- String
+DECLARE @Column Char -- String
 SET     @Column = '0'
-DECLARE @ColumnNullable Char(1) -- String
+DECLARE @ColumnNullable Char -- String
 SET     @ColumnNullable = '1'
 
 SELECT
@@ -71,7 +71,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column Char(1) -- String
+DECLARE @Column Char -- String
 SET     @Column = '1'
 DECLARE @ColumnNullable Char -- String
 SET     @ColumnNullable = NULL
@@ -93,9 +93,9 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column Char(1) -- String
+DECLARE @Column Char -- String
 SET     @Column = '0'
-DECLARE @ColumnNullable Char(1) -- String
+DECLARE @ColumnNullable Char -- String
 SET     @ColumnNullable = '1'
 
 INSERT INTO "BooleanTable"

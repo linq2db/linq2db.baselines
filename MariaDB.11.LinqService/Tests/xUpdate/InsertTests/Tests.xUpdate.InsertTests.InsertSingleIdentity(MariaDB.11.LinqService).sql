@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -18,7 +18,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 

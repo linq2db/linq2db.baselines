@@ -79,12 +79,14 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 11
 
 SELECT
-	"lw_Test3664"."Id",
-	"a"."Id",
-	"a"."TestId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."TestId"
 FROM
-	"Test3664" "lw_Test3664"
-		INNER JOIN "Test3664Item" "a" ON "lw_Test3664"."Id" = "a"."TestId" AND "a"."Id" = @id
+	"Test3664" "m_1"
+		INNER JOIN "Test3664Item" "d" ON "m_1"."Id" = "d"."TestId"
+WHERE
+	"d"."Id" = @id
 
 BeforeExecute
 DisposeTransaction
@@ -104,12 +106,14 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 12
 
 SELECT
-	"lw_Test3664"."Id",
-	"a"."Id",
-	"a"."TestId"
+	"m_1"."Id",
+	"d"."Id",
+	"d"."TestId"
 FROM
-	"Test3664" "lw_Test3664"
-		INNER JOIN "Test3664Item" "a" ON "lw_Test3664"."Id" = "a"."TestId" AND "a"."Id" = @id
+	"Test3664" "m_1"
+		INNER JOIN "Test3664Item" "d" ON "m_1"."Id" = "d"."TestId"
+WHERE
+	"d"."Id" = @id
 
 BeforeExecute
 DisposeTransaction

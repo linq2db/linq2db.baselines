@@ -63,29 +63,29 @@ AS
 	FROM
 		[HierarchyTree] [t1]
 ),
-[hierarchyDown] ([Id], [Level])
+[hierarchyDown] ([Level_1], [Id])
 AS
 (
 	SELECT
-		[t_1].[Id],
-		0
+		0,
+		[t2].[Id]
 	FROM
-		[CTE_1] [t_1]
+		[CTE_1] [t2]
 	UNION ALL
 	SELECT
-		[t_2].[Id],
-		[h].[Level] + 1
+		[t3].[Level_1] + 1,
+		[t_1].[Id]
 	FROM
-		[hierarchyDown] [h]
-			INNER JOIN [CTE_2] [t_2] ON [t_2].[ParentId] = [h].[Id]
+		[hierarchyDown] [t3]
+			INNER JOIN [CTE_2] [t_1] ON [t_1].[ParentId] = [t3].[Id]
 )
 SELECT
-	[t2].[Id],
-	[t2].[Level]
+	[t4].[Id],
+	[t4].[Level_1]
 FROM
-	[hierarchyDown] [t2]
+	[hierarchyDown] [t4]
 ORDER BY
-	[t2].[Id]
+	[t4].[Id]
 
 BeforeExecute
 -- SqlServer.2022

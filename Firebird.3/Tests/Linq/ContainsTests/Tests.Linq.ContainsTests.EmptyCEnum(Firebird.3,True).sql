@@ -39,7 +39,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
@@ -49,21 +49,17 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" "s"
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Firebird.3 Firebird3

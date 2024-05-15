@@ -16,7 +16,7 @@ FROM
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @param2 Char(1) -- String
+DECLARE @param2 Char -- String
 SET     @param2 = '0'
 
 SELECT

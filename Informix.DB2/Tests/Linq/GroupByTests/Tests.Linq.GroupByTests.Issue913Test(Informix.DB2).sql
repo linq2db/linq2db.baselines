@@ -72,27 +72,20 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.c1,
-	Count(*)
+	g_2.IsDelisted,
+	COUNT(*)
 FROM
 	(
 		SELECT
-			Cast(CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN 't'
+			CASE
+				WHEN g_1.TradingStatus = 'D' THEN 't'
 				ELSE 'f'
-			END as BOOLEAN) as Key_1,
-			Cast(CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN 't'
-				ELSE 'f'
-			END as BOOLEAN) as c1
+			END::BOOLEAN as IsDelisted
 		FROM
-			Issue913Test selectParam
-	) t1
+			Issue913Test g_1
+	) g_2
 GROUP BY
-	t1.Key_1,
-	t1.c1
+	g_2.IsDelisted
 
 BeforeExecute
 -- Informix.DB2 Informix

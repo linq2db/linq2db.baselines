@@ -32,22 +32,19 @@ IF (OBJECT_ID(N'[CustomerApplication]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[i].[DocumentNo],
-	[a_CustomerApplication].[Id]
+	[t1].[Id]
 FROM
 	[PropertyHistory] [i]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[a].[Id]
+		LEFT JOIN (
+			SELECT
+				[a_CustomerApplication].[Id],
+				ROW_NUMBER() OVER (PARTITION BY [a_CustomerApplication].[Id] ORDER BY [a_CustomerApplication].[Id]) as [rn]
 			FROM
-				[CustomerApplication] [a]
-			WHERE
-				[a].[Id] = Convert(Int, [i].[DocumentNo])
-		) [a_CustomerApplication]
+				[CustomerApplication] [a_CustomerApplication]
+		) [t1] ON [t1].[Id] = CAST([i].[DocumentNo] AS Int) AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

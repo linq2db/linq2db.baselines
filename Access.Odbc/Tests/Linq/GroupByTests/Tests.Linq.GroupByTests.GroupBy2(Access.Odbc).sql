@@ -2,15 +2,16 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[Key_1]
+	[gr_1].[ID],
+	[gr_1].[ID] + 1
 FROM
 	(
 		SELECT
-			Iif([selectParam].[Value1] IS NULL, [c_1].[ChildID], [selectParam].[Value1]) as [Key_1]
+			IIF([gr].[Value1] IS NULL, [c_1].[ChildID], [gr].[Value1]) as [ID]
 		FROM
-			[Parent] [selectParam]
-				INNER JOIN [Child] [c_1] ON ([selectParam].[ParentID] = [c_1].[ParentID])
-	) [t1]
+			[Parent] [gr]
+				INNER JOIN [Child] [c_1] ON ([gr].[ParentID] = [c_1].[ParentID])
+	) [gr_1]
 GROUP BY
-	[t1].[Key_1]
+	[gr_1].[ID]
 

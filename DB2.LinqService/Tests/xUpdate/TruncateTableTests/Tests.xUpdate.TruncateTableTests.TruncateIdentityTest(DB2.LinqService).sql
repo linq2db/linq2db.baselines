@@ -43,25 +43,15 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 1
-DECLARE @take Integer(4) -- Int32
-SET     @take = 3
 
 SELECT
-	"t2".ID,
-	"t2"."Field1"
+	"t1".ID,
+	"t1"."Field1"
 FROM
-	(
-		SELECT
-			"t1".ID,
-			"t1"."Field1",
-			ROW_NUMBER() OVER (ORDER BY "t1".ID) as RN
-		FROM
-			"TestIdTrun" "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= @take
+	"TestIdTrun" "t1"
+ORDER BY
+	"t1".ID
+OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -99,25 +89,15 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 1
-DECLARE @take Integer(4) -- Int32
-SET     @take = 3
 
 SELECT
-	"t2".ID,
-	"t2"."Field1"
+	"t1".ID,
+	"t1"."Field1"
 FROM
-	(
-		SELECT
-			"t1".ID,
-			"t1"."Field1",
-			ROW_NUMBER() OVER (ORDER BY "t1".ID) as RN
-		FROM
-			"TestIdTrun" "t1"
-	) "t2"
-WHERE
-	"t2".RN > @skip AND "t2".RN <= @take
+	"TestIdTrun" "t1"
+ORDER BY
+	"t1".ID
+OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

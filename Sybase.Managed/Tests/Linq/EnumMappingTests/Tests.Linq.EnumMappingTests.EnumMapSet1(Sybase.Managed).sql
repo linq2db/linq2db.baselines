@@ -31,11 +31,9 @@ SET     @TestField = 12
 UPDATE
 	[LinqDataTypes]
 SET
-	[r].[BigIntValue] = @TestField
-FROM
-	[LinqDataTypes] [r]
+	[BigIntValue] = @TestField
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- Sybase.Managed Sybase

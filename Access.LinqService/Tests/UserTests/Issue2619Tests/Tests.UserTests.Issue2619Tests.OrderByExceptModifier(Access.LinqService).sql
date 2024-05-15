@@ -3,7 +3,7 @@
 
 SELECT DISTINCT
 	[t2].[FirstName],
-	[t2].[PersonID],
+	[t2].[ID],
 	[t2].[LastName],
 	[t2].[MiddleName],
 	[t2].[Gender]
@@ -11,7 +11,7 @@ FROM
 	(
 		SELECT TOP 1
 			[t1].[FirstName],
-			[t1].[PersonID],
+			[t1].[PersonID] as [ID],
 			[t1].[LastName],
 			[t1].[MiddleName],
 			[t1].[Gender]
@@ -22,17 +22,26 @@ FROM
 	) [t2]
 WHERE
 	NOT EXISTS(
-		SELECT TOP 1
+		SELECT
 			*
 		FROM
-			[Person] [t3]
+			(
+				SELECT TOP 1
+					[t3].[FirstName],
+					[t3].[PersonID] as [ID],
+					[t3].[LastName],
+					[t3].[MiddleName],
+					[t3].[Gender]
+				FROM
+					[Person] [t3]
+				ORDER BY
+					[t3].[LastName]
+			) [t4]
 		WHERE
-			[t2].[FirstName] = [t3].[FirstName] AND
-			[t2].[PersonID] = [t3].[PersonID] AND
-			[t2].[LastName] = [t3].[LastName] AND
-			[t2].[MiddleName] = [t3].[MiddleName] AND
-			[t2].[Gender] = [t3].[Gender]
-		ORDER BY
-			[t3].[LastName]
+			[t2].[FirstName] = [t4].[FirstName] AND
+			[t2].[ID] = [t4].[ID] AND
+			[t2].[LastName] = [t4].[LastName] AND
+			([t2].[MiddleName] = [t4].[MiddleName] OR [t2].[MiddleName] IS NULL AND [t4].[MiddleName] IS NULL) AND
+			[t2].[Gender] = [t4].[Gender]
 	)
 

@@ -39,16 +39,10 @@ SELECT
 	"t"."Id",
 	"t"."BoolValue"
 FROM
-	"WhereWithBool" "t"
+	"WhereWithBool" "t",
+	"WhereWithBool" "x"
 WHERE
-	(
-		SELECT
-			"x"."BoolValue"
-		FROM
-			"WhereWithBool" "x"
-		WHERE
-			"x"."Id" = 1
-	) = TRUE
+	"x"."BoolValue" = TRUE AND "x"."Id" = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4

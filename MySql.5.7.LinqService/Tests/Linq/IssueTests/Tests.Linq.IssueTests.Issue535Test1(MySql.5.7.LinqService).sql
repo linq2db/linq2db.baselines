@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	`p`.`PersonID`,
@@ -11,5 +9,5 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`FirstName` LIKE 'J%' ESCAPE '~' AND (`p`.`PersonID` = 1 OR `p`.`LastName` = 'fail')
-LIMIT @take
+LIMIT 1
 

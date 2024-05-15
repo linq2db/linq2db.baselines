@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	maxOrNull(_.ParentID)
+	maxOrNull(t1.ParentID)
 FROM
-	Parent _
+	Parent t1
 WHERE
-	_.ParentID < toInt32(0)
+	t1.ParentID < 0
 

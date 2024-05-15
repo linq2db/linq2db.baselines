@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -29,7 +29,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `c_1`
 WHERE
@@ -38,9 +38,9 @@ WHERE
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 

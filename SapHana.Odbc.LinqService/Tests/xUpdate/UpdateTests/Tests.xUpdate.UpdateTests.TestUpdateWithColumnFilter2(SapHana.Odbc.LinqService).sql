@@ -76,8 +76,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."FirstName",
@@ -89,7 +87,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -99,18 +97,16 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = ?
+	"FirstName" = ?
 WHERE
-	"Person"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"x"."FirstName",
@@ -122,7 +118,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."PersonID" = ?
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -138,31 +134,29 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = ?,
-	"Person"."LastName" = ?,
-	"Person"."MiddleName" = ?,
-	"Person"."Gender" = ?
+	"FirstName" = ?,
+	"LastName" = ?,
+	"MiddleName" = ?,
+	"Gender" = ?
 WHERE
-	"Person"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = ?
-LIMIT ?
+	"t1"."PersonID" = ?
+LIMIT 2
 

@@ -46,14 +46,14 @@ DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1
 
 SELECT
-	"_".ID,
-	"_"."Value"
+	"t1".ID,
+	"t1"."Value"
 FROM
-	"KeepIdentityTest" "_"
+	"KeepIdentityTest" "t1"
 WHERE
-	"_".ID > @lastId
+	"t1".ID > @lastId
 ORDER BY
-	"_".ID
+	"t1".ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

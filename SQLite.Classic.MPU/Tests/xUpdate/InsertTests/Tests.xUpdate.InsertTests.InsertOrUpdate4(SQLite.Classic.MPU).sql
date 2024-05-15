@@ -36,28 +36,14 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @i  -- Int32
-SET     @i = 0
 DECLARE @id  -- Int32
 SET     @id = 5
-
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
-SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 0
 
-INSERT INTO [Patient]
+INSERT INTO [Patient] AS [t1]
 (
 	[PersonID],
 	[Diagnosis]
@@ -65,43 +51,59 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	Cast((Length(@diagnosis) + @i) as NVarChar(11))
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	CAST(@diagnosis + @i AS NVarChar(11))
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 5
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
-SET     @id = 5
 
-UPDATE
-	[Patient]
-SET
-	[Diagnosis] = Cast((Length([Patient].[Diagnosis]) + @i) as NVarChar(11))
-WHERE
-	[Patient].[PersonID] = @id
+INSERT INTO [Patient] AS [t1]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	CAST(@diagnosis + @i AS NVarChar(11))
+)
+ON CONFLICT ([PersonID]) DO UPDATE SET
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -110,5 +112,5 @@ FROM
 	[Patient] [p]
 WHERE
 	[p].[PersonID] = @id
-LIMIT @take
+LIMIT 2
 

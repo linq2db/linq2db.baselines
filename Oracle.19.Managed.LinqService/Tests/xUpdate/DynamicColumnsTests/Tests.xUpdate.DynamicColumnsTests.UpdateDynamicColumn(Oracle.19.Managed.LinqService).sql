@@ -18,7 +18,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" c_1
 WHERE
@@ -28,17 +28,17 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"Person"
+	"Person" c_1
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" c_1
 WHERE

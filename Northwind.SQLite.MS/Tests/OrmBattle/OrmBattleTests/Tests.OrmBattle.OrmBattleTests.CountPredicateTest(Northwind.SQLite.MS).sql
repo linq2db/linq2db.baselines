@@ -2,7 +2,7 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Orders] [o]
 WHERE

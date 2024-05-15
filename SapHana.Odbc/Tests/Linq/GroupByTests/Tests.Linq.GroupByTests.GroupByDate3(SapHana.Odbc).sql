@@ -2,17 +2,21 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	Year("t1"."Key_1"),
-	Month("t1"."Key_1")
+	SUM("grp_1"."MoneyValue"),
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 FROM
 	(
 		SELECT
-			Cast((Lpad(Year("selectParam"."DateTimeValue"),4,'0') || '-' || Lpad(Month("selectParam"."DateTimeValue"),2,'0') || '-01') as Date) as "Key_1",
-			"selectParam"."MoneyValue"
+			To_Timestamp(LPad(Year("grp"."DateTimeValue"), 4, '0') || '-' || LPad(Month("grp"."DateTimeValue"), 2, '0') || '-01 00:00:00.000') as "Date_1",
+			"grp"."MoneyValue",
+			Year(To_Timestamp(LPad(Year("grp"."DateTimeValue"), 4, '0') || '-' || LPad(Month("grp"."DateTimeValue"), 2, '0') || '-01 00:00:00.000')) as "Year_1",
+			Month(To_Timestamp(LPad(Year("grp"."DateTimeValue"), 4, '0') || '-' || LPad(Month("grp"."DateTimeValue"), 2, '0') || '-01 00:00:00.000')) as "Month_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+			"LinqDataTypes" "grp"
+	) "grp_1"
 GROUP BY
-	"t1"."Key_1"
+	"grp_1"."Date_1",
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 

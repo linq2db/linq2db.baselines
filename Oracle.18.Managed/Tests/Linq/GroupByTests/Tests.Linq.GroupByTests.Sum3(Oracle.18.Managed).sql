@@ -2,18 +2,24 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1.SUM_1
+FROM
 	(
 		SELECT
-			Sum(p."ChildID")
+			a_Parent."ParentID"
 		FROM
-			"Child" p
-		WHERE
-			a_Parent."ParentID" = p."ParentID"
-	)
-FROM
-	"Child" t1
-		LEFT JOIN "Parent" a_Parent ON t1."ParentID" = a_Parent."ParentID"
-GROUP BY
-	a_Parent."ParentID",
-	a_Parent."Value1"
+			"Child" g_1
+				LEFT JOIN "Parent" a_Parent ON g_1."ParentID" = a_Parent."ParentID"
+		GROUP BY
+			a_Parent."ParentID",
+			a_Parent."Value1"
+	) g_2
+		OUTER APPLY (
+			SELECT
+				SUM(a_Children."ChildID") as SUM_1
+			FROM
+				"Child" a_Children
+			WHERE
+				g_2."ParentID" IS NOT NULL AND g_2."ParentID" = a_Children."ParentID"
+		) t1
 

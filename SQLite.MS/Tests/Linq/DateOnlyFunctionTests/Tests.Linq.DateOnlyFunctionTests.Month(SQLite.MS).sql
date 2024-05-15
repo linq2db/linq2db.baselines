@@ -42,7 +42,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Cast(StrFTime('%m', [t].[TransactionDate]) as int)
+	CAST(strftime('%m', [t].[TransactionDate]) AS INTEGER)
 FROM
 	[Transactions] [t]
 

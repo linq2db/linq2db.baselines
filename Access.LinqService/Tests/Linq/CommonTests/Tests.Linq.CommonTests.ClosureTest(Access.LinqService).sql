@@ -4,7 +4,7 @@
 SELECT TOP 1
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -12,5 +12,5 @@ BeforeExecute
 SELECT TOP 1
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 

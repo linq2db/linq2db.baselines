@@ -4,6 +4,6 @@
 SELECT
 	1
 FROM
-	"Person" "_"
-FETCH FIRST 1 ROWS ONLY
+	"Person" "t1"
+FETCH NEXT 1 ROWS ONLY
 

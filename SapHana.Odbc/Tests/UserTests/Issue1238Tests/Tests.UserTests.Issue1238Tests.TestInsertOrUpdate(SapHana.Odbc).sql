@@ -10,12 +10,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = 1
+	"TypeDiscriminator" = 1
 WHERE
-	"InheritanceParent"."InheritanceParentId" = 143 AND
-	"InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = 143 AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -37,7 +36,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InheritanceParent" "t1"
 
@@ -45,18 +44,17 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"InheritanceParent"
+	"InheritanceParent" "t1"
 SET
-	"InheritanceParent"."TypeDiscriminator" = 1
+	"TypeDiscriminator" = 1
 WHERE
-	"InheritanceParent"."InheritanceParentId" = 143 AND
-	"InheritanceParent"."Name" IS NULL
+	"t1"."InheritanceParentId" = 143 AND "t1"."Name" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InheritanceParent" "t1"
 

@@ -15,23 +15,16 @@ CREATE TABLE [Issue1192Table]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[t1].[MyGroupedCount]
+SELECT TOP (1)
+	COUNT(CASE
+		WHEN [t].[Status] = 3 THEN 1
+		ELSE NULL
+	END) as [COUNT_1]
 FROM
-	[Issue1192Table] [t_1]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [MyGroupedCount]
-			FROM
-				[Issue1192Table] [t]
-			WHERE
-				[t].[Status] = 3 AND [t].[MyOtherId] = 12
-		) [t1] ON 1=1
+	[Issue1192Table] [t]
 WHERE
-	[t_1].[MyOtherId] = 12
+	[t].[MyOtherId] = 12
 
 BeforeExecute
 -- SqlCe

@@ -25,30 +25,30 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	minOrNull(t1.TranslatedMessage1),
-	t1.Key_2,
-	t1.Key_3,
-	Count(*),
-	sumOrNull(toUnixTimestamp64Milli(toDateTime64(t1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(t1.TimestampGenerated, 3)))
+	minOrNull(tgGroup_1.TranslatedMessage1),
+	tgGroup_1.TranslatedMessageGroup,
+	tgGroup_1.Hour_1,
+	COUNT(*),
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
 FROM
 	(
 		SELECT
-			m_1.ExternID1 as Key_1,
-			m_1.TranslatedMessageGroup as Key_2,
-			HOUR(m_1.TimestampGenerated) as Key_3,
-			m_1.TranslatedMessage1 as TranslatedMessage1,
-			m_1.TimestampGenerated as TimestampGenerated,
-			m_1.TimestampGone as TimestampGone
+			tgGroup.ExternID1 as ExternID1,
+			tgGroup.TranslatedMessageGroup as TranslatedMessageGroup,
+			toHour(tgGroup.TimestampGenerated) as Hour_1,
+			tgGroup.TranslatedMessage1 as TranslatedMessage1,
+			tgGroup.TimestampGenerated as TimestampGenerated,
+			tgGroup.TimestampGone as TimestampGone
 		FROM
-			Issue2564Table m_1
+			Issue2564Table tgGroup
 		WHERE
-			m_1.TimestampGone IS NOT NULL AND
-			m_1.TimestampGenerated >= toDateTime64('2020-02-28 17:54:55.1231234', 7) AND
-			m_1.TimestampGenerated <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
-			m_1.MessageClassName = 'Error'
-	) t1
+			tgGroup.TimestampGone IS NOT NULL AND
+			tgGroup.TimestampGenerated >= toDateTime64('2020-02-28 17:54:55.1231234', 7) AND
+			tgGroup.TimestampGenerated <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
+			tgGroup.MessageClassName = 'Error'
+	) tgGroup_1
 GROUP BY
-	t1.Key_1,
-	t1.Key_2,
-	t1.Key_3
+	tgGroup_1.ExternID1,
+	tgGroup_1.TranslatedMessageGroup,
+	tgGroup_1.Hour_1
 

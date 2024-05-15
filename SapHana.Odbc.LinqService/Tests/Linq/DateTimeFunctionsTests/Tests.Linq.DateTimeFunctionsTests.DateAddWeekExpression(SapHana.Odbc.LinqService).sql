@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = -7
+DECLARE @p  -- Int32
+SET     @p = -1
 
 SELECT
-	Add_Days("t"."DateTimeValue", ?)
+	To_Date(Add_Days("t"."DateTimeValue", ? * 7))
 FROM
 	"LinqDataTypes" "t"
 

@@ -132,60 +132,60 @@ CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value  -- Guid
-SET     @Value = X'00000000000000000000000000000000'
+DECLARE @MaterialID  -- Guid
+SET     @MaterialID = X'00000000000000000000000000000000'
 
 SELECT
-	[cr].[R_r_Id],
-	[cr].[ResourcePointID],
-	[cr].[IR_ir_Id],
-	[cr].[Status],
-	[cr].[MaterialID],
-	[cr].[ResourceID],
-	[cr].[Quantity],
-	[cr].[ProductStatus],
-	[cr].[C_c_Id],
-	[cr].[SS_ss_Id],
-	[cr].[AisleID],
-	[cr].[ChannelID],
-	[cr].[AisleStatus],
-	[cr].[RP_rp_Id],
-	[cr].[IsStoragePlace],
-	[cr].[RefQty],
-	[cr].[MixedStock]
+	[cr_1].[Id],
+	[cr_1].[Status],
+	[cr_1].[MaterialID],
+	[cr_1].[ResourceID],
+	[cr_1].[Quantity],
+	[cr_1].[ProductStatus],
+	[cr_1].[Id_1],
+	[cr_1].[ResourcePointID],
+	[cr_1].[Id_2],
+	[cr_1].[AisleID],
+	[cr_1].[ChannelID],
+	[cr_1].[Id_3],
+	[cr_1].[AisleStatus],
+	[cr_1].[Id_4],
+	[cr_1].[IsStoragePlace],
+	[cr_1].[RefQty],
+	[cr_1].[MixedStock]
 FROM
 	(
 		SELECT
-			[r].[Id] as [R_r_Id],
-			[r].[ResourcePointID],
-			[ir].[Id] as [IR_ir_Id],
-			[ir].[Status],
-			[ir].[MaterialID],
-			[ir].[ResourceID],
 			[ir].[Quantity],
-			[ir].[ProductStatus],
-			[c_1].[Id] as [C_c_Id],
-			[ss].[Id] as [SS_ss_Id],
-			[ss].[AisleID],
-			[ss].[ChannelID],
-			[aisle].[Status] as [AisleStatus],
-			[rp].[Id] as [RP_rp_Id],
-			[rp].[IsStoragePlace],
 			Coalesce((
 				SELECT
-					Sum([x].[Quantity])
+					SUM([x].[Quantity])
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x]
 				WHERE
 					[x].[InventoryResourceID] = [ir].[Id]
-			), 0) + Cast((
+			), 0) + (
 				SELECT
-					Count(*)
+					CAST(COUNT(*) AS Decimal)
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x_1]
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
-			) as Decimal) * [ir].[Quantity] as [RefQty],
+			) * [ir].[Quantity] as [RefQty],
+			[ir].[Id],
+			[ir].[Status],
+			[ir].[MaterialID],
+			[ir].[ResourceID],
+			[ir].[ProductStatus],
+			[r].[Id] as [Id_1],
+			[r].[ResourcePointID],
+			[cr].[Id] as [Id_2],
+			[cr].[AisleID],
+			[cr].[ChannelID],
+			[c_1].[Id] as [Id_3],
+			[aisle].[Status] as [AisleStatus],
+			[rp].[Id] as [Id_4],
+			[rp].[IsStoragePlace],
 			CASE
 				WHEN EXISTS(
 					SELECT
@@ -196,58 +196,54 @@ FROM
 						[irMix].[ResourceID] = [r].[Id] AND
 						[irMix].[Status] >= 0 AND
 						[irMix].[Status] <= 1 AND
-						([irMix].[MaterialID] <> @Value OR [irMix].[ProductStatus] <> 0)
+						([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
 				)
 					THEN 1
 				ELSE 0
-			END as [MixedStock],
-			NULL as [C_1],
-			NULL as [SS]
+			END as [MixedStock]
 		FROM
-			[StorageShelfDTO] [ss]
-				INNER JOIN [ChannelDTO] [c_1] ON [ss].[ChannelID] = [c_1].[Id]
-				INNER JOIN [RefResourceStorageShelfDTO] [refS] ON [ss].[Id] = [refS].[StorageShelfID]
-				INNER JOIN [AisleDTO] [aisle] ON [ss].[AisleID] = [aisle].[Id]
-				INNER JOIN [RefResPointAisleDTO] [aislerp] ON [ss].[AisleID] = [aislerp].[AisleId]
+			[StorageShelfDTO] [cr]
+				INNER JOIN [ChannelDTO] [c_1] ON [cr].[ChannelID] = [c_1].[Id]
+				INNER JOIN [RefResourceStorageShelfDTO] [refS] ON [cr].[Id] = [refS].[StorageShelfID]
+				INNER JOIN [AisleDTO] [aisle] ON [cr].[AisleID] = [aisle].[Id]
+				INNER JOIN [RefResPointAisleDTO] [aislerp] ON [cr].[AisleID] = [aislerp].[AisleId]
 				INNER JOIN [WmsResourcePointDTO] [rp] ON [aislerp].[ResourcePointId] = [rp].[Id]
 				INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 				INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 		WHERE
-			[ir].[MaterialID] = @Value AND [ir].[ProductStatus] = 0 AND
+			[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
 			[ir].[Quantity] > 0
 		UNION
 		SELECT
-			[r_1].[Id] as [R_r_Id],
-			[r_1].[ResourcePointID],
-			[ir_1].[Id] as [IR_ir_Id],
+			[ir_1].[Quantity],
+			0 as [RefQty],
+			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
 			[ir_1].[ResourceID],
-			[ir_1].[Quantity],
 			[ir_1].[ProductStatus],
-			[rp_1].[Id] as [C_c_Id],
-			NULL as [SS_ss_Id],
+			[r_1].[Id] as [Id_1],
+			[r_1].[ResourcePointID],
+			NULL as [Id_2],
 			NULL as [AisleID],
 			NULL as [ChannelID],
+			NULL as [Id_3],
 			0 as [AisleStatus],
-			NULL as [RP_rp_Id],
+			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [RefQty],
-			0 as [MixedStock],
-			NULL as [C_1],
-			NULL as [SS]
+			0 as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
 			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @Value AND
+			[ir_1].[MaterialID] = @MaterialID AND
 			[ir_1].[ProductStatus] = 0 AND
 			[ir_1].[Quantity] > 0
-	) [cr]
+	) [cr_1]
 WHERE
-	[cr].[Quantity] > [cr].[RefQty]
+	[cr_1].[Quantity] > [cr_1].[RefQty]
 
 BeforeExecute
 -- SQLite.MS SQLite

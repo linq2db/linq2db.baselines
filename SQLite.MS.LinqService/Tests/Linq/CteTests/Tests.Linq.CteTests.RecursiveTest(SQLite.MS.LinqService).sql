@@ -16,16 +16,16 @@ AS
 		[ct].[ChildID],
 		[ct].[ChildID] + 1
 	FROM
-		[GrandChild] [gc]
-			INNER JOIN [Parent] [p] ON [p].[ParentID] = [gc].[ParentID]
-			INNER JOIN [MY_CTE] [ct] ON ([ct].[ChildID] = [gc].[ChildID] OR [ct].[ChildID] IS NULL AND [gc].[ChildID] IS NULL)
+		[GrandChild] [t1]
+			INNER JOIN [Parent] [p] ON [p].[ParentID] = [t1].[ParentID]
+			INNER JOIN [MY_CTE] [ct] ON [ct].[ChildID] = [t1].[ChildID]
 	WHERE
 		[ct].[GrandChildID] <= 10
 )
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID],
-	[t1].[GrandChildID]
+	[t2].[ChildID],
+	[t2].[ParentID],
+	[t2].[GrandChildID]
 FROM
-	[MY_CTE] [t1]
+	[MY_CTE] [t2]
 

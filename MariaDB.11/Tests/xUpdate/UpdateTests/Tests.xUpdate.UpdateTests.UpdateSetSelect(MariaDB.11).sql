@@ -1,27 +1,21 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` > 1000
+	`Parent`.`ParentID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 UPDATE
 	`Parent` `p`
-		INNER JOIN `Child` `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
+		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
+		LEFT JOIN `Child` `c_2` ON `c_2`.`ChildID` = 11
 SET
-	`p`.`ParentID` = (
-		SELECT
-			`c_1`.`ParentID`
-		FROM
-			`Child` `c_1`
-		WHERE
-			`c_1`.`ChildID` = 11
-	) + 1000
+	`p`.`ParentID` = `c_2`.`ParentID` + 1000
 WHERE
 	`p`.`ParentID` = 1
 
@@ -31,9 +25,9 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1
 
 UPDATE
-	`Parent` `_`
+	`Parent` `t1`
 SET
-	`_`.`ParentID` = @ParentID
+	`t1`.`ParentID` = @ParentID
 WHERE
-	`_`.`ParentID` = 1001
+	`t1`.`ParentID` = 1001
 

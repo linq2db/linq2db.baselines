@@ -22,10 +22,11 @@ RETURNING
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @param Int32
+SET     @param = 100
 
 SELECT
-	`c_1`.`ChildID`,
-	`c_1`.`ParentID`
+	`c_1`.`ChildID` + `c_1`.`ParentID` + @param
 FROM
 	`Child` `c_1`
 WHERE
@@ -34,9 +35,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 

@@ -37,8 +37,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."PersonID",
@@ -50,5 +48,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

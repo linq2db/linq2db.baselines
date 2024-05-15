@@ -11,7 +11,7 @@ SELECT
 			FROM
 				"Person" "t1"
 			WHERE
-				"t1"."PersonID" = @ID
+				CAST(@ID AS Int) = "t1"."PersonID"
 		)
 			THEN TRUE
 		ELSE FALSE

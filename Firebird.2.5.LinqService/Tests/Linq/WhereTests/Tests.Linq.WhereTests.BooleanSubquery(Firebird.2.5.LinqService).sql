@@ -26,7 +26,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @BoolValue Char(1) -- String
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = '1'
 
 INSERT INTO "WhereWithBool"
@@ -47,16 +47,10 @@ SELECT
 	"t"."Id",
 	"t"."BoolValue"
 FROM
-	"WhereWithBool" "t"
+	"WhereWithBool" "t",
+	"WhereWithBool" "x"
 WHERE
-	(
-		SELECT
-			"x"."BoolValue"
-		FROM
-			"WhereWithBool" "x"
-		WHERE
-			"x"."Id" = 1
-	) = '1'
+	"x"."BoolValue" = '1' AND "x"."Id" = 1
 
 BeforeExecute
 -- Firebird.2.5 Firebird

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t.ID,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."MoneyValue" * t.ID = 1.11 AND ROWNUM <= :take
+	t."MoneyValue" * t.ID = 1.11 AND ROWNUM <= 2
 

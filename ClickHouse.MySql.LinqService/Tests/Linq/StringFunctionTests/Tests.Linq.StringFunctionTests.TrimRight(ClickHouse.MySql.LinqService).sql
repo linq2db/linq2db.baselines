@@ -2,11 +2,10 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	pp.PersonID,
+	concat('  ', pp.FirstName, ' ')
 FROM
-	Person p
+	Person pp
 WHERE
-	RTRIM(concat('  ', p.FirstName, ' ')) = '  John' AND
-	p.PersonID = toInt32(1)
+	pp.PersonID = 1 AND RTRIM(concat('  ', pp.FirstName, ' ')) = '  John'
 

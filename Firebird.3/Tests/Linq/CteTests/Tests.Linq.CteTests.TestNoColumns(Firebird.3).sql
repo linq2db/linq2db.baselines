@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "t1"
 
@@ -19,14 +19,14 @@ AS
 		"Child" "t1"
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ "t2"
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
-WITH CTE1_ ("ChildID")
+WITH CTE1_ ("C_ChildID")
 AS
 (
 	SELECT
@@ -35,18 +35,17 @@ AS
 		"Child" "c_1"
 )
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CTE1_ "t1"
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
-WITH CTE1_ ("ChildID")
-AS
+WITH CTE1_ AS
 (
 	SELECT
-		"c_1"."ChildID"
+		*
 	FROM
 		"Child" "c_1"
 )
@@ -57,8 +56,7 @@ SELECT
 				*
 			FROM
 				CTE1_ "t1"
-		)
-			THEN TRUE
+		) THEN TRUE
 		ELSE FALSE
 	END
 FROM rdb$database

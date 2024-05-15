@@ -33,15 +33,22 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	N'Title',
-	[selectParam].[Title],
-	Count(*)
+	[it_1].[Name],
+	[it_1].[Value_1],
+	[it_1].[COUNT_1]
 FROM
-	[odata_person] [selectParam]
-GROUP BY
-	[selectParam].[Title]
+	(
+		SELECT
+			COUNT(*) as [COUNT_1],
+			N'Title' as [Name],
+			[it].[Title] as [Value_1]
+		FROM
+			[odata_person] [it]
+		GROUP BY
+			[it].[Title]
+	) [it_1]
 ORDER BY
-	Count(*)
+	[it_1].[COUNT_1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

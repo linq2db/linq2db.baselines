@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -10,13 +10,13 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID > toInt32(2)
+			p.ParentID > 2
 		UNION DISTINCT
 		SELECT
 			p_1.ParentID as ID
 		FROM
 			Parent p_1
 		WHERE
-			p_1.ParentID > toInt32(2)
+			p_1.ParentID > 2
 	) t1
 

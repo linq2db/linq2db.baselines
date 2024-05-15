@@ -2,6 +2,7 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
+	[t].[Discontinued],
 	[t].[ProductID],
 	[t].[ProductName],
 	[t].[SupplierID],
@@ -10,11 +11,10 @@ SELECT
 	[t].[UnitPrice],
 	[t].[UnitsInStock],
 	[t].[UnitsOnOrder],
-	[t].[ReorderLevel],
-	[t].[Discontinued]
+	[t].[ReorderLevel]
 FROM
 	[Products] [t]
-		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), N'sweetest candy bread and dry meat') [f] ON [f].[KEY] = [t].[CategoryID]
+		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), N'sweetest candy bread and dry meat') [c_1] ON [c_1].[KEY] = [t].[CategoryID]
 ORDER BY
 	[t].[ProductName] DESC
 

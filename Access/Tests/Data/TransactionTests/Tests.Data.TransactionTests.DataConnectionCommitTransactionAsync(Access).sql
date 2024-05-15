@@ -24,7 +24,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = 1010
+	[t1].[ParentID] = 1010
 

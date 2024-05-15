@@ -503,8 +503,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -515,13 +513,13 @@ DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 FROM
-	"OrderByDistinctData" "x"
+	"OrderByDistinctData" "g_1"
 GROUP BY
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 ORDER BY
-	Max("x"."OrderData1")
+	MAX("g_1"."OrderData1")
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -535,8 +533,6 @@ SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -547,13 +543,13 @@ DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 FROM
-	"OrderByDistinctData" "x"
+	"OrderByDistinctData" "g_1"
 GROUP BY
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 ORDER BY
-	Min("x"."OrderData1") DESC
+	MIN("g_1"."OrderData1") DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

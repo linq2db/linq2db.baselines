@@ -1,0 +1,224 @@
+﻿BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1000
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1002
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1003
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1004
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1005
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1006
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1007
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1008
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1009
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
+
+INSERT INTO "Parent"
+(
+	"ParentID",
+	"Value1"
+)
+VALUES
+(
+	@ParentID,
+	@Value1
+)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+DECLARE @take Integer -- Int32
+SET     @take = 5
+
+UPDATE
+	"Parent"
+SET
+	"Value1" = 1
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			(
+				SELECT
+					"x"."ParentID",
+					"x"."Value1"
+				FROM
+					"Parent" "x"
+				WHERE
+					"x"."ParentID" > 1000
+				ORDER BY
+					"x"."ParentID" DESC
+				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+			) "t1"
+		WHERE
+			"Parent"."ParentID" = "t1"."ParentID" AND ("Parent"."Value1" = "t1"."Value1" OR "Parent"."Value1" IS NULL AND "t1"."Value1" IS NULL)
+	)
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+SELECT
+	"p"."ParentID",
+	"p"."Value1"
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" = 1009
+FETCH NEXT 2 ROWS ONLY
+

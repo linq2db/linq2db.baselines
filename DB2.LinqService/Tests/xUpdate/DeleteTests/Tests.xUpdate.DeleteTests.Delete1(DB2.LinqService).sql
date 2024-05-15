@@ -32,7 +32,7 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE
@@ -44,9 +44,9 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" = @ParentID
+	"p"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -54,7 +54,7 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE

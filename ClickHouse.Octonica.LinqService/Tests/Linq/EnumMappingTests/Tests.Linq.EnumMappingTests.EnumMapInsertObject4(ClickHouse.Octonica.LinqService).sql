@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(102)
+	ID >= 101 AND ID < 102
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17,7 +17,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(101),
+	101,
 	toInt64(12),
 	NULL
 )
@@ -26,11 +26,11 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID = toInt32(101) AND r.BigIntValue = toInt64(12)
+	r.ID = 101 AND r.BigIntValue = toInt64(12)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -38,5 +38,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(101) AND ID < toInt32(102)
+	ID >= 101 AND ID < 102
 

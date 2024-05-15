@@ -3,11 +3,11 @@
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -27,7 +27,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`LinqDataTypes` `r`
 WHERE
@@ -38,9 +38,9 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 102
 
-DELETE   `r`
+DELETE  
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
 

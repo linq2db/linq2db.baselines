@@ -2,18 +2,18 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	sumOrNull(t1.ParentID - toInt32(3))
+	sumOrNull(g_2.ParentID - 3)
 FROM
 	(
 		SELECT
-			ch.ParentID + toInt32(1) as ParentID,
-			ch.ChildID as ChildID
+			g_1.ParentID + 1 as ParentID,
+			g_1.ChildID as ChildID
 		FROM
-			Child ch
+			Child g_1
 		WHERE
-			ch.ParentID > toInt32(-1)
-	) t1
+			g_1.ParentID > -1
+	) g_2
 GROUP BY
-	t1.ParentID,
-	t1.ChildID
+	g_2.ParentID,
+	g_2.ChildID
 

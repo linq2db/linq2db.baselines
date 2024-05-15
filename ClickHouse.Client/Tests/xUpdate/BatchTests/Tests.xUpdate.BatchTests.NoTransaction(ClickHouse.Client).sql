@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1111)
+	ParentID = 1111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12,7 +12,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(2111)
+	ParentID = 2111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -20,7 +20,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(3111)
+	ParentID = 3111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -28,7 +28,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(4111)
+	ParentID = 4111
 
 BeforeExecute
 INSERT ASYNC BULK Parent(ParentID, Value1)
@@ -39,7 +39,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1111)
+	ParentID = 1111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -47,7 +47,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(2111)
+	ParentID = 2111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -55,7 +55,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(3111)
+	ParentID = 3111
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -63,5 +63,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(4111)
+	ParentID = 4111
 

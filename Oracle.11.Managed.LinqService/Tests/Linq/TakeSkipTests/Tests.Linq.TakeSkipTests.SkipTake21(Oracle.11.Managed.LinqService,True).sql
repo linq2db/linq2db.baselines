@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 7
 DECLARE @skip Int32
 SET     @skip = 2
+DECLARE @take Int32
+SET     @take = 5
 
 SELECT
 	t3."ParentID",
@@ -25,17 +25,17 @@ FROM
 					t1."ChildID" DESC
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t3
 WHERE
 	t3.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 7
 DECLARE @skip Int32
 SET     @skip = 2
+DECLARE @take Int32
+SET     @take = 5
 
 SELECT
 	t3."ParentID",
@@ -57,7 +57,7 @@ FROM
 					t1."ChildID" DESC
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t3
 WHERE
 	t3.RN > :skip

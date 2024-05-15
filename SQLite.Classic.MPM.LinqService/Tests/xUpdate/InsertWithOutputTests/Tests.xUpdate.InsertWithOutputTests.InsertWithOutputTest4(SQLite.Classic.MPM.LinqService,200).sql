@@ -22,10 +22,11 @@ RETURNING
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @param  -- Int32
+SET     @param = 200
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[c_1].[ChildID] + [c_1].[ParentID] + @param
 FROM
 	[Child] [c_1]
 WHERE

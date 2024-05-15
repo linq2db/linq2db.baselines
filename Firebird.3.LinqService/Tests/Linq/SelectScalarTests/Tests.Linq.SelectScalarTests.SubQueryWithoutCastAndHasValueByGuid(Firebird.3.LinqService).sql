@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."ParentID",
@@ -14,6 +12,6 @@ WHERE
 			"r"."GuidValue"
 		FROM
 			"LinqDataTypes" "r"
-		FETCH NEXT @take ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	) IS NOT NULL
 

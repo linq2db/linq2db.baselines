@@ -41,7 +41,7 @@ INSERT INTO Topic
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	'title',
 	'text'
 )
@@ -50,30 +50,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id,
-	key_data_result.Title,
-	key_data_result.Text,
-	detail.Id
+	m_1.Id,
+	d.Id
 FROM
 	(
-		SELECT DISTINCT
-			t1.Id as Id,
-			t1.Title as Title,
-			t1.Text as Text
+		SELECT
+			x.Id as Id
 		FROM
-			(
-				SELECT
-					x.Id as Id,
-					x.Title as Title,
-					x.Text as Text
-				FROM
-					Topic x
-				WHERE
-					x.Id = toInt32(6)
-				LIMIT toInt32(1)
-			) t1
-	) key_data_result
-		INNER JOIN Message detail ON detail.TopicId = key_data_result.Id
+			Topic x
+		WHERE
+			x.Id = 6
+		LIMIT 1
+	) m_1
+		INNER JOIN Message d ON d.TopicId = m_1.Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -85,8 +74,8 @@ SELECT
 FROM
 	Topic x
 WHERE
-	x.Id = toInt32(6)
-LIMIT toInt32(1)
+	x.Id = 6
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`CollatedTable` `t1`
+	`CollatedTable`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -31,7 +31,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CollatedTable` `r`
 WHERE
@@ -41,7 +41,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CollatedTable` `r`
 WHERE
@@ -51,7 +51,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CollatedTable` `r`
 WHERE
@@ -61,7 +61,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`CollatedTable` `r`
 WHERE

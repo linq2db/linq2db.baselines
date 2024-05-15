@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 3
 
 SELECT
 	"p"."ParentID",
@@ -9,13 +7,13 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" IN (
+	EXISTS(
 		SELECT
-			"t1"."ParentID"
+			*
 		FROM
 			(
-				SELECT FIRST @take
-					"p"."ParentID"
+				SELECT FIRST 3
+					*
 				FROM
 					"Parent" "p1"
 				WHERE

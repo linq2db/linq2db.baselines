@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	HOUR(addHours(t.DateTimeValue, toInt32(1)))
+	toHour(addHours(t.DateTimeValue, 1))
 FROM
 	LinqDataTypes t
 

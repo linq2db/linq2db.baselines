@@ -65,15 +65,15 @@ DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id1
+	[t1].[PersonID] = @id1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -81,13 +81,13 @@ DECLARE @id2 Integer -- Int32
 SET     @id2 = 6
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id2
+	[t1].[PersonID] = @id2
 

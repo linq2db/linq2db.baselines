@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Cast(t."MoneyValue" as Char(20))
+	CAST(t."MoneyValue" AS Char(20))
 FROM
 	"LinqDataTypes" t
 

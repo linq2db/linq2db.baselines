@@ -2,14 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`d`.`c1`
+	Date(`d`.`DateTimeValue`)
 FROM
-	(
-		SELECT
-			`t`.`DateTimeValue` as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `d`
+	`LinqDataTypes` `d`
 WHERE
-	Extract(day from `d`.`c1`) > 0
+	Extract(day from `d`.`DateTimeValue`) > 0
 

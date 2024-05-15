@@ -22,11 +22,11 @@ FROM
 	) t2
 UNION ALL
 SELECT
-	t4.FirstName,
-	t4.ID,
-	t4.LastName,
-	t4.MiddleName,
-	t4.Gender
+	t4.FirstName as FirstName,
+	t4.ID as ID,
+	t4.LastName as LastName,
+	t4.MiddleName as MiddleName,
+	t4.Gender as Gender
 FROM
 	(
 		SELECT

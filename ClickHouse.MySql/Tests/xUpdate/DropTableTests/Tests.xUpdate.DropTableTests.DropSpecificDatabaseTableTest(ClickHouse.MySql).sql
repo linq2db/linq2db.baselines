@@ -9,8 +9,8 @@ BeforeExecute
 SELECT
 	currentDatabase()
 FROM
-	LinqDataTypes _
-LIMIT toInt32(1)
+	LinqDataTypes t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -30,7 +30,7 @@ INSERT INTO testdb3.DropTableTest
 )
 VALUES
 (
-	toInt32(123)
+	123
 )
 
 BeforeExecute

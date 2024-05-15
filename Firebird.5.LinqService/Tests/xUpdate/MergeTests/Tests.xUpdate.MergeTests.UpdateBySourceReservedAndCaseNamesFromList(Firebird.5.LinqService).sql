@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "From_1" FROM rdb$database
+	SELECT 3 AS "source_From" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -244,18 +244,18 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	"From_1"
+	"source_From"
 )
-ON ("Target"."Id" = "Source"."From_1")
+ON ("Target"."Id" = "Source"."source_From")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE
 SET
-	"Target"."Id" = "Target"."Id",
-	"Target"."Field1" = "Target"."Field5",
-	"Target"."Field2" = "Target"."Field4",
-	"Target"."Field3" = "Target"."Field3",
-	"Target"."Field4" = "Target"."Field2",
-	"Target"."Field5" = "Target"."Field1"
+	"Id" = "Target"."Id",
+	"Field1" = "Target"."Field5",
+	"Field2" = "Target"."Field4",
+	"Field3" = "Target"."Field3",
+	"Field4" = "Target"."Field2",
+	"Field5" = "Target"."Field1"
 
 BeforeExecute
 -- Firebird.5 Firebird4

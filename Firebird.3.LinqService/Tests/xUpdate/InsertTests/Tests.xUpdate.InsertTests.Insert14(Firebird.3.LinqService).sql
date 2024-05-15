@@ -2,14 +2,12 @@
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Insert14'
+	"p"."FirstName" STARTING WITH 'Insert14'
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 INSERT INTO "Person"
 (
@@ -26,7 +24,6 @@ VALUES
 			"Person" "p"
 		WHERE
 			"p"."PersonID" = 1
-		FETCH NEXT @take ROWS ONLY
 	),
 	'Shepard',
 	'M'
@@ -36,7 +33,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE
@@ -46,7 +43,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "p"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Insert14'
+	"p"."FirstName" STARTING WITH 'Insert14'
 

@@ -24,16 +24,16 @@ INSERT INTO DataClass
 	StringValue
 )
 VALUES
-(toInt32(1),toInt32(1),'Str1Value'),
-(toInt32(2),toInt32(2),'Str2Value'),
-(toInt32(3),toInt32(3),'Str3Value'),
-(toInt32(4),toInt32(4),'Str4Value'),
-(toInt32(5),toInt32(5),'Str5Value'),
-(toInt32(6),toInt32(6),'Str6Value'),
-(toInt32(7),toInt32(7),'Str7Value'),
-(toInt32(8),toInt32(8),'Str8Value'),
-(toInt32(9),toInt32(9),'Str9Value'),
-(toInt32(10),toInt32(10),'Str10Value')
+(1,1,'Str1Value'),
+(2,2,'Str2Value'),
+(3,3,'Str3Value'),
+(4,4,'Str4Value'),
+(5,5,'Str5Value'),
+(6,6,'Str6Value'),
+(7,7,'Str7Value'),
+(8,8,'Str8Value'),
+(9,9,'Str9Value'),
+(10,10,'Str10Value')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,7 +45,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	t.Id > toInt32(6)
+	t.Id > 6
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -57,7 +57,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	toInt32(5) < t.Id - toInt32(1)
+	5 < t.Id - 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	toInt32(2) > t.Id
+	2 > t.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -81,7 +81,7 @@ SELECT
 FROM
 	DataClass t
 WHERE
-	t.Id < toInt32(2)
+	t.Id < 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

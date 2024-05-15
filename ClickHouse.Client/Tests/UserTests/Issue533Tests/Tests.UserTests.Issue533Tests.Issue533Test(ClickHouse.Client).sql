@@ -11,7 +11,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'M',
 	'FirstName533',
 	NULL,
@@ -22,14 +22,14 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.PersonID,
-	_.Gender,
-	_.FirstName,
-	_.MiddleName,
-	_.LastName
+	t1.PersonID,
+	t1.Gender,
+	t1.FirstName,
+	t1.MiddleName,
+	t1.LastName
 FROM
-	Person _
+	Person t1
 WHERE
-	_.PersonID = toInt32(100)
-LIMIT toInt32(1)
+	t1.PersonID = 100
+LIMIT 1
 

@@ -2,25 +2,25 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	selectParam.LastName,
-	toInt32(0),
-	NULL,
-	Coalesce(NULL, 'M')
+	g_1.LastName,
+	0,
+	toString(NULL),
+	NULL
 FROM
-	Person selectParam
+	Person g_1
 GROUP BY
-	selectParam.LastName
+	g_1.LastName
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	selectParam.LastName,
-	toInt32(0),
-	NULL,
-	Coalesce(NULL, 'M')
+	g_1.LastName,
+	0,
+	toString(NULL),
+	NULL
 FROM
-	Person selectParam
+	Person g_1
 GROUP BY
-	selectParam.LastName
+	g_1.LastName
 

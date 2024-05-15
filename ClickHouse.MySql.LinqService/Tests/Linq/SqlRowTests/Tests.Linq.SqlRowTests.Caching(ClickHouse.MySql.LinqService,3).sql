@@ -31,11 +31,11 @@ INSERT INTO Ints
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(3),
-	toInt32(4),
-	toInt32(5),
+	1,
+	2,
+	3,
+	4,
+	5,
 	NULL
 )
 
@@ -43,11 +43,11 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	i.One = i.One AND i.Two = i.One * toInt32(2) AND i.Three = toInt32(3)
+	i.Two = i.One * 2 AND i.Three = 3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

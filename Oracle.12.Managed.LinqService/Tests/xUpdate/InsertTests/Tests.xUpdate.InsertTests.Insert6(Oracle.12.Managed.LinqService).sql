@@ -2,9 +2,9 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."Value1" = 11
+	p."Value1" = 11
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -26,7 +26,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."Value1" = 11
+	p."Value1" = 11
 

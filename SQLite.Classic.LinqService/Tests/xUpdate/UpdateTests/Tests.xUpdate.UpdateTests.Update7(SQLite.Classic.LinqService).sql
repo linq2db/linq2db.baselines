@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
-SET     @Value1 = 1
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1  -- Int32
+SET     @Value1 = 1
 
 INSERT INTO [Parent]
 (
-	[Value1],
-	[ParentID]
+	[ParentID],
+	[Value1]
 )
 VALUES
 (
-	@Value1,
-	@ParentID
+	@ParentID,
+	@Value1
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -48,7 +48,7 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -74,7 +74,7 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

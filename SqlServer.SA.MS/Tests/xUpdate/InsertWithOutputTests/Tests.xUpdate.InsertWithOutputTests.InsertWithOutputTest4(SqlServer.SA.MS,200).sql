@@ -22,10 +22,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+DECLARE @param Int -- Int32
+SET     @param = 200
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[c_1].[ChildID] + [c_1].[ParentID] + @param
 FROM
 	[Child] [c_1]
 WHERE
@@ -34,9 +35,9 @@ WHERE
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

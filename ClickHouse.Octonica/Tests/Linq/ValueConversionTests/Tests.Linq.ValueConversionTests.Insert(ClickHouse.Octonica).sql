@@ -38,7 +38,7 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'[]',
 	'Value1',
 	'[{"Value":"inserted"}]',
@@ -63,8 +63,8 @@ SELECT
 FROM
 	ValueConversion e
 WHERE
-	e.Id = toInt32(1)
-LIMIT toInt32(1)
+	e.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -80,7 +80,7 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL,
 	NULL,
 	'Value2',
@@ -105,8 +105,8 @@ SELECT
 FROM
 	ValueConversion e
 WHERE
-	e.Id = toInt32(2)
-LIMIT toInt32(1)
+	e.Id = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -126,7 +126,7 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'{"some":"inserted3}"}',
 	'[{"Value":"inserted3"}]',
 	'Value3',
@@ -155,14 +155,14 @@ SELECT
 FROM
 	ValueConversion e
 WHERE
-	e.Id = toInt32(3)
-LIMIT toInt32(1)
+	e.Id = 3
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	ValueConversion t1
 

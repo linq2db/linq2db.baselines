@@ -2,16 +2,16 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.n,
-	sumOrNull(t1.ParentID)
+	g_2.c1,
+	sumOrNull(g_2.ParentID)
 FROM
 	(
 		SELECT
-			ch.ChildID + toInt32(1) as n,
-			ch.ParentID as ParentID
+			g_1.ChildID + 1 as c1,
+			g_1.ParentID as ParentID
 		FROM
-			Child ch
-	) t1
+			Child g_1
+	) g_2
 GROUP BY
-	t1.n
+	g_2.c1
 

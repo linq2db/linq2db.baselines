@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	Convert(Date, [t].[DateTimeValue])
+	CAST([t].[DateTimeValue] AS Date)
 FROM
 	[LinqDataTypes] [t]
 

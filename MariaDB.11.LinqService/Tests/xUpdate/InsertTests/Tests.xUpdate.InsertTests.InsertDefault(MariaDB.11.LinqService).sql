@@ -19,9 +19,9 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`FirstName` = 'InsertDefault'
+	`Person`.`FirstName` = 'InsertDefault'
 

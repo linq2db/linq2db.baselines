@@ -2,17 +2,16 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [parent_1],
 	(
 		SELECT
 			[child_1].[ParentID],
-			[child_1].[ChildID],
-			[parent_2].[ParentID] as [ParentID_1]
+			[child_1].[ChildID]
 		FROM
-			[Parent] [parent_2],
+			[Parent] [parent_1],
+			[Parent] [s],
 			[Child] [child_1]
-	) [s]
-		LEFT JOIN [GrandChild] [t1] ON [s].[ParentID] = [t1].[ParentID] AND [s].[ChildID] = [t1].[ChildID]
+	) [sub]
+		LEFT JOIN [GrandChild] [grandChild_1] ON [sub].[ParentID] = [grandChild_1].[ParentID] AND [sub].[ChildID] = [grandChild_1].[ChildID]
 

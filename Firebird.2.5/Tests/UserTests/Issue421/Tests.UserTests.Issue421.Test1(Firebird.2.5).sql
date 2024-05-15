@@ -36,16 +36,14 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@BlobValue as Blob)
+	CAST(@Id AS Int),
+	CAST(@BlobValue AS Blob(3))
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
@@ -59,18 +57,16 @@ DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'030201'
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "t1"
 SET
-	"BlobClass"."BlobValue" = @BlobValue
+	"BlobValue" = CAST(@BlobValue AS Blob(3))
 WHERE
-	"BlobClass"."Id" = 1
+	"t1"."Id" = 1
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM

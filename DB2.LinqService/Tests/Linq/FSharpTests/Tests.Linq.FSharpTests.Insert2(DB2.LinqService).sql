@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("p"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "p"
+	"Person" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -37,21 +37,21 @@ BeforeExecute
 
 SELECT
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
 	"p"."PersonID" > 4
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "t"
 WHERE
-	"t1"."PersonID" > 4
+	"t"."PersonID" > 4
 

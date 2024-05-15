@@ -18,7 +18,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE
@@ -30,17 +30,15 @@ BeforeExecute
 UPDATE
 	[Person]
 SET
-	[c_1].[FirstName] = 'Johnny'
-FROM
-	[Person] [c_1]
+	[FirstName] = 'Johnny'
 WHERE
-	[c_1].[LastName] = 'Limonadovy'
+	[Person].[LastName] = 'Limonadovy'
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

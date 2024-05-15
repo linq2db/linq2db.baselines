@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @value2 Int32
+DECLARE @value2 NewDecimal(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	`LinqDataTypes` `t1`
 SET
-	`t1`.`SmallIntValue` = Cast(Floor(`t1`.`MoneyValue` / (@value2 / `t1`.`IntValue`)) as SIGNED)
+	`t1`.`SmallIntValue` = CAST(Floor(`t1`.`MoneyValue` / (@value2 / `t1`.`IntValue`)) AS SIGNED)
 WHERE
 	`t1`.`ID` = @id
 
@@ -66,14 +66,12 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 100500
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`SmallIntValue`
+	`t1`.`SmallIntValue`
 FROM
-	`LinqDataTypes` `_`
+	`LinqDataTypes` `t1`
 WHERE
-	`_`.`ID` = @id
-LIMIT @take
+	`t1`.`ID` = @id
+LIMIT 1
 

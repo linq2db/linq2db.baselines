@@ -2,14 +2,9 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[d].[c1]
+	DateAdd(dd, DateDiff(dd, 0, [d].[DateTimeValue]), 0)
 FROM
-	(
-		SELECT
-			[t].[DateTimeValue] as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, [d].[DateTimeValue]) > 0
 

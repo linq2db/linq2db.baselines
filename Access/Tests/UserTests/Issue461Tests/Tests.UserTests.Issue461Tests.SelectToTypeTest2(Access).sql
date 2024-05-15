@@ -1,20 +1,19 @@
 ﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access AccessOleDb
-
-SELECT TOP 1
-	[l].[ParentID]
-FROM
-	[Child] [l]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	1
+	(
+		SELECT TOP 1
+			[l].[ParentID] + 1
+		FROM
+			[Child] [l]
+	),
+	(
+		SELECT TOP 1
+			[l_1].[ParentID]
+		FROM
+			[Child] [l_1]
+	)
 FROM
 	[Parent] [sep]
 

@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `DestinationTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @param Int32
-SET     @param = 200
+SET     @param = 100
 
 INSERT INTO `DestinationTable`
 (
@@ -260,16 +260,16 @@ INSERT INTO `DestinationTable`
 	`ValueStr`
 )
 SELECT
-	`s`.`Id` + @param,
+	`s`.`Id` + 100 + @param,
 	`s`.`Value` + 100,
-	Concat(`s`.`ValueStr`, Cast(100 as CHAR(11)))
+	Concat(`s`.`ValueStr`, 100)
 FROM
 	`TableWithData` `s`
 WHERE
 	`s`.`Id` > 3
 RETURNING
 	`DestinationTable`.`Id` + 1,
-	Concat(`DestinationTable`.`ValueStr`, Cast(1 as CHAR(11)))
+	Concat(`DestinationTable`.`ValueStr`, 1)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -285,8 +285,8 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t`.`Id`,
-	`t`.`ValueStr`
+	`t`.`Id` + 1,
+	Concat(`t`.`ValueStr`, 1)
 FROM
 	`DestinationTable` `t`
 

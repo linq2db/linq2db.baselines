@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID IN (toInt32(2), toInt32(3))
+	p.ParentID IN (2, 3)
 

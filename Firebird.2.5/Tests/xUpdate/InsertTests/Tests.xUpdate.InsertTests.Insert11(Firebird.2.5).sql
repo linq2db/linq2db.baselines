@@ -2,9 +2,9 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -36,12 +36,10 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @id Integer -- Int32
 SET     @id = 4
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p2"."PersonID",
 	"p2"."Gender",
 	"p2"."FirstName",

@@ -31,29 +31,25 @@ BeforeExecute
 -- SqlCe
 DECLARE @CEnum NVarChar -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 NVarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- SqlCe
 DECLARE @CEnum NVarChar -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 NVarChar -- String
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] NOT IN (@CEnum, @CEnum_1)
+	[s].[CEnum] NOT IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- SqlCe

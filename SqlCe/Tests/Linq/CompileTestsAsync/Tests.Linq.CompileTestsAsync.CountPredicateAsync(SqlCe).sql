@@ -37,7 +37,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

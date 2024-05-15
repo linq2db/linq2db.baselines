@@ -65,10 +65,10 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	adsl_1."Id"
+	serv."Id"
 FROM
-	"Adsl" adsl_1
-		INNER JOIN "Client" client_1 ON adsl_1."IdClient" = client_1."Id"
+	"Adsl" serv
+		INNER JOIN "Client" client_1 ON serv."IdClient" = client_1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

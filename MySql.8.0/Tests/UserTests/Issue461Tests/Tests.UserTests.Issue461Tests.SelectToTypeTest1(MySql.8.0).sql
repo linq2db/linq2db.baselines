@@ -1,17 +1,14 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`t1`.`Child`
+	(
+		SELECT
+			`l`.`ParentID` + 1
+		FROM
+			`Child` `l`
+		LIMIT 1
+	)
 FROM
 	`Parent` `sep`
-		LEFT JOIN LATERAL (
-			SELECT
-				`l`.`ParentID` as `Child`
-			FROM
-				`Child` `l`
-			LIMIT @take
-		) `t1` ON 1=1
 

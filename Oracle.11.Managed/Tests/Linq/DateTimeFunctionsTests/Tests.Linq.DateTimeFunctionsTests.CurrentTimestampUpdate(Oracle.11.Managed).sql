@@ -2,10 +2,10 @@
 -- Oracle.11.Managed Oracle11
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" p
 SET
-	"LinqDataTypes"."BoolValue" = 1,
-	"LinqDataTypes"."DateTimeValue" = CURRENT_TIMESTAMP
+	"BoolValue" = 1,
+	"DateTimeValue" = CURRENT_TIMESTAMP
 WHERE
-	"LinqDataTypes".ID = 100000
+	p.ID = 100000
 

@@ -63,13 +63,19 @@ SET     @id = 3
 UPDATE
 	[MainTable]
 SET
-	[a_MainRequired].[Field] = 'test'
-FROM
-	[MainTable] [a_MainRequired],
-	[MainTable] [_]
-		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [_].[Id] = [a_AssociatedRequired].[Id]
+	[Field] = 'test'
 WHERE
-	[_].[Id] = @id AND [a_AssociatedRequired].[Id] = [a_MainRequired].[Id]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[MainTable] [t1]
+				INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [t1].[Id] = [a_AssociatedRequired].[Id]
+				INNER JOIN [MainTable] [a_MainRequired] ON [a_AssociatedRequired].[Id] = [a_MainRequired].[Id]
+		WHERE
+			[t1].[Id] = @id AND [MainTable].[Id] = [a_MainRequired].[Id] AND
+			([MainTable].[Field] = [a_MainRequired].[Field] OR [MainTable].[Field] IS NULL AND [a_MainRequired].[Field] IS NULL)
+	)
 
 BeforeExecute
 -- Sybase.Managed Sybase

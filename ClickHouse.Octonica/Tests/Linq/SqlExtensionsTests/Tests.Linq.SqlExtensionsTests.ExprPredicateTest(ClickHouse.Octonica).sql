@@ -22,18 +22,18 @@ INSERT INTO sample_table_temp
 	value
 )
 VALUES
-(toInt32(1),toInt32(2)),
-(toInt32(3),toInt32(2))
+(1,2),
+(3,2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	sample_table_temp t
 WHERE
-	t.id BETWEEN toInt32(0) AND value
+	t.id BETWEEN 0 AND value
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

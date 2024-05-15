@@ -24,18 +24,16 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "t1"
 SET
-	"Parent"."Value1" = @Value1
+	"Value1" = CAST(@Value1 AS Int)
 WHERE
-	"Parent"."ParentID" = @ParentID
+	"t1"."ParentID" = @ParentID
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."ParentID",
@@ -44,5 +42,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @ParentID
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

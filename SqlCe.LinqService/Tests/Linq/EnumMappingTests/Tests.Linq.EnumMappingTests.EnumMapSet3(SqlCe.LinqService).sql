@@ -28,7 +28,7 @@ BeforeExecute
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[IntValue] = 4
+	[IntValue] = 4
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
@@ -36,7 +36,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[LinqDataTypes] [r]
 WHERE

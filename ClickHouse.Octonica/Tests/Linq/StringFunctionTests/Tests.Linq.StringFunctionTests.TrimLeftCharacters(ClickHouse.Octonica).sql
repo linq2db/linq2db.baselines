@@ -2,11 +2,10 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	pp.PersonID,
+	concat('  ', pp.FirstName, ' ')
 FROM
-	Person p
+	Person pp
 WHERE
-	trim(LEADING ' J' FROM concat('  ', p.FirstName, ' ')) = 'ohn ' AND
-	p.PersonID = toInt32(1)
+	pp.PersonID = 1 AND trim(LEADING (' J') FROM concat('  ', pp.FirstName, ' ')) = 'ohn '
 

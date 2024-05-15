@@ -2,9 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDecimal128(t.MoneyValue, toUInt8(10))
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toDecimal128(p.MoneyValue, toUInt8(10)) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toDecimal128(t.MoneyValue, toUInt8(10)) > toDecimal64('0', 10)
+	p_1.c1 > toDecimal128('0', 10)
 

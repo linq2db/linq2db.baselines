@@ -2,17 +2,17 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t2.ParentID
+	g_2.ParentID
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID
+			g_1.ParentID as ParentID
 		FROM
-			GrandChild t1
+			GrandChild g_1
 		GROUP BY
-			t1.ParentID,
-			t1.ChildID
-	) t2
+			g_1.ParentID,
+			g_1.ChildID
+	) g_2
 GROUP BY
-	t2.ParentID
+	g_2.ParentID
 

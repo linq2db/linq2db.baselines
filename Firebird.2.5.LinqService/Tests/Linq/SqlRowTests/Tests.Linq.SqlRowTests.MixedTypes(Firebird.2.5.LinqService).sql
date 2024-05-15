@@ -33,7 +33,7 @@ DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2001-01-01' AS timestamp)
 DECLARE @Double Double
 SET     @Double = 1
-DECLARE @Bool Char(1) -- String
+DECLARE @Bool Char -- String
 SET     @Bool = '1'
 
 INSERT INTO "Mixed"
@@ -63,7 +63,7 @@ DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2002-02-02' AS timestamp)
 DECLARE @Double Double
 SET     @Double = 2
-DECLARE @Bool Char(1) -- String
+DECLARE @Bool Char -- String
 SET     @Bool = '0'
 
 INSERT INTO "Mixed"
@@ -87,7 +87,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Mixed" "t"
 WHERE

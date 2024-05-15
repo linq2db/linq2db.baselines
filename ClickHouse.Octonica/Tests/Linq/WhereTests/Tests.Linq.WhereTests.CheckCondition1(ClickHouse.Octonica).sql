@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.ParentID = toInt32(1) AND p.Value1 = toInt32(1) OR p.ParentID = toInt32(2) AND p.Value1 IS NOT NULL)
+	(p.ParentID = 1 AND p.Value1 = 1 OR p.ParentID = 2 AND p.Value1 IS NOT NULL)
 

@@ -17,10 +17,10 @@ DECLARE @lastName NVarChar(9) -- String
 SET     @lastName = 'Testerson'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Patient] [_]
-		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
+	[Patient] [t1]
+		INNER JOIN [Person] [a_Person] ON ([t1].[PersonID] = [a_Person].[PersonID])
 WHERE
 	[a_Person].[FirstName] = ? AND [a_Person].[LastName] = ?
 
@@ -37,10 +37,10 @@ SELECT
 	[a_Person].[LastName],
 	[a_Person].[MiddleName],
 	[a_Person].[Gender],
-	[_].[Diagnosis]
+	[t1].[Diagnosis]
 FROM
-	[Patient] [_]
-		INNER JOIN [Person] [a_Person] ON ([_].[PersonID] = [a_Person].[PersonID])
+	[Patient] [t1]
+		INNER JOIN [Person] [a_Person] ON ([t1].[PersonID] = [a_Person].[PersonID])
 WHERE
 	[a_Person].[FirstName] = ? AND [a_Person].[LastName] = ?
 ORDER BY

@@ -71,8 +71,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 6
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."PersonID",
@@ -84,14 +82,12 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 8
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."PersonID",
@@ -103,5 +99,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id2
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

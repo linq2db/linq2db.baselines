@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Max(t.PersonID)
+	MAX(t1.PersonID)
 FROM
-	Person t
+	Person t1
 
 BeforeExecute
 -- Informix.DB2 Informix

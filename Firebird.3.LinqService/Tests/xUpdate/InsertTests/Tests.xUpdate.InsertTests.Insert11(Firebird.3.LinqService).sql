@@ -2,9 +2,9 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -38,8 +38,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p2"."PersonID",
@@ -51,5 +49,5 @@ FROM
 	"Person" "p2"
 WHERE
 	("p2"."PersonID" > @id OR "p2"."PersonID" = 0)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

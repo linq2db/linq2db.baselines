@@ -2,17 +2,21 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Sum(`t1`.`MoneyValue`),
-	Extract(year from `t1`.`Key_1`),
-	Extract(month from `t1`.`Key_1`)
+	SUM(`grp_1`.`MoneyValue`),
+	`grp_1`.`Year_1`,
+	`grp_1`.`Month_1`
 FROM
 	(
 		SELECT
-			Cast(Concat(Lpad(Extract(year from `selectParam`.`DateTimeValue`),4,'0'), '-', Lpad(Extract(month from `selectParam`.`DateTimeValue`),2,'0'), '-01') as Date) as `Key_1`,
-			`selectParam`.`MoneyValue`
+			STR_TO_DATE(Concat(CAST(Extract(year from `grp`.`DateTimeValue`) AS CHAR(4)), '-', LPad(CAST(Extract(month from `grp`.`DateTimeValue`) AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f') as `Date_1`,
+			`grp`.`MoneyValue`,
+			Extract(year from STR_TO_DATE(Concat(CAST(Extract(year from `grp`.`DateTimeValue`) AS CHAR(4)), '-', LPad(CAST(Extract(month from `grp`.`DateTimeValue`) AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) as `Year_1`,
+			Extract(month from STR_TO_DATE(Concat(CAST(Extract(year from `grp`.`DateTimeValue`) AS CHAR(4)), '-', LPad(CAST(Extract(month from `grp`.`DateTimeValue`) AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) as `Month_1`
 		FROM
-			`LinqDataTypes` `selectParam`
-	) `t1`
+			`LinqDataTypes` `grp`
+	) `grp_1`
 GROUP BY
-	`t1`.`Key_1`
+	`grp_1`.`Date_1`,
+	`grp_1`.`Year_1`,
+	`grp_1`.`Month_1`
 

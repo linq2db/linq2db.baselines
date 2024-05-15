@@ -22,12 +22,12 @@ SELECT
 			SELECT
 				*
 			FROM
-				Issue1982Table _
+				Issue1982Table t1
 			WHERE
-				_.Time < toInt64((toUnixTimestamp64Nano(toDateTime64(_.DateTime, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(_.DateTime), 7))) / 100)
+				t1.Time < toInt64((toUnixTimestamp64Nano(toDateTime64(t1.DateTime, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(t1.DateTime), 7))) / 100)
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
 BeforeExecute

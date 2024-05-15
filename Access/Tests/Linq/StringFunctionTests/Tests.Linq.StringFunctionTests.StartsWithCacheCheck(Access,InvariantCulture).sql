@@ -16,7 +16,7 @@ DECLARE @nameToCheck_1 VarWChar(3) -- String
 SET     @nameToCheck_1 = 'Joh'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -31,7 +31,7 @@ DECLARE @nameToCheck_1 VarWChar(3) -- String
 SET     @nameToCheck_1 = 'Joh'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -46,7 +46,7 @@ DECLARE @nameToCheck_1 VarWChar(3) -- String
 SET     @nameToCheck_1 = 'JOH'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -61,7 +61,7 @@ DECLARE @nameToCheck_1 VarWChar(3) -- String
 SET     @nameToCheck_1 = 'JOH'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

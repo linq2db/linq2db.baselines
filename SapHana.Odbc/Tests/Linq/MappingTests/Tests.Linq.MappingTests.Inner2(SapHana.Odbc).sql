@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"p"."ParentID",
@@ -10,5 +8,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = 1 AND "p"."Value1" = 1
-LIMIT ?
+LIMIT 1
 

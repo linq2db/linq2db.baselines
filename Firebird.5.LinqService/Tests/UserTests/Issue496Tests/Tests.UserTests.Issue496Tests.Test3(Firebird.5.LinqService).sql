@@ -2,11 +2,11 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	"c_1"."ChildID",
-	"c_1"."ParentID"
+	"a_Children"."ChildID",
+	"a_Children"."ParentID"
 FROM
-	"Parent" "cp"
-		INNER JOIN "Child" "c_1" ON Cast("cp"."ParentID" as BigInt) = "c_1"."ParentID"
+	"Parent" "p"
+		INNER JOIN "Child" "a_Children" ON CAST("p"."ParentID" AS BigInt) = "a_Children"."ParentID"
 WHERE
-	"cp"."ParentID" = 1
+	"p"."ParentID" = 1
 

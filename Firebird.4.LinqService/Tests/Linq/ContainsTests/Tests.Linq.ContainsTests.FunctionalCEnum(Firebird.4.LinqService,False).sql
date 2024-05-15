@@ -80,8 +80,6 @@ DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value4___'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -89,7 +87,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -97,8 +95,6 @@ DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar -- String
 SET     @CEnum_1 = NULL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -106,7 +102,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -114,8 +110,6 @@ DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -123,7 +117,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" IN (@CEnum, @CEnum_1)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -131,8 +125,6 @@ DECLARE @CEnum VarChar -- String
 SET     @CEnum = NULL
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -140,7 +132,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -148,8 +140,6 @@ DECLARE @CEnum VarChar(12) -- String
 SET     @CEnum = '___Value3___'
 DECLARE @CEnum_1 VarChar(12) -- String
 SET     @CEnum_1 = '___Value2___'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"s"."Id"
@@ -157,7 +147,7 @@ FROM
 	"Src" "s"
 WHERE
 	"s"."CEnum" NOT IN (@CEnum, @CEnum_1)
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

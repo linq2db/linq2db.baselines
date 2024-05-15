@@ -2,16 +2,16 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[Key_2]
+	[t2].[ChildID]
 FROM
 	(
 		SELECT
-			[selectParam].[ParentID] + 1 as [Key_1],
-			[selectParam].[ChildID] as [Key_2]
+			[t1].[ParentID] + 1 as [ParentID],
+			[t1].[ChildID]
 		FROM
-			[GrandChild] [selectParam]
-	) [t1]
+			[GrandChild] [t1]
+	) [t2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	[t2].[ParentID],
+	[t2].[ChildID]
 

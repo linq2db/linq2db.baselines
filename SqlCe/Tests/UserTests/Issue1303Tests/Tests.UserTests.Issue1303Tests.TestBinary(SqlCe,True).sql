@@ -17,10 +17,6 @@ CREATE TABLE [Issue1303]
 
 BeforeExecute
 -- SqlCe
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]
 (
@@ -31,45 +27,45 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	0x010203,
+	0x0405
 )
 
 BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array] as [Array_1],
+	[t1].[Binary] as [Binary_1]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[ID] = 1
+	[t1].[ID] = 1
 
 BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array] as [Array_1],
+	[t1].[Binary] as [Binary_1]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Array] = 0x010203
+	[t1].[Array] = 0x010203
 
 BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array] as [Array_1],
+	[t1].[Binary] as [Binary_1]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Binary] = 0x0405
+	[t1].[Binary] = 0x0405
 
 BeforeExecute
 -- SqlCe

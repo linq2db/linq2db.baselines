@@ -255,7 +255,7 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2014
 DECLARE @param Int -- Int32
-SET     @param = 300
+SET     @param = 200
 
 INSERT INTO [DestinationTable]
 (
@@ -265,11 +265,11 @@ INSERT INTO [DestinationTable]
 )
 OUTPUT
 	[INSERTED].[Id] + 1,
-	[INSERTED].[ValueStr] + Convert(VarChar(11), 1)
+	[INSERTED].[ValueStr] + CAST(1 AS VarChar(11))
 SELECT
-	[s].[Id] + @param,
+	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
-	[s].[ValueStr] + Convert(VarChar(11), 100)
+	[s].[ValueStr] + CAST(100 AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
@@ -289,8 +289,8 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	[t].[Id],
-	[t].[ValueStr]
+	[t].[Id] + 1,
+	[t].[ValueStr] + CAST(1 AS VarChar(11))
 FROM
 	[DestinationTable] [t]
 

@@ -278,7 +278,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	Cast(Floor(Extract(yearday from "t"."TransactionDate")) as int) + 1
+	Extract(yearday from "t"."TransactionDate") + 1
 FROM
 	"Transactions" "t"
 

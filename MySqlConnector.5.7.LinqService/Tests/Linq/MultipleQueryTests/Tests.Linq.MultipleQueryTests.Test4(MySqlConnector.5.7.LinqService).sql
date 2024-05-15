@@ -2,25 +2,22 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`detail`.`ChildID`
+	`m_1`.`ParentID`,
+	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`p`.`ParentID`,
-			`p`.`Value1`
+			`p`.`ParentID`
 		FROM
 			`Parent` `p`
-	) `key_data_result`
-		INNER JOIN `Child` `detail` ON `key_data_result`.`ParentID` = `detail`.`ParentID`
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`
+	`p`.`ParentID`
 FROM
 	`Parent` `p`
 ORDER BY

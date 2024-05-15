@@ -42,22 +42,20 @@ VALUES
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
-SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > @p
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > STR_TO_DATE('2018-01-02 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` = 5000
+	`LinqDataTypes`.`ID` = 5000
 

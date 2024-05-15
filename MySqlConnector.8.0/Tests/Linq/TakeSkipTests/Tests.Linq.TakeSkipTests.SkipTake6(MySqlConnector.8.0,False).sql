@@ -12,9 +12,9 @@ FROM
 		FROM
 			`GrandChild` `p`
 		LIMIT 3
-	) `t1`
+	) `p_1`
 WHERE
-	`c_1`.`ParentID` = `t1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -30,7 +30,7 @@ FROM
 		FROM
 			`GrandChild` `p`
 		LIMIT 12, 3
-	) `t1`
+	) `p_1`
 WHERE
-	`c_1`.`ParentID` = `t1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 

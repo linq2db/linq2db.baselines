@@ -76,7 +76,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -111,7 +111,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -146,7 +146,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE

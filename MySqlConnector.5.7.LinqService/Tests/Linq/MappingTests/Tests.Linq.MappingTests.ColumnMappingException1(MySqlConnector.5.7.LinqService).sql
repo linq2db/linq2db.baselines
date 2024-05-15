@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`_`.`FirstName`
+	`t1`.`FirstName`
 FROM
-	`Person` `_`
+	`Person` `t1`
 

@@ -68,16 +68,14 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_32" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",
@@ -100,21 +98,19 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson_f_32"
+	"xxPerson_f_32" "t1"
 SET
-	"xxPerson_f_32"."FirstName" = @FirstName,
-	"xxPerson_f_32"."LastName" = @LastName,
-	"xxPerson_f_32"."MiddleName" = @MiddleName,
-	"xxPerson_f_32"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(6)),
+	"LastName" = CAST(@LastName AS VARCHAR(4)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(4)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"xxPerson_f_32"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."FirstName",
 	"t1"."PersonID",
 	"t1"."LastName",

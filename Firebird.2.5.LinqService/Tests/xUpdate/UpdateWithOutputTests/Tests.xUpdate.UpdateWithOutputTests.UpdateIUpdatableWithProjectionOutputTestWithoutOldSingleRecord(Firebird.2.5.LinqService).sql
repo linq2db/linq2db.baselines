@@ -223,12 +223,12 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"TableWithData"
+	"TableWithData" "s"
 SET
-	"TableWithData"."Value" = "TableWithData"."Value" + 1,
-	"TableWithData"."ValueStr" = "TableWithData"."ValueStr" || 'Upd'
+	"Value" = "s"."Value" + 1,
+	"ValueStr" = "s"."ValueStr" || 'Upd'
 WHERE
-	"TableWithData"."Id" = 3
+	"s"."Id" = 3
 RETURNING
 	NEW."Value"
 

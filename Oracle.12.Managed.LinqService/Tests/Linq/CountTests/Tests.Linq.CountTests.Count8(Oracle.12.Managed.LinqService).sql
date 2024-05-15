@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" p
 		LEFT JOIN "Parent" a_Parent ON p."ParentID" = a_Parent."ParentID"
@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" p
 		LEFT JOIN "Parent" a_Parent ON p."ParentID" = a_Parent."ParentID"

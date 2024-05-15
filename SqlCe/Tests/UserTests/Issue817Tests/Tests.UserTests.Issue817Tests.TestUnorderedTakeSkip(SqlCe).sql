@@ -6,10 +6,10 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	[_].[PersonID]
+	[t1].[PersonID]
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	[_].[PersonID]
+	[t1].[PersonID]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 

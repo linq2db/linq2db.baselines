@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	Cast(@Value as Int),
-	Cast(@value_1 as Int),
-	Cast(@ValueStr as VarChar(255) CHARACTER SET UNICODE_FSS)
+	CAST(@Value AS Int),
+	CAST(@value_1 AS Int),
+	CAST(@ValueStr AS VARCHAR(8))
 )
 RETURNING
 	"TableWithData"."Id",

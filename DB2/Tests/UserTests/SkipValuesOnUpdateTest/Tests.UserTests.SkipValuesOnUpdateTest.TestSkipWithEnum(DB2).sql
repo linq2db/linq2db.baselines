@@ -62,7 +62,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -76,13 +76,13 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age,
-	"PR_1598_Update_Enum_Table"."Gender" = @Gender
+	"Name" = @Name,
+	"Age" = @Age,
+	"Gender" = @Gender
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -96,7 +96,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -108,12 +108,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age
+	"Name" = @Name,
+	"Age" = @Age
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -127,7 +127,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

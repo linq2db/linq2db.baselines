@@ -6,5 +6,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(((p.FirstName || ' ') || To_Char(1)) || To_Char(2)) = 'John 12'
+	(p.FirstName || ' 12') = 'John 12'
 

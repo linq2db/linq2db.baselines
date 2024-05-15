@@ -7,7 +7,7 @@ WITH [EmployeeSubordinatesReport]
 	[EmployeeID],
 	[LastName],
 	[FirstName],
-	[cnt]
+	[NumberOfSubordinates]
 )
 AS
 (
@@ -18,11 +18,12 @@ AS
 		[e].[FirstName],
 		(
 			SELECT
-				Count(*)
+				COUNT(*)
 			FROM
 				[Employees] [e2]
 			WHERE
-				([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
+				([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL) AND
+				[e2].[ReportsTo] IS NOT NULL
 		)
 	FROM
 		[Employees] [e]
@@ -30,10 +31,10 @@ AS
 SELECT
 	[employee].[LastName],
 	[employee].[FirstName],
-	[employee].[cnt],
+	[employee].[NumberOfSubordinates],
 	[manager].[LastName],
 	[manager].[FirstName],
-	[manager].[cnt]
+	[manager].[NumberOfSubordinates]
 FROM
 	[EmployeeSubordinatesReport] [employee]
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
@@ -44,41 +45,35 @@ BeforeExecute
 SELECT
 	[employee].[LastName],
 	[employee].[FirstName],
-	[employee].[NumberOfSubordinates],
-	[t1].[LastName],
-	[t1].[FirstName],
-	[t1].[NumberOfSubordinates]
-FROM
 	(
 		SELECT
-			[e].[ReportsTo],
-			[e].[LastName],
-			[e].[FirstName],
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Employees] [e2]
-				WHERE
-					([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL)
-			) as [NumberOfSubordinates]
+			COUNT(*)
 		FROM
-			[Employees] [e]
-	) [employee]
+			[Employees] [e2_1]
+		WHERE
+			([e2_1].[ReportsTo] = [employee].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [employee].[ReportsTo] IS NULL) AND
+			[e2_1].[ReportsTo] IS NOT NULL
+	),
+	[manager_1].[LastName],
+	[manager_1].[FirstName],
+	[manager_1].[NumberOfSubordinates]
+FROM
+	[Employees] [employee]
 		LEFT JOIN (
 			SELECT
-				[e_1].[EmployeeID],
-				[e_1].[LastName],
-				[e_1].[FirstName],
+				[manager].[LastName],
+				[manager].[FirstName],
 				(
 					SELECT
-						Count(*)
+						COUNT(*)
 					FROM
-						[Employees] [e2_1]
+						[Employees] [e2]
 					WHERE
-						([e2_1].[ReportsTo] = [e_1].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [e_1].[ReportsTo] IS NULL)
-				) as [NumberOfSubordinates]
+						([e2].[ReportsTo] = [manager].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [manager].[ReportsTo] IS NULL) AND
+						[e2].[ReportsTo] IS NOT NULL
+				) as [NumberOfSubordinates],
+				[manager].[EmployeeID]
 			FROM
-				[Employees] [e_1]
-		) [t1] ON [employee].[ReportsTo] = [t1].[EmployeeID]
+				[Employees] [manager]
+		) [manager_1] ON [employee].[ReportsTo] = [manager_1].[EmployeeID]
 

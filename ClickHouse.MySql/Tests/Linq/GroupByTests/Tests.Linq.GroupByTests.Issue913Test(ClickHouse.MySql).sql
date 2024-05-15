@@ -25,35 +25,28 @@ INSERT INTO Issue913Test
 	TradingStatus
 )
 VALUES
-(toInt32(1),NULL),
-(toInt32(2),'A'),
-(toInt32(3),'D')
+(1,NULL),
+(2,'A'),
+(3,'D')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.c1,
-	Count(*)
+	g_2.IsDelisted,
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN toUInt8(1)
-				ELSE toUInt8(0)
-			END as Key_1,
-			CASE
-				WHEN selectParam.TradingStatus = 'D'
-					THEN toUInt8(1)
-				ELSE toUInt8(0)
-			END as c1
+				WHEN g_1.TradingStatus = 'D' THEN true
+				ELSE false
+			END as IsDelisted
 		FROM
-			Issue913Test selectParam
-	) t1
+			Issue913Test g_1
+	) g_2
 GROUP BY
-	t1.Key_1,
-	t1.c1
+	g_2.IsDelisted
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

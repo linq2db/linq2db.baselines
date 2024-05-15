@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Timestamp(20) -- DateTime
-SET     @p = '2018-01-02-00.00.00.000000'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + "t"."SmallIntValue" Day > @p
+	"t".ID = 5000 AND "t"."DateTimeValue" + "t"."SmallIntValue" DAY > CAST('2018-01-02' AS timestamp)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID = 5000
+	"t".ID = 5000
 

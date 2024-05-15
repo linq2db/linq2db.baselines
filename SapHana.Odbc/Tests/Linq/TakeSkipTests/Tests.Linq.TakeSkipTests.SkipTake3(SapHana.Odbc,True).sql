@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 5
+DECLARE @take  -- Int32
+SET     @take = 5
 DECLARE @skip  -- Int32
 SET     @skip = 3
 
@@ -16,8 +16,8 @@ LIMIT ? OFFSET ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
-SET     @skip = 5
+DECLARE @take  -- Int32
+SET     @take = 5
 DECLARE @skip  -- Int32
 SET     @skip = 3
 

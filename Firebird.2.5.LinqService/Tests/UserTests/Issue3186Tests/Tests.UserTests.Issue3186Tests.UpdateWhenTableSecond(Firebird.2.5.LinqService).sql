@@ -27,9 +27,9 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id VarChar(18) -- String
 SET     @id = 'TestProcessService'
-DECLARE @is_process_service Char(1) -- String
+DECLARE @is_process_service Char -- String
 SET     @is_process_service = '1'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "element_services"
@@ -49,9 +49,9 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id VarChar(18) -- String
 SET     @id = 'TestElementService'
-DECLARE @is_process_service Char(1) -- String
+DECLARE @is_process_service Char -- String
 SET     @is_process_service = '0'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "element_services"
@@ -98,7 +98,7 @@ DECLARE @id VarChar(20) -- String
 SET     @id = 'TestProcessCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "component_categories"
@@ -120,7 +120,7 @@ DECLARE @id VarChar(20) -- String
 SET     @id = 'TestProcessCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "component_categories"
@@ -142,7 +142,7 @@ DECLARE @id VarChar(20) -- String
 SET     @id = 'TestElementCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "component_categories"
@@ -164,7 +164,7 @@ DECLARE @id VarChar(20) -- String
 SET     @id = 'TestElementCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "component_categories"
@@ -214,7 +214,7 @@ DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestProcessCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "Components"
@@ -240,7 +240,7 @@ DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestProcessCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "Components"
@@ -266,7 +266,7 @@ DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestElementCategory1'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "Components"
@@ -292,7 +292,7 @@ DECLARE @category_id VarChar(20) -- String
 SET     @category_id = 'TestElementCategory2'
 DECLARE @service_id VarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '0'
 
 INSERT INTO "Components"
@@ -312,23 +312,23 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @is_deleted Char(1) -- String
+DECLARE @is_deleted Char -- String
 SET     @is_deleted = '1'
 
 UPDATE
 	"component_categories"
 SET
-	"component_categories"."is_deleted" = @is_deleted
+	"is_deleted" = CAST(@is_deleted AS CHAR(1))
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"element_services" "ie"
-				INNER JOIN "component_categories" "ctg" ON "ie"."id" = "ctg"."service_id"
+			"element_services" "ct"
+				INNER JOIN "component_categories" "ctg" ON "ct"."id" = "ctg"."service_id"
 				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = '0'
 		WHERE
-			"ie"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
+			"ct"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
 
 BeforeExecute

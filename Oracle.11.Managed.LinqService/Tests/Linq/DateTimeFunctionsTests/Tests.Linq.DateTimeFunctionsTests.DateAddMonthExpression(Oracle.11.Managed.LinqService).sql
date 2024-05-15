@@ -4,7 +4,7 @@ DECLARE @p Int32
 SET     @p = 2
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '1' MONTH
+	TRUNC(t."DateTimeValue" + :p * INTERVAL '1' MONTH)
 FROM
 	"LinqDataTypes" t
 

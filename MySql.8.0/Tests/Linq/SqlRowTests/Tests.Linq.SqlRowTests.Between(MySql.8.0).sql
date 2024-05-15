@@ -35,7 +35,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -46,7 +46,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -57,18 +57,17 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
-	(`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`) AND
-	(`i`.`One`, `i`.`Two`) <= (`i`.`One`, `i`.`Two`)
+	(`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -79,7 +78,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -90,7 +89,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -101,7 +100,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -112,7 +111,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -123,7 +122,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -134,7 +133,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE

@@ -31,14 +31,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[FirstName],
-	[x].[PersonID],
+	[x].[PersonID] as [ID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -57,20 +55,18 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = @FirstName
+	[FirstName] = @FirstName
 WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[x].[FirstName],
-	[x].[PersonID],
+	[x].[PersonID] as [ID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -95,28 +91,26 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = @FirstName,
-	[Person].[LastName] = @LastName,
-	[Person].[MiddleName] = @MiddleName,
-	[Person].[Gender] = @Gender
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+SELECT TOP (2)
+	[t1].[FirstName],
+	[t1].[PersonID] as [ID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 

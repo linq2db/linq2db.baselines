@@ -44,7 +44,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled Char(1) -- String
+DECLARE @Enabled Char -- String
 SET     @Enabled = '1'
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -66,7 +66,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled Char(1) -- String
+DECLARE @Enabled Char -- String
 SET     @Enabled = '1'
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -88,7 +88,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled Char(1) -- String
+DECLARE @Enabled Char -- String
 SET     @Enabled = '1'
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -107,53 +107,45 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"s"."Name"
+	"m_1"."Name",
+	"d"."Id",
+	"d"."Name",
+	"d"."Enabled",
+	"d"."ImageFullUrl"
 FROM
-	"Stone" "s"
+	(
+		SELECT DISTINCT
+			"s"."Name"
+		FROM
+			"Stone" "s"
+		WHERE
+			"s"."Enabled" = '1' AND "s"."Name" NOT STARTING WITH 'level - ' AND
+			Char_Length("s"."ImageFullUrl") > 0
+	) "m_1"
+		INNER JOIN "Stone" "d" ON "m_1"."Name" = "d"."Name"
 WHERE
-	"s"."Enabled" = '1' AND ("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0
+	"d"."Enabled" = '1' AND "d"."Name" NOT STARTING WITH 'level - ' AND
+	Char_Length("d"."ImageFullUrl") > 0
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Firebird.2.5 Firebird
+
+SELECT
+	"sG"."Name"
+FROM
+	"Stone" "sG"
+WHERE
+	"sG"."Enabled" = '1' AND "sG"."Name" NOT STARTING WITH 'level - ' AND
+	Char_Length("sG"."ImageFullUrl") > 0
 GROUP BY
-	"s"."Name"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-
-SELECT
-	"s"."Id",
-	"s"."Name",
-	"s"."Enabled",
-	"s"."ImageFullUrl"
-FROM
-	"Stone" "s"
-WHERE
-	"s"."Enabled" = '1' AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0 AND
-	"s"."Name" = @Name
-
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group2'
-
-SELECT
-	"s"."Id",
-	"s"."Name",
-	"s"."Enabled",
-	"s"."ImageFullUrl"
-FROM
-	"Stone" "s"
-WHERE
-	"s"."Enabled" = '1' AND
-	("s"."Name" NOT STARTING WITH 'level - ') AND
-	Char_Length("s"."ImageFullUrl") > 0 AND
-	"s"."Name" = @Name
+	"sG"."Name"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

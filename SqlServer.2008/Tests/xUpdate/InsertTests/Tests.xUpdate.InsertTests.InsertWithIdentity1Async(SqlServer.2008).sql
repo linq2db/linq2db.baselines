@@ -27,10 +27,8 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2008 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],

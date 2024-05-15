@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017
+DECLARE @param Int -- Int32
+SET     @param = 100
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -9,8 +11,7 @@ INSERT INTO [Child]
 	[ChildID]
 )
 OUTPUT
-	[INSERTED].[ChildID],
-	[INSERTED].[ParentID]
+	[INSERTED].[ChildID] + [INSERTED].[ParentID] + @param
 SELECT
 	[c_1].[ParentID],
 	@id
@@ -21,10 +22,11 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @param Int -- Int32
+SET     @param = 100
 
 SELECT
-	[c_1].[ChildID],
-	[c_1].[ParentID]
+	[c_1].[ChildID] + [c_1].[ParentID] + @param
 FROM
 	[Child] [c_1]
 WHERE
@@ -33,9 +35,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2017
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

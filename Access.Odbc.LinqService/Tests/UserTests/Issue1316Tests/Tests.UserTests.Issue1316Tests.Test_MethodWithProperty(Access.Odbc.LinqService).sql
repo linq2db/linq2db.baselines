@@ -33,11 +33,11 @@ DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5
 
 SELECT TOP 2
-	[_].[ID]
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = ?
+	[t1].[ID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

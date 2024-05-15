@@ -1,21 +1,14 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"l"."ParentID"
-FROM
-	"Child" "l"
-FETCH FIRST 1 ROWS ONLY
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	1
+	(
+		SELECT
+			"l"."ParentID" + 1
+		FROM
+			"Child" "l"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" "sep"
 

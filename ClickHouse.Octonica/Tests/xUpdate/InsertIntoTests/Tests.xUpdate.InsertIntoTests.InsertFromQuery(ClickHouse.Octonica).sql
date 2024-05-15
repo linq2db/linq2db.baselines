@@ -23,7 +23,7 @@ INSERT INTO InsertTestClass
 	OtherValue
 )
 VALUES
-(toInt32(1),toInt32(100))
+(1,100)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -46,10 +46,12 @@ BeforeExecute
 
 INSERT INTO InsertTestClassDest
 (
+	Id,
 	Value,
 	OtherValue
 )
 SELECT
+	x.Id + 1,
 	x.Value,
 	x.OtherValue
 FROM
@@ -64,7 +66,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClass t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -75,7 +77,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClassDest t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

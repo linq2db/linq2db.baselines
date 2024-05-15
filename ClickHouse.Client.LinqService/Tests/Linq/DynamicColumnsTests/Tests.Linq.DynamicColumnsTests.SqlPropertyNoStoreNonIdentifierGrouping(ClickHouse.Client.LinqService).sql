@@ -27,8 +27,8 @@ INSERT INTO DynamicTable
 )
 VALUES
 (
-	toInt32(77),
-	toInt32(5)
+	77,
+	5
 )
 
 BeforeExecute
@@ -41,21 +41,21 @@ INSERT INTO DynamicTable
 )
 VALUES
 (
-	toInt32(77),
-	toInt32(5)
+	77,
+	5
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.`Not Identifier`,
-	Count(*),
-	sumOrNull(t1.`Some Value`)
+	g_1.`Not Identifier`,
+	COUNT(*),
+	sumOrNull(g_1.`Some Value`)
 FROM
-	DynamicTable t1
+	DynamicTable g_1
 GROUP BY
-	t1.`Not Identifier`
+	g_1.`Not Identifier`
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

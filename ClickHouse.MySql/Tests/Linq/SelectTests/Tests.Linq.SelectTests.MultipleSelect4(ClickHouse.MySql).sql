@@ -2,8 +2,8 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p3.PersonID,
-	p3.FirstName
+	p2.PersonID,
+	p2.FirstName
 FROM
-	Person p3
+	Person p2
 

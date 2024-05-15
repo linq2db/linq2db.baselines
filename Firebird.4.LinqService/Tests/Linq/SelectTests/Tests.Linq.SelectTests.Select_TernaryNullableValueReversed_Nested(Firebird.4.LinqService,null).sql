@@ -2,18 +2,11 @@
 -- Firebird.4 Firebird4
 DECLARE @value Integer -- Int32
 SET     @value = NULL
-DECLARE @Value_1 Integer -- Int32
-SET     @Value_1 = 0
+DECLARE @p Integer -- Int32
+SET     @p = 0
 
 SELECT
-	CASE
-		WHEN Cast(@value as Int) IS NOT NULL
-			THEN CASE
-			WHEN Cast(@Value_1 as Int) < 2
-				THEN Cast(@Value_1 as Int)
-			ELSE Cast(@Value_1 as Int) + 4
-		END
-		ELSE NULL
-	END
+	CAST(@value AS Int),
+	CAST(@p AS Int)
 FROM rdb$database
 

@@ -33,8 +33,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -46,7 +44,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -60,20 +58,18 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(18)),
+	"LastName" = CAST(@LastName AS VARCHAR(8)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."FirstName",
@@ -85,7 +81,7 @@ FROM
 	"Person" "x"
 WHERE
 	"x"."FirstName" = @FirstName
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

@@ -2,32 +2,32 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[month_1],
-	[t1].[year_1],
+	[t2].[month_1],
+	[t2].[year_1],
 	1
 FROM
 	(
 		SELECT
-			Cast(StrFTime('%m', [selectParam].[DateTimeValue]) as int) as [month_1],
-			Cast(StrFTime('%Y', [selectParam].[DateTimeValue]) as int) as [year_1]
+			CAST(strftime('%m', [t1].[DateTimeValue]) AS INTEGER) as [month_1],
+			CAST(strftime('%Y', [t1].[DateTimeValue]) AS INTEGER) as [year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [t1]
+	) [t2]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	[t2].[month_1],
+	[t2].[year_1]
 UNION
 SELECT
-	[_].[SmallIntValue],
-	[_].[SmallIntValue],
+	[t3].[SmallIntValue],
+	[t3].[SmallIntValue],
 	3
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t3]
 UNION
 SELECT
-	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
-	Cast(StrFTime('%Y', [_1].[DateTimeValue]) as int),
+	CAST(strftime('%Y', [t4].[DateTimeValue]) AS INTEGER),
+	CAST(strftime('%Y', [t4].[DateTimeValue]) AS INTEGER),
 	2
 FROM
-	[LinqDataTypes] [_1]
+	[LinqDataTypes] [t4]
 

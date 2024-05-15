@@ -90,24 +90,24 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	"Value1" = (
 		SELECT
-			"a_Relation"."RelatedValue3"
+			"a_Relation_1"."RelatedValue3"
 		FROM
-			"UpdatedEntities" "v"
-				LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
+			"UpdatedEntities" "v_1"
+				LEFT JOIN "UpdateRelation" "a_Relation_1" ON "v_1"."RelationId" = "a_Relation_1"."id"
 		WHERE
-			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
+			"a_Relation_1"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v_1"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" "v_1"
-				LEFT JOIN "UpdateRelation" "a_Relation_1" ON "v_1"."RelationId" = "a_Relation_1"."id"
+			"UpdatedEntities" "v"
+				LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
 		WHERE
-			"a_Relation_1"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v_1"."id"
+			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
 	)
 
 BeforeExecute
@@ -120,7 +120,7 @@ FROM
 		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
 WHERE
 	"a_Relation"."RelatedValue1" = 11
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

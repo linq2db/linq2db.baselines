@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -31,7 +31,7 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Child` `c_1`
 WHERE
@@ -40,9 +40,9 @@ WHERE
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ChildID` > 1000
+	`Child`.`ChildID` > 1000
 

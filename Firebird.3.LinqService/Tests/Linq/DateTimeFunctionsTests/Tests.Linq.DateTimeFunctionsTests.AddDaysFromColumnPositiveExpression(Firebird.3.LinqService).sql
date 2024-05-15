@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2018-01-02' AS timestamp)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > @p
+	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID = 5000
+	"t".ID = 5000
 

@@ -19,5 +19,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShippedDate] IS NULL
+	strftime('%Y-%m-%d %H:%M:%f', [o].[ShippedDate]) IS NULL
 

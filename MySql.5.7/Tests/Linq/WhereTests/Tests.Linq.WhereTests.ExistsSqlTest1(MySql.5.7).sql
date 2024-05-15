@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DELETE   `p`
+DELETE  
 FROM
-	`Parent` `p`
+	`Parent`
 WHERE
-	`p`.`ParentID` + 100 IN (
+	`Parent`.`ParentID` + 100 IN (
 		SELECT
 			`c_1`.`ParentID`
 		FROM

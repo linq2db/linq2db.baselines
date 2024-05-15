@@ -7,9 +7,8 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
-		)
-			THEN true
+				Person t1
+		) THEN true
 		ELSE false
 	END
 

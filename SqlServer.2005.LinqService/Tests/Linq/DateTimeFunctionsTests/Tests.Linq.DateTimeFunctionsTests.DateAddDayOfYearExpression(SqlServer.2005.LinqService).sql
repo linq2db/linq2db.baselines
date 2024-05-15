@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = 3
 
 SELECT
-	DateAdd(dayofyear, @p, [t].[DateTimeValue])
+	DateAdd(dd, DateDiff(dd, 0, DateAdd(dayofyear, @p, [t].[DateTimeValue])), 0)
 FROM
 	[LinqDataTypes] [t]
 

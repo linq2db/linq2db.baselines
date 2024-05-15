@@ -23,9 +23,9 @@ CommitTransactionAsync
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DELETE   `_`
+DELETE  
 FROM
-	`Parent` `_`
+	`Parent`
 WHERE
-	`_`.`ParentID` = 1010
+	`Parent`.`ParentID` = 1010
 

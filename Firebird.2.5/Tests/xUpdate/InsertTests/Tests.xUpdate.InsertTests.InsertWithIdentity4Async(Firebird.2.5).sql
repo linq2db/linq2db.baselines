@@ -38,12 +38,10 @@ RETURNING
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",
@@ -86,12 +84,10 @@ RETURNING
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
 	"p"."LastName",

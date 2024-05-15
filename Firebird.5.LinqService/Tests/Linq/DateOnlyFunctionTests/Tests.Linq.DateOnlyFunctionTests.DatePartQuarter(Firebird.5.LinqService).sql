@@ -278,7 +278,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast(Floor(Extract(quarter from "t"."TransactionDate")) as int)
+	Extract(quarter from "t"."TransactionDate")
 FROM
 	"Transactions" "t"
 

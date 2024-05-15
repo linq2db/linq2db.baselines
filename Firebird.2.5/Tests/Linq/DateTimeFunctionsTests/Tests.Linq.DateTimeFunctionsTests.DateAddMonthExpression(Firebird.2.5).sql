@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 2
 
 SELECT
-	DateAdd(Month, Cast(@p as Int), "t"."DateTimeValue")
+	CAST(DateAdd(Month, 2, "t"."DateTimeValue") AS Date)
 FROM
 	"LinqDataTypes" "t"
 

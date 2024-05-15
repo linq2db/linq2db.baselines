@@ -19,7 +19,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'M',
 	'Insert15',
 	NULL,
@@ -30,11 +30,11 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Person _
+	Person t1
 WHERE
-	startsWith(_.FirstName, 'Insert15')
+	startsWith(t1.FirstName, 'Insert15')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -2,9 +2,9 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Max(`ch`.`ParentID`)
+	MAX(`g_1`.`ParentID`)
 FROM
-	`Child` `ch`
+	`Child` `g_1`
 GROUP BY
-	`ch`.`ParentID`
+	`g_1`.`ParentID`
 

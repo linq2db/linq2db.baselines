@@ -40,22 +40,20 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t_1"."Id",
 	"t_1"."Value",
-	"t3"."Value1",
-	"t3"."Value2",
-	"t3"."is_empty"
+	"t2"."not_null",
+	"t2"."Value1",
+	"t2"."Value2"
 FROM
 	"SampleClass" "t_1"
-		LEFT JOIN LATERAL (
+		LEFT JOIN (
 			SELECT
-				"t2"."Value1",
-				"t2"."Value2",
-				1 as "is_empty"
+				"t1"."Value1",
+				"t1"."Value2",
+				1 as "not_null"
 			FROM
 				(
 					SELECT
@@ -67,18 +65,12 @@ FROM
 						"t"."Value" = 1
 					UNION
 					SELECT
-						"t1"."Value1",
-						"t1"."Value2"
-					FROM
-						(
-							SELECT
-								DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-								DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-							FROM rdb$database
-						) "t1"
-				) "t2"
-			FETCH NEXT @take ROWS ONLY
-		) "t3" ON 1=1
+						DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+						DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+					FROM rdb$database
+				) "t1"
+			FETCH NEXT 1 ROWS ONLY
+		) "t2" ON 1=1
 
 BeforeExecute
 -- Firebird.4 Firebird4

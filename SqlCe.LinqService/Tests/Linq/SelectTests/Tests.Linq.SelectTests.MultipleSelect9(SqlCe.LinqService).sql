@@ -2,8 +2,8 @@
 -- SqlCe
 
 SELECT
-	[p5].[PersonID],
-	[p5].[FirstName]
+	([p2].[PersonID] * 2) / 2 as [c1],
+	[p2].[FirstName]
 FROM
-	[Person] [p5]
+	[Person] [p2]
 

@@ -36,7 +36,7 @@ SELECT
 	t1.CharFld
 FROM
 	Issue1279Table t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -28,7 +28,7 @@ INSERT INTO WithInitOnly
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'OneBase',
 	'One'
 )
@@ -44,7 +44,7 @@ INSERT INTO WithInitOnly
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'TwoBase',
 	'Two'
 )

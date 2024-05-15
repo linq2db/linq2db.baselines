@@ -2,13 +2,13 @@
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 
 BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 

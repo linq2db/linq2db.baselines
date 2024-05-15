@@ -2,9 +2,9 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Child` `c_1`
+	`Child` `g_1`
 GROUP BY
-	`c_1`.`ParentID`
+	`g_1`.`ParentID`
 

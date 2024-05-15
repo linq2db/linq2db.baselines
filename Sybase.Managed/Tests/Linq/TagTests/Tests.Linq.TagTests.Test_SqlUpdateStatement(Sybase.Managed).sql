@@ -25,9 +25,7 @@ BeforeExecute
 UPDATE
 	[TestTable]
 SET
-	[t1].[Fd] = 1
-FROM
-	[TestTable] [t1]
+	[Fd] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

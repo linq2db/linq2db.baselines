@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
@@ -12,9 +12,9 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Person` `p`
 WHERE
-	(LOCATE('Joh', `p`.`FirstName`) <= 0) AND `p`.`PersonID` = 1
+	LOCATE('Joh', `p`.`FirstName`) <= 0 AND `p`.`PersonID` = 1
 

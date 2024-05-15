@@ -18,6 +18,8 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @testId UniqueIdentifier -- Guid
+SET     @testId = '00000000-0000-0000-0000-000000000000'
 
 INSERT INTO [Issue1363]
 (
@@ -29,11 +31,11 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] IS NULL
+			[t1].[required_field] = @testId
 	)
 )
 
@@ -54,28 +56,26 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] = @testId
+			[t1].[required_field] = @testId
 	)
 )
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id2 UniqueIdentifier -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
-	[_].[required_field],
-	[_].[optional_field]
+SELECT TOP (2)
+	[t1].[required_field],
+	[t1].[optional_field]
 FROM
-	[Issue1363] [_]
+	[Issue1363] [t1]
 WHERE
-	[_].[required_field] = @id2
+	[t1].[required_field] = @id2
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

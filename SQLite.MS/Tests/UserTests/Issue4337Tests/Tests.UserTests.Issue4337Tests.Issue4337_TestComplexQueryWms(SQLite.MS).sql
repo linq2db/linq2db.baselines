@@ -164,85 +164,62 @@ CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-DECLARE @take_1  -- Int32
-SET     @take_1 = 1
+DECLARE @Empty  -- Guid
+SET     @Empty = X'00000000000000000000000000000000'
+DECLARE @Empty_1  -- Guid
+SET     @Empty_1 = X'00000000000000000000000000000000'
 
 SELECT
-	[x_10].[Id],
-	[x_10].[AisleID],
-	[x_10].[MaterialID],
-	[x_10].[Id_1],
-	[x_10].[AisleNumber],
-	[x_10].[PlantID],
-	[x_10].[Name],
-	[x_10].[m_1],
-	[x_10].[MaterialNumber],
-	[x_10].[MaterialDescription_1],
-	[x_10].[MaterialDescription_2],
-	[x_10].[MaterialDescription_3],
-	[x_10].[CategoryABC],
-	[x_10].[CategoryCustoms],
-	[x_10].[CategoryDimensions],
-	[x_10].[CategoryQuality],
-	[x_10].[CategoryTemperature],
-	[x_10].[Id_2],
-	[x_10].[ChannelID],
-	[x_10].[Name_1],
-	[x_10].[Status],
-	[x_10].[AisleNumber_1],
-	[x_10].[CategoryABC_1],
-	[x_10].[HeightClass],
-	[x_10].[DepthCoordinate],
-	[x_10].[c1],
-	[x_10].[ResourceLabel],
-	[x_10].[Status_1],
-	[x_10].[CustomLong2],
-	[x_10].[HeightClass_1],
-	[x_10].[TypeID],
-	[x_10].[m1],
-	[x_10].[MaterialNumber_1],
-	[x_10].[MaterialDescription_1_1],
-	[x_10].[CategoryABC_2],
-	[x_10].[i1],
-	[x_10].[BatchNumber],
-	[x_10].[ProductStatus],
-	[x_10].[ExpiryDate],
-	[x_10].[CustomDate1],
-	[x_10].[ir1ic],
-	[x_10].[ror1],
-	[x_10].[ir1mim],
-	[a2n].[Id],
-	[a2n].[ChannelID],
-	[a2n].[Name],
-	[a2n].[Status],
-	[a2n].[AisleNumber],
-	[a2n].[CategoryABC],
-	[a2n].[HeightClass],
-	[a2n].[DepthCoordinate],
-	[c2n].[Id],
-	[c2n].[ResourceLabel],
-	[c2n].[Status],
-	[c2n].[CustomLong2],
-	[c2n].[HeightClass],
-	[c2n].[TypeID],
-	[m2n].[Id],
-	[m2n].[MaterialNumber],
-	[m2n].[MaterialDescription_1],
-	[m2n].[CategoryABC],
-	[t2].[i2],
-	[t2].[BatchNumber],
-	[t2].[ProductStatus],
-	[t2].[ExpiryDate],
-	[t2].[CustomDate1],
+	[x_2].[Id],
+	[x_2].[AisleID],
+	[x_2].[MaterialID],
+	[a].[Id],
+	[a].[AisleNumber],
+	[a].[PlantID],
+	[a].[Name],
+	[m_1].[Id],
+	[m_1].[MaterialNumber],
+	[m_1].[MaterialDescription_1],
+	[m_1].[MaterialDescription_2],
+	[m_1].[MaterialDescription_3],
+	[m_1].[CategoryABC],
+	[m_1].[CategoryCustoms],
+	[m_1].[CategoryDimensions],
+	[m_1].[CategoryQuality],
+	[m_1].[CategoryTemperature],
+	CASE
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
+	[a1].[Id],
+	[c1].[Id],
+	[c1].[ResourceLabel],
+	[c1].[Status],
+	[c1].[CustomLong2],
+	[c1].[HeightClass],
+	[c1].[TypeID],
+	[m1].[Id],
+	[m1].[MaterialNumber],
+	[m1].[MaterialDescription_1],
+	[m1].[CategoryABC],
+	[a1].[Status],
+	[a1].[Name],
+	[a1].[HeightClass],
+	[a1].[CategoryABC],
+	[a1].[AisleNumber],
+	[i1].[Id],
+	[i1].[BatchNumber],
+	[i1].[ProductStatus],
+	[i1].[ExpiryDate],
+	[i1].[CustomDate1],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[InventoryResourceDTO] [x_3]
 		WHERE
-			[x_3].[Status] < 99 AND [x_3].[ResourceID] = [c2n].[Id]
+			[x_3].[Status] < 99 AND [x_3].[ResourceID] = [c1].[Id]
 	),
 	CASE
 		WHEN EXISTS(
@@ -251,7 +228,7 @@ SELECT
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_4]
 			WHERE
-				[x_4].[ResourceID] = [c2n].[Id]
+				[x_4].[ResourceID] = [c1].[Id]
 		)
 			THEN 1
 		ELSE 0
@@ -263,157 +240,115 @@ SELECT
 			FROM
 				[InventoryResourceDTO] [x_5]
 			WHERE
-				[x_5].[Status] < 99 AND [x_5].[ResourceID] = [c2n].[Id] AND
+				[x_5].[Status] < 99 AND [x_5].[ResourceID] = [c1].[Id] AND
 				([x_5].[InfeedAdviceID] IS NULL OR EXISTS(
+					SELECT
+						*
+					FROM
+						[InfeedAdvicePositionDTO] [y]
+					WHERE
+						[y].[Id] = [x_5].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
+				))
+		)
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty_1 OR [a2].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
+	[a2].[Id],
+	[c2].[Id],
+	[c2].[ResourceLabel],
+	[c2].[Status],
+	[c2].[CustomLong2],
+	[c2].[HeightClass],
+	[c2].[TypeID],
+	[m2].[Id],
+	[m2].[MaterialNumber],
+	[m2].[MaterialDescription_1],
+	[m2].[CategoryABC],
+	[a2].[Status],
+	[a2].[Name],
+	[a2].[HeightClass],
+	[a2].[CategoryABC],
+	[a2].[AisleNumber],
+	[i2].[Id],
+	[i2].[BatchNumber],
+	[i2].[ProductStatus],
+	[i2].[ExpiryDate],
+	[i2].[CustomDate1],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[InventoryResourceDTO] [x_6]
+		WHERE
+			[x_6].[Status] < 99 AND [x_6].[ResourceID] = [c2].[Id]
+	),
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[RefOutfeedTransportOrderResourceDTO] [x_7]
+			WHERE
+				[x_7].[ResourceID] = [c2].[Id]
+		)
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[InventoryResourceDTO] [x_8]
+			WHERE
+				[x_8].[Status] < 99 AND [x_8].[ResourceID] = [c2].[Id] AND
+				([x_8].[InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
 						*
 					FROM
 						[InfeedAdvicePositionDTO] [y_1]
 					WHERE
-						[y_1].[Id] = [x_5].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 10
+						[y_1].[Id] = [x_8].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 10
 				))
 		)
 			THEN 1
 		ELSE 0
 	END
 FROM
-	(
-		SELECT
-			[c_1].[Id],
-			[c_1].[AisleID],
-			[c_1].[MaterialID],
-			[a].[Id] as [Id_1],
-			[a].[AisleNumber],
-			[a].[PlantID],
-			[a].[Name],
-			[mn].[Id] as [m_1],
-			[mn].[MaterialNumber],
-			[mn].[MaterialDescription_1],
-			[mn].[MaterialDescription_2],
-			[mn].[MaterialDescription_3],
-			[mn].[CategoryABC],
-			[mn].[CategoryCustoms],
-			[mn].[CategoryDimensions],
-			[mn].[CategoryQuality],
-			[mn].[CategoryTemperature],
-			[a1n].[Id] as [Id_2],
-			[a1n].[ChannelID],
-			[a1n].[Name] as [Name_1],
-			[a1n].[Status],
-			[a1n].[AisleNumber] as [AisleNumber_1],
-			[a1n].[CategoryABC] as [CategoryABC_1],
-			[a1n].[HeightClass],
-			[a1n].[DepthCoordinate],
-			[c1n].[Id] as [c1],
-			[c1n].[ResourceLabel],
-			[c1n].[Status] as [Status_1],
-			[c1n].[CustomLong2],
-			[c1n].[HeightClass] as [HeightClass_1],
-			[c1n].[TypeID],
-			[m1n].[Id] as [m1],
-			[m1n].[MaterialNumber] as [MaterialNumber_1],
-			[m1n].[MaterialDescription_1] as [MaterialDescription_1_1],
-			[m1n].[CategoryABC] as [CategoryABC_2],
-			[t1].[i1],
-			[t1].[BatchNumber],
-			[t1].[ProductStatus],
-			[t1].[ExpiryDate],
-			[t1].[CustomDate1],
-			(
-				SELECT
-					Count(*)
-				FROM
-					[InventoryResourceDTO] [x]
-				WHERE
-					[x].[Status] < 99 AND [x].[ResourceID] = [c1n].[Id]
-			) as [ir1ic],
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						[RefOutfeedTransportOrderResourceDTO] [x_1]
-					WHERE
-						[x_1].[ResourceID] = [c1n].[Id]
-				)
-					THEN 1
-				ELSE 0
-			END as [ror1],
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						[InventoryResourceDTO] [x_2]
-					WHERE
-						[x_2].[Status] < 99 AND [x_2].[ResourceID] = [c1n].[Id] AND
-						([x_2].[InfeedAdviceID] IS NULL OR EXISTS(
-							SELECT
-								*
-							FROM
-								[InfeedAdvicePositionDTO] [y]
-							WHERE
-								[y].[Id] = [x_2].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
-						))
-				)
-					THEN 1
-				ELSE 0
-			END as [ir1mim]
-		FROM
-			[ChannelDTO] [c_1]
-				INNER JOIN [AisleDTO] [a] ON [c_1].[AisleID] = [a].[Id]
-				LEFT JOIN [MaterialDTO] [mn] ON [c_1].[MaterialID] = [mn].[Id]
-				LEFT JOIN [StorageShelfDTO] [a1n] ON [c_1].[Id] = [a1n].[ChannelID] AND 1 = [a1n].[DepthCoordinate]
-				LEFT JOIN [RefResourceStorageShelfDTO] [b1n] ON [a1n].[Id] = [b1n].[StorageShelfID]
-				LEFT JOIN [WmsLoadCarrierDTO] [c1n] ON [b1n].[ResourceID] = [c1n].[Id]
-				LEFT JOIN (
-					SELECT
-						[x_6].[Id] as [i1],
-						[x_6].[MaterialID],
-						[x_6].[BatchNumber],
-						[x_6].[ProductStatus],
-						[x_6].[ExpiryDate],
-						[x_6].[CustomDate1]
-					FROM
-						[InventoryResourceDTO] [x_6]
-					WHERE
-						[x_6].[Status] < 99
-				) [t1] ON (
-					SELECT
-						[x_7].[Id]
-					FROM
-						[InventoryResourceDTO] [x_7]
-					WHERE
-						[x_7].[Status] < 99 AND [x_7].[ResourceID] = [b1n].[ResourceID]
-					LIMIT @take
-				) = [t1].[i1]
-				LEFT JOIN [MaterialDTO] [m1n] ON [t1].[MaterialID] = [m1n].[Id]
-	) [x_10]
-		LEFT JOIN [StorageShelfDTO] [a2n] ON [x_10].[Id] = [a2n].[ChannelID] AND 2 = [a2n].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b2n] ON [a2n].[Id] = [b2n].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c2n] ON [b2n].[ResourceID] = [c2n].[Id]
-		LEFT JOIN (
+	[ChannelDTO] [x_2]
+		INNER JOIN [AisleDTO] [a] ON [x_2].[AisleID] = [a].[Id]
+		LEFT JOIN [MaterialDTO] [m_1] ON [x_2].[MaterialID] = [m_1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a1] ON [x_2].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i1] ON (
 			SELECT
-				[x_8].[Id] as [i2],
-				[x_8].[MaterialID],
-				[x_8].[BatchNumber],
-				[x_8].[ProductStatus],
-				[x_8].[ExpiryDate],
-				[x_8].[CustomDate1]
+				[x].[Id]
 			FROM
-				[InventoryResourceDTO] [x_8]
+				[InventoryResourceDTO] [x]
 			WHERE
-				[x_8].[Status] < 99
-		) [t2] ON (
+				[x].[Status] < 99 AND [x].[ResourceID] = [b1].[ResourceID]
+			LIMIT 1
+		) = [i1].[Id] AND [i1].[Status] < 99
+		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a2] ON [x_2].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i2] ON (
 			SELECT
-				[x_9].[Id]
+				[x_1].[Id]
 			FROM
-				[InventoryResourceDTO] [x_9]
+				[InventoryResourceDTO] [x_1]
 			WHERE
-				[x_9].[Status] < 99 AND [x_9].[ResourceID] = [b2n].[ResourceID]
-			LIMIT @take_1
-		) = [t2].[i2]
-		LEFT JOIN [MaterialDTO] [m2n] ON [t2].[MaterialID] = [m2n].[Id]
+				[x_1].[Status] < 99 AND [x_1].[ResourceID] = [b2].[ResourceID]
+			LIMIT 1
+		) = [i2].[Id] AND [i2].[Status] < 99
+		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite

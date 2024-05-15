@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = -3
+DECLARE @p  -- Int32
+SET     @p = -1
 
 SELECT
-	Add_Months("t"."DateTimeValue", ?)
+	To_Date(Add_Months("t"."DateTimeValue", ? * 3))
 FROM
 	"LinqDataTypes" "t"
 

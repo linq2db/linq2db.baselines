@@ -2,10 +2,10 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[selectParam].[ChildID],
-	Avg([selectParam].[ParentID])
+	[t1].[ChildID],
+	AVG([t1].[ParentID])
 FROM
-	[Child] [selectParam]
+	[Child] [t1]
 GROUP BY
-	[selectParam].[ChildID]
+	[t1].[ChildID]
 

@@ -2,10 +2,11 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.ParentID + toInt32(1)
+	a_Children.ParentID + 1
 FROM
-	Parent cp
-		INNER JOIN Child _ ON (_.ParentID > toInt32(0) OR _.ParentID > toInt32(1)) AND cp.ParentID = _.ParentID
+	Parent t1
+		INNER JOIN Child a_Children ON t1.ParentID = a_Children.ParentID
 WHERE
-	(_.ParentID > toInt32(-1) OR _.ParentID > toInt32(2))
+	(a_Children.ParentID > 0 OR a_Children.ParentID > 1) AND
+	(a_Children.ParentID > -1 OR a_Children.ParentID > 2)
 

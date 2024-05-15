@@ -8,5 +8,5 @@ FROM
 	Parent p
 		INNER JOIN GrandChild c_1 ON p.ParentID = c_1.ParentID
 WHERE
-	p.ParentID > toInt32(3)
+	p.ParentID > 3
 

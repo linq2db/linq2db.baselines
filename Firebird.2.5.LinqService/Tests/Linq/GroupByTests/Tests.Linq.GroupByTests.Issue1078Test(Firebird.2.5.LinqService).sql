@@ -29,7 +29,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 1
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 1
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '1'
 
 INSERT INTO "Issue1078Table"
@@ -51,7 +51,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 2
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 1
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '0'
 
 INSERT INTO "Issue1078Table"
@@ -73,7 +73,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 3
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 1
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '1'
 
 INSERT INTO "Issue1078Table"
@@ -95,7 +95,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 4
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 2
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '0'
 
 INSERT INTO "Issue1078Table"
@@ -117,7 +117,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 5
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 2
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '1'
 
 INSERT INTO "Issue1078Table"
@@ -139,7 +139,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 6
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 2
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '0'
 
 INSERT INTO "Issue1078Table"
@@ -161,7 +161,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 7
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 2
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '0'
 
 INSERT INTO "Issue1078Table"
@@ -183,7 +183,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 8
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 3
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '0'
 
 INSERT INTO "Issue1078Table"
@@ -205,7 +205,7 @@ DECLARE @UserID Integer -- Int32
 SET     @UserID = 9
 DECLARE @SiteID Integer -- Int32
 SET     @SiteID = 4
-DECLARE @Active Char(1) -- String
+DECLARE @Active Char -- String
 SET     @Active = '1'
 
 INSERT INTO "Issue1078Table"
@@ -225,24 +225,16 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."SiteID",
-	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1078Table" "u"
-		WHERE
-			CASE
-				WHEN "u"."Active" = '1' THEN 1
-				ELSE 0
-			END = 0 AND
-			"t1"."SiteID" = "u"."SiteID"
-	)
+	"grp"."SiteID",
+	COUNT(*),
+	COUNT(CASE
+		WHEN "grp"."Active" = '0' THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1078Table" "t1"
+	"Issue1078Table" "grp"
 GROUP BY
-	"t1"."SiteID"
+	"grp"."SiteID"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

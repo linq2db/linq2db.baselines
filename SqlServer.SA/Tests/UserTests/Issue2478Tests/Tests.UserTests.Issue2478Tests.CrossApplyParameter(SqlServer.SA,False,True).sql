@@ -3,33 +3,33 @@
 
 SELECT
 	[q].[ParentID],
-	[t1].[Count_1],
-	[t1].[Sum_1]
+	[c_2].[Count_1],
+	[c_2].[Sum_1]
 FROM
 	[Parent] [q]
 		CROSS APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				Sum([t].[ChildID]) as [Sum_1]
+				COUNT(*) as [Count_1],
+				SUM([c_1].[ChildID]) as [Sum_1]
 			FROM
-				[Child] [t]
+				[Child] [c_1]
 			WHERE
-				[t].[ParentID] = [q].[ParentID]
-		) [t1]
+				[c_1].[ParentID] = [q].[ParentID]
+		) [c_2]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [q]
+	[Parent] [t1]
 		CROSS APPLY (
 			SELECT
-				Count(*) as [Count_1]
+				COUNT(*) as [Count_1]
 			FROM
-				[Child] [t]
+				[Child] [c_1]
 			WHERE
-				[t].[ParentID] = [q].[ParentID]
-		) [t1]
+				[c_1].[ParentID] = [t1].[ParentID]
+		) [c_2]
 

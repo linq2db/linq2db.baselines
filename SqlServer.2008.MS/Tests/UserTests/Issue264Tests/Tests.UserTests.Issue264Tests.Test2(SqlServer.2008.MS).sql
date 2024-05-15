@@ -2,17 +2,17 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t1].[month_1],
-	[t1].[year_1]
+	[t2].[month_1],
+	[t2].[year_1]
 FROM
 	(
 		SELECT
-			MONTH([selectParam].[DateTimeValue]) as [month_1],
-			YEAR([selectParam].[DateTimeValue]) as [year_1]
+			MONTH([t1].[DateTimeValue]) as [month_1],
+			YEAR([t1].[DateTimeValue]) as [year_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [t1]
+	) [t2]
 GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+	[t2].[month_1],
+	[t2].[year_1]
 

@@ -9,10 +9,28 @@ FROM
 WHERE
 	x."ChildID" IN (
 		SELECT
-			Max(t1."ChildID")
+			MAX(x_1."ChildID")
 		FROM
-			"Child" t1
+			"Child" x_1
 		GROUP BY
-			t1."ParentID"
+			x_1."ParentID"
+	)
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	x."ParentID",
+	x."ChildID"
+FROM
+	"Child" x
+WHERE
+	x."ChildID" IN (
+		SELECT
+			MAX(x_1."ChildID")
+		FROM
+			"Child" x_1
+		GROUP BY
+			x_1."ParentID"
 	)
 

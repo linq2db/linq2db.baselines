@@ -23,7 +23,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -37,8 +37,8 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(60)
+	2,
+	60
 )
 
 BeforeExecute

@@ -26,7 +26,7 @@ INSERT INTO my_table
 VALUES
 (
 	'MyCol1',
-	toInt32(0),
+	0,
 	NULL
 )
 
@@ -42,7 +42,7 @@ INSERT INTO my_table
 VALUES
 (
 	NULL,
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -50,24 +50,24 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.my_col1,
 	t1.itemType,
+	t1.my_col1,
 	t1.my_other_col
 FROM
 	my_table t1
 WHERE
-	t1.itemType <> toInt32(1)
-LIMIT toInt32(1)
+	t1.itemType <> 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	my_table t1
 WHERE
-	t1.itemType <> toInt32(1)
+	t1.itemType <> 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

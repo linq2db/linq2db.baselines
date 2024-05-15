@@ -14,5 +14,5 @@ WITH "CTE_1" AS
 SELECT
 	COUNT(*)
 FROM
-	"CTE_1" c_2
+	"CTE_1" t1
 

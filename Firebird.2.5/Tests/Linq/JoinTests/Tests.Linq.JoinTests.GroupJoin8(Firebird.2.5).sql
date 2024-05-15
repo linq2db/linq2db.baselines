@@ -1,33 +1,27 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
 	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
+		SELECT FIRST 1
+			"c_1"."ParentID"
 		FROM
-			"Parent" "p"
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID"
-ORDER BY
-	"c_1"."ChildID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+			"Child" "c_1"
+		WHERE
+			"t1"."ParentID" = "c_1"."ParentID"
+		ORDER BY
+			"c_1"."ChildID"
+	),
+	(
+		SELECT FIRST 1
+			"c_2"."ChildID"
+		FROM
+			"Child" "c_2"
+		WHERE
+			"t1"."ParentID" = "c_2"."ParentID"
+		ORDER BY
+			"c_2"."ChildID"
+	)
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 

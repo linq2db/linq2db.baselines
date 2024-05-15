@@ -74,27 +74,20 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[g_2].[IsDelisted],
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [selectParam].[TradingStatus] = N'D'
-					THEN 1
+				WHEN [g_1].[TradingStatus] = N'D' THEN 1
 				ELSE 0
-			END as [Key_1],
-			CASE
-				WHEN [selectParam].[TradingStatus] = N'D'
-					THEN 1
-				ELSE 0
-			END as [c1]
+			END as [IsDelisted]
 		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+			[Issue913Test] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	[g_2].[IsDelisted]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

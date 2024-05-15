@@ -41,7 +41,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

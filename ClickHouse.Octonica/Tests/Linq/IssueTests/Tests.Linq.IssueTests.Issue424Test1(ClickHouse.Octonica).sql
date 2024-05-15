@@ -14,5 +14,14 @@ FROM
 	) t2
 ORDER BY
 	t2.ParentID
-LIMIT toInt32(1)
+LIMIT 1
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

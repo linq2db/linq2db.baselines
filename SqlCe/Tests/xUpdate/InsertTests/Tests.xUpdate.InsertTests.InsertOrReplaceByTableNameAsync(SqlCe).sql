@@ -24,7 +24,7 @@ SET     @PersonID = 1
 UPDATE
 	[xxPatient]
 SET
-	[xxPatient].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
@@ -56,7 +56,7 @@ SET     @PersonID = 2
 UPDATE
 	[xxPatient]
 SET
-	[xxPatient].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
@@ -82,7 +82,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[xxPatient] [t1]
 
@@ -96,7 +96,7 @@ SET     @PersonID = 1
 UPDATE
 	[xxPatient]
 SET
-	[xxPatient].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
@@ -110,7 +110,7 @@ SET     @PersonID = 2
 UPDATE
 	[xxPatient]
 SET
-	[xxPatient].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
@@ -118,7 +118,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[xxPatient] [t1]
 

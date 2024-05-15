@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT
-			`p`.`ChildID`
+			`t1`.`ChildID`
 		FROM
-			`Child` `p`
-		LIMIT @take
+			`Child` `t1`
+		LIMIT 1
 	)
 FROM
-	`Parent` `p_1`
+	`Parent` `p`
 

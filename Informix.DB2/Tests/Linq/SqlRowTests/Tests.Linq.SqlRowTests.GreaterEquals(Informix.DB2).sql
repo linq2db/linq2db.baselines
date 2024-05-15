@@ -54,41 +54,41 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.One * 2 OR i.One = i.One AND i.Two = i.One * 2 AND i.Three >= i.Four - 1)
+	(i.Two > i.One * 2 OR i.Two = i.One * 2 AND i.Three >= i.Four - 1)
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.Two OR i.One = i.One AND i.Two = i.Two AND i.Four >= i.Three)
+	i.Four >= i.Three
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.Five OR i.One = i.One AND i.Two = i.Five AND i.Four >= i.Three)
+	(i.Two > i.Five OR i.Two = i.Five AND i.Four >= i.Three)
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Nil > i.Two OR i.One = i.One AND i.Nil = i.Two AND i.Four >= i.Three)
+	(i.Nil > i.Two OR i.Nil = i.Two AND i.Four >= i.Three)
 
 BeforeExecute
 -- Informix.DB2 Informix

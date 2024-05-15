@@ -68,14 +68,12 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_30" "t1"
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -85,7 +83,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson_f_30" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
@@ -101,7 +99,7 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_f_30" "t1"
 

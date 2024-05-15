@@ -7,16 +7,36 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" IN (
+	EXISTS(
 		SELECT
-			"t1"."ParentID"
+			*
 		FROM
 			(
 				SELECT
-					"p"."ParentID"
+					"v"."ParentID"
 				FROM
-					"Parent" "p"
-				FETCH FIRST 100 ROWS ONLY
+					"Parent" "v"
+				FETCH NEXT 100 ROWS ONLY
 			) "t1"
+		WHERE
+			"c_1"."ParentID" = "t1"."ParentID"
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 

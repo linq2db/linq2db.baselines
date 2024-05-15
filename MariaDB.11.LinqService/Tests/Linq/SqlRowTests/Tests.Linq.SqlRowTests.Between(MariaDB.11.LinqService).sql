@@ -54,7 +54,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -65,7 +65,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -76,18 +76,17 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
-	(`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`) AND
-	(`i`.`One`, `i`.`Two`) <= (`i`.`One`, `i`.`Two`)
+	(`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -98,7 +97,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -109,7 +108,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -120,7 +119,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -131,7 +130,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -142,7 +141,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE
@@ -153,7 +152,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Ints` `i`
 WHERE

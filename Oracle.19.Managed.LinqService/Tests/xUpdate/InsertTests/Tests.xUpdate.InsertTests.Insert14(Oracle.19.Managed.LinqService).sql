@@ -2,14 +2,12 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Person" t1
+	"Person" p
 WHERE
-	t1."FirstName" LIKE 'Insert14%' ESCAPE '~'
+	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 INSERT INTO "Person"
 (
@@ -25,7 +23,7 @@ VALUES
 		FROM
 			"Person" p
 		WHERE
-			p."PersonID" = 1 AND ROWNUM <= :take
+			p."PersonID" = 1
 	),
 	'Shepard',
 	'M'
@@ -35,7 +33,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -45,7 +43,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Person" t1
+	"Person" p
 WHERE
-	t1."FirstName" LIKE 'Insert14%' ESCAPE '~'
+	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 

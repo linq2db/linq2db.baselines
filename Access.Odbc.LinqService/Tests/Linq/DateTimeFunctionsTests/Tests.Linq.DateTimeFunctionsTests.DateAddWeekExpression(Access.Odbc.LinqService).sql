@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
-	DateAdd('ww', ?, [t].[DateTimeValue])
+	DateValue(DateAdd('ww', ?, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

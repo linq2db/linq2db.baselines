@@ -74,19 +74,17 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[c1],
-	Count(*)
+	[g_2].[IsDelisted],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [Key_1],
-			IIF([selectParam].[TradingStatus] = N'D', 1, 0) as [c1]
+			IIF([g_1].[TradingStatus] = N'D', 1, 0) as [IsDelisted]
 		FROM
-			[Issue913Test] [selectParam]
-	) [t1]
+			[Issue913Test] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[c1]
+	[g_2].[IsDelisted]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

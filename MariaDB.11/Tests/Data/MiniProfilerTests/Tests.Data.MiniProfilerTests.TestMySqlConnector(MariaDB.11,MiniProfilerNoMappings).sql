@@ -1065,11 +1065,11 @@ VALUES
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear`
 WHERE
-	`t1`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -2105,11 +2105,11 @@ VALUES
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DELETE   `t1`
+DELETE  
 FROM
-	`AllTypesNoYear` `t1`
+	`AllTypesNoYear`
 WHERE
-	`t1`.`ID` >= 2000
+	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
 --  MariaDB.10.MySqlConnector MySql

@@ -278,7 +278,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Cast(Floor(Extract(day from "t"."TransactionDate")) as int)
+	Extract(day from "t"."TransactionDate")
 FROM
 	"Transactions" "t"
 

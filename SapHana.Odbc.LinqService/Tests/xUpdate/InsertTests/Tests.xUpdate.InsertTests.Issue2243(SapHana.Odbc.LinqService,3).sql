@@ -26,12 +26,12 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"test_insert_or_replace"
+	"test_insert_or_replace" "t1"
 SET
-	"test_insert_or_replace"."name" = ?,
-	"test_insert_or_replace"."updated_by" = ?
+	"name" = ?,
+	"updated_by" = ?
 WHERE
-	"test_insert_or_replace"."id" = ?
+	"t1"."id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -57,8 +57,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."id",
@@ -67,7 +65,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -79,17 +77,15 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 
 UPDATE
-	"test_insert_or_replace"
+	"test_insert_or_replace" "t1"
 SET
-	"test_insert_or_replace"."name" = ?,
-	"test_insert_or_replace"."updated_by" = ?
+	"name" = ?,
+	"updated_by" = ?
 WHERE
-	"test_insert_or_replace"."id" = ?
+	"t1"."id" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."id",
@@ -98,7 +94,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

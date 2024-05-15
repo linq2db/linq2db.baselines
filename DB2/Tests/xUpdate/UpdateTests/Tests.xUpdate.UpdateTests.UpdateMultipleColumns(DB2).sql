@@ -15,9 +15,9 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@SmallIntValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal(4, 0)),
+	CAST(@SmallIntValue AS SmallInt)
 )
 
 BeforeExecute
@@ -26,12 +26,12 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" "t"
 SET
-	"LinqDataTypes"."MoneyValue" = 2000,
-	"LinqDataTypes"."SmallIntValue" = 200
+	"MoneyValue" = 2000,
+	"SmallIntValue" = 200
 WHERE
-	"LinqDataTypes".ID = @ID
+	"t".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -51,5 +51,5 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = @ID
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

@@ -45,14 +45,14 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -61,8 +61,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
-		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
+		CAST(@id AS Int),
+		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
 	)
 
 BeforeExecute
@@ -75,14 +75,14 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -91,8 +91,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
-		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
+		CAST(@id AS Int),
+		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
 	)
 
 BeforeExecute
@@ -105,14 +105,14 @@ DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -121,8 +121,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
-		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
+		CAST(@id AS Int),
+		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
 	)
 
 BeforeExecute
@@ -137,5 +137,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

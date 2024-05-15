@@ -23,9 +23,9 @@ INSERT INTO Fact
 	Id
 )
 VALUES
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5))
+(3),
+(4),
+(5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -56,23 +56,23 @@ INSERT INTO Tag
 	Name
 )
 VALUES
-(toInt32(1),toInt32(3),'Tag3'),
-(toInt32(2),toInt32(3),'Tag3'),
-(toInt32(3),toInt32(4),'Tag4')
+(1,3,'Tag3'),
+(2,3,'Tag3'),
+(3,4,'Tag4')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	fact_1.Id,
-	tag_1.Id,
-	tag_1.FactId,
-	tag_1.Name
+	leftTag.Id,
+	leftTag.FactId,
+	leftTag.Name
 FROM
 	Fact fact_1
-		LEFT JOIN Tag tag_1 ON tag_1.FactId = fact_1.Id
+		LEFT JOIN Tag leftTag ON leftTag.FactId = fact_1.Id
 WHERE
-	fact_1.Id > toInt32(3)
+	fact_1.Id > 3
 ORDER BY
 	fact_1.Id
 

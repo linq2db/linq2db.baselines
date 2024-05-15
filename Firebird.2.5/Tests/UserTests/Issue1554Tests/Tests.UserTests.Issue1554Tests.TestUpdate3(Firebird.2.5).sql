@@ -53,19 +53,17 @@ DECLARE @ClaimedKeyTypeN VarChar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554Table"
+	"Issue1554Table" "p"
 SET
-	"Issue1554Table"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554Table"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"ClaimedKeyType" = CAST(@ClaimedKeyType AS VARCHAR(2)),
+	"ClaimedKeyTypeN" = CAST(@ClaimedKeyTypeN AS VARCHAR(2))
 WHERE
-	"Issue1554Table"."Id" = 0
+	"p"."Id" = 0
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"t1"."Id",
 	"t1"."ClaimedKeyType",
 	"t1"."ClaimedKeyTypeN"

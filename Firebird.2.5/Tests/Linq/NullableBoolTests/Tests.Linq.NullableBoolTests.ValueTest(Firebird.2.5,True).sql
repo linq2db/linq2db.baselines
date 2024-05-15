@@ -32,7 +32,7 @@ SELECT '0' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @value Char(1) -- String
+DECLARE @value Char -- String
 SET     @value = '1'
 
 SELECT
@@ -44,7 +44,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @value Char(1) -- String
+DECLARE @value Char -- String
 SET     @value = '1'
 
 SELECT
@@ -56,7 +56,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @value Char(1) -- String
+DECLARE @value Char -- String
 SET     @value = '1'
 
 SELECT
@@ -68,7 +68,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @value Char(1) -- String
+DECLARE @value Char -- String
 SET     @value = '1'
 
 SELECT

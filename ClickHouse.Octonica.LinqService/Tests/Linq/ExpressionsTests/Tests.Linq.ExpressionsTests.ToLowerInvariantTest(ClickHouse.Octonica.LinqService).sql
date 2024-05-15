@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lowerUTF8(p.Taxonomy)
+	p.Taxonomy
 FROM
 	Doctor p
 WHERE

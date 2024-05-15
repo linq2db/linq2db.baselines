@@ -36,15 +36,13 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Date"
 FROM
 	"DateOnlyTable" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

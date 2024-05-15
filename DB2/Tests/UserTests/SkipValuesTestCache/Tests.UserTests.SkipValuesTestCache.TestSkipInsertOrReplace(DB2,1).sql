@@ -31,14 +31,14 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name
+		"Name" = CAST(@Name AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -47,8 +47,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -62,7 +62,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -72,14 +72,14 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name
+		"Name" = CAST(@Name AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,8 +88,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -103,7 +103,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

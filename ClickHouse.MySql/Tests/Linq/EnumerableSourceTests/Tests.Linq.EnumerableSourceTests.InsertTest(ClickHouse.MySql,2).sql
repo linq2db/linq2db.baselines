@@ -25,14 +25,14 @@ INSERT INTO TableToInsert
 	Value
 )
 SELECT
-	r.Id,
-	r.Value
+	t1.Id,
+	t1.Value
 FROM
 	(
-		SELECT toInt32(3) AS Id, 'Janet' AS Value
+		SELECT 3 AS Id, 'Janet' AS Value
 		UNION ALL
-		SELECT toInt32(4), 'Doe') r
-		LEFT JOIN TableToInsert t ON t.Id = r.Id
+		SELECT 4, 'Doe') t1
+		LEFT JOIN TableToInsert t ON t.Id = t1.Id
 WHERE
 	t.Id IS NULL
 
@@ -45,14 +45,14 @@ INSERT INTO TableToInsert
 	Value
 )
 SELECT
-	r.Id,
-	r.Value
+	t1.Id,
+	t1.Value
 FROM
 	(
-		SELECT toInt32(3) AS Id, 'Janet' AS Value
+		SELECT 3 AS Id, 'Janet' AS Value
 		UNION ALL
-		SELECT toInt32(4), 'Doe') r
-		LEFT JOIN TableToInsert t ON t.Id = r.Id
+		SELECT 4, 'Doe') t1
+		LEFT JOIN TableToInsert t ON t.Id = t1.Id
 WHERE
 	t.Id IS NULL
 

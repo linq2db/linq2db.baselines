@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	'T5=(CHAR: ' + CASE WHEN N'X' IS NULL THEN 'null' ELSE CAST(N'X' AS NVARCHAR) END + ', STRING: ' + N'some string' + ')',
 	'T5=(CHAR: ' + CASE WHEN NULL IS NULL THEN 'null' ELSE CAST(NULL AS NVARCHAR) END + ', STRING: ' + N'another string' + ')',
 	'T5=(CHAR: ' + CASE WHEN NULL IS NULL THEN 'null' ELSE CAST(NULL AS NVARCHAR) END + ', STRING: ' + NULL + ')',
@@ -14,5 +12,5 @@ SELECT TOP (@take)
 	'T2=(BYTE: ' + CASE WHEN 45 IS NULL THEN 'null' ELSE CAST(45 AS NVARCHAR) END + ')',
 	'T1=UNSUPPORTED PARAMETERS'
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 

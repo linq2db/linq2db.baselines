@@ -2,27 +2,34 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.Key_1
+	m_1.ParentID,
+	m_1.ChildID,
+	d.ChildID
 FROM
 	(
-		SELECT
-			selectParam.ParentID + toInt32(1) as ParentID,
-			selectParam.ChildID as Key_1
+		SELECT DISTINCT
+			t1.ParentID + 1 as ParentID,
+			t1.ChildID as ChildID
 		FROM
-			GrandChild selectParam
-	) t1
-GROUP BY
-	t1.ParentID,
-	t1.Key_1
+			GrandChild t1
+	) m_1
+		INNER JOIN GrandChild d ON m_1.ParentID = d.ParentID + 1 AND m_1.ChildID = d.ChildID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	elemParam.ChildID
+	t2.ParentID,
+	t2.ChildID
 FROM
-	GrandChild elemParam
-WHERE
-	elemParam.ParentID + toInt32(1) = toInt32(2) AND elemParam.ChildID = toInt32(11)
+	(
+		SELECT
+			t1.ParentID + 1 as ParentID,
+			t1.ChildID as ChildID
+		FROM
+			GrandChild t1
+	) t2
+GROUP BY
+	t2.ParentID,
+	t2.ChildID
 

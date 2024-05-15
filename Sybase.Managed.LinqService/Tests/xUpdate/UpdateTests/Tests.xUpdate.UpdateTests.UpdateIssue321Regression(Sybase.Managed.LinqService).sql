@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @value2 Integer -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
 SET     @id = 100500
@@ -58,11 +58,9 @@ SET     @id = 100500
 UPDATE
 	[LinqDataTypes]
 SET
-	[t1].[SmallIntValue] = Convert(SmallInt, [t1].[MoneyValue] / (@value2 / [t1].[IntValue]))
-FROM
-	[LinqDataTypes] [t1]
+	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]) AS SmallInt)
 WHERE
-	[t1].[ID] = @id
+	[LinqDataTypes].[ID] = @id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -70,9 +68,9 @@ DECLARE @id Integer -- Int32
 SET     @id = 100500
 
 SELECT TOP 1
-	[_].[SmallIntValue]
+	[t1].[SmallIntValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[ID] = @id
+	[t1].[ID] = @id
 

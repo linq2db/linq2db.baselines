@@ -6,22 +6,22 @@ SET     @take = 1000
 SELECT
 	t1."value_1",
 	t1."id",
-	t1."y"
+	t1.AVG_1
 FROM
 	(
 		SELECT
 			a_Patient."Diagnosis" as "value_1",
 			a_Patient."PersonID" as "id",
-			Round(AVG(selectParam."PersonID"), 27) as "y"
+			AVG(auto16031."PersonID") as AVG_1
 		FROM
-			"Person" selectParam
-				LEFT JOIN "Patient" a_Patient ON selectParam."PersonID" = a_Patient."PersonID"
+			"Person" auto16031
+				LEFT JOIN "Patient" a_Patient ON auto16031."PersonID" = a_Patient."PersonID"
 		GROUP BY
-			selectParam."PersonID",
+			auto16031."PersonID",
 			a_Patient."PersonID",
 			a_Patient."Diagnosis"
 		HAVING
-			selectParam."PersonID" = 1
+			auto16031."PersonID" = 1
 		ORDER BY
 			a_Patient."Diagnosis" DESC
 	) t1

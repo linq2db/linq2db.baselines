@@ -11,7 +11,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	Cast(@id as Int)
+	CAST(@id AS Int)
 )
 
 BeforeExecute
@@ -20,7 +20,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE

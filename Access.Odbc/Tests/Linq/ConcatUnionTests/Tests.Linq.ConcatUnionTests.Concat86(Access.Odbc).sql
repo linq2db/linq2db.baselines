@@ -10,7 +10,7 @@ FROM
 UNION ALL
 SELECT
 	[c_2].[ParentID],
-	Iif([c_2].[Value1] IS NULL, 0, [c_2].[Value1]),
+	IIF([c_2].[Value1] IS NULL, 0, [c_2].[Value1]),
 	[c_2].[ParentID]
 FROM
 	[Parent] [c_2]

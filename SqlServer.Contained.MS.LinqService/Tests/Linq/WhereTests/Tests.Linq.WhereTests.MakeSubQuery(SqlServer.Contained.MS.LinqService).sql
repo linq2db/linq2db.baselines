@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[p].[PersonID] + 1,
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]

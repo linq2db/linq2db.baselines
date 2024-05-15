@@ -32,19 +32,19 @@ DECLARE @idx Int32
 SET     @idx = 4
 
 UPDATE
-	`Person` `_`
+	`Person` `t1`
 SET
-	`_`.`LastName` = Cast((Char_Length(@name) + @idx) as CHAR(11))
+	`t1`.`LastName` = CAST(Char_Length(@name) + @idx AS CHAR(11))
 WHERE
-	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` LIKE 'Update14%' ESCAPE '~'
+	`t1`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 

@@ -15,7 +15,7 @@ WHERE
 		FROM
 			Parent t2
 		WHERE
-			t2.ParentID = @id AND t2.ParentID = t1.ParentID
+			t2.ParentID = @id AND t1.ParentID = t2.ParentID
 	) AND
 	t1.ChildID >= 0 AND t1.ChildID <= 100
 

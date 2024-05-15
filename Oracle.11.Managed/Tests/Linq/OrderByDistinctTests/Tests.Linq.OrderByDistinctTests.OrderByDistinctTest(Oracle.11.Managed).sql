@@ -58,10 +58,10 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -72,27 +72,23 @@ FROM
 			ROWNUM as RN
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					x."DuplicateData"
 				FROM
 					"OrderByDistinctData" x
-				GROUP BY
-					x."DuplicateData"
-				ORDER BY
-					Min(x."OrderData1")
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -104,26 +100,26 @@ FROM
 		FROM
 			(
 				SELECT
-					x."DuplicateData"
+					g_1."DuplicateData"
 				FROM
-					"OrderByDistinctData" x
+					"OrderByDistinctData" g_1
 				GROUP BY
-					x."DuplicateData"
+					g_1."DuplicateData"
 				ORDER BY
-					Max(x."OrderData1")
+					MAX(g_1."OrderData1")
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -134,27 +130,23 @@ FROM
 			ROWNUM as RN
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					x."DuplicateData"
 				FROM
 					"OrderByDistinctData" x
-				GROUP BY
-					x."DuplicateData"
-				ORDER BY
-					Max(x."OrderData1") DESC
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData"
@@ -166,16 +158,16 @@ FROM
 		FROM
 			(
 				SELECT
-					x."DuplicateData"
+					g_1."DuplicateData"
 				FROM
-					"OrderByDistinctData" x
+					"OrderByDistinctData" g_1
 				GROUP BY
-					x."DuplicateData"
+					g_1."DuplicateData"
 				ORDER BY
-					Min(x."OrderData1") DESC
+					MIN(g_1."OrderData1") DESC
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip

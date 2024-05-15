@@ -2,11 +2,11 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 GROUP BY
 	"c_1"."ParentID"
 HAVING
-	Count(*) > 1 AND Count(*) > 1
+	COUNT(*) > 1 AND COUNT(*) > 1
 

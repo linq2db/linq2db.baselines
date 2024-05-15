@@ -2,9 +2,9 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t1`.`ParentID`
+	`g_1`.`ParentID`
 FROM
-	`Child` `t1`
+	`Child` `g_1`
 GROUP BY
-	`t1`.`ParentID`
+	`g_1`.`ParentID`
 

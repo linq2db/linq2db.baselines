@@ -1,24 +1,15 @@
 ﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
-
-SELECT
-	l."ParentID"
-FROM
-	"Child" l
-WHERE
-	ROWNUM <= :take
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	1
+	(
+		SELECT
+			l."ParentID" + 1
+		FROM
+			"Child" l
+		WHERE
+			ROWNUM <= 1
+	)
 FROM
 	"Parent" sep
 

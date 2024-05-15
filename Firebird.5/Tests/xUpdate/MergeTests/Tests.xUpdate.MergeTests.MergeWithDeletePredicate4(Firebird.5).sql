@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."FirstName",
@@ -39,7 +37,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"Person" "t1"
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -49,14 +47,14 @@ DECLARE @Diagnosis VarChar(8) -- String
 SET     @Diagnosis = 'Negative'
 
 MERGE INTO "Patient" "t1"
-USING (SELECT Cast(@PersonID as Int) AS "PersonID" FROM rdb$database) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS VARCHAR(8))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -65,8 +63,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		Cast(@PersonID as Int),
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS VARCHAR(8))
 	)
 
 BeforeExecute
@@ -77,33 +75,33 @@ SET     @patient = 1
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
-		"t"."PersonID" as ID,
-		"t"."FirstName",
-		"t"."LastName",
-		"t"."MiddleName",
-		"t"."Gender"
+		"t"."PersonID" as "source_ID",
+		"t"."FirstName" as "source_FirstName",
+		"t"."LastName" as "source_LastName",
+		"t"."MiddleName" as "source_MiddleName",
+		"t"."Gender" as "source_Gender"
 	FROM
 		"Person" "t"
 			LEFT JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = @patient
+		"a_Patient"."PersonID" = CAST(@patient AS Int)
 ) "Source"
 (
-	ID,
-	"FirstName",
-	"LastName",
-	"MiddleName",
-	"Gender"
+	"source_ID",
+	"source_FirstName",
+	"source_LastName",
+	"source_MiddleName",
+	"source_Gender"
 )
-ON ("Target"."PersonID" = "Source".ID)
+ON ("Target"."PersonID" = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."FirstName" = "Source"."FirstName",
-	"Target"."LastName" = "Source"."LastName",
-	"Target"."MiddleName" = "Source"."MiddleName",
-	"Target"."Gender" = "Source"."Gender"
+	"FirstName" = "Source"."source_FirstName",
+	"LastName" = "Source"."source_LastName",
+	"MiddleName" = "Source"."source_MiddleName",
+	"Gender" = "Source"."source_Gender"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -115,20 +113,20 @@ INSERT
 )
 VALUES
 (
-	"Source"."FirstName",
-	"Source"."LastName",
-	"Source"."MiddleName",
-	"Source"."Gender"
+	"Source"."source_FirstName",
+	"Source"."source_LastName",
+	"Source"."source_MiddleName",
+	"Source"."source_Gender"
 )
 
-WHEN NOT MATCHED BY SOURCE AND EXISTS(
+WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
-		*
+		"a_Patient_1"."PersonID"
 	FROM
 		"Patient" "a_Patient_1"
 	WHERE
-		"a_Patient_1"."PersonID" = @patient AND "Target"."PersonID" = "a_Patient_1"."PersonID"
-) THEN DELETE
+		"Target"."PersonID" = "a_Patient_1"."PersonID"
+) = CAST(@patient AS Int) THEN DELETE
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -138,33 +136,33 @@ SET     @patient = 2
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
-		"t"."PersonID" as ID,
-		"t"."FirstName",
-		"t"."LastName",
-		"t"."MiddleName",
-		"t"."Gender"
+		"t"."PersonID" as "source_ID",
+		"t"."FirstName" as "source_FirstName",
+		"t"."LastName" as "source_LastName",
+		"t"."MiddleName" as "source_MiddleName",
+		"t"."Gender" as "source_Gender"
 	FROM
 		"Person" "t"
 			LEFT JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = @patient
+		"a_Patient"."PersonID" = CAST(@patient AS Int)
 ) "Source"
 (
-	ID,
-	"FirstName",
-	"LastName",
-	"MiddleName",
-	"Gender"
+	"source_ID",
+	"source_FirstName",
+	"source_LastName",
+	"source_MiddleName",
+	"source_Gender"
 )
-ON ("Target"."PersonID" = "Source".ID)
+ON ("Target"."PersonID" = "Source"."source_ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."FirstName" = "Source"."FirstName",
-	"Target"."LastName" = "Source"."LastName",
-	"Target"."MiddleName" = "Source"."MiddleName",
-	"Target"."Gender" = "Source"."Gender"
+	"FirstName" = "Source"."source_FirstName",
+	"LastName" = "Source"."source_LastName",
+	"MiddleName" = "Source"."source_MiddleName",
+	"Gender" = "Source"."source_Gender"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -176,20 +174,20 @@ INSERT
 )
 VALUES
 (
-	"Source"."FirstName",
-	"Source"."LastName",
-	"Source"."MiddleName",
-	"Source"."Gender"
+	"Source"."source_FirstName",
+	"Source"."source_LastName",
+	"Source"."source_MiddleName",
+	"Source"."source_Gender"
 )
 
-WHEN NOT MATCHED BY SOURCE AND EXISTS(
+WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
-		*
+		"a_Patient_1"."PersonID"
 	FROM
 		"Patient" "a_Patient_1"
 	WHERE
-		"a_Patient_1"."PersonID" = @patient AND "Target"."PersonID" = "a_Patient_1"."PersonID"
-) THEN DELETE
+		"Target"."PersonID" = "a_Patient_1"."PersonID"
+) = CAST(@patient AS Int) THEN DELETE
 
 BeforeExecute
 DisposeTransaction

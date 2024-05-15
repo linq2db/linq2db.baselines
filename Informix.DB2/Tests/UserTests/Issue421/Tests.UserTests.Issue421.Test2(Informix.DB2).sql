@@ -47,11 +47,11 @@ DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = {3,2,1}
 
 UPDATE
-	BlobClass
+	BlobClass t1
 SET
-	BlobClass.BlobValue = @BlobValue
+	BlobValue = @BlobValue
 WHERE
-	BlobClass.Id = 1
+	t1.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -7,9 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	CASE
-		WHEN p.Value1 = toInt32(1)
-			THEN toInt32(10)
-		ELSE toInt32(20)
-	END = toInt32(20)
+	(p.Value1 <> 1 OR p.Value1 IS NULL)
 

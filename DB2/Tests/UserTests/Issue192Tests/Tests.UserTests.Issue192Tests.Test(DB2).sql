@@ -69,21 +69,21 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = 'N'
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = 'Y'
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -91,161 +91,141 @@ DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = @GuidValue
+	"t1"."GuidValue" = @GuidValue
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'N'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue Char(1) -- StringFixedLength
-SET     @BoolValue = 'Y'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = @BoolValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -253,14 +233,14 @@ DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = @GuidValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."GuidValue" = @GuidValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -268,14 +248,14 @@ DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = @GuidValue
-FETCH FIRST 1 ROWS ONLY
+	"t1"."GuidValue" = @GuidValue
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

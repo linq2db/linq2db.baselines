@@ -3,8 +3,8 @@
 
 SELECT
 	p.PersonID,
-	Nvl(p.FirstName, 'None'),
-	Nvl(p.MiddleName, 'None')
+	p.FirstName,
+	p.MiddleName
 FROM
 	Person p
 WHERE

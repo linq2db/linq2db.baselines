@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Iif((
+	IIF((
 		SELECT TOP 1
 			[a_Parent].[Value1]
 		FROM

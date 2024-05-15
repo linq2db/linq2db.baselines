@@ -85,13 +85,13 @@ BeforeExecute
 
 SELECT
 	'Id',
-	[selectParam].[Id],
-	Sum(Iif([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage].[Id]))
+	[it].[Id],
+	SUM([a_ActualStage].[Id])
 FROM
-	[Task] [selectParam]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+	[Task] [it]
+		LEFT JOIN [TaskStage] [a_ActualStage] ON ([it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
 GROUP BY
-	[selectParam].[Id]
+	[it].[Id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

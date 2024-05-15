@@ -40,8 +40,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -53,7 +51,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard' AND
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -89,8 +87,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -102,7 +98,7 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = :FirstName AND p."LastName" = 'Shepard' AND
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

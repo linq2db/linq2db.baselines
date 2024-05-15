@@ -2,10 +2,10 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[тбл].[ParentID],
-	[тбл].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [тбл]
+	[Parent] [t1]
 WHERE
-	[тбл].[ParentID] = 3
+	[t1].[ParentID] = 3
 

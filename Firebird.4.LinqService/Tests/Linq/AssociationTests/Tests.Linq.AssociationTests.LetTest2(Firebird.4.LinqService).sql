@@ -2,31 +2,31 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t"."ParentID",
+	"pp"."ParentID",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "a_Children"
 		WHERE
-			"t"."ParentID" = "t1"."ParentID"
+			"pp"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Parent" "t"
+	"Parent" "pp"
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"t"."ParentID",
+	"pp"."ParentID",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "a_Children"
 		WHERE
-			"t"."ParentID" = "t1"."ParentID"
+			"pp"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Parent" "t"
+	"Parent" "pp"
 

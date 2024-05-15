@@ -29,16 +29,11 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 UniqueIdentifier -- Guid
-SET     @Parameter1 = '{b3d9b51c-89f9-442a-893b-cd8a6f667d37}'
-DECLARE @Parameter2 UniqueIdentifier -- Guid
-SET     @Parameter2 = '{61efdcd4-659d-41e8-910c-506a9c2f31c5}'
 
 SELECT TOP 1
-	?,
-	?
+	True
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

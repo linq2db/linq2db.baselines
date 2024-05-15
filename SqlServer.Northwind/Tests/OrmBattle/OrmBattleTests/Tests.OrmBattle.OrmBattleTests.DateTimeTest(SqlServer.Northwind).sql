@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[o].[OrderID],
 	[o].[CustomerID],
 	[o].[EmployeeID],
@@ -21,5 +19,5 @@ SELECT TOP (@take)
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderDate] >= DateAdd(month, (DatePart(year, [o].[OrderDate]) - 1900) * 12, 0)
+	([o].[OrderDate] >= DATETIMEFROMPARTS(DatePart(year, [o].[OrderDate]), 1, 1, 0, 0, 0, 0) OR [o].[OrderDate] IS NULL AND DATETIMEFROMPARTS(DatePart(year, [o].[OrderDate]), 1, 1, 0, 0, 0, 0) IS NULL)
 

@@ -51,11 +51,11 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @str Char(5) -- AnsiStringFixedLength
+DECLARE @str UniVarChar(5) -- String
 SET     @str = 'some%'
-DECLARE @str_1 UniChar(5) -- StringFixedLength
+DECLARE @str_1 UniVarChar(5) -- String
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- AnsiString
+DECLARE @str_2 UniVarChar(5) -- String
 SET     @str_2 = 'some%'
 DECLARE @str_3 UniVarChar(5) -- String
 SET     @str_3 = 'some%'

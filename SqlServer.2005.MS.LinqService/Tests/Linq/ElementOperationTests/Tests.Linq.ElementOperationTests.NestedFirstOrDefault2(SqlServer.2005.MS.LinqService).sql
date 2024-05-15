@@ -1,22 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[t1].[ParentID],
-				[t1].[ChildID]
+		LEFT JOIN (
+			SELECT
+				[a_Children].[ParentID],
+				[a_Children].[ChildID],
+				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ChildID]) as [rn]
 			FROM
-				[Child] [t1]
-			WHERE
-				[p].[ParentID] = [t1].[ParentID]
-			ORDER BY
-				[t1].[ChildID]
-		) [t2]
+				[Child] [a_Children]
+		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 

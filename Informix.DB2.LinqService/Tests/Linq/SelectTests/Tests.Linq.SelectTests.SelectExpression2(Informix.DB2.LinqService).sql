@@ -31,8 +31,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	'b3d9b51c-89f9-442a-893b-cd8a6f667d37',
-	'61efdcd4-659d-41e8-910c-506a9c2f31c5'
+	't'
 FROM
 	SelectExpressionTable t1
 

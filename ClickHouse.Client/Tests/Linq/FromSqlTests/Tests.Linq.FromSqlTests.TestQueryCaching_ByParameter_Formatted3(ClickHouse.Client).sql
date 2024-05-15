@@ -15,7 +15,7 @@ SELECT
 	t1.Value1
 FROM
 	(
-		SELECT toInt32(1) as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
+		SELECT 1 as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) t1
 
 BeforeExecute
@@ -35,7 +35,7 @@ SELECT
 	t1.Value1
 FROM
 	(
-		SELECT toInt32(2) as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
+		SELECT 2 as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) t1
 
 BeforeExecute
@@ -45,6 +45,6 @@ SELECT
 	t1.Value1
 FROM
 	(
-		SELECT toInt32(3) as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
+		SELECT 3 as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) t1
 

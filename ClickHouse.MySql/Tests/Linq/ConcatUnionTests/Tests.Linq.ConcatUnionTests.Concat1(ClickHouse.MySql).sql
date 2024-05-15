@@ -7,13 +7,13 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 UNION ALL
 SELECT
-	p_1.ParentID,
-	p_1.Value1
+	p_1.ParentID as ParentID,
+	p_1.Value1 as Value1
 FROM
 	Parent p_1
 WHERE
-	p_1.ParentID = toInt32(2)
+	p_1.ParentID = 2
 

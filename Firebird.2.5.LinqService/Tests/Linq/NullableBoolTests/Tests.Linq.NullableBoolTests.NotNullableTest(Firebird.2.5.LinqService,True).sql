@@ -21,7 +21,7 @@ END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value Char(1) -- String
+DECLARE @Value Char -- String
 SET     @Value = '1'
 
 INSERT INTO "NotNullableBoolClass"
@@ -35,7 +35,7 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Value Char(1) -- String
+DECLARE @Value Char -- String
 SET     @Value = '0'
 
 INSERT INTO "NotNullableBoolClass"

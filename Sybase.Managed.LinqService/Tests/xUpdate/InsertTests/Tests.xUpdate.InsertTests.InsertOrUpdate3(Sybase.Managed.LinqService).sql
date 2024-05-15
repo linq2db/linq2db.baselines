@@ -33,13 +33,15 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @i Integer -- Int32
+SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -69,7 +71,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -99,7 +101,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE

@@ -22,10 +22,11 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @param Integer -- Int32
+SET     @param = 200
 
 SELECT
-	c_1."ChildID",
-	c_1."ParentID"
+	c_1."ChildID" + c_1."ParentID" + :param
 FROM
 	"Child" c_1
 WHERE
@@ -35,7 +36,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 

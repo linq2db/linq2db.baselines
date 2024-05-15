@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[ChildID]
+	[t2].[ChildID]
 FROM
-	[Parent] [p_1]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[p].[ChildID]
+	[Parent] [p]
+		LEFT JOIN (
+			SELECT TOP (1)
+				[t1].[ChildID]
 			FROM
-				[Child] [p]
-		) [t1]
+				[Child] [t1]
+		) [t2] ON 1=1
 

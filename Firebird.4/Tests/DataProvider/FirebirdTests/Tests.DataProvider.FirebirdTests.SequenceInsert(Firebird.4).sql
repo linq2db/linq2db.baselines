@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"t1".ID,
@@ -34,7 +32,7 @@ FROM
 	"SequenceTest" "t1"
 WHERE
 	"t1"."Value_" = 'SeqValue'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -50,7 +48,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"SequenceTest" "t1"
 WHERE

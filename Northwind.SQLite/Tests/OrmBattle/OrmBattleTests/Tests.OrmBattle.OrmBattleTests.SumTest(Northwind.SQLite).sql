@@ -2,7 +2,7 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	Sum([o].[Freight])
+	SUM([o].[Freight])
 FROM
 	[Orders] [o]
 

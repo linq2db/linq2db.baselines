@@ -2,17 +2,21 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	sumOrNull(t1.MoneyValue),
-	YEAR(t1.Key_1),
-	MONTH(t1.Key_1)
+	sumOrNull(grp_1.MoneyValue),
+	grp_1.Year_1,
+	grp_1.Month_1
 FROM
 	(
 		SELECT
-			toDateTime64(concat(leftPadUTF8(toString(YEAR(selectParam.DateTimeValue)), toUInt32(toInt32(4)), '0'), '-', leftPadUTF8(toString(MONTH(selectParam.DateTimeValue)), toUInt32(toInt32(2)), '0'), '-01'), toUInt8(7)) as Key_1,
-			selectParam.MoneyValue as MoneyValue
+			makeDateTime(toYear(grp.DateTimeValue), toMonth(grp.DateTimeValue), 1, 0, 0, 0) as Date_1,
+			grp.MoneyValue as MoneyValue,
+			toYear(makeDateTime(toYear(grp.DateTimeValue), toMonth(grp.DateTimeValue), 1, 0, 0, 0)) as Year_1,
+			toMonth(makeDateTime(toYear(grp.DateTimeValue), toMonth(grp.DateTimeValue), 1, 0, 0, 0)) as Month_1
 		FROM
-			LinqDataTypes selectParam
-	) t1
+			LinqDataTypes grp
+	) grp_1
 GROUP BY
-	t1.Key_1
+	grp_1.Date_1,
+	grp_1.Year_1,
+	grp_1.Month_1
 

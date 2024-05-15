@@ -3,24 +3,24 @@
 
 INSERT INTO Parent
 (
-	Value1,
-	ParentID
+	ParentID,
+	Value1
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1001)
+	1001,
+	1
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001) AND p.Value1 = toInt32(1)
+	p.ParentID = 1001 AND p.Value1 = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -28,19 +28,19 @@ BeforeExecute
 ALTER TABLE
 	Parent
 UPDATE
-	Value1 = toInt32(2)
+	Value1 = 2
 WHERE
-	ParentID = toInt32(1001)
+	ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001) AND p.Value1 = toInt32(2)
+	p.ParentID = 1001 AND p.Value1 = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -48,17 +48,17 @@ BeforeExecute
 ALTER TABLE
 	Parent
 UPDATE
-	Value1 = toInt32(3)
+	Value1 = 3
 WHERE
-	ParentID = toInt32(1001)
+	ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001) AND p.Value1 = toInt32(3)
+	p.ParentID = 1001 AND p.Value1 = 3
 

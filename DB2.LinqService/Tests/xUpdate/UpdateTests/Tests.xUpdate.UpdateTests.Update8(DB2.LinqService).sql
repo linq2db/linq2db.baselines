@@ -24,11 +24,11 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	"Parent"
+	"Parent" "t1"
 SET
-	"Parent"."Value1" = @Value1
+	"Value1" = @Value1
 WHERE
-	"Parent"."ParentID" = @ParentID
+	"t1"."ParentID" = @ParentID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,5 +42,5 @@ FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" = @ParentID
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

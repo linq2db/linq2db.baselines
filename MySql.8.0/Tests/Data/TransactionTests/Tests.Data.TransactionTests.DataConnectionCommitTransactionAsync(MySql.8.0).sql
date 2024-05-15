@@ -23,9 +23,9 @@ CommitTransactionAsync
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `_`
+DELETE  
 FROM
-	`Parent` `_`
+	`Parent`
 WHERE
-	`_`.`ParentID` = 1010
+	`Parent`.`ParentID` = 1010
 

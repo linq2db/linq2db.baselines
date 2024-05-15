@@ -2,18 +2,16 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[Count_1]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p1].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] + 1 < [p1].[ParentID] + 1
+	)
 FROM
-	[Parent] [p2]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[c_1].[ParentID]
-			FROM
-				[Child] [c_1]
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON ([t1].[ParentID] + 1 < [p2].[ParentID] + 1 AND [p2].[ParentID] = [t1].[ParentID])
+	[Parent] [p1]
 WHERE
-	[p2].[ParentID] > -1
+	[p1].[ParentID] > -1
 

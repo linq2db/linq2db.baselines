@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent t1
 

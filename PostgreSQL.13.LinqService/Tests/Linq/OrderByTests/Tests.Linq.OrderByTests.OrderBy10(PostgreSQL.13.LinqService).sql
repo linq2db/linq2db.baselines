@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Child" x
 ORDER BY
-	x."ChildID" % 2,
+	(x."ChildID"::decimal % 2)::decimal,
 	x."ChildID" DESC
 

@@ -5,21 +5,19 @@ SET     @id1 = 1
 
 SELECT
 	left_1."ParentID",
-	left_1."Value1",
-	t1."ParentID",
-	t1."Value1"
+	right_2."ParentID"
 FROM
 	"Parent" left_1
 		INNER JOIN "Parent" left2 ON left_1."Value1" = left2."Value1" + 2
 		FULL JOIN (
 			SELECT
-				p."Value1",
-				p."ParentID"
+				right_1."ParentID",
+				right_1."Value1" + 2 as "c1"
 			FROM
-				"Parent" p
+				"Parent" right_1
 			WHERE
-				p."ParentID" <> :id1
-		) t1 ON t1."Value1" + 2 = left_1."Value1"
+				right_1."ParentID" <> :id1
+		) right_2 ON (right_2."c1" = left_1."Value1" OR right_2."c1" IS NULL AND left_1."Value1" IS NULL)
 ORDER BY
 	left_1."ParentID"
 

@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ChildID"
+	c_2."ChildID"
 FROM
 	(
 		SELECT DISTINCT
@@ -14,5 +14,5 @@ FROM
 				LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
 		WHERE
 			"a_Parent"."ParentID" > 0
-	) t1
+	) c_2
 

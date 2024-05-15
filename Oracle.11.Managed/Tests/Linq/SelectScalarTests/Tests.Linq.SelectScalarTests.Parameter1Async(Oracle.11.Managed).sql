@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @p Int32
-SET     @p = 1
 
 SELECT
-	:p
+	1
 FROM SYS.DUAL
 

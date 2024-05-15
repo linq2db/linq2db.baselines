@@ -11,8 +11,26 @@ WHERE
 		SELECT
 			*
 		FROM
-			"Parent" p
+			"Parent" param
 		WHERE
-			p."ParentID" = c_1."ParentID" AND Nvl(p."Value1", -1) = c_1."ParentID"
+			param."ParentID" = c_1."ParentID" AND Nvl(param."Value1", -1) = c_1."ParentID"
 	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

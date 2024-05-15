@@ -31,11 +31,11 @@ INSERT INTO Ints
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2),
-	toInt32(3),
-	toInt32(4),
-	toInt32(5),
+	1,
+	2,
+	3,
+	4,
+	5,
 	NULL
 )
 
@@ -43,51 +43,51 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.One * toInt32(2) OR i.One = i.One AND i.Two = i.One * toInt32(2) AND i.Three > i.Four - toInt32(1))
+	(i.Two > i.One * 2 OR i.Two = i.One * 2 AND i.Three > i.Four - 1)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.Two OR i.One = i.One AND i.Two = i.Two AND i.Four > i.Three)
+	i.Four > i.Three
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Two > i.Five OR i.One = i.One AND i.Two = i.Five AND i.Four > i.Three)
+	(i.Two > i.Five OR i.Two = i.Five AND i.Four > i.Three)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(i.One > i.One OR i.One = i.One AND i.Nil > i.Two OR i.One = i.One AND i.Nil = i.Two AND i.Four > i.Three)
+	(i.Nil > i.Two OR i.Nil = i.Two AND i.Four > i.Three)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE
-	(toInt32(2) > i.One OR toInt32(2) = i.One AND NULL > i.Two OR toInt32(2) = i.One AND i.Two IS NULL AND toInt32(3) > i.Three)
+	(2 > i.One OR 2 = i.One AND NULL > i.Two)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

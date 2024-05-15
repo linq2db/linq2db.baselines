@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" t1
 

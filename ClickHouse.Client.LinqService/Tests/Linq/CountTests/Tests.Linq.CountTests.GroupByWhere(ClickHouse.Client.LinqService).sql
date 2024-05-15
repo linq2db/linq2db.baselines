@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child ch
 WHERE
-	ch.ChildID > toInt32(20)
+	ch.ChildID > 20
 

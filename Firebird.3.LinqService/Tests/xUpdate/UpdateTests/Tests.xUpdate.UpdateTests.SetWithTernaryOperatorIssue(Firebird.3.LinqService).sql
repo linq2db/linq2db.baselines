@@ -37,22 +37,20 @@ RETURNING
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Value Char(1) -- String
-SET     @Value = 'O'
+DECLARE @nullableGender Char(1) -- String
+SET     @nullableGender = 'O'
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = @Value
+	"Gender" = CAST(@nullableGender AS CHAR(1))
 WHERE
-	"Person"."FirstName" STARTING WITH 'UpdateComplex'
+	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 6
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."PersonID",
@@ -64,5 +62,5 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" = @id
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

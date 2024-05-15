@@ -24,11 +24,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = ?
+	[t1].[PersonID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -51,15 +51,15 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = ?
+	[t1].[PersonID] = ?
 
 BeforeExecute
 DisposeTransaction

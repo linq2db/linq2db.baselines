@@ -35,12 +35,12 @@ BeforeExecute
 
 SELECT
 	N'Title',
-	[selectParam].[Title],
-	Count(*)
+	[it].[Title],
+	COUNT(*)
 FROM
-	[odata_person] [selectParam]
+	[odata_person] [it]
 GROUP BY
-	[selectParam].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

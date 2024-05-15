@@ -44,15 +44,13 @@ DECLARE @separator VarChar(4) -- String
 SET     @separator = ' => '
 
 SELECT
-	Max("t1"."Value4"),
-	LIST("t1"."Value4", Cast(@separator as VarChar(255) CHARACTER SET UNICODE_FSS))
+	MAX("g_1"."Value4"),
+	LIST("g_1"."Value4", CAST(@separator AS VARCHAR(4)))
 FROM
-	"SampleClass" "t1"
+	"SampleClass" "g_1"
 GROUP BY
-	"t1"."Id",
-	"t1"."Value4"
-ORDER BY
-	"t1"."Id"
+	"g_1"."Id",
+	"g_1"."Value4"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

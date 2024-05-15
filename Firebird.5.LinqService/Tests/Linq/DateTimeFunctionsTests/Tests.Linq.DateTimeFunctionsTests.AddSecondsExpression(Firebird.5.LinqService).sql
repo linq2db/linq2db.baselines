@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Integer -- Int32
-SET     @p = -35
 
 SELECT
-	DateAdd(Second, Cast(@p as Int), "t"."DateTimeValue")
+	CAST(Floor(Extract(second from DateAdd(Second, -35, "t"."DateTimeValue"))) AS Int)
 FROM
 	"LinqDataTypes" "t"
 

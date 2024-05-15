@@ -2,7 +2,7 @@
 -- SqlServer.2022
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS Int)
 FROM
 	[LinqDataTypes] [t]
 

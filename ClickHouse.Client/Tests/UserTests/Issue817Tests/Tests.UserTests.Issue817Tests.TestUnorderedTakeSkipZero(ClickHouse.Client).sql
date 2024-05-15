@@ -2,8 +2,8 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
-	Person _
-LIMIT toInt32(0), toInt32(1)
+	Person t1
+LIMIT 0, 1
 

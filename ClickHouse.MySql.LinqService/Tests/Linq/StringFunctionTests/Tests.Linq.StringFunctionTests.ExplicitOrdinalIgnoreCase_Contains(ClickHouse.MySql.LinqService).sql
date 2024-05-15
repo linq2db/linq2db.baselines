@@ -16,7 +16,7 @@ INSERT INTO CollatedTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'TestString',
 	'TestString'
 )
@@ -25,39 +25,39 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
-	positionCaseInsensitive(r.CaseSensitive, 'stSt') > toInt32(0)
+	positionCaseInsensitive(r.CaseSensitive, 'stSt') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
-	positionCaseInsensitive(r.CaseInsensitive, 'stSt') > toInt32(0)
+	positionCaseInsensitive(r.CaseInsensitive, 'stSt') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
-	positionCaseInsensitive(r.CaseSensitive, 'stst') > toInt32(0)
+	positionCaseInsensitive(r.CaseSensitive, 'stst') > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	CollatedTable r
 WHERE
-	positionCaseInsensitive(r.CaseInsensitive, 'stst') > toInt32(0)
+	positionCaseInsensitive(r.CaseInsensitive, 'stst') > 0
 

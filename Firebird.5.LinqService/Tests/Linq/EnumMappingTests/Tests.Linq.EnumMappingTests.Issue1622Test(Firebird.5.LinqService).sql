@@ -42,8 +42,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -52,12 +50,10 @@ FROM
 	"Issue1622Table" "e"
 WHERE
 	"e"."SomeText" = 'Value1_suffix'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"e"."Id",
@@ -66,7 +62,7 @@ FROM
 	"Issue1622Table" "e"
 WHERE
 	"e"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

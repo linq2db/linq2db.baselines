@@ -4,23 +4,15 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" c_1
+			"Child" "a_Children"
 		WHERE
-			c_1."ParentID" + 1 < p1."ID" AND c_1."ParentID" + 1 < p1."ID" AND
-			p1."ParentID" = c_1."ParentID"
+			p1."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" + 1 < p1."ParentID" + 2 AND
+			"a_Children"."ParentID" + 1 < p1."ParentID" + 2
 	)
 FROM
-	(
-		SELECT
-			p2."ParentID" + 2 as "ID",
-			p2."ParentID"
-		FROM
-			"Parent" p2
-		WHERE
-			p2."ParentID" > -1
-	) p1
+	"Parent" p1
 WHERE
-	p1."ID" > 0
+	p1."ParentID" > -1 AND p1."ParentID" > -2
 

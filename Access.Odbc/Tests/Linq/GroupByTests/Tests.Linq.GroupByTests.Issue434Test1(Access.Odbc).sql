@@ -2,25 +2,25 @@
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input NVarChar(6) -- String
-SET     @input = '%test%'
+DECLARE @p NVarChar(6) -- String
+SET     @p = '%test%'
 
 SELECT
-	[p].[PersonID],
-	[_gjd_ri].[PersonID],
-	[_gjd_ri].[Diagnosis]
+	[m_1].[PersonID],
+	[d].[PersonID],
+	[d].[Diagnosis]
 FROM
-	[Person] [p]
-		INNER JOIN [Patient] [_gjd_ri] ON ([_gjd_ri].[PersonID] = [p].[PersonID])
+	[Person] [m_1]
+		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	LCase([p].[FirstName]) LIKE ?
+	LCase([m_1].[FirstName]) LIKE ?
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @input NVarChar(6) -- String
-SET     @input = '%test%'
+DECLARE @p NVarChar(6) -- String
+SET     @p = '%test%'
 
 SELECT
 	[p].[FirstName],

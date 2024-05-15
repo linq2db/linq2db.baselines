@@ -28,12 +28,10 @@ SET     @ID = 1001
 UPDATE
 	[LinqDataTypes]
 SET
-	[t].[MoneyValue] = 2000,
-	[t].[SmallIntValue] = 200
-FROM
-	[LinqDataTypes] [t]
+	[MoneyValue] = 2000,
+	[SmallIntValue] = 200
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -26,8 +26,8 @@ INSERT INTO Issue681Table
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(10)
+	5,
+	10
 )
 
 BeforeExecute

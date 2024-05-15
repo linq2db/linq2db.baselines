@@ -19,6 +19,11 @@ IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2005
 
+DELETE FROM [test_temp]
+
+BeforeExecute
+-- SqlServer.2005
+
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -44,8 +49,6 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[t2].[ID],
@@ -60,7 +63,7 @@ FROM
 			[test_temp] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
 
 BeforeExecute
 -- SqlServer.2005
@@ -95,8 +98,6 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 3
 
 SELECT
 	[t2].[ID],
@@ -111,7 +112,7 @@ FROM
 			[test_temp] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
 
 BeforeExecute
 -- SqlServer.2005

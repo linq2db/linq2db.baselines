@@ -8,7 +8,7 @@ DECLARE @DateTimeValue TimeStamp -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 TimeStamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue Char(1) -- String
+DECLARE @BoolValue Char -- String
 SET     @BoolValue = '0'
 DECLARE @GuidValue Guid
 SET     @GuidValue = NULL
@@ -50,10 +50,8 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"t1".ID,
 	"t1"."MoneyValue",
 	"t1"."DateTimeValue",

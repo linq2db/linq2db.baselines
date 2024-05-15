@@ -1,38 +1,7 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5000
-
-SELECT
-	"key_data_result"."ParentID",
-	"c_1"."ParentID",
-	"c_1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"t1"."ParentID"
-		FROM
-			(
-				SELECT FIRST @take
-					"t"."ParentID"
-				FROM
-					"Parent" "t"
-				WHERE
-					"t"."ParentID" > 0
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "key_data_result"."ParentID" AND "c_1"."ChildID" > -100
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 5000
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 1
 
 SELECT FIRST @take
 	"t"."ParentID",
@@ -50,20 +19,42 @@ SELECT FIRST @take
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			"Child" "c_2"
 		WHERE
 			"c_2"."ParentID" = "t"."ParentID" AND "c_2"."ChildID" > -100
 	),
 	(
-		SELECT FIRST @take_1
+		SELECT FIRST 1
 			"c_3"."ParentID"
 		FROM
 			"Child" "c_3"
 		WHERE
 			"c_3"."ParentID" = "t"."ParentID" AND "c_3"."ChildID" > -100 AND
 			"c_3"."ParentID" > 0
+		ORDER BY
+			"c_3"."ChildID"
+	),
+	(
+		SELECT FIRST 1
+			"c_4"."ParentID"
+		FROM
+			"Child" "c_4"
+		WHERE
+			"c_4"."ParentID" = "t"."ParentID" AND "c_4"."ChildID" > -100
+		ORDER BY
+			"c_4"."ChildID"
+	),
+	(
+		SELECT FIRST 1
+			"c_5"."ChildID"
+		FROM
+			"Child" "c_5"
+		WHERE
+			"c_5"."ParentID" = "t"."ParentID" AND "c_5"."ChildID" > -100
+		ORDER BY
+			"c_5"."ChildID"
 	)
 FROM
 	"Parent" "t"

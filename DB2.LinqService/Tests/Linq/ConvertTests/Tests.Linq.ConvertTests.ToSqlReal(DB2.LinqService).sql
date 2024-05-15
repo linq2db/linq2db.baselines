@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Real("t"."MoneyValue")
+	CAST("t"."MoneyValue" AS Real)
 FROM
 	"LinqDataTypes" "t"
 

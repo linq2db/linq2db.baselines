@@ -53,12 +53,12 @@ DECLARE @ClaimedKeyTypeN VarChar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
-	"Issue1554FluentTable"
+	"Issue1554FluentTable" "p"
 SET
-	"Issue1554FluentTable"."ClaimedKeyType" = @ClaimedKeyType,
-	"Issue1554FluentTable"."ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"ClaimedKeyType" = CAST(@ClaimedKeyType AS NVarChar(2)),
+	"ClaimedKeyTypeN" = CAST(@ClaimedKeyTypeN AS NVarChar(2))
 WHERE
-	"Issue1554FluentTable"."Id" = 0
+	"p"."Id" = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -69,7 +69,7 @@ SELECT
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554FluentTable" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

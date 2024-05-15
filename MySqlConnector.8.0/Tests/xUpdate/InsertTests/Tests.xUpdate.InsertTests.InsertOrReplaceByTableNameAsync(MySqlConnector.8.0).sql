@@ -58,7 +58,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPatient` `t1`
 
@@ -106,7 +106,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`xxPatient` `t1`
 

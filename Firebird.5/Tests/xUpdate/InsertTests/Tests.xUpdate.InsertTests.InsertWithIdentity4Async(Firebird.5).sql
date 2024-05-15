@@ -40,8 +40,6 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -53,7 +51,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
@@ -89,8 +87,6 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."FirstName",
@@ -102,7 +98,7 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.5 Firebird4

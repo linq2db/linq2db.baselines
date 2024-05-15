@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -17,7 +17,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	true,
 	NULL
 )
@@ -36,8 +36,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1001)
-LIMIT toInt32(2)
+	t.ID = 1001
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,5 +45,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

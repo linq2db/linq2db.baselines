@@ -4,48 +4,54 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`key_data_result`.`ParentID`,
-	`key_data_result`.`Value1`,
-	`_gjd_ch`.`ParentID`,
-	`_gjd_ch`.`ChildID`
+	`m_1`.`ParentID`,
+	`d`.`ParentID`,
+	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`p`.`ParentID`,
-			`p`.`Value1`
+			`t2`.`ParentID`
 		FROM
-			`Parent` `p`
+			`Parent` `t2`
+				INNER JOIN LATERAL (
+					SELECT
+						*
+					FROM
+						`Child` `ch`
+					WHERE
+						`t2`.`ParentID` = `ch`.`ParentID`
+					ORDER BY
+						`ch`.`ChildID` DESC
+					LIMIT 1
+				) `t1` ON 1=1
 		WHERE
-			`p`.`ParentID` = 1
-	) `key_data_result`
-		INNER JOIN `Child` `_gjd_ch` ON `_gjd_ch`.`ParentID` = `key_data_result`.`ParentID`
+			`t2`.`ParentID` = 1
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`p`.`ParentID`,
-	`p`.`Value1`,
+	`t2`.`ParentID`,
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
 FROM
-	`Parent` `p`
-		LEFT JOIN LATERAL (
+	`Parent` `t2`
+		INNER JOIN LATERAL (
 			SELECT
 				`ch`.`ParentID`,
 				`ch`.`ChildID`
 			FROM
 				`Child` `ch`
 			WHERE
-				`ch`.`ParentID` = `p`.`ParentID`
+				`t2`.`ParentID` = `ch`.`ParentID`
 			ORDER BY
 				`ch`.`ChildID` DESC
-			LIMIT @take
+			LIMIT 1
 		) `t1` ON 1=1
 WHERE
-	`p`.`ParentID` = 1
+	`t2`.`ParentID` = 1
 

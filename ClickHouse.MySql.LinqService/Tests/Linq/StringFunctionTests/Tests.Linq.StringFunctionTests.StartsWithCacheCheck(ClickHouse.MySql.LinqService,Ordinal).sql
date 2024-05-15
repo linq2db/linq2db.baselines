@@ -6,46 +6,46 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
-LIMIT toInt32(2)
+	p.PersonID = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Joh') AND p.PersonID = toInt32(1)
+	startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'Joh') AND p.PersonID = toInt32(1)
+	NOT startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'JOH') AND p.PersonID = toInt32(1)
+	startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'JOH') AND p.PersonID = toInt32(1)
+	NOT startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
 

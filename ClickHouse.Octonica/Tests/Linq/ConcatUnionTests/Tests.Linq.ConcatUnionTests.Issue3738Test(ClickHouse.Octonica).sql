@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	concat('I-', toString(x.PersonID)),
-	x.FirstName
+	concat('I-', toString(x.PersonID)) as Id,
+	x.FirstName as Name
 FROM
 	Person x
 UNION ALL
 SELECT
-	NULL,
-	concat('QUASI-', x_1.FirstName)
+	toString(NULL) as Id,
+	concat('QUASI-', x_1.FirstName) as Name
 FROM
 	Person x_1
 

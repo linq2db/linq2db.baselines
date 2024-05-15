@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -17,23 +17,23 @@ INSERT INTO `LinqDataTypes`
 	`BoolValue`
 )
 SELECT
-	Cast(Floor(`t1`.`c1` + 1001) as SIGNED),
+	CAST(Floor(`t2`.`c1` + 1001) AS SIGNED),
 	Uuid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast(`_`.`ID` as DOUBLE) / 3) as `c1`
+			Floor(CAST(`t1`.`ID` AS DOUBLE) / 3) as `c1`
 		FROM
-			`LinqDataTypes` `_`
-	) `t1`
+			`LinqDataTypes` `t1`
+	) `t2`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` > 1000
+	`LinqDataTypes`.`ID` > 1000
 

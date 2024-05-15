@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	Coalesce("p"."Value1", 100)
+	"p"."Value1"
 FROM
 	"Parent" "p"
 

@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person obj
 WHERE
-	obj.PersonID = toInt32(1)
-LIMIT toInt32(2)
+	obj.PersonID = 1
+LIMIT 2
 

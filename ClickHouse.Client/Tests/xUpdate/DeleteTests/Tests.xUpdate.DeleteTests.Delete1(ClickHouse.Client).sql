@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1001)
+	ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,19 +16,19 @@ INSERT INTO Parent
 )
 VALUES
 (
-	toInt32(1001),
-	toInt32(1001)
+	1001,
+	1001
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001)
+	p.ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -36,15 +36,15 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID = toInt32(1001)
+	ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001)
+	p.ParentID = 1001
 

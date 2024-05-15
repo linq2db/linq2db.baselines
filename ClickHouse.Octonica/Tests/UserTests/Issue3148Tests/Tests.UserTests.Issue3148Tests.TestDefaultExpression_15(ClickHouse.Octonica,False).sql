@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	Coalesce(r.PersonID + toInt32(1), toInt32(0)) = toInt32(0)
+	Coalesce(r.PersonID + 1, 0) = 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	Coalesce(r.PersonID + toInt32(1), toInt32(0)) = toInt32(0)
+	Coalesce(r.PersonID + 1, 0) = 0
 

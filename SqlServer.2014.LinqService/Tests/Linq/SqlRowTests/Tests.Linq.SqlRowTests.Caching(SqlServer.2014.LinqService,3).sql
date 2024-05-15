@@ -58,12 +58,11 @@ DECLARE @r3 Int -- Int32
 SET     @r3 = 3
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND
-	[i].[Three] = @r3
+	[i].[Two] = [i].[One] * 2 AND [i].[Three] = @r3
 
 BeforeExecute
 -- SqlServer.2014

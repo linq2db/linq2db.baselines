@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -18,7 +18,7 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`TestIdentity` `t1`
+	`TestIdentity`
 

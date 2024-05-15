@@ -33,15 +33,15 @@ DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"Name" = CAST(@Name AS NVarChar(4)),
+		"Age" = CAST(@Age AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -51,9 +51,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name,
-		@Age
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(4)),
+		CAST(@Age AS Int)
 	)
 
 BeforeExecute
@@ -67,7 +67,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -79,15 +79,15 @@ DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
-USING (SELECT @Id AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Name" = @Name,
-		"t1"."Age" = @Age
+		"Name" = CAST(@Name AS NVarChar(4)),
+		"Age" = CAST(@Age AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -97,9 +97,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name,
-		@Age
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(4)),
+		CAST(@Age AS Int)
 	)
 
 BeforeExecute
@@ -113,7 +113,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" "t"
 WHERE
 	"t"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

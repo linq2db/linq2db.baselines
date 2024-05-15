@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Value Int32
-SET     @Value = NULL
+DECLARE @value Int32
+SET     @value = NULL
+DECLARE @p Int32
+SET     @p = 0
 
 SELECT
-	@Value as `c1`
+	@value as `c1`,
+	@p as `c2`
 

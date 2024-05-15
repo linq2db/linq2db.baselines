@@ -16,25 +16,23 @@ CREATE TABLE IF NOT EXISTS `Issue681Table`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	DATABASE()
 FROM
-	`LinqDataTypes` `_`
-LIMIT @take
+	`LinqDataTypes` `t1`
+LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE   `t1`
+DELETE  
 FROM
-	`testdataconnector`.`Issue681Table` `t1`
+	`testdataconnector`.`Issue681Table`
 WHERE
-	`t1`.`ID` = @ID
+	`testdataconnector`.`Issue681Table`.`ID` = @ID
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -1,15 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	c_1."ParentID",
-	c_1."ChildID",
-	c_1."GrandChildID"
+	a_GrandChildren."ParentID",
+	a_GrandChildren."ChildID",
+	a_GrandChildren."GrandChildID"
 FROM
 	"GrandChild" p
 		LEFT JOIN "Child" a_Child ON p."ParentID" = a_Child."ParentID" AND p."ChildID" = a_Child."ChildID"
-		INNER JOIN "GrandChild" c_1 ON a_Child."ParentID" = c_1."ParentID" AND a_Child."ChildID" = c_1."ChildID"
-FETCH NEXT :take ROWS ONLY
+		INNER JOIN "GrandChild" a_GrandChildren ON a_Child."ParentID" IS NOT NULL AND a_Child."ParentID" = a_GrandChildren."ParentID" AND a_Child."ChildID" = a_GrandChildren."ChildID"
+FETCH NEXT 1 ROWS ONLY
 

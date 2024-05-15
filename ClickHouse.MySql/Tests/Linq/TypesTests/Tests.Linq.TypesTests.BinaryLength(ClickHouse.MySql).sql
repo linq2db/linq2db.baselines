@@ -6,7 +6,7 @@ ALTER TABLE
 UPDATE
 	BinaryValue = '\x01\x02\x03\x04\x05'
 WHERE
-	ID = toInt32(1)
+	ID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -16,8 +16,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1)
-LIMIT toInt32(1)
+	t.ID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -27,5 +27,5 @@ ALTER TABLE
 UPDATE
 	BinaryValue = NULL
 WHERE
-	ID = toInt32(1)
+	ID = 1
 

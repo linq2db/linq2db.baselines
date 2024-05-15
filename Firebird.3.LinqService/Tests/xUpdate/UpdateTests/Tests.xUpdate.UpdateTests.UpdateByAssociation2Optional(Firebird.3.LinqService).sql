@@ -131,7 +131,7 @@ SET     @id = 3
 UPDATE
 	"MainTable"
 SET
-	"MainTable"."Field" = 'test'
+	"Field" = 'test'
 WHERE
 	EXISTS(
 		SELECT

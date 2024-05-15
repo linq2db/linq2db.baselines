@@ -32,42 +32,30 @@ WHERE
 	"t"."Value" = 1
 UNION
 SELECT
-	"t1"."Value1",
-	"t1"."Value2"
-FROM
-	(
-		SELECT
-			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-		FROM rdb$database
-	) "t1"
+	DateAdd(Day, 3, LOCALTIMESTAMP),
+	DateAdd(Day, 4, LOCALTIMESTAMP)
+FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"v"."Value2"
+	"v_1"."Value2"
 FROM
 	(
 		SELECT
-			DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "Value1",
+			DateAdd(Day, "v"."Value", LOCALTIMESTAMP) as "Value1",
 			DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 		FROM
-			"SampleClass" "t"
+			"SampleClass" "v"
 		WHERE
-			"t"."Value" = 1
+			"v"."Value" = 1
 		UNION
 		SELECT
-			"t1"."Value1",
-			"t1"."Value2"
-		FROM
-			(
-				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-				FROM rdb$database
-			) "t1"
-	) "v"
+			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+		FROM rdb$database
+	) "v_1"
 
 BeforeExecute
 -- Firebird.3 Firebird3

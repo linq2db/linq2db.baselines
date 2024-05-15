@@ -2,13 +2,17 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	CASE
-		WHEN "t"."MoneyValue" <> 0
-			THEN TRUE
-		ELSE FALSE
-	END
+	"p_1"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CASE
+				WHEN "p"."MoneyValue" <> 0 THEN TRUE
+				ELSE FALSE
+			END as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "p_1"
 WHERE
-	"t"."MoneyValue" <> 0
+	"p_1"."c1" = TRUE
 

@@ -2,7 +2,7 @@
 -- SqlServer.2022
 
 SELECT
-	N'I-' + Convert(VarChar(11), [x].[PersonID]),
+	N'I-' + CAST([x].[PersonID] AS VarChar(11)),
 	[x].[FirstName]
 FROM
 	[Person] [x]

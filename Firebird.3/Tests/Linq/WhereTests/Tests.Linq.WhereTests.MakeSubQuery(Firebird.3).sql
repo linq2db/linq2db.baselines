@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"p"."PersonID" + 1,
+	"p"."PersonID",
 	"p"."FirstName"
 FROM
 	"Person" "p"

@@ -43,14 +43,14 @@ DECLARE @i Integer(4) -- Int32
 SET     @i = 0
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -59,7 +59,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -71,14 +71,14 @@ DECLARE @i Integer(4) -- Int32
 SET     @i = 1
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -87,7 +87,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -99,14 +99,14 @@ DECLARE @i Integer(4) -- Int32
 SET     @i = 2
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -115,7 +115,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'abc'
 	)
 
@@ -131,5 +131,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = @id
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

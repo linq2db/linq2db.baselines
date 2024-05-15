@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Iif(([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0), True, False)
+	IIF([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0, True, False)
 FROM
 	[Person] [p]
 WHERE

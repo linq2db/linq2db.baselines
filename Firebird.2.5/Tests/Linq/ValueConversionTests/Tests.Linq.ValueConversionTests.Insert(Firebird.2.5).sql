@@ -56,20 +56,18 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@Value1 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Enum as VarChar(50) CHARACTER SET UNICODE_FSS),
-	Cast(@Value2 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@BoolValue as VarChar(1) CHARACTER SET UNICODE_FSS),
-	Cast(@AnotherBoolValue as VarChar(1) CHARACTER SET UNICODE_FSS)
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@Value2 AS VARCHAR(22)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -111,20 +109,18 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@Value1 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Value2 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Enum as VarChar(50) CHARACTER SET UNICODE_FSS),
-	Cast(@BoolValue as VarChar(1) CHARACTER SET UNICODE_FSS),
-	Cast(@AnotherBoolValue as VarChar(1) CHARACTER SET UNICODE_FSS)
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(1)),
+	CAST(@Value2 AS VARCHAR(1)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -192,10 +188,8 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
-SELECT FIRST @take
+SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
 	"e"."Value2",
@@ -215,7 +209,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"ValueConversion" "t1"
 

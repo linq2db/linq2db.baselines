@@ -2,9 +2,9 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	Max("p"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "p"
+	"Person" "t1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -36,15 +36,13 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
-SELECT FIRST @take
+SELECT FIRST 2
 	"p"."PersonID",
-	"p"."Gender",
 	"p"."FirstName",
 	"p"."MiddleName",
-	"p"."LastName"
+	"p"."LastName",
+	"p"."Gender"
 FROM
 	"Person" "p"
 WHERE
@@ -54,7 +52,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
-	"Person" "t1"
+	"Person" "t"
 WHERE
-	"t1"."PersonID" > 4
+	"t"."PersonID" > 4
 

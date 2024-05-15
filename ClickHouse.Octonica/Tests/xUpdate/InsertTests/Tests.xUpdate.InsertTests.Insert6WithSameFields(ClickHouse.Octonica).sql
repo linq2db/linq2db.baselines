@@ -27,8 +27,8 @@ INSERT INTO InsertTable
 	ModifiedOn
 )
 VALUES
-(toInt32(1),toDateTime64('2020-02-29 17:54:55.1231234', 7),toDateTime64('2020-02-29 17:54:55.1231234', 7)),
-(toInt32(2),toDateTime64('2020-02-29 17:54:55.1231234', 7),toDateTime64('2020-02-29 17:54:55.1231234', 7))
+(1,toDateTime64('2020-02-29 17:54:55.1231234', 7),toDateTime64('2020-02-29 17:54:55.1231234', 7)),
+(2,toDateTime64('2020-02-29 17:54:55.1231234', 7),toDateTime64('2020-02-29 17:54:55.1231234', 7))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -40,13 +40,13 @@ INSERT INTO InsertTable
 	ModifiedOn
 )
 SELECT
-	c_1.Id + toInt32(10),
+	c_1.Id + 10,
 	now(),
 	now()
 FROM
 	InsertTable c_1
 WHERE
-	c_1.Id > toInt32(0)
+	c_1.Id > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

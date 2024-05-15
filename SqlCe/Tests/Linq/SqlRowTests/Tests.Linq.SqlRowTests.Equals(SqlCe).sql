@@ -34,40 +34,37 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND
-	[i].[Three] = [i].[Four] - 1
+	[i].[Two] = [i].[One] * 2 AND [i].[Three] = [i].[Four] - 1
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Two] = [i].[Two] AND
 	[i].[Four] = [i].[Three]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] = [i].[One] AND [i].[Nil] = [i].[Two] AND
-	[i].[Three] = [i].[Three]
+	[i].[Nil] = [i].[Two]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
 WHERE
@@ -77,7 +74,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
 WHERE

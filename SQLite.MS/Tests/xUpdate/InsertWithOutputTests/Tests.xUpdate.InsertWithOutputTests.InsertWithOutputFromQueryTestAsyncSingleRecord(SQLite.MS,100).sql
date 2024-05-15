@@ -65,7 +65,7 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || Cast(@param_1 as VarChar(100))
+	[s].[ValueStr] || @param_1
 FROM
 	[TableWithData] [s]
 WHERE
@@ -77,11 +77,15 @@ RETURNING
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @param  -- Int32
+SET     @param = 100
+DECLARE @param_1  -- Int32
+SET     @param_1 = 100
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @param,
+	[s].[Value] + @param,
+	[s].[ValueStr] || @param_1
 FROM
 	[TableWithData] [s]
 WHERE

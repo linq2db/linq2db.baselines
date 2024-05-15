@@ -2,14 +2,14 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t"."c1"
+	"t_1"."c1"
 FROM
 	(
 		SELECT
-			Floor(Power(Cast("p"."MoneyValue" as Float), 3)) as "c1"
+			Floor(Power(CAST("t"."MoneyValue" AS Float), 3)) as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "t"
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	"t"."c1" <> 0
+	"t_1"."c1" <> 0
 

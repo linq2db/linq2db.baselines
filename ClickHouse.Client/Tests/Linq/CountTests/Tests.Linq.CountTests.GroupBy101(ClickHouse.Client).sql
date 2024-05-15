@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	Child t1
+	Child g_1
 GROUP BY
-	t1.ParentID
+	g_1.ParentID
 

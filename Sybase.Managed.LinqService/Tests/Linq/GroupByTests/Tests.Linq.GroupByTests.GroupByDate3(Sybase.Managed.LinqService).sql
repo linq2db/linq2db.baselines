@@ -2,17 +2,21 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	DatePart(year, [t1].[Key_1]),
-	DatePart(month, [t1].[Key_1])
+	SUM([grp_1].[MoneyValue]),
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 FROM
 	(
 		SELECT
-			Convert(Date, right(replicate('0',4) + cast(DatePart(year, [selectParam].[DateTimeValue]) as varchar(255)),4) + '-' + right(replicate('0',2) + cast(DatePart(month, [selectParam].[DateTimeValue]) as varchar(255)),2) + '-01') as [Key_1],
-			[selectParam].[MoneyValue]
+			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + '-01' AS DateTime) as [Date_1],
+			[grp].[MoneyValue],
+			DatePart(year, CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + '-01' AS DateTime)) as [Year_1],
+			DatePart(month, CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + '-01' AS DateTime)) as [Month_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [grp]
+	) [grp_1]
 GROUP BY
-	[t1].[Key_1]
+	[grp_1].[Date_1],
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 

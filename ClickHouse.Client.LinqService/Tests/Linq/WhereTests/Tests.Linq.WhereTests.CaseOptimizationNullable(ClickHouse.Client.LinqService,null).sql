@@ -26,7 +26,7 @@ INSERT INTO WhereWithString
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Str1'
 )
 

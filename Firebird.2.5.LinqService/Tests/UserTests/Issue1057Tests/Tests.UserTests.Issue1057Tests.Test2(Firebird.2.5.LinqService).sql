@@ -89,7 +89,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual Char(1) -- String
+DECLARE @Actual Char -- String
 SET     @Actual = '1'
 
 INSERT INTO "TaskStage"
@@ -122,8 +122,8 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"p"."Id",
 	"p"."TargetName",
+	"p"."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

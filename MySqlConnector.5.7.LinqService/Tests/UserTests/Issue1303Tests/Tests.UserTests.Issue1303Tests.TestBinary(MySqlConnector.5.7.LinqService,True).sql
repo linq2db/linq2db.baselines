@@ -39,39 +39,39 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`ID` = 1
+	`t1`.`ID` = 1
 LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`Array` = 0x010203
+	`t1`.`Array` = 0x010203
 LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`_`.`ID`,
-	`_`.`Array`,
-	`_`.`Binary`
+	`t1`.`ID`,
+	`t1`.`Array`,
+	`t1`.`Binary`
 FROM
-	`Issue1303` `_`
+	`Issue1303` `t1`
 WHERE
-	`_`.`Binary` = 0x0405
+	`t1`.`Binary` = 0x0405
 LIMIT 2
 
 BeforeExecute

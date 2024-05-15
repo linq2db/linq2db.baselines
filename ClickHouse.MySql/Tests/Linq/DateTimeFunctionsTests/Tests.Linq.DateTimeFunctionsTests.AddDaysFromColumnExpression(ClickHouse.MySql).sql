@@ -2,8 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.DateTimeValue,
-	t.SmallIntValue
+	addDays(t.DateTimeValue, t.SmallIntValue)
 FROM
 	LinqDataTypes t
 

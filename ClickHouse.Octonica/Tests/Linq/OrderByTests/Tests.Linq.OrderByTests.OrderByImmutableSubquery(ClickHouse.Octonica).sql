@@ -7,7 +7,6 @@ SELECT
 FROM
 	(
 		SELECT
-			toInt32(2) as OrderElement,
 			ch.ChildID as ChildID,
 			ch.ParentID as ParentID
 		FROM

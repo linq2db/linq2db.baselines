@@ -59,11 +59,9 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name
-FROM
-	[PR_1598_Insert_Table_Cache] [t1]
+	[Name] = @Name
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase

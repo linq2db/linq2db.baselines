@@ -266,11 +266,15 @@ END
 
 BeforeExecute
 -- Firebird.4 Firebird4
+DECLARE @param Integer -- Int32
+SET     @param = 100
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 100
 
 SELECT
-	"s"."Id",
-	"s"."Value",
-	"s"."ValueStr"
+	"s"."Id" + CAST(@param AS Int),
+	"s"."Value" + CAST(@param AS Int),
+	"s"."ValueStr" || CAST(@param_1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE

@@ -27,9 +27,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			[TreeItem] [t1]
+			[TreeItem] [a_Children]
 		WHERE
-			[x].[Id] = [t1].[ParentId]
+			[x].[Id] = [a_Children].[ParentId]
 	)
 
 BeforeExecute
@@ -38,22 +38,20 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[ParentId],
-	[detail].[Id],
-	[detail].[ParentId]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[t].[Id],
-			[t].[ParentId]
+			[t].[Id]
 		FROM
 			[TreeItem] [t]
 				LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 		WHERE
 			[a_Parent].[Id] > 0
-	) [key_data_result]
-		INNER JOIN [TreeItem] [detail] ON [key_data_result].[Id] = [detail].[ParentId]
+	) [m_1]
+		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
 
 BeforeExecute
 DisposeTransaction
@@ -61,8 +59,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[t].[Id],
-	[t].[ParentId]
+	[t].[Id]
 FROM
 	[TreeItem] [t]
 		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]

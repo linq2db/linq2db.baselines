@@ -2,10 +2,10 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"p"."PersonID",
-	"p"."FirstName"
+	"pp"."PersonID",
+	'  ' || "pp"."FirstName" || ' '
 FROM
-	"Person" "p"
+	"Person" "pp"
 WHERE
-	Trim('  ' || "p"."FirstName" || ' ') = 'John' AND "p"."PersonID" = 1
+	"pp"."PersonID" = 1 AND Trim('  ' || "pp"."FirstName" || ' ') = 'John'
 

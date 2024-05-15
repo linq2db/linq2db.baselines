@@ -68,9 +68,9 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`t1`.`DeviceType`,
 	`t1`.`Id`,
 	`t1`.`SerialNumber`,
-	`t1`.`DeviceType`,
 	`t1`.`Location`
 FROM
 	`Issue4280` `t1`
@@ -118,9 +118,9 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`t1`.`DeviceType`,
 	`t1`.`Id`,
 	`t1`.`SerialNumber`,
-	`t1`.`DeviceType`,
 	`t1`.`Location`
 FROM
 	`Issue4280` `t1`

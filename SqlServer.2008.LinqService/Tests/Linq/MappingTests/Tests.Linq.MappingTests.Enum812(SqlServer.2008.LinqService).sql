@@ -2,7 +2,7 @@
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [p]
 WHERE

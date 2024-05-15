@@ -8,7 +8,7 @@ WITH CTE1_ AS
 	FROM
 		Child c_1
 	WHERE
-		c_1.ParentID > toInt32(1)
+		c_1.ParentID > 1
 ),
 LAST0 AS
 (
@@ -18,7 +18,7 @@ LAST0 AS
 	FROM
 		Child c4
 	WHERE
-		c4.ParentID % toInt32(2) = toInt32(0)
+		c4.ParentID % 2 = 0
 )
 SELECT
 	c4_1.ParentID,
@@ -34,8 +34,8 @@ SELECT
 	c4.ParentID,
 	c4.ChildID
 FROM
-	Child c_1
-		INNER JOIN Child c4 ON c4.ParentID = c_1.ParentID
+	Child p
+		INNER JOIN Child c4 ON c4.ParentID = p.ParentID
 WHERE
-	c4.ParentID % toInt32(2) = toInt32(0) AND c_1.ParentID > toInt32(1)
+	p.ParentID > 1 AND c4.ParentID % 2 = 0
 

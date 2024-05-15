@@ -36,20 +36,18 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
+	`t1`.`FirstName`,
+	`t1`.`PersonID`,
+	`t1`.`LastName`,
+	`t1`.`MiddleName`,
+	`t1`.`Gender`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+	`t1`.`FirstName` = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -76,29 +74,27 @@ WHERE
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	`_`.`FirstName`,
-	`_`.`PersonID`,
-	`_`.`LastName`,
-	`_`.`MiddleName`,
-	`_`.`Gender`
+	`t1`.`FirstName`,
+	`t1`.`PersonID`,
+	`t1`.`LastName`,
+	`t1`.`MiddleName`,
+	`t1`.`Gender`
 FROM
-	`Person` `_`
+	`Person` `t1`
 WHERE
-	`_`.`FirstName` = 'test_inherited_insert'
-LIMIT @take
+	`t1`.`FirstName` = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 5
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`PersonID` = @ID
+	`Person`.`PersonID` = @ID
 

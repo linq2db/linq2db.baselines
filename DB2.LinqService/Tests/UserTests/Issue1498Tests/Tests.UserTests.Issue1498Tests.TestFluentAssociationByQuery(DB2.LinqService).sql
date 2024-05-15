@@ -114,30 +114,19 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"key_data_result"."Id",
-	"key_data_result"."Title",
-	"key_data_result"."Text",
-	"detail"."Id"
+	"m_1"."Id",
+	"d"."Id"
 FROM
 	(
-		SELECT DISTINCT
-			"t1"."Id",
-			"t1"."Title",
-			"t1"."Text"
+		SELECT
+			"x"."Id"
 		FROM
-			(
-				SELECT
-					"x"."Id",
-					"x"."Title",
-					"x"."Text"
-				FROM
-					"Topic" "x"
-				WHERE
-					"x"."Id" = 6
-				FETCH FIRST 1 ROWS ONLY
-			) "t1"
-	) "key_data_result"
-		INNER JOIN "Message" "detail" ON "detail"."TopicId" = "key_data_result"."Id"
+			"Topic" "x"
+		WHERE
+			"x"."Id" = 6
+		FETCH NEXT 1 ROWS ONLY
+	) "m_1"
+		INNER JOIN "Message" "d" ON "d"."TopicId" = "m_1"."Id"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -150,7 +139,7 @@ FROM
 	"Topic" "x"
 WHERE
 	"x"."Id" = 6
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] IN (1001, 1002)
+	[c_1].[ChildID] IN (1001, 1002)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -39,7 +39,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -59,7 +59,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

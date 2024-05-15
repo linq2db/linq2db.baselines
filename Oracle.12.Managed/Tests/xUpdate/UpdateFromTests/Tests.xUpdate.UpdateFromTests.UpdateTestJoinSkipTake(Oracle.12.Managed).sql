@@ -97,68 +97,57 @@ DECLARE @int3 Int32
 SET     @int3 = 33
 DECLARE @someId Int32
 SET     @someId = 100
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 3
+DECLARE @take Int32
+SET     @take = 2
 
 UPDATE
 	"UpdatedEntities"
 SET
-	("UpdatedEntities"."Value1", "UpdatedEntities"."Value2", "UpdatedEntities"."Value3") = (
+	("Value1", "Value2", "Value3") = (
 		SELECT
-			(t3."Value1" * t3."Value1_1") * :int1,
-			(t3."Value2" * t3."Value2_1") * :int2,
-			(t3."Value3" * t3."Value3_1") * :int3
+			("UpdatedEntities"."Value1" * t8."Value1") * :int1,
+			("UpdatedEntities"."Value2" * t8."Value2") * :int2,
+			("UpdatedEntities"."Value3" * t8."Value3") * :int3
 		FROM
 			(
 				SELECT
-					t2."id",
-					t2."Value1",
-					t2."Value1_1",
-					t2."Value2",
-					t2."Value2_1",
-					t2."Value3",
-					t2."Value3_1"
+					t7."Value1",
+					t7."Value2",
+					t7."Value3",
+					t7."id"
 				FROM
 					(
 						SELECT
-							ROWNUM as RN,
-							t1."Value1",
-							t1."Value1_1",
-							t1."Value2",
-							t1."Value2_1",
-							t1."Value3",
-							t1."Value3_1",
-							t1."id"
+							t6."Value1",
+							t6."Value2",
+							t6."Value3",
+							t6."id",
+							ROWNUM as RN
 						FROM
 							(
 								SELECT
-									c_1."Value1",
-									t."Value1" as "Value1_1",
-									c_1."Value2",
-									t."Value2" as "Value2_1",
-									c_1."Value3",
-									t."Value3" as "Value3_1",
-									c_1."id"
+									t_1."Value1",
+									t_1."Value2",
+									t_1."Value3",
+									t5."id"
 								FROM
-									"UpdatedEntities" c_1
-										INNER JOIN "NewEntities" t ON t."id" = c_1."id"
+									"UpdatedEntities" t5
+										INNER JOIN "NewEntities" t_1 ON t_1."id" = t5."id"
 								WHERE
-									t."id" <> :someId
+									t_1."id" <> :someId
 								ORDER BY
-									c_1."id"
-							) t1
+									t5."id"
+							) t6
 						WHERE
-							ROWNUM <= :take
-					) t2
+							ROWNUM <= (:skip + :take)
+					) t7
 				WHERE
-					t2.RN > :skip
-			) t3
+					t7.RN > :skip
+			) t8
 		WHERE
-			"UpdatedEntities"."id" = t3."id"
+			"UpdatedEntities"."id" = t8."id"
 	)
 WHERE
 	EXISTS(
@@ -167,32 +156,32 @@ WHERE
 		FROM
 			(
 				SELECT
-					t5."id"
+					t3."id"
 				FROM
 					(
 						SELECT
-							ROWNUM as RN,
-							t4."id"
+							t2."id",
+							ROWNUM as RN
 						FROM
 							(
 								SELECT
-									c_2."id"
+									t1."id"
 								FROM
-									"UpdatedEntities" c_2
-										INNER JOIN "NewEntities" t_1 ON t_1."id" = c_2."id"
+									"UpdatedEntities" t1
+										INNER JOIN "NewEntities" t ON t."id" = t1."id"
 								WHERE
-									t_1."id" <> :someId
+									t."id" <> :someId
 								ORDER BY
-									c_2."id"
-							) t4
+									t1."id"
+							) t2
 						WHERE
-							ROWNUM <= :take_1
-					) t5
+							ROWNUM <= (:skip + :take)
+					) t3
 				WHERE
-					t5.RN > :skip
-			) t6
+					t3.RN > :skip
+			) t4
 		WHERE
-			"UpdatedEntities"."id" = t6."id"
+			"UpdatedEntities"."id" = t4."id"
 	)
 
 BeforeExecute

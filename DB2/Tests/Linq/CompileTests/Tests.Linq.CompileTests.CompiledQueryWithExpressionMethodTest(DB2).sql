@@ -12,5 +12,5 @@ WHERE
 	"x"."ParentID" = @ParentID
 ORDER BY
 	"x"."ParentID" DESC
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

@@ -7,19 +7,11 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
+				Person t1
 			WHERE
-				CASE
-					WHEN _.FirstName = _.FirstName
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
-				END = CASE
-					WHEN _.MiddleName <> _.LastName
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
-				END
+				(t1.MiddleName <> t1.LastName OR t1.MiddleName IS NULL)
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 

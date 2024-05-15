@@ -2,11 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[ch].[ParentID],
-	[p].[ParentID]
+	[t].[ID]
 FROM
-	[Child] [ch]
-		INNER JOIN [Parent] [p] ON ([ch].[ParentID] = [p].[ParentID])
+	(
+		SELECT
+			[ch].[ParentID] + [p].[ParentID] as [ID]
+		FROM
+			[Child] [ch]
+				INNER JOIN [Parent] [p] ON ([ch].[ParentID] = [p].[ParentID])
+	) [t]
 WHERE
-	[ch].[ParentID] + [p].[ParentID] > 2
+	[t].[ID] > 2
 

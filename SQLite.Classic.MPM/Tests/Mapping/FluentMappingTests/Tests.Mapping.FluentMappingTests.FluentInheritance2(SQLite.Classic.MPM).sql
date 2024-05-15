@@ -1,31 +1,28 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName]
+	[t1].[Gender],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[FirstName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[Gender] = 'M' AND [_].[PersonID] = 1
-LIMIT @take
+	[t1].[Gender] = 'M' AND [t1].[PersonID] = 1
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[LastName]
+	[t1].[Gender],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[FirstName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[Gender] = 'F' AND [_].[PersonID] = 3
-LIMIT @take
+	[t1].[Gender] = 'F' AND [t1].[PersonID] = 3
+LIMIT 1
 

@@ -28,7 +28,7 @@ INSERT INTO xxPerson
 VALUES
 (
 	'Steven',
-	toInt32(0),
+	0,
 	'King',
 	NULL,
 	'M'

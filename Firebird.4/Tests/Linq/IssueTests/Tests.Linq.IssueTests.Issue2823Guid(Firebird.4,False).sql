@@ -50,12 +50,12 @@ INSERT INTO "TableWithGuid"
 )
 VALUES
 (
-	@Guid1,
-	@Guid2,
-	@Guid3,
-	@Guid4,
-	@Guid5,
-	@Guid6
+	CAST(@Guid1 AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@Guid2 AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@Guid3 AS CHAR(38)),
+	CAST(@Guid4 AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@Guid5 AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@Guid6 AS CHAR(8191))
 )
 
 BeforeExecute
@@ -77,7 +77,7 @@ DECLARE @Guid1 Guid
 SET     @Guid1 = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE
@@ -89,7 +89,7 @@ DECLARE @Guid2 Guid
 SET     @Guid2 = X'A948600DDE214F748AC29516B287076E'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE
@@ -101,7 +101,7 @@ DECLARE @Guid3 Char -- String
 SET     @Guid3 = X'BD3973A543234DD89F4FDF9F93E2A627'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE
@@ -113,7 +113,7 @@ DECLARE @Guid4 Guid
 SET     @Guid4 = X'76B1C87522874B82A23B7967C5EAFED8'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE
@@ -125,7 +125,7 @@ DECLARE @Guid5 Guid
 SET     @Guid5 = X'656606A46E364431ADD685F886A1C7C2'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE
@@ -137,7 +137,7 @@ DECLARE @Guid6 Char -- String
 SET     @Guid6 = X'66AA9DF9260F4A2BAC509CA8CE7AD725'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TableWithGuid" "x"
 WHERE

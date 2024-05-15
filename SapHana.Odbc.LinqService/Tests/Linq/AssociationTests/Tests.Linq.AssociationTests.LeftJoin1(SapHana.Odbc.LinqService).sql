@@ -4,11 +4,11 @@
 SELECT
 	"p"."ParentID",
 	"p"."Value1",
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"c_1"."ParentID",
+	"c_1"."ChildID"
 FROM
 	"Parent" "p"
-		LEFT JOIN "Child" "t1" ON "p"."ParentID" = "t1"."ParentID"
+		LEFT JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID"
 WHERE
 	"p"."ParentID" >= 4
 

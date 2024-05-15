@@ -2,9 +2,9 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Max([_].[ParentID])
+	MAX([t1].[ParentID])
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] < 0
+	[t1].[ParentID] < 0
 

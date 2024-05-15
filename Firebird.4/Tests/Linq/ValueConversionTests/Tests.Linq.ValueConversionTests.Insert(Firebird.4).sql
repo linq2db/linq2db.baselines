@@ -56,18 +56,16 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@Value1 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Enum as VarChar(50) CHARACTER SET UNICODE_FSS),
-	Cast(@Value2 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@BoolValue as VarChar(1) CHARACTER SET UNICODE_FSS),
-	Cast(@AnotherBoolValue as VarChar(1) CHARACTER SET UNICODE_FSS)
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@Value2 AS VARCHAR(22)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -84,7 +82,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -112,18 +110,16 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	Cast(@Id as Int),
-	Cast(@Value1 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Value2 as VarChar(200) CHARACTER SET UNICODE_FSS),
-	Cast(@Enum as VarChar(50) CHARACTER SET UNICODE_FSS),
-	Cast(@BoolValue as VarChar(1) CHARACTER SET UNICODE_FSS),
-	Cast(@AnotherBoolValue as VarChar(1) CHARACTER SET UNICODE_FSS)
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(1)),
+	CAST(@Value2 AS VARCHAR(1)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -140,7 +136,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -194,8 +190,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"e"."Id",
@@ -212,13 +206,13 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"ValueConversion" "t1"
 

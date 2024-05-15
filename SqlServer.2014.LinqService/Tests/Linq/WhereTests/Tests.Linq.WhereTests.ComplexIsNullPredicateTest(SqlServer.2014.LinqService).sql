@@ -6,8 +6,8 @@ SELECT
 		SELECT
 			*
 		FROM
-			[Person] [_]
+			[Person] [t1]
 		WHERE
-			IIF([_].[MiddleName] = N'123', 1, 0) = IIF(IIF([_].[MiddleName] = N'1', N'test', [_].[MiddleName]) = N'test', 1, 0)
+			IIF([t1].[MiddleName] = N'123', 1, 0) = IIF([t1].[MiddleName] = N'1' OR [t1].[MiddleName] = N'test' AND ([t1].[MiddleName] <> N'1' OR [t1].[MiddleName] IS NULL), 1, 0)
 	), 1, 0)
 

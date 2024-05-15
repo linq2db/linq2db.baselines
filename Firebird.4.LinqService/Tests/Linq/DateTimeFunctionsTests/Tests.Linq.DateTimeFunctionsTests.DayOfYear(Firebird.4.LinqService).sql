@@ -2,7 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	Cast(Floor(Extract(yearday from "t"."DateTimeValue")) as int) + 1
+	Extract(yearday from "t"."DateTimeValue") + 1
 FROM
 	"LinqDataTypes" "t"
 

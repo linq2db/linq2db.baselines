@@ -17,11 +17,11 @@ DECLARE @lastName NVarChar(3) -- String
 SET     @lastName = '%o%'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE ? AND [_].[LastName] LIKE ?
+	[t1].[FirstName] LIKE ? AND [t1].[LastName] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -31,17 +31,17 @@ DECLARE @lastName NVarChar(3) -- String
 SET     @lastName = '%o%'
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE ? AND [_].[LastName] LIKE ?
+	[t1].[FirstName] LIKE ? AND [t1].[LastName] LIKE ?
 ORDER BY
-	[_].[PersonID]
+	[t1].[PersonID]
 
 BeforeExecute
 DisposeTransaction

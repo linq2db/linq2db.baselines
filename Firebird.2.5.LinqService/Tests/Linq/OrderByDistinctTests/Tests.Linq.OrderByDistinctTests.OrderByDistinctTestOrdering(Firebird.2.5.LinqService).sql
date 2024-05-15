@@ -113,8 +113,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -141,8 +139,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -169,9 +165,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -199,9 +192,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -229,9 +219,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1" DESC,
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -259,9 +246,6 @@ SELECT FIRST @take SKIP @skip DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-ORDER BY
-	"x"."OrderData1",
-	"x"."OrderData2" DESC
 
 BeforeExecute
 -- Firebird.2.5 Firebird

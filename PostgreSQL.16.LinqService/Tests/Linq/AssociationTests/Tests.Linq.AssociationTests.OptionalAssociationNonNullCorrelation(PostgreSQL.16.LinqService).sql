@@ -169,12 +169,45 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	m_1."ID",
+	d."ID",
+	d."ID3"
+FROM
+	(
+		SELECT DISTINCT
+			"a_Table3"."ID"
+		FROM
+			"Table1" r
+				LEFT JOIN "Table2" "a_Table2" ON r."ID2" = "a_Table2"."ID"
+				LEFT JOIN "Table3" "a_Table3" ON "a_Table2"."ID3" = "a_Table3"."ID"
+				LEFT JOIN "Table3" "a_Table3_1" ON "a_Table2"."ID3" = "a_Table3_1"."ID"
+		WHERE
+			EXISTS(
+				SELECT
+					*
+				FROM
+					"Table4" id
+				WHERE
+					"a_Table3_1"."ID" IS NOT NULL AND "a_Table3_1"."ID" = id."ID3" AND
+					id."ID" = r."ID"
+			)
+	) m_1
+		INNER JOIN "Table4" d ON (m_1."ID" = d."ID3" OR m_1."ID" IS NULL AND d."ID3" IS NULL)
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
 	r."ID",
-	r."ID2"
+	r."ID2",
+	"a_Table2"."ID",
+	"a_Table2"."ID3",
+	"a_Table3"."ID"
 FROM
 	"Table1" r
 		LEFT JOIN "Table2" "a_Table2" ON r."ID2" = "a_Table2"."ID"
 		LEFT JOIN "Table3" "a_Table3" ON "a_Table2"."ID3" = "a_Table3"."ID"
+		LEFT JOIN "Table3" "a_Table3_1" ON "a_Table2"."ID3" = "a_Table3_1"."ID"
 WHERE
 	EXISTS(
 		SELECT
@@ -182,8 +215,41 @@ WHERE
 		FROM
 			"Table4" id
 		WHERE
-			"a_Table3"."ID" = id."ID3" AND id."ID" = r."ID"
+			"a_Table3_1"."ID" IS NOT NULL AND "a_Table3_1"."ID" = id."ID3" AND
+			id."ID" = r."ID"
 	)
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	m_1."ID",
+	d."ID",
+	d."ID3"
+FROM
+	(
+		SELECT DISTINCT
+			"a_Table3"."ID"
+		FROM
+			"Table1" t1
+				LEFT JOIN "Table2" "a_Table2" ON t1."ID2" = "a_Table2"."ID"
+				LEFT JOIN "Table3" "a_Table3" ON "a_Table2"."ID3" = "a_Table3"."ID"
+	) m_1
+		INNER JOIN "Table4" d ON (m_1."ID" = d."ID3" OR m_1."ID" IS NULL AND d."ID3" IS NULL)
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."ID",
+	t1."ID2",
+	"a_Table2"."ID",
+	"a_Table2"."ID3",
+	"a_Table3"."ID"
+FROM
+	"Table1" t1
+		LEFT JOIN "Table2" "a_Table2" ON t1."ID2" = "a_Table2"."ID"
+		LEFT JOIN "Table3" "a_Table3" ON "a_Table2"."ID3" = "a_Table3"."ID"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

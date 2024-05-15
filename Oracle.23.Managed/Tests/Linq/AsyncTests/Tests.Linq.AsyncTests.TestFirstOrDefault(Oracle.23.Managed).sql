@@ -8,8 +8,6 @@ DECLARE @p_2 Int32
 SET     @p_2 = 3
 DECLARE @param Int32
 SET     @param = 4
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
@@ -18,5 +16,5 @@ FROM
 	"Parent" o
 WHERE
 	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param)
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

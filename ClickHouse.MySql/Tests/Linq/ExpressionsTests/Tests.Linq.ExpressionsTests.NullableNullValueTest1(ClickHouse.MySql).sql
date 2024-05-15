@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID IS NOT NULL
+	p.PersonID <> 0
 

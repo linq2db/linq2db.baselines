@@ -41,28 +41,28 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `c_1`
+DELETE   `a_Children`
 FROM
 	`Parent` `p`
-		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
+		INNER JOIN `Child` `a_Children` ON `p`.`ParentID` = `a_Children`.`ParentID`
 WHERE
 	`p`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`Child`.`ParentID` >= 1000
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 

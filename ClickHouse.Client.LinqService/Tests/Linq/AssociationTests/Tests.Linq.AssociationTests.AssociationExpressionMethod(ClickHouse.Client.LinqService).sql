@@ -6,5 +6,5 @@ SELECT
 	a_ChildPredicate.ChildID
 FROM
 	Parent p
-		LEFT JOIN Child a_ChildPredicate ON p.ParentID = a_ChildPredicate.ParentID AND a_ChildPredicate.ChildID > toInt32(1)
+		LEFT JOIN Child a_ChildPredicate ON p.ParentID = a_ChildPredicate.ParentID AND a_ChildPredicate.ChildID > 1
 

@@ -46,58 +46,21 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 UPDATE
-	"TableWithData"
+	"TableWithData" "i"
 SET
-	"TableWithData"."Id" = 20,
-	"TableWithData"."ValueStr" = (
-		SELECT
-			"t1"."ValueStr"
-		FROM
-			(
-				SELECT
-					"i"."Id",
-					"i"."ValueStr",
-					"i"."Value" as "Value_1"
-				FROM
-					"TableWithData" "i"
-				WHERE
-					"i"."Id" >= 7
-				ORDER BY
-					"i"."Id"
-				FETCH NEXT @take ROWS ONLY
-			) "t1"
-		WHERE
-			"TableWithData"."Id" = "t1"."Id" AND "TableWithData"."Value" = "t1"."Value_1" AND
-			("TableWithData"."ValueStr" = "t1"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t1"."ValueStr" IS NULL)
-	)
+	"Value" = 20,
+	"ValueStr" = "i"."ValueStr"
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			(
-				SELECT
-					"i_1"."Id",
-					"i_1"."ValueStr",
-					"i_1"."Value" as "Value_1"
-				FROM
-					"TableWithData" "i_1"
-				WHERE
-					"i_1"."Id" >= 7
-				ORDER BY
-					"i_1"."Id"
-				FETCH NEXT @take ROWS ONLY
-			) "t2"
-		WHERE
-			"TableWithData"."Id" = "t2"."Id" AND "TableWithData"."Value" = "t2"."Value_1" AND
-			("TableWithData"."ValueStr" = "t2"."ValueStr" OR "TableWithData"."ValueStr" IS NULL AND "t2"."ValueStr" IS NULL)
-	)
+	"i"."Id" = 7
+ORDER BY
+	"i"."Id"
+ROWS @take
 RETURNING
 	OLD."Id",
-	NULL /* Value */,
+	OLD."Value",
 	OLD."ValueStr",
 	NEW."Id",
-	NULL /* Value */,
+	NEW."Value",
 	NEW."ValueStr"
 
 BeforeExecute

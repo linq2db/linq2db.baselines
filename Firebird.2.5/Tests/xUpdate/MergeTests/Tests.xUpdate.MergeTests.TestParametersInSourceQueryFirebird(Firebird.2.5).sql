@@ -226,21 +226,21 @@ SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id",
-		Cast(@param as TimeStamp) as "source_field0"
+		"t1"."Id" as "source_Id",
+		CAST(@param AS TimeStamp) as "source_Val"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"Id",
-	"source_field0"
+	"source_Id",
+	"source_Val"
 )
-ON ("Target"."Id" = "Source"."Id" AND "Source"."source_field0" IS NOT NULL)
+ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Field1" = 111
+	"Field1" = 111
 
 BeforeExecute
 -- Firebird.2.5 Firebird

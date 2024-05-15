@@ -289,42 +289,42 @@ SET     @int3 = 33
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = (
+	"Value1" = (
 		SELECT
-			("c_1"."Value1" * "t"."Value1") * Cast(@int1 as Int)
+			("UpdatedEntities"."Value1" * "t_1"."Value1") * CAST(@int1 AS Int)
 		FROM
-			"UpdatedEntities" "c_1"
-				INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"
+			"UpdatedEntities" "t2"
+				INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t2"."id"
 		WHERE
-			"t"."id" <> @someId AND "UpdatedEntities"."id" = "c_1"."id"
+			"t_1"."id" <> @someId AND "UpdatedEntities"."id" = "t2"."id"
 	),
-	"UpdatedEntities"."Value2" = (
+	"Value2" = (
 		SELECT
-			("c_2"."Value2" * "t_1"."Value2") * Cast(@int2 as Int)
+			("UpdatedEntities"."Value2" * "t_2"."Value2") * CAST(@int2 AS Int)
 		FROM
-			"UpdatedEntities" "c_2"
-				INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "c_2"."id"
+			"UpdatedEntities" "t3"
+				INNER JOIN "NewEntities" "t_2" ON "t_2"."id" = "t3"."id"
 		WHERE
-			"t_1"."id" <> @someId AND "UpdatedEntities"."id" = "c_2"."id"
+			"t_2"."id" <> @someId AND "UpdatedEntities"."id" = "t3"."id"
 	),
-	"UpdatedEntities"."Value3" = (
+	"Value3" = (
 		SELECT
-			("c_3"."Value3" * "t_2"."Value3") * Cast(@int3 as Int)
+			("UpdatedEntities"."Value3" * "t_3"."Value3") * CAST(@int3 AS Int)
 		FROM
-			"UpdatedEntities" "c_3"
-				INNER JOIN "NewEntities" "t_2" ON "t_2"."id" = "c_3"."id"
+			"UpdatedEntities" "t4"
+				INNER JOIN "NewEntities" "t_3" ON "t_3"."id" = "t4"."id"
 		WHERE
-			"t_2"."id" <> @someId AND "UpdatedEntities"."id" = "c_3"."id"
+			"t_3"."id" <> @someId AND "UpdatedEntities"."id" = "t4"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" "c_4"
-				INNER JOIN "NewEntities" "t_3" ON "t_3"."id" = "c_4"."id"
+			"UpdatedEntities" "t1"
+				INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 		WHERE
-			"t_3"."id" <> @someId AND "UpdatedEntities"."id" = "c_4"."id"
+			"t"."id" <> @someId AND "UpdatedEntities"."id" = "t1"."id"
 	)
 
 BeforeExecute

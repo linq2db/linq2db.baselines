@@ -18,14 +18,14 @@ FROM
 		SELECT
 			[a_Customer].[CustomerID]
 		FROM
-			[Orders] [t1]
-				INNER JOIN [Customers] [a_Customer] ON ([t1].[CustomerID] = [a_Customer].[CustomerID] OR [t1].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
+			[Orders] [g_1]
+				INNER JOIN [Customers] [a_Customer] ON [g_1].[CustomerID] = [a_Customer].[CustomerID]
 		GROUP BY
 			[a_Customer].[CustomerID]
 		HAVING
-			Count(*) > 20
-	) [cp]
-		INNER JOIN [Orders] [c_1]
-			INNER JOIN [Customers] [a_Customer_1] ON ([c_1].[CustomerID] = [a_Customer_1].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
-		ON ([cp].[CustomerID] = [a_Customer_1].[CustomerID] OR [cp].[CustomerID] IS NULL AND [a_Customer_1].[CustomerID] IS NULL)
+			COUNT(*) > 20
+	) [g_2]
+		INNER JOIN [Orders] [o]
+			INNER JOIN [Customers] [a_Customer_1] ON [o].[CustomerID] = [a_Customer_1].[CustomerID]
+		ON [g_2].[CustomerID] = [a_Customer_1].[CustomerID]
 

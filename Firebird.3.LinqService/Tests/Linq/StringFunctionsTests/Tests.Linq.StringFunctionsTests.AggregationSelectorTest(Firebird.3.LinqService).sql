@@ -117,14 +117,12 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	LIST("t1"."Value1", ' -> ')
+	LIST("g_1"."Value1", ' -> ')
 FROM
-	"SampleClass" "t1"
+	"SampleClass" "g_1"
 GROUP BY
-	"t1"."Id",
-	"t1"."Value1"
-ORDER BY
-	"t1"."Id"
+	"g_1"."Id",
+	"g_1"."Value1"
 
 BeforeExecute
 -- Firebird.3 Firebird3

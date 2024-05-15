@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -21,13 +21,13 @@ FROM
 	(
 		SELECT
 			"c_1"."ParentID",
-			Int(Floor(Float("c_1"."ChildID") / 10)) as "Value1"
+			CAST(Floor(CAST("c_1"."ChildID" AS Float) / 10) AS Int) as "Value1"
 		FROM
 			"Child" "c_1"
 		UNION
 		SELECT
 			Coalesce("c_2"."ParentID", 0) as "ParentID",
-			Floor(Float(Coalesce("c_2"."GrandChildID", 0)) / 100) as "Value1"
+			Floor(CAST(Coalesce("c_2"."GrandChildID", 0) AS Float) / 100) as "Value1"
 		FROM
 			"GrandChild" "c_2"
 	) "t1"
@@ -36,7 +36,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "c_1"
 WHERE
@@ -46,7 +46,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" > 1000
+	"p"."ParentID" > 1000
 

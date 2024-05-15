@@ -77,7 +77,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -87,7 +87,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -99,7 +99,7 @@ DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -107,10 +107,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -119,15 +115,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -136,15 +128,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -153,15 +141,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -170,15 +154,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -187,15 +167,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -204,15 +180,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -221,15 +193,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -238,15 +206,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -255,15 +219,11 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'N'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -272,15 +232,13 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue
-FETCH NEXT :take ROWS ONLY
+	t1."BoolValue" = 'Y'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -290,14 +248,12 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."GuidValue" = :GuidValue
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -307,7 +263,7 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."GuidValue" = :GuidValue
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

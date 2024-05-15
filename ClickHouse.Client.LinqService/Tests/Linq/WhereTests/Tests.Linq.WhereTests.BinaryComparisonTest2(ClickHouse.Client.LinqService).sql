@@ -7,17 +7,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
+				Person t1
 			WHERE
-				CASE
-					WHEN _.FirstName = _.FirstName
-						THEN true
-					ELSE false
-				END <> CASE
-					WHEN _.MiddleName <> _.LastName
-						THEN true
-					ELSE false
-				END
+				NOT (t1.MiddleName <> t1.LastName OR t1.MiddleName IS NULL)
 		)
 			THEN true
 		ELSE false

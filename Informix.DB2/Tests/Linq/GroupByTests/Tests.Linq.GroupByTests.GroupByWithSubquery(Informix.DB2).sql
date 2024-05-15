@@ -3,7 +3,7 @@
 
 SELECT
 	t2.c1,
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT

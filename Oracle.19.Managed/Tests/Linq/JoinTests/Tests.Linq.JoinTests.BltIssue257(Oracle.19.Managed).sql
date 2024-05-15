@@ -2,16 +2,16 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Date_1",
-	Count(*)
+	b_1."Date_1",
+	COUNT(*)
 FROM
 	(
 		SELECT
-			Trunc(selectParam."DateTimeValue", 'DD') as "Date_1"
+			TRUNC(b."DateTimeValue") as "Date_1"
 		FROM
-			"LinqDataTypes" selectParam
-				INNER JOIN "Parent" p ON selectParam.ID = p."ParentID"
-	) t1
+			"LinqDataTypes" b
+				INNER JOIN "Parent" p ON b.ID = p."ParentID"
+	) b_1
 GROUP BY
-	t1."Date_1"
+	b_1."Date_1"
 

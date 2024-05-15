@@ -2,9 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Max(`p`.`PersonID`)
+	MAX(`t1`.`PersonID`)
 FROM
-	`Person` `p`
+	`Person` `t1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -34,27 +34,25 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	`p`.`PersonID`,
-	`p`.`Gender`,
 	`p`.`FirstName`,
 	`p`.`MiddleName`,
-	`p`.`LastName`
+	`p`.`LastName`,
+	`p`.`Gender`
 FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` > 4
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Person` `t1`
+	`Person`
 WHERE
-	`t1`.`PersonID` > 4
+	`Person`.`PersonID` > 4
 

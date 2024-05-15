@@ -7,18 +7,13 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [_]
+				[Person] [t1]
 			WHERE
 				CASE
-					WHEN [_].[MiddleName] = N'123'
-						THEN 1
+					WHEN [t1].[MiddleName] = N'123' THEN 1
 					ELSE 0
 				END = CASE
-					WHEN CASE
-						WHEN [_].[MiddleName] = N'1'
-							THEN N'test'
-						ELSE [_].[MiddleName]
-					END = N'test'
+					WHEN [t1].[MiddleName] = N'1' OR [t1].[MiddleName] = N'test' AND ([t1].[MiddleName] <> N'1' OR [t1].[MiddleName] IS NULL)
 						THEN 1
 					ELSE 0
 				END

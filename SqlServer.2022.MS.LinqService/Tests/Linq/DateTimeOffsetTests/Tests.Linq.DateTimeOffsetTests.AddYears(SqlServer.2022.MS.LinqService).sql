@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	DateAdd(year, 1, [t].[TransactionDate])
+	CAST(DateAdd(year, 1, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

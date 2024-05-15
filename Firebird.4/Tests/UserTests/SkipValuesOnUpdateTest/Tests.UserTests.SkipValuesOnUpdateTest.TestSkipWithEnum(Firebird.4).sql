@@ -52,8 +52,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -64,7 +62,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -78,18 +76,16 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age,
-	"PR_1598_Update_Enum_Table"."Gender" = @Gender
+	"Name" = CAST(@Name AS VARCHAR(4)),
+	"Age" = CAST(@Age AS Int),
+	"Gender" = CAST(@Gender AS VARCHAR(4))
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -100,7 +96,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -112,17 +108,15 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table"
+	"PR_1598_Update_Enum_Table" "t1"
 SET
-	"PR_1598_Update_Enum_Table"."Name" = @Name,
-	"PR_1598_Update_Enum_Table"."Age" = @Age
+	"Name" = CAST(@Name AS VARCHAR(8)),
+	"Age" = CAST(@Age AS Int)
 WHERE
-	"PR_1598_Update_Enum_Table"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t"."Id",
@@ -133,7 +127,7 @@ FROM
 	"PR_1598_Update_Enum_Table" "t"
 WHERE
 	"t"."Id" = 1
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4

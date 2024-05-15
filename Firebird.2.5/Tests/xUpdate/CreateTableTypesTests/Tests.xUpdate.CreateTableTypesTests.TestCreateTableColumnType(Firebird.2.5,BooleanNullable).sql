@@ -42,7 +42,7 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @BooleanNullable Char(1) -- String
+DECLARE @BooleanNullable Char -- String
 SET     @BooleanNullable = '1'
 
 INSERT INTO "CreateTableTypes"

@@ -35,8 +35,6 @@ RETURNING
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."FirstName",
@@ -48,7 +46,7 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -64,19 +62,17 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = CAST(@FirstName AS VARCHAR(21)),
+	"LastName" = CAST(@LastName AS VARCHAR(4)),
+	"MiddleName" = CAST(@MiddleName AS VARCHAR(4)),
+	"Gender" = CAST(@Gender AS Char(1))
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	"t1"."FirstName",
@@ -88,7 +84,7 @@ FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
-FETCH NEXT @take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3

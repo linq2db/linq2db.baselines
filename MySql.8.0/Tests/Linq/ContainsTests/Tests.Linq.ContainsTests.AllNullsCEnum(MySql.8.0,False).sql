@@ -32,29 +32,25 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @CEnum VarChar -- AnsiString
 SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- AnsiString
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @CEnum VarChar -- AnsiString
 SET     @CEnum = NULL
-DECLARE @CEnum_1 VarChar -- AnsiString
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` NOT IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` NOT IN (@CEnum, @CEnum)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

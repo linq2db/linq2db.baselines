@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 5
 DECLARE @skip Integer -- Int32
-SET     @skip = 5
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 3
+SET     @skip = 3
 
-SELECT FIRST @skip SKIP @skip_1
+SELECT FIRST @take SKIP @skip
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
@@ -15,12 +15,12 @@ ORDER BY
 
 BeforeExecute
 -- Firebird.2.5 Firebird
+DECLARE @take Integer -- Int32
+SET     @take = 5
 DECLARE @skip Integer -- Int32
-SET     @skip = 5
-DECLARE @skip_1 Integer -- Int32
-SET     @skip_1 = 3
+SET     @skip = 3
 
-SELECT FIRST @skip SKIP @skip_1
+SELECT FIRST @take SKIP @skip
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM

@@ -81,39 +81,35 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId",
-	j."InId",
-	j."InMaxQuantity",
-	j."InMinQuantity",
-	x."InMinQuantity",
-	x."InMaxQuantity"
+	t1."InId",
+	e."InId",
+	t1."InMinQuantity",
+	e."InMinQuantity",
+	t1."InMaxQuantity",
+	e."InMaxQuantity"
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 1 AND ROWNUM <= :take
+	t1."InId" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId",
-	j."InId",
-	j."InMaxQuantity",
-	j."InMinQuantity",
-	x."InMinQuantity",
-	x."InMaxQuantity"
+	t1."InId",
+	e."InId",
+	t1."InMinQuantity",
+	e."InMinQuantity",
+	t1."InMaxQuantity",
+	e."InMaxQuantity"
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 2 AND ROWNUM <= :take
+	t1."InId" = 2 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

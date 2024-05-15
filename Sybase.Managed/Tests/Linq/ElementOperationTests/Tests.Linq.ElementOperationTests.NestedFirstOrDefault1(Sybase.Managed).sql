@@ -3,7 +3,7 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
+SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM

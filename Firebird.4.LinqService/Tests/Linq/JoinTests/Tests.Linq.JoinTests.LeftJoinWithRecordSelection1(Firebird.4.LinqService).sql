@@ -159,12 +159,12 @@ BeforeExecute
 
 SELECT
 	"fact_1"."Id",
-	"tagGroup"."Id",
-	"tagGroup"."FactId",
-	"tagGroup"."Name"
+	"leftTag"."Id",
+	"leftTag"."FactId",
+	"leftTag"."Name"
 FROM
 	"Fact" "fact_1"
-		LEFT JOIN "Tag" "tagGroup" ON "fact_1"."Id" = "tagGroup"."FactId"
+		LEFT JOIN "Tag" "leftTag" ON "fact_1"."Id" = "leftTag"."FactId"
 WHERE
 	"fact_1"."Id" > 3
 ORDER BY

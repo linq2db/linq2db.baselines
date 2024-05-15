@@ -2,9 +2,9 @@
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND N'123[456' LIKE N'%~[%' ESCAPE N'~'
+	[p].[PersonID] = 1
 

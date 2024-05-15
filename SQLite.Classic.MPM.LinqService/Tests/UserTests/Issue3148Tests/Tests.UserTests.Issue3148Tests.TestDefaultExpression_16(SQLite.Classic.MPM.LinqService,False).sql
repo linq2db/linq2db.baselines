@@ -1,26 +1,30 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @p  -- Object
+SET     @p = NULL
 
 SELECT
-	[selectParam].[LastName],
+	[g_1].[LastName],
 	0,
 	NULL,
-	Coalesce(NULL, 'M')
+	@p
 FROM
-	[Person] [selectParam]
+	[Person] [g_1]
 GROUP BY
-	[selectParam].[LastName]
+	[g_1].[LastName]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @p  -- Object
+SET     @p = NULL
 
 SELECT
-	[selectParam].[LastName],
+	[g_1].[LastName],
 	0,
 	NULL,
-	Coalesce(NULL, 'M')
+	@p
 FROM
-	[Person] [selectParam]
+	[Person] [g_1]
 GROUP BY
-	[selectParam].[LastName]
+	[g_1].[LastName]
 

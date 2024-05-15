@@ -41,14 +41,14 @@ INSERT INTO "TestFbTypesTable"
 VALUES
 (
 	1,
-	@Int128
+	CAST(@Int128 AS INT128)
 )
 
 BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestFbTypesTable" "t1"
 WHERE

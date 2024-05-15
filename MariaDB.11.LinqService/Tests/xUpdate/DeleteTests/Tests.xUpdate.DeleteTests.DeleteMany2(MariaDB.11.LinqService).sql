@@ -137,48 +137,48 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_2`
+DELETE   `a_GrandChildren`
 FROM
 	`Parent` `p`
-		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
-		INNER JOIN `GrandChild` `c_2` ON `c_1`.`ParentID` = `c_2`.`ParentID` AND `c_1`.`ChildID` = `c_2`.`ChildID`
+		INNER JOIN `Child` `a_Children` ON `p`.`ParentID` = `a_Children`.`ParentID`
+		INNER JOIN `GrandChild` `a_GrandChildren` ON `a_Children`.`ParentID` = `a_GrandChildren`.`ParentID` AND `a_Children`.`ChildID` = `a_GrandChildren`.`ChildID`
 WHERE
 	`p`.`ParentID` >= 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `c_1`
+DELETE   `a_Children`
 FROM
 	`Parent` `p`
-		INNER JOIN `Child` `c_1` ON `p`.`ParentID` = `c_1`.`ParentID`
+		INNER JOIN `Child` `a_Children` ON `p`.`ParentID` = `a_Children`.`ParentID`
 WHERE
 	`p`.`ParentID` >= 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`GrandChild` `t1`
+	`GrandChild`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`GrandChild`.`ParentID` >= 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Child` `t1`
+	`Child`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`Child`.`ParentID` >= 1000
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`Parent` `t1`
+	`Parent`
 WHERE
-	`t1`.`ParentID` >= 1000
+	`Parent`.`ParentID` >= 1000
 

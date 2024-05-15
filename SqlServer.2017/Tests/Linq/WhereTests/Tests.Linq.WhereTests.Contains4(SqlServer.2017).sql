@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] IN (1, 2) OR 1 = 0)
+	[p].[ParentID] IN (1, 2)
 

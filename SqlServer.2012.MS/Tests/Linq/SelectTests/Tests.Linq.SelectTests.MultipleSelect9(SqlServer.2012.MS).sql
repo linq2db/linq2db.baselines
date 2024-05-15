@@ -2,8 +2,8 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[p5].[PersonID],
-	[p5].[FirstName]
+	([p2].[PersonID] * 2) / 2,
+	[p2].[FirstName]
 FROM
-	[Person] [p5]
+	[Person] [p2]
 

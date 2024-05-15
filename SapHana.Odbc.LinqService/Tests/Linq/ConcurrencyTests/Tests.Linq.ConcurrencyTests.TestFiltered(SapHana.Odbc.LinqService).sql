@@ -57,13 +57,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyFiltered"
+	"ConcurrencyFiltered" "r"
 SET
-	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = ?
+	"Stamp" = "r"."Stamp" + 1,
+	"Value" = ?
 WHERE
-	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = ? AND
-	"ConcurrencyFiltered"."Stamp" = ?
+	"r"."Id" = 2 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -85,13 +84,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyFiltered"
+	"ConcurrencyFiltered" "r"
 SET
-	"ConcurrencyFiltered"."Stamp" = "ConcurrencyFiltered"."Stamp" + 1,
-	"ConcurrencyFiltered"."Value" = ?
+	"Stamp" = "r"."Stamp" + 1,
+	"Value" = ?
 WHERE
-	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = ? AND
-	"ConcurrencyFiltered"."Stamp" = ?
+	"r"."Id" = 1 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

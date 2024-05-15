@@ -36,16 +36,14 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -53,26 +51,22 @@ DECLARE @BlobValue VarBinary(100) -- Binary
 SET     @BlobValue = 0x030201
 
 UPDATE
-	[_]
+	[BlobClass]
 SET
-	[_].[BlobValue] = @BlobValue
-FROM
-	[BlobClass] [_]
+	[BlobValue] = @BlobValue
 WHERE
-	[_].[Id] = 1
+	[BlobClass].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

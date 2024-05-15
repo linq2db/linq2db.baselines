@@ -41,7 +41,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -53,7 +53,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'negative'
 	)
 
@@ -76,7 +76,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 MERGE INTO "Patient" "t1"
-USING (SELECT @id AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
@@ -88,7 +88,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@id,
+		CAST(@id AS Int),
 		'positive'
 	)
 

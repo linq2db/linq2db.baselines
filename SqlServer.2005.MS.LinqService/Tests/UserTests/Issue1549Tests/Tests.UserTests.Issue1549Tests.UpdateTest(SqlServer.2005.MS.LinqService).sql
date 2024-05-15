@@ -96,32 +96,32 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 UPDATE
-	[t1]
+	[t3]
 SET
-	[t1].[DevReadingTypeId] = (
-		SELECT TOP (@take)
-			[w].[Id]
-		FROM
-			[billing_DevReadingType] [w]
-		WHERE
-			[w].[Name] = [t1].[ReadingTypeName] AND [w].[DevTypeId] = [t1].[Devtypeid]
-	),
-	[t1].[Responsibility] = (
-		SELECT TOP (@take_1)
-			[w_1].[Responsibility]
-		FROM
-			[billing_DevReadingType] [w_1]
-		WHERE
-			[w_1].[Name] = [t1].[ReadingTypeName] AND [w_1].[DevTypeId] = [t1].[Devtypeid]
-	)
+	[t3].[DevReadingTypeId] = [t1].[Id],
+	[t3].[Responsibility] = [t2].[Responsibility]
 FROM
-	[billing_TempReading] [t1]
+	[billing_TempReading] [t3]
+		LEFT JOIN (
+			SELECT
+				[w].[Id],
+				ROW_NUMBER() OVER (PARTITION BY [w].[Name], [w].[DevTypeId] ORDER BY [w].[Name]) as [rn],
+				[w].[Name],
+				[w].[DevTypeId]
+			FROM
+				[billing_DevReadingType] [w]
+		) [t1] ON [t1].[Name] = [t3].[ReadingTypeName] AND [t1].[DevTypeId] = [t3].[Devtypeid] AND [t1].[rn] <= 1
+		LEFT JOIN (
+			SELECT
+				[w_1].[Responsibility],
+				ROW_NUMBER() OVER (PARTITION BY [w_1].[Name], [w_1].[DevTypeId] ORDER BY [w_1].[Name]) as [rn],
+				[w_1].[Name],
+				[w_1].[DevTypeId]
+			FROM
+				[billing_DevReadingType] [w_1]
+		) [t2] ON [t2].[Name] = [t3].[ReadingTypeName] AND [t2].[DevTypeId] = [t3].[Devtypeid] AND [t2].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

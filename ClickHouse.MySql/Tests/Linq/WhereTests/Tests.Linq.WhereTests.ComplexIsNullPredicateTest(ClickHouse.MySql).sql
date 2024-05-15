@@ -7,31 +7,18 @@ SELECT
 			SELECT
 				*
 			FROM
-				Person _
+				Person t1
 			WHERE
-				(CASE
-					WHEN _.MiddleName = '123' THEN toUInt8(1)
-					ELSE toUInt8(0)
+				CASE
+					WHEN t1.MiddleName = '123' THEN true
+					ELSE false
 				END = CASE
-					WHEN CASE
-						WHEN _.MiddleName = '1' THEN 'test'
-						ELSE _.MiddleName
-					END = 'test'
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
-				END OR CASE
-					WHEN _.MiddleName = '123' THEN toUInt8(1)
-					ELSE toUInt8(0)
-				END IS NULL AND CASE
-					WHEN CASE
-						WHEN _.MiddleName = '1' THEN 'test'
-						ELSE _.MiddleName
-					END = 'test'
-						THEN toUInt8(1)
-					ELSE toUInt8(0)
-				END IS NULL)
+					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
+						THEN true
+					ELSE false
+				END
 		)
-			THEN toUInt8(1)
-		ELSE toUInt8(0)
+			THEN true
+		ELSE false
 	END
 
