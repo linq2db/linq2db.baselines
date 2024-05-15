@@ -508,7 +508,7 @@ FROM
 			"OrderByDistinctData" "t1"
 		ORDER BY
 			"t1"."OrderData2"
-		FETCH FIRST 3 ROWS ONLY
+		FETCH NEXT 3 ROWS ONLY
 	) "q2"
 		INNER JOIN "OrderByDistinctData" "q1" ON "q1"."Id" = "q2"."Id"
 ORDER BY

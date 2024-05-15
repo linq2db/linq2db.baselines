@@ -61,13 +61,15 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @i Integer(4) -- Int32
+SET     @i = 0
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis))
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
 	t1.PersonID = @id
 

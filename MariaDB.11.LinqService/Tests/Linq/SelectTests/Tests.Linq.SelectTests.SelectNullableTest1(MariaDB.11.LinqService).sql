@@ -71,9 +71,9 @@ LIMIT 1
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DELETE   `t1`
+DELETE  
 FROM
-	`LinqDataTypes` `t1`
+	`LinqDataTypes`
 WHERE
-	`t1`.`ID` = 1000
+	`LinqDataTypes`.`ID` = 1000
 
