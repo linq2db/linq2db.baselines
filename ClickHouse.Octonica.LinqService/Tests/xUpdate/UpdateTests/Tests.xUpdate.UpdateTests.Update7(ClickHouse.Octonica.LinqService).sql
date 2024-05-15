@@ -3,13 +3,13 @@
 
 INSERT INTO Parent
 (
-	Value1,
-	ParentID
+	ParentID,
+	Value1
 )
 VALUES
 (
-	1,
-	1001
+	1001,
+	1
 )
 
 BeforeExecute

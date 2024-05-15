@@ -2,10 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	CASE
-		WHEN left_2.ParentID IS NOT NULL THEN left_2.ParentID
-		ELSE NULL
-	END,
+	left_2.ParentID,
 	right_2.ParentID
 FROM
 	(
@@ -28,8 +25,5 @@ FROM
 				right_1.ParentID <> 1
 		) right_2 ON (right_2.c1 = left_2.Value1 OR right_2.c1 IS NULL AND left_2.Value1 IS NULL)
 ORDER BY
-	CASE
-		WHEN left_2.ParentID IS NOT NULL THEN left_2.ParentID
-		ELSE NULL
-	END
+	left_2.ParentID
 
