@@ -11,7 +11,7 @@ FROM
 	[Person] [m_1]
 		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	UCase([m_1].[FirstName]) LIKE @p
+	LCase([m_1].[FirstName]) LIKE @p
 
 BeforeExecute
 -- Access AccessOleDb
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	UCase([p].[FirstName]) LIKE @p
+	LCase([p].[FirstName]) LIKE @p
 
