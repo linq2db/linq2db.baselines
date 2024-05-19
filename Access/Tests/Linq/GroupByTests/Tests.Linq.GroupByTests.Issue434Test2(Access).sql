@@ -11,7 +11,7 @@ FROM
 	[Person] [m_1]
 		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	LCase([m_1].[FirstName]) LIKE '%test%'
+	UCase([m_1].[FirstName]) LIKE '%test%'
 
 BeforeExecute
 DisposeTransaction
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) LIKE '%test%'
+	UCase([p].[FirstName]) LIKE '%test%'
 

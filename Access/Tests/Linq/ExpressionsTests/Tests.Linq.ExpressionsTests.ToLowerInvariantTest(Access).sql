@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Doctor] [p]
 WHERE
-	LCase([p].[Taxonomy]) = 'psychiatry'
+	UCase([p].[Taxonomy]) = 'psychiatry'
 

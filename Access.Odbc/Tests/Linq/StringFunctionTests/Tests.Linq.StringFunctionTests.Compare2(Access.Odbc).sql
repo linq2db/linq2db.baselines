@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) > 'joh' AND [p].[PersonID] = 1
+	UCase([p].[FirstName]) > 'joh' AND [p].[PersonID] = 1
 
