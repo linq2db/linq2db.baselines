@@ -1,0 +1,164 @@
+﻿BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Fact`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Fact`
+(
+	`Id` INT NOT NULL,
+
+	CONSTRAINT `PK_Fact` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 3
+
+INSERT INTO `Fact`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 4
+
+INSERT INTO `Fact`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 5
+
+INSERT INTO `Fact`
+(
+	`Id`
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Tag`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Tag`
+(
+	`Id`     INT           NOT NULL,
+	`FactId` INT           NOT NULL,
+	`Name`   VARCHAR(4000) NOT NULL,
+
+	CONSTRAINT `PK_Tag` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @FactId Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
+
+INSERT INTO `Tag`
+(
+	`Id`,
+	`FactId`,
+	`Name`
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @FactId Int32
+SET     @FactId = 3
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag3'
+
+INSERT INTO `Tag`
+(
+	`Id`,
+	`FactId`,
+	`Name`
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @Id Int32
+SET     @Id = 3
+DECLARE @FactId Int32
+SET     @FactId = 4
+DECLARE @Name VarChar(4) -- String
+SET     @Name = 'Tag4'
+
+INSERT INTO `Tag`
+(
+	`Id`,
+	`FactId`,
+	`Name`
+)
+VALUES
+(
+	@Id,
+	@FactId,
+	@Name
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`f`.`Id`,
+	`ft`.`Id`,
+	`ft`.`FactId`,
+	`ft`.`Name`
+FROM
+	`Tag` `ft`
+		RIGHT JOIN `Fact` `f` ON `ft`.`FactId` = `f`.`Id`
+WHERE
+	`f`.`Id` > 3
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Tag`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Fact`
+
