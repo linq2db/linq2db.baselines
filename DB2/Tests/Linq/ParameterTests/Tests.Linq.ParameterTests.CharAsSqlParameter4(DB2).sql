@@ -1,7 +1,0 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	'--'
-FROM SYSIBM.SYSDUMMY1
-
