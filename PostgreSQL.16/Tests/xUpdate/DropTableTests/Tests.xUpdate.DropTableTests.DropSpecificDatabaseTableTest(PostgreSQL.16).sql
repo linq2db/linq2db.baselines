@@ -32,7 +32,7 @@ CREATE TABLE "DropTableTest"
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-INSERT INTO testdata."public"."DropTableTest"
+INSERT INTO testdata.public."DropTableTest"
 (
 	"ID"
 )
@@ -47,12 +47,12 @@ BeforeExecute
 SELECT
 	t1."ID"
 FROM
-	testdata."public"."DropTableTest" t1
+	testdata.public."DropTableTest" t1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE testdata."public"."DropTableTest"
+DROP TABLE testdata.public."DropTableTest"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -60,5 +60,5 @@ BeforeExecute
 SELECT
 	t1."ID"
 FROM
-	testdata."public"."DropTableTest" t1
+	testdata.public."DropTableTest" t1
 
