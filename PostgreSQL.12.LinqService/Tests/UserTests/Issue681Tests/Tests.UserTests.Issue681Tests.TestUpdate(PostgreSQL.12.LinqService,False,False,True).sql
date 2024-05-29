@@ -31,11 +31,11 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
-	"public"."Issue681Table"
+	public."Issue681Table"
 SET
 	"Value" = :Value
 WHERE
-	"public"."Issue681Table"."ID" = :ID
+	public."Issue681Table"."ID" = :ID
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
