@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS "Issue681Table2"
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE "public"."Issue681Table2"
+CREATE TABLE public."Issue681Table2"
 (
 	"ID"    Int NOT NULL,
 	"Value" Int NOT NULL,
