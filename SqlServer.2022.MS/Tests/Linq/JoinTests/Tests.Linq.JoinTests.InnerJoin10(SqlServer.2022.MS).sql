@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ParentID],
+	[q1].[GrandChildID]
+FROM
+	[Parent] [t1]
+		INNER JOIN [GrandChild] [q1] ON [t1].[ParentID] = [q1].[ParentID]
+
