@@ -1,0 +1,14 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+
+SELECT
+	"p"."ParentID",
+	"p"."Value1"
+FROM
+	"Parent" "p"
+WHERE
+	"p"."ParentID" > 1
+ORDER BY
+	"p"."ParentID"
+OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
+
