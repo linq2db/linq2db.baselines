@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t_1.c1
+FROM
+	(
+		SELECT
+			Truncate(toFloat64(negate(t.MoneyValue))) as c1
+		FROM
+			LinqDataTypes t
+	) t_1
+WHERE
+	t_1.c1 <> toFloat64(0.10000000000000001)
+
