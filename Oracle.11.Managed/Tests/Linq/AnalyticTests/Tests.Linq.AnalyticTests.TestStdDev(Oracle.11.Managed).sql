@@ -1,0 +1,38 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	STDDEV(c_1."ChildID"),
+	STDDEV(c_1."ChildID"),
+	STDDEV(ALL c_1."ChildID"),
+	STDDEV(DISTINCT c_1."ChildID")
+FROM
+	"Parent" g_1
+		INNER JOIN "Child" c_1 ON g_1."ParentID" = c_1."ParentID"
+GROUP BY
+	g_1."ParentID"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	STDDEV(t1."ParentID")
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	STDDEV(ALL t1."ParentID")
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	STDDEV(DISTINCT t1."ParentID")
+FROM
+	"Child" t1
+
