@@ -1,0 +1,16 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+WHERE
+	(
+		SELECT TOP (1)
+			IIF([r].[Value1] IS NOT NULL, 1, 0)
+		FROM
+			[Parent] [r]
+	) = 1
+
