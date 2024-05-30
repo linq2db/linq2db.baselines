@@ -1,0 +1,25 @@
+﻿BeforeExecute
+-- SqlServer.2016
+
+CREATE TABLE [tempdb]..[#TempTable]
+(
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
+)
+
+BeforeExecute
+-- SqlServer.2016
+
+DROP TABLE [tempdb]..[#TempTable]
+
+BeforeExecute
+-- SqlServer.2016
+
+CREATE TABLE [tempdb]..[#TempTable]
+(
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
+)
+
