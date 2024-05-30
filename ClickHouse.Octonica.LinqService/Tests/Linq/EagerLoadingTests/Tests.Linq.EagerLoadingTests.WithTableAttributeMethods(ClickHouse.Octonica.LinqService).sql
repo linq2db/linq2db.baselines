@@ -1,0 +1,90 @@
+﻿BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS UserIssue3128
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+CREATE TABLE IF NOT EXISTS UserIssue3128
+(
+	Id Int32,
+
+	PRIMARY KEY (Id)
+)
+ENGINE = MergeTree()
+ORDER BY Id
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS UserDetailsIssue3128
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+CREATE TABLE IF NOT EXISTS UserDetailsIssue3128
+(
+	UserId Int32,
+	Age    Int32,
+
+	PRIMARY KEY (UserId)
+)
+ENGINE = MergeTree()
+ORDER BY UserId
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO UserIssue3128
+(
+	Id
+)
+VALUES
+(
+	10
+)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO UserDetailsIssue3128
+(
+	UserId,
+	Age
+)
+VALUES
+(
+	10,
+	18
+)
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	p.FirstName,
+	p.PersonID,
+	p.LastName,
+	p.MiddleName,
+	p.Gender
+FROM
+	Person p
+WHERE
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			UserIssue3128 t1
+	) > 0
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS UserDetailsIssue3128
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS UserIssue3128
+
