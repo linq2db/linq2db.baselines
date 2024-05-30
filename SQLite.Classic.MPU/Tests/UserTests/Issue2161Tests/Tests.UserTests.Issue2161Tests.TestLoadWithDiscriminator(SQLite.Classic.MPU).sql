@@ -1,0 +1,105 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Order]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [Order]
+(
+	[OrderId]   INTEGER       NOT NULL,
+	[OrderType] INTEGER       NOT NULL,
+	[OrderName] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_Order] PRIMARY KEY ([OrderId])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO [Order]
+(
+	[OrderId],
+	[OrderType],
+	[OrderName]
+)
+VALUES
+(1,0,'Order1')
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [OrderDetail]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+CREATE TABLE IF NOT EXISTS [OrderDetail]
+(
+	[OrderDetailId] INTEGER       NOT NULL,
+	[Title]         NVarChar(255)     NULL,
+	[OrderId]       INTEGER       NOT NULL,
+
+	CONSTRAINT [PK_OrderDetail] PRIMARY KEY ([OrderDetailId])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO [OrderDetail]
+(
+	[OrderDetailId],
+	[Title],
+	[OrderId]
+)
+VALUES
+(100,'Detail1',1)
+
+BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[m_1].[OrderId],
+	[d].[OrderDetailId],
+	[d].[Title],
+	[d].[OrderId]
+FROM
+	(
+		SELECT
+			[o].[OrderId]
+		FROM
+			[Order] [o]
+		WHERE
+			[o].[OrderId] = 1
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [OrderDetail] [d] ON [m_1].[OrderId] = [d].[OrderId]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[o].[OrderType],
+	[o].[OrderId],
+	[o].[OrderName]
+FROM
+	[Order] [o]
+WHERE
+	[o].[OrderId] = 1
+LIMIT 1
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [OrderDetail]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [Order]
+
