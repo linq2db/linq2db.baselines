@@ -1,0 +1,10 @@
+﻿BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	p.FirstName,
+	p.PersonID,
+	p.LastName
+FROM
+	Person p
+
