@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[t].[ParentID],
+	[t].[ChildID],
+	[i].[ParentID],
+	[i].[Value1]
+FROM
+	[Child] [t]
+		LEFT JOIN [Parent] [i] ON [t].[ParentID] = [i].[ParentID]
+

@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ParentID],
+	[childLeftJoin].[ChildID],
+	[grandChildLeftJoin].[GrandChildID]
+FROM
+	[Parent] [t1]
+		LEFT JOIN [GrandChild] [grandChildLeftJoin] ON [t1].[ParentID] = [grandChildLeftJoin].[ParentID]
+		LEFT JOIN [Child] [childLeftJoin] ON [t1].[ParentID] = [childLeftJoin].[ParentID]
+

@@ -1,0 +1,20 @@
+﻿BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Person" p
+WHERE
+	p."PersonID" = 1
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Person" p
+WHERE
+	1 = 0
+
