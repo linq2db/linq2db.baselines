@@ -41,7 +41,7 @@ FETCH NEXT 2 ROWS ONLY
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id1 Int32
-SET     @id1 = 194
+SET     @id1 = 1112
 
 DELETE FROM
 	SEQUENCETEST t1
