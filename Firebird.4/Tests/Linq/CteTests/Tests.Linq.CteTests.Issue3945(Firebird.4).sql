@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TestFolder"
 			(
-				"Id"       CHAR(16) CHARACTER SET OCTETS          NOT NULL,
+				"Id"       BINARY(16)                             NOT NULL,
 				"Label"    VarChar(255) CHARACTER SET UNICODE_FSS,
-				"ParentId" CHAR(16) CHARACTER SET OCTETS
+				"ParentId" BINARY(16)
 			)
 		';
 END
@@ -43,7 +43,7 @@ AS
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	CAST(@Guid1 AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@Guid1 AS BINARY(16)),
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"
