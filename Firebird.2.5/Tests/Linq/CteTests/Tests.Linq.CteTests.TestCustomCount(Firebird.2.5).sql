@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-WITH CTE_1 AS
+WITH CTE_1 ("ParentID", "ChildID")
+AS
 (
 	SELECT DISTINCT
 		"c_1"."ParentID",
