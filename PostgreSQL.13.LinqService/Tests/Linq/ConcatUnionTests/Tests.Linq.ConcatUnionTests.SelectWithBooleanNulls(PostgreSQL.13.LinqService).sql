@@ -24,7 +24,7 @@ SELECT
 			SELECT
 				*
 			FROM
-				"Child" t1
+				"Child" t2
 		) THEN True
 		ELSE False
 	END,
