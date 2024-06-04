@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'378619600F729045BD7E326BFB2297DC'
+SET     @Stamp = X'1DEDEF178375314DB7D6F9C997EEA3BD'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id  -- Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'A42F276FADEB204D945EA4EB06BCF1CE'
+SET     @Stamp = X'FA4E11CB70CE4245AE0EFD939DFE6841'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Binary(16)
-SET     @Stamp_1 = X'378619600F729045BD7E326BFB2297DC'
+SET     @Stamp_1 = X'1DEDEF178375314DB7D6F9C997EEA3BD'
 
 UPDATE
 	[ConcurrencyGuidBinary]
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'A3F3FA092477A94884E8263FF1613867'
+SET     @Stamp = X'F7D480195AC76D4A81480AE8EF1A56AC'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id  -- Int32
@@ -161,7 +161,7 @@ BeforeExecute
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'A42F276FADEB204D945EA4EB06BCF1CE'
+SET     @Stamp = X'FA4E11CB70CE4245AE0EFD939DFE6841'
 
 DELETE FROM
 	[ConcurrencyGuidBinary]
