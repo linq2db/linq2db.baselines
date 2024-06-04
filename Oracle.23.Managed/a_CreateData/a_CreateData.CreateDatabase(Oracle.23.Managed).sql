@@ -6,6 +6,12 @@ ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION=FALSE
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
+-- default is 300
+ALTER SYSTEM SET OPEN_CURSORS=1000
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
 -- Cleanup schema
 
 BEGIN
