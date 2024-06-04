@@ -149,6 +149,37 @@ END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table3"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table3"
+		(
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_Table3" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
 
