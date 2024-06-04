@@ -54,7 +54,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x036D0091BA473F4E950DD19A773534D0
+SET     @Stamp = 0x31263B86DDC8F346A57B70E9B9D8CF27
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -83,13 +83,13 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x65C06A82A9197841812A6BDF8B4BA903
+SET     @Stamp = 0x35209048C1CC704685123DBA4557D18E
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Binary(16)
-SET     @Stamp_1 = 0x036D0091BA473F4E950DD19A773534D0
+SET     @Stamp_1 = 0x31263B86DDC8F346A57B70E9B9D8CF27
 
 UPDATE
 	[ConcurrencyGuidBinary]
@@ -112,7 +112,7 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x953FD22C80FA0B4CB0454BBDEE702B5D
+SET     @Stamp = 0x938F79A46BCC8F4F9439B7B7B44B771F
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
@@ -166,7 +166,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x65C06A82A9197841812A6BDF8B4BA903
+SET     @Stamp = 0x35209048C1CC704685123DBA4557D18E
 
 DELETE FROM [ConcurrencyGuidBinary]
 FROM
