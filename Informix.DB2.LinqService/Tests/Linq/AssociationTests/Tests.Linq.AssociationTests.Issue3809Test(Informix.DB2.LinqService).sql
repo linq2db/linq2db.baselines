@@ -12,6 +12,7 @@ FROM
 		FROM
 			Parent a
 				LEFT JOIN Parent a_ParentTest ON a.ParentID = a_ParentTest.ParentID AND (a.Value1 = a_ParentTest.Value1 OR a.Value1 IS NULL AND a_ParentTest.Value1 IS NULL)
+				LEFT JOIN Parent a_ParentTest_1 ON a.ParentID = a_ParentTest_1.ParentID AND (a.Value1 = a_ParentTest_1.Value1 OR a.Value1 IS NULL AND a_ParentTest_1.Value1 IS NULL)
 		WHERE
 			(a_ParentTest.ParentID IS NULL OR EXISTS(
 				SELECT
@@ -32,10 +33,12 @@ BeforeExecute
 
 SELECT
 	a.ParentID,
-	a_ParentTest.ParentID
+	a_ParentTest.ParentID,
+	a_ParentTest_1.ParentID
 FROM
 	Parent a
 		LEFT JOIN Parent a_ParentTest ON a.ParentID = a_ParentTest.ParentID AND (a.Value1 = a_ParentTest.Value1 OR a.Value1 IS NULL AND a_ParentTest.Value1 IS NULL)
+		LEFT JOIN Parent a_ParentTest_1 ON a.ParentID = a_ParentTest_1.ParentID AND (a.Value1 = a_ParentTest_1.Value1 OR a.Value1 IS NULL AND a_ParentTest_1.Value1 IS NULL)
 WHERE
 	(a_ParentTest.ParentID IS NULL OR EXISTS(
 		SELECT
