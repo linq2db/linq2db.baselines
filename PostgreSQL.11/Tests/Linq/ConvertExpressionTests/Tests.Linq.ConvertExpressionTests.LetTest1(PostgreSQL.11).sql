@@ -2,7 +2,15 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID"
+	(
+		SELECT
+			"a_Children_1"."ParentID"
+		FROM
+			"Child" "a_Children_1"
+		WHERE
+			p."ParentID" = "a_Children_1"."ParentID"
+		LIMIT 1
+	)
 FROM
 	"Parent" p
 		LEFT JOIN LATERAL (
