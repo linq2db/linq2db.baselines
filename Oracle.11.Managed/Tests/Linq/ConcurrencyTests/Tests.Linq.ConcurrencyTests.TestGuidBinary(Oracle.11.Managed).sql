@@ -66,7 +66,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Stamp Raw(16) -- Binary
-SET     @Stamp = HEXTORAW('05049379CC119E45AB68E8EE3E54ECD8')
+SET     @Stamp = HEXTORAW('8449FAD4317D164F8C78FD51B997A030')
 DECLARE @Value Varchar2(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int32
@@ -95,13 +95,13 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Stamp Raw(16) -- Binary
-SET     @Stamp = HEXTORAW('659BCA77104B894090D11AF48F0916A5')
+SET     @Stamp = HEXTORAW('76D634D1D7CED442B87E8AFCBFAD70ED')
 DECLARE @Value Varchar2(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Raw(16) -- Binary
-SET     @Stamp_1 = HEXTORAW('05049379CC119E45AB68E8EE3E54ECD8')
+SET     @Stamp_1 = HEXTORAW('8449FAD4317D164F8C78FD51B997A030')
 
 UPDATE
 	"ConcurrencyGuidBinary" obj
@@ -124,7 +124,7 @@ FROM
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Stamp Raw(16) -- Binary
-SET     @Stamp = HEXTORAW('58BC7C6A3AE91F46AF2C04471533053E')
+SET     @Stamp = HEXTORAW('DDCD3A2DD733184EA62061FE1AE8F1DC')
 DECLARE @Value Varchar2(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int32
@@ -177,7 +177,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Raw(16) -- Binary
-SET     @Stamp = HEXTORAW('659BCA77104B894090D11AF48F0916A5')
+SET     @Stamp = HEXTORAW('76D634D1D7CED442B87E8AFCBFAD70ED')
 
 DELETE FROM
 	"ConcurrencyGuidBinary" obj
