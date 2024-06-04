@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-WITH [CTE_1] AS
+WITH [CTE_1] ([ParentID], [ChildID])
+AS
 (
 	SELECT DISTINCT
 		[c_1].[ParentID],
