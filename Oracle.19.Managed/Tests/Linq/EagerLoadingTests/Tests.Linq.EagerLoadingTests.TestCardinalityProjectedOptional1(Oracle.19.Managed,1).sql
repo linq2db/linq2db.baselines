@@ -189,12 +189,14 @@ BeforeExecute
 SELECT
 	e."Id",
 	a_ObjectBOptional."Id",
+	a_ObjectBOptional_1."Id",
 	a_ObjectC."Id",
 	a_ObjectC.FK
 FROM
 	"EntityA" e
 		LEFT JOIN "EntityB" a_ObjectBOptional ON e.FK = a_ObjectBOptional."Id"
-		LEFT JOIN "EntityC" a_ObjectC ON a_ObjectBOptional.FK = a_ObjectC."Id"
+		LEFT JOIN "EntityB" a_ObjectBOptional_1 ON e.FK = a_ObjectBOptional_1."Id"
+		LEFT JOIN "EntityC" a_ObjectC ON a_ObjectBOptional_1.FK = a_ObjectC."Id"
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
