@@ -88,10 +88,11 @@ BeforeExecute
 SELECT
 	N'Id',
 	[it].[Id],
-	SUM([a_ActualStage].[Id])
+	SUM(IIF([a_ActualStage].[Id] IS NULL, NULL, [a_ActualStage_1].[Id]))
 FROM
 	[Task] [it]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+		LEFT JOIN [TaskStage] [a_ActualStage_1] ON [it].[Id] = [a_ActualStage_1].[TaskId] AND [a_ActualStage_1].[Actual] = 1
 GROUP BY
 	[it].[Id]
 
