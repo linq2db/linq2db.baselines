@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0x9FAF71712016894D9F3C442F4C713C38
+SET     @Stamp = 0x908EE764BB70FD45B31026795343AACB
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0xD6419AF375395F46BC01A2015F5C3487
+SET     @Stamp = 0xA5DF193FFE247C4BB0CCF506045B8A51
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Blob(16) -- Binary
-SET     @Stamp_1 = 0x9FAF71712016894D9F3C442F4C713C38
+SET     @Stamp_1 = 0x908EE764BB70FD45B31026795343AACB
 
 UPDATE
 	`ConcurrencyGuidBinary` `obj`
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0xB693345E78B6BA4C91C2753437C1FB6B
+SET     @Stamp = 0xD27A76FCC8D61A4BB7A8D2BF13FA2025
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int32
@@ -162,7 +162,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0xD6419AF375395F46BC01A2015F5C3487
+SET     @Stamp = 0xA5DF193FFE247C4BB0CCF506045B8A51
 
 DELETE  
 FROM
