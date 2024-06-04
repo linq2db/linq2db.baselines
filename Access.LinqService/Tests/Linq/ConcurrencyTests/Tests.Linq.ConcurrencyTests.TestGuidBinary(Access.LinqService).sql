@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = 0xFC69A28496524344923FB8B79A8B1E31
+SET     @Stamp = 0xEE50EF9CDF20034489F25CCE6482C63D
 DECLARE @Value VarWChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = 0x48577E653BDF3D4682F4FAECECF5FF68
+SET     @Stamp = 0xBA3CE8B26B74A047AA825681EA10AA3E
 DECLARE @Value VarWChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 VarBinary(16) -- Binary
-SET     @Stamp_1 = 0xFC69A28496524344923FB8B79A8B1E31
+SET     @Stamp_1 = 0xEE50EF9CDF20034489F25CCE6482C63D
 
 UPDATE
 	[ConcurrencyGuidBinary] [obj]
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = 0x0AA24153B861814C82170CC1A10BE4E7
+SET     @Stamp = 0x79A1F4B054B28144AF39DF5699D1EA84
 DECLARE @Value VarWChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
@@ -161,7 +161,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = 0x48577E653BDF3D4682F4FAECECF5FF68
+SET     @Stamp = 0xBA3CE8B26B74A047AA825681EA10AA3E
 
 DELETE FROM
 	[ConcurrencyGuidBinary] [obj]
