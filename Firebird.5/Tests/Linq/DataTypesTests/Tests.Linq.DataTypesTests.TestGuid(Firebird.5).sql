@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "GuidTable"
 			(
-				"Id"             Int                           NOT NULL,
-				"Column"         CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"ColumnNullable" CHAR(16) CHARACTER SET OCTETS
+				"Id"             Int        NOT NULL,
+				"Column"         BINARY(16) NOT NULL,
+				"ColumnNullable" BINARY(16)
 			)
 		';
 END
