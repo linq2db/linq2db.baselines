@@ -58,7 +58,7 @@ FROM
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'4EE1196E7B68C74CA21F36453DCABD12'
+SET     @Stamp = X'C8D0941D36A6384B96C7351072128A19'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -87,13 +87,13 @@ FROM
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'A00ED6C356B77C44A14246DF63D59683'
+SET     @Stamp = X'12C16527F88BA7479E7C33F7DB94DBCB'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Binary(16)
-SET     @Stamp_1 = X'4EE1196E7B68C74CA21F36453DCABD12'
+SET     @Stamp_1 = X'C8D0941D36A6384B96C7351072128A19'
 
 UPDATE
 	"ConcurrencyGuidBinary" "obj"
@@ -116,7 +116,7 @@ FROM
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'84B43175E3417E45A834D77AB83ED1CD'
+SET     @Stamp = X'F3C3E84632032148A04BB4663EB3AAA7'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
@@ -169,7 +169,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Binary(16)
-SET     @Stamp = X'A00ED6C356B77C44A14246DF63D59683'
+SET     @Stamp = X'12C16527F88BA7479E7C33F7DB94DBCB'
 
 DELETE FROM
 	"ConcurrencyGuidBinary" "obj"
