@@ -6,7 +6,6 @@ SELECT
 	[x].[ChildID]
 FROM
 	[Child] [x]
-		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_GrandChildren].[ParentID],
@@ -17,6 +16,7 @@ FROM
 			WHERE
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
+		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_GrandChildren_1].[ParentID],
@@ -29,7 +29,7 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL)) AND
+	NOT (([t2].[ParentID] = [t1].[ParentID] OR [t2].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND ([t2].[ChildID] = [t1].[ChildID] OR [t2].[ChildID] IS NULL AND [t1].[ChildID] IS NULL) AND ([t2].[GrandChildID] = [t1].[GrandChildID] OR [t2].[GrandChildID] IS NULL AND [t1].[GrandChildID] IS NULL)) AND
 	[x].[ParentID] <> (
 		SELECT TOP (1)
 			CASE
@@ -50,7 +50,6 @@ SELECT
 	[x].[ChildID]
 FROM
 	[Child] [x]
-		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_GrandChildren].[ParentID],
@@ -61,6 +60,7 @@ FROM
 			WHERE
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
+		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_GrandChildren_1].[ParentID],
@@ -73,7 +73,7 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL)) AND
+	NOT (([t2].[ParentID] = [t1].[ParentID] OR [t2].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND ([t2].[ChildID] = [t1].[ChildID] OR [t2].[ChildID] IS NULL AND [t1].[ChildID] IS NULL) AND ([t2].[GrandChildID] = [t1].[GrandChildID] OR [t2].[GrandChildID] IS NULL AND [t1].[GrandChildID] IS NULL)) AND
 	[x].[ParentID] <> (
 		SELECT TOP (1)
 			CASE
