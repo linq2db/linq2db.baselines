@@ -58,7 +58,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = BX'DAA4249930D574409CA628F1CA3BDB84'
+SET     @Stamp = BX'352D8B7129B11B49A510658598C838C8'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer(4) -- Int32
@@ -87,13 +87,13 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = BX'60EA56494B8B1A4BAD1B5E25F10226F8'
+SET     @Stamp = BX'C17513E673307A459AB4CF23F4D68510'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 VarBinary(16) -- Binary
-SET     @Stamp_1 = BX'DAA4249930D574409CA628F1CA3BDB84'
+SET     @Stamp_1 = BX'352D8B7129B11B49A510658598C838C8'
 
 UPDATE
 	"ConcurrencyGuidBinary" "obj"
@@ -116,7 +116,7 @@ FROM
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = BX'5476B3BA51F9DF459D51B2AA9DDB402A'
+SET     @Stamp = BX'DB0314541B16B448BD5F8E25B92E9F8A'
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer(4) -- Int32
@@ -169,7 +169,7 @@ BeforeExecute
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp VarBinary(16) -- Binary
-SET     @Stamp = BX'60EA56494B8B1A4BAD1B5E25F10226F8'
+SET     @Stamp = BX'C17513E673307A459AB4CF23F4D68510'
 
 DELETE FROM
 	"ConcurrencyGuidBinary" "obj"
