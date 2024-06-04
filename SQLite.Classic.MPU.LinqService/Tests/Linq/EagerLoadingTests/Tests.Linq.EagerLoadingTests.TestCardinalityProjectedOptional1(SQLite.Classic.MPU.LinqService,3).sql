@@ -671,7 +671,7 @@ FROM
 			[EntityA] [e]
 				LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
 	) [m_1]
-		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK] OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL)
+		INNER JOIN [EntityD] [d] ON [m_1].[Id] IS NOT NULL AND ([m_1].[Id] = [d].[FK] OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -679,12 +679,14 @@ BeforeExecute
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],
+	[a_ObjectBOptional_1].[Id],
 	[a_ObjectC].[Id],
 	[a_ObjectC].[FK]
 FROM
 	[EntityA] [e]
 		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
-		LEFT JOIN [EntityC] [a_ObjectC] ON [a_ObjectBOptional].[FK] = [a_ObjectC].[Id]
+		LEFT JOIN [EntityB] [a_ObjectBOptional_1] ON [e].[FK] = [a_ObjectBOptional_1].[Id]
+		LEFT JOIN [EntityC] [a_ObjectC] ON [a_ObjectBOptional_1].[FK] = [a_ObjectC].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

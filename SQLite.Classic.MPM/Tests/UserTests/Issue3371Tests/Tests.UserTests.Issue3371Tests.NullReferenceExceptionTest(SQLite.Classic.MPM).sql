@@ -58,10 +58,11 @@ BeforeExecute
 SELECT
 	[item_1].[Id],
 	[a_PayRate].[Id],
-	[a_PayRate].[Name]
+	[a_PayRate_1].[Name]
 FROM
 	[Employees] [item_1]
 		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+		LEFT JOIN [PayRate] [a_PayRate_1] ON [item_1].[PayRateId] = [a_PayRate_1].[Id]
 WHERE
 	[a_PayRate].[Name] = 'test'
 
