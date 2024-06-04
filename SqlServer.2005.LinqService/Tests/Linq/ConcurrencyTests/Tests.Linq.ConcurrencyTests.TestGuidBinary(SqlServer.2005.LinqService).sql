@@ -52,7 +52,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x79DD6E9640A7FF429BFFE645FB6E730B
+SET     @Stamp = 0x952F4CAC10FFBE41ABE77F44F77BB0E9
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 1'
 DECLARE @Id Int -- Int32
@@ -81,13 +81,13 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0xE3A5040D91DDDA458D1B0C01237DE2CA
+SET     @Stamp = 0x1E546A16F59B6E45862B5F4326B2A055
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 2'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Binary(16)
-SET     @Stamp_1 = 0x79DD6E9640A7FF429BFFE645FB6E730B
+SET     @Stamp_1 = 0x952F4CAC10FFBE41ABE77F44F77BB0E9
 
 UPDATE
 	[ConcurrencyGuidBinary]
@@ -110,7 +110,7 @@ FROM
 BeforeExecute
 -- SqlServer.2005
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0x68642C8D94CBED488E1A9E5906D649CD
+SET     @Stamp = 0xC614628EA128044391DBEC74B187AABE
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 3'
 DECLARE @Id Int -- Int32
@@ -164,7 +164,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Binary(16)
-SET     @Stamp = 0xE3A5040D91DDDA458D1B0C01237DE2CA
+SET     @Stamp = 0x1E546A16F59B6E45862B5F4326B2A055
 
 DELETE [obj]
 FROM
