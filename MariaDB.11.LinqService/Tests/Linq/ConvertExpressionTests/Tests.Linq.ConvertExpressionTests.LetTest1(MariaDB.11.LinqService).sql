@@ -2,7 +2,15 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t1`.`ParentID`
+	(
+		SELECT
+			`a_Children_1`.`ParentID`
+		FROM
+			`Child` `a_Children_1`
+		WHERE
+			`p`.`ParentID` = `a_Children_1`.`ParentID`
+		LIMIT 1
+	)
 FROM
 	`Parent` `p`
 		LEFT JOIN (
