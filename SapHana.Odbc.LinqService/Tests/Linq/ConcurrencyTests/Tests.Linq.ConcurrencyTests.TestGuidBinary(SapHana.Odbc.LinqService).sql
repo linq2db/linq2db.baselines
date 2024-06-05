@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = x'DE966CFE5966C7449DD9A53D238D6218'
+SET     @Stamp = x'6C34CC2275FA3A4EA7B0A3B21F297CB9'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id  -- Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = x'3532101DCB977F4D9EA6BE06689F5A88'
+SET     @Stamp = x'DA5827D6F4A6BA46B5BA920C0EBB5472'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = x'DE966CFE5966C7449DD9A53D238D6218'
+SET     @Stamp = x'6C34CC2275FA3A4EA7B0A3B21F297CB9'
 
 UPDATE
 	"ConcurrencyGuidBinary" "obj"
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = x'BD436275E6112D4198109C20DF6BE9AF'
+SET     @Stamp = x'DFAD0F670FFA3C4D8222C7DBB622CA12'
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id  -- Int32
@@ -161,7 +161,7 @@ BeforeExecute
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = x'3532101DCB977F4D9EA6BE06689F5A88'
+SET     @Stamp = x'DA5827D6F4A6BA46B5BA920C0EBB5472'
 
 DELETE FROM
 	"ConcurrencyGuidBinary" "obj"
