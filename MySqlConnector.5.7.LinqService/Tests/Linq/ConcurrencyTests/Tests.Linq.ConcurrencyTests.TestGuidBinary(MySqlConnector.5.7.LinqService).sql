@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0x366BF90EB2A8F94FA81DC67A6A34FBCF
+SET     @Stamp = 0x8C620DCD9EA0F441BEB392407A5545F8
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0xD757C9EDD5F56249A123FB9D8EC05ACF
+SET     @Stamp = 0x196700F67C2AAD46AEDF8419C3F1C7C6
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Blob(16) -- Binary
-SET     @Stamp_1 = 0x366BF90EB2A8F94FA81DC67A6A34FBCF
+SET     @Stamp_1 = 0x8C620DCD9EA0F441BEB392407A5545F8
 
 UPDATE
 	`ConcurrencyGuidBinary` `obj`
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0x020DA580D642724A84BF9606D909469C
+SET     @Stamp = 0xAC80A0F13DA93E498C79BB40A45CDF03
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int32
@@ -162,7 +162,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Blob(16) -- Binary
-SET     @Stamp = 0xD757C9EDD5F56249A123FB9D8EC05ACF
+SET     @Stamp = 0x196700F67C2AAD46AEDF8419C3F1C7C6
 
 DELETE  
 FROM
