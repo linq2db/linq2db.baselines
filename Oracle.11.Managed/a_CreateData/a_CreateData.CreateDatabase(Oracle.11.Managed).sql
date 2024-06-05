@@ -7,7 +7,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 -- default is 300
-ALTER SYSTEM SET OPEN_CURSORS=1000
+ALTER SYSTEM SET OPEN_CURSORS=2000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
