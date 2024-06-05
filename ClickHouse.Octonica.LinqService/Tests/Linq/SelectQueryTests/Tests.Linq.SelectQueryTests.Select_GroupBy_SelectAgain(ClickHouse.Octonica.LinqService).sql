@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	COUNT(*) OVER(),
+	summary.c1,
 	summary.LastName,
 	summary.Count_1,
 	summary.MAX_1
@@ -11,7 +11,8 @@ FROM
 		SELECT
 			COUNT(*) as Count_1,
 			group_1.LastName as LastName,
-			maxOrNull(group_1.FirstName) as MAX_1
+			maxOrNull(group_1.FirstName) as MAX_1,
+			COUNT(*) OVER() as c1
 		FROM
 			Person group_1
 		GROUP BY
