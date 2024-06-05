@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Stamp Bytea(16) -- Binary
-SET     @Stamp = E'\\xC8F60F1265BC3E418D1E4F6C362718B3'::bytea
+SET     @Stamp = E'\\x3D9D48B83C6FB44B8AD05D35F408E641'::bytea
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Stamp Bytea(16) -- Binary
-SET     @Stamp = E'\\xBE8280E4EA5BD54994C618985D6A141A'::bytea
+SET     @Stamp = E'\\xB974A1B41326D6449C8C3843EFEC1CD2'::bytea
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp_1 Bytea(16) -- Binary
-SET     @Stamp_1 = E'\\xC8F60F1265BC3E418D1E4F6C362718B3'::bytea
+SET     @Stamp_1 = E'\\x3D9D48B83C6FB44B8AD05D35F408E641'::bytea
 
 UPDATE
 	"ConcurrencyGuidBinary"
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @Stamp Bytea(16) -- Binary
-SET     @Stamp = E'\\xE84C4DA77711E04EBAB4C2E8BEA3ADE4'::bytea
+SET     @Stamp = E'\\x503155834E4C1E4F95B0FA2B8C9A74BF'::bytea
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
@@ -161,7 +161,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Bytea(16) -- Binary
-SET     @Stamp = E'\\xBE8280E4EA5BD54994C618985D6A141A'::bytea
+SET     @Stamp = E'\\xB974A1B41326D6449C8C3843EFEC1CD2'::bytea
 
 DELETE FROM
 	"ConcurrencyGuidBinary" obj
