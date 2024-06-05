@@ -50,7 +50,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = 0x58033EAFA1F9224A9D2D07E3CA149E48
+SET     @Stamp = 0x331B6AD9D7313043AB7355B19FD93E2F
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int -- Int32
@@ -79,13 +79,13 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = 0x59D508242D7B8240A89E03DF13E45BF2
+SET     @Stamp = 0x560F1C88D767EA4A9502200A4E0B7A9C
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = 0x58033EAFA1F9224A9D2D07E3CA149E48
+SET     @Stamp = 0x331B6AD9D7313043AB7355B19FD93E2F
 
 UPDATE
 	[ConcurrencyGuidBinary] [obj]
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = 0x42EBAF986FB2F543BD0B8ACBD75E509A
+SET     @Stamp = 0xAEE48665005237458B333F113568392F
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int -- Int32
@@ -161,7 +161,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp NVarChar(16) -- String
-SET     @Stamp = 0x59D508242D7B8240A89E03DF13E45BF2
+SET     @Stamp = 0x560F1C88D767EA4A9502200A4E0B7A9C
 
 DELETE FROM
 	[ConcurrencyGuidBinary] [obj]
