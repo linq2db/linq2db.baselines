@@ -7,7 +7,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 -- default is 300
-ALTER SYSTEM SET OPEN_CURSORS=8000
+ALTER SYSTEM SET OPEN_CURSORS=10000 SID='*' SCOPE=BOTH
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
