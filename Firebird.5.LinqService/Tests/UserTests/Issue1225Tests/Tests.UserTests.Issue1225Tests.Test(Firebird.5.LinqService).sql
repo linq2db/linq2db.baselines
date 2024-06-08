@@ -102,14 +102,10 @@ BeforeExecute
 SELECT
 	'Id',
 	"it"."Id",
-	SUM(CASE
-		WHEN "a_ActualStage"."Id" IS NULL THEN NULL
-		ELSE "a_ActualStage_1"."Id"
-	END)
+	SUM("a_ActualStage"."Id")
 FROM
 	"Task" "it"
 		LEFT JOIN "TaskStage" "a_ActualStage" ON "it"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = TRUE
-		LEFT JOIN "TaskStage" "a_ActualStage_1" ON "it"."Id" = "a_ActualStage_1"."TaskId" AND "a_ActualStage_1"."Actual" = TRUE
 GROUP BY
 	"it"."Id"
 
