@@ -169,7 +169,6 @@ BeforeExecute
 
 SELECT
 	[e].[Id],
-	[a_ObjectBOptional].[Id],
 	[a_ObjectBOptional].[Id]
 FROM
 	[EntityA] [e]
