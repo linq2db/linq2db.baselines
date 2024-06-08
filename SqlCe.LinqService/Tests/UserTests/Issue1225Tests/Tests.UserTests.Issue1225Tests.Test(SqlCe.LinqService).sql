@@ -86,14 +86,10 @@ BeforeExecute
 SELECT
 	'Id' as [Name],
 	[it].[Id] as [Value_1],
-	SUM(CASE
-		WHEN [a_ActualStage].[Id] IS NULL THEN NULL
-		ELSE [a_ActualStage_1].[Id]
-	END) as [SUM_1]
+	SUM([a_ActualStage].[Id]) as [SUM_1]
 FROM
 	[Task] [it]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-		LEFT JOIN [TaskStage] [a_ActualStage_1] ON [it].[Id] = [a_ActualStage_1].[TaskId] AND [a_ActualStage_1].[Actual] = 1
 GROUP BY
 	[it].[Id]
 

@@ -678,8 +678,7 @@ BeforeExecute
 
 SELECT
 	[e].[Id],
-	[a_ObjectBOptional].[Id] as [Id_1],
-	[a_ObjectBOptional].[Id] as [Id_2]
+	[a_ObjectBOptional].[Id] as [Id_1]
 FROM
 	[EntityA] [e]
 		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]

@@ -3,22 +3,21 @@
 
 SELECT
 	[t1].[ParentID],
-	[t2].[ParentID] as [ParentID_1],
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				[Child] [c_5]
+				[Child] [c_4]
 			WHERE
-				[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
+				[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
 		)
 			THEN 1
 		ELSE 0
 	END as [Any_1],
-	[t3].[COUNT_1],
-	[t4].[ParentID] as [ParentID_2],
-	[t4].[ChildID]
+	[t2].[COUNT_1],
+	[t3].[ParentID] as [ParentID_1],
+	[t3].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -33,33 +32,22 @@ FROM
 				[c_1].[ChildID]
 		) [t1]
 		OUTER APPLY (
-			SELECT TOP (1)
-				[c_2].[ParentID]
+			SELECT
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [c_2]
 			WHERE
-				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100 AND
-				[c_2].[ParentID] > 0
-			ORDER BY
-				[c_2].[ChildID]
+				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
 		) [t2]
 		OUTER APPLY (
-			SELECT
-				COUNT(*) as [COUNT_1]
+			SELECT TOP (1)
+				[c_3].[ParentID],
+				[c_3].[ChildID]
 			FROM
 				[Child] [c_3]
 			WHERE
 				[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
-		) [t3]
-		OUTER APPLY (
-			SELECT TOP (1)
-				[c_4].[ParentID],
-				[c_4].[ChildID]
-			FROM
-				[Child] [c_4]
-			WHERE
-				[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
 			ORDER BY
-				[c_4].[ChildID]
-		) [t4]
+				[c_3].[ChildID]
+		) [t3]
 
