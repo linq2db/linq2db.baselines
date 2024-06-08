@@ -80,14 +80,10 @@ BeforeExecute
 SELECT
 	'Id',
 	it.Id,
-	sumOrNull(CASE
-		WHEN a_ActualStage.Id IS NULL THEN NULL
-		ELSE a_ActualStage_1.Id
-	END)
+	sumOrNull(a_ActualStage.Id)
 FROM
 	Task it
 		LEFT JOIN TaskStage a_ActualStage ON it.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = true
-		LEFT JOIN TaskStage a_ActualStage_1 ON it.Id = a_ActualStage_1.TaskId AND a_ActualStage_1.Actual = true
 GROUP BY
 	it.Id
 
