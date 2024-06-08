@@ -3,7 +3,6 @@
 
 SELECT
 	a_Patient.PersonID,
-	a_Patient.PersonID,
 	a_Patient.Diagnosis
 FROM
 	Person p
@@ -13,7 +12,6 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	a_Patient.PersonID,
 	a_Patient.PersonID,
 	a_Patient.Diagnosis
 FROM
