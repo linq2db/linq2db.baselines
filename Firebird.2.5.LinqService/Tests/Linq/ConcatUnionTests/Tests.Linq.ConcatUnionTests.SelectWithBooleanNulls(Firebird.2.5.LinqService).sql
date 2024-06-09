@@ -25,7 +25,7 @@ SELECT
 			SELECT
 				*
 			FROM
-				"Child" "t1"
+				"Child" "t2"
 		)
 			THEN '1'
 		ELSE '0'

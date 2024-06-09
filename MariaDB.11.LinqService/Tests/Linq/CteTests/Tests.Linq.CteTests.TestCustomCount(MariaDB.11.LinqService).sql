@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH `CTE_1` AS
+WITH `CTE_1` (`ParentID`, `ChildID`)
+AS
 (
 	SELECT DISTINCT
 		`c_1`.`ParentID`,

@@ -6,7 +6,6 @@ SELECT
 	x."ChildID"
 FROM
 	"Child" x
-		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren"."ParentID",
@@ -18,6 +17,7 @@ FROM
 				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
 			LIMIT 1
 		) t1 ON 1=1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren_1"."ParentID",
@@ -30,7 +30,7 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t2."ParentID" = t1."ParentID" OR t2."ParentID" IS NULL AND t1."ParentID" IS NULL) AND (t2."ChildID" = t1."ChildID" OR t2."ChildID" IS NULL AND t1."ChildID" IS NULL) AND (t2."GrandChildID" = t1."GrandChildID" OR t2."GrandChildID" IS NULL AND t1."GrandChildID" IS NULL)) AND
 	x."ParentID" <> (
 		SELECT
 			CASE
@@ -52,7 +52,6 @@ SELECT
 	x."ChildID"
 FROM
 	"Child" x
-		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren"."ParentID",
@@ -64,6 +63,7 @@ FROM
 				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
 			LIMIT 1
 		) t1 ON 1=1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren_1"."ParentID",
@@ -76,7 +76,7 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t2."ParentID" = t1."ParentID" OR t2."ParentID" IS NULL AND t1."ParentID" IS NULL) AND (t2."ChildID" = t1."ChildID" OR t2."ChildID" IS NULL AND t1."ChildID" IS NULL) AND (t2."GrandChildID" = t1."GrandChildID" OR t2."GrandChildID" IS NULL AND t1."GrandChildID" IS NULL)) AND
 	x."ParentID" <> (
 		SELECT
 			CASE

@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 AS
+WITH CTE_1 ("ParentID", "ChildID")
+AS
 (
 	SELECT DISTINCT
 		"c_1"."ParentID",

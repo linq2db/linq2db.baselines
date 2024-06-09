@@ -2,7 +2,15 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID"
+	(
+		SELECT
+			"a_Children_1"."ParentID"
+		FROM
+			"Child" "a_Children_1"
+		WHERE
+			"p"."ParentID" = "a_Children_1"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" "p"
 		LEFT JOIN (

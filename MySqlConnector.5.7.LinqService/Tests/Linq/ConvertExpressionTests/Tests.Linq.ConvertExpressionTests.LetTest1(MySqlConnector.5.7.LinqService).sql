@@ -16,11 +16,11 @@ FROM
 WHERE
 	(
 		SELECT
-			`a_Children`.`ParentID`
+			`a_Children_1`.`ParentID`
 		FROM
-			`Child` `a_Children`
+			`Child` `a_Children_1`
 		WHERE
-			`p`.`ParentID` = `a_Children`.`ParentID`
+			`p`.`ParentID` = `a_Children_1`.`ParentID`
 		LIMIT 1
 	) IS NOT NULL
 

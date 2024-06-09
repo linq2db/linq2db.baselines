@@ -2,7 +2,14 @@
 -- SqlServer.2022
 
 SELECT
-	[t1].[ParentID]
+	(
+		SELECT TOP (1)
+			[a_Children_1].[ParentID]
+		FROM
+			[Child] [a_Children_1]
+		WHERE
+			[p].[ParentID] = [a_Children_1].[ParentID]
+	)
 FROM
 	[Parent] [p]
 		OUTER APPLY (

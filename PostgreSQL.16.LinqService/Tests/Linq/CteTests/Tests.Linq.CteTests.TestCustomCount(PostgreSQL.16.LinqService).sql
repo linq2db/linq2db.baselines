@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-WITH "CTE_1" AS
+WITH "CTE_1" ("ParentID", "ChildID")
+AS
 (
 	SELECT DISTINCT
 		c_1."ParentID",
