@@ -11,15 +11,25 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i.PersonID,
-	i.FirstName,
-	i.LastName,
-	i.MiddleName,
-	i.Gender,
-	concat(i.LastName, ', ', i.FirstName),
-	concat(i.LastName, ', ', i.FirstName)
+	i_1.PersonID,
+	i_1.FirstName,
+	i_1.LastName,
+	i_1.MiddleName,
+	i_1.Gender,
+	i_1.FullName,
+	i_1.FullName
 FROM
-	Person i
+	(
+		SELECT
+			i.FirstName as FirstName,
+			i.PersonID as PersonID,
+			i.LastName as LastName,
+			i.MiddleName as MiddleName,
+			i.Gender as Gender,
+			concat(i.LastName, ', ', i.FirstName) as FullName
+		FROM
+			Person i
+	) i_1
 WHERE
-	i.FirstName <> 'John'
+	i_1.FirstName <> 'John'
 
