@@ -2,16 +2,13 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[p_1].[item_1],
-	[p_1].[ParentID],
+	[p_1].[ID],
 	[p_1].[Value_1]
 FROM
 	(
 		SELECT
 			IIF([i].[item] = 0, NULL, [p].[ParentID]) as [ID],
-			[p].[Value1] as [Value_1],
-			[i].[item] as [item_1],
-			[p].[ParentID]
+			[p].[Value1] as [Value_1]
 		FROM
 			[Parent] [p]
 				CROSS JOIN (VALUES
