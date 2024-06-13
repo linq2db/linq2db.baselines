@@ -22,11 +22,11 @@ IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019
 DECLARE @StartDateTime DateTime2
-SET     @StartDateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+SET     @StartDateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 DECLARE @StartDateTime2 DateTime2
-SET     @StartDateTime2 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+SET     @StartDateTime2 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 DECLARE @EndDateTime DateTime2
-SET     @EndDateTime = DATETIME2FROMPARTS(2020, 2, 29, 21, 54, 55, 1231234, 7)
+SET     @EndDateTime = DATETIME2FROMPARTS(2020, 2, 29, 21, 54, 55, 1231000, 7)
 DECLARE @PreNotification BigInt -- Int64
 SET     @PreNotification = 200000000000
 DECLARE @PreNotification2 BigInt -- Int64
@@ -66,9 +66,9 @@ BeforeExecute
 DECLARE @StartDateTime DateTime2
 SET     @StartDateTime = DATETIME2FROMPARTS(2023, 10, 17, 9, 40, 23, 0, 7)
 DECLARE @StartDateTime2 DateTime2
-SET     @StartDateTime2 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+SET     @StartDateTime2 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 DECLARE @EndDateTime DateTime2
-SET     @EndDateTime = DATETIME2FROMPARTS(2020, 2, 29, 21, 54, 55, 1231234, 7)
+SET     @EndDateTime = DATETIME2FROMPARTS(2020, 2, 29, 21, 54, 55, 1231000, 7)
 DECLARE @PreNotification BigInt -- Int64
 SET     @PreNotification = 6048000000000
 DECLARE @PreNotification2 BigInt -- Int64
@@ -106,9 +106,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 12, 22, 50, 32, 5664517, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 13, 15, 49, 56, 7358198, 7)
 DECLARE @Date DateTime2
-SET     @Date = DATETIME2FROMPARTS(2024, 6, 12, 0, 0, 0, 0, 7)
+SET     @Date = DATETIME2FROMPARTS(2024, 6, 13, 0, 0, 0, 0, 7)
 
 SELECT
 	[x_1].[StartDateTime],

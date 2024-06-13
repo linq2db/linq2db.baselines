@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[Common_Topology_Locations]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019
 DECLARE @StartDateTime DateTime2
-SET     @StartDateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+SET     @StartDateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 DECLARE @StartDateTime2 DateTime2
 SET     @StartDateTime2 = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @EndDateTime DateTime2
