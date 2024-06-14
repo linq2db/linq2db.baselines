@@ -27,8 +27,6 @@ CREATE TABLE IF NOT EXISTS TestEqualsTable2
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @param Integer(4) -- Int32
-SET     @param = 0
 
 SELECT
 	t1.Id
@@ -41,7 +39,7 @@ WHERE
 		FROM
 			TestEqualsTable2 t2
 		WHERE
-			t1.Id = t2.FK AND t2.Id = @param
+			1 = 0
 	)
 
 BeforeExecute
