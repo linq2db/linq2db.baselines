@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-06-14 15:05:42.077'
+SET     @UtcNow = '2024-06-14 17:04:04.121'
 DECLARE @Date  -- DateTime
 SET     @Date = '2024-06-14 00:00:00.000'
 
