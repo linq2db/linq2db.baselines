@@ -41,7 +41,8 @@ SELECT
 	[person_1].[PersonID],
 	[person_1].[LastName],
 	[person_1].[MiddleName],
-	[person_1].[Gender]
+	[person_1].[Gender],
+	1
 FROM
 	[Person] [person_1]
 LIMIT 1

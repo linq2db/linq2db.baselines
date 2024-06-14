@@ -110,7 +110,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[x].[Id]
+	[x].[Id],
+	1
 FROM
 	[Table2_3014] [x]
 WHERE
@@ -132,7 +133,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[e].[Id]
+	[e].[Id],
+	'0'
 FROM
 	[Table2_3014] [e]
 
