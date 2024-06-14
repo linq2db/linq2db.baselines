@@ -32,8 +32,6 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Raw(16) -- Binary
 SET     @id = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
-DECLARE @testId Raw(16) -- Binary
-SET     @testId = HEXTORAW('00000000000000000000000000000000')
 
 INSERT INTO "Issue1363"
 (
@@ -49,7 +47,7 @@ VALUES
 		FROM
 			"Issue1363" t1
 		WHERE
-			t1."required_field" = :testId
+			1 = 0
 	)
 )
 
