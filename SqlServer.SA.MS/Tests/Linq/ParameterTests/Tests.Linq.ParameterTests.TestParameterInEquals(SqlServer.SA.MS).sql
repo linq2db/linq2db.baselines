@@ -29,8 +29,6 @@ IF (OBJECT_ID(N'[TestEqualsTable2]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @param Int -- Int32
-SET     @param = 0
 
 SELECT
 	[t1].[Id]
@@ -43,7 +41,7 @@ WHERE
 		FROM
 			[TestEqualsTable2] [t2]
 		WHERE
-			[t1].[Id] = [t2].[FK] AND [t2].[Id] = @param
+			1 = 0
 	)
 
 BeforeExecute
