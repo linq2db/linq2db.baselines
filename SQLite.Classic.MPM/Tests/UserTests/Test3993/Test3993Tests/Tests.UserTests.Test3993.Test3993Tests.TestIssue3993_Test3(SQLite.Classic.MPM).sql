@@ -109,19 +109,33 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[StartDateTime],
-	[t].[StartDateTime2],
-	[t].[EndDateTime],
-	[t].[PreNotification],
-	[t].[PreNotification2],
-	[t].[PreNotification3],
-	[t].[StrField],
-	[t].[Status],
-	strftime('%Y-%m-%d %H:%M:%f', [t].[StartDateTime], ((-[t].[PreNotification])/10000000.0) || ' Second')
+	[t1].[StartDateTime],
+	[t1].[StartDateTime2],
+	[t1].[EndDateTime],
+	[t1].[PreNotification],
+	[t1].[PreNotification2],
+	[t1].[PreNotification3],
+	[t1].[StrField],
+	[t1].[Status],
+	[t1].[NotificationDateTime]
 FROM
-	[Common_Topology_Locations] [t]
+	(
+		SELECT
+			CAST(strftime('%S', strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second')) AS INTEGER) as [Second_1],
+			[x].[StartDateTime],
+			[x].[StartDateTime2],
+			[x].[EndDateTime],
+			[x].[PreNotification],
+			[x].[PreNotification2],
+			[x].[PreNotification3],
+			[x].[StrField],
+			[x].[Status],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second') as [NotificationDateTime]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [t1]
 WHERE
-	CAST(strftime('%S', strftime('%Y-%m-%d %H:%M:%f', [t].[StartDateTime], ((-[t].[PreNotification])/10000000.0) || ' Second')) AS INTEGER) = 53
+	[t1].[Second_1] >= 52 AND [t1].[Second_1] <= 54
 LIMIT 1
 
 BeforeExecute
