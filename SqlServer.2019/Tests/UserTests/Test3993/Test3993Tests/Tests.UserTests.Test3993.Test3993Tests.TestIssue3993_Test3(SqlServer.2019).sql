@@ -102,19 +102,33 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT TOP (1)
-	[t].[StartDateTime],
-	[t].[StartDateTime2],
-	[t].[EndDateTime],
-	[t].[PreNotification],
-	[t].[PreNotification2],
-	[t].[PreNotification3],
-	[t].[StrField],
-	[t].[Status],
-	DateAdd(millisecond, (-[t].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[t].[PreNotification] / 10000) / 3600000, [t].[StartDateTime]))
+	[t1].[StartDateTime],
+	[t1].[StartDateTime2],
+	[t1].[EndDateTime],
+	[t1].[PreNotification],
+	[t1].[PreNotification2],
+	[t1].[PreNotification3],
+	[t1].[StrField],
+	[t1].[Status],
+	[t1].[NotificationDateTime]
 FROM
-	[Common_Topology_Locations] [t]
+	(
+		SELECT
+			DatePart(second, DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime]))) as [Second_1],
+			[x].[StartDateTime],
+			[x].[StartDateTime2],
+			[x].[EndDateTime],
+			[x].[PreNotification],
+			[x].[PreNotification2],
+			[x].[PreNotification3],
+			[x].[StrField],
+			[x].[Status],
+			DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [t1]
 WHERE
-	DatePart(second, DateAdd(millisecond, (-[t].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[t].[PreNotification] / 10000) / 3600000, [t].[StartDateTime]))) = 53
+	[t1].[Second_1] >= 52 AND [t1].[Second_1] <= 54
 
 BeforeExecute
 -- SqlServer.2019
