@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
-SET     @id = 0
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = ?
+	1 = 0
 
