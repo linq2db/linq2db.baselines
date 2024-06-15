@@ -17,7 +17,7 @@ FROM
 			AllTypes t1
 				INNER JOIN AllTypes a_Association ON t1.smallintDataType = a_Association.intDataType
 		WHERE
-			toInt32(t1.smallintDataType) = toInt16(0)
+			1 = 0
 	) t2
 
 BeforeExecute
