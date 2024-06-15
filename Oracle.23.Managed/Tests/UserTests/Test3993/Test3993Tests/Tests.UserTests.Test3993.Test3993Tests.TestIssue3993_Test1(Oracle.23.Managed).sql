@@ -92,7 +92,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 00:05:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-06-14 16:37:09.821024'
+SET     @UtcNow = TIMESTAMP '2024-06-15 00:20:39.460914'
 
 SELECT
 	x."StartDateTime",
@@ -113,7 +113,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 36500.00:00:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-06-14 16:37:09.828219'
+SET     @UtcNow = TIMESTAMP '2024-06-15 00:20:39.468466'
 
 SELECT
 	x."StartDateTime",
