@@ -35,13 +35,16 @@ BeforeExecute
 -- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Id_1 Int -- Int32
+SET     @Id_1 = 2
 
 SELECT TOP (2)
-	[c_1].[Id]
+	@Id as [Id],
+	[c_1].[Id] as [Id_1]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id
+	[c_1].[Id] = @Id_1
 
 BeforeExecute
 -- SqlCe
