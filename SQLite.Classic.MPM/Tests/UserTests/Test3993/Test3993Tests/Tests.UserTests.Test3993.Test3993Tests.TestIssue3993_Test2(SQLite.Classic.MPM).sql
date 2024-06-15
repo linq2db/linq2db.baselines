@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @UtcNow VarChar(23) -- AnsiString
-SET     @UtcNow = '2024-06-15 00:38:24.584'
+SET     @UtcNow = '2024-06-15 06:57:28.433'
 DECLARE @Date VarChar(23) -- AnsiString
 SET     @Date = '2024-06-15 00:00:00.000'
 
