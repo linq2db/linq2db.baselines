@@ -17,7 +17,7 @@ IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '523e2328-9c4e-4605-8857-4e73be4cfbb3'
+SET     @Id = '3c03af91-7f3d-40f7-ab76-70e1b36b41ab'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
 SET     @ReferenceId = NULL
 DECLARE @DateTime DateTimeOffset
@@ -39,9 +39,9 @@ VALUES
 BeforeExecute
 -- SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'b10554c2-f512-4040-aa52-304cfb449c3b'
+SET     @Id = '02168d6d-6334-4f30-a8e8-7cea3dd77979'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
-SET     @ReferenceId = '523e2328-9c4e-4605-8857-4e73be4cfbb3'
+SET     @ReferenceId = '3c03af91-7f3d-40f7-ab76-70e1b36b41ab'
 DECLARE @DateTime DateTimeOffset
 SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
