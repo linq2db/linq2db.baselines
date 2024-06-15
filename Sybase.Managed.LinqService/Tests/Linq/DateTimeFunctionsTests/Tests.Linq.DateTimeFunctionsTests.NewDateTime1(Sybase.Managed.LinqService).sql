@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	DatePart(year, [t].[DateTimeValue])
+	CAST(RIGHT('0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + '-10-01' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 WHERE

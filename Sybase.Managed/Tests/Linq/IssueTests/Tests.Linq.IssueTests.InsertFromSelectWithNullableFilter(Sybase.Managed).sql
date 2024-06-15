@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
 
 INSERT INTO [AllTypes]
 (
@@ -19,7 +17,7 @@ FROM
 			[AllTypes] [t1]
 				INNER JOIN [AllTypes] [a_Association] ON [t1].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			[t1].[smallintDataType] = @ID
+			1 = 0
 	) [t2]
 
 BeforeExecute
