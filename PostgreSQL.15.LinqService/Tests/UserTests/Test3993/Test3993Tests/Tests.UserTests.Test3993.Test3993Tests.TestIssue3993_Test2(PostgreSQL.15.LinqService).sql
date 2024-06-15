@@ -105,7 +105,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @UtcNow Timestamp -- DateTime2
-SET     @UtcNow = '2024-06-15 00:21:53.256'::timestamp
+SET     @UtcNow = '2024-06-15 08:31:45.432'::timestamp
 DECLARE @Date Timestamp -- DateTime2
 SET     @Date = '2024-06-15'::date
 
