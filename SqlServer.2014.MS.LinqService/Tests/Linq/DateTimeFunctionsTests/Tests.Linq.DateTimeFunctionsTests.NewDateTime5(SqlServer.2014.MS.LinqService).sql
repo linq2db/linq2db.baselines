@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	DatePart(year, [t].[DateTimeValue]) + 1
+	DATETIMEFROMPARTS(DatePart(year, [t].[DateTimeValue]) + 1, 10, 1, 0, 0, 0, 0)
 FROM
 	[LinqDataTypes] [t]
 WHERE

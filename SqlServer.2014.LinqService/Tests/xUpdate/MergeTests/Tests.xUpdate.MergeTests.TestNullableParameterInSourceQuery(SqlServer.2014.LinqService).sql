@@ -35,8 +35,6 @@ IF (OBJECT_ID(N'[TestNullableParameterSource]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @id Int -- Int32
-SET     @id = 0
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -46,7 +44,7 @@ USING (
 	FROM
 		[TestNullableParameterSource] [t1]
 	WHERE
-		[t1].[Id] = @id
+		1 = 0
 ) [Source]
 (
 	[source_Id1],
