@@ -105,9 +105,9 @@ VALUES
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-06-14 17:25:53.847'
+SET     @UtcNow = '2024-06-15 01:03:12.156'
 DECLARE @Date  -- DateTime
-SET     @Date = '2024-06-14'
+SET     @Date = '2024-06-15'
 
 SELECT
 	"x_1"."StartDateTime",
