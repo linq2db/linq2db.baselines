@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @UtcNow Datetime -- DateTime
-SET     @UtcNow = '2024-06-15 00:03:38.118'
+SET     @UtcNow = '2024-06-15 08:17:41.685'
 DECLARE @Date Datetime -- DateTime
 SET     @Date = '2024-06-15'
 
