@@ -17,11 +17,11 @@ IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '45657c28-5514-4e01-bde2-b9e5cb092b3e'
+SET     @Id = '77d0606b-aaff-4be5-a2b8-4fb48423aeb8'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
 SET     @ReferenceId = NULL
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 15, 5081401, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -39,11 +39,11 @@ VALUES
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'f8c4c5e2-eac8-4d97-80a6-fcb9e950f98e'
+SET     @Id = 'df6bdcac-c197-4ab4-9e2b-0b4530e60091'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
-SET     @ReferenceId = '45657c28-5514-4e01-bde2-b9e5cb092b3e'
+SET     @ReferenceId = '77d0606b-aaff-4be5-a2b8-4fb48423aeb8'
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 15, 5081401, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -75,10 +75,8 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Id NVarChar(4000) -- String
-SET     @Id = N'UTC'
-DECLARE @Id_1 NVarChar(4000) -- String
-SET     @Id_1 = N'UTC'
+DECLARE @tz NVarChar(4000) -- String
+SET     @tz = N'UTC'
 
 SELECT
 	[t3].[Id],
@@ -101,8 +99,8 @@ FROM
 				SELECT
 					[t1].[Id],
 					[a_Reference].[Id] as [group_1],
-					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @Id) as [hours],
-					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @Id_1) as [minutes]
+					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
+					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
 					[TestAggregateTable] [t1]
 						LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
@@ -120,12 +118,10 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Id NVarChar(4000) -- String
-SET     @Id = N'UTC'
-DECLARE @Id_1 NVarChar(4000) -- String
-SET     @Id_1 = N'UTC'
+DECLARE @tz NVarChar(4000) -- String
+SET     @tz = N'UTC'
 DECLARE @key UniqueIdentifier -- Guid
-SET     @key = '45657c28-5514-4e01-bde2-b9e5cb092b3e'
+SET     @key = '77d0606b-aaff-4be5-a2b8-4fb48423aeb8'
 
 SELECT
 	[t3].[Id],
@@ -148,8 +144,8 @@ FROM
 				SELECT
 					[t1].[Id],
 					[a_Reference].[Id] as [group_1],
-					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @Id) as [hours],
-					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @Id_1) as [minutes]
+					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
+					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
 					[TestAggregateTable] [t1]
 						LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]

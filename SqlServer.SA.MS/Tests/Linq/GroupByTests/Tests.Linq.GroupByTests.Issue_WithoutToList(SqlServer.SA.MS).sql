@@ -17,11 +17,11 @@ IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '50f625c8-a367-4694-924a-f0047e8cbf61'
+SET     @Id = '35c1d5ae-65e3-46b6-8dd1-2710d034fc61'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
 SET     @ReferenceId = NULL
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 14, 8358614, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -39,11 +39,11 @@ VALUES
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '6ec9aff1-86f7-4242-a8ef-d09a3f772a3e'
+SET     @Id = '9ef286fb-d10c-4d8d-9f02-a69a4059e299'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
-SET     @ReferenceId = '50f625c8-a367-4694-924a-f0047e8cbf61'
+SET     @ReferenceId = '35c1d5ae-65e3-46b6-8dd1-2710d034fc61'
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 14, 8358614, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -62,10 +62,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @Id NVarChar(4000) -- String
-SET     @Id = N'UTC'
-DECLARE @Id_1 NVarChar(4000) -- String
-SET     @Id_1 = N'UTC'
+DECLARE @tz NVarChar(4000) -- String
+SET     @tz = N'UTC'
 
 SELECT
 	[m_1].[Id],
@@ -100,8 +98,8 @@ FROM
 					SELECT
 						[t2].[Id],
 						[a_Reference_1].[Id] as [group_1],
-						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @Id) as [hours],
-						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @Id_1) as [minutes]
+						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
+						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
 						[TestAggregateTable] [t2]
 							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]

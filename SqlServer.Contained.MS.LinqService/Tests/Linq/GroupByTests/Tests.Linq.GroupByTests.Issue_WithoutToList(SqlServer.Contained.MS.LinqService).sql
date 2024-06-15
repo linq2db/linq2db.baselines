@@ -17,11 +17,11 @@ IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '8a35510a-d74b-4670-a1c2-5b16e52f9656'
+SET     @Id = '5f185c68-f7cc-4e41-8c33-3520f2d19c20'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
 SET     @ReferenceId = NULL
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 15, 2580416, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -39,11 +39,11 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'd2fd4168-0bce-4ccc-9e9c-b10a3a514e39'
+SET     @Id = '0f8de1fb-5c6e-41a6-bcc0-da0a28c967ef'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
-SET     @ReferenceId = '8a35510a-d74b-4670-a1c2-5b16e52f9656'
+SET     @ReferenceId = '5f185c68-f7cc-4e41-8c33-3520f2d19c20'
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 15, 2580416, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -60,10 +60,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Id NVarChar(4000) -- String
-SET     @Id = N'UTC'
-DECLARE @Id_1 NVarChar(4000) -- String
-SET     @Id_1 = N'UTC'
+DECLARE @tz NVarChar(4000) -- String
+SET     @tz = N'UTC'
 
 SELECT
 	[m_1].[Id],
@@ -98,8 +96,8 @@ FROM
 					SELECT
 						[t2].[Id],
 						[a_Reference_1].[Id] as [group_1],
-						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @Id) as [hours],
-						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @Id_1) as [minutes]
+						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
+						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
 						[TestAggregateTable] [t2]
 							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]

@@ -17,11 +17,11 @@ IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '6781fb1e-2d4c-4df2-b550-29e93e31298d'
+SET     @Id = 'c8f63625-a0aa-41b4-b366-9f04dea9f5a4'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
 SET     @ReferenceId = NULL
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 14, 9140376, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -39,11 +39,11 @@ VALUES
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '2e4456a4-72ef-4437-bf70-20bdba1b730a'
+SET     @Id = '4a0d01cd-b8cd-43b6-963c-1e28db7c3b9b'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
-SET     @ReferenceId = '6781fb1e-2d4c-4df2-b550-29e93e31298d'
+SET     @ReferenceId = 'c8f63625-a0aa-41b4-b366-9f04dea9f5a4'
 DECLARE @DateTime DateTimeOffset
-SET     @DateTime = DATETIMEOFFSETFROMPARTS(2024, 6, 14, 18, 59, 14, 9140376, 0, 0, 7)
+SET     @DateTime = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 9, 55, 1231234, 0, 0, 7)
 
 INSERT INTO [TestAggregateTable]
 (
@@ -62,10 +62,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @Id NVarChar(4000) -- String
-SET     @Id = N'UTC'
-DECLARE @Id_1 NVarChar(4000) -- String
-SET     @Id_1 = N'UTC'
+DECLARE @tz NVarChar(4000) -- String
+SET     @tz = N'UTC'
 
 SELECT
 	[m_1].[Id],
@@ -100,8 +98,8 @@ FROM
 					SELECT
 						[t2].[Id],
 						[a_Reference_1].[Id] as [group_1],
-						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @Id) as [hours],
-						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @Id_1) as [minutes]
+						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
+						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
 						[TestAggregateTable] [t2]
 							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]
