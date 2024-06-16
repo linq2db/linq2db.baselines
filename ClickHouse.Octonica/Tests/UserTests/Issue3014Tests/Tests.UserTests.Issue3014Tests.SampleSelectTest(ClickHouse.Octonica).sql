@@ -101,7 +101,8 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x.Id
+	x.Id,
+	1
 FROM
 	Table2_3014 x
 WHERE
@@ -119,7 +120,8 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	e.Id
+	e.Id,
+	'0'
 FROM
 	Table2_3014 e
 

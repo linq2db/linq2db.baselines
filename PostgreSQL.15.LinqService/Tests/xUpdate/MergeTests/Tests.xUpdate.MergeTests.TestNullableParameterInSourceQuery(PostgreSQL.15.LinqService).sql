@@ -31,8 +31,6 @@ CREATE TABLE IF NOT EXISTS "TestNullableParameterSource"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 0
 
 MERGE INTO "TestNullableParameterTarget" "Target"
 USING (
@@ -42,7 +40,7 @@ USING (
 	FROM
 		"TestNullableParameterSource" t1
 	WHERE
-		t1."Id" = :id
+		1 = 0
 ) "Source"
 (
 	"source_Id1",

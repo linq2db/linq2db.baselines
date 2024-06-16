@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Year(t.DateTimeValue)
+	Mdy(10, 1, Year(t.DateTimeValue))
 FROM
 	LinqDataTypes t
 WHERE

@@ -3,7 +3,7 @@
 
 SELECT
 	"p_1"."ParentID",
-	"p_1".SUM_1 / 2
+	"p_1"."Value1"
 FROM
 	(
 		SELECT
@@ -14,11 +14,11 @@ FROM
 					"Child" "a_Children"
 				WHERE
 					"p"."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" > 0
-			) as SUM_1,
+			) / 2 as "Value1",
 			"p"."ParentID"
 		FROM
 			"Parent" "p"
 	) "p_1"
 WHERE
-	"p_1".SUM_1 / 2 > 1
+	"p_1"."Value1" > 1
 

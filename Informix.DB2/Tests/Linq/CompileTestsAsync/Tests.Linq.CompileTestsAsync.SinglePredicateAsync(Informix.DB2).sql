@@ -159,6 +159,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 SELECT FIRST 2
+	2,
 	c_1.Id
 FROM
 	AsyncDataTable c_1

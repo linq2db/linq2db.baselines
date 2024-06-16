@@ -16,8 +16,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Char(36) -- AnsiStringFixedLength
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @testId Char(36) -- AnsiStringFixedLength
-SET     @testId = '00000000-0000-0000-0000-000000000000'
 
 INSERT INTO "Issue1363"
 (
@@ -33,7 +31,7 @@ VALUES
 		FROM
 			"Issue1363" "t1"
 		WHERE
-			"t1"."required_field" = ?
+			1 = 0
 	)
 )
 

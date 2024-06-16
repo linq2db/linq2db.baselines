@@ -43,13 +43,16 @@ BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
+DECLARE @Id_1 Integer -- Int32
+SET     @Id_1 = 2
 
 SELECT FIRST 1
+	CAST(@Id AS Int),
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"
 WHERE
-	"c_1"."Id" = @Id
+	"c_1"."Id" = @Id_1
 
 BeforeExecute
 -- Firebird.2.5 Firebird

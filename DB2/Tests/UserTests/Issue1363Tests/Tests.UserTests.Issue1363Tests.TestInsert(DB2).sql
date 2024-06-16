@@ -24,8 +24,6 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id VarBinary(16) -- Binary
 SET     @id = BX'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @testId VarBinary(16) -- Binary
-SET     @testId = BX'00000000000000000000000000000000'
 
 INSERT INTO "Issue1363"
 (
@@ -41,7 +39,7 @@ VALUES
 		FROM
 			"Issue1363" "t1"
 		WHERE
-			"t1"."required_field" = @testId
+			1 = 0
 	)
 )
 

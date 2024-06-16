@@ -13,7 +13,7 @@ FROM
 		WHERE
 			x.ParentID IN (2)
 	) m_1
-		INNER JOIN GrandChild d ON (m_1.ChildID = d.ChildID OR m_1.ChildID IS NULL AND d.ChildID IS NULL)
+		INNER JOIN GrandChild d ON m_1.ChildID = d.ChildID
 WHERE
 	d.ParentID IN (2)
 
@@ -44,7 +44,7 @@ FROM
 		WHERE
 			x.ParentID IN (3)
 	) m_1
-		INNER JOIN GrandChild d ON (m_1.ChildID = d.ChildID OR m_1.ChildID IS NULL AND d.ChildID IS NULL)
+		INNER JOIN GrandChild d ON m_1.ChildID = d.ChildID
 WHERE
 	d.ParentID IN (3)
 

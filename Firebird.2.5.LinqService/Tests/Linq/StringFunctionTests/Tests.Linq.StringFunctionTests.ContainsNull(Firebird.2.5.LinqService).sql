@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @id Integer -- Int32
-SET     @id = 0
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = @id
+	1 = 0
 

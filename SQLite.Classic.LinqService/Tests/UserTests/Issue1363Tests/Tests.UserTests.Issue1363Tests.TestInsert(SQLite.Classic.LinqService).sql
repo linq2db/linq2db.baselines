@@ -16,8 +16,6 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id  -- Guid
 SET     @id = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @testId  -- Guid
-SET     @testId = X'00000000000000000000000000000000'
 
 INSERT INTO [Issue1363]
 (
@@ -33,7 +31,7 @@ VALUES
 		FROM
 			[Issue1363] [t1]
 		WHERE
-			[t1].[required_field] = @testId
+			1 = 0
 	)
 )
 

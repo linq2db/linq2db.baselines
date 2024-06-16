@@ -41,7 +41,8 @@ SELECT
 	person_1."PersonID" as ID,
 	person_1."LastName",
 	person_1."MiddleName",
-	person_1."Gender"
+	person_1."Gender",
+	1 as "rn"
 FROM
 	"Person" person_1
 FETCH NEXT 1 ROWS ONLY

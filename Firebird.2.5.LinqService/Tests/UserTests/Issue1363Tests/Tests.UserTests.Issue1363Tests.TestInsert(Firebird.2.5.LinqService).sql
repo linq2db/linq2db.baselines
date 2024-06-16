@@ -24,8 +24,6 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Guid
 SET     @id = X'BC7B663D0FDE43278F925D8CC3A11D11'
-DECLARE @testId Guid
-SET     @testId = X'00000000000000000000000000000000'
 
 INSERT INTO "Issue1363"
 (
@@ -41,7 +39,7 @@ VALUES
 		FROM
 			"Issue1363" "t1"
 		WHERE
-			"t1"."required_field" = @testId
+			1 = 0
 	)
 )
 

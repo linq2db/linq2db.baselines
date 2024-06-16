@@ -19,13 +19,13 @@ BeforeExecute
 
 SELECT
 	[a_1].[RECORDNAME],
-	[a_1].[NullValue]
+	[a_1].[KEYNUMB_1]
 FROM
 	(
 		SELECT
 			[a].[Id] as [RECORDNAME],
 			IIF([a].[NullValue] IS NOT NULL, [a].[NullValue], 0) as [KEYNUMB],
-			[a].[NullValue]
+			[a].[NullValue] as [KEYNUMB_1]
 		FROM
 			[SampleClass] [a]
 	) [a_1]

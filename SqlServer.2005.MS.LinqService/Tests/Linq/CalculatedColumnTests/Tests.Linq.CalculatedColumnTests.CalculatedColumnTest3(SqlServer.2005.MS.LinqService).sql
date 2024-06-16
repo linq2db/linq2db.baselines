@@ -6,27 +6,38 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[Doctor] [d]
-		WHERE
-			[d].[PersonID] = [i].[PersonID]
-	),
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + N', ' + [i].[FirstName],
-	[i].[LastName] + N', ' + [i].[FirstName],
-	(
-		SELECT
-			COUNT(*)
-		FROM
 			[Doctor] [d_1]
 		WHERE
-			[d_1].[PersonID] = [i].[PersonID]
-	)
+			[d_1].[PersonID] = [i_1].[PersonID]
+	),
+	[i_1].[PersonID],
+	[i_1].[FirstName],
+	[i_1].[LastName],
+	[i_1].[MiddleName],
+	[i_1].[Gender],
+	[i_1].[FullName],
+	[i_1].[FullName],
+	[i_1].[DoctorCount]
 FROM
-	[Person] [i]
+	(
+		SELECT
+			[i].[FirstName],
+			[i].[PersonID],
+			[i].[LastName],
+			[i].[MiddleName],
+			[i].[Gender],
+			[i].[LastName] + N', ' + [i].[FirstName] as [FullName],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Doctor] [d]
+				WHERE
+					[d].[PersonID] = [i].[PersonID]
+			) as [DoctorCount]
+		FROM
+			[Person] [i]
+	) [i_1]
 WHERE
-	[i].[FirstName] <> N'John'
+	[i_1].[FirstName] <> N'John'
 
