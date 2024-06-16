@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = NULL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
 
 SELECT
 	"p_2"."ParentID",
@@ -12,7 +12,7 @@ FROM
 		SELECT
 			CASE
 				WHEN "p_1"."ParentID" IS NOT NULL THEN "p_1"."Value1"
-				ELSE CAST(@p AS Int)
+				ELSE CAST(@Value1 AS Int)
 			END as "Value1",
 			"p_1"."ParentID",
 			"p_1"."ParentID_1",
