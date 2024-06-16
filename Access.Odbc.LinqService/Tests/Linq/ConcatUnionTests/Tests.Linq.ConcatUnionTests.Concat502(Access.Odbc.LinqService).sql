@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = NULL
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = NULL
 
 SELECT
 	[p_2].[ParentID],
