@@ -91,7 +91,7 @@ WHERE
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-06-15 08:07:41.880' AS timestamp)
+SET     @UtcNow = CAST('2024-06-16 23:45:27.547' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
@@ -110,7 +110,7 @@ WHERE
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-06-15 08:07:41.888' AS timestamp)
+SET     @UtcNow = CAST('2024-06-16 23:45:27.553' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
@@ -149,21 +149,36 @@ DECLARE @DateTime4Utc TimeStamp -- DateTime
 SET     @DateTime4Utc = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
-	"x"."StartDateTime",
-	"x"."PreNotification",
-	DateAdd(Millisecond, -1 * ("x"."PreNotification" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -1 * ("x"."PreNotification2" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -1 * ("x"."PreNotification3" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, "x"."PreNotification" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime2"),
-	DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime2"),
-	Extract(day from "x"."StrField")
+	"x_1"."NotificationDateTime_1",
+	"x_1"."PreNotification",
+	"x_1"."NotificationDateTime",
+	"x_1"."NotificationDateTime2",
+	"x_1"."NotificationDateTime3",
+	"x_1"."NotificationDateTime4",
+	"x_1"."NotificationDateTime5",
+	"x_1"."NotificationDateTime6",
+	"x_1"."NotificationDateTime7",
+	"x_1"."NotificationDateTime8",
+	"x_1"."Day_1"
 FROM
-	"Common_Topology_Locations" "x"
+	(
+		SELECT
+			DateAdd(Millisecond, -1 * ("x"."PreNotification" / 10000), "x"."StartDateTime") as "NotificationDateTime",
+			"x"."StartDateTime" as "NotificationDateTime_1",
+			"x"."PreNotification",
+			DateAdd(Millisecond, -1 * ("x"."PreNotification2" / 10000), "x"."StartDateTime") as "NotificationDateTime2",
+			DateAdd(Millisecond, -1 * ("x"."PreNotification3" / 10000), "x"."StartDateTime") as "NotificationDateTime3",
+			DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime") as "NotificationDateTime4",
+			DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime") as "NotificationDateTime5",
+			DateAdd(Millisecond, "x"."PreNotification" / 10000, "x"."StartDateTime") as "NotificationDateTime6",
+			DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime2") as "NotificationDateTime7",
+			DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime2") as "NotificationDateTime8",
+			Extract(day from "x"."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" "x"
+	) "x_1"
 WHERE
-	DateAdd(Millisecond, -1 * ("x"."PreNotification" / 10000), "x"."StartDateTime") < @DateTime4Utc
+	"x_1"."NotificationDateTime" < @DateTime4Utc
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -171,21 +186,36 @@ DECLARE @DateTime4Utc TimeStamp -- DateTime
 SET     @DateTime4Utc = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
-	"x"."StartDateTime",
-	"x"."PreNotification",
-	DateAdd(Millisecond, -1 * ("x"."PreNotification" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -1 * ("x"."PreNotification2" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -1 * ("x"."PreNotification3" / 10000), "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, "x"."PreNotification" / 10000, "x"."StartDateTime"),
-	DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime2"),
-	DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime2"),
-	Extract(day from "x"."StrField")
+	"x_1"."NotificationDateTime2_1",
+	"x_1"."PreNotification",
+	"x_1"."NotificationDateTime",
+	"x_1"."NotificationDateTime2",
+	"x_1"."NotificationDateTime3",
+	"x_1"."NotificationDateTime4",
+	"x_1"."NotificationDateTime5",
+	"x_1"."NotificationDateTime6",
+	"x_1"."NotificationDateTime7",
+	"x_1"."NotificationDateTime8",
+	"x_1"."Day_1"
 FROM
-	"Common_Topology_Locations" "x"
+	(
+		SELECT
+			DateAdd(Millisecond, -1 * ("x"."PreNotification2" / 10000), "x"."StartDateTime") as "NotificationDateTime2",
+			"x"."StartDateTime" as "NotificationDateTime2_1",
+			"x"."PreNotification",
+			DateAdd(Millisecond, -1 * ("x"."PreNotification" / 10000), "x"."StartDateTime") as "NotificationDateTime",
+			DateAdd(Millisecond, -1 * ("x"."PreNotification3" / 10000), "x"."StartDateTime") as "NotificationDateTime3",
+			DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime") as "NotificationDateTime4",
+			DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime") as "NotificationDateTime5",
+			DateAdd(Millisecond, "x"."PreNotification" / 10000, "x"."StartDateTime") as "NotificationDateTime6",
+			DateAdd(Millisecond, -"x"."PreNotification" / 10000, "x"."StartDateTime2") as "NotificationDateTime7",
+			DateAdd(Millisecond, -"x"."PreNotification3" / 10000, "x"."StartDateTime2") as "NotificationDateTime8",
+			Extract(day from "x"."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" "x"
+	) "x_1"
 WHERE
-	DateAdd(Millisecond, -1 * ("x"."PreNotification2" / 10000), "x"."StartDateTime") < @DateTime4Utc
+	"x_1"."NotificationDateTime2" < @DateTime4Utc
 
 BeforeExecute
 -- Firebird.4 Firebird4
