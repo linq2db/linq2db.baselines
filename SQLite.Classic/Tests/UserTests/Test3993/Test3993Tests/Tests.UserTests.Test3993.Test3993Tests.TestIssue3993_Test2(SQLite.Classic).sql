@@ -51,9 +51,9 @@ VALUES
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @UtcNow VarChar(23) -- AnsiString
-SET     @UtcNow = '2024-06-15 08:49:55.821'
+SET     @UtcNow = '2024-06-16 22:30:48.492'
 DECLARE @Date VarChar(23) -- AnsiString
-SET     @Date = '2024-06-15 00:00:00.000'
+SET     @Date = '2024-06-16 00:00:00.000'
 
 SELECT
 	[x_1].[StartDateTime],

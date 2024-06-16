@@ -86,7 +86,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 3000000000
 DECLARE @UtcNow VarChar(23) -- AnsiString
-SET     @UtcNow = '2024-06-15 08:49:55.475'
+SET     @UtcNow = '2024-06-16 22:30:47.976'
 
 SELECT
 	[x].[StartDateTime],
@@ -107,7 +107,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 31536000000000000
 DECLARE @UtcNow VarChar(23) -- AnsiString
-SET     @UtcNow = '2024-06-15 08:49:55.480'
+SET     @UtcNow = '2024-06-16 22:30:47.992'
 
 SELECT
 	[x].[StartDateTime],
@@ -146,21 +146,36 @@ DECLARE @DateTime4Utc VarChar(23) -- AnsiString
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	[x].[StartDateTime],
-	[x].[PreNotification],
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification2] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification3] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification3])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ([x].[PreNotification]/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification3])/10000000.0) || ' Second'),
-	CAST(strftime('%d', [x].[StrField]) AS INTEGER)
+	[x_1].[NotificationDateTime_1],
+	[x_1].[PreNotification],
+	[x_1].[NotificationDateTime],
+	[x_1].[NotificationDateTime2],
+	[x_1].[NotificationDateTime3],
+	[x_1].[NotificationDateTime4],
+	[x_1].[NotificationDateTime5],
+	[x_1].[NotificationDateTime6],
+	[x_1].[NotificationDateTime7],
+	[x_1].[NotificationDateTime8],
+	[x_1].[Day_1]
 FROM
-	[Common_Topology_Locations] [x]
+	(
+		SELECT
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime],
+			[x].[StartDateTime] as [NotificationDateTime_1],
+			[x].[PreNotification],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification2] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime2],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification3] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime3],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification3])/10000000.0) || ' Second') as [NotificationDateTime4],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second') as [NotificationDateTime5],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ([x].[PreNotification]/10000000.0) || ' Second') as [NotificationDateTime6],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification])/10000000.0) || ' Second') as [NotificationDateTime7],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification3])/10000000.0) || ' Second') as [NotificationDateTime8],
+			CAST(strftime('%d', [x].[StrField]) AS INTEGER) as [Day_1]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [x_1]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification] / 10000))) / 1000 AS NVarChar(22)) || ' Second')) < strftime('%Y-%m-%d %H:%M:%f', @DateTime4Utc)
+	strftime('%Y-%m-%d %H:%M:%f', [x_1].[NotificationDateTime]) < strftime('%Y-%m-%d %H:%M:%f', @DateTime4Utc)
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -168,21 +183,36 @@ DECLARE @DateTime4Utc VarChar(23) -- AnsiString
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	[x].[StartDateTime],
-	[x].[PreNotification],
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification2] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification3] / 10000))) / 1000 AS NVarChar(22)) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification3])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ([x].[PreNotification]/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification])/10000000.0) || ' Second'),
-	strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification3])/10000000.0) || ' Second'),
-	CAST(strftime('%d', [x].[StrField]) AS INTEGER)
+	[x_1].[NotificationDateTime2_1],
+	[x_1].[PreNotification],
+	[x_1].[NotificationDateTime],
+	[x_1].[NotificationDateTime2],
+	[x_1].[NotificationDateTime3],
+	[x_1].[NotificationDateTime4],
+	[x_1].[NotificationDateTime5],
+	[x_1].[NotificationDateTime6],
+	[x_1].[NotificationDateTime7],
+	[x_1].[NotificationDateTime8],
+	[x_1].[Day_1]
 FROM
-	[Common_Topology_Locations] [x]
+	(
+		SELECT
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification2] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime2],
+			[x].[StartDateTime] as [NotificationDateTime2_1],
+			[x].[PreNotification],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification3] / 10000))) / 1000 AS NVarChar(22)) || ' Second') as [NotificationDateTime3],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification3])/10000000.0) || ' Second') as [NotificationDateTime4],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ((-[x].[PreNotification])/10000000.0) || ' Second') as [NotificationDateTime5],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], ([x].[PreNotification]/10000000.0) || ' Second') as [NotificationDateTime6],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification])/10000000.0) || ' Second') as [NotificationDateTime7],
+			strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime2], ((-[x].[PreNotification3])/10000000.0) || ' Second') as [NotificationDateTime8],
+			CAST(strftime('%d', [x].[StrField]) AS INTEGER) as [Day_1]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [x_1]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [x].[StartDateTime], CAST((-1 * (round([x].[PreNotification2] / 10000))) / 1000 AS NVarChar(22)) || ' Second')) < strftime('%Y-%m-%d %H:%M:%f', @DateTime4Utc)
+	strftime('%Y-%m-%d %H:%M:%f', [x_1].[NotificationDateTime2]) < strftime('%Y-%m-%d %H:%M:%f', @DateTime4Utc)
 
 BeforeExecute
 -- SQLite.Classic SQLite
