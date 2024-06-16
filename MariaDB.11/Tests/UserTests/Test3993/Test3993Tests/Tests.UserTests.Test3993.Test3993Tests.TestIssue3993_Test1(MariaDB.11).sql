@@ -86,7 +86,7 @@ BeforeExecute
 DECLARE @p Int64
 SET     @p = 300000
 DECLARE @UtcNow Datetime -- DateTime
-SET     @UtcNow = '2024-06-15 08:11:07.114'
+SET     @UtcNow = '2024-06-16 23:49:29.474'
 
 SELECT
 	`x`.`StartDateTime`,
@@ -107,7 +107,7 @@ BeforeExecute
 DECLARE @p Int64
 SET     @p = 3153600000000
 DECLARE @UtcNow Datetime -- DateTime
-SET     @UtcNow = '2024-06-15 08:11:07.120'
+SET     @UtcNow = '2024-06-16 23:49:29.479'
 
 SELECT
 	`x`.`StartDateTime`,
@@ -146,21 +146,36 @@ DECLARE @DateTime4Utc Datetime -- DateTime
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	`x`.`StartDateTime`,
-	`x`.`PreNotification`,
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification2` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification3` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond),
-	Extract(day from `x`.`StrField`)
+	`x_1`.`NotificationDateTime_1`,
+	`x_1`.`PreNotification`,
+	`x_1`.`NotificationDateTime`,
+	`x_1`.`NotificationDateTime2`,
+	`x_1`.`NotificationDateTime3`,
+	`x_1`.`NotificationDateTime4`,
+	`x_1`.`NotificationDateTime5`,
+	`x_1`.`NotificationDateTime6`,
+	`x_1`.`NotificationDateTime7`,
+	`x_1`.`NotificationDateTime8`,
+	`x_1`.`Day_1`
 FROM
-	`Common_Topology_Locations` `x`
+	(
+		SELECT
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification` / 10000)) * 1000) Microsecond) as `NotificationDateTime`,
+			`x`.`StartDateTime` as `NotificationDateTime_1`,
+			`x`.`PreNotification`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification2` / 10000)) * 1000) Microsecond) as `NotificationDateTime2`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification3` / 10000)) * 1000) Microsecond) as `NotificationDateTime3`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond) as `NotificationDateTime4`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime5`,
+			Date_Add(`x`.`StartDateTime`, Interval ((`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime6`,
+			Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime7`,
+			Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond) as `NotificationDateTime8`,
+			Extract(day from `x`.`StrField`) as `Day_1`
+		FROM
+			`Common_Topology_Locations` `x`
+	) `x_1`
 WHERE
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification` / 10000)) * 1000) Microsecond) < @DateTime4Utc
+	`x_1`.`NotificationDateTime` < @DateTime4Utc
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -168,21 +183,36 @@ DECLARE @DateTime4Utc Datetime -- DateTime
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	`x`.`StartDateTime`,
-	`x`.`PreNotification`,
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification2` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification3` / 10000)) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime`, Interval ((`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond),
-	Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond),
-	Extract(day from `x`.`StrField`)
+	`x_1`.`NotificationDateTime2_1`,
+	`x_1`.`PreNotification`,
+	`x_1`.`NotificationDateTime`,
+	`x_1`.`NotificationDateTime2`,
+	`x_1`.`NotificationDateTime3`,
+	`x_1`.`NotificationDateTime4`,
+	`x_1`.`NotificationDateTime5`,
+	`x_1`.`NotificationDateTime6`,
+	`x_1`.`NotificationDateTime7`,
+	`x_1`.`NotificationDateTime8`,
+	`x_1`.`Day_1`
 FROM
-	`Common_Topology_Locations` `x`
+	(
+		SELECT
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification2` / 10000)) * 1000) Microsecond) as `NotificationDateTime2`,
+			`x`.`StartDateTime` as `NotificationDateTime2_1`,
+			`x`.`PreNotification`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification` / 10000)) * 1000) Microsecond) as `NotificationDateTime`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification3` / 10000)) * 1000) Microsecond) as `NotificationDateTime3`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond) as `NotificationDateTime4`,
+			Date_Add(`x`.`StartDateTime`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime5`,
+			Date_Add(`x`.`StartDateTime`, Interval ((`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime6`,
+			Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification` / 10000) * 1000) Microsecond) as `NotificationDateTime7`,
+			Date_Add(`x`.`StartDateTime2`, Interval ((-`x`.`PreNotification3` / 10000) * 1000) Microsecond) as `NotificationDateTime8`,
+			Extract(day from `x`.`StrField`) as `Day_1`
+		FROM
+			`Common_Topology_Locations` `x`
+	) `x_1`
 WHERE
-	Date_Add(`x`.`StartDateTime`, Interval ((-1 * (`x`.`PreNotification2` / 10000)) * 1000) Microsecond) < @DateTime4Utc
+	`x_1`.`NotificationDateTime2` < @DateTime4Utc
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
