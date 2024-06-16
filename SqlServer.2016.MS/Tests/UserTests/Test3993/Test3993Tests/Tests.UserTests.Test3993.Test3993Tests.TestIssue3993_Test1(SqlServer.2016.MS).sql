@@ -83,7 +83,7 @@ SET     @p = 300000
 DECLARE @p_1 BigInt -- Int64
 SET     @p_1 = 0
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 15, 7, 48, 13, 6840330, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 16, 23, 31, 15, 1757206, 7)
 
 SELECT
 	[x].[StartDateTime],
@@ -106,7 +106,7 @@ SET     @p = 0
 DECLARE @p_1 BigInt -- Int64
 SET     @p_1 = 876000
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 15, 7, 48, 13, 6968863, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 16, 23, 31, 15, 1863613, 7)
 
 SELECT
 	[x].[StartDateTime],
@@ -145,21 +145,36 @@ DECLARE @DateTime4Utc DateTime2
 SET     @DateTime4Utc = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 
 SELECT
-	[x].[StartDateTime],
-	[x].[PreNotification],
-	DateAdd(millisecond, -1 * ([x].[PreNotification] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, -1 * ([x].[PreNotification2] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, -1 * ([x].[PreNotification3] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, ([x].[PreNotification] / 10000) % 3600000, DateAdd(hour, ([x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime2])),
-	DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime2])),
-	DatePart(day, [x].[StrField])
+	[x_1].[NotificationDateTime_1],
+	[x_1].[PreNotification],
+	[x_1].[NotificationDateTime],
+	[x_1].[NotificationDateTime2],
+	[x_1].[NotificationDateTime3],
+	[x_1].[NotificationDateTime4],
+	[x_1].[NotificationDateTime5],
+	[x_1].[NotificationDateTime6],
+	[x_1].[NotificationDateTime7],
+	[x_1].[NotificationDateTime8],
+	[x_1].[Day_1]
 FROM
-	[Common_Topology_Locations] [x]
+	(
+		SELECT
+			DateAdd(millisecond, -1 * ([x].[PreNotification] / 10000), [x].[StartDateTime]) as [NotificationDateTime],
+			[x].[StartDateTime] as [NotificationDateTime_1],
+			[x].[PreNotification],
+			DateAdd(millisecond, -1 * ([x].[PreNotification2] / 10000), [x].[StartDateTime]) as [NotificationDateTime2],
+			DateAdd(millisecond, -1 * ([x].[PreNotification3] / 10000), [x].[StartDateTime]) as [NotificationDateTime3],
+			DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime4],
+			DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime5],
+			DateAdd(millisecond, ([x].[PreNotification] / 10000) % 3600000, DateAdd(hour, ([x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime6],
+			DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime2])) as [NotificationDateTime7],
+			DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime2])) as [NotificationDateTime8],
+			DatePart(day, [x].[StrField]) as [Day_1]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [x_1]
 WHERE
-	DateAdd(millisecond, -1 * ([x].[PreNotification] / 10000), [x].[StartDateTime]) < @DateTime4Utc
+	[x_1].[NotificationDateTime] < @DateTime4Utc
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -167,21 +182,36 @@ DECLARE @DateTime4Utc DateTime2
 SET     @DateTime4Utc = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231000, 7)
 
 SELECT
-	[x].[StartDateTime],
-	[x].[PreNotification],
-	DateAdd(millisecond, -1 * ([x].[PreNotification] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, -1 * ([x].[PreNotification2] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, -1 * ([x].[PreNotification3] / 10000), [x].[StartDateTime]),
-	DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, ([x].[PreNotification] / 10000) % 3600000, DateAdd(hour, ([x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])),
-	DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime2])),
-	DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime2])),
-	DatePart(day, [x].[StrField])
+	[x_1].[NotificationDateTime2_1],
+	[x_1].[PreNotification],
+	[x_1].[NotificationDateTime],
+	[x_1].[NotificationDateTime2],
+	[x_1].[NotificationDateTime3],
+	[x_1].[NotificationDateTime4],
+	[x_1].[NotificationDateTime5],
+	[x_1].[NotificationDateTime6],
+	[x_1].[NotificationDateTime7],
+	[x_1].[NotificationDateTime8],
+	[x_1].[Day_1]
 FROM
-	[Common_Topology_Locations] [x]
+	(
+		SELECT
+			DateAdd(millisecond, -1 * ([x].[PreNotification2] / 10000), [x].[StartDateTime]) as [NotificationDateTime2],
+			[x].[StartDateTime] as [NotificationDateTime2_1],
+			[x].[PreNotification],
+			DateAdd(millisecond, -1 * ([x].[PreNotification] / 10000), [x].[StartDateTime]) as [NotificationDateTime],
+			DateAdd(millisecond, -1 * ([x].[PreNotification3] / 10000), [x].[StartDateTime]) as [NotificationDateTime3],
+			DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime4],
+			DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime5],
+			DateAdd(millisecond, ([x].[PreNotification] / 10000) % 3600000, DateAdd(hour, ([x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime])) as [NotificationDateTime6],
+			DateAdd(millisecond, (-[x].[PreNotification] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification] / 10000) / 3600000, [x].[StartDateTime2])) as [NotificationDateTime7],
+			DateAdd(millisecond, (-[x].[PreNotification3] / 10000) % 3600000, DateAdd(hour, (-[x].[PreNotification3] / 10000) / 3600000, [x].[StartDateTime2])) as [NotificationDateTime8],
+			DatePart(day, [x].[StrField]) as [Day_1]
+		FROM
+			[Common_Topology_Locations] [x]
+	) [x_1]
 WHERE
-	DateAdd(millisecond, -1 * ([x].[PreNotification2] / 10000), [x].[StartDateTime]) < @DateTime4Utc
+	[x_1].[NotificationDateTime2] < @DateTime4Utc
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
