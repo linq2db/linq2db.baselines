@@ -17,7 +17,7 @@ BeforeExecute
 
 SELECT
 	[a_1].[RECORDNAME],
-	[a_1].[NullValue]
+	[a_1].[KEYNUMB_1] as [KEYNUMB]
 FROM
 	(
 		SELECT
@@ -26,7 +26,7 @@ FROM
 				WHEN [a].[NullValue] IS NOT NULL THEN [a].[NullValue]
 				ELSE 0
 			END as [KEYNUMB],
-			[a].[NullValue]
+			[a].[NullValue] as [KEYNUMB_1]
 		FROM
 			[SampleClass] [a]
 	) [a_1]

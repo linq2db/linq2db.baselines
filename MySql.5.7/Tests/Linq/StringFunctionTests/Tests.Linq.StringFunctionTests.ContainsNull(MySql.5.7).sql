@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @id Int32
-SET     @id = 0
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @id
+	1 = 0
 

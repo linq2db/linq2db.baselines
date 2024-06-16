@@ -157,8 +157,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
+DECLARE @Id Int -- Int32
+SET     @Id = 2
 
 SELECT TOP 2
+	CVar(?),
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

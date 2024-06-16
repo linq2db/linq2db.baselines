@@ -24,23 +24,34 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`i`.`PersonID`,
-	`i`.`FirstName`,
-	`i`.`LastName`,
-	`i`.`MiddleName`,
-	`i`.`Gender`,
-	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
-	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
+	`i_1`.`PersonID`,
+	`i_1`.`FirstName`,
+	`i_1`.`LastName`,
+	`i_1`.`MiddleName`,
+	`i_1`.`Gender`,
+	`i_1`.`FullName`,
+	`i_1`.`FullName`,
+	`i_1`.`DoctorCount`
+FROM
 	(
 		SELECT
-			COUNT(*)
+			`i`.`LastName`,
+			`i`.`FirstName`,
+			`i`.`PersonID`,
+			`i`.`MiddleName`,
+			`i`.`Gender`,
+			Concat(`i`.`LastName`, ', ', `i`.`FirstName`) as `FullName`,
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					`Doctor` `d`
+				WHERE
+					`d`.`PersonID` = `i`.`PersonID`
+			) as `DoctorCount`
 		FROM
-			`Doctor` `d`
-		WHERE
-			`d`.`PersonID` = `i`.`PersonID`
-	)
-FROM
-	`Person` `i`
+			`Person` `i`
+	) `i_1`
 WHERE
-	Concat(`i`.`LastName`, ', ', `i`.`FirstName`) <> 'Pupkin, John'
+	Concat(`i_1`.`LastName`, ', ', `i_1`.`FirstName`) <> 'Pupkin, John'
 

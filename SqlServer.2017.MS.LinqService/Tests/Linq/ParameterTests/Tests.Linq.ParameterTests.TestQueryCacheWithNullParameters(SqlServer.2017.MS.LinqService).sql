@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @id Int -- Int32
-SET     @id = 0
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[PersonID] = @id
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

@@ -9,6 +9,4 @@ SELECT
 	p.Gender
 FROM
 	Person p
-WHERE
-	p.PersonID <> 0
 

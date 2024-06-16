@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017
-DECLARE @ID Int -- Int32
-SET     @ID = 0
 
 SELECT
 	[p].[FirstName],
@@ -11,6 +9,4 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-WHERE
-	[p].[PersonID] <> @ID
 

@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toYear(t.DateTimeValue)
+	makeDateTime(toYear(t.DateTimeValue), 10, 1, 0, 0, 0)
 FROM
 	LinqDataTypes t
 WHERE
