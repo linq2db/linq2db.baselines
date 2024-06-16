@@ -43,8 +43,6 @@ BeforeExecute
 -- Firebird.5 Firebird4 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 2
 
 SELECT
 	CAST(@Id AS Int),
@@ -52,7 +50,7 @@ SELECT
 FROM
 	"AsyncDataTable" "c_1"
 WHERE
-	"c_1"."Id" = @Id_1
+	"c_1"."Id" = CAST(@Id AS Int)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute

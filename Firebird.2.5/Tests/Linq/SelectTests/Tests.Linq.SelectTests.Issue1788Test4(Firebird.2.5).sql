@@ -45,14 +45,14 @@ FROM
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Char -- String
-SET     @p = '0'
+DECLARE @f1 Char -- String
+SET     @f1 = '0'
 
 SELECT
 	"l_1"."Id",
 	"l_1"."Value1",
 	"l_1"."HasValue",
-	CAST(@p AS CHAR(1))
+	CAST(@f1 AS CHAR(1))
 FROM
 	"Table1788" "p"
 		LEFT JOIN (

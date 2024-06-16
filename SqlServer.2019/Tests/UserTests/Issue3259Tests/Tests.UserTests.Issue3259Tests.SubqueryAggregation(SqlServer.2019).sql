@@ -126,7 +126,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	[t9].[SUM_1],
+	[t9].[WithParentReference],
 	[t9].[WithParentReferenceCustom1],
 	[t9].[WithParentReferenceCustom2],
 	[t9].[WithoutParentReference]
@@ -156,7 +156,7 @@ FROM
 										[a_Employee].[EmployeeId] = [e].[EmployeeId]
 								) [d] ON 1=1
 					) [t2]
-			) as [SUM_1],
+			) as [WithParentReference],
 			(
 				SELECT
 					Sum([t4].[c1])
@@ -234,7 +234,7 @@ FROM
 				INNER JOIN [Employee] [a_Employee] ON [tracking].[EmployeeId] = [a_Employee].[EmployeeId]
 	) [t9]
 ORDER BY
-	Coalesce([t9].[SUM_1], 0),
+	Coalesce([t9].[WithParentReference], 0),
 	Coalesce([t9].[WithParentReferenceCustom1], 0),
 	Coalesce([t9].[WithParentReferenceCustom2], 0),
 	Coalesce([t9].[WithoutParentReference], 0) DESC

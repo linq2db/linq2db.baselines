@@ -196,8 +196,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = NULL
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = NULL
 
 SELECT
 	[x].[Id],

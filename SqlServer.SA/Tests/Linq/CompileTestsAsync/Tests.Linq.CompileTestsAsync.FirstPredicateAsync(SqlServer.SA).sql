@@ -37,8 +37,6 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 2
 
 SELECT TOP (1)
 	@Id,
@@ -46,7 +44,7 @@ SELECT TOP (1)
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

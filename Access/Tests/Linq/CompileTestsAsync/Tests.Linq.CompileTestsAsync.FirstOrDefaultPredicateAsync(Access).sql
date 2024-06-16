@@ -166,7 +166,7 @@ SELECT TOP 1
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = CVar(@Id_1)
 
 BeforeExecute
 -- Access AccessOleDb

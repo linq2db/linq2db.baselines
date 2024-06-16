@@ -49,8 +49,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Id_1 Int32
-SET     @Id_1 = 2
 
 SELECT
 	:Id,
@@ -58,7 +56,7 @@ SELECT
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id_1 AND ROWNUM <= 1
+	c_1."Id" = :Id AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

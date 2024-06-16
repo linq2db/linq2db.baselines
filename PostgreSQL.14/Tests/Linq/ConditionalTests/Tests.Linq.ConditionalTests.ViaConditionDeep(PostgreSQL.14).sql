@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = NULL
+DECLARE @IntProp Integer -- Int32
+SET     @IntProp = NULL
 
 SELECT
 	x."Id",
@@ -56,7 +56,7 @@ WHERE
 		ELSE x."StringProp" || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN :p
+		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN :IntProp
 		WHEN x."StringProp" = '2' THEN 1
 		ELSE 2
 	END = 2

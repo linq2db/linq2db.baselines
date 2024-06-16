@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = NULL
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = NULL
 
 SELECT
 	[p_2].[ParentID],
@@ -12,7 +12,7 @@ FROM
 		SELECT
 			CASE
 				WHEN [p_1].[ParentID] IS NOT NULL THEN [p_1].[Value1]
-				ELSE @p
+				ELSE @Value1
 			END as [Value1],
 			[p_1].[ParentID],
 			[p_1].[ParentID_1],

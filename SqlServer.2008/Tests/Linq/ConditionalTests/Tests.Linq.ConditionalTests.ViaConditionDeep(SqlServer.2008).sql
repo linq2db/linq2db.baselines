@@ -38,8 +38,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @p Int -- Int32
-SET     @p = NULL
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = NULL
 
 SELECT
 	[x].[Id],
@@ -61,7 +61,7 @@ WHERE
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
-			THEN @p
+			THEN @IntProp
 		WHEN [x].[StringProp] = N'2' THEN 1
 		ELSE 2
 	END = 2

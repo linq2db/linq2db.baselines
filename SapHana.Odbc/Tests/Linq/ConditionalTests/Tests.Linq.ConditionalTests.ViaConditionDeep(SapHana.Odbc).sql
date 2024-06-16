@@ -196,8 +196,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = NULL
+DECLARE @IntProp  -- Int32
+SET     @IntProp = NULL
 
 SELECT
 	"x"."Id",
