@@ -14,11 +14,11 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TableWithGuid"
 			(
-				"Default"  CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"Binary"   CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"String"   CHAR(38)                      NOT NULL,
-				"DefaultN" CHAR(16) CHARACTER SET OCTETS,
-				"BinaryN"  CHAR(16) CHARACTER SET OCTETS,
+				"Default"  BINARY(16) NOT NULL,
+				"Binary"   BINARY(16) NOT NULL,
+				"String"   CHAR(38)   NOT NULL,
+				"DefaultN" BINARY(16),
+				"BinaryN"  BINARY(16),
 				"StringN"  CHAR(38)
 			)
 		';

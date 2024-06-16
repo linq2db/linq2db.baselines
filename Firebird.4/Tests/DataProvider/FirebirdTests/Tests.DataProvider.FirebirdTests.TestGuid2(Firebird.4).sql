@@ -54,7 +54,7 @@ SET
 	"DateTimeValue" = CAST(@DateTimeValue AS TimeStamp),
 	"DateTimeValue2" = CAST(@DateTimeValue2 AS TimeStamp),
 	"BoolValue" = CAST(@BoolValue AS BOOLEAN),
-	"GuidValue" = CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS),
+	"GuidValue" = CAST(@GuidValue AS BINARY(16)),
 	"SmallIntValue" = CAST(@SmallIntValue AS SmallInt),
 	"IntValue" = CAST(@IntValue AS Int),
 	"BigIntValue" = CAST(@BigIntValue AS BigInt),
@@ -72,7 +72,7 @@ SET     @ID = 1
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"GuidValue" = CAST(@GuidValue AS CHAR(16) CHARACTER SET OCTETS)
+	"GuidValue" = CAST(@GuidValue AS BINARY(16))
 WHERE
 	"t".ID = @ID
 
