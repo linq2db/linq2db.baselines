@@ -67,8 +67,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p NVarChar -- String
-SET     @p = NULL
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
 
 SELECT
 	[item_1].[Id],
@@ -79,7 +79,7 @@ FROM
 		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
 WHERE
 	CASE
-		WHEN [item_1].[PayRateId] IS NULL THEN @p
+		WHEN [item_1].[PayRateId] IS NULL THEN @Name
 		ELSE [a_PayRate].[Name]
 	END = 'test'
 
