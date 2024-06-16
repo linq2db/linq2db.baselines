@@ -14,9 +14,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Issue1303"
 			(
-				ID       Int  NOT NULL,
-				"Array"  BLOB,
-				"Binary" BLOB,
+				ID       Int           NOT NULL,
+				"Array"  VARBINARY(10),
+				"Binary" VARBINARY(10),
 
 				CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
 			)
@@ -39,8 +39,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	CAST(@Array AS BLOB),
-	CAST(@Binary AS BLOB)
+	CAST(@Array AS VARBINARY(3)),
+	CAST(@Binary AS VARBINARY(10))
 )
 
 BeforeExecute

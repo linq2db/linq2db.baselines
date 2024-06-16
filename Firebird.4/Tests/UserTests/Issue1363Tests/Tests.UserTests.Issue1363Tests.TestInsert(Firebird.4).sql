@@ -14,8 +14,8 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Issue1363"
 			(
-				"required_field" CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"optional_field" CHAR(16) CHARACTER SET OCTETS
+				"required_field" BINARY(16) NOT NULL,
+				"optional_field" BINARY(16)
 			)
 		';
 END
@@ -32,7 +32,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@id AS BINARY(16)),
 	(
 		SELECT
 			"t1"."required_field"
@@ -57,7 +57,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
+	CAST(@id AS BINARY(16)),
 	(
 		SELECT
 			"t1"."required_field"
