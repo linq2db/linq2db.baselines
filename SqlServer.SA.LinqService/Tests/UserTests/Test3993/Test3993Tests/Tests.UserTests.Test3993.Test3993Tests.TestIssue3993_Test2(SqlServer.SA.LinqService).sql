@@ -106,9 +106,9 @@ VALUES
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @UtcNow DateTime2
-SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 16, 23, 37, 25, 3257067, 7)
+SET     @UtcNow = DATETIME2FROMPARTS(2024, 6, 17, 0, 28, 43, 5383230, 7)
 DECLARE @Date DateTime2
-SET     @Date = DATETIME2FROMPARTS(2024, 6, 16, 0, 0, 0, 0, 7)
+SET     @Date = DATETIME2FROMPARTS(2024, 6, 17, 0, 0, 0, 0, 7)
 
 SELECT
 	[x_1].[StartDateTime],
