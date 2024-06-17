@@ -91,7 +91,7 @@ WHERE
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-06-16 23:45:27.547' AS timestamp)
+SET     @UtcNow = CAST('2024-06-17 11:03:57.901' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
@@ -110,7 +110,7 @@ WHERE
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = CAST('2024-06-16 23:45:27.553' AS timestamp)
+SET     @UtcNow = CAST('2024-06-17 11:03:57.906' AS timestamp)
 
 SELECT
 	"x"."StartDateTime",
