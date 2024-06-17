@@ -121,7 +121,7 @@ VALUES
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-06-17 00:13:52.514128'
+SET     @UtcNow = TIMESTAMP '2024-06-17 11:44:10.053750'
 DECLARE @Date_1 TimeStamp -- DateTime
 SET     @Date_1 = TIMESTAMP '2024-06-17 00:00:00.000000'
 
