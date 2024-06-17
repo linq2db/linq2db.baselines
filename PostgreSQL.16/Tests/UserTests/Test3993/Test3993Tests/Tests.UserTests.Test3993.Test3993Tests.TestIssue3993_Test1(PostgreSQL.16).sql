@@ -86,7 +86,7 @@ BeforeExecute
 DECLARE @p Interval -- Object
 SET     @p = 00:05:00
 DECLARE @UtcNow Timestamp -- DateTime2
-SET     @UtcNow = '2024-06-15 08:31:36.788'::timestamp
+SET     @UtcNow = '2024-06-17 00:16:02.779'::timestamp
 
 SELECT
 	x."StartDateTime",
@@ -107,7 +107,7 @@ BeforeExecute
 DECLARE @p Interval -- Object
 SET     @p = 36500.00:00:00
 DECLARE @UtcNow Timestamp -- DateTime2
-SET     @UtcNow = '2024-06-15 08:31:36.793'::timestamp
+SET     @UtcNow = '2024-06-17 00:16:02.785'::timestamp
 
 SELECT
 	x."StartDateTime",
@@ -146,21 +146,36 @@ DECLARE @DateTime4Utc Timestamp -- DateTime2
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
-	x."StartDateTime",
-	x."PreNotification",
-	x."StartDateTime" + (-1 * (x."PreNotification" / 10000)) * Interval '1 Millisecond',
-	x."StartDateTime" + (-1 * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * Interval '1 Millisecond',
-	x."StartDateTime" + (-1 * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * Interval '1 Millisecond',
-	x."StartDateTime" - x."PreNotification3",
-	x."StartDateTime" + (-x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime" + (x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime2" + (-x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime2" - x."PreNotification3",
-	Floor(Extract(day From x."StrField"))::Int
+	x_1."NotificationDateTime_1",
+	x_1."PreNotification",
+	x_1."NotificationDateTime",
+	x_1."NotificationDateTime2",
+	x_1."NotificationDateTime3",
+	x_1."NotificationDateTime4",
+	x_1."NotificationDateTime5",
+	x_1."NotificationDateTime6",
+	x_1."NotificationDateTime7",
+	x_1."NotificationDateTime8",
+	x_1."Day_1"
 FROM
-	"Common_Topology_Locations" x
+	(
+		SELECT
+			x."StartDateTime" + (-1 * (x."PreNotification" / 10000)) * Interval '1 Millisecond' as "NotificationDateTime",
+			x."StartDateTime" as "NotificationDateTime_1",
+			x."PreNotification",
+			x."StartDateTime" + (-1 * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * Interval '1 Millisecond' as "NotificationDateTime2",
+			x."StartDateTime" + (-1 * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * Interval '1 Millisecond' as "NotificationDateTime3",
+			x."StartDateTime" - x."PreNotification3" as "NotificationDateTime4",
+			x."StartDateTime" + (-x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime5",
+			x."StartDateTime" + (x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime6",
+			x."StartDateTime2" + (-x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime7",
+			x."StartDateTime2" - x."PreNotification3" as "NotificationDateTime8",
+			Floor(Extract(day From x."StrField"))::Int as "Day_1"
+		FROM
+			"Common_Topology_Locations" x
+	) x_1
 WHERE
-	x."StartDateTime" + (-1 * (x."PreNotification" / 10000)) * Interval '1 Millisecond' < :DateTime4Utc
+	x_1."NotificationDateTime" < :DateTime4Utc
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -168,21 +183,36 @@ DECLARE @DateTime4Utc Timestamp -- DateTime2
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
-	x."StartDateTime",
-	x."PreNotification",
-	x."StartDateTime" + (-1 * (x."PreNotification" / 10000)) * Interval '1 Millisecond',
-	x."StartDateTime" + (-1 * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * Interval '1 Millisecond',
-	x."StartDateTime" + (-1 * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * Interval '1 Millisecond',
-	x."StartDateTime" - x."PreNotification3",
-	x."StartDateTime" + (-x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime" + (x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime2" + (-x."PreNotification" / 10) * Interval '1 Microsecond',
-	x."StartDateTime2" - x."PreNotification3",
-	Floor(Extract(day From x."StrField"))::Int
+	x_1."NotificationDateTime2_1",
+	x_1."PreNotification",
+	x_1."NotificationDateTime",
+	x_1."NotificationDateTime2",
+	x_1."NotificationDateTime3",
+	x_1."NotificationDateTime4",
+	x_1."NotificationDateTime5",
+	x_1."NotificationDateTime6",
+	x_1."NotificationDateTime7",
+	x_1."NotificationDateTime8",
+	x_1."Day_1"
 FROM
-	"Common_Topology_Locations" x
+	(
+		SELECT
+			x."StartDateTime" + (-1 * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * Interval '1 Millisecond' as "NotificationDateTime2",
+			x."StartDateTime" as "NotificationDateTime2_1",
+			x."PreNotification",
+			x."StartDateTime" + (-1 * (x."PreNotification" / 10000)) * Interval '1 Millisecond' as "NotificationDateTime",
+			x."StartDateTime" + (-1 * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * Interval '1 Millisecond' as "NotificationDateTime3",
+			x."StartDateTime" - x."PreNotification3" as "NotificationDateTime4",
+			x."StartDateTime" + (-x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime5",
+			x."StartDateTime" + (x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime6",
+			x."StartDateTime2" + (-x."PreNotification" / 10) * Interval '1 Microsecond' as "NotificationDateTime7",
+			x."StartDateTime2" - x."PreNotification3" as "NotificationDateTime8",
+			Floor(Extract(day From x."StrField"))::Int as "Day_1"
+		FROM
+			"Common_Topology_Locations" x
+	) x_1
 WHERE
-	x."StartDateTime" + (-1 * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * Interval '1 Millisecond' < :DateTime4Utc
+	x_1."NotificationDateTime2" < :DateTime4Utc
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
