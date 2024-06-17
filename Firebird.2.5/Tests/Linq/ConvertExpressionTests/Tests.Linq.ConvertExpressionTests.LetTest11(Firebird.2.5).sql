@@ -2,16 +2,29 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	(
-		SELECT FIRST 1
-			"c_1"."ParentID"
-		FROM
-			"Child" "c_1"
-		WHERE
-			"c_1"."ParentID" > 0
-		ORDER BY
-			"c_1"."ParentID"
-	),
+	CASE
+		WHEN (
+			SELECT FIRST 1
+				"c_1"."ParentID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" > 0
+			ORDER BY
+				"c_1"."ParentID"
+		) IS NULL
+			THEN 0
+		ELSE (
+			SELECT FIRST 1
+				"c_1"."ParentID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" > 0
+			ORDER BY
+				"c_1"."ParentID"
+		)
+	END,
 	(
 		SELECT FIRST 1
 			"c_2"."ParentID"
