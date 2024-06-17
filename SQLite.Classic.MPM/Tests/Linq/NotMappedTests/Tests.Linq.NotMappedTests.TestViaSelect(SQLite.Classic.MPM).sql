@@ -112,6 +112,18 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 0
+DECLARE @Value NVarChar -- String
+SET     @Value = NULL
+DECLARE @ParentId  -- Int32
+SET     @ParentId = NULL
+DECLARE @Id_1  -- Int32
+SET     @Id_1 = 0
+DECLARE @Value_1 NVarChar -- String
+SET     @Value_1 = NULL
+DECLARE @ParentId_1  -- Int32
+SET     @ParentId_1 = NULL
 
 SELECT
 	[q].[Id],
@@ -121,19 +133,40 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [s].[Id] IS NULL THEN 1
-		ELSE 0
+		WHEN [s].[Id] IS NULL THEN @Id
+		ELSE [s].[Id]
 	END,
-	[s].[Id],
-	[s].[Value],
-	[s].[ParentId],
+	CASE
+		WHEN [s].[Id] IS NULL THEN @Value
+		ELSE [s].[Value]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN @ParentId
+		ELSE [s].[ParentId]
+	END,
 	CASE
 		WHEN [s_1].[Id] IS NULL THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN @Id_1
+		ELSE [s_1].[Id]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN @Value_1
+		ELSE [s_1].[Value]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN @ParentId_1
+		ELSE [s_1].[ParentId]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN 1
+		ELSE 0
+	END,
 	[s_1].[Id],
-	[s_1].[Value],
-	[s_1].[ParentId]
+	[s_1].[ParentId],
+	[s_1].[Value]
 FROM
 	[SuperClass] [q]
 		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [q].[Id]

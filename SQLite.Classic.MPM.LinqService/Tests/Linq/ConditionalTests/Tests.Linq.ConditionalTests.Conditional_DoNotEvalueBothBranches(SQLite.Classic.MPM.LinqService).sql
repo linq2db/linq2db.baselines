@@ -2,5 +2,5 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	NULL
+	20
 
