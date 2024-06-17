@@ -2,5 +2,5 @@
 -- SqlServer.2014
 
 SELECT
-	NULL
+	20
 
