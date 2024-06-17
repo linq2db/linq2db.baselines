@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2022
+DECLARE @p Int -- Int32
+SET     @p = 0
 
 SELECT
-	[q].[ParentID]
+	IIF([q].[ParentID] IS NOT NULL, [q].[ParentID], @p)
 FROM
 	[Parent] [q]
 
