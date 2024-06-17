@@ -45,13 +45,31 @@ FROM
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @p Boolean
+SET     @p = FALSE
 
 SELECT
-	"l"."Id",
-	"l"."Value1"
+	CASE
+		WHEN "l_1"."Id" IS NOT NULL THEN "l_1"."HasValue"
+		ELSE CAST(@p AS BOOLEAN)
+	END,
+	"l_1"."Value1"
 FROM
 	"Table1788" "p"
-		LEFT JOIN "Table1788" "l" ON "l"."Id" = "p"."Id" + 1
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN "l"."Value1" IS NOT NULL THEN CASE
+						WHEN "l"."Value1" IS NOT NULL THEN TRUE
+						ELSE FALSE
+					END
+					ELSE FALSE
+				END as "HasValue",
+				"l"."Id",
+				"l"."Value1"
+			FROM
+				"Table1788" "l"
+		) "l_1" ON "l_1"."Id" = "p"."Id" + 1
 
 BeforeExecute
 -- Firebird.3 Firebird3
