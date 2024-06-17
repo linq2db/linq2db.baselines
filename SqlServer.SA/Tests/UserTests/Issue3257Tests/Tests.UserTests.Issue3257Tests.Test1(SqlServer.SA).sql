@@ -40,8 +40,7 @@ SELECT
 			[ChecklistTrigger] [a_ChecklistTriggers]
 		WHERE
 			[x].[Id] = [a_ChecklistTriggers].[ChecklistId]
-	), 1, 0),
-	(
+	), (
 		SELECT
 			STRING_AGG(CASE
 				WHEN [a_ChecklistTriggers_1].[TriggerType] = 1 THEN N'Hired'
@@ -53,7 +52,7 @@ SELECT
 			[ChecklistTrigger] [a_ChecklistTriggers_1]
 		WHERE
 			[x].[Id] = [a_ChecklistTriggers_1].[ChecklistId]
-	)
+	), N'None')
 FROM
 	[Checklist] [x]
 
