@@ -1,11 +1,25 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
+DECLARE @p Integer -- Int32
+SET     @p = NULL
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = NULL
+DECLARE @p_2 Integer -- Int32
+SET     @p_2 = NULL
 
 SELECT
 	"p"."ParentID",
-	"p"."Value1",
-	"a_Parent"."ParentID",
-	"a_Parent"."Value1"
+	CASE
+		WHEN "p"."ParentID" IS NOT NULL THEN "p"."Value1"
+		ELSE CAST(@p AS Int)
+	END,
+	CASE
+		WHEN "c_1"."ParentID" IS NOT NULL THEN CASE
+			WHEN "a_Parent"."ParentID" IS NOT NULL THEN "a_Parent"."Value1"
+			ELSE CAST(@p_1 AS Int)
+		END
+		ELSE CAST(@p_2 AS Int)
+	END
 FROM
 	"Parent" "p"
 		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "p"."ParentID"
