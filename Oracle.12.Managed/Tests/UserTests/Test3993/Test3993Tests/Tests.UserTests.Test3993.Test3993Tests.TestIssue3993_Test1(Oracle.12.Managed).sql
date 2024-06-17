@@ -92,7 +92,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 00:05:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-06-15 08:24:40.809453'
+SET     @UtcNow = TIMESTAMP '2024-06-17 00:07:31.217897'
 
 SELECT
 	x."StartDateTime",
@@ -113,7 +113,7 @@ BeforeExecute
 DECLARE @p IntervalDS -- Object
 SET     @p = 36500.00:00:00
 DECLARE @UtcNow TimeStamp -- DateTime
-SET     @UtcNow = TIMESTAMP '2024-06-15 08:24:40.815917'
+SET     @UtcNow = TIMESTAMP '2024-06-17 00:07:31.225868'
 
 SELECT
 	x."StartDateTime",
@@ -152,21 +152,36 @@ DECLARE @DateTime4Utc TimeStamp -- DateTime
 SET     @DateTime4Utc = TIMESTAMP '2020-02-29 17:54:55.123100'
 
 SELECT
-	x."StartDateTime",
-	x."PreNotification",
-	x."StartDateTime" + (-1D * (x."PreNotification" / 10000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (-1D * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (-1D * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" - x."PreNotification3",
-	x."StartDateTime" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime2" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime2" - x."PreNotification3",
-	EXTRACT(DAY FROM x."StrField")
+	x_1."NotificationDateTime_1",
+	x_1."PreNotification",
+	x_1."NotificationDateTime",
+	x_1."NotificationDateTime2",
+	x_1."NotificationDateTime3",
+	x_1."NotificationDateTime4",
+	x_1."NotificationDateTime5",
+	x_1."NotificationDateTime6",
+	x_1."NotificationDateTime7",
+	x_1."NotificationDateTime8",
+	x_1."Day_1"
 FROM
-	"Common_Topology_Locations" x
+	(
+		SELECT
+			x."StartDateTime" + (-1D * (x."PreNotification" / 10000)) * INTERVAL '0.001' SECOND as "NotificationDateTime",
+			x."StartDateTime" as "NotificationDateTime_1",
+			x."PreNotification",
+			x."StartDateTime" + (-1D * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * INTERVAL '0.001' SECOND as "NotificationDateTime2",
+			x."StartDateTime" + (-1D * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * INTERVAL '0.001' SECOND as "NotificationDateTime3",
+			x."StartDateTime" - x."PreNotification3" as "NotificationDateTime4",
+			x."StartDateTime" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime5",
+			x."StartDateTime" + (x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime6",
+			x."StartDateTime2" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime7",
+			x."StartDateTime2" - x."PreNotification3" as "NotificationDateTime8",
+			EXTRACT(DAY FROM x."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" x
+	) x_1
 WHERE
-	x."StartDateTime" + (-1D * (x."PreNotification" / 10000)) * INTERVAL '0.001' SECOND < :DateTime4Utc
+	x_1."NotificationDateTime" < :DateTime4Utc
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -174,21 +189,36 @@ DECLARE @DateTime4Utc TimeStamp -- DateTime
 SET     @DateTime4Utc = TIMESTAMP '2020-02-29 17:54:55.123100'
 
 SELECT
-	x."StartDateTime",
-	x."PreNotification",
-	x."StartDateTime" + (-1D * (x."PreNotification" / 10000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (-1D * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (-1D * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" - x."PreNotification3",
-	x."StartDateTime" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime" + (x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime2" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND,
-	x."StartDateTime2" - x."PreNotification3",
-	EXTRACT(DAY FROM x."StrField")
+	x_1."NotificationDateTime2_1",
+	x_1."PreNotification",
+	x_1."NotificationDateTime",
+	x_1."NotificationDateTime2",
+	x_1."NotificationDateTime3",
+	x_1."NotificationDateTime4",
+	x_1."NotificationDateTime5",
+	x_1."NotificationDateTime6",
+	x_1."NotificationDateTime7",
+	x_1."NotificationDateTime8",
+	x_1."Day_1"
 FROM
-	"Common_Topology_Locations" x
+	(
+		SELECT
+			x."StartDateTime" + (-1D * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * INTERVAL '0.001' SECOND as "NotificationDateTime2",
+			x."StartDateTime" as "NotificationDateTime2_1",
+			x."PreNotification",
+			x."StartDateTime" + (-1D * (x."PreNotification" / 10000)) * INTERVAL '0.001' SECOND as "NotificationDateTime",
+			x."StartDateTime" + (-1D * ((extract(second from x."PreNotification3") + extract(minute from x."PreNotification3") * 60 + extract(hour from x."PreNotification3") * 3600 + extract(day from x."PreNotification3") * 86400) * 1000)) * INTERVAL '0.001' SECOND as "NotificationDateTime3",
+			x."StartDateTime" - x."PreNotification3" as "NotificationDateTime4",
+			x."StartDateTime" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime5",
+			x."StartDateTime" + (x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime6",
+			x."StartDateTime2" + (-x."PreNotification" / 10000) * INTERVAL '0.001' SECOND as "NotificationDateTime7",
+			x."StartDateTime2" - x."PreNotification3" as "NotificationDateTime8",
+			EXTRACT(DAY FROM x."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" x
+	) x_1
 WHERE
-	x."StartDateTime" + (-1D * ((extract(second from x."PreNotification2") + extract(minute from x."PreNotification2") * 60 + extract(hour from x."PreNotification2") * 3600 + extract(day from x."PreNotification2") * 86400) * 1000)) * INTERVAL '0.001' SECOND < :DateTime4Utc
+	x_1."NotificationDateTime2" < :DateTime4Utc
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
