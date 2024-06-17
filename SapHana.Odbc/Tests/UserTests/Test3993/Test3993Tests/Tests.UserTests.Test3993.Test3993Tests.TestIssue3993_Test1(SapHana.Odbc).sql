@@ -105,7 +105,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 3000000000
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-06-15 09:17:41.984'
+SET     @UtcNow = '2024-06-17 12:20:49.619'
 
 SELECT
 	"x"."StartDateTime",
@@ -126,7 +126,7 @@ BeforeExecute
 DECLARE @p  -- Int64
 SET     @p = 31536000000000000
 DECLARE @UtcNow  -- DateTime
-SET     @UtcNow = '2024-06-15 09:17:42.015'
+SET     @UtcNow = '2024-06-17 12:20:49.643'
 
 SELECT
 	"x"."StartDateTime",
@@ -165,21 +165,36 @@ DECLARE @DateTime4Utc  -- DateTime
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	"x"."StartDateTime",
-	"x"."PreNotification",
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification2" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification3" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", -"x"."PreNotification3" ),
-	Add_Nano100("x"."StartDateTime", -"x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime", "x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime2", -"x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime2", -"x"."PreNotification3" ),
-	DayOfMonth("x"."StrField")
+	"x_1"."NotificationDateTime_1",
+	"x_1"."PreNotification",
+	"x_1"."NotificationDateTime",
+	"x_1"."NotificationDateTime2",
+	"x_1"."NotificationDateTime3",
+	"x_1"."NotificationDateTime4",
+	"x_1"."NotificationDateTime5",
+	"x_1"."NotificationDateTime6",
+	"x_1"."NotificationDateTime7",
+	"x_1"."NotificationDateTime8",
+	"x_1"."Day_1"
 FROM
-	"Common_Topology_Locations" "x"
+	(
+		SELECT
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification" / 10000)) * 10000) as "NotificationDateTime",
+			"x"."StartDateTime" as "NotificationDateTime_1",
+			"x"."PreNotification",
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification2" / 10000)) * 10000) as "NotificationDateTime2",
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification3" / 10000)) * 10000) as "NotificationDateTime3",
+			Add_Nano100("x"."StartDateTime", -"x"."PreNotification3" ) as "NotificationDateTime4",
+			Add_Nano100("x"."StartDateTime", -"x"."PreNotification" ) as "NotificationDateTime5",
+			Add_Nano100("x"."StartDateTime", "x"."PreNotification" ) as "NotificationDateTime6",
+			Add_Nano100("x"."StartDateTime2", -"x"."PreNotification" ) as "NotificationDateTime7",
+			Add_Nano100("x"."StartDateTime2", -"x"."PreNotification3" ) as "NotificationDateTime8",
+			DayOfMonth("x"."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" "x"
+	) "x_1"
 WHERE
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification" / 10000)) * 10000) < ?
+	"x_1"."NotificationDateTime" < ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -187,21 +202,36 @@ DECLARE @DateTime4Utc  -- DateTime
 SET     @DateTime4Utc = '2020-02-29 17:54:55.123'
 
 SELECT
-	"x"."StartDateTime",
-	"x"."PreNotification",
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification2" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification3" / 10000)) * 10000),
-	Add_Nano100("x"."StartDateTime", -"x"."PreNotification3" ),
-	Add_Nano100("x"."StartDateTime", -"x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime", "x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime2", -"x"."PreNotification" ),
-	Add_Nano100("x"."StartDateTime2", -"x"."PreNotification3" ),
-	DayOfMonth("x"."StrField")
+	"x_1"."NotificationDateTime2_1",
+	"x_1"."PreNotification",
+	"x_1"."NotificationDateTime",
+	"x_1"."NotificationDateTime2",
+	"x_1"."NotificationDateTime3",
+	"x_1"."NotificationDateTime4",
+	"x_1"."NotificationDateTime5",
+	"x_1"."NotificationDateTime6",
+	"x_1"."NotificationDateTime7",
+	"x_1"."NotificationDateTime8",
+	"x_1"."Day_1"
 FROM
-	"Common_Topology_Locations" "x"
+	(
+		SELECT
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification2" / 10000)) * 10000) as "NotificationDateTime2",
+			"x"."StartDateTime" as "NotificationDateTime2_1",
+			"x"."PreNotification",
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification" / 10000)) * 10000) as "NotificationDateTime",
+			Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification3" / 10000)) * 10000) as "NotificationDateTime3",
+			Add_Nano100("x"."StartDateTime", -"x"."PreNotification3" ) as "NotificationDateTime4",
+			Add_Nano100("x"."StartDateTime", -"x"."PreNotification" ) as "NotificationDateTime5",
+			Add_Nano100("x"."StartDateTime", "x"."PreNotification" ) as "NotificationDateTime6",
+			Add_Nano100("x"."StartDateTime2", -"x"."PreNotification" ) as "NotificationDateTime7",
+			Add_Nano100("x"."StartDateTime2", -"x"."PreNotification3" ) as "NotificationDateTime8",
+			DayOfMonth("x"."StrField") as "Day_1"
+		FROM
+			"Common_Topology_Locations" "x"
+	) "x_1"
 WHERE
-	Add_Nano100("x"."StartDateTime", (-1 * ("x"."PreNotification2" / 10000)) * 10000) < ?
+	"x_1"."NotificationDateTime2" < ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
