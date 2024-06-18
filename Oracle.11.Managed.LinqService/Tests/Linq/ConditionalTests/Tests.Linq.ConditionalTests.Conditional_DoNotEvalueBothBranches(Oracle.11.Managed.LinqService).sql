@@ -2,6 +2,6 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	NULL
+	20D
 FROM SYS.DUAL
 
