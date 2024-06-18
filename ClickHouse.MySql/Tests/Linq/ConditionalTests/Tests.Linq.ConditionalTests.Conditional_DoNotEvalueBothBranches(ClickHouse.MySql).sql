@@ -2,5 +2,5 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	0
+	toFloat64(20)
 
