@@ -47,8 +47,14 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"l"."Value1",
-	'0'
+	CASE
+		WHEN "l"."Value1" IS NOT NULL THEN CASE
+			WHEN "l"."Value1" IS NOT NULL THEN '1'
+			ELSE '0'
+		END
+		ELSE '0'
+	END,
+	"l"."Value1"
 FROM
 	"Table1788" "p"
 		LEFT JOIN "Table1788" "l" ON "l"."Id" = "p"."Id" + 1
