@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ParentID],
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	IIF(EXISTS(
 		SELECT
 			*
