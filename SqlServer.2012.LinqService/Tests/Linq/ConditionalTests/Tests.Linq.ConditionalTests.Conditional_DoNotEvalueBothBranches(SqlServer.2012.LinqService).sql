@@ -2,5 +2,5 @@
 -- SqlServer.2012
 
 SELECT
-	NULL
+	20
 
