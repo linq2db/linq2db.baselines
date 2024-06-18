@@ -2,6 +2,6 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	NULL
+	20
 FROM rdb$database
 
