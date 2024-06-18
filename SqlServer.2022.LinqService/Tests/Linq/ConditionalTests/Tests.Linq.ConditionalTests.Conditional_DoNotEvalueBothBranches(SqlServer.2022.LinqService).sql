@@ -2,5 +2,5 @@
 -- SqlServer.2022
 
 SELECT
-	NULL
+	20
 
