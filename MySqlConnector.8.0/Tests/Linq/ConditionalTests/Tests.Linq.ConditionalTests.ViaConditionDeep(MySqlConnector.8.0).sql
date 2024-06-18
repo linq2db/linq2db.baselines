@@ -36,8 +36,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p Int32
-SET     @p = NULL
 
 SELECT
 	`x`.`Id`,
@@ -56,7 +54,7 @@ WHERE
 		ELSE Concat(`x`.`StringProp`, '2')
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN `x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL THEN @p
+		WHEN `x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL THEN NULL
 		WHEN `x`.`StringProp` = '2' THEN 1
 		ELSE 2
 	END = 2

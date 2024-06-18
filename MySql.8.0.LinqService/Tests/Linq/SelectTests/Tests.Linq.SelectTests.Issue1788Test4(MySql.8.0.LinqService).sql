@@ -81,11 +81,27 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`l`.`Id`,
-	`l`.`Value1`
+	CASE
+		WHEN `l_1`.`Id` IS NOT NULL THEN `l_1`.`HasValue`
+		ELSE 0
+	END,
+	`l_1`.`Value1`
 FROM
 	`Table1788` `p`
-		LEFT JOIN `Table1788` `l` ON `l`.`Id` = `p`.`Id` + 1
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN `l`.`Value1` IS NOT NULL THEN CASE
+						WHEN `l`.`Value1` IS NOT NULL THEN 1
+						ELSE 0
+					END
+					ELSE 0
+				END as `HasValue`,
+				`l`.`Id`,
+				`l`.`Value1`
+			FROM
+				`Table1788` `l`
+		) `l_1` ON `l_1`.`Id` = `p`.`Id` + 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
