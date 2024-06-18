@@ -2,7 +2,10 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	q."ParentID"
+	CASE
+		WHEN q."ParentID" IS NOT NULL THEN q."ParentID"
+		ELSE 0
+	END
 FROM
 	"Parent" q
 
