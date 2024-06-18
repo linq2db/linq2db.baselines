@@ -103,11 +103,14 @@ BeforeExecute
 
 SELECT TOP (2)
 	[t1].[InId] as [LinkId],
-	[e].[InId],
-	[t1].[InMinQuantity],
-	[e].[InMinQuantity] as [InMinQuantity_1],
-	[t1].[InMaxQuantity],
-	[e].[InMaxQuantity] as [InMaxQuantity_1]
+	CASE
+		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
+		ELSE [e].[InMinQuantity]
+	END as [MinQuantity],
+	CASE
+		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
+		ELSE [e].[InMaxQuantity]
+	END as [MaxQuantity]
 FROM
 	[StLink] [t1]
 		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
@@ -119,11 +122,14 @@ BeforeExecute
 
 SELECT TOP (2)
 	[t1].[InId] as [LinkId],
-	[e].[InId],
-	[t1].[InMinQuantity],
-	[e].[InMinQuantity] as [InMinQuantity_1],
-	[t1].[InMaxQuantity],
-	[e].[InMaxQuantity] as [InMaxQuantity_1]
+	CASE
+		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
+		ELSE [e].[InMinQuantity]
+	END as [MinQuantity],
+	CASE
+		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
+		ELSE [e].[InMaxQuantity]
+	END as [MaxQuantity]
 FROM
 	[StLink] [t1]
 		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]

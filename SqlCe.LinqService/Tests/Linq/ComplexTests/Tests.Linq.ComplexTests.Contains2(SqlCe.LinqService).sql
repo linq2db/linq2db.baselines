@@ -7,7 +7,11 @@ SELECT
 	[gc_1].[not_null],
 	[gc_1].[ParentID] as [ParentID_1],
 	[gc_1].[ChildID],
-	[gc_1].[GrandChildID]
+	[gc_1].[GrandChildID],
+	CASE
+		WHEN [gc_1].[not_null] IS NOT NULL THEN [gc_1].[ChildID]
+		ELSE 2147483647
+	END as [c1]
 FROM
 	[Child] [ch]
 		INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
