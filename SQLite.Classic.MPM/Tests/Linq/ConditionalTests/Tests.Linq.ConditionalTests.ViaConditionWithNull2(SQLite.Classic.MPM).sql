@@ -36,8 +36,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p NVarChar -- String
-SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -47,7 +45,7 @@ FROM
 WHERE
 	CASE
 		WHEN [x].[StringProp] = '1' THEN [x].[StringProp]
-		ELSE @p
+		ELSE NULL
 	END LIKE '%2%' ESCAPE '~'
 
 BeforeExecute
