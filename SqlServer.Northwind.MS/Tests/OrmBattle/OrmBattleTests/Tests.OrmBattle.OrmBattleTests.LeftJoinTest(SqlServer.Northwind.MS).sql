@@ -2,8 +2,7 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[p].[ProductID],
-	[p].[ProductName],
+	IIF([p].[ProductID] IS NULL, N'Nothing!', [p].[ProductName]),
 	[t1].[CategoryName]
 FROM
 	[Categories] [t1]
