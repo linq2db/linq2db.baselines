@@ -2,6 +2,5 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	NULL,
-	0
+	toInt32(NULL)
 
