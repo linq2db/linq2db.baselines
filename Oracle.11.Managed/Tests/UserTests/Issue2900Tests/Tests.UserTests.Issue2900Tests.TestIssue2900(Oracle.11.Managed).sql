@@ -1,0 +1,206 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Request"
+		(
+			"Id" Int  NOT NULL,
+
+			CONSTRAINT "PK_Request" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE SEQUENCE "SIDENTITY_Request"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE OR REPLACE TRIGGER "TIDENTITY_Request"
+BEFORE INSERT ON "Request" FOR EACH ROW
+BEGIN
+	SELECT "SIDENTITY_Request".NEXTVAL INTO :NEW."Id" FROM dual;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Metric"
+		(
+			"Id"        Int    NOT NULL,
+			"RequestId" Int    NOT NULL,
+			"Value"     Float      NULL,
+
+			CONSTRAINT "PK_Metric" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE SEQUENCE "SIDENTITY_Metric"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE OR REPLACE TRIGGER "TIDENTITY_Metric"
+BEFORE INSERT ON "Metric" FOR EACH ROW
+BEGIN
+	SELECT "SIDENTITY_Metric".NEXTVAL INTO :NEW."Id" FROM dual;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."not_null",
+	t1."HasValue"
+FROM
+	"Request" a
+		LEFT JOIN (
+			SELECT
+				a_Metrics."Value" as "HasValue",
+				1 as "not_null",
+				ROW_NUMBER() OVER (PARTITION BY a_Metrics."RequestId" ORDER BY a_Metrics."RequestId") as "rn",
+				a_Metrics."RequestId"
+			FROM
+				"Metric" a_Metrics
+		) t1 ON a."Id" = t1."RequestId" AND t1."rn" <= 1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Metric"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Request"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
