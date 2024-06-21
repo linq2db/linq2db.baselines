@@ -1,0 +1,12 @@
+﻿BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+

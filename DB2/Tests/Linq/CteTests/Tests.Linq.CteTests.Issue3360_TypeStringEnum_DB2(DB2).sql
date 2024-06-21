@@ -1,0 +1,57 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue3360WithEnum"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue3360WithEnum"
+		(
+			"Id"  Int         NOT NULL,
+			"Str" VarChar(50) NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+WITH "cte" ("Id", "Str")
+AS
+(
+	SELECT
+		"p"."Id",
+		"p"."Str"
+	FROM
+		"Issue3360WithEnum" "p"
+	UNION ALL
+	SELECT
+		"t1"."Id",
+		'THIS_IS_TWO'
+	FROM
+		"cte" "t1",
+		"Issue3360WithEnum" "r"
+	WHERE
+		"t1"."Id" = "r"."Id" + 1
+)
+SELECT
+	"t2"."Id",
+	"t2"."Str"
+FROM
+	"cte" "t2"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue3360WithEnum"';
+END
+

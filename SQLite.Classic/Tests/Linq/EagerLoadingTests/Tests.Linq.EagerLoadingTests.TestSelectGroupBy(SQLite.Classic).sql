@@ -99,7 +99,6 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_2].[Id1],
 	[m_2].[MasterId],
 	[d].[Id1],
 	[d].[Id2],
@@ -108,7 +107,6 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1],
 			[dd].[MasterId]
 		FROM
 			(
@@ -122,7 +120,7 @@ FROM
 			) [t1]
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
-		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [m_2].[MasterId]
+		INNER JOIN [MasterClass] [d] ON [d].[Id1] = [m_2].[MasterId]
 
 BeforeExecute
 DisposeTransaction
