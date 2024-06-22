@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Field1 Varchar -- String
+DECLARE @Field1 Unknown -- Object
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
