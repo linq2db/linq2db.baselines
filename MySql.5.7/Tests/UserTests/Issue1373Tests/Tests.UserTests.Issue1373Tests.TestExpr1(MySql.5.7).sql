@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Field1 VarChar -- String
+DECLARE @Field1 Blob -- Object
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`

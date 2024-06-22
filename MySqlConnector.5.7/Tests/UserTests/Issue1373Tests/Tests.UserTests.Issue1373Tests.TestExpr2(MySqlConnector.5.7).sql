@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Field1 VarChar -- String
+DECLARE @Field1 Null -- Object
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
