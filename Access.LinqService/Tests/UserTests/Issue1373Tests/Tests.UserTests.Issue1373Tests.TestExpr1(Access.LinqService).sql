@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Field1 VarWChar -- String
+DECLARE @Field1 Variant -- Object
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]

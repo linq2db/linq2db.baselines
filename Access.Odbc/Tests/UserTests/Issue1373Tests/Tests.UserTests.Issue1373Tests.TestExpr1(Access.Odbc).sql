@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Field1 NVarChar -- String
+DECLARE @Field1 Binary
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
