@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Field1 VarChar -- String
+DECLARE @Field1 Null -- Object
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
