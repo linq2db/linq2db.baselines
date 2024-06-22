@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Field1 VarChar -- String
+DECLARE @Field1 Null -- Object
 SET     @Field1 = NULL
 
 INSERT INTO `Issue1373Tests`
