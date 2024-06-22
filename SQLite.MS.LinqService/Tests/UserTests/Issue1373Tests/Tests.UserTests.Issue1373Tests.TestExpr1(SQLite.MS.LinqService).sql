@@ -30,7 +30,7 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Field1 NVarChar -- String
+DECLARE @Field1  -- Object
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
