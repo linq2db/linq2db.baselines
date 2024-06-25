@@ -47,7 +47,7 @@ SELECT
 FROM
 	ISSUE4172TABLE u
 WHERE
-	(u.ROLE = '' OR u.ROLE IS NULL)
+	u.ROLE IS NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
