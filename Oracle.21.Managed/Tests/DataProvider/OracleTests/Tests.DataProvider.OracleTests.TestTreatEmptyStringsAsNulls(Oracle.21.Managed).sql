@@ -44,7 +44,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue1" = '' OR t1."StringValue1" IS NULL)
+	t1."StringValue1" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue2" = '' OR t1."StringValue2" IS NULL)
+	t1."StringValue2" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -84,8 +84,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @emptyString Varchar2 -- String
-SET     @emptyString = ''
 
 SELECT
 	t1."KeyValue",
@@ -94,12 +92,10 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue1" = :emptyString OR t1."StringValue1" IS NULL)
+	t1."StringValue1" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @emptyString Varchar2 -- String
-SET     @emptyString = ''
 
 SELECT
 	t1."KeyValue",
@@ -108,7 +104,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue2" = :emptyString OR t1."StringValue2" IS NULL)
+	t1."StringValue2" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -136,8 +132,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @value Varchar2 -- String
-SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -146,12 +140,10 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue1" = :value OR t1."StringValue1" IS NULL)
+	t1."StringValue1" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @value Varchar2 -- String
-SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -160,12 +152,10 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue1" = :value OR t1."StringValue1" IS NULL)
+	t1."StringValue1" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @value Varchar2 -- String
-SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -174,12 +164,10 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue2" = :value OR t1."StringValue2" IS NULL)
+	t1."StringValue2" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @value Varchar2 -- String
-SET     @value = ''
 
 SELECT
 	t1."KeyValue",
@@ -188,7 +176,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue2" = :value OR t1."StringValue2" IS NULL)
+	t1."StringValue2" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
