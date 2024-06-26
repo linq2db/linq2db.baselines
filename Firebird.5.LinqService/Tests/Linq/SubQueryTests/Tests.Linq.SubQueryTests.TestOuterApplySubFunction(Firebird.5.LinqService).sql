@@ -108,28 +108,39 @@ FROM
 	"Item" "i"
 		LEFT JOIN LATERAL (
 			SELECT
-				"subtype_1"."AppSubTypeId",
-				"subtype_1"."Description",
-				MAX("subtype_1"."CreatedDate") as "MaxSubtypeCreatedDate",
-				MAX("type_1"."CreatedDate") as "MaxTypeCreatedDate",
-				MAX("type_1"."AppTypeId") as "MaxTypeId",
-				COUNT(DISTINCT "type_1"."AppTypeId") as "CountDistinctTypeId",
-				COUNT(DISTINCT "subtype_1"."AppSubTypeId") as "CountDistinctSubTypeId"
+				"t1"."AppSubTypeId",
+				"t1"."Description",
+				"t1".MAX_1 as "MaxSubtypeCreatedDate",
+				"t1".MAX_2 as "MaxTypeCreatedDate",
+				"t1".MAX_3 as "MaxTypeId",
+				"t1"."CountExt" as "CountDistinctTypeId",
+				"t1"."CountExt_1" as "CountDistinctSubTypeId"
 			FROM
-				"ItemAppType" "t1"
-					LEFT JOIN "AppType" "type_1" ON "type_1"."AppTypeId" = "t1"."AppTypeId"
-					LEFT JOIN "AppSubType" "subtype_1" ON "subtype_1"."AppTypeId" = "type_1"."AppTypeId"
-			WHERE
-				"t1"."ItemId" = "i"."ItemId" AND "type_1"."AppTypeId" = "t1"."AppTypeId" AND
-				("subtype_1"."AppTypeId" = "type_1"."AppTypeId" OR "subtype_1"."AppTypeId" IS NULL AND "type_1"."AppTypeId" IS NULL)
-			GROUP BY
-				"subtype_1"."Description",
-				"subtype_1"."AppSubTypeId"
+				(
+					SELECT
+						COUNT(DISTINCT "type_1"."AppTypeId") as "CountExt",
+						MAX("subtype_1"."CreatedDate") as MAX_1,
+						MAX("type_1"."CreatedDate") as MAX_2,
+						MAX("type_1"."AppTypeId") as MAX_3,
+						"subtype_1"."AppSubTypeId",
+						"subtype_1"."Description",
+						COUNT(DISTINCT "subtype_1"."AppSubTypeId") as "CountExt_1"
+					FROM
+						"ItemAppType" "grpby"
+							LEFT JOIN "AppType" "type_1" ON "type_1"."AppTypeId" = "grpby"."AppTypeId"
+							LEFT JOIN "AppSubType" "subtype_1" ON "subtype_1"."AppTypeId" = "type_1"."AppTypeId"
+					WHERE
+						"grpby"."ItemId" = "i"."ItemId" AND "type_1"."AppTypeId" = "grpby"."AppTypeId" AND
+						("subtype_1"."AppTypeId" = "type_1"."AppTypeId" OR "subtype_1"."AppTypeId" IS NULL AND "type_1"."AppTypeId" IS NULL)
+					GROUP BY
+						"subtype_1"."Description",
+						"subtype_1"."AppSubTypeId"
+				) "t1"
 			ORDER BY
-				COUNT(DISTINCT "type_1"."AppTypeId") DESC,
-				MAX("subtype_1"."CreatedDate") DESC,
-				MAX("type_1"."CreatedDate") DESC,
-				MAX("type_1"."AppTypeId") DESC
+				"t1"."CountExt" DESC,
+				"t1".MAX_1 DESC,
+				"t1".MAX_2 DESC,
+				"t1".MAX_3 DESC
 			FETCH NEXT 1 ROWS ONLY
 		) "t2" ON 1=1
 WHERE
