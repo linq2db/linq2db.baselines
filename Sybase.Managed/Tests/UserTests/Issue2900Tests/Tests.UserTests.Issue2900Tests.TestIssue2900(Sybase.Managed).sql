@@ -45,6 +45,13 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
+	CASE
+		WHEN [d].[Value] IS NOT NULL THEN CASE
+			WHEN [d].[Value] IS NOT NULL THEN 1
+			ELSE 0
+		END
+		ELSE 0
+	END,
 	[d].[Value]
 FROM
 	[Request] [m_1]
