@@ -63,11 +63,15 @@ BeforeExecute
 
 SELECT
 	t1.InvoiceID,
-	r.InvoiceReferenceNumberID,
-	r.ReferenceNumber,
-	t1.SettlementTotalOnIssue,
-	ia.InvoiceId,
-	ia.Total
+	CASE
+		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
+		ELSE r.ReferenceNumber
+	END,
+	CASE
+		WHEN t1.SettlementTotalOnIssue IS NOT NULL THEN t1.SettlementTotalOnIssue
+		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
+		ELSE NULL
+	END
 FROM
 	Invoice t1
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
@@ -89,8 +93,10 @@ BeforeExecute
 
 SELECT
 	t1.InvoiceID,
-	r.InvoiceReferenceNumberID,
-	r.ReferenceNumber,
+	CASE
+		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
+		ELSE r.ReferenceNumber
+	END,
 	t1.SettlementTotalOnIssue
 FROM
 	Invoice t1
@@ -101,10 +107,14 @@ BeforeExecute
 
 SELECT
 	t1.InvoiceID,
-	r.InvoiceReferenceNumberID,
-	r.ReferenceNumber,
-	ia.InvoiceId,
-	ia.Total
+	CASE
+		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
+		ELSE r.ReferenceNumber
+	END,
+	CASE
+		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
+		ELSE NULL
+	END
 FROM
 	Invoice t1
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
