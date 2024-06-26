@@ -2,8 +2,11 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t2].[ParentID] as [ParentID_1],
+	CASE
+		WHEN [t1].[ParentID] IS NULL THEN 0
+		ELSE [t1].[ParentID]
+	END as [c1],
+	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[Parent] [p]

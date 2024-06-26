@@ -2,8 +2,13 @@
 -- SqlCe
 
 SELECT
-	[p].[ParentID],
-	[c_2].[ParentID] as [ParentID_1]
+	CASE
+		WHEN [p].[ParentID] = 1 THEN CASE
+			WHEN [c_2].[ParentID] IS NOT NULL THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END as [c1]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
