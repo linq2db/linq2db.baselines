@@ -12,7 +12,13 @@ UPDATE
 					INNER JOIN `LinqDataTypes` `a_Table1` ON `x`.`ParentID` = `a_Table1`.`ID`
 			WHERE
 				`x`.`ParentID` IN (10000, 20000)
-		) `t1` ON `t`.`ID` = `t1`.`ID` AND `t`.`BoolValue` = `t1`.`BoolValue`
+		) `t1` ON `t`.`ID` = `t1`.`ID` AND CASE
+			WHEN `t`.`BoolValue` = 1 THEN 1
+			ELSE 0
+		END = CASE
+			WHEN `t1`.`BoolValue` = 1 THEN 1
+			ELSE 0
+		END
 SET
 	`t`.`BoolValue` = CASE
 		WHEN NOT EXISTS(
