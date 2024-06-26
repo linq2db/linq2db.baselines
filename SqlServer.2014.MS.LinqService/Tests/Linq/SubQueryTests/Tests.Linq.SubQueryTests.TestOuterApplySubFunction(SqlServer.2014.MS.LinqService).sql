@@ -86,35 +86,46 @@ FROM
 			SELECT TOP (1)
 				[t1].[AppSubTypeId],
 				[t1].[Description],
-				MAX([t1].[subtypeCreatedDate]) as [MaxSubtypeCreatedDate],
-				MAX([t1].[typeCreatedDate]) as [MaxTypeCreatedDate],
-				MAX([t1].[AppTypeId]) as [MaxTypeId],
-				COUNT(DISTINCT [t1].[AppTypeId]) as [CountDistinctTypeId],
-				COUNT(DISTINCT [t1].[AppSubTypeId]) as [CountDistinctSubTypeId]
+				[t1].[MAX_1] as [MaxSubtypeCreatedDate],
+				[t1].[MAX_2] as [MaxTypeCreatedDate],
+				[t1].[MAX_3] as [MaxTypeId],
+				[t1].[CountExt] as [CountDistinctTypeId],
+				[t1].[CountExt_1] as [CountDistinctSubTypeId]
 			FROM
 				(
 					SELECT
-						[subtype_1].[Description],
-						[subtype_1].[AppSubTypeId],
-						[type_1].[AppTypeId],
-						[subtype_1].[CreatedDate] as [subtypeCreatedDate],
-						[type_1].[CreatedDate] as [typeCreatedDate]
+						COUNT(DISTINCT [grpby_1].[AppTypeId]) as [CountExt],
+						MAX([grpby_1].[subtypeCreatedDate]) as [MAX_1],
+						MAX([grpby_1].[typeCreatedDate]) as [MAX_2],
+						MAX([grpby_1].[AppTypeId]) as [MAX_3],
+						[grpby_1].[AppSubTypeId],
+						[grpby_1].[Description],
+						COUNT(DISTINCT [grpby_1].[AppSubTypeId]) as [CountExt_1]
 					FROM
-						[ItemAppType] [grpby]
-							LEFT JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [grpby].[AppTypeId]
-							LEFT JOIN [AppSubType] [subtype_1] ON [subtype_1].[AppTypeId] = [type_1].[AppTypeId]
-					WHERE
-						[grpby].[ItemId] = [i].[ItemId] AND [type_1].[AppTypeId] = [grpby].[AppTypeId] AND
-						([subtype_1].[AppTypeId] = [type_1].[AppTypeId] OR [subtype_1].[AppTypeId] IS NULL AND [type_1].[AppTypeId] IS NULL)
+						(
+							SELECT
+								[subtype_1].[Description],
+								[subtype_1].[AppSubTypeId],
+								[type_1].[AppTypeId],
+								[subtype_1].[CreatedDate] as [subtypeCreatedDate],
+								[type_1].[CreatedDate] as [typeCreatedDate]
+							FROM
+								[ItemAppType] [grpby]
+									LEFT JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [grpby].[AppTypeId]
+									LEFT JOIN [AppSubType] [subtype_1] ON [subtype_1].[AppTypeId] = [type_1].[AppTypeId]
+							WHERE
+								[grpby].[ItemId] = [i].[ItemId] AND [type_1].[AppTypeId] = [grpby].[AppTypeId] AND
+								([subtype_1].[AppTypeId] = [type_1].[AppTypeId] OR [subtype_1].[AppTypeId] IS NULL AND [type_1].[AppTypeId] IS NULL)
+						) [grpby_1]
+					GROUP BY
+						[grpby_1].[Description],
+						[grpby_1].[AppSubTypeId]
 				) [t1]
-			GROUP BY
-				[t1].[Description],
-				[t1].[AppSubTypeId]
 			ORDER BY
-				COUNT(DISTINCT [t1].[AppTypeId]) DESC,
-				MAX([t1].[subtypeCreatedDate]) DESC,
-				MAX([t1].[typeCreatedDate]) DESC,
-				MAX([t1].[AppTypeId]) DESC
+				[t1].[CountExt] DESC,
+				[t1].[MAX_1] DESC,
+				[t1].[MAX_2] DESC,
+				[t1].[MAX_3] DESC
 		) [t2]
 WHERE
 	[i].[GroupId] = @groupId
