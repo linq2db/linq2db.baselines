@@ -3,11 +3,18 @@
 
 SELECT
 	'0',
-	'1',
 	"p"."ParentID",
-	"p"."Value1",
-	"a_Parent"."ParentID",
-	"a_Parent"."Value1"
+	CASE
+		WHEN "p"."ParentID" IS NOT NULL THEN "p"."Value1"
+		ELSE NULL
+	END,
+	CASE
+		WHEN "c_1"."ParentID" IS NOT NULL THEN CASE
+			WHEN "a_Parent"."ParentID" IS NOT NULL THEN "a_Parent"."Value1"
+			ELSE NULL
+		END
+		ELSE NULL
+	END
 FROM
 	"Parent" "p"
 		INNER JOIN "Child" "c_1" ON "c_1"."ParentID" = "p"."ParentID"
