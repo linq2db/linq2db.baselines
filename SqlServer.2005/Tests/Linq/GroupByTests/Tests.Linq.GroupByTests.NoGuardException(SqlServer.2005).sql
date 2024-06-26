@@ -9,7 +9,7 @@ FROM
 			SELECT
 				[g_1].[GuidValue] as [Id],
 				COUNT(CASE
-					WHEN [g_1].[BoolValue] <> 0 THEN 1
+					WHEN [g_1].[BoolValue] = 1 THEN 1
 					ELSE NULL
 				END) as [Count_1]
 			FROM
