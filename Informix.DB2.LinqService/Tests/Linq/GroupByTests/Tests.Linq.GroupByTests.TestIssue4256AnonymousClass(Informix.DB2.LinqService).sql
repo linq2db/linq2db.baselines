@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			't' as IsActive,
+			't'::BOOLEAN as IsActive,
 			CASE
 				WHEN it.SmallIntValue <> 0 THEN 't'
 				ELSE 'f'

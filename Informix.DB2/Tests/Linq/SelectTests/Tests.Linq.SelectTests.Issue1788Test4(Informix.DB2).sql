@@ -81,11 +81,31 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	l.Id,
-	l.Value1
+	CASE
+		WHEN l_1.Id IS NOT NULL THEN CASE
+			WHEN l_1.HasValue IS NULL THEN NULL
+			WHEN l_1.HasValue = 't' THEN 't'
+			ELSE 'f'
+		END
+		ELSE 'f'
+	END::BOOLEAN,
+	l_1.Value1
 FROM
 	Table1788 p
-		LEFT JOIN Table1788 l ON l.Id = p.Id + 1
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN l.Value1 IS NOT NULL THEN CASE
+						WHEN l.Value1 IS NOT NULL THEN 't'
+						ELSE 'f'
+					END
+					ELSE 'f'
+				END::BOOLEAN as HasValue,
+				l.Id,
+				l.Value1
+			FROM
+				Table1788 l
+		) l_1 ON l_1.Id = p.Id + 1
 
 BeforeExecute
 -- Informix.DB2 Informix

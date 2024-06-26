@@ -81,6 +81,13 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	CASE
+		WHEN l.Value1 IS NOT NULL THEN CASE
+			WHEN l.Value1 IS NOT NULL THEN 't'
+			ELSE 'f'
+		END
+		ELSE 'f'
+	END::BOOLEAN,
 	l.Value1
 FROM
 	Table1788 p

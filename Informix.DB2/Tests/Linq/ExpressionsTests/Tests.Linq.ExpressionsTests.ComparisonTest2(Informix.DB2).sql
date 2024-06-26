@@ -42,6 +42,6 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END
+	END::BOOLEAN
 FROM table(set{1})
 
