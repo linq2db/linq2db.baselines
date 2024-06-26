@@ -3,9 +3,8 @@
 
 SELECT
 	[p].[ParentID],
-	[p].[Value1],
-	[a_Parent].[ParentID],
-	[a_Parent].[Value1]
+	IIF([p].[ParentID] IS NOT NULL, [p].[Value1], NULL),
+	IIF([c_1].[ParentID] IS NOT NULL, IIF([a_Parent].[ParentID] IS NOT NULL, [a_Parent].[Value1], NULL), NULL)
 FROM
 	([Parent] [p]
 		INNER JOIN [Child] [c_1] ON ([c_1].[ParentID] = [p].[ParentID]))
