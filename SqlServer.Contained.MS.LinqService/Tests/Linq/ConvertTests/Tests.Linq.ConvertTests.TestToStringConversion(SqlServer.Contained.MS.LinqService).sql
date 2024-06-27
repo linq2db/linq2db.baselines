@@ -212,7 +212,7 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
-	[x].[Prop_bool],
+	IIF([x].[Prop_bool] = 1, N'1', N'0'),
 	[x].[Prop_byte],
 	[x].[Prop_char],
 	[x].[Prop_decimal],
@@ -227,7 +227,11 @@ SELECT TOP (1)
 	[x].[Prop_ulong],
 	[x].[Prop_Guid],
 	[x].[Prop_DateTime],
-	[x].[NullableProp_bool],
+	CASE
+		WHEN [x].[NullableProp_bool] IS NULL THEN N''
+		WHEN [x].[NullableProp_bool] = 1 THEN N'1'
+		ELSE N'0'
+	END,
 	[x].[NullableProp_byte],
 	[x].[NullableProp_char],
 	[x].[NullableProp_decimal],
