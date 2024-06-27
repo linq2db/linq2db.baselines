@@ -2,17 +2,31 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	(
-		SELECT
-			"c_1"."ParentID"
-		FROM
-			"Child" "c_1"
-		WHERE
-			"c_1"."ParentID" > 0
-		ORDER BY
-			"c_1"."ParentID"
-		FETCH NEXT 1 ROWS ONLY
-	),
+	CASE
+		WHEN (
+			SELECT
+				"c_1"."ParentID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" > 0
+			ORDER BY
+				"c_1"."ParentID"
+			FETCH NEXT 1 ROWS ONLY
+		) IS NULL
+			THEN 0
+		ELSE (
+			SELECT
+				"c_1"."ParentID"
+			FROM
+				"Child" "c_1"
+			WHERE
+				"c_1"."ParentID" > 0
+			ORDER BY
+				"c_1"."ParentID"
+			FETCH NEXT 1 ROWS ONLY
+		)
+	END,
 	(
 		SELECT
 			"c_2"."ParentID"
