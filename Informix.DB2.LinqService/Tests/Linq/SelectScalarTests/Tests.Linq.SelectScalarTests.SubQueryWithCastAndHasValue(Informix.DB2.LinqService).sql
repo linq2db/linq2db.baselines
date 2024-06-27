@@ -11,7 +11,7 @@ FROM
 				CASE
 					WHEN r.Value1 IS NOT NULL THEN 't'
 					ELSE 'f'
-				END as HasValue
+				END::BOOLEAN as HasValue
 			FROM
 				Parent r
 		) t1 ON 1=1

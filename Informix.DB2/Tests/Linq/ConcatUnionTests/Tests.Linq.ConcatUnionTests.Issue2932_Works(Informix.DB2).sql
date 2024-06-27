@@ -14,7 +14,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END
+	END::BOOLEAN
 FROM
 	Child p
 UNION ALL
@@ -31,7 +31,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END
+	END::BOOLEAN
 FROM
 	Child p_1
 

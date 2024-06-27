@@ -12,11 +12,11 @@ SELECT
 				CASE
 					WHEN t1.MiddleName = '123' THEN 't'
 					ELSE 'f'
-				END::BOOLEAN = CASE
+				END = CASE
 					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
 						THEN 't'
 					ELSE 'f'
-				END::BOOLEAN
+				END
 		)
 			THEN 't'
 		ELSE 'f'

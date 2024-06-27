@@ -31,7 +31,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
-	't'
+	't'::BOOLEAN
 FROM
 	SelectExpressionTable t1
 
