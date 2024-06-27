@@ -2,7 +2,10 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t1].[ParentID],
+	CASE
+		WHEN [t1].[ParentID] IS NULL THEN 0
+		ELSE [t1].[ParentID]
+	END,
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
