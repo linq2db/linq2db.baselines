@@ -40,11 +40,31 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`l`.`Id`,
-	`l`.`Value1`
+	CASE
+		WHEN `l_1`.`Id` IS NOT NULL THEN CASE
+			WHEN `l_1`.`HasValue` IS NULL THEN NULL
+			WHEN `l_1`.`HasValue` = 1 THEN 1
+			ELSE 0
+		END
+		ELSE 0
+	END,
+	`l_1`.`Value1`
 FROM
 	`Table1788` `p`
-		LEFT JOIN `Table1788` `l` ON `l`.`Id` = `p`.`Id` + 1
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN `l`.`Value1` IS NOT NULL THEN CASE
+						WHEN `l`.`Value1` IS NOT NULL THEN 1
+						ELSE 0
+					END
+					ELSE 0
+				END as `HasValue`,
+				`l`.`Id`,
+				`l`.`Value1`
+			FROM
+				`Table1788` `l`
+		) `l_1` ON `l_1`.`Id` = `p`.`Id` + 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
