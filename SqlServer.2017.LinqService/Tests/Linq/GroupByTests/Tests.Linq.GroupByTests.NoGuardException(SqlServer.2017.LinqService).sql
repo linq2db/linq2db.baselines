@@ -8,7 +8,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[g_1].[GuidValue] as [Id],
-				COUNT(IIF([g_1].[BoolValue] <> 0, 1, NULL)) as [Count_1]
+				COUNT(IIF([g_1].[BoolValue] = 1, 1, NULL)) as [Count_1]
 			FROM
 				[LinqDataTypes] [g_1]
 			GROUP BY
