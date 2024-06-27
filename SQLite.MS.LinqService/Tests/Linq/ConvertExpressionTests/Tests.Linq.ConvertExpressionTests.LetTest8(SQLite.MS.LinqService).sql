@@ -2,7 +2,10 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID],
+	CASE
+		WHEN [t1].[ParentID] IS NULL THEN 0
+		ELSE [t1].[ParentID]
+	END,
 	CASE
 		WHEN EXISTS(
 			SELECT
