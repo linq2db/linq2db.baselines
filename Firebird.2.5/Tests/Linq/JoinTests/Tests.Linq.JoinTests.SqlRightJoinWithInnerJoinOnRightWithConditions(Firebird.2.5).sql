@@ -7,7 +7,6 @@ SET     @id1 = 1
 
 SELECT
 	"left_2"."ParentID",
-	'1',
 	"right_2"."ParentID"
 FROM
 	(

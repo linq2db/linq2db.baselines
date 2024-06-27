@@ -92,7 +92,13 @@ SELECT
 	),
 	(
 		SELECT FIRST 1
-			"a_Metrics_1"."Value"
+			CASE
+				WHEN "a_Metrics_1"."Value" IS NOT NULL THEN CASE
+					WHEN "a_Metrics_1"."Value" IS NOT NULL THEN '1'
+					ELSE '0'
+				END
+				ELSE '0'
+			END
 		FROM
 			"Metric" "a_Metrics_1"
 		WHERE
@@ -100,7 +106,7 @@ SELECT
 	),
 	(
 		SELECT FIRST 1
-			'0'
+			"a_Metrics_2"."Value"
 		FROM
 			"Metric" "a_Metrics_2"
 		WHERE
