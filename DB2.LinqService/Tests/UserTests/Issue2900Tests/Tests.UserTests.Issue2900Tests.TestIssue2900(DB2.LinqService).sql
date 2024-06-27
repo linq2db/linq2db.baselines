@@ -51,11 +51,19 @@ BeforeExecute
 
 SELECT
 	"t1"."not_null",
+	"t1"."Value_1",
 	"t1"."HasValue"
 FROM
 	"Request" "a"
 		LEFT JOIN (
 			SELECT
+				CASE
+					WHEN "a_Metrics"."Value" IS NOT NULL THEN CASE
+						WHEN "a_Metrics"."Value" IS NOT NULL THEN 1
+						ELSE 0
+					END
+					ELSE 0
+				END as "Value_1",
 				"a_Metrics"."Value" as "HasValue",
 				1 as "not_null",
 				ROW_NUMBER() OVER (PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
