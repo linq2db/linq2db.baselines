@@ -64,7 +64,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
 WHERE
 	[t1].[PersonID] = @id
 
@@ -94,7 +94,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
 WHERE
 	[t1].[PersonID] = @id
 
@@ -108,7 +108,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CStr(Len([t1].[Diagnosis]) + @i)
 WHERE
 	[t1].[PersonID] = @id
 

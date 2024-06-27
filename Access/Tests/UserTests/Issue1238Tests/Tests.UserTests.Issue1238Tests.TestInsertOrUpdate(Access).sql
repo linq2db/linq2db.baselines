@@ -12,7 +12,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent] [t1]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 WHERE
 	[t1].[InheritanceParentId] = 143 AND [t1].[Name] IS NULL
 
@@ -46,7 +46,7 @@ BeforeExecute
 UPDATE
 	[InheritanceParent] [t1]
 SET
-	[t1].[TypeDiscriminator] = 1
+	[TypeDiscriminator] = 1
 WHERE
 	[t1].[InheritanceParentId] = 143 AND [t1].[Name] IS NULL
 
