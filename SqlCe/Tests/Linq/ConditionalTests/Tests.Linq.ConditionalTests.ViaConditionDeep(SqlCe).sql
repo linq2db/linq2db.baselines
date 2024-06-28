@@ -35,8 +35,6 @@ SELECT 10,'String10'
 
 BeforeExecute
 -- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -55,7 +53,7 @@ WHERE
 		ELSE [x].[StringProp] + '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN @p
+		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN NULL
 		WHEN [x].[StringProp] = '2' THEN 1
 		ELSE 2
 	END = 2

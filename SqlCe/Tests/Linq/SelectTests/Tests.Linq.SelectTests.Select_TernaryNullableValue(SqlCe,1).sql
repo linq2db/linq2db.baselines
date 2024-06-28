@@ -1,11 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @value Int -- Int32
-SET     @value = 1
-DECLARE @value_1 Int -- Int32
-SET     @value_1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
-	@value as [c1],
-	@value_1 as [c2]
+	@p as [c1]
 

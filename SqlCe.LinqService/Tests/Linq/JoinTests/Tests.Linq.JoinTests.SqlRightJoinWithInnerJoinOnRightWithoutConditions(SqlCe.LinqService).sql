@@ -5,7 +5,7 @@ SET     @id1 = 1
 
 SELECT
 	[left_1].[ParentID] as [Left_1],
-	[right_2].[ParentID]
+	[right_2].[ParentID] as [c1]
 FROM
 	[Parent] [left_1]
 		INNER JOIN [Parent] [left2] ON [left_1].[Value1] = [left2].[Value1] + 2

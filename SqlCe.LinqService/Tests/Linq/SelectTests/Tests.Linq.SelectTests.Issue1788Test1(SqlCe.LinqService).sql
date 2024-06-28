@@ -81,6 +81,10 @@ BeforeExecute
 -- SqlCe
 
 SELECT
+	CASE
+		WHEN [l].[Value1] IS NOT NULL THEN 1
+		ELSE 0
+	END as [c1],
 	[l].[Value1]
 FROM
 	[Table1788] [p]
