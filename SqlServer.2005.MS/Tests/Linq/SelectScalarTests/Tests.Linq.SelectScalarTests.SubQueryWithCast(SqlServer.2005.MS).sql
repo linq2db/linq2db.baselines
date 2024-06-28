@@ -2,15 +2,16 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ParentID],
-	[t1].[Value1]
+	[t2].[ParentID],
+	[t2].[Value1]
 FROM
-	[Parent] [t1]
+	[Parent] [t2]
+		LEFT JOIN (
+			SELECT TOP (1)
+				[r].[Value1]
+			FROM
+				[Parent] [r]
+		) [t1] ON 1=1
 WHERE
-	(
-		SELECT TOP (1)
-			[r].[Value1]
-		FROM
-			[Parent] [r]
-	) IS NOT NULL
+	[t1].[Value1] IS NOT NULL
 
