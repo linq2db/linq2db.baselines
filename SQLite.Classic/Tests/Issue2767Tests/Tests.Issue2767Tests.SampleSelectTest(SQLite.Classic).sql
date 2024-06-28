@@ -207,9 +207,10 @@ SELECT
 	[t1].[is_private],
 	[t1].[number],
 	[t1].[level],
-	[exerciseDescription].[id],
-	[exerciseDescription].[content],
-	[t1].[expl],
+	CASE
+		WHEN [exerciseDescription].[id] IS NOT NULL THEN [exerciseDescription].[content]
+		ELSE [t1].[expl]
+	END,
 	[t1].[reeks],
 	[t1].[num],
 	[t1].[time],
@@ -217,9 +218,10 @@ SELECT
 	[t1].[side],
 	[t1].[image],
 	[t1].[video],
-	[exerciseStartDescription].[id],
-	[exerciseStartDescription].[content],
-	[t1].[startexpl]
+	CASE
+		WHEN [exerciseStartDescription].[id] IS NOT NULL THEN [exerciseStartDescription].[content]
+		ELSE [t1].[startexpl]
+	END
 FROM
 	[exercise] [t1]
 		LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([t1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'

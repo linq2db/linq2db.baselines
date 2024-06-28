@@ -2,8 +2,11 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[p].[Discontinued],
-	[p].[ProductName]
+	CASE
+		WHEN [p].[Discontinued] = 0 THEN 'NULL'
+		WHEN [p].[Discontinued] = 1 THEN [p].[ProductName]
+		ELSE NULL
+	END
 FROM
 	[Products] [p]
 

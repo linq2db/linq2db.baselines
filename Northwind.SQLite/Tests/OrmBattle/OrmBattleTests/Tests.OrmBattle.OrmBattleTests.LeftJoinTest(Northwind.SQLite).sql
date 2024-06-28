@@ -2,8 +2,10 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[p].[ProductID],
-	[p].[ProductName],
+	CASE
+		WHEN [p].[ProductID] IS NULL THEN 'Nothing!'
+		ELSE [p].[ProductName]
+	END,
 	[t1].[CategoryName]
 FROM
 	[Categories] [t1]
