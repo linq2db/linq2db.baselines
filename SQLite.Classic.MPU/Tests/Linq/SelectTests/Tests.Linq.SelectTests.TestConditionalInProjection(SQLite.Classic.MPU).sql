@@ -66,7 +66,10 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[sc].[Id],
-				[sc].[Value] as [Value_1]
+				CASE
+					WHEN [sc].[Id] IS NOT NULL THEN [sc].[Value]
+					ELSE 'NeverHappen'
+				END as [Value_1]
 			FROM
 				[ChildEntityObject] [sc]
 			LIMIT 1
