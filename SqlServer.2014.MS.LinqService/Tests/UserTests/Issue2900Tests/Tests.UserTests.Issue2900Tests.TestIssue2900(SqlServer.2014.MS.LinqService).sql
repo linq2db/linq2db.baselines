@@ -39,11 +39,13 @@ BeforeExecute
 
 SELECT
 	[t1].[not_null],
+	[t1].[Value_1],
 	[t1].[HasValue]
 FROM
 	[Request] [a]
 		OUTER APPLY (
 			SELECT TOP (1)
+				IIF([a_Metrics].[Value] IS NOT NULL, 1, 0) as [Value_1],
 				[a_Metrics].[Value] as [HasValue],
 				1 as [not_null]
 			FROM
