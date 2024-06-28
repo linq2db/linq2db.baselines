@@ -2,17 +2,26 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[p].[ParentID],
+	[t1].[ParentID],
+	CASE
+		WHEN [t1].[Count_1] IS NULL THEN 0
+		ELSE [t1].[Count_1]
+	END
+FROM
 	(
 		SELECT
-			COUNT(*)
+			[p].[ParentID],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Child] [c_1]
+				WHERE
+					[c_1].[ParentID] = [p].[ParentID]
+			) as [Count_1]
 		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [p].[ParentID]
-	)
-FROM
-	[Parent] [p]
+			[Parent] [p]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
