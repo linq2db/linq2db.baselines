@@ -4,8 +4,10 @@
 SELECT
 	t1."ID",
 	t1."OK",
-	t1."FirstName",
-	y."FirstName"
+	CASE
+		WHEN t1."FirstName" = 'ddd' THEN y."FirstName"
+		ELSE t1."FirstName"
+	END
 FROM
 	(
 		SELECT
