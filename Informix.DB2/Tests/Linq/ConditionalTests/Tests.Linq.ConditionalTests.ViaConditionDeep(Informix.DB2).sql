@@ -202,7 +202,7 @@ SELECT
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'
 		ELSE 'f'
-	END,
+	END::BOOLEAN,
 	x.StringProp,
 	x.StringProp || '2'
 FROM
