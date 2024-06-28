@@ -3,7 +3,6 @@
 
 SELECT
 	"left_1"."ParentID",
-	'1',
 	"right_1"."ParentID"
 FROM
 	"Parent" "left_1"
