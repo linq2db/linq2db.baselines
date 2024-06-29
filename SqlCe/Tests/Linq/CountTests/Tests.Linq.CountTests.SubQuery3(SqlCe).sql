@@ -2,9 +2,10 @@
 -- SqlCe
 
 SELECT
-	[p].[Value1],
-	[t1].[COUNT_1],
-	[t2].[COUNT_1] as [COUNT_2]
+	CASE
+		WHEN [p].[Value1] IS NULL THEN [t1].[COUNT_1]
+		ELSE [t2].[COUNT_1]
+	END as [c1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (

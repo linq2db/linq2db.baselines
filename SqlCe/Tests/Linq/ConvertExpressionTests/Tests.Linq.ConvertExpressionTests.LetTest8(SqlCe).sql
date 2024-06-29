@@ -2,7 +2,10 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
+	CASE
+		WHEN [t1].[ParentID] IS NULL THEN 0
+		ELSE [t1].[ParentID]
+	END as [c1],
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -16,7 +19,7 @@ SELECT
 		ELSE 0
 	END as [Any_1],
 	[t2].[COUNT_1],
-	[t3].[ParentID] as [ParentID_1],
+	[t3].[ParentID],
 	[t3].[ChildID]
 FROM
 	[Parent] [p]

@@ -29,5 +29,11 @@ FROM
 			[x].[ParentID] IN (10000, 20000)
 	) [t1]
 WHERE
-	[LinqDataTypes].[ID] = [t1].[ID] AND [LinqDataTypes].[BoolValue] = [t1].[BoolValue]
+	[LinqDataTypes].[ID] = [t1].[ID] AND CASE
+		WHEN [LinqDataTypes].[BoolValue] = 1 THEN 1
+		ELSE 0
+	END = CASE
+		WHEN [t1].[BoolValue] = 1 THEN 1
+		ELSE 0
+	END
 

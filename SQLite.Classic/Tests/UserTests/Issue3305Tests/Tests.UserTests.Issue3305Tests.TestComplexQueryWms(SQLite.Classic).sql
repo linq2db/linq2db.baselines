@@ -171,8 +171,8 @@ SELECT
 	[x_1].[CategoryDimensions],
 	[x_1].[CategoryQuality],
 	[x_1].[CategoryTemperature],
-	[x_1].[Id_3],
 	[x_1].[Id_4],
+	[x_1].[Id_3],
 	[x_1].[Status_1],
 	[x_1].[ResourceLabel],
 	[x_1].[CustomField1],
@@ -210,7 +210,7 @@ SELECT
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_2]
 			WHERE
-				[x_2].[ResourceID] = [x_1].[Id_4]
+				[x_2].[ResourceID] = [x_1].[Id_3]
 		)
 			THEN 1
 		ELSE 0
@@ -222,7 +222,7 @@ SELECT
 			FROM
 				[CTE_1] [x_3]
 			WHERE
-				[x_3].[IR_ResourceID] = [x_1].[Id_4] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+				[x_3].[IR_ResourceID] = [x_1].[Id_3] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
 						*
 					FROM
@@ -262,11 +262,11 @@ FROM
 			[t1].[CategoryDimensions],
 			[t1].[CategoryQuality],
 			[t1].[CategoryTemperature],
-			[t1].[Id_3],
+			[c1].[Id] as [Id_3],
+			[t1].[Id_3] as [Id_4],
 			[t1].[Status],
 			[t1].[CategoryABC_1],
 			[t1].[HeightClass],
-			[c1].[Id] as [Id_4],
 			[c1].[Status] as [Status_1],
 			[c1].[ResourceLabel],
 			[c1].[CustomField1],

@@ -2,23 +2,43 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	(
-		SELECT
-			t1."ParentID"
-		FROM
-			(
-				SELECT
-					c_1."ParentID"
-				FROM
-					"Child" c_1
-				WHERE
-					c_1."ParentID" > 0
-				ORDER BY
-					c_1."ParentID"
-			) t1
-		WHERE
-			ROWNUM <= 1
-	),
+	CASE
+		WHEN (
+			SELECT
+				t1."ParentID"
+			FROM
+				(
+					SELECT
+						c_1."ParentID"
+					FROM
+						"Child" c_1
+					WHERE
+						c_1."ParentID" > 0
+					ORDER BY
+						c_1."ParentID"
+				) t1
+			WHERE
+				ROWNUM <= 1
+		) IS NULL
+			THEN 0
+		ELSE (
+			SELECT
+				t1."ParentID"
+			FROM
+				(
+					SELECT
+						c_1."ParentID"
+					FROM
+						"Child" c_1
+					WHERE
+						c_1."ParentID" > 0
+					ORDER BY
+						c_1."ParentID"
+				) t1
+			WHERE
+				ROWNUM <= 1
+		)
+	END,
 	(
 		SELECT
 			t2."ParentID"

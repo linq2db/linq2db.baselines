@@ -7,12 +7,12 @@ SELECT
 	CASE
 		WHEN t1.PersonID IN (1, 3) THEN 't'
 		ELSE 'f'
-	END
+	END::BOOLEAN
 FROM
 	Person t1
 ORDER BY
 	CASE
 		WHEN t1.PersonID IN (1, 3) THEN 't'
 		ELSE 'f'
-	END::BOOLEAN
+	END
 

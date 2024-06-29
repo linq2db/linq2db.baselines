@@ -2,8 +2,13 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[p].[ParentID],
-	[c_2].[ParentID]
+	CASE
+		WHEN [p].[ParentID] = 1 THEN CASE
+			WHEN [c_2].[ParentID] IS NOT NULL THEN N'1'
+			ELSE N'2'
+		END
+		ELSE N'3'
+	END
 FROM
 	[Parent] [p]
 		LEFT JOIN (

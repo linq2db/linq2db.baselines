@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @p Int -- Int32
-SET     @p = NULL
 
 SELECT
 	[p_2].[ParentID],
@@ -10,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p_1].[ParentID] IS NOT NULL, [p_1].[Value1], @p) as [Value1],
+			IIF([p_1].[ParentID] IS NOT NULL, [p_1].[Value1], NULL) as [Value1],
 			[p_1].[ParentID],
 			[p_1].[ParentID_1],
 			[p_1].[Value1] as [Value1_1]

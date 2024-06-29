@@ -7,7 +7,8 @@ SELECT
 	[gc_1].[not_null],
 	[gc_1].[ParentID],
 	[gc_1].[ChildID],
-	[gc_1].[GrandChildID]
+	[gc_1].[GrandChildID],
+	IIF([gc_1].[not_null] IS NOT NULL, [gc_1].[ChildID], 2147483647)
 FROM
 	[Child] [ch]
 		INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]

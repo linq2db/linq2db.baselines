@@ -121,19 +121,40 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [s].[Id] IS NULL THEN 1
-		ELSE 0
+		WHEN [s].[Id] IS NULL THEN 0
+		ELSE [s].[Id]
 	END,
-	[s].[Id],
-	[s].[Value],
-	[s].[ParentId],
+	CASE
+		WHEN [s].[Id] IS NULL THEN NULL
+		ELSE [s].[Value]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN NULL
+		ELSE [s].[ParentId]
+	END,
 	CASE
 		WHEN [s_1].[Id] IS NULL THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN 0
+		ELSE [s_1].[Id]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN NULL
+		ELSE [s_1].[Value]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN NULL
+		ELSE [s_1].[ParentId]
+	END,
+	CASE
+		WHEN [s].[Id] IS NULL THEN 1
+		ELSE 0
+	END,
 	[s_1].[Id],
-	[s_1].[Value],
-	[s_1].[ParentId]
+	[s_1].[ParentId],
+	[s_1].[Value]
 FROM
 	[SuperClass] [q]
 		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [q].[Id]

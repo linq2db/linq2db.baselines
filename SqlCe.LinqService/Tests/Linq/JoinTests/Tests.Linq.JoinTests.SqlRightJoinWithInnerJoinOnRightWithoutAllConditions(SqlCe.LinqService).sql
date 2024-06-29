@@ -3,7 +3,7 @@
 
 SELECT
 	[left_1].[ParentID] as [Left_1],
-	[right_1].[ParentID]
+	[right_1].[ParentID] as [c1]
 FROM
 	[Parent] [left_1]
 		INNER JOIN [Parent] [left2] ON [left_1].[Value1] = [left2].[Value1] + 2

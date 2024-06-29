@@ -2,7 +2,10 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"q"."ParentID"
+	CASE
+		WHEN "q"."ParentID" IS NOT NULL THEN "q"."ParentID"
+		ELSE 0
+	END
 FROM
 	"Parent" "q"
 

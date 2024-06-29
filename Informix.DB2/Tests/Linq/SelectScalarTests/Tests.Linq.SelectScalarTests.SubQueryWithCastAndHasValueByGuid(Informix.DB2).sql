@@ -11,7 +11,7 @@ FROM
 				CASE
 					WHEN r.GuidValue IS NOT NULL THEN 't'
 					ELSE 'f'
-				END as HasValue
+				END::BOOLEAN as HasValue
 			FROM
 				LinqDataTypes r
 		) t1 ON 1=1

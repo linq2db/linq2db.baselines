@@ -103,11 +103,14 @@ BeforeExecute
 
 SELECT
 	t1."InId",
-	e."InId",
-	t1."InMinQuantity",
-	e."InMinQuantity",
-	t1."InMaxQuantity",
-	e."InMaxQuantity"
+	CASE
+		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
+		ELSE e."InMinQuantity"
+	END,
+	CASE
+		WHEN e."InId" IS NULL THEN t1."InMaxQuantity"
+		ELSE e."InMaxQuantity"
+	END
 FROM
 	"StLink" t1
 		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
@@ -120,11 +123,14 @@ BeforeExecute
 
 SELECT
 	t1."InId",
-	e."InId",
-	t1."InMinQuantity",
-	e."InMinQuantity",
-	t1."InMaxQuantity",
-	e."InMaxQuantity"
+	CASE
+		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
+		ELSE e."InMinQuantity"
+	END,
+	CASE
+		WHEN e."InId" IS NULL THEN t1."InMaxQuantity"
+		ELSE e."InMaxQuantity"
+	END
 FROM
 	"StLink" t1
 		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"

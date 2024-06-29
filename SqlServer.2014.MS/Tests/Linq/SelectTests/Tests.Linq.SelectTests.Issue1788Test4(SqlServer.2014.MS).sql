@@ -42,11 +42,22 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[l].[Id],
-	[l].[Value1]
+	IIF([l_1].[Id] IS NOT NULL, CASE
+		WHEN [l_1].[HasValue] IS NULL THEN NULL
+		WHEN [l_1].[HasValue] = 1 THEN 1
+		ELSE 0
+	END, 0),
+	[l_1].[Value1]
 FROM
 	[Table1788] [p]
-		LEFT JOIN [Table1788] [l] ON [l].[Id] = [p].[Id] + 1
+		LEFT JOIN (
+			SELECT
+				IIF([l].[Value1] IS NOT NULL, 1, 0) as [HasValue],
+				[l].[Id],
+				[l].[Value1]
+			FROM
+				[Table1788] [l]
+		) [l_1] ON [l_1].[Id] = [p].[Id] + 1
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

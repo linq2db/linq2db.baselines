@@ -2,18 +2,33 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	(
-		SELECT
-			`c_1`.`ParentID`
-		FROM
-			`Child` `c_1`
-		WHERE
-			`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100 AND
-			`c_1`.`ParentID` > 0
-		ORDER BY
-			`c_1`.`ChildID`
-		LIMIT 1
-	),
+	CASE
+		WHEN (
+			SELECT
+				`c_1`.`ParentID`
+			FROM
+				`Child` `c_1`
+			WHERE
+				`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100 AND
+				`c_1`.`ParentID` > 0
+			ORDER BY
+				`c_1`.`ChildID`
+			LIMIT 1
+		) IS NULL
+			THEN 0
+		ELSE (
+			SELECT
+				`c_1`.`ParentID`
+			FROM
+				`Child` `c_1`
+			WHERE
+				`c_1`.`ParentID` = `p`.`ParentID` AND `c_1`.`ChildID` > -100 AND
+				`c_1`.`ParentID` > 0
+			ORDER BY
+				`c_1`.`ChildID`
+			LIMIT 1
+		)
+	END,
 	CASE
 		WHEN EXISTS(
 			SELECT
