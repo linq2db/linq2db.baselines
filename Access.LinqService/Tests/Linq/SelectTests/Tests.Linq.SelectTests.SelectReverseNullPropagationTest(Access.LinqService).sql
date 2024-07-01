@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	IIF([q].[ParentID] IS NOT NULL, [q].[ParentID], 0)
+	[q].[ParentID]
 FROM
 	[Parent] [q]
 
