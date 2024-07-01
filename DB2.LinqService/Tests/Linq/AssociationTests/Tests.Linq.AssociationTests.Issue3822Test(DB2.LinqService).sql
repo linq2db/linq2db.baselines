@@ -1,0 +1,207 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Dog"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Dog"
+		(
+			"Id"      Int NOT NULL,
+			"OwnerId" Int NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @OwnerId Integer(4) -- Int32
+SET     @OwnerId = 1
+
+INSERT INTO "Dog"
+(
+	"Id",
+	"OwnerId"
+)
+VALUES
+(
+	@Id,
+	@OwnerId
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Human"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Human"
+		(
+			"Id"      Int NOT NULL,
+			"HouseId" Int NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @HouseId Integer(4) -- Int32
+SET     @HouseId = 1
+
+INSERT INTO "Human"
+(
+	"Id",
+	"HouseId"
+)
+VALUES
+(
+	@Id,
+	@HouseId
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "House"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "House"
+		(
+			"Id" Int NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+
+INSERT INTO "House"
+(
+	"Id"
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Window"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Window"
+		(
+			"Id"       Int NOT NULL,
+			"Position" Int NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 6
+DECLARE @Position Integer(4) -- Int32
+SET     @Position = 6
+
+INSERT INTO "Window"
+(
+	"Id",
+	"Position"
+)
+VALUES
+(
+	@Id,
+	@Position
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id"
+FROM
+	"Dog" "x"
+		INNER JOIN "Human" "a_Owner" ON "x"."OwnerId" = "a_Owner"."Id"
+		INNER JOIN "House" "a_House" ON "a_Owner"."HouseId" = "a_House"."Id"
+		LEFT JOIN (
+			SELECT
+				"a_WindowAtPosition"."Id"
+			FROM
+				"Window" "a_WindowAtPosition"
+			WHERE
+				"a_WindowAtPosition"."Position" = 6
+			FETCH NEXT 1 ROWS ONLY
+		) "t1" ON 1=1
+FETCH NEXT 1 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Window"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "House"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Human"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Dog"';
+END
+
