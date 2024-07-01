@@ -3,7 +3,7 @@
 
 SELECT
 	[od].[OrderID],
-	IIF([o1].[OrderID] IS NULL, 0, [o1].[OrderID]),
+	[o1].[OrderID],
 	IIF([o2].[OrderID] IS NULL, 0, [o2].[OrderID]),
 	IIF([o3].[OrderID] IS NULL, 0, [o3].[OrderID]),
 	IIF([o2].[OrderID] IS NULL, 0, [o2].[OrderID])
