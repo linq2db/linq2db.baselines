@@ -32,19 +32,19 @@ FROM
 	"Parent" m_1,
 	(
 		SELECT
-			id."ParentID"
+			id."ParentID" as id
 		FROM
 			"Parent" id
 		WHERE
 			id."ParentID" = 1
 		UNION ALL
 		SELECT
-			t."ParentID"
+			t."ParentID" as id
 		FROM
 			"Parent" t
 		WHERE
 			t."ParentID" = 2
 	) id_1
 WHERE
-	id_1."ParentID" = m_1."ParentID"
+	id_1.id = m_1."ParentID"
 
