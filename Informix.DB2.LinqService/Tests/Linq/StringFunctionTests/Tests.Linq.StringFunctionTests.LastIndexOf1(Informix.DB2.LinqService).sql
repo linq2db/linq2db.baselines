@@ -13,5 +13,6 @@ FROM
 	Person p
 WHERE
 	CHAR_LENGTH(p.LastName) - CharIndex('p', Reverse(p.LastName)) = 2 AND
-	CharIndex(@p, p.LastName) <> 0 AND p.PersonID = 1
+	(CharIndex(@p, p.LastName) <> 0 OR CharIndex(@p, p.LastName) IS NULL) AND
+	p.PersonID = 1
 
