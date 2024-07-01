@@ -43,7 +43,7 @@ SELECT
 FROM
 	[ConditionalData] [x]
 WHERE
-	[x].[Id] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
