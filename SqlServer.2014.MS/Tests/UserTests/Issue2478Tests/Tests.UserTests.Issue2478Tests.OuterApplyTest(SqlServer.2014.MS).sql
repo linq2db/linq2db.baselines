@@ -3,7 +3,7 @@
 
 SELECT
 	[t1].[ParentID],
-	IIF([t1].[Count_1] IS NULL, 0, [t1].[Count_1])
+	[t1].[Count_1]
 FROM
 	(
 		SELECT
