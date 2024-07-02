@@ -2,10 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN "t1"."ParentID" IS NULL THEN 0
-		ELSE "t1"."ParentID"
-	END,
+	"t1"."ParentID",
 	CASE
 		WHEN EXISTS(
 			SELECT
