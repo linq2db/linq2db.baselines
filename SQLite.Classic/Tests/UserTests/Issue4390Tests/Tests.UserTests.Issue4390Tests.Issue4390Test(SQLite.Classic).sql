@@ -60,8 +60,6 @@ SELECT
 FROM
 	[InfeedAdviceDTO] [infeed]
 		INNER JOIN [InventoryResourceDTO] [inventory] ON [infeed].[Id] = [inventory].[InfeedAdviceID]
-WHERE
-	[infeed].[Id] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

@@ -3,10 +3,7 @@
 
 SELECT
 	[od].[OrderID],
-	CASE
-		WHEN [o1].[OrderID] IS NULL THEN 0
-		ELSE [o1].[OrderID]
-	END,
+	[o1].[OrderID],
 	CASE
 		WHEN [o2].[OrderID] IS NULL THEN 0
 		ELSE [o2].[OrderID]
