@@ -2,10 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	CASE
-		WHEN t1."ParentID" IS NULL THEN 0
-		ELSE t1."ParentID"
-	END,
+	t1."ParentID",
 	CASE
 		WHEN EXISTS(
 			SELECT
