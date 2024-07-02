@@ -3,8 +3,8 @@
 
 SELECT
 	[p].[ParentID],
-	IIF([c_2].[Count_1] IS NULL, 0, [c_2].[Count_1]),
-	IIF([c_2].[Count_1] IS NULL, 0, [c_2].[Sum_1])
+	[c_2].[Count_1],
+	[c_2].[Sum_1]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
