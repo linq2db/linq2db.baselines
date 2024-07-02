@@ -2,10 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	CASE
-		WHEN `q`.`ParentID` IS NOT NULL THEN `q`.`ParentID`
-		ELSE 0
-	END
+	`q`.`ParentID`
 FROM
 	`Parent` `q`
 
