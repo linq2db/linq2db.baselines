@@ -2,7 +2,7 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	IIF([q].[ParentID] IS NOT NULL, [q].[ParentID], 0)
+	[q].[ParentID]
 FROM
 	[Parent] [q]
 
