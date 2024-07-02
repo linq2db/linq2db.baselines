@@ -3,7 +3,7 @@
 
 SELECT
 	[left_1].[ParentID] as [Left_1],
-	[right_1].[ParentID] as [c1]
+	[right_1].[ParentID]
 FROM
 	[Parent] [left_1]
 		RIGHT JOIN [Parent] [right_1]
