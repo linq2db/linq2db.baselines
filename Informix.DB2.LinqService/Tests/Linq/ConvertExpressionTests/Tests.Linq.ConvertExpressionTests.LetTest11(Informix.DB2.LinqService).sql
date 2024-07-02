@@ -2,10 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN t1.ParentID IS NULL THEN 0
-		ELSE t1.ParentID
-	END,
+	t1.ParentID,
 	t2.ParentID,
 	t2.ChildID
 FROM
