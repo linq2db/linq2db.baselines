@@ -34,24 +34,13 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	it_1.Name,
-	it_1.Value_1,
-	sumOrNull(it_1.Value_2)
+	'Title',
+	it.Title,
+	sumOrNull(it.YearsExperience)
 FROM
-	(
-		SELECT
-			'Title' as Name,
-			CASE
-				WHEN it.Name IS NULL THEN NULL
-				ELSE it.Title
-			END as Value_1,
-			it.YearsExperience as Value_2
-		FROM
-			odata_person it
-	) it_1
+	odata_person it
 GROUP BY
-	it_1.Name,
-	it_1.Value_1
+	it.Title
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

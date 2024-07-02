@@ -16,8 +16,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
-WHERE
-	[a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -47,8 +45,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
-WHERE
-	[a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

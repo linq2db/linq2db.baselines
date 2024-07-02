@@ -41,27 +41,19 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN l_1."Id" IS NOT NULL THEN CASE
-			WHEN l_1."HasValue" IS NULL THEN NULL
-			WHEN l_1."HasValue" = True THEN True
+		WHEN l."Id" IS NOT NULL THEN CASE
+			WHEN l."Value1" IS NOT NULL THEN CASE
+				WHEN l."Value1" IS NOT NULL THEN True
+				ELSE False
+			END
 			ELSE False
 		END
 		ELSE False
 	END,
-	l_1."Value1"
+	l."Value1"
 FROM
 	"Table1788" p
-		LEFT JOIN (
-			SELECT
-				CASE
-					WHEN l."Value1" IS NOT NULL THEN True
-					ELSE False
-				END as "HasValue",
-				l."Id",
-				l."Value1"
-			FROM
-				"Table1788" l
-		) l_1 ON l_1."Id" = p."Id" + 1
+		LEFT JOIN "Table1788" l ON l."Id" = p."Id" + 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

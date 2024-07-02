@@ -4,8 +4,8 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	p2_1."ParentID",
-	p2_1."Value1"
+	p2."ParentID",
+	p2."Value1"
 FROM
 	(
 		SELECT
@@ -18,11 +18,11 @@ FROM
 	) p1
 		LEFT JOIN (
 			SELECT
-				p2."ParentID",
-				p2."Value1"
+				p."ParentID",
+				p."Value1"
 			FROM
-				"Parent" p2
+				"Parent" p
 			WHERE
 				ROWNUM <= 10
-		) p2_1 ON p1."ParentID" = p2_1."ParentID" AND (p1."Value1" = p2_1."Value1" OR p1."Value1" IS NULL AND p2_1."Value1" IS NULL)
+		) p2 ON p1."ParentID" = p2."ParentID" AND (p1."Value1" = p2."Value1" OR p1."Value1" IS NULL AND p2."Value1" IS NULL)
 

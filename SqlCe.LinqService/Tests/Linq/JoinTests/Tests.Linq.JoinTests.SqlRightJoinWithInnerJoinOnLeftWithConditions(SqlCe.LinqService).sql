@@ -7,7 +7,7 @@ SET     @id2 = 2
 
 SELECT
 	[left_1].[ParentID] as [Left_1],
-	[right_2].[ParentID] as [c1]
+	[right_2].[ParentID]
 FROM
 	(
 		SELECT

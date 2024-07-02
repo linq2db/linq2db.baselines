@@ -43,27 +43,19 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN l_1.Id IS NOT NULL THEN CASE
-			WHEN l_1.HasValue IS NULL THEN NULL
-			WHEN l_1.HasValue = true THEN true
+		WHEN l.Id IS NOT NULL THEN CASE
+			WHEN l.Value1 IS NOT NULL THEN CASE
+				WHEN l.Value1 IS NOT NULL THEN true
+				ELSE false
+			END
 			ELSE false
 		END
 		ELSE false
 	END,
-	l_1.Value1
+	l.Value1
 FROM
 	Table1788 p
-		LEFT JOIN (
-			SELECT
-				CASE
-					WHEN l.Value1 IS NOT NULL THEN true
-					ELSE false
-				END as HasValue,
-				l.Id as Id,
-				l.Value1 as Value1
-			FROM
-				Table1788 l
-		) l_1 ON l_1.Id = p.Id + 1
+		LEFT JOIN Table1788 l ON l.Id = p.Id + 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

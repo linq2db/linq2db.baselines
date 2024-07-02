@@ -3,14 +3,8 @@
 
 SELECT
 	[p].[ParentID],
-	CASE
-		WHEN [c_2].[Count_1] IS NULL THEN 0
-		ELSE [c_2].[Count_1]
-	END,
-	CASE
-		WHEN [c_2].[Count_1] IS NULL THEN 0
-		ELSE [c_2].[Sum_1]
-	END
+	[c_2].[Count_1],
+	[c_2].[Sum_1]
 FROM
 	[Parent] [p]
 		CROSS APPLY (

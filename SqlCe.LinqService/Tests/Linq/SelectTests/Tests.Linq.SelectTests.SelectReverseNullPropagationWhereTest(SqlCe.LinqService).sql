@@ -3,17 +3,8 @@
 
 SELECT
 	[p].[ParentID],
-	CASE
-		WHEN [p].[ParentID] IS NOT NULL THEN [p].[Value1]
-		ELSE NULL
-	END as [Value1],
-	CASE
-		WHEN [c_1].[ParentID] IS NOT NULL THEN CASE
-			WHEN [a_Parent].[ParentID] IS NOT NULL THEN [a_Parent].[Value1]
-			ELSE NULL
-		END
-		ELSE NULL
-	END as [Value2]
+	[p].[Value1],
+	[a_Parent].[Value1] as [Value2]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [c_1].[ParentID] = [p].[ParentID]
