@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[FirstName] || '1', NULL) IS NULL
+	[r].[FirstName] || '1' IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[FirstName] || '1', NULL) IS NULL
+	[r].[FirstName] || '1' IS NULL
 
