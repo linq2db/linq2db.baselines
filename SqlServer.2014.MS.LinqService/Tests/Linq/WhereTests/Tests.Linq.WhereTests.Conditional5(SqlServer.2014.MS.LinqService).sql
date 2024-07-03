@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[p].[ParentID],
@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = 1
+	([p].[Value1] <> 1 OR [p].[Value1] IS NULL)
 
