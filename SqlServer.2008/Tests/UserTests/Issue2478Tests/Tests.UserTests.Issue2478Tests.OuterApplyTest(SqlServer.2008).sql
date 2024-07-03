@@ -3,10 +3,7 @@
 
 SELECT
 	[t1].[ParentID],
-	CASE
-		WHEN [t1].[Count_1] IS NULL THEN 0
-		ELSE [t1].[Count_1]
-	END
+	[t1].[Count_1]
 FROM
 	(
 		SELECT

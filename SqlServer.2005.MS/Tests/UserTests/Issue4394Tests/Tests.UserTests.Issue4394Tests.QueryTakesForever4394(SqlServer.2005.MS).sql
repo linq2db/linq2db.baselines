@@ -273,12 +273,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
 		OUTER APPLY (
 			SELECT
-				[i1].[MaterialID],
 				[i1].[Id],
 				[i1].[BatchNumber],
 				[i1].[ProductStatus],
 				[i1].[ExpiryDate],
-				[i1].[CustomDate1]
+				[i1].[CustomDate1],
+				[i1].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i1]
 					INNER JOIN (
@@ -1024,12 +1024,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
 		OUTER APPLY (
 			SELECT
-				[i1].[MaterialID],
 				[i1].[Id],
 				[i1].[BatchNumber],
 				[i1].[ProductStatus],
 				[i1].[ExpiryDate],
-				[i1].[CustomDate1]
+				[i1].[CustomDate1],
+				[i1].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i1]
 					INNER JOIN (
@@ -1051,12 +1051,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
 		OUTER APPLY (
 			SELECT
-				[i2].[MaterialID],
 				[i2].[Id],
 				[i2].[BatchNumber],
 				[i2].[ProductStatus],
 				[i2].[ExpiryDate],
-				[i2].[CustomDate1]
+				[i2].[CustomDate1],
+				[i2].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i2]
 					INNER JOIN (
@@ -1078,12 +1078,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
 		OUTER APPLY (
 			SELECT
-				[i3].[MaterialID],
 				[i3].[Id],
 				[i3].[BatchNumber],
 				[i3].[ProductStatus],
 				[i3].[ExpiryDate],
-				[i3].[CustomDate1]
+				[i3].[CustomDate1],
+				[i3].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i3]
 					INNER JOIN (
@@ -1105,12 +1105,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
 		OUTER APPLY (
 			SELECT
-				[i4].[MaterialID],
 				[i4].[Id],
 				[i4].[BatchNumber],
 				[i4].[ProductStatus],
 				[i4].[ExpiryDate],
-				[i4].[CustomDate1]
+				[i4].[CustomDate1],
+				[i4].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i4]
 					INNER JOIN (
@@ -1132,12 +1132,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
 		OUTER APPLY (
 			SELECT
-				[i5].[MaterialID],
 				[i5].[Id],
 				[i5].[BatchNumber],
 				[i5].[ProductStatus],
 				[i5].[ExpiryDate],
-				[i5].[CustomDate1]
+				[i5].[CustomDate1],
+				[i5].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i5]
 					INNER JOIN (
@@ -1159,12 +1159,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
 		OUTER APPLY (
 			SELECT
-				[i6].[MaterialID],
 				[i6].[Id],
 				[i6].[BatchNumber],
 				[i6].[ProductStatus],
 				[i6].[ExpiryDate],
-				[i6].[CustomDate1]
+				[i6].[CustomDate1],
+				[i6].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i6]
 					INNER JOIN (
@@ -1186,12 +1186,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
 		OUTER APPLY (
 			SELECT
-				[i7].[MaterialID],
 				[i7].[Id],
 				[i7].[BatchNumber],
 				[i7].[ProductStatus],
 				[i7].[ExpiryDate],
-				[i7].[CustomDate1]
+				[i7].[CustomDate1],
+				[i7].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i7]
 					INNER JOIN (
@@ -1213,12 +1213,12 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
 		OUTER APPLY (
 			SELECT
-				[i8].[MaterialID],
 				[i8].[Id],
 				[i8].[BatchNumber],
 				[i8].[ProductStatus],
 				[i8].[ExpiryDate],
-				[i8].[CustomDate1]
+				[i8].[CustomDate1],
+				[i8].[MaterialID]
 			FROM
 				[InventoryResourceDTO] [i8]
 					INNER JOIN (
