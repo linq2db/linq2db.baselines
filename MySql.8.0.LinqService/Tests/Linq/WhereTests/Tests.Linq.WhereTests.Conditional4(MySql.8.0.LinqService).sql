@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`p`.`ParentID`,
@@ -7,5 +7,5 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = 1
+	`p`.`Value1` = 1
 
