@@ -9,7 +9,7 @@ FROM
 	[Parent] [p1]
 UNION ALL
 SELECT
-	IIF([p2].[Value1] IS NULL, 0, [p2].[Value1]),
+	IIF([p2].[Value1] IS NOT NULL, [p2].[Value1], 0),
 	IIF(False, 0, NULL),
 	IIF(False, 0, NULL)
 FROM

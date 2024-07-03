@@ -526,7 +526,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable])
+	IIF([t1].[EnumNullable] IS NOT NULL, [t1].[EnumNullable], [t1].[Enum])
 FROM
 	[ValueConversion] [t1]
 

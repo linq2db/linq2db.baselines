@@ -20,7 +20,7 @@ FROM
 					[Parent] [p]
 				UNION
 				SELECT
-					IIF([p2].[Value1] IS NULL, 0, [p2].[Value1]) as [ParentID],
+					IIF([p2].[Value1] IS NOT NULL, [p2].[Value1], 0) as [ParentID],
 					IIF(False, 0, NULL) as [ParentID_1],
 					IIF(False, 0, NULL) as [Value1],
 					[p2].[ParentID] as [c1]
@@ -46,7 +46,7 @@ FROM
 	[Parent] [p]
 UNION
 SELECT
-	IIF([p2].[Value1] IS NULL, 0, [p2].[Value1]),
+	IIF([p2].[Value1] IS NOT NULL, [p2].[Value1], 0),
 	IIF(False, 0, NULL),
 	IIF(False, 0, NULL),
 	[p2].[ParentID]

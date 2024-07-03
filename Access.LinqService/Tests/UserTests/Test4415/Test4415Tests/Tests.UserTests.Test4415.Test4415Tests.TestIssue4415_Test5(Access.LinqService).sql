@@ -72,7 +72,7 @@ WHERE
 		FROM
 			(
 				SELECT
-					IIF(MAX([x_1].[LanguageID]) IS NULL, '', MAX([x_1].[LanguageID])) + 'test' as [c1]
+					IIF(MAX([x_1].[LanguageID]) IS NOT NULL, MAX([x_1].[LanguageID]), '') + 'test' as [c1]
 				FROM
 					[Common_Language] [x_1]
 				GROUP BY

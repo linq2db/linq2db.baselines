@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	IIF([p].[Value1] IS NULL, 100, [p].[Value1]) + 50
+	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 100) + 50
 FROM
 	[Parent] [p]
 

@@ -142,7 +142,7 @@ SELECT
 	[al_group_1].[AlertCode],
 	(
 		SELECT TOP 1
-			IIF([t1].[MAX_1] IS NULL, [t1].[CreationDate], [t1].[MAX_1])
+			IIF([t1].[MAX_1] IS NOT NULL, [t1].[MAX_1], [t1].[CreationDate])
 		FROM
 			((
 				SELECT
@@ -318,7 +318,7 @@ SELECT
 	),
 	(
 		SELECT TOP 1
-			IIF([t8].[MAX_1] IS NULL, [t8].[CreationDate], [t8].[MAX_1])
+			IIF([t8].[MAX_1] IS NOT NULL, [t8].[MAX_1], [t8].[CreationDate])
 		FROM
 			((
 				SELECT

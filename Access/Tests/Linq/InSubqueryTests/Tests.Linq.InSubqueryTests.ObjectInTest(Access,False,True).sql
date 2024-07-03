@@ -13,7 +13,7 @@ WHERE
 		FROM
 			[Parent] [param]
 		WHERE
-			[param].[ParentID] = [c_1].[ParentID] AND IIF([param].[Value1] IS NULL, -1, [param].[Value1]) = [c_1].[ParentID]
+			[param].[ParentID] = [c_1].[ParentID] AND IIF([param].[Value1] IS NOT NULL, [param].[Value1], -1) = [c_1].[ParentID]
 	)
 
 BeforeExecute

@@ -9,7 +9,7 @@ SELECT
 FROM
 	(
 		SELECT
-			' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])) as [Label],
+			' ' + CStr(IIF([f].[Value1] IS NOT NULL, [f].[Value1], 0)) as [Label],
 			(
 				SELECT
 					SUM([c_1].[ChildID])
