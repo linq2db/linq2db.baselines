@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008
 
 SELECT
 	[p].[ParentID],
@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = 1
+	[p].[Value1] = 1
 
