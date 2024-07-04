@@ -2,17 +2,10 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."FirstName",
-	p."PersonID",
-	p."LastName",
-	p."MiddleName",
-	p."Gender"
+	p."ParentID",
+	p."Value1"
 FROM
-	"Person" p
+	"Parent" p
 WHERE
-	p."PersonID" = 1 AND
-	p."MiddleName" IS NULL AND
-	p."MiddleName" IS NULL AND
-	p."FirstName" IS NOT NULL AND
-	p."FirstName" IS NOT NULL
+	p."ParentID" = 1
 
