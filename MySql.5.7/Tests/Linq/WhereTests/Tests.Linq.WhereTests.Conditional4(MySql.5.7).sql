@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`ParentID`,
@@ -7,5 +7,5 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` <> 1
+	`p`.`Value1` = 1
 
