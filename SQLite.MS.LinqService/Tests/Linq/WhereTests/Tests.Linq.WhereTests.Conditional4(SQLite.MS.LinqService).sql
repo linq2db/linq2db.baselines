@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[p].[ParentID],
@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] <> 1
+	[p].[Value1] = 1
 
