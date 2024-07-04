@@ -126,16 +126,62 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t9].[SUM_1],
-	[t9].[WithParentReferenceCustom1],
-	[t9].[WithParentReferenceCustom2],
-	[t9].[WithoutParentReference]
+	[t7].[SUM_1],
+	(
+		SELECT
+			Sum([t9].[c1])
+		FROM
+			(
+				SELECT
+					IIF([d_2].[not_null] IS NOT NULL, [d_2].[c1], 0) as [c1]
+				FROM
+					(
+						SELECT
+							0 as [c1]
+					) [t8]
+						LEFT JOIN (
+							SELECT
+								1 as [not_null],
+								IIF([t7].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_2].[StartHour], [a_LeaveRequestDateEntries_2].[EndHour]) as [c1]
+							FROM
+								[LeaveRequest] [e_2]
+									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_2] ON [e_2].[Id] = [a_LeaveRequestDateEntries_2].[LeaveRequestId]
+							WHERE
+								[t7].[EmployeeId] = [e_2].[EmployeeId]
+						) [d_2] ON 1=1
+			) [t9]
+	),
+	(
+		SELECT
+			Sum([t11].[c1])
+		FROM
+			(
+				SELECT
+					IIF([d_3].[not_null] IS NOT NULL, [d_3].[c1], 0) as [c1]
+				FROM
+					(
+						SELECT
+							0 as [c1]
+					) [t10]
+						LEFT JOIN (
+							SELECT
+								1 as [not_null],
+								IIF([t7].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_3].[StartHour], [a_LeaveRequestDateEntries_3].[EndHour]) as [c1]
+							FROM
+								[LeaveRequest] [e_3]
+									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_3] ON [e_3].[Id] = [a_LeaveRequestDateEntries_3].[LeaveRequestId]
+							WHERE
+								[t7].[EmployeeId] = [e_3].[EmployeeId]
+						) [d_3] ON 1=1
+			) [t11]
+	),
+	[t7].[SUM_1_1]
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					SUM([t2].[c1])
+					SUM([t4].[c1])
 				FROM
 					(
 						SELECT
@@ -144,7 +190,7 @@ FROM
 							(
 								SELECT
 									0 as [c1]
-							) [t1]
+							) [t3]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
@@ -153,13 +199,15 @@ FROM
 										[LeaveRequest] [e]
 											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries] ON [e].[Id] = [a_LeaveRequestDateEntries].[LeaveRequestId]
 									WHERE
-										[a_Employee].[EmployeeId] = [e].[EmployeeId]
+										[t1].[EmployeeId] = [e].[EmployeeId]
 								) [d] ON 1=1
-					) [t2]
+					) [t4]
 			) as [SUM_1],
+			[tracking].[TrackingTimeType],
+			[t2].[EmployeeId],
 			(
 				SELECT
-					Sum([t4].[c1])
+					SUM([t6].[c1])
 				FROM
 					(
 						SELECT
@@ -168,76 +216,89 @@ FROM
 							(
 								SELECT
 									0 as [c1]
-							) [t3]
-								LEFT JOIN (
-									SELECT
-										1 as [not_null],
-										IIF([tracking].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_1].[StartHour], [a_LeaveRequestDateEntries_1].[EndHour]) as [c1]
-									FROM
-										[LeaveRequest] [e_1]
-											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_1] ON [e_1].[Id] = [a_LeaveRequestDateEntries_1].[LeaveRequestId]
-									WHERE
-										[a_Employee].[EmployeeId] = [e_1].[EmployeeId]
-								) [d_1] ON 1=1
-					) [t4]
-			) as [WithParentReferenceCustom1],
-			(
-				SELECT
-					Sum([t6].[c1])
-				FROM
-					(
-						SELECT
-							IIF([d_2].[not_null] IS NOT NULL, [d_2].[c1], 0) as [c1]
-						FROM
-							(
-								SELECT
-									0 as [c1]
 							) [t5]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
-										IIF([tracking].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_2].[StartHour], [a_LeaveRequestDateEntries_2].[EndHour]) as [c1]
+										IIF([a_LeaveRequestDateEntries_1].[StartHour] IS NOT NULL, [a_LeaveRequestDateEntries_1].[StartHour], [a_LeaveRequestDateEntries_1].[EndHour]) as [c1]
 									FROM
-										[LeaveRequest] [e_2]
-											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_2] ON [e_2].[Id] = [a_LeaveRequestDateEntries_2].[LeaveRequestId]
+										[LeaveRequest] [e_1]
+											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_1] ON [e_1].[Id] = [a_LeaveRequestDateEntries_1].[LeaveRequestId]
 									WHERE
-										[a_Employee].[EmployeeId] = [e_2].[EmployeeId]
-								) [d_2] ON 1=1
+										[t1].[EmployeeId] = [e_1].[EmployeeId]
+								) [d_1] ON 1=1
 					) [t6]
-			) as [WithParentReferenceCustom2],
+			) as [SUM_1_1]
+		FROM
+			[EmployeeTimeOffBalance] [tracking]
+				CROSS APPLY (
+					SELECT
+						[a_Employee].[EmployeeId]
+					FROM
+						[Employee] [a_Employee]
+					WHERE
+						[tracking].[EmployeeId] = [a_Employee].[EmployeeId]
+				) [t1]
+				CROSS APPLY (
+					SELECT
+						[a_Employee_1].[EmployeeId]
+					FROM
+						[Employee] [a_Employee_1]
+					WHERE
+						[tracking].[EmployeeId] = [a_Employee_1].[EmployeeId]
+				) [t2]
+	) [t7]
+ORDER BY
+	Coalesce([t7].[SUM_1], 0),
+	Coalesce((
+		SELECT
+			Sum([t9].[c1])
+		FROM
 			(
 				SELECT
-					SUM([t8].[c1])
+					IIF([d_2].[not_null] IS NOT NULL, [d_2].[c1], 0) as [c1]
 				FROM
 					(
 						SELECT
-							IIF([d_3].[not_null] IS NOT NULL, [d_3].[c1], 0) as [c1]
-						FROM
-							(
-								SELECT
-									0 as [c1]
-							) [t7]
-								LEFT JOIN (
-									SELECT
-										1 as [not_null],
-										IIF([a_LeaveRequestDateEntries_3].[StartHour] IS NOT NULL, [a_LeaveRequestDateEntries_3].[StartHour], [a_LeaveRequestDateEntries_3].[EndHour]) as [c1]
-									FROM
-										[LeaveRequest] [e_3]
-											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_3] ON [e_3].[Id] = [a_LeaveRequestDateEntries_3].[LeaveRequestId]
-									WHERE
-										[a_Employee].[EmployeeId] = [e_3].[EmployeeId]
-								) [d_3] ON 1=1
+							0 as [c1]
 					) [t8]
-			) as [WithoutParentReference]
+						LEFT JOIN (
+							SELECT
+								1 as [not_null],
+								IIF([t7].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_2].[StartHour], [a_LeaveRequestDateEntries_2].[EndHour]) as [c1]
+							FROM
+								[LeaveRequest] [e_2]
+									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_2] ON [e_2].[Id] = [a_LeaveRequestDateEntries_2].[LeaveRequestId]
+							WHERE
+								[t7].[EmployeeId] = [e_2].[EmployeeId]
+						) [d_2] ON 1=1
+			) [t9]
+	), 0),
+	Coalesce((
+		SELECT
+			Sum([t11].[c1])
 		FROM
-			[EmployeeTimeOffBalance] [tracking]
-				INNER JOIN [Employee] [a_Employee] ON [tracking].[EmployeeId] = [a_Employee].[EmployeeId]
-	) [t9]
-ORDER BY
-	Coalesce([t9].[SUM_1], 0),
-	Coalesce([t9].[WithParentReferenceCustom1], 0),
-	Coalesce([t9].[WithParentReferenceCustom2], 0),
-	Coalesce([t9].[WithoutParentReference], 0) DESC
+			(
+				SELECT
+					IIF([d_3].[not_null] IS NOT NULL, [d_3].[c1], 0) as [c1]
+				FROM
+					(
+						SELECT
+							0 as [c1]
+					) [t10]
+						LEFT JOIN (
+							SELECT
+								1 as [not_null],
+								IIF([t7].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_3].[StartHour], [a_LeaveRequestDateEntries_3].[EndHour]) as [c1]
+							FROM
+								[LeaveRequest] [e_3]
+									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_3] ON [e_3].[Id] = [a_LeaveRequestDateEntries_3].[LeaveRequestId]
+							WHERE
+								[t7].[EmployeeId] = [e_3].[EmployeeId]
+						) [d_3] ON 1=1
+			) [t11]
+	), 0),
+	Coalesce([t7].[SUM_1_1], 0) DESC
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
