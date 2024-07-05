@@ -59,7 +59,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	(i."One", i."Nil", i."Three") <> (i."One", i."Two", i."Three")
+	((i."One", i."Nil", i."Three") <> (i."One", i."Two", i."Three") OR (i."One", i."Nil", i."Three") IS NULL)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -69,7 +69,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	(1, i."Nil", 4) <> (i."One", i."Nil", i."Three")
+	((1, i."Nil", 4) <> (i."One", i."Nil", i."Three") OR (1, i."Nil", 4) IS NULL AND (i."One", i."Nil", i."Three") IS NOT NULL OR (1, i."Nil", 4) IS NOT NULL AND (i."One", i."Nil", i."Three") IS NULL)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -79,7 +79,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	(1, NULL, 4) <> (i."One", i."Nil", i."Three")
+	((1, NULL, 4) <> (i."One", i."Nil", i."Three") OR (1, NULL, 4) IS NULL AND (i."One", i."Nil", i."Three") IS NOT NULL OR (1, NULL, 4) IS NOT NULL AND (i."One", i."Nil", i."Three") IS NULL)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
