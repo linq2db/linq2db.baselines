@@ -7,6 +7,6 @@ SELECT
 FROM
 	`Child` `x`
 ORDER BY
-	`x`.`ChildID` % 2,
-	`x`.`ChildID`
+	`x`.`ChildID`,
+	`x`.`ChildID` % 2
 
