@@ -78,21 +78,21 @@ FROM
 			SELECT
 				t1."AppSubTypeId",
 				t1."Description",
-				t1."MAX_1" as "MaxSubtypeCreatedDate",
-				t1."MAX_2" as "MaxTypeCreatedDate",
-				t1."MAX_3" as "MaxTypeId",
-				t1."CountExt" as "CountDistinctTypeId",
-				t1."CountExt_1" as "CountDistinctSubTypeId"
+				t1."MaxSubtypeCreatedDate",
+				t1."MaxTypeCreatedDate",
+				t1."MaxTypeId",
+				t1."CountDistinctTypeId",
+				t1."CountDistinctSubTypeId"
 			FROM
 				(
 					SELECT
-						COUNT(DISTINCT type_1."AppTypeId") as "CountExt",
-						MAX(subtype_1."CreatedDate") as "MAX_1",
-						MAX(type_1."CreatedDate") as "MAX_2",
-						MAX(type_1."AppTypeId") as "MAX_3",
+						COUNT(DISTINCT type_1."AppTypeId") as "CountDistinctTypeId",
+						MAX(subtype_1."CreatedDate") as "MaxSubtypeCreatedDate",
+						MAX(type_1."CreatedDate") as "MaxTypeCreatedDate",
+						MAX(type_1."AppTypeId") as "MaxTypeId",
 						subtype_1."AppSubTypeId",
 						subtype_1."Description",
-						COUNT(DISTINCT subtype_1."AppSubTypeId") as "CountExt_1"
+						COUNT(DISTINCT subtype_1."AppSubTypeId") as "CountDistinctSubTypeId"
 					FROM
 						"ItemAppType" grpby
 							LEFT JOIN "AppType" type_1 ON type_1."AppTypeId" = grpby."AppTypeId"
@@ -105,10 +105,10 @@ FROM
 						subtype_1."AppSubTypeId"
 				) t1
 			ORDER BY
-				t1."CountExt" DESC,
-				t1."MAX_1" DESC,
-				t1."MAX_2" DESC,
-				t1."MAX_3" DESC
+				t1."CountDistinctTypeId" DESC,
+				t1."MaxSubtypeCreatedDate" DESC,
+				t1."MaxTypeCreatedDate" DESC,
+				t1."MaxTypeId" DESC
 			LIMIT 1
 		) t2 ON 1=1
 WHERE

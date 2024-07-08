@@ -86,21 +86,21 @@ FROM
 			SELECT TOP (1)
 				[t1].[AppSubTypeId],
 				[t1].[Description],
-				[t1].[MAX_1] as [MaxSubtypeCreatedDate],
-				[t1].[MAX_2] as [MaxTypeCreatedDate],
-				[t1].[MAX_3] as [MaxTypeId],
-				[t1].[CountExt] as [CountDistinctTypeId],
-				[t1].[CountExt_1] as [CountDistinctSubTypeId]
+				[t1].[MaxSubtypeCreatedDate],
+				[t1].[MaxTypeCreatedDate],
+				[t1].[MaxTypeId],
+				[t1].[CountDistinctTypeId],
+				[t1].[CountDistinctSubTypeId]
 			FROM
 				(
 					SELECT
-						COUNT(DISTINCT [grpby_1].[AppTypeId]) as [CountExt],
-						MAX([grpby_1].[subtypeCreatedDate]) as [MAX_1],
-						MAX([grpby_1].[typeCreatedDate]) as [MAX_2],
-						MAX([grpby_1].[AppTypeId]) as [MAX_3],
+						COUNT(DISTINCT [grpby_1].[AppTypeId]) as [CountDistinctTypeId],
+						MAX([grpby_1].[subtypeCreatedDate]) as [MaxSubtypeCreatedDate],
+						MAX([grpby_1].[typeCreatedDate]) as [MaxTypeCreatedDate],
+						MAX([grpby_1].[AppTypeId]) as [MaxTypeId],
 						[grpby_1].[AppSubTypeId],
 						[grpby_1].[Description],
-						COUNT(DISTINCT [grpby_1].[AppSubTypeId]) as [CountExt_1]
+						COUNT(DISTINCT [grpby_1].[AppSubTypeId]) as [CountDistinctSubTypeId]
 					FROM
 						(
 							SELECT
@@ -122,10 +122,10 @@ FROM
 						[grpby_1].[AppSubTypeId]
 				) [t1]
 			ORDER BY
-				[t1].[CountExt] DESC,
-				[t1].[MAX_1] DESC,
-				[t1].[MAX_2] DESC,
-				[t1].[MAX_3] DESC
+				[t1].[CountDistinctTypeId] DESC,
+				[t1].[MaxSubtypeCreatedDate] DESC,
+				[t1].[MaxTypeCreatedDate] DESC,
+				[t1].[MaxTypeId] DESC
 		) [t2]
 WHERE
 	[i].[GroupId] = @groupId

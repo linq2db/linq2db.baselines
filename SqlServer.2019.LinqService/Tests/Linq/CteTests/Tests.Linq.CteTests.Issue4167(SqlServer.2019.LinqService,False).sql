@@ -108,16 +108,21 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
+	[t1].[EnumValue]
 FROM
-	[Issue4167Table] [g_1]
-WHERE
-	[g_1].[Value] = N'000001'
-GROUP BY
-	[g_1].[Value],
-	[g_1].[EnumValue]
+	(
+		SELECT
+			IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0) as [EnumValue]
+		FROM
+			[Issue4167Table] [g_1]
+		WHERE
+			[g_1].[Value] = N'000001'
+		GROUP BY
+			[g_1].[Value],
+			[g_1].[EnumValue]
+	) [t1]
 ORDER BY
-	IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
+	[t1].[EnumValue]
 
 BeforeExecute
 -- SqlServer.2019
