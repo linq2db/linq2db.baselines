@@ -65,10 +65,10 @@ SET     @tz = N'UTC'
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[group_1],
-	[d].[COUNT_1],
-	[d].[c1],
+	[d].[id],
+	[d].[reference],
+	[d].[count_1],
+	[d].[percents],
 	[d].[hours],
 	[d].[minutes]
 FROM
@@ -85,10 +85,10 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1],
-				[t3].[Id],
-				[t3].[group_1],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1],
+				COUNT(*) as [count_1],
+				[t3].[Id] as [id],
+				[t3].[group_1] as [reference],
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 				[t3].[hours],
 				[t3].[minutes]
 			FROM
@@ -111,7 +111,7 @@ FROM
 				([t3].[group_1] = [m_1].[Id] OR [t3].[group_1] IS NULL AND [m_1].[Id] IS NULL)
 		) [d]
 ORDER BY
-	[d].[COUNT_1] DESC
+	[d].[count_1] DESC
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -119,14 +119,14 @@ BeforeExecute
 SELECT
 	[a_Reference].[Id]
 FROM
-	[TestAggregateTable] [t1]
-		LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+	[TestAggregateTable] [group_1]
+		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
 GROUP BY
 	[a_Reference].[Id],
-	[t1].[ReferenceId],
+	[group_1].[ReferenceId],
 	[a_Reference].[Id]
 ORDER BY
-	[t1].[ReferenceId]
+	[group_1].[ReferenceId]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

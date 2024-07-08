@@ -9,7 +9,7 @@ SELECT
 FROM
 	(
 		SELECT
-			' ' || CAST(Nvl(f."Value1", 0) AS VarChar(255)) as "Label",
+			' ' || CAST(Coalesce(f."Value1", 0) AS VarChar(255)) as "Label",
 			(
 				SELECT
 					SUM(c_1."ChildID")

@@ -12,7 +12,7 @@ FROM
 	"Parent" p1
 UNION
 SELECT
-	Nvl(p2."Value1", 0),
+	Coalesce(p2."Value1", 0),
 	NULL,
 	NULL,
 	t1."ParentID",
