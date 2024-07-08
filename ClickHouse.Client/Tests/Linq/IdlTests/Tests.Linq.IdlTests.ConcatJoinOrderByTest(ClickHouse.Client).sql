@@ -3,7 +3,7 @@
 
 SELECT
 	person_1.PersonID,
-	y_1.PersonID
+	t1.PersonID
 FROM
 	(
 		SELECT
@@ -19,8 +19,8 @@ FROM
 			Patient pat
 		WHERE
 			pat.Diagnosis = 'b'
-	) y_1
-		INNER JOIN Person person_1 ON y_1.PersonID = person_1.PersonID
+	) t1
+		INNER JOIN Person person_1 ON t1.PersonID = person_1.PersonID
 ORDER BY
 	person_1.PersonID
 

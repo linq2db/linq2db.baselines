@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[x_1].[Minute_1],
+	[t1].[Minute_1],
 	COUNT(*)
 FROM
 	(
@@ -495,11 +495,11 @@ FROM
 			DatePart(minute, [x].[TransactionDate]) as [Minute_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Minute_1]
+	[t1].[Minute_1]
 ORDER BY
-	[x_1].[Minute_1]
+	[t1].[Minute_1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

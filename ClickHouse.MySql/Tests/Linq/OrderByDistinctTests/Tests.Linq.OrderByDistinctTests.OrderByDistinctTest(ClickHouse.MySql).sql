@@ -61,13 +61,13 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	g_1.DuplicateData
+	x.DuplicateData
 FROM
-	OrderByDistinctData g_1
+	OrderByDistinctData x
 GROUP BY
-	g_1.DuplicateData
+	x.DuplicateData
 ORDER BY
-	maxOrNull(g_1.OrderData1)
+	maxOrNull(x.OrderData1)
 LIMIT 0, 3
 
 BeforeExecute
@@ -83,13 +83,13 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	g_1.DuplicateData
+	x.DuplicateData
 FROM
-	OrderByDistinctData g_1
+	OrderByDistinctData x
 GROUP BY
-	g_1.DuplicateData
+	x.DuplicateData
 ORDER BY
-	minOrNull(g_1.OrderData1) DESC
+	minOrNull(x.OrderData1) DESC
 LIMIT 0, 3
 
 BeforeExecute

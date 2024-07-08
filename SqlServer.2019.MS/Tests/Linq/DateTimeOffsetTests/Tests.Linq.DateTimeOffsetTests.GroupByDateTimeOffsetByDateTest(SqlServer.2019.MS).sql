@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[x_1].[Date_1],
+	[t1].[Date_1],
 	COUNT(*)
 FROM
 	(
@@ -63,11 +63,11 @@ FROM
 			CAST([x].[TransactionDate] AS Date) as [Date_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Date_1]
+	[t1].[Date_1]
 ORDER BY
-	[x_1].[Date_1]
+	[t1].[Date_1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

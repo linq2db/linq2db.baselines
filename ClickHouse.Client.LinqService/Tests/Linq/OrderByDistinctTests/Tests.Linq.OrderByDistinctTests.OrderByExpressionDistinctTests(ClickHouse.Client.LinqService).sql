@@ -355,13 +355,13 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	g_1.DuplicateData
+	x.DuplicateData
 FROM
-	OrderByDistinctData g_1
+	OrderByDistinctData x
 GROUP BY
-	g_1.DuplicateData
+	x.DuplicateData
 ORDER BY
-	maxOrNull(g_1.OrderData1 % 3)
+	maxOrNull(x.OrderData1 % 3)
 LIMIT 0, 3
 
 BeforeExecute

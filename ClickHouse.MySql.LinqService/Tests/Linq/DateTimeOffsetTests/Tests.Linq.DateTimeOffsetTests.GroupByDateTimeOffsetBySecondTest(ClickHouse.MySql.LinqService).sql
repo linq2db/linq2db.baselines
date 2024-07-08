@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x_1.Second_1,
+	t1.Second_1,
 	COUNT(*)
 FROM
 	(
@@ -238,11 +238,11 @@ FROM
 			toSecond(x.TransactionDate) as Second_1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Second_1
+	t1.Second_1
 ORDER BY
-	x_1.Second_1
+	t1.Second_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

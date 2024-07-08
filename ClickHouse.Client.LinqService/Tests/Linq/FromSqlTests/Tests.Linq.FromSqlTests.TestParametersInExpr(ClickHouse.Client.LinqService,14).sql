@@ -300,10 +300,10 @@ SELECT
 	s.value,
 	s.id
 FROM
-	sample_class c_1
+	sample_class t1
 		INNER JOIN (
 			SELECT * FROM sample_class where id >= toInt64(1) and id < 14
-		) s ON s.id = c_1.id
+		) s ON s.id = t1.id
 WHERE
 	s.id > 10
 ORDER BY

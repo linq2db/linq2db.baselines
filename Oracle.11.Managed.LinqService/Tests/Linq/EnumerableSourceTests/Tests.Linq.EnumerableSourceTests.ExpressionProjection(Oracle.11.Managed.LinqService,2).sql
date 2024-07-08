@@ -9,11 +9,11 @@ SELECT
 	n."FirstName",
 	n."PersonID"
 FROM
-	"Person" p
+	"Person" t1
 		INNER JOIN (
 			SELECT 'Janet' AS "FirstName", :ID AS "PersonID" FROM sys.dual
 			UNION ALL
-			SELECT 'Doe', :ID_1 FROM sys.dual) n ON p."PersonID" = n."PersonID"
+			SELECT 'Doe', :ID_1 FROM sys.dual) n ON t1."PersonID" = n."PersonID"
 ORDER BY
 	n."PersonID"
 

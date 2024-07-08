@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.Year_1,
+	t1.Year_1,
 	COUNT(*)
 FROM
 	(
@@ -53,11 +53,11 @@ FROM
 			toYear(x.TransactionDate) as Year_1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Year_1
+	t1.Year_1
 ORDER BY
-	x_1.Year_1
+	t1.Year_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	[x_1].[Month_1],
+	[t1].[Month_1],
 	COUNT(*)
 FROM
 	(
@@ -64,11 +64,11 @@ FROM
 			DatePart(month, [x].[TransactionDate]) as [Month_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Month_1]
+	[t1].[Month_1]
 ORDER BY
-	[x_1].[Month_1]
+	[t1].[Month_1]
 
 BeforeExecute
 -- SqlServer.2012

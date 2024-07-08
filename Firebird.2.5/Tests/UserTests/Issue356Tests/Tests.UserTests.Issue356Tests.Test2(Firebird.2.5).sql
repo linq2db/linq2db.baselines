@@ -4,10 +4,10 @@ DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT FIRST @take
-	"x"."ParentID",
+	"t3"."ParentID",
 	"t2"."ChildID"
 FROM
-	"Parent" "x"
+	"Parent" "t3"
 		INNER JOIN (
 			SELECT FIRST 10
 				"c_2"."ParentID",
@@ -28,7 +28,7 @@ FROM
 				) "c_2"
 			ORDER BY
 				"c_2"."ParentID"
-		) "t2" ON "t2"."ParentID" = "x"."ParentID"
+		) "t2" ON "t2"."ParentID" = "t3"."ParentID"
 ORDER BY
-	"x"."ParentID"
+	"t3"."ParentID"
 

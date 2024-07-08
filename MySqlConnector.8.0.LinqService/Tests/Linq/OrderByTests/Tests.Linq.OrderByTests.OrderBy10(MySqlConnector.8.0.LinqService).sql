@@ -2,11 +2,11 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`x`.`ParentID`,
-	`x`.`ChildID`
+	`ch`.`ParentID`,
+	`ch`.`ChildID`
 FROM
-	`Child` `x`
+	`Child` `ch`
 ORDER BY
-	`x`.`ChildID` % 2,
-	`x`.`ChildID` DESC
+	`ch`.`ChildID` % 2,
+	`ch`.`ChildID` DESC
 

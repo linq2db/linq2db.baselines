@@ -67,10 +67,10 @@ SELECT
 	c4."ChildID",
 	c4."ParentID"
 FROM
-	"Child" p
-		INNER JOIN "Child" c4 ON c4."ParentID" = p."ParentID"
+	"Child" c_1
+		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
 WHERE
-	p."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
+	c_1."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"

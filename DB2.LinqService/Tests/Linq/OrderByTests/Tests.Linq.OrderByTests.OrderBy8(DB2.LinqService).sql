@@ -2,11 +2,11 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."ParentID",
-	"x"."ChildID"
+	"ch"."ParentID",
+	"ch"."ChildID"
 FROM
-	"Child" "x"
+	"Child" "ch"
 ORDER BY
-	Mod("x"."ChildID", 2),
-	"x"."ChildID"
+	Mod("ch"."ChildID", 2),
+	"ch"."ChildID"
 

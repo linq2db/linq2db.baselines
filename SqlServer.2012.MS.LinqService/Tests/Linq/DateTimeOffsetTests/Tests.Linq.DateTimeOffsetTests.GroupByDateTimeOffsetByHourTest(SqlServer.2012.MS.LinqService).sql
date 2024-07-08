@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[x_1].[Hour_1],
+	[t1].[Hour_1],
 	COUNT(*)
 FROM
 	(
@@ -496,11 +496,11 @@ FROM
 			DatePart(hour, [x].[TransactionDate]) as [Hour_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Hour_1]
+	[t1].[Hour_1]
 ORDER BY
-	[x_1].[Hour_1]
+	[t1].[Hour_1]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

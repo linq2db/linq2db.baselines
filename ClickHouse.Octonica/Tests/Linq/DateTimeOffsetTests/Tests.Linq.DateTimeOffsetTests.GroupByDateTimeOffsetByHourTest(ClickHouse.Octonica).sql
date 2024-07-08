@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.Hour_1,
+	t1.Hour_1,
 	COUNT(*)
 FROM
 	(
@@ -53,11 +53,11 @@ FROM
 			toHour(x.TransactionDate) as Hour_1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Hour_1
+	t1.Hour_1
 ORDER BY
-	x_1.Hour_1
+	t1.Hour_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

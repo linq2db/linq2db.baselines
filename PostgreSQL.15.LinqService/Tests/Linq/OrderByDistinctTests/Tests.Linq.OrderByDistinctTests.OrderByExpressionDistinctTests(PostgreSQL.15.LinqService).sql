@@ -505,13 +505,13 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
 SELECT
-	g_1."DuplicateData"
+	x."DuplicateData"
 FROM
-	"OrderByDistinctData" g_1
+	"OrderByDistinctData" x
 GROUP BY
-	g_1."DuplicateData"
+	x."DuplicateData"
 ORDER BY
-	MAX((g_1."OrderData1"::decimal % 3)::decimal)
+	MAX((x."OrderData1"::decimal % 3)::decimal)
 LIMIT :take OFFSET :skip 
 
 BeforeExecute

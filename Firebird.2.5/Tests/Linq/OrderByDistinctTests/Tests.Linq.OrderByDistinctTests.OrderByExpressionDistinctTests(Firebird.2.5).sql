@@ -73,13 +73,13 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
 SELECT FIRST @take SKIP @skip
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	"OrderByDistinctData" "g_1"
+	"OrderByDistinctData" "x"
 GROUP BY
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 ORDER BY
-	MAX(Mod("g_1"."OrderData1", 3))
+	MAX(Mod("x"."OrderData1", 3))
 
 BeforeExecute
 -- Firebird.2.5 Firebird

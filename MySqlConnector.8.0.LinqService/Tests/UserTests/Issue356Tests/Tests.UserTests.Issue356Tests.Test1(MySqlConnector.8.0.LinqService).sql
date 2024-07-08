@@ -4,10 +4,10 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	`x`.`ParentID`,
+	`t3`.`ParentID`,
 	`t2`.`ChildID`
 FROM
-	`Parent` `x`
+	`Parent` `t3`
 		INNER JOIN (
 			SELECT DISTINCT
 				`c_2`.`ParentID`,
@@ -26,9 +26,9 @@ FROM
 					FROM
 						`Child` `t1`
 				) `c_2`
-		) `t2` ON `t2`.`ParentID` = `x`.`ParentID`
+		) `t2` ON `t2`.`ParentID` = `t3`.`ParentID`
 ORDER BY
-	`x`.`ParentID`,
+	`t3`.`ParentID`,
 	`t2`.`ChildID`
 LIMIT @take
 

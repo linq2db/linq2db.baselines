@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[x_1].[Year_1],
+	[t1].[Year_1],
 	COUNT(*)
 FROM
 	(
@@ -495,11 +495,11 @@ FROM
 			DatePart(year, [x].[TransactionDate]) as [Year_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Year_1]
+	[t1].[Year_1]
 ORDER BY
-	[x_1].[Year_1]
+	[t1].[Year_1]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
