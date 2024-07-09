@@ -40,7 +40,10 @@ SELECT
 	Coalesce(t."Nullable2", t."Nullable1", t."Nullable3", t."Id"),
 	Coalesce(t."Nullable2", t."Nullable3", t."Nullable1", t."Id"),
 	Coalesce(t."Nullable3", t."Nullable1", t."Nullable2", t."Id"),
-	Coalesce(t."Nullable3", t."Nullable2", t."Nullable1", t."Id")
+	Coalesce(t."Nullable3", t."Nullable2", t."Nullable1", t."Id"),
+	t."Id",
+	Coalesce(t."Nullable1", t."Id"),
+	Coalesce(t."Nullable1", t."Nullable2", t."Id")
 FROM
 	"CoalesceNullableFields" t
 
