@@ -39,7 +39,10 @@ SELECT
 	Coalesce([t].[Nullable2], [t].[Nullable1], [t].[Nullable3], [t].[Id]) as [c2],
 	Coalesce([t].[Nullable2], [t].[Nullable3], [t].[Nullable1], [t].[Id]) as [c3],
 	Coalesce([t].[Nullable3], [t].[Nullable1], [t].[Nullable2], [t].[Id]) as [c4],
-	Coalesce([t].[Nullable3], [t].[Nullable2], [t].[Nullable1], [t].[Id]) as [c5]
+	Coalesce([t].[Nullable3], [t].[Nullable2], [t].[Nullable1], [t].[Id]) as [c5],
+	[t].[Id],
+	Coalesce([t].[Nullable1], [t].[Id]) as [c6],
+	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Id]) as [c7]
 FROM
 	[CoalesceNullableFields] [t]
 
