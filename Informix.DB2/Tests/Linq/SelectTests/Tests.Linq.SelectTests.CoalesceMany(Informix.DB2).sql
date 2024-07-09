@@ -128,7 +128,10 @@ SELECT
 	Nvl(t.Nullable2, Nvl(t.Nullable1, Nvl(t.Nullable3, t.Id))),
 	Nvl(t.Nullable2, Nvl(t.Nullable3, Nvl(t.Nullable1, t.Id))),
 	Nvl(t.Nullable3, Nvl(t.Nullable1, Nvl(t.Nullable2, t.Id))),
-	Nvl(t.Nullable3, Nvl(t.Nullable2, Nvl(t.Nullable1, t.Id)))
+	Nvl(t.Nullable3, Nvl(t.Nullable2, Nvl(t.Nullable1, t.Id))),
+	t.Id,
+	Nvl(t.Nullable1, t.Id),
+	Nvl(t.Nullable1, Nvl(t.Nullable2, t.Id))
 FROM
 	CoalesceNullableFields t
 
