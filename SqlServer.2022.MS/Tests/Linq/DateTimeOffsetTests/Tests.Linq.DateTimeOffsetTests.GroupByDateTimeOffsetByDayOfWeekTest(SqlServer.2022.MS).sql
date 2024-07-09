@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[x_1].[DayOfWeek],
+	[t1].[DayOfWeek],
 	COUNT(*)
 FROM
 	(
@@ -63,11 +63,11 @@ FROM
 			DatePart(weekday, [x].[TransactionDate]) - 1 as [DayOfWeek]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[DayOfWeek]
+	[t1].[DayOfWeek]
 ORDER BY
-	[x_1].[DayOfWeek]
+	[t1].[DayOfWeek]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

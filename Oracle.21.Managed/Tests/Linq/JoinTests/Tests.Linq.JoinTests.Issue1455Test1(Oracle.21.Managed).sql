@@ -223,8 +223,8 @@ FROM
 				trade_2."DealId",
 				trade_2."ParcelId",
 				trade_2."CounterParty",
-				Nvl(t1.MAX_1, t1."CreationDate") as "LastUpdate",
-				Nvl(t1.MAX_1, t1."CreationDate") as "LastUpdate_1"
+				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate",
+				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate_1"
 			FROM
 				(
 					SELECT

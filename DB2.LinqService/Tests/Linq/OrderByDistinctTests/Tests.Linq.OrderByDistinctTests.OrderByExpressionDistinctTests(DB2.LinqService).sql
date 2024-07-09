@@ -509,13 +509,13 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
 SELECT
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	"OrderByDistinctData" "g_1"
+	"OrderByDistinctData" "x"
 GROUP BY
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 ORDER BY
-	MAX(Mod("g_1"."OrderData1", 3))
+	MAX(Mod("x"."OrderData1", 3))
 OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

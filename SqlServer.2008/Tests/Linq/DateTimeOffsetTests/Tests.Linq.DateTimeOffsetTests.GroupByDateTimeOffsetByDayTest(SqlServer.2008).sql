@@ -56,7 +56,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[x_1].[Day_1],
+	[t1].[Day_1],
 	COUNT(*)
 FROM
 	(
@@ -64,11 +64,11 @@ FROM
 			DatePart(day, [x].[TransactionDate]) as [Day_1]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Day_1]
+	[t1].[Day_1]
 ORDER BY
-	[x_1].[Day_1]
+	[t1].[Day_1]
 
 BeforeExecute
 -- SqlServer.2008

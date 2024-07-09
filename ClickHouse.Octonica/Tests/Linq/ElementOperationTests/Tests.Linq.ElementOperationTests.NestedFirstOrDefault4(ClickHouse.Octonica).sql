@@ -14,8 +14,8 @@ FROM
 	) m_1
 		INNER JOIN (
 			SELECT DISTINCT
-				d.ParentID as ParentID,
-				d.ChildID as ChildID
+				d.ChildID as ChildID,
+				d.ParentID as ParentID
 			FROM
 				Child d
 			WHERE

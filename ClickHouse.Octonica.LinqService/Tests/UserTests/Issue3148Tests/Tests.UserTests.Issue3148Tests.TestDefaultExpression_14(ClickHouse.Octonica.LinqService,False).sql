@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	Coalesce(concat(r.FirstName, '1'), NULL) IS NULL
+	concat(r.FirstName, '1') IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	Coalesce(concat(r.FirstName, '1'), NULL) IS NULL
+	concat(r.FirstName, '1') IS NULL
 

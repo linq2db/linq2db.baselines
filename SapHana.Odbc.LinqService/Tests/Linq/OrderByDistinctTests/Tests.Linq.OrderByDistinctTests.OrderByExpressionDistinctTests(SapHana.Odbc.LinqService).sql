@@ -505,13 +505,13 @@ DECLARE @skip  -- Int32
 SET     @skip = 0
 
 SELECT
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 FROM
-	"OrderByDistinctData" "g_1"
+	"OrderByDistinctData" "x"
 GROUP BY
-	"g_1"."DuplicateData"
+	"x"."DuplicateData"
 ORDER BY
-	MAX(MOD("g_1"."OrderData1", 3))
+	MAX(MOD("x"."OrderData1", 3))
 LIMIT ? OFFSET ?
 
 BeforeExecute

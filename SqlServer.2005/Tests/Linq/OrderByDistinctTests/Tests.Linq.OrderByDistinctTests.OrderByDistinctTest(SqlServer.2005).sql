@@ -84,12 +84,12 @@ SELECT
 FROM
 	(
 		SELECT
-			[g_1].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY MAX([g_1].[OrderData1])) as [RN]
+			[x].[DuplicateData],
+			ROW_NUMBER() OVER (ORDER BY MAX([x].[OrderData1])) as [RN]
 		FROM
-			[OrderByDistinctData] [g_1]
+			[OrderByDistinctData] [x]
 		GROUP BY
-			[g_1].[DuplicateData]
+			[x].[DuplicateData]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
@@ -131,12 +131,12 @@ SELECT
 FROM
 	(
 		SELECT
-			[g_1].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY MIN([g_1].[OrderData1]) DESC) as [RN]
+			[x].[DuplicateData],
+			ROW_NUMBER() OVER (ORDER BY MIN([x].[OrderData1]) DESC) as [RN]
 		FROM
-			[OrderByDistinctData] [g_1]
+			[OrderByDistinctData] [x]
 		GROUP BY
-			[g_1].[DuplicateData]
+			[x].[DuplicateData]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)

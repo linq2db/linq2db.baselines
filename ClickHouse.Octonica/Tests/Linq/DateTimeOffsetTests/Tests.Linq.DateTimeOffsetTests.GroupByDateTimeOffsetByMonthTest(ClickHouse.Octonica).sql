@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.Month_1,
+	t1.Month_1,
 	COUNT(*)
 FROM
 	(
@@ -53,11 +53,11 @@ FROM
 			toMonth(x.TransactionDate) as Month_1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Month_1
+	t1.Month_1
 ORDER BY
-	x_1.Month_1
+	t1.Month_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

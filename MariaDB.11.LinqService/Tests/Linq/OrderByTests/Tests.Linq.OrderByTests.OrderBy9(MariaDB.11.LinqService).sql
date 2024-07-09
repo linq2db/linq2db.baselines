@@ -2,11 +2,11 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`x`.`ParentID`,
-	`x`.`ChildID`
+	`ch`.`ParentID`,
+	`ch`.`ChildID`
 FROM
-	`Child` `x`
+	`Child` `ch`
 ORDER BY
-	`x`.`ChildID` % 2 DESC,
-	`x`.`ChildID` DESC
+	`ch`.`ChildID` % 2 DESC,
+	`ch`.`ChildID` DESC
 

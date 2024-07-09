@@ -61,13 +61,13 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [g_1]
+	[OrderByDistinctData] [x]
 GROUP BY
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 ORDER BY
-	MAX([g_1].[OrderData1])
+	MAX([x].[OrderData1])
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -81,13 +81,13 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [g_1]
+	[OrderByDistinctData] [x]
 GROUP BY
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 ORDER BY
-	MIN([g_1].[OrderData1]) DESC
+	MIN([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase

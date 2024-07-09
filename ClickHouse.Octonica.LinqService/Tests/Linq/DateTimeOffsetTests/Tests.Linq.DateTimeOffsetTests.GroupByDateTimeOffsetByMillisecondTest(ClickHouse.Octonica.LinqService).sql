@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.Millisecond,
+	t1.Millisecond,
 	COUNT(*)
 FROM
 	(
@@ -238,11 +238,11 @@ FROM
 			toUnixTimestamp64Milli(x.TransactionDate) % 1000 as Millisecond
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Millisecond
+	t1.Millisecond
 ORDER BY
-	x_1.Millisecond
+	t1.Millisecond
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

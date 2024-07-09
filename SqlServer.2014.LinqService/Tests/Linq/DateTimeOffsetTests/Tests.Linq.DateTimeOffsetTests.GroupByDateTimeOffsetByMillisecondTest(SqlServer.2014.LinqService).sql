@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	[x_1].[Millisecond],
+	[t1].[Millisecond],
 	COUNT(*)
 FROM
 	(
@@ -496,11 +496,11 @@ FROM
 			DatePart(millisecond, [x].[TransactionDate]) as [Millisecond]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Millisecond]
+	[t1].[Millisecond]
 ORDER BY
-	[x_1].[Millisecond]
+	[t1].[Millisecond]
 
 BeforeExecute
 -- SqlServer.2014

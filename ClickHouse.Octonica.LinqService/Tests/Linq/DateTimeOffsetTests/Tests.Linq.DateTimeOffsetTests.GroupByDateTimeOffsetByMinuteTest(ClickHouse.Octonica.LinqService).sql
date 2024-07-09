@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.Minute_1,
+	t1.Minute_1,
 	COUNT(*)
 FROM
 	(
@@ -238,11 +238,11 @@ FROM
 			toMinute(x.TransactionDate) as Minute_1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.Minute_1
+	t1.Minute_1
 ORDER BY
-	x_1.Minute_1
+	t1.Minute_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -2,38 +2,28 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t6].[ParentID_6],
-	[t6].[Value1],
 	[t6].[ParentID],
+	[t6].[Value1],
+	[t6].[ParentID_1],
 	[t6].[ChildID],
 	[t6].[Any_1],
 	[t6].[ChildID_1],
-	[t6].[ParentID_1],
-	[t6].[ChildID_2],
 	[t6].[ParentID_2],
-	[t6].[ChildID_3],
+	[t6].[ChildID_2],
 	[t6].[ParentID_3],
-	[t6].[ChildID_4],
+	[t6].[ChildID_3],
 	[t6].[ParentID_4],
+	[t6].[ChildID_4],
+	[t6].[ParentID_5],
 	[t6].[ChildID_5],
-	[t6].[ParentID_5]
+	[t6].[ParentID_6]
 FROM
 	(
 		SELECT DISTINCT
-			[c1_1].[ParentID],
-			[c1_1].[ChildID],
-			[t1].[ChildID] as [ChildID_1],
-			[t1].[ParentID] as [ParentID_1],
-			[t2].[ChildID] as [ChildID_2],
-			[t2].[ParentID] as [ParentID_2],
-			[t3].[ChildID] as [ChildID_3],
-			[t3].[ParentID] as [ParentID_3],
-			[t4].[ChildID] as [ChildID_4],
-			[t4].[ParentID] as [ParentID_4],
-			[t5].[ChildID] as [ChildID_5],
-			[t5].[ParentID] as [ParentID_5],
-			[p].[ParentID] as [ParentID_6],
+			[p].[ParentID],
 			[p].[Value1],
+			[c1_1].[ParentID] as [ParentID_1],
+			[c1_1].[ChildID],
 			IIF(EXISTS(
 				SELECT
 					*
@@ -41,7 +31,17 @@ FROM
 					[Child] [c_6]
 				WHERE
 					[c_6].[ChildID] > 2
-			), 1, 0) as [Any_1]
+			), 1, 0) as [Any_1],
+			[t1].[ChildID] as [ChildID_1],
+			[t1].[ParentID] as [ParentID_2],
+			[t2].[ChildID] as [ChildID_2],
+			[t2].[ParentID] as [ParentID_3],
+			[t3].[ChildID] as [ChildID_3],
+			[t3].[ParentID] as [ParentID_4],
+			[t4].[ChildID] as [ChildID_4],
+			[t4].[ParentID] as [ParentID_5],
+			[t5].[ChildID] as [ChildID_5],
+			[t5].[ParentID] as [ParentID_6]
 		FROM
 			[Parent] [p]
 				OUTER APPLY (
@@ -100,5 +100,5 @@ FROM
 				) [t5]
 	) [t6]
 ORDER BY
-	[t6].[ParentID_6]
+	[t6].[ParentID]
 

@@ -9,11 +9,11 @@ SELECT
 	[n].[FirstName],
 	[n].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [t1]
 		INNER JOIN (
 			SELECT N'Janet' AS [FirstName], @ID AS [PersonID]
 			UNION ALL
-			SELECT N'Doe', @ID_1) [n] ON [p].[PersonID] = [n].[PersonID]
+			SELECT N'Doe', @ID_1) [n] ON [t1].[PersonID] = [n].[PersonID]
 ORDER BY
 	[n].[PersonID]
 

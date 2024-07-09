@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	[x_1].[TimeOfDay],
+	[t1].[TimeOfDay],
 	COUNT(*)
 FROM
 	(
@@ -63,11 +63,11 @@ FROM
 			CAST([x].[TransactionDate] AS Time) as [TimeOfDay]
 		FROM
 			[Transactions] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[TimeOfDay]
+	[t1].[TimeOfDay]
 ORDER BY
-	[x_1].[TimeOfDay]
+	[t1].[TimeOfDay]
 
 BeforeExecute
 -- SqlServer.2017

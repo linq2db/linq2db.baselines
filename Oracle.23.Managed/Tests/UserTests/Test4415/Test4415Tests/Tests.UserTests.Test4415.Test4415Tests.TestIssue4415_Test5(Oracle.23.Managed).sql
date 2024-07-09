@@ -60,7 +60,7 @@ WHERE
 		FROM
 			(
 				SELECT
-					Nvl(MAX(x_1."LanguageID"), '') || 'test' as "c1"
+					Coalesce(MAX(x_1."LanguageID"), '') || 'test' as "c1"
 				FROM
 					"Common_Language" x_1
 				GROUP BY

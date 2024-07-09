@@ -2,14 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[b].[ParentID],
+	[proj].[ParentID],
 	[impl].[ParentID],
 	[impl].[Value1]
 FROM
-	[Parent] [b]
-		INNER JOIN [Parent] [impl] ON [b].[ParentID] = [impl].[ParentID]
+	[Parent] [proj]
+		INNER JOIN [Parent] [impl] ON [proj].[ParentID] = [impl].[ParentID]
 WHERE
-	([b].[ParentID] = 2 OR [b].[ParentID] = 3)
+	([proj].[ParentID] = 2 OR [proj].[ParentID] = 3)
 ORDER BY
-	[b].[ParentID]
+	[proj].[ParentID]
 

@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x_1.DayOfWeek,
+	t1.DayOfWeek,
 	COUNT(*)
 FROM
 	(
@@ -238,11 +238,11 @@ FROM
 			toDayOfWeek(addDays(x.TransactionDate, 1)) - 1 as DayOfWeek
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.DayOfWeek
+	t1.DayOfWeek
 ORDER BY
-	x_1.DayOfWeek
+	t1.DayOfWeek
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

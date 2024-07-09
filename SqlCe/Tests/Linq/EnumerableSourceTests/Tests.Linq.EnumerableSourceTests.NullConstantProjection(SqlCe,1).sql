@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [Id],
+	[p].[PersonID] as [ID],
 	[p].[FirstName],
 	[p].[LastName],
 	[p].[MiddleName],

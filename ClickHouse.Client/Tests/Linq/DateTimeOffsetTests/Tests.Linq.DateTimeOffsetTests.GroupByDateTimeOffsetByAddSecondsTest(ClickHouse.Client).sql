@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x_1.c1,
+	t1.c1,
 	COUNT(*)
 FROM
 	(
@@ -53,11 +53,11 @@ FROM
 			addSeconds(x.TransactionDate, toFloat64(-1)) as c1
 		FROM
 			Transactions x
-	) x_1
+	) t1
 GROUP BY
-	x_1.c1
+	t1.c1
 ORDER BY
-	x_1.c1
+	t1.c1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

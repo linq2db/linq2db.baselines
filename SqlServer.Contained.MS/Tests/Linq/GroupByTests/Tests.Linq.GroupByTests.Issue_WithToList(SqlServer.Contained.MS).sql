@@ -81,19 +81,19 @@ SET     @tz = N'UTC'
 SELECT
 	[t3].[Id],
 	[t3].[group_1],
-	[t3].[COUNT_1],
-	[t3].[c1],
+	[t3].[count_1],
+	[t3].[percents],
 	[t3].[hours],
 	[t3].[minutes]
 FROM
 	(
 		SELECT
-			COUNT(*) as [COUNT_1],
+			COUNT(*) as [count_1],
 			[t2].[Id],
 			[t2].[group_1],
+			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
-			[t2].[minutes],
-			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1]
+			[t2].[minutes]
 		FROM
 			(
 				SELECT
@@ -114,7 +114,7 @@ FROM
 			[t2].[group_1] IS NULL
 	) [t3]
 ORDER BY
-	[t3].[COUNT_1] DESC
+	[t3].[count_1] DESC
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -126,19 +126,19 @@ SET     @key = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 SELECT
 	[t3].[Id],
 	[t3].[group_1],
-	[t3].[COUNT_1],
-	[t3].[c1],
+	[t3].[count_1],
+	[t3].[percents],
 	[t3].[hours],
 	[t3].[minutes]
 FROM
 	(
 		SELECT
-			COUNT(*) as [COUNT_1],
+			COUNT(*) as [count_1],
 			[t2].[Id],
 			[t2].[group_1],
+			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
-			[t2].[minutes],
-			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1]
+			[t2].[minutes]
 		FROM
 			(
 				SELECT
@@ -159,7 +159,7 @@ FROM
 			[t2].[group_1] = @key
 	) [t3]
 ORDER BY
-	[t3].[COUNT_1] DESC
+	[t3].[count_1] DESC
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

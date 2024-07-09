@@ -496,13 +496,13 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 3
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [g_1]
+	[OrderByDistinctData] [x]
 GROUP BY
-	[g_1].[DuplicateData]
+	[x].[DuplicateData]
 ORDER BY
-	MAX([g_1].[OrderData1] MOD 3)
+	MAX([x].[OrderData1] MOD 3)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

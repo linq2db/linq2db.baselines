@@ -33,22 +33,22 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[it_1].[Name],
-	[it_1].[Value_1],
-	[it_1].[MIN_1]
+	[t1].[Name],
+	[t1].[Value_2],
+	[t1].[Value_1]
 FROM
 	(
 		SELECT
-			MIN([it].[YearsExperience]) as [MIN_1],
+			MIN([it].[YearsExperience]) as [Value_1],
 			N'Title' as [Name],
-			[it].[Title] as [Value_1]
+			[it].[Title] as [Value_2]
 		FROM
 			[odata_person] [it]
 		GROUP BY
 			[it].[Title]
-	) [it_1]
+	) [t1]
 ORDER BY
-	[it_1].[MIN_1]
+	[t1].[Value_1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

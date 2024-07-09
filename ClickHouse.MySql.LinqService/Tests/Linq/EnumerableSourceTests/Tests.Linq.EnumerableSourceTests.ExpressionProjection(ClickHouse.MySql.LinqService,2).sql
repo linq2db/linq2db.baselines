@@ -5,11 +5,11 @@ SELECT
 	n.FirstName,
 	n.PersonID
 FROM
-	Person p
+	Person t1
 		INNER JOIN (
 			SELECT 'Janet' AS FirstName, 3 AS PersonID
 			UNION ALL
-			SELECT 'Doe', 4) n ON p.PersonID = n.PersonID
+			SELECT 'Doe', 4) n ON t1.PersonID = n.PersonID
 ORDER BY
 	n.PersonID
 

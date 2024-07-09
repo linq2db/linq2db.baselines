@@ -55,14 +55,14 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id],
+	[t2].[Id],
 	[c_1].[Id],
 	[c_1].[Value],
 	[t1].[Id],
 	[t1].[Value_1]
 FROM
-	[MainEntityObject] [m_1]
-		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [m_1].[Id]
+	[MainEntityObject] [t2]
+		LEFT JOIN [ChildEntityObject] [c_1] ON [c_1].[Id] = [t2].[Id]
 		LEFT JOIN (
 			SELECT
 				[sc].[Id],
@@ -72,7 +72,7 @@ FROM
 			LIMIT 1
 		) [t1] ON 1=1
 ORDER BY
-	[m_1].[Id]
+	[t2].[Id]
 
 BeforeExecute
 -- SQLite.Classic SQLite
