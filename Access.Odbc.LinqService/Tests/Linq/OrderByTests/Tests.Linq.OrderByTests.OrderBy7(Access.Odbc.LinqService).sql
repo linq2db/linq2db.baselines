@@ -7,6 +7,6 @@ SELECT
 FROM
 	[Child] [x]
 ORDER BY
-	[x].[ChildID] MOD 2,
-	[x].[ChildID]
+	[x].[ChildID],
+	[x].[ChildID] MOD 2
 
