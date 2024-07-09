@@ -88,7 +88,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	((1, i."Nil", 3) = (i."One", i."Nil", i."Three") OR (1, i."Nil", 3) IS NULL AND (i."One", i."Nil", i."Three") IS NULL)
+	(1, i."Nil", 3) = (i."One", i."Nil", i."Three")
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -98,7 +98,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	((1, NULL, 3) = (i."One", i."Nil", i."Three") OR (1, NULL, 3) IS NULL AND (i."One", i."Nil", i."Three") IS NULL)
+	(1, NULL, 3) = (i."One", i."Nil", i."Three")
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
