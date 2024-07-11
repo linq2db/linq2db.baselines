@@ -5,7 +5,6 @@ SET     @take = 1
 
 SELECT FIRST @take
 	"p"."PersonID",
-	'1',
 	"p"."FirstName",
 	"p"."LastName",
 	"p"."MiddleName",
