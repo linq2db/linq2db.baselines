@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Child" "x"
 ORDER BY
-	"x"."ChildID",
-	Mod("x"."ChildID", 2)
+	Mod("x"."ChildID", 2),
+	"x"."ChildID"
 
