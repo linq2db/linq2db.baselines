@@ -3,7 +3,6 @@
 
 SELECT
 	"t1"."PersonID",
-	'1',
 	"a_Doctor"."PersonID",
 	"a_Doctor"."Taxonomy"
 FROM
