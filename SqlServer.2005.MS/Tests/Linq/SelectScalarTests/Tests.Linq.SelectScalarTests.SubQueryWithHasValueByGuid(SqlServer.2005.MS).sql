@@ -8,13 +8,10 @@ FROM
 	[Parent] [t2]
 		LEFT JOIN (
 			SELECT TOP (1)
-				CASE
-					WHEN [r].[GuidValue] IS NOT NULL THEN 1
-					ELSE 0
-				END as [HasValue]
+				[r].[GuidValue]
 			FROM
 				[LinqDataTypes] [r]
 		) [t1] ON 1=1
 WHERE
-	[t1].[HasValue] = 1
+	[t1].[GuidValue] IS NOT NULL
 
