@@ -2,25 +2,22 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	(
-		SELECT
-			[a_GrandChildren].[ParentID]
-		FROM
-			[GrandChild] [a_GrandChildren]
-		WHERE
-			[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
-		LIMIT 1
-	)
+	[t1].[Assignee]
 FROM
-	[Child] [x]
-ORDER BY
 	(
 		SELECT
-			[a_GrandChildren].[ParentID]
+			(
+				SELECT
+					[a_GrandChildren].[ParentID]
+				FROM
+					[GrandChild] [a_GrandChildren]
+				WHERE
+					[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
+				LIMIT 1
+			) as [Assignee]
 		FROM
-			[GrandChild] [a_GrandChildren]
-		WHERE
-			[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
-		LIMIT 1
-	)
+			[Child] [x]
+	) [t1]
+ORDER BY
+	[t1].[Assignee]
 
