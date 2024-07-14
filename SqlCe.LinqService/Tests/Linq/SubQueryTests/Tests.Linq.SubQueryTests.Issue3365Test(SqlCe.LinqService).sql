@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID]
+	[t1].[ParentID] as [Assignee]
 FROM
 	[Child] [x]
 		OUTER APPLY (
