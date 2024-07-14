@@ -2,19 +2,23 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t2.ParentID,
+	t2.Value1
 FROM
-	Parent t1
-WHERE
 	(
 		SELECT
-			CASE
-				WHEN r.Value1 IS NOT NULL THEN true
-				ELSE false
-			END
+			t1.ParentID as ParentID,
+			t1.Value1 as Value1,
+			(
+				SELECT
+					r.Value1
+				FROM
+					Parent r
+				LIMIT 1
+			) as Value1_1
 		FROM
-			Parent r
-		LIMIT 1
-	) = true
+			Parent t1
+	) t2
+WHERE
+	t2.Value1_1 IS NOT NULL
 
