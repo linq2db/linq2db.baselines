@@ -2,7 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"t1"."ParentID"
+	"t1"."Assignee"
 FROM
 	(
 		SELECT
@@ -14,10 +14,10 @@ FROM
 				WHERE
 					"x"."ParentID" = "a_GrandChildren"."ParentID" AND "x"."ChildID" = "a_GrandChildren"."ChildID"
 				FETCH NEXT 1 ROWS ONLY
-			) as "ParentID"
+			) as "Assignee"
 		FROM
 			"Child" "x"
 	) "t1"
 ORDER BY
-	"t1"."ParentID"
+	"t1"."Assignee"
 
