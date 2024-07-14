@@ -32,9 +32,9 @@ FROM
 					[t1].[Value]
 				FROM
 					(VALUES
-						('bd5474aa-9221-4703-a1fa-94efc8ff1c4b',DATETIME2FROMPARTS(2024, 7, 14, 18, 29, 32, 114427, 7)),
-						('186c9c4b-92fa-4e96-8f70-ee2953f94832',DATETIME2FROMPARTS(2024, 7, 14, 18, 29, 32, 123039, 7)),
-						('5df20324-db3a-43e4-a4b2-a46deb7a5b89',DATETIME2FROMPARTS(2024, 7, 14, 18, 29, 32, 123044, 7))
+						('41fed8d3-4fbd-488d-aa33-26eb54dc4bce',DATETIME2FROMPARTS(2024, 7, 14, 19, 34, 27, 6989347, 7)),
+						('9a823d9b-d57c-48ea-b7da-f630cc432d7e',DATETIME2FROMPARTS(2024, 7, 14, 19, 34, 27, 6997805, 7)),
+						('211fbd4f-864c-41bf-a5a3-1c3ffb903e53',DATETIME2FROMPARTS(2024, 7, 14, 19, 34, 27, 6997817, 7))
 					) [t1]([Key], [Value])
 				WHERE
 					[t1].[Key] = [outfeed].[Id]
@@ -44,8 +44,8 @@ FROM
 					[t2].[Value]
 				FROM
 					(VALUES
-						('078739e0-1a19-46d5-8f96-0cba3c02e521',DATETIME2FROMPARTS(2024, 7, 14, 18, 29, 32, 123046, 7)),
-						('cac53395-2b03-4804-8d7f-56ec08863bde',DATETIME2FROMPARTS(2024, 7, 14, 18, 29, 32, 123050, 7))
+						('56615a68-1a66-4909-9582-127b54fff7f6',DATETIME2FROMPARTS(2024, 7, 14, 19, 34, 27, 6997828, 7)),
+						('17197081-8138-4640-944b-8bbfff4b90c5',DATETIME2FROMPARTS(2024, 7, 14, 19, 34, 27, 6997839, 7))
 					) [t2]([Key], [Value])
 				WHERE
 					[t2].[Key] = [outfeed].[Id]
