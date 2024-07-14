@@ -863,48 +863,53 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"m_2"."Id1",
+	"d_1"."DetailId"
+FROM
 	(
-		SELECT
-			SUM("t2"."DetailId")
+		SELECT DISTINCT
+			"m_1"."Id1"
 		FROM
-			(
-				SELECT
-					"t1"."DetailId"
-				FROM
-					(
-						SELECT DISTINCT
-							"a_Details"."DetailId"
-						FROM
-							"DetailClass" "a_Details"
-						WHERE
-							"m_1"."Id1" = "a_Details"."MasterId"
-					) "t1"
-				ORDER BY
-					"t1"."DetailId"
-				OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
-			) "t2"
-	),
+			"MasterClass" "m_1"
+	) "m_2"
+		INNER JOIN (
+			SELECT DISTINCT
+				"d"."DetailId",
+				"d"."MasterId"
+			FROM
+				"DetailClass" "d"
+		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId"
+ORDER BY
+	"d_1"."DetailId"
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"m_2"."Id1",
+	"d_1"."DetailValue"
+FROM
 	(
-		SELECT
-			COUNT(*)
+		SELECT DISTINCT
+			"m_1"."Id1"
 		FROM
-			(
-				SELECT
-					*
-				FROM
-					(
-						SELECT DISTINCT
-							"a_Details_1"."DetailValue"
-						FROM
-							"DetailClass" "a_Details_1"
-						WHERE
-							"m_1"."Id1" = "a_Details_1"."MasterId"
-					) "t3"
-				ORDER BY
-					"t3"."DetailValue"
-				OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
-			) "t4"
-	)
+			"MasterClass" "m_1"
+	) "m_2"
+		INNER JOIN (
+			SELECT DISTINCT
+				"d"."DetailValue",
+				"d"."MasterId"
+			FROM
+				"DetailClass" "d"
+		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId"
+ORDER BY
+	"d_1"."DetailValue"
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"m_1"."Id1"
 FROM
 	"MasterClass" "m_1"
 

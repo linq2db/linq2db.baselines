@@ -2,25 +2,22 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	(
-		SELECT
-			"a_GrandChildren"."ParentID"
-		FROM
-			"GrandChild" "a_GrandChildren"
-		WHERE
-			"x"."ParentID" = "a_GrandChildren"."ParentID" AND "x"."ChildID" = "a_GrandChildren"."ChildID"
-		FETCH NEXT 1 ROWS ONLY
-	)
+	"t1"."Assignee"
 FROM
-	"Child" "x"
-ORDER BY
 	(
 		SELECT
-			"a_GrandChildren"."ParentID"
+			(
+				SELECT
+					"a_GrandChildren"."ParentID"
+				FROM
+					"GrandChild" "a_GrandChildren"
+				WHERE
+					"x"."ParentID" = "a_GrandChildren"."ParentID" AND "x"."ChildID" = "a_GrandChildren"."ChildID"
+				FETCH NEXT 1 ROWS ONLY
+			) as "Assignee"
 		FROM
-			"GrandChild" "a_GrandChildren"
-		WHERE
-			"x"."ParentID" = "a_GrandChildren"."ParentID" AND "x"."ChildID" = "a_GrandChildren"."ChildID"
-		FETCH NEXT 1 ROWS ONLY
-	)
+			"Child" "x"
+	) "t1"
+ORDER BY
+	"t1"."Assignee"
 
