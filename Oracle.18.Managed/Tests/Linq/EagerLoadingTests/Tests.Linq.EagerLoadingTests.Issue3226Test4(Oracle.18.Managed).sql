@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Item" x
 ORDER BY
-	Nvl((
+	Coalesce((
 		SELECT
 			SUM(a_Values."Value")
 		FROM
