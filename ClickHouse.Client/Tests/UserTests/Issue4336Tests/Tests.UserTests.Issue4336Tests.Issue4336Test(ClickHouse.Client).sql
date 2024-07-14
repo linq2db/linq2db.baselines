@@ -120,9 +120,9 @@ SELECT
 	pop.ProductId,
 	vpc.CategoryId,
 	COALESCE(toInt32(pcc.PeriodOrderLimit),0),
-	COALESCE(vsp.Quantity,0),
-	COALESCE(toInt32(pcc.PeriodOrderLimit),0) - COALESCE(vsp.Quantity,0),
-	v2_1.PeriodOrderLimit,
+	COALESCE(vsp_1.Quantity,0),
+	COALESCE(toInt32(pcc.PeriodOrderLimit),0) - COALESCE(vsp_1.Quantity,0),
+	v2_1.MaxCapacity,
 	v2_1.Quantity,
 	v2_1.FreeCapacity
 FROM
@@ -132,20 +132,27 @@ FROM
 		LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
 		LEFT JOIN (
 			SELECT
-				agroup.Id as OrderPeriodId,
-				oi.ProductId as ProductId,
-				COALESCE(sumOrNull(toInt32(COALESCE(oi.Quantity,toInt16(0)))),0) as Quantity
+				COALESCE(vsp.SUM_1,0) as Quantity,
+				vsp.OrderPeriodId as OrderPeriodId,
+				vsp.ProductId as ProductId
 			FROM
-				OrderPeriod agroup
-					LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
-					LEFT JOIN OrderItem oi ON oh.Id = oi.OrderHeaderId
-			GROUP BY
-				agroup.Id,
-				oi.ProductId
-		) vsp ON vsp.OrderPeriodId = v1.Id AND vsp.ProductId = pop.ProductId
+				(
+					SELECT
+						agroup.Id as OrderPeriodId,
+						oi.ProductId as ProductId,
+						sumOrNull(toInt32(COALESCE(oi.Quantity,toInt16(0)))) as SUM_1
+					FROM
+						OrderPeriod agroup
+							LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
+							LEFT JOIN OrderItem oi ON oh.Id = oi.OrderHeaderId
+					GROUP BY
+						agroup.Id,
+						oi.ProductId
+				) vsp
+		) vsp_1 ON vsp_1.OrderPeriodId = v1.Id AND vsp_1.ProductId = pop.ProductId
 		LEFT JOIN (
 			SELECT
-				COALESCE(toInt32(vpcc.PeriodOrderLimit),0) as PeriodOrderLimit,
+				COALESCE(toInt32(vpcc.PeriodOrderLimit),0) as MaxCapacity,
 				vsopc.SUM_1 as Quantity,
 				COALESCE(toInt32(vpcc.PeriodOrderLimit),0) - vsopc.SUM_1 as FreeCapacity,
 				v2.Id as Id,

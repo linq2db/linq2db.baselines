@@ -63,20 +63,30 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	t2.FirstName,
+	t2.PersonID,
+	t2.LastName,
+	t2.MiddleName,
+	t2.Gender
 FROM
-	Person p
-WHERE
 	(
 		SELECT
-			COUNT(*)
+			p.FirstName as FirstName,
+			p.PersonID as PersonID,
+			p.LastName as LastName,
+			p.MiddleName as MiddleName,
+			p.Gender as Gender,
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					UserIssue3128 t1
+			) as COUNT_1
 		FROM
-			UserIssue3128 t1
-	) > 0
+			Person p
+	) t2
+WHERE
+	t2.COUNT_1 > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
