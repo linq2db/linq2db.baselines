@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	[t1].[ParentID]
+	[t1].[Assignee]
 FROM
 	(
 		SELECT
@@ -13,10 +13,10 @@ FROM
 					[GrandChild] [a_GrandChildren]
 				WHERE
 					[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
-			) as [ParentID]
+			) as [Assignee]
 		FROM
 			[Child] [x]
 	) [t1]
 ORDER BY
-	[t1].[ParentID]
+	[t1].[Assignee]
 
