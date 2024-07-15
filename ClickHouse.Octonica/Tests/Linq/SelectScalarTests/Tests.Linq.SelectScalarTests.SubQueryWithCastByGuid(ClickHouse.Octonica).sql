@@ -2,16 +2,23 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t2.ParentID,
+	t2.Value1
 FROM
-	Parent t1
-WHERE
 	(
 		SELECT
-			r.GuidValue
+			t1.ParentID as ParentID,
+			t1.Value1 as Value1,
+			(
+				SELECT
+					r.GuidValue
+				FROM
+					LinqDataTypes r
+				LIMIT 1
+			) as GuidValue
 		FROM
-			LinqDataTypes r
-		LIMIT 1
-	) IS NOT NULL
+			Parent t1
+	) t2
+WHERE
+	t2.GuidValue IS NOT NULL
 
