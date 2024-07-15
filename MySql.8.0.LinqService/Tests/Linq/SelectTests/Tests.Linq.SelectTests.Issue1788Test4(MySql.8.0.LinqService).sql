@@ -81,16 +81,6 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	CASE
-		WHEN `l`.`Id` IS NOT NULL THEN CASE
-			WHEN `l`.`Value1` IS NOT NULL THEN CASE
-				WHEN `l`.`Value1` IS NOT NULL THEN 1
-				ELSE 0
-			END
-			ELSE 0
-		END
-		ELSE 0
-	END,
 	`l`.`Value1`
 FROM
 	`Table1788` `p`
