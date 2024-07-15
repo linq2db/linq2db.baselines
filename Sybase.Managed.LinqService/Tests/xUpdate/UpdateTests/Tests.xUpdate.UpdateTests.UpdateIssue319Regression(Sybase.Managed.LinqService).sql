@@ -40,12 +40,20 @@ UPDATE
 SET
 	[Value1] = @ParentID
 WHERE
-	[Parent].[ParentID] = @id AND (
+	EXISTS(
 		SELECT
-			COUNT(*)
+			*
 		FROM
 			[Parent] [p]
 		WHERE
-			[p].[ParentID] = @id
-	) > 0
+			[p].[ParentID] = @id AND (
+				SELECT
+					COUNT(*)
+				FROM
+					[Parent] [p_1]
+				WHERE
+					[p_1].[ParentID] = @id
+			) > 0 AND
+			[Parent].[ParentID] = [p].[ParentID]
+	)
 
