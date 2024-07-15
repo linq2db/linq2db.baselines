@@ -65,20 +65,30 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[t2].[FirstName],
+	[t2].[PersonID],
+	[t2].[LastName],
+	[t2].[MiddleName],
+	[t2].[Gender]
 FROM
-	[Person] [p]
-WHERE
 	(
 		SELECT
-			COUNT(*)
+			[p].[FirstName],
+			[p].[PersonID],
+			[p].[LastName],
+			[p].[MiddleName],
+			[p].[Gender],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[UserIssue3128] [t1]
+			) as [COUNT_1]
 		FROM
-			[UserIssue3128] [t1]
-	) > 0
+			[Person] [p]
+	) [t2]
+WHERE
+	[t2].[COUNT_1] > 0
 
 BeforeExecute
 -- Access.Odbc AccessODBC

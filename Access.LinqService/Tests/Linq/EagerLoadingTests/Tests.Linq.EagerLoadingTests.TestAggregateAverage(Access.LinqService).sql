@@ -852,18 +852,24 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id1]
+			[t1].[Id1]
 		FROM
-			[MasterClass] [m_1]
-		WHERE
 			(
 				SELECT
-					COUNT(*)
+					[m_1].[Id1],
+					(
+						SELECT
+							COUNT(*)
+						FROM
+							[DetailClass] [a_Details]
+						WHERE
+							[m_1].[Id1] = [a_Details].[MasterId]
+					) as [COUNT_1]
 				FROM
-					[DetailClass] [a_Details]
-				WHERE
-					[m_1].[Id1] = [a_Details].[MasterId]
-			) > 1
+					[MasterClass] [m_1]
+			) [t1]
+		WHERE
+			[t1].[COUNT_1] > 1
 	) [m_2]
 		INNER JOIN (
 			SELECT DISTINCT
@@ -879,18 +885,24 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[m_1].[Id1]
+	[t1].[Id1]
 FROM
-	[MasterClass] [m_1]
-WHERE
 	(
 		SELECT
-			COUNT(*)
+			[m_1].[Id1],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[DetailClass] [a_Details]
+				WHERE
+					[m_1].[Id1] = [a_Details].[MasterId]
+			) as [COUNT_1]
 		FROM
-			[DetailClass] [a_Details]
-		WHERE
-			[m_1].[Id1] = [a_Details].[MasterId]
-	) > 1
+			[MasterClass] [m_1]
+	) [t1]
+WHERE
+	[t1].[COUNT_1] > 1
 
 BeforeExecute
 -- Access AccessOleDb
