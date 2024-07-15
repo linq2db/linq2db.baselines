@@ -92,22 +92,11 @@ SELECT
 	),
 	(
 		SELECT FIRST 1
-			CASE
-				WHEN "a_Metrics_1"."Value" IS NOT NULL THEN '1'
-				ELSE '0'
-			END
+			"a_Metrics_1"."Value"
 		FROM
 			"Metric" "a_Metrics_1"
 		WHERE
 			"a"."Id" = "a_Metrics_1"."RequestId"
-	),
-	(
-		SELECT FIRST 1
-			"a_Metrics_2"."Value"
-		FROM
-			"Metric" "a_Metrics_2"
-		WHERE
-			"a"."Id" = "a_Metrics_2"."RequestId"
 	)
 FROM
 	"Request" "a"
