@@ -41,7 +41,6 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	IIF([l].[Id] IS NOT NULL, IIF([l].[Value1] IS NOT NULL, IIF([l].[Value1] IS NOT NULL, 1, 0), 0), 0),
 	[l].[Value1]
 FROM
 	[Table1788] [p]
