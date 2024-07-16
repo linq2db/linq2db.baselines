@@ -37,16 +37,24 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 100500
 
 UPDATE
-	"Parent" "p"
+	"Parent"
 SET
 	"Value1" = CAST(@ParentID AS Int)
 WHERE
-	"p"."ParentID" = @id AND (
+	EXISTS(
 		SELECT
-			COUNT(*)
+			*
 		FROM
-			"Parent" "p_1"
+			"Parent" "p"
 		WHERE
-			"p_1"."ParentID" = @id
-	) > 0
+			"p"."ParentID" = @id AND (
+				SELECT
+					COUNT(*)
+				FROM
+					"Parent" "p_1"
+				WHERE
+					"p_1"."ParentID" = @id
+			) > 0 AND
+			"Parent"."ParentID" = "p"."ParentID"
+	)
 

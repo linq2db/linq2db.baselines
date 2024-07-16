@@ -2,19 +2,23 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1"
+	"t2"."ParentID",
+	"t2"."Value1"
 FROM
-	"Parent" "t1"
-WHERE
 	(
 		SELECT
-			CASE
-				WHEN "r"."GuidValue" IS NOT NULL THEN 1
-				ELSE 0
-			END
+			"t1"."ParentID",
+			"t1"."Value1",
+			(
+				SELECT
+					"r"."GuidValue"
+				FROM
+					"LinqDataTypes" "r"
+				FETCH NEXT 1 ROWS ONLY
+			) as "GuidValue"
 		FROM
-			"LinqDataTypes" "r"
-		FETCH NEXT 1 ROWS ONLY
-	) = 1
+			"Parent" "t1"
+	) "t2"
+WHERE
+	"t2"."GuidValue" IS NOT NULL
 

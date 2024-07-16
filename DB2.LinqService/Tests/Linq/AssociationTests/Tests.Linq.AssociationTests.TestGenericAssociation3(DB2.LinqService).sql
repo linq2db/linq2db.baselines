@@ -2,20 +2,27 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."ParentID",
-	"t"."Value1"
+	"t1"."ParentID",
+	"t1"."Value1"
 FROM
-	"Parent" "t"
-WHERE
 	(
 		SELECT
-			COUNT(*)
+			"t"."ParentID",
+			"t"."Value1",
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					"GrandChild" "a_GrandChildrenX"
+				WHERE
+					"t"."ParentID" = "a_GrandChildrenX"."ParentID" AND
+					"a_GrandChildrenX"."ChildID" > 22
+			) as COUNT_1
 		FROM
-			"GrandChild" "a_GrandChildrenX"
-		WHERE
-			"t"."ParentID" = "a_GrandChildrenX"."ParentID" AND
-			"a_GrandChildrenX"."ChildID" > 22
-	) > 1
+			"Parent" "t"
+	) "t1"
+WHERE
+	"t1".COUNT_1 > 1
 ORDER BY
-	"t"."ParentID"
+	"t1"."ParentID"
 
