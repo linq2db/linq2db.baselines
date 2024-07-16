@@ -1,15 +1,15 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Table1788
+DROP TABLE IF EXISTS Item
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-CREATE TABLE IF NOT EXISTS Table1788
+CREATE TABLE IF NOT EXISTS Item
 (
-	Id     Int32,
-	Value1 Int32,
+	Id   Int32,
+	Text Nullable(String),
 
 	PRIMARY KEY (Id)
 )
@@ -19,65 +19,45 @@ ORDER BY Id
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-INSERT INTO Table1788
-(
-	Id,
-	Value1
-)
-VALUES
-(
-	1,
-	11
-)
+DROP TABLE IF EXISTS ItemValue
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-INSERT INTO Table1788
+CREATE TABLE IF NOT EXISTS ItemValue
 (
-	Id,
-	Value1
+	Id     Int32,
+	ItemId Int32,
+	Value  Decimal128(10)
 )
-VALUES
-(
-	2,
-	22
-)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO Table1788
-(
-	Id,
-	Value1
-)
-VALUES
-(
-	3,
-	33
-)
+ENGINE = Memory()
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.Id,
-	t1.Value1
+	m_1.Id,
+	d.Value
 FROM
-	Table1788 t1
+	Item m_1
+		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	l.Value1
+	x.Id,
+	x.Text
 FROM
-	Table1788 p
-		LEFT JOIN Table1788 l ON l.Id = p.Id + 1
+	Item x
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Table1788
+DROP TABLE IF EXISTS ItemValue
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS Item
 
