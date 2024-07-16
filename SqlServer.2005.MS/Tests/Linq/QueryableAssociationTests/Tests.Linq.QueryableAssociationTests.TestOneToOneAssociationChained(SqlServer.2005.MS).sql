@@ -87,26 +87,25 @@ SELECT TOP (1)
 	[t2].[Id]
 FROM
 	[UserGroup] [x]
-		LEFT JOIN (
-			SELECT
-				[a_FirstUsersWithLanguage].[UserGroupId],
-				ROW_NUMBER() OVER (PARTITION BY [a_FirstUsersWithLanguage].[UserGroupId] ORDER BY [a_FirstUsersWithLanguage].[UserGroupId]) as [rn]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_FirstUsersWithLanguage].[UserGroupId]
 			FROM
 				[User] [a_FirstUsersWithLanguage]
 			WHERE
+				[a_FirstUsersWithLanguage].[UserGroupId] = [x].[Id] AND
 				[a_FirstUsersWithLanguage].[LanguageId] = 1
-		) [t1] ON [t1].[UserGroupId] = [x].[Id] AND [t1].[rn] <= 1
+		) [t1]
 		LEFT JOIN [UserGroup] [a_UserGroup] ON [t1].[UserGroupId] = [a_UserGroup].[Id]
-		LEFT JOIN (
-			SELECT
-				[a_FirstUsersWithLanguage_1].[Id],
-				ROW_NUMBER() OVER (PARTITION BY [a_FirstUsersWithLanguage_1].[UserGroupId] ORDER BY [a_FirstUsersWithLanguage_1].[UserGroupId]) as [rn],
-				[a_FirstUsersWithLanguage_1].[UserGroupId]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_FirstUsersWithLanguage_1].[Id]
 			FROM
 				[User] [a_FirstUsersWithLanguage_1]
 			WHERE
+				[a_FirstUsersWithLanguage_1].[UserGroupId] = [a_UserGroup].[Id] AND
 				[a_FirstUsersWithLanguage_1].[LanguageId] = 2
-		) [t2] ON [t2].[UserGroupId] = [a_UserGroup].[Id] AND [t2].[rn] <= 1
+		) [t2]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

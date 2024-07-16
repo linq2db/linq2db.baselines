@@ -9,22 +9,28 @@ SELECT
 	[t2].[ChildID]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[a_Children].[ParentID],
-				[a_Children].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ChildID]) as [rn]
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
-		LEFT JOIN (
-			SELECT
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+			ORDER BY
+				[a_Children].[ChildID]
+		) [t1]
+		OUTER APPLY (
+			SELECT TOP (1)
 				[a_Children_1].[ParentID],
-				[a_Children_1].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children_1].[ParentID] ORDER BY [a_Children_1].[ChildID]) as [rn]
+				[a_Children_1].[ChildID]
 			FROM
 				[Child] [a_Children_1]
-		) [t2] ON [p].[ParentID] = [t2].[ParentID] AND [t2].[rn] <= 1
+			WHERE
+				[p].[ParentID] = [a_Children_1].[ParentID]
+			ORDER BY
+				[a_Children_1].[ChildID]
+		) [t2]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

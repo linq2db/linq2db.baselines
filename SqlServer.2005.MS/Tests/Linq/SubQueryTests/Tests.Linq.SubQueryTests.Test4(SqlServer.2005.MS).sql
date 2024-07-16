@@ -2,19 +2,16 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ChildID]
+	(
+		SELECT TOP (1)
+			[ch].[ChildID]
+		FROM
+			[Child] [ch]
+		WHERE
+			[ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				[ch].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ParentID]) as [rn],
-				[ch].[ParentID]
-			FROM
-				[Child] [ch]
-			WHERE
-				[ch].[ChildID] = [ch].[ParentID] * 10 + 1
-		) [t1] ON [t1].[ParentID] = [p].[ParentID] AND [t1].[rn] <= 1
 WHERE
 	[p].[ParentID] <> 5
 

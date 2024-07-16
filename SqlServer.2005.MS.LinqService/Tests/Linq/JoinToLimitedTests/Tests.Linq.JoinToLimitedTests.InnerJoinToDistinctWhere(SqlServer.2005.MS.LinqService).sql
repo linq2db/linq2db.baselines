@@ -8,11 +8,13 @@ SELECT
 	[c_2].[ChildID]
 FROM
 	[Parent] [o]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT DISTINCT
 				[c_1].[ParentID],
 				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
-		) [c_2] ON [c_2].[ParentID] = [o].[ParentID]
+			WHERE
+				[c_1].[ParentID] = [o].[ParentID]
+		) [c_2]
 

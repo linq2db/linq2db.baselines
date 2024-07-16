@@ -61,30 +61,29 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t2].[BatchId],
-	[t2].[Date_1],
-	[t2].[Value_1]
+	[t1].[BatchId],
+	[t1].[Date_1],
+	[t1].[Value_1]
 FROM
 	(
 		SELECT TOP (2)
 			[x].[Id] as [BatchId],
-			[t1].[Date_1],
+			(
+				SELECT TOP (1)
+					[a_Confirmations].[Date]
+				FROM
+					[Confirmation] [a_Confirmations]
+				WHERE
+					[x].[Id] = [a_Confirmations].[BatchId]
+			) as [Date_1],
 			[x].[Value] as [Value_1]
 		FROM
 			[Batch] [x]
-				LEFT JOIN (
-					SELECT
-						[a_Confirmations].[Date] as [Date_1],
-						ROW_NUMBER() OVER (PARTITION BY [a_Confirmations].[BatchId] ORDER BY [a_Confirmations].[BatchId]) as [rn],
-						[a_Confirmations].[BatchId]
-					FROM
-						[Confirmation] [a_Confirmations]
-				) [t1] ON [x].[Id] = [t1].[BatchId] AND [t1].[rn] <= 1
 		ORDER BY
 			[x].[Id] DESC
-	) [t2]
+	) [t1]
 ORDER BY
-	[t2].[BatchId]
+	[t1].[BatchId]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

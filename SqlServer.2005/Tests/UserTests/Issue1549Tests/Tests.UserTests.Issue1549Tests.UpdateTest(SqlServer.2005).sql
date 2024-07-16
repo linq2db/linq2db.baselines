@@ -98,30 +98,26 @@ BeforeExecute
 -- SqlServer.2005
 
 UPDATE
-	[t3]
+	[billing_TempReading]
 SET
-	[t3].[DevReadingTypeId] = [t1].[Id],
-	[t3].[Responsibility] = [t2].[Responsibility]
-FROM
-	[billing_TempReading] [t3]
-		LEFT JOIN (
-			SELECT
-				[w].[Id],
-				ROW_NUMBER() OVER (PARTITION BY [w].[Name], [w].[DevTypeId] ORDER BY [w].[Name]) as [rn],
-				[w].[Name],
-				[w].[DevTypeId]
-			FROM
-				[billing_DevReadingType] [w]
-		) [t1] ON [t1].[Name] = [t3].[ReadingTypeName] AND [t1].[DevTypeId] = [t3].[Devtypeid] AND [t1].[rn] <= 1
-		LEFT JOIN (
-			SELECT
-				[w_1].[Responsibility],
-				ROW_NUMBER() OVER (PARTITION BY [w_1].[Name], [w_1].[DevTypeId] ORDER BY [w_1].[Name]) as [rn],
-				[w_1].[Name],
-				[w_1].[DevTypeId]
-			FROM
-				[billing_DevReadingType] [w_1]
-		) [t2] ON [t2].[Name] = [t3].[ReadingTypeName] AND [t2].[DevTypeId] = [t3].[Devtypeid] AND [t2].[rn] <= 1
+	[DevReadingTypeId] = (
+		SELECT TOP (1)
+			[w].[Id]
+		FROM
+			[billing_DevReadingType] [w]
+		WHERE
+			[w].[Name] = [billing_TempReading].[ReadingTypeName] AND
+			[w].[DevTypeId] = [billing_TempReading].[Devtypeid]
+	),
+	[Responsibility] = (
+		SELECT TOP (1)
+			[w_1].[Responsibility]
+		FROM
+			[billing_DevReadingType] [w_1]
+		WHERE
+			[w_1].[Name] = [billing_TempReading].[ReadingTypeName] AND
+			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid]
+	)
 
 BeforeExecute
 -- SqlServer.2005

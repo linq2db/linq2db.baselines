@@ -8,17 +8,18 @@ SELECT
 	[t1].[Value1]
 FROM
 	[Child] [s]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[c_1].[ParentID],
 				[c_1].[ChildID],
 				[a_Parent].[ParentID] as [ParentID_1],
-				[a_Parent].[Value1],
-				ROW_NUMBER() OVER (PARTITION BY [c_1].[ChildID] ORDER BY [c_1].[ChildID]) as [rn]
+				[a_Parent].[Value1]
 			FROM
 				[Child] [c_1]
 					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-		) [t1] ON [t1].[ChildID] = [s].[ChildID] AND [t1].[rn] <= 1
+			WHERE
+				[c_1].[ChildID] = [s].[ChildID]
+		) [t1]
 WHERE
 	[t1].[ParentID] IS NOT NULL
 

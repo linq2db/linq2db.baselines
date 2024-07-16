@@ -87,17 +87,16 @@ SELECT TOP (1)
 	[a_Language].[Name]
 FROM
 	[UserGroup] [x]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[a_FirstUsersWithLanguage].[Id],
-				[a_FirstUsersWithLanguage].[LanguageId],
-				ROW_NUMBER() OVER (PARTITION BY [a_FirstUsersWithLanguage].[UserGroupId] ORDER BY [a_FirstUsersWithLanguage].[UserGroupId]) as [rn],
-				[a_FirstUsersWithLanguage].[UserGroupId]
+				[a_FirstUsersWithLanguage].[LanguageId]
 			FROM
 				[User] [a_FirstUsersWithLanguage]
 			WHERE
+				[a_FirstUsersWithLanguage].[UserGroupId] = [x].[Id] AND
 				[a_FirstUsersWithLanguage].[LanguageId] = 1
-		) [t1] ON [t1].[UserGroupId] = [x].[Id] AND [t1].[rn] <= 1
+		) [t1]
 		LEFT JOIN [Language] [a_Language] ON [t1].[LanguageId] = [a_Language].[Id]
 
 BeforeExecute

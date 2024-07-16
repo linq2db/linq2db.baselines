@@ -2,23 +2,24 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ParentID]
+	(
+		SELECT TOP (1)
+			[a_Children_1].[ParentID]
+		FROM
+			[Child] [a_Children_1]
+		WHERE
+			[p].[ParentID] = [a_Children_1].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				[a_Children].[ParentID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_Children].[ParentID]
 			FROM
 				[Child] [a_Children]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
-		LEFT JOIN (
-			SELECT
-				[a_Children_1].[ParentID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children_1].[ParentID] ORDER BY [a_Children_1].[ParentID]) as [rn]
-			FROM
-				[Child] [a_Children_1]
-		) [t2] ON [p].[ParentID] = [t2].[ParentID] AND [t2].[rn] <= 1
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 WHERE
-	[t2].[ParentID] IS NOT NULL
+	[t1].[ParentID] IS NOT NULL
 

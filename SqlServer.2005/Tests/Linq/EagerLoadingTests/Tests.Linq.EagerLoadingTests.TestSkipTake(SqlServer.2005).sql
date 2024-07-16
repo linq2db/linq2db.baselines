@@ -127,15 +127,26 @@ FROM
 		FROM
 			[MasterClass] [m_1]
 	) [m_2]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
-				[d].[DetailId],
-				[d].[MasterId],
-				[d].[DetailValue],
-				ROW_NUMBER() OVER (PARTITION BY [d].[MasterId] ORDER BY [d].[DetailId]) as [rn]
+				[t1].[DetailId],
+				[t1].[MasterId],
+				[t1].[DetailValue]
 			FROM
-				[DetailClass] [d]
-		) [d_1] ON [m_2].[Id1] = [d_1].[MasterId] AND [d_1].[rn] > 1 AND [d_1].[rn] <= 3
+				(
+					SELECT
+						[d].[DetailId],
+						[d].[MasterId],
+						[d].[DetailValue],
+						ROW_NUMBER() OVER (ORDER BY [d].[DetailId]) as [RN]
+					FROM
+						[DetailClass] [d]
+					WHERE
+						[m_2].[Id1] = [d].[MasterId]
+				) [t1]
+			WHERE
+				[t1].[RN] > 1 AND [t1].[RN] <= 3
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction

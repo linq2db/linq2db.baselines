@@ -64,14 +64,14 @@ WHERE
 			*
 		FROM
 			[Tagging] [x]
-				LEFT JOIN (
-					SELECT
-						[a_Tag].[Name],
-						ROW_NUMBER() OVER (PARTITION BY [a_Tag].[Id] ORDER BY [a_Tag].[Id]) as [rn],
-						[a_Tag].[Id]
+				OUTER APPLY (
+					SELECT TOP (1)
+						[a_Tag].[Name]
 					FROM
 						[Tag] [a_Tag]
-				) [t1] ON CAST([x].[TagId] AS BigInt) = [t1].[Id] AND [t1].[rn] <= 1
+					WHERE
+						CAST([x].[TagId] AS BigInt) = [a_Tag].[Id]
+				) [t1]
 		WHERE
 			[x].[TaggableType] = N'Issue' AND [i].[Id] = [x].[TaggableId] AND
 			[t1].[Name] = N'Visu'
