@@ -9,12 +9,9 @@ FROM
 WHERE
 	(
 		SELECT
-			CASE
-				WHEN "r"."Value1" IS NOT NULL THEN TRUE
-				ELSE FALSE
-			END
+			"r"."Value1"
 		FROM
 			"Parent" "r"
 		FETCH NEXT 1 ROWS ONLY
-	) = TRUE
+	) IS NOT NULL
 
