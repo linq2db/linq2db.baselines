@@ -9,11 +9,8 @@ FROM
 WHERE
 	(
 		SELECT FIRST 1
-			CASE
-				WHEN "r"."GuidValue" IS NOT NULL THEN '1'
-				ELSE '0'
-			END
+			"r"."GuidValue"
 		FROM
 			"LinqDataTypes" "r"
-	) = '1'
+	) IS NOT NULL
 
