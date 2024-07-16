@@ -9,12 +9,9 @@ FROM
 WHERE
 	(
 		SELECT
-			CASE
-				WHEN r."GuidValue" IS NOT NULL THEN True
-				ELSE False
-			END
+			r."GuidValue"
 		FROM
 			"LinqDataTypes" r
 		LIMIT 1
-	) = True
+	) IS NOT NULL
 
