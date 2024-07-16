@@ -30,24 +30,31 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @id Int -- Int32
+SET     @id = 100500
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @id Int -- Int32
 SET     @id = 100500
-DECLARE @id Int -- Int32
-SET     @id = 100500
 
 UPDATE
-	[Parent] [p]
-SET
-	[p].[Value1] = ?
-WHERE
-	[p].[ParentID] = ? AND (
+	[Parent] [u],
+	(
 		SELECT
-			COUNT(*)
+			[p].[ParentID],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Parent] [p_1]
+				WHERE
+					[p_1].[ParentID] = ?
+			) as [COUNT_1]
 		FROM
-			[Parent] [p_1]
-		WHERE
-			[p_1].[ParentID] = ?
-	) > 0
+			[Parent] [p]
+	) [t1]
+SET
+	[u].[Value1] = ?
+WHERE
+	[t1].[ParentID] = ? AND [t1].[COUNT_1] > 0 AND [u].[ParentID] = [t1].[ParentID]
 
