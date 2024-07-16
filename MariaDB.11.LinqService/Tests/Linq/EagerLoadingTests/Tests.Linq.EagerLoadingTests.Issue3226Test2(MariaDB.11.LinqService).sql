@@ -1,0 +1,60 @@
+﻿BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Item`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Item`
+(
+	`Id`   INT           NOT NULL,
+	`Text` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_Item` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `ItemValue`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `ItemValue`
+(
+	`Id`     INT     NOT NULL,
+	`ItemId` INT     NOT NULL,
+	`Value`  DECIMAL NOT NULL
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`m_1`.`Id`,
+	`d`.`Value`
+FROM
+	`Item` `m_1`
+		INNER JOIN `ItemValue` `d` ON `m_1`.`Id` = `d`.`ItemId`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`x`.`Id`,
+	`x`.`Text`
+FROM
+	`Item` `x`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `ItemValue`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Item`
+
