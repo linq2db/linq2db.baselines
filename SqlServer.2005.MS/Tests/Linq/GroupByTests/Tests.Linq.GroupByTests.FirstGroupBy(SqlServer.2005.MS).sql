@@ -13,12 +13,15 @@ FROM
 		GROUP BY
 			[gr].[ParentID]
 	) [gr_1]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (1)
 				[t].[ParentID],
-				[t].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [t].[ParentID] ORDER BY [t].[ChildID] DESC) as [rn]
+				[t].[ChildID]
 			FROM
 				[Child] [t]
-		) [t1] ON [gr_1].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+			WHERE
+				[gr_1].[ParentID] = [t].[ParentID]
+			ORDER BY
+				[t].[ChildID] DESC
+		) [t1]
 

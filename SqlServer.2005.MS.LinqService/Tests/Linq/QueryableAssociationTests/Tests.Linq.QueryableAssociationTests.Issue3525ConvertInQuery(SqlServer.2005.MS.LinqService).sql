@@ -38,13 +38,14 @@ SELECT
 	[t1].[Id]
 FROM
 	[PropertyHistory] [i]
-		LEFT JOIN (
-			SELECT
-				[a_CustomerApplication].[Id],
-				ROW_NUMBER() OVER (PARTITION BY [a_CustomerApplication].[Id] ORDER BY [a_CustomerApplication].[Id]) as [rn]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_CustomerApplication].[Id]
 			FROM
 				[CustomerApplication] [a_CustomerApplication]
-		) [t1] ON [t1].[Id] = CAST([i].[DocumentNo] AS Int) AND [t1].[rn] <= 1
+			WHERE
+				[a_CustomerApplication].[Id] = CAST([i].[DocumentNo] AS Int)
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -85,14 +85,14 @@ SELECT TOP (1)
 	[a_Language].[Name]
 FROM
 	[Entity] [x]
-		LEFT JOIN (
-			SELECT
-				[a_Entity2Language].[LanguageId],
-				ROW_NUMBER() OVER (PARTITION BY [a_Entity2Language].[EntityId] ORDER BY [a_Entity2Language].[EntityId]) as [rn],
-				[a_Entity2Language].[EntityId]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_Entity2Language].[LanguageId]
 			FROM
 				[Entity2Language] [a_Entity2Language]
-		) [t1] ON [t1].[EntityId] = [x].[Id] AND [t1].[rn] <= 1
+			WHERE
+				[a_Entity2Language].[EntityId] = [x].[Id]
+		) [t1]
 		LEFT JOIN [Language] [a_Language] ON [t1].[LanguageId] = [a_Language].[Id]
 
 BeforeExecute

@@ -339,20 +339,21 @@ FROM
 		FROM
 			[SampleClass1] [t1]
 	) [m_1]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (2)
 				[a_SubItem].[Id],
 				[a_SubItem].[Value] as [Value_1],
 				[d].[Id] as [Id_1],
 				[d].[ParentId],
-				[d].[SubId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				[d].[SubId]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+			ORDER BY
+				[d].[Id]
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction
@@ -384,20 +385,21 @@ FROM
 		FROM
 			[SampleClass2] [t1]
 	) [m_1]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (2)
 				[a_SubItem].[Id],
 				[a_SubItem].[Value] as [Value_1],
 				[d].[Id] as [Id_1],
 				[d].[ParentId],
-				[d].[SubId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				[d].[SubId]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+			ORDER BY
+				[d].[Id]
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction

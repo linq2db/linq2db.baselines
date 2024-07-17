@@ -12,12 +12,12 @@ FROM
 		GROUP BY
 			[s].[PersonID]
 	) [s_2]
-		INNER JOIN (
-			SELECT
-				[s_1].[Taxonomy],
-				ROW_NUMBER() OVER (PARTITION BY [s_1].[PersonID] ORDER BY [s_1].[PersonID]) as [rn],
-				[s_1].[PersonID]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[s_1].[Taxonomy]
 			FROM
 				[Doctor] [s_1]
-		) [t1] ON [s_2].[PersonID] = [t1].[PersonID] AND [t1].[rn] <= 1
+			WHERE
+				[s_2].[PersonID] = [s_1].[PersonID]
+		) [t1]
 
