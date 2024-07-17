@@ -2,19 +2,20 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t2].[COUNT_1] + [t2].[COUNT_1]
+	[t3].[COUNT_1] + [t3].[COUNT_1]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Child] [c_1]
-				WHERE
-					[t1].[ParentID] = [c_1].[ParentID]
-			) as [COUNT_1]
+			[t1].[COUNT_1]
 		FROM
-			[Parent] [t1]
-	) [t2]
+			[Parent] [t2]
+				OUTER APPLY (
+					SELECT
+						COUNT(*) as [COUNT_1]
+					FROM
+						[Child] [c_1]
+					WHERE
+						[t2].[ParentID] = [c_1].[ParentID]
+				) [t1]
+	) [t3]
 
