@@ -47,16 +47,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	CASE
-		WHEN "l"."Id" IS NOT NULL THEN CASE
-			WHEN "l"."Value1" IS NOT NULL THEN CASE
-				WHEN "l"."Value1" IS NOT NULL THEN TRUE
-				ELSE FALSE
-			END
-			ELSE FALSE
-		END
-		ELSE FALSE
-	END,
 	"l"."Value1"
 FROM
 	"Table1788" "p"
