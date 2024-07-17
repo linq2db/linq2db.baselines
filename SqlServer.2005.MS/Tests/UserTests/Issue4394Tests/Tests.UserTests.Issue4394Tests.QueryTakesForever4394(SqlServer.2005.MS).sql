@@ -219,11 +219,11 @@ SELECT
 	[a1].[HeightClass],
 	[a1].[CategoryABC],
 	[a1].[AisleNumber],
-	[i1_1].[Id],
-	[i1_1].[BatchNumber],
-	[i1_1].[ProductStatus],
-	[i1_1].[ExpiryDate],
-	[i1_1].[CustomDate1],
+	[i1].[Id],
+	[i1].[BatchNumber],
+	[i1].[ProductStatus],
+	[i1].[ExpiryDate],
+	[i1].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -271,184 +271,99 @@ FROM
 		LEFT JOIN [StorageShelfDTO] [a1] ON [x_8].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
-		OUTER APPLY (
-			SELECT
-				[i1].[Id],
-				[i1].[BatchNumber],
-				[i1].[ProductStatus],
-				[i1].[ExpiryDate],
-				[i1].[CustomDate1],
-				[i1].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i1] ON (
+			SELECT TOP (1)
+				[x].[Id]
 			FROM
-				[InventoryResourceDTO] [i1]
-					INNER JOIN (
-						SELECT
-							[x].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x].[ResourceID] ORDER BY [x].[ResourceID]) as [rn],
-							[x].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x]
-						WHERE
-							[x].[Status] < 0
-					) [t1] ON [t1].[ResourceID] = [b1].[ResourceID] AND [t1].[rn] <= 1
+				[InventoryResourceDTO] [x]
 			WHERE
-				[i1].[Status] < 0 AND [t1].[Id] = [i1].[Id]
-		) [i1_1]
-		LEFT JOIN [MaterialDTO] [m1] ON [i1_1].[MaterialID] = [m1].[Id]
+				[x].[Status] < 0 AND [x].[ResourceID] = [b1].[ResourceID]
+		) = [i1].[Id] AND [i1].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
 		LEFT JOIN [StorageShelfDTO] [a2] ON [x_8].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
-		OUTER APPLY (
-			SELECT
-				[i2].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i2] ON (
+			SELECT TOP (1)
+				[x_1].[Id]
 			FROM
-				[InventoryResourceDTO] [i2]
-					INNER JOIN (
-						SELECT
-							[x_1].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_1].[ResourceID] ORDER BY [x_1].[ResourceID]) as [rn],
-							[x_1].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_1]
-						WHERE
-							[x_1].[Status] < 0
-					) [t2] ON [t2].[ResourceID] = [b2].[ResourceID] AND [t2].[rn] <= 1
+				[InventoryResourceDTO] [x_1]
 			WHERE
-				[i2].[Status] < 0 AND [t2].[Id] = [i2].[Id]
-		) [i2_1]
-		LEFT JOIN [MaterialDTO] [m2] ON [i2_1].[MaterialID] = [m2].[Id]
+				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b2].[ResourceID]
+		) = [i2].[Id] AND [i2].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
 		LEFT JOIN [StorageShelfDTO] [a3] ON [x_8].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
-		OUTER APPLY (
-			SELECT
-				[i3].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i3] ON (
+			SELECT TOP (1)
+				[x_2].[Id]
 			FROM
-				[InventoryResourceDTO] [i3]
-					INNER JOIN (
-						SELECT
-							[x_2].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_2].[ResourceID] ORDER BY [x_2].[ResourceID]) as [rn],
-							[x_2].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_2]
-						WHERE
-							[x_2].[Status] < 0
-					) [t3] ON [t3].[ResourceID] = [b3].[ResourceID] AND [t3].[rn] <= 1
+				[InventoryResourceDTO] [x_2]
 			WHERE
-				[i3].[Status] < 0 AND [t3].[Id] = [i3].[Id]
-		) [i3_1]
-		LEFT JOIN [MaterialDTO] [m3] ON [i3_1].[MaterialID] = [m3].[Id]
+				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b3].[ResourceID]
+		) = [i3].[Id] AND [i3].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
 		LEFT JOIN [StorageShelfDTO] [a4] ON [x_8].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
-		OUTER APPLY (
-			SELECT
-				[i4].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i4] ON (
+			SELECT TOP (1)
+				[x_3].[Id]
 			FROM
-				[InventoryResourceDTO] [i4]
-					INNER JOIN (
-						SELECT
-							[x_3].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_3].[ResourceID] ORDER BY [x_3].[ResourceID]) as [rn],
-							[x_3].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_3]
-						WHERE
-							[x_3].[Status] < 0
-					) [t4] ON [t4].[ResourceID] = [b4].[ResourceID] AND [t4].[rn] <= 1
+				[InventoryResourceDTO] [x_3]
 			WHERE
-				[i4].[Status] < 0 AND [t4].[Id] = [i4].[Id]
-		) [i4_1]
-		LEFT JOIN [MaterialDTO] [m4] ON [i4_1].[MaterialID] = [m4].[Id]
+				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b4].[ResourceID]
+		) = [i4].[Id] AND [i4].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
 		LEFT JOIN [StorageShelfDTO] [a5] ON [x_8].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
-		OUTER APPLY (
-			SELECT
-				[i5].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i5] ON (
+			SELECT TOP (1)
+				[x_4].[Id]
 			FROM
-				[InventoryResourceDTO] [i5]
-					INNER JOIN (
-						SELECT
-							[x_4].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_4].[ResourceID] ORDER BY [x_4].[ResourceID]) as [rn],
-							[x_4].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_4]
-						WHERE
-							[x_4].[Status] < 0
-					) [t5] ON [t5].[ResourceID] = [b5].[ResourceID] AND [t5].[rn] <= 1
+				[InventoryResourceDTO] [x_4]
 			WHERE
-				[i5].[Status] < 0 AND [t5].[Id] = [i5].[Id]
-		) [i5_1]
-		LEFT JOIN [MaterialDTO] [m5] ON [i5_1].[MaterialID] = [m5].[Id]
+				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b5].[ResourceID]
+		) = [i5].[Id] AND [i5].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
 		LEFT JOIN [StorageShelfDTO] [a6] ON [x_8].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
-		OUTER APPLY (
-			SELECT
-				[i6].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i6] ON (
+			SELECT TOP (1)
+				[x_5].[Id]
 			FROM
-				[InventoryResourceDTO] [i6]
-					INNER JOIN (
-						SELECT
-							[x_5].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_5].[ResourceID] ORDER BY [x_5].[ResourceID]) as [rn],
-							[x_5].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_5]
-						WHERE
-							[x_5].[Status] < 0
-					) [t6] ON [t6].[ResourceID] = [b6].[ResourceID] AND [t6].[rn] <= 1
+				[InventoryResourceDTO] [x_5]
 			WHERE
-				[i6].[Status] < 0 AND [t6].[Id] = [i6].[Id]
-		) [i6_1]
-		LEFT JOIN [MaterialDTO] [m6] ON [i6_1].[MaterialID] = [m6].[Id]
+				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b6].[ResourceID]
+		) = [i6].[Id] AND [i6].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
 		LEFT JOIN [StorageShelfDTO] [a7] ON [x_8].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
-		OUTER APPLY (
-			SELECT
-				[i7].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i7] ON (
+			SELECT TOP (1)
+				[x_6].[Id]
 			FROM
-				[InventoryResourceDTO] [i7]
-					INNER JOIN (
-						SELECT
-							[x_6].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_6].[ResourceID] ORDER BY [x_6].[ResourceID]) as [rn],
-							[x_6].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_6]
-						WHERE
-							[x_6].[Status] < 0
-					) [t7] ON [t7].[ResourceID] = [b7].[ResourceID] AND [t7].[rn] <= 1
+				[InventoryResourceDTO] [x_6]
 			WHERE
-				[i7].[Status] < 0 AND [t7].[Id] = [i7].[Id]
-		) [i7_1]
-		LEFT JOIN [MaterialDTO] [m7] ON [i7_1].[MaterialID] = [m7].[Id]
+				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b7].[ResourceID]
+		) = [i7].[Id] AND [i7].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
 		LEFT JOIN [StorageShelfDTO] [a8] ON [x_8].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
-		OUTER APPLY (
-			SELECT
-				[i8].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i8] ON (
+			SELECT TOP (1)
+				[x_7].[Id]
 			FROM
-				[InventoryResourceDTO] [i8]
-					INNER JOIN (
-						SELECT
-							[x_7].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_7].[ResourceID] ORDER BY [x_7].[ResourceID]) as [rn],
-							[x_7].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_7]
-						WHERE
-							[x_7].[Status] < 0
-					) [t8] ON [t8].[ResourceID] = [b8].[ResourceID] AND [t8].[rn] <= 1
+				[InventoryResourceDTO] [x_7]
 			WHERE
-				[i8].[Status] < 0 AND [t8].[Id] = [i8].[Id]
-		) [i8_1]
-		LEFT JOIN [MaterialDTO] [m8] ON [i8_1].[MaterialID] = [m8].[Id]
+				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b8].[ResourceID]
+		) = [i8].[Id] AND [i8].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -508,11 +423,11 @@ SELECT
 	[a1].[HeightClass],
 	[a1].[CategoryABC],
 	[a1].[AisleNumber],
-	[i1_1].[Id],
-	[i1_1].[BatchNumber],
-	[i1_1].[ProductStatus],
-	[i1_1].[ExpiryDate],
-	[i1_1].[CustomDate1],
+	[i1].[Id],
+	[i1].[BatchNumber],
+	[i1].[ProductStatus],
+	[i1].[ExpiryDate],
+	[i1].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -574,11 +489,11 @@ SELECT
 	[a2].[HeightClass],
 	[a2].[CategoryABC],
 	[a2].[AisleNumber],
-	[i2_1].[Id],
-	[i2_1].[BatchNumber],
-	[i2_1].[ProductStatus],
-	[i2_1].[ExpiryDate],
-	[i2_1].[CustomDate1],
+	[i2].[Id],
+	[i2].[BatchNumber],
+	[i2].[ProductStatus],
+	[i2].[ExpiryDate],
+	[i2].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -640,11 +555,11 @@ SELECT
 	[a3].[HeightClass],
 	[a3].[CategoryABC],
 	[a3].[AisleNumber],
-	[i3_1].[Id],
-	[i3_1].[BatchNumber],
-	[i3_1].[ProductStatus],
-	[i3_1].[ExpiryDate],
-	[i3_1].[CustomDate1],
+	[i3].[Id],
+	[i3].[BatchNumber],
+	[i3].[ProductStatus],
+	[i3].[ExpiryDate],
+	[i3].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -706,11 +621,11 @@ SELECT
 	[a4].[HeightClass],
 	[a4].[CategoryABC],
 	[a4].[AisleNumber],
-	[i4_1].[Id],
-	[i4_1].[BatchNumber],
-	[i4_1].[ProductStatus],
-	[i4_1].[ExpiryDate],
-	[i4_1].[CustomDate1],
+	[i4].[Id],
+	[i4].[BatchNumber],
+	[i4].[ProductStatus],
+	[i4].[ExpiryDate],
+	[i4].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -772,11 +687,11 @@ SELECT
 	[a5].[HeightClass],
 	[a5].[CategoryABC],
 	[a5].[AisleNumber],
-	[i5_1].[Id],
-	[i5_1].[BatchNumber],
-	[i5_1].[ProductStatus],
-	[i5_1].[ExpiryDate],
-	[i5_1].[CustomDate1],
+	[i5].[Id],
+	[i5].[BatchNumber],
+	[i5].[ProductStatus],
+	[i5].[ExpiryDate],
+	[i5].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -838,11 +753,11 @@ SELECT
 	[a6].[HeightClass],
 	[a6].[CategoryABC],
 	[a6].[AisleNumber],
-	[i6_1].[Id],
-	[i6_1].[BatchNumber],
-	[i6_1].[ProductStatus],
-	[i6_1].[ExpiryDate],
-	[i6_1].[CustomDate1],
+	[i6].[Id],
+	[i6].[BatchNumber],
+	[i6].[ProductStatus],
+	[i6].[ExpiryDate],
+	[i6].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -904,11 +819,11 @@ SELECT
 	[a7].[HeightClass],
 	[a7].[CategoryABC],
 	[a7].[AisleNumber],
-	[i7_1].[Id],
-	[i7_1].[BatchNumber],
-	[i7_1].[ProductStatus],
-	[i7_1].[ExpiryDate],
-	[i7_1].[CustomDate1],
+	[i7].[Id],
+	[i7].[BatchNumber],
+	[i7].[ProductStatus],
+	[i7].[ExpiryDate],
+	[i7].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -970,11 +885,11 @@ SELECT
 	[a8].[HeightClass],
 	[a8].[CategoryABC],
 	[a8].[AisleNumber],
-	[i8_1].[Id],
-	[i8_1].[BatchNumber],
-	[i8_1].[ProductStatus],
-	[i8_1].[ExpiryDate],
-	[i8_1].[CustomDate1],
+	[i8].[Id],
+	[i8].[BatchNumber],
+	[i8].[ProductStatus],
+	[i8].[ExpiryDate],
+	[i8].[CustomDate1],
 	(
 		SELECT
 			COUNT(*)
@@ -1022,219 +937,99 @@ FROM
 		LEFT JOIN [StorageShelfDTO] [a1] ON [x_8].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
-		OUTER APPLY (
-			SELECT
-				[i1].[Id],
-				[i1].[BatchNumber],
-				[i1].[ProductStatus],
-				[i1].[ExpiryDate],
-				[i1].[CustomDate1],
-				[i1].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i1] ON (
+			SELECT TOP (1)
+				[x].[Id]
 			FROM
-				[InventoryResourceDTO] [i1]
-					INNER JOIN (
-						SELECT
-							[x].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x].[ResourceID] ORDER BY [x].[ResourceID]) as [rn],
-							[x].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x]
-						WHERE
-							[x].[Status] < 0
-					) [t1] ON [t1].[ResourceID] = [b1].[ResourceID] AND [t1].[rn] <= 1
+				[InventoryResourceDTO] [x]
 			WHERE
-				[i1].[Status] < 0 AND [t1].[Id] = [i1].[Id]
-		) [i1_1]
-		LEFT JOIN [MaterialDTO] [m1] ON [i1_1].[MaterialID] = [m1].[Id]
+				[x].[Status] < 0 AND [x].[ResourceID] = [b1].[ResourceID]
+		) = [i1].[Id] AND [i1].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
 		LEFT JOIN [StorageShelfDTO] [a2] ON [x_8].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
-		OUTER APPLY (
-			SELECT
-				[i2].[Id],
-				[i2].[BatchNumber],
-				[i2].[ProductStatus],
-				[i2].[ExpiryDate],
-				[i2].[CustomDate1],
-				[i2].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i2] ON (
+			SELECT TOP (1)
+				[x_1].[Id]
 			FROM
-				[InventoryResourceDTO] [i2]
-					INNER JOIN (
-						SELECT
-							[x_1].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_1].[ResourceID] ORDER BY [x_1].[ResourceID]) as [rn],
-							[x_1].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_1]
-						WHERE
-							[x_1].[Status] < 0
-					) [t2] ON [t2].[ResourceID] = [b2].[ResourceID] AND [t2].[rn] <= 1
+				[InventoryResourceDTO] [x_1]
 			WHERE
-				[i2].[Status] < 0 AND [t2].[Id] = [i2].[Id]
-		) [i2_1]
-		LEFT JOIN [MaterialDTO] [m2] ON [i2_1].[MaterialID] = [m2].[Id]
+				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b2].[ResourceID]
+		) = [i2].[Id] AND [i2].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
 		LEFT JOIN [StorageShelfDTO] [a3] ON [x_8].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
-		OUTER APPLY (
-			SELECT
-				[i3].[Id],
-				[i3].[BatchNumber],
-				[i3].[ProductStatus],
-				[i3].[ExpiryDate],
-				[i3].[CustomDate1],
-				[i3].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i3] ON (
+			SELECT TOP (1)
+				[x_2].[Id]
 			FROM
-				[InventoryResourceDTO] [i3]
-					INNER JOIN (
-						SELECT
-							[x_2].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_2].[ResourceID] ORDER BY [x_2].[ResourceID]) as [rn],
-							[x_2].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_2]
-						WHERE
-							[x_2].[Status] < 0
-					) [t3] ON [t3].[ResourceID] = [b3].[ResourceID] AND [t3].[rn] <= 1
+				[InventoryResourceDTO] [x_2]
 			WHERE
-				[i3].[Status] < 0 AND [t3].[Id] = [i3].[Id]
-		) [i3_1]
-		LEFT JOIN [MaterialDTO] [m3] ON [i3_1].[MaterialID] = [m3].[Id]
+				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b3].[ResourceID]
+		) = [i3].[Id] AND [i3].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
 		LEFT JOIN [StorageShelfDTO] [a4] ON [x_8].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
-		OUTER APPLY (
-			SELECT
-				[i4].[Id],
-				[i4].[BatchNumber],
-				[i4].[ProductStatus],
-				[i4].[ExpiryDate],
-				[i4].[CustomDate1],
-				[i4].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i4] ON (
+			SELECT TOP (1)
+				[x_3].[Id]
 			FROM
-				[InventoryResourceDTO] [i4]
-					INNER JOIN (
-						SELECT
-							[x_3].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_3].[ResourceID] ORDER BY [x_3].[ResourceID]) as [rn],
-							[x_3].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_3]
-						WHERE
-							[x_3].[Status] < 0
-					) [t4] ON [t4].[ResourceID] = [b4].[ResourceID] AND [t4].[rn] <= 1
+				[InventoryResourceDTO] [x_3]
 			WHERE
-				[i4].[Status] < 0 AND [t4].[Id] = [i4].[Id]
-		) [i4_1]
-		LEFT JOIN [MaterialDTO] [m4] ON [i4_1].[MaterialID] = [m4].[Id]
+				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b4].[ResourceID]
+		) = [i4].[Id] AND [i4].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
 		LEFT JOIN [StorageShelfDTO] [a5] ON [x_8].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
-		OUTER APPLY (
-			SELECT
-				[i5].[Id],
-				[i5].[BatchNumber],
-				[i5].[ProductStatus],
-				[i5].[ExpiryDate],
-				[i5].[CustomDate1],
-				[i5].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i5] ON (
+			SELECT TOP (1)
+				[x_4].[Id]
 			FROM
-				[InventoryResourceDTO] [i5]
-					INNER JOIN (
-						SELECT
-							[x_4].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_4].[ResourceID] ORDER BY [x_4].[ResourceID]) as [rn],
-							[x_4].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_4]
-						WHERE
-							[x_4].[Status] < 0
-					) [t5] ON [t5].[ResourceID] = [b5].[ResourceID] AND [t5].[rn] <= 1
+				[InventoryResourceDTO] [x_4]
 			WHERE
-				[i5].[Status] < 0 AND [t5].[Id] = [i5].[Id]
-		) [i5_1]
-		LEFT JOIN [MaterialDTO] [m5] ON [i5_1].[MaterialID] = [m5].[Id]
+				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b5].[ResourceID]
+		) = [i5].[Id] AND [i5].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
 		LEFT JOIN [StorageShelfDTO] [a6] ON [x_8].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
-		OUTER APPLY (
-			SELECT
-				[i6].[Id],
-				[i6].[BatchNumber],
-				[i6].[ProductStatus],
-				[i6].[ExpiryDate],
-				[i6].[CustomDate1],
-				[i6].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i6] ON (
+			SELECT TOP (1)
+				[x_5].[Id]
 			FROM
-				[InventoryResourceDTO] [i6]
-					INNER JOIN (
-						SELECT
-							[x_5].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_5].[ResourceID] ORDER BY [x_5].[ResourceID]) as [rn],
-							[x_5].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_5]
-						WHERE
-							[x_5].[Status] < 0
-					) [t6] ON [t6].[ResourceID] = [b6].[ResourceID] AND [t6].[rn] <= 1
+				[InventoryResourceDTO] [x_5]
 			WHERE
-				[i6].[Status] < 0 AND [t6].[Id] = [i6].[Id]
-		) [i6_1]
-		LEFT JOIN [MaterialDTO] [m6] ON [i6_1].[MaterialID] = [m6].[Id]
+				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b6].[ResourceID]
+		) = [i6].[Id] AND [i6].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
 		LEFT JOIN [StorageShelfDTO] [a7] ON [x_8].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
-		OUTER APPLY (
-			SELECT
-				[i7].[Id],
-				[i7].[BatchNumber],
-				[i7].[ProductStatus],
-				[i7].[ExpiryDate],
-				[i7].[CustomDate1],
-				[i7].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i7] ON (
+			SELECT TOP (1)
+				[x_6].[Id]
 			FROM
-				[InventoryResourceDTO] [i7]
-					INNER JOIN (
-						SELECT
-							[x_6].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_6].[ResourceID] ORDER BY [x_6].[ResourceID]) as [rn],
-							[x_6].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_6]
-						WHERE
-							[x_6].[Status] < 0
-					) [t7] ON [t7].[ResourceID] = [b7].[ResourceID] AND [t7].[rn] <= 1
+				[InventoryResourceDTO] [x_6]
 			WHERE
-				[i7].[Status] < 0 AND [t7].[Id] = [i7].[Id]
-		) [i7_1]
-		LEFT JOIN [MaterialDTO] [m7] ON [i7_1].[MaterialID] = [m7].[Id]
+				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b7].[ResourceID]
+		) = [i7].[Id] AND [i7].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
 		LEFT JOIN [StorageShelfDTO] [a8] ON [x_8].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
-		OUTER APPLY (
-			SELECT
-				[i8].[Id],
-				[i8].[BatchNumber],
-				[i8].[ProductStatus],
-				[i8].[ExpiryDate],
-				[i8].[CustomDate1],
-				[i8].[MaterialID]
+		LEFT JOIN [InventoryResourceDTO] [i8] ON (
+			SELECT TOP (1)
+				[x_7].[Id]
 			FROM
-				[InventoryResourceDTO] [i8]
-					INNER JOIN (
-						SELECT
-							[x_7].[Id],
-							ROW_NUMBER() OVER (PARTITION BY [x_7].[ResourceID] ORDER BY [x_7].[ResourceID]) as [rn],
-							[x_7].[ResourceID]
-						FROM
-							[InventoryResourceDTO] [x_7]
-						WHERE
-							[x_7].[Status] < 0
-					) [t8] ON [t8].[ResourceID] = [b8].[ResourceID] AND [t8].[rn] <= 1
+				[InventoryResourceDTO] [x_7]
 			WHERE
-				[i8].[Status] < 0 AND [t8].[Id] = [i8].[Id]
-		) [i8_1]
-		LEFT JOIN [MaterialDTO] [m8] ON [i8_1].[MaterialID] = [m8].[Id]
+				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b8].[ResourceID]
+		) = [i8].[Id] AND [i8].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

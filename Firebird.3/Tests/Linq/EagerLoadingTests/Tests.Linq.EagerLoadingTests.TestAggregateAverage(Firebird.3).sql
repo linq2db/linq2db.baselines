@@ -106,30 +106,46 @@ SELECT 9008,9,'DetailValue90008' FROM rdb$database UNION ALL
 SELECT 9009,9,'DetailValue90009' FROM rdb$database
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"m_2"."Id1",
+	"d_1"."DetailId"
+FROM
 	(
-		SELECT
-			AVG(CAST("t2"."DetailId" AS Float))
+		SELECT DISTINCT
+			"m_1"."Id1"
 		FROM
+			"MasterClass" "m_1"
+		WHERE
 			(
 				SELECT
-					"t1"."DetailId"
+					COUNT(*)
 				FROM
-					(
-						SELECT DISTINCT
-							"a_Details"."DetailId"
-						FROM
-							"DetailClass" "a_Details"
-						WHERE
-							"m_1"."Id1" = "a_Details"."MasterId"
-					) "t1"
-				ORDER BY
-					"t1"."DetailId"
-				OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
-			) "t2"
-	)
+					"DetailClass" "a_Details"
+				WHERE
+					"m_1"."Id1" = "a_Details"."MasterId"
+			) > 1
+	) "m_2"
+		INNER JOIN (
+			SELECT DISTINCT
+				"d"."DetailId",
+				"d"."MasterId"
+			FROM
+				"DetailClass" "d"
+		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId"
+ORDER BY
+	"d_1"."DetailId"
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"m_1"."Id1"
 FROM
 	"MasterClass" "m_1"
 WHERE
@@ -137,9 +153,9 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			"DetailClass" "a_Details_1"
+			"DetailClass" "a_Details"
 		WHERE
-			"m_1"."Id1" = "a_Details_1"."MasterId"
+			"m_1"."Id1" = "a_Details"."MasterId"
 	) > 1
 
 BeforeExecute

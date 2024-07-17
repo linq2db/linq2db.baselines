@@ -87,14 +87,14 @@ SELECT TOP (1)
 	[t1].[Id]
 FROM
 	[UserGroup] [x]
-		LEFT JOIN (
-			SELECT
-				[a_FirstUserWithMultipleParameters].[Id],
-				ROW_NUMBER() OVER (PARTITION BY [a_FirstUserWithMultipleParameters].[UserGroupId] ORDER BY [a_FirstUserWithMultipleParameters].[UserGroupId]) as [rn],
-				[a_FirstUserWithMultipleParameters].[UserGroupId]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_FirstUserWithMultipleParameters].[Id]
 			FROM
 				[User] [a_FirstUserWithMultipleParameters]
-		) [t1] ON [t1].[UserGroupId] = [x].[Id] AND [t1].[rn] <= 1
+			WHERE
+				[a_FirstUserWithMultipleParameters].[UserGroupId] = [x].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2005

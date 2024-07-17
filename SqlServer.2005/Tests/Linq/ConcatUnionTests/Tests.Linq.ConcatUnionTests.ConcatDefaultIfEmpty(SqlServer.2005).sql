@@ -8,14 +8,15 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[a_Children].[ParentID],
-				[a_Children].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn]
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 WHERE
 	[p].[ParentID] = 1
 UNION ALL

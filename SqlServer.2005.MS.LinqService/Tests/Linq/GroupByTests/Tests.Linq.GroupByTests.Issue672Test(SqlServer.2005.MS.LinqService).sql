@@ -104,19 +104,20 @@ FROM
 		GROUP BY
 			[sG].[Name]
 	) [sG_1]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (1)
 				[s].[Id],
 				[s].[Name],
 				[s].[Enabled],
-				[s].[ImageFullUrl],
-				ROW_NUMBER() OVER (PARTITION BY [s].[Name] ORDER BY [s].[Name]) as [rn]
+				[s].[ImageFullUrl]
 			FROM
 				[Stone] [s]
 			WHERE
-				[s].[Enabled] = 1 AND [s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-				Len([s].[ImageFullUrl]) > 0
-		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] <= 1
+				[s].[Enabled] = 1 AND
+				[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+				Len([s].[ImageFullUrl]) > 0 AND
+				[sG_1].[Name] = [s].[Name]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -183,14 +183,14 @@ FROM
 			[t1].[Id]
 		FROM
 			[Test3799Item] [item_1]
-				LEFT JOIN (
-					SELECT
-						[a_Children].[Id],
-						ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentId] ORDER BY [a_Children].[ParentId]) as [rn],
-						[a_Children].[ParentId]
+				OUTER APPLY (
+					SELECT TOP (1)
+						[a_Children].[Id]
 					FROM
 						[Test3799Item] [a_Children]
-				) [t1] ON [item_1].[Id] = [t1].[ParentId] AND [t1].[rn] <= 1
+					WHERE
+						[item_1].[Id] = [a_Children].[ParentId]
+				) [t1]
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON ([m_1].[Id] = [d].[ParentId] OR [m_1].[Id] IS NULL AND [d].[ParentId] IS NULL)
 
@@ -203,15 +203,15 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3799Item] [item_1]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[a_Children].[Name],
-				[a_Children].[Id],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentId] ORDER BY [a_Children].[ParentId]) as [rn],
-				[a_Children].[ParentId]
+				[a_Children].[Id]
 			FROM
 				[Test3799Item] [a_Children]
-		) [t1] ON [item_1].[Id] = [t1].[ParentId] AND [t1].[rn] <= 1
+			WHERE
+				[item_1].[Id] = [a_Children].[ParentId]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2005

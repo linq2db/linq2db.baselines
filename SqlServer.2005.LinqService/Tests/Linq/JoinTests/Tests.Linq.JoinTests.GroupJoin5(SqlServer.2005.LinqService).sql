@@ -6,14 +6,17 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[Parent] [t2]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[ch].[ParentID],
-				[ch].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID]) as [rn]
+				[ch].[ChildID]
 			FROM
 				[Child] [ch]
-		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+			WHERE
+				[t2].[ParentID] = [ch].[ParentID]
+			ORDER BY
+				[ch].[ChildID]
+		) [t1]
 WHERE
 	[t2].[ParentID] >= 1
 ORDER BY

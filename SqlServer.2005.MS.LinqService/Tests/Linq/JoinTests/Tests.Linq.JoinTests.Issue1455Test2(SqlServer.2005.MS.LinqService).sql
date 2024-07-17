@@ -135,8 +135,8 @@ FROM
 			[al_group_1].[AlertCode],
 			[al_group_1].[CreationDate]
 	) [al_group_3]
-		LEFT JOIN (
-			SELECT
+		OUTER APPLY (
+			SELECT TOP (1)
 				[nomin_2].[CargoId],
 				[nomin_2].[DeliveryId],
 				[nomin_2].[DeliveryCounterParty],
@@ -144,11 +144,7 @@ FROM
 				[trade_2].[ParcelId],
 				[trade_2].[CounterParty],
 				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate],
-				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate_1],
-				ROW_NUMBER() OVER (PARTITION BY [t1].[AlertKey], [t1].[AlertCode], [t1].[CreationDate] ORDER BY [t1].[AlertKey]) as [rn],
-				[t1].[AlertKey],
-				[t1].[AlertCode],
-				[t1].[CreationDate]
+				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate_1]
 			FROM
 				(
 					SELECT
@@ -167,8 +163,11 @@ FROM
 					LEFT JOIN [Trade] [trade_2] ON [t1].[AlertKey] = CAST([trade_2].[DealId] AS NVarChar(11))
 					LEFT JOIN [Nomin] [nomin_2] ON [t1].[AlertKey] = CAST([nomin_2].[CargoId] AS NVarChar(11))
 			WHERE
-				([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty)
-		) [t2] ON [al_group_3].[AlertKey] = [t2].[AlertKey] AND [al_group_3].[AlertCode] = [t2].[AlertCode] AND [al_group_3].[CreationDate] = [t2].[CreationDate] AND [t2].[rn] <= 1
+				([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty OR [t1].[AlertCode] LIKE @DeliveryCounterParty) AND
+				[al_group_3].[AlertKey] = [t1].[AlertKey] AND
+				[al_group_3].[AlertCode] = [t1].[AlertCode] AND
+				[al_group_3].[CreationDate] = [t1].[CreationDate]
+		) [t2]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
