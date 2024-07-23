@@ -83,16 +83,6 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	CASE
-		WHEN [l].[Id] IS NOT NULL THEN CASE
-			WHEN [l].[Value1] IS NOT NULL THEN CASE
-				WHEN [l].[Value1] IS NOT NULL THEN 1
-				ELSE 0
-			END
-			ELSE 0
-		END
-		ELSE 0
-	END,
 	[l].[Value1]
 FROM
 	[Table1788] [p]

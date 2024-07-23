@@ -1836,15 +1836,18 @@ FROM
 			) [t1]
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (10)
 				[d].[SubDetailId],
 				[d].[DetailId],
-				[d].[SubDetailValue],
-				ROW_NUMBER() OVER (PARTITION BY [d].[DetailId] ORDER BY [d].[SubDetailValue]) as [rn]
+				[d].[SubDetailValue]
 			FROM
 				[SubDetailClass] [d]
-		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
+			WHERE
+				[m_2].[DetailId] = [d].[DetailId]
+			ORDER BY
+				[d].[SubDetailValue]
+		) [d_1]
 
 BeforeExecute
 -- SqlServer.2005
@@ -1872,16 +1875,19 @@ FROM
 			) [t1]
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (10)
 				[d].[Id1],
 				[d].[Id2],
 				[d].[Value] as [Value_1],
-				[d].[ByteValues],
-				ROW_NUMBER() OVER (PARTITION BY [d].[Id1] ORDER BY [d].[Value]) as [rn]
+				[d].[ByteValues]
 			FROM
 				[MasterClass] [d]
-		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10
+			WHERE
+				[d].[Id1] = [m_2].[MasterId]
+			ORDER BY
+				[d].[Value]
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction

@@ -225,17 +225,18 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (2)
 				[d].[Id],
 				[d].[Value] as [Value_1],
-				[d].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				[d].[ParentId]
 			FROM
 				[SubItem1] [d]
 			WHERE
-				[d].[ParentId] % 2 = 0
-		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+				[m_2].[Id] = [d].[ParentId] AND [d].[ParentId] % 2 = 0
+			ORDER BY
+				[d].[Id]
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction
@@ -271,17 +272,18 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (2)
 				[e].[Value] as [Value_1],
 				[e].[Id],
-				[e].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [e].[ParentId] ORDER BY [e].[Id]) as [rn]
+				[e].[ParentId]
 			FROM
 				[SubItem1] [e]
 			WHERE
-				[e].[ParentId] % 2 = 0
-		) [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[rn] <= 2
+				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+			ORDER BY
+				[e].[Id]
+		) [d]
 WHERE
 	[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
 

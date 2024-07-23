@@ -81,16 +81,6 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN l."Id" IS NOT NULL THEN CASE
-			WHEN l."Value1" IS NOT NULL THEN CASE
-				WHEN l."Value1" IS NOT NULL THEN True
-				ELSE False
-			END
-			ELSE False
-		END
-		ELSE False
-	END,
 	l."Value1"
 FROM
 	"Table1788" p

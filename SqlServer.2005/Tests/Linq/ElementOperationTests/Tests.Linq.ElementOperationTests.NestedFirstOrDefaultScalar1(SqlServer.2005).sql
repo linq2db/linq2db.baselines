@@ -2,13 +2,12 @@
 -- SqlServer.2005
 
 SELECT
-	[t2].[ChildID]
+	(
+		SELECT TOP (1)
+			[t1].[ChildID]
+		FROM
+			[Child] [t1]
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT TOP (1)
-				[t1].[ChildID]
-			FROM
-				[Child] [t1]
-		) [t2] ON 1=1
 

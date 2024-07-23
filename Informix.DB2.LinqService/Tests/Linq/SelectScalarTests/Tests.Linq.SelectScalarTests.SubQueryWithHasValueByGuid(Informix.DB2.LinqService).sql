@@ -8,13 +8,10 @@ FROM
 	Parent t2
 		LEFT JOIN (
 			SELECT FIRST 1
-				CASE
-					WHEN r.GuidValue IS NOT NULL THEN 't'
-					ELSE 'f'
-				END::BOOLEAN as HasValue
+				r.GuidValue
 			FROM
 				LinqDataTypes r
 		) t1 ON 1=1
 WHERE
-	t1.HasValue = 't'
+	t1.GuidValue IS NOT NULL
 

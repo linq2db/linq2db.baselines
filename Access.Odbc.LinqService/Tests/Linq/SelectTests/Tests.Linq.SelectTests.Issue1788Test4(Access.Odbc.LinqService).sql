@@ -81,7 +81,6 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	IIF([l].[Id] IS NOT NULL, IIF([l].[Value1] IS NOT NULL, IIF([l].[Value1] IS NOT NULL, True, False), False), False),
 	[l].[Value1]
 FROM
 	[Table1788] [p]
