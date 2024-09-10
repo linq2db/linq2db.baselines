@@ -57,7 +57,7 @@ SELECT TOP (@take)
 FROM
 	(
 		SELECT
-			DateDiff(minute, LAG([q].[EventTime]) OVER(PARTITION BY [q].[EventUser], [q].[ProcessID] ORDER BY [q].[EventTime]), [q].[EventTime]) as [Diff],
+			DateDiff_Big(minute, LAG([q].[EventTime]) OVER(PARTITION BY [q].[EventUser], [q].[ProcessID] ORDER BY [q].[EventTime]), [q].[EventTime]) as [Diff],
 			[q].[EventUser] as [User_1],
 			[q].[ProcessID] as [Proc]
 		FROM
