@@ -36,7 +36,7 @@ BeforeExecute
 
 SELECT
 	[cu_1].[Id],
-	[cu_1].[CountOfCards]
+	[cu_1].[COUNT_1]
 FROM
 	(
 		SELECT
@@ -47,13 +47,13 @@ FROM
 					[Issue1983Card] [card]
 				WHERE
 					[card].[PersonId] = [cu].[Id] AND [card].[CardType] = 2
-			) as [CountOfCards],
+			) as [COUNT_1],
 			[cu].[Id]
 		FROM
 			[Issue1983Person] [cu]
 	) [cu_1]
 WHERE
-	([cu_1].[CountOfCards] = 0 OR [cu_1].[CountOfCards] <> 0 OR [cu_1].[CountOfCards] IS NULL)
+	[cu_1].[COUNT_1] = 0 OR [cu_1].[COUNT_1] <> 0 OR [cu_1].[COUNT_1] IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -81,21 +81,30 @@ SELECT
 FROM
 	[Issue1983Person] [cu]
 WHERE
-	((
+	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Issue1983Card] [a_Cards_1]
+			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards_1].[PersonId] AND [a_Cards_1].[CardType] = 2
-	) = 0 OR (
+			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+	) = 0 OR
+	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Issue1983Card] [a_Cards_1]
+			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards_1].[PersonId] AND [a_Cards_1].[CardType] = 2
-	) <> 0)
+			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+	) <> 0 OR
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Issue1983Card] [a_Cards]
+		WHERE
+			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+	) IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -123,21 +132,30 @@ SELECT
 FROM
 	[Issue1983Person] [cu]
 WHERE
-	((
+	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Issue1983Card] [card_1]
 		WHERE
 			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
-	) = 0 OR (
+	) = 0 OR
+	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Issue1983Card] [card_1]
 		WHERE
 			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
-	) <> 0)
+	) <> 0 OR
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Issue1983Card] [card_1]
+		WHERE
+			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
+	) IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

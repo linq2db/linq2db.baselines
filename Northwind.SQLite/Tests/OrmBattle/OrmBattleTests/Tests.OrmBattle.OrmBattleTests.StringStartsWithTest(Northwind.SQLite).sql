@@ -16,5 +16,5 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	([c_1].[CustomerID] LIKE 'A%' ESCAPE '~' OR [c_1].[CustomerID] LIKE 'L%' ESCAPE '~')
+	[c_1].[CustomerID] LIKE 'A%' ESCAPE '~' OR [c_1].[CustomerID] LIKE 'L%' ESCAPE '~'
 

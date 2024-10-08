@@ -4,7 +4,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[OrderID],
 	[d].[CustomerID],
 	[d].[EmployeeID],
@@ -28,11 +28,11 @@ FROM
 					ELSE 'average'
 				END
 				ELSE 'cheap'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Orders] [g_1]
 	) [m_1]
-		INNER JOIN [Orders] [d] ON [m_1].[c1] = CASE
+		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = CASE
 			WHEN [d].[Freight] > 50 THEN CASE
 				WHEN [d].[Freight] > 100 THEN 'expensive'
 				ELSE 'average'

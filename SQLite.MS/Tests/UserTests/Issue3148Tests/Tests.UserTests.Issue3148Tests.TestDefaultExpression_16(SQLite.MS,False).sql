@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Object
-SET     @p = NULL
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
 
 SELECT
 	[g_1].[LastName],
-	0,
-	NULL,
-	@p
+	@Gender
 FROM
 	[Person] [g_1]
 GROUP BY
@@ -15,14 +13,12 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Object
-SET     @p = NULL
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'M'
 
 SELECT
 	[g_1].[LastName],
-	0,
-	NULL,
-	@p
+	@Gender
 FROM
 	[Person] [g_1]
 GROUP BY

@@ -2,32 +2,44 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	0,
-	[t1].[ParentID],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	CASE
+		WHEN [t2].[projection__set_id__] = 0 THEN 1
+		ELSE 0
+	END,
+	[t2].[ParentID],
+	[t2].[ParentID_1],
+	[t2].[ChildID]
 FROM
-	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				[a_Children].[ParentID],
-				[a_Children].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn]
-			FROM
-				[Child] [a_Children]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
-WHERE
-	[p].[ParentID] = 1
-UNION ALL
-SELECT
-	1,
-	NULL,
-	NULL,
-	NULL
-FROM
-	[Parent] [p_1]
-WHERE
-	[p_1].[ParentID] <> 1
+	(
+		SELECT
+			[t1].[ParentID],
+			[t1].[ParentID] as [ParentID_1],
+			[t1].[ChildID],
+			CAST(0 AS INTEGER) as [projection__set_id__]
+		FROM
+			[Parent] [p]
+				LEFT JOIN (
+					SELECT
+						[a_Children].[ParentID],
+						[a_Children].[ChildID],
+						ROW_NUMBER() OVER (PARTITION BY [a_Children].[ParentID] ORDER BY [a_Children].[ParentID]) as [rn],
+						[a_Children].[ParentID] as [ParentID_1]
+					FROM
+						[Child] [a_Children]
+				) [t1] ON [p].[ParentID] = [t1].[ParentID_1] AND [t1].[rn] <= 1
+		WHERE
+			[p].[ParentID] = 1
+		UNION ALL
+		SELECT
+			NULL as [ParentID],
+			NULL as [ParentID_1],
+			NULL as [ChildID],
+			CAST(1 AS INTEGER) as [projection__set_id__]
+		FROM
+			[Parent] [p_1]
+		WHERE
+			[p_1].[ParentID] <> 1
+	) [t2]
 
 BeforeExecute
 -- SQLite.Classic SQLite

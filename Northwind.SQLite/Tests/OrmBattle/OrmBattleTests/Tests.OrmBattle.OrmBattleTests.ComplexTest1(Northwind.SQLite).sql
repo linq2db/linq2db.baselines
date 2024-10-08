@@ -6,7 +6,10 @@ BeforeExecute
 SELECT
 	[m_1].[ProductID],
 	[m_1].[SupplierID],
-	[d_1].[Discontinued],
+	CASE
+		WHEN [d_1].[Discontinued] = 0 THEN 1
+		ELSE 0
+	END,
 	[d_1].[ProductID],
 	[d_1].[ProductName],
 	[d_1].[SupplierID],
@@ -15,7 +18,13 @@ SELECT
 	[d_1].[UnitPrice],
 	[d_1].[UnitsInStock],
 	[d_1].[UnitsOnOrder],
-	[d_1].[ReorderLevel]
+	[d_1].[ReorderLevel],
+	[d_1].[Discontinued],
+	CASE
+		WHEN [d_1].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END,
+	[d_1].[Discontinued]
 FROM
 	(
 		SELECT DISTINCT
