@@ -50,8 +50,8 @@ SELECT
 	t1."Byte_1",
 	t1."Guid",
 	t1."Guid_1",
-	t1."Enum",
-	t1."EnumN",
+	t1.c1,
+	t1.c2,
 	t1."Bool",
 	t1."Bool_1"
 FROM
@@ -62,10 +62,10 @@ FROM
 			NULL::SmallInt as "Byte_1",
 			NULL::uuid as "Guid",
 			NULL::uuid as "Guid_1",
-			NULL::text as "Enum",
-			NULL::text as "EnumN",
-			NULL as "Bool",
-			NULL as "Bool_1"
+			NULL::text as c1,
+			NULL::text as c2,
+			NULL::Boolean as "Bool",
+			NULL::Boolean as "Bool_1"
 		FROM
 			"Issue3360Table1" r
 		WHERE
@@ -77,8 +77,8 @@ FROM
 			r_1."ByteN" as "Byte_1",
 			r_1."Guid",
 			r_1."GuidN" as "Guid_1",
-			r_1."Enum",
-			r_1."EnumN",
+			r_1."Enum" as c1,
+			r_1."EnumN" as c2,
 			r_1."Bool",
 			r_1."BoolN" as "Bool_1"
 		FROM

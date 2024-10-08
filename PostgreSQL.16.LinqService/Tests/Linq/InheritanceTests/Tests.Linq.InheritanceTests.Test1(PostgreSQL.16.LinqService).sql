@@ -2,8 +2,12 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."Value1",
+	CASE
+		WHEN t1."Value1" = 1 THEN True
+		ELSE False
+	END,
 	t1."ParentID",
+	t1."Value1",
 	t1."Value1"
 FROM
 	"Parent" t1

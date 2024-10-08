@@ -47,7 +47,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT
-	g_1."User_1",
+	g_1."EventUser",
 	p."ProcessName",
 	u."UserGroups",
 	SUM(g_1."Diff") / 60
@@ -55,17 +55,17 @@ FROM
 	(
 		SELECT
 			EXTRACT(EPOCH FROM (q."EventTime"::timestamp - LAG(q."EventTime") OVER(PARTITION BY q."EventUser", q."ProcessID" ORDER BY q."EventTime")::timestamp)) / 60 as "Diff",
-			q."EventUser" as "User_1",
-			q."ProcessID" as "Proc"
+			q."EventUser",
+			q."ProcessID"
 		FROM
 			"Issue1799Table1" q
 	) g_1
-		INNER JOIN "Issue1799Table2" u ON u."UserId" = g_1."User_1"
-		INNER JOIN "Issue1799Table3" p ON p."ProcessID" = g_1."Proc"
+		INNER JOIN "Issue1799Table2" u ON u."UserId" = g_1."EventUser"
+		INNER JOIN "Issue1799Table3" p ON p."ProcessID" = g_1."ProcessID"
 WHERE
 	g_1."Diff" > 0 AND g_1."Diff" <= 5
 GROUP BY
-	g_1."User_1",
+	g_1."EventUser",
 	u."UserGroups",
 	p."ProcessName"
 LIMIT :take

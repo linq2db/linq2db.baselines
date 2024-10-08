@@ -161,10 +161,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Guid Uuid -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
-DECLARE @GuidN Uuid -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
+DECLARE @Id Uuid -- Guid
+SET     @Id = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
+DECLARE @Id_1 Uuid -- Guid
+SET     @Id_1 = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
 
 SELECT
 	t1."Id",
@@ -172,22 +172,22 @@ SELECT
 	t1."Byte_1",
 	t1."Guid",
 	t1."GuidN",
-	t1."Enum",
-	t1."EnumN",
+	t1.c1,
+	t1.c2,
 	t1."Bool",
 	t1."BoolN"
 FROM
 	(
 		SELECT
 			r."Id",
-			5 as "Byte",
-			5 as "Byte_1",
-			:Guid as "Guid",
-			:GuidN as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
-			True as "Bool",
-			False as "BoolN"
+			5::SmallInt as "Byte",
+			5::SmallInt as "Byte_1",
+			:Id::uuid as "Guid",
+			:Id_1::uuid as "GuidN",
+			'ENUM1_VALUE'::text as c1,
+			'ENUM2_VALUE'::text as c2,
+			True::Boolean as "Bool",
+			False::Boolean as "BoolN"
 		FROM
 			"Issue3360Table1" r
 		WHERE
@@ -199,8 +199,8 @@ FROM
 			r_1."ByteN" as "Byte_1",
 			r_1."Guid",
 			r_1."GuidN",
-			r_1."Enum",
-			r_1."EnumN",
+			r_1."Enum" as c1,
+			r_1."EnumN" as c2,
 			r_1."Bool",
 			r_1."BoolN"
 		FROM

@@ -2,7 +2,6 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	it_1."IsActive",
 	it_1."Other"
 FROM
 	(
