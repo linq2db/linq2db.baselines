@@ -2,9 +2,17 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ChildID]
+	CASE
+		WHEN [t1].[ChildID] = 21 THEN 1
+		ELSE 0
+	END,
+	[t1].[ChildID],
+	CASE
+		WHEN [t1].[ChildID] = 11 THEN 1
+		ELSE 0
+	END
 FROM
 	[Child] [t1]
 WHERE
-	([t1].[ChildID] = 11 OR [t1].[ChildID] = 21)
+	[t1].[ChildID] = 11 OR [t1].[ChildID] = 21
 

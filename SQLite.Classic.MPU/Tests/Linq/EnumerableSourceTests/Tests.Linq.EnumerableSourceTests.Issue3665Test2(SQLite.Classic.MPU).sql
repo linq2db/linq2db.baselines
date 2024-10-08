@@ -2,12 +2,11 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[PersonID],
-	[y].[value__]
+	[x].[PersonID] + [y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (
-			SELECT NULL [value__] WHERE 1 = 0
+			SELECT NULL [item] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(0), (1), (2), (3)

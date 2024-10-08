@@ -10,6 +10,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	226,
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]

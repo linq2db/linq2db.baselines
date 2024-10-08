@@ -31,7 +31,7 @@ AS
 		[parent].[Id],
 		[parent].[ParentId],
 		[parent].[GroupName],
-		0
+		CAST(0 AS INTEGER)
 	FROM
 		[OrgGroup] [parent]
 	UNION

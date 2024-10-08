@@ -2,7 +2,6 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[it_1].[IsActive],
 	[it_1].[Other]
 FROM
 	(

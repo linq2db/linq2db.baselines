@@ -16,8 +16,9 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '1 Day'),
-	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day')
+	1,
+	CURRENT_TIMESTAMP,
+	2
 LIMIT 1
 
 BeforeExecute
