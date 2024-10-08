@@ -14,13 +14,13 @@ WHERE
 			(
 				SELECT
 					param."ParentID",
-					param."Value1" as "Value_1"
+					param."Value1"
 				FROM
 					"Parent" param
 				LIMIT 100
 			) param_1
 		WHERE
-			param_1."ParentID" = c_1."ParentID" AND param_1."Value_1" = c_1."ParentID"
+			param_1."ParentID" = c_1."ParentID" AND param_1."Value1" = c_1."ParentID"
 	)
 
 BeforeExecute
