@@ -17,6 +17,7 @@ FROM
 					p."ParentID"
 			) p_1
 		GROUP BY
+			p_1."ParentID",
 			p_1."ParentID"
 	) p_2
 GROUP BY

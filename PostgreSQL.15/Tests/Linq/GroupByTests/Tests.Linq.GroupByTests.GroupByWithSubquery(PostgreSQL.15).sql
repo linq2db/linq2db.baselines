@@ -2,7 +2,6 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t2.c1,
 	COUNT(*)
 FROM
 	(

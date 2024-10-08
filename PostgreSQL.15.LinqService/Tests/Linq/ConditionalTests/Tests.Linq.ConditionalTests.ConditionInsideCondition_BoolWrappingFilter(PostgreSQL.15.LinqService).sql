@@ -24,7 +24,7 @@ FROM
 			"Parent" s
 	) s_1
 WHERE
-	s_1."Value_1" = True
+	s_1."Value_1"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

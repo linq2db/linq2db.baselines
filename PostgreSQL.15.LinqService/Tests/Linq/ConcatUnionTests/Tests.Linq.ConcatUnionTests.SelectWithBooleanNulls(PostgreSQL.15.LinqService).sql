@@ -28,7 +28,7 @@ SELECT
 		) THEN True
 		ELSE False
 	END,
-	NULL
+	NULL::Boolean
 FROM
 	"Parent" x_1
 

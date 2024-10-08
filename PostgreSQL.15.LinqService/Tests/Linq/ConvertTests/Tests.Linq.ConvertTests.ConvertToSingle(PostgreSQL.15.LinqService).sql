@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	p_1.c1
+	Floor(p_1.c1)::Int
 FROM
 	(
 		SELECT
