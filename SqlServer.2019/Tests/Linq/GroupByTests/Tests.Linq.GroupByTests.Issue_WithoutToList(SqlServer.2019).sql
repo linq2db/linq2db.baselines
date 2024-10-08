@@ -66,38 +66,37 @@ DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'
 
 SELECT
-	[m_1].[Id],
-	[d].[id],
-	[d].[reference],
+	[m_1].[key_1],
+	[d].[Id],
+	[d].[group_1],
 	[d].[count_1],
-	[d].[percents],
-	[d].[hours],
-	[d].[minutes]
+	[d].[Detail],
+	[d].[key_1],
+	[d].[key_2]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Reference].[Id]
+			[a_Reference].[Id] as [key_1]
 		FROM
 			[TestAggregateTable] [t1]
 				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
 		GROUP BY
 			[a_Reference].[Id],
-			[t1].[ReferenceId],
-			[a_Reference].[Id]
+			[t1].[ReferenceId]
 	) [m_1]
 		CROSS APPLY (
 			SELECT
 				COUNT(*) as [count_1],
-				[t3].[Id] as [id],
-				[t3].[group_1] as [reference],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
-				[t3].[hours],
-				[t3].[minutes]
+				[t3].[Id],
+				[t3].[Id_1] as [group_1],
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [Detail],
+				[t3].[hours] as [key_1],
+				[t3].[minutes] as [key_2]
 			FROM
 				(
 					SELECT
 						[t2].[Id],
-						[a_Reference_1].[Id] as [group_1],
+						[a_Reference_1].[Id] as [Id_1],
 						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
 						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
@@ -106,11 +105,11 @@ FROM
 				) [t3]
 			GROUP BY
 				[t3].[Id],
-				[t3].[group_1],
+				[t3].[Id_1],
 				[t3].[hours],
 				[t3].[minutes]
 			HAVING
-				([t3].[group_1] = [m_1].[Id] OR [t3].[group_1] IS NULL AND [m_1].[Id] IS NULL)
+				[t3].[Id_1] = [m_1].[key_1] OR [t3].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
@@ -127,8 +126,7 @@ FROM
 		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
 GROUP BY
 	[a_Reference].[Id],
-	[group_1].[ReferenceId],
-	[a_Reference].[Id]
+	[group_1].[ReferenceId]
 ORDER BY
 	[group_1].[ReferenceId]
 

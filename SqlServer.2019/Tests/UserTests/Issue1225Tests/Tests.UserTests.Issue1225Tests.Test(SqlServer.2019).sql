@@ -86,7 +86,6 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	N'Id',
 	[it].[Id],
 	SUM([a_ActualStage].[Id])
 FROM
