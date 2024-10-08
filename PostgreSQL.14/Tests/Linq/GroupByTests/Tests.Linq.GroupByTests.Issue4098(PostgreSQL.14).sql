@@ -150,9 +150,9 @@ FROM
 		INNER JOIN "PaymentCalculation" pc ON ipd."CalculationId" = pc."Id" AND g_1."Id" = pc."EventId"
 		INNER JOIN (
 			SELECT
+				SUM(b."Units") as "Units",
 				b."InvestorId",
-				b."SecurityClass",
-				SUM(b."Units") as "Units"
+				b."SecurityClass"
 			FROM
 				"Transaction" b
 			GROUP BY

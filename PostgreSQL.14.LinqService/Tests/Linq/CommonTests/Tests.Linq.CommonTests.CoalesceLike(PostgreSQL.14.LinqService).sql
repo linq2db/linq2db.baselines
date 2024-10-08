@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" LIKE 'Jo%' ESCAPE '~' AND p."FirstName" IS NOT NULL
+	p."FirstName" LIKE 'Jo%' ESCAPE '~'
 

@@ -16,7 +16,7 @@ FROM
 				WHEN x."FirstName" = '123' THEN 'Y'
 				ELSE 'N'
 			END as "OK",
-			'A' as "FirstName"
+			'A'::text as "FirstName"
 		FROM
 			"Person" x
 		WHERE
@@ -24,7 +24,7 @@ FROM
 		UNION
 		SELECT
 			x_1."PersonID" as "ID",
-			'N' as "OK",
+			'N'::text as "OK",
 			x_1."FirstName"
 		FROM
 			"Person" x_1

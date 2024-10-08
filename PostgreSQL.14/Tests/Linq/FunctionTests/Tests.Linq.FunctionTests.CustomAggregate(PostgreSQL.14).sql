@@ -2,8 +2,8 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	SUM(g_1."Value1"),
-	SUM(g_1."Value1")
+	Coalesce(SUM(g_1."Value1"), 0),
+	Coalesce(SUM(g_1."Value1"), 0)
 FROM
 	"Parent" g_1
 GROUP BY
