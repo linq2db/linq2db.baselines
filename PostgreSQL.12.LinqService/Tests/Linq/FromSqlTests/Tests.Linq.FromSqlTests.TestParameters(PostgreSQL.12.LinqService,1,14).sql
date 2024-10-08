@@ -374,8 +374,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Bigint -- Int64
-SET     @p = 5
+DECLARE @startId Bigint -- Int64
+SET     @startId = 5
 
 SELECT
 	c_1.value,
@@ -384,7 +384,7 @@ FROM
 	(
 		SELECT * FROM
 		sample_class
-		where id >= :p and id < 14
+		where id >= :startId and id < 14
 	) c_1
 WHERE
 	c_1.id > 10

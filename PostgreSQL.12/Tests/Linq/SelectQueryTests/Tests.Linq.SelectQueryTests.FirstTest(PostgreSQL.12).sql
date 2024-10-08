@@ -16,8 +16,9 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CURRENT_TIMESTAMP + Interval '1 Day',
-	CURRENT_TIMESTAMP + 2 * Interval '1 Day'
+	1,
+	CURRENT_TIMESTAMP,
+	2
 LIMIT 1
 
 BeforeExecute

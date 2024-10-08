@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 0
+DECLARE @Value Integer -- Int32
+SET     @Value = 0
 
 SELECT
-	:p
+	:Value
 
