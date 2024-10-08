@@ -45,19 +45,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.c1,
+	t1.Date_1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toDate32(x.TransactionDate) as c1
+			toDate(x.TransactionDate) as Date_1
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.c1
+	t1.Date_1
 ORDER BY
-	t1.c1
+	t1.Date_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

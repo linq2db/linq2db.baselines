@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat32(t.MoneyValue)
+	toInt32(toFloat32(t.MoneyValue))
 FROM
 	LinqDataTypes t
 

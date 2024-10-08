@@ -25,11 +25,11 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	minOrNull(tgGroup_1.TranslatedMessage1),
+	Trim(minOrNull(tgGroup_1.TranslatedMessage1)),
 	tgGroup_1.TranslatedMessageGroup,
 	tgGroup_1.Hour_1,
 	COUNT(*),
-	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
+	toInt64(sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3))))
 FROM
 	(
 		SELECT

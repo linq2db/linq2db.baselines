@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	date_diff('hour', t.DateTimeValue, addHours(t.DateTimeValue, toFloat64(100)))
+	toInt32(date_diff('hour', t.DateTimeValue, addHours(t.DateTimeValue, toFloat64(100))))
 FROM
 	LinqDataTypes t
 

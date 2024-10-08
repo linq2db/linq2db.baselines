@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p_1.c1
+	toInt32(p_1.c1)
 FROM
 	(
 		SELECT

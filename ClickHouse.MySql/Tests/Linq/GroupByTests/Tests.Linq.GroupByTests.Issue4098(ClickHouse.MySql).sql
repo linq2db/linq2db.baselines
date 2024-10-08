@@ -147,7 +147,7 @@ BeforeExecute
 SELECT
 	ip.InvestorId,
 	t1.Units,
-	sumOrNull(ip.NetPayment)
+	sum(ip.NetPayment)
 FROM
 	PaymentEvent g_1
 		INNER JOIN InvestorPayment ip ON g_1.Id = ip.Id
@@ -155,9 +155,9 @@ FROM
 		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND g_1.Id = pc.EventId
 		INNER JOIN (
 			SELECT
+				sum(b.Units) as Units,
 				b.InvestorId as InvestorId,
-				b.SecurityClass as SecurityClass,
-				sumOrNull(b.Units) as Units
+				b.SecurityClass as SecurityClass
 			FROM
 				Transaction b
 			GROUP BY

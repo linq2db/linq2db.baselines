@@ -78,7 +78,6 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	'Id',
 	it.Id,
 	sumOrNull(a_ActualStage.Id)
 FROM
