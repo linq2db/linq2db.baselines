@@ -2,8 +2,6 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[g_2].[ChildId],
-	[g_2].[ParentId],
 	COUNT(*)
 FROM
 	(

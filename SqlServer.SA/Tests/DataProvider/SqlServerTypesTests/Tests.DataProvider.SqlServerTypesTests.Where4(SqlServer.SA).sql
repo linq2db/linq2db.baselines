@@ -9,5 +9,5 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	@hid.IsDescendantOf([t].[HID]) = 1
+	@hid.IsDescendantOf([t].[HID]) <> 0 OR @hid.IsDescendantOf([t].[HID]) IS NULL
 

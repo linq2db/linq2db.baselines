@@ -83,22 +83,22 @@ SELECT
 	[t3].[group_1],
 	[t3].[count_1],
 	[t3].[percents],
-	[t3].[hours],
-	[t3].[minutes]
+	[t3].[key_1],
+	[t3].[key_2]
 FROM
 	(
 		SELECT
 			COUNT(*) as [count_1],
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1] as [group_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[hours] as [key_1],
+			[t2].[minutes] as [key_2]
 		FROM
 			(
 				SELECT
 					[t1].[Id],
-					[a_Reference].[Id] as [group_1],
+					[a_Reference].[Id] as [Id_1],
 					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
 					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
@@ -107,11 +107,11 @@ FROM
 			) [t2]
 		GROUP BY
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			[t2].[hours],
 			[t2].[minutes]
 		HAVING
-			[t2].[group_1] IS NULL
+			[t2].[Id_1] IS NULL
 	) [t3]
 ORDER BY
 	[t3].[count_1] DESC
@@ -128,22 +128,22 @@ SELECT
 	[t3].[group_1],
 	[t3].[count_1],
 	[t3].[percents],
-	[t3].[hours],
-	[t3].[minutes]
+	[t3].[key_1],
+	[t3].[key_2]
 FROM
 	(
 		SELECT
 			COUNT(*) as [count_1],
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1] as [group_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[hours] as [key_1],
+			[t2].[minutes] as [key_2]
 		FROM
 			(
 				SELECT
 					[t1].[Id],
-					[a_Reference].[Id] as [group_1],
+					[a_Reference].[Id] as [Id_1],
 					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
 					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
@@ -152,11 +152,11 @@ FROM
 			) [t2]
 		GROUP BY
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			[t2].[hours],
 			[t2].[minutes]
 		HAVING
-			[t2].[group_1] = @key
+			[t2].[Id_1] = @key
 	) [t3]
 ORDER BY
 	[t3].[count_1] DESC

@@ -12,7 +12,7 @@ FROM
 			[Person] [nm]
 	) [nm_1]
 WHERE
-	([nm_1].[Length_1] <> 0 OR [nm_1].[Length_1] IS NULL)
+	[nm_1].[Length_1] <> 0 OR [nm_1].[Length_1] IS NULL
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

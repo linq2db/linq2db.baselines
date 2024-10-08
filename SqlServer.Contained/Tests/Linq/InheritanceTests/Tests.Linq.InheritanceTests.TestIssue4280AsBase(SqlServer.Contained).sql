@@ -69,10 +69,13 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[DeviceType],
+	IIF([t1].[DeviceType] = N'TV', 1, 0),
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[Location]
+	[t1].[DeviceType],
+	[t1].[Location],
+	IIF([t1].[DeviceType] = N'DISPLAY', 1, 0),
+	[t1].[DeviceType]
 FROM
 	[Issue4280] [t1]
 ORDER BY
@@ -119,10 +122,13 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[DeviceType],
+	IIF([t1].[DeviceType] = N'TV', 1, 0),
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[Location]
+	[t1].[DeviceType],
+	[t1].[Location],
+	IIF([t1].[DeviceType] = N'DISPLAY', 1, 0),
+	[t1].[DeviceType]
 FROM
 	[Issue4280] [t1]
 ORDER BY

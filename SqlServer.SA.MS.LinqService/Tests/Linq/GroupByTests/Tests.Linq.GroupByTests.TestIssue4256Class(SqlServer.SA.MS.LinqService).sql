@@ -2,7 +2,6 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[it_1].[IsActive],
 	[it_1].[Other]
 FROM
 	(
