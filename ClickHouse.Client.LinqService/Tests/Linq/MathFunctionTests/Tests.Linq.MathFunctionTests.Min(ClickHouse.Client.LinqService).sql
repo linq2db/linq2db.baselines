@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t.MoneyValue <= toDecimal64('5', 10) THEN t.MoneyValue
-				ELSE toDecimal64(toDecimal64('5', 10), toUInt8(4))
+				WHEN t.MoneyValue <= toDecimal128('5', 10) THEN t.MoneyValue
+				ELSE toDecimal64(toDecimal128('5', 10), toUInt8(4))
 			END as c1
 		FROM
 			LinqDataTypes t

@@ -2,7 +2,6 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t2.c1,
 	COUNT(*)
 FROM
 	(

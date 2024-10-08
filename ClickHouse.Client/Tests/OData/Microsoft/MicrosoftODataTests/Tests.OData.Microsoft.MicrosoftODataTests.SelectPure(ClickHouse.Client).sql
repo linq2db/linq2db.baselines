@@ -34,9 +34,8 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	'Title',
 	it.Title,
-	sumOrNull(it.YearsExperience)
+	sum(it.YearsExperience)
 FROM
 	odata_person it
 GROUP BY

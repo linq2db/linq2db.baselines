@@ -2,20 +2,20 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.ParentID,
-	m_1.ChildID,
+	m_1.Key_1,
+	m_1.Key_2,
 	d.ParentID,
 	d.ChildID,
 	d.GrandChildID
 FROM
 	(
 		SELECT DISTINCT
-			t1.ParentID as ParentID,
-			t1.ChildID as ChildID
+			t1.ParentID as Key_1,
+			t1.ChildID as Key_2
 		FROM
 			GrandChild t1
 	) m_1
-		INNER JOIN GrandChild d ON m_1.ParentID = d.ParentID AND m_1.ChildID = d.ChildID
+		INNER JOIN GrandChild d ON m_1.Key_1 = d.ParentID AND m_1.Key_2 = d.ChildID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toFloat64(t.MoneyValue)
+	toInt32(toFloat64(t.MoneyValue))
 FROM
 	LinqDataTypes t
 
