@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
+DECLARE @TestField Bigint -- Int64
+SET     @TestField = 12
 
 SELECT
 	entity."ID",
@@ -31,7 +33,7 @@ SELECT
 FROM
 	"LinqDataTypes" entity
 WHERE
-	entity."BigIntValue" = 12
+	entity."BigIntValue" = :TestField
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

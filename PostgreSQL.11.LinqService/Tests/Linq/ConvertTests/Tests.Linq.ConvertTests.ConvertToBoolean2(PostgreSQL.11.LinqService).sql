@@ -14,5 +14,5 @@ FROM
 			"LinqDataTypes" p
 	) p_1
 WHERE
-	p_1.c1 = False
+	NOT p_1.c1
 

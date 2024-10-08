@@ -21,7 +21,7 @@ FROM
 		) t1 ON 1=1
 WHERE
 	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
-	x."ParentID" <> (
+	(x."ParentID" <> (
 		SELECT
 			CASE
 				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
@@ -30,9 +30,20 @@ WHERE
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
+			"a_Parent"."ParentID" = "a_Children"."ParentID"
 		LIMIT 1
-	)
+	) OR (
+		SELECT
+			CASE
+				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
+				ELSE 0
+			END
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"a_Parent"."ParentID" = "a_Children"."ParentID"
+		LIMIT 1
+	) IS NULL)
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -57,7 +68,7 @@ FROM
 		) t1 ON 1=1
 WHERE
 	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
-	x."ParentID" <> (
+	(x."ParentID" <> (
 		SELECT
 			CASE
 				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
@@ -66,7 +77,18 @@ WHERE
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
+			"a_Parent"."ParentID" = "a_Children"."ParentID"
 		LIMIT 1
-	)
+	) OR (
+		SELECT
+			CASE
+				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
+				ELSE 0
+			END
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"a_Parent"."ParentID" = "a_Children"."ParentID"
+		LIMIT 1
+	) IS NULL)
 

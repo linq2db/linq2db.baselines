@@ -56,7 +56,8 @@ SET
 FROM
 	access_mode y1
 WHERE
-	(Upper(Replace(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR Upper(Replace(gt_s_one.col3, 'auth.', '')) IS NULL AND Upper(y1.code) IS NULL)
+	Upper(Replace(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR
+	Upper(Replace(gt_s_one.col3, 'auth.', '')) IS NULL AND Upper(y1.code) IS NULL
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
