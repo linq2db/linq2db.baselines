@@ -84,7 +84,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	'Id',
 	"it"."Id",
 	SUM("a_ActualStage"."Id")
 FROM

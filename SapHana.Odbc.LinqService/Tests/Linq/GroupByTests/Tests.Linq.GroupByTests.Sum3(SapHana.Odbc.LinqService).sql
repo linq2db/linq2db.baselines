@@ -8,7 +8,7 @@ SELECT
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
+			"a_Parent"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
 	"Child" "g_1"

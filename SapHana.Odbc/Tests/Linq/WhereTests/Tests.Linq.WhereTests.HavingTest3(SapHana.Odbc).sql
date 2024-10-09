@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"c_1"."ParentID",
+			"c_1"."ParentID" as "Key_1",
 			COUNT(*) as "COUNT_1"
 		FROM
 			"Child" "c_1"
@@ -16,5 +16,5 @@ FROM
 			"c_1"."ParentID" > 1
 	) "c_2"
 WHERE
-	"c_2"."ParentID" > 1 AND "c_2"."COUNT_1" > 1
+	"c_2"."Key_1" > 1 AND "c_2"."COUNT_1" > 1
 

@@ -3,6 +3,8 @@
 
 SELECT
 	"c_1"."ParentID",
+	"c_1"."ChildID",
+	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM
 	"Parent" "t1"

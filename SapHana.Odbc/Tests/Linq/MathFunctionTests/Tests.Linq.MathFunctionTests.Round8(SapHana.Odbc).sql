@@ -2,18 +2,13 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t_1"."c1"
+	CAST("t"."MoneyValue" AS Double)
 FROM
-	(
-		SELECT
-			CAST(CASE
-				WHEN "t"."MoneyValue" - Floor("t"."MoneyValue") = 0.5 AND MOD(Floor("t"."MoneyValue"), 2) = 0
-					THEN Floor("t"."MoneyValue")
-				ELSE Round("t"."MoneyValue", 0)
-			END AS Double) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+	"LinqDataTypes" "t"
 WHERE
-	"t_1"."c1" <> 0
+	CASE
+		WHEN CAST("t"."MoneyValue" AS Double) - FLOOR(CAST("t"."MoneyValue" AS Double)) = 0.5 AND MOD(FLOOR(CAST("t"."MoneyValue" AS Double)), 2) = 0
+			THEN FLOOR(CAST("t"."MoneyValue" AS Double))
+		ELSE ROUND(CAST("t"."MoneyValue" AS Double), 0)
+	END <> 0
 

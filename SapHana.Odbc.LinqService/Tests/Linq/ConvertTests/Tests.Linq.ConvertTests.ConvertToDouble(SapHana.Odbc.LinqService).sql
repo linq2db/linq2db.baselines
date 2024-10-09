@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p_1"."c1"
+	CAST("p_1"."c1" AS Integer)
 FROM
 	(
 		SELECT

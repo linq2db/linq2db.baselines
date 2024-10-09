@@ -16,7 +16,7 @@ FROM
 				WHEN "x"."FirstName" = '123' THEN 'Y'
 				ELSE 'N'
 			END as "OK",
-			'A' as "FirstName"
+			CAST('A' AS NVarChar(255)) as "FirstName"
 		FROM
 			"Person" "x"
 		WHERE
@@ -24,7 +24,7 @@ FROM
 		UNION
 		SELECT
 			"x_1"."PersonID" as "ID",
-			'N' as "OK",
+			CAST('N' AS NVarChar(255)) as "OK",
 			"x_1"."FirstName"
 		FROM
 			"Person" "x_1"

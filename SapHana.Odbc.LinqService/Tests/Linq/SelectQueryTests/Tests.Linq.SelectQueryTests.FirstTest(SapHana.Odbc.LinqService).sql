@@ -16,8 +16,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Days(CURRENT_TIMESTAMP, 1),
-	Add_Days(CURRENT_TIMESTAMP, 2)
+	1,
+	CURRENT_TIMESTAMP,
+	2
 FROM DUMMY
 LIMIT 1
 

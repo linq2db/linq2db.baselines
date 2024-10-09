@@ -1,6 +1,14 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar(1) -- String
+SET     @p = 'M'
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'O'
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'M'
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'O'
+DECLARE @p NVarChar(1) -- String
 SET     @p = 'O'
 
 SELECT
@@ -9,8 +17,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN "i"."MiddleName" IS NULL THEN 'M'
-				ELSE 'O'
+				WHEN "i"."MiddleName" IS NULL THEN ?
+				ELSE ?
 			END as "Gender",
 			"i"."FirstName",
 			"i"."LastName"
@@ -19,8 +27,8 @@ FROM
 		UNION ALL
 		SELECT
 			CASE
-				WHEN "i_1"."MiddleName" IS NULL THEN 'M'
-				ELSE 'O'
+				WHEN "i_1"."MiddleName" IS NULL THEN ?
+				ELSE ?
 			END as "Gender",
 			"i_1"."FirstName",
 			"i_1"."LastName"

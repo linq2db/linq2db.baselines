@@ -112,12 +112,12 @@ SET     @take = 2
 
 SELECT
 	"x"."ref1",
-	"t1"."asdfgh"
+	"t1"."face_ref1"
 FROM
 	"mega_composites" "x"
 		LEFT JOIN LATERAL (
 			SELECT
-				"q"."asdfgh"
+				"q"."asdfgh" as "face_ref1"
 			FROM
 				"qwerty" "q"
 			WHERE
