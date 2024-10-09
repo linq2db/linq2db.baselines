@@ -10,6 +10,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	226,
 	t."DateTimeValue"
 FROM
 	"LinqDataTypes" t

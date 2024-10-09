@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	date_diff('minute', t.TransactionDate, addMinutes(t.TransactionDate, toFloat64(100)))
+	toInt32(date_diff('minute', t.TransactionDate, addMinutes(t.TransactionDate, toFloat64(100))))
 FROM
 	Transactions t
 

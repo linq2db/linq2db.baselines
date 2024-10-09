@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CAST("t"."MoneyValue" AS Real)
+	CAST(CAST("t"."MoneyValue" AS Real) AS Integer)
 FROM
 	"LinqDataTypes" "t"
 

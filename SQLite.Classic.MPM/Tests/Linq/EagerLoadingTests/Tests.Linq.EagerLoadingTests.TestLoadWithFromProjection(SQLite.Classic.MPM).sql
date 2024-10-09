@@ -1846,7 +1846,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON ([d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
+		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 BeforeExecute
 DisposeTransaction

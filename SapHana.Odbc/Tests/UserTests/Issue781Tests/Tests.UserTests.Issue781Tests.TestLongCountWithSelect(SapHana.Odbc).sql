@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"t2"."c1"
+			"t2"."c1" as "Key_1"
 		FROM
 			(
 				SELECT

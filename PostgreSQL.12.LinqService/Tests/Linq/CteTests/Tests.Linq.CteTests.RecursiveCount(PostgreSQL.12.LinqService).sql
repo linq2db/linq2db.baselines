@@ -362,7 +362,7 @@ AS
 AS
 (
 	SELECT
-		0,
+		0::Int,
 		t2."Id"
 	FROM
 		"CTE_1" t2

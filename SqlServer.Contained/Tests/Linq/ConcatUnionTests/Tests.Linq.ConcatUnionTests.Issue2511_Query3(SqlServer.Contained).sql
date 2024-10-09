@@ -4,7 +4,7 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[t3].[projection__set_id__],
+	IIF([t3].[projection__set_id__] = 0, 1, 0),
 	[t3].[ID],
 	[t3].[FirstName],
 	[t3].[LastName],
@@ -24,7 +24,7 @@ FROM
 			NULL as [c1],
 			NULL as [c2],
 			NULL as [c3],
-			0 as [projection__set_id__]
+			CAST(0 AS Int) as [projection__set_id__]
 		FROM
 			(
 				SELECT TOP (@take)
@@ -46,7 +46,7 @@ FROM
 			[a_Patient].[PersonID] as [c1],
 			[a_Patient].[PersonID] as [c2],
 			[a_Patient].[Diagnosis] as [c3],
-			1 as [projection__set_id__]
+			CAST(1 AS Int) as [projection__set_id__]
 		FROM
 			[Person] [t2]
 				LEFT JOIN [Patient] [a_Patient] ON [t2].[PersonID] = [a_Patient].[PersonID]

@@ -67,7 +67,7 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	maxOrNull(x.OrderData1)
+	max(x.OrderData1)
 LIMIT 0, 3
 
 BeforeExecute
@@ -89,7 +89,7 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	minOrNull(x.OrderData1) DESC
+	min(x.OrderData1) DESC
 LIMIT 0, 3
 
 BeforeExecute

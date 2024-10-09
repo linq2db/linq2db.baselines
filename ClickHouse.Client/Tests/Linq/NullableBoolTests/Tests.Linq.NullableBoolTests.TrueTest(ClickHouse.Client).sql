@@ -52,7 +52,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	(t.Value = false OR t.Value IS NULL)
+	t.Value = false OR t.Value IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

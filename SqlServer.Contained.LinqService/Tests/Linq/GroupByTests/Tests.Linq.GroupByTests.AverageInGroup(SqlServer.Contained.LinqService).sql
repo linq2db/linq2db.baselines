@@ -346,7 +346,7 @@ SELECT
 	AVG([g_1].[DataValue]),
 	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
 	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(DISTINCT [g_1].[DataValue]),
+	CAST(AVG(DISTINCT [g_1].[DataValue]) AS Decimal(38, 17)),
 	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
 	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL))
 FROM

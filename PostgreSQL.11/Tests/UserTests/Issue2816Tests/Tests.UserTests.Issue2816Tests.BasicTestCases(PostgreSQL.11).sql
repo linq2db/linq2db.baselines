@@ -39,8 +39,8 @@ SELECT
 FROM
 	"Issue2816Table" p
 WHERE
-	(p."Text" IS NULL OR LTRIM(p."Text", '	
-                 　') = '')
+	p."Text" IS NULL OR LTRIM(p."Text", '	
+                 　') = ''
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

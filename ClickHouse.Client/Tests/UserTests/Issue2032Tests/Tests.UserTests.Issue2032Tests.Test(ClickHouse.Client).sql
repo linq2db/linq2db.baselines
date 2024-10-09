@@ -43,12 +43,12 @@ SELECT
 		WHEN r.Decimal2 IS NOT NULL THEN r.Decimal2
 		ELSE toDecimal128('0', 4)
 	END,
-	r.Decimal3,
+	Coalesce(r.Decimal3, toDecimal128('0.1', 4)),
 	CASE
 		WHEN r.Int1 IS NOT NULL THEN r.Int1
 		ELSE 0
 	END,
-	r.Int2
+	Coalesce(r.Int2, 22)
 FROM
 	Issue2032Table r
 ORDER BY

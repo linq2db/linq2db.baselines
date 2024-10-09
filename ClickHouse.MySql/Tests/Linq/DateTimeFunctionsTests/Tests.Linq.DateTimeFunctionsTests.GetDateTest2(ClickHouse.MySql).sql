@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toDate32(now()) as c1
+			toDate(now()) as c1
 		FROM
 			Parent g_1
 				INNER JOIN Child s ON g_1.ParentID = s.ParentID

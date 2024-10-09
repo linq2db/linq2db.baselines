@@ -29,7 +29,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	1
+	true
 FROM
 	SelectExpressionTable t1
 LIMIT 1

@@ -4,16 +4,16 @@
 SELECT /* Main */
 	p.ParentID,
 	p.Value1,
-	t1.COUNT_1
+	t1.Count_1
 FROM
 	(
 		SELECT /* Inline */
-			g_1.ParentID as ParentID,
-			COUNT(*) as COUNT_1
+			c_1.ParentID as ParentID,
+			COUNT(*) as Count_1
 		FROM
-			Child g_1
+			Child c_1
 		GROUP BY
-			g_1.ParentID
+			c_1.ParentID
 	) t1,
 	Parent p
 WHERE

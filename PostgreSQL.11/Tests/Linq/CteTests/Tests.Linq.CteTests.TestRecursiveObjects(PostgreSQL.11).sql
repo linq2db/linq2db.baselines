@@ -31,7 +31,7 @@ AS
 		parent."Id",
 		parent."ParentId",
 		parent."GroupName",
-		0
+		0::Int
 	FROM
 		"OrgGroup" parent
 	UNION

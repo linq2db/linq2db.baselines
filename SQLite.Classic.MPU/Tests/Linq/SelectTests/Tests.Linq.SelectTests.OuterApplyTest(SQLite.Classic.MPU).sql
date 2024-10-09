@@ -11,12 +11,14 @@ SELECT
 	[t1].[ParentID_2],
 	[t1].[ChildID_2],
 	[t1].[ParentID_3],
-	[t1].[ChildID_3],
-	[t1].[ParentID_4],
-	[t1].[ChildID_4],
-	[t1].[ParentID_5],
-	[t1].[ChildID_5],
-	[t1].[ParentID_6]
+	[t1].[ChildArray],
+	[t1].[ChildArray_1],
+	[t1].[ChildDictionary1],
+	[t1].[ChildDictionary1_1],
+	[t1].[ChildDictionary2],
+	[t1].[ChildDictionary2_1],
+	[t1].[ChildDictionary2_2],
+	[t1].[ChildDictionary2_3]
 FROM
 	(
 		SELECT DISTINCT
@@ -80,7 +82,7 @@ FROM
 				WHERE
 					[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ChildID_3],
+			) as [ChildArray],
 			(
 				SELECT
 					[c_7].[ParentID]
@@ -89,7 +91,7 @@ FROM
 				WHERE
 					[c_7].[ChildID] > 2 AND [c_7].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ParentID_4],
+			) as [ChildArray_1],
 			(
 				SELECT
 					[c_8].[ChildID]
@@ -98,7 +100,7 @@ FROM
 				WHERE
 					[c_8].[ChildID] > 2 AND [c_8].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ChildID_4],
+			) as [ChildDictionary1],
 			(
 				SELECT
 					[c_9].[ParentID]
@@ -107,25 +109,43 @@ FROM
 				WHERE
 					[c_9].[ChildID] > 2 AND [c_9].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ParentID_5],
+			) as [ChildDictionary1_1],
 			(
 				SELECT
-					[c_10].[ChildID]
+					'ChildID'
 				FROM
 					[Child] [c_10]
 				WHERE
 					[c_10].[ChildID] > 2 AND [c_10].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ChildID_5],
+			) as [ChildDictionary2],
 			(
 				SELECT
-					[c_11].[ParentID]
+					[c_11].[ChildID]
 				FROM
 					[Child] [c_11]
 				WHERE
 					[c_11].[ChildID] > 2 AND [c_11].[ParentID] >= [p].[ParentID]
 				LIMIT 1
-			) as [ParentID_6]
+			) as [ChildDictionary2_1],
+			(
+				SELECT
+					'ParentID'
+				FROM
+					[Child] [c_12]
+				WHERE
+					[c_12].[ChildID] > 2 AND [c_12].[ParentID] >= [p].[ParentID]
+				LIMIT 1
+			) as [ChildDictionary2_2],
+			(
+				SELECT
+					[c_13].[ParentID]
+				FROM
+					[Child] [c_13]
+				WHERE
+					[c_13].[ChildID] > 2 AND [c_13].[ParentID] >= [p].[ParentID]
+				LIMIT 1
+			) as [ChildDictionary2_3]
 		FROM
 			[Parent] [p]
 				LEFT JOIN (

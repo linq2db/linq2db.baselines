@@ -4,7 +4,7 @@
 SELECT
 	p.PersonID as ID,
 	p.FirstName,
-	'id=1' as Marker
+	toString('id=1') as Marker
 FROM
 	Person p
 WHERE
@@ -13,7 +13,7 @@ UNION ALL
 SELECT
 	p_1.PersonID as ID,
 	p_1.FirstName as FirstName,
-	'id=2' as Marker
+	toString('id=2') as Marker
 FROM
 	Person p_1
 WHERE

@@ -3,6 +3,7 @@
 
 SELECT
 	[a_MiddleRuntime].[ParentID],
+	[a_MiddleRuntime].[ChildID],
 	[a_Bottom].[ParentID],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]

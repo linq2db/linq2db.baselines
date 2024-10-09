@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toString(toUInt8(p.ID))
+	toUInt8(p.ID)
 FROM
 	LinqDataTypes p
 WHERE

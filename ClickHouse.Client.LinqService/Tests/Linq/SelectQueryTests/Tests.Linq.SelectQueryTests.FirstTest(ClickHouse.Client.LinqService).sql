@@ -17,8 +17,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addDays(now(), 1),
-	addDays(now(), 2)
+	toFloat64(1),
+	now(),
+	toFloat64(2)
 LIMIT 1
 
 BeforeExecute

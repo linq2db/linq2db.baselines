@@ -3,18 +3,18 @@
 
 SELECT
 	[t1].[Value1],
-	[t1].[ParentID]
+	[t1].[Value1_1]
 FROM
 	(
 		SELECT
 			[c_1].[ParentID] as [Value1],
-			[c_1].[ParentID]
+			[c_1].[ParentID] as [Value1_1]
 		FROM
 			[Child] [c_1]
 		UNION
 		SELECT
 			NULL as [Value1],
-			[c_2].[ParentID]
+			[c_2].[ParentID] as [Value1_1]
 		FROM
 			[Parent] [c_2]
 	) [t1]

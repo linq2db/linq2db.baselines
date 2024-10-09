@@ -45,19 +45,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.c1,
+	t1.TimeOfDay,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toInt64((toUnixTimestamp64Nano(toDateTime64(x.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(x.TransactionDate), 7))) / 100) as c1
+			toInt64((toUnixTimestamp64Nano(toDateTime64(x.TransactionDate, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(x.TransactionDate), 7))) / 100) as TimeOfDay
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.c1
+	t1.TimeOfDay
 ORDER BY
-	t1.c1
+	t1.TimeOfDay
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -161,10 +161,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Guid Char(36) -- AnsiStringFixedLength
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN Char(36) -- AnsiStringFixedLength
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
+DECLARE @Id Char(36) -- AnsiStringFixedLength
+SET     @Id = '0b8afe27-481c-442e-b8cf-729ddfeece29'
+DECLARE @Id Char(36) -- AnsiStringFixedLength
+SET     @Id = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 SELECT
 	"t1"."Id",
@@ -172,22 +172,22 @@ SELECT
 	"t1"."Byte_1",
 	"t1"."Guid",
 	"t1"."GuidN",
-	"t1"."Enum",
-	"t1"."EnumN",
+	"t1"."c1",
+	"t1"."c2",
 	"t1"."Bool",
 	"t1"."BoolN"
 FROM
 	(
 		SELECT
 			"r"."Id",
-			5 as "Byte",
-			5 as "Byte_1",
-			? as "Guid",
-			? as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
-			1 as "Bool",
-			0 as "BoolN"
+			CAST(5 AS TinyInt) as "Byte",
+			CAST(5 AS TinyInt) as "Byte_1",
+			CAST(? AS Char (36)) as "Guid",
+			CAST(? AS Char (36)) as "GuidN",
+			CAST('ENUM1_VALUE' AS NChar(11)) as "c1",
+			CAST('ENUM2_VALUE' AS NChar(11)) as "c2",
+			CAST(1 AS TinyInt) as "Bool",
+			CAST(0 AS TinyInt) as "BoolN"
 		FROM
 			"Issue3360Table1" "r"
 		WHERE
@@ -199,8 +199,8 @@ FROM
 			"r_1"."ByteN" as "Byte_1",
 			"r_1"."Guid",
 			"r_1"."GuidN",
-			"r_1"."Enum",
-			"r_1"."EnumN",
+			"r_1"."Enum" as "c1",
+			"r_1"."EnumN" as "c2",
 			"r_1"."Bool",
 			"r_1"."BoolN"
 		FROM

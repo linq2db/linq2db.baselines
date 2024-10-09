@@ -12,7 +12,7 @@ FROM
 			"Person" nm
 	) nm_1
 WHERE
-	(nm_1."Length_1" <> 0 OR nm_1."Length_1" IS NULL)
+	nm_1."Length_1" <> 0 OR nm_1."Length_1" IS NULL
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

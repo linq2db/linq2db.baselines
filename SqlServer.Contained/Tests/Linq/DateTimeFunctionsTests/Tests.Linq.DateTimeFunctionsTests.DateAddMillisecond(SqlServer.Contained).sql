@@ -10,6 +10,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
+	226,
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]

@@ -2,8 +2,8 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	SUM([g_1].[Value1]),
-	SUM([g_1].[Value1])
+	Coalesce(SUM([g_1].[Value1]), 0),
+	Coalesce(SUM([g_1].[Value1]), 0)
 FROM
 	[Parent] [g_1]
 GROUP BY

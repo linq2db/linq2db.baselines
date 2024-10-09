@@ -2,19 +2,19 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CAST(CASE
-		WHEN CAST("t_1"."c1" AS Decimal) * 2 = Round(CAST("t_1"."c1" AS Decimal) * 2, 5) AND CAST("t_1"."c1" AS Decimal) <> Round(CAST("t_1"."c1" AS Decimal), 5)
-			THEN Round(CAST("t_1"."c1" AS Decimal) / 2, 5) * 2
-		ELSE Round(CAST("t_1"."c1" AS Decimal), 5)
-	END AS Double)
+	CASE
+		WHEN "t_1"."c1" * 2 = ROUND("t_1"."c1" * 2, 5) AND "t_1"."c1" <> ROUND("t_1"."c1", 5)
+			THEN ROUND("t_1"."c1" / 2, 5) * 2
+		ELSE ROUND("t_1"."c1", 5)
+	END
 FROM
 	(
 		SELECT
-			CAST(CASE
-				WHEN "t"."MoneyValue" * 2 = Round("t"."MoneyValue" * 2, 1) AND "t"."MoneyValue" <> Round("t"."MoneyValue", 1)
-					THEN Round("t"."MoneyValue" / 2, 1) * 2
-				ELSE Round("t"."MoneyValue", 1)
-			END AS Double) as "c1"
+			CASE
+				WHEN CAST("t"."MoneyValue" AS Double) * 2 = ROUND(CAST("t"."MoneyValue" AS Double) * 2, 1) AND CAST("t"."MoneyValue" AS Double) <> ROUND(CAST("t"."MoneyValue" AS Double), 1)
+					THEN ROUND(CAST("t"."MoneyValue" AS Double) / 2, 1) * 2
+				ELSE ROUND(CAST("t"."MoneyValue" AS Double), 1)
+			END as "c1"
 		FROM
 			"LinqDataTypes" "t"
 	) "t_1"

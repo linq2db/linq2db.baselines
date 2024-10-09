@@ -12,6 +12,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	226,
 	[t].[DateTimeValue]
 FROM
 	[LinqDataTypes] [t]

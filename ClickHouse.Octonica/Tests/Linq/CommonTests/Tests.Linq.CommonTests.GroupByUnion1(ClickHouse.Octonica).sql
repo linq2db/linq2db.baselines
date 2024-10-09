@@ -25,5 +25,5 @@ FROM
 GROUP BY
 	tt.ParentID
 HAVING
-	(sumOrNull(tt.ID) <> 0 OR sumOrNull(tt.ID) IS NULL)
+	sumOrNull(tt.ID) <> 0
 

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = 0
+DECLARE @Value Int -- Int32
+SET     @Value = 0
 
 SELECT
-	@p
+	@Value
 

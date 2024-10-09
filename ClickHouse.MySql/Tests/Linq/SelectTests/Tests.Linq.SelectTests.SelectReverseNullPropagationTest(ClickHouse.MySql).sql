@@ -2,7 +2,8 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	q.ParentID
+	q.ParentID,
+	q.Value1
 FROM
 	Parent q
 

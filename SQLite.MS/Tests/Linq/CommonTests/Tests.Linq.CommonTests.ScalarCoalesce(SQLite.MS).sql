@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p].[Value1]
+	Coalesce([p].[Value1], 100)
 FROM
 	[Parent] [p]
 

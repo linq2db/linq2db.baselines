@@ -2,14 +2,9 @@
 -- SqlServer.2019
 
 SELECT
-	[t_1].[c1]
+	CAST([t].[MoneyValue] AS Float)
 FROM
-	(
-		SELECT
-			Round(CAST([t].[MoneyValue] AS Float), 0) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	ROUND(CAST([t].[MoneyValue] AS Float), 0) <> 0
 

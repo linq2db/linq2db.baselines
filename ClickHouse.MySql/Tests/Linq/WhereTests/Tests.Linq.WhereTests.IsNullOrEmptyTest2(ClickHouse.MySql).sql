@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	NOT (nm.FirstName IS NULL OR CHAR_LENGTH(nm.FirstName) = 0)
+	CHAR_LENGTH(nm.FirstName) <> 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

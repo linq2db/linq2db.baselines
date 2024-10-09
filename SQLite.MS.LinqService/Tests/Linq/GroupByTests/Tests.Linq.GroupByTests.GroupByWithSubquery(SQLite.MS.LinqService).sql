@@ -2,7 +2,6 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t2].[c1],
 	COUNT(*)
 FROM
 	(

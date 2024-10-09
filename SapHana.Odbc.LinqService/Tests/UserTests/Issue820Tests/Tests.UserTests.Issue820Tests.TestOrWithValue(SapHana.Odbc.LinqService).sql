@@ -8,8 +8,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param  -- Int16
-SET     @param = 1
+DECLARE @Value  -- Int16
+SET     @Value = 1
 
 SELECT
 	"t1"."ID",

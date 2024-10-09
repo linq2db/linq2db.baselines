@@ -2,10 +2,10 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[ProductID],
+	[p].[ProductID],
 	[o].[OrderID]
 FROM
-	[Products] [t1]
+	[Products] [p]
 		CROSS JOIN [Orders] [o]
-		INNER JOIN [Order Details] [d] ON [t1].[ProductID] = [d].[ProductID] AND [o].[OrderID] = [d].[OrderID]
+		INNER JOIN [Order Details] [d] ON [p].[ProductID] = [d].[ProductID] AND [o].[OrderID] = [d].[OrderID]
 

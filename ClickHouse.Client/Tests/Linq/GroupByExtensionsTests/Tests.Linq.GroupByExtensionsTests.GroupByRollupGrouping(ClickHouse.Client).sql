@@ -39,7 +39,10 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	GROUPING(g_2.Id1),
+	CASE
+		WHEN GROUPING(g_2.Id1) = 1 THEN true
+		ELSE false
+	END,
 	g_2.Id1,
 	COUNT(*)
 FROM

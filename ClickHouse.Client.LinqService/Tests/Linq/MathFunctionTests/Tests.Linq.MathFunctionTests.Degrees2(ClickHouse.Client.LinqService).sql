@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t_1.c1
+	Floor(t_1.c1)
 FROM
 	(
 		SELECT

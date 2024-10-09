@@ -7,9 +7,9 @@ FROM
 	(
 		SELECT
 			CAST(CASE
-				WHEN "p"."MoneyValue" - Floor("p"."MoneyValue") = 0.5 AND MOD(Floor("p"."MoneyValue"), 2) = 0
-					THEN Floor("p"."MoneyValue")
-				ELSE Round("p"."MoneyValue", 0)
+				WHEN "p"."MoneyValue" - FLOOR("p"."MoneyValue") = 0.5 AND MOD(FLOOR("p"."MoneyValue"), 2) = 0
+					THEN FLOOR("p"."MoneyValue")
+				ELSE ROUND("p"."MoneyValue", 0)
 			END AS TinyInt) as "c1"
 		FROM
 			"LinqDataTypes" "p"

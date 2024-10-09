@@ -141,6 +141,8 @@ BeforeExecute
 SELECT
 	e."Id",
 	"a_ObjectBOptional"."Id",
+	"a_ObjectBOptional"."FK",
+	"a_ObjectBOptional"."Id",
 	"a_ObjectC"."Id",
 	"a_ObjectC"."FK"
 FROM

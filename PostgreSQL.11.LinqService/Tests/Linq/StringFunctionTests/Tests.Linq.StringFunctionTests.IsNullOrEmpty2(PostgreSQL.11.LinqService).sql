@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN p."FirstName" IS NULL OR Length(p."FirstName") = 0 THEN True
+		WHEN Length(p."FirstName") = 0 THEN True
 		ELSE False
 	END
 FROM

@@ -35,24 +35,39 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	0 as projection__set_id__,
-	t1.Discr,
-	t1.EntityId,
-	t1.Value as Value_1
+	CASE
+		WHEN t3.projection__set_id__ = 0 THEN true
+		ELSE false
+	END,
+	CASE
+		WHEN t3.Discr = 1 THEN true
+		ELSE false
+	END,
+	t3.EntityId,
+	t3.Discr,
+	t3.Value_1
 FROM
-	ConcatTest t1
-WHERE
-	t1.Discr <> 1
-UNION ALL
-SELECT
-	1 as projection__set_id__,
-	t2.Discr as Discr,
-	t2.EntityId as EntityId,
-	t2.Value as Value_1
-FROM
-	ConcatTest t2
-WHERE
-	t2.Discr = 1
+	(
+		SELECT
+			t1.EntityId as EntityId,
+			t1.Discr as Discr,
+			t1.Value as Value_1,
+			toInt32(0) as projection__set_id__
+		FROM
+			ConcatTest t1
+		WHERE
+			t1.Discr <> 1
+		UNION ALL
+		SELECT
+			t2.EntityId as EntityId,
+			t2.Discr as Discr,
+			t2.Value as Value_1,
+			toInt32(1) as projection__set_id__
+		FROM
+			ConcatTest t2
+		WHERE
+			t2.Discr = 1
+	) t3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

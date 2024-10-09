@@ -191,7 +191,7 @@ FROM
 						[item_1].[Id] = [a_Children].[ParentId]
 				) [t1]
 	) [m_1]
-		INNER JOIN [Test3799Item] [d] ON ([m_1].[Id] = [d].[ParentId] OR [m_1].[Id] IS NULL AND [d].[ParentId] IS NULL)
+		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId] OR [m_1].[Id] IS NULL AND [d].[ParentId] IS NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

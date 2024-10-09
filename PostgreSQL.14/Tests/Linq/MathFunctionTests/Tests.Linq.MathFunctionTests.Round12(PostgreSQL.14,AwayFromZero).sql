@@ -2,11 +2,12 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t_1.c1
+	t_1."MoneyValue"
 FROM
 	(
 		SELECT
-			Round(t."MoneyValue", 1) as c1
+			ROUND(t."MoneyValue", 1) as c1,
+			t."MoneyValue"
 		FROM
 			"LinqDataTypes" t
 	) t_1

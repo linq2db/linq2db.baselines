@@ -6,7 +6,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	startsWith(r.Diagnosis, 'Hall')
+	startsWith(r.Diagnosis, 'Hall') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,7 +16,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	startsWith(r.Diagnosis, 'hall')
+	startsWith(r.Diagnosis, 'hall') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -26,7 +26,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	startsWith(lowerUTF8(r.Diagnosis), 'hall')
+	startsWith(lowerUTF8(r.Diagnosis), 'hall') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -36,5 +36,5 @@ SELECT
 FROM
 	Patient r
 WHERE
-	startsWith(lowerUTF8(r.Diagnosis), 'hall')
+	startsWith(lowerUTF8(r.Diagnosis), 'hall') = true
 

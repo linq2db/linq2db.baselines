@@ -2,10 +2,19 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[Gender],
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
+	[t1].[Gender],
 	[t1].[LastName],
-	[t1].[FirstName]
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
+	[t1].[FirstName],
+	[t1].[Gender]
 FROM
 	[Person] [t1]
 WHERE
@@ -16,10 +25,19 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[Gender],
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
+	[t1].[Gender],
 	[t1].[LastName],
-	[t1].[FirstName]
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
+	[t1].[FirstName],
+	[t1].[Gender]
 FROM
 	[Person] [t1]
 WHERE

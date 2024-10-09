@@ -56,7 +56,7 @@ SELECT
 		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
 		ELSE NULL
 	END),
-	avgOrNull(DISTINCT g_1.DataValue),
+	toDecimal128(avgOrNull(DISTINCT g_1.DataValue), toUInt8(10)),
 	avgOrNull(DISTINCT CASE
 		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
 		ELSE NULL

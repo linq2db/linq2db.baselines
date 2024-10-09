@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @defValue Integer -- Int32
-SET     @defValue = 10
 
 SELECT
-	Coalesce(MIN(gr."ParentID"), :defValue)
+	MIN(gr."ParentID")
 FROM
 	"Parent" gr
 

@@ -77,7 +77,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	(x."Name" <> 'Special' OR x."Name" IS NULL)
+	x."Name" <> 'Special' OR x."Name" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -135,7 +135,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	(x."Name" <> 'Special' OR x."Name" IS NULL)
+	x."Name" <> 'Special' OR x."Name" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

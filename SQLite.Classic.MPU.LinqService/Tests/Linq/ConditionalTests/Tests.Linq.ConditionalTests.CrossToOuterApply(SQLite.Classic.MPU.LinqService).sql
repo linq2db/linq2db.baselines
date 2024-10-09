@@ -2,7 +2,10 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
+	CASE
+		WHEN [p].[ParentID] = 2 THEN 1
+		ELSE 0
+	END,
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[t2].[ParentID],

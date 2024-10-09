@@ -2,7 +2,6 @@
 -- SqlServer.2019
 
 SELECT
-	[t2].[c1],
 	COUNT(*)
 FROM
 	(

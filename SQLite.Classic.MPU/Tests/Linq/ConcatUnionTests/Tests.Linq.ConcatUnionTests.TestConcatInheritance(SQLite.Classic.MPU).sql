@@ -34,24 +34,39 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	0,
-	[t1].[Discr],
-	[t1].[EntityId],
-	[t1].[Value]
+	CASE
+		WHEN [t3].[projection__set_id__] = 0 THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [t3].[Discr] = 1 THEN 1
+		ELSE 0
+	END,
+	[t3].[EntityId],
+	[t3].[Discr],
+	[t3].[Value_1]
 FROM
-	[ConcatTest] [t1]
-WHERE
-	[t1].[Discr] <> 1
-UNION ALL
-SELECT
-	1,
-	[t2].[Discr],
-	[t2].[EntityId],
-	[t2].[Value]
-FROM
-	[ConcatTest] [t2]
-WHERE
-	[t2].[Discr] = 1
+	(
+		SELECT
+			[t1].[EntityId],
+			[t1].[Discr],
+			[t1].[Value] as [Value_1],
+			CAST(0 AS INTEGER) as [projection__set_id__]
+		FROM
+			[ConcatTest] [t1]
+		WHERE
+			[t1].[Discr] <> 1
+		UNION ALL
+		SELECT
+			[t2].[EntityId],
+			[t2].[Discr],
+			[t2].[Value] as [Value_1],
+			CAST(1 AS INTEGER) as [projection__set_id__]
+		FROM
+			[ConcatTest] [t2]
+		WHERE
+			[t2].[Discr] = 1
+	) [t3]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

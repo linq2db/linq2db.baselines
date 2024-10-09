@@ -8,7 +8,7 @@ SELECT
 		FROM
 			"Child" c_1
 		WHERE
-			t1."ParentID" = c_1."ParentID"
+			p."ParentID" = c_1."ParentID"
 	),
 	(
 		SELECT
@@ -16,8 +16,8 @@ SELECT
 		FROM
 			"GrandChild" g_1
 		WHERE
-			t1."ParentID" = g_1."ParentID"
+			p."ParentID" = g_1."ParentID"
 	)
 FROM
-	"Parent" t1
+	"Parent" p
 

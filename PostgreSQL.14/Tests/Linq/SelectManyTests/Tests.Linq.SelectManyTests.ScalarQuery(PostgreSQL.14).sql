@@ -3,10 +3,10 @@
 
 SELECT
 	p2."PersonID",
-	t1."FirstName"
+	p1."FirstName"
 FROM
-	"Person" t1,
+	"Person" p1,
 	"Person" p2
 WHERE
-	t1."PersonID" = p2."PersonID"
+	p1."PersonID" = p2."PersonID"
 

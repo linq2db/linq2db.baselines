@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	Gender = 'O'
 WHERE
-	startsWith(FirstName, 'UpdateComplex')
+	startsWith(FirstName, 'UpdateComplex') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

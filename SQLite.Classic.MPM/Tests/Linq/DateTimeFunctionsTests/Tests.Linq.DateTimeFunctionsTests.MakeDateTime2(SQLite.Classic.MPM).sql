@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', '2010-' || printf('%02d', [t].[ID]) || '-01 20:35:44.000')
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			strftime('%Y-%m-%d %H:%M:%f', '2010-' || printf('%02d', [t].[ID]) || '-01 20:35:44.000') as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	CAST(strftime('%Y', strftime('%Y-%m-%d %H:%M:%f', '2010-' || printf('%02d', [t].[ID]) || '-01 20:35:44.000')) AS INTEGER) = 2010
+	CAST(strftime('%Y', [t_1].[c1]) AS INTEGER) = 2010
 

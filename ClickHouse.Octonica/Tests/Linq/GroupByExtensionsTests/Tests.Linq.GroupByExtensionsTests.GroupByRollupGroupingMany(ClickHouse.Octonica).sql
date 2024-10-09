@@ -39,7 +39,10 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	GROUPING(g_2.Id1, g_2.Id2),
+	CASE
+		WHEN GROUPING(g_2.Id1, g_2.Id2) = 1 THEN true
+		ELSE false
+	END,
 	g_2.Id1,
 	COUNT(*)
 FROM

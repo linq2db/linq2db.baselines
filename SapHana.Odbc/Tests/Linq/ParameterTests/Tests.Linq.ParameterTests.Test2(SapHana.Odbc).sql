@@ -13,7 +13,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	("p"."ParentID" = ? OR "p"."ParentID" >= ? OR "p"."ParentID" >= ?)
+	"p"."ParentID" = ? OR "p"."ParentID" >= ? OR "p"."ParentID" >= ?
 ORDER BY
 	"p"."ParentID"
 LIMIT 1
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	("p"."ParentID" = ? OR "p"."ParentID" >= ? OR "p"."ParentID" >= ?)
+	"p"."ParentID" = ? OR "p"."ParentID" >= ? OR "p"."ParentID" >= ?
 ORDER BY
 	"p"."ParentID"
 LIMIT 1

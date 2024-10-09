@@ -29,11 +29,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Boolean
+SET     @p = 1
 DECLARE @take  -- Int32
 SET     @take = 1
 
 SELECT
-	1
+	@p
 FROM
 	[SelectExpressionTable] [t1]
 LIMIT @take

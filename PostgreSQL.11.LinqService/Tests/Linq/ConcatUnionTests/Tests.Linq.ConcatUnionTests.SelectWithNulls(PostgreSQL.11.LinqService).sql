@@ -17,7 +17,7 @@ SELECT
 	NULL::Int,
 	NULL::decimal,
 	NULL::TimeStamp,
-	NULL,
+	NULL::Boolean,
 	NULL::uuid,
 	NULL::bytea,
 	NULL::SmallInt,

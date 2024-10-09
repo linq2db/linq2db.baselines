@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS Float)
+	CAST(CAST([t].[MoneyValue] AS Float) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

@@ -151,13 +151,13 @@ SET     @take = 2
 SELECT TOP (@take)
 	[t2].[Id],
 	[t2].[OwnerStr],
-	[t1].[Id],
+	[t1].[Other],
 	[t1].[StrValue]
 FROM
 	[SomeEntity] [t2] WITH (NOLOCK)
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Other].[Id],
+				[a_Other].[Id] as [Other],
 				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]

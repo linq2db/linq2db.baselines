@@ -4,7 +4,7 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[CustomerID],
 	[d].[CompanyName],
 	[d].[ContactName],
@@ -19,7 +19,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[c1] as [Key_1]
 		FROM
 			(
 				SELECT
@@ -42,7 +42,7 @@ FROM
 			[t2].[c1]
 	) [m_1]
 		INNER JOIN [Customers] [d] ON CASE
-			WHEN [m_1].[c1] = 1 THEN 1
+			WHEN [m_1].[Key_1] = 1 THEN 1
 			ELSE 0
 		END = CASE
 			WHEN (

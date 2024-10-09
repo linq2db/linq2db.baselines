@@ -20,7 +20,7 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	MoneyValue = toDecimal64('2000', 10),
+	MoneyValue = toDecimal64('2000', 4),
 	SmallIntValue = toInt16(200)
 WHERE
 	ID = 1001

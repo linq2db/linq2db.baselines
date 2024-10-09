@@ -7,5 +7,8 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" <> 1
+	CASE
+		WHEN p."ParentID" = 1 THEN False
+		ELSE True
+	END
 

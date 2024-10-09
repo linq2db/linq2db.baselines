@@ -137,35 +137,35 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id1],
+	[m_1].[Key_1],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[g_1].[Id1]
+			[g_1].[Id1] as [Key_1]
 		FROM
 			[MasterManyId] [g_1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id1],
+	[m_1].[Key_1],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[g_1].[Id1]
+			[g_1].[Id1] as [Key_1]
 		FROM
 			[MasterManyId] [g_1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Id1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
 
 BeforeExecute
 DisposeTransaction

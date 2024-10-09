@@ -16,7 +16,7 @@ FROM
 				WHEN x.FirstName = '123' THEN 'Y'
 				ELSE 'N'
 			END as OK,
-			'A' as FirstName
+			toString('A') as FirstName
 		FROM
 			Person x
 		WHERE
@@ -24,7 +24,7 @@ FROM
 		UNION DISTINCT
 		SELECT
 			x_1.PersonID as ID,
-			'N' as OK,
+			toString('N') as OK,
 			x_1.FirstName as FirstName
 		FROM
 			Person x_1

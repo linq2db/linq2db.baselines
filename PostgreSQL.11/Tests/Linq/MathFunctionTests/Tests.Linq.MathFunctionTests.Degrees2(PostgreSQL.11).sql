@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t_1.c1
+	Floor(t_1.c1)
 FROM
 	(
 		SELECT

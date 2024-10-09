@@ -386,32 +386,50 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	a_Book.BookId,
-	a_Book.Discriminator,
-	a_Book.BookId as BookId_1,
-	a_Book.BookName,
-	a_Book.NovelScore,
-	a_Book.RomanScore
+	t3.BookId,
+	CASE
+		WHEN t3.Discriminator = 'Novel' THEN true
+		ELSE false
+	END,
+	t3.BookId_1,
+	t3.BookName,
+	t3.NovelScore,
+	CASE
+		WHEN t3.Discriminator = 'Roman' THEN true
+		ELSE false
+	END,
+	t3.RomanScore,
+	t3.Discriminator
 FROM
-	Author t1
-		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
-WHERE
-	a_Book.Discriminator = 'Roman'
-UNION DISTINCT
-SELECT
-	a_Book_1.BookId as BookId,
-	a_Book_1.Discriminator as Discriminator,
-	a_Book_1.BookId as BookId_1,
-	a_Book_1.BookName as BookName,
-	a_Book_1.NovelScore as NovelScore,
-	a_Book_1.RomanScore as RomanScore
-FROM
-	Author t2
-		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
-WHERE
-	a_Book_1.Discriminator = 'Novel'
+	(
+		SELECT
+			a_Book.BookId as BookId,
+			a_Book.BookId as BookId_1,
+			a_Book.Discriminator as Discriminator,
+			a_Book.BookName as BookName,
+			a_Book.RomanScore as RomanScore,
+			a_Book.NovelScore as NovelScore
+		FROM
+			Author t1
+				INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
+				LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+		WHERE
+			a_Book.Discriminator = 'Roman'
+		UNION DISTINCT
+		SELECT
+			a_Book_1.BookId as BookId,
+			a_Book_1.BookId as BookId_1,
+			a_Book_1.Discriminator as Discriminator,
+			a_Book_1.BookName as BookName,
+			a_Book_1.RomanScore as RomanScore,
+			a_Book_1.NovelScore as NovelScore
+		FROM
+			Author t2
+				INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
+				LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+		WHERE
+			a_Book_1.Discriminator = 'Novel'
+	) t3
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -419,10 +437,18 @@ BeforeExecute
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
-	a_Book.Discriminator,
+	CASE
+		WHEN a_Book.Discriminator = 'Novel' THEN true
+		ELSE false
+	END,
 	a_Book.BookName,
 	a_Book.NovelScore,
-	a_Book.RomanScore
+	CASE
+		WHEN a_Book.Discriminator = 'Roman' THEN true
+		ELSE false
+	END,
+	a_Book.RomanScore,
+	a_Book.Discriminator
 FROM
 	Author m_1
 		INNER JOIN BookAuthor d ON d.FkAuthorId = m_1.AuthorId

@@ -9,7 +9,7 @@ SELECT
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			[t1].[CustomerID] = [a_Customer].[CustomerID]
+			[c_1].[CustomerID] = [a_Customer].[CustomerID]
 	),
 	(
 		SELECT
@@ -17,8 +17,8 @@ SELECT
 		FROM
 			[Employees] [e]
 		WHERE
-			([t1].[City] = [e].[City] OR [t1].[City] IS NULL AND [e].[City] IS NULL)
+			[c_1].[City] = [e].[City] OR [c_1].[City] IS NULL AND [e].[City] IS NULL
 	)
 FROM
-	[Customers] [t1]
+	[Customers] [c_1]
 

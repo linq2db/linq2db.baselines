@@ -84,7 +84,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	'Id',
 	[it].[Id],
 	SUM([a_ActualStage].[Id])
 FROM

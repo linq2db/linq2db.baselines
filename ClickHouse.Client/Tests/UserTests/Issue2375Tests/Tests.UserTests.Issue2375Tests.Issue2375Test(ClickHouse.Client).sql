@@ -84,8 +84,8 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.Status,
-	m_1.ResourceLabel,
+	m_1.Key_1,
+	m_1.Key_2,
 	t2.Id,
 	t2.Status,
 	t2.ResourceID,
@@ -93,18 +93,18 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1.Status as Status,
-			t1.ResourceLabel as ResourceLabel
+			t1.Key_1 as Key_1,
+			t1.Key_2 as Key_2
 		FROM
 			(
 				SELECT
-					grp.Status as Status,
-					lc.ResourceLabel as ResourceLabel
+					inventory.Status as Key_1,
+					lc.ResourceLabel as Key_2
 				FROM
-					InventoryResourceDTO grp
-						INNER JOIN WmsLoadCarrierDTO lc ON grp.ResourceID = lc.Id
+					InventoryResourceDTO inventory
+						INNER JOIN WmsLoadCarrierDTO lc ON inventory.ResourceID = lc.Id
 				GROUP BY
-					grp.Status,
+					inventory.Status,
 					lc.ResourceLabel
 				HAVING
 					COUNT(*) > 1
@@ -120,7 +120,7 @@ FROM
 			FROM
 				InventoryResourceDTO d
 					INNER JOIN WmsLoadCarrierDTO lc_1 ON d.ResourceID = lc_1.Id
-		) t2 ON m_1.Status = t2.Status AND (m_1.ResourceLabel = t2.ResourceLabel OR m_1.ResourceLabel IS NULL AND t2.ResourceLabel IS NULL)
+		) t2 ON m_1.Key_1 = t2.Status AND (m_1.Key_2 = t2.ResourceLabel OR m_1.Key_2 IS NULL AND t2.ResourceLabel IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

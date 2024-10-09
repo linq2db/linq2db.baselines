@@ -2,7 +2,6 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	it_1.IsActive,
 	it_1.Other
 FROM
 	(

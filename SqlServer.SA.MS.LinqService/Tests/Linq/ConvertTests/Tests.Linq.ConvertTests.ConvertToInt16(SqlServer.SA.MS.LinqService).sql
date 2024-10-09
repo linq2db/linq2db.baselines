@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(Floor(IIF([p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND Floor([p].[MoneyValue]) % 2 = 0, Floor([p].[MoneyValue]), Round([p].[MoneyValue], 0))) AS SmallInt) as [c1]
+			CAST(Floor(IIF([p].[MoneyValue] - FLOOR([p].[MoneyValue]) = 0.5 AND (FLOOR([p].[MoneyValue]) % 2) = 0, FLOOR([p].[MoneyValue]), ROUND([p].[MoneyValue], 0))) AS SmallInt) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [p_1]

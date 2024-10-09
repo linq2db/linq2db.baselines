@@ -3,7 +3,7 @@
 
 SELECT
 	t1.ChildID,
-	avgOrNull(t1.ParentID)
+	avg(t1.ParentID)
 FROM
 	Child t1
 GROUP BY

@@ -8,19 +8,20 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[Diagnosis]
+				WHEN [t1].[StatusName] IS NOT NULL THEN [t1].[Diagnosis]
 				ELSE 'abc'
 			END as [StatusName],
 			CASE
-				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID]
+				WHEN [t1].[StatusName] IS NOT NULL THEN [t1].[PersonID]
 				ELSE [x].[PersonID]
 			END as [Id]
 		FROM
 			[Person] [x]
 				LEFT JOIN (
 					SELECT
-						[y].[PersonID],
+						[y].[PersonID] as [StatusName],
 						[y].[Diagnosis],
+						[y].[PersonID],
 						ROW_NUMBER() OVER (PARTITION BY [y].[PersonID] ORDER BY [y].[PersonID]) as [rn]
 					FROM
 						[Patient] [y]

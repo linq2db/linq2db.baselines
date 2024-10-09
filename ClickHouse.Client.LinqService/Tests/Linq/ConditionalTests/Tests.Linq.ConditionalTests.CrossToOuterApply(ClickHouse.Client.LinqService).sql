@@ -2,7 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.ParentID,
+	CASE
+		WHEN p.ParentID = 2 THEN true
+		ELSE false
+	END,
 	t1.ParentID,
 	t1.ChildID,
 	t2.ParentID,

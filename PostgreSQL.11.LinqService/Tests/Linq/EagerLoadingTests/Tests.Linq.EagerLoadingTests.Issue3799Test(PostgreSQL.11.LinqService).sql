@@ -191,7 +191,7 @@ FROM
 					LIMIT 1
 				) t1 ON 1=1
 	) m_1
-		INNER JOIN "Test3799Item" d ON (m_1."Id" = d."ParentId" OR m_1."Id" IS NULL AND d."ParentId" IS NULL)
+		INNER JOIN "Test3799Item" d ON m_1."Id" = d."ParentId" OR m_1."Id" IS NULL AND d."ParentId" IS NULL
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

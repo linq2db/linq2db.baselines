@@ -65,7 +65,7 @@ FROM
 			FROM
 				[Issue4160City] [cc]
 			WHERE
-				([cc].[Code] = [t1].[Code] OR [cc].[Code] IS NULL AND [t1].[Code] IS NULL)
+				[cc].[Code] = [t1].[Code] OR [cc].[Code] IS NULL AND [t1].[Code] IS NULL
 		) [cc_1]
 
 BeforeExecute

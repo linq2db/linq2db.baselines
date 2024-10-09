@@ -47,7 +47,7 @@ SELECT
 FROM
 	"User" x
 WHERE
-	(x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org_user' AND x."OrganizationId" = :Id_1)
+	x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org_user' AND x."OrganizationId" = :Id_1
 ORDER BY
 	x."Id"
 
@@ -63,7 +63,8 @@ SELECT
 FROM
 	"User" x
 WHERE
-	(x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND x."Id" = :OrganizationId OR x."Type" = 'org_user' AND x."OrganizationId" = :OrganizationId)
+	x."Type" = 'org' AND x."Id" = :Id OR x."Type" = 'org' AND x."Id" = :OrganizationId OR
+	x."Type" = 'org_user' AND x."OrganizationId" = :OrganizationId
 ORDER BY
 	x."Id"
 

@@ -3,9 +3,7 @@
 
 SELECT
 	g_1.LastName,
-	0,
-	toString(NULL),
-	NULL
+	'M'
 FROM
 	Person g_1
 GROUP BY
@@ -16,9 +14,7 @@ BeforeExecute
 
 SELECT
 	g_1.LastName,
-	0,
-	toString(NULL),
-	NULL
+	'M'
 FROM
 	Person g_1
 GROUP BY

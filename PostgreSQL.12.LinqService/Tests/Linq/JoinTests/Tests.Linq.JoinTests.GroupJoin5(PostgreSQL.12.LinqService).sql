@@ -5,7 +5,7 @@ SELECT
 	t1."ParentID",
 	t1."ChildID"
 FROM
-	"Parent" t2
+	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
 				ch."ParentID",
@@ -13,13 +13,13 @@ FROM
 			FROM
 				"Child" ch
 			WHERE
-				t2."ParentID" = ch."ParentID"
+				p."ParentID" = ch."ParentID"
 			ORDER BY
 				ch."ChildID"
 			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	t2."ParentID" >= 1
+	p."ParentID" >= 1
 ORDER BY
-	t2."ParentID"
+	p."ParentID"
 

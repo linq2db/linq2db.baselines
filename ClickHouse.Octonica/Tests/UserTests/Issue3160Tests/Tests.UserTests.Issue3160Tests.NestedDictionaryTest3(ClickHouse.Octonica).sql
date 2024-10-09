@@ -99,7 +99,6 @@ BeforeExecute
 
 SELECT
 	t2.not_null,
-	t2.Id3,
 	t2.Id3
 FROM
 	TABLE1 t1_1

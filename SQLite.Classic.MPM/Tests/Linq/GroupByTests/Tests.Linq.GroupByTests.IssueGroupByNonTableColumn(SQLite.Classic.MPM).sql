@@ -11,12 +11,12 @@ FROM
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					CAST(1 AS INTEGER) as [c1]
 				FROM
 					[Person] [t1]
 				UNION ALL
 				SELECT
-					2 as [c1]
+					CAST(2 AS INTEGER) as [c1]
 				FROM
 					[Person] [t2]
 			) [t3]

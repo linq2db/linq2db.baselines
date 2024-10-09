@@ -4,7 +4,7 @@
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
-	"p"."MiddleName"
+	Coalesce("p"."MiddleName", 'None')
 FROM
 	"Person" "p"
 WHERE

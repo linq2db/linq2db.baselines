@@ -2,8 +2,11 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 2
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 
 SELECT
+	?,
 	"c_1"."ChildID"
 FROM
 	"Child" "c_1"

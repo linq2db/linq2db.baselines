@@ -19,13 +19,13 @@ BeforeExecute
 
 SELECT
 	"p"."Id",
-	'str1'
+	CAST('str1' AS VarChar(5000))
 FROM
 	"Issue3360Table" "p"
 UNION ALL
 SELECT
 	"p_1"."Id",
-	'str2'
+	CAST('str2' AS VarChar(5000))
 FROM
 	"Issue3360Table" "p_1"
 
@@ -34,13 +34,13 @@ BeforeExecute
 
 SELECT
 	"p"."Id",
-	'str2'
+	CAST('str2' AS VarChar(5000))
 FROM
 	"Issue3360Table" "p"
 UNION ALL
 SELECT
 	"p_1"."Id",
-	'str1'
+	CAST('str1' AS VarChar(5000))
 FROM
 	"Issue3360Table" "p_1"
 

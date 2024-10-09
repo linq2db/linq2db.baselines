@@ -351,7 +351,7 @@ SELECT
 		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
 		ELSE NULL
 	END),
-	AVG(DISTINCT g_1."DataValue"),
+	AVG(DISTINCT g_1."DataValue")::decimal,
 	AVG(DISTINCT CASE
 		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
 		ELSE NULL

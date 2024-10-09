@@ -384,12 +384,12 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
-	-1
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
@@ -428,12 +428,13 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1,
 	[t1].[TotalCount]
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
@@ -449,7 +450,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT
@@ -469,7 +470,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 78
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT

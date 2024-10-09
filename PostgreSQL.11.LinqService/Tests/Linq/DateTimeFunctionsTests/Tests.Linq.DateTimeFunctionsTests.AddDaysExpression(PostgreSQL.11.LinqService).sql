@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 5
+DECLARE @Date Integer -- Int32
+SET     @Date = 5
 
 SELECT
-	Date_Trunc('day', t."DateTimeValue" + :p * Interval '1 Day')
+	Date_Trunc('day', t."DateTimeValue" + :Date * Interval '1 Day')
 FROM
 	"LinqDataTypes" t
 

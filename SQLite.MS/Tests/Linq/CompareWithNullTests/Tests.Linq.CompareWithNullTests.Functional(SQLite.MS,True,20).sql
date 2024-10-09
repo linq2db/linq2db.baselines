@@ -49,7 +49,8 @@ SELECT
 FROM
 	[Src] [x]
 WHERE
-	([x].[EnumA] < [x].[EnumB] OR [x].[EnumA] IS NULL OR [x].[EnumB] IS NULL)
+	[x].[EnumA] < [x].[EnumB] OR [x].[EnumA] IS NULL OR
+	[x].[EnumB] IS NULL
 ORDER BY
 	[x].[Id]
 

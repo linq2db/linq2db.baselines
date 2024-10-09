@@ -52,7 +52,7 @@ FROM
 	table1 row1
 		INNER JOIN table2 row2 ON row1.Id = row2.Table1Id
 WHERE
-	startsWith(row2.Field2, 'test')
+	startsWith(row2.Field2, 'test') = true
 UNION DISTINCT
 SELECT
 	row1_1.Id as Id
@@ -67,7 +67,7 @@ SELECT
 FROM
 	table1 row1_2
 WHERE
-	startsWith(row1_2.Field1, 'test')
+	startsWith(row1_2.Field1, 'test') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -78,7 +78,7 @@ FROM
 	table1 row1
 		INNER JOIN table2 row2 ON row1.Id = row2.Table1Id
 WHERE
-	startsWith(row2.Field2, 'test')
+	startsWith(row2.Field2, 'test') = true
 UNION DISTINCT
 SELECT
 	row1_1.Id as Id
@@ -93,7 +93,7 @@ SELECT
 FROM
 	table1 row1_2
 WHERE
-	startsWith(row1_2.Field1, 'test')
+	startsWith(row1_2.Field1, 'test') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)

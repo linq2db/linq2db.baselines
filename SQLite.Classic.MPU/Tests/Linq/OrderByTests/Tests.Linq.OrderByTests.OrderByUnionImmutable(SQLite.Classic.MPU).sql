@@ -1,30 +1,36 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @OrderElement  -- Int32
-SET     @OrderElement = 1
 DECLARE @param  -- Int32
 SET     @param = 2
 
 SELECT
 	[t1].[ChildID],
 	[t1].[ParentID],
-	[t1].[OrderElement]
+	CASE
+		WHEN [t1].[c1] IS NOT NULL THEN [t1].[c1]
+		ELSE [t1].[c2]
+	END
 FROM
 	(
 		SELECT
 			[ch].[ChildID],
 			[ch].[ParentID],
-			@OrderElement as [OrderElement]
+			CAST(1 AS TinyInt) as [c1],
+			NULL as [c2]
 		FROM
 			[Child] [ch]
 		UNION ALL
 		SELECT
 			[ch_1].[ChildID],
 			[ch_1].[ParentID],
-			@param as [OrderElement]
+			NULL as [c1],
+			@param as [c2]
 		FROM
 			[Child] [ch_1]
 	) [t1]
 ORDER BY
-	[t1].[OrderElement]
+	CASE
+		WHEN [t1].[c1] IS NOT NULL THEN [t1].[c1]
+		ELSE [t1].[c2]
+	END
 

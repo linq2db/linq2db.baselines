@@ -35,37 +35,58 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
-	[x].[Id],
-	[x].[DoubleValue],
-	[x].[StrValue],
-	[x].[IntValue]
+	CASE
+		WHEN [t1].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
+	[t1].[Id],
+	[t1].[DoubleValue],
+	CASE
+		WHEN [t1].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
+	[t1].[StrValue],
+	CASE
+		WHEN [t1].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
+	[t1].[IntValue],
+	[t1].[Discriminator]
 FROM
-	[SetEntityBase] [x]
-WHERE
-	[x].[Id] = 1
-UNION ALL
-SELECT
-	[x_1].[Discriminator],
-	[x_1].[Id],
-	[x_1].[DoubleValue],
-	[x_1].[StrValue],
-	[x_1].[IntValue]
-FROM
-	[SetEntityBase] [x_1]
-WHERE
-	[x_1].[Id] = 2
-UNION ALL
-SELECT
-	[x_2].[Discriminator],
-	[x_2].[Id],
-	[x_2].[DoubleValue],
-	[x_2].[StrValue],
-	[x_2].[IntValue]
-FROM
-	[SetEntityBase] [x_2]
-WHERE
-	[x_2].[Id] = 3
+	(
+		SELECT
+			[x].[Id],
+			[x].[Discriminator],
+			[x].[IntValue],
+			[x].[StrValue],
+			[x].[DoubleValue]
+		FROM
+			[SetEntityBase] [x]
+		WHERE
+			[x].[Id] = 1
+		UNION ALL
+		SELECT
+			[x_1].[Id],
+			[x_1].[Discriminator],
+			[x_1].[IntValue],
+			[x_1].[StrValue],
+			[x_1].[DoubleValue]
+		FROM
+			[SetEntityBase] [x_1]
+		WHERE
+			[x_1].[Id] = 2
+		UNION ALL
+		SELECT
+			[x_2].[Id],
+			[x_2].[Discriminator],
+			[x_2].[IntValue],
+			[x_2].[StrValue],
+			[x_2].[DoubleValue]
+		FROM
+			[SetEntityBase] [x_2]
+		WHERE
+			[x_2].[Id] = 3
+	) [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

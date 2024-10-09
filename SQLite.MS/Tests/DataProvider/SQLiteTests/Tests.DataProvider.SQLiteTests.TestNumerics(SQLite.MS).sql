@@ -2,61 +2,91 @@
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'bigint')
+	CASE
+		WHEN CAST(1 as 'bigint') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'bit')
+	CASE
+		WHEN CAST(1 as 'bit') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'decimal')
+	CASE
+		WHEN CAST(1 as 'decimal') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'int')
+	CASE
+		WHEN CAST(1 as 'int') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'money')
+	CASE
+		WHEN CAST(1 as 'money') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'numeric')
+	CASE
+		WHEN CAST(1 as 'numeric') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'smallint')
+	CASE
+		WHEN CAST(1 as 'smallint') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'tinyint')
+	CASE
+		WHEN CAST(1 as 'tinyint') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'float')
+	CASE
+		WHEN CAST(1 as 'float') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	CAST(1 as 'real')
+	CASE
+		WHEN CAST(1 as 'real') = 1 THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.MS SQLite

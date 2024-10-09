@@ -38,7 +38,7 @@ SET
 FROM
 	(
 		SELECT
-			eg."TotalId",
+			eg."TotalId" as "Key_1",
 			SUM(eg."Sum") as "SumAggr"
 		FROM
 			"Entry" eg
@@ -46,7 +46,7 @@ FROM
 			eg."TotalId"
 	) r
 WHERE
-	"Total"."Label" = 'spendings' AND "Total"."Id" = r."TotalId"
+	"Total"."Label" = 'spendings' AND "Total"."Id" = r."Key_1"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

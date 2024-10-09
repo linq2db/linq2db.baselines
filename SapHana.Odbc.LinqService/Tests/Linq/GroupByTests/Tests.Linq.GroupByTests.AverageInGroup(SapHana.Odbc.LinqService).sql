@@ -351,7 +351,7 @@ SELECT
 		WHEN MOD("g_1"."DataValue", 2) = 0 THEN "g_1"."DataValue"
 		ELSE NULL
 	END),
-	AVG(DISTINCT "g_1"."DataValue"),
+	CAST(AVG(DISTINCT "g_1"."DataValue") AS Decimal),
 	AVG(DISTINCT CASE
 		WHEN MOD("g_1"."DataValue", 2) = 0 THEN "g_1"."DataValue"
 		ELSE NULL

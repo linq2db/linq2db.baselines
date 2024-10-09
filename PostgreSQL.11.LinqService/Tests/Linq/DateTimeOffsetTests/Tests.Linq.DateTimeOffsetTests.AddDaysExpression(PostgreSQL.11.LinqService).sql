@@ -286,11 +286,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 5
+DECLARE @Date Integer -- Int32
+SET     @Date = 5
 
 SELECT
-	Date_Trunc('day', (t."TransactionDate" + :p * Interval '1 Day') AT TIME ZONE 'UTC')::Date
+	Date_Trunc('day', (t."TransactionDate" + :Date * Interval '1 Day') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 

@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p_1].[c1]
+	CAST([p_1].[c1] AS INTEGER)
 FROM
 	(
 		SELECT

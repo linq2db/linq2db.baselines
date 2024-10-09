@@ -68,10 +68,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value4___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value4___'
 
 SELECT
 	"s"."Id"
@@ -83,8 +83,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
 
 SELECT
 	"s"."Id"
@@ -96,10 +96,10 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value2___'
 
 SELECT
 	"s"."Id"
@@ -111,8 +111,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
+DECLARE @NotIn VarChar(12) -- AnsiString
+SET     @NotIn = '___Value2___'
 
 SELECT
 	"s"."Id"
@@ -124,10 +124,10 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
+DECLARE @NotIn VarChar(12) -- AnsiString
+SET     @NotIn = '___Value3___'
+DECLARE @NotIn VarChar(12) -- AnsiString
+SET     @NotIn = '___Value2___'
 
 SELECT
 	"s"."Id"

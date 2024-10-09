@@ -40,10 +40,6 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN l."Value1" IS NOT NULL THEN True
-		ELSE False
-	END,
 	l."Value1"
 FROM
 	"Table1788" p

@@ -237,7 +237,10 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	GROUPING("g_2"."Id1"),
+	CASE
+		WHEN GROUPING("g_2"."Id1") = 1 THEN 1
+		ELSE 0
+	END,
 	"g_2"."Id1",
 	COUNT(*)
 FROM

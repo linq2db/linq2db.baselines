@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @TestField  -- Int64
+SET     @TestField = 12
 
 SELECT
 	"entity"."ID",
@@ -32,7 +34,7 @@ SELECT
 FROM
 	"LinqDataTypes" "entity"
 WHERE
-	"entity"."BigIntValue" = 12
+	"entity"."BigIntValue" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

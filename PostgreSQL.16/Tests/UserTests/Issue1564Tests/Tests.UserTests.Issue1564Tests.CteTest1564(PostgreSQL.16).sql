@@ -35,7 +35,7 @@ AS
 		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		0
+		0::Int
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
@@ -76,7 +76,7 @@ AS
 		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		0
+		0::Int
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL

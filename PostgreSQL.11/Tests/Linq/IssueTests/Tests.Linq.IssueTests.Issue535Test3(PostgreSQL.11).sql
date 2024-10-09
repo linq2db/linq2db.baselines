@@ -24,7 +24,7 @@ SELECT
 	cb."Id",
 	cb."Name",
 	cb."ContactEmail",
-	cb."Enabled"
+	Coalesce(cb."Enabled", False)
 FROM
 	"CustomerBase" cb
 WHERE

@@ -33,7 +33,6 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	N'Title',
 	[it].[Title],
 	MIN([it].[YearsExperience])
 FROM

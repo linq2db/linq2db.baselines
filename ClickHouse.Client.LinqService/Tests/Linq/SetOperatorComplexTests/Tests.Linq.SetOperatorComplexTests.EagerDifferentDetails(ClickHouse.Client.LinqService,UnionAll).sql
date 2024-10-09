@@ -386,22 +386,18 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.BookId,
+	m_1.Id,
 	a_Author.AuthorId,
 	a_Author.AuthorName
 FROM
 	(
 		SELECT DISTINCT
-			t3.BookId as BookId
+			t3.Id as Id
 		FROM
 			(
 				SELECT
-					a_Book.BookId as Id,
-					a_Book.BookName as BookName,
-					a_Book.BookId as BookId,
-					toInt32(NULL) as c1,
-					toInt32(NULL) as c2,
-					0 as projection__set_id__
+					toInt32(0) as projection__set_id__,
+					a_Book.BookId as Id
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
@@ -410,12 +406,8 @@ FROM
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
 				SELECT
-					a_Book_1.BookId as Id,
-					a_Book_1.BookName as BookName,
-					toInt32(NULL) as BookId,
-					a_Book_1.BookId as c1,
-					a_Book_1.BookId as c2,
-					1 as projection__set_id__
+					toInt32(1) as projection__set_id__,
+					toInt32(NULL) as Id
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
@@ -426,7 +418,7 @@ FROM
 		WHERE
 			t3.projection__set_id__ = 0
 	) m_1
-		INNER JOIN BookAuthor d ON d.FkBookId = m_1.BookId
+		INNER JOIN BookAuthor d ON d.FkBookId = m_1.Id
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 
 BeforeExecute
@@ -434,23 +426,17 @@ BeforeExecute
 
 SELECT
 	m_1.c1,
-	m_1.c2,
 	a_Author.AuthorId,
 	a_Author.AuthorName
 FROM
 	(
 		SELECT DISTINCT
-			t3.c1 as c1,
-			t3.c2 as c2
+			t3.c1 as c1
 		FROM
 			(
 				SELECT
-					a_Book.BookId as Id,
-					a_Book.BookName as BookName,
-					a_Book.BookId as BookId,
-					toInt32(NULL) as c1,
-					toInt32(NULL) as c2,
-					0 as projection__set_id__
+					toInt32(0) as projection__set_id__,
+					toInt32(NULL) as c1
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
@@ -459,12 +445,8 @@ FROM
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
 				SELECT
-					a_Book_1.BookId as Id,
-					a_Book_1.BookName as BookName,
-					toInt32(NULL) as BookId,
-					a_Book_1.BookId as c1,
-					a_Book_1.BookId as c2,
-					1 as projection__set_id__
+					toInt32(1) as projection__set_id__,
+					a_Book_1.BookId as c1
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
@@ -475,41 +457,51 @@ FROM
 		WHERE
 			t3.projection__set_id__ = 1
 	) m_1
-		INNER JOIN BookAuthor d ON d.FkBookId = m_1.c1 AND m_1.c2 IS NOT NULL
+		INNER JOIN BookAuthor d ON d.FkBookId = m_1.c1
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 WHERE
-	(a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL)
+	a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	a_Book.BookId as Id,
-	a_Book.BookName,
-	0 as projection__set_id__,
-	a_Book.BookId,
-	toInt32(NULL) as c1,
-	toInt32(NULL) as c2
+	t3.Id,
+	t3.BookName,
+	CASE
+		WHEN t3.projection__set_id__ = 0 THEN true
+		ELSE false
+	END,
+	t3.Id_1,
+	t3.c1
 FROM
-	Author t1
-		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
-WHERE
-	a_Book.Discriminator = 'Roman'
-UNION ALL
-SELECT
-	a_Book_1.BookId as Id,
-	a_Book_1.BookName as BookName,
-	1 as projection__set_id__,
-	toInt32(NULL) as BookId,
-	a_Book_1.BookId as c1,
-	a_Book_1.BookId as c2
-FROM
-	Author t2
-		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
-WHERE
-	a_Book_1.Discriminator = 'Novel'
+	(
+		SELECT
+			a_Book.BookId as Id,
+			a_Book.BookName as BookName,
+			a_Book.BookId as Id_1,
+			toInt32(NULL) as c1,
+			toInt32(0) as projection__set_id__
+		FROM
+			Author t1
+				INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
+				LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+		WHERE
+			a_Book.Discriminator = 'Roman'
+		UNION ALL
+		SELECT
+			a_Book_1.BookId as Id,
+			a_Book_1.BookName as BookName,
+			toInt32(NULL) as Id_1,
+			a_Book_1.BookId as c1,
+			toInt32(1) as projection__set_id__
+		FROM
+			Author t2
+				INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
+				LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+		WHERE
+			a_Book_1.Discriminator = 'Novel'
+	) t3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -543,10 +535,18 @@ BeforeExecute
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
-	a_Book.Discriminator,
+	CASE
+		WHEN a_Book.Discriminator = 'Novel' THEN true
+		ELSE false
+	END,
 	a_Book.BookName,
 	a_Book.NovelScore,
-	a_Book.RomanScore
+	CASE
+		WHEN a_Book.Discriminator = 'Roman' THEN true
+		ELSE false
+	END,
+	a_Book.RomanScore,
+	a_Book.Discriminator
 FROM
 	Author m_1
 		INNER JOIN BookAuthor d ON d.FkAuthorId = m_1.AuthorId

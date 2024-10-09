@@ -32,7 +32,6 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	'Title',
 	[it].[Title],
 	SUM([it].[YearsExperience])
 FROM

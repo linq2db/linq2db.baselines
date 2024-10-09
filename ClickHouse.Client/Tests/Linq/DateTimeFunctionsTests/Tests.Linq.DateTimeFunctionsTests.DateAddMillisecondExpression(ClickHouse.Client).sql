@@ -10,6 +10,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	toFloat64(226),
 	t.DateTimeValue
 FROM
 	LinqDataTypes t

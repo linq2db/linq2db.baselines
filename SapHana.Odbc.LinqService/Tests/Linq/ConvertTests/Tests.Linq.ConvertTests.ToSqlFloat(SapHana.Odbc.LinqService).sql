@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CAST("t"."MoneyValue" AS Double)
+	CAST(CAST("t"."MoneyValue" AS Double) AS Integer)
 FROM
 	"LinqDataTypes" "t"
 

@@ -38,7 +38,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	GROUPING(g_2."Id1"),
+	CASE
+		WHEN GROUPING(g_2."Id1") = 1 THEN True
+		ELSE False
+	END,
 	g_2."Id1",
 	COUNT(*)
 FROM

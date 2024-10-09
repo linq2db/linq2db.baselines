@@ -52,7 +52,7 @@ FROM
 UNION ALL
 SELECT
 	e.Id1 as Id1,
-	'Str' as Value_1,
+	toString('Str') as Value_1,
 	e.ByteValues as ByteValues
 FROM
 	MasterClass e

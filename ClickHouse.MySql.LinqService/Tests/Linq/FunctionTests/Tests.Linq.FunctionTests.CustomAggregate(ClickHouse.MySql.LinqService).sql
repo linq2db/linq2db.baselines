@@ -2,8 +2,8 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	sumOrNull(g_1.Value1),
-	sumOrNull(g_1.Value1)
+	Coalesce(sumOrNull(g_1.Value1), 0),
+	Coalesce(sumOrNull(g_1.Value1), 0)
 FROM
 	Parent g_1
 GROUP BY

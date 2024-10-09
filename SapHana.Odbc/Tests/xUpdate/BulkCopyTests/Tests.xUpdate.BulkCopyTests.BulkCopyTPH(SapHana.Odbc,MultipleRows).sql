@@ -92,12 +92,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."Discriminator",
+	CASE
+		WHEN "t1"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"t1"."Id",
 	"t1"."Value3",
 	"t1"."NullableBool",
+	CASE
+		WHEN "t1"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"t1"."Value2",
-	"t1"."Value1"
+	CASE
+		WHEN "t1"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"t1"."Value1",
+	"t1"."Discriminator"
 FROM
 	"TPHTable" "t1"
 ORDER BY
@@ -107,12 +119,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -123,12 +147,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -139,12 +175,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -155,12 +203,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -171,12 +231,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE
@@ -187,12 +259,24 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."Discriminator",
+	CASE
+		WHEN "x"."Discriminator" = 3 THEN 1
+		ELSE 0
+	END,
 	"x"."Id",
 	"x"."Value3",
 	"x"."NullableBool",
+	CASE
+		WHEN "x"."Discriminator" = 2 THEN 1
+		ELSE 0
+	END,
 	"x"."Value2",
-	"x"."Value1"
+	CASE
+		WHEN "x"."Discriminator" = 1 THEN 1
+		ELSE 0
+	END,
+	"x"."Value1",
+	"x"."Discriminator"
 FROM
 	"TPHTable" "x"
 WHERE

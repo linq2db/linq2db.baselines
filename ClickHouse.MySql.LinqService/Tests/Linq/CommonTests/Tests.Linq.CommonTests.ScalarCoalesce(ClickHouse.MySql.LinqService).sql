@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.Value1
+	Coalesce(p.Value1, 100)
 FROM
 	Parent p
 

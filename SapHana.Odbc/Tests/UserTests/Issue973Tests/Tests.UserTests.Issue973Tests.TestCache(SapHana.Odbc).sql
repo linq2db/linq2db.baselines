@@ -15,7 +15,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
+	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
+	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -53,7 +53,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
+	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -72,5 +72,5 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
+	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 

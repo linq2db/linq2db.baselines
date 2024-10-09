@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Person" "x"
 WHERE
-	("x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" - 1 = ?)
+	"x"."PersonID" = ? AND "x"."LastName" <> ? OR "x"."FirstName" <> ? AND "x"."PersonID" - 1 = ?
 GROUP BY
 	"x"."PersonID"
 

@@ -2,7 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[p_1].[c1]
+	CAST(Floor([p_1].[c1]) AS Int)
 FROM
 	(
 		SELECT

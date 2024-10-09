@@ -12,5 +12,5 @@ FROM
 	Person x_1,
 	Patient z
 WHERE
-	(x_1.FirstName = 'A' OR z.PersonID = 1)
+	x_1.FirstName = 'A' OR z.PersonID = 1
 

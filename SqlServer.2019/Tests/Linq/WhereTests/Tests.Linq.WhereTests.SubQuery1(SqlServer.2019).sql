@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([pp].[MoneyValue] * 2 = Round([pp].[MoneyValue] * 2, 2) AND [pp].[MoneyValue] <> Round([pp].[MoneyValue], 2), Round([pp].[MoneyValue] / 2, 2) * 2, Round([pp].[MoneyValue], 2)) as [Value_1]
+			IIF([pp].[MoneyValue] * 2 = ROUND([pp].[MoneyValue] * 2, 2) AND [pp].[MoneyValue] <> ROUND([pp].[MoneyValue], 2), ROUND([pp].[MoneyValue] / 2, 2) * 2, ROUND([pp].[MoneyValue], 2)) as [Value_1]
 		FROM
 			[LinqDataTypes] [pp]
 	) [pp_1]

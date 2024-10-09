@@ -35,5 +35,5 @@ FROM
 				"a2"."c1"
 		) "t3" ON "t4"."Count_1" = "t3"."Count_1"
 WHERE
-	("t4"."Count_1" IS NULL OR "t3"."Count_1" IS NULL)
+	"t4"."Count_1" IS NULL OR "t3"."Count_1" IS NULL
 

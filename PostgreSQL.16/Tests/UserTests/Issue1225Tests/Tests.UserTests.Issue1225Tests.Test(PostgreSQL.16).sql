@@ -84,7 +84,6 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	'Id',
 	it."Id",
 	SUM("a_ActualStage"."Id")
 FROM

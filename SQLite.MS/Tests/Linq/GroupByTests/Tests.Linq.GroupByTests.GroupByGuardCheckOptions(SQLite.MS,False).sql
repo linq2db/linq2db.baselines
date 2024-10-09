@@ -4,7 +4,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[Gender],
+	[m_1].[Key_1],
 	[d].[FirstName],
 	[d].[PersonID],
 	[d].[LastName],
@@ -13,11 +13,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Gender]
+			[t1].[Gender] as [Key_1]
 		FROM
 			[Person] [t1]
 	) [m_1]
-		INNER JOIN [Person] [d] ON [m_1].[Gender] = [d].[Gender]
+		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[Gender]
 
 BeforeExecute
 DisposeTransaction

@@ -84,7 +84,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	'Id',
 	[it].[Id],
 	SUM([a_ActualStage].[Id])
 FROM

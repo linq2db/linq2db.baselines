@@ -161,10 +161,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Guid  -- Guid
-SET     @Guid = X'27FE8A0B1C482E44B8CF729DDFEECE29'
-DECLARE @GuidN  -- Guid
-SET     @GuidN = X'27FE8A0B1C482E44B8CF729DDFEECE30'
+DECLARE @Id  -- Guid
+SET     @Id = X'27FE8A0B1C482E44B8CF729DDFEECE29'
+DECLARE @Id_1  -- Guid
+SET     @Id_1 = X'27FE8A0B1C482E44B8CF729DDFEECE30'
 
 SELECT
 	[t1].[Id],
@@ -172,22 +172,22 @@ SELECT
 	[t1].[Byte_1],
 	[t1].[Guid],
 	[t1].[GuidN],
-	[t1].[Enum],
-	[t1].[EnumN],
+	[t1].[c1],
+	[t1].[c2],
 	[t1].[Bool],
 	[t1].[BoolN]
 FROM
 	(
 		SELECT
 			[r].[Id],
-			5 as [Byte],
-			5 as [Byte_1],
-			@Guid as [Guid],
-			@GuidN as [GuidN],
-			'ENUM1_VALUE' as [Enum],
-			'ENUM2_VALUE' as [EnumN],
-			1 as [Bool],
-			0 as [BoolN]
+			CAST(5 AS TinyInt) as [Byte],
+			CAST(5 AS TinyInt) as [Byte_1],
+			@Id as [Guid],
+			@Id_1 as [GuidN],
+			CAST('ENUM1_VALUE' AS NChar(11)) as [c1],
+			CAST('ENUM2_VALUE' AS NChar(11)) as [c2],
+			CAST(1 AS Bit) as [Bool],
+			CAST(0 AS Bit) as [BoolN]
 		FROM
 			[Issue3360Table1] [r]
 		WHERE
@@ -199,8 +199,8 @@ FROM
 			[r_1].[ByteN] as [Byte_1],
 			[r_1].[Guid],
 			[r_1].[GuidN],
-			[r_1].[Enum],
-			[r_1].[EnumN],
+			[r_1].[Enum] as [c1],
+			[r_1].[EnumN] as [c2],
 			[r_1].[Bool],
 			[r_1].[BoolN]
 		FROM

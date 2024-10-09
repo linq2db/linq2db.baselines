@@ -3,17 +3,17 @@
 
 SELECT
 	CASE
-		WHEN t_1.c1::decimal * 2 = Round(t_1.c1::decimal * 2, 5) AND t_1.c1::decimal <> Round(t_1.c1::decimal, 5)
-			THEN Round(t_1.c1::decimal / 2, 5) * 2
-		ELSE Round(t_1.c1::decimal, 5)
+		WHEN t_1.c1::decimal * 2 = ROUND(t_1.c1::decimal * 2, 5) AND t_1.c1::decimal <> ROUND(t_1.c1::decimal, 5)
+			THEN ROUND(t_1.c1::decimal / 2, 5) * 2
+		ELSE ROUND(t_1.c1::decimal, 5)
 	END::Float
 FROM
 	(
 		SELECT
 			CASE
-				WHEN t."MoneyValue" * 2 = Round(t."MoneyValue" * 2, 1) AND t."MoneyValue" <> Round(t."MoneyValue", 1)
-					THEN Round(t."MoneyValue" / 2, 1) * 2
-				ELSE Round(t."MoneyValue", 1)
+				WHEN t."MoneyValue" * 2 = ROUND(t."MoneyValue" * 2, 1) AND t."MoneyValue" <> ROUND(t."MoneyValue", 1)
+					THEN ROUND(t."MoneyValue" / 2, 1) * 2
+				ELSE ROUND(t."MoneyValue", 1)
 			END::Float as c1
 		FROM
 			"LinqDataTypes" t

@@ -3,7 +3,7 @@
 
 SELECT
 	tt.ParentID,
-	sumOrNull(tt.ID)
+	sum(tt.ID)
 FROM
 	(
 		SELECT
@@ -25,5 +25,5 @@ FROM
 GROUP BY
 	tt.ParentID
 HAVING
-	(sumOrNull(tt.ID) <> 0 OR sumOrNull(tt.ID) IS NULL)
+	sum(tt.ID) <> 0
 
