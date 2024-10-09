@@ -10,6 +10,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	toFloat64(226),
 	t.DateTimeValue
 FROM
 	LinqDataTypes t

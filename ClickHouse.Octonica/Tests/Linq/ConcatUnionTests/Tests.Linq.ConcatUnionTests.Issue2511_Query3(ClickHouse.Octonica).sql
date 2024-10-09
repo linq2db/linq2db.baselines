@@ -2,7 +2,10 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t3.projection__set_id__,
+	CASE
+		WHEN t3.projection__set_id__ = 0 THEN true
+		ELSE false
+	END,
 	t3.ID,
 	t3.FirstName,
 	t3.LastName,
@@ -22,7 +25,7 @@ FROM
 			toInt32(NULL) as c1,
 			toInt32(NULL) as c2,
 			toString(NULL) as c3,
-			0 as projection__set_id__
+			toInt32(0) as projection__set_id__
 		FROM
 			(
 				SELECT
@@ -45,7 +48,7 @@ FROM
 			a_Patient.PersonID as c1,
 			a_Patient.PersonID as c2,
 			a_Patient.Diagnosis as c3,
-			1 as projection__set_id__
+			toInt32(1) as projection__set_id__
 		FROM
 			Person t2
 				LEFT JOIN Patient a_Patient ON t2.PersonID = a_Patient.PersonID

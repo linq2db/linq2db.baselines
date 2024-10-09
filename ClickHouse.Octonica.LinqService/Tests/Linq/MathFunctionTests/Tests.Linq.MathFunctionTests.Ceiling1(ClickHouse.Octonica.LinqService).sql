@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Ceiling(negate(t.MoneyValue + toDecimal64('1', 10))) as c1
+			Ceiling(negate(t.MoneyValue + toDecimal64('1', 4))) as c1
 		FROM
 			LinqDataTypes t
 	) t_1

@@ -78,7 +78,6 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	'Id',
 	it.Id,
 	sumOrNull(a_ActualStage.Id)
 FROM

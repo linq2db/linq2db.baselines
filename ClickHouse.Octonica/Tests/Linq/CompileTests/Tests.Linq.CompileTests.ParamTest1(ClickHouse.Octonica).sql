@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	2,
 	c_1.ChildID
 FROM
 	Child c_1

@@ -11,12 +11,12 @@ FROM
 		FROM
 			(
 				SELECT
-					1 as c1
+					toInt32(1) as c1
 				FROM
 					Person t1
 				UNION ALL
 				SELECT
-					2 as c1
+					toInt32(2) as c1
 				FROM
 					Person t2
 			) t3

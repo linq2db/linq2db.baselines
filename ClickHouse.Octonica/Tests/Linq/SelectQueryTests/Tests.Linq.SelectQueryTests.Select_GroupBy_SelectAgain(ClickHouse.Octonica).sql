@@ -3,15 +3,15 @@
 
 SELECT
 	summary.c1,
-	summary.LastName,
+	summary.Key_1,
 	summary.Count_1,
 	summary.MAX_1
 FROM
 	(
 		SELECT
 			COUNT(*) as Count_1,
-			group_1.LastName as LastName,
-			maxOrNull(group_1.FirstName) as MAX_1,
+			group_1.LastName as Key_1,
+			max(group_1.FirstName) as MAX_1,
 			COUNT(*) OVER() as c1
 		FROM
 			Person group_1

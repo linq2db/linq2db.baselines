@@ -26,7 +26,7 @@ SELECT
 	q.Id,
 	q.Name,
 	q.ContactEmail,
-	q.Enabled
+	Coalesce(q.Enabled, false)
 FROM
 	CustomerBase q
 WHERE
