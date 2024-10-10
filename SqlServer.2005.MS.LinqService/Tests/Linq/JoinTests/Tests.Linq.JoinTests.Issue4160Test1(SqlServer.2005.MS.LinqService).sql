@@ -129,17 +129,16 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT DISTINCT
-	[t1].[Name]
+	(
+		SELECT TOP (1)
+			[cc].[Name]
+		FROM
+			[Issue4160City] [cc]
+		WHERE
+			([cc].[Code] = [pe].[Code] OR [cc].[Code] IS NULL AND [pe].[Code] IS NULL)
+	)
 FROM
 	[Issue4160Person] [pe]
-		LEFT JOIN (
-			SELECT
-				[cc].[Name],
-				ROW_NUMBER() OVER (PARTITION BY [cc].[Code] ORDER BY [cc].[Code]) as [rn],
-				[cc].[Code]
-			FROM
-				[Issue4160City] [cc]
-		) [t1] ON ([t1].[Code] = [pe].[Code] OR [t1].[Code] IS NULL AND [pe].[Code] IS NULL) AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
