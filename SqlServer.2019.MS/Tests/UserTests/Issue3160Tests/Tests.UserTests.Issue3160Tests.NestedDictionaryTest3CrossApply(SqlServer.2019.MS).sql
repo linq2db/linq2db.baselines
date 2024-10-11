@@ -95,8 +95,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[t2].[not_null],
-	[t2].[Id3],
+	[t2].[c2],
+	[t2].[c1],
 	[t2].[Id3],
 	[t2].[Name3],
 	[t2].[Name2],
@@ -106,13 +106,15 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[t1].[Id3],
+				[t1].[c1],
 				[t1].[Name3],
-				[x_1].[NAME2] as [Name2],
-				1 as [not_null]
+				N't2' as [c2],
+				[x_1].[NAME2] as [Name2]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
 						SELECT TOP (1)
+							N't3' as [c1],
 							[x].[ID3] as [Id3],
 							[x].[NAME3] as [Name3]
 						FROM

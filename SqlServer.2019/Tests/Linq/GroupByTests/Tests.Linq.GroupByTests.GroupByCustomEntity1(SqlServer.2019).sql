@@ -4,7 +4,7 @@
 SELECT
 	COUNT(*)
 FROM
-	[Child] [g_1]
+	[Child] [c_1]
 GROUP BY
-	[g_1].[ParentID]
+	[c_1].[ParentID]
 

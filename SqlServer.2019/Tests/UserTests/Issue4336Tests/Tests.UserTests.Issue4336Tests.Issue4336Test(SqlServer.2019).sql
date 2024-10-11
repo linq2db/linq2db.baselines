@@ -128,15 +128,15 @@ FROM
 		LEFT JOIN [ProductCategory] [pcc] ON [pcc].[Id] = [vpc].[CategoryId]
 		LEFT JOIN (
 			SELECT
-				COALESCE([vsp].[SUM_1],0) as [Quantity],
-				[vsp].[OrderPeriodId],
+				COALESCE([vsp].[Quantity],0) as [Quantity],
+				[vsp].[Id],
 				[vsp].[ProductId]
 			FROM
 				(
 					SELECT
-						[agroup].[Id] as [OrderPeriodId],
+						[agroup].[Id],
 						[oi].[ProductId],
-						SUM(COALESCE([oi].[Quantity],0)) as [SUM_1]
+						SUM(COALESCE([oi].[Quantity],0)) as [Quantity]
 					FROM
 						[OrderPeriod] [agroup]
 							LEFT JOIN [OrderHeader] [oh] ON [agroup].[Id] = [oh].[PeriodId]
@@ -145,12 +145,12 @@ FROM
 						[agroup].[Id],
 						[oi].[ProductId]
 				) [vsp]
-		) [vsp_1] ON [vsp_1].[OrderPeriodId] = [v1].[Id] AND [vsp_1].[ProductId] = [pop].[ProductId]
+		) [vsp_1] ON [vsp_1].[Id] = [v1].[Id] AND [vsp_1].[ProductId] = [pop].[ProductId]
 		LEFT JOIN (
 			SELECT
 				COALESCE([vpcc].[PeriodOrderLimit],0) as [MaxCapacity],
-				[vsopc].[SUM_1] as [Quantity],
-				COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[SUM_1] as [FreeCapacity],
+				[vsopc].[Quantity],
+				COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity] as [FreeCapacity],
 				[v2].[Id],
 				[vpcc].[Id] as [Id_1]
 			FROM
@@ -158,9 +158,9 @@ FROM
 					CROSS JOIN [ProductCategory] [vpcc]
 					LEFT JOIN (
 						SELECT
-							[agroup_1].[Id] as [OrderPeriodId],
+							[agroup_1].[Id],
 							[p].[CategoryId],
-							SUM([oi_1].[Quantity]) as [SUM_1]
+							SUM([oi_1].[Quantity]) as [Quantity]
 						FROM
 							[OrderPeriod] [agroup_1]
 								LEFT JOIN [OrderHeader] [oh_1] ON [agroup_1].[Id] = [oh_1].[PeriodId]
@@ -169,7 +169,7 @@ FROM
 						GROUP BY
 							[agroup_1].[Id],
 							[p].[CategoryId]
-					) [vsopc] ON [vsopc].[OrderPeriodId] = [v2].[Id] AND [vsopc].[CategoryId] = [vpcc].[Id]
+					) [vsopc] ON [vsopc].[Id] = [v2].[Id] AND [vsopc].[CategoryId] = [vpcc].[Id]
 		) [v2_1] ON [v2_1].[Id] = [v1].[Id] AND [v2_1].[Id_1] = [vpc].[CategoryId]
 
 BeforeExecute

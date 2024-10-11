@@ -350,16 +350,22 @@ DECLARE @take Int -- Int32
 SET     @take = 20
 
 SELECT
-	COUNT(*) OVER(),
-	[x].[Id],
-	[x].[Value]
+	[t1].[TotalCount],
+	[t1].[Id],
+	[t1].[Value_1]
 FROM
-	[PaginationData] [x]
-WHERE
-	[x].[Id] % 2 = 0
+	(
+		SELECT
+			COUNT(*) OVER() as [TotalCount],
+			[x].[Id],
+			[x].[Value] as [Value_1]
+		FROM
+			[PaginationData] [x]
+		WHERE
+			[x].[Id] % 2 = 0
+	) [t1]
 ORDER BY
-	[x].[Id],
-	[x].[Value] DESC
+	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -384,12 +390,12 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
-	-1
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
@@ -428,12 +434,13 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1,
 	[t1].[TotalCount]
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
@@ -449,16 +456,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT
-			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			[h].[Id],
+			ROW_NUMBER() OVER(ORDER BY [h].[Id], [h].[Value] DESC) as [RowNumber]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [h]
 		WHERE
-			[x].[Id] % 2 = 0
+			[h].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[Id] = @Id
@@ -469,16 +476,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 78
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT
-			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			[h].[Id],
+			ROW_NUMBER() OVER(ORDER BY [h].[Id], [h].[Value] DESC) as [RowNumber]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [h]
 		WHERE
-			[x].[Id] % 2 = 0
+			[h].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[Id] = @Id

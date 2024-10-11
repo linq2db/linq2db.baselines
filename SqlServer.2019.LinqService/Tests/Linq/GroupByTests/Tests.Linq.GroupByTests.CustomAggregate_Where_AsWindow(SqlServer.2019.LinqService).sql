@@ -6,13 +6,13 @@ SET     @groupId = 2
 SELECT
 	[t1].[ChildID],
 	[t1].[group_1],
-	[t1].[COUNT_1],
+	[t1].[count_1],
 	[t1].[percents]
 FROM
 	(
 		SELECT
 			[a_Parent].[ParentID] as [group_1],
-			COUNT(*) as [COUNT_1],
+			COUNT(*) as [count_1],
 			[g_1].[ChildID],
 			(COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER()) as [percents]
 		FROM
@@ -25,5 +25,5 @@ FROM
 WHERE
 	[t1].[group_1] = @groupId
 ORDER BY
-	[t1].[COUNT_1] DESC
+	[t1].[count_1] DESC
 

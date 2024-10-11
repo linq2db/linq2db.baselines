@@ -238,8 +238,8 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	GROUPING([g_2].[Id1]),
-	[g_2].[Id1],
+	IIF(GROUPING([t1].[Id1]) = 1, 1, 0),
+	[t1].[Id1],
 	COUNT(*)
 FROM
 	(
@@ -249,10 +249,10 @@ FROM
 			[g_1].[Value] as [Value_1]
 		FROM
 			[GroupSampleClass] [g_1]
-	) [g_2]
+	) [t1]
 GROUP BY ROLLUP (
-	[g_2].[Id1],
-	[g_2].[Id2]
+	[t1].[Id1],
+	[t1].[Id2]
 )
 
 BeforeExecute

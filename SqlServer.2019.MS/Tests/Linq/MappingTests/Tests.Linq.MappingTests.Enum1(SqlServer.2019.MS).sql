@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[Gender] IN (N'M')
+	[p].[Gender] IN ('M')
 

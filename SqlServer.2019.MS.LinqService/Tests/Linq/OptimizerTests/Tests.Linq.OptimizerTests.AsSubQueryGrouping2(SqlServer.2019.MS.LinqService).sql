@@ -602,8 +602,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	COUNT([x_1].[Key2]),
-	COUNT([x_1].[Key1])
+	COUNT([t1].[Key2]),
+	COUNT([t1].[Key1])
 FROM
 	(
 		SELECT
@@ -614,7 +614,7 @@ FROM
 		GROUP BY
 			[x].[Key1],
 			[x].[Key2]
-	) [x_1]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

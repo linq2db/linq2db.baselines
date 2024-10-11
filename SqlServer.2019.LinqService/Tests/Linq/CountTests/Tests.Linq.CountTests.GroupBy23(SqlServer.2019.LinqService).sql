@@ -2,11 +2,11 @@
 -- SqlServer.2019
 
 SELECT
-	COUNT(IIF([g_1].[ParentID] < 2, 1, NULL))
+	COUNT(IIF([p].[ParentID] < 2, 1, NULL))
 FROM
-	[Parent] [g_1]
+	[Parent] [p]
 WHERE
-	[g_1].[ParentID] > -1
+	[p].[ParentID] > -1
 GROUP BY
-	[g_1].[Value1]
+	[p].[Value1]
 
