@@ -5,23 +5,23 @@ SELECT
 	p1."ParentID",
 	p1."Value1",
 	p2."ParentID",
-	p2."Sum1"
+	p2."SUM_1"
 FROM
 	"Parent" p1
 		LEFT JOIN (
 			SELECT
-				g_1."ParentID",
-				SUM(g_1."ParentID") as "Sum1"
+				o."ParentID",
+				SUM(o."ParentID") as "SUM_1"
 			FROM
-				"Parent" g_1
+				"Parent" o
 			WHERE
-				g_1."ParentID" IN (
+				o."ParentID" IN (
 					SELECT
 						ch."ParentID"
 					FROM
 						"Child" ch
 				)
 			GROUP BY
-				g_1."ParentID"
+				o."ParentID"
 		) p2 ON p2."ParentID" = p1."ParentID"
 

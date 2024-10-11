@@ -37,12 +37,12 @@ BeforeExecute
 SELECT
 	"a_Person".personid,
 	"a_Person".personname,
-	MAX("VBIt".added)
+	MAX(p.added)
 FROM
-	activity649 "VBIt"
-		INNER JOIN person649 "a_Person" ON "VBIt".personid = "a_Person".personid
+	activity649 p
+		INNER JOIN person649 "a_Person" ON p.personid = "a_Person".personid
 WHERE
-	"VBIt".added >= make_timestamp(2017, 1, 1, 0, 0, 0)
+	p.added >= make_timestamp(2017, 1, 1, 0, 0, 0)
 GROUP BY
 	"a_Person".personid,
 	"a_Person".personname

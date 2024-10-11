@@ -4,7 +4,7 @@ DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT
-	SUM(g_2."ParentID" - 3)
+	SUM(t1."ParentID" - 3)
 FROM
 	(
 		SELECT
@@ -14,8 +14,8 @@ FROM
 			"Child" g_1
 		WHERE
 			g_1."ParentID" + 2 > :n
-	) g_2
+	) t1
 GROUP BY
-	g_2."ParentID",
-	g_2."ChildID"
+	t1."ParentID",
+	t1."ChildID"
 

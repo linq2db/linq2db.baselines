@@ -2,8 +2,8 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t_1."ID",
-	DENSE_RANK() OVER(ORDER BY t_1."ID")
+	t1."ID",
+	DENSE_RANK() OVER(ORDER BY t1."ID")
 FROM
 	(
 		SELECT
@@ -19,5 +19,5 @@ FROM
 			"Person" p
 		WHERE
 			p."PersonID" <> 1
-	) t_1
+	) t1
 
