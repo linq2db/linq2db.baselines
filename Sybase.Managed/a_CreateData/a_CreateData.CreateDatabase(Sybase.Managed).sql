@@ -6,12 +6,6 @@ USE master
 BeforeExecute
 -- Sybase.Managed Sybase
 
--- for bulk copy transactions support, must be called from master
-sp_dboption tempdb, 'ddl in tran', 'true'
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 DROP DATABASE TestDataCore
 
 BeforeExecute
