@@ -104,8 +104,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	m_1."Status",
-	m_1."ResourceLabel",
+	m_1."Key_1",
+	m_1."Key_2",
 	d."Id",
 	d."Status",
 	d."ResourceID",
@@ -113,18 +113,18 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."Status",
-			t1."ResourceLabel"
+			t1."Key_1",
+			t1."Key_2"
 		FROM
 			(
 				SELECT
-					grp."Status",
-					lc."ResourceLabel"
+					inventory."Status" as "Key_1",
+					lc."ResourceLabel" as "Key_2"
 				FROM
-					"InventoryResourceDTO" grp
-						INNER JOIN "WmsLoadCarrierDTO" lc ON grp."ResourceID" = lc."Id"
+					"InventoryResourceDTO" inventory
+						INNER JOIN "WmsLoadCarrierDTO" lc ON inventory."ResourceID" = lc."Id"
 				GROUP BY
-					grp."Status",
+					inventory."Status",
 					lc."ResourceLabel"
 				HAVING
 					COUNT(*) > 1
@@ -132,7 +132,7 @@ FROM
 	) m_1
 		INNER JOIN "InventoryResourceDTO" d
 			INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id"
-		ON m_1."Status" = d."Status" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
+		ON m_1."Key_1" = d."Status" AND (m_1."Key_2" = lc_1."ResourceLabel" OR m_1."Key_2" IS NULL AND lc_1."ResourceLabel" IS NULL)
 
 BeforeExecute
 DisposeTransaction

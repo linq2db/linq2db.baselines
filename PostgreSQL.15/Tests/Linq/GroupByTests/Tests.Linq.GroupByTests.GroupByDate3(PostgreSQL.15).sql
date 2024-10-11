@@ -2,21 +2,35 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	SUM(grp_1."MoneyValue"),
-	grp_1."Year_1",
-	grp_1."Month_1"
+	SUM(t1."MoneyValue"),
+	Floor(Extract(year From t1."Value_1"))::Int,
+	Floor(Extract(month From t1."Value_1"))::Int
 FROM
 	(
 		SELECT
-			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0) as "Date_1",
-			grp."MoneyValue",
-			Floor(Extract(year From make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0)))::Int as "Year_1",
-			Floor(Extract(month From make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0)))::Int as "Month_1"
+			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0) as "Value_1",
+			grp."MoneyValue"
 		FROM
 			"LinqDataTypes" grp
-	) grp_1
+	) t1
 GROUP BY
-	grp_1."Date_1",
-	grp_1."Year_1",
-	grp_1."Month_1"
+	t1."Value_1"
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	SUM(t1."MoneyValue"),
+	Floor(Extract(year From t1."Value_1"))::Int,
+	Floor(Extract(month From t1."Value_1"))::Int
+FROM
+	(
+		SELECT
+			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0) as "Value_1",
+			grp."MoneyValue"
+		FROM
+			"LinqDataTypes" grp
+	) t1
+GROUP BY
+	t1."Value_1"
 

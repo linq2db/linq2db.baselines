@@ -44,32 +44,32 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	g_1."GroupId",
-	AVG(g_1."DataValue"),
-	AVG(g_1."DataValue"),
+	t."GroupId",
+	AVG(t."DataValue"),
+	AVG(t."DataValue"),
 	AVG(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
-	AVG(DISTINCT g_1."DataValue"),
+	AVG(DISTINCT t."DataValue")::decimal,
 	AVG(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
 		ELSE NULL
 	END)
 FROM
-	"AggregationData" g_1
+	"AggregationData" t
 WHERE
-	g_1."DataValue" IS NOT NULL
+	t."DataValue" IS NOT NULL
 GROUP BY
-	g_1."GroupId"
+	t."GroupId"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

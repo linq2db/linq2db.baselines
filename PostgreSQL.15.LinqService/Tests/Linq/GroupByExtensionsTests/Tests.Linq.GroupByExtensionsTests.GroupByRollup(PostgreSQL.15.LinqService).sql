@@ -237,7 +237,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	g_2."Id1",
+	t1."Id1",
 	COUNT(*)
 FROM
 	(
@@ -247,10 +247,10 @@ FROM
 			g_1."Value" as "Value_1"
 		FROM
 			"GroupSampleClass" g_1
-	) g_2
+	) t1
 GROUP BY ROLLUP (
-	g_2."Id1",
-	g_2."Id2"
+	t1."Id1",
+	t1."Id2"
 )
 
 BeforeExecute

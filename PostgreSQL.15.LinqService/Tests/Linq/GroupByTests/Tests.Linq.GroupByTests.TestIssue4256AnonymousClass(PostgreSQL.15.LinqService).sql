@@ -2,8 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	it_1."IsActive",
-	it_1."Other"
+	it_1."Key_1"
 FROM
 	(
 		SELECT
@@ -11,13 +10,13 @@ FROM
 			CASE
 				WHEN it."SmallIntValue" <> 0 THEN True
 				ELSE False
-			END as "Other"
+			END as "Key_1"
 		FROM
 			"LinqDataTypes" it
 	) it_1
 GROUP BY
 	it_1."IsActive",
-	it_1."Other"
+	it_1."Key_1"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
