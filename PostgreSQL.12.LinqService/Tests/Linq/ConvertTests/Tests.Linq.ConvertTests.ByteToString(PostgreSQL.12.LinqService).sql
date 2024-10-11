@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."ID"::SmallInt::text
+	p."ID"::SmallInt
 FROM
 	"LinqDataTypes" p
 WHERE

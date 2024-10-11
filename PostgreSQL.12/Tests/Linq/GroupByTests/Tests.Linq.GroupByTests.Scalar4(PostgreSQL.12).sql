@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2."MIN_2"
+	t1."MIN_2"
 FROM
 	(
 		SELECT
@@ -18,7 +18,7 @@ FROM
 			"Child" g_1
 		GROUP BY
 			g_1."ParentID"
-	) g_2
+	) t1
 WHERE
-	g_2."MIN_1" IS NOT NULL
+	t1."MIN_1" IS NOT NULL
 

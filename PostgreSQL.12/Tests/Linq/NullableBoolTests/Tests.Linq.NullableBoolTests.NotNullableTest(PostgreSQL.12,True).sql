@@ -30,7 +30,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" t
 WHERE
-	t."Value" = True
+	t."Value"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" t
 WHERE
-	t."Value" = False
+	NOT t."Value"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

@@ -33,13 +33,13 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @nullableGender Text(1) -- String
-SET     @nullableGender = 'O'
+DECLARE @Value Text(1) -- String
+SET     @Value = 'O'
 
 UPDATE
 	"Person"
 SET
-	"Gender" = :nullableGender
+	"Gender" = :Value
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

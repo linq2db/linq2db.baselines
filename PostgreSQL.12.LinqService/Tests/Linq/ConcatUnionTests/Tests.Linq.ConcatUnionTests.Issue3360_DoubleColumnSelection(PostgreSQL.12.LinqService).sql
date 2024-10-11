@@ -161,6 +161,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Unknown -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Unknown -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	t1."Id",
@@ -180,8 +184,8 @@ FROM
 			r."Byte" as "Byte_1",
 			r."Guid",
 			r."Guid" as "Guid_1",
-			NULL::text as "Enum",
-			NULL::text as "EnumN",
+			:Id::text as "Enum",
+			:Id_1::text as "EnumN",
 			r."Bool",
 			r."Bool" as "Bool_1"
 		FROM
