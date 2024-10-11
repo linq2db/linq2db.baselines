@@ -9,7 +9,7 @@ SELECT
 FROM
 	(
 		SELECT
-			N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)) as [Label],
+			[f].[Value1],
 			(
 				SELECT
 					SUM([t1].[ChildID])
@@ -24,6 +24,7 @@ FROM
 							[a_Parent].[ParentID] = [f].[ParentID] AND ([a_Parent].[Value1] = [f].[Value1] OR [a_Parent].[Value1] IS NULL AND [f].[Value1] IS NULL)
 					) [t1]
 			) as [SubSum],
+			N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)) as [Label],
 			IIF(EXISTS(
 				SELECT
 					*
@@ -46,5 +47,6 @@ FROM
 			[Parent] [f]
 	) [f_1]
 WHERE
-	[f_1].[Label] LIKE N'%1%' ESCAPE N'~' AND [f_1].[SubSum] > 0
+	N' ' + CAST(Coalesce([f_1].[Value1], 0) AS NVarChar(11)) LIKE N'%1%' ESCAPE N'~' AND
+	[f_1].[SubSum] > 0
 

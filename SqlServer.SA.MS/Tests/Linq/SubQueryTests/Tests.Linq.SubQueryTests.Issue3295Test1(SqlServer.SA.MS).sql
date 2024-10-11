@@ -8,13 +8,14 @@ FROM
 	(
 		SELECT
 			IIF([t1].[PersonID] IS NOT NULL, [t1].[Diagnosis], N'abc') as [StatusName],
-			IIF([t1].[PersonID] IS NOT NULL, [t1].[PersonID], [x].[PersonID]) as [Id]
+			IIF([t1].[PersonID] IS NOT NULL, [t1].[PersonID_1], [x].[PersonID]) as [Id]
 		FROM
 			[Person] [x]
 				OUTER APPLY (
 					SELECT TOP (1)
 						[y].[PersonID],
-						[y].[Diagnosis]
+						[y].[Diagnosis],
+						[y].[PersonID] as [PersonID_1]
 					FROM
 						[Patient] [y]
 					WHERE

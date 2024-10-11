@@ -4,7 +4,7 @@ DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT
-	COUNT(IIF([g_2].[ParentID] < 3, 1, NULL))
+	COUNT(IIF([t1].[ParentID] < 3, 1, NULL))
 FROM
 	(
 		SELECT
@@ -14,8 +14,8 @@ FROM
 			[Child] [g_1]
 		WHERE
 			[g_1].[ParentID] + 2 > @n
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ParentID],
-	[g_2].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 

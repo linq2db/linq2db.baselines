@@ -2,19 +2,18 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[it_1].[IsActive],
-	[it_1].[Other]
+	[it_1].[Key_1]
 FROM
 	(
 		SELECT
 			1 as [IsActive],
-			IIF([it].[SmallIntValue] <> 0, 1, 0) as [Other]
+			IIF([it].[SmallIntValue] <> 0, 1, 0) as [Key_1]
 		FROM
 			[LinqDataTypes] [it]
 	) [it_1]
 GROUP BY
 	[it_1].[IsActive],
-	[it_1].[Other]
+	[it_1].[Key_1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

@@ -2,9 +2,9 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[g_2].[ParentID],
-	MIN([g_2].[ChildID]),
-	COUNT(IIF([g_2].[ChildID] > 25, 1, NULL))
+	[t1].[ParentID],
+	MIN([t1].[ChildID]),
+	COUNT(IIF([t1].[ChildID] > 25, 1, NULL))
 FROM
 	(
 		SELECT
@@ -14,7 +14,7 @@ FROM
 			[Child] [g_1]
 		WHERE
 			[g_1].[ParentID] > 0
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ParentID]
+	[t1].[ParentID]
 

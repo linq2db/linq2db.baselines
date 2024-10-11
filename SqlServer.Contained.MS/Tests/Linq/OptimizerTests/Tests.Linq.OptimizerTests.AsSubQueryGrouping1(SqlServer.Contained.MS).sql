@@ -105,7 +105,7 @@ FROM
 			[FirstOptimizerData] [x]
 		GROUP BY
 			[x].[Key1]
-	) [x_1]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

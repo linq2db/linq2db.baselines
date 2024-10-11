@@ -341,20 +341,20 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[g_1].[GroupId],
-	AVG([g_1].[DataValue]),
-	AVG([g_1].[DataValue]),
-	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(DISTINCT [g_1].[DataValue]),
-	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL))
+	[t].[GroupId],
+	AVG([t].[DataValue]),
+	AVG([t].[DataValue]),
+	AVG(IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
+	AVG(IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
+	CAST(AVG(DISTINCT [t].[DataValue]) AS Decimal(38, 17)),
+	AVG(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
+	AVG(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL))
 FROM
-	[AggregationData] [g_1]
+	[AggregationData] [t]
 WHERE
-	[g_1].[DataValue] IS NOT NULL
+	[t].[DataValue] IS NOT NULL
 GROUP BY
-	[g_1].[GroupId]
+	[t].[GroupId]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

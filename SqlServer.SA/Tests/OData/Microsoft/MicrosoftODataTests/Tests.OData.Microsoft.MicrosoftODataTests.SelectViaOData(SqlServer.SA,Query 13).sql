@@ -33,7 +33,6 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	N'Title',
 	[it].[Title],
 	COUNT(*)
 FROM

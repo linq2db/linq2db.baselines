@@ -83,8 +83,8 @@ SELECT
 	[t3].[group_1],
 	[t3].[count_1],
 	[t3].[percents],
-	[t3].[hours],
-	[t3].[minutes]
+	[t3].[key_1],
+	[t3].[key_2]
 FROM
 	(
 		SELECT
@@ -92,15 +92,15 @@ FROM
 			[t2].[Id],
 			[t2].[group_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[key_1],
+			[t2].[key_2]
 		FROM
 			(
 				SELECT
 					[t1].[Id],
 					[a_Reference].[Id] as [group_1],
-					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
-					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
+					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [key_1],
+					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [key_2]
 				FROM
 					[TestAggregateTable] [t1]
 						LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
@@ -108,8 +108,8 @@ FROM
 		GROUP BY
 			[t2].[Id],
 			[t2].[group_1],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[key_1],
+			[t2].[key_2]
 		HAVING
 			[t2].[group_1] IS NULL
 	) [t3]
@@ -128,8 +128,8 @@ SELECT
 	[t3].[group_1],
 	[t3].[count_1],
 	[t3].[percents],
-	[t3].[hours],
-	[t3].[minutes]
+	[t3].[key_1],
+	[t3].[key_2]
 FROM
 	(
 		SELECT
@@ -137,15 +137,15 @@ FROM
 			[t2].[Id],
 			[t2].[group_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[key_1],
+			[t2].[key_2]
 		FROM
 			(
 				SELECT
 					[t1].[Id],
 					[a_Reference].[Id] as [group_1],
-					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
-					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
+					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [key_1],
+					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [key_2]
 				FROM
 					[TestAggregateTable] [t1]
 						LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
@@ -153,8 +153,8 @@ FROM
 		GROUP BY
 			[t2].[Id],
 			[t2].[group_1],
-			[t2].[hours],
-			[t2].[minutes]
+			[t2].[key_1],
+			[t2].[key_2]
 		HAVING
 			[t2].[group_1] = @key
 	) [t3]

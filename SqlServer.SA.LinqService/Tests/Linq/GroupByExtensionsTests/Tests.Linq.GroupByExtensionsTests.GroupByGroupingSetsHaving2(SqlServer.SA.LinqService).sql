@@ -238,7 +238,7 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[gg].[Id1],
+	[t1].[Id1],
 	COUNT(*)
 FROM
 	(
@@ -248,10 +248,10 @@ FROM
 			[g_1].[Value] as [Value_1]
 		FROM
 			[GroupSampleClass] [g_1]
-	) [gg]
+	) [t1]
 GROUP BY GROUPING SETS (
-	([gg].[Id1], [gg].[Id2]),
-	([gg].[Id2]),
+	([t1].[Id1], [t1].[Id2]),
+	([t1].[Id2]),
 	()
 )
 HAVING
