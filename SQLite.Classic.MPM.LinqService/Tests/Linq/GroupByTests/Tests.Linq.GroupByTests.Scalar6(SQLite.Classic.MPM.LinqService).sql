@@ -3,13 +3,13 @@
 
 SELECT
 	MAX(CASE
-		WHEN [g_1].[ParentID] < 3 THEN [g_1].[ChildID]
+		WHEN [ch].[ParentID] < 3 THEN [ch].[ChildID]
 		ELSE NULL
 	END)
 FROM
-	[Child] [g_1]
+	[Child] [ch]
 WHERE
-	[g_1].[ParentID] < 3
+	[ch].[ParentID] < 3
 GROUP BY
-	[g_1].[ParentID]
+	[ch].[ParentID]
 

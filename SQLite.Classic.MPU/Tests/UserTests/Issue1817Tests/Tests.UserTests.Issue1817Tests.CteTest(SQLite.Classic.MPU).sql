@@ -39,8 +39,8 @@ WITH [accountsInfo]
 (
 	[Id],
 	[Number_1],
-	[Type_1],
 	[Name],
+	[Type_1],
 	[incomeBalance],
 	[outgoingBalance]
 )
@@ -49,8 +49,8 @@ AS
 	SELECT
 		[a].[Id],
 		[a].[Number],
-		[a].[Type],
 		[a].[Name],
+		[a].[Type],
 		1,
 		2
 	FROM

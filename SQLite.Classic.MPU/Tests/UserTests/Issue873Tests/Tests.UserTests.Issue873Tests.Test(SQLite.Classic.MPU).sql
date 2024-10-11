@@ -9,7 +9,7 @@ SELECT
 FROM
 	(
 		SELECT
-			' ' || CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)) as [Label],
+			[f].[Value1],
 			(
 				SELECT
 					SUM([c_1].[ChildID])
@@ -19,6 +19,7 @@ FROM
 				WHERE
 					[a_Parent].[ParentID] = [f].[ParentID] AND ([a_Parent].[Value1] = [f].[Value1] OR [a_Parent].[Value1] IS NULL AND [f].[Value1] IS NULL)
 			) as [SubSum],
+			' ' || CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)) as [Label],
 			CASE
 				WHEN EXISTS(
 					SELECT
@@ -45,5 +46,6 @@ FROM
 			[Parent] [f]
 	) [f_1]
 WHERE
-	[f_1].[Label] LIKE '%1%' ESCAPE '~' AND [f_1].[SubSum] > 0
+	' ' || CAST(Coalesce([f_1].[Value1], 0) AS NVarChar(11)) LIKE '%1%' ESCAPE '~' AND
+	[f_1].[SubSum] > 0
 

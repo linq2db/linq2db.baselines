@@ -132,8 +132,8 @@ CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @MaterialID  -- Guid
-SET     @MaterialID = X'00000000000000000000000000000000'
+DECLARE @Value  -- Guid
+SET     @Value = X'00000000000000000000000000000000'
 
 SELECT
 	[cr_1].[Id],
@@ -148,7 +148,7 @@ SELECT
 	[cr_1].[AisleID],
 	[cr_1].[ChannelID],
 	[cr_1].[Id_3],
-	[cr_1].[AisleStatus],
+	[cr_1].[Status_1],
 	[cr_1].[Id_4],
 	[cr_1].[IsStoragePlace],
 	[cr_1].[RefQty],
@@ -156,7 +156,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[ir].[Quantity],
 			Coalesce((
 				SELECT
 					SUM([x].[Quantity])
@@ -172,6 +171,7 @@ FROM
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
 			) * [ir].[Quantity] as [RefQty],
+			[ir].[Quantity],
 			[ir].[Id],
 			[ir].[Status],
 			[ir].[MaterialID],
@@ -183,7 +183,7 @@ FROM
 			[cr].[AisleID],
 			[cr].[ChannelID],
 			[c_1].[Id] as [Id_3],
-			[aisle].[Status] as [AisleStatus],
+			[aisle].[Status] as [Status_1],
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
 			CASE
@@ -196,7 +196,7 @@ FROM
 						[irMix].[ResourceID] = [r].[Id] AND
 						[irMix].[Status] >= 0 AND
 						[irMix].[Status] <= 1 AND
-						([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
+						([irMix].[MaterialID] <> @Value OR [irMix].[ProductStatus] <> 0)
 				)
 					THEN 1
 				ELSE 0
@@ -211,12 +211,12 @@ FROM
 				INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 				INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 		WHERE
-			[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
+			[ir].[MaterialID] = @Value AND [ir].[ProductStatus] = 0 AND
 			[ir].[Quantity] > 0
 		UNION
 		SELECT
+			CAST(0 AS Decimal) as [RefQty],
 			[ir_1].[Quantity],
-			0 as [RefQty],
 			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
@@ -228,17 +228,17 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			0 as [AisleStatus],
+			CAST(0 AS INTEGER) as [Status_1],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [MixedStock]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
 			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @MaterialID AND
+			[ir_1].[MaterialID] = @Value AND
 			[ir_1].[ProductStatus] = 0 AND
 			[ir_1].[Quantity] > 0
 	) [cr_1]

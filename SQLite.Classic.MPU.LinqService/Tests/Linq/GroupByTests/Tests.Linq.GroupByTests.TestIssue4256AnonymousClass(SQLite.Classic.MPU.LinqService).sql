@@ -2,8 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[it_1].[IsActive],
-	[it_1].[Other]
+	[it_1].[Key_1]
 FROM
 	(
 		SELECT
@@ -11,13 +10,13 @@ FROM
 			CASE
 				WHEN [it].[SmallIntValue] <> 0 THEN 1
 				ELSE 0
-			END as [Other]
+			END as [Key_1]
 		FROM
 			[LinqDataTypes] [it]
 	) [it_1]
 GROUP BY
 	[it_1].[IsActive],
-	[it_1].[Other]
+	[it_1].[Key_1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
