@@ -2,11 +2,11 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_1."ParentID",
+	t1."ParentID",
 	COUNT(*)
 FROM
-	"Child" g_1
-		INNER JOIN "GrandChild" y ON g_1."ParentID" = y."ParentID" AND g_1."ChildID" = y."ChildID"
+	"Child" t1
+		INNER JOIN "GrandChild" y ON t1."ParentID" = y."ParentID" AND t1."ChildID" = y."ChildID"
 GROUP BY
-	g_1."ParentID"
+	t1."ParentID"
 

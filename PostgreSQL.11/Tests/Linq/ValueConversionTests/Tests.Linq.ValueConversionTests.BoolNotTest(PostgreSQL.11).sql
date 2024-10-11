@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @BoolValue Varchar -- String
-SET     @BoolValue = 'N'
+DECLARE @false_value Varchar -- String
+SET     @false_value = 'N'
 
 SELECT
 	t."Id",
@@ -63,7 +63,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue
+	t."BoolValue" = :false_value
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

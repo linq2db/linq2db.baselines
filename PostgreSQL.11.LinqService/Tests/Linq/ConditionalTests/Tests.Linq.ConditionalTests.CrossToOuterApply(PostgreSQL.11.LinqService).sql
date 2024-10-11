@@ -2,7 +2,10 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."ParentID",
+	CASE
+		WHEN p."ParentID" = 2 THEN True
+		ELSE False
+	END,
 	t1."ParentID",
 	t1."ChildID",
 	t2."ParentID",

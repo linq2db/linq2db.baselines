@@ -2,17 +2,17 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2."ParentID"
+	g_2."Key_1"
 FROM
 	(
 		SELECT
 			COUNT(*) as "COUNT_1",
-			g_1."ParentID"
+			g_1."ParentID" as "Key_1"
 		FROM
 			"Child" g_1
 		GROUP BY
 			g_1."ParentID"
 	) g_2
 WHERE
-	g_2."COUNT_1" > 2 AND g_2."ParentID" < 5
+	g_2."COUNT_1" > 2 AND g_2."Key_1" < 5
 

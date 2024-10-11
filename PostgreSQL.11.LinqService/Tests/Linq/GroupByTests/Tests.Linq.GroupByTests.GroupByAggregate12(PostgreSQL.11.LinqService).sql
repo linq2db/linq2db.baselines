@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2.c1
+	g_2."Key_1"
 FROM
 	(
 		SELECT
@@ -24,10 +24,10 @@ FROM
 				) > 3
 					THEN True
 				ELSE False
-			END as c1
+			END as "Key_1"
 		FROM
 			"Parent" g_1
 	) g_2
 GROUP BY
-	g_2.c1
+	g_2."Key_1"
 
