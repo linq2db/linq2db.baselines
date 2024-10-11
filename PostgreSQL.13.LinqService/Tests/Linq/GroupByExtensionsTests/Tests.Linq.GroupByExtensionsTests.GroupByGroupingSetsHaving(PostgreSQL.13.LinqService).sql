@@ -237,31 +237,24 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_3."Id1",
-	g_3."COUNT_1"
+	t1."Id1",
+	COUNT(*)
 FROM
 	(
-		SELECT
-			COUNT(*) as "COUNT_1",
-			GROUPING(g_2."Id1") as c1,
-			g_2."Id1"
+		SELECT DISTINCT
+			g_1."Id1",
+			g_1."Id2",
+			g_1."Value" as "Value_1"
 		FROM
-			(
-				SELECT DISTINCT
-					g_1."Id1",
-					g_1."Id2",
-					g_1."Value" as "Value_1"
-				FROM
-					"GroupSampleClass" g_1
-			) g_2
-		GROUP BY GROUPING SETS (
-			(g_2."Id1", g_2."Id2"),
-			(g_2."Id2"),
-			()
-		)
-	) g_3
-WHERE
-	(g_3."COUNT_1" > 0 OR g_3.c1 = 1)
+			"GroupSampleClass" g_1
+	) t1
+GROUP BY GROUPING SETS (
+	(t1."Id1", t1."Id2"),
+	(t1."Id2"),
+	()
+)
+HAVING
+	COUNT(*) > 0 OR GROUPING(t1."Id1") = 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

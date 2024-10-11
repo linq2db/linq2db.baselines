@@ -2,8 +2,6 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2."ChildId",
-	g_2."ParentId",
 	COUNT(*)
 FROM
 	(
@@ -14,10 +12,10 @@ FROM
 			"Child" g_1
 		WHERE
 			1 = 0
-	) g_2
+	) t1
 GROUP BY
-	g_2."ChildId",
-	g_2."ParentId"
+	t1."ChildId",
+	t1."ParentId"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
