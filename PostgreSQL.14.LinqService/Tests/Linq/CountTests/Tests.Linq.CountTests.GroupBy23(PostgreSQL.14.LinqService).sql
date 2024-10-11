@@ -3,13 +3,13 @@
 
 SELECT
 	COUNT(CASE
-		WHEN g_1."ParentID" < 2 THEN 1
+		WHEN p."ParentID" < 2 THEN 1
 		ELSE NULL
 	END)
 FROM
-	"Parent" g_1
+	"Parent" p
 WHERE
-	g_1."ParentID" > -1
+	p."ParentID" > -1
 GROUP BY
-	g_1."Value1"
+	p."Value1"
 

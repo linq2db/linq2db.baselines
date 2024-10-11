@@ -2,26 +2,22 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	t1.c1
+FROM
 	(
 		SELECT
-			"a_Children_1"."ParentID"
+			(
+				SELECT
+					"a_Children"."ParentID"
+				FROM
+					"Child" "a_Children"
+				WHERE
+					p."ParentID" = "a_Children"."ParentID"
+				LIMIT 1
+			) as c1
 		FROM
-			"Child" "a_Children_1"
-		WHERE
-			p."ParentID" = "a_Children_1"."ParentID"
-		LIMIT 1
-	)
-FROM
-	"Parent" p
-		LEFT JOIN LATERAL (
-			SELECT
-				"a_Children"."ParentID"
-			FROM
-				"Child" "a_Children"
-			WHERE
-				p."ParentID" = "a_Children"."ParentID"
-			LIMIT 1
-		) t1 ON 1=1
+			"Parent" p
+	) t1
 WHERE
-	t1."ParentID" IS NOT NULL
+	t1.c1 IS NOT NULL
 

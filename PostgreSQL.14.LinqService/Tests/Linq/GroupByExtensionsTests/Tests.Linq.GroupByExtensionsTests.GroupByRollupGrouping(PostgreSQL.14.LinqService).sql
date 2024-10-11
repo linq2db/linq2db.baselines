@@ -237,8 +237,11 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	GROUPING(g_2."Id1"),
-	g_2."Id1",
+	CASE
+		WHEN GROUPING(t1."Id1") = 1 THEN True
+		ELSE False
+	END,
+	t1."Id1",
 	COUNT(*)
 FROM
 	(
@@ -248,10 +251,10 @@ FROM
 			g_1."Value" as "Value_1"
 		FROM
 			"GroupSampleClass" g_1
-	) g_2
+	) t1
 GROUP BY ROLLUP (
-	g_2."Id1",
-	g_2."Id2"
+	t1."Id1",
+	t1."Id2"
 )
 
 BeforeExecute

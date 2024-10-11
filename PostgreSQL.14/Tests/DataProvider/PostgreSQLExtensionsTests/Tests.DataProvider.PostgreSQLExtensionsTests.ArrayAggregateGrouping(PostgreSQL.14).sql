@@ -164,22 +164,22 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2.c1,
-	ARRAY_AGG(ALL g_2.v ORDER BY g_2."Id"),
-	ARRAY_AGG(g_2.v ORDER BY g_2."Id" DESC, g_2.v),
-	ARRAY_AGG(g_2.v)
+	t1."Key_1",
+	ARRAY_AGG(ALL t1.v ORDER BY t1."Id"),
+	ARRAY_AGG(t1.v ORDER BY t1."Id" DESC, t1.v),
+	ARRAY_AGG(t1.v)
 FROM
 	(
 		SELECT
-			g_1."Id" / 3 as c1,
+			g_1."Id" / 3 as "Key_1",
 			g_1."Id",
 			v as v
 		FROM
 			"SampleClass" g_1
 				INNER JOIN LATERAL UNNEST(g_1."StrArray") v ON 1=1
-	) g_2
+	) t1
 GROUP BY
-	g_2.c1
+	t1."Key_1"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
