@@ -4,8 +4,8 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[m_1].[Region],
-	[m_1].[City],
+	[m_1].[Key_1],
+	[m_1].[Key_2],
 	[d].[CustomerID],
 	[d].[CompanyName],
 	[d].[ContactName],
@@ -20,12 +20,12 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Region],
-			[t1].[City]
+			[t1].[Region] as [Key_1],
+			[t1].[City] as [Key_2]
 		FROM
 			[Customers] [t1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON ([m_1].[Region] = [d].[Region] OR [m_1].[Region] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[City] = [d].[City] OR [m_1].[City] IS NULL AND [d].[City] IS NULL)
+		INNER JOIN [Customers] [d] ON ([m_1].[Key_1] = [d].[Region] OR [m_1].[Key_1] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[Key_2] = [d].[City] OR [m_1].[Key_2] IS NULL AND [d].[City] IS NULL)
 
 BeforeExecute
 DisposeTransaction

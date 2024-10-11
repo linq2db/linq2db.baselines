@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @OrderDate  -- DateTime
-SET     @OrderDate = '2001-01-01 00:00:00.000'
+DECLARE @HasNewOrder  -- DateTime
+SET     @HasNewOrder = '2001-01-01 00:00:00.000'
 
 SELECT
 	[c_1].[CustomerID],
@@ -23,7 +23,7 @@ SELECT
 				[Orders] [o]
 					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 			WHERE
-				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', @OrderDate)
+				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', @HasNewOrder)
 		)
 			THEN 1
 		ELSE 0

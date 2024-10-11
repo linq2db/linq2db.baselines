@@ -2,9 +2,9 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	MAX([g_1].[ChildID])
+	MAX([ch].[ChildID])
 FROM
-	[Child] [g_1]
+	[Child] [ch]
 GROUP BY
-	[g_1].[ChildID]
+	[ch].[ChildID]
 

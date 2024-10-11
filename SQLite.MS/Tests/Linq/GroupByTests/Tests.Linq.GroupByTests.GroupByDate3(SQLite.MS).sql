@@ -2,21 +2,35 @@
 -- SQLite.MS SQLite
 
 SELECT
-	SUM([grp_1].[MoneyValue]),
-	[grp_1].[Year_1],
-	[grp_1].[Month_1]
+	SUM([t1].[MoneyValue]),
+	CAST(strftime('%Y', [t1].[Value_1]) AS INTEGER),
+	CAST(strftime('%m', [t1].[Value_1]) AS INTEGER)
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [grp].[DateTimeValue]) AS INTEGER)) || '-' || printf('%02d', CAST(strftime('%m', [grp].[DateTimeValue]) AS INTEGER)) || '-01 00:00:00.000') as [Date_1],
-			[grp].[MoneyValue],
-			CAST(strftime('%Y', strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [grp].[DateTimeValue]) AS INTEGER)) || '-' || printf('%02d', CAST(strftime('%m', [grp].[DateTimeValue]) AS INTEGER)) || '-01 00:00:00.000')) AS INTEGER) as [Year_1],
-			CAST(strftime('%m', strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [grp].[DateTimeValue]) AS INTEGER)) || '-' || printf('%02d', CAST(strftime('%m', [grp].[DateTimeValue]) AS INTEGER)) || '-01 00:00:00.000')) AS INTEGER) as [Month_1]
+			strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [grp].[DateTimeValue]) AS INTEGER)) || '-' || printf('%02d', CAST(strftime('%m', [grp].[DateTimeValue]) AS INTEGER)) || '-01 00:00:00.000') as [Value_1],
+			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
-	) [grp_1]
+	) [t1]
 GROUP BY
-	[grp_1].[Date_1],
-	[grp_1].[Year_1],
-	[grp_1].[Month_1]
+	[t1].[Value_1]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	SUM([t1].[MoneyValue]),
+	CAST(strftime('%Y', [t1].[Value_1]) AS INTEGER),
+	CAST(strftime('%m', [t1].[Value_1]) AS INTEGER)
+FROM
+	(
+		SELECT
+			strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [grp].[DateTimeValue]) AS INTEGER)) || '-' || printf('%02d', CAST(strftime('%m', [grp].[DateTimeValue]) AS INTEGER)) || '-01 00:00:00.000') as [Value_1],
+			[grp].[MoneyValue]
+		FROM
+			[LinqDataTypes] [grp]
+	) [t1]
+GROUP BY
+	[t1].[Value_1]
 

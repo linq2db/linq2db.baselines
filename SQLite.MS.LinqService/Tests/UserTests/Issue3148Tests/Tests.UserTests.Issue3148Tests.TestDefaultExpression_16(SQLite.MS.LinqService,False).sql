@@ -1,13 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Object
-SET     @p = NULL
 
 SELECT
-	[g_1].[LastName],
-	0,
-	NULL,
-	@p
+	[g_1].[LastName]
 FROM
 	[Person] [g_1]
 GROUP BY
@@ -15,14 +10,9 @@ GROUP BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Object
-SET     @p = NULL
 
 SELECT
-	[g_1].[LastName],
-	0,
-	NULL,
-	@p
+	[g_1].[LastName]
 FROM
 	[Person] [g_1]
 GROUP BY

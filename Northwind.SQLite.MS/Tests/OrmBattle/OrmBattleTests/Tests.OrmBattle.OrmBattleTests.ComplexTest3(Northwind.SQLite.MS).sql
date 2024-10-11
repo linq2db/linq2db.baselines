@@ -22,7 +22,10 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[p].[Discontinued],
+	CASE
+		WHEN [p].[Discontinued] = 0 THEN 1
+		ELSE 0
+	END,
 	[p].[ProductID],
 	[p].[ProductName],
 	[p].[SupplierID],
@@ -32,6 +35,11 @@ SELECT
 	[p].[UnitsInStock],
 	[p].[UnitsOnOrder],
 	[p].[ReorderLevel],
+	[p].[Discontinued],
+	CASE
+		WHEN [p].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END,
 	[a_Supplier].[SupplierID]
 FROM
 	[Products] [p]
