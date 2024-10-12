@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 5
+DECLARE @part1  -- Int32
+SET     @part1 = 2
+DECLARE @part2  -- Int32
+SET     @part2 = 3
 
 SELECT
-	CAST(strftime('%M', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@Value AS NVarChar(11)) || ' Minute')) AS INTEGER)
+	CAST(strftime('%M', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@part1 + @part2 AS NVarChar(11)) || ' Minute')) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

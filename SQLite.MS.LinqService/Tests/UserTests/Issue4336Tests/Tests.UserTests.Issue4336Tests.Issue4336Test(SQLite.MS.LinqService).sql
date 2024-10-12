@@ -110,8 +110,8 @@ SELECT
 	[pop].[ProductId],
 	[vpc].[CategoryId],
 	COALESCE([pcc].[PeriodOrderLimit],0),
-	COALESCE([vsp_1].[vsp],0),
-	COALESCE([pcc].[PeriodOrderLimit],0) - COALESCE([vsp_1].[vsp],0),
+	COALESCE([vsp_1].[Quantity],0),
+	COALESCE([pcc].[PeriodOrderLimit],0) - COALESCE([vsp_1].[Quantity],0),
 	[v2_1].[MaxCapacity],
 	[v2_1].[Quantity],
 	[v2_1].[FreeCapacity]
@@ -122,7 +122,7 @@ FROM
 		LEFT JOIN [ProductCategory] [pcc] ON [pcc].[Id] = [vpc].[CategoryId]
 		LEFT JOIN (
 			SELECT
-				COALESCE([vsp].[Quantity],0) as [vsp],
+				COALESCE([vsp].[Quantity],0) as [Quantity],
 				[vsp].[Id],
 				[vsp].[ProductId]
 			FROM

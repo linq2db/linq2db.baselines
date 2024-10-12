@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 104
+DECLARE @records  -- Int32
+SET     @records = 3
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < 101 + @records
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -91,11 +91,11 @@ ORDER BY
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 104
+DECLARE @records  -- Int32
+SET     @records = 3
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < 101 + @records
 

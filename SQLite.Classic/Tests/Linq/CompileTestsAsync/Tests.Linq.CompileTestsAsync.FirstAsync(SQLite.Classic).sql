@@ -34,13 +34,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @Id  -- Object
+DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Id_1  -- Int32
 SET     @Id_1 = 2
 
 SELECT
-	CAST(@Id AS INTEGER),
+	@Id,
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]

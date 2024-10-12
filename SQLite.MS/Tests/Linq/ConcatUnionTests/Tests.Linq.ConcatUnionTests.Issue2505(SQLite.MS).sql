@@ -17,7 +17,10 @@ FROM
 				ELSE @p_1
 			END as [Gender],
 			[i].[FirstName],
-			[i].[LastName]
+			[i].[PersonID] as [ID],
+			[i].[LastName],
+			[i].[MiddleName],
+			[i].[Gender] as [Gender_1]
 		FROM
 			[Person] [i]
 		UNION ALL
@@ -27,7 +30,10 @@ FROM
 				ELSE @p_1
 			END as [Gender],
 			[i_1].[FirstName],
-			[i_1].[LastName]
+			[i_1].[PersonID] as [ID],
+			[i_1].[LastName],
+			[i_1].[MiddleName],
+			[i_1].[Gender] as [Gender_1]
 		FROM
 			[Person] [i_1]
 	) [i_2]

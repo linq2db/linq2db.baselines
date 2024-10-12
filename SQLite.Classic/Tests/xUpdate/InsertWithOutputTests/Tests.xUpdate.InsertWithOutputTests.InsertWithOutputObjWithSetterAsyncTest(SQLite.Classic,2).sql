@@ -15,12 +15,10 @@ CREATE TABLE IF NOT EXISTS [TableWithData]
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @Value  -- Int32
-SET     @Value = 200
+DECLARE @value  -- Int32
+SET     @value = 2
 DECLARE @value_1  -- Int32
 SET     @value_1 = 2
-DECLARE @ValueStr NVarChar(8) -- String
-SET     @ValueStr = 'SomeStr2'
 
 INSERT INTO [TableWithData]
 (
@@ -30,9 +28,9 @@ INSERT INTO [TableWithData]
 )
 VALUES
 (
-	@Value,
+	@value * 100,
 	@value_1,
-	@ValueStr
+	'SomeStr' || @value
 )
 RETURNING
 	[TableWithData].[Id],

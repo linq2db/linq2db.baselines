@@ -28,30 +28,30 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 1002
 DECLARE @id  -- Int32
 SET     @id = 1001
+DECLARE @id_1  -- Int32
+SET     @id_1 = 1001
 
 UPDATE
 	[Child]
 SET
-	[ChildID] = @ChildID
+	[ChildID] = @id + 1
 FROM
 	[Parent] [a_Parent]
 WHERE
-	[Child].[ChildID] = @id AND [a_Parent].[Value1] = 1 AND
+	[Child].[ChildID] = @id_1 AND [a_Parent].[Value1] = 1 AND
 	[Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 1002
+DECLARE @id  -- Int32
+SET     @id = 1001
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @id + 1
 

@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Second  -- Int32
-SET     @Second = -35
+DECLARE @part1  -- Int32
+SET     @part1 = 5
+DECLARE @part2  -- Int32
+SET     @part2 = 40
 
 SELECT
-	CAST(strftime('%S', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@Second AS NVarChar(11)) || ' Second')) AS INTEGER)
+	CAST(strftime('%S', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@part1 - @part2 AS NVarChar(11)) || ' Second')) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 
