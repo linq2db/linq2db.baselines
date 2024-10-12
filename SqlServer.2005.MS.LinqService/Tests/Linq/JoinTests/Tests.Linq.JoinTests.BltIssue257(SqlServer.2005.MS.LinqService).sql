@@ -2,16 +2,16 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[b_1].[Date_1],
+	[t1].[Key_1],
 	COUNT(*)
 FROM
 	(
 		SELECT
-			DateAdd(dd, DateDiff(dd, 0, [b].[DateTimeValue]), 0) as [Date_1]
+			DateAdd(dd, DateDiff(dd, 0, [b].[DateTimeValue]), 0) as [Key_1]
 		FROM
 			[LinqDataTypes] [b]
 				INNER JOIN [Parent] [p] ON [b].[ID] = [p].[ParentID]
-	) [b_1]
+	) [t1]
 GROUP BY
-	[b_1].[Date_1]
+	[t1].[Key_1]
 

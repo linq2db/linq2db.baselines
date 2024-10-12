@@ -17,7 +17,7 @@ DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL)
+	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

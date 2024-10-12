@@ -44,10 +44,14 @@ SELECT 4,3,4,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','bc7b663d-0fde-4327-8f92-5d8
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = '0b8afe27-481c-442e-b8cf-729ddfeece29'
+DECLARE @Id_1 UniqueIdentifier -- Guid
+SET     @Id_1 = '0b8afe27-481c-442e-b8cf-729ddfeece30'
+DECLARE @Id_2 NVarChar(4000) -- String
+SET     @Id_2 = N'ENUM1_VALUE'
+DECLARE @Id_3 NVarChar(4000) -- String
+SET     @Id_3 = N'ENUM2_VALUE'
 
 SELECT
 	[t1].[Id],
@@ -63,14 +67,14 @@ FROM
 	(
 		SELECT
 			[r].[Id],
-			5 as [Byte],
-			5 as [Byte_1],
-			@Guid as [Guid],
-			@GuidN as [GuidN],
-			N'ENUM1_VALUE' as [Enum],
-			N'ENUM2_VALUE' as [EnumN],
-			1 as [Bool],
-			0 as [BoolN]
+			CAST(5 AS TinyInt) as [Byte],
+			CAST(5 AS TinyInt) as [Byte_1],
+			CAST(@Id AS UniqueIdentifier) as [Guid],
+			CAST(@Id_1 AS UniqueIdentifier) as [GuidN],
+			CAST(@Id_2 AS NChar) as [Enum],
+			CAST(@Id_3 AS NChar) as [EnumN],
+			CAST(1 AS Bit) as [Bool],
+			CAST(0 AS Bit) as [BoolN]
 		FROM
 			[Issue3360Table1] [r]
 		WHERE

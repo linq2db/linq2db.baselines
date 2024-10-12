@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Power([t].[MoneyValue], 3)) as [c1]
+			Floor(CAST(Power(CAST([t].[MoneyValue] AS Float), CAST(3 AS Float)) AS Decimal(38, 17))) as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [t_1]

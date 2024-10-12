@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[groupedData_1].[c1],
+	[t1].[Key_1],
 	COUNT(*)
 FROM
 	(
@@ -10,13 +10,13 @@ FROM
 			CASE
 				WHEN [child].[FirstName] = N'John' THEN [child].[FirstName]
 				ELSE N'a'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Parent] [groupedData],
 			[Person] [child]
 		WHERE
 			[child].[PersonID] = [groupedData].[ParentID]
-	) [groupedData_1]
+	) [t1]
 GROUP BY
-	[groupedData_1].[c1]
+	[t1].[Key_1]
 

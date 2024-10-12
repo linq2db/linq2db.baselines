@@ -2,7 +2,6 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[it_1].[IsActive],
 	[it_1].[Other]
 FROM
 	(

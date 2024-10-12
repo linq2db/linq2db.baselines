@@ -5,7 +5,7 @@ SET     @n = 1
 
 SELECT
 	COUNT(CASE
-		WHEN [g_2].[ParentID] < 3 THEN 1
+		WHEN [t1].[ParentID] < 3 THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -17,8 +17,8 @@ FROM
 			[Child] [g_1]
 		WHERE
 			[g_1].[ParentID] + 2 > @n
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ParentID],
-	[g_2].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 

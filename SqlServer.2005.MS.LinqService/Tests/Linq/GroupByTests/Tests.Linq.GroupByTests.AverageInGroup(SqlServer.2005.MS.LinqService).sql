@@ -342,32 +342,32 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[g_1].[GroupId],
-	AVG([g_1].[DataValue]),
-	AVG([g_1].[DataValue]),
+	[t].[GroupId],
+	AVG([t].[DataValue]),
+	AVG([t].[DataValue]),
 	AVG(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
-	AVG(DISTINCT [g_1].[DataValue]),
+	CAST(AVG(DISTINCT [t].[DataValue]) AS Decimal(38, 17)),
 	AVG(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END)
 FROM
-	[AggregationData] [g_1]
+	[AggregationData] [t]
 WHERE
-	[g_1].[DataValue] IS NOT NULL
+	[t].[DataValue] IS NOT NULL
 GROUP BY
-	[g_1].[GroupId]
+	[t].[GroupId]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
