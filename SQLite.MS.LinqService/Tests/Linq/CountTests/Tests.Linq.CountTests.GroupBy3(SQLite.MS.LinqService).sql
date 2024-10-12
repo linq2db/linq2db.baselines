@@ -2,10 +2,10 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[g_2].[ParentID],
-	MIN([g_2].[ChildID]),
+	[t1].[ParentID],
+	MIN([t1].[ChildID]),
 	COUNT(CASE
-		WHEN [g_2].[ChildID] > 25 THEN 1
+		WHEN [t1].[ChildID] > 25 THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -17,7 +17,7 @@ FROM
 			[Child] [g_1]
 		WHERE
 			[g_1].[ParentID] > 0
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ParentID]
+	[t1].[ParentID]
 

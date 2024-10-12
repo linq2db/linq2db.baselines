@@ -11,8 +11,8 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[x_1].[Key_1],
-	SUM([x_1].[MatchScore])
+	[t1].[Key_1],
+	SUM([t1].[MatchScore])
 FROM
 	(
 		SELECT DISTINCT
@@ -20,7 +20,7 @@ FROM
 			4 as [MatchScore]
 		FROM
 			[Parent] [x]
-	) [x_1]
+	) [t1]
 GROUP BY
-	[x_1].[Key_1]
+	[t1].[Key_1]
 

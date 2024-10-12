@@ -44,32 +44,32 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[g_1].[GroupId],
-	AVG([g_1].[DataValue]),
-	AVG([g_1].[DataValue]),
+	[t].[GroupId],
+	AVG([t].[DataValue]),
+	AVG([t].[DataValue]),
 	AVG(CASE
-		WHEN [g_1].[DataValue] % 2 = 0 THEN [g_1].[DataValue]
+		WHEN [t].[DataValue] % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN [g_1].[DataValue] % 2 = 0 THEN [g_1].[DataValue]
+		WHEN [t].[DataValue] % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
-	AVG(DISTINCT [g_1].[DataValue]),
+	CAST(AVG(DISTINCT [t].[DataValue]) AS Decimal),
 	AVG(DISTINCT CASE
-		WHEN [g_1].[DataValue] % 2 = 0 THEN [g_1].[DataValue]
+		WHEN [t].[DataValue] % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN [g_1].[DataValue] % 2 = 0 THEN [g_1].[DataValue]
+		WHEN [t].[DataValue] % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END)
 FROM
-	[AggregationData] [g_1]
+	[AggregationData] [t]
 WHERE
-	[g_1].[DataValue] IS NOT NULL
+	[t].[DataValue] IS NOT NULL
 GROUP BY
-	[g_1].[GroupId]
+	[t].[GroupId]
 
 BeforeExecute
 -- SQLite.Classic SQLite

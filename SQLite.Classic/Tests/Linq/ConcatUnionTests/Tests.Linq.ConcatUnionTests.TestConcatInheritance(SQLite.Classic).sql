@@ -34,24 +34,42 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	0,
-	[t1].[Discr],
-	[t1].[EntityId],
-	[t1].[Value]
+	[t3].[EntityId],
+	CASE
+		WHEN [t3].[Discr] = 1 THEN 1
+		ELSE 0
+	END,
+	[t3].[Discr],
+	[t3].[Value_1],
+	[t3].[c1],
+	[t3].[c2],
+	[t3].[c3]
 FROM
-	[ConcatTest] [t1]
-WHERE
-	[t1].[Discr] <> 1
-UNION ALL
-SELECT
-	1,
-	[t2].[Discr],
-	[t2].[EntityId],
-	[t2].[Value]
-FROM
-	[ConcatTest] [t2]
-WHERE
-	[t2].[Discr] = 1
+	(
+		SELECT
+			[t1].[EntityId],
+			[t1].[Discr],
+			[t1].[Value] as [Value_1],
+			NULL as [c1],
+			NULL as [c2],
+			NULL as [c3]
+		FROM
+			[ConcatTest] [t1]
+		WHERE
+			[t1].[Discr] <> 1
+		UNION ALL
+		SELECT
+			NULL as [EntityId],
+			NULL as [Discr],
+			NULL as [Value_1],
+			[t2].[EntityId] as [c1],
+			[t2].[Discr] as [c2],
+			[t2].[Value] as [c3]
+		FROM
+			[ConcatTest] [t2]
+		WHERE
+			[t2].[Discr] = 1
+	) [t3]
 
 BeforeExecute
 -- SQLite.Classic SQLite

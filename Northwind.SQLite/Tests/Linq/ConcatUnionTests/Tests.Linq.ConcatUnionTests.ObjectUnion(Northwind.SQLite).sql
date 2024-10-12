@@ -4,7 +4,10 @@ DECLARE @take  -- Int32
 SET     @take = 5
 
 SELECT
-	[t1].[Discontinued],
+	CASE
+		WHEN [t1].[Discontinued] = 0 THEN 1
+		ELSE 0
+	END,
 	[t1].[ProductID],
 	[t1].[ProductName],
 	[t1].[SupplierID],
@@ -14,6 +17,11 @@ SELECT
 	[t1].[UnitsInStock],
 	[t1].[UnitsOnOrder],
 	[t1].[ReorderLevel],
+	[t1].[Discontinued],
+	CASE
+		WHEN [t1].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END,
 	[t1].[CategoryName],
 	[t1].[ProductName_1]
 FROM

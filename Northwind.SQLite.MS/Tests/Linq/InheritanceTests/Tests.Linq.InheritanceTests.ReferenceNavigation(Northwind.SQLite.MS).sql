@@ -17,7 +17,10 @@ SELECT
 	[a_Order].[ShipPostalCode],
 	[a_Order].[ShipCountry],
 	[a_Product].[ProductID],
-	[a_Product].[Discontinued],
+	CASE
+		WHEN [a_Product].[Discontinued] = 0 THEN 1
+		ELSE 0
+	END,
 	[a_Product].[ProductName],
 	[a_Product].[SupplierID],
 	[a_Product].[CategoryID],
@@ -25,7 +28,12 @@ SELECT
 	[a_Product].[UnitPrice],
 	[a_Product].[UnitsInStock],
 	[a_Product].[UnitsOnOrder],
-	[a_Product].[ReorderLevel]
+	[a_Product].[ReorderLevel],
+	[a_Product].[Discontinued],
+	CASE
+		WHEN [a_Product].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END
 FROM
 	[Order Details] [od]
 		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]

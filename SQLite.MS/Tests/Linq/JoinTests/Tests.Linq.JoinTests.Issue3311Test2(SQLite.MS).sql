@@ -2,7 +2,10 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[x].[PersonID] + 1
+	(
+		SELECT
+			[x].[PersonID] + 1
+	)
 FROM
 	[Person] [x]
 

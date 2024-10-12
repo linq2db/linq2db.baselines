@@ -2,8 +2,8 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[g_2].[LastName],
-	[g_2].[COUNT_1]
+	[t1].[LastName],
+	[t1].[COUNT_1]
 FROM
 	(
 		SELECT
@@ -19,7 +19,7 @@ FROM
 		GROUP BY
 			[a_Employee].[EmployeeID],
 			[a_Employee].[LastName]
-	) [g_2]
+	) [t1]
 WHERE
 	(
 		SELECT
@@ -27,6 +27,6 @@ WHERE
 		FROM
 			[EmployeeTerritories] [a_EmployeeTerritories]
 		WHERE
-			[g_2].[EmployeeID] IS NOT NULL AND [g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
+			[t1].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
 	) > 1
 

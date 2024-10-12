@@ -159,9 +159,9 @@ FROM
 		FROM
 			[MasterManyId] [g_1]
 		LIMIT @take
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[Id1]
+	[t1].[Id1]
 
 BeforeExecute
 -- SQLite.MS SQLite
