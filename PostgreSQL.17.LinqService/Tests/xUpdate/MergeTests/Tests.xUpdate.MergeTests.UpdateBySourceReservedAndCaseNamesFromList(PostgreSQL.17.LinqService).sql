@@ -236,38 +236,21 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
-	(5,10,4,NULL::Int,NULL,NULL::Int), (6,NULL,NULL,NULL,216,NULL),
-	(3,NULL,3,NULL,NULL,NULL), (4,5,7,NULL,214,NULL)
+	(6), (4), (3), (5)
 ) "Source"
 (
-	source_as,
-	source_take,
-	source_skip,
-	"source_Skip_1",
-	source_insert,
-	"source_SELECT"
+	"source_From"
 )
-ON ("Target"."Id" = "Source".source_as)
+ON ("Target"."Id" = "Source"."source_From")
 
-WHEN NOT MATCHED AND "Source".source_insert = 216 THEN
-INSERT
-(
-	"Id",
-	"Field1",
-	"Field2",
-	"Field3",
-	"Field4",
-	"Field5"
-)
-VALUES
-(
-	"Source".source_as,
-	"Source".source_take,
-	"Source".source_skip,
-	"Source"."source_Skip_1",
-	"Source".source_insert,
-	"Source"."source_SELECT"
-)
+WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE
+SET
+	"Id" = "Target"."Id",
+	"Field1" = "Target"."Field5",
+	"Field2" = "Target"."Field4",
+	"Field3" = "Target"."Field3",
+	"Field4" = "Target"."Field2",
+	"Field5" = "Target"."Field1"
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

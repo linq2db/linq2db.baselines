@@ -220,67 +220,22 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Field1",
-	t1."Field2",
-	t1."Field3",
-	t1."Field4",
-	t1."Field5"
-FROM
-	"TestMerge2" t1
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @param Integer -- Int32
+SET     @param = 2
 
 MERGE INTO "TestMerge1" "Target"
-USING (VALUES
-	(5,10,4,NULL::Int,NULL,NULL::Int), (6,NULL,NULL,NULL,216,NULL),
-	(3,NULL,3,NULL,NULL,NULL), (4,5,7,NULL,214,NULL)
+USING (
+	SELECT
+		t1."Id" as "source_Id"
+	FROM
+		"TestMerge2" t1
 ) "Source"
 (
-	source_as,
-	source_take,
-	source_skip,
-	"source_Skip_1",
-	source_insert,
-	"source_SELECT"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source".source_as)
+ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN NOT MATCHED AND "Source".source_insert = 216 THEN
-INSERT
-(
-	"Id",
-	"Field1",
-	"Field2",
-	"Field3",
-	"Field4",
-	"Field5"
-)
-VALUES
-(
-	"Source".source_as,
-	"Source".source_take,
-	"Source".source_skip,
-	"Source"."source_Skip_1",
-	"Source".source_insert,
-	"Source"."source_SELECT"
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Field1",
-	t1."Field2",
-	t1."Field3",
-	t1."Field4",
-	t1."Field5"
-FROM
-	"TestMerge1" t1
-ORDER BY
-	t1."Id"
+WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = :param THEN UPDATE
+SET
+	"Field1" = "Target"."Field1"
 
