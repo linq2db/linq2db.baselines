@@ -27,13 +27,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 20
+DECLARE @param  -- Int32
+SET     @param = 2
 
 UPDATE
 	[SampleClass]
 SET
-	[Value] = @p + [SampleClass].[Value] * 2
+	[Value] = @param * 10 + [SampleClass].[Value] * 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

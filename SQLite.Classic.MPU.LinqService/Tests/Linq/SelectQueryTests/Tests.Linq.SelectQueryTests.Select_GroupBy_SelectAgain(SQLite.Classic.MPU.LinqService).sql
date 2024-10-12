@@ -9,13 +9,13 @@ SELECT
 	[t1].[Count_2],
 	[t1].[Key_1],
 	[t1].[Count_1],
-	[t1].[HighestFirstName]
+	[t1].[MAX_1]
 FROM
 	(
 		SELECT
 			COUNT(*) as [Count_1],
+			MAX([group_1].[FirstName]) as [MAX_1],
 			[group_1].[LastName] as [Key_1],
-			MAX([group_1].[FirstName]) as [HighestFirstName],
 			COUNT(*) OVER() as [Count_2]
 		FROM
 			[Person] [group_1]

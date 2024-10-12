@@ -1,10 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Hour  -- Int32
-SET     @Hour = 22
+DECLARE @part1  -- Int32
+SET     @part1 = 11
+DECLARE @part2  -- Int32
+SET     @part2 = 11
 
 SELECT
-	CAST(strftime('%H', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@Hour AS NVarChar(11)) || ' Hour')) AS INTEGER)
+	CAST(strftime('%H', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@part1 + @part2 AS NVarChar(11)) || ' Hour')) AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

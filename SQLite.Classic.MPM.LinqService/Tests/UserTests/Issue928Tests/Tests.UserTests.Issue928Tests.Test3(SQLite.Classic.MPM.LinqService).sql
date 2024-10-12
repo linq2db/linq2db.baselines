@@ -5,13 +5,13 @@ SELECT
 	[p1].[ParentID],
 	[p1].[Value1],
 	[p2].[ParentID],
-	[p2].[SUM_1]
+	[p2].[Sum1]
 FROM
 	[Parent] [p1]
 		LEFT JOIN (
 			SELECT
 				[o].[ParentID],
-				SUM([o].[ParentID]) as [SUM_1]
+				SUM([o].[ParentID]) as [Sum1]
 			FROM
 				[Parent] [o]
 			WHERE

@@ -43,13 +43,13 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 1002
+DECLARE @id  -- Int32
+SET     @id = 1001
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @id + 1
 
