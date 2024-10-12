@@ -2,7 +2,6 @@
 -- SqlServer.2008
 
 SELECT
-	[it_1].[IsActive],
 	[it_1].[Other]
 FROM
 	(

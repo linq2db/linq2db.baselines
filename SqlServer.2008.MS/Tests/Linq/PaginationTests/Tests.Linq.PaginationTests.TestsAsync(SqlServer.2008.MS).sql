@@ -356,23 +356,30 @@ DECLARE @take Int -- Int32
 SET     @take = 20
 
 SELECT
-	[t1].[c1],
-	[t1].[Id],
-	[t1].[Value_1]
+	[t2].[TotalCount],
+	[t2].[Id],
+	[t2].[Value_1]
 FROM
 	(
 		SELECT
-			COUNT(*) OVER() as [c1],
-			[x].[Id],
-			[x].[Value] as [Value_1],
-			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RN]
+			[t1].[TotalCount],
+			[t1].[Id],
+			[t1].[Value_1],
+			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
-			[PaginationData] [x]
-		WHERE
-			[x].[Id] % 2 = 0
-	) [t1]
+			(
+				SELECT
+					COUNT(*) OVER() as [TotalCount],
+					[x].[Id],
+					[x].[Value] as [Value_1]
+				FROM
+					[PaginationData] [x]
+				WHERE
+					[x].[Id] % 2 = 0
+			) [t1]
+	) [t2]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008 (asynchronously)
@@ -396,18 +403,17 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
-	-1
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
 			[h].[Data_Id] = @Id
 	) [page]
-		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST((CAST([page].[RowNumber] - 1 AS Int) / 20) * 20 + 1 AS BigInt) AND CAST((CAST([page].[RowNumber] - 1 AS Int) / 20 + 1) * 20 AS BigInt)
 ORDER BY
 	[t1].[RowNumber]
 
@@ -440,18 +446,18 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1,
 	[t1].[TotalCount]
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			[h].[RowNumber]
 		FROM
 			[pagination_cte] [h]
 		WHERE
 			[h].[Data_Id] = @Id
 	) [page]
-		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST((CAST([page].[RowNumber] - 1 AS Int) / 20) * 20 + 1 AS BigInt) AND CAST((CAST([page].[RowNumber] - 1 AS Int) / 20 + 1) * 20 AS BigInt)
 ORDER BY
 	[t1].[RowNumber]
 
@@ -461,16 +467,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT
-			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			[h].[Id],
+			ROW_NUMBER() OVER(ORDER BY [h].[Id], [h].[Value] DESC) as [RowNumber]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [h]
 		WHERE
-			[x].[Id] % 2 = 0
+			[h].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[Id] = @Id
@@ -481,16 +487,16 @@ DECLARE @Id Int -- Int32
 SET     @Id = 78
 
 SELECT TOP (1)
-	([t1].[RowNumber] - 1) / 20 + 1
+	CAST(([t1].[RowNumber] - 1) / 20 + 1 AS Int)
 FROM
 	(
 		SELECT
-			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			[h].[Id],
+			ROW_NUMBER() OVER(ORDER BY [h].[Id], [h].[Value] DESC) as [RowNumber]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [h]
 		WHERE
-			[x].[Id] % 2 = 0
+			[h].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[Id] = @Id

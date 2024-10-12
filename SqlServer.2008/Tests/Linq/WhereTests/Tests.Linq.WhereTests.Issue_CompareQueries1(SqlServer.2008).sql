@@ -2,11 +2,11 @@
 -- SqlServer.2008
 
 SELECT TOP (2)
-	[t1].[c1]
+	[t2].[c1]
 FROM
 	(
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			COUNT([t1].[ID]) as [c1]
 		FROM
 			(
 				SELECT
@@ -15,18 +15,18 @@ FROM
 					[Person] [p]
 				WHERE
 					[p].[PersonID] IN (1, 2)
-			) [rec]
-	) [t1]
+			) [t1]
+	) [t2]
 
 BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (2)
-	[t1].[c1]
+	[t2].[c1]
 FROM
 	(
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			COUNT([t1].[ID]) as [c1]
 		FROM
 			(
 				SELECT
@@ -35,9 +35,9 @@ FROM
 					[Person] [p]
 				WHERE
 					1 = 0
-			) [rec]
+			) [t1]
 		WHERE
-			[rec].[ID] NOT IN (
+			[t1].[ID] NOT IN (
 				SELECT
 					[p_1].[PersonID]
 				FROM
@@ -45,5 +45,5 @@ FROM
 				WHERE
 					[p_1].[PersonID] IN (1, 2)
 			)
-	) [t1]
+	) [t2]
 

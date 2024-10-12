@@ -71,12 +71,12 @@ FROM
 					[ItemValue] [a_Values]
 				WHERE
 					[x].[Id] = [a_Values].[ItemId]
-			) as [SUM_1]
+			) as [c1]
 		FROM
 			[Item] [x]
 	) [t1]
 ORDER BY
-	Coalesce([t1].[SUM_1], 0)
+	Coalesce([t1].[c1], 0)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

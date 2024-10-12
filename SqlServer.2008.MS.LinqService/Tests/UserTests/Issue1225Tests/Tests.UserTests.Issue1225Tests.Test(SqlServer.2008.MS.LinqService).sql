@@ -88,7 +88,6 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	N'Id',
 	[it].[Id],
 	SUM([a_ActualStage].[Id])
 FROM

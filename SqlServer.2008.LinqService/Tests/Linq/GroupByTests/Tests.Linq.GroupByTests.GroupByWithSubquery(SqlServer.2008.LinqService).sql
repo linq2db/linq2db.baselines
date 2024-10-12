@@ -2,7 +2,6 @@
 -- SqlServer.2008
 
 SELECT
-	[t2].[c1],
 	COUNT(*)
 FROM
 	(

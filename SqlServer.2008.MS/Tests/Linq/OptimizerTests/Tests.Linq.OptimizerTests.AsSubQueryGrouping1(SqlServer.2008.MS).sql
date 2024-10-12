@@ -107,7 +107,7 @@ FROM
 			[FirstOptimizerData] [x]
 		GROUP BY
 			[x].[Key1]
-	) [x_1]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

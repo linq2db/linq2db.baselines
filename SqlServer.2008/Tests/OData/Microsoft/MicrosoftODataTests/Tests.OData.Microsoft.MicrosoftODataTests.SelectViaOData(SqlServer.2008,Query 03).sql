@@ -34,14 +34,12 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t1].[Name],
 	[t1].[Value_2],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
 			SUM([it].[YearsExperience]) as [Value_1],
-			N'Title' as [Name],
 			[it].[Title] as [Value_2]
 		FROM
 			[odata_person] [it]

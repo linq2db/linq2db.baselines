@@ -2,14 +2,9 @@
 -- SqlServer.2008
 
 SELECT
-	[t_1].[c1]
+	Floor(Degrees(CAST([t].[MoneyValue] AS Float)))
 FROM
-	(
-		SELECT
-			Degrees(CAST([t].[MoneyValue] AS Float)) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	Degrees(CAST([t].[MoneyValue] AS Float)) <> 0.10000000000000001
 

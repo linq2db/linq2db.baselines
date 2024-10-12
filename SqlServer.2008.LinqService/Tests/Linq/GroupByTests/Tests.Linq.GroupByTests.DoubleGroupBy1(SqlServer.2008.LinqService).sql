@@ -2,12 +2,12 @@
 -- SqlServer.2008
 
 SELECT
-	[g_2].[ParentID],
-	SUM([g_2].[Max_1])
+	[t1].[Key_1],
+	SUM([t1].[Max_1])
 FROM
 	(
 		SELECT
-			[g_1].[ParentID],
+			[g_1].[ParentID] as [Key_1],
 			MAX([g_1].[Value1]) as [Max_1]
 		FROM
 			[Parent] [g_1]
@@ -15,7 +15,7 @@ FROM
 			[g_1].[Value1] IS NOT NULL
 		GROUP BY
 			[g_1].[ParentID]
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ParentID]
+	[t1].[Key_1]
 

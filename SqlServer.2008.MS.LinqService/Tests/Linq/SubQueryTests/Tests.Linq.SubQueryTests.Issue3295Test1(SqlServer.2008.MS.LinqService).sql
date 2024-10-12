@@ -12,7 +12,7 @@ FROM
 				ELSE N'abc'
 			END as [StatusName],
 			CASE
-				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID]
+				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID_1]
 				ELSE [x].[PersonID]
 			END as [Id]
 		FROM
@@ -20,7 +20,8 @@ FROM
 				OUTER APPLY (
 					SELECT TOP (1)
 						[y].[PersonID],
-						[y].[Diagnosis]
+						[y].[Diagnosis],
+						[y].[PersonID] as [PersonID_1]
 					FROM
 						[Patient] [y]
 					WHERE

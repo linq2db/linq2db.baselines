@@ -2,9 +2,14 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	CAST(N'2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + N'-01 20:35:44.000' AS DateTime2)
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST(N'2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + N'-01 20:35:44.000' AS DateTime2) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	DatePart(year, CAST(N'2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + N'-01 20:35:44.000' AS DateTime2)) = 2010
+	DatePart(year, [t_1].[c1]) = 2010
 

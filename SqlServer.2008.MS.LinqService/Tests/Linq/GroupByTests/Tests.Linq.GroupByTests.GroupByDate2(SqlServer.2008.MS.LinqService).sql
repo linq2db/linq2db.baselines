@@ -2,9 +2,9 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	SUM([grp_1].[MoneyValue]),
-	[grp_1].[Year_1],
-	[grp_1].[Month_1]
+	SUM([t1].[MoneyValue]),
+	[t1].[Year_1],
+	[t1].[Month_1]
 FROM
 	(
 		SELECT
@@ -13,8 +13,8 @@ FROM
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
-	) [grp_1]
+	) [t1]
 GROUP BY
-	[grp_1].[Month_1],
-	[grp_1].[Year_1]
+	[t1].[Month_1],
+	[t1].[Year_1]
 

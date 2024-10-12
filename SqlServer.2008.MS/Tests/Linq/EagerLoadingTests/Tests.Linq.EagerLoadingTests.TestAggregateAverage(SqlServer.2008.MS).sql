@@ -104,20 +104,20 @@ FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [AVG_1]
+				AVG(CAST([t3].[Average] AS Float)) as [AVG_1]
 			FROM
 				(
 					SELECT
-						[t2].[DetailId]
+						[t2].[Average]
 					FROM
 						(
 							SELECT
-								[t1].[DetailId],
-								ROW_NUMBER() OVER (ORDER BY [t1].[DetailId]) as [RN]
+								[t1].[Average],
+								ROW_NUMBER() OVER (ORDER BY [t1].[Average]) as [RN]
 							FROM
 								(
 									SELECT DISTINCT
-										[a_Details].[DetailId]
+										[a_Details].[DetailId] as [Average]
 									FROM
 										[DetailClass] [a_Details]
 									WHERE

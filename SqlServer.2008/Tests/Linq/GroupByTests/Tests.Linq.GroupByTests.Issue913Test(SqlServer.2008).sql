@@ -33,7 +33,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[g_2].[IsDelisted],
+	[t1].[IsDelisted],
 	COUNT(*)
 FROM
 	(
@@ -44,9 +44,9 @@ FROM
 			END as [IsDelisted]
 		FROM
 			[Issue913Test] [g_1]
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[IsDelisted]
+	[t1].[IsDelisted]
 
 BeforeExecute
 -- SqlServer.2008

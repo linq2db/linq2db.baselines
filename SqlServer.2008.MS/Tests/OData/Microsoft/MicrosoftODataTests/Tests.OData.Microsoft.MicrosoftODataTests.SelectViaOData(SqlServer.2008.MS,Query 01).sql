@@ -34,7 +34,6 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	N'Title',
 	[it].[Title],
 	SUM([it].[YearsExperience])
 FROM

@@ -36,11 +36,18 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t1].[StatusBitmask] & 128,
-	[g_1].[StatusBitmask] & 128
+	CASE
+		WHEN ([k_1].[StatusBitmask] & 128) <> 0 THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([g_1].[StatusBitmask] & 128) <> 0 OR [g_1].[StatusBitmask] IS NULL
+			THEN 1
+		ELSE 0
+	END
 FROM
-	[i1084_person] [t1]
-		LEFT JOIN [i1084_student] [g_1] ON [t1].[Id] = [g_1].[Id] AND CAST([t1].[Number] AS NVarChar(11)) = [g_1].[Number]
+	[i1084_person] [k_1]
+		LEFT JOIN [i1084_student] [g_1] ON [k_1].[Id] = [g_1].[Id] AND CAST([k_1].[Number] AS NVarChar(11)) = [g_1].[Number]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

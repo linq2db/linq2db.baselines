@@ -98,7 +98,7 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t1].[not_null],
+	[t1].[c1],
 	[t1].[Id3]
 FROM
 	[TABLE1] [t1_1]
@@ -112,7 +112,7 @@ FROM
 					WHERE
 						[x_1].[PARENTID3] = [x].[ID2]
 				) as [Id3],
-				1 as [not_null]
+				N't2' as [c1]
 			FROM
 				[TABLE2] [x]
 			WHERE
