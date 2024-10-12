@@ -2,8 +2,6 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[g_2].[ChildId],
-	[g_2].[ParentId],
 	COUNT(*)
 FROM
 	(
@@ -12,10 +10,10 @@ FROM
 			2 as [ParentId]
 		FROM
 			[Child] [g_1]
-	) [g_2]
+	) [t1]
 GROUP BY
-	[g_2].[ChildId],
-	[g_2].[ParentId]
+	[t1].[ChildId],
+	[t1].[ParentId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

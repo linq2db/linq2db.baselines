@@ -87,10 +87,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[Discriminator],
+	CASE
+		WHEN [t1].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[t1].[Id],
+	[t1].[Discriminator],
 	[t1].[Value3],
+	CASE
+		WHEN [t1].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[t1].[Value2],
+	CASE
+		WHEN [t1].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[t1].[Value1]
 FROM
 	[TPHTableDefault] [t1]
@@ -101,10 +113,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]
@@ -116,10 +140,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]
@@ -131,10 +167,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]
@@ -146,10 +194,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]
@@ -161,10 +221,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]
@@ -176,10 +248,22 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[x].[Discriminator],
+	CASE
+		WHEN [x].[Discriminator] = 3 THEN 1
+		ELSE 0
+	END,
 	[x].[Id],
+	[x].[Discriminator],
 	[x].[Value3],
+	CASE
+		WHEN [x].[Discriminator] = 2 THEN 1
+		ELSE 0
+	END,
 	[x].[Value2],
+	CASE
+		WHEN [x].[Discriminator] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Value1]
 FROM
 	[TPHTableDefault] [x]

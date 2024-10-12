@@ -36,12 +36,12 @@ SELECT
 		SELECT
 			SUM(CASE
 				WHEN [d].[not_null] IS NOT NULL THEN [d].[StartHour]
-				ELSE 0
+				ELSE CAST(0 AS Decimal)
 			END)
 		FROM
 			(
 				SELECT
-					0 as [c1]
+					0 as [Result_1]
 			) [t1]
 				LEFT JOIN (
 					SELECT
