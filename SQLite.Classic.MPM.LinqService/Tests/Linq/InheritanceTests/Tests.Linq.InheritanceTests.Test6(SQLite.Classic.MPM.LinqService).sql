@@ -2,10 +2,18 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	CASE
+		WHEN [p].[Value1] = 2 THEN 1
+		ELSE 0
+	END,
+	[p].[ParentID],
 	[p].[Value1],
-	[p].[ParentID]
+	CASE
+		WHEN [p].[Value1] = 1 THEN 1
+		ELSE 0
+	END
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] = 1 OR [p].[Value1] = 2)
+	[p].[Value1] = 1 OR [p].[Value1] = 2
 
