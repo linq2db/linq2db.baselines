@@ -19,7 +19,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[x].[Discontinued]
+	IIF([x].[Discontinued] = 1, 1, 0)
 FROM
 	[Products] [x]
 

@@ -2,6 +2,7 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
+	IIF([x].[Discontinued] = 1, 1, 0),
 	[x].[Discontinued],
 	[x].[ProductID],
 	[x].[ProductName],
