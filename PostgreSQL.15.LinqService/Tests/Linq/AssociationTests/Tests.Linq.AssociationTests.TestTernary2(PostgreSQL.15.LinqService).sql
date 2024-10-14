@@ -2,6 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
+	"a_Middle"."ParentID",
 	"a_Bottom"."ParentID",
 	"a_Bottom"."ChildID",
 	"a_Bottom"."GrandChildID"
