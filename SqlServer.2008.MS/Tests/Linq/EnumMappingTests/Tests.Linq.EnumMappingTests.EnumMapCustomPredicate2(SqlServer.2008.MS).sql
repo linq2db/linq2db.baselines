@@ -25,6 +25,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @TestField BigInt -- Int64
+SET     @TestField = 12
 
 SELECT
 	[entity].[ID],
@@ -33,7 +35,7 @@ SELECT
 FROM
 	[LinqDataTypes] [entity]
 WHERE
-	[entity].[BigIntValue] = 12
+	[entity].[BigIntValue] = @TestField
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
