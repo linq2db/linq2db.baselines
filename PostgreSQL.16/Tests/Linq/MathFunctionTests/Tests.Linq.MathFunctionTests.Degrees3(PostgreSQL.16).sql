@@ -2,14 +2,14 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t_1.c1
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Degrees(Floor(t."MoneyValue")::Int) as c1
+			Degrees(Floor(p."MoneyValue")::Int) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1.c1::Float <> 0.10000000000000001
+	t."Value_1"::Float <> 0.10000000000000001
 
