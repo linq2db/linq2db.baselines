@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[p].[ParentID],
+	IIF([p].[ParentID] = 2, 1, 0),
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[t2].[ParentID],

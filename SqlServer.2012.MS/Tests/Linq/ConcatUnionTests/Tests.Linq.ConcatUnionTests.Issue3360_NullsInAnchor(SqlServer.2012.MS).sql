@@ -45,6 +45,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Variant -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Variant -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	[t1].[Id],
@@ -64,8 +68,8 @@ FROM
 			NULL as [Byte_1],
 			NULL as [Guid],
 			NULL as [Guid_1],
-			NULL as [Enum],
-			NULL as [EnumN],
+			CAST(@Id AS NChar) as [Enum],
+			CAST(@Id_1 AS NChar) as [EnumN],
 			NULL as [Bool],
 			NULL as [Bool_1]
 		FROM
