@@ -2,6 +2,10 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
+	CASE
+		WHEN [x].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END,
 	[x].[Discontinued],
 	[x].[ProductID],
 	[x].[ProductName],

@@ -19,7 +19,10 @@ BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[x].[Discontinued]
+	CASE
+		WHEN [x].[Discontinued] = 1 THEN 1
+		ELSE 0
+	END
 FROM
 	[Products] [x]
 

@@ -2,36 +2,36 @@
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t1].[ShipCountry],
+	[t1].[Key_1],
 	SUM([t1].[Via1]),
 	SUM([t1].[Via2]),
 	SUM([t1].[Via3])
 FROM
 	(
 		SELECT
-			[x].[ShipCountry],
+			[x].[ShipCountry] as [Key_1],
 			[x].[Freight] as [Via1],
-			0 as [Via2],
-			0 as [Via3]
+			CAST(0 AS Decimal) as [Via2],
+			CAST(0 AS Decimal) as [Via3]
 		FROM
 			[Orders] [x]
 		WHERE
 			[x].[ShipVia] = 1
 		UNION
 		SELECT
-			[x_1].[ShipCountry],
-			0 as [Via1],
+			[x_1].[ShipCountry] as [Key_1],
+			CAST(0 AS Decimal) as [Via1],
 			[x_1].[Freight] as [Via2],
-			0 as [Via3]
+			CAST(0 AS Decimal) as [Via3]
 		FROM
 			[Orders] [x_1]
 		WHERE
 			[x_1].[ShipVia] = 2
 		UNION
 		SELECT
-			[x_2].[ShipCountry],
-			0 as [Via1],
-			0 as [Via2],
+			[x_2].[ShipCountry] as [Key_1],
+			CAST(0 AS Decimal) as [Via1],
+			CAST(0 AS Decimal) as [Via2],
 			[x_2].[Freight] as [Via3]
 		FROM
 			[Orders] [x_2]
@@ -39,7 +39,7 @@ FROM
 			[x_2].[ShipVia] = 3
 	) [t1]
 GROUP BY
-	[t1].[ShipCountry]
+	[t1].[Key_1]
 LIMIT 1
 
 BeforeExecute
