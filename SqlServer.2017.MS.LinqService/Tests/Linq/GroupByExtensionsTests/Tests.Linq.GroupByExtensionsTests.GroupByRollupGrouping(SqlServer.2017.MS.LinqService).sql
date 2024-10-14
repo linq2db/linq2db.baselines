@@ -238,7 +238,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	GROUPING([g_2].[Id1]),
+	IIF(GROUPING([g_2].[Id1]) = 1, 1, 0),
 	[g_2].[Id1],
 	COUNT(*)
 FROM

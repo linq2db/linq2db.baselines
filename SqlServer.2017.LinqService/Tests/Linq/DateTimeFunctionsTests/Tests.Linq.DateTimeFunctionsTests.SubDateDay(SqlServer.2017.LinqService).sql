@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT
-	DateDiff(day, [t].[DateTimeValue], DateAdd(hour, 100, [t].[DateTimeValue]))
+	CAST(DateDiff(day, [t].[DateTimeValue], DateAdd(hour, 100, [t].[DateTimeValue])) AS Int)
 FROM
 	[LinqDataTypes] [t]
 

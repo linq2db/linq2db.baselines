@@ -20,13 +20,13 @@ BeforeExecute
 
 SELECT
 	[p].[Id],
-	N'str1'
+	CAST('str1' AS VarChar(Max))
 FROM
 	[Issue3360Table] [p]
 UNION ALL
 SELECT
 	[p_1].[Id],
-	N'str2'
+	CAST('str2' AS VarChar(Max))
 FROM
 	[Issue3360Table] [p_1]
 
@@ -35,13 +35,13 @@ BeforeExecute
 
 SELECT
 	[p].[Id],
-	N'str2'
+	CAST('str2' AS VarChar(Max))
 FROM
 	[Issue3360Table] [p]
 UNION ALL
 SELECT
 	[p_1].[Id],
-	N'str1'
+	CAST('str1' AS VarChar(Max))
 FROM
 	[Issue3360Table] [p_1]
 

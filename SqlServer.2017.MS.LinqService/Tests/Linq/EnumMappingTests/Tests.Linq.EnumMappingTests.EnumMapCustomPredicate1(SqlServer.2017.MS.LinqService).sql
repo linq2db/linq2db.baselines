@@ -25,6 +25,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @TestField BigInt -- Int64
+SET     @TestField = 12
 
 SELECT
 	[entity].[ID],
@@ -32,7 +34,7 @@ SELECT
 FROM
 	[LinqDataTypes] [entity]
 WHERE
-	[entity].[BigIntValue] = 12
+	[entity].[BigIntValue] = @TestField
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
