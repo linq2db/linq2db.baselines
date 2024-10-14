@@ -2,7 +2,7 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."MoneyValue"::Real
+	Floor(t."MoneyValue"::Real)::Int
 FROM
 	"LinqDataTypes" t
 
