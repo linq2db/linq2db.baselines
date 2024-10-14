@@ -27,12 +27,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t1].[Discriminator],
+	IIF([t1].[Discriminator] = 3, 1, 0),
 	[t1].[Id],
 	[t1].[Value3],
 	[t1].[NullableBool],
+	IIF([t1].[Discriminator] = 2, 1, 0),
 	[t1].[Value2],
-	[t1].[Value1]
+	IIF([t1].[Discriminator] = 1, 1, 0),
+	[t1].[Value1],
+	[t1].[Discriminator]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -42,12 +45,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -57,12 +63,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -72,12 +81,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -87,12 +99,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -102,12 +117,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -117,12 +135,15 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
-	[x].[Discriminator],
+	IIF([x].[Discriminator] = 3, 1, 0),
 	[x].[Id],
 	[x].[Value3],
 	[x].[NullableBool],
+	IIF([x].[Discriminator] = 2, 1, 0),
 	[x].[Value2],
-	[x].[Value1]
+	IIF([x].[Discriminator] = 1, 1, 0),
+	[x].[Value1],
+	[x].[Discriminator]
 FROM
 	[TPHTable] [x]
 WHERE

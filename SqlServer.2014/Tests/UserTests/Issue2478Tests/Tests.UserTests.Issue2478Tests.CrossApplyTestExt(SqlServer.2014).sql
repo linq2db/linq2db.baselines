@@ -3,18 +3,23 @@
 
 SELECT
 	[p].[ParentID],
-	[c_2].[Count_1],
-	[c_2].[Sum_1]
+	[c_2].[c1],
+	[c_2].[c2]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [Count_1],
-				SUM([c_1].[ChildID]) as [Sum_1]
+				COUNT(*) as [c1],
+				SUM([c_1].[ChildID]) as [c2]
 			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] = [p].[ParentID]
+				(
+					SELECT
+						[t].[ChildID]
+					FROM
+						[Child] [t]
+					WHERE
+						[t].[ParentID] = [p].[ParentID]
+				) [c_1]
 		) [c_2]
 
 BeforeExecute
@@ -28,8 +33,13 @@ FROM
 			SELECT
 				COUNT(*) as [Count_1]
 			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] = [t1].[ParentID]
+				(
+					SELECT
+						*
+					FROM
+						[Child] [t]
+					WHERE
+						[t].[ParentID] = [t1].[ParentID]
+				) [c_1]
 		) [c_2]
 

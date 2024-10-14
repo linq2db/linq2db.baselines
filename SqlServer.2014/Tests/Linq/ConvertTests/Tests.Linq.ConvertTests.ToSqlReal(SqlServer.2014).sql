@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	CAST([t].[MoneyValue] AS Real)
+	CAST(Floor(CAST([t].[MoneyValue] AS Real)) AS Int)
 FROM
 	[LinqDataTypes] [t]
 
