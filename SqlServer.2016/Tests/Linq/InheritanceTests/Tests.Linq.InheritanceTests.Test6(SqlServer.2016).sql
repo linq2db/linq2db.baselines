@@ -2,10 +2,12 @@
 -- SqlServer.2016
 
 SELECT
+	IIF([p].[Value1] = 2, 1, 0),
+	[p].[ParentID],
 	[p].[Value1],
-	[p].[ParentID]
+	IIF([p].[Value1] = 1, 1, 0)
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] = 1 OR [p].[Value1] = 2)
+	[p].[Value1] = 1 OR [p].[Value1] = 2
 

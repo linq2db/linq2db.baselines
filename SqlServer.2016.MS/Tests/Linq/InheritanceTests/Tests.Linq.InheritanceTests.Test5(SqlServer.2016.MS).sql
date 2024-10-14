@@ -2,8 +2,9 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[p].[Value1],
+	IIF([p].[Value1] = 1, 1, 0),
 	[p].[ParentID],
+	[p].[Value1],
 	[p].[Value1]
 FROM
 	[Parent] [p]

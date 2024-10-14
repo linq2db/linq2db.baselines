@@ -39,7 +39,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	GROUPING([g_2].[Id1]),
+	IIF(GROUPING([g_2].[Id1]) = 1, 1, 0),
 	[g_2].[Id1],
 	COUNT(*)
 FROM
