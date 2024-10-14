@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID)
+	x."ParentID" = :ParentID OR x."ParentID" = :ParentID
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID_1)
+	x."ParentID" = :ParentID OR x."ParentID" = :ParentID_1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
