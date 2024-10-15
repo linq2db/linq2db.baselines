@@ -10,18 +10,18 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t2]
+			[Parent] [p]
 				INNER JOIN (
 					SELECT
 						[ch].[ParentID],
 						ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn]
 					FROM
 						[Child] [ch]
-				) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+				) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 		WHERE
-			[t2].[ParentID] = 1
+			[p].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
@@ -31,11 +31,11 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t2].[ParentID],
+	[p].[ParentID],
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
-	[Parent] [t2]
+	[Parent] [p]
 		INNER JOIN (
 			SELECT
 				[ch].[ParentID],
@@ -43,7 +43,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn]
 			FROM
 				[Child] [ch]
-		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
-	[t2].[ParentID] = 1
+	[p].[ParentID] = 1
 

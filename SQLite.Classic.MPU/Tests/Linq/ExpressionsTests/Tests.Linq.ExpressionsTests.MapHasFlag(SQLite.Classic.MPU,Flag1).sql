@@ -46,7 +46,7 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	(([t].[Flags] & CAST(@flag AS INTEGER)) <> 0 OR CAST(@flag AS INTEGER) IS NULL)
+	([t].[Flags] & CAST(@flag AS INTEGER)) <> 0 OR CAST(@flag AS INTEGER) IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
