@@ -43,6 +43,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @Id  -- Object
+SET     @Id = NULL
+DECLARE @Id_1  -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	[t1].[Id],
@@ -62,8 +66,8 @@ FROM
 			[r].[Byte] as [Byte_1],
 			[r].[Guid],
 			[r].[Guid] as [Guid_1],
-			NULL as [Enum],
-			NULL as [EnumN],
+			@Id as [Enum],
+			@Id_1 as [EnumN],
 			[r].[Bool],
 			[r].[Bool] as [Bool_1]
 		FROM

@@ -2,17 +2,17 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [p].[MoneyValue] <> 0 THEN 1
+				WHEN [t].[MoneyValue] <> 0 THEN 1
 				ELSE 0
 			END as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] = 1
+	[p].[c1] = 1
 

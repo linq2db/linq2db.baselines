@@ -43,10 +43,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Guid  -- Guid
-SET     @Guid = X'27FE8A0B1C482E44B8CF729DDFEECE29'
-DECLARE @GuidN  -- Guid
-SET     @GuidN = X'27FE8A0B1C482E44B8CF729DDFEECE30'
+DECLARE @Id  -- Guid
+SET     @Id = X'27FE8A0B1C482E44B8CF729DDFEECE29'
+DECLARE @Id_1  -- Guid
+SET     @Id_1 = X'27FE8A0B1C482E44B8CF729DDFEECE30'
 
 WITH [cte]
 (
@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		[r].[Id],
-		5,
-		5,
-		@Guid,
-		@GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		CAST(5 AS TinyInt),
+		CAST(5 AS TinyInt),
+		@Id,
+		@Id_1,
+		CAST('ENUM1_VALUE' AS NChar(11)),
+		CAST('ENUM2_VALUE' AS NChar(11)),
+		CAST(1 AS Bit),
+		CAST(0 AS Bit)
 	FROM
 		[Issue3360Table1] [r]
 	WHERE

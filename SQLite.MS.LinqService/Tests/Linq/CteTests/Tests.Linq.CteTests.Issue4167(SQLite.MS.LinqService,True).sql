@@ -119,7 +119,6 @@ AS
 	WHERE
 		[g_1].[Value] = '000001'
 	GROUP BY
-		[g_1].[Value],
 		[g_1].[EnumValue]
 )
 SELECT
