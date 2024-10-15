@@ -64,14 +64,14 @@ BeforeExecute
 
 SELECT
 	[t1_1].[NAME1],
-	[t1].[Id2],
+	[t1].[Value2],
 	[t1].[Name2]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[x].[NAME2] as [Name2],
-				[x].[ID2] as [Id2]
+				[x].[ID2] as [Value2]
 			FROM
 				[TABLE2] [x]
 			WHERE

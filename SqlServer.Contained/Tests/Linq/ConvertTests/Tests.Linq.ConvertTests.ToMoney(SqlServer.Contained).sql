@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	CAST([t].[MoneyValue] AS Money)
+	CAST(Floor(CAST([t].[MoneyValue] AS Money)) AS Int)
 FROM
 	[LinqDataTypes] [t]
 

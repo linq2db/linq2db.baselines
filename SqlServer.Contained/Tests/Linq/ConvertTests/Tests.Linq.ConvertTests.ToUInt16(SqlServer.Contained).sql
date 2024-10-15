@@ -2,14 +2,14 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
-			CAST(Floor([p].[MoneyValue]) AS Int) as [c1]
+			CAST(Floor([t].[MoneyValue]) AS Int) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] > 0
+	[p].[c1] > 0
 
