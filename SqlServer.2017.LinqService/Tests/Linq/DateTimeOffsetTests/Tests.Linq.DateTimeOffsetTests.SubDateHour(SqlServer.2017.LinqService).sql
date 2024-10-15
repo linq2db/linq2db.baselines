@@ -487,7 +487,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	DateDiff(hour, [t].[TransactionDate], DateAdd(hour, 100, [t].[TransactionDate]))
+	CAST(DateDiff(hour, [t].[TransactionDate], DateAdd(hour, 100, [t].[TransactionDate])) AS Int)
 FROM
 	[Transactions] [t]
 
