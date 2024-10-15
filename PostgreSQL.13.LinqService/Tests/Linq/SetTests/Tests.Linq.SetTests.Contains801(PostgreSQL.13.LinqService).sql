@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	:ParentID,
 	ch."ChildID",
 	gc."GrandChildID"
 FROM
