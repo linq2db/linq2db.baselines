@@ -2,14 +2,14 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t_1].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Degrees(CAST(Floor([t].[MoneyValue]) AS Int)) as [c1]
+			Degrees(CAST(Floor([p].[MoneyValue]) AS Int)) as [Value_1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	CAST([t_1].[c1] AS Float) <> 0.10000000000000001
+	CAST([t].[Value_1] AS Float) <> 0.10000000000000001
 

@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
+	CAST([p].[ID] AS TinyInt)
 FROM
 	[LinqDataTypes] [p]
 WHERE

@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	DateDiff(second, [t].[TransactionDate], DateAdd(minute, 100, [t].[TransactionDate]))
+	CAST(DateDiff(second, [t].[TransactionDate], DateAdd(minute, 100, [t].[TransactionDate])) AS Int)
 FROM
 	[Transactions] [t]
 
