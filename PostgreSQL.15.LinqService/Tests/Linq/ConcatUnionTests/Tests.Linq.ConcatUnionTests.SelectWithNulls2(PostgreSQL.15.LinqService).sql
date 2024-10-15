@@ -20,7 +20,7 @@ SELECT
 	NULL::decimal,
 	NULL::TimeStamp,
 	NULL::TimeStamp,
-	NULL,
+	NULL::Boolean,
 	NULL::uuid,
 	NULL::SmallInt,
 	NULL::Int,
