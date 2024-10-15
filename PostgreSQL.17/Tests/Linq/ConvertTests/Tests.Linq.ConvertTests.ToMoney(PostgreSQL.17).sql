@@ -2,7 +2,7 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."MoneyValue"::decimal(19, 4)
+	Floor(t."MoneyValue"::decimal(19, 4))::Int
 FROM
 	"LinqDataTypes" t
 
