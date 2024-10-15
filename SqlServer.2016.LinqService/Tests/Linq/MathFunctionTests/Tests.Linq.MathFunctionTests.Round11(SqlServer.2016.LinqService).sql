@@ -2,14 +2,9 @@
 -- SqlServer.2016
 
 SELECT
-	[t_1].[c1]
+	CAST([t].[MoneyValue] AS Float)
 FROM
-	(
-		SELECT
-			IIF(CAST([t].[MoneyValue] AS Float) * 2 = Round(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> Round(CAST([t].[MoneyValue] AS Float), 1), Round(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2, Round(CAST([t].[MoneyValue] AS Float), 1)) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	IIF(CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1), ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2, ROUND(CAST([t].[MoneyValue] AS Float), 1)) <> 0
 

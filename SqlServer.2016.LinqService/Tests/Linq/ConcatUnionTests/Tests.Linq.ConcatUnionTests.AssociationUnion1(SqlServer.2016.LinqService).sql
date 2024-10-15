@@ -16,6 +16,6 @@ FROM
 			[t1].[ChildID]
 		FROM
 			[Child] [t1]
-	) [c_2]
-		LEFT JOIN [Parent] [a_Parent] ON [c_2].[ParentID] = [a_Parent].[ParentID]
+	) [t2]
+		LEFT JOIN [Parent] [a_Parent] ON [t2].[ParentID] = [a_Parent].[ParentID]
 
