@@ -43,10 +43,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Guid Uuid -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
-DECLARE @GuidN Uuid -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
+DECLARE @Id Uuid -- Guid
+SET     @Id = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
+DECLARE @Id_1 Uuid -- Guid
+SET     @Id_1 = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
 
 WITH RECURSIVE cte
 (
@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		r."Id",
-		5,
-		5,
-		:Guid,
-		:GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		True,
-		False
+		5::SmallInt,
+		5::SmallInt,
+		:Id::uuid,
+		:Id_1::uuid,
+		'ENUM1_VALUE'::text,
+		'ENUM2_VALUE'::text,
+		True::Boolean,
+		False::Boolean
 	FROM
 		"Issue3360Table1" r
 	WHERE

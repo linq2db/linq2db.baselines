@@ -2,14 +2,14 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	p_1.c1
+	Floor(p.c1)::Int
 FROM
 	(
 		SELECT
-			p."MoneyValue"::Float as c1
+			t."MoneyValue"::Float as c1
 		FROM
-			"LinqDataTypes" p
-	) p_1
+			"LinqDataTypes" t
+	) p
 WHERE
-	p_1.c1 > 0
+	p.c1 > 0
 
