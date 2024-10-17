@@ -55,8 +55,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[t1].[Id],
-	[t1].[Text]
+	[x_1].[Id],
+	[x_1].[Text]
 FROM
 	(
 		SELECT
@@ -69,12 +69,12 @@ FROM
 					[ItemValue] [a_Values]
 				WHERE
 					[x].[Id] = [a_Values].[ItemId]
-			) as [SUM_1]
+			) as [c1]
 		FROM
 			[Item] [x]
-	) [t1]
+	) [x_1]
 ORDER BY
-	Coalesce([t1].[SUM_1], 0)
+	Coalesce([x_1].[c1], 0)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
