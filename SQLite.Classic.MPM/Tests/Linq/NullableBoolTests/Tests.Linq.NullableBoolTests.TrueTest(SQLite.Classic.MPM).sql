@@ -51,7 +51,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	([t].[Value] = 0 OR [t].[Value] IS NULL)
+	[t].[Value] = 0 OR [t].[Value] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
