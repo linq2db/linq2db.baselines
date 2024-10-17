@@ -253,7 +253,7 @@ USING (
 	"source_Field1",
 	"source_Field7"
 )
-ON (("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = :Val4))
+ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = :Val4)
 
 WHEN NOT MATCHED AND "Source"."source_Field7" = :Val1 + "Source"."source_Id" THEN
 INSERT
