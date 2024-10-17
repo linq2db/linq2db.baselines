@@ -2,17 +2,17 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	nm_1."MiddleName"
+	nm."MiddleName"
 FROM
 	(
 		SELECT
-			Length(nm."MiddleName") as "Length_1",
-			nm."MiddleName"
+			Length(p."MiddleName") as "Length_1",
+			p."MiddleName"
 		FROM
-			"Person" nm
-	) nm_1
+			"Person" p
+	) nm
 WHERE
-	(nm_1."Length_1" <> 0 OR nm_1."Length_1" IS NULL)
+	nm."Length_1" <> 0 OR nm."Length_1" IS NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -2,11 +2,11 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_1."ParentID"
+	pmp."ParentID"
 FROM
-	"Child" g_1
+	"Child" pmp
 GROUP BY
-	g_1."ParentID"
+	pmp."ParentID"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
