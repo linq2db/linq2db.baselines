@@ -269,5 +269,5 @@ WHEN MATCHED AND "Source"."source_Id" = :Val3 THEN
 UPDATE
 SET
 	"Field4" = :Val5_2
-WHEN MATCHED AND ("Target"."Field3" <> :Val2_1 OR "Target"."Field3" IS NULL) THEN DELETE
+WHEN MATCHED AND "Target"."Field3" <> :Val2_1 OR "Target"."Field3" IS NULL THEN DELETE
 

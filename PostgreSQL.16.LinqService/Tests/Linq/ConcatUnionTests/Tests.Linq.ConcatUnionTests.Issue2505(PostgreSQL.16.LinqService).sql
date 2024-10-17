@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Text(1) -- String
-SET     @p = 'O'
 
 SELECT
 	i_2."LastName"
@@ -13,7 +11,10 @@ FROM
 				ELSE 'O'
 			END as "Gender",
 			i."FirstName",
-			i."LastName"
+			i."PersonID" as "ID",
+			i."LastName",
+			i."MiddleName",
+			i."Gender" as "Gender_1"
 		FROM
 			"Person" i
 		UNION ALL
@@ -23,12 +24,15 @@ FROM
 				ELSE 'O'
 			END as "Gender",
 			i_1."FirstName",
-			i_1."LastName"
+			i_1."PersonID" as "ID",
+			i_1."LastName",
+			i_1."MiddleName",
+			i_1."Gender" as "Gender_1"
 		FROM
 			"Person" i_1
 	) i_2
 WHERE
-	i_2."Gender" = :p
+	i_2."Gender" = 'O'
 ORDER BY
 	i_2."FirstName" DESC
 

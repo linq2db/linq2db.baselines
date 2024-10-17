@@ -29,16 +29,16 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN r."BigIntValue" IS NOT NULL AND r."IntValue" IS NOT NULL
+		WHEN t1."BigIntValue" IS NOT NULL AND t1."IntValue" IS NOT NULL
 			THEN True
 		ELSE False
 	END,
-	r."BigIntValue",
-	r."IntValue"
+	t1."BigIntValue",
+	t1."IntValue"
 FROM
-	"LinqDataTypes" r
+	"LinqDataTypes" t1
 WHERE
-	r."ID" = 101
+	t1."ID" = 101
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1)
+	[x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1)
+	[x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

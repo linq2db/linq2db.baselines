@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N't'
 
 SELECT TOP (1)
 	[c_1].[CustomerID],
@@ -19,5 +17,5 @@ FROM
 	[Customers] [c_1]
 WHERE
 	4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3))) = 3 AND
-	(CharIndex(@p, Left([c_1].[City], 4), 2) <> 0 OR CharIndex(@p, Left([c_1].[City], 4), 2) IS NULL)
+	(CharIndex(N't', Left([c_1].[City], 4), 2) <> 0 OR CharIndex(N't', Left([c_1].[City], 4), 2) IS NULL)
 

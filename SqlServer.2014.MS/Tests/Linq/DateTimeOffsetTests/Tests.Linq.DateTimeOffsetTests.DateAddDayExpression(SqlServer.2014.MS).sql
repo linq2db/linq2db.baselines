@@ -54,11 +54,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Value Int -- Int32
+SET     @Value = 5
 
 SELECT
-	CAST(DateAdd(day, @p, [t].[TransactionDate]) AS Date)
+	CAST(DateAdd(day, @Value, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

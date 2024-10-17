@@ -110,19 +110,19 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[m_1].[BookId],
+	[m_1].[Id],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId]
+			[t3].[Id_1] as [Id]
 		FROM
 			(
 				SELECT
 					[a_Book].[BookId] as [Id],
 					[a_Book].[BookName],
-					[a_Book].[BookId]
+					[a_Book].[BookId] as [Id_1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -133,7 +133,7 @@ FROM
 				SELECT
 					[a_Book_1].[BookId] as [Id],
 					[a_Book_1].[BookName],
-					NULL as [BookId]
+					NULL as [Id_1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -142,7 +142,7 @@ FROM
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -206,10 +206,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = N'Novel', 1, 0),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = N'Roman', 1, 0),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]

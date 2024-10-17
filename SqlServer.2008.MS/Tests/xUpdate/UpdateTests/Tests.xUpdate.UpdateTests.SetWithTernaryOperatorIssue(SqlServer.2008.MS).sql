@@ -33,13 +33,13 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @nullableGender NChar(1) -- StringFixedLength
-SET     @nullableGender = N'O'
+DECLARE @Value NChar(1) -- StringFixedLength
+SET     @Value = N'O'
 
 UPDATE
 	[Person]
 SET
-	[Gender] = @nullableGender
+	[Gender] = @Value
 WHERE
 	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 

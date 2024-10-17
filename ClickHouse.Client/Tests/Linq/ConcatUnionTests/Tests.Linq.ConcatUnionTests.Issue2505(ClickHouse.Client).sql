@@ -11,7 +11,10 @@ FROM
 				ELSE 'O'
 			END as Gender,
 			i.FirstName as FirstName,
-			i.LastName as LastName
+			i.PersonID as ID,
+			i.LastName as LastName,
+			i.MiddleName as MiddleName,
+			i.Gender as Gender_1
 		FROM
 			Person i
 		UNION ALL
@@ -21,7 +24,10 @@ FROM
 				ELSE 'O'
 			END as Gender,
 			i_1.FirstName as FirstName,
-			i_1.LastName as LastName
+			i_1.PersonID as ID,
+			i_1.LastName as LastName,
+			i_1.MiddleName as MiddleName,
+			i_1.Gender as Gender_1
 		FROM
 			Person i_1
 	) i_2

@@ -286,11 +286,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 5
 
 SELECT
-	Floor(Extract(minute From (t."TransactionDate" + :p * Interval '1 Minute')))::Int
+	Floor(Extract(minute From (t."TransactionDate" + :Value * Interval '1 Minute')))::Int
 FROM
 	"Transactions" t
 

@@ -13,7 +13,7 @@ WITH CTE_1 AS
 	FROM
 		(
 			SELECT
-				1 as rn,
+				toInt32(1) as rn,
 				x.FirstName as FirstName,
 				x.PersonID as ID,
 				x.LastName as LastName,
@@ -23,7 +23,7 @@ WITH CTE_1 AS
 				Person x
 			UNION ALL
 			SELECT
-				2 as rn,
+				toInt32(2) as rn,
 				person_1.FirstName as FirstName,
 				person_1.PersonID as ID,
 				person_1.LastName as LastName,
@@ -59,7 +59,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as rn,
+			toInt32(1) as rn,
 			x.FirstName as FirstName,
 			x.PersonID as ID,
 			x.LastName as LastName,
@@ -69,7 +69,7 @@ FROM
 			Person x
 		UNION ALL
 		SELECT
-			2 as rn,
+			toInt32(2) as rn,
 			person_1.FirstName as FirstName,
 			person_1.PersonID as ID,
 			person_1.LastName as LastName,

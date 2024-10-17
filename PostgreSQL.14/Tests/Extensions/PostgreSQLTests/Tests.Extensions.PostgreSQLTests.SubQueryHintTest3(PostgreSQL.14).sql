@@ -13,6 +13,6 @@ FROM
 				"Child" c_1
 			FOR UPDATE
 		) c_2 ON p."ParentID" = c_2."ParentID"
-FOR SHARE
 FOR KEY SHARE NOWAIT
+FOR SHARE
 

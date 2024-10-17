@@ -96,8 +96,16 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.TargetName,
+	CASE
+		WHEN p.TargetName = 'None' THEN true
+		ELSE false
+	END,
 	p.Id,
+	p.TargetName,
+	CASE
+		WHEN p.TargetName = 'bda.Requests' THEN true
+		ELSE false
+	END,
 	a_ActualStage.Id
 FROM
 	Task p

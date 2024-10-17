@@ -7,14 +7,16 @@ SELECT
 FROM
 	(
 		SELECT
-			[y].[PersonID]
+			[y].[PersonID],
+			[y].[Diagnosis]
 		FROM
 			[Patient] [y]
 		WHERE
 			[y].[Diagnosis] = 'a'
 		UNION ALL
 		SELECT
-			[pat].[PersonID]
+			[pat].[PersonID],
+			[pat].[Diagnosis]
 		FROM
 			[Patient] [pat]
 		WHERE

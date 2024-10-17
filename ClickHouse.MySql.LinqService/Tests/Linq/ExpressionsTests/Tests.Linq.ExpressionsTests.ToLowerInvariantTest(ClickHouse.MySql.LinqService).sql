@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.Taxonomy
+	lowerUTF8(p.Taxonomy)
 FROM
 	Doctor p
 WHERE

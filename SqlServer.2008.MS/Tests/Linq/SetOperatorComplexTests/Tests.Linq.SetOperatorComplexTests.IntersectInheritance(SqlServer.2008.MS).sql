@@ -138,10 +138,18 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	CASE
+		WHEN [a_Book].[Discriminator] = N'Novel' THEN 1
+		ELSE 0
+	END,
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	CASE
+		WHEN [a_Book].[Discriminator] = N'Roman' THEN 1
+		ELSE 0
+	END,
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]

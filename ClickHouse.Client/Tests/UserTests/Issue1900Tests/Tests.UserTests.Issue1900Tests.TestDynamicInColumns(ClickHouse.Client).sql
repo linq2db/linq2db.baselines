@@ -36,7 +36,7 @@ SELECT
 FROM
 	PERSON_1900 p
 WHERE
-	(bitAnd(p.OPTIONS, 15) = 4 OR bitAnd(p.OPTIONS, 15) = 5)
+	bitAnd(p.OPTIONS, 15) = 4 OR bitAnd(p.OPTIONS, 15) = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

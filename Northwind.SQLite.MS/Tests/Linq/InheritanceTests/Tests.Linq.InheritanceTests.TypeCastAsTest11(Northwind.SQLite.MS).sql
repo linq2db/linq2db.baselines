@@ -11,7 +11,8 @@ SELECT
 	[p].[UnitPrice],
 	[p].[UnitsInStock],
 	[p].[UnitsOnOrder],
-	[p].[ReorderLevel]
+	[p].[ReorderLevel],
+	[p].[ProductName]
 FROM
 	[Products] [p]
 WHERE

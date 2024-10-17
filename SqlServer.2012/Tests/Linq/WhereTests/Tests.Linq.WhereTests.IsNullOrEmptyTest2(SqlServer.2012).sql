@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[FirstName] IS NULL OR Len([nm].[FirstName]) = 0)
+	Len([nm].[FirstName]) <> 0
 
 BeforeExecute
 -- SqlServer.2012

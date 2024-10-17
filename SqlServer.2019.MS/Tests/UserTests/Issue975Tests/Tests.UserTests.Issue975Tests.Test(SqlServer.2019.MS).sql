@@ -156,7 +156,7 @@ WHERE
 		FROM
 			[TaskStages] [d]
 		WHERE
-			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND ([d].[StageId] < 9000 OR [d].[StageId] IS NULL)
+			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND [d].[StageId] < 9000
 	)
 
 BeforeExecute

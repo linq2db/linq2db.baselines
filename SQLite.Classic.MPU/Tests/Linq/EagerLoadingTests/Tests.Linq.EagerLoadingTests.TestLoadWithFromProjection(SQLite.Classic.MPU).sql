@@ -1846,7 +1846,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON ([d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL)
+		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -1854,16 +1854,16 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[m_1].[Value],
-	[m_1].[ByteValues],
+	[r].[Id1],
+	[r].[Id2],
+	[r].[Value],
+	[r].[ByteValues],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+	[MasterClass] [r]
+		INNER JOIN [DetailClass] [d] ON [r].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

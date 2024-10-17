@@ -171,6 +171,11 @@ BeforeExecute
 SELECT
 	"a_Table2"."ID",
 	"a_Table2"."ID3",
+	CASE
+		WHEN "a_Table2"."ID" IS NOT NULL AND "a_Table3"."ID" IS NOT NULL
+			THEN True
+		ELSE False
+	END,
 	"a_Table3"."ID"
 FROM
 	"Table1" r
@@ -183,8 +188,7 @@ WHERE
 		FROM
 			"Table4" id
 		WHERE
-			"a_Table3"."ID" IS NOT NULL AND "a_Table3"."ID" = id."ID3" AND
-			id."ID" = r."ID"
+			"a_Table3"."ID" = id."ID3" AND id."ID" = r."ID"
 	)
 
 BeforeExecute

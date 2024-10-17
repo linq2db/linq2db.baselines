@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	@ParentID,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

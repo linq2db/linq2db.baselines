@@ -386,6 +386,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	toString('Discriminator') as c1,
 	a_Book.Discriminator,
 	a_Book.BookName,
 	a_Book.BookName as BookName_1
@@ -397,6 +398,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 INTERSECT DISTINCT
 SELECT
+	toString('Discriminator') as c1,
 	a_Book_1.Discriminator as Discriminator,
 	a_Book_1.BookName as BookName,
 	a_Book_1.BookName as BookName_1
@@ -439,10 +441,18 @@ BeforeExecute
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
-	a_Book.Discriminator,
+	CASE
+		WHEN a_Book.Discriminator = 'Novel' THEN true
+		ELSE false
+	END,
 	a_Book.BookName,
 	a_Book.NovelScore,
-	a_Book.RomanScore
+	CASE
+		WHEN a_Book.Discriminator = 'Roman' THEN true
+		ELSE false
+	END,
+	a_Book.RomanScore,
+	a_Book.Discriminator
 FROM
 	Author m_1
 		INNER JOIN BookAuthor d ON d.FkAuthorId = m_1.AuthorId

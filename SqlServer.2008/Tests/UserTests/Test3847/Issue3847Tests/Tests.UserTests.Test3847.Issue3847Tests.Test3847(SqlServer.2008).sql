@@ -23,11 +23,11 @@ SET     @p_1 = NULL
 SELECT
 	[t3].[Id],
 	CASE
-		WHEN [t3].[Value_1] IS NOT NULL THEN [t3].[Value_1]
+		WHEN [t3].[c1] IS NOT NULL THEN [t3].[c1]
 		ELSE @p
 	END,
 	CASE
-		WHEN [t3].[Value_1_1] IS NOT NULL THEN [t3].[Value_1_1]
+		WHEN [t3].[c2] IS NOT NULL THEN [t3].[c2]
 		ELSE @p_1
 	END
 FROM
@@ -45,7 +45,7 @@ FROM
 					) [t1]([Key], [Value])
 				WHERE
 					[t1].[Key] = [outfeed].[Id]
-			) as [Value_1],
+			) as [c1],
 			(
 				SELECT TOP (1)
 					[t2].[Value]
@@ -56,7 +56,7 @@ FROM
 					) [t2]([Key], [Value])
 				WHERE
 					[t2].[Key] = [outfeed].[Id]
-			) as [Value_1_1]
+			) as [c2]
 		FROM
 			[Test3847_OutfeedTransportOrder] [outfeed]
 	) [t3]

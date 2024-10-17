@@ -4,9 +4,14 @@ DECLARE @year Int -- Int32
 SET     @year = 2010
 
 SELECT
-	DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			DATETIMEFROMPARTS(@year, [p].[ID], 1, 0, 0, 0, 0) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, DATETIMEFROMPARTS(@year, [t].[ID], 1, 0, 0, 0, 0)) = 2010
+	DatePart(year, [t].[c1]) = 2010
 

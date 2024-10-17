@@ -29,13 +29,13 @@ BeforeExecute
 -- SqlServer.2012
 
 SELECT
-	IIF([r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL, 1, 0),
-	[r].[BigIntValue],
-	[r].[IntValue]
+	IIF([t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL, 1, 0),
+	[t1].[BigIntValue],
+	[t1].[IntValue]
 FROM
-	[LinqDataTypes] [r]
+	[LinqDataTypes] [t1]
 WHERE
-	[r].[ID] = 101
+	[t1].[ID] = 101
 
 BeforeExecute
 -- SqlServer.2012

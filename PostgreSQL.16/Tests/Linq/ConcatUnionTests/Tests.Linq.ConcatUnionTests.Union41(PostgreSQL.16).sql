@@ -3,13 +3,13 @@
 
 SELECT
 	p."ParentID",
-	True
+	True::Boolean
 FROM
 	"Parent" p
 UNION
 SELECT
 	ch."ParentID",
-	False
+	False::Boolean
 FROM
 	"Child" ch
 

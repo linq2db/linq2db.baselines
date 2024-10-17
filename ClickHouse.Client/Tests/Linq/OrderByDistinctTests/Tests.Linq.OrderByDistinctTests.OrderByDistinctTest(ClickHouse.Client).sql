@@ -66,8 +66,6 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
-ORDER BY
-	maxOrNull(x.OrderData1)
 LIMIT 0, 3
 
 BeforeExecute
@@ -88,8 +86,6 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
-ORDER BY
-	minOrNull(x.OrderData1) DESC
 LIMIT 0, 3
 
 BeforeExecute

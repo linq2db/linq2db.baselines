@@ -44,6 +44,10 @@ SELECT 4,3,4,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','bc7b663d-0fde-4327-8f92-5d8
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Id Variant -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Variant -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	[t1].[Id],
@@ -63,8 +67,8 @@ FROM
 			NULL as [Byte_1],
 			NULL as [Guid],
 			NULL as [Guid_1],
-			NULL as [Enum],
-			NULL as [EnumN],
+			CAST(@Id AS NChar) as [Enum],
+			CAST(@Id_1 AS NChar) as [EnumN],
 			NULL as [Bool],
 			NULL as [Bool_1]
 		FROM

@@ -288,19 +288,19 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."Date_1",
+	t1."Key_1",
 	COUNT(*)
 FROM
 	(
 		SELECT
-			Date_Trunc('day', x."TransactionDate" AT TIME ZONE 'UTC')::Date as "Date_1"
+			Date_Trunc('day', x."TransactionDate" AT TIME ZONE 'UTC')::Date as "Key_1"
 		FROM
 			"Transactions" x
 	) t1
 GROUP BY
-	t1."Date_1"
+	t1."Key_1"
 ORDER BY
-	t1."Date_1"
+	t1."Key_1"
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

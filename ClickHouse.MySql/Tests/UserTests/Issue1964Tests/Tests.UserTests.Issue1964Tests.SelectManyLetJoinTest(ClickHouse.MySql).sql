@@ -67,14 +67,14 @@ SELECT
 	m_1.BusinessHours,
 	m_1.PointX,
 	m_1.PointY,
-	att.Url
+	att.BranchPic
 FROM
 	BranchInfo m_1
 		LEFT JOIN (
 			SELECT
 				ROW_NUMBER() OVER(PARTITION BY temp_1.ItemId ORDER BY temp_1.CreateTime) as Index_1,
 				temp_1.ItemId as ItemId,
-				temp_1.Url as Url
+				temp_1.Url as BranchPic
 			FROM
 				Attachment temp_1
 			WHERE

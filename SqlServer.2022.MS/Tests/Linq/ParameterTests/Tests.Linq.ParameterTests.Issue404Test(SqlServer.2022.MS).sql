@@ -89,8 +89,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @Values Int -- Int32
+SET     @Values = 0
 
 SELECT
 	[m_1].[Id],
@@ -106,7 +106,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @Values
 
 BeforeExecute
 DisposeTransaction
@@ -122,8 +122,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @Values Int -- Int32
+SET     @Values = 1
 
 SELECT
 	[m_1].[Id],
@@ -139,7 +139,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @Values
 
 BeforeExecute
 DisposeTransaction
@@ -252,8 +252,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @Values Int -- Int32
+SET     @Values = 0
 
 SELECT
 	[m_1].[Id],
@@ -269,7 +269,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @Values
 
 BeforeExecute
 DisposeTransaction
@@ -285,8 +285,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @Values Int -- Int32
+SET     @Values = 1
 
 SELECT
 	[m_1].[Id],
@@ -302,7 +302,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @Values
 
 BeforeExecute
 DisposeTransaction

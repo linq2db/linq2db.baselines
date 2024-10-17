@@ -249,11 +249,11 @@ USING (VALUES
 (
 	"source_Id"
 )
-ON (("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = :Val4))
+ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = :Val4)
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = :Val3 THEN UPDATE
 SET
 	"Field4" = :Val5
 
-WHEN NOT MATCHED BY SOURCE AND ("Target"."Field3" <> :Val2 OR "Target"."Field3" IS NULL) THEN DELETE
+WHEN NOT MATCHED BY SOURCE AND "Target"."Field3" <> :Val2 OR "Target"."Field3" IS NULL THEN DELETE
 

@@ -2,11 +2,17 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	CASE
-		WHEN [p].[Discontinued] = 0 THEN N'NULL'
-		WHEN [p].[Discontinued] = 1 THEN [p].[ProductName]
-		ELSE NULL
-	END
+	[p].[Discontinued],
+	[p].[ProductID],
+	[p].[ProductName],
+	[p].[SupplierID],
+	[p].[CategoryID],
+	[p].[QuantityPerUnit],
+	[p].[UnitPrice],
+	[p].[UnitsInStock],
+	[p].[UnitsOnOrder],
+	[p].[ReorderLevel],
+	IIF([p].[Discontinued] = 1, [p].[ProductName], NULL)
 FROM
 	[Products] [p]
 

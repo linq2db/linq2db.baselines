@@ -59,7 +59,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] <> 1 OR [i].[Two] <> [i].[One] * 2)
+	[i].[One] <> 1 OR [i].[Two] <> [i].[One] * 2
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

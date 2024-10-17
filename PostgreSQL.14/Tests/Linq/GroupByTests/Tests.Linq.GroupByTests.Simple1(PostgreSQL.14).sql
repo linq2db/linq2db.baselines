@@ -4,17 +4,17 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	m_1."ParentID",
+	m_1."Key_1",
 	d."ParentID",
 	d."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			t1."ParentID"
+			t1."ParentID" as "Key_1"
 		FROM
 			"Child" t1
 	) m_1
-		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
+		INNER JOIN "Child" d ON m_1."Key_1" = d."ParentID"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -13,7 +13,7 @@ FROM
 		FROM
 			[Child] [ch]
 		WHERE
-			([ch].[ChildID] > 3 OR [ch].[ChildID] < 4)
+			[ch].[ChildID] > 3 OR [ch].[ChildID] < 4
 	) [t1]
 WHERE
 	[t1].[RN] > 3

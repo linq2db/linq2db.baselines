@@ -6,11 +6,10 @@ SET     @param = 2
 SELECT
 	[t1].[ChildID],
 	[t1].[ParentID],
-	[t1].[OrderElement]
+	@param
 FROM
 	(
 		SELECT
-			@param as [OrderElement],
 			[ch].[ChildID],
 			[ch].[ParentID]
 		FROM

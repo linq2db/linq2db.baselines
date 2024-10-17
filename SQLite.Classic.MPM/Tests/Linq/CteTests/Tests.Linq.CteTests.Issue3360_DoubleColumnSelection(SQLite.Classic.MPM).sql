@@ -43,6 +43,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Object
+SET     @Id = NULL
+DECLARE @Id_1  -- Object
+SET     @Id_1 = NULL
 
 WITH [cte]
 (
@@ -64,8 +68,8 @@ AS
 		[r].[Byte],
 		[r].[Guid],
 		[r].[Guid],
-		NULL,
-		NULL,
+		@Id,
+		@Id_1,
 		[r].[Bool],
 		[r].[Bool]
 	FROM

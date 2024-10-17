@@ -38,8 +38,8 @@ SET
 FROM
 	(
 		SELECT
-			eg."TotalId",
-			SUM(eg."Sum") as "SumAggr"
+			SUM(eg."Sum") as "SumAggr",
+			eg."TotalId"
 		FROM
 			"Entry" eg
 		GROUP BY

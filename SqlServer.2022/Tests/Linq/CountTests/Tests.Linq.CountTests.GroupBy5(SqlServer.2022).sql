@@ -9,8 +9,8 @@ SELECT
 FROM
 	(
 		SELECT
-			MAX([g_1].[ChildID]) as [MAX_1],
 			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [COUNT_1],
+			MAX([g_1].[ChildID]) as [MAX_1],
 			COUNT(IIF([g_1].[ChildID] > 10, 1, NULL)) as [COUNT_2]
 		FROM
 			[Child] [g_1]

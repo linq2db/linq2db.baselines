@@ -77,7 +77,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS DISTINCT FROM @value
+	[s].[Int] <> @value
 
 BeforeExecute
 -- SqlServer.2022
@@ -89,7 +89,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS DISTINCT FROM @value
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
 -- SqlServer.2022
@@ -101,7 +101,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT DISTINCT FROM @value
+	[s].[Int] = @value
 
 BeforeExecute
 -- SqlServer.2022
@@ -113,7 +113,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NOT DISTINCT FROM @value
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
 
 BeforeExecute
 -- SqlServer.2022

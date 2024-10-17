@@ -24,7 +24,7 @@ VALUES
 (
 	N'Insert16',
 	CAST(Len(@name) + @idx AS NVarChar(11)),
-	N'M'
+	'M'
 )
 
 BeforeExecute

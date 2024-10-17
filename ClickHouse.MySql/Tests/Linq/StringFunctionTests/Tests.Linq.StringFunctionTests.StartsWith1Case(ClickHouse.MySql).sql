@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
+	startsWith(p.FirstName, 'Jo') = true AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -16,7 +16,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'jo') AND p.PersonID = 1
+	startsWith(p.FirstName, 'jo') = true AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -26,5 +26,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
+	startsWith(p.FirstName, 'Jo') = false AND p.PersonID = 1
 

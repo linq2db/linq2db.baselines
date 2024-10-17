@@ -337,13 +337,13 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[Id],
-			[x].[Value] as [Value_1],
-			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RN]
+			[q].[Id],
+			[q].[Value] as [Value_1],
+			ROW_NUMBER() OVER (ORDER BY [q].[Id], [q].[Value] DESC) as [RN]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [q]
 		WHERE
-			[x].[Id] % 2 = 0
+			[q].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
@@ -356,20 +356,20 @@ DECLARE @take Int -- Int32
 SET     @take = 20
 
 SELECT
-	[t1].[c1],
+	[t1].[TotalCount],
 	[t1].[Id],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
-			COUNT(*) OVER() as [c1],
-			[x].[Id],
-			[x].[Value] as [Value_1],
-			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RN]
+			COUNT(*) OVER() as [TotalCount],
+			[q].[Id],
+			[q].[Value] as [Value_1],
+			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
-			[PaginationData] [x]
+			[PaginationData] [q]
 		WHERE
-			[x].[Id] % 2 = 0
+			[q].[Id] % 2 = 0
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
@@ -396,16 +396,16 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
-	-1
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([x_1].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[x_1].[RowNumber]
 		FROM
-			[pagination_cte] [h]
+			[pagination_cte] [x_1]
 		WHERE
-			[h].[Data_Id] = @Id
+			[x_1].[Data_Id] = @Id
 	) [page]
 		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY
@@ -440,16 +440,17 @@ AS
 SELECT
 	[t1].[Data_Id],
 	[t1].[Data_Value],
-	[page].[c1],
+	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1,
 	[t1].[TotalCount]
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
+			CAST([x_1].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
+			[x_1].[RowNumber]
 		FROM
-			[pagination_cte] [h]
+			[pagination_cte] [x_1]
 		WHERE
-			[h].[Data_Id] = @Id
+			[x_1].[Data_Id] = @Id
 	) [page]
 		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY

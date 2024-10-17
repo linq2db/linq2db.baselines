@@ -71,7 +71,7 @@ FROM
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
-			(EXISTS(
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -79,7 +79,8 @@ FROM
 				WHERE
 					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 					[y].[expires_at] > @now
-			) OR EXISTS(
+			) OR
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -87,7 +88,7 @@ FROM
 				WHERE
 					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 					[y_1].[expires_at] > @now
-			))
+			)
 	) [m_1]
 		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
 
@@ -119,7 +120,7 @@ SELECT
 FROM
 	[issue_4254_media_items] [x]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -127,7 +128,8 @@ WHERE
 		WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now_1
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -135,7 +137,7 @@ WHERE
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
 			[y_2].[expires_at] > @now_1
-	))
+	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -156,7 +158,7 @@ FROM
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
-			(EXISTS(
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -164,7 +166,8 @@ FROM
 				WHERE
 					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 					[y].[expires_at] > @now
-			) OR EXISTS(
+			) OR
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -172,7 +175,7 @@ FROM
 				WHERE
 					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 					[y_1].[expires_at] > @now
-			))
+			)
 	) [m_1]
 		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
 
@@ -204,7 +207,7 @@ SELECT
 FROM
 	[issue_4254_media_items] [x]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -212,7 +215,8 @@ WHERE
 		WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now_1
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -220,7 +224,7 @@ WHERE
 		WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
 			[y_2].[expires_at] > @now_1
-	))
+	)
 
 BeforeExecute
 -- SqlServer.2008

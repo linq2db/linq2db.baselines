@@ -4,11 +4,10 @@
 SELECT
 	t1.ChildID,
 	t1.ParentID,
-	t1.OrderElement
+	2
 FROM
 	(
 		SELECT
-			2 as OrderElement,
 			ch.ChildID as ChildID,
 			ch.ParentID as ParentID
 		FROM

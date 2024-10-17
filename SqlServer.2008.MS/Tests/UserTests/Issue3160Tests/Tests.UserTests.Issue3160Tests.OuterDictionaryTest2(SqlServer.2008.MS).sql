@@ -104,6 +104,7 @@ FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
+				1 as [not_null],
 				(
 					SELECT TOP (1)
 						[x_1].[ID3]
@@ -111,8 +112,7 @@ FROM
 						[TABLE3] [x_1]
 					WHERE
 						[x_1].[PARENTID3] = [x].[ID2]
-				) as [Id3],
-				1 as [not_null]
+				) as [Id3]
 			FROM
 				[TABLE2] [x]
 			WHERE

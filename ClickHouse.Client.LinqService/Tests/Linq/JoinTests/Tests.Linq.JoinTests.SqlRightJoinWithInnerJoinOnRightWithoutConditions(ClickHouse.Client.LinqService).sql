@@ -3,13 +3,13 @@
 
 SELECT
 	left_1.ParentID,
-	right_2.ParentID
+	right_2.Right_1
 FROM
 	Parent left_1
 		INNER JOIN Parent left2 ON left_1.Value1 = left2.Value1 + 2
 		RIGHT JOIN (
 			SELECT
-				right_1.ParentID as ParentID,
+				right_1.ParentID as Right_1,
 				right_1.Value1 + 2 as c1
 			FROM
 				Parent right_1

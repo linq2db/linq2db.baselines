@@ -14,5 +14,8 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	([i].[Value1] = @Value1 OR [i].[Value1] = @Value1_1 OR [i].[Value1] = @Value1_2 OR [i].[Value1] = @Value1_3)
+	[i].[Value1] = @Value1 OR
+	[i].[Value1] = @Value1_1 OR
+	[i].[Value1] = @Value1_2 OR
+	[i].[Value1] = @Value1_3
 

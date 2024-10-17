@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	[s].[Int] <> @value
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	[s].[Int] = @value
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

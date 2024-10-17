@@ -110,8 +110,16 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[p].[TargetName],
+	CASE
+		WHEN [p].[TargetName] = N'None' THEN 1
+		ELSE 0
+	END,
 	[p].[Id],
+	[p].[TargetName],
+	CASE
+		WHEN [p].[TargetName] = N'bda.Requests' THEN 1
+		ELSE 0
+	END,
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

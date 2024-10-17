@@ -86,7 +86,7 @@ FROM
 	(
 		SELECT
 			[x].[DuplicateData],
-			ROW_NUMBER() OVER (ORDER BY MAX([x].[OrderData1] % 3)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
 			[OrderByDistinctData] [x]
 		GROUP BY

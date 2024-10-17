@@ -26,7 +26,7 @@ SELECT
 FROM
 	"Person" r
 WHERE
-	r."FirstName" IS NULL
+	1 = 0
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

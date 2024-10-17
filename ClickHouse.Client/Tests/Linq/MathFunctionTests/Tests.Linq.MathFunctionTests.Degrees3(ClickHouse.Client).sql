@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t_1.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Degrees(toInt32(t.MoneyValue)) as c1
+			Degrees(toInt32(p.MoneyValue)) as Value_1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	toFloat64(t_1.c1) <> toFloat64(0.10000000000000001)
+	toFloat64(t.Value_1) <> toFloat64(0.10000000000000001)
 

@@ -161,6 +161,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @Id Unknown -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Unknown -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	t1."Id",
@@ -180,10 +184,10 @@ FROM
 			NULL::SmallInt as "Byte_1",
 			NULL::uuid as "Guid",
 			NULL::uuid as "Guid_1",
-			NULL::text as "Enum",
-			NULL::text as "EnumN",
-			NULL as "Bool",
-			NULL as "Bool_1"
+			:Id::text as "Enum",
+			:Id_1::text as "EnumN",
+			NULL::Boolean as "Bool",
+			NULL::Boolean as "Bool_1"
 		FROM
 			"Issue3360Table1" r
 		WHERE

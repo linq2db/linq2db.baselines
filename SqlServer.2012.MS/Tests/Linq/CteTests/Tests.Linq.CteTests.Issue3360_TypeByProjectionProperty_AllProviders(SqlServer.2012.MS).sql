@@ -24,13 +24,13 @@ AS
 (
 	SELECT
 		[p].[Id],
-		N'Str1'
+		CAST('Str1' AS VarChar(Max))
 	FROM
 		[Issue3360Table] [p]
 	UNION ALL
 	SELECT
 		[t1].[Id],
-		N'Str2'
+		CAST('Str2' AS VarChar(Max))
 	FROM
 		[cte] [t1]
 			INNER JOIN [Issue3360Table] [r] ON [t1].[Id] = [r].[Id] + 1

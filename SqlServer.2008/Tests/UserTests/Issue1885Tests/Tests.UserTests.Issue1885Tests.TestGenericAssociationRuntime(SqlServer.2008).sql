@@ -42,12 +42,12 @@ BeforeExecute
 
 SELECT
 	[t1].[not_null],
-	[t1].[Data_1]
+	[t1].[Value_1]
 FROM
 	[User] [t]
 		LEFT JOIN (
 			SELECT
-				[a_Data].[Data] as [Data_1],
+				[a_Data].[Data] as [Value_1],
 				1 as [not_null]
 			FROM
 				(

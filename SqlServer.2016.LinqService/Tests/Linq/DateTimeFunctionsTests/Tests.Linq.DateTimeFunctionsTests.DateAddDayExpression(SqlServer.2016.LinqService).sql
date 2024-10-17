@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Value Int -- Int32
+SET     @Value = 5
 
 SELECT
-	CAST(DateAdd(day, @p, [t].[DateTimeValue]) AS Date)
+	CAST(DateAdd(day, @Value, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

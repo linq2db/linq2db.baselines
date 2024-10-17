@@ -110,8 +110,8 @@ FROM
 			SELECT TOP (1)
 				[t1].[Id3],
 				[t1].[Name3],
-				[x_1].[NAME2] as [Name2],
-				1 as [not_null]
+				1 as [not_null],
+				[x_1].[NAME2] as [Name2]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @p Int -- Int32
-SET     @p = -35
+DECLARE @Second Int -- Int32
+SET     @Second = -35
 
 SELECT
-	DatePart(second, DateAdd(second, @p, [t].[DateTimeValue]))
+	DatePart(second, DateAdd(second, @Second, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

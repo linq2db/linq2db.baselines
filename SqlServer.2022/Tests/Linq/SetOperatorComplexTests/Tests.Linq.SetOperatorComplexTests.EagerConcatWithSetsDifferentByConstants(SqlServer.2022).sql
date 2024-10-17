@@ -120,10 +120,8 @@ FROM
 		FROM
 			(
 				SELECT
-					N'Roman' as [BookType],
-					[a_Book].[BookId],
-					NULL as [c1],
-					NULL as [c2]
+					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					[a_Book].[BookId]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -132,10 +130,8 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					N'Novel' as [BookType],
-					NULL as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2]
+					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					NULL as [BookId]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -154,21 +150,17 @@ BeforeExecute
 
 SELECT
 	[m_1].[c1],
-	[m_1].[c2],
 	[d_1].[AuthorId],
 	[d_1].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[c1],
-			[t3].[c2]
+			[t3].[c1]
 		FROM
 			(
 				SELECT
-					N'Roman' as [BookType],
-					[a_Book].[BookId],
-					NULL as [c1],
-					NULL as [c2]
+					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					NULL as [c1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -177,10 +169,8 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					N'Novel' as [BookType],
-					NULL as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2]
+					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					[a_Book_1].[BookId] as [c1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -199,7 +189,7 @@ FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 			WHERE
-				[d].[FkBookId] = [m_1].[c1] AND [m_1].[c2] IS NOT NULL
+				[d].[FkBookId] = [m_1].[c1]
 		) [d_1]
 
 BeforeExecute
@@ -208,28 +198,34 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	N'Roman',
-	[a_Book].[BookId],
-	NULL,
-	NULL
+	[t3].[BookType],
+	IIF([t3].[BookType] = N'Roman', 1, 0),
+	[t3].[BookId],
+	[t3].[c1]
 FROM
-	[Author] [t1]
-		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
-WHERE
-	[a_Book].[Discriminator] = N'Roman'
-UNION ALL
-SELECT
-	N'Novel',
-	NULL,
-	[a_Book_1].[BookId],
-	[a_Book_1].[BookId]
-FROM
-	[Author] [t2]
-		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
-WHERE
-	[a_Book_1].[Discriminator] = N'Novel'
+	(
+		SELECT
+			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+			[a_Book].[BookId],
+			NULL as [c1]
+		FROM
+			[Author] [t1]
+				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
+				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		WHERE
+			[a_Book].[Discriminator] = N'Roman'
+		UNION ALL
+		SELECT
+			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+			NULL as [BookId],
+			[a_Book_1].[BookId] as [c1]
+		FROM
+			[Author] [t2]
+				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
+				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+		WHERE
+			[a_Book_1].[Discriminator] = N'Novel'
+	) [t3]
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -265,10 +261,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = N'Novel', 1, 0),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = N'Roman', 1, 0),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]

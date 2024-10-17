@@ -3,7 +3,7 @@
 
 SELECT
 	COUNT(*),
-	maxOrNull(g_1.ChildID)
+	max(g_1.ChildID)
 FROM
 	Child g_1
 GROUP BY

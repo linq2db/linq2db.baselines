@@ -24,7 +24,7 @@ FROM
 			NULL::Int as c1,
 			NULL::Int as c2,
 			NULL::text as c3,
-			0 as projection__set_id__
+			0::Int as projection__set_id__
 		FROM
 			(
 				SELECT
@@ -47,7 +47,7 @@ FROM
 			"a_Patient"."PersonID" as c1,
 			"a_Patient"."PersonID" as c2,
 			"a_Patient"."Diagnosis" as c3,
-			1 as projection__set_id__
+			1::Int as projection__set_id__
 		FROM
 			"Person" t2
 				LEFT JOIN "Patient" "a_Patient" ON t2."PersonID" = "a_Patient"."PersonID"

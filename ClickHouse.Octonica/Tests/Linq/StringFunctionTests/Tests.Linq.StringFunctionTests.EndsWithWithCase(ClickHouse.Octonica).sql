@@ -6,7 +6,7 @@ SELECT
 FROM
 	Patient p
 WHERE
-	endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
+	endsWith(p.Diagnosis, 'Persecution') = true AND p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16,7 +16,8 @@ SELECT
 FROM
 	Patient p
 WHERE
-	NOT endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
+	(endsWith(p.Diagnosis, 'Persecution') = false OR endsWith(p.Diagnosis, 'Persecution') IS NULL) AND
+	p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -26,7 +27,7 @@ SELECT
 FROM
 	Patient p
 WHERE
-	endsWith(p.Diagnosis, 'persecution') AND p.PersonID = 2
+	endsWith(p.Diagnosis, 'persecution') = true AND p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -36,5 +37,6 @@ SELECT
 FROM
 	Patient p
 WHERE
-	NOT endsWith(p.Diagnosis, 'persecution') AND p.PersonID = 2
+	(endsWith(p.Diagnosis, 'persecution') = false OR endsWith(p.Diagnosis, 'persecution') IS NULL) AND
+	p.PersonID = 2
 

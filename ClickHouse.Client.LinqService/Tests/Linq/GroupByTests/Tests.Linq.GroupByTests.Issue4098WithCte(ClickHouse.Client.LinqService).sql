@@ -268,7 +268,7 @@ WITH CTE_1 AS
 	SELECT
 		g_1.InvestorId,
 		g_1.SecurityClass,
-		sumOrNull(g_1.Units) as Units
+		sum(g_1.Units) as Units
 	FROM
 		Transaction g_1
 	GROUP BY
@@ -278,13 +278,13 @@ WITH CTE_1 AS
 SELECT
 	ip.InvestorId,
 	b.Units,
-	sumOrNull(ip.NetPayment)
+	sum(ip.NetPayment)
 FROM
-	PaymentEvent g_2
-		INNER JOIN InvestorPayment ip ON g_2.Id = ip.Id
+	PaymentEvent p
+		INNER JOIN InvestorPayment ip ON p.Id = ip.Id
 		INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
-		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND g_2.Id = pc.EventId
-		INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND g_2.SecurityClass = b.SecurityClass
+		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND p.Id = pc.EventId
+		INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND p.SecurityClass = b.SecurityClass
 GROUP BY
 	ip.InvestorId,
 	b.Units

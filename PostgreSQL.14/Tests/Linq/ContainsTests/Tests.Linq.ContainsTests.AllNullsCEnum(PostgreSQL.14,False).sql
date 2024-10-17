@@ -30,27 +30,27 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @CEnum Varchar -- String
-SET     @CEnum = NULL
+DECLARE @In Varchar -- String
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum)
+	s."CEnum" IN (:In, :In)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @CEnum Varchar -- String
-SET     @CEnum = NULL
+DECLARE @NotIn Varchar -- String
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum, :CEnum)
+	s."CEnum" NOT IN (:NotIn, :NotIn)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

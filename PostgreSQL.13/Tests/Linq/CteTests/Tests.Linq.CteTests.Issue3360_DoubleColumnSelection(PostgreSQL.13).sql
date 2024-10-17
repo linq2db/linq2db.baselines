@@ -43,6 +43,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Unknown -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Unknown -- Object
+SET     @Id_1 = NULL
 
 WITH RECURSIVE cte
 (
@@ -64,8 +68,8 @@ AS
 		r."Byte",
 		r."Guid",
 		r."Guid",
-		NULL::text,
-		NULL::text,
+		:Id::text,
+		:Id_1::text,
 		r."Bool",
 		r."Bool"
 	FROM

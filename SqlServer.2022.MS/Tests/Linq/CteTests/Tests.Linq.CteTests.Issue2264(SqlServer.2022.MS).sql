@@ -30,7 +30,7 @@ WITH [CTE]
 AS
 (
 	SELECT
-		0,
+		CAST(0 AS Int),
 		[c_1].[Id],
 		[c_1].[ParentId],
 		[c_1].[Label],
