@@ -20,7 +20,7 @@ VALUES
 (
 	N'John',
 	N'Shepard',
-	N'M'
+	'M'
 )
 
 SELECT SCOPE_IDENTITY()
