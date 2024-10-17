@@ -7,13 +7,13 @@ FROM
 	[LinqDataTypes] [t1]
 		LEFT JOIN (
 			SELECT
-				[g_1].[GuidValue] as [Id],
+				[g_1].[GuidValue] as [Key_1],
 				COUNT(IIF([g_1].[BoolValue] = 1, 1, NULL)) as [Count_1]
 			FROM
 				[LinqDataTypes] [g_1]
 			GROUP BY
 				[g_1].[GuidValue]
-		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Id]
+		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
