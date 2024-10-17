@@ -2,12 +2,11 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[x].[PersonID],
-	[y].[value__]
+	[x].[PersonID] + [y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (
-			SELECT 0 AS [value__]
+			SELECT 0 AS [item]
 			UNION ALL
 			SELECT 1
 			UNION ALL

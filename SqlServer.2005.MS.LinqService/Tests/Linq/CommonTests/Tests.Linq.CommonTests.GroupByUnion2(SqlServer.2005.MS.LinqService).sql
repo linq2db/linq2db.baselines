@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[ParentID]
+	[p].[ParentID]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 
