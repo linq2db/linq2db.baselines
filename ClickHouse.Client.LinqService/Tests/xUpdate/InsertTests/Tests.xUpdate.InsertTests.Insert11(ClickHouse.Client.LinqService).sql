@@ -38,6 +38,6 @@ SELECT
 FROM
 	Person p2
 WHERE
-	(p2.PersonID > 4 OR p2.PersonID = 0)
+	p2.PersonID > 4 OR p2.PersonID = 0
 LIMIT 2
 

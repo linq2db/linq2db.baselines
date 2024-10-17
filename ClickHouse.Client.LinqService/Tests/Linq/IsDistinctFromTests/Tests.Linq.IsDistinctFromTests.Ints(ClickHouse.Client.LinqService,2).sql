@@ -59,7 +59,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 2 OR s.Int IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 1
+	s.Int <> 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +69,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = 2 OR s.NullableInt IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 1
+	s.NullableInt IS NULL OR s.NullableInt <> 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -79,7 +79,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 2 OR s.Int IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 0
+	s.Int = 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -89,7 +89,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = 2 OR s.NullableInt IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 0
+	NOT (s.NullableInt IS NULL OR s.NullableInt <> 2)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
