@@ -2,11 +2,11 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.PersonID,
+	p1.PersonID,
 	p2.FirstName
 FROM
-	Person t1,
+	Person p1,
 	Person p2
 WHERE
-	p2.PersonID = 1 AND t1.PersonID = p2.PersonID
+	p2.PersonID = 1 AND p1.PersonID = p2.PersonID
 
