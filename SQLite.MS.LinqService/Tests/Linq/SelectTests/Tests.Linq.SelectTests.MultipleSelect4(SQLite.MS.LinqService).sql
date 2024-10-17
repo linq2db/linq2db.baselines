@@ -2,8 +2,8 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[p2].[PersonID],
-	[p2].[FirstName]
+	[p3].[PersonID],
+	[p3].[FirstName]
 FROM
-	[Person] [p2]
+	[Person] [p3]
 
