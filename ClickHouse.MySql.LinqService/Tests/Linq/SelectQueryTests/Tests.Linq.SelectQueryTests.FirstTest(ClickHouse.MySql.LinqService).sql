@@ -17,8 +17,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addDays(now(), 1),
-	addDays(now(), 2)
+	now()
 LIMIT 1
 
 BeforeExecute

@@ -230,19 +230,19 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Month_1,
+	t1.Key_1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toMonth(x.TransactionDate) as Month_1
+			toMonth(x.TransactionDate) as Key_1
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.Month_1
+	t1.Key_1
 ORDER BY
-	t1.Month_1
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

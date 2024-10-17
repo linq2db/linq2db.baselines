@@ -8,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'J') AND (p.PersonID = 1 OR p.LastName = 'fail')
+	startsWith(p.FirstName, 'J') = true AND (p.PersonID = 1 OR p.LastName = 'fail')
 LIMIT 1
 
