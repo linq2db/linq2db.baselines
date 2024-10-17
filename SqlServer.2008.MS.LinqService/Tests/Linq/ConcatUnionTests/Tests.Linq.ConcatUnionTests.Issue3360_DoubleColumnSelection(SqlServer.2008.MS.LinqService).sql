@@ -163,6 +163,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @Id Variant -- Object
+SET     @Id = NULL
+DECLARE @Id_1 Variant -- Object
+SET     @Id_1 = NULL
 
 SELECT
 	[t1].[Id],
@@ -182,8 +186,8 @@ FROM
 			[r].[Byte] as [Byte_1],
 			[r].[Guid],
 			[r].[Guid] as [Guid_1],
-			NULL as [Enum],
-			NULL as [EnumN],
+			CAST(@Id AS NChar) as [Enum],
+			CAST(@Id_1 AS NChar) as [EnumN],
 			[r].[Bool],
 			[r].[Bool] as [Bool_1]
 		FROM
