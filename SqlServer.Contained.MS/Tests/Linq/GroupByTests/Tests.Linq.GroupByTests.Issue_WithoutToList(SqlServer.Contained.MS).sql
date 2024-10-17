@@ -66,33 +66,32 @@ DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'
 
 SELECT
-	[m_1].[Id],
-	[d].[id],
-	[d].[reference],
+	[m_1].[key_1],
+	[d].[Id],
+	[d].[group_1],
 	[d].[count_1],
-	[d].[percents],
+	[d].[Detail],
 	[d].[hours],
 	[d].[minutes]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Reference].[Id]
+			[a_Reference].[Id] as [key_1]
 		FROM
 			[TestAggregateTable] [t1]
 				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
 		GROUP BY
 			[a_Reference].[Id],
-			[t1].[ReferenceId],
-			[a_Reference].[Id]
+			[t1].[ReferenceId]
 	) [m_1]
 		CROSS APPLY (
 			SELECT
 				COUNT(*) as [count_1],
-				[t3].[Id] as [id],
-				[t3].[group_1] as [reference],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
+				[t3].[Id],
+				[t3].[group_1],
 				[t3].[hours],
-				[t3].[minutes]
+				[t3].[minutes],
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [Detail]
 			FROM
 				(
 					SELECT
@@ -110,7 +109,7 @@ FROM
 				[t3].[hours],
 				[t3].[minutes]
 			HAVING
-				([t3].[group_1] = [m_1].[Id] OR [t3].[group_1] IS NULL AND [m_1].[Id] IS NULL)
+				[t3].[group_1] = [m_1].[key_1] OR [t3].[group_1] IS NULL AND [m_1].[key_1] IS NULL
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
@@ -127,9 +126,6 @@ FROM
 		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
 GROUP BY
 	[a_Reference].[Id],
-	[group_1].[ReferenceId],
-	[a_Reference].[Id]
-ORDER BY
 	[group_1].[ReferenceId]
 
 BeforeExecute

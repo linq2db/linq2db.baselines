@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = -2
+DECLARE @Date Int -- Int32
+SET     @Date = -2
 
 SELECT
-	CAST(DateAdd(month, @p, [t].[DateTimeValue]) AS Date)
+	CAST(DateAdd(month, @Date, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 
