@@ -24,15 +24,6 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-SELECT
-	`t`.`ID`
-FROM
-	`Parent` `p`
-		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
