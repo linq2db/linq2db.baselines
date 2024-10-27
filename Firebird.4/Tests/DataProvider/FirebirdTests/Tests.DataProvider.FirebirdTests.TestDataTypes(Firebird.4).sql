@@ -916,21 +916,21 @@ SELECT "timestampTZDataType" FROM "AllTypes" WHERE ID = 2
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @p TimeStampTZ -- Object
-SET     @p = 12/12/2020 11:24:35 Europe/Andorra
+SET     @p = 12/12/2020 11:24:35AM Europe/Andorra
 
 SELECT ID FROM "AllTypes" WHERE "timestampTZDataType" = @p
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @p TimeStampTZ -- Object
-SET     @p = 12/12/2020 11:24:35 Europe/Andorra
+SET     @p = 12/12/2020 11:24:35AM Europe/Andorra
 
 SELECT ID FROM "AllTypes" WHERE "timestampTZDataType" = @p
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @p TimeStampTZ -- Object
-SET     @p = 12/12/2020 11:24:35 Europe/Andorra
+SET     @p = 12/12/2020 11:24:35AM Europe/Andorra
 
 SELECT ID FROM "AllTypes" WHERE "timestampTZDataType" = @p
 

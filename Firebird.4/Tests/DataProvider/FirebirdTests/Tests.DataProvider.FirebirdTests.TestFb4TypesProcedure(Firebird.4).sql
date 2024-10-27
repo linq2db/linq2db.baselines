@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @TSTZ TimeStampTZ -- Object
-SET     @TSTZ = 02/29/2020 17:54:55 UTC
+SET     @TSTZ = 2/29/2020 5:54:55PM UTC
 DECLARE @TTZ TimeTZ -- Object
 SET     @TTZ = 17:54:55.1231000 UTC
 DECLARE @DECFLOAT16 Dec34 -- Object
