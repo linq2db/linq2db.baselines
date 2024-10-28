@@ -150,7 +150,7 @@ DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar -- AnsiString
 SET     @AnotherBoolValue = 'T'
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO `ValueConversion`

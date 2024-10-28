@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- test-linq-service-reader MySql MySql80
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -13,7 +13,7 @@ LIMIT 2
 
 BeforeExecute
 -- test-linq-service-reader MySql MySql80
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
