@@ -42,9 +42,9 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = 0
@@ -102,9 +102,9 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = 1

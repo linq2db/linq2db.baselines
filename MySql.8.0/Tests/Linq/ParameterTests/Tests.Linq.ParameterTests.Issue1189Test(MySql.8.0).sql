@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `Issue1189Customer`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT

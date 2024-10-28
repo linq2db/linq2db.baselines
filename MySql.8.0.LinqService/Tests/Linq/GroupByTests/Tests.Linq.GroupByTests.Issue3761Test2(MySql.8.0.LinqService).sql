@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @DATUM DateTime
+DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
