@@ -111,11 +111,11 @@ DECLARE @LongText VarChar(4) -- String
 SET     @LongText = '1v23'
 DECLARE @TextDefault VarChar(5) -- String
 SET     @TextDefault = '12 #3'
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date DateTime
 SET     @Date = '2123-02-03'
-DECLARE @DateTime Datetime -- DateTime
+DECLARE @DateTime DateTime
 SET     @DateTime = '2123-02-03 11:22:33'
-DECLARE @DateTime3 Datetime -- DateTime
+DECLARE @DateTime3 DateTime
 SET     @DateTime3 = '2123-02-03 11:22:33.123'
 DECLARE @Time Time
 SET     @Time = -04:03:53

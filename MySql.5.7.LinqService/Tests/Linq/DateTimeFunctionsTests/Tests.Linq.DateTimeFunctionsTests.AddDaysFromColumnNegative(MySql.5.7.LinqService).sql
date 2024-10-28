@@ -4,7 +4,7 @@ DECLARE @ID Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Datetime -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2018-01-03'
 DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = 0

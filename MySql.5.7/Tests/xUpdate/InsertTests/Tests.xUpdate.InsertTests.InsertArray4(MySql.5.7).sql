@@ -13,7 +13,7 @@ DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Datetime -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL
 DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = 1

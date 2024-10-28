@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date DateTime
 SET     @Date = '2020-02-29'
 
 SELECT
