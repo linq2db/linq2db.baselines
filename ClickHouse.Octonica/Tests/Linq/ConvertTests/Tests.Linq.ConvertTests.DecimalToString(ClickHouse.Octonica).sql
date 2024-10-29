@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toString(p.MoneyValue)
+	trim(TRAILING '0.' FROM replaceAll(toString(p.MoneyValue), ',', '.'))
 FROM
 	LinqDataTypes p
 WHERE

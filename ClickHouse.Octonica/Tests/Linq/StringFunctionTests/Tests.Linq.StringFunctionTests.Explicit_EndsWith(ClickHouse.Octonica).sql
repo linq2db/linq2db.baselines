@@ -6,7 +6,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(r.Diagnosis, 'Persecution')
+	endsWith(r.Diagnosis, 'Persecution') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16,7 +16,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(r.Diagnosis, 'persecution')
+	endsWith(r.Diagnosis, 'persecution') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -26,7 +26,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(lowerUTF8(r.Diagnosis), 'persecution')
+	endsWith(lowerUTF8(r.Diagnosis), 'persecution') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -36,5 +36,5 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(lowerUTF8(r.Diagnosis), 'persecution')
+	endsWith(lowerUTF8(r.Diagnosis), 'persecution') = true
 
