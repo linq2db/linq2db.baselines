@@ -2,14 +2,9 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t_1].[c1]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			IIF([t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0, Floor([t].[MoneyValue]), Round([t].[MoneyValue], 0)) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	IIF([t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (FLOOR([t].[MoneyValue]) % 2) = 0, FLOOR([t].[MoneyValue]), ROUND([t].[MoneyValue], 0)) <> 0
 

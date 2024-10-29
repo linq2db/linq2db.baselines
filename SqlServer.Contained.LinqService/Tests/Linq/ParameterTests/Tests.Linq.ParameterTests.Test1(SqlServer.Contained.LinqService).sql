@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @dt DateTime2
+SET     @dt = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[t].[ID],
@@ -13,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
+	[t].[DateTimeValue] = @dt
 

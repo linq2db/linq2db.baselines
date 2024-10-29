@@ -2,6 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
+	IIF([a_Middle].[ParentID] IS NOT NULL AND [a_Bottom].[ParentID] IS NOT NULL, 1, 0),
 	[a_Bottom].[ParentID],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]
