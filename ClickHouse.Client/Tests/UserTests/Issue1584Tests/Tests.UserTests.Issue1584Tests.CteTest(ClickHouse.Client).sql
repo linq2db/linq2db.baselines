@@ -158,15 +158,15 @@ WITH rateCost AS
 		s.TI_RateKey as RateEntry_TI_RateKey,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type IN ('FLT', 'BAS') THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as FlatRate,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type = 'MIN' THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as MinRate,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type = 'UNT' THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as VariableRate
 	FROM
 		RateEntry s
