@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseSensitive), 'ststring')
+	endsWith(lowerUTF8(r.CaseSensitive), 'ststring') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring')
+	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseSensitive), 'ststring')
+	endsWith(lowerUTF8(r.CaseSensitive), 'ststring') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring')
+	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring') = true
 

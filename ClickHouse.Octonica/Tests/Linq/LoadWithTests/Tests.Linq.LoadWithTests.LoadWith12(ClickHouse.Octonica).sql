@@ -2,15 +2,15 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	m_1.Parent,
 	m_1.ParentID,
-	m_1.ParentID_1,
 	d_1.ParentID,
 	d_1.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			a_Parent.ParentID as ParentID,
-			t2.ParentID as ParentID_1
+			a_Parent.ParentID as Parent,
+			t2.ParentID as ParentID
 		FROM
 			(
 				SELECT DISTINCT
@@ -29,7 +29,7 @@ FROM
 				INNER JOIN Child d ON t2.ParentID = d.ParentID
 				LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 	) m_1
-		INNER JOIN Child d_1 ON m_1.ParentID = d_1.ParentID
+		INNER JOIN Child d_1 ON m_1.Parent = d_1.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
