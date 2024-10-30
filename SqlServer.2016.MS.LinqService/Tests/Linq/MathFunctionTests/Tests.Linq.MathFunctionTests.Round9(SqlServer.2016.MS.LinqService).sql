@@ -2,14 +2,9 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[t_1].[c1]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			Round([t].[MoneyValue], 1) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	ROUND([t].[MoneyValue], 1) <> 0
 
