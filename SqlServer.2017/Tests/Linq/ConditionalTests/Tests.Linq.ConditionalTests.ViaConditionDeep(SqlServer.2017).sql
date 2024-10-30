@@ -37,12 +37,19 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Int -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
+	IIF([x].[StringProp] = N'2', 1, 0),
 	[x].[StringProp],
-	[x].[StringProp] + N'2'
+	@IntProp,
+	[x].[StringProp] + N'2',
+	@IntProp_1
 FROM
 	[ConditionalData] [x]
 WHERE
