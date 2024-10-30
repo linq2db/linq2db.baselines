@@ -5,7 +5,7 @@ SELECT
 	g_1.LastName,
 	0,
 	toString(NULL),
-	NULL
+	toString(NULL)
 FROM
 	Person g_1
 GROUP BY
@@ -18,7 +18,7 @@ SELECT
 	g_1.LastName,
 	0,
 	toString(NULL),
-	NULL
+	toString(NULL)
 FROM
 	Person g_1
 GROUP BY

@@ -21,13 +21,13 @@ BeforeExecute
 
 SELECT
 	p.Id,
-	'str1' as Str
+	toString('str1') as Str
 FROM
 	Issue3360Table p
 UNION ALL
 SELECT
 	p_1.Id as Id,
-	'str2' as Str
+	toString('str2') as Str
 FROM
 	Issue3360Table p_1
 
@@ -36,13 +36,13 @@ BeforeExecute
 
 SELECT
 	p.Id,
-	'str2' as Str
+	toString('str2') as Str
 FROM
 	Issue3360Table p
 UNION ALL
 SELECT
 	p_1.Id as Id,
-	'str1' as Str
+	toString('str1') as Str
 FROM
 	Issue3360Table p_1
 
