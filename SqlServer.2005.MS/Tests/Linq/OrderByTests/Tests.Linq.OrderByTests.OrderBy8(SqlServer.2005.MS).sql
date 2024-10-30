@@ -2,11 +2,11 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[x].[ParentID],
+	[x].[ChildID]
 FROM
-	[Child] [ch]
+	[Child] [x]
 ORDER BY
-	[ch].[ChildID] % 2,
-	[ch].[ChildID]
+	[x].[ChildID],
+	[x].[ChildID] % 2
 
