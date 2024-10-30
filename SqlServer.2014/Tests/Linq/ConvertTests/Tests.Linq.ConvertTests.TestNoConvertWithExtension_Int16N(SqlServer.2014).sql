@@ -78,7 +78,7 @@ SELECT TOP (2)
 	[t1].[UInt64N]
 FROM
 	[IntegerConverts] [t1]
-		INNER JOIN [IntegerConverts] [y] ON ([y].[Int16N] = [t1].[Int16N] OR [y].[Int16N] IS NULL AND [t1].[Int16N] IS NULL)
+		INNER JOIN [IntegerConverts] [y] ON [y].[Int16N] = [t1].[Int16N] OR [y].[Int16N] IS NULL AND [t1].[Int16N] IS NULL
 
 BeforeExecute
 -- SqlServer.2014
