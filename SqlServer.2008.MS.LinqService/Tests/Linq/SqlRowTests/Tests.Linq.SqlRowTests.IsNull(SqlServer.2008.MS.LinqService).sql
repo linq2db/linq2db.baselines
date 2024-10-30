@@ -60,7 +60,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NULL AND [i].[Two] IS NULL AND [i].[Three] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -70,7 +70,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[One] IS NULL AND [i].[Nil] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
