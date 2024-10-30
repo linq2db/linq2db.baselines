@@ -51,15 +51,15 @@ SELECT 20,'Str_20' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p BigInt -- Int64
-SET     @p = 5
+DECLARE @startId BigInt -- Int64
+SET     @startId = 5
 
 SELECT
 	"c_1"."value",
 	"c_1"."id"
 FROM
 	(
-		SELECT * FROM "sample_class" where "id" >= @p and "id" < 15
+		SELECT * FROM "sample_class" where "id" >= @startId and "id" < 15
 	) "c_1"
 WHERE
 	"c_1"."id" > 10

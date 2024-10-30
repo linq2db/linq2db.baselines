@@ -169,6 +169,10 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
+DECLARE @Id Binary
+SET     @Id = NULL
+DECLARE @Id_1 Binary
+SET     @Id_1 = NULL
 
 SELECT
 	"t1"."Id",
@@ -188,8 +192,8 @@ FROM
 			NULL as "Byte_1",
 			NULL as "Guid",
 			NULL as "Guid_1",
-			NULL as "Enum",
-			NULL as "EnumN",
+			CAST(@Id AS CHAR(1)) as "Enum",
+			CAST(@Id_1 AS CHAR(1)) as "EnumN",
 			NULL as "Bool",
 			NULL as "Bool_1"
 		FROM
