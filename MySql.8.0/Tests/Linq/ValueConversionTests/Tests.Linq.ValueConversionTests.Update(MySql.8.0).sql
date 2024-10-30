@@ -107,7 +107,7 @@ DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 2
@@ -165,7 +165,7 @@ DECLARE @BoolValue VarChar -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 DECLARE @Id Int32
 SET     @Id = 3
