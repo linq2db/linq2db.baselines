@@ -31,7 +31,7 @@ AS
 AS
 (
 	SELECT
-		1,
+		CAST(1 AS Int),
 		[t1].[EmployeeID],
 		[t1].[LastName],
 		[t1].[FirstName],
