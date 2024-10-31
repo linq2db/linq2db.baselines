@@ -1,19 +1,19 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
-	[x].[PersonID] + [y].[item]
+	[y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (
 			SELECT NULL [item] WHERE 1 = 0
 			UNION ALL
 			VALUES
-				(1), (3)
+				('M'), ('F'), ('U'), ('O')
 			) [y]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
