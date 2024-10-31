@@ -2,14 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p_1.c1
+	p.MoneyValue
 FROM
-	(
-		SELECT
-			toInt16(p.MoneyValue) as c1
-		FROM
-			LinqDataTypes p
-	) p_1
+	LinqDataTypes p
 WHERE
-	p_1.c1 > toInt16(0)
+	toInt16(p.MoneyValue) > toInt16(0)
 

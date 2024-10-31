@@ -4,7 +4,9 @@
 SELECT
 	p.FirstName,
 	p.PersonID,
-	p.LastName
+	p.PersonID,
+	p.LastName,
+	concat(p.FirstName, ' ', p.LastName)
 FROM
 	Person p
 
