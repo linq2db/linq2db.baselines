@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	sumOrNull(g_2.ParentID - 3)
+	sum(g_2.ParentID - 3)
 FROM
 	(
 		SELECT

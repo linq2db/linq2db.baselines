@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toDate32(t.DateTimeValue)
+	toDate(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 
