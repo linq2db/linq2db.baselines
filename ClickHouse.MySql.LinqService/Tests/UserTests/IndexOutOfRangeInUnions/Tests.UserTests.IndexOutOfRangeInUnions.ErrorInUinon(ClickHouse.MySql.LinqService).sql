@@ -58,7 +58,7 @@ SELECT
 		WHEN doSap.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as StatusValor,
-	'Manual/Externo' as DescricaoStatus
+	toString('Manual/Externo') as DescricaoStatus
 FROM
 	O1 doSap
 UNION DISTINCT
@@ -68,7 +68,7 @@ SELECT
 		WHEN doSap_1.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as StatusValor,
-	'Manual/Externo' as DescricaoStatus
+	toString('Manual/Externo') as DescricaoStatus
 FROM
 	O2 doSap_1
 UNION DISTINCT
@@ -78,7 +78,7 @@ SELECT
 		WHEN doSap_2.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END as StatusValor,
-	'Manual/Externo' as DescricaoStatus
+	toString('Manual/Externo') as DescricaoStatus
 FROM
 	O3 doSap_2
 

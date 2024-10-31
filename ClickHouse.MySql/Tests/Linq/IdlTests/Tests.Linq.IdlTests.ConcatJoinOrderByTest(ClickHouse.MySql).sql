@@ -7,14 +7,16 @@ SELECT
 FROM
 	(
 		SELECT
-			y.PersonID as PersonID
+			y.PersonID as PersonID,
+			y.Diagnosis as Diagnosis
 		FROM
 			Patient y
 		WHERE
 			y.Diagnosis = 'a'
 		UNION ALL
 		SELECT
-			pat.PersonID as PersonID
+			pat.PersonID as PersonID,
+			pat.Diagnosis as Diagnosis
 		FROM
 			Patient pat
 		WHERE

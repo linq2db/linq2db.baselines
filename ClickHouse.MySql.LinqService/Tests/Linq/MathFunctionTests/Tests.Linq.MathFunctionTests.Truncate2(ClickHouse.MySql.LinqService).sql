@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t_1.c1
+	t.c1
 FROM
 	(
 		SELECT
-			Truncate(toFloat64(negate(t.MoneyValue))) as c1
+			Truncate(toFloat64(negate(p.MoneyValue))) as c1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> toFloat64(0.10000000000000001)
+	t.c1 <> toFloat64(0.10000000000000001)
 
