@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	0,
+	CAST(0 AS Integer),
 	"t1"."ParentID",
 	"t1"."ParentID",
 	"t1"."ChildID"
@@ -22,7 +22,7 @@ WHERE
 	"p"."ParentID" = 1
 UNION ALL
 SELECT
-	1,
+	CAST(1 AS Integer),
 	NULL,
 	NULL,
 	NULL
