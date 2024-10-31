@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[p].[Taxonomy]
+	LCase([p].[Taxonomy])
 FROM
 	[Doctor] [p]
 WHERE

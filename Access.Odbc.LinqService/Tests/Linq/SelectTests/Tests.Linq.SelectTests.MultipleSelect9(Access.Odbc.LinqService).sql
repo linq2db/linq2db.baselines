@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @Length Int -- Int32
+SET     @Length = 2
 
 SELECT
-	([p2].[PersonID] * 2) / 2,
-	[p2].[FirstName]
+	([p5].[PersonID] * CVar(?)) / 2,
+	[p5].[FirstName]
 FROM
-	[Person] [p2]
+	[Person] [p5]
 

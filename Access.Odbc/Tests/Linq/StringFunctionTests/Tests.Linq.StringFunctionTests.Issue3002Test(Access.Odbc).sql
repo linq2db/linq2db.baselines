@@ -57,7 +57,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -71,7 +71,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -99,7 +99,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -113,7 +113,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -127,7 +127,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?)
+	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

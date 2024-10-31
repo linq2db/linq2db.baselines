@@ -70,57 +70,49 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 4
-DECLARE @value Int -- Int32
-SET     @value = 4
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = ? OR [s].[Int] IS NULL AND ? IS NULL, 0, 1) = 1
+	[s].[Int] <> ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 4
-DECLARE @value Int -- Int32
-SET     @value = 4
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = ? OR [s].[NullableInt] IS NULL AND ? IS NULL, 0, 1) = 1
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 4
-DECLARE @value Int -- Int32
-SET     @value = 4
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = ? OR [s].[Int] IS NULL AND ? IS NULL, 0, 1) = 0
+	[s].[Int] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 4
-DECLARE @value Int -- Int32
-SET     @value = 4
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = ? OR [s].[NullableInt] IS NULL AND ? IS NULL, 0, 1) = 0
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> ?)
 
 BeforeExecute
 -- Access.Odbc AccessODBC

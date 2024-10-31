@@ -196,12 +196,19 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @IntProp Integer -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Integer -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, True, False),
+	IIF([x].[StringProp] = '2', True, False),
 	[x].[StringProp],
-	[x].[StringProp] + '2'
+	CVar(@IntProp),
+	[x].[StringProp] + '2',
+	CVar(@IntProp_1)
 FROM
 	[ConditionalData] [x]
 WHERE

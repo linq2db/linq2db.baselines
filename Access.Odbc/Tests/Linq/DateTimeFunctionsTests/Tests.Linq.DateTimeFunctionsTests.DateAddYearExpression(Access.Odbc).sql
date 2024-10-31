@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 11
+DECLARE @Value Int -- Int32
+SET     @Value = 11
 
 SELECT
 	DateValue(DateAdd('yyyy', ?, [t].[DateTimeValue]))

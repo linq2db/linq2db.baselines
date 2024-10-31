@@ -196,12 +196,19 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = 2
 
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, True, False),
+	IIF([x].[StringProp] = '2', True, False),
 	[x].[StringProp],
-	[x].[StringProp] + '2'
+	CVar(?),
+	[x].[StringProp] + '2',
+	CVar(?)
 FROM
 	[ConditionalData] [x]
 WHERE

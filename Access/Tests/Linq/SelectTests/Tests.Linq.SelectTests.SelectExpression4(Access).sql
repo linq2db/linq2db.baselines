@@ -30,13 +30,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT TOP 1
-	1
-FROM
-	[SelectExpressionTable] [t1]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [SelectExpressionTable]
 

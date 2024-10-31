@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p NVarChar(2) -- String
-SET     @p = 'oh'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	InStr(1, [p].[FirstName], CVar(?), 1) - 1 = 1 AND [p].[PersonID] = 1
+	InStr(1, [p].[FirstName], 'oh', 1) = 2 AND [p].[PersonID] = 1
 

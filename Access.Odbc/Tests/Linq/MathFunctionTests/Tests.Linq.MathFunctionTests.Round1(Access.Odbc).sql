@@ -2,14 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t_1].[c1]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			Round([t].[MoneyValue], 0) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	IIF(ABS([t].[MoneyValue] * 10 MOD 10) = 5 AND ([t].[MoneyValue] MOD 2) = 2, [t].[MoneyValue], ROUND([t].[MoneyValue])) <> 0
 

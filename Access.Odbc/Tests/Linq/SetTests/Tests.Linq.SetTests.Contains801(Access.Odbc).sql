@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	CVar(?),
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

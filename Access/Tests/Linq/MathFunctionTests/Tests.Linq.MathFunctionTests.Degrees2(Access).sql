@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t_1].[c1]
+	Int([t].[Value_1])
 FROM
 	(
 		SELECT
-			[t].[MoneyValue] * 57.295779513082323 as [c1]
+			[p].[MoneyValue] * 57.295779513082323 as [Value_1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	[t].[Value_1] <> 0.10000000000000001
 

@@ -501,8 +501,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MAX([x].[OrderData1])
 
 BeforeExecute
 -- Access AccessOleDb
@@ -521,8 +519,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MIN([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Access AccessOleDb

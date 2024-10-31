@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @Length Integer -- Int32
+SET     @Length = 0
 
 SELECT
-	Len([p].[FirstName])
+	Len([p].[FirstName]) + CVar(@Length)
 FROM
 	[Person] [p]
 

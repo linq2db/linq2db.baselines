@@ -99,18 +99,18 @@ SET     @sectorId = 1
 
 SELECT
 	[m_1].[MonthNumber],
-	[q].[MonthNumber],
+	[q].[Key_1],
 	[q].[Ftq]
 FROM
 	[tblMonth] [m_1]
 		LEFT JOIN (
 			SELECT
-				[g_3].[MonthNumber],
+				[g_3].[Key_1],
 				SUM([g_3].[Ftq]) as [Ftq]
 			FROM
 				(
 					SELECT
-						[g_2].[MonthNumber],
+						[g_2].[MonthNumber] as [Key_1],
 						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok] = True, 0, [g_2].[Qty])) as [Ftq]
 					FROM
 						(
@@ -133,8 +133,8 @@ FROM
 						[g_2].[Id_WorkstationGroup]
 				) [g_3]
 			GROUP BY
-				[g_3].[MonthNumber]
-		) [q] ON ([q].[MonthNumber] = [m_1].[MonthNumber])
+				[g_3].[Key_1]
+		) [q] ON ([q].[Key_1] = [m_1].[MonthNumber])
 
 BeforeExecute
 -- Access AccessOleDb

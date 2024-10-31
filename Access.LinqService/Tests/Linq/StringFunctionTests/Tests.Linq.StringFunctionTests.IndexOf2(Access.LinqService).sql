@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarWChar(1) -- String
-SET     @p = 'e'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	InStr(3, [p].[LastName], CVar(@p), 1) - 1 = 4 AND [p].[PersonID] = 2
+	InStr(3, [p].[LastName], 'e', 1) = 5 AND [p].[PersonID] = 2
 

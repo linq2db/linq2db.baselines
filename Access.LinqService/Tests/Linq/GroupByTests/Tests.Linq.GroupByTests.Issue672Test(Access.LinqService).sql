@@ -85,42 +85,5 @@ VALUES
 BeforeExecute
 -- Access AccessOleDb
 
-SELECT
-	[m_1].[Name],
-	[d].[Id],
-	[d].[Name],
-	[d].[Enabled],
-	[d].[ImageFullUrl]
-FROM
-	(
-		SELECT DISTINCT
-			[s].[Name]
-		FROM
-			[Stone] [s]
-		WHERE
-			[s].[Enabled] = True AND [s].[Name] NOT LIKE 'level [-] %' AND
-			Len([s].[ImageFullUrl]) > 0
-	) [m_1]
-		INNER JOIN [Stone] [d] ON ([m_1].[Name] = [d].[Name])
-WHERE
-	[d].[Enabled] = True AND [d].[Name] NOT LIKE 'level [-] %' AND
-	Len([d].[ImageFullUrl]) > 0
-
-BeforeExecute
--- Access AccessOleDb
-
-SELECT
-	[sG].[Name]
-FROM
-	[Stone] [sG]
-WHERE
-	[sG].[Enabled] = True AND [sG].[Name] NOT LIKE 'level [-] %' AND
-	Len([sG].[ImageFullUrl]) > 0
-GROUP BY
-	[sG].[Name]
-
-BeforeExecute
--- Access AccessOleDb
-
 DROP TABLE [Stone]
 

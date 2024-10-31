@@ -106,8 +106,10 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[p].[TargetName],
+	IIF([p].[TargetName] = 'None', True, False),
 	[p].[Id],
+	[p].[TargetName],
+	IIF([p].[TargetName] = 'bda.Requests', True, False),
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

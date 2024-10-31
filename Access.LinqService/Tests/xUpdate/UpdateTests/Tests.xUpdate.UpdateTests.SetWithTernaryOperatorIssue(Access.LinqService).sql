@@ -56,13 +56,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @nullableGender WChar(1) -- StringFixedLength
-SET     @nullableGender = 'O'
+DECLARE @Value WChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person] [t1]
 SET
-	[t1].[Gender] = @nullableGender
+	[t1].[Gender] = @Value
 WHERE
 	[t1].[FirstName] LIKE 'UpdateComplex%'
 

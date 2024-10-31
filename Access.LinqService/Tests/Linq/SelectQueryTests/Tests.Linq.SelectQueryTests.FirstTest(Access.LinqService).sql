@@ -16,8 +16,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	DateAdd('d', 1, Now),
-	DateAdd('d', 2, Now)
+	Now
 
 BeforeExecute
 -- Access AccessOleDb

@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = ? OR [x].[ParentID] = ?)
+	[x].[ParentID] = ? OR [x].[ParentID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = ? OR [x].[ParentID] = ?)
+	[x].[ParentID] = ? OR [x].[ParentID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC

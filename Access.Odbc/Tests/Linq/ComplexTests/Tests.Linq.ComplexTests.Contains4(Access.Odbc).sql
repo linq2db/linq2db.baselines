@@ -8,8 +8,8 @@ SELECT
 	[gc_1].[ChildID],
 	[gc_1].[GrandChildID]
 FROM
-	([Child] [t2]
-		LEFT JOIN [Parent] [a_Parent] ON ([t2].[ParentID] = [a_Parent].[ParentID]))
+	([Child] [ch]
+		LEFT JOIN [Parent] [a_Parent] ON ([ch].[ParentID] = [a_Parent].[ParentID]))
 		LEFT JOIN (
 			SELECT
 				[gc].[ParentID],
@@ -19,13 +19,13 @@ FROM
 				[GrandChild] [gc]
 					INNER JOIN (
 						SELECT
-							MAX([max_1].[GrandChildID]) as [MAX_1]
+							MAX([max_1].[GrandChildID]) as [c1]
 						FROM
 							[GrandChild] [max_1]
 						GROUP BY
 							[max_1].[ChildID]
-					) [t1] ON ([gc].[GrandChildID] = [t1].[MAX_1])
+					) [t1] ON ([gc].[GrandChildID] = [t1].[c1])
 		) [gc_1] ON ([a_Parent].[ParentID] = [gc_1].[ParentID])
 WHERE
-	([gc_1].[ParentID] IS NULL OR ([gc_1].[GrandChildID] NOT IN (111, 222) OR [gc_1].[GrandChildID] IS NULL))
+	[gc_1].[ParentID] IS NULL OR ([gc_1].[GrandChildID] NOT IN (111, 222) OR [gc_1].[GrandChildID] IS NULL)
 
