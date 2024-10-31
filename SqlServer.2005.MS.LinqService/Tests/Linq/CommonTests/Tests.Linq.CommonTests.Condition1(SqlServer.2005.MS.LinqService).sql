@@ -3,8 +3,7 @@
 
 SELECT
 	CASE
-		WHEN NOT ([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0)
-			THEN [p].[FirstName]
+		WHEN Len([p].[FirstName]) <> 0 THEN [p].[FirstName]
 		WHEN NOT ([p].[MiddleName] IS NULL OR Len([p].[MiddleName]) = 0)
 			THEN [p].[MiddleName]
 		ELSE [p].[LastName]
