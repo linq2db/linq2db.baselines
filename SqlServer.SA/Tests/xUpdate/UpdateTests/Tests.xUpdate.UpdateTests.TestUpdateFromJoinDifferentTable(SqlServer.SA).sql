@@ -74,7 +74,7 @@ SET
 FROM
 	[gt_s_one_target] [u],
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON (Upper(Replace([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL)
+		LEFT JOIN [access_mode] [y1] ON Upper(Replace([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(Replace([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
 WHERE
 	[x].[id] = [u].[id]
 
