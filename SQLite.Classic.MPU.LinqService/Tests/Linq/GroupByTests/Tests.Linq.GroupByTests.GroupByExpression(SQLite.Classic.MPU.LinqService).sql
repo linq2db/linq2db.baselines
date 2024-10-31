@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @defValue  -- Int32
-SET     @defValue = 10
 
 SELECT
-	Coalesce(MIN([gr].[ParentID]), @defValue)
+	MIN([gr].[ParentID])
 FROM
 	[Parent] [gr]
 

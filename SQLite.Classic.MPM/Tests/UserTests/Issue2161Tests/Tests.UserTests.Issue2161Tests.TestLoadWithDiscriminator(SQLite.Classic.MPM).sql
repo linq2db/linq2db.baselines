@@ -82,9 +82,17 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[o].[OrderType],
+	CASE
+		WHEN [o].[OrderType] = 1 THEN 1
+		ELSE 0
+	END,
 	[o].[OrderId],
-	[o].[OrderName]
+	[o].[OrderType],
+	[o].[OrderName],
+	CASE
+		WHEN [o].[OrderType] = 0 THEN 1
+		ELSE 0
+	END
 FROM
 	[Order] [o]
 WHERE
