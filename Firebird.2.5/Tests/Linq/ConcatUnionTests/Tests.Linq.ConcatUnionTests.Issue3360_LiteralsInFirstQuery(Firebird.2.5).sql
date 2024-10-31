@@ -50,10 +50,10 @@ SELECT 4,3,4,X'BD3973A543234DD89F4FDF9F93E2A627',X'BC7B663D0FDE43278F925D8CC3A11
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Guid Guid
-SET     @Guid = X'0B8AFE27481C442EB8CF729DDFEECE29'
-DECLARE @GuidN Guid
-SET     @GuidN = X'0B8AFE27481C442EB8CF729DDFEECE30'
+DECLARE @Id Guid
+SET     @Id = X'0B8AFE27481C442EB8CF729DDFEECE29'
+DECLARE @Id_1 Guid
+SET     @Id_1 = X'0B8AFE27481C442EB8CF729DDFEECE30'
 
 SELECT
 	"t1"."Id",
@@ -69,14 +69,14 @@ FROM
 	(
 		SELECT
 			"r"."Id",
-			5 as "Byte",
-			5 as "Byte_1",
-			CAST(@Guid AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
-			CAST(@GuidN AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
-			'1' as "Bool",
-			'0' as "BoolN"
+			CAST(5 AS SmallInt) as "Byte",
+			CAST(5 AS SmallInt) as "Byte_1",
+			CAST(@Id AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
+			CAST(@Id_1 AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
+			CAST('ENUM1_VALUE' AS CHAR(11)) as "Enum",
+			CAST('ENUM2_VALUE' AS CHAR(11)) as "EnumN",
+			CAST('1' AS CHAR(1)) as "Bool",
+			CAST('0' AS CHAR(1)) as "BoolN"
 		FROM
 			"Issue3360Table1" "r"
 		WHERE
