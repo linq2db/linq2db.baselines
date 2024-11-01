@@ -27,7 +27,7 @@ VALUES
 			[p].[PersonID] = 1
 	),
 	N'Shepard',
-	N'M'
+	'M'
 )
 
 BeforeExecute

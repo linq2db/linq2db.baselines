@@ -2,5 +2,5 @@
 -- SqlServer.2017
 
 SELECT
-	1
+	Len(N'1')
 
