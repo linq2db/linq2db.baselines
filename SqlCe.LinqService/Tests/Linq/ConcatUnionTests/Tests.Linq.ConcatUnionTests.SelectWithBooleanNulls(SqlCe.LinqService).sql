@@ -15,7 +15,7 @@ SELECT
 	CASE
 		WHEN [x].[ParentID] <> 0 THEN 1
 		ELSE 0
-	END as [b]
+	END as [c1]
 FROM
 	[Parent] [x]
 UNION ALL
@@ -30,7 +30,7 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as [a],
-	NULL as [b]
+	NULL as [c1]
 FROM
 	[Parent] [x_1]
 

@@ -85,7 +85,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[SectorId],
-	[a_User].[UserId]
+	[a_User].[UserId] as [Detail]
 FROM
 	[SectorDTO] [m_1]
 		INNER JOIN [UPS] [d] ON [m_1].[SectorId] = [d].[SectorId]

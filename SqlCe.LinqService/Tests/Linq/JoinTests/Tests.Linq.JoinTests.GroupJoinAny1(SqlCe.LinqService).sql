@@ -14,7 +14,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [n]
+	END as [c1]
 FROM
 	[Parent] [t1]
 

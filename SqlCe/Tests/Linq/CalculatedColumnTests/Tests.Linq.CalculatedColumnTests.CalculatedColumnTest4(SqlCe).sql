@@ -9,13 +9,13 @@ SELECT
 	[a_PersonDoctor].[Gender],
 	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName] as [FullName],
 	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName] as [AsSqlFullName],
-	[t1].[COUNT_1] as [DoctorCount]
+	[t1].[DoctorCount]
 FROM
 	[Doctor] [d_1]
 		INNER JOIN [Person] [a_PersonDoctor] ON [d_1].[PersonID] = [a_PersonDoctor].[PersonID]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [DoctorCount]
 			FROM
 				[Doctor] [d]
 			WHERE
