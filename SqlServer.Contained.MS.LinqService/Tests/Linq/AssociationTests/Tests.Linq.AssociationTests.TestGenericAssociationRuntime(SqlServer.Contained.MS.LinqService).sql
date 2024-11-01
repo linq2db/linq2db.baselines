@@ -3,6 +3,7 @@
 
 SELECT
 	[a_MiddleRuntime].[ParentID],
+	IIF([a_MiddleRuntime].[ParentID] IS NOT NULL AND [a_Bottom].[ParentID] IS NOT NULL, 1, 0),
 	[a_Bottom].[ParentID],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]

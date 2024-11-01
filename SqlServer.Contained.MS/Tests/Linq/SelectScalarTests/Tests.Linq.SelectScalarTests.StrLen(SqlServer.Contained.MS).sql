@@ -2,5 +2,5 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	1
+	Len(N'1')
 
