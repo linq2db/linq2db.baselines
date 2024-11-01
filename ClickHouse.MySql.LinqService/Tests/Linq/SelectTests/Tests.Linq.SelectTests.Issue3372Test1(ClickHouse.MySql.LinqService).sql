@@ -4,7 +4,7 @@
 SELECT
 	e.FirstName,
 	CASE
-		WHEN a_Person.FirstName IS NOT NULL AND a_Person.LastName IS NOT NULL
+		WHEN a_Patient.PersonID IS NOT NULL AND a_Person.PersonID IS NOT NULL AND a_Person.LastName IS NOT NULL
 			THEN true
 		ELSE false
 	END,

@@ -2,9 +2,17 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Gender,
+	CASE
+		WHEN t1.Gender = 'F' THEN true
+		ELSE false
+	END,
 	t1.PersonID,
+	t1.Gender,
 	t1.LastName,
+	CASE
+		WHEN t1.Gender = 'M' THEN true
+		ELSE false
+	END,
 	t1.FirstName
 FROM
 	Person t1
@@ -16,9 +24,17 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Gender,
+	CASE
+		WHEN t1.Gender = 'F' THEN true
+		ELSE false
+	END,
 	t1.PersonID,
+	t1.Gender,
 	t1.LastName,
+	CASE
+		WHEN t1.Gender = 'M' THEN true
+		ELSE false
+	END,
 	t1.FirstName
 FROM
 	Person t1
