@@ -112,16 +112,16 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN "g_1"."EnumValue" IS NOT NULL THEN "g_1"."EnumValue"
+				WHEN "r"."EnumValue" IS NOT NULL THEN "r"."EnumValue"
 				ELSE 0
 			END as "EnumValue"
 		FROM
-			"Issue4167Table" "g_1"
+			"Issue4167Table" "r"
 		WHERE
-			"g_1"."Value" = '000001'
+			"r"."Value" = '000001'
 		GROUP BY
-			"g_1"."Value",
-			"g_1"."EnumValue"
+			"r"."Value",
+			"r"."EnumValue"
 	) "t1"
 ORDER BY
 	"t1"."EnumValue"
