@@ -68,7 +68,7 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN '1'
 		ELSE '0'
@@ -87,7 +87,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -104,7 +104,7 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN '1'
 		ELSE '0'
@@ -123,7 +123,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -140,7 +140,7 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN '1'
 		ELSE '0'
@@ -159,7 +159,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.2.5 Firebird

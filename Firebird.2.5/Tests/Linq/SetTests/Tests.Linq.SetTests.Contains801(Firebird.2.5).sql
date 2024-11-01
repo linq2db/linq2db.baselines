@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	CAST(@ParentID AS Int),
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM
