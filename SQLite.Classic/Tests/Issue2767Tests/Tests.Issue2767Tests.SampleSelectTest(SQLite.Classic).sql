@@ -183,11 +183,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[id] as [Id]
+			[exercise_1].[id] as [Id]
 		FROM
-			[exercise] [t1]
-				LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([t1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
-				LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([t1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
+			[exercise] [exercise_1]
+				LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
+				LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
 	) [m_1]
 		INNER JOIN [exercise_equipment_linker] [d] ON [m_1].[Id] = [d].[exercise_id]
 		INNER JOIN [exercise_equipment] [equipment] ON [d].[equipment_id] = [equipment].[id]
@@ -203,32 +203,32 @@ DECLARE @Exercise NVarChar(1) -- String
 SET     @Exercise = '1'
 
 SELECT
-	[t1].[id],
-	[t1].[is_private],
-	[t1].[number],
-	[t1].[level],
+	[exercise_1].[id],
+	[exercise_1].[is_private],
+	[exercise_1].[number],
+	[exercise_1].[level],
 	CASE
 		WHEN [exerciseDescription].[id] IS NOT NULL THEN [exerciseDescription].[content]
-		ELSE [t1].[expl]
+		ELSE [exercise_1].[expl]
 	END,
-	[t1].[reeks],
-	[t1].[num],
-	[t1].[time],
-	[t1].[rest],
-	[t1].[side],
-	[t1].[image],
-	[t1].[video],
+	[exercise_1].[reeks],
+	[exercise_1].[num],
+	[exercise_1].[time],
+	[exercise_1].[rest],
+	[exercise_1].[side],
+	[exercise_1].[image],
+	[exercise_1].[video],
 	CASE
 		WHEN [exerciseStartDescription].[id] IS NOT NULL THEN [exerciseStartDescription].[content]
-		ELSE [t1].[startexpl]
+		ELSE [exercise_1].[startexpl]
 	END
 FROM
-	[exercise] [t1]
-		LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([t1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
-		LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([t1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
+	[exercise] [exercise_1]
+		LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
+		LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
 ORDER BY
-	[t1].[timestamp] DESC,
-	[t1].[id] DESC
+	[exercise_1].[timestamp] DESC,
+	[exercise_1].[id] DESC
 
 BeforeExecute
 -- SQLite.Classic SQLite
