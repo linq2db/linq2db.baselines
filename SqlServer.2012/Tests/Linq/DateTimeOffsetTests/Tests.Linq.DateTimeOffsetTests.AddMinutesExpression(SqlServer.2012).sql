@@ -54,11 +54,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @p Int -- Int32
-SET     @p = -8
+DECLARE @Minute Int -- Int32
+SET     @Minute = -8
 
 SELECT
-	DatePart(minute, DateAdd(minute, @p, [t].[TransactionDate]))
+	DatePart(minute, DateAdd(minute, @Minute, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 
