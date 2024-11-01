@@ -30,13 +30,5 @@ VALUES
 BeforeExecute
 -- Access.Odbc AccessODBC
 
-SELECT TOP 1
-	1
-FROM
-	[SelectExpressionTable] [t1]
-
-BeforeExecute
--- Access.Odbc AccessODBC
-
 DROP TABLE [SelectExpressionTable]
 

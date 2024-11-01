@@ -501,8 +501,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MAX([x].[OrderData1])
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -521,8 +519,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MIN([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Access.Odbc AccessODBC

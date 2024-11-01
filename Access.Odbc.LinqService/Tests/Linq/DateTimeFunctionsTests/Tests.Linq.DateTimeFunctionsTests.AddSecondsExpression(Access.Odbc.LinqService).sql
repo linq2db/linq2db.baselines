@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = -35
+DECLARE @Second Int -- Int32
+SET     @Second = -35
 
 SELECT
 	DatePart('s', DateAdd('s', CVar(?), [t].[DateTimeValue]))

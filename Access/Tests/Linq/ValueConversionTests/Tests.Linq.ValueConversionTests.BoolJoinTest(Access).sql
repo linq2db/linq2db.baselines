@@ -524,10 +524,10 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 VarChar(1) -- AnsiString
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value VarChar(1) -- AnsiString
+SET     @true_value = 'Y'
+DECLARE @true_value_1 VarChar(1) -- AnsiString
+SET     @true_value_1 = 'Y'
 
 SELECT
 	[t1].[Enum]
@@ -539,10 +539,10 @@ FROM
 		FROM
 			[ValueConversion] [t2]
 		WHERE
-			[t2].[BoolValue] = @BoolValue
+			[t2].[BoolValue] = @true_value
 	) [t2_1]
 WHERE
-	[t1].[BoolValue] = @BoolValue_1
+	[t1].[BoolValue] = @true_value_1
 
 BeforeExecute
 -- Access AccessOleDb

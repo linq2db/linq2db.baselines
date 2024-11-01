@@ -70,7 +70,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[String]
+	IIF([s].[String] = 'abc', null, [s].[String])
 FROM
 	[Src] [s]
 ORDER BY
@@ -80,7 +80,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[String]
+	IIF([s].[String] = 'xyz', null, [s].[String])
 FROM
 	[Src] [s]
 ORDER BY
@@ -90,7 +90,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[String]
+	IIF([s].[String] = NULL, null, [s].[String])
 FROM
 	[Src] [s]
 ORDER BY
@@ -100,7 +100,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[NullableString]
+	IIF([s].[NullableString] = 'abc', null, [s].[NullableString])
 FROM
 	[Src] [s]
 ORDER BY
@@ -110,7 +110,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[NullableString]
+	IIF([s].[NullableString] = 'xyz', null, [s].[NullableString])
 FROM
 	[Src] [s]
 ORDER BY
@@ -120,7 +120,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[s].[NullableString]
+	IIF([s].[NullableString] = NULL, null, [s].[NullableString])
 FROM
 	[Src] [s]
 ORDER BY

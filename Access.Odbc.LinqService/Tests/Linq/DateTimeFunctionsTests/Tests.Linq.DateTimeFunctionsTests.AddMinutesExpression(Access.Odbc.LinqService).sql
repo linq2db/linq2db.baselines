@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = -8
+DECLARE @Minute Int -- Int32
+SET     @Minute = -8
 
 SELECT
 	DatePart('n', DateAdd('n', CVar(?), [t].[DateTimeValue]))

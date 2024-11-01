@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @dt Date -- DateTime
+SET     @dt = #2020-02-29 17:54:55#
 
 SELECT
 	[t].[ID],
@@ -13,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] = #2020-02-29 17:54:55#
+	[t].[DateTimeValue] = @dt
 

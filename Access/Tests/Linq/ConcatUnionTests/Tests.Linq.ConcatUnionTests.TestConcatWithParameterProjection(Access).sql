@@ -10,18 +10,18 @@ DECLARE @someValue_3 Integer -- Int32
 SET     @someValue_3 = 3
 
 SELECT
-	CVar(@someValue),
+	@someValue,
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] <= CVar(@someValue_1)
+	[c_1].[ChildID] <= @someValue_1
 UNION ALL
 SELECT
-	CVar(@someValue_2),
+	@someValue_2,
 	[c_2].[ChildID]
 FROM
 	[Child] [c_2]
 WHERE
-	[c_2].[ChildID] > CVar(@someValue_3)
+	[c_2].[ChildID] > @someValue_3
 

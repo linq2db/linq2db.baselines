@@ -29,9 +29,11 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
+DECLARE @p Boolean
+SET     @p = True
 
 SELECT TOP 1
-	1
+	CVar(@p)
 FROM
 	[SelectExpressionTable] [t1]
 

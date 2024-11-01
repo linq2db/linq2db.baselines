@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	CStr([p].[ID])
+	[p].[ID]
 FROM
 	[LinqDataTypes] [p]
 WHERE

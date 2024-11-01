@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 0
+DECLARE @Value Int -- Int32
+SET     @Value = 0
 
 SELECT
 	CVar(?)

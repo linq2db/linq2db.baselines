@@ -613,10 +613,10 @@ SELECT TOP 2
 FROM
 	(
 		SELECT
-			[q].[Id],
-			[q].[Value2]
+			[t].[Id],
+			[t].[Value2]
 		FROM
-			[ValueConversion] [q]
+			[ValueConversion] [t]
 	) [t1]
 ORDER BY
 	[t1].[Id]

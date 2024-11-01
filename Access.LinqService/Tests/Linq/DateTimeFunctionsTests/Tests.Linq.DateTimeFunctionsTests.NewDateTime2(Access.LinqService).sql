@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	DatePart('yyyy', [p].[DateTimeValue])
+	DateSerial(DatePart('yyyy', [p].[DateTimeValue]), 10, 1)
 FROM
 	[LinqDataTypes] [p]
 

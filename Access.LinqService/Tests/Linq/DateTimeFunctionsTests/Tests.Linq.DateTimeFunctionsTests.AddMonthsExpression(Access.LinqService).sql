@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p Integer -- Int32
-SET     @p = -2
+DECLARE @Date Integer -- Int32
+SET     @Date = -2
 
 SELECT
-	DateValue(DateAdd('m', @p, [t].[DateTimeValue]))
+	DateValue(DateAdd('m', @Date, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

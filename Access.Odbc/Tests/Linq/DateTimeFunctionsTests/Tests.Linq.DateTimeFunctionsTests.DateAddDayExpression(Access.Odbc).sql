@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Value Int -- Int32
+SET     @Value = 5
 
 SELECT
 	DateValue(DateAdd('d', ?, [t].[DateTimeValue]))

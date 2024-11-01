@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[r].[PersonID]
+	IIF([r].[PersonID] IN (1, 2, 3), True, False)
 FROM
 	[Person] [r]
 

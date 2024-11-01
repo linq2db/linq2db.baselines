@@ -501,6 +501,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT DISTINCT
+	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM
@@ -554,10 +555,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = 'Novel', True, False),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = 'Roman', True, False),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	([Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON ([d].[FkAuthorId] = [m_1].[AuthorId]))

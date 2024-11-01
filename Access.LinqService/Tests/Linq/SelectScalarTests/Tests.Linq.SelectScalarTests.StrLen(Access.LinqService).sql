@@ -2,5 +2,5 @@
 -- Access AccessOleDb
 
 SELECT
-	1
+	Len('1')
 
