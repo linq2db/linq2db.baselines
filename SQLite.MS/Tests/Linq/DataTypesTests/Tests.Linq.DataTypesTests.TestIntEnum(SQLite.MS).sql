@@ -28,7 +28,7 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Column  -- Int32
+DECLARE @Column NVarChar -- String
 SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3

@@ -58,9 +58,7 @@ BeforeExecute
 SELECT
 	[u].[UserId],
 	[u].[FirstName],
-	'Enriched',
-	[u].[Supervisor],
-	1
+	[u].[Supervisor]
 FROM
 	[SampleClass] [t1]
 		INNER JOIN ([SampleClass] [u_1]

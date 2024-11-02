@@ -14,5 +14,9 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	(CAST([i].[Value1] AS INTEGER) = @Value1 OR CAST([i].[Value1] AS INTEGER) = @Value1_1 OR CAST([i].[Value1] AS INTEGER) = @Value1_2 OR CAST([i].[Value1] AS INTEGER) = @Value1_3)
+	CAST([i].[Value1] AS INTEGER) = @Value1 OR
+	CAST([i].[Value1] AS INTEGER) = @Value1_1 OR
+	CAST([i].[Value1] AS INTEGER) = @Value1_2 OR
+	CAST([i].[Value1] AS INTEGER) = @Value1_3 OR
+	CAST([i].[Value1] AS INTEGER) IS NULL AND @Value1_3 IS NULL
 

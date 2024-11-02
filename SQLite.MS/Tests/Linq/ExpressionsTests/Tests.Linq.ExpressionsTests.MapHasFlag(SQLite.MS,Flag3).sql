@@ -36,7 +36,7 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @flag  -- Int32
+DECLARE @flag NVarChar -- String
 SET     @flag = 4
 
 SELECT
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	(([t].[Flags] & CAST(@flag AS INTEGER)) <> 0 OR CAST(@flag AS INTEGER) IS NULL)
+	([t].[Flags] & CAST(@flag AS INTEGER)) <> 0 OR CAST(@flag AS INTEGER) IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
