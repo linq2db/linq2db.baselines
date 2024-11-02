@@ -17,7 +17,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
+	startsWith(p.FirstName, 'Joh') = true AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -27,7 +27,8 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
+	(startsWith(p.FirstName, 'Joh') = false OR startsWith(p.FirstName, 'Joh') IS NULL) AND
+	p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -37,7 +38,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
+	startsWith(p.FirstName, 'JOH') = true AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -47,5 +48,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
+	(startsWith(p.FirstName, 'JOH') = false OR startsWith(p.FirstName, 'JOH') IS NULL) AND
+	p.PersonID = 1
 

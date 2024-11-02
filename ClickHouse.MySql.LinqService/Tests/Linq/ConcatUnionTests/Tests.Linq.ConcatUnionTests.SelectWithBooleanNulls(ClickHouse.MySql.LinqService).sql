@@ -14,7 +14,7 @@ SELECT
 	CASE
 		WHEN x.ParentID <> 0 THEN true
 		ELSE false
-	END as b
+	END as c1
 FROM
 	Parent x
 UNION ALL
@@ -28,7 +28,7 @@ SELECT
 		) THEN true
 		ELSE false
 	END as a,
-	toBool(NULL) as b
+	toBool(NULL) as c1
 FROM
 	Parent x_1
 
