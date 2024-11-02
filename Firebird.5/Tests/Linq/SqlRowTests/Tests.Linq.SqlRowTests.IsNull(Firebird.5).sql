@@ -46,7 +46,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	"i"."One" IS NULL AND "i"."Two" IS NULL AND "i"."Three" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"Ints" "i"
 WHERE
-	"i"."One" IS NULL AND "i"."Nil" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Firebird.5 Firebird4
