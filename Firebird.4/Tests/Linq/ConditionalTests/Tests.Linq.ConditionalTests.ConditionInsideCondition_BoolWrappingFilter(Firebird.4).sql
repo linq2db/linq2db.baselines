@@ -2,29 +2,29 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"s_1"."Value_1"
+	"s"."Value_1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Mod("s"."ParentID", 2) = 0 THEN CASE
-					WHEN Mod("s"."ParentID", 3) = 0 THEN TRUE
+				WHEN Mod("p"."ParentID", 2) = 0 THEN CASE
+					WHEN Mod("p"."ParentID", 3) = 0 THEN TRUE
 					ELSE FALSE
 				END
-				WHEN Mod("s"."ParentID", 4) = 0 THEN CASE
-					WHEN "s"."ParentID" > 0 THEN TRUE
+				WHEN Mod("p"."ParentID", 4) = 0 THEN CASE
+					WHEN "p"."ParentID" > 0 THEN TRUE
 					ELSE FALSE
 				END
 				ELSE CASE
-					WHEN "s"."ParentID" < 5 THEN TRUE
+					WHEN "p"."ParentID" < 5 THEN TRUE
 					ELSE FALSE
 				END
 			END as "Value_1"
 		FROM
-			"Parent" "s"
-	) "s_1"
+			"Parent" "p"
+	) "s"
 WHERE
-	"s_1"."Value_1" = TRUE
+	"s"."Value_1"
 
 BeforeExecute
 BeginTransaction(RepeatableRead)

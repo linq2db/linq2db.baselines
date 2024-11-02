@@ -122,8 +122,16 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"p"."TargetName",
+	CASE
+		WHEN "p"."TargetName" = 'None' THEN TRUE
+		ELSE FALSE
+	END,
 	"p"."Id",
+	"p"."TargetName",
+	CASE
+		WHEN "p"."TargetName" = 'bda.Requests' THEN TRUE
+		ELSE FALSE
+	END,
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"
