@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[Taxonomy]
+	Lower([p].[Taxonomy])
 FROM
 	[Doctor] [p]
 WHERE
