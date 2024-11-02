@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 SELECT
-	DatePart(hour, DateAdd(hour, @p, [t].[DateTimeValue])) as [c1]
+	DatePart(hour, DateAdd(hour, @Value, [t].[DateTimeValue])) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

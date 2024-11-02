@@ -7,7 +7,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[p].[ParentID] as [ID]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

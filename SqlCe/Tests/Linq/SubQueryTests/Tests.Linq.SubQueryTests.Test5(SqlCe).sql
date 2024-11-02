@@ -4,7 +4,7 @@ DECLARE @testValue Int -- Int32
 SET     @testValue = 3
 
 SELECT
-	[id_1].[c1] as [id],
+	[id_1].[c1],
 	[t1].[COUNT_1],
 	[t2].[COUNT_1] as [COUNT_2]
 FROM

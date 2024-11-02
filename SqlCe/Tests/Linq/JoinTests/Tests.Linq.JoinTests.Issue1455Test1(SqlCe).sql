@@ -98,14 +98,13 @@ SET     @cpty_5 = '%C%'
 SELECT
 	[al_group_3].[AlertKey],
 	[al_group_3].[AlertCode],
-	[t2].[LastUpdate_1] as [LastUpdate],
+	[t2].[LastUpdate],
 	[t2].[CargoId],
 	[t2].[DeliveryId],
 	[t2].[DeliveryCounterParty],
 	[t2].[DealId],
 	[t2].[ParcelId],
-	[t2].[CounterParty],
-	[t2].[LastUpdate] as [LastUpdate_1]
+	[t2].[CounterParty]
 FROM
 	(
 		SELECT
@@ -129,7 +128,9 @@ FROM
 				LEFT JOIN [Trade] [trade_1] ON [al_group_1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
 				LEFT JOIN [Nomin] [nomin_1] ON [al_group_1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
 		WHERE
-			([nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade_1].[CounterParty] LIKE @cpty_1 ESCAPE '~' OR [al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE '~')
+			[nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR
+			[trade_1].[CounterParty] LIKE @cpty_1 ESCAPE '~' OR
+			[al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE '~'
 		GROUP BY
 			[al_group_1].[AlertKey],
 			[al_group_1].[AlertCode],
@@ -143,8 +144,7 @@ FROM
 				[trade_2].[DealId],
 				[trade_2].[ParcelId],
 				[trade_2].[CounterParty],
-				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate],
-				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate_1]
+				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate]
 			FROM
 				(
 					SELECT
