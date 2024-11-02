@@ -7,7 +7,7 @@ SELECT
 FROM
 	Patient t1
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -21,7 +21,8 @@ WHERE
 			) t2
 		WHERE
 			position(e.FirstName, 'John') > 0 AND e.PersonID = t2.PersonID
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -35,7 +36,7 @@ WHERE
 			) t3
 		WHERE
 			position(e_1.FirstName, 'Tester') > 0 AND e_1.PersonID = t3.PersonID
-	))
+	)
 ORDER BY
 	t1.PersonID
 
