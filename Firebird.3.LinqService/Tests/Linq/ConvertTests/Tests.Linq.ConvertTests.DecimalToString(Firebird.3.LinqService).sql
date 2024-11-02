@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"p"."MoneyValue"
+	TRIM(TRAILING '.' FROM TRIM(TRAILING '0' FROM REPLACE("p"."MoneyValue", ',', '.')))
 FROM
 	"LinqDataTypes" "p"
 WHERE
