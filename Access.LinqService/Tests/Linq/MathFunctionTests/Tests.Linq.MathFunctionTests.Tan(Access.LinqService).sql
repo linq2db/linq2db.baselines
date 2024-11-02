@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			Int(Tan([t].[MoneyValue] / 15) * 15) as [c1]
+			Int(Tan([p].[MoneyValue] / 15) * 15) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	[t].[c1] <> 0.10000000000000001
 

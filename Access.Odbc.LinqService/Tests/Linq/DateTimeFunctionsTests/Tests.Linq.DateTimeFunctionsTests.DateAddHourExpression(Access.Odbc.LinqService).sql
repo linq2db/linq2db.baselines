@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 SELECT
 	DatePart('h', DateAdd('h', CVar(?), [t].[DateTimeValue]))

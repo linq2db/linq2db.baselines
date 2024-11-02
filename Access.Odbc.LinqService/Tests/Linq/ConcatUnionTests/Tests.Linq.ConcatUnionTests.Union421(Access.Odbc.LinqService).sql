@@ -7,19 +7,19 @@ FROM
 	(
 		SELECT
 			[p].[ParentID] as [id],
-			True as [val]
+			CBool(True) as [val]
 		FROM
 			[Parent] [p]
 		UNION
 		SELECT
 			[p_1].[ParentID] as [id],
-			False as [val]
+			CBool(False) as [val]
 		FROM
 			[Parent] [p_1]
 		UNION
 		SELECT
 			[ch].[ParentID] as [id],
-			False as [val]
+			CBool(False) as [val]
 		FROM
 			[Child] [ch]
 	) [p_2]

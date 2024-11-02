@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			IIF(-[t].[MoneyValue] >= 0, Int(-[t].[MoneyValue]), -Int([t].[MoneyValue])) as [c1]
+			IIF(-[p].[MoneyValue] >= 0, Int(-[p].[MoneyValue]), -Int([p].[MoneyValue])) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	[t].[c1] <> 0.10000000000000001
 

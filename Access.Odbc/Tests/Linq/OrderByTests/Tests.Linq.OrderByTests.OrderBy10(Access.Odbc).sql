@@ -2,11 +2,11 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[x].[ParentID],
+	[x].[ChildID]
 FROM
-	[Child] [ch]
+	[Child] [x]
 ORDER BY
-	[ch].[ChildID] MOD 2,
-	[ch].[ChildID] DESC
+	[x].[ChildID] DESC,
+	[x].[ChildID] MOD 2
 

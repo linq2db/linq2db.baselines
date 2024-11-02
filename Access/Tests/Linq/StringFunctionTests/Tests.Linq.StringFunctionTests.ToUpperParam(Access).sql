@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarWChar(4) -- String
-SET     @p = 'JOHN'
+DECLARE @param VarWChar(4) -- String
+SET     @param = 'john'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	UCase([p].[FirstName]) = @p AND [p].[PersonID] = 1
+	UCase([p].[FirstName]) = UCase(@param) AND [p].[PersonID] = 1
 

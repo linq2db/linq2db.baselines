@@ -21,7 +21,7 @@ SELECT
 FROM
 	[NullableBool] [r]
 WHERE
-	([r].[Bool] = True OR [r].[Bool] IS NULL)
+	[r].[Bool] = True OR [r].[Bool] IS NULL
 
 BeforeExecute
 -- Access AccessOleDb

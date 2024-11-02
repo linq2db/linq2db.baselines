@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p Integer -- Int32
-SET     @p = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 5
 
 SELECT
-	DatePart('n', DateAdd('n', CVar(@p), [t].[DateTimeValue]))
+	DatePart('n', DateAdd('n', CVar(@Value), [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

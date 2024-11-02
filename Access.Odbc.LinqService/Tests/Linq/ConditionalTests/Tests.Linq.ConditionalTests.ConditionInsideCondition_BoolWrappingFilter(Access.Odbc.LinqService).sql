@@ -2,16 +2,16 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[s_1].[Value_1]
+	[s].[Value_1]
 FROM
 	(
 		SELECT
-			IIF([s].[ParentID] MOD 2 = 0, IIF([s].[ParentID] MOD 3 = 0, True, False), IIF([s].[ParentID] MOD 4 = 0, IIF([s].[ParentID] > 0, True, False), IIF([s].[ParentID] < 5, True, False))) as [Value_1]
+			IIF([p].[ParentID] MOD 2 = 0, IIF([p].[ParentID] MOD 3 = 0, True, False), IIF([p].[ParentID] MOD 4 = 0, IIF([p].[ParentID] > 0, True, False), IIF([p].[ParentID] < 5, True, False))) as [Value_1]
 		FROM
-			[Parent] [s]
-	) [s_1]
+			[Parent] [p]
+	) [s]
 WHERE
-	[s_1].[Value_1] = True
+	[s].[Value_1] = True
 
 BeforeExecute
 -- Access.Odbc AccessODBC

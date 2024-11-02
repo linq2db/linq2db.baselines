@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			Int(Log([t].[MoneyValue]) / 0.69314718055994529) as [c1]
+			Int(Log([p].[MoneyValue]) / 0.69314718055994529) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	[t].[c1] <> 0.10000000000000001
 

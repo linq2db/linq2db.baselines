@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	DatePart('yyyy', [p].[DateTimeValue])
+	CDate(CStr(DatePart('yyyy', [p].[DateTimeValue])) + '-10-01 20:35:44')
 FROM
 	[LinqDataTypes] [p]
 

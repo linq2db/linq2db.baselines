@@ -501,8 +501,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MAX([x].[OrderData1] MOD 3)
 
 BeforeExecute
 -- Access AccessOleDb

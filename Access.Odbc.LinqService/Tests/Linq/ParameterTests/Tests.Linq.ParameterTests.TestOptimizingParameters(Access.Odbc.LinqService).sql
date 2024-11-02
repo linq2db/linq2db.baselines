@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [t1]
 WHERE
-	([t1].[PersonID] = ? OR [t1].[PersonID] <= ? OR [t1].[PersonID] = ?)
+	[t1].[PersonID] = ? OR [t1].[PersonID] <= ? OR [t1].[PersonID] = ?
 

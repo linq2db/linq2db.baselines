@@ -16,5 +16,5 @@ FROM
 	[Person] [x_1],
 	[Patient] [z]
 WHERE
-	([x_1].[FirstName] = ? OR [z].[PersonID] = ?)
+	[x_1].[FirstName] = ? OR [z].[PersonID] = ?
 

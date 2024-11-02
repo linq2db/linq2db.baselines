@@ -9,8 +9,8 @@ FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
-			IIF([x].[FirstName] = '123', 'Y', 'N') as [OK],
-			'A' as [FirstName]
+			CStr('A') as [FirstName],
+			IIF([x].[FirstName] = '123', 'Y', 'N') as [OK]
 		FROM
 			[Person] [x]
 		WHERE
@@ -18,8 +18,8 @@ FROM
 		UNION
 		SELECT
 			[x_1].[PersonID] as [ID],
-			'N' as [OK],
-			[x_1].[FirstName]
+			[x_1].[FirstName],
+			CStr('N') as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE

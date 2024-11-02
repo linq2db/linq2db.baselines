@@ -524,8 +524,8 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
+DECLARE @true_value VarChar(1) -- AnsiString
+SET     @true_value = 'Y'
 
 SELECT
 	[t].[Id],
@@ -535,7 +535,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue
+	[t].[BoolValue] = @true_value
 
 BeforeExecute
 -- Access AccessOleDb

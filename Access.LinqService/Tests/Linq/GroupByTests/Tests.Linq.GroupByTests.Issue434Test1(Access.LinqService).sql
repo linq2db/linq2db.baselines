@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarWChar(6) -- String
-SET     @p = '%test%'
+DECLARE @input VarWChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[m_1].[PersonID],
@@ -11,12 +11,12 @@ FROM
 	[Person] [m_1]
 		INNER JOIN [Patient] [d] ON ([m_1].[PersonID] = [d].[PersonID])
 WHERE
-	LCase([m_1].[FirstName]) LIKE @p
+	LCase([m_1].[FirstName]) LIKE @input
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p VarWChar(6) -- String
-SET     @p = '%test%'
+DECLARE @input VarWChar(6) -- String
+SET     @input = '%test%'
 
 SELECT
 	[p].[FirstName],
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LCase([p].[FirstName]) LIKE @p
+	LCase([p].[FirstName]) LIKE @input
 

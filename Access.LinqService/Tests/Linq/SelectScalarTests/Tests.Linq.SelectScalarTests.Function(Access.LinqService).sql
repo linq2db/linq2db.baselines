@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
+DECLARE @text VarWChar(3) -- String
+SET     @text = '123'
 
 SELECT TOP 1
-	[c_1].[ChildID]
+	CStr([c_1].[ChildID]) + ',' + CVar(@text)
 FROM
 	[Child] [c_1]
 

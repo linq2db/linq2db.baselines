@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			IIF([t].[MoneyValue] >= 5.1, [t].[MoneyValue], 5.1) as [c1]
+			IIF([p].[MoneyValue] >= 5.1, [p].[MoneyValue], 5.1) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0
+	[t].[c1] <> 0
 

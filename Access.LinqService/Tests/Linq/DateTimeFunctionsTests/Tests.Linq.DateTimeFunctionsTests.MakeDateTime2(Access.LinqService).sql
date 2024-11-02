@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	CDate('2010-' + Format([t].[ID], String('0', 2)) + '-01 20:35:44')
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CDate('2010-' + Format([p].[ID], String('0', 2)) + '-01 20:35:44') as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart('yyyy', CDate('2010-' + Format([t].[ID], String('0', 2)) + '-01 20:35:44')) = 2010
+	DatePart('yyyy', [t].[c1]) = 2010
 

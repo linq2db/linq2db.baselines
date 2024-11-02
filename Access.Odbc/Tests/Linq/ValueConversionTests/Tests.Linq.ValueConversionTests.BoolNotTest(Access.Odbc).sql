@@ -524,8 +524,8 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'N'
+DECLARE @false_value VarChar(1) -- AnsiString
+SET     @false_value = 'N'
 
 SELECT
 	[t].[Id],

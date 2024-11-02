@@ -56,8 +56,8 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @nullableGender NChar(1) -- StringFixedLength
-SET     @nullableGender = 'O'
+DECLARE @Value NChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person] [t1]

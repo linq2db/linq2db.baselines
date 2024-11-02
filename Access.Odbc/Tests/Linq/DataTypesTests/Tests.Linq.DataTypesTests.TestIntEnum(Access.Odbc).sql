@@ -59,7 +59,7 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Column Int -- Int32
+DECLARE @Column NVarChar -- String
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
