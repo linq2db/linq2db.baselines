@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Coalesce(minOrNull(gr.ParentID), 10)
+	min(gr.ParentID)
 FROM
 	Parent gr
 

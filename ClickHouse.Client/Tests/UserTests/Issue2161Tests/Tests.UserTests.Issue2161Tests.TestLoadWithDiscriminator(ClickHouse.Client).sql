@@ -84,9 +84,17 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	o.OrderType,
+	CASE
+		WHEN o.OrderType = 1 THEN true
+		ELSE false
+	END,
 	o.OrderId,
-	o.OrderName
+	o.OrderType,
+	o.OrderName,
+	CASE
+		WHEN o.OrderType = 0 THEN true
+		ELSE false
+	END
 FROM
 	Order o
 WHERE

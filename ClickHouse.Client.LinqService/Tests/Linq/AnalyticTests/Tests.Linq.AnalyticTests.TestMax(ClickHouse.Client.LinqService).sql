@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	maxOrNull(c_1.ChildID),
+	max(c_1.ChildID),
 	MAX(c_1.ChildID),
 	MAX(ALL c_1.ChildID),
 	MAX(DISTINCT c_1.ChildID)
