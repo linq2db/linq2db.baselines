@@ -53,11 +53,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @Value Int -- Int32
+SET     @Value = 1
 
 SELECT
-	CAST(DateAdd(weekday, @p, [t].[TransactionDate]) AS Date)
+	CAST(DateAdd(weekday, @Value, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

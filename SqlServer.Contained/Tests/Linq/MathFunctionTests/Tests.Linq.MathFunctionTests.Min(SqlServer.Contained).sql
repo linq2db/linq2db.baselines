@@ -2,14 +2,14 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			IIF([t].[MoneyValue] <= 5, [t].[MoneyValue], 5) as [c1]
+			IIF([p].[MoneyValue] <= 5, [p].[MoneyValue], 5) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0
+	[t].[c1] <> 0
 
