@@ -2,14 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t_1"."c1"
+	"t"."c1"
 FROM
 	(
 		SELECT
-			Ceil(-("t"."MoneyValue" + 1)) as "c1"
+			Ceil(-("p"."MoneyValue" + 1)) as "c1"
 		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	"t_1"."c1" <> 0
+	"t"."c1" <> 0
 

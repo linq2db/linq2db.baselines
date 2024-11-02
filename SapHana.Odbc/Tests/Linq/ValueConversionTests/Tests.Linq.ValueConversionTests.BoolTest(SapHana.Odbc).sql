@@ -524,8 +524,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'Y'
+DECLARE @true_value VarChar(1) -- AnsiString
+SET     @true_value = 'Y'
 
 SELECT
 	"t"."Id",

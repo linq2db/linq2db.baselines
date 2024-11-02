@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	?,
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM
