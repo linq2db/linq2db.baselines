@@ -51,10 +51,10 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @BoolValue NVarChar -- String
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 NVarChar -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value NVarChar -- String
+SET     @true_value = 'Y'
+DECLARE @true_value_1 NVarChar -- String
+SET     @true_value_1 = 'Y'
 
 SELECT
 	[t1].[Enum]
@@ -66,8 +66,8 @@ FROM
 			FROM
 				[ValueConversion] [t2]
 			WHERE
-				[t2].[BoolValue] = @BoolValue
-		) [t2_1] ON [t1].[BoolValue] = @BoolValue_1
+				[t2].[BoolValue] = @true_value
+		) [t2_1] ON [t1].[BoolValue] = @true_value_1
 
 BeforeExecute
 -- SqlCe

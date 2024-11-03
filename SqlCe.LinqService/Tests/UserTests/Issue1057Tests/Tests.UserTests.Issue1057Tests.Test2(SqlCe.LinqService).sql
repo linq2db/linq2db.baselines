@@ -106,8 +106,16 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[p].[TargetName],
+	CASE
+		WHEN [p].[TargetName] = 'None' THEN 1
+		ELSE 0
+	END as [c1],
 	[p].[Id],
+	[p].[TargetName],
+	CASE
+		WHEN [p].[TargetName] = 'bda.Requests' THEN 1
+		ELSE 0
+	END as [c2],
 	[a_ActualStage].[Id] as [Id_1]
 FROM
 	[Task] [p]

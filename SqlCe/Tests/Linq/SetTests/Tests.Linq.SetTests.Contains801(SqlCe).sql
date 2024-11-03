@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2 as [ParentID],
+	@ParentID as [ParentID],
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

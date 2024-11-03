@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[p].[Taxonomy]
+	Lower([p].[Taxonomy]) as [c1]
 FROM
 	[Doctor] [p]
 WHERE

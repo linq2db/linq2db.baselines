@@ -2,14 +2,13 @@
 -- SqlCe
 
 SELECT
-	[x].[PersonID] as [ID],
-	[y].[value__]
+	[x].[PersonID] + [y].[item] as [c1]
 FROM
 	[Person] [x]
 		CROSS JOIN (
-			SELECT 1 AS [value__]
+			SELECT 1 AS [item]
 			UNION ALL
-			SELECT 3 AS [value__]) [y]
+			SELECT 3 AS [item]) [y]
 
 BeforeExecute
 -- SqlCe
