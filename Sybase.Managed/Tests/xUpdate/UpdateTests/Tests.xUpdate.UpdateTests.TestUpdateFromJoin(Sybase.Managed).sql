@@ -64,7 +64,8 @@ SET
 FROM
 	[access_mode] [y1]
 WHERE
-	(Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL)
+	Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR
+	Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

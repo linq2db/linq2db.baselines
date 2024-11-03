@@ -33,13 +33,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @nullableGender UniChar(1) -- StringFixedLength
-SET     @nullableGender = 'O'
+DECLARE @Value UniChar(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	[Person]
 SET
-	[Gender] = @nullableGender
+	[Gender] = @Value
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
