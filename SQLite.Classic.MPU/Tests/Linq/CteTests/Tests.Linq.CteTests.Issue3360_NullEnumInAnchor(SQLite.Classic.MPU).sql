@@ -27,7 +27,7 @@ AS
 	UNION ALL
 	SELECT
 		[t1].[Id],
-		'THIS_IS_ONE'
+		CAST('THIS_IS_ONE' AS VarChar(50))
 	FROM
 		[cte] [t1]
 			INNER JOIN [Issue3360NullInAnchor] [r] ON [t1].[Id] = [r].[Id] + 100
