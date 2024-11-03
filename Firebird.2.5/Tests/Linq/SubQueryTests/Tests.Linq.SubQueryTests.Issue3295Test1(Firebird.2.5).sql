@@ -2,52 +2,43 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"x_1"."Id",
-	"x_1"."StatusName"
+	"x_2"."Id",
+	"x_2"."StatusName"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN (
-					SELECT FIRST 1
-						"y"."PersonID"
-					FROM
-						"Patient" "y"
-					WHERE
-						"y"."PersonID" = "x"."PersonID"
-				) IS NOT NULL
-					THEN (
-					SELECT FIRST 1
-						"y_1"."Diagnosis"
-					FROM
-						"Patient" "y_1"
-					WHERE
-						"y_1"."PersonID" = "x"."PersonID"
-				)
+				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."c1"
 				ELSE 'abc'
 			END as "StatusName",
 			CASE
-				WHEN (
-					SELECT FIRST 1
-						"y"."PersonID"
-					FROM
-						"Patient" "y"
-					WHERE
-						"y"."PersonID" = "x"."PersonID"
-				) IS NOT NULL
-					THEN (
-					SELECT FIRST 1
-						"y"."PersonID"
-					FROM
-						"Patient" "y"
-					WHERE
-						"y"."PersonID" = "x"."PersonID"
-				)
-				ELSE "x"."PersonID"
+				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."PersonID"
+				ELSE "x_1"."PersonID_1"
 			END as "Id"
 		FROM
-			"Person" "x"
-	) "x_1"
+			(
+				SELECT
+					(
+						SELECT FIRST 1
+							"y"."PersonID"
+						FROM
+							"Patient" "y"
+						WHERE
+							"y"."PersonID" = "x"."PersonID"
+					) as "PersonID",
+					(
+						SELECT FIRST 1
+							"y_1"."Diagnosis"
+						FROM
+							"Patient" "y_1"
+						WHERE
+							"y_1"."PersonID" = "x"."PersonID"
+					) as "c1",
+					"x"."PersonID" as "PersonID_1"
+				FROM
+					"Person" "x"
+			) "x_1"
+	) "x_2"
 WHERE
-	"x_1"."StatusName" = 'abc'
+	"x_2"."StatusName" = 'abc'
 
