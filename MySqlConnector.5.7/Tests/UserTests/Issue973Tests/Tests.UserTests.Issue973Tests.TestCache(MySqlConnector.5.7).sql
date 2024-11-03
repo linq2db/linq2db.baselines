@@ -15,7 +15,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -34,7 +34,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -53,7 +53,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -72,5 +72,5 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 

@@ -272,7 +272,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal
+DECLARE @p Decimal(29, 10)
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
@@ -298,7 +298,7 @@ SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal(7, 0)
+DECLARE @p Decimal(29, 10)
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
@@ -324,7 +324,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal
+DECLARE @p Decimal(29, 10)
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -350,7 +350,7 @@ SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal(7, 0)
+DECLARE @p Decimal(29, 10)
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p

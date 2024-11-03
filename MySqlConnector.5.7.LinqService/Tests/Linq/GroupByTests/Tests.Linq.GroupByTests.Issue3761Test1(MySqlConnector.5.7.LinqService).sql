@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Issue3761Table`
 (
-	`LETO`     INT      NOT NULL,
-	`STEVILKA` INT      NOT NULL,
-	`DATUM`    DATETIME     NULL,
-	`SKUPAJ`   DECIMAL      NULL,
+	`LETO`     INT             NOT NULL,
+	`STEVILKA` INT             NOT NULL,
+	`DATUM`    DATETIME            NULL,
+	`SKUPAJ`   DECIMAL(29, 10)     NULL,
 
 	CONSTRAINT `PK_Issue3761Table` PRIMARY KEY CLUSTERED (`LETO`, `STEVILKA`)
 )
