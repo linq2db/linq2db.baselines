@@ -22,7 +22,7 @@ AS
 	FROM
 		(
 			SELECT
-				1 as rn,
+				1::Int as rn,
 				x."FirstName",
 				x."PersonID" as "ID",
 				x."LastName",
@@ -32,7 +32,7 @@ AS
 				"Person" x
 			UNION ALL
 			SELECT
-				2 as rn,
+				2::Int as rn,
 				person_1."FirstName",
 				person_1."PersonID" as "ID",
 				person_1."LastName",
@@ -68,7 +68,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as rn,
+			1::Int as rn,
 			x."FirstName",
 			x."PersonID" as "ID",
 			x."LastName",
@@ -78,7 +78,7 @@ FROM
 			"Person" x
 		UNION ALL
 		SELECT
-			2 as rn,
+			2::Int as rn,
 			person_1."FirstName",
 			person_1."PersonID" as "ID",
 			person_1."LastName",
