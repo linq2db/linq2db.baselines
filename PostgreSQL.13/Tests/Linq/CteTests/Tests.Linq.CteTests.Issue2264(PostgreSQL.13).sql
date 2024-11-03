@@ -29,7 +29,7 @@ WITH RECURSIVE "CTE"
 AS
 (
 	SELECT
-		0,
+		0::Int,
 		c_1."Id",
 		c_1."ParentId",
 		c_1."Label",
