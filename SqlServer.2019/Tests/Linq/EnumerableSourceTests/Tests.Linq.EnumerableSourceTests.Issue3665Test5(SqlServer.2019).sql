@@ -1,16 +1,16 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
-	[x].[PersonID] + [y].[item]
+	[y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (VALUES
-			(1), (3)
+			(N'M'), (N'F'), (N'U'), (N'O')
 		) [y]([item])
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[t1].[FirstName],
