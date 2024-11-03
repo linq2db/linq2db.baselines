@@ -89,7 +89,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	("t"."Value" = TRUE OR "t"."Value" IS NULL)
+	"t"."Value" = TRUE OR "t"."Value" IS NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
