@@ -38,6 +38,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
+	2,
 	c_1.Id
 FROM
 	AsyncDataTable c_1

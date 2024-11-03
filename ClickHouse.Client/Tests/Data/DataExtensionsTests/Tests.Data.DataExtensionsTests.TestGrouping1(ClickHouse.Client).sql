@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.FirstName,
+	m_1.Key_1,
 	d.FirstName,
 	d.PersonID,
 	d.LastName,
@@ -11,11 +11,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1.FirstName as FirstName
+			t1.FirstName as Key_1
 		FROM
 			Person t1
 	) m_1
-		INNER JOIN Person d ON m_1.FirstName = d.FirstName
+		INNER JOIN Person d ON m_1.Key_1 = d.FirstName
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

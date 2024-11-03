@@ -53,7 +53,7 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	(p.Nullable = p.OtherNullable OR p.Nullable IS NULL AND p.OtherNullable IS NULL)
+	p.Nullable = p.OtherNullable OR p.Nullable IS NULL AND p.OtherNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -77,7 +77,8 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	(p.Nullable <> p.OtherNullable OR p.Nullable IS NULL AND p.OtherNullable IS NOT NULL OR p.Nullable IS NOT NULL AND p.OtherNullable IS NULL)
+	p.Nullable <> p.OtherNullable OR p.Nullable IS NULL AND p.OtherNullable IS NOT NULL OR
+	p.Nullable IS NOT NULL AND p.OtherNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -101,7 +102,7 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	(p.OtherNullable = p.Nullable OR p.OtherNullable IS NULL AND p.Nullable IS NULL)
+	p.OtherNullable = p.Nullable OR p.OtherNullable IS NULL AND p.Nullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -125,7 +126,8 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	(p.OtherNullable <> p.Nullable OR p.OtherNullable IS NULL AND p.Nullable IS NOT NULL OR p.OtherNullable IS NOT NULL AND p.Nullable IS NULL)
+	p.OtherNullable <> p.Nullable OR p.OtherNullable IS NULL AND p.Nullable IS NOT NULL OR
+	p.OtherNullable IS NOT NULL AND p.Nullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
