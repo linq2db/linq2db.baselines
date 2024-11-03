@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND p."FirstName" IS NOT NULL
+	p."PersonID" = 1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(4) -- String
-SET     @p = 'john'
+DECLARE @param Varchar2(4) -- String
+SET     @param = 'john'
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") = :p AND p."PersonID" = 1
+	Lower(p."FirstName") = :param AND p."PersonID" = 1
 
