@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = 'N'
+DECLARE @false_value VarChar -- AnsiString
+SET     @false_value = 'N'
 
 SELECT
 	`t`.`Id`,
@@ -63,7 +63,7 @@ SELECT
 FROM
 	`ValueConversion` `t`
 WHERE
-	`t`.`BoolValue` = @BoolValue
+	`t`.`BoolValue` = @false_value
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

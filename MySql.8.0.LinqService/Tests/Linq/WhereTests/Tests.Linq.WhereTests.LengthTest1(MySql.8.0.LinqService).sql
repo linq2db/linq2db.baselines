@@ -2,17 +2,17 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`nm_1`.`MiddleName`
+	`nm`.`MiddleName`
 FROM
 	(
 		SELECT
-			Char_Length(`nm`.`MiddleName`) as `Length_1`,
-			`nm`.`MiddleName`
+			Char_Length(`p`.`MiddleName`) as `Length_1`,
+			`p`.`MiddleName`
 		FROM
-			`Person` `nm`
-	) `nm_1`
+			`Person` `p`
+	) `nm`
 WHERE
-	(`nm_1`.`Length_1` <> 0 OR `nm_1`.`Length_1` IS NULL)
+	`nm`.`Length_1` <> 0 OR `nm`.`Length_1` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

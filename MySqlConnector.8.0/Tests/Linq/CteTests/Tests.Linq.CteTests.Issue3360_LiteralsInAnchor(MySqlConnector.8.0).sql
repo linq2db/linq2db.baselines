@@ -43,10 +43,10 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Guid Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
+DECLARE @p Guid
+SET     @p = '0b8afe27-481c-442e-b8cf-729ddfeece29'
+DECLARE @p_1 Guid
+SET     @p_1 = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 WITH RECURSIVE `cte`
 (
@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		`r`.`Id`,
-		5,
-		5,
-		@Guid,
-		@GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		CAST(5 AS UNSIGNED),
+		CAST(5 AS UNSIGNED),
+		CAST(@p AS CHAR(36)),
+		CAST(@p_1 AS CHAR(36)),
+		CAST('ENUM1_VALUE' AS CHAR(11)),
+		CAST('ENUM2_VALUE' AS CHAR(11)),
+		CAST(1 AS SIGNED),
+		CAST(0 AS SIGNED)
 	FROM
 		`Issue3360Table1` `r`
 	WHERE
