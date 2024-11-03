@@ -485,11 +485,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = -1
+DECLARE @Value Int -- Int32
+SET     @Value = -1
 
 SELECT
-	CAST(DateAdd(week, @p, [t].[TransactionDate]) AS Date)
+	CAST(DateAdd(week, @Value, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 
