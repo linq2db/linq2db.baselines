@@ -22,8 +22,8 @@ SET     @p_1 = NULL
 
 SELECT
 	[t3].[Id],
-	IIF([t3].[Value_1] IS NOT NULL, [t3].[Value_1], @p),
-	IIF([t3].[Value_1_1] IS NOT NULL, [t3].[Value_1_1], @p_1)
+	IIF([t3].[c1] IS NOT NULL, [t3].[c1], @p),
+	IIF([t3].[c2] IS NOT NULL, [t3].[c2], @p_1)
 FROM
 	(
 		SELECT
@@ -39,7 +39,7 @@ FROM
 					) [t1]([Key], [Value])
 				WHERE
 					[t1].[Key] = [outfeed].[Id]
-			) as [Value_1],
+			) as [c1],
 			(
 				SELECT TOP (1)
 					[t2].[Value]
@@ -50,7 +50,7 @@ FROM
 					) [t2]([Key], [Value])
 				WHERE
 					[t2].[Key] = [outfeed].[Id]
-			) as [Value_1_1]
+			) as [c2]
 		FROM
 			[Test3847_OutfeedTransportOrder] [outfeed]
 	) [t3]
