@@ -2,14 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t_1].[c1]
+	[t].[MoneyValue]
 FROM
 	(
 		SELECT
-			Round([t].[MoneyValue], 1) as [c1]
+			IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 1), ROUND([p].[MoneyValue] / 2, 1) * 2, ROUND([p].[MoneyValue], 1)) as [c1],
+			[p].[MoneyValue]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0 AND [t_1].[c1] <> 7
+	[t].[c1] <> 0 AND [t].[c1] <> 7
 

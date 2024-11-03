@@ -503,22 +503,18 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[m_1].[BookId],
+	[m_1].[Id],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	((
 		SELECT DISTINCT
-			[t3].[BookId]
+			[t3].[Id]
 		FROM
 			(
 				SELECT
-					[a_Book].[BookId] as [Id],
-					[a_Book].[BookName],
-					[a_Book].[BookId],
-					IIF(False, 0, NULL) as [c1],
-					IIF(False, 0, NULL) as [c2],
-					0 as [projection__set_id__]
+					0 as [projection__set_id__],
+					[a_Book].[BookId] as [Id]
 				FROM
 					([Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
@@ -527,12 +523,8 @@ FROM
 					[a_Book].[Discriminator] = 'Roman'
 				UNION ALL
 				SELECT
-					[a_Book_1].[BookId] as [Id],
-					[a_Book_1].[BookName],
-					IIF(False, 0, NULL) as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2],
-					1 as [projection__set_id__]
+					1 as [projection__set_id__],
+					IIF(False, 0, NULL) as [Id]
 				FROM
 					([Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
@@ -543,7 +535,7 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 0
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON ([d].[FkBookId] = [m_1].[BookId]))
+		INNER JOIN [BookAuthor] [d] ON ([d].[FkBookId] = [m_1].[Id]))
 		LEFT JOIN [Author] [a_Author] ON ([d].[FkAuthorId] = [a_Author].[AuthorId])
 
 BeforeExecute
@@ -551,23 +543,17 @@ BeforeExecute
 
 SELECT
 	[m_1].[c1],
-	[m_1].[c2],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	((
 		SELECT DISTINCT
-			[t3].[c1],
-			[t3].[c2]
+			[t3].[c1]
 		FROM
 			(
 				SELECT
-					[a_Book].[BookId] as [Id],
-					[a_Book].[BookName],
-					[a_Book].[BookId],
-					IIF(False, 0, NULL) as [c1],
-					IIF(False, 0, NULL) as [c2],
-					0 as [projection__set_id__]
+					0 as [projection__set_id__],
+					IIF(False, 0, NULL) as [c1]
 				FROM
 					([Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
@@ -576,12 +562,8 @@ FROM
 					[a_Book].[Discriminator] = 'Roman'
 				UNION ALL
 				SELECT
-					[a_Book_1].[BookId] as [Id],
-					[a_Book_1].[BookName],
-					IIF(False, 0, NULL) as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2],
-					1 as [projection__set_id__]
+					1 as [projection__set_id__],
+					[a_Book_1].[BookId] as [c1]
 				FROM
 					([Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
@@ -592,10 +574,10 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 1
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON ([d].[FkBookId] = [m_1].[c1] AND [m_1].[c2] IS NOT NULL))
+		INNER JOIN [BookAuthor] [d] ON ([d].[FkBookId] = [m_1].[c1]))
 		LEFT JOIN [Author] [a_Author] ON ([d].[FkAuthorId] = [a_Author].[AuthorId])
 WHERE
-	([a_Author].[AuthorName] <> 'A' OR [a_Author].[AuthorName] IS NULL)
+	[a_Author].[AuthorName] <> 'A' OR [a_Author].[AuthorName] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -607,7 +589,6 @@ SELECT
 	[a_Book].[BookName],
 	0,
 	[a_Book].[BookId],
-	IIF(False, 0, NULL),
 	IIF(False, 0, NULL)
 FROM
 	([Author] [t1]
@@ -621,7 +602,6 @@ SELECT
 	[a_Book_1].[BookName],
 	1,
 	IIF(False, 0, NULL),
-	[a_Book_1].[BookId],
 	[a_Book_1].[BookId]
 FROM
 	([Author] [t2]
@@ -664,10 +644,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = 'Novel', True, False),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = 'Roman', True, False),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	([Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON ([d].[FkAuthorId] = [m_1].[AuthorId]))

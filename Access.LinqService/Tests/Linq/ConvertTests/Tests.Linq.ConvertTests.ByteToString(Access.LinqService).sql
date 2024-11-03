@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	CStr([p].[ID])
+	[p].[ID]
 FROM
 	[LinqDataTypes] [p]
 WHERE

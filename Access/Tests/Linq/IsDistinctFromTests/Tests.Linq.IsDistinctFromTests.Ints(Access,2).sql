@@ -70,57 +70,49 @@ BeforeExecute
 -- Access AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 2
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 2
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL, 0, 1) = 1
+	[s].[Int] <> @value
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 2
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 2
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL, 0, 1) = 1
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 2
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 2
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[Int] = @value OR [s].[Int] IS NULL AND @value_1 IS NULL, 0, 1) = 0
+	[s].[Int] = @value
 
 BeforeExecute
 -- Access AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 2
-DECLARE @value_1 Integer -- Int32
-SET     @value_1 = 2
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
-	IIF([s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value_1 IS NULL, 0, 1) = 0
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
 
 BeforeExecute
 -- Access AccessOleDb

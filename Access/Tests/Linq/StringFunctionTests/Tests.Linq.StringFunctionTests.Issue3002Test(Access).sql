@@ -57,7 +57,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -71,7 +71,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -99,7 +99,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -113,7 +113,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -127,7 +127,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1)
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
 -- Access AccessOleDb

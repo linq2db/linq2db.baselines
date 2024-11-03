@@ -3,13 +3,13 @@
 
 SELECT
 	[p].[ParentID],
-	True
+	CBool(True)
 FROM
 	[Parent] [p]
 UNION
 SELECT
 	[ch].[ParentID],
-	False
+	CBool(False)
 FROM
 	[Child] [ch]
 

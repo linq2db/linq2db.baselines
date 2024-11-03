@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			-Int([t].[MoneyValue] + 1) as [c1]
+			-Int([p].[MoneyValue] + 1) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0
+	[t].[c1] <> 0
 

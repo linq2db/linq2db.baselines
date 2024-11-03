@@ -114,11 +114,11 @@ SET     @id = 3
 
 UPDATE
 	[MainTable] [a_MainRequired],
-	[AssociatedTable] [pat]
+	[AssociatedTable] [p]
 SET
 	[a_MainRequired].[Field] = 'test'
 WHERE
-	[pat].[Id] = ? AND [pat].[Id] = [a_MainRequired].[Id]
+	[p].[Id] = ? AND [p].[Id] = [a_MainRequired].[Id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

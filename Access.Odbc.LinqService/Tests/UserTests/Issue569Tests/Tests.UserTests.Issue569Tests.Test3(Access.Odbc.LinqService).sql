@@ -2,15 +2,15 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t1].[PersonID],
+	[p].[PersonID],
 	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	[Person] [t1],
+	[Person] [p],
 	[Patient] [pt],
 	[Doctor] [d]
 ORDER BY
-	[t1].[PersonID],
+	[p].[PersonID],
 	[pt].[PersonID],
 	[d].[Taxonomy]
 

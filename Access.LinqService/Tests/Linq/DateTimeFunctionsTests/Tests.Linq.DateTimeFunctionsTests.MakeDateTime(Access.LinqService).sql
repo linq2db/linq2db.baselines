@@ -2,9 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	DateSerial(2010, [t].[ID], 1)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			DateSerial(2010, [p].[ID], 1) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart('yyyy', DateSerial(2010, [t].[ID], 1)) = 2010
+	DatePart('yyyy', [t].[c1]) = 2010
 

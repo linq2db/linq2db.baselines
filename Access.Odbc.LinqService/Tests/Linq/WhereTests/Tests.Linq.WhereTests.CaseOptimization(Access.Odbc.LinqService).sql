@@ -41,7 +41,7 @@ SELECT
 FROM
 	[WhereWithString] [x]
 WHERE
-	[x].[StringValue] LIKE '%Str%'
+	[x].[StringValue] LIKE '%Str%' AND [x].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Odbc AccessODBC

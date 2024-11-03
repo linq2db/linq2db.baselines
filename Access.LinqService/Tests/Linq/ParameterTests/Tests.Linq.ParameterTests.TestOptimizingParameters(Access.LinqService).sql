@@ -12,5 +12,6 @@ SELECT
 FROM
 	[Person] [t1]
 WHERE
-	([t1].[PersonID] = @id OR [t1].[PersonID] <= @id_1 OR [t1].[PersonID] = @id_2)
+	[t1].[PersonID] = @id OR [t1].[PersonID] <= @id_1 OR
+	[t1].[PersonID] = @id_2
 
