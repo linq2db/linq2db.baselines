@@ -19,5 +19,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	CAST(Floor(IIF([o].[Freight] * 10 - Floor([o].[Freight] * 10) = 0.5 AND Floor([o].[Freight] * 10) % 2 = 0, Floor([o].[Freight] * 10), Round([o].[Freight] * 10, 0))) AS Int) = 592
+	CAST(Floor(IIF([o].[Freight] * 10 - FLOOR([o].[Freight] * 10) = 0.5 AND (FLOOR([o].[Freight] * 10) % 2) = 0, FLOOR([o].[Freight] * 10), ROUND([o].[Freight] * 10, 0))) AS Int) = 592
 
