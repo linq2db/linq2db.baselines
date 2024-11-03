@@ -9,9 +9,19 @@ SELECT
 	[bind2].[ShippedDate],
 	[bind2].[ShipVia],
 	[bind2].[Freight],
+	CASE
+		WHEN [bind2].[OrderID] IS NOT NULL AND [a_Shipper].[ShipperID] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	[a_Shipper].[ShipperID],
 	[a_Shipper].[CompanyName],
 	[a_Shipper].[Phone],
+	CASE
+		WHEN [bind2].[OrderID] IS NOT NULL AND [a_Employee].[EmployeeID] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	[a_Employee].[EmployeeID],
 	[a_Employee].[LastName],
 	[a_Employee].[FirstName],
@@ -69,6 +79,11 @@ SELECT
 	[bind1].[ReportsTo],
 	[bind1].[PhotoPath],
 	[bind4].[EmployeeID],
+	CASE
+		WHEN [bind4].[EmployeeID] IS NOT NULL AND [a_Employee_1].[EmployeeID] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	[a_Employee_1].[EmployeeID],
 	[a_Employee_1].[LastName],
 	[a_Employee_1].[FirstName],
