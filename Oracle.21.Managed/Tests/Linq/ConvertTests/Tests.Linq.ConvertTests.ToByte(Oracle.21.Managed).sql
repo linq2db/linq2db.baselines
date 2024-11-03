@@ -2,14 +2,9 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	p_1."c1"
+	p."MoneyValue"
 FROM
-	(
-		SELECT
-			CAST(Floor(p."MoneyValue") AS Number(3)) as "c1"
-		FROM
-			"LinqDataTypes" p
-	) p_1
+	"LinqDataTypes" p
 WHERE
-	p_1."c1" > 0
+	CAST(Floor(p."MoneyValue") AS Number(3)) > 0
 
