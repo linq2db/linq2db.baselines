@@ -36,12 +36,11 @@ VALUES
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-WITH [CTE_1] ([ParentID], [ChildID])
+WITH [CTE_1] ([ParentID])
 AS
 (
 	SELECT
-		[c_1].[ParentID],
-		[c_1].[ChildID]
+		[c_1].[ParentID]
 	FROM
 		[CteChild] [c_1]
 	WHERE
