@@ -116,8 +116,8 @@ SELECT
 	t1.Byte_1,
 	t1.Guid,
 	t1.Guid_1,
-	t1.Enum,
-	t1.EnumN,
+	t1.c1,
+	t1.c2,
 	t1.Bool,
 	t1.Bool_1
 FROM
@@ -128,8 +128,8 @@ FROM
 			toUInt8(NULL) as Byte_1,
 			toUUID(NULL) as Guid,
 			toUUID(NULL) as Guid_1,
-			toString(NULL) as Enum,
-			toString(NULL) as EnumN,
+			toString(NULL) as c1,
+			toString(NULL) as c2,
 			toBool(NULL) as Bool,
 			toBool(NULL) as Bool_1
 		FROM
@@ -143,8 +143,8 @@ FROM
 			r_1.ByteN as Byte_1,
 			r_1.Guid as Guid,
 			r_1.GuidN as Guid_1,
-			r_1.Enum as Enum,
-			r_1.EnumN as EnumN,
+			r_1.Enum as c1,
+			r_1.EnumN as c2,
 			r_1.Bool as Bool,
 			r_1.BoolN as Bool_1
 		FROM
