@@ -526,10 +526,18 @@ BeforeExecute
 
 SELECT DISTINCT
 	"t1"."BookId",
-	"t1"."Discriminator",
+	CASE
+		WHEN "t1"."Discriminator" = 'Novel' THEN TRUE
+		ELSE FALSE
+	END,
 	"t1"."BookName",
 	"t1"."NovelScore",
-	"t1"."RomanScore"
+	CASE
+		WHEN "t1"."Discriminator" = 'Roman' THEN TRUE
+		ELSE FALSE
+	END,
+	"t1"."RomanScore",
+	"t1"."Discriminator"
 FROM
 	(
 		SELECT
@@ -556,7 +564,7 @@ WHERE
 		WHERE
 			"a_Book_1"."Discriminator" = 'Novel' AND
 			("t1"."BookId" = "a_Book_1"."BookId" OR "t1"."BookId" IS NULL AND "a_Book_1"."BookId" IS NULL) AND
-			"t1"."BookId" = "a_Book_1"."BookId" AND
+			("t1"."BookId" = "a_Book_1"."BookId" OR "t1"."BookId" IS NULL AND "a_Book_1"."BookId" IS NULL) AND
 			("t1"."Discriminator" = "a_Book_1"."Discriminator" OR "t1"."Discriminator" IS NULL AND "a_Book_1"."Discriminator" IS NULL) AND
 			("t1"."BookName" = "a_Book_1"."BookName" OR "t1"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
 			("t1"."RomanScore" = "a_Book_1"."RomanScore" OR "t1"."RomanScore" IS NULL AND "a_Book_1"."RomanScore" IS NULL) AND
@@ -569,10 +577,18 @@ BeforeExecute
 SELECT
 	"m_1"."AuthorId",
 	"a_Book"."BookId",
-	"a_Book"."Discriminator",
+	CASE
+		WHEN "a_Book"."Discriminator" = 'Novel' THEN TRUE
+		ELSE FALSE
+	END,
 	"a_Book"."BookName",
 	"a_Book"."NovelScore",
-	"a_Book"."RomanScore"
+	CASE
+		WHEN "a_Book"."Discriminator" = 'Roman' THEN TRUE
+		ELSE FALSE
+	END,
+	"a_Book"."RomanScore",
+	"a_Book"."Discriminator"
 FROM
 	"Author" "m_1"
 		INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "m_1"."AuthorId"

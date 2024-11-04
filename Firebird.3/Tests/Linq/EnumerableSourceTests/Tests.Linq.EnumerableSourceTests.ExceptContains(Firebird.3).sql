@@ -2,7 +2,10 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"r"."PersonID"
+	CASE
+		WHEN "r"."PersonID" IN (1, 2, 3) THEN TRUE
+		ELSE FALSE
+	END
 FROM
 	"Person" "r"
 
