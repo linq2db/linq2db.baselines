@@ -14,10 +14,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Issue3761Table"
 			(
-				LETO     Int       NOT NULL,
-				STEVILKA Int       NOT NULL,
+				LETO     Int             NOT NULL,
+				STEVILKA Int             NOT NULL,
 				DATUM    TimeStamp,
-				SKUPAJ   Decimal,
+				SKUPAJ   Decimal(18, 10),
 
 				CONSTRAINT "PK_Issue3761Table" PRIMARY KEY (LETO, STEVILKA)
 			)
@@ -28,11 +28,15 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	MAX("r"."PersonID")
+	MAX("r"."PersonID"),
+	CAST('MAX' AS VARCHAR(3)),
+	NULL
 FROM
 	"Person" "r"
 UNION ALL
 SELECT
+	NULL,
+	NULL,
 	"r_1"."PersonID"
 FROM
 	"Person" "r_1"
