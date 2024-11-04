@@ -36,7 +36,10 @@ BeforeExecute
 SELECT
 	(
 		SELECT
-			1
+			CASE
+				WHEN `a_Metrics`.`Value` IS NOT NULL THEN 1
+				ELSE 0
+			END
 		FROM
 			`Metric` `a_Metrics`
 		WHERE

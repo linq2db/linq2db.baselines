@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE `TestTrun`
 (
-	`ID`     INT     NOT NULL,
-	`Field1` DECIMAL NOT NULL,
+	`ID`     INT             NOT NULL,
+	`Field1` DECIMAL(29, 10) NOT NULL,
 
 	CONSTRAINT `PK_TestTrun` PRIMARY KEY CLUSTERED (`ID`)
 )
