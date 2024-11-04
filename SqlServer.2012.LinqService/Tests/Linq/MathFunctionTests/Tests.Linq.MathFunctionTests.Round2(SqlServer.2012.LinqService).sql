@@ -2,14 +2,9 @@
 -- SqlServer.2012
 
 SELECT
-	[t_1].[c1]
+	[t].[MoneyValue]
 FROM
-	(
-		SELECT
-			IIF(CAST([t].[MoneyValue] AS Float) - Floor(CAST([t].[MoneyValue] AS Float)) = 0.5 AND (Convert(Int, Floor(CAST([t].[MoneyValue] AS Float))) % 2) = 0, Floor(CAST([t].[MoneyValue] AS Float)), Round(CAST([t].[MoneyValue] AS Float), 0)) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+	[LinqDataTypes] [t]
 WHERE
-	[t_1].[c1] <> 0
+	IIF(CAST([t].[MoneyValue] AS Float) - FLOOR(CAST([t].[MoneyValue] AS Float)) = 0.5 AND (Convert(Int, FLOOR(CAST([t].[MoneyValue] AS Float))) % 2) = 0, FLOOR(CAST([t].[MoneyValue] AS Float)), ROUND(CAST([t].[MoneyValue] AS Float), 0)) <> 0
 
