@@ -36,13 +36,13 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @nullableGender String(1) -- StringFixedLength
-SET     @nullableGender = 'O'
+DECLARE @Value String(1) -- StringFixedLength
+SET     @Value = 'O'
 
 UPDATE
 	`Person` `t1`
 SET
-	`t1`.`Gender` = @nullableGender
+	`t1`.`Gender` = @Value
 WHERE
 	`t1`.`FirstName` LIKE 'UpdateComplex%' ESCAPE '~'
 

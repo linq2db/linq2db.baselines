@@ -29,7 +29,7 @@ WITH RECURSIVE `CTE`
 AS
 (
 	SELECT
-		0,
+		CAST(0 AS SIGNED),
 		`c_1`.`Id`,
 		`c_1`.`ParentId`,
 		`c_1`.`Label`,

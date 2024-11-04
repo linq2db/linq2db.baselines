@@ -106,8 +106,16 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`p`.`TargetName`,
+	CASE
+		WHEN `p`.`TargetName` = 'None' THEN 1
+		ELSE 0
+	END,
 	`p`.`Id`,
+	`p`.`TargetName`,
+	CASE
+		WHEN `p`.`TargetName` = 'bda.Requests' THEN 1
+		ELSE 0
+	END,
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`

@@ -2,11 +2,11 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`ch`.`ParentID`,
-	`ch`.`ChildID`
+	`x`.`ParentID`,
+	`x`.`ChildID`
 FROM
-	`Child` `ch`
+	`Child` `x`
 ORDER BY
-	`ch`.`ChildID` % 2,
-	`ch`.`ChildID`
+	`x`.`ChildID`,
+	`x`.`ChildID` % 2
 
