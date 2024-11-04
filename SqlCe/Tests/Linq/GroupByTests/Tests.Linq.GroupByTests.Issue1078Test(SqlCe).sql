@@ -38,7 +38,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[grp].[SiteID],
+	[grp].[SiteID] as [Key_1],
 	COUNT(*) as [COUNT_1],
 	COUNT(CASE
 		WHEN [grp].[Active] = 0 THEN 1

@@ -1,0 +1,200 @@
+﻿BeforeExecute
+-- SqlCe
+
+DROP TABLE [Author]
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [Author]
+(
+	[AuthorId]   Int           NOT NULL,
+	[AuthorName] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_Author] PRIMARY KEY ([AuthorId])
+)
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [Author]
+(
+	[AuthorId],
+	[AuthorName]
+)
+SELECT 1,'Stephen King' UNION ALL
+SELECT 2,'Harry Harrison' UNION ALL
+SELECT 3,'Roger Joseph Zelazny'
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Book]
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [Book]
+(
+	[BookId]        Int           NOT NULL,
+	[Discriminator] NVarChar(255)     NULL,
+	[BookName]      NVarChar(255)     NULL,
+	[RomanScore]    Int               NULL,
+	[NovelScore]    Int               NULL,
+
+	CONSTRAINT [PK_Book] PRIMARY KEY ([BookId])
+)
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [Book]
+(
+	[BookId],
+	[Discriminator],
+	[BookName],
+	[RomanScore],
+	[NovelScore]
+)
+SELECT 11,'Roman','Lisey''s Story[',4,0 UNION ALL
+SELECT 12,'Novel','Duma Key',0,0 UNION ALL
+SELECT 13,'Roman','Just After Sunset',3,0 UNION ALL
+SELECT 21,'Roman','Deathworld',1,0 UNION ALL
+SELECT 22,'Novel','The Stainless Steel Rat',0,0 UNION ALL
+SELECT 23,'Roman','Planet of the Damned',0,0 UNION ALL
+SELECT 31,'Roman','Blood of Amber',5,0 UNION ALL
+SELECT 32,'Novel','Knight of Shadows',0,0 UNION ALL
+SELECT 33,'Roman','The Chronicles of Amber',7,0
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [BookAuthor]
+
+BeforeExecute
+-- SqlCe
+
+CREATE TABLE [BookAuthor]
+(
+	[FkBookId]   Int NOT NULL,
+	[FkAuthorId] Int NOT NULL
+)
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [BookAuthor]
+(
+	[FkBookId],
+	[FkAuthorId]
+)
+SELECT 11,1 UNION ALL
+SELECT 12,1 UNION ALL
+SELECT 13,1 UNION ALL
+SELECT 21,2 UNION ALL
+SELECT 22,2 UNION ALL
+SELECT 23,2 UNION ALL
+SELECT 31,3 UNION ALL
+SELECT 32,3 UNION ALL
+SELECT 33,3
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t3].[BookId],
+	CASE
+		WHEN [t3].[Discriminator] = 'Novel' THEN 1
+		ELSE 0
+	END as [c1],
+	[t3].[BookId_1],
+	[t3].[BookName],
+	[t3].[NovelScore],
+	CASE
+		WHEN [t3].[Discriminator] = 'Roman' THEN 1
+		ELSE 0
+	END as [c2],
+	[t3].[RomanScore],
+	[t3].[Discriminator]
+FROM
+	(
+		SELECT
+			[a_Book].[BookId],
+			[a_Book].[BookId] as [BookId_1],
+			[a_Book].[Discriminator],
+			[a_Book].[BookName],
+			[a_Book].[RomanScore],
+			[a_Book].[NovelScore]
+		FROM
+			[Author] [t1]
+				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
+				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		WHERE
+			[a_Book].[Discriminator] = 'Novel'
+		UNION
+		SELECT
+			[a_Book_1].[BookId],
+			[a_Book_1].[BookId] as [BookId_1],
+			[a_Book_1].[Discriminator],
+			[a_Book_1].[BookName],
+			[a_Book_1].[RomanScore],
+			[a_Book_1].[NovelScore]
+		FROM
+			[Author] [t2]
+				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
+				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+		WHERE
+			[a_Book_1].[Discriminator] = 'Roman'
+	) [t3]
+
+BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[m_1].[AuthorId],
+	[a_Book].[BookId],
+	CASE
+		WHEN [a_Book].[Discriminator] = 'Novel' THEN 1
+		ELSE 0
+	END as [c1],
+	[a_Book].[BookName],
+	[a_Book].[NovelScore],
+	CASE
+		WHEN [a_Book].[Discriminator] = 'Roman' THEN 1
+		ELSE 0
+	END as [c2],
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
+FROM
+	[Author] [m_1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
+		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[AuthorId],
+	[t1].[AuthorName]
+FROM
+	[Author] [t1]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Author]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [Book]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [BookAuthor]
+

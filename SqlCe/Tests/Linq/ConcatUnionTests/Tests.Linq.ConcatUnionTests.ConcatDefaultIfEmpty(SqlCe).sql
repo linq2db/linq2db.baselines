@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	0 as [projection__set_id__],
+	CAST(0 AS Int) as [projection__set_id__],
 	[t1].[ParentID],
 	[t1].[ParentID] as [ParentID_1],
 	[t1].[ChildID]
@@ -21,7 +21,7 @@ WHERE
 	[p].[ParentID] = 1
 UNION ALL
 SELECT
-	1 as [projection__set_id__],
+	CAST(1 AS Int) as [projection__set_id__],
 	NULL as [ParentID],
 	NULL as [ParentID_1],
 	NULL as [ChildID]

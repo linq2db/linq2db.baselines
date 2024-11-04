@@ -36,13 +36,13 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @nullableGender NVarChar(1) -- String
-SET     @nullableGender = 'O'
+DECLARE @Value NVarChar(1) -- String
+SET     @Value = 'O'
 
 UPDATE
 	[Person]
 SET
-	[Gender] = @nullableGender
+	[Gender] = @Value
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
