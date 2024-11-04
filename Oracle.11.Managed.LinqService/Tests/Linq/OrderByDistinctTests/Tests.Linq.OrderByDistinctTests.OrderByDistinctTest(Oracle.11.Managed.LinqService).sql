@@ -549,8 +549,6 @@ FROM
 					"OrderByDistinctData" x
 				GROUP BY
 					x."DuplicateData"
-				ORDER BY
-					MAX(x."OrderData1")
 			) t1
 		WHERE
 			ROWNUM <= (:skip + :take)
@@ -607,8 +605,6 @@ FROM
 					"OrderByDistinctData" x
 				GROUP BY
 					x."DuplicateData"
-				ORDER BY
-					MIN(x."OrderData1") DESC
 			) t1
 		WHERE
 			ROWNUM <= (:skip + :take)
