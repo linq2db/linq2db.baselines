@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @ParentID Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	@ParentID,
 	`ch`.`ChildID`,
 	`gc`.`GrandChildID`
 FROM
