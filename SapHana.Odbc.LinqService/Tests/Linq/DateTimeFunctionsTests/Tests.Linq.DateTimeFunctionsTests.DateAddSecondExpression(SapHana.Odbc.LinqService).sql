@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 41
+DECLARE @Value  -- Int32
+SET     @Value = 41
 
 SELECT
 	Second(Add_Seconds("t"."DateTimeValue", ?))

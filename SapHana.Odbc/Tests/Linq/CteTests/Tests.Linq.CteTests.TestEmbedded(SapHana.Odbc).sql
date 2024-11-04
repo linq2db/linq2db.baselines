@@ -9,7 +9,7 @@ AS
 	FROM
 		"Child" "c_1"
 ),
-"CTE_2" ("ChildID")
+"CTE_2" ("NotIn")
 AS
 (
 	SELECT DISTINCT
@@ -17,19 +17,19 @@ AS
 	FROM
 		"CTE_1" "t1"
 ),
-"CTE_3" ("ChildID")
+"CTE_3" ("NotIn")
 AS
 (
 	SELECT DISTINCT
-		"t2"."ChildID"
+		"t2"."NotIn"
 	FROM
 		"CTE_2" "t2"
 ),
-"CTE_4" ("ChildID")
+"CTE_4" ("NotIn")
 AS
 (
 	SELECT DISTINCT
-		"t3"."ChildID"
+		"t3"."NotIn"
 	FROM
 		"CTE_3" "t3"
 )
@@ -41,7 +41,7 @@ FROM
 WHERE
 	"w"."ChildID" NOT IN (
 		SELECT
-			"t4"."ChildID"
+			"t4"."NotIn"
 		FROM
 			"CTE_4" "t4"
 	)

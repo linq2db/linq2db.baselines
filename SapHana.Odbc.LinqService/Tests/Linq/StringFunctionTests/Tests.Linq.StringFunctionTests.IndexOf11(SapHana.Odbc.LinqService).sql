@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar(2) -- String
-SET     @p = 'oh'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate("p"."FirstName", ?) - 1 = 1 AND "p"."PersonID" = 1
+	Locate("p"."FirstName", 'oh') = 2 AND "p"."PersonID" = 1
 
