@@ -19,7 +19,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	person_1."LastName" as "Operator_1"
+	person_1."LastName"
 FROM
 	"Person" person_1
 FETCH NEXT 1 ROWS ONLY
