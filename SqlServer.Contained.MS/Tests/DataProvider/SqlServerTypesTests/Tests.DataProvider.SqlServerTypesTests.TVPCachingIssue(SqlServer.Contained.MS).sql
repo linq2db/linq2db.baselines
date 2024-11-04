@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[ID],
@@ -19,7 +19,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@p [x]
+					@table [x]
 			)
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
@@ -28,27 +28,27 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[ID],
@@ -64,7 +64,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@p [x]
+					@table [x]
 			)
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
@@ -73,27 +73,27 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[ID],
@@ -109,7 +109,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@p [x]
+					@table [x]
 			)
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
@@ -118,27 +118,27 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[ID],
@@ -154,7 +154,7 @@ FROM
 				SELECT
 					[x].[Id]
 				FROM
-					@p [x]
+					@table [x]
 			)
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
@@ -163,18 +163,18 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
