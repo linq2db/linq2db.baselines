@@ -38,7 +38,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NOT @value
+	[s].[String] IS NULL OR [s].[String] <> @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NOT @value
+	[s].[NullableString] IS NULL OR [s].[NullableString] <> @value
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -62,7 +62,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS @value
+	NOT ([s].[String] IS NULL OR [s].[String] <> @value)
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -74,7 +74,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS @value
+	NOT ([s].[NullableString] IS NULL OR [s].[NullableString] <> @value)
 
 BeforeExecute
 -- SQLite.Classic SQLite
