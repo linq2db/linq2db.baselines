@@ -37,17 +37,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @take Integer -- Int32
-SET     @take = 1
-
-SELECT
-	1
-FROM
-	"SelectExpressionTable" "t1"
-FETCH NEXT @take ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SelectExpressionTable')) THEN
