@@ -230,19 +230,19 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.c1,
+	t1.Key_1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			fromUnixTimestamp64Nano(toUnixTimestamp64Nano(x.TransactionDate) + toInt64(toFloat64(-1000000))) as c1
+			fromUnixTimestamp64Nano(toUnixTimestamp64Nano(x.TransactionDate) + toInt64(toFloat64(-1000000))) as Key_1
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.c1
+	t1.Key_1
 ORDER BY
-	t1.c1
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
