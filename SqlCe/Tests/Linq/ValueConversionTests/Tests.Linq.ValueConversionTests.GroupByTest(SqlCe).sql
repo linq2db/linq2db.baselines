@@ -57,8 +57,8 @@ DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
+	[m_1].[Id] as [Key_1],
 	[m_1].[Id],
-	[m_1].[Id] as [Id_1],
 	[m_1].[Value1],
 	[m_1].[Value2],
 	[m_1].[Enum],
@@ -81,7 +81,7 @@ DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	[g_1].[Id]
+	[g_1].[Id] as [Key_1]
 FROM
 	[ValueConversion] [g_1]
 WHERE

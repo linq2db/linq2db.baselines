@@ -57,9 +57,6 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Ints] [i]
-WHERE
-	[i].[One] IS NOT NULL AND [i].[Two] IS NOT NULL AND
-	[i].[Three] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

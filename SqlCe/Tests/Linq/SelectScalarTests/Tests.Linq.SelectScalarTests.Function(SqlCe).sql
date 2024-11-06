@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @text NVarChar(3) -- String
+SET     @text = '123'
 
 SELECT TOP (1)
-	[c_1].[ChildID]
+	CAST([c_1].[ChildID] AS NVarChar(11)) + ',' + @text as [c1]
 FROM
 	[Child] [c_1]
 

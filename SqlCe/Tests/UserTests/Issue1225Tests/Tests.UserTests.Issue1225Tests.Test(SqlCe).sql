@@ -86,7 +86,7 @@ BeforeExecute
 SELECT
 	'Id' as [Name],
 	[it].[Id] as [Value_1],
-	SUM([a_ActualStage].[Id]) as [SUM_1]
+	SUM([a_ActualStage].[Id]) as [Value_2]
 FROM
 	[Task] [it]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1

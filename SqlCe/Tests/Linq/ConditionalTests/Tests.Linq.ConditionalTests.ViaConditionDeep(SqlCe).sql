@@ -35,6 +35,10 @@ SELECT 10,'String10'
 
 BeforeExecute
 -- SqlCe
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Int -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	[x].[Id],
@@ -42,8 +46,14 @@ SELECT
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN 1
 		ELSE 0
 	END as [child],
-	[x].[StringProp] as [child_1],
-	[x].[StringProp] + '2' as [StringProp]
+	CASE
+		WHEN [x].[StringProp] = '2' THEN 1
+		ELSE 0
+	END as [child_1],
+	[x].[StringProp],
+	@IntProp as [IntProp],
+	[x].[StringProp] + '2' as [StringProp_1],
+	@IntProp_1 as [IntProp_1]
 FROM
 	[ConditionalData] [x]
 WHERE
