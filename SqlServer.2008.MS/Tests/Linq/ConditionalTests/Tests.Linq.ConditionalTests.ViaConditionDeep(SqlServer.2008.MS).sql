@@ -38,6 +38,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @IntProp Int -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Int -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	[x].[Id],
@@ -46,8 +50,14 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [x].[StringProp] = N'2' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp],
-	[x].[StringProp] + N'2'
+	@IntProp,
+	[x].[StringProp] + N'2',
+	@IntProp_1
 FROM
 	[ConditionalData] [x]
 WHERE

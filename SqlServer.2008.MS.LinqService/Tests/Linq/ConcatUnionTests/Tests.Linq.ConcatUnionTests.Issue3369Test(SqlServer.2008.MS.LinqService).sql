@@ -12,11 +12,11 @@ FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
+			CAST(N'A' AS NVarChar(4000)) as [FirstName],
 			CASE
 				WHEN [x].[FirstName] = N'123' THEN N'Y'
 				ELSE N'N'
-			END as [OK],
-			N'A' as [FirstName]
+			END as [OK]
 		FROM
 			[Person] [x]
 		WHERE
@@ -24,8 +24,8 @@ FROM
 		UNION
 		SELECT
 			[x_1].[PersonID] as [ID],
-			N'N' as [OK],
-			[x_1].[FirstName]
+			[x_1].[FirstName],
+			CAST(N'N' AS NVarChar(4000)) as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE
