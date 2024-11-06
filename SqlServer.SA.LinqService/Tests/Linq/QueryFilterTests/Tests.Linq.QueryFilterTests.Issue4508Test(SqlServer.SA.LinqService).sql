@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @idCopy Int -- Int32
-SET     @idCopy = 0
+SET     @idCopy = 20
 
 SELECT
 	[p].[FirstName],
@@ -17,7 +17,7 @@ WHERE
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @idCopy Int -- Int32
-SET     @idCopy = 2
+SET     @idCopy = 30
 
 SELECT
 	[p].[FirstName],
