@@ -36,14 +36,14 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[not_null],
+	[t1].[HasValue],
 	[t1].[Value_1]
 FROM
 	[Request] [a]
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Metrics].[Value] as [Value_1],
-				1 as [not_null]
+				IIF([a_Metrics].[Value] IS NOT NULL, 1, 0) as [HasValue]
 			FROM
 				[Metric] [a_Metrics]
 			WHERE
