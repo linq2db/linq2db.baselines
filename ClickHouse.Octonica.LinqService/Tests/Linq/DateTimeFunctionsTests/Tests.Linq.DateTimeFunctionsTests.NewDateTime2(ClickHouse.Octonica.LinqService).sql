@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toYear(p.DateTimeValue)
+	makeDateTime(toYear(p.DateTimeValue), 10, 1, 0, 0, 0)
 FROM
 	LinqDataTypes p
 
