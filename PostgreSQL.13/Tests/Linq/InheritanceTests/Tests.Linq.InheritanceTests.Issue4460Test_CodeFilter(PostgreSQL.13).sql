@@ -1,0 +1,86 @@
+﻿BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Base"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "Base"
+(
+	"Code" text     NULL,
+	"Id"   Int  NOT NULL,
+	"Name" text     NULL,
+	"Age"  Int      NULL
+)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Code Text(5) -- String
+SET     @Code = 'Child'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Name Text(4) -- String
+SET     @Name = 'Jane'
+
+INSERT INTO "Base"
+(
+	"Code",
+	"Id",
+	"Name"
+)
+VALUES
+(
+	:Code,
+	:Id,
+	:Name
+)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+DECLARE @Code Text(6) -- String
+SET     @Code = 'Child2'
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Age Integer -- Int32
+SET     @Age = 10
+
+INSERT INTO "Base"
+(
+	"Code",
+	"Id",
+	"Age"
+)
+VALUES
+(
+	:Code,
+	:Id,
+	:Age
+)
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CASE
+		WHEN e."Code" = 'Child2' THEN True
+		ELSE False
+	END,
+	e."Code",
+	e."Id",
+	e."Age",
+	CASE
+		WHEN e."Code" = 'Child' THEN True
+		ELSE False
+	END,
+	e."Name"
+FROM
+	"Base" e
+WHERE
+	e."Code" <> 'Child' OR e."Code" IS NULL
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+DROP TABLE IF EXISTS "Base"
+

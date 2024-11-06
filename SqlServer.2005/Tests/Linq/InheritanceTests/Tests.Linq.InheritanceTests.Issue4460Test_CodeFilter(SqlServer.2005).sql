@@ -1,0 +1,89 @@
+﻿BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Base]', N'U') IS NOT NULL)
+	DROP TABLE [Base]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Base]', N'U') IS NULL)
+	CREATE TABLE [Base]
+	(
+		[Code] NVarChar(4000)     NULL,
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL,
+		[Age]  Int                NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Code NVarChar(4000) -- String
+SET     @Code = N'Child'
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'Jane'
+
+INSERT INTO [Base]
+(
+	[Code],
+	[Id],
+	[Name]
+)
+VALUES
+(
+	@Code,
+	@Id,
+	@Name
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Code NVarChar(4000) -- String
+SET     @Code = N'Child2'
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Age Int -- Int32
+SET     @Age = 10
+
+INSERT INTO [Base]
+(
+	[Code],
+	[Id],
+	[Age]
+)
+VALUES
+(
+	@Code,
+	@Id,
+	@Age
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	CASE
+		WHEN [e].[Code] = N'Child2' THEN 1
+		ELSE 0
+	END,
+	[e].[Code],
+	[e].[Id],
+	[e].[Age],
+	CASE
+		WHEN [e].[Code] = N'Child' THEN 1
+		ELSE 0
+	END,
+	[e].[Name]
+FROM
+	[Base] [e]
+WHERE
+	[e].[Code] <> N'Child' OR [e].[Code] IS NULL
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[Base]', N'U') IS NOT NULL)
+	DROP TABLE [Base]
+
