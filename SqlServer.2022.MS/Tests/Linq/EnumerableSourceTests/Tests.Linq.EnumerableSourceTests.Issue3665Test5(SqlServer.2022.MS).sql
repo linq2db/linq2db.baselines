@@ -2,11 +2,11 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[x].[PersonID] + [y].[item]
+	[y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (VALUES
-			(0), (1), (2), (3)
+			(N'M'), (N'F'), (N'U'), (N'O')
 		) [y]([item])
 
 BeforeExecute
