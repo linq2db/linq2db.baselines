@@ -22,13 +22,13 @@ AS
 (
 	SELECT
 		`p`.`Id`,
-		'Str1'
+		CAST('Str1' AS CHAR(255))
 	FROM
 		`Issue3360Table` `p`
 	UNION ALL
 	SELECT
 		`t1`.`Id`,
-		'Str2'
+		CAST('Str2' AS CHAR(255))
 	FROM
 		`cte` `t1`
 			INNER JOIN `Issue3360Table` `r` ON `t1`.`Id` = `r`.`Id` + 1

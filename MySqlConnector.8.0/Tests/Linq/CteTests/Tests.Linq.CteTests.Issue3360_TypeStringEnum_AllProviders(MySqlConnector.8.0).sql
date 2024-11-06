@@ -26,7 +26,7 @@ AS
 	UNION ALL
 	SELECT
 		`t1`.`Id`,
-		'THIS_IS_TWO'
+		CAST('THIS_IS_TWO' AS CHAR(50))
 	FROM
 		`cte` `t1`
 			INNER JOIN `Issue3360WithEnum` `r` ON `t1`.`Id` = `r`.`Id` + 1
