@@ -13,8 +13,7 @@ SELECT
 					WHEN [t1].[MiddleName] = N'123' THEN 1
 					ELSE 0
 				END = CASE
-					WHEN [t1].[MiddleName] = N'1' OR [t1].[MiddleName] = N'test' AND ([t1].[MiddleName] <> N'1' OR [t1].[MiddleName] IS NULL)
-						THEN 1
+					WHEN [t1].[MiddleName] = N'1' THEN 1
 					ELSE 0
 				END
 		)
