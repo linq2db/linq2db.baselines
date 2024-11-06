@@ -81,7 +81,7 @@ SELECT
 FROM
 	"NullableBoolClass" t
 WHERE
-	(t."Value" = True OR t."Value" IS NULL)
+	t."Value" = True OR t."Value" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

@@ -8,21 +8,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Parent"."ParentID"
+			ch."ParentID"
 		FROM
 			"Child" ch
-				LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID"
 	) m_1
-		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	"a_Parent"."ParentID"
-FROM
-	"Child" ch
-		LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID"
-ORDER BY
-	ch."ChildID"
+		INNER JOIN "Parent" d
+			LEFT JOIN "Parent" "a_Parent" ON m_1."ParentID" = "a_Parent"."ParentID"
+		ON d."ParentID" = "a_Parent"."ParentID"
 
