@@ -55,10 +55,10 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value VarChar -- AnsiString
+SET     @true_value = 'Y'
+DECLARE @true_value_1 VarChar -- AnsiString
+SET     @true_value_1 = 'Y'
 
 SELECT
 	[t1].[Enum]
@@ -70,8 +70,8 @@ FROM
 			FROM
 				[ValueConversion] [t2]
 			WHERE
-				[t2].[BoolValue] = @BoolValue
-		) [t2_1] ON [t1].[BoolValue] = @BoolValue_1
+				[t2].[BoolValue] = @true_value
+		) [t2_1] ON [t1].[BoolValue] = @true_value_1
 
 BeforeExecute
 -- Sybase.Managed Sybase

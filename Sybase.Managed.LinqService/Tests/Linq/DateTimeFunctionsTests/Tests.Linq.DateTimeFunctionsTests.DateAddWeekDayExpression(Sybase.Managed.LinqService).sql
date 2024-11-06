@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 SELECT
-	CONVERT(Date, DateAdd(weekday, @p, [t].[DateTimeValue]))
+	CONVERT(Date, DateAdd(weekday, @Value, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

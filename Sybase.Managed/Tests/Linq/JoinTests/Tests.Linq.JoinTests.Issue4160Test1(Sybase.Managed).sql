@@ -57,33 +57,6 @@ SELECT 'SD','SUNDAY' UNION ALL
 SELECT 'SH','SYDHIP'
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[m_1].[Code],
-	[d].[Name]
-FROM
-	(
-		SELECT DISTINCT
-			[pe].[Code]
-		FROM
-			[Issue4160Person] [pe]
-	) [m_1]
-		INNER JOIN [Issue4160City] [d] ON ([d].[Code] = [m_1].[Code] OR [d].[Code] IS NULL AND [m_1].[Code] IS NULL)
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT DISTINCT
-	[pe].[Code]
-FROM
-	[Issue4160Person] [pe]
-
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'Issue4160City') IS NOT NULL)
