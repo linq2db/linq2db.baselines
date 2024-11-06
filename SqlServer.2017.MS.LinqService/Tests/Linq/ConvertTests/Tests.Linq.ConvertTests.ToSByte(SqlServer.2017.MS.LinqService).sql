@@ -2,14 +2,9 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[p_1].[c1]
+	[p].[MoneyValue]
 FROM
-	(
-		SELECT
-			CAST(Floor([p].[MoneyValue]) AS TinyInt) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+	[LinqDataTypes] [p]
 WHERE
-	[p_1].[c1] > 0
+	CAST(Floor([p].[MoneyValue]) AS TinyInt) > 0
 
