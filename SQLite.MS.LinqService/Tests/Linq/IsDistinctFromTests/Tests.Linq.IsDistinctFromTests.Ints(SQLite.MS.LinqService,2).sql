@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS NOT @value
+	[s].[Int] <> @value
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -88,7 +88,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NOT @value
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -100,7 +100,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] IS @value
+	[s].[Int] = @value
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -112,7 +112,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS @value
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
 
 BeforeExecute
 -- SQLite.MS SQLite

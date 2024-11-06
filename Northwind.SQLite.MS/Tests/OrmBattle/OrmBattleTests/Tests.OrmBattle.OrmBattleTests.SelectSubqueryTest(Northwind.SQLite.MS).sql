@@ -19,12 +19,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[a_Customer].[CustomerID]
+			[o].[CustomerID]
 		FROM
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
-	) [m_1]
-		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
+	) [m_1],
+	[Customers] [d]
+		INNER JOIN [Customers] [a_Customer_1] ON [m_1].[CustomerID] = [a_Customer_1].[CustomerID]
+WHERE
+	[d].[CustomerID] = [a_Customer_1].[CustomerID]
 
 BeforeExecute
 DisposeTransaction
@@ -32,7 +35,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[a_Customer].[CustomerID]
+	[o].[CustomerID]
 FROM
 	[Orders] [o]
 		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]

@@ -110,8 +110,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[x].[Id],
-	1
+	[x].[Id]
 FROM
 	[Table2_3014] [x]
 WHERE
@@ -133,8 +132,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[e].[Id],
-	'0'
+	[e].[Id]
 FROM
 	[Table2_3014] [e]
 

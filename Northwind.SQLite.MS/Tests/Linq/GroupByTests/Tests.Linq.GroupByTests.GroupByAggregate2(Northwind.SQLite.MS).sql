@@ -4,7 +4,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[CustomerID],
 	[d].[CompanyName],
 	[d].[ContactName],
@@ -19,7 +19,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[Key_1]
 		FROM
 			(
 				SELECT
@@ -34,15 +34,15 @@ FROM
 						) >= 80
 							THEN 1
 						ELSE 0
-					END as [c1]
+					END as [Key_1]
 				FROM
 					[Customers] [t1]
 			) [t2]
 		GROUP BY
-			[t2].[c1]
+			[t2].[Key_1]
 	) [m_1]
 		INNER JOIN [Customers] [d] ON CASE
-			WHEN [m_1].[c1] = 1 THEN 1
+			WHEN [m_1].[Key_1] = 1 THEN 1
 			ELSE 0
 		END = CASE
 			WHEN (
@@ -63,7 +63,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[t2].[c1]
+	[t2].[Key_1]
 FROM
 	(
 		SELECT
@@ -78,10 +78,10 @@ FROM
 				) >= 80
 					THEN 1
 				ELSE 0
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Customers] [t1]
 	) [t2]
 GROUP BY
-	[t2].[c1]
+	[t2].[Key_1]
 
