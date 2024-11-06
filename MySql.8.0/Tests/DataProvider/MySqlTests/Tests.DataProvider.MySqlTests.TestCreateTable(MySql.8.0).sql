@@ -44,8 +44,8 @@ CREATE TABLE IF NOT EXISTS `CreateTable`
 	`UnsignedInt`      INT UNSIGNED      NOT NULL,
 	`BigInt`           BIGINT            NOT NULL,
 	`UnsignedBigInt`   BIGINT UNSIGNED   NOT NULL,
-	`Decimal`          DECIMAL           NOT NULL,
-	`Decimal15_0`      DECIMAL(15)       NOT NULL,
+	`Decimal`          DECIMAL(29, 10)   NOT NULL,
+	`Decimal15_0`      DECIMAL(15, 0)    NOT NULL,
 	`Decimal10_5`      DECIMAL(10, 5)    NOT NULL,
 	`Decimal20_2`      DECIMAL(20, 2)    NOT NULL,
 	`Float`            FLOAT             NOT NULL,
@@ -111,11 +111,11 @@ DECLARE @LongText VarChar(4) -- String
 SET     @LongText = '1v23'
 DECLARE @TextDefault VarChar(5) -- String
 SET     @TextDefault = '12 #3'
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date DateTime
 SET     @Date = '2123-02-03'
-DECLARE @DateTime Datetime -- DateTime
+DECLARE @DateTime DateTime
 SET     @DateTime = '2123-02-03 11:22:33'
-DECLARE @DateTime3 Datetime -- DateTime
+DECLARE @DateTime3 DateTime
 SET     @DateTime3 = '2123-02-03 11:22:33.123'
 DECLARE @Time Time
 SET     @Time = -04:03:53

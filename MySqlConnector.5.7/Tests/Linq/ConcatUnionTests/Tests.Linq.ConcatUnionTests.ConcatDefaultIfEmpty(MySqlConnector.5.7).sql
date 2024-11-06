@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	0,
+	CAST(0 AS SIGNED),
 	`t1`.`ParentID`,
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
@@ -34,7 +34,7 @@ FROM
 	) `t1`
 UNION ALL
 SELECT
-	1,
+	CAST(1 AS SIGNED),
 	NULL,
 	NULL,
 	NULL
