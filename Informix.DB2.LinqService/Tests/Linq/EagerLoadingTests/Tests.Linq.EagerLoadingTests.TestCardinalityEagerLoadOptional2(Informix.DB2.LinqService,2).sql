@@ -551,7 +551,8 @@ BeforeExecute
 
 SELECT
 	t1.Id,
-	t1.FK
+	t1.FK,
+	t1.Id
 FROM
 	EntityMA t1
 

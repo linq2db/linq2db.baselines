@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Nvl(MIN(gr.ParentID), 10)
+	MIN(gr.ParentID)
 FROM
 	Parent gr
 

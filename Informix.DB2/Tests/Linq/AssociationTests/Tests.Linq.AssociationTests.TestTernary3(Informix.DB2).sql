@@ -2,6 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
+	CASE
+		WHEN a_Middle.ParentID IS NOT NULL AND a_Bottom1.ParentID IS NOT NULL
+			THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	a_Bottom1.ParentID,
 	a_Bottom1.ChildID,
 	a_Bottom1.GrandChildID

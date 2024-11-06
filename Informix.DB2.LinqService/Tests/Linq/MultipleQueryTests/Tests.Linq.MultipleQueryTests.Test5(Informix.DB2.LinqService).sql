@@ -2,27 +2,35 @@
 -- Informix.DB2 Informix
 
 SELECT
-	m_1.ParentID,
-	d.ParentID,
-	d.Value1
+	sub.ParentID,
+	sub.ParentID_1,
+	sub.Value1
 FROM
 	(
-		SELECT DISTINCT
-			a_Parent.ParentID
+		SELECT
+			m_1.ParentID,
+			d.ParentID as ParentID_1,
+			d.Value1
 		FROM
-			Child ch
-				LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
-	) m_1
-		INNER JOIN Parent d ON d.ParentID = m_1.ParentID
+			(
+				SELECT DISTINCT
+					ch.ParentID
+				FROM
+					Child ch
+			) m_1,
+			Parent d
+	) sub
+		LEFT JOIN Parent a_Parent ON sub.ParentID = a_Parent.ParentID
+WHERE
+	sub.ParentID_1 = a_Parent.ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	a_Parent.ParentID
+	ch.ParentID
 FROM
 	Child ch
-		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
 ORDER BY
 	ch.ChildID
 

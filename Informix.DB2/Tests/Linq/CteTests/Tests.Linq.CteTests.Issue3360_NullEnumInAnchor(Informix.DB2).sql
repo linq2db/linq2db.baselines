@@ -27,7 +27,7 @@ AS
 	UNION ALL
 	SELECT
 		t1.Id,
-		'THIS_IS_ONE'
+		'THIS_IS_ONE'::VarChar(50)
 	FROM
 		cte t1
 			INNER JOIN Issue3360NullInAnchor r ON t1.Id = r.Id + 100

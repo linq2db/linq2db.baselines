@@ -9,7 +9,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	(x.ParentID = @ParentID OR x.ParentID = @ParentID)
+	x.ParentID = @ParentID OR x.ParentID = @ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -33,7 +33,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	(x.ParentID = @ParentID OR x.ParentID = @ParentID_1)
+	x.ParentID = @ParentID OR x.ParentID = @ParentID_1
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -501,8 +501,6 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
-ORDER BY
-	MAX(Mod(x.OrderData1, 3))
 
 BeforeExecute
 -- Informix.DB2 Informix
