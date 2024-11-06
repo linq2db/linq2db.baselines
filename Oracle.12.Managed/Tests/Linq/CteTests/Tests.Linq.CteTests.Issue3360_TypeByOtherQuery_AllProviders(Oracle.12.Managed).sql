@@ -44,7 +44,7 @@ AS
 	UNION ALL
 	SELECT
 		t1."Id",
-		'Str'
+		CAST('Str' AS VarChar(255))
 	FROM
 		"cte" t1,
 		"Issue3360Table" r
