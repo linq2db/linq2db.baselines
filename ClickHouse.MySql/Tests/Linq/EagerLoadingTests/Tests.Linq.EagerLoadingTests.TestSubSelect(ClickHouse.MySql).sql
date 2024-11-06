@@ -99,7 +99,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	m_1.Id1,
+	m_2.Id1,
 	d.DetailId,
 	d.DetailValue
 FROM
@@ -109,37 +109,37 @@ FROM
 		FROM
 			(
 				SELECT
-					e.Id1 as Id1
+					m_1.Id1 as Id1
 				FROM
-					MasterClass e
+					MasterClass m_1
 				ORDER BY
-					e.Id2 DESC
+					m_1.Id2 DESC
 				LIMIT 20
 			) t1
-	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+	) m_2
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT DISTINCT
-	e_1.Id1,
-	e_1.Id2,
-	e_1.Value_1,
-	e_1.ByteValues
+	e.Id1,
+	e.Id2,
+	e.Value_1,
+	e.ByteValues
 FROM
 	(
 		SELECT
-			e.Id1 as Id1,
-			e.Id2 as Id2,
-			e.Value as Value_1,
-			e.ByteValues as ByteValues
+			m_1.Id1 as Id1,
+			m_1.Id2 as Id2,
+			m_1.Value as Value_1,
+			m_1.ByteValues as ByteValues
 		FROM
-			MasterClass e
+			MasterClass m_1
 		ORDER BY
-			e.Id2 DESC
+			m_1.Id2 DESC
 		LIMIT 20
-	) e_1
+	) e
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
