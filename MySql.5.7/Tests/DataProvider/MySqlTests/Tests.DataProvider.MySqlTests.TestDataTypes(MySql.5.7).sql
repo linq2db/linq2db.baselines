@@ -272,7 +272,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal
+DECLARE @p Decimal(29, 10)
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
@@ -298,7 +298,7 @@ SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal(7, 0)
+DECLARE @p Decimal(29, 10)
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
@@ -324,7 +324,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal
+DECLARE @p Decimal(29, 10)
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -350,7 +350,7 @@ SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Decimal(7, 0)
+DECLARE @p Decimal(29, 10)
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
@@ -473,14 +473,14 @@ SELECT dateDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
@@ -499,21 +499,21 @@ SELECT dateDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12'
 
 SELECT ID FROM `AllTypes` WHERE dateDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12'
 
 SELECT ID FROM `AllTypes` WHERE dateDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12'
 
 SELECT ID FROM `AllTypes` WHERE dateDataType = @p
@@ -525,14 +525,14 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -551,21 +551,21 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
@@ -577,14 +577,14 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
@@ -603,21 +603,21 @@ SELECT datetimeDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
@@ -636,7 +636,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p I
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
@@ -655,21 +655,21 @@ SELECT timestampDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE timestampDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE timestampDataType = @p
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Datetime -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM `AllTypes` WHERE timestampDataType = @p
