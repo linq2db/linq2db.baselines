@@ -82,7 +82,7 @@ FROM
 						[u].[PersonID] = [e].[PersonID]
 				) [e_1]
 		WHERE
-			([a_Patient].[Diagnosis] <> N'Immortality' OR [a_Patient].[Diagnosis] IS NULL)
+			[a_Patient].[Diagnosis] <> N'Immortality' OR [a_Patient].[Diagnosis] IS NULL
 	) [t1]
 ORDER BY
 	[t1].[ID]
