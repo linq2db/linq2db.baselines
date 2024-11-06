@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Replace("p"."FirstName", 'hn', 'lie') = 'Jolie' AND
+	REPLACE("p"."FirstName", 'hn', 'lie') = 'Jolie' AND
 	"p"."PersonID" = 1
 
