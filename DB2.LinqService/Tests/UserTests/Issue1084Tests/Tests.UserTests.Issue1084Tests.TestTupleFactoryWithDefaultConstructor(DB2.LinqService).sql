@@ -48,11 +48,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	BitAnd("t1"."StatusBitmask", 128),
+	BitAnd("k_1"."StatusBitmask", 128),
 	BitAnd("g_1"."StatusBitmask", 128)
 FROM
-	"i1084_person" "t1"
-		LEFT JOIN "i1084_student" "g_1" ON "t1"."Id" = "g_1"."Id" AND RTrim(Char("t1"."Number")) = "g_1"."Number"
+	"i1084_person" "k_1"
+		LEFT JOIN "i1084_student" "g_1" ON "k_1"."Id" = "g_1"."Id" AND RTrim(Char("k_1"."Number")) = "g_1"."Number"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
