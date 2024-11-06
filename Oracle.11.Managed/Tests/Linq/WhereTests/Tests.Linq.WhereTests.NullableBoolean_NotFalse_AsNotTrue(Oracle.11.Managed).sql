@@ -37,7 +37,7 @@ SELECT
 FROM
 	"NullableBool" r
 WHERE
-	(r."Bool" = 1 OR r."Bool" IS NULL)
+	r."Bool" = 1 OR r."Bool" IS NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
