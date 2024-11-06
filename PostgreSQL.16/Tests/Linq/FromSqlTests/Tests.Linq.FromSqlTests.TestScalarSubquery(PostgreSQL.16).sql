@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			'hello world' as c1
+			1 as c1
 	) c_1
-		INNER JOIN LATERAL regexp_split_to_table(c_1.c1::text, E'\\s+') s ON 1=1
+		CROSS JOIN regexp_split_to_table('hello world'::text, E'\\s+') s
 
