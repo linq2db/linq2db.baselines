@@ -68,10 +68,10 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @In VarChar -- AnsiString
+SET     @In = NULL
+DECLARE @In VarChar -- AnsiString
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
@@ -82,10 +82,10 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @NotIn VarChar -- AnsiString
+SET     @NotIn = NULL
+DECLARE @NotIn VarChar -- AnsiString
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
