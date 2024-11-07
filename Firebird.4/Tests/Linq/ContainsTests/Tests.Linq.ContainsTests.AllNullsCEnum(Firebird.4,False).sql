@@ -37,27 +37,27 @@ SELECT 2,2,'TWO','___Value2___' FROM rdb$database
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
+DECLARE @In VarChar -- String
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum)
+	"s"."CEnum" IN (@In, @In)
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
+DECLARE @NotIn VarChar -- String
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum, @CEnum)
+	"s"."CEnum" NOT IN (@NotIn, @NotIn)
 
 BeforeExecute
 -- Firebird.4 Firebird4
