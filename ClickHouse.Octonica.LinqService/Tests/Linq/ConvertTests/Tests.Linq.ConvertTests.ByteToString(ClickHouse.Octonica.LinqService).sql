@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toString(toUInt8(p.ID))
+	p.ID
 FROM
 	LinqDataTypes p
 WHERE
