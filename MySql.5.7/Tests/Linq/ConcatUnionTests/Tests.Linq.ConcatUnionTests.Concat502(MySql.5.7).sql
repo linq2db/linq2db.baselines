@@ -39,5 +39,5 @@ FROM
 			) `p_1`
 	) `p_2`
 WHERE
-	(`p_2`.`Value1` <> 2 OR `p_2`.`Value1` IS NULL)
+	`p_2`.`Value1` <> 2 OR `p_2`.`Value1` IS NULL
 

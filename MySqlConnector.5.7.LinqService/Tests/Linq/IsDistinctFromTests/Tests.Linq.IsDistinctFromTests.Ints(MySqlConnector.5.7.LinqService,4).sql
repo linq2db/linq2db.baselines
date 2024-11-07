@@ -76,7 +76,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`Int` <=> @value
+	`s`.`Int` <> @value
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -88,7 +88,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableInt` <=> @value
+	`s`.`NullableInt` IS NULL OR `s`.`NullableInt` <> @value
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -100,7 +100,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`Int` <=> @value
+	`s`.`Int` = @value
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -112,7 +112,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableInt` <=> @value
+	NOT (`s`.`NullableInt` IS NULL OR `s`.`NullableInt` <> @value)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

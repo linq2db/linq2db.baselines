@@ -2,8 +2,8 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`p2`.`PersonID`,
-	`p2`.`FirstName`
+	`p3`.`PersonID`,
+	`p3`.`FirstName`
 FROM
-	`Person` `p2`
+	`Person` `p3`
 

@@ -2,11 +2,11 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 FROM
-	`Child` `g_1`
+	`Child` `pmp`
 GROUP BY
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
