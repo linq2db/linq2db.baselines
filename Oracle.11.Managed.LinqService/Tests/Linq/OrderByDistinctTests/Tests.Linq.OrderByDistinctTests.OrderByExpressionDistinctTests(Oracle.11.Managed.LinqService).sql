@@ -549,8 +549,6 @@ FROM
 					"OrderByDistinctData" x
 				GROUP BY
 					x."DuplicateData"
-				ORDER BY
-					MAX(MOD(x."OrderData1", 3))
 			) t1
 		WHERE
 			ROWNUM <= (:skip + :take)

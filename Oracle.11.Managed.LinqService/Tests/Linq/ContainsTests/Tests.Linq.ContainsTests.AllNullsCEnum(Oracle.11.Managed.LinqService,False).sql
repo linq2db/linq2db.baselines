@@ -84,27 +84,27 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
+DECLARE @In_1 Varchar2 -- String
+SET     @In_1 = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum)
+	s."CEnum" IN (:In_1, :In_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
+DECLARE @NotIn Varchar2 -- String
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum, :CEnum)
+	s."CEnum" NOT IN (:NotIn, :NotIn)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
