@@ -194,6 +194,7 @@ SELECT
 	"d"."Id",
 	"d".FK,
 	"d".FKD,
+	"d"."Id",
 	"a_ObjectD"."Id",
 	"a_ObjectD".FK
 FROM
@@ -208,7 +209,8 @@ BeforeExecute
 
 SELECT
 	"t1"."Id",
-	"t1".FK
+	"t1".FK,
+	"t1"."Id"
 FROM
 	"EntityMA" "t1"
 

@@ -2,29 +2,29 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"s_1"."Value_1"
+	"s"."Value_1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Mod("s"."ParentID", 2) = 0 THEN CASE
-					WHEN Mod("s"."ParentID", 3) = 0 THEN 1
+				WHEN Mod("p"."ParentID", 2) = 0 THEN CASE
+					WHEN Mod("p"."ParentID", 3) = 0 THEN 1
 					ELSE 0
 				END
-				WHEN Mod("s"."ParentID", 4) = 0 THEN CASE
-					WHEN "s"."ParentID" > 0 THEN 1
+				WHEN Mod("p"."ParentID", 4) = 0 THEN CASE
+					WHEN "p"."ParentID" > 0 THEN 1
 					ELSE 0
 				END
 				ELSE CASE
-					WHEN "s"."ParentID" < 5 THEN 1
+					WHEN "p"."ParentID" < 5 THEN 1
 					ELSE 0
 				END
 			END as "Value_1"
 		FROM
-			"Parent" "s"
-	) "s_1"
+			"Parent" "p"
+	) "s"
 WHERE
-	"s_1"."Value_1" = 1
+	"s"."Value_1" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
