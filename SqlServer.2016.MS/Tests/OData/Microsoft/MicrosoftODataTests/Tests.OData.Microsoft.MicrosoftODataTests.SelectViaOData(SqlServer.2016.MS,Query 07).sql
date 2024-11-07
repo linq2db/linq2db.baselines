@@ -33,22 +33,40 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[t1].[Name],
-	[t1].[Value_2],
-	[t1].[Value_1]
+	[t2].[Name],
+	[t2].[Value_2],
+	[t2].[Value_1]
 FROM
 	(
 		SELECT
-			COUNT(DISTINCT [it].[YearsExperience]) as [Value_1],
-			N'Title' as [Name],
-			[it].[Title] as [Value_2]
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					(
+						SELECT DISTINCT
+							*
+						FROM
+							[odata_person] [it_2]
+						WHERE
+							N'Title' = [it_1].[Name] AND [it_2].[Title] = [it_1].[Value_1]
+					) [t1]
+			) as [Value_1],
+			[it_1].[Name],
+			[it_1].[Value_1] as [Value_2]
 		FROM
-			[odata_person] [it]
-		GROUP BY
-			[it].[Title]
-	) [t1]
+			(
+				SELECT
+					N'Title' as [Name],
+					[it].[Title] as [Value_1]
+				FROM
+					[odata_person] [it]
+				GROUP BY
+					[it].[Title]
+			) [it_1]
+	) [t2]
 ORDER BY
-	[t1].[Value_1]
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
