@@ -71,11 +71,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 226
+DECLARE @Millisecond Integer -- Int32
+SET     @Millisecond = 226
 
 SELECT
-	To_Char(t."TransactionDate" + :p * Interval '1 Millisecond', 'MS')::Int
+	To_Char(t."TransactionDate" + :Millisecond * Interval '1 Millisecond', 'MS')::Int
 FROM
 	"Transactions" t
 
