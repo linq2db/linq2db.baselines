@@ -1,84 +1,108 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2018-12-28' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2018-12-28' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2018-12-29' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2018-12-29' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2018-12-30' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2018-12-30' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2018-12-31' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2018-12-31' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-01' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-01' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-02' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-02' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-03' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-03' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-04' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-04' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-05' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-05' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-06' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-06' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-07' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-07' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
 BeforeExecute
 -- Firebird.3 Firebird3
+DECLARE @date TimeStamp -- DateTime
+SET     @date = CAST('2019-01-08' AS timestamp)
 
 SELECT
-	Extract(week from CAST('2019-01-08' AS timestamp))
+	Extract(week from CAST(@date AS TimeStamp))
 FROM rdb$database
 
