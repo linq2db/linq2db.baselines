@@ -71,12 +71,12 @@ AS
 (
 	SELECT
 		"r"."Id",
-		5,
-		5,
+		CAST(5 AS SmallInt),
+		CAST(5 AS SmallInt),
 		CAST(@Guid AS BINARY(16)),
 		CAST(@GuidN AS BINARY(16)),
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
+		CAST('ENUM1_VALUE' AS CHAR(11)),
+		CAST('ENUM2_VALUE' AS CHAR(11)),
 		TRUE,
 		FALSE
 	FROM

@@ -6,24 +6,17 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT("rec".ID) as "c1"
+			COUNT("p"."PersonID") as "c1"
 		FROM
-			(
-				SELECT
-					"p"."PersonID" as ID
-				FROM
-					"Person" "p"
-				WHERE
-					"p"."PersonID" IN (1, 2)
-			) "rec"
+			"Person" "p"
 		WHERE
-			NOT EXISTS(
+			"p"."PersonID" IN (1, 2) AND NOT EXISTS(
 				SELECT
 					*
 				FROM
 					"Person" "p_1"
 				WHERE
-					"p_1"."PersonID" IN (3) AND "rec".ID = "p_1"."PersonID"
+					"p_1"."PersonID" IN (3) AND "p"."PersonID" = "p_1"."PersonID"
 			)
 	) "t1"
 FETCH NEXT 2 ROWS ONLY
@@ -36,24 +29,17 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT("rec".ID) as "c1"
+			COUNT("p"."PersonID") as "c1"
 		FROM
-			(
-				SELECT
-					"p"."PersonID" as ID
-				FROM
-					"Person" "p"
-				WHERE
-					"p"."PersonID" IN (3)
-			) "rec"
+			"Person" "p"
 		WHERE
-			NOT EXISTS(
+			"p"."PersonID" IN (3) AND NOT EXISTS(
 				SELECT
 					*
 				FROM
 					"Person" "p_1"
 				WHERE
-					"p_1"."PersonID" IN (1, 2) AND "rec".ID = "p_1"."PersonID"
+					"p_1"."PersonID" IN (1, 2) AND "p"."PersonID" = "p_1"."PersonID"
 			)
 	) "t1"
 FETCH NEXT 2 ROWS ONLY

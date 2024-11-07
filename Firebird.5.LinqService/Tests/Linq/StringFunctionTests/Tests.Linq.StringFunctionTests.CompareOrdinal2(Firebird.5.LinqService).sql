@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Substring("p"."FirstName" from 2 for 2) = 'oh' AND
+	Substring("p"."FirstName" from 2 for 2) = Substring('Joh' from 2 for 2) AND
 	"p"."PersonID" = 1
 
