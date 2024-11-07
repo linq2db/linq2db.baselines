@@ -286,11 +286,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = -2
+DECLARE @Date Integer -- Int32
+SET     @Date = -2
 
 SELECT
-	Date_Trunc('day', (t."TransactionDate" + :p * Interval '1 Month') AT TIME ZONE 'UTC')::Date
+	Date_Trunc('day', (t."TransactionDate" + :Date * Interval '1 Month') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 
