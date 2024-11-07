@@ -56,10 +56,18 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.DeviceType,
+	CASE
+		WHEN t1.DeviceType = 'TV' THEN true
+		ELSE false
+	END,
 	t1.Id,
 	t1.SerialNumber,
-	t1.Location
+	t1.DeviceType,
+	t1.Location,
+	CASE
+		WHEN t1.DeviceType = 'DISPLAY' THEN true
+		ELSE false
+	END
 FROM
 	Issue4280 t1
 ORDER BY
@@ -92,10 +100,18 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.DeviceType,
+	CASE
+		WHEN t1.DeviceType = 'TV' THEN true
+		ELSE false
+	END,
 	t1.Id,
 	t1.SerialNumber,
-	t1.Location
+	t1.DeviceType,
+	t1.Location,
+	CASE
+		WHEN t1.DeviceType = 'DISPLAY' THEN true
+		ELSE false
+	END
 FROM
 	Issue4280 t1
 ORDER BY

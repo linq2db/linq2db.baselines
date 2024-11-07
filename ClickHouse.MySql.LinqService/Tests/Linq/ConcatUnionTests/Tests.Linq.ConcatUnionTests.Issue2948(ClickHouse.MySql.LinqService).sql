@@ -7,60 +7,60 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(PARTITION BY x.PersonID ORDER BY x.PersonID) as Rank,
-			x.PersonID as Id,
-			x.FirstName as Name
+			ROW_NUMBER() OVER(PARTITION BY p.PersonID ORDER BY p.PersonID) as Rank,
+			p.PersonID as Id,
+			p.FirstName as Name
 		FROM
-			Person x
+			Person p
 	) t1
 WHERE
 	t1.Rank = toInt64(1) AND t1.Id <> 2
 UNION ALL
 SELECT
-	t2.Id as Id,
-	t2.Name as Name
+	t2.ID as Id,
+	t2.FirstName as Name
 FROM
 	(
 		SELECT
-			x_2.Id as Id,
-			x_2.Name as Name
+			x.ID as ID,
+			x.FirstName as FirstName
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER(PARTITION BY x_1.PersonID ORDER BY x_1.PersonID) as Rank,
-					x_1.PersonID as Id,
-					x_1.FirstName as Name
+					ROW_NUMBER() OVER(PARTITION BY p_1.PersonID ORDER BY p_1.PersonID) as Rank,
+					p_1.PersonID as ID,
+					p_1.FirstName as FirstName
 				FROM
-					Person x_1
-			) x_2
+					Person p_1
+			) x
 		WHERE
-			x_2.Rank = toInt64(1) AND x_2.Id = 2
+			x.Rank = toInt64(1) AND x.ID = 2
 		ORDER BY
-			x_2.Name DESC
+			x.FirstName DESC
 		LIMIT 1
 	) t2
 UNION ALL
 SELECT
-	t3.Id as Id,
-	t3.Name as Name
+	t3.ID as Id,
+	t3.FirstName as Name
 FROM
 	(
 		SELECT
-			x_4.Id as Id,
-			x_4.Name as Name
+			x_1.ID as ID,
+			x_1.FirstName as FirstName
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER(PARTITION BY x_3.PersonID ORDER BY x_3.PersonID) as Rank,
-					x_3.PersonID as Id,
-					x_3.FirstName as Name
+					ROW_NUMBER() OVER(PARTITION BY p_2.PersonID ORDER BY p_2.PersonID) as Rank,
+					p_2.PersonID as ID,
+					p_2.FirstName as FirstName
 				FROM
-					Person x_3
-			) x_4
+					Person p_2
+			) x_1
 		WHERE
-			x_4.Rank = toInt64(1) AND x_4.Id <> 3
+			x_1.Rank = toInt64(1) AND x_1.ID <> 3
 		ORDER BY
-			x_4.Name
+			x_1.FirstName
 		LIMIT 1
 	) t3
 
