@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @Value Integer -- Int32
+SET     @Value = 1
 
 SELECT
-	@p
+	@Value
 
