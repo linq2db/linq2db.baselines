@@ -72,8 +72,6 @@ FROM
 	"OrderByDistinctData" x
 GROUP BY
 	x."DuplicateData"
-ORDER BY
-	MAX((x."OrderData1"::decimal % 3)::decimal)
 LIMIT :take OFFSET :skip 
 
 BeforeExecute
