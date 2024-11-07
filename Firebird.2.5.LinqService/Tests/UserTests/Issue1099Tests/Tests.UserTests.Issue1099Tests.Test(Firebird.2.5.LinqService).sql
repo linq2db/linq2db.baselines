@@ -50,21 +50,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @personId Integer -- Int32
-SET     @personId = 1
-
-SELECT
-	"task_1".ID,
-	"task_1"."DurationID",
-	"task_1"."DurationInterval",
-	"task_1"."PersonID"
-FROM
-	"BackgroundTask" "task_1"
-WHERE
-	"task_1"."PersonID" = @personId
-
-BeforeExecute
--- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BackgroundTask')) THEN
