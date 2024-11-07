@@ -8,9 +8,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				Child c_1
+				Child t1_1
 			WHERE
-				t1.ParentID = c_1.ParentID
+				t1.ParentID = t1_1.ParentID
 		)
 			THEN 't'
 		ELSE 'f'

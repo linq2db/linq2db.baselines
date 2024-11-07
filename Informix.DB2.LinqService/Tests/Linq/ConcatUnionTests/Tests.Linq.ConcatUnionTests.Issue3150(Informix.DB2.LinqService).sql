@@ -4,7 +4,7 @@
 SELECT
 	p.PersonID,
 	p.FirstName,
-	'id=1'
+	'id=1'::NVarChar(255)
 FROM
 	Person p
 WHERE
@@ -13,7 +13,7 @@ UNION ALL
 SELECT
 	p_1.PersonID,
 	p_1.FirstName,
-	'id=2'
+	'id=2'::NVarChar(255)
 FROM
 	Person p_1
 WHERE

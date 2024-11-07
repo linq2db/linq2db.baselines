@@ -34,7 +34,7 @@ SELECT
 FROM
 	Person x
 WHERE
-	(x.PersonID = @id AND x.LastName <> @name OR x.FirstName <> @name AND x.PersonID - 1 = @id)
+	x.PersonID = @id AND x.LastName <> @name OR x.FirstName <> @name AND x.PersonID - 1 = @id
 GROUP BY
 	x.PersonID
 
