@@ -24,9 +24,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `ItemValue`
 (
-	`Id`     INT     NOT NULL,
-	`ItemId` INT     NOT NULL,
-	`Value`  DECIMAL NOT NULL
+	`Id`     INT             NOT NULL,
+	`ItemId` INT             NOT NULL,
+	`Value`  DECIMAL(29, 10) NOT NULL
 )
 
 BeforeExecute

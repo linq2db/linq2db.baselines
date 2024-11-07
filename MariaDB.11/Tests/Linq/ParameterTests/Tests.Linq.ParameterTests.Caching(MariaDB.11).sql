@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	(`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID)
+	`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	(`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID_1)
+	`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID_1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
