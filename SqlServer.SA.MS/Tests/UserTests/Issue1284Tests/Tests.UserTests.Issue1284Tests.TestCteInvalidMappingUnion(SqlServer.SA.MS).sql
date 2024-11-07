@@ -22,7 +22,7 @@ AS
 	FROM
 		(
 			SELECT
-				1 as [rn],
+				CAST(1 AS Int) as [rn],
 				[x].[FirstName],
 				[x].[PersonID] as [ID],
 				[x].[LastName],
@@ -32,7 +32,7 @@ AS
 				[Person] [x]
 			UNION ALL
 			SELECT
-				2 as [rn],
+				CAST(2 AS Int) as [rn],
 				[person_1].[FirstName],
 				[person_1].[PersonID] as [ID],
 				[person_1].[LastName],
@@ -67,7 +67,7 @@ SELECT TOP (1)
 FROM
 	(
 		SELECT
-			1 as [rn],
+			CAST(1 AS Int) as [rn],
 			[x].[FirstName],
 			[x].[PersonID] as [ID],
 			[x].[LastName],
@@ -77,7 +77,7 @@ FROM
 			[Person] [x]
 		UNION ALL
 		SELECT
-			2 as [rn],
+			CAST(2 AS Int) as [rn],
 			[person_1].[FirstName],
 			[person_1].[PersonID] as [ID],
 			[person_1].[LastName],

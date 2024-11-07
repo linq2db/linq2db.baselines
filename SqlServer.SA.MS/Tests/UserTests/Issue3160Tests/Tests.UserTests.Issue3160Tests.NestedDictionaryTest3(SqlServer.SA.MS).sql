@@ -95,27 +95,28 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[not_null],
-	[t1].[Id3],
-	[t1].[Id3]
+	[t2].[not_null],
+	[t2].[Id3],
+	[t2].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				(
-					SELECT TOP (1)
-						[x_1].[ID3]
-					FROM
-						[TABLE3] [x_1]
-					WHERE
-						[x_1].[PARENTID3] = [x].[ID2]
-				) as [Id3],
+				[t1].[Id3],
 				1 as [not_null]
 			FROM
-				[TABLE2] [x]
+				[TABLE2] [x_1]
+					OUTER APPLY (
+						SELECT TOP (1)
+							[x].[ID3] as [Id3]
+						FROM
+							[TABLE3] [x]
+						WHERE
+							[x].[PARENTID3] = [x_1].[ID2]
+					) [t1]
 			WHERE
-				[x].[PARENTID2] = [t1_1].[ID1]
-		) [t1]
+				[x_1].[PARENTID2] = [t1_1].[ID1]
+		) [t2]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
