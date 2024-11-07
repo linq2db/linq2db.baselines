@@ -4,7 +4,7 @@
 SELECT TOP (1)
 	[p].[PersonID] as [ID],
 	[p].[FirstName],
-	[p].[LastName] as [SecondName]
+	[p].[LastName]
 FROM
 	[Person] [p]
 WHERE

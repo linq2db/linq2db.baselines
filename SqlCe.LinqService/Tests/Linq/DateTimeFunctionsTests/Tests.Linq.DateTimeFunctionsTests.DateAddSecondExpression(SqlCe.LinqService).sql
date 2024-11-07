@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = 41
+DECLARE @Value Int -- Int32
+SET     @Value = 41
 
 SELECT
-	DatePart(second, DateAdd(second, @p, [t].[DateTimeValue])) as [Second_1]
+	DatePart(second, DateAdd(second, @Value, [t].[DateTimeValue])) as [Second_1]
 FROM
 	[LinqDataTypes] [t]
 
