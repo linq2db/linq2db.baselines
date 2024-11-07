@@ -36,6 +36,10 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @IntProp Integer -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Integer -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	x."Id",
@@ -43,8 +47,14 @@ SELECT
 		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN True
 		ELSE False
 	END,
+	CASE
+		WHEN x."StringProp" = '2' THEN True
+		ELSE False
+	END,
 	x."StringProp",
-	x."StringProp" || '2'
+	:IntProp,
+	x."StringProp" || '2',
+	:IntProp_1
 FROM
 	"ConditionalData" x
 WHERE
