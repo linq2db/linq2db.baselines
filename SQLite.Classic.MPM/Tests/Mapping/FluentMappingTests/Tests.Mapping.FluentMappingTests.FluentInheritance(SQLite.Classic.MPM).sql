@@ -2,9 +2,17 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[Gender],
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
+	[t1].[Gender],
 	[t1].[LastName],
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
@@ -16,9 +24,17 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[Gender],
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
+	[t1].[Gender],
 	[t1].[LastName],
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
