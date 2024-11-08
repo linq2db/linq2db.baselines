@@ -161,7 +161,8 @@ SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[FK],
-	[d].[FKD]
+	[d].[FKD],
+	[d].[Id]
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
@@ -173,7 +174,8 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[FK]
+	[t1].[FK],
+	[t1].[Id]
 FROM
 	[EntityMA] [t1]
 

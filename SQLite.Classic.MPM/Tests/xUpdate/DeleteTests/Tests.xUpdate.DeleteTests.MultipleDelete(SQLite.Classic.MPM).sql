@@ -24,7 +24,8 @@ BeforeExecute
 DELETE FROM
 	[Parent]
 WHERE
-	([Parent].[ParentID] = 1000 AND [Parent].[Value1] IS NULL OR [Parent].[ParentID] = 1001 AND [Parent].[Value1] IS NULL)
+	[Parent].[ParentID] = 1000 AND [Parent].[Value1] IS NULL OR
+	[Parent].[ParentID] = 1001 AND [Parent].[Value1] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
