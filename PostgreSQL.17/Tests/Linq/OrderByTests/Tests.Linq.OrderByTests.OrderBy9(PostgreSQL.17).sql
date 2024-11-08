@@ -2,11 +2,11 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	ch."ParentID",
-	ch."ChildID"
+	x."ParentID",
+	x."ChildID"
 FROM
-	"Child" ch
+	"Child" x
 ORDER BY
-	(ch."ChildID"::decimal % 2)::decimal DESC,
-	ch."ChildID" DESC
+	x."ChildID" DESC,
+	(x."ChildID"::decimal % 2)::decimal DESC
 

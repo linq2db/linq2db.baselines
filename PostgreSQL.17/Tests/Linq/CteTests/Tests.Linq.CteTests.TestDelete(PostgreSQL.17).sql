@@ -35,12 +35,11 @@ VALUES
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-WITH "CTE_1" ("ParentID", "ChildID")
+WITH "CTE_1" ("ParentID")
 AS
 (
 	SELECT
-		c_1."ParentID",
-		c_1."ChildID"
+		c_1."ParentID"
 	FROM
 		"CteChild" c_1
 	WHERE
