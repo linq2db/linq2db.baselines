@@ -9,52 +9,52 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS [my_table]
 (
 	[my_col1]      NVarChar(255)     NULL,
-	[my_other_col] NVarChar(255)     NULL,
-	[itemType]     INTEGER       NOT NULL
+	[itemType]     INTEGER       NOT NULL,
+	[my_other_col] NVarChar(255)     NULL
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
-DECLARE @SomeOtherField NVarChar -- String
-SET     @SomeOtherField = NULL
 DECLARE @itemType  -- Int32
 SET     @itemType = 0
+DECLARE @SomeOtherField NVarChar -- String
+SET     @SomeOtherField = NULL
 
 INSERT INTO [my_table]
 (
 	[my_col1],
-	[my_other_col],
-	[itemType]
+	[itemType],
+	[my_other_col]
 )
 VALUES
 (
 	@MyCol1,
-	@SomeOtherField,
-	@itemType
+	@itemType,
+	@SomeOtherField
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar -- String
 SET     @MyCol1 = NULL
-DECLARE @SomeOtherField NVarChar -- String
-SET     @SomeOtherField = NULL
 DECLARE @itemType  -- Int32
 SET     @itemType = 1
+DECLARE @SomeOtherField NVarChar -- String
+SET     @SomeOtherField = NULL
 
 INSERT INTO [my_table]
 (
 	[my_col1],
-	[my_other_col],
-	[itemType]
+	[itemType],
+	[my_other_col]
 )
 VALUES
 (
 	@MyCol1,
-	@SomeOtherField,
-	@itemType
+	@itemType,
+	@SomeOtherField
 )
 
 BeforeExecute
@@ -62,8 +62,8 @@ BeforeExecute
 
 SELECT
 	[t1].[my_col1],
-	[t1].[my_other_col],
-	[t1].[itemType]
+	[t1].[itemType],
+	[t1].[my_other_col]
 FROM
 	[my_table] [t1]
 WHERE
