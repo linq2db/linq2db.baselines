@@ -272,7 +272,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p NewDecimal -- Decimal
+DECLARE @p NewDecimal(29, 10) -- Decimal
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
@@ -298,7 +298,7 @@ SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p NewDecimal(7, 0) -- Decimal
+DECLARE @p NewDecimal(29, 10) -- Decimal
 SET     @p = 9999999
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
@@ -324,7 +324,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p NewDecimal -- Decimal
+DECLARE @p NewDecimal(29, 10) -- Decimal
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -350,7 +350,7 @@ SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p NewDecimal(7, 0) -- Decimal
+DECLARE @p NewDecimal(29, 10) -- Decimal
 SET     @p = 8888888
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
