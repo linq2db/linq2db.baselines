@@ -59,10 +59,10 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL FROM rdb$da
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @BoolValue VarChar -- String
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 VarChar -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value VarChar -- String
+SET     @true_value = 'Y'
+DECLARE @true_value_1 VarChar -- String
+SET     @true_value_1 = 'Y'
 
 SELECT
 	"t1"."Enum"
@@ -74,8 +74,8 @@ FROM
 			FROM
 				"ValueConversion" "t2"
 			WHERE
-				"t2"."BoolValue" = @BoolValue
-		) "t2_1" ON "t1"."BoolValue" = @BoolValue_1
+				"t2"."BoolValue" = @true_value
+		) "t2_1" ON "t1"."BoolValue" = @true_value_1
 
 BeforeExecute
 -- Firebird.4 Firebird4

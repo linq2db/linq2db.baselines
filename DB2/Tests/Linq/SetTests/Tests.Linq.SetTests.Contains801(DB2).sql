@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 2
 
 SELECT
-	2,
+	CAST(@ParentID AS Int),
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM

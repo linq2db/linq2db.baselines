@@ -6,18 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			COUNT([p].[PersonID]) as [c1]
 		FROM
-			(
-				SELECT
-					[p].[PersonID] as [ID]
-				FROM
-					[Person] [p]
-				WHERE
-					[p].[PersonID] IN (1, 2)
-			) [rec]
+			[Person] [p]
 		WHERE
-			[rec].[ID] NOT IN (
+			[p].[PersonID] IN (1, 2) AND [p].[PersonID] NOT IN (
 				SELECT
 					[p_1].[PersonID]
 				FROM
@@ -36,18 +29,11 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			COUNT([p].[PersonID]) as [c1]
 		FROM
-			(
-				SELECT
-					[p].[PersonID] as [ID]
-				FROM
-					[Person] [p]
-				WHERE
-					[p].[PersonID] IN (3)
-			) [rec]
+			[Person] [p]
 		WHERE
-			[rec].[ID] NOT IN (
+			[p].[PersonID] IN (3) AND [p].[PersonID] NOT IN (
 				SELECT
 					[p_1].[PersonID]
 				FROM

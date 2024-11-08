@@ -20,8 +20,8 @@ FROM
 	[Orders] [o]
 WHERE
 	CASE
-		WHEN ([o].[Freight] / 10) * 2 = Round(([o].[Freight] / 10) * 2, 1) AND [o].[Freight] / 10 <> Round([o].[Freight] / 10, 1)
-			THEN Round(([o].[Freight] / 10) / 2, 1) * 2
-		ELSE Round([o].[Freight] / 10, 1)
+		WHEN ([o].[Freight] / 10) * 2 = ROUND(([o].[Freight] / 10) * 2, 1) AND [o].[Freight] / 10 <> ROUND([o].[Freight] / 10, 1)
+			THEN ROUND(([o].[Freight] / 10) / 2, 1) * 2
+		ELSE ROUND([o].[Freight] / 10, 1)
 	END = 6.5
 

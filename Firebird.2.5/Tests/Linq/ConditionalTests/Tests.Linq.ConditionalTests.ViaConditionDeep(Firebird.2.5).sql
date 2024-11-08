@@ -43,6 +43,10 @@ SELECT 10,'String10' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
+DECLARE @IntProp Integer -- Int32
+SET     @IntProp = 1
+DECLARE @IntProp_1 Integer -- Int32
+SET     @IntProp_1 = 2
 
 SELECT
 	"x"."Id",
@@ -50,8 +54,14 @@ SELECT
 		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN '1'
 		ELSE '0'
 	END,
+	CASE
+		WHEN "x"."StringProp" = '2' THEN '1'
+		ELSE '0'
+	END,
 	"x"."StringProp",
-	"x"."StringProp" || '2'
+	CAST(@IntProp AS Int),
+	"x"."StringProp" || '2',
+	CAST(@IntProp_1 AS Int)
 FROM
 	"ConditionalData" "x"
 WHERE

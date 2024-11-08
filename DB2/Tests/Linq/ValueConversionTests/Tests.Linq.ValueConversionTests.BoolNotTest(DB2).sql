@@ -60,8 +60,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @BoolValue VarChar(1) -- String
-SET     @BoolValue = 'N'
+DECLARE @false_value VarChar(1) -- String
+SET     @false_value = 'N'
 
 SELECT
 	"t"."Id",
@@ -71,7 +71,7 @@ SELECT
 FROM
 	"ValueConversion" "t"
 WHERE
-	"t"."BoolValue" = @BoolValue
+	"t"."BoolValue" = @false_value
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

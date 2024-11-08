@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Patient" "t1"
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -25,7 +25,8 @@ WHERE
 			) "t2"
 		WHERE
 			"e"."FirstName" LIKE @filter1 ESCAPE '~' AND "e"."PersonID" = "t2"."PersonID"
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -39,7 +40,7 @@ WHERE
 			) "t3"
 		WHERE
 			"e_1"."FirstName" LIKE @filter2 ESCAPE '~' AND "e_1"."PersonID" = "t3"."PersonID"
-	))
+	)
 ORDER BY
 	"t1"."PersonID"
 

@@ -2,29 +2,29 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	s_1."Value_1"
+	s."Value_1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN (s."ParentID"::decimal % 2)::decimal = 0 THEN CASE
-					WHEN (s."ParentID"::decimal % 3)::decimal = 0 THEN True
+				WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN CASE
+					WHEN (p."ParentID"::decimal % 3)::decimal = 0 THEN True
 					ELSE False
 				END
-				WHEN (s."ParentID"::decimal % 4)::decimal = 0 THEN CASE
-					WHEN s."ParentID" > 0 THEN True
+				WHEN (p."ParentID"::decimal % 4)::decimal = 0 THEN CASE
+					WHEN p."ParentID" > 0 THEN True
 					ELSE False
 				END
 				ELSE CASE
-					WHEN s."ParentID" < 5 THEN True
+					WHEN p."ParentID" < 5 THEN True
 					ELSE False
 				END
 			END as "Value_1"
 		FROM
-			"Parent" s
-	) s_1
+			"Parent" p
+	) s
 WHERE
-	s_1."Value_1" = True
+	s."Value_1"
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
