@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 22
+DECLARE @Hour  -- Int32
+SET     @Hour = 22
 
 SELECT
 	Hour(Add_Seconds("t"."DateTimeValue", ? * 3600))
