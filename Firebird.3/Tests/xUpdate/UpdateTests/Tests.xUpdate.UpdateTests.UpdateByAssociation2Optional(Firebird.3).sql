@@ -77,10 +77,10 @@ WHERE
 		SELECT
 			*
 		FROM
-			"AssociatedTable" "pat"
-				LEFT JOIN "MainTable" "a_MainOptional" ON "pat"."Id" = "a_MainOptional"."Id"
+			"AssociatedTable" "p"
+				LEFT JOIN "MainTable" "a_MainOptional" ON "p"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"pat"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id" AND
+			"p"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id" AND
 			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
 	)
 

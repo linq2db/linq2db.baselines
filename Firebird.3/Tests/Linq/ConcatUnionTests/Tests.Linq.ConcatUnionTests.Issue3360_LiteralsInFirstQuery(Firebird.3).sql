@@ -69,12 +69,12 @@ FROM
 	(
 		SELECT
 			"r"."Id",
-			5 as "Byte",
-			5 as "Byte_1",
+			CAST(5 AS SmallInt) as "Byte",
+			CAST(5 AS SmallInt) as "Byte_1",
 			CAST(@Guid AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
 			CAST(@GuidN AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
+			CAST('ENUM1_VALUE' AS CHAR(11)) as "Enum",
+			CAST('ENUM2_VALUE' AS CHAR(11)) as "EnumN",
 			TRUE as "Bool",
 			FALSE as "BoolN"
 		FROM
