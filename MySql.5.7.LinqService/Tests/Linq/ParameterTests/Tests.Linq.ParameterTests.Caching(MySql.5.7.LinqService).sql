@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	(`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID)
+	`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	(`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID_1)
+	`x`.`ParentID` = @ParentID OR `x`.`ParentID` = @ParentID_1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
