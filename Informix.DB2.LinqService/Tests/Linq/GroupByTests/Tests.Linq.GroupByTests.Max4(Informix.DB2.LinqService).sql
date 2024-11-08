@@ -10,12 +10,12 @@ FROM
 		INNER JOIN (
 			SELECT
 				t2.ID,
-				MAX(t2.DateTimeValue) as DateTimeValue
+				MAX(t2.DateTimeValue) as c1
 			FROM
 				LinqDataTypes t2
 			WHERE
 				t2.ID = 1 AND t2.DateTimeValue <= @Date
 			GROUP BY
 				t2.ID
-		) t1 ON t1_1.ID = t1.ID AND t1_1.DateTimeValue = t1.DateTimeValue
+		) t1 ON t1_1.ID = t1.ID AND t1_1.DateTimeValue = t1.c1
 

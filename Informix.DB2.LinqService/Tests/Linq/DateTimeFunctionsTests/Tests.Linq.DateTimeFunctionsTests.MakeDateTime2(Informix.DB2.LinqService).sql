@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	To_Date('2010-' || LPad(t.ID, 2, '0') || '-01 20:35:44', '%Y-%m-%d %H:%M:%S')
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			To_Date('2010-' || LPad(p.ID, 2, '0') || '-01 20:35:44', '%Y-%m-%d %H:%M:%S') as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	Year(To_Date('2010-' || LPad(t.ID, 2, '0') || '-01 20:35:44', '%Y-%m-%d %H:%M:%S')) = 2010
+	Year(t.c1) = 2010
 
