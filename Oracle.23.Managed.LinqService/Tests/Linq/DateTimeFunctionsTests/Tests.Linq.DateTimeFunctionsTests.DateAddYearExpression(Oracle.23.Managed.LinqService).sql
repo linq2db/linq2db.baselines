@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 11
+DECLARE @Value Int32
+SET     @Value = 11
 
 SELECT
-	TRUNC(t."DateTimeValue" + :p * INTERVAL '1' YEAR)
+	TRUNC(t."DateTimeValue" + :Value * INTERVAL '1' YEAR)
 FROM
 	"LinqDataTypes" t
 
