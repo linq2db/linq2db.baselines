@@ -108,32 +108,44 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[a_Book].[BookId],
-	[a_Book].[Discriminator],
-	[a_Book].[BookId],
-	[a_Book].[BookName],
-	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	[t3].[BookId],
+	IIF([t3].[Discriminator] = N'Novel', 1, 0),
+	[t3].[BookId_1],
+	[t3].[BookName],
+	[t3].[NovelScore],
+	IIF([t3].[Discriminator] = N'Roman', 1, 0),
+	[t3].[RomanScore],
+	[t3].[Discriminator]
 FROM
-	[Author] [t1]
-		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
-WHERE
-	[a_Book].[Discriminator] = N'Roman'
-EXCEPT
-SELECT
-	[a_Book_1].[BookId],
-	[a_Book_1].[Discriminator],
-	[a_Book_1].[BookId],
-	[a_Book_1].[BookName],
-	[a_Book_1].[NovelScore],
-	[a_Book_1].[RomanScore]
-FROM
-	[Author] [t2]
-		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
-WHERE
-	[a_Book_1].[Discriminator] = N'Novel'
+	(
+		SELECT
+			[a_Book].[BookId],
+			[a_Book].[BookId] as [BookId_1],
+			[a_Book].[Discriminator],
+			[a_Book].[BookName],
+			[a_Book].[RomanScore],
+			[a_Book].[NovelScore]
+		FROM
+			[Author] [t1]
+				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
+				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		WHERE
+			[a_Book].[Discriminator] = N'Roman'
+		EXCEPT
+		SELECT
+			[a_Book_1].[BookId],
+			[a_Book_1].[BookId] as [BookId_1],
+			[a_Book_1].[Discriminator],
+			[a_Book_1].[BookName],
+			[a_Book_1].[RomanScore],
+			[a_Book_1].[NovelScore]
+		FROM
+			[Author] [t2]
+				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
+				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+		WHERE
+			[a_Book_1].[Discriminator] = N'Novel'
+	) [t3]
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -143,10 +155,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = N'Novel', 1, 0),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = N'Roman', 1, 0),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
