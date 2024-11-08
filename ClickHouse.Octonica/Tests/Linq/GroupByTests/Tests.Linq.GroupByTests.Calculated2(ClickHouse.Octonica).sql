@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			concat(g_2.c1, '2') as c1
+			concat(ch.Key_1, '2') as c1
 		FROM
 			(
 				SELECT
@@ -16,12 +16,12 @@ FROM
 							ELSE '2'
 						END
 						ELSE '3'
-					END as c1
+					END as Key_1
 				FROM
 					Child g_1
-			) g_2
+			) ch
 		GROUP BY
-			g_2.c1
+			ch.Key_1
 	) p
 WHERE
 	p.c1 = '22'
