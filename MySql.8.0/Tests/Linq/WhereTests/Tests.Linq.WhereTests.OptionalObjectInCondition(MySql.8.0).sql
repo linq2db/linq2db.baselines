@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
