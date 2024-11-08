@@ -216,13 +216,13 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[p].[Value1]
+	[r].[Value1]
 FROM
-	[Parent] [p]
+	[Parent] [r]
 WHERE
-	[p].[ParentID] >= 1000
+	[r].[ParentID] >= 1000
 ORDER BY
-	[p].[ParentID]
+	[r].[ParentID]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
