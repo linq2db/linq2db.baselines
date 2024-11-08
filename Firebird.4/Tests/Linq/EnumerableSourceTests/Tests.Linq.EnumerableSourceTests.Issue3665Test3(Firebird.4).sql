@@ -2,12 +2,11 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"x"."PersonID",
-	"y"."value__"
+	"x"."PersonID" + "y"."item"
 FROM
 	"Person" "x"
 		CROSS JOIN (
-			SELECT 1 AS "value__" FROM rdb$database
+			SELECT 1 AS "item" FROM rdb$database
 			UNION ALL
 			SELECT 3 FROM rdb$database) "y"
 

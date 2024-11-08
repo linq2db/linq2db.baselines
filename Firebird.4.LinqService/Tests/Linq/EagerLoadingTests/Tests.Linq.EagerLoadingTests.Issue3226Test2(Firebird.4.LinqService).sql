@@ -38,9 +38,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "ItemValue"
 			(
-				"Id"     Int     NOT NULL,
-				"ItemId" Int     NOT NULL,
-				"Value"  Decimal NOT NULL
+				"Id"     Int             NOT NULL,
+				"ItemId" Int             NOT NULL,
+				"Value"  Decimal(18, 10) NOT NULL
 			)
 		';
 END
