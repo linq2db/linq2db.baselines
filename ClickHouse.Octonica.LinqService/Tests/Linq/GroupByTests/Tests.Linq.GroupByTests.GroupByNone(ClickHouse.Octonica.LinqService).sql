@@ -2,8 +2,8 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	minOrNull(gr.ParentID),
-	maxOrNull(gr.ParentID)
+	min(gr.ParentID),
+	max(gr.ParentID)
 FROM
 	Parent gr
 
