@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	minOrNull(c_1.ChildID),
+	min(c_1.ChildID),
 	MIN(c_1.ChildID),
 	MIN(ALL c_1.ChildID),
 	MIN(DISTINCT c_1.ChildID)

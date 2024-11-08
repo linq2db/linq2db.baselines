@@ -2,9 +2,8 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Gender,
 	t1.PersonID,
-	t1.LastName,
+	t1.Gender,
 	t1.FirstName
 FROM
 	Person t1
@@ -16,10 +15,10 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Gender,
 	t1.PersonID,
-	t1.LastName,
-	t1.FirstName
+	t1.Gender,
+	t1.FirstName,
+	t1.LastName
 FROM
 	Person t1
 WHERE

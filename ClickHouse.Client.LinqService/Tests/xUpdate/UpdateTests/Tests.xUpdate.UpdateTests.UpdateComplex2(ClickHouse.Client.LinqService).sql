@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	LastName = FirstName
 WHERE
-	startsWith(FirstName, 'UpdateComplex')
+	startsWith(FirstName, 'UpdateComplex') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
