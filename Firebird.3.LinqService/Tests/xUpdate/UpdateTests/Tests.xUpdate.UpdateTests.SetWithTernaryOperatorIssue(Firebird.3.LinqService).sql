@@ -37,13 +37,13 @@ RETURNING
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @nullableGender Char(1) -- String
-SET     @nullableGender = 'O'
+DECLARE @Value Char(1) -- String
+SET     @Value = 'O'
 
 UPDATE
 	"Person" "t1"
 SET
-	"Gender" = CAST(@nullableGender AS CHAR(1))
+	"Gender" = CAST(@Value AS CHAR(1))
 WHERE
 	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 
