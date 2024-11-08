@@ -182,8 +182,8 @@ FROM
 			NULL::uuid as "Guid_1",
 			NULL::text as "Enum",
 			NULL::text as "EnumN",
-			NULL as "Bool",
-			NULL as "Bool_1"
+			NULL::Boolean as "Bool",
+			NULL::Boolean as "Bool_1"
 		FROM
 			"Issue3360Table1" r
 		WHERE
