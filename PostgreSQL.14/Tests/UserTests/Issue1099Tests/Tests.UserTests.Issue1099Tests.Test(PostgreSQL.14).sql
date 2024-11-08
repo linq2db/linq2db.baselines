@@ -42,21 +42,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @personId Integer -- Int32
-SET     @personId = 1
-
-SELECT
-	task_1."ID",
-	task_1."DurationID",
-	task_1."DurationInterval",
-	task_1."PersonID"
-FROM
-	"BackgroundTask" task_1
-WHERE
-	task_1."PersonID" = :personId
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "BackgroundTask"
 
