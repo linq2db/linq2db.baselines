@@ -2,10 +2,10 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ParentID]
+	[p].[ParentID]
 FROM
-	[Parent] [t1]
-		INNER JOIN [Child] [ch] ON [t1].[ParentID] = [ch].[ParentID]
+	[Parent] [p]
+		INNER JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
 WHERE
-	([t1].[ParentID] < 4 OR [t1].[ParentID] >= 4)
+	[p].[ParentID] < 4 OR [p].[ParentID] >= 4
 
