@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @Length Int -- Int32
+SET     @Length = 2
 
 SELECT
-	([p2].[PersonID] * 2) / 2 as [c1],
-	[p2].[FirstName]
+	([p5].[PersonID] * @Length) / 2 as [ID],
+	[p5].[FirstName]
 FROM
-	[Person] [p2]
+	[Person] [p5]
 

@@ -37,7 +37,7 @@ BeforeExecute
 
 SELECT
 	[x].[ParentID],
-	[t1].[COUNT_1] as [CountResult],
+	[t1].[COUNT_1],
 	[t2].[SUM_1]
 FROM
 	[Parent] [x]
