@@ -129,16 +129,12 @@ FROM
 				FROM
 					(
 						SELECT
-							[a].[AuthorName],
-							[a].[AuthorId],
-							NULL as [c1]
+							[a].[AuthorId]
 						FROM
 							[Author] [a]
 						UNION ALL
 						SELECT
-							NULL as [AuthorName],
-							NULL as [AuthorId],
-							[t1].[AuthorId] as [c1]
+							NULL as [AuthorId]
 						FROM
 							[Author] [t1]
 								INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -161,10 +157,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book_1].[BookId],
-	[a_Book_1].[Discriminator],
+	IIF([a_Book_1].[Discriminator] = N'Novel', 1, 0),
 	[a_Book_1].[BookName],
 	[a_Book_1].[NovelScore],
-	[a_Book_1].[RomanScore]
+	IIF([a_Book_1].[Discriminator] = N'Roman', 1, 0),
+	[a_Book_1].[RomanScore],
+	[a_Book_1].[Discriminator]
 FROM
 	(
 		SELECT DISTINCT
@@ -172,16 +170,12 @@ FROM
 		FROM
 			(
 				SELECT
-					[a].[AuthorName],
-					[a].[AuthorId],
-					NULL as [c1]
+					[a].[AuthorId]
 				FROM
 					[Author] [a]
 				UNION ALL
 				SELECT
-					NULL as [AuthorName],
-					NULL as [AuthorId],
-					[t1].[AuthorId] as [c1]
+					NULL as [AuthorId]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -215,14 +209,12 @@ FROM
 				FROM
 					(
 						SELECT
-							[a].[AuthorName],
 							[a].[AuthorId],
 							NULL as [c1]
 						FROM
 							[Author] [a]
 						UNION ALL
 						SELECT
-							NULL as [AuthorName],
 							NULL as [AuthorId],
 							[t1].[AuthorId] as [c1]
 						FROM
@@ -254,10 +246,12 @@ BeforeExecute
 SELECT
 	[m_1].[c1],
 	[d_1].[BookId],
-	[d_1].[Discriminator],
+	IIF([d_1].[Discriminator] = N'Novel', 1, 0),
 	[d_1].[BookName],
 	[d_1].[NovelScore],
-	[d_1].[RomanScore]
+	IIF([d_1].[Discriminator] = N'Roman', 1, 0),
+	[d_1].[RomanScore],
+	[d_1].[Discriminator]
 FROM
 	(
 		SELECT DISTINCT
@@ -265,14 +259,12 @@ FROM
 		FROM
 			(
 				SELECT
-					[a].[AuthorName],
 					[a].[AuthorId],
 					NULL as [c1]
 				FROM
 					[Author] [a]
 				UNION ALL
 				SELECT
-					NULL as [AuthorName],
 					NULL as [AuthorId],
 					[t1].[AuthorId] as [c1]
 				FROM
@@ -287,11 +279,11 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_Book_1].[BookId],
 				[a_Book_1].[Discriminator],
+				[a_Book_1].[BookId],
 				[a_Book_1].[BookName],
-				[a_Book_1].[RomanScore],
-				[a_Book_1].[NovelScore]
+				[a_Book_1].[NovelScore],
+				[a_Book_1].[RomanScore]
 			FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]
@@ -356,10 +348,12 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	IIF([a_Book].[Discriminator] = N'Novel', 1, 0),
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	[a_Book].[RomanScore]
+	IIF([a_Book].[Discriminator] = N'Roman', 1, 0),
+	[a_Book].[RomanScore],
+	[a_Book].[Discriminator]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
