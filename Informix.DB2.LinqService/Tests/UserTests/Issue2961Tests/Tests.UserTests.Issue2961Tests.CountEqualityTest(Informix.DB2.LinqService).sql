@@ -77,22 +77,22 @@ FROM
 		INNER JOIN Locations l ON c_1.LocationId = l.Id
 		LEFT JOIN (
 			SELECT
-				g2.CondoId,
+				g2.CondoId as Key_1,
 				COUNT(*) as CountCondoTags
 			FROM
 				CondoTags g2
 			GROUP BY
 				g2.CondoId
-		) subct ON c_1.Id = subct.CondoId
+		) subct ON c_1.Id = subct.Key_1
 		LEFT JOIN (
 			SELECT
-				g1.CondoId,
+				g1.CondoId as Key_1,
 				COUNT(*) as CountCondoCategories
 			FROM
 				CategoryCondos g1
 			GROUP BY
 				g1.CondoId
-		) subcc ON c_1.Id = subcc.CondoId
+		) subcc ON c_1.Id = subcc.Key_1
 
 BeforeExecute
 -- Informix.DB2 Informix

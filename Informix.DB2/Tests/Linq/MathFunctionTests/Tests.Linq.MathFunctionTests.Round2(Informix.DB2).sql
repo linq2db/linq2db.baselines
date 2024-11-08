@@ -2,18 +2,13 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t_1.c1
+	t.MoneyValue
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t.MoneyValue::Float - Floor(t.MoneyValue::Float) = 0.5 AND Mod(Floor(t.MoneyValue::Float), 2) = 0
-					THEN Floor(t.MoneyValue::Float)
-				ELSE Round(t.MoneyValue::Float, 0)
-			END as c1
-		FROM
-			LinqDataTypes t
-	) t_1
+	LinqDataTypes t
 WHERE
-	t_1.c1 <> 0
+	CASE
+		WHEN t.MoneyValue::Float - FLOOR(t.MoneyValue::Float) = 0.5 AND Mod(FLOOR(t.MoneyValue::Float), 2) = 0
+			THEN FLOOR(t.MoneyValue::Float)
+		ELSE ROUND(t.MoneyValue::Float, 0)
+	END <> 0
 

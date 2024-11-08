@@ -81,7 +81,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	(t."Value" = 't' OR t."Value" IS NULL)
+	t."Value" = 't' OR t."Value" IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
