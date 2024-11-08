@@ -108,7 +108,7 @@ FROM
 		FROM
 			EXTERNAL_RECEIPTS t1
 	) i_1
-		LEFT JOIN CUST_DTL a_Customer ON (i_1."Custkey" = a_Customer.CUSTKEY OR i_1."Custkey" IS NULL AND a_Customer.CUSTKEY IS NULL)
+		LEFT JOIN CUST_DTL a_Customer ON i_1."Custkey" = a_Customer.CUSTKEY OR i_1."Custkey" IS NULL AND a_Customer.CUSTKEY IS NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
