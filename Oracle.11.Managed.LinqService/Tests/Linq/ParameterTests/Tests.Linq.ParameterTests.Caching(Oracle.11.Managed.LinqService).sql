@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID)
+	x."ParentID" = :ParentID OR x."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID_1)
+	x."ParentID" = :ParentID OR x."ParentID" = :ParentID_1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

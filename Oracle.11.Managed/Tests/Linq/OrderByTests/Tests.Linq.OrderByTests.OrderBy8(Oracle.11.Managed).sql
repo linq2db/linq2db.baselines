@@ -2,11 +2,11 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	ch."ParentID",
-	ch."ChildID"
+	x."ParentID",
+	x."ChildID"
 FROM
-	"Child" ch
+	"Child" x
 ORDER BY
-	MOD(ch."ChildID", 2),
-	ch."ChildID"
+	x."ChildID",
+	MOD(x."ChildID", 2)
 
