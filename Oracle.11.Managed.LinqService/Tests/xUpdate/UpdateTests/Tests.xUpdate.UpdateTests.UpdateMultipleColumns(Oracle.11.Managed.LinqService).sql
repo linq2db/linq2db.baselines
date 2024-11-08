@@ -29,26 +29,7 @@ UPDATE
 	"LinqDataTypes" t
 SET
 	"MoneyValue" = 2000,
-	"SmallIntValue" = 200
+	CAST(t."SmallIntValue" AS Int) = 200
 WHERE
 	t.ID = :ID
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-DECLARE @ID Int32
-SET     @ID = 1001
-
-SELECT
-	t.ID,
-	t."MoneyValue",
-	t."DateTimeValue",
-	t."BoolValue",
-	t."GuidValue",
-	t."BinaryValue",
-	t."SmallIntValue",
-	t."StringValue"
-FROM
-	"LinqDataTypes" t
-WHERE
-	t.ID = :ID AND ROWNUM <= 2
 
