@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		`r`.`Id`,
-		5,
-		5,
-		@Guid,
-		@GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		CAST(5 AS UNSIGNED),
+		CAST(5 AS UNSIGNED),
+		CAST(@Guid AS CHAR(36)),
+		CAST(@GuidN AS CHAR(36)),
+		CAST('ENUM1_VALUE' AS CHAR(11)),
+		CAST('ENUM2_VALUE' AS CHAR(11)),
+		CAST(1 AS SIGNED),
+		CAST(0 AS SIGNED)
 	FROM
 		`Issue3360Table1` `r`
 	WHERE

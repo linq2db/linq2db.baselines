@@ -16,8 +16,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Date_Add(CURRENT_TIMESTAMP, Interval 1 Day) as `Value1`,
-	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+	CURRENT_TIMESTAMP as `CurrentTimestamp`
 LIMIT 1
 
 BeforeExecute

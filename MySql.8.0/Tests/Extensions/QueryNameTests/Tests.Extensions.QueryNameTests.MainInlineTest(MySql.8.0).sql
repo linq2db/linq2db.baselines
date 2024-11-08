@@ -8,12 +8,12 @@ SELECT /*+ QB_NAME(Main) */
 FROM
 	(
 		SELECT /*+ QB_NAME(Inline) */
-			`g_1`.`ParentID`,
+			`c_1`.`ParentID`,
 			COUNT(*) as `COUNT_1`
 		FROM
-			`Child` `g_1`
+			`Child` `c_1`
 		GROUP BY
-			`g_1`.`ParentID`
+			`c_1`.`ParentID`
 	) `t1`,
 	`Parent` `p`
 WHERE

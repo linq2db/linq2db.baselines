@@ -2,14 +2,14 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`p_1`.`MoneyValue`
+	`p`.`MoneyValue`
 FROM
 	(
 		SELECT
-			`p`.`MoneyValue`
+			`t`.`MoneyValue`
 		FROM
-			`LinqDataTypes` `p`
-	) `p_1`
+			`LinqDataTypes` `t`
+	) `p`
 WHERE
-	`p_1`.`MoneyValue` > 0
+	`p`.`MoneyValue` > 0
 
