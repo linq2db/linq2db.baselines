@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[p].[Taxonomy]
+	Lower([p].[Taxonomy])
 FROM
 	[Doctor] [p]
 WHERE
