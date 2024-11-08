@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	SUBSTRING([p].[FirstName], LEN([p].[FirstName]) - 2, 3) as [c1]
+	Substring([p].[FirstName], Len([p].[FirstName]) - 2, 3) as [c1]
 FROM
 	[Person] [p]
 WHERE

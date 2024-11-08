@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[p1].[ParentID] as [ID]
+	[p1].[ParentID]
 FROM
 	[Parent] [p1]
 WHERE

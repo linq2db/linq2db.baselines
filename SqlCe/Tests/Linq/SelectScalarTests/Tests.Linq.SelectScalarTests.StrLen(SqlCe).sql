@@ -2,5 +2,5 @@
 -- SqlCe
 
 SELECT
-	1 as [c1]
+	Len('1') as [Length_1]
 

@@ -51,8 +51,8 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- SqlCe
-DECLARE @BoolValue NVarChar -- String
-SET     @BoolValue = 'N'
+DECLARE @false_value NVarChar -- String
+SET     @false_value = 'N'
 
 SELECT
 	[t].[Id],
@@ -62,7 +62,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue
+	[t].[BoolValue] = @false_value
 
 BeforeExecute
 -- SqlCe
