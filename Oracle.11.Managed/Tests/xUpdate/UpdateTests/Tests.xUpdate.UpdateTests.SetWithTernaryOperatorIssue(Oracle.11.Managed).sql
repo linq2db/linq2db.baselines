@@ -40,13 +40,13 @@ RETURNING
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @nullableGender Varchar2(1) -- String
-SET     @nullableGender = 'O'
+DECLARE @Value Varchar2(1) -- String
+SET     @Value = 'O'
 
 UPDATE
 	"Person" t1
 SET
-	"Gender" = :nullableGender
+	"Gender" = :Value
 WHERE
 	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

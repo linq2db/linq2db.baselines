@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE `TestIdTrun`
 (
-	`ID`     INT     AUTO_INCREMENT NOT NULL,
-	`Field1` DECIMAL                NOT NULL,
+	`ID`     INT             AUTO_INCREMENT NOT NULL,
+	`Field1` DECIMAL(29, 10)                NOT NULL,
 
 	CONSTRAINT `PK_TestIdTrun` PRIMARY KEY CLUSTERED (`ID`)
 )

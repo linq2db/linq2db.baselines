@@ -114,7 +114,7 @@ SET
 		SELECT
 			x_1."col1",
 			x_1."col2",
-			Replace(x_1."col3", 'auth.', ''),
+			REPLACE(x_1."col3", 'auth.', ''),
 			x_1."col4",
 			CASE
 				WHEN x_1."col3" = 'empty' THEN '1'
@@ -126,7 +126,7 @@ SET
 			END
 		FROM
 			"gt_s_one" x_1
-				LEFT JOIN "access_mode" y1_1 ON (Upper(Replace(x_1."col3", 'auth.', '')) = Upper(y1_1."code") OR Upper(Replace(x_1."col3", 'auth.', '')) IS NULL AND Upper(y1_1."code") IS NULL)
+				LEFT JOIN "access_mode" y1_1 ON Upper(REPLACE(x_1."col3", 'auth.', '')) = Upper(y1_1."code") OR Upper(REPLACE(x_1."col3", 'auth.', '')) IS NULL AND Upper(y1_1."code") IS NULL
 		WHERE
 			x_1."id" = "gt_s_one_target"."id"
 	)
@@ -136,7 +136,7 @@ WHERE
 			*
 		FROM
 			"gt_s_one" x
-				LEFT JOIN "access_mode" y1 ON (Upper(Replace(x."col3", 'auth.', '')) = Upper(y1."code") OR Upper(Replace(x."col3", 'auth.', '')) IS NULL AND Upper(y1."code") IS NULL)
+				LEFT JOIN "access_mode" y1 ON Upper(REPLACE(x."col3", 'auth.', '')) = Upper(y1."code") OR Upper(REPLACE(x."col3", 'auth.', '')) IS NULL AND Upper(y1."code") IS NULL
 		WHERE
 			x."id" = "gt_s_one_target"."id"
 	)

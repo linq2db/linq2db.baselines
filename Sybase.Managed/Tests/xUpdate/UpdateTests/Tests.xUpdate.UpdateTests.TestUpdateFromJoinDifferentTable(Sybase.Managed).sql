@@ -88,7 +88,7 @@ SET
 	END
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON (Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Str_Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL)
+		LEFT JOIN [access_mode] [y1] ON Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Str_Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL
 WHERE
 	[x].[id] = [gt_s_one_target].[id]
 

@@ -47,7 +47,7 @@ VALUES
 	@ID,
 	N'Inserted 1',
 	N'Inserted 2',
-	N'M'
+	'M'
 )
 ;
 SET IDENTITY_INSERT [Person] OFF

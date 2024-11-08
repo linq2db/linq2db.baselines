@@ -100,25 +100,25 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t4"."Value1") * CAST(@int1 AS Int),
-			("UpdatedEntities"."Value2" * "t4"."Value2") * CAST(@int2 AS Int),
-			("UpdatedEntities"."Value3" * "t4"."Value3") * CAST(@int3 AS Int)
+			("UpdatedEntities"."Value1" * "t2"."Value1") * CAST(@int1 AS Int),
+			("UpdatedEntities"."Value2" * "t2"."Value2") * CAST(@int2 AS Int),
+			("UpdatedEntities"."Value3" * "t2"."Value3") * CAST(@int3 AS Int)
 		FROM
 			(
 				SELECT
 					"t_1"."Value1",
 					"t_1"."Value2",
 					"t_1"."Value3",
-					"t3"."id"
+					"c_2"."id"
 				FROM
-					"UpdatedEntities" "t3"
-						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
+					"UpdatedEntities" "c_2"
+						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "c_2"."id"
 				WHERE
 					"t_1"."id" <> @someId
 				FETCH NEXT 2 ROWS ONLY
-			) "t4"
+			) "t2"
 		WHERE
-			"UpdatedEntities"."id" = "t4"."id"
+			"UpdatedEntities"."id" = "t2"."id"
 	)
 WHERE
 	EXISTS(
@@ -127,16 +127,16 @@ WHERE
 		FROM
 			(
 				SELECT
-					"t1"."id"
+					"c_1"."id"
 				FROM
-					"UpdatedEntities" "t1"
-						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
+					"UpdatedEntities" "c_1"
+						INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"
 				WHERE
 					"t"."id" <> @someId
 				FETCH NEXT 2 ROWS ONLY
-			) "t2"
+			) "t1"
 		WHERE
-			"UpdatedEntities"."id" = "t2"."id"
+			"UpdatedEntities"."id" = "t1"."id"
 	)
 
 BeforeExecute
