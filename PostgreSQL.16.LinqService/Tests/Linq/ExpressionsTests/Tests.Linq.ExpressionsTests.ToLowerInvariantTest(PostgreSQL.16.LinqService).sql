@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	p."Taxonomy"
+	Lower(p."Taxonomy")
 FROM
 	"Doctor" p
 WHERE
