@@ -47,7 +47,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	i."One" IS NULL AND i."Two" IS NULL AND i."Three" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -57,7 +57,7 @@ SELECT
 FROM
 	"Ints" i
 WHERE
-	i."One" IS NULL AND i."Nil" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
