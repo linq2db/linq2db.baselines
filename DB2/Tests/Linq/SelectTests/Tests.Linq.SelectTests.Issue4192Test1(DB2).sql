@@ -22,6 +22,19 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @parentId Integer(4) -- Int32
+SET     @parentId = 12
+
+SELECT
+	"i"."Name",
+	"i"."ParentId"
+FROM
+	"Issue4192TableNotNullable" "i"
+WHERE
+	"i"."ParentId" = @parentId
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

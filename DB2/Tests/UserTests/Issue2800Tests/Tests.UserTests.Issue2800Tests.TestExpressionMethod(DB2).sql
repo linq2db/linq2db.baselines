@@ -61,7 +61,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	("x"."Name" <> 'Special' OR "x"."Name" IS NULL)
+	"x"."Name" <> 'Special' OR "x"."Name" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -119,7 +119,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	("x"."Name" <> 'Special' OR "x"."Name" IS NULL)
+	"x"."Name" <> 'Special' OR "x"."Name" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
