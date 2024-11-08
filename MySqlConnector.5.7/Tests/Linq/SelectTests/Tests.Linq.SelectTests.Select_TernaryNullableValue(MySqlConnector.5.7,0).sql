@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p Int32
-SET     @p = 0
+DECLARE @Value Int32
+SET     @Value = 0
 
 SELECT
-	@p as `c1`
+	@Value as `c1`
 

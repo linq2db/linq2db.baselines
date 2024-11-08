@@ -25,11 +25,13 @@ VALUES
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @p UByte -- Boolean
+SET     @p = 1
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	1
+	@p
 FROM
 	`SelectExpressionTable` `t1`
 LIMIT @take

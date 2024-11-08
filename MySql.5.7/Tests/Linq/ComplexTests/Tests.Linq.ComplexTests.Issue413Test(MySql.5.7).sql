@@ -140,7 +140,7 @@ DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate Datetime -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode VarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -166,7 +166,7 @@ DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate Datetime -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode VarChar -- String
 SET     @SourceInstrumentCode = NULL
@@ -190,7 +190,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @cond VarChar(4) -- String
 SET     @cond = 'aaa%'
-DECLARE @uptoDate Datetime -- DateTime
+DECLARE @uptoDate DateTime
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT
