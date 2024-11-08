@@ -43,21 +43,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @personId Int -- Int32
-SET     @personId = 1
-
-SELECT
-	[task_1].[ID],
-	[task_1].[DurationID],
-	[task_1].[DurationInterval],
-	[task_1].[PersonID]
-FROM
-	[BackgroundTask] [task_1]
-WHERE
-	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [BackgroundTask]
 
