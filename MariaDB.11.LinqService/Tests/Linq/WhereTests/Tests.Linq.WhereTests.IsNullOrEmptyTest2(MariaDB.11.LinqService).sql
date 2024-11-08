@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `nm`
 WHERE
-	NOT (`nm`.`FirstName` IS NULL OR Char_Length(`nm`.`FirstName`) = 0)
+	Char_Length(`nm`.`FirstName`) <> 0
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

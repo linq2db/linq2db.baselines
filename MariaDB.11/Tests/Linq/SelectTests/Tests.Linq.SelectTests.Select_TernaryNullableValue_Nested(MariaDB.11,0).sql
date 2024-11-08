@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p Int32
-SET     @p = 0
+DECLARE @Value Int32
+SET     @Value = 0
 
 SELECT
-	@p as `c1`
+	@Value as `c1`
 

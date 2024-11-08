@@ -76,7 +76,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`String` <=> @value
+	`s`.`String` IS NULL OR `s`.`String` <> @value
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -88,7 +88,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT `s`.`NullableString` <=> @value
+	`s`.`NullableString` IS NULL OR `s`.`NullableString` <> @value
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -100,7 +100,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`String` <=> @value
+	NOT (`s`.`String` IS NULL OR `s`.`String` <> @value)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -112,7 +112,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableString` <=> @value
+	NOT (`s`.`NullableString` IS NULL OR `s`.`NullableString` <> @value)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

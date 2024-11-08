@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
