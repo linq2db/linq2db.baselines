@@ -2,18 +2,13 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t_1"."c1"
+	"t"."MoneyValue"
 FROM
-	(
-		SELECT
-			CASE
-				WHEN CAST("t"."MoneyValue" AS Float) - Floor(CAST("t"."MoneyValue" AS Float)) = 0.5 AND Mod(Int(Floor(CAST("t"."MoneyValue" AS Float))), 2) = 0
-					THEN Floor(CAST("t"."MoneyValue" AS Float))
-				ELSE Round(CAST("t"."MoneyValue" AS Float), 0)
-			END as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+	"LinqDataTypes" "t"
 WHERE
-	"t_1"."c1" <> 0
+	CASE
+		WHEN CAST("t"."MoneyValue" AS Float) - FLOOR(CAST("t"."MoneyValue" AS Float)) = 0.5 AND Mod(Int(FLOOR(CAST("t"."MoneyValue" AS Float))), 2) = 0
+			THEN FLOOR(CAST("t"."MoneyValue" AS Float))
+		ELSE ROUND(CAST("t"."MoneyValue" AS Float), 0)
+	END <> 0
 

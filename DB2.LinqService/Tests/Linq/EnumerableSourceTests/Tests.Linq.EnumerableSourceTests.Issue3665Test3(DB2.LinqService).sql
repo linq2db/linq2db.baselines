@@ -2,13 +2,12 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."PersonID",
-	"y"."value__"
+	"x"."PersonID" + "y"."item"
 FROM
 	"Person" "x",
 	(VALUES
 		(1), (3)
-	) "y"("value__")
+	) "y"("item")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
