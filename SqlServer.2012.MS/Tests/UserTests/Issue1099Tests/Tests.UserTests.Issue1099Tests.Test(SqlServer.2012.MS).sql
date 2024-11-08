@@ -44,21 +44,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @personId Int -- Int32
-SET     @personId = 1
-
-SELECT
-	[task_1].[ID],
-	[task_1].[DurationID],
-	[task_1].[DurationInterval],
-	[task_1].[PersonID]
-FROM
-	[BackgroundTask] [task_1]
-WHERE
-	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NOT NULL)
 	DROP TABLE [BackgroundTask]
