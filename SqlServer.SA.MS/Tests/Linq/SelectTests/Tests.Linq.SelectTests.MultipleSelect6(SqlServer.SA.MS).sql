@@ -2,8 +2,8 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[p2].[PersonID],
-	[p2].[FirstName]
+	[p4].[PersonID],
+	[p4].[FirstName]
 FROM
-	[Person] [p2]
+	[Person] [p4]
 

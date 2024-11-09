@@ -2,9 +2,9 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"c_1"."ChildID"
+	"t1"."ChildID"
 FROM
-	"Child" "c_1"
+	"Child" "t1"
 WHERE
-	"c_1"."ChildID" = 32
+	"t1"."ChildID" = 32
 

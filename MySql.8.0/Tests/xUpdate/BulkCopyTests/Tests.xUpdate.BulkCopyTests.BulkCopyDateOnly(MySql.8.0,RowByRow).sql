@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `DateOnlyTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Date Datetime -- DateTime
+DECLARE @Date DateTime
 SET     @Date = '2021-01-01'
 
 INSERT INTO `DateOnlyTable`

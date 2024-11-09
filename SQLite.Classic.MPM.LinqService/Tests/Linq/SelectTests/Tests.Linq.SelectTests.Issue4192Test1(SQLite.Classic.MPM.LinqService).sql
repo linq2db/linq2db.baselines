@@ -14,6 +14,19 @@ CREATE TABLE IF NOT EXISTS [Issue4192TableNotNullable]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @parentId  -- Int32
+SET     @parentId = 12
+
+SELECT
+	[i].[Name],
+	[i].[ParentId]
+FROM
+	[Issue4192TableNotNullable] [i]
+WHERE
+	[i].[ParentId] = @parentId
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Issue4192TableNotNullable]
 
