@@ -4,9 +4,9 @@ DECLARE @p IntervalDS -- Object
 SET     @p = 01:00:00
 
 SELECT
-	t1.ID
+	x.ID
 FROM
-	"AllTypes" t1
+	"AllTypes" x
 WHERE
-	CURRENT_TIMESTAMP > t1."datetime2DataType" + :p
+	CURRENT_TIMESTAMP > x."datetime2DataType" + :p
 

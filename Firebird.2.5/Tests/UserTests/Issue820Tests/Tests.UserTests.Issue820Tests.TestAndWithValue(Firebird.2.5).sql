@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @param SmallInt -- Int16
-SET     @param = 1
+DECLARE @Value SmallInt -- Int16
+SET     @Value = 1
 
 SELECT
 	"t1".ID,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	@param = "t1"."SmallIntValue"
+	@Value = "t1"."SmallIntValue"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

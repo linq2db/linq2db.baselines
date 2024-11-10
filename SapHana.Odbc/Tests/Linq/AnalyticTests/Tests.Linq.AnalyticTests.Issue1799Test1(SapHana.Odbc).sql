@@ -54,11 +54,11 @@ SELECT
 FROM
 	(
 		SELECT
-			Seconds_Between(LAG("q"."EventTime") OVER(PARTITION BY "q"."EventUser", "q"."ProcessID" ORDER BY "q"."EventTime"), "q"."EventTime") / 60 as "Diff",
-			"q"."EventUser" as "User_1",
-			"q"."ProcessID" as "Proc"
+			Seconds_Between(LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") / 60 as "Diff",
+			"x"."EventUser" as "User_1",
+			"x"."ProcessID" as "Proc"
 		FROM
-			"Issue1799Table1" "q"
+			"Issue1799Table1" "x"
 	) "g_1"
 		INNER JOIN "Issue1799Table2" "u" ON "u"."UserId" = "g_1"."User_1"
 		INNER JOIN "Issue1799Table3" "p" ON "p"."ProcessID" = "g_1"."Proc"
