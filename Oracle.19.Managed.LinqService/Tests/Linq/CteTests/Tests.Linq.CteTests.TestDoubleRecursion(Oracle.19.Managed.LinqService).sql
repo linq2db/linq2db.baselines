@@ -378,7 +378,7 @@ AS
 AS
 (
 	SELECT
-		0,
+		CAST(0 AS Int),
 		t2."Id"
 	FROM
 		CTE_1 t2

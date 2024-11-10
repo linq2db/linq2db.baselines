@@ -34,7 +34,7 @@ AS
 	UNION ALL
 	SELECT
 		"t1"."Id",
-		'THIS_IS_TWO'
+		CAST('THIS_IS_TWO' AS VarChar(50) CHARACTER SET UNICODE_FSS)
 	FROM
 		"cte" "t1"
 			INNER JOIN "Issue3360WithEnum" "r" ON "t1"."Id" = "r"."Id" + 1

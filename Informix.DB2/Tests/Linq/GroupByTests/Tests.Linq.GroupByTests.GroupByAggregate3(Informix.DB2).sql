@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	g_2.c1
+	g_2.Key_1
 FROM
 	(
 		SELECT
@@ -17,12 +17,12 @@ FROM
 				) > 3
 					THEN 't'
 				ELSE 'f'
-			END::BOOLEAN as c1
+			END::BOOLEAN as Key_1
 		FROM
 			Parent g_1
 	) g_2
 GROUP BY
-	g_2.c1
+	g_2.Key_1
 ORDER BY
-	g_2.c1
+	g_2.Key_1
 

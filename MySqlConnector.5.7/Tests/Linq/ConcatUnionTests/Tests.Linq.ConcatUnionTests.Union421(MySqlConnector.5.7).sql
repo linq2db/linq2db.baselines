@@ -7,19 +7,19 @@ FROM
 	(
 		SELECT
 			`p`.`ParentID` as `id`,
-			1 as `val`
+			CAST(1 AS SIGNED) as `val`
 		FROM
 			`Parent` `p`
 		UNION
 		SELECT
 			`p_1`.`ParentID` as `id`,
-			0 as `val`
+			CAST(0 AS SIGNED) as `val`
 		FROM
 			`Parent` `p_1`
 		UNION
 		SELECT
 			`ch`.`ParentID` as `id`,
-			0 as `val`
+			CAST(0 AS SIGNED) as `val`
 		FROM
 			`Child` `ch`
 	) `p_2`

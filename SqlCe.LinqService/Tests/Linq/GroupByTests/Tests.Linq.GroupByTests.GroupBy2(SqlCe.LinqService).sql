@@ -3,7 +3,7 @@
 
 SELECT
 	[gr_1].[ID],
-	[gr_1].[ID] + 1 as [ID1]
+	[gr_1].[ID] + 1 as [c1]
 FROM
 	(
 		SELECT
