@@ -4,7 +4,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[CustomerID],
 	[d].[CompanyName],
 	[d].[ContactName],
@@ -19,7 +19,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[Key_1]
 		FROM
 			(
 				SELECT
@@ -30,14 +30,14 @@ FROM
 							[Orders] [a_Orders]
 						WHERE
 							[t1].[CustomerID] = [a_Orders].[CustomerID]
-					) >= 80, 1, 0) as [c1]
+					) >= 80, 1, 0) as [Key_1]
 				FROM
 					[Customers] [t1]
 			) [t2]
 		GROUP BY
-			[t2].[c1]
+			[t2].[Key_1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON IIF([m_1].[c1] = 1, 1, 0) = IIF((
+		INNER JOIN [Customers] [d] ON IIF([m_1].[Key_1] = 1, 1, 0) = IIF((
 			SELECT
 				AVG([a_Orders_1].[Freight]) as [AVG_1]
 			FROM
@@ -52,7 +52,7 @@ BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[t2].[c1]
+	[t2].[Key_1]
 FROM
 	(
 		SELECT
@@ -63,10 +63,10 @@ FROM
 					[Orders] [a_Orders]
 				WHERE
 					[t1].[CustomerID] = [a_Orders].[CustomerID]
-			) >= 80, 1, 0) as [c1]
+			) >= 80, 1, 0) as [Key_1]
 		FROM
 			[Customers] [t1]
 	) [t2]
 GROUP BY
-	[t2].[c1]
+	[t2].[Key_1]
 
