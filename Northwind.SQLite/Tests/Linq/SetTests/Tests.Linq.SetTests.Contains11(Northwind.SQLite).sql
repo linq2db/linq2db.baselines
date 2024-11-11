@@ -7,7 +7,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[a_Employee].[EmployeeID],
 			[a_Employee].[LastName],
 			COUNT(CASE
 				WHEN [a_Employee].[FirstName] LIKE '%an%' ESCAPE '~' THEN 1
@@ -25,8 +24,7 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			[EmployeeTerritories] [a_EmployeeTerritories]
-		WHERE
-			[g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
+			[EmployeeTerritories] [g_3]
+				LEFT JOIN [Employees] [a_Employee] ON [g_3].[EmployeeID] = [a_Employee].[EmployeeID]
 	) > 1
 

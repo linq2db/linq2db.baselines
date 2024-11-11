@@ -7,7 +7,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[a_Employee].[EmployeeID],
 			COUNT(*) as [COUNT_1],
 			[a_Employee].[LastName],
 			COUNT(CASE
@@ -26,9 +25,8 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			[EmployeeTerritories] [a_EmployeeTerritories]
-		WHERE
-			[g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
+			[EmployeeTerritories] [g_3]
+				LEFT JOIN [Employees] [a_Employee] ON [g_3].[EmployeeID] = [a_Employee].[EmployeeID]
 	) > 1 AND
 	[g_2].[COUNT_1] > 2
 
