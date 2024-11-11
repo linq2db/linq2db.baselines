@@ -9,9 +9,12 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS Issue4654Customer
 (
 	Id   Int32,
-	Name Nullable(String)
+	Name Nullable(String),
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -26,9 +29,12 @@ CREATE TABLE IF NOT EXISTS Issue4654Order
 	Id          Int32,
 	ProductName Nullable(String),
 	Quantity    Int32,
-	CustomerId  Int32
+	CustomerId  Int32,
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -42,9 +48,12 @@ CREATE TABLE IF NOT EXISTS Issue4654Product
 (
 	Id    Int32,
 	Name  Nullable(String),
-	Price Decimal128(10)
+	Price Decimal128(10),
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
