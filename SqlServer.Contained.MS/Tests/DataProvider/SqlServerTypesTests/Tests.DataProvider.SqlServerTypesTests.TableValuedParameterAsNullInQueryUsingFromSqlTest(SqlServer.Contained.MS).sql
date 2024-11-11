@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = NULL
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = NULL
 
 SELECT
 	[record_1].[Id],
 	[record_1].[Name]
 FROM
 	(
-		select * from  @p
+		select * from  @table
 	) [record_1]
 

@@ -16,7 +16,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO `CreateTableTypes`
@@ -34,7 +34,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @DateTimeNullable Datetime -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = '2018-11-25 01:02:03'
 
 INSERT INTO `CreateTableTypes`

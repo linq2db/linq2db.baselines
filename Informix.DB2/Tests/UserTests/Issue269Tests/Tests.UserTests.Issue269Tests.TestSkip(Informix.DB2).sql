@@ -15,12 +15,12 @@ WHERE
 				SELECT SKIP 0
 					a_Patient.Diagnosis
 				FROM
-					Person per
-						LEFT JOIN Patient a_Patient ON per.PersonID = a_Patient.PersonID
+					Person c_1
+						LEFT JOIN Patient a_Patient ON c_1.PersonID = a_Patient.PersonID
 				WHERE
-					per.PersonID = pat.PersonID
+					c_1.PersonID = pat.PersonID
 				ORDER BY
-					per.FirstName DESC
+					c_1.FirstName DESC
 			) t1
 		WHERE
 			t1.Diagnosis LIKE '%with%' ESCAPE '~'
