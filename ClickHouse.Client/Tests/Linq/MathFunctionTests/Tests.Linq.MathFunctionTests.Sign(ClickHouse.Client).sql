@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t_1.c1
+	t.c1
 FROM
 	(
 		SELECT
-			Sign(t.MoneyValue) as c1
+			Sign(p.MoneyValue) as c1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> 0
+	t.c1 <> 0
 

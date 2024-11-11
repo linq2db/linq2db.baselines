@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t_1.c1
+	t.c1
 FROM
 	(
 		SELECT
-			Floor(Atan(toFloat64(t.MoneyValue) / toFloat64(15)) * toFloat64(15)) as c1
+			Floor(Atan(toFloat64(p.MoneyValue) / toFloat64(toDecimal64('15', 10))) * toFloat64(15)) as c1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> toFloat64(0.10000000000000001)
+	t.c1 <> toFloat64(0.10000000000000001)
 

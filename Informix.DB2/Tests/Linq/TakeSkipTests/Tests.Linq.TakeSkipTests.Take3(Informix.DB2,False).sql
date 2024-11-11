@@ -7,5 +7,5 @@ SELECT FIRST 3
 FROM
 	Child ch
 WHERE
-	(ch.ChildID > 3 OR ch.ChildID < 4)
+	ch.ChildID > 3 OR ch.ChildID < 4
 

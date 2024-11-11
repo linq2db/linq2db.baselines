@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(3))
+	`p`.`ID`
 FROM
 	`LinqDataTypes` `p`
 WHERE
