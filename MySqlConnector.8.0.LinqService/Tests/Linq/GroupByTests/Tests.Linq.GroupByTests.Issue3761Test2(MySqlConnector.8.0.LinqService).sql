@@ -22,7 +22,7 @@ DECLARE @DATUM Datetime -- DateTime
 SET     @DATUM = '2019-01-01'
 
 SELECT
-	`t1`.`Year_1`,
+	`t1`.`Year_2`,
 	`t1`.`Month_1`,
 	SUM(`t1`.`SKUPAJ`)
 FROM
@@ -36,6 +36,7 @@ FROM
 				WHEN `n`.`DATUM` IS NOT NULL THEN `n`.`DATUM`
 				ELSE '0001-01-01'
 			END) as `Month_1`,
+			CAST(0 AS SIGNED) as `Year_2`,
 			`n`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n`
@@ -47,7 +48,7 @@ GROUP BY
 	`t1`.`Month_1`
 UNION ALL
 SELECT
-	`t2`.`Year_1`,
+	`t2`.`Year_2`,
 	`t2`.`Month_1`,
 	SUM(`t2`.`SKUPAJ`)
 FROM
@@ -61,6 +62,7 @@ FROM
 				WHEN `n_1`.`DATUM` IS NOT NULL THEN `n_1`.`DATUM`
 				ELSE '0001-01-01'
 			END) as `Month_1`,
+			CAST(0 AS SIGNED) as `Year_2`,
 			`n_1`.`SKUPAJ`
 		FROM
 			`Issue3761Table` `n_1`

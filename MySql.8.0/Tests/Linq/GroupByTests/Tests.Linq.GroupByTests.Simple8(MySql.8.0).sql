@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t1`.`ChildID`
+	NULL
 FROM
 	`GrandChild` `t1`
 GROUP BY
