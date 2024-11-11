@@ -19,7 +19,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE TABLE "Issue4671Entity"
 			(
 				"Id"    Int  NOT NULL,
-				"Value" Int  NOT NULL
+				"Value" Int  NOT NULL,
+
+				CONSTRAINT "PK_Issue4671Entity" PRIMARY KEY ("Id")
 			)
 		';
 	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4671Entity')) THEN
@@ -45,7 +47,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "Issue4671EntityTMP"
 			(
 				"Id"    Int  NOT NULL,
-				"Value" Int  NOT NULL
+				"Value" Int  NOT NULL,
+
+				CONSTRAINT "PK_Issue4671EntityTMP" PRIMARY KEY ("Id")
 			)
 			ON COMMIT PRESERVE ROWS
 		';
