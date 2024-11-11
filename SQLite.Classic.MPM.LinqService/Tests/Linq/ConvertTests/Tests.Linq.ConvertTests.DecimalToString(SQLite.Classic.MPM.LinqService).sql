@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CAST([p].[MoneyValue] AS NVarChar(31))
+	RTRIM(REPLACE(CAST([p].[MoneyValue] AS NVarChar(31)), ',', '.'), '0.')
 FROM
 	[LinqDataTypes] [p]
 WHERE

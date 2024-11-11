@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ChildID]
+	NULL
 FROM
 	[GrandChild] [t1]
 GROUP BY
