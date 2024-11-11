@@ -36,7 +36,9 @@ BEGIN
 		CREATE TABLE "Issue4654Customer"
 		(
 			"Id"   Int           NOT NULL,
-			"Name" VarChar(255)      NULL
+			"Name" VarChar(255)      NULL,
+
+			CONSTRAINT "PK_Issue4654Customer" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION
@@ -100,7 +102,9 @@ BEGIN
 			"Id"          Int           NOT NULL,
 			"ProductName" VarChar(255)      NULL,
 			"Quantity"    Int           NOT NULL,
-			"CustomerId"  Int           NOT NULL
+			"CustomerId"  Int           NOT NULL,
+
+			CONSTRAINT "PK_Issue4654Order" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION
@@ -163,7 +167,9 @@ BEGIN
 		(
 			"Id"    Int              NOT NULL,
 			"Name"  VarChar(255)         NULL,
-			"Price" Decimal(28, 10)  NOT NULL
+			"Price" Decimal(28, 10)  NOT NULL,
+
+			CONSTRAINT "PK_Issue4654Product" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION

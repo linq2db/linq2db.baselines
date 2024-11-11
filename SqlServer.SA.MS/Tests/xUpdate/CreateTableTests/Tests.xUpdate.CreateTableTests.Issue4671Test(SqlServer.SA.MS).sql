@@ -10,7 +10,9 @@ IF (OBJECT_ID(N'[Issue4671Entity]', N'U') IS NULL)
 	CREATE TABLE [Issue4671Entity]
 	(
 		[Id]    Int  NOT NULL IDENTITY,
-		[Value] Int  NOT NULL
+		[Value] Int  NOT NULL,
+
+		CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
@@ -19,7 +21,9 @@ BeforeExecute
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL
+	[Value] Int  NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute

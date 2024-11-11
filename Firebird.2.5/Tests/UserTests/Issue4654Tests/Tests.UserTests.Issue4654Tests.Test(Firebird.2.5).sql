@@ -19,7 +19,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE TABLE "Issue4654Customer"
 			(
 				"Id"   Int                                     NOT NULL,
-				"Name" VarChar(255) CHARACTER SET UNICODE_FSS
+				"Name" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_Issue4654Customer" PRIMARY KEY ("Id")
 			)
 		';
 	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4654Customer')) THEN
@@ -59,7 +61,9 @@ EXECUTE BLOCK AS BEGIN
 				"Id"          Int                                     NOT NULL,
 				"ProductName" VarChar(255) CHARACTER SET UNICODE_FSS,
 				"Quantity"    Int                                     NOT NULL,
-				"CustomerId"  Int                                     NOT NULL
+				"CustomerId"  Int                                     NOT NULL,
+
+				CONSTRAINT "PK_Issue4654Order" PRIMARY KEY ("Id")
 			)
 		';
 	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4654Order')) THEN
@@ -98,7 +102,9 @@ EXECUTE BLOCK AS BEGIN
 			(
 				"Id"    Int                                     NOT NULL,
 				"Name"  VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Price" Decimal(18, 10)                         NOT NULL
+				"Price" Decimal(18, 10)                         NOT NULL,
+
+				CONSTRAINT "PK_Issue4654Product" PRIMARY KEY ("Id")
 			)
 		';
 	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4654Product')) THEN

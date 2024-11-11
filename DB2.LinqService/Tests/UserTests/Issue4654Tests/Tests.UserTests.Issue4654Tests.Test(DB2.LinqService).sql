@@ -15,7 +15,9 @@ BEGIN
 		CREATE TABLE "Issue4654Customer"
 		(
 			"Id"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-			"Name" NVarChar(255)                                  NULL
+			"Name" NVarChar(255)                                  NULL,
+
+			CONSTRAINT "PK_Issue4654Customer" PRIMARY KEY ("Id")
 		)
 	';
 END
@@ -39,7 +41,9 @@ BEGIN
 			"Id"          Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
 			"ProductName" NVarChar(255)                                  NULL,
 			"Quantity"    Int                                        NOT NULL,
-			"CustomerId"  Int                                        NOT NULL
+			"CustomerId"  Int                                        NOT NULL,
+
+			CONSTRAINT "PK_Issue4654Order" PRIMARY KEY ("Id")
 		)
 	';
 END
@@ -62,7 +66,9 @@ BEGIN
 		(
 			"Id"    Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
 			"Name"  NVarChar(255)                                  NULL,
-			"Price" Decimal                                    NOT NULL
+			"Price" Decimal                                    NOT NULL,
+
+			CONSTRAINT "PK_Issue4654Product" PRIMARY KEY ("Id")
 		)
 	';
 END

@@ -9,7 +9,9 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS "Issue4654Customer"
 (
 	"Id"   SERIAL  NOT NULL,
-	"Name" text        NULL
+	"Name" text        NULL,
+
+	CONSTRAINT "PK_Issue4654Customer" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -25,7 +27,9 @@ CREATE TABLE IF NOT EXISTS "Issue4654Order"
 	"Id"          SERIAL  NOT NULL,
 	"ProductName" text        NULL,
 	"Quantity"    Int     NOT NULL,
-	"CustomerId"  Int     NOT NULL
+	"CustomerId"  Int     NOT NULL,
+
+	CONSTRAINT "PK_Issue4654Order" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
@@ -40,7 +44,9 @@ CREATE TABLE IF NOT EXISTS "Issue4654Product"
 (
 	"Id"    SERIAL   NOT NULL,
 	"Name"  text         NULL,
-	"Price" decimal  NOT NULL
+	"Price" decimal  NOT NULL,
+
+	CONSTRAINT "PK_Issue4654Product" PRIMARY KEY ("Id")
 )
 
 BeforeExecute
