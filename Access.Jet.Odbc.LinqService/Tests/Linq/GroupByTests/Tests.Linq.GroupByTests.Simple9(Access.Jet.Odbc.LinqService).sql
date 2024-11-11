@@ -2,7 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[t1].[ChildID]
+	IIF(False, 0, NULL)
 FROM
 	[GrandChild] [t1]
 GROUP BY
