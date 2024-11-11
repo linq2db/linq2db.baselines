@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[t1].[ChildID]
+	NULL as [ChildID]
 FROM
 	[GrandChild] [t1]
 GROUP BY

@@ -14,13 +14,5 @@ CREATE TABLE [DynamicColumnsTestTable]
 BeforeExecute
 -- SqlCe
 
-SELECT
-	COUNT(*) as [COUNT_1]
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- SqlCe
-
 DROP TABLE [DynamicColumnsTestTable]
 
