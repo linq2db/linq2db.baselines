@@ -15,7 +15,9 @@ BEGIN
 		CREATE TABLE "Issue4671Entity"
 		(
 			"Id"    Int GENERATED ALWAYS AS IDENTITY NOT NULL,
-			"Value" Int                              NOT NULL
+			"Value" Int                              NOT NULL,
+
+			CONSTRAINT "PK_Issue4671Entity" PRIMARY KEY ("Id")
 		)
 	';
 END
