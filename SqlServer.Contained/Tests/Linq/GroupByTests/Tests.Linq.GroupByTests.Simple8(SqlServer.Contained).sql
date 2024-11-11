@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[ChildID]
+	NULL
 FROM
 	[GrandChild] [t1]
 GROUP BY

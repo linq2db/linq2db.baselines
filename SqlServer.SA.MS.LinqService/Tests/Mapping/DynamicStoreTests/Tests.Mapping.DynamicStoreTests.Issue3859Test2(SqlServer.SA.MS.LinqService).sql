@@ -15,13 +15,5 @@ IF (OBJECT_ID(N'[DynamicColumnsTestTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-SELECT
-	COUNT(*)
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [DynamicColumnsTestTable]
 
