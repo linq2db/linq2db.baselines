@@ -2,12 +2,13 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."ChildID"
+	"t2"."ChildID_1"
 FROM
 	(
 		SELECT
 			"t1"."ParentID" + 1 as "ParentID",
-			"t1"."ChildID"
+			"t1"."ChildID",
+			CAST(NULL AS Int) as "ChildID_1"
 		FROM
 			"GrandChild" "t1"
 	) "t2"

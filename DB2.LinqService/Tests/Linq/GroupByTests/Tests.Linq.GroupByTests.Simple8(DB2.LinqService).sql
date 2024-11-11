@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ChildID"
+	CAST(NULL AS Int)
 FROM
 	"GrandChild" "t1"
 GROUP BY
