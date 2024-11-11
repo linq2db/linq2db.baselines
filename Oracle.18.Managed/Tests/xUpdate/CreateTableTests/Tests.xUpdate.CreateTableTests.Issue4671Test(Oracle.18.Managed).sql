@@ -36,7 +36,9 @@ BEGIN
 		CREATE TABLE "Issue4671Entity"
 		(
 			"Id"    Int  NOT NULL,
-			"Value" Int  NOT NULL
+			"Value" Int  NOT NULL,
+
+			CONSTRAINT "PK_Issue4671Entity" PRIMARY KEY ("Id")
 		)
 	';
 EXCEPTION
@@ -68,7 +70,9 @@ BEGIN
 		CREATE GLOBAL TEMPORARY TABLE "Issue4671EntityTMP"
 		(
 			"Id"    Int  NOT NULL,
-			"Value" Int  NOT NULL
+			"Value" Int  NOT NULL,
+
+			CONSTRAINT "PK_Issue4671EntityTMP" PRIMARY KEY ("Id")
 		)
 		ON COMMIT PRESERVE ROWS
 	';
