@@ -9,7 +9,9 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS Issue4671Entity
 (
 	Id      SERIAL  NOT NULL,
-	"Value" Int     NOT NULL
+	"Value" Int     NOT NULL,
+
+	PRIMARY KEY (Id)
 )
 
 BeforeExecute
@@ -18,7 +20,9 @@ BeforeExecute
 CREATE TEMP TABLE Issue4671EntityTMP
 (
 	Id      SERIAL  NOT NULL,
-	"Value" Int     NOT NULL
+	"Value" Int     NOT NULL,
+
+	PRIMARY KEY (Id)
 )
 
 BeforeExecute
