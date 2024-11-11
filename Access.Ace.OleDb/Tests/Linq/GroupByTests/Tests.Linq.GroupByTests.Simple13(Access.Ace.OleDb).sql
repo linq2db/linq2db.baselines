@@ -2,12 +2,13 @@
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[t2].[ChildID]
+	[t2].[ChildID_1]
 FROM
 	(
 		SELECT
 			[t1].[ParentID] + 1 as [ParentID],
-			[t1].[ChildID]
+			[t1].[ChildID],
+			IIF(False, 0, NULL) as [ChildID_1]
 		FROM
 			[GrandChild] [t1]
 	) [t2]
