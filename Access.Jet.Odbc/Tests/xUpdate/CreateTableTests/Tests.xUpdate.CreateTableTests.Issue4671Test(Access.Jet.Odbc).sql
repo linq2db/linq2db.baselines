@@ -9,7 +9,9 @@ BeforeExecute
 CREATE TABLE [Issue4671Entity]
 (
 	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL
+	[Value] Int  NOT NULL,
+
+	CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -18,7 +20,9 @@ BeforeExecute
 CREATE TABLE [Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL
+	[Value] Int  NOT NULL,
+
+	CONSTRAINT [PK_Issue4671EntityTMP] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute

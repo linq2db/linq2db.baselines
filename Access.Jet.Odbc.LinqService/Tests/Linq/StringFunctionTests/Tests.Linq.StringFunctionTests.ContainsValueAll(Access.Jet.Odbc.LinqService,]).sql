@@ -1,28 +1,20 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @s NVarChar(7) -- String
-SET     @s = '123]456'
-DECLARE @toTest NVarChar(3) -- String
-SET     @toTest = '%]%'
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND ? LIKE ?
+	[p].[PersonID] = 1 AND '123]456' LIKE '%]%'
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @s NVarChar(7) -- String
-SET     @s = '123]456'
-DECLARE @toTest NVarChar(3) -- String
-SET     @toTest = '%]%'
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND ? NOT LIKE ?
+	[p].[PersonID] = 1 AND '123]456' NOT LIKE '%]%'
 
