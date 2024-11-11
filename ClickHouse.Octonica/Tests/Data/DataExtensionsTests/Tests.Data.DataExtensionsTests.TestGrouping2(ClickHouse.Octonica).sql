@@ -17,6 +17,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	g_1.FirstName,
 	g_1.FirstName
 FROM
 	Person g_1
