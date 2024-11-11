@@ -110,8 +110,10 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[p].[TargetName],
+	IIF([p].[TargetName] = N'None', 1, 0),
 	[p].[Id],
+	[p].[TargetName],
+	IIF([p].[TargetName] = N'bda.Requests', 1, 0),
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]
