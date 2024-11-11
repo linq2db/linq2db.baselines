@@ -12,7 +12,9 @@ IF (OBJECT_ID(N'Issue4671Entity') IS NULL)
 		CREATE TABLE [Issue4671Entity]
 		(
 			[Id]    Int IDENTITY NOT NULL,
-			[Value] Int          NOT NULL
+			[Value] Int          NOT NULL,
+
+			CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
 		)
 	')
 
@@ -22,7 +24,9 @@ BeforeExecute
 CREATE TABLE #Issue4671EntityTMP
 (
 	[Id]    Int IDENTITY NOT NULL,
-	[Value] Int          NOT NULL
+	[Value] Int          NOT NULL,
+
+	CONSTRAINT [PK_Issue4671EntityTMP] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
