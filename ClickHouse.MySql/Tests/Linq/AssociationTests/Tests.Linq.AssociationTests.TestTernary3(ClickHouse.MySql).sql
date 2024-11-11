@@ -2,6 +2,11 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	CASE
+		WHEN a_Middle.ParentID IS NOT NULL AND a_Bottom1.ParentID IS NOT NULL
+			THEN true
+		ELSE false
+	END,
 	a_Bottom1.ParentID,
 	a_Bottom1.ChildID,
 	a_Bottom1.GrandChildID

@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ChildID
+	toInt32(NULL)
 FROM
 	GrandChild t1
 GROUP BY

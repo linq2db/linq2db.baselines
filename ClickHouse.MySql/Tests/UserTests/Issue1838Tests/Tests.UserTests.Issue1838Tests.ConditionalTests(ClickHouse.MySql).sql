@@ -69,7 +69,7 @@ SELECT
 	END,
 	CASE
 		WHEN i.SettlementTotalOnIssue IS NOT NULL THEN i.SettlementTotalOnIssue
-		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
+		WHEN ia.InvoiceID IS NOT NULL THEN ia.Total
 		ELSE NULL
 	END
 FROM
@@ -77,7 +77,7 @@ FROM
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				g_1.InvoiceID as InvoiceId,
+				g_1.InvoiceID as InvoiceID,
 				sum(ili.BillingAmountOverride) as Total
 			FROM
 				Invoice g_1
@@ -86,7 +86,7 @@ FROM
 				ili.Suppressed = false
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceId = i.InvoiceID
+		) ia ON ia.InvoiceID = i.InvoiceID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -112,7 +112,7 @@ SELECT
 		ELSE r.ReferenceNumber
 	END,
 	CASE
-		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
+		WHEN ia.InvoiceID IS NOT NULL THEN ia.Total
 		ELSE NULL
 	END
 FROM
@@ -120,7 +120,7 @@ FROM
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				g_1.InvoiceID as InvoiceId,
+				g_1.InvoiceID as InvoiceID,
 				sum(ili.BillingAmountOverride) as Total
 			FROM
 				Invoice g_1
@@ -129,7 +129,7 @@ FROM
 				ili.Suppressed = false
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceId = i.InvoiceID
+		) ia ON ia.InvoiceID = i.InvoiceID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

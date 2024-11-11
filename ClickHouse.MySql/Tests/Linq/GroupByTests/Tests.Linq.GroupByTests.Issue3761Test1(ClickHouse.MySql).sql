@@ -22,7 +22,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Year_1,
+	t1.Year_2,
 	t1.Month_1,
 	sumOrNull(t1.SKUPAJ)
 FROM
@@ -36,6 +36,7 @@ FROM
 				WHEN n.DATUM IS NOT NULL THEN n.DATUM
 				ELSE toDateTime64('0001-01-01 00:00:00.0000000', 7)
 			END) as Month_1,
+			0 as Year_2,
 			n.SKUPAJ as SKUPAJ
 		FROM
 			Issue3761Table n
