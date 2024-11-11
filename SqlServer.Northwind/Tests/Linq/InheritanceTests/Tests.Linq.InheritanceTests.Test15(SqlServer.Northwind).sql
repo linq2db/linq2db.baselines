@@ -2,7 +2,6 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[p].[Discontinued],
 	[p].[ProductID],
 	[p].[ProductName],
 	[p].[SupplierID],
@@ -11,7 +10,8 @@ SELECT
 	[p].[UnitPrice],
 	[p].[UnitsInStock],
 	[p].[UnitsOnOrder],
-	[p].[ReorderLevel]
+	[p].[ReorderLevel],
+	[p].[Discontinued]
 FROM
 	[Products] [p]
 WHERE
