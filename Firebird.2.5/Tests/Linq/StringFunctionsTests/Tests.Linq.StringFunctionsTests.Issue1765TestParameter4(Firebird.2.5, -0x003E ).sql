@@ -40,20 +40,6 @@ SELECT 3,'Z1',NULL,NULL,'Z4' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @separator VarChar(4) -- String
-SET     @separator = ' -> '
-
-SELECT
-	MAX("g_1"."Value4"),
-	LIST("g_1"."Value4", CAST(@separator AS VARCHAR(4)))
-FROM
-	"SampleClass" "g_1"
-GROUP BY
-	"g_1"."Id",
-	"g_1"."Value4"
-
-BeforeExecute
--- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN

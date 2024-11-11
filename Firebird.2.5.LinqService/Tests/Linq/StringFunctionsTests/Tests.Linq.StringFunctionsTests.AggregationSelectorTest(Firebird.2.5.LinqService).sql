@@ -116,17 +116,6 @@ VALUES
 BeforeExecute
 -- Firebird.2.5 Firebird
 
-SELECT
-	LIST("g_1"."Value1", ' -> ')
-FROM
-	"SampleClass" "g_1"
-GROUP BY
-	"g_1"."Id",
-	"g_1"."Value1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';

@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."ChildID"
+	NULL
 FROM
 	"GrandChild" "t1"
 GROUP BY
