@@ -87,9 +87,9 @@ FROM
 				COUNT(*) as [count_1],
 				[t3].[Id],
 				[t3].[group_1],
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 				[t3].[hours],
-				[t3].[minutes],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents]
+				[t3].[minutes]
 			FROM
 				(
 					SELECT
