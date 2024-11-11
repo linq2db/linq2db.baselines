@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ChildID
+	NULL::Int
 FROM
 	GrandChild t1
 GROUP BY

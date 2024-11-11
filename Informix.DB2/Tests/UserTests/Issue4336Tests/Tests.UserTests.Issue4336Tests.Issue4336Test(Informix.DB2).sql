@@ -128,13 +128,13 @@ FROM
 				LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
 				LEFT JOIN (
 					SELECT
-						vsp.OrderPeriodId,
-						vsp.ProductId,
-						COALESCE(vsp.Quantity,0) as Quantity
+						COALESCE(vsp.Quantity,0) as Quantity,
+						vsp.Id,
+						vsp.ProductId
 					FROM
 						(
 							SELECT
-								agroup.Id as OrderPeriodId,
+								agroup.Id,
 								oi.ProductId,
 								SUM(COALESCE(oi.Quantity,0)) as Quantity
 							FROM
@@ -145,7 +145,7 @@ FROM
 								agroup.Id,
 								oi.ProductId
 						) vsp
-				) vsp_1 ON vsp_1.OrderPeriodId = op.Id AND vsp_1.ProductId = pop.ProductId
+				) vsp_1 ON vsp_1.Id = op.Id AND vsp_1.ProductId = pop.ProductId
 	) r
 		LEFT JOIN (
 			SELECT
@@ -166,7 +166,7 @@ FROM
 				) sub
 					LEFT JOIN (
 						SELECT
-							agroup_1.Id as OrderPeriodId,
+							agroup_1.Id,
 							p.CategoryId,
 							SUM(oi_1.Quantity) as Quantity
 						FROM
@@ -177,7 +177,7 @@ FROM
 						GROUP BY
 							agroup_1.Id,
 							p.CategoryId
-					) vsopc ON vsopc.OrderPeriodId = sub.Id AND vsopc.CategoryId = sub.Id_1
+					) vsopc ON vsopc.Id = sub.Id AND vsopc.CategoryId = sub.Id_1
 		) v2_1 ON v2_1.Id = r.OrderPeriodId AND v2_1.Id_1 = r.CategoryId
 
 BeforeExecute

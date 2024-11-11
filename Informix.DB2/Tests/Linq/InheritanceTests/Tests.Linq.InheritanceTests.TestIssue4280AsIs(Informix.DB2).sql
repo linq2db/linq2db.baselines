@@ -68,10 +68,18 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.DeviceType,
+	CASE
+		WHEN t1.DeviceType = 'TV' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	t1.Id,
 	t1.SerialNumber,
-	t1.Location
+	t1.DeviceType,
+	t1.Location,
+	CASE
+		WHEN t1.DeviceType = 'DISPLAY' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN
 FROM
 	Issue4280 t1
 ORDER BY
@@ -118,10 +126,18 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.DeviceType,
+	CASE
+		WHEN t1.DeviceType = 'TV' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	t1.Id,
 	t1.SerialNumber,
-	t1.Location
+	t1.DeviceType,
+	t1.Location,
+	CASE
+		WHEN t1.DeviceType = 'DISPLAY' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN
 FROM
 	Issue4280 t1
 ORDER BY
