@@ -24,7 +24,7 @@ DECLARE @DATUM DateTime2
 SET     @DATUM = CAST('2019-01-01T00:00:00.0000000' AS DATETIME2)
 
 SELECT
-	[t1].[Year_1],
+	[t1].[Year_2],
 	[t1].[Month_1],
 	SUM([t1].[SKUPAJ])
 FROM
@@ -38,6 +38,7 @@ FROM
 				WHEN [n].[DATUM] IS NOT NULL THEN [n].[DATUM]
 				ELSE CAST('0001-01-01T00:00:00.0000000' AS DATETIME2)
 			END) as [Month_1],
+			0 as [Year_2],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]

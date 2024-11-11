@@ -2,7 +2,7 @@
 -- SqlServer.2008
 
 SELECT
-	[t1].[ChildID]
+	NULL
 FROM
 	[GrandChild] [t1]
 GROUP BY
