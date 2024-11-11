@@ -10,7 +10,9 @@ IF (OBJECT_ID(N'[Issue4654Customer]', N'U') IS NULL)
 	CREATE TABLE [Issue4654Customer]
 	(
 		[Id]   Int             NOT NULL IDENTITY,
-		[Name] NVarChar(4000)      NULL
+		[Name] NVarChar(4000)      NULL,
+
+		CONSTRAINT [PK_Issue4654Customer] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
@@ -27,7 +29,9 @@ IF (OBJECT_ID(N'[Issue4654Order]', N'U') IS NULL)
 		[Id]          Int             NOT NULL IDENTITY,
 		[ProductName] NVarChar(4000)      NULL,
 		[Quantity]    Int             NOT NULL,
-		[CustomerId]  Int             NOT NULL
+		[CustomerId]  Int             NOT NULL,
+
+		CONSTRAINT [PK_Issue4654Order] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
@@ -43,7 +47,9 @@ IF (OBJECT_ID(N'[Issue4654Product]', N'U') IS NULL)
 	(
 		[Id]    Int             NOT NULL IDENTITY,
 		[Name]  NVarChar(4000)      NULL,
-		[Price] Decimal         NOT NULL
+		[Price] Decimal         NOT NULL,
+
+		CONSTRAINT [PK_Issue4654Product] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 BeforeExecute
