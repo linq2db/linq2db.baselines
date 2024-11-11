@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`ChildID`
+	NULL
 FROM
 	`GrandChild` `t1`
 GROUP BY

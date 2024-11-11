@@ -2,12 +2,13 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t2`.`ChildID`
+	`t2`.`ChildID_1`
 FROM
 	(
 		SELECT
 			`t1`.`ParentID` + 1 as `ParentID`,
-			`t1`.`ChildID`
+			`t1`.`ChildID`,
+			NULL as `ChildID_1`
 		FROM
 			`GrandChild` `t1`
 	) `t2`
