@@ -50,6 +50,10 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
+	CASE
+		WHEN t1.itemType = 1 THEN true
+		ELSE false
+	END,
 	t1.my_col1,
 	t1.my_other_col,
 	t1.itemType
