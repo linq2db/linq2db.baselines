@@ -30,19 +30,6 @@ END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @parentId Int32
-SET     @parentId = 12
-
-SELECT
-	i."Name",
-	i."ParentId"
-FROM
-	"Issue4192TableNotNullable" i
-WHERE
-	i."ParentId" = :parentId
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue4192TableNotNullable"';

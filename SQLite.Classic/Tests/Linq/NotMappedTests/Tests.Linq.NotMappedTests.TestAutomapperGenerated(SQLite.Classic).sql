@@ -119,6 +119,11 @@ SELECT
 	[a_Association1].[Id],
 	[a_Association1].[Value],
 	[a_Association1].[ParentId],
+	CASE
+		WHEN [a_Association1].[Id] IS NOT NULL AND [a_Association2].[Id] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	[a_Association2].[Id],
 	[a_Association2].[Value],
 	[a_Association2].[ParentId]

@@ -14,13 +14,5 @@ CREATE TABLE IF NOT EXISTS `DynamicColumnsTestTable`
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT
-	COUNT(*)
-FROM
-	`DynamicColumnsTestTable` `x`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `DynamicColumnsTestTable`
 

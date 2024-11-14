@@ -30,14 +30,6 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-SELECT
-	COUNT(*)
-FROM
-	"DynamicColumnsTestTable" x
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DynamicColumnsTestTable"';
 EXCEPTION

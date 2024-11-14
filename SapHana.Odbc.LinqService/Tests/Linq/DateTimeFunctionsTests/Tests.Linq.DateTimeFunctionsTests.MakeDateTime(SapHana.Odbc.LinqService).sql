@@ -2,9 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	To_Timestamp('2010-' || LPad("t"."ID", 2, '0') || '-01 00:00:00.000')
+	"t"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			To_Timestamp('2010-' || LPad("p"."ID", 2, '0') || '-01 00:00:00.000') as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	Year(To_Timestamp('2010-' || LPad("t"."ID", 2, '0') || '-01 00:00:00.000')) = 2010
+	Year("t"."c1") = 2010
 

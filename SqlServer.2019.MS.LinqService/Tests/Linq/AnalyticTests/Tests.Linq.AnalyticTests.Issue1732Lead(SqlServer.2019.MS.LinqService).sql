@@ -108,12 +108,18 @@ DECLARE @group Int -- Int32
 SET     @group = 7
 
 SELECT
-	[p].[Id],
-	LEAD([p].[Id], 1, -1) OVER(ORDER BY [p].[Order])
+	[p_1].[Id],
+	LEAD([p_1].[Id], 1, -1) OVER(ORDER BY [p_1].[Order_1])
 FROM
-	[Position] [p]
-WHERE
-	[p].[Group] = @group
+	(
+		SELECT
+			[p].[Id],
+			[p].[Order] as [Order_1]
+		FROM
+			[Position] [p]
+		WHERE
+			[p].[Group] = @group
+	) [p_1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

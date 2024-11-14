@@ -15,19 +15,6 @@ IF (OBJECT_ID(N'[Issue4192TableNotNullable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @parentId Int -- Int32
-SET     @parentId = 12
-
-SELECT
-	[i].[Name],
-	[i].[ParentId]
-FROM
-	[Issue4192TableNotNullable] [i]
-WHERE
-	[i].[ParentId] = @parentId
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue4192TableNotNullable]
 

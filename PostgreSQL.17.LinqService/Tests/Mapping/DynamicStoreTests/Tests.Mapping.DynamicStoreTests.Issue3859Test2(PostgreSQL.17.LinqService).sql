@@ -14,13 +14,5 @@ CREATE TABLE IF NOT EXISTS "DynamicColumnsTestTable"
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-SELECT
-	COUNT(*)
-FROM
-	"DynamicColumnsTestTable" x
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 DROP TABLE IF EXISTS "DynamicColumnsTestTable"
 

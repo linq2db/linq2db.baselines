@@ -2,8 +2,17 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
 	[t1].[Gender],
+	[t1].[LastName],
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
@@ -15,10 +24,18 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	CASE
+		WHEN [t1].[Gender] = 'F' THEN 1
+		ELSE 0
+	END,
 	[t1].[PersonID],
 	[t1].[Gender],
-	[t1].[FirstName],
-	[t1].[LastName]
+	[t1].[LastName],
+	CASE
+		WHEN [t1].[Gender] = 'M' THEN 1
+		ELSE 0
+	END,
+	[t1].[FirstName]
 FROM
 	[Person] [t1]
 WHERE
