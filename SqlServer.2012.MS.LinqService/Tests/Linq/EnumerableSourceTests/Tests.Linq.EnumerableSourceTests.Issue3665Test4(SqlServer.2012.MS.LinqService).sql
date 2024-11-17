@@ -2,13 +2,12 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[x].[PersonID],
-	[y].[value__]
+	[x].[PersonID] + [y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (VALUES
 			(1), (3)
-		) [y]([value__])
+		) [y]([item])
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

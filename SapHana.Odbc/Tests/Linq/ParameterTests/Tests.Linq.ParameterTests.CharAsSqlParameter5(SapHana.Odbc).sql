@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @s1 NChar(1) -- StringFixedLength
-SET     @s1 = char(0)
 
 SELECT
-	?
+	char(0)
 FROM DUMMY
 
