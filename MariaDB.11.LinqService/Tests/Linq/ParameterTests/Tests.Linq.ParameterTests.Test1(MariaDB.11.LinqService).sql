@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @dt Datetime -- DateTime
-SET     @dt = '2020-02-29 17:54:55.123'
 
 SELECT
 	`t`.`ID`,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`DateTimeValue` = @dt
+	`t`.`DateTimeValue` = '2020-02-29 17:54:55.123'
 

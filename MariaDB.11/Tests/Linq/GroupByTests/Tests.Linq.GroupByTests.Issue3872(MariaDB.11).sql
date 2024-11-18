@@ -20,8 +20,8 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	MAX(`r`.`PersonID`),
 	CAST('MAX' AS CHAR(255)),
+	MAX(`r`.`PersonID`),
 	NULL
 FROM
 	`Person` `r`
