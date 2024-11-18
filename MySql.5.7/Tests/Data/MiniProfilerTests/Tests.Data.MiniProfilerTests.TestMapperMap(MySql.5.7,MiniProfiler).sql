@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 --  MySql.5.7.MySql.Data MySql57
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -13,7 +13,7 @@ LIMIT 2
 
 BeforeExecute
 --  MySql.5.7.MySql.Data MySql57
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -26,7 +26,7 @@ LIMIT 2
 
 BeforeExecute
 --  MySql.5.7.MySql.Data MySql57
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT

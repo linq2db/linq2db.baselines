@@ -2,16 +2,11 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat(COUNT(*), ' items have not been processed, e.g. #', MIN(`s_1`.`ID`), '.')
+	Concat(COUNT(*), ' items have not been processed, e.g. #', MIN(`s`.`PersonID`), '.')
 FROM
-	(
-		SELECT
-			`s`.`PersonID` as `ID`
-		FROM
-			`Person` `s`
-		WHERE
-			`s`.`LastName` <> 'ERROR'
-		HAVING
-			COUNT(*) > 0
-	) `s_1`
+	`Person` `s`
+WHERE
+	`s`.`LastName` <> 'ERROR'
+HAVING
+	COUNT(*) > 0
 

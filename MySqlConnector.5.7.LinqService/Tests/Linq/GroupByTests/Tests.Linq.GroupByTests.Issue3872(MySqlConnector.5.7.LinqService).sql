@@ -20,8 +20,8 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	MAX(`r`.`PersonID`),
 	CAST('MAX' AS CHAR(255)),
+	MAX(`r`.`PersonID`),
 	NULL
 FROM
 	`Person` `r`
