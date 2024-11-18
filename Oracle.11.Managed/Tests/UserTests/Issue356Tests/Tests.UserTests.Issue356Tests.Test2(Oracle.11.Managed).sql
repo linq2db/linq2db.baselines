@@ -47,4 +47,6 @@ FROM
 	) t5
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t5."ParentID"
 

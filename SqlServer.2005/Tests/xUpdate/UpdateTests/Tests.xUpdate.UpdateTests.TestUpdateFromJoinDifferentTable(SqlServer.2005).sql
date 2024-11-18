@@ -66,26 +66,24 @@ BeforeExecute
 -- SqlServer.2005
 
 UPDATE
-	[u]
+	[t2]
 SET
-	[u].[col1] = [x].[col1],
-	[u].[col2] = [x].[col2],
-	[u].[col3] = REPLACE([x].[col3], N'auth.', N''),
-	[u].[col4] = [x].[col4],
-	[u].[col5] = CASE
+	[t2].[col1] = [x].[col1],
+	[t2].[col2] = [x].[col2],
+	[t2].[col3] = REPLACE([x].[col3], N'auth.', N''),
+	[t2].[col4] = [x].[col4],
+	[t2].[col5] = CASE
 		WHEN [x].[col3] = N'empty' THEN N'1'
 		ELSE N'0'
 	END,
-	[u].[col6] = CASE
+	[t2].[col6] = CASE
 		WHEN [x].[col3] = N'empty' THEN N''
 		ELSE CAST([y1].[id] AS NVarChar(11))
 	END
 FROM
-	[gt_s_one_target] [u],
 	[gt_s_one] [x]
+		INNER JOIN [gt_s_one_target] [t2] ON [x].[id] = [t2].[id]
 		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
-WHERE
-	[x].[id] = [u].[id]
 
 BeforeExecute
 -- SqlServer.2005

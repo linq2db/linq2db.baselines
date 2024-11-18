@@ -67,9 +67,9 @@ INSERT INTO [DestinationTable]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,

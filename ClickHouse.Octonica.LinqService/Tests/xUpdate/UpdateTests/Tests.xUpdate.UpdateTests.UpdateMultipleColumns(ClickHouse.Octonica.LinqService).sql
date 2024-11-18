@@ -21,7 +21,25 @@ ALTER TABLE
 	LinqDataTypes
 UPDATE
 	MoneyValue = toDecimal64('2000', 4),
-	toInt32(SmallIntValue) = 200
+	SmallIntValue = toInt16(200)
 WHERE
 	ID = 1001
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t.ID,
+	t.MoneyValue,
+	t.DateTimeValue,
+	t.BoolValue,
+	t.GuidValue,
+	t.BinaryValue,
+	t.SmallIntValue,
+	t.StringValue
+FROM
+	LinqDataTypes t
+WHERE
+	t.ID = 1001
+LIMIT 2
 

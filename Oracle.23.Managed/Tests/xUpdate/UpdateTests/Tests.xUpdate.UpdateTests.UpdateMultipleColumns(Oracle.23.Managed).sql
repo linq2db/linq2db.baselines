@@ -29,7 +29,7 @@ UPDATE
 	"LinqDataTypes" t
 SET
 	"MoneyValue" = 2000,
-	"SmallIntValue" = CAST(200 AS SmallInt)
+	"SmallIntValue" = 200
 WHERE
 	t.ID = :ID
 

@@ -16,6 +16,6 @@ FROM
 WHERE
 	"x"."FirstName" STARTING WITH 'J'
 ORDER BY
-	"x"."PersonID"
+	"x"."PersonID" DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 

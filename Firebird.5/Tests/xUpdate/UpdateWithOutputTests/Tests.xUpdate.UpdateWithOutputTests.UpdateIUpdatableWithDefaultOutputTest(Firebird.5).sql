@@ -51,12 +51,12 @@ SET
 WHERE
 	"s"."Id" > 3
 RETURNING
-	OLD."Id",
-	OLD."Value",
-	OLD."ValueStr",
-	NEW."Id",
-	NEW."Value",
-	NEW."ValueStr"
+	"s"."Id",
+	"s"."Value",
+	"s"."ValueStr",
+	"s"."Id",
+	"s"."Value",
+	"s"."ValueStr"
 
 BeforeExecute
 -- Firebird.5 Firebird4

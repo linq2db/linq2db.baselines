@@ -82,9 +82,9 @@ ORDER BY
 	"e"."Id"
 ROWS @take
 RETURNING
-	OLD."Id",
-	OLD."Name",
-	OLD."NeedsUpdate"
+	"e"."Id",
+	"e"."Name",
+	"e"."NeedsUpdate"
 
 BeforeExecute
 -- Firebird.2.5 Firebird

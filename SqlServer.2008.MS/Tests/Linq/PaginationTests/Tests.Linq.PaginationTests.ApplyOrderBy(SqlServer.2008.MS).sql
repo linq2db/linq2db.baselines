@@ -347,6 +347,9 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+ORDER BY
+	[t1].[Id],
+	[t1].[Value_1] DESC
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

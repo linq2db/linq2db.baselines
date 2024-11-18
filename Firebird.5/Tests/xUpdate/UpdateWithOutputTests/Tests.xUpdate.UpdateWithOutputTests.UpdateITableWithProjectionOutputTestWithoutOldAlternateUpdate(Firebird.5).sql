@@ -130,7 +130,7 @@ WHERE
 			("DestinationTable"."ValueStr" = "t"."ValueStr" OR "DestinationTable"."ValueStr" IS NULL AND "t"."ValueStr" IS NULL)
 	)
 RETURNING
-	NEW."Value"
+	"DestinationTable"."Value"
 
 BeforeExecute
 -- Firebird.5 Firebird4

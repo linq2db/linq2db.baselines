@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @defValue Int -- Int32
+SET     @defValue = 10
 
 SELECT
-	MIN([gr].[ParentID])
+	Coalesce(MIN([gr].[ParentID]), @defValue)
 FROM
 	[Parent] [gr]
 

@@ -13,7 +13,7 @@ VALUES
 (
 	:ID,
 	100,
-	CAST(200 AS SmallInt)
+	200
 )
 
 BeforeExecute

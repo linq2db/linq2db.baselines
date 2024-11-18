@@ -33,11 +33,13 @@ FROM
 				WHERE
 					x."FirstName" LIKE 'J%' ESCAPE '~'
 				ORDER BY
-					x."PersonID"
+					x."PersonID" DESC
 			) t1
 		WHERE
 			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip
+ORDER BY
+	t2.ID DESC
 

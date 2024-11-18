@@ -12,5 +12,5 @@ FROM
 WHERE
 	[x].[FirstName] LIKE 'J%'
 ORDER BY
-	[x].[PersonID]
+	[x].[PersonID] DESC
 

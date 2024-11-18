@@ -19,7 +19,7 @@ FROM
 			[x].[LastName],
 			[x].[MiddleName],
 			[x].[Gender],
-			ROW_NUMBER() OVER (ORDER BY [x].[PersonID]) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [x].[PersonID] DESC) as [RN]
 		FROM
 			[Person] [x]
 		WHERE
@@ -27,4 +27,6 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+ORDER BY
+	[t1].[ID] DESC
 

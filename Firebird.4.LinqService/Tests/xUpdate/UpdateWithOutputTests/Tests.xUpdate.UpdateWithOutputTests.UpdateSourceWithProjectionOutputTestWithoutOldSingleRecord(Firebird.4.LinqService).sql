@@ -231,7 +231,7 @@ SET
 WHERE
 	"s"."Id" = 3
 RETURNING
-	NEW."Value"
+	"s"."Value"
 
 BeforeExecute
 -- Firebird.4 Firebird4

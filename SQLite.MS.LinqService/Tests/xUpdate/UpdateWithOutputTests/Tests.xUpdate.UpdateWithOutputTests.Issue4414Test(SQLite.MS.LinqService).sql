@@ -42,8 +42,8 @@ SET
 FROM
 	(
 		SELECT
-			[x].[Name],
-			[x].[EmployeeId]
+			[x].[EmployeeId],
+			[x].[Name]
 		FROM
 			[Issue4193Person] [x]
 		WHERE

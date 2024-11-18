@@ -13,7 +13,7 @@ VALUES
 (
 	:ID,
 	100,
-	CAST(200 AS SmallInt)
+	200
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ SET     @id = 1001
 UPDATE
 	"LinqDataTypes" t
 SET
-	"SmallIntValue" = CAST(t."MoneyValue" AS SmallInt),
+	"SmallIntValue" = CAST(Floor(t."MoneyValue") AS SmallInt),
 	"MoneyValue" = CAST(t."SmallIntValue" AS Decimal(28, 10))
 WHERE
 	t.ID = :id
@@ -37,7 +37,7 @@ SET     @id = 1001
 UPDATE
 	"LinqDataTypes" t
 SET
-	"SmallIntValue" = CAST(t."MoneyValue" AS SmallInt),
+	"SmallIntValue" = CAST(Floor(t."MoneyValue") AS SmallInt),
 	"MoneyValue" = CAST(t."SmallIntValue" AS Decimal(28, 10))
 WHERE
 	t.ID = :id

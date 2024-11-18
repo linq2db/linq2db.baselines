@@ -10,10 +10,10 @@ SELECT
 FROM
 	(
 		SELECT
-			min(gr.ParentID) as Min_1,
-			max(gr.ParentID) as MAX_1,
-			avg(gr.ParentID) as AVG_1,
-			sum(gr.ParentID) as SUM_1,
+			minOrNull(gr.ParentID) as Min_1,
+			maxOrNull(gr.ParentID) as MAX_1,
+			avgOrNull(gr.ParentID) as AVG_1,
+			sumOrNull(gr.ParentID) as SUM_1,
 			COUNT(*) as COUNT_1
 		FROM
 			Parent gr
@@ -21,5 +21,105 @@ FROM
 			gr.ParentID = -1
 	) r
 WHERE
-	r.Min_1 <> 0
+	r.Min_1 <> 0 OR r.Min_1 IS NULL
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.MIN_1,
+	r.Max_1,
+	r.AVG_1,
+	r.SUM_1,
+	r.COUNT_1
+FROM
+	(
+		SELECT
+			maxOrNull(gr.ParentID) as Max_1,
+			minOrNull(gr.ParentID) as MIN_1,
+			avgOrNull(gr.ParentID) as AVG_1,
+			sumOrNull(gr.ParentID) as SUM_1,
+			COUNT(*) as COUNT_1
+		FROM
+			Parent gr
+		WHERE
+			gr.ParentID = -1
+	) r
+WHERE
+	r.Max_1 <> 0 OR r.Max_1 IS NULL
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.MIN_1,
+	r.MAX_1,
+	r.Avg_1,
+	r.SUM_1,
+	r.COUNT_1
+FROM
+	(
+		SELECT
+			avgOrNull(gr.ParentID) as Avg_1,
+			minOrNull(gr.ParentID) as MIN_1,
+			maxOrNull(gr.ParentID) as MAX_1,
+			sumOrNull(gr.ParentID) as SUM_1,
+			COUNT(*) as COUNT_1
+		FROM
+			Parent gr
+		WHERE
+			gr.ParentID = -1
+	) r
+WHERE
+	r.Avg_1 <> toFloat64(0) OR r.Avg_1 IS NULL
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.MIN_1,
+	r.MAX_1,
+	r.AVG_1,
+	r.Sum_1,
+	r.COUNT_1
+FROM
+	(
+		SELECT
+			sumOrNull(gr.ParentID) as Sum_1,
+			minOrNull(gr.ParentID) as MIN_1,
+			maxOrNull(gr.ParentID) as MAX_1,
+			avgOrNull(gr.ParentID) as AVG_1,
+			COUNT(*) as COUNT_1
+		FROM
+			Parent gr
+		WHERE
+			gr.ParentID = -1
+	) r
+WHERE
+	r.Sum_1 <> 0 OR r.Sum_1 IS NULL
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	r.MIN_1,
+	r.MAX_1,
+	r.AVG_1,
+	r.SUM_1,
+	r.Count_1
+FROM
+	(
+		SELECT
+			COUNT(*) as Count_1,
+			minOrNull(gr.ParentID) as MIN_1,
+			maxOrNull(gr.ParentID) as MAX_1,
+			avgOrNull(gr.ParentID) as AVG_1,
+			sumOrNull(gr.ParentID) as SUM_1
+		FROM
+			Parent gr
+		WHERE
+			gr.ParentID = -1
+	) r
+WHERE
+	r.Count_1 <> 0
 

@@ -57,12 +57,12 @@ ORDER BY
 	"i"."Id"
 ROWS @take
 RETURNING
-	OLD."Id",
-	OLD."Value",
-	OLD."ValueStr",
-	NEW."Id",
-	NEW."Value",
-	NEW."ValueStr"
+	"i"."Id",
+	"i"."Value",
+	"i"."ValueStr",
+	"i"."Id",
+	"i"."Value",
+	"i"."ValueStr"
 
 BeforeExecute
 -- Firebird.3 Firebird3
