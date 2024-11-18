@@ -14,21 +14,21 @@ SELECT Cast(@p as decimal(6, 3))
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -41,7 +41,7 @@ LIMIT 2
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -54,7 +54,7 @@ LIMIT 2
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT
@@ -81,21 +81,21 @@ SELECT Cast(@p as decimal(6, 3))
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = 12/12/2012 12:12:12
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = 12/12/2012 12:12:12
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
 --  MySql.8.0.MySql.Data MySql80
-DECLARE @p DateTime
+DECLARE @p Datetime -- DateTime
 SET     @p = 12/12/2012 12:12:12
 
 SELECT Cast(@p as datetime)
@@ -230,11 +230,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL
@@ -335,11 +335,11 @@ DECLARE @MediumText VarChar(16777215) -- String
 SET     @MediumText = NULL
 DECLARE @LongText VarChar -- String
 SET     @LongText = NULL
-DECLARE @Date DateTime
+DECLARE @Date Datetime -- DateTime
 SET     @Date = NULL
-DECLARE @DateTime DateTime
+DECLARE @DateTime Datetime -- DateTime
 SET     @DateTime = NULL
-DECLARE @TimeStamp DateTime
+DECLARE @TimeStamp Datetime -- DateTime
 SET     @TimeStamp = NULL
 DECLARE @Time Time
 SET     @Time = NULL

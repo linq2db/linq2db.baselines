@@ -20,8 +20,8 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	MAX(`r`.`PersonID`),
 	CAST('MAX' AS CHAR(255)),
+	MAX(`r`.`PersonID`),
 	NULL
 FROM
 	`Person` `r`
