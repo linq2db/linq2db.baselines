@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @idCopy Int -- Int32
-SET     @idCopy = 38
+SET     @idCopy = 68
 
 SELECT
 	[p].[FirstName],
@@ -17,7 +17,7 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @idCopy Int -- Int32
-SET     @idCopy = 52
+SET     @idCopy = 86
 
 SELECT
 	[p].[FirstName],

@@ -21,11 +21,15 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	MAX([r].[PersonID])
+	CAST(N'MAX' AS NVarChar(4000)),
+	MAX([r].[PersonID]),
+	NULL
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
+	NULL,
+	NULL,
 	[r_1].[PersonID]
 FROM
 	[Person] [r_1]
