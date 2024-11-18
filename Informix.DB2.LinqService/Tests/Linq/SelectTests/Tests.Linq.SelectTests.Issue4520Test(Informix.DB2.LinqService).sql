@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN (i.BoolValue = 'f' AND i.BoolValue IS NOT NULL OR i.BoolValue IS NULL OR CASE
 			WHEN i.BoolValue IS NOT NULL THEN i.BoolValue
-			ELSE 'f'
+			ELSE 'f'::BOOLEAN
 		END IS NULL) AND (i.IntValue = t1.IntValue OR i.IntValue IS NULL AND t1.IntValue IS NULL)
 			THEN 't'
 		ELSE 'f'
