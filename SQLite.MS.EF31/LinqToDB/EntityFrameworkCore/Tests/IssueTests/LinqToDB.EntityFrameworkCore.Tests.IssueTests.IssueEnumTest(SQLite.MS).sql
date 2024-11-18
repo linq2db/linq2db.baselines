@@ -48,3 +48,13 @@ FROM "IssueEnum"
 WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 
 
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[IssueEnum] [t1]
+
+
+
