@@ -36,11 +36,15 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	MAX(r."PersonID")
+	CAST('MAX' AS VarChar(255)),
+	MAX(r."PersonID"),
+	NULL
 FROM
 	"Person" r
 UNION ALL
 SELECT
+	NULL,
+	NULL,
 	r_1."PersonID"
 FROM
 	"Person" r_1
