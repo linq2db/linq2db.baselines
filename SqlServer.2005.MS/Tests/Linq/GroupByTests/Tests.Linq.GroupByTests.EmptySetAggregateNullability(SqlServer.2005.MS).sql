@@ -2,124 +2,84 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[Min_1],
-	[r].[MAX_1],
-	[r].[AVG_1],
-	[r].[SUM_1],
-	[r].[COUNT_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
-			MIN([gr].[ParentID]) as [Min_1],
-			MAX([gr].[ParentID]) as [MAX_1],
-			AVG([gr].[ParentID]) as [AVG_1],
-			SUM([gr].[ParentID]) as [SUM_1],
-			COUNT(*) as [COUNT_1]
+			MIN([gr].[ParentID]) as [Min_1]
 		FROM
 			[Parent] [gr]
 		WHERE
 			[gr].[ParentID] = -1
-	) [r]
+	) [t1]
 WHERE
-	[r].[Min_1] <> 0 OR [r].[Min_1] IS NULL
+	[t1].[Min_1] <> 0 OR [t1].[Min_1] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[MIN_1],
-	[r].[Max_1],
-	[r].[AVG_1],
-	[r].[SUM_1],
-	[r].[COUNT_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
-			MAX([gr].[ParentID]) as [Max_1],
-			MIN([gr].[ParentID]) as [MIN_1],
-			AVG([gr].[ParentID]) as [AVG_1],
-			SUM([gr].[ParentID]) as [SUM_1],
-			COUNT(*) as [COUNT_1]
+			MAX([gr].[ParentID]) as [Max_1]
 		FROM
 			[Parent] [gr]
 		WHERE
 			[gr].[ParentID] = -1
-	) [r]
+	) [t1]
 WHERE
-	[r].[Max_1] <> 0 OR [r].[Max_1] IS NULL
+	[t1].[Max_1] <> 0 OR [t1].[Max_1] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[MIN_1],
-	[r].[MAX_1],
-	[r].[Avg_1],
-	[r].[SUM_1],
-	[r].[COUNT_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
-			AVG([gr].[ParentID]) as [Avg_1],
-			MIN([gr].[ParentID]) as [MIN_1],
-			MAX([gr].[ParentID]) as [MAX_1],
-			SUM([gr].[ParentID]) as [SUM_1],
-			COUNT(*) as [COUNT_1]
+			AVG([gr].[ParentID]) as [Avg_1]
 		FROM
 			[Parent] [gr]
 		WHERE
 			[gr].[ParentID] = -1
-	) [r]
+	) [t1]
 WHERE
-	[r].[Avg_1] <> 0 OR [r].[Avg_1] IS NULL
+	[t1].[Avg_1] <> 0 OR [t1].[Avg_1] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[MIN_1],
-	[r].[MAX_1],
-	[r].[AVG_1],
-	[r].[Sum_1],
-	[r].[COUNT_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
-			SUM([gr].[ParentID]) as [Sum_1],
-			MIN([gr].[ParentID]) as [MIN_1],
-			MAX([gr].[ParentID]) as [MAX_1],
-			AVG([gr].[ParentID]) as [AVG_1],
-			COUNT(*) as [COUNT_1]
+			SUM([gr].[ParentID]) as [Sum_1]
 		FROM
 			[Parent] [gr]
 		WHERE
 			[gr].[ParentID] = -1
-	) [r]
+	) [t1]
 WHERE
-	[r].[Sum_1] <> 0 OR [r].[Sum_1] IS NULL
+	[t1].[Sum_1] <> 0 OR [t1].[Sum_1] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[r].[MIN_1],
-	[r].[MAX_1],
-	[r].[AVG_1],
-	[r].[SUM_1],
-	[r].[Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
-			COUNT(*) as [Count_1],
-			MIN([gr].[ParentID]) as [MIN_1],
-			MAX([gr].[ParentID]) as [MAX_1],
-			AVG([gr].[ParentID]) as [AVG_1],
-			SUM([gr].[ParentID]) as [SUM_1]
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [gr]
 		WHERE
 			[gr].[ParentID] = -1
-	) [r]
+	) [t1]
 WHERE
-	[r].[Count_1] <> 0
+	[t1].[Count_1] <> 0
 
