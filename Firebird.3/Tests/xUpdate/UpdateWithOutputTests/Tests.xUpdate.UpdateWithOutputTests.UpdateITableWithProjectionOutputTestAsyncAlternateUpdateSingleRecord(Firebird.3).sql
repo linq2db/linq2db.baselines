@@ -138,8 +138,8 @@ WHERE
 			("DestinationTable"."ValueStr" = "t"."ValueStr" OR "DestinationTable"."ValueStr" IS NULL AND "t"."ValueStr" IS NULL)
 	)
 RETURNING
-	"DestinationTable"."Value",
-	"DestinationTable"."Value"
+	OLD."Value",
+	NEW."Value"
 
 BeforeExecute
 -- Firebird.3 Firebird3
