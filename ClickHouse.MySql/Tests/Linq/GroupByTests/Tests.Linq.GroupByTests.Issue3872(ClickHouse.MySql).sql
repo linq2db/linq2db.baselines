@@ -22,12 +22,16 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	maxOrNull(r.PersonID) as c1
+	toString('MAX') as c1,
+	maxOrNull(r.PersonID) as c2,
+	toInt32(NULL) as c3
 FROM
 	Person r
 UNION ALL
 SELECT
-	r_1.PersonID as c1
+	toString(NULL) as c1,
+	toInt32(NULL) as c2,
+	r_1.PersonID as c3
 FROM
 	Person r_1
 
