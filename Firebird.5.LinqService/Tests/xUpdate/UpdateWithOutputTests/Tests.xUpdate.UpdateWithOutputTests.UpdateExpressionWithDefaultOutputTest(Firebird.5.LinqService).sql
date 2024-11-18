@@ -488,12 +488,12 @@ WHERE
 			("DestinationTable"."ValueStr" = "t"."ValueStr" OR "DestinationTable"."ValueStr" IS NULL AND "t"."ValueStr" IS NULL)
 	)
 RETURNING
-	"DestinationTable"."Id",
-	"DestinationTable"."Value",
-	"DestinationTable"."ValueStr",
-	"DestinationTable"."Id",
-	"DestinationTable"."Value",
-	"DestinationTable"."ValueStr"
+	OLD."Id",
+	OLD."Value",
+	OLD."ValueStr",
+	NEW."Id",
+	NEW."Value",
+	NEW."ValueStr"
 
 BeforeExecute
 -- Firebird.5 Firebird4

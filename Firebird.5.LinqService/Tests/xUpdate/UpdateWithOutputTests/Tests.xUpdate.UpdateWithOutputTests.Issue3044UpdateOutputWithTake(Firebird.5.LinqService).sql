@@ -236,12 +236,12 @@ ORDER BY
 	"i"."Id"
 ROWS @take
 RETURNING
-	"i"."Id",
-	"i"."Value",
-	"i"."ValueStr",
-	"i"."Id",
-	"i"."Value",
-	"i"."ValueStr"
+	OLD."Id",
+	OLD."Value",
+	OLD."ValueStr",
+	NEW."Id",
+	NEW."Value",
+	NEW."ValueStr"
 
 BeforeExecute
 -- Firebird.5 Firebird4

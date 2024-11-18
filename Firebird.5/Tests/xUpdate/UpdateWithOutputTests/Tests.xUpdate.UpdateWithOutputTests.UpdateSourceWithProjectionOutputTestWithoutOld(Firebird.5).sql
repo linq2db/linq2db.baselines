@@ -52,7 +52,7 @@ SET
 WHERE
 	"s"."Id" > 3
 RETURNING
-	"s"."Value"
+	NEW."Value"
 
 BeforeExecute
 -- Firebird.5 Firebird4

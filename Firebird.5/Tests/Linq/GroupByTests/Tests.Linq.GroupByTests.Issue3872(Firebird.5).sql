@@ -28,11 +28,15 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	MAX("r"."PersonID")
+	CAST('MAX' AS VARCHAR(3)),
+	MAX("r"."PersonID"),
+	NULL
 FROM
 	"Person" "r"
 UNION ALL
 SELECT
+	NULL,
+	NULL,
 	"r_1"."PersonID"
 FROM
 	"Person" "r_1"
