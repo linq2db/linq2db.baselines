@@ -6,3 +6,14 @@
 END
 
 
+--  SqlServer.2008
+
+SELECT
+	1
+FROM
+	[Parents] [ua]
+WHERE
+	[ua].[ParentId] = 55377
+
+
+

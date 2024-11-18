@@ -26,3 +26,84 @@ SELECT CASE
 END
 
 
+--  SqlServer.2008 (asynchronously)
+
+SELECT
+	[e].[IsDeleted],
+	[e].[ProductID],
+	[e].[ProductName],
+	[e].[SupplierID],
+	[e].[CategoryID],
+	[e].[QuantityPerUnit],
+	[e].[UnitPrice],
+	[e].[UnitsInStock],
+	[e].[UnitsOnOrder],
+	[e].[ReorderLevel],
+	[e].[Discontinued]
+FROM
+	[Products] [e]
+WHERE
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+
+
+
+--  SqlServer.2008 (asynchronously)
+
+SELECT
+	[e].[IsDeleted],
+	[e].[ProductID],
+	[e].[ProductName],
+	[e].[SupplierID],
+	[e].[CategoryID],
+	[e].[QuantityPerUnit],
+	[e].[UnitPrice],
+	[e].[UnitsInStock],
+	[e].[UnitsOnOrder],
+	[e].[ReorderLevel],
+	[e].[Discontinued]
+FROM
+	[Products] [e]
+WHERE
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+
+
+
+--  SqlServer.2008 (asynchronously)
+
+SELECT
+	[e].[IsDeleted],
+	[e].[ProductID],
+	[e].[ProductName],
+	[e].[SupplierID],
+	[e].[CategoryID],
+	[e].[QuantityPerUnit],
+	[e].[UnitPrice],
+	[e].[UnitsInStock],
+	[e].[UnitsOnOrder],
+	[e].[ReorderLevel],
+	[e].[Discontinued]
+FROM
+	[Products] [e]
+WHERE
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+
+
+
+--  SqlServer.2008 (asynchronously)
+
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[Products] [e]
+			WHERE
+				[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+		)
+			THEN 1
+		ELSE 0
+	END
+
+
+
