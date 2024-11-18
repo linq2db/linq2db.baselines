@@ -20,11 +20,15 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	MAX([r].[PersonID])
+	CStr('MAX'),
+	MAX([r].[PersonID]),
+	IIF(False, 0, NULL)
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
+	IIF(False, '', NULL),
+	IIF(False, 0, NULL),
 	[r_1].[PersonID]
 FROM
 	[Person] [r_1]
