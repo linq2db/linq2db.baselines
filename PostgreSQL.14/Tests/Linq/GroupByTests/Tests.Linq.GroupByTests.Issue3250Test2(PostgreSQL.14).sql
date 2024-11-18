@@ -2,16 +2,11 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(s_1."ID")) || '.'
+	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(s."PersonID")) || '.'
 FROM
-	(
-		SELECT
-			s."PersonID" as "ID"
-		FROM
-			"Person" s
-		WHERE
-			s."LastName" <> 'ERROR'
-		HAVING
-			COUNT(*) > 0
-	) s_1
+	"Person" s
+WHERE
+	s."LastName" <> 'ERROR'
+HAVING
+	COUNT(*) > 0
 
