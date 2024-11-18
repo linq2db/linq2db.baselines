@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @idCopy  -- Int32
-SET     @idCopy = 16
+SET     @idCopy = 38
 
 SELECT
 	[p].[FirstName],
@@ -17,7 +17,7 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @idCopy  -- Int32
-SET     @idCopy = 26
+SET     @idCopy = 52
 
 SELECT
 	[p].[FirstName],
