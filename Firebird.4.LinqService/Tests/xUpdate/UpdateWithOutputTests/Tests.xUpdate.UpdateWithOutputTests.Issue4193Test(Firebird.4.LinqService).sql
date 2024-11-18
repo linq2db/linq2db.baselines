@@ -141,7 +141,7 @@ WHERE
 			"e"."Name" = 'foo' AND "Issue4193Salary"."Id" = "a_Salary"."Id"
 	)
 RETURNING
-	"Issue4193Salary"."Amount"
+	NEW."Amount"
 
 BeforeExecute
 -- Firebird.4 Firebird4

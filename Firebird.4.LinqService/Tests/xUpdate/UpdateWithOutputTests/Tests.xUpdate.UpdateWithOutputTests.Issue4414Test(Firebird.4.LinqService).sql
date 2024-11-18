@@ -53,8 +53,8 @@ ORDER BY
 	"x"."EmployeeId"
 ROWS @take
 RETURNING
-	"x"."EmployeeId",
-	"x"."Name"
+	NEW."EmployeeId",
+	NEW."Name"
 
 BeforeExecute
 -- Firebird.4 Firebird4

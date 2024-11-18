@@ -230,8 +230,8 @@ SET
 WHERE
 	"s"."Id" = 3
 RETURNING
-	"s"."Value",
-	"s"."Value"
+	OLD."Value",
+	NEW."Value"
 
 BeforeExecute
 -- Firebird.4 Firebird4

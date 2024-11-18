@@ -124,7 +124,7 @@ WHERE
 			"Issue4193Person"."Name" = "p"."Name" AND ("Issue4193Person"."EmployeeId" = "p"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p"."EmployeeId" IS NULL)
 	)
 RETURNING
-	"Issue4193Person"."EmployeeId"
+	NEW."EmployeeId"
 
 BeforeExecute
 -- Firebird.4 Firebird4

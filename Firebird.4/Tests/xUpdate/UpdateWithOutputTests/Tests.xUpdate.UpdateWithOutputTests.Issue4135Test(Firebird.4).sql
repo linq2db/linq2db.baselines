@@ -50,9 +50,9 @@ ORDER BY
 	"e"."Id"
 ROWS @take
 RETURNING
-	"e"."Id",
-	"e"."Name",
-	"e"."NeedsUpdate"
+	OLD."Id",
+	OLD."Name",
+	OLD."NeedsUpdate"
 
 BeforeExecute
 -- Firebird.4 Firebird4

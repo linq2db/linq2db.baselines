@@ -111,7 +111,7 @@ WHERE
 			"Test3697Item"."Id" = "a_Items"."Id"
 	)
 RETURNING
-	"Test3697Item"."Id"
+	NEW."Id"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -131,7 +131,7 @@ WHERE
 			"Test3697Item"."Id" = "b"."Id"
 	)
 RETURNING
-	"Test3697Item"."Id"
+	NEW."Id"
 
 BeforeExecute
 -- Firebird.4 Firebird4
