@@ -20,11 +20,15 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	MAX("r"."PersonID")
+	CAST('MAX' AS NVarChar(255)),
+	MAX("r"."PersonID"),
+	NULL
 FROM
 	"Person" "r"
 UNION ALL
 SELECT
+	NULL,
+	NULL,
 	"r_1"."PersonID"
 FROM
 	"Person" "r_1"
