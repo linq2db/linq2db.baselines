@@ -20,15 +20,11 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	CStr('MAX'),
-	MAX([r].[PersonID]),
-	IIF(False, 0, NULL)
+	MAX([r].[PersonID])
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
-	IIF(False, '', NULL),
-	IIF(False, 0, NULL),
 	[r_1].[PersonID]
 FROM
 	[Person] [r_1]

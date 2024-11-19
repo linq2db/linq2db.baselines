@@ -501,7 +501,6 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT DISTINCT
-	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM
