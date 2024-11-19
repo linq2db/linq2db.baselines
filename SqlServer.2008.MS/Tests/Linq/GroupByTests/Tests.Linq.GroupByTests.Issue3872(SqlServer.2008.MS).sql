@@ -22,15 +22,11 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	CAST(N'MAX' AS NVarChar(4000)),
-	MAX([r].[PersonID]),
-	NULL
+	MAX([r].[PersonID])
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
-	NULL,
-	NULL,
 	[r_1].[PersonID]
 FROM
 	[Person] [r_1]
