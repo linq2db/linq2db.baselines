@@ -501,7 +501,6 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	'Discriminator',
 	a_Book.Discriminator,
 	a_Book.BookName
 FROM
