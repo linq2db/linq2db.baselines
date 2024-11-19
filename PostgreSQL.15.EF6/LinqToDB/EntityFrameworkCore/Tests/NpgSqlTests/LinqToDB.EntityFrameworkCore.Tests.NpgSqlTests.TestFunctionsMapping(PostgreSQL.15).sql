@@ -8,7 +8,7 @@ WHERE (((e."Duration" @> @__date_0 OR (lower(e."Duration") = @__date_0)) OR (upp
 
 --  PostgreSQL.9.3 PostgreSQL
 DECLARE @date Timestamp -- DateTime2
-SET     @date = '2024-11-18 18:50:53.151'::timestamp
+SET     @date = '2024-11-19 10:16:21.464'::timestamp
 
 SELECT
 	e."Id",
