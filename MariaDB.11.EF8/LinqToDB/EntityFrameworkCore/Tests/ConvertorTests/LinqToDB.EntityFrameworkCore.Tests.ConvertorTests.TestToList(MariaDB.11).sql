@@ -2,7 +2,7 @@
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @PermanentId Guid
-SET     @PermanentId = '377c886c-4269-4f83-b4d3-ca956449f96b'
+SET     @PermanentId = 'f398e075-a485-42e4-8a46-48919a9cb624'
 DECLARE @Code VarChar(2) -- String
 SET     @Code = 'C1'
 DECLARE @Name VarChar(2) -- String
@@ -39,7 +39,7 @@ SELECT LAST_INSERT_ID()
 DECLARE @Id Int64
 SET     @Id = 2
 DECLARE @PermanentId Guid
-SET     @PermanentId = '5203bed3-cec1-48a8-b96e-d81659413113'
+SET     @PermanentId = '18f3a5da-6fb3-40dd-8049-d3c010b16538'
 DECLARE @Code VarChar(2) -- String
 SET     @Code = 'C2'
 DECLARE @Name VarChar(2) -- String
@@ -76,7 +76,7 @@ SELECT LAST_INSERT_ID()
 DECLARE @Id Int64
 SET     @Id = 3
 DECLARE @PermanentId Guid
-SET     @PermanentId = 'af69ec2f-83ec-4426-8d36-a826eb306319'
+SET     @PermanentId = '127dac2c-10b6-4237-a772-fb0c5e28522a'
 DECLARE @Code VarChar(2) -- String
 SET     @Code = 'C3'
 DECLARE @Name VarChar(2) -- String
