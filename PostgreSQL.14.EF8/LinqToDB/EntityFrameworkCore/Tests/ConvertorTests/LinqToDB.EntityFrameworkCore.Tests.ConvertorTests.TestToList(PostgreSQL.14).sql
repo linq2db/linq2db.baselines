@@ -2,7 +2,7 @@
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 DECLARE @PermanentId Uuid -- Guid
-SET     @PermanentId = '96ce1ec3-07d2-460e-acf2-c5d512cceafd'::uuid
+SET     @PermanentId = 'f129c964-89a2-4697-af8e-0174949c6a62'::uuid
 DECLARE @Code Text(2) -- String
 SET     @Code = 'C1'
 DECLARE @Name Text(2) -- String
@@ -35,7 +35,7 @@ RETURNING
 DECLARE @Id Bigint -- Int64
 SET     @Id = 2
 DECLARE @PermanentId Uuid -- Guid
-SET     @PermanentId = 'b7cc3de7-40a7-4964-9e94-c75d96355632'::uuid
+SET     @PermanentId = '2179d019-4136-43e9-ad37-6e7fa32774ad'::uuid
 DECLARE @Code Text(2) -- String
 SET     @Code = 'C2'
 DECLARE @Name Text(2) -- String
@@ -68,7 +68,7 @@ RETURNING
 DECLARE @Id Bigint -- Int64
 SET     @Id = 3
 DECLARE @PermanentId Uuid -- Guid
-SET     @PermanentId = 'beeccfc2-e7e4-4585-a9e5-e57f1116feba'::uuid
+SET     @PermanentId = 'ce398b2c-16b1-494e-a6e5-9821effda3e4'::uuid
 DECLARE @Code Text(2) -- String
 SET     @Code = 'C3'
 DECLARE @Name Text(2) -- String
