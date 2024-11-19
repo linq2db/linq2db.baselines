@@ -501,7 +501,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	'Discriminator',
 	"a_Book"."Discriminator",
 	"a_Book"."BookName"
 FROM
