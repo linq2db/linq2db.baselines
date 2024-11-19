@@ -504,7 +504,6 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	N'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM
