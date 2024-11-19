@@ -105,7 +105,6 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM
