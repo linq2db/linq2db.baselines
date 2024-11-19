@@ -2,7 +2,7 @@
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @PermanentId UniqueIdentifier -- Guid
-SET     @PermanentId = 'bcffed16-1de5-438c-b1ed-f079f7ef4ad3'
+SET     @PermanentId = 'c4679173-8dd5-4eef-8288-7e9cc01c6b36'
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'C1'
 DECLARE @Name NVarChar(4000) -- String
@@ -35,7 +35,7 @@ SELECT SCOPE_IDENTITY()
 DECLARE @Id BigInt -- Int64
 SET     @Id = 2
 DECLARE @PermanentId UniqueIdentifier -- Guid
-SET     @PermanentId = '1cf0eaba-75ee-4ece-b772-ad337c3e32cd'
+SET     @PermanentId = '16eb0087-5f07-472c-ac05-fde5d1d7d01e'
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'C2'
 DECLARE @Name NVarChar(4000) -- String
@@ -68,7 +68,7 @@ SELECT SCOPE_IDENTITY()
 DECLARE @Id BigInt -- Int64
 SET     @Id = 3
 DECLARE @PermanentId UniqueIdentifier -- Guid
-SET     @PermanentId = 'f0dcfa88-7501-4f30-9cbe-cde63cdc8fa8'
+SET     @PermanentId = '953953c1-a553-4615-a4ac-0f0c61890910'
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'C3'
 DECLARE @Name NVarChar(4000) -- String
