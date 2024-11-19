@@ -39,6 +39,24 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @interval  -- Int32
+SET     @interval = 10
+DECLARE @clientSideIn  -- DateTimeOffset
+SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
+
+SELECT
+	[r].[Id],
+	[r].[SomeDateTimeOffset],
+	[r].[SomeNullableDateTimeOffset]
+FROM
+	[Issue1855Table] [r]
+WHERE
+	[r].[Id] = @id AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
+
+BeforeExecute
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [Issue1855Table]
 

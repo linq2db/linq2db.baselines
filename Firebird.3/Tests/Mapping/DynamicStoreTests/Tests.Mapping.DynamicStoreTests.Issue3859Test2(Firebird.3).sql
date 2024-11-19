@@ -22,14 +22,6 @@ END
 BeforeExecute
 -- Firebird.3 Firebird3
 
-SELECT
-	COUNT(*)
-FROM
-	"DynamicColumnsTestTable" "x"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DynamicColumnsTestTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "DynamicColumnsTestTable"';

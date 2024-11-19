@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	min(gr.ParentID)
+	Coalesce(minOrNull(gr.ParentID), 10)
 FROM
 	Parent gr
 

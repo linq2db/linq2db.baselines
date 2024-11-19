@@ -12,6 +12,6 @@ FROM
 WHERE
 	startsWith(x.FirstName, 'J') = true
 ORDER BY
-	x.PersonID
+	x.PersonID DESC
 LIMIT 1, 2
 

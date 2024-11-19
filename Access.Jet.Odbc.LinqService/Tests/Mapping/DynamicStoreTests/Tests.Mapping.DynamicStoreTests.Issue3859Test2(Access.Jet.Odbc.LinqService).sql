@@ -14,13 +14,5 @@ CREATE TABLE [DynamicColumnsTestTable]
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
-SELECT
-	COUNT(*)
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [DynamicColumnsTestTable]
 

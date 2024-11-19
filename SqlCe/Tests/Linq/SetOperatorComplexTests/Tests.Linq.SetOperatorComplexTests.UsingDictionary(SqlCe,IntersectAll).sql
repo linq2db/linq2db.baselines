@@ -102,7 +102,6 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	'Discriminator' as [c1],
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

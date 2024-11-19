@@ -507,7 +507,6 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	N'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

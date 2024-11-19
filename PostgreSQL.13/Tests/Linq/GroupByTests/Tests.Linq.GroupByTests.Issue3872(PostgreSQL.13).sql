@@ -20,15 +20,11 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	MAX(r."PersonID"),
-	'MAX'::text,
-	NULL::Int
+	MAX(r."PersonID")
 FROM
 	"Person" r
 UNION ALL
 SELECT
-	NULL::Int,
-	NULL::text,
 	r_1."PersonID"
 FROM
 	"Person" r_1

@@ -2,18 +2,13 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t_1`.`c1`
+	`t`.`MoneyValue`
 FROM
-	(
-		SELECT
-			CASE
-				WHEN `t`.`MoneyValue` * 2 = Round(`t`.`MoneyValue` * 2, 1) AND `t`.`MoneyValue` <> Round(`t`.`MoneyValue`, 1)
-					THEN Round(`t`.`MoneyValue` / 2, 1) * 2
-				ELSE Round(`t`.`MoneyValue`, 1)
-			END as `c1`
-		FROM
-			`LinqDataTypes` `t`
-	) `t_1`
+	`LinqDataTypes` `t`
 WHERE
-	`t_1`.`c1` <> 0
+	CASE
+		WHEN `t`.`MoneyValue` * 2 = ROUND(`t`.`MoneyValue` * 2, 1) AND `t`.`MoneyValue` <> ROUND(`t`.`MoneyValue`, 1)
+			THEN ROUND(`t`.`MoneyValue` / 2, 1) * 2
+		ELSE ROUND(`t`.`MoneyValue`, 1)
+	END <> 0
 

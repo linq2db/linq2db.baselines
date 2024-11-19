@@ -20,15 +20,11 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	MAX(`r`.`PersonID`),
-	CAST('MAX' AS CHAR(255)),
-	NULL
+	MAX(`r`.`PersonID`)
 FROM
 	`Person` `r`
 UNION ALL
 SELECT
-	NULL,
-	NULL,
 	`r_1`.`PersonID`
 FROM
 	`Person` `r_1`

@@ -20,4 +20,6 @@ FROM
 	) t1
 WHERE
 	ROWNUM <= 1
+ORDER BY
+	t1."ParentID" DESC
 

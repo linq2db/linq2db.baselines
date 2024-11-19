@@ -15,13 +15,5 @@ ENGINE = Memory()
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-SELECT
-	COUNT(*)
-FROM
-	DynamicColumnsTestTable x
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 DROP TABLE IF EXISTS DynamicColumnsTestTable
 

@@ -27,3 +27,104 @@ WHERE @__ef_filter__p_0 OR NOT ("o"."IsDeleted")
 ORDER BY "o"."OrderID", "t0"."EmployeeID", "t0"."TerritoryID", "t2"."OrderID", "t2"."ProductID", "t2"."ProductID0"
 
 
+BeginTransactionAsync(Serializable)
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[m_1].[EmployeeId],
+	[d].[IsDeleted],
+	[d].[EmployeeID],
+	[d].[TerritoryID]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Employee].[EmployeeID] as [EmployeeId]
+		FROM
+			[Orders] [e]
+				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID]
+	) [m_1]
+		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
+
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[m_1].[OrderId],
+	[d].[IsDeleted],
+	[d].[OrderID],
+	[d].[ProductID],
+	[d].[UnitPrice],
+	[d].[Quantity],
+	[d].[Discount],
+	[a_Product].[IsDeleted],
+	[a_Product].[ProductID],
+	[a_Product].[ProductName],
+	[a_Product].[SupplierID],
+	[a_Product].[CategoryID],
+	[a_Product].[QuantityPerUnit],
+	[a_Product].[UnitPrice],
+	[a_Product].[UnitsInStock],
+	[a_Product].[UnitsOnOrder],
+	[a_Product].[ReorderLevel],
+	[a_Product].[Discontinued]
+FROM
+	(
+		SELECT DISTINCT
+			[e].[OrderID] as [OrderId]
+		FROM
+			[Orders] [e]
+	) [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
+		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
+
+
+
+DisposeTransactionAsync
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[e].[IsDeleted],
+	[e].[OrderID],
+	[e].[CustomerID],
+	[e].[EmployeeID],
+	[e].[OrderDate],
+	[e].[RequiredDate],
+	[e].[ShippedDate],
+	[e].[ShipVia],
+	[e].[Freight],
+	[e].[ShipName],
+	[e].[ShipAddress],
+	[e].[ShipCity],
+	[e].[ShipRegion],
+	[e].[ShipPostalCode],
+	[e].[ShipCountry],
+	[a_Employee].[IsDeleted],
+	[a_Employee].[EmployeeID],
+	[a_Employee].[LastName],
+	[a_Employee].[FirstName],
+	[a_Employee].[Title],
+	[a_Employee].[TitleOfCourtesy],
+	[a_Employee].[BirthDate],
+	[a_Employee].[HireDate],
+	[a_Employee].[Address],
+	[a_Employee].[City],
+	[a_Employee].[Region],
+	[a_Employee].[PostalCode],
+	[a_Employee].[Country],
+	[a_Employee].[HomePhone],
+	[a_Employee].[Extension],
+	[a_Employee].[Photo],
+	[a_Employee].[Notes],
+	[a_Employee].[ReportsTo],
+	[a_Employee].[PhotoPath]
+FROM
+	[Orders] [e]
+		LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID]
+
+
+

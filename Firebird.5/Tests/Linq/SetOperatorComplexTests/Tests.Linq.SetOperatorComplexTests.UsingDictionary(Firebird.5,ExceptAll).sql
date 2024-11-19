@@ -126,7 +126,6 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	'Discriminator',
 	"a_Book"."Discriminator",
 	"a_Book"."BookName"
 FROM

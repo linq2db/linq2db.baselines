@@ -525,7 +525,6 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT DISTINCT
-	'Discriminator',
 	"a_Book"."Discriminator",
 	"a_Book"."BookName"
 FROM

@@ -4,9 +4,9 @@ DECLARE @ID Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue DateTime
+DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2 DateTime
+DECLARE @DateTimeValue2 Datetime -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue UByte -- Boolean
 SET     @BoolValue = 0

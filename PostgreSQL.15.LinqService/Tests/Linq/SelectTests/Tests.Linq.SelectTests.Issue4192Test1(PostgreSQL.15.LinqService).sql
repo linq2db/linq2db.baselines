@@ -14,19 +14,6 @@ CREATE TABLE IF NOT EXISTS "Issue4192TableNotNullable"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @parentId Integer -- Int32
-SET     @parentId = 12
-
-SELECT
-	i."Name",
-	i."ParentId"
-FROM
-	"Issue4192TableNotNullable" i
-WHERE
-	i."ParentId" = :parentId
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue4192TableNotNullable"
 

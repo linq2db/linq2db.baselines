@@ -26,4 +26,7 @@ FROM
 	) t2
 WHERE
 	t2.RN > 3
+ORDER BY
+	t2."ParentID",
+	t2."ChildID"
 

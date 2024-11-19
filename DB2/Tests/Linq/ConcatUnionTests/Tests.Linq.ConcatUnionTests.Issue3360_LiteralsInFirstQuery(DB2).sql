@@ -73,7 +73,7 @@ FROM
 			CAST(5 AS SmallInt) as "Byte",
 			CAST(5 AS SmallInt) as "Byte_1",
 			CAST(@Guid AS char(16) for bit data) as "Guid",
-			@GuidN as "GuidN",
+			CAST(@GuidN AS char(16) for bit data) as "GuidN",
 			Char('ENUM1_VALUE', 11) as "Enum",
 			Char('ENUM2_VALUE', 11) as "EnumN",
 			CAST(1 AS smallint) as "Bool",

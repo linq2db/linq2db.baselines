@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @dt  -- DateTime
-SET     @dt = #2020-02-29 17:54:55#
 
 SELECT
 	[t].[ID],
@@ -15,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] = ?
+	[t].[DateTimeValue] = #2020-02-29 17:54:55#
 

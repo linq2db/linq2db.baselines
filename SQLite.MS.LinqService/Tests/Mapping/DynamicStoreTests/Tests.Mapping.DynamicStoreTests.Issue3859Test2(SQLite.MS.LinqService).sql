@@ -14,13 +14,5 @@ CREATE TABLE IF NOT EXISTS [DynamicColumnsTestTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
-SELECT
-	COUNT(*)
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [DynamicColumnsTestTable]
 

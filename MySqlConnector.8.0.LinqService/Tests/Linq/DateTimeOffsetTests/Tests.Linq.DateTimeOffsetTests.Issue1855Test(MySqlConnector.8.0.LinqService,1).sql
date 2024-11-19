@@ -39,6 +39,24 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @id Int32
+SET     @id = 1
+DECLARE @interval Int32
+SET     @interval = 10
+DECLARE @clientSideIn Datetime -- DateTimeOffset
+SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
+
+SELECT
+	`r`.`Id`,
+	`r`.`SomeDateTimeOffset`,
+	`r`.`SomeNullableDateTimeOffset`
+FROM
+	`Issue1855Table` `r`
+WHERE
+	`r`.`Id` = @id AND Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) >= @clientSideIn
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `Issue1855Table`
 

@@ -106,8 +106,16 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.TargetName,
+	CASE
+		WHEN p.TargetName = 'None' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	p.Id,
+	p.TargetName,
+	CASE
+		WHEN p.TargetName = 'bda.Requests' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	a_ActualStage.Id
 FROM
 	"Task" p

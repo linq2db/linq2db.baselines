@@ -2,11 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
-	x.FirstName,
-	x.PersonID,
-	x.LastName,
+	NVL(x.FirstName, NULL),
+	NVL(x.PersonID, NULL),
+	NVL(x.LastName, NULL),
 	x.MiddleName,
-	x.Gender,
+	NVL(x.Gender, NULL),
 	NULL::Int,
 	NULL::NVarChar(255)
 FROM

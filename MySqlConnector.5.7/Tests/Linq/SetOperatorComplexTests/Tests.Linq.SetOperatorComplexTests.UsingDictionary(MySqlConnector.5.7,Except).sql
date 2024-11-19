@@ -105,7 +105,6 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT DISTINCT
-	'Discriminator',
 	`a_Book`.`Discriminator`,
 	`a_Book`.`BookName`
 FROM

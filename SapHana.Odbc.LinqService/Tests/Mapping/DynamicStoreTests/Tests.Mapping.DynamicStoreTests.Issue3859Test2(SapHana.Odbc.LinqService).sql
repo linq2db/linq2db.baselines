@@ -14,13 +14,5 @@ CREATE COLUMN TABLE "DynamicColumnsTestTable"
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT
-	COUNT(*)
-FROM
-	"DynamicColumnsTestTable" "x"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "DynamicColumnsTestTable"
 

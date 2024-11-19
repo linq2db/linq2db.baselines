@@ -28,15 +28,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	MAX("r"."PersonID"),
-	Char('MAX', 255),
-	CAST(NULL AS Int)
+	MAX("r"."PersonID")
 FROM
 	"Person" "r"
 UNION ALL
 SELECT
-	CAST(NULL AS Int),
-	CAST(NULL AS NVarChar(255)),
 	"r_1"."PersonID"
 FROM
 	"Person" "r_1"

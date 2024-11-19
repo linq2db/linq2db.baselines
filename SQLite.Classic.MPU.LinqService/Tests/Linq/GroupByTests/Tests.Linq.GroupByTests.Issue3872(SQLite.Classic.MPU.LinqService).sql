@@ -20,15 +20,11 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	MAX([r].[PersonID]),
-	CAST('MAX' AS NVarChar(255)),
-	NULL
+	MAX([r].[PersonID])
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
-	NULL,
-	NULL,
 	[r_1].[PersonID]
 FROM
 	[Person] [r_1]

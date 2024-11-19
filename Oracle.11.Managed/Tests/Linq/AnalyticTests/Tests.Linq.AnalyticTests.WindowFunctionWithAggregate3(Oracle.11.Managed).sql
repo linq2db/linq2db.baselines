@@ -29,4 +29,6 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t2."Key_1" DESC
 

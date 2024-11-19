@@ -249,8 +249,6 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 200
-DECLARE @param_1 Int32
-SET     @param_1 = 200
 
 DELETE  
 FROM
@@ -260,7 +258,7 @@ WHERE
 RETURNING
 	`TableWithData`.`Id` + @param,
 	`TableWithData`.`Value` + @param,
-	Concat(`TableWithData`.`ValueStr`, @param_1)
+	Concat(`TableWithData`.`ValueStr`, @param)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

@@ -20,15 +20,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	MAX(r.PersonID),
-	'MAX'::NVarChar(255),
-	NULL::Int
+	MAX(r.PersonID)
 FROM
 	Person r
 UNION ALL
 SELECT
-	NULL::Int,
-	NULL::NVarChar(255),
 	r_1.PersonID
 FROM
 	Person r_1

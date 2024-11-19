@@ -19,3 +19,13 @@ SELECT [i].[Id] FROM @inserted0 i
 ORDER BY [i].[_Position];
 
 
+--  SqlServer.2008 (asynchronously)
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[IssueEnum] [t1]
+
+
+

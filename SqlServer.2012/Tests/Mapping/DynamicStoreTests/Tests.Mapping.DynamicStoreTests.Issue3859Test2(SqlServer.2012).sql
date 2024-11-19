@@ -16,14 +16,6 @@ IF (OBJECT_ID(N'[DynamicColumnsTestTable]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2012
 
-SELECT
-	COUNT(*)
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- SqlServer.2012
-
 IF (OBJECT_ID(N'[DynamicColumnsTestTable]', N'U') IS NOT NULL)
 	DROP TABLE [DynamicColumnsTestTable]
 

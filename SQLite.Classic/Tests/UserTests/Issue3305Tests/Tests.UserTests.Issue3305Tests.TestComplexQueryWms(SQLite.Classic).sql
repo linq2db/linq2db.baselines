@@ -147,68 +147,82 @@ AS
 		COUNT(*) OVER(PARTITION BY [ir].[ResourceID]),
 		COUNT(([ir].[ProductStatus] > 0)) OVER(PARTITION BY [ir].[ResourceID])
 	FROM
-		[InventoryResourceDTO] [ir]
-	WHERE
-		[ir].[Status] < 99
+		(
+			SELECT
+				[x].[ResourceID],
+				[x].[MaterialID],
+				[x].[InfeedAdviceID],
+				[x].[Id],
+				[x].[BatchNumber],
+				[x].[BundleUnit],
+				[x].[ProductStatus],
+				[x].[CustomField1],
+				[x].[CustomField2],
+				[x].[CustomField3]
+			FROM
+				[InventoryResourceDTO] [x]
+			WHERE
+				[x].[Status] < 99
+		) [ir]
 )
 SELECT
-	[x].[Id],
-	[x].[AisleID],
-	[x].[MaterialID],
-	[x].[Id_1],
-	[x].[AisleNumber],
-	[x].[PlantID],
-	[x].[Name],
-	[x].[Id_2],
-	[x].[MaterialNumber],
-	[x].[MaterialDescription_1],
-	[x].[MaterialDescription_2],
-	[x].[MaterialDescription_3],
-	[x].[CategoryABC],
-	[x].[CategoryCustoms],
-	[x].[CategoryDimensions],
-	[x].[CategoryQuality],
-	[x].[CategoryTemperature],
-	[x].[Id_3],
-	[x].[Id_4],
-	[x].[Status],
-	[x].[ResourceLabel],
-	[x].[CustomField1],
-	[x].[CustomField2],
-	[x].[CustomField3],
-	[x].[CustomLong1],
-	[x].[CustomLong2],
-	[x].[CustomLong3],
-	[x].[Id_5],
-	[x].[MaterialNumber_1],
-	[x].[MaterialDescription_1_1],
-	[x].[MaterialDescription_2_1],
-	[x].[MaterialDescription_3_1],
-	[x].[CategoryABC_1],
-	[x].[CategoryCustoms_1],
-	[x].[CategoryDimensions_1],
-	[x].[CategoryQuality_1],
-	[x].[CategoryTemperature_1],
-	[x].[Id_6],
-	[x].[BatchNumber],
-	[x].[BundleUnit],
-	[x].[ProductStatus],
-	[x].[CustomField1_1],
-	[x].[CustomField2_1],
-	[x].[CustomField3_1],
-	[x].[Status_1],
-	[x].[CategoryABC_2],
-	[x].[HeightClass],
-	[x].[Count_1],
-	[x].[CountLocked],
+	[x_1].[Id],
+	[x_1].[AisleID],
+	[x_1].[MaterialID],
+	[x_1].[Id_1],
+	[x_1].[AisleNumber],
+	[x_1].[PlantID],
+	[x_1].[Name],
+	[x_1].[Id_2],
+	[x_1].[MaterialNumber],
+	[x_1].[MaterialDescription_1],
+	[x_1].[MaterialDescription_2],
+	[x_1].[MaterialDescription_3],
+	[x_1].[CategoryABC],
+	[x_1].[CategoryCustoms],
+	[x_1].[CategoryDimensions],
+	[x_1].[CategoryQuality],
+	[x_1].[CategoryTemperature],
+	[x_1].[Id_3],
+	[x_1].[Id_4],
+	[x_1].[Status],
+	[x_1].[ResourceLabel],
+	[x_1].[CustomField1],
+	[x_1].[CustomField2],
+	[x_1].[CustomField3],
+	[x_1].[CustomLong1],
+	[x_1].[CustomLong2],
+	[x_1].[CustomLong3],
+	[x_1].[Id_5],
+	[x_1].[MaterialNumber_1],
+	[x_1].[MaterialDescription_1_1],
+	[x_1].[MaterialDescription_2_1],
+	[x_1].[MaterialDescription_3_1],
+	[x_1].[CategoryABC_1],
+	[x_1].[CategoryCustoms_1],
+	[x_1].[CategoryDimensions_1],
+	[x_1].[CategoryQuality_1],
+	[x_1].[CategoryTemperature_1],
+	[x_1].[Id_6],
+	[x_1].[BatchNumber],
+	[x_1].[BundleUnit],
+	[x_1].[ProductStatus],
+	[x_1].[CustomField1_1],
+	[x_1].[CustomField2_1],
+	[x_1].[CustomField3_1],
+	[x_1].[Status_1],
+	[x_1].[CategoryABC_2],
+	[x_1].[HeightClass],
+	[x_1].[Count_1],
+	[x_1].[CountLocked],
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_1]
+				[RefOutfeedTransportOrderResourceDTO] [x_2]
 			WHERE
-				[x_1].[ResourceID] = [x].[Id_4]
+				[x_2].[ResourceID] = [x_1].[Id_4]
 		)
 			THEN 1
 		ELSE 0
@@ -218,15 +232,15 @@ SELECT
 			SELECT
 				*
 			FROM
-				[CTE_1] [x_2]
+				[CTE_1] [x_3]
 			WHERE
-				[x_2].[IR_ResourceID] = [x].[Id_4] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+				[x_3].[IR_ResourceID] = [x_1].[Id_4] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
 						*
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
-						[y].[Id] = [x_2].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
+						[y].[Id] = [x_3].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
 				))
 		)
 			THEN 1
@@ -334,7 +348,7 @@ FROM
 				LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [t1].[c1] AND [i1].[RN] = 1
 				LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
 				LEFT JOIN [StorageShelfDTO] [a2] ON [t1].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
-	) [x]
+	) [x_1]
 
 BeforeExecute
 -- SQLite.Classic SQLite

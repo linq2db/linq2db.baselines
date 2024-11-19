@@ -22,6 +22,8 @@ FROM
 	) t1
 WHERE
 	ROWNUM <= 1
+ORDER BY
+	t1."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -47,4 +49,6 @@ FROM
 	) t1
 WHERE
 	ROWNUM <= 1
+ORDER BY
+	t1."ParentID"
 
