@@ -525,7 +525,6 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	'Discriminator',
 	"a_Book"."Discriminator",
 	"a_Book"."BookName"
 FROM
