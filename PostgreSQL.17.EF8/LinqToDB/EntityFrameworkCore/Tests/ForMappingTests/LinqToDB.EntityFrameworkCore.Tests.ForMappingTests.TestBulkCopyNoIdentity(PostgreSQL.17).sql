@@ -19,8 +19,8 @@ INSERT INTO "NoIdentity"
 	"Name"
 )
 VALUES
-('59e4fc90-4d42-4c5c-b292-a1959608de6e'::uuid,'John Doe'),
-('bdd5f256-675e-4146-b715-e69dcf297536'::uuid,'Jane Doe')
+('b36291d0-6909-45e5-9c42-e8fcb5966c5a'::uuid,'John Doe'),
+('14bb68f0-39b5-48d7-877e-bf25ba6412be'::uuid,'Jane Doe')
 
 
 

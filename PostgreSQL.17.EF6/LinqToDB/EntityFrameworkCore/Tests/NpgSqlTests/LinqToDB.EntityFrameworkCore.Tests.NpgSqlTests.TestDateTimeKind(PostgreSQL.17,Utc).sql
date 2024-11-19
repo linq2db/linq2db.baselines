@@ -1,6 +1,6 @@
 ﻿--  PostgreSQL.9.3 PostgreSQL
 DECLARE @dt Timestamp -- DateTime2
-SET     @dt = '2024-11-18 18:51:05.713'::timestamp
+SET     @dt = '2024-11-19 10:16:52.824'::timestamp
 
 SELECT
 	e."Id",
@@ -18,7 +18,7 @@ WHERE
 
 --  PostgreSQL.9.3 PostgreSQL
 DECLARE @ldt Timestamp -- DateTime2
-SET     @ldt = 11/18/2024 18:51:05
+SET     @ldt = 11/19/2024 10:16:52
 
 SELECT
 	e."Id",
@@ -36,7 +36,7 @@ WHERE
 
 --  PostgreSQL.9.3 PostgreSQL
 DECLARE @dt TimestampTz -- DateTime
-SET     @dt = '2024-11-18 18:51:05.713'::timestamp
+SET     @dt = '2024-11-19 10:16:52.824'::timestamp
 
 SELECT
 	e."Id",
@@ -54,7 +54,7 @@ WHERE
 
 --  PostgreSQL.9.3 PostgreSQL
 DECLARE @dto TimestampTz -- DateTime
-SET     @dto = '2024-11-18T18:51:05.7136943+00:00'
+SET     @dto = '2024-11-19T10:16:52.8249677+00:00'
 
 SELECT
 	e."Id",
@@ -72,7 +72,7 @@ WHERE
 
 --  PostgreSQL.9.3 PostgreSQL
 DECLARE @ins TimestampTz -- DateTime
-SET     @ins = 2024-11-18T18:51:05Z
+SET     @ins = 2024-11-19T10:16:52Z
 
 SELECT
 	e."Id",
