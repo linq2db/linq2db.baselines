@@ -20,16 +20,12 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	CAST('MAX' AS NVarChar(255)) as [c1],
-	MAX([r].[PersonID]) as [c2],
-	NULL as [c3]
+	MAX([r].[PersonID]) as [c1]
 FROM
 	[Person] [r]
 UNION ALL
 SELECT
-	NULL as [c1],
-	NULL as [c2],
-	[r_1].[PersonID] as [c3]
+	[r_1].[PersonID] as [c1]
 FROM
 	[Person] [r_1]
 
