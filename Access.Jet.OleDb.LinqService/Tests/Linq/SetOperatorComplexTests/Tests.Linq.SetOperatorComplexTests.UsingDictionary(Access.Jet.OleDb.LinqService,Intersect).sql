@@ -501,7 +501,6 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT
-	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM
