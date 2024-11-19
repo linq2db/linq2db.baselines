@@ -22,16 +22,12 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toString('MAX') as c1,
-	maxOrNull(r.PersonID) as c2,
-	toInt32(NULL) as c3
+	maxOrNull(r.PersonID) as c1
 FROM
 	Person r
 UNION ALL
 SELECT
-	toString(NULL) as c1,
-	toInt32(NULL) as c2,
-	r_1.PersonID as c3
+	r_1.PersonID as c1
 FROM
 	Person r_1
 
