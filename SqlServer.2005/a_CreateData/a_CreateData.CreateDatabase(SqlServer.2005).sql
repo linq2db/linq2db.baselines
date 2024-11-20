@@ -574,28 +574,28 @@ CREATE TABLE AllTypes
 
 	xmlDataType              xml               NULL,
 
--- SKIP SqlServer.2005 END
 
--- SKIP SqlServer.2008 BEGIN
--- SKIP SqlServer.2008.MS BEGIN
--- SKIP SqlServer.2012 BEGIN
--- SKIP SqlServer.2012.MS BEGIN
--- SKIP SqlServer.2014 BEGIN
--- SKIP SqlServer.2014.MS BEGIN
--- SKIP SqlServer.2016 BEGIN
--- SKIP SqlServer.2016.MS BEGIN
--- SKIP SqlServer.2017 BEGIN
--- SKIP SqlServer.2017.MS BEGIN
--- SKIP SqlServer.2019 BEGIN
--- SKIP SqlServer.2019.MS BEGIN
--- SKIP SqlServer.2022 BEGIN
--- SKIP SqlServer.2022.MS BEGIN
--- SKIP SqlServer.SA BEGIN
--- SKIP SqlServer.SA.MS BEGIN
--- SKIP SqlServer.Contained BEGIN
--- SKIP SqlServer.Contained.MS BEGIN
--- SKIP SqlServer.Azure BEGIN
--- SKIP SqlServer.Azure.MS BEGIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	datetime2DataType        varchar(50)       NULL,
 	datetimeoffsetDataType   varchar(50)       NULL,
 	datetimeoffset0DataType  varchar(50)       NULL,
@@ -608,26 +608,26 @@ CREATE TABLE AllTypes
 	datetimeoffset7DataType  varchar(50)       NULL,
 	dateDataType             varchar(50)       NULL,
 	timeDataType             varchar(50)       NULL
--- SKIP SqlServer.2008 END
--- SKIP SqlServer.2008.MS END
--- SKIP SqlServer.2012 END
--- SKIP SqlServer.2012.MS END
--- SKIP SqlServer.2014 END
--- SKIP SqlServer.2014.MS END
--- SKIP SqlServer.2016 END
--- SKIP SqlServer.2016.MS END
--- SKIP SqlServer.2017 END
--- SKIP SqlServer.2017.MS END
--- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.MS END
--- SKIP SqlServer.2022 END
--- SKIP SqlServer.2022.MS END
--- SKIP SqlServer.SA END
--- SKIP SqlServer.SA.MS END
--- SKIP SqlServer.Contained END
--- SKIP SqlServer.Contained.MS END
--- SKIP SqlServer.Azure END
--- SKIP SqlServer.Azure.MS END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ) ON [PRIMARY]
 
@@ -673,9 +673,6 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2005
-
--- SKIP SqlServer.2005 END
-
 
 -- GetParentByID function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'GetParentByID')
@@ -735,9 +732,6 @@ CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT ID
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlServer.Azure BEGIN
--- SKIP SqlServer.Azure.MS BEGIN
-
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
 BeforeExecute
@@ -747,10 +741,6 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This ChildID c
 
 BeforeExecute
 -- SqlServer.2005
-
--- SKIP SqlServer.Azure END
--- SKIP SqlServer.Azure.MS END
-
 
 CREATE FUNCTION GetParentByID(@id int)
 RETURNS TABLE
@@ -794,28 +784,6 @@ BEGIN DROP TABLE LinqDataTypes END
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlServer.2005 END
-
--- SKIP SqlServer.2008 BEGIN
--- SKIP SqlServer.2008.MS BEGIN
--- SKIP SqlServer.2012 BEGIN
--- SKIP SqlServer.2012.MS BEGIN
--- SKIP SqlServer.2014 BEGIN
--- SKIP SqlServer.2014.MS BEGIN
--- SKIP SqlServer.2016 BEGIN
--- SKIP SqlServer.2016.MS BEGIN
--- SKIP SqlServer.2017 BEGIN
--- SKIP SqlServer.2017.MS BEGIN
--- SKIP SqlServer.2019 BEGIN
--- SKIP SqlServer.2019.MS BEGIN
--- SKIP SqlServer.2022 BEGIN
--- SKIP SqlServer.2022.MS BEGIN
--- SKIP SqlServer.SA BEGIN
--- SKIP SqlServer.SA.MS BEGIN
--- SKIP SqlServer.Contained BEGIN
--- SKIP SqlServer.Contained.MS BEGIN
--- SKIP SqlServer.Azure BEGIN
--- SKIP SqlServer.Azure.MS BEGIN
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -833,27 +801,6 @@ CREATE TABLE LinqDataTypes
 
 BeforeExecute
 -- SqlServer.2005
-
--- SKIP SqlServer.2008 END
--- SKIP SqlServer.2008.MS END
--- SKIP SqlServer.2012 END
--- SKIP SqlServer.2012.MS END
--- SKIP SqlServer.2014 END
--- SKIP SqlServer.2014.MS END
--- SKIP SqlServer.2016 END
--- SKIP SqlServer.2016.MS END
--- SKIP SqlServer.2017 END
--- SKIP SqlServer.2017.MS END
--- SKIP SqlServer.2019 END
--- SKIP SqlServer.2019.MS END
--- SKIP SqlServer.2022 END
--- SKIP SqlServer.2022.MS END
--- SKIP SqlServer.SA END
--- SKIP SqlServer.SA.MS END
--- SKIP SqlServer.Contained END
--- SKIP SqlServer.Contained.MS END
--- SKIP SqlServer.Azure END
--- SKIP SqlServer.Azure.MS END
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
@@ -1015,9 +962,6 @@ SELECT -12345678901234.5678901234567,                            NULL,          
 BeforeExecute
 -- SqlServer.2005
 
--- SKIP SqlServer.2005 END
-
-
 -- merge test tables
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge1') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge1 END
@@ -1055,11 +999,11 @@ CREATE TABLE TestMerge1
 	FieldFloat      FLOAT(24)         NULL,
 	FieldDouble     FLOAT(53)         NULL,
 	FieldDateTime   DATETIME          NULL,
--- SKIP SqlServer.2005 END
+
 	FieldBinary     VARBINARY(20)     NULL,
 	FieldGuid       UNIQUEIDENTIFIER  NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
--- SKIP SqlServer.2005 END
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL
 )
@@ -1085,11 +1029,11 @@ CREATE TABLE TestMerge2
 	FieldFloat      FLOAT(24)         NULL,
 	FieldDouble     FLOAT(53)         NULL,
 	FieldDateTime   DATETIME          NULL,
--- SKIP SqlServer.2005 END
+
 	FieldBinary     VARBINARY(20)     NULL,
 	FieldGuid       UNIQUEIDENTIFIER  NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
--- SKIP SqlServer.2005 END
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL
 )
@@ -1253,8 +1197,6 @@ CREATE TABLE TestSchema.SameTableName
 
 BeforeExecute
 -- SqlServer.2005
-
--- SKIP SqlServer.2005 END
 
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
@@ -1504,8 +1446,6 @@ CREATE TABLE CollatedTable
 
 BeforeExecute
 -- SqlServer.2005
-
--- SKIP SqlServer.2005 END
 
 -- one-to-one (by primary key) relation for scaffold testing
 
