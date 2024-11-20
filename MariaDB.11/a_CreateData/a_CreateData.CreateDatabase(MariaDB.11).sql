@@ -451,16 +451,16 @@ CREATE TABLE TestMerge1
 	FieldGuid       CHAR(36)          NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 	FieldDate       DATE              NULL,
--- SKIP MySql.5.7 BEGIN
--- SKIP MySql.8.0 BEGIN
--- SKIP MySqlConnector.5.7 BEGIN
--- SKIP MySqlConnector.8.0 BEGIN
+
+
+
+
 	FieldTime       TIME(6)           NULL,
--- SKIP MySql.5.7 END
--- SKIP MySql.8.0 END
--- SKIP MySqlConnector.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MariaDB.11 END
+
+
+
+
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL,
 
@@ -492,16 +492,16 @@ CREATE TABLE TestMerge2
 	FieldGuid       CHAR(36)          NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 	FieldDate       DATE              NULL,
--- SKIP MySql.5.7 BEGIN
--- SKIP MySql.8.0 BEGIN
--- SKIP MySqlConnector.5.7 BEGIN
--- SKIP MySqlConnector.8.0 BEGIN
+
+
+
+
 	FieldTime       TIME(6)           NULL,
--- SKIP MySql.5.7 END
--- SKIP MySql.8.0 END
--- SKIP MySqlConnector.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MariaDB.11 END
+
+
+
+
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL,
 
@@ -733,8 +733,8 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Enum` ENUM('one', 'two'),
 	IN `Set` ENUM('one', 'two'),
 
--- SKIP MySql.5.7 BEGIN
--- SKIP MySql.8.0 BEGIN
+
+
 	IN `Json` JSON,
 	IN `Geometry` GEOMETRY,
 	IN `Point` POINT,
@@ -744,8 +744,8 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `MultiLineString` MULTILINESTRING,
 	IN `MultiPolygon` MULTIPOLYGON,
 	IN `GeometryCollection` GEOMETRYCOLLECTION,
--- SKIP MySql.8.0 END
--- SKIP MySql.5.7 END
+
+
 
 	IN `Year` YEAR
 )
@@ -793,8 +793,8 @@ BEGIN
 	`Set`,
 	`Year`
 
--- SKIP MySql.5.7 BEGIN
--- SKIP MySql.8.0 BEGIN
+
+
 	,`Json`,
 	`Geometry`,
 	`Point`,
@@ -804,8 +804,8 @@ BEGIN
 	`MultiLineString`,
 	`MultiPolygon`,
 	`GeometryCollection`
--- SKIP MySql.8.0 END
--- SKIP MySql.5.7 END
+
+
 
 	FROM Person;
 END
@@ -827,11 +827,6 @@ CREATE TABLE `CollatedTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
--- SKIP MySql.8.0 BEGIN
--- SKIP MySqlConnector.8.0 BEGIN
--- SKIP MySql.5.7 BEGIN
--- SKIP MySqlConnector.5.7 BEGIN
 
 CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT) RETURNS INT RETURN i + 3
 
@@ -894,14 +889,6 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 set session sql_mode=default
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
--- SKIP MySqlConnector.5.7 END
--- SKIP MySql.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MySql.8.0 END
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
