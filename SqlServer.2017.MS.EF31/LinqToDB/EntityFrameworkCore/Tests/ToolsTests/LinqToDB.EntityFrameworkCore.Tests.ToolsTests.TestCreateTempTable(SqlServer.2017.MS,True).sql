@@ -29,7 +29,78 @@ CREATE TABLE [tempdb]..[#TestEmployees]
 
 --  SqlServer.2008
 
-DROP TABLE [tempdb]..[#TestEmployees]
+INSERT INTO [tempdb]..[#TestEmployees]
+(
+	[IsDeleted],
+	[EmployeeID],
+	[LastName],
+	[FirstName],
+	[Title],
+	[TitleOfCourtesy],
+	[BirthDate],
+	[HireDate],
+	[Address],
+	[City],
+	[Region],
+	[PostalCode],
+	[Country],
+	[HomePhone],
+	[Extension],
+	[Photo],
+	[Notes],
+	[ReportsTo],
+	[PhotoPath]
+)
+SELECT
+	[e].[IsDeleted],
+	[e].[EmployeeID],
+	[e].[LastName],
+	[e].[FirstName],
+	[e].[Title],
+	[e].[TitleOfCourtesy],
+	[e].[BirthDate],
+	[e].[HireDate],
+	[e].[Address],
+	[e].[City],
+	[e].[Region],
+	[e].[PostalCode],
+	[e].[Country],
+	[e].[HomePhone],
+	[e].[Extension],
+	[e].[Photo],
+	[e].[Notes],
+	[e].[ReportsTo],
+	[e].[PhotoPath]
+FROM
+	[Employees] [e]
+WHERE
+	[e].[IsDeleted] = 0
+
+
+
+--  SqlServer.2008
+
+SELECT
+	COUNT(*)
+FROM
+	[tempdb]..[#TestEmployees] [e]
+WHERE
+	[e].[IsDeleted] = 0
+
+
+
+Parameters:
+@__ef_filter__p_0='?' (DbType = Boolean)
+
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([e].[IsDeleted] <> CAST(1 AS bit))
+
+
+--  SqlServer.2008
+
+IF (OBJECT_ID(N'[tempdb]..[#TestEmployees]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#TestEmployees]
 
 
 

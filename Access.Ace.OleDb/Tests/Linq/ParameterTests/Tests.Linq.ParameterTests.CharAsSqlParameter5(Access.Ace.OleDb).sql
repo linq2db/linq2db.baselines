@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
+DECLARE @s1 WChar(1) -- StringFixedLength
+SET     @s1 = chr(0)
 
 SELECT
-	chr(0)
+	CVar(@s1)
 

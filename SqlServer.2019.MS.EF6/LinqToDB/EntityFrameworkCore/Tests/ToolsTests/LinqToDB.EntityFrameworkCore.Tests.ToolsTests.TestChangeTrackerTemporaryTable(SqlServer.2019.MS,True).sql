@@ -25,6 +25,76 @@ CREATE TABLE [tempdb]..[#Orders]
 
 --  SqlServer.2008 (asynchronously)
 
+INSERT INTO [tempdb]..[#Orders]
+(
+	[IsDeleted],
+	[OrderID],
+	[CustomerID],
+	[EmployeeID],
+	[OrderDate],
+	[RequiredDate],
+	[ShippedDate],
+	[ShipVia],
+	[Freight],
+	[ShipName],
+	[ShipAddress],
+	[ShipCity],
+	[ShipRegion],
+	[ShipPostalCode],
+	[ShipCountry]
+)
+SELECT
+	[e].[IsDeleted],
+	[e].[OrderID],
+	[e].[CustomerID],
+	[e].[EmployeeID],
+	[e].[OrderDate],
+	[e].[RequiredDate],
+	[e].[ShippedDate],
+	[e].[ShipVia],
+	[e].[Freight],
+	[e].[ShipName],
+	[e].[ShipAddress],
+	[e].[ShipCity],
+	[e].[ShipRegion],
+	[e].[ShipPostalCode],
+	[e].[ShipCountry]
+FROM
+	[Orders] [e]
+WHERE
+	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+
+
+
+--  SqlServer.2008
+DECLARE @take Int -- Int32
+SET     @take = 2
+
+SELECT TOP (@take)
+	[e].[IsDeleted],
+	[e].[OrderID],
+	[e].[CustomerID],
+	[e].[EmployeeID],
+	[e].[OrderDate],
+	[e].[RequiredDate],
+	[e].[ShippedDate],
+	[e].[ShipVia],
+	[e].[Freight],
+	[e].[ShipName],
+	[e].[ShipAddress],
+	[e].[ShipCity],
+	[e].[ShipRegion],
+	[e].[ShipPostalCode],
+	[e].[ShipCountry]
+FROM
+	[tempdb]..[#Orders] [e]
+WHERE
+	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+
+
+
+--  SqlServer.2008
+
 IF (OBJECT_ID(N'[tempdb]..[#Orders]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#Orders]
 

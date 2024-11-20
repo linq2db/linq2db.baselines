@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @s1 NVarChar(5) -- String
+SET     @s1 = '--'
 
 SELECT
-	'--' as [c1]
+	@s1 as [c1]
 

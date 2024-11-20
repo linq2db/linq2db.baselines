@@ -28,6 +28,28 @@ CREATE TEMPORARY TABLE `ShadowTable`
 
 
 --  MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @skip Int32
+SET     @skip = 1
+DECLARE @take Int32
+SET     @take = 2
+
+INSERT INTO `ShadowTable`
+(
+	`Id`
+)
+SELECT
+	`p`.`Id`
+FROM
+	`ShadowTable` `p`
+WHERE
+	`p`.`IsDeleted` = 0
+ORDER BY
+	`p`.`Id`
+LIMIT @skip, @take
+
+
+
+--  MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `ShadowTable`
 
