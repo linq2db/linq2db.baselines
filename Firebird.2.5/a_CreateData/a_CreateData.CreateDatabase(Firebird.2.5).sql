@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
--- SKIP Firebird.2.5 END
-
 DROP PROCEDURE "AddIssue792Record";
 
 BeforeExecute
@@ -78,13 +76,7 @@ DROP PROCEDURE "Scalar_ReturnParameter";
 BeforeExecute
 -- Firebird.2.5 Firebird
 
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 END
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
 SELECT 1 FROM rdb$database
--- SKIP Firebird.4 END
--- SKIP Firebird.5 END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -308,14 +300,14 @@ CREATE TABLE "DataTypeTest"
 (
 	"DataTypeID"      INTEGER NOT NULL PRIMARY KEY,
 	"Binary_"         BLOB,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
+
+
+
+
 	"Boolean_"        CHAR(1),
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
 	"Byte_"           SMALLINT,
 	"Bytes_"          BLOB,
 	CHAR_             CHAR(1),
@@ -373,14 +365,14 @@ INSERT INTO "DataTypeTest"
 	 "Xml_")
 VALUES
 	('dddddddddddddddd',
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
+
+
+
+
 	'1'
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
 	,255,'dddddddddddddddd', 'B', 'NOW', 12345.67,
 	1234.567, X'dddddddddddddddddddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
 	1234.123, 'dddddddddddddddd', 'string', 32767, 32768, 200000000,
@@ -430,14 +422,14 @@ CREATE TABLE "LinqDataTypes"
 	"MoneyValue"     decimal(10,4),
 	"DateTimeValue"  timestamp,
 	"DateTimeValue2" timestamp,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
+
+
+
+
 	"BoolValue"      char(1),
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
 	"GuidValue"      CHAR(16) CHARACTER SET OCTETS,
 	"BinaryValue"    blob,
 	"SmallIntValue"  smallint,
@@ -545,7 +537,7 @@ CREATE TABLE "AllTypes"
 	"ncharDataType"            char(20) character set UNICODE_FSS,
 	"nvarcharDataType"         varchar(20) character set UNICODE_FSS,
 
--- SKIP Firebird.2.5 END
+
 
 	"blobDataType"             blob
 );
@@ -589,7 +581,7 @@ VALUES
 	NULL,
 	NULL,
 
--- SKIP Firebird.2.5 END
+
 
 	NULL
 );
@@ -619,7 +611,7 @@ VALUES
 	'23233',
 	'3323',
 
--- SKIP Firebird.2.5 END
+
 
 	'12345'
 );
@@ -796,11 +788,11 @@ BeforeExecute
 -- Person_Delete
 
 CREATE PROCEDURE "Person_Delete"(
-	PersonID INTEGER
+	"PersonID" INTEGER
 	)
 AS
 BEGIN
-	DELETE FROM "Person" WHERE "PersonID" = :PersonID;
+	DELETE FROM "Person" WHERE "PersonID" = :"PersonID";
 END;
 
 BeforeExecute
@@ -1019,14 +1011,14 @@ CREATE TABLE "TestMerge1"
 	"Field5" INTEGER,
 
 	"FieldInt64"      BIGINT,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
+
+
+
+
 	"FieldBoolean"    CHAR(1),
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
 	"FieldString"     VARCHAR(20),
 	"FieldNString"    VARCHAR(20) CHARACTER SET UNICODE_FSS,
 	"FieldChar"       CHAR(1),
@@ -1056,14 +1048,14 @@ CREATE TABLE "TestMerge2"
 	"Field5" INTEGER,
 
 	"FieldInt64"      BIGINT,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
+
+
+
+
 	"FieldBoolean"    CHAR(1),
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
 	"FieldString"     VARCHAR(20),
 	"FieldNString"    VARCHAR(20) CHARACTER SET UNICODE_FSS,
 	"FieldChar"       CHAR(1),
@@ -1092,13 +1084,7 @@ END;
 BeforeExecute
 -- Firebird.2.5 Firebird
 
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
 SELECT 1 FROM rdb$database
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
-
--- SKIP Firebird.2.5 END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -1118,14 +1104,7 @@ CREATE TABLE "CollatedTable"
 BeforeExecute
 -- Firebird.2.5 Firebird
 
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 BEGIN
--- SKIP Firebird.5 BEGIN
 SELECT 1 FROM rdb$database
--- SKIP Firebird.5 END
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
