@@ -75,7 +75,7 @@ AS
 		CAST(5 AS SmallInt),
 		CAST(5 AS SmallInt),
 		CAST(@Guid AS char(16) for bit data),
-		@GuidN,
+		CAST(@GuidN AS char(16) for bit data),
 		Char('ENUM1_VALUE', 11),
 		Char('ENUM2_VALUE', 11),
 		CAST(1 AS smallint),

@@ -14,13 +14,5 @@ CREATE TABLE IF NOT EXISTS `DynamicColumnsTestTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-SELECT
-	COUNT(*)
-FROM
-	`DynamicColumnsTestTable` `x`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 DROP TABLE IF EXISTS `DynamicColumnsTestTable`
 

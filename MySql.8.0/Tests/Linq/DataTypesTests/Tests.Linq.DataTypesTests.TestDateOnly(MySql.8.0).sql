@@ -28,9 +28,9 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Column DateTime
+DECLARE @Column Datetime -- DateTime
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable DateTime
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = '2200-01-01'
 
 SELECT
@@ -65,9 +65,9 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Column DateTime
+DECLARE @Column Datetime -- DateTime
 SET     @Column = '1950-01-01'
-DECLARE @ColumnNullable DateTime
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = NULL
 
 INSERT INTO `DateOnlyTable`
@@ -87,9 +87,9 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Column DateTime
+DECLARE @Column Datetime -- DateTime
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable DateTime
+DECLARE @ColumnNullable Datetime -- DateTime
 SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO `DateOnlyTable`

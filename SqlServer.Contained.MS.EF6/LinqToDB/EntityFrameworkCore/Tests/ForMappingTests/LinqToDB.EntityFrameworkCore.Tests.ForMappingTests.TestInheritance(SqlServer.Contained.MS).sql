@@ -19,3 +19,32 @@ SELECT [i].[Id] FROM @inserted0 i
 ORDER BY [i].[_Position];
 
 
+--  SqlServer.2008
+
+SELECT
+	CASE
+		WHEN [t1].[Discriminator] = N'WithInheritanceA2' THEN 1
+		ELSE 0
+	END,
+	[t1].[Id],
+	[t1].[Discriminator],
+	CASE
+		WHEN [t1].[Discriminator] = N'WithInheritanceA1' THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [t1].[Discriminator] = N'WithInheritanceA' THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [t1].[Discriminator] = N'WithInheritance' THEN 1
+		ELSE 0
+	END
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] = N'WithInheritanceA' OR [t1].[Discriminator] = N'WithInheritanceA1' OR
+	[t1].[Discriminator] = N'WithInheritanceA2'
+
+
+

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @currentDate DateTime
+DECLARE @currentDate Datetime -- DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
-DECLARE @currentDate_1 DateTime
+DECLARE @currentDate_1 Datetime -- DateTime
 SET     @currentDate_1 = '2020-02-29 17:54:55.123'
 
 SELECT

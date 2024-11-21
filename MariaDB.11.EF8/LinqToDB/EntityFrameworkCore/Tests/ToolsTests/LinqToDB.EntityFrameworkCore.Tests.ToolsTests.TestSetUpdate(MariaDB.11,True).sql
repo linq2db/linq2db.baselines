@@ -7,3 +7,18 @@ WHERE (@__ef_filter__p_0 OR NOT (`c`.`IsDeleted`)) OR NOT (`c`.`IsDeleted`)
 LIMIT 1
 
 
+--  MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @CompanyName VarChar(19) -- String
+SET     @CompanyName = 'Alfreds Futterkiste'
+DECLARE @CustomerId VarChar(5) -- String
+SET     @CustomerId = 'ALFKI'
+
+UPDATE
+	`Customers` `e`
+SET
+	`e`.`CompanyName` = @CompanyName
+WHERE
+	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND `e`.`CustomerID` = @CustomerId
+
+
+

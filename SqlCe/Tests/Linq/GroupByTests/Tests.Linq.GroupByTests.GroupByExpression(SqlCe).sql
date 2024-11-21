@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @defValue Int -- Int32
+SET     @defValue = 10
 
 SELECT
-	MIN([gr].[ParentID]) as [c1]
+	Coalesce(MIN([gr].[ParentID]), @defValue) as [c1]
 FROM
 	[Parent] [gr]
 

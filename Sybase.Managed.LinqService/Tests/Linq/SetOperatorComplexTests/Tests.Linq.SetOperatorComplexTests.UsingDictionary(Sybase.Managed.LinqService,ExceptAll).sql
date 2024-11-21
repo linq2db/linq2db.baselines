@@ -513,7 +513,6 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

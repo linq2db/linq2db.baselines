@@ -9,8 +9,8 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS my_table
 (
 	my_col1      Nullable(String),
-	my_other_col Nullable(String),
-	itemType     Int32
+	itemType     Int32,
+	my_other_col Nullable(String)
 )
 ENGINE = Memory()
 
@@ -20,14 +20,14 @@ BeforeExecute
 INSERT INTO my_table
 (
 	my_col1,
-	my_other_col,
-	itemType
+	itemType,
+	my_other_col
 )
 VALUES
 (
 	'MyCol1',
-	NULL,
-	0
+	0,
+	NULL
 )
 
 BeforeExecute
@@ -36,14 +36,14 @@ BeforeExecute
 INSERT INTO my_table
 (
 	my_col1,
-	my_other_col,
-	itemType
+	itemType,
+	my_other_col
 )
 VALUES
 (
 	'MyCol2',
-	NULL,
-	1
+	1,
+	NULL
 )
 
 BeforeExecute
@@ -51,8 +51,8 @@ BeforeExecute
 
 SELECT
 	o.my_col1,
-	o.my_other_col,
-	o.itemType
+	o.itemType,
+	o.my_other_col
 FROM
 	my_table o
 WHERE

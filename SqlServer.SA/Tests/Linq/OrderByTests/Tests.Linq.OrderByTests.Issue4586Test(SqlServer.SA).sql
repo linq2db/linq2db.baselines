@@ -16,6 +16,6 @@ FROM
 WHERE
 	[x].[FirstName] LIKE N'J%' ESCAPE N'~'
 ORDER BY
-	[x].[PersonID]
+	[x].[PersonID] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 

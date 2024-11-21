@@ -8,7 +8,7 @@ SET     @ID = 1
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue
+	BinaryValue = @BinaryValue::BYTE
 WHERE
 	t.ID = @ID
 
@@ -22,7 +22,7 @@ SET     @ID = 2
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue
+	BinaryValue = @BinaryValue::BYTE
 WHERE
 	t.ID = @ID
 

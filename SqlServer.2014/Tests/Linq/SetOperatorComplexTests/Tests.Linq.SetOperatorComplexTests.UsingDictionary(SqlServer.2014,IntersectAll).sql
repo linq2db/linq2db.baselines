@@ -111,7 +111,6 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	N'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

@@ -501,7 +501,6 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

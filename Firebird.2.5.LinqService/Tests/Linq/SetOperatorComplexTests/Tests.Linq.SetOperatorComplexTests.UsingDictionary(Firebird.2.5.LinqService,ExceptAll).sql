@@ -525,7 +525,6 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	'Discriminator',
 	"a_Book"."Discriminator",
 	"a_Book"."BookName"
 FROM

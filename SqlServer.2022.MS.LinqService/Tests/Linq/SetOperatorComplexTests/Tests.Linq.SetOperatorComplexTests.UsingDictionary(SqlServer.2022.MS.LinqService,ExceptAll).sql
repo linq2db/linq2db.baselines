@@ -504,7 +504,6 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	N'Discriminator',
 	[a_Book].[Discriminator],
 	[a_Book].[BookName]
 FROM

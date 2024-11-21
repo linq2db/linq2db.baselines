@@ -19,4 +19,6 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > @n AND [t1].[RN] <= (@n + 1)
+ORDER BY
+	[t1].[ParentID]
 

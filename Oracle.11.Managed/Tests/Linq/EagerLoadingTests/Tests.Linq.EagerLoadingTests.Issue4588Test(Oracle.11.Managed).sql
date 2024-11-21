@@ -227,6 +227,8 @@ FROM
 	) t2
 WHERE
 	t2.RN > :skip
+ORDER BY
+	t2."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

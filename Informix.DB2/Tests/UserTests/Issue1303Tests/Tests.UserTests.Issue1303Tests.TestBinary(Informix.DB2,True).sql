@@ -31,8 +31,8 @@ INSERT INTO Issue1303
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	@Array::BYTE,
+	@Binary::BYTE
 )
 
 BeforeExecute

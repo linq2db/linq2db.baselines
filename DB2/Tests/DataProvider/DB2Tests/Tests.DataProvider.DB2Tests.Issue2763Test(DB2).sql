@@ -971,7 +971,7 @@ SET     @APPLID = ''
 DECLARE @LOCKMODE (1, 0) -- Decimal
 SET     @LOCKMODE = 0
 DECLARE @ISDLOCK VarChar(1) -- String
-SET     @ISDLOCK = chr(0)
+SET     @ISDLOCK = x'00'
 
 SYSIBMADM.DBMS_LOCK.CHECK_DEADLOCK
 
@@ -2604,9 +2604,9 @@ SET     @SCHEMA = ''
 DECLARE @OBJECT_NAME VarChar(128) -- String
 SET     @OBJECT_NAME = ''
 DECLARE @OBJECT_TYPE Char(1) -- StringFixedLength
-SET     @OBJECT_TYPE = chr(0)
+SET     @OBJECT_TYPE = x'00'
 DECLARE @COMMAND_TYPE Char(1) -- StringFixedLength
-SET     @COMMAND_TYPE = chr(0)
+SET     @COMMAND_TYPE = x'00'
 DECLARE @COMMAND_OPT VarChar(1024) -- String
 SET     @COMMAND_OPT = ''
 DECLARE @SAMPLE_CLAUSE VarChar(128) -- String
@@ -2703,17 +2703,17 @@ BeforeExecute
 DECLARE @METHOD_OPT VarChar(1024) -- String
 SET     @METHOD_OPT = ''
 DECLARE @ALLCOLUMNS Char(1) -- StringFixedLength
-SET     @ALLCOLUMNS = chr(0)
+SET     @ALLCOLUMNS = x'00'
 DECLARE @ALLINDEXES Char(1) -- StringFixedLength
-SET     @ALLINDEXES = chr(0)
+SET     @ALLINDEXES = x'00'
 DECLARE @ALLINDEXEDCOLUMNS Char(1) -- StringFixedLength
-SET     @ALLINDEXEDCOLUMNS = chr(0)
+SET     @ALLINDEXEDCOLUMNS = x'00'
 DECLARE @FORTABLE Char(1) -- StringFixedLength
-SET     @FORTABLE = chr(0)
+SET     @FORTABLE = x'00'
 DECLARE @ALLLOCALINDEXES Char(1) -- StringFixedLength
-SET     @ALLLOCALINDEXES = chr(0)
+SET     @ALLLOCALINDEXES = x'00'
 DECLARE @CASCADE Char(1) -- StringFixedLength
-SET     @CASCADE = chr(0)
+SET     @CASCADE = x'00'
 DECLARE @ERRORTEXT VarChar(1024) -- String
 SET     @ERRORTEXT = ''
 
@@ -2726,7 +2726,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETCONTROLDEPENDENCY
 
@@ -2737,7 +2737,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETFUNCTIONDEPENDENCY
 
@@ -2748,7 +2748,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETINDEXDEPENDENCY
 
@@ -2759,7 +2759,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETPACKAGEDEPENDENCY
 
@@ -2770,7 +2770,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETROUTINEDEPENDENCY
 
@@ -2792,7 +2792,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETTABLEDEPENDENCY
 
@@ -2820,7 +2820,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETTRIGGERDEPENDENCY
 
@@ -2831,7 +2831,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETUSAGELISTDEPENDENCY
 
@@ -2842,7 +2842,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETVARIABLEDEPENDENCY
 
@@ -2853,7 +2853,7 @@ SET     @SCHEMA = ''
 DECLARE @NAME VarChar(128) -- String
 SET     @NAME = ''
 DECLARE @BASETYPE Char(1) -- StringFixedLength
-SET     @BASETYPE = chr(0)
+SET     @BASETYPE = x'00'
 
 SYSIBMADM.DBMS_UTILITY.GETVIEWDEPENDENCY
 
@@ -2873,7 +2873,7 @@ BeforeExecute
 DECLARE @CURRENTTOKEN VarChar(1024) -- String
 SET     @CURRENTTOKEN = ''
 DECLARE @OPTION Char(1) -- StringFixedLength
-SET     @OPTION = chr(0)
+SET     @OPTION = x'00'
 DECLARE @ERRORTEXT VarChar(1024) -- String
 SET     @ERRORTEXT = ''
 DECLARE @RESETSTATE VarChar -- String
@@ -3588,7 +3588,7 @@ BeforeExecute
 DECLARE @CACHE_INTERVAL Integer(4) -- Int32
 SET     @CACHE_INTERVAL = 0
 DECLARE @SECTION_TYPE Char(1) -- StringFixedLength
-SET     @SECTION_TYPE = chr(0)
+SET     @SECTION_TYPE = x'00'
 DECLARE @MEMBER SmallInt(2) -- Int16
 SET     @MEMBER = 0
 
@@ -5607,9 +5607,9 @@ SET     @OBJECT_SCHEMA = ''
 DECLARE @OBJECT_NAME VarChar(128) -- String
 SET     @OBJECT_NAME = ''
 DECLARE @FORCE Char(1) -- StringFixedLength
-SET     @FORCE = chr(0)
+SET     @FORCE = x'00'
 DECLARE @DEBUG Char(1) -- StringFixedLength
-SET     @DEBUG = chr(0)
+SET     @DEBUG = x'00'
 
 SYSPROC.ADMIN_REVALIDATE_DB_OBJECTS
 
@@ -5806,7 +5806,7 @@ SYSPROC.AM_GET_RPT
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @MODE Char(1) -- StringFixedLength
-SET     @MODE = chr(0)
+SET     @MODE = x'00'
 DECLARE @TASK_ID Integer(4) -- Int32
 SET     @TASK_ID = 0
 DECLARE @TASK_NAME VarChar(128) -- String
@@ -5814,7 +5814,7 @@ SET     @TASK_NAME = ''
 DECLARE @APPL_FILTER VarChar(32768) -- String
 SET     @APPL_FILTER = ''
 DECLARE @SHOW_LOCK_CHAINS Char(1) -- StringFixedLength
-SET     @SHOW_LOCK_CHAINS = chr(0)
+SET     @SHOW_LOCK_CHAINS = x'00'
 DECLARE @REPORT_ID VarChar(3893) -- String
 SET     @REPORT_ID = ''
 
@@ -5833,7 +5833,7 @@ SET     @USETBTYPE = 0
 DECLARE @STMGTIMESTAMP VarChar(26) -- String
 SET     @STMGTIMESTAMP = ''
 DECLARE @ADDDROPOPTION Char(1) -- StringFixedLength
-SET     @ADDDROPOPTION = chr(0)
+SET     @ADDDROPOPTION = x'00'
 DECLARE @ADDDROPLIST VarChar(6000) -- String
 SET     @ADDDROPLIST = ''
 DECLARE @PNUMBER VarChar(6000) -- String
@@ -5897,7 +5897,7 @@ SYSPROC.AUDIT_ARCHIVE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @DELIMITER VarChar(1) -- String
-SET     @DELIMITER = chr(0)
+SET     @DELIMITER = x'00'
 DECLARE @TARGET_PATH VarChar(1024) -- String
 SET     @TARGET_PATH = ''
 DECLARE @SOURCE_PATH VarChar(1024) -- String
@@ -5981,9 +5981,9 @@ SET     @TABLENAME = ''
 DECLARE @OPERATION_TYPE Integer(4) -- Int32
 SET     @OPERATION_TYPE = 0
 DECLARE @LOAD_TYPE Char(1) -- StringFixedLength
-SET     @LOAD_TYPE = chr(0)
+SET     @LOAD_TYPE = x'00'
 DECLARE @PREV_LOAD_TYPE Char(1) -- StringFixedLength
-SET     @PREV_LOAD_TYPE = chr(0)
+SET     @PREV_LOAD_TYPE = x'00'
 DECLARE @LOCKWITHFORCE Integer(4) -- Int32
 SET     @LOCKWITHFORCE = 0
 DECLARE @SELECTAUTHORITY Integer(4) -- Int32
@@ -6602,7 +6602,7 @@ BeforeExecute
 DECLARE @EXECUTABLE_ID VarChar(32) -- String
 SET     @EXECUTABLE_ID = ''
 DECLARE @SECTION_SOURCE_TYPE Char(1) -- StringFixedLength
-SET     @SECTION_SOURCE_TYPE = chr(0)
+SET     @SECTION_SOURCE_TYPE = x'00'
 DECLARE @SECTION_SOURCE_NAME VarChar(128) -- String
 SET     @SECTION_SOURCE_NAME = ''
 DECLARE @MEMBER Integer(4) -- Int32
@@ -6770,7 +6770,7 @@ BeforeExecute
 DECLARE @LIB_ID Integer(4) -- Int32
 SET     @LIB_ID = 0
 DECLARE @TYPE Char(1) -- StringFixedLength
-SET     @TYPE = chr(0)
+SET     @TYPE = x'00'
 DECLARE @SCHEMA VarChar(128) -- String
 SET     @SCHEMA = ''
 DECLARE @MODULE VarChar(128) -- String
@@ -6869,7 +6869,7 @@ SET     @INTABNAME = ''
 DECLARE @INTIMESTAMP Timestamp(16) -- DateTime
 SET     @INTIMESTAMP = '2020-09-23-00.00.00.000000'
 DECLARE @OUTYESNO Char(1) -- StringFixedLength
-SET     @OUTYESNO = chr(0)
+SET     @OUTYESNO = x'00'
 DECLARE @OUTSQLCODE Integer(4) -- Int32
 SET     @OUTSQLCODE = 0
 
@@ -7132,7 +7132,7 @@ SYSPROC.MON_COLLECT_STATS
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @WAIT Char(1) -- StringFixedLength
-SET     @WAIT = chr(0)
+SET     @WAIT = x'00'
 DECLARE @STATISTICS_TIMESTAMP Timestamp(16) -- DateTime
 SET     @STATISTICS_TIMESTAMP = '2020-09-23-00.00.00.000000'
 
@@ -7513,7 +7513,7 @@ SET     @OUTREMOTESCHEMA = ''
 DECLARE @OUTREMOTETABLE VarChar(128) -- String
 SET     @OUTREMOTETABLE = ''
 DECLARE @OUTREMOTETYPE Char(1) -- StringFixedLength
-SET     @OUTREMOTETYPE = chr(0)
+SET     @OUTREMOTETYPE = x'00'
 DECLARE @OUTREMOTESTAMP Timestamp(16) -- DateTime
 SET     @OUTREMOTESTAMP = '2020-09-23-00.00.00.000000'
 DECLARE @OUTSQLCODE Integer(4) -- Int32
@@ -7546,7 +7546,7 @@ SET     @OUTREMOTESCHEMA = ''
 DECLARE @OUTREMOTETABLE VarChar(128) -- String
 SET     @OUTREMOTETABLE = ''
 DECLARE @OUTREMOTETYPE Char(1) -- StringFixedLength
-SET     @OUTREMOTETYPE = chr(0)
+SET     @OUTREMOTETYPE = x'00'
 DECLARE @OUTREMOTESTAMP Timestamp(16) -- DateTime
 SET     @OUTREMOTESTAMP = '2020-09-23-00.00.00.000000'
 DECLARE @OUTREMOTESTATSTIME Timestamp(16) -- DateTime
@@ -7718,7 +7718,7 @@ SELECT * FROM TABLE(SYSPROC.PD_GET_LOG_MSGS(NULL,NULL))
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ACTION Char(1) -- StringFixedLength
-SET     @ACTION = chr(0)
+SET     @ACTION = x'00'
 DECLARE @MED VarChar(128) -- String
 SET     @MED = ''
 DECLARE @DECISION VarChar(128) -- String
@@ -7733,7 +7733,7 @@ SYSPROC.POLICY_INSTALL
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ACTION Char(1) -- StringFixedLength
-SET     @ACTION = chr(0)
+SET     @ACTION = x'00'
 DECLARE @MED VarChar(128) -- String
 SET     @MED = ''
 DECLARE @DECISION VarChar(128) -- String
@@ -7921,7 +7921,7 @@ SYSPROC.REMOTE_QUERY2
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @SCOPE Char(1) -- StringFixedLength
-SET     @SCOPE = chr(0)
+SET     @SCOPE = x'00'
 DECLARE @CRITERIA VarChar(261) -- String
 SET     @CRITERIA = ''
 
@@ -7930,7 +7930,7 @@ SYSPROC.REORGCHK_IX_STATS
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @SCOPE Char(1) -- StringFixedLength
-SET     @SCOPE = chr(0)
+SET     @SCOPE = x'00'
 DECLARE @CRITERIA VarChar(261) -- String
 SET     @CRITERIA = ''
 
@@ -8476,7 +8476,7 @@ BeforeExecute
 DECLARE @TOOL_NAME VarChar(128) -- String
 SET     @TOOL_NAME = ''
 DECLARE @ACTION Char(1) -- StringFixedLength
-SET     @ACTION = chr(0)
+SET     @ACTION = x'00'
 DECLARE @TABLESPACE_NAME VarChar(128) -- String
 SET     @TABLESPACE_NAME = ''
 DECLARE @SCHEMA_NAME VarChar(128) -- String
@@ -8743,7 +8743,7 @@ SYSPROC.WLM_COLLECT_STATS
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @WAIT Char(1) -- StringFixedLength
-SET     @WAIT = chr(0)
+SET     @WAIT = x'00'
 DECLARE @STATISTICS_TIMESTAMP Timestamp(16) -- DateTime
 SET     @STATISTICS_TIMESTAMP = '2020-09-23-00.00.00.000000'
 

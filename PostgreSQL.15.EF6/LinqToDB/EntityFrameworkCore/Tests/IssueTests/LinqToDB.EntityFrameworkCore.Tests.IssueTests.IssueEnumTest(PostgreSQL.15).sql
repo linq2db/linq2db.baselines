@@ -18,3 +18,13 @@ VALUES (@p4)
 RETURNING "Id";
 
 
+--  PostgreSQL.9.3 PostgreSQL (asynchronously)
+
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"IssueEnum" t1
+
+
+

@@ -138,7 +138,6 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	'Discriminator',
 	a_Book."Discriminator",
 	a_Book."BookName"
 FROM

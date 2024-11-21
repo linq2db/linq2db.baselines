@@ -105,7 +105,6 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	'Discriminator',
 	`a_Book`.`Discriminator`,
 	`a_Book`.`BookName`
 FROM

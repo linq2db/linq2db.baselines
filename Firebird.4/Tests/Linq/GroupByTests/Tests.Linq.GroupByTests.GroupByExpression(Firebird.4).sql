@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
+DECLARE @defValue Integer -- Int32
+SET     @defValue = 10
 
 SELECT
-	MIN("gr"."ParentID")
+	Coalesce(MIN("gr"."ParentID"), CAST(@defValue AS Int))
 FROM
 	"Parent" "gr"
 

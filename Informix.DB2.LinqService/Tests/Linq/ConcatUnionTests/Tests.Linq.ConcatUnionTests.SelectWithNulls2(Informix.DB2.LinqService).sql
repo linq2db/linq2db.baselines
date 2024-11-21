@@ -2,8 +2,8 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID,
-	t1.MoneyValue,
+	NVL(t1.ID, NULL),
+	NVL(t1.MoneyValue, NULL),
 	t1.DateTimeValue,
 	t1.DateTimeValue2,
 	t1.BoolValue,

@@ -16,15 +16,13 @@ CREATE TABLE IF NOT EXISTS "Issue4348Table"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @storeId Integer -- Int32
-SET     @storeId = 1
 
 SELECT
 	i."Id"
 FROM
 	"Issue4348Table" i
 WHERE
-	i."Value" IS NULL OR i."Value" @> '[:storeId]'
+	i."Value" IS NULL OR i."Value" @> '[1]'
 LIMIT 1
 
 BeforeExecute

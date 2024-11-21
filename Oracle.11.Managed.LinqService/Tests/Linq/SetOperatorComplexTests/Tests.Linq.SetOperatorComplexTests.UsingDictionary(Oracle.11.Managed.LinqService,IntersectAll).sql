@@ -549,7 +549,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	'Discriminator',
 	a_Book."Discriminator",
 	a_Book."BookName"
 FROM

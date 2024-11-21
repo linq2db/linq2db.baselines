@@ -15,13 +15,5 @@ ENGINE = Memory()
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-SELECT
-	COUNT(*)
-FROM
-	DynamicColumnsTestTable x
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS DynamicColumnsTestTable
 

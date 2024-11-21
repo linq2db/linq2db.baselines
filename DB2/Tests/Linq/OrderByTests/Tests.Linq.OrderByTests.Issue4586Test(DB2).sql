@@ -14,6 +14,6 @@ FROM
 WHERE
 	"x"."FirstName" LIKE 'J%' ESCAPE '~'
 ORDER BY
-	"x"."PersonID"
+	"x"."PersonID" DESC
 OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 

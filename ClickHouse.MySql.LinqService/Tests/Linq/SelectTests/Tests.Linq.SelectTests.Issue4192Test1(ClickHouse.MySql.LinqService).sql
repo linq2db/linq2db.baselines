@@ -16,16 +16,5 @@ ENGINE = Memory()
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-SELECT
-	i.Name,
-	i.ParentId
-FROM
-	Issue4192TableNotNullable i
-WHERE
-	i.ParentId = 12
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Issue4192TableNotNullable
 

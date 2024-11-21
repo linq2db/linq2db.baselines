@@ -25,4 +25,6 @@ FROM
 	) t3
 WHERE
 	t3.RN > :n
+ORDER BY
+	t3."ChildID"
 

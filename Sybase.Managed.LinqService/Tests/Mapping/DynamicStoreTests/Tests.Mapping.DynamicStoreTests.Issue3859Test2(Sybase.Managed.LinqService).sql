@@ -18,14 +18,6 @@ IF (OBJECT_ID(N'DynamicColumnsTestTable') IS NULL)
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT
-	COUNT(*)
-FROM
-	[DynamicColumnsTestTable] [x]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'DynamicColumnsTestTable') IS NOT NULL)
 	DROP TABLE [DynamicColumnsTestTable]
 
