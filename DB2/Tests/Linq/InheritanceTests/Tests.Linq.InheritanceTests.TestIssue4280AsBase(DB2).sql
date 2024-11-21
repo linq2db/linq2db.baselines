@@ -76,10 +76,18 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."DeviceType",
+	CASE
+		WHEN "t1"."DeviceType" = 'TV' THEN 1
+		ELSE 0
+	END,
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."Location"
+	"t1"."DeviceType",
+	"t1"."Location",
+	CASE
+		WHEN "t1"."DeviceType" = 'DISPLAY' THEN 1
+		ELSE 0
+	END
 FROM
 	"Issue4280" "t1"
 ORDER BY
@@ -126,10 +134,18 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."DeviceType",
+	CASE
+		WHEN "t1"."DeviceType" = 'TV' THEN 1
+		ELSE 0
+	END,
 	"t1"."Id",
 	"t1"."SerialNumber",
-	"t1"."Location"
+	"t1"."DeviceType",
+	"t1"."Location",
+	CASE
+		WHEN "t1"."DeviceType" = 'DISPLAY' THEN 1
+		ELSE 0
+	END
 FROM
 	"Issue4280" "t1"
 ORDER BY
