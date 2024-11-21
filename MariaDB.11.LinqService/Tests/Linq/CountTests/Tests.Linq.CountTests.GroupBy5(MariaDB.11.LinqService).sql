@@ -9,11 +9,11 @@ SELECT
 FROM
 	(
 		SELECT
+			MAX(`g_1`.`ChildID`) as `MAX_1`,
 			COUNT(CASE
 				WHEN `g_1`.`ChildID` > 20 THEN 1
 				ELSE NULL
 			END) as `COUNT_1`,
-			MAX(`g_1`.`ChildID`) as `MAX_1`,
 			COUNT(CASE
 				WHEN `g_1`.`ChildID` > 10 THEN 1
 				ELSE NULL
