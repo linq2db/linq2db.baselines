@@ -66,10 +66,11 @@ FROM
 						Card t
 					WHERE
 						t.OwnerId = a_Owner.Id
-				) as CountOfTCards
+				) as CountOfTCards,
+				a_Owner.Id as Id_1
 			FROM
 				Client a_Owner
-		) t1 ON t1.Id = t2.OwnerId
+		) t1 ON t1.Id_1 = t2.OwnerId
 
 BeforeExecute
 -- Firebird.5 Firebird4
