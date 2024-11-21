@@ -203,6 +203,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip
+ORDER BY
+	[t2].[BookType] DESC
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
