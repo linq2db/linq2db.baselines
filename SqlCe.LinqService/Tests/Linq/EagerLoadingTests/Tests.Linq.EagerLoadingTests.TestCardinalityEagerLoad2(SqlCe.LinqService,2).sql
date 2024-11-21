@@ -551,7 +551,8 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[FK]
+	[t1].[FK],
+	[t1].[Id] as [Id_1]
 FROM
 	[EntityMA] [t1]
 

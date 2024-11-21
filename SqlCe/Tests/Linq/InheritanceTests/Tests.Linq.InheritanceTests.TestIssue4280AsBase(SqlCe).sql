@@ -68,10 +68,18 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[DeviceType],
+	CASE
+		WHEN [t1].[DeviceType] = 'TV' THEN 1
+		ELSE 0
+	END as [c1],
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[Location]
+	[t1].[DeviceType],
+	[t1].[Location],
+	CASE
+		WHEN [t1].[DeviceType] = 'DISPLAY' THEN 1
+		ELSE 0
+	END as [c2]
 FROM
 	[Issue4280] [t1]
 ORDER BY
@@ -118,10 +126,18 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[DeviceType],
+	CASE
+		WHEN [t1].[DeviceType] = 'TV' THEN 1
+		ELSE 0
+	END as [c1],
 	[t1].[Id],
 	[t1].[SerialNumber],
-	[t1].[Location]
+	[t1].[DeviceType],
+	[t1].[Location],
+	CASE
+		WHEN [t1].[DeviceType] = 'DISPLAY' THEN 1
+		ELSE 0
+	END as [c2]
 FROM
 	[Issue4280] [t1]
 ORDER BY
