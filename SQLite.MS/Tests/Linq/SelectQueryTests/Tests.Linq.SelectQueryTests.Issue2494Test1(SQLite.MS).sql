@@ -30,6 +30,12 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	1
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -40,6 +46,12 @@ SELECT
 			THEN 1
 		ELSE 0
 	END
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	1
 
 BeforeExecute
 -- SQLite.MS SQLite
