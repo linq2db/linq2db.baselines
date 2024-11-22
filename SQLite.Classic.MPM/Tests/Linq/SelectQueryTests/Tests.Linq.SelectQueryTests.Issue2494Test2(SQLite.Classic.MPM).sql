@@ -28,6 +28,12 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	1
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -54,6 +60,12 @@ SELECT
 			THEN 1
 		ELSE 0
 	END
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
