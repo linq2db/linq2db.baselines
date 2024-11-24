@@ -32,11 +32,11 @@ DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
@@ -77,11 +77,11 @@ DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
@@ -122,11 +122,11 @@ DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM
@@ -167,11 +167,11 @@ DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[p].[PersonID]
+	[p1].[PersonID]
 FROM
-	[Person] [p]
+	[Person] [p1]
 WHERE
-	[p].[PersonID] IN (
+	[p1].[PersonID] IN (
 		SELECT
 			[x].[Id]
 		FROM

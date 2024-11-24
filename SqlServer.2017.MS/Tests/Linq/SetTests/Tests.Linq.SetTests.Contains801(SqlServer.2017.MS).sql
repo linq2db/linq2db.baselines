@@ -2,7 +2,6 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

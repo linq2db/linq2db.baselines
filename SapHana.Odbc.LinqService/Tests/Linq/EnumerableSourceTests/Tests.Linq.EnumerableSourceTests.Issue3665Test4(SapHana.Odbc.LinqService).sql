@@ -2,12 +2,11 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x"."PersonID",
-	"y"."value__"
+	"x"."PersonID" + "y"."item"
 FROM
 	"Person" "x"
 		CROSS JOIN (
-			SELECT 1 AS "value__" FROM DUMMY
+			SELECT 1 AS "item" FROM DUMMY
 			UNION ALL
 			SELECT 3 FROM DUMMY) "y"
 

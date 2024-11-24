@@ -15,3 +15,20 @@ VALUES (i.[Discriminator])
 OUTPUT INSERTED.[Id], i._Position;
 
 
+--  SqlServer.2022
+
+SELECT
+	IIF([t1].[Discriminator] = N'WithInheritanceA2', 1, 0),
+	[t1].[Id],
+	[t1].[Discriminator],
+	IIF([t1].[Discriminator] = N'WithInheritanceA1', 1, 0),
+	IIF([t1].[Discriminator] = N'WithInheritanceA', 1, 0),
+	IIF([t1].[Discriminator] = N'WithInheritance', 1, 0)
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] = N'WithInheritanceA' OR [t1].[Discriminator] = N'WithInheritanceA1' OR
+	[t1].[Discriminator] = N'WithInheritanceA2'
+
+
+

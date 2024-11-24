@@ -15,18 +15,16 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @p Timestamp -- DateTime2
 SET     @p = NULL
-DECLARE @p_1 Timestamp -- DateTime2
-SET     @p_1 = NULL
 
 SELECT
 	t3."Id",
 	CASE
-		WHEN t3."Value_1" IS NOT NULL THEN t3."Value_1"
+		WHEN t3.c1 IS NOT NULL THEN t3.c1
 		ELSE :p
 	END,
 	CASE
-		WHEN t3."Value_1_1" IS NOT NULL THEN t3."Value_1_1"
-		ELSE :p_1
+		WHEN t3.c2 IS NOT NULL THEN t3.c2
+		ELSE :p
 	END
 FROM
 	(
@@ -44,7 +42,7 @@ FROM
 				WHERE
 					t1."Key" = outfeed."Id"
 				LIMIT 1
-			) as "Value_1",
+			) as c1,
 			(
 				SELECT
 					t2."Value"
@@ -56,7 +54,7 @@ FROM
 				WHERE
 					t2."Key" = outfeed."Id"
 				LIMIT 1
-			) as "Value_1_1"
+			) as c2
 		FROM
 			"Test3847_OutfeedTransportOrder" outfeed
 	) t3

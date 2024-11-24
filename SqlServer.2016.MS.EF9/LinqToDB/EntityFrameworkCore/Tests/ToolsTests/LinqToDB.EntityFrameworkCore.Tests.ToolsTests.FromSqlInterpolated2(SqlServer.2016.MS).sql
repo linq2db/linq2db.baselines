@@ -13,3 +13,21 @@ CROSS JOIN (
 WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
 
 
+--  SqlServer.2016 (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 1
+
+SELECT
+	[c2].[IsDeleted],
+	[c2].[CategoryID],
+	[c2].[CategoryName],
+	[c2].[Description],
+	[c2].[Picture]
+FROM
+	[Categories] [c1]
+		CROSS JOIN (
+			SELECT * FROM [dbo].[Categories] WHERE CategoryId = @p
+		) [c2]
+
+
+

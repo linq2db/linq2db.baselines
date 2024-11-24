@@ -48,4 +48,6 @@ FROM
 	) t6
 WHERE
 	t6.RN > 2
+ORDER BY
+	t6."ChildID"
 

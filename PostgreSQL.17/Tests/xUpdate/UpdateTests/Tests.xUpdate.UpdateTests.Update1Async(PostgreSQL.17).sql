@@ -42,13 +42,13 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1002
+DECLARE @p Integer -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	"Parent" p
 WHERE
-	p."ParentID" = :ParentID
+	p."ParentID" = :p
 

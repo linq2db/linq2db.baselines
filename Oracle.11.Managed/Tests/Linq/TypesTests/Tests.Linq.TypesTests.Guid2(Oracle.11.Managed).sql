@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @GuidValue Raw(16) -- Binary
-SET     @GuidValue = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B')
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B')
 
 SELECT
 	p.ID,
@@ -15,12 +15,12 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue AND ROWNUM <= 2
+	p."GuidValue" = :p AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @GuidValue Raw(16) -- Binary
-SET     @GuidValue = HEXTORAW('C070F9D2AC3587499CD55BADB1757436')
+DECLARE @p Raw(16) -- Binary
+SET     @p = HEXTORAW('C070F9D2AC3587499CD55BADB1757436')
 
 SELECT
 	p.ID,
@@ -34,5 +34,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue AND ROWNUM <= 2
+	p."GuidValue" = :p AND ROWNUM <= 2
 

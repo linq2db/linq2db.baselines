@@ -34,7 +34,8 @@ VALUES
 (7,N'String7'),
 (8,N'String8'),
 (9,NULL),
-(10,N'String10')
+(10,N'String10'),
+(11,N'-1')
 
 BeforeExecute
 -- SqlServer.2008
@@ -44,6 +45,10 @@ SELECT
 	CASE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [x].[StringProp] = N'2' THEN 1
 		ELSE 0
 	END,
 	[x].[StringProp],

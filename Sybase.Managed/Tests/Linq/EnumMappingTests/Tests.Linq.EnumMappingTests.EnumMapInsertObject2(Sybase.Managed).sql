@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 102
+DECLARE @p Integer -- Int32
+SET     @p = 102
 
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] < @Id
+	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -43,12 +43,12 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 102
+DECLARE @p Integer -- Int32
+SET     @p = 102
 
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] < @Id
+	[r].[ID] >= 101 AND [r].[ID] < @p
 

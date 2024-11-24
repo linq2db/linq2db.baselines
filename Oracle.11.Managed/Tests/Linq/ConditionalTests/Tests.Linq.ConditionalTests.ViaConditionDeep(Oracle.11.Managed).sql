@@ -44,6 +44,7 @@ INSERT ALL
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (8,'String8')
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (9,NULL)
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (10,'String10')
+	INTO "ConditionalData" ("Id", "StringProp") VALUES (11,'-1')
 SELECT * FROM dual
 
 BeforeExecute
@@ -53,6 +54,10 @@ SELECT
 	x."Id",
 	CASE
 		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN x."StringProp" = '2' THEN 1
 		ELSE 0
 	END,
 	x."StringProp",

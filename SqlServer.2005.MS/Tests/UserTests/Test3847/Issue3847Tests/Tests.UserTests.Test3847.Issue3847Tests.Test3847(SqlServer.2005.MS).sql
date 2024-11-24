@@ -17,18 +17,16 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p DateTime
 SET     @p = NULL
-DECLARE @p_1 DateTime
-SET     @p_1 = NULL
 
 SELECT
 	[t3].[Id],
 	CASE
-		WHEN [t3].[Value_1] IS NOT NULL THEN [t3].[Value_1]
+		WHEN [t3].[c1] IS NOT NULL THEN [t3].[c1]
 		ELSE @p
 	END,
 	CASE
-		WHEN [t3].[Value_1_1] IS NOT NULL THEN [t3].[Value_1_1]
-		ELSE @p_1
+		WHEN [t3].[c2] IS NOT NULL THEN [t3].[c2]
+		ELSE @p
 	END
 FROM
 	(
@@ -46,7 +44,7 @@ FROM
 						SELECT 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627', CAST('2020-02-29T17:54:55.123' AS DATETIME)) [t1]
 				WHERE
 					[t1].[Key] = [outfeed].[Id]
-			) as [Value_1],
+			) as [c1],
 			(
 				SELECT TOP (1)
 					[t2].[Value]
@@ -57,7 +55,7 @@ FROM
 						SELECT '656606a4-6e36-4431-add6-85f886a1c7c2', CAST('2020-02-29T17:54:55.123' AS DATETIME)) [t2]
 				WHERE
 					[t2].[Key] = [outfeed].[Id]
-			) as [Value_1_1]
+			) as [c2]
 		FROM
 			[Test3847_OutfeedTransportOrder] [outfeed]
 	) [t3]

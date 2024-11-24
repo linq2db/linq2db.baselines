@@ -2,7 +2,6 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	2,
 	`ch`.`ChildID`,
 	`gc`.`GrandChildID`
 FROM

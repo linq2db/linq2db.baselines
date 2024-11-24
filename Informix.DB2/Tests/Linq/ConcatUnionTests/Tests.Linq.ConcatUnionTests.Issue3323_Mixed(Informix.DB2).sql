@@ -54,7 +54,7 @@ BeforeExecute
 
 SELECT
 	r.Id + 1,
-	r.Text
+	NVL(r.Text, NULL)
 FROM
 	Issue3323Table r
 UNION ALL

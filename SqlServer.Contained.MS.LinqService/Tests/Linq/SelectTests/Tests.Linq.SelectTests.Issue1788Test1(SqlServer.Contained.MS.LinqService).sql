@@ -82,7 +82,6 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	IIF([l].[Value1] IS NOT NULL, 1, 0),
 	[l].[Value1]
 FROM
 	[Table1788] [p]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT FIRST 1
 	"x"."ParentID",
@@ -9,7 +9,7 @@ SELECT FIRST 1
 FROM
 	"Parent" "x"
 WHERE
-	"x"."ParentID" = @ParentID
+	"x"."ParentID" = @p
 ORDER BY
 	"x"."ParentID" DESC
 

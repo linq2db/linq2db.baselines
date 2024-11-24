@@ -30,14 +30,17 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[not_null],
+	[t1].[HasValue],
 	[t1].[Value_1]
 FROM
 	[Request] [a]
 		LEFT JOIN (
 			SELECT
 				[a_Metrics].[Value] as [Value_1],
-				1 as [not_null],
+				CASE
+					WHEN [a_Metrics].[Value] IS NOT NULL THEN 1
+					ELSE 0
+				END as [HasValue],
 				ROW_NUMBER() OVER (PARTITION BY [a_Metrics].[RequestId] ORDER BY [a_Metrics].[RequestId]) as [rn],
 				[a_Metrics].[RequestId]
 			FROM

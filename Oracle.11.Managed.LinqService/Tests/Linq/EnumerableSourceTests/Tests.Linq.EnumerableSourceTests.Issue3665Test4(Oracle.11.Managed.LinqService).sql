@@ -2,12 +2,11 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	x."PersonID",
-	y."value__"
+	x."PersonID" + y."item"
 FROM
 	"Person" x
 		CROSS JOIN (
-			SELECT 1 AS "value__" FROM sys.dual
+			SELECT 1 AS "item" FROM sys.dual
 			UNION ALL
 			SELECT 3 FROM sys.dual) y
 

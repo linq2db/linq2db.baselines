@@ -53,7 +53,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+	`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -111,7 +111,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+	`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

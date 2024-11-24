@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @ID Int -- Int32
-SET     @ID = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT TOP (2)
 	[p].[PersonID],
@@ -12,5 +12,5 @@ SELECT TOP (2)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @ID
+	[p].[PersonID] = @p
 

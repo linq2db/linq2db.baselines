@@ -525,6 +525,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	Char('Discriminator', 255),
 	"a_Book"."Discriminator",
 	"a_Book"."BookName",
 	"a_Book"."BookName"
@@ -536,6 +537,7 @@ WHERE
 	"a_Book"."Discriminator" = 'Roman'
 INTERSECT
 SELECT
+	Char('Discriminator', 255),
 	"a_Book_1"."Discriminator",
 	"a_Book_1"."BookName",
 	"a_Book_1"."BookName"
@@ -578,10 +580,18 @@ BeforeExecute
 SELECT
 	"m_1"."AuthorId",
 	"a_Book"."BookId",
-	"a_Book"."Discriminator",
+	CASE
+		WHEN "a_Book"."Discriminator" = 'Novel' THEN 1
+		ELSE 0
+	END,
 	"a_Book"."BookName",
 	"a_Book"."NovelScore",
-	"a_Book"."RomanScore"
+	CASE
+		WHEN "a_Book"."Discriminator" = 'Roman' THEN 1
+		ELSE 0
+	END,
+	"a_Book"."RomanScore",
+	"a_Book"."Discriminator"
 FROM
 	"Author" "m_1"
 		INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "m_1"."AuthorId"

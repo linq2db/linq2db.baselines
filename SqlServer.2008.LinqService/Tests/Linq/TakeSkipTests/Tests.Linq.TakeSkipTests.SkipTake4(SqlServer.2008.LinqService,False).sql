@@ -30,4 +30,6 @@ FROM
 	) [t4]
 WHERE
 	[t4].[RN] > 2
+ORDER BY
+	[t4].[ChildID]
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = '1'
+DECLARE @p VarChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -12,7 +12,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName
+	`r`.`FirstName` = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -26,12 +26,12 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = '1'
+DECLARE @p VarChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -42,5 +42,5 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName
+	`r`.`FirstName` = @p
 

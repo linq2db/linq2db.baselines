@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID
+	c_1."ParentID" = :p
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = -1
+DECLARE @p Int32
+SET     @p = -1
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID
+	c_1."ParentID" = :p
 

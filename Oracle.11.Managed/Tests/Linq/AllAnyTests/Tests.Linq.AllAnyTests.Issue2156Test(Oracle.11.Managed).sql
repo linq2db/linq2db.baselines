@@ -85,7 +85,7 @@ FROM
 						"Person" e
 				) e_1 ON u."PersonID" = e_1.ID AND e_1."rn" <= 1
 		WHERE
-			(a_Patient."Diagnosis" <> 'Immortality' OR a_Patient."Diagnosis" IS NULL)
+			a_Patient."Diagnosis" <> 'Immortality' OR a_Patient."Diagnosis" IS NULL
 	) t1
 ORDER BY
 	t1.ID

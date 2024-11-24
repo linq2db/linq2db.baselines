@@ -15,8 +15,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @p  -- DateTime
 SET     @p = NULL
-DECLARE @p_1  -- DateTime
-SET     @p_1 = NULL
 
 SELECT
 	[outfeed].[Id],
@@ -26,7 +24,7 @@ SELECT
 	END,
 	CASE
 		WHEN [t4].[Value_1] IS NOT NULL THEN [t4].[Value_1]
-		ELSE @p_1
+		ELSE @p
 	END
 FROM
 	[Test3847_OutfeedTransportOrder] [outfeed]

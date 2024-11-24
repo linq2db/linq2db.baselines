@@ -11,12 +11,11 @@ AS
 	WHERE
 		c_1."ParentID" > 1
 ),
-"LATEST" ("ParentID", "ChildID")
+"LATEST" ("ParentID")
 AS
 (
 	SELECT
-		c4."ParentID",
-		c4."ChildID"
+		c4."ParentID"
 	FROM
 		"Child" c4
 	WHERE

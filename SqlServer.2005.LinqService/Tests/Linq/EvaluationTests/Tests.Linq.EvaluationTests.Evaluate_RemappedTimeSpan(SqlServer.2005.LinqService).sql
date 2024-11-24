@@ -3,7 +3,7 @@
 DECLARE @Zero BigInt -- Int64
 SET     @Zero = 0
 DECLARE @p BigInt -- Int64
-SET     @p = 88888888
+SET     @p = 532266661
 
 SELECT
 	CASE
@@ -13,7 +13,7 @@ SELECT
 			FROM
 				[Person] [p]
 			WHERE
-				@Zero > CAST(Floor(5.988 * @p) AS BigInt)
+				@Zero > @p
 		)
 			THEN 1
 		ELSE 0

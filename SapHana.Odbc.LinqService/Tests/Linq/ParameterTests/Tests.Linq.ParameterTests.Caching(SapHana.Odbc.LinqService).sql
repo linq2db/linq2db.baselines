@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"x"."ParentID",
@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Parent" "x"
 WHERE
-	("x"."ParentID" = ? OR "x"."ParentID" = ?)
+	"x"."ParentID" = ? OR "x"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -24,10 +24,10 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 2
+DECLARE @p  -- Int32
+SET     @p = 3
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"x"."ParentID",
@@ -35,7 +35,7 @@ SELECT
 FROM
 	"Parent" "x"
 WHERE
-	("x"."ParentID" = ? OR "x"."ParentID" = ?)
+	"x"."ParentID" = ? OR "x"."ParentID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

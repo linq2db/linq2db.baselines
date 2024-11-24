@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] IN (N'John', N'Pupkin') OR [p].[LastName] IN (N'John', N'Pupkin'))
+	[p].[FirstName] IN (N'John', N'Pupkin') OR [p].[LastName] IN (N'John', N'Pupkin')
 

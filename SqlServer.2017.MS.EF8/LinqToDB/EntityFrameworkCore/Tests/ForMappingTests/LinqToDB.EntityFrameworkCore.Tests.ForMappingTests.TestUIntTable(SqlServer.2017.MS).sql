@@ -8,3 +8,22 @@ OUTPUT INSERTED.[ID]
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
 
 
+--  SqlServer.2017 (asynchronously)
+DECLARE @field64 Decimal
+SET     @field64 = 5
+
+SELECT TOP (1)
+	[e].[ID],
+	[e].[Field16],
+	[e].[Field32],
+	[e].[Field64],
+	[e].[Field16N],
+	[e].[Field32N],
+	[e].[Field64N]
+FROM
+	[UIntTable] [e]
+WHERE
+	[e].[Field64] = @field64
+
+
+

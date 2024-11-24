@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = -8
+DECLARE @Minute Integer(4) -- Int32
+SET     @Minute = -8
 
 SELECT
-	Extract(minute from ("t"."DateTimeValue" + CAST(@p AS Int) MINUTE))
+	Extract(minute from ("t"."DateTimeValue" + CAST(@Minute AS Int) MINUTE))
 FROM
 	"LinqDataTypes" "t"
 

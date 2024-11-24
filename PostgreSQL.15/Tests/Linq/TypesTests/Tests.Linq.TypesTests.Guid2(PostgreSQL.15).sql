@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
+DECLARE @p Uuid -- Guid
+SET     @p = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
 
 SELECT
 	p."ID",
@@ -15,13 +15,13 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue
+	p."GuidValue" = :p
 LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @GuidValue Uuid -- Guid
-SET     @GuidValue = 'd2f970c0-35ac-4987-9cd5-5badb1757436'::uuid
+DECLARE @p Uuid -- Guid
+SET     @p = 'd2f970c0-35ac-4987-9cd5-5badb1757436'::uuid
 
 SELECT
 	p."ID",
@@ -35,6 +35,6 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue
+	p."GuidValue" = :p
 LIMIT 2
 

@@ -54,4 +54,6 @@ FROM
 	) t6
 WHERE
 	t6.RN > :skip_1
+ORDER BY
+	t6."ChildID"
 

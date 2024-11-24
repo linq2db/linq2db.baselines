@@ -1,0 +1,133 @@
+﻿BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Base"
+		(
+			"Code"   VarChar(255)     NULL,
+			"Id"     Int          NOT NULL,
+			"Name"   VarChar(255)     NULL,
+			"IsMale" Char(1)          NULL,
+			"Age"    Int              NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @Code Varchar2(5) -- String
+SET     @Code = 'Child'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name Varchar2(4) -- String
+SET     @Name = 'Jane'
+DECLARE @IsMale Int16
+SET     @IsMale = 0
+
+INSERT INTO "Base"
+(
+	"Code",
+	"Id",
+	"Name",
+	"IsMale"
+)
+VALUES
+(
+	:Code,
+	:Id,
+	:Name,
+	:IsMale
+)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @Code Varchar2(6) -- String
+SET     @Code = 'Child2'
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name Varchar2 -- String
+SET     @Name = NULL
+DECLARE @Age Int32
+SET     @Age = 10
+
+INSERT INTO "Base"
+(
+	"Code",
+	"Id",
+	"Name",
+	"Age"
+)
+VALUES
+(
+	:Code,
+	:Id,
+	:Name,
+	:Age
+)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+SELECT
+	CASE
+		WHEN e."Code" = 'Child2' THEN 1
+		ELSE 0
+	END,
+	e."Code",
+	e."Id",
+	e."Name",
+	e."Age",
+	CASE
+		WHEN e."Code" = 'Child' THEN 1
+		ELSE 0
+	END,
+	e."IsMale",
+	CASE
+		WHEN e."Code" = 'BaseChild' THEN 1
+		ELSE 0
+	END
+FROM
+	"Base" e
+WHERE
+	CASE
+		WHEN e."Code" = 'BaseChild' OR e."Code" = 'Child' OR e."Code" = 'Child2'
+			THEN CASE
+			WHEN e."Id" <> 0 THEN 1
+			ELSE 0
+		END
+		WHEN e."Id" <> 0 THEN 1
+		ELSE 0
+	END = 1
+ORDER BY
+	e."Id"
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+

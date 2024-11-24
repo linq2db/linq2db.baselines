@@ -72,14 +72,14 @@ AS
 (
 	SELECT
 		"r"."Id",
-		5,
-		5,
+		CAST(5 AS SmallInt),
+		CAST(5 AS SmallInt),
 		CAST(@Guid AS char(16) for bit data),
 		CAST(@GuidN AS char(16) for bit data),
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		Char('ENUM1_VALUE', 11),
+		Char('ENUM2_VALUE', 11),
+		CAST(1 AS smallint),
+		CAST(0 AS smallint)
 	FROM
 		"Issue3360Table1" "r"
 	WHERE

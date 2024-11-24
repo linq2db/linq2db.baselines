@@ -1,0 +1,63 @@
+﻿BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TABLE IF EXISTS `Issue4715Table`
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+CREATE TABLE IF NOT EXISTS `Issue4715Table`
+(
+	`Id`    INT NOT NULL,
+	`Prop1` INT NOT NULL,
+	`Prop2` INT NOT NULL,
+	`Prop3` INT NOT NULL,
+	`Prop4` INT NOT NULL
+)
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @ImplicitPropertyRW Int32
+SET     @ImplicitPropertyRW = 2
+DECLARE @ImplicitPropertyRO Int32
+SET     @ImplicitPropertyRO = 11
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTests Int32
+SET     @Tests_Linq_InterfaceTests_IExplicitInterfaceTests = 3
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTest Int32
+SET     @Tests_Linq_InterfaceTests_IExplicitInterfaceTest = 22
+
+INSERT INTO `Issue4715Table`
+(
+	`Id`,
+	`Prop1`,
+	`Prop2`,
+	`Prop3`,
+	`Prop4`
+)
+VALUES
+(
+	@Id,
+	@ImplicitPropertyRW,
+	@ImplicitPropertyRO,
+	@Tests_Linq_InterfaceTests_IExplicitInterfaceTests,
+	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
+)
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Prop1`,
+	`t1`.`Prop3`
+FROM
+	`Issue4715Table` `t1`
+LIMIT 2
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TABLE IF EXISTS `Issue4715Table`
+

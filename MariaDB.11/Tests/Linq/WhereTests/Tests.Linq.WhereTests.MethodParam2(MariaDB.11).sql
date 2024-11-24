@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int32
-SET     @ID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	`p`.`PersonID`
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @ID
+	`p`.`PersonID` = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int32
-SET     @ID = 2
+DECLARE @p Int32
+SET     @p = 2
 
 SELECT
 	`p`.`PersonID`
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @ID
+	`p`.`PersonID` = @p
 

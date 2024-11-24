@@ -2,7 +2,6 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	2,
 	ch."ChildID",
 	gc."GrandChildID"
 FROM

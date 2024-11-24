@@ -68,8 +68,6 @@ BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
 SET     @param = 100
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 100
 
 INSERT INTO "DestinationTable"
 (
@@ -80,7 +78,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@param_1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(@param AS VarChar(11) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE
@@ -94,13 +92,11 @@ BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
 SET     @param = 100
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 100
 
 SELECT
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@param_1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(@param AS VarChar(11) CHARACTER SET UNICODE_FSS)
 FROM
 	"TableWithData" "s"
 WHERE

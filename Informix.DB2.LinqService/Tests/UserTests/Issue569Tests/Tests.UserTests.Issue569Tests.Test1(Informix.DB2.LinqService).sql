@@ -9,10 +9,10 @@ FROM
 	(
 		SELECT
 			person_1.PersonID,
-			t1.PersonID as PersonID_1,
+			patient_1.PersonID as PersonID_1,
 			person_1.FirstName
 		FROM
-			Patient t1,
+			Patient patient_1,
 			Person person_1
 	) sub
 		LEFT JOIN Doctor doctor_1 ON doctor_1.PersonID = sub.PersonID AND doctor_1.PersonID = sub.PersonID_1

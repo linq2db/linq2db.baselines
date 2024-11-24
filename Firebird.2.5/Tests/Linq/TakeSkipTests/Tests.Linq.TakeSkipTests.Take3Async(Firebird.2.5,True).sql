@@ -9,5 +9,5 @@ SELECT FIRST @take
 FROM
 	"Child" "ch"
 WHERE
-	("ch"."ChildID" > 3 OR "ch"."ChildID" < 4)
+	"ch"."ChildID" > 3 OR "ch"."ChildID" < 4
 

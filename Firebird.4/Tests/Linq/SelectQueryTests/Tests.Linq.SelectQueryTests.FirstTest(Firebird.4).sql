@@ -24,8 +24,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	DateAdd(Day, 1, LOCALTIMESTAMP),
-	DateAdd(Day, 2, LOCALTIMESTAMP)
+	LOCALTIMESTAMP
 FROM rdb$database
 FETCH NEXT 1 ROWS ONLY
 

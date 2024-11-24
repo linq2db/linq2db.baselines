@@ -2,29 +2,29 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
-DECLARE @ID Int32
-SET     @ID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 UPDATE
 	"LinqDataTypes" t
 SET
 	"BinaryValue" = :BinaryValue
 WHERE
-	t.ID = :ID
+	t.ID = :p
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0504030201')
-DECLARE @ID Int32
-SET     @ID = 2
+DECLARE @p Int32
+SET     @p = 2
 
 UPDATE
 	"LinqDataTypes" t
 SET
 	"BinaryValue" = :BinaryValue
 WHERE
-	t.ID = :ID
+	t.ID = :p
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

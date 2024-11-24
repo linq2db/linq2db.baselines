@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = -35
+DECLARE @Second Integer -- Int32
+SET     @Second = -35
 
 SELECT
-	Floor(Extract(second From (t."DateTimeValue" + :p * Interval '1 Second')))::Int
+	Floor(Extract(second From (t."DateTimeValue" + :Second * Interval '1 Second')))::Int
 FROM
 	"LinqDataTypes" t
 

@@ -57,13 +57,13 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
+DECLARE @p Int -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p
 

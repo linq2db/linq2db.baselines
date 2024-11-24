@@ -151,27 +151,27 @@ BeforeExecute
 
 SELECT
 	[ip].[InvestorId],
-	[t1].[Units],
+	[t1].[TotalUnits],
 	SUM([ip].[NetPayment])
 FROM
-	[PaymentEvent] [g_1]
-		INNER JOIN [InvestorPayment] [ip] ON [g_1].[Id] = [ip].[Id]
+	[PaymentEvent] [p]
+		INNER JOIN [InvestorPayment] [ip] ON [p].[Id] = [ip].[Id]
 		INNER JOIN [InvestorPaymentDetail] [ipd] ON [ip].[InvestorId] = [ipd].[InvestorId]
-		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [g_1].[Id] = [pc].[EventId]
+		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [p].[Id] = [pc].[EventId]
 		INNER JOIN (
 			SELECT
+				SUM([b].[Units]) as [TotalUnits],
 				[b].[InvestorId],
-				[b].[SecurityClass],
-				SUM([b].[Units]) as [Units]
+				[b].[SecurityClass]
 			FROM
 				[Transaction] [b]
 			GROUP BY
 				[b].[SecurityClass],
 				[b].[InvestorId]
-		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [g_1].[SecurityClass] = [t1].[SecurityClass]
+		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [p].[SecurityClass] = [t1].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
-	[t1].[Units]
+	[t1].[TotalUnits]
 
 BeforeExecute
 -- SqlServer.2008

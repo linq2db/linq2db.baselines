@@ -230,7 +230,7 @@ USING (
 	SELECT 5, 10, 4, NULL FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, 216 FROM sys.dual) "Source"
-ON ((Target."Id" = "Source"."source_Id" OR "Source"."source_Field1" IS NOT NULL))
+ON (Target."Id" = "Source"."source_Id" OR "Source"."source_Field1" IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

@@ -71,14 +71,14 @@ AS
 (
 	SELECT
 		"r"."Id",
-		5,
-		5,
+		CAST(5 AS SmallInt),
+		CAST(5 AS SmallInt),
 		CAST(@Guid AS CHAR(16) CHARACTER SET OCTETS),
 		CAST(@GuidN AS CHAR(16) CHARACTER SET OCTETS),
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		'1',
-		'0'
+		CAST('ENUM1_VALUE' AS CHAR(11)),
+		CAST('ENUM2_VALUE' AS CHAR(11)),
+		CAST('1' AS CHAR(1)),
+		CAST('0' AS CHAR(1))
 	FROM
 		"Issue3360Table1" "r"
 	WHERE

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 5
+DECLARE @Value  -- Int32
+SET     @Value = 5
 
 SELECT
 	Minute(Add_Seconds("t"."DateTimeValue", ? * 60))

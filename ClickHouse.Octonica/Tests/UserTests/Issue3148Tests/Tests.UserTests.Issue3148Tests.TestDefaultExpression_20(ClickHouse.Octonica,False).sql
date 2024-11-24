@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	endsWith(r.LastName, 'x')
+	endsWith(r.LastName, 'x') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	endsWith(r.LastName, 'x')
+	endsWith(r.LastName, 'x') = true
 

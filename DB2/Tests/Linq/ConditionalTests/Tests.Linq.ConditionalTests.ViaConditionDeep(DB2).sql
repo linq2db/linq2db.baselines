@@ -40,7 +40,8 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -49,6 +50,10 @@ SELECT
 	"x"."Id",
 	CASE
 		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 0
 	END,
 	"x"."StringProp",

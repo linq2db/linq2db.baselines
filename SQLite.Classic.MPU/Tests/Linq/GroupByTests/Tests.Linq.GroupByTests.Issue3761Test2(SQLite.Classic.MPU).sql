@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS [Issue3761Table]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DATUM VarChar(23) -- AnsiString
-SET     @DATUM = '2019-01-01 00:00:00.000'
+DECLARE @p VarChar(23) -- AnsiString
+SET     @p = '2019-01-01 00:00:00.000'
 
 SELECT
 	[t1].[Year_1],
@@ -40,7 +40,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [n].[DATUM]) < strftime('%Y-%m-%d %H:%M:%f', @DATUM)
+			strftime('%Y-%m-%d %H:%M:%f', [n].[DATUM]) < strftime('%Y-%m-%d %H:%M:%f', @p)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -65,7 +65,7 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [n_1].[DATUM]) >= strftime('%Y-%m-%d %H:%M:%f', @DATUM)
+			strftime('%Y-%m-%d %H:%M:%f', [n_1].[DATUM]) >= strftime('%Y-%m-%d %H:%M:%f', @p)
 	) [t2]
 GROUP BY
 	[t2].[Year_1],

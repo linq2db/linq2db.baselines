@@ -28,9 +28,9 @@ INSERT INTO [tempdb]..[#TableWithData_target]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#TableWithData_output]
 (
 	[Id],

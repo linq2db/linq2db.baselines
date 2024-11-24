@@ -7,5 +7,5 @@ SELECT
 FROM
 	`Parent` `f`
 WHERE
-	(`f`.`ParentID` >= 1 OR `f`.`ParentID` <= 4)
+	`f`.`ParentID` >= 1 OR `f`.`ParentID` <= 4
 

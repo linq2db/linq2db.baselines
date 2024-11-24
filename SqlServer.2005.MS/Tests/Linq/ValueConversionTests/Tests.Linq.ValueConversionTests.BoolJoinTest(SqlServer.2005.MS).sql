@@ -53,10 +53,8 @@ SELECT 10,NULL,NULL,N'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = N'Y'
-DECLARE @BoolValue_1 VarChar -- AnsiString
-SET     @BoolValue_1 = N'Y'
+DECLARE @true_value VarChar -- AnsiString
+SET     @true_value = N'Y'
 
 SELECT
 	[t1].[Enum]
@@ -68,8 +66,8 @@ FROM
 			FROM
 				[ValueConversion] [t2]
 			WHERE
-				[t2].[BoolValue] = @BoolValue
-		) [t2_1] ON [t1].[BoolValue] = @BoolValue_1
+				[t2].[BoolValue] = @true_value
+		) [t2_1] ON [t1].[BoolValue] = @true_value
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -32,7 +32,8 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -41,6 +42,10 @@ SELECT
 	x."Id",
 	CASE
 		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN x."StringProp" = '2' THEN True
 		ELSE False
 	END,
 	x."StringProp",

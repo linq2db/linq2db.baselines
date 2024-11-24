@@ -17,10 +17,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Issue3761Table"
 		(
-			LETO     Int       NOT NULL,
-			STEVILKA Int       NOT NULL,
-			DATUM    timestamp     NULL,
-			SKUPAJ   Decimal       NULL,
+			LETO     Int             NOT NULL,
+			STEVILKA Int             NOT NULL,
+			DATUM    timestamp           NULL,
+			SKUPAJ   Decimal(28, 10)     NULL,
 
 			CONSTRAINT "PK_Issue3761Table" PRIMARY KEY (LETO, STEVILKA)
 		)
@@ -34,8 +34,8 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @DATUM TimeStamp -- DateTime
-SET     @DATUM = TIMESTAMP '2019-01-01 00:00:00.000000'
+DECLARE @p TimeStamp -- DateTime
+SET     @p = TIMESTAMP '2019-01-01 00:00:00.000000'
 
 SELECT
 	t1."Year_1",
@@ -56,7 +56,7 @@ FROM
 		FROM
 			"Issue3761Table" n
 		WHERE
-			n.DATUM < :DATUM
+			n.DATUM < :p
 	) t1
 GROUP BY
 	t1."Year_1",
@@ -81,7 +81,7 @@ FROM
 		FROM
 			"Issue3761Table" n_1
 		WHERE
-			n_1.DATUM >= :DATUM
+			n_1.DATUM >= :p
 	) t2
 GROUP BY
 	t2."Year_1",

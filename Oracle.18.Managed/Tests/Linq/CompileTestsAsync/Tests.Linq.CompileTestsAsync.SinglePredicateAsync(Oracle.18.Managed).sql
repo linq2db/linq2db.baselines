@@ -47,18 +47,16 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Id_1 Int32
-SET     @Id_1 = 2
+DECLARE @p Int32
+SET     @p = 2
 
 SELECT
-	:Id as "Id",
+	:p as "Id",
 	c_1."Id" as "Id_1"
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id_1
+	c_1."Id" = :p
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

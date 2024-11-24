@@ -2,13 +2,12 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	x."PersonID",
-	y.value__
+	x."PersonID" + y.item
 FROM
 	"Person" x
 		CROSS JOIN (VALUES
 			(1), (3)
-		) y(value__)
+		) y(item)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

@@ -33,7 +33,8 @@ VALUES
 (7,N'String7'),
 (8,N'String8'),
 (9,NULL),
-(10,N'String10')
+(10,N'String10'),
+(11,N'-1')
 
 BeforeExecute
 -- SqlServer.2019
@@ -41,6 +42,7 @@ BeforeExecute
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
+	IIF([x].[StringProp] = N'2', 1, 0),
 	[x].[StringProp],
 	[x].[StringProp] + N'2'
 FROM

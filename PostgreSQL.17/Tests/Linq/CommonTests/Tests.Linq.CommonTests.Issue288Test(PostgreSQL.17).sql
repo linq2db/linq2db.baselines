@@ -11,14 +11,14 @@ LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @ID Text(4) -- String
-SET     @ID = 'John'
+DECLARE @p Text(4) -- String
+SET     @p = 'John'
 
 SELECT
 	p."FirstName"
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :ID
+	p."FirstName" = :p
 LIMIT 1
 

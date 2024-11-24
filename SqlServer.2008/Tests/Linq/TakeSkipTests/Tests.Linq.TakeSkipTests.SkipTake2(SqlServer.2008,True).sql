@@ -19,6 +19,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take - @skip)
+ORDER BY
+	[t2].[ChildID] DESC
 
 BeforeExecute
 -- SqlServer.2008
@@ -41,4 +43,6 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take - @skip)
+ORDER BY
+	[t2].[ChildID] DESC
 

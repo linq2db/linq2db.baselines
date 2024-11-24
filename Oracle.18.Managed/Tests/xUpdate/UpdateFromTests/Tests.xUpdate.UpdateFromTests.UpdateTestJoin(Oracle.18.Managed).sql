@@ -107,20 +107,20 @@ SET
 			("UpdatedEntities"."Value2" * t_1."Value2") * :int2,
 			("UpdatedEntities"."Value3" * t_1."Value3") * :int3
 		FROM
-			"UpdatedEntities" t2
-				INNER JOIN "NewEntities" t_1 ON t_1."id" = t2."id"
+			"UpdatedEntities" c_2
+				INNER JOIN "NewEntities" t_1 ON t_1."id" = c_2."id"
 		WHERE
-			t_1."id" <> :someId AND "UpdatedEntities"."id" = t2."id"
+			t_1."id" <> :someId AND "UpdatedEntities"."id" = c_2."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" t1
-				INNER JOIN "NewEntities" t ON t."id" = t1."id"
+			"UpdatedEntities" c_1
+				INNER JOIN "NewEntities" t ON t."id" = c_1."id"
 		WHERE
-			t."id" <> :someId AND "UpdatedEntities"."id" = t1."id"
+			t."id" <> :someId AND "UpdatedEntities"."id" = c_1."id"
 	)
 
 BeforeExecute

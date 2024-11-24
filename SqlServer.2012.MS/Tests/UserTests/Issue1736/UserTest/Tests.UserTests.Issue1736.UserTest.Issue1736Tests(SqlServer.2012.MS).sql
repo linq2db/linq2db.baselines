@@ -174,7 +174,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[ir].[Quantity],
 			Coalesce((
 				SELECT
 					SUM([x].[Quantity])
@@ -184,12 +183,13 @@ FROM
 					[x].[InventoryResourceID] = [ir].[Id]
 			), 0) + (
 				SELECT
-					CAST(COUNT(*) AS Decimal)
+					CAST(COUNT(*) AS Decimal(38, 17))
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x_1]
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
 			) * [ir].[Quantity] as [RefQty],
+			[ir].[Quantity],
 			[ir].[Id],
 			[ir].[Status],
 			[ir].[MaterialID],
@@ -229,8 +229,8 @@ FROM
 			[ir].[Quantity] > 0
 		UNION
 		SELECT
+			CAST(0 AS Decimal(38, 17)) as [RefQty],
 			[ir_1].[Quantity],
-			0 as [RefQty],
 			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
@@ -242,10 +242,10 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			0 as [AisleStatus],
+			CAST(0 AS Int) as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [MixedStock]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]

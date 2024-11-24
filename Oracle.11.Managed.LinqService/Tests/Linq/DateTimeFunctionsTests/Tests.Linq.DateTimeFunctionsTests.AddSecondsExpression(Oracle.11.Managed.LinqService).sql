@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int32
-SET     @p = -35
+DECLARE @Second Int32
+SET     @Second = -35
 
 SELECT
-	EXTRACT(SECOND FROM (t."DateTimeValue" + :p * INTERVAL '1' SECOND))
+	EXTRACT(SECOND FROM (t."DateTimeValue" + :Second * INTERVAL '1' SECOND))
 FROM
 	"LinqDataTypes" t
 

@@ -2,12 +2,11 @@
 -- Informix.DB2 Informix
 
 SELECT
-	x.PersonID,
-	y.value__
+	x.PersonID + y."item"
 FROM
 	Person x
 		CROSS JOIN (
-			SELECT 0::Int AS value__ FROM table(set{1})
+			SELECT 0::Int AS "item" FROM table(set{1})
 			UNION ALL
 			SELECT 1::Int FROM table(set{1})
 			UNION ALL

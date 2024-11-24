@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 1
+DECLARE @p  -- Int32
+SET     @p = 1
+DECLARE @p_1  -- Int32
+SET     @p_1 = 1
 
 SELECT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1)
+	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -24,10 +24,10 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
-DECLARE @ParentID_1  -- Int32
-SET     @ParentID_1 = 2
+DECLARE @p  -- Int32
+SET     @p = 3
+DECLARE @p_1  -- Int32
+SET     @p_1 = 2
 
 SELECT
 	[x].[ParentID],
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	([x].[ParentID] = @ParentID OR [x].[ParentID] = @ParentID_1)
+	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

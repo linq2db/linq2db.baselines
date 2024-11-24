@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	RTrim(Char(CAST("p".ID AS SmallInt)))
+	"p".ID
 FROM
 	"LinqDataTypes" "p"
 WHERE
