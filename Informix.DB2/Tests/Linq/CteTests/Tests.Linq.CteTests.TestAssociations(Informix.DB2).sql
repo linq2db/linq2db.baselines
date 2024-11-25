@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS Books
 (
-	Id       SERIAL         NOT NULL,
-	Title    NVarChar(255)  NOT NULL,
-	AuthorId Int            NOT NULL,
+	Id       Int           NOT NULL,
+	Title    NVarChar(255) NOT NULL,
+	AuthorId Int           NOT NULL,
 
 	PRIMARY KEY (Id)
 )
@@ -25,8 +25,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS Authors
 (
-	Id   SERIAL         NOT NULL,
-	Name NVarChar(255)  NOT NULL,
+	Id   Int           NOT NULL,
+	Name NVarChar(255) NOT NULL,
 
 	PRIMARY KEY (Id)
 )

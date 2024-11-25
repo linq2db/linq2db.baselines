@@ -21,24 +21,8 @@ RETURNING "Id";
 --  PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN t1."Discriminator" = 'WithInheritanceA2' THEN True
-		ELSE False
-	END,
-	t1."Id",
 	t1."Discriminator",
-	CASE
-		WHEN t1."Discriminator" = 'WithInheritanceA1' THEN True
-		ELSE False
-	END,
-	CASE
-		WHEN t1."Discriminator" = 'WithInheritanceA' THEN True
-		ELSE False
-	END,
-	CASE
-		WHEN t1."Discriminator" = 'WithInheritance' THEN True
-		ELSE False
-	END
+	t1."Id"
 FROM
 	"WithInheritance" t1
 WHERE

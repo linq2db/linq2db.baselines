@@ -51,17 +51,9 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	CASE
-		WHEN e.Code = 'Child2' THEN true
-		ELSE false
-	END,
 	e.Code,
 	e.Id,
 	e.Age,
-	CASE
-		WHEN e.Code = 'Child' THEN true
-		ELSE false
-	END,
 	e.Name
 FROM
 	Base e

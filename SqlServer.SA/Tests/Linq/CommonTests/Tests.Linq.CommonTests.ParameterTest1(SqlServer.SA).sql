@@ -10,7 +10,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Parent] [t]
 		WHERE
@@ -31,7 +31,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Parent] [t]
 		WHERE

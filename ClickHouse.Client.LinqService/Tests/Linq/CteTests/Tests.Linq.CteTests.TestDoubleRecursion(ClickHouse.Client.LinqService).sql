@@ -288,13 +288,11 @@ CTE_2 AS
 hierarchyDown AS
 (
 	SELECT
-		toInt32(0) as Level_1,
 		t2.Id
 	FROM
 		CTE_1 t2
 	UNION ALL
 	SELECT
-		t3.Level_1 + 1 as Level_1,
 		t_1.Id as Id
 	FROM
 		hierarchyDown t3

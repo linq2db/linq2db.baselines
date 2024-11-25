@@ -222,7 +222,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_18]
 			WHERE
@@ -234,14 +234,14 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[InventoryResourceDTO] [x_19]
 			WHERE
 				[x_19].[Status] < 99 AND [x_19].[ResourceID] = [c1].[Id] AND
 				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
-						*
+						1
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
@@ -288,7 +288,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_21]
 			WHERE
@@ -300,14 +300,14 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[InventoryResourceDTO] [x_22]
 			WHERE
 				[x_22].[Status] < 99 AND [x_22].[ResourceID] = [c2].[Id] AND
 				([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
-						*
+						1
 					FROM
 						[InfeedAdvicePositionDTO] [y_1]
 					WHERE

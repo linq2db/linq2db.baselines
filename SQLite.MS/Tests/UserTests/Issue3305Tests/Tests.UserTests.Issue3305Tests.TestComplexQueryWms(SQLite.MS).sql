@@ -218,7 +218,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_2]
 			WHERE
@@ -230,13 +230,13 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[CTE_1] [x_3]
 			WHERE
 				[x_3].[IR_ResourceID] = [x_1].[Id_4] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
 					SELECT
-						*
+						1
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE

@@ -71,14 +71,11 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	IIF([e].[Code] = 'Child2', True, False),
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
 	[e].[Age],
-	IIF([e].[Code] = 'Child', True, False),
-	[e].[IsMale],
-	IIF([e].[Code] = 'BaseChild', True, False)
+	[e].[IsMale]
 FROM
 	[Base] [e]
 WHERE

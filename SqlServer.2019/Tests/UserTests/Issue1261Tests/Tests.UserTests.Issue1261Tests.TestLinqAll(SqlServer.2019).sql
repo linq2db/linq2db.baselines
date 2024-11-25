@@ -4,7 +4,7 @@
 SELECT
 	IIF(NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[GrandChild] [x]
 		WHERE
@@ -17,7 +17,7 @@ BeforeExecute
 SELECT
 	IIF(NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[GrandChild] [x]
 		WHERE

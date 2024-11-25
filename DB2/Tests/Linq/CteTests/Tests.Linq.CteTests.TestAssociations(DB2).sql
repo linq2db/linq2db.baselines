@@ -14,9 +14,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Books"
 		(
-			"Id"       Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-			"Title"    NVarChar(255)                              NOT NULL,
-			"AuthorId" Int                                        NOT NULL,
+			"Id"       Int           NOT NULL,
+			"Title"    NVarChar(255) NOT NULL,
+			"AuthorId" Int           NOT NULL,
 
 			CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
 		)
@@ -39,8 +39,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Authors"
 		(
-			"Id"   Int           GENERATED ALWAYS AS IDENTITY NOT NULL,
-			"Name" NVarChar(255)                              NOT NULL,
+			"Id"   Int           NOT NULL,
+			"Name" NVarChar(255) NOT NULL,
 
 			CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
 		)

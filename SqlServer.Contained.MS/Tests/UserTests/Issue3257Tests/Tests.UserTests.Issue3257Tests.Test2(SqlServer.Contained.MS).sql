@@ -39,7 +39,7 @@ FROM
 		SELECT
 			IIF(EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[ChecklistTrigger] [a_ChecklistTriggers]
 				WHERE

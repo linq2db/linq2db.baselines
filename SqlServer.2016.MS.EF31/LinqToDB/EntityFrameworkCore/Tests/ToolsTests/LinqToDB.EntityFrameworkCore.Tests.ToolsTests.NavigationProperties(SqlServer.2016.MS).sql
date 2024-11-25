@@ -22,44 +22,11 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([o].[IsDeleted] <> CAST(1 AS bit)
 ORDER BY [o].[OrderID], [t].[OrderID], [t].[ProductID], [t0].[ProductID], [t1].[OrderID], [t1].[ProductID]
 
 
-BeginTransaction(RepeatableRead)
+Parameters:
+@__ef_filter__p_0='?' (DbType = Boolean)
 
-
---  SqlServer.2016
-
-SELECT
-	[m_1].[ProductId],
-	[d].[OrderID],
-	[d].[ProductID],
-	[d].[Quantity]
-FROM
-	(
-		SELECT DISTINCT
-			[a_Product].[ProductID] as [ProductId]
-		FROM
-			[Orders] [e]
-				INNER JOIN [Order Details] [od] ON [e].[OrderID] = [od].[OrderID]
-				INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
-	) [m_1]
-		INNER JOIN [Order Details] [d] ON [m_1].[ProductId] = [d].[ProductID]
-
-
-
-DisposeTransaction
-
-
---  SqlServer.2016
-
-SELECT
-	[a_Product].[ProductID],
-	[od].[OrderID],
-	[od].[ProductID],
-	[od].[Quantity],
-	[a_Product].[ProductName]
-FROM
-	[Orders] [o]
-		INNER JOIN [Order Details] [od] ON [o].[OrderID] = [od].[OrderID]
-		INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
-
+SELECT [o].[OrderID], [o].[CustomerID], [o].[EmployeeID], [o].[Freight], [o].[IsDeleted], [o].[OrderDate], [o].[RequiredDate], [o].[ShipAddress], [o].[ShipCity], [o].[ShipCountry], [o].[ShipName], [o].[ShipPostalCode], [o].[ShipRegion], [o].[ShipVia], [o].[ShippedDate]
+FROM [Orders] AS [o]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([o].[IsDeleted] <> CAST(1 AS bit))
 
 

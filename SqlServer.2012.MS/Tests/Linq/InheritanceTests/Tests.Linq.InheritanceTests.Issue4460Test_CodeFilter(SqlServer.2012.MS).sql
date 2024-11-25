@@ -64,11 +64,9 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	IIF([e].[Code] = N'Child2', 1, 0),
 	[e].[Code],
 	[e].[Id],
 	[e].[Age],
-	IIF([e].[Code] = N'Child', 1, 0),
 	[e].[Name]
 FROM
 	[Base] [e]

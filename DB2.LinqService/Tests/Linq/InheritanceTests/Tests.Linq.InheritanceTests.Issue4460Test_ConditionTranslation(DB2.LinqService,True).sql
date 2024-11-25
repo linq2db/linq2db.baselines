@@ -79,23 +79,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN "e"."Code" = 'Child2' THEN 1
-		ELSE 0
-	END,
 	"e"."Code",
 	"e"."Id",
 	"e"."Name",
 	"e"."Age",
-	CASE
-		WHEN "e"."Code" = 'Child' THEN 1
-		ELSE 0
-	END,
-	"e"."IsMale",
-	CASE
-		WHEN "e"."Code" = 'BaseChild' THEN 1
-		ELSE 0
-	END
+	"e"."IsMale"
 FROM
 	"Base" "e"
 WHERE

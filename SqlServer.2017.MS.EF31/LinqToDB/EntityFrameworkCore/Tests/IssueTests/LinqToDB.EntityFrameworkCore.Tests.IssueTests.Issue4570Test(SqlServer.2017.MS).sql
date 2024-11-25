@@ -6,12 +6,18 @@
 END
 
 
+SELECT [p].[Id], [p].[ParentId]
+FROM [Parents] AS [p]
+
+
 --  SqlServer.2017
 
 SELECT
 	1
 FROM
-	[Parents] [ua]
+	(VALUES
+		(NULL), (2)
+	) [ua]([ParentId])
 WHERE
 	[ua].[ParentId] = 55377
 

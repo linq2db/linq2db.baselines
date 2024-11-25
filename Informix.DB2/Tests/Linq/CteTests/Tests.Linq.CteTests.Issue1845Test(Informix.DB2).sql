@@ -14,8 +14,8 @@ CTE_2 (Value1, Value2)
 AS
 (
 	SELECT
-		t1.Value1,
-		t1.Value2
+		NVL(t1.Value1, NULL),
+		NVL(t1.Value2, NULL)
 	FROM
 		CTE_1 t1
 	UNION

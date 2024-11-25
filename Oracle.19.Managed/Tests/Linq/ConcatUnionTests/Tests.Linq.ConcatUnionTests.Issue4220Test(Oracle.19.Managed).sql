@@ -34,38 +34,6 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ConcreteA"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ConcreteA"
-		(
-			"Id"    Int          NOT NULL,
-			"AOnly" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_ConcreteA" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "ConcreteB"';
 EXCEPTION
 	WHEN OTHERS THEN

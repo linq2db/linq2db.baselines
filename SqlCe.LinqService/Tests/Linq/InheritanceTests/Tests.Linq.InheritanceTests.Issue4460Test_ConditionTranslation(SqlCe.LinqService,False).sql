@@ -71,23 +71,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	CASE
-		WHEN [e].[Code] = 'Child2' THEN 1
-		ELSE 0
-	END as [c1],
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
 	[e].[Age],
-	CASE
-		WHEN [e].[Code] = 'Child' THEN 1
-		ELSE 0
-	END as [c2],
-	[e].[IsMale],
-	CASE
-		WHEN [e].[Code] = 'BaseChild' THEN 1
-		ELSE 0
-	END as [c3]
+	[e].[IsMale]
 FROM
 	[Base] [e]
 WHERE

@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[AllTypes] [p]
 			WHERE

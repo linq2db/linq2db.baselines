@@ -8,7 +8,7 @@ SET     @p = 532266661
 SELECT
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Person] [p]
 		WHERE

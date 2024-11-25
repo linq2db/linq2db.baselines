@@ -106,8 +106,16 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."TargetName",
+	CASE
+		WHEN p."TargetName" = 'None' THEN True
+		ELSE False
+	END,
 	p."Id",
+	p."TargetName",
+	CASE
+		WHEN p."TargetName" = 'bda.Requests' THEN True
+		ELSE False
+	END,
 	"a_ActualStage"."Id"
 FROM
 	"Task" p

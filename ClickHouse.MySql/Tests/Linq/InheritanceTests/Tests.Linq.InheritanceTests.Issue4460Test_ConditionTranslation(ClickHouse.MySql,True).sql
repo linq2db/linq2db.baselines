@@ -56,23 +56,11 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN e.Code = 'Child2' THEN true
-		ELSE false
-	END,
 	e.Code,
 	e.Id,
 	e.Name,
 	e.Age,
-	CASE
-		WHEN e.Code = 'Child' THEN true
-		ELSE false
-	END,
-	e.IsMale,
-	CASE
-		WHEN e.Code = 'BaseChild' THEN true
-		ELSE false
-	END
+	e.IsMale
 FROM
 	Base e
 WHERE

@@ -18,7 +18,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[Issue2494Table] [t1]
 		)
@@ -33,7 +33,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[Issue2494Table] [t1]
 		)

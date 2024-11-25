@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate(addQuarters(t.TransactionDate, -1))
+	toDate32(addQuarters(t.TransactionDate, -1))
 FROM
 	Transactions t
 

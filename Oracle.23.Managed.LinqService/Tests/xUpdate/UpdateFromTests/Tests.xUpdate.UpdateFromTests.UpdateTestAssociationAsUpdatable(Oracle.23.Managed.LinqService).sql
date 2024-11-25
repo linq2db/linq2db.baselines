@@ -309,7 +309,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"UpdatedEntities" v
 				LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"

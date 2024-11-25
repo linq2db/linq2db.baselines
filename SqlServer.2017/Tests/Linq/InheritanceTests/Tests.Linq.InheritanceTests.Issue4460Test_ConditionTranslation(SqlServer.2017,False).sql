@@ -72,14 +72,11 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	IIF([e].[Code] = N'Child2', 1, 0),
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
 	[e].[Age],
-	IIF([e].[Code] = N'Child', 1, 0),
-	[e].[IsMale],
-	IIF([e].[Code] = N'BaseChild', 1, 0)
+	[e].[IsMale]
 FROM
 	[Base] [e]
 WHERE

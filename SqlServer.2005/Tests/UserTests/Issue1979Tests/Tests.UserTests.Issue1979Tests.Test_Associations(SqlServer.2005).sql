@@ -61,7 +61,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Tagging] [x]
 				OUTER APPLY (

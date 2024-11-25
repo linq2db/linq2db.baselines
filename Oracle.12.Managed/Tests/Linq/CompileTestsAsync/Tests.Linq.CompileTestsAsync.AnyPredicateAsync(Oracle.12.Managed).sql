@@ -54,7 +54,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"AsyncDataTable" c_1
 			WHERE

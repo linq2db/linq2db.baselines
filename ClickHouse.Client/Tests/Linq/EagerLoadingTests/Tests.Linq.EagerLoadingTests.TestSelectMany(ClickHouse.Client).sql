@@ -1801,7 +1801,7 @@ FROM
 		FROM
 			(
 				SELECT
-					*
+					1 as c1
 				FROM
 					MasterClass t1
 				LIMIT 20
@@ -1825,7 +1825,7 @@ FROM
 		FROM
 			(
 				SELECT
-					*
+					1 as c1
 				FROM
 					MasterClass t1
 				LIMIT 20
@@ -1844,7 +1844,7 @@ SELECT
 FROM
 	(
 		SELECT
-			*
+			1 as c1
 		FROM
 			MasterClass t1
 		LIMIT 20

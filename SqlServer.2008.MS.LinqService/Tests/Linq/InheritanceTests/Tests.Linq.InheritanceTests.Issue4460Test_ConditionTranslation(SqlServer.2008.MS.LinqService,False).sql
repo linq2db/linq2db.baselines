@@ -73,23 +73,11 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	CASE
-		WHEN [e].[Code] = N'Child2' THEN 1
-		ELSE 0
-	END,
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
 	[e].[Age],
-	CASE
-		WHEN [e].[Code] = N'Child' THEN 1
-		ELSE 0
-	END,
-	[e].[IsMale],
-	CASE
-		WHEN [e].[Code] = N'BaseChild' THEN 1
-		ELSE 0
-	END
+	[e].[IsMale]
 FROM
 	[Base] [e]
 WHERE

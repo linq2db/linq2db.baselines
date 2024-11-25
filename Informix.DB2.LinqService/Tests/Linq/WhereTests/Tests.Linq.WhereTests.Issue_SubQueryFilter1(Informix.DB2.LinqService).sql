@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Person e,
 			(
@@ -23,7 +23,7 @@ WHERE
 	) OR
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Person e_1,
 			(

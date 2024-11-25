@@ -345,7 +345,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT FIRST @take

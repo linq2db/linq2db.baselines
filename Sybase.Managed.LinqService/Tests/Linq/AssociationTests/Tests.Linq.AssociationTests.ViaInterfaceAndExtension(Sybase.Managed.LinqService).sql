@@ -53,7 +53,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[SubEntity] [a_SubEntities_1]
 		WHERE

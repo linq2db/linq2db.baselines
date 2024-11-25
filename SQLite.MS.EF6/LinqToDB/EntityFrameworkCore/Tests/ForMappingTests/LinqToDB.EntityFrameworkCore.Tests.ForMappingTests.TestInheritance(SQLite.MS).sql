@@ -51,24 +51,8 @@ WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 --  SQLite.MS SQLite
 
 SELECT
-	CASE
-		WHEN [t1].[Discriminator] = 'WithInheritanceA2' THEN 1
-		ELSE 0
-	END,
-	[t1].[Id],
 	[t1].[Discriminator],
-	CASE
-		WHEN [t1].[Discriminator] = 'WithInheritanceA1' THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN [t1].[Discriminator] = 'WithInheritanceA' THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN [t1].[Discriminator] = 'WithInheritance' THEN 1
-		ELSE 0
-	END
+	[t1].[Id]
 FROM
 	[WithInheritance] [t1]
 WHERE

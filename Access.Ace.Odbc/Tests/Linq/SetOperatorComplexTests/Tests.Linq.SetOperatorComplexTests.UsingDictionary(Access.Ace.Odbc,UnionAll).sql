@@ -558,12 +558,10 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	IIF([a_Book].[Discriminator] = 'Novel', True, False),
+	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	IIF([a_Book].[Discriminator] = 'Roman', True, False),
-	[a_Book].[RomanScore],
-	[a_Book].[Discriminator]
+	[a_Book].[RomanScore]
 FROM
 	([Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON ([d].[FkAuthorId] = [m_1].[AuthorId]))

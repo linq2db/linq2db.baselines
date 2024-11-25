@@ -133,10 +133,11 @@ FROM
 			FROM
 				(
 					SELECT
-						*
+						[t6].[c1]
 					FROM
 						(
 							SELECT
+								1 as [c1],
 								ROW_NUMBER() OVER (ORDER BY [t5].[DetailValue]) as [RN]
 							FROM
 								(

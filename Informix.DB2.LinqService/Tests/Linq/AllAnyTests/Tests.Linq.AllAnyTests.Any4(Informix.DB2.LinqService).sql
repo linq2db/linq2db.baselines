@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Child a_Children
 		WHERE

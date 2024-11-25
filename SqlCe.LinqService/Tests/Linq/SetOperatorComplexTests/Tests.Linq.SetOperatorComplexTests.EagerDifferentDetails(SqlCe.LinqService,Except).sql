@@ -515,7 +515,7 @@ FROM
 		WHERE
 			[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -530,7 +530,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName]
 FROM
 	[Author] [t1]
@@ -539,7 +539,7 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Author] [t2]
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]

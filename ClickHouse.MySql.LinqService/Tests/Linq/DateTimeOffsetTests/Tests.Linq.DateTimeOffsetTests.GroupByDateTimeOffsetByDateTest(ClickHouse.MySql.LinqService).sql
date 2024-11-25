@@ -235,7 +235,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toDate(x.TransactionDate) as Key_1
+			toDate32(x.TransactionDate) as Key_1
 		FROM
 			Transactions x
 	) t1

@@ -170,17 +170,12 @@ SET     @skip = 6
 
 SELECT
 	[t2].[BookType],
-	[t2].[c1],
-	[t2].[c1_1]
+	[t2].[c1]
 FROM
 	(
 		SELECT
 			[t1].[BookType],
-			CASE
-				WHEN [t1].[BookType] = N'Roman' THEN 1
-				ELSE 0
-			END as [c1],
-			[t1].[c1] as [c1_1],
+			[t1].[c1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 		FROM
 			(
@@ -203,6 +198,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip
+ORDER BY
+	[t2].[BookType] DESC
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -224,19 +221,11 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	CASE
-		WHEN [t1].[Discriminator] = N'Novel' THEN 1
-		ELSE 0
-	END,
+	[t1].[Discriminator],
 	[t1].[BookId],
 	[t1].[BookName],
 	[t1].[NovelScore],
-	CASE
-		WHEN [t1].[Discriminator] = N'Roman' THEN 1
-		ELSE 0
-	END,
-	[t1].[RomanScore],
-	[t1].[Discriminator]
+	[t1].[RomanScore]
 FROM
 	[Book] [t1]
 

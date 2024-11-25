@@ -218,7 +218,6 @@ BeforeExecute
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, True, False),
-	IIF([x].[StringProp] = '2', True, False),
 	[x].[StringProp],
 	[x].[StringProp] + '2'
 FROM

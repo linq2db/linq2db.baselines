@@ -175,7 +175,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					"Table4" id
 				WHERE
@@ -202,7 +202,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Table4" id
 		WHERE

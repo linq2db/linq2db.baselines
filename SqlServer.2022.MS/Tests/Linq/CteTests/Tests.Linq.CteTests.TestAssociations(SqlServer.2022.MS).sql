@@ -9,9 +9,9 @@ BeforeExecute
 IF (OBJECT_ID(N'[Books]', N'U') IS NULL)
 	CREATE TABLE [Books]
 	(
-		[Id]       Int             NOT NULL IDENTITY,
-		[Title]    NVarChar(4000)  NOT NULL,
-		[AuthorId] Int             NOT NULL,
+		[Id]       Int            NOT NULL,
+		[Title]    NVarChar(4000) NOT NULL,
+		[AuthorId] Int            NOT NULL,
 
 		CONSTRAINT [PK_Books] PRIMARY KEY CLUSTERED ([Id])
 	)
@@ -27,8 +27,8 @@ BeforeExecute
 IF (OBJECT_ID(N'[Authors]', N'U') IS NULL)
 	CREATE TABLE [Authors]
 	(
-		[Id]   Int             NOT NULL IDENTITY,
-		[Name] NVarChar(4000)  NOT NULL,
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000) NOT NULL,
 
 		CONSTRAINT [PK_Authors] PRIMARY KEY CLUSTERED ([Id])
 	)

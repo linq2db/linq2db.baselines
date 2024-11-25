@@ -12,8 +12,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		t1.ParentID,
-		t1.ChildID
+		1 as unused
 	FROM
 		Child t1
 )
@@ -28,7 +27,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		c_1.ChildID as C_ChildID
+		1 as unused
 	FROM
 		Child c_1
 )
@@ -43,7 +42,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		*
+		1 as unused
 	FROM
 		Child c_1
 )
@@ -51,7 +50,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				CTE1_ t1
 		) THEN true

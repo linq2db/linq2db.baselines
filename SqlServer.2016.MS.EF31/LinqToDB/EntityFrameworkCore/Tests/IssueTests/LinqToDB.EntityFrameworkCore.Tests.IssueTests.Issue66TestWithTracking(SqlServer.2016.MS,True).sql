@@ -1,12 +1,17 @@
-﻿--  SqlServer.2016
+﻿SELECT [d].[Id], [d].[MasterId], [m].[Id]
+FROM [Details] AS [d]
+INNER JOIN [Masters] AS [m] ON [d].[MasterId] = [m].[Id]
+
+
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id],
-	[t1].[MasterId],
-	[a_Master].[Id]
+	[t1].[MasterId]
 FROM
-	[Details] [t1]
-		INNER JOIN [Masters] [a_Master] ON [t1].[MasterId] = [a_Master].[Id]
+	(VALUES
+		(1,1), (2,1)
+	) [t1]([Id], [MasterId])
 
 
 

@@ -71,23 +71,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN e.Code = 'Child2' THEN 't'
-		ELSE 'f'
-	END::BOOLEAN,
 	e.Code,
 	e.Id,
 	e.Name,
 	e.Age,
-	CASE
-		WHEN e.Code = 'Child' THEN 't'
-		ELSE 'f'
-	END::BOOLEAN,
-	e.IsMale,
-	CASE
-		WHEN e.Code = 'BaseChild' THEN 't'
-		ELSE 'f'
-	END::BOOLEAN
+	e.IsMale
 FROM
 	Base e
 WHERE

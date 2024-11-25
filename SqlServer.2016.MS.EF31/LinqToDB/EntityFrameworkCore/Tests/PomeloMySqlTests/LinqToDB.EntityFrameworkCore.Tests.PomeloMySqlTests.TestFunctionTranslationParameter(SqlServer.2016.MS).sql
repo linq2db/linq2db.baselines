@@ -1,10 +1,18 @@
-﻿--  SqlServer.2016
+﻿Parameters:
+@__ef_filter__p_0='?' (DbType = Boolean)
+
+SELECT [c].[CustomerID], [c].[Address], [c].[City], [c].[CompanyName], [c].[ContactName], [c].[ContactTitle], [c].[Country], [c].[Fax], [c].[IsDeleted], [c].[Phone], [c].[PostalCode], [c].[Region]
+FROM [Customers] AS [c]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([c].[IsDeleted] <> CAST(1 AS bit))
+
+
+--  SqlServer.2016
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'%anything%'
 
 SELECT
 	[e].[IsDeleted],
-	[e].[CustomerID],
+	[e].[CustomerId],
 	[e].[CompanyName],
 	[e].[ContactName],
 	[e].[ContactTitle],
@@ -16,7 +24,99 @@ SELECT
 	[e].[Phone],
 	[e].[Fax]
 FROM
-	[Customers] [e]
+	(VALUES
+		(N'Obere Str. 57',0,N'ALFKI',N'Alfreds Futterkiste',N'Maria Anders',N'Sales Representative',N'Berlin',NULL,N'12209',N'Germany',N'030-0074321',N'030-0076545'),
+		(N'Avda. de la Constitución 2222',0,N'ANATR',N'Ana Trujillo Emparedados y helados',N'Ana Trujillo',N'Owner',N'México D.F.',NULL,N'05021',N'Mexico',N'(5) 555-4729',N'(5) 555-3745'),
+		(N'Mataderos  2312',0,N'ANTON',N'Antonio Moreno Taquería',N'Antonio Moreno',N'Owner',N'México D.F.',NULL,N'05023',N'Mexico',N'(5) 555-3932',NULL),
+		(N'120 Hanover Sq.',0,N'AROUT',N'Around the Horn',N'Thomas Hardy',N'Sales Representative',N'London',NULL,N'WA1 1DP',N'UK',N'(171) 555-7788',N'(171) 555-6750'),
+		(N'Berguvsvägen  8',0,N'BERGS',N'Berglunds snabbköp',N'Christina Berglund',N'Order Administrator',N'Luleå',NULL,N'S-958 22',N'Sweden',N'0921-12 34 65',N'0921-12 34 67'),
+		(N'Forsterstr. 57',0,N'BLAUS',N'Blauer See Delikatessen',N'Hanna Moos',N'Sales Representative',N'Mannheim',NULL,N'68306',N'Germany',N'0621-08460',N'0621-08924'),
+		(N'24, place Kléber',0,N'BLONP',N'Blondesddsl père et fils',N'Frédérique Citeaux',N'Marketing Manager',N'Strasbourg',NULL,N'67000',N'France',N'88.60.15.31',N'88.60.15.32'),
+		(N'C/ Araquil, 67',0,N'BOLID',N'Bólido Comidas preparadas',N'Martín Sommer',N'Owner',N'Madrid',NULL,N'28023',N'Spain',N'(91) 555 22 82',N'(91) 555 91 99'),
+		(N'12, rue des Bouchers',0,N'BONAP',N'Bon app''',N'Laurence Lebihan',N'Owner',N'Marseille',NULL,N'13008',N'France',N'91.24.45.40',N'91.24.45.41'),
+		(N'23 Tsawassen Blvd.',0,N'BOTTM',N'Bottom-Dollar Markets',N'Elizabeth Lincoln',N'Accounting Manager',N'Tsawassen',N'BC',N'T2F 8M4',N'Canada',N'(604) 555-4729',N'(604) 555-3745'),
+		(N'Fauntleroy Circus',0,N'BSBEV',N'B''s Beverages',N'Victoria Ashworth',N'Sales Representative',N'London',NULL,N'EC2 5NT',N'UK',N'(171) 555-1212',NULL),
+		(N'Cerrito 333',0,N'CACTU',N'Cactus Comidas para llevar',N'Patricio Simpson',N'Sales Agent',N'Buenos Aires',NULL,N'1010',N'Argentina',N'(1) 135-5555',N'(1) 135-4892'),
+		(N'Sierras de Granada 9993',0,N'CENTC',N'Centro comercial Moctezuma',N'Francisco Chang',N'Marketing Manager',N'México D.F.',NULL,N'05022',N'Mexico',N'(5) 555-3392',N'(5) 555-7293'),
+		(N'Hauptstr. 29',0,N'CHOPS',N'Chop-suey Chinese',N'Yang Wang',N'Owner',N'Bern',NULL,N'3012',N'Switzerland',N'0452-076545',NULL),
+		(N'Av. dos Lusíadas, 23',0,N'COMMI',N'Comércio Mineiro',N'Pedro Afonso',N'Sales Associate',N'Sao Paulo',N'SP',N'05432-043',N'Brazil',N'(11) 555-7647',NULL),
+		(N'Berkeley Gardens 12  Brewery',0,N'CONSH',N'Consolidated Holdings',N'Elizabeth Brown',N'Sales Representative',N'London',NULL,N'WX1 6LT',N'UK',N'(171) 555-2282',N'(171) 555-9199'),
+		(N'Walserweg 21',0,N'DRACD',N'Drachenblut Delikatessen',N'Sven Ottlieb',N'Order Administrator',N'Aachen',NULL,N'52066',N'Germany',N'0241-039123',N'0241-059428'),
+		(N'67, rue des Cinquante Otages',0,N'DUMON',N'Du monde entier',N'Janine Labrune',N'Owner',N'Nantes',NULL,N'44000',N'France',N'40.67.88.88',N'40.67.89.89'),
+		(N'35 King George',0,N'EASTC',N'Eastern Connection',N'Ann Devon',N'Sales Agent',N'London',NULL,N'WX3 6FW',N'UK',N'(171) 555-0297',N'(171) 555-3373'),
+		(N'Kirchgasse 6',0,N'ERNSH',N'Ernst Handel',N'Roland Mendel',N'Sales Manager',N'Graz',NULL,N'8010',N'Austria',N'7675-3425',N'7675-3426'),
+		(N'Rua Orós, 92',0,N'FAMIA',N'Familia Arquibaldo',N'Aria Cruz',N'Marketing Assistant',N'Sao Paulo',N'SP',N'05442-030',N'Brazil',N'(11) 555-9857',NULL),
+		(N'C/ Moralzarzal, 86',0,N'FISSA',N'FISSA Fabrica Inter. Salchichas S.A.',N'Diego Roel',N'Accounting Manager',N'Madrid',NULL,N'28034',N'Spain',N'(91) 555 94 44',N'(91) 555 55 93'),
+		(N'184, chaussée de Tournai',0,N'FOLIG',N'Folies gourmandes',N'Martine Rancé',N'Assistant Sales Agent',N'Lille',NULL,N'59000',N'France',N'20.16.10.16',N'20.16.10.17'),
+		(N'Åkergatan 24',0,N'FOLKO',N'Folk och fä HB',N'Maria Larsson',N'Owner',N'Bräcke',NULL,N'S-844 67',N'Sweden',N'0695-34 67 21',NULL),
+		(N'Berliner Platz 43',0,N'FRANK',N'Frankenversand',N'Peter Franken',N'Marketing Manager',N'München',NULL,N'80805',N'Germany',N'089-0877310',N'089-0877451'),
+		(N'54, rue Royale',0,N'FRANR',N'France restauration',N'Carine Schmitt',N'Marketing Manager',N'Nantes',NULL,N'44000',N'France',N'40.32.21.21',N'40.32.21.20'),
+		(N'Via Monte Bianco 34',0,N'FRANS',N'Franchi S.p.A.',N'Paolo Accorti',N'Sales Representative',N'Torino',NULL,N'10100',N'Italy',N'011-4988260',N'011-4988261'),
+		(N'Jardim das rosas n. 32',0,N'FURIB',N'Furia Bacalhau e Frutos do Mar',N'Lino Rodriguez',N'Sales Manager',N'Lisboa',NULL,N'1675',N'Portugal',N'(1) 354-2534',N'(1) 354-2535'),
+		(N'Rambla de Cataluña, 23',0,N'GALED',N'Galería del gastrónomo',N'Eduardo Saavedra',N'Marketing Manager',N'Barcelona',NULL,N'08022',N'Spain',N'(93) 203 4560',N'(93) 203 4561'),
+		(N'C/ Romero, 33',0,N'GODOS',N'Godos Cocina Típica',N'José Pedro Freyre',N'Sales Manager',N'Sevilla',NULL,N'41101',N'Spain',N'(95) 555 82 82',NULL),
+		(N'Av. Brasil, 442',0,N'GOURL',N'Gourmet Lanchonetes',N'André Fonseca',N'Sales Associate',N'Campinas',N'SP',N'04876-786',N'Brazil',N'(11) 555-9482',NULL),
+		(N'2732 Baker Blvd.',0,N'GREAL',N'Great Lakes Food Market',N'Howard Snyder',N'Marketing Manager',N'Eugene',N'OR',N'97403',N'USA',N'(503) 555-7555',NULL),
+		(N'5ª Ave. Los Palos Grandes',0,N'GROSR',N'GROSELLA-Restaurante',N'Manuel Pereira',N'Owner',N'Caracas',N'DF',N'1081',N'Venezuela',N'(2) 283-2951',N'(2) 283-3397'),
+		(N'Rua do Paço, 67',0,N'HANAR',N'Hanari Carnes',N'Mario Pontes',N'Accounting Manager',N'Rio de Janeiro',N'RJ',N'05454-876',N'Brazil',N'(21) 555-0091',N'(21) 555-8765'),
+		(N'Carrera 22 con Ave. Carlos Soublette #8-35',0,N'HILAA',N'HILARION-Abastos',N'Carlos Hernández',N'Sales Representative',N'San Cristóbal',N'Táchira',N'5022',N'Venezuela',N'(5) 555-1340',N'(5) 555-1948'),
+		(N'City Center Plaza 516 Main St.',0,N'HUNGC',N'Hungry Coyote Import Store',N'Yoshi Latimer',N'Sales Representative',N'Elgin',N'OR',N'97827',N'USA',N'(503) 555-6874',N'(503) 555-2376'),
+		(N'8 Johnstown Road',0,N'HUNGO',N'Hungry Owl All-Night Grocers',N'Patricia McKenna',N'Sales Associate',N'Cork',N'Co. Cork',NULL,N'Ireland',N'2967 542',N'2967 3333'),
+		(N'Garden House Crowther Way',0,N'ISLAT',N'Island Trading',N'Helen Bennett',N'Marketing Manager',N'Cowes',N'Isle of Wight',N'PO31 7PJ',N'UK',N'(198) 555-8888',NULL),
+		(N'Maubelstr. 90',0,N'KOENE',N'Königlich Essen',N'Philip Cramer',N'Sales Associate',N'Brandenburg',NULL,N'14776',N'Germany',N'0555-09876',NULL),
+		(N'67, avenue de l''Europe',0,N'LACOR',N'La corne d''abondance',N'Daniel Tonini',N'Sales Representative',N'Versailles',NULL,N'78000',N'France',N'30.59.84.10',N'30.59.85.11'),
+		(N'1 rue Alsace-Lorraine',0,N'LAMAI',N'La maison d''Asie',N'Annette Roulet',N'Sales Manager',N'Toulouse',NULL,N'31000',N'France',N'61.77.61.10',N'61.77.61.11'),
+		(N'1900 Oak St.',0,N'LAUGB',N'Laughing Bacchus Wine Cellars',N'Yoshi Tannamuri',N'Marketing Assistant',N'Vancouver',N'BC',N'V3F 2K1',N'Canada',N'(604) 555-3392',N'(604) 555-7293'),
+		(N'12 Orchestra Terrace',0,N'LAZYK',N'Lazy K Kountry Store',N'John Steel',N'Marketing Manager',N'Walla Walla',N'WA',N'99362',N'USA',N'(509) 555-7969',N'(509) 555-6221'),
+		(N'Magazinweg 7',0,N'LEHMS',N'Lehmanns Marktstand',N'Renate Messner',N'Sales Representative',N'Frankfurt a.M.',NULL,N'60528',N'Germany',N'069-0245984',N'069-0245874'),
+		(N'87 Polk St. Suite 5',0,N'LETSS',N'Let''s Stop N Shop',N'Jaime Yorres',N'Owner',N'San Francisco',N'CA',N'94117',N'USA',N'(415) 555-5938',NULL),
+		(N'Carrera 52 con Ave. Bolívar #65-98 Llano Largo',0,N'LILAS',N'LILA-Supermercado',N'Carlos González',N'Accounting Manager',N'Barquisimeto',N'Lara',N'3508',N'Venezuela',N'(9) 331-6954',N'(9) 331-7256'),
+		(N'Ave. 5 de Mayo Porlamar',0,N'LINOD',N'LINO-Delicateses',N'Felipe Izquierdo',N'Owner',N'I. de Margarita',N'Nueva Esparta',N'4980',N'Venezuela',N'(8) 34-56-12',N'(8) 34-93-93'),
+		(N'89 Chiaroscuro Rd.',0,N'LONEP',N'Lonesome Pine Restaurant',N'Fran Wilson',N'Sales Manager',N'Portland',N'OR',N'97219',N'USA',N'(503) 555-9573',N'(503) 555-9646'),
+		(N'Via Ludovico il Moro 22',0,N'MAGAA',N'Magazzini Alimentari Riuniti',N'Giovanni Rovelli',N'Marketing Manager',N'Bergamo',NULL,N'24100',N'Italy',N'035-640230',N'035-640231'),
+		(N'Rue Joseph-Bens 532',0,N'MAISD',N'Maison Dewey',N'Catherine Dewey',N'Sales Agent',N'Bruxelles',NULL,N'B-1180',N'Belgium',N'(02) 201 24 67',N'(02) 201 24 68'),
+		(N'43 rue St. Laurent',0,N'MEREP',N'Mère Paillarde',N'Jean Fresnière',N'Marketing Assistant',N'Montréal',N'Québec',N'H1J 1C3',N'Canada',N'(514) 555-8054',N'(514) 555-8055'),
+		(N'Heerstr. 22',0,N'MORGK',N'Morgenstern Gesundkost',N'Alexander Feuer',N'Marketing Assistant',N'Leipzig',NULL,N'04179',N'Germany',N'0342-023176',NULL),
+		(N'South House 300 Queensbridge',0,N'NORTS',N'North/South',N'Simon Crowther',N'Sales Associate',N'London',NULL,N'SW7 1RZ',N'UK',N'(171) 555-7733',N'(171) 555-2530'),
+		(N'Ing. Gustavo Moncada 8585 Piso 20-A',0,N'OCEAN',N'Océano Atlántico Ltda.',N'Yvonne Moncada',N'Sales Agent',N'Buenos Aires',NULL,N'1010',N'Argentina',N'(1) 135-5333',N'(1) 135-5535'),
+		(N'2743 Bering St.',0,N'OLDWO',N'Old World Delicatessen',N'Rene Phillips',N'Sales Representative',N'Anchorage',N'AK',N'99508',N'USA',N'(907) 555-7584',N'(907) 555-2880'),
+		(N'Mehrheimerstr. 369',0,N'OTTIK',N'Ottilies Käseladen',N'Henriette Pfalzheim',N'Owner',N'Köln',NULL,N'50739',N'Germany',N'0221-0644327',N'0221-0765721'),
+		(N'265, boulevard Charonne',0,N'PARIS',N'Paris spécialités',N'Marie Bertrand',N'Owner',N'Paris',NULL,N'75012',N'France',N'(1) 42.34.22.66',N'(1) 42.34.22.77'),
+		(N'Calle Dr. Jorge Cash 321',0,N'PERIC',N'Pericles Comidas clásicas',N'Guillermo Fernández',N'Sales Representative',N'México D.F.',NULL,N'05033',N'Mexico',N'(5) 552-3745',N'(5) 545-3745'),
+		(N'Geislweg 14',0,N'PICCO',N'Piccolo und mehr',N'Georg Pipps',N'Sales Manager',N'Salzburg',NULL,N'5020',N'Austria',N'6562-9722',N'6562-9723'),
+		(N'Estrada da saúde n. 58',0,N'PRINI',N'Princesa Isabel Vinhos',N'Isabel de Castro',N'Sales Representative',N'Lisboa',NULL,N'1756',N'Portugal',N'(1) 356-5634',NULL),
+		(N'Rua da Panificadora, 12',0,N'QUEDE',N'Que Delícia',N'Bernardo Batista',N'Accounting Manager',N'Rio de Janeiro',N'RJ',N'02389-673',N'Brazil',N'(21) 555-4252',N'(21) 555-4545'),
+		(N'Alameda dos Canàrios, 891',0,N'QUEEN',N'Queen Cozinha',N'Lúcia Carvalho',N'Marketing Assistant',N'Sao Paulo',N'SP',N'05487-020',N'Brazil',N'(11) 555-1189',NULL),
+		(N'Taucherstraße 10',0,N'QUICK',N'QUICK-Stop',N'Horst Kloss',N'Accounting Manager',N'Cunewalde',NULL,N'01307',N'Germany',N'0372-035188',NULL),
+		(N'Av. del Libertador 900',0,N'RANCH',N'Rancho grande',N'Sergio Gutiérrez',N'Sales Representative',N'Buenos Aires',NULL,N'1010',N'Argentina',N'(1) 123-5555',N'(1) 123-5556'),
+		(N'2817 Milton Dr.',0,N'RATTC',N'Rattlesnake Canyon Grocery',N'Paula Wilson',N'Assistant Sales Representative',N'Albuquerque',N'NM',N'87110',N'USA',N'(505) 555-5939',N'(505) 555-3620'),
+		(N'Strada Provinciale 124',0,N'REGGC',N'Reggiani Caseifici',N'Maurizio Moroni',N'Sales Associate',N'Reggio Emilia',NULL,N'42100',N'Italy',N'0522-556721',N'0522-556722'),
+		(N'Av. Copacabana, 267',0,N'RICAR',N'Ricardo Adocicados',N'Janete Limeira',N'Assistant Sales Agent',N'Rio de Janeiro',N'RJ',N'02389-890',N'Brazil',N'(21) 555-3412',NULL),
+		(N'Grenzacherweg 237',0,N'RICSU',N'Richter Supermarkt',N'Michael Holz',N'Sales Manager',N'Genève',NULL,N'1203',N'Switzerland',N'0897-034214',NULL),
+		(N'Gran Vía, 1',0,N'ROMEY',N'Romero y tomillo',N'Alejandra Camino',N'Accounting Manager',N'Madrid',NULL,N'28001',N'Spain',N'(91) 745 6200',N'(91) 745 6210'),
+		(N'Erling Skakkes gate 78',0,N'SANTG',N'Santé Gourmet',N'Jonas Bergulfsen',N'Owner',N'Stavern',NULL,N'4110',N'Norway',N'07-98 92 35',N'07-98 92 47'),
+		(N'187 Suffolk Ln.',0,N'SAVEA',N'Save-a-lot Markets',N'Jose Pavarotti',N'Sales Representative',N'Boise',N'ID',N'83720',N'USA',N'(208) 555-8097',NULL),
+		(N'90 Wadhurst Rd.',0,N'SEVES',N'Seven Seas Imports',N'Hari Kumar',N'Sales Manager',N'London',NULL,N'OX15 4NB',N'UK',N'(171) 555-1717',N'(171) 555-5646'),
+		(N'Vinbæltet 34',0,N'SIMOB',N'Simons bistro',N'Jytte Petersen',N'Owner',N'Kobenhavn',NULL,N'1734',N'Denmark',N'31 12 34 56',N'31 13 35 57'),
+		(N'25, rue Lauriston',0,N'SPECD',N'Spécialités du monde',N'Dominique Perrier',N'Marketing Manager',N'Paris',NULL,N'75016',N'France',N'(1) 47.55.60.10',N'(1) 47.55.60.20'),
+		(N'P.O. Box 555',0,N'SPLIR',N'Split Rail Beer & Ale',N'Art Braunschweiger',N'Sales Manager',N'Lander',N'WY',N'82520',N'USA',N'(307) 555-4680',N'(307) 555-6525'),
+		(N'Boulevard Tirou, 255',0,N'SUPRD',N'Suprêmes délices',N'Pascale Cartrain',N'Accounting Manager',N'Charleroi',NULL,N'B-6000',N'Belgium',N'(071) 23 67 22 20',N'(071) 23 67 22 21'),
+		(N'89 Jefferson Way Suite 2',0,N'THEBI',N'The Big Cheese',N'Liz Nixon',N'Marketing Manager',N'Portland',N'OR',N'97201',N'USA',N'(503) 555-3612',NULL),
+		(N'55 Grizzly Peak Rd.',0,N'THECR',N'The Cracker Box',N'Liu Wong',N'Marketing Assistant',N'Butte',N'MT',N'59801',N'USA',N'(406) 555-5834',N'(406) 555-8083'),
+		(N'Luisenstr. 48',0,N'TOMSP',N'Toms Spezialitäten',N'Karin Josephs',N'Marketing Manager',N'Münster',NULL,N'44087',N'Germany',N'0251-031259',N'0251-035695'),
+		(N'Avda. Azteca 123',0,N'TORTU',N'Tortuga Restaurante',N'Miguel Angel Paolino',N'Owner',N'México D.F.',NULL,N'05033',N'Mexico',N'(5) 555-2933',NULL),
+		(N'Av. Inês de Castro, 414',0,N'TRADH',N'Tradição Hipermercados',N'Anabela Domingues',N'Sales Representative',N'Sao Paulo',N'SP',N'05634-030',N'Brazil',N'(11) 555-2167',N'(11) 555-2168'),
+		(N'722 DaVinci Blvd.',0,N'TRAIH',N'Trail''s Head Gourmet Provisioners',N'Helvetius Nagy',N'Sales Associate',N'Kirkland',N'WA',N'98034',N'USA',N'(206) 555-8257',N'(206) 555-2174'),
+		(N'Smagsloget 45',0,N'VAFFE',N'Vaffeljernet',N'Palle Ibsen',N'Sales Manager',N'Århus',NULL,N'8200',N'Denmark',N'86 21 32 43',N'86 22 33 44'),
+		(N'2, rue du Commerce',0,N'VICTE',N'Victuailles en stock',N'Mary Saveley',N'Sales Agent',N'Lyon',NULL,N'69004',N'France',N'78.32.54.86',N'78.32.54.87'),
+		(N'59 rue de l''Abbaye',0,N'VINET',N'Vins et alcools Chevalier',N'Paul Henriot',N'Accounting Manager',N'Reims',NULL,N'51100',N'France',N'26.47.15.10',N'26.47.15.11'),
+		(N'Adenauerallee 900',0,N'WANDK',N'Die Wandernde Kuh',N'Rita Müller',N'Sales Representative',N'Stuttgart',NULL,N'70563',N'Germany',N'0711-020361',N'0711-035428'),
+		(N'Torikatu 38',0,N'WARTH',N'Wartian Herkku',N'Pirkko Koskitalo',N'Accounting Manager',N'Oulu',NULL,N'90110',N'Finland',N'981-443655',N'981-443655'),
+		(N'Rua do Mercado, 12',0,N'WELLI',N'Wellington Importadora',N'Paula Parente',N'Sales Manager',N'Resende',N'SP',N'08737-363',N'Brazil',N'(14) 555-8122',NULL),
+		(N'305 - 14th Ave. S. Suite 3B',0,N'WHITC',N'White Clover Markets',N'Karl Jablonski',N'Owner',N'Seattle',N'WA',N'98128',N'USA',N'(206) 555-4112',N'(206) 555-4115'),
+		(N'Keskuskatu 45',0,N'WILMK',N'Wilman Kala',N'Matti Karttunen',N'Owner/Marketing Assistant',N'Helsinki',NULL,N'21240',N'Finland',N'90-224 8858',N'90-224 8858'),
+		(N'ul. Filtrowa 68',0,N'WOLZA',N'Wolski  Zajazd',N'Zbyszek Piestrzeniewicz',N'Owner',N'Warszawa',NULL,N'01-012',N'Poland',N'(26) 642-7012',N'(26) 642-7012')
+	) [e]([Address], [IsDeleted], [CustomerId], [CompanyName], [ContactName], [ContactTitle], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
 WHERE
 	[e].[Address] LIKE @value ESCAPE N'~'
 

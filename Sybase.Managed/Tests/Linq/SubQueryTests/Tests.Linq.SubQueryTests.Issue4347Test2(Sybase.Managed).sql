@@ -59,13 +59,13 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[LineEntity] [a_Lines]
 				WHERE
 					[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
 						SELECT
-							*
+							1
 						FROM
 							(
 								SELECT 'A' AS [item]
@@ -91,13 +91,13 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[LineEntity] [a_Lines]
 		WHERE
 			[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					(
 						SELECT 'A' AS [item]

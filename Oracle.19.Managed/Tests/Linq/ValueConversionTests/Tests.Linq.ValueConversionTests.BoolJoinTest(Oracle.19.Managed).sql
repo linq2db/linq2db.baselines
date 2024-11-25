@@ -65,7 +65,7 @@ FROM
 	"ValueConversion" t1
 		INNER JOIN (
 			SELECT
-				*
+				1 as "c1"
 			FROM
 				"ValueConversion" t2
 			WHERE

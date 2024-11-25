@@ -35,24 +35,8 @@ WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 --  MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	CASE
-		WHEN `t1`.`Discriminator` = 'WithInheritanceA2' THEN 1
-		ELSE 0
-	END,
-	`t1`.`Id`,
 	`t1`.`Discriminator`,
-	CASE
-		WHEN `t1`.`Discriminator` = 'WithInheritanceA1' THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN `t1`.`Discriminator` = 'WithInheritanceA' THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN `t1`.`Discriminator` = 'WithInheritance' THEN 1
-		ELSE 0
-	END
+	`t1`.`Id`
 FROM
 	`WithInheritance` `t1`
 WHERE

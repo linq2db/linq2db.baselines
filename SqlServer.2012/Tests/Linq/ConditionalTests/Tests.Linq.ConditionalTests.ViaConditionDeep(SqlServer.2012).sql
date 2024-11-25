@@ -43,7 +43,6 @@ BeforeExecute
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
-	IIF([x].[StringProp] = N'2', 1, 0),
 	[x].[StringProp],
 	[x].[StringProp] + N'2'
 FROM

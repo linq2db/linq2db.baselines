@@ -164,7 +164,6 @@ SET     @skip = 6
 
 SELECT
 	[t1].[BookType],
-	IIF([t1].[BookType] = N'Roman', 1, 0),
 	[t1].[c1]
 FROM
 	(
@@ -208,13 +207,11 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	IIF([t1].[Discriminator] = N'Novel', 1, 0),
+	[t1].[Discriminator],
 	[t1].[BookId],
 	[t1].[BookName],
 	[t1].[NovelScore],
-	IIF([t1].[Discriminator] = N'Roman', 1, 0),
-	[t1].[RomanScore],
-	[t1].[Discriminator]
+	[t1].[RomanScore]
 FROM
 	[Book] [t1]
 

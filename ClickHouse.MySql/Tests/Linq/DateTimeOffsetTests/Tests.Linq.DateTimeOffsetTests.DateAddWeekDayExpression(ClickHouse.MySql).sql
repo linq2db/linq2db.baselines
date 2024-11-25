@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDate(addDays(t.TransactionDate, 1))
+	toDate32(addDays(t.TransactionDate, 1))
 FROM
 	Transactions t
 

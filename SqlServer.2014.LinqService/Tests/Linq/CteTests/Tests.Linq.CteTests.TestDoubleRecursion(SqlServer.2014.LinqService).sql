@@ -360,17 +360,15 @@ AS
 	FROM
 		[HierarchyTree] [t1]
 ),
-[hierarchyDown] ([Level_1], [Id])
+[hierarchyDown] ([Id])
 AS
 (
 	SELECT
-		CAST(0 AS Int),
 		[t2].[Id]
 	FROM
 		[CTE_1] [t2]
 	UNION ALL
 	SELECT
-		[t3].[Level_1] + 1,
 		[t_1].[Id]
 	FROM
 		[hierarchyDown] [t3]

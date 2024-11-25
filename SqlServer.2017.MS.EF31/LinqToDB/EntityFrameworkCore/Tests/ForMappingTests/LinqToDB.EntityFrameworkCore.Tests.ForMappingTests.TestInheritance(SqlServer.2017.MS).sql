@@ -23,12 +23,8 @@ ORDER BY [i].[_Position];
 --  SqlServer.2017
 
 SELECT
-	IIF([t1].[Discriminator] = N'WithInheritanceA2', 1, 0),
-	[t1].[Id],
 	[t1].[Discriminator],
-	IIF([t1].[Discriminator] = N'WithInheritanceA1', 1, 0),
-	IIF([t1].[Discriminator] = N'WithInheritanceA', 1, 0),
-	IIF([t1].[Discriminator] = N'WithInheritance', 1, 0)
+	[t1].[Id]
 FROM
 	[WithInheritance] [t1]
 WHERE

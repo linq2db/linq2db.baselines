@@ -49,7 +49,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT 2 AS "Id", 'Janet' AS "Value" FROM sys.dual

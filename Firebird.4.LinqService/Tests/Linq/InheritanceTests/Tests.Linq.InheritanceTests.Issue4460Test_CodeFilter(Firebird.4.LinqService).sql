@@ -70,17 +70,9 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	CASE
-		WHEN "e"."Code" = 'Child2' THEN TRUE
-		ELSE FALSE
-	END,
 	"e"."Code",
 	"e"."Id",
 	"e"."Age",
-	CASE
-		WHEN "e"."Code" = 'Child' THEN TRUE
-		ELSE FALSE
-	END,
 	"e"."Name"
 FROM
 	"Base" "e"

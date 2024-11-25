@@ -17,18 +17,26 @@ FROM [EventScheduleItem]
 WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
 
 
+SELECT [e].[Id], [e].[CrashEnum], [e].[GuidColumn], [e].[JsonColumn], [e].[NameLocalized_JSON]
+FROM [EventScheduleItem] AS [e]
+
+
 --  SqlServer.2016
+DECLARE @path NVarChar(4000) -- String
+SET     @path = N'some'
 
 SELECT TOP (1)
-	[p].[Id],
-	[p].[NameLocalized_JSON],
-	[p].[CrashEnum],
-	[p].[GuidColumn],
-	JSON_VALUE([p].[JsonColumn], N'some')
+	[t1].[Id],
+	[t1].[NameLocalized],
+	[t1].[CrashEnum],
+	[t1].[GuidColumn],
+	JSON_VALUE([t1].[JsonColumn], @path)
 FROM
-	[EventScheduleItem] [p]
+	(VALUES
+		(1,N'{"English":"English","German":"German","Slovak":"Slovak"}',0,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL)
+	) [t1]([Id], [NameLocalized], [CrashEnum], [GuidColumn], [JsonColumn])
 WHERE
-	[p].[Id] < 10
+	[t1].[Id] < 10
 
 
 

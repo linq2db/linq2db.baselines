@@ -62,7 +62,7 @@ USING (
 ) "Source"
 ON (EXISTS(
 	SELECT
-		*
+		1
 	FROM
 		"Patient" "a_Patient_1"
 	WHERE

@@ -86,7 +86,7 @@ WHERE
 	t."Int" > 0 AND ROW (t.Str, t."Double", t.Bool) = ROW ('One', 1, 't') AND
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Mixed u
 		WHERE

@@ -197,7 +197,7 @@ FROM
 			[rp].[IsStoragePlace],
 			IIF(EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[InventoryResourceDTO] [irMix]
 				WHERE

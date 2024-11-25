@@ -256,7 +256,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					"Review" "r"
 				WHERE
@@ -292,7 +292,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Review" "r"
 		WHERE

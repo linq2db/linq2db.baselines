@@ -69,7 +69,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Relationship1711" r
 		WHERE

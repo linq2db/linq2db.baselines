@@ -230,7 +230,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDate(addMonths(t.TransactionDate, -2))
+	toDate32(addMonths(t.TransactionDate, -2))
 FROM
 	Transactions t
 

@@ -14,7 +14,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Child] [c2_1]
 		WHERE
@@ -22,7 +22,7 @@ SELECT
 	), True, False),
 	IIF(NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Child] [c2_2]
 		WHERE

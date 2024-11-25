@@ -183,18 +183,10 @@ BeforeExecute
 SELECT
 	"m_1"."AuthorId",
 	"a_Book"."BookId",
-	CASE
-		WHEN "a_Book"."Discriminator" = 'Novel' THEN TRUE
-		ELSE FALSE
-	END,
+	"a_Book"."Discriminator",
 	"a_Book"."BookName",
 	"a_Book"."NovelScore",
-	CASE
-		WHEN "a_Book"."Discriminator" = 'Roman' THEN TRUE
-		ELSE FALSE
-	END,
-	"a_Book"."RomanScore",
-	"a_Book"."Discriminator"
+	"a_Book"."RomanScore"
 FROM
 	"Author" "m_1"
 		INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "m_1"."AuthorId"

@@ -55,7 +55,7 @@ FROM
 	[Table1] [rTable1]
 		LEFT JOIN [Table2] [rTable2] ON [rTable2].[Id_2] = [rTable1].[Id_1] AND EXISTS(
 			SELECT
-				*
+				1 as [c1]
 			FROM
 				[Table3] [r3]
 			WHERE

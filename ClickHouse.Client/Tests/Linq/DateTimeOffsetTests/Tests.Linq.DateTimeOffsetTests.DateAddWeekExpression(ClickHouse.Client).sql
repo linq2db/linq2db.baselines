@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate(addWeeks(t.TransactionDate, -1))
+	toDate32(addWeeks(t.TransactionDate, -1))
 FROM
 	Transactions t
 

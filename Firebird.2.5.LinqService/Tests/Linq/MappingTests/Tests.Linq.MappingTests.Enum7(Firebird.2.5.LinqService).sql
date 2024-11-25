@@ -2,11 +2,13 @@
 -- Firebird.2.5 Firebird
 DECLARE @v1 Integer -- Int32
 SET     @v1 = 1
+DECLARE @v1_1 Integer -- Int32
+SET     @v1_1 = 1
 
 UPDATE
 	"Parent" "p"
 SET
 	"Value1" = CAST(@v1 AS Int)
 WHERE
-	"p"."Value1" = CAST(@v1 AS Int)
+	"p"."Value1" = @v1_1
 

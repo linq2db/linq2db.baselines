@@ -17,7 +17,7 @@ FROM
 		WHERE
 			a_ParentTest."ParentID" IS NULL OR EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					"Child" a_1
 				WHERE
@@ -42,7 +42,7 @@ FROM
 WHERE
 	a_ParentTest."ParentID" IS NULL OR EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Child" a_1
 		WHERE

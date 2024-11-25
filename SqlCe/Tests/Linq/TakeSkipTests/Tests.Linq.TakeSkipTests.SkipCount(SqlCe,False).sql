@@ -6,13 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID],
-			[t1].[ChildID]
+			1 as [c1]
 		FROM
 			[Child] [t1]
 		ORDER BY
-			[t1].[ParentID],
-			[t1].[ChildID]
+			[t1].[ParentID]
 		OFFSET 2 ROWS
 	) [t2]
 

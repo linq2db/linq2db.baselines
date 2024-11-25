@@ -4,7 +4,7 @@
 SELECT
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[AllTypes] [p]
 		WHERE

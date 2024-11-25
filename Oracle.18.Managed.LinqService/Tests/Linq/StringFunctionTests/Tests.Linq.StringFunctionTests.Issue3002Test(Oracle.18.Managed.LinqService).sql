@@ -72,7 +72,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
@@ -108,7 +108,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
@@ -144,7 +144,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE

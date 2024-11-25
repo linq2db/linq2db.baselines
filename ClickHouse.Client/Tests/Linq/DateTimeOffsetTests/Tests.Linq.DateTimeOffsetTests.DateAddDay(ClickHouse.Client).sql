@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate(addDays(t.TransactionDate, 5))
+	toDate32(addDays(t.TransactionDate, 5))
 FROM
 	Transactions t
 

@@ -34,7 +34,7 @@ BeforeExecute
 WITH CTE_1 AS
 (
 	SELECT
-		t1.PersonID as ID
+		1 as unused
 	FROM
 		Person t1
 )

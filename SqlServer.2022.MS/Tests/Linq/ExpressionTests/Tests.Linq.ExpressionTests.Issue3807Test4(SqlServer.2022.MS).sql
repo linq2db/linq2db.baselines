@@ -49,7 +49,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[STRING_SPLIT]([a].[ArrayString], @p) [i]
 				WHERE
@@ -73,7 +73,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[STRING_SPLIT]([r].[ArrayString], @p) [i]
 		WHERE

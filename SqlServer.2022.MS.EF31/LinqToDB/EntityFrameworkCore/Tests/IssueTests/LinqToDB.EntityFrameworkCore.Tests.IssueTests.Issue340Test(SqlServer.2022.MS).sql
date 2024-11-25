@@ -1,9 +1,13 @@
-﻿--  SqlServer.2022
+﻿SELECT [i].[Id], [i].[IsActive]
+FROM [Issue340Entities] AS [i]
+
+
+--  SqlServer.2022
 
 SELECT
 	[x].[Id]
 FROM
-	[Issue340Entities] [x]
+	(SELECT NULL [IsActive], NULL [Id] WHERE 1 = 0) [x]([IsActive], [Id])
 WHERE
 	[x].[IsActive] = 1
 

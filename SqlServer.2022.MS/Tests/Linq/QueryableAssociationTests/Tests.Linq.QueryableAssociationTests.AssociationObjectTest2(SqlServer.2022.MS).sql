@@ -96,7 +96,7 @@ FROM
 WHERE
 	[x].[Id] = 123 AND EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			dbo.fn_SomeFunction([x].[Id]) [t1]
 	)

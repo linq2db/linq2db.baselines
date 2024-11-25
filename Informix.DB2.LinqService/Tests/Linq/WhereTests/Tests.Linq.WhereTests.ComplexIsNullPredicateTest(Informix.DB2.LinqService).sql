@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				Person t1
 			WHERE
@@ -13,7 +13,8 @@ SELECT
 					WHEN t1.MiddleName = '123' THEN 't'
 					ELSE 'f'
 				END = CASE
-					WHEN t1.MiddleName = '1' THEN 't'
+					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
+						THEN 't'
 					ELSE 'f'
 				END
 		)

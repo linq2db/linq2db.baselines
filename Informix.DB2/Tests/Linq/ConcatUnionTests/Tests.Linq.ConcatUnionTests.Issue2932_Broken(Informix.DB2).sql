@@ -6,7 +6,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				GrandChild a_GrandChildren
 			WHERE
@@ -23,7 +23,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				GrandChild a_GrandChildren_1
 			WHERE

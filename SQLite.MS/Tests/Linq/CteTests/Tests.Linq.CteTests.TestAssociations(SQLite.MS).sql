@@ -8,9 +8,11 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Books]
 (
-	[Id]       INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Title]    NVarChar(255)  NOT NULL,
-	[AuthorId] INTEGER        NOT NULL
+	[Id]       INTEGER       NOT NULL,
+	[Title]    NVarChar(255) NOT NULL,
+	[AuthorId] INTEGER       NOT NULL,
+
+	CONSTRAINT [PK_Books] PRIMARY KEY ([Id])
 )
 
 BeforeExecute
@@ -23,8 +25,10 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS [Authors]
 (
-	[Id]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Name] NVarChar(255)  NOT NULL
+	[Id]   INTEGER       NOT NULL,
+	[Name] NVarChar(255) NOT NULL,
+
+	CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
 )
 
 BeforeExecute

@@ -106,7 +106,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Issue2815Table1" "ext"
 				LEFT JOIN "Issue2815Table2" "source" ON "source".ISO = "ext".SRC_BIC

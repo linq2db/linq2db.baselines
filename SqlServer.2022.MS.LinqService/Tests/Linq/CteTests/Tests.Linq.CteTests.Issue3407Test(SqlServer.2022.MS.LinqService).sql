@@ -41,11 +41,11 @@ WHERE
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-WITH [CTE_1] ([ID])
+WITH [CTE_1] ([unused])
 AS
 (
 	SELECT
-		[t1].[PersonID]
+		1
 	FROM
 		[Person] [t1]
 )

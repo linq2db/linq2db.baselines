@@ -106,8 +106,16 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p`.`TargetName`,
+	CASE
+		WHEN `p`.`TargetName` = 'None' THEN 1
+		ELSE 0
+	END,
 	`p`.`Id`,
+	`p`.`TargetName`,
+	CASE
+		WHEN `p`.`TargetName` = 'bda.Requests' THEN 1
+		ELSE 0
+	END,
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`

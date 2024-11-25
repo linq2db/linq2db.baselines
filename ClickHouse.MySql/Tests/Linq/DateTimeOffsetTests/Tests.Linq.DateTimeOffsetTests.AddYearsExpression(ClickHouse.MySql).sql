@@ -45,7 +45,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDate(addYears(t.TransactionDate, 1))
+	toDate32(addYears(t.TransactionDate, 1))
 FROM
 	Transactions t
 

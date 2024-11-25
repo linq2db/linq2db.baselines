@@ -35,7 +35,7 @@ SELECT
 	[x].[Id],
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[ChecklistTrigger] [a_ChecklistTriggers]
 		WHERE

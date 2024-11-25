@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"GrandChild" "x"
 			WHERE
@@ -23,7 +23,7 @@ SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"GrandChild" "x"
 			WHERE

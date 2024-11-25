@@ -513,7 +513,7 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = N'Roman' AND EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Author] [t2]
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -557,12 +557,10 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	IIF([a_Book].[Discriminator] = N'Novel', 1, 0),
+	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
-	IIF([a_Book].[Discriminator] = N'Roman', 1, 0),
-	[a_Book].[RomanScore],
-	[a_Book].[Discriminator]
+	[a_Book].[RomanScore]
 FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]

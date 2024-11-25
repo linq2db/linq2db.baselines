@@ -73,7 +73,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[issue_4254_media_item_user_share] [y]
 				WHERE
@@ -82,7 +82,7 @@ FROM
 			) OR
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[issue_4254_media_item_user_share] [y_1]
 				WHERE
@@ -105,7 +105,7 @@ SELECT
 	[x].[id],
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y]
 		WHERE
@@ -116,7 +116,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y_1]
 		WHERE
@@ -125,7 +125,7 @@ WHERE
 	) OR
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE
@@ -154,7 +154,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[issue_4254_media_item_user_share] [y]
 				WHERE
@@ -163,7 +163,7 @@ FROM
 			) OR
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[issue_4254_media_item_user_share] [y_1]
 				WHERE
@@ -186,7 +186,7 @@ SELECT
 	[x].[id],
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y]
 		WHERE
@@ -197,7 +197,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y_1]
 		WHERE
@@ -206,7 +206,7 @@ WHERE
 	) OR
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[issue_4254_media_item_user_share] [y_2]
 		WHERE

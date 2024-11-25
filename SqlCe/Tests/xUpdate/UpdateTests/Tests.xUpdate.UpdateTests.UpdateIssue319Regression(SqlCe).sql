@@ -42,7 +42,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Parent] [p_1]
 				LEFT JOIN (
