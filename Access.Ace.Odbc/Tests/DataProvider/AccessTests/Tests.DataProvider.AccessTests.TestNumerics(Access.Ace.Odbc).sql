@@ -30,21 +30,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
@@ -81,28 +81,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -116,7 +116,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -153,21 +153,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
@@ -204,28 +204,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -239,7 +239,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -276,21 +276,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
@@ -327,28 +327,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -362,7 +362,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -399,21 +399,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
@@ -450,28 +450,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -485,7 +485,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -522,21 +522,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
@@ -573,28 +573,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -608,7 +608,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -645,21 +645,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
@@ -696,28 +696,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -731,7 +731,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -768,21 +768,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
@@ -819,28 +819,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -854,7 +854,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -891,21 +891,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
@@ -942,28 +942,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -977,7 +977,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1014,21 +1014,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
@@ -1065,28 +1065,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1100,7 +1100,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1137,21 +1137,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
@@ -1188,28 +1188,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1223,7 +1223,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1260,21 +1260,21 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
@@ -1311,28 +1311,28 @@ SELECT csng(1)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1346,7 +1346,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1870,21 +1870,21 @@ SELECT csng(-128)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 128
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 128
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 128
 
 SELECT ?
@@ -1921,21 +1921,21 @@ SELECT csng(127)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 127
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 127
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 127
 
 SELECT ?
@@ -1967,21 +1967,21 @@ SELECT csng(-32768)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -32768
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -32768
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -32768
 
 SELECT ?
@@ -2013,21 +2013,21 @@ SELECT csng(32767)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 32767
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 32767
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 32767
 
 SELECT ?
@@ -2054,21 +2054,21 @@ SELECT csng(-2147483648)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
@@ -2090,21 +2090,21 @@ SELECT cdbl(2147483647)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
@@ -2121,63 +2121,63 @@ SELECT csng(-2147483648)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -2147483648
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2147483647
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
@@ -2214,21 +2214,21 @@ SELECT csng(255)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 255
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 255
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 255
 
 SELECT ?
@@ -2255,21 +2255,21 @@ SELECT csng(65535)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = -1
 
 SELECT ?
@@ -2286,21 +2286,21 @@ SELECT cdbl(4294967295)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT ?
@@ -2317,21 +2317,21 @@ SELECT csng(-3.402823E+38)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT ?
@@ -2348,21 +2348,21 @@ SELECT csng(3.402823E+38)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT ?
@@ -2374,21 +2374,21 @@ SELECT cdbl(-1.79E+308)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = -1.79E+308
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = -1.79E+308
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = -1.79E+308
 
 SELECT ?
@@ -2400,21 +2400,21 @@ SELECT cdbl(1.79E+308)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1.79E+308
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1.79E+308
 
 SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1.79E+308
 
 SELECT ?

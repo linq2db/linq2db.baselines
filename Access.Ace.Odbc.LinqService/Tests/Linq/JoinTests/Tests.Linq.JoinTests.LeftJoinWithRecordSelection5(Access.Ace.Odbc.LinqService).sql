@@ -15,7 +15,7 @@ CREATE TABLE [Fact]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 
 INSERT INTO [Fact]
@@ -29,7 +29,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 
 INSERT INTO [Fact]
@@ -43,7 +43,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 
 INSERT INTO [Fact]
@@ -74,9 +74,9 @@ CREATE TABLE [Tag]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @FactId  -- Int32
+DECLARE @FactId Int -- Int32
 SET     @FactId = 3
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag3'
@@ -96,9 +96,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @FactId  -- Int32
+DECLARE @FactId Int -- Int32
 SET     @FactId = 3
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag3'
@@ -118,9 +118,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @FactId  -- Int32
+DECLARE @FactId Int -- Int32
 SET     @FactId = 4
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Tag4'

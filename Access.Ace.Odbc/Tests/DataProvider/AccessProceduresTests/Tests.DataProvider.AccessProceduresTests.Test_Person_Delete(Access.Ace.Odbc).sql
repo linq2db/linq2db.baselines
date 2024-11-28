@@ -20,7 +20,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
@@ -32,14 +32,14 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 { CALL Person_Delete(?) }
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT

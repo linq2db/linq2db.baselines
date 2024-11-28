@@ -19,15 +19,15 @@ CREATE TABLE [UpdatedEntities]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 0
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
-DECLARE @Value2  -- Int32
+DECLARE @Value2 Int -- Int32
 SET     @Value2 = 1
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 3
-DECLARE @RelationId  -- Int32
+DECLARE @RelationId Int -- Int32
 SET     @RelationId = 0
 
 INSERT INTO [UpdatedEntities]
@@ -49,15 +49,15 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 11
-DECLARE @Value2  -- Int32
+DECLARE @Value2 Int -- Int32
 SET     @Value2 = 12
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 13
-DECLARE @RelationId  -- Int32
+DECLARE @RelationId Int -- Int32
 SET     @RelationId = 1
 
 INSERT INTO [UpdatedEntities]
@@ -79,15 +79,15 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 2
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 21
-DECLARE @Value2  -- Int32
+DECLARE @Value2 Int -- Int32
 SET     @Value2 = 22
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 23
-DECLARE @RelationId  -- Int32
+DECLARE @RelationId Int -- Int32
 SET     @RelationId = 2
 
 INSERT INTO [UpdatedEntities]
@@ -109,15 +109,15 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 3
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 31
-DECLARE @Value2  -- Int32
+DECLARE @Value2 Int -- Int32
 SET     @Value2 = 32
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 33
-DECLARE @RelationId  -- Int32
+DECLARE @RelationId Int -- Int32
 SET     @RelationId = 3
 
 INSERT INTO [UpdatedEntities]
@@ -157,13 +157,13 @@ CREATE TABLE [UpdateRelation]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 0
-DECLARE @RelatedValue1  -- Int32
+DECLARE @RelatedValue1 Int -- Int32
 SET     @RelatedValue1 = 1
-DECLARE @RelatedValue2  -- Int32
+DECLARE @RelatedValue2 Int -- Int32
 SET     @RelatedValue2 = 2
-DECLARE @RelatedValue3  -- Int32
+DECLARE @RelatedValue3 Int -- Int32
 SET     @RelatedValue3 = 3
 
 INSERT INTO [UpdateRelation]
@@ -183,13 +183,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
-DECLARE @RelatedValue1  -- Int32
+DECLARE @RelatedValue1 Int -- Int32
 SET     @RelatedValue1 = 11
-DECLARE @RelatedValue2  -- Int32
+DECLARE @RelatedValue2 Int -- Int32
 SET     @RelatedValue2 = 12
-DECLARE @RelatedValue3  -- Int32
+DECLARE @RelatedValue3 Int -- Int32
 SET     @RelatedValue3 = 13
 
 INSERT INTO [UpdateRelation]
@@ -209,13 +209,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 2
-DECLARE @RelatedValue1  -- Int32
+DECLARE @RelatedValue1 Int -- Int32
 SET     @RelatedValue1 = 21
-DECLARE @RelatedValue2  -- Int32
+DECLARE @RelatedValue2 Int -- Int32
 SET     @RelatedValue2 = 22
-DECLARE @RelatedValue3  -- Int32
+DECLARE @RelatedValue3 Int -- Int32
 SET     @RelatedValue3 = 23
 
 INSERT INTO [UpdateRelation]
@@ -235,13 +235,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 3
-DECLARE @RelatedValue1  -- Int32
+DECLARE @RelatedValue1 Int -- Int32
 SET     @RelatedValue1 = 31
-DECLARE @RelatedValue2  -- Int32
+DECLARE @RelatedValue2 Int -- Int32
 SET     @RelatedValue2 = 32
-DECLARE @RelatedValue3  -- Int32
+DECLARE @RelatedValue3 Int -- Int32
 SET     @RelatedValue3 = 33
 
 INSERT INTO [UpdateRelation]

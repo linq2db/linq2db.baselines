@@ -17,7 +17,7 @@ CREATE TABLE [PR_1598_Insert_Null_Table]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Tommy'

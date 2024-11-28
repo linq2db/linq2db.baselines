@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Date  -- Int32
+DECLARE @Date Int -- Int32
 SET     @Date = -2
 
 SELECT

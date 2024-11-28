@@ -406,7 +406,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 SELECT
@@ -422,7 +422,7 @@ ORDER BY
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 DELETE FROM

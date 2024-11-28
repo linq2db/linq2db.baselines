@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Length  -- Int32
+DECLARE @Length Int -- Int32
 SET     @Length = 0
 
 SELECT

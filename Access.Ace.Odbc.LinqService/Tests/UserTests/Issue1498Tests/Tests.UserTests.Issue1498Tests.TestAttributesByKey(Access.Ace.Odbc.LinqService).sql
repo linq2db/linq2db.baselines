@@ -30,7 +30,7 @@ CREATE TABLE [Message]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
 SET     @Title = 'title'

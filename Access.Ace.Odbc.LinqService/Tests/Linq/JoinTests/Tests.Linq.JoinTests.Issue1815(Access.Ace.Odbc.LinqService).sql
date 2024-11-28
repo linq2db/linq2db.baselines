@@ -17,11 +17,11 @@ CREATE TABLE [StLink]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InId  -- Int32
+DECLARE @InId Int -- Int32
 SET     @InId = 1
-DECLARE @InMaxQuantity  -- Double
+DECLARE @InMaxQuantity Double
 SET     @InMaxQuantity = 2
-DECLARE @InMinQuantity  -- Double
+DECLARE @InMinQuantity Double
 SET     @InMinQuantity = 1
 
 INSERT INTO [StLink]
@@ -39,11 +39,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InId  -- Int32
+DECLARE @InId Int -- Int32
 SET     @InId = 2
-DECLARE @InMaxQuantity  -- Double
+DECLARE @InMaxQuantity Double
 SET     @InMaxQuantity = NULL
-DECLARE @InMinQuantity  -- Double
+DECLARE @InMinQuantity Double
 SET     @InMinQuantity = NULL
 
 INSERT INTO [StLink]
@@ -78,11 +78,11 @@ CREATE TABLE [EdtLink]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InId  -- Int32
+DECLARE @InId Int -- Int32
 SET     @InId = 2
-DECLARE @InMaxQuantity  -- Double
+DECLARE @InMaxQuantity Double
 SET     @InMaxQuantity = 4
-DECLARE @InMinQuantity  -- Double
+DECLARE @InMinQuantity Double
 SET     @InMinQuantity = 3
 
 INSERT INTO [EdtLink]

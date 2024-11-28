@@ -43,7 +43,7 @@ SELECT
 FROM
 	[ConcatTest] [t1]
 WHERE
-	[t1].[Discr] <> 1
+	[t1].[Discr] = 1
 UNION ALL
 SELECT
 	NULL,

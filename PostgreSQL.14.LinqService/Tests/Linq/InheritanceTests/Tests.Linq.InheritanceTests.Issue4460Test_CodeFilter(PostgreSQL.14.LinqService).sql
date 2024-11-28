@@ -62,17 +62,9 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN e."Code" = 'Child2' THEN True
-		ELSE False
-	END,
 	e."Code",
 	e."Id",
 	e."Age",
-	CASE
-		WHEN e."Code" = 'Child' THEN True
-		ELSE False
-	END,
 	e."Name"
 FROM
 	"Base" e

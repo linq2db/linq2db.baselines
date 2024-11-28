@@ -1,8 +1,4 @@
-﻿SELECT [c].[Id], [c].[IsActive], [c].[Name], [c].[ParentId]
-FROM [Children] AS [c]
-
-
---  SqlServer.2016 (asynchronously)
+﻿--  SqlServer.2016 (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -10,9 +6,7 @@ SELECT
 	[x].[ParentId],
 	[x].[Name]
 FROM
-	(VALUES
-		(NULL,11,1,1), (NULL,12,0,2)
-	) [x]([Name], [Id], [IsActive], [ParentId])
+	[Children] [x]
 WHERE
 	[x].[Name] LIKE N'%Test%' ESCAPE N'~'
 ORDER BY

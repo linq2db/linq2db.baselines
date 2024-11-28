@@ -13,7 +13,7 @@ CREATE TABLE [Data]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Data]
@@ -27,7 +27,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [Data]
@@ -41,7 +41,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 
 INSERT INTO [Data]
@@ -68,7 +68,7 @@ CREATE TABLE [SubData1]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [SubData1]
@@ -82,7 +82,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 
 INSERT INTO [SubData1]
@@ -110,7 +110,7 @@ CREATE TABLE [SubData2]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Reason NVarChar(5) -- String
 SET     @Reason = 'прст1'
@@ -128,7 +128,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Reason NVarChar(5) -- String
 SET     @Reason = 'прст2'

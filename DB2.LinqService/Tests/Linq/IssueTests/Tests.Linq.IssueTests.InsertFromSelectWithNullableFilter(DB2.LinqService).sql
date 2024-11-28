@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @ID SmallInt(2) -- Int16
+SET     @ID = 0
 
 INSERT INTO ALLTYPES
 (
@@ -17,7 +19,7 @@ FROM
 			ALLTYPES "t1"
 				INNER JOIN ALLTYPES "a_Association" ON "t1".SMALLINTDATATYPE = "a_Association".INTDATATYPE
 		WHERE
-			1 = 0
+			"t1".SMALLINTDATATYPE = @ID
 	) "t2"
 
 BeforeExecute

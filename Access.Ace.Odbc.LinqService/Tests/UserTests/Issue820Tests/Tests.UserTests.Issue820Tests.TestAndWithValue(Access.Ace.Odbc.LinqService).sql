@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @param  -- Int16
+DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT

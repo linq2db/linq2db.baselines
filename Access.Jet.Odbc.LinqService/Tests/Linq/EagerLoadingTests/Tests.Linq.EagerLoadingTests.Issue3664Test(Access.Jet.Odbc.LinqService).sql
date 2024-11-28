@@ -15,7 +15,7 @@ CREATE TABLE [Test3664]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Test3664]
@@ -45,9 +45,9 @@ CREATE TABLE [Test3664Item]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @TestId  -- Int32
+DECLARE @TestId Int -- Int32
 SET     @TestId = 1
 
 INSERT INTO [Test3664Item]
@@ -63,9 +63,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 12
-DECLARE @TestId  -- Int32
+DECLARE @TestId Int -- Int32
 SET     @TestId = 1
 
 INSERT INTO [Test3664Item]
@@ -81,7 +81,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 11
 
 SELECT
@@ -104,7 +104,7 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 12
 
 SELECT

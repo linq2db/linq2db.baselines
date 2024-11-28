@@ -14,7 +14,7 @@ CREATE TABLE [sample_class]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_1'
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_2'
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_3'
@@ -68,7 +68,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_4'
@@ -86,7 +86,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_5'
@@ -104,7 +104,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_6'
@@ -122,7 +122,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_7'
@@ -140,7 +140,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_8'
@@ -158,7 +158,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str_9'
@@ -176,7 +176,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_10'
@@ -194,7 +194,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_11'
@@ -212,7 +212,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 12
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_12'
@@ -230,7 +230,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 13
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_13'
@@ -248,7 +248,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 14
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_14'
@@ -266,7 +266,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 15
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_15'
@@ -284,7 +284,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 16
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_16'
@@ -302,7 +302,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 17
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_17'
@@ -320,7 +320,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 18
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_18'
@@ -338,7 +338,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 19
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_19'
@@ -356,7 +356,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 20
 DECLARE @Value NVarChar(6) -- String
 SET     @Value = 'Str_20'
@@ -374,7 +374,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 5
 
 SELECT
@@ -393,9 +393,9 @@ ORDER BY
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @startId  -- Int32
+DECLARE @startId Int -- Int32
 SET     @startId = 5
-DECLARE @endId  -- Int32
+DECLARE @endId Int -- Int32
 SET     @endId = 14
 
 SELECT

@@ -16,7 +16,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 INSERT INTO [Parent]
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
 
 INSERT INTO [Parent]

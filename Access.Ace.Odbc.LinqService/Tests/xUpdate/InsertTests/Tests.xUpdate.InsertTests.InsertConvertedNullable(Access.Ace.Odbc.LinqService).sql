@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @tt  -- Int32
+DECLARE @tt Int -- Int32
 SET     @tt = 600000000
 
 INSERT INTO [LinqDataTypes]

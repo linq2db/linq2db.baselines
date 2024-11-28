@@ -11,7 +11,7 @@ CREATE TABLE [aa]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @bb  -- Int32
+DECLARE @bb Int -- Int32
 SET     @bb = 99
 DECLARE @cc NVarChar(5) -- String
 SET     @cc = 'hallo'

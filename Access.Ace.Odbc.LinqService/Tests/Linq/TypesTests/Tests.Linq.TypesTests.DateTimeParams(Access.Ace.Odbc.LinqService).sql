@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @dateTime  -- DateTime
+DECLARE @dateTime DateTime
 SET     @dateTime = #1992-01-11 01:11:21#
 
 SELECT TOP 1
@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @dateTime  -- DateTime
+DECLARE @dateTime DateTime
 SET     @dateTime = #1993-01-11 01:11:21#
 
 SELECT TOP 1

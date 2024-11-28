@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Books"
 (
-	"Id"       SERIAL  NOT NULL,
-	"Title"    text    NOT NULL,
-	"AuthorId" Int     NOT NULL,
+	"Id"       Int  NOT NULL,
+	"Title"    text NOT NULL,
+	"AuthorId" Int  NOT NULL,
 
 	CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
 )
@@ -25,8 +25,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "Authors"
 (
-	"Id"   SERIAL  NOT NULL,
-	"Name" text    NOT NULL,
+	"Id"   Int  NOT NULL,
+	"Name" text NOT NULL,
 
 	CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
 )

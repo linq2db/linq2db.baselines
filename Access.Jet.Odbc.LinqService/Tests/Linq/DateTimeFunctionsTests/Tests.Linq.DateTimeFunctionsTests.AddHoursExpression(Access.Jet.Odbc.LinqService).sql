@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Hour  -- Int32
+DECLARE @Hour Int -- Int32
 SET     @Hour = 22
 
 SELECT

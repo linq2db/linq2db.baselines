@@ -28,8 +28,7 @@ SELECT
 FROM
 	[WithInheritance] [t1]
 WHERE
-	[t1].[Discriminator] = N'WithInheritanceA' OR [t1].[Discriminator] = N'WithInheritanceA1' OR
-	[t1].[Discriminator] = N'WithInheritanceA2'
+	[t1].[Discriminator] IN (N'WithInheritanceA', N'WithInheritanceA1', N'WithInheritanceA2')
 
 
 

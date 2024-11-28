@@ -1,25 +1,16 @@
-﻿SELECT CASE
-    WHEN EXISTS (
-        SELECT 1
-        FROM [Parents] AS [p]) THEN CAST(1 AS bit)
-    ELSE CAST(0 AS bit)
-END
-
-
-SELECT [p].[Id], [p].[ParentId]
-FROM [Parents] AS [p]
-
-
---  SqlServer.2019
+﻿--  SqlServer.2019
 
 SELECT
 	1
 FROM
-	(VALUES
-		(NULL), (2)
-	) [ua]([ParentId])
+	[Parents] [ua]
 WHERE
-	[ua].[ParentId] = 55377
+	[ua].[ParentId] = 55377 AND EXISTS(
+		SELECT
+			1
+		FROM
+			[Parents] [t1]
+	)
 
 
 

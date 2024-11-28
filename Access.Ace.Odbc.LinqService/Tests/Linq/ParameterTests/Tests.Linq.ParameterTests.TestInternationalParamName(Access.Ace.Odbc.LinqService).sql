@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @параметр  -- Int32
+DECLARE @параметр Int -- Int32
 SET     @параметр = 1
 
 SELECT
@@ -13,7 +13,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @参数  -- Int32
+DECLARE @参数 Int -- Int32
 SET     @参数 = 1
 
 SELECT
@@ -26,7 +26,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @パラメータ  -- Int32
+DECLARE @パラメータ Int -- Int32
 SET     @パラメータ = 1
 
 SELECT

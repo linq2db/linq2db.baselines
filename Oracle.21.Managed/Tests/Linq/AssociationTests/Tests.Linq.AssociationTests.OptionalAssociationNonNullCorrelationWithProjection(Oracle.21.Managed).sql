@@ -150,38 +150,6 @@ END;
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Table4"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Table4"
-		(
-			ID  Int NOT NULL,
-			ID3 Int     NULL,
-
-			CONSTRAINT "PK_Table4" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "Table4" (ID, ID3) VALUES (1,1)
 	INTO "Table4" (ID, ID3) VALUES (2,NULL)

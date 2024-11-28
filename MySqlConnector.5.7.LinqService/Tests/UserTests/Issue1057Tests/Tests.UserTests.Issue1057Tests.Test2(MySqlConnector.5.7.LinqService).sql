@@ -106,16 +106,8 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	CASE
-		WHEN `p`.`TargetName` = 'None' THEN 1
-		ELSE 0
-	END,
-	`p`.`Id`,
 	`p`.`TargetName`,
-	CASE
-		WHEN `p`.`TargetName` = 'bda.Requests' THEN 1
-		ELSE 0
-	END,
+	`p`.`Id`,
 	`a_ActualStage`.`Id`
 FROM
 	`Task` `p`

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT TOP 1
@@ -13,7 +13,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT TOP 2

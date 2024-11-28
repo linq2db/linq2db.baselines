@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -10,11 +10,11 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @TestField  -- Int32
+DECLARE @TestField Int -- Int32
 SET     @TestField = 12
-DECLARE @Int32Field  -- Int32
+DECLARE @Int32Field Int -- Int32
 SET     @Int32Field = NULL
 
 INSERT INTO [LinqDataTypes]
@@ -42,7 +42,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 102
 
 DELETE FROM

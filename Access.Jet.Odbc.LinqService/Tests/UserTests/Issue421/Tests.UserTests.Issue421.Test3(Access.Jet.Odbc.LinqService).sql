@@ -16,9 +16,9 @@ CREATE TABLE [BlobClass]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BlobValue Binary(3)
+DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = 0x010203
 
 INSERT INTO [BlobClass]

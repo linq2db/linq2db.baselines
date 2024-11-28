@@ -1,8 +1,4 @@
-﻿SELECT [p].[Id], [p].[ParentId]
-FROM [Parents] AS [p]
-
-
---  SqlServer.2019
+﻿--  SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -14,9 +10,7 @@ FROM
 			[x].[Id],
 			ROW_NUMBER() OVER(ORDER BY [x].[Id]) as [Index_1]
 		FROM
-			(VALUES
-				(2), (1)
-			) [x]([Id])
+			[Parents] [x]
 	) [t1]
 WHERE
 	[t1].[Id] = @id

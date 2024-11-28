@@ -18,13 +18,13 @@ CREATE TABLE [MasterClass]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 1
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 1
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str1'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -44,13 +44,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 2
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 2
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str2'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -70,13 +70,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 3
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 3
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str3'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -96,13 +96,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 4
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 4
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str4'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -122,13 +122,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 5
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 5
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str5'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -148,13 +148,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 6
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 6
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str6'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -174,13 +174,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 7
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 7
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str7'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -200,13 +200,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 8
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 8
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str8'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -226,13 +226,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 9
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 9
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'Str9'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -252,13 +252,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id1  -- Int32
+DECLARE @Id1 Int -- Int32
 SET     @Id1 = 10
-DECLARE @Id2  -- Int32
+DECLARE @Id2 Int -- Int32
 SET     @Id2 = 10
 DECLARE @Value NVarChar(5) -- String
 SET     @Value = 'Str10'
-DECLARE @ByteValues Binary
+DECLARE @ByteValues VarBinary -- Binary
 SET     @ByteValues = NULL
 
 INSERT INTO [MasterClass]
@@ -295,9 +295,9 @@ CREATE TABLE [DetailClass]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 1001
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 1
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue10001'
@@ -317,9 +317,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 3001
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 3
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue30001'
@@ -339,9 +339,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 3002
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 3
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue30002'
@@ -361,9 +361,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 3003
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 3
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue30003'
@@ -383,9 +383,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 5001
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 5
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue50001'
@@ -405,9 +405,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 5002
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 5
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue50002'
@@ -427,9 +427,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 5003
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 5
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue50003'
@@ -449,9 +449,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 5004
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 5
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue50004'
@@ -471,9 +471,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 5005
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 5
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue50005'
@@ -493,9 +493,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7001
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70001'
@@ -515,9 +515,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7002
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70002'
@@ -537,9 +537,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7003
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70003'
@@ -559,9 +559,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7004
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70004'
@@ -581,9 +581,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7005
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70005'
@@ -603,9 +603,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7006
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70006'
@@ -625,9 +625,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 7007
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 7
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue70007'
@@ -647,9 +647,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9001
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90001'
@@ -669,9 +669,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9002
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90002'
@@ -691,9 +691,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9003
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90003'
@@ -713,9 +713,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9004
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90004'
@@ -735,9 +735,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9005
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90005'
@@ -757,9 +757,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9006
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90006'
@@ -779,9 +779,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9007
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90007'
@@ -801,9 +801,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9008
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90008'
@@ -823,9 +823,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DetailId  -- Int32
+DECLARE @DetailId Int -- Int32
 SET     @DetailId = 9009
-DECLARE @MasterId  -- Int32
+DECLARE @MasterId Int -- Int32
 SET     @MasterId = 9
 DECLARE @DetailValue NVarChar(16) -- String
 SET     @DetailValue = 'DetailValue90009'

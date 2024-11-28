@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 INSERT INTO [Child]
@@ -16,7 +16,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
@@ -28,9 +28,9 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -43,7 +43,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1002
 
 SELECT

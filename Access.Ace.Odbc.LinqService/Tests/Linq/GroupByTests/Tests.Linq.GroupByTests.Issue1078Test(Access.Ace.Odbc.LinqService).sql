@@ -17,11 +17,11 @@ CREATE TABLE [Issue1078Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 1
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 1
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = True
 
 INSERT INTO [Issue1078Table]
@@ -39,11 +39,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 2
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 1
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = False
 
 INSERT INTO [Issue1078Table]
@@ -61,11 +61,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 3
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 1
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = True
 
 INSERT INTO [Issue1078Table]
@@ -83,11 +83,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 4
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 2
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = False
 
 INSERT INTO [Issue1078Table]
@@ -105,11 +105,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 5
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 2
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = True
 
 INSERT INTO [Issue1078Table]
@@ -127,11 +127,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 6
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 2
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = False
 
 INSERT INTO [Issue1078Table]
@@ -149,11 +149,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 7
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 2
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = False
 
 INSERT INTO [Issue1078Table]
@@ -171,11 +171,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 8
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 3
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = False
 
 INSERT INTO [Issue1078Table]
@@ -193,11 +193,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @UserID  -- Int32
+DECLARE @UserID Int -- Int32
 SET     @UserID = 9
-DECLARE @SiteID  -- Int32
+DECLARE @SiteID Int -- Int32
 SET     @SiteID = 4
-DECLARE @Active  -- Boolean
+DECLARE @Active Bit -- Boolean
 SET     @Active = True
 
 INSERT INTO [Issue1078Table]

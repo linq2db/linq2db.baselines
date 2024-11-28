@@ -41,11 +41,11 @@ WHERE
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-WITH `CTE_1` (`ID`)
+WITH `CTE_1` (`unused`)
 AS
 (
 	SELECT
-		`t1`.`PersonID`
+		1
 	FROM
 		`Person` `t1`
 )

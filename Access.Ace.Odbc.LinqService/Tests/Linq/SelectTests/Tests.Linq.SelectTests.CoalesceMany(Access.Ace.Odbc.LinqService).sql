@@ -18,13 +18,13 @@ CREATE TABLE [CoalesceNullableFields]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Nullable1  -- Int32
+DECLARE @Nullable1 Int -- Int32
 SET     @Nullable1 = 10
-DECLARE @Nullable2  -- Int32
+DECLARE @Nullable2 Int -- Int32
 SET     @Nullable2 = NULL
-DECLARE @Nullable3  -- Int32
+DECLARE @Nullable3 Int -- Int32
 SET     @Nullable3 = NULL
 
 INSERT INTO [CoalesceNullableFields]
@@ -44,13 +44,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Nullable1  -- Int32
+DECLARE @Nullable1 Int -- Int32
 SET     @Nullable1 = NULL
-DECLARE @Nullable2  -- Int32
+DECLARE @Nullable2 Int -- Int32
 SET     @Nullable2 = 20
-DECLARE @Nullable3  -- Int32
+DECLARE @Nullable3 Int -- Int32
 SET     @Nullable3 = NULL
 
 INSERT INTO [CoalesceNullableFields]
@@ -70,13 +70,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Nullable1  -- Int32
+DECLARE @Nullable1 Int -- Int32
 SET     @Nullable1 = NULL
-DECLARE @Nullable2  -- Int32
+DECLARE @Nullable2 Int -- Int32
 SET     @Nullable2 = NULL
-DECLARE @Nullable3  -- Int32
+DECLARE @Nullable3 Int -- Int32
 SET     @Nullable3 = 30
 
 INSERT INTO [CoalesceNullableFields]
@@ -96,13 +96,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Nullable1  -- Int32
+DECLARE @Nullable1 Int -- Int32
 SET     @Nullable1 = NULL
-DECLARE @Nullable2  -- Int32
+DECLARE @Nullable2 Int -- Int32
 SET     @Nullable2 = NULL
-DECLARE @Nullable3  -- Int32
+DECLARE @Nullable3 Int -- Int32
 SET     @Nullable3 = NULL
 
 INSERT INTO [CoalesceNullableFields]

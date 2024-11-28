@@ -32,7 +32,7 @@ CREATE TABLE [ConcreteB]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(6) -- String
 SET     @AOnly = 'a only'
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @BOnly NVarChar(6) -- String
 SET     @BOnly = 'b only'

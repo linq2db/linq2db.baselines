@@ -13,7 +13,7 @@ CREATE TABLE [NotNullParent]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 INSERT INTO [NotNullParent]
@@ -27,7 +27,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
 
 INSERT INTO [NotNullParent]
@@ -54,7 +54,7 @@ CREATE TABLE [NotNullChild]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
 INSERT INTO [NotNullChild]

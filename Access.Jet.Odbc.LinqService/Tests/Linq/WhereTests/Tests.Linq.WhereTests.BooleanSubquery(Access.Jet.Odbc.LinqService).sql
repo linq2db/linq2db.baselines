@@ -16,9 +16,9 @@ CREATE TABLE [WhereWithBool]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 
 INSERT INTO [WhereWithBool]

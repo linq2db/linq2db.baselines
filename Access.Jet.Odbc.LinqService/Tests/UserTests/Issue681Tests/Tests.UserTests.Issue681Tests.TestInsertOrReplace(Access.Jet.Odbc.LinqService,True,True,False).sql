@@ -16,9 +16,9 @@ CREATE TABLE [Issue681Table]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -30,9 +30,9 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
 
 INSERT INTO [Database\TestData.ODBC.mdb].[Issue681Table]
@@ -48,9 +48,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE

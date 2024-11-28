@@ -15,7 +15,7 @@ CREATE TABLE [Issue1316Tests]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 INSERT INTO [Issue1316Tests]

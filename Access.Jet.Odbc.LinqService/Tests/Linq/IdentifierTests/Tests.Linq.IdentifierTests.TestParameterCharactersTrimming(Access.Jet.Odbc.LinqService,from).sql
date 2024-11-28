@@ -13,7 +13,7 @@ CREATE TABLE [testparams]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @from  -- Int32
+DECLARE @from Int -- Int32
 SET     @from = 2
 
 UPDATE

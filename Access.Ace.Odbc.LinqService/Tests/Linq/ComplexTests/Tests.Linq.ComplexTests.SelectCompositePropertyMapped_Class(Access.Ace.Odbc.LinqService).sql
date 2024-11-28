@@ -22,7 +22,7 @@ DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'Freddy'
 DECLARE @Residence_Street NVarChar(10) -- String
 SET     @Residence_Street = 'Elm Street'
-DECLARE @Residence_Building  -- Int32
+DECLARE @Residence_Building Int -- Int32
 SET     @Residence_Building = 13
 
 INSERT INTO [User]

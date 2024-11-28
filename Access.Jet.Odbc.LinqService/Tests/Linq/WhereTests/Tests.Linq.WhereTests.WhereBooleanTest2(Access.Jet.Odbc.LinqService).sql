@@ -17,11 +17,11 @@ CREATE TABLE [WhereCases]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO [WhereCases]
@@ -39,11 +39,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = True
 
 INSERT INTO [WhereCases]
@@ -61,11 +61,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO [WhereCases]
@@ -83,11 +83,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = True
 
 INSERT INTO [WhereCases]
@@ -105,11 +105,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = True
 
 INSERT INTO [WhereCases]
@@ -127,11 +127,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO [WhereCases]
@@ -149,11 +149,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 12
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = False
 
 INSERT INTO [WhereCases]
@@ -171,11 +171,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 13
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = NULL
 
 INSERT INTO [WhereCases]
@@ -193,11 +193,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 14
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = False
 
 INSERT INTO [WhereCases]
@@ -215,11 +215,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 15
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @NullableBoolValue  -- Boolean
+DECLARE @NullableBoolValue Bit -- Boolean
 SET     @NullableBoolValue = False
 
 INSERT INTO [WhereCases]

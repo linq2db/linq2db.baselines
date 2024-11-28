@@ -68,18 +68,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN t1."DeviceType" = 'TV' THEN True
-		ELSE False
-	END,
+	t1."DeviceType",
 	t1."Id",
 	t1."SerialNumber",
-	t1."DeviceType",
-	t1."Location",
-	CASE
-		WHEN t1."DeviceType" = 'DISPLAY' THEN True
-		ELSE False
-	END
+	t1."Location"
 FROM
 	"Issue4280" t1
 ORDER BY
@@ -126,18 +118,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN t1."DeviceType" = 'TV' THEN True
-		ELSE False
-	END,
+	t1."DeviceType",
 	t1."Id",
 	t1."SerialNumber",
-	t1."DeviceType",
-	t1."Location",
-	CASE
-		WHEN t1."DeviceType" = 'DISPLAY' THEN True
-		ELSE False
-	END
+	t1."Location"
 FROM
 	"Issue4280" t1
 ORDER BY

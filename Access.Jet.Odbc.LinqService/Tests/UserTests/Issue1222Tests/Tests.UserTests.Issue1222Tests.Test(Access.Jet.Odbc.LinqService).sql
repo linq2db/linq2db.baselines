@@ -43,9 +43,9 @@ CREATE TABLE [stVersions]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @parentId  -- Int32
+DECLARE @parentId Int -- Int32
 SET     @parentId = 111
-DECLARE @parentId  -- Int32
+DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 
 SELECT

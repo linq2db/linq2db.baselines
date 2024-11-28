@@ -16,7 +16,7 @@ CREATE TABLE [Author]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @AuthorId  -- Int32
+DECLARE @AuthorId Int -- Int32
 SET     @AuthorId = 1
 DECLARE @AuthorName NVarChar(12) -- String
 SET     @AuthorName = 'Stephen King'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @AuthorId  -- Int32
+DECLARE @AuthorId Int -- Int32
 SET     @AuthorId = 2
 DECLARE @AuthorName NVarChar(14) -- String
 SET     @AuthorName = 'Harry Harrison'
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @AuthorId  -- Int32
+DECLARE @AuthorId Int -- Int32
 SET     @AuthorId = 3
 DECLARE @AuthorName NVarChar(20) -- String
 SET     @AuthorName = 'Roger Joseph Zelazny'
@@ -89,13 +89,13 @@ CREATE TABLE [Book]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 11
 DECLARE @BookName NVarChar(14) -- String
 SET     @BookName = 'Lisey''s Story['
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 4
 
 INSERT INTO [Book]
@@ -115,13 +115,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 12
 DECLARE @BookName NVarChar(8) -- String
 SET     @BookName = 'Duma Key'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Novel'
-DECLARE @NovelScore  -- Int32
+DECLARE @NovelScore Int -- Int32
 SET     @NovelScore = 0
 
 INSERT INTO [Book]
@@ -141,13 +141,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 13
 DECLARE @BookName NVarChar(17) -- String
 SET     @BookName = 'Just After Sunset'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 3
 
 INSERT INTO [Book]
@@ -167,13 +167,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 21
 DECLARE @BookName NVarChar(10) -- String
 SET     @BookName = 'Deathworld'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 1
 
 INSERT INTO [Book]
@@ -193,13 +193,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 22
 DECLARE @BookName NVarChar(23) -- String
 SET     @BookName = 'The Stainless Steel Rat'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Novel'
-DECLARE @NovelScore  -- Int32
+DECLARE @NovelScore Int -- Int32
 SET     @NovelScore = 0
 
 INSERT INTO [Book]
@@ -219,13 +219,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 23
 DECLARE @BookName NVarChar(20) -- String
 SET     @BookName = 'Planet of the Damned'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 0
 
 INSERT INTO [Book]
@@ -245,13 +245,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 31
 DECLARE @BookName NVarChar(14) -- String
 SET     @BookName = 'Blood of Amber'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 5
 
 INSERT INTO [Book]
@@ -271,13 +271,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 32
 DECLARE @BookName NVarChar(17) -- String
 SET     @BookName = 'Knight of Shadows'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Novel'
-DECLARE @NovelScore  -- Int32
+DECLARE @NovelScore Int -- Int32
 SET     @NovelScore = 0
 
 INSERT INTO [Book]
@@ -297,13 +297,13 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BookId  -- Int32
+DECLARE @BookId Int -- Int32
 SET     @BookId = 33
 DECLARE @BookName NVarChar(23) -- String
 SET     @BookName = 'The Chronicles of Amber'
 DECLARE @Discriminator NVarChar(5) -- String
 SET     @Discriminator = 'Roman'
-DECLARE @RomanScore  -- Int32
+DECLARE @RomanScore Int -- Int32
 SET     @RomanScore = 7
 
 INSERT INTO [Book]
@@ -337,9 +337,9 @@ CREATE TABLE [BookAuthor]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 11
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 1
 
 INSERT INTO [BookAuthor]
@@ -355,9 +355,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 12
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 1
 
 INSERT INTO [BookAuthor]
@@ -373,9 +373,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 13
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 1
 
 INSERT INTO [BookAuthor]
@@ -391,9 +391,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 21
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 2
 
 INSERT INTO [BookAuthor]
@@ -409,9 +409,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 22
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 2
 
 INSERT INTO [BookAuthor]
@@ -427,9 +427,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 23
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 2
 
 INSERT INTO [BookAuthor]
@@ -445,9 +445,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 31
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 3
 
 INSERT INTO [BookAuthor]
@@ -463,9 +463,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 32
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 3
 
 INSERT INTO [BookAuthor]
@@ -481,9 +481,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @FkBookId  -- Int32
+DECLARE @FkBookId Int -- Int32
 SET     @FkBookId = 33
-DECLARE @FkAuthorId  -- Int32
+DECLARE @FkAuthorId Int -- Int32
 SET     @FkAuthorId = 3
 
 INSERT INTO [BookAuthor]

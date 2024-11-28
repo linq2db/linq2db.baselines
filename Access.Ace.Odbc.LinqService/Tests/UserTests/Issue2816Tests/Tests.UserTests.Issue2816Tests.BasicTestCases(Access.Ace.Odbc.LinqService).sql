@@ -16,7 +16,7 @@ CREATE TABLE [Issue2816Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @Text NVarChar -- String
 SET     @Text = ''
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Text NVarChar(1) -- String
 SET     @Text = 'a'
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Text NVarChar(3) -- String
 SET     @Text = ' m '
@@ -70,7 +70,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Text NVarChar(1) -- String
 SET     @Text = ' '
@@ -88,7 +88,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Text NVarChar(2) -- String
 SET     @Text = '  '
@@ -106,7 +106,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Text NVarChar -- String
 SET     @Text = NULL

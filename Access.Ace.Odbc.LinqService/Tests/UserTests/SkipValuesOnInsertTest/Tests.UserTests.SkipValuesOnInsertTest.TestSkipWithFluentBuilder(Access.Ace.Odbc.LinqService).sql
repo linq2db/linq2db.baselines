@@ -17,7 +17,7 @@ CREATE TABLE [PR_1598_Insert_Fluent_Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL

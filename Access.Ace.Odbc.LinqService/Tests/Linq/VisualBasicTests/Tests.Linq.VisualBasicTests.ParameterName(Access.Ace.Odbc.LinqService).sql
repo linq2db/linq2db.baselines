@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @$VB$Local_id  -- Int32
+DECLARE @$VB$Local_id Int -- Int32
 SET     @$VB$Local_id = 1
 
 SELECT

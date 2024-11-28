@@ -562,23 +562,23 @@ CREATE TABLE CollatedTable
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 1.11
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2001-01-11 01:11:21#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{ef129165-6ffe-4df9-bb6b-bb16e413c883}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 1
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = 1
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -612,23 +612,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 2.49
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2005-05-15 05:15:25#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{bc663a61-7b40-4681-ac38-f9aaf55b706b}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 2
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = 2
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = ''
@@ -662,23 +662,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 3.99
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-19 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 3
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '1'
@@ -712,23 +712,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 4
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 4.50
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 4
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '2'
@@ -762,23 +762,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 5.50
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{febe3eca-cb5f-40b2-ad39-2979d312afca}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 5
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '3'
@@ -812,23 +812,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 6
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 6.55
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-22 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{8d3c5d1d-47db-4730-9fe7-968f6228a4c0}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 6
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '4'
@@ -862,23 +862,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 7
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 7.00
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-23 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{48094115-83af-46dd-a906-bff26ee21ee2}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 7
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '5'
@@ -912,23 +912,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 8
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 8.99
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-24 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{c1139f1f-1335-4cd4-937e-92602f732dd3}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 8
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '6'
@@ -962,23 +962,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 9
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 9.63
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-25 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{46c5c512-3d4b-4cf7-b4e7-1de080789e5d}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 9
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '7'
@@ -1012,23 +1012,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 10
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 10.77
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-26 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{61b2bc55-147f-4b40-93ed-a4aa83602fee}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 10
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '8'
@@ -1062,23 +1062,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 11
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-27#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{d3021d18-97f0-4dc0-98d0-f0c7df4a1230}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 11
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '9'
@@ -1112,23 +1112,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 12
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2012-11-07 19:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{03021d18-97f0-4dc0-98d0-f0c7df4a1230}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 12
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '0'
@@ -1162,9 +1162,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 
 INSERT INTO [Parent]
@@ -1180,9 +1180,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO [Parent]
@@ -1198,9 +1198,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 INSERT INTO [Parent]
@@ -1216,9 +1216,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO [Parent]
@@ -1234,9 +1234,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 5
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 5
 
 INSERT INTO [Parent]
@@ -1252,9 +1252,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 6
 
 INSERT INTO [Parent]
@@ -1270,9 +1270,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 
 INSERT INTO [Parent]
@@ -1288,9 +1288,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 11
 
 INSERT INTO [Child]
@@ -1306,9 +1306,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
 
 INSERT INTO [Child]
@@ -1324,9 +1324,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
 
 INSERT INTO [Child]
@@ -1342,9 +1342,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
 
 INSERT INTO [Child]
@@ -1360,9 +1360,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
 
 INSERT INTO [Child]
@@ -1378,9 +1378,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
 
 INSERT INTO [Child]
@@ -1396,9 +1396,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
 
 INSERT INTO [Child]
@@ -1414,9 +1414,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
 
 INSERT INTO [Child]
@@ -1432,9 +1432,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 43
 
 INSERT INTO [Child]
@@ -1450,9 +1450,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 44
 
 INSERT INTO [Child]
@@ -1468,9 +1468,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 61
 
 INSERT INTO [Child]
@@ -1486,9 +1486,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 62
 
 INSERT INTO [Child]
@@ -1504,9 +1504,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 63
 
 INSERT INTO [Child]
@@ -1522,9 +1522,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 64
 
 INSERT INTO [Child]
@@ -1540,9 +1540,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 65
 
 INSERT INTO [Child]
@@ -1558,9 +1558,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 66
 
 INSERT INTO [Child]
@@ -1576,9 +1576,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 77
 
 INSERT INTO [Child]
@@ -1594,11 +1594,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 11
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 111
 
 INSERT INTO [GrandChild]
@@ -1616,11 +1616,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 211
 
 INSERT INTO [GrandChild]
@@ -1638,11 +1638,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 212
 
 INSERT INTO [GrandChild]
@@ -1660,11 +1660,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 221
 
 INSERT INTO [GrandChild]
@@ -1682,11 +1682,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 222
 
 INSERT INTO [GrandChild]
@@ -1704,11 +1704,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 311
 
 INSERT INTO [GrandChild]
@@ -1726,11 +1726,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 312
 
 INSERT INTO [GrandChild]
@@ -1748,11 +1748,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 313
 
 INSERT INTO [GrandChild]
@@ -1770,11 +1770,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 321
 
 INSERT INTO [GrandChild]
@@ -1792,11 +1792,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 322
 
 INSERT INTO [GrandChild]
@@ -1814,11 +1814,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 323
 
 INSERT INTO [GrandChild]
@@ -1836,11 +1836,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 331
 
 INSERT INTO [GrandChild]
@@ -1858,11 +1858,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 332
 
 INSERT INTO [GrandChild]
@@ -1880,11 +1880,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 333
 
 INSERT INTO [GrandChild]
@@ -1902,11 +1902,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 411
 
 INSERT INTO [GrandChild]
@@ -1924,11 +1924,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 412
 
 INSERT INTO [GrandChild]
@@ -1946,11 +1946,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 413
 
 INSERT INTO [GrandChild]
@@ -1968,11 +1968,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 414
 
 INSERT INTO [GrandChild]
@@ -1990,11 +1990,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 421
 
 INSERT INTO [GrandChild]
@@ -2012,11 +2012,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 422
 
 INSERT INTO [GrandChild]
@@ -2034,11 +2034,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 423
 
 INSERT INTO [GrandChild]
@@ -2056,11 +2056,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 424
 
 INSERT INTO [GrandChild]
@@ -2078,9 +2078,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -2100,9 +2100,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -2122,9 +2122,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
@@ -2144,11 +2144,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 1
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -2170,11 +2170,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 2
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -2196,11 +2196,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 3
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
@@ -2222,17 +2222,17 @@ VALUES
 
 BeforeExecute
 --  Access.Ace.Odbc AccessODBC
-DECLARE @datetimeDataType  -- DateTime
+DECLARE @datetimeDataType DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#
-DECLARE @binaryDataType Binary(4)
+DECLARE @binaryDataType VarBinary(4) -- Binary
 SET     @binaryDataType = 0x01020304
-DECLARE @varbinaryDataType Binary(4)
+DECLARE @varbinaryDataType VarBinary(4) -- Binary
 SET     @varbinaryDataType = 0x01020305
-DECLARE @imageDataType Binary(4)
+DECLARE @imageDataType VarBinary(4) -- Binary
 SET     @imageDataType = 0x03040506
-DECLARE @oleobjectDataType Binary(4)
+DECLARE @oleobjectDataType VarBinary(4) -- Binary
 SET     @oleobjectDataType = 0x05060708
-DECLARE @uniqueidentifierDataType  -- Guid
+DECLARE @uniqueidentifierDataType UniqueIdentifier -- Guid
 SET     @uniqueidentifierDataType = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 
 
@@ -2817,23 +2817,23 @@ CREATE TABLE CollatedTable
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 1.11
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2001-01-11 01:11:21#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{ef129165-6ffe-4df9-bb6b-bb16e413c883}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 1
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = 1
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -2867,23 +2867,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 2.49
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2005-05-15 05:15:25#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{bc663a61-7b40-4681-ac38-f9aaf55b706b}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 2
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = 2
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = ''
@@ -2917,23 +2917,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 3.99
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-19 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 3
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '1'
@@ -2967,23 +2967,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 4
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 4.50
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 4
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '2'
@@ -3017,23 +3017,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 5.50
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-20 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{febe3eca-cb5f-40b2-ad39-2979d312afca}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 5
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '3'
@@ -3067,23 +3067,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 6
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 6.55
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-22 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{8d3c5d1d-47db-4730-9fe7-968f6228a4c0}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 6
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '4'
@@ -3117,23 +3117,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 7
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 7.00
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-23 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{48094115-83af-46dd-a906-bff26ee21ee2}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 7
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '5'
@@ -3167,23 +3167,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 8
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 8.99
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-24 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{c1139f1f-1335-4cd4-937e-92602f732dd3}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 8
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '6'
@@ -3217,23 +3217,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 9
 DECLARE @MoneyValue VarChar(3, 2) -- AnsiString
 SET     @MoneyValue = 9.63
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-25 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{46c5c512-3d4b-4cf7-b4e7-1de080789e5d}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 9
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '7'
@@ -3267,23 +3267,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 10
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 10.77
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-26 09:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{61b2bc55-147f-4b40-93ed-a4aa83602fee}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 10
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '8'
@@ -3317,23 +3317,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 11
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2009-09-27#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{d3021d18-97f0-4dc0-98d0-f0c7df4a1230}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 11
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '9'
@@ -3367,23 +3367,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 12
 DECLARE @MoneyValue VarChar(4, 2) -- AnsiString
 SET     @MoneyValue = 11.45
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2012-11-07 19:19:29#
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{03021d18-97f0-4dc0-98d0-f0c7df4a1230}'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 12
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int32
+DECLARE @BigIntValue Int -- Int32
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar(1) -- String
 SET     @StringValue = '0'
@@ -3417,9 +3417,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 
 INSERT INTO [Parent]
@@ -3435,9 +3435,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO [Parent]
@@ -3453,9 +3453,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 INSERT INTO [Parent]
@@ -3471,9 +3471,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO [Parent]
@@ -3489,9 +3489,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 5
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 5
 
 INSERT INTO [Parent]
@@ -3507,9 +3507,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 6
 
 INSERT INTO [Parent]
@@ -3525,9 +3525,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 
 INSERT INTO [Parent]
@@ -3543,9 +3543,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 11
 
 INSERT INTO [Child]
@@ -3561,9 +3561,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
 
 INSERT INTO [Child]
@@ -3579,9 +3579,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
 
 INSERT INTO [Child]
@@ -3597,9 +3597,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
 
 INSERT INTO [Child]
@@ -3615,9 +3615,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
 
 INSERT INTO [Child]
@@ -3633,9 +3633,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
 
 INSERT INTO [Child]
@@ -3651,9 +3651,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
 
 INSERT INTO [Child]
@@ -3669,9 +3669,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
 
 INSERT INTO [Child]
@@ -3687,9 +3687,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 43
 
 INSERT INTO [Child]
@@ -3705,9 +3705,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 44
 
 INSERT INTO [Child]
@@ -3723,9 +3723,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 61
 
 INSERT INTO [Child]
@@ -3741,9 +3741,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 62
 
 INSERT INTO [Child]
@@ -3759,9 +3759,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 63
 
 INSERT INTO [Child]
@@ -3777,9 +3777,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 64
 
 INSERT INTO [Child]
@@ -3795,9 +3795,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 65
 
 INSERT INTO [Child]
@@ -3813,9 +3813,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 66
 
 INSERT INTO [Child]
@@ -3831,9 +3831,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 77
 
 INSERT INTO [Child]
@@ -3849,11 +3849,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 11
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 111
 
 INSERT INTO [GrandChild]
@@ -3871,11 +3871,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 211
 
 INSERT INTO [GrandChild]
@@ -3893,11 +3893,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 21
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 212
 
 INSERT INTO [GrandChild]
@@ -3915,11 +3915,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 221
 
 INSERT INTO [GrandChild]
@@ -3937,11 +3937,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 22
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 222
 
 INSERT INTO [GrandChild]
@@ -3959,11 +3959,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 311
 
 INSERT INTO [GrandChild]
@@ -3981,11 +3981,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 312
 
 INSERT INTO [GrandChild]
@@ -4003,11 +4003,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 31
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 313
 
 INSERT INTO [GrandChild]
@@ -4025,11 +4025,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 321
 
 INSERT INTO [GrandChild]
@@ -4047,11 +4047,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 322
 
 INSERT INTO [GrandChild]
@@ -4069,11 +4069,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 32
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 323
 
 INSERT INTO [GrandChild]
@@ -4091,11 +4091,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 331
 
 INSERT INTO [GrandChild]
@@ -4113,11 +4113,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 332
 
 INSERT INTO [GrandChild]
@@ -4135,11 +4135,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 33
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 333
 
 INSERT INTO [GrandChild]
@@ -4157,11 +4157,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 411
 
 INSERT INTO [GrandChild]
@@ -4179,11 +4179,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 412
 
 INSERT INTO [GrandChild]
@@ -4201,11 +4201,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 413
 
 INSERT INTO [GrandChild]
@@ -4223,11 +4223,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 41
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 414
 
 INSERT INTO [GrandChild]
@@ -4245,11 +4245,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 421
 
 INSERT INTO [GrandChild]
@@ -4267,11 +4267,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 422
 
 INSERT INTO [GrandChild]
@@ -4289,11 +4289,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 423
 
 INSERT INTO [GrandChild]
@@ -4311,11 +4311,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 42
-DECLARE @GrandChildID  -- Int32
+DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 424
 
 INSERT INTO [GrandChild]
@@ -4333,9 +4333,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -4355,9 +4355,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -4377,9 +4377,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
@@ -4399,11 +4399,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 1
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -4425,11 +4425,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 2
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
@@ -4451,11 +4451,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc.Data Access.Ace.Odbc AccessODBC
-DECLARE @InheritanceChildId  -- Int32
+DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 3
-DECLARE @TypeDiscriminator  -- Int32
+DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 2
-DECLARE @InheritanceParentId  -- Int32
+DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
 DECLARE @Name NVarChar(18) -- String
 SET     @Name = 'InheritanceParent2'
@@ -4477,17 +4477,17 @@ VALUES
 
 BeforeExecute
 --  Access.Ace.Odbc AccessODBC
-DECLARE @datetimeDataType  -- DateTime
+DECLARE @datetimeDataType DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#
-DECLARE @binaryDataType Binary(4)
+DECLARE @binaryDataType VarBinary(4) -- Binary
 SET     @binaryDataType = 0x01020304
-DECLARE @varbinaryDataType Binary(4)
+DECLARE @varbinaryDataType VarBinary(4) -- Binary
 SET     @varbinaryDataType = 0x01020305
-DECLARE @imageDataType Binary(4)
+DECLARE @imageDataType VarBinary(4) -- Binary
 SET     @imageDataType = 0x03040506
-DECLARE @oleobjectDataType Binary(4)
+DECLARE @oleobjectDataType VarBinary(4) -- Binary
 SET     @oleobjectDataType = 0x05060708
-DECLARE @uniqueidentifierDataType  -- Guid
+DECLARE @uniqueidentifierDataType UniqueIdentifier -- Guid
 SET     @uniqueidentifierDataType = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 
 

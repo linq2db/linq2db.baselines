@@ -16,11 +16,11 @@ CREATE TABLE [Issue4620Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @IdContract  -- Int32
+DECLARE @IdContract Int -- Int32
 SET     @IdContract = NULL
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = 1
 DECLARE @Sum VarChar(1, 0) -- AnsiString
 SET     @Sum = 0
@@ -42,11 +42,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @IdContract  -- Int32
+DECLARE @IdContract Int -- Int32
 SET     @IdContract = 2
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = NULL
 DECLARE @Sum VarChar(1, 0) -- AnsiString
 SET     @Sum = 0
@@ -68,11 +68,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @IdContract  -- Int32
+DECLARE @IdContract Int -- Int32
 SET     @IdContract = NULL
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = NULL
 DECLARE @Sum VarChar(1, 0) -- AnsiString
 SET     @Sum = 0
@@ -94,11 +94,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @IdContract  -- Int32
+DECLARE @IdContract Int -- Int32
 SET     @IdContract = 2
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = 1
 DECLARE @Sum VarChar(1, 0) -- AnsiString
 SET     @Sum = 0
@@ -134,7 +134,7 @@ CREATE TABLE [Issue4620Client]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Client 1'
@@ -152,7 +152,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Client 2'
@@ -184,9 +184,9 @@ CREATE TABLE [Issue4620Contract]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = 1
 
 INSERT INTO [Issue4620Contract]
@@ -202,9 +202,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @IdClient  -- Int32
+DECLARE @IdClient Int -- Int32
 SET     @IdClient = 2
 
 INSERT INTO [Issue4620Contract]

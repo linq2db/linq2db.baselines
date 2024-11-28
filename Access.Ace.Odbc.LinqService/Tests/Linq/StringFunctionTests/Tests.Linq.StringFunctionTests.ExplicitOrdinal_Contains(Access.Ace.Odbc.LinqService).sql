@@ -6,7 +6,7 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(10) -- String
 SET     @CaseSensitive = 'TestString'

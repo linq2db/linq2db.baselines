@@ -62,17 +62,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN `e`.`Code` = 'Child2' THEN 1
-		ELSE 0
-	END,
 	`e`.`Code`,
 	`e`.`Id`,
 	`e`.`Age`,
-	CASE
-		WHEN `e`.`Code` = 'Child' THEN 1
-		ELSE 0
-	END,
 	`e`.`Name`
 FROM
 	`Base` `e`

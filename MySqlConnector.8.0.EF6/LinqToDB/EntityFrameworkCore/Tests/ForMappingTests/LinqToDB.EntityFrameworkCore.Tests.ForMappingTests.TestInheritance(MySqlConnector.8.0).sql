@@ -40,8 +40,7 @@ SELECT
 FROM
 	`WithInheritance` `t1`
 WHERE
-	`t1`.`Discriminator` = 'WithInheritanceA' OR `t1`.`Discriminator` = 'WithInheritanceA1' OR
-	`t1`.`Discriminator` = 'WithInheritanceA2'
+	`t1`.`Discriminator` IN ('WithInheritanceA', 'WithInheritanceA1', 'WithInheritanceA2')
 
 
 

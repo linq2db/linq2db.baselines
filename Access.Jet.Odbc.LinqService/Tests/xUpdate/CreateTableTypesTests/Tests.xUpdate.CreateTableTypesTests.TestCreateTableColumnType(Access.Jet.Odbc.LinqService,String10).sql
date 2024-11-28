@@ -14,7 +14,7 @@ CREATE TABLE [CreateTableTypes]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @String NVarChar -- String
 SET     @String = ''
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @String NVarChar(7) -- String
 SET     @String = 'test 10'

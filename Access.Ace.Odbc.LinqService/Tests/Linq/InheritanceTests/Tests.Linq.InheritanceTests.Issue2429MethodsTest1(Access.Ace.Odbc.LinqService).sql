@@ -16,9 +16,9 @@ CREATE TABLE [BaseTable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BaseValue  -- Int32
+DECLARE @BaseValue Int -- Int32
 SET     @BaseValue = 100
 
 INSERT INTO [BaseTable]

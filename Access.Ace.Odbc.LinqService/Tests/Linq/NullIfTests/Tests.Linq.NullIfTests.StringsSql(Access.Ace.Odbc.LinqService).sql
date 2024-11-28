@@ -16,9 +16,9 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = 2
-DECLARE @NullableInt  -- Int32
+DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = 2
 DECLARE @String NVarChar(3) -- String
 SET     @String = 'abc'
@@ -42,9 +42,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = 3
-DECLARE @NullableInt  -- Int32
+DECLARE @NullableInt Int -- Int32
 SET     @NullableInt = NULL
 DECLARE @String NVarChar(3) -- String
 SET     @String = 'def'

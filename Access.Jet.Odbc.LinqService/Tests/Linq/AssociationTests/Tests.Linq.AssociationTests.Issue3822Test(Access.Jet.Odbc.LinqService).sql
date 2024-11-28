@@ -14,9 +14,9 @@ CREATE TABLE [Dog]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @OwnerId  -- Int32
+DECLARE @OwnerId Int -- Int32
 SET     @OwnerId = 1
 
 INSERT INTO [Dog]
@@ -46,9 +46,9 @@ CREATE TABLE [Human]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @HouseId  -- Int32
+DECLARE @HouseId Int -- Int32
 SET     @HouseId = 1
 
 INSERT INTO [Human]
@@ -77,7 +77,7 @@ CREATE TABLE [House]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [House]
@@ -105,9 +105,9 @@ CREATE TABLE [Window]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Position  -- Int32
+DECLARE @Position Int -- Int32
 SET     @Position = 6
 
 INSERT INTO [Window]

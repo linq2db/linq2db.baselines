@@ -16,7 +16,7 @@ CREATE TABLE [Car]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'Special'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'NoSpecial'

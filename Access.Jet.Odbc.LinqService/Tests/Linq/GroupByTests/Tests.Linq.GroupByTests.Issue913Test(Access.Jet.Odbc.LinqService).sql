@@ -16,7 +16,7 @@ CREATE TABLE [Issue913Test]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @InstrumentID  -- Int32
+DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 1
 DECLARE @TradingStatus NChar -- StringFixedLength
 SET     @TradingStatus = NULL
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @InstrumentID  -- Int32
+DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 2
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
 SET     @TradingStatus = 'A'
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @InstrumentID  -- Int32
+DECLARE @InstrumentID Int -- Int32
 SET     @InstrumentID = 3
 DECLARE @TradingStatus NChar(1) -- StringFixedLength
 SET     @TradingStatus = 'D'

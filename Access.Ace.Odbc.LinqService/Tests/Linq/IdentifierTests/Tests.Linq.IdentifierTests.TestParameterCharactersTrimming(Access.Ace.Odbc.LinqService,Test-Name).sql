@@ -13,7 +13,7 @@ CREATE TABLE [testparams]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Test-Name  -- Int32
+DECLARE @Test-Name Int -- Int32
 SET     @Test-Name = 2
 
 UPDATE

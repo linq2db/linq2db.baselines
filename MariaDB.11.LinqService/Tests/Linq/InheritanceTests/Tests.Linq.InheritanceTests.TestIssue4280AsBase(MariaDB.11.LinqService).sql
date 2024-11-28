@@ -68,18 +68,10 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN `t1`.`DeviceType` = 'TV' THEN 1
-		ELSE 0
-	END,
+	`t1`.`DeviceType`,
 	`t1`.`Id`,
 	`t1`.`SerialNumber`,
-	`t1`.`DeviceType`,
-	`t1`.`Location`,
-	CASE
-		WHEN `t1`.`DeviceType` = 'DISPLAY' THEN 1
-		ELSE 0
-	END
+	`t1`.`Location`
 FROM
 	`Issue4280` `t1`
 ORDER BY
@@ -126,18 +118,10 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN `t1`.`DeviceType` = 'TV' THEN 1
-		ELSE 0
-	END,
+	`t1`.`DeviceType`,
 	`t1`.`Id`,
 	`t1`.`SerialNumber`,
-	`t1`.`DeviceType`,
-	`t1`.`Location`,
-	CASE
-		WHEN `t1`.`DeviceType` = 'DISPLAY' THEN 1
-		ELSE 0
-	END
+	`t1`.`Location`
 FROM
 	`Issue4280` `t1`
 ORDER BY

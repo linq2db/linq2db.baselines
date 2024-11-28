@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Length  -- Int32
+DECLARE @Length Int -- Int32
 SET     @Length = 4
 
 SELECT

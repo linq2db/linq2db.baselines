@@ -17,7 +17,7 @@ CREATE TABLE [Issue1554FluentTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
 SET     @ClaimedKeyType = 'RSA'

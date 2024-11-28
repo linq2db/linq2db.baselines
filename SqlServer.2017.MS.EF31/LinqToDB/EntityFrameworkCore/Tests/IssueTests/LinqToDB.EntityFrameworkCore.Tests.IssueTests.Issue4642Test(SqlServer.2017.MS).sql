@@ -1,13 +1,5 @@
-﻿SELECT [i].[Id]
-FROM [Issue4642Table1] AS [i]
-
-
-SELECT [i].[Id], [i].[SystemId], [i].[Timestamp]
-FROM [Issue4642Table2] AS [i]
-
-
---  SqlServer.2017 (asynchronously)
-DECLARE @systemId NVarChar(4000) -- String
+﻿--  SqlServer.2017 (asynchronously)
+DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 
 MERGE INTO [Issue4642Table2] [Target]
@@ -17,8 +9,8 @@ USING (
 		[y].[SystemId] as [source_SystemId],
 		[y].[Timestamp] as [source_Timestamp]
 	FROM
-		(SELECT NULL [Id] WHERE 1 = 0) [x]([Id])
-			INNER JOIN (SELECT NULL [SystemId], NULL [Id], NULL [Timestamp] WHERE 1 = 0) [y]([SystemId], [Id], [Timestamp]) ON [x].[Id] = [y].[Id]
+		[Issue4642Table1] [x]
+			INNER JOIN [Issue4642Table2] [y] ON [x].[Id] = [y].[Id]
 	WHERE
 		[x].[Id] IN (1) AND [y].[SystemId] = @systemId
 ) [Source]

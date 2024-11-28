@@ -21,7 +21,7 @@ SET     @commandExecutionTime = 5
 SELECT TOP (1)
 	dbo.ProcessLong(@commandExecutionTime)
 FROM
-	(SELECT  WHERE 1 = 0) [t1]()
+	[Products] [e]
 
 
 

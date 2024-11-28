@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 
 SELECT
@@ -23,7 +23,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 2
 
 SELECT
@@ -46,7 +46,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 3
 
 SELECT
@@ -69,7 +69,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 4
 
 SELECT
@@ -92,7 +92,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 
 SELECT

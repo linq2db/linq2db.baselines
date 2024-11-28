@@ -14,9 +14,9 @@ CREATE TABLE [CreateTableTypes]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int32Nullable  -- Int32
+DECLARE @Int32Nullable Int -- Int32
 SET     @Int32Nullable = NULL
 
 INSERT INTO [CreateTableTypes]
@@ -32,9 +32,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int32Nullable  -- Int32
+DECLARE @Int32Nullable Int -- Int32
 SET     @Int32Nullable = 2
 
 INSERT INTO [CreateTableTypes]

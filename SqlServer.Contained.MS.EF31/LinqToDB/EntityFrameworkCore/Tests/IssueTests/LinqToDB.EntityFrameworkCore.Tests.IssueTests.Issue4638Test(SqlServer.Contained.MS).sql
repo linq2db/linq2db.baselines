@@ -1,8 +1,36 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
-SELECT [i].[Id], [i].[AclNameId], [i].[Capacity], [i].[CfAllowField], [i].[CfAllowValue], [i].[CfDisallowField], [i].[CfDisallowValue], [i].[CfDriven], [i].[CreditGroupId], [i].[DateFrom], [i].[DateTo], [i].[Name], [i].[SendCustomFields]
-FROM [Issue4624Items] AS [i]
+--  SqlServer.2019
+
+SELECT
+	[m_1].[Key_1],
+	[d].[CfAllowValue],
+	[d].[DateFrom]
+FROM
+	(
+		SELECT TOP (1)
+			[p].[AclNameId] as [Key_1]
+		FROM
+			[Issue4624Items] [p]
+		GROUP BY
+			[p].[AclNameId]
+	) [m_1]
+		INNER JOIN [Issue4624Items] [d] ON [m_1].[Key_1] = [d].[AclNameId]
+ORDER BY
+	[d].[DateFrom]
+
+
+
+--  SqlServer.2019
+
+SELECT TOP (1)
+	[p].[AclNameId]
+FROM
+	[Issue4624Items] [p]
+GROUP BY
+	[p].[AclNameId]
+
 
 
 DisposeTransaction

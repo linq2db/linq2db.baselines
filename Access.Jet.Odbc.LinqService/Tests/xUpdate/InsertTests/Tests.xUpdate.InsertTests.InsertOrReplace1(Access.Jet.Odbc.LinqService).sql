@@ -58,7 +58,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -70,7 +70,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
@@ -90,7 +90,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -104,7 +104,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -116,7 +116,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT TOP 2

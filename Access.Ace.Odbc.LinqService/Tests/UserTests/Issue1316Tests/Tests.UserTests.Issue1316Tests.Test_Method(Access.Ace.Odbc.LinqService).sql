@@ -15,7 +15,7 @@ CREATE TABLE [Issue1316Tests]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 INSERT INTO [Issue1316Tests]
@@ -29,7 +29,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 5
 
 SELECT TOP 2

@@ -17,9 +17,9 @@ CREATE TABLE [DynamicTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @NotIdentifier  -- Int32
+DECLARE @NotIdentifier Int -- Int32
 SET     @NotIdentifier = 77
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 0
 
 INSERT INTO [DynamicTable]

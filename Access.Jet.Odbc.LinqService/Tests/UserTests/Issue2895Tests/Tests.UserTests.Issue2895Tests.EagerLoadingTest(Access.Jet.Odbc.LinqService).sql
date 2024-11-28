@@ -17,11 +17,11 @@ CREATE TABLE [InternalEmail]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @RequestId  -- Int32
+DECLARE @RequestId Int -- Int32
 SET     @RequestId = 1
-DECLARE @UserId  -- Int32
+DECLARE @UserId Int -- Int32
 SET     @UserId = 1
 
 INSERT INTO [InternalEmail]
@@ -55,9 +55,9 @@ CREATE TABLE [Request]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @UserId  -- Int32
+DECLARE @UserId Int -- Int32
 SET     @UserId = 1
 
 INSERT INTO [Request]
@@ -88,7 +88,7 @@ CREATE TABLE [User]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [User]
@@ -117,7 +117,7 @@ CREATE TABLE [Admin]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Admin]
@@ -147,9 +147,9 @@ CREATE TABLE [EmailAdminAssociation]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @EmailId  -- Int32
+DECLARE @EmailId Int -- Int32
 SET     @EmailId = 10
-DECLARE @AdminId  -- Int32
+DECLARE @AdminId Int -- Int32
 SET     @AdminId = 1
 
 INSERT INTO [EmailAdminAssociation]
@@ -180,7 +180,7 @@ CREATE TABLE [Email]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 
 INSERT INTO [Email]
@@ -210,9 +210,9 @@ CREATE TABLE [EmailAttachmentAssociation]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @EmailId  -- Int32
+DECLARE @EmailId Int -- Int32
 SET     @EmailId = 10
-DECLARE @AttachmentId  -- Int32
+DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 100
 
 INSERT INTO [EmailAttachmentAssociation]
@@ -243,7 +243,7 @@ CREATE TABLE [Attachment]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 100
 
 INSERT INTO [Attachment]
@@ -274,9 +274,9 @@ CREATE TABLE [Document]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @AttachmentId  -- Int32
+DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position  -- Int32
+DECLARE @Position Int -- Int32
 SET     @Position = 1
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc 1'
@@ -296,9 +296,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @AttachmentId  -- Int32
+DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 100
-DECLARE @Position  -- Int32
+DECLARE @Position Int -- Int32
 SET     @Position = 2
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc 2'
@@ -318,9 +318,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @AttachmentId  -- Int32
+DECLARE @AttachmentId Int -- Int32
 SET     @AttachmentId = 101
-DECLARE @Position  -- Int32
+DECLARE @Position Int -- Int32
 SET     @Position = 1
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'Some Doc x'

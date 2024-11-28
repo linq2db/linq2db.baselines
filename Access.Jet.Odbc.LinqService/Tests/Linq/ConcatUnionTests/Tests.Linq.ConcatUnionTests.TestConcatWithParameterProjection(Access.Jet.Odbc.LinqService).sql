@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @someValue  -- Int32
+DECLARE @someValue Int -- Int32
 SET     @someValue = 3
-DECLARE @someValue  -- Int32
+DECLARE @someValue Int -- Int32
 SET     @someValue = 3
-DECLARE @someValue  -- Int32
+DECLARE @someValue Int -- Int32
 SET     @someValue = 3
-DECLARE @someValue  -- Int32
+DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 
 SELECT

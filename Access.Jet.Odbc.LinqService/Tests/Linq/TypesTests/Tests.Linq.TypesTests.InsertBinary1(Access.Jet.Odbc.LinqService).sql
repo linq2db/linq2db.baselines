@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @data Binary
+DECLARE @data VarBinary -- Binary
 SET     @data = NULL
 
 INSERT INTO [LinqDataTypes]

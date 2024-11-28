@@ -16,9 +16,9 @@ CREATE TABLE [Src]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = NULL
 DECLARE @Enum NVarChar -- String
 SET     @Enum = NULL
@@ -42,9 +42,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = 2
 DECLARE @Enum NVarChar(3) -- String
 SET     @Enum = 'TWO'
