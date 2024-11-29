@@ -2,9 +2,17 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`TypeDiscriminator`,
+	CASE
+		WHEN `t1`.`TypeDiscriminator` = 2 THEN 1
+		ELSE 0
+	END,
 	`t1`.`InheritanceParentId`,
-	`t1`.`Name`
+	`t1`.`TypeDiscriminator`,
+	`t1`.`Name`,
+	CASE
+		WHEN `t1`.`TypeDiscriminator` = 1 THEN 1
+		ELSE 0
+	END
 FROM
 	`InheritanceParent` `t1`
 
@@ -12,10 +20,18 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`TypeDiscriminator`,
+	CASE
+		WHEN `t1`.`TypeDiscriminator` = 2 THEN 1
+		ELSE 0
+	END,
 	`t1`.`InheritanceChildId`,
+	`t1`.`TypeDiscriminator`,
 	`t1`.`InheritanceParentId`,
-	`t1`.`Name`
+	`t1`.`Name`,
+	CASE
+		WHEN `t1`.`TypeDiscriminator` = 1 THEN 1
+		ELSE 0
+	END
 FROM
 	`InheritanceChild` `t1`
 

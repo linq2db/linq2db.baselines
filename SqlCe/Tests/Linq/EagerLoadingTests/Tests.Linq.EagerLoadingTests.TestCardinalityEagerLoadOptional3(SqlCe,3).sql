@@ -148,7 +148,7 @@ FROM
 			[EntityA] [t1]
 				LEFT JOIN [EntityB] [a_ObjectBOptional] ON [t1].[FK] = [a_ObjectBOptional].[Id]
 	) [m_1]
-		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK] OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL)
+		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK] OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -161,7 +161,8 @@ SELECT
 	[a_ObjectBOptional].[Id] as [Id_1],
 	[a_ObjectBOptional].[FK] as [FK_1],
 	[a_ObjectCRequired].[Id] as [Id_2],
-	[a_ObjectCRequired].[FK] as [FK_2]
+	[a_ObjectCRequired].[FK] as [FK_2],
+	[a_ObjectBOptional].[Id] as [Id_3]
 FROM
 	[EntityA] [t1]
 		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [t1].[FK] = [a_ObjectBOptional].[Id]

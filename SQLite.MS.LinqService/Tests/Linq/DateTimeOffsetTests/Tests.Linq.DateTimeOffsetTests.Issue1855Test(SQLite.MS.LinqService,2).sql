@@ -51,7 +51,7 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	[r].[Id] = @id AND (strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) OR [r].[SomeNullableDateTimeOffset] IS NULL)
+	[r].[Id] = @id AND strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset])
 
 BeforeExecute
 -- SQLite.MS SQLite

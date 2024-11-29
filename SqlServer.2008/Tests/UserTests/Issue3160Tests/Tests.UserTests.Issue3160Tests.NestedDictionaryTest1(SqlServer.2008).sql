@@ -99,7 +99,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN [t2].[not_null] IS NOT NULL AND [t2].[Id3] IS NOT NULL
+		WHEN [t2].[not_null] IS NOT NULL AND [t2].[c1] IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -109,12 +109,14 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				1 as [not_null],
+				[t1].[c1],
 				[t1].[Id3]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (
 						SELECT TOP (1)
-							[x].[ID3] as [Id3]
+							[x].[ID3] as [Id3],
+							N't3' as [c1]
 						FROM
 							[TABLE3] [x]
 						WHERE

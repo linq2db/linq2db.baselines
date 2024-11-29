@@ -216,11 +216,6 @@ SELECT
 	"x_with_not"."StringValueNullable"
 FROM
 	"OptimizationData" "x_with_not"
-WHERE
-	("x_with_not"."IntVlaue" <> 1 OR CASE
-		WHEN "x_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE FALSE
-	END IS NULL)
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -281,11 +276,6 @@ SELECT
 	"swap_with_not"."StringValueNullable"
 FROM
 	"OptimizationData" "swap_with_not"
-WHERE
-	("swap_with_not"."IntVlaue" <> 1 OR CASE
-		WHEN "swap_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE FALSE
-	END IS NULL)
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -347,10 +337,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	CASE
-		WHEN "x_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE TRUE
-	END IS NULL
+	"x_with_not"."IntVlaue" = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -412,10 +399,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	CASE
-		WHEN "swap_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE TRUE
-	END IS NULL
+	"swap_with_not"."IntVlaue" = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -446,7 +430,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue" = TRUE
+	"x"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -477,7 +461,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	"x_with_not"."BoolValue" <> TRUE
+	NOT "x_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -508,7 +492,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue" = TRUE
+	"swap"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -539,7 +523,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" <> TRUE
+	NOT "swap_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -570,7 +554,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue" <> TRUE
+	NOT "x"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -601,10 +585,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	CASE
-		WHEN "x_with_not"."BoolValue" = TRUE THEN NULL
-		ELSE TRUE
-	END IS NULL
+	"x_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -635,7 +616,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue" <> TRUE
+	NOT "swap"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -666,10 +647,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	CASE
-		WHEN "swap_with_not"."BoolValue" = TRUE THEN NULL
-		ELSE TRUE
-	END IS NULL
+	"swap_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -700,7 +678,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue" = TRUE
+	"x"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -731,7 +709,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	"x_with_not"."BoolValue" <> TRUE
+	NOT "x_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -762,7 +740,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue" = TRUE
+	"swap"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -793,7 +771,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" <> TRUE
+	NOT "swap_with_not"."BoolValue"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1192,7 +1170,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL)
+	"x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1254,7 +1232,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL)
+	"x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1316,7 +1294,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."StringValueNullable" IS NULL OR "swap"."StringValueNullable" IS NULL)
+	"swap"."StringValueNullable" IS NULL OR "swap"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1561,7 +1539,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1623,7 +1601,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."IntVlaue" < 4 OR "swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4)
+	"swap"."IntVlaue" < 4 OR "swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1685,7 +1663,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1809,7 +1787,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -2057,7 +2035,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -2119,7 +2097,8 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4 OR "swap"."IntVlaue" < 4)
+	"swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4 OR
+	"swap"."IntVlaue" < 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -2181,7 +2160,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -2305,7 +2284,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- Firebird.4 Firebird4
