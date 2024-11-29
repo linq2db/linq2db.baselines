@@ -16,7 +16,7 @@ CREATE TABLE [Batch]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'V1'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'V2'
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'V3'
@@ -84,9 +84,9 @@ CREATE TABLE [Confirmation]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BatchId  -- Int32
+DECLARE @BatchId Int -- Int32
 SET     @BatchId = 1
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2019-04-09 14:30:00#
 
 INSERT INTO [Confirmation]
@@ -102,9 +102,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BatchId  -- Int32
+DECLARE @BatchId Int -- Int32
 SET     @BatchId = 2
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2019-04-09 14:30:20#
 
 INSERT INTO [Confirmation]
@@ -120,9 +120,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BatchId  -- Int32
+DECLARE @BatchId Int -- Int32
 SET     @BatchId = 2
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2019-04-09 14:30:25#
 
 INSERT INTO [Confirmation]
@@ -138,9 +138,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @BatchId  -- Int32
+DECLARE @BatchId Int -- Int32
 SET     @BatchId = 3
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2019-04-09 14:30:35#
 
 INSERT INTO [Confirmation]

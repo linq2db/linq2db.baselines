@@ -17,7 +17,7 @@ CREATE TABLE [StringTypesTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CharColumn Char(10) -- AnsiStringFixedLength
 SET     @CharColumn = 'someString'
@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @str NVarChar(5) -- String
+DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str NVarChar(5) -- String
+DECLARE @str NChar(5) -- StringFixedLength
 SET     @str = 'some%'
-DECLARE @str NVarChar(5) -- String
+DECLARE @str VarChar(5) -- AnsiString
 SET     @str = 'some%'
 DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'

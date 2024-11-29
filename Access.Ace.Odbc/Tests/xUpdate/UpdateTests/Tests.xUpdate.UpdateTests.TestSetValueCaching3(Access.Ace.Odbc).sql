@@ -21,19 +21,19 @@ CREATE TABLE [UpdateSetTest]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value1  -- Guid
+DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
-DECLARE @Value2  -- Int32
+DECLARE @Value2 Int -- Int32
 SET     @Value2 = 10
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 6
-DECLARE @Value4  -- Guid
+DECLARE @Value4 UniqueIdentifier -- Guid
 SET     @Value4 = NULL
-DECLARE @Value5  -- Int32
+DECLARE @Value5 Int -- Int32
 SET     @Value5 = NULL
-DECLARE @Value6  -- Int32
+DECLARE @Value6 Int -- Int32
 SET     @Value6 = NULL
 
 INSERT INTO [UpdateSetTest]
@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 7
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
@@ -73,7 +73,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2
@@ -85,9 +85,9 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
@@ -99,7 +99,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2

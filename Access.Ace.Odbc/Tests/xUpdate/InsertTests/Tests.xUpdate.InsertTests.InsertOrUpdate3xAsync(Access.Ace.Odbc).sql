@@ -56,9 +56,9 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 0
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 
 UPDATE
@@ -70,7 +70,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 INSERT INTO [Patient]
@@ -86,9 +86,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 
 UPDATE
@@ -100,9 +100,9 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 
 UPDATE
@@ -114,7 +114,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT TOP 2

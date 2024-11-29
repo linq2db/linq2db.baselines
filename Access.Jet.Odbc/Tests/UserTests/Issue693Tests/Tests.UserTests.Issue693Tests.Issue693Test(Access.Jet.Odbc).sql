@@ -87,7 +87,7 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
 SELECT TOP 1
@@ -103,7 +103,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 
 SELECT TOP 1

@@ -23,23 +23,23 @@ CREATE TABLE [Issue3360Table1]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Byte  -- Byte
+DECLARE @Byte TinyInt(1) -- Byte
 SET     @Byte = 0
-DECLARE @ByteN  -- Byte
+DECLARE @ByteN TinyInt -- Byte
 SET     @ByteN = NULL
-DECLARE @Guid  -- Guid
+DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = '{00000000-0000-0000-0000-000000000000}'
-DECLARE @GuidN  -- Guid
+DECLARE @GuidN UniqueIdentifier -- Guid
 SET     @GuidN = NULL
 DECLARE @Enum NChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN NChar -- StringFixedLength
 SET     @EnumN = NULL
-DECLARE @Bool  -- Boolean
+DECLARE @Bool Bit -- Boolean
 SET     @Bool = False
-DECLARE @BoolN  -- Boolean
+DECLARE @BoolN Bit -- Boolean
 SET     @BoolN = NULL
 
 INSERT INTO [Issue3360Table1]
@@ -69,23 +69,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Byte  -- Byte
+DECLARE @Byte TinyInt(1) -- Byte
 SET     @Byte = 1
-DECLARE @ByteN  -- Byte
+DECLARE @ByteN TinyInt(1) -- Byte
 SET     @ByteN = 2
-DECLARE @Guid  -- Guid
+DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
-DECLARE @GuidN  -- Guid
+DECLARE @GuidN UniqueIdentifier -- Guid
 SET     @GuidN = '{a948600d-de21-4f74-8ac2-9516b287076e}'
 DECLARE @Enum NChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN NChar(11) -- StringFixedLength
 SET     @EnumN = 'ENUM2_VALUE'
-DECLARE @Bool  -- Boolean
+DECLARE @Bool Bit -- Boolean
 SET     @Bool = True
-DECLARE @BoolN  -- Boolean
+DECLARE @BoolN Bit -- Boolean
 SET     @BoolN = False
 
 INSERT INTO [Issue3360Table1]
@@ -115,23 +115,23 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Byte  -- Byte
+DECLARE @Byte TinyInt(1) -- Byte
 SET     @Byte = 3
-DECLARE @ByteN  -- Byte
+DECLARE @ByteN TinyInt(1) -- Byte
 SET     @ByteN = 4
-DECLARE @Guid  -- Guid
+DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
-DECLARE @GuidN  -- Guid
+DECLARE @GuidN UniqueIdentifier -- Guid
 SET     @GuidN = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @Enum NChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN NChar(11) -- StringFixedLength
 SET     @EnumN = 'ENUM2_VALUE'
-DECLARE @Bool  -- Boolean
+DECLARE @Bool Bit -- Boolean
 SET     @Bool = False
-DECLARE @BoolN  -- Boolean
+DECLARE @BoolN Bit -- Boolean
 SET     @BoolN = True
 
 INSERT INTO [Issue3360Table1]
@@ -161,9 +161,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Guid  -- Guid
+DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = '{0b8afe27-481c-442e-b8cf-729ddfeece29}'
-DECLARE @GuidN  -- Guid
+DECLARE @GuidN UniqueIdentifier -- Guid
 SET     @GuidN = '{0b8afe27-481c-442e-b8cf-729ddfeece30}'
 
 SELECT

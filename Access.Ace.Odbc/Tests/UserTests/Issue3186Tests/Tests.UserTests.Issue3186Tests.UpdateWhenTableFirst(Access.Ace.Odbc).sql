@@ -19,9 +19,9 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id NVarChar(18) -- String
 SET     @id = 'TestProcessService'
-DECLARE @is_process_service  -- Boolean
+DECLARE @is_process_service Bit -- Boolean
 SET     @is_process_service = True
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [element_services]
@@ -41,9 +41,9 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id NVarChar(18) -- String
 SET     @id = 'TestElementService'
-DECLARE @is_process_service  -- Boolean
+DECLARE @is_process_service Bit -- Boolean
 SET     @is_process_service = False
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [element_services]
@@ -82,7 +82,7 @@ DECLARE @id NVarChar(20) -- String
 SET     @id = 'TestProcessCategory1'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [component_categories]
@@ -104,7 +104,7 @@ DECLARE @id NVarChar(20) -- String
 SET     @id = 'TestProcessCategory2'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [component_categories]
@@ -126,7 +126,7 @@ DECLARE @id NVarChar(20) -- String
 SET     @id = 'TestElementCategory1'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [component_categories]
@@ -148,7 +148,7 @@ DECLARE @id NVarChar(20) -- String
 SET     @id = 'TestElementCategory2'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [component_categories]
@@ -190,7 +190,7 @@ DECLARE @category_id NVarChar(20) -- String
 SET     @category_id = 'TestProcessCategory1'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [Components]
@@ -216,7 +216,7 @@ DECLARE @category_id NVarChar(20) -- String
 SET     @category_id = 'TestProcessCategory2'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestProcessService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [Components]
@@ -242,7 +242,7 @@ DECLARE @category_id NVarChar(20) -- String
 SET     @category_id = 'TestElementCategory1'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [Components]
@@ -268,7 +268,7 @@ DECLARE @category_id NVarChar(20) -- String
 SET     @category_id = 'TestElementCategory2'
 DECLARE @service_id NVarChar(18) -- String
 SET     @service_id = 'TestElementService'
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = False
 
 INSERT INTO [Components]
@@ -288,7 +288,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = True
 
 UPDATE

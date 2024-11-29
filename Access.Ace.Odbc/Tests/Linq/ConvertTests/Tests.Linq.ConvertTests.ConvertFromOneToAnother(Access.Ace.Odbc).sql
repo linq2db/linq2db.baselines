@@ -10,7 +10,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT TOP 1
@@ -20,7 +20,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Double
+DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT TOP 1
@@ -40,7 +40,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT TOP 1
@@ -50,7 +50,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Double
+DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT TOP 1
@@ -70,7 +70,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT TOP 1
@@ -80,7 +80,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @value  -- Double
+DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT TOP 1

@@ -13,7 +13,7 @@ CREATE TABLE [Table404One]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Table404One]
@@ -27,7 +27,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [Table404One]
@@ -56,11 +56,11 @@ CREATE TABLE [Table404Two]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -78,11 +78,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -100,11 +100,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -122,11 +122,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -144,11 +144,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -166,11 +166,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -219,7 +219,7 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
 
 SELECT
@@ -252,7 +252,7 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
 
 SELECT
@@ -306,7 +306,7 @@ CREATE TABLE [Table404One]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Table404One]
@@ -320,7 +320,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [Table404One]
@@ -349,11 +349,11 @@ CREATE TABLE [Table404Two]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -371,11 +371,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -393,11 +393,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 1
 
 INSERT INTO [Table404Two]
@@ -415,11 +415,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -437,11 +437,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -459,11 +459,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
-DECLARE @FirstTableId  -- Int32
+DECLARE @FirstTableId Int -- Int32
 SET     @FirstTableId = 2
 
 INSERT INTO [Table404Two]
@@ -512,7 +512,7 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 0
 
 SELECT
@@ -545,7 +545,7 @@ BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Usage  -- Int32
+DECLARE @Usage Int -- Int32
 SET     @Usage = 1
 
 SELECT

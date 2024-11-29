@@ -17,7 +17,7 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = #2009-09-24 09:19:29#
 
 SELECT

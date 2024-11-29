@@ -17,11 +17,11 @@ CREATE TABLE [PR_1598_Update_Null_Table]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Tommy'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = NULL
 
 INSERT INTO [PR_1598_Update_Null_Table]
@@ -53,9 +53,9 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jack'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 2
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -82,7 +82,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'Franki'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE

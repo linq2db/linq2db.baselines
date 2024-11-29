@@ -10,7 +10,7 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @name NVarChar(8) -- String
 SET     @name = 'Insert16'
-DECLARE @idx  -- Int32
+DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 INSERT INTO [Person]

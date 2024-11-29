@@ -56,7 +56,7 @@ SELECT
 FROM
 	[WithInheritance] [t1]
 WHERE
-	[t1].[Discriminator] IN ('WithInheritanceA', 'WithInheritanceA1', 'WithInheritanceA2')
+	[t1].[Discriminator] IN ('WithInheritanceA2', 'WithInheritanceA1', 'WithInheritanceA')
 
 
 

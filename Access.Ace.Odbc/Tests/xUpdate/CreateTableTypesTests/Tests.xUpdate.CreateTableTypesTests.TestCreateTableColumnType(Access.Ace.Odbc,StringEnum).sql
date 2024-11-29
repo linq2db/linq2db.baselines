@@ -14,7 +14,7 @@ CREATE TABLE [CreateTableTypes]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringEnum NVarChar(2) -- String
 SET     @StringEnum = '14'
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StringEnum NVarChar(1) -- String
 SET     @StringEnum = '4'

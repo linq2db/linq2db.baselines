@@ -24,7 +24,7 @@ CREATE TABLE [ValueConversion]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @iteration  -- Int32
+DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
@@ -58,7 +58,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @iteration  -- Int32
+DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 
 SELECT TOP 2

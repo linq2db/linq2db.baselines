@@ -33,13 +33,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @str NVarChar(4000) -- String
+DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = N'some%'
-DECLARE @str_1 NVarChar(4000) -- String
+DECLARE @str_1 NChar(5) -- StringFixedLength
 SET     @str_1 = N'some%'
-DECLARE @str_2 NVarChar(4000) -- String
+DECLARE @str_2 VarChar(50) -- AnsiString
 SET     @str_2 = N'some%'
-DECLARE @str_3 NVarChar(4000) -- String
+DECLARE @str_3 NVarChar(50) -- String
 SET     @str_3 = N'some%'
 
 SELECT

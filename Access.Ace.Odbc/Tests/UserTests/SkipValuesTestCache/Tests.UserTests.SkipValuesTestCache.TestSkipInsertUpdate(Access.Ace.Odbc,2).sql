@@ -17,11 +17,11 @@ CREATE TABLE [PR_1598_Insert_Table_Cache]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 2
 
 INSERT INTO [PR_1598_Insert_Table_Cache]
@@ -53,9 +53,9 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 2
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE

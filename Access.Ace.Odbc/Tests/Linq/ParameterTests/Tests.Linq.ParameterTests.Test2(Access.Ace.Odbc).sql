@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 1
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 1
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
 SELECT TOP 1
@@ -19,11 +19,11 @@ ORDER BY
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 2
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 2
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 10000
 
 SELECT TOP 1

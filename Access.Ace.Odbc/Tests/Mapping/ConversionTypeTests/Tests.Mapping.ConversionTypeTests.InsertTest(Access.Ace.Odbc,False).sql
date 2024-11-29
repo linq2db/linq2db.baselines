@@ -16,7 +16,7 @@ CREATE TABLE [TrimTestTable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***HHH***'

@@ -1,5 +1,5 @@
 ﻿--  PostgreSQL.15 PostgreSQL
-DECLARE @value Text(10) -- String
+DECLARE @value Varchar(10) -- String
 SET     @value = '%anything%'
 
 SELECT

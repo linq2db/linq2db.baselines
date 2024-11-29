@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 INSERT INTO [Child]
@@ -24,7 +24,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT

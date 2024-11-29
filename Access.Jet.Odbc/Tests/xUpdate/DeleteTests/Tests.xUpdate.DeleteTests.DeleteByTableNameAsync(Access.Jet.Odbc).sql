@@ -65,7 +65,7 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC (asynchronously)
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 DELETE FROM

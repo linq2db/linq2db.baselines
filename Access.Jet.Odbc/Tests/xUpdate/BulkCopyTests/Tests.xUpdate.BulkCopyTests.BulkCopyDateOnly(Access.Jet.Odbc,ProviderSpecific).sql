@@ -13,7 +13,7 @@ CREATE TABLE [DateOnlyTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Date  -- Date
+DECLARE @Date Date
 SET     @Date = #2021-01-01#
 
 INSERT INTO [DateOnlyTable]

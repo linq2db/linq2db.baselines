@@ -16,9 +16,9 @@ CREATE TABLE [Issue2933Car]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @PersonId  -- Int32
+DECLARE @PersonId Int -- Int32
 SET     @PersonId = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Issue2933Car]
@@ -34,9 +34,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @PersonId  -- Int32
+DECLARE @PersonId Int -- Int32
 SET     @PersonId = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [Issue2933Car]
@@ -67,7 +67,7 @@ CREATE TABLE [Issue2933Person]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [Issue2933Person]
@@ -100,9 +100,9 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Snuffles'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @PersonId  -- Int32
+DECLARE @PersonId Int -- Int32
 SET     @PersonId = 1
 
 INSERT INTO [Issue2933Pet]
@@ -122,9 +122,9 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Buddy'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @PersonId  -- Int32
+DECLARE @PersonId Int -- Int32
 SET     @PersonId = 1
 
 INSERT INTO [Issue2933Pet]

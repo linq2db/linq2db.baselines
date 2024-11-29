@@ -34,7 +34,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDecimal128(toFloat64(toDecimal128(v.Integer, toUInt8(10))) / toFloat64(33), toUInt8(10)),
+	toDecimal128(toFloat64(toDecimal128(v.Integer, toUInt8(10))) / 33, toUInt8(10)),
 	toDecimal128(toFloat64(v.Decimal) / toFloat64(toDecimal128('33', 5)), toUInt8(5)),
 	v.Double / toFloat64(toDecimal128('33', 10))
 FROM

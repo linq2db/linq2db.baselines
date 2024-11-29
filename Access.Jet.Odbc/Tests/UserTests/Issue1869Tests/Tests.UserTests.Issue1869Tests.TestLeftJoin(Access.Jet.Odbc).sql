@@ -90,11 +90,11 @@ CREATE TABLE [tblWorkstationGroup]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @dateMin  -- DateTime
+DECLARE @dateMin DateTime
 SET     @dateMin = #2020-02-29 17:54:55#
-DECLARE @dateMax  -- DateTime
+DECLARE @dateMax DateTime
 SET     @dateMax = #2020-02-29 17:54:55#
-DECLARE @sectorId  -- Int32
+DECLARE @sectorId Int -- Int32
 SET     @sectorId = 1
 
 SELECT

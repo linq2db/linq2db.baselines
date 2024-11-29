@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 2
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 1
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 
 SELECT

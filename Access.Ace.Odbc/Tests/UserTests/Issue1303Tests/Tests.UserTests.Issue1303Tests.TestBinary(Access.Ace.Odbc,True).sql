@@ -17,9 +17,9 @@ CREATE TABLE [Issue1303]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Array Binary(3)
+DECLARE @Array VarBinary(3) -- Binary
 SET     @Array = 0x010203
-DECLARE @Binary Binary(2)
+DECLARE @Binary VarBinary(2) -- Binary
 SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]

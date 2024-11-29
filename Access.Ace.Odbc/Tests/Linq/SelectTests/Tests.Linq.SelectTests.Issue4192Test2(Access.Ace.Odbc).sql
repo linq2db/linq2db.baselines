@@ -14,7 +14,7 @@ CREATE TABLE [Issue4192TableNullable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @parentId  -- Int32
+DECLARE @parentId Int -- Int32
 SET     @parentId = 12
 
 SELECT

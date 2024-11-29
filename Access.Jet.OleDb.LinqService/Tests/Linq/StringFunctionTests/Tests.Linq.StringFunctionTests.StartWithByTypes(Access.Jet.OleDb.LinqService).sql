@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @str VarWChar(5) -- String
+DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 VarWChar(5) -- String
+DECLARE @str_1 WChar(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarWChar(5) -- String
+DECLARE @str_2 VarChar(5) -- AnsiString
 SET     @str_2 = 'some%'
 DECLARE @str_3 VarWChar(5) -- String
 SET     @str_3 = 'some%'

@@ -10,7 +10,7 @@ CREATE TABLE [TableWithPrimaryKey2]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Key  -- Int32
+DECLARE @Key Int -- Int32
 SET     @Key = 1
 
 INSERT INTO [TableWithPrimaryKey2]

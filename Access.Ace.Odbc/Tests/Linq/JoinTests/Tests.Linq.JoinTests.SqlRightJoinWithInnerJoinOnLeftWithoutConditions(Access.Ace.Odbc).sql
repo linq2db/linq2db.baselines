@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 
 SELECT

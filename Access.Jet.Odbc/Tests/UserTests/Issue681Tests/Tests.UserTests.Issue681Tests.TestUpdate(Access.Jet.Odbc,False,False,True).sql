@@ -16,9 +16,9 @@ CREATE TABLE [Issue681Table]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE

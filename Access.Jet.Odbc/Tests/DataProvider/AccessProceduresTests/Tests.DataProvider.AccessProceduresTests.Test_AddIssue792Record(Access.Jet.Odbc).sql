@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @unused  -- Int32
+DECLARE @unused Int -- Int32
 SET     @unused = 100500
 
 { CALL AddIssue792Record(?) }

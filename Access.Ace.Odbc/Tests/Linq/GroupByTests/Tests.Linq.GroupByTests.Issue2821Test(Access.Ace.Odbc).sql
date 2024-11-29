@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
 
 SELECT

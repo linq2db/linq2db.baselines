@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2009-09-20#
 
 SELECT

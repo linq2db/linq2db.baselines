@@ -25,7 +25,7 @@ SET     @gender = 'U'
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @maxId  -- Int32
+DECLARE @maxId Int -- Int32
 SET     @maxId = 4
 
 SELECT TOP 2

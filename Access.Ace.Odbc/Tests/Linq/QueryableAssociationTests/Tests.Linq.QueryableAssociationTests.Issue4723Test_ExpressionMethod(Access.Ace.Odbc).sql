@@ -14,7 +14,7 @@ CREATE TABLE [Issue4723Table1]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @ExpressionMethod NVarChar -- String
 SET     @ExpressionMethod = NULL
@@ -46,7 +46,7 @@ CREATE TABLE [Issue4723Table2]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'Value 1'
@@ -64,7 +64,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'Value 1'
@@ -82,7 +82,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'Value 2'

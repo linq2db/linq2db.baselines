@@ -16,9 +16,9 @@ CREATE TABLE [EntityMA]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMA]
@@ -34,9 +34,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMA]
@@ -52,9 +52,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 12
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMA]
@@ -70,9 +70,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 13
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMA]
@@ -105,11 +105,11 @@ CREATE TABLE [EntityMB]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 20
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 10
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 40
 
 INSERT INTO [EntityMB]
@@ -127,11 +127,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 21
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 11
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = NULL
 
 INSERT INTO [EntityMB]
@@ -149,11 +149,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 22
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 11
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 40
 
 INSERT INTO [EntityMB]
@@ -171,11 +171,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 23
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 19
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 49
 
 INSERT INTO [EntityMB]
@@ -193,11 +193,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 24
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 19
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = NULL
 
 INSERT INTO [EntityMB]
@@ -215,11 +215,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 25
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 49
 
 INSERT INTO [EntityMB]
@@ -237,11 +237,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 26
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 40
 
 INSERT INTO [EntityMB]
@@ -259,11 +259,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 27
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 19
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = 41
 
 INSERT INTO [EntityMB]
@@ -281,11 +281,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 28
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 10
-DECLARE @FKD  -- Int32
+DECLARE @FKD Int -- Int32
 SET     @FKD = NULL
 
 INSERT INTO [EntityMB]
@@ -319,9 +319,9 @@ CREATE TABLE [EntityMC]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 30
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 20
 
 INSERT INTO [EntityMC]
@@ -337,9 +337,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 31
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 24
 
 INSERT INTO [EntityMC]
@@ -355,9 +355,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 32
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 21
 
 INSERT INTO [EntityMC]
@@ -373,9 +373,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 33
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 21
 
 INSERT INTO [EntityMC]
@@ -391,9 +391,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 34
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 23
 
 INSERT INTO [EntityMC]
@@ -409,9 +409,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 35
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMC]
@@ -427,9 +427,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 36
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMC]
@@ -445,9 +445,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 37
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = 29
 
 INSERT INTO [EntityMC]
@@ -479,9 +479,9 @@ CREATE TABLE [EntityMD]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 40
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMD]
@@ -497,9 +497,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 41
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMD]
@@ -515,9 +515,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 42
-DECLARE @FK  -- Int32
+DECLARE @FK Int -- Int32
 SET     @FK = NULL
 
 INSERT INTO [EntityMD]

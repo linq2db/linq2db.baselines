@@ -17,9 +17,9 @@ CREATE TABLE [ConcurrencyFiltered]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'initial'
@@ -51,9 +51,9 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 
 UPDATE
@@ -78,9 +78,9 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 
 UPDATE
@@ -103,9 +103,9 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
@@ -125,9 +125,9 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 DELETE FROM

@@ -17,11 +17,11 @@ CREATE TABLE [PR_1598_Mixed_Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jason'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 20
 
 INSERT INTO [PR_1598_Mixed_Table]
@@ -51,9 +51,9 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 20
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -77,9 +77,9 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 25
 
 INSERT INTO [PR_1598_Mixed_Table]
@@ -109,9 +109,9 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jessy'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 25
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 UPDATE

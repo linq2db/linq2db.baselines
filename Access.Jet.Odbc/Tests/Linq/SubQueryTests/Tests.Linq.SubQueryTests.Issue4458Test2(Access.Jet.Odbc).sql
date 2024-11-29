@@ -72,7 +72,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '1'
-DECLARE @QuantityAvailable  -- Int32
+DECLARE @QuantityAvailable Int -- Int32
 SET     @QuantityAvailable = 10
 DECLARE @WarehouseId NVarChar(1) -- String
 SET     @WarehouseId = 'A'
@@ -111,7 +111,7 @@ DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '1'
 DECLARE @UserId NVarChar(1) -- String
 SET     @UserId = '1'
-DECLARE @Score  -- Int32
+DECLARE @Score Int -- Int32
 SET     @Score = 100
 
 INSERT INTO [Review]
@@ -133,7 +133,7 @@ DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '1'
 DECLARE @UserId NVarChar(1) -- String
 SET     @UserId = '2'
-DECLARE @Score  -- Int32
+DECLARE @Score Int -- Int32
 SET     @Score = 90
 
 INSERT INTO [Review]
@@ -155,7 +155,7 @@ DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '2'
 DECLARE @UserId NVarChar(1) -- String
 SET     @UserId = '1'
-DECLARE @Score  -- Int32
+DECLARE @Score Int -- Int32
 SET     @Score = 89
 
 INSERT INTO [Review]
@@ -177,7 +177,7 @@ DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '2'
 DECLARE @UserId NVarChar(1) -- String
 SET     @UserId = '4'
-DECLARE @Score  -- Int32
+DECLARE @Score Int -- Int32
 SET     @Score = 93
 
 INSERT INTO [Review]
@@ -199,7 +199,7 @@ DECLARE @ItemId NVarChar(1) -- String
 SET     @ItemId = '3'
 DECLARE @UserId NVarChar(1) -- String
 SET     @UserId = '5'
-DECLARE @Score  -- Int32
+DECLARE @Score Int -- Int32
 SET     @Score = 91
 
 INSERT INTO [Review]

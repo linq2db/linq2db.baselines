@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 1
 
 SELECT

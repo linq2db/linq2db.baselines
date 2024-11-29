@@ -75,14 +75,14 @@ SELECT
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
-	[e].[Age],
-	[e].[IsMale]
+	[e].[IsMale],
+	[e].[Age]
 FROM
 	[Base] [e]
 WHERE
-	[e].[Code] = N'BaseChild' OR
-	[e].[Code] = N'Child' OR
 	[e].[Code] = N'Child2' OR
+	[e].[Code] = N'Child' OR
+	[e].[Code] = N'BaseChild' OR
 	[e].[Id] <> 0
 ORDER BY
 	[e].[Id]

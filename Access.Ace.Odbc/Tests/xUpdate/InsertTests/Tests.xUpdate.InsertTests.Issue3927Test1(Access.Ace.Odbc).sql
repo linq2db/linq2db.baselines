@@ -16,7 +16,7 @@ CREATE TABLE [Issue3927Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @PageNumber  -- Int32
+DECLARE @PageNumber Int -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
 SET     @serialNumber = '12345678901'

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO [Parent]
@@ -18,7 +18,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 100500
 
 SELECT TOP 1
@@ -30,11 +30,11 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 100500
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 100500
 
 UPDATE

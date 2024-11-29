@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @code  -- Int32
+DECLARE @code Int -- Int32
 SET     @code = 1
-DECLARE @site  -- Int32
+DECLARE @site Int -- Int32
 SET     @site = 2
 
 SELECT

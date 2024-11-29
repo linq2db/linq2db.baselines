@@ -16,7 +16,7 @@ CREATE TABLE [Issue1438]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Has  -- Boolean
+DECLARE @Has Bit -- Boolean
 SET     @Has = True
 
 INSERT INTO [Issue1438]
@@ -35,7 +35,7 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT TOP 2

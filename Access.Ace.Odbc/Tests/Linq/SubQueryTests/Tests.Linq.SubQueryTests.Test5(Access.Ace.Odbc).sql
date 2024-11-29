@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @_testValue  -- Int32
+DECLARE @_testValue Int -- Int32
 SET     @_testValue = 3
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Minute  -- Int32
+DECLARE @Minute Int -- Int32
 SET     @Minute = -8
 
 SELECT

@@ -16,7 +16,7 @@ CREATE TABLE [Issue681Table4]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
 
 INSERT INTO [Issue681Table4]

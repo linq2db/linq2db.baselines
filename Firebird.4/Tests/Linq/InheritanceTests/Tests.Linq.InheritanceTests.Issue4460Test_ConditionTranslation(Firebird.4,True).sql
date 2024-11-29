@@ -82,13 +82,13 @@ SELECT
 	"e"."Code",
 	"e"."Id",
 	"e"."Name",
-	"e"."Age",
-	"e"."IsMale"
+	"e"."IsMale",
+	"e"."Age"
 FROM
 	"Base" "e"
 WHERE
 	CASE
-		WHEN "e"."Code" = 'BaseChild' OR "e"."Code" = 'Child' OR "e"."Code" = 'Child2'
+		WHEN "e"."Code" = 'Child2' OR "e"."Code" = 'Child' OR "e"."Code" = 'BaseChild'
 			THEN TRUE
 		WHEN "e"."Id" <> 0 THEN TRUE
 		ELSE FALSE

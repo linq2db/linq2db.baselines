@@ -2,7 +2,7 @@
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @n  -- Int32
+DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT

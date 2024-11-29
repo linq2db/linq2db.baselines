@@ -14,9 +14,9 @@ CREATE TABLE [CreateTableTypes]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime DateTime
 SET     @DateTime = #2000-01-01#
 
 INSERT INTO [CreateTableTypes]
@@ -32,9 +32,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime DateTime
 SET     @DateTime = #2018-11-24 01:02:03#
 
 INSERT INTO [CreateTableTypes]

@@ -16,9 +16,9 @@ CREATE TABLE [Issue1107TB]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 0
-DECLARE @TestDate  -- DateTime
+DECLARE @TestDate DateTime
 SET     @TestDate = #2018-01-01#
 
 INSERT INTO [Issue1107TB]

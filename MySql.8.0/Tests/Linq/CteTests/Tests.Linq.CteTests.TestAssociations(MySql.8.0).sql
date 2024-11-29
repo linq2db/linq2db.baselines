@@ -8,9 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Books`
 (
-	`Id`       INT           AUTO_INCREMENT NOT NULL,
-	`Title`    VARCHAR(4000)                NOT NULL,
-	`AuthorId` INT                          NOT NULL,
+	`Id`       INT           NOT NULL,
+	`Title`    VARCHAR(4000) NOT NULL,
+	`AuthorId` INT           NOT NULL,
 
 	CONSTRAINT `PK_Books` PRIMARY KEY CLUSTERED (`Id`)
 )
@@ -25,8 +25,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Authors`
 (
-	`Id`   INT           AUTO_INCREMENT NOT NULL,
-	`Name` VARCHAR(4000)                NOT NULL,
+	`Id`   INT           NOT NULL,
+	`Name` VARCHAR(4000) NOT NULL,
 
 	CONSTRAINT `PK_Authors` PRIMARY KEY CLUSTERED (`Id`)
 )

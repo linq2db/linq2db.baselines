@@ -16,7 +16,7 @@ CREATE TABLE [ConditionalData]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String1'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String2'
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @StringProp NVarChar -- String
 SET     @StringProp = NULL
@@ -70,7 +70,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String4'
@@ -88,7 +88,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String5'
@@ -106,7 +106,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @StringProp NVarChar -- String
 SET     @StringProp = NULL
@@ -124,7 +124,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String7'
@@ -142,7 +142,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @StringProp NVarChar(7) -- String
 SET     @StringProp = 'String8'
@@ -160,7 +160,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @StringProp NVarChar -- String
 SET     @StringProp = NULL
@@ -178,7 +178,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @StringProp NVarChar(8) -- String
 SET     @StringProp = 'String10'
@@ -196,7 +196,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @StringProp NVarChar(2) -- String
 SET     @StringProp = '-1'

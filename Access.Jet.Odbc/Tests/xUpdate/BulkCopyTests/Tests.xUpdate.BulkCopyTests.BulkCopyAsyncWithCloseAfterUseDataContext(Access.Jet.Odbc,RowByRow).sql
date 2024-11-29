@@ -13,7 +13,7 @@ CREATE TABLE [SimpleBulkCopyTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC (asynchronously)
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [SimpleBulkCopyTable]

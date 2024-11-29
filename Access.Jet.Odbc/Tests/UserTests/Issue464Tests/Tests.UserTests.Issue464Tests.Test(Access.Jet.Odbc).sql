@@ -9,9 +9,9 @@ CREATE TABLE [Issue464]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 1
 
 INSERT INTO [Issue464]
@@ -27,9 +27,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 2
 
 INSERT INTO [Issue464]
@@ -45,9 +45,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 3
 
 INSERT INTO [Issue464]

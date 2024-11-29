@@ -15,11 +15,11 @@ CREATE TABLE [BooleanTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = True
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
@@ -37,11 +37,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = False
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = False
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 SELECT
@@ -93,11 +93,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = True
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
@@ -115,11 +115,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = False
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
@@ -155,11 +155,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = True
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
@@ -177,11 +177,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = False
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]
@@ -217,11 +217,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = True
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = False
 
 INSERT INTO [BooleanTable]
@@ -239,11 +239,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Boolean
+DECLARE @Column Bit -- Boolean
 SET     @Column = False
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Bit -- Boolean
 SET     @ColumnNullable = True
 
 INSERT INTO [BooleanTable]

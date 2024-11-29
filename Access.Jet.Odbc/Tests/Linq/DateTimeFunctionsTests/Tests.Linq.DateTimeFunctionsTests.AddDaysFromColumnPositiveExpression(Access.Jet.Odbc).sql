@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = #2018-01-03#
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = False
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue UniqueIdentifier -- Guid
 SET     @GuidValue = '{00000000-0000-0000-0000-000000000000}'
-DECLARE @BinaryValue Binary
+DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 2
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -42,9 +42,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @part1  -- Int16
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
-DECLARE @part2  -- Int32
+DECLARE @part2 Int -- Int32
 SET     @part2 = 4
 
 SELECT

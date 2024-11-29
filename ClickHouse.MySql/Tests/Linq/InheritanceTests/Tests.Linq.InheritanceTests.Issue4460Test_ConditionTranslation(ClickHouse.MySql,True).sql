@@ -59,14 +59,14 @@ SELECT
 	e.Code,
 	e.Id,
 	e.Name,
-	e.Age,
-	e.IsMale
+	e.IsMale,
+	e.Age
 FROM
 	Base e
 WHERE
-	e.Code = 'BaseChild' OR
-	e.Code = 'Child' OR
 	e.Code = 'Child2' OR
+	e.Code = 'Child' OR
+	e.Code = 'BaseChild' OR
 	e.Id <> 0
 ORDER BY
 	e.Id

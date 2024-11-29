@@ -18,11 +18,11 @@ CREATE TABLE [Contract_Distributor_Agent]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Agent_Id  -- Int32
+DECLARE @Agent_Id Int -- Int32
 SET     @Agent_Id = 1
-DECLARE @Distributor_Id  -- Int32
+DECLARE @Distributor_Id Int -- Int32
 SET     @Distributor_Id = 1
-DECLARE @Contract_Id  -- Int32
+DECLARE @Contract_Id Int -- Int32
 SET     @Contract_Id = 198827882
 DECLARE @Distributor_Type_Code NVarChar(2) -- String
 SET     @Distributor_Type_Code = 'CC'
@@ -67,7 +67,7 @@ CREATE TABLE [Agent]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Agent_Id  -- Int32
+DECLARE @Agent_Id Int -- Int32
 SET     @Agent_Id = 1
 DECLARE @First_Name NVarChar(1) -- String
 SET     @First_Name = 'x'
@@ -104,7 +104,7 @@ CREATE TABLE [Distributor]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Distributor_Id  -- Int32
+DECLARE @Distributor_Id Int -- Int32
 SET     @Distributor_Id = 1
 DECLARE @Type_Code NVarChar(2) -- String
 SET     @Type_Code = 'RE'
@@ -141,9 +141,9 @@ CREATE TABLE [Distributor_Commercial_Propert]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Distributor_Id  -- Int32
+DECLARE @Distributor_Id Int -- Int32
 SET     @Distributor_Id = 1
-DECLARE @Commercial_Property_Id  -- Int32
+DECLARE @Commercial_Property_Id Int -- Int32
 SET     @Commercial_Property_Id = 1
 DECLARE @Distributor_Type_Code NVarChar(2) -- String
 SET     @Distributor_Type_Code = 'RE'
@@ -182,7 +182,7 @@ CREATE TABLE [Commercial_Property]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Commercial_Property_Id  -- Int32
+DECLARE @Commercial_Property_Id Int -- Int32
 SET     @Commercial_Property_Id = 1
 DECLARE @Street_Number NVarChar(1) -- String
 SET     @Street_Number = 'x'
@@ -235,7 +235,7 @@ CREATE TABLE [Contract_Dates]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Contract_Id  -- Int32
+DECLARE @Contract_Id Int -- Int32
 SET     @Contract_Id = 198827882
 DECLARE @Type_Code NVarChar(6) -- String
 SET     @Type_Code = 'ESTCOE'

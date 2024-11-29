@@ -31,7 +31,7 @@ CREATE TABLE [UserDetailsIssue3128]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 
 INSERT INTO [UserIssue3128]
@@ -45,9 +45,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @UserId  -- Int32
+DECLARE @UserId Int -- Int32
 SET     @UserId = 10
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 18
 
 INSERT INTO [UserDetailsIssue3128]

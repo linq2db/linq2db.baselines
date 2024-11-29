@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
@@ -20,7 +20,7 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT

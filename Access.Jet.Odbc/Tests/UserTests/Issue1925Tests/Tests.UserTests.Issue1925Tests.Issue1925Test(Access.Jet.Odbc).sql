@@ -14,7 +14,7 @@ CREATE TABLE [SampleClass]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value NVarChar(1) -- String
 SET     @Value = '6'
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'x[0-9]x'
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'x[0x'
@@ -68,7 +68,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value NVarChar(4) -- String
 SET     @Value = 'x[]x'
@@ -86,7 +86,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'x]'
@@ -104,7 +104,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = ']x'

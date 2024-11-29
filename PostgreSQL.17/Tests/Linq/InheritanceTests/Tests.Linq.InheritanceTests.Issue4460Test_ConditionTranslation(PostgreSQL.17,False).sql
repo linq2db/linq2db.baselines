@@ -71,28 +71,16 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN e."Code" = 'Child2' THEN True
-		ELSE False
-	END,
 	e."Code",
 	e."Id",
 	e."Name",
-	e."Age",
-	CASE
-		WHEN e."Code" = 'Child' THEN True
-		ELSE False
-	END,
 	e."IsMale",
-	CASE
-		WHEN e."Code" = 'BaseChild' THEN True
-		ELSE False
-	END
+	e."Age"
 FROM
 	"Base" e
 WHERE
 	CASE
-		WHEN e."Code" = 'BaseChild' OR e."Code" = 'Child' OR e."Code" = 'Child2'
+		WHEN e."Code" = 'Child2' OR e."Code" = 'Child' OR e."Code" = 'BaseChild'
 			THEN CASE
 			WHEN e."Id" <> 0 THEN True
 			ELSE False

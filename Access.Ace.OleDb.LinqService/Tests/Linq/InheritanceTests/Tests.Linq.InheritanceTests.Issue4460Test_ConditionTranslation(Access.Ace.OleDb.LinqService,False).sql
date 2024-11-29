@@ -74,12 +74,12 @@ SELECT
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
-	[e].[Age],
-	[e].[IsMale]
+	[e].[IsMale],
+	[e].[Age]
 FROM
 	[Base] [e]
 WHERE
-	IIF([e].[Code] = 'BaseChild' OR [e].[Code] = 'Child' OR [e].[Code] = 'Child2', IIF([e].[Id] <> 0, True, False), IIF([e].[Id] <> 0, True, False)) = True
+	IIF([e].[Code] = 'Child2' OR [e].[Code] = 'Child' OR [e].[Code] = 'BaseChild', IIF([e].[Id] <> 0, True, False), IIF([e].[Id] <> 0, True, False)) = True
 ORDER BY
 	[e].[Id]
 

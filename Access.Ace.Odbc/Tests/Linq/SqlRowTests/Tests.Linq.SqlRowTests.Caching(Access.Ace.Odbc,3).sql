@@ -18,17 +18,17 @@ CREATE TABLE [Ints]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @One  -- Int32
+DECLARE @One Int -- Int32
 SET     @One = 1
-DECLARE @Two  -- Int32
+DECLARE @Two Int -- Int32
 SET     @Two = 2
-DECLARE @Three  -- Int32
+DECLARE @Three Int -- Int32
 SET     @Three = 3
-DECLARE @Four  -- Int32
+DECLARE @Four Int -- Int32
 SET     @Four = 4
-DECLARE @Five  -- Int32
+DECLARE @Five Int -- Int32
 SET     @Five = 5
-DECLARE @Nil  -- Int32
+DECLARE @Nil Int -- Int32
 SET     @Nil = NULL
 
 INSERT INTO [Ints]
@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @r3  -- Int32
+DECLARE @r3 Int -- Int32
 SET     @r3 = 3
 
 SELECT

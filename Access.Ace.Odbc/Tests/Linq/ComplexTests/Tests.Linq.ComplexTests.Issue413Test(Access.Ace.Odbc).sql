@@ -46,9 +46,9 @@ CREATE TABLE [T3]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Int -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -64,9 +64,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Int -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -82,9 +82,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Int -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -100,9 +100,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Int -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T2]
@@ -118,9 +118,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Int -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T2]
@@ -136,11 +136,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = #2020-02-28 17:54:55#
 DECLARE @SourceInstrumentCode NVarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -162,11 +162,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate DateTime
 SET     @CreateDate = #2020-02-28 17:54:55#
 DECLARE @SourceInstrumentCode NVarChar -- String
 SET     @SourceInstrumentCode = NULL
@@ -190,7 +190,7 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'aaa%'
-DECLARE @uptoDate  -- DateTime
+DECLARE @uptoDate DateTime
 SET     @uptoDate = #2020-02-29 17:54:55#
 
 SELECT

@@ -15,7 +15,7 @@ CREATE TABLE [StringEnumTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
 SET     @Column = 'val=1'
@@ -37,7 +37,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
@@ -93,7 +93,7 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
 SET     @Column = 'val=1'
@@ -115,7 +115,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
@@ -155,7 +155,7 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
 SET     @Column = 'val=1'
@@ -177,7 +177,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
@@ -217,7 +217,7 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
 SET     @Column = 'val=1'
@@ -239,7 +239,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'

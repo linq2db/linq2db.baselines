@@ -15,7 +15,7 @@ CREATE TABLE [AttributeBase]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [AttributeBase]

@@ -24,7 +24,7 @@ CREATE TABLE [ValueConversion]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str1"}'
@@ -42,7 +42,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
@@ -74,7 +74,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str2"}'
@@ -92,7 +92,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -124,7 +124,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str3"}'
@@ -142,7 +142,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -174,7 +174,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str4"}'
@@ -192,7 +192,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
@@ -224,7 +224,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str5"}'
@@ -242,7 +242,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -274,7 +274,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str6"}'
@@ -292,7 +292,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -324,7 +324,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str7"}'
@@ -342,7 +342,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
@@ -374,7 +374,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str8"}'
@@ -392,7 +392,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -424,7 +424,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @Value1 NVarChar(15) -- String
 SET     @Value1 = '{"some":"str9"}'
@@ -442,7 +442,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = #2020-02-29#
 
 INSERT INTO [ValueConversion]
@@ -474,7 +474,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
@@ -492,7 +492,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]
@@ -578,9 +578,9 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 UPDATE
@@ -635,9 +635,9 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'N'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'F'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 
 UPDATE

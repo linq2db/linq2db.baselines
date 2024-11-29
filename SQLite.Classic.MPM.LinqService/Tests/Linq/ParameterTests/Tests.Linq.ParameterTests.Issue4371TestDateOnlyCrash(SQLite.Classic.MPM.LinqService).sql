@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Issue4371Table2] [r]
 WHERE
-	Date([r].[ColumnDO]) = Date(@dt)
+	[r].[ColumnDO] = @dt
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

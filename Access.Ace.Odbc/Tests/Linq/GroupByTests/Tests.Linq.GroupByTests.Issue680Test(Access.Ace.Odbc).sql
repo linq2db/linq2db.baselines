@@ -13,7 +13,7 @@ CREATE TABLE [Issue680Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime DateTime
 SET     @DateTime = #2020-02-29 17:54:55#
 
 SELECT

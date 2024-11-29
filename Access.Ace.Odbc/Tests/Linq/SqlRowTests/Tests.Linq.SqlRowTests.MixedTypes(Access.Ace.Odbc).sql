@@ -17,15 +17,15 @@ CREATE TABLE [Mixed]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = 1
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'One'
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2001-01-01#
-DECLARE @Double  -- Double
+DECLARE @Double Double
 SET     @Double = 1
-DECLARE @Bool  -- Boolean
+DECLARE @Bool Bit -- Boolean
 SET     @Bool = True
 
 INSERT INTO [Mixed]
@@ -47,15 +47,15 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Int  -- Int32
+DECLARE @Int Int -- Int32
 SET     @Int = 2
 DECLARE @Str NVarChar(3) -- String
 SET     @Str = 'Two'
-DECLARE @Date  -- DateTime
+DECLARE @Date DateTime
 SET     @Date = #2002-02-02#
-DECLARE @Double  -- Double
+DECLARE @Double Double
 SET     @Double = 2
-DECLARE @Bool  -- Boolean
+DECLARE @Bool Bit -- Boolean
 SET     @Bool = False
 
 INSERT INTO [Mixed]

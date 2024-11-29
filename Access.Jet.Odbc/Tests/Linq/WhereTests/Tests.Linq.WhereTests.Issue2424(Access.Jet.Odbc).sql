@@ -14,7 +14,7 @@ CREATE TABLE [Isue2424Table]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StrValue NVarChar(1) -- String
 SET     @StrValue = '1'
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @StrValue NVarChar(1) -- String
 SET     @StrValue = '3'
@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @StrValue NVarChar(1) -- String
 SET     @StrValue = '5'

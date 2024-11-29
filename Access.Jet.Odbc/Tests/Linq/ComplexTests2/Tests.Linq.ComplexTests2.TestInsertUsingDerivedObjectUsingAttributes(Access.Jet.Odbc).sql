@@ -78,7 +78,7 @@ DECLARE @MiddleName NVarChar(4) -- String
 SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'U'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -107,7 +107,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 DELETE FROM

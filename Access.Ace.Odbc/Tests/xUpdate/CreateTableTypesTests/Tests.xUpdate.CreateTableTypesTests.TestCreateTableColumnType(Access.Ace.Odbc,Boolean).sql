@@ -14,9 +14,9 @@ CREATE TABLE [CreateTableTypes]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Boolean  -- Boolean
+DECLARE @Boolean Bit -- Boolean
 SET     @Boolean = False
 
 INSERT INTO [CreateTableTypes]
@@ -32,9 +32,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Boolean  -- Boolean
+DECLARE @Boolean Bit -- Boolean
 SET     @Boolean = True
 
 INSERT INTO [CreateTableTypes]

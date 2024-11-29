@@ -1,5 +1,5 @@
 ﻿--  SqlServer.2017
-DECLARE @value NVarChar(4000) -- String
+DECLARE @value NVarChar(60) -- String
 SET     @value = N'%anything%'
 
 SELECT

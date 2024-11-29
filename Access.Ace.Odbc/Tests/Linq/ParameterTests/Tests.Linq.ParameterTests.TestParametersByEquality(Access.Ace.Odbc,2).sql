@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
 
 SELECT
@@ -25,11 +25,11 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 2
 
 SELECT

@@ -13,7 +13,7 @@ CREATE TABLE [test_in_1]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 INSERT INTO [test_in_1]
@@ -27,7 +27,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 3
 
 INSERT INTO [test_in_1]
@@ -55,9 +55,9 @@ CREATE TABLE [test_in_2]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
-DECLARE @GV  -- Int32
+DECLARE @GV Int -- Int32
 SET     @GV = 1
 
 INSERT INTO [test_in_2]
@@ -73,9 +73,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
-DECLARE @GV  -- Int32
+DECLARE @GV Int -- Int32
 SET     @GV = 0
 
 INSERT INTO [test_in_2]
@@ -91,9 +91,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = NULL
-DECLARE @GV  -- Int32
+DECLARE @GV Int -- Int32
 SET     @GV = NULL
 
 INSERT INTO [test_in_2]

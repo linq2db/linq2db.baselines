@@ -15,11 +15,11 @@ CREATE TABLE [ByteTable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
@@ -37,11 +37,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]
@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
@@ -93,11 +93,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
@@ -115,11 +115,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]
@@ -155,11 +155,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
@@ -177,11 +177,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]
@@ -217,11 +217,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
@@ -239,11 +239,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]

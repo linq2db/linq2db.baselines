@@ -15,7 +15,7 @@ CREATE TABLE [AsyncDataTable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO [AsyncDataTable]
@@ -29,7 +29,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO [AsyncDataTable]
@@ -43,7 +43,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 
 INSERT INTO [AsyncDataTable]
@@ -57,7 +57,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
 
 INSERT INTO [AsyncDataTable]
@@ -71,7 +71,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
 
 INSERT INTO [AsyncDataTable]
@@ -85,7 +85,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 
 INSERT INTO [AsyncDataTable]
@@ -99,7 +99,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 7
 
 INSERT INTO [AsyncDataTable]
@@ -113,7 +113,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 8
 
 INSERT INTO [AsyncDataTable]
@@ -127,7 +127,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 9
 
 INSERT INTO [AsyncDataTable]
@@ -141,7 +141,7 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 
 INSERT INTO [AsyncDataTable]
@@ -155,9 +155,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT TOP 2

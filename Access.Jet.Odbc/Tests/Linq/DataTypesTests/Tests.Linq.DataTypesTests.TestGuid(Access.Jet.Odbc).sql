@@ -15,11 +15,11 @@ CREATE TABLE [GuidTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
@@ -37,11 +37,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 
 INSERT INTO [GuidTable]
@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 
 SELECT
@@ -94,11 +94,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
@@ -116,11 +116,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 
 INSERT INTO [GuidTable]
@@ -156,11 +156,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
@@ -178,11 +178,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 
 INSERT INTO [GuidTable]
@@ -218,11 +218,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
@@ -240,11 +240,11 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Guid
+DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
 SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 
 INSERT INTO [GuidTable]

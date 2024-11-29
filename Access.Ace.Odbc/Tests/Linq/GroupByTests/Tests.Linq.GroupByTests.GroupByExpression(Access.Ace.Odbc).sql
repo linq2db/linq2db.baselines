@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @defValue  -- Int32
+DECLARE @defValue Int -- Int32
 SET     @defValue = 10
 
 SELECT

@@ -108,7 +108,7 @@ FROM
 		INNER JOIN [Issue4364_Interaction] [i] ON [b].[Id] = [i].[ThingId]
 		INNER JOIN [Issue4364_Person] [p] ON [i].[PersonId] = [p].[Id]
 WHERE
-	[b].[Type] = 101 OR [b].[Type] = 102
+	[b].[Type] IN (102, 101)
 ORDER BY
 	[b].[Id]
 

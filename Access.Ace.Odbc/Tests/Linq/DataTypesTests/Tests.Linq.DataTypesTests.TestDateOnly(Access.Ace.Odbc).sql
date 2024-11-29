@@ -15,11 +15,11 @@ CREATE TABLE [DateOnlyTable]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #1950-01-01#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -37,11 +37,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = #2200-01-01#
 
 INSERT INTO [DateOnlyTable]
@@ -59,9 +59,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = #2200-01-01#
 
 SELECT
@@ -93,11 +93,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #1950-01-01#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -115,11 +115,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = #2200-01-01#
 
 INSERT INTO [DateOnlyTable]
@@ -155,11 +155,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #1950-01-01#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -177,11 +177,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = #2200-01-01#
 
 INSERT INTO [DateOnlyTable]
@@ -217,11 +217,11 @@ DELETE FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #1950-01-01#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -239,11 +239,11 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = #2200-01-01#
 
 INSERT INTO [DateOnlyTable]

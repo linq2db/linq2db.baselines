@@ -59,7 +59,7 @@ FROM
 			CASE
 				WHEN EXISTS(
 					SELECT
-						*
+						1
 					FROM
 						`Person` `tg`
 					WHERE

@@ -15,7 +15,7 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @param  -- Boolean
+DECLARE @param Bit -- Boolean
 SET     @param = True
 
 SELECT

@@ -75,13 +75,13 @@ SELECT
 	[e].[Code],
 	[e].[Id],
 	[e].[Name],
-	[e].[Age],
-	[e].[IsMale]
+	[e].[IsMale],
+	[e].[Age]
 FROM
 	[Base] [e]
 WHERE
 	CASE
-		WHEN [e].[Code] = N'BaseChild' OR [e].[Code] = N'Child' OR [e].[Code] = N'Child2'
+		WHEN [e].[Code] = N'Child2' OR [e].[Code] = N'Child' OR [e].[Code] = N'BaseChild'
 			THEN IIF([e].[Id] <> 0, 1, 0)
 		WHEN [e].[Id] <> 0 THEN 1
 		ELSE 0

@@ -5,22 +5,22 @@ SELECT bitDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Boolean
+DECLARE @p0 Bit -- Boolean
 SET     @p0 = False
-DECLARE @p1  -- Boolean
+DECLARE @p1 Bit -- Boolean
 SET     @p1 = False
-DECLARE @p2  -- Boolean
+DECLARE @p2 Bit -- Boolean
 SET     @p2 = False
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND bitDataType IS NULL OR ? IS NOT NULL AND bitDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Boolean
+DECLARE @p0 Bit -- Boolean
 SET     @p0 = False
-DECLARE @p1  -- Boolean
+DECLARE @p1 Bit -- Boolean
 SET     @p1 = False
-DECLARE @p2  -- Boolean
+DECLARE @p2 Bit -- Boolean
 SET     @p2 = False
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND bitDataType IS NULL OR ? IS NOT NULL AND bitDataType = ?
@@ -32,21 +32,21 @@ SELECT bitDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ID FROM [AllTypes] WHERE bitDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ID FROM [AllTypes] WHERE bitDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT ID FROM [AllTypes] WHERE bitDataType = ?
@@ -58,11 +58,11 @@ SELECT smallintDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Int16
+DECLARE @p0 SmallInt -- Int16
 SET     @p0 = NULL
-DECLARE @p1  -- Int16
+DECLARE @p1 SmallInt -- Int16
 SET     @p1 = NULL
-DECLARE @p2  -- Int16
+DECLARE @p2 SmallInt -- Int16
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND smallintDataType IS NULL OR ? IS NOT NULL AND smallintDataType = ?
@@ -85,21 +85,21 @@ SELECT smallintDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 25555
 
 SELECT ID FROM [AllTypes] WHERE smallintDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 25555
 
 SELECT ID FROM [AllTypes] WHERE smallintDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 25555
 
 SELECT ID FROM [AllTypes] WHERE smallintDataType = ?
@@ -164,11 +164,11 @@ SELECT intDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Int32
+DECLARE @p0 Int -- Int32
 SET     @p0 = NULL
-DECLARE @p1  -- Int32
+DECLARE @p1 Int -- Int32
 SET     @p1 = NULL
-DECLARE @p2  -- Int32
+DECLARE @p2 Int -- Int32
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND intDataType IS NULL OR ? IS NOT NULL AND intDataType = ?
@@ -191,21 +191,21 @@ SELECT intDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 7777777
 
 SELECT ID FROM [AllTypes] WHERE intDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 7777777
 
 SELECT ID FROM [AllTypes] WHERE intDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 7777777
 
 SELECT ID FROM [AllTypes] WHERE intDataType = ?
@@ -217,11 +217,11 @@ SELECT tinyintDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Byte
+DECLARE @p0 TinyInt -- Byte
 SET     @p0 = NULL
-DECLARE @p1  -- Byte
+DECLARE @p1 TinyInt -- Byte
 SET     @p1 = NULL
-DECLARE @p2  -- Byte
+DECLARE @p2 TinyInt -- Byte
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND tinyintDataType IS NULL OR ? IS NOT NULL AND tinyintDataType = ?
@@ -244,21 +244,21 @@ SELECT tinyintDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 100
 
 SELECT ID FROM [AllTypes] WHERE tinyintDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 100
 
 SELECT ID FROM [AllTypes] WHERE tinyintDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 100
 
 SELECT ID FROM [AllTypes] WHERE tinyintDataType = ?
@@ -323,11 +323,11 @@ SELECT floatDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Double
+DECLARE @p0 Double
 SET     @p0 = NULL
-DECLARE @p1  -- Double
+DECLARE @p1 Double
 SET     @p1 = NULL
-DECLARE @p2  -- Double
+DECLARE @p2 Double
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND floatDataType IS NULL OR ? IS NOT NULL AND floatDataType = ?
@@ -350,21 +350,21 @@ SELECT floatDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 20.309999999999999
 
 SELECT ID FROM [AllTypes] WHERE floatDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 20.309999999999999
 
 SELECT ID FROM [AllTypes] WHERE floatDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 20.309999999999999
 
 SELECT ID FROM [AllTypes] WHERE floatDataType = ?
@@ -376,11 +376,11 @@ SELECT realDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Single
+DECLARE @p0 Real -- Single
 SET     @p0 = NULL
-DECLARE @p1  -- Single
+DECLARE @p1 Real -- Single
 SET     @p1 = NULL
-DECLARE @p2  -- Single
+DECLARE @p2 Real -- Single
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND realDataType IS NULL OR ? IS NOT NULL AND realDataType = ?
@@ -403,21 +403,21 @@ SELECT realDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 16.2000008
 
 SELECT ID FROM [AllTypes] WHERE realDataType = ?
@@ -429,11 +429,11 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- DateTime
+DECLARE @p0 DateTime
 SET     @p0 = NULL
-DECLARE @p1  -- DateTime
+DECLARE @p1 DateTime
 SET     @p1 = NULL
-DECLARE @p2  -- DateTime
+DECLARE @p2 DateTime
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND datetimeDataType IS NULL OR ? IS NOT NULL AND datetimeDataType = ?
@@ -456,21 +456,21 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = #2012-12-12 12:12:12#
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = #2012-12-12 12:12:12#
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = #2012-12-12 12:12:12#
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = ?
@@ -834,14 +834,14 @@ SELECT ID FROM [AllTypes] WHERE binaryDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(10)
+DECLARE @p VarBinary(10) -- Binary
 SET     @p = 0x01020304000000000000
 
 SELECT ID FROM [AllTypes] WHERE binaryDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(10)
+DECLARE @p VarBinary(10) -- Binary
 SET     @p = 0x01020304000000000000
 
 SELECT ID FROM [AllTypes] WHERE binaryDataType = ?
@@ -853,11 +853,11 @@ SELECT varbinaryDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0 Binary
+DECLARE @p0 VarBinary -- Binary
 SET     @p0 = NULL
-DECLARE @p1 Binary
+DECLARE @p1 VarBinary -- Binary
 SET     @p1 = NULL
-DECLARE @p2 Binary
+DECLARE @p2 VarBinary -- Binary
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND varbinaryDataType IS NULL OR ? IS NOT NULL AND varbinaryDataType = ?
@@ -880,21 +880,21 @@ SELECT varbinaryDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x01020305
 
 SELECT ID FROM [AllTypes] WHERE varbinaryDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x01020305
 
 SELECT ID FROM [AllTypes] WHERE varbinaryDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x01020305
 
 SELECT ID FROM [AllTypes] WHERE varbinaryDataType = ?
@@ -940,14 +940,14 @@ SELECT ID FROM [AllTypes] WHERE imageDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x03040506
 
 SELECT ID FROM [AllTypes] WHERE imageDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x03040506
 
 SELECT ID FROM [AllTypes] WHERE imageDataType = ?
@@ -986,14 +986,14 @@ SELECT oleobjectDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x05060708
 
 SELECT ID FROM [AllTypes] WHERE oleobjectDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Binary(4)
+DECLARE @p VarBinary(4) -- Binary
 SET     @p = 0x05060708
 
 SELECT ID FROM [AllTypes] WHERE oleobjectDataType = ?
@@ -1005,11 +1005,11 @@ SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0  -- Guid
+DECLARE @p0 UniqueIdentifier -- Guid
 SET     @p0 = NULL
-DECLARE @p1  -- Guid
+DECLARE @p1 UniqueIdentifier -- Guid
 SET     @p1 = NULL
-DECLARE @p2  -- Guid
+DECLARE @p2 UniqueIdentifier -- Guid
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND uniqueidentifierDataType IS NULL OR ? IS NOT NULL AND uniqueidentifierDataType = ?
@@ -1032,21 +1032,21 @@ SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Guid
+DECLARE @p UniqueIdentifier -- Guid
 SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Guid
+DECLARE @p UniqueIdentifier -- Guid
 SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Guid
+DECLARE @p UniqueIdentifier -- Guid
 SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = ?

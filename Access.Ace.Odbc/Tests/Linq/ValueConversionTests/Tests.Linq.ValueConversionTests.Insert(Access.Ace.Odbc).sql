@@ -24,7 +24,7 @@ CREATE TABLE [ValueConversion]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
@@ -77,7 +77,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
@@ -130,7 +130,7 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(21) -- String
 SET     @Value1 = '{"some":"inserted3}"}'
@@ -148,7 +148,7 @@ DECLARE @BoolValue VarChar(1) -- AnsiString
 SET     @BoolValue = 'Y'
 DECLARE @AnotherBoolValue VarChar(1) -- AnsiString
 SET     @AnotherBoolValue = 'T'
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [ValueConversion]

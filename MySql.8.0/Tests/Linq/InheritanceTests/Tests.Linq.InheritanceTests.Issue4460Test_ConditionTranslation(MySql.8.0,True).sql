@@ -71,29 +71,17 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	CASE
-		WHEN `e`.`Code` = 'Child2' THEN 1
-		ELSE 0
-	END,
 	`e`.`Code`,
 	`e`.`Id`,
 	`e`.`Name`,
-	`e`.`Age`,
-	CASE
-		WHEN `e`.`Code` = 'Child' THEN 1
-		ELSE 0
-	END,
 	`e`.`IsMale`,
-	CASE
-		WHEN `e`.`Code` = 'BaseChild' THEN 1
-		ELSE 0
-	END
+	`e`.`Age`
 FROM
 	`Base` `e`
 WHERE
-	`e`.`Code` = 'BaseChild' OR
-	`e`.`Code` = 'Child' OR
 	`e`.`Code` = 'Child2' OR
+	`e`.`Code` = 'Child' OR
+	`e`.`Code` = 'BaseChild' OR
 	`e`.`Id` <> 0
 ORDER BY
 	`e`.`Id`

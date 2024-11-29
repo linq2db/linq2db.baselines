@@ -16,7 +16,7 @@ CREATE TABLE [Issue681Table]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 DELETE FROM

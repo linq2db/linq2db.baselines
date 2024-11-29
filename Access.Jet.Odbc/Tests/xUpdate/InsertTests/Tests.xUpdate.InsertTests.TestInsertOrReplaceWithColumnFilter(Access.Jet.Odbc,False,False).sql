@@ -24,7 +24,7 @@ DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE
@@ -38,7 +38,7 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -83,7 +83,7 @@ DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE

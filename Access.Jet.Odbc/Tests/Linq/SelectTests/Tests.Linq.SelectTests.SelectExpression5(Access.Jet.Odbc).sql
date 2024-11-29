@@ -15,7 +15,7 @@ CREATE TABLE [SelectExpressionTable]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 INSERT INTO [SelectExpressionTable]
@@ -29,7 +29,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p  -- Boolean
+DECLARE @p Bit -- Boolean
 SET     @p = True
 
 SELECT TOP 1
