@@ -2,14 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t_1"."c1"
+	"t"."c1"
 FROM
 	(
 		SELECT
-			Floor(Power("t"."MoneyValue", 3)) as "c1"
+			Floor(CAST(Power(CAST("p"."MoneyValue" AS Float), CAST(3 AS Float)) AS Decimal)) as "c1"
 		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	"t_1"."c1" <> 0
+	"t"."c1" <> 0
 

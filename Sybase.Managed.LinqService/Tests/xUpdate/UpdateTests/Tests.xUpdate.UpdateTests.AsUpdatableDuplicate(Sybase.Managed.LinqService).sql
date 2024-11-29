@@ -52,13 +52,13 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1003
+DECLARE @p Integer -- Int32
+SET     @p = 1003
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p
 

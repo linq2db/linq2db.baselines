@@ -57,11 +57,11 @@ SET     @test_1 = N'%Test%'
 SELECT
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014
@@ -88,11 +88,11 @@ SET     @test_1 = N'%Value%'
 SELECT
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
@@ -107,7 +107,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014
@@ -119,11 +119,11 @@ SET     @test_1 = N'%Class%'
 SELECT
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
@@ -138,7 +138,7 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014

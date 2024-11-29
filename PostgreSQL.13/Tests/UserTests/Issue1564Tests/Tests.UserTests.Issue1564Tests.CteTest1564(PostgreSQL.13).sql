@@ -35,7 +35,7 @@ AS
 		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		0
+		0::Int
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
@@ -64,7 +64,6 @@ BeforeExecute
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",
-	"CategoryId",
 	"ParentCategoryId",
 	"Name",
 	"Level_1"
@@ -73,16 +72,14 @@ AS
 (
 	SELECT
 		"innerC"."Id",
-		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		0
+		0::Int
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
 	SELECT
 		ch."RootCategoryId",
-		t1."Id",
 		t1."ParentId",
 		t1."Name",
 		ch."Level_1" + 1

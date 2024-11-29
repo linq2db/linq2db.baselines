@@ -2,31 +2,31 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"pp"."ParentID",
+	"t"."ParentID",
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"pp"."ParentID" = "a_Children"."ParentID"
+			"t"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Parent" "pp"
+	"Parent" "t"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"pp"."ParentID",
+	"t"."ParentID",
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"pp"."ParentID" = "a_Children"."ParentID"
+			"t"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Parent" "pp"
+	"Parent" "t"
 

@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Child" t1
 		) THEN True
@@ -22,13 +22,13 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Child" t2
 		) THEN True
 		ELSE False
 	END,
-	NULL
+	NULL::Boolean
 FROM
 	"Parent" x_1
 

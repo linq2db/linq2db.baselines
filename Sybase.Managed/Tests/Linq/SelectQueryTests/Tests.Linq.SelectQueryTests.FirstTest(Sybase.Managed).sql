@@ -20,8 +20,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	DateAdd(day, 1, GetDate()),
-	DateAdd(day, 2, GetDate())
+	GetDate()
 
 BeforeExecute
 -- Sybase.Managed Sybase

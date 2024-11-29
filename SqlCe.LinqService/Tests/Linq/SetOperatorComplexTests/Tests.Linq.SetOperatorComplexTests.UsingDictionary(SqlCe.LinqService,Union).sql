@@ -501,6 +501,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
+	CAST('Discriminator' AS NVarChar(255)) as [c1],
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[BookName] as [BookName_1]
@@ -512,6 +513,7 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION
 SELECT
+	CAST('Discriminator' AS NVarChar(255)) as [c1],
 	[a_Book_1].[Discriminator],
 	[a_Book_1].[BookName],
 	[a_Book_1].[BookName] as [BookName_1]

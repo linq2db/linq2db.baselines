@@ -24,7 +24,7 @@ BeforeExecute
 DELETE FROM
 	"Parent" "p"
 WHERE
-	("p"."ParentID" = 1000 AND "p"."Value1" IS NULL OR "p"."ParentID" = 1001 AND "p"."Value1" IS NULL)
+	"p"."ParentID" = 1000 AND "p"."Value1" IS NULL OR "p"."ParentID" = 1001 AND "p"."Value1" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

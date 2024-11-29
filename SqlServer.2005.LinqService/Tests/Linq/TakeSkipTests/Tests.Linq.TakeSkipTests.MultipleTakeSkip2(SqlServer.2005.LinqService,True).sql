@@ -146,6 +146,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip + @skip_1 AND [t2].[RN] <= (@skip + @skip_1 + @take)
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005

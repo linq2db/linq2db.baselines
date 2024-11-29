@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @dt TimeStamp -- DateTime
+SET     @dt = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
 	t.ID,
@@ -13,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" = TIMESTAMP '2020-02-29 17:54:55.123123'
+	t."DateTimeValue" = :dt
 

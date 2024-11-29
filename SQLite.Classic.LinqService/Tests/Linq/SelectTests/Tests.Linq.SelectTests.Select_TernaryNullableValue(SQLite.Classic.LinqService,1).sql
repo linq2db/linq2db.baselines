@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 1
+DECLARE @value  -- Int32
+SET     @value = 1
 
 SELECT
-	@p
+	@value
 

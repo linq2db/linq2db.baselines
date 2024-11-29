@@ -10,9 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND
-	`p`.`MiddleName` IS NULL AND
-	`p`.`MiddleName` IS NULL AND
-	`p`.`FirstName` IS NOT NULL AND
-	`p`.`FirstName` IS NOT NULL
+	`p`.`PersonID` = 1 AND `p`.`MiddleName` IS NULL AND
+	`p`.`MiddleName` IS NULL
 

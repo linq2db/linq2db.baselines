@@ -45,7 +45,7 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	(bitAnd(t.Flags, toInt32(4)) <> 0 OR bitAnd(t.Flags, toInt32(4)) IS NULL)
+	bitAnd(t.Flags, toInt32(4)) <> 0 OR bitAnd(t.Flags, toInt32(4)) IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

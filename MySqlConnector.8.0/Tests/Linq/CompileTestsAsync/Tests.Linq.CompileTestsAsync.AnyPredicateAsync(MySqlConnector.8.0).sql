@@ -34,18 +34,18 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
-DECLARE @Id Int32
-SET     @Id = 2
+DECLARE @p Int32
+SET     @p = 2
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				`AsyncDataTable` `c_1`
 			WHERE
-				`c_1`.`Id` = @Id
+				`c_1`.`Id` = @p
 		)
 			THEN 1
 		ELSE 0

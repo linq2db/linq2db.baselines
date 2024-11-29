@@ -44,7 +44,8 @@ SET
 	"Value" = '3'
 
 DELETE WHERE
-	(Target."Value" <> "Source"."source_Value" OR Target."Value" IS NULL AND "Source"."source_Value" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."source_Value" IS NULL)
+	Target."Value" <> "Source"."source_Value" OR Target."Value" IS NULL AND "Source"."source_Value" IS NOT NULL OR
+Target."Value" IS NOT NULL AND "Source"."source_Value" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

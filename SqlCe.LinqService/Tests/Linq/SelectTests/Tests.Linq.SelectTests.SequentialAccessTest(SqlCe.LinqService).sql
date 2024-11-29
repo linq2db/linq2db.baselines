@@ -4,7 +4,9 @@
 SELECT
 	[p].[FirstName],
 	[p].[PersonID] as [ID],
-	[p].[LastName]
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[FirstName] + ' ' + [p].[LastName] as [c1]
 FROM
 	[Person] [p]
 

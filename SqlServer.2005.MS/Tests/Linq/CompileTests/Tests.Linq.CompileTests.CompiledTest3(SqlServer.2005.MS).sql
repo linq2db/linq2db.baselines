@@ -2,8 +2,6 @@
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p Int -- Int32
 SET     @p = 1
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
 
 SELECT TOP (@p)
 	[c_1].[ParentID],
@@ -11,14 +9,12 @@ SELECT TOP (@p)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID
+	[c_1].[ParentID] = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @p Int -- Int32
 SET     @p = 2
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 2
 
 SELECT TOP (@p)
 	[c_1].[ParentID],
@@ -26,5 +22,5 @@ SELECT TOP (@p)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID
+	[c_1].[ParentID] = @p
 

@@ -11,7 +11,7 @@ FROM
 	"Person" p
 		OUTER APPLY (
 			SELECT
-				*
+				1 as "c1"
 			FROM
 				(
 					SELECT p."FirstName" AS "FirstName", 1 AS "PersonID", 'Janet' AS "LastName" FROM sys.dual

@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] || '1' IS NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] || '1' IS NULL
+	1 = 0
 

@@ -188,7 +188,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT SKIP 2 FIRST 5
@@ -209,11 +209,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.Value1
+	r.Value1
 FROM
-	Parent p
+	Parent r
 WHERE
-	p.ParentID >= 1000
+	r.ParentID >= 1000
 ORDER BY
-	p.ParentID
+	r.ParentID
 

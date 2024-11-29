@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."BoolValue" = FALSE
+	NOT "t"."BoolValue"
 

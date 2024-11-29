@@ -15,4 +15,6 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 3
+ORDER BY
+	[t2].[ChildID]
 

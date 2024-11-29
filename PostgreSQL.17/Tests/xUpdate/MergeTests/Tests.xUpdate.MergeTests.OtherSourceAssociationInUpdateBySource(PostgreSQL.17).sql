@@ -25,14 +25,11 @@ SET
 	"FirstName" = 'Updated',
 	"LastName" = (
 		SELECT
-			"a_Patient_1"."Diagnosis"
+			"a_Patient"."Diagnosis"
 		FROM
-			"Patient" "a_Patient",
-			"Person" "a_Person",
-			"Patient" "a_Patient_1"
+			"Patient" "a_Patient"
+				INNER JOIN "Person" "a_Person" ON "a_Patient"."PersonID" = "a_Person"."PersonID"
 		WHERE
-			"a_Person"."PersonID" = "a_Patient_1"."PersonID" AND
-			"a_Patient"."PersonID" = "a_Person"."PersonID" AND
 			"Target"."PersonID" = "a_Patient"."PersonID"
 	)
 

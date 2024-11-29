@@ -135,8 +135,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = 'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = 'Y'
 
 SELECT
 	"r"."Id",
@@ -198,8 +198,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 
@@ -215,8 +215,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = 'N'
+DECLARE @false_value Char(1) -- AnsiStringFixedLength
+SET     @false_value = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
 SET     @Bool3 = 'Y'
 
@@ -266,8 +266,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = 'N'
+DECLARE @false_value Char(1) -- AnsiStringFixedLength
+SET     @false_value = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
 SET     @Bool2 = 'Y'
 
@@ -335,8 +335,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = 'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = 'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
 SET     @Bool2 = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -354,8 +354,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = 'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength

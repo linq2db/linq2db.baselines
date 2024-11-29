@@ -53,11 +53,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = 11
+DECLARE @Value Int -- Int32
+SET     @Value = 11
 
 SELECT
-	CAST(DateAdd(year, @p, [t].[TransactionDate]) AS Date)
+	CAST(DateAdd(year, @Value, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

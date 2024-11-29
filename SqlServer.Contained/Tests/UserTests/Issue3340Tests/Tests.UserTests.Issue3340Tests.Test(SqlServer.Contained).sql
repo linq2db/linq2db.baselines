@@ -1,0 +1,29 @@
+﻿BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [SampleTable]
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+IF (OBJECT_ID(N'[SampleTable]', N'U') IS NULL)
+	CREATE TABLE [SampleTable]
+	(
+		[Object] NVarChar(Max)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'test'
+
+UPDATE
+	[SampleTable]
+SET
+	[Object] = JSON_MODIFY([SampleTable].[Object], N'$.Sample', @p)
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [SampleTable]
+

@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	DateAdd(Month, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue")
+	DateAdd(Month, "t"."SmallIntValue", "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

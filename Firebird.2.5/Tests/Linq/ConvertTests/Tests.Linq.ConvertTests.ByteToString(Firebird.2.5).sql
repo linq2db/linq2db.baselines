@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	CAST("p".ID AS SmallInt)
+	"p".ID
 FROM
 	"LinqDataTypes" "p"
 WHERE

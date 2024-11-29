@@ -4,20 +4,20 @@
 WITH CTE_1 AS
 (
 	SELECT
-		1 as Id,
-		11 as Value_1
+		toInt32(1) as Id,
+		toInt32(11) as Value_1
 	UNION ALL
 	SELECT
-		2 as Id,
-		22 as Value_1
+		toInt32(2) as Id,
+		toInt32(22) as Value_1
 	UNION ALL
 	SELECT
-		3 as Id,
-		33 as Value_1
+		toInt32(3) as Id,
+		toInt32(33) as Value_1
 	UNION ALL
 	SELECT
-		4 as Id,
-		44 as Value_1
+		toInt32(4) as Id,
+		toInt32(44) as Value_1
 )
 SELECT
 	t1.Id,

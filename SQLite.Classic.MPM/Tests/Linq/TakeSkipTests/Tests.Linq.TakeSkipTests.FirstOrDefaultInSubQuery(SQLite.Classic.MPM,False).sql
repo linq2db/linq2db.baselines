@@ -59,13 +59,13 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[BatchId],
+	[t1].[Id],
 	[t1].[Date_1],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
-			[x].[Id] as [BatchId],
+			[x].[Id],
 			(
 				SELECT
 					[a_Confirmations].[Date]
@@ -83,7 +83,7 @@ FROM
 		LIMIT 2
 	) [t1]
 ORDER BY
-	[t1].[BatchId]
+	[t1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

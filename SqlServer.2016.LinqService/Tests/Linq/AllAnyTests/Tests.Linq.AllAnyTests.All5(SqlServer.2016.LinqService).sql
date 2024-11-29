@@ -6,7 +6,7 @@ SET     @n = 3
 SELECT
 	IIF(NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Child] [c_1]
 		WHERE

@@ -40,8 +40,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John0'
 
 SELECT
 	"p"."FirstName",
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
@@ -89,8 +89,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John1'
 
 SELECT
 	"p"."FirstName",
@@ -101,7 +101,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

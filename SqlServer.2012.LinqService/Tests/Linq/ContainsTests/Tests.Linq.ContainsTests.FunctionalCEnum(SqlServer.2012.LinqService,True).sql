@@ -70,69 +70,69 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @CEnum VarChar(20) -- AnsiString
-SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(20) -- AnsiString
-SET     @CEnum_1 = N'___Value4___'
+DECLARE @In VarChar(20) -- AnsiString
+SET     @In = N'___Value3___'
+DECLARE @In_1 VarChar(20) -- AnsiString
+SET     @In_1 = N'___Value4___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @CEnum VarChar(20) -- AnsiString
-SET     @CEnum = N'___Value3___'
+DECLARE @In VarChar(20) -- AnsiString
+SET     @In = N'___Value3___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL)
+	([s].[CEnum] IN (@In) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @CEnum VarChar(20) -- AnsiString
-SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(20) -- AnsiString
-SET     @CEnum_1 = N'___Value2___'
+DECLARE @In VarChar(20) -- AnsiString
+SET     @In = N'___Value3___'
+DECLARE @In_1 VarChar(20) -- AnsiString
+SET     @In_1 = N'___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @CEnum VarChar(20) -- AnsiString
-SET     @CEnum = N'___Value2___'
+DECLARE @NotIn VarChar(20) -- AnsiString
+SET     @NotIn = N'___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@NotIn) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @CEnum VarChar(20) -- AnsiString
-SET     @CEnum = N'___Value3___'
-DECLARE @CEnum_1 VarChar(20) -- AnsiString
-SET     @CEnum_1 = N'___Value2___'
+DECLARE @NotIn VarChar(20) -- AnsiString
+SET     @NotIn = N'___Value3___'
+DECLARE @NotIn_1 VarChar(20) -- AnsiString
+SET     @NotIn_1 = N'___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
+	([s].[CEnum] NOT IN (@NotIn, @NotIn_1) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- SqlServer.2012

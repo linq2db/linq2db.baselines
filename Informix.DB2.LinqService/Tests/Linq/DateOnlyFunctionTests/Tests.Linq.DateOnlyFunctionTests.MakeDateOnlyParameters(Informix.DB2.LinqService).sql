@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Mdy(t.ID, 1, 2010)
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			Mdy(p.ID, 1, 2010) as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	Year(Mdy(t.ID, 1, 2010)) = 2010
+	Year(t.c1) = 2010
 

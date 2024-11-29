@@ -10,7 +10,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Child" t
 				LEFT JOIN "Parent" i ON t."ParentID" = i."ParentID"

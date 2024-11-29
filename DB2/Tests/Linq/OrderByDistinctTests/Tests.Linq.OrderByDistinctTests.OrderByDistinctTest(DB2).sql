@@ -76,8 +76,6 @@ FROM
 	"OrderByDistinctData" "x"
 GROUP BY
 	"x"."DuplicateData"
-ORDER BY
-	MAX("x"."OrderData1")
 OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -102,8 +100,6 @@ FROM
 	"OrderByDistinctData" "x"
 GROUP BY
 	"x"."DuplicateData"
-ORDER BY
-	MIN("x"."OrderData1") DESC
 OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute

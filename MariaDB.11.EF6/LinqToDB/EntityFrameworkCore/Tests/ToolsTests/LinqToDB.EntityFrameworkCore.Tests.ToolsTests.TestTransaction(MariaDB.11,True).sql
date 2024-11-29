@@ -6,3 +6,25 @@ FROM `Products` AS `p`
 WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AND (`p`.`ProductName` LIKE 'U%')
 
 
+--  MariaDB.10.MySqlConnector MySql (asynchronously)
+
+SELECT
+	MAX(`e`.`QuantityPerUnit`)
+FROM
+	`Products` `e`
+WHERE
+	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND `e`.`ProductName` LIKE 'U%' ESCAPE '~'
+
+
+
+--  MariaDB.10.MySqlConnector MySql
+
+DELETE  
+FROM
+	`Products`
+WHERE
+	(`Products`.`IsDeleted` = 0 OR `Products`.`IsDeleted` = 0) AND
+	`Products`.`ProductName` = 'a'
+
+
+

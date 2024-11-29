@@ -86,7 +86,7 @@ WHERE
 	`t`.`Int` > 0 AND (`t`.`Str`, `t`.`Double`, `t`.`Bool`) = ('One', 1, 1) AND
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`Mixed` `u`
 		WHERE

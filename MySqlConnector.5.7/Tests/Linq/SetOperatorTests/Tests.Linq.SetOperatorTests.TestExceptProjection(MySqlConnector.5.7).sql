@@ -48,7 +48,7 @@ FROM
 WHERE
 	`r`.`Id` % 2 = 0 AND NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`SampleData` `r_1`
 		WHERE
@@ -56,7 +56,7 @@ WHERE
 	) AND
 	NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`SampleData` `r_2`
 		WHERE

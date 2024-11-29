@@ -42,8 +42,7 @@ SELECT
 	person_1."PersonID",
 	person_1."LastName",
 	person_1."MiddleName",
-	person_1."Gender",
-	1
+	person_1."Gender"
 FROM
 	"Person" person_1
 WHERE

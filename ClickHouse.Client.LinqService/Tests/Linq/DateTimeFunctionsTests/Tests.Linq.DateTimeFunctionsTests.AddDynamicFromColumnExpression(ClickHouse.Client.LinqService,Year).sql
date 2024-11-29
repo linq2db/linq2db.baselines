@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addYears(t.DateTimeValue, (toInt32(t.SmallIntValue) + toInt16(4)) - 4)
+	addYears(t.DateTimeValue, toInt32(t.SmallIntValue))
 FROM
 	LinqDataTypes t
 

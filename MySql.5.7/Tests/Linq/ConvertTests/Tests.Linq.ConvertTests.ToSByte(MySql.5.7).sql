@@ -2,14 +2,9 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`p_1`.`c1`
+	`p`.`MoneyValue`
 FROM
-	(
-		SELECT
-			CAST(Floor(`p`.`MoneyValue`) AS SIGNED) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `p_1`
+	`LinqDataTypes` `p`
 WHERE
-	`p_1`.`c1` > 0
+	CAST(Floor(`p`.`MoneyValue`) AS SIGNED) > 0
 

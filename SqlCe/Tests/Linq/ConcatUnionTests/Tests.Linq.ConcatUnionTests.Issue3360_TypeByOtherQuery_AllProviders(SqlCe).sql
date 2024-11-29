@@ -25,7 +25,7 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[Id],
-	'str' as [Str]
+	CAST('str' AS NVarChar) as [Str]
 FROM
 	[Issue3360Table] [p_1]
 
@@ -34,7 +34,7 @@ BeforeExecute
 
 SELECT
 	[p].[Id],
-	'str' as [Str]
+	CAST('str' AS NVarChar) as [Str]
 FROM
 	[Issue3360Table] [p]
 UNION ALL

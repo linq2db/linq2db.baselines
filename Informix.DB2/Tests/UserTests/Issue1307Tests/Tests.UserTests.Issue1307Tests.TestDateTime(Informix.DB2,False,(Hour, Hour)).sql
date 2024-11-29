@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input
+	@input::datetime Hour to Hour
 )
 
 BeforeExecute

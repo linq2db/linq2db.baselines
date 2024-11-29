@@ -2,8 +2,8 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @OrderDate DateTime2
-SET     @OrderDate = DATETIME2FROMPARTS(1997, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @p DateTime2
+SET     @p = DATETIME2FROMPARTS(1997, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT TOP (@take)
 	[o].[OrderID],
@@ -23,7 +23,7 @@ SELECT TOP (@take)
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderDate] > @OrderDate
+	[o].[OrderDate] > @p
 ORDER BY
 	[o].[OrderDate],
 	[o].[OrderID]

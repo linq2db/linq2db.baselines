@@ -2,12 +2,11 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`x`.`PersonID`,
-	`y`.`value__`
+	`x`.`PersonID` + `y`.`item`
 FROM
 	`Person` `x`
 		CROSS JOIN (
-			SELECT 1 AS `value__`
+			SELECT 1 AS `item`
 			UNION ALL
 			SELECT 3) `y`
 

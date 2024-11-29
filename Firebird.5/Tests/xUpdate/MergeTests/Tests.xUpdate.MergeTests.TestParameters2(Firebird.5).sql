@@ -254,11 +254,11 @@ USING (
 (
 	"source_Id"
 )
-ON (("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4))
+ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4)
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = CAST(@Val3 AS Int) THEN UPDATE
 SET
 	"Field4" = CAST(@Val5 AS Int)
 
-WHEN NOT MATCHED BY SOURCE AND ("Target"."Field3" <> CAST(@Val2 AS Int) OR "Target"."Field3" IS NULL) THEN DELETE
+WHEN NOT MATCHED BY SOURCE AND "Target"."Field3" <> CAST(@Val2 AS Int) OR "Target"."Field3" IS NULL THEN DELETE
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p VarChar(3) -- String
-SET     @p = '123'
 
 SELECT
 	p.PersonID,
@@ -10,5 +8,5 @@ FROM
 	Person p
 WHERE
 	p.PersonID = 1 AND 1 = CharIndex('321', Reverse(Substr('123' || p.FirstName || '0123451234', 6, 6))) AND
-	(CharIndex(@p, Substr('123' || p.FirstName || '0123451234', 1, 11), 6) <> 0 OR CharIndex(@p, Substr('123' || p.FirstName || '0123451234', 1, 11), 6) IS NULL)
+	CharIndex('123', Substr('123' || p.FirstName || '0123451234', 1, 11), 6) <> 0
 

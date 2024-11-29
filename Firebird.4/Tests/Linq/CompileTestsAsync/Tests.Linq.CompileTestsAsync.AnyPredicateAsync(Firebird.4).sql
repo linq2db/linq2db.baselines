@@ -41,18 +41,18 @@ SELECT 10 FROM rdb$database
 
 BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"AsyncDataTable" "c_1"
 			WHERE
-				"c_1"."Id" = @Id
+				"c_1"."Id" = @p
 		)
 			THEN TRUE
 		ELSE FALSE

@@ -2,7 +2,7 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	0,
+	CAST(0 AS Int),
 	t1."ParentID",
 	t1."ParentID",
 	t1."ChildID"
@@ -22,7 +22,7 @@ WHERE
 	p."ParentID" = 1
 UNION ALL
 SELECT
-	1,
+	CAST(1 AS Int),
 	NULL,
 	NULL,
 	NULL

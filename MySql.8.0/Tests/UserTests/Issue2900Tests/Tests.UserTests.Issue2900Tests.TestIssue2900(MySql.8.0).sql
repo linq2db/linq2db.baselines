@@ -34,14 +34,17 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t1`.`not_null`,
+	`t1`.`HasValue`,
 	`t1`.`Value_1`
 FROM
 	`Request` `a`
 		LEFT JOIN LATERAL (
 			SELECT
 				`a_Metrics`.`Value` as `Value_1`,
-				1 as `not_null`
+				CASE
+					WHEN `a_Metrics`.`Value` IS NOT NULL THEN 1
+					ELSE 0
+				END as `HasValue`
 			FROM
 				`Metric` `a_Metrics`
 			WHERE

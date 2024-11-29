@@ -51,7 +51,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Child" "c_1"
 				LEFT JOIN "Parent" "a_Parent" ON "c_1"."ParentID" = "a_Parent"."ParentID"
@@ -65,13 +65,13 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ChildID Integer -- Int32
-SET     @ChildID = 1002
+DECLARE @p Integer -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ChildID" = @ChildID
+	"c_1"."ChildID" = @p
 

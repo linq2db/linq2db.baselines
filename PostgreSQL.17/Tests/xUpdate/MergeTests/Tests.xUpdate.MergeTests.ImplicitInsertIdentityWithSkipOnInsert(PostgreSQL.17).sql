@@ -36,7 +36,7 @@ USING (VALUES
 (
 	"source_Field"
 )
-ON (("Target"."Field" = "Source"."source_Field" OR "Target"."Field" IS NULL AND "Source"."source_Field" IS NULL))
+ON ("Target"."Field" = "Source"."source_Field" OR "Target"."Field" IS NULL AND "Source"."source_Field" IS NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

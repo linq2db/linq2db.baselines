@@ -204,7 +204,7 @@ FROM
 	"Tag" ft
 		FULL JOIN "Fact" f ON ft."FactId" = f."Id"
 WHERE
-	(f."Id" > 3 OR ft."FactId" > 3)
+	f."Id" > 3 OR ft."FactId" > 3
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

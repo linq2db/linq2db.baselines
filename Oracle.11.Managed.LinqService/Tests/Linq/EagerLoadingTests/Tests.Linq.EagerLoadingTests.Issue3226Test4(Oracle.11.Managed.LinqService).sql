@@ -49,9 +49,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "ItemValue"
 		(
-			"Id"     Int     NOT NULL,
-			"ItemId" Int     NOT NULL,
-			"Value"  Decimal NOT NULL
+			"Id"     Int             NOT NULL,
+			"ItemId" Int             NOT NULL,
+			"Value"  Decimal(28, 10) NOT NULL
 		)
 	';
 EXCEPTION

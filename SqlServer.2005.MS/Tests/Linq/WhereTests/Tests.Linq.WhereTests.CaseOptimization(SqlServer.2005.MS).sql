@@ -35,7 +35,7 @@ SELECT
 FROM
 	[WhereWithString] [x]
 WHERE
-	[x].[StringValue] LIKE N'%Str%' ESCAPE N'~'
+	[x].[StringValue] LIKE N'%Str%' ESCAPE N'~' AND [x].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -6,12 +6,11 @@ UPDATE
 SET
 	[u].[BoolValue] = IIF(NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Parent] [x_1]
 		WHERE
-			[t1].[ID] IS NOT NULL AND [t1].[ID] = [x_1].[ParentID] AND
-			([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+			[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
 	), 1, 0)
 FROM
 	[LinqDataTypes] [u],

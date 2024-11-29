@@ -75,7 +75,10 @@ SELECT
 FROM
 	"Issue2431Table" r
 WHERE
-	r."Json"::json #>> '{json, text}' = 'test'
+	CASE
+		WHEN r."Json"::json #>> '{json, text}' = 'test' THEN True
+		ELSE False
+	END
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

@@ -39,7 +39,7 @@ SELECT
 FROM
 	`Ints` `i`
 WHERE
-	`i`.`One` IS NULL AND `i`.`Two` IS NULL AND `i`.`Three` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -49,7 +49,7 @@ SELECT
 FROM
 	`Ints` `i`
 WHERE
-	`i`.`One` IS NULL AND `i`.`Nil` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

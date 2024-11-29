@@ -17,7 +17,8 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(lowerUTF8(p.FirstName), 'joh') AND p.PersonID = 1
+	startsWith(lowerUTF8(p.FirstName), 'joh') = true AND
+	p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -27,5 +28,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	NOT startsWith(lowerUTF8(p.FirstName), 'joh') AND p.PersonID = 1
+	(startsWith(lowerUTF8(p.FirstName), 'joh') = false OR startsWith(lowerUTF8(p.FirstName), 'joh') IS NULL) AND
+	p.PersonID = 1
 

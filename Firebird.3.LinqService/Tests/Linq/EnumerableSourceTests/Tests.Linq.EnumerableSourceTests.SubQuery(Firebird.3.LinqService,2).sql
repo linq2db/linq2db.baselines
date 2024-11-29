@@ -69,7 +69,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT 3 AS "Id", CAST('Janet' AS VARCHAR(5)) AS "Value" FROM rdb$database

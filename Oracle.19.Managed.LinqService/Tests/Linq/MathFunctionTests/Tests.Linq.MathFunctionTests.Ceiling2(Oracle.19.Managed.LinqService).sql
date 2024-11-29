@@ -2,14 +2,14 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t_1."c1"
+	t."c1"
 FROM
 	(
 		SELECT
-			Ceil(t."MoneyValue") as "c1"
+			Ceil(p."MoneyValue") as "c1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1."c1" <> 0
+	t."c1" <> 0
 

@@ -5,11 +5,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Person" t1
 			WHERE
-				(1 = 1) <> ((t1."MiddleName" <> t1."LastName" OR t1."MiddleName" IS NULL))
+				(1 = 1) <> (t1."MiddleName" <> t1."LastName" OR t1."MiddleName" IS NULL)
 		)
 			THEN True
 		ELSE False

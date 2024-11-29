@@ -2,15 +2,15 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"t1"."PersonID",
+	"p"."PersonID",
 	"pt"."PersonID",
 	"d"."Taxonomy"
 FROM
-	"Person" "t1"
+	"Person" "p"
 		CROSS JOIN "Patient" "pt"
 		CROSS JOIN "Doctor" "d"
 ORDER BY
-	"t1"."PersonID",
+	"p"."PersonID",
 	"pt"."PersonID",
 	"d"."Taxonomy"
 

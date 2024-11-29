@@ -231,7 +231,7 @@ USING (
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON ((Target."Id" = "Source"."source_Id" OR "Source"."source_Field2" IS NOT NULL))
+ON (Target."Id" = "Source"."source_Id" OR "Source"."source_Field2" IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

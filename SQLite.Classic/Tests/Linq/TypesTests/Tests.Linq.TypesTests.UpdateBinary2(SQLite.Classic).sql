@@ -2,29 +2,29 @@
 -- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
-DECLARE @ID  -- Int32
-SET     @ID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 UPDATE
 	[LinqDataTypes]
 SET
 	[BinaryValue] = @BinaryValue
 WHERE
-	[LinqDataTypes].[ID] = @ID
+	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 UPDATE
 	[LinqDataTypes]
 SET
 	[BinaryValue] = @BinaryValue
 WHERE
-	[LinqDataTypes].[ID] = @ID
+	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
 -- SQLite.Classic SQLite

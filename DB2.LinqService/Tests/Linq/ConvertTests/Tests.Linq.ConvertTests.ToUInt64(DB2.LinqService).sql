@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p_1"."c1"
+	"p"."MoneyValue"
 FROM
-	(
-		SELECT
-			CAST(Floor("p"."MoneyValue") AS Decimal) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "p_1"
+	"LinqDataTypes" "p"
 WHERE
-	"p_1"."c1" > 0
+	CAST(Floor("p"."MoneyValue") AS Decimal) > 0
 

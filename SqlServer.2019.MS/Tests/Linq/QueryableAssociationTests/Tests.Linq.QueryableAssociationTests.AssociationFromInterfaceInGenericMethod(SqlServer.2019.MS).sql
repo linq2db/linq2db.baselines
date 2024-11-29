@@ -24,7 +24,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[TreeItem] [a_Children]
 		WHERE

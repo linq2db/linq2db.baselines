@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input
+	@input::datetime Month to fraction(5)
 )
 
 BeforeExecute

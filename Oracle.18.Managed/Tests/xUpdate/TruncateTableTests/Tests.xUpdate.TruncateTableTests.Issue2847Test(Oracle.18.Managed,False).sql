@@ -1,0 +1,116 @@
+﻿BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TestIdTrun"
+		(
+			ID       Int              NOT NULL,
+			"Field1" Decimal(28, 10)  NOT NULL,
+
+			CONSTRAINT "PK_TestIdTrun" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE SEQUENCE "SIDENTITY_TestIdTrun"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+CREATE OR REPLACE TRIGGER "TIDENTITY_TestIdTrun"
+BEFORE INSERT ON "TestIdTrun" FOR EACH ROW
+BEGIN
+	SELECT "SIDENTITY_TestIdTrun".NEXTVAL INTO :NEW.ID FROM dual;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+DROP SEQUENCE "SIDENTITY_TestIdTrun"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+TRUNCATE TABLE "TestIdTrun"
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "TestIdTrun"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+

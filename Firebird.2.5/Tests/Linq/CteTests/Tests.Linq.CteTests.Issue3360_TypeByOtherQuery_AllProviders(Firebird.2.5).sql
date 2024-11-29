@@ -36,7 +36,7 @@ AS
 	UNION ALL
 	SELECT
 		"t1"."Id",
-		'Str'
+		CAST('Str' AS VarChar(255) CHARACTER SET UNICODE_FSS)
 	FROM
 		"cte" "t1",
 		"Issue3360Table" "r"

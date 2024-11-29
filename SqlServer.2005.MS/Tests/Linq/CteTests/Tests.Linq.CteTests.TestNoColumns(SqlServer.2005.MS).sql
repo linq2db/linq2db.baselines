@@ -9,12 +9,11 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-WITH [CTE1_] ([ParentID], [ChildID])
+WITH [CTE1_] ([unused])
 AS
 (
 	SELECT
-		[t1].[ParentID],
-		[t1].[ChildID]
+		1
 	FROM
 		[Child] [t1]
 )
@@ -26,11 +25,11 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-WITH [CTE1_] ([C_ChildID])
+WITH [CTE1_] ([unused])
 AS
 (
 	SELECT
-		[c_1].[ChildID]
+		1
 	FROM
 		[Child] [c_1]
 )
@@ -42,10 +41,11 @@ FROM
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-WITH [CTE1_] AS
+WITH [CTE1_] ([unused])
+AS
 (
 	SELECT
-		*
+		1
 	FROM
 		[Child] [c_1]
 )
@@ -53,7 +53,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[CTE1_] [t1]
 		)

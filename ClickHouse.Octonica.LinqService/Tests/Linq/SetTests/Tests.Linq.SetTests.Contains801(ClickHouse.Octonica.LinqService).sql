@@ -2,7 +2,6 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	2,
 	ch.ChildID,
 	gc.GrandChildID
 FROM

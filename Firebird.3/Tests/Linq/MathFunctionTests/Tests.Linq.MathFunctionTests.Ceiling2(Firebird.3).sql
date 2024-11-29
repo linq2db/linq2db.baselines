@@ -2,14 +2,14 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"t_1"."c1"
+	"t"."c1"
 FROM
 	(
 		SELECT
-			Ceiling("t"."MoneyValue") as "c1"
+			Ceiling("p"."MoneyValue") as "c1"
 		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	"t_1"."c1" <> 0
+	"t"."c1" <> 0
 

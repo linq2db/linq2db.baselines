@@ -12,7 +12,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT 'John'::NVarChar(255) AS "item" FROM table(set{1})

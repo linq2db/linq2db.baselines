@@ -249,6 +249,8 @@ FROM
 		FROM
 			"DistinctOrderByTable" "t1"
 	) "t2"
+ORDER BY
+	"t2".F1
 
 BeforeExecute
 -- Firebird.2.5 Firebird

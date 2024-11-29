@@ -19,5 +19,5 @@ SELECT TOP (1)
 FROM
 	[Orders] [o]
 WHERE
-	(Abs([o].[OrderID]) = 10 OR [o].[OrderID] > 0)
+	Abs([o].[OrderID]) = 10 OR [o].[OrderID] > 0
 

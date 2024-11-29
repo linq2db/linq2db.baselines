@@ -13,7 +13,7 @@ VALUES
 	N'InsertDefault',
 	DEFAULT,
 	N'InsertDefault',
-	N'M'
+	'M'
 )
 
 BeforeExecute

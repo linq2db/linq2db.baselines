@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	0,
+	0::Int,
 	t1.ParentID,
 	t1.ParentID,
 	t1.ChildID
@@ -12,15 +12,16 @@ FROM
 			SELECT
 				a_Children.ParentID,
 				a_Children.ChildID,
-				ROW_NUMBER() OVER (PARTITION BY a_Children.ParentID ORDER BY a_Children.ParentID) as rn
+				ROW_NUMBER() OVER (PARTITION BY a_Children.ParentID ORDER BY a_Children.ParentID) as rn,
+				a_Children.ParentID as ParentID_1
 			FROM
 				Child a_Children
-		) t1 ON p.ParentID = t1.ParentID AND t1.rn <= 1
+		) t1 ON p.ParentID = t1.ParentID_1 AND t1.rn <= 1
 WHERE
 	p.ParentID = 1
 UNION ALL
 SELECT
-	1,
+	1::Int,
 	NULL::Int,
 	NULL::Int,
 	NULL::Int

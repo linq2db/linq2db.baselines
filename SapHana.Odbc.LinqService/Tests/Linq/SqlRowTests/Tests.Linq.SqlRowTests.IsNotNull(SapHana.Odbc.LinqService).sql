@@ -57,9 +57,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Ints" "i"
-WHERE
-	"i"."One" IS NOT NULL AND "i"."Two" IS NOT NULL AND
-	"i"."Three" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

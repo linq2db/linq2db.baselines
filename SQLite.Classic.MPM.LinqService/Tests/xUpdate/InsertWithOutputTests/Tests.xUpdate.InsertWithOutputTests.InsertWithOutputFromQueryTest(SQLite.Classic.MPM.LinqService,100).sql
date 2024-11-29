@@ -252,8 +252,6 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @param_1  -- Int32
-SET     @param_1 = 100
 
 INSERT INTO [DestinationTable]
 (
@@ -264,7 +262,7 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || @param_1
+	[s].[ValueStr] || @param
 FROM
 	[TableWithData] [s]
 WHERE
@@ -278,13 +276,11 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @param_1  -- Int32
-SET     @param_1 = 100
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || @param_1
+	[s].[ValueStr] || @param
 FROM
 	[TableWithData] [s]
 WHERE

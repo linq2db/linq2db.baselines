@@ -208,7 +208,29 @@ FROM
 	"SampleClass" t1
 		INNER JOIN "SampleClass" t2 ON t2."Id" <> t1."Id"
 WHERE
-	(t1."StrArray" > t2."StrArray" OR t1."StrArray" > t2."StrArray" OR t1."StrArray" @> t2."StrArray" OR t1."StrArray" <@ t2."StrArray" OR t1."StrArray" && t2."StrArray" OR t1."IntValue" = ANY(t2."IntArray") OR t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray") OR t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray") OR t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(t2."IntArray") OR t1."IntValue" < ANY(t2."IntArray") OR t1."IntValue" <= ANY(t2."IntArray") OR t1."IntValue" > ANY(t2."IntArray") OR t1."IntValue" >= ANY(t2."IntArray") OR t1."IntValue" <> ANY(t2."IntArray") OR t1."IntValue" = ANY(:arr) OR t1."IntValue" < ANY(:arr) OR t1."IntValue" <= ANY(:arr) OR t1."IntValue" > ANY(:arr) OR t1."IntValue" >= ANY(:arr) OR t1."IntValue" <> ANY(:arr))
+	t1."StrArray" > t2."StrArray" OR
+	t1."StrArray" > t2."StrArray" OR
+	t1."StrArray" @> t2."StrArray" OR
+	t1."StrArray" <@ t2."StrArray" OR
+	t1."StrArray" && t2."StrArray" OR
+	t1."IntValue" = ANY(t2."IntArray") OR
+	t1."IntValue" < ANY(t2."IntArray") OR
+	t1."IntValue" <= ANY(t2."IntArray") OR
+	t1."IntValue" > ANY(t2."IntArray") OR
+	t1."IntValue" >= ANY(t2."IntArray") OR
+	t1."IntValue" <> ANY(t2."IntArray") OR
+	t1."IntValue" = ANY(t2."IntArray") OR
+	t1."IntValue" < ANY(t2."IntArray") OR
+	t1."IntValue" <= ANY(t2."IntArray") OR
+	t1."IntValue" > ANY(t2."IntArray") OR
+	t1."IntValue" >= ANY(t2."IntArray") OR
+	t1."IntValue" <> ANY(t2."IntArray") OR
+	t1."IntValue" = ANY(:arr) OR
+	t1."IntValue" < ANY(:arr) OR
+	t1."IntValue" <= ANY(:arr) OR
+	t1."IntValue" > ANY(:arr) OR
+	t1."IntValue" >= ANY(:arr) OR
+	t1."IntValue" <> ANY(:arr)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

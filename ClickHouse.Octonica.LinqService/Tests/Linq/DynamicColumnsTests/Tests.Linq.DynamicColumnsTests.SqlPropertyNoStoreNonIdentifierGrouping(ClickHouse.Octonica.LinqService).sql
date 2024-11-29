@@ -51,7 +51,7 @@ BeforeExecute
 SELECT
 	g_1.`Not Identifier`,
 	COUNT(*),
-	sumOrNull(g_1.`Some Value`)
+	sum(g_1.`Some Value`)
 FROM
 	DynamicTable g_1
 GROUP BY

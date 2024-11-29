@@ -61,13 +61,12 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Tagging] [t_1]
 				INNER JOIN [Tag] [t] ON [t_1].[TagId] = [t].[Id]
 		WHERE
-			[t_1].[TaggableType] = N'Issue' AND [t].[Name] = N'Visu' AND
-			[t_1].[TaggableId] = [i].[Id]
+			[t].[Name] = N'Visu' AND [t_1].[TaggableId] = [i].[Id]
 	)
 
 BeforeExecute

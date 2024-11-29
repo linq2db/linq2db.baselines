@@ -39,7 +39,8 @@ SELECT 6,NULL FROM rdb$database UNION ALL
 SELECT 7,'String7' FROM rdb$database UNION ALL
 SELECT 8,'String8' FROM rdb$database UNION ALL
 SELECT 9,NULL FROM rdb$database UNION ALL
-SELECT 10,'String10' FROM rdb$database
+SELECT 10,'String10' FROM rdb$database UNION ALL
+SELECT 11,'-1' FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird

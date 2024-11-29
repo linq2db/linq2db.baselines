@@ -120,10 +120,8 @@ FROM
 		FROM
 			(
 				SELECT
-					N'Roman' as [BookType],
-					[a_Book].[BookId],
-					NULL as [c1],
-					NULL as [c2]
+					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					[a_Book].[BookId]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -132,10 +130,8 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					N'Novel' as [BookType],
-					NULL as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2]
+					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					NULL as [BookId]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -154,21 +150,17 @@ BeforeExecute
 
 SELECT
 	[m_1].[c1],
-	[m_1].[c2],
 	[d_1].[AuthorId],
 	[d_1].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[c1],
-			[t3].[c2]
+			[t3].[c1]
 		FROM
 			(
 				SELECT
-					N'Roman' as [BookType],
-					[a_Book].[BookId],
-					NULL as [c1],
-					NULL as [c2]
+					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					NULL as [c1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -177,10 +169,8 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					N'Novel' as [BookType],
-					NULL as [BookId],
-					[a_Book_1].[BookId] as [c1],
-					[a_Book_1].[BookId] as [c2]
+					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					[a_Book_1].[BookId] as [c1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -199,7 +189,7 @@ FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 			WHERE
-				[d].[FkBookId] = [m_1].[c1] AND [m_1].[c2] IS NOT NULL
+				[d].[FkBookId] = [m_1].[c1]
 		) [d_1]
 
 BeforeExecute
@@ -208,9 +198,8 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	N'Roman',
+	CAST(N'Roman' AS NVarChar(4000)),
 	[a_Book].[BookId],
-	NULL,
 	NULL
 FROM
 	[Author] [t1]
@@ -220,9 +209,8 @@ WHERE
 	[a_Book].[Discriminator] = N'Roman'
 UNION ALL
 SELECT
-	N'Novel',
+	CAST(N'Novel' AS NVarChar(4000)),
 	NULL,
-	[a_Book_1].[BookId],
 	[a_Book_1].[BookId]
 FROM
 	[Author] [t2]

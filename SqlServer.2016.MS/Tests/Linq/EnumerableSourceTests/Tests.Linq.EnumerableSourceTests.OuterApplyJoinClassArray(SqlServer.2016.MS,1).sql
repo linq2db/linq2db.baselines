@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 		OUTER APPLY (
 			SELECT
-				*
+				1 as [c1]
 			FROM
 				(VALUES
 					([p].[FirstName],1,N'Janet'), (NULL,2,N'Doe')

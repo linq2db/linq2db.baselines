@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t_1.c1
+	t.c1
 FROM
 	(
 		SELECT
-			Floor(((Exp(t.MoneyValue::Float / 15) + Exp(-(t.MoneyValue::Float / 15))) / 2) * 15) as c1
+			Floor(((Exp(p.MoneyValue::Float / 15) + Exp(-(p.MoneyValue::Float / 15))) / 2) * 15) as c1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> 0.10000000000000001
+	t.c1 <> 0.10000000000000001
 

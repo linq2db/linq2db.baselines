@@ -36,4 +36,6 @@ FROM
 	) [t4]
 WHERE
 	[t4].[RN] > @skip_1
+ORDER BY
+	[t4].[ChildID]
 

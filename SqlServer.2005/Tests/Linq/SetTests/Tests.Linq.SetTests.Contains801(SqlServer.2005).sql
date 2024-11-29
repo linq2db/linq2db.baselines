@@ -2,7 +2,6 @@
 -- SqlServer.2005
 
 SELECT
-	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

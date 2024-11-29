@@ -15,7 +15,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[p].[FirstName] as [Name],
+	[p].[FirstName],
 	[p].[PersonID] as [ID]
 FROM
 	[Person] [p]

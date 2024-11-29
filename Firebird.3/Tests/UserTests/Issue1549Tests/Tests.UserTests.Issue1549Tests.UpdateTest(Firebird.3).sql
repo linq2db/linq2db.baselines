@@ -130,7 +130,7 @@ EXECUTE BLOCK AS BEGIN
 				"DevSerNum"        VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
 				"devid"            VarChar(50) CHARACTER SET UNICODE_FSS,
 				"tsdevice"         TimeStamp                              NOT NULL,
-				"value"            Decimal                                NOT NULL,
+				"value"            Decimal(18, 10)                        NOT NULL,
 				"Devtypeid"        Int,
 				"DevReadingTypeId" Int,
 				"ReadingTypeName"  VarChar(50) CHARACTER SET UNICODE_FSS,
@@ -181,7 +181,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"billing_TempReading" "tr"
 				INNER JOIN "billing_DevReadType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"

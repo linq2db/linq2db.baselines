@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[g_1].[ParentID]
+	[pmp].[ParentID] as [Key_1]
 FROM
-	[Child] [g_1]
+	[Child] [pmp]
 GROUP BY
-	[g_1].[ParentID]
+	[pmp].[ParentID]
 
 BeforeExecute
 -- SqlCe

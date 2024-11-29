@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 104
+DECLARE @p Integer(4) -- Int32
+SET     @p = 104
 
 DELETE FROM
 	LinqDataTypes
 WHERE
-	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @Id
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -91,11 +91,11 @@ ORDER BY
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 104
+DECLARE @p Integer(4) -- Int32
+SET     @p = 104
 
 DELETE FROM
 	LinqDataTypes
 WHERE
-	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @Id
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 

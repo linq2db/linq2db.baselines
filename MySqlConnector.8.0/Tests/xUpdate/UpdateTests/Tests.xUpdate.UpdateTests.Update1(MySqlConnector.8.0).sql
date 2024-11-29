@@ -42,13 +42,13 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ParentID Int32
-SET     @ParentID = 1002
+DECLARE @p Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`p`.`ParentID` = @p
 

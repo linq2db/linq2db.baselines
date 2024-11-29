@@ -56,11 +56,11 @@ SET     @id = 3
 
 UPDATE
 	`MainTable` `a_MainRequired`,
-	`AssociatedTable` `pat`
+	`AssociatedTable` `p`
 SET
 	`a_MainRequired`.`Field` = 'test'
 WHERE
-	`pat`.`Id` = @id AND `pat`.`Id` = `a_MainRequired`.`Id`
+	`p`.`Id` = @id AND `p`.`Id` = `a_MainRequired`.`Id`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

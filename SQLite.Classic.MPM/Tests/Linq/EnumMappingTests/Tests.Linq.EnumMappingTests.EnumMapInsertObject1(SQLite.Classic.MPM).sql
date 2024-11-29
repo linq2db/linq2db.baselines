@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 102
+DECLARE @p  -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -38,11 +38,11 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 102
+DECLARE @p  -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 

@@ -233,7 +233,7 @@ USING (
 (
 	"source_Field1"
 )
-ON (("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL))
+ON ("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL)
 
 WHEN MATCHED THEN
 UPDATE

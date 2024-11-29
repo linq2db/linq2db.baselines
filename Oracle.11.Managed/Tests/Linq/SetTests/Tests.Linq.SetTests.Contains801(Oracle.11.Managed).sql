@@ -2,7 +2,6 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	2,
 	ch."ChildID",
 	gc."GrandChildID"
 FROM

@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			*
+			1 as "c1"
 		FROM
 			"Child" t1
 		OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 

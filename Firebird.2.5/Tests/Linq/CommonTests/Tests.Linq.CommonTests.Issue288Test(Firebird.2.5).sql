@@ -10,13 +10,13 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ID VarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p VarChar(4) -- String
+SET     @p = 'John'
 
 SELECT FIRST 1
 	"p"."FirstName"
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @ID
+	"p"."FirstName" = @p
 

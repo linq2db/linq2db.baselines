@@ -143,10 +143,10 @@ SELECT
 FROM
 	(
 		SELECT
-			q.Id as Id,
-			q.Value2 as Value2
+			t.Id as Id,
+			t.Value2 as Value2
 		FROM
-			ValueConversion q
+			ValueConversion t
 	) t1
 ORDER BY
 	t1.Id

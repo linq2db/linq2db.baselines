@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(lowerUTF8(r.CaseSensitive), 'testst')
+	startsWith(lowerUTF8(r.CaseSensitive), 'testst') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(lowerUTF8(r.CaseInsensitive), 'testst')
+	startsWith(lowerUTF8(r.CaseInsensitive), 'testst') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(lowerUTF8(r.CaseSensitive), 'testst')
+	startsWith(lowerUTF8(r.CaseSensitive), 'testst') = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(lowerUTF8(r.CaseInsensitive), 'testst')
+	startsWith(lowerUTF8(r.CaseInsensitive), 'testst') = true
 

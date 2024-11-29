@@ -39,8 +39,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @FirstName NVarChar(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p NVarChar(5) -- String
+SET     @p = 'John0'
 
 SELECT
 	"p"."FirstName",
@@ -87,8 +87,8 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @FirstName NVarChar(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p NVarChar(5) -- String
+SET     @p = 'John1'
 
 SELECT
 	"p"."FirstName",

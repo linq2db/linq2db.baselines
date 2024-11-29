@@ -3,8 +3,7 @@
 
 SELECT
 	CASE
-		WHEN "p"."FirstName" IS NULL OR Char_Length("p"."FirstName") = 0
-			THEN TRUE
+		WHEN Char_Length("p"."FirstName") = 0 THEN TRUE
 		ELSE FALSE
 	END
 FROM

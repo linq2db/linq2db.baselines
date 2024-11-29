@@ -9,11 +9,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[arg].[FirstName],
-	[arg].[MidName],
-	[arg].[LastName]
+	[result_1].[FirstName],
+	[result_1].[MidName],
+	[result_1].[LastName]
 FROM
-	[dataFTS] [arg]
+	[dataFTS] [result_1]
 WHERE
 	[dataFTS] match 'John*'
 
@@ -45,11 +45,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[arg].[FirstName],
-	[arg].[MidName],
-	[arg].[LastName]
+	[result_1].[FirstName],
+	[result_1].[MidName],
+	[result_1].[LastName]
 FROM
-	[dataFTS] [arg]
+	[dataFTS] [result_1]
 WHERE
 	[dataFTS] match 'John*'
 

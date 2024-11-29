@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	CAST([p].[MoneyValue] AS NVarChar(31))
+	Str_Replace(CAST([p].[MoneyValue] AS NVarChar(31)), ',', '.')
 FROM
 	[LinqDataTypes] [p]
 WHERE

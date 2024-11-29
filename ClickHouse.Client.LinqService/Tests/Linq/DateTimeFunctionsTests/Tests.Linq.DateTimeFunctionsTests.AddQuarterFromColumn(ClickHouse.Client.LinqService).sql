@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate(addQuarters(t.DateTimeValue, t.SmallIntValue))
+	toDate32(addQuarters(t.DateTimeValue, t.SmallIntValue))
 FROM
 	LinqDataTypes t
 

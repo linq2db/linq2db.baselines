@@ -7,9 +7,9 @@ SELECT
 FROM
 	Patient t1
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Person e,
 			(
@@ -20,9 +20,10 @@ WHERE
 			) t2
 		WHERE
 			e.FirstName LIKE '%John%' ESCAPE '~' AND e.PersonID = t2.PersonID
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			Person e_1,
 			(
@@ -33,7 +34,7 @@ WHERE
 			) t3
 		WHERE
 			e_1.FirstName LIKE '%Tester%' ESCAPE '~' AND e_1.PersonID = t3.PersonID
-	))
+	)
 ORDER BY
 	t1.PersonID
 

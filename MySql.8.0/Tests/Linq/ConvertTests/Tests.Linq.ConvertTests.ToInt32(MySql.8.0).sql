@@ -2,14 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`p_1`.`c1`
+	`p`.`MoneyValue`
 FROM
-	(
-		SELECT
-			CAST(Floor(`p`.`MoneyValue`) AS SIGNED) as `c1`
-		FROM
-			`LinqDataTypes` `p`
-	) `p_1`
+	`LinqDataTypes` `p`
 WHERE
-	`p_1`.`c1` > 0
+	CAST(Floor(`p`.`MoneyValue`) AS SIGNED) > 0
 

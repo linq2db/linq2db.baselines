@@ -111,8 +111,8 @@ FROM
 	[TABLE3] [t3]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[t1].[Name1],
 				[t1].[Id1],
+				[t1].[Name1],
 				[x_1].[NAME2] as [Name2],
 				[x_1].[ID2] as [Id2]
 			FROM

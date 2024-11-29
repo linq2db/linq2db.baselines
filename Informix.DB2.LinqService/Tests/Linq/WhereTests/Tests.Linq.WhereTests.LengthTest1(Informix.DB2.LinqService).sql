@@ -2,17 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	nm_1.MiddleName
+	nm.MiddleName
 FROM
 	(
 		SELECT
-			CHAR_LENGTH(nm.MiddleName) as Length_1,
-			nm.MiddleName
+			CHAR_LENGTH(p.MiddleName) as Length_1,
+			p.MiddleName
 		FROM
-			Person nm
-	) nm_1
+			Person p
+	) nm
 WHERE
-	(nm_1.Length_1 <> 0 OR nm_1.Length_1 IS NULL)
+	nm.Length_1 <> 0 OR nm.Length_1 IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

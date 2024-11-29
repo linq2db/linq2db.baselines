@@ -150,7 +150,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[InventoryResourceDTO] [y]
 				LEFT JOIN [WmsBatchDTO] [batch] ON [y].[MaterialID] = [batch].[MaterialID] AND ([y].[BatchNumber] = [batch].[BatchNumber] OR [y].[BatchNumber] IS NULL AND [batch].[BatchNumber] IS NULL)

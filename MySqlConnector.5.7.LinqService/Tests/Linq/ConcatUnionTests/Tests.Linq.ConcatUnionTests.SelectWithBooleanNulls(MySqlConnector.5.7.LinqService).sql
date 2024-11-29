@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				`Child` `t1`
 		)
@@ -23,7 +23,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				`Child` `t2`
 		)

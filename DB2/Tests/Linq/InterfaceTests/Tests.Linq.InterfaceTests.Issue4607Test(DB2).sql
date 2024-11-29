@@ -1,0 +1,54 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SomeTable"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "SomeTable"
+		(
+			"ClassProp" smallint NOT NULL,
+			"Interface" smallint NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SomeTable"
+(
+	"ClassProp",
+	"Interface"
+)
+VALUES
+(
+	1,
+	0
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ClassProp",
+	"t1"."Interface"
+FROM
+	"SomeTable" "t1"
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SomeTable"';
+END
+

@@ -4,7 +4,7 @@
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
-	N'id=1'
+	CAST(N'id=1' AS NVarChar(4000))
 FROM
 	[Person] [p]
 WHERE
@@ -13,7 +13,7 @@ UNION ALL
 SELECT
 	[p_1].[PersonID],
 	[p_1].[FirstName],
-	N'id=2'
+	CAST(N'id=2' AS NVarChar(4000))
 FROM
 	[Person] [p_1]
 WHERE

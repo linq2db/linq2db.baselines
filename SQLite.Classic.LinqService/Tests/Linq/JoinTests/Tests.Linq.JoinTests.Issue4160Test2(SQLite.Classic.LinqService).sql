@@ -125,12 +125,12 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT DISTINCT
-	[cc_1].[Name]
+	[cc_1].[Value_1]
 FROM
 	[Issue4160Person] [t1]
 		LEFT JOIN (
 			SELECT
-				[cc].[Name],
+				[cc].[Name] as [Value_1],
 				ROW_NUMBER() OVER (PARTITION BY [cc].[Code] ORDER BY [cc].[Code]) as [rn],
 				[cc].[Code]
 			FROM

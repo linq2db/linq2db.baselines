@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[c2].[ParentID]
+	[c2].[ParentID] as [Key_1]
 FROM
 	[Child] [c2]
 GROUP BY

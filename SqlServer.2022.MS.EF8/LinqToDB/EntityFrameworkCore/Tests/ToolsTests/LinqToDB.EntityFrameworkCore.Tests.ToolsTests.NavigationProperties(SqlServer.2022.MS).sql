@@ -22,3 +22,44 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR 
 ORDER BY [o].[OrderID], [t].[OrderID], [t].[ProductID], [t0].[ProductID], [t1].[OrderId]
 
 
+BeginTransaction(RepeatableRead)
+
+
+--  SqlServer.2022
+
+SELECT
+	[m_1].[ProductId],
+	[d].[OrderID],
+	[d].[ProductID],
+	[d].[Quantity]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Product].[ProductID] as [ProductId]
+		FROM
+			[Orders] [e]
+				INNER JOIN [Order Details] [od] ON [e].[OrderID] = [od].[OrderID]
+				INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+	) [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[ProductId] = [d].[ProductID]
+
+
+
+DisposeTransaction
+
+
+--  SqlServer.2022
+
+SELECT
+	[a_Product].[ProductID],
+	[od].[OrderID],
+	[od].[ProductID],
+	[od].[Quantity],
+	[a_Product].[ProductName]
+FROM
+	[Orders] [o]
+		INNER JOIN [Order Details] [od] ON [o].[OrderID] = [od].[OrderID]
+		INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+
+
+

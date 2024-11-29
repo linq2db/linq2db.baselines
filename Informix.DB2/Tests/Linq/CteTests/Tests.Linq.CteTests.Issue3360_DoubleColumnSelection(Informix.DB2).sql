@@ -179,13 +179,13 @@ AS
 	SELECT
 		r.Id,
 		r.Byte,
-		r.Byte,
+		NVL(r.Byte, NULL),
 		r.Guid,
-		r.Guid,
+		NVL(r.Guid, NULL),
 		NULL::NChar(11),
 		NULL::NChar(11),
 		r.Bool,
-		r.Bool
+		NVL(r.Bool, NULL)::BOOLEAN
 	FROM
 		Issue3360Table1 r
 	WHERE

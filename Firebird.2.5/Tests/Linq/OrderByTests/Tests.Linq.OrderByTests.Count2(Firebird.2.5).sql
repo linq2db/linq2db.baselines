@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT FIRST @take
-			*
+			1 as "c1"
 		FROM
 			"Parent" "t1"
 		ORDER BY

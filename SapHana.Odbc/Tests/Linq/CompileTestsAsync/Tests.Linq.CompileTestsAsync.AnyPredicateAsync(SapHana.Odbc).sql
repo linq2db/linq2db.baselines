@@ -155,14 +155,14 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"AsyncDataTable" "c_1"
 			WHERE

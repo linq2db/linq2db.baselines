@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	x."ParentID",
@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID)
+	x."ParentID" = :p OR x."ParentID" = :p
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -22,10 +22,10 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 3
-DECLARE @ParentID_1 Integer -- Int32
-SET     @ParentID_1 = 2
+DECLARE @p Integer -- Int32
+SET     @p = 3
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 2
 
 SELECT
 	x."ParentID",
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	(x."ParentID" = :ParentID OR x."ParentID" = :ParentID_1)
+	x."ParentID" = :p OR x."ParentID" = :p_1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

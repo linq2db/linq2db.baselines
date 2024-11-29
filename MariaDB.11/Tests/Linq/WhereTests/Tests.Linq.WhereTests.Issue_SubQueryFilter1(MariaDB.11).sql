@@ -11,9 +11,9 @@ SELECT
 FROM
 	`Patient` `t1`
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`Person` `e`,
 			(
@@ -25,9 +25,10 @@ WHERE
 			) `t2`
 		WHERE
 			LOCATE(@filter1, `e`.`FirstName`) > 0 AND `e`.`PersonID` = `t2`.`PersonID`
-	) OR EXISTS(
+	) OR
+	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`Person` `e_1`,
 			(
@@ -39,7 +40,7 @@ WHERE
 			) `t3`
 		WHERE
 			LOCATE(@filter2, `e_1`.`FirstName`) > 0 AND `e_1`.`PersonID` = `t3`.`PersonID`
-	))
+	)
 ORDER BY
 	`t1`.`PersonID`
 

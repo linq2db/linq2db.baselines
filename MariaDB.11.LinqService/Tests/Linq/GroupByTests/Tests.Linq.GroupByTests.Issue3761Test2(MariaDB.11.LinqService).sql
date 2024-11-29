@@ -8,18 +8,18 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `Issue3761Table`
 (
-	`LETO`     INT      NOT NULL,
-	`STEVILKA` INT      NOT NULL,
-	`DATUM`    DATETIME     NULL,
-	`SKUPAJ`   DECIMAL      NULL,
+	`LETO`     INT             NOT NULL,
+	`STEVILKA` INT             NOT NULL,
+	`DATUM`    DATETIME            NULL,
+	`SKUPAJ`   DECIMAL(29, 10)     NULL,
 
 	CONSTRAINT `PK_Issue3761Table` PRIMARY KEY CLUSTERED (`LETO`, `STEVILKA`)
 )
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @DATUM Datetime -- DateTime
-SET     @DATUM = '2019-01-01'
+DECLARE @p Datetime -- DateTime
+SET     @p = '2019-01-01'
 
 SELECT
 	`t1`.`Year_1`,
@@ -40,7 +40,7 @@ FROM
 		FROM
 			`Issue3761Table` `n`
 		WHERE
-			`n`.`DATUM` < @DATUM
+			`n`.`DATUM` < @p
 	) `t1`
 GROUP BY
 	`t1`.`Year_1`,
@@ -65,7 +65,7 @@ FROM
 		FROM
 			`Issue3761Table` `n_1`
 		WHERE
-			`n_1`.`DATUM` >= @DATUM
+			`n_1`.`DATUM` >= @p
 	) `t2`
 GROUP BY
 	`t2`.`Year_1`,

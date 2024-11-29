@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE  
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -46,12 +46,12 @@ LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE  
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 

@@ -111,9 +111,9 @@ FROM
 	[TABLE3] [t3]
 		OUTER APPLY (
 			SELECT TOP (1)
+				[t1].[not_null],
 				[t1].[Name1],
 				[x_1].[NAME2] as [Name2],
-				[t1].[not_null],
 				1 as [not_null_1]
 			FROM
 				[TABLE2] [x_1]

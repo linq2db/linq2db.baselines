@@ -99,14 +99,28 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t3].[Id]
 		FROM
 			(
 				SELECT TOP (@take)
 					[e].[Id]
 				FROM
 					[SomeEntity] [e] WITH (NOLOCK)
-			) [t1]
+						OUTER APPLY (
+							SELECT TOP (1)
+								1 as [c1]
+							FROM
+								[SomeOtherEntity] [a_Other]
+							WHERE
+								[a_Other].[Id] = [e].[Id]
+						) [t1]
+						OUTER APPLY (
+							SELECT TOP (1)
+								1 as [c1]
+							FROM
+								dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
+						) [t2]
+			) [t3]
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (1)
@@ -130,14 +144,28 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t3].[Id]
 		FROM
 			(
 				SELECT TOP (@take)
 					[e].[Id]
 				FROM
 					[SomeEntity] [e] WITH (NOLOCK)
-			) [t1]
+						OUTER APPLY (
+							SELECT TOP (1)
+								1 as [c1]
+							FROM
+								[SomeOtherEntity] [a_Other]
+							WHERE
+								[a_Other].[Id] = [e].[Id]
+						) [t1]
+						OUTER APPLY (
+							SELECT TOP (1)
+								1 as [c1]
+							FROM
+								dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
+						) [t2]
+			) [t3]
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 

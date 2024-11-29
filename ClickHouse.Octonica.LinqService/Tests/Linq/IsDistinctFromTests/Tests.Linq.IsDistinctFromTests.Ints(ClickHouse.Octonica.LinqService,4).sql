@@ -59,7 +59,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 4 OR s.Int IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 1
+	s.Int <> 4
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -69,7 +69,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = 4 OR s.NullableInt IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 1
+	s.NullableInt IS NULL OR s.NullableInt <> 4
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -79,7 +79,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 4 OR s.Int IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 0
+	s.Int = 4
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -89,7 +89,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = 4 OR s.NullableInt IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 0
+	NOT (s.NullableInt IS NULL OR s.NullableInt <> 4)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

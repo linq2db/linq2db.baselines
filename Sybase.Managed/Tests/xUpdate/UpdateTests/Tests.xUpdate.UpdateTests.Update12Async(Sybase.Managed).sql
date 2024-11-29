@@ -17,7 +17,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Parent] [p1]
 				INNER JOIN [Parent] [p2] ON [p1].[ParentID] = [p2].[ParentID]

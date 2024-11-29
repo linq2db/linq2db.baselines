@@ -188,14 +188,14 @@ FROM
 	(
 		SELECT
 			"r"."Id",
-			5 as "Byte",
-			5 as "Byte_1",
+			CAST(5 AS SmallInt) as "Byte",
+			CAST(5 AS SmallInt) as "Byte_1",
 			CAST(@Guid AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
 			CAST(@GuidN AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
-			'1' as "Bool",
-			'0' as "BoolN"
+			CAST('ENUM1_VALUE' AS CHAR(11)) as "Enum",
+			CAST('ENUM2_VALUE' AS CHAR(11)) as "EnumN",
+			CAST('1' AS CHAR(1)) as "Bool",
+			CAST('0' AS CHAR(1)) as "BoolN"
 		FROM
 			"Issue3360Table1" "r"
 		WHERE

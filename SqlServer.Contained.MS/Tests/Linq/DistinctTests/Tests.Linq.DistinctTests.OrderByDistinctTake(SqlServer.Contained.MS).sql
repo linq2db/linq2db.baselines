@@ -52,6 +52,8 @@ FROM
 		FROM
 			[DistinctOrderByTable] [t1]
 	) [t2]
+ORDER BY
+	[t2].[F1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

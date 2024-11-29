@@ -34,7 +34,7 @@ DECLARE @to_1 TimeStamp -- DateTime
 SET     @to_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
-	MIN(tgGroup_1."TranslatedMessage1"),
+	Trim(MIN(tgGroup_1."TranslatedMessage1")),
 	tgGroup_1."TranslatedMessageGroup",
 	tgGroup_1."Hour_1",
 	COUNT(*),

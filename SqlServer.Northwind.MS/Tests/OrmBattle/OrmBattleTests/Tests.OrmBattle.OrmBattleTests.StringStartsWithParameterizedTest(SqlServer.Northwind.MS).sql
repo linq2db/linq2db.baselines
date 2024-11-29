@@ -20,5 +20,5 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	([c_1].[CustomerID] LIKE @likeA ESCAPE N'~' OR [c_1].[CustomerID] LIKE @likeL ESCAPE N'~')
+	[c_1].[CustomerID] LIKE @likeA ESCAPE N'~' OR [c_1].[CustomerID] LIKE @likeL ESCAPE N'~'
 

@@ -15,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	(t1."BoolValue" = 0 OR t1."BoolValue" IS NULL)
+	t1."BoolValue" = 0 OR t1."BoolValue" IS NULL
 

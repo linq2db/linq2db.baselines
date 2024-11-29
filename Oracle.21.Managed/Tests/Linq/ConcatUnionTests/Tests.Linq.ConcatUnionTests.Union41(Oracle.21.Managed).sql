@@ -3,13 +3,13 @@
 
 SELECT
 	p."ParentID",
-	1
+	CAST(1 AS Char(1))
 FROM
 	"Parent" p
 UNION
 SELECT
 	ch."ParentID",
-	0
+	CAST(0 AS Char(1))
 FROM
 	"Child" ch
 

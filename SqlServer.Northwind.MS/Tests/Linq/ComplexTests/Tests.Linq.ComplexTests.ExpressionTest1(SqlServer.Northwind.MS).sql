@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Customers] [x]
 WHERE
-	([x].[Country] = N'UK' OR [x].[Country] = N'France')
+	[x].[Country] = N'UK' OR [x].[Country] = N'France'
 

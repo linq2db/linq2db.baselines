@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate(addWeeks(t.DateTimeValue, t.SmallIntValue))
+	toDate32(addWeeks(t.DateTimeValue, t.SmallIntValue))
 FROM
 	LinqDataTypes t
 

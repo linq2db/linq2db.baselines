@@ -84,7 +84,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Ints" i,
 			"Ints" j

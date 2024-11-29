@@ -62,7 +62,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Field1 NVarchar2(4) -- String
+DECLARE @Field1 Varchar2(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"

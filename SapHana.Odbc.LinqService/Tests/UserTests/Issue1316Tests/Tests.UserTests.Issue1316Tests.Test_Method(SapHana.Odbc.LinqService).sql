@@ -29,8 +29,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 5
+DECLARE @p  -- Int32
+SET     @p = 5
 
 SELECT
 	"t1"."ID"

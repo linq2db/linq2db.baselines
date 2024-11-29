@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS "Issue3761Table"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @DATUM Timestamp -- DateTime2
-SET     @DATUM = '2019-01-01'::date
+DECLARE @p Timestamp -- DateTime2
+SET     @p = '2019-01-01'::date
 
 SELECT
 	t1."Year_1",
@@ -40,7 +40,7 @@ FROM
 		FROM
 			"Issue3761Table" n
 		WHERE
-			n."DATUM" < :DATUM
+			n."DATUM" < :p
 	) t1
 GROUP BY
 	t1."Year_1",

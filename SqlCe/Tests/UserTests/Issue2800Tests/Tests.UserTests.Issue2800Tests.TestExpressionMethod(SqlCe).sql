@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	([x].[Name] <> 'Special' OR [x].[Name] IS NULL)
+	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -110,7 +110,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	([x].[Name] <> 'Special' OR [x].[Name] IS NULL)
+	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
 BeforeExecute
 -- SqlCe

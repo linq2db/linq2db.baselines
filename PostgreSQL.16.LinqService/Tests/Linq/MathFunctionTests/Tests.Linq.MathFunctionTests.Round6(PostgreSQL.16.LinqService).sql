@@ -2,14 +2,9 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t_1.c1
+	t."MoneyValue"
 FROM
-	(
-		SELECT
-			Round(t."MoneyValue", 0)::Float as c1
-		FROM
-			"LinqDataTypes" t
-	) t_1
+	"LinqDataTypes" t
 WHERE
-	t_1.c1 <> 0
+	ROUND(t."MoneyValue"::Float) <> 0
 

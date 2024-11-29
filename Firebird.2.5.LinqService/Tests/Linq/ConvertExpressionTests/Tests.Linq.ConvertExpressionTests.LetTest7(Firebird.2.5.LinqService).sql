@@ -8,7 +8,7 @@ SELECT FIRST @take
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Child" "c_1"
 			WHERE

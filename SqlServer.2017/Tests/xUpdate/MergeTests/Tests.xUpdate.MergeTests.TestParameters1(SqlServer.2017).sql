@@ -230,14 +230,12 @@ DECLARE @Val4 Int -- Int32
 SET     @Val4 = 34
 DECLARE @Val1 Int -- Int32
 SET     @Val1 = 1
-DECLARE @Val5_1 Int -- Int32
-SET     @Val5_1 = 5
 DECLARE @Val3 Int -- Int32
 SET     @Val3 = 3
-DECLARE @Val5_2 Int -- Int32
-SET     @Val5_2 = 5
-DECLARE @Field3 Int -- Int32
-SET     @Field3 = 125
+DECLARE @Val5_1 Int -- Int32
+SET     @Val5_1 = 5
+DECLARE @p Int -- Int32
+SET     @p = 125
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -255,7 +253,7 @@ USING (
 	[source_Field1],
 	[source_Field7]
 )
-ON (([Target].[Id] = [Source].[source_Id] OR [Target].[Id] = @Val4))
+ON ([Target].[Id] = [Source].[source_Id] OR [Target].[Id] = @Val4)
 
 WHEN NOT MATCHED AND [Source].[source_Field7] = @Val1 + [Source].[source_Id] THEN
 INSERT
@@ -265,14 +263,14 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id] + @Val5_1,
+	[Source].[source_Id] + @Val5,
 	[Source].[source_Field1]
 )
 
 WHEN MATCHED AND [Source].[source_Id] = @Val3 THEN
 UPDATE
 SET
-	[Field4] = @Val5_2
-WHEN MATCHED AND [Target].[Field3] = @Field3 THEN DELETE
+	[Field4] = @Val5_1
+WHEN MATCHED AND [Target].[Field3] = @p THEN DELETE
 ;
 

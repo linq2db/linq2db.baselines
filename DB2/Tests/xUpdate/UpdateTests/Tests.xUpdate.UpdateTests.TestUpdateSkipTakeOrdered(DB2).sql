@@ -197,11 +197,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."Value1"
+	"r"."Value1"
 FROM
-	"Parent" "p"
+	"Parent" "r"
 WHERE
-	"p"."ParentID" >= 1000
+	"r"."ParentID" >= 1000
 ORDER BY
-	"p"."ParentID"
+	"r"."ParentID"
 

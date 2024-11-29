@@ -4,7 +4,7 @@
 SELECT
 	t2."month_1",
 	t2."year_1",
-	1
+	CAST(1 AS Int)
 FROM
 	(
 		SELECT
@@ -20,14 +20,14 @@ UNION
 SELECT
 	CAST(t3."SmallIntValue" AS Int),
 	CAST(t3."SmallIntValue" AS Int),
-	3
+	CAST(3 AS Int)
 FROM
 	"LinqDataTypes" t3
 UNION
 SELECT
 	EXTRACT(YEAR FROM t4."DateTimeValue"),
 	EXTRACT(YEAR FROM t4."DateTimeValue"),
-	2
+	CAST(2 AS Int)
 FROM
 	"LinqDataTypes" t4
 

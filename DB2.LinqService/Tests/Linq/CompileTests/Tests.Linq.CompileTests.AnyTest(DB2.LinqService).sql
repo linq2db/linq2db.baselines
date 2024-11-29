@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Child" "c_1"
 			WHERE
-				"c_1"."ParentID" = @ParentID
+				"c_1"."ParentID" = @p
 		)
 			THEN 1
 		ELSE 0
@@ -20,18 +20,18 @@ FROM SYSIBM.SYSDUMMY1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = -1
+DECLARE @p Integer(4) -- Int32
+SET     @p = -1
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"Child" "c_1"
 			WHERE
-				"c_1"."ParentID" = @ParentID
+				"c_1"."ParentID" = @p
 		)
 			THEN 1
 		ELSE 0

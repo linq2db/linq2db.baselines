@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- Access.Ace.Odbc AccessODBC
+
+SELECT
+	IIF(EXISTS(
+		SELECT
+			1
+		FROM
+			[Child] [c_1]
+		WHERE
+			[t1].[ParentID] = [c_1].[ParentID]
+	), True, False)
+FROM
+	[Parent] [t1]
+

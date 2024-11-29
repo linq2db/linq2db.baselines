@@ -10,6 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	NOT ("p"."FirstName" IS NULL OR Length("p"."FirstName") = 0) AND
-	"p"."PersonID" = 1
+	Length("p"."FirstName") <> 0 AND "p"."PersonID" = 1
 

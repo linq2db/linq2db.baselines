@@ -3,7 +3,7 @@
 
 SELECT
 	[t].[ParentID],
-	[t1].[COUNT_1] as [count_1]
+	[t1].[COUNT_1]
 FROM
 	[Parent] [t]
 		OUTER APPLY (

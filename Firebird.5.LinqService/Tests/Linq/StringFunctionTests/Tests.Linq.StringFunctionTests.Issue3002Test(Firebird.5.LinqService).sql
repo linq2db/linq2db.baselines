@@ -64,11 +64,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN TRUE
 		ELSE FALSE
@@ -87,7 +87,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -100,11 +100,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN TRUE
 		ELSE FALSE
@@ -123,7 +123,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -136,11 +136,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 		)
 			THEN TRUE
 		ELSE FALSE
@@ -159,7 +159,7 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	("sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~')
+	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- Firebird.5 Firebird4

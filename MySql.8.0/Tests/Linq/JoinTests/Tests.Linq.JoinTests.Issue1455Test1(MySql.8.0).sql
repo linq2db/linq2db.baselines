@@ -88,14 +88,13 @@ SET     @cpty = 'C'
 SELECT
 	`al_group_3`.`AlertKey`,
 	`al_group_3`.`AlertCode`,
-	`t2`.`LastUpdate_1`,
+	`t2`.`LastUpdate`,
 	`t2`.`CargoId`,
 	`t2`.`DeliveryId`,
 	`t2`.`DeliveryCounterParty`,
 	`t2`.`DealId`,
 	`t2`.`ParcelId`,
-	`t2`.`CounterParty`,
-	`t2`.`LastUpdate`
+	`t2`.`CounterParty`
 FROM
 	(
 		SELECT
@@ -119,7 +118,8 @@ FROM
 				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
 		WHERE
-			(LOCATE(@cpty, `nomin_1`.`DeliveryCounterParty`) > 0 OR LOCATE(@cpty, `trade_1`.`CounterParty`) > 0 OR LOCATE(@cpty, `al_group_1`.`AlertCode`) > 0)
+			LOCATE(@cpty, `nomin_1`.`DeliveryCounterParty`) > 0 OR
+			LOCATE(@cpty, `trade_1`.`CounterParty`) > 0 OR LOCATE(@cpty, `al_group_1`.`AlertCode`) > 0
 		GROUP BY
 			`al_group_1`.`AlertKey`,
 			`al_group_1`.`AlertCode`,
@@ -133,8 +133,7 @@ FROM
 				`trade_2`.`DealId`,
 				`trade_2`.`ParcelId`,
 				`trade_2`.`CounterParty`,
-				Coalesce(`t1`.`MAX_1`, `t1`.`CreationDate`) as `LastUpdate`,
-				Coalesce(`t1`.`MAX_1`, `t1`.`CreationDate`) as `LastUpdate_1`
+				Coalesce(`t1`.`MAX_1`, `t1`.`CreationDate`) as `LastUpdate`
 			FROM
 				(
 					SELECT

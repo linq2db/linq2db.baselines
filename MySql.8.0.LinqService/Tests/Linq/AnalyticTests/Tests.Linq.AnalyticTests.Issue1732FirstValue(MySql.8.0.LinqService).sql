@@ -107,12 +107,18 @@ DECLARE @group Int32
 SET     @group = 7
 
 SELECT
-	`p`.`Id`,
-	FIRST_VALUE(`p`.`Id`) OVER(ORDER BY `p`.`Order` DESC)
+	`p_1`.`Id`,
+	FIRST_VALUE(`p_1`.`Id`) OVER(ORDER BY `p_1`.`Order_1` DESC)
 FROM
-	`Position` `p`
-WHERE
-	`p`.`Group` = @group
+	(
+		SELECT
+			`p`.`Id`,
+			`p`.`Order` as `Order_1`
+		FROM
+			`Position` `p`
+		WHERE
+			`p`.`Group` = @group
+	) `p_1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

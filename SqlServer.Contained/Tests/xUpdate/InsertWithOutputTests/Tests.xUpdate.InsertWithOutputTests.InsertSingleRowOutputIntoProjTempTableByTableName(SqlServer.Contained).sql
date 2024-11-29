@@ -34,9 +34,9 @@ INSERT INTO [TableWithData_source]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Value] * 2,
-	[INSERTED].[Id] + 1,
-	N'Foo' + [INSERTED].[ValueStr]
+	INSERTED.[Value] * 2,
+	INSERTED.[Id] + 1,
+	N'Foo' + INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_output]
 (
 	[Value],

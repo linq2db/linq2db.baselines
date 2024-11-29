@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p Int32
-SET     @p = 1
+DECLARE @Value Int32
+SET     @Value = 1
 
 SELECT
-	Extract(hour from Date_Add(`t`.`DateTimeValue`, Interval @p Hour))
+	Extract(hour from Date_Add(`t`.`DateTimeValue`, Interval @Value Hour))
 FROM
 	`LinqDataTypes` `t`
 

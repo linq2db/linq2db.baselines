@@ -34,18 +34,18 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[AsyncDataTable] [c_1]
 			WHERE
-				[c_1].[Id] <> @Id
+				[c_1].[Id] <> @p
 		)
 			THEN 1
 		ELSE 0

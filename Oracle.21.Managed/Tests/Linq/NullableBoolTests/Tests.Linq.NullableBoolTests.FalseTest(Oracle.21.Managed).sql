@@ -64,7 +64,7 @@ SELECT
 FROM
 	"NullableBoolClass" t
 WHERE
-	(t."Value" = 1 OR t."Value" IS NULL)
+	t."Value" = 1 OR t."Value" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

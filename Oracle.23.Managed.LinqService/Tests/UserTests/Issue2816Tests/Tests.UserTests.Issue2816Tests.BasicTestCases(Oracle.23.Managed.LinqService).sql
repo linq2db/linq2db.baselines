@@ -147,8 +147,8 @@ SELECT
 FROM
 	"Issue2816Table" p
 WHERE
-	(p."Text" IS NULL OR LTRIM(p."Text", '	
-                 　') IS NULL)
+	p."Text" IS NULL OR LTRIM(p."Text", '	
+                 　') IS NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

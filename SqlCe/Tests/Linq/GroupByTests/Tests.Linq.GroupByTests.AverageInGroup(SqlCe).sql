@@ -43,7 +43,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[g_2].[GroupId],
+	[g_2].[Key_1],
 	[g_2].[AVG_1],
 	[g_2].[AVG_2],
 	[g_2].[AVG_3],
@@ -54,7 +54,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[g_1].[GroupId],
+			[g_1].[GroupId] as [Key_1],
 			AVG([g_1].[DataValue]) as [AVG_1],
 			AVG([g_1].[DataValue]) as [AVG_2],
 			AVG(CASE
@@ -82,7 +82,7 @@ FROM
 					FROM
 						[AggregationData] [t]
 					WHERE
-						[t].[DataValue] IS NOT NULL AND [g_2].[GroupId] = [t].[GroupId]
+						[t].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t].[GroupId]
 				) [t1]
 		) [t2]
 		OUTER APPLY (
@@ -95,7 +95,7 @@ FROM
 					FROM
 						[AggregationData] [t_1]
 					WHERE
-						[t_1].[DataValue] IS NOT NULL AND [g_2].[GroupId] = [t_1].[GroupId] AND
+						[t_1].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_1].[GroupId] AND
 						CAST([t_1].[DataValue] AS Int) % 2 = 0
 				) [t3]
 		) [t4]
@@ -109,7 +109,7 @@ FROM
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [g_2].[GroupId] = [t_2].[GroupId] AND
+						[t_2].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_2].[GroupId] AND
 						CAST([t_2].[DataValue] AS Int) % 2 = 0
 				) [t5]
 		) [t6]

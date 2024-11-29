@@ -41,11 +41,11 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-WITH "CTE_1" ("ID")
+WITH "CTE_1" ("unused")
 AS
 (
 	SELECT
-		"t1"."PersonID"
+		1
 	FROM
 		"Person" "t1"
 )

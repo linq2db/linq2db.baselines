@@ -19,5 +19,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	Round([o].[Freight] / 10, 1) = 6.5
+	ROUND([o].[Freight] / 10, 1) = 6.5
 

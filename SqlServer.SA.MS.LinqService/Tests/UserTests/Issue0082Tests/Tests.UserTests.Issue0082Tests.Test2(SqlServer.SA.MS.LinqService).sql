@@ -34,9 +34,9 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[x_1].[ParentID],
-	[x_1].[CountResult],
-	[x_1].[SUM_1]
+	[x].[ParentID],
+	[x].[COUNT_1],
+	[x].[SUM_1]
 FROM
 	(
 		SELECT
@@ -46,20 +46,20 @@ FROM
 				FROM
 					[Child] [a_Children]
 				WHERE
-					[x].[ParentID] = [a_Children].[ParentID]
-			) as [CountResult],
-			[x].[ParentID],
+					[o].[ParentID] = [a_Children].[ParentID]
+			) as [COUNT_1],
+			[o].[ParentID],
 			(
 				SELECT
 					SUM([a_Children_1].[ParentID])
 				FROM
 					[Child] [a_Children_1]
 				WHERE
-					[x].[ParentID] = [a_Children_1].[ParentID]
+					[o].[ParentID] = [a_Children_1].[ParentID]
 			) as [SUM_1]
 		FROM
-			[Parent] [x]
-	) [x_1]
+			[Parent] [o]
+	) [x]
 WHERE
-	[x_1].[CountResult] > 0
+	[x].[COUNT_1] > 0
 

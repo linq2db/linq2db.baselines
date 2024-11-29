@@ -13,7 +13,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"GrandChild" "permission"
 		WHERE

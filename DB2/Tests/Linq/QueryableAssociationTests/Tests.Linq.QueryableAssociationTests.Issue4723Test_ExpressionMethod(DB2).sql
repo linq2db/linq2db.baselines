@@ -1,0 +1,101 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue4723Table1"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue4723Table1"
+		(
+			"Id"               Int           NOT NULL,
+			"ExpressionMethod" NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "Issue4723Table1"
+(
+	"Id",
+	"ExpressionMethod"
+)
+VALUES
+(1,NULL)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue4723Table2"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue4723Table2"
+		(
+			"Id"    Int           NOT NULL,
+			"Value" NVarChar(255)     NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "Issue4723Table2"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(1,'Value 1'),
+(1,'Value 1'),
+(2,'Value 2')
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id",
+	(
+		SELECT
+			"se"."Value"
+		FROM
+			"Issue4723Table2" "se"
+		WHERE
+			"se"."Id" = "t1"."Id"
+		FETCH NEXT 1 ROWS ONLY
+	)
+FROM
+	"Issue4723Table1" "t1"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue4723Table2"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "Issue4723Table1"';
+END
+

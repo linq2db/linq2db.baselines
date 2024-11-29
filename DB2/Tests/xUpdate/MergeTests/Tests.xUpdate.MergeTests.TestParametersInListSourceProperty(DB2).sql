@@ -251,5 +251,6 @@ USING (VALUES
 	"source_Field"
 )
 ON ("Target"."Id" = "Source"."source_Id")
-WHEN MATCHED AND ("Target"."Field3" <> 1 OR "Target"."Field3" IS NULL OR "Source"."source_Field" IS NOT NULL) THEN DELETE
+WHEN MATCHED AND "Target"."Field3" <> 1 OR "Target"."Field3" IS NULL OR
+"Source"."source_Field" IS NOT NULL THEN DELETE
 

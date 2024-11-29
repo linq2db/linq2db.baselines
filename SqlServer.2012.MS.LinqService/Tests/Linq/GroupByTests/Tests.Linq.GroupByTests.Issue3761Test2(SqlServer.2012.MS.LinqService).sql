@@ -20,8 +20,8 @@ IF (OBJECT_ID(N'[Issue3761Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @DATUM DateTime2
-SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @p DateTime2
+SET     @p = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[t1].[Year_1],
@@ -36,7 +36,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < @DATUM
+			[n].[DATUM] < @p
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -55,7 +55,7 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			[n_1].[DATUM] >= @DATUM
+			[n_1].[DATUM] >= @p
 	) [t2]
 GROUP BY
 	[t2].[Year_1],

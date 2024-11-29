@@ -15,7 +15,7 @@ WHERE
 		FROM
 			Child c_1
 		WHERE
-			p.ParentID + @n = c_1.ParentID
+			p.ParentID + @n::Int = c_1.ParentID
 	)
 
 BeforeExecute

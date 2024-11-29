@@ -14,7 +14,7 @@ FROM
 	ReplacingMergeTreeTable t1
 		CROSS JOIN (
 			SELECT
-				*
+				1 as c1
 			FROM
 				ReplacingMergeTreeTable c_1 FINAL
 		) c_2

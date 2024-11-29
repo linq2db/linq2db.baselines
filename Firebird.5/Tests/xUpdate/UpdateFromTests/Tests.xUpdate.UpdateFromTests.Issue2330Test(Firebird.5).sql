@@ -24,7 +24,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Parent" "w"
 				INNER JOIN "Child" "b" ON "w"."ParentID" = "b"."ParentID"

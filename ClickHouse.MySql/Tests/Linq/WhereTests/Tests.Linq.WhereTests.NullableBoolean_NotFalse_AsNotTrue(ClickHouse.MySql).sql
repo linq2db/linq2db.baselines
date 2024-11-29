@@ -22,7 +22,7 @@ SELECT
 FROM
 	NullableBool r
 WHERE
-	(r.Bool = true OR r.Bool IS NULL)
+	r.Bool = true OR r.Bool IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

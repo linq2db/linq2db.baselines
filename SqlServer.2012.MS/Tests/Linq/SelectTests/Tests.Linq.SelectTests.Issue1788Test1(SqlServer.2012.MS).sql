@@ -42,7 +42,6 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	IIF([l].[Value1] IS NOT NULL, 1, 0),
 	[l].[Value1]
 FROM
 	[Table1788] [p]

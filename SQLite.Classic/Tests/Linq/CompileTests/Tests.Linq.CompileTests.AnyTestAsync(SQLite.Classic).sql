@@ -1,17 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[Child] [c_1]
 			WHERE
-				[c_1].[ParentID] = @ParentID
+				[c_1].[ParentID] = @p
 		)
 			THEN 1
 		ELSE 0
@@ -19,18 +19,18 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @ParentID  -- Int32
-SET     @ParentID = -1
+DECLARE @p  -- Int32
+SET     @p = -1
 
 SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				*
+				1
 			FROM
 				[Child] [c_1]
 			WHERE
-				[c_1].[ParentID] = @ParentID
+				[c_1].[ParentID] = @p
 		)
 			THEN 1
 		ELSE 0

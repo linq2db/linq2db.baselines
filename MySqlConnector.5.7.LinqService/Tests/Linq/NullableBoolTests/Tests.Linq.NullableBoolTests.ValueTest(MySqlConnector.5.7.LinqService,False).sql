@@ -87,7 +87,7 @@ SELECT
 FROM
 	`NullableBoolClass` `t`
 WHERE
-	(`t`.`Value` <> @value OR `t`.`Value` IS NULL)
+	`t`.`Value` <> @value OR `t`.`Value` IS NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

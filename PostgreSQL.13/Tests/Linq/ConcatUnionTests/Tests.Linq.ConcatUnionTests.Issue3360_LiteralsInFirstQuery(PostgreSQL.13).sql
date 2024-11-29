@@ -62,14 +62,14 @@ FROM
 	(
 		SELECT
 			r."Id",
-			5 as "Byte",
-			5 as "Byte_1",
-			:Guid as "Guid",
-			:GuidN as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
-			True as "Bool",
-			False as "BoolN"
+			5::SmallInt as "Byte",
+			5::SmallInt as "Byte_1",
+			:Guid::uuid as "Guid",
+			:GuidN::uuid as "GuidN",
+			'ENUM1_VALUE'::text as "Enum",
+			'ENUM2_VALUE'::text as "EnumN",
+			True::Boolean as "Bool",
+			False::Boolean as "BoolN"
 		FROM
 			"Issue3360Table1" r
 		WHERE

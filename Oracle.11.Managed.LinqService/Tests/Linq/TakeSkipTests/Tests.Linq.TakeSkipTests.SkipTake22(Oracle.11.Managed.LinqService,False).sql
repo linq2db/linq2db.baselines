@@ -25,6 +25,8 @@ FROM
 	) t3
 WHERE
 	t3.RN > 2
+ORDER BY
+	t3."ChildID" DESC
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -53,4 +55,6 @@ FROM
 	) t3
 WHERE
 	t3.RN > 2
+ORDER BY
+	t3."ChildID" DESC
 

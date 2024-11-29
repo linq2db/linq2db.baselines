@@ -2,7 +2,7 @@
 -- SqlServer.2017
 
 SELECT TOP (1)
-	1
+	NewID()
 FROM
 	[LinqDataTypes] [p]
 

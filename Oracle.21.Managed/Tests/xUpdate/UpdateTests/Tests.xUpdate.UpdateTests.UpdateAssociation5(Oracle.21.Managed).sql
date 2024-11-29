@@ -9,11 +9,11 @@ SET
 			CASE
 				WHEN NOT EXISTS(
 					SELECT
-						*
+						1
 					FROM
 						"Parent" x_2
 					WHERE
-						t1.ID IS NOT NULL AND t1.ID = x_2."ParentID" AND (x_2."Value1" <> 1 OR x_2."Value1" IS NULL)
+						t1.ID = x_2."ParentID" AND (x_2."Value1" <> 1 OR x_2."Value1" IS NULL)
 				)
 					THEN 1
 				ELSE 0
@@ -41,7 +41,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Parent" x
 				INNER JOIN "LinqDataTypes" a_Table1 ON x."ParentID" = a_Table1.ID

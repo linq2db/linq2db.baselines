@@ -84,73 +84,73 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value4___'
+DECLARE @In_1 Varchar2(12) -- String
+SET     @In_1 = '___Value3___'
+DECLARE @In_2 Varchar2(12) -- String
+SET     @In_2 = '___Value4___'
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1)
+	s."CEnum" IN (:In_1, :In_2)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value3___'
+DECLARE @In_1 Varchar2(12) -- String
+SET     @In_1 = '___Value3___'
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" IN (:CEnum) OR s."CEnum" IS NULL)
+	(s."CEnum" IN (:In_1) OR s."CEnum" IS NULL)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @In_1 Varchar2(12) -- String
+SET     @In_1 = '___Value3___'
+DECLARE @In_2 Varchar2(12) -- String
+SET     @In_2 = '___Value2___'
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1)
+	s."CEnum" IN (:In_1, :In_2)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @NotIn Varchar2(12) -- String
+SET     @NotIn = '___Value2___'
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum) AND s."CEnum" IS NOT NULL)
+	(s."CEnum" NOT IN (:NotIn) AND s."CEnum" IS NOT NULL)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 Varchar2(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @NotIn Varchar2(12) -- String
+SET     @NotIn = '___Value3___'
+DECLARE @NotIn_1 Varchar2(12) -- String
+SET     @NotIn_1 = '___Value2___'
 
 SELECT
 	s."Id"
 FROM
 	"Src" s
 WHERE
-	(s."CEnum" NOT IN (:CEnum, :CEnum_1) OR s."CEnum" IS NULL)
+	(s."CEnum" NOT IN (:NotIn, :NotIn_1) OR s."CEnum" IS NULL)
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute

@@ -230,19 +230,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.DayOfYear,
+	t1.Key_1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			toDayOfYear(x.TransactionDate) as DayOfYear
+			toDayOfYear(x.TransactionDate) as Key_1
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.DayOfYear
+	t1.Key_1
 ORDER BY
-	t1.DayOfYear
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @Value Int -- Int32
+SET     @Value = 2
 
 SELECT
-	CAST(CONVERT(NVarChar(10), DateAdd(month, @p, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
+	CAST(CONVERT(NVarChar(10), DateAdd(month, @Value, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
 FROM
 	[LinqDataTypes] [t]
 

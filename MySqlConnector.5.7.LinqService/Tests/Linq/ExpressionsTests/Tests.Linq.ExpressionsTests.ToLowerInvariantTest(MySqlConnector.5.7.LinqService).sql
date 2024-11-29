@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`p`.`Taxonomy`
+	Lower(`p`.`Taxonomy`)
 FROM
 	`Doctor` `p`
 WHERE

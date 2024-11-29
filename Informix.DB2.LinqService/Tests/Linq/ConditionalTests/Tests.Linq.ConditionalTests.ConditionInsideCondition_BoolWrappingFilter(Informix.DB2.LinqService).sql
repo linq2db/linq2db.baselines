@@ -2,29 +2,29 @@
 -- Informix.DB2 Informix
 
 SELECT
-	s_1.Value_1
+	s.Value_1
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Mod(s.ParentID, 2) = 0 THEN CASE
-					WHEN Mod(s.ParentID, 3) = 0 THEN 't'
+				WHEN Mod(p.ParentID, 2) = 0 THEN CASE
+					WHEN Mod(p.ParentID, 3) = 0 THEN 't'
 					ELSE 'f'
 				END
-				WHEN Mod(s.ParentID, 4) = 0 THEN CASE
-					WHEN s.ParentID > 0 THEN 't'
+				WHEN Mod(p.ParentID, 4) = 0 THEN CASE
+					WHEN p.ParentID > 0 THEN 't'
 					ELSE 'f'
 				END
 				ELSE CASE
-					WHEN s.ParentID < 5 THEN 't'
+					WHEN p.ParentID < 5 THEN 't'
 					ELSE 'f'
 				END
 			END::BOOLEAN as Value_1
 		FROM
-			Parent s
-	) s_1
+			Parent p
+	) s
 WHERE
-	s_1.Value_1 = 't'
+	s.Value_1 = 't'
 
 BeforeExecute
 -- Informix.DB2 Informix

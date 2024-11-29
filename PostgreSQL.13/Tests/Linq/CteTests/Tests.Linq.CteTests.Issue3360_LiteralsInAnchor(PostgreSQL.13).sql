@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		r."Id",
-		5,
-		5,
-		:Guid,
-		:GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		True,
-		False
+		5::SmallInt,
+		5::SmallInt,
+		:Guid::uuid,
+		:GuidN::uuid,
+		'ENUM1_VALUE'::text,
+		'ENUM2_VALUE'::text,
+		True::Boolean,
+		False::Boolean
 	FROM
 		"Issue3360Table1" r
 	WHERE

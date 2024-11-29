@@ -6,8 +6,8 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT(*) as COUNT_1,
 			a_Parent.ParentID as ParentID,
+			COUNT(*) as COUNT_1,
 			a_Parent.Value1 as Value1
 		FROM
 			GrandChild g_1

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @Date Integer -- Int32
+SET     @Date = 1
 
 SELECT
-	CONVERT(Date, DateAdd(year, @p, [t].[DateTimeValue]))
+	CONVERT(Date, DateAdd(year, @Date, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

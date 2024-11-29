@@ -176,7 +176,7 @@ FROM
 	[Tag] [ft]
 		FULL JOIN [Fact] [f] ON [ft].[FactId] = [f].[Id]
 WHERE
-	([f].[Id] > 3 OR [ft].[FactId] > 3)
+	[f].[Id] > 3 OR [ft].[FactId] > 3
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

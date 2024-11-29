@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"c_1"."ChildID"

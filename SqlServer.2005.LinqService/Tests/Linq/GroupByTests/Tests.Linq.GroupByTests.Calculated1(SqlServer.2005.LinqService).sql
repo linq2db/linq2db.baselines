@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[ParentID],
 	[d].[ChildID]
 FROM
@@ -14,11 +14,11 @@ FROM
 					ELSE N'2'
 				END
 				ELSE N'3'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Child] [g_1]
 	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[c1] = CASE
+		INNER JOIN [Child] [d] ON [m_1].[Key_1] = CASE
 			WHEN [d].[ParentID] > 2 THEN CASE
 				WHEN [d].[ParentID] > 3 THEN N'1'
 				ELSE N'2'
@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[g_2].[c1]
+	[g_2].[Key_1]
 FROM
 	(
 		SELECT
@@ -40,10 +40,10 @@ FROM
 					ELSE N'2'
 				END
 				ELSE N'3'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Child] [g_1]
 	) [g_2]
 GROUP BY
-	[g_2].[c1]
+	[g_2].[Key_1]
 

@@ -109,8 +109,6 @@ WHERE
 			"p".ID
 		FROM
 			"test_in_2" "p"
-		WHERE
-			"p".ID IS NOT NULL
 	))
 
 BeforeExecute

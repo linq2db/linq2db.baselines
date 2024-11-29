@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @p NVarChar(2) -- String
-SET     @p = 'tt'
 
 SELECT
 	[c_1].[CustomerID],
@@ -18,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	CharIndex(@p, [c_1].[City]) - 1 = 3
+	CharIndex('tt', [c_1].[City]) - 1 = 3
 LIMIT 1
 

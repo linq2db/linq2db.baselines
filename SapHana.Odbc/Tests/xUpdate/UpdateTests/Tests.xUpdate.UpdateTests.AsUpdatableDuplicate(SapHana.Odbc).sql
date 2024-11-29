@@ -59,8 +59,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ChildID  -- Int32
-SET     @ChildID = 1003
+DECLARE @p  -- Int32
+SET     @p = 1003
 
 SELECT
 	COUNT(*)

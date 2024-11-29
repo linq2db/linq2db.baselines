@@ -56,7 +56,7 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					`Issue3757Level2` `c_1`
 				WHERE
@@ -81,7 +81,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			`Issue3757Level2` `c_1`
 		WHERE

@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	MAX(g_1.ChildID)
+	MAX(id.ChildID)
 FROM
-	Child g_1
+	Child id
 GROUP BY
-	g_1.ParentID
+	id.ParentID
 

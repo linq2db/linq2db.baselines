@@ -11,7 +11,8 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	(`p`.`ParentID` = @id1 OR `p`.`ParentID` >= @id1 OR `p`.`ParentID` >= @id2)
+	`p`.`ParentID` = @id1 OR `p`.`ParentID` >= @id1 OR
+	`p`.`ParentID` >= @id2
 ORDER BY
 	`p`.`ParentID`
 LIMIT 1
@@ -29,7 +30,8 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	(`p`.`ParentID` = @id1 OR `p`.`ParentID` >= @id1 OR `p`.`ParentID` >= @id2)
+	`p`.`ParentID` = @id1 OR `p`.`ParentID` >= @id1 OR
+	`p`.`ParentID` >= @id2
 ORDER BY
 	`p`.`ParentID`
 LIMIT 1

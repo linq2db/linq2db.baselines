@@ -2,13 +2,13 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	NULL::Int,
 	t1."ParentID",
 	t1."ParentID",
 	t1."Value1",
 	t1.c1,
 	t1."ParentID_1",
 	t1."Value1_1",
-	NULL::Int,
 	NULL::Int
 FROM
 	(
@@ -37,19 +37,19 @@ FROM
 UNION
 (
 	SELECT
-		NULL::Int,
-		NULL::Int,
-		NULL::Int,
-		NULL::Int,
-		NULL::Int,
-		NULL::Int,
 		t2."ParentID",
+		NULL::Int,
+		NULL::Int,
+		NULL::Int,
+		NULL::Int,
+		NULL::Int,
+		NULL::Int,
 		t2."Value1"
 	FROM
 		"Parent" t2
 			CROSS JOIN (
 				SELECT
-					*
+					1 as c1
 				FROM
 					"Child" c_2
 				FOR SHARE

@@ -14,10 +14,10 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "Issue3761Table"
 			(
-				LETO     Int       NOT NULL,
-				STEVILKA Int       NOT NULL,
+				LETO     Int             NOT NULL,
+				STEVILKA Int             NOT NULL,
 				DATUM    TimeStamp,
-				SKUPAJ   Decimal,
+				SKUPAJ   Decimal(18, 10),
 
 				CONSTRAINT "PK_Issue3761Table" PRIMARY KEY (LETO, STEVILKA)
 			)
@@ -26,8 +26,8 @@ END
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @DATUM TimeStamp -- DateTime
-SET     @DATUM = CAST('2019-01-01' AS timestamp)
+DECLARE @p TimeStamp -- DateTime
+SET     @p = CAST('2019-01-01' AS timestamp)
 
 SELECT
 	"t1"."Year_1",
@@ -48,7 +48,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n".DATUM < @DATUM
+			"n".DATUM < @p
 	) "t1"
 GROUP BY
 	"t1"."Year_1",
@@ -73,7 +73,7 @@ FROM
 		FROM
 			"Issue3761Table" "n_1"
 		WHERE
-			"n_1".DATUM >= @DATUM
+			"n_1".DATUM >= @p
 	) "t2"
 GROUP BY
 	"t2"."Year_1",

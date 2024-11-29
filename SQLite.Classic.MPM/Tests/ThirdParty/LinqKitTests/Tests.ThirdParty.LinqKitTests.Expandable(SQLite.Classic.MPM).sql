@@ -16,7 +16,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Person] [i_1]
 		WHERE

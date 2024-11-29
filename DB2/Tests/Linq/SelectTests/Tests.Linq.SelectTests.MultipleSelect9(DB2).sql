@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+DECLARE @Length Integer(4) -- Int32
+SET     @Length = 2
 
 SELECT
-	("p2"."PersonID" * 2) / 2,
-	"p2"."FirstName"
+	("p5"."PersonID" * CAST(@Length AS Int)) / 2,
+	"p5"."FirstName"
 FROM
-	"Person" "p2"
+	"Person" "p5"
 

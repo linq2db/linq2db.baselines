@@ -165,7 +165,8 @@ SELECT
 	"a_ObjectB"."Id",
 	"a_ObjectB"."FK",
 	"a_ObjectC"."Id",
-	"a_ObjectC"."FK"
+	"a_ObjectC"."FK",
+	"a_ObjectB"."Id"
 FROM
 	"EntityA" t1
 		INNER JOIN "EntityB" "a_ObjectB" ON t1."FK" = "a_ObjectB"."Id"

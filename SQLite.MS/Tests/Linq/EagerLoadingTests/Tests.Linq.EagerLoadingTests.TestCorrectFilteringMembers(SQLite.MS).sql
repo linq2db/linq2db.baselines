@@ -50,7 +50,7 @@ FROM
 UNION ALL
 SELECT
 	[e].[Id1],
-	'Str',
+	CAST('Str' AS NVarChar(255)),
 	[e].[ByteValues]
 FROM
 	[MasterClass] [e]

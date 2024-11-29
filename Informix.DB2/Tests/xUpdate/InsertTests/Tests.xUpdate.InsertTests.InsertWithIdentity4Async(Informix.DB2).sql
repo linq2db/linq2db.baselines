@@ -39,8 +39,8 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John0'
 
 SELECT FIRST 2
 	p.FirstName,
@@ -51,7 +51,7 @@ SELECT FIRST 2
 FROM
 	Person p
 WHERE
-	p.FirstName = @FirstName AND p.LastName = 'Shepard'
+	p.FirstName = @p AND p.LastName = 'Shepard'
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
@@ -86,8 +86,8 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John1'
 
 SELECT FIRST 2
 	p.FirstName,
@@ -98,7 +98,7 @@ SELECT FIRST 2
 FROM
 	Person p
 WHERE
-	p.FirstName = @FirstName AND p.LastName = 'Shepard'
+	p.FirstName = @p AND p.LastName = 'Shepard'
 
 BeforeExecute
 -- Informix.DB2 Informix

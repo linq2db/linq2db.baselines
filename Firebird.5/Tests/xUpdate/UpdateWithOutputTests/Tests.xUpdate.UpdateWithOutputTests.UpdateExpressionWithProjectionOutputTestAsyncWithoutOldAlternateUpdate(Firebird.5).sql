@@ -121,7 +121,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"TableWithData" "s"
 				INNER JOIN "DestinationTable" "t" ON "t"."Id" = "s"."Id"

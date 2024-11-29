@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @p Text(2) -- String
-SET     @p = 'oh'
 
 SELECT
 	p."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Position(:p in p."FirstName") - 1 = 1 AND p."PersonID" = 1
+	Position('oh' in p."FirstName") = 2 AND p."PersonID" = 1
 

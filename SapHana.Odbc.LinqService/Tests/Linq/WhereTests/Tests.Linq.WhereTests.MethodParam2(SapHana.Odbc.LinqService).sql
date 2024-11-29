@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"p"."PersonID"
@@ -12,8 +12,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"p"."PersonID"

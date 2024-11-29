@@ -9,7 +9,7 @@ FROM
 			child_1.ParentID,
 			child_1.ChildID
 		FROM
-			Parent parent_1,
+			Parent t1,
 			Parent s,
 			Child child_1
 	) sub

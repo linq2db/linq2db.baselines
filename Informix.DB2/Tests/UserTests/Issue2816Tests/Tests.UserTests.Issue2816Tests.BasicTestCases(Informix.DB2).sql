@@ -131,7 +131,7 @@ SELECT
 FROM
 	Issue2816Table p
 WHERE
-	(p.Text IS NULL OR LTRIM(p.Text, '	' || chr(10) || '' || chr(13) || '  ') = '')
+	p.Text IS NULL OR LTRIM(p.Text, '	' || chr(10) || '' || chr(13) || '  ') = ''
 
 BeforeExecute
 -- Informix.DB2 Informix

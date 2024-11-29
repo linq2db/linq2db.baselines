@@ -18,8 +18,8 @@ CREATE COLUMN TABLE "Issue3761Table"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @DATUM  -- DateTime
-SET     @DATUM = '2019-01-01'
+DECLARE @p  -- DateTime
+SET     @p = '2019-01-01'
 
 SELECT
 	"t1"."Year_1",

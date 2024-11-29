@@ -81,11 +81,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	CASE
-		WHEN [l].[Value1] IS NOT NULL THEN 1
-		ELSE 0
-	END as [c1],
-	[l].[Value1]
+	[l].[Value1] as [HasValue]
 FROM
 	[Table1788] [p]
 		LEFT JOIN [Table1788] [l] ON [l].[Id] = [p].[Id] + 1

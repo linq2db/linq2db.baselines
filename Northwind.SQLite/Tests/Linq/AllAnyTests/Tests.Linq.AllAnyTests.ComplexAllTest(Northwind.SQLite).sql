@@ -21,20 +21,21 @@ FROM
 		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 WHERE
-	(NOT EXISTS(
+	NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Customers] [c_1]
 		WHERE
 			[c_1].[CustomerID] = [a_Customer].[CustomerID] AND
 			[c_1].[CompanyName] NOT LIKE 'A%' ESCAPE '~'
-	) OR NOT EXISTS(
+	) OR
+	NOT EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Employees] [e]
 		WHERE
 			[e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[FirstName] NOT LIKE '%t' ESCAPE '~'
-	))
+	)
 

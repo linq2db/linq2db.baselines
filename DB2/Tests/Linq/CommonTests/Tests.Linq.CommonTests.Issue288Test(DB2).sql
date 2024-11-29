@@ -11,14 +11,14 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ID VarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p VarChar(4) -- String
+SET     @p = 'John'
 
 SELECT
 	"p"."FirstName"
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @ID
+	"p"."FirstName" = @p
 FETCH NEXT 1 ROWS ONLY
 

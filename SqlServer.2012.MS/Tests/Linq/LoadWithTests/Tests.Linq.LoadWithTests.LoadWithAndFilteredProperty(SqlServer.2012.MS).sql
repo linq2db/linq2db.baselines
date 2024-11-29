@@ -335,7 +335,7 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON ([m_2].[Id] = [d_1].[ParentId] OR [m_2].[Id] IS NULL AND [d_1].[ParentId] IS NULL)
+		INNER JOIN [SubItem2] [d_1] ON [m_2].[Id] = [d_1].[ParentId] OR [m_2].[Id] IS NULL AND [d_1].[ParentId] IS NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -402,7 +402,7 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON ([m_2].[Id] = [d_1].[ParentId] OR [m_2].[Id] IS NULL AND [d_1].[ParentId] IS NULL)
+		INNER JOIN [SubItem2] [d_1] ON [m_2].[Id] = [d_1].[ParentId] OR [m_2].[Id] IS NULL AND [d_1].[ParentId] IS NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

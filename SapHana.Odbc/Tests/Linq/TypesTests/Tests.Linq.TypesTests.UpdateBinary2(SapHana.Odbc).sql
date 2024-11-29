@@ -2,8 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = x'0102030405'
-DECLARE @ID  -- Int32
-SET     @ID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 UPDATE
 	"LinqDataTypes" "t"
@@ -16,8 +16,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = x'0504030201'
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 UPDATE
 	"LinqDataTypes" "t"

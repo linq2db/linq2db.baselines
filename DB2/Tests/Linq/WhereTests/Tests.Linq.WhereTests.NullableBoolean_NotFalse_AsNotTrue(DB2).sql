@@ -29,7 +29,7 @@ SELECT
 FROM
 	"NullableBool" "r"
 WHERE
-	("r"."Bool" = 1 OR "r"."Bool" IS NULL)
+	"r"."Bool" = 1 OR "r"."Bool" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -27,7 +27,7 @@ INSERT INTO BlobClass
 VALUES
 (
 	1,
-	@BlobValue
+	@BlobValue::byte
 )
 
 BeforeExecute
@@ -49,7 +49,7 @@ SET     @BlobValue = {3,2,1}
 UPDATE
 	BlobClass t1
 SET
-	BlobValue = @BlobValue
+	BlobValue = @BlobValue::byte
 WHERE
 	t1.Id = 1
 

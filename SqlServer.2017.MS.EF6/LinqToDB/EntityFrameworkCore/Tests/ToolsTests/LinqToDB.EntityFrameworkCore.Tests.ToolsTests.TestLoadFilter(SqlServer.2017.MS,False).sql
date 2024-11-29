@@ -32,3 +32,102 @@ WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([p].[IsDeleted] = CAST(0 AS bit)
 ORDER BY [p].[ProductID], [t3].[OrderID0], [t3].[ProductID], [t3].[OrderID], [t3].[ProductID0], [t3].[SupplierID]
 
 
+BeginTransactionAsync(RepeatableRead)
+
+
+--  SqlServer.2017 (asynchronously)
+
+SELECT
+	[m_1].[SupplierId],
+	[m_1].[ProductId],
+	[d_1].[IsDeleted],
+	[d_1].[ProductID],
+	[d_1].[ProductName],
+	[d_1].[SupplierID],
+	[d_1].[CategoryID],
+	[d_1].[QuantityPerUnit],
+	[d_1].[UnitPrice],
+	[d_1].[UnitsInStock],
+	[d_1].[UnitsOnOrder],
+	[d_1].[ReorderLevel],
+	[d_1].[Discontinued]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Supplier].[SupplierID] as [SupplierId],
+			[t1].[ProductId]
+		FROM
+			(
+				SELECT DISTINCT
+					[e].[ProductID] as [ProductId]
+				FROM
+					[Products] [e]
+				WHERE
+					[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+			) [t1]
+				INNER JOIN [Order Details] [d] ON [t1].[ProductId] = [d].[ProductID]
+				INNER JOIN [Orders] [e_1] ON [d].[OrderID] = [e_1].[OrderID]
+				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
+				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND ([a_Supplier].[IsDeleted] = 0 OR [a_Supplier].[IsDeleted] = 0)
+		WHERE
+			([e_1].[IsDeleted] = 0 OR [e_1].[IsDeleted] = 0) AND
+			([a_Product].[IsDeleted] = 0 OR [a_Product].[IsDeleted] = 0) AND
+			([e_1].[IsDeleted] = 0 OR [e_1].[IsDeleted] = 0) AND
+			([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+	) [m_1]
+		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
+WHERE
+	[d_1].[IsDeleted] = 0 OR [d_1].[IsDeleted] = 0
+
+
+
+--  SqlServer.2017 (asynchronously)
+
+SELECT
+	[m_1].[ProductID],
+	[d].[Discount],
+	[e].[IsDeleted],
+	[e].[OrderID],
+	[e].[CustomerID],
+	[e].[EmployeeID],
+	[e].[OrderDate],
+	[e].[RequiredDate],
+	[e].[ShippedDate],
+	[e].[ShipVia],
+	[e].[Freight],
+	[e].[ShipName],
+	[e].[ShipAddress],
+	[e].[ShipCity],
+	[e].[ShipRegion],
+	[e].[ShipPostalCode],
+	[e].[ShipCountry],
+	[a_Supplier].[SupplierID]
+FROM
+	[Products] [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[ProductID] = [d].[ProductID]
+		INNER JOIN [Orders] [e] ON [d].[OrderID] = [e].[OrderID]
+		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND ([a_Supplier].[IsDeleted] = 0 OR [a_Supplier].[IsDeleted] = 0)
+WHERE
+	([m_1].[IsDeleted] = 0 OR [m_1].[IsDeleted] = 0) AND
+	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND
+	([m_1].[IsDeleted] = 0 OR [m_1].[IsDeleted] = 0) AND
+	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND
+	([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+
+
+
+DisposeTransactionAsync
+
+
+--  SqlServer.2017 (asynchronously)
+
+SELECT
+	[p].[ProductName],
+	[p].[ProductID]
+FROM
+	[Products] [p]
+WHERE
+	[p].[IsDeleted] = 0 OR [p].[IsDeleted] = 0
+
+
+

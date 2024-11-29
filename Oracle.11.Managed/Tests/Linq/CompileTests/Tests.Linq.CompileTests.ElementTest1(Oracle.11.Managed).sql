@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	c_1."ParentID",
@@ -9,12 +9,12 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= 1
+	c_1."ParentID" = :p AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ParentID Int32
-SET     @ParentID = 2
+DECLARE @p Int32
+SET     @p = 2
 
 SELECT
 	c_1."ParentID",
@@ -22,5 +22,5 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= 1
+	c_1."ParentID" = :p AND ROWNUM <= 1
 

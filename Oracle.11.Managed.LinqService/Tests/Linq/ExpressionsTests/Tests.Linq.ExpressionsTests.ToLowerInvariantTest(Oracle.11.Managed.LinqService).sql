@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	p."Taxonomy"
+	Lower(p."Taxonomy")
 FROM
 	"Doctor" p
 WHERE

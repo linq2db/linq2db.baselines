@@ -11,8 +11,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID NVarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'John'
 
 SELECT
 	"p"."FirstName"

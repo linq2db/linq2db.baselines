@@ -48,10 +48,10 @@ SELECT
 FROM
 	StringTypesTable t
 WHERE
-	startsWith(t.CharColumn, 'some') AND
-	startsWith(t.NCharColumn, 'some') AND
-	startsWith(t.VarCharColumn, 'some') AND
-	startsWith(t.NVarCharColumn, 'some')
+	startsWith(t.CharColumn, 'some') = true AND
+	startsWith(t.NCharColumn, 'some') = true AND
+	startsWith(t.VarCharColumn, 'some') = true AND
+	startsWith(t.NVarCharColumn, 'some') = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -136,8 +136,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = N'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = N'Y'
 
 SELECT
 	[r].[Id],
@@ -147,7 +147,8 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] IS NULL
+	[r].[Bool1] = @true_value AND [r].[Bool2] IS NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -199,8 +200,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = N'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = N'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 
@@ -212,12 +213,13 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = @Bool3 AND [r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL
+	[r].[Bool3] = @true_value AND [r].[Bool1] = @Bool1 AND
+	[r].[Bool2] IS NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = N'N'
+DECLARE @false_value Char(1) -- AnsiStringFixedLength
+SET     @false_value = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
 SET     @Bool3 = N'Y'
 
@@ -229,7 +231,8 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
+	[r].[Bool1] = @false_value AND [r].[Bool2] IS NULL AND
+	[r].[Bool3] = @Bool3
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -267,8 +270,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = N'N'
+DECLARE @false_value Char(1) -- AnsiStringFixedLength
+SET     @false_value = N'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
 SET     @Bool2 = N'Y'
 
@@ -280,7 +283,8 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
+	[r].[Bool1] = @false_value AND [r].[Bool2] = @Bool2 AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -337,8 +341,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
-SET     @Bool1 = N'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = N'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
 SET     @Bool2 = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -352,12 +356,13 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
+	[r].[Bool1] = @true_value AND [r].[Bool2] = @Bool2 AND
+	[r].[Bool3] = @Bool3
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
-SET     @Bool3 = N'Y'
+DECLARE @true_value Char(1) -- AnsiStringFixedLength
+SET     @true_value = N'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -371,7 +376,8 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = @Bool3 AND [r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2
+	[r].[Bool3] = @true_value AND [r].[Bool1] = @Bool1 AND
+	[r].[Bool2] = @Bool2
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

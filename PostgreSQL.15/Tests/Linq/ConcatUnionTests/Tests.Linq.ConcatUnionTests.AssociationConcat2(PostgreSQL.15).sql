@@ -6,14 +6,12 @@ SELECT
 FROM
 	(
 		SELECT
-			c_1."ParentID",
-			c_1."ChildID"
+			c_1."ParentID"
 		FROM
 			"Child" c_1
 		UNION ALL
 		SELECT
-			t1."ParentID",
-			t1."ChildID"
+			t1."ParentID"
 		FROM
 			"Child" t1
 	) c_2

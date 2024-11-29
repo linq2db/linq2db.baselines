@@ -32,3 +32,95 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR 
 ORDER BY [o].[OrderID], [t].[EmployeeID], [t1].[EmployeeID], [t1].[TerritoryID], [t1].[TerritoryID0], [t3].[OrderID], [t3].[ProductID]
 
 
+BeginTransactionAsync(RepeatableRead)
+
+
+--  SqlServer.2016 (asynchronously)
+
+SELECT
+	[m_1].[EmployeeId],
+	[d].[IsDeleted],
+	[d].[EmployeeID],
+	[d].[TerritoryID],
+	[e_1].[IsDeleted],
+	[e_1].[TerritoryID],
+	[e_1].[TerritoryDescription],
+	[e_1].[RegionID]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Employee].[EmployeeID] as [EmployeeId]
+		FROM
+			[Orders] [e]
+				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID]
+	) [m_1]
+		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
+		INNER JOIN [Territories] [e_1] ON [d].[TerritoryID] = [e_1].[TerritoryID]
+
+
+
+--  SqlServer.2016 (asynchronously)
+
+SELECT
+	[m_1].[OrderId],
+	[d].[IsDeleted],
+	[d].[OrderID],
+	[d].[ProductID],
+	[d].[UnitPrice],
+	[d].[Quantity],
+	[d].[Discount],
+	[e_1].[IsDeleted],
+	[e_1].[ProductID],
+	[e_1].[ProductName],
+	[e_1].[SupplierID],
+	[e_1].[CategoryID],
+	[e_1].[QuantityPerUnit],
+	[e_1].[UnitPrice],
+	[e_1].[UnitsInStock],
+	[e_1].[UnitsOnOrder],
+	[e_1].[ReorderLevel],
+	[e_1].[Discontinued]
+FROM
+	(
+		SELECT DISTINCT
+			[e].[OrderID] as [OrderId]
+		FROM
+			[Orders] [e]
+	) [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
+		INNER JOIN [Products] [e_1] ON [d].[ProductID] = [e_1].[ProductID]
+
+
+
+DisposeTransactionAsync
+
+
+--  SqlServer.2016 (asynchronously)
+
+SELECT
+	[a_Employee].[IsDeleted],
+	[a_Employee].[EmployeeID],
+	[a_Employee].[LastName],
+	[a_Employee].[FirstName],
+	[a_Employee].[Title],
+	[a_Employee].[TitleOfCourtesy],
+	[a_Employee].[BirthDate],
+	[a_Employee].[HireDate],
+	[a_Employee].[Address],
+	[a_Employee].[City],
+	[a_Employee].[Region],
+	[a_Employee].[PostalCode],
+	[a_Employee].[Country],
+	[a_Employee].[HomePhone],
+	[a_Employee].[Extension],
+	[a_Employee].[Photo],
+	[a_Employee].[Notes],
+	[a_Employee].[ReportsTo],
+	[a_Employee].[PhotoPath],
+	[o].[OrderID]
+FROM
+	[Orders] [o]
+		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+
+
+

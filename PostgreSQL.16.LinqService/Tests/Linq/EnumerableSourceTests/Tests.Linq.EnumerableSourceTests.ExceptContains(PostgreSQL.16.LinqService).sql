@@ -2,7 +2,10 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	r."PersonID"
+	CASE
+		WHEN r."PersonID" IN (1, 2, 3) THEN True
+		ELSE False
+	END
 FROM
 	"Person" r
 

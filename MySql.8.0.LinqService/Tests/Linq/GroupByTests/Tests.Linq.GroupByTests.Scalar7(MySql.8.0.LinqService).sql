@@ -2,9 +2,9 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	MAX(`g_1`.`ChildID`)
+	MAX(`id`.`ChildID`)
 FROM
-	`Child` `g_1`
+	`Child` `id`
 GROUP BY
-	`g_1`.`ParentID`
+	`id`.`ParentID`
 

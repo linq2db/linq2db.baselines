@@ -36,8 +36,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p Text(5) -- String
+SET     @p = 'John0'
 
 SELECT
 	p."FirstName",
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
 LIMIT 2
 
 BeforeExecute
@@ -81,8 +81,8 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @FirstName Text(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p Text(5) -- String
+SET     @p = 'John1'
 
 SELECT
 	p."FirstName",
@@ -93,7 +93,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard'
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
 LIMIT 2
 
 BeforeExecute

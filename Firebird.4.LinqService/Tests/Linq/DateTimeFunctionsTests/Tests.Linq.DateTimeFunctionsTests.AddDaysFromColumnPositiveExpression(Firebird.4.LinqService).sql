@@ -48,7 +48,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
+	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") > CAST('2018-01-02' AS TimeStamp)
 
 BeforeExecute
 -- Firebird.4 Firebird4

@@ -168,14 +168,13 @@ SET     @DeliveryCounterParty = '%C%'
 SELECT
 	al_group_3."AlertKey",
 	al_group_3."AlertCode",
-	t2."LastUpdate_1",
+	t2."LastUpdate",
 	t2."CargoId",
 	t2."DeliveryId",
 	t2."DeliveryCounterParty",
 	t2."DealId",
 	t2."ParcelId",
-	t2."CounterParty",
-	t2."LastUpdate"
+	t2."CounterParty"
 FROM
 	(
 		SELECT
@@ -185,8 +184,8 @@ FROM
 		FROM
 			(
 				SELECT
-					al_group."AlertKey",
 					al_group."AlertCode",
+					al_group."AlertKey",
 					al_group."CreationDate"
 				FROM
 					"Alert" al_group
@@ -199,7 +198,9 @@ FROM
 				LEFT JOIN "Trade" trade_1 ON al_group_1."AlertKey" = CAST(trade_1."DealId" AS VarChar(255))
 				LEFT JOIN "Nomin" nomin_1 ON al_group_1."AlertKey" = CAST(nomin_1."CargoId" AS VarChar(255))
 		WHERE
-			(nomin_1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR trade_1."CounterParty" LIKE :DeliveryCounterParty OR al_group_1."AlertCode" LIKE :DeliveryCounterParty)
+			nomin_1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR
+			trade_1."CounterParty" LIKE :DeliveryCounterParty OR
+			al_group_1."AlertCode" LIKE :DeliveryCounterParty
 		GROUP BY
 			al_group_1."AlertKey",
 			al_group_1."AlertCode",
@@ -213,13 +214,12 @@ FROM
 				trade_2."DealId",
 				trade_2."ParcelId",
 				trade_2."CounterParty",
-				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate",
-				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate_1"
+				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate"
 			FROM
 				(
 					SELECT
-						al_group_2."AlertKey",
 						al_group_2."AlertCode",
+						al_group_2."AlertKey",
 						al_group_2."CreationDate",
 						MAX(au_1."TransactionDate") as MAX_1
 					FROM

@@ -6,3 +6,12 @@ FROM [Products] AS [p]
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([p].[IsDeleted] <> CAST(1 AS bit))
 
 
+--  SqlServer.2016
+
+SELECT
+	[p].[QuantityPerUnit]
+FROM
+	[Products] [p]
+
+
+

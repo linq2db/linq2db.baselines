@@ -65,7 +65,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	("t"."Value" <> @value OR "t"."Value" IS NULL)
+	"t"."Value" <> @value OR "t"."Value" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

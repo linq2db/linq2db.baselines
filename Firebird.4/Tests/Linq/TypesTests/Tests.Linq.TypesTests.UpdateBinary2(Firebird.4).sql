@@ -2,29 +2,29 @@
 -- Firebird.4 Firebird4
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 UPDATE
 	"LinqDataTypes" "t"
 SET
 	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"t".ID = @ID
+	"t".ID = @p
 
 BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 UPDATE
 	"LinqDataTypes" "t"
 SET
 	"BinaryValue" = CAST(@BinaryValue AS BLOB)
 WHERE
-	"t".ID = @ID
+	"t".ID = @p
 
 BeforeExecute
 -- Firebird.4 Firebird4

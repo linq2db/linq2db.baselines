@@ -56,11 +56,11 @@ SET     @id = 3
 
 UPDATE
 	`MainTable` `a_MainOptional`,
-	`AssociatedTable` `pat`
+	`AssociatedTable` `p`
 SET
 	`a_MainOptional`.`Field` = 'test'
 WHERE
-	`pat`.`Id` = @id AND `pat`.`Id` = `a_MainOptional`.`Id`
+	`p`.`Id` = @id AND `p`.`Id` = `a_MainOptional`.`Id`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

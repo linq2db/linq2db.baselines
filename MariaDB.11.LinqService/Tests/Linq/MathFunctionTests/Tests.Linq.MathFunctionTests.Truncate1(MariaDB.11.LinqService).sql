@@ -2,14 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t_1`.`c1`
+	`t`.`c1`
 FROM
 	(
 		SELECT
-			Truncate(`t`.`MoneyValue`, 0) as `c1`
+			Truncate(`p`.`MoneyValue`, 0) as `c1`
 		FROM
-			`LinqDataTypes` `t`
-	) `t_1`
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	`t_1`.`c1` <> 0.1
+	`t`.`c1` <> 0.1
 

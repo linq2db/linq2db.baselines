@@ -670,6 +670,8 @@ BeforeExecute
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],
+	[a_ObjectBOptional].[Id],
+	IIF([a_ObjectBOptional].[Id] IS NOT NULL AND [a_ObjectC].[Id] IS NOT NULL, 1, 0),
 	[a_ObjectC].[Id],
 	[a_ObjectC].[FK]
 FROM

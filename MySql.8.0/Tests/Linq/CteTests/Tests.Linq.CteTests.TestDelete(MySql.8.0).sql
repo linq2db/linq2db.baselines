@@ -35,12 +35,11 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `CTE_1` (`ParentID`, `ChildID`)
+WITH `CTE_1` (`ParentID`)
 AS
 (
 	SELECT
-		`c_1`.`ParentID`,
-		`c_1`.`ChildID`
+		`c_1`.`ParentID`
 	FROM
 		`CteChild` `c_1`
 	WHERE

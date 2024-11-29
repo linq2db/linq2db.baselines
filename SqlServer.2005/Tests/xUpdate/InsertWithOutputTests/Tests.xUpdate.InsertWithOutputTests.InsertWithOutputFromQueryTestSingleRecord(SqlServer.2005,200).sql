@@ -56,8 +56,6 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @param Int -- Int32
 SET     @param = 200
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 200
 
 INSERT INTO [DestinationTable]
 (
@@ -66,13 +64,13 @@ INSERT INTO [DestinationTable]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
+	[s].[ValueStr] + CAST(@param AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
@@ -82,13 +80,11 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @param Int -- Int32
 SET     @param = 200
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 200
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
+	[s].[ValueStr] + CAST(@param AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE

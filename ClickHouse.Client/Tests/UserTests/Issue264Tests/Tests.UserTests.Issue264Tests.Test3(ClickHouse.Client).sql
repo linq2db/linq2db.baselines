@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t2.c1
+	t2.Key_1
 FROM
 	(
 		SELECT
-			MONTH(t1.DateTimeValue) as c1
+			MONTH(t1.DateTimeValue) as Key_1
 		FROM
 			LinqDataTypes t1
 	) t2
 GROUP BY
-	t2.c1
+	t2.Key_1
 

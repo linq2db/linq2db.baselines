@@ -15,5 +15,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	toDate(t.DateTimeValue) > toDateTime64('2009-09-20 00:00:00.0000000', 7)
+	toDate32(t.DateTimeValue) > toDateTime64('2009-09-20 00:00:00.0000000', 7)
 

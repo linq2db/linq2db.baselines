@@ -27,7 +27,7 @@ SET     @filter_1 = '%test%'
 SELECT
 	[q].[Id],
 	[q].[Name],
-	[q].[ContactEmail] as [CompositeEmails],
+	[q].[ContactEmail],
 	[q].[Enabled]
 FROM
 	[CustomerBase] [q]

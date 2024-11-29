@@ -2,14 +2,14 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"t_1"."c1"
+	"t"."c1"
 FROM
 	(
 		SELECT
-			Trunc("t"."MoneyValue", 0) as "c1"
+			Trunc("p"."MoneyValue", 0) as "c1"
 		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	"t_1"."c1" <> 0.1
+	"t"."c1" <> 0.1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2022 (asynchronously)
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT TOP (1)
 	[c_1].[ParentID],
@@ -9,12 +9,12 @@ SELECT TOP (1)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID
+	[c_1].[ParentID] = @p
 
 BeforeExecute
 -- SqlServer.2022 (asynchronously)
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT TOP (1)
 	[c_1].[ParentID],
@@ -22,5 +22,5 @@ SELECT TOP (1)
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ParentID] = @ParentID
+	[c_1].[ParentID] = @p
 

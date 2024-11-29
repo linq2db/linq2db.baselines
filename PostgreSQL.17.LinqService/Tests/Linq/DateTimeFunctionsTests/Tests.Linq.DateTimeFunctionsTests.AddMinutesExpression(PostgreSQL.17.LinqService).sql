@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = -8
+DECLARE @Minute Integer -- Int32
+SET     @Minute = -8
 
 SELECT
-	Floor(Extract(minute From (t."DateTimeValue" + :p * Interval '1 Minute')))::Int
+	Floor(Extract(minute From (t."DateTimeValue" + :Minute * Interval '1 Minute')))::Int
 FROM
 	"LinqDataTypes" t
 

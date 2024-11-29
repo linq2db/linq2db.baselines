@@ -42,8 +42,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1002
+DECLARE @p  -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)

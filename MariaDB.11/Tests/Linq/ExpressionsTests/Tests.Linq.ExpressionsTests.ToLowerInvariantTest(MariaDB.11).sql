@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p`.`Taxonomy`
+	Lower(`p`.`Taxonomy`)
 FROM
 	`Doctor` `p`
 WHERE

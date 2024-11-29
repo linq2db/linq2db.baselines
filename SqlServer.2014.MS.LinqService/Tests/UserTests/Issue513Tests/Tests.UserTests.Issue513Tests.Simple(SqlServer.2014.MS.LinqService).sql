@@ -2,9 +2,11 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t1].[TypeDiscriminator],
+	IIF([t1].[TypeDiscriminator] = 2, 1, 0),
 	[t1].[InheritanceParentId],
-	[t1].[Name]
+	[t1].[TypeDiscriminator],
+	[t1].[Name],
+	IIF([t1].[TypeDiscriminator] = 1, 1, 0)
 FROM
 	[InheritanceParent] [t1]
 
@@ -12,10 +14,12 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t1].[TypeDiscriminator],
+	IIF([t1].[TypeDiscriminator] = 2, 1, 0),
 	[t1].[InheritanceChildId],
+	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
-	[t1].[Name]
+	[t1].[Name],
+	IIF([t1].[TypeDiscriminator] = 1, 1, 0)
 FROM
 	[InheritanceChild] [t1]
 

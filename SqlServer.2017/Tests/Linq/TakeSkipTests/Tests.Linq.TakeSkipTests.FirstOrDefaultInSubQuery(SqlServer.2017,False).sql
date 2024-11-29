@@ -61,13 +61,13 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	[t1].[BatchId],
+	[t1].[Id],
 	[t1].[Date_1],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT TOP (2)
-			[x].[Id] as [BatchId],
+			[x].[Id],
 			(
 				SELECT TOP (1)
 					[a_Confirmations].[Date]
@@ -83,7 +83,7 @@ FROM
 			[x].[Id] DESC
 	) [t1]
 ORDER BY
-	[t1].[BatchId]
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2017

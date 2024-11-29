@@ -25,6 +25,8 @@ FROM
 	) [t3]
 WHERE
 	[t3].[RN] > @skip AND [t3].[RN] <= (@skip + @take)
+ORDER BY
+	[t3].[ParentID] DESC
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

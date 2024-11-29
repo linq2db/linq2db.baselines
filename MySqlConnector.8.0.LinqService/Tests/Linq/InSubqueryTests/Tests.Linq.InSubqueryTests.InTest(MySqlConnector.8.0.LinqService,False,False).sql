@@ -12,8 +12,6 @@ WHERE
 			`p`.`ParentID`
 		FROM
 			`Parent` `p`
-		WHERE
-			`p`.`ParentID` IS NOT NULL
 	)
 
 BeforeExecute

@@ -257,8 +257,6 @@ BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @param Integer -- Int32
 SET     @param = 100
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 100
 
 DELETE FROM
 	"TableWithData" "s"
@@ -267,7 +265,7 @@ WHERE
 RETURNING
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@param_1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(@param AS VarChar(11) CHARACTER SET UNICODE_FSS)
 
 BeforeExecute
 -- Firebird.2.5 Firebird

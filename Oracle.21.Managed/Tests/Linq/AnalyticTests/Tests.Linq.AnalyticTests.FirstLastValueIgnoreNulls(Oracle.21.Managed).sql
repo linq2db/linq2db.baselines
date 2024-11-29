@@ -45,15 +45,21 @@ DECLARE @group_1 Int32
 SET     @group_1 = 7
 
 SELECT
-	p."Id",
-	FIRST_VALUE(p."Id") OVER(ORDER BY p."Order" DESC),
-	FIRST_VALUE(p."Id" IGNORE NULLS) OVER(ORDER BY p."Order" DESC),
-	LAST_VALUE(p."Id") OVER(ORDER BY p."Order"),
-	LAST_VALUE(p."Id" IGNORE NULLS) OVER(ORDER BY p."Order")
+	p_1."Id",
+	FIRST_VALUE(p_1."Id") OVER(ORDER BY p_1."Order_1" DESC),
+	FIRST_VALUE(p_1."Id" IGNORE NULLS) OVER(ORDER BY p_1."Order_1" DESC),
+	LAST_VALUE(p_1."Id") OVER(ORDER BY p_1."Order_1"),
+	LAST_VALUE(p_1."Id" IGNORE NULLS) OVER(ORDER BY p_1."Order_1")
 FROM
-	"Position" p
-WHERE
-	p."Group" = :group_1
+	(
+		SELECT
+			p."Id",
+			p."Order" as "Order_1"
+		FROM
+			"Position" p
+		WHERE
+			p."Group" = :group_1
+	) p_1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

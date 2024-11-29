@@ -125,16 +125,16 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[t1].[Name] as [Value_1]
+	[t1].[Value_1]
 FROM
 	[Issue4160Person] [pe]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[cc].[Name]
+				[cc].[Name] as [Value_1]
 			FROM
 				[Issue4160City] [cc]
 			WHERE
-				([cc].[Code] = [pe].[Code] OR [cc].[Code] IS NULL AND [pe].[Code] IS NULL)
+				[cc].[Code] = [pe].[Code] OR [cc].[Code] IS NULL AND [pe].[Code] IS NULL
 		) [t1]
 
 BeforeExecute

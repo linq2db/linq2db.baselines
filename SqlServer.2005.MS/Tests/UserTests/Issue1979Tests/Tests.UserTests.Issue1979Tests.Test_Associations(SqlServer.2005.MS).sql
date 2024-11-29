@@ -61,7 +61,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Tagging] [x]
 				OUTER APPLY (
@@ -73,8 +73,7 @@ WHERE
 						CAST([x].[TagId] AS BigInt) = [a_Tag].[Id]
 				) [t1]
 		WHERE
-			[x].[TaggableType] = N'Issue' AND [i].[Id] = [x].[TaggableId] AND
-			[t1].[Name] = N'Visu'
+			[i].[Id] = [x].[TaggableId] AND [t1].[Name] = N'Visu'
 	)
 
 BeforeExecute

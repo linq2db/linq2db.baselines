@@ -82,14 +82,17 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"t1"."not_null",
+	"t1"."HasValue",
 	"t1"."Value_1"
 FROM
 	"Request" "a"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_Metrics"."Value" as "Value_1",
-				1 as "not_null"
+				CASE
+					WHEN "a_Metrics"."Value" IS NOT NULL THEN TRUE
+					ELSE FALSE
+				END as "HasValue"
 			FROM
 				"Metric" "a_Metrics"
 			WHERE

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2009-09-27'
+DECLARE @p  -- DateTime
+SET     @p = '2009-09-27'
 
 SELECT
 	"t1"."ID",

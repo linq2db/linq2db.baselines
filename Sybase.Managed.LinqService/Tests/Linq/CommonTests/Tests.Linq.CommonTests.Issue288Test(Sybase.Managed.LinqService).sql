@@ -10,13 +10,13 @@ WHERE
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ID UniVarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p UniVarChar(4) -- String
+SET     @p = 'John'
 
 SELECT TOP 1
 	[p].[FirstName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @ID
+	[p].[FirstName] = @p
 

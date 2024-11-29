@@ -1790,32 +1790,32 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.Id1,
+	m_2.Id1,
 	d.DetailId,
 	d.MasterId,
 	d.DetailValue
 FROM
 	(
 		SELECT DISTINCT
-			t2.Id1 as Id1
+			t1.Id1 as Id1
 		FROM
 			(
 				SELECT
-					t1.Id1 as Id1
+					m_1.Id1 as Id1
 				FROM
-					MasterClass t1
+					MasterClass m_1
 				ORDER BY
-					t1.Id2 DESC
+					m_1.Id2 DESC
 				LIMIT 20
-			) t2
-	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+			) t1
+	) m_2
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	m_1.Id1,
+	m_2.Id1,
 	d.Id1,
 	d.Id2,
 	d.Value,
@@ -1823,29 +1823,29 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t2.Id1 as Id1
+			t1.Id1 as Id1
 		FROM
 			(
 				SELECT
-					t1.Id1 as Id1
+					m_1.Id1 as Id1
 				FROM
-					MasterClass t1
+					MasterClass m_1
 				ORDER BY
-					t1.Id2 DESC
+					m_1.Id2 DESC
 				LIMIT 20
-			) t2
-	) m_1
-		INNER JOIN MasterClass d ON m_1.Id1 = d.Id1
+			) t1
+	) m_2
+		INNER JOIN MasterClass d ON m_2.Id1 = d.Id1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.Id1
+	m_1.Id1
 FROM
-	MasterClass t1
+	MasterClass m_1
 ORDER BY
-	t1.Id2 DESC
+	m_1.Id2 DESC
 LIMIT 20
 
 BeforeExecute

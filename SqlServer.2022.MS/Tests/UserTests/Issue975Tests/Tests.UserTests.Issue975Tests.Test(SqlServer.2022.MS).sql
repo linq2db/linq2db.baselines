@@ -152,11 +152,11 @@ WHERE
 	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate()) AND
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[TaskStages] [d]
 		WHERE
-			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND ([d].[StageId] < 9000 OR [d].[StageId] IS NULL)
+			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND [d].[StageId] < 9000
 	)
 
 BeforeExecute

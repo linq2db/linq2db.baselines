@@ -76,27 +76,27 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
+DECLARE @In VarChar -- String
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" IN (@CEnum, @CEnum)
+	"s"."CEnum" IN (@In, @In)
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @CEnum VarChar -- String
-SET     @CEnum = NULL
+DECLARE @NotIn VarChar -- String
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	"s"."CEnum" NOT IN (@CEnum, @CEnum)
+	"s"."CEnum" NOT IN (@NotIn, @NotIn)
 
 BeforeExecute
 -- Firebird.3 Firebird3

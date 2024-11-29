@@ -52,8 +52,6 @@ BeforeExecute
 
 SELECT
 	"m_1"."Id",
-	"d"."Id",
-	"d"."ItemId",
 	"d"."Value"
 FROM
 	(
@@ -75,8 +73,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."Id",
-	"t1"."Text"
+	"x_1"."Id",
+	"x_1"."Text"
 FROM
 	(
 		SELECT
@@ -89,12 +87,12 @@ FROM
 					"ItemValue" "a_Values"
 				WHERE
 					"x"."Id" = "a_Values"."ItemId"
-			) as SUM_1
+			) as "c1"
 		FROM
 			"Item" "x"
-	) "t1"
+	) "x_1"
 ORDER BY
-	"t1".SUM_1
+	"x_1"."c1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -13,7 +13,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Person] [p]
 				CROSS APPLY (
@@ -29,7 +29,7 @@ WHERE
 	) AND
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Person] [p_1]
 				CROSS APPLY (

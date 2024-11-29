@@ -107,47 +107,6 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"m_1"."Name",
-	"d"."Id",
-	"d"."Name",
-	"d"."Enabled",
-	"d"."ImageFullUrl"
-FROM
-	(
-		SELECT DISTINCT
-			"s"."Name"
-		FROM
-			"Stone" "s"
-		WHERE
-			"s"."Enabled" = '1' AND "s"."Name" NOT STARTING WITH 'level - ' AND
-			Char_Length("s"."ImageFullUrl") > 0
-	) "m_1"
-		INNER JOIN "Stone" "d" ON "m_1"."Name" = "d"."Name"
-WHERE
-	"d"."Enabled" = '1' AND "d"."Name" NOT STARTING WITH 'level - ' AND
-	Char_Length("d"."ImageFullUrl") > 0
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"sG"."Name"
-FROM
-	"Stone" "sG"
-WHERE
-	"sG"."Enabled" = '1' AND "sG"."Name" NOT STARTING WITH 'level - ' AND
-	Char_Length("sG"."ImageFullUrl") > 0
-GROUP BY
-	"sG"."Name"
-
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

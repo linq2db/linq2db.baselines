@@ -14,6 +14,17 @@
 					END
 
 
+--  SqlServer.2017
+DECLARE @commandExecutionTime Int -- Int32
+SET     @commandExecutionTime = 5
+
+SELECT TOP (1)
+	dbo.ProcessLong(@commandExecutionTime)
+FROM
+	[Products] [e]
+
+
+
 DROP FUNCTION IF EXISTS [dbo].[ProcessLong]
 
 

@@ -5,7 +5,7 @@ SELECT
 	[p].[ChildID],
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[GrandChild] [a_GrandChildren]
 		WHERE
@@ -18,7 +18,7 @@ SELECT
 	[p_1].[ChildID],
 	IIF(EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[GrandChild] [a_GrandChildren_1]
 		WHERE

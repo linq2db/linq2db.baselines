@@ -71,10 +71,6 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	CASE
-		WHEN l.Value1 IS NOT NULL THEN true
-		ELSE false
-	END,
 	l.Value1
 FROM
 	Table1788 p

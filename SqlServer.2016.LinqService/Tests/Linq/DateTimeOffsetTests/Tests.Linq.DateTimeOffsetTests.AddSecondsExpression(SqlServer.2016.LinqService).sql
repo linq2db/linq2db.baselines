@@ -485,11 +485,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @p Int -- Int32
-SET     @p = -35
+DECLARE @Second Int -- Int32
+SET     @Second = -35
 
 SELECT
-	DatePart(second, DateAdd(second, @p, [t].[TransactionDate]))
+	DatePart(second, DateAdd(second, @Second, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

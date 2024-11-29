@@ -51,13 +51,13 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @ChildID Integer(4) -- Int32
-SET     @ChildID = 1002
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ChildID" = @ChildID
+	"c_1"."ChildID" = @p
 

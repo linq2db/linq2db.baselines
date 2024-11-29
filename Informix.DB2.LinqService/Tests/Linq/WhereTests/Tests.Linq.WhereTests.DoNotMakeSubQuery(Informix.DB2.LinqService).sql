@@ -3,7 +3,7 @@
 
 SELECT
 	p2.PersonID,
-	p2.FirstName || chr(13) || chr(13) || chr(13)
+	RTRIM((p2.FirstName || chr(13) || chr(13) || chr(13)), chr(13))
 FROM
 	Person p2
 WHERE

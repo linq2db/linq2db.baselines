@@ -192,7 +192,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			(
 				SELECT
@@ -203,8 +203,7 @@ WHERE
 				WHERE
 					[x].[ParentID] > 1000
 				ORDER BY
-					[x].[ParentID],
-					[x].[Value1]
+					[x].[ParentID]
 				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 			) [t1]
 		WHERE

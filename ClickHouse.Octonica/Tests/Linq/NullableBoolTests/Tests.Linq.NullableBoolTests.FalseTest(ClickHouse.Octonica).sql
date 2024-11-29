@@ -52,7 +52,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	(t.Value = true OR t.Value IS NULL)
+	t.Value = true OR t.Value IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

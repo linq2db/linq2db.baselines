@@ -1,0 +1,129 @@
+﻿BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_BaseThing`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue4364_BaseThing`
+(
+	`Id`                INT NOT NULL,
+	`Type`              INT NOT NULL,
+	`BaseField`         INT NOT NULL,
+	`ConcreteField`     INT     NULL,
+	`IntermediateField` INT     NULL,
+
+	CONSTRAINT `PK_Issue4364_BaseThing` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+INSERT INTO `Issue4364_BaseThing`
+(
+	`Id`,
+	`Type`,
+	`BaseField`,
+	`ConcreteField`,
+	`IntermediateField`
+)
+VALUES
+(1,1,2,0,0),
+(2,2,3,4,0),
+(3,101,4,0,6),
+(4,102,5,0,0)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_Person`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue4364_Person`
+(
+	`Id`       INT           NOT NULL,
+	`FullName` VARCHAR(4000) NOT NULL,
+
+	CONSTRAINT `PK_Issue4364_Person` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+INSERT INTO `Issue4364_Person`
+(
+	`Id`,
+	`FullName`
+)
+VALUES
+(1,'Person 1'),
+(2,'Person 2'),
+(3,'Person 3'),
+(4,'Person 4'),
+(5,'Person 5')
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_Interaction`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+CREATE TABLE IF NOT EXISTS `Issue4364_Interaction`
+(
+	`Id`       INT NOT NULL,
+	`PersonId` INT NOT NULL,
+	`ThingId`  INT NOT NULL,
+
+	CONSTRAINT `PK_Issue4364_Interaction` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+INSERT INTO `Issue4364_Interaction`
+(
+	`Id`,
+	`PersonId`,
+	`ThingId`
+)
+VALUES
+(1,2,3),
+(2,3,4),
+(3,4,1),
+(4,1,2)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`x`.`Type`,
+	`p`.`FullName`
+FROM
+	`Issue4364_BaseThing` `x`
+		INNER JOIN `Issue4364_Interaction` `i` ON `x`.`Id` = `i`.`ThingId`
+		INNER JOIN `Issue4364_Person` `p` ON `i`.`PersonId` = `p`.`Id`
+WHERE
+	`x`.`Type` = 101 OR `x`.`Type` = 102
+ORDER BY
+	`x`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_Interaction`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_Person`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TABLE IF EXISTS `Issue4364_BaseThing`
+

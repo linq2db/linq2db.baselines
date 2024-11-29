@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @GuidValue Guid
-SET     @GuidValue = X'40932FDB15434E4AAC2CCA371604FB4B'
+DECLARE @p Guid
+SET     @p = X'40932FDB15434E4AAC2CCA371604FB4B'
 
 SELECT
 	"p".ID,
@@ -15,13 +15,13 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."GuidValue" = @GuidValue
+	"p"."GuidValue" = @p
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @GuidValue Guid
-SET     @GuidValue = X'D2F970C035AC49879CD55BADB1757436'
+DECLARE @p Guid
+SET     @p = X'D2F970C035AC49879CD55BADB1757436'
 
 SELECT
 	"p".ID,
@@ -35,6 +35,6 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."GuidValue" = @GuidValue
+	"p"."GuidValue" = @p
 FETCH NEXT 2 ROWS ONLY
 

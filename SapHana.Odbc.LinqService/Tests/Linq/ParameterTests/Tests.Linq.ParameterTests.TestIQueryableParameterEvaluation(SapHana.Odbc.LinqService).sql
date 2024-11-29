@@ -2,10 +2,10 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 1
-DECLARE @ID  -- Int32
-SET     @ID = 0
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 0
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"t1"."FirstName",
@@ -42,12 +42,12 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 3
+DECLARE @p  -- Int32
+SET     @p = 3
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 2
-DECLARE @ID  -- Int32
-SET     @ID = 3
+DECLARE @p  -- Int32
+SET     @p = 3
 
 SELECT
 	"t1"."FirstName",
@@ -84,10 +84,10 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 4
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 4
+DECLARE @p  -- Int32
+SET     @p = 2
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 3
 
@@ -128,10 +128,10 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 1
-DECLARE @ID  -- Int32
-SET     @ID = 0
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 0
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"t1"."FirstName",
@@ -168,10 +168,10 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 4
-DECLARE @ID  -- Int32
-SET     @ID = 2
+DECLARE @p  -- Int32
+SET     @p = 4
+DECLARE @p  -- Int32
+SET     @p = 2
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 3
 
@@ -210,12 +210,12 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
-SET     @ID = 3
+DECLARE @p  -- Int32
+SET     @p = 3
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 2
-DECLARE @ID  -- Int32
-SET     @ID = 3
+DECLARE @p  -- Int32
+SET     @p = 3
 
 SELECT
 	"t1"."FirstName",

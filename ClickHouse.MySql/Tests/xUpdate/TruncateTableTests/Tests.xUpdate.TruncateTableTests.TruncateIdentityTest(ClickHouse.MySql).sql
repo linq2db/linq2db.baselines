@@ -25,7 +25,7 @@ INSERT INTO TestIdTrun
 )
 VALUES
 (
-	toDecimal64('1', 10)
+	toDecimal128('1', 10)
 )
 
 BeforeExecute
@@ -37,7 +37,7 @@ INSERT INTO TestIdTrun
 )
 VALUES
 (
-	toDecimal64('1', 10)
+	toDecimal128('1', 10)
 )
 
 BeforeExecute
@@ -66,7 +66,7 @@ INSERT INTO TestIdTrun
 )
 VALUES
 (
-	toDecimal64('1', 10)
+	toDecimal128('1', 10)
 )
 
 BeforeExecute
@@ -78,7 +78,7 @@ INSERT INTO TestIdTrun
 )
 VALUES
 (
-	toDecimal64('1', 10)
+	toDecimal128('1', 10)
 )
 
 BeforeExecute

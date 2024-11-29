@@ -518,7 +518,7 @@ FROM
 		WHERE
 			[a_Book].[Discriminator] = N'Roman' AND EXISTS(
 				SELECT
-					*
+					1
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -546,7 +546,7 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = N'Roman' AND EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[Author] [t2]
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]

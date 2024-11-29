@@ -2,14 +2,14 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] <> 4.5, 1, 0) as [c1]
+			IIF([t].[MoneyValue] <> 4.5, 1, 0) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] = 0
+	[p].[c1] = 0
 

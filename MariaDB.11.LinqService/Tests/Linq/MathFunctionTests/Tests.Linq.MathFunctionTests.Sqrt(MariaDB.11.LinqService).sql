@@ -2,14 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t_1`.`c1`
+	`t`.`c1`
 FROM
 	(
 		SELECT
-			Floor(Sqrt(`t`.`MoneyValue` / 15) * 15) as `c1`
+			Floor(Sqrt(`p`.`MoneyValue` / 15) * 15) as `c1`
 		FROM
-			`LinqDataTypes` `t`
-	) `t_1`
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	`t_1`.`c1` <> 0.10000000000000001
+	`t`.`c1` <> 0.10000000000000001
 

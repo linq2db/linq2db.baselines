@@ -44,6 +44,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 6
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 102
+DECLARE @p Int -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
 -- SqlCe
@@ -29,24 +29,24 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN [r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL
+		WHEN [t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL
 			THEN 1
 		ELSE 0
 	END as [c1],
-	[r].[BigIntValue] as [TargetType],
-	[r].[IntValue] as [TargetID]
+	[t1].[BigIntValue] as [TargetType],
+	[t1].[IntValue] as [TargetID]
 FROM
-	[LinqDataTypes] [r]
+	[LinqDataTypes] [t1]
 WHERE
-	[r].[ID] = 101
+	[t1].[ID] = 101
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 102
+DECLARE @p Int -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 

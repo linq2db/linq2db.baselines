@@ -15,7 +15,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -28,7 +28,8 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	((`o`.`ParentID` IN (1, 2, 3) OR `o`.`ParentID` IS NULL) OR `o`.`ParentID` = @param)
+	(`o`.`ParentID` IN (1, 2, 3) OR `o`.`ParentID` IS NULL) OR
+	`o`.`ParentID` = @param
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -47,7 +48,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param)
+	`o`.`ParentID` IN (@p, @p_1, @p_2) OR `o`.`ParentID` = @param
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -60,5 +61,6 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	((`o`.`ParentID` IN (4, 5, 6) OR `o`.`ParentID` IS NULL) OR `o`.`ParentID` = @param)
+	(`o`.`ParentID` IN (4, 5, 6) OR `o`.`ParentID` IS NULL) OR
+	`o`.`ParentID` = @param
 

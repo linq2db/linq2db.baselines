@@ -164,14 +164,14 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	g_2.c1,
+	g_2."Key_1",
 	ARRAY_AGG(ALL g_2.v ORDER BY g_2."Id"),
 	ARRAY_AGG(g_2.v ORDER BY g_2."Id" DESC, g_2.v),
 	ARRAY_AGG(g_2.v)
 FROM
 	(
 		SELECT
-			g_1."Id" / 3 as c1,
+			g_1."Id" / 3 as "Key_1",
 			g_1."Id",
 			v as v
 		FROM
@@ -179,7 +179,7 @@ FROM
 				INNER JOIN LATERAL UNNEST(g_1."StrArray") v ON 1=1
 	) g_2
 GROUP BY
-	g_2.c1
+	g_2."Key_1"
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

@@ -3,7 +3,7 @@
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [Item1],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

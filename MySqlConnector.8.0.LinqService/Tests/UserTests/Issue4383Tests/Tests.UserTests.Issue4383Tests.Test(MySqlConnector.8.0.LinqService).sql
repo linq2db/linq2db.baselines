@@ -208,6 +208,7 @@ SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
 	`d`.`CHAIN_ID`,
+	`a_Chain`.`CHAIN_ID`,
 	`a_Chain`.`CHAIN_ID`
 FROM
 	`PUMPLINES` `m_1`
@@ -220,6 +221,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`
 FROM
 	`PUMPLINES` `t1`
