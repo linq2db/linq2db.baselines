@@ -17,7 +17,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	CAST(@param AS INTEGER) = [t1].[SmallIntValue]
+	CAST(@param AS INTEGER) = [t1].[SmallIntValue] OR CAST(@param AS INTEGER) IS NULL AND [t1].[SmallIntValue] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

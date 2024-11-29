@@ -29,7 +29,7 @@ FROM
 				([t].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1))
 			GROUP BY
 				[t].[ID]
-		) [t1] ON [o].[ID] = [t1].[ID] AND (strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) = strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL)
+		) [t1] ON [o].[ID] = [t1].[ID] AND strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) = strftime('%Y-%m-%d %H:%M:%f', [t1].[c1])
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', Coalesce([o].[DateTimeValue], [o].[DateTimeValue2])) <= strftime('%Y-%m-%d %H:%M:%f', @currentDate) AND
 	([o].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1))
