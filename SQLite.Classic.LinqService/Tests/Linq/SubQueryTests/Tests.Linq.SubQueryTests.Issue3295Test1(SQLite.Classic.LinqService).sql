@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[x_1].[Id],
+	[x_1].[c1],
 	[x_1].[StatusName]
 FROM
 	(
@@ -14,7 +14,7 @@ FROM
 			CASE
 				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID]
 				ELSE [x].[PersonID]
-			END as [Id]
+			END as [c1]
 		FROM
 			[Person] [x]
 				LEFT JOIN (

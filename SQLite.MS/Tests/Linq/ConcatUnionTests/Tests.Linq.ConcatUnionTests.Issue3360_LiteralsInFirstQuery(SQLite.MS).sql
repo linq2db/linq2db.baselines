@@ -50,26 +50,26 @@ SET     @GuidN = X'27FE8A0B1C482E44B8CF729DDFEECE30'
 
 SELECT
 	[t1].[Id],
-	[t1].[Byte],
-	[t1].[Byte_1],
-	[t1].[Guid],
-	[t1].[GuidN],
-	[t1].[Enum],
-	[t1].[EnumN],
-	[t1].[Bool],
-	[t1].[BoolN]
+	[t1].[c1],
+	[t1].[c2],
+	[t1].[c3],
+	[t1].[c4],
+	[t1].[c5],
+	[t1].[c6],
+	[t1].[c7],
+	[t1].[c8]
 FROM
 	(
 		SELECT
 			[r].[Id],
-			CAST(5 AS TinyInt) as [Byte],
-			CAST(5 AS TinyInt) as [Byte_1],
-			@Guid as [Guid],
-			@GuidN as [GuidN],
-			CAST('ENUM1_VALUE' AS NChar(11)) as [Enum],
-			CAST('ENUM2_VALUE' AS NChar(11)) as [EnumN],
-			CAST(1 AS Bit) as [Bool],
-			CAST(0 AS Bit) as [BoolN]
+			CAST(5 AS TinyInt) as [c1],
+			CAST(5 AS TinyInt) as [c2],
+			@Guid as [c3],
+			@GuidN as [c4],
+			CAST('ENUM1_VALUE' AS NChar(11)) as [c5],
+			CAST('ENUM2_VALUE' AS NChar(11)) as [c6],
+			CAST(1 AS Bit) as [c7],
+			CAST(0 AS Bit) as [c8]
 		FROM
 			[Issue3360Table1] [r]
 		WHERE
@@ -77,14 +77,14 @@ FROM
 		UNION ALL
 		SELECT
 			[r_1].[Id],
-			[r_1].[Byte],
-			[r_1].[ByteN] as [Byte_1],
-			[r_1].[Guid],
-			[r_1].[GuidN],
-			[r_1].[Enum],
-			[r_1].[EnumN],
-			[r_1].[Bool],
-			[r_1].[BoolN]
+			[r_1].[Byte] as [c1],
+			[r_1].[ByteN] as [c2],
+			[r_1].[Guid] as [c3],
+			[r_1].[GuidN] as [c4],
+			[r_1].[Enum] as [c5],
+			[r_1].[EnumN] as [c6],
+			[r_1].[Bool] as [c7],
+			[r_1].[BoolN] as [c8]
 		FROM
 			[Issue3360Table1] [r_1]
 		WHERE

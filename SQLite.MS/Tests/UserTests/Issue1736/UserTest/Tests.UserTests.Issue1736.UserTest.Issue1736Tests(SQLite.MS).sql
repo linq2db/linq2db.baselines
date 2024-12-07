@@ -132,8 +132,6 @@ CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @MaterialID  -- Guid
-SET     @MaterialID = X'00000000000000000000000000000000'
 
 SELECT
 	[cr_1].[Id],
@@ -148,11 +146,11 @@ SELECT
 	[cr_1].[AisleID],
 	[cr_1].[ChannelID],
 	[cr_1].[Id_3],
-	[cr_1].[AisleStatus],
+	[cr_1].[Status_1],
 	[cr_1].[Id_4],
 	[cr_1].[IsStoragePlace],
 	[cr_1].[RefQty],
-	[cr_1].[MixedStock]
+	[cr_1].[c1]
 FROM
 	(
 		SELECT
@@ -183,7 +181,7 @@ FROM
 			[cr].[AisleID],
 			[cr].[ChannelID],
 			[c_1].[Id] as [Id_3],
-			[aisle].[Status] as [AisleStatus],
+			[aisle].[Status] as [Status_1],
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
 			CASE
@@ -193,14 +191,12 @@ FROM
 					FROM
 						[InventoryResourceDTO] [irMix]
 					WHERE
-						[irMix].[ResourceID] = [r].[Id] AND
-						[irMix].[Status] >= 0 AND
-						[irMix].[Status] <= 1 AND
-						([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
+						[irMix].[ResourceID] = [r].[Id] AND [irMix].[Status] >= 0 AND
+						[irMix].[Status] <= 1
 				)
 					THEN 1
 				ELSE 0
-			END as [MixedStock]
+			END as [c1]
 		FROM
 			[StorageShelfDTO] [cr]
 				INNER JOIN [ChannelDTO] [c_1] ON [cr].[ChannelID] = [c_1].[Id]
@@ -211,8 +207,7 @@ FROM
 				INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 				INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 		WHERE
-			[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
-			[ir].[Quantity] > 0
+			1 = 0
 		UNION
 		SELECT
 			CAST(0 AS Decimal) as [RefQty],
@@ -228,19 +223,16 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			CAST(0 AS INTEGER) as [AisleStatus],
+			CAST(0 AS INTEGER) as [Status_1],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			CAST(0 AS Bit) as [MixedStock]
+			CAST(0 AS Bit) as [c1]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
-			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @MaterialID AND
-			[ir_1].[ProductStatus] = 0 AND
-			[ir_1].[Quantity] > 0
+			1 = 0
 	) [cr_1]
 WHERE
 	[cr_1].[Quantity] > [cr_1].[RefQty]

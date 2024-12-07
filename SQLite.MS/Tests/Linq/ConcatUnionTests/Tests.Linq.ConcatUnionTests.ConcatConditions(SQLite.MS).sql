@@ -17,21 +17,21 @@ FROM
 					CASE
 						WHEN [p].[ParentID] IS NULL THEN 1
 						ELSE 0
-					END as [Parent1],
+					END as [c1],
 					[p].[ParentID]
 				FROM
 					[Child] [t1]
 						LEFT JOIN [Parent] [p] ON [p].[ParentID] = [t1].[ParentID]
 				UNION ALL
 				SELECT
-					NULL as [Parent1],
+					NULL as [c1],
 					NULL as [ParentID]
 				FROM
 					[Child] [t2]
 						LEFT JOIN [Parent] [p_1] ON [p_1].[ParentID] = [t2].[ParentID]
 			) [t3]
 		WHERE
-			[t3].[Parent1] IS NOT NULL
+			[t3].[c1] IS NOT NULL
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
@@ -41,10 +41,10 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[Parent1],
+	[t1].[cond],
 	[t1].[ParentID],
 	[t1].[Value1],
-	[t1].[Parent1],
+	[t1].[cond],
 	[t1].[ParentID],
 	[t1].[Value1],
 	[t1].[ParentID]
@@ -54,7 +54,7 @@ FROM
 			CASE
 				WHEN [p].[ParentID] IS NULL THEN 1
 				ELSE 0
-			END as [Parent1],
+			END as [cond],
 			[p].[ParentID],
 			[p].[Value1]
 		FROM

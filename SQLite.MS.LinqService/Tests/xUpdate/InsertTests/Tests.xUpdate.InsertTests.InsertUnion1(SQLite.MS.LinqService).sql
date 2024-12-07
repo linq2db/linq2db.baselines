@@ -16,7 +16,7 @@ INSERT INTO [Parent]
 )
 SELECT
 	[t1].[ParentID] + 1000,
-	[t1].[Value1]
+	[t1].[c1]
 FROM
 	(
 		SELECT
@@ -24,7 +24,7 @@ FROM
 			CASE
 				WHEN CAST([c_1].[ChildID] AS Float) / 10 > 0 THEN CAST(CAST([c_1].[ChildID] AS Float) / 10 AS INTEGER)
 				ELSE CAST(CAST([c_1].[ChildID] AS Float) / 10 - 0.99999999999999989 AS INTEGER)
-			END as [Value1]
+			END as [c1]
 		FROM
 			[Child] [c_1]
 		UNION
@@ -34,7 +34,7 @@ FROM
 				WHEN CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 > 0
 					THEN CAST(CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 AS INTEGER)
 				ELSE CAST(CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 - 0.99999999999999989 AS INTEGER)
-			END AS Float) as [Value1]
+			END AS Float) as [c1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
