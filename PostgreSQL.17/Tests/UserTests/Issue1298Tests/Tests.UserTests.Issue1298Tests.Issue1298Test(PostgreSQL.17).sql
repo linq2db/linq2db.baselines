@@ -10,7 +10,8 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS mega_composites
 (
-	ref1 BigInt     NULL
+	ref1         BigInt     NULL,
+	"y1.q1.ref1" BigInt     NULL
 )
 
 BeforeExecute
@@ -67,42 +68,54 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Bigint -- Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO mega_composites
 (
-	ref1
+	ref1,
+	"y1.q1.ref1"
 )
 VALUES
 (
-	:ref1
+	:ref1,
+	:y1_q1_ref1
 )
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 1
+DECLARE @y1_q1_ref1 Bigint -- Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO mega_composites
 (
-	ref1
+	ref1,
+	"y1.q1.ref1"
 )
 VALUES
 (
-	:ref1
+	:ref1,
+	:y1_q1_ref1
 )
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Bigint -- Int64
+SET     @y1_q1_ref1 = 1
 
 INSERT INTO mega_composites
 (
-	ref1
+	ref1,
+	"y1.q1.ref1"
 )
 VALUES
 (
-	:ref1
+	:ref1,
+	:y1_q1_ref1
 )
 
 BeforeExecute
