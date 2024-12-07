@@ -207,7 +207,7 @@ FROM
 			CASE
 				WHEN EXISTS(
 					SELECT
-						1
+						*
 					FROM
 						[InventoryResourceDTO] [irMix]
 					WHERE

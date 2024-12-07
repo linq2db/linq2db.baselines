@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Person p
 				INNER JOIN (
@@ -24,7 +24,7 @@ WHERE
 	) AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Person p_1
 				INNER JOIN (

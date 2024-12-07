@@ -6,7 +6,8 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as [c1]
+			[t1].[ParentID],
+			[t1].[ChildID]
 		FROM
 			[Child] [t1]
 		ORDER BY

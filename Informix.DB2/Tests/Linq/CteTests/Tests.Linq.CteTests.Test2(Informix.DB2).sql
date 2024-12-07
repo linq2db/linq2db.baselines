@@ -31,7 +31,7 @@ AS
 	WHERE
 		EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				CTE1_ c_2
 			WHERE
@@ -49,7 +49,7 @@ AS
 	WHERE
 		EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				CTE2_ c_3
 			WHERE
@@ -81,7 +81,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Child c_2
 		WHERE
@@ -90,7 +90,7 @@ WHERE
 	c_1.ParentID > 1 AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Child c_3
 		WHERE
@@ -98,13 +98,13 @@ WHERE
 	) AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Parent p_1
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					Child c_4
 				WHERE

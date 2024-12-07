@@ -221,8 +221,14 @@ SELECT
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'
 		ELSE 'f'
 	END::BOOLEAN,
+	CASE
+		WHEN x.StringProp = '2' THEN 't'
+		ELSE 'f'
+	END::BOOLEAN,
 	x.StringProp,
-	x.StringProp || '2'
+	1,
+	x.StringProp || '2',
+	2
 FROM
 	ConditionalData x
 WHERE

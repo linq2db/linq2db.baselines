@@ -327,7 +327,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT SKIP 1 FIRST 2

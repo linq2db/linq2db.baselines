@@ -221,7 +221,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_18]
 		WHERE
@@ -229,14 +229,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
 			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
@@ -252,7 +252,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x]
 			WHERE
@@ -272,7 +272,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_2]
 			WHERE
@@ -292,7 +292,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_4]
 			WHERE
@@ -312,7 +312,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_6]
 			WHERE
@@ -332,7 +332,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_8]
 			WHERE
@@ -352,7 +352,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_10]
 			WHERE
@@ -372,7 +372,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_12]
 			WHERE
@@ -392,7 +392,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_14]
 			WHERE
@@ -463,7 +463,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_18]
 		WHERE
@@ -471,14 +471,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
 			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
@@ -517,7 +517,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_21]
 		WHERE
@@ -525,14 +525,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_22]
 		WHERE
 			[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
 			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_1]
 				WHERE
@@ -571,7 +571,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_24]
 		WHERE
@@ -579,14 +579,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_25]
 		WHERE
 			[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
 			([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_2]
 				WHERE
@@ -625,7 +625,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_27]
 		WHERE
@@ -633,14 +633,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_28]
 		WHERE
 			[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
 			([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_3]
 				WHERE
@@ -679,7 +679,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_30]
 		WHERE
@@ -687,14 +687,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_31]
 		WHERE
 			[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
 			([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_4]
 				WHERE
@@ -733,7 +733,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_33]
 		WHERE
@@ -741,14 +741,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_34]
 		WHERE
 			[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
 			([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_5]
 				WHERE
@@ -787,7 +787,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_36]
 		WHERE
@@ -795,14 +795,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_37]
 		WHERE
 			[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
 			([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_6]
 				WHERE
@@ -841,7 +841,7 @@ SELECT
 	),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_39]
 		WHERE
@@ -849,14 +849,14 @@ SELECT
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[InventoryResourceDTO] [x_40]
 		WHERE
 			[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
 			([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_7]
 				WHERE
@@ -872,7 +872,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x]
 			WHERE
@@ -892,7 +892,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_2]
 			WHERE
@@ -912,7 +912,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_4]
 			WHERE
@@ -932,7 +932,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_6]
 			WHERE
@@ -952,7 +952,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_8]
 			WHERE
@@ -972,7 +972,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_10]
 			WHERE
@@ -992,7 +992,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_12]
 			WHERE
@@ -1012,7 +1012,7 @@ FROM
 		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
 		CROSS APPLY (
 			SELECT TOP (1)
-				1 as [c1]
+				*
 			FROM
 				[InventoryResourceDTO] [x_14]
 			WHERE

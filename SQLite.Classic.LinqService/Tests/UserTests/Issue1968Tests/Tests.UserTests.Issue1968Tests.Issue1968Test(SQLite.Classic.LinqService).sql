@@ -179,7 +179,7 @@ FROM
 	) [m_2]
 		INNER JOIN [Subject] [d] ON EXISTS(
 			SELECT
-				1 as [c1]
+				*
 			FROM
 				[Faculty] [m_1]
 			WHERE

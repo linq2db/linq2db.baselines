@@ -12,7 +12,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(VALUES
 				(N'j'), (N'o'), (N'h'), (N'n')

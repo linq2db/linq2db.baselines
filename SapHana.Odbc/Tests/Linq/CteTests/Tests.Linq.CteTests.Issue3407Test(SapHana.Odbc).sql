@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-WITH "CTE_1" ("unused")
+WITH "CTE_1" ("c1")
 AS
 (
 	SELECT

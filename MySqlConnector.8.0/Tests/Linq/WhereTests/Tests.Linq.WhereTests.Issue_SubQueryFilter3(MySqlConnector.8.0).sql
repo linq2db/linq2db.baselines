@@ -13,7 +13,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			`Person` `p`
 				INNER JOIN LATERAL (
@@ -30,7 +30,7 @@ WHERE
 	) AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			`Person` `p_1`
 				INNER JOIN LATERAL (

@@ -58,7 +58,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Tagging] [t_1]
 				INNER JOIN [Tag] [t] ON [t_1].[TagId] = [t].[Id]

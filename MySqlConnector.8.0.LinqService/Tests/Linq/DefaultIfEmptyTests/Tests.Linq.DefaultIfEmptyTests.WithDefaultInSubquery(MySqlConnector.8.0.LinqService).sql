@@ -14,7 +14,7 @@ FROM
 			FROM
 				(
 					SELECT
-						-100 as `ParentID`
+						1 as `c1`
 				) `t1`
 					LEFT JOIN `Child` `d` ON `p`.`ParentID` = `d`.`ParentID`
 		) `t2` ON 1=1

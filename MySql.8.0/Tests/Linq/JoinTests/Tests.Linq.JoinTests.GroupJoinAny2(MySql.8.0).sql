@@ -6,7 +6,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				`Child` `t1_1`
 			WHERE

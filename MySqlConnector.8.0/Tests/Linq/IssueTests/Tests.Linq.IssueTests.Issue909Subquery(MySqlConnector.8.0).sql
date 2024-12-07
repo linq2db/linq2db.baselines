@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			`Parent` `p`
 		WHERE

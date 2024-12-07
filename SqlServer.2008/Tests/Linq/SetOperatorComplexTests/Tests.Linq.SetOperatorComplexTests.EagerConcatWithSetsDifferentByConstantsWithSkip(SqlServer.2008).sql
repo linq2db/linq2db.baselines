@@ -170,12 +170,17 @@ SET     @skip = 6
 
 SELECT
 	[t2].[BookType],
-	[t2].[c1]
+	[t2].[c1],
+	[t2].[c1_1]
 FROM
 	(
 		SELECT
 			[t1].[BookType],
-			[t1].[c1],
+			CASE
+				WHEN [t1].[BookType] = N'Roman' THEN 1
+				ELSE 0
+			END as [c1],
+			[t1].[c1] as [c1_1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 		FROM
 			(

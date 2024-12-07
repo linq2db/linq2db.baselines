@@ -114,7 +114,7 @@ FROM
 WHERE
 	`a_Book`.`Discriminator` = 'Roman' AND NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			`Author` `t2`
 				INNER JOIN `BookAuthor` `b_1` ON `b_1`.`FkAuthorId` = `t2`.`AuthorId`

@@ -12,7 +12,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT CAST('John' AS VARCHAR(4)) AS "item" FROM rdb$database

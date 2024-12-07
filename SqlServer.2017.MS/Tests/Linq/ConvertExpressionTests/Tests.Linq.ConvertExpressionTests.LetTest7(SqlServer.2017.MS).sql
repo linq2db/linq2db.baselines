@@ -7,7 +7,7 @@ SELECT TOP (@take)
 	[t].[ParentID],
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [c_3]
 		WHERE

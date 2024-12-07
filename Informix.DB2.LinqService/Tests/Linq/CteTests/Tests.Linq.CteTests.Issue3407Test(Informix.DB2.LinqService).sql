@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-WITH CTE_1 (unused)
+WITH CTE_1 (c1)
 AS
 (
 	SELECT

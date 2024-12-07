@@ -51,6 +51,56 @@ END;
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Issue3791Table"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Issue3791Table"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "Issue3791Table"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Issue3791Table"
+		(
+			"Id"      Int           NOT NULL,
+			"OtherId" VarChar(255)      NULL,
+
+			CONSTRAINT "PK_Issue3791Table" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
 CREATE SEQUENCE "SIDENTITY_Issue3791Table"
 
 BeforeExecute

@@ -31,7 +31,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"Issue76Entity" "f2"
 			WHERE

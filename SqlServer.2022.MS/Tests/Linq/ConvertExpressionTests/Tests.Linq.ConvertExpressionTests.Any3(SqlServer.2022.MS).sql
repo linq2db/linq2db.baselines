@@ -4,13 +4,13 @@
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Parent] [p]
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[Child] [c_1]
 				WHERE

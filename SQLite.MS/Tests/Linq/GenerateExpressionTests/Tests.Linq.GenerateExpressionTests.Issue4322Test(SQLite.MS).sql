@@ -10,7 +10,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT NULL [X] WHERE 1 = 0

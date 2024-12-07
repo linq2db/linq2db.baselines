@@ -33,7 +33,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(SELECT NULL "Id", NULL "Value" FROM rdb$database WHERE 1 = 0) "r"
 		WHERE

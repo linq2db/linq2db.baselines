@@ -8,7 +8,7 @@ SET     @personId_1 = 2
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Person] [t1]
 		WHERE

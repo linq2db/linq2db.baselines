@@ -12,7 +12,7 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"Person" "t2"
 		WHERE

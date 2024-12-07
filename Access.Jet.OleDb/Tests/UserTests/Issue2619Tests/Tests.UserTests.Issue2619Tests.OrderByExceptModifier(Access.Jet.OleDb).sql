@@ -23,7 +23,7 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT TOP 1

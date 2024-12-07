@@ -8,11 +8,10 @@ SELECT
 FROM
 	(
 		SELECT
-			[t2].[c1]
+			*
 		FROM
 			(
 				SELECT
-					1 as [c1],
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[Child] [t1]

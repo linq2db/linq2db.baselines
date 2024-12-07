@@ -6,7 +6,7 @@ SELECT
 	[t2].[c1],
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [c_2]
 				LEFT JOIN [Parent] [a_Parent_1] ON [c_2].[ParentID] = [a_Parent_1].[ParentID]

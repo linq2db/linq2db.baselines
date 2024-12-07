@@ -51,7 +51,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Table860_2] [d]
 				LEFT JOIN [Table860_3] [a_Table3] ON [d].[cId] = [a_Table3].[Id]
@@ -60,7 +60,7 @@ WHERE
 	) AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Table860_2] [a_Table2]
 		WHERE

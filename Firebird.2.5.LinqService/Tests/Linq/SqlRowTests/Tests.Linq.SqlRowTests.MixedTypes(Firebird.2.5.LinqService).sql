@@ -97,7 +97,7 @@ WHERE
 	"t"."Bool" = '1' AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"Mixed" "u"
 		WHERE

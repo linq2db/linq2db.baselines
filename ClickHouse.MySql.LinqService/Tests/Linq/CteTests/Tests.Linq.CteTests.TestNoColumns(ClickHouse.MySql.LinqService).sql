@@ -12,7 +12,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		1 as unused
+		1 as c1
 	FROM
 		Child t1
 )
@@ -27,7 +27,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		1 as unused
+		1 as c1
 	FROM
 		Child c_1
 )
@@ -42,7 +42,7 @@ BeforeExecute
 WITH CTE1_ AS
 (
 	SELECT
-		1 as unused
+		1 as c1
 	FROM
 		Child c_1
 )
@@ -50,7 +50,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				CTE1_ t1
 		) THEN true

@@ -116,7 +116,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"Issue4193Person" "p"
 				INNER JOIN "Issue4193Employee" "r" ON "p"."EmployeeId" = "r"."Id"

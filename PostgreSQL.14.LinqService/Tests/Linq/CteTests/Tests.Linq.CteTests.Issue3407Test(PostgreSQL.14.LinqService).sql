@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE_1" (unused)
+WITH "CTE_1" (c1)
 AS
 (
 	SELECT

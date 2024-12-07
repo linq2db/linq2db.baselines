@@ -61,12 +61,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN [t1].[itemType] = 1 THEN 1
-		ELSE 0
-	END,
-	[t1].[my_col1],
 	[t1].[itemType],
+	[t1].[my_col1],
 	[t1].[my_other_col]
 FROM
 	[my_table] [t1]

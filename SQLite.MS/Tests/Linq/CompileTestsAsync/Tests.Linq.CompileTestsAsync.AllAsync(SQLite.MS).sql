@@ -41,7 +41,7 @@ SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[AsyncDataTable] [c_1]
 			WHERE

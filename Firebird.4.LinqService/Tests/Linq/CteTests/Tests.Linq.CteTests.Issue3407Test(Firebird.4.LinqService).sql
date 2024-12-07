@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- Firebird.4 Firebird4
 
-WITH CTE_1 ("unused")
+WITH CTE_1 ("c1")
 AS
 (
 	SELECT

@@ -43,7 +43,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[TestEqualsTable2] [t2]
 		WHERE

@@ -8,7 +8,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[Child] [c2_3]
 			WHERE
@@ -20,7 +20,7 @@ SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[Child] [c2_4]
 			WHERE

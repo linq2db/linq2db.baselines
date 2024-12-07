@@ -26,7 +26,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(SELECT NULL [Id], NULL [Value] WHERE 1 = 0) [r]([Id], [Value])
 		WHERE

@@ -42,7 +42,7 @@ SET     @p = 2
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[AsyncDataTable] [c_1]
 		WHERE

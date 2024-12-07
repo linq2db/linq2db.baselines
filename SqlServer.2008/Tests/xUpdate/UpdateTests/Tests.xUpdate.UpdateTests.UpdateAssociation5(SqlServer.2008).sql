@@ -7,7 +7,7 @@ SET
 	[u].[BoolValue] = CASE
 		WHEN NOT EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[Parent] [x_1]
 			WHERE

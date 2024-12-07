@@ -18,7 +18,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT NULL [item] WHERE 1 = 0

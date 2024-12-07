@@ -23,7 +23,7 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Customers] [c_1]
 		WHERE
@@ -32,7 +32,7 @@ WHERE
 	) OR
 	NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Employees] [e]
 		WHERE

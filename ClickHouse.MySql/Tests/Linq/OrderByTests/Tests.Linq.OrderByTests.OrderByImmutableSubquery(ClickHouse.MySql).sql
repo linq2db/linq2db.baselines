@@ -3,7 +3,8 @@
 
 SELECT
 	t1.ChildID,
-	t1.ParentID
+	t1.ParentID,
+	2
 FROM
 	(
 		SELECT

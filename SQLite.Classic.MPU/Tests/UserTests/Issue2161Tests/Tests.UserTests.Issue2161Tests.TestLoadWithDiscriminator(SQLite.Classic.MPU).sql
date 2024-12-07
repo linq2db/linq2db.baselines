@@ -82,17 +82,9 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN [o].[OrderType] = 1 THEN 1
-		ELSE 0
-	END,
-	[o].[OrderId],
 	[o].[OrderType],
-	[o].[OrderName],
-	CASE
-		WHEN [o].[OrderType] = 0 THEN 1
-		ELSE 0
-	END
+	[o].[OrderId],
+	[o].[OrderName]
 FROM
 	[Order] [o]
 WHERE
