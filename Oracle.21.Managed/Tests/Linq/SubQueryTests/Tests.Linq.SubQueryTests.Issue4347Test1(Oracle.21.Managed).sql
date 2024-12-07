@@ -83,24 +83,19 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					a_Lines."Currency"
+				FROM
+					"LineEntity" a_Lines
+				WHERE
+					x."Id" = a_Lines."TransactionId"
+				INTERSECT
+				SELECT
+					t1."item"
 				FROM
 					(
-						SELECT
-							a_Lines."Currency"
-						FROM
-							"LineEntity" a_Lines
-						WHERE
-							x."Id" = a_Lines."TransactionId"
-						INTERSECT
-						SELECT
-							t1."item" as "Currency"
-						FROM
-							(
-								SELECT 'A' AS "item" FROM sys.dual
-								UNION ALL
-								SELECT 'B' FROM sys.dual) t1
-					) t2
+						SELECT 'A' AS "item" FROM sys.dual
+						UNION ALL
+						SELECT 'B' FROM sys.dual) t1
 			)
 	) m_1
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
@@ -118,24 +113,19 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			a_Lines."Currency"
+		FROM
+			"LineEntity" a_Lines
+		WHERE
+			x."Id" = a_Lines."TransactionId"
+		INTERSECT
+		SELECT
+			t1."item"
 		FROM
 			(
-				SELECT
-					a_Lines."Currency"
-				FROM
-					"LineEntity" a_Lines
-				WHERE
-					x."Id" = a_Lines."TransactionId"
-				INTERSECT
-				SELECT
-					t1."item" as "Currency"
-				FROM
-					(
-						SELECT 'A' AS "item" FROM sys.dual
-						UNION ALL
-						SELECT 'B' FROM sys.dual) t1
-			) t2
+				SELECT 'A' AS "item" FROM sys.dual
+				UNION ALL
+				SELECT 'B' FROM sys.dual) t1
 	)
 ORDER BY
 	x."ValidOn"

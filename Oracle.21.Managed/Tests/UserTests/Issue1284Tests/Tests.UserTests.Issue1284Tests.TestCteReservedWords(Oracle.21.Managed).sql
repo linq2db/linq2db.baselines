@@ -10,7 +10,7 @@ AS
 		"Person" x
 )
 SELECT
-	t1."Obj_Operator" as "Operator_1"
+	t1."Obj_Operator"
 FROM
 	CTE_1 t1
 FETCH NEXT 1 ROWS ONLY
