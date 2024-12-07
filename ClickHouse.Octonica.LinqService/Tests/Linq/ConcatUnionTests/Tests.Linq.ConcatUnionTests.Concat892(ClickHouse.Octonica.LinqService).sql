@@ -2,19 +2,19 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.Value1,
-	t1.ParentID
+	t1.ParentID as Value1,
+	t1.ParentID_1 as ParentID
 FROM
 	(
 		SELECT
-			c_1.ParentID as Value1,
-			c_1.ParentID as ParentID
+			c_1.ParentID as ParentID,
+			c_1.ParentID as ParentID_1
 		FROM
 			Child c_1
 		UNION DISTINCT
 		SELECT
-			toInt32(NULL) as Value1,
-			c_2.ParentID as ParentID
+			toInt32(NULL) as ParentID,
+			c_2.ParentID as ParentID_1
 		FROM
 			Parent c_2
 	) t1

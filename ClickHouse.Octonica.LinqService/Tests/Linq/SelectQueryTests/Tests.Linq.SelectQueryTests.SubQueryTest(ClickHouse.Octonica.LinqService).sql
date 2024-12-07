@@ -39,21 +39,21 @@ FROM
 	SampleClass t_1
 		LEFT JOIN (
 			SELECT
-				t1.Value1 as Value1,
-				t1.Value2 as Value2
+				t1.c1 as Value1,
+				t1.c2 as Value2
 			FROM
 				(
 					SELECT
-						addDays(now(), t.Value) as Value1,
-						addDays(now(), 2) as Value2
+						addDays(now(), t.Value) as c1,
+						addDays(now(), 2) as c2
 					FROM
 						SampleClass t
 					WHERE
 						t.Value = 1
 					UNION DISTINCT
 					SELECT
-						addDays(now(), 3) as Value1,
-						addDays(now(), 4) as Value2
+						addDays(now(), 3) as c1,
+						addDays(now(), 4) as c2
 				) t1
 			LIMIT 1
 		) t2 ON 1=1
