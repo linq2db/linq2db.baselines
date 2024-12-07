@@ -41,8 +41,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @id Int -- Int32
-SET     @id = 1
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset DateTimeOffset
+SET     @SomeDateTimeOffset = DATETIMEOFFSETFROMPARTS(2019, 8, 8, 8, 8, 8, 0, 0, 0, 7)
+
+INSERT INTO [Issue1855Table]
+(
+	[Id],
+	[SomeDateTimeOffset]
+)
+VALUES
+(
+	@Id,
+	@SomeDateTimeOffset
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
 DECLARE @clientSideIn DateTimeOffset
 SET     @clientSideIn = DATETIMEOFFSETFROMPARTS(2019, 8, 8, 8, 8, 18, 0, 0, 0, 7)
 
@@ -53,7 +69,8 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	[r].[Id] = @id AND (@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR [r].[SomeNullableDateTimeOffset] IS NULL)
+	@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR
+	[r].[SomeNullableDateTimeOffset] IS NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

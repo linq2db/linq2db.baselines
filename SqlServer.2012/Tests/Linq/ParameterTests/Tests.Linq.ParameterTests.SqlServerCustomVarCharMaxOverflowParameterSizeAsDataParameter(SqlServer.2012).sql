@@ -42,6 +42,21 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @p VarChar(10000) -- AnsiString
+SET     @p = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
+-- value above truncated for logging
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarChar] = @p
+
+BeforeExecute
+-- SqlServer.2012
 
 IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NOT NULL)
 	DROP TABLE [AllTypesCustomMaxLength]
