@@ -52,7 +52,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + v."Value" * INTERVAL '1' DAY as "Value1",
+			CURRENT_TIMESTAMP + v."Value" * INTERVAL '1' DAY as "c1",
 			CURRENT_TIMESTAMP + 2 * INTERVAL '1' DAY as "Value2"
 		FROM
 			"SampleClass" v
@@ -60,7 +60,7 @@ FROM
 			v."Value" = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "c1",
 			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
 		FROM SYS.DUAL
 	) v_1
