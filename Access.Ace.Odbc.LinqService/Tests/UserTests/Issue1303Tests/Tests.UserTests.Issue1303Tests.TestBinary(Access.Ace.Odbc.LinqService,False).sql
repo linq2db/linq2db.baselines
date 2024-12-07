@@ -49,8 +49,8 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = 0x010203
+DECLARE @cond VarBinary(3) -- Binary
+SET     @cond = 0x010203
 
 SELECT TOP 2
 	[t1].[ID],
@@ -63,8 +63,8 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = 0x0405
+DECLARE @cond VarBinary(2) -- Binary
+SET     @cond = 0x0405
 
 SELECT TOP 2
 	[t1].[ID],
