@@ -7,8 +7,8 @@ SELECT
 	t1.LastName,
 	t1.MiddleName,
 	t1.Gender,
-	t1.PersonID,
-	t1.PersonID as PersonID_1,
+	t1.cond,
+	t1.cond as PersonID,
 	t1.Diagnosis
 FROM
 	(
@@ -18,7 +18,7 @@ FROM
 			p.LastName as LastName,
 			p.MiddleName as MiddleName,
 			p.Gender as Gender,
-			a_Patient.PersonID as PersonID,
+			a_Patient.PersonID as cond,
 			a_Patient.Diagnosis as Diagnosis
 		FROM
 			Person p
@@ -32,8 +32,8 @@ SELECT
 	t2.LastName as LastName,
 	t2.MiddleName as MiddleName,
 	t2.Gender as Gender,
+	a_Patient_1.PersonID as cond,
 	a_Patient_1.PersonID as PersonID,
-	a_Patient_1.PersonID as PersonID_1,
 	a_Patient_1.Diagnosis as Diagnosis
 FROM
 	Person t2

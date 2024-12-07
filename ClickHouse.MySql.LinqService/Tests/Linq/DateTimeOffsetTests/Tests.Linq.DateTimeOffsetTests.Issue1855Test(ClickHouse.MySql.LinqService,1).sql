@@ -36,6 +36,20 @@ VALUES
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
+INSERT INTO Issue1855Table
+(
+	Id,
+	SomeDateTimeOffset
+)
+VALUES
+(
+	2,
+	toDateTime64('2019-08-08 08:08:08.0000000', 7)
+)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
 SELECT
 	r.Id,
 	r.SomeDateTimeOffset,
@@ -43,7 +57,7 @@ SELECT
 FROM
 	Issue1855Table r
 WHERE
-	r.Id = 1 AND addSeconds(r.SomeNullableDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7)
+	addSeconds(r.SomeNullableDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

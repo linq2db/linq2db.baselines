@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addMonths(t.DateTimeValue, toInt32(t.SmallIntValue))
+	addMonths(t.DateTimeValue, t.SmallIntValue)
 FROM
 	LinqDataTypes t
 
