@@ -18,7 +18,7 @@ WHERE
 			"Person" "p"
 				CROSS JOIN LATERAL (
 					SELECT
-						"d"."PersonID" as ID
+						"d"."PersonID" as "cond"
 					FROM
 						"Person" "d"
 					WHERE
@@ -26,7 +26,7 @@ WHERE
 					FETCH NEXT 1 ROWS ONLY
 				) "t1"
 		WHERE
-			"p"."FirstName" LIKE @filter ESCAPE '~' AND "p"."PersonID" = "t1".ID
+			"p"."FirstName" LIKE @filter ESCAPE '~' AND "p"."PersonID" = "t1"."cond"
 	) AND
 	EXISTS(
 		SELECT
@@ -35,7 +35,7 @@ WHERE
 			"Person" "p_1"
 				CROSS JOIN LATERAL (
 					SELECT
-						"d_1"."PersonID" as ID
+						"d_1"."PersonID" as "cond"
 					FROM
 						"Person" "d_1"
 					WHERE
@@ -43,7 +43,7 @@ WHERE
 					FETCH NEXT 1 ROWS ONLY
 				) "t2"
 		WHERE
-			"p_1"."FirstName" LIKE @filter_1 ESCAPE '~' AND "p_1"."PersonID" = "t2".ID
+			"p_1"."FirstName" LIKE @filter_1 ESCAPE '~' AND "p_1"."PersonID" = "t2"."cond"
 	)
 ORDER BY
 	"patient_1"."PersonID"
