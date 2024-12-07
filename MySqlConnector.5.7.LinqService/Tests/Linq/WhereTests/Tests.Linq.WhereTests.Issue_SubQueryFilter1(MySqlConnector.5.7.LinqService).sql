@@ -18,13 +18,13 @@ WHERE
 			`Person` `e`,
 			(
 				SELECT
-					`d`.`PersonID`
+					`d`.`PersonID` as `cond`
 				FROM
 					`Patient` `d`
 				LIMIT 1
 			) `t2`
 		WHERE
-			LOCATE(@filter1, `e`.`FirstName`) > 0 AND `e`.`PersonID` = `t2`.`PersonID`
+			LOCATE(@filter1, `e`.`FirstName`) > 0 AND `e`.`PersonID` = `t2`.`cond`
 	) OR
 	EXISTS(
 		SELECT
@@ -33,13 +33,13 @@ WHERE
 			`Person` `e_1`,
 			(
 				SELECT
-					`d_1`.`PersonID`
+					`d_1`.`PersonID` as `cond`
 				FROM
 					`Patient` `d_1`
 				LIMIT 1
 			) `t3`
 		WHERE
-			LOCATE(@filter2, `e_1`.`FirstName`) > 0 AND `e_1`.`PersonID` = `t3`.`PersonID`
+			LOCATE(@filter2, `e_1`.`FirstName`) > 0 AND `e_1`.`PersonID` = `t3`.`cond`
 	)
 ORDER BY
 	`t1`.`PersonID`

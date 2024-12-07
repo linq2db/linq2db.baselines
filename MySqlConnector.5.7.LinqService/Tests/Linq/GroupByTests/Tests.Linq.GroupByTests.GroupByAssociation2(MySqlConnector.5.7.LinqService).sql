@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			`a_Parent`.`ParentID`,
-			COUNT(*) as `COUNT_1`,
+			COUNT(*) as `cond`,
 			`a_Parent`.`Value1`
 		FROM
 			`GrandChild` `g_1`
@@ -17,5 +17,5 @@ FROM
 			`a_Parent`.`Value1`
 	) `g_2`
 WHERE
-	`g_2`.`COUNT_1` > 2 AND `g_2`.`ParentID` <> 1
+	`g_2`.`cond` > 2 AND `g_2`.`ParentID` <> 1
 

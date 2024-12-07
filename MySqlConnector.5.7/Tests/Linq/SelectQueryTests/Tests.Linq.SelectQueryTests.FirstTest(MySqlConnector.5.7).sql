@@ -16,7 +16,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	CURRENT_TIMESTAMP as `CurrentTimestamp`
+	CURRENT_TIMESTAMP as `c1`
 LIMIT 1
 
 BeforeExecute
