@@ -13,8 +13,8 @@ WHERE
 			*
 		FROM
 			(VALUES
-				(-10)
-			) [t]([X])
+				(-10,10)
+			) [t]([X], [Y])
 		WHERE
 			[x].[position].x > [t].[X]
 	)
