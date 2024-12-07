@@ -3,14 +3,14 @@
 
 SELECT
 	CAST(0 AS Int),
-	t1."ParentID",
-	t1."ParentID",
+	t1."cond",
+	t1."cond",
 	t1."ChildID"
 FROM
 	"Parent" p
 		OUTER APPLY (
 			SELECT
-				a_Children."ParentID",
+				a_Children."ParentID" as "cond",
 				a_Children."ChildID"
 			FROM
 				"Child" a_Children
