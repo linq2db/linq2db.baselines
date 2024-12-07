@@ -2,11 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	CASE
-		WHEN "a_Middle"."ParentID" IS NOT NULL AND "a_Bottom1"."ParentID" IS NOT NULL
-			THEN TRUE
-		ELSE FALSE
-	END,
+	"a_Middle"."ParentID",
 	"a_Bottom1"."ParentID",
 	"a_Bottom1"."ChildID",
 	"a_Bottom1"."GrandChildID"

@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			"p"."ParentID" as "id",
+			"p"."ParentID",
 			TRUE as "val"
 		FROM
 			"Parent" "p"
 		UNION
 		SELECT
-			"ch"."ParentID" as "id",
+			"ch"."ParentID",
 			FALSE as "val"
 		FROM
 			"Child" "ch"

@@ -186,7 +186,7 @@ FROM
 							SELECT
 								"agroup"."Id" as "OrderPeriodId",
 								"oi"."ProductId",
-								SUM(COALESCE("oi"."Quantity",0)) as "Quantity"
+								SUM(CAST(COALESCE("oi"."Quantity",0) AS Int)) as "Quantity"
 							FROM
 								"OrderPeriod" "agroup"
 									LEFT JOIN "OrderHeader" "oh" ON "agroup"."Id" = "oh"."PeriodId"

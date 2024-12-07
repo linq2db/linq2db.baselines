@@ -128,18 +128,18 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	"m_1"."Id",
+	"m_1"."BookId",
 	"a_Author"."AuthorId",
 	"a_Author"."AuthorName"
 FROM
 	(
 		SELECT DISTINCT
-			"t3"."Id"
+			"t3"."BookId"
 		FROM
 			(
 				SELECT
 					CAST(0 AS Int) as "projection__set_id__",
-					"a_Book"."BookId" as "Id"
+					"a_Book"."BookId"
 				FROM
 					"Author" "t1"
 						INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
@@ -149,7 +149,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(1 AS Int) as "projection__set_id__",
-					NULL as "Id"
+					NULL as "BookId"
 				FROM
 					"Author" "t2"
 						INNER JOIN "BookAuthor" "b_1" ON "b_1"."FkAuthorId" = "t2"."AuthorId"
@@ -160,7 +160,7 @@ FROM
 		WHERE
 			"t3"."projection__set_id__" = 0
 	) "m_1"
-		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."Id"
+		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."BookId"
 		LEFT JOIN "Author" "a_Author" ON "d"."FkAuthorId" = "a_Author"."AuthorId"
 WHERE
 	"a_Author"."AuthorName" <> 'A' OR "a_Author"."AuthorName" IS NULL

@@ -44,29 +44,29 @@ BeforeExecute
 SELECT
 	"t_1"."Id",
 	"t_1"."Value",
-	"t2"."not_null",
+	"t2"."cond",
 	"t2"."Value1",
 	"t2"."Value2"
 FROM
 	"SampleClass" "t_1"
 		LEFT JOIN (
 			SELECT
-				"t1"."Value1",
-				"t1"."Value2",
-				1 as "not_null"
+				"t1"."c1" as "Value1",
+				"t1"."c2" as "Value2",
+				1 as "cond"
 			FROM
 				(
 					SELECT
-						DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "Value1",
-						DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
+						DateAdd(Day, "t"."Value", LOCALTIMESTAMP) as "c1",
+						DateAdd(Day, 2, LOCALTIMESTAMP) as "c2"
 					FROM
 						"SampleClass" "t"
 					WHERE
 						"t"."Value" = 1
 					UNION
 					SELECT
-						DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-						DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
+						DateAdd(Day, 3, LOCALTIMESTAMP) as "c1",
+						DateAdd(Day, 4, LOCALTIMESTAMP) as "c2"
 					FROM rdb$database
 				) "t1"
 			FETCH NEXT 1 ROWS ONLY
