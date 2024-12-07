@@ -40,6 +40,20 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019
+DECLARE @p VarBinary -- Binary
+SET     @p = Tests.Linq.ParameterTests+VarBinary
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarBinary] = @p
+
+BeforeExecute
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 
