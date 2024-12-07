@@ -58,8 +58,8 @@ FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = BX'010203'
+DECLARE @cond VarBinary(3) -- Binary
+SET     @cond = BX'010203'
 
 SELECT
 	"t1".ID,
@@ -68,13 +68,13 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array
+	"t1"."Array" = @cond
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = BX'0405'
+DECLARE @cond VarBinary(2) -- Binary
+SET     @cond = BX'0405'
 
 SELECT
 	"t1".ID,
@@ -83,7 +83,7 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary
+	"t1"."Binary" = @cond
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

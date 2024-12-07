@@ -37,29 +37,29 @@ BeforeExecute
 SELECT
 	"t_1"."Id",
 	"t_1"."Value",
-	"t2"."not_null",
+	"t2"."cond",
 	"t2"."Value1",
 	"t2"."Value2"
 FROM
 	"SampleClass" "t_1"
 		LEFT JOIN (
 			SELECT
-				"t1"."Value1",
-				"t1"."Value2",
-				1 as "not_null"
+				"t1"."c1" as "Value1",
+				"t1"."c2" as "Value2",
+				1 as "cond"
 			FROM
 				(
 					SELECT
-						CURRENT_TIMESTAMP + "t"."Value" DAY as "Value1",
-						CURRENT_TIMESTAMP + 2 DAY as "Value2"
+						CURRENT_TIMESTAMP + "t"."Value" DAY as "c1",
+						CURRENT_TIMESTAMP + 2 DAY as "c2"
 					FROM
 						"SampleClass" "t"
 					WHERE
 						"t"."Value" = 1
 					UNION
 					SELECT
-						CURRENT_TIMESTAMP + 3 DAY as "Value1",
-						CURRENT_TIMESTAMP + 4 DAY as "Value2"
+						CURRENT_TIMESTAMP + 3 DAY as "c1",
+						CURRENT_TIMESTAMP + 4 DAY as "c2"
 					FROM SYSIBM.SYSDUMMY1
 				) "t1"
 			FETCH NEXT 1 ROWS ONLY

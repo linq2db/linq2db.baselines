@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			"p"."ParentID" as "id",
+			"p"."ParentID",
 			CAST(1 AS smallint) as "val"
 		FROM
 			"Parent" "p"
 		UNION
 		SELECT
-			"ch"."ParentID" as "id",
+			"ch"."ParentID",
 			CAST(0 AS smallint) as "val"
 		FROM
 			"Child" "ch"
