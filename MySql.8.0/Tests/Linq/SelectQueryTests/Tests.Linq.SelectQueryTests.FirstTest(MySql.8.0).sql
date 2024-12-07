@@ -16,7 +16,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	CURRENT_TIMESTAMP as `CurrentTimestamp`
+	CURRENT_TIMESTAMP as `c1`
 LIMIT 1
 
 BeforeExecute

@@ -18,7 +18,7 @@ WHERE
 			`Person` `p`
 				INNER JOIN LATERAL (
 					SELECT
-						`d`.`PersonID` as `ID`
+						`d`.`PersonID` as `cond`
 					FROM
 						`Person` `d`
 					WHERE
@@ -26,7 +26,7 @@ WHERE
 					LIMIT 1
 				) `t1` ON 1=1
 		WHERE
-			LOCATE(@filter, `p`.`FirstName`) > 0 AND `p`.`PersonID` = `t1`.`ID`
+			LOCATE(@filter, `p`.`FirstName`) > 0 AND `p`.`PersonID` = `t1`.`cond`
 	) AND
 	EXISTS(
 		SELECT
@@ -35,7 +35,7 @@ WHERE
 			`Person` `p_1`
 				INNER JOIN LATERAL (
 					SELECT
-						`d_1`.`PersonID` as `ID`
+						`d_1`.`PersonID` as `cond`
 					FROM
 						`Person` `d_1`
 					WHERE
@@ -43,7 +43,7 @@ WHERE
 					LIMIT 1
 				) `t2` ON 1=1
 		WHERE
-			LOCATE(@filter_1, `p_1`.`FirstName`) > 0 AND `p_1`.`PersonID` = `t2`.`ID`
+			LOCATE(@filter_1, `p_1`.`FirstName`) > 0 AND `p_1`.`PersonID` = `t2`.`cond`
 	)
 ORDER BY
 	`patient_1`.`PersonID`
