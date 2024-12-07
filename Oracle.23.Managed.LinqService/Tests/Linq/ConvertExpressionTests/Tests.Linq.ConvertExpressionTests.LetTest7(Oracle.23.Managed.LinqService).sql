@@ -8,7 +8,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"Child" c_2
 			WHERE
@@ -16,7 +16,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as "Any_1",
+	END as "c1",
 	(
 		SELECT
 			COUNT(*)
