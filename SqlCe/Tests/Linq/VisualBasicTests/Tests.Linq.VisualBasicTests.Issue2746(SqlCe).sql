@@ -5,7 +5,7 @@ SET     @VBLocal_SelectedValue = 1
 
 SELECT
 	[w].[ParentID],
-	[w].[ChildID],
+	[w].[ChildID] as [cond],
 	[w].[GrandChildID]
 FROM
 	[GrandChild] [w]

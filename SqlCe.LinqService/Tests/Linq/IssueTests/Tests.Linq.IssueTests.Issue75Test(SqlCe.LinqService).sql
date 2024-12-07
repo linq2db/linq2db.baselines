@@ -16,7 +16,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [HasChildren],
+	END as [c1],
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
@@ -28,7 +28,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [AllChildren],
+	END as [c2],
 	[t2].[MIN_1],
 	[t3].[MAX_1]
 FROM

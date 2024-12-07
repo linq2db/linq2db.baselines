@@ -6,14 +6,14 @@ SELECT
 FROM
 	(
 		SELECT
-			[p].[ParentID] as [ID]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] > 2
 		UNION
 		SELECT
-			[p_1].[ParentID] as [ID]
+			[p_1].[ParentID]
 		FROM
 			[Parent] [p_1]
 		WHERE

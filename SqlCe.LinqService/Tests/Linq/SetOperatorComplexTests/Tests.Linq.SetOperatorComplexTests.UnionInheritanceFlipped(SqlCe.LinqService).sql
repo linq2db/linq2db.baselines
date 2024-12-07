@@ -501,9 +501,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId],
+	[a_Book].[BookId] as [c1],
 	[a_Book].[Discriminator],
-	[a_Book].[BookId] as [BookId_1],
+	[a_Book].[BookId] as [c2],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]
@@ -515,9 +515,9 @@ WHERE
 	[a_Book].[Discriminator] = 'Novel'
 UNION
 SELECT
-	[a_Book_1].[BookId],
+	[a_Book_1].[BookId] as [c1],
 	[a_Book_1].[Discriminator],
-	[a_Book_1].[BookId] as [BookId_1],
+	[a_Book_1].[BookId] as [c2],
 	[a_Book_1].[BookName],
 	[a_Book_1].[NovelScore],
 	[a_Book_1].[RomanScore]
@@ -534,7 +534,7 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	[a_Book].[Discriminator] as [cond],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

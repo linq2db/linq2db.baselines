@@ -3,11 +3,6 @@
 
 SELECT
 	[a_Middle].[ParentID],
-	CASE
-		WHEN [a_Middle].[ParentID] IS NOT NULL AND [a_Bottom].[ParentID] IS NOT NULL
-			THEN 1
-		ELSE 0
-	END as [c1],
 	[a_Bottom].[ParentID] as [ParentID_1],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]

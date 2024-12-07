@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Floor([t].[Value_1]) as [c1]
+	Floor([t].[Value_1]) as [Value_1]
 FROM
 	(
 		SELECT

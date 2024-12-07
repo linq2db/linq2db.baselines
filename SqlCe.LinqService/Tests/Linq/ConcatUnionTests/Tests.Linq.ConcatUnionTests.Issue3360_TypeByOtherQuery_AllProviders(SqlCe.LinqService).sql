@@ -34,13 +34,13 @@ BeforeExecute
 
 SELECT
 	[p].[Id],
-	CAST('str' AS NVarChar) as [Str]
+	CAST('str' AS NVarChar) as [c1]
 FROM
 	[Issue3360Table] [p]
 UNION ALL
 SELECT
 	[p_1].[Id],
-	[p_1].[Str]
+	[p_1].[Str] as [c1]
 FROM
 	[Issue3360Table] [p_1]
 

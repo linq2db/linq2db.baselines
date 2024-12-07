@@ -2,20 +2,20 @@
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
-	[p].[MiddleName] as [iD_1],
-	[p].[FirstName] as [id_2],
-	[p].[LastName] as [Id_3]
+	[p].[PersonID],
+	[p].[MiddleName],
+	[p].[FirstName],
+	[p].[LastName]
 FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = 1
 UNION
 SELECT
-	[p_1].[PersonID] as [ID],
-	[p_1].[MiddleName] as [iD_1],
-	[p_1].[FirstName] as [id_2],
-	[p_1].[LastName] as [Id_3]
+	[p_1].[PersonID],
+	[p_1].[MiddleName],
+	[p_1].[FirstName],
+	[p_1].[LastName]
 FROM
 	[Person] [p_1]
 WHERE

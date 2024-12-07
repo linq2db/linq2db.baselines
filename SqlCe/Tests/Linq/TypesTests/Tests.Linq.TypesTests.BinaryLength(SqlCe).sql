@@ -14,7 +14,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	DataLength([t].[BinaryValue]) as [Length_1]
+	DataLength([t].[BinaryValue]) as [Value_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE
