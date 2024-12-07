@@ -2,13 +2,13 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[x_2].[Id],
+	[x_2].[c1],
 	[x_2].[StatusName]
 FROM
 	(
 		SELECT
 			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[c1], 'abc') as [StatusName],
-			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[PersonID], [x_1].[PersonID_1]) as [Id]
+			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[PersonID], [x_1].[PersonID_1]) as [c1]
 		FROM
 			(
 				SELECT

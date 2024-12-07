@@ -2,7 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	IIF([a_Middle].[ParentID] IS NOT NULL AND [a_Bottom1].[ParentID] IS NOT NULL, True, False),
+	[a_Middle].[ParentID],
 	[a_Bottom1].[ParentID],
 	[a_Bottom1].[ChildID],
 	[a_Bottom1].[GrandChildID]

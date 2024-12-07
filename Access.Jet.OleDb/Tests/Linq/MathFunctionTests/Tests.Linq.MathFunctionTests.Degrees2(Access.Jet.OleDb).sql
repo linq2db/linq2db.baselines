@@ -2,14 +2,9 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	Int([t].[Value_1])
+	Int([t].*)
 FROM
-	(
-		SELECT
-			[p].[MoneyValue] * 57.295779513082323 as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[Value_1] <> 0.10000000000000001
+	[t].[MoneyValue] * 57.295779513082323 <> 0.10000000000000001
 

@@ -15,7 +15,7 @@ FROM
 	[Person] [t1],
 	(
 		SELECT
-			COUNT([t2].[PersonID]) as [c1]
+			COUNT([t2].[PersonID]) as [cond]
 		FROM
 			[Patient] [t2]
 		WHERE
@@ -30,7 +30,7 @@ FROM
 	) [t4],
 	(
 		SELECT
-			COUNT([t5].[PersonID]) as [c1]
+			COUNT([t5].[PersonID]) as [cond]
 		FROM
 			[Patient] [t5]
 		WHERE
@@ -44,5 +44,5 @@ FROM
 			)
 	) [t7]
 WHERE
-	[t4].[c1] = 0 AND [t7].[c1] = 0
+	[t4].[cond] = 0 AND [t7].[cond] = 0
 
