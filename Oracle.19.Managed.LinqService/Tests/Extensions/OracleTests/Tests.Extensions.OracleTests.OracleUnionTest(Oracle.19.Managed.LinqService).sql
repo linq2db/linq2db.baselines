@@ -7,8 +7,8 @@ SELECT /*+ CONTAINERS(DEFAULT_PDB_HINT='NO_PARALLEL') */
 	t1."ParentID",
 	t1."Value1",
 	t1."c1",
-	t1."ParentID_1",
-	t1."Value1_1",
+	t1."c2",
+	t1."c3",
 	NULL
 FROM
 	(
@@ -16,8 +16,8 @@ FROM
 			p."ParentID",
 			p."Value1",
 			NULL as "c1",
-			NULL as "ParentID_1",
-			NULL as "Value1_1"
+			NULL as "c2",
+			NULL as "c3"
 		FROM
 			"Parent" p
 		UNION
@@ -25,8 +25,8 @@ FROM
 			NULL as "ParentID",
 			NULL as "Value1",
 			a_Parent."ParentID" as "c1",
-			a_Parent."ParentID" as "ParentID_1",
-			a_Parent."Value1" as "Value1_1"
+			a_Parent."ParentID" as "c2",
+			a_Parent."Value1" as "c3"
 		FROM
 			"Child" p_1
 				LEFT JOIN "Parent" a_Parent ON p_1."ParentID" = a_Parent."ParentID"
@@ -45,7 +45,7 @@ FROM
 	"Parent" t2
 		CROSS JOIN (
 			SELECT
-				1 as "c1"
+				*
 			FROM
 				"Child" c_1
 		) c_2
