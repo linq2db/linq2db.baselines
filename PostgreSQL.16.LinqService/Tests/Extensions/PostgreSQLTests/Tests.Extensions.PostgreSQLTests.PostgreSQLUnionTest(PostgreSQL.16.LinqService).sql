@@ -7,8 +7,8 @@ SELECT
 	t1."ParentID",
 	t1."Value1",
 	t1.c1,
-	t1."ParentID_1",
-	t1."Value1_1",
+	t1.c2,
+	t1.c3,
 	NULL::Int
 FROM
 	(
@@ -17,8 +17,8 @@ FROM
 				p."ParentID",
 				p."Value1",
 				NULL::Int as c1,
-				NULL::Int as "ParentID_1",
-				NULL::Int as "Value1_1"
+				NULL::Int as c2,
+				NULL::Int as c3
 			FROM
 				"Parent" p
 			FOR SHARE
@@ -28,8 +28,8 @@ FROM
 			NULL::Int as "ParentID",
 			NULL::Int as "Value1",
 			"a_Parent"."ParentID" as c1,
-			"a_Parent"."ParentID" as "ParentID_1",
-			"a_Parent"."Value1" as "Value1_1"
+			"a_Parent"."ParentID" as c2,
+			"a_Parent"."Value1" as c3
 		FROM
 			"Child" c_1
 				LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
