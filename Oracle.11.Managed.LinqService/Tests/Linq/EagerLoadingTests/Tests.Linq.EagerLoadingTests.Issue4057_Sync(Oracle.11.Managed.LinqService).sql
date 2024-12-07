@@ -28,72 +28,68 @@ WHERE
 	x."ParentID" = 3 AND ROWNUM <= 1
 
 BeforeExecute
-BeginTransaction(Serializable)
+BeginTransaction(ReadCommitted)
 BeforeExecute
--- SQLite.MS SQLite
+-- Oracle.11.Managed Oracle11
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT
-			[x].[ParentID]
+			x."ParentID"
 		FROM
-			[Parent] [x]
+			"Parent" x
 		WHERE
-			[x].[ParentID] = 3
-		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+			x."ParentID" = 3 AND ROWNUM <= 1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- SQLite.MS SQLite
+-- Oracle.11.Managed Oracle11
 
 SELECT
-	[x].[ParentID],
-	[x].[Value1]
+	x."ParentID",
+	x."Value1"
 FROM
-	[Parent] [x]
+	"Parent" x
 WHERE
-	[x].[ParentID] = 3
-LIMIT 1
+	x."ParentID" = 3 AND ROWNUM <= 1
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
-BeginTransaction(Serializable)
+BeginTransaction(ReadCommitted)
 BeforeExecute
--- SQLite.MS SQLite
+-- Oracle.11.Managed Oracle11
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
 		SELECT
-			[x].[ParentID]
+			x."ParentID"
 		FROM
-			[Parent] [x]
+			"Parent" x
 		WHERE
-			[x].[ParentID] = 3
-		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+			x."ParentID" = 3 AND ROWNUM <= 1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- SQLite.MS SQLite
+-- Oracle.11.Managed Oracle11
 
 SELECT
-	[x].[ParentID],
-	[x].[Value1]
+	x."ParentID",
+	x."Value1"
 FROM
-	[Parent] [x]
+	"Parent" x
 WHERE
-	[x].[ParentID] = 3
-LIMIT 1
+	x."ParentID" = 3 AND ROWNUM <= 1
 
 BeforeExecute
 DisposeTransaction
