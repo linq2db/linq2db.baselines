@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @param VarChar(4) -- String
-SET     @param = 'JOHN'
+SET     @param = 'john'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Lower("p"."FirstName") = Lower(@param) AND "p"."PersonID" = 1
+	Lower("p"."FirstName") = @param AND "p"."PersonID" = 1
 

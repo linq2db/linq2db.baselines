@@ -6,20 +6,20 @@ SELECT
 FROM
 	(
 		SELECT
-			"p"."ParentID" as "id",
+			"p"."ParentID",
 			TRUE as "val"
 		FROM
 			"Parent" "p"
 		UNION
 		SELECT
-			"p_1"."ParentID" as "id",
+			"p_1"."ParentID",
 			FALSE as "val"
 		FROM
 			"Parent" "p_1"
 		UNION
 		SELECT
-			"ch"."ParentID" as "id",
-			FALSE as "val"
+			"ch"."ParentID",
+			FALSE as "c1"
 		FROM
 			"Child" "ch"
 	) "p_2"

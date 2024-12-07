@@ -39,27 +39,6 @@ FROM rdb$database
 BeforeExecute
 -- Firebird.3 Firebird3
 
-SELECT
-	"v_1"."Value2"
-FROM
-	(
-		SELECT
-			DateAdd(Day, "v"."Value", LOCALTIMESTAMP) as "Value1",
-			DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
-		FROM
-			"SampleClass" "v"
-		WHERE
-			"v"."Value" = 1
-		UNION
-		SELECT
-			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
-			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
-		FROM rdb$database
-	) "v_1"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';
