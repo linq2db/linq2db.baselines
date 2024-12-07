@@ -115,37 +115,37 @@ DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
-	[m_1].[c1],
+	[m_1].[c2],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[c1]
+			[t3].[c2]
 		FROM
 			(
 				SELECT
-					[t2].[BookType],
-					[t2].[c1]
+					[t2].[cond],
+					[t2].[c2]
 				FROM
 					(
 						SELECT
-							[t1].[BookType],
-							[t1].[c1],
-							ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
+							[t1].[c1] as [cond],
+							[t1].[c2],
+							ROW_NUMBER() OVER (ORDER BY [t1].[c1] DESC) as [RN]
 						FROM
 							(
 								SELECT
-									CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-									NULL as [c1]
+									CAST(N'Roman' AS NVarChar(4000)) as [c1],
+									NULL as [c2]
 								FROM
 									[Book] [b]
 								WHERE
 									[b].[Discriminator] = N'Roman'
 								UNION ALL
 								SELECT
-									CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-									[b_1].[BookId] as [c1]
+									CAST(N'Novel' AS NVarChar(4000)) as [c1],
+									[b_1].[BookId] as [c2]
 								FROM
 									[Book] [b_1]
 								WHERE
@@ -156,9 +156,9 @@ FROM
 					[t2].[RN] > @skip
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Novel'
+			[t3].[cond] = N'Novel'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c2]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -170,31 +170,31 @@ SET     @skip = 6
 
 SELECT
 	[t2].[BookType],
-	[t2].[c1],
-	[t2].[c1_1]
+	[t2].[cond],
+	[t2].[c2]
 FROM
 	(
 		SELECT
-			[t1].[BookType],
+			[t1].[c1] as [BookType],
 			CASE
-				WHEN [t1].[BookType] = N'Roman' THEN 1
+				WHEN [t1].[c1] = N'Roman' THEN 1
 				ELSE 0
-			END as [c1],
-			[t1].[c1] as [c1_1],
-			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
+			END as [cond],
+			[t1].[c2],
+			ROW_NUMBER() OVER (ORDER BY [t1].[c1] DESC) as [RN]
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-					NULL as [c1]
+					CAST(N'Roman' AS NVarChar(4000)) as [c1],
+					NULL as [c2]
 				FROM
 					[Book] [b]
 				WHERE
 					[b].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-					[b_1].[BookId] as [c1]
+					CAST(N'Novel' AS NVarChar(4000)) as [c1],
+					[b_1].[BookId] as [c2]
 				FROM
 					[Book] [b_1]
 				WHERE

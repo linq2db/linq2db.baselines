@@ -4,14 +4,14 @@
 SELECT
 	[p].[ParentID],
 	CASE
-		WHEN [c_2].[Count_1] IS NULL THEN 0
+		WHEN [c_2].[cond] IS NULL THEN 0
 		ELSE [c_2].[c1]
 	END
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [Count_1],
+				COUNT(*) as [cond],
 				COUNT(*) as [c1]
 			FROM
 				[Child] [c_1]
