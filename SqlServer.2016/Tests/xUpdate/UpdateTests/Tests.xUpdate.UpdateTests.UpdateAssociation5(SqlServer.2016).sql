@@ -6,7 +6,7 @@ UPDATE
 SET
 	[u].[BoolValue] = IIF(NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Parent] [x_1]
 		WHERE

@@ -226,7 +226,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -282,7 +282,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -338,7 +338,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE

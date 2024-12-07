@@ -10,7 +10,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT -10 AS "X" FROM DUMMY) "t"

@@ -20,7 +20,7 @@ BeforeExecute
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Issue1982Table] [t1]
 		WHERE

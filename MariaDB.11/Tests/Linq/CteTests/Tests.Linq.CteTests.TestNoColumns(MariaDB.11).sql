@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH `CTE1_` (`unused`)
+WITH `CTE1_` (`c1`)
 AS
 (
 	SELECT
@@ -25,7 +25,7 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH `CTE1_` (`unused`)
+WITH `CTE1_` (`c1`)
 AS
 (
 	SELECT
@@ -41,11 +41,11 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH `CTE1_` (`unused`)
+WITH `CTE1_` (`c1`)
 AS
 (
 	SELECT
-		1 as `unused`
+		1 as `c1`
 	FROM
 		`Child` `c_1`
 )
@@ -53,7 +53,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				`CTE1_` `t1`
 		)

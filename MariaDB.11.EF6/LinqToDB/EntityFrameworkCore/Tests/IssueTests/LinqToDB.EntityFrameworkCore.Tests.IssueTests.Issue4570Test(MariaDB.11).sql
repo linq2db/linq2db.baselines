@@ -7,7 +7,7 @@ FROM
 WHERE
 	`ua`.`ParentId` = 55377 AND EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			`Parents` `t1`
 	)

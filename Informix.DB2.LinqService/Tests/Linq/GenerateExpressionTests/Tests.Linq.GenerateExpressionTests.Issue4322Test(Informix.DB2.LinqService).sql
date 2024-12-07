@@ -8,7 +8,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT -10::Real AS X FROM table(set{1})) t

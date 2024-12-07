@@ -13,7 +13,7 @@ WHERE
 		FROM
 			(
 				SELECT FIRST 3
-					1 as "c1"
+					*
 				FROM
 					"Parent" "p1"
 				WHERE

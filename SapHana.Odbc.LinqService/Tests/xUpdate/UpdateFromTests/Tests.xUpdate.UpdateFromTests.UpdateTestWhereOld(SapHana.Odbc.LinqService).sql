@@ -309,7 +309,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"UpdatedEntities" "c_1",
 			"NewEntities" "t"

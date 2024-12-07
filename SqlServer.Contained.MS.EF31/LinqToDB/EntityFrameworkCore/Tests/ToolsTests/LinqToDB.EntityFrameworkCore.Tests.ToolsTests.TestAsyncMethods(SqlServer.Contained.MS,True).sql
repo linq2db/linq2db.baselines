@@ -94,7 +94,7 @@ WHERE
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Products] [e]
 		WHERE

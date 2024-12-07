@@ -188,7 +188,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT SKIP 2 FIRST 5

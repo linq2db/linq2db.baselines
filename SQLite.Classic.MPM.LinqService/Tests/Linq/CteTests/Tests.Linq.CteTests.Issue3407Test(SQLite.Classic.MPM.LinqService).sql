@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE_1] ([unused])
+WITH [CTE_1] ([c1])
 AS
 (
 	SELECT

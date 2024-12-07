@@ -58,7 +58,7 @@ FROM
 			[e_1].[Gender] as [Gender_4],
 			IIF(EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[Person] [tg]
 				WHERE

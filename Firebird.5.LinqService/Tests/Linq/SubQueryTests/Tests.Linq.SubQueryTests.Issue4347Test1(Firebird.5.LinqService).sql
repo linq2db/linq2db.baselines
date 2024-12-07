@@ -65,13 +65,13 @@ FROM
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					"LineEntity" "a_Lines"
 				WHERE
 					"x"."Id" = "a_Lines"."TransactionId" AND EXISTS(
 						SELECT
-							1
+							*
 						FROM
 							(
 								SELECT CAST('A' AS VARCHAR(1)) AS "item" FROM rdb$database
@@ -95,13 +95,13 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"LineEntity" "a_Lines"
 		WHERE
 			"x"."Id" = "a_Lines"."TransactionId" AND EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					(
 						SELECT CAST('A' AS VARCHAR(1)) AS "item" FROM rdb$database

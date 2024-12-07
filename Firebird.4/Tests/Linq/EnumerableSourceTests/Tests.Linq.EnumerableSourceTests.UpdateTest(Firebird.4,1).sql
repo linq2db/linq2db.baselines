@@ -54,7 +54,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"TableToInsert" "t"
 				INNER JOIN (

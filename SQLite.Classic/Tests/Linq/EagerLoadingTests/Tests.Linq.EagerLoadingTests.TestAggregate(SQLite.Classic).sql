@@ -122,7 +122,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					*
 				FROM
 					(
 						SELECT DISTINCT

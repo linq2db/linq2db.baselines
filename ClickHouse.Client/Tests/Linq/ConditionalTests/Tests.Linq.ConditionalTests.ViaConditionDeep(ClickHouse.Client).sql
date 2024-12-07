@@ -46,8 +46,14 @@ SELECT
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN true
 		ELSE false
 	END,
+	CASE
+		WHEN x.StringProp = '2' THEN true
+		ELSE false
+	END,
 	x.StringProp,
-	concat(x.StringProp, '2')
+	1,
+	concat(x.StringProp, '2'),
+	2
 FROM
 	ConditionalData x
 WHERE

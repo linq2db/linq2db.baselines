@@ -8,7 +8,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT toFloat32(-10) AS X) t

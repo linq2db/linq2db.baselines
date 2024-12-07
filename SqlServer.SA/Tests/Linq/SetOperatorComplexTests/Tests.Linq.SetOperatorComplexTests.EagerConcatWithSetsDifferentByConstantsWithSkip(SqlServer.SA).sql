@@ -161,6 +161,7 @@ SET     @skip = 6
 
 SELECT
 	[t1].[BookType],
+	IIF([t1].[BookType] = N'Roman', 1, 0),
 	[t1].[c1]
 FROM
 	(

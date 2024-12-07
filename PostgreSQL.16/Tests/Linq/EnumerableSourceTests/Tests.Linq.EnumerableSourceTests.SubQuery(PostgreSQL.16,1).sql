@@ -37,7 +37,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(VALUES
 				(2,'Janet'), (3,'Doe')

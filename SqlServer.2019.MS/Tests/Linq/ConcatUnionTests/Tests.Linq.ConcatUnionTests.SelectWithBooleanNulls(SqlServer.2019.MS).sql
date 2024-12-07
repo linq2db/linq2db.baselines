@@ -4,7 +4,7 @@
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [t1]
 	), 1, 0),
@@ -15,7 +15,7 @@ UNION ALL
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [t2]
 	), 1, 0),
