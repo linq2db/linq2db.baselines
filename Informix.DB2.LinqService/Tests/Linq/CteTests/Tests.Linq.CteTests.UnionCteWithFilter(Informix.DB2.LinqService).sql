@@ -166,20 +166,20 @@ AS
 			INNER JOIN Authors a_Author ON b.AuthorId = a_Author.Id
 )
 SELECT
-	b_1.Id
+	b_1.c1
 FROM
 	(
 		SELECT
 			NULL::NVarChar(255) as Name,
 			NVL(r.Book_Title, NULL) as Title,
-			NVL(r.Book_Id, NULL) as Id
+			NVL(r.Book_Id, NULL) as c1
 		FROM
 			BooksCte r
 		UNION ALL
 		SELECT
 			t1.Author_Name as Name,
 			NULL::NVarChar(255) as Title,
-			NULL::Int as Id
+			NULL::Int as c1
 		FROM
 			BooksCte t1
 	) b_1

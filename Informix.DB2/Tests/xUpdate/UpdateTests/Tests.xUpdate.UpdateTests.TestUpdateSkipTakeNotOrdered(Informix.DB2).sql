@@ -180,6 +180,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 6
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 UPDATE
 	Parent
@@ -191,7 +195,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT SKIP 6 FIRST 5
+				SELECT SKIP @skip FIRST @take
 					x.ParentID,
 					x.Value1
 				FROM

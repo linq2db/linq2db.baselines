@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 1
 
 SELECT
 	t2.FirstName,
@@ -9,7 +11,7 @@ SELECT
 	t2.Gender
 FROM
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			t1.FirstName,
 			t1.PersonID as ID,
 			t1.LastName,
@@ -29,7 +31,7 @@ SELECT
 	t4.Gender
 FROM
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			t3.FirstName,
 			t3.PersonID as ID,
 			t3.LastName,

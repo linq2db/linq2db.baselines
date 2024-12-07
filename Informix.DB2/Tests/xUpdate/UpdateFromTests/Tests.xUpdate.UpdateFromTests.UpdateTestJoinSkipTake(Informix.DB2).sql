@@ -261,6 +261,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
 
@@ -272,7 +276,7 @@ SET
 			(UpdatedEntities.Value1 * t2.Value1) * 11
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_1.Value1,
 					c_2.id
 				FROM
@@ -291,7 +295,7 @@ SET
 			(UpdatedEntities.Value2 * t3.Value2) * 22
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_2.Value2,
 					c_3.id
 				FROM
@@ -310,7 +314,7 @@ SET
 			(UpdatedEntities.Value3 * t4.Value3) * 33
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_3.Value3,
 					c_4.id
 				FROM
@@ -330,7 +334,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					c_1.id
 				FROM
 					UpdatedEntities c_1

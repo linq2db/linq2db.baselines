@@ -1,12 +1,14 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 1
 
 SELECT
 	t2.ParentID,
 	t2.Value1
 FROM
 	(
-		SELECT FIRST 1
+		SELECT FIRST @take
 			t1.ParentID,
 			t1.Value1
 		FROM

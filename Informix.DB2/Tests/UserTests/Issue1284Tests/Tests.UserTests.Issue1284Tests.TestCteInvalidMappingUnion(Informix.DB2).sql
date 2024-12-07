@@ -14,7 +14,7 @@ AS
 (
 	SELECT
 		x_1.FirstName,
-		x_1.ID,
+		x_1.PersonID,
 		x_1.LastName,
 		x_1.MiddleName,
 		x_1.Gender,
@@ -24,7 +24,7 @@ AS
 			SELECT
 				1::Int as rn,
 				x.FirstName,
-				x.PersonID as ID,
+				x.PersonID,
 				x.LastName,
 				x.MiddleName,
 				x.Gender
@@ -34,7 +34,7 @@ AS
 			SELECT
 				2::Int as rn,
 				person_1.FirstName,
-				person_1.PersonID as ID,
+				person_1.PersonID,
 				person_1.LastName,
 				person_1.MiddleName,
 				person_1.Gender
@@ -59,7 +59,7 @@ BeforeExecute
 
 SELECT FIRST 1
 	t1.FirstName,
-	t1.ID,
+	t1.PersonID,
 	t1.LastName,
 	t1.MiddleName,
 	t1.Gender,
@@ -69,7 +69,7 @@ FROM
 		SELECT
 			1::Int as rn,
 			x.FirstName,
-			x.PersonID as ID,
+			x.PersonID,
 			x.LastName,
 			x.MiddleName,
 			x.Gender
@@ -79,7 +79,7 @@ FROM
 		SELECT
 			2::Int as rn,
 			person_1.FirstName,
-			person_1.PersonID as ID,
+			person_1.PersonID,
 			person_1.LastName,
 			person_1.MiddleName,
 			person_1.Gender

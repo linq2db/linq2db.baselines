@@ -15,13 +15,15 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 15
 
 SELECT
 	e.ID,
 	p.SmallIntValue
 FROM
 	(
-		SELECT FIRST 15
+		SELECT FIRST @take
 			t3.ID
 		FROM
 			(
@@ -37,7 +39,7 @@ FROM
 			) t3
 	) e
 		LEFT JOIN (
-			SELECT FIRST 15
+			SELECT FIRST @take
 				t6.ID,
 				t6.SmallIntValue
 			FROM

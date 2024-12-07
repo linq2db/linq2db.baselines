@@ -34,17 +34,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.HasValue,
-	t1.Value_1
+	t1.cond_1,
+	t1.cond
 FROM
 	Request a
 		LEFT JOIN (
 			SELECT
-				a_Metrics."Value" as Value_1,
+				a_Metrics."Value" as cond,
 				CASE
 					WHEN a_Metrics."Value" IS NOT NULL THEN 't'
 					ELSE 'f'
-				END::BOOLEAN as HasValue,
+				END::BOOLEAN as cond_1,
 				ROW_NUMBER() OVER (PARTITION BY a_Metrics.RequestId ORDER BY a_Metrics.RequestId) as rn,
 				a_Metrics.RequestId
 			FROM

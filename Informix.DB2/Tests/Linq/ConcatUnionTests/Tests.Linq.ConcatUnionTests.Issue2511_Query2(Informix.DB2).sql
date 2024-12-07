@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -7,18 +9,18 @@ SELECT
 	t1.LastName,
 	t1.MiddleName,
 	t1.Gender,
-	t1.PersonID,
-	t1.PersonID,
+	t1.cond,
+	t1.cond,
 	t1.Diagnosis
 FROM
 	(
-		SELECT FIRST 2
+		SELECT FIRST @take
 			p.PersonID as ID,
 			p.FirstName,
 			p.LastName,
 			p.MiddleName,
 			p.Gender,
-			a_Patient.PersonID,
+			a_Patient.PersonID as cond,
 			a_Patient.Diagnosis
 		FROM
 			Person p

@@ -1,70 +1,66 @@
 ﻿BeforeExecute
-BeginTransactionAsync(Serializable)
+BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
-		SELECT
-			[x].[ParentID]
+		SELECT FIRST 1
+			x.ParentID
 		FROM
-			[Parent] [x]
+			Parent x
 		WHERE
-			[x].[ParentID] = 3
-		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+			x.ParentID = 3
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- Informix.DB2 Informix (asynchronously)
 
-SELECT
-	[x].[ParentID],
-	[x].[Value1]
+SELECT FIRST 1
+	x.ParentID,
+	x.Value1
 FROM
-	[Parent] [x]
+	Parent x
 WHERE
-	[x].[ParentID] = 3
-LIMIT 1
+	x.ParentID = 3
 
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
-BeginTransactionAsync(Serializable)
+BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
-		SELECT
-			[x].[ParentID]
+		SELECT FIRST 1
+			x.ParentID
 		FROM
-			[Parent] [x]
+			Parent x
 		WHERE
-			[x].[ParentID] = 3
-		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+			x.ParentID = 3
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- Informix.DB2 Informix (asynchronously)
 
-SELECT
-	[x].[ParentID],
-	[x].[Value1]
+SELECT FIRST 1
+	x.ParentID,
+	x.Value1
 FROM
-	[Parent] [x]
+	Parent x
 WHERE
-	[x].[ParentID] = 3
-LIMIT 1
+	x.ParentID = 3
 
 BeforeExecute
 DisposeTransactionAsync

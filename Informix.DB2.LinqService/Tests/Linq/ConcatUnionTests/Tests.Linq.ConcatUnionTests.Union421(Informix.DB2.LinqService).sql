@@ -6,20 +6,20 @@ SELECT
 FROM
 	(
 		SELECT
-			p.ParentID as id,
+			p.ParentID,
 			't'::BOOLEAN as val
 		FROM
 			Parent p
 		UNION
 		SELECT
-			p_1.ParentID as id,
+			p_1.ParentID,
 			'f'::BOOLEAN as val
 		FROM
 			Parent p_1
 		UNION
 		SELECT
-			ch.ParentID as id,
-			'f'::BOOLEAN as val
+			ch.ParentID,
+			'f'::BOOLEAN as c1
 		FROM
 			Child ch
 	) p_2
