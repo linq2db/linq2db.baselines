@@ -75,20 +75,20 @@ AS
 			INNER JOIN [Authors] [a_Author] ON [b].[AuthorId] = [a_Author].[Id]
 )
 SELECT
-	[b_1].[Id]
+	[b_1].[Book_Id]
 FROM
 	(
 		SELECT
 			NULL as [Name],
 			[r].[Book_Title] as [Title],
-			[r].[Book_Id] as [Id]
+			[r].[Book_Id]
 		FROM
 			[BooksCte] [r]
 		UNION ALL
 		SELECT
 			[t1].[Author_Name] as [Name],
 			NULL as [Title],
-			NULL as [Id]
+			NULL as [Book_Id]
 		FROM
 			[BooksCte] [t1]
 	) [b_1]
