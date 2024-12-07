@@ -3,11 +3,6 @@
 
 SELECT
 	"a_Middle"."ParentID",
-	CASE
-		WHEN "a_Middle"."ParentID" IS NOT NULL AND "a_Bottom"."ParentID" IS NOT NULL
-			THEN True
-		ELSE False
-	END,
 	"a_Bottom"."ParentID",
 	"a_Bottom"."ChildID",
 	"a_Bottom"."GrandChildID"
