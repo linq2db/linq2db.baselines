@@ -112,26 +112,26 @@ BeforeExecute
 
 SELECT
 	t1.Id,
-	t1.Byte,
-	t1.Byte_1,
-	t1.Guid,
-	t1.GuidN,
-	t1.Enum,
-	t1.EnumN,
-	t1.Bool,
-	t1.BoolN
+	t1.c1,
+	t1.c2,
+	t1.c3,
+	t1.c4,
+	t1.c5,
+	t1.c6,
+	t1.c7,
+	t1.c8
 FROM
 	(
 		SELECT
 			r.Id as Id,
-			toUInt8(toUInt8(5)) as Byte,
-			toUInt8(toUInt8(5)) as Byte_1,
-			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29')) as Guid,
-			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece30')) as GuidN,
-			toString('ENUM1_VALUE') as Enum,
-			toString('ENUM2_VALUE') as EnumN,
-			toBool(true) as Bool,
-			toBool(false) as BoolN
+			toUInt8(toUInt8(5)) as c1,
+			toUInt8(toUInt8(5)) as c2,
+			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29')) as c3,
+			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece30')) as c4,
+			toString('ENUM1_VALUE') as c5,
+			toString('ENUM2_VALUE') as c6,
+			toBool(true) as c7,
+			toBool(false) as c8
 		FROM
 			Issue3360Table1 r
 		WHERE
@@ -139,14 +139,14 @@ FROM
 		UNION ALL
 		SELECT
 			r_1.Id as Id,
-			r_1.Byte as Byte,
-			r_1.ByteN as Byte_1,
-			r_1.Guid as Guid,
-			r_1.GuidN as GuidN,
-			r_1.Enum as Enum,
-			r_1.EnumN as EnumN,
-			r_1.Bool as Bool,
-			r_1.BoolN as BoolN
+			r_1.Byte as c1,
+			r_1.ByteN as c2,
+			r_1.Guid as c3,
+			r_1.GuidN as c4,
+			r_1.Enum as c5,
+			r_1.EnumN as c6,
+			r_1.Bool as c7,
+			r_1.BoolN as c8
 		FROM
 			Issue3360Table1 r_1
 		WHERE

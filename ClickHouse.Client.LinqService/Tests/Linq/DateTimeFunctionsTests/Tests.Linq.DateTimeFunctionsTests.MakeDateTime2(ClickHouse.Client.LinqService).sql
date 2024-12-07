@@ -2,14 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t.c1
+	makeDateTime(2010, t.ID, 1, 20, 35, 44)
 FROM
-	(
-		SELECT
-			makeDateTime(2010, p.ID, 1, 20, 35, 44) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	toYear(t.c1) = 2010
+	toYear(makeDateTime(2010, t.ID, 1, 20, 35, 44)) = 2010
 

@@ -24,7 +24,7 @@ BeforeExecute
 SELECT
 	t1.Year_1,
 	t1.Month_1,
-	sumOrNull(t1.SKUPAJ) as Sum_1
+	sumOrNull(t1.SKUPAJ) as c1
 FROM
 	(
 		SELECT
@@ -49,7 +49,7 @@ UNION ALL
 SELECT
 	t2.Year_1 as Year_1,
 	t2.Month_1 as Month_1,
-	sumOrNull(t2.SKUPAJ) as Sum_1
+	sumOrNull(t2.SKUPAJ) as c1
 FROM
 	(
 		SELECT

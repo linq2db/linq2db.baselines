@@ -26,6 +26,15 @@ VALUES
 (2,2),
 (3,3)
 
+SELECT
+	t.Id,
+	t.Value
+FROM
+	SampleClass t,
+	SampleClass t2
+WHERE
+	t2.Value > 2
+
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
