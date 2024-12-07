@@ -120,7 +120,6 @@ BeforeExecute
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],
-	IIF([a_Table2].[ID] IS NOT NULL AND [a_Table3].[ID] IS NOT NULL, 1, 0),
 	[a_Table3].[ID]
 FROM
 	[Table1] [r]
