@@ -527,13 +527,13 @@ BeforeExecute
 
 SELECT
 	[t2].[Converted1],
-	[t2].[Value1],
+	[t2].[Converted2],
 	[t2].[Converted1]
 FROM
 	(
 		SELECT
 			IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable]) as [Converted1],
-			[t1].[Value1]
+			[t1].[Value1] as [Converted2]
 		FROM
 			[ValueConversion] [t1]
 	) [t2]

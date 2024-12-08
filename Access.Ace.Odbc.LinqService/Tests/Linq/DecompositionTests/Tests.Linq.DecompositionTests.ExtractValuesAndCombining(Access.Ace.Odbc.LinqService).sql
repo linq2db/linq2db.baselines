@@ -371,13 +371,13 @@ BeforeExecute
 
 SELECT
 	[t1].[cond],
-	[t1].[cond_1],
-	[t1].[ItemCode],
 	[t1].[Color],
+	[t1].[ItemCode],
+	[t1].[Name],
 	IIF(False, '', NULL),
 	IIF(False, '', NULL),
 	[t1].[ItemCode_1],
-	[t1].[Style_1],
+	[t1].[Name_1],
 	IIF(False, False, NULL),
 	IIF(False, '', NULL),
 	IIF(False, '', NULL)
@@ -386,10 +386,10 @@ FROM
 		SELECT
 			IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
 			Mid([t].[ItemCode], 1, 2) as [ItemCode],
-			[t].[Color],
+			[t].[Color] as [Name],
 			Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
-			[t].[Style] as [Style_1],
-			IIF([t].[Kind] = 1, True, False) as [cond_1]
+			[t].[Style] as [Name_1],
+			IIF([t].[Kind] = 1, True, False) as [Color]
 		FROM
 			[Item] [t]
 	) [t1]
@@ -439,41 +439,41 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[x_2].[cond],
-	[x_2].[cond_1_1],
-	[x_2].[ItemCode],
 	[x_2].[Color],
-	[x_2].[c1],
-	[x_2].[c2],
+	[x_2].[Color_1],
+	[x_2].[ItemCode],
+	[x_2].[Name],
 	[x_2].[ItemCode_1],
-	[x_2].[Style_1],
-	[x_2].[c3],
-	[x_2].[c4],
-	[x_2].[c5]
+	[x_2].[Name_1],
+	[x_2].[ItemCode_2],
+	[x_2].[Name_2],
+	[x_2].[Size_1],
+	[x_2].[ItemCode_3],
+	[x_2].[Name_3]
 FROM
 	(
 		SELECT
-			[x_1].[cond],
-			IIF([x_1].[cond_1] IS NOT NULL, True, False) as [cond_1],
-			[x_1].[cond_1] as [cond_1_1],
+			[x_1].[cond] as [Color],
+			IIF([x_1].[Color] IS NOT NULL, True, False) as [cond],
+			[x_1].[Color] as [Color_1],
 			[x_1].[ItemCode],
-			[x_1].[Color],
-			[x_1].[c1],
-			[x_1].[c2],
-			[x_1].[ItemCode_1],
-			[x_1].[Style_1],
-			[x_1].[c3],
-			[x_1].[c4],
-			[x_1].[c5]
+			[x_1].[Name],
+			[x_1].[c1] as [ItemCode_1],
+			[x_1].[c2] as [Name_1],
+			[x_1].[ItemCode_1] as [ItemCode_2],
+			[x_1].[Name_1] as [Name_2],
+			[x_1].[c3] as [Size_1],
+			[x_1].[c4] as [ItemCode_3],
+			[x_1].[c5] as [Name_3]
 		FROM
 			(
 				SELECT
 					[x].[cond],
-					[x].[cond_1],
+					[x].[cond_1] as [Color],
 					[x].[ItemCode],
-					[x].[Color],
+					[x].[Color] as [Name],
 					[x].[ItemCode_1],
-					[x].[Style_1],
+					[x].[Style_1] as [Name_1],
 					IIF(False, '', NULL) as [c1],
 					IIF(False, '', NULL) as [c2],
 					IIF(False, False, NULL) as [c3],
@@ -496,11 +496,11 @@ FROM
 				UNION ALL
 				SELECT
 					[t1].[cond],
-					IIF(False, False, NULL) as [cond_1],
+					IIF(False, False, NULL) as [Color],
 					IIF(False, '', NULL) as [ItemCode],
-					IIF(False, '', NULL) as [Color],
+					IIF(False, '', NULL) as [Name],
 					IIF(False, '', NULL) as [ItemCode_1],
-					IIF(False, '', NULL) as [Style_1],
+					IIF(False, '', NULL) as [Name_1],
 					[t1].[ItemCode] as [c1],
 					[t1].[Color] as [c2],
 					[t1].[cond_1] as [c3],
@@ -523,8 +523,8 @@ FROM
 			) [x_1]
 	) [x_2]
 WHERE
-	NOT ([x_2].[cond] = True AND [x_2].[cond_1] = True) OR
-	NOT ([x_2].[cond] = True AND [x_2].[cond_1] = True AND [x_2].[cond_1_1] = True AND [x_2].[cond_1_1] IS NOT NULL)
+	NOT ([x_2].[Color] = True AND [x_2].[cond] = True) OR
+	NOT ([x_2].[Color] = True AND [x_2].[cond] = True AND [x_2].[Color_1] = True AND [x_2].[Color_1] IS NOT NULL)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -542,41 +542,41 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[x_2].[cond],
-	[x_2].[cond_1_1],
-	[x_2].[ItemCode],
 	[x_2].[Color],
-	[x_2].[c1],
-	[x_2].[c2],
+	[x_2].[Color_1],
+	[x_2].[ItemCode],
+	[x_2].[Name],
 	[x_2].[ItemCode_1],
-	[x_2].[Style_1],
-	[x_2].[c3],
-	[x_2].[c4],
-	[x_2].[c5]
+	[x_2].[Name_1],
+	[x_2].[ItemCode_2],
+	[x_2].[Name_2],
+	[x_2].[Size_1],
+	[x_2].[ItemCode_3],
+	[x_2].[Name_3]
 FROM
 	(
 		SELECT
-			[x_1].[cond],
-			IIF([x_1].[cond_1] IS NOT NULL, True, False) as [cond_1],
-			[x_1].[cond_1] as [cond_1_1],
+			[x_1].[cond] as [Color],
+			IIF([x_1].[Color] IS NOT NULL, True, False) as [cond],
+			[x_1].[Color] as [Color_1],
 			[x_1].[ItemCode],
-			[x_1].[Color],
-			[x_1].[c1],
-			[x_1].[c2],
-			[x_1].[ItemCode_1],
-			[x_1].[Style_1],
-			[x_1].[c3],
-			[x_1].[c4],
-			[x_1].[c5]
+			[x_1].[Name],
+			[x_1].[c1] as [ItemCode_1],
+			[x_1].[c2] as [Name_1],
+			[x_1].[ItemCode_1] as [ItemCode_2],
+			[x_1].[Name_1] as [Name_2],
+			[x_1].[c3] as [Size_1],
+			[x_1].[c4] as [ItemCode_3],
+			[x_1].[c5] as [Name_3]
 		FROM
 			(
 				SELECT
 					[x].[cond],
-					[x].[cond_1],
+					[x].[cond_1] as [Color],
 					[x].[ItemCode],
-					[x].[Color],
+					[x].[Color] as [Name],
 					[x].[ItemCode_1],
-					[x].[Style_1],
+					[x].[Style_1] as [Name_1],
 					IIF(False, '', NULL) as [c1],
 					IIF(False, '', NULL) as [c2],
 					IIF(False, False, NULL) as [c3],
@@ -599,11 +599,11 @@ FROM
 				UNION ALL
 				SELECT
 					[t1].[cond],
-					IIF(False, False, NULL) as [cond_1],
+					IIF(False, False, NULL) as [Color],
 					IIF(False, '', NULL) as [ItemCode],
-					IIF(False, '', NULL) as [Color],
+					IIF(False, '', NULL) as [Name],
 					IIF(False, '', NULL) as [ItemCode_1],
-					IIF(False, '', NULL) as [Style_1],
+					IIF(False, '', NULL) as [Name_1],
 					[t1].[ItemCode] as [c1],
 					[t1].[Color] as [c2],
 					[t1].[cond_1] as [c3],
@@ -626,11 +626,11 @@ FROM
 			) [x_1]
 	) [x_2]
 WHERE
+	[x_2].[Color] = True AND
 	[x_2].[cond] = True AND
-	[x_2].[cond_1] = True AND
+	[x_2].[Color] = True AND
 	[x_2].[cond] = True AND
-	[x_2].[cond_1] = True AND
-	[x_2].[cond_1_1] = True
+	[x_2].[Color_1] = True
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -648,41 +648,41 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[x_2].[cond],
-	[x_2].[cond_1_1],
-	[x_2].[ItemCode],
+	[x_2].[Size_1],
 	[x_2].[Color],
-	[x_2].[c1],
-	[x_2].[c2],
+	[x_2].[ItemCode_2],
+	[x_2].[Name_2],
+	[x_2].[ItemCode_3],
+	[x_2].[Name_3],
+	[x_2].[ItemCode],
+	[x_2].[Name],
+	[x_2].[Size_2],
 	[x_2].[ItemCode_1],
-	[x_2].[Style_1],
-	[x_2].[c3],
-	[x_2].[c4],
-	[x_2].[c5]
+	[x_2].[Name_1]
 FROM
 	(
 		SELECT
-			[x_1].[cond],
-			IIF([x_1].[cond_1] IS NOT NULL, True, False) as [cond_1],
-			[x_1].[ItemCode_1],
-			[x_1].[Style_1],
-			[x_1].[c3],
-			[x_1].[c4],
-			[x_1].[c5],
-			[x_1].[cond_1] as [cond_1_1],
-			[x_1].[ItemCode],
+			[x_1].[cond] as [Size_1],
+			IIF([x_1].[Color] IS NOT NULL, True, False) as [cond],
+			[x_1].[ItemCode_1] as [ItemCode],
+			[x_1].[Name_1] as [Name],
+			[x_1].[c3] as [Size_2],
+			[x_1].[c4] as [ItemCode_1],
+			[x_1].[c5] as [Name_1],
 			[x_1].[Color],
-			[x_1].[c1],
-			[x_1].[c2]
+			[x_1].[ItemCode] as [ItemCode_2],
+			[x_1].[Name] as [Name_2],
+			[x_1].[c1] as [ItemCode_3],
+			[x_1].[c2] as [Name_3]
 		FROM
 			(
 				SELECT
 					[x].[cond],
-					[x].[cond_1],
+					[x].[cond_1] as [Color],
 					[x].[ItemCode],
-					[x].[Color],
+					[x].[Color] as [Name],
 					[x].[ItemCode_1],
-					[x].[Style_1],
+					[x].[Style_1] as [Name_1],
 					IIF(False, '', NULL) as [c1],
 					IIF(False, '', NULL) as [c2],
 					IIF(False, False, NULL) as [c3],
@@ -705,11 +705,11 @@ FROM
 				UNION ALL
 				SELECT
 					[t1].[cond],
-					IIF(False, False, NULL) as [cond_1],
+					IIF(False, False, NULL) as [Color],
 					IIF(False, '', NULL) as [ItemCode],
-					IIF(False, '', NULL) as [Color],
+					IIF(False, '', NULL) as [Name],
 					IIF(False, '', NULL) as [ItemCode_1],
-					IIF(False, '', NULL) as [Style_1],
+					IIF(False, '', NULL) as [Name_1],
 					[t1].[ItemCode] as [c1],
 					[t1].[Color] as [c2],
 					[t1].[cond_1] as [c3],
@@ -732,8 +732,8 @@ FROM
 			) [x_1]
 	) [x_2]
 WHERE
-	NOT ([x_2].[cond] = True AND [x_2].[cond_1] = False) OR
-	NOT ([x_2].[cond] = True AND [x_2].[cond_1] = False AND [x_2].[c3] = True AND [x_2].[c3] IS NOT NULL)
+	NOT ([x_2].[Size_1] = True AND [x_2].[cond] = False) OR
+	NOT ([x_2].[Size_1] = True AND [x_2].[cond] = False AND [x_2].[Size_2] = True AND [x_2].[Size_2] IS NOT NULL)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -751,41 +751,41 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[x_2].[cond],
-	[x_2].[cond_1_1],
-	[x_2].[ItemCode],
+	[x_2].[Size_1],
 	[x_2].[Color],
-	[x_2].[c1],
-	[x_2].[c2],
+	[x_2].[ItemCode_2],
+	[x_2].[Name_2],
+	[x_2].[ItemCode_3],
+	[x_2].[Name_3],
+	[x_2].[ItemCode],
+	[x_2].[Name],
+	[x_2].[Size_2],
 	[x_2].[ItemCode_1],
-	[x_2].[Style_1],
-	[x_2].[c3],
-	[x_2].[c4],
-	[x_2].[c5]
+	[x_2].[Name_1]
 FROM
 	(
 		SELECT
-			[x_1].[cond],
-			IIF([x_1].[cond_1] IS NOT NULL, True, False) as [cond_1],
-			[x_1].[ItemCode_1],
-			[x_1].[Style_1],
-			[x_1].[c3],
-			[x_1].[c4],
-			[x_1].[c5],
-			[x_1].[cond_1] as [cond_1_1],
-			[x_1].[ItemCode],
+			[x_1].[cond] as [Size_1],
+			IIF([x_1].[Color] IS NOT NULL, True, False) as [cond],
+			[x_1].[ItemCode_1] as [ItemCode],
+			[x_1].[Name_1] as [Name],
+			[x_1].[c3] as [Size_2],
+			[x_1].[c4] as [ItemCode_1],
+			[x_1].[c5] as [Name_1],
 			[x_1].[Color],
-			[x_1].[c1],
-			[x_1].[c2]
+			[x_1].[ItemCode] as [ItemCode_2],
+			[x_1].[Name] as [Name_2],
+			[x_1].[c1] as [ItemCode_3],
+			[x_1].[c2] as [Name_3]
 		FROM
 			(
 				SELECT
 					[x].[cond],
-					[x].[cond_1],
+					[x].[cond_1] as [Color],
 					[x].[ItemCode],
-					[x].[Color],
+					[x].[Color] as [Name],
 					[x].[ItemCode_1],
-					[x].[Style_1],
+					[x].[Style_1] as [Name_1],
 					IIF(False, '', NULL) as [c1],
 					IIF(False, '', NULL) as [c2],
 					IIF(False, False, NULL) as [c3],
@@ -808,11 +808,11 @@ FROM
 				UNION ALL
 				SELECT
 					[t1].[cond],
-					IIF(False, False, NULL) as [cond_1],
+					IIF(False, False, NULL) as [Color],
 					IIF(False, '', NULL) as [ItemCode],
-					IIF(False, '', NULL) as [Color],
+					IIF(False, '', NULL) as [Name],
 					IIF(False, '', NULL) as [ItemCode_1],
-					IIF(False, '', NULL) as [Style_1],
+					IIF(False, '', NULL) as [Name_1],
 					[t1].[ItemCode] as [c1],
 					[t1].[Color] as [c2],
 					[t1].[cond_1] as [c3],
@@ -835,11 +835,11 @@ FROM
 			) [x_1]
 	) [x_2]
 WHERE
-	[x_2].[cond] = True AND
-	[x_2].[cond_1] = False AND
-	[x_2].[cond] = True AND
-	[x_2].[cond_1] = False AND
-	[x_2].[c3] = True
+	[x_2].[Size_1] = True AND
+	[x_2].[cond] = False AND
+	[x_2].[Size_1] = True AND
+	[x_2].[cond] = False AND
+	[x_2].[Size_2] = True
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
