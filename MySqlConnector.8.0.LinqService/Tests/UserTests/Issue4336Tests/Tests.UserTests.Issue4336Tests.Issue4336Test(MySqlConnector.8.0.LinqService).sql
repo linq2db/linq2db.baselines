@@ -138,7 +138,7 @@ FROM
 							SELECT
 								`agroup`.`Id` as `OrderPeriodId`,
 								`oi`.`ProductId`,
-								SUM(CAST(COALESCE(`oi`.`Quantity`,0) AS SIGNED)) as `Quantity`
+								SUM(COALESCE(`oi`.`Quantity`,0)) as `Quantity`
 							FROM
 								`OrderPeriod` `agroup`
 									LEFT JOIN `OrderHeader` `oh` ON `agroup`.`Id` = `oh`.`PeriodId`
