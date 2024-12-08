@@ -5,7 +5,7 @@ WITH CTE_1 AS
 (
 	SELECT
 		x_1.FirstName as entry_FirstName,
-		x_1.PersonID as entry_ID,
+		x_1.ID as entry_ID,
 		x_1.LastName as entry_LastName,
 		x_1.MiddleName as entry_MiddleName,
 		x_1.Gender as entry_Gender,
@@ -15,7 +15,7 @@ WITH CTE_1 AS
 			SELECT
 				toInt32(1) as rn,
 				x.FirstName as FirstName,
-				x.PersonID as PersonID,
+				x.PersonID as ID,
 				x.LastName as LastName,
 				x.MiddleName as MiddleName,
 				x.Gender as Gender
@@ -25,7 +25,7 @@ WITH CTE_1 AS
 			SELECT
 				toInt32(2) as rn,
 				person_1.FirstName as FirstName,
-				person_1.PersonID as PersonID,
+				person_1.PersonID as ID,
 				person_1.LastName as LastName,
 				person_1.MiddleName as MiddleName,
 				person_1.Gender as Gender
@@ -51,7 +51,7 @@ BeforeExecute
 
 SELECT
 	t1.FirstName,
-	t1.PersonID,
+	t1.ID,
 	t1.LastName,
 	t1.MiddleName,
 	t1.Gender,
@@ -61,7 +61,7 @@ FROM
 		SELECT
 			toInt32(1) as rn,
 			x.FirstName as FirstName,
-			x.PersonID as PersonID,
+			x.PersonID as ID,
 			x.LastName as LastName,
 			x.MiddleName as MiddleName,
 			x.Gender as Gender
@@ -71,7 +71,7 @@ FROM
 		SELECT
 			toInt32(2) as rn,
 			person_1.FirstName as FirstName,
-			person_1.PersonID as PersonID,
+			person_1.PersonID as ID,
 			person_1.LastName as LastName,
 			person_1.MiddleName as MiddleName,
 			person_1.Gender as Gender

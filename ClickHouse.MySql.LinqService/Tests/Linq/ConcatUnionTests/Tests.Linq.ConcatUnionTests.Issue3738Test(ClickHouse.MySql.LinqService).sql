@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	concat('I-', toString(x.PersonID)) as c1,
-	x.FirstName
+	concat('I-', toString(x.PersonID)) as Id,
+	x.FirstName as Name
 FROM
 	Person x
 UNION ALL
 SELECT
-	toString(NULL) as c1,
-	concat('QUASI-', x_1.FirstName) as FirstName
+	toString(NULL) as Id,
+	concat('QUASI-', x_1.FirstName) as Name
 FROM
 	Person x_1
 

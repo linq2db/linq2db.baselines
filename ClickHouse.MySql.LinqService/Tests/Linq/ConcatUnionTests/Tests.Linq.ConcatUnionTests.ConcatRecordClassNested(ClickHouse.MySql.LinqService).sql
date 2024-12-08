@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.PersonID,
+	p.PersonID as Id,
 	p.FirstName,
 	p.LastName
 FROM
 	Person p
 UNION ALL
 SELECT
-	p_1.PersonID as PersonID,
+	p_1.PersonID as Id,
 	p_1.LastName as FirstName,
 	p_1.FirstName as LastName
 FROM

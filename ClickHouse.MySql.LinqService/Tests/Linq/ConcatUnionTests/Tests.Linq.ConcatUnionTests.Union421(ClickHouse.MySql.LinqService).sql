@@ -6,20 +6,20 @@ SELECT
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID,
+			p.ParentID as id,
 			toBool(true) as val
 		FROM
 			Parent p
 		UNION DISTINCT
 		SELECT
-			p_1.ParentID as ParentID,
+			p_1.ParentID as id,
 			toBool(false) as val
 		FROM
 			Parent p_1
 		UNION DISTINCT
 		SELECT
-			ch.ParentID as ParentID,
-			toBool(false) as c1
+			ch.ParentID as id,
+			toBool(false) as val
 		FROM
 			Child ch
 	) p_2

@@ -2,19 +2,19 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID as Value1,
-	t1.ParentID_1 as ParentID
+	t1.Value1,
+	t1.ParentID
 FROM
 	(
 		SELECT
-			c_1.ParentID as ParentID,
-			c_1.ParentID as ParentID_1
+			c_1.ParentID as Value1,
+			c_1.ParentID as ParentID
 		FROM
 			Child c_1
 		UNION DISTINCT
 		SELECT
-			toInt32(NULL) as ParentID,
-			c_2.ParentID as ParentID_1
+			toInt32(NULL) as Value1,
+			c_2.ParentID as ParentID
 		FROM
 			Parent c_2
 	) t1
