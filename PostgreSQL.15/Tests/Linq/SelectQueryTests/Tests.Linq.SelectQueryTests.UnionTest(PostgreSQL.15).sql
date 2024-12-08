@@ -35,7 +35,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + v."Value" * Interval '1 Day' as c1,
+			CURRENT_TIMESTAMP + v."Value" * Interval '1 Day' as "Value1",
 			CURRENT_TIMESTAMP + 2 * Interval '1 Day' as "Value2"
 		FROM
 			"SampleClass" v
@@ -43,7 +43,7 @@ FROM
 			v."Value" = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 * Interval '1 Day' as c1,
+			CURRENT_TIMESTAMP + 3 * Interval '1 Day' as "Value1",
 			CURRENT_TIMESTAMP + 4 * Interval '1 Day' as "Value2"
 	) v_1
 
