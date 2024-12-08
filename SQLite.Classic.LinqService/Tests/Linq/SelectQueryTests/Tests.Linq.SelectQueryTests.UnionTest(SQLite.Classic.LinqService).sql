@@ -35,7 +35,7 @@ SELECT
 FROM
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([v].[Value] AS NVarChar(11)) || ' Day') as [c1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([v].[Value] AS NVarChar(11)) || ' Day') as [Value1],
 			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day') as [Value2]
 		FROM
 			[SampleClass] [v]
@@ -43,7 +43,7 @@ FROM
 			[v].[Value] = 1
 		UNION
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day') as [c1],
+			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day') as [Value1],
 			strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day') as [Value2]
 	) [v_1]
 

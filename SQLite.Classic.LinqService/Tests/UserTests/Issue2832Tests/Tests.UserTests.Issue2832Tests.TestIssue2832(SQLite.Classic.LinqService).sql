@@ -1,10 +1,10 @@
-﻿(703881) SELECT 
-	t703881.Id = t703880.Id
-FROM [DctSetpointtype(703880)] as t703880 (spt)
+﻿(701135) SELECT 
+	t701135.Id = t701134.Id
+FROM [DctSetpointtype(701134)] as t701134 (spt)
 		LEFT JOIN (
-			[VWellTree(703883)] as t703883 (t2)
-				INNER JOIN [DctOu(703885)] as t703885 (tp2) ON ({t703883.ShopId?}? = {t703885.Id})
-				LEFT JOIN [UacUsersDatagroup(703888)] as t703888 (cudg) ON ({t703885.Id} = {t703888.DatagroupId} AND {t703888.UserId} = 150)
-				LEFT JOIN [UacUsersDatagroup(703893)] as t703893 (oudg) ON ({t703885.ParentId?}? = {t703893.DatagroupId} AND {t703893.UserId} = 150 AND {t703893.Inheritablepermission} > 0)
-				INNER JOIN [Deviation(703913)] as t703913 (d) ON ({t703883.WellId?}? = {t703913.WellId})
-		)  ON ({t703913.SetpointtypeId} = {t703880.Id} AND {UTILS.GREATESTNOTNULL3(CAST(t703888.Permission AS (System.Nullable`1[System.Decimal], Decimal)), CAST(t703893.Inheritablepermission AS (System.Nullable`1[System.Decimal], Decimal)), NULL)?}? IS NOT NULL)
+			[VWellTree(701137)] as t701137 (t2)
+				INNER JOIN [DctOu(701139)] as t701139 (tp2) ON ({t701137.ShopId?}? = {t701139.Id})
+				LEFT JOIN [UacUsersDatagroup(701142)] as t701142 (cudg) ON ({t701139.Id} = {t701142.DatagroupId} AND {t701142.UserId} = 150)
+				LEFT JOIN [UacUsersDatagroup(701147)] as t701147 (oudg) ON ({t701139.ParentId?}? = {t701147.DatagroupId} AND {t701147.UserId} = 150 AND {t701147.Inheritablepermission} > 0)
+				INNER JOIN [Deviation(701167)] as t701167 (d) ON ({t701137.WellId?}? = {t701167.WellId})
+		)  ON ({t701167.SetpointtypeId} = {t701134.Id} AND {UTILS.GREATESTNOTNULL3(CAST(t701142.Permission AS (System.Nullable`1[System.Decimal], Decimal)), CAST(t701147.Inheritablepermission AS (System.Nullable`1[System.Decimal], Decimal)), NULL)?}? IS NOT NULL)
