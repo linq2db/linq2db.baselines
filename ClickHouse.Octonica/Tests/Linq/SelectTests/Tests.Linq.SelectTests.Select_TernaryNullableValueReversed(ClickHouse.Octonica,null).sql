@@ -2,5 +2,5 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	NULL
+	toInt32(NULL)
 

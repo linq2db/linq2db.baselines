@@ -148,7 +148,7 @@ FROM
 							SELECT
 								agroup.Id as OrderPeriodId,
 								oi.ProductId as ProductId,
-								sumOrNull(toInt32(COALESCE(oi.Quantity,toInt16(0)))) as Quantity
+								sumOrNull(COALESCE(oi.Quantity,toInt16(0))) as Quantity
 							FROM
 								OrderPeriod agroup
 									LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
