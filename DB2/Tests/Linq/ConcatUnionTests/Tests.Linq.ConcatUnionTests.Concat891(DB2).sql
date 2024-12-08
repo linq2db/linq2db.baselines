@@ -2,19 +2,19 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ParentID_1"
+	"t1"."Value1",
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
-			"c_1"."ParentID",
-			"c_1"."ParentID" as "ParentID_1"
+			"c_1"."ParentID" as "Value1",
+			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"
 		UNION
 		SELECT
-			CAST(NULL AS Int) as "ParentID",
-			"c_2"."ParentID" as "ParentID_1"
+			CAST(NULL AS Int) as "Value1",
+			"c_2"."ParentID"
 		FROM
 			"Parent" "c_2"
 	) "t1"

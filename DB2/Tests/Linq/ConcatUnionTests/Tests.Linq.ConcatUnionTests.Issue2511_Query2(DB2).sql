@@ -7,8 +7,8 @@ SELECT
 	"t1"."LastName",
 	"t1"."MiddleName",
 	"t1"."Gender",
-	"t1"."cond",
-	"t1"."cond",
+	"t1"."PersonID",
+	"t1"."PersonID",
 	"t1"."Diagnosis"
 FROM
 	(
@@ -18,7 +18,7 @@ FROM
 			"p"."LastName",
 			"p"."MiddleName",
 			"p"."Gender",
-			"a_Patient"."PersonID" as "cond",
+			"a_Patient"."PersonID",
 			"a_Patient"."Diagnosis"
 		FROM
 			"Person" "p"

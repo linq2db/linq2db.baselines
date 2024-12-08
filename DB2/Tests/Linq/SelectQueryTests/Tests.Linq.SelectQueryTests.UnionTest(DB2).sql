@@ -44,7 +44,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CURRENT_TIMESTAMP + "v"."Value" DAY as "c1",
+			CURRENT_TIMESTAMP + "v"."Value" DAY as "Value1",
 			CURRENT_TIMESTAMP + 2 DAY as "Value2"
 		FROM
 			"SampleClass" "v"
@@ -52,7 +52,7 @@ FROM
 			"v"."Value" = 1
 		UNION
 		SELECT
-			CURRENT_TIMESTAMP + 3 DAY as "c1",
+			CURRENT_TIMESTAMP + 3 DAY as "Value1",
 			CURRENT_TIMESTAMP + 4 DAY as "Value2"
 		FROM SYSIBM.SYSDUMMY1
 	) "v_1"

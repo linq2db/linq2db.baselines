@@ -172,26 +172,26 @@ BeforeExecute
 
 SELECT
 	"t1"."Id",
-	"t1"."c1",
-	"t1"."c2",
-	"t1"."c3",
-	"t1"."c4",
-	"t1"."c5",
-	"t1"."c6",
-	"t1"."c7",
-	"t1"."c8"
+	"t1"."Byte",
+	"t1"."Byte_1",
+	"t1"."Guid",
+	"t1"."Guid_1",
+	"t1"."Enum",
+	"t1"."EnumN",
+	"t1"."Bool",
+	"t1"."Bool_1"
 FROM
 	(
 		SELECT
 			"r"."Id",
-			CAST(NULL AS SmallInt) as "c1",
-			CAST(NULL AS SmallInt) as "c2",
-			CAST(NULL AS char(16) for bit data) as "c3",
-			CAST(NULL AS char(16) for bit data) as "c4",
-			CAST(NULL AS NChar(11)) as "c5",
-			CAST(NULL AS NChar(11)) as "c6",
-			CAST(NULL AS smallint) as "c7",
-			CAST(NULL AS smallint) as "c8"
+			CAST(NULL AS SmallInt) as "Byte",
+			CAST(NULL AS SmallInt) as "Byte_1",
+			CAST(NULL AS char(16) for bit data) as "Guid",
+			CAST(NULL AS char(16) for bit data) as "Guid_1",
+			CAST(NULL AS NChar(11)) as "Enum",
+			CAST(NULL AS NChar(11)) as "EnumN",
+			CAST(NULL AS smallint) as "Bool",
+			CAST(NULL AS smallint) as "Bool_1"
 		FROM
 			"Issue3360Table1" "r"
 		WHERE
@@ -199,14 +199,14 @@ FROM
 		UNION ALL
 		SELECT
 			"r_1"."Id",
-			"r_1"."Byte" as "c1",
-			"r_1"."ByteN" as "c2",
-			"r_1"."Guid" as "c3",
-			"r_1"."GuidN" as "c4",
-			"r_1"."Enum" as "c5",
-			"r_1"."EnumN" as "c6",
-			"r_1"."Bool" as "c7",
-			"r_1"."BoolN" as "c8"
+			"r_1"."Byte",
+			"r_1"."ByteN" as "Byte_1",
+			"r_1"."Guid",
+			"r_1"."GuidN" as "Guid_1",
+			"r_1"."Enum",
+			"r_1"."EnumN",
+			"r_1"."Bool",
+			"r_1"."BoolN" as "Bool_1"
 		FROM
 			"Issue3360Table1" "r_1"
 		WHERE
