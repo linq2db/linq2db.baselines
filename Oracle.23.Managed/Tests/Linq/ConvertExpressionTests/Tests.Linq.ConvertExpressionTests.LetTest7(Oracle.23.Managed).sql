@@ -16,7 +16,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as "c1",
+	END as "Any_1",
 	(
 		SELECT
 			COUNT(*)

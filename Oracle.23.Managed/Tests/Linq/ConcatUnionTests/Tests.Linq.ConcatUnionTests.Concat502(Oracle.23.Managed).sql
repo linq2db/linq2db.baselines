@@ -3,13 +3,13 @@
 
 SELECT
 	p_1."cond",
-	p_1."c1",
+	p_1."ParentID",
 	p_1."Value1"
 FROM
 	(
 		SELECT
 			a_Parent."ParentID" as "cond",
-			a_Parent."ParentID" as "c1",
+			a_Parent."ParentID",
 			a_Parent."Value1"
 		FROM
 			"Child" p
@@ -19,7 +19,7 @@ FROM
 		UNION ALL
 		SELECT
 			a_Parent_1."ParentID" as "cond",
-			a_Parent_1."ParentID" as "c1",
+			a_Parent_1."ParentID",
 			a_Parent_1."Value1"
 		FROM
 			"Child" c_1
