@@ -2,11 +2,9 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	IIF([t1].[TypeDiscriminator] = 2, True, False),
-	[t1].[InheritanceParentId],
 	[t1].[TypeDiscriminator],
-	[t1].[Name],
-	IIF([t1].[TypeDiscriminator] = 1, True, False)
+	[t1].[InheritanceParentId],
+	[t1].[Name]
 FROM
 	[InheritanceParent] [t1]
 
@@ -14,12 +12,10 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	IIF([t1].[TypeDiscriminator] = 2, True, False),
-	[t1].[InheritanceChildId],
 	[t1].[TypeDiscriminator],
+	[t1].[InheritanceChildId],
 	[t1].[InheritanceParentId],
-	[t1].[Name],
-	IIF([t1].[TypeDiscriminator] = 1, True, False)
+	[t1].[Name]
 FROM
 	[InheritanceChild] [t1]
 

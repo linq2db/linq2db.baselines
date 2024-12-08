@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
+DECLARE @value Int -- Int32
+SET     @value = NULL
 
 SELECT
-	IIF(False, 0, NULL)
+	CVar(?)
 

@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 ("unused")
+WITH CTE_1 ("c1")
 AS
 (
 	SELECT

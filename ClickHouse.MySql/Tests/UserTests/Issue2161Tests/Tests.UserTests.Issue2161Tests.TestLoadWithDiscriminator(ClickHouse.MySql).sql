@@ -84,17 +84,9 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN o.OrderType = 1 THEN true
-		ELSE false
-	END,
-	o.OrderId,
 	o.OrderType,
-	o.OrderName,
-	CASE
-		WHEN o.OrderType = 0 THEN true
-		ELSE false
-	END
+	o.OrderId,
+	o.OrderName
 FROM
 	Order o
 WHERE

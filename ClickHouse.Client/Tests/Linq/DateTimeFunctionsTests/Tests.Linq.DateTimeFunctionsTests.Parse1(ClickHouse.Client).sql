@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDate32(toDateTime64(toString(d.DateTimeValue), toUInt8(7)))
+	toDate32(toDateTime64(toString(d.DateTimeValue), 7))
 FROM
 	LinqDataTypes d
 WHERE
-	toDayOfMonth(toDateTime64(toString(d.DateTimeValue), toUInt8(7))) > 0
+	toDayOfMonth(toDateTime64(toString(d.DateTimeValue), 7)) > 0
 

@@ -24,18 +24,6 @@ CREATE TABLE IF NOT EXISTS ValueConversion
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @iteration Integer(4) -- Int32
-SET     @iteration = 2
-DECLARE @Value1 VarChar(2) -- String
-SET     @Value1 = '[]'
-DECLARE @Enum VarChar(6) -- String
-SET     @Enum = 'Value1'
-DECLARE @inserted VarChar(22) -- String
-SET     @inserted = '[{"Value":"inserted"}]'
-DECLARE @boolValue VarChar(1) -- String
-SET     @boolValue = 'Y'
-DECLARE @boolValue_1 VarChar(1) -- String
-SET     @boolValue_1 = 'T'
 
 INSERT INTO ValueConversion
 (
@@ -48,12 +36,12 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@iteration::Int,
-	@Value1::NVarChar(2),
-	@Enum::NVarChar(6),
-	@inserted::NVarChar(22),
-	@boolValue::VarChar(1),
-	@boolValue_1::VarChar(1)
+	2,
+	'[]',
+	'Value1',
+	'[{"Value":"inserted"}]',
+	'Y',
+	'T'
 )
 
 BeforeExecute

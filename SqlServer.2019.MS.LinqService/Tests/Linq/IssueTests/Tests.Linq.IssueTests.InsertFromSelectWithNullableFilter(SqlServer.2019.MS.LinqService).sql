@@ -1,35 +1,96 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [InsertIssueTest]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[InsertIssueTest]', N'U') IS NULL)
+	CREATE TABLE [InsertIssueTest]
+	(
+		[ID]          SmallInt NOT NULL,
+		[intDataType] Int          NULL
+	)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
 DECLARE @ID SmallInt -- Int16
 SET     @ID = 0
+DECLARE @intDataType Int -- Int32
+SET     @intDataType = 0
 
-INSERT INTO [AllTypes]
+INSERT INTO [InsertIssueTest]
 (
-	[smallintDataType],
+	[ID],
 	[intDataType]
 )
-SELECT
-	123,
-	[t2].[ID]
-FROM
-	(
-		SELECT DISTINCT
-			[a_Association].[smallintDataType] as [ID]
-		FROM
-			[AllTypes] [t1]
-				INNER JOIN [AllTypes] [a_Association] ON [t1].[smallintDataType] = [a_Association].[intDataType]
-		WHERE
-			[t1].[smallintDataType] = @ID
-	) [t2]
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 0
+DECLARE @intDataType Int -- Int32
+SET     @intDataType = 0
+
+INSERT INTO [InsertIssueTest]
+(
+	[ID],
+	[intDataType]
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @ID SmallInt -- Int16
 SET     @ID = 1234
+DECLARE @intDataType Int -- Int32
+SET     @intDataType = 1234
 
-INSERT INTO [AllTypes]
+INSERT INTO [InsertIssueTest]
 (
-	[smallintDataType],
+	[ID],
+	[intDataType]
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 1234
+DECLARE @intDataType Int -- Int32
+SET     @intDataType = 1234
+
+INSERT INTO [InsertIssueTest]
+(
+	[ID],
+	[intDataType]
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+INSERT INTO [InsertIssueTest]
+(
+	[ID],
 	[intDataType]
 )
 SELECT
@@ -38,11 +99,49 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[a_Association].[smallintDataType] as [ID]
+			[a_Association].[ID]
 		FROM
-			[AllTypes] [t1]
-				INNER JOIN [AllTypes] [a_Association] ON [t1].[smallintDataType] = [a_Association].[intDataType]
+			[InsertIssueTest] [t1]
+				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType]
 		WHERE
-			[t1].[smallintDataType] = @ID
+			1 = 0
 	) [t2]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @cond SmallInt -- Int16
+SET     @cond = 1234
+
+INSERT INTO [InsertIssueTest]
+(
+	[ID],
+	[intDataType]
+)
+SELECT
+	123,
+	[t2].[ID]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Association].[ID]
+		FROM
+			[InsertIssueTest] [t1]
+				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType]
+		WHERE
+			[t1].[ID] = @cond
+	) [t2]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+SELECT
+	[t1].[ID],
+	[t1].[intDataType]
+FROM
+	[InsertIssueTest] [t1]
+
+BeforeExecute
+-- SqlServer.2019.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [InsertIssueTest]
 

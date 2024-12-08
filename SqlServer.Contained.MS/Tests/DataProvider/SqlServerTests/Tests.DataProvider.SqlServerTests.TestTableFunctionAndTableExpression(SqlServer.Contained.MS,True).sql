@@ -97,18 +97,6 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 1
-DECLARE @FirstName_1 NVarChar(4000) -- String
-SET     @FirstName_1 = N'John'
-DECLARE @ID_2 Int -- Int32
-SET     @ID_2 = 1
-DECLARE @FirstName_2 NVarChar(4000) -- String
-SET     @FirstName_2 = N'John'
-DECLARE @ID_3 Int -- Int32
-SET     @ID_3 = 1
-DECLARE @FirstName_3 NVarChar(4000) -- String
-SET     @FirstName_3 = N'John'
 
 SELECT TOP (1)
 	[p].[FirstName],
@@ -119,9 +107,9 @@ SELECT TOP (1)
 FROM
 	[Person] [p]
 		INNER JOIN [PersonTableFunction](@ID, @FirstName) [tf] ON [tf].[PersonID] = [p].[PersonID]
-		INNER JOIN [PersonTableFunction](@ID_1, @FirstName_1) [tft] ON [tft].[PersonID] = [p].[PersonID]
-		INNER JOIN PersonTableFunction(@ID_2, @FirstName_2) [te] ON [te].[PersonID] = [p].[PersonID]
-		INNER JOIN PersonTableFunction(@ID_3, @FirstName_3) [tet] ON [tet].[PersonID] = [p].[PersonID]
+		INNER JOIN [PersonTableFunction](@ID, @FirstName) [tft] ON [tft].[PersonID] = [p].[PersonID]
+		INNER JOIN PersonTableFunction(@ID, @FirstName) [te] ON [te].[PersonID] = [p].[PersonID]
+		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

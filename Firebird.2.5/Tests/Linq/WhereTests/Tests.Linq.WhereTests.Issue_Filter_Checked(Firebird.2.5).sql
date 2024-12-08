@@ -13,7 +13,7 @@ FROM
 		FROM
 			(
 				SELECT FIRST @take
-					1 as "c1"
+					*
 				FROM
 					"Person" "t1"
 			) "a1"

@@ -2,14 +2,14 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Floor([p].[MoneyValue] * 57.29577951308237993927443245) as [c1]
+			Floor([p].[MoneyValue] * 57.29577951308237993927443245) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0.1
+	[t].[Value_1] <> 0.1
 

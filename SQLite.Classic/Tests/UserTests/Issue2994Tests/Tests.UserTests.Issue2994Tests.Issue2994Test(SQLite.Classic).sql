@@ -10,7 +10,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Person] [y]
 				INNER JOIN [Doctor] [d] ON [y].[FirstName] = [d].[Taxonomy]

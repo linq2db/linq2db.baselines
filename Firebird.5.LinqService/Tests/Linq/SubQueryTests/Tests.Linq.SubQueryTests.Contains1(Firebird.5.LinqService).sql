@@ -13,7 +13,7 @@ WHERE
 		FROM
 			(
 				SELECT
-					1 as "c1"
+					*
 				FROM
 					"Parent" "p1"
 				WHERE

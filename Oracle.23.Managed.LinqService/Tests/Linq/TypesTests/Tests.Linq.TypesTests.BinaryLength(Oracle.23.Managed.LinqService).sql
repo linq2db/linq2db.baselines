@@ -14,7 +14,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Length(t."BinaryValue") as "Length_1"
+	Length(t."BinaryValue") as "Value_1"
 FROM
 	"LinqDataTypes" t
 WHERE

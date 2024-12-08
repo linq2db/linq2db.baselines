@@ -8,10 +8,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
-				SELECT toFloat32(-10) AS X) t
+				SELECT toFloat32(-10) AS X, toFloat32(10) AS Y) t
 		WHERE
 			x.position.x > t.X
 	)

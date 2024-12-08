@@ -58,7 +58,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[CASH] [u]
 			WHERE

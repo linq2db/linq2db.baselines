@@ -2,8 +2,6 @@
 -- Firebird.3 Firebird3
 DECLARE @currentDate TimeStamp -- DateTime
 SET     @currentDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
-DECLARE @currentDate_1 TimeStamp -- DateTime
-SET     @currentDate_1 = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
 	"o".ID,
@@ -26,13 +24,13 @@ FROM
 				"LinqDataTypes" "t"
 			WHERE
 				Coalesce("t"."DateTimeValue", "t"."DateTimeValue2") <= @currentDate AND
-				("t"."DateTimeValue2" IS NULL OR "t"."DateTimeValue2" >= @currentDate_1)
+				("t"."DateTimeValue2" IS NULL OR "t"."DateTimeValue2" >= @currentDate)
 			GROUP BY
 				"t".ID
 		) "t1" ON "o".ID = "t1".ID AND ("o"."DateTimeValue2" = "t1"."c1" OR "o"."DateTimeValue2" IS NULL AND "t1"."c1" IS NULL)
 WHERE
 	Coalesce("o"."DateTimeValue", "o"."DateTimeValue2") <= @currentDate AND
-	("o"."DateTimeValue2" IS NULL OR "o"."DateTimeValue2" >= @currentDate_1)
+	("o"."DateTimeValue2" IS NULL OR "o"."DateTimeValue2" >= @currentDate)
 ORDER BY
 	"o"."DateTimeValue2"
 

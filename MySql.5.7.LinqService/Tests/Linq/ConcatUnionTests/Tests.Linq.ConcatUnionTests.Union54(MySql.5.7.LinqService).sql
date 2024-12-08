@@ -15,8 +15,8 @@ SELECT
 	`t1`.`ParentID`,
 	NULL,
 	NULL,
-	`t1`.`ParentID_1`,
-	`t1`.`ParentID_1`,
+	`t1`.`cond`,
+	`t1`.`cond`,
 	`t1`.`ChildID`
 FROM
 	(
@@ -32,7 +32,7 @@ FROM
 				ORDER BY
 					`a_Children`.`ChildID` DESC
 				LIMIT 1
-			) as `ParentID_1`,
+			) as `cond`,
 			(
 				SELECT
 					`a_Children_1`.`ChildID`

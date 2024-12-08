@@ -131,7 +131,7 @@ FROM
 			op.Id as OrderPeriodId,
 			vpc.CategoryId as CategoryId,
 			pop.ProductId as ProductId,
-			COALESCE(toInt32(pcc.PeriodOrderLimit),0) as MaxCapacity,
+			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
 			COALESCE(vsp_1.Quantity,0) as Quantity
 		FROM
 			OrderPeriod op
@@ -148,7 +148,7 @@ FROM
 							SELECT
 								agroup.Id as OrderPeriodId,
 								oi.ProductId as ProductId,
-								sumOrNull(toInt32(COALESCE(oi.Quantity,toInt16(0)))) as Quantity
+								sumOrNull(COALESCE(oi.Quantity,toInt16(0))) as Quantity
 							FROM
 								OrderPeriod agroup
 									LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
@@ -161,9 +161,9 @@ FROM
 	) r
 		LEFT JOIN (
 			SELECT
-				COALESCE(toInt32(vpcc.PeriodOrderLimit),0) as MaxCapacity,
+				COALESCE(vpcc.PeriodOrderLimit,0) as MaxCapacity,
 				vsopc.Quantity as Quantity,
-				COALESCE(toInt32(vpcc.PeriodOrderLimit),0) - vsopc.Quantity as FreeCapacity,
+				COALESCE(vpcc.PeriodOrderLimit,0) - vsopc.Quantity as FreeCapacity,
 				v2.Id as Id,
 				vpcc.Id as Id_1
 			FROM
@@ -173,7 +173,7 @@ FROM
 						SELECT
 							agroup_1.Id as OrderPeriodId,
 							p.CategoryId as CategoryId,
-							sumOrNull(toInt32(oi_1.Quantity)) as Quantity
+							sumOrNull(oi_1.Quantity) as Quantity
 						FROM
 							OrderPeriod agroup_1
 								LEFT JOIN OrderHeader oh_1 ON agroup_1.Id = oh_1.PeriodId

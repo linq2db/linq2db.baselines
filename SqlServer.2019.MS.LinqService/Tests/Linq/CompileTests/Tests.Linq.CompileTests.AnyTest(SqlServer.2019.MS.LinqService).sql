@@ -6,7 +6,7 @@ SET     @p = 1
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [c_1]
 		WHERE
@@ -21,7 +21,7 @@ SET     @p = -1
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Child] [c_1]
 		WHERE

@@ -13,31 +13,31 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Person] [e],
 			(
 				SELECT TOP 1
-					[d].[PersonID]
+					[d].[PersonID] as [cond]
 				FROM
 					[Patient] [d]
 			) [t2]
 		WHERE
-			[e].[FirstName] LIKE @filter1 ESCAPE '~' AND [e].[PersonID] = [t2].[PersonID]
+			[e].[FirstName] LIKE @filter1 ESCAPE '~' AND [e].[PersonID] = [t2].[cond]
 	) OR
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Person] [e_1],
 			(
 				SELECT TOP 1
-					[d_1].[PersonID]
+					[d_1].[PersonID] as [cond]
 				FROM
 					[Patient] [d_1]
 			) [t3]
 		WHERE
-			[e_1].[FirstName] LIKE @filter2 ESCAPE '~' AND [e_1].[PersonID] = [t3].[PersonID]
+			[e_1].[FirstName] LIKE @filter2 ESCAPE '~' AND [e_1].[PersonID] = [t3].[cond]
 	)
 ORDER BY
 	[t1].[PersonID]

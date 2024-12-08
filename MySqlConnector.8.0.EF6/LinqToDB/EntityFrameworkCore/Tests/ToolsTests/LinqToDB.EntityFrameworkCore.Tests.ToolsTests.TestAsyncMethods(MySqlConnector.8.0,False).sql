@@ -92,7 +92,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				`Products` `e`
 			WHERE

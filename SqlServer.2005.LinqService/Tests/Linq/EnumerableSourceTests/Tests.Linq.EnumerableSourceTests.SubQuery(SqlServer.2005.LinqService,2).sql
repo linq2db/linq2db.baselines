@@ -63,7 +63,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT 3 AS [Id], N'Janet' AS [Value]

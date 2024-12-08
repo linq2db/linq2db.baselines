@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toDecimal128(t.MoneyValue, toUInt8(10)) as c1
+			toDecimal128(t.MoneyValue, 10) as c1
 		FROM
 			LinqDataTypes t
 	) p

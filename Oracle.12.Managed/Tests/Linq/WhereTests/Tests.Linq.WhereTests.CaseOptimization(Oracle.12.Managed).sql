@@ -46,7 +46,7 @@ SELECT
 FROM
 	"WhereWithString" x
 WHERE
-	x."StringValue" LIKE '%Str%' ESCAPE '~'
+	x."StringValue" LIKE '%Str%' ESCAPE '~' AND x."StringValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

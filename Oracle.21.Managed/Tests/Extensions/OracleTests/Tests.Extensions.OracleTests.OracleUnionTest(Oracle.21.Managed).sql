@@ -45,7 +45,7 @@ FROM
 	"Parent" t2
 		CROSS JOIN (
 			SELECT
-				1 as "c1"
+				*
 			FROM
 				"Child" c_1
 		) c_2

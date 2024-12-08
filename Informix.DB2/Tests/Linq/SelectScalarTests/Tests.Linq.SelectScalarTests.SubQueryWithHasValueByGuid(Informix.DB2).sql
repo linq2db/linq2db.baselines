@@ -8,10 +8,10 @@ FROM
 	Parent t2
 		LEFT JOIN (
 			SELECT FIRST 1
-				r.GuidValue
+				r.GuidValue as cond
 			FROM
 				LinqDataTypes r
 		) t1 ON 1=1
 WHERE
-	t1.GuidValue IS NOT NULL
+	t1.cond IS NOT NULL
 

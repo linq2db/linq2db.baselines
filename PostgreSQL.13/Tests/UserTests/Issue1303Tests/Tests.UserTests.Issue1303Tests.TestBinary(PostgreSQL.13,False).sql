@@ -50,8 +50,8 @@ LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Array Bytea(3) -- Binary
-SET     @Array = E'\\x010203'::bytea
+DECLARE @cond Bytea(3) -- Binary
+SET     @cond = E'\\x010203'::bytea
 
 SELECT
 	t1."ID",
@@ -60,13 +60,13 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array
+	t1."Array" = :cond
 LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Binary Bytea(2) -- Binary
-SET     @Binary = E'\\x0405'::bytea
+DECLARE @cond Bytea(2) -- Binary
+SET     @cond = E'\\x0405'::bytea
 
 SELECT
 	t1."ID",
@@ -75,7 +75,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary
+	t1."Binary" = :cond
 LIMIT 2
 
 BeforeExecute

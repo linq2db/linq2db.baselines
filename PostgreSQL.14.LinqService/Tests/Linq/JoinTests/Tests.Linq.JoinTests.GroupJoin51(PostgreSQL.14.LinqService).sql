@@ -13,7 +13,7 @@ FROM
 			"Parent" p
 				INNER JOIN LATERAL (
 					SELECT
-						1 as c1
+						*
 					FROM
 						"Child" ch
 					WHERE

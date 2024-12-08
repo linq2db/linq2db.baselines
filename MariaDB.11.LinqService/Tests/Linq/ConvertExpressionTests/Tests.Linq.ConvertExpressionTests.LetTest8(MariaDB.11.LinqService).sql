@@ -20,7 +20,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				`Child` `c_4`
 			WHERE

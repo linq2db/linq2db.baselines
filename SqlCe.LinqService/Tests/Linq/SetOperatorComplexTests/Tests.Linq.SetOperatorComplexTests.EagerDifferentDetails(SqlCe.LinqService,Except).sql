@@ -515,7 +515,7 @@ FROM
 		WHERE
 			[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -539,7 +539,7 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Author] [t2]
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -579,7 +579,7 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	[a_Book].[Discriminator] as [cond],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

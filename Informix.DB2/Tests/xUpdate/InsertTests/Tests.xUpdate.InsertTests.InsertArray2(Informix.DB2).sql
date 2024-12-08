@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @arr VarBinary -- Binary
-SET     @arr = NULL
 
 INSERT INTO LinqDataTypes
 (
@@ -21,7 +19,7 @@ VALUES
 (
 	1001,
 	't',
-	@arr::BYTE
+	NULL
 )
 
 BeforeExecute

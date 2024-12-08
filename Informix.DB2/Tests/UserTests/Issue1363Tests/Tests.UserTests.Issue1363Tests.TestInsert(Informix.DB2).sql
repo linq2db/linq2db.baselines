@@ -14,8 +14,6 @@ CREATE TABLE IF NOT EXISTS Issue1363
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @id Char(36) -- StringFixedLength
-SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO Issue1363
 (
@@ -24,7 +22,7 @@ INSERT INTO Issue1363
 )
 VALUES
 (
-	@id::VARCHAR(36),
+	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',
 	(
 		SELECT
 			t1.required_field
@@ -37,10 +35,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @id Char(36) -- StringFixedLength
-SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @testId Char(36) -- StringFixedLength
-SET     @testId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO Issue1363
 (
@@ -49,14 +43,14 @@ INSERT INTO Issue1363
 )
 VALUES
 (
-	@id::VARCHAR(36),
+	'a948600d-de21-4f74-8ac2-9516b287076e',
 	(
 		SELECT
 			t1.required_field
 		FROM
 			Issue1363 t1
 		WHERE
-			t1.required_field = @testId
+			t1.required_field = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 	)
 )
 

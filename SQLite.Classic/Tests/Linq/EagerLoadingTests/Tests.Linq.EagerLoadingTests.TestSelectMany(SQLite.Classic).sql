@@ -1799,7 +1799,7 @@ FROM
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					*
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
@@ -1825,7 +1825,7 @@ FROM
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					*
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
@@ -1848,7 +1848,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as [c1]
+			*
 		FROM
 			[MasterClass] [t1]
 		LIMIT @take

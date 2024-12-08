@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	To_Char(p.MoneyValue)
+	RTRIM(REPLACE(To_Char(p.MoneyValue), To_Char(','), To_Char('.')), '0.')
 FROM
 	LinqDataTypes p
 WHERE

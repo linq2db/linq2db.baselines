@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 1000
 
-SELECT FIRST 1000
+SELECT FIRST @take
 	a_Patient.Diagnosis,
 	a_Patient.PersonID,
 	AVG(auto16031.PersonID)

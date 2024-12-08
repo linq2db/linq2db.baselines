@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toInt32(t1.SmallIntValue) as year_1,
+			t1.SmallIntValue as year_1,
 			toInt32(3) as int_1
 		FROM
 			LinqDataTypes t1

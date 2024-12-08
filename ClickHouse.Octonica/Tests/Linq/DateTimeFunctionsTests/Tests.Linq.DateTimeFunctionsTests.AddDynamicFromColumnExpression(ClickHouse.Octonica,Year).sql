@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	addYears(t.DateTimeValue, toInt32(t.SmallIntValue))
+	addYears(t.DateTimeValue, t.SmallIntValue)
 FROM
 	LinqDataTypes t
 

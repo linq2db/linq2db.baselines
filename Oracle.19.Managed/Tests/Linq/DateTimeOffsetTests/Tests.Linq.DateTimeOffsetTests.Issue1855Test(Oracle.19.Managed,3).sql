@@ -55,8 +55,24 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @id Int32
-SET     @id = 1
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset TimeStampTZ -- DateTimeOffset
+SET     @SomeDateTimeOffset = 08/08/2019 08:08:08 +00:00
+
+INSERT INTO "Issue1855Table"
+(
+	"Id",
+	"SomeDateTimeOffset"
+)
+VALUES
+(
+	:Id,
+	:SomeDateTimeOffset
+)
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @clientSideIn TimeStampTZ -- DateTimeOffset
 SET     @clientSideIn = 08/08/2019 08:08:18 +00:00
 
@@ -67,7 +83,7 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."Id" = :id AND :clientSideIn <> r."SomeDateTimeOffset"
+	:clientSideIn <> r."SomeDateTimeOffset"
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

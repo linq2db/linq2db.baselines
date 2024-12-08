@@ -2,14 +2,14 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Int([p].[MoneyValue] ^ 3) as [c1]
+			Int([p].[MoneyValue] ^ 3) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0
+	[t].[Value_1] <> 0
 

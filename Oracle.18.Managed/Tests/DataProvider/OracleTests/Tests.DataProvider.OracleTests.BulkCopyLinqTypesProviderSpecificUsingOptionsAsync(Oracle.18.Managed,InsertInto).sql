@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = {4000,4001,4002,4003,4004,4005,4006,4007}
 -- value above truncated for logging
@@ -28,7 +28,7 @@ SET     @:p8 = {NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL}
 INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "GuidValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8)
 
 BeforeExecute
---  Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" p

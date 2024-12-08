@@ -65,8 +65,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Array Raw(3) -- Binary
-SET     @Array = HEXTORAW('010203')
+DECLARE @cond Raw(3) -- Binary
+SET     @cond = HEXTORAW('010203')
 
 SELECT
 	t1.ID,
@@ -75,12 +75,12 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array AND ROWNUM <= 2
+	t1."Array" = :cond AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Binary Raw(2) -- Binary
-SET     @Binary = HEXTORAW('0405')
+DECLARE @cond Raw(2) -- Binary
+SET     @cond = HEXTORAW('0405')
 
 SELECT
 	t1.ID,
@@ -89,7 +89,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary AND ROWNUM <= 2
+	t1."Binary" = :cond AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

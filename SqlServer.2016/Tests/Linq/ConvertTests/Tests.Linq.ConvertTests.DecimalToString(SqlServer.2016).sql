@@ -2,7 +2,7 @@
 -- SqlServer.2016
 
 SELECT
-	CAST([p].[MoneyValue] AS NVarChar(31))
+	REPLACE(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.')
 FROM
 	[LinqDataTypes] [p]
 WHERE

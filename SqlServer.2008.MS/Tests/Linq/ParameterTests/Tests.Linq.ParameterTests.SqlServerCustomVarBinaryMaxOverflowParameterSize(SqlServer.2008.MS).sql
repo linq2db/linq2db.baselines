@@ -41,6 +41,20 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @p VarBinary -- Binary
+SET     @p = Tests.Linq.ParameterTests+VarBinary
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarBinary] = @p
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NOT NULL)
 	DROP TABLE [AllTypesCustomMaxLength]

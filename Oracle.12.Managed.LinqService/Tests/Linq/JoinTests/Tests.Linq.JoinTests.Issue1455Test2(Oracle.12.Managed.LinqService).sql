@@ -162,17 +162,17 @@ END;
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @DeliveryCounterParty Varchar2(3) -- String
-SET     @DeliveryCounterParty = '%C%'
+DECLARE @cond Varchar2(3) -- String
+SET     @cond = '%C%'
 
 SELECT
 	al_group_3."AlertKey",
 	al_group_3."AlertCode",
 	t2."LastUpdate",
-	t2."CargoId",
+	t2."cond",
 	t2."DeliveryId",
 	t2."DeliveryCounterParty",
-	t2."DealId",
+	t2."cond_1",
 	t2."ParcelId",
 	t2."CounterParty"
 FROM
@@ -198,9 +198,8 @@ FROM
 				LEFT JOIN "Trade" trade_1 ON al_group_1."AlertKey" = CAST(trade_1."DealId" AS VarChar(255))
 				LEFT JOIN "Nomin" nomin_1 ON al_group_1."AlertKey" = CAST(nomin_1."CargoId" AS VarChar(255))
 		WHERE
-			nomin_1."DeliveryCounterParty" LIKE :DeliveryCounterParty OR
-			trade_1."CounterParty" LIKE :DeliveryCounterParty OR
-			al_group_1."AlertCode" LIKE :DeliveryCounterParty
+			nomin_1."DeliveryCounterParty" LIKE :cond OR trade_1."CounterParty" LIKE :cond OR
+			al_group_1."AlertCode" LIKE :cond
 		GROUP BY
 			al_group_1."AlertKey",
 			al_group_1."AlertCode",
@@ -208,10 +207,10 @@ FROM
 	) al_group_3
 		OUTER APPLY (
 			SELECT
-				nomin_2."CargoId",
+				nomin_2."CargoId" as "cond",
 				nomin_2."DeliveryId",
 				nomin_2."DeliveryCounterParty",
-				trade_2."DealId",
+				trade_2."DealId" as "cond_1",
 				trade_2."ParcelId",
 				trade_2."CounterParty",
 				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate"
@@ -233,7 +232,7 @@ FROM
 					LEFT JOIN "Trade" trade_2 ON t1."AlertKey" = CAST(trade_2."DealId" AS VarChar(255))
 					LEFT JOIN "Nomin" nomin_2 ON t1."AlertKey" = CAST(nomin_2."CargoId" AS VarChar(255))
 			WHERE
-				(nomin_2."DeliveryCounterParty" LIKE :DeliveryCounterParty OR trade_2."CounterParty" LIKE :DeliveryCounterParty OR t1."AlertCode" LIKE :DeliveryCounterParty) AND
+				(nomin_2."DeliveryCounterParty" LIKE :cond OR trade_2."CounterParty" LIKE :cond OR t1."AlertCode" LIKE :cond) AND
 				al_group_3."AlertKey" = t1."AlertKey" AND
 				al_group_3."AlertCode" = t1."AlertCode" AND
 				al_group_3."CreationDate" = t1."CreationDate"

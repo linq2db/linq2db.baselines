@@ -2,17 +2,9 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN `t1`.`TypeDiscriminator` = 2 THEN 1
-		ELSE 0
-	END,
-	`t1`.`InheritanceParentId`,
 	`t1`.`TypeDiscriminator`,
-	`t1`.`Name`,
-	CASE
-		WHEN `t1`.`TypeDiscriminator` = 1 THEN 1
-		ELSE 0
-	END
+	`t1`.`InheritanceParentId`,
+	`t1`.`Name`
 FROM
 	`InheritanceParent` `t1`
 
@@ -20,18 +12,10 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN `t1`.`TypeDiscriminator` = 2 THEN 1
-		ELSE 0
-	END,
-	`t1`.`InheritanceChildId`,
 	`t1`.`TypeDiscriminator`,
+	`t1`.`InheritanceChildId`,
 	`t1`.`InheritanceParentId`,
-	`t1`.`Name`,
-	CASE
-		WHEN `t1`.`TypeDiscriminator` = 1 THEN 1
-		ELSE 0
-	END
+	`t1`.`Name`
 FROM
 	`InheritanceChild` `t1`
 

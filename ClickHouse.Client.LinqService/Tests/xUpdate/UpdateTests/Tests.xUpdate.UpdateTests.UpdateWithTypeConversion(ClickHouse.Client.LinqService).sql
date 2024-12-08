@@ -21,7 +21,7 @@ ALTER TABLE
 	LinqDataTypes
 UPDATE
 	SmallIntValue = toInt16(MoneyValue),
-	MoneyValue = toDecimal128(SmallIntValue, toUInt8(10))
+	MoneyValue = toDecimal128(SmallIntValue, 10)
 WHERE
 	ID = 1001
 
@@ -32,7 +32,7 @@ ALTER TABLE
 	LinqDataTypes
 UPDATE
 	SmallIntValue = toInt16(MoneyValue),
-	MoneyValue = toDecimal128(SmallIntValue, toUInt8(10))
+	MoneyValue = toDecimal128(SmallIntValue, 10)
 WHERE
 	ID = 1001
 

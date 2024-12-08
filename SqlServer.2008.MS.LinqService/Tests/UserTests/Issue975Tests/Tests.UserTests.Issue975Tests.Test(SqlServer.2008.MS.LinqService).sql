@@ -155,7 +155,7 @@ WHERE
 	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate()) AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[TaskStages] [d]
 		WHERE

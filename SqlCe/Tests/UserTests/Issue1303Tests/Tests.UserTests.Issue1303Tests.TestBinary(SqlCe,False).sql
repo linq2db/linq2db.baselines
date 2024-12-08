@@ -45,8 +45,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = 0x010203
+DECLARE @cond VarBinary(3) -- Binary
+SET     @cond = 0x010203
 
 SELECT TOP (2)
 	[t1].[ID],
@@ -55,12 +55,12 @@ SELECT TOP (2)
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Array] = @Array
+	[t1].[Array] = @cond
 
 BeforeExecute
 -- SqlCe
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = 0x0405
+DECLARE @cond VarBinary(2) -- Binary
+SET     @cond = 0x0405
 
 SELECT TOP (2)
 	[t1].[ID],
@@ -69,7 +69,7 @@ SELECT TOP (2)
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Binary] = @Binary
+	[t1].[Binary] = @cond
 
 BeforeExecute
 -- SqlCe

@@ -15,7 +15,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"Child" c2_1
 			WHERE
@@ -27,7 +27,7 @@ SELECT
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"Child" c2_2
 			WHERE

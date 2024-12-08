@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-WITH [CTE1_] ([unused])
+WITH [CTE1_] ([c1])
 AS
 (
 	SELECT
@@ -25,7 +25,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-WITH [CTE1_] ([unused])
+WITH [CTE1_] ([c1])
 AS
 (
 	SELECT
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-WITH [CTE1_] ([unused])
+WITH [CTE1_] ([c1])
 AS
 (
 	SELECT
@@ -53,7 +53,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[CTE1_] [t1]
 		)
