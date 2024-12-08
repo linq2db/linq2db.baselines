@@ -47,6 +47,27 @@ FROM SYS.DUAL
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
+SELECT
+	v_1."Value2"
+FROM
+	(
+		SELECT
+			CURRENT_TIMESTAMP + v."Value" * INTERVAL '1' DAY as "Value1",
+			CURRENT_TIMESTAMP + 2 * INTERVAL '1' DAY as "Value2"
+		FROM
+			"SampleClass" v
+		WHERE
+			v."Value" = 1
+		UNION
+		SELECT
+			CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+			CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+		FROM SYS.DUAL
+	) v_1
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
 EXCEPTION
