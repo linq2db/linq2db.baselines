@@ -110,7 +110,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	a_Book.BookId,
+	a_Book.BookId as Id,
 	a_Book.BookName
 FROM
 	Author t1
@@ -120,7 +120,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 INTERSECT DISTINCT
 SELECT
-	a_Book_1.BookId as BookId,
+	a_Book_1.BookId as Id,
 	a_Book_1.BookName as BookName
 FROM
 	Author t2

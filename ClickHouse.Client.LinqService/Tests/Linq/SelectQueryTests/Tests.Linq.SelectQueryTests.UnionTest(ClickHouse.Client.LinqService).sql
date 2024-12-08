@@ -17,16 +17,16 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addDays(now(), t.Value) as c1,
-	addDays(now(), 2) as c2
+	addDays(now(), t.Value) as Value1,
+	addDays(now(), 2) as Value2
 FROM
 	SampleClass t
 WHERE
 	t.Value = 1
 UNION DISTINCT
 SELECT
-	addDays(now(), 3) as c1,
-	addDays(now(), 4) as c2
+	addDays(now(), 3) as Value1,
+	addDays(now(), 4) as Value2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			addDays(now(), v.Value) as c1,
+			addDays(now(), v.Value) as Value1,
 			addDays(now(), 2) as Value2
 		FROM
 			SampleClass v
@@ -44,7 +44,7 @@ FROM
 			v.Value = 1
 		UNION DISTINCT
 		SELECT
-			addDays(now(), 3) as c1,
+			addDays(now(), 3) as Value1,
 			addDays(now(), 4) as Value2
 	) v_1
 

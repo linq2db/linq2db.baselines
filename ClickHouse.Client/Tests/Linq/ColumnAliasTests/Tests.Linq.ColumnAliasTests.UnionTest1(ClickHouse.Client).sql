@@ -6,14 +6,14 @@ SELECT
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID
+			p.ParentID as ID
 		FROM
 			Parent p
 		WHERE
 			p.ParentID > 2
 		UNION DISTINCT
 		SELECT
-			p_1.ParentID as ParentID
+			p_1.ParentID as ID
 		FROM
 			Parent p_1
 		WHERE
