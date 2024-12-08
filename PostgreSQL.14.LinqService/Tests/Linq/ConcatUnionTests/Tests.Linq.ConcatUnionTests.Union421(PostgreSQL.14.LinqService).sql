@@ -6,20 +6,20 @@ SELECT
 FROM
 	(
 		SELECT
-			p."ParentID",
+			p."ParentID" as id,
 			True::Boolean as val
 		FROM
 			"Parent" p
 		UNION
 		SELECT
-			p_1."ParentID",
+			p_1."ParentID" as id,
 			False::Boolean as val
 		FROM
 			"Parent" p_1
 		UNION
 		SELECT
-			ch."ParentID",
-			False::Boolean as c1
+			ch."ParentID" as id,
+			False::Boolean as val
 		FROM
 			"Child" ch
 	) p_2
