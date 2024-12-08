@@ -36,7 +36,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Add_Days(CURRENT_TIMESTAMP, "v"."Value") as "c1",
+			Add_Days(CURRENT_TIMESTAMP, "v"."Value") as "Value1",
 			Add_Days(CURRENT_TIMESTAMP, 2) as "Value2"
 		FROM
 			"SampleClass" "v"
@@ -44,7 +44,7 @@ FROM
 			"v"."Value" = 1
 		UNION
 		SELECT
-			Add_Days(CURRENT_TIMESTAMP, 3) as "c1",
+			Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
 			Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
 FROM DUMMY
 	) "v_1"

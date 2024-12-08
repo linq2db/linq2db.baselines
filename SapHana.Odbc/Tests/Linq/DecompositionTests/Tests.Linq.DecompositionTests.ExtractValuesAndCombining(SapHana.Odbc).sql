@@ -380,13 +380,13 @@ BeforeExecute
 
 SELECT
 	"t1"."cond",
-	"t1"."cond_1",
-	"t1"."ItemCode",
 	"t1"."Color",
+	"t1"."ItemCode",
+	"t1"."Name",
 	NULL,
 	NULL,
 	"t1"."ItemCode_1",
-	"t1"."Style_1",
+	"t1"."Name_1",
 	NULL,
 	NULL,
 	NULL
@@ -398,13 +398,13 @@ FROM
 				ELSE 0
 			END as "cond",
 			Substring("t"."ItemCode", 1, 2) as "ItemCode",
-			"t"."Color",
+			"t"."Color" as "Name",
 			Substring("t"."ItemCode", 3, 2) as "ItemCode_1",
-			"t"."Style" as "Style_1",
+			"t"."Style" as "Name_1",
 			CASE
 				WHEN "t"."Kind" = 1 THEN 1
 				ELSE 0
-			END as "cond_1"
+			END as "Color"
 		FROM
 			"Item" "t"
 	) "t1"
@@ -460,44 +460,44 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x_2"."cond",
-	"x_2"."cond_1_1",
-	"x_2"."ItemCode",
 	"x_2"."Color",
-	"x_2"."c1",
-	"x_2"."c2",
+	"x_2"."Color_1",
+	"x_2"."ItemCode",
+	"x_2"."Name",
 	"x_2"."ItemCode_1",
-	"x_2"."Style_1",
-	"x_2"."c3",
-	"x_2"."c4",
-	"x_2"."c5"
+	"x_2"."Name_1",
+	"x_2"."ItemCode_2",
+	"x_2"."Name_2",
+	"x_2"."Size_1",
+	"x_2"."ItemCode_3",
+	"x_2"."Name_3"
 FROM
 	(
 		SELECT
-			"x_1"."cond",
+			"x_1"."cond" as "Color",
 			CASE
-				WHEN "x_1"."cond_1" IS NOT NULL THEN 1
+				WHEN "x_1"."Color" IS NOT NULL THEN 1
 				ELSE 0
-			END as "cond_1",
-			"x_1"."cond_1" as "cond_1_1",
+			END as "cond",
+			"x_1"."Color" as "Color_1",
 			"x_1"."ItemCode",
-			"x_1"."Color",
-			"x_1"."c1",
-			"x_1"."c2",
-			"x_1"."ItemCode_1",
-			"x_1"."Style_1",
-			"x_1"."c3",
-			"x_1"."c4",
-			"x_1"."c5"
+			"x_1"."Name",
+			"x_1"."c1" as "ItemCode_1",
+			"x_1"."c2" as "Name_1",
+			"x_1"."ItemCode_1" as "ItemCode_2",
+			"x_1"."Name_1" as "Name_2",
+			"x_1"."c3" as "Size_1",
+			"x_1"."c4" as "ItemCode_3",
+			"x_1"."c5" as "Name_3"
 		FROM
 			(
 				SELECT
 					"x"."cond",
-					"x"."cond_1",
+					"x"."cond_1" as "Color",
 					"x"."ItemCode",
-					"x"."Color",
+					"x"."Color" as "Name",
 					"x"."ItemCode_1",
-					"x"."Style_1",
+					"x"."Style_1" as "Name_1",
 					NULL as "c1",
 					NULL as "c2",
 					NULL as "c3",
@@ -526,11 +526,11 @@ FROM
 				UNION ALL
 				SELECT
 					"t1"."cond",
-					NULL as "cond_1",
-					NULL as "ItemCode",
 					NULL as "Color",
+					NULL as "ItemCode",
+					NULL as "Name",
 					NULL as "ItemCode_1",
-					NULL as "Style_1",
+					NULL as "Name_1",
 					"t1"."ItemCode" as "c1",
 					"t1"."Color" as "c2",
 					"t1"."cond_1" as "c3",
@@ -559,7 +559,7 @@ FROM
 			) "x_1"
 	) "x_2"
 WHERE
-	NOT ("x_2"."cond" = 1 AND "x_2"."cond_1" = 1) OR NOT ("x_2"."cond" = 1 AND "x_2"."cond_1" = 1 AND "x_2"."cond_1_1" = 1 AND "x_2"."cond_1_1" IS NOT NULL)
+	NOT ("x_2"."Color" = 1 AND "x_2"."cond" = 1) OR NOT ("x_2"."Color" = 1 AND "x_2"."cond" = 1 AND "x_2"."Color_1" = 1 AND "x_2"."Color_1" IS NOT NULL)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -577,44 +577,44 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x_2"."cond",
-	"x_2"."cond_1_1",
-	"x_2"."ItemCode",
 	"x_2"."Color",
-	"x_2"."c1",
-	"x_2"."c2",
+	"x_2"."Color_1",
+	"x_2"."ItemCode",
+	"x_2"."Name",
 	"x_2"."ItemCode_1",
-	"x_2"."Style_1",
-	"x_2"."c3",
-	"x_2"."c4",
-	"x_2"."c5"
+	"x_2"."Name_1",
+	"x_2"."ItemCode_2",
+	"x_2"."Name_2",
+	"x_2"."Size_1",
+	"x_2"."ItemCode_3",
+	"x_2"."Name_3"
 FROM
 	(
 		SELECT
-			"x_1"."cond",
+			"x_1"."cond" as "Color",
 			CASE
-				WHEN "x_1"."cond_1" IS NOT NULL THEN 1
+				WHEN "x_1"."Color" IS NOT NULL THEN 1
 				ELSE 0
-			END as "cond_1",
-			"x_1"."cond_1" as "cond_1_1",
+			END as "cond",
+			"x_1"."Color" as "Color_1",
 			"x_1"."ItemCode",
-			"x_1"."Color",
-			"x_1"."c1",
-			"x_1"."c2",
-			"x_1"."ItemCode_1",
-			"x_1"."Style_1",
-			"x_1"."c3",
-			"x_1"."c4",
-			"x_1"."c5"
+			"x_1"."Name",
+			"x_1"."c1" as "ItemCode_1",
+			"x_1"."c2" as "Name_1",
+			"x_1"."ItemCode_1" as "ItemCode_2",
+			"x_1"."Name_1" as "Name_2",
+			"x_1"."c3" as "Size_1",
+			"x_1"."c4" as "ItemCode_3",
+			"x_1"."c5" as "Name_3"
 		FROM
 			(
 				SELECT
 					"x"."cond",
-					"x"."cond_1",
+					"x"."cond_1" as "Color",
 					"x"."ItemCode",
-					"x"."Color",
+					"x"."Color" as "Name",
 					"x"."ItemCode_1",
-					"x"."Style_1",
+					"x"."Style_1" as "Name_1",
 					NULL as "c1",
 					NULL as "c2",
 					NULL as "c3",
@@ -643,11 +643,11 @@ FROM
 				UNION ALL
 				SELECT
 					"t1"."cond",
-					NULL as "cond_1",
-					NULL as "ItemCode",
 					NULL as "Color",
+					NULL as "ItemCode",
+					NULL as "Name",
 					NULL as "ItemCode_1",
-					NULL as "Style_1",
+					NULL as "Name_1",
 					"t1"."ItemCode" as "c1",
 					"t1"."Color" as "c2",
 					"t1"."cond_1" as "c3",
@@ -676,11 +676,11 @@ FROM
 			) "x_1"
 	) "x_2"
 WHERE
+	"x_2"."Color" = 1 AND
 	"x_2"."cond" = 1 AND
-	"x_2"."cond_1" = 1 AND
+	"x_2"."Color" = 1 AND
 	"x_2"."cond" = 1 AND
-	"x_2"."cond_1" = 1 AND
-	"x_2"."cond_1_1" = 1
+	"x_2"."Color_1" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -698,44 +698,44 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x_2"."cond",
-	"x_2"."cond_1_1",
-	"x_2"."ItemCode",
+	"x_2"."Size_1",
 	"x_2"."Color",
-	"x_2"."c1",
-	"x_2"."c2",
+	"x_2"."ItemCode_2",
+	"x_2"."Name_2",
+	"x_2"."ItemCode_3",
+	"x_2"."Name_3",
+	"x_2"."ItemCode",
+	"x_2"."Name",
+	"x_2"."Size_2",
 	"x_2"."ItemCode_1",
-	"x_2"."Style_1",
-	"x_2"."c3",
-	"x_2"."c4",
-	"x_2"."c5"
+	"x_2"."Name_1"
 FROM
 	(
 		SELECT
-			"x_1"."cond",
+			"x_1"."cond" as "Size_1",
 			CASE
-				WHEN "x_1"."cond_1" IS NOT NULL THEN 1
+				WHEN "x_1"."Color" IS NOT NULL THEN 1
 				ELSE 0
-			END as "cond_1",
-			"x_1"."ItemCode_1",
-			"x_1"."Style_1",
-			"x_1"."c3",
-			"x_1"."c4",
-			"x_1"."c5",
-			"x_1"."cond_1" as "cond_1_1",
-			"x_1"."ItemCode",
+			END as "cond",
+			"x_1"."ItemCode_1" as "ItemCode",
+			"x_1"."Name_1" as "Name",
+			"x_1"."c3" as "Size_2",
+			"x_1"."c4" as "ItemCode_1",
+			"x_1"."c5" as "Name_1",
 			"x_1"."Color",
-			"x_1"."c1",
-			"x_1"."c2"
+			"x_1"."ItemCode" as "ItemCode_2",
+			"x_1"."Name" as "Name_2",
+			"x_1"."c1" as "ItemCode_3",
+			"x_1"."c2" as "Name_3"
 		FROM
 			(
 				SELECT
 					"x"."cond",
-					"x"."cond_1",
+					"x"."cond_1" as "Color",
 					"x"."ItemCode",
-					"x"."Color",
+					"x"."Color" as "Name",
 					"x"."ItemCode_1",
-					"x"."Style_1",
+					"x"."Style_1" as "Name_1",
 					NULL as "c1",
 					NULL as "c2",
 					NULL as "c3",
@@ -764,11 +764,11 @@ FROM
 				UNION ALL
 				SELECT
 					"t1"."cond",
-					NULL as "cond_1",
-					NULL as "ItemCode",
 					NULL as "Color",
+					NULL as "ItemCode",
+					NULL as "Name",
 					NULL as "ItemCode_1",
-					NULL as "Style_1",
+					NULL as "Name_1",
 					"t1"."ItemCode" as "c1",
 					"t1"."Color" as "c2",
 					"t1"."cond_1" as "c3",
@@ -797,7 +797,7 @@ FROM
 			) "x_1"
 	) "x_2"
 WHERE
-	NOT ("x_2"."cond" = 1 AND "x_2"."cond_1" = 0) OR NOT ("x_2"."cond" = 1 AND "x_2"."cond_1" = 0 AND "x_2"."c3" = 1 AND "x_2"."c3" IS NOT NULL)
+	NOT ("x_2"."Size_1" = 1 AND "x_2"."cond" = 0) OR NOT ("x_2"."Size_1" = 1 AND "x_2"."cond" = 0 AND "x_2"."Size_2" = 1 AND "x_2"."Size_2" IS NOT NULL)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -815,44 +815,44 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"x_2"."cond",
-	"x_2"."cond_1_1",
-	"x_2"."ItemCode",
+	"x_2"."Size_1",
 	"x_2"."Color",
-	"x_2"."c1",
-	"x_2"."c2",
+	"x_2"."ItemCode_2",
+	"x_2"."Name_2",
+	"x_2"."ItemCode_3",
+	"x_2"."Name_3",
+	"x_2"."ItemCode",
+	"x_2"."Name",
+	"x_2"."Size_2",
 	"x_2"."ItemCode_1",
-	"x_2"."Style_1",
-	"x_2"."c3",
-	"x_2"."c4",
-	"x_2"."c5"
+	"x_2"."Name_1"
 FROM
 	(
 		SELECT
-			"x_1"."cond",
+			"x_1"."cond" as "Size_1",
 			CASE
-				WHEN "x_1"."cond_1" IS NOT NULL THEN 1
+				WHEN "x_1"."Color" IS NOT NULL THEN 1
 				ELSE 0
-			END as "cond_1",
-			"x_1"."ItemCode_1",
-			"x_1"."Style_1",
-			"x_1"."c3",
-			"x_1"."c4",
-			"x_1"."c5",
-			"x_1"."cond_1" as "cond_1_1",
-			"x_1"."ItemCode",
+			END as "cond",
+			"x_1"."ItemCode_1" as "ItemCode",
+			"x_1"."Name_1" as "Name",
+			"x_1"."c3" as "Size_2",
+			"x_1"."c4" as "ItemCode_1",
+			"x_1"."c5" as "Name_1",
 			"x_1"."Color",
-			"x_1"."c1",
-			"x_1"."c2"
+			"x_1"."ItemCode" as "ItemCode_2",
+			"x_1"."Name" as "Name_2",
+			"x_1"."c1" as "ItemCode_3",
+			"x_1"."c2" as "Name_3"
 		FROM
 			(
 				SELECT
 					"x"."cond",
-					"x"."cond_1",
+					"x"."cond_1" as "Color",
 					"x"."ItemCode",
-					"x"."Color",
+					"x"."Color" as "Name",
 					"x"."ItemCode_1",
-					"x"."Style_1",
+					"x"."Style_1" as "Name_1",
 					NULL as "c1",
 					NULL as "c2",
 					NULL as "c3",
@@ -881,11 +881,11 @@ FROM
 				UNION ALL
 				SELECT
 					"t1"."cond",
-					NULL as "cond_1",
-					NULL as "ItemCode",
 					NULL as "Color",
+					NULL as "ItemCode",
+					NULL as "Name",
 					NULL as "ItemCode_1",
-					NULL as "Style_1",
+					NULL as "Name_1",
 					"t1"."ItemCode" as "c1",
 					"t1"."Color" as "c2",
 					"t1"."cond_1" as "c3",
@@ -914,11 +914,11 @@ FROM
 			) "x_1"
 	) "x_2"
 WHERE
-	"x_2"."cond" = 1 AND
-	"x_2"."cond_1" = 0 AND
-	"x_2"."cond" = 1 AND
-	"x_2"."cond_1" = 0 AND
-	"x_2"."c3" = 1
+	"x_2"."Size_1" = 1 AND
+	"x_2"."cond" = 0 AND
+	"x_2"."Size_1" = 1 AND
+	"x_2"."cond" = 0 AND
+	"x_2"."Size_2" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

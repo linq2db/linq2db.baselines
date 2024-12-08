@@ -3,20 +3,20 @@
 
 SELECT
 	"t1"."ID",
-	"t1"."c2",
+	"t1"."OK",
 	CASE
-		WHEN "t1"."c1" = 'ddd' THEN "y"."FirstName"
-		ELSE "t1"."c1"
+		WHEN "t1"."FirstName" = 'ddd' THEN "y"."FirstName"
+		ELSE "t1"."FirstName"
 	END
 FROM
 	(
 		SELECT
 			"x"."PersonID" as "ID",
-			CAST('A' AS NVarChar(255)) as "c1",
+			CAST('A' AS NVarChar(255)) as "FirstName",
 			CASE
 				WHEN "x"."FirstName" = '123' THEN 'Y'
 				ELSE 'N'
-			END as "c2"
+			END as "OK"
 		FROM
 			"Person" "x"
 		WHERE
@@ -24,8 +24,8 @@ FROM
 		UNION
 		SELECT
 			"x_1"."PersonID" as "ID",
-			"x_1"."FirstName" as "c1",
-			CAST('N' AS NVarChar(255)) as "c2"
+			"x_1"."FirstName",
+			CAST('N' AS NVarChar(255)) as "OK"
 		FROM
 			"Person" "x_1"
 		WHERE

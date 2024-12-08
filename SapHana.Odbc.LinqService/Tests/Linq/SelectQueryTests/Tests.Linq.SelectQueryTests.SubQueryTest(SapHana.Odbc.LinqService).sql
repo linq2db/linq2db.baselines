@@ -42,21 +42,21 @@ FROM
 	"SampleClass" "t_1"
 		LEFT JOIN (
 			SELECT
-				"t1"."c1" as "Value1",
-				"t1"."c2" as "Value2"
+				"t1"."Value1",
+				"t1"."Value2"
 			FROM
 				(
 					SELECT
-						Add_Days(CURRENT_TIMESTAMP, "t"."Value") as "c1",
-						Add_Days(CURRENT_TIMESTAMP, 2) as "c2"
+						Add_Days(CURRENT_TIMESTAMP, "t"."Value") as "Value1",
+						Add_Days(CURRENT_TIMESTAMP, 2) as "Value2"
 					FROM
 						"SampleClass" "t"
 					WHERE
 						"t"."Value" = 1
 					UNION
 					SELECT
-						Add_Days(CURRENT_TIMESTAMP, 3) as "c1",
-						Add_Days(CURRENT_TIMESTAMP, 4) as "c2"
+						Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
+						Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
 FROM DUMMY
 				) "t1"
 			LIMIT 1
