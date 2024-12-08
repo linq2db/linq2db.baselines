@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			`p`.`ParentID`,
+			`p`.`ParentID` as `id`,
 			CAST(1 AS SIGNED) as `val`
 		FROM
 			`Parent` `p`
 		UNION
 		SELECT
-			`ch`.`ParentID`,
+			`ch`.`ParentID` as `id`,
 			CAST(0 AS SIGNED) as `val`
 		FROM
 			`Child` `ch`

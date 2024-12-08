@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`x_1`.`c1`,
+	`x_1`.`Id`,
 	`x_1`.`StatusName`
 FROM
 	(
@@ -14,7 +14,7 @@ FROM
 			CASE
 				WHEN `t1`.`PersonID` IS NOT NULL THEN `t1`.`PersonID`
 				ELSE `x`.`PersonID`
-			END as `c1`
+			END as `Id`
 		FROM
 			`Person` `x`
 				LEFT JOIN LATERAL (
