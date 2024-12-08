@@ -146,11 +146,11 @@ SELECT
 	[cr_1].[AisleID],
 	[cr_1].[ChannelID],
 	[cr_1].[Id_3],
-	[cr_1].[Status_1],
+	[cr_1].[AisleStatus],
 	[cr_1].[Id_4],
 	[cr_1].[IsStoragePlace],
 	[cr_1].[RefQty],
-	[cr_1].[c1]
+	[cr_1].[MixedStock]
 FROM
 	(
 		SELECT
@@ -181,7 +181,7 @@ FROM
 			[cr].[AisleID],
 			[cr].[ChannelID],
 			[c_1].[Id] as [Id_3],
-			[aisle].[Status] as [Status_1],
+			[aisle].[Status] as [AisleStatus],
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
 			CASE
@@ -196,7 +196,7 @@ FROM
 				)
 					THEN 1
 				ELSE 0
-			END as [c1]
+			END as [MixedStock]
 		FROM
 			[StorageShelfDTO] [cr]
 				INNER JOIN [ChannelDTO] [c_1] ON [cr].[ChannelID] = [c_1].[Id]
@@ -223,10 +223,10 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			CAST(0 AS INTEGER) as [Status_1],
+			CAST(0 AS INTEGER) as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			CAST(0 AS Bit) as [c1]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
