@@ -44,7 +44,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DateAdd(Day, "v"."Value", LOCALTIMESTAMP) as "c1",
+			DateAdd(Day, "v"."Value", LOCALTIMESTAMP) as "Value1",
 			DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 		FROM
 			"SampleClass" "v"
@@ -52,7 +52,7 @@ FROM
 			"v"."Value" = 1
 		UNION
 		SELECT
-			DateAdd(Day, 3, LOCALTIMESTAMP) as "c1",
+			DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
 			DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
 		FROM rdb$database
 	) "v_1"
