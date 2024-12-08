@@ -30,5 +30,25 @@ SELECT
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
+SELECT
+	v_1."Value2"
+FROM
+	(
+		SELECT
+			CURRENT_TIMESTAMP + v."Value" * Interval '1 Day' as "Value1",
+			CURRENT_TIMESTAMP + 2 * Interval '1 Day' as "Value2"
+		FROM
+			"SampleClass" v
+		WHERE
+			v."Value" = 1
+		UNION
+		SELECT
+			CURRENT_TIMESTAMP + 3 * Interval '1 Day' as "Value1",
+			CURRENT_TIMESTAMP + 4 * Interval '1 Day' as "Value2"
+	) v_1
+
+BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
 DROP TABLE IF EXISTS "SampleClass"
 
