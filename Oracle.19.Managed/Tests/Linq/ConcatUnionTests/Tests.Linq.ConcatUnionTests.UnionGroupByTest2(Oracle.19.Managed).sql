@@ -2,13 +2,13 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2."month_1",
-	t2."month_1",
+	t2."year_1",
+	t2."year_1",
 	t2."int_1"
 FROM
 	(
 		SELECT
-			CAST(t1."SmallIntValue" AS Int) as "month_1",
+			CAST(t1."SmallIntValue" AS Int) as "year_1",
 			CAST(3 AS Int) as "int_1"
 		FROM
 			"LinqDataTypes" t1
