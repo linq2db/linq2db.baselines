@@ -2,6 +2,6 @@
 -- Informix.DB2 Informix
 
 SELECT
-	NULL
+	NULL::Int
 FROM table(set{1})
 
