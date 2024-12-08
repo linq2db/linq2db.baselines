@@ -16,18 +16,18 @@ INSERT INTO Parent
 )
 SELECT
 	t1.ParentID + 1000,
-	t1.c1
+	t1.Value1
 FROM
 	(
 		SELECT
 			c_1.ParentID,
-			Floor(c_1.ChildID::Float / 10)::Int as c1
+			Floor(c_1.ChildID::Float / 10)::Int as Value1
 		FROM
 			Child c_1
 		UNION
 		SELECT
 			Nvl(c_2.ParentID, 0) as ParentID,
-			Floor(Nvl(c_2.GrandChildID, 0)::Float / 100) as c1
+			Floor(Nvl(c_2.GrandChildID, 0)::Float / 100) as Value1
 		FROM
 			GrandChild c_2
 	) t1

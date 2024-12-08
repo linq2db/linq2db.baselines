@@ -165,25 +165,25 @@ BeforeExecute
 SELECT
 	t1.Id,
 	t1.Byte,
-	t1.c1,
+	t1.Byte_1,
 	t1.Guid,
-	t1.c2,
-	t1.c3,
-	t1.c4,
+	t1.Guid_1,
+	t1.Enum,
+	t1.EnumN,
 	t1.Bool,
-	t1.c5
+	t1.Bool_1
 FROM
 	(
 		SELECT
 			r.Id,
 			r.Byte,
-			NVL(r.Byte, NULL) as c1,
+			NVL(r.Byte, NULL) as Byte_1,
 			r.Guid,
-			NVL(r.Guid, NULL) as c2,
-			NULL::NChar(11) as c3,
-			NULL::NChar(11) as c4,
+			NVL(r.Guid, NULL) as Guid_1,
+			NULL::NChar(11) as Enum,
+			NULL::NChar(11) as EnumN,
 			r.Bool,
-			NVL(r.Bool, NULL)::BOOLEAN as c5
+			NVL(r.Bool, NULL)::BOOLEAN as Bool_1
 		FROM
 			Issue3360Table1 r
 		WHERE
@@ -192,13 +192,13 @@ FROM
 		SELECT
 			r_1.Id,
 			r_1.Byte,
-			r_1.ByteN as c1,
+			r_1.ByteN as Byte_1,
 			r_1.Guid,
-			r_1.GuidN as c2,
-			r_1.Enum as c3,
-			r_1.EnumN as c4,
+			r_1.GuidN as Guid_1,
+			r_1.Enum,
+			r_1.EnumN,
 			r_1.Bool,
-			r_1.BoolN as c5
+			r_1.BoolN as Bool_1
 		FROM
 			Issue3360Table1 r_1
 		WHERE
