@@ -36,22 +36,22 @@ FROM
 	"SampleClass" t_1
 		LEFT JOIN (
 			SELECT
-				t1.c1 as "Value1",
-				t1.c2 as "Value2",
+				t1."Value1",
+				t1."Value2",
 				1 as cond
 			FROM
 				(
 					SELECT
-						CURRENT_TIMESTAMP + t."Value" * Interval '1 Day' as c1,
-						CURRENT_TIMESTAMP + 2 * Interval '1 Day' as c2
+						CURRENT_TIMESTAMP + t."Value" * Interval '1 Day' as "Value1",
+						CURRENT_TIMESTAMP + 2 * Interval '1 Day' as "Value2"
 					FROM
 						"SampleClass" t
 					WHERE
 						t."Value" = 1
 					UNION
 					SELECT
-						CURRENT_TIMESTAMP + 3 * Interval '1 Day' as c1,
-						CURRENT_TIMESTAMP + 4 * Interval '1 Day' as c2
+						CURRENT_TIMESTAMP + 3 * Interval '1 Day' as "Value1",
+						CURRENT_TIMESTAMP + 4 * Interval '1 Day' as "Value2"
 				) t1
 			LIMIT 1
 		) t2 ON 1=1
