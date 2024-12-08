@@ -82,7 +82,7 @@ SELECT
 	[t3].[Id],
 	[t3].[group_1],
 	[t3].[count_1],
-	[t3].[c1],
+	[t3].[percents],
 	[t3].[hours],
 	[t3].[minutes]
 FROM
@@ -91,7 +91,7 @@ FROM
 			COUNT(*) as [count_1],
 			[t2].[Id],
 			[t2].[group_1],
-			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1],
+			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
 			[t2].[minutes]
 		FROM
@@ -127,7 +127,7 @@ SELECT
 	[t3].[Id],
 	[t3].[group_1],
 	[t3].[count_1],
-	[t3].[c1],
+	[t3].[percents],
 	[t3].[hours],
 	[t3].[minutes]
 FROM
@@ -136,7 +136,7 @@ FROM
 			COUNT(*) as [count_1],
 			[t2].[Id],
 			[t2].[group_1],
-			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1],
+			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
 			[t2].[minutes]
 		FROM
