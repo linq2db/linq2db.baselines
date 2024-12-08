@@ -106,11 +106,11 @@ SELECT TOP (2)
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
 		ELSE [e].[InMinQuantity]
-	END as [c1],
+	END as [MinQuantity],
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
 		ELSE [e].[InMaxQuantity]
-	END as [c2]
+	END as [MaxQuantity]
 FROM
 	[StLink] [t1]
 		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]
@@ -125,11 +125,11 @@ SELECT TOP (2)
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
 		ELSE [e].[InMinQuantity]
-	END as [c1],
+	END as [MinQuantity],
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMaxQuantity]
 		ELSE [e].[InMaxQuantity]
-	END as [c2]
+	END as [MaxQuantity]
 FROM
 	[StLink] [t1]
 		LEFT JOIN [EdtLink] [e] ON [t1].[InId] = [e].[InId]

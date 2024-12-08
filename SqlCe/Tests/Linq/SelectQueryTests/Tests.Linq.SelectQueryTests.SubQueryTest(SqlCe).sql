@@ -35,22 +35,22 @@ FROM
 	[SampleClass] [t_1]
 		LEFT JOIN (
 			SELECT TOP (1)
-				[t1].[c1] as [Value1],
-				[t1].[c2] as [Value2],
+				[t1].[Value1],
+				[t1].[Value2],
 				1 as [cond]
 			FROM
 				(
 					SELECT
-						DateAdd(day, [t].[Value], GetDate()) as [c1],
-						DateAdd(day, 2, GetDate()) as [c2]
+						DateAdd(day, [t].[Value], GetDate()) as [Value1],
+						DateAdd(day, 2, GetDate()) as [Value2]
 					FROM
 						[SampleClass] [t]
 					WHERE
 						[t].[Value] = 1
 					UNION
 					SELECT
-						DateAdd(day, 3, GetDate()) as [c1],
-						DateAdd(day, 4, GetDate()) as [c2]
+						DateAdd(day, 3, GetDate()) as [Value1],
+						DateAdd(day, 4, GetDate()) as [Value2]
 				) [t1]
 		) [t2] ON 1=1
 

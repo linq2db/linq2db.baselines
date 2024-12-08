@@ -104,19 +104,19 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[m_1].[BookId_1] as [Item1],
+	[m_1].[Id],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId_1]
+			[t3].[Id_1] as [Id]
 		FROM
 			(
 				SELECT
-					[a_Book].[BookId],
+					[a_Book].[BookId] as [Id],
 					[a_Book].[BookName],
-					[a_Book].[BookId] as [BookId_1]
+					[a_Book].[BookId] as [Id_1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -125,9 +125,9 @@ FROM
 					[a_Book].[Discriminator] = 'Roman'
 				UNION
 				SELECT
-					[a_Book_1].[BookId],
+					[a_Book_1].[BookId] as [Id],
 					[a_Book_1].[BookName],
-					[a_Book_1].[BookId] as [BookId_1]
+					[a_Book_1].[BookId] as [Id_1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -136,7 +136,7 @@ FROM
 					[a_Book_1].[Discriminator] = 'Novel'
 			) [t3]
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId_1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -145,9 +145,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId],
+	[a_Book].[BookId] as [Id],
 	[a_Book].[BookName],
-	[a_Book].[BookId] as [Item1]
+	[a_Book].[BookId] as [Id_1]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -156,9 +156,9 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION
 SELECT
-	[a_Book_1].[BookId],
+	[a_Book_1].[BookId] as [Id],
 	[a_Book_1].[BookName],
-	[a_Book_1].[BookId] as [Item1]
+	[a_Book_1].[BookId] as [Id_1]
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]

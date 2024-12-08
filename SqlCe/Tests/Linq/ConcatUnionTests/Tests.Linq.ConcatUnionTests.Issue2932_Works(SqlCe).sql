@@ -14,7 +14,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END as [Sub]
 FROM
 	[Child] [p]
 UNION ALL
@@ -32,7 +32,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END as [Sub]
 FROM
 	[Child] [p_1]
 

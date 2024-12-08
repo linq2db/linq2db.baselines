@@ -16,7 +16,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	GetDate() as [c1]
+	GetDate() as [CurrentTimestamp]
 
 BeforeExecute
 -- SqlCe

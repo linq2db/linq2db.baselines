@@ -8,7 +8,7 @@ SELECT
 	[c_1].[ChildID],
 	[a_Parent].[ParentID] as [cond],
 	[a_Parent].[Value1] as [Value1_1],
-	[p].[ParentID] as [c1],
+	[p].[ParentID] as [ParentID_2],
 	[p].[Value1] as [Value1_2],
 	CASE
 		WHEN [a_Parent].[ParentID] IS NOT NULL THEN [a_Parent].[Value1]

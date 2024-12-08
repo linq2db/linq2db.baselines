@@ -9,8 +9,8 @@ SELECT
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender],
-	[t1].[cond],
-	[t1].[cond] as [PersonID],
+	[t1].[PersonID],
+	[t1].[PersonID] as [PersonID_1],
 	[t1].[Diagnosis]
 FROM
 	(
@@ -20,7 +20,7 @@ FROM
 			[p].[LastName],
 			[p].[MiddleName],
 			[p].[Gender],
-			[a_Patient].[PersonID] as [cond],
+			[a_Patient].[PersonID],
 			[a_Patient].[Diagnosis]
 		FROM
 			[Person] [p]
@@ -33,8 +33,8 @@ SELECT
 	[t2].[LastName],
 	[t2].[MiddleName],
 	[t2].[Gender],
-	[a_Patient_1].[PersonID] as [cond],
 	[a_Patient_1].[PersonID],
+	[a_Patient_1].[PersonID] as [PersonID_1],
 	[a_Patient_1].[Diagnosis]
 FROM
 	[Person] [t2]

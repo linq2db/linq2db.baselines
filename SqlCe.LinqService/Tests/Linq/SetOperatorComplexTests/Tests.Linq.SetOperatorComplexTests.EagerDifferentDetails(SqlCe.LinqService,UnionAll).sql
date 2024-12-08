@@ -501,18 +501,18 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[m_1].[BookId] as [Item1],
+	[m_1].[Id],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId]
+			[t3].[Id]
 		FROM
 			(
 				SELECT
 					CAST(0 AS Int) as [projection__set_id__],
-					[a_Book].[BookId]
+					[a_Book].[BookId] as [Id]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -522,7 +522,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(1 AS Int) as [projection__set_id__],
-					NULL as [BookId]
+					NULL as [Id]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -533,7 +533,7 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 0
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -581,10 +581,10 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId],
+	[a_Book].[BookId] as [Id],
 	[a_Book].[BookName],
 	CAST(0 AS Int) as [projection__set_id__],
-	[a_Book].[BookId] as [BookId_1],
+	[a_Book].[BookId] as [Id_1],
 	NULL as [c1]
 FROM
 	[Author] [t1]
@@ -594,10 +594,10 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION ALL
 SELECT
-	[a_Book_1].[BookId],
+	[a_Book_1].[BookId] as [Id],
 	[a_Book_1].[BookName],
 	CAST(1 AS Int) as [projection__set_id__],
-	NULL as [BookId_1],
+	NULL as [Id_1],
 	[a_Book_1].[BookId] as [c1]
 FROM
 	[Author] [t2]

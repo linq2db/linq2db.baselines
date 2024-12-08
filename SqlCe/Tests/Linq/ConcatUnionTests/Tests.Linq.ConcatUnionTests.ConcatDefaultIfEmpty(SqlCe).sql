@@ -3,14 +3,14 @@
 
 SELECT
 	CAST(0 AS Int) as [projection__set_id__],
-	[t1].[cond],
-	[t1].[cond] as [ParentID],
+	[t1].[ParentID],
+	[t1].[ParentID] as [ParentID_1],
 	[t1].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Children].[ParentID] as [cond],
+				[a_Children].[ParentID],
 				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
@@ -22,8 +22,8 @@ WHERE
 UNION ALL
 SELECT
 	CAST(1 AS Int) as [projection__set_id__],
-	NULL as [cond],
 	NULL as [ParentID],
+	NULL as [ParentID_1],
 	NULL as [ChildID]
 FROM
 	[Parent] [p_1]

@@ -2,14 +2,14 @@
 -- SqlCe
 
 SELECT
-	[p].[ParentID],
-	CAST(1 AS Bit) as [c1]
+	[p].[ParentID] as [id],
+	CAST(1 AS Bit) as [val]
 FROM
 	[Parent] [p]
 UNION
 SELECT
-	[ch].[ParentID],
-	CAST(0 AS Bit) as [c1]
+	[ch].[ParentID] as [id],
+	CAST(0 AS Bit) as [val]
 FROM
 	[Child] [ch]
 
