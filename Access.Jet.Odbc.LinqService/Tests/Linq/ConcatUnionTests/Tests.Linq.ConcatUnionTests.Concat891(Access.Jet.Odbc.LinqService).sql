@@ -2,19 +2,19 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ParentID_1]
+	[t1].[Value1],
+	[t1].[ParentID]
 FROM
 	(
 		SELECT
-			[c_1].[ParentID],
-			[c_1].[ParentID] as [ParentID_1]
+			[c_1].[ParentID] as [Value1],
+			[c_1].[ParentID]
 		FROM
 			[Child] [c_1]
 		UNION
 		SELECT
-			IIF(False, 0, NULL) as [ParentID],
-			[c_2].[ParentID] as [ParentID_1]
+			IIF(False, 0, NULL) as [Value1],
+			[c_2].[ParentID]
 		FROM
 			[Parent] [c_2]
 	) [t1]

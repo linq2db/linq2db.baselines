@@ -22,14 +22,14 @@ FROM
 	(
 		SELECT
 			[a].[Id],
-			IIF([a].[NullValue] IS NOT NULL, [a].[NullValue], 0) as [c1],
+			IIF([a].[NullValue] IS NOT NULL, [a].[NullValue], 0) as [KEYNUMB],
 			[a].[NullValue]
 		FROM
 			[SampleClass] [a]
 	) [a_1]
 WHERE
-	[a_1].[Id] = 0 AND [a_1].[c1] = 0 OR [a_1].[Id] = 1 AND [a_1].[c1] = 1 OR
-	[a_1].[Id] = 2 AND [a_1].[c1] = 2
+	[a_1].[Id] = 0 AND [a_1].[KEYNUMB] = 0 OR [a_1].[Id] = 1 AND [a_1].[KEYNUMB] = 1 OR
+	[a_1].[Id] = 2 AND [a_1].[KEYNUMB] = 2
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

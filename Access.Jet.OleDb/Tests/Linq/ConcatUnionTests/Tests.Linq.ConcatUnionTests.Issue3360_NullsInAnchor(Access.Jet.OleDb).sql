@@ -164,26 +164,26 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[c1],
-	[t1].[c2],
-	[t1].[c3],
-	[t1].[c4],
-	[t1].[c5],
-	[t1].[c6],
-	[t1].[c7],
-	[t1].[c8]
+	[t1].[Byte],
+	[t1].[Byte_1],
+	[t1].[Guid],
+	[t1].[Guid_1],
+	[t1].[Enum],
+	[t1].[EnumN],
+	[t1].[Bool],
+	[t1].[Bool_1]
 FROM
 	(
 		SELECT
 			[r].[Id],
-			IIF(False, 0, NULL) as [c1],
-			IIF(False, 0, NULL) as [c2],
-			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [c3],
-			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [c4],
-			IIF(False, 'ENUM1_VALUE', NULL) as [c5],
-			IIF(False, 'ENUM2_VALUE', NULL) as [c6],
-			IIF(False, False, NULL) as [c7],
-			IIF(False, False, NULL) as [c8]
+			IIF(False, 0, NULL) as [Byte],
+			IIF(False, 0, NULL) as [Byte_1],
+			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [Guid],
+			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [Guid_1],
+			IIF(False, 'ENUM1_VALUE', NULL) as [Enum],
+			IIF(False, 'ENUM2_VALUE', NULL) as [EnumN],
+			IIF(False, False, NULL) as [Bool],
+			IIF(False, False, NULL) as [Bool_1]
 		FROM
 			[Issue3360Table1] [r]
 		WHERE
@@ -191,14 +191,14 @@ FROM
 		UNION ALL
 		SELECT
 			[r_1].[Id],
-			[r_1].[Byte] as [c1],
-			[r_1].[ByteN] as [c2],
-			[r_1].[Guid] as [c3],
-			[r_1].[GuidN] as [c4],
-			[r_1].[Enum] as [c5],
-			[r_1].[EnumN] as [c6],
-			[r_1].[Bool] as [c7],
-			[r_1].[BoolN] as [c8]
+			[r_1].[Byte],
+			[r_1].[ByteN] as [Byte_1],
+			[r_1].[Guid],
+			[r_1].[GuidN] as [Guid_1],
+			[r_1].[Enum],
+			[r_1].[EnumN],
+			[r_1].[Bool],
+			[r_1].[BoolN] as [Bool_1]
 		FROM
 			[Issue3360Table1] [r_1]
 		WHERE

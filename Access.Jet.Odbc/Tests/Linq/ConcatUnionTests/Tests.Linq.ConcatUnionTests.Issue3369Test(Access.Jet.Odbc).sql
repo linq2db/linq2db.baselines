@@ -3,14 +3,14 @@
 
 SELECT
 	[t1].[ID],
-	[t1].[c2],
-	IIF([t1].[c1] = 'ddd', [y].[FirstName], [t1].[c1])
+	[t1].[OK],
+	IIF([t1].[FirstName] = 'ddd', [y].[FirstName], [t1].[FirstName])
 FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
-			CStr('A') as [c1],
-			IIF([x].[FirstName] = '123', 'Y', 'N') as [c2]
+			CStr('A') as [FirstName],
+			IIF([x].[FirstName] = '123', 'Y', 'N') as [OK]
 		FROM
 			[Person] [x]
 		WHERE
@@ -18,8 +18,8 @@ FROM
 		UNION
 		SELECT
 			[x_1].[PersonID] as [ID],
-			[x_1].[FirstName] as [c1],
-			CStr('N') as [c2]
+			[x_1].[FirstName],
+			CStr('N') as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE

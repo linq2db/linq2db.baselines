@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			[p].[ParentID],
+			[p].[ParentID] as [id],
 			CBool(True) as [val]
 		FROM
 			[Parent] [p]
 		UNION
 		SELECT
-			[ch].[ParentID],
+			[ch].[ParentID] as [id],
 			CBool(False) as [val]
 		FROM
 			[Child] [ch]
