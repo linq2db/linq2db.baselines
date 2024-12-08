@@ -3,8 +3,8 @@
 
 SELECT
 	CAST(0 AS SIGNED),
-	`t1`.`cond`,
-	`t1`.`cond`,
+	`t1`.`ParentID`,
+	`t1`.`ParentID`,
 	`t1`.`ChildID`
 FROM
 	(
@@ -17,7 +17,7 @@ FROM
 				WHERE
 					`p`.`ParentID` = `a_Children`.`ParentID`
 				LIMIT 1
-			) as `cond`,
+			) as `ParentID`,
 			(
 				SELECT
 					`a_Children_1`.`ChildID`

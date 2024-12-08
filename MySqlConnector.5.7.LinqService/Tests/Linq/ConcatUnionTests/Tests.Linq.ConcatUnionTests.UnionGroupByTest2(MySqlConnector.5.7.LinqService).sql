@@ -2,13 +2,13 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t2`.`month_1`,
-	`t2`.`month_1`,
+	`t2`.`year_1`,
+	`t2`.`year_1`,
 	`t2`.`int_1`
 FROM
 	(
 		SELECT
-			`t1`.`SmallIntValue` as `month_1`,
+			`t1`.`SmallIntValue` as `year_1`,
 			CAST(3 AS SIGNED) as `int_1`
 		FROM
 			`LinqDataTypes` `t1`
