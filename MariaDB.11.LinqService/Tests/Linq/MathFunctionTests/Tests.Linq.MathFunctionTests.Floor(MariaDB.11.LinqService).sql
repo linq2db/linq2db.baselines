@@ -2,14 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Floor(-(`p`.`MoneyValue` + 1)) as `c1`
+			Floor(-(`p`.`MoneyValue` + 1)) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0
+	`t`.`Value_1` <> 0
 
