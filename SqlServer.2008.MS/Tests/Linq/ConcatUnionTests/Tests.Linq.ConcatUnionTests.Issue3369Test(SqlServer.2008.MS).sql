@@ -3,20 +3,20 @@
 
 SELECT
 	[t1].[ID],
-	[t1].[c2],
+	[t1].[OK],
 	CASE
-		WHEN [t1].[c1] = N'ddd' THEN [y].[FirstName]
-		ELSE [t1].[c1]
+		WHEN [t1].[FirstName] = N'ddd' THEN [y].[FirstName]
+		ELSE [t1].[FirstName]
 	END
 FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
-			CAST(N'A' AS NVarChar(4000)) as [c1],
+			CAST(N'A' AS NVarChar(4000)) as [FirstName],
 			CASE
 				WHEN [x].[FirstName] = N'123' THEN N'Y'
 				ELSE N'N'
-			END as [c2]
+			END as [OK]
 		FROM
 			[Person] [x]
 		WHERE
@@ -24,8 +24,8 @@ FROM
 		UNION
 		SELECT
 			[x_1].[PersonID] as [ID],
-			[x_1].[FirstName] as [c1],
-			CAST(N'N' AS NVarChar(4000)) as [c2]
+			[x_1].[FirstName],
+			CAST(N'N' AS NVarChar(4000)) as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE
