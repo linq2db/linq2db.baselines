@@ -5,7 +5,7 @@ SELECT
 	p.ParentID,
 	p.ParentID as ParentID_1,
 	p.Value1,
-	toInt32(NULL) as c1,
+	toInt32(NULL) as ch,
 	toInt32(NULL) as ParentID_2,
 	toInt32(NULL) as ChildID
 FROM
@@ -15,7 +15,7 @@ SELECT
 	Coalesce(p2.Value1, 0) as ParentID,
 	toInt32(NULL) as ParentID_1,
 	toInt32(NULL) as Value1,
-	t1.cond as c1,
+	t1.cond as ch,
 	t1.cond as ParentID_2,
 	t1.ChildID as ChildID
 FROM

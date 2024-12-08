@@ -2,16 +2,16 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	c_1.ParentID,
-	c_1.ParentID as ParentID_1,
-	Coalesce(c_1.Value1, 0) as c1
+	c_1.ParentID as ID1,
+	c_1.ParentID as ID1_1,
+	Coalesce(c_1.Value1, 0) as ID3
 FROM
 	Parent c_1
 UNION ALL
 SELECT
-	c_2.ParentID as ParentID,
-	c_2.ChildID as ParentID_1,
-	c_2.ParentID + 1 as c1
+	c_2.ParentID as ID1,
+	c_2.ChildID as ID1_1,
+	c_2.ParentID + 1 as ID3
 FROM
 	Child c_2
 

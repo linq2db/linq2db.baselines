@@ -36,13 +36,13 @@ BeforeExecute
 
 SELECT
 	p.Id,
-	toString('str') as c1
+	toString('str') as Str
 FROM
 	Issue3360Table p
 UNION ALL
 SELECT
 	p_1.Id as Id,
-	p_1.Str as c1
+	p_1.Str as Str
 FROM
 	Issue3360Table p_1
 

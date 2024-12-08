@@ -63,10 +63,10 @@ SELECT
 	toInt32(NULL) as c1,
 	toInt32(NULL) as Id_1,
 	toString(NULL) as Field1_1,
-	t2.Id as c2,
 	t2.Id as Id_2,
+	t2.Id as Id_3,
 	t2.Field1 as Field1_2,
-	toInt32(NULL) as Id_3,
+	toInt32(NULL) as Id_4,
 	toString(NULL) as Field1_3
 FROM
 	TestEntity1 t1
@@ -78,10 +78,10 @@ SELECT
 	t1_1.Id as c1,
 	t1_1.Id as Id_1,
 	t1_1.Field1 as Field1_1,
-	toInt32(NULL) as c2,
 	toInt32(NULL) as Id_2,
+	toInt32(NULL) as Id_3,
 	toString(NULL) as Field1_2,
-	t2_1.Id as Id_3,
+	t2_1.Id as Id_4,
 	t2_1.Field1 as Field1_3
 FROM
 	TestEntity2 t2_1
