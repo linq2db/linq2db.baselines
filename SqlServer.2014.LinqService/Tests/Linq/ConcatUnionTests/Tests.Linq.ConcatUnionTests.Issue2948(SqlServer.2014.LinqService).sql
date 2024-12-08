@@ -6,19 +6,19 @@ DECLARE @take_1 Int -- Int32
 SET     @take_1 = 1
 
 SELECT
-	[t1].[ID],
-	[t1].[FirstName]
+	[t1].[Id],
+	[t1].[Name]
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER(PARTITION BY [p].[PersonID] ORDER BY [p].[PersonID]) as [Rank],
-			[p].[PersonID] as [ID],
-			[p].[FirstName]
+			[p].[PersonID] as [Id],
+			[p].[FirstName] as [Name]
 		FROM
 			[Person] [p]
 	) [t1]
 WHERE
-	[t1].[Rank] = 1 AND [t1].[ID] <> 2
+	[t1].[Rank] = 1 AND [t1].[Id] <> 2
 UNION ALL
 SELECT
 	[t2].[ID],

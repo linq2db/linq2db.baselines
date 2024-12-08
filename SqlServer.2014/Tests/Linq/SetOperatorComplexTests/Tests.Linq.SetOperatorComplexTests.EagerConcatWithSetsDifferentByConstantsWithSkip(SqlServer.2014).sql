@@ -115,44 +115,44 @@ DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
-	[m_1].[c2],
+	[m_1].[c1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c2]
+			[t2].[c1]
 		FROM
 			(
 				SELECT
-					[t1].[c1] as [cond],
-					[t1].[c2]
+					[t1].[BookType] as [cond],
+					[t1].[c1]
 				FROM
 					(
 						SELECT
-							CAST(N'Roman' AS NVarChar(4000)) as [c1],
-							NULL as [c2]
+							CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+							NULL as [c1]
 						FROM
 							[Book] [b]
 						WHERE
 							[b].[Discriminator] = N'Roman'
 						UNION ALL
 						SELECT
-							CAST(N'Novel' AS NVarChar(4000)) as [c1],
-							[b_1].[BookId] as [c2]
+							CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+							[b_1].[BookId] as [c1]
 						FROM
 							[Book] [b_1]
 						WHERE
 							[b_1].[Discriminator] = N'Novel'
 					) [t1]
 				ORDER BY
-					[t1].[c1] DESC
+					[t1].[BookType] DESC
 				OFFSET @skip ROWS
 			) [t2]
 		WHERE
 			[t2].[cond] = N'Novel'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c2]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -163,29 +163,29 @@ DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
-	[t1].[c1],
-	IIF([t1].[c1] = N'Roman', 1, 0),
-	[t1].[c2]
+	[t1].[BookType],
+	IIF([t1].[BookType] = N'Roman', 1, 0),
+	[t1].[c1]
 FROM
 	(
 		SELECT
-			CAST(N'Roman' AS NVarChar(4000)) as [c1],
-			NULL as [c2]
+			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+			NULL as [c1]
 		FROM
 			[Book] [b]
 		WHERE
 			[b].[Discriminator] = N'Roman'
 		UNION ALL
 		SELECT
-			CAST(N'Novel' AS NVarChar(4000)) as [c1],
-			[b_1].[BookId] as [c2]
+			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+			[b_1].[BookId] as [c1]
 		FROM
 			[Book] [b_1]
 		WHERE
 			[b_1].[Discriminator] = N'Novel'
 	) [t1]
 ORDER BY
-	[t1].[c1] DESC
+	[t1].[BookType] DESC
 OFFSET @skip ROWS
 
 BeforeExecute
