@@ -7,14 +7,14 @@ SELECT
 	[t1].[ChildID],
 	[t1].[group_1],
 	[t1].[count_1],
-	[t1].[c1]
+	[t1].[percents]
 FROM
 	(
 		SELECT
 			COUNT(*) as [count_1],
 			[g_1].[ChildID],
 			[a_Parent].[ParentID] as [group_1],
-			(COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER()) as [c1]
+			(COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER()) as [percents]
 		FROM
 			[Child] [g_1]
 				LEFT JOIN [Parent] [a_Parent] ON [g_1].[ParentID] = [a_Parent].[ParentID]
