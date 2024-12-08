@@ -2,7 +2,7 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"x_2"."c1",
+	"x_2"."Id",
 	"x_2"."StatusName"
 FROM
 	(
@@ -14,7 +14,7 @@ FROM
 			CASE
 				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."PersonID"
 				ELSE "x_1"."PersonID_1"
-			END as "c1"
+			END as "Id"
 		FROM
 			(
 				SELECT

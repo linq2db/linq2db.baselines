@@ -3,8 +3,8 @@
 
 SELECT
 	CAST(0 AS Int),
-	"t1"."cond",
-	"t1"."cond",
+	"t1"."ParentID",
+	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
 	(
@@ -16,7 +16,7 @@ FROM
 					"Child" "a_Children"
 				WHERE
 					"p"."ParentID" = "a_Children"."ParentID"
-			) as "cond",
+			) as "ParentID",
 			(
 				SELECT FIRST 1
 					"a_Children_1"."ChildID"

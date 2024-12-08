@@ -50,54 +50,54 @@ SELECT
 		FROM
 			(
 				SELECT
-					DateAdd(Day, "t_1"."Value", LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 2, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, "t_1"."Value", LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 				FROM
 					"SampleClass" "t_1"
 				WHERE
 					"t_1"."Value" = 1
 				UNION
 				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
 				FROM rdb$database
 			) "t1"
 	),
 	(
 		SELECT FIRST 1
-			"t2"."c1"
+			"t2"."Value1"
 		FROM
 			(
 				SELECT
-					DateAdd(Day, "t_2"."Value", LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 2, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, "t_2"."Value", LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 				FROM
 					"SampleClass" "t_2"
 				WHERE
 					"t_2"."Value" = 1
 				UNION
 				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
 				FROM rdb$database
 			) "t2"
 	),
 	(
 		SELECT FIRST 1
-			"t3"."c2"
+			"t3"."Value2"
 		FROM
 			(
 				SELECT
-					DateAdd(Day, "t_3"."Value", LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 2, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, "t_3"."Value", LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 2, LOCALTIMESTAMP) as "Value2"
 				FROM
 					"SampleClass" "t_3"
 				WHERE
 					"t_3"."Value" = 1
 				UNION
 				SELECT
-					DateAdd(Day, 3, LOCALTIMESTAMP) as "c1",
-					DateAdd(Day, 4, LOCALTIMESTAMP) as "c2"
+					DateAdd(Day, 3, LOCALTIMESTAMP) as "Value1",
+					DateAdd(Day, 4, LOCALTIMESTAMP) as "Value2"
 				FROM rdb$database
 			) "t3"
 	)

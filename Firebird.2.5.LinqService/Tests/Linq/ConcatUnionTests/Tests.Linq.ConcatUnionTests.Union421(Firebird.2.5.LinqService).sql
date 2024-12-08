@@ -6,20 +6,20 @@ SELECT
 FROM
 	(
 		SELECT
-			"p"."ParentID",
+			"p"."ParentID" as "id",
 			CAST('1' AS CHAR(1)) as "val"
 		FROM
 			"Parent" "p"
 		UNION
 		SELECT
-			"p_1"."ParentID",
+			"p_1"."ParentID" as "id",
 			CAST('0' AS CHAR(1)) as "val"
 		FROM
 			"Parent" "p_1"
 		UNION
 		SELECT
-			"ch"."ParentID",
-			CAST('0' AS CHAR(1)) as "c1"
+			"ch"."ParentID" as "id",
+			CAST('0' AS CHAR(1)) as "val"
 		FROM
 			"Child" "ch"
 	) "p_2"
