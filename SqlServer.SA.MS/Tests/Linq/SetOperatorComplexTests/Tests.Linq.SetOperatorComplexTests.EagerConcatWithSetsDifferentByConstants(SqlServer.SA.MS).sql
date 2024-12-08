@@ -198,16 +198,16 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t3].[c1],
-	IIF([t3].[c1] = N'Roman', 1, 0),
+	[t3].[BookType],
+	IIF([t3].[BookType] = N'Roman', 1, 0),
 	[t3].[BookId],
-	[t3].[c2]
+	[t3].[c1]
 FROM
 	(
 		SELECT
-			CAST(N'Roman' AS NVarChar(4000)) as [c1],
+			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
 			[a_Book].[BookId],
-			NULL as [c2]
+			NULL as [c1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -216,9 +216,9 @@ FROM
 			[a_Book].[Discriminator] = N'Roman'
 		UNION ALL
 		SELECT
-			CAST(N'Novel' AS NVarChar(4000)) as [c1],
+			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
 			NULL as [BookId],
-			[a_Book_1].[BookId] as [c2]
+			[a_Book_1].[BookId] as [c1]
 		FROM
 			[Author] [t2]
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
