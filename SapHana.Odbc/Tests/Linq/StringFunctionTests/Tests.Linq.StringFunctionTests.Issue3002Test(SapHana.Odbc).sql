@@ -47,8 +47,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
@@ -69,8 +69,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
@@ -83,8 +83,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
@@ -105,8 +105,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
@@ -119,8 +119,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 
@@ -141,8 +141,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 
