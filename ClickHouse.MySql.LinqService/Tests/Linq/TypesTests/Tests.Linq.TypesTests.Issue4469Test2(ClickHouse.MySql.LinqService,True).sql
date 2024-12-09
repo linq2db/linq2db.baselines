@@ -33,16 +33,5 @@ VALUES
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-SELECT
-	toDecimal128(toFloat64(toDecimal128(v.Integer, 10)) / 33, 10),
-	toDecimal128(toFloat64(v.Decimal) / toFloat64(toDecimal128('33', 5)), 5),
-	v.Double / toFloat64(toDecimal128('33', 10))
-FROM
-	Issue4469Table v
-LIMIT 2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Issue4469Table
 
