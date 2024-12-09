@@ -4,10 +4,6 @@ DECLARE @personId Integer -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Integer -- Int32
 SET     @personId_1 = 2
-DECLARE @personId_2 Integer -- Int32
-SET     @personId_2 = 2
-DECLARE @personId_3 Integer -- Int32
-SET     @personId_3 = 0
 
 SELECT
 	IIF(COUNT(*) > 0, True, False)
@@ -34,13 +30,13 @@ FROM
 		FROM
 			[Patient] [t5]
 		WHERE
-			[t5].[PersonID] = @personId_2 AND [t5].[PersonID] NOT IN (
+			[t5].[PersonID] = @personId_1 AND [t5].[PersonID] NOT IN (
 				SELECT
 					[t6].[PersonID]
 				FROM
 					[Patient] [t6]
 				WHERE
-					[t6].[PersonID] = @personId_3
+					[t6].[PersonID] = @personId
 			)
 	) [t7]
 WHERE
