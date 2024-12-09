@@ -46,7 +46,7 @@ FROM
 			InsertIssueTest t1
 				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
-			1 = 0
+			t1.ID = toInt16(0)
 	) t2
 
 BeforeExecute

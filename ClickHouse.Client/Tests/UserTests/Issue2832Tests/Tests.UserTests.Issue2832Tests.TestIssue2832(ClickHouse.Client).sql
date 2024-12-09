@@ -1,14 +1,14 @@
-﻿(170483) SELECT 
-	t170483.Id = t170482.Id
-FROM [DctSetpointtype(170482)] as t170482 (spt)
+﻿(170516) SELECT 
+	t170516.Id = t170515.Id
+FROM [DctSetpointtype(170515)] as t170515 (spt)
 		LEFT JOIN (
-			(170520) SELECT 
-				t170520.SetpointtypeId        = t170515.SetpointtypeId,
-				t170520.Permission            = t170490.Permission?,
-				t170520.Inheritablepermission = t170495.Inheritablepermission?
-			FROM [VWellTree(170485)] as t170485 (t2)
-					INNER JOIN [DctOu(170487)] as t170487 (tp2) ON ({t170485.ShopId?}? = {t170487.Id})
-					LEFT JOIN [UacUsersDatagroup(170490)] as t170490 (cudg) ON ({t170487.Id} = {t170490.DatagroupId} AND {t170490.UserId} = 150)
-					LEFT JOIN [UacUsersDatagroup(170495)] as t170495 (oudg) ON ({t170487.ParentId?}? = {t170495.DatagroupId} AND {t170495.UserId} = 150 AND {t170495.Inheritablepermission} > 0)
-					INNER JOIN [Deviation(170515)] as t170515 (d) ON ({t170485.WellId?}? = {t170515.WellId})
-		) as t170520 (t1) ON ({t170520.SetpointtypeId?} = {t170482.Id} AND {UTILS.GREATESTNOTNULL3(CAST(t170520.Permission AS (System.Nullable`1[System.Decimal], Decimal128, "29", "10")), CAST(t170520.Inheritablepermission AS (System.Nullable`1[System.Decimal], Decimal128, "29", "10")), NULL)?}? IS NOT NULL)
+			(170553) SELECT 
+				t170553.SetpointtypeId        = t170548.SetpointtypeId,
+				t170553.Permission            = t170523.Permission?,
+				t170553.Inheritablepermission = t170528.Inheritablepermission?
+			FROM [VWellTree(170518)] as t170518 (t2)
+					INNER JOIN [DctOu(170520)] as t170520 (tp2) ON ({t170518.ShopId?}? = {t170520.Id})
+					LEFT JOIN [UacUsersDatagroup(170523)] as t170523 (cudg) ON ({t170520.Id} = {t170523.DatagroupId} AND {t170523.UserId} = 150)
+					LEFT JOIN [UacUsersDatagroup(170528)] as t170528 (oudg) ON ({t170520.ParentId?}? = {t170528.DatagroupId} AND {t170528.UserId} = 150 AND {t170528.Inheritablepermission} > 0)
+					INNER JOIN [Deviation(170548)] as t170548 (d) ON ({t170518.WellId?}? = {t170548.WellId})
+		) as t170553 (t1) ON ({t170553.SetpointtypeId?} = {t170515.Id} AND {UTILS.GREATESTNOTNULL3(CAST(t170553.Permission AS (System.Nullable`1[System.Decimal], Decimal128, "29", "10")), CAST(t170553.Inheritablepermission AS (System.Nullable`1[System.Decimal], Decimal128, "29", "10")), NULL)?}? IS NOT NULL)
