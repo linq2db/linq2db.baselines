@@ -2,10 +2,6 @@
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
-DECLARE @personId_1 Integer -- Int32
-SET     @personId_1 = 1
-DECLARE @personId_2 Integer -- Int32
-SET     @personId_2 = 1
 
 SELECT
 	[p].[FirstName],
@@ -21,17 +17,15 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1 AND
-	[p].[PersonID] = @personId_2
+	[p].[PersonID] = @personId AND [p].[PersonID] = @personId AND
+	[p].[PersonID] = @personId
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32
-SET     @personId_1 = 1
-DECLARE @personId_2 Integer -- Int32
-SET     @personId_2 = 2
+SET     @personId_1 = 2
 
 SELECT
 	[p].[FirstName],
@@ -47,6 +41,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1 AND
-	[p].[PersonID] = @personId_2
+	[p].[PersonID] = @personId AND [p].[PersonID] = @personId AND
+	[p].[PersonID] = @personId_1
 

@@ -13,8 +13,6 @@ CREATE TABLE IF NOT EXISTS DateTimeTestTable
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @input Timestamp(16) -- DateTime
-SET     @input = TO_DATE('2134-05-21 13:45:43.12345', '%Y-%m-%d %H:%M:%S.%F5')
 
 INSERT INTO DateTimeTestTable
 (
@@ -22,7 +20,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Minute to fraction(3)
+	TO_DATE('2134-05-21 13:45:43.12345', '%Y-%m-%d %H:%M:%S.%F5')
 )
 
 BeforeExecute

@@ -10,13 +10,13 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
-				SELECT NULL [X] WHERE 1 = 0
+				SELECT NULL [X], NULL [Y] WHERE 1 = 0
 				UNION ALL
 				VALUES
-					(-10)
+					(-10,10)
 				) [t]
 		WHERE
 			[x].[position].x > [t].[X]

@@ -135,6 +135,7 @@ SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
 	`d`.`CHAIN_ID`,
+	`a_Chain`.`CHAIN_ID`,
 	`a_Chain`.`CHAIN_ID`
 FROM
 	`PUMPLINES` `m_1`
@@ -149,6 +150,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
+	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`
 FROM
 	`PUMPLINES` `t1`

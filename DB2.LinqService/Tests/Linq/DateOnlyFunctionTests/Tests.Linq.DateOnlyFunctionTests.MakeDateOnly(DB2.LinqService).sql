@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	CAST('2010-' || LPad("t".ID, 2, '0') || '-01' AS Date)
 FROM
-	(
-		SELECT
-			CAST('2010-' || LPad("p".ID, 2, '0') || '-01' AS Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Extract(year from "t"."c1") = 2010
+	Extract(year from CAST('2010-' || LPad("t".ID, 2, '0') || '-01' AS Date)) = 2010
 

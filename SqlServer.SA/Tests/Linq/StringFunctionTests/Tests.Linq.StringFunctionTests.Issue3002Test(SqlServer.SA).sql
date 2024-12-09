@@ -48,15 +48,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
@@ -65,8 +65,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
@@ -79,15 +79,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
@@ -96,8 +96,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
@@ -110,15 +110,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
 SELECT
 	IIF(EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
@@ -127,8 +127,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 

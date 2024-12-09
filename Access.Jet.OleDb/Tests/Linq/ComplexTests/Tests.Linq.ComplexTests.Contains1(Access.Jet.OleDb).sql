@@ -3,7 +3,6 @@
 
 SELECT
 	[p].[ParentID],
-	IIF([gc3_1].[ParentID] IS NOT NULL AND [gc3_1].[ChildID] IS NOT NULL AND [gc3_1].[GrandChildID] IS NOT NULL, True, False),
 	[gc3_1].[ParentID],
 	[gc3_1].[ChildID],
 	[gc3_1].[GrandChildID]

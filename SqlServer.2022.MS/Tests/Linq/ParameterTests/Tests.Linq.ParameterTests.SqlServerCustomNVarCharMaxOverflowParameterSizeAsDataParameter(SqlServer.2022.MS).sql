@@ -41,6 +41,21 @@ FROM
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+DECLARE @p NVarChar(5000) -- String
+SET     @p = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'
+-- value above truncated for logging
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[NVarChar] = @p
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

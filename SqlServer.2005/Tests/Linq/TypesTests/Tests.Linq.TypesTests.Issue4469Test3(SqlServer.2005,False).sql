@@ -30,7 +30,7 @@ BeforeExecute
 -- SqlServer.2005
 DECLARE @param Int -- Int32
 SET     @param = 33
-DECLARE @param_1 Decimal(2, 0)
+DECLARE @param_1 Decimal
 SET     @param_1 = 33
 DECLARE @param_2 Float -- Double
 SET     @param_2 = 33

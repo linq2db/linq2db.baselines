@@ -261,6 +261,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
 
@@ -272,7 +274,7 @@ SET
 			(UpdatedEntities.Value1 * t2.Value1) * 11
 		FROM
 			(
-				SELECT FIRST 2
+				SELECT FIRST @take
 					t_1.Value1,
 					c_2.id
 				FROM
@@ -289,7 +291,7 @@ SET
 			(UpdatedEntities.Value2 * t3.Value2) * 22
 		FROM
 			(
-				SELECT FIRST 2
+				SELECT FIRST @take
 					t_2.Value2,
 					c_3.id
 				FROM
@@ -306,7 +308,7 @@ SET
 			(UpdatedEntities.Value3 * t4.Value3) * 33
 		FROM
 			(
-				SELECT FIRST 2
+				SELECT FIRST @take
 					t_3.Value3,
 					c_4.id
 				FROM
@@ -321,10 +323,10 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
-				SELECT FIRST 2
+				SELECT FIRST @take
 					c_1.id
 				FROM
 					UpdatedEntities c_1

@@ -2,8 +2,9 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[PersonID],
 	[t1].[Gender],
+	[t1].[PersonID],
+	[t1].[LastName],
 	[t1].[FirstName]
 FROM
 	[Person] [t1]
@@ -15,10 +16,10 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[PersonID],
 	[t1].[Gender],
-	[t1].[FirstName],
-	[t1].[LastName]
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[FirstName]
 FROM
 	[Person] [t1]
 WHERE

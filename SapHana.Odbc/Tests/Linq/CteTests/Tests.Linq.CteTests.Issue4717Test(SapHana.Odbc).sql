@@ -249,7 +249,7 @@ AS
 )
 SELECT
 	"source"."ProductId",
-	"t1"."StockOnHand",
+	"t1"."cond",
 	(
 		SELECT
 			SUM("wp_1"."StockOnHand")
@@ -263,7 +263,7 @@ FROM
 		INNER JOIN "Issue4717ProductIncludedProductMapping" "includedProductMapping" ON "source"."ProductId" = "includedProductMapping"."ProductId"
 		LEFT JOIN LATERAL (
 			SELECT
-				"wp"."StockOnHand"
+				"wp"."StockOnHand" as "cond"
 			FROM
 				"Issue4717WarehouseProductMapping" "wp"
 			WHERE

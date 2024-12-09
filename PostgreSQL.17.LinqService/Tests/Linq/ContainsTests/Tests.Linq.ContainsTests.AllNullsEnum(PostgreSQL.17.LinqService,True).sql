@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS "Src"
 (
 	"Id"    Int         NOT NULL,
 	"Int"   Int             NULL,
-	"Enum"  text            NULL,
+	"Enum"  VarChar(5)      NULL,
 	"CEnum" VarChar(20)     NULL
 )
 
@@ -20,7 +20,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int Integer -- Int32
 SET     @Int = NULL
-DECLARE @Enum Text -- String
+DECLARE @Enum Varchar -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar -- String
 SET     @CEnum = NULL
@@ -46,7 +46,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int Integer -- Int32
 SET     @Int = 2
-DECLARE @Enum Text(3) -- String
+DECLARE @Enum Varchar(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar(12) -- String
 SET     @CEnum = '___Value2___'

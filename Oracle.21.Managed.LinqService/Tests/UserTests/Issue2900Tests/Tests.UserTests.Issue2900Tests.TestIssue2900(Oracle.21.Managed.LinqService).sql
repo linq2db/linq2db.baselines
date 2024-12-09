@@ -130,17 +130,17 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."HasValue",
-	t1."Value_1"
+	t1."cond_1",
+	t1."cond"
 FROM
 	"Request" a
 		OUTER APPLY (
 			SELECT
-				a_Metrics."Value" as "Value_1",
+				a_Metrics."Value" as "cond",
 				CASE
 					WHEN a_Metrics."Value" IS NOT NULL THEN 1
 					ELSE 0
-				END as "HasValue"
+				END as "cond_1"
 			FROM
 				"Metric" a_Metrics
 			WHERE

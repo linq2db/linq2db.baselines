@@ -47,8 +47,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -56,7 +56,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
@@ -68,8 +68,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -82,8 +82,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -91,7 +91,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
@@ -103,8 +103,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -117,8 +117,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 
@@ -126,7 +126,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
@@ -138,8 +138,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 

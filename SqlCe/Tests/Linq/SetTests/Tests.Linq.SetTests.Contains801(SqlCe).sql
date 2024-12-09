@@ -2,6 +2,7 @@
 -- SqlCe
 
 SELECT
+	2 as [ParentID],
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

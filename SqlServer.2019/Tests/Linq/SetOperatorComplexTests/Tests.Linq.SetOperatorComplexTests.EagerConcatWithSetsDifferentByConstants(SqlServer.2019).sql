@@ -120,7 +120,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					CAST(N'Roman' AS NVarChar(4000)) as [cond],
 					[a_Book].[BookId]
 				FROM
 					[Author] [t1]
@@ -130,7 +130,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					CAST(N'Novel' AS NVarChar(4000)) as [cond],
 					NULL as [BookId]
 				FROM
 					[Author] [t2]
@@ -140,7 +140,7 @@ FROM
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Roman'
+			[t3].[cond] = N'Roman'
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
@@ -159,7 +159,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					CAST(N'Roman' AS NVarChar(4000)) as [cond],
 					NULL as [c1]
 				FROM
 					[Author] [t1]
@@ -169,7 +169,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					CAST(N'Novel' AS NVarChar(4000)) as [cond],
 					[a_Book_1].[BookId] as [c1]
 				FROM
 					[Author] [t2]
@@ -179,7 +179,7 @@ FROM
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Novel'
+			[t3].[cond] = N'Novel'
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
@@ -198,26 +198,34 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	CAST(N'Roman' AS NVarChar(4000)),
-	[a_Book].[BookId],
-	NULL
+	[t3].[BookType],
+	IIF([t3].[BookType] = N'Roman', 1, 0),
+	[t3].[BookId],
+	[t3].[c1]
 FROM
-	[Author] [t1]
-		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
-WHERE
-	[a_Book].[Discriminator] = N'Roman'
-UNION ALL
-SELECT
-	CAST(N'Novel' AS NVarChar(4000)),
-	NULL,
-	[a_Book_1].[BookId]
-FROM
-	[Author] [t2]
-		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
-WHERE
-	[a_Book_1].[Discriminator] = N'Novel'
+	(
+		SELECT
+			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+			[a_Book].[BookId],
+			NULL as [c1]
+		FROM
+			[Author] [t1]
+				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
+				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		WHERE
+			[a_Book].[Discriminator] = N'Roman'
+		UNION ALL
+		SELECT
+			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+			NULL as [BookId],
+			[a_Book_1].[BookId] as [c1]
+		FROM
+			[Author] [t2]
+				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
+				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+		WHERE
+			[a_Book_1].[Discriminator] = N'Novel'
+	) [t3]
 
 BeforeExecute
 BeginTransaction(RepeatableRead)

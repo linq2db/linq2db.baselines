@@ -16,9 +16,9 @@ CREATE TABLE [Table1]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
-DECLARE @ID2  -- Int32
+DECLARE @ID2 Int -- Int32
 SET     @ID2 = 1
 
 INSERT INTO [Table1]
@@ -34,9 +34,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
-DECLARE @ID2  -- Int32
+DECLARE @ID2 Int -- Int32
 SET     @ID2 = 2
 
 INSERT INTO [Table1]
@@ -68,9 +68,9 @@ CREATE TABLE [Table2]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
-DECLARE @ID3  -- Int32
+DECLARE @ID3 Int -- Int32
 SET     @ID3 = 1
 
 INSERT INTO [Table2]
@@ -101,7 +101,7 @@ CREATE TABLE [Table3]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 INSERT INTO [Table3]
@@ -131,9 +131,9 @@ CREATE TABLE [Table4]
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
-DECLARE @ID3  -- Int32
+DECLARE @ID3 Int -- Int32
 SET     @ID3 = 1
 
 INSERT INTO [Table4]
@@ -149,9 +149,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 2
-DECLARE @ID3  -- Int32
+DECLARE @ID3 Int -- Int32
 SET     @ID3 = NULL
 
 INSERT INTO [Table4]
@@ -171,7 +171,6 @@ BeforeExecute
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],
-	IIF([a_Table2].[ID] IS NOT NULL AND [a_Table3].[ID] IS NOT NULL, True, False),
 	[a_Table3].[ID]
 FROM
 	([Table1] [r]
@@ -180,7 +179,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Table4] [id]
 		WHERE

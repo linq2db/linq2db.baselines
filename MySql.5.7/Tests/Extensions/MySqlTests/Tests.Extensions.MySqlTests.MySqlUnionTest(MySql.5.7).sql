@@ -28,7 +28,7 @@ UNION
 		`Parent` `t1`
 			CROSS JOIN (
 				SELECT
-					1 as `c1`
+					*
 				FROM
 					`Child` `c_1`
 				FOR UPDATE

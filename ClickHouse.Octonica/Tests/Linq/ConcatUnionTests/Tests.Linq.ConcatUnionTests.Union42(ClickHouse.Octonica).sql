@@ -7,13 +7,13 @@ FROM
 	(
 		SELECT
 			p.ParentID as id,
-			true as val
+			toBool(true) as val
 		FROM
 			Parent p
 		UNION DISTINCT
 		SELECT
 			ch.ParentID as id,
-			false as val
+			toBool(false) as val
 		FROM
 			Child ch
 	) p_1

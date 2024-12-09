@@ -39,8 +39,24 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset TimestampTz -- DateTime
+SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+
+INSERT INTO "Issue1855Table"
+(
+	"Id",
+	"SomeDateTimeOffset"
+)
+VALUES
+(
+	:Id,
+	:SomeDateTimeOffset
+)
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @interval Integer -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn TimestampTz -- DateTime
@@ -53,7 +69,7 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."Id" = :id AND r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn
+	r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

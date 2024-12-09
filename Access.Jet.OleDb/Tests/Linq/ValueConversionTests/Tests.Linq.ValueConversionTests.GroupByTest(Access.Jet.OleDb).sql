@@ -528,8 +528,6 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @testedList VarWChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
-DECLARE @testedList_1 VarWChar(20) -- String
-SET     @testedList_1 = '[{"Value":"Value1"}]'
 
 SELECT
 	[m_1].[Id],
@@ -546,7 +544,7 @@ SELECT
 FROM
 	[ValueConversion] [m_1]
 WHERE
-	@testedList = [m_1].[Value2] AND @testedList_1 = [m_1].[Value2]
+	@testedList = [m_1].[Value2] AND @testedList = [m_1].[Value2]
 
 BeforeExecute
 DisposeTransaction

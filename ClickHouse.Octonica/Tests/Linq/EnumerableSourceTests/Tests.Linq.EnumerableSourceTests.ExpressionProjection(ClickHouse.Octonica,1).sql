@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	n.FirstName,
-	n.PersonID
+	n.PersonID,
+	n.FirstName
 FROM
 	Person t1
 		INNER JOIN (
-			SELECT 'Janet' AS FirstName, 2 AS PersonID
+			SELECT 2 AS PersonID, 'Janet' AS FirstName
 			UNION ALL
-			SELECT 'Doe', 3) n ON t1.PersonID = n.PersonID
+			SELECT 3, 'Doe') n ON t1.PersonID = n.PersonID
 ORDER BY
 	n.PersonID
 

@@ -2,14 +2,14 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(((Exp(p."MoneyValue"::Float / 15) - Exp(-(p."MoneyValue"::Float / 15))) / 2) * 15) as c1
+			Floor(((Exp(p."MoneyValue"::Float / 15) - Exp(-(p."MoneyValue"::Float / 15))) / 2) * 15) as "Value_1"
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t.c1 <> 0.10000000000000001
+	t."Value_1" <> 0.10000000000000001
 

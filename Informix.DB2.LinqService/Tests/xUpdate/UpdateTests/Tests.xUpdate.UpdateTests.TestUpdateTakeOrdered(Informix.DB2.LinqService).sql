@@ -180,6 +180,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 UPDATE
 	Parent
@@ -188,10 +190,10 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
-				SELECT FIRST 5
+				SELECT FIRST @take
 					x.ParentID,
 					x.Value1
 				FROM

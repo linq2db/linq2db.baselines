@@ -2,14 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t.c1
+	Trunc((-t."MoneyValue"), 0)
 FROM
-	(
-		SELECT
-			Trunc((-p."MoneyValue"), 0)::Float as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	t.c1 <> 0.10000000000000001
+	Trunc((-t."MoneyValue"), 0)::Float <> 0.10000000000000001
 

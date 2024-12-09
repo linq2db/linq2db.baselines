@@ -319,7 +319,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"UpdatedEntities" "c_1"
 				INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"

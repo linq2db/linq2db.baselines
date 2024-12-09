@@ -8,10 +8,6 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Insert16'
-DECLARE @idx Int -- Int32
-SET     @idx = 4
 
 INSERT INTO [Person]
 (
@@ -22,7 +18,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	CAST(Len(@name) + @idx AS NVarChar(11)),
+	CAST(Len('Insert16') + 4 AS NVarChar(11)),
 	'M'
 )
 

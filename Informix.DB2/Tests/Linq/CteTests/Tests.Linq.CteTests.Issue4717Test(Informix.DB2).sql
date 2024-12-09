@@ -157,8 +157,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @productId Integer(4) -- Int32
-SET     @productId = 1
 
 INSERT INTO Issue4717Product
 (
@@ -169,7 +167,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@productId::Int,
+	1,
 	'123-SKU',
 	'Test 123 Sku',
 	1
@@ -177,8 +175,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @includedProductId Integer(4) -- Int32
-SET     @includedProductId = 2
 
 INSERT INTO Issue4717Product
 (
@@ -189,7 +185,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@includedProductId::Int,
+	2,
 	'ABC-SKU',
 	'Test ABC Sku',
 	1
@@ -197,10 +193,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @productId Integer(4) -- Int32
-SET     @productId = 1
-DECLARE @includedProductId Integer(4) -- Int32
-SET     @includedProductId = 2
 
 INSERT INTO Issue4717ProductIncludedProductMapping
 (
@@ -210,15 +202,13 @@ INSERT INTO Issue4717ProductIncludedProductMapping
 )
 VALUES
 (
-	@productId::Int,
-	@includedProductId::Int,
+	1,
+	2,
 	10
 )
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @productId Integer(4) -- Int32
-SET     @productId = 1
 
 INSERT INTO Issue4717WarehouseProductMapping
 (
@@ -229,7 +219,7 @@ INSERT INTO Issue4717WarehouseProductMapping
 VALUES
 (
 	1,
-	@productId::Int,
+	1,
 	10
 )
 
@@ -249,7 +239,7 @@ AS
 )
 SELECT
 	source.ProductId,
-	t1.StockOnHand,
+	t1.cond,
 	(
 		SELECT
 			SUM(wp_1.StockOnHand)
@@ -263,7 +253,7 @@ FROM
 		INNER JOIN Issue4717ProductIncludedProductMapping includedProductMapping ON source.ProductId = includedProductMapping.ProductId
 		LEFT JOIN (
 			SELECT
-				wp.StockOnHand,
+				wp.StockOnHand as cond,
 				ROW_NUMBER() OVER (PARTITION BY wp.WarehouseId ORDER BY wp.WarehouseId) as rn,
 				wp.WarehouseId
 			FROM

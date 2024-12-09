@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			Person t1
 				LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID

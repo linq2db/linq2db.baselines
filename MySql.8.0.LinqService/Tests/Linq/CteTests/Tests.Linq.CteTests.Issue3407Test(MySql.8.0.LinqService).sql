@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `CTE_1` (`unused`)
+WITH `CTE_1` (`c1`)
 AS
 (
 	SELECT

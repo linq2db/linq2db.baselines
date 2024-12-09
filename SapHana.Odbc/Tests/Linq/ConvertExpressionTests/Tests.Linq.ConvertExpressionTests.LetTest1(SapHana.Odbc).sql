@@ -2,12 +2,12 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ParentID"
+	"t1"."cond"
 FROM
 	"Parent" "p"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Children"."ParentID"
+				"a_Children"."ParentID" as "cond"
 			FROM
 				"Child" "a_Children"
 			WHERE
@@ -15,5 +15,5 @@ FROM
 			LIMIT 1
 		) "t1" ON 1=1
 WHERE
-	"t1"."ParentID" IS NOT NULL
+	"t1"."cond" IS NOT NULL
 

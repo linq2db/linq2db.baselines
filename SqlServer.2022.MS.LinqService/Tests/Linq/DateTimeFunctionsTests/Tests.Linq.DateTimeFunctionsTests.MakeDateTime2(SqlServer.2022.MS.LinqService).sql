@@ -2,14 +2,9 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t].[c1]
+	DATETIMEFROMPARTS(2010, [t].[ID], 1, 20, 35, 44, 0)
 FROM
-	(
-		SELECT
-			DATETIMEFROMPARTS(2010, [p].[ID], 1, 20, 35, 44, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, DATETIMEFROMPARTS(2010, [t].[ID], 1, 20, 35, 44, 0)) = 2010
 

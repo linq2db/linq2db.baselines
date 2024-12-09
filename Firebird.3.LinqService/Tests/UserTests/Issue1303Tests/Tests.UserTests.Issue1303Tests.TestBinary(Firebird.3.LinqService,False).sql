@@ -58,8 +58,8 @@ FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
+DECLARE @cond Binary(3)
+SET     @cond = X'010203'
 
 SELECT
 	"t1".ID,
@@ -68,13 +68,13 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array
+	"t1"."Array" = @cond
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
+DECLARE @cond Binary(2)
+SET     @cond = X'0405'
 
 SELECT
 	"t1".ID,
@@ -83,7 +83,7 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary
+	"t1"."Binary" = @cond
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

@@ -2,14 +2,14 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Ceiling(`p`.`MoneyValue`) as `c1`
+			Ceiling(`p`.`MoneyValue`) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0
+	`t`.`Value_1` <> 0
 

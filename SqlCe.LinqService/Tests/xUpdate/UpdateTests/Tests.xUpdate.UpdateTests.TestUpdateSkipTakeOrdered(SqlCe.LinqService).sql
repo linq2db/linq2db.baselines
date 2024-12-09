@@ -192,7 +192,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT
@@ -214,7 +214,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[Value1]
+	[r].[Value1] as [Value_1]
 FROM
 	[Parent] [r]
 WHERE

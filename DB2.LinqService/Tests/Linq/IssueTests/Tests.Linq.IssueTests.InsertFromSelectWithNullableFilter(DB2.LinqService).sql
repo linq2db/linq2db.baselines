@@ -1,36 +1,106 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "InsertIssueTest"
+		(
+			ID            SmallInt NOT NULL,
+			"intDataType" Int          NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
 DECLARE @ID SmallInt(2) -- Int16
 SET     @ID = 0
+DECLARE @intDataType Integer(4) -- Int32
+SET     @intDataType = 0
 
-INSERT INTO ALLTYPES
+INSERT INTO "InsertIssueTest"
 (
-	SMALLINTDATATYPE,
-	INTDATATYPE
+	ID,
+	"intDataType"
 )
-SELECT
-	123,
-	"t2".ID
-FROM
-	(
-		SELECT DISTINCT
-			"a_Association".SMALLINTDATATYPE as ID
-		FROM
-			ALLTYPES "t1"
-				INNER JOIN ALLTYPES "a_Association" ON "t1".SMALLINTDATATYPE = "a_Association".INTDATATYPE
-		WHERE
-			"t1".SMALLINTDATATYPE = @ID
-	) "t2"
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID SmallInt(2) -- Int16
+SET     @ID = 0
+DECLARE @intDataType Integer(4) -- Int32
+SET     @intDataType = 0
+
+INSERT INTO "InsertIssueTest"
+(
+	ID,
+	"intDataType"
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID SmallInt(2) -- Int16
 SET     @ID = 1234
+DECLARE @intDataType Integer(4) -- Int32
+SET     @intDataType = 1234
 
-INSERT INTO ALLTYPES
+INSERT INTO "InsertIssueTest"
 (
-	SMALLINTDATATYPE,
-	INTDATATYPE
+	ID,
+	"intDataType"
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @ID SmallInt(2) -- Int16
+SET     @ID = 1234
+DECLARE @intDataType Integer(4) -- Int32
+SET     @intDataType = 1234
+
+INSERT INTO "InsertIssueTest"
+(
+	ID,
+	"intDataType"
+)
+VALUES
+(
+	@ID,
+	@intDataType
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+DECLARE @cond SmallInt(2) -- Int16
+SET     @cond = 0
+
+INSERT INTO "InsertIssueTest"
+(
+	ID,
+	"intDataType"
 )
 SELECT
 	123,
@@ -38,11 +108,19 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Association".SMALLINTDATATYPE as ID
+			"a_Association".ID
 		FROM
-			ALLTYPES "t1"
-				INNER JOIN ALLTYPES "a_Association" ON "t1".SMALLINTDATATYPE = "a_Association".INTDATATYPE
+			"InsertIssueTest" "t1"
+				INNER JOIN "InsertIssueTest" "a_Association" ON "t1".ID = "a_Association"."intDataType"
 		WHERE
-			"t1".SMALLINTDATATYPE = @ID
+			"t1".ID = @cond
 	) "t2"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
+END
 

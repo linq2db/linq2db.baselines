@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN LATERAL (VALUES
-			(p."FirstName",1,'Janet'), (NULL,2,'Doe')
-		) n("FirstName", "PersonID", "LastName") ON p."LastName" = n."LastName"
+			(1,'Janet',p."FirstName"), (2,'Doe',NULL)
+		) n("PersonID", "LastName", "FirstName") ON p."LastName" = n."LastName"
 

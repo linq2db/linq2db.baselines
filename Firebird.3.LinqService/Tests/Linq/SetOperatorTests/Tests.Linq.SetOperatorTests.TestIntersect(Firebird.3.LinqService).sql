@@ -317,7 +317,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"SampleData" "t_2"
 		WHERE

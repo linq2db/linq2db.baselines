@@ -1,0 +1,33 @@
+﻿BeforeExecute
+-- Access.Jet.OleDb AccessOleDb
+
+DROP TABLE [Table1]
+
+BeforeExecute
+-- Access.Jet.OleDb AccessOleDb
+
+CREATE TABLE [Table1]
+(
+	[Field1] Int       NOT NULL IDENTITY,
+	[Foeld2] NChar(1)      NULL,
+
+	CONSTRAINT [PK_Table1] PRIMARY KEY CLUSTERED ([Field1])
+)
+
+BeforeExecute
+-- Access.Jet.OleDb AccessOleDb
+
+SELECT
+	[current_1].[Field1],
+	[previous].[Field1]
+FROM
+	[Table1] [current_1],
+	[Table1] [previous]
+WHERE
+	[current_1].[Foeld2] = [previous].[Foeld2] OR [current_1].[Foeld2] IS NULL AND [previous].[Foeld2] IS NULL
+
+BeforeExecute
+-- Access.Jet.OleDb AccessOleDb
+
+DROP TABLE [Table1]
+

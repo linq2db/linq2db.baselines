@@ -63,8 +63,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Test
+DECLARE @test NVarchar2(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -72,7 +72,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
@@ -85,8 +85,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Test
+DECLARE @test NVarchar2(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -99,8 +99,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Value
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -108,7 +108,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
@@ -121,8 +121,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Value
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -135,8 +135,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Class
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Class%'
 
@@ -144,7 +144,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				1
+				*
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
@@ -157,8 +157,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Class
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Class%'
 

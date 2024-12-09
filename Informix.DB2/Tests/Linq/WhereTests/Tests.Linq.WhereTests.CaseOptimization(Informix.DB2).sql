@@ -41,7 +41,7 @@ SELECT
 FROM
 	WhereWithString x
 WHERE
-	x.StringValue LIKE '%Str%' ESCAPE '~'
+	x.StringValue LIKE '%Str%' ESCAPE '~' AND x.StringValue IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

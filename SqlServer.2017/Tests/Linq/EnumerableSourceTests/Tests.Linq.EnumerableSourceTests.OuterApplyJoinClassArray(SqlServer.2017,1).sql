@@ -11,11 +11,11 @@ FROM
 	[Person] [p]
 		OUTER APPLY (
 			SELECT
-				1 as [c1]
+				*
 			FROM
 				(VALUES
-					([p].[FirstName],1,N'Janet'), (NULL,2,N'Doe')
-				) [n]([FirstName], [PersonID], [LastName])
+					(1,N'Janet',[p].[FirstName]), (2,N'Doe',NULL)
+				) [n]([PersonID], [LastName], [FirstName])
 			WHERE
 				[p].[LastName] = [n].[LastName]
 		) [n_1]

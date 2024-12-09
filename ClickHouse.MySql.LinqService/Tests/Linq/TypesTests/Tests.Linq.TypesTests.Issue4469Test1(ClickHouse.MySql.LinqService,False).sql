@@ -35,7 +35,7 @@ BeforeExecute
 
 SELECT
 	v.Integer / 33,
-	toDecimal128(toFloat64(v.Decimal) / 33, toUInt8(5)),
+	toDecimal128(toFloat64(v.Decimal) / 33, 5),
 	v.Double / 33
 FROM
 	Issue4469Table v

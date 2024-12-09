@@ -2,14 +2,14 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Floor(Atan(`p`.`MoneyValue` / 15) * 15) as `c1`
+			Floor(Atan(`p`.`MoneyValue` / 15) * 15) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	`t`.`Value_1` <> 0.10000000000000001
 

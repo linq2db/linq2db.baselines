@@ -9,7 +9,7 @@ SET
 			CASE
 				WHEN NOT EXISTS(
 					SELECT
-						1
+						*
 					FROM
 						"Parent" "x_2"
 					WHERE
@@ -35,7 +35,7 @@ SET
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"Parent" "x"
 				INNER JOIN "LinqDataTypes" "a_Table1" ON "x"."ParentID" = "a_Table1".ID

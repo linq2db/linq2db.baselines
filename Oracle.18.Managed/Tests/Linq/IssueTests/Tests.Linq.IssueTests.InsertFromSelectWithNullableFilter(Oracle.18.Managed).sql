@@ -1,11 +1,51 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ID Int16
-SET     @ID = 0
 
-INSERT INTO "AllTypes"
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "InsertIssueTest"
+		(
+			ID            SmallInt NOT NULL,
+			"intDataType" Int          NULL
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+
+INSERT ALL
+	INTO "InsertIssueTest" (ID, "intDataType") VALUES (0,0)
+	INTO "InsertIssueTest" (ID, "intDataType") VALUES (0,0)
+	INTO "InsertIssueTest" (ID, "intDataType") VALUES (1234,1234)
+	INTO "InsertIssueTest" (ID, "intDataType") VALUES (1234,1234)
+SELECT * FROM dual
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @cond Int16
+SET     @cond = 0
+
+INSERT INTO "InsertIssueTest"
 (
-	"smallintDataType",
+	ID,
 	"intDataType"
 )
 SELECT
@@ -14,35 +54,23 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			a_Association."smallintDataType" as ID
+			a_Association.ID
 		FROM
-			"AllTypes" t1
-				INNER JOIN "AllTypes" a_Association ON t1."smallintDataType" = a_Association."intDataType"
+			"InsertIssueTest" t1
+				INNER JOIN "InsertIssueTest" a_Association ON t1.ID = a_Association."intDataType"
 		WHERE
-			CAST(t1."smallintDataType" AS Int) = :ID
+			CAST(t1.ID AS Int) = :cond
 	) t2
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ID Int16
-SET     @ID = 1234
 
-INSERT INTO "AllTypes"
-(
-	"smallintDataType",
-	"intDataType"
-)
-SELECT
-	123,
-	CAST(t2.ID AS Int)
-FROM
-	(
-		SELECT DISTINCT
-			a_Association."smallintDataType" as ID
-		FROM
-			"AllTypes" t1
-				INNER JOIN "AllTypes" a_Association ON t1."smallintDataType" = a_Association."intDataType"
-		WHERE
-			CAST(t1."smallintDataType" AS Int) = :ID
-	) t2
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
 

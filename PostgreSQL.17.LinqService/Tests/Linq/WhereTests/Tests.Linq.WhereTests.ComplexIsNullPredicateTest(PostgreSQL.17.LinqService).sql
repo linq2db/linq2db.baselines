@@ -1,17 +1,131 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
+DROP TABLE IF EXISTS "ComplexPredicate"
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "ComplexPredicate"
+(
+	"Id"    Int  NOT NULL,
+	"Value" text     NULL
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Value Text -- String
+SET     @Value = NULL
+
+INSERT INTO "ComplexPredicate"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	:Id,
+	:Value
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Value Text(5) -- String
+SET     @Value = 'other'
+
+INSERT INTO "ComplexPredicate"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	:Id,
+	:Value
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 3
+DECLARE @Value Text(3) -- String
+SET     @Value = '123'
+
+INSERT INTO "ComplexPredicate"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	:Id,
+	:Value
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 4
+DECLARE @Value Text(4) -- String
+SET     @Value = 'test'
+
+INSERT INTO "ComplexPredicate"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	:Id,
+	:Value
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
+DECLARE @Value Text(1) -- String
+SET     @Value = '1'
+
+INSERT INTO "ComplexPredicate"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	:Id,
+	:Value
+)
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				1
-			FROM
-				"Person" t1
-			WHERE
-				(t1."MiddleName" = '123') = (t1."MiddleName" = '1' OR t1."MiddleName" = 'test' AND (t1."MiddleName" <> '1' OR t1."MiddleName" IS NULL))
-		)
-			THEN True
-		ELSE False
-	END
+	r."Id",
+	r."Value"
+FROM
+	"ComplexPredicate" r
+WHERE
+	(r."Value" = '123') = (r."Value" = '1' OR r."Value" = 'test' AND (r."Value" <> '1' OR r."Value" IS NULL))
+ORDER BY
+	r."Id"
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"ComplexPredicate" t1
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS "ComplexPredicate"
 

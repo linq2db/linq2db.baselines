@@ -2,14 +2,14 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Int(Exp([p].[MoneyValue])) as [c1]
+			Int(Exp([p].[MoneyValue])) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	[t].[Value_1] <> 0.10000000000000001
 

@@ -41,7 +41,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[VEMPLOYEE_SCHDL_PERM] [y]
 		WHERE

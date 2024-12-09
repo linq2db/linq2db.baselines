@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @tt BigInt(8) -- Int64
-SET     @tt = 600000000
 
 INSERT INTO LinqDataTypes
 (
@@ -19,19 +17,8 @@ INSERT INTO LinqDataTypes
 VALUES
 (
 	1001,
-	@tt::BigInt
+	INTERVAL(0 00:01:00.00000) DAY TO FRACTION(5)
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	t.ID,
-	t.BigIntValue
-FROM
-	LinqDataTypes t
-WHERE
-	t.ID = 1001
 
 BeforeExecute
 -- Informix.DB2 Informix

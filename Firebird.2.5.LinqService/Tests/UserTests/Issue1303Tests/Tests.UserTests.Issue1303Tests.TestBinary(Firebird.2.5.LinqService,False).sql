@@ -57,8 +57,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
+DECLARE @cond Binary(3)
+SET     @cond = X'010203'
 
 SELECT FIRST 2
 	"t1".ID,
@@ -67,12 +67,12 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array
+	"t1"."Array" = @cond
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
+DECLARE @cond Binary(2)
+SET     @cond = X'0405'
 
 SELECT FIRST 2
 	"t1".ID,
@@ -81,7 +81,7 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary
+	"t1"."Binary" = @cond
 
 BeforeExecute
 -- Firebird.2.5 Firebird

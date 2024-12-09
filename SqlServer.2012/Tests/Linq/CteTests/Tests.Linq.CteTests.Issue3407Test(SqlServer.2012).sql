@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- SqlServer.2012
 
-WITH [CTE_1] ([unused])
+WITH [CTE_1] ([c1])
 AS
 (
 	SELECT

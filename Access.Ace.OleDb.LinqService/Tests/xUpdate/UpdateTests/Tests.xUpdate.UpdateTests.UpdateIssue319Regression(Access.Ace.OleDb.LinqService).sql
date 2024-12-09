@@ -34,8 +34,6 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 100500
 DECLARE @id Integer -- Int32
 SET     @id = 100500
-DECLARE @id_1 Integer -- Int32
-SET     @id_1 = 100500
 
 UPDATE
 	[Parent] [p]
@@ -48,6 +46,6 @@ WHERE
 		FROM
 			[Parent] [p_1]
 		WHERE
-			[p_1].[ParentID] = @id_1
+			[p_1].[ParentID] = @id
 	) > 0
 

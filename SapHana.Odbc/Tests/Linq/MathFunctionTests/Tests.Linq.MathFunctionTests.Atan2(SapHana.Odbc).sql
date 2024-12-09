@@ -2,14 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Atan2(CAST("p"."MoneyValue" AS Double) / 15, 0) * 15) as "c1"
+			Floor(Atan2(CAST("p"."MoneyValue" AS Double) / 15, 0) * 15) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	"t"."c1" <> 0.10000000000000001
+	"t"."Value_1" <> 0.10000000000000001
 

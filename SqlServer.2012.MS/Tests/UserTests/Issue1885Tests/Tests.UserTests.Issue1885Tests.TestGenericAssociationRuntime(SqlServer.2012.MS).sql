@@ -41,14 +41,14 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[not_null],
+	[t1].[cond],
 	[t1].[Value_1]
 FROM
 	[User] [t]
 		LEFT JOIN (
 			SELECT
 				[a_Data].[Data] as [Value_1],
-				1 as [not_null]
+				1 as [cond]
 			FROM
 				(
 					SELECT 'Testing' AS Data

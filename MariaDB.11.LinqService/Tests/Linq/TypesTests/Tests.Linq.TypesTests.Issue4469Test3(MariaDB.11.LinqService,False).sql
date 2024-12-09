@@ -39,7 +39,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 33
-DECLARE @param_1 NewDecimal(2, 0) -- Decimal
+DECLARE @param_1 NewDecimal -- Decimal
 SET     @param_1 = 33
 DECLARE @param_2 Double
 SET     @param_2 = 33

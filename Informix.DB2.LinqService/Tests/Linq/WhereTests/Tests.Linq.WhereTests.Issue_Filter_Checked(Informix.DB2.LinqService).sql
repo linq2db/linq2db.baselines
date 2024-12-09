@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 1
 
 SELECT
 	t4.Count_1,
@@ -10,8 +12,8 @@ FROM
 			COUNT(*) as Count_1
 		FROM
 			(
-				SELECT FIRST 1
-					1 as c1
+				SELECT FIRST @take
+					*
 				FROM
 					Person t1
 			) a1

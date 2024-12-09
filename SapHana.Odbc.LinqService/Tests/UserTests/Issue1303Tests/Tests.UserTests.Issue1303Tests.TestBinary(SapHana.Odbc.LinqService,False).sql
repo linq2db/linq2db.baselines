@@ -50,8 +50,8 @@ LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array Binary(3)
-SET     @Array = x'010203'
+DECLARE @cond Binary(3)
+SET     @cond = x'010203'
 
 SELECT
 	"t1"."ID",
@@ -65,8 +65,8 @@ LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Binary Binary(2)
-SET     @Binary = x'0405'
+DECLARE @cond Binary(2)
+SET     @cond = x'0405'
 
 SELECT
 	"t1"."ID",

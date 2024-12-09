@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	t.Value_1
 FROM
 	(
 		SELECT
@@ -10,10 +10,10 @@ FROM
 				WHEN p.MoneyValue > 0 THEN 1
 				WHEN p.MoneyValue < 0 THEN -1
 				ELSE 0
-			END as c1
+			END as Value_1
 		FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> 0
+	t.Value_1 <> 0
 

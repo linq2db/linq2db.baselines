@@ -32,7 +32,7 @@ LIMIT 1
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -51,7 +51,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 SELECT
 	[x].[ParentID],
@@ -67,7 +67,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -86,7 +86,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.Classic SQLite
 
 SELECT
 	[x].[ParentID],

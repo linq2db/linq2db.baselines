@@ -89,7 +89,7 @@ WHERE
 	[t].[Bool] = True AND
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[Mixed] [u]
 		WHERE
