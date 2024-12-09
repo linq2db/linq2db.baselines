@@ -55,8 +55,8 @@ VALUES
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Test
+DECLARE @test VarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 VarChar(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -77,8 +77,8 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Test
+DECLARE @test VarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 VarChar(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -91,8 +91,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Value
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -113,8 +113,8 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Value
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -127,8 +127,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Class
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Class%'
 
@@ -149,8 +149,8 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @test VarChar -- String
-SET     @test = Class
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Class%'
 
