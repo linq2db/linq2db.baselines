@@ -48,8 +48,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
@@ -65,8 +65,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
@@ -79,8 +79,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
@@ -96,8 +96,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
@@ -110,8 +110,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
@@ -127,8 +127,8 @@ SELECT
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
