@@ -47,8 +47,8 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Test
+DECLARE @test VarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 VarChar(4) -- String
 SET     @test_1 = 'Test'
 
@@ -68,8 +68,8 @@ SELECT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Test
+DECLARE @test VarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 VarChar(4) -- String
 SET     @test_1 = 'Test'
 
@@ -82,8 +82,8 @@ WHERE
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Value
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Value'
 
@@ -103,8 +103,8 @@ SELECT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Value
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Value'
 
@@ -117,8 +117,8 @@ WHERE
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Class
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Class'
 
@@ -138,8 +138,8 @@ SELECT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @test VarChar -- String
-SET     @test = Class
+DECLARE @test VarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Class'
 
