@@ -39,7 +39,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 33
-DECLARE @param_1 Decimal(2, 0)
+DECLARE @param_1 Decimal
 SET     @param_1 = 33
 DECLARE @param_2  -- Double
 SET     @param_2 = 33
