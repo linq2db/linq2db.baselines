@@ -45,7 +45,7 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @param Integer(4) -- Int32
+DECLARE @param Integer(16) -- Int32
 SET     @param = 33
 DECLARE @param_1 (2, 0) -- Decimal
 SET     @param_1 = 33
