@@ -4,8 +4,6 @@ DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
-DECLARE @id1_1 Integer -- Int32
-SET     @id1_1 = 1
 
 SELECT
 	[t1].[ParentID],
@@ -28,7 +26,7 @@ FROM
 			FROM
 				[Parent] [right_1]
 			WHERE
-				[right_1].[ParentID] <> @id1_1
+				[right_1].[ParentID] <> @id1
 		) [right_2] ON ([right_2].[c1] = [t1].[Value1] OR [right_2].[c1] IS NULL AND [t1].[Value1] IS NULL)
 ORDER BY
 	[t1].[ParentID]
