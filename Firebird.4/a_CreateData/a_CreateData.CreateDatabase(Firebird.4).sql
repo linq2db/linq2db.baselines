@@ -1,7 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
--- SKIP Firebird.2.5 BEGIN
 DROP PACKAGE TEST_PACKAGE1;
 
 BeforeExecute
@@ -23,14 +22,9 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 DROP FUNCTION TEST_FUNCTION;
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
 
 BeforeExecute
 -- Firebird.4 Firebird4
-
--- SKIP Firebird.2.5 END
 
 DROP PROCEDURE "AddIssue792Record";
 
@@ -107,13 +101,7 @@ DROP PROCEDURE "Scalar_ReturnParameter";
 BeforeExecute
 -- Firebird.4 Firebird4
 
--- SKIP Firebird.2.5 BEGIN
--- SKIP Firebird.3 BEGIN
 DROP PROCEDURE test_v4_types;
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 END
--- SKIP Firebird.4 END
--- SKIP Firebird.5 END
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -337,12 +325,12 @@ CREATE TABLE "DataTypeTest"
 (
 	"DataTypeID"      INTEGER NOT NULL PRIMARY KEY,
 	"Binary_"         BLOB,
--- SKIP Firebird.2.5 BEGIN
+
 	"Boolean_"        BOOLEAN,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
+
 	"Byte_"           SMALLINT,
 	"Bytes_"          BLOB,
 	CHAR_             CHAR(1),
@@ -400,12 +388,12 @@ INSERT INTO "DataTypeTest"
 	 "Xml_")
 VALUES
 	('dddddddddddddddd',
--- SKIP Firebird.2.5 BEGIN
+
 	TRUE
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
+
 	,255,'dddddddddddddddd', 'B', 'NOW', 12345.67,
 	1234.567, X'dddddddddddddddddddddddddddddddd', 32767, 32768, 1000000, 12.3456, 127,
 	1234.123, 'dddddddddddddddd', 'string', 32767, 32768, 200000000,
@@ -455,12 +443,12 @@ CREATE TABLE "LinqDataTypes"
 	"MoneyValue"     decimal(10,4),
 	"DateTimeValue"  timestamp,
 	"DateTimeValue2" timestamp,
--- SKIP Firebird.2.5 BEGIN
+
 	"BoolValue"      BOOLEAN,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
+
 	"GuidValue"      CHAR(16) CHARACTER SET OCTETS,
 	"BinaryValue"    blob,
 	"SmallIntValue"  smallint,
@@ -568,15 +556,15 @@ CREATE TABLE "AllTypes"
 	"ncharDataType"            char(20) character set UNICODE_FSS,
 	"nvarcharDataType"         varchar(20) character set UNICODE_FSS,
 
--- SKIP Firebird.2.5 BEGIN
--- SKIP Firebird.3 BEGIN
+
+
 	"timestampTZDataType"      timestamp with time zone,
 	"timeTZDataType"           time with time zone,
 	"decfloat16DataType"       decfloat(16),
 	"decfloat34DataType"       decfloat,
 	"int128DataType"           int128,
--- SKIP Firebird.3 END
--- SKIP Firebird.2.5 END
+
+
 
 	"blobDataType"             blob
 );
@@ -620,15 +608,15 @@ VALUES
 	NULL,
 	NULL,
 
--- SKIP Firebird.2.5 BEGIN
--- SKIP Firebird.3 BEGIN
+
+
 	NULL,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
--- SKIP Firebird.3 END
--- SKIP Firebird.2.5 END
+
+
 
 	NULL
 );
@@ -658,15 +646,15 @@ VALUES
 	'23233',
 	'3323',
 
--- SKIP Firebird.2.5 BEGIN
--- SKIP Firebird.3 BEGIN
+
+
 	'2020-12-12 12:24:35 Europe/Andorra',
 	'12:13 Australia/Hobart',
 	1234567890.123456,
 	123456789012345678901234567890.1234,
 	170141183460469231731687303715884105727,
--- SKIP Firebird.3 END
--- SKIP Firebird.2.5 END
+
+
 
 	'12345'
 );
@@ -843,11 +831,11 @@ BeforeExecute
 -- Person_Delete
 
 CREATE PROCEDURE "Person_Delete"(
-	PersonID INTEGER
+	"PersonID" INTEGER
 	)
 AS
 BEGIN
-	DELETE FROM "Person" WHERE "PersonID" = :PersonID;
+	DELETE FROM "Person" WHERE "PersonID" = :"PersonID";
 END;
 
 BeforeExecute
@@ -1066,12 +1054,12 @@ CREATE TABLE "TestMerge1"
 	"Field5" INTEGER,
 
 	"FieldInt64"      BIGINT,
--- SKIP Firebird.2.5 BEGIN
+
 	"FieldBoolean"    BOOLEAN,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
+
 	"FieldString"     VARCHAR(20),
 	"FieldNString"    VARCHAR(20) CHARACTER SET UNICODE_FSS,
 	"FieldChar"       CHAR(1),
@@ -1101,12 +1089,12 @@ CREATE TABLE "TestMerge2"
 	"Field5" INTEGER,
 
 	"FieldInt64"      BIGINT,
--- SKIP Firebird.2.5 BEGIN
+
 	"FieldBoolean"    BOOLEAN,
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
+
+
+
+
 	"FieldString"     VARCHAR(20),
 	"FieldNString"    VARCHAR(20) CHARACTER SET UNICODE_FSS,
 	"FieldChar"       CHAR(1),
@@ -1135,10 +1123,6 @@ END;
 BeforeExecute
 -- Firebird.4 Firebird4
 
--- SKIP Firebird.4 END
-
--- SKIP Firebird.2.5 BEGIN
--- SKIP Firebird.3 BEGIN
 CREATE PROCEDURE test_v4_types
 (
 	tstz       timestamp with time zone,
@@ -1166,8 +1150,6 @@ BEGIN
 		:col_int_128
 	DO SUSPEND;
 END;
--- SKIP Firebird.3 END
--- SKIP Firebird.2.5 END
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -1186,8 +1168,6 @@ CREATE TABLE "CollatedTable"
 
 BeforeExecute
 -- Firebird.4 Firebird4
-
--- SKIP Firebird.2.5 BEGIN
 
 CREATE OR ALTER PACKAGE TEST_PACKAGE1
 AS
@@ -1275,7 +1255,7 @@ RETURNS (O INT)
 AS
 BEGIN
 	FOR SELECT :I + 3 FROM "Person"
-	INTO :O 
+	INTO :O
 	DO SUSPEND;
 END
 
@@ -1287,11 +1267,6 @@ AS
 	BEGIN
 		RETURN I + 3;
 	END
-
--- SKIP Firebird.2.5 END
--- SKIP Firebird.3 BEGIN
--- SKIP Firebird.4 END
--- SKIP Firebird.3 END
 
 BeforeExecute
 -- Firebird.4 Firebird4

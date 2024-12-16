@@ -49,20 +49,19 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-
-					SELECT
-						current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
-						pg_constraint.conname                                                        as PrimaryKeyName,
-						attname                                                                      as ColumnName,
-						attnum                                                                       as Ordinal
-					FROM
-						pg_attribute
-							JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
-							JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
-							JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
-					WHERE
-						pg_constraint.contype = 'p'
-						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
+SELECT
+	current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
+	pg_constraint.conname                                                        as PrimaryKeyName,
+	attname                                                                      as ColumnName,
+	attnum                                                                       as Ordinal
+FROM
+	pg_attribute
+		JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
+		JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
+		JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
+WHERE
+	pg_constraint.contype = 'p'
+	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -324,20 +323,19 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-
-					SELECT
-						current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
-						pg_constraint.conname                                                        as PrimaryKeyName,
-						attname                                                                      as ColumnName,
-						attnum                                                                       as Ordinal
-					FROM
-						pg_attribute
-							JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
-							JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
-							JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
-					WHERE
-						pg_constraint.contype = 'p'
-						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
+SELECT
+	current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
+	pg_constraint.conname                                                        as PrimaryKeyName,
+	attname                                                                      as ColumnName,
+	attnum                                                                       as Ordinal
+FROM
+	pg_attribute
+		JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
+		JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
+		JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
+WHERE
+	pg_constraint.contype = 'p'
+	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -579,20 +577,19 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-
-					SELECT
-						current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
-						pg_constraint.conname                                                        as PrimaryKeyName,
-						attname                                                                      as ColumnName,
-						attnum                                                                       as Ordinal
-					FROM
-						pg_attribute
-							JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
-							JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
-							JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
-					WHERE
-						pg_constraint.contype = 'p'
-						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('IncludeExcludeSchemaTest')
+SELECT
+	current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
+	pg_constraint.conname                                                        as PrimaryKeyName,
+	attname                                                                      as ColumnName,
+	attnum                                                                       as Ordinal
+FROM
+	pg_attribute
+		JOIN pg_constraint ON pg_attribute.attrelid = pg_constraint.conrelid AND pg_attribute.attnum = ANY(pg_constraint.conkey)
+		JOIN pg_class      ON pg_class.oid = pg_constraint.conrelid
+		JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
+WHERE
+	pg_constraint.contype = 'p'
+	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('IncludeExcludeSchemaTest')
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
