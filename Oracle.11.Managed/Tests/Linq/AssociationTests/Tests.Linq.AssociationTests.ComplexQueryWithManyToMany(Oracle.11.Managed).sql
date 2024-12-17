@@ -14,7 +14,7 @@ FROM
 		FROM
 			"GrandChild" t1
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM

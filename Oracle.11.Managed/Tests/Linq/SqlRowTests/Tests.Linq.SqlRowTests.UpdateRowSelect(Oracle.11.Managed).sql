@@ -82,7 +82,7 @@ SET
 			("Ints"."Nil" = i_2."Nil" OR "Ints"."Nil" IS NULL AND i_2."Nil" IS NULL)
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

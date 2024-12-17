@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Patient" t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -27,7 +27,7 @@ WHERE
 		WHERE
 			e."FirstName" LIKE :filter1 ESCAPE '~' AND e."PersonID" = t2."cond"
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

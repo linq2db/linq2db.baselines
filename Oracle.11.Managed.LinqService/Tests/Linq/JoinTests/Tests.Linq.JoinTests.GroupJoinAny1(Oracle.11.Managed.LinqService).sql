@@ -4,7 +4,7 @@
 SELECT
 	t1."ParentID",
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM

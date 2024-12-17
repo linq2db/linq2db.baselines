@@ -42,7 +42,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				t1."Key_1"
 			FROM
