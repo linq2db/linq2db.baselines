@@ -14,7 +14,7 @@ SELECT
 FROM
 	[Person] [i]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

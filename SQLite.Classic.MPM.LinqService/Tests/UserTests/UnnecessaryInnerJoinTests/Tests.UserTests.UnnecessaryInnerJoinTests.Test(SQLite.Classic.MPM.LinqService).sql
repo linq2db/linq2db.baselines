@@ -33,7 +33,7 @@ SELECT
 FROM
 	[Table2] [t1]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

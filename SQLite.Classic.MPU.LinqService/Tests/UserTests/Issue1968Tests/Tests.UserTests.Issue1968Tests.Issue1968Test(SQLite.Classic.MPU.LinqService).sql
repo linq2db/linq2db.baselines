@@ -177,7 +177,7 @@ FROM
 		FROM
 			[University] [t1]
 	) [m_2]
-		INNER JOIN [Subject] [d] ON  EXISTS (
+		INNER JOIN [Subject] [d] ON EXISTS(
 			SELECT
 				*
 			FROM

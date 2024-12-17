@@ -49,7 +49,7 @@ SELECT
 FROM
 	[Table860_1] [it]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -58,7 +58,7 @@ WHERE
 		WHERE
 			[it].[bId] = [d].[Id] AND [a_Table3].[Prop] = 'aaa'
 	) AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
