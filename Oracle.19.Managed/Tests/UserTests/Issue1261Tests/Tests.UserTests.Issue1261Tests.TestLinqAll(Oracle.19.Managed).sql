@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
@@ -21,7 +21,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM

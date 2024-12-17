@@ -22,7 +22,7 @@ USING (
 		"Person" t1
 			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
 ) "Source"
-ON ( EXISTS (
+ON (EXISTS(
 	SELECT
 		*
 	FROM

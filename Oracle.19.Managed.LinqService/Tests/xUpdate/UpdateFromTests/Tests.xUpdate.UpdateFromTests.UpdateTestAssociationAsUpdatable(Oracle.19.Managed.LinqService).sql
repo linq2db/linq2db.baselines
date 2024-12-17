@@ -307,7 +307,7 @@ SET
 			a_Relation_1."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v_1."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
