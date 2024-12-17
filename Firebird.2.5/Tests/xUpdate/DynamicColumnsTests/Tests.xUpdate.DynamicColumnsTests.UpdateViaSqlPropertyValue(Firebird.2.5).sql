@@ -38,7 +38,7 @@ UPDATE
 SET
 	"ChildID" = CAST(@ChildID AS Int)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

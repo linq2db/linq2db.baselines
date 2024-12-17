@@ -6,7 +6,7 @@ SET     @take = 5000
 SELECT FIRST @take
 	"t"."ParentID",
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM

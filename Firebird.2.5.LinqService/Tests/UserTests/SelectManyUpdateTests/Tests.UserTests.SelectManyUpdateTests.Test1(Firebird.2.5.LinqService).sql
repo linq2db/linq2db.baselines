@@ -8,7 +8,7 @@ UPDATE
 SET
 	"Value1" = CAST(@Value1 AS Int)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

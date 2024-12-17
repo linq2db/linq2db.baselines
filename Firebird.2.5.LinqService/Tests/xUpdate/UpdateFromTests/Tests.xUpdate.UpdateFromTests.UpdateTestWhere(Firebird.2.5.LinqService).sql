@@ -320,7 +320,7 @@ SET
 			"UpdatedEntities"."id" = "c_4"."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

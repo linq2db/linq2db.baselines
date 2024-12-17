@@ -23,7 +23,7 @@ FROM
 			"t1"."LastName"
 	) "t2"
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

@@ -7,7 +7,7 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"Child" "c_1"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

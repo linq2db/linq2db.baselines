@@ -80,7 +80,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT FIRST 1
 				"item_1"."Value"
 			FROM
