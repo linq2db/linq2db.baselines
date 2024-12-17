@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value UniqueIdentifier -- Guid
-SET     @value = '00000000-0000-0000-0000-000000000000'
+SET     @value = '{00000000-0000-0000-0000-000000000000}'
 
 SELECT
 	[t1].[ID],

@@ -30,7 +30,7 @@ SET     @Byte = 0
 DECLARE @ByteN TinyInt -- Byte
 SET     @ByteN = NULL
 DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '00000000-0000-0000-0000-000000000000'
+SET     @Guid = '{00000000-0000-0000-0000-000000000000}'
 DECLARE @GuidN UniqueIdentifier -- Guid
 SET     @GuidN = NULL
 DECLARE @Enum NChar(11) -- StringFixedLength
@@ -76,9 +76,9 @@ SET     @Byte = 1
 DECLARE @ByteN TinyInt(1) -- Byte
 SET     @ByteN = 2
 DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @Guid = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = 'a948600d-de21-4f74-8ac2-9516b287076e'
+SET     @GuidN = '{a948600d-de21-4f74-8ac2-9516b287076e}'
 DECLARE @Enum NChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN NChar(11) -- StringFixedLength
@@ -122,9 +122,9 @@ SET     @Byte = 3
 DECLARE @ByteN TinyInt(1) -- Byte
 SET     @ByteN = 4
 DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
+SET     @Guid = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
 DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @GuidN = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @Enum NChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN NChar(11) -- StringFixedLength
@@ -162,9 +162,9 @@ VALUES
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value UniqueIdentifier -- Guid
-SET     @value = '00000000-0000-0000-0000-000000000000'
+SET     @value = '{00000000-0000-0000-0000-000000000000}'
 DECLARE @value UniqueIdentifier -- Guid
-SET     @value = '00000000-0000-0000-0000-000000000000'
+SET     @value = '{00000000-0000-0000-0000-000000000000}'
 
 SELECT
 	[t1].[Id],

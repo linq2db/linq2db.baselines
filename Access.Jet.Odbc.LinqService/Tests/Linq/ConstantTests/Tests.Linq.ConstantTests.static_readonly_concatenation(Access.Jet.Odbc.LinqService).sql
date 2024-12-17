@@ -21,9 +21,9 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @GuidValue = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @GuidNullableValue UniqueIdentifier -- Guid
-SET     @GuidNullableValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+SET     @GuidNullableValue = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @StringValue NVarChar(8) -- String
 SET     @StringValue = 'StrValue'
 
