@@ -17,15 +17,15 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "BooleanTable"
 		(
-			"Id"       Int            NOT NULL,
-			"Boolean"  Char(1)        NOT NULL,
-			"BooleanN" Char(1)            NULL,
-			"Int32"    Int            NOT NULL,
-			"Int32N"   Int                NULL,
-			"Decimal"  Decimal(28, 2) NOT NULL,
-			"DecimalN" Decimal(28, 2)     NULL,
-			"Double"   Float          NOT NULL,
-			"DoubleN"  Float              NULL,
+			"Id"       Int             NOT NULL,
+			"Boolean"  Char(1)         NOT NULL,
+			"BooleanN" Char(1)             NULL,
+			"Int32"    Int             NOT NULL,
+			"Int32N"   Int                 NULL,
+			"Decimal"  Decimal(28, 10) NOT NULL,
+			"DecimalN" Decimal(28, 10)     NULL,
+			"Double"   Float           NOT NULL,
+			"DoubleN"  Float               NULL,
 
 			CONSTRAINT "PK_BooleanTable" PRIMARY KEY ("Id")
 		)
