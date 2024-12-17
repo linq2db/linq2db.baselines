@@ -6,7 +6,7 @@ SELECT
 FROM
 	entities x
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
