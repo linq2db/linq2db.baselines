@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

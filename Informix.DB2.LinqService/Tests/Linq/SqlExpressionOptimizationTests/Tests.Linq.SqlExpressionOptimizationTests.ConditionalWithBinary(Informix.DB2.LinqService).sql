@@ -828,7 +828,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	x.BoolValue = 'f'
+	NOT x.BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -859,7 +859,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	x_with_not.BoolValue = 't'
+	x_with_not.BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -890,7 +890,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	swap.BoolValue = 'f'
+	NOT swap.BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -921,7 +921,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue = 't'
+	swap_with_not.BoolValue
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1045,7 +1045,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue = 'f'
+	swap_with_not.BoolValue <> 't'
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -18,7 +18,7 @@ UPDATE
 SET
 	[CompanyName] = @CompanyName
 WHERE
-	([Customers].[IsDeleted] = 0 OR [Customers].[IsDeleted] = 0) AND
+	(NOT [Customers].[IsDeleted] OR NOT [Customers].[IsDeleted]) AND
 	[Customers].[CustomerID] = @CustomerId
 
 

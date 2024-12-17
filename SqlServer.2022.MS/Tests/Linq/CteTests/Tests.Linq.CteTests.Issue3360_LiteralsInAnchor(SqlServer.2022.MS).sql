@@ -44,10 +44,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 WITH [cte]
 (
@@ -67,8 +63,8 @@ AS
 		[r].[Id],
 		CAST(5 AS TinyInt),
 		CAST(5 AS TinyInt),
-		CAST(@Guid AS UniqueIdentifier),
-		CAST(@GuidN AS UniqueIdentifier),
+		CAST('0b8afe27-481c-442e-b8cf-729ddfeece29' AS UniqueIdentifier),
+		CAST('0b8afe27-481c-442e-b8cf-729ddfeece30' AS UniqueIdentifier),
 		CAST(N'ENUM1_VALUE' AS NChar(11)),
 		CAST(N'ENUM2_VALUE' AS NChar(11)),
 		CAST(1 AS Bit),

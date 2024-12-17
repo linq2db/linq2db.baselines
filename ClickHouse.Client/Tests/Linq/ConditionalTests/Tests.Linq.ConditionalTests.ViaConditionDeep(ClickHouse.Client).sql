@@ -61,7 +61,7 @@ WHERE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
 		WHEN x.StringProp = '2' THEN x.StringProp
 		ELSE concat(x.StringProp, '2')
-	END, '2') = true AND
+	END, '2') AND
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
 		WHEN x.StringProp = '2' THEN 1

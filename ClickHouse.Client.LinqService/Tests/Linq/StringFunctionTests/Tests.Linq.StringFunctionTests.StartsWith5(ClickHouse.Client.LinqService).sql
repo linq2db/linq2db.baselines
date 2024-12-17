@@ -11,5 +11,5 @@ FROM
 	Person p1,
 	Person p2
 WHERE
-	p1.PersonID = p2.PersonID AND startsWith(REPLACE(p1.FirstName, 'J', '%'), REPLACE(p2.FirstName, 'J', '%')) = true
+	p1.PersonID = p2.PersonID AND startsWith(REPLACE(p1.FirstName, 'J', '%'), REPLACE(p2.FirstName, 'J', '%'))
 

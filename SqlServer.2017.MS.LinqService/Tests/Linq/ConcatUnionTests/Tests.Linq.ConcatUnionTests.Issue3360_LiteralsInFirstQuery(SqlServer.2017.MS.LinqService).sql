@@ -162,10 +162,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 SELECT
 	[t1].[Id],
@@ -183,8 +179,8 @@ FROM
 			[r].[Id],
 			CAST(5 AS TinyInt) as [Byte],
 			CAST(5 AS TinyInt) as [Byte_1],
-			CAST(@Guid AS UniqueIdentifier) as [Guid],
-			CAST(@GuidN AS UniqueIdentifier) as [GuidN],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece29' AS UniqueIdentifier) as [Guid],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece30' AS UniqueIdentifier) as [GuidN],
 			CAST(N'ENUM1_VALUE' AS NChar(11)) as [Enum],
 			CAST(N'ENUM2_VALUE' AS NChar(11)) as [EnumN],
 			CAST(1 AS Bit) as [Bool],

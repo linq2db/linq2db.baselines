@@ -79,8 +79,6 @@ CREATE TABLE IF NOT EXISTS [t_call_metas]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Category NVarChar(4) -- String
-SET     @Category = 'Some'
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -103,7 +101,7 @@ FROM
 		LEFT JOIN [CALL_TRANSCRIPTION] [a_CallTranscription] ON [x].[Id] = [a_CallTranscription].[Id]
 		LEFT JOIN [CALL_RECORD] [a_CallRecord] ON [x].[Id] = [a_CallRecord].[Id]
 WHERE
-	[a_CategoryGroup].[TelegramBotName] = @Category
+	[a_CategoryGroup].[TelegramBotName] = 'Some'
 ORDER BY
 	[x].[ProfileId] DESC
 LIMIT @take

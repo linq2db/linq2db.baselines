@@ -14,9 +14,9 @@ SELECT
 	[e].[Discontinued]
 FROM
 	[Products] [e]
-		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND ([op].[IsDeleted] = 0 OR [op].[IsDeleted] = 0)
+		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND (NOT [op].[IsDeleted] OR NOT [op].[IsDeleted])
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [op].[ProductID] IS NULL
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [op].[ProductID] IS NULL
 
 
 

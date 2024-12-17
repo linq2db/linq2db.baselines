@@ -166,8 +166,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -175,7 +175,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -191,8 +191,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1 NVarChar(16) -- String
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1 NVarChar(16) -- String
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -200,7 +200,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -216,8 +216,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -225,7 +225,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -241,8 +241,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -250,7 +250,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -266,8 +266,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -275,7 +275,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -296,8 +296,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Guid1 VarChar(36) -- AnsiString
-SET     @Guid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
+DECLARE @NonReadonlyGuid1 VarChar(36) -- AnsiString
+SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -305,7 +305,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute

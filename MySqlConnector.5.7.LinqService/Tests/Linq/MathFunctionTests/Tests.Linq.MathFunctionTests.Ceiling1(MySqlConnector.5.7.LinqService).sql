@@ -2,14 +2,14 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Ceiling(-(`p`.`MoneyValue` + 1)) as `c1`
+			Ceiling(-(`p`.`MoneyValue` + 1)) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0
+	`t`.`Value_1` <> 0
 

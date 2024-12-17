@@ -1,17 +1,19 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
-SELECT FIRST 3
+SELECT FIRST @take
 	x."position"
 FROM
 	entities x
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			(
-				SELECT -10::Real AS X FROM table(set{1})) t
+				SELECT -10::Real AS X, 10::Real AS Y FROM table(set{1})) t
 		WHERE
 			x."position".x > t.X
 	)

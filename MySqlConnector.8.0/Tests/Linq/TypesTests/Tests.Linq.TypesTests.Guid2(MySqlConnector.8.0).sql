@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p Guid
-SET     @p = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 SELECT
 	`p`.`ID`,
@@ -15,13 +13,11 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	`p`.`GuidValue` = @p
+	`p`.`GuidValue` = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p Guid
-SET     @p = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 
 SELECT
 	`p`.`ID`,
@@ -35,6 +31,6 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	`p`.`GuidValue` = @p
+	`p`.`GuidValue` = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 LIMIT 2
 

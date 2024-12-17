@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith('John123', p.FirstName) = true
+	startsWith('John123', p.FirstName)
 

@@ -38,7 +38,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	sumOrNull(toDecimal128(c_1.Id, toUInt8(10)))
+	sumOrNull(toDecimal128(c_1.Id, 10))
 FROM
 	AsyncDataTable c_1
 WHERE

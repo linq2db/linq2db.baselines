@@ -2,14 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Floor(Power(toFloat64(p.MoneyValue), toFloat64(3))) as c1
+			Floor(Power(toFloat64(p.MoneyValue), toFloat64(3))) as Value_1
 		FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> toFloat64(0)
+	t.Value_1 <> toFloat64(0)
 

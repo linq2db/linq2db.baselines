@@ -87,7 +87,7 @@ WHERE
 		END
 		WHEN e.Id <> 0 THEN 't'
 		ELSE 'f'
-	END = 't'
+	END
 ORDER BY
 	e.Id
 

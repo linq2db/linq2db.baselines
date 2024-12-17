@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Year to Month
+	@input
 )
 
 BeforeExecute

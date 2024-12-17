@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

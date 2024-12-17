@@ -17,7 +17,7 @@ SET     @DateTimeValue = NULL
 DECLARE @BoolValue Bit -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue UniqueIdentifier -- Guid
-SET     @GuidValue = '{00000000-0000-0000-0000-000000000000}'
+SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
 DECLARE @BinaryValue VarBinary(4) -- Binary
 SET     @BinaryValue = 0x01020304
 DECLARE @SmallIntValue SmallInt -- Int16

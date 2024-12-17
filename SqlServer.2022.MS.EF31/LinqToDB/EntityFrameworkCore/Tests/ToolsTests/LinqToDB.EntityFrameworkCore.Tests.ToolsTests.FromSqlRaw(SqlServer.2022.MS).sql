@@ -9,8 +9,6 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([c].[IsDeleted] <> CAST(1 AS bit)
 
 
 --  SqlServer.2022 (asynchronously)
-DECLARE @p Int -- Int32
-SET     @p = 1
 
 SELECT
 	[t1].[IsDeleted],
@@ -20,7 +18,7 @@ SELECT
 	[t1].[Picture]
 FROM
 	(
-		SELECT * FROM [dbo].[Categories] WHERE CategoryId = @p
+		SELECT * FROM [dbo].[Categories] WHERE CategoryId = 1
 	) [t1]
 
 

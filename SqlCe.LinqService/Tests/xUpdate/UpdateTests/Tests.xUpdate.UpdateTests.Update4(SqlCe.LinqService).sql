@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 1001
 
 INSERT INTO [Child]
 (
@@ -9,7 +11,7 @@ INSERT INTO [Child]
 VALUES
 (
 	1,
-	1001
+	@id
 )
 
 BeforeExecute
@@ -34,7 +36,7 @@ UPDATE
 SET
 	[ChildID] = [Child].[ChildID] + 1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

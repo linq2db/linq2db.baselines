@@ -82,7 +82,7 @@ SELECT
 FROM
 	"Common_Language" x
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

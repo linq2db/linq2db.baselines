@@ -92,7 +92,7 @@ WHERE
 --  SqlServer.2022 (asynchronously)
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

@@ -6,9 +6,9 @@ SET     @take = 5000
 SELECT
 	t."ParentID",
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" c_3
 			WHERE

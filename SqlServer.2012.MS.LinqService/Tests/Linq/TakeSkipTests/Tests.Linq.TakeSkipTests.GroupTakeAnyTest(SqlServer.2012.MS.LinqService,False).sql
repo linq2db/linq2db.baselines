@@ -73,7 +73,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT TOP (1)
 			[item_1].[Value]
 		FROM

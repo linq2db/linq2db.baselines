@@ -32,13 +32,11 @@ SELECT 1 FROM rdb$database
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @p Boolean
-SET     @p = TRUE
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	CAST(@p AS BOOLEAN)
+	TRUE
 FROM
 	"SelectExpressionTable" "t1"
 FETCH NEXT @take ROWS ONLY

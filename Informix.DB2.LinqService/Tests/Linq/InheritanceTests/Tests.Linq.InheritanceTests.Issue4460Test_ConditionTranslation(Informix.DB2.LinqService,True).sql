@@ -79,10 +79,12 @@ SELECT
 FROM
 	Base e
 WHERE
-	e.Code = 'Child2' OR
-	e.Code = 'Child' OR
-	e.Code = 'BaseChild' OR
-	e.Id <> 0
+	CASE
+		WHEN e.Code = 'Child2' OR e.Code = 'Child' OR e.Code = 'BaseChild'
+			THEN 't'
+		WHEN e.Id <> 0 THEN 't'
+		ELSE 'f'
+	END
 ORDER BY
 	e.Id
 

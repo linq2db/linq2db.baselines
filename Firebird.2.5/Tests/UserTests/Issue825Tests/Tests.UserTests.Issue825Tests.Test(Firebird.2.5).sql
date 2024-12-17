@@ -11,7 +11,7 @@ FROM
 	"Parent" "child_1"
 		INNER JOIN "Child" "a_Childs" ON "child_1"."ParentID" = "a_Childs"."ParentID"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

@@ -30,7 +30,7 @@ SELECT
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
-	[t].[Value] = 1
+	[t].[Value]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -60,7 +60,7 @@ SELECT
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
-	[t].[Value] = 0
+	NOT [t].[Value]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

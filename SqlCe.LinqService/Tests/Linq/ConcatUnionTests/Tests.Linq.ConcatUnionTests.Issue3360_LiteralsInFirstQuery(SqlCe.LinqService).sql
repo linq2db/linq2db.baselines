@@ -161,10 +161,6 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 SELECT
 	[t1].[Id],
@@ -182,8 +178,8 @@ FROM
 			[r].[Id],
 			CAST(5 AS TinyInt) as [Byte],
 			CAST(5 AS TinyInt) as [Byte_1],
-			CAST(@Guid AS UNIQUEIDENTIFIER) as [Guid],
-			CAST(@GuidN AS UNIQUEIDENTIFIER) as [GuidN],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece29' AS UNIQUEIDENTIFIER) as [Guid],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece30' AS UNIQUEIDENTIFIER) as [GuidN],
 			CAST('ENUM1_VALUE' AS NChar(11)) as [Enum],
 			CAST('ENUM2_VALUE' AS NChar(11)) as [EnumN],
 			CAST(1 AS Bit) as [Bool],

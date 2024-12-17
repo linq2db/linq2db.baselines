@@ -51,10 +51,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Guid VarBinary(16) -- Binary
-SET     @Guid = BX'27FE8A0B1C482E44B8CF729DDFEECE29'
-DECLARE @GuidN VarBinary(16) -- Binary
-SET     @GuidN = BX'27FE8A0B1C482E44B8CF729DDFEECE30'
 
 SELECT
 	"t1"."Id",
@@ -72,8 +68,8 @@ FROM
 			"r"."Id",
 			CAST(5 AS SmallInt) as "Byte",
 			CAST(5 AS SmallInt) as "Byte_1",
-			CAST(@Guid AS char(16) for bit data) as "Guid",
-			CAST(@GuidN AS char(16) for bit data) as "GuidN",
+			CAST(BX'27FE8A0B1C482E44B8CF729DDFEECE29' AS char(16) for bit data) as "Guid",
+			CAST(BX'27FE8A0B1C482E44B8CF729DDFEECE30' AS char(16) for bit data) as "GuidN",
 			Char('ENUM1_VALUE', 11) as "Enum",
 			Char('ENUM2_VALUE', 11) as "EnumN",
 			CAST(1 AS smallint) as "Bool",

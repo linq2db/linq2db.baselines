@@ -2,7 +2,7 @@
 -- SqlServer.2019
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

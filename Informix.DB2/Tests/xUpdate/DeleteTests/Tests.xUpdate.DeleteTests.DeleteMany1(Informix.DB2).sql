@@ -44,7 +44,7 @@ BeforeExecute
 DELETE FROM
 	Child
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			a_Children.ParentID
 		FROM

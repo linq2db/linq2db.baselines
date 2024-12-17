@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [cond]
 FROM
 	[Child] [g_1]
 GROUP BY

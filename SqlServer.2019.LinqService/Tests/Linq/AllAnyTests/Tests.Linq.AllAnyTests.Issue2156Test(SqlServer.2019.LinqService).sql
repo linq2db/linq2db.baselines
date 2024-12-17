@@ -56,7 +56,7 @@ FROM
 			[e_1].[LastName] as [LastName_4],
 			[e_1].[MiddleName] as [MiddleName_4],
 			[e_1].[Gender] as [Gender_4],
-			IIF(EXISTS(
+			IIF( EXISTS (
 				SELECT
 					*
 				FROM

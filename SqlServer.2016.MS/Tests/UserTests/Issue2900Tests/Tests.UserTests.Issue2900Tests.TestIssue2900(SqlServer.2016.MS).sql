@@ -36,14 +36,14 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[t1].[HasValue],
-	[t1].[Value_1]
+	[t1].[cond_1],
+	[t1].[cond]
 FROM
 	[Request] [a]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Metrics].[Value] as [Value_1],
-				IIF([a_Metrics].[Value] IS NOT NULL, 1, 0) as [HasValue]
+				[a_Metrics].[Value] as [cond],
+				IIF([a_Metrics].[Value] IS NOT NULL, 1, 0) as [cond_1]
 			FROM
 				[Metric] [a_Metrics]
 			WHERE

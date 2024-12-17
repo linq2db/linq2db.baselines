@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

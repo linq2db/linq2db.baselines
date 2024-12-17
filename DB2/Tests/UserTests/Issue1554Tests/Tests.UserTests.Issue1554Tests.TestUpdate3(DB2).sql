@@ -55,8 +55,8 @@ SET     @ClaimedKeyTypeN = 'EC'
 UPDATE
 	"Issue1554Table" "p"
 SET
-	"ClaimedKeyType" = CAST(@ClaimedKeyType AS NVarChar(2)),
-	"ClaimedKeyTypeN" = CAST(@ClaimedKeyTypeN AS NVarChar(2))
+	"ClaimedKeyType" = @ClaimedKeyType,
+	"ClaimedKeyTypeN" = @ClaimedKeyTypeN
 WHERE
 	"p"."Id" = 0
 

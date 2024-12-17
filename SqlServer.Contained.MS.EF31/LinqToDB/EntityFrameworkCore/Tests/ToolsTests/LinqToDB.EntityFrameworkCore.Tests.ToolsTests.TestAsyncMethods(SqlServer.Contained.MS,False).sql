@@ -92,7 +92,7 @@ WHERE
 --  SqlServer.2019 (asynchronously)
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

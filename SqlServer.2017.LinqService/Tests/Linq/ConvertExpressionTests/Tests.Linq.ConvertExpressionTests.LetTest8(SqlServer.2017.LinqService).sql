@@ -3,7 +3,7 @@
 
 SELECT
 	IIF([t1].[ParentID] IS NULL, 0, [t2].[ParentID]),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

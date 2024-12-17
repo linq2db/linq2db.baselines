@@ -120,15 +120,15 @@ WITH [CTE_1]
 	[RN],
 	[IR_MaterialID],
 	[IR_InfeedAdviceID],
+	[Count_1],
+	[CountLocked],
 	[IR_Id],
+	[IR_ProductStatus],
 	[IR_BatchNumber],
 	[IR_BundleUnit],
-	[IR_ProductStatus],
 	[IR_CustomField1],
 	[IR_CustomField2],
-	[IR_CustomField3],
-	[Count_1],
-	[CountLocked]
+	[IR_CustomField3]
 )
 AS
 (
@@ -137,25 +137,25 @@ AS
 		ROW_NUMBER() OVER(PARTITION BY [ir].[ResourceID] ORDER BY [ir].[ResourceID]),
 		[ir].[MaterialID],
 		[ir].[InfeedAdviceID],
+		COUNT(*) OVER(PARTITION BY [ir].[ResourceID]),
+		COUNT(([ir].[ProductStatus] > 0)) OVER(PARTITION BY [ir].[ResourceID]),
 		[ir].[Id],
+		[ir].[ProductStatus],
 		[ir].[BatchNumber],
 		[ir].[BundleUnit],
-		[ir].[ProductStatus],
 		[ir].[CustomField1],
 		[ir].[CustomField2],
-		[ir].[CustomField3],
-		COUNT(*) OVER(PARTITION BY [ir].[ResourceID]),
-		COUNT(([ir].[ProductStatus] > 0)) OVER(PARTITION BY [ir].[ResourceID])
+		[ir].[CustomField3]
 	FROM
 		(
 			SELECT
 				[x].[ResourceID],
 				[x].[MaterialID],
 				[x].[InfeedAdviceID],
+				[x].[ProductStatus],
 				[x].[Id],
 				[x].[BatchNumber],
 				[x].[BundleUnit],
-				[x].[ProductStatus],
 				[x].[CustomField1],
 				[x].[CustomField2],
 				[x].[CustomField3]
@@ -183,8 +183,8 @@ SELECT
 	[x_1].[CategoryDimensions],
 	[x_1].[CategoryQuality],
 	[x_1].[CategoryTemperature],
+	[x_1].[cond],
 	[x_1].[Id_3],
-	[x_1].[Id_4],
 	[x_1].[Status],
 	[x_1].[ResourceLabel],
 	[x_1].[CustomField1],
@@ -193,7 +193,7 @@ SELECT
 	[x_1].[CustomLong1],
 	[x_1].[CustomLong2],
 	[x_1].[CustomLong3],
-	[x_1].[Id_5],
+	[x_1].[Id_4],
 	[x_1].[MaterialNumber_1],
 	[x_1].[MaterialDescription_1_1],
 	[x_1].[MaterialDescription_2_1],
@@ -203,7 +203,7 @@ SELECT
 	[x_1].[CategoryDimensions_1],
 	[x_1].[CategoryQuality_1],
 	[x_1].[CategoryTemperature_1],
-	[x_1].[Id_6],
+	[x_1].[Id_5],
 	[x_1].[BatchNumber],
 	[x_1].[BundleUnit],
 	[x_1].[ProductStatus],
@@ -216,25 +216,25 @@ SELECT
 	[x_1].[Count_1],
 	[x_1].[CountLocked],
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[RefOutfeedTransportOrderResourceDTO] [x_2]
 			WHERE
-				[x_2].[ResourceID] = [x_1].[Id_4]
+				[x_2].[ResourceID] = [x_1].[Id_3]
 		)
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[CTE_1] [x_3]
 			WHERE
-				[x_3].[IR_ResourceID] = [x_1].[Id_4] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+				[x_3].[IR_ResourceID] = [x_1].[Id_3] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -266,9 +266,9 @@ FROM
 			[t1].[CategoryDimensions],
 			[t1].[CategoryQuality],
 			[t1].[CategoryTemperature],
-			[t1].[Id_3],
+			[t1].[cond],
 			[i1].[Count_1],
-			[c1].[Id] as [Id_4],
+			[c1].[Id] as [Id_3],
 			[c1].[Status],
 			[c1].[ResourceLabel],
 			[c1].[CustomField1],
@@ -277,7 +277,7 @@ FROM
 			[c1].[CustomLong1],
 			[c1].[CustomLong2],
 			[c1].[CustomLong3],
-			[m1].[Id] as [Id_5],
+			[m1].[Id] as [Id_4],
 			[m1].[MaterialNumber] as [MaterialNumber_1],
 			[m1].[MaterialDescription_1] as [MaterialDescription_1_1],
 			[m1].[MaterialDescription_2] as [MaterialDescription_2_1],
@@ -287,7 +287,7 @@ FROM
 			[m1].[CategoryDimensions] as [CategoryDimensions_1],
 			[m1].[CategoryQuality] as [CategoryQuality_1],
 			[m1].[CategoryTemperature] as [CategoryTemperature_1],
-			[i1].[IR_Id] as [Id_6],
+			[i1].[IR_Id] as [Id_5],
 			[i1].[IR_BatchNumber] as [BatchNumber],
 			[i1].[IR_BundleUnit] as [BundleUnit],
 			[i1].[IR_ProductStatus] as [ProductStatus],
@@ -326,7 +326,7 @@ FROM
 					[m_1].[CategoryDimensions],
 					[m_1].[CategoryQuality],
 					[m_1].[CategoryTemperature],
-					[a1].[Id] as [Id_3],
+					[a1].[Id] as [cond],
 					[a1].[Status],
 					[a1].[CategoryABC] as [CategoryABC_1],
 					[a1].[HeightClass],

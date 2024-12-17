@@ -3,9 +3,9 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" "t1"
 		)

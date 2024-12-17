@@ -34,17 +34,17 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."HasValue",
-	t1."Value_1"
+	t1.cond_1,
+	t1.cond
 FROM
 	"Request" a
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Metrics"."Value" as "Value_1",
+				"a_Metrics"."Value" as cond,
 				CASE
 					WHEN "a_Metrics"."Value" IS NOT NULL THEN True
 					ELSE False
-				END as "HasValue"
+				END as cond_1
 			FROM
 				"Metric" "a_Metrics"
 			WHERE

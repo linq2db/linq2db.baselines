@@ -79,15 +79,15 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @GuidValue VarChar(36) -- AnsiString
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- AnsiString
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @cond
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

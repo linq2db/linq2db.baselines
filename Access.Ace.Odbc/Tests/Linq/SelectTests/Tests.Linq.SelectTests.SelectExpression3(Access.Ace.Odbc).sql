@@ -29,11 +29,9 @@ VALUES
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p Bit -- Boolean
-SET     @p = True
 
 SELECT TOP 1
-	CVar(?)
+	True
 FROM
 	[SelectExpressionTable] [t1]
 

@@ -169,7 +169,7 @@ FROM
 				INNER JOIN T3 w ON idx.IndexId = w.IndexId
 				INNER JOIN T1 ins ON w.InstrumentId = ins.InstrumentId
 		WHERE
-			startsWith(t4.InstrumentCode, 'aaa') = true AND t4.CreateDate <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
+			startsWith(t4.InstrumentCode, 'aaa') AND t4.CreateDate <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
 			ins.SourceInstrumentCode IS NOT NULL
 	) t5
 ORDER BY

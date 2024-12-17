@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

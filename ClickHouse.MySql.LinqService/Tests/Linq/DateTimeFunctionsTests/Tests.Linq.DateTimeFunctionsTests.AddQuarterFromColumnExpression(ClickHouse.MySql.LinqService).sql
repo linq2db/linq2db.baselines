@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDate32(addQuarters(t.DateTimeValue, toInt32(t.SmallIntValue)))
+	toDate32(addQuarters(t.DateTimeValue, t.SmallIntValue))
 FROM
 	LinqDataTypes t
 

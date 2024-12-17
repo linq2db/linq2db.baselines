@@ -63,21 +63,21 @@ FROM
 				FROM
 					[Products] [e]
 				WHERE
-					[e].[IsDeleted] = 0
+					NOT [e].[IsDeleted]
 			) [t1]
 				INNER JOIN [Order Details] [d] ON [t1].[ProductId] = [d].[ProductID]
 				INNER JOIN [Orders] [e_1] ON [d].[OrderID] = [e_1].[OrderID]
 				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
-				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND [a_Supplier].[IsDeleted] = 0
+				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 		WHERE
-			[e_1].[IsDeleted] = 0 AND
-			[a_Product].[IsDeleted] = 0 AND
-			[e_1].[IsDeleted] = 0 AND
-			[d].[IsDeleted] = 0
+			NOT [e_1].[IsDeleted] AND
+			NOT [a_Product].[IsDeleted] AND
+			NOT [e_1].[IsDeleted] AND
+			NOT [d].[IsDeleted]
 	) [m_1]
 		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
 WHERE
-	[d_1].[IsDeleted] = 0
+	NOT [d_1].[IsDeleted]
 
 
 
@@ -106,13 +106,13 @@ FROM
 	[Products] [m_1]
 		INNER JOIN [Order Details] [d] ON [m_1].[ProductID] = [d].[ProductID]
 		INNER JOIN [Orders] [e] ON [d].[OrderID] = [e].[OrderID]
-		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND [a_Supplier].[IsDeleted] = 0
+		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 WHERE
-	[m_1].[IsDeleted] = 0 AND
-	[e].[IsDeleted] = 0 AND
-	[m_1].[IsDeleted] = 0 AND
-	[e].[IsDeleted] = 0 AND
-	[d].[IsDeleted] = 0
+	NOT [m_1].[IsDeleted] AND
+	NOT [e].[IsDeleted] AND
+	NOT [m_1].[IsDeleted] AND
+	NOT [e].[IsDeleted] AND
+	NOT [d].[IsDeleted]
 
 
 
@@ -127,7 +127,7 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[IsDeleted] = 0
+	NOT [p].[IsDeleted]
 
 
 

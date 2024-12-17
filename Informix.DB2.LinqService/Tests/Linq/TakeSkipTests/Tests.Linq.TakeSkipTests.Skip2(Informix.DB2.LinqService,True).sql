@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 3
 
-SELECT SKIP 3
+SELECT SKIP @skip
 	ch.ParentID,
 	ch.ChildID
 FROM

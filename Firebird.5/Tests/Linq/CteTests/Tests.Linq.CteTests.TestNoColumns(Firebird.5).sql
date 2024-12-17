@@ -51,12 +51,13 @@ AS
 )
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				CTE1_ "t1"
-		) THEN TRUE
+		)
+			THEN TRUE
 		ELSE FALSE
 	END
 FROM rdb$database

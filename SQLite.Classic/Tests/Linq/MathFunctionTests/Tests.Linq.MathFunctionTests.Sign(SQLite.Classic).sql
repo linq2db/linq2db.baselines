@@ -2,14 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Sign([p].[MoneyValue]) as [c1]
+			Sign([p].[MoneyValue]) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0
+	[t].[Value_1] <> 0
 

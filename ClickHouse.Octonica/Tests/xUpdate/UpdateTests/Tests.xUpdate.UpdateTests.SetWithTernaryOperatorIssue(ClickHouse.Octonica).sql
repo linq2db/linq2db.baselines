@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	Gender = 'O'
 WHERE
-	startsWith(FirstName, 'UpdateComplex') = true
+	startsWith(FirstName, 'UpdateComplex')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

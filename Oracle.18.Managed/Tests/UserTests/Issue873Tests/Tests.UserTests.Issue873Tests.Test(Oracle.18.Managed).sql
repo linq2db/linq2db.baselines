@@ -5,9 +5,9 @@ SELECT
 	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)),
 	t1."c1",
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" c_2
 					LEFT JOIN "Parent" a_Parent_1 ON c_2."ParentID" = a_Parent_1."ParentID"

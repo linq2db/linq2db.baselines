@@ -76,7 +76,7 @@ SET
 	[Value2] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
 	[Value3] = 1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

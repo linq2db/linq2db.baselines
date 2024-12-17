@@ -18,6 +18,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -25,6 +27,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -33,7 +37,7 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -62,6 +66,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -69,6 +75,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -77,7 +85,7 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

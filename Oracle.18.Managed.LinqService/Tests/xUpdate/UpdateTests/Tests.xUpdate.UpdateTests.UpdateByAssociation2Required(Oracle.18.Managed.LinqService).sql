@@ -149,7 +149,7 @@ UPDATE
 SET
 	"Field" = 'test'
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

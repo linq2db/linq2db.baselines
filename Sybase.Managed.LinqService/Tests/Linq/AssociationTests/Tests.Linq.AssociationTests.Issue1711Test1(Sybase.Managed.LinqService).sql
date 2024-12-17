@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Entity1711] [t]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

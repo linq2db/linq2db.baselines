@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID"
+	t1.cond
 FROM
 	(
 		SELECT
@@ -14,10 +14,10 @@ FROM
 				WHERE
 					p."ParentID" = "a_Children"."ParentID"
 				LIMIT 1
-			) as "ParentID"
+			) as cond
 		FROM
 			"Parent" p
 	) t1
 WHERE
-	t1."ParentID" IS NOT NULL
+	t1.cond IS NOT NULL
 

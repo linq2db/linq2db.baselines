@@ -47,8 +47,8 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
@@ -61,8 +61,8 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
@@ -75,8 +75,8 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
@@ -89,8 +89,8 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
@@ -103,8 +103,8 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 
@@ -117,8 +117,8 @@ WHERE
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 

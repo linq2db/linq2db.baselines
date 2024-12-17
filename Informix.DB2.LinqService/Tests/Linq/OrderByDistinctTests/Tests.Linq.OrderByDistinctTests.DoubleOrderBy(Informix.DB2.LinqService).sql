@@ -486,6 +486,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 3
 
 SELECT
 	q1.Id,
@@ -494,7 +496,7 @@ SELECT
 	q1.OrderData2
 FROM
 	(
-		SELECT FIRST 3
+		SELECT FIRST @take
 			t1.Id
 		FROM
 			OrderByDistinctData t1

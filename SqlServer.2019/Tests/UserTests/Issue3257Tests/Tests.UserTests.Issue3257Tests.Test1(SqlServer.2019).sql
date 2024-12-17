@@ -33,7 +33,7 @@ BeforeExecute
 
 SELECT
 	[x].[Id],
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

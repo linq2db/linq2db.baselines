@@ -49,9 +49,9 @@ SET
 			"Child"."ChildID" = c_2."ChildID"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Child" c_1
 				LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"

@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS [Issue1303]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 INSERT INTO [Issue1303]
 (
@@ -31,8 +27,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute

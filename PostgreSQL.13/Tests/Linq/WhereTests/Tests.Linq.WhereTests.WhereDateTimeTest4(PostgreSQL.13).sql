@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Timestamp -- DateTime2
-SET     @p = '2009-09-27'::date
 
 SELECT
 	t1."ID",
@@ -17,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1."DateTimeValue" = :p
+	t1."DateTimeValue" = '2009-09-27'::date
 

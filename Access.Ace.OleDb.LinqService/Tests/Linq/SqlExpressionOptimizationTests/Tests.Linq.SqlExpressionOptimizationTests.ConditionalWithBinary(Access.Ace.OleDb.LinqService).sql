@@ -811,7 +811,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[BoolValue] = False
+	NOT [x].[BoolValue]
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
@@ -841,7 +841,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[BoolValue] = True
+	[x_with_not].[BoolValue]
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
@@ -871,7 +871,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[BoolValue] = False
+	NOT [swap].[BoolValue]
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
@@ -901,7 +901,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] = True
+	[swap_with_not].[BoolValue]
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
@@ -1021,7 +1021,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] = False
+	[swap_with_not].[BoolValue] <> True
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

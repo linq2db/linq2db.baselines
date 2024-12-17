@@ -47,14 +47,14 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -68,8 +68,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -82,14 +82,14 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -103,8 +103,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -117,14 +117,14 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -138,8 +138,8 @@ SELECT
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 

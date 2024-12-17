@@ -44,7 +44,7 @@ UPDATE
 SET
 	"ChildID" = "Child"."ChildID" + 2
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

@@ -33,7 +33,7 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	[e].[IsDeleted] = 0 AND [e].[EmployeeID] = @test
+	NOT [e].[IsDeleted] AND [e].[EmployeeID] = @test
 
 
 

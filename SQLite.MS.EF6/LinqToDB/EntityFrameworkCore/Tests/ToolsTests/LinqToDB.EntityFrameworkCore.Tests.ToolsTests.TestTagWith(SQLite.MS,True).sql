@@ -57,9 +57,9 @@ SELECT
 	[a_ReportsToNavigation].[PhotoPath]
 FROM
 	[Employees] [e]
-		LEFT JOIN [Employees] [a_ReportsToNavigation] ON [e].[ReportsTo] = [a_ReportsToNavigation].[EmployeeID] AND ([a_ReportsToNavigation].[IsDeleted] = 0 OR [a_ReportsToNavigation].[IsDeleted] = 0)
+		LEFT JOIN [Employees] [a_ReportsToNavigation] ON [e].[ReportsTo] = [a_ReportsToNavigation].[EmployeeID] AND (NOT [a_ReportsToNavigation].[IsDeleted] OR NOT [a_ReportsToNavigation].[IsDeleted])
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]
 
 
 

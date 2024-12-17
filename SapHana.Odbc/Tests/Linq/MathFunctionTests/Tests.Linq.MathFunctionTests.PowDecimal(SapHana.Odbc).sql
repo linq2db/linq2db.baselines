@@ -2,14 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Floor(CAST(Power(CAST("p"."MoneyValue" AS Double), CAST(3 AS Double)) AS Decimal)) as "c1"
+			Floor(CAST(Power(CAST("p"."MoneyValue" AS Double), CAST(3 AS Double)) AS Decimal)) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	"t"."c1" <> 0
+	"t"."Value_1" <> 0
 

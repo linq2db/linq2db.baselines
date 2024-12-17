@@ -7,7 +7,7 @@ SELECT
 FROM
 	Patient pat
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

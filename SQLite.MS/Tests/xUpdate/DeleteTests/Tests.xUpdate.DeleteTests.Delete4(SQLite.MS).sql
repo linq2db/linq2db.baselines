@@ -54,7 +54,7 @@ BeforeExecute
 DELETE FROM
 	[GrandChild]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

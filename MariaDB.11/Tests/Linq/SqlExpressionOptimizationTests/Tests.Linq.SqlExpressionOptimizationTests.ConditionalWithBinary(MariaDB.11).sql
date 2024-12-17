@@ -547,7 +547,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	`x`.`BoolValue` = 0
+	NOT `x`.`BoolValue`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -578,7 +578,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	`x_with_not`.`BoolValue` = 1
+	`x_with_not`.`BoolValue`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -609,7 +609,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	`swap`.`BoolValue` = 0
+	NOT `swap`.`BoolValue`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -640,7 +640,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 1
+	`swap_with_not`.`BoolValue`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -764,7 +764,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 0
+	`swap_with_not`.`BoolValue` <> 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

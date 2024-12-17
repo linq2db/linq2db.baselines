@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[ProductID],
-	IIF([t1].[OrderID_1] IS NOT NULL AND [t1].[OrderID] IS NOT NULL, 1, 0),
+	[t1].[cond],
 	[t1].[OrderID],
 	[t1].[CustomerID],
 	[t1].[EmployeeID],
@@ -36,7 +36,7 @@ FROM
 				[a_Order].[ShipRegion],
 				[a_Order].[ShipPostalCode],
 				[a_Order].[ShipCountry],
-				[od].[OrderID] as [OrderID_1]
+				[od].[OrderID] as [cond]
 			FROM
 				[Order Details] [od]
 					LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]

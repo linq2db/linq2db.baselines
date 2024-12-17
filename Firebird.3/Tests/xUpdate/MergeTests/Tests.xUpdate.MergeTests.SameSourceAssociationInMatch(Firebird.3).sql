@@ -21,7 +21,7 @@ USING (
 	"source_ID",
 	"source_Patient_Diagnosis"
 )
-ON (EXISTS(
+ON ( EXISTS (
 	SELECT
 		*
 	FROM

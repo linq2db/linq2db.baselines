@@ -83,7 +83,7 @@ FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
 			WHERE
-				ili.Suppressed = false
+				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
 		) ia ON ia.InvoiceId = i.InvoiceID
@@ -126,7 +126,7 @@ FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
 			WHERE
-				ili.Suppressed = false
+				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
 		) ia ON ia.InvoiceId = i.InvoiceID

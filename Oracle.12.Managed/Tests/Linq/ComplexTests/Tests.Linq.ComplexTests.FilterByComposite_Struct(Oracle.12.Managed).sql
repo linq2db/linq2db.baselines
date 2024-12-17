@@ -39,12 +39,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @City Varchar2(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street Varchar2(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building Int32
-SET     @Building = 13
 
 SELECT
 	u."user_name" as "Name",
@@ -54,7 +48,8 @@ SELECT
 FROM
 	"UserStruct" u
 WHERE
-	u."city" = :City AND u."street" = :Street AND u."building_number" = :Building
+	u."city" = 'Springwood' AND u."street" = 'Elm Street' AND
+	u."building_number" = 13
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

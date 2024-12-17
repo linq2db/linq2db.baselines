@@ -25,6 +25,15 @@ VALUES
 (2,2),
 (3,3)
 
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[SampleClass] [t],
+	[SampleClass] [t2]
+WHERE
+	[t2].[Value] > @param
+
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32

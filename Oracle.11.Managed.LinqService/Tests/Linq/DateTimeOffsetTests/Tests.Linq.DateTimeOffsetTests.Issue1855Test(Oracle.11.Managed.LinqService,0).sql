@@ -55,8 +55,24 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @id Int32
-SET     @id = 1
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset TimeStampTZ -- DateTimeOffset
+SET     @SomeDateTimeOffset = 08/08/2019 08:08:08 +00:00
+
+INSERT INTO "Issue1855Table"
+(
+	"Id",
+	"SomeDateTimeOffset"
+)
+VALUES
+(
+	:Id,
+	:SomeDateTimeOffset
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 DECLARE @interval Int32
 SET     @interval = 10
 DECLARE @clientSideIn TimeStampTZ -- DateTimeOffset
@@ -69,7 +85,7 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."Id" = :id AND r."SomeDateTimeOffset" + :interval * INTERVAL '1' SECOND >= :clientSideIn
+	r."SomeDateTimeOffset" + :interval * INTERVAL '1' SECOND >= :clientSideIn
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

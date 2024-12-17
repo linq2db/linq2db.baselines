@@ -11,7 +11,7 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
+	@ID,
 	100,
 	200
 )

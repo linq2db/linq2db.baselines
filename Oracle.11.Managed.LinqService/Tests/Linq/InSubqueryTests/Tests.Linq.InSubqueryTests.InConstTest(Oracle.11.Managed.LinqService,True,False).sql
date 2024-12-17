@@ -7,7 +7,7 @@ SELECT
 FROM
 	"Parent" c_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

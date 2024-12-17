@@ -3,12 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				Person t1
-		) THEN 't'
+		)
+			THEN 't'
 		ELSE 'f'
 	END::BOOLEAN
 FROM table(set{1})

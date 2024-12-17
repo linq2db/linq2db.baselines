@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @param BigInt(8) -- Int64
+SET     @param = 11
 
 INSERT INTO LinqDataTypes
 (
@@ -32,7 +34,7 @@ INSERT INTO LinqDataTypes
 )
 SELECT
 	r.ID,
-	11
+	@param::BigInt
 FROM
 	LinqDataTypes r
 WHERE

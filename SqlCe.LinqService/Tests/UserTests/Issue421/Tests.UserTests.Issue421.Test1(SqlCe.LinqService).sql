@@ -16,6 +16,10 @@ CREATE TABLE [BlobClass]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @BlobValue VarBinary(3) -- Binary
+SET     @BlobValue = 0x010203
 
 INSERT INTO [BlobClass]
 (
@@ -24,8 +28,8 @@ INSERT INTO [BlobClass]
 )
 VALUES
 (
-	1,
-	0x010203
+	@Id,
+	@BlobValue
 )
 
 BeforeExecute

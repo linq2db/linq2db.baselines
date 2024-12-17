@@ -43,10 +43,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Guid Uuid -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
-DECLARE @GuidN Uuid -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
 
 SELECT
 	t1."Id",
@@ -64,8 +60,8 @@ FROM
 			r."Id",
 			5::SmallInt as "Byte",
 			5::SmallInt as "Byte_1",
-			:Guid::uuid as "Guid",
-			:GuidN::uuid as "GuidN",
+			'0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid::uuid as "Guid",
+			'0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid::uuid as "GuidN",
 			'ENUM1_VALUE'::text as "Enum",
 			'ENUM2_VALUE'::text as "EnumN",
 			True::Boolean as "Bool",

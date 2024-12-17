@@ -191,7 +191,7 @@ SELECT
 FROM
 	"Issue3631Table" "x"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

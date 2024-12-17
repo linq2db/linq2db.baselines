@@ -76,7 +76,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	s."Int" <> @value
+	 NOT EXISTS (
+		SELECT
+			s."Int"
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -88,7 +96,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.NullableInt IS NULL OR s.NullableInt <> @value
+	 NOT EXISTS (
+		SELECT
+			s.NullableInt
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -100,7 +116,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	s."Int" = @value
+	 EXISTS (
+		SELECT
+			s."Int"
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -112,7 +136,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	NOT (s.NullableInt IS NULL OR s.NullableInt <> @value)
+	 EXISTS (
+		SELECT
+			s.NullableInt
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix

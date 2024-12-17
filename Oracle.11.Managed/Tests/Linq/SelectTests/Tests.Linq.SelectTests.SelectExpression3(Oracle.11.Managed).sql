@@ -38,13 +38,11 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int16
-SET     @p = 1
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	:p
+	1
 FROM
 	"SelectExpressionTable" t1
 WHERE

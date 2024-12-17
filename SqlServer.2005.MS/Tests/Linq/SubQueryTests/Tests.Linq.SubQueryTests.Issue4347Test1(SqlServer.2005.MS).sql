@@ -53,26 +53,21 @@ FROM
 		FROM
 			[TransactionEntity] [x]
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
-					*
+					[a_Lines].[Currency]
+				FROM
+					[LineEntity] [a_Lines]
+				WHERE
+					[x].[Id] = [a_Lines].[TransactionId]
+				INTERSECT
+				SELECT
+					[t1].[item]
 				FROM
 					(
-						SELECT
-							[a_Lines].[Currency]
-						FROM
-							[LineEntity] [a_Lines]
-						WHERE
-							[x].[Id] = [a_Lines].[TransactionId]
-						INTERSECT
-						SELECT
-							[t1].[item] as [Currency]
-						FROM
-							(
-								SELECT N'A' AS [item]
-								UNION ALL
-								SELECT N'B') [t1]
-					) [t2]
+						SELECT N'A' AS [item]
+						UNION ALL
+						SELECT N'B') [t1]
 			)
 	) [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
@@ -88,26 +83,21 @@ SELECT
 FROM
 	[TransactionEntity] [x]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			*
+			[a_Lines].[Currency]
+		FROM
+			[LineEntity] [a_Lines]
+		WHERE
+			[x].[Id] = [a_Lines].[TransactionId]
+		INTERSECT
+		SELECT
+			[t1].[item]
 		FROM
 			(
-				SELECT
-					[a_Lines].[Currency]
-				FROM
-					[LineEntity] [a_Lines]
-				WHERE
-					[x].[Id] = [a_Lines].[TransactionId]
-				INTERSECT
-				SELECT
-					[t1].[item] as [Currency]
-				FROM
-					(
-						SELECT N'A' AS [item]
-						UNION ALL
-						SELECT N'B') [t1]
-			) [t2]
+				SELECT N'A' AS [item]
+				UNION ALL
+				SELECT N'B') [t1]
 	)
 ORDER BY
 	[x].[ValidOn]

@@ -13,12 +13,11 @@ CREATE TABLE IF NOT EXISTS "Issue680Table"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @DateTime Timestamp -- DateTime2
-SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	COUNT(CASE
-		WHEN g_1."TimeStamp" > :DateTime THEN 1
+		WHEN g_1."TimeStamp" > '2020-02-29 17:54:55.123'::timestamp
+			THEN 1
 		ELSE NULL
 	END)
 FROM

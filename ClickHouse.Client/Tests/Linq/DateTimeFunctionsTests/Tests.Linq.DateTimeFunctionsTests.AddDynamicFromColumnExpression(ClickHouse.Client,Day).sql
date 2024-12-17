@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	addDays(t.DateTimeValue, toInt32(t.SmallIntValue))
+	addDays(t.DateTimeValue, t.SmallIntValue)
 FROM
 	LinqDataTypes t
 

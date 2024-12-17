@@ -3,12 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				"Child" t1
-		) THEN True
+		)
+			THEN True
 		ELSE False
 	END,
 	CASE
@@ -20,12 +21,13 @@ FROM
 UNION ALL
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				"Child" t2
-		) THEN True
+		)
+			THEN True
 		ELSE False
 	END,
 	NULL::Boolean

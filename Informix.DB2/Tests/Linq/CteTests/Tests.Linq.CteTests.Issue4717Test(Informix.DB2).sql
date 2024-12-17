@@ -169,7 +169,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@productId::Int,
+	@productId,
 	'123-SKU',
 	'Test 123 Sku',
 	1
@@ -189,7 +189,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@includedProductId::Int,
+	@includedProductId,
 	'ABC-SKU',
 	'Test ABC Sku',
 	1
@@ -210,8 +210,8 @@ INSERT INTO Issue4717ProductIncludedProductMapping
 )
 VALUES
 (
-	@productId::Int,
-	@includedProductId::Int,
+	@productId,
+	@includedProductId,
 	10
 )
 
@@ -229,7 +229,7 @@ INSERT INTO Issue4717WarehouseProductMapping
 VALUES
 (
 	1,
-	@productId::Int,
+	@productId,
 	10
 )
 
@@ -249,7 +249,7 @@ AS
 )
 SELECT
 	source.ProductId,
-	t1.StockOnHand,
+	t1.cond,
 	(
 		SELECT
 			SUM(wp_1.StockOnHand)
@@ -263,7 +263,7 @@ FROM
 		INNER JOIN Issue4717ProductIncludedProductMapping includedProductMapping ON source.ProductId = includedProductMapping.ProductId
 		LEFT JOIN (
 			SELECT
-				wp.StockOnHand,
+				wp.StockOnHand as cond,
 				ROW_NUMBER() OVER (PARTITION BY wp.WarehouseId ORDER BY wp.WarehouseId) as rn,
 				wp.WarehouseId
 			FROM

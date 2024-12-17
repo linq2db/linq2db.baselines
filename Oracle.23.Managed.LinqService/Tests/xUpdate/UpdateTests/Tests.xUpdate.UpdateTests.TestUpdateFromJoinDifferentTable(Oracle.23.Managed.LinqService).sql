@@ -132,9 +132,9 @@ SET
 			"gt_s_one_target"."id" = t2_1."id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"gt_s_one" x
 				INNER JOIN "gt_s_one_target" t2 ON x."id" = t2."id"

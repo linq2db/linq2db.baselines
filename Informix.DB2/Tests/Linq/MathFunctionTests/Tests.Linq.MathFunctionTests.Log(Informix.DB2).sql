@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Floor(LogN(p.MoneyValue::Float)) as c1
+			Floor(LogN(p.MoneyValue::Float)) as Value_1
 		FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> 0.10000000000000001
+	t.Value_1 <> 0.10000000000000001
 

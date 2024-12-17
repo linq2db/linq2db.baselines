@@ -230,8 +230,6 @@ DECLARE @Val1 Integer -- Int32
 SET     @Val1 = 1
 DECLARE @Val3 Integer -- Int32
 SET     @Val3 = 3
-DECLARE @Val5_1 Integer -- Int32
-SET     @Val5_1 = 5
 DECLARE @p Integer -- Int32
 SET     @p = 125
 
@@ -268,6 +266,6 @@ VALUES
 WHEN MATCHED AND "Source"."source_Id" = :Val3 THEN
 UPDATE
 SET
-	"Field4" = :Val5_1
+	"Field4" = :Val5
 WHEN MATCHED AND "Target"."Field3" = :p THEN DELETE
 

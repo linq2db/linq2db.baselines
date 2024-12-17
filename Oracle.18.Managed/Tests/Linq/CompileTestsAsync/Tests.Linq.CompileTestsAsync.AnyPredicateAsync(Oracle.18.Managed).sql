@@ -52,9 +52,9 @@ SET     @p = 2
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"AsyncDataTable" c_1
 			WHERE

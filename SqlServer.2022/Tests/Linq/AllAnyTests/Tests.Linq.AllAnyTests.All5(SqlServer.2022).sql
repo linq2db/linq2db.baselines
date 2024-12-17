@@ -4,7 +4,7 @@ DECLARE @n Int -- Int32
 SET     @n = 3
 
 SELECT
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

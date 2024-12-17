@@ -37,8 +37,8 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[m_1].[c1],
-	[m_1].[c2],
+	[m_1].[cond],
+	[m_1].[cond_1],
 	[d].[Id],
 	[d].[FormId],
 	[d].[OrderIndex],
@@ -49,8 +49,8 @@ FROM
 	(
 		SELECT TOP 1
 			[t1].[Id],
-			IIF([t1].[C1] = 'T', True, False) as [c1],
-			IIF([t1].[C1] <> 'T', True, False) as [c2]
+			IIF([t1].[C1] = 'T', True, False) as [cond],
+			IIF([t1].[C1] <> 'T', True, False) as [cond_1]
 		FROM
 			[Issue4596Form] [t1]
 	) [m_1],
@@ -58,10 +58,10 @@ FROM
 WHERE
 	[d].[FormId] = [m_1].[Id]
 ORDER BY
-	IIF([m_1].[c1] = True, [d].[OrderIndex], 0),
-	IIF([m_1].[c2] = True, [d].[Name1], ''),
-	IIF([m_1].[c2] = True, [d].[Name2], ''),
-	IIF([m_1].[c2] = True, [d].[Name3], '')
+	IIF([m_1].[cond], [d].[OrderIndex], 0),
+	IIF([m_1].[cond_1], [d].[Name1], ''),
+	IIF([m_1].[cond_1], [d].[Name2], ''),
+	IIF([m_1].[cond_1], [d].[Name3], '')
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

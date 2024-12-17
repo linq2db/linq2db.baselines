@@ -42,12 +42,6 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @City NVarChar(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street NVarChar(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building Int -- Int32
-SET     @Building = 13
 
 SELECT TOP 2
 	[u].[user_name],
@@ -57,7 +51,8 @@ SELECT TOP 2
 FROM
 	[User] [u]
 WHERE
-	[u].[city] = ? AND [u].[street] = ? AND [u].[building_number] = ?
+	[u].[city] = 'Springwood' AND [u].[street] = 'Elm Street' AND
+	[u].[building_number] = 13
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

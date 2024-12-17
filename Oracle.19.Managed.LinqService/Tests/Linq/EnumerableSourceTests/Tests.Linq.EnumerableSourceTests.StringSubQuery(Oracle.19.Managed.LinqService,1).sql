@@ -10,9 +10,9 @@ SELECT
 FROM
 	"Person" t
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT 'j' AS "item" FROM sys.dual

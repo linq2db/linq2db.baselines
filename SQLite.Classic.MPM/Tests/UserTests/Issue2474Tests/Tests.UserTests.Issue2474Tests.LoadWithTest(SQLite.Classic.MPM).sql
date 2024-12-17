@@ -56,7 +56,7 @@ SELECT
 	[n].[NR],
 	[n].[DATUM],
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM

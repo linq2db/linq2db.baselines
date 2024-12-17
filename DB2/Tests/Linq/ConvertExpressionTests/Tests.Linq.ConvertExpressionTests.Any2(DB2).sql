@@ -3,15 +3,15 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Parent" "p"
 			WHERE
-				EXISTS(
+				 EXISTS (
 					SELECT
-						1
+						*
 					FROM
 						"Child" "c_1"
 					WHERE

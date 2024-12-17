@@ -136,9 +136,9 @@ FROM
 		INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON "b"."FkBookId" = "a_Book"."BookId"
 WHERE
-	"a_Book"."Discriminator" = 'Roman' AND EXISTS(
+	"a_Book"."Discriminator" = 'Roman' AND  EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Author" "t2"
 				INNER JOIN "BookAuthor" "b_1" ON "b_1"."FkAuthorId" = "t2"."AuthorId"

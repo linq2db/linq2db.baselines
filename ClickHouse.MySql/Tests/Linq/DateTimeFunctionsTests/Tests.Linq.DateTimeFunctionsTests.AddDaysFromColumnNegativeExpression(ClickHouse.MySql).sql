@@ -32,7 +32,7 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = 5000 AND addDays(t.DateTimeValue, toInt32(t.SmallIntValue)) < makeDateTime(2018, 1, 2, 0, 0, 0)
+	t.ID = 5000 AND addDays(t.DateTimeValue, t.SmallIntValue) < makeDateTime(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

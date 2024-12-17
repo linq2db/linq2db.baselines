@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @param NVarChar(4) -- String
-SET     @param = 'john'
+SET     @param = 'JOHN'
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Upper("p"."FirstName") = Upper(?) AND "p"."PersonID" = 1
+	Upper("p"."FirstName") = ? AND "p"."PersonID" = 1
 

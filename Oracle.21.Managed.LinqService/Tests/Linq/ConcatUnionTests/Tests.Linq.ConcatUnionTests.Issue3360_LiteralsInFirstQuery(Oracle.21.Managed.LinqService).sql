@@ -177,10 +177,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Guid Raw(16) -- Binary
-SET     @Guid = HEXTORAW('27FE8A0B1C482E44B8CF729DDFEECE29')
-DECLARE @GuidN Raw(16) -- Binary
-SET     @GuidN = HEXTORAW('27FE8A0B1C482E44B8CF729DDFEECE30')
 
 SELECT
 	t1."Id",
@@ -198,8 +194,8 @@ FROM
 			r."Id",
 			CAST(5 AS Number(3)) as "Byte",
 			CAST(5 AS Number(3)) as "Byte_1",
-			CAST(:Guid AS Raw(16)) as "Guid",
-			CAST(:GuidN AS Raw(16)) as "GuidN",
+			CAST(HEXTORAW('27FE8A0B1C482E44B8CF729DDFEECE29') AS Raw(16)) as "Guid",
+			CAST(HEXTORAW('27FE8A0B1C482E44B8CF729DDFEECE30') AS Raw(16)) as "GuidN",
 			CAST('ENUM1_VALUE' AS VarChar(11)) as "Enum",
 			CAST('ENUM2_VALUE' AS VarChar(11)) as "EnumN",
 			CAST(1 AS Char(1)) as "Bool",

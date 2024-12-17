@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
+DECLARE @value DateTime
+SET     @value = #2001-01-11 01:11:21#
+DECLARE @value DateTime
+SET     @value = #2012-11-07 19:19:29#
 
 SELECT
 	[t].[ID],
@@ -15,5 +19,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (#2001-01-11 01:11:21#, #2012-11-07 19:19:29#)
+	[t].[DateTimeValue] IN (?, ?)
 

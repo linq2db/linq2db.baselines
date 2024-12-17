@@ -7,15 +7,15 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Child" "c_1"
 		WHERE
-			"p"."ParentID" = "c_1"."ParentID" AND EXISTS(
+			"p"."ParentID" = "c_1"."ParentID" AND  EXISTS (
 				SELECT
-					1
+					*
 				FROM
 					"GrandChild" "g_1"
 				WHERE

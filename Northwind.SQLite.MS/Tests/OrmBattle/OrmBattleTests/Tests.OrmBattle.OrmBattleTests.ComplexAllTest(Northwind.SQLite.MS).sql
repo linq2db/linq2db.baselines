@@ -21,7 +21,7 @@ FROM
 		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM
@@ -30,7 +30,7 @@ WHERE
 			[c_1].[CustomerID] = [a_Customer].[CustomerID] AND
 			[c_1].[CompanyName] NOT LIKE 'A%' ESCAPE '~'
 	) OR
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

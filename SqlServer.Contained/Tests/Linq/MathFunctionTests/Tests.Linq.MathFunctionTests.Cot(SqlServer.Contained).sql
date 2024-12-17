@@ -2,14 +2,14 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Floor(Cot(CAST([p].[MoneyValue] AS Float) / 15) * 15) as [c1]
+			Floor(Cot(CAST([p].[MoneyValue] AS Float) / 15) * 15) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0.10000000000000001
+	[t].[Value_1] <> 0.10000000000000001
 

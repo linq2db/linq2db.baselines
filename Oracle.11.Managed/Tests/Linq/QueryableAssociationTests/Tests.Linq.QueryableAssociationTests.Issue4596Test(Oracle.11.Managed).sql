@@ -69,8 +69,8 @@ BeforeExecute
 
 SELECT
 	m_1."Id",
-	m_1."c1",
-	m_1."c2",
+	m_1."cond",
+	m_1."cond_1",
 	d."Id",
 	d."FormId",
 	d."OrderIndex",
@@ -84,11 +84,11 @@ FROM
 			CASE
 				WHEN t1.C1 = 'T' THEN 1
 				ELSE 0
-			END as "c1",
+			END as "cond",
 			CASE
 				WHEN t1.C1 <> 'T' THEN 1
 				ELSE 0
-			END as "c2"
+			END as "cond_1"
 		FROM
 			"Issue4596Form" t1
 		WHERE
@@ -99,19 +99,19 @@ WHERE
 	d."FormId" = m_1."Id"
 ORDER BY
 	CASE
-		WHEN m_1."c1" = 1 THEN d."OrderIndex"
+		WHEN m_1."cond" = 1 THEN d."OrderIndex"
 		ELSE 0
 	END,
 	CASE
-		WHEN m_1."c2" = 1 THEN d."Name1"
+		WHEN m_1."cond_1" = 1 THEN d."Name1"
 		ELSE ''
 	END,
 	CASE
-		WHEN m_1."c2" = 1 THEN d."Name2"
+		WHEN m_1."cond_1" = 1 THEN d."Name2"
 		ELSE ''
 	END,
 	CASE
-		WHEN m_1."c2" = 1 THEN d."Name3"
+		WHEN m_1."cond_1" = 1 THEN d."Name3"
 		ELSE ''
 	END
 

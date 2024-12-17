@@ -301,9 +301,9 @@ SET
 			"t_1"."id" <> @someId AND "UpdatedEntities"."id" = "c_2"."id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"UpdatedEntities" "c_1"
 				INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"

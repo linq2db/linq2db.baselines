@@ -26,8 +26,6 @@ END
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2019-01-01' AS timestamp)
 
 SELECT
 	"t1"."Year_1",
@@ -48,7 +46,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n".DATUM < @p
+			"n".DATUM < CAST('2019-01-01' AS timestamp)
 	) "t1"
 GROUP BY
 	"t1"."Year_1",

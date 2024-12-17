@@ -3,13 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				Parent p
 			WHERE
-				EXISTS(
+				 EXISTS (
 					SELECT
 						*
 					FROM

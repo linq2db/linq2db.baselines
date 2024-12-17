@@ -31,7 +31,7 @@ SELECT
 FROM
 	"TableToInsert" "t"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

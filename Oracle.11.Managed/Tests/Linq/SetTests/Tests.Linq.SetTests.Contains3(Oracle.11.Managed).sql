@@ -7,9 +7,9 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Child" param
 				LEFT JOIN "Parent" a_Parent ON param."ParentID" = a_Parent."ParentID"

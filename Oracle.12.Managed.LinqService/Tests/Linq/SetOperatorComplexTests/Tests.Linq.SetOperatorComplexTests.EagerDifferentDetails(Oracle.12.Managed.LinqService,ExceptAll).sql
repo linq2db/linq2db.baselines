@@ -561,15 +561,7 @@ FROM
 				INNER JOIN "BookAuthor" b ON b."FkAuthorId" = t1."AuthorId"
 				LEFT JOIN "Book" a_Book ON b."FkBookId" = a_Book."BookId"
 		WHERE
-			a_Book."Discriminator" = 'Roman' AND NOT EXISTS(
-				SELECT
-					1
-				FROM
-					"Author" t2
-						INNER JOIN "BookAuthor" b_1 ON b_1."FkAuthorId" = t2."AuthorId"
-				WHERE
-					1 = 0
-			)
+			a_Book."Discriminator" = 'Roman'
 	) m_1
 		INNER JOIN "BookAuthor" d ON d."FkBookId" = m_1."BookId"
 		LEFT JOIN "Author" a_Author ON d."FkAuthorId" = a_Author."AuthorId"
@@ -585,15 +577,7 @@ FROM
 		INNER JOIN "BookAuthor" b ON b."FkAuthorId" = t1."AuthorId"
 		LEFT JOIN "Book" a_Book ON b."FkBookId" = a_Book."BookId"
 WHERE
-	a_Book."Discriminator" = 'Roman' AND NOT EXISTS(
-		SELECT
-			1
-		FROM
-			"Author" t2
-				INNER JOIN "BookAuthor" b_1 ON b_1."FkAuthorId" = t2."AuthorId"
-		WHERE
-			1 = 0
-	)
+	a_Book."Discriminator" = 'Roman'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

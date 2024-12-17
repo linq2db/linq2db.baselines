@@ -7,7 +7,7 @@ SET     @p = 532266661
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM

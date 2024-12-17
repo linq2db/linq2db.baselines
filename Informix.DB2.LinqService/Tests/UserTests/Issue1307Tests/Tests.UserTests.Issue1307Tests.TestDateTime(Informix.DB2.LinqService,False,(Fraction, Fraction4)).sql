@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Fraction to fraction(4)
+	@input
 )
 
 BeforeExecute

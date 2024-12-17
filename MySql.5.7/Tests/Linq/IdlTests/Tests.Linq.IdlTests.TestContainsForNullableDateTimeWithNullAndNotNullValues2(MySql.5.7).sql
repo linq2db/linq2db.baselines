@@ -17,13 +17,11 @@ FROM
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @DateTimeValue2 Datetime -- DateTime
-SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
 	COUNT(*)
 FROM
 	`LinqDataTypes` `x`
 WHERE
-	(`x`.`DateTimeValue2` IN (@DateTimeValue2) OR `x`.`DateTimeValue2` IS NULL)
+	(`x`.`DateTimeValue2` IN ('2009-09-24 09:19:29.090') OR `x`.`DateTimeValue2` IS NULL)
 

@@ -122,8 +122,8 @@ END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @DeliveryCounterParty VarChar(3) -- String
-SET     @DeliveryCounterParty = '%C%'
+DECLARE @cond VarChar(3) -- String
+SET     @cond = '%C%'
 
 SELECT
 	"al_group_2"."AlertKey",
@@ -149,7 +149,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_2" ON "t1"."AlertKey" = "trade_2"."DealId"
 				LEFT JOIN "Nomin" "nomin_2" ON "t1"."AlertKey" = "nomin_2"."CargoId"
 		WHERE
-			("nomin_2"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_2"."CounterParty" LIKE @DeliveryCounterParty OR "t1"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_2"."DeliveryCounterParty" LIKE @cond OR "trade_2"."CounterParty" LIKE @cond OR "t1"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t1"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t1"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t1"."CreationDate"
@@ -175,7 +175,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_3" ON "t2"."AlertKey" = "trade_3"."DealId"
 				LEFT JOIN "Nomin" "nomin_3" ON "t2"."AlertKey" = "nomin_3"."CargoId"
 		WHERE
-			("nomin_3"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_3"."CounterParty" LIKE @DeliveryCounterParty OR "t2"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_3"."DeliveryCounterParty" LIKE @cond OR "trade_3"."CounterParty" LIKE @cond OR "t2"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t2"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t2"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t2"."CreationDate"
@@ -201,7 +201,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_4" ON "t3"."AlertKey" = "trade_4"."DealId"
 				LEFT JOIN "Nomin" "nomin_4" ON "t3"."AlertKey" = "nomin_4"."CargoId"
 		WHERE
-			("nomin_4"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_4"."CounterParty" LIKE @DeliveryCounterParty OR "t3"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_4"."DeliveryCounterParty" LIKE @cond OR "trade_4"."CounterParty" LIKE @cond OR "t3"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t3"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t3"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t3"."CreationDate"
@@ -227,7 +227,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_5" ON "t4"."AlertKey" = "trade_5"."DealId"
 				LEFT JOIN "Nomin" "nomin_5" ON "t4"."AlertKey" = "nomin_5"."CargoId"
 		WHERE
-			("nomin_5"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_5"."CounterParty" LIKE @DeliveryCounterParty OR "t4"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_5"."DeliveryCounterParty" LIKE @cond OR "trade_5"."CounterParty" LIKE @cond OR "t4"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t4"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t4"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t4"."CreationDate"
@@ -253,7 +253,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_6" ON "t5"."AlertKey" = "trade_6"."DealId"
 				LEFT JOIN "Nomin" "nomin_6" ON "t5"."AlertKey" = "nomin_6"."CargoId"
 		WHERE
-			("nomin_6"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_6"."CounterParty" LIKE @DeliveryCounterParty OR "t5"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_6"."DeliveryCounterParty" LIKE @cond OR "trade_6"."CounterParty" LIKE @cond OR "t5"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t5"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t5"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t5"."CreationDate"
@@ -279,7 +279,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_7" ON "t6"."AlertKey" = "trade_7"."DealId"
 				LEFT JOIN "Nomin" "nomin_7" ON "t6"."AlertKey" = "nomin_7"."CargoId"
 		WHERE
-			("nomin_7"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_7"."CounterParty" LIKE @DeliveryCounterParty OR "t6"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_7"."DeliveryCounterParty" LIKE @cond OR "trade_7"."CounterParty" LIKE @cond OR "t6"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t6"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t6"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t6"."CreationDate"
@@ -305,7 +305,7 @@ SELECT
 				LEFT JOIN "Trade" "trade_8" ON "t7"."AlertKey" = "trade_8"."DealId"
 				LEFT JOIN "Nomin" "nomin_8" ON "t7"."AlertKey" = "nomin_8"."CargoId"
 		WHERE
-			("nomin_8"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_8"."CounterParty" LIKE @DeliveryCounterParty OR "t7"."AlertCode" LIKE @DeliveryCounterParty) AND
+			("nomin_8"."DeliveryCounterParty" LIKE @cond OR "trade_8"."CounterParty" LIKE @cond OR "t7"."AlertCode" LIKE @cond) AND
 			"al_group_2"."AlertKey" = "t7"."AlertKey" AND
 			"al_group_2"."AlertCode" = "t7"."AlertCode" AND
 			"al_group_2"."CreationDate" = "t7"."CreationDate"
@@ -333,9 +333,8 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = "trade_1"."DealId"
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = "nomin_1"."CargoId"
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-			"trade_1"."CounterParty" LIKE @DeliveryCounterParty OR
-			"al_group_1"."AlertCode" LIKE @DeliveryCounterParty
+			"nomin_1"."DeliveryCounterParty" LIKE @cond OR "trade_1"."CounterParty" LIKE @cond OR
+			"al_group_1"."AlertCode" LIKE @cond
 		GROUP BY
 			"al_group_1"."AlertKey",
 			"al_group_1"."AlertCode",

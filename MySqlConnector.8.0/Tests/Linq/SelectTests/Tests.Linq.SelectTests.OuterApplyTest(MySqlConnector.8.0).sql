@@ -27,7 +27,7 @@ FROM
 			`c1_1`.`ParentID` as `ParentID_1`,
 			`c1_1`.`ChildID`,
 			CASE
-				WHEN EXISTS(
+				WHEN  EXISTS (
 					SELECT
 						*
 					FROM

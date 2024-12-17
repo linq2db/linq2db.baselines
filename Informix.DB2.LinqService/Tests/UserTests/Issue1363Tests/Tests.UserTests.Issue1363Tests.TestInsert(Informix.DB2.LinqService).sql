@@ -24,7 +24,7 @@ INSERT INTO Issue1363
 )
 VALUES
 (
-	@id::VARCHAR(36),
+	@id,
 	(
 		SELECT
 			t1.required_field
@@ -49,7 +49,7 @@ INSERT INTO Issue1363
 )
 VALUES
 (
-	@id::VARCHAR(36),
+	@id,
 	(
 		SELECT
 			t1.required_field

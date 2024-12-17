@@ -18,8 +18,6 @@ CREATE COLUMN TABLE "Issue3761Table"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
-SET     @p = '2019-01-01'
 
 SELECT
 	"t1"."Year_1",
@@ -40,7 +38,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n"."DATUM" < ?
+			"n"."DATUM" < '2019-01-01'
 	) "t1"
 GROUP BY
 	"t1"."Year_1",

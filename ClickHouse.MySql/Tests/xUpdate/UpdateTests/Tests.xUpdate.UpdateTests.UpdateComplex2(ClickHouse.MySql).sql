@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	LastName = FirstName
 WHERE
-	startsWith(FirstName, 'UpdateComplex') = true
+	startsWith(FirstName, 'UpdateComplex')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

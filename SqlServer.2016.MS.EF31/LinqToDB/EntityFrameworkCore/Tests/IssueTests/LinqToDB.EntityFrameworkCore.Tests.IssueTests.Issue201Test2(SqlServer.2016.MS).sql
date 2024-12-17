@@ -5,7 +5,7 @@ SELECT
 FROM
 	[Parents] [x]
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

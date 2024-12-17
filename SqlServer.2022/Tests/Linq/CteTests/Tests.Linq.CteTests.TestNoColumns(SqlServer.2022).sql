@@ -50,7 +50,7 @@ AS
 		[Child] [c_1]
 )
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

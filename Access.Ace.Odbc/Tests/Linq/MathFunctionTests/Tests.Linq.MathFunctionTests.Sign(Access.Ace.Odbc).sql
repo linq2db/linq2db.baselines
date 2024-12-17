@@ -2,14 +2,14 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Sgn([p].[MoneyValue]) as [c1]
+			Sgn([p].[MoneyValue]) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0
+	[t].[Value_1] <> 0
 

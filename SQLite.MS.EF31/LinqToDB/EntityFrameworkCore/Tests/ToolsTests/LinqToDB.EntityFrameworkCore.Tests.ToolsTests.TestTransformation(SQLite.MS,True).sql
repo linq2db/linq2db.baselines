@@ -21,7 +21,7 @@ FROM
 	[Products] [p]
 		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
 WHERE
-	[p].[IsDeleted] = 0 AND [c_1].[IsDeleted] = 0
+	NOT [p].[IsDeleted] AND NOT [c_1].[IsDeleted]
 
 
 

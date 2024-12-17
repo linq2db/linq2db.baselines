@@ -161,10 +161,6 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Guid Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 SELECT
 	`t1`.`Id`,
@@ -182,8 +178,8 @@ FROM
 			`r`.`Id`,
 			CAST(5 AS UNSIGNED) as `Byte`,
 			CAST(5 AS UNSIGNED) as `Byte_1`,
-			CAST(@Guid AS CHAR(36)) as `Guid`,
-			CAST(@GuidN AS CHAR(36)) as `GuidN`,
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece29' AS CHAR(36)) as `Guid`,
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece30' AS CHAR(36)) as `GuidN`,
 			CAST('ENUM1_VALUE' AS CHAR(11)) as `Enum`,
 			CAST('ENUM2_VALUE' AS CHAR(11)) as `EnumN`,
 			CAST(1 AS SIGNED) as `Bool`,

@@ -2,14 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Round("p"."MoneyValue", 0, ROUND_DOWN) as "c1"
+			Round("p"."MoneyValue", 0, ROUND_DOWN) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	"t"."c1" <> 0.1
+	"t"."Value_1" <> 0.1
 

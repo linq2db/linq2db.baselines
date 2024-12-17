@@ -6,7 +6,7 @@ SELECT
 	[c_1].[ParentID],
 	[t1].[COUNT_1],
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -18,7 +18,7 @@ SELECT
 		ELSE 0
 	END as [HasChildren],
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
 				*
 			FROM

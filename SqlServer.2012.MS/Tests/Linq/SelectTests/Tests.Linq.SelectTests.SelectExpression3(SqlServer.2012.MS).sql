@@ -29,11 +29,9 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @p Bit -- Boolean
-SET     @p = 1
 
 SELECT TOP (@take)
-	@p
+	1
 FROM
 	[SelectExpressionTable] [t1]
 

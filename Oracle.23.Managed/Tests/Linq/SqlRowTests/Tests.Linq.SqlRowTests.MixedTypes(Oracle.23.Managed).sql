@@ -48,9 +48,9 @@ FROM
 	"Mixed" t
 WHERE
 	t."Int" > 0 AND (t."Str", t."Double", t."Bool") = (('One', 1D, 1)) AND
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Mixed" u
 		WHERE

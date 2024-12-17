@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(r.CaseSensitive, 'stString') = true
+	endsWith(r.CaseSensitive, 'stString')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(r.CaseInsensitive, 'stString') = true
+	endsWith(r.CaseInsensitive, 'stString')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(r.CaseSensitive, 'ststring') = true
+	endsWith(r.CaseSensitive, 'ststring')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(r.CaseInsensitive, 'ststring') = true
+	endsWith(r.CaseInsensitive, 'ststring')
 

@@ -48,7 +48,7 @@ AS
 DELETE FROM
 	"CteChild" t1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			ct."ParentID"
 		FROM

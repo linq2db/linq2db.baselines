@@ -173,8 +173,6 @@ IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @Empty UniqueIdentifier -- Guid
-SET     @Empty = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -194,7 +192,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -224,7 +222,7 @@ SELECT
 		WHERE
 			[x_17].[Status] < 99 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -232,14 +230,14 @@ SELECT
 		WHERE
 			[x_18].[ResourceID] = [c1].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 99 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -248,7 +246,7 @@ SELECT
 					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
 			))
 	), 1, 0),
-	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty OR [a2].[Id] IS NULL), 1, 0),
+	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL), 1, 0),
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],
@@ -278,7 +276,7 @@ SELECT
 		WHERE
 			[x_20].[Status] < 99 AND [x_20].[ResourceID] = [c2].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -286,14 +284,14 @@ SELECT
 		WHERE
 			[x_21].[ResourceID] = [c2].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_22]
 		WHERE
 			[x_22].[Status] < 99 AND [x_22].[ResourceID] = [c2].[Id] AND
-			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_22].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM

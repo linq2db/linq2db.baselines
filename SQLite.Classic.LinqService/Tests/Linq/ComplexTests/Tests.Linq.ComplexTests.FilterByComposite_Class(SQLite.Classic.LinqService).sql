@@ -42,12 +42,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @City NVarChar(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street NVarChar(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building  -- Int32
-SET     @Building = 13
 
 SELECT
 	[u].[user_name],
@@ -57,7 +51,8 @@ SELECT
 FROM
 	[User] [u]
 WHERE
-	[u].[city] = @City AND [u].[street] = @Street AND [u].[building_number] = @Building
+	[u].[city] = 'Springwood' AND [u].[street] = 'Elm Street' AND
+	[u].[building_number] = 13
 LIMIT 2
 
 BeforeExecute

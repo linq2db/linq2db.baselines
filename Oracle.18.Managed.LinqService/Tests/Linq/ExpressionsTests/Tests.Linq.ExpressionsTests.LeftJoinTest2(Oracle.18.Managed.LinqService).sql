@@ -8,9 +8,9 @@ SELECT
 FROM
 	"GrandChild" g_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Child" t
 				LEFT JOIN "Parent" i ON t."ParentID" = i."ParentID"

@@ -97,7 +97,7 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM
@@ -106,7 +106,7 @@ WHERE
 				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
 		WHERE
 			[a_Customer].[CustomerID] = [c_1].[CustomerID] AND
-			NOT EXISTS(
+			 NOT EXISTS (
 				SELECT
 					*
 				FROM

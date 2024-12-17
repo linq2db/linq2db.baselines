@@ -302,9 +302,9 @@ SET
 			"UpdatedEntities"."id" = "c_2"."id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"UpdatedEntities" "c_1",
 			"NewEntities" "t"

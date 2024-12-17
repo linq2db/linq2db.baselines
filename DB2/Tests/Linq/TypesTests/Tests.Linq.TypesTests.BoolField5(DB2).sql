@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."BoolValue" = 1
+	"p"."BoolValue"
 

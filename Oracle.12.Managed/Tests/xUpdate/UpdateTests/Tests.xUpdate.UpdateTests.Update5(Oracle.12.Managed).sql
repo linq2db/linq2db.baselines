@@ -38,7 +38,7 @@ UPDATE
 SET
 	"ChildID" = :ChildID
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

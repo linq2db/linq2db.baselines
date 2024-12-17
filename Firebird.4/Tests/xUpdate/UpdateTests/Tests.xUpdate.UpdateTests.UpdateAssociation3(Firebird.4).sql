@@ -34,7 +34,7 @@ UPDATE
 SET
 	"Value1" = 5
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

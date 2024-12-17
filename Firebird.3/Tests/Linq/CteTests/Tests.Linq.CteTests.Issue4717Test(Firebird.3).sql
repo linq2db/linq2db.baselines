@@ -217,7 +217,7 @@ INSERT INTO "Issue4717Product"
 )
 VALUES
 (
-	CAST(@productId AS Int),
+	@productId,
 	'123-SKU',
 	'Test 123 Sku',
 	1
@@ -237,7 +237,7 @@ INSERT INTO "Issue4717Product"
 )
 VALUES
 (
-	CAST(@includedProductId AS Int),
+	@includedProductId,
 	'ABC-SKU',
 	'Test ABC Sku',
 	1
@@ -258,8 +258,8 @@ INSERT INTO "Issue4717ProductIncludedProduct"
 )
 VALUES
 (
-	CAST(@productId AS Int),
-	CAST(@includedProductId AS Int),
+	@productId,
+	@includedProductId,
 	10
 )
 
@@ -277,7 +277,7 @@ INSERT INTO "Issue4717WarehouseProductMappin"
 VALUES
 (
 	1,
-	CAST(@productId AS Int),
+	@productId,
 	10
 )
 

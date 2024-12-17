@@ -18,8 +18,6 @@ CREATE TABLE IF NOT EXISTS Issue3761Table
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p Timestamp(16) -- DateTime
-SET     @p = TO_DATE('2019-01-01', '%Y-%m-%d')
 
 SELECT
 	t1.Year_1,
@@ -40,7 +38,7 @@ FROM
 		FROM
 			Issue3761Table n
 		WHERE
-			n.DATUM < @p
+			n.DATUM < TO_DATE('2019-01-01', '%Y-%m-%d')
 	) t1
 GROUP BY
 	t1.Year_1,

@@ -2,14 +2,14 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Floor(CAST(Power(`p`.`MoneyValue`, CAST(3 AS DOUBLE)) AS DECIMAL(29, 10))) as `c1`
+			Floor(CAST(Power(`p`.`MoneyValue`, CAST(3 AS DOUBLE)) AS DECIMAL(29, 10))) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0
+	`t`.`Value_1` <> 0
 

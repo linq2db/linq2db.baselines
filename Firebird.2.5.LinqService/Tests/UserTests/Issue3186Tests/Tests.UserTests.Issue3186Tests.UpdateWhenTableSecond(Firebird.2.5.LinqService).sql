@@ -320,7 +320,7 @@ UPDATE
 SET
 	"is_deleted" = CAST(@is_deleted AS CHAR(1))
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

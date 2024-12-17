@@ -17,7 +17,7 @@ UPDATE
 SET
 	"ParentID" = "Child"."ParentID"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

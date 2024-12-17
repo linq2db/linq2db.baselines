@@ -56,7 +56,7 @@ BeforeExecute
 DELETE FROM
 	[TableToInsert]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			[r].[Id]
 		FROM

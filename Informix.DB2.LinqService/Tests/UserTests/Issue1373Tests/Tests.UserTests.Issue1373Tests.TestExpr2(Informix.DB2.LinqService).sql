@@ -27,7 +27,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	1,
-	@Field1::NVarChar(255)
+	@Field1
 )
 
 BeforeExecute
@@ -59,7 +59,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	3,
-	@Field1::NVarChar(4)
+	@Field1
 )
 
 BeforeExecute

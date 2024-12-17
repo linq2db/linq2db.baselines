@@ -34,8 +34,6 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @p NChar(1) -- StringFixedLength
 SET     @p = N','
-DECLARE @p_1 NChar(1) -- StringFixedLength
-SET     @p_1 = N','
 
 SELECT
 	[m_1].[ArrayString],
@@ -54,7 +52,7 @@ FROM
 					[STRING_SPLIT]([r].[ArrayString], @p) [r_1]
 			)
 	) [m_1]
-		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], @p_1) [d]
+		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], @p) [d]
 
 BeforeExecute
 DisposeTransaction

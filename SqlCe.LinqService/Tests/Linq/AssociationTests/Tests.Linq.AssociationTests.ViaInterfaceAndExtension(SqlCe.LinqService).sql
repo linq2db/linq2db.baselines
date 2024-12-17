@@ -44,7 +44,7 @@ FROM
 				[x].[Id] = [a_SubEntities].[MainEntityId]
 		) [t1]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

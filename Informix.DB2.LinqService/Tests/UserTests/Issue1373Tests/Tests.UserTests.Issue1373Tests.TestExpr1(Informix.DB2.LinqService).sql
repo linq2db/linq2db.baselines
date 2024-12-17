@@ -30,8 +30,6 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
@@ -41,7 +39,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	2,
-	@Field1::NVarChar(255)
+	NULL
 )
 
 BeforeExecute
@@ -57,7 +55,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	3,
-	@Field1::NVarChar(4)
+	@Field1
 )
 
 BeforeExecute

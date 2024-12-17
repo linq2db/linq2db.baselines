@@ -94,7 +94,7 @@ SELECT
 FROM
 	[SomeTable] [x] WITH (NOLOCK)
 WHERE
-	[x].[Id] = 123 AND EXISTS(
+	[x].[Id] = 123 AND  EXISTS (
 		SELECT
 			*
 		FROM

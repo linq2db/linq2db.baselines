@@ -101,7 +101,7 @@ UPDATE
 SET
 	"Value" = 1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -121,7 +121,7 @@ UPDATE
 SET
 	"Value" = 1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

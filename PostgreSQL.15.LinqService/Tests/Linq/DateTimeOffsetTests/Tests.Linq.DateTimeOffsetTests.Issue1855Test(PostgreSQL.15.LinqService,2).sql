@@ -39,8 +39,24 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @id Integer -- Int32
-SET     @id = 1
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset TimestampTz -- DateTime
+SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+
+INSERT INTO "Issue1855Table"
+(
+	"Id",
+	"SomeDateTimeOffset"
+)
+VALUES
+(
+	:Id,
+	:SomeDateTimeOffset
+)
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
 DECLARE @clientSideIn TimestampTz -- DateTime
 SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
 
@@ -51,7 +67,8 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."Id" = :id AND (:clientSideIn <> r."SomeNullableDateTimeOffset" OR r."SomeNullableDateTimeOffset" IS NULL)
+	:clientSideIn <> r."SomeNullableDateTimeOffset" OR
+	r."SomeNullableDateTimeOffset" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

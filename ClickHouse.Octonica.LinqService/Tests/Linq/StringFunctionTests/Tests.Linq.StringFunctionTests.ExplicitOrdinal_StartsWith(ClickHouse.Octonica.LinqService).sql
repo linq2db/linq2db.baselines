@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(r.CaseSensitive, 'TestSt') = true
+	startsWith(r.CaseSensitive, 'TestSt')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(r.CaseInsensitive, 'TestSt') = true
+	startsWith(r.CaseInsensitive, 'TestSt')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(r.CaseSensitive, 'testst') = true
+	startsWith(r.CaseSensitive, 'testst')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	startsWith(r.CaseInsensitive, 'testst') = true
+	startsWith(r.CaseInsensitive, 'testst')
 

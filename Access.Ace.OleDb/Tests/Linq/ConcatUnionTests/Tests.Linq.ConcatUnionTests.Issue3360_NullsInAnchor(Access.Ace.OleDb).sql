@@ -30,7 +30,7 @@ SET     @Byte = 0
 DECLARE @ByteN UnsignedTinyInt -- Byte
 SET     @ByteN = NULL
 DECLARE @Guid Guid
-SET     @Guid = '{00000000-0000-0000-0000-000000000000}'
+SET     @Guid = {guid {00000000-0000-0000-0000-000000000000}}
 DECLARE @GuidN Guid
 SET     @GuidN = NULL
 DECLARE @Enum WChar(11) -- StringFixedLength
@@ -76,9 +76,9 @@ SET     @Byte = 1
 DECLARE @ByteN UnsignedTinyInt(1) -- Byte
 SET     @ByteN = 2
 DECLARE @Guid Guid
-SET     @Guid = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @Guid = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @GuidN Guid
-SET     @GuidN = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @GuidN = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @Enum WChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN WChar(11) -- StringFixedLength
@@ -122,9 +122,9 @@ SET     @Byte = 3
 DECLARE @ByteN UnsignedTinyInt(1) -- Byte
 SET     @ByteN = 4
 DECLARE @Guid Guid
-SET     @Guid = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @Guid = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 DECLARE @GuidN Guid
-SET     @GuidN = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @GuidN = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @Enum WChar(11) -- StringFixedLength
 SET     @Enum = 'ENUM1_VALUE'
 DECLARE @EnumN WChar(11) -- StringFixedLength
@@ -178,8 +178,8 @@ FROM
 			[r].[Id],
 			IIF(False, 0, NULL) as [Byte],
 			IIF(False, 0, NULL) as [Byte_1],
-			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [Guid],
-			IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL) as [Guid_1],
+			IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL) as [Guid],
+			IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL) as [Guid_1],
 			IIF(False, 'ENUM1_VALUE', NULL) as [Enum],
 			IIF(False, 'ENUM2_VALUE', NULL) as [EnumN],
 			IIF(False, False, NULL) as [Bool],

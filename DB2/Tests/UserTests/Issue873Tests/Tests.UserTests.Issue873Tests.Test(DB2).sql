@@ -13,9 +13,9 @@ SELECT
 			"a_Parent"."ParentID" = "f"."ParentID" AND ("a_Parent"."Value1" = "f"."Value1" OR "a_Parent"."Value1" IS NULL AND "f"."Value1" IS NULL)
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" "c_2"
 					LEFT JOIN "Parent" "a_Parent_1" ON "c_2"."ParentID" = "a_Parent_1"."ParentID"

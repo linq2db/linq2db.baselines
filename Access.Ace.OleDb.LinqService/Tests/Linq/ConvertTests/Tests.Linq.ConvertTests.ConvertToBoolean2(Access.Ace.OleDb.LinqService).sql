@@ -11,5 +11,5 @@ FROM
 			[LinqDataTypes] [t]
 	) [p]
 WHERE
-	[p].[c1] = False
+	NOT [p].[c1]
 

@@ -13,7 +13,7 @@ SELECT
 			"c2"."ParentID" = "c_1"."ParentID"
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -25,7 +25,7 @@ SELECT
 		ELSE FALSE
 	END,
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
 				*
 			FROM

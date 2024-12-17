@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @p DateTime
-SET     @p = CAST('2009-09-27T00:00:00.000' AS DATETIME)
 
 SELECT
 	[t1].[ID],
@@ -17,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = @p
+	[t1].[DateTimeValue] = CAST('2009-09-27T00:00:00.000' AS DATETIME)
 

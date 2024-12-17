@@ -122,7 +122,7 @@ FROM
 		FROM
 			(
 				SELECT
-					[t1].[BookType],
+					[t1].[BookType] as [cond],
 					[t1].[c1]
 				FROM
 					(
@@ -147,7 +147,7 @@ FROM
 				OFFSET @skip ROWS
 			) [t2]
 		WHERE
-			[t2].[BookType] = N'Novel'
+			[t2].[cond] = N'Novel'
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]

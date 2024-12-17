@@ -77,9 +77,9 @@ FROM
 			Mod("t_1"."Id", 2) = 0
 	) "t1"
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"SampleData" "t_2"
 		WHERE

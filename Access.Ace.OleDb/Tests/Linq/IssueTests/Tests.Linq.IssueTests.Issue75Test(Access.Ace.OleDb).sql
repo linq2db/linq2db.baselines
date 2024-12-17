@@ -12,7 +12,7 @@ SELECT
 		WHERE
 			[c2].[ParentID] = [c_1].[ParentID]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -20,7 +20,7 @@ SELECT
 		WHERE
 			[c2_1].[ParentID] = [c_1].[ParentID]
 	), True, False),
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

@@ -17,11 +17,13 @@ FROM
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
+DECLARE @value DateTime
+SET     @value = #2009-09-24 09:19:29#
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (#2009-09-24 09:19:29#) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (?) OR [x].[DateTimeValue2] IS NULL)
 

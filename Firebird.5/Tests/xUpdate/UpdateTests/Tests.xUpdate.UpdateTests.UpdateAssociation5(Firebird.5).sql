@@ -7,7 +7,7 @@ SET
 	"BoolValue" = (
 		SELECT
 			CASE
-				WHEN NOT EXISTS(
+				WHEN  NOT EXISTS (
 					SELECT
 						*
 					FROM
@@ -33,7 +33,7 @@ SET
 			"LinqDataTypes".ID = "t1".ID AND "LinqDataTypes"."BoolValue" = "t1"."BoolValue"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Hour to Fraction
+	@input
 )
 
 BeforeExecute

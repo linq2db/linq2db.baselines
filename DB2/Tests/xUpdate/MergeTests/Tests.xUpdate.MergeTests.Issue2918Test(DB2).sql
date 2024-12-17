@@ -89,9 +89,9 @@ USING (
 	FROM
 		"PatentAssessment" "pa"
 	WHERE
-		EXISTS(
+		 EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Issue2918Table2" "patr_1"
 			WHERE

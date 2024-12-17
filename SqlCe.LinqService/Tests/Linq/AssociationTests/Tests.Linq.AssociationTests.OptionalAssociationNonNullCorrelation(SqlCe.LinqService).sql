@@ -181,7 +181,7 @@ FROM
 				LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID]
 				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
 					*
 				FROM
@@ -206,7 +206,7 @@ FROM
 		LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID]
 		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -219,19 +219,19 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[m_1].[ID],
-	[d].[ID] as [ID_1],
+	[m_1].[cond],
+	[d].[ID],
 	[d].[ID3]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Table3].[ID]
+			[a_Table3].[ID] as [cond]
 		FROM
 			[Table1] [t1]
 				LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID]
 				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
 	) [m_1]
-		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3] OR [m_1].[ID] IS NULL AND [d].[ID3] IS NULL
+		INNER JOIN [Table4] [d] ON [m_1].[cond] = [d].[ID3] OR [m_1].[cond] IS NULL AND [d].[ID3] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -239,9 +239,9 @@ BeforeExecute
 SELECT
 	[t1].[ID],
 	[t1].[ID2],
-	[a_Table2].[ID] as [ID_1],
+	[a_Table2].[ID] as [cond],
 	[a_Table2].[ID3],
-	[a_Table3].[ID] as [ID_2]
+	[a_Table3].[ID] as [cond_1]
 FROM
 	[Table1] [t1]
 		LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID]

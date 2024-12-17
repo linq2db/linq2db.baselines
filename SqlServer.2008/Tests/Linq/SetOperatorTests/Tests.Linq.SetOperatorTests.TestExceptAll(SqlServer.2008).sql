@@ -71,7 +71,7 @@ FROM
 			[t_1].[Id] % 2 = 0
 	) [t1]
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

@@ -6,7 +6,7 @@ SET     @BinaryValue = {1,2,3,4,5}
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 
@@ -22,11 +22,13 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
 
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = NULL
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 

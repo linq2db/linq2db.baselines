@@ -18,8 +18,6 @@ CREATE TABLE IF NOT EXISTS [Issue3761Table]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- DateTime
-SET     @p = '2019-01-01 00:00:00.000'
 
 SELECT
 	[t1].[Year_1],
@@ -40,7 +38,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [n].[DATUM]) < strftime('%Y-%m-%d %H:%M:%f', @p)
+			strftime('%Y-%m-%d %H:%M:%f', [n].[DATUM]) < strftime('%Y-%m-%d %H:%M:%f', '2019-01-01 00:00:00.000')
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -65,7 +63,7 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [n_1].[DATUM]) >= strftime('%Y-%m-%d %H:%M:%f', @p)
+			strftime('%Y-%m-%d %H:%M:%f', [n_1].[DATUM]) >= strftime('%Y-%m-%d %H:%M:%f', '2019-01-01 00:00:00.000')
 	) [t2]
 GROUP BY
 	[t2].[Year_1],

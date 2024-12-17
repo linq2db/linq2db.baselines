@@ -2,7 +2,7 @@
 -- SqlServer.2017 (asynchronously)
 
 SELECT
-	IIF(NOT EXISTS(
+	IIF( NOT EXISTS (
 		SELECT
 			*
 		FROM

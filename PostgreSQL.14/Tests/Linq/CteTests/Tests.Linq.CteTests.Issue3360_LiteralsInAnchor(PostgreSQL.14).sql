@@ -43,10 +43,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Guid Uuid -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid
-DECLARE @GuidN Uuid -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid
 
 WITH RECURSIVE cte
 (
@@ -66,8 +62,8 @@ AS
 		r."Id",
 		5::SmallInt,
 		5::SmallInt,
-		:Guid::uuid,
-		:GuidN::uuid,
+		'0b8afe27-481c-442e-b8cf-729ddfeece29'::uuid::uuid,
+		'0b8afe27-481c-442e-b8cf-729ddfeece30'::uuid::uuid,
 		'ENUM1_VALUE'::text,
 		'ENUM2_VALUE'::text,
 		True::Boolean,

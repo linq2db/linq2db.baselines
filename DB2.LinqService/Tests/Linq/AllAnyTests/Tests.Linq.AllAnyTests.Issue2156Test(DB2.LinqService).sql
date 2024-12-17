@@ -57,9 +57,9 @@ FROM
 			"e_1"."MiddleName" as "MiddleName_4",
 			"e_1"."Gender" as "Gender_4",
 			CASE
-				WHEN EXISTS(
+				WHEN  EXISTS (
 					SELECT
-						1
+						*
 					FROM
 						"Person" "tg"
 					WHERE

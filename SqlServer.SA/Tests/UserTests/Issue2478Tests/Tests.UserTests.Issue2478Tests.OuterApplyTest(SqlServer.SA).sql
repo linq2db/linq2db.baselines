@@ -3,12 +3,12 @@
 
 SELECT
 	[p].[ParentID],
-	IIF([c_2].[Count_1] IS NULL, 0, [c_2].[c1])
+	IIF([c_2].[cond] IS NULL, 0, [c_2].[c1])
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [Count_1],
+				COUNT(*) as [cond],
 				COUNT(*) as [c1]
 			FROM
 				[Child] [c_1]

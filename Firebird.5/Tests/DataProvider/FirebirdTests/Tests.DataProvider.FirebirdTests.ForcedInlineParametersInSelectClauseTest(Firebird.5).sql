@@ -12,7 +12,7 @@ SET     @blob = X'010203'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM

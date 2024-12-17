@@ -18,8 +18,6 @@ CREATE TABLE IF NOT EXISTS `Issue3761Table`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p Datetime -- DateTime
-SET     @p = '2019-01-01'
 
 SELECT
 	`t1`.`Year_1`,
@@ -40,7 +38,7 @@ FROM
 		FROM
 			`Issue3761Table` `n`
 		WHERE
-			`n`.`DATUM` < @p
+			`n`.`DATUM` < '2019-01-01'
 	) `t1`
 GROUP BY
 	`t1`.`Year_1`,

@@ -49,26 +49,21 @@ FROM
 		FROM
 			"TransactionEntity" "x"
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
-					*
+					"a_Lines"."Currency"
+				FROM
+					"LineEntity" "a_Lines"
+				WHERE
+					"x"."Id" = "a_Lines"."TransactionId"
+				INTERSECT
+				SELECT
+					"t1"."item"
 				FROM
 					(
-						SELECT
-							"a_Lines"."Currency"
-						FROM
-							"LineEntity" "a_Lines"
-						WHERE
-							"x"."Id" = "a_Lines"."TransactionId"
-						INTERSECT
-						SELECT
-							"t1"."item" as "Currency"
-						FROM
-							(
-								SELECT 'A' AS "item" FROM DUMMY
-								UNION ALL
-								SELECT 'B' FROM DUMMY) "t1"
-					) "t2"
+						SELECT 'A' AS "item" FROM DUMMY
+						UNION ALL
+						SELECT 'B' FROM DUMMY) "t1"
 			)
 	) "m_1"
 		INNER JOIN "LineEntity" "d" ON "m_1"."Id" = "d"."TransactionId"
@@ -84,26 +79,21 @@ SELECT
 FROM
 	"TransactionEntity" "x"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			*
+			"a_Lines"."Currency"
+		FROM
+			"LineEntity" "a_Lines"
+		WHERE
+			"x"."Id" = "a_Lines"."TransactionId"
+		INTERSECT
+		SELECT
+			"t1"."item"
 		FROM
 			(
-				SELECT
-					"a_Lines"."Currency"
-				FROM
-					"LineEntity" "a_Lines"
-				WHERE
-					"x"."Id" = "a_Lines"."TransactionId"
-				INTERSECT
-				SELECT
-					"t1"."item" as "Currency"
-				FROM
-					(
-						SELECT 'A' AS "item" FROM DUMMY
-						UNION ALL
-						SELECT 'B' FROM DUMMY) "t1"
-			) "t2"
+				SELECT 'A' AS "item" FROM DUMMY
+				UNION ALL
+				SELECT 'B' FROM DUMMY) "t1"
 	)
 
 BeforeExecute

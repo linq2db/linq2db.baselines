@@ -18,8 +18,8 @@ GROUP BY
 	t2.year_1
 UNION DISTINCT
 SELECT
-	toInt32(t3.SmallIntValue) as month_1,
-	toInt32(t3.SmallIntValue) as year_1,
+	t3.SmallIntValue as month_1,
+	t3.SmallIntValue as year_1,
 	toInt32(3) as int_1
 FROM
 	LinqDataTypes t3

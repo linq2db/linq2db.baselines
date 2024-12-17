@@ -177,8 +177,6 @@ IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Empty UniqueIdentifier -- Guid
-SET     @Empty = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -199,7 +197,7 @@ SELECT
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
 	CASE
-		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL)
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -233,7 +231,7 @@ SELECT
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -245,14 +243,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_19]
 			WHERE
 				[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -431,8 +429,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Empty UniqueIdentifier -- Guid
-SET     @Empty = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -453,7 +449,7 @@ SELECT
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
 	CASE
-		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL)
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -487,7 +483,7 @@ SELECT
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -499,14 +495,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_19]
 			WHERE
 				[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -519,7 +515,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty OR [a2].[Id] IS NULL)
+		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -553,7 +549,7 @@ SELECT
 			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c2].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -565,14 +561,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_22]
 			WHERE
 				[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
-				([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_22].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -585,7 +581,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a3].[Id] IS NOT NULL AND ([a3].[Id] <> @Empty OR [a3].[Id] IS NULL)
+		WHEN [a3].[Id] IS NOT NULL AND ([a3].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a3].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -619,7 +615,7 @@ SELECT
 			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c3].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -631,14 +627,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_25]
 			WHERE
 				[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
-				([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_25].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -651,7 +647,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a4].[Id] IS NOT NULL AND ([a4].[Id] <> @Empty OR [a4].[Id] IS NULL)
+		WHEN [a4].[Id] IS NOT NULL AND ([a4].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a4].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -685,7 +681,7 @@ SELECT
 			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c4].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -697,14 +693,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_28]
 			WHERE
 				[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
-				([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_28].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -717,7 +713,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a5].[Id] IS NOT NULL AND ([a5].[Id] <> @Empty OR [a5].[Id] IS NULL)
+		WHEN [a5].[Id] IS NOT NULL AND ([a5].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a5].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -751,7 +747,7 @@ SELECT
 			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c5].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -763,14 +759,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_31]
 			WHERE
 				[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
-				([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_31].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -783,7 +779,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a6].[Id] IS NOT NULL AND ([a6].[Id] <> @Empty OR [a6].[Id] IS NULL)
+		WHEN [a6].[Id] IS NOT NULL AND ([a6].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a6].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -817,7 +813,7 @@ SELECT
 			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c6].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -829,14 +825,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_34]
 			WHERE
 				[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
-				([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_34].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -849,7 +845,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a7].[Id] IS NOT NULL AND ([a7].[Id] <> @Empty OR [a7].[Id] IS NULL)
+		WHEN [a7].[Id] IS NOT NULL AND ([a7].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a7].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -883,7 +879,7 @@ SELECT
 			[x_35].[Status] < 0 AND [x_35].[ResourceID] = [c7].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -895,14 +891,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_37]
 			WHERE
 				[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
-				([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_37].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -915,7 +911,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a8].[Id] IS NOT NULL AND ([a8].[Id] <> @Empty OR [a8].[Id] IS NULL)
+		WHEN [a8].[Id] IS NOT NULL AND ([a8].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a8].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -949,7 +945,7 @@ SELECT
 			[x_38].[Status] < 0 AND [x_38].[ResourceID] = [c8].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -961,14 +957,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_40]
 			WHERE
 				[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
-				([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_40].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM

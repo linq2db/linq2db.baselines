@@ -8,9 +8,9 @@ SELECT
 FROM
 	"Child" g_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Parent" t
 		WHERE
@@ -29,9 +29,9 @@ SELECT
 FROM
 	"Child" g_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Parent" t
 		WHERE

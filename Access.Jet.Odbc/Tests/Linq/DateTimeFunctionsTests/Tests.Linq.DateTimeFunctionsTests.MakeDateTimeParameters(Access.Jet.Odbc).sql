@@ -2,16 +2,13 @@
 -- Access.Jet.Odbc AccessODBC
 DECLARE @year Int -- Int32
 SET     @year = 2010
+DECLARE @year Int -- Int32
+SET     @year = 2010
 
 SELECT
-	[t].[c1]
+	DateSerial(CVar(?), [t].[ID], 1)
 FROM
-	(
-		SELECT
-			DateSerial(CVar(?), [p].[ID], 1) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart('yyyy', [t].[c1]) = 2010
+	DatePart('yyyy', DateSerial(CVar(?), [t].[ID], 1)) = 2010
 

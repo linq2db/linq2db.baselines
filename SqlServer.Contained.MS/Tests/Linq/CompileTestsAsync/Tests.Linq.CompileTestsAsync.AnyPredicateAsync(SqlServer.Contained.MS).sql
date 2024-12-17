@@ -39,7 +39,7 @@ DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

@@ -39,7 +39,7 @@ SELECT
 FROM
 	"Child" "w"
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

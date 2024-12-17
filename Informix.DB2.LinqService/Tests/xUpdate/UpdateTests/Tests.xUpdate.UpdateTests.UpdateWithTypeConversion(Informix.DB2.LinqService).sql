@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1001
 
 INSERT INTO LinqDataTypes
 (
@@ -9,7 +11,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	1001,
+	@ID,
 	100,
 	200
 )

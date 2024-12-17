@@ -2,17 +2,17 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
 			CASE
 				WHEN [p].[MoneyValue] >= 0 THEN Floor([p].[MoneyValue])
 				ELSE Ceiling([p].[MoneyValue])
-			END as [c1]
+			END as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[c1] <> 0.1
+	[t].[Value_1] <> 0.1
 

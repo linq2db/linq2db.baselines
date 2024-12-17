@@ -127,8 +127,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[t].[BookingID],
@@ -137,15 +135,13 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+	[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -172,7 +168,7 @@ FROM
 				FROM
 					[Booking] [t]
 				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+					[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 			) [e]
 	) [q]
 WHERE
@@ -180,8 +176,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take Int -- Int32
@@ -212,7 +206,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 		) [e]
 )
 SELECT
@@ -224,7 +218,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -236,8 +230,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take Int -- Int32
@@ -268,7 +260,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 		) [e]
 )
 SELECT
@@ -280,7 +272,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -292,8 +284,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
 DECLARE @take Int -- Int32
@@ -324,7 +314,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 		) [e]
 )
 SELECT
@@ -336,7 +326,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

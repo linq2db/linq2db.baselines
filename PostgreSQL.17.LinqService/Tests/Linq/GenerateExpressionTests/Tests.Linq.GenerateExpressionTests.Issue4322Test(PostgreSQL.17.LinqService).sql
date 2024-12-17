@@ -8,13 +8,13 @@ SELECT
 FROM
 	entities x
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			(VALUES
-				(-10)
-			) t("X")
+				(-10,10)
+			) t("X", "Y")
 		WHERE
 			x."position".x > t."X"
 	)

@@ -4,7 +4,7 @@
 SELECT
 	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)),
 	[t2].[c1],
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

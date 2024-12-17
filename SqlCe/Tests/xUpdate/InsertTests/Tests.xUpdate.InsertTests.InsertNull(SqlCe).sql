@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = NULL
 
 INSERT INTO [Parent]
 (
@@ -8,8 +12,8 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	1001,
-	NULL
+	@ParentID,
+	@Value1
 )
 
 BeforeExecute

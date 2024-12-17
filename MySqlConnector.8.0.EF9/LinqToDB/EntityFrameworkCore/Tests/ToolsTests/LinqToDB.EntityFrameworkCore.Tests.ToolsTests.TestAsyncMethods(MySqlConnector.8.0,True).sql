@@ -23,3 +23,84 @@ SELECT EXISTS (
     WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AND (`p`.`ProductName` LIKE '%a%'))
 
 
+--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+
+SELECT
+	`e`.`IsDeleted`,
+	`e`.`ProductID`,
+	`e`.`ProductName`,
+	`e`.`SupplierID`,
+	`e`.`CategoryID`,
+	`e`.`QuantityPerUnit`,
+	`e`.`UnitPrice`,
+	`e`.`UnitsInStock`,
+	`e`.`UnitsOnOrder`,
+	`e`.`ReorderLevel`,
+	`e`.`Discontinued`
+FROM
+	`Products` `e`
+WHERE
+	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+
+
+
+--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+
+SELECT
+	`e`.`IsDeleted`,
+	`e`.`ProductID`,
+	`e`.`ProductName`,
+	`e`.`SupplierID`,
+	`e`.`CategoryID`,
+	`e`.`QuantityPerUnit`,
+	`e`.`UnitPrice`,
+	`e`.`UnitsInStock`,
+	`e`.`UnitsOnOrder`,
+	`e`.`ReorderLevel`,
+	`e`.`Discontinued`
+FROM
+	`Products` `e`
+WHERE
+	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+
+
+
+--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+
+SELECT
+	`e`.`IsDeleted`,
+	`e`.`ProductID`,
+	`e`.`ProductName`,
+	`e`.`SupplierID`,
+	`e`.`CategoryID`,
+	`e`.`QuantityPerUnit`,
+	`e`.`UnitPrice`,
+	`e`.`UnitsInStock`,
+	`e`.`UnitsOnOrder`,
+	`e`.`ReorderLevel`,
+	`e`.`Discontinued`
+FROM
+	`Products` `e`
+WHERE
+	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+
+
+
+--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+
+SELECT
+	CASE
+		WHEN  EXISTS (
+			SELECT
+				*
+			FROM
+				`Products` `e`
+			WHERE
+				(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+		)
+			THEN 1
+		ELSE 0
+	END as `c1`
+
+
+

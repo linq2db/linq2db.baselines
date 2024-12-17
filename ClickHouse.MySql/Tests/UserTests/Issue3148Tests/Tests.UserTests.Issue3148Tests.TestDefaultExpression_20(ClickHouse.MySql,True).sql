@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	endsWith(r.LastName, 'x') = true
+	endsWith(r.LastName, 'x')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	endsWith(r.LastName, 'x') = true
+	endsWith(r.LastName, 'x')
 

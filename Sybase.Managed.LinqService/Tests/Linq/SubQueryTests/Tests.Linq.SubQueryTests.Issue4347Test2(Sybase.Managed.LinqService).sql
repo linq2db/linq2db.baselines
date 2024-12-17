@@ -55,13 +55,13 @@ FROM
 		FROM
 			[TransactionEntity] [x]
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
 					*
 				FROM
 					[LineEntity] [a_Lines]
 				WHERE
-					[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
+					[x].[Id] = [a_Lines].[TransactionId] AND  EXISTS (
 						SELECT
 							*
 						FROM
@@ -85,13 +85,13 @@ SELECT
 FROM
 	[TransactionEntity] [x]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			[LineEntity] [a_Lines]
 		WHERE
-			[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
+			[x].[Id] = [a_Lines].[TransactionId] AND  EXISTS (
 				SELECT
 					*
 				FROM

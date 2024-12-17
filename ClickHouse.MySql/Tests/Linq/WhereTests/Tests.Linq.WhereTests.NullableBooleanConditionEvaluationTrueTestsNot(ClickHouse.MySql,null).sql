@@ -3,12 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				Person t1
-		) THEN true
+		)
+			THEN true
 		ELSE false
 	END
 

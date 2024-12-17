@@ -226,8 +226,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 2
 
-SELECT SKIP 2
+SELECT SKIP @skip
 	t2.F2
 FROM
 	(

@@ -13,7 +13,7 @@ SELECT
 FROM
 	`Products` `p`
 WHERE
-	`p`.`IsDeleted` = 0 OR `p`.`IsDeleted` = 0
+	NOT `p`.`IsDeleted` OR NOT `p`.`IsDeleted`
 
 
 

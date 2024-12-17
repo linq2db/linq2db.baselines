@@ -24,9 +24,9 @@ SET
 			("Parent"."Value1" = p_1."Value1" OR "Parent"."Value1" IS NULL AND p_1."Value1" IS NULL)
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Parent" p
 				INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"

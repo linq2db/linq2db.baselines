@@ -26,7 +26,7 @@ ALTER TABLE
 UPDATE
 	LastName = toString(CHAR_LENGTH('Update14') + 4)
 WHERE
-	startsWith(FirstName, 'Update14') = true
+	startsWith(FirstName, 'Update14')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -36,5 +36,5 @@ SELECT
 FROM
 	Person t1
 WHERE
-	startsWith(t1.FirstName, 'Update14') = true
+	startsWith(t1.FirstName, 'Update14')
 

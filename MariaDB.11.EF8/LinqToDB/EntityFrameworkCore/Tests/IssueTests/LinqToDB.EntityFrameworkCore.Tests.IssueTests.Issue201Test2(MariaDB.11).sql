@@ -5,13 +5,13 @@ SELECT
 FROM
 	`Parents` `x`
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM
 			`Children` `y`
 		WHERE
-			`x`.`Id` = `y`.`ParentId` AND `y`.`IsActive` = 1
+			`x`.`Id` = `y`.`ParentId` AND `y`.`IsActive`
 	)
 
 

@@ -58,12 +58,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @City Varchar2(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street Varchar2(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building Int32
-SET     @Building = 13
 
 SELECT
 	u."user_name",
@@ -73,9 +67,9 @@ SELECT
 FROM
 	"User" u
 WHERE
-	u."city" = :City AND
-	u."street" = :Street AND
-	u."building_number" = :Building AND
+	u."city" = 'Springwood' AND
+	u."street" = 'Elm Street' AND
+	u."building_number" = 13 AND
 	ROWNUM <= 2
 
 BeforeExecute

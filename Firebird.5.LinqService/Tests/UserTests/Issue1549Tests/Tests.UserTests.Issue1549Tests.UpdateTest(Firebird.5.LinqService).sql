@@ -179,7 +179,7 @@ SET
 			"billing_TempReading"."id" = "tr_2"."id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

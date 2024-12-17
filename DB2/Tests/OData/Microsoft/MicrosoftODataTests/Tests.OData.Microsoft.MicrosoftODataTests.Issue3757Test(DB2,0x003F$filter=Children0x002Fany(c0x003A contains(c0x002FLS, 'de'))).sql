@@ -72,9 +72,9 @@ FROM
 		FROM
 			"Issue3757Level1" "l1"
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
-					1
+					*
 				FROM
 					"Issue3757Level2" "c_1"
 				WHERE
@@ -99,9 +99,9 @@ SELECT
 FROM
 	"Issue3757Level1" "it"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Issue3757Level2" "c_1"
 		WHERE

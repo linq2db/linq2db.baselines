@@ -37,7 +37,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @param Int -- Int32
+DECLARE @param Int(2, 0) -- Int32
 SET     @param = 33
 DECLARE @param VarChar(2, 0) -- AnsiString
 SET     @param = 33

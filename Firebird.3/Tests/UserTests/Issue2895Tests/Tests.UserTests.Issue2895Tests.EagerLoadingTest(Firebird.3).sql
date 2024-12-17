@@ -340,7 +340,7 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"t1"."not_null",
+	"t1"."cond",
 	"t1"."Id"
 FROM
 	"Request" "r"
@@ -348,7 +348,7 @@ FROM
 		LEFT JOIN "Admin" "a_Admin" ON "a_User"."Id" = "a_Admin"."Id"
 		LEFT JOIN (
 			SELECT
-				1 as "not_null",
+				1 as "cond",
 				"a_Email_1"."Id",
 				ROW_NUMBER() OVER (PARTITION BY "a_EmailAdminAssociations"."AdminId" ORDER BY "a_EmailAdminAssociations"."AdminId") as "rn",
 				"a_EmailAdminAssociations"."AdminId"

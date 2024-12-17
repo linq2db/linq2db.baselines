@@ -2,14 +2,14 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Floor(Exp(`p`.`MoneyValue`)) as `c1`
+			Floor(Exp(`p`.`MoneyValue`)) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	`t`.`Value_1` <> 0.10000000000000001
 

@@ -76,7 +76,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`String` IS NULL OR `s`.`String` <> @value
+	NOT `s`.`String` <=> @value
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -88,7 +88,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	`s`.`NullableString` IS NULL OR `s`.`NullableString` <> @value
+	NOT `s`.`NullableString` <=> @value
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -100,7 +100,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT (`s`.`String` IS NULL OR `s`.`String` <> @value)
+	`s`.`String` <=> @value
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -112,7 +112,7 @@ SELECT
 FROM
 	`Src` `s`
 WHERE
-	NOT (`s`.`NullableString` IS NULL OR `s`.`NullableString` <> @value)
+	`s`.`NullableString` <=> @value
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

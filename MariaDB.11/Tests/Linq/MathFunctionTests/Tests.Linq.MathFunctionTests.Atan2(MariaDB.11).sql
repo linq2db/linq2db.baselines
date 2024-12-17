@@ -2,14 +2,14 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t`.`c1`
+	`t`.`Value_1`
 FROM
 	(
 		SELECT
-			Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) as `c1`
+			Floor(Atan2(`p`.`MoneyValue` / 15, 0) * 15) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> 0.10000000000000001
+	`t`.`Value_1` <> 0.10000000000000001
 

@@ -3,14 +3,14 @@
 DELETE FROM
 	[Products]
 WHERE
-	[Products].[IsDeleted] = 0 AND
+	NOT [Products].[IsDeleted] AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Order Details] [e]
 		WHERE
-			[e].[IsDeleted] = 0 AND [Products].[ProductID] = [e].[ProductID]
+			NOT [e].[IsDeleted] AND [Products].[ProductID] = [e].[ProductID]
 	) > 0 AND
 	[Products].[ProductName] LIKE 'a%' ESCAPE '~' AND
 	[Products].[ProductName] = 'a'

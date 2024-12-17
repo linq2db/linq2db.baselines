@@ -47,7 +47,7 @@ SELECT
 FROM
 	NotNullableBoolClass t
 WHERE
-	t."Value" = 't'
+	t."Value"
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -77,7 +77,7 @@ SELECT
 FROM
 	NotNullableBoolClass t
 WHERE
-	t."Value" = 'f'
+	NOT t."Value"
 
 BeforeExecute
 -- Informix.DB2 Informix

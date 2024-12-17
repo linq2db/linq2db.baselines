@@ -88,13 +88,13 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				t1."Value_1"
+				t1."Key_1"
 			FROM
 				(
 					SELECT
-						item_1."Value" as "Value_1"
+						item_1."Value" as "Key_1"
 					FROM
 						"TakeSkipClass" item_1
 					GROUP BY

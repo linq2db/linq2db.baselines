@@ -3,9 +3,9 @@
 
 SELECT
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" "c_1"
 			WHERE

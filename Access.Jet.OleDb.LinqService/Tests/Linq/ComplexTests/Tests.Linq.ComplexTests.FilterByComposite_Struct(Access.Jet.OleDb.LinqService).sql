@@ -42,12 +42,6 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @City VarWChar(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street VarWChar(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building Integer -- Int32
-SET     @Building = 13
 
 SELECT TOP 2
 	[u].[user_name],
@@ -57,7 +51,8 @@ SELECT TOP 2
 FROM
 	[UserStruct] [u]
 WHERE
-	[u].[city] = @City AND [u].[street] = @Street AND [u].[building_number] = @Building
+	[u].[city] = 'Springwood' AND [u].[street] = 'Elm Street' AND
+	[u].[building_number] = 13
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

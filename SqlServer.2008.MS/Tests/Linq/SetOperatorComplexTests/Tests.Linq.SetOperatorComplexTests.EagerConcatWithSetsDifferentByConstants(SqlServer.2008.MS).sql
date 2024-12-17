@@ -123,7 +123,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					CAST(N'Roman' AS NVarChar(4000)) as [cond],
 					[a_Book].[BookId]
 				FROM
 					[Author] [t1]
@@ -133,7 +133,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					CAST(N'Novel' AS NVarChar(4000)) as [cond],
 					NULL as [BookId]
 				FROM
 					[Author] [t2]
@@ -143,7 +143,7 @@ FROM
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Roman'
+			[t3].[cond] = N'Roman'
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
@@ -162,7 +162,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+					CAST(N'Roman' AS NVarChar(4000)) as [cond],
 					NULL as [c1]
 				FROM
 					[Author] [t1]
@@ -172,7 +172,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+					CAST(N'Novel' AS NVarChar(4000)) as [cond],
 					[a_Book_1].[BookId] as [c1]
 				FROM
 					[Author] [t2]
@@ -182,7 +182,7 @@ FROM
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Novel'
+			[t3].[cond] = N'Novel'
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)

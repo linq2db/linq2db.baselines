@@ -39,8 +39,24 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
-SET     @id = 1
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset  -- DateTimeOffset
+SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+
+INSERT INTO [Issue1855Table]
+(
+	[Id],
+	[SomeDateTimeOffset]
+)
+VALUES
+(
+	@Id,
+	@SomeDateTimeOffset
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
 DECLARE @clientSideIn  -- DateTimeOffset
 SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
 
@@ -51,7 +67,9 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	[r].[Id] = @id AND strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset])
+	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) OR
+	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) IS NULL AND strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) IS NOT NULL OR
+	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) IS NOT NULL AND strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

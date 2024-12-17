@@ -278,9 +278,9 @@ FROM
 		FROM
 			"Issue4458Item" t1
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
-					1
+					*
 				FROM
 					"Review" r
 				WHERE
@@ -314,9 +314,9 @@ SELECT
 FROM
 	"Issue4458Item" i
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Review" r
 		WHERE

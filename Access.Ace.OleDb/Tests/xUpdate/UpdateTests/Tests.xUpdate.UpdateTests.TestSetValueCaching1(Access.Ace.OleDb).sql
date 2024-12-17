@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 Guid
-SET     @Value1 = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @Value1 = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 DECLARE @Value2 Integer -- Int32
 SET     @Value2 = 10
 DECLARE @Value3 Integer -- Int32
@@ -60,7 +60,7 @@ VALUES
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value1 Guid
-SET     @Value1 = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @Value1 = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -86,7 +86,7 @@ WHERE
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value1 Guid
-SET     @Value1 = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @Value1 = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

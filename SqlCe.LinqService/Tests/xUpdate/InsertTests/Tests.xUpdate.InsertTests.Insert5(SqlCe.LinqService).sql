@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @ChildID Int -- Int32
+SET     @ChildID = 1001
 
 INSERT INTO [Child]
 (
@@ -16,7 +18,7 @@ INSERT INTO [Child]
 )
 SELECT
 	[c_1].[ParentID],
-	1001 as [c1]
+	@ChildID as [c1]
 FROM
 	[Child] [c_1]
 WHERE

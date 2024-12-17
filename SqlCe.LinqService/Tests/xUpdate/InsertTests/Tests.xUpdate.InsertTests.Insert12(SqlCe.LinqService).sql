@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @FirstName NVarChar(9) -- String
+SET     @FirstName = 'FirstName'
+DECLARE @Gender NVarChar(1) -- String
+SET     @Gender = 'F'
 
 INSERT INTO [Person]
 (
@@ -9,8 +13,8 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'FirstName',
+	@FirstName,
 	'LastName',
-	'F'
+	@Gender
 )
 

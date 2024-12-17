@@ -36,12 +36,6 @@ SELECT CAST('Springwood' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Freddy
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @City VarChar(10) -- String
-SET     @City = 'Springwood'
-DECLARE @Street VarChar(10) -- String
-SET     @Street = 'Elm Street'
-DECLARE @Building Integer -- Int32
-SET     @Building = 13
 
 SELECT FIRST 2
 	"u"."user_name",
@@ -51,7 +45,8 @@ SELECT FIRST 2
 FROM
 	"User" "u"
 WHERE
-	"u"."city" = @City AND "u"."street" = @Street AND "u"."building_number" = @Building
+	"u"."city" = 'Springwood' AND "u"."street" = 'Elm Street' AND
+	"u"."building_number" = 13
 
 BeforeExecute
 -- Firebird.2.5 Firebird

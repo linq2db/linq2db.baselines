@@ -34,17 +34,17 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`t1`.`HasValue`,
-	`t1`.`Value_1`
+	`t1`.`cond_1`,
+	`t1`.`cond`
 FROM
 	`Request` `a`
 		LEFT JOIN (
 			SELECT
-				`a_Metrics`.`Value` as `Value_1`,
+				`a_Metrics`.`Value` as `cond`,
 				CASE
 					WHEN `a_Metrics`.`Value` IS NOT NULL THEN 1
 					ELSE 0
-				END as `HasValue`,
+				END as `cond_1`,
 				ROW_NUMBER() OVER (PARTITION BY `a_Metrics`.`RequestId` ORDER BY `a_Metrics`.`RequestId`) as `rn`,
 				`a_Metrics`.`RequestId`
 			FROM

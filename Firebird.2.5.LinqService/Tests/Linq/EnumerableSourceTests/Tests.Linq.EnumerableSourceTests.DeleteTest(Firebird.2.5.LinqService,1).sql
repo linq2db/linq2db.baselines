@@ -64,7 +64,7 @@ BeforeExecute
 DELETE FROM
 	"TableToInsert" "t1"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			"r"."Id"
 		FROM

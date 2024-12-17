@@ -6,8 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(lowerUTF8(p.FirstName), 'joh') = true AND
-	p.PersonID = 1
+	startsWith(lowerUTF8(p.FirstName), 'joh') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -17,6 +16,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(lowerUTF8(p.FirstName), 'joh') = false AND
-	p.PersonID = 1
+	NOT startsWith(lowerUTF8(p.FirstName), 'joh') AND p.PersonID = 1
 

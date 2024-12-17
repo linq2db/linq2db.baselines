@@ -14,5 +14,5 @@ FROM
 			LinqDataTypes t
 	) p
 WHERE
-	p.c1 = 'f'
+	NOT p.c1
 

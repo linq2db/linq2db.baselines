@@ -114,7 +114,7 @@ SET
 			"Issue4193Person"."Name" = "p_1"."Name" AND ("Issue4193Person"."EmployeeId" = "p_1"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p_1"."EmployeeId" IS NULL)
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

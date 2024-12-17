@@ -24,7 +24,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 Guid
-SET     @Value1 = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @Value1 = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 DECLARE @Value2 Integer -- Int32
 SET     @Value2 = 10
 DECLARE @Value3 Integer -- Int32

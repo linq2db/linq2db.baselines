@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID > 0 AND EXISTS(
+	p.ParentID > 0 AND  EXISTS (
 		SELECT
 			*
 		FROM

@@ -128,9 +128,9 @@ SET
 			("Issue2815Table1".TRANS_CHANNEL = ext_1.TRANS_CHANNEL OR "Issue2815Table1".TRANS_CHANNEL IS NULL AND ext_1.TRANS_CHANNEL IS NULL)
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Issue2815Table1" ext
 				LEFT JOIN "Issue2815Table2" source ON source.ISO = ext.SRC_BIC

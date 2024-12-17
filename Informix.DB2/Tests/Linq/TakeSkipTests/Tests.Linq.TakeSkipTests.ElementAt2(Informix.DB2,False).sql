@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @n Integer(4) -- Int32
+SET     @n = 3
 
-SELECT SKIP 3 FIRST 1
+SELECT SKIP @n FIRST 1
 	p.ParentID,
 	p.Value1
 FROM

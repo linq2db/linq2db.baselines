@@ -29,7 +29,7 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT TOP (1)
 			[item_1].[Value]
 		FROM

@@ -10,16 +10,15 @@ SELECT
 FROM
 	(
 		SELECT
-			t3."c1"
+			*
 		FROM
 			(
 				SELECT
-					t2."c1",
 					ROWNUM as RN
 				FROM
 					(
 						SELECT
-							1 as "c1"
+							*
 						FROM
 							"Child" t1
 					) t2

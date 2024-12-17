@@ -20,7 +20,7 @@ FROM
 			[Person] [p]
 	) [p_1]
 WHERE
-	[p_1].[Field1] = True
+	[p_1].[Field1]
 ORDER BY
 	[p_1].[Field1]
 

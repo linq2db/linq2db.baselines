@@ -2,14 +2,14 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t"."c1"
+	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Exp(CAST("p"."MoneyValue" AS Float))) as "c1"
+			Floor(Exp(CAST("p"."MoneyValue" AS Float))) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
 WHERE
-	"t"."c1" <> 0.10000000000000001
+	"t"."Value_1" <> 0.10000000000000001
 

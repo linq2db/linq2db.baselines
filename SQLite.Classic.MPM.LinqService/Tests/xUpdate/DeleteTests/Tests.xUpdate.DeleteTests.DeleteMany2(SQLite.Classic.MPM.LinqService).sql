@@ -140,7 +140,7 @@ BeforeExecute
 DELETE FROM
 	[GrandChild]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			[a_Children].[ParentID]
 		FROM
@@ -160,7 +160,7 @@ BeforeExecute
 DELETE FROM
 	[Child]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			[a_Children].[ParentID]
 		FROM

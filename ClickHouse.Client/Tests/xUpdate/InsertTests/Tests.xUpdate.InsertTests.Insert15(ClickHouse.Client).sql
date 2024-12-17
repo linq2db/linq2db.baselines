@@ -4,7 +4,7 @@
 ALTER TABLE
 	Person
 DELETE WHERE
-	startsWith(FirstName, 'Insert15') = true
+	startsWith(FirstName, 'Insert15')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -34,7 +34,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	startsWith(t1.FirstName, 'Insert15') = true
+	startsWith(t1.FirstName, 'Insert15')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -42,5 +42,5 @@ BeforeExecute
 ALTER TABLE
 	Person
 DELETE WHERE
-	startsWith(FirstName, 'Insert15') = true
+	startsWith(FirstName, 'Insert15')
 

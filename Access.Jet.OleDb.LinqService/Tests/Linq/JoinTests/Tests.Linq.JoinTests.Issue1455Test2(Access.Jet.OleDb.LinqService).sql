@@ -82,54 +82,54 @@ CREATE TABLE [Flat]
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @DeliveryCounterParty VarWChar(3) -- String
-SET     @DeliveryCounterParty = '%C%'
-DECLARE @DeliveryCounterParty_1 VarWChar(3) -- String
-SET     @DeliveryCounterParty_1 = '%C%'
-DECLARE @DeliveryCounterParty_2 VarWChar(3) -- String
-SET     @DeliveryCounterParty_2 = '%C%'
-DECLARE @DeliveryCounterParty_3 VarWChar(3) -- String
-SET     @DeliveryCounterParty_3 = '%C%'
-DECLARE @DeliveryCounterParty_4 VarWChar(3) -- String
-SET     @DeliveryCounterParty_4 = '%C%'
-DECLARE @DeliveryCounterParty_5 VarWChar(3) -- String
-SET     @DeliveryCounterParty_5 = '%C%'
-DECLARE @DeliveryCounterParty_6 VarWChar(3) -- String
-SET     @DeliveryCounterParty_6 = '%C%'
-DECLARE @DeliveryCounterParty_7 VarWChar(3) -- String
-SET     @DeliveryCounterParty_7 = '%C%'
-DECLARE @DeliveryCounterParty_8 VarWChar(3) -- String
-SET     @DeliveryCounterParty_8 = '%C%'
-DECLARE @DeliveryCounterParty_9 VarWChar(3) -- String
-SET     @DeliveryCounterParty_9 = '%C%'
-DECLARE @DeliveryCounterParty_10 VarWChar(3) -- String
-SET     @DeliveryCounterParty_10 = '%C%'
-DECLARE @DeliveryCounterParty_11 VarWChar(3) -- String
-SET     @DeliveryCounterParty_11 = '%C%'
-DECLARE @DeliveryCounterParty_12 VarWChar(3) -- String
-SET     @DeliveryCounterParty_12 = '%C%'
-DECLARE @DeliveryCounterParty_13 VarWChar(3) -- String
-SET     @DeliveryCounterParty_13 = '%C%'
-DECLARE @DeliveryCounterParty_14 VarWChar(3) -- String
-SET     @DeliveryCounterParty_14 = '%C%'
-DECLARE @DeliveryCounterParty_15 VarWChar(3) -- String
-SET     @DeliveryCounterParty_15 = '%C%'
-DECLARE @DeliveryCounterParty_16 VarWChar(3) -- String
-SET     @DeliveryCounterParty_16 = '%C%'
-DECLARE @DeliveryCounterParty_17 VarWChar(3) -- String
-SET     @DeliveryCounterParty_17 = '%C%'
-DECLARE @DeliveryCounterParty_18 VarWChar(3) -- String
-SET     @DeliveryCounterParty_18 = '%C%'
-DECLARE @DeliveryCounterParty_19 VarWChar(3) -- String
-SET     @DeliveryCounterParty_19 = '%C%'
-DECLARE @DeliveryCounterParty_20 VarWChar(3) -- String
-SET     @DeliveryCounterParty_20 = '%C%'
-DECLARE @DeliveryCounterParty_21 VarWChar(3) -- String
-SET     @DeliveryCounterParty_21 = '%C%'
-DECLARE @DeliveryCounterParty_22 VarWChar(3) -- String
-SET     @DeliveryCounterParty_22 = '%C%'
-DECLARE @DeliveryCounterParty_23 VarWChar(3) -- String
-SET     @DeliveryCounterParty_23 = '%C%'
+DECLARE @cond VarWChar(3) -- String
+SET     @cond = '%C%'
+DECLARE @cond_1 VarWChar(3) -- String
+SET     @cond_1 = '%C%'
+DECLARE @cond_2 VarWChar(3) -- String
+SET     @cond_2 = '%C%'
+DECLARE @cond_3 VarWChar(3) -- String
+SET     @cond_3 = '%C%'
+DECLARE @cond_4 VarWChar(3) -- String
+SET     @cond_4 = '%C%'
+DECLARE @cond_5 VarWChar(3) -- String
+SET     @cond_5 = '%C%'
+DECLARE @cond_6 VarWChar(3) -- String
+SET     @cond_6 = '%C%'
+DECLARE @cond_7 VarWChar(3) -- String
+SET     @cond_7 = '%C%'
+DECLARE @cond_8 VarWChar(3) -- String
+SET     @cond_8 = '%C%'
+DECLARE @cond_9 VarWChar(3) -- String
+SET     @cond_9 = '%C%'
+DECLARE @cond_10 VarWChar(3) -- String
+SET     @cond_10 = '%C%'
+DECLARE @cond_11 VarWChar(3) -- String
+SET     @cond_11 = '%C%'
+DECLARE @cond_12 VarWChar(3) -- String
+SET     @cond_12 = '%C%'
+DECLARE @cond_13 VarWChar(3) -- String
+SET     @cond_13 = '%C%'
+DECLARE @cond_14 VarWChar(3) -- String
+SET     @cond_14 = '%C%'
+DECLARE @cond_15 VarWChar(3) -- String
+SET     @cond_15 = '%C%'
+DECLARE @cond_16 VarWChar(3) -- String
+SET     @cond_16 = '%C%'
+DECLARE @cond_17 VarWChar(3) -- String
+SET     @cond_17 = '%C%'
+DECLARE @cond_18 VarWChar(3) -- String
+SET     @cond_18 = '%C%'
+DECLARE @cond_19 VarWChar(3) -- String
+SET     @cond_19 = '%C%'
+DECLARE @cond_20 VarWChar(3) -- String
+SET     @cond_20 = '%C%'
+DECLARE @cond_21 VarWChar(3) -- String
+SET     @cond_21 = '%C%'
+DECLARE @cond_22 VarWChar(3) -- String
+SET     @cond_22 = '%C%'
+DECLARE @cond_23 VarWChar(3) -- String
+SET     @cond_23 = '%C%'
 
 SELECT
 	[al_group_2].[AlertKey],
@@ -155,7 +155,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_2] ON ([t1].[AlertKey] = CStr([trade_2].[DealId])))
 				LEFT JOIN [Nomin] [nomin_2] ON ([t1].[AlertKey] = CStr([nomin_2].[CargoId]))
 		WHERE
-			([nomin_2].[DeliveryCounterParty] LIKE @DeliveryCounterParty OR [trade_2].[CounterParty] LIKE @DeliveryCounterParty_1 OR [t1].[AlertCode] LIKE @DeliveryCounterParty_2) AND
+			([nomin_2].[DeliveryCounterParty] LIKE @cond OR [trade_2].[CounterParty] LIKE @cond_1 OR [t1].[AlertCode] LIKE @cond_2) AND
 			[al_group_2].[AlertKey] = [t1].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t1].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t1].[CreationDate]
@@ -181,7 +181,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_3] ON ([t2].[AlertKey] = CStr([trade_3].[DealId])))
 				LEFT JOIN [Nomin] [nomin_3] ON ([t2].[AlertKey] = CStr([nomin_3].[CargoId]))
 		WHERE
-			([nomin_3].[DeliveryCounterParty] LIKE @DeliveryCounterParty_3 OR [trade_3].[CounterParty] LIKE @DeliveryCounterParty_4 OR [t2].[AlertCode] LIKE @DeliveryCounterParty_5) AND
+			([nomin_3].[DeliveryCounterParty] LIKE @cond_3 OR [trade_3].[CounterParty] LIKE @cond_4 OR [t2].[AlertCode] LIKE @cond_5) AND
 			[al_group_2].[AlertKey] = [t2].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t2].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t2].[CreationDate]
@@ -207,7 +207,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_4] ON ([t3].[AlertKey] = CStr([trade_4].[DealId])))
 				LEFT JOIN [Nomin] [nomin_4] ON ([t3].[AlertKey] = CStr([nomin_4].[CargoId]))
 		WHERE
-			([nomin_4].[DeliveryCounterParty] LIKE @DeliveryCounterParty_6 OR [trade_4].[CounterParty] LIKE @DeliveryCounterParty_7 OR [t3].[AlertCode] LIKE @DeliveryCounterParty_8) AND
+			([nomin_4].[DeliveryCounterParty] LIKE @cond_6 OR [trade_4].[CounterParty] LIKE @cond_7 OR [t3].[AlertCode] LIKE @cond_8) AND
 			[al_group_2].[AlertKey] = [t3].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t3].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t3].[CreationDate]
@@ -233,7 +233,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_5] ON ([t4].[AlertKey] = CStr([trade_5].[DealId])))
 				LEFT JOIN [Nomin] [nomin_5] ON ([t4].[AlertKey] = CStr([nomin_5].[CargoId]))
 		WHERE
-			([nomin_5].[DeliveryCounterParty] LIKE @DeliveryCounterParty_9 OR [trade_5].[CounterParty] LIKE @DeliveryCounterParty_10 OR [t4].[AlertCode] LIKE @DeliveryCounterParty_11) AND
+			([nomin_5].[DeliveryCounterParty] LIKE @cond_9 OR [trade_5].[CounterParty] LIKE @cond_10 OR [t4].[AlertCode] LIKE @cond_11) AND
 			[al_group_2].[AlertKey] = [t4].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t4].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t4].[CreationDate]
@@ -259,7 +259,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_6] ON ([t5].[AlertKey] = CStr([trade_6].[DealId])))
 				LEFT JOIN [Nomin] [nomin_6] ON ([t5].[AlertKey] = CStr([nomin_6].[CargoId]))
 		WHERE
-			([nomin_6].[DeliveryCounterParty] LIKE @DeliveryCounterParty_12 OR [trade_6].[CounterParty] LIKE @DeliveryCounterParty_13 OR [t5].[AlertCode] LIKE @DeliveryCounterParty_14) AND
+			([nomin_6].[DeliveryCounterParty] LIKE @cond_12 OR [trade_6].[CounterParty] LIKE @cond_13 OR [t5].[AlertCode] LIKE @cond_14) AND
 			[al_group_2].[AlertKey] = [t5].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t5].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t5].[CreationDate]
@@ -285,7 +285,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_7] ON ([t6].[AlertKey] = CStr([trade_7].[DealId])))
 				LEFT JOIN [Nomin] [nomin_7] ON ([t6].[AlertKey] = CStr([nomin_7].[CargoId]))
 		WHERE
-			([nomin_7].[DeliveryCounterParty] LIKE @DeliveryCounterParty_15 OR [trade_7].[CounterParty] LIKE @DeliveryCounterParty_16 OR [t6].[AlertCode] LIKE @DeliveryCounterParty_17) AND
+			([nomin_7].[DeliveryCounterParty] LIKE @cond_15 OR [trade_7].[CounterParty] LIKE @cond_16 OR [t6].[AlertCode] LIKE @cond_17) AND
 			[al_group_2].[AlertKey] = [t6].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t6].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t6].[CreationDate]
@@ -311,7 +311,7 @@ SELECT
 				LEFT JOIN [Trade] [trade_8] ON ([t7].[AlertKey] = CStr([trade_8].[DealId])))
 				LEFT JOIN [Nomin] [nomin_8] ON ([t7].[AlertKey] = CStr([nomin_8].[CargoId]))
 		WHERE
-			([nomin_8].[DeliveryCounterParty] LIKE @DeliveryCounterParty_18 OR [trade_8].[CounterParty] LIKE @DeliveryCounterParty_19 OR [t7].[AlertCode] LIKE @DeliveryCounterParty_20) AND
+			([nomin_8].[DeliveryCounterParty] LIKE @cond_18 OR [trade_8].[CounterParty] LIKE @cond_19 OR [t7].[AlertCode] LIKE @cond_20) AND
 			[al_group_2].[AlertKey] = [t7].[AlertKey] AND
 			[al_group_2].[AlertCode] = [t7].[AlertCode] AND
 			[al_group_2].[CreationDate] = [t7].[CreationDate]
@@ -339,9 +339,8 @@ FROM
 				LEFT JOIN [Trade] [trade_1] ON ([al_group_1].[AlertKey] = CStr([trade_1].[DealId])))
 				LEFT JOIN [Nomin] [nomin_1] ON ([al_group_1].[AlertKey] = CStr([nomin_1].[CargoId]))
 		WHERE
-			[nomin_1].[DeliveryCounterParty] LIKE @DeliveryCounterParty_21 OR
-			[trade_1].[CounterParty] LIKE @DeliveryCounterParty_22 OR
-			[al_group_1].[AlertCode] LIKE @DeliveryCounterParty_23
+			[nomin_1].[DeliveryCounterParty] LIKE @cond_21 OR [trade_1].[CounterParty] LIKE @cond_22 OR
+			[al_group_1].[AlertCode] LIKE @cond_23
 		GROUP BY
 			[al_group_1].[AlertKey],
 			[al_group_1].[AlertCode],

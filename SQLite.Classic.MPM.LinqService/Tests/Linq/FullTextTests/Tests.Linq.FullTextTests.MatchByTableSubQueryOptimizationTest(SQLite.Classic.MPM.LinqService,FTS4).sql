@@ -7,7 +7,7 @@ SELECT
 FROM
 	[FTS4_TABLE] [r]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

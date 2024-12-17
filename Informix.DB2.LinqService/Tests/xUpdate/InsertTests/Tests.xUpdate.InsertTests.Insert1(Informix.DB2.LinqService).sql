@@ -19,7 +19,7 @@ INSERT INTO Child
 VALUES
 (
 	1,
-	@id::Int
+	@id
 )
 
 BeforeExecute

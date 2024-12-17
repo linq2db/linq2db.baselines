@@ -37,7 +37,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	endsWith(r.Value, ']') = true
+	endsWith(r.Value, ']')
 LIMIT 2
 
 BeforeExecute
@@ -48,7 +48,7 @@ SELECT
 FROM
 	SampleClass r
 WHERE
-	startsWith(r.Value, ']') = true
+	startsWith(r.Value, ']')
 LIMIT 2
 
 BeforeExecute

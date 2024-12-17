@@ -7,9 +7,9 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Child" c_1
 		WHERE

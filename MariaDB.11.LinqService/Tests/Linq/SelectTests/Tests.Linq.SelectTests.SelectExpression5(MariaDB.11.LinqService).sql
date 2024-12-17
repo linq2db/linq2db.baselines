@@ -29,13 +29,11 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p Bool -- Boolean
-SET     @p = 1
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	@p
+	1
 FROM
 	`SelectExpressionTable` `t1`
 LIMIT @take

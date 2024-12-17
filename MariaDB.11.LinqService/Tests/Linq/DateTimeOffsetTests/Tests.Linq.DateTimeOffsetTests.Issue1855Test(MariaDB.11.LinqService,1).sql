@@ -39,8 +39,24 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @id Int32
-SET     @id = 1
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
+SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+
+INSERT INTO `Issue1855Table`
+(
+	`Id`,
+	`SomeDateTimeOffset`
+)
+VALUES
+(
+	@Id,
+	@SomeDateTimeOffset
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @interval Int32
 SET     @interval = 10
 DECLARE @clientSideIn Datetime -- DateTimeOffset
@@ -53,7 +69,7 @@ SELECT
 FROM
 	`Issue1855Table` `r`
 WHERE
-	`r`.`Id` = @id AND Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) >= @clientSideIn
+	Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) >= @clientSideIn
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

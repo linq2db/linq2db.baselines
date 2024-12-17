@@ -13,9 +13,9 @@ SELECT
 			c2."ParentID" = c_1."ParentID"
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" c2_1
 			WHERE
@@ -25,9 +25,9 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"Child" c2_2
 			WHERE

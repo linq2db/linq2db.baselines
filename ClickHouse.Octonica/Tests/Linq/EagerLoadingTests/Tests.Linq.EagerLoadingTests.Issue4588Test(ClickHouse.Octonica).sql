@@ -73,7 +73,7 @@ FROM
 						FROM
 							Order x
 						WHERE
-							startsWith(x.Name, 'cat') = true
+							startsWith(x.Name, 'cat')
 						ORDER BY
 							x.Id
 						LIMIT 100, 10
@@ -101,7 +101,7 @@ FROM
 				FROM
 					Order x
 				WHERE
-					startsWith(x.Name, 'cat') = true
+					startsWith(x.Name, 'cat')
 				ORDER BY
 					x.Id
 				LIMIT 100, 10
@@ -118,7 +118,7 @@ SELECT
 FROM
 	Order x
 WHERE
-	startsWith(x.Name, 'cat') = true
+	startsWith(x.Name, 'cat')
 ORDER BY
 	x.Id
 LIMIT 100, 10

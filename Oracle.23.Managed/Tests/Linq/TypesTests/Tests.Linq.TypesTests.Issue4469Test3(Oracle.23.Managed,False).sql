@@ -39,9 +39,9 @@ SELECT * FROM dual
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @param Int32
-SET     @param = 33
-DECLARE @param_1 Decimal(2, 0)
-SET     @param_1 = 33
+SET     @param = 33D
+DECLARE @param_1 Decimal
+SET     @param_1 = 33D
 DECLARE @param_2 BinaryDouble -- Double
 SET     @param_2 = 33D
 

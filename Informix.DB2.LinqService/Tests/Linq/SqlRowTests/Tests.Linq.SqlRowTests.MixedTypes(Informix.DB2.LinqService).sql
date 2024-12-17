@@ -84,7 +84,7 @@ FROM
 	Mixed t
 WHERE
 	t."Int" > 0 AND ROW (t.Str, t."Double", t.Bool) = ROW ('One', 1, 't') AND
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

@@ -1,17 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Zero BigInt -- Int64
-SET     @Zero = 0
-DECLARE @p BigInt -- Int64
-SET     @p = 532266661
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[Person] [p]
 		WHERE
-			@Zero > @p
+			CAST(0 AS BIGINT) > 532266661
 	), 1, 0)
 

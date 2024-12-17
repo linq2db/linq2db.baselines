@@ -25,9 +25,9 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	CAST(@FirstName AS VARCHAR(4)),
-	CAST(@LastName AS VARCHAR(7)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@Gender
 )
 RETURNING
 	"PersonID"

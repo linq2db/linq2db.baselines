@@ -4,9 +4,9 @@
 SELECT
 	"p"."ChildID",
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"GrandChild" "a_GrandChildren"
 			WHERE
@@ -21,9 +21,9 @@ UNION ALL
 SELECT
 	"p_1"."ChildID",
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE

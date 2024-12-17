@@ -47,14 +47,14 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -69,8 +69,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(4) -- String
+SET     @test = 'Test'
 DECLARE @test NVarChar(6) -- String
 SET     @test = '%Test%'
 
@@ -83,14 +83,14 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -105,8 +105,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Value'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Value%'
 
@@ -119,14 +119,14 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -141,8 +141,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(5) -- String
+SET     @test = 'Class'
 DECLARE @test NVarChar(7) -- String
 SET     @test = '%Class%'
 

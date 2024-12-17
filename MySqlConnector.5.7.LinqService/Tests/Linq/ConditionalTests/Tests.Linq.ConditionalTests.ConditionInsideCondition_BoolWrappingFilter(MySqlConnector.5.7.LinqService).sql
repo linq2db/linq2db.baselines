@@ -24,7 +24,7 @@ FROM
 			`Parent` `p`
 	) `s`
 WHERE
-	`s`.`Value_1` = 1
+	`s`.`Value_1`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

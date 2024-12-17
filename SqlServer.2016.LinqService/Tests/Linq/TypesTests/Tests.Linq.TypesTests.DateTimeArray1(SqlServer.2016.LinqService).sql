@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7)
 
 SELECT
 	[t].[ID],
@@ -17,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (@DateTimeValue)
+	[t].[DateTimeValue] IN (DATETIMEFROMPARTS(2001, 1, 11, 1, 11, 21, 100))
 

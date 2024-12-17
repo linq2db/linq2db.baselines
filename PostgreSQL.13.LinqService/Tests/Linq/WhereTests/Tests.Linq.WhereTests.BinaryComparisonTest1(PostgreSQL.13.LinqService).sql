@@ -3,13 +3,13 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				"Person" t1
 			WHERE
-				(1 = 1) = (t1."MiddleName" <> t1."LastName" OR t1."MiddleName" IS NULL)
+				t1."MiddleName" <> t1."LastName" OR t1."MiddleName" IS NULL
 		)
 			THEN True
 		ELSE False

@@ -128,7 +128,7 @@ UPDATE
 SET
 	"is_deleted" = CAST(@is_deleted AS smallint)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

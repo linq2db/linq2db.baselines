@@ -11,7 +11,7 @@ FROM
 			[Parent] [p]
 	) [s]
 WHERE
-	[s].[Value_1] = True
+	[s].[Value_1]
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

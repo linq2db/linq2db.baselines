@@ -29,7 +29,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseSensitive), 'ststring') = true
+	endsWith(lowerUTF8(r.CaseSensitive), 'ststring')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -39,7 +39,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring') = true
+	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -49,7 +49,7 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseSensitive), 'ststring') = true
+	endsWith(lowerUTF8(r.CaseSensitive), 'ststring')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -59,5 +59,5 @@ SELECT
 FROM
 	CollatedTable r
 WHERE
-	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring') = true
+	endsWith(lowerUTF8(r.CaseInsensitive), 'ststring')
 

@@ -177,8 +177,6 @@ IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Empty UniqueIdentifier -- Guid
-SET     @Empty = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -198,7 +196,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -228,7 +226,7 @@ SELECT
 		WHERE
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -236,14 +234,14 @@ SELECT
 		WHERE
 			[x_18].[ResourceID] = [c1].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -419,8 +417,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @Empty UniqueIdentifier -- Guid
-SET     @Empty = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -440,7 +436,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -470,7 +466,7 @@ SELECT
 		WHERE
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -478,14 +474,14 @@ SELECT
 		WHERE
 			[x_18].[ResourceID] = [c1].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -494,7 +490,7 @@ SELECT
 					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty OR [a2].[Id] IS NULL), 1, 0),
+	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL), 1, 0),
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],
@@ -524,7 +520,7 @@ SELECT
 		WHERE
 			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c2].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -532,14 +528,14 @@ SELECT
 		WHERE
 			[x_21].[ResourceID] = [c2].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_22]
 		WHERE
 			[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
-			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_22].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -548,7 +544,7 @@ SELECT
 					[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a3].[Id] IS NOT NULL AND ([a3].[Id] <> @Empty OR [a3].[Id] IS NULL), 1, 0),
+	IIF([a3].[Id] IS NOT NULL AND ([a3].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a3].[Id] IS NULL), 1, 0),
 	[a3].[Id],
 	[c3].[Id],
 	[c3].[ResourceLabel],
@@ -578,7 +574,7 @@ SELECT
 		WHERE
 			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c3].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -586,14 +582,14 @@ SELECT
 		WHERE
 			[x_24].[ResourceID] = [c3].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_25]
 		WHERE
 			[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
-			([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_25].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -602,7 +598,7 @@ SELECT
 					[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a4].[Id] IS NOT NULL AND ([a4].[Id] <> @Empty OR [a4].[Id] IS NULL), 1, 0),
+	IIF([a4].[Id] IS NOT NULL AND ([a4].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a4].[Id] IS NULL), 1, 0),
 	[a4].[Id],
 	[c4].[Id],
 	[c4].[ResourceLabel],
@@ -632,7 +628,7 @@ SELECT
 		WHERE
 			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c4].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -640,14 +636,14 @@ SELECT
 		WHERE
 			[x_27].[ResourceID] = [c4].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_28]
 		WHERE
 			[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
-			([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_28].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -656,7 +652,7 @@ SELECT
 					[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a5].[Id] IS NOT NULL AND ([a5].[Id] <> @Empty OR [a5].[Id] IS NULL), 1, 0),
+	IIF([a5].[Id] IS NOT NULL AND ([a5].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a5].[Id] IS NULL), 1, 0),
 	[a5].[Id],
 	[c5].[Id],
 	[c5].[ResourceLabel],
@@ -686,7 +682,7 @@ SELECT
 		WHERE
 			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c5].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -694,14 +690,14 @@ SELECT
 		WHERE
 			[x_30].[ResourceID] = [c5].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_31]
 		WHERE
 			[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
-			([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_31].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -710,7 +706,7 @@ SELECT
 					[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a6].[Id] IS NOT NULL AND ([a6].[Id] <> @Empty OR [a6].[Id] IS NULL), 1, 0),
+	IIF([a6].[Id] IS NOT NULL AND ([a6].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a6].[Id] IS NULL), 1, 0),
 	[a6].[Id],
 	[c6].[Id],
 	[c6].[ResourceLabel],
@@ -740,7 +736,7 @@ SELECT
 		WHERE
 			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c6].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -748,14 +744,14 @@ SELECT
 		WHERE
 			[x_33].[ResourceID] = [c6].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_34]
 		WHERE
 			[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
-			([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_34].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -764,7 +760,7 @@ SELECT
 					[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a7].[Id] IS NOT NULL AND ([a7].[Id] <> @Empty OR [a7].[Id] IS NULL), 1, 0),
+	IIF([a7].[Id] IS NOT NULL AND ([a7].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a7].[Id] IS NULL), 1, 0),
 	[a7].[Id],
 	[c7].[Id],
 	[c7].[ResourceLabel],
@@ -794,7 +790,7 @@ SELECT
 		WHERE
 			[x_35].[Status] < 0 AND [x_35].[ResourceID] = [c7].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -802,14 +798,14 @@ SELECT
 		WHERE
 			[x_36].[ResourceID] = [c7].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_37]
 		WHERE
 			[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
-			([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_37].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM
@@ -818,7 +814,7 @@ SELECT
 					[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a8].[Id] IS NOT NULL AND ([a8].[Id] <> @Empty OR [a8].[Id] IS NULL), 1, 0),
+	IIF([a8].[Id] IS NOT NULL AND ([a8].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a8].[Id] IS NULL), 1, 0),
 	[a8].[Id],
 	[c8].[Id],
 	[c8].[ResourceLabel],
@@ -848,7 +844,7 @@ SELECT
 		WHERE
 			[x_38].[Status] < 0 AND [x_38].[ResourceID] = [c8].[Id]
 	),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -856,14 +852,14 @@ SELECT
 		WHERE
 			[x_39].[ResourceID] = [c8].[Id]
 	), 1, 0),
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_40]
 		WHERE
 			[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
-			([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
+			([x_40].[InfeedAdviceID] IS NULL OR  EXISTS (
 				SELECT
 					*
 				FROM

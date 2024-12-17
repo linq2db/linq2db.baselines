@@ -27,9 +27,9 @@ FROM
 			c1_1."ParentID" as "ParentID_1",
 			c1_1."ChildID",
 			CASE
-				WHEN EXISTS(
+				WHEN  EXISTS (
 					SELECT
-						1
+						*
 					FROM
 						"Child" c_6
 					WHERE

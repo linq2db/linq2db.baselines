@@ -98,16 +98,16 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[t2].[c2],
-	[t2].[c1],
+	[t2].[cond_1],
+	[t2].[cond],
 	[t2].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[t1].[c1],
+				[t1].[c1] as [cond],
 				[t1].[Id3],
-				N't2' as [c2]
+				N't2' as [cond_1]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (

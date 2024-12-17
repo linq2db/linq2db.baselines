@@ -7,7 +7,7 @@ SET
 	"BoolValue" = (
 		SELECT
 			CASE
-				WHEN NOT EXISTS(
+				WHEN  NOT EXISTS (
 					SELECT
 						*
 					FROM
@@ -39,7 +39,7 @@ SET
 			END
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

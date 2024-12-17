@@ -29,7 +29,7 @@ SELECT
 	"f"."Caption",
 	"f"."ParentId",
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM

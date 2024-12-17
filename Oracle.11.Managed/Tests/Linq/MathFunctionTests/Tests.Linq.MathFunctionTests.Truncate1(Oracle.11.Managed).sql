@@ -2,14 +2,14 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t."c1"
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Trunc(p."MoneyValue", 0) as "c1"
+			Trunc(p."MoneyValue", 0) as "Value_1"
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t."c1" <> 0.1
+	t."Value_1" <> 0.1
 

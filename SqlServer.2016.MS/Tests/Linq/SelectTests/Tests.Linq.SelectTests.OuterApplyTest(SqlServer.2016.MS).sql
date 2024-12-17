@@ -26,7 +26,7 @@ FROM
 			[p].[Value1],
 			[c1_1].[ParentID] as [ParentID_1],
 			[c1_1].[ChildID],
-			IIF(EXISTS(
+			IIF( EXISTS (
 				SELECT
 					*
 				FROM

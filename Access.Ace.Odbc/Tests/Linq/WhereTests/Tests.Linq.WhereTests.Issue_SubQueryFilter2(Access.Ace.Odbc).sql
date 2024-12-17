@@ -11,35 +11,35 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			[Person] [e],
 			(
 				SELECT TOP 1
-					[d].[PersonID]
+					[d].[PersonID] as [cond]
 				FROM
 					[Patient] [d]
 			) [t1]
 		WHERE
 			[e].[PersonID] = [p].[PersonID] AND [e].[FirstName] LIKE ? AND
-			[e].[PersonID] = [t1].[PersonID]
+			[e].[PersonID] = [t1].[cond]
 	) OR
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			[Person] [e_1],
 			(
 				SELECT TOP 1
-					[d_1].[PersonID]
+					[d_1].[PersonID] as [cond]
 				FROM
 					[Patient] [d_1]
 			) [t2]
 		WHERE
 			[e_1].[PersonID] = [p].[PersonID] AND [e_1].[FirstName] LIKE ? AND
-			[e_1].[PersonID] = [t2].[PersonID]
+			[e_1].[PersonID] = [t2].[cond]
 	)
 ORDER BY
 	[p].[PersonID]

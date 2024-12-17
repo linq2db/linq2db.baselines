@@ -8,7 +8,7 @@ SELECT
 FROM
 	"GrandChild" "c_1"
 WHERE
-	"c_1"."ParentID" IS NOT NULL AND EXISTS(
+	"c_1"."ParentID" IS NOT NULL AND  EXISTS (
 		SELECT
 			*
 		FROM

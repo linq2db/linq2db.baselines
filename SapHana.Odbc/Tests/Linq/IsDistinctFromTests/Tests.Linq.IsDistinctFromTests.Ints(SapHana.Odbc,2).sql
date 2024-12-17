@@ -76,7 +76,15 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" <> ?
+	 NOT EXISTS (
+		SELECT
+			"s"."Int"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -88,7 +96,15 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."NullableInt" IS NULL OR "s"."NullableInt" <> ?
+	 NOT EXISTS (
+		SELECT
+			"s"."NullableInt"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -100,7 +116,15 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	"s"."Int" = ?
+	 EXISTS (
+		SELECT
+			"s"."Int"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -112,7 +136,15 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	NOT ("s"."NullableInt" IS NULL OR "s"."NullableInt" <> ?)
+	 EXISTS (
+		SELECT
+			"s"."NullableInt"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

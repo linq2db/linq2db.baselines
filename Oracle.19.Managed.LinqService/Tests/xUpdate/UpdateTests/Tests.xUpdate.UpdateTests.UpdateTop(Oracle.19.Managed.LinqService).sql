@@ -190,9 +190,9 @@ UPDATE
 SET
 	"Value1" = :Value1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT

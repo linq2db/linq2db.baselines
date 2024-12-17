@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[BoolValue] = False
+	NOT [r].[BoolValue]
 

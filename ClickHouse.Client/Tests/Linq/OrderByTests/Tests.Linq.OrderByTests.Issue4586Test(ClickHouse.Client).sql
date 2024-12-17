@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person x
 WHERE
-	startsWith(x.FirstName, 'J') = true
+	startsWith(x.FirstName, 'J')
 ORDER BY
 	x.PersonID DESC
 LIMIT 1, 2

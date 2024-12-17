@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-WITH CTE_1 ("unused")
+WITH CTE_1 ("c1")
 AS
 (
 	SELECT

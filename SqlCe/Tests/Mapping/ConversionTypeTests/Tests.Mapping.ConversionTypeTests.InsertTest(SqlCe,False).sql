@@ -34,6 +34,10 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @ID Int -- Int32
+SET     @ID = 2
+DECLARE @Data NVarChar(9) -- String
+SET     @Data = '***HHH***'
 
 INSERT INTO [TrimTestTable]
 (
@@ -42,8 +46,8 @@ INSERT INTO [TrimTestTable]
 )
 VALUES
 (
-	2,
-	'***HHH***'
+	@ID,
+	@Data
 )
 
 BeforeExecute

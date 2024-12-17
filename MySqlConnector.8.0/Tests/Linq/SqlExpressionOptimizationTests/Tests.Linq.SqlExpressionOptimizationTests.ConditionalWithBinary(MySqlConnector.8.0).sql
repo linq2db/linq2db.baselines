@@ -547,7 +547,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	`x`.`BoolValue` = 0
+	NOT `x`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -578,7 +578,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	`x_with_not`.`BoolValue` = 1
+	`x_with_not`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -609,7 +609,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	`swap`.`BoolValue` = 0
+	NOT `swap`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -640,7 +640,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 1
+	`swap_with_not`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -764,7 +764,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 0
+	`swap_with_not`.`BoolValue` <> 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -39,9 +39,9 @@ SELECT
 FROM
 	"TableToInsert" t
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(SELECT NULL "Id", NULL "Value" FROM sys.dual WHERE 1 = 0) r
 		WHERE

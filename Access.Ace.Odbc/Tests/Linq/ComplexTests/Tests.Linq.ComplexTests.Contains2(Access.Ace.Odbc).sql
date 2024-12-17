@@ -4,7 +4,6 @@
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	IIF([gc_1].[ParentID] IS NOT NULL AND [gc_1].[ChildID] IS NOT NULL AND [gc_1].[GrandChildID] IS NOT NULL, True, False),
 	[gc_1].[ParentID],
 	[gc_1].[ChildID],
 	[gc_1].[GrandChildID],

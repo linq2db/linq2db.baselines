@@ -21,7 +21,7 @@ VALUES
 (
 	1001,
 	't',
-	@arr::BYTE
+	@arr
 )
 
 BeforeExecute

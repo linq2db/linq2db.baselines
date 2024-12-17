@@ -17,10 +17,6 @@ CREATE TABLE [Issue1303]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = 0x0405
 
 INSERT INTO [Issue1303]
 (
@@ -31,8 +27,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	?,
-	?
+	0x010203,
+	0x0405
 )
 
 BeforeExecute

@@ -47,23 +47,23 @@ FROM
 	[Products] [e],
 	[Products] [pd2]
 WHERE
-	[e].[IsDeleted] = 0 AND
+	NOT [e].[IsDeleted] AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Order Details] [e_1]
 		WHERE
-			[e_1].[IsDeleted] = 0 AND [e].[ProductID] = [e_1].[ProductID]
+			NOT [e_1].[IsDeleted] AND [e].[ProductID] = [e_1].[ProductID]
 	) > 0 AND
-	[pd2].[IsDeleted] = 0 AND
+	NOT [pd2].[IsDeleted] AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Order Details] [e_2]
 		WHERE
-			[e_2].[IsDeleted] = 0 AND [pd2].[ProductID] = [e_2].[ProductID]
+			NOT [e_2].[IsDeleted] AND [pd2].[ProductID] = [e_2].[ProductID]
 	) > 0 AND
 	[e].[ProductID] = [pd2].[ProductID]
 ORDER BY

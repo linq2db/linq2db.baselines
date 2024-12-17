@@ -345,7 +345,7 @@ AS
 )
 SELECT
 	source."ProductId",
-	t1."StockOnHand",
+	t1."cond",
 	(
 		SELECT
 			SUM(wp_1."StockOnHand")
@@ -359,7 +359,7 @@ FROM
 		INNER JOIN "Issue4717ProductIncludedProduc" includedProductMapping ON source."ProductId" = includedProductMapping."ProductId"
 		LEFT JOIN (
 			SELECT
-				wp."StockOnHand",
+				wp."StockOnHand" as "cond",
 				ROW_NUMBER() OVER (PARTITION BY wp."WarehouseId" ORDER BY wp."WarehouseId") as "rn",
 				wp."WarehouseId"
 			FROM

@@ -29,11 +29,9 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p Boolean
-SET     @p = True
 
 SELECT TOP 1
-	CVar(@p)
+	True
 FROM
 	[SelectExpressionTable] [t1]
 

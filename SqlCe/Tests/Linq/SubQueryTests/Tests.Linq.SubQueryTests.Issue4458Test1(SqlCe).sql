@@ -95,7 +95,7 @@ FROM
 		FROM
 			[Issue4458Item] [t1]
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
 					*
 				FROM
@@ -133,7 +133,7 @@ FROM
 				[s].[ItemId] = [i].[Id] AND [stock_1].[ItemId] = [s].[ItemId]
 		) [t1]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

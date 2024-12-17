@@ -47,6 +47,10 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 100
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
 SELECT
 	m_1.Id,
@@ -67,7 +71,7 @@ FROM
 					t1.Id
 				FROM
 					(
-						SELECT SKIP 100 FIRST 10
+						SELECT SKIP @skip FIRST @take
 							x.Id
 						FROM
 							"Order" x
@@ -83,6 +87,10 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 100
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
 SELECT
 	m_1.Id,
@@ -94,7 +102,7 @@ FROM
 			t1.Id
 		FROM
 			(
-				SELECT SKIP 100 FIRST 10
+				SELECT SKIP @skip FIRST @take
 					x.Id
 				FROM
 					"Order" x
@@ -110,8 +118,12 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 100
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
-SELECT SKIP 100 FIRST 10
+SELECT SKIP @skip FIRST @take
 	x.Id,
 	x.Name
 FROM

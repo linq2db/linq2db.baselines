@@ -8,12 +8,12 @@ SELECT TOP (@take)
 FROM
 	[entities] [x]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			(
-				SELECT -10 AS [X]) [t]
+				SELECT -10 AS [X], 10 AS [Y]) [t]
 		WHERE
 			[x].[position].x > [t].[X]
 	)

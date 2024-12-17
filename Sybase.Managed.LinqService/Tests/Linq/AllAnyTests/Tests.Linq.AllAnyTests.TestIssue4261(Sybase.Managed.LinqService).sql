@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

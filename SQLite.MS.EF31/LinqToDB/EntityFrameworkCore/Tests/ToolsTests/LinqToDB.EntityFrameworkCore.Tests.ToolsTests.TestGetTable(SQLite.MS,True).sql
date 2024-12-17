@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [e]
 WHERE
-	[e].[IsDeleted] = 0 AND [e].[City] IS NOT NULL
+	NOT [e].[IsDeleted] AND [e].[City] IS NOT NULL
 
 
 

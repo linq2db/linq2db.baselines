@@ -122,17 +122,17 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @DeliveryCounterParty VarChar(3) -- String
-SET     @DeliveryCounterParty = '%C%'
+DECLARE @cond VarChar(3) -- String
+SET     @cond = '%C%'
 
 SELECT
 	"al_group_3"."AlertKey",
 	"al_group_3"."AlertCode",
 	"t2"."LastUpdate",
-	"t2"."CargoId",
+	"t2"."cond",
 	"t2"."DeliveryId",
 	"t2"."DeliveryCounterParty",
-	"t2"."DealId",
+	"t2"."cond_1",
 	"t2"."ParcelId",
 	"t2"."CounterParty"
 FROM
@@ -158,9 +158,8 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = RTrim(Char("trade_1"."DealId"))
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = RTrim(Char("nomin_1"."CargoId"))
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-			"trade_1"."CounterParty" LIKE @DeliveryCounterParty OR
-			"al_group_1"."AlertCode" LIKE @DeliveryCounterParty
+			"nomin_1"."DeliveryCounterParty" LIKE @cond OR "trade_1"."CounterParty" LIKE @cond OR
+			"al_group_1"."AlertCode" LIKE @cond
 		GROUP BY
 			"al_group_1"."AlertKey",
 			"al_group_1"."AlertCode",
@@ -168,10 +167,10 @@ FROM
 	) "al_group_3"
 		LEFT JOIN (
 			SELECT
-				"nomin_2"."CargoId",
+				"nomin_2"."CargoId" as "cond",
 				"nomin_2"."DeliveryId",
 				"nomin_2"."DeliveryCounterParty",
-				"trade_2"."DealId",
+				"trade_2"."DealId" as "cond_1",
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
 				Coalesce("t1".MAX_1, "t1"."CreationDate") as "LastUpdate",
@@ -197,9 +196,8 @@ FROM
 					LEFT JOIN "Trade" "trade_2" ON "t1"."AlertKey" = RTrim(Char("trade_2"."DealId"))
 					LEFT JOIN "Nomin" "nomin_2" ON "t1"."AlertKey" = RTrim(Char("nomin_2"."CargoId"))
 			WHERE
-				"nomin_2"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-				"trade_2"."CounterParty" LIKE @DeliveryCounterParty OR
-				"t1"."AlertCode" LIKE @DeliveryCounterParty
+				"nomin_2"."DeliveryCounterParty" LIKE @cond OR "trade_2"."CounterParty" LIKE @cond OR
+				"t1"."AlertCode" LIKE @cond
 		) "t2" ON "al_group_3"."AlertKey" = "t2"."AlertKey" AND "al_group_3"."AlertCode" = "t2"."AlertCode" AND "al_group_3"."CreationDate" = "t2"."CreationDate" AND "t2"."rn" <= 1
 
 BeforeExecute

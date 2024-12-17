@@ -39,12 +39,16 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @ClaimedKeyType VarChar(2) -- String
+SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN VarChar(2) -- String
+SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE
 	Issue1554Table p
 SET
-	ClaimedKeyType = 'EC',
-	ClaimedKeyTypeN = 'EC'
+	ClaimedKeyType = @ClaimedKeyType,
+	ClaimedKeyTypeN = @ClaimedKeyTypeN
 WHERE
 	p.Id = 0
 

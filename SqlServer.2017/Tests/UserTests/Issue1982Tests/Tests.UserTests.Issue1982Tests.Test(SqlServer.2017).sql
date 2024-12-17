@@ -17,7 +17,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

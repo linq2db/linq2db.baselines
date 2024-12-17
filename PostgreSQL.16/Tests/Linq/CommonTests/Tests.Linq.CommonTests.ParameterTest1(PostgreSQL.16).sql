@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Child" g_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -29,7 +29,7 @@ SELECT
 FROM
 	"Child" g_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

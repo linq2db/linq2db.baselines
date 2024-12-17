@@ -115,8 +115,8 @@ WHERE CAST("s"."Id" AS INTEGER) = 1
 
 
 --  SQLite.MS SQLite
-DECLARE @Id  -- Int64
-SET     @Id = 1
+DECLARE @cond  -- Int64
+SET     @cond = 1
 
 SELECT
 	[s].[Id],
@@ -127,7 +127,7 @@ SELECT
 FROM
 	[Subdivisions] [s]
 WHERE
-	CAST([s].[Id] AS BigInt) = @Id
+	CAST([s].[Id] AS BigInt) = @cond
 
 
 

@@ -261,18 +261,28 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @int1 Integer(4) -- Int32
+SET     @int1 = 11
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
+DECLARE @int2 Integer(4) -- Int32
+SET     @int2 = 22
+DECLARE @int3 Integer(4) -- Int32
+SET     @int3 = 33
 
 UPDATE
 	UpdatedEntities
 SET
 	Value1 = (
 		SELECT
-			(UpdatedEntities.Value1 * t2.Value1) * 11
+			(UpdatedEntities.Value1 * t2.Value1) * @int1::Int
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_1.Value1,
 					c_2.id
 				FROM
@@ -288,10 +298,10 @@ SET
 	),
 	Value2 = (
 		SELECT
-			(UpdatedEntities.Value2 * t3.Value2) * 22
+			(UpdatedEntities.Value2 * t3.Value2) * @int2::Int
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_2.Value2,
 					c_3.id
 				FROM
@@ -307,10 +317,10 @@ SET
 	),
 	Value3 = (
 		SELECT
-			(UpdatedEntities.Value3 * t4.Value3) * 33
+			(UpdatedEntities.Value3 * t4.Value3) * @int3::Int
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					t_3.Value3,
 					c_4.id
 				FROM
@@ -325,12 +335,12 @@ SET
 			UpdatedEntities.id = t4.id
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			(
-				SELECT SKIP 1 FIRST 2
+				SELECT SKIP @skip FIRST @take
 					c_1.id
 				FROM
 					UpdatedEntities c_1

@@ -7,9 +7,9 @@ SET
 	"BoolValue" = (
 		SELECT
 			CASE
-				WHEN NOT EXISTS(
+				WHEN  NOT EXISTS (
 					SELECT
-						1
+						*
 					FROM
 						"Parent" x_2
 					WHERE
@@ -39,9 +39,9 @@ SET
 			END
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Parent" x
 				INNER JOIN "LinqDataTypes" a_Table1 ON x."ParentID" = a_Table1.ID

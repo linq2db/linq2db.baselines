@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				p.ParentID
 			FROM

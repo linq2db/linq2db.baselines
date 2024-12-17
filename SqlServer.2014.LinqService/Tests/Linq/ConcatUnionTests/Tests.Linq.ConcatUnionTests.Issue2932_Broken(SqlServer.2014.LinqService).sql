@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[ChildID],
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM
@@ -16,7 +16,7 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[ChildID],
-	IIF(EXISTS(
+	IIF( EXISTS (
 		SELECT
 			*
 		FROM

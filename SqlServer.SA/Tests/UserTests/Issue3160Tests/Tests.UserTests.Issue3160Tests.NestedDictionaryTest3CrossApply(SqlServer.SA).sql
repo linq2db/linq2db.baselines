@@ -95,8 +95,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t2].[c2],
-	[t2].[c1],
+	[t2].[cond_1],
+	[t2].[cond],
 	[t2].[Id3],
 	[t2].[Name3],
 	[t2].[Name2],
@@ -105,10 +105,10 @@ FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[t1].[c1],
+				[t1].[c1] as [cond],
 				[t1].[Id3],
 				[t1].[Name3],
-				N't2' as [c2],
+				N't2' as [cond_1],
 				[x_1].[NAME2] as [Name2]
 			FROM
 				[TABLE2] [x_1]

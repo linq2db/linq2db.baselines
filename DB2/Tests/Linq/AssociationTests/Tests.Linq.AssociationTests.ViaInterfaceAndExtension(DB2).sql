@@ -59,9 +59,9 @@ SELECT
 FROM
 	"MainEntity" "x"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"SubEntity" "a_SubEntities_1"
 		WHERE

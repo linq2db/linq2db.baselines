@@ -278,7 +278,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1.not_null,
+	t1.cond,
 	t1."Id"
 FROM
 	"Request" r
@@ -286,7 +286,7 @@ FROM
 		LEFT JOIN "Admin" "a_Admin" ON "a_User"."Id" = "a_Admin"."Id"
 		LEFT JOIN LATERAL (
 			SELECT
-				1 as not_null,
+				1 as cond,
 				"a_Email_1"."Id"
 			FROM
 				"EmailAdminAssociation" "a_EmailAdminAssociations"

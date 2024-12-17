@@ -8,11 +8,11 @@ SELECT
 FROM
 	(
 		SELECT
-			t2."c1"
+			*
 		FROM
 			(
 				SELECT
-					1 as "c1"
+					*
 				FROM
 					"Parent" t1
 				ORDER BY

@@ -37,13 +37,11 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Boolean
-SET     @p = TRUE
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	CAST(@p AS BOOLEAN)
+	TRUE
 FROM
 	"SelectExpressionTable" "t1"
 FETCH NEXT @take ROWS ONLY

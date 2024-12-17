@@ -19,13 +19,13 @@ INSERT INTO `LinqDataTypes`
 	`BoolValue`
 )
 SELECT
-	CAST(Floor(`t2`.`c1` + 1001) AS SIGNED),
+	CAST(Floor(`t2`.`Value_1` + 1001) AS SIGNED),
 	Uuid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(CAST(`t1`.`ID` AS DECIMAL(29, 10)) / 3) as `c1`
+			Floor(CAST(`t1`.`ID` AS DECIMAL(29, 10)) / 3) as `Value_1`
 		FROM
 			`LinqDataTypes` `t1`
 	) `t2`

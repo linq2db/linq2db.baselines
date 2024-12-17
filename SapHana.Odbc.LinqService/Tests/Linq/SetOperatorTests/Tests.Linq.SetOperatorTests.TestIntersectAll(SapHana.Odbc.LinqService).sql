@@ -307,7 +307,7 @@ FROM
 			MOD("t_1"."Id", 2) = 0
 	) "t1"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

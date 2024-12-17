@@ -6,7 +6,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(r.Diagnosis, 'Persecution') = true
+	endsWith(r.Diagnosis, 'Persecution')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -16,7 +16,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(r.Diagnosis, 'persecution') = true
+	endsWith(r.Diagnosis, 'persecution')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -26,7 +26,7 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(lowerUTF8(r.Diagnosis), 'persecution') = true
+	endsWith(lowerUTF8(r.Diagnosis), 'persecution')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -36,5 +36,5 @@ SELECT
 FROM
 	Patient r
 WHERE
-	endsWith(lowerUTF8(r.Diagnosis), 'persecution') = true
+	endsWith(lowerUTF8(r.Diagnosis), 'persecution')
 

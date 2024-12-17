@@ -121,9 +121,9 @@ SET
 			"UpdatedEntities"."id" = "t2"."id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT

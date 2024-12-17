@@ -11,35 +11,35 @@ SELECT
 FROM
 	"Patient" "t1"
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			"Person" "e",
 			(
 				SELECT
-					"d"."PersonID"
+					"d"."PersonID" as "cond"
 				FROM
 					"Patient" "d"
 				FETCH NEXT 1 ROWS ONLY
 			) "t2"
 		WHERE
-			"e"."FirstName" LIKE @filter1 ESCAPE '~' AND "e"."PersonID" = "t2"."PersonID"
+			"e"."FirstName" LIKE @filter1 ESCAPE '~' AND "e"."PersonID" = "t2"."cond"
 	) OR
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			"Person" "e_1",
 			(
 				SELECT
-					"d_1"."PersonID"
+					"d_1"."PersonID" as "cond"
 				FROM
 					"Patient" "d_1"
 				FETCH NEXT 1 ROWS ONLY
 			) "t3"
 		WHERE
-			"e_1"."FirstName" LIKE @filter2 ESCAPE '~' AND "e_1"."PersonID" = "t3"."PersonID"
+			"e_1"."FirstName" LIKE @filter2 ESCAPE '~' AND "e_1"."PersonID" = "t3"."cond"
 	)
 ORDER BY
 	"t1"."PersonID"

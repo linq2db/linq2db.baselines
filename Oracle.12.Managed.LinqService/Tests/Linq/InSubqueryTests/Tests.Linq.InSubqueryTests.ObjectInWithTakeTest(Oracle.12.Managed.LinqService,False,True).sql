@@ -7,9 +7,9 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT

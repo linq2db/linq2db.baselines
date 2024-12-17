@@ -41,8 +41,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @id Int -- Int32
-SET     @id = 1
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset DateTimeOffset
+SET     @SomeDateTimeOffset = CAST('2019-08-08T08:08:08.0000000+00:00' AS DATETIMEOFFSET)
+
+INSERT INTO [Issue1855Table]
+(
+	[Id],
+	[SomeDateTimeOffset]
+)
+VALUES
+(
+	@Id,
+	@SomeDateTimeOffset
+)
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
 DECLARE @clientSideIn DateTimeOffset
 SET     @clientSideIn = CAST('2019-08-08T08:08:18.0000000+00:00' AS DATETIMEOFFSET)
 
@@ -53,7 +69,8 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	[r].[Id] = @id AND (@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR [r].[SomeNullableDateTimeOffset] IS NULL)
+	@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR
+	[r].[SomeNullableDateTimeOffset] IS NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

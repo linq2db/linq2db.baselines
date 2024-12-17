@@ -190,7 +190,7 @@ UPDATE
 SET
 	"Value1" = ?
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

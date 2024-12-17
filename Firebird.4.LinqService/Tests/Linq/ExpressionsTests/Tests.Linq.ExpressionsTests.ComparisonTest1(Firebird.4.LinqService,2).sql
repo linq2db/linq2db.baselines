@@ -7,18 +7,18 @@ SET     @personId_1 = 2
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				"Person" "t7"
 					CROSS JOIN (
 						SELECT
-							COUNT("t1"."PersonID") as "c1"
+							COUNT("t1"."PersonID") as "cond"
 						FROM
 							"Patient" "t1"
 						WHERE
-							"t1"."PersonID" = @personId AND NOT EXISTS(
+							"t1"."PersonID" = @personId AND  NOT EXISTS (
 								SELECT
 									*
 								FROM
@@ -29,11 +29,11 @@ SELECT
 					) "t3"
 					CROSS JOIN (
 						SELECT
-							COUNT("t4"."PersonID") as "c1"
+							COUNT("t4"."PersonID") as "cond"
 						FROM
 							"Patient" "t4"
 						WHERE
-							"t4"."PersonID" = @personId_1 AND NOT EXISTS(
+							"t4"."PersonID" = @personId_1 AND  NOT EXISTS (
 								SELECT
 									*
 								FROM
@@ -43,7 +43,7 @@ SELECT
 							)
 					) "t6"
 			WHERE
-				"t3"."c1" = 0 AND "t6"."c1" = 0
+				"t3"."cond" = 0 AND "t6"."cond" = 0
 		)
 			THEN TRUE
 		ELSE FALSE

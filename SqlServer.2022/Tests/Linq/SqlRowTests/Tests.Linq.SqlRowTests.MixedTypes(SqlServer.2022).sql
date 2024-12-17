@@ -43,7 +43,7 @@ WHERE
 	[t].[Str] = N'One' AND
 	[t].[Double] = 1 AND
 	[t].[Bool] = 1 AND
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

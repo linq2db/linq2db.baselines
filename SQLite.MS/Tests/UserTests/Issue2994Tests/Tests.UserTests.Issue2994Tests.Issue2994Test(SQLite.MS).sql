@@ -8,7 +8,7 @@ UPDATE
 SET
 	[LastName] = @LastName
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

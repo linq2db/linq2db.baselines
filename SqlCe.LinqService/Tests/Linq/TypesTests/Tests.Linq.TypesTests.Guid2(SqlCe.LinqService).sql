@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p UniqueIdentifier -- Guid
-SET     @p = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 SELECT TOP (2)
 	[p].[ID],
@@ -15,12 +13,10 @@ SELECT TOP (2)
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @p
+	[p].[GuidValue] = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 BeforeExecute
 -- SqlCe
-DECLARE @p UniqueIdentifier -- Guid
-SET     @p = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 
 SELECT TOP (2)
 	[p].[ID],
@@ -34,5 +30,5 @@ SELECT TOP (2)
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = @p
+	[p].[GuidValue] = 'd2f970c0-35ac-4987-9cd5-5badb1757436'
 

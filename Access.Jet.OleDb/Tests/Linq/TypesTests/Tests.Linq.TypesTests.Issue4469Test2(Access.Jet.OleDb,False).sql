@@ -37,7 +37,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @param Integer -- Int32
+DECLARE @param Integer(2, 0) -- Int32
 SET     @param = 33
 DECLARE @param_1 VarChar(2, 0) -- AnsiString
 SET     @param_1 = 33

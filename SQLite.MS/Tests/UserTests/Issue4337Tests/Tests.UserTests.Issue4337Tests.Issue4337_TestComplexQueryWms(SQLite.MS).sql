@@ -164,8 +164,6 @@ CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Empty  -- Guid
-SET     @Empty = X'00000000000000000000000000000000'
 
 SELECT
 	[x_16].[Id],
@@ -186,7 +184,7 @@ SELECT
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
 	CASE
-		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> @Empty OR [a1].[Id] IS NULL)
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> X'00000000000000000000000000000000' OR [a1].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -220,7 +218,7 @@ SELECT
 			[x_17].[Status] < 99 AND [x_17].[ResourceID] = [c1].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -232,14 +230,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_19]
 			WHERE
 				[x_19].[Status] < 99 AND [x_19].[ResourceID] = [c1].[Id] AND
-				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM
@@ -252,7 +250,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> @Empty OR [a2].[Id] IS NULL)
+		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> X'00000000000000000000000000000000' OR [a2].[Id] IS NULL)
 			THEN 1
 		ELSE 0
 	END,
@@ -286,7 +284,7 @@ SELECT
 			[x_20].[Status] < 99 AND [x_20].[ResourceID] = [c2].[Id]
 	),
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -298,14 +296,14 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
 				[InventoryResourceDTO] [x_22]
 			WHERE
 				[x_22].[Status] < 99 AND [x_22].[ResourceID] = [c2].[Id] AND
-				([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+				([x_22].[InfeedAdviceID] IS NULL OR  EXISTS (
 					SELECT
 						*
 					FROM

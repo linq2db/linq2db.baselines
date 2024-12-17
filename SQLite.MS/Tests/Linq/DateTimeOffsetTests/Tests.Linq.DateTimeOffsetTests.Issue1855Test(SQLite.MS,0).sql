@@ -39,8 +39,24 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
-SET     @id = 1
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @SomeDateTimeOffset  -- DateTimeOffset
+SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+
+INSERT INTO [Issue1855Table]
+(
+	[Id],
+	[SomeDateTimeOffset]
+)
+VALUES
+(
+	@Id,
+	@SomeDateTimeOffset
+)
+
+BeforeExecute
+-- SQLite.MS SQLite
 DECLARE @interval  -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn  -- DateTimeOffset
@@ -53,7 +69,7 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	[r].[Id] = @id AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
+	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
 
 BeforeExecute
 -- SQLite.MS SQLite

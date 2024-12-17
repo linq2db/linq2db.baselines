@@ -7,9 +7,9 @@ SELECT
 FROM
 	"Child" x
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			y."ParentID"
+			MAX(y."ChildID")
 		FROM
 			"Child" y
 		GROUP BY

@@ -102,8 +102,10 @@ CREATE TABLE IF NOT EXISTS ProductsPerOrderPeriod
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
-SELECT FIRST 10
+SELECT FIRST @take
 	r.OrderPeriodId,
 	r.ProductId,
 	r.CategoryId,

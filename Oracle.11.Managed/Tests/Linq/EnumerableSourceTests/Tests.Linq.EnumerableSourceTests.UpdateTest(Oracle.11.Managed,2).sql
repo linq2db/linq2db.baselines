@@ -57,9 +57,9 @@ SET
 			"TableToInsert"."Id" = t_1."Id"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"TableToInsert" t
 				INNER JOIN (

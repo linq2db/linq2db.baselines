@@ -79,9 +79,9 @@ FROM
 			MOD(t_1."Id", 2) = 0
 	) t1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"SampleData" t_2
 		WHERE

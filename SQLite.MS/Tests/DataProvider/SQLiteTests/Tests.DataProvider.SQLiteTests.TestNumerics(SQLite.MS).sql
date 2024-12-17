@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'bigint') = 1 THEN 1
+		WHEN CAST(1 as 'bigint') THEN 1
 		ELSE 0
 	END
 
@@ -12,7 +12,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'bit') = 1 THEN 1
+		WHEN CAST(1 as 'bit') THEN 1
 		ELSE 0
 	END
 
@@ -21,7 +21,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'decimal') = 1 THEN 1
+		WHEN CAST(1 as 'decimal') THEN 1
 		ELSE 0
 	END
 
@@ -30,7 +30,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'int') = 1 THEN 1
+		WHEN CAST(1 as 'int') THEN 1
 		ELSE 0
 	END
 
@@ -39,7 +39,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'money') = 1 THEN 1
+		WHEN CAST(1 as 'money') THEN 1
 		ELSE 0
 	END
 
@@ -48,7 +48,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'numeric') = 1 THEN 1
+		WHEN CAST(1 as 'numeric') THEN 1
 		ELSE 0
 	END
 
@@ -57,7 +57,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'smallint') = 1 THEN 1
+		WHEN CAST(1 as 'smallint') THEN 1
 		ELSE 0
 	END
 
@@ -66,7 +66,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'tinyint') = 1 THEN 1
+		WHEN CAST(1 as 'tinyint') THEN 1
 		ELSE 0
 	END
 
@@ -75,7 +75,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'float') = 1 THEN 1
+		WHEN CAST(1 as 'float') THEN 1
 		ELSE 0
 	END
 
@@ -84,7 +84,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN CAST(1 as 'real') = 1 THEN 1
+		WHEN CAST(1 as 'real') THEN 1
 		ELSE 0
 	END
 

@@ -75,9 +75,9 @@ SELECT
 FROM
 	"TableToInsert" t
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			(
 				SELECT 3 AS "Id", 'Janet' AS "Value" FROM sys.dual

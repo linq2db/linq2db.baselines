@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE 'U%' ESCAPE '~'
+	NOT [e].[IsDeleted] AND [e].[ProductName] LIKE 'U%' ESCAPE '~'
 
 
 
@@ -22,7 +22,7 @@ WHERE
 DELETE FROM
 	[Products]
 WHERE
-	[Products].[IsDeleted] = 0 AND [Products].[ProductName] = 'a'
+	NOT [Products].[IsDeleted] AND [Products].[ProductName] = 'a'
 
 
 

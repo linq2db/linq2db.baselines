@@ -2,11 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN "a_Middle"."ParentID" IS NOT NULL AND "a_Bottom"."ParentID" IS NOT NULL
-			THEN True
-		ELSE False
-	END,
+	"a_Middle"."ParentID",
 	"a_Bottom"."ParentID",
 	"a_Bottom"."ChildID",
 	"a_Bottom"."GrandChildID"

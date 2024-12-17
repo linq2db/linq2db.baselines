@@ -1013,21 +1013,21 @@ SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 2
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 

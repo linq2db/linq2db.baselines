@@ -15,7 +15,7 @@ SET
 			("Parent"."Value1" = "p2_1"."Value1" OR "Parent"."Value1" IS NULL AND "p2_1"."Value1" IS NULL)
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

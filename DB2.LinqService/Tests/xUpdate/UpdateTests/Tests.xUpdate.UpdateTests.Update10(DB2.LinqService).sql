@@ -11,7 +11,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	CAST(@id AS Int)
+	@id
 )
 
 BeforeExecute
@@ -49,9 +49,9 @@ SET
 			"Child"."ChildID" = "c_2"."ChildID"
 	)
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Parent" "p"
 				INNER JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID"

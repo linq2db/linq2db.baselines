@@ -2,7 +2,7 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."ParentID"
+	t1."cond"
 FROM
 	(
 		SELECT
@@ -14,10 +14,10 @@ FROM
 				WHERE
 					p."ParentID" = a_Children."ParentID"
 				FETCH NEXT 1 ROWS ONLY
-			) as "ParentID"
+			) as "cond"
 		FROM
 			"Parent" p
 	) t1
 WHERE
-	t1."ParentID" IS NOT NULL
+	t1."cond" IS NOT NULL
 

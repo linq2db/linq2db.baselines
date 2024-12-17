@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @param NVarChar(4000) -- String
-SET     @param = N'JOHN'
+SET     @param = N'john'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Lower([p].[FirstName]) = Lower(@param) AND [p].[PersonID] = 1
+	Lower([p].[FirstName]) = @param AND [p].[PersonID] = 1
 

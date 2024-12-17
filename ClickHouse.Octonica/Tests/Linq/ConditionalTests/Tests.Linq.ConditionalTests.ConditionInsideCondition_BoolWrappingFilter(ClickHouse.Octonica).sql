@@ -24,7 +24,7 @@ FROM
 			Parent p
 	) s
 WHERE
-	s.Value_1 = true
+	s.Value_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

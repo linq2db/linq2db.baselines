@@ -71,9 +71,9 @@ UPDATE
 	"ValueConversion" "e"
 SET
 	"Value1" = "e"."Value1",
-	"Value2" = CAST(@Value2 AS NVarChar(21)),
-	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(50)),
-	"EnumWithNullDeclarative" = CAST(@EnumWithNullDeclarative AS VarChar(50))
+	"Value2" = @Value2,
+	"EnumWithNull" = @EnumWithNull,
+	"EnumWithNullDeclarative" = @EnumWithNullDeclarative
 WHERE
 	"e"."Id" = 1
 

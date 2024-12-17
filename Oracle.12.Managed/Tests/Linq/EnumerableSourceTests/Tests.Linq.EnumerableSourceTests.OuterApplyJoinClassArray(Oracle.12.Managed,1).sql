@@ -11,12 +11,12 @@ FROM
 	"Person" p
 		OUTER APPLY (
 			SELECT
-				1 as "c1"
+				*
 			FROM
 				(
-					SELECT p."FirstName" AS "FirstName", 1 AS "PersonID", 'Janet' AS "LastName" FROM sys.dual
+					SELECT 1 AS "PersonID", 'Janet' AS "LastName", p."FirstName" AS "FirstName" FROM sys.dual
 					UNION ALL
-					SELECT NULL, 2, 'Doe' FROM sys.dual) n
+					SELECT 2, 'Doe', NULL FROM sys.dual) n
 			WHERE
 				p."LastName" = n."LastName"
 		) n_1

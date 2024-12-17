@@ -24,7 +24,7 @@ FROM
 		FETCH NEXT @take ROWS ONLY
 	) "t2"
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

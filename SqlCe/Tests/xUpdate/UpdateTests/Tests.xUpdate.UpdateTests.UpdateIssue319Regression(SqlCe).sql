@@ -40,7 +40,7 @@ UPDATE
 SET
 	[Value1] = @ParentID
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

@@ -39,7 +39,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] <> @value
+	 NOT EXISTS (
+		SELECT
+			[s].[Int]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -51,7 +57,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
+	 NOT EXISTS (
+		SELECT
+			[s].[NullableInt]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -63,7 +75,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] = @value
+	 EXISTS (
+		SELECT
+			[s].[Int]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2005
@@ -75,7 +93,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
+	 EXISTS (
+		SELECT
+			[s].[NullableInt]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2005

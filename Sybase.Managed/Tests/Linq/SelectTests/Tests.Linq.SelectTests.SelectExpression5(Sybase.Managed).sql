@@ -28,11 +28,9 @@ SELECT 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p Bit -- Boolean
-SET     @p = 1
 
 SELECT TOP 1
-	@p
+	1
 FROM
 	[SelectExpressionTable] [t1]
 

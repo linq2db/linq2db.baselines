@@ -84,7 +84,7 @@ FROM
 	"Mixed" t
 WHERE
 	t."Int" > 0 AND (t."Str", t."Double", t."Bool") = ('One', 1, True) AND
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

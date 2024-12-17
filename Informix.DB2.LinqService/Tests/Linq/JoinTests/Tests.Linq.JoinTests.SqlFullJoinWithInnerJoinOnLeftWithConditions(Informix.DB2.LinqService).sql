@@ -7,7 +7,7 @@ SET     @id2 = 2
 
 SELECT
 	t1.ParentID,
-	right_2.ParentID
+	right_2.cond
 FROM
 	(
 		SELECT
@@ -20,7 +20,7 @@ FROM
 	) t1
 		FULL JOIN (
 			SELECT
-				right_1.ParentID,
+				right_1.ParentID as cond,
 				right_1.Value1 + 2 as c1
 			FROM
 				Parent right_1

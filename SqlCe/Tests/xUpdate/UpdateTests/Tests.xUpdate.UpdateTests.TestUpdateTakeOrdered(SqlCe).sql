@@ -188,7 +188,7 @@ UPDATE
 SET
 	[Value1] = 1
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
@@ -211,7 +211,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[r].[Value1]
+	[r].[Value1] as [Value_1]
 FROM
 	[Parent] [r]
 WHERE

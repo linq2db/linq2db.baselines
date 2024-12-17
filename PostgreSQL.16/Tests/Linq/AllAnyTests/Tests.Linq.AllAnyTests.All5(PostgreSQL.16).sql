@@ -5,7 +5,7 @@ SET     @n = 3
 
 SELECT
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
 				*
 			FROM

@@ -33,11 +33,9 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p SmallInt(4) -- Int16
-SET     @p = 1
 
 SELECT
-	CAST(@p AS smallint)
+	1
 FROM
 	"SelectExpressionTable" "t1"
 FETCH NEXT 1 ROWS ONLY

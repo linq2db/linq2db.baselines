@@ -25,13 +25,11 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @p Boolean
-SET     @p = True
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	:p
+	True
 FROM
 	"SelectExpressionTable" t1
 LIMIT :take

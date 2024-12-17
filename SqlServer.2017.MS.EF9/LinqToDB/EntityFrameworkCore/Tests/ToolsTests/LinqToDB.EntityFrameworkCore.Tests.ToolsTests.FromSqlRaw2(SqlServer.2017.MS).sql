@@ -14,8 +14,6 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR 
 
 
 --  SqlServer.2017 (asynchronously)
-DECLARE @p Int -- Int32
-SET     @p = 1
 
 SELECT
 	[c2].[IsDeleted],
@@ -26,7 +24,7 @@ SELECT
 FROM
 	[Categories] [c1]
 		CROSS JOIN (
-			SELECT * FROM [dbo].[Categories] WHERE CategoryId = @p
+			SELECT * FROM [dbo].[Categories] WHERE CategoryId = 1
 		) [c2]
 
 

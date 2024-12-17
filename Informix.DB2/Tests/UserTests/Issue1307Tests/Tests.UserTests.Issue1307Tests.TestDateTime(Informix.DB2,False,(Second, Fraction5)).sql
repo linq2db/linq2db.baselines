@@ -22,7 +22,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Second to fraction(5)
+	@input
 )
 
 BeforeExecute

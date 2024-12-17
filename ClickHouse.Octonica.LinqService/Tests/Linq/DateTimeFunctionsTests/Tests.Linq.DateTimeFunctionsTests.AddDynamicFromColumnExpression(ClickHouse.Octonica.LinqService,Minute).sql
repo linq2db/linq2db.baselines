@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	addMinutes(t.DateTimeValue, toInt32(t.SmallIntValue))
+	addMinutes(t.DateTimeValue, t.SmallIntValue)
 FROM
 	LinqDataTypes t
 

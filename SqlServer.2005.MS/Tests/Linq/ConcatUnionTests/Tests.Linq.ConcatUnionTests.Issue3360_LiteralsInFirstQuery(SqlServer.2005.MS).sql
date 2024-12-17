@@ -44,10 +44,6 @@ SELECT 4,3,4,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','bc7b663d-0fde-4327-8f92-5d8
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Guid UniqueIdentifier -- Guid
-SET     @Guid = '0b8afe27-481c-442e-b8cf-729ddfeece29'
-DECLARE @GuidN UniqueIdentifier -- Guid
-SET     @GuidN = '0b8afe27-481c-442e-b8cf-729ddfeece30'
 
 SELECT
 	[t1].[Id],
@@ -65,8 +61,8 @@ FROM
 			[r].[Id],
 			CAST(5 AS TinyInt) as [Byte],
 			CAST(5 AS TinyInt) as [Byte_1],
-			CAST(@Guid AS UniqueIdentifier) as [Guid],
-			CAST(@GuidN AS UniqueIdentifier) as [GuidN],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece29' AS UniqueIdentifier) as [Guid],
+			CAST('0b8afe27-481c-442e-b8cf-729ddfeece30' AS UniqueIdentifier) as [GuidN],
 			CAST(N'ENUM1_VALUE' AS NChar(11)) as [Enum],
 			CAST(N'ENUM2_VALUE' AS NChar(11)) as [EnumN],
 			CAST(1 AS Bit) as [Bool],

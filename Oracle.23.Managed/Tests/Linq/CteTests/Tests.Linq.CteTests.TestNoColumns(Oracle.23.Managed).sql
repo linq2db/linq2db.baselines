@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-WITH CTE1_ ("unused")
+WITH CTE1_ ("c1")
 AS
 (
 	SELECT
@@ -25,7 +25,7 @@ FROM
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-WITH CTE1_ ("unused")
+WITH CTE1_ ("c1")
 AS
 (
 	SELECT
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-WITH CTE1_ ("unused")
+WITH CTE1_ ("c1")
 AS
 (
 	SELECT
@@ -51,9 +51,9 @@ AS
 )
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				CTE1_ t1
 		) THEN 1

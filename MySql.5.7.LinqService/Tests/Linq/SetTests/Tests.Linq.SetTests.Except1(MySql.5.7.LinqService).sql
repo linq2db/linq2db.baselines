@@ -7,7 +7,7 @@ SELECT DISTINCT
 FROM
 	`Child` `t1`
 WHERE
-	NOT EXISTS(
+	 NOT EXISTS (
 		SELECT
 			*
 		FROM

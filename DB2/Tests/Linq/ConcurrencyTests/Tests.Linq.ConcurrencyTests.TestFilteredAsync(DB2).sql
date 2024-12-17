@@ -68,7 +68,7 @@ UPDATE
 	"ConcurrencyFiltered" "r"
 SET
 	"Stamp" = "r"."Stamp" + 1,
-	"Value" = CAST(@Value AS NVarChar(7))
+	"Value" = @Value
 WHERE
 	"r"."Id" = 2 AND "r"."Id" = @Id AND "r"."Stamp" = @Stamp
 
@@ -95,7 +95,7 @@ UPDATE
 	"ConcurrencyFiltered" "r"
 SET
 	"Stamp" = "r"."Stamp" + 1,
-	"Value" = CAST(@Value AS NVarChar(7))
+	"Value" = @Value
 WHERE
 	"r"."Id" = 1 AND "r"."Id" = @Id AND "r"."Stamp" = @Stamp
 

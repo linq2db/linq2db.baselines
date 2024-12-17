@@ -67,9 +67,9 @@ SELECT
 FROM
 	"Entity1711" t
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
-			1
+			*
 		FROM
 			"Relationship1711" a_relationship
 		WHERE

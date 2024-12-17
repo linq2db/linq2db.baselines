@@ -49,14 +49,7 @@ SELECT
 FROM
 	"TestEqualsTable1" "t1"
 WHERE
-	EXISTS(
-		SELECT
-			1
-		FROM
-			"TestEqualsTable2" "t2"
-		WHERE
-			1 = 0
-	)
+	1 = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Floor(Exp(toFloat64(p.MoneyValue))) as c1
+			Floor(Exp(toFloat64(p.MoneyValue))) as Value_1
 		FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> toFloat64(0.10000000000000001)
+	t.Value_1 <> toFloat64(0.10000000000000001)
 

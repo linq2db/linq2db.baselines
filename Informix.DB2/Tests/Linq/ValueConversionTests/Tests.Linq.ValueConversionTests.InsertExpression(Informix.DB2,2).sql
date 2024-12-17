@@ -48,12 +48,12 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@iteration::Int,
-	@Value1::NVarChar(2),
-	@Enum::NVarChar(6),
-	@inserted::NVarChar(22),
-	@boolValue::VarChar(1),
-	@boolValue_1::VarChar(1)
+	@iteration,
+	@Value1,
+	@Enum,
+	@inserted,
+	@boolValue,
+	@boolValue_1
 )
 
 BeforeExecute

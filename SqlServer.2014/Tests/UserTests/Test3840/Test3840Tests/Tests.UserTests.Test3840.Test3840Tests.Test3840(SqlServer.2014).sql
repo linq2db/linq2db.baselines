@@ -37,7 +37,6 @@ BeforeExecute
 SELECT
 	[t].[StartDateTime],
 	[t].[PreNotification],
-	[t].[PreNotification],
 	[t].[PreNotification2],
 	[t].[PreNotification3],
 	DatePart(day, [t].[StrField])

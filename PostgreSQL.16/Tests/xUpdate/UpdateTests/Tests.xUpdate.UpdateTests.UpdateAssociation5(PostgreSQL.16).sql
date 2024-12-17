@@ -5,7 +5,7 @@ UPDATE
 	"LinqDataTypes"
 SET
 	"BoolValue" = CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
 				*
 			FROM
@@ -28,5 +28,11 @@ FROM
 			x."ParentID" IN (10000, 20000)
 	) t1
 WHERE
-	"LinqDataTypes"."ID" = t1."ID" AND "LinqDataTypes"."BoolValue" = t1."BoolValue"
+	"LinqDataTypes"."ID" = t1."ID" AND CASE
+		WHEN "LinqDataTypes"."BoolValue" = True THEN True
+		ELSE False
+	END = CASE
+		WHEN t1."BoolValue" = True THEN True
+		ELSE False
+	END
 

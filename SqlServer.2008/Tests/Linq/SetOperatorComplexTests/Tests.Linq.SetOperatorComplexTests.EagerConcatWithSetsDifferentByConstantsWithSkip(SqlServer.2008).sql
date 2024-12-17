@@ -125,12 +125,12 @@ FROM
 		FROM
 			(
 				SELECT
-					[t2].[BookType],
+					[t2].[cond],
 					[t2].[c1]
 				FROM
 					(
 						SELECT
-							[t1].[BookType],
+							[t1].[BookType] as [cond],
 							[t1].[c1],
 							ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 						FROM
@@ -156,7 +156,7 @@ FROM
 					[t2].[RN] > @skip
 			) [t3]
 		WHERE
-			[t3].[BookType] = N'Novel'
+			[t3].[cond] = N'Novel'
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
@@ -170,8 +170,8 @@ SET     @skip = 6
 
 SELECT
 	[t2].[BookType],
-	[t2].[c1],
-	[t2].[c1_1]
+	[t2].[cond],
+	[t2].[c1]
 FROM
 	(
 		SELECT
@@ -179,8 +179,8 @@ FROM
 			CASE
 				WHEN [t1].[BookType] = N'Roman' THEN 1
 				ELSE 0
-			END as [c1],
-			[t1].[c1] as [c1_1],
+			END as [cond],
+			[t1].[c1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 		FROM
 			(

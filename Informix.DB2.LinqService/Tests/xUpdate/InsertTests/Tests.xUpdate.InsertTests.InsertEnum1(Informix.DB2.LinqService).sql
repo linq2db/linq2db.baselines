@@ -19,7 +19,7 @@ INSERT INTO Parent
 VALUES
 (
 	1001,
-	@Value1::Int
+	@Value1
 )
 
 BeforeExecute

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
+DECLARE @value UniqueIdentifier -- Guid
+SET     @value = '00000000-0000-0000-0000-000000000000'
 
 SELECT
 	[t1].[ID],
@@ -18,7 +20,7 @@ SELECT
 	IIF(False, 0, NULL),
 	IIF(False, #0001-01-01#, NULL),
 	IIF(False, False, NULL),
-	IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL),
+	IIF(False, ?, NULL),
 	NULL,
 	IIF(False, 0, NULL),
 	IIF(False, '', NULL)

@@ -148,7 +148,7 @@ SELECT
 FROM
 	[InventoryResourceDTO] [x]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM

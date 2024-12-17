@@ -3,9 +3,9 @@
 
 SELECT
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"GrandChild" "x"
 			WHERE
@@ -21,9 +21,9 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN NOT EXISTS(
+		WHEN  NOT EXISTS (
 			SELECT
-				1
+				*
 			FROM
 				"GrandChild" "x"
 			WHERE

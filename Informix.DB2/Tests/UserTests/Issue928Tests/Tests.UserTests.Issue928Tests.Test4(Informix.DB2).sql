@@ -14,7 +14,7 @@ FROM
 		FROM
 			Parent g_1
 		WHERE
-			EXISTS(
+			 EXISTS (
 				SELECT
 					*
 				FROM
@@ -32,7 +32,7 @@ FROM
 			FROM
 				Parent g_2
 			WHERE
-				EXISTS(
+				 EXISTS (
 					SELECT
 						*
 					FROM

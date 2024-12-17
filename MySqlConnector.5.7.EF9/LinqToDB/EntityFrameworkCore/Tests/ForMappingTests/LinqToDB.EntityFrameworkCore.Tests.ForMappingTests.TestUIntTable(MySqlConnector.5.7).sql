@@ -8,3 +8,23 @@ FROM `UIntTable`
 WHERE ROW_COUNT() = 1 AND `ID` = LAST_INSERT_ID();
 
 
+--  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @field64 UInt64
+SET     @field64 = 5
+
+SELECT
+	`e`.`ID`,
+	`e`.`Field16`,
+	`e`.`Field32`,
+	`e`.`Field64`,
+	`e`.`Field16N`,
+	`e`.`Field32N`,
+	`e`.`Field64N`
+FROM
+	`UIntTable` `e`
+WHERE
+	`e`.`Field64` = @field64
+LIMIT 1
+
+
+
