@@ -3,13 +3,12 @@
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				"Child" t1
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END
 
