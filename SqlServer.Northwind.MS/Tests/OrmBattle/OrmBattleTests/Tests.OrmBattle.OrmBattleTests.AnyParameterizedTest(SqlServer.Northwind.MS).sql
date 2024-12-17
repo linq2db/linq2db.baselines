@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
