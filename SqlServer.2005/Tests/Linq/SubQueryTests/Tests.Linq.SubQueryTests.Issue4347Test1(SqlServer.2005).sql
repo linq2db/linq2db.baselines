@@ -53,7 +53,7 @@ FROM
 		FROM
 			[TransactionEntity] [x]
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					[a_Lines].[Currency]
 				FROM
@@ -83,7 +83,7 @@ SELECT
 FROM
 	[TransactionEntity] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[a_Lines].[Currency]
 		FROM

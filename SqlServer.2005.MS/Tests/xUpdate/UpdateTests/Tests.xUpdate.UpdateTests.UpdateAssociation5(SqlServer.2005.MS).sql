@@ -5,7 +5,7 @@ UPDATE
 	[u]
 SET
 	[u].[BoolValue] = CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM

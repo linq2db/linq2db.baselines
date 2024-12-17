@@ -5,7 +5,7 @@ SELECT
 	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)),
 	[t2].[c1],
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
