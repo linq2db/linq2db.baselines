@@ -51,13 +51,12 @@ AS
 )
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				"CTE1_" t1
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END
 
