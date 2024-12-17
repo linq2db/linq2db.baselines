@@ -48,7 +48,7 @@ AS
 DELETE FROM
 	[CteChild]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[ct].[ParentID]
 		FROM

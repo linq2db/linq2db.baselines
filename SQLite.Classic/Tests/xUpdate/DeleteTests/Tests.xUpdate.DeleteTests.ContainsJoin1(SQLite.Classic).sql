@@ -78,7 +78,7 @@ SET     @id = 1000
 DELETE FROM
 	[Parent]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -99,7 +99,7 @@ SET     @id = 1000
 DELETE FROM
 	[Parent]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

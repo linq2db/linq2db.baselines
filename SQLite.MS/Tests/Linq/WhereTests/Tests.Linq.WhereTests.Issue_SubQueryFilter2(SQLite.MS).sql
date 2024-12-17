@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Patient] [p]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -27,7 +27,7 @@ WHERE
 			[e].[PersonID] = [p].[PersonID] AND [e].[FirstName] LIKE @filter1 ESCAPE '~' AND
 			[e].[PersonID] = [t1].[cond]
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

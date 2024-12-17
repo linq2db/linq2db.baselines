@@ -185,7 +185,7 @@ FROM
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
 			CASE
-				WHEN  EXISTS (
+				WHEN EXISTS(
 					SELECT
 						*
 					FROM

@@ -50,7 +50,7 @@ BeforeExecute
 DELETE FROM
 	[Child]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

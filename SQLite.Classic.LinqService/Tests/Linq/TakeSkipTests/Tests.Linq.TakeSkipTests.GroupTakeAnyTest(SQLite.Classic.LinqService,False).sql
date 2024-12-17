@@ -72,7 +72,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				[item_1].[Value]
 			FROM
