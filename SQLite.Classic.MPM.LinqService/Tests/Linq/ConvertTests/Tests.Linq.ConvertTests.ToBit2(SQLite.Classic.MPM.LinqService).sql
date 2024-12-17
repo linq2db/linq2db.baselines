@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	NOT CAST([t].[MoneyValue] - 4.5 AS Bit)
+	[t].[MoneyValue] = 4.5
 
