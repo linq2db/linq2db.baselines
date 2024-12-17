@@ -7,7 +7,7 @@ SELECT
 FROM
 	Patient t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -22,7 +22,7 @@ WHERE
 		WHERE
 			position(e.FirstName, 'John') > 0 AND e.PersonID = t2.cond
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

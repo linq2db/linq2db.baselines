@@ -39,7 +39,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
