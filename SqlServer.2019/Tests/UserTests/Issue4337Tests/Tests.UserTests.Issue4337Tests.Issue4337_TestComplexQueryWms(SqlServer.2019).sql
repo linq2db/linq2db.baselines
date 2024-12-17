@@ -222,7 +222,7 @@ SELECT
 		WHERE
 			[x_17].[Status] < 99 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -230,14 +230,14 @@ SELECT
 		WHERE
 			[x_18].[ResourceID] = [c1].[Id]
 	), 1, 0),
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_19]
 		WHERE
 			[x_19].[Status] < 99 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR  EXISTS (
+			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
@@ -276,7 +276,7 @@ SELECT
 		WHERE
 			[x_20].[Status] < 99 AND [x_20].[ResourceID] = [c2].[Id]
 	),
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -284,14 +284,14 @@ SELECT
 		WHERE
 			[x_21].[ResourceID] = [c2].[Id]
 	), 1, 0),
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[InventoryResourceDTO] [x_22]
 		WHERE
 			[x_22].[Status] < 99 AND [x_22].[ResourceID] = [c2].[Id] AND
-			([x_22].[InfeedAdviceID] IS NULL OR  EXISTS (
+			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM

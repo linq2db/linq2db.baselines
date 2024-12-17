@@ -5,7 +5,7 @@ SET     @take = 5000
 
 SELECT TOP (@take)
 	[t].[ParentID],
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM

@@ -218,7 +218,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -272,7 +272,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -326,7 +326,7 @@ SELECT
 FROM
 	[CTE_1] [q]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
