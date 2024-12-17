@@ -8,15 +8,15 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS `BooleanTable`
 (
-	`Id`       INT            NOT NULL,
-	`Boolean`  BOOLEAN        NOT NULL,
-	`BooleanN` BOOLEAN            NULL,
-	`Int32`    INT            NOT NULL,
-	`Int32N`   INT                NULL,
-	`Decimal`  DECIMAL(29, 2) NOT NULL,
-	`DecimalN` DECIMAL(29, 2)     NULL,
-	`Double`   DOUBLE         NOT NULL,
-	`DoubleN`  DOUBLE             NULL,
+	`Id`       INT             NOT NULL,
+	`Boolean`  BOOLEAN         NOT NULL,
+	`BooleanN` BOOLEAN             NULL,
+	`Int32`    INT             NOT NULL,
+	`Int32N`   INT                 NULL,
+	`Decimal`  DECIMAL(29, 10) NOT NULL,
+	`DecimalN` DECIMAL(29, 10)     NULL,
+	`Double`   DOUBLE          NOT NULL,
+	`DoubleN`  DOUBLE              NULL,
 
 	CONSTRAINT `PK_BooleanTable` PRIMARY KEY CLUSTERED (`Id`)
 )
