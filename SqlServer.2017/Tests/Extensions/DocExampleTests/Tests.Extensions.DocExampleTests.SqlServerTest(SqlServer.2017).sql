@@ -15,7 +15,7 @@ FROM
 	[Child] [c_1] WITH (SPATIAL_WINDOW_MAX_CELLS=10, Index(IX_ChildIndex))
 		INNER HASH JOIN [Parent] [t] WITH (NoLock) ON [c_1].[ParentID] = [t].[ParentID]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

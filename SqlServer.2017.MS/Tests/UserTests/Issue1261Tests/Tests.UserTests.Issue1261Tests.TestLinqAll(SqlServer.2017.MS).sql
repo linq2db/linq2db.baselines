@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	IIF( NOT EXISTS (
+	IIF(NOT EXISTS(
 		SELECT
 			*
 		FROM
@@ -15,7 +15,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	IIF( NOT EXISTS (
+	IIF(NOT EXISTS(
 		SELECT
 			*
 		FROM

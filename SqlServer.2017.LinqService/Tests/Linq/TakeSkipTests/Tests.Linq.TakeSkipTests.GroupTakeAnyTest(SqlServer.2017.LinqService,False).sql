@@ -72,7 +72,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT TOP (1)
 			[item_1].[Value]
 		FROM

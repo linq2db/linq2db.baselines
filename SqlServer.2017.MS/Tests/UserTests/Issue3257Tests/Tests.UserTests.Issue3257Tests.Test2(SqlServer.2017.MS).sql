@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF( EXISTS (
+			IIF(EXISTS(
 				SELECT
 					*
 				FROM

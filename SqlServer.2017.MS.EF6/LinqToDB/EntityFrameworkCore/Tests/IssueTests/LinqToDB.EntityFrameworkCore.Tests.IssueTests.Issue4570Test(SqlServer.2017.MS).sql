@@ -5,7 +5,7 @@ SELECT
 FROM
 	[Parents] [ua]
 WHERE
-	[ua].[ParentId] = 55377 AND  EXISTS (
+	[ua].[ParentId] = 55377 AND EXISTS(
 		SELECT
 			*
 		FROM
