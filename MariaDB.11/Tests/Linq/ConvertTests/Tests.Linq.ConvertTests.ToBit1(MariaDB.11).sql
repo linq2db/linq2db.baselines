@@ -13,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	CAST(`t`.`MoneyValue` AS SIGNED)
+	`t`.`MoneyValue` <> 0
 

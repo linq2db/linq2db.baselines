@@ -11,7 +11,7 @@ WHERE
 		FROM
 			`Children` `y`
 		WHERE
-			`x`.`Id` = `y`.`ParentId` AND `y`.`IsActive` = 1
+			`x`.`Id` = `y`.`ParentId` AND `y`.`IsActive`
 	)
 
 
