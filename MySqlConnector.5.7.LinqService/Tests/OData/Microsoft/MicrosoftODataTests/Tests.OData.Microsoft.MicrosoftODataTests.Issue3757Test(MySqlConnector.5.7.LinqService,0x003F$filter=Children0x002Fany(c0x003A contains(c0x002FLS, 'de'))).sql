@@ -54,7 +54,7 @@ FROM
 		FROM
 			`Issue3757Level1` `l1`
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -79,7 +79,7 @@ SELECT
 FROM
 	`Issue3757Level1` `it`
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

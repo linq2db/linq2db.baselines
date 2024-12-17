@@ -10,7 +10,7 @@ SELECT
 FROM
 	`Person` `t`
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

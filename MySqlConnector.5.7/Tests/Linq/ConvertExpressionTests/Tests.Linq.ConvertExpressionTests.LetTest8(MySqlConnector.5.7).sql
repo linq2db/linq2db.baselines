@@ -30,7 +30,7 @@ SELECT
 		)
 	END,
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM

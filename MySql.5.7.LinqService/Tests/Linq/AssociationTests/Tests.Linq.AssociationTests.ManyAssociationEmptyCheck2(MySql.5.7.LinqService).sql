@@ -7,7 +7,7 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

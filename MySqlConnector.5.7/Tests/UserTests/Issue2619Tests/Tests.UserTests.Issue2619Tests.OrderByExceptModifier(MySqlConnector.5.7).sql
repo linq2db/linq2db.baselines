@@ -24,7 +24,7 @@ FROM
 		LIMIT @take
 	) `t2`
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

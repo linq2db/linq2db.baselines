@@ -15,7 +15,7 @@ UPDATE
 		) `t1` ON `t`.`ID` = `t1`.`ID` AND `t`.`BoolValue` = `t1`.`BoolValue`
 SET
 	`t`.`BoolValue` = CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM

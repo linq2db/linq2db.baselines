@@ -46,7 +46,7 @@ SELECT DISTINCT
 FROM
 	`SampleData` `r`
 WHERE
-	`r`.`Id` % 2 = 0 AND  NOT EXISTS (
+	`r`.`Id` % 2 = 0 AND NOT EXISTS(
 		SELECT
 			*
 		FROM
@@ -54,7 +54,7 @@ WHERE
 		WHERE
 			`r_1`.`Id` % 4 = 0 AND `r`.`Id` = `r_1`.`Id` AND `r`.`Value1` = `r_1`.`Value2` / 10
 	) AND
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
