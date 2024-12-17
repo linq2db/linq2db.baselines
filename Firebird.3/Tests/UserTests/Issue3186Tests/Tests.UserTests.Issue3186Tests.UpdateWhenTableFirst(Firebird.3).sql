@@ -125,7 +125,7 @@ UPDATE
 SET
 	"is_deleted" = CAST(@is_deleted AS BOOLEAN)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

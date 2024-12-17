@@ -8,7 +8,7 @@ UPDATE
 SET
 	"ChildID" = "Child"."ChildID" + 1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

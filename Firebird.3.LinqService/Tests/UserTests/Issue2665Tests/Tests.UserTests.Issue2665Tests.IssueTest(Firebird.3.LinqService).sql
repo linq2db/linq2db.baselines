@@ -79,7 +79,7 @@ FROM
 	"ProductAttributeMapping" "pam"
 		INNER JOIN "ProductAttributeTable" "pa" ON "pam"."ProductAttributeId" = "pa"."Id"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

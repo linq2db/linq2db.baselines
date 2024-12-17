@@ -106,7 +106,7 @@ UPDATE
 SET
 	"Amount" = "Issue4193Salary"."Amount" + 15
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
