@@ -8,7 +8,7 @@ SELECT
 FROM
 	`GrandChild` `c_1`
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

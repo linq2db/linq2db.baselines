@@ -11,7 +11,7 @@ SELECT
 FROM
 	`Patient` `patient_1`
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -28,7 +28,7 @@ WHERE
 		WHERE
 			LOCATE(@filter, `p`.`FirstName`) > 0 AND `p`.`PersonID` = `t1`.`cond`
 	) AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

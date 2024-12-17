@@ -5,7 +5,7 @@ SELECT
 	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
 	`t1`.`c1`,
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
