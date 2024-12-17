@@ -71,7 +71,7 @@ FROM
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -80,7 +80,7 @@ FROM
 					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 					[y].[expires_at] > @now
 			) OR
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -103,7 +103,7 @@ SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT
 	[x].[id],
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -114,7 +114,7 @@ SELECT
 FROM
 	[issue_4254_media_items] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -123,7 +123,7 @@ WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -152,7 +152,7 @@ FROM
 		FROM
 			[issue_4254_media_items] [x]
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -161,7 +161,7 @@ FROM
 					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 					[y].[expires_at] > @now
 			) OR
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -184,7 +184,7 @@ SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	[x].[id],
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -195,7 +195,7 @@ SELECT
 FROM
 	[issue_4254_media_items] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -204,7 +204,7 @@ WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

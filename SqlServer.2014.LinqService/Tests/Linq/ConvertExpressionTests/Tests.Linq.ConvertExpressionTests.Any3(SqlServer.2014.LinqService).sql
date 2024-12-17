@@ -2,13 +2,13 @@
 -- SqlServer.2014
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
 			[Parent] [p]
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM

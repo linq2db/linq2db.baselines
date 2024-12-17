@@ -6,7 +6,7 @@ DECLARE @personId_1 Int -- Int32
 SET     @personId_1 = 2
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM

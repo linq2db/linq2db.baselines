@@ -58,7 +58,7 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

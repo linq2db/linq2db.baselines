@@ -153,7 +153,7 @@ FROM
 		INNER JOIN [Assignments] [a] ON [it].[DirectionId] = [a].[DirectionId] AND [it].[TargetId] = [a].[TargetId] AND [it].[TargetName] = [a].[TargetName]
 WHERE
 	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate()) AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

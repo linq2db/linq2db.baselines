@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			[s].[String]
 		INTERSECT
@@ -58,7 +58,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			[s].[NullableString]
 		INTERSECT
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[s].[String]
 		INTERSECT
@@ -94,7 +94,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[s].[NullableString]
 		INTERSECT

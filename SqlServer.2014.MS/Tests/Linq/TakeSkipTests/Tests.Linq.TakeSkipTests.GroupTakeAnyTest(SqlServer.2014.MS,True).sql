@@ -32,7 +32,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT TOP (@take)
 			[item_1].[Value]
 		FROM

@@ -2,7 +2,7 @@
 -- SqlServer.2014
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			[p].[ParentID]
 		FROM
