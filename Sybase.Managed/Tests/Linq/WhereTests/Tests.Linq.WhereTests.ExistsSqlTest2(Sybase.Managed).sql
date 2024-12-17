@@ -5,7 +5,7 @@ DELETE FROM [Parent]
 FROM
 	[Parent] [p]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

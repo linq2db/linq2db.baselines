@@ -51,7 +51,7 @@ SELECT
 FROM
 	[MainEntity] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

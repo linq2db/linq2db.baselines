@@ -15,7 +15,7 @@ SET
 			([Parent].[Value1] = [p1_1].[Value1] OR [Parent].[Value1] IS NULL AND [p1_1].[Value1] IS NULL)
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
