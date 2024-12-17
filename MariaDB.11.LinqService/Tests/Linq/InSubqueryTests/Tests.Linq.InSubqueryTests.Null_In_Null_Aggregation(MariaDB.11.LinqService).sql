@@ -115,7 +115,7 @@ SELECT
 FROM
 	`test_in_1` `t`
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
