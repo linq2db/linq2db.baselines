@@ -147,7 +147,7 @@ SET
 			"x_6"."id" = "gt_s_one_target"."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

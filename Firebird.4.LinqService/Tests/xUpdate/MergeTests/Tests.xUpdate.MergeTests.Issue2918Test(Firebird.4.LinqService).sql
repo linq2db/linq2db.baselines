@@ -89,7 +89,7 @@ USING (
 	FROM
 		"PatentAssessment" "pa"
 	WHERE
-		 EXISTS (
+		EXISTS(
 			SELECT
 				*
 			FROM

@@ -8,7 +8,7 @@ SELECT
 	"c_1"."ChildID"
 FROM
 	"Parent" "p"
-		INNER JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID" OR  EXISTS (
+		INNER JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID" OR EXISTS(
 			SELECT
 				*
 			FROM
@@ -30,7 +30,7 @@ FROM
 	"Parent" "p",
 	"Child" "c_1"
 WHERE
-	"p"."ParentID" = "c_1"."ParentID" OR  EXISTS (
+	"p"."ParentID" = "c_1"."ParentID" OR EXISTS(
 		SELECT
 			*
 		FROM
