@@ -6,7 +6,7 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 11
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM

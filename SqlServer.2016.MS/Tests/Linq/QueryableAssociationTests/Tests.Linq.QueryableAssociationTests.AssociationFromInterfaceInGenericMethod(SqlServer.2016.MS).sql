@@ -22,7 +22,7 @@ SELECT
 FROM
 	[TreeItem] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
