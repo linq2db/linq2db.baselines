@@ -317,7 +317,7 @@ SET
 			t_1."id" = c_2."id" AND t_1."id" <> :someId AND "UpdatedEntities"."id" = c_2."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

@@ -7,7 +7,7 @@ SET     @personId_1 = 2
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
