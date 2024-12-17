@@ -516,7 +516,7 @@ FROM
 				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 		WHERE
-			[a_Book].[Discriminator] = N'Roman' AND  NOT EXISTS (
+			[a_Book].[Discriminator] = N'Roman' AND NOT EXISTS(
 				SELECT
 					*
 				FROM
@@ -544,7 +544,7 @@ FROM
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
-	[a_Book].[Discriminator] = N'Roman' AND  NOT EXISTS (
+	[a_Book].[Discriminator] = N'Roman' AND NOT EXISTS(
 		SELECT
 			*
 		FROM
