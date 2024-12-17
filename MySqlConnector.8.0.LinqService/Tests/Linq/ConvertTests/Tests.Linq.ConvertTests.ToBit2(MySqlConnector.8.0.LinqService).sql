@@ -13,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	NOT CAST(`t`.`MoneyValue` - 4.5 AS SIGNED)
+	`t`.`MoneyValue` = 4.5
 

@@ -40,7 +40,7 @@ SELECT
 FROM
 	`Products` `e`
 WHERE
-	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
 
 
 
@@ -61,7 +61,7 @@ SELECT
 FROM
 	`Products` `e`
 WHERE
-	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
 
 
 
@@ -82,7 +82,7 @@ SELECT
 FROM
 	`Products` `e`
 WHERE
-	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
 
 
 
@@ -96,7 +96,7 @@ SELECT
 			FROM
 				`Products` `e`
 			WHERE
-				(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND LOCATE('a', `e`.`ProductName`) > 0
+				(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
 		)
 			THEN 1
 		ELSE 0

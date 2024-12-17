@@ -15,13 +15,13 @@ SELECT
 FROM
 	`Products` `e`
 WHERE
-	(`e`.`IsDeleted` = 0 OR `e`.`IsDeleted` = 0) AND (
+	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND (
 		SELECT
 			COUNT(*)
 		FROM
 			`Order Details` `e_1`
 		WHERE
-			(`e_1`.`IsDeleted` = 0 OR `e_1`.`IsDeleted` = 0) AND
+			(NOT `e_1`.`IsDeleted` OR NOT `e_1`.`IsDeleted`) AND
 			`e`.`ProductID` = `e_1`.`ProductID`
 	) > 0 AND
 	`e`.`ProductName` LIKE 'a%' ESCAPE '~'
