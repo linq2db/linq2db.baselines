@@ -14,14 +14,14 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "BooleanTable"
 			(
-				"Id"       Int            NOT NULL,
-				"Boolean"  CHAR(1)        NOT NULL,
+				"Id"       Int             NOT NULL,
+				"Boolean"  CHAR(1)         NOT NULL,
 				"BooleanN" CHAR(1),
-				"Int32"    Int            NOT NULL,
+				"Int32"    Int             NOT NULL,
 				"Int32N"   Int,
-				"Decimal"  Decimal(18, 2) NOT NULL,
-				"DecimalN" Decimal(18, 2),
-				"Double"   Float          NOT NULL,
+				"Decimal"  Decimal(18, 10) NOT NULL,
+				"DecimalN" Decimal(18, 10),
+				"Double"   Float           NOT NULL,
 				"DoubleN"  Float,
 
 				CONSTRAINT "PK_BooleanTable" PRIMARY KEY ("Id")
