@@ -85,7 +85,7 @@ SET
 			"TableToInsert"."Id" = t_1."Id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

@@ -133,7 +133,7 @@ FROM
 		FROM
 			"Issue4458Item" t1
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -171,7 +171,7 @@ SELECT
 FROM
 	"Issue4458Item" i
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
