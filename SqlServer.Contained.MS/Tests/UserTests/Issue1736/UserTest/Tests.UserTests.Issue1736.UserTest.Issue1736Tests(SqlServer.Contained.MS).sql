@@ -193,7 +193,7 @@ FROM
 			[aisle].[Status] as [AisleStatus],
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
-			IIF( EXISTS (
+			IIF(EXISTS(
 				SELECT
 					*
 				FROM

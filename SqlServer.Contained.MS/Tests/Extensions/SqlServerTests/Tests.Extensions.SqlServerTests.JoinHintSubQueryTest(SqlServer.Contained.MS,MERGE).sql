@@ -15,7 +15,7 @@ FROM
 	[Child] [c_1]
 		INNER MERGE JOIN [Parent] [t] ON [c_1].[ParentID] = [t].[ParentID]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

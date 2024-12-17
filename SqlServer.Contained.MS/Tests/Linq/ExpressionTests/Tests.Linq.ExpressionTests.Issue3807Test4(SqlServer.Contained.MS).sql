@@ -45,7 +45,7 @@ FROM
 		FROM
 			[Issue3807Table] [a]
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -69,7 +69,7 @@ SELECT
 FROM
 	[Issue3807Table] [r]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

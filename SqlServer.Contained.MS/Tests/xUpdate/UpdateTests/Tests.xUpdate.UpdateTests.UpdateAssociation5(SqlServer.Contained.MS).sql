@@ -4,7 +4,7 @@
 UPDATE
 	[u]
 SET
-	[u].[BoolValue] = IIF( NOT EXISTS (
+	[u].[BoolValue] = IIF(NOT EXISTS(
 		SELECT
 			*
 		FROM

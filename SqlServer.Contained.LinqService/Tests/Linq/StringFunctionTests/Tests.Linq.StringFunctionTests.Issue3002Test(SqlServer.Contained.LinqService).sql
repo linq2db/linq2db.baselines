@@ -54,7 +54,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -85,7 +85,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -116,7 +116,7 @@ DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM

@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			[p].[ParentID]
 		FROM

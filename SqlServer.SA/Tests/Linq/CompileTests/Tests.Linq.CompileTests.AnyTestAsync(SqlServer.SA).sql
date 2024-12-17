@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -19,7 +19,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
