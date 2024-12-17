@@ -307,7 +307,7 @@ FROM
 			[t_1].[Id] MOD 2 = 0
 	) [t1]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

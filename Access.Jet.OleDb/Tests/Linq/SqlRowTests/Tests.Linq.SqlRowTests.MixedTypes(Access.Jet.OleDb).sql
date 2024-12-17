@@ -87,7 +87,7 @@ WHERE
 	[t].[Str] = 'One' AND
 	[t].[Double] = 1 AND
 	[t].[Bool] = True AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

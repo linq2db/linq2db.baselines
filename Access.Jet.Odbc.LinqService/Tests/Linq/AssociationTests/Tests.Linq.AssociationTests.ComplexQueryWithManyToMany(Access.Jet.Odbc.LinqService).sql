@@ -10,7 +10,7 @@ SELECT TOP 1
 FROM
 	[GrandChild] [t1]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
