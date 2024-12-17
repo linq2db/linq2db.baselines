@@ -62,7 +62,7 @@ SET
 			"gt_s_one"."id" = "x_1"."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

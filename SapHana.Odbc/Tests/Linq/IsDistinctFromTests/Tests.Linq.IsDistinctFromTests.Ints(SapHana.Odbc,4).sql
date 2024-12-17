@@ -76,7 +76,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			"s"."Int"
 FROM DUMMY
@@ -96,7 +96,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			"s"."NullableInt"
 FROM DUMMY
@@ -116,7 +116,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			"s"."Int"
 FROM DUMMY
@@ -136,7 +136,7 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			"s"."NullableInt"
 FROM DUMMY
