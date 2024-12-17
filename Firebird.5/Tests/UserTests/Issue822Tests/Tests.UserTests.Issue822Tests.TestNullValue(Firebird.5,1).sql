@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -45,7 +45,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

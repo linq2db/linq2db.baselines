@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" IN (1, 2) AND  NOT EXISTS (
+	"p"."PersonID" IN (1, 2) AND NOT EXISTS(
 		SELECT
 			*
 		FROM
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" IN (3) AND  NOT EXISTS (
+	"p"."PersonID" IN (3) AND NOT EXISTS(
 		SELECT
 			*
 		FROM

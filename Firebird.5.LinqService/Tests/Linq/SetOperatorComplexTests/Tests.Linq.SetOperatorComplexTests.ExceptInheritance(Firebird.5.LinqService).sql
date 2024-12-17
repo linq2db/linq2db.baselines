@@ -546,7 +546,7 @@ FROM
 			"a_Book"."Discriminator" = 'Roman'
 	) "t1"
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			*
 		FROM

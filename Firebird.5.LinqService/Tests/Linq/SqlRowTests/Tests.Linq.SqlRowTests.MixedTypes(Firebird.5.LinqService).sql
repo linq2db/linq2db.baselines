@@ -95,7 +95,7 @@ WHERE
 	"t"."Str" = 'One' AND
 	"t"."Double" = 1 AND
 	"t"."Bool" = TRUE AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
