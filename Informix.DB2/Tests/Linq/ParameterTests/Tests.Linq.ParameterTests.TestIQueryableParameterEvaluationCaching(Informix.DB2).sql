@@ -12,7 +12,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -35,7 +35,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -58,7 +58,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -81,7 +81,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -104,7 +104,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

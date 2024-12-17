@@ -76,7 +76,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			s.String
 		FROM table(set{1})
@@ -96,7 +96,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			s.NullableString
 		FROM table(set{1})
@@ -116,7 +116,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			s.String
 		FROM table(set{1})
@@ -136,7 +136,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			s.NullableString
 		FROM table(set{1})

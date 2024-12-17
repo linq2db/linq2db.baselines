@@ -86,7 +86,7 @@ BeforeExecute
 DELETE FROM
 	GrandChild
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			a_GrandChildren.ParentID,
 			a_GrandChildren.ChildID

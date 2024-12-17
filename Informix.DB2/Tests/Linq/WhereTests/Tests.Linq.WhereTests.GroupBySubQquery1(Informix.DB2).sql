@@ -7,7 +7,7 @@ SELECT
 FROM
 	Child x
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			MAX(y.ChildID)
 		FROM

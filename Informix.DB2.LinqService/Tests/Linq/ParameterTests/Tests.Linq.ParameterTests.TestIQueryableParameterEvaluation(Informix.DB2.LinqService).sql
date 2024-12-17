@@ -16,7 +16,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -24,14 +24,14 @@ WHERE
 		WHERE
 			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			p_1.PersonID = @p AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -58,7 +58,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -66,14 +66,14 @@ WHERE
 		WHERE
 			@p <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			@paramCopy = p_1.PersonID AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -100,7 +100,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -108,14 +108,14 @@ WHERE
 		WHERE
 			@p <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			p_1.PersonID = @p_1 AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -142,7 +142,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -150,14 +150,14 @@ WHERE
 		WHERE
 			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			p_1.PersonID = @p AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -184,7 +184,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -192,14 +192,14 @@ WHERE
 		WHERE
 			@p <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			p_1.PersonID = @p_1 AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -226,7 +226,7 @@ SELECT
 FROM
 	Person t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -234,14 +234,14 @@ WHERE
 		WHERE
 			@p <> p.PersonID AND t1.PersonID = p.PersonID
 	) AND
-	( EXISTS (
+	(EXISTS(
 		SELECT
 			*
 		FROM
 			Person p_1
 		WHERE
 			@paramCopy = p_1.PersonID AND t1.PersonID = p_1.PersonID
-	) OR  EXISTS (
+	) OR EXISTS(
 		SELECT
 			*
 		FROM

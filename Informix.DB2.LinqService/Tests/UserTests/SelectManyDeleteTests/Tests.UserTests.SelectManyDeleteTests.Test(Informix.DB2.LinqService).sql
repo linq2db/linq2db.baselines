@@ -4,7 +4,7 @@
 DELETE FROM
 	GrandChild
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			a_GrandChildren.ChildID
 		FROM

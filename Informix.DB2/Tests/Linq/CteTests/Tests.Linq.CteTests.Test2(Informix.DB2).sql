@@ -29,7 +29,7 @@ AS
 	FROM
 		Parent p
 	WHERE
-		 EXISTS (
+		EXISTS(
 			SELECT
 				*
 			FROM
@@ -47,7 +47,7 @@ AS
 	FROM
 		Parent p_1
 	WHERE
-		 EXISTS (
+		EXISTS(
 			SELECT
 				*
 			FROM
@@ -79,7 +79,7 @@ FROM
 		INNER JOIN Parent c3 ON p.ParentID = c3.ParentID
 		INNER JOIN Child c4 ON c4.ParentID = c3.ParentID
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -88,7 +88,7 @@ WHERE
 			c_2.ParentID > 1 AND c_2.ParentID = p.ParentID
 	) AND
 	c_1.ParentID > 1 AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -96,13 +96,13 @@ WHERE
 		WHERE
 			c_3.ParentID > 1 AND c_3.ParentID = c2.ParentID
 	) AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
 			Parent p_1
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM

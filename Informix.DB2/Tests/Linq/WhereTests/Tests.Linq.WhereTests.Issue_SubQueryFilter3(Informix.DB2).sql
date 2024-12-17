@@ -7,7 +7,7 @@ SELECT
 FROM
 	Patient patient_1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -22,7 +22,7 @@ WHERE
 		WHERE
 			p.FirstName LIKE '%John%' ESCAPE '~' AND p.PersonID = t1.cond
 	) AND
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

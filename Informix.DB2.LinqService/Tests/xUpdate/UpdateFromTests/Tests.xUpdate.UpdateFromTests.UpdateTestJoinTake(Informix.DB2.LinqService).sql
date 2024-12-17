@@ -327,7 +327,7 @@ SET
 			UpdatedEntities.id = t4.id
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

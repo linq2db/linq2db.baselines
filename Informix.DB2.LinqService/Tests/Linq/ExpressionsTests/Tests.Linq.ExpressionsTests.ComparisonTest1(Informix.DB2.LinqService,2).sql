@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
@@ -14,7 +14,7 @@ SELECT
 						FROM
 							Patient t1
 						WHERE
-							t1.PersonID = 0 AND  NOT EXISTS (
+							t1.PersonID = 0 AND NOT EXISTS(
 								SELECT
 									*
 								FROM
@@ -29,7 +29,7 @@ SELECT
 						FROM
 							Patient t4
 						WHERE
-							t4.PersonID = 2 AND  NOT EXISTS (
+							t4.PersonID = 2 AND NOT EXISTS(
 								SELECT
 									*
 								FROM
