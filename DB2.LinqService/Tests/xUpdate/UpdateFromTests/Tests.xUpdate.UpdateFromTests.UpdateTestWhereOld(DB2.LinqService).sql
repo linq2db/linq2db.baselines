@@ -302,7 +302,7 @@ SET
 			"UpdatedEntities"."id" = "c_2"."id"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

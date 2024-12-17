@@ -76,7 +76,7 @@ SELECT
 FROM
 	"test_in_1" "t"
 WHERE
-	"t".ID IS NOT NULL AND  NOT EXISTS (
+	"t".ID IS NOT NULL AND NOT EXISTS(
 		SELECT
 			*
 		FROM

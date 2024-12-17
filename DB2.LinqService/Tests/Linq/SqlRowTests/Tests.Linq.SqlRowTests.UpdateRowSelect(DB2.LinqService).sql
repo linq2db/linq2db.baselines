@@ -118,7 +118,7 @@ SET
 	),
 	("Four", "Nil") = ("Ints"."One" * "Ints"."Four", 600)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
