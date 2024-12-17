@@ -48,7 +48,7 @@ IF (OBJECT_ID(N'SelectionMap') IS NULL)
 		(
 			[Key1]              Int     NOT NULL,
 			[Key2]              Int     NOT NULL,
-			[SelectionProperty] Decimal NOT NULL
+			[SelectionProperty] DECIMAL NOT NULL
 		)
 	')
 

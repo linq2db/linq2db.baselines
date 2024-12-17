@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'Issue4469Table') IS NULL)
 		CREATE TABLE [Issue4469Table]
 		(
 			[Integer] Int            NOT NULL,
-			[Decimal] Decimal(10, 5) NOT NULL,
+			[Decimal] DECIMAL(10, 5) NOT NULL,
 			[Double]  Float          NOT NULL
 		)
 	')
@@ -49,7 +49,7 @@ DECLARE @param_2 Decimal(2, 0)
 SET     @param_2 = 33
 
 SELECT TOP 2
-	CAST([v].[Integer] AS Decimal) / @param,
+	CAST([v].[Integer] AS DECIMAL) / @param,
 	[v].[Decimal] / @param_1,
 	[v].[Double] / @param_2
 FROM

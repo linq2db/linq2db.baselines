@@ -33,7 +33,7 @@ IF (OBJECT_ID(N'LineEntity') IS NULL)
 		(
 			[Id]            VARCHAR(36)   NOT NULL,
 			[TransactionId] VARCHAR(36)   NOT NULL,
-			[Amount]        Decimal       NOT NULL,
+			[Amount]        DECIMAL       NOT NULL,
 			[Currency]      NVarChar(255)     NULL,
 
 			CONSTRAINT [PK_LineEntity] PRIMARY KEY CLUSTERED ([Id])

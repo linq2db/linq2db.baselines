@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'Issue4469Table') IS NULL)
 		CREATE TABLE [Issue4469Table]
 		(
 			[Integer] Int            NOT NULL,
-			[Decimal] Decimal(10, 5) NOT NULL,
+			[Decimal] DECIMAL(10, 5) NOT NULL,
 			[Double]  Float          NOT NULL
 		)
 	')

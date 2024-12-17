@@ -25,7 +25,7 @@ UPDATE
 	[LinqDataTypes]
 SET
 	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] AS SmallInt),
-	[MoneyValue] = CAST([LinqDataTypes].[SmallIntValue] AS Decimal)
+	[MoneyValue] = CAST([LinqDataTypes].[SmallIntValue] AS DECIMAL)
 WHERE
 	[LinqDataTypes].[ID] = @id
 
@@ -38,7 +38,7 @@ UPDATE
 	[LinqDataTypes]
 SET
 	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] AS SmallInt),
-	[MoneyValue] = CAST([LinqDataTypes].[SmallIntValue] AS Decimal)
+	[MoneyValue] = CAST([LinqDataTypes].[SmallIntValue] AS DECIMAL)
 WHERE
 	[LinqDataTypes].[ID] = @id
 

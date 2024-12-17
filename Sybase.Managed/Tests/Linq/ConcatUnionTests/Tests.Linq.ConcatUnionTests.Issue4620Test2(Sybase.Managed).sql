@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'Issue4620Table') IS NULL)
 			[Id]         Int     NOT NULL,
 			[IdContract] Int         NULL,
 			[IdClient]   Int         NULL,
-			[Sum]        Decimal NOT NULL
+			[Sum]        DECIMAL NOT NULL
 		)
 	')
 

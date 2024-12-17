@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'Issue4469Table') IS NULL)
 		CREATE TABLE [Issue4469Table]
 		(
 			[Integer] Int            NOT NULL,
-			[Decimal] Decimal(10, 5) NOT NULL,
+			[Decimal] DECIMAL(10, 5) NOT NULL,
 			[Double]  Float          NOT NULL
 		)
 	')
@@ -43,7 +43,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
-	CAST([v].[Integer] AS Decimal) / 33,
+	CAST([v].[Integer] AS DECIMAL) / 33,
 	[v].[Decimal] / 33,
 	[v].[Double] / 33
 FROM

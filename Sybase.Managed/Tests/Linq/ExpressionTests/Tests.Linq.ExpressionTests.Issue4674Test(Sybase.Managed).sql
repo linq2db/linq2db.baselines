@@ -33,7 +33,7 @@ IF (OBJECT_ID(N'Issue4674StockRoomItem') IS NULL)
 			[TenantId]      NVarChar(255)     NULL,
 			[StockroomCode] NVarChar(255)     NULL,
 			[ItemCode]      NVarChar(255)     NULL,
-			[Quantity]      Decimal       NOT NULL
+			[Quantity]      DECIMAL       NOT NULL
 		)
 	')
 

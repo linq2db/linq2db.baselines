@@ -55,7 +55,7 @@ IF (OBJECT_ID(N'Issue4654Product') IS NULL)
 		(
 			[Id]    Int           IDENTITY NOT NULL,
 			[Name]  NVarChar(255)              NULL,
-			[Price] Decimal                NOT NULL,
+			[Price] DECIMAL                NOT NULL,
 
 			CONSTRAINT [PK_Issue4654Product] PRIMARY KEY CLUSTERED ([Id])
 		)
