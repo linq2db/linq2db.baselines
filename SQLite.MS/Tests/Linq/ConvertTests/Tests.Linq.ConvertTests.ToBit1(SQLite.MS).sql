@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	CAST([t].[MoneyValue] AS Bit)
+	[t].[MoneyValue] <> 0
 
