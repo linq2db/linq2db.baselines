@@ -6,7 +6,7 @@ SELECT TOP 3
 FROM
 	[entities] [x]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

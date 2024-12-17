@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Patient] [t1]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -25,7 +25,7 @@ WHERE
 		WHERE
 			[e].[FirstName] LIKE ? AND [e].[PersonID] = [t2].[cond]
 	) OR
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

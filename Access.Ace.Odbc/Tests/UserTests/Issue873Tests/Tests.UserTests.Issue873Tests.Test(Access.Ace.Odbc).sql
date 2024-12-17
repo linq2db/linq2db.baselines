@@ -12,7 +12,7 @@ SELECT
 		WHERE
 			[a_Parent].[ParentID] = [f].[ParentID] AND ([a_Parent].[Value1] = [f].[Value1] OR [a_Parent].[Value1] IS NULL AND [f].[Value1] IS NULL)
 	),
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
