@@ -10,7 +10,7 @@ USING (
 		[Child] [t]
 			LEFT JOIN [Parent] [a_Parent] ON [t].[ParentID] = [a_Parent].[ParentID]
 	WHERE
-		[a_Parent].[ParentID] = 2 AND  EXISTS (
+		[a_Parent].[ParentID] = 2 AND EXISTS(
 			SELECT
 				*
 			FROM
@@ -48,7 +48,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 	WHERE
 		[Target].[ParentID] = [a_Parent_1].[ParentID]
 ) = 2 AND
- EXISTS (
+EXISTS(
 	SELECT
 		*
 	FROM

@@ -7,7 +7,7 @@ SELECT
 		ELSE [t2].[ParentID]
 	END,
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM

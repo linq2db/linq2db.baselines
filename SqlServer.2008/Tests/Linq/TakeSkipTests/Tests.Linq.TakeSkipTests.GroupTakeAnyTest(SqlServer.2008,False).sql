@@ -31,7 +31,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT TOP (1)
 				[item_1].[Value]
 			FROM

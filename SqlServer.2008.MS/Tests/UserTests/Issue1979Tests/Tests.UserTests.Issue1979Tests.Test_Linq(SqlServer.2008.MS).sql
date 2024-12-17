@@ -59,7 +59,7 @@ SELECT
 FROM
 	[Issue] [i]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

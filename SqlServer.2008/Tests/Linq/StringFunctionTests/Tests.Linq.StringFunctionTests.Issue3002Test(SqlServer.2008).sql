@@ -56,7 +56,7 @@ SET     @test_1 = N'%Test%'
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
@@ -91,7 +91,7 @@ SET     @test_1 = N'%Value%'
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
@@ -126,7 +126,7 @@ SET     @test_1 = N'%Class%'
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM

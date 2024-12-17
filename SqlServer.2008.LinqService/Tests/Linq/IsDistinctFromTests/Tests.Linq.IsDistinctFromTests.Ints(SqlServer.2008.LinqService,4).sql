@@ -78,7 +78,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			[s].[Int]
 		INTERSECT
@@ -96,7 +96,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 NOT EXISTS (
+	NOT EXISTS(
 		SELECT
 			[s].[NullableInt]
 		INTERSECT
@@ -114,7 +114,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[s].[Int]
 		INTERSECT
@@ -132,7 +132,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			[s].[NullableInt]
 		INTERSECT
