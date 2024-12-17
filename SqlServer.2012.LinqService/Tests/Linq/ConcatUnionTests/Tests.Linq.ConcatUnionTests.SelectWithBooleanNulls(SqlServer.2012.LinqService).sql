@@ -2,7 +2,7 @@
 -- SqlServer.2012
 
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
@@ -13,7 +13,7 @@ FROM
 	[Parent] [x]
 UNION ALL
 SELECT
-	IIF( EXISTS (
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM
