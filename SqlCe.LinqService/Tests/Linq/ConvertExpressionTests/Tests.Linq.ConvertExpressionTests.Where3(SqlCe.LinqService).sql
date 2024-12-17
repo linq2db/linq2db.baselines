@@ -15,7 +15,7 @@ FROM
 				[a_Children].[ParentID] < 10
 		) [t1]
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

@@ -296,7 +296,7 @@ UPDATE
 SET
 	[is_deleted] = @is_deleted
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
