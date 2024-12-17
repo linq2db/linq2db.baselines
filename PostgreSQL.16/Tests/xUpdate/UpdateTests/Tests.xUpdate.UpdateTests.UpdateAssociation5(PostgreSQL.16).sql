@@ -5,7 +5,7 @@ UPDATE
 	"LinqDataTypes"
 SET
 	"BoolValue" = CASE
-		WHEN  NOT EXISTS (
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM

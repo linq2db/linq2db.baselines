@@ -4,7 +4,7 @@
 DELETE FROM
 	"Parent" t1
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
