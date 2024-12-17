@@ -50,12 +50,12 @@ FROM
 		SELECT FIRST 1
 			t1.Id,
 			CASE
-				WHEN t1.C1 = 'T' THEN 't'
-				ELSE 'f'
+				WHEN t1.C1 = 'T' THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond,
 			CASE
-				WHEN t1.C1 <> 'T' THEN 't'
-				ELSE 'f'
+				WHEN t1.C1 <> 'T' THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_1
 		FROM
 			Issue4596Form t1
@@ -88,12 +88,12 @@ SELECT FIRST 1
 	t1.Id,
 	t1.C1,
 	CASE
-		WHEN t1.C1 = 'T' THEN 't'
-		ELSE 'f'
+		WHEN t1.C1 = 'T' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	CASE
-		WHEN t1.C1 <> 'T' THEN 't'
-		ELSE 'f'
+		WHEN t1.C1 <> 'T' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Issue4596Form t1

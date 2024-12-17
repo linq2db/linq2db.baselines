@@ -4,7 +4,7 @@
 UPDATE
 	LinqDataTypes p
 SET
-	BoolValue = 't'
+	BoolValue = 't'::BOOLEAN
 WHERE
 	p.ID = -1
 

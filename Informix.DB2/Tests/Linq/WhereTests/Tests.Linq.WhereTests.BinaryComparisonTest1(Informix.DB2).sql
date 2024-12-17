@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				t1.MiddleName <> t1.LastName OR t1.MiddleName IS NULL
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

@@ -65,8 +65,8 @@ FROM
 					WHERE
 						t.PersonID = tg.PersonID AND tg.FirstName = 'John'
 				)
-					THEN 't'
-				ELSE 'f'
+					THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as IsHoliday
 		FROM
 			Person i

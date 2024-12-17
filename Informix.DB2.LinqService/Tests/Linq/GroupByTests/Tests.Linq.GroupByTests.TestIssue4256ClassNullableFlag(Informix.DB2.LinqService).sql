@@ -7,10 +7,10 @@ SELECT
 FROM
 	(
 		SELECT
-			't' as IsActive,
+			't'::BOOLEAN as IsActive,
 			CASE
-				WHEN it.SmallIntValue <> 0 THEN 't'
-				ELSE 'f'
+				WHEN it.SmallIntValue <> 0 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as Other
 		FROM
 			LinqDataTypes it

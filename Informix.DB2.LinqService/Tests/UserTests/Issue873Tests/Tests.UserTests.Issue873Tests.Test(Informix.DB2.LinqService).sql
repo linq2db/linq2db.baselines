@@ -22,8 +22,8 @@ SELECT
 			WHERE
 				a_Parent_1.ParentID = f.ParentID AND (a_Parent_1.Value1 = f.Value1 OR a_Parent_1.Value1 IS NULL AND f.Value1 IS NULL)
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	(
 		SELECT

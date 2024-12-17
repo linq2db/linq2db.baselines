@@ -81,9 +81,9 @@ FROM
 WHERE
 	CASE
 		WHEN e.Code = 'Child2' OR e.Code = 'Child' OR e.Code = 'BaseChild'
-			THEN 't'
-		WHEN e.Id <> 0 THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		WHEN e.Id <> 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END
 ORDER BY
 	e.Id

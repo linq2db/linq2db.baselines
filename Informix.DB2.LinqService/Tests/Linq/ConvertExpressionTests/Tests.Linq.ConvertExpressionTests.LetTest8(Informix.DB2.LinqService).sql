@@ -15,8 +15,8 @@ SELECT
 			WHERE
 				c_4.ParentID = p.ParentID AND c_4.ChildID > -100
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	(
 		SELECT

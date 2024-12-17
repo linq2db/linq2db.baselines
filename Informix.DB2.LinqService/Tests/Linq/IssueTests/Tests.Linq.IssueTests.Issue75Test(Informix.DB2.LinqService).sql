@@ -21,8 +21,8 @@ SELECT
 			WHERE
 				c2_1.ParentID = c_1.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	CASE
 		WHEN  NOT EXISTS (
@@ -33,8 +33,8 @@ SELECT
 			WHERE
 				c2_2.ParentID <> c_1.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	(
 		SELECT

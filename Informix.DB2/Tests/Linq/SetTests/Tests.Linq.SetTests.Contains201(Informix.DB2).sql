@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				p.ParentID - 1 = c_1.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Parent p

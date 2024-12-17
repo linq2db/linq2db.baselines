@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.MoneyValue::BOOLEAN
+	t.MoneyValue <> 0
 

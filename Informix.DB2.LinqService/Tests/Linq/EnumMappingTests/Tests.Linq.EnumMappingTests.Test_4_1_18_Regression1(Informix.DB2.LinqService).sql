@@ -30,8 +30,8 @@ BeforeExecute
 SELECT
 	CASE
 		WHEN t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	t1.BigIntValue,
 	t1.IntValue

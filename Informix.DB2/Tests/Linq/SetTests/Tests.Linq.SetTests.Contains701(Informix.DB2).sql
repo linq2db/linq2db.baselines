@@ -12,8 +12,8 @@ SELECT
 			WHERE
 				a_Parent.ParentID = 11 AND a_Parent.Value1 = 11
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

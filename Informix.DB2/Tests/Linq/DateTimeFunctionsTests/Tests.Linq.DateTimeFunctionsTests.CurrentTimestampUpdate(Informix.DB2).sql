@@ -4,7 +4,7 @@
 UPDATE
 	LinqDataTypes p
 SET
-	BoolValue = 't',
+	BoolValue = 't'::BOOLEAN,
 	DateTimeValue = CURRENT
 WHERE
 	p.ID = 100000

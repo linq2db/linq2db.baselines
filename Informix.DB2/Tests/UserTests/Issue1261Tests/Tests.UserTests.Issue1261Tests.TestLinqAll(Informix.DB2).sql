@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				x.ParentID = 1 AND NOT (x.ChildID = 11 AND x.GrandChildID = 777)
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 
@@ -29,8 +29,8 @@ SELECT
 			WHERE
 				x.ParentID = 1 AND NOT (x.GrandChildID = 777 AND x.ChildID = 11)
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

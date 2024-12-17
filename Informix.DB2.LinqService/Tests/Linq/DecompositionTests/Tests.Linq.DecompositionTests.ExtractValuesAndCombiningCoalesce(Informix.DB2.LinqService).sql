@@ -292,8 +292,8 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'
-		ELSE 'f'
+		WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	t.Kind,
 	Substr(t.ItemCode, 1, 2),
@@ -301,8 +301,8 @@ SELECT
 	Substr(t.ItemCode, 3, 2),
 	t.Style,
 	CASE
-		WHEN t.Kind = 1 OR t.Kind = 3 THEN 't'
-		ELSE 'f'
+		WHEN t.Kind = 1 OR t.Kind = 3 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	Substr(t.ItemCode, 5, 2),
 	Substr(t.ItemCode, 7, 2)
@@ -338,22 +338,22 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_1,
 			CASE
-				WHEN x.Kind = 1 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_2,
 			Substr(x.ItemCode, 1, 2) as ItemCode,
 			x.Color,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_3,
 			Substr(x.ItemCode, 5, 2) as ItemCode_1,
 			x.Kind,
@@ -395,22 +395,22 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_1,
 			CASE
-				WHEN x.Kind = 1 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_2,
 			Substr(x.ItemCode, 1, 2) as ItemCode,
 			x.Color,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_3,
 			Substr(x.ItemCode, 5, 2) as ItemCode_1,
 			x.Kind,
@@ -453,22 +453,22 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_1,
 			Substr(x.ItemCode, 3, 2) as ItemCode,
 			x.Style as Style_1,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_2,
 			CASE
-				WHEN x.Kind = 1 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_3,
 			Substr(x.ItemCode, 7, 2) as ItemCode_1,
 			x.Kind,
@@ -510,22 +510,22 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 2 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_1,
 			Substr(x.ItemCode, 3, 2) as ItemCode,
 			x.Style as Style_1,
 			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 OR x.Kind = 3 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_2,
 			CASE
-				WHEN x.Kind = 1 THEN 't'
-				ELSE 'f'
+				WHEN x.Kind = 1 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as cond_3,
 			Substr(x.ItemCode, 7, 2) as ItemCode_1,
 			x.Kind,

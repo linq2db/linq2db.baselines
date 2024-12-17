@@ -5,8 +5,8 @@ SELECT
 	e.FirstName,
 	CASE
 		WHEN a_Patient.PersonID IS NOT NULL AND a_Person.PersonID IS NOT NULL AND a_Person.LastName IS NOT NULL
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	a_Person.LastName
 FROM

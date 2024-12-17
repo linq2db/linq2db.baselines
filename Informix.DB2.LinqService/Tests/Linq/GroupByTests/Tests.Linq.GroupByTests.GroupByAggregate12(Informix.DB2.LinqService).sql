@@ -22,8 +22,8 @@ FROM
 					WHERE
 						g_1.ParentID = a_Children_1.ParentID
 				) > 3
-					THEN 't'
-				ELSE 'f'
+					THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as Key_1
 		FROM
 			Parent g_1

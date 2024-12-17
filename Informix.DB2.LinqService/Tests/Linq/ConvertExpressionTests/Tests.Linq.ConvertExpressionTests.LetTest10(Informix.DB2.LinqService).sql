@@ -17,8 +17,8 @@ SELECT
 							Child c_1
 					) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

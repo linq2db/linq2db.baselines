@@ -56,8 +56,8 @@ SELECT
 				*
 			FROM
 				CTE1_ t1
-		) THEN 't'
-		ELSE 'f'
+		) THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

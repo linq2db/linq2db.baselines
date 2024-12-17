@@ -41,8 +41,8 @@ SELECT
 			WHERE
 				t3.cond = 0 AND t6.cond = 0
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

@@ -8,16 +8,16 @@ FROM
 		SELECT
 			CASE
 				WHEN Mod(p.ParentID, 2) = 0 THEN CASE
-					WHEN Mod(p.ParentID, 3) = 0 THEN 't'
-					ELSE 'f'
+					WHEN Mod(p.ParentID, 3) = 0 THEN 't'::BOOLEAN
+					ELSE 'f'::BOOLEAN
 				END
 				WHEN Mod(p.ParentID, 4) = 0 THEN CASE
-					WHEN p.ParentID > 0 THEN 't'
-					ELSE 'f'
+					WHEN p.ParentID > 0 THEN 't'::BOOLEAN
+					ELSE 'f'::BOOLEAN
 				END
 				ELSE CASE
-					WHEN p.ParentID < 5 THEN 't'
-					ELSE 'f'
+					WHEN p.ParentID < 5 THEN 't'::BOOLEAN
+					ELSE 'f'::BOOLEAN
 				END
 			END::BOOLEAN as Value_1
 		FROM

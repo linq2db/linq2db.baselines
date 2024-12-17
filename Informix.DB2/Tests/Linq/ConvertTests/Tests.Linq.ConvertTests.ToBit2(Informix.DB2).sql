@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	NOT (t.MoneyValue - 4.5)::BOOLEAN
+	t.MoneyValue = 4.5
 

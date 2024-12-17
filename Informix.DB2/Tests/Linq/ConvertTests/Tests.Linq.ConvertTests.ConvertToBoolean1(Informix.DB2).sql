@@ -7,12 +7,12 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t.MoneyValue <> 0 THEN 't'
-				ELSE 'f'
+				WHEN t.MoneyValue <> 0 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as c1
 		FROM
 			LinqDataTypes t
 	) p
 WHERE
-	p.c1 = 't'
+	p.c1 = 't'::BOOLEAN
 

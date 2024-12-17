@@ -11,8 +11,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~' THEN 't'
-				ELSE 'f'
+				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~' THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as Field1,
 			p.FirstName,
 			p.PersonID as ID,

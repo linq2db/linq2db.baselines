@@ -42,8 +42,8 @@ FROM
 			SELECT
 				a_Metrics."Value" as cond,
 				CASE
-					WHEN a_Metrics."Value" IS NOT NULL THEN 't'
-					ELSE 'f'
+					WHEN a_Metrics."Value" IS NOT NULL THEN 't'::BOOLEAN
+					ELSE 'f'::BOOLEAN
 				END::BOOLEAN as cond_1,
 				ROW_NUMBER() OVER (PARTITION BY a_Metrics.RequestId ORDER BY a_Metrics.RequestId) as rn,
 				a_Metrics.RequestId

@@ -112,12 +112,12 @@ FROM
 	ComplexPredicate r
 WHERE
 	CASE
-		WHEN r."Value" = '123' THEN 't'
-		ELSE 'f'
+		WHEN r."Value" = '123' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN r."Value" = '1' OR r."Value" = 'test' AND (r."Value" <> '1' OR r."Value" IS NULL)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END
 ORDER BY
 	r.Id

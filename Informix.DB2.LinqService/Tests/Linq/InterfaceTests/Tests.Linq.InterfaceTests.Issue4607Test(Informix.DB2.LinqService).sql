@@ -22,8 +22,8 @@ INSERT INTO SomeTable
 )
 VALUES
 (
-	't',
-	'f'
+	't'::BOOLEAN,
+	'f'::BOOLEAN
 )
 
 BeforeExecute

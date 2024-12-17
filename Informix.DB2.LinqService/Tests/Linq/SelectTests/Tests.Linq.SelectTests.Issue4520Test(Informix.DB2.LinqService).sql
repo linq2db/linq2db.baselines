@@ -3,12 +3,12 @@
 
 SELECT
 	CASE
-		WHEN (i.BoolValue = 'f' AND i.BoolValue IS NOT NULL OR i.BoolValue IS NULL OR CASE
+		WHEN (i.BoolValue = 'f'::BOOLEAN AND i.BoolValue IS NOT NULL OR i.BoolValue IS NULL OR CASE
 			WHEN i.BoolValue IS NOT NULL THEN i.BoolValue
 			ELSE 'f'::BOOLEAN
 		END IS NULL) AND (i.IntValue = t1.cond OR i.IntValue IS NULL AND t1.cond IS NULL)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	LinqDataTypes i

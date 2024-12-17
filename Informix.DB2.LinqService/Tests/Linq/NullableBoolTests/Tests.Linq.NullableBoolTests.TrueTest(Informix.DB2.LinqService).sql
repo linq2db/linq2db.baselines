@@ -61,7 +61,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	t."Value" = 't'
+	t."Value" = 't'::BOOLEAN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -71,7 +71,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	t."Value" = 't'
+	t."Value" = 't'::BOOLEAN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -81,7 +81,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	t."Value" = 'f' OR t."Value" IS NULL
+	t."Value" = 'f'::BOOLEAN OR t."Value" IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -91,7 +91,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	t."Value" = 'f'
+	t."Value" = 'f'::BOOLEAN
 
 BeforeExecute
 -- Informix.DB2 Informix
