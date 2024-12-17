@@ -49,7 +49,7 @@ SET
 			"Child"."ChildID" = c_2."ChildID"
 	)
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM

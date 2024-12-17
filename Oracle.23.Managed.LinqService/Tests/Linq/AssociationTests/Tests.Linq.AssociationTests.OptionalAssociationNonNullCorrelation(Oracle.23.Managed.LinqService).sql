@@ -32,6 +32,38 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "Table1"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "Table1"
+		(
+			ID  Int NOT NULL,
+			ID2 Int     NULL,
+
+			CONSTRAINT "PK_Table1" PRIMARY KEY (ID)
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @ID2 Int32
@@ -245,7 +277,7 @@ FROM
 				LEFT JOIN "Table2" a_Table2 ON r.ID2 = a_Table2.ID
 				LEFT JOIN "Table3" a_Table3 ON a_Table2.ID3 = a_Table3.ID
 		WHERE
-			 EXISTS (
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -270,7 +302,7 @@ FROM
 		LEFT JOIN "Table2" a_Table2 ON r.ID2 = a_Table2.ID
 		LEFT JOIN "Table3" a_Table3 ON a_Table2.ID3 = a_Table3.ID
 WHERE
-	 EXISTS (
+	EXISTS(
 		SELECT
 			*
 		FROM
