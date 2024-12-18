@@ -161,11 +161,11 @@ FROM
 		FROM
 			[WMS_GlobalTaskA] [t1]
 	) [tp12]
-		LEFT JOIN [WmsResourcePointDTO] [source] ON [tp12].[RPSourceID] = [source].[Id]
-		LEFT JOIN [StorageShelfDTO] [sourceShelf] ON [tp12].[StorageShelfSourceID] = [sourceShelf].[Id]
-		LEFT JOIN [WmsResourcePointDTO] [dest] ON [tp12].[RPDestinationID] = [dest].[Id]
-		LEFT JOIN [StorageShelfDTO] [destShelf] ON [tp12].[StorageShelfDestinationID] = [destShelf].[Id]
-		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [tp12].[RPOrigDestinationID] = [origdest].[Id]
+		LEFT JOIN [WmsResourcePointDTO] [source] ON [tp12].[RPSourceID] = [source].[Id] AND [tp12].[RPSourceID] IS NOT NULL
+		LEFT JOIN [StorageShelfDTO] [sourceShelf] ON [tp12].[StorageShelfSourceID] = [sourceShelf].[Id] AND [tp12].[StorageShelfSourceID] IS NOT NULL
+		LEFT JOIN [WmsResourcePointDTO] [dest] ON [tp12].[RPDestinationID] = [dest].[Id] AND [tp12].[RPDestinationID] IS NOT NULL
+		LEFT JOIN [StorageShelfDTO] [destShelf] ON [tp12].[StorageShelfDestinationID] = [destShelf].[Id] AND [tp12].[StorageShelfDestinationID] IS NOT NULL
+		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [tp12].[RPOrigDestinationID] = [origdest].[Id] AND [tp12].[RPOrigDestinationID] IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				[res].[Id]
@@ -187,7 +187,7 @@ FROM
 				[t3].[Id]
 			FROM
 				[WMS_OutfeedTransportOrderA] [t3]
-		) [outfeed] ON [tp12].[OutfeedTransportOrderID] = [outfeed].[Id]
+		) [outfeed] ON [tp12].[OutfeedTransportOrderID] = [outfeed].[Id] AND [tp12].[OutfeedTransportOrderID] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

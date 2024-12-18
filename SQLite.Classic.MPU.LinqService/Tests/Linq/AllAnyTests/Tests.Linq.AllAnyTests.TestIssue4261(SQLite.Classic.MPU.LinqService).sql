@@ -21,6 +21,6 @@ WHERE
 					('John'), ('Not John')
 				) [y]
 		WHERE
-			[y].[item] = [x].[FirstName]
+			[y].[item] = [x].[FirstName] AND [y].[item] IS NOT NULL
 	)
 

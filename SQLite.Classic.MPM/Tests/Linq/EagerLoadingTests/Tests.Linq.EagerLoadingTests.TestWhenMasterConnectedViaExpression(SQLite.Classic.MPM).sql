@@ -148,7 +148,7 @@ FROM
 		FROM
 			[MasterManyId] [g_1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -165,7 +165,7 @@ FROM
 		FROM
 			[MasterManyId] [g_1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

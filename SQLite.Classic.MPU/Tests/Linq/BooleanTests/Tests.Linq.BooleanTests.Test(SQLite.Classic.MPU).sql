@@ -10772,7 +10772,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = @True
+	[r].[BooleanN] = @True AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -10808,7 +10808,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = @False
+	[r].[BooleanN] = @False AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -10844,7 +10844,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = @TrueN
+	[r].[BooleanN] = @TrueN AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -10880,7 +10880,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = @FalseN
+	[r].[BooleanN] = @FalseN AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -11332,7 +11332,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] = 0 THEN 1
+		WHEN [g_1].[Int32N] = 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11340,7 +11340,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] = 0 THEN 1
+		WHEN [g_1].[DecimalN] = 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11348,7 +11349,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] = 0 THEN 1
+		WHEN [g_1].[DoubleN] = 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11380,7 +11382,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] > 0 THEN 1
+		WHEN [g_1].[Int32N] > 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11388,7 +11390,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] > 0 THEN 1
+		WHEN [g_1].[DecimalN] > 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11396,7 +11399,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] > 0 THEN 1
+		WHEN [g_1].[DoubleN] > 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11404,7 +11408,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] < 0 THEN 1
+		WHEN [g_1].[Int32N] < 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11412,7 +11416,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] < 0 THEN 1
+		WHEN [g_1].[DecimalN] < 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11420,7 +11425,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] < 0 THEN 1
+		WHEN [g_1].[DoubleN] < 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11428,7 +11434,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] >= 0 THEN 1
+		WHEN [g_1].[Int32N] >= 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11436,7 +11442,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] >= 0 THEN 1
+		WHEN [g_1].[DecimalN] >= 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11444,7 +11451,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] >= 0 THEN 1
+		WHEN [g_1].[DoubleN] >= 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11452,7 +11460,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] <= 0 THEN 1
+		WHEN [g_1].[Int32N] <= 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11460,7 +11468,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] <= 0 THEN 1
+		WHEN [g_1].[DecimalN] <= 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11468,7 +11477,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] <= 0 THEN 1
+		WHEN [g_1].[DoubleN] <= 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -11502,7 +11512,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] = 0 THEN 1
+		WHEN [r].[Int32N] = 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11510,7 +11520,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] = 0 THEN 1
+		WHEN [r].[DecimalN] = 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11518,7 +11528,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] = 0 THEN 1
+		WHEN [r].[DoubleN] = 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11537,7 +11547,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11545,7 +11558,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11553,7 +11569,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11561,7 +11580,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11569,7 +11591,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11577,7 +11602,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11586,7 +11614,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] > 0 THEN 1
+		WHEN [r].[Int32N] > 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11594,7 +11622,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] > 0 THEN 1
+		WHEN [r].[DecimalN] > 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11602,7 +11630,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] > 0 THEN 1
+		WHEN [r].[DoubleN] > 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11621,7 +11649,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11629,7 +11660,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11637,7 +11671,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11645,7 +11682,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11653,7 +11693,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11661,7 +11704,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11670,7 +11716,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] >= 0 THEN 1
+		WHEN [r].[Int32N] >= 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11678,7 +11724,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] >= 0 THEN 1
+		WHEN [r].[DecimalN] >= 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11686,7 +11732,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] >= 0 THEN 1
+		WHEN [r].[DoubleN] >= 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11705,7 +11751,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11713,7 +11762,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11721,7 +11773,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11729,7 +11784,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11737,7 +11795,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11745,7 +11806,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11754,7 +11818,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] < 0 THEN 1
+		WHEN [r].[Int32N] < 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11762,7 +11826,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] < 0 THEN 1
+		WHEN [r].[DecimalN] < 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11770,7 +11834,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] < 0 THEN 1
+		WHEN [r].[DoubleN] < 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11789,7 +11853,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11797,7 +11864,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11805,7 +11875,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11813,7 +11886,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11821,7 +11897,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11829,7 +11908,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11838,7 +11920,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] <= 0 THEN 1
+		WHEN [r].[Int32N] <= 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11846,7 +11928,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] <= 0 THEN 1
+		WHEN [r].[DecimalN] <= 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11854,7 +11936,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] <= 0 THEN 1
+		WHEN [r].[DoubleN] <= 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11873,7 +11955,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11881,7 +11966,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11889,7 +11977,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11897,7 +11988,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11905,7 +11999,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11913,7 +12010,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END
@@ -11927,7 +12027,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] = 0 THEN 1
+		WHEN [r_1].[Int32N] = 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11935,7 +12035,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] = 0 THEN 1
+		WHEN [r_1].[DecimalN] = 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11943,7 +12044,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] = 0 THEN 1
+		WHEN [r_1].[DoubleN] = 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -11962,7 +12064,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11970,7 +12075,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11978,7 +12086,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11986,7 +12097,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -11994,7 +12108,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12002,7 +12119,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12011,7 +12131,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] > 0 THEN 1
+		WHEN [r_1].[Int32N] > 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12019,7 +12139,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] > 0 THEN 1
+		WHEN [r_1].[DecimalN] > 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12027,7 +12148,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] > 0 THEN 1
+		WHEN [r_1].[DoubleN] > 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12046,7 +12168,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12054,7 +12179,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12062,7 +12190,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12070,7 +12201,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12078,7 +12212,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12086,7 +12223,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12095,7 +12235,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] >= 0 THEN 1
+		WHEN [r_1].[Int32N] >= 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12103,7 +12243,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] >= 0 THEN 1
+		WHEN [r_1].[DecimalN] >= 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12111,7 +12252,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] >= 0 THEN 1
+		WHEN [r_1].[DoubleN] >= 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12130,7 +12272,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12138,7 +12283,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12146,7 +12294,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12154,7 +12305,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12162,7 +12316,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12170,7 +12327,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12179,7 +12339,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] < 0 THEN 1
+		WHEN [r_1].[Int32N] < 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12187,7 +12347,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] < 0 THEN 1
+		WHEN [r_1].[DecimalN] < 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12195,7 +12356,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] < 0 THEN 1
+		WHEN [r_1].[DoubleN] < 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12214,7 +12376,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12222,7 +12387,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12230,7 +12398,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12238,7 +12409,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12246,7 +12420,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12254,7 +12431,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12263,7 +12443,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] <= 0 THEN 1
+		WHEN [r_1].[Int32N] <= 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12271,7 +12451,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] <= 0 THEN 1
+		WHEN [r_1].[DecimalN] <= 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12279,7 +12460,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] <= 0 THEN 1
+		WHEN [r_1].[DoubleN] <= 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -12298,7 +12480,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12306,7 +12491,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12314,7 +12502,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12322,7 +12513,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12330,7 +12524,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -12338,7 +12535,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END
@@ -12547,7 +12747,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = 1
+	[r].[BooleanN] = 1 AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -12581,7 +12781,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = 0
+	[r].[BooleanN] = 0 AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -12615,7 +12815,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = 1
+	[r].[BooleanN] = 1 AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -12649,7 +12849,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[BooleanN] = 0
+	[r].[BooleanN] = 0 AND [r].[BooleanN] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -13085,7 +13285,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] = 0 THEN 1
+		WHEN [g_1].[Int32N] = 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13093,7 +13293,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] = 0 THEN 1
+		WHEN [g_1].[DecimalN] = 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13101,7 +13302,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] = 0 THEN 1
+		WHEN [g_1].[DoubleN] = 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13133,7 +13335,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] > 0 THEN 1
+		WHEN [g_1].[Int32N] > 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13141,7 +13343,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] > 0 THEN 1
+		WHEN [g_1].[DecimalN] > 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13149,7 +13352,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] > 0 THEN 1
+		WHEN [g_1].[DoubleN] > 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13157,7 +13361,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] < 0 THEN 1
+		WHEN [g_1].[Int32N] < 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13165,7 +13369,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] < 0 THEN 1
+		WHEN [g_1].[DecimalN] < 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13173,7 +13378,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] < 0 THEN 1
+		WHEN [g_1].[DoubleN] < 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13181,7 +13387,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] >= 0 THEN 1
+		WHEN [g_1].[Int32N] >= 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13189,7 +13395,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] >= 0 THEN 1
+		WHEN [g_1].[DecimalN] >= 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13197,7 +13404,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] >= 0 THEN 1
+		WHEN [g_1].[DoubleN] >= 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13205,7 +13413,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[Int32N] <= 0 THEN 1
+		WHEN [g_1].[Int32N] <= 0 AND [g_1].[Int32N] IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13213,7 +13421,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DecimalN] <= 0 THEN 1
+		WHEN [g_1].[DecimalN] <= 0 AND [g_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13221,7 +13430,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [g_1].[DoubleN] <= 0 THEN 1
+		WHEN [g_1].[DoubleN] <= 0 AND [g_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -13255,7 +13465,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] = 0 THEN 1
+		WHEN [r].[Int32N] = 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13263,7 +13473,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] = 0 THEN 1
+		WHEN [r].[DecimalN] = 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13271,7 +13481,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] = 0 THEN 1
+		WHEN [r].[DoubleN] = 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13290,7 +13500,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13298,7 +13511,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13306,7 +13522,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13314,7 +13533,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13322,7 +13544,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13330,7 +13555,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13339,7 +13567,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] > 0 THEN 1
+		WHEN [r].[Int32N] > 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13347,7 +13575,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] > 0 THEN 1
+		WHEN [r].[DecimalN] > 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13355,7 +13583,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] > 0 THEN 1
+		WHEN [r].[DoubleN] > 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13374,7 +13602,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13382,7 +13613,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13390,7 +13624,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13398,7 +13635,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13406,7 +13646,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13414,7 +13657,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13423,7 +13669,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] >= 0 THEN 1
+		WHEN [r].[Int32N] >= 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13431,7 +13677,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] >= 0 THEN 1
+		WHEN [r].[DecimalN] >= 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13439,7 +13685,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] >= 0 THEN 1
+		WHEN [r].[DoubleN] >= 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13458,7 +13704,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13466,7 +13715,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13474,7 +13726,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13482,7 +13737,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13490,7 +13748,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13498,7 +13759,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13507,7 +13771,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] < 0 THEN 1
+		WHEN [r].[Int32N] < 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13515,7 +13779,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] < 0 THEN 1
+		WHEN [r].[DecimalN] < 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13523,7 +13787,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] < 0 THEN 1
+		WHEN [r].[DoubleN] < 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13542,7 +13806,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13550,7 +13817,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13558,7 +13828,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13566,7 +13839,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13574,7 +13850,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13582,7 +13861,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13591,7 +13873,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[Int32N] <= 0 THEN 1
+		WHEN [r].[Int32N] <= 0 AND [r].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13599,7 +13881,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DecimalN] <= 0 THEN 1
+		WHEN [r].[DecimalN] <= 0 AND [r].[DecimalN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13607,7 +13889,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[DoubleN] <= 0 THEN 1
+		WHEN [r].[DoubleN] <= 0 AND [r].[DoubleN] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13626,7 +13908,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13634,7 +13919,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
 			ELSE [r].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[Int32N]
+			ELSE [r].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13642,7 +13930,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13650,7 +13941,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
 			ELSE [r].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DecimalN]
+			ELSE [r].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13658,7 +13952,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[Boolean] = 1 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13666,7 +13963,10 @@ SELECT
 		WHEN CASE
 			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
 			ELSE [r].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r].[BooleanN] = 0 THEN [r].[DoubleN]
+			ELSE [r].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END
@@ -13680,7 +13980,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] = 0 THEN 1
+		WHEN [r_1].[Int32N] = 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13688,7 +13988,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] = 0 THEN 1
+		WHEN [r_1].[DecimalN] = 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13696,7 +13997,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] = 0 THEN 1
+		WHEN [r_1].[DoubleN] = 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13715,7 +14017,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13723,7 +14028,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13731,7 +14039,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13739,7 +14050,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13747,7 +14061,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13755,7 +14072,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END = 0
+		END = 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13764,7 +14084,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] > 0 THEN 1
+		WHEN [r_1].[Int32N] > 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13772,7 +14092,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] > 0 THEN 1
+		WHEN [r_1].[DecimalN] > 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13780,7 +14101,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] > 0 THEN 1
+		WHEN [r_1].[DoubleN] > 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13799,7 +14121,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13807,7 +14132,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13815,7 +14143,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13823,7 +14154,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13831,7 +14165,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13839,7 +14176,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END > 0
+		END > 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13848,7 +14188,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] >= 0 THEN 1
+		WHEN [r_1].[Int32N] >= 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13856,7 +14196,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] >= 0 THEN 1
+		WHEN [r_1].[DecimalN] >= 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13864,7 +14205,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] >= 0 THEN 1
+		WHEN [r_1].[DoubleN] >= 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13883,7 +14225,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13891,7 +14236,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13899,7 +14247,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13907,7 +14258,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13915,7 +14269,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13923,7 +14280,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END >= 0
+		END >= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13932,7 +14292,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] < 0 THEN 1
+		WHEN [r_1].[Int32N] < 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13940,7 +14300,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] < 0 THEN 1
+		WHEN [r_1].[DecimalN] < 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13948,7 +14309,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] < 0 THEN 1
+		WHEN [r_1].[DoubleN] < 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -13967,7 +14329,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13975,7 +14340,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13983,7 +14351,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13991,7 +14362,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -13999,7 +14373,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14007,7 +14384,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END < 0
+		END < 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14016,7 +14396,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[Int32N] <= 0 THEN 1
+		WHEN [r_1].[Int32N] <= 0 AND [r_1].[Int32N] IS NOT NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -14024,7 +14404,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DecimalN] <= 0 THEN 1
+		WHEN [r_1].[DecimalN] <= 0 AND [r_1].[DecimalN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -14032,7 +14413,8 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r_1].[DoubleN] <= 0 THEN 1
+		WHEN [r_1].[DoubleN] <= 0 AND [r_1].[DoubleN] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -14051,7 +14433,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14059,7 +14444,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
 			ELSE [r_1].[Int32]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[Int32N]
+			ELSE [r_1].[Int32]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14067,7 +14455,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14075,7 +14466,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
 			ELSE [r_1].[Decimal]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DecimalN]
+			ELSE [r_1].[Decimal]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14083,7 +14477,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[Boolean] = 1 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
@@ -14091,7 +14488,10 @@ SELECT
 		WHEN CASE
 			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
 			ELSE [r_1].[Double]
-		END <= 0
+		END <= 0 AND CASE
+			WHEN [r_1].[BooleanN] = 0 THEN [r_1].[DoubleN]
+			ELSE [r_1].[Double]
+		END IS NOT NULL
 			THEN 1
 		ELSE 0
 	END

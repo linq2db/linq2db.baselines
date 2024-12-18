@@ -14,5 +14,12 @@ WHERE
 		FROM
 			[Child] [b2]
 	) AND
-	[b].[ChildID] = -1 AND [Parent].[ParentID] = [b].[ParentID]
+	(
+		SELECT
+			MAX([b2].[ParentID])
+		FROM
+			[Child] [b2]
+	) IS NOT NULL AND
+	[b].[ChildID] = -1 AND
+	[Parent].[ParentID] = [b].[ParentID]
 

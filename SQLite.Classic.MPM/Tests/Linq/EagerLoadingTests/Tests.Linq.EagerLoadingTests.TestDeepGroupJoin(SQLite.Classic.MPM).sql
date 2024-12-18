@@ -1807,7 +1807,7 @@ FROM
 				LIMIT @take
 			) [t1]
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

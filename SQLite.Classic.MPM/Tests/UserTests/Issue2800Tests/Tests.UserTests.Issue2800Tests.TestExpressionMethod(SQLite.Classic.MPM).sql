@@ -73,7 +73,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	[x].[Name] = 'Special'
+	[x].[Name] = 'Special' AND [x].[Name] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -131,7 +131,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	[x].[Name] = 'Special'
+	[x].[Name] = 'Special' AND [x].[Name] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

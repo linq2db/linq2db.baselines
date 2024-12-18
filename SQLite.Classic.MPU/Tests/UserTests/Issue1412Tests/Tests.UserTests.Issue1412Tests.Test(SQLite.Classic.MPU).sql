@@ -268,7 +268,7 @@ FROM
 		FROM
 			[WMS_ResourceA] [t1]
 	) [t2]
-		LEFT JOIN [WmsResourceTypeDTO] [tp] ON [t2].[TypeID] = [tp].[Id]
+		LEFT JOIN [WmsResourceTypeDTO] [tp] ON [t2].[TypeID] = [tp].[Id] AND [t2].[TypeID] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

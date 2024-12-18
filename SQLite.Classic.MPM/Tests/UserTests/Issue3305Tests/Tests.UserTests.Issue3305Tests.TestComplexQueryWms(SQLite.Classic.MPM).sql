@@ -240,7 +240,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
-						[y].[Id] = [x_3].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
+						[y].[Id] = [x_3].[IR_InfeedAdviceID] AND [x_3].[IR_InfeedAdviceID] IS NOT NULL AND
+						[y].[InfeedAdviceType] = 1
 				))
 		)
 			THEN 1

@@ -861,7 +861,7 @@ SELECT
 						FROM
 							[DetailClass] [a_Details]
 						WHERE
-							[m_1].[Id1] = [a_Details].[MasterId]
+							[m_1].[Id1] = [a_Details].[MasterId] AND [a_Details].[MasterId] IS NOT NULL
 					) [t1]
 				ORDER BY
 					[t1].[DetailId]
@@ -882,7 +882,7 @@ SELECT
 						FROM
 							[DetailClass] [a_Details_1]
 						WHERE
-							[m_1].[Id1] = [a_Details_1].[MasterId]
+							[m_1].[Id1] = [a_Details_1].[MasterId] AND [a_Details_1].[MasterId] IS NOT NULL
 					) [t3]
 				ORDER BY
 					[t3].[DetailValue]
@@ -907,7 +907,7 @@ FROM
 		FROM
 			[MasterClass] [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

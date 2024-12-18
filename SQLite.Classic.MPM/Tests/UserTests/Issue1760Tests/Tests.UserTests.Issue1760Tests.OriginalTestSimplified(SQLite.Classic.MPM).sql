@@ -87,7 +87,7 @@ SELECT
 	[t1].[Id]
 FROM
 	[table1] [s]
-		LEFT JOIN [table2] [bt1] ON [s].[c_tb1l_Id] = [bt1].[id]
+		LEFT JOIN [table2] [bt1] ON [s].[c_tb1l_Id] = [bt1].[id] AND [s].[c_tb1l_Id] IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				[ctb].[Col3],
@@ -104,10 +104,10 @@ FROM
 					GROUP BY
 						[w].[c_tb1l_Id]
 				) [ctb]
-					LEFT JOIN [table3] [tbl3] ON [ctb].[maxCol] = [tbl3].[id]
-					LEFT JOIN [b_table2] [btbl] ON [tbl3].[col] = [btbl].[id]
-		) [t1] ON [bt1].[col3] = [t1].[Id]
-		LEFT JOIN [c_table2] [ctb2] ON [bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL
+					LEFT JOIN [table3] [tbl3] ON [ctb].[maxCol] = [tbl3].[id] AND [ctb].[maxCol] IS NOT NULL
+					LEFT JOIN [b_table2] [btbl] ON [tbl3].[col] = [btbl].[id] AND [tbl3].[col] IS NOT NULL
+		) [t1] ON [bt1].[col3] = [t1].[Id] AND [bt1].[col3] IS NOT NULL
+		LEFT JOIN [c_table2] [ctb2] ON [bt1].[textCol] = [ctb2].[col1] AND [bt1].[textCol] IS NOT NULL AND [ctb2].[col1] IS NOT NULL OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL
 WHERE
 	[s].[commonTableId] = @id
 GROUP BY

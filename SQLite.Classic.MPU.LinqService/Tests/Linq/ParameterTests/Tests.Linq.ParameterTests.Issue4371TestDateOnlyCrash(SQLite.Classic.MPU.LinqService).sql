@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Issue4371Table2] [r]
 WHERE
-	[r].[ColumnDO] = @dt
+	[r].[ColumnDO] = @dt AND [r].[ColumnDO] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

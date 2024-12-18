@@ -71,7 +71,7 @@ SELECT
 	END
 FROM
 	[Invoice] [i]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID] AND [i].[InvoiceReferenceNumberID] IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				[g_1].[InvoiceID] as [InvoiceId],
@@ -97,7 +97,7 @@ SELECT
 	[i].[SettlementTotalOnIssue]
 FROM
 	[Invoice] [i]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID] AND [i].[InvoiceReferenceNumberID] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -114,7 +114,7 @@ SELECT
 	END
 FROM
 	[Invoice] [i]
-		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
+		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID] AND [i].[InvoiceReferenceNumberID] IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				[g_1].[InvoiceID] as [InvoiceId],

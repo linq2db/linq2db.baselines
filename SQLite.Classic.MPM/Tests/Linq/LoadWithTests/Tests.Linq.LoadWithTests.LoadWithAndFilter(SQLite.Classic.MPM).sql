@@ -231,10 +231,10 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[ParentId] IS NOT NULL
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id] AND [d_1].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -255,7 +255,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -276,7 +276,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -325,12 +325,13 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 		WHERE
-			[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
+			[d].[Value] = [d].[Value] AND [d].[Value] IS NOT NULL AND [d].[Value] IS NOT NULL OR
+			[d].[Value] IS NULL AND [d].[Value] IS NULL
 	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[ParentId] IS NOT NULL
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id] AND [d_1].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -351,9 +352,10 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 WHERE
-	[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
+	[d].[Value] = [d].[Value] AND [d].[Value] IS NOT NULL AND [d].[Value] IS NOT NULL OR
+	[d].[Value] IS NULL AND [d].[Value] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -376,10 +378,11 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 WHERE
-	[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
+	[d].[Value] = [d].[Value] AND [d].[Value] IS NOT NULL AND [d].[Value] IS NOT NULL OR
+	[d].[Value] IS NULL AND [d].[Value] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -428,10 +431,10 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[ParentId] IS NOT NULL
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id] AND [d_1].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -452,7 +455,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -475,8 +478,8 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

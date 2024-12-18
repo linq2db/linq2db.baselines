@@ -42,7 +42,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[ID] = 123 AND [x].[FirstName] = 'John'
+	[x].[ID] = 123 AND [x].[FirstName] = 'John' AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

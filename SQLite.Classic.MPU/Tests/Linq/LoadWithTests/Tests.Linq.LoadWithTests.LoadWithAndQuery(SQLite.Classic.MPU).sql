@@ -219,7 +219,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 		INNER JOIN [MainItem2] [mm] ON [d].[Id] / 10 = [mm].[Id]
 WHERE
 	[d].[Id] % 2 = 0
@@ -262,9 +262,9 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -283,7 +283,7 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -309,7 +309,7 @@ SELECT
 	[a_Parent].[Value]
 FROM
 	[SubItem1] [s]
-		LEFT JOIN [MainItem] [a_Parent] ON [s].[ParentId] = [a_Parent].[Id] AND [a_Parent].[Id] % 3 = 0
+		LEFT JOIN [MainItem] [a_Parent] ON [s].[ParentId] = [a_Parent].[Id] AND [s].[ParentId] IS NOT NULL AND [a_Parent].[Id] % 3 = 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

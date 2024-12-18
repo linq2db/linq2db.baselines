@@ -61,9 +61,9 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id] AND [item_1].[PayRateId] IS NOT NULL
 WHERE
-	[a_PayRate].[Name] = 'test'
+	[a_PayRate].[Name] = 'test' AND [a_PayRate].[Name] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -74,9 +74,10 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id] AND [item_1].[PayRateId] IS NOT NULL
 WHERE
-	[a_PayRate].[Name] = 'test' AND [item_1].[PayRateId] IS NOT NULL
+	[a_PayRate].[Name] = 'test' AND [a_PayRate].[Name] IS NOT NULL AND
+	[item_1].[PayRateId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

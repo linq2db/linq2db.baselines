@@ -1807,9 +1807,9 @@ FROM
 				WHERE
 					[m_1].[Id1] >= @intParam
 			) [t1]
-				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
+		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[DetailId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1830,7 +1830,7 @@ FROM
 		WHERE
 			[m_1].[Id1] >= @intParam
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
