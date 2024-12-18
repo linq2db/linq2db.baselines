@@ -21,7 +21,7 @@ SET
 				LEFT JOIN "Child" c_4 ON c_4."ChildID" = 11
 		WHERE
 			p_1."ParentID" = 1 AND "Parent"."ParentID" = p_1."ParentID" AND
-			("Parent"."Value1" = p_1."Value1" OR "Parent"."Value1" IS NULL AND p_1."Value1" IS NULL)
+			("Parent"."Value1" = p_1."Value1" AND "Parent"."Value1" IS NOT NULL AND p_1."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND p_1."Value1" IS NULL)
 	)
 WHERE
 	EXISTS(
@@ -33,7 +33,7 @@ WHERE
 				LEFT JOIN "Child" c_2 ON c_2."ChildID" = 11
 		WHERE
 			p."ParentID" = 1 AND "Parent"."ParentID" = p."ParentID" AND
-			("Parent"."Value1" = p."Value1" OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
+			("Parent"."Value1" = p."Value1" AND "Parent"."Value1" IS NOT NULL AND p."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
 	)
 
 BeforeExecute

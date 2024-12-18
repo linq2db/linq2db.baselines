@@ -8,7 +8,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	t1."KeyValue" = 'NullValues'
+	t1."KeyValue" = 'NullValues' AND t1."KeyValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	t1."StringValue1" IS NULL OR Length(t1."StringValue1") = 0
+	t1."StringValue1" IS NULL OR Length(t1."StringValue1") = 0 AND Length(t1."StringValue1") IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -32,7 +32,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	t1."StringValue2" IS NULL OR Length(t1."StringValue2") = 0
+	t1."StringValue2" IS NULL OR Length(t1."StringValue2") = 0 AND Length(t1."StringValue2") IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -4,7 +4,7 @@
 DELETE FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -30,7 +30,7 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -38,5 +38,5 @@ BeforeExecute
 DELETE FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 

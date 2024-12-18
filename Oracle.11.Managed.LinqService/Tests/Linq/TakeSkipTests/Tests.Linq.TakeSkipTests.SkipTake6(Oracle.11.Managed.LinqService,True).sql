@@ -15,7 +15,7 @@ FROM
 			ROWNUM <= 3
 	) p_1
 WHERE
-	c_1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID" AND p_1."ParentID" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -47,5 +47,5 @@ FROM
 			t2.RN > 12
 	) p_1
 WHERE
-	c_1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID" AND p_1."ParentID" IS NOT NULL
 

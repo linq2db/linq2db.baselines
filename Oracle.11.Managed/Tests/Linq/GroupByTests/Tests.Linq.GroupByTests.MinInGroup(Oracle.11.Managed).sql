@@ -60,20 +60,24 @@ SELECT
 	MIN(g_1."DataValue"),
 	MIN(g_1."DataValue"),
 	MIN(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(DISTINCT g_1."DataValue"),
 	MIN(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END)
 FROM

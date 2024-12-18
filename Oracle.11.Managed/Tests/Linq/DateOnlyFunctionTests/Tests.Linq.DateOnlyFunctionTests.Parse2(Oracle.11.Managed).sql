@@ -54,11 +54,17 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	d."TransactionDate"
+	d."Day_2"
 FROM
-	"Transactions" d
+	(
+		SELECT
+			EXTRACT(DAY FROM t."TransactionDate") as "Day_1",
+			t."TransactionDate" as "Day_2"
+		FROM
+			"Transactions" t
+	) d
 WHERE
-	EXTRACT(DAY FROM d."TransactionDate") > 0
+	d."Day_1" > 0 AND d."Day_1" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

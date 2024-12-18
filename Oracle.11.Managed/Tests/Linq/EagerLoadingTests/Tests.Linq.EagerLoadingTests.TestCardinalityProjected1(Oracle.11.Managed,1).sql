@@ -193,8 +193,8 @@ SELECT
 	a_ObjectC.FK
 FROM
 	"EntityA" e
-		INNER JOIN "EntityB" a_ObjectB ON e.FK = a_ObjectB."Id"
-		LEFT JOIN "EntityC" a_ObjectC ON a_ObjectB.FK = a_ObjectC."Id"
+		INNER JOIN "EntityB" a_ObjectB ON e.FK = a_ObjectB."Id" AND e.FK IS NOT NULL
+		LEFT JOIN "EntityC" a_ObjectC ON a_ObjectB.FK = a_ObjectC."Id" AND a_ObjectB.FK IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
