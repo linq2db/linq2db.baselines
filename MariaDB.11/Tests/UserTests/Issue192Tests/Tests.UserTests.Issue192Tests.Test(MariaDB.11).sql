@@ -87,7 +87,7 @@ SELECT
 FROM
 	`TypeConvertTable` `t1`
 WHERE
-	`t1`.`GuidValue` = @cond
+	`t1`.`GuidValue` = @cond AND `t1`.`GuidValue` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -231,7 +231,7 @@ SELECT
 FROM
 	`TypeConvertTable` `t1`
 WHERE
-	`t1`.`GuidValue` = @GuidValue
+	`t1`.`GuidValue` = @GuidValue AND `t1`.`GuidValue` IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -246,7 +246,7 @@ SELECT
 FROM
 	`TypeConvertTable` `t1`
 WHERE
-	`t1`.`GuidValue` = @GuidValue
+	`t1`.`GuidValue` = @GuidValue AND `t1`.`GuidValue` IS NOT NULL
 LIMIT 1
 
 BeforeExecute

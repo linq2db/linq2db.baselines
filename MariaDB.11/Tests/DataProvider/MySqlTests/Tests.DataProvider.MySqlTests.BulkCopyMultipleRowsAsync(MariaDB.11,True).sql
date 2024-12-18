@@ -3077,7 +3077,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -3113,7 +3113,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 ORDER BY
 	`t1`.`ID`
 LIMIT @take

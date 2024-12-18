@@ -30,7 +30,10 @@ DELETE
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` = 101 AND `LinqDataTypes`.`BigIntValue` = 12
+	`LinqDataTypes`.`ID` = 101 AND
+	`LinqDataTypes`.`ID` IS NOT NULL AND
+	`LinqDataTypes`.`BigIntValue` = 12 AND
+	`LinqDataTypes`.`BigIntValue` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

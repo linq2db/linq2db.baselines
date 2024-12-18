@@ -5,7 +5,7 @@ DELETE
 FROM
 	`Parent`
 WHERE
-	`Parent`.`Value1` = 11
+	`Parent`.`Value1` = 11 AND `Parent`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -31,7 +31,7 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`Value1` = 11
+	`p`.`Value1` = 11 AND `p`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -40,5 +40,5 @@ DELETE
 FROM
 	`Parent`
 WHERE
-	`Parent`.`Value1` = 11
+	`Parent`.`Value1` = 11 AND `Parent`.`Value1` IS NOT NULL
 
