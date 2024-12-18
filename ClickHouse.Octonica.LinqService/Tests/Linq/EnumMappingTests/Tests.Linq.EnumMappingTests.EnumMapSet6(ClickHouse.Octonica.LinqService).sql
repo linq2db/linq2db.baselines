@@ -28,7 +28,10 @@ ALTER TABLE
 UPDATE
 	IntValue = 4
 WHERE
-	ID = 101 AND IntValue = 3
+	ID = 101 AND
+	ID IS NOT NULL AND
+	IntValue = 3 AND
+	IntValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

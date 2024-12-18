@@ -74,7 +74,8 @@ SELECT
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	t1.GuidValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -216,7 +217,8 @@ SELECT
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+	t1.GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
+	t1.GuidValue IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -229,7 +231,8 @@ SELECT
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	t1.GuidValue IS NOT NULL
 LIMIT 1
 
 BeforeExecute

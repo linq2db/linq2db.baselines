@@ -36,7 +36,7 @@ SELECT
 FROM
 	Issue2546Class x
 WHERE
-	x.Value = 'Hello World'
+	x.Value = 'Hello World' AND x.Value IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

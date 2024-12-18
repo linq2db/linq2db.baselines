@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = 3 AND p.Value1 = 3
+	p.ParentID = 3 AND p.Value1 = 3 AND p.Value1 IS NOT NULL
 

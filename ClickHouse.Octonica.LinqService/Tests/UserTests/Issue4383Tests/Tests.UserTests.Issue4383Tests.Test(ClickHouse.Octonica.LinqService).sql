@@ -186,7 +186,7 @@ FROM
 				INNER JOIN PUMPLINE_CHAINS d ON t2.Id = d.LINE_ID
 				LEFT JOIN CHAINS a_Chain ON d.CHAIN_ID = a_Chain.CHAIN_ID
 	) m_1
-		INNER JOIN CHAINPOINTS d_1 ON m_1.Id = d_1.CHAIN_ID
+		INNER JOIN CHAINPOINTS d_1 ON m_1.Id = d_1.CHAIN_ID AND m_1.Id IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

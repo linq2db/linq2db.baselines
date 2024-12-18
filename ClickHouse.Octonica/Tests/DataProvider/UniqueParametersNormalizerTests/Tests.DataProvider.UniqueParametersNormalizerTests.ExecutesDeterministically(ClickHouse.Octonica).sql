@@ -60,7 +60,7 @@ FROM
 	table1 row1_1
 		INNER JOIN table3 row3 ON row1_1.Id = row3.Table1Id
 WHERE
-	row3.Field3 = 'test'
+	row3.Field3 = 'test' AND row3.Field3 IS NOT NULL
 UNION DISTINCT
 SELECT
 	row1_2.Id as Id
@@ -86,7 +86,7 @@ FROM
 	table1 row1_1
 		INNER JOIN table3 row3 ON row1_1.Id = row3.Table1Id
 WHERE
-	row3.Field3 = 'test'
+	row3.Field3 = 'test' AND row3.Field3 IS NOT NULL
 UNION DISTINCT
 SELECT
 	row1_2.Id as Id

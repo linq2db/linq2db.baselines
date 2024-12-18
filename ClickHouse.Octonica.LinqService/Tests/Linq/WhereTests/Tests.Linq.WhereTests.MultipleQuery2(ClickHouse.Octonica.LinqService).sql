@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.MiddleName = '123'
+	p.MiddleName = '123' AND p.MiddleName IS NOT NULL
 

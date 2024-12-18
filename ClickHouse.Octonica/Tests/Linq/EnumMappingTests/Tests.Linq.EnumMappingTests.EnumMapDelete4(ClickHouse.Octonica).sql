@@ -26,7 +26,10 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID = 101 AND BigIntValue = toInt64(12)
+	ID = 101 AND
+	ID IS NOT NULL AND
+	BigIntValue = toInt64(12) AND
+	BigIntValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

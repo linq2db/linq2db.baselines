@@ -37,7 +37,7 @@ SELECT
 FROM
 	DataClass m_1
 WHERE
-	m_1.Value = 'Frau'
+	m_1.Value = 'Frau' AND m_1.Value IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -178,7 +178,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -210,7 +211,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -239,7 +241,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -260,7 +263,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -281,7 +285,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -323,7 +328,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -355,7 +361,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -384,7 +391,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -405,7 +413,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -426,7 +435,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -613,7 +623,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -645,7 +655,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -674,7 +684,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -695,7 +705,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -716,7 +726,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -758,7 +768,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -790,7 +801,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -819,7 +831,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -840,7 +853,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -861,7 +875,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -903,7 +918,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -935,7 +951,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -964,7 +981,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -985,7 +1003,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1006,7 +1025,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1193,7 +1213,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1225,7 +1246,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1254,7 +1276,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1275,7 +1298,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1296,7 +1320,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38)
+	r.Column = toFloat32(-3.40282347E+38) AND r.ColumnNullable = toFloat32(3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1338,7 +1363,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1370,7 +1396,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1399,7 +1426,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1420,7 +1448,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1441,7 +1470,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38)
+	r.Column = toFloat32(3.40282347E+38) AND r.ColumnNullable = toFloat32(-3.40282347E+38) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1628,7 +1658,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1660,7 +1690,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1689,7 +1719,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1710,7 +1740,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1731,7 +1761,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat32(1.40129846E-45)
+	r.ColumnNullable = toFloat32(1.40129846E-45) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1773,7 +1803,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1805,7 +1836,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1834,7 +1866,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1855,7 +1888,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1876,7 +1910,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity)
+	r.Column = toFloat32(Infinity) AND r.ColumnNullable = toFloat32(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1918,7 +1953,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1950,7 +1986,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1979,7 +2016,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2000,7 +2038,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2021,7 +2060,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity)
+	r.Column = toFloat32(-Infinity) AND r.ColumnNullable = toFloat32(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2209,7 +2249,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2242,7 +2283,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2272,7 +2314,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2294,7 +2337,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2316,7 +2360,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2358,7 +2403,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2390,7 +2436,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2419,7 +2466,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2440,7 +2488,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2461,7 +2510,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2648,7 +2698,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2680,7 +2730,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2709,7 +2759,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2730,7 +2780,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2751,7 +2801,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2793,7 +2843,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2825,7 +2876,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2854,7 +2906,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2875,7 +2928,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2896,7 +2950,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2938,7 +2993,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2970,7 +3026,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2999,7 +3056,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3020,7 +3078,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3041,7 +3100,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3229,7 +3289,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3262,7 +3323,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3292,7 +3354,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3314,7 +3377,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3336,7 +3400,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toFloat64(-1.7976931348623157E+308) AND
-	r.ColumnNullable = toFloat64(1.7976931348623157E+308)
+	r.ColumnNullable = toFloat64(1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3378,7 +3443,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3410,7 +3476,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3439,7 +3506,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3460,7 +3528,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3481,7 +3550,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308)
+	r.Column = toFloat64(1.7976931348623157E+308) AND r.ColumnNullable = toFloat64(-1.7976931348623157E+308) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3668,7 +3738,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3700,7 +3770,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3729,7 +3799,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3750,7 +3820,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3771,7 +3841,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.ColumnNullable = toFloat64(-1.23)
+	r.ColumnNullable = toFloat64(-1.23) AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3813,7 +3883,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3845,7 +3916,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3874,7 +3946,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3895,7 +3968,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3916,7 +3990,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity)
+	r.Column = toFloat64(Infinity) AND r.ColumnNullable = toFloat64(-Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3958,7 +4033,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3990,7 +4066,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4019,7 +4096,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4040,7 +4118,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -4061,7 +4140,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity)
+	r.Column = toFloat64(-Infinity) AND r.ColumnNullable = toFloat64(Infinity) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

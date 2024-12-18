@@ -8,5 +8,5 @@ FROM
 	Parent p
 		LEFT JOIN Child ch ON 1=1
 WHERE
-	p.ParentID = ch.ParentID
+	p.ParentID = ch.ParentID AND ch.ParentID IS NOT NULL
 

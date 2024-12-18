@@ -59,7 +59,12 @@ FROM
 			WHEN d.DisTypeID = 2 THEN 2
 			WHEN d.DisTypeID = 4 THEN 4
 			WHEN d.DisTypeID = 5 THEN 5
-		END = a_DisType.DisTypeID
+		END = a_DisType.DisTypeID AND CASE
+			WHEN d.DisTypeID = 1 THEN 1
+			WHEN d.DisTypeID = 2 THEN 2
+			WHEN d.DisTypeID = 4 THEN 4
+			WHEN d.DisTypeID = 5 THEN 5
+		END IS NOT NULL
 		INNER JOIN JurTable j ON a_DisType.JurCode = j.JurCode
 
 BeforeExecute

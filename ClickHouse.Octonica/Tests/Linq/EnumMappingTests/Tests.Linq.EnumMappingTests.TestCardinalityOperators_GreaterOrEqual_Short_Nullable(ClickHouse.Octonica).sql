@@ -50,7 +50,7 @@ SELECT
 FROM
 	EnumCardinality t1
 WHERE
-	t1.Property4 >= 'C'
+	t1.Property4 >= 'C' AND t1.Property4 IS NOT NULL
 LIMIT 2
 
 BeforeExecute

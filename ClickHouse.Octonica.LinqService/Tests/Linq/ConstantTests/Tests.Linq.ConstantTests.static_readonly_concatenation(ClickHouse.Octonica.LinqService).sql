@@ -47,7 +47,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	concat(e.StringValue, '1') = 'StrValue1'
+	concat(e.StringValue, '1') = 'StrValue1' AND concat(e.StringValue, '1') IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

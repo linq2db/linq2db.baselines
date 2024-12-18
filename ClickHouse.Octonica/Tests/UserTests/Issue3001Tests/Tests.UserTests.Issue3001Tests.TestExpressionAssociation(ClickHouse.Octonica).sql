@@ -93,7 +93,7 @@ BeforeExecute
 SELECT
 	x.Id,
 	CASE
-		WHEN a_House.Levels > 1 THEN true
+		WHEN a_House.Levels > 1 AND a_House.Levels IS NOT NULL THEN true
 		ELSE false
 	END
 FROM

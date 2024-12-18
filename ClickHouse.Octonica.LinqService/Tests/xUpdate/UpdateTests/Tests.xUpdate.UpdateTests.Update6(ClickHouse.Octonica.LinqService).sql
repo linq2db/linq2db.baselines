@@ -20,7 +20,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = 1001 AND p.Value1 = 1
+	p.ParentID = 1001 AND p.Value1 = 1 AND p.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -40,5 +40,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = 1001 AND p.Value1 = 2
+	p.ParentID = 1001 AND p.Value1 = 2 AND p.Value1 IS NOT NULL
 

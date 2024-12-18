@@ -43,11 +43,12 @@ BeforeExecute
 SELECT
 	x.Id,
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN true
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN true
 		ELSE false
 	END,
 	CASE
-		WHEN x.StringProp = '2' THEN true
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN true
 		ELSE false
 	END,
 	x.StringProp,
@@ -58,15 +59,23 @@ FROM
 	ConditionalData x
 WHERE
 	endsWith(CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
-		WHEN x.StringProp = '2' THEN x.StringProp
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN '2'
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN x.StringProp
 		ELSE concat(x.StringProp, '2')
 	END, '2') AND
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
-		WHEN x.StringProp = '2' THEN 1
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN NULL
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 1
 		ELSE 2
-	END = 2
+	END = 2 AND
+	CASE
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN NULL
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 1
+		ELSE 2
+	END IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

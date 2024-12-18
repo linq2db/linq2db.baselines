@@ -273,20 +273,24 @@ SELECT
 	avgOrNull(g_1.DataValue),
 	avgOrNull(g_1.DataValue),
 	avgOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	avgOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	avgOrNull(DISTINCT g_1.DataValue),
 	avgOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	avgOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END)
 FROM

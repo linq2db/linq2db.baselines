@@ -4,7 +4,7 @@
 ALTER TABLE
 	GrandChild
 DELETE WHERE
-	ParentID >= 1000
+	ParentID >= 1000 AND ParentID IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -86,7 +86,7 @@ BeforeExecute
 ALTER TABLE
 	GrandChild
 DELETE WHERE
-	ParentID >= 1000
+	ParentID >= 1000 AND ParentID IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -111,7 +111,7 @@ FROM
 			x.Id1 = 1
 		LIMIT 1
 	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -140,7 +140,7 @@ FROM
 			x.Id1 = 1
 		LIMIT 1
 	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -174,7 +174,7 @@ FROM
 				LIMIT 2
 			) t1
 	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

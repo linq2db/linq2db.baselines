@@ -1809,9 +1809,9 @@ FROM
 				WHERE
 					master_1.Id1 > 5
 			) t1
-				INNER JOIN DetailClass d ON d.MasterId = t1.Id1
+				INNER JOIN DetailClass d ON d.MasterId = t1.Id1 AND d.MasterId IS NOT NULL
 	) m_1
-		INNER JOIN SubDetailClass d_1 ON d_1.DetailId = m_1.DetailId
+		INNER JOIN SubDetailClass d_1 ON d_1.DetailId = m_1.DetailId AND d_1.DetailId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1836,9 +1836,9 @@ FROM
 				WHERE
 					master_1.Id1 > 5
 			) t1
-				INNER JOIN DetailClass d ON d.MasterId = t1.Id1
+				INNER JOIN DetailClass d ON d.MasterId = t1.Id1 AND d.MasterId IS NOT NULL
 	) m_1
-		INNER JOIN SubDetailClass d_1 ON m_1.DetailId = d_1.DetailId
+		INNER JOIN SubDetailClass d_1 ON m_1.DetailId = d_1.DetailId AND d_1.DetailId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1855,7 +1855,7 @@ FROM
 		WHERE
 			master_1.Id1 > 5
 	) m_1
-		INNER JOIN DetailClass d ON d.MasterId = m_1.Id1
+		INNER JOIN DetailClass d ON d.MasterId = m_1.Id1 AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -178,7 +178,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -210,7 +211,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -239,7 +241,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -260,7 +263,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -281,7 +285,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -468,7 +473,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -500,7 +506,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -529,7 +536,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -550,7 +558,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -571,7 +580,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -758,7 +768,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -790,7 +801,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -819,7 +831,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -840,7 +853,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -861,7 +875,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1048,7 +1063,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1080,7 +1096,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1109,7 +1126,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1130,7 +1148,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1151,7 +1170,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1338,7 +1358,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1370,7 +1391,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1399,7 +1421,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1420,7 +1443,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1441,7 +1465,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06')
+	r.Column = toDate('1970-01-02') AND r.ColumnNullable = toDate('2149-06-06') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

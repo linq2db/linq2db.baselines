@@ -91,7 +91,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	x.Name = 'Special'
+	x.Name = 'Special' AND x.Name IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -149,7 +149,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	x.Name = 'Special'
+	x.Name = 'Special' AND x.Name IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

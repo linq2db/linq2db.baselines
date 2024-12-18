@@ -349,8 +349,8 @@ FROM
 				ChildEntitity d
 					LEFT JOIN SubEntitity a_SubItem ON d.SubId = a_SubItem.Id
 			WHERE
-				d.ParentId % 3 = 0
-		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
+				d.ParentId % 3 = 0 AND d.ParentId IS NOT NULL
+		) d_1 ON m_1.Id = d_1.ParentId AND d_1.ParentId IS NOT NULL AND d_1.rn <= 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -390,8 +390,8 @@ FROM
 				ChildEntitity d
 					LEFT JOIN SubEntitity a_SubItem ON d.SubId = a_SubItem.Id
 			WHERE
-				d.ParentId % 3 = 0
-		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
+				d.ParentId % 3 = 0 AND d.ParentId IS NOT NULL
+		) d_1 ON m_1.Id = d_1.ParentId AND d_1.ParentId IS NOT NULL AND d_1.rn <= 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
