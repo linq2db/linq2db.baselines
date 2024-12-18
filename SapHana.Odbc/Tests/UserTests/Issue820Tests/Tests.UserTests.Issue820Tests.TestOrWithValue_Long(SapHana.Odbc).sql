@@ -25,7 +25,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	? = "t1"."BigIntValue"
+	? = "t1"."BigIntValue" AND "t1"."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -87,7 +87,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = ?
+	"t1"."GuidValue" = ? AND "t1"."GuidValue" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -231,7 +231,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = ?
+	"t1"."GuidValue" = ? AND "t1"."GuidValue" IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -246,7 +246,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = ?
+	"t1"."GuidValue" = ? AND "t1"."GuidValue" IS NOT NULL
 LIMIT 1
 
 BeforeExecute

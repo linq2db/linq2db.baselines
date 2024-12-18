@@ -60,7 +60,8 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+				"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+				"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -79,7 +80,8 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+	"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+	"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -96,7 +98,8 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+				"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+				"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -115,7 +118,8 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+	"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+	"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -132,7 +136,8 @@ SELECT
 			FROM
 				"SampleClass" "sampleClass_1"
 			WHERE
-				"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+				"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+				"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -151,7 +156,8 @@ SELECT
 FROM
 	"SampleClass" "sampleClass_1"
 WHERE
-	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
+	"sampleClass_1"."Value" = ? AND "sampleClass_1"."Value" IS NOT NULL OR
+	"sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

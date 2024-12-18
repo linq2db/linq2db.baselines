@@ -68,7 +68,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = ?
+	"x"."FirstName" = ? AND "x"."FirstName" IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -104,7 +104,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = ?
+	"x"."FirstName" = ? AND "x"."FirstName" IS NOT NULL
 LIMIT 1
 
 BeforeExecute

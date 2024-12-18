@@ -134,7 +134,7 @@ FROM
 			FROM
 				"qwerty" "q"
 			WHERE
-				"q"."Id" = "x"."ref1"
+				"q"."Id" = "x"."ref1" AND "x"."ref1" IS NOT NULL
 			LIMIT 1
 		) "t1" ON 1=1
 LIMIT ?

@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	CAST(? AS Integer) = "t1"."SmallIntValue"
+	CAST(? AS Integer) = "t1"."SmallIntValue" AND "t1"."SmallIntValue" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

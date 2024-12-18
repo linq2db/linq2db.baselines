@@ -46,18 +46,20 @@ SET
 	"col3" = REPLACE("gt_s_one"."col3", 'auth.', ''),
 	"col4" = "gt_s_one"."col4",
 	"col5" = CASE
-		WHEN "gt_s_one"."col3" = 'empty' THEN '1'
+		WHEN "gt_s_one"."col3" = 'empty' AND "gt_s_one"."col3" IS NOT NULL
+			THEN '1'
 		ELSE '0'
 	END,
 	"col6" = (
 		SELECT
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				WHEN "gt_s_one"."col3" = 'empty' AND "gt_s_one"."col3" IS NOT NULL
+					THEN ''
 				ELSE CAST("y1_1"."id" AS NVarChar(11))
 			END
 		FROM
 			"gt_s_one" "x_1"
-				LEFT JOIN "access_mode" "y1_1" ON Upper(REPLACE("x_1"."col3", 'auth.', '')) = Upper("y1_1"."code") OR Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NULL AND Upper("y1_1"."code") IS NULL
+				LEFT JOIN "access_mode" "y1_1" ON Upper(REPLACE("x_1"."col3", 'auth.', '')) = Upper("y1_1"."code") AND Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NOT NULL AND Upper("y1_1"."code") IS NOT NULL OR Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NULL AND Upper("y1_1"."code") IS NULL
 		WHERE
 			"gt_s_one"."id" = "x_1"."id"
 	)
@@ -67,7 +69,7 @@ WHERE
 			*
 		FROM
 			"gt_s_one" "x"
-				LEFT JOIN "access_mode" "y1" ON Upper(REPLACE("x"."col3", 'auth.', '')) = Upper("y1"."code") OR Upper(REPLACE("x"."col3", 'auth.', '')) IS NULL AND Upper("y1"."code") IS NULL
+				LEFT JOIN "access_mode" "y1" ON Upper(REPLACE("x"."col3", 'auth.', '')) = Upper("y1"."code") AND Upper(REPLACE("x"."col3", 'auth.', '')) IS NOT NULL AND Upper("y1"."code") IS NOT NULL OR Upper(REPLACE("x"."col3", 'auth.', '')) IS NULL AND Upper("y1"."code") IS NULL
 		WHERE
 			"gt_s_one"."id" = "x"."id"
 	)

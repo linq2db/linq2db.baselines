@@ -23,6 +23,6 @@ WHERE
 				UNION ALL
 				SELECT 'n' FROM DUMMY) "x"
 		WHERE
-			Locate("t"."FirstName", "x"."item") - 1 > 0
+			Locate("t"."FirstName", "x"."item") - 1 > 0 AND Locate("t"."FirstName", "x"."item") IS NOT NULL
 	)
 

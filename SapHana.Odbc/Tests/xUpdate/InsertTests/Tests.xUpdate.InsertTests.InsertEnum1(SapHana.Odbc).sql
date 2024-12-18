@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Parent" "t1"
 WHERE
-	"t1"."ParentID" = ? AND "t1"."Value1" = ?
+	"t1"."ParentID" = ? AND "t1"."Value1" = ? AND "t1"."Value1" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

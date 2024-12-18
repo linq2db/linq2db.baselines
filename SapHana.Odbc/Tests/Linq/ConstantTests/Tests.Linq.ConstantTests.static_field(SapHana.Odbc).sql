@@ -57,7 +57,8 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."GuidValue" = ? AND "e"."GuidNullableValue" = ?
+	"e"."GuidValue" = ? AND "e"."GuidNullableValue" = ? AND
+	"e"."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

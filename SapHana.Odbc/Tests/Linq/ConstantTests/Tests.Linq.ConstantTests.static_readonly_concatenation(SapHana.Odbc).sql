@@ -55,7 +55,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."StringValue" || '1' = ?
+	"e"."StringValue" || '1' = ? AND "e"."StringValue" || '1' IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
