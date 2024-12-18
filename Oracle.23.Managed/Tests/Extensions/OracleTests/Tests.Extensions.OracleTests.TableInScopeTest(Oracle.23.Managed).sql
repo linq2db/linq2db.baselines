@@ -17,6 +17,7 @@ WHERE
 	c1."ParentID" = p."ParentID" AND
 	c_2."ParentID" = p."ParentID" AND
 	a_Parent."ParentID" > 0 AND
+	a_Parent."ParentID" IS NOT NULL AND
 	p1."ParentID" = p."ParentID" AND
 	c_3."ParentID" = p."ParentID"
 

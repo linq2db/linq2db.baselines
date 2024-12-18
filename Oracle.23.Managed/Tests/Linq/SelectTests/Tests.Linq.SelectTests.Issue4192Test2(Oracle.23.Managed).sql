@@ -39,7 +39,7 @@ SELECT
 FROM
 	"Issue4192TableNullable" i
 WHERE
-	i."ParentId" = :parentId
+	i."ParentId" = :parentId AND i."ParentId" IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

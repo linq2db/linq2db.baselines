@@ -244,7 +244,7 @@ SET
 	"Field4" = "Source"."source_field_1",
 	"Field5" = "Source"."source_As"
 WHERE
-	"Source"."source_field_1" = 214
+	"Source"."source_field_1" = 214 AND "Source"."source_field_1" IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

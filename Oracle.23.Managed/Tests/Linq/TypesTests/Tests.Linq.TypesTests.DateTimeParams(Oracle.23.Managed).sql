@@ -8,7 +8,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" > :dateTime
+	t."DateTimeValue" > :dateTime AND t."DateTimeValue" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
@@ -21,6 +21,6 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" > :dateTime
+	t."DateTimeValue" > :dateTime AND t."DateTimeValue" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 

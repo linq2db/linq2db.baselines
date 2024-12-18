@@ -264,7 +264,7 @@ VALUES
 	"Source"."source_insert",
 	"Source"."source_SELECT"
 )
- WHERE "Source"."source_insert" = 216
+ WHERE "Source"."source_insert" = 216 AND "Source"."source_insert" IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
