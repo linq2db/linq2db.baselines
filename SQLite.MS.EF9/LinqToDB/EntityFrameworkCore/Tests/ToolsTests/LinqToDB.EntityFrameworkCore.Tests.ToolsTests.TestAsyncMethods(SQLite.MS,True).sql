@@ -40,7 +40,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
 
 
 
@@ -61,7 +61,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
 
 
 
@@ -82,7 +82,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
 
 
 
@@ -90,13 +90,13 @@ WHERE
 
 SELECT
 	CASE
-		WHEN  EXISTS (
+		WHEN EXISTS(
 			SELECT
 				*
 			FROM
 				[Products] [e]
 			WHERE
-				([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
+				(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [e].[ProductName] LIKE '%a%' ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0

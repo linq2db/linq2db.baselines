@@ -27,9 +27,9 @@ FROM
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderID] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 WHERE
-	([m_1].[IsDeleted] = 0 OR [m_1].[IsDeleted] = 0) AND
-	([a_Product].[IsDeleted] = 0 OR [a_Product].[IsDeleted] = 0) AND
-	([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+	(NOT [m_1].[IsDeleted] OR NOT [m_1].[IsDeleted]) AND
+	(NOT [a_Product].[IsDeleted] OR NOT [a_Product].[IsDeleted]) AND
+	(NOT [d].[IsDeleted] OR NOT [d].[IsDeleted])
 
 
 
@@ -57,7 +57,7 @@ SELECT
 FROM
 	[Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]
 
 
 
