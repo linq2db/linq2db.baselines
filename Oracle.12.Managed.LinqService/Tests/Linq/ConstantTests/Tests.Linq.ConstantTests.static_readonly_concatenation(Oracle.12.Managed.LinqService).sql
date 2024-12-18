@@ -71,7 +71,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."StringValue" || '1' = :p
+	e."StringValue" || '1' = :p AND e."StringValue" || '1' IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

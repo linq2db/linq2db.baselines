@@ -26,7 +26,7 @@ USING (
 			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
 			LEFT JOIN "Person" Target_1
 				INNER JOIN "Patient" a_Patient_1 ON Target_1."PersonID" = a_Patient_1."PersonID"
-			ON Target_1."PersonID" = t1."PersonID" AND t1."FirstName" = 'first 4'
+			ON Target_1."PersonID" = t1."PersonID" AND Target_1."PersonID" IS NOT NULL AND t1."FirstName" = 'first 4'
 ) "Source"
 ON (Target."PersonID" = "Source"."source_ID" AND "Source"."source_FirstName" = 'first 4')
 
@@ -37,7 +37,9 @@ SET
 
 DELETE WHERE
 	"Source"."source_Patient_Diagnosis" = 'very sick' AND
-"Source"."target_Patient_Diagnosis" = 'very sick'
+"Source"."source_Patient_Diagnosis" IS NOT NULL AND
+"Source"."target_Patient_Diagnosis" = 'very sick' AND
+"Source"."target_Patient_Diagnosis" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

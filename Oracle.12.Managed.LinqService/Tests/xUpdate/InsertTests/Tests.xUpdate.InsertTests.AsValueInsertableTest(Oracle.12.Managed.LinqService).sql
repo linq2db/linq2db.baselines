@@ -58,7 +58,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x.ID = 123 AND x."FirstName" = 'John'
+	x.ID = 123 AND x."FirstName" = 'John' AND x."FirstName" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

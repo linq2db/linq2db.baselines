@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:param = t1."BigIntValue"
+	:param = t1."BigIntValue" AND t1."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

@@ -71,7 +71,8 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly
+	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly AND
+	e."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

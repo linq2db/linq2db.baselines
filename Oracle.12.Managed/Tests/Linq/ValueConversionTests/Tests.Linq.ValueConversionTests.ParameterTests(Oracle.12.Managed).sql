@@ -66,7 +66,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	:testedList = t."Value2"
+	:testedList = t."Value2" AND t."Value2" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
