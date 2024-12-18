@@ -122,7 +122,7 @@ FROM
 		FROM
 			"MasterClass" "m_1"
 	) "m_2"
-		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -147,7 +147,7 @@ FROM
 			FROM
 				"DetailClass" "d"
 			WHERE
-				"m_2"."Id1" = "d"."MasterId"
+				"m_2"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 			ORDER BY
 				"d"."DetailId"
 			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
@@ -183,7 +183,7 @@ FROM
 		FROM
 			"MasterClass" "t1"
 	) "m_1"
-		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

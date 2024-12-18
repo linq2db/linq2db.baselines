@@ -14,7 +14,7 @@ FROM
 		FETCH NEXT 3 ROWS ONLY
 	) "p_1"
 WHERE
-	"c_1"."ParentID" = "p_1"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID" AND "p_1"."ParentID" IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -32,5 +32,5 @@ FROM
 		OFFSET 12 ROWS FETCH NEXT 3 ROWS ONLY 
 	) "p_1"
 WHERE
-	"c_1"."ParentID" = "p_1"."ParentID"
+	"c_1"."ParentID" = "p_1"."ParentID" AND "p_1"."ParentID" IS NOT NULL
 

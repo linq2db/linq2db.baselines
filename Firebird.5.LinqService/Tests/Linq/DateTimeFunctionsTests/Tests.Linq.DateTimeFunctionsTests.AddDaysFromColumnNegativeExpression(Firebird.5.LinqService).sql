@@ -48,7 +48,8 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") < CAST('2018-01-02' AS TimeStamp)
+	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") < CAST('2018-01-02' AS TimeStamp) AND
+	DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4

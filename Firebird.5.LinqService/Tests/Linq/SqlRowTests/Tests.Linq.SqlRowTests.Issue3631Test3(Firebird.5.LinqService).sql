@@ -200,7 +200,10 @@ WHERE
 				UNION ALL
 				SELECT CAST('US' AS VARCHAR(2)), CAST('NY' AS VARCHAR(2)) FROM rdb$database) "t1"
 		WHERE
-			"x"."Country" = "t1"."Item1" AND "x"."State" = "t1"."Item2"
+			"x"."Country" = "t1"."Item1" AND
+			"t1"."Item1" IS NOT NULL AND
+			"x"."State" = "t1"."Item2" AND
+			"t1"."Item2" IS NOT NULL
 	)
 
 BeforeExecute

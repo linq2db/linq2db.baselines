@@ -701,9 +701,9 @@ FROM
 			"a_ObjectB"."Id"
 		FROM
 			"EntityA" "e"
-				INNER JOIN "EntityB" "a_ObjectB" ON "e".FK = "a_ObjectB"."Id"
+				INNER JOIN "EntityB" "a_ObjectB" ON "e".FK = "a_ObjectB"."Id" AND "e".FK IS NOT NULL
 	) "m_1"
-		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d".FK
+		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d".FK AND "d".FK IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -713,7 +713,7 @@ SELECT
 	"a_ObjectB"."Id"
 FROM
 	"EntityA" "e"
-		INNER JOIN "EntityB" "a_ObjectB" ON "e".FK = "a_ObjectB"."Id"
+		INNER JOIN "EntityB" "a_ObjectB" ON "e".FK = "a_ObjectB"."Id" AND "e".FK IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4

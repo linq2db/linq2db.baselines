@@ -84,7 +84,8 @@ WHERE
 					"g_1".GV
 			) "t1"
 		WHERE
-			"t".ID = "t1"."In_1" OR "t".ID IS NULL AND "t1"."In_1" IS NULL
+			"t".ID = "t1"."In_1" AND "t".ID IS NOT NULL AND "t1"."In_1" IS NOT NULL OR
+			"t".ID IS NULL AND "t1"."In_1" IS NULL
 	)
 
 BeforeExecute

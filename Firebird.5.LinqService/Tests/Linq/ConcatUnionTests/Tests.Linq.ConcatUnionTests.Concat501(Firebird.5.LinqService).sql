@@ -23,5 +23,5 @@ FROM
 			"c_2"."ParentID" = 3
 	) "c_3"
 WHERE
-	"c_3"."ParentID" = 1
+	"c_3"."ParentID" = 1 AND "c_3"."ParentID" IS NOT NULL
 
