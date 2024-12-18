@@ -58,5 +58,5 @@ FROM
 				[x].[ParentID] = [a_Children_1].[ParentID]
 		) [t2]
 WHERE
-	[t1].[COUNT_1] > 0
+	[t1].[COUNT_1] > 0 AND [t1].[COUNT_1] IS NOT NULL
 

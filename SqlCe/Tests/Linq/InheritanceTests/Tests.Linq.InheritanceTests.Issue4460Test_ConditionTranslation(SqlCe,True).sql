@@ -79,9 +79,9 @@ SELECT
 FROM
 	[Base] [e]
 WHERE
-	[e].[Code] = 'Child2' OR
-	[e].[Code] = 'Child' OR
-	[e].[Code] = 'BaseChild' OR
+	[e].[Code] = 'Child2' AND [e].[Code] IS NOT NULL OR
+	[e].[Code] = 'Child' AND [e].[Code] IS NOT NULL OR
+	[e].[Code] = 'BaseChild' AND [e].[Code] IS NOT NULL OR
 	[e].[Id] <> 0
 ORDER BY
 	[e].[Id]

@@ -20,6 +20,6 @@ FROM
 			FROM
 				[GrandChild] [g_1]
 			WHERE
-				[p].[ParentID] = [g_1].[ParentID]
+				[p].[ParentID] = [g_1].[ParentID] AND [g_1].[ParentID] IS NOT NULL
 		) [t2]
 

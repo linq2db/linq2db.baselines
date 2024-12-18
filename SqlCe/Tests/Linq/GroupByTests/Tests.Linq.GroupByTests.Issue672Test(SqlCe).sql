@@ -97,8 +97,10 @@ FROM
 		FROM
 			[Stone] [sG]
 		WHERE
-			[sG].[Enabled] = 1 AND [sG].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
-			Len([sG].[ImageFullUrl]) > 0
+			[sG].[Enabled] = 1 AND
+			[sG].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
+			Len([sG].[ImageFullUrl]) > 0 AND
+			Len([sG].[ImageFullUrl]) IS NOT NULL
 		GROUP BY
 			[sG].[Name]
 	) [sG_1]
@@ -114,6 +116,7 @@ FROM
 				[s].[Enabled] = 1 AND
 				[s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
 				Len([s].[ImageFullUrl]) > 0 AND
+				Len([s].[ImageFullUrl]) IS NOT NULL AND
 				[sG_1].[Name] = [s].[Name]
 		) [t1]
 

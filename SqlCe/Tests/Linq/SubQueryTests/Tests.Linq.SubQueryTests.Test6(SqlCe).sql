@@ -16,7 +16,10 @@ FROM
 			FROM
 				[GrandChild] [g_1]
 			WHERE
-				[g_1].[ChildID] = [c_1].[ChildID] AND [g_1].[GrandChildID] > 0
+				[g_1].[ChildID] = [c_1].[ChildID] AND
+				[g_1].[ChildID] IS NOT NULL AND
+				[g_1].[GrandChildID] > 0 AND
+				[g_1].[GrandChildID] IS NOT NULL
 		) [t1]
 		OUTER APPLY (
 			SELECT
@@ -24,7 +27,10 @@ FROM
 			FROM
 				[GrandChild] [g_2]
 			WHERE
-				[g_2].[ChildID] = [c_1].[ChildID] AND [g_2].[GrandChildID] > 0
+				[g_2].[ChildID] = [c_1].[ChildID] AND
+				[g_2].[ChildID] IS NOT NULL AND
+				[g_2].[GrandChildID] > 0 AND
+				[g_2].[GrandChildID] IS NOT NULL
 		) [t2]
 WHERE
 	[c_1].[ParentID] = @id

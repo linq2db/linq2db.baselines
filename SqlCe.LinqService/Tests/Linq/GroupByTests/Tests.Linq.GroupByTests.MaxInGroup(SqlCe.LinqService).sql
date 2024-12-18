@@ -355,11 +355,13 @@ FROM
 			MAX([g_1].[DataValue]) as [MAX_1],
 			MAX([g_1].[DataValue]) as [MAX_2],
 			MAX(CASE
-				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 AND CAST([g_1].[DataValue] AS Int) IS NOT NULL
+					THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MAX_3],
 			MAX(CASE
-				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 AND CAST([g_1].[DataValue] AS Int) IS NOT NULL
+					THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [MAX_4]
 		FROM
@@ -390,7 +392,8 @@ FROM
 					FROM
 						[AggregationData] [t_1]
 					WHERE
-						[g_2].[GroupId] = [t_1].[GroupId] AND CAST([t_1].[DataValue] AS Int) % 2 = 0
+						[g_2].[GroupId] = [t_1].[GroupId] AND CAST([t_1].[DataValue] AS Int) % 2 = 0 AND
+						CAST([t_1].[DataValue] AS Int) IS NOT NULL
 				) [t3]
 		) [t4]
 		OUTER APPLY (
@@ -403,7 +406,8 @@ FROM
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[g_2].[GroupId] = [t_2].[GroupId] AND CAST([t_2].[DataValue] AS Int) % 2 = 0
+						[g_2].[GroupId] = [t_2].[GroupId] AND CAST([t_2].[DataValue] AS Int) % 2 = 0 AND
+						CAST([t_2].[DataValue] AS Int) IS NOT NULL
 				) [t5]
 		) [t6]
 

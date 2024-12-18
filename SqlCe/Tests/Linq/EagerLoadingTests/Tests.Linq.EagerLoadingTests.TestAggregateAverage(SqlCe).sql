@@ -102,7 +102,7 @@ FROM
 			FROM
 				[DetailClass] [a_Details]
 			WHERE
-				[m_1].[Id1] = [a_Details].[MasterId]
+				[m_1].[Id1] = [a_Details].[MasterId] AND [a_Details].[MasterId] IS NOT NULL
 		) [t1]
 		OUTER APPLY (
 			SELECT
@@ -118,7 +118,7 @@ FROM
 							FROM
 								[DetailClass] [a_Details_1]
 							WHERE
-								[m_1].[Id1] = [a_Details_1].[MasterId]
+								[m_1].[Id1] = [a_Details_1].[MasterId] AND [a_Details_1].[MasterId] IS NOT NULL
 						) [t2]
 					ORDER BY
 						[t2].[DetailId]
@@ -126,7 +126,7 @@ FROM
 				) [t3]
 		) [t4]
 WHERE
-	[t1].[COUNT_1] > 1
+	[t1].[COUNT_1] > 1 AND [t1].[COUNT_1] IS NOT NULL
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -145,7 +145,7 @@ FROM
 		FROM
 			[MasterClass] [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

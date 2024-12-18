@@ -86,7 +86,7 @@ SELECT
 	[t1].[Name]
 FROM
 	[Issue2933Car] [x]
-		LEFT JOIN [Issue2933Person] [a_Person] ON [x].[PersonId] = [a_Person].[Id]
+		LEFT JOIN [Issue2933Person] [a_Person] ON [x].[PersonId] = [a_Person].[Id] AND [x].[PersonId] IS NOT NULL
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_PetIds].[Name]

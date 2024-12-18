@@ -41,7 +41,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + '1' = @p
+	[e].[StringValue] + '1' = @p AND [e].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

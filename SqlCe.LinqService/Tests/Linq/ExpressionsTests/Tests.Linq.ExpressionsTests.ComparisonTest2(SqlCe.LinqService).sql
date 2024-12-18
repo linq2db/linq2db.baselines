@@ -43,7 +43,10 @@ SELECT
 							)
 					) [t6] ON 1=1
 			WHERE
-				[t3].[COUNT_1] = 0 AND [t6].[COUNT_1] = 0
+				[t3].[COUNT_1] = 0 AND
+				[t3].[COUNT_1] IS NOT NULL AND
+				[t6].[COUNT_1] = 0 AND
+				[t6].[COUNT_1] IS NOT NULL
 		)
 			THEN 1
 		ELSE 0

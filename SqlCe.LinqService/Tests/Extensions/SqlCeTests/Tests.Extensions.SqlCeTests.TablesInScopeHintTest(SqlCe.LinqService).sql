@@ -18,6 +18,7 @@ WHERE
 	[c_1].[ParentID] = [p].[PersonID] AND
 	[c_2].[ParentID] = [p].[PersonID] AND
 	[a_Parent].[ParentID] > 0 AND
+	[a_Parent].[ParentID] IS NOT NULL AND
 	[p1].[ParentID] = [p].[PersonID] AND
 	[c_3].[ParentID] = [p].[PersonID]
 

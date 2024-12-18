@@ -111,8 +111,8 @@ SELECT
 	[a_Table3].[ID] as [ID_1]
 FROM
 	[Table1] [r]
-		LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID]
-		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
+		LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID] AND [r].[ID2] IS NOT NULL
+		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID] AND [a_Table2].[ID3] IS NOT NULL
 WHERE
 	EXISTS(
 		SELECT
@@ -120,7 +120,8 @@ WHERE
 		FROM
 			[Table4] [id]
 		WHERE
-			[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
+			[a_Table3].[ID] = [id].[ID3] AND [id].[ID3] IS NOT NULL AND
+			[id].[ID] = [r].[ID]
 	)
 
 BeforeExecute
