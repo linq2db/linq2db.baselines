@@ -230,9 +230,9 @@ FROM
 				WHERE
 					m_1.Id > 1
 			) t1
-				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
+				INNER JOIN SubItem1 d ON t1.Id = d.ParentId AND d.ParentId IS NOT NULL
 	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId AND d_1.ParentId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -252,7 +252,7 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId AND d.ParentId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -272,7 +272,7 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
+		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId AND d.ParentId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -310,9 +310,9 @@ FROM
 				WHERE
 					m_1.Id > 1
 			) t1
-				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
+				INNER JOIN SubItem1 d ON t1.Id = d.ParentId AND d.ParentId IS NOT NULL
 	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId AND d_1.ParentId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -332,7 +332,7 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId AND d.ParentId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

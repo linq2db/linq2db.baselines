@@ -40,7 +40,8 @@ FROM
 		FROM
 			Issue3761Table n
 		WHERE
-			n.DATUM < toDateTime64('2019-01-01 00:00:00.0000000', 7)
+			n.DATUM < toDateTime64('2019-01-01 00:00:00.0000000', 7) AND
+			n.DATUM IS NOT NULL
 	) t1
 GROUP BY
 	t1.Year_1,

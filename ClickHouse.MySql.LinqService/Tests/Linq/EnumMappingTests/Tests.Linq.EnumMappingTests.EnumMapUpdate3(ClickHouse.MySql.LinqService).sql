@@ -28,7 +28,10 @@ ALTER TABLE
 UPDATE
 	BigIntValue = toInt64(12)
 WHERE
-	ID = 101 AND BigIntValue = toInt64(11)
+	ID = 101 AND
+	ID IS NOT NULL AND
+	BigIntValue = toInt64(11) AND
+	BigIntValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

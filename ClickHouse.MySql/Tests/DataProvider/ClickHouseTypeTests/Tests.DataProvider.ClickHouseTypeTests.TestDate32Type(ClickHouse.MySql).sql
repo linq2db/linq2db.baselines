@@ -194,7 +194,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -226,7 +227,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -255,7 +257,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -284,7 +287,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -313,7 +317,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -516,7 +521,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -548,7 +554,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -577,7 +584,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -606,7 +614,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -635,7 +644,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -838,7 +848,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -870,7 +881,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -899,7 +911,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -928,7 +941,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -957,7 +971,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1160,7 +1175,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1192,7 +1208,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1221,7 +1238,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1250,7 +1268,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -1279,7 +1298,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1482,7 +1502,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1514,7 +1535,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1543,7 +1565,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1572,7 +1595,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -1601,7 +1625,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1804,7 +1829,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1836,7 +1862,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1865,7 +1892,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1894,7 +1922,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -1923,7 +1952,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31')
+	r.Column = toDate32('1900-01-01') AND r.ColumnNullable = toDate32('2299-12-31') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

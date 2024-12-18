@@ -42,7 +42,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	concat(e.StringValue, '1') = 'StrValue1'
+	concat(e.StringValue, '1') = 'StrValue1' AND e.StringValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

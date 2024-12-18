@@ -6,7 +6,7 @@ SELECT DISTINCT
 	x.ChildID
 FROM
 	Child x
-		INNER JOIN Parent u ON x.ParentID = u.ParentID AND u.Value1 > 5
+		INNER JOIN Parent u ON x.ParentID = u.ParentID AND u.Value1 > 5 AND u.Value1 IS NOT NULL
 WHERE
 	x.ChildID > 30
 
@@ -18,7 +18,7 @@ SELECT DISTINCT
 	x.ChildID
 FROM
 	Child x
-		INNER JOIN Parent u ON x.ParentID = u.ParentID AND u.Value1 > 5
+		INNER JOIN Parent u ON x.ParentID = u.ParentID AND u.Value1 > 5 AND u.Value1 IS NOT NULL
 WHERE
 	x.ChildID > 30
 

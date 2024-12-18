@@ -1808,7 +1808,7 @@ FROM
 			) t2
 				CROSS JOIN DetailClass d
 	) m_1
-		INNER JOIN SubDetailClass d_1 ON d_1.DetailId = m_1.DetailId
+		INNER JOIN SubDetailClass d_1 ON d_1.DetailId = m_1.DetailId AND d_1.DetailId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1832,7 +1832,7 @@ FROM
 			) t2
 				CROSS JOIN DetailClass d
 	) m_1
-		INNER JOIN SubDetailClass d_1 ON m_1.DetailId = d_1.DetailId
+		INNER JOIN SubDetailClass d_1 ON m_1.DetailId = d_1.DetailId AND d_1.DetailId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

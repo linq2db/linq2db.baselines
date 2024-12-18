@@ -28,7 +28,7 @@ SELECT
 FROM
 	Parent t1
 WHERE
-	t1.ParentID = 1001 AND t1.Value1 = 2
+	t1.ParentID = 1001 AND t1.Value1 = 2 AND t1.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

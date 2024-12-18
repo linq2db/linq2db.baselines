@@ -39,7 +39,7 @@ WITH RECURSIVE d AS
 		t1.FullName as Dto_FullName
 	FROM
 		Dto t1
-			INNER JOIN d recur ON recur.Dto_id = t1.parent_id
+			INNER JOIN d recur ON recur.Dto_id = t1.parent_id AND t1.parent_id IS NOT NULL
 )
 SELECT
 	t2.Dto_id,

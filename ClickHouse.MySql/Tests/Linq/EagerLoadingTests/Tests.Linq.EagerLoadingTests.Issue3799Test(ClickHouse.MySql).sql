@@ -54,9 +54,9 @@ FROM
 						a_Children.ParentId as ParentId
 					FROM
 						Test3799Item a_Children
-				) t1 ON item_1.Id = t1.ParentId AND t1.rn <= 1
+				) t1 ON item_1.Id = t1.ParentId AND t1.ParentId IS NOT NULL AND t1.rn <= 1
 	) m_1
-		INNER JOIN Test3799Item d ON m_1.Children = d.ParentId OR m_1.Children IS NULL AND d.ParentId IS NULL
+		INNER JOIN Test3799Item d ON m_1.Children = d.ParentId AND m_1.Children IS NOT NULL AND d.ParentId IS NOT NULL OR m_1.Children IS NULL AND d.ParentId IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -75,7 +75,7 @@ FROM
 				a_Children.ParentId as ParentId
 			FROM
 				Test3799Item a_Children
-		) t1 ON item_1.Id = t1.ParentId AND t1.rn <= 1
+		) t1 ON item_1.Id = t1.ParentId AND t1.ParentId IS NOT NULL AND t1.rn <= 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

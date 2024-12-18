@@ -44,7 +44,7 @@ SELECT
 FROM
 	BackgroundTask task_1
 WHERE
-	task_1.PersonID = 1
+	task_1.PersonID = 1 AND task_1.PersonID IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
