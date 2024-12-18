@@ -4,7 +4,7 @@
 DELETE FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -30,7 +30,7 @@ SELECT
 FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -38,5 +38,5 @@ BeforeExecute
 DELETE FROM
 	"Parent" p
 WHERE
-	p."Value1" = 11
+	p."Value1" = 11 AND p."Value1" IS NOT NULL
 

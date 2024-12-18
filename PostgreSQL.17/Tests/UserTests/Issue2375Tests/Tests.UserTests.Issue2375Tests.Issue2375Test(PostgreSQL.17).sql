@@ -132,7 +132,7 @@ FROM
 	) m_1
 		INNER JOIN "InventoryResourceDTO" d
 			INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id"
-		ON m_1."Status" = d."Status" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
+		ON m_1."Status" = d."Status" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" AND m_1."ResourceLabel" IS NOT NULL AND lc_1."ResourceLabel" IS NOT NULL OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
 
 BeforeExecute
 DisposeTransaction

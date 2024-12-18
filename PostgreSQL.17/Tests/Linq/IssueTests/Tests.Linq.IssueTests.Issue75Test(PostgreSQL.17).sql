@@ -56,5 +56,5 @@ FROM
 	"Child" c_1
 		INNER JOIN "Parent" parent_1 ON c_1."ParentID" = parent_1."ParentID"
 WHERE
-	parent_1."Value1" < 7
+	parent_1."Value1" < 7 AND parent_1."Value1" IS NOT NULL
 

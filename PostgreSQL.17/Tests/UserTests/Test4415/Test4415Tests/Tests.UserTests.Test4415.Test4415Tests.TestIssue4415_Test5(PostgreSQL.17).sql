@@ -55,7 +55,8 @@ WHERE
 					x_1."Name"
 			) t1
 		WHERE
-			x."LanguageID" = t1.c1 OR x."LanguageID" IS NULL AND t1.c1 IS NULL
+			x."LanguageID" = t1.c1 AND x."LanguageID" IS NOT NULL AND t1.c1 IS NOT NULL OR
+			x."LanguageID" IS NULL AND t1.c1 IS NULL
 	)
 
 BeforeExecute

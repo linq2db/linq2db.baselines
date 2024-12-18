@@ -15,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1."DateTimeValue" = '2009-09-27'::date
+	t1."DateTimeValue" = '2009-09-27'::date AND t1."DateTimeValue" IS NOT NULL
 

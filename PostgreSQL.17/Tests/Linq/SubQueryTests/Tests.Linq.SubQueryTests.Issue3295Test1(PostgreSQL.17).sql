@@ -29,5 +29,5 @@ FROM
 				) t1 ON 1=1
 	) x_1
 WHERE
-	x_1."StatusName" = 'abc'
+	x_1."StatusName" = 'abc' AND x_1."StatusName" IS NOT NULL
 

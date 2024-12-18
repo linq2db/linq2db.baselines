@@ -243,7 +243,7 @@ USING (
 )
 ON ("Target"."Id" = "Source".source_order)
 
-WHEN MATCHED AND "Source".source_field_1 = 214 THEN
+WHEN MATCHED AND "Source".source_field_1 = 214 AND "Source".source_field_1 IS NOT NULL THEN
 UPDATE
 SET
 	"Field1" = "Source".source_delete,

@@ -18,6 +18,6 @@ WHERE
 				('John'), ('Not John')
 			) y(item)
 		WHERE
-			y.item = x."FirstName"
+			y.item = x."FirstName" AND y.item IS NOT NULL
 	)
 

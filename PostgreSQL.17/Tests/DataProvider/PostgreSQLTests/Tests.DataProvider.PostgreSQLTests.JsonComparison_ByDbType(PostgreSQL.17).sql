@@ -33,7 +33,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Text"::jsonb = r."Json"::jsonb OR r."Text" IS NULL AND r."Json" IS NULL
+	r."Text"::jsonb = r."Json"::jsonb AND r."Text" IS NOT NULL AND r."Json" IS NOT NULL OR
+	r."Text" IS NULL AND r."Json" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -43,7 +44,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Text"::jsonb = r."Jsonb" OR r."Text" IS NULL AND r."Jsonb" IS NULL
+	r."Text"::jsonb = r."Jsonb" AND r."Text" IS NOT NULL AND r."Jsonb" IS NOT NULL OR
+	r."Text" IS NULL AND r."Jsonb" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -53,7 +55,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Json"::jsonb = r."Json"::jsonb OR r."Json" IS NULL AND r."Json" IS NULL
+	r."Json"::jsonb = r."Json"::jsonb AND r."Json" IS NOT NULL AND r."Json" IS NOT NULL OR
+	r."Json" IS NULL AND r."Json" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -63,7 +66,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Json"::jsonb = r."Jsonb" OR r."Json" IS NULL AND r."Jsonb" IS NULL
+	r."Json"::jsonb = r."Jsonb" AND r."Json" IS NOT NULL AND r."Jsonb" IS NOT NULL OR
+	r."Json" IS NULL AND r."Jsonb" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -73,7 +77,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Jsonb" = r."Jsonb" OR r."Jsonb" IS NULL AND r."Jsonb" IS NULL
+	r."Jsonb" = r."Jsonb" AND r."Jsonb" IS NOT NULL AND r."Jsonb" IS NOT NULL OR
+	r."Jsonb" IS NULL AND r."Jsonb" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -83,7 +88,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Json"::jsonb = r."Text"::jsonb OR r."Json" IS NULL AND r."Text" IS NULL
+	r."Json"::jsonb = r."Text"::jsonb AND r."Json" IS NOT NULL AND r."Text" IS NOT NULL OR
+	r."Json" IS NULL AND r."Text" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -93,7 +99,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Jsonb" = r."Text"::jsonb OR r."Jsonb" IS NULL AND r."Text" IS NULL
+	r."Jsonb" = r."Text"::jsonb AND r."Jsonb" IS NOT NULL AND r."Text" IS NOT NULL OR
+	r."Jsonb" IS NULL AND r."Text" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -103,7 +110,8 @@ SELECT
 FROM
 	"JsonComparisonTable2" r
 WHERE
-	r."Jsonb" = r."Json"::jsonb OR r."Jsonb" IS NULL AND r."Json" IS NULL
+	r."Jsonb" = r."Json"::jsonb AND r."Jsonb" IS NOT NULL AND r."Json" IS NOT NULL OR
+	r."Jsonb" IS NULL AND r."Json" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

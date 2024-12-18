@@ -543,8 +543,8 @@ SELECT
 	"a_ObjectD"."FK"
 FROM
 	"EntityMA" m_1
-		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK"
-		LEFT JOIN "EntityMD" "a_ObjectD" ON d."FKD" = "a_ObjectD"."Id"
+		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK" AND d."FK" IS NOT NULL
+		LEFT JOIN "EntityMD" "a_ObjectD" ON d."FKD" = "a_ObjectD"."Id" AND d."FKD" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

@@ -69,7 +69,8 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn
+	r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn AND
+	r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
