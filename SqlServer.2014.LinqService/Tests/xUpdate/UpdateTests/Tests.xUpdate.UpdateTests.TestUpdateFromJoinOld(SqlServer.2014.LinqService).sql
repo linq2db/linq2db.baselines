@@ -49,11 +49,11 @@ SET
 	[x].[col2] = [x].[col2],
 	[x].[col3] = REPLACE([x].[col3], N'auth.', N''),
 	[x].[col4] = [x].[col4],
-	[x].[col5] = IIF([x].[col3] = N'empty', N'1', N'0'),
-	[x].[col6] = IIF([x].[col3] = N'empty', N'', CAST([y1].[id] AS NVarChar(11)))
+	[x].[col5] = IIF([x].[col3] = N'empty' AND [x].[col3] IS NOT NULL, N'1', N'0'),
+	[x].[col6] = IIF([x].[col3] = N'empty' AND [x].[col3] IS NOT NULL, N'', CAST([y1].[id] AS NVarChar(11)))
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
+		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) AND Upper(REPLACE([x].[col3], N'auth.', N'')) IS NOT NULL AND Upper([y1].[code]) IS NOT NULL OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
 
 BeforeExecute
 -- SqlServer.2014

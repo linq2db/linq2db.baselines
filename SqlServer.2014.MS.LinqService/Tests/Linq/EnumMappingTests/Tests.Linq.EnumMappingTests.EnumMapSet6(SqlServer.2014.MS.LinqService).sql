@@ -31,7 +31,10 @@ UPDATE
 SET
 	[IntValue] = 4
 WHERE
-	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
+	[LinqDataTypes].[ID] = 101 AND
+	[LinqDataTypes].[ID] IS NOT NULL AND
+	[LinqDataTypes].[IntValue] = 3 AND
+	[LinqDataTypes].[IntValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

@@ -10,5 +10,6 @@ GROUP BY
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]
 HAVING
-	COUNT(IIF([g_1].[ChildID] >= 20, 1, NULL)) > 2
+	COUNT(IIF([g_1].[ChildID] >= 20 AND [g_1].[ChildID] IS NOT NULL, 1, NULL)) > 2 AND
+	COUNT(IIF([g_1].[ChildID] >= 20 AND [g_1].[ChildID] IS NOT NULL, 1, NULL)) IS NOT NULL
 

@@ -15,6 +15,6 @@ WHERE
 			[Child] [t]
 				LEFT JOIN [Parent] [i] ON [t].[ParentID] = [i].[ParentID]
 		WHERE
-			[t].[ChildID] = [g_1].[ChildID]
+			[t].[ChildID] = [g_1].[ChildID] AND [g_1].[ChildID] IS NOT NULL
 	)
 

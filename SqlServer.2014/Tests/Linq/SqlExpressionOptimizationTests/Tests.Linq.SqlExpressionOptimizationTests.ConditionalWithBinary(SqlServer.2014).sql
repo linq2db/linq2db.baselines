@@ -1352,7 +1352,7 @@ FROM
 	[OptimizationData] [x]
 WHERE
 	CASE
-		WHEN [x].[StringValueNullable] IS NOT NULL THEN IIF([x].[StringValueNullable] = N'2', 2, 10)
+		WHEN [x].[StringValueNullable] IS NOT NULL THEN IIF([x].[StringValueNullable] = N'2' AND [x].[StringValueNullable] IS NOT NULL, 2, 10)
 		WHEN [x].[StringValueNullable] IS NULL THEN 3
 		ELSE 1
 	END = 2
@@ -1387,7 +1387,7 @@ FROM
 	[OptimizationData] [x_with_not]
 WHERE
 	CASE
-		WHEN [x_with_not].[StringValueNullable] IS NOT NULL THEN IIF([x_with_not].[StringValueNullable] = N'2', 2, 10)
+		WHEN [x_with_not].[StringValueNullable] IS NOT NULL THEN IIF([x_with_not].[StringValueNullable] = N'2' AND [x_with_not].[StringValueNullable] IS NOT NULL, 2, 10)
 		WHEN [x_with_not].[StringValueNullable] IS NULL THEN 3
 		ELSE 1
 	END <> 2
@@ -1422,7 +1422,7 @@ FROM
 	[OptimizationData] [swap]
 WHERE
 	2 = CASE
-		WHEN [swap].[StringValueNullable] IS NOT NULL THEN IIF([swap].[StringValueNullable] = N'2', 2, 10)
+		WHEN [swap].[StringValueNullable] IS NOT NULL THEN IIF([swap].[StringValueNullable] = N'2' AND [swap].[StringValueNullable] IS NOT NULL, 2, 10)
 		WHEN [swap].[StringValueNullable] IS NULL THEN 3
 		ELSE 1
 	END
@@ -1457,7 +1457,7 @@ FROM
 	[OptimizationData] [swap_with_not]
 WHERE
 	2 <> CASE
-		WHEN [swap_with_not].[StringValueNullable] IS NOT NULL THEN IIF([swap_with_not].[StringValueNullable] = N'2', 2, 10)
+		WHEN [swap_with_not].[StringValueNullable] IS NOT NULL THEN IIF([swap_with_not].[StringValueNullable] = N'2' AND [swap_with_not].[StringValueNullable] IS NOT NULL, 2, 10)
 		WHEN [swap_with_not].[StringValueNullable] IS NULL THEN 3
 		ELSE 1
 	END

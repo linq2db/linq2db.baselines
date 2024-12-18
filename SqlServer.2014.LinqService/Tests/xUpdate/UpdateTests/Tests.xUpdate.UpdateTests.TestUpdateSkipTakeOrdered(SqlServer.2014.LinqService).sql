@@ -204,7 +204,7 @@ FROM
 		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 	) [t1]
 WHERE
-	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
+	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] AND [u].[Value1] IS NOT NULL AND [t1].[Value1] IS NOT NULL OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
