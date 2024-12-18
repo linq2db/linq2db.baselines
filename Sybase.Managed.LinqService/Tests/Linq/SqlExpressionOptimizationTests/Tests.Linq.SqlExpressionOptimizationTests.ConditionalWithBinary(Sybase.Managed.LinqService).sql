@@ -1518,7 +1518,8 @@ FROM
 WHERE
 	CASE
 		WHEN [x].[StringValueNullable] IS NOT NULL THEN CASE
-			WHEN [x].[StringValueNullable] = '2' THEN 2
+			WHEN [x].[StringValueNullable] = '2' AND [x].[StringValueNullable] IS NOT NULL
+				THEN 2
 			ELSE 10
 		END
 		WHEN [x].[StringValueNullable] IS NULL THEN 3
@@ -1554,7 +1555,8 @@ FROM
 WHERE
 	CASE
 		WHEN [x_with_not].[StringValueNullable] IS NOT NULL THEN CASE
-			WHEN [x_with_not].[StringValueNullable] = '2' THEN 2
+			WHEN [x_with_not].[StringValueNullable] = '2' AND [x_with_not].[StringValueNullable] IS NOT NULL
+				THEN 2
 			ELSE 10
 		END
 		WHEN [x_with_not].[StringValueNullable] IS NULL THEN 3
@@ -1590,7 +1592,8 @@ FROM
 WHERE
 	2 = CASE
 		WHEN [swap].[StringValueNullable] IS NOT NULL THEN CASE
-			WHEN [swap].[StringValueNullable] = '2' THEN 2
+			WHEN [swap].[StringValueNullable] = '2' AND [swap].[StringValueNullable] IS NOT NULL
+				THEN 2
 			ELSE 10
 		END
 		WHEN [swap].[StringValueNullable] IS NULL THEN 3
@@ -1626,7 +1629,8 @@ FROM
 WHERE
 	2 <> CASE
 		WHEN [swap_with_not].[StringValueNullable] IS NOT NULL THEN CASE
-			WHEN [swap_with_not].[StringValueNullable] = '2' THEN 2
+			WHEN [swap_with_not].[StringValueNullable] = '2' AND [swap_with_not].[StringValueNullable] IS NOT NULL
+				THEN 2
 			ELSE 10
 		END
 		WHEN [swap_with_not].[StringValueNullable] IS NULL THEN 3

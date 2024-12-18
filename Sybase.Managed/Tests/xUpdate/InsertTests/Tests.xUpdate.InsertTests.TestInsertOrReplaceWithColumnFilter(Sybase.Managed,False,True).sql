@@ -72,7 +72,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -133,7 +133,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

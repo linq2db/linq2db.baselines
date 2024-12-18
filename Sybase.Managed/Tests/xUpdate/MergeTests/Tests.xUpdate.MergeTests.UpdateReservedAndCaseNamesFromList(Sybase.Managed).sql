@@ -255,7 +255,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[source_in])
 
-WHEN MATCHED AND [Source].[source_with] = 214 THEN
+WHEN MATCHED AND [Source].[source_with] = 214 AND [Source].[source_with] IS NOT NULL THEN
 UPDATE
 SET
 	[Field1] = [Source].[source_join],

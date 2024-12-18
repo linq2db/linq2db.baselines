@@ -17,6 +17,8 @@ FROM
 	) [sub]
 		LEFT JOIN [Parent] [a_Parent] ON [sub].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[sub].[ChildID] > -1 AND [sub].[ParentID_1] = [a_Parent].[ParentID] AND
-	([sub].[Value1] = [a_Parent].[Value1] OR [sub].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
+	[sub].[ChildID] > -1 AND
+	[sub].[ParentID_1] = [a_Parent].[ParentID] AND
+	[a_Parent].[ParentID] IS NOT NULL AND
+	([sub].[Value1] = [a_Parent].[Value1] AND [sub].[Value1] IS NOT NULL AND [a_Parent].[Value1] IS NOT NULL OR [sub].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
 

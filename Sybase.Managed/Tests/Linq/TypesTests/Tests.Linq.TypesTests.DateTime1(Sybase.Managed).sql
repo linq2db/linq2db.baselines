@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	CONVERT(Date, [t].[DateTimeValue]) > @Date
+	CONVERT(Date, [t].[DateTimeValue]) > @Date AND CONVERT(Date, [t].[DateTimeValue]) IS NOT NULL
 

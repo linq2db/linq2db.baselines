@@ -243,7 +243,7 @@ FROM
 			[a_Client].[Name]
 		FROM
 			[Issue4620Table] [b]
-				INNER JOIN [Issue4620Client] [a_Client] ON [b].[IdClient] = [a_Client].[Id]
+				INNER JOIN [Issue4620Client] [a_Client] ON [b].[IdClient] = [a_Client].[Id] AND [b].[IdClient] IS NOT NULL
 		WHERE
 			[b].[IdClient] IS NOT NULL
 		UNION ALL
@@ -252,7 +252,7 @@ FROM
 			[a_Client_1].[Name]
 		FROM
 			[Issue4620Table] [b_1]
-				INNER JOIN [Issue4620Contract] [a_Contract] ON [b_1].[IdContract] = [a_Contract].[Id]
+				INNER JOIN [Issue4620Contract] [a_Contract] ON [b_1].[IdContract] = [a_Contract].[Id] AND [b_1].[IdContract] IS NOT NULL
 				INNER JOIN [Issue4620Client] [a_Client_1] ON [a_Contract].[IdClient] = [a_Client_1].[Id]
 		WHERE
 			[b_1].[IdContract] IS NOT NULL
