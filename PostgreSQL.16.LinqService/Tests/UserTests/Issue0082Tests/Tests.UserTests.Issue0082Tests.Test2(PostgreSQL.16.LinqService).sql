@@ -61,5 +61,5 @@ FROM
 			"Parent" o
 	) x
 WHERE
-	x."COUNT_1" > 0
+	x."COUNT_1" > 0 AND x."COUNT_1" IS NOT NULL
 

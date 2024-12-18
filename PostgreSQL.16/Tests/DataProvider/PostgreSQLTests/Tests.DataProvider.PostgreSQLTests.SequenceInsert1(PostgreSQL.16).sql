@@ -9,7 +9,7 @@ BeforeExecute
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"SequenceTest1" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -57,5 +57,5 @@ SELECT
 FROM
 	"SequenceTest1" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 

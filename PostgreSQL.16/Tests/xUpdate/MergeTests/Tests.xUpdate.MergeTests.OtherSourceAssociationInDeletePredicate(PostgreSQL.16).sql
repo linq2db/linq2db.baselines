@@ -18,7 +18,7 @@ USING (
 	FROM
 		"Patient" t1
 			LEFT JOIN "Person" "a_Person" ON t1."PersonID" = "a_Person"."PersonID"
-			LEFT JOIN "Patient" "Target_1" ON "Target_1"."PersonID" = t1."PersonID" AND t1."Diagnosis" LIKE '%very%' ESCAPE '~'
+			LEFT JOIN "Patient" "Target_1" ON "Target_1"."PersonID" = t1."PersonID" AND "Target_1"."PersonID" IS NOT NULL AND t1."Diagnosis" LIKE '%very%' ESCAPE '~'
 			LEFT JOIN "Person" "a_Person_1" ON "Target_1"."PersonID" = "a_Person_1"."PersonID"
 ) "Source"
 (
@@ -30,7 +30,9 @@ USING (
 ON ("Target"."PersonID" = "Source"."source_PersonID" AND
 "Source"."source_Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND "Source"."source_Person_FirstName" = 'first 4' AND
-"Source"."target_Person_FirstName" = 'first 4' THEN DELETE
+"Source"."source_Person_FirstName" IS NOT NULL AND
+"Source"."target_Person_FirstName" = 'first 4' AND
+"Source"."target_Person_FirstName" IS NOT NULL THEN DELETE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

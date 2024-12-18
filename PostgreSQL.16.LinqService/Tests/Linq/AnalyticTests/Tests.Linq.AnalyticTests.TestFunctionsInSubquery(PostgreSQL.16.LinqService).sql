@@ -20,5 +20,5 @@ FROM
 			) sq
 	) sq_1
 WHERE
-	sq_1."Sum_1" > 0
+	sq_1."Sum_1" > 0 AND sq_1."Sum_1" IS NOT NULL
 

@@ -14,5 +14,5 @@ SELECT
 	p2."Gender"
 FROM
 	"Person" p1
-		INNER JOIN "Person" p2 ON p1."MiddleName" = p2."MiddleName" OR p1."MiddleName" IS NULL AND p2."MiddleName" IS NULL
+		INNER JOIN "Person" p2 ON p1."MiddleName" = p2."MiddleName" AND p1."MiddleName" IS NOT NULL AND p2."MiddleName" IS NOT NULL OR p1."MiddleName" IS NULL AND p2."MiddleName" IS NULL
 

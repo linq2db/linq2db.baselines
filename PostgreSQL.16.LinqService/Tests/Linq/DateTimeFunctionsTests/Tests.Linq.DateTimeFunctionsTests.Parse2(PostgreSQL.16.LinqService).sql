@@ -2,9 +2,15 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	(Floor(Extract(year From d."DateTimeValue"))::Int || '-02-24 00:00:00')::TimeStamp
+	d."Day_2"
 FROM
-	"LinqDataTypes" d
+	(
+		SELECT
+			Floor(Extract(day From (Floor(Extract(year From t."DateTimeValue"))::Int || '-02-24 00:00:00')::TimeStamp))::Int as "Day_1",
+			(Floor(Extract(year From t."DateTimeValue"))::Int || '-02-24 00:00:00')::TimeStamp as "Day_2"
+		FROM
+			"LinqDataTypes" t
+	) d
 WHERE
-	Floor(Extract(day From (Floor(Extract(year From d."DateTimeValue"))::Int || '-02-24 00:00:00')::TimeStamp))::Int > 0
+	d."Day_1" > 0 AND d."Day_1" IS NOT NULL
 

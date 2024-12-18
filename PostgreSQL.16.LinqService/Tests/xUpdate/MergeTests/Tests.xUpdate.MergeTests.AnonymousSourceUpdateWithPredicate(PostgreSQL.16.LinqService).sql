@@ -243,7 +243,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_Key")
 
-WHEN MATCHED AND "Source"."source_Field04" = 214 THEN
+WHEN MATCHED AND "Source"."source_Field04" = 214 AND "Source"."source_Field04" IS NOT NULL THEN
 UPDATE
 SET
 	"Field1" = "Source"."source_Field01",
