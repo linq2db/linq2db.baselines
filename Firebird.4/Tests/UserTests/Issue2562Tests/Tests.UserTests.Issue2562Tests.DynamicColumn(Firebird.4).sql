@@ -57,7 +57,7 @@ SELECT
 		FROM
 			"ExternalId2562" "x"
 		WHERE
-			"x"."CardTypeId" = "t1"."CardTypeId" AND ("x"."CardNumber" = "t1"."CardNumber" OR "x"."CardNumber" IS NULL AND "t1"."CardNumber" IS NULL) AND
+			"x"."CardTypeId" = "t1"."CardTypeId" AND ("x"."CardNumber" = "t1"."CardNumber" AND "x"."CardNumber" IS NOT NULL AND "t1"."CardNumber" IS NOT NULL OR "x"."CardNumber" IS NULL AND "t1"."CardNumber" IS NULL) AND
 			"x"."TypeId" = 2
 		FETCH NEXT 1 ROWS ONLY
 	)
@@ -76,7 +76,7 @@ SELECT
 		FROM
 			"ExternalId2562" "x"
 		WHERE
-			"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
+			"x"."CardTypeId" = "person"."CardTypeId" AND ("x"."CardNumber" = "person"."CardNumber" AND "x"."CardNumber" IS NOT NULL AND "person"."CardNumber" IS NOT NULL OR "x"."CardNumber" IS NULL AND "person"."CardNumber" IS NULL) AND
 			"x"."TypeId" = 2
 		FETCH NEXT 1 ROWS ONLY
 	)

@@ -2,9 +2,15 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	CAST(CAST(Extract(year from "p"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-01-01 00:00:00' AS TimeStamp)
+	"p"."Day_2"
 FROM
-	"LinqDataTypes" "p"
+	(
+		SELECT
+			Extract(day from CAST(CAST(Extract(year from "t"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-01-01 00:00:00' AS TimeStamp)) as "Day_1",
+			CAST(CAST(Extract(year from "t"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-01-01 00:00:00' AS TimeStamp) as "Day_2"
+		FROM
+			"LinqDataTypes" "t"
+	) "p"
 WHERE
-	Extract(day from CAST(CAST(Extract(year from "p"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-01-01 00:00:00' AS TimeStamp)) > 0
+	"p"."Day_1" > 0 AND "p"."Day_1" IS NOT NULL
 

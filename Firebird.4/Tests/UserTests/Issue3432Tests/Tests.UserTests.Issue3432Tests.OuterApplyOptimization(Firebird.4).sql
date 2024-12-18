@@ -78,7 +78,8 @@ FROM
 			FROM
 				"PartyAccess" "pa"
 			WHERE
-				"pa"."PartyId" = "party_1"."Id" AND "pa"."Role" = 'Admin'
+				"pa"."PartyId" = "party_1"."Id" AND "pa"."Role" = 'Admin' AND
+				"pa"."Role" IS NOT NULL
 		)
 
 BeforeExecute

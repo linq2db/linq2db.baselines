@@ -18,7 +18,7 @@ SELECT
 			FROM
 				"LinqDataTypes" "x"
 			WHERE
-				"x"."BinaryValue" = @blob
+				"x"."BinaryValue" = @blob AND "x"."BinaryValue" IS NOT NULL
 		)
 			THEN TRUE
 		ELSE FALSE

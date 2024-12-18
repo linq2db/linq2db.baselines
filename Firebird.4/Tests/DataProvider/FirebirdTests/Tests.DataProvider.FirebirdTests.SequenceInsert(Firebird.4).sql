@@ -4,7 +4,7 @@
 DELETE FROM
 	"SequenceTest" "t1"
 WHERE
-	"t1"."Value_" = 'SeqValue'
+	"t1"."Value_" = 'SeqValue' AND "t1"."Value_" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -31,7 +31,7 @@ SELECT
 FROM
 	"SequenceTest" "t1"
 WHERE
-	"t1"."Value_" = 'SeqValue'
+	"t1"."Value_" = 'SeqValue' AND "t1"."Value_" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
@@ -52,5 +52,5 @@ SELECT
 FROM
 	"SequenceTest" "t1"
 WHERE
-	"t1"."Value_" = 'SeqValue'
+	"t1"."Value_" = 'SeqValue' AND "t1"."Value_" IS NOT NULL
 

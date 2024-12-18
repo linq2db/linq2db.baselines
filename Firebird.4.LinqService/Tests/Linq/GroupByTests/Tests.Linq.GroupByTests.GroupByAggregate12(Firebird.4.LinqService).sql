@@ -21,7 +21,14 @@ FROM
 						"Child" "a_Children_1"
 					WHERE
 						"g_1"."ParentID" = "a_Children_1"."ParentID"
-				) > 3
+				) > 3 AND (
+					SELECT
+						AVG("a_Children_1"."ParentID")
+					FROM
+						"Child" "a_Children_1"
+					WHERE
+						"g_1"."ParentID" = "a_Children_1"."ParentID"
+				) IS NOT NULL
 					THEN TRUE
 				ELSE FALSE
 			END as "Key_1"
