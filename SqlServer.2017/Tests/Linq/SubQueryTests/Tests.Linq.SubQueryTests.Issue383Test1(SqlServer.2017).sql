@@ -228,13 +228,19 @@ FROM
 		WHERE
 			[cda].[Contract_Id] = 198827882 AND
 			[cda].[Distributor_Type_Code] = N'CC' AND
+			[cda].[Distributor_Type_Code] IS NOT NULL AND
 			[cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND
+			[cda].[Distributor_Agent_Type_Prefix] IS NOT NULL AND
 			[cda].[Represents_Type_Prefix] = N'REPRESENTS' AND
+			[cda].[Represents_Type_Prefix] IS NOT NULL AND
 			[cd].[Type_Code] = N'ESTCOE' AND
+			[cd].[Type_Code] IS NOT NULL AND
 			[d].[Type_Code] = N'RE' AND
-			[dcp].[Distributor_Type_Code] = N'RE'
+			[d].[Type_Code] IS NOT NULL AND
+			[dcp].[Distributor_Type_Code] = N'RE' AND
+			[dcp].[Distributor_Type_Code] IS NOT NULL
 	) [m_1]
-		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code] OR [d_1].[City_Code] IS NULL AND [m_1].[City_Code] IS NULL
+		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code] AND [d_1].[City_Code] IS NOT NULL AND [m_1].[City_Code] IS NOT NULL OR [d_1].[City_Code] IS NULL AND [m_1].[City_Code] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -262,11 +268,17 @@ FROM
 WHERE
 	[cda].[Contract_Id] = 198827882 AND
 	[cda].[Distributor_Type_Code] = N'CC' AND
+	[cda].[Distributor_Type_Code] IS NOT NULL AND
 	[cda].[Distributor_Agent_Type_Prefix] = N'OFFICE' AND
+	[cda].[Distributor_Agent_Type_Prefix] IS NOT NULL AND
 	[cda].[Represents_Type_Prefix] = N'REPRESENTS' AND
+	[cda].[Represents_Type_Prefix] IS NOT NULL AND
 	[cd].[Type_Code] = N'ESTCOE' AND
+	[cd].[Type_Code] IS NOT NULL AND
 	[d].[Type_Code] = N'RE' AND
-	[dcp].[Distributor_Type_Code] = N'RE'
+	[d].[Type_Code] IS NOT NULL AND
+	[dcp].[Distributor_Type_Code] = N'RE' AND
+	[dcp].[Distributor_Type_Code] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017

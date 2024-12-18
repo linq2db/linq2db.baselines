@@ -70,7 +70,8 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	DateAdd(second, @interval, [r].[SomeNullableDateTimeOffset]) >= @clientSideIn
+	DateAdd(second, @interval, [r].[SomeNullableDateTimeOffset]) >= @clientSideIn AND
+	DateAdd(second, @interval, [r].[SomeNullableDateTimeOffset]) IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
