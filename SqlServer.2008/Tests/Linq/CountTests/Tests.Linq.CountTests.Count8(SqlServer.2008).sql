@@ -7,7 +7,7 @@ FROM
 	[Child] [p]
 		LEFT JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[a_Parent].[ParentID] = 1
+	[a_Parent].[ParentID] = 1 AND [a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008
@@ -18,7 +18,7 @@ FROM
 	[Child] [p]
 		LEFT JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[a_Parent].[ParentID] = 1
+	[a_Parent].[ParentID] = 1 AND [a_Parent].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008

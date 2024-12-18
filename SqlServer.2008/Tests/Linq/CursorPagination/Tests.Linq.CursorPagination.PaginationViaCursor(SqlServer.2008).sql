@@ -136,7 +136,8 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+	[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) AND
+	DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) IS NOT NULL
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
@@ -169,7 +170,8 @@ FROM
 				FROM
 					[Booking] [t]
 				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+					[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) AND
+					DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) IS NOT NULL
 			) [e]
 	) [q]
 WHERE
@@ -207,7 +209,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) AND
+				DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) IS NOT NULL
 		) [e]
 )
 SELECT
@@ -261,7 +264,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) AND
+				DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) IS NOT NULL
 		) [e]
 )
 SELECT
@@ -315,7 +319,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) AND
+				DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)) IS NOT NULL
 		) [e]
 )
 SELECT

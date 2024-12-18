@@ -12,7 +12,11 @@ SELECT
 				[p].[Value1] IS NULL AND [p].[ParentID] = CASE
 					WHEN [p].[Value1] IS NULL THEN NULL
 					ELSE CAST(N'SHOULD NOT BE CALLED' AS INT)
-				END
+				END AND
+				CASE
+					WHEN [p].[Value1] IS NULL THEN NULL
+					ELSE CAST(N'SHOULD NOT BE CALLED' AS INT)
+				END IS NOT NULL
 		)
 			THEN 1
 		ELSE 0

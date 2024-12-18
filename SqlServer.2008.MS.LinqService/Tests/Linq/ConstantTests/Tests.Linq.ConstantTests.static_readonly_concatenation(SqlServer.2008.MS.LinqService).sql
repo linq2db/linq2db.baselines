@@ -57,7 +57,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + N'1' = @p
+	[e].[StringValue] + N'1' = @p AND [e].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

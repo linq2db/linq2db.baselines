@@ -58,7 +58,8 @@ BeforeExecute
 SELECT
 	[doSap].[DocEntry],
 	CASE
-		WHEN [doSap].[DocStatus] = N'O' THEN N'Aberto'
+		WHEN [doSap].[DocStatus] = N'O' AND [doSap].[DocStatus] IS NOT NULL
+			THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
 	CAST(N'Manual/Externo' AS NVarChar(4000))
@@ -68,7 +69,8 @@ UNION
 SELECT
 	[doSap_1].[DocEntry],
 	CASE
-		WHEN [doSap_1].[DocStatus] = N'O' THEN N'Aberto'
+		WHEN [doSap_1].[DocStatus] = N'O' AND [doSap_1].[DocStatus] IS NOT NULL
+			THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
 	CAST(N'Manual/Externo' AS NVarChar(4000))
@@ -78,7 +80,8 @@ UNION
 SELECT
 	[doSap_2].[DocEntry],
 	CASE
-		WHEN [doSap_2].[DocStatus] = N'O' THEN N'Aberto'
+		WHEN [doSap_2].[DocStatus] = N'O' AND [doSap_2].[DocStatus] IS NOT NULL
+			THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
 	CAST(N'Manual/Externo' AS NVarChar(4000))

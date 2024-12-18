@@ -13,5 +13,5 @@ SELECT
 FROM
 	[AllTypes2] [t]
 WHERE
-	[t].[hierarchyidDataType].GetLevel() > 0
+	[t].[hierarchyidDataType].GetLevel() > 0 AND [t].[hierarchyidDataType].GetLevel() IS NOT NULL
 

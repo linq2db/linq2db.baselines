@@ -360,7 +360,7 @@ SELECT
 					[x].[DataValue] IS NOT NULL AND [t1].[Key_1] = [x].[GroupId]
 			) [x_1]
 		WHERE
-			(Convert(Int, [x_1].[DataValue]) % 2) = 0
+			(Convert(Int, [x_1].[DataValue]) % 2) = 0 AND Convert(Int, [x_1].[DataValue]) IS NOT NULL
 	),
 	(
 		SELECT
@@ -372,8 +372,10 @@ SELECT
 				FROM
 					[AggregationData] [t_1]
 				WHERE
-					[t_1].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_1].[GroupId] AND
-					(Convert(Int, [t_1].[DataValue]) % 2) = 0
+					[t_1].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [t_1].[GroupId] AND
+					(Convert(Int, [t_1].[DataValue]) % 2) = 0 AND
+					Convert(Int, [t_1].[DataValue]) IS NOT NULL
 			) [t2]
 	),
 	(
@@ -386,11 +388,13 @@ SELECT
 				FROM
 					[AggregationData] [x_2]
 				WHERE
-					[x_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [x_2].[GroupId] AND
-					(Convert(Int, [x_2].[DataValue]) % 2) = 0
+					[x_2].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [x_2].[GroupId] AND
+					(Convert(Int, [x_2].[DataValue]) % 2) = 0 AND
+					Convert(Int, [x_2].[DataValue]) IS NOT NULL
 			) [x_3]
 		WHERE
-			(Convert(Int, [x_3].[DataValue]) % 2) = 0
+			(Convert(Int, [x_3].[DataValue]) % 2) = 0 AND Convert(Int, [x_3].[DataValue]) IS NOT NULL
 	),
 	[t1].[COUNT_5],
 	(
@@ -403,8 +407,10 @@ SELECT
 				FROM
 					[AggregationData] [t_2]
 				WHERE
-					[t_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_2].[GroupId] AND
-					(Convert(Int, [t_2].[DataValue]) % 2) = 0
+					[t_2].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [t_2].[GroupId] AND
+					(Convert(Int, [t_2].[DataValue]) % 2) = 0 AND
+					Convert(Int, [t_2].[DataValue]) IS NOT NULL
 			) [t3]
 	)
 FROM
@@ -413,13 +419,15 @@ FROM
 			[t].[GroupId] as [Key_1],
 			COUNT(*) as [COUNT_1],
 			COUNT(CASE
-				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 AND Convert(Int, [t].[DataValue]) IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as [COUNT_2],
 			COUNT(*) as [COUNT_3],
 			COUNT(DISTINCT [t].[DataValue]) as [COUNT_4],
 			COUNT(CASE
-				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 AND Convert(Int, [t].[DataValue]) IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as [COUNT_5]
 		FROM
