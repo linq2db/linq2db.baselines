@@ -11,5 +11,5 @@ SELECT
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[BinaryDataType] = @p
+	[t].[BinaryDataType] = @p AND [t].[BinaryDataType] IS NOT NULL
 

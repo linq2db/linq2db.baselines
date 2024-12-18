@@ -33,7 +33,10 @@ UPDATE
 SET
 	[BigIntValue] = @TestField
 WHERE
-	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND
+	[LinqDataTypes].[ID] IS NOT NULL AND
+	[LinqDataTypes].[BigIntValue] = 11 AND
+	[LinqDataTypes].[BigIntValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

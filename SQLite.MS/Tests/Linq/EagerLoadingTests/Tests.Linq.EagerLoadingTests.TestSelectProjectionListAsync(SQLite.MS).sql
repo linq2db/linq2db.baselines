@@ -106,7 +106,7 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] IS NOT NULL AND [d].[MasterId] = [m_1].[Id2] AND [d].[MasterId] IS NOT NULL
 WHERE
 	[m_1].[Id1] >= @intParam
 
@@ -129,9 +129,9 @@ FROM
 		WHERE
 			[m_1].[Id1] >= @intParam
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_2].[Id1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_2].[Id1] AND [d].[MasterId] IS NOT NULL
 WHERE
-	[d].[MasterId] % 2 = 0
+	[d].[MasterId] % 2 = 0 AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)

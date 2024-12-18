@@ -245,7 +245,7 @@ SET
 	"Field5" = Target."Field5" + "Source"."source_Field5"
 
 DELETE WHERE
-	Target."Field1" = 10
+	Target."Field1" = 10 AND Target."Field1" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

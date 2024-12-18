@@ -10,5 +10,6 @@ SELECT
 FROM
 	"GrandChild" "w"
 WHERE
-	"w"."ChildID" IS NOT NULL AND "w"."ChildID" = ?
+	"w"."ChildID" IS NOT NULL AND "w"."ChildID" = ? AND
+	"w"."ChildID" IS NOT NULL
 

@@ -42,7 +42,7 @@ FROM
 					LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
 					LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 			WHERE
-				[a_Product].[ProductID] = [p].[ProductID]
+				[a_Product].[ProductID] = [p].[ProductID] AND [a_Product].[ProductID] IS NOT NULL
 			ORDER BY
 				[od].[UnitPrice] * [od].[Quantity] DESC
 		) [t1]

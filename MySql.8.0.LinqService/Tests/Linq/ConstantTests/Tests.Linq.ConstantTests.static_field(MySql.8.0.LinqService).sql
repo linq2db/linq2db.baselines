@@ -55,7 +55,8 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`GuidValue` = @GuidNonReadonly AND `e`.`GuidNullableValue` = @GuidNonReadonly
+	`e`.`GuidValue` = @GuidNonReadonly AND `e`.`GuidNullableValue` = @GuidNonReadonly AND
+	`e`.`GuidNullableValue` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

@@ -40,7 +40,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."StringValue" || '1' = 'StrValue1'
+	e."StringValue" || '1' = 'StrValue1' AND e."StringValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

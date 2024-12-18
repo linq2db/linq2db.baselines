@@ -64,7 +64,8 @@ FROM
 								UNION ALL
 								SELECT 'B') `t1`
 						WHERE
-							`a_Lines`.`Currency` = `t1`.`item` OR `a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
+							`a_Lines`.`Currency` = `t1`.`item` AND `a_Lines`.`Currency` IS NOT NULL AND `t1`.`item` IS NOT NULL OR
+							`a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
 					)
 			)
 	) `m_1`
@@ -96,7 +97,8 @@ WHERE
 						UNION ALL
 						SELECT 'B') `t1`
 				WHERE
-					`a_Lines`.`Currency` = `t1`.`item` OR `a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
+					`a_Lines`.`Currency` = `t1`.`item` AND `a_Lines`.`Currency` IS NOT NULL AND `t1`.`item` IS NOT NULL OR
+					`a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
 			)
 	)
 

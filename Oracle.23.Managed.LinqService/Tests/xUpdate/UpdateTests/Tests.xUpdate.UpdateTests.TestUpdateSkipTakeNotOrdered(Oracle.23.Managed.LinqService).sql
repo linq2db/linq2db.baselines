@@ -221,6 +221,6 @@ WHERE
 					t2.RN > :skip
 			) t3
 		WHERE
-			"Parent"."ParentID" = t3."ParentID" AND ("Parent"."Value1" = t3."Value1" OR "Parent"."Value1" IS NULL AND t3."Value1" IS NULL)
+			"Parent"."ParentID" = t3."ParentID" AND ("Parent"."Value1" = t3."Value1" AND "Parent"."Value1" IS NOT NULL AND t3."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND t3."Value1" IS NULL)
 	)
 

@@ -15,5 +15,9 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[UnitsInStock] < [p].[ReorderLevel] AND [p].[UnitsOnOrder] = 0
+	[p].[UnitsInStock] < [p].[ReorderLevel] AND
+	[p].[UnitsInStock] IS NOT NULL AND
+	[p].[ReorderLevel] IS NOT NULL AND
+	[p].[UnitsOnOrder] = 0 AND
+	[p].[UnitsOnOrder] IS NOT NULL
 

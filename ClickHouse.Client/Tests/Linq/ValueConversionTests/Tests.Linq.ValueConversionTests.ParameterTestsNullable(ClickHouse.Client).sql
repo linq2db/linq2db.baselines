@@ -60,7 +60,8 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	toDateTime64('2020-02-29 00:00:00.0000000', 7) = t.DateTimeNullable
+	toDateTime64('2020-02-29 00:00:00.0000000', 7) = t.DateTimeNullable AND
+	t.DateTimeNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,7 +71,8 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.DateTimeNullable = toDateTime64('2020-02-29 00:00:00.0000000', 7)
+	t.DateTimeNullable = toDateTime64('2020-02-29 00:00:00.0000000', 7) AND
+	t.DateTimeNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

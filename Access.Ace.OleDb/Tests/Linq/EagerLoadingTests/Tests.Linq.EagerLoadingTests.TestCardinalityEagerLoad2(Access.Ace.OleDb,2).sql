@@ -545,21 +545,11 @@ SELECT
 	[a_ObjectD].[FK]
 FROM
 	([EntityMA] [m_1]
-		INNER JOIN [EntityMB] [d] ON ([m_1].[Id] = [d].[FK]))
-		LEFT JOIN [EntityMD] [a_ObjectD] ON ([d].[FKD] = [a_ObjectD].[Id])
+		INNER JOIN [EntityMB] [d] ON ([m_1].[Id] = [d].[FK] AND [d].[FK] IS NOT NULL))
+		LEFT JOIN [EntityMD] [a_ObjectD] ON ([d].[FKD] = [a_ObjectD].[Id] AND [d].[FKD] IS NOT NULL)
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[FK],
-	[t1].[Id]
-FROM
-	[EntityMA] [t1]
-
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 

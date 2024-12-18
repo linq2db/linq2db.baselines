@@ -4,7 +4,7 @@
 DELETE FROM
 	"SequenceCustomNamingTest" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"SequenceCustomNamingTest" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -54,5 +54,5 @@ SELECT
 FROM
 	"SequenceCustomNamingTest" t1
 WHERE
-	t1."Value" = 'SeqValue'
+	t1."Value" = 'SeqValue' AND t1."Value" IS NOT NULL
 

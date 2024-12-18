@@ -4,7 +4,7 @@
 DELETE FROM
 	SEQUENCETEST t1
 WHERE
-	t1.VALUE = 'SeqValue'
+	t1.VALUE = 'SeqValue' AND t1.VALUE IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

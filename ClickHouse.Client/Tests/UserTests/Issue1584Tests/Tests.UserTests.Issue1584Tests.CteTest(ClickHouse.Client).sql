@@ -161,11 +161,13 @@ WITH rateCost AS
 			ELSE toDecimal128('0', 10)
 		END) as FlatRate,
 		sumOrNull(CASE
-			WHEN rateLineItem_1.TM_Type = 'MIN' THEN rateLineItem_1.TM_Value
+			WHEN rateLineItem_1.TM_Type = 'MIN' AND rateLineItem_1.TM_Type IS NOT NULL
+				THEN rateLineItem_1.TM_Value
 			ELSE toDecimal128('0', 10)
 		END) as MinRate,
 		sumOrNull(CASE
-			WHEN rateLineItem_1.TM_Type = 'UNT' THEN rateLineItem_1.TM_Value
+			WHEN rateLineItem_1.TM_Type = 'UNT' AND rateLineItem_1.TM_Type IS NOT NULL
+				THEN rateLineItem_1.TM_Value
 			ELSE toDecimal128('0', 10)
 		END) as VariableRate
 	FROM
@@ -173,7 +175,7 @@ WITH rateCost AS
 			LEFT JOIN RateLines rateLine ON rateLine.TL_TI = s.TI_PK
 			LEFT JOIN RateLineItem rateLineItem_1 ON rateLineItem_1.TM_TL = rateLine.TL_PK
 	WHERE
-		(s.TI_RateEndDate IS NULL OR s.TI_RateEndDate > now()) AND
+		(s.TI_RateEndDate IS NULL OR s.TI_RateEndDate > now() AND s.TI_RateEndDate IS NOT NULL) AND
 		rateLineItem_1.TM_Type IN ('MIN', 'FLT', 'BAS', 'UNT')
 	GROUP BY
 		s.TI_PK,

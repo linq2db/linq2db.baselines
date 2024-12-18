@@ -80,7 +80,10 @@ SELECT
 FROM
 	"ValueConversion" "m_1"
 WHERE
-	@testedList = "m_1"."Value2" AND @testedList = "m_1"."Value2"
+	@testedList = "m_1"."Value2" AND
+	"m_1"."Value2" IS NOT NULL AND
+	@testedList = "m_1"."Value2" AND
+	"m_1"."Value2" IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -94,7 +97,7 @@ SELECT
 FROM
 	"ValueConversion" "g_1"
 WHERE
-	@testedList = "g_1"."Value2"
+	@testedList = "g_1"."Value2" AND "g_1"."Value2" IS NOT NULL
 GROUP BY
 	"g_1"."Id"
 

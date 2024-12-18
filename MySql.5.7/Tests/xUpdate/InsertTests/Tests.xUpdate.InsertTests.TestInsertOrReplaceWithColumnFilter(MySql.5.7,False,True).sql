@@ -54,7 +54,7 @@ SELECT
 FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
-	`x`.`FirstName` = @FirstName
+	`x`.`FirstName` = @FirstName AND `x`.`FirstName` IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -100,7 +100,7 @@ SELECT
 FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
-	`x`.`FirstName` = @FirstName
+	`x`.`FirstName` = @FirstName AND `x`.`FirstName` IS NOT NULL
 LIMIT 1
 
 BeforeExecute

@@ -233,7 +233,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_OtherId")
 
-WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 AND "Target"."Field1" IS NOT NULL THEN UPDATE
 SET
 	"Id" = "Target"."Id",
 	"Field1" = "Target"."Field5",

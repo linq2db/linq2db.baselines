@@ -48,7 +48,8 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > STR_TO_DATE('2018-01-02 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
+	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > STR_TO_DATE('2018-01-02 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f') AND
+	Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

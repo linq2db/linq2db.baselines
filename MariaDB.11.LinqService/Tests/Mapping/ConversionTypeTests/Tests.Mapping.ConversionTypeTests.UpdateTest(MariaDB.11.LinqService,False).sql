@@ -92,7 +92,7 @@ UPDATE
 SET
 	`t`.`Data` = @Data
 WHERE
-	`t`.`Data` = '***XXX***'
+	`t`.`Data` = '***XXX***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -106,7 +106,7 @@ UPDATE
 SET
 	`t`.`Data` = @Data
 WHERE
-	`t`.`Data` = @p
+	`t`.`Data` = @p AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

@@ -74,7 +74,7 @@ UPDATE
 SET
 	`t`.`Data` = '***OOO***'
 WHERE
-	`t`.`Data` = '***XXX***'
+	`t`.`Data` = '***XXX***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -84,7 +84,7 @@ UPDATE
 SET
 	`t`.`Data` = '***SSS***'
 WHERE
-	`t`.`Data` = '***HHH***'
+	`t`.`Data` = '***HHH***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

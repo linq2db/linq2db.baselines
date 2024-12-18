@@ -40,7 +40,7 @@ FROM
 			FROM
 				[Orders] [d]
 			WHERE
-				[m_1].[CustomerID] = [d].[CustomerID]
+				[m_1].[CustomerID] = [d].[CustomerID] AND [d].[CustomerID] IS NOT NULL
 			ORDER BY
 				[d].[OrderDate] DESC
 		) [d_1]

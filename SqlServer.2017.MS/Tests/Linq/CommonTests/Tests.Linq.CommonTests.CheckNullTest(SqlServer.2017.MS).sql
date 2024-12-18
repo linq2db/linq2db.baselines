@@ -21,7 +21,7 @@ FROM
 			FROM
 				[GrandChild] [a]
 			WHERE
-				[a].[ParentID] = [p].[ParentID]
+				[a].[ParentID] = [p].[ParentID] AND [a].[ParentID] IS NOT NULL
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)

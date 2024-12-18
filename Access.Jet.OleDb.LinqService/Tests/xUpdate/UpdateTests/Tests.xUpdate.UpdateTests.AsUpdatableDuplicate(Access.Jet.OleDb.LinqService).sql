@@ -45,7 +45,8 @@ UPDATE
 SET
 	[c_1].[ChildID] = [c_1].[ChildID] + 2
 WHERE
-	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
+	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1 AND
+	[a_Parent].[Value1] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

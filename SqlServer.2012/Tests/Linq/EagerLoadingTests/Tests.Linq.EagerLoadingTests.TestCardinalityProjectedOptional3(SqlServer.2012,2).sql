@@ -158,9 +158,9 @@ FROM
 			[a_ObjectBOptional].[Id]
 		FROM
 			[EntityA] [e]
-				LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
+				LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id] AND [e].[FK] IS NOT NULL
 	) [m_1]
-		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK] OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL
+		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK] AND [m_1].[Id] IS NOT NULL AND [d].[FK] IS NOT NULL OR [m_1].[Id] IS NULL AND [d].[FK] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -173,7 +173,7 @@ SELECT
 	[a_ObjectBOptional].[Id]
 FROM
 	[EntityA] [e]
-		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
+		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id] AND [e].[FK] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012

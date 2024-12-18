@@ -35,7 +35,8 @@ SELECT
 FROM
 	`Parent` `t1`
 WHERE
-	`t1`.`ParentID` = @id AND `t1`.`Value1` = @Value1
+	`t1`.`ParentID` = @id AND `t1`.`Value1` = @Value1 AND
+	`t1`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -8,7 +8,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" > ?
+	"t"."DateTimeValue" > ? AND "t"."DateTimeValue" IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -21,6 +21,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" > ?
+	"t"."DateTimeValue" > ? AND "t"."DateTimeValue" IS NOT NULL
 LIMIT 1
 

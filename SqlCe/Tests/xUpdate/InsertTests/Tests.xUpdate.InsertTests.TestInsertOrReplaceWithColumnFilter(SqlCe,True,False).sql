@@ -75,7 +75,7 @@ SELECT TOP (1)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -110,7 +110,7 @@ SELECT TOP (1)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

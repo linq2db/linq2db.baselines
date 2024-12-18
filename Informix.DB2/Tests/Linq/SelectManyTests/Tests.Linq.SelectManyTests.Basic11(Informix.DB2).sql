@@ -17,5 +17,5 @@ FROM
 	) g_1
 		INNER JOIN Child o
 			INNER JOIN Parent a_ParentID2_1 ON o.ParentID = a_ParentID2_1.ParentID
-		ON a_ParentID2_1.ParentID = g_1.ParentID2 AND (a_ParentID2_1.Value1 = g_1.Value1 OR a_ParentID2_1.Value1 IS NULL AND g_1.Value1 IS NULL)
+		ON a_ParentID2_1.ParentID = g_1.ParentID2 AND (a_ParentID2_1.Value1 = g_1.Value1 AND a_ParentID2_1.Value1 IS NOT NULL AND g_1.Value1 IS NOT NULL OR a_ParentID2_1.Value1 IS NULL AND g_1.Value1 IS NULL)
 

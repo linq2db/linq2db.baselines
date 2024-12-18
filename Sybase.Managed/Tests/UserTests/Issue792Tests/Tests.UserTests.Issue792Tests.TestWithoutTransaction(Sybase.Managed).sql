@@ -77,5 +77,5 @@ DELETE FROM [AllTypes]
 FROM
 	[AllTypes] [t1]
 WHERE
-	[t1].[char20DataType] = 'issue792'
+	[t1].[char20DataType] = 'issue792' AND [t1].[char20DataType] IS NOT NULL
 

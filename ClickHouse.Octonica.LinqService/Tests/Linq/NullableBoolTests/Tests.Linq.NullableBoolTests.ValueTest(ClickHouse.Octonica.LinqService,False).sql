@@ -56,37 +56,7 @@ SELECT
 FROM
 	NullableBoolClass t
 WHERE
-	t.Value = false
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t.Value
-FROM
-	NullableBoolClass t
-WHERE
-	t.Value = false
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t.Value
-FROM
-	NullableBoolClass t
-WHERE
-	t.Value <> false OR t.Value IS NULL
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t.Value
-FROM
-	NullableBoolClass t
-WHERE
-	t.Value <> false
+	t.Value = false AND t.Value IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

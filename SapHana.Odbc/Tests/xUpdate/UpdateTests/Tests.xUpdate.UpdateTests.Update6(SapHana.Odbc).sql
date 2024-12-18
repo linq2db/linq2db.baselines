@@ -26,7 +26,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = ? AND "p"."Value1" = 1
+	"p"."ParentID" = ? AND "p"."Value1" = 1 AND "p"."Value1" IS NOT NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -50,5 +50,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = ? AND "p"."Value1" = 2
+	"p"."ParentID" = ? AND "p"."Value1" = 2 AND "p"."Value1" IS NOT NULL
 

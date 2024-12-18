@@ -179,7 +179,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('7922816251426433759.3543950335', 10) AND
-	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10)
+	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -212,7 +213,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('7922816251426433759.3543950335', 10) AND
-	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10)
+	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -242,7 +244,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('7922816251426433759.3543950335', 10) AND
-	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10)
+	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -264,7 +267,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('7922816251426433759.3543950335', 10) AND
-	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10)
+	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -286,7 +290,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('7922816251426433759.3543950335', 10) AND
-	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10)
+	r.ColumnNullable = toDecimal128('-7922816251426433759.3543950335', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -473,7 +478,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0)
+	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -505,7 +511,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0)
+	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -534,7 +541,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0)
+	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -555,7 +563,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0)
+	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -576,7 +585,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0)
+	r.Column = toDecimal32('-9', 0) AND r.ColumnNullable = toDecimal32('9', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -763,7 +773,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0)
+	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -795,7 +806,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0)
+	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -824,7 +836,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0)
+	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -845,7 +858,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0)
+	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -866,7 +880,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0)
+	r.Column = '-9'::Decimal32(0) AND r.ColumnNullable = '9'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1053,7 +1068,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1)
+	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1085,7 +1101,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1)
+	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1114,7 +1131,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1)
+	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1135,7 +1153,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1)
+	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1156,7 +1175,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1)
+	r.Column = toDecimal32('-0.9', 1) AND r.ColumnNullable = toDecimal32('0.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1343,7 +1363,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1)
+	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1375,7 +1396,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1)
+	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1404,7 +1426,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1)
+	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1425,7 +1448,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1)
+	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1446,7 +1470,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1)
+	r.Column = '-0.9'::Decimal32(1) AND r.ColumnNullable = '0.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1633,7 +1658,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0)
+	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1665,7 +1691,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0)
+	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1694,7 +1721,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0)
+	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1715,7 +1743,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0)
+	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1736,7 +1765,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0)
+	r.Column = toDecimal32('-99', 0) AND r.ColumnNullable = toDecimal32('99', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1923,7 +1953,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0)
+	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1955,7 +1986,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0)
+	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1984,7 +2016,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0)
+	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2005,7 +2038,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0)
+	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2026,7 +2060,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0)
+	r.Column = '-99'::Decimal32(0) AND r.ColumnNullable = '99'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2213,7 +2248,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1)
+	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2245,7 +2281,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1)
+	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2274,7 +2311,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1)
+	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2295,7 +2333,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1)
+	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2316,7 +2355,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1)
+	r.Column = toDecimal32('-9.9', 1) AND r.ColumnNullable = toDecimal32('9.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2503,7 +2543,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1)
+	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2535,7 +2576,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1)
+	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2564,7 +2606,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1)
+	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2585,7 +2628,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1)
+	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2606,7 +2650,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1)
+	r.Column = '-9.9'::Decimal32(1) AND r.ColumnNullable = '9.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2793,7 +2838,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2)
+	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2825,7 +2871,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2)
+	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2854,7 +2901,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2)
+	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -2875,7 +2923,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2)
+	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2896,7 +2945,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2)
+	r.Column = toDecimal32('-0.99', 2) AND r.ColumnNullable = toDecimal32('0.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3083,7 +3133,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2)
+	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3115,7 +3166,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2)
+	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3144,7 +3196,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2)
+	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3165,7 +3218,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2)
+	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3186,7 +3240,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2)
+	r.Column = '-0.99'::Decimal32(2) AND r.ColumnNullable = '0.99'::Decimal32(2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3373,7 +3428,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0)
+	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3405,7 +3461,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0)
+	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3434,7 +3491,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0)
+	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3455,7 +3513,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0)
+	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3476,7 +3535,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0)
+	r.Column = toDecimal32('-99999999', 0) AND r.ColumnNullable = toDecimal32('99999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3663,7 +3723,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0)
+	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3695,7 +3756,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0)
+	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3724,7 +3786,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0)
+	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3745,7 +3808,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0)
+	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -3766,7 +3830,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0)
+	r.Column = '-99999999'::Decimal32(0) AND r.ColumnNullable = '99999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3953,7 +4018,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1)
+	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -3985,7 +4051,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1)
+	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4014,7 +4081,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1)
+	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4035,7 +4103,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1)
+	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -4056,7 +4125,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1)
+	r.Column = toDecimal32('-9999999.9', 1) AND r.ColumnNullable = toDecimal32('9999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4243,7 +4313,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1)
+	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4275,7 +4346,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1)
+	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4304,7 +4376,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1)
+	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4325,7 +4398,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1)
+	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -4346,7 +4420,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1)
+	r.Column = '-9999999.9'::Decimal32(1) AND r.ColumnNullable = '9999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4533,7 +4608,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7)
+	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4565,7 +4641,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7)
+	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4594,7 +4671,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7)
+	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4615,7 +4693,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7)
+	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -4636,7 +4715,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7)
+	r.Column = toDecimal32('-9.9999999', 7) AND r.ColumnNullable = toDecimal32('9.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4823,7 +4903,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7)
+	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4855,7 +4936,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7)
+	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4884,7 +4966,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7)
+	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -4905,7 +4988,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7)
+	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -4926,7 +5010,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7)
+	r.Column = '-9.9999999'::Decimal32(7) AND r.ColumnNullable = '9.9999999'::Decimal32(7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5113,7 +5198,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8)
+	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5145,7 +5231,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8)
+	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5174,7 +5261,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8)
+	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5195,7 +5283,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8)
+	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -5216,7 +5305,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8)
+	r.Column = toDecimal32('-0.99999999', 8) AND r.ColumnNullable = toDecimal32('0.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5403,7 +5493,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8)
+	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5435,7 +5526,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8)
+	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5464,7 +5556,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8)
+	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5485,7 +5578,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8)
+	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -5506,7 +5600,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8)
+	r.Column = '-0.99999999'::Decimal32(8) AND r.ColumnNullable = '0.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5693,7 +5788,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0)
+	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5725,7 +5821,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0)
+	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5754,7 +5851,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0)
+	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5775,7 +5873,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0)
+	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -5796,7 +5895,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0)
+	r.Column = toDecimal32('-999999999', 0) AND r.ColumnNullable = toDecimal32('999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -5983,7 +6083,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0)
+	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6015,7 +6116,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0)
+	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6044,7 +6146,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0)
+	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6065,7 +6168,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0)
+	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -6086,7 +6190,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0)
+	r.Column = '-999999999'::Decimal32(0) AND r.ColumnNullable = '999999999'::Decimal32(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6273,7 +6378,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1)
+	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6305,7 +6411,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1)
+	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6334,7 +6441,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1)
+	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6355,7 +6463,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1)
+	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -6376,7 +6485,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1)
+	r.Column = toDecimal32('-99999999.9', 1) AND r.ColumnNullable = toDecimal32('99999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6563,7 +6673,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1)
+	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6595,7 +6706,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1)
+	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6624,7 +6736,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1)
+	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6645,7 +6758,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1)
+	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -6666,7 +6780,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1)
+	r.Column = '-99999999.9'::Decimal32(1) AND r.ColumnNullable = '99999999.9'::Decimal32(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6853,7 +6968,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8)
+	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6885,7 +7001,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8)
+	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6914,7 +7031,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8)
+	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -6935,7 +7053,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8)
+	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -6956,7 +7075,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8)
+	r.Column = toDecimal32('-9.99999999', 8) AND r.ColumnNullable = toDecimal32('9.99999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7143,7 +7263,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8)
+	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7175,7 +7296,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8)
+	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7204,7 +7326,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8)
+	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7225,7 +7348,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8)
+	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -7246,7 +7370,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8)
+	r.Column = '-9.99999999'::Decimal32(8) AND r.ColumnNullable = '9.99999999'::Decimal32(8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7433,7 +7558,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9)
+	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7465,7 +7591,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9)
+	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7494,7 +7621,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9)
+	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7515,7 +7643,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9)
+	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -7536,7 +7665,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9)
+	r.Column = toDecimal32('-0.999999999', 9) AND r.ColumnNullable = toDecimal32('0.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7723,7 +7853,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9)
+	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7755,7 +7886,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9)
+	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7784,7 +7916,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9)
+	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -7805,7 +7938,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9)
+	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -7826,7 +7960,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9)
+	r.Column = '-0.999999999'::Decimal32(9) AND r.ColumnNullable = '0.999999999'::Decimal32(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8013,7 +8148,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0)
+	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8045,7 +8181,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0)
+	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8074,7 +8211,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0)
+	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8095,7 +8233,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0)
+	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -8116,7 +8255,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0)
+	r.Column = toDecimal64('-9999999999', 0) AND r.ColumnNullable = toDecimal64('9999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8303,7 +8443,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0)
+	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8335,7 +8476,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0)
+	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8364,7 +8506,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0)
+	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8385,7 +8528,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0)
+	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -8406,7 +8550,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0)
+	r.Column = '-9999999999'::Decimal64(0) AND r.ColumnNullable = '9999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8593,7 +8738,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1)
+	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8625,7 +8771,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1)
+	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8654,7 +8801,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1)
+	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8675,7 +8823,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1)
+	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -8696,7 +8845,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1)
+	r.Column = toDecimal64('-999999999.9', 1) AND r.ColumnNullable = toDecimal64('999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8883,7 +9033,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1)
+	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8915,7 +9066,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1)
+	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8944,7 +9096,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1)
+	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -8965,7 +9118,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1)
+	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -8986,7 +9140,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1)
+	r.Column = '-999999999.9'::Decimal64(1) AND r.ColumnNullable = '999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9173,7 +9328,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9)
+	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9205,7 +9361,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9)
+	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9234,7 +9391,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9)
+	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9255,7 +9413,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9)
+	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -9276,7 +9435,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9)
+	r.Column = toDecimal64('-9.999999999', 9) AND r.ColumnNullable = toDecimal64('9.999999999', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9463,7 +9623,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9)
+	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9495,7 +9656,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9)
+	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9524,7 +9686,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9)
+	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9545,7 +9708,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9)
+	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -9566,7 +9730,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9)
+	r.Column = '-9.999999999'::Decimal64(9) AND r.ColumnNullable = '9.999999999'::Decimal64(9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9753,7 +9918,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10)
+	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9785,7 +9951,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10)
+	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9814,7 +9981,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10)
+	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -9835,7 +10003,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10)
+	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -9856,7 +10025,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10)
+	r.Column = toDecimal64('-0.9999999999', 10) AND r.ColumnNullable = toDecimal64('0.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10043,7 +10213,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10)
+	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10075,7 +10246,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10)
+	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10104,7 +10276,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10)
+	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10125,7 +10298,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10)
+	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -10146,7 +10320,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10)
+	r.Column = '-0.9999999999'::Decimal64(10) AND r.ColumnNullable = '0.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10333,7 +10508,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0)
+	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10365,7 +10541,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0)
+	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10394,7 +10571,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0)
+	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10415,7 +10593,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0)
+	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -10436,7 +10615,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0)
+	r.Column = toDecimal64('-99999999999', 0) AND r.ColumnNullable = toDecimal64('99999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10623,7 +10803,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0)
+	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10655,7 +10836,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0)
+	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10684,7 +10866,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0)
+	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10705,7 +10888,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0)
+	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -10726,7 +10910,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0)
+	r.Column = '-99999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10913,7 +11098,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1)
+	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10945,7 +11131,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1)
+	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10974,7 +11161,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1)
+	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10995,7 +11183,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1)
+	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -11016,7 +11205,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1)
+	r.Column = toDecimal64('-9999999999.9', 1) AND r.ColumnNullable = toDecimal64('9999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11203,7 +11393,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1)
+	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11235,7 +11426,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1)
+	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11264,7 +11456,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1)
+	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11285,7 +11478,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1)
+	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -11306,7 +11500,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1)
+	r.Column = '-9999999999.9'::Decimal64(1) AND r.ColumnNullable = '9999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11493,7 +11688,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10)
+	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11525,7 +11721,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10)
+	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11554,7 +11751,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10)
+	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11575,7 +11773,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10)
+	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -11596,7 +11795,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10)
+	r.Column = toDecimal64('-9.9999999999', 10) AND r.ColumnNullable = toDecimal64('9.9999999999', 10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11783,7 +11983,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10)
+	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11815,7 +12016,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10)
+	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11844,7 +12046,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10)
+	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11865,7 +12068,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10)
+	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -11886,7 +12090,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10)
+	r.Column = '-9.9999999999'::Decimal64(10) AND r.ColumnNullable = '9.9999999999'::Decimal64(10) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12073,7 +12278,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11)
+	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12105,7 +12311,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11)
+	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12134,7 +12341,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11)
+	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12155,7 +12363,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11)
+	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -12176,7 +12385,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11)
+	r.Column = toDecimal64('-0.99999999999', 11) AND r.ColumnNullable = toDecimal64('0.99999999999', 11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12363,7 +12573,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11)
+	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12395,7 +12606,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11)
+	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12424,7 +12636,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11)
+	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12445,7 +12658,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11)
+	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -12466,7 +12680,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11)
+	r.Column = '-0.99999999999'::Decimal64(11) AND r.ColumnNullable = '0.99999999999'::Decimal64(11) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12654,7 +12869,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('99999999999999999', 0)
+	r.ColumnNullable = toDecimal64('99999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12687,7 +12903,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('99999999999999999', 0)
+	r.ColumnNullable = toDecimal64('99999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12717,7 +12934,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('99999999999999999', 0)
+	r.ColumnNullable = toDecimal64('99999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12739,7 +12957,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('99999999999999999', 0)
+	r.ColumnNullable = toDecimal64('99999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -12761,7 +12980,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('99999999999999999', 0)
+	r.ColumnNullable = toDecimal64('99999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12948,7 +13168,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0)
+	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12980,7 +13201,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0)
+	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13009,7 +13231,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0)
+	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13030,7 +13253,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0)
+	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -13051,7 +13275,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0)
+	r.Column = '-99999999999999999'::Decimal64(0) AND r.ColumnNullable = '99999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13239,7 +13464,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('9999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('9999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13272,7 +13498,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('9999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('9999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13302,7 +13529,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('9999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('9999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13324,7 +13552,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('9999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('9999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -13346,7 +13575,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('9999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('9999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13534,7 +13764,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '9999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '9999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13567,7 +13798,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '9999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '9999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13597,7 +13829,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '9999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '9999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13619,7 +13852,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '9999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '9999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -13641,7 +13875,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '9999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '9999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13829,7 +14064,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.9999999999999999', 16) AND
-	r.ColumnNullable = toDecimal64('9.9999999999999999', 16)
+	r.ColumnNullable = toDecimal64('9.9999999999999999', 16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13862,7 +14098,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.9999999999999999', 16) AND
-	r.ColumnNullable = toDecimal64('9.9999999999999999', 16)
+	r.ColumnNullable = toDecimal64('9.9999999999999999', 16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13892,7 +14129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.9999999999999999', 16) AND
-	r.ColumnNullable = toDecimal64('9.9999999999999999', 16)
+	r.ColumnNullable = toDecimal64('9.9999999999999999', 16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13914,7 +14152,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.9999999999999999', 16) AND
-	r.ColumnNullable = toDecimal64('9.9999999999999999', 16)
+	r.ColumnNullable = toDecimal64('9.9999999999999999', 16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -13936,7 +14175,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.9999999999999999', 16) AND
-	r.ColumnNullable = toDecimal64('9.9999999999999999', 16)
+	r.ColumnNullable = toDecimal64('9.9999999999999999', 16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14124,7 +14364,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999'::Decimal64(16) AND
-	r.ColumnNullable = '9.9999999999999999'::Decimal64(16)
+	r.ColumnNullable = '9.9999999999999999'::Decimal64(16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14157,7 +14398,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999'::Decimal64(16) AND
-	r.ColumnNullable = '9.9999999999999999'::Decimal64(16)
+	r.ColumnNullable = '9.9999999999999999'::Decimal64(16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14187,7 +14429,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999'::Decimal64(16) AND
-	r.ColumnNullable = '9.9999999999999999'::Decimal64(16)
+	r.ColumnNullable = '9.9999999999999999'::Decimal64(16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14209,7 +14452,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999'::Decimal64(16) AND
-	r.ColumnNullable = '9.9999999999999999'::Decimal64(16)
+	r.ColumnNullable = '9.9999999999999999'::Decimal64(16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -14231,7 +14475,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999'::Decimal64(16) AND
-	r.ColumnNullable = '9.9999999999999999'::Decimal64(16)
+	r.ColumnNullable = '9.9999999999999999'::Decimal64(16) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14419,7 +14664,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('0.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('0.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14452,7 +14698,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('0.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('0.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14482,7 +14729,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('0.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('0.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14504,7 +14752,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('0.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('0.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -14526,7 +14775,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('0.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('0.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14714,7 +14964,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '0.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '0.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14747,7 +14998,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '0.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '0.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14777,7 +15029,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '0.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '0.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -14799,7 +15052,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '0.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '0.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -14821,7 +15075,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '0.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '0.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15009,7 +15264,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('999999999999999999', 0)
+	r.ColumnNullable = toDecimal64('999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15042,7 +15298,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('999999999999999999', 0)
+	r.ColumnNullable = toDecimal64('999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15072,7 +15329,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('999999999999999999', 0)
+	r.ColumnNullable = toDecimal64('999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15094,7 +15352,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('999999999999999999', 0)
+	r.ColumnNullable = toDecimal64('999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -15116,7 +15375,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal64('999999999999999999', 0)
+	r.ColumnNullable = toDecimal64('999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15304,7 +15564,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999'::Decimal64(0) AND
-	r.ColumnNullable = '999999999999999999'::Decimal64(0)
+	r.ColumnNullable = '999999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15337,7 +15598,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999'::Decimal64(0) AND
-	r.ColumnNullable = '999999999999999999'::Decimal64(0)
+	r.ColumnNullable = '999999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15367,7 +15629,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999'::Decimal64(0) AND
-	r.ColumnNullable = '999999999999999999'::Decimal64(0)
+	r.ColumnNullable = '999999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15389,7 +15652,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999'::Decimal64(0) AND
-	r.ColumnNullable = '999999999999999999'::Decimal64(0)
+	r.ColumnNullable = '999999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -15411,7 +15675,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999'::Decimal64(0) AND
-	r.ColumnNullable = '999999999999999999'::Decimal64(0)
+	r.ColumnNullable = '999999999999999999'::Decimal64(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15599,7 +15864,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('99999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('99999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15632,7 +15898,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('99999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('99999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15662,7 +15929,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('99999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('99999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15684,7 +15952,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('99999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('99999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -15706,7 +15975,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-99999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal64('99999999999999999.9', 1)
+	r.ColumnNullable = toDecimal64('99999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15894,7 +16164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '99999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '99999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15927,7 +16198,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '99999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '99999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15957,7 +16229,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '99999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '99999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15979,7 +16252,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '99999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '99999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -16001,7 +16275,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999.9'::Decimal64(1) AND
-	r.ColumnNullable = '99999999999999999.9'::Decimal64(1)
+	r.ColumnNullable = '99999999999999999.9'::Decimal64(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16189,7 +16464,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('9.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('9.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16222,7 +16498,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('9.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('9.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16252,7 +16529,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('9.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('9.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16274,7 +16552,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('9.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('9.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -16296,7 +16575,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-9.99999999999999999', 17) AND
-	r.ColumnNullable = toDecimal64('9.99999999999999999', 17)
+	r.ColumnNullable = toDecimal64('9.99999999999999999', 17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16484,7 +16764,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '9.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '9.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16517,7 +16798,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '9.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '9.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16547,7 +16829,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '9.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '9.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16569,7 +16852,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '9.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '9.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -16591,7 +16875,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.99999999999999999'::Decimal64(17) AND
-	r.ColumnNullable = '9.99999999999999999'::Decimal64(17)
+	r.ColumnNullable = '9.99999999999999999'::Decimal64(17) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16779,7 +17064,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal64('0.999999999999999999', 18)
+	r.ColumnNullable = toDecimal64('0.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16812,7 +17098,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal64('0.999999999999999999', 18)
+	r.ColumnNullable = toDecimal64('0.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16842,7 +17129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal64('0.999999999999999999', 18)
+	r.ColumnNullable = toDecimal64('0.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -16864,7 +17152,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal64('0.999999999999999999', 18)
+	r.ColumnNullable = toDecimal64('0.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -16886,7 +17175,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal64('-0.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal64('0.999999999999999999', 18)
+	r.ColumnNullable = toDecimal64('0.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17074,7 +17364,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.999999999999999999'::Decimal64(18) AND
-	r.ColumnNullable = '0.999999999999999999'::Decimal64(18)
+	r.ColumnNullable = '0.999999999999999999'::Decimal64(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17107,7 +17398,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.999999999999999999'::Decimal64(18) AND
-	r.ColumnNullable = '0.999999999999999999'::Decimal64(18)
+	r.ColumnNullable = '0.999999999999999999'::Decimal64(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17137,7 +17429,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.999999999999999999'::Decimal64(18) AND
-	r.ColumnNullable = '0.999999999999999999'::Decimal64(18)
+	r.ColumnNullable = '0.999999999999999999'::Decimal64(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17159,7 +17452,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.999999999999999999'::Decimal64(18) AND
-	r.ColumnNullable = '0.999999999999999999'::Decimal64(18)
+	r.ColumnNullable = '0.999999999999999999'::Decimal64(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -17181,7 +17475,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.999999999999999999'::Decimal64(18) AND
-	r.ColumnNullable = '0.999999999999999999'::Decimal64(18)
+	r.ColumnNullable = '0.999999999999999999'::Decimal64(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17369,7 +17664,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17402,7 +17698,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17432,7 +17729,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17454,7 +17752,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -17476,7 +17775,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17664,7 +17964,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17697,7 +17998,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17727,7 +18029,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17749,7 +18052,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -17771,7 +18075,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17959,7 +18264,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -17992,7 +18298,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18022,7 +18329,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18044,7 +18352,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -18066,7 +18375,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18254,7 +18564,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18287,7 +18598,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18317,7 +18629,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18339,7 +18652,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -18361,7 +18675,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18549,7 +18864,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999', 18)
+	r.ColumnNullable = toDecimal128('9.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18582,7 +18898,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999', 18)
+	r.ColumnNullable = toDecimal128('9.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18612,7 +18929,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999', 18)
+	r.ColumnNullable = toDecimal128('9.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18634,7 +18952,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999', 18)
+	r.ColumnNullable = toDecimal128('9.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -18656,7 +18975,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999', 18) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999', 18)
+	r.ColumnNullable = toDecimal128('9.999999999999999999', 18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18844,7 +19164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999'::Decimal128(18) AND
-	r.ColumnNullable = '9.999999999999999999'::Decimal128(18)
+	r.ColumnNullable = '9.999999999999999999'::Decimal128(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18877,7 +19198,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999'::Decimal128(18) AND
-	r.ColumnNullable = '9.999999999999999999'::Decimal128(18)
+	r.ColumnNullable = '9.999999999999999999'::Decimal128(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18907,7 +19229,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999'::Decimal128(18) AND
-	r.ColumnNullable = '9.999999999999999999'::Decimal128(18)
+	r.ColumnNullable = '9.999999999999999999'::Decimal128(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18929,7 +19252,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999'::Decimal128(18) AND
-	r.ColumnNullable = '9.999999999999999999'::Decimal128(18)
+	r.ColumnNullable = '9.999999999999999999'::Decimal128(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -18951,7 +19275,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999'::Decimal128(18) AND
-	r.ColumnNullable = '9.999999999999999999'::Decimal128(18)
+	r.ColumnNullable = '9.999999999999999999'::Decimal128(18) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19139,7 +19464,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19172,7 +19498,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19202,7 +19529,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19224,7 +19552,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -19246,7 +19575,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19434,7 +19764,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19467,7 +19798,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19497,7 +19829,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19519,7 +19852,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -19541,7 +19875,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '0.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19729,7 +20064,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-99999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('99999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('99999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19762,7 +20098,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-99999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('99999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('99999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19792,7 +20129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-99999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('99999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('99999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -19814,7 +20152,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-99999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('99999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('99999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -19836,7 +20175,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-99999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('99999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('99999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20024,7 +20364,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '99999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '99999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20057,7 +20398,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '99999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '99999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20087,7 +20429,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '99999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '99999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20109,7 +20452,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '99999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '99999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -20131,7 +20475,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-99999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '99999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '99999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20319,7 +20664,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20352,7 +20698,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20382,7 +20729,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20404,7 +20752,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -20426,7 +20775,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('9999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20614,7 +20964,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20647,7 +20998,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20677,7 +21029,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20699,7 +21052,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -20721,7 +21075,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '9999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20909,7 +21264,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20942,7 +21298,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20972,7 +21329,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20994,7 +21352,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -21016,7 +21375,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.9999999999999999999', 19) AND
-	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19)
+	r.ColumnNullable = toDecimal128('9.9999999999999999999', 19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21204,7 +21564,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21237,7 +21598,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21267,7 +21629,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21289,7 +21652,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -21311,7 +21675,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.9999999999999999999'::Decimal128(19) AND
-	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19)
+	r.ColumnNullable = '9.9999999999999999999'::Decimal128(19) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21499,7 +21864,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.99999999999999999999', 20) AND
-	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20)
+	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21532,7 +21898,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.99999999999999999999', 20) AND
-	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20)
+	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21562,7 +21929,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.99999999999999999999', 20) AND
-	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20)
+	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21584,7 +21952,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.99999999999999999999', 20) AND
-	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20)
+	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -21606,7 +21975,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.99999999999999999999', 20) AND
-	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20)
+	r.ColumnNullable = toDecimal128('0.99999999999999999999', 20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21794,7 +22164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999999'::Decimal128(20) AND
-	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20)
+	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21827,7 +22198,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999999'::Decimal128(20) AND
-	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20)
+	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21857,7 +22229,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999999'::Decimal128(20) AND
-	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20)
+	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -21879,7 +22252,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999999'::Decimal128(20) AND
-	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20)
+	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -21901,7 +22275,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.99999999999999999999'::Decimal128(20) AND
-	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20)
+	r.ColumnNullable = '0.99999999999999999999'::Decimal128(20) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22089,7 +22464,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22122,7 +22498,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22152,7 +22529,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22174,7 +22552,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -22196,7 +22575,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9999999999999999999999999999', 0) AND
-	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0)
+	r.ColumnNullable = toDecimal128('9999999999999999999999999999', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22384,7 +22764,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22417,7 +22798,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22447,7 +22829,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22469,7 +22852,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -22491,7 +22875,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9999999999999999999999999999'::Decimal128(0) AND
-	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0)
+	r.ColumnNullable = '9999999999999999999999999999'::Decimal128(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22679,7 +23064,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22712,7 +23098,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22742,7 +23129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22764,7 +23152,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -22786,7 +23175,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-999999999999999999999999999.9', 1) AND
-	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1)
+	r.ColumnNullable = toDecimal128('999999999999999999999999999.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -22974,7 +23364,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23007,7 +23398,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23037,7 +23429,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23059,7 +23452,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -23081,7 +23475,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-999999999999999999999999999.9'::Decimal128(1) AND
-	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1)
+	r.ColumnNullable = '999999999999999999999999999.9'::Decimal128(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23269,7 +23664,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999999999999', 27) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27)
+	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23302,7 +23698,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999999999999', 27) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27)
+	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23332,7 +23729,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999999999999', 27) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27)
+	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23354,7 +23752,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999999999999', 27) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27)
+	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -23376,7 +23775,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-9.999999999999999999999999999', 27) AND
-	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27)
+	r.ColumnNullable = toDecimal128('9.999999999999999999999999999', 27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23564,7 +23964,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999999999999'::Decimal128(27) AND
-	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27)
+	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23597,7 +23998,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999999999999'::Decimal128(27) AND
-	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27)
+	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23627,7 +24029,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999999999999'::Decimal128(27) AND
-	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27)
+	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23649,7 +24052,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999999999999'::Decimal128(27) AND
-	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27)
+	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -23671,7 +24075,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-9.999999999999999999999999999'::Decimal128(27) AND
-	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27)
+	r.ColumnNullable = '9.999999999999999999999999999'::Decimal128(27) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23859,7 +24264,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999999999999', 28) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23892,7 +24298,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999999999999', 28) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23922,7 +24329,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999999999999', 28) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -23944,7 +24352,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999999999999', 28) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -23966,7 +24375,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDecimal128('-0.9999999999999999999999999999', 28) AND
-	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28)
+	r.ColumnNullable = toDecimal128('0.9999999999999999999999999999', 28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24154,7 +24564,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999999999999'::Decimal128(28) AND
-	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28)
+	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24187,7 +24598,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999999999999'::Decimal128(28) AND
-	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28)
+	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24217,7 +24629,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999999999999'::Decimal128(28) AND
-	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28)
+	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -24239,7 +24652,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999999999999'::Decimal128(28) AND
-	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28)
+	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -24261,7 +24675,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = '-0.9999999999999999999999999999'::Decimal128(28) AND
-	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28)
+	r.ColumnNullable = '0.9999999999999999999999999999'::Decimal128(28) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

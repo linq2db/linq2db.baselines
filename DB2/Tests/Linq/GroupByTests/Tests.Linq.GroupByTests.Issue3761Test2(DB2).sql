@@ -46,7 +46,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n".DATUM < '2019-01-01-00.00.00.000000'
+			"n".DATUM < '2019-01-01-00.00.00.000000' AND "n".DATUM IS NOT NULL
 	) "t1"
 GROUP BY
 	"t1"."Year_1",
@@ -71,7 +71,7 @@ FROM
 		FROM
 			"Issue3761Table" "n_1"
 		WHERE
-			"n_1".DATUM >= '2019-01-01-00.00.00.000000'
+			"n_1".DATUM >= '2019-01-01-00.00.00.000000' AND "n_1".DATUM IS NOT NULL
 	) "t2"
 GROUP BY
 	"t2"."Year_1",

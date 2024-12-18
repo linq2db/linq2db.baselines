@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF([t2].[SUM_1] < 0, 9, [t2].[SUM_1] + 8),
+	IIF([t2].[SUM_1] < 0 AND [t2].[SUM_1] IS NOT NULL, 9, [t2].[SUM_1] + 8),
 	[t2].[SUM_1] + [t2].[SUM_1]
 FROM
 	(

@@ -7,5 +7,5 @@ FROM
 	"Parent" "parent_1",
 	"Child" "child_1",
 	"Parent" "parent_2"
-		LEFT JOIN "GrandChild" "grandChild_1" ON "child_1"."ParentID" = "grandChild_1"."ParentID" AND "child_1"."ChildID" = "grandChild_1"."ChildID"
+		LEFT JOIN "GrandChild" "grandChild_1" ON "child_1"."ParentID" = "grandChild_1"."ParentID" AND "grandChild_1"."ParentID" IS NOT NULL AND "child_1"."ChildID" = "grandChild_1"."ChildID" AND "grandChild_1"."ChildID" IS NOT NULL
 

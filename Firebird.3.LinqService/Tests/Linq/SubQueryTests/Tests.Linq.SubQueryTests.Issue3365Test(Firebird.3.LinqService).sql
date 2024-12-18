@@ -12,7 +12,10 @@ FROM
 				FROM
 					"GrandChild" "a_GrandChildren"
 				WHERE
-					"x"."ParentID" = "a_GrandChildren"."ParentID" AND "x"."ChildID" = "a_GrandChildren"."ChildID"
+					"x"."ParentID" = "a_GrandChildren"."ParentID" AND
+					"a_GrandChildren"."ParentID" IS NOT NULL AND
+					"x"."ChildID" = "a_GrandChildren"."ChildID" AND
+					"a_GrandChildren"."ChildID" IS NOT NULL
 				FETCH NEXT 1 ROWS ONLY
 			) as "Assignee"
 		FROM

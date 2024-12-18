@@ -97,7 +97,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	x."Name" = 'Special'
+	x."Name" = 'Special' AND x."Name" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -155,7 +155,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	x."Name" = 'Special'
+	x."Name" = 'Special' AND x."Name" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

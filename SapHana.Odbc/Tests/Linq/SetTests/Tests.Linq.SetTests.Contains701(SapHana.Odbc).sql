@@ -14,7 +14,10 @@ SELECT
 				"Child" "param"
 					LEFT JOIN "Parent" "a_Parent" ON "param"."ParentID" = "a_Parent"."ParentID"
 			WHERE
-				"a_Parent"."ParentID" = ? AND "a_Parent"."Value1" = ?
+				"a_Parent"."ParentID" = ? AND
+				"a_Parent"."ParentID" IS NOT NULL AND
+				"a_Parent"."Value1" = ? AND
+				"a_Parent"."Value1" IS NOT NULL
 		)
 			THEN 1
 		ELSE 0

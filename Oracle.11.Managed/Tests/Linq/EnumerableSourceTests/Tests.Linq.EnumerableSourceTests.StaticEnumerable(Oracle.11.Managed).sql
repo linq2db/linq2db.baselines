@@ -21,7 +21,7 @@ WHERE
 				UNION ALL
 				SELECT 3 FROM sys.dual) v
 		WHERE
-			v."item" = p."PersonID"
+			v."item" = p."PersonID" AND v."item" IS NOT NULL
 	)
 
 BeforeExecute

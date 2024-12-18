@@ -10,7 +10,7 @@ FROM
 				COUNT(*) as [COUNT_1]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 			WHERE
 				[a_Customer].[CustomerID] = [t2].[CustomerID]
 		) [t1]

@@ -194,7 +194,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] IS NULL AND [r].[Bool3] = ?
+	[r].[Bool1] = ? AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -228,7 +231,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] IS NULL AND [r].[Bool3] = ?
+	[r].[Bool1] = ? AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -245,7 +251,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NULL AND [r].[Bool1] = ? AND [r].[Bool3] = ?
+	[r].[Bool2] IS NULL AND
+	[r].[Bool1] = ? AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -262,7 +271,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] = ? AND [r].[Bool3] IS NULL
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -279,7 +291,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] = ? AND [r].[Bool3] IS NULL
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -296,8 +311,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = ? AND
-	[r].[Bool2] = ?
+	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -331,7 +348,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] = ? AND [r].[Bool3] = ?
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -350,7 +371,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = ? AND [r].[Bool2] = ? AND [r].[Bool3] = ?
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -369,7 +394,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = ? AND [r].[Bool1] = ? AND [r].[Bool2] = ?
+	[r].[Bool3] = ? AND
+	[r].[Bool1] = ? AND
+	[r].[Bool2] = ? AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -386,7 +414,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = ? AND [r].[Bool3] = ?
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool1] = ? AND
+	[r].[Bool3] = ? AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

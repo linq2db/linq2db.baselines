@@ -238,7 +238,10 @@ FROM
 			FROM
 				[SubItem1] [d]
 			WHERE
-				[m_2].[Id] = [d].[ParentId] AND [d].[ParentId] % 2 = 0
+				[m_2].[Id] = [d].[ParentId] AND
+				[d].[ParentId] IS NOT NULL AND
+				[d].[ParentId] % 2 = 0 AND
+				[d].[ParentId] IS NOT NULL
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -285,7 +288,10 @@ FROM
 			FROM
 				[SubItem1] [e]
 			WHERE
-				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+				[m_2].[Id] = [e].[ParentId] AND
+				[e].[ParentId] IS NOT NULL AND
+				[e].[ParentId] % 2 = 0 AND
+				[e].[ParentId] IS NOT NULL
 			ORDER BY
 				[e].[Id]
 		) [d]
@@ -332,10 +338,10 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
-				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
+		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] AND [m_2].[cond] IS NOT NULL AND [d_1].[ParentId] IS NOT NULL OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
 
 BeforeExecute
 -- SqlServer.2014
@@ -356,8 +362,8 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -399,10 +405,10 @@ FROM
 				WHERE
 					[m_1].[Id] > 1
 			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
-				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
+		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] AND [m_2].[cond] IS NOT NULL AND [d_1].[ParentId] IS NOT NULL OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
 
 BeforeExecute
 -- SqlServer.2014
@@ -423,8 +429,8 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
+		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -460,9 +466,10 @@ FROM
 		WHERE
 			[m_1].[Id] > 1
 	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 WHERE
-	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
+	[d].[ParentId] % 2 = 0 AND [d].[ParentId] IS NOT NULL AND
+	[d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
 
 BeforeExecute
 DisposeTransaction

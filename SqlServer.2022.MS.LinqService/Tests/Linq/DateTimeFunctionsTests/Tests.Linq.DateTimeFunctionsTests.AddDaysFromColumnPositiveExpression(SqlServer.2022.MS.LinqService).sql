@@ -52,7 +52,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0)
+	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0) AND
+	DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

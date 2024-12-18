@@ -6,5 +6,5 @@ SELECT
 FROM
 	Doctor p
 WHERE
-	lowerUTF8(p.Taxonomy) = 'psychiatry'
+	lowerUTF8(p.Taxonomy) = 'psychiatry' AND lowerUTF8(p.Taxonomy) IS NOT NULL
 

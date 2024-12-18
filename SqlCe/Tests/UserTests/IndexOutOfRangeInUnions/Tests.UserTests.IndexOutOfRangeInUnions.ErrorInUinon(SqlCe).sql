@@ -52,7 +52,8 @@ BeforeExecute
 SELECT
 	[doSap].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap].[DocStatus] = 'O' THEN 'Aberto'
+		WHEN [doSap].[DocStatus] = 'O' AND [doSap].[DocStatus] IS NOT NULL
+			THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]
@@ -62,7 +63,8 @@ UNION
 SELECT
 	[doSap_1].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap_1].[DocStatus] = 'O' THEN 'Aberto'
+		WHEN [doSap_1].[DocStatus] = 'O' AND [doSap_1].[DocStatus] IS NOT NULL
+			THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]
@@ -72,7 +74,8 @@ UNION
 SELECT
 	[doSap_2].[DocEntry] as [NumeroInterno],
 	CASE
-		WHEN [doSap_2].[DocStatus] = 'O' THEN 'Aberto'
+		WHEN [doSap_2].[DocStatus] = 'O' AND [doSap_2].[DocStatus] IS NOT NULL
+			THEN 'Aberto'
 		ELSE 'Fechado'
 	END as [StatusValor],
 	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]

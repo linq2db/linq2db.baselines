@@ -49,11 +49,11 @@ SELECT
 	[g_1].[GroupId],
 	SUM([g_1].[DataValue]),
 	SUM([g_1].[DataValue]),
-	SUM(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	SUM(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
+	SUM(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL, [g_1].[DataValue], NULL)),
+	SUM(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL, [g_1].[DataValue], NULL)),
 	SUM(DISTINCT [g_1].[DataValue]),
-	SUM(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	SUM(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL))
+	SUM(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL, [g_1].[DataValue], NULL)),
+	SUM(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL, [g_1].[DataValue], NULL))
 FROM
 	[AggregationData] [g_1]
 GROUP BY

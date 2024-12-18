@@ -197,9 +197,9 @@ FROM
 				FROM
 					"EntityMA" t1
 			) t2
-				INNER JOIN "EntityMB" d ON t2."Id" = d.FK
+				INNER JOIN "EntityMB" d ON t2."Id" = d.FK AND d.FK IS NOT NULL
 	) m_1
-		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1.FK
+		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1.FK AND d_1.FK IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -212,7 +212,7 @@ SELECT
 	d."Id"
 FROM
 	"EntityMA" m_1
-		INNER JOIN "EntityMB" d ON m_1."Id" = d.FK
+		INNER JOIN "EntityMB" d ON m_1."Id" = d.FK AND d.FK IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

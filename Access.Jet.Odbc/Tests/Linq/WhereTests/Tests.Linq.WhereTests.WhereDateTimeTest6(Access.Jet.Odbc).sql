@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	DateValue([t1].[DateTimeValue]) = DateValue(DateSerial(2009, 9, 20))
+	DateValue([t1].[DateTimeValue]) = DateValue(DateSerial(2009, 9, 20)) AND
+	DateValue([t1].[DateTimeValue]) IS NOT NULL
 

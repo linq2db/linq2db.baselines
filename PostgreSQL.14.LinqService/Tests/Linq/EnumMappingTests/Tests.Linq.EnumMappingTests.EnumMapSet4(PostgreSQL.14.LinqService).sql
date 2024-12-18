@@ -32,7 +32,10 @@ UPDATE
 SET
 	"BigIntValue" = :TestField
 WHERE
-	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	"LinqDataTypes"."ID" = 101 AND
+	"LinqDataTypes"."ID" IS NOT NULL AND
+	"LinqDataTypes"."BigIntValue" = 11 AND
+	"LinqDataTypes"."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

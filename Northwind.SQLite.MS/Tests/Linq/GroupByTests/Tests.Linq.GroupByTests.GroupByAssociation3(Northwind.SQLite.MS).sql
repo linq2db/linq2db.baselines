@@ -5,7 +5,7 @@ SELECT
 	[a_Category].[CategoryName]
 FROM
 	[Products] [g_1]
-		LEFT JOIN [Categories] [a_Category] ON [g_1].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON [g_1].[CategoryID] = [a_Category].[CategoryID] AND [g_1].[CategoryID] IS NOT NULL
 GROUP BY
 	[a_Category].[CategoryID],
 	[a_Category].[CategoryName]

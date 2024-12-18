@@ -66,7 +66,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."DecFloat16" = @DecFloat16
+	"t1"."DecFloat16" = @DecFloat16 AND "t1"."DecFloat16" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -78,7 +78,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."DecFloat30" = @DecFloat30
+	"t1"."DecFloat30" = @DecFloat30 AND "t1"."DecFloat30" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -90,7 +90,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."DecFloat34" = @DecFloat34
+	"t1"."DecFloat34" = @DecFloat34 AND "t1"."DecFloat34" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -102,7 +102,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."DecFloat" = @DecFloat
+	"t1"."DecFloat" = @DecFloat AND "t1"."DecFloat" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -114,7 +114,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."DateTimeTZ" = @DateTimeTZ
+	"t1"."DateTimeTZ" = @DateTimeTZ AND "t1"."DateTimeTZ" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -126,7 +126,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."TimeTZ" = @TimeTZ
+	"t1"."TimeTZ" = @TimeTZ AND "t1"."TimeTZ" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -136,7 +136,8 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."Int128" = -170141183460469231731687303715884105728
+	"t1"."Int128" = -170141183460469231731687303715884105728 AND
+	"t1"."Int128" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4

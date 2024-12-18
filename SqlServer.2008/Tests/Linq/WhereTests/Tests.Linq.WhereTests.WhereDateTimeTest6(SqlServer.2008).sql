@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	CAST([t1].[DateTimeValue] AS Date) = CAST(CAST(N'2009-09-20' AS DateTime2) AS Date)
+	CAST([t1].[DateTimeValue] AS Date) = CAST(CAST(N'2009-09-20' AS DateTime2) AS Date) AND
+	CAST([t1].[DateTimeValue] AS Date) IS NOT NULL
 

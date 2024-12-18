@@ -12,7 +12,7 @@ FROM
 		FROM
 			"Parent" p
 	) m_1
-		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID" AND d."ParentID" IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

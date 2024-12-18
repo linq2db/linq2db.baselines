@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[BigIntValue] = @value
+	[t].[BigIntValue] = @value AND [t].[BigIntValue] IS NOT NULL
 

@@ -364,13 +364,15 @@ FROM
 			"t"."GroupId" as "Key_1",
 			COUNT(*) as COUNT_1,
 			COUNT(CASE
-				WHEN Mod("t"."DataValue", 2) = 0 THEN 1
+				WHEN Mod("t"."DataValue", 2) = 0 AND Mod("t"."DataValue", 2) IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as COUNT_2,
 			COUNT(*) as COUNT_3,
 			COUNT(DISTINCT "t"."DataValue") as COUNT_4,
 			COUNT(CASE
-				WHEN Mod("t"."DataValue", 2) = 0 THEN 1
+				WHEN Mod("t"."DataValue", 2) = 0 AND Mod("t"."DataValue", 2) IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as COUNT_5
 		FROM
@@ -393,7 +395,7 @@ FROM
 						"x"."DataValue" IS NOT NULL AND "t7"."Key_1" = "x"."GroupId"
 				) "x_1"
 			WHERE
-				Mod("x_1"."DataValue", 2) = 0
+				Mod("x_1"."DataValue", 2) = 0 AND Mod("x_1"."DataValue", 2) IS NOT NULL
 		) "t1" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
@@ -405,8 +407,10 @@ FROM
 					FROM
 						"AggregationData" "t_1"
 					WHERE
-						"t_1"."DataValue" IS NOT NULL AND "t7"."Key_1" = "t_1"."GroupId" AND
-						Mod("t_1"."DataValue", 2) = 0
+						"t_1"."DataValue" IS NOT NULL AND
+						"t7"."Key_1" = "t_1"."GroupId" AND
+						Mod("t_1"."DataValue", 2) = 0 AND
+						Mod("t_1"."DataValue", 2) IS NOT NULL
 				) "t2"
 		) "t3" ON 1=1
 		LEFT JOIN LATERAL (
@@ -419,11 +423,13 @@ FROM
 					FROM
 						"AggregationData" "x_2"
 					WHERE
-						"x_2"."DataValue" IS NOT NULL AND "t7"."Key_1" = "x_2"."GroupId" AND
-						Mod("x_2"."DataValue", 2) = 0
+						"x_2"."DataValue" IS NOT NULL AND
+						"t7"."Key_1" = "x_2"."GroupId" AND
+						Mod("x_2"."DataValue", 2) = 0 AND
+						Mod("x_2"."DataValue", 2) IS NOT NULL
 				) "x_3"
 			WHERE
-				Mod("x_3"."DataValue", 2) = 0
+				Mod("x_3"."DataValue", 2) = 0 AND Mod("x_3"."DataValue", 2) IS NOT NULL
 		) "t4" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
@@ -435,8 +441,10 @@ FROM
 					FROM
 						"AggregationData" "t_2"
 					WHERE
-						"t_2"."DataValue" IS NOT NULL AND "t7"."Key_1" = "t_2"."GroupId" AND
-						Mod("t_2"."DataValue", 2) = 0
+						"t_2"."DataValue" IS NOT NULL AND
+						"t7"."Key_1" = "t_2"."GroupId" AND
+						Mod("t_2"."DataValue", 2) = 0 AND
+						Mod("t_2"."DataValue", 2) IS NOT NULL
 				) "t5"
 		) "t6" ON 1=1
 

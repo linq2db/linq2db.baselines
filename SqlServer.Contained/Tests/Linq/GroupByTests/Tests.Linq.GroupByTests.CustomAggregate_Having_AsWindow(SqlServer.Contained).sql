@@ -22,7 +22,7 @@ FROM
 			[g_1].[ChildID],
 			[a_Parent].[ParentID]
 		HAVING
-			[a_Parent].[ParentID] = @groupId
+			[a_Parent].[ParentID] = @groupId AND [a_Parent].[ParentID] IS NOT NULL
 	) [t1]
 ORDER BY
 	[t1].[count_1] DESC

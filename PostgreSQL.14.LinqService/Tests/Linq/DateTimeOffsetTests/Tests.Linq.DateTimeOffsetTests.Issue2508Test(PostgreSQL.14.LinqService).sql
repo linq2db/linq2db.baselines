@@ -294,7 +294,8 @@ SELECT
 FROM
 	"Transactions" t
 WHERE
-	t."TransactionDate" > :value + 200 * Interval '1 Minute'
+	t."TransactionDate" > :value + 200 * Interval '1 Minute' AND
+	Interval '1 Minute' IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -20,7 +20,7 @@ FROM
 		FROM
 			GrandChild g_1
 		WHERE
-			g_1.ParentID >= 4
+			g_1.ParentID >= 4 AND g_1.ParentID IS NOT NULL
 	) tt
 GROUP BY
 	tt.Key_1

@@ -40,7 +40,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(`e`.`StringValue`, '1') = 'StrValue1'
+	Concat(`e`.`StringValue`, '1') = 'StrValue1' AND `e`.`StringValue` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -212,7 +212,7 @@ WHERE
 					ROWNUM <= :take
 			) t2
 		WHERE
-			"Parent"."ParentID" = t2."ParentID" AND ("Parent"."Value1" = t2."Value1" OR "Parent"."Value1" IS NULL AND t2."Value1" IS NULL)
+			"Parent"."ParentID" = t2."ParentID" AND ("Parent"."Value1" = t2."Value1" AND "Parent"."Value1" IS NOT NULL AND t2."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND t2."Value1" IS NULL)
 	)
 
 BeforeExecute

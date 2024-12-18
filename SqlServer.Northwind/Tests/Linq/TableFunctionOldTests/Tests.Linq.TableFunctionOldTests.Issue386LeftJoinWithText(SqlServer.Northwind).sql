@@ -16,7 +16,7 @@ SELECT
 	[t].[ReorderLevel]
 FROM
 	[Products] [t]
-		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), @term) [c_1] ON [c_1].[KEY] = [t].[CategoryID]
+		LEFT JOIN FREETEXTTABLE([Categories], ([Description]), @term) [c_1] ON [c_1].[KEY] = [t].[CategoryID] AND [t].[CategoryID] IS NOT NULL
 ORDER BY
 	[t].[ProductName] DESC
 

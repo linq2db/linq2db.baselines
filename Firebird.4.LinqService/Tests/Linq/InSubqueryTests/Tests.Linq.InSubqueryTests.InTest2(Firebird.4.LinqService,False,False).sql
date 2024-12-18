@@ -14,7 +14,7 @@ WHERE
 		FROM
 			"Parent" "p"
 		WHERE
-			"p"."Value1" IS NOT NULL AND ("c_1"."ParentID" = "p"."Value1" OR "c_1"."ParentID" IS NULL AND "p"."Value1" IS NULL)
+			"p"."Value1" IS NOT NULL AND ("c_1"."ParentID" = "p"."Value1" AND "c_1"."ParentID" IS NOT NULL AND "p"."Value1" IS NOT NULL OR "c_1"."ParentID" IS NULL AND "p"."Value1" IS NULL)
 	)
 
 BeforeExecute

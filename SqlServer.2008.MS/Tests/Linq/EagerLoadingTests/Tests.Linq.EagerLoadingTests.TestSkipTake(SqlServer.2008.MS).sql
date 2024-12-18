@@ -112,7 +112,7 @@ FROM
 		FROM
 			[MasterClass] [m_1]
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -144,7 +144,7 @@ FROM
 					FROM
 						[DetailClass] [d]
 					WHERE
-						[m_2].[Id1] = [d].[MasterId]
+						[m_2].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 				) [t1]
 			WHERE
 				[t1].[RN] > 1 AND [t1].[RN] <= 3
@@ -180,7 +180,7 @@ FROM
 		FROM
 			[MasterClass] [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

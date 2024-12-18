@@ -41,7 +41,8 @@ FROM
 	`TestConstantsData` `e`
 WHERE
 	`e`.`GuidValue` = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	`e`.`GuidNullableValue` = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+	`e`.`GuidNullableValue` = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
+	`e`.`GuidNullableValue` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

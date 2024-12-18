@@ -1,0 +1,1688 @@
+﻿BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+DROP TABLE [BooleanTable]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+CREATE TABLE [BooleanTable]
+(
+	[Id]     Int NOT NULL,
+	[Value1] Int NOT NULL,
+	[Value2] Int NOT NULL,
+	[Value4] Int     NULL,
+	[Value5] Int     NULL
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 3
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 4
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 6
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 7
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 8
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 9
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 10
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 11
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 12
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 13
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 14
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 15
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 16
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 17
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 18
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 19
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 20
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 21
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 22
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 23
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 24
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 25
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 26
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 27
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 28
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 29
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 30
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 31
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 32
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 33
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 34
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 35
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Id Integer -- Int32
+SET     @Id = 36
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Integer -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Integer -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Integer -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @One Integer -- Int32
+SET     @One = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@One IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Zero Integer -- Int32
+SET     @Zero = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@Zero IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @OneN Integer -- Int32
+SET     @OneN = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@OneN IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @ZeroN Integer -- Int32
+SET     @ZeroN = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@ZeroN IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Null Integer -- Int32
+SET     @Null = NULL
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@Null IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @One Integer -- Int32
+SET     @One = 1
+DECLARE @One_1 Integer -- Int32
+SET     @One_1 = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@One IN (0, 1) OR @One_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Zero Integer -- Int32
+SET     @Zero = 0
+DECLARE @Zero_1 Integer -- Int32
+SET     @Zero_1 = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@Zero IN (0, 1) OR @Zero_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @OneN Integer -- Int32
+SET     @OneN = 1
+DECLARE @OneN_1 Integer -- Int32
+SET     @OneN_1 = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@OneN IN (0, 1) OR @OneN_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @ZeroN Integer -- Int32
+SET     @ZeroN = 0
+DECLARE @ZeroN_1 Integer -- Int32
+SET     @ZeroN_1 = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@ZeroN IN (0, 1) OR @ZeroN_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Null Integer -- Int32
+SET     @Null = NULL
+DECLARE @Null_1 Integer -- Int32
+SET     @Null_1 = NULL
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@Null IN (0, 1) OR @Null_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @One Integer -- Int32
+SET     @One = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@One NOT IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Zero Integer -- Int32
+SET     @Zero = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	@Zero NOT IN (0, 1)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @OneN Integer -- Int32
+SET     @OneN = 1
+DECLARE @OneN_1 Integer -- Int32
+SET     @OneN_1 = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@OneN NOT IN (0, 1) OR @OneN_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @ZeroN Integer -- Int32
+SET     @ZeroN = 0
+DECLARE @ZeroN_1 Integer -- Int32
+SET     @ZeroN_1 = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@ZeroN NOT IN (0, 1) OR @ZeroN_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Null Integer -- Int32
+SET     @Null = NULL
+DECLARE @Null_1 Integer -- Int32
+SET     @Null_1 = NULL
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@Null NOT IN (0, 1) OR @Null_1 IS NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @One Integer -- Int32
+SET     @One = 1
+DECLARE @One_1 Integer -- Int32
+SET     @One_1 = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@One NOT IN (0, 1) AND @One_1 IS NOT NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Zero Integer -- Int32
+SET     @Zero = 0
+DECLARE @Zero_1 Integer -- Int32
+SET     @Zero_1 = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@Zero NOT IN (0, 1) AND @Zero_1 IS NOT NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @OneN Integer -- Int32
+SET     @OneN = 1
+DECLARE @OneN_1 Integer -- Int32
+SET     @OneN_1 = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@OneN NOT IN (0, 1) AND @OneN_1 IS NOT NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @ZeroN Integer -- Int32
+SET     @ZeroN = 0
+DECLARE @ZeroN_1 Integer -- Int32
+SET     @ZeroN_1 = 0
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@ZeroN NOT IN (0, 1) AND @ZeroN_1 IS NOT NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @Null Integer -- Int32
+SET     @Null = NULL
+DECLARE @Null_1 Integer -- Int32
+SET     @Null_1 = NULL
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	(@Null NOT IN (0, 1) AND @Null_1 IS NOT NULL)
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value4],
+	[t1].[Value5]
+FROM
+	[BooleanTable] [t1]
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+DROP TABLE [BooleanTable]
+

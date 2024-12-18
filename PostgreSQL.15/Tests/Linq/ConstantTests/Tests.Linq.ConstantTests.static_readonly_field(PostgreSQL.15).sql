@@ -41,7 +41,8 @@ FROM
 	"TestConstantsData" e
 WHERE
 	e."GuidValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid AND
-	e."GuidNullableValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
+	e."GuidNullableValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid AND
+	e."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

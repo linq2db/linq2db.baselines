@@ -21,7 +21,7 @@ FROM
 				FETCH NEXT 1 ROWS ONLY
 			) "t2"
 	) "m_1"
-		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID" AND "m_1"."ParentID" IS NOT NULL
 
 BeforeExecute
 --  Firebird.3 Firebird3

@@ -671,9 +671,9 @@ FROM
 			[a_ObjectB].[Id]
 		FROM
 			[EntityA] [t1]
-				INNER JOIN [EntityB] [a_ObjectB] ON ([t1].[FK] = [a_ObjectB].[Id])
+				INNER JOIN [EntityB] [a_ObjectB] ON ([t1].[FK] = [a_ObjectB].[Id] AND [t1].[FK] IS NOT NULL)
 	) [m_1]
-		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK])
+		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK] AND [d].[FK] IS NOT NULL)
 
 BeforeExecute
 DisposeTransaction
@@ -688,7 +688,7 @@ SELECT
 	[a_ObjectB].[Id]
 FROM
 	[EntityA] [t1]
-		INNER JOIN [EntityB] [a_ObjectB] ON ([t1].[FK] = [a_ObjectB].[Id])
+		INNER JOIN [EntityB] [a_ObjectB] ON ([t1].[FK] = [a_ObjectB].[Id] AND [t1].[FK] IS NOT NULL)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

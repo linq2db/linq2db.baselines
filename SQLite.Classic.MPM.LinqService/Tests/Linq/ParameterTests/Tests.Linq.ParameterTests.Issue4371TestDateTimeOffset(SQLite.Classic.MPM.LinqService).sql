@@ -45,7 +45,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnDTO] = @dto
+	[r].[ColumnDTO] = @dto AND [r].[ColumnDTO] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

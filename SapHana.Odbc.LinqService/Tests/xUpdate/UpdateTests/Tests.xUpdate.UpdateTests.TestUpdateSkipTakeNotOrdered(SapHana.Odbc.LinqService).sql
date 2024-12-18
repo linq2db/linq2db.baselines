@@ -205,6 +205,6 @@ WHERE
 				LIMIT ? OFFSET ?
 			) "t1"
 		WHERE
-			"Parent"."ParentID" = "t1"."ParentID" AND ("Parent"."Value1" = "t1"."Value1" OR "Parent"."Value1" IS NULL AND "t1"."Value1" IS NULL)
+			"Parent"."ParentID" = "t1"."ParentID" AND ("Parent"."Value1" = "t1"."Value1" AND "Parent"."Value1" IS NOT NULL AND "t1"."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND "t1"."Value1" IS NULL)
 	)
 

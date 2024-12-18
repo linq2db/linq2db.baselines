@@ -52,11 +52,11 @@ FROM
 			[a_Employee].[EmployeeID] as [EmployeeId]
 		FROM
 			[Orders] [e]
-				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND (NOT [a_Employee].[IsDeleted] OR NOT [a_Employee].[IsDeleted])
+				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[EmployeeID] IS NOT NULL AND (NOT [a_Employee].[IsDeleted] OR NOT [a_Employee].[IsDeleted])
 		WHERE
 			NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]
 	) [m_1]
-		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
+		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID] AND [m_1].[EmployeeId] IS NOT NULL
 		INNER JOIN [Territories] [e_1] ON [d].[TerritoryID] = [e_1].[TerritoryID]
 WHERE
 	(NOT [e_1].[IsDeleted] OR NOT [e_1].[IsDeleted]) AND
@@ -132,7 +132,7 @@ SELECT
 	[o].[OrderID]
 FROM
 	[Orders] [o]
-		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID] AND (NOT [a_Employee].[IsDeleted] OR NOT [a_Employee].[IsDeleted])
+		LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID] AND [o].[EmployeeID] IS NOT NULL AND (NOT [a_Employee].[IsDeleted] OR NOT [a_Employee].[IsDeleted])
 WHERE
 	NOT [o].[IsDeleted] OR NOT [o].[IsDeleted]
 

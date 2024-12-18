@@ -135,7 +135,8 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+	[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) AND
+	DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) IS NOT NULL
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
@@ -168,7 +169,8 @@ FROM
 				FROM
 					[Booking] [t]
 				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+					[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) AND
+					DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) IS NOT NULL
 			) [e]
 	) [q]
 WHERE
@@ -206,7 +208,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) AND
+				DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) IS NOT NULL
 		) [e]
 )
 SELECT
@@ -260,7 +263,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) AND
+				DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) IS NOT NULL
 		) [e]
 )
 SELECT
@@ -314,7 +318,8 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) AND
+				DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)) IS NOT NULL
 		) [e]
 )
 SELECT

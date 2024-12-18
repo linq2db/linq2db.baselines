@@ -23,7 +23,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	toInt64(1) = t1.BigIntValue
+	toInt64(1) = t1.BigIntValue AND t1.BigIntValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

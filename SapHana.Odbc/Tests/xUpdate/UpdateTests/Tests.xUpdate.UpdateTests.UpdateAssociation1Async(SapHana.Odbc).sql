@@ -42,6 +42,6 @@ WHERE
 				LEFT JOIN "Parent" "a_Parent" ON "child_1"."ParentID" = "a_Parent"."ParentID"
 		WHERE
 			"child_1"."ChildID" = 10000 AND "Parent"."ParentID" = "a_Parent"."ParentID" AND
-			("Parent"."Value1" = "a_Parent"."Value1" OR "Parent"."Value1" IS NULL AND "a_Parent"."Value1" IS NULL)
+			("Parent"."Value1" = "a_Parent"."Value1" AND "Parent"."Value1" IS NOT NULL AND "a_Parent"."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND "a_Parent"."Value1" IS NULL)
 	)
 

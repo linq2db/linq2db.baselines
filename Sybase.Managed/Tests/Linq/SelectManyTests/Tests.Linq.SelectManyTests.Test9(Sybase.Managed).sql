@@ -23,11 +23,15 @@ FROM
 			) [t1],
 			[Parent] [c_2]
 	) [sub]
-		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID]
-		LEFT JOIN [Child] [a_Child] ON [g_1].[ParentID] = [a_Child].[ParentID] AND [g_1].[ChildID] = [a_Child].[ChildID]
+		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID] AND [g_1].[ParentID] IS NOT NULL
+		LEFT JOIN [Child] [a_Child] ON [g_1].[ParentID] = [a_Child].[ParentID] AND [g_1].[ParentID] IS NOT NULL AND [g_1].[ChildID] = [a_Child].[ChildID] AND [g_1].[ChildID] IS NOT NULL
 WHERE
-	[sub].[ParentID] = [g_1].[ParentID] AND [g_1].[ParentID] = [sub].[ParentID_1] AND
-	[a_Child].[ChildID] = 1
+	[sub].[ParentID] = [g_1].[ParentID] AND
+	[g_1].[ParentID] IS NOT NULL AND
+	[g_1].[ParentID] = [sub].[ParentID_1] AND
+	[g_1].[ParentID] IS NOT NULL AND
+	[a_Child].[ChildID] = 1 AND
+	[a_Child].[ChildID] IS NOT NULL
 ORDER BY
 	[sub].[ParentID]
 

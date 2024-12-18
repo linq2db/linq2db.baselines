@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Doctor] [p]
 WHERE
-	LCase([p].[Taxonomy]) = 'psychiatry'
+	LCase([p].[Taxonomy]) = 'psychiatry' AND LCase([p].[Taxonomy]) IS NOT NULL
 

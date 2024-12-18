@@ -32,7 +32,10 @@ UPDATE
 SET
 	[r].[BigIntValue] = ?
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 101 AND
+	[r].[ID] IS NOT NULL AND
+	[r].[BigIntValue] = 11 AND
+	[r].[BigIntValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

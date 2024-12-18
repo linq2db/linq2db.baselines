@@ -49,20 +49,24 @@ SELECT
 	AVG([g_1].[DataValue]),
 	AVG([g_1].[DataValue]),
 	AVG(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL
+			THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL
+			THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	AVG(DISTINCT [g_1].[DataValue]),
 	AVG(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL
+			THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 AND [g_1].[DataValue] IS NOT NULL
+			THEN [g_1].[DataValue]
 		ELSE NULL
 	END)
 FROM

@@ -81,7 +81,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -139,7 +139,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

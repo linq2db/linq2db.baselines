@@ -135,7 +135,7 @@ FROM
 				cc.Code
 			FROM
 				Issue4160City cc
-		) t1 ON (t1.Code = pe.Code OR t1.Code IS NULL AND pe.Code IS NULL) AND t1.rn <= 1
+		) t1 ON (t1.Code = pe.Code AND t1.Code IS NOT NULL AND pe.Code IS NOT NULL OR t1.Code IS NULL AND pe.Code IS NULL) AND t1.rn <= 1
 
 BeforeExecute
 -- Informix.DB2 Informix

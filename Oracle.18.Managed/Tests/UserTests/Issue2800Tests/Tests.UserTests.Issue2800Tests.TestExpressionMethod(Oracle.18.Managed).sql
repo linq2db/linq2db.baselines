@@ -85,7 +85,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	x."Name" = 'Special'
+	x."Name" = 'Special' AND x."Name" IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -143,7 +143,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	x."Name" = 'Special'
+	x."Name" = 'Special' AND x."Name" IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -46,7 +46,8 @@ SELECT
 FROM
 	"Transactions" t
 WHERE
-	Floor(Extract(day From ('2010-01-' || Lpad(t."TransactionId"::text,2,'0'))::Date))::Int > 0
+	Floor(Extract(day From ('2010-01-' || Lpad(t."TransactionId"::text,2,'0'))::Date))::Int > 0 AND
+	Floor(Extract(day From ('2010-01-' || Lpad(t."TransactionId"::text,2,'0'))::Date))::Int IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

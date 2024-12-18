@@ -270,11 +270,17 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	d."TransactionDate"
+	d."Day_2"
 FROM
-	"Transactions" d
+	(
+		SELECT
+			Floor(Extract(day From t."TransactionDate"))::Int as "Day_1",
+			t."TransactionDate" as "Day_2"
+		FROM
+			"Transactions" t
+	) d
 WHERE
-	Floor(Extract(day From d."TransactionDate"))::Int > 0
+	d."Day_1" > 0 AND d."Day_1" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

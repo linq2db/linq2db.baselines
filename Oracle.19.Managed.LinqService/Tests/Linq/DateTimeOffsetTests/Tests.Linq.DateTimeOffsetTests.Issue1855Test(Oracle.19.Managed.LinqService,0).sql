@@ -85,7 +85,8 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."SomeDateTimeOffset" + :interval * INTERVAL '1' SECOND >= :clientSideIn
+	r."SomeDateTimeOffset" + :interval * INTERVAL '1' SECOND >= :clientSideIn AND
+	INTERVAL '1' SECOND IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

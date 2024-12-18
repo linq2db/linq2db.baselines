@@ -63,7 +63,8 @@ WHERE
 			[Tagging] [t_1]
 				INNER JOIN [Tag] [t] ON [t_1].[TagId] = [t].[Id]
 		WHERE
-			[t].[Name] = N'Visu' AND [t_1].[TaggableId] = [i].[Id]
+			[t].[Name] = N'Visu' AND [t].[Name] IS NOT NULL AND
+			[t_1].[TaggableId] = [i].[Id]
 	)
 
 BeforeExecute

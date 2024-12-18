@@ -56,7 +56,7 @@ WHERE
 				UNION ALL
 				SELECT 3, 'Doe' FROM sys.dual) r
 		WHERE
-			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
+			t."Id" = r."Id" AND (t."Value" = r."Value" AND t."Value" IS NOT NULL AND r."Value" IS NOT NULL OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
 
 BeforeExecute

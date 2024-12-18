@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	[c_1].[City] >= N'Seattle'
+	[c_1].[City] >= N'Seattle' AND [c_1].[City] IS NOT NULL
 

@@ -18,7 +18,7 @@ WHERE
 				(1), (2), (3)
 			) [v]([item])
 		WHERE
-			[v].[item] = [p].[PersonID]
+			[v].[item] = [p].[PersonID] AND [v].[item] IS NOT NULL
 	)
 
 BeforeExecute

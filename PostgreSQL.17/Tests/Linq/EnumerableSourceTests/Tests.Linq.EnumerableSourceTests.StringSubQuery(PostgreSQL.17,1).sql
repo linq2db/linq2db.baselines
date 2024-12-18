@@ -18,6 +18,6 @@ WHERE
 				('j'), ('o'), ('h'), ('n')
 			) x(item)
 		WHERE
-			Position(x.item in t."FirstName") - 1 > 0
+			Position(x.item in t."FirstName") - 1 > 0 AND Position(x.item in t."FirstName") IS NOT NULL
 	)
 

@@ -105,7 +105,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -163,7 +163,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

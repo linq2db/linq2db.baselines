@@ -49,20 +49,24 @@ SELECT
 	sumOrNull(g_1.DataValue),
 	sumOrNull(g_1.DataValue),
 	sumOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	sumOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	sumOrNull(DISTINCT g_1.DataValue),
 	sumOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	sumOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END)
 FROM

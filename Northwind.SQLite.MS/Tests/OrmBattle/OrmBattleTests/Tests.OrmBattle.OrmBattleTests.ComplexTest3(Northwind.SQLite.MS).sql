@@ -12,9 +12,9 @@ FROM
 			[a_Supplier].[SupplierID]
 		FROM
 			[Products] [p]
-				LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
+				LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID] AND [p].[SupplierID] IS NOT NULL
 	) [m_1]
-		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
+		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID] AND [m_1].[SupplierID] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -35,5 +35,5 @@ SELECT
 	[a_Supplier].[SupplierID]
 FROM
 	[Products] [p]
-		LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
+		LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID] AND [p].[SupplierID] IS NOT NULL
 

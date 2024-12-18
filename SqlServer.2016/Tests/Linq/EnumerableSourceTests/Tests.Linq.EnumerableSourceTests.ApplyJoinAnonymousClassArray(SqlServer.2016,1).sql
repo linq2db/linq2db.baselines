@@ -13,5 +13,5 @@ FROM
 			(1,N'Janet',[p].[LastName]), (1,N'Doe',[p].[LastName])
 		) [n]([ID], [Name], [Sub])
 WHERE
-	[p].[LastName] = [n].[Name]
+	[p].[LastName] = [n].[Name] AND [n].[Name] IS NOT NULL
 

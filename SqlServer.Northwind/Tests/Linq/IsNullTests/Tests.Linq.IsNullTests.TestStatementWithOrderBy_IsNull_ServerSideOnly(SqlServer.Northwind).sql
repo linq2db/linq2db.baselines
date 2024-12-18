@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[CategoryID] = @categoryId
+	[p].[CategoryID] = @categoryId AND [p].[CategoryID] IS NOT NULL
 ORDER BY
 	ISNULL([p].[UnitPrice], 10) DESC
 

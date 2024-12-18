@@ -47,7 +47,7 @@ SELECT
 		FROM
 			"AllTypes" t2
 		WHERE
-			t2.ID = 1000 AND t2."guidDataType" = :val
+			t2.ID = 1000 AND t2."guidDataType" = :val AND t2."guidDataType" IS NOT NULL
 	)
 FROM
 	"AllTypes" t1

@@ -43,7 +43,8 @@ WHERE
 		WHERE
 			child_1."ChildID" = 10000 AND
 			a_Parent."ParentID" > 0 AND
+			a_Parent."ParentID" IS NOT NULL AND
 			"Parent"."ParentID" = a_Parent."ParentID" AND
-			("Parent"."Value1" = a_Parent."Value1" OR "Parent"."Value1" IS NULL AND a_Parent."Value1" IS NULL)
+			("Parent"."Value1" = a_Parent."Value1" AND "Parent"."Value1" IS NOT NULL AND a_Parent."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND a_Parent."Value1" IS NULL)
 	)
 

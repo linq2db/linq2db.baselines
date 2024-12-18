@@ -141,7 +141,7 @@ DELETE [a_GrandChildren]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
-		INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
+		INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_GrandChildren].[ParentID] IS NOT NULL AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID] AND [a_GrandChildren].[ChildID] IS NOT NULL
 WHERE
 	[p].[ParentID] >= 1000
 
@@ -162,7 +162,7 @@ DELETE [c_1]
 FROM
 	[GrandChild] [c_1]
 WHERE
-	[c_1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000 AND [c_1].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

@@ -62,7 +62,7 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	'[{"Value":"Value1"}]' = t.Value2
+	'[{"Value":"Value1"}]' = t.Value2 AND t.Value2 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

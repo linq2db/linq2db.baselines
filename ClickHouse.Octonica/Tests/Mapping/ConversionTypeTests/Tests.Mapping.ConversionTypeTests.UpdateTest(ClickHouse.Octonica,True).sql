@@ -47,7 +47,7 @@ ALTER TABLE
 UPDATE
 	Data = '***OOO***'
 WHERE
-	Data = '***XXX***'
+	Data = '***XXX***' AND Data IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,7 +57,7 @@ ALTER TABLE
 UPDATE
 	Data = '***SSS***'
 WHERE
-	Data = '***HHH***'
+	Data = '***HHH***' AND Data IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

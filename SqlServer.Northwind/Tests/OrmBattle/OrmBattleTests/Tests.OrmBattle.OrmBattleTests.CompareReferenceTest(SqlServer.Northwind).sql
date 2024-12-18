@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Customers] [c_1]
 		CROSS JOIN [Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 WHERE
 	[c_1].[CustomerID] = [a_Customer].[CustomerID]
 

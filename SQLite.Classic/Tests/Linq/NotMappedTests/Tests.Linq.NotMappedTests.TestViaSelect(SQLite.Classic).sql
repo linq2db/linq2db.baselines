@@ -130,11 +130,11 @@ SELECT
 	[a_Association2].[ParentId]
 FROM
 	[SuperClass] [t]
-		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [t].[Id]
-		LEFT JOIN [Subclass1] [a_Association1] ON [t].[Id] = [a_Association1].[ParentId]
-		LEFT JOIN [Subclass2] [s_1] ON [s_1].[ParentId] = [a_Association1].[Id]
-		LEFT JOIN [Subclass1] [a_Association1_1] ON [t].[Id] = [a_Association1_1].[ParentId]
-		LEFT JOIN [Subclass2] [a_Association2] ON [a_Association1_1].[Id] = [a_Association2].[ParentId]
+		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [t].[Id] AND [s].[ParentId] IS NOT NULL
+		LEFT JOIN [Subclass1] [a_Association1] ON [t].[Id] = [a_Association1].[ParentId] AND [a_Association1].[ParentId] IS NOT NULL
+		LEFT JOIN [Subclass2] [s_1] ON [s_1].[ParentId] = [a_Association1].[Id] AND [s_1].[ParentId] IS NOT NULL
+		LEFT JOIN [Subclass1] [a_Association1_1] ON [t].[Id] = [a_Association1_1].[ParentId] AND [a_Association1_1].[ParentId] IS NOT NULL
+		LEFT JOIN [Subclass2] [a_Association2] ON [a_Association1_1].[Id] = [a_Association2].[ParentId] AND [a_Association2].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

@@ -18,5 +18,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :p AND ROWNUM <= 1
+	p."FirstName" = :p AND p."FirstName" IS NOT NULL AND
+	ROWNUM <= 1
 

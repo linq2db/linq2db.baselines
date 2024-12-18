@@ -26,7 +26,7 @@ FROM
 		FROM
 			[Orders] [t1]
 	) [m_1]
-		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
+		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] AND [m_1].[Key_1] IS NOT NULL AND [d].[OrderDate] IS NOT NULL OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
 BeforeExecute
 DisposeTransaction

@@ -31,7 +31,10 @@ UPDATE
 SET
 	`r`.`BigIntValue` = 12
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
+	`r`.`ID` = 101 AND
+	`r`.`ID` IS NOT NULL AND
+	`r`.`BigIntValue` = 11 AND
+	`r`.`BigIntValue` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

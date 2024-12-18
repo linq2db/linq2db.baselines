@@ -1802,11 +1802,11 @@ FROM
 					[m_1].[Id1]
 				FROM
 					[MasterClass] [m_1]
-						INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+						INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 			) [t1]
-				INNER JOIN [DetailClass] [d_1] ON [t1].[Id1] = [d_1].[MasterId]
+				INNER JOIN [DetailClass] [d_1] ON [t1].[Id1] = [d_1].[MasterId] AND [d_1].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_2] ON [m_2].[DetailId] = [d_2].[DetailId]
+		INNER JOIN [SubDetailClass] [d_2] ON [m_2].[DetailId] = [d_2].[DetailId] AND [d_2].[DetailId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -1822,9 +1822,9 @@ FROM
 			[m_1].[Id1]
 		FROM
 			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [DetailClass] [d_1] ON [m_2].[Id1] = [d_1].[MasterId]
+		INNER JOIN [DetailClass] [d_1] ON [m_2].[Id1] = [d_1].[MasterId] AND [d_1].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -1843,10 +1843,10 @@ FROM
 			[d].[DetailId]
 		FROM
 			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
+		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[DetailId] IS NOT NULL
+		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] AND [d_1].[DetailId] IS NOT NULL AND [a_Detail].[DetailId] IS NOT NULL OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 BeforeExecute
 DisposeTransaction
@@ -1863,7 +1863,7 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[MasterClass] [r]
-		INNER JOIN [DetailClass] [d] ON [r].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [r].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

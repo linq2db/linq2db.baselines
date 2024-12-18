@@ -49,7 +49,8 @@ FROM
 	"TestConstantsData" "e"
 WHERE
 	"e"."GuidValue" = BX'3D667BBCDE0F27438F925D8CC3A11D11' AND
-	"e"."GuidNullableValue" = BX'3D667BBCDE0F27438F925D8CC3A11D11'
+	"e"."GuidNullableValue" = BX'3D667BBCDE0F27438F925D8CC3A11D11' AND
+	"e"."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

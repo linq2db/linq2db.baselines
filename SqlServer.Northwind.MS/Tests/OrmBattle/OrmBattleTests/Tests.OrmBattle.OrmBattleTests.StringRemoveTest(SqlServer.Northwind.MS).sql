@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	Left([c_1].[City], 3) = N'Sea'
+	Left([c_1].[City], 3) = N'Sea' AND Left([c_1].[City], 3) IS NOT NULL
 

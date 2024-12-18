@@ -28,9 +28,13 @@ FROM
 	[Entity] [e]
 WHERE
 	[e].[CharValue] = 'CharValue' AND
+	[e].[CharValue] IS NOT NULL AND
 	[e].[VarCharValue] = 'VarCharValue' AND
+	[e].[VarCharValue] IS NOT NULL AND
 	[e].[NCharValue] = N'NCharValue' AND
-	[e].[NVarCharValue] = N'NVarCharValue'
+	[e].[NCharValue] IS NOT NULL AND
+	[e].[NVarCharValue] = N'NVarCharValue' AND
+	[e].[NVarCharValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

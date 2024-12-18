@@ -44,7 +44,7 @@ FROM
 			[a_Association].[ID]
 		FROM
 			[InsertIssueTest] [t1]
-				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType]
+				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType] AND [a_Association].[intDataType] IS NOT NULL
 		WHERE
 			1 = 0
 	) [t2]
@@ -68,7 +68,7 @@ FROM
 			[a_Association].[ID]
 		FROM
 			[InsertIssueTest] [t1]
-				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType]
+				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType] AND [a_Association].[intDataType] IS NOT NULL
 		WHERE
 			[t1].[ID] = @cond
 	) [t2]

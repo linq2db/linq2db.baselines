@@ -70,7 +70,8 @@ FROM
 	"TestConstantsData" e
 WHERE
 	e."GuidValue" = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11') AND
-	e."GuidNullableValue" = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
+	e."GuidNullableValue" = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11') AND
+	e."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

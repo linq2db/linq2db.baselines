@@ -54,6 +54,9 @@ WHERE
 						[p].[ParentID] = @id
 				) [t1] ON 1=1
 		WHERE
-			[p_1].[ParentID] = @id AND [t1].[COUNT_1] > 0 AND [Parent].[ParentID] = [p_1].[ParentID]
+			[p_1].[ParentID] = @id AND
+			[t1].[COUNT_1] > 0 AND
+			[t1].[COUNT_1] IS NOT NULL AND
+			[Parent].[ParentID] = [p_1].[ParentID]
 	)
 

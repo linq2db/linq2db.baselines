@@ -8,7 +8,8 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" > :dateTime AND ROWNUM <= 1
+	t."DateTimeValue" > :dateTime AND t."DateTimeValue" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -20,5 +21,6 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" > :dateTime AND ROWNUM <= 1
+	t."DateTimeValue" > :dateTime AND t."DateTimeValue" IS NOT NULL AND
+	ROWNUM <= 1
 

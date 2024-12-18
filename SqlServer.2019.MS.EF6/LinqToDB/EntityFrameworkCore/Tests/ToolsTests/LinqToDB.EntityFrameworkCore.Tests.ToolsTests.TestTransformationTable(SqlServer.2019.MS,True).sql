@@ -19,7 +19,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Products] [p]
-		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
+		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID] AND [p].[CategoryID] IS NOT NULL
 WHERE
 	([p].[IsDeleted] = 0 OR [p].[IsDeleted] = 0) AND ([c_1].[IsDeleted] = 0 OR [c_1].[IsDeleted] = 0)
 

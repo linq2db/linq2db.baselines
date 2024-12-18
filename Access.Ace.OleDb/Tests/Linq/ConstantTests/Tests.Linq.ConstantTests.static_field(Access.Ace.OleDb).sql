@@ -57,7 +57,8 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly_1
+	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly_1 AND
+	[e].[GuidNullableValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

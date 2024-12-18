@@ -20,7 +20,8 @@ WHERE
 				FETCH NEXT 100 ROWS ONLY
 			) param
 		WHERE
-			param."ParentID" = c_1."ParentID" AND param."Value_1" = c_1."ParentID"
+			param."ParentID" = c_1."ParentID" AND param."Value_1" = c_1."ParentID" AND
+			param."Value_1" IS NOT NULL
 	)
 
 BeforeExecute

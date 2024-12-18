@@ -29,8 +29,15 @@ FROM
 						FROM
 							[Orders] [a_Orders]
 						WHERE
-							[t1].[CustomerID] = [a_Orders].[CustomerID]
-					) >= 80, 1, 0) as [Key_1]
+							[t1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
+					) >= 80 AND (
+						SELECT
+							AVG([a_Orders].[Freight])
+						FROM
+							[Orders] [a_Orders]
+						WHERE
+							[t1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
+					) IS NOT NULL, 1, 0) as [Key_1]
 				FROM
 					[Customers] [t1]
 			) [t2]
@@ -43,8 +50,15 @@ FROM
 			FROM
 				[Orders] [a_Orders_1]
 			WHERE
-				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) >= 80, 1, 0)
+				[d].[CustomerID] = [a_Orders_1].[CustomerID] AND [a_Orders_1].[CustomerID] IS NOT NULL
+		) >= 80 AND (
+			SELECT
+				AVG([a_Orders_1].[Freight]) as [AVG_1]
+			FROM
+				[Orders] [a_Orders_1]
+			WHERE
+				[d].[CustomerID] = [a_Orders_1].[CustomerID] AND [a_Orders_1].[CustomerID] IS NOT NULL
+		) IS NOT NULL, 1, 0)
 
 BeforeExecute
 DisposeTransaction
@@ -62,8 +76,15 @@ FROM
 				FROM
 					[Orders] [a_Orders]
 				WHERE
-					[t1].[CustomerID] = [a_Orders].[CustomerID]
-			) >= 80, 1, 0) as [Key_1]
+					[t1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
+			) >= 80 AND (
+				SELECT
+					AVG([a_Orders].[Freight])
+				FROM
+					[Orders] [a_Orders]
+				WHERE
+					[t1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
+			) IS NOT NULL, 1, 0) as [Key_1]
 		FROM
 			[Customers] [t1]
 	) [t2]

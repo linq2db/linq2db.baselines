@@ -29,6 +29,7 @@ WHERE
 		FROM
 			[Employees] [a_Employees]
 		WHERE
-			[employee].[EmployeeID] = [a_Employees].[ReportsTo]
+			[employee].[EmployeeID] = [a_Employees].[ReportsTo] AND
+			[a_Employees].[ReportsTo] IS NOT NULL
 	) > 0
 

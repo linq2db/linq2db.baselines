@@ -74,7 +74,7 @@ hierarchyDown AS
 		t_1.Id as Id
 	FROM
 		hierarchyDown t3
-			INNER JOIN CTE_2 t_1 ON t_1.ParentId = t3.Id
+			INNER JOIN CTE_2 t_1 ON t_1.ParentId = t3.Id AND t_1.ParentId IS NOT NULL
 )
 SELECT
 	t4.Id,

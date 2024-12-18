@@ -83,7 +83,8 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= 1
+	x."FirstName" = :FirstName AND x."FirstName" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -136,7 +137,8 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= 1
+	x."FirstName" = :FirstName AND x."FirstName" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -21,7 +21,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY a.ParentID ORDER BY a.ParentID) as rn
 			FROM
 				GrandChild a
-		) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
+		) t1 ON t1.ParentID = p.ParentID AND t1.ParentID IS NOT NULL AND t1.rn <= 1
 		LEFT JOIN (
 			SELECT
 				a_1.ParentID as ParentID,

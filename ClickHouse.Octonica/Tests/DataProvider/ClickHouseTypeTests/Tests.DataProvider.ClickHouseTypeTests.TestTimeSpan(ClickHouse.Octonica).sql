@@ -178,7 +178,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808)
+	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -210,7 +211,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808)
+	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -239,7 +241,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808)
+	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -260,7 +263,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808)
+	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -281,7 +285,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808)
+	r.Column = toInt64(9223372036854775807) AND r.ColumnNullable = toInt64(-9223372036854775808) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

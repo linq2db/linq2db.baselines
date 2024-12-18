@@ -7,5 +7,6 @@ SELECT
 FROM
 	Person pp
 WHERE
-	pp.PersonID = 1 AND trim(LEADING (' J') FROM concat('  ', pp.FirstName, ' ')) = 'ohn '
+	pp.PersonID = 1 AND trim(LEADING (' J') FROM concat('  ', pp.FirstName, ' ')) = 'ohn ' AND
+	trim(LEADING (' J') FROM concat('  ', pp.FirstName, ' ')) IS NOT NULL
 

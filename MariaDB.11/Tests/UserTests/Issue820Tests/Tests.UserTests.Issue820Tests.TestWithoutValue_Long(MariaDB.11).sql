@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	@param = `t1`.`BigIntValue`
+	@param = `t1`.`BigIntValue` AND `t1`.`BigIntValue` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

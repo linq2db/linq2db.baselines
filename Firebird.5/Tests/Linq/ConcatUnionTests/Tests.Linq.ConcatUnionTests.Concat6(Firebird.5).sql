@@ -14,7 +14,9 @@ WHERE
 			"GrandChild" "a_GrandChildren"
 		WHERE
 			"c_1"."ParentID" = "a_GrandChildren"."ParentID" AND
-			"c_1"."ChildID" = "a_GrandChildren"."ChildID"
+			"a_GrandChildren"."ParentID" IS NOT NULL AND
+			"c_1"."ChildID" = "a_GrandChildren"."ChildID" AND
+			"a_GrandChildren"."ChildID" IS NOT NULL
 	) = 2
 UNION ALL
 SELECT
@@ -30,6 +32,8 @@ WHERE
 			"GrandChild" "a_GrandChildren_1"
 		WHERE
 			"c_2"."ParentID" = "a_GrandChildren_1"."ParentID" AND
-			"c_2"."ChildID" = "a_GrandChildren_1"."ChildID"
+			"a_GrandChildren_1"."ParentID" IS NOT NULL AND
+			"c_2"."ChildID" = "a_GrandChildren_1"."ChildID" AND
+			"a_GrandChildren_1"."ChildID" IS NOT NULL
 	) = 3
 

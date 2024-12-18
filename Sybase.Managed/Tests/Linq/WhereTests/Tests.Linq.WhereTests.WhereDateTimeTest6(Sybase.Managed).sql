@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	CONVERT(Date, [t1].[DateTimeValue]) = CONVERT(Date, CAST('2009-09-20' AS DateTime))
+	CONVERT(Date, [t1].[DateTimeValue]) = CONVERT(Date, CAST('2009-09-20' AS DateTime)) AND
+	CONVERT(Date, [t1].[DateTimeValue]) IS NOT NULL
 

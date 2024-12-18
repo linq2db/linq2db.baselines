@@ -60,7 +60,8 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', @testDate) = strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable])
+	strftime('%Y-%m-%d %H:%M:%f', @testDate) = strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable]) AND
+	[t].[DateTimeNullable] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -72,7 +73,8 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable]) = strftime('%Y-%m-%d %H:%M:%f', @testDate)
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable]) = strftime('%Y-%m-%d %H:%M:%f', @testDate) AND
+	[t].[DateTimeNullable] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

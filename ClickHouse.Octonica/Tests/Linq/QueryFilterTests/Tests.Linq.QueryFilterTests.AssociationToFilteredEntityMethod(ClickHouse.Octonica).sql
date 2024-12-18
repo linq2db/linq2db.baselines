@@ -1113,7 +1113,7 @@ SELECT
 	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId AND d.MasterId IS NOT NULL
 WHERE
 	d.IsDeleted = false
 
@@ -1127,7 +1127,7 @@ SELECT
 	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1139,7 +1139,7 @@ SELECT
 	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId AND d.MasterId IS NOT NULL
 WHERE
 	d.IsDeleted = false
 
@@ -1153,7 +1153,7 @@ SELECT
 	d.MasterId
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

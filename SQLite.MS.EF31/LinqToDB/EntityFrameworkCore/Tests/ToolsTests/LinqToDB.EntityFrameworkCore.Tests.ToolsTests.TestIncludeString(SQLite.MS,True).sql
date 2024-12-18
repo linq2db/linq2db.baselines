@@ -43,11 +43,11 @@ FROM
 			[a_Employee].[EmployeeID] as [EmployeeId]
 		FROM
 			[Orders] [e]
-				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND NOT [a_Employee].[IsDeleted]
+				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[EmployeeID] IS NOT NULL AND NOT [a_Employee].[IsDeleted]
 		WHERE
 			NOT [e].[IsDeleted]
 	) [m_1]
-		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
+		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID] AND [m_1].[EmployeeId] IS NOT NULL
 WHERE
 	NOT [d].[IsDeleted]
 
@@ -132,7 +132,7 @@ SELECT
 	[a_Employee].[PhotoPath]
 FROM
 	[Orders] [e]
-		LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND NOT [a_Employee].[IsDeleted]
+		LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND [e].[EmployeeID] IS NOT NULL AND NOT [a_Employee].[IsDeleted]
 WHERE
 	NOT [e].[IsDeleted]
 

@@ -20,5 +20,5 @@ FROM
 			"Parent" "t"
 	) "t_1"
 WHERE
-	"t_1"."COUNT_1" > 0
+	"t_1"."COUNT_1" > 0 AND "t_1"."COUNT_1" IS NOT NULL
 

@@ -53,7 +53,7 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t]
 WHERE
-	[t].[VarChar] = @p
+	[t].[VarChar] = @p AND [t].[VarChar] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

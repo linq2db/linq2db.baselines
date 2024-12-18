@@ -10,5 +10,5 @@ SELECT
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[VarcharDataType] = @p
+	[t].[VarcharDataType] = @p AND [t].[VarcharDataType] IS NOT NULL
 

@@ -8,7 +8,7 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] > @dateTime
+	[t].[DateTimeValue] > @dateTime AND [t].[DateTimeValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2019
@@ -20,5 +20,5 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] > @dateTime
+	[t].[DateTimeValue] > @dateTime AND [t].[DateTimeValue] IS NOT NULL
 

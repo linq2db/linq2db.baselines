@@ -14,7 +14,14 @@ FROM
 						"Child" a_Children
 					WHERE
 						g_1."ParentID" = a_Children."ParentID"
-				) > 3D
+				) > 3D AND (
+					SELECT
+						AVG(a_Children."ParentID")
+					FROM
+						"Child" a_Children
+					WHERE
+						g_1."ParentID" = a_Children."ParentID"
+				) IS NOT NULL
 					THEN 1
 				ELSE 0
 			END as "Key_1"

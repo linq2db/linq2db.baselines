@@ -71,43 +71,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	"t"."Value" = @value
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @value Boolean
-SET     @value = FALSE
-
-SELECT
-	"t"."Value"
-FROM
-	"NullableBoolClass" "t"
-WHERE
-	"t"."Value" = @value
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @value Boolean
-SET     @value = FALSE
-
-SELECT
-	"t"."Value"
-FROM
-	"NullableBoolClass" "t"
-WHERE
-	"t"."Value" <> @value OR "t"."Value" IS NULL
-
-BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @value Boolean
-SET     @value = FALSE
-
-SELECT
-	"t"."Value"
-FROM
-	"NullableBoolClass" "t"
-WHERE
-	"t"."Value" <> @value
+	"t"."Value" = @value AND "t"."Value" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4

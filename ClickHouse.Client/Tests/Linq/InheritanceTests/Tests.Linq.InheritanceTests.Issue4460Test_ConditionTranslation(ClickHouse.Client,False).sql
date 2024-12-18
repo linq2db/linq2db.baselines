@@ -65,7 +65,7 @@ FROM
 	Base e
 WHERE
 	CASE
-		WHEN e.Code = 'Child2' OR e.Code = 'Child' OR e.Code = 'BaseChild'
+		WHEN e.Code = 'Child2' AND e.Code IS NOT NULL OR e.Code = 'Child' AND e.Code IS NOT NULL OR e.Code = 'BaseChild' AND e.Code IS NOT NULL
 			THEN CASE
 			WHEN e.Id <> 0 THEN true
 			ELSE false

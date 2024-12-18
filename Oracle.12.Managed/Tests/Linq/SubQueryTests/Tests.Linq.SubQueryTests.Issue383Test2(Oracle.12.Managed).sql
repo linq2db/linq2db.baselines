@@ -291,15 +291,21 @@ FROM
 		INNER JOIN "Distributor_Commercial_Propert" dcp ON d."Distributor_Id" = dcp."Distributor_Id"
 		INNER JOIN "Commercial_Property" cp ON dcp."Commercial_Property_Id" = cp."Commercial_Property_Id"
 		INNER JOIN "Contract_Dates" cd ON cda."Contract_Id" = cd."Contract_Id"
-		INNER JOIN "Cities" c_1 ON c_1."City_Code" = cp."City_Code" OR c_1."City_Code" IS NULL AND cp."City_Code" IS NULL
+		INNER JOIN "Cities" c_1 ON c_1."City_Code" = cp."City_Code" AND c_1."City_Code" IS NOT NULL AND cp."City_Code" IS NOT NULL OR c_1."City_Code" IS NULL AND cp."City_Code" IS NULL
 WHERE
 	cda."Contract_Id" = 198827882 AND
 	cda."Distributor_Type_Code" = 'CC' AND
+	cda."Distributor_Type_Code" IS NOT NULL AND
 	cda."Distributor_Agent_Type_Prefix" = 'OFFICE' AND
+	cda."Distributor_Agent_Type_Prefix" IS NOT NULL AND
 	cda."Represents_Type_Prefix" = 'REPRESENTS' AND
+	cda."Represents_Type_Prefix" IS NOT NULL AND
 	cd."Type_Code" = 'ESTCOE' AND
+	cd."Type_Code" IS NOT NULL AND
 	d."Type_Code" = 'RE' AND
-	dcp."Distributor_Type_Code" = 'RE'
+	d."Type_Code" IS NOT NULL AND
+	dcp."Distributor_Type_Code" = 'RE' AND
+	dcp."Distributor_Type_Code" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

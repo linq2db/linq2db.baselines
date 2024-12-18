@@ -40,7 +40,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(`e`.`StringValue`, '1') = 'StrValue1'
+	Concat(`e`.`StringValue`, '1') = 'StrValue1' AND `e`.`StringValue` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

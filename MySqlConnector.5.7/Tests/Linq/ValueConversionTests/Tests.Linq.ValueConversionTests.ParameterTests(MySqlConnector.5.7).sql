@@ -62,7 +62,7 @@ SELECT
 FROM
 	`ValueConversion` `t`
 WHERE
-	@testedList = `t`.`Value2`
+	@testedList = `t`.`Value2` AND `t`.`Value2` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

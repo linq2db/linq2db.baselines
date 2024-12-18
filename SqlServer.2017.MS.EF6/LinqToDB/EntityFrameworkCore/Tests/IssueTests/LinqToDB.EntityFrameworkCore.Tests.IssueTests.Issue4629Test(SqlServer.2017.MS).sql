@@ -32,7 +32,15 @@ FROM
 					[Issue4629Tags] [a_Tags_1]
 				WHERE
 					[t1].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
-			) > 5
+			) > 5 AND
+			(
+				SELECT
+					SUM([a_Tags_1].[Weight])
+				FROM
+					[Issue4629Tags] [a_Tags_1]
+				WHERE
+					[t1].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
+			) IS NOT NULL
 		ORDER BY
 			[t1].[c1]
 	) [id]

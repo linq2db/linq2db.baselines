@@ -7,5 +7,6 @@ SELECT
 FROM
 	[Person] [pp]
 WHERE
-	[pp].[PersonID] = 1 AND LTRIM((N'  ' + [pp].[FirstName] + N' '), (N' ')) = N'John '
+	[pp].[PersonID] = 1 AND LTRIM((N'  ' + [pp].[FirstName] + N' '), (N' ')) = N'John ' AND
+	LTRIM((N'  ' + [pp].[FirstName] + N' '), (N' ')) IS NOT NULL
 

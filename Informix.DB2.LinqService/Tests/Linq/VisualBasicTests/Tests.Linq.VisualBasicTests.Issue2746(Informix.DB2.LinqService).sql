@@ -10,5 +10,6 @@ SELECT
 FROM
 	GrandChild w
 WHERE
-	w.ChildID IS NOT NULL AND w.ChildID = @VBLocal_SelectedValue
+	w.ChildID IS NOT NULL AND w.ChildID = @VBLocal_SelectedValue AND
+	w.ChildID IS NOT NULL
 

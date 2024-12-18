@@ -79,7 +79,7 @@ SELECT
 FROM
 	[Base] [e]
 WHERE
-	IIF([e].[Code] = 'Child2' OR [e].[Code] = 'Child' OR [e].[Code] = 'BaseChild', True, IIF([e].[Id] <> 0, True, False))
+	IIF([e].[Code] = 'Child2' AND [e].[Code] IS NOT NULL OR [e].[Code] = 'Child' AND [e].[Code] IS NOT NULL OR [e].[Code] = 'BaseChild' AND [e].[Code] IS NOT NULL, True, IIF([e].[Id] <> 0, True, False))
 ORDER BY
 	[e].[Id]
 

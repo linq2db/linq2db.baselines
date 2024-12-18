@@ -3077,7 +3077,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3113,7 +3113,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 ORDER BY
 	`t1`.`ID`
 LIMIT @take

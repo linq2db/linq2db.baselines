@@ -63,7 +63,7 @@ SELECT TOP (1)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2016
@@ -116,7 +116,7 @@ SELECT TOP (1)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2016

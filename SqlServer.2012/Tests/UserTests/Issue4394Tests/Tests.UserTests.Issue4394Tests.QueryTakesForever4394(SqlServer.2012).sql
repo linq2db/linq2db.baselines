@@ -247,7 +247,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+					[y].[Id] = [x_19].[InfeedAdviceID] AND [x_19].[InfeedAdviceID] IS NOT NULL AND
+					[y].[InfeedAdviceType] = 0
 			))
 	), 1, 0)
 FROM
@@ -487,7 +488,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+					[y].[Id] = [x_19].[InfeedAdviceID] AND [x_19].[InfeedAdviceID] IS NOT NULL AND
+					[y].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL), 1, 0),
@@ -541,7 +543,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_1]
 				WHERE
-					[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
+					[y_1].[Id] = [x_22].[InfeedAdviceID] AND [x_22].[InfeedAdviceID] IS NOT NULL AND
+					[y_1].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a3].[Id] IS NOT NULL AND ([a3].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a3].[Id] IS NULL), 1, 0),
@@ -595,7 +598,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_2]
 				WHERE
-					[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
+					[y_2].[Id] = [x_25].[InfeedAdviceID] AND [x_25].[InfeedAdviceID] IS NOT NULL AND
+					[y_2].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a4].[Id] IS NOT NULL AND ([a4].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a4].[Id] IS NULL), 1, 0),
@@ -649,7 +653,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_3]
 				WHERE
-					[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
+					[y_3].[Id] = [x_28].[InfeedAdviceID] AND [x_28].[InfeedAdviceID] IS NOT NULL AND
+					[y_3].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a5].[Id] IS NOT NULL AND ([a5].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a5].[Id] IS NULL), 1, 0),
@@ -703,7 +708,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_4]
 				WHERE
-					[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
+					[y_4].[Id] = [x_31].[InfeedAdviceID] AND [x_31].[InfeedAdviceID] IS NOT NULL AND
+					[y_4].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a6].[Id] IS NOT NULL AND ([a6].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a6].[Id] IS NULL), 1, 0),
@@ -757,7 +763,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_5]
 				WHERE
-					[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
+					[y_5].[Id] = [x_34].[InfeedAdviceID] AND [x_34].[InfeedAdviceID] IS NOT NULL AND
+					[y_5].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a7].[Id] IS NOT NULL AND ([a7].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a7].[Id] IS NULL), 1, 0),
@@ -811,7 +818,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_6]
 				WHERE
-					[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
+					[y_6].[Id] = [x_37].[InfeedAdviceID] AND [x_37].[InfeedAdviceID] IS NOT NULL AND
+					[y_6].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
 	IIF([a8].[Id] IS NOT NULL AND ([a8].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a8].[Id] IS NULL), 1, 0),
@@ -865,7 +873,8 @@ SELECT
 				FROM
 					[InfeedAdvicePositionDTO] [y_7]
 				WHERE
-					[y_7].[Id] = [x_40].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
+					[y_7].[Id] = [x_40].[InfeedAdviceID] AND [x_40].[InfeedAdviceID] IS NOT NULL AND
+					[y_7].[InfeedAdviceType] = 0
 			))
 	), 1, 0)
 FROM

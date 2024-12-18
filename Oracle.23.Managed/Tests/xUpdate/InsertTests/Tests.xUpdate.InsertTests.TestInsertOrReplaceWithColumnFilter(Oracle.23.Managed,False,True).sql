@@ -78,7 +78,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName
+	x."FirstName" = :FirstName AND x."FirstName" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
@@ -132,7 +132,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName
+	x."FirstName" = :FirstName AND x."FirstName" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute

@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	CAST([t].[DateTimeValue] AS Date) > @Date
+	CAST([t].[DateTimeValue] AS Date) > @Date AND CAST([t].[DateTimeValue] AS Date) IS NOT NULL
 

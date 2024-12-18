@@ -381,9 +381,9 @@ FROM
 		WHERE
 			[f].[Id] = 1
 	) [m_1]
-		INNER JOIN [InvoiceLine] [d] ON [m_1].[Id] = [d].[InvoiceId]
-		LEFT JOIN [ProductUnit] [a_ProductUnit] ON [d].[ProductUnitId] = [a_ProductUnit].[Id]
-		LEFT JOIN [Product] [a_Product] ON [d].[ProductId] = [a_Product].[Id]
+		INNER JOIN [InvoiceLine] [d] ON [m_1].[Id] = [d].[InvoiceId] AND [d].[InvoiceId] IS NOT NULL
+		LEFT JOIN [ProductUnit] [a_ProductUnit] ON [d].[ProductUnitId] = [a_ProductUnit].[Id] AND [d].[ProductUnitId] IS NOT NULL
+		LEFT JOIN [Product] [a_Product] ON [d].[ProductId] = [a_Product].[Id] AND [d].[ProductId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2016
@@ -407,8 +407,8 @@ FROM
 		WHERE
 			[f].[Id] = 1
 	) [m_1]
-		INNER JOIN [InvoiceTaxLine] [d] ON [m_1].[Id] = [d].[InvoiceId]
-		INNER JOIN [AccountTax] [a_Tax] ON [d].[TaxId] = [a_Tax].[Id]
+		INNER JOIN [InvoiceTaxLine] [d] ON [m_1].[Id] = [d].[InvoiceId] AND [d].[InvoiceId] IS NOT NULL
+		INNER JOIN [AccountTax] [a_Tax] ON [d].[TaxId] = [a_Tax].[Id] AND [d].[TaxId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2016
@@ -523,15 +523,15 @@ SELECT
 FROM
 	[CustomInvoice] [f]
 		INNER JOIN [Invoice] [a_Invoice] ON [f].[InvoiceId] = [a_Invoice].[Id]
-		LEFT JOIN [Invoice] [a_Rectifying] ON [a_Invoice].[RectifyingInvoiceId] = [a_Rectifying].[Id]
-		LEFT JOIN [Invoice] [a_RefundBy] ON [a_Invoice].[RefundByInvoiceId] = [a_RefundBy].[Id]
-		LEFT JOIN [InvoicePendingState] [a_PendingState] ON [a_Invoice].[PendingStateId] = [a_PendingState].[Id]
+		LEFT JOIN [Invoice] [a_Rectifying] ON [a_Invoice].[RectifyingInvoiceId] = [a_Rectifying].[Id] AND [a_Invoice].[RectifyingInvoiceId] IS NOT NULL
+		LEFT JOIN [Invoice] [a_RefundBy] ON [a_Invoice].[RefundByInvoiceId] = [a_RefundBy].[Id] AND [a_Invoice].[RefundByInvoiceId] IS NOT NULL
+		LEFT JOIN [InvoicePendingState] [a_PendingState] ON [a_Invoice].[PendingStateId] = [a_PendingState].[Id] AND [a_Invoice].[PendingStateId] IS NOT NULL
 		INNER JOIN [Contract] [a_Contract] ON [f].[ContractId] = [a_Contract].[Id]
 		INNER JOIN [AccessTariff] [a_AccessTariff] ON [f].[AccessTariffId] = [a_AccessTariff].[Id]
 		INNER JOIN [ServicePoint] [a_ServicePoint] ON [f].[ServicePointId] = [a_ServicePoint].[Id]
 		LEFT JOIN [Town] [a_Town] ON [a_ServicePoint].[TownId] = [a_Town].[Id]
-		LEFT JOIN [CountryState] [a_State] ON [a_Town].[StateId] = [a_State].[Id]
-		LEFT JOIN [AutonomousCommunity] [a_Community] ON [a_State].[AutonomousCommunityId] = [a_Community].[Id]
+		LEFT JOIN [CountryState] [a_State] ON [a_Town].[StateId] = [a_State].[Id] AND [a_Town].[StateId] IS NOT NULL
+		LEFT JOIN [AutonomousCommunity] [a_Community] ON [a_State].[AutonomousCommunityId] = [a_Community].[Id] AND [a_State].[AutonomousCommunityId] IS NOT NULL
 		LEFT JOIN [StreetType] [a_StreetType] ON [a_ServicePoint].[StreetTypeId] = [a_StreetType].[Id]
 		LEFT JOIN [PriceList] [a_PriceList] ON [f].[PriceListId] = [a_PriceList].[Id]
 WHERE

@@ -32,7 +32,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101
+	`r`.`ID` = 101 AND `r`.`ID` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

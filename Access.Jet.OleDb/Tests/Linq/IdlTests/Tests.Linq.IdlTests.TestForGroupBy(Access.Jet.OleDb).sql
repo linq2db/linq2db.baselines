@@ -15,7 +15,7 @@ FROM
 		WHERE
 			[x].[ParentID] IN (2)
 	) [m_1]
-		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
+		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] AND [m_1].[Key_1] IS NOT NULL AND [d].[ChildID] IS NOT NULL OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
 WHERE
 	[d].[ParentID] IN (2)
 
@@ -50,7 +50,7 @@ FROM
 		WHERE
 			[x].[ParentID] IN (3)
 	) [m_1]
-		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
+		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] AND [m_1].[Key_1] IS NOT NULL AND [d].[ChildID] IS NOT NULL OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
 WHERE
 	[d].[ParentID] IN (3)
 

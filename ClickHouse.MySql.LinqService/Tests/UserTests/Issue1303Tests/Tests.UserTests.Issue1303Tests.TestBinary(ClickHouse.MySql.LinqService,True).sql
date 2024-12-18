@@ -56,7 +56,7 @@ SELECT
 FROM
 	Issue1303 t1
 WHERE
-	t1.Array = '\x01\x02\x03'
+	t1.Array = '\x01\x02\x03' AND t1.Array IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -69,7 +69,7 @@ SELECT
 FROM
 	Issue1303 t1
 WHERE
-	t1.Binary = '\x04\x05'
+	t1.Binary = '\x04\x05' AND t1.Binary IS NOT NULL
 LIMIT 2
 
 BeforeExecute

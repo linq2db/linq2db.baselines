@@ -10,5 +10,5 @@ SELECT
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[NVarcharDataType] = @p
+	[t].[NVarcharDataType] = @p AND [t].[NVarcharDataType] IS NOT NULL
 

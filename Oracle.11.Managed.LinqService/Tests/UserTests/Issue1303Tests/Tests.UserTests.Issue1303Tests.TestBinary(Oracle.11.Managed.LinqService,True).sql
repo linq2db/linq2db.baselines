@@ -69,7 +69,8 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = HEXTORAW('010203') AND ROWNUM <= 2
+	t1."Array" = HEXTORAW('010203') AND t1."Array" IS NOT NULL AND
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -81,7 +82,8 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = HEXTORAW('0405') AND ROWNUM <= 2
+	t1."Binary" = HEXTORAW('0405') AND t1."Binary" IS NOT NULL AND
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

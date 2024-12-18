@@ -45,7 +45,7 @@ UPDATE
 SET
 	`t`.`Data` = '***OOO***'
 WHERE
-	`t`.`Data` = '***XXX***'
+	`t`.`Data` = '***XXX***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -55,7 +55,7 @@ UPDATE
 SET
 	`t`.`Data` = '***SSS***'
 WHERE
-	`t`.`Data` = '***HHH***'
+	`t`.`Data` = '***HHH***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

@@ -15,5 +15,6 @@ FROM
 		INNER JOIN GrandChild g_1 ON x.ParentID = g_1.ParentID
 WHERE
 	(c_1.ParentID = 2 OR c_1.ParentID = 3) AND (g_1.ChildID <> 21 OR g_1.ChildID IS NULL) AND (g_1.ChildID <> 33 OR g_1.ChildID IS NULL) OR
-	g_1.ParentID = 3 AND g_1.ChildID = 32 OR g_1.ChildID = 11
+	g_1.ParentID = 3 AND g_1.ParentID IS NOT NULL AND g_1.ChildID = 32 AND g_1.ChildID IS NOT NULL OR
+	g_1.ChildID = 11 AND g_1.ChildID IS NOT NULL
 

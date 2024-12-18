@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = ? AND [p].[Value1] = ?
+	[p].[ParentID] = ? AND [p].[Value1] = ? AND [p].[Value1] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

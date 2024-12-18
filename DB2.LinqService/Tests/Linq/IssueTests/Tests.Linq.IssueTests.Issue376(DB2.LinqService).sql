@@ -9,6 +9,6 @@ FROM
 	"Person" "t1"
 		LEFT JOIN "Doctor" "a_Doctor" ON "t1"."PersonID" = "a_Doctor"."PersonID"
 WHERE
-	CHARACTER_LENGTH("a_Doctor"."Taxonomy",CODEUNITS32) >= 0 OR
+	CHARACTER_LENGTH("a_Doctor"."Taxonomy",CODEUNITS32) >= 0 AND CHARACTER_LENGTH("a_Doctor"."Taxonomy",CODEUNITS32) IS NOT NULL OR
 	"a_Doctor"."Taxonomy" IS NULL
 

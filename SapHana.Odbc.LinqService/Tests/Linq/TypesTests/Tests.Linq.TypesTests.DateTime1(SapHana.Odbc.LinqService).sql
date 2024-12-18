@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	To_Date("t"."DateTimeValue") > ?
+	To_Date("t"."DateTimeValue") > ? AND To_Date("t"."DateTimeValue") IS NOT NULL
 

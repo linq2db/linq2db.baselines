@@ -8,5 +8,6 @@ SELECT
 FROM
 	"AllTypes" x
 WHERE
-	CURRENT_TIMESTAMP > x."datetime2DataType" + :p
+	CURRENT_TIMESTAMP > x."datetime2DataType" + :p AND
+	x."datetime2DataType" IS NOT NULL
 

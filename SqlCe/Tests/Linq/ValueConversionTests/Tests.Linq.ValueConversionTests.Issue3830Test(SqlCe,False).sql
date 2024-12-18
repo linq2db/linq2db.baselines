@@ -106,7 +106,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -141,8 +144,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @false_value AND [r].[Bool2] IS NULL AND
-	[r].[Bool3] = @Bool3
+	[r].[Bool1] = @false_value AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -159,7 +164,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool3] = @Bool3
+	[r].[Bool2] IS NULL AND
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -176,7 +184,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -193,7 +204,9 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @false_value AND [r].[Bool2] = @Bool2 AND
+	[r].[Bool1] = @false_value AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL AND
 	[r].[Bool3] IS NULL
 
 BeforeExecute
@@ -211,8 +224,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = @Bool1 AND
-	[r].[Bool2] = @Bool2
+	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -247,7 +262,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -266,8 +285,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = @true_value AND [r].[Bool2] = @Bool2 AND
-	[r].[Bool3] = @Bool3
+	[r].[Bool1] = @true_value AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -286,8 +308,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = @true_value AND [r].[Bool1] = @Bool1 AND
-	[r].[Bool2] = @Bool2
+	[r].[Bool3] = @true_value AND
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool2] = @Bool2 AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -304,8 +328,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = @Bool1 AND
-	[r].[Bool3] = @Bool3
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool1] = @Bool1 AND
+	[r].[Bool3] = @Bool3 AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

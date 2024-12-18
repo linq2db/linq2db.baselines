@@ -103,10 +103,10 @@ FROM
 						FROM
 							[TABLE3] [x]
 						WHERE
-							[x].[PARENTID3] = [x_1].[ID2]
+							[x].[PARENTID3] = [x_1].[ID2] AND [x].[PARENTID3] IS NOT NULL
 					) [t1]
 			WHERE
-				[x_1].[PARENTID2] = [t1_1].[ID1]
+				[x_1].[PARENTID2] = [t1_1].[ID1] AND [x_1].[PARENTID2] IS NOT NULL
 		) [t2]
 
 BeforeExecute

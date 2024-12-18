@@ -108,7 +108,8 @@ FROM
 	(
 		SELECT DISTINCT
 			CASE
-				WHEN [t1].[Id1] = [d].[MasterId] THEN 1
+				WHEN [t1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
+					THEN 1
 				ELSE 0
 			END as [cond]
 		FROM
@@ -135,7 +136,8 @@ SELECT
 	[d].[MasterId],
 	[d].[DetailValue],
 	CASE
-		WHEN [m_2].[Id1] = [d].[MasterId] THEN 1
+		WHEN [m_2].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END
 FROM

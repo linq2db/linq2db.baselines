@@ -73,7 +73,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -131,7 +131,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

@@ -12,6 +12,7 @@ FROM
 	[Child] [c_1] WITH (NoLock, ForceSeek)
 		INNER JOIN [Parent] [p] ON [c_1].[ParentID] = [p].[ParentID]
 WHERE
-	[p].[Value1] = @n AND [p].[ParentID] = @id
+	[p].[Value1] = @n AND [p].[Value1] IS NOT NULL AND
+	[p].[ParentID] = @id
 OPTION (TABLE HINT(c_1, NoLock))
 

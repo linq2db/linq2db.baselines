@@ -18,8 +18,8 @@ FROM
 	"Events" e
 WHERE
 	e."Duration" @> :date OR
-	lower(e."Duration") = :date OR
-	upper(e."Duration") = :date OR
+	lower(e."Duration") = :date AND lower(e."Duration") IS NOT NULL OR
+	upper(e."Duration") = :date AND upper(e."Duration") IS NOT NULL OR
 	isempty(e."Duration") OR
 	isempty(e."Duration" * e."Duration")
 

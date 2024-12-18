@@ -546,7 +546,10 @@ SELECT
 FROM
 	"ValueConversion" "m_1"
 WHERE
-	? = "m_1"."Value2" AND ? = "m_1"."Value2"
+	? = "m_1"."Value2" AND
+	"m_1"."Value2" IS NOT NULL AND
+	? = "m_1"."Value2" AND
+	"m_1"."Value2" IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -560,7 +563,7 @@ SELECT
 FROM
 	"ValueConversion" "g_1"
 WHERE
-	? = "g_1"."Value2"
+	? = "g_1"."Value2" AND "g_1"."Value2" IS NOT NULL
 GROUP BY
 	"g_1"."Id"
 

@@ -29,42 +29,9 @@ FROM
 			) [t1]
 				INNER JOIN [Child] [d] ON ([t1].[ParentID] = [d].[ParentID])
 	) [m_1]
-		INNER JOIN [GrandChild] [d_1] ON ([m_1].[ParentID] = [d_1].[ParentID] AND [m_1].[ChildID] = [d_1].[ChildID]))
-		LEFT JOIN [Child] [a_Child] ON ([d_1].[ParentID] = [a_Child].[ParentID] AND [d_1].[ChildID] = [a_Child].[ChildID]))
+		INNER JOIN [GrandChild] [d_1] ON ([m_1].[ParentID] = [d_1].[ParentID] AND [d_1].[ParentID] IS NOT NULL AND [m_1].[ChildID] = [d_1].[ChildID] AND [d_1].[ChildID] IS NOT NULL))
+		LEFT JOIN [Child] [a_Child] ON ([d_1].[ParentID] = [a_Child].[ParentID] AND [d_1].[ParentID] IS NOT NULL AND [d_1].[ChildID] = [a_Child].[ChildID] AND [d_1].[ChildID] IS NOT NULL))
 		LEFT JOIN [Parent] [a_Parent] ON ([a_Child].[ParentID] = [a_Parent].[ParentID])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
-FROM
-	(
-		SELECT DISTINCT
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
-	) [m_1]
-		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
-
-BeforeExecute
 DisposeTransaction
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-SELECT
-	(
-		SELECT
-			COUNT(*)
-		FROM
-			[GrandChild] [a_GrandChildren]
-		WHERE
-			[p].[ParentID] = [a_GrandChildren].[ParentID]
-	),
-	[p].[ParentID],
-	[p].[Value1]
-FROM
-	[Parent] [p]
-

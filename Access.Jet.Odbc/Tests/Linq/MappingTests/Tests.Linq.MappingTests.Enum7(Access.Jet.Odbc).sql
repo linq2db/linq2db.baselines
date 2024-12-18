@@ -12,5 +12,5 @@ UPDATE
 SET
 	[p].[Value1] = ?
 WHERE
-	[p].[Value1] = ?
+	[p].[Value1] = ? AND [p].[Value1] IS NOT NULL
 

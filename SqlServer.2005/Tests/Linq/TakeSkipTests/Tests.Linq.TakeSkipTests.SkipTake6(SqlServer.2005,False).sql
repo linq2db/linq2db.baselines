@@ -13,7 +13,7 @@ FROM
 			[GrandChild] [p]
 	) [p_1]
 WHERE
-	[c_1].[ParentID] = [p_1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID] AND [p_1].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005
@@ -38,5 +38,5 @@ FROM
 			[t1].[RN] > 12 AND [t1].[RN] <= 15
 	) [p_1]
 WHERE
-	[c_1].[ParentID] = [p_1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID] AND [p_1].[ParentID] IS NOT NULL
 

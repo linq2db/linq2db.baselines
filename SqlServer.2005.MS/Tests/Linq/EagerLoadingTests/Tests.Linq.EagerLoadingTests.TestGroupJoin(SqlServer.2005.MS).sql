@@ -1807,9 +1807,9 @@ FROM
 				ORDER BY
 					[m_1].[Id2] DESC
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
+		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId] AND [d].[DetailId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -1834,7 +1834,7 @@ FROM
 				ORDER BY
 					[m_1].[Id2] DESC
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (10)
@@ -1844,7 +1844,7 @@ FROM
 			FROM
 				[SubDetailClass] [d]
 			WHERE
-				[m_2].[DetailId] = [d].[DetailId]
+				[m_2].[DetailId] = [d].[DetailId] AND [d].[DetailId] IS NOT NULL
 			ORDER BY
 				[d].[SubDetailValue]
 		) [d_1]
@@ -1873,7 +1873,7 @@ FROM
 				ORDER BY
 					[m_1].[Id2] DESC
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (10)
@@ -1884,7 +1884,7 @@ FROM
 			FROM
 				[MasterClass] [d]
 			WHERE
-				[d].[Id1] = [m_2].[MasterId]
+				[d].[Id1] = [m_2].[MasterId] AND [m_2].[MasterId] IS NOT NULL
 			ORDER BY
 				[d].[Value]
 		) [d_1]
@@ -1916,7 +1916,7 @@ FROM
 		ORDER BY
 			[m_1].[Id2] DESC
 	) [t1]
-		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

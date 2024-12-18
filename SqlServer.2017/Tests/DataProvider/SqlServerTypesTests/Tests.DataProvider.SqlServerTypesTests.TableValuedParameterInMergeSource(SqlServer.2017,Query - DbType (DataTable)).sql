@@ -26,7 +26,7 @@ USING (
 	[source_Id],
 	[source_Name]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[source_Id] AND [Source].[source_Id] IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

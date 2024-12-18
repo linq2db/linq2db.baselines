@@ -278,7 +278,8 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, CAST('2010-01-' + right(replicate('0',2) + cast([t].[TransactionId] as varchar(255)),2) AS Date)) > 0
+	DatePart(day, CAST('2010-01-' + right(replicate('0',2) + cast([t].[TransactionId] as varchar(255)),2) AS Date)) > 0 AND
+	DatePart(day, CAST('2010-01-' + right(replicate('0',2) + cast([t].[TransactionId] as varchar(255)),2) AS Date)) IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

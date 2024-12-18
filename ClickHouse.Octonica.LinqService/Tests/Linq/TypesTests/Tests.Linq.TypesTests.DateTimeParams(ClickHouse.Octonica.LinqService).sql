@@ -6,7 +6,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue > toDateTime64('1992-01-11 01:11:21.100', 3)
+	t.DateTimeValue > toDateTime64('1992-01-11 01:11:21.100', 3) AND
+	t.DateTimeValue IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -17,6 +18,7 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue > toDateTime64('1993-01-11 01:11:21.100', 3)
+	t.DateTimeValue > toDateTime64('1993-01-11 01:11:21.100', 3) AND
+	t.DateTimeValue IS NOT NULL
 LIMIT 1
 

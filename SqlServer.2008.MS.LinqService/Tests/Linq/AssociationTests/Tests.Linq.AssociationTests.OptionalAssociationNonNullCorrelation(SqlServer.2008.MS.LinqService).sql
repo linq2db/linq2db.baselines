@@ -186,8 +186,8 @@ FROM
 			[a_Table3].[ID]
 		FROM
 			[Table1] [r]
-				LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID]
-				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
+				LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID] AND [r].[ID2] IS NOT NULL
+				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID] AND [a_Table2].[ID3] IS NOT NULL
 		WHERE
 			EXISTS(
 				SELECT
@@ -195,10 +195,11 @@ FROM
 				FROM
 					[Table4] [id]
 				WHERE
-					[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
+					[a_Table3].[ID] = [id].[ID3] AND [id].[ID3] IS NOT NULL AND
+					[id].[ID] = [r].[ID]
 			)
 	) [m_1]
-		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3] OR [m_1].[ID] IS NULL AND [d].[ID3] IS NULL
+		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3] AND [m_1].[ID] IS NOT NULL AND [d].[ID3] IS NOT NULL OR [m_1].[ID] IS NULL AND [d].[ID3] IS NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -211,8 +212,8 @@ SELECT
 	[a_Table3].[ID]
 FROM
 	[Table1] [r]
-		LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID]
-		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
+		LEFT JOIN [Table2] [a_Table2] ON [r].[ID2] = [a_Table2].[ID] AND [r].[ID2] IS NOT NULL
+		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID] AND [a_Table2].[ID3] IS NOT NULL
 WHERE
 	EXISTS(
 		SELECT
@@ -220,7 +221,8 @@ WHERE
 		FROM
 			[Table4] [id]
 		WHERE
-			[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
+			[a_Table3].[ID] = [id].[ID3] AND [id].[ID3] IS NOT NULL AND
+			[id].[ID] = [r].[ID]
 	)
 
 BeforeExecute
@@ -236,10 +238,10 @@ FROM
 			[a_Table3].[ID] as [cond]
 		FROM
 			[Table1] [t1]
-				LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID]
-				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
+				LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID] AND [t1].[ID2] IS NOT NULL
+				LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID] AND [a_Table2].[ID3] IS NOT NULL
 	) [m_1]
-		INNER JOIN [Table4] [d] ON [m_1].[cond] = [d].[ID3] OR [m_1].[cond] IS NULL AND [d].[ID3] IS NULL
+		INNER JOIN [Table4] [d] ON [m_1].[cond] = [d].[ID3] AND [m_1].[cond] IS NOT NULL AND [d].[ID3] IS NOT NULL OR [m_1].[cond] IS NULL AND [d].[ID3] IS NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -252,8 +254,8 @@ SELECT
 	[a_Table3].[ID]
 FROM
 	[Table1] [t1]
-		LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID]
-		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
+		LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID] AND [t1].[ID2] IS NOT NULL
+		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID] AND [a_Table2].[ID3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

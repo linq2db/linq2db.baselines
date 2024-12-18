@@ -2,9 +2,15 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	TO_TIMESTAMP('2010-' || LPad(CAST(t.ID AS VarChar(2)), 2, '0') || '-01 20:35:44.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
+	t."c1"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			EXTRACT(YEAR FROM TO_TIMESTAMP('2010-' || LPad(CAST(p.ID AS VarChar(2)), 2, '0') || '-01 20:35:44.000', 'YYYY-MM-DD HH24:MI:SS.FF3')) as "Year_1",
+			TO_TIMESTAMP('2010-' || LPad(CAST(p.ID AS VarChar(2)), 2, '0') || '-01 20:35:44.000', 'YYYY-MM-DD HH24:MI:SS.FF3') as "c1"
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	EXTRACT(YEAR FROM TO_TIMESTAMP('2010-' || LPad(CAST(t.ID AS VarChar(2)), 2, '0') || '-01 20:35:44.000', 'YYYY-MM-DD HH24:MI:SS.FF3')) = 2010
+	t."Year_1" = 2010 AND t."Year_1" IS NOT NULL
 

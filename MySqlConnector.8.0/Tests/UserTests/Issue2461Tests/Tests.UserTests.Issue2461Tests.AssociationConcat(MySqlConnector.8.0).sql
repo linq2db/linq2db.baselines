@@ -60,7 +60,7 @@ FROM
 		FROM
 			`EXTERNAL_RECEIPTS` `t1`
 	) `i_1`
-		LEFT JOIN `CUST_DTL` `a_Customer` ON `i_1`.`Custkey` = `a_Customer`.`CUSTKEY` OR `i_1`.`Custkey` IS NULL AND `a_Customer`.`CUSTKEY` IS NULL
+		LEFT JOIN `CUST_DTL` `a_Customer` ON `i_1`.`Custkey` = `a_Customer`.`CUSTKEY` AND `i_1`.`Custkey` IS NOT NULL AND `a_Customer`.`CUSTKEY` IS NOT NULL OR `i_1`.`Custkey` IS NULL AND `a_Customer`.`CUSTKEY` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

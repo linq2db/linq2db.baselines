@@ -15,7 +15,10 @@ FROM
 			FROM
 				"GrandChild" "a_GrandChildren"
 			WHERE
-				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
+				x."ParentID" = "a_GrandChildren"."ParentID" AND
+				"a_GrandChildren"."ParentID" IS NOT NULL AND
+				x."ChildID" = "a_GrandChildren"."ChildID" AND
+				"a_GrandChildren"."ChildID" IS NOT NULL
 			LIMIT 1
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
@@ -26,11 +29,14 @@ FROM
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
-				x."ParentID" = "a_GrandChildren_1"."ParentID" AND x."ChildID" = "a_GrandChildren_1"."ChildID"
+				x."ParentID" = "a_GrandChildren_1"."ParentID" AND
+				"a_GrandChildren_1"."ParentID" IS NOT NULL AND
+				x."ChildID" = "a_GrandChildren_1"."ChildID" AND
+				"a_GrandChildren_1"."ChildID" IS NOT NULL
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" AND t1."ParentID" IS NOT NULL AND t2."ParentID" IS NOT NULL OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" AND t1."ChildID" IS NOT NULL AND t2."ChildID" IS NOT NULL OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" AND t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NOT NULL OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
@@ -72,7 +78,10 @@ FROM
 			FROM
 				"GrandChild" "a_GrandChildren"
 			WHERE
-				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
+				x."ParentID" = "a_GrandChildren"."ParentID" AND
+				"a_GrandChildren"."ParentID" IS NOT NULL AND
+				x."ChildID" = "a_GrandChildren"."ChildID" AND
+				"a_GrandChildren"."ChildID" IS NOT NULL
 			LIMIT 1
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
@@ -83,11 +92,14 @@ FROM
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
-				x."ParentID" = "a_GrandChildren_1"."ParentID" AND x."ChildID" = "a_GrandChildren_1"."ChildID"
+				x."ParentID" = "a_GrandChildren_1"."ParentID" AND
+				"a_GrandChildren_1"."ParentID" IS NOT NULL AND
+				x."ChildID" = "a_GrandChildren_1"."ChildID" AND
+				"a_GrandChildren_1"."ChildID" IS NOT NULL
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" AND t1."ParentID" IS NOT NULL AND t2."ParentID" IS NOT NULL OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" AND t1."ChildID" IS NOT NULL AND t2."ChildID" IS NOT NULL OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" AND t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NOT NULL OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE

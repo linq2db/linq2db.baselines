@@ -58,11 +58,13 @@ FROM
 			AVG([g_1].[DataValue]) as [AVG_1],
 			AVG([g_1].[DataValue]) as [AVG_2],
 			AVG(CASE
-				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 AND [g_1].[DataValue] IS NOT NULL
+					THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [AVG_3],
 			AVG(CASE
-				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 AND [g_1].[DataValue] IS NOT NULL
+					THEN [g_1].[DataValue]
 				ELSE NULL
 			END) as [AVG_4]
 		FROM
@@ -95,8 +97,10 @@ FROM
 					FROM
 						[AggregationData] [t_1]
 					WHERE
-						[t_1].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_1].[GroupId] AND
-						CAST([t_1].[DataValue] AS Int) % 2 = 0
+						[t_1].[DataValue] IS NOT NULL AND
+						[g_2].[Key_1] = [t_1].[GroupId] AND
+						CAST([t_1].[DataValue] AS Int) % 2 = 0 AND
+						[t_1].[DataValue] IS NOT NULL
 				) [t3]
 		) [t4]
 		OUTER APPLY (
@@ -109,8 +113,10 @@ FROM
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_2].[GroupId] AND
-						CAST([t_2].[DataValue] AS Int) % 2 = 0
+						[t_2].[DataValue] IS NOT NULL AND
+						[g_2].[Key_1] = [t_2].[GroupId] AND
+						CAST([t_2].[DataValue] AS Int) % 2 = 0 AND
+						[t_2].[DataValue] IS NOT NULL
 				) [t5]
 		) [t6]
 

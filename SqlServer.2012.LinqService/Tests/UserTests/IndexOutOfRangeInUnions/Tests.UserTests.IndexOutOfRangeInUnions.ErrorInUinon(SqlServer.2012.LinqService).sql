@@ -57,21 +57,21 @@ BeforeExecute
 
 SELECT
 	[doSap].[DocEntry],
-	IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado'),
+	IIF([doSap].[DocStatus] = N'O' AND [doSap].[DocStatus] IS NOT NULL, N'Aberto', N'Fechado'),
 	CAST(N'Manual/Externo' AS NVarChar(4000))
 FROM
 	[O1] [doSap]
 UNION
 SELECT
 	[doSap_1].[DocEntry],
-	IIF([doSap_1].[DocStatus] = N'O', N'Aberto', N'Fechado'),
+	IIF([doSap_1].[DocStatus] = N'O' AND [doSap_1].[DocStatus] IS NOT NULL, N'Aberto', N'Fechado'),
 	CAST(N'Manual/Externo' AS NVarChar(4000))
 FROM
 	[O2] [doSap_1]
 UNION
 SELECT
 	[doSap_2].[DocEntry],
-	IIF([doSap_2].[DocStatus] = N'O', N'Aberto', N'Fechado'),
+	IIF([doSap_2].[DocStatus] = N'O' AND [doSap_2].[DocStatus] IS NOT NULL, N'Aberto', N'Fechado'),
 	CAST(N'Manual/Externo' AS NVarChar(4000))
 FROM
 	[O3] [doSap_2]

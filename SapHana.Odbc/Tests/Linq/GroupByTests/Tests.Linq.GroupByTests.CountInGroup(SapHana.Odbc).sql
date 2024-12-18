@@ -358,7 +358,7 @@ SELECT
 					"x"."DataValue" IS NOT NULL AND "t1"."Key_1" = "x"."GroupId"
 			) "x_1"
 		WHERE
-			MOD("x_1"."DataValue", 2) = 0
+			MOD("x_1"."DataValue", 2) = 0 AND "x_1"."DataValue" IS NOT NULL
 	),
 	(
 		SELECT
@@ -370,8 +370,10 @@ SELECT
 				FROM
 					"AggregationData" "t_1"
 				WHERE
-					"t_1"."DataValue" IS NOT NULL AND "t1"."Key_1" = "t_1"."GroupId" AND
-					MOD("t_1"."DataValue", 2) = 0
+					"t_1"."DataValue" IS NOT NULL AND
+					"t1"."Key_1" = "t_1"."GroupId" AND
+					MOD("t_1"."DataValue", 2) = 0 AND
+					"t_1"."DataValue" IS NOT NULL
 			) "t2"
 	),
 	(
@@ -384,11 +386,13 @@ SELECT
 				FROM
 					"AggregationData" "x_2"
 				WHERE
-					"x_2"."DataValue" IS NOT NULL AND "t1"."Key_1" = "x_2"."GroupId" AND
-					MOD("x_2"."DataValue", 2) = 0
+					"x_2"."DataValue" IS NOT NULL AND
+					"t1"."Key_1" = "x_2"."GroupId" AND
+					MOD("x_2"."DataValue", 2) = 0 AND
+					"x_2"."DataValue" IS NOT NULL
 			) "x_3"
 		WHERE
-			MOD("x_3"."DataValue", 2) = 0
+			MOD("x_3"."DataValue", 2) = 0 AND "x_3"."DataValue" IS NOT NULL
 	),
 	"t1"."COUNT_5",
 	(
@@ -401,8 +405,10 @@ SELECT
 				FROM
 					"AggregationData" "t_2"
 				WHERE
-					"t_2"."DataValue" IS NOT NULL AND "t1"."Key_1" = "t_2"."GroupId" AND
-					MOD("t_2"."DataValue", 2) = 0
+					"t_2"."DataValue" IS NOT NULL AND
+					"t1"."Key_1" = "t_2"."GroupId" AND
+					MOD("t_2"."DataValue", 2) = 0 AND
+					"t_2"."DataValue" IS NOT NULL
 			) "t3"
 	)
 FROM
@@ -411,13 +417,15 @@ FROM
 			"t"."GroupId" as "Key_1",
 			COUNT(*) as "COUNT_1",
 			COUNT(CASE
-				WHEN MOD("t"."DataValue", 2) = 0 THEN 1
+				WHEN MOD("t"."DataValue", 2) = 0 AND "t"."DataValue" IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as "COUNT_2",
 			COUNT(*) as "COUNT_3",
 			COUNT(DISTINCT "t"."DataValue") as "COUNT_4",
 			COUNT(CASE
-				WHEN MOD("t"."DataValue", 2) = 0 THEN 1
+				WHEN MOD("t"."DataValue", 2) = 0 AND "t"."DataValue" IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as "COUNT_5"
 		FROM

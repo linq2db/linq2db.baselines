@@ -109,9 +109,9 @@ FROM
 			t1.Id1 as Id1
 		FROM
 			MasterClass t1
-				INNER JOIN DetailClass d ON t1.Id1 = d.MasterId
+				INNER JOIN DetailClass d ON t1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 	) m_1
-		INNER JOIN DetailClass d_1 ON m_1.Id1 = d_1.MasterId
+		INNER JOIN DetailClass d_1 ON m_1.Id1 = d_1.MasterId AND d_1.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -123,7 +123,7 @@ SELECT
 	m_1.ByteValues
 FROM
 	MasterClass m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

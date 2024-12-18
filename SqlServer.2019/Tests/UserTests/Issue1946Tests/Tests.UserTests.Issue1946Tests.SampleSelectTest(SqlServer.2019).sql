@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Users] [u]
 WHERE
-	[u].[Version] < @maxVersion
+	[u].[Version] < @maxVersion AND [u].[Version] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2019

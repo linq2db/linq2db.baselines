@@ -124,10 +124,10 @@ FROM
 						FROM
 							[TABLE1] [x]
 						WHERE
-							[x].[ID1] = [x_1].[PARENTID2]
+							[x].[ID1] = [x_1].[PARENTID2] AND [x_1].[PARENTID2] IS NOT NULL
 					) [t1]
 			WHERE
-				[x_1].[ID2] = [t3].[PARENTID3]
+				[x_1].[ID2] = [t3].[PARENTID3] AND [t3].[PARENTID3] IS NOT NULL
 		) [t2]
 ORDER BY
 	[t3].[ID3]

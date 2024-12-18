@@ -73,7 +73,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -131,7 +131,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

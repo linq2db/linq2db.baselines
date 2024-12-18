@@ -42,7 +42,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(`e`.`StringValue`, '1') = @p
+	Concat(`e`.`StringValue`, '1') = @p AND Concat(`e`.`StringValue`, '1') IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

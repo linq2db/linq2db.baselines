@@ -8,7 +8,9 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) > strftime('%Y-%m-%d %H:%M:%f', @dateTime)
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) > strftime('%Y-%m-%d %H:%M:%f', @dateTime) AND
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) IS NOT NULL AND
+	strftime('%Y-%m-%d %H:%M:%f', @dateTime) IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -21,6 +23,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) > strftime('%Y-%m-%d %H:%M:%f', @dateTime)
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) > strftime('%Y-%m-%d %H:%M:%f', @dateTime) AND
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) IS NOT NULL AND
+	strftime('%Y-%m-%d %H:%M:%f', @dateTime) IS NOT NULL
 LIMIT 1
 

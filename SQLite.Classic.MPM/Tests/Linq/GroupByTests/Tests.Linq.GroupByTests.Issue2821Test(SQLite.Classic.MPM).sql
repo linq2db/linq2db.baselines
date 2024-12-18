@@ -26,13 +26,17 @@ FROM
 				[LinqDataTypes] [t]
 			WHERE
 				strftime('%Y-%m-%d %H:%M:%f', Coalesce([t].[DateTimeValue], [t].[DateTimeValue2])) <= strftime('%Y-%m-%d %H:%M:%f', @currentDate) AND
-				([t].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1))
+				strftime('%Y-%m-%d %H:%M:%f', Coalesce([t].[DateTimeValue], [t].[DateTimeValue2])) IS NOT NULL AND
+				strftime('%Y-%m-%d %H:%M:%f', @currentDate) IS NOT NULL AND
+				([t].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1) AND strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue2]) IS NOT NULL)
 			GROUP BY
 				[t].[ID]
-		) [t1] ON [o].[ID] = [t1].[ID] AND (strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) = strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) OR strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) IS NULL AND strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) IS NULL)
+		) [t1] ON [o].[ID] = [t1].[ID] AND (strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) = strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) AND strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) IS NOT NULL AND strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) IS NOT NULL OR strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) IS NULL AND strftime('%Y-%m-%d %H:%M:%f', [t1].[c1]) IS NULL)
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', Coalesce([o].[DateTimeValue], [o].[DateTimeValue2])) <= strftime('%Y-%m-%d %H:%M:%f', @currentDate) AND
-	([o].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1))
+	strftime('%Y-%m-%d %H:%M:%f', Coalesce([o].[DateTimeValue], [o].[DateTimeValue2])) IS NOT NULL AND
+	strftime('%Y-%m-%d %H:%M:%f', @currentDate) IS NOT NULL AND
+	([o].[DateTimeValue2] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) >= strftime('%Y-%m-%d %H:%M:%f', @currentDate_1) AND strftime('%Y-%m-%d %H:%M:%f', [o].[DateTimeValue2]) IS NOT NULL)
 ORDER BY
 	[o].[DateTimeValue2]
 

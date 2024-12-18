@@ -60,20 +60,24 @@ SELECT
 	MAX(g_1."DataValue"),
 	MAX(g_1."DataValue"),
 	MAX(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MAX(DISTINCT g_1."DataValue"),
 	MAX(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MAX(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END)
 FROM

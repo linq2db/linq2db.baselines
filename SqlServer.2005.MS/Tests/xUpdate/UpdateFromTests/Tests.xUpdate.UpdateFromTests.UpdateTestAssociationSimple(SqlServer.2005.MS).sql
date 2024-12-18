@@ -81,9 +81,9 @@ SET
 	[v].[Value3] = 1
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id] AND [v].[RelationId] IS NOT NULL
 WHERE
-	[a_Relation].[RelatedValue1] = 11
+	[a_Relation].[RelatedValue1] = 11 AND [a_Relation].[RelatedValue1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -94,9 +94,9 @@ SELECT TOP (1)
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id] AND [v].[RelationId] IS NOT NULL
 WHERE
-	[a_Relation].[RelatedValue1] = 11
+	[a_Relation].[RelatedValue1] = 11 AND [a_Relation].[RelatedValue1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

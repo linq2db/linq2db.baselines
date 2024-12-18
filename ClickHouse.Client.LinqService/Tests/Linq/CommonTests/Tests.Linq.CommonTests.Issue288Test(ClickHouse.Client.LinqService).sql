@@ -17,6 +17,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName = 'John'
+	p.FirstName = 'John' AND p.FirstName IS NOT NULL
 LIMIT 1
 

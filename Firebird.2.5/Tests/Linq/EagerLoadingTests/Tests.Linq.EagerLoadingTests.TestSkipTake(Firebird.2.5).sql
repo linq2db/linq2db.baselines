@@ -122,7 +122,7 @@ FROM
 		FROM
 			"MasterClass" "m_1"
 	) "m_2"
-		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -139,7 +139,7 @@ FROM
 		FROM
 			"MasterClass" "m_1"
 	) "m_2"
-		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 ORDER BY
 	"d"."DetailId"
 
@@ -173,7 +173,7 @@ FROM
 		FROM
 			"MasterClass" "t1"
 	) "m_1"
-		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId" AND "d"."MasterId" IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

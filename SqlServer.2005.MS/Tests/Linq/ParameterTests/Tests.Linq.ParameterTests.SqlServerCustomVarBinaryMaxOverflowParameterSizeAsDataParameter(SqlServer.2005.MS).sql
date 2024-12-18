@@ -53,7 +53,7 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t]
 WHERE
-	[t].[VarBinary] = @p
+	[t].[VarBinary] = @p AND [t].[VarBinary] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

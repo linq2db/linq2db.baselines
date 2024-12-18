@@ -25,7 +25,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:param = t1."BigIntValue"
+	:param = t1."BigIntValue" AND t1."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

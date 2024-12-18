@@ -121,8 +121,10 @@ FROM
 		FROM
 			"Stone" "sG"
 		WHERE
-			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
-			Char_Length("sG"."ImageFullUrl") > 0
+			"sG"."Enabled" = TRUE AND
+			"sG"."Name" NOT STARTING WITH 'level - ' AND
+			Char_Length("sG"."ImageFullUrl") > 0 AND
+			Char_Length("sG"."ImageFullUrl") IS NOT NULL
 		GROUP BY
 			"sG"."Name"
 	) "sG_1"
@@ -138,6 +140,7 @@ FROM
 				"s"."Enabled" = TRUE AND
 				"s"."Name" NOT STARTING WITH 'level - ' AND
 				Char_Length("s"."ImageFullUrl") > 0 AND
+				Char_Length("s"."ImageFullUrl") IS NOT NULL AND
 				"sG_1"."Name" = "s"."Name"
 			FETCH NEXT 1 ROWS ONLY
 		) "t1"

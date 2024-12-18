@@ -8,5 +8,5 @@ FROM
 	"Parent" "t1",
 	"GrandChild" "g_1",
 	"Parent" "c_1"
-		LEFT JOIN "Child" "a_Child" ON "g_1"."ParentID" = "a_Child"."ParentID" AND "g_1"."ChildID" = "a_Child"."ChildID"
+		LEFT JOIN "Child" "a_Child" ON "g_1"."ParentID" = "a_Child"."ParentID" AND "g_1"."ParentID" IS NOT NULL AND "g_1"."ChildID" = "a_Child"."ChildID" AND "g_1"."ChildID" IS NOT NULL
 

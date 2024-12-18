@@ -184,7 +184,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -217,7 +218,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -247,7 +249,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -269,7 +272,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -291,7 +295,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -484,7 +489,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -517,7 +523,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -547,7 +554,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -569,7 +577,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -591,7 +600,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -784,7 +794,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -817,7 +828,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -847,7 +859,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -869,7 +882,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -891,7 +905,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1084,7 +1099,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1117,7 +1133,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1147,7 +1164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1169,7 +1187,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1191,7 +1210,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1384,7 +1404,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1417,7 +1438,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1447,7 +1469,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1469,7 +1492,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1491,7 +1515,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1684,7 +1709,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1717,7 +1743,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1747,7 +1774,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1769,7 +1797,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1791,7 +1820,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1984,7 +2014,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2017,7 +2048,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2047,7 +2079,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2069,7 +2102,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -2091,7 +2125,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2284,7 +2319,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2317,7 +2353,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2347,7 +2384,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2369,7 +2407,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -2391,7 +2430,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2584,7 +2624,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2617,7 +2658,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2647,7 +2689,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2669,7 +2712,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -2691,7 +2735,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2884,7 +2929,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2917,7 +2963,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2947,7 +2994,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2969,7 +3017,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -2991,7 +3040,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3184,7 +3234,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3217,7 +3268,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3247,7 +3299,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3269,7 +3322,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -3291,7 +3345,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3484,7 +3539,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3517,7 +3573,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3547,7 +3604,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3569,7 +3627,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -3591,7 +3650,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3784,7 +3844,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3817,7 +3878,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3847,7 +3909,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -3869,7 +3932,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -3891,7 +3955,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4084,7 +4149,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4117,7 +4183,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4147,7 +4214,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4169,7 +4237,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -4191,7 +4260,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4384,7 +4454,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4417,7 +4488,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4447,7 +4519,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4469,7 +4542,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -4491,7 +4565,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4684,7 +4759,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4717,7 +4793,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4747,7 +4824,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4769,7 +4847,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -4791,7 +4870,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -4984,7 +5064,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5017,7 +5098,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5047,7 +5129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5069,7 +5152,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -5091,7 +5175,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5284,7 +5369,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5317,7 +5403,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5347,7 +5434,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5369,7 +5457,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -5391,7 +5480,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5584,7 +5674,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5617,7 +5708,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5647,7 +5739,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5669,7 +5762,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -5691,7 +5785,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5884,7 +5979,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5917,7 +6013,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5947,7 +6044,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -5969,7 +6067,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -5991,7 +6090,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6184,7 +6284,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6217,7 +6318,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6247,7 +6349,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6269,7 +6372,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -6291,7 +6395,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6484,7 +6589,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6517,7 +6623,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6547,7 +6654,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6569,7 +6677,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -6591,7 +6700,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6784,7 +6894,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6817,7 +6928,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6847,7 +6959,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -6869,7 +6982,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -6891,7 +7005,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7084,7 +7199,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7117,7 +7233,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7147,7 +7264,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7169,7 +7287,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -7191,7 +7310,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7384,7 +7504,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7417,7 +7538,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7447,7 +7569,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7469,7 +7592,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -7491,7 +7615,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7684,7 +7809,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7717,7 +7843,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7747,7 +7874,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7769,7 +7897,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -7791,7 +7920,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -7984,7 +8114,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8017,7 +8148,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8047,7 +8179,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8069,7 +8202,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -8091,7 +8225,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8284,7 +8419,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8317,7 +8453,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8347,7 +8484,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8369,7 +8507,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -8391,7 +8530,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8584,7 +8724,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8617,7 +8758,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8647,7 +8789,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8669,7 +8812,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -8691,7 +8835,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8884,7 +9029,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8917,7 +9063,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8947,7 +9094,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -8969,7 +9117,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -8991,7 +9140,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9184,7 +9334,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9217,7 +9368,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9247,7 +9399,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9269,7 +9422,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -9291,7 +9445,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9484,7 +9639,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9517,7 +9673,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9547,7 +9704,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9569,7 +9727,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -9591,7 +9750,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9784,7 +9944,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9817,7 +9978,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9847,7 +10009,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -9869,7 +10032,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -9891,7 +10055,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10084,7 +10249,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10117,7 +10283,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10147,7 +10314,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10169,7 +10337,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -10191,7 +10360,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10384,7 +10554,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10417,7 +10588,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10447,7 +10619,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10469,7 +10642,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -10491,7 +10665,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10684,7 +10859,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10717,7 +10893,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10747,7 +10924,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10769,7 +10947,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -10791,7 +10970,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -10984,7 +11164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11017,7 +11198,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11047,7 +11229,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11069,7 +11252,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -11091,7 +11275,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11284,7 +11469,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11317,7 +11503,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11347,7 +11534,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11369,7 +11557,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -11391,7 +11580,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11584,7 +11774,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11617,7 +11808,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11647,7 +11839,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11669,7 +11862,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -11691,7 +11885,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11884,7 +12079,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11917,7 +12113,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11947,7 +12144,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -11969,7 +12167,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -11991,7 +12190,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12184,7 +12384,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12217,7 +12418,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12247,7 +12449,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12269,7 +12472,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -12291,7 +12495,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12484,7 +12689,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12517,7 +12723,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12547,7 +12754,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12569,7 +12777,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -12591,7 +12800,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12784,7 +12994,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12817,7 +13028,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12847,7 +13059,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -12869,7 +13082,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -12891,7 +13105,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13084,7 +13299,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13117,7 +13333,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13147,7 +13364,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13169,7 +13387,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -13191,7 +13410,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13384,7 +13604,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13417,7 +13638,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13447,7 +13669,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13469,7 +13692,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -13491,7 +13715,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13684,7 +13909,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13717,7 +13943,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13747,7 +13974,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13769,7 +13997,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -13791,7 +14020,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -13984,7 +14214,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14017,7 +14248,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14047,7 +14279,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14069,7 +14302,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -14091,7 +14325,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14284,7 +14519,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14317,7 +14553,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14347,7 +14584,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14369,7 +14607,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -14391,7 +14630,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14584,7 +14824,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14617,7 +14858,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14647,7 +14889,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14669,7 +14912,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -14691,7 +14935,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14884,7 +15129,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14917,7 +15163,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14947,7 +15194,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -14969,7 +15217,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -14991,7 +15240,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15184,7 +15434,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15217,7 +15468,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15247,7 +15499,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15269,7 +15522,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -15291,7 +15545,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15484,7 +15739,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15517,7 +15773,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15547,7 +15804,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15569,7 +15827,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -15591,7 +15850,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15784,7 +16044,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15817,7 +16078,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15847,7 +16109,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -15869,7 +16132,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -15891,7 +16155,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

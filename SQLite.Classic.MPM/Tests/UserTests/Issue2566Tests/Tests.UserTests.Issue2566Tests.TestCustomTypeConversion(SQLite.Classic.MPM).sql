@@ -37,7 +37,7 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	[m_1].[Value] = @cond
+	[m_1].[Value] = @cond AND [m_1].[Value] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

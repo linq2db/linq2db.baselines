@@ -15,5 +15,5 @@ FROM
 				[t].[ParentID] = [c_1].[ParentID]
 		) [t1]
 WHERE
-	[t1].[COUNT_1] > 0
+	[t1].[COUNT_1] > 0 AND [t1].[COUNT_1] IS NOT NULL
 

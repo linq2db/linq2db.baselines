@@ -35,7 +35,7 @@ SELECT
 FROM
 	Users u
 WHERE
-	u.Version < 1
+	u.Version < 1 AND u.Version IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

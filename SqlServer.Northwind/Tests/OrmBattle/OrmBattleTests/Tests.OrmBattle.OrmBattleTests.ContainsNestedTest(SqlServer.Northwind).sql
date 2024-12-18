@@ -18,9 +18,10 @@ SELECT
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 		WHERE
-			[o].[OrderDate] > DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
+			[o].[OrderDate] > DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7) AND
+			[o].[OrderDate] IS NOT NULL
 	), 1, 0)
 FROM
 	[Customers] [c_1]

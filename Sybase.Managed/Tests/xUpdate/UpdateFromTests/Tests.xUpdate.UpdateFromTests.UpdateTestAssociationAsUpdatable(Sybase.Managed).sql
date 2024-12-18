@@ -84,7 +84,10 @@ SET
 FROM
 	[UpdateRelation] [a_Relation]
 WHERE
-	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[RelationId] = [a_Relation].[id]
+	[a_Relation].[RelatedValue1] = 11 AND
+	[a_Relation].[RelatedValue1] IS NOT NULL AND
+	[UpdatedEntities].[RelationId] = [a_Relation].[id] AND
+	[UpdatedEntities].[RelationId] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -93,9 +96,9 @@ SELECT TOP 1
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id]
+		LEFT JOIN [UpdateRelation] [a_Relation] ON [v].[RelationId] = [a_Relation].[id] AND [v].[RelationId] IS NOT NULL
 WHERE
-	[a_Relation].[RelatedValue1] = 11
+	[a_Relation].[RelatedValue1] = 11 AND [a_Relation].[RelatedValue1] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

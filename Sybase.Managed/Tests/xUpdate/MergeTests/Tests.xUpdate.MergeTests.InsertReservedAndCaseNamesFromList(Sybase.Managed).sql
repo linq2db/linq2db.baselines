@@ -255,7 +255,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[source_as])
 
-WHEN NOT MATCHED AND [Source].[source_insert] = 216 THEN
+WHEN NOT MATCHED AND [Source].[source_insert] = 216 AND [Source].[source_insert] IS NOT NULL THEN
 INSERT
 (
 	[Id],

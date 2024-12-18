@@ -68,14 +68,14 @@ FROM
 				INNER JOIN "Order Details" d ON t1."ProductId" = d."ProductID"
 				INNER JOIN "Orders" e_1 ON d."OrderID" = e_1."OrderID"
 				INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
-				LEFT JOIN "Suppliers" "a_Supplier" ON "a_Product"."SupplierID" = "a_Supplier"."SupplierID" AND (NOT "a_Supplier"."IsDeleted" OR NOT "a_Supplier"."IsDeleted")
+				LEFT JOIN "Suppliers" "a_Supplier" ON "a_Product"."SupplierID" = "a_Supplier"."SupplierID" AND "a_Product"."SupplierID" IS NOT NULL AND (NOT "a_Supplier"."IsDeleted" OR NOT "a_Supplier"."IsDeleted")
 		WHERE
 			(NOT e_1."IsDeleted" OR NOT e_1."IsDeleted") AND
 			(NOT "a_Product"."IsDeleted" OR NOT "a_Product"."IsDeleted") AND
 			(NOT e_1."IsDeleted" OR NOT e_1."IsDeleted") AND
 			(NOT d."IsDeleted" OR NOT d."IsDeleted")
 	) m_1
-		INNER JOIN "Products" d_1 ON m_1."SupplierId" = d_1."SupplierID" OR m_1."SupplierId" IS NULL AND d_1."SupplierID" IS NULL
+		INNER JOIN "Products" d_1 ON m_1."SupplierId" = d_1."SupplierID" AND m_1."SupplierId" IS NOT NULL AND d_1."SupplierID" IS NOT NULL OR m_1."SupplierId" IS NULL AND d_1."SupplierID" IS NULL
 WHERE
 	NOT d_1."IsDeleted" OR NOT d_1."IsDeleted"
 
@@ -106,7 +106,7 @@ FROM
 	"Products" m_1
 		INNER JOIN "Order Details" d ON m_1."ProductID" = d."ProductID"
 		INNER JOIN "Orders" e ON d."OrderID" = e."OrderID"
-		LEFT JOIN "Suppliers" "a_Supplier" ON m_1."SupplierID" = "a_Supplier"."SupplierID" AND (NOT "a_Supplier"."IsDeleted" OR NOT "a_Supplier"."IsDeleted")
+		LEFT JOIN "Suppliers" "a_Supplier" ON m_1."SupplierID" = "a_Supplier"."SupplierID" AND m_1."SupplierID" IS NOT NULL AND (NOT "a_Supplier"."IsDeleted" OR NOT "a_Supplier"."IsDeleted")
 WHERE
 	(NOT m_1."IsDeleted" OR NOT m_1."IsDeleted") AND
 	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND

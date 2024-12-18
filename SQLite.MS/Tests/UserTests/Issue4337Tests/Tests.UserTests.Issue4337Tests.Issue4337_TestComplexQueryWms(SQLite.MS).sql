@@ -243,7 +243,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
-						[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
+						[y].[Id] = [x_19].[InfeedAdviceID] AND [x_19].[InfeedAdviceID] IS NOT NULL AND
+						[y].[InfeedAdviceType] = 10
 				))
 		)
 			THEN 1
@@ -309,7 +310,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_1]
 					WHERE
-						[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 10
+						[y_1].[Id] = [x_22].[InfeedAdviceID] AND [x_22].[InfeedAdviceID] IS NOT NULL AND
+						[y_1].[InfeedAdviceType] = 10
 				))
 		)
 			THEN 1

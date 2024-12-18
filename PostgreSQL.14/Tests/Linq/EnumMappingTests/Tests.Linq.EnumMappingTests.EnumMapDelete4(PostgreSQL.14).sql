@@ -28,7 +28,10 @@ BeforeExecute
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12
+	r."ID" = 101 AND
+	r."ID" IS NOT NULL AND
+	r."BigIntValue" = 12 AND
+	r."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

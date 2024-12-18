@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Date_Trunc('day', t."DateTimeValue") > :Date
+	Date_Trunc('day', t."DateTimeValue") > :Date AND Date_Trunc('day', t."DateTimeValue") IS NOT NULL
 

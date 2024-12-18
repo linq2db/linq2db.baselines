@@ -17,7 +17,7 @@ FROM
 				[Parent] [right_1]
 			WHERE
 				[right_1].[ParentID] <> @id1
-		) [right_2] ON [right_2].[c1] = [left_1].[Value1] OR [right_2].[c1] IS NULL AND [left_1].[Value1] IS NULL
+		) [right_2] ON [right_2].[c1] = [left_1].[Value1] AND [right_2].[c1] IS NOT NULL AND [left_1].[Value1] IS NOT NULL OR [right_2].[c1] IS NULL AND [left_1].[Value1] IS NULL
 ORDER BY
 	[left_1].[ParentID]
 

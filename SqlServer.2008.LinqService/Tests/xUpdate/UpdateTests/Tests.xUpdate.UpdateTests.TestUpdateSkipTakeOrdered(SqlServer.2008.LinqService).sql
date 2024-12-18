@@ -205,7 +205,7 @@ WHERE
 	[t1].[RN] > @skip AND
 	[t1].[RN] <= (@skip + @take) AND
 	[u].[ParentID] = [t1].[ParentID] AND
-	([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
+	([u].[Value1] = [t1].[Value1] AND [u].[Value1] IS NOT NULL AND [t1].[Value1] IS NOT NULL OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2008

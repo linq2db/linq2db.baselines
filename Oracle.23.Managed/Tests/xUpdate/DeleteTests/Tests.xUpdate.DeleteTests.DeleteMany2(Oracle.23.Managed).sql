@@ -146,7 +146,7 @@ WHERE
 		FROM
 			"Parent" p
 				INNER JOIN "Child" a_Children ON p."ParentID" = a_Children."ParentID"
-				INNER JOIN "GrandChild" a_GrandChildren ON a_Children."ParentID" = a_GrandChildren."ParentID" AND a_Children."ChildID" = a_GrandChildren."ChildID"
+				INNER JOIN "GrandChild" a_GrandChildren ON a_Children."ParentID" = a_GrandChildren."ParentID" AND a_GrandChildren."ParentID" IS NOT NULL AND a_Children."ChildID" = a_GrandChildren."ChildID" AND a_GrandChildren."ChildID" IS NOT NULL
 		WHERE
 			p."ParentID" >= 1000 AND
 			t1."ParentID" = a_GrandChildren."ParentID" AND
@@ -177,7 +177,7 @@ BeforeExecute
 DELETE FROM
 	"GrandChild" c_1
 WHERE
-	c_1."ParentID" >= 1000
+	c_1."ParentID" >= 1000 AND c_1."ParentID" IS NOT NULL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

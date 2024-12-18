@@ -2,9 +2,15 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	TO_TIMESTAMP(EXTRACT(YEAR FROM d."DateTimeValue") || '-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS')
+	d."Day_2"
 FROM
-	"LinqDataTypes" d
+	(
+		SELECT
+			EXTRACT(DAY FROM TO_TIMESTAMP(EXTRACT(YEAR FROM t."DateTimeValue") || '-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS')) as "Day_1",
+			TO_TIMESTAMP(EXTRACT(YEAR FROM t."DateTimeValue") || '-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS') as "Day_2"
+		FROM
+			"LinqDataTypes" t
+	) d
 WHERE
-	EXTRACT(DAY FROM TO_TIMESTAMP(EXTRACT(YEAR FROM d."DateTimeValue") || '-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS')) > 0
+	d."Day_1" > 0 AND d."Day_1" IS NOT NULL
 

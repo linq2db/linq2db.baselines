@@ -668,8 +668,8 @@ SELECT
 	"a_ObjectC"."FK"
 FROM
 	"EntityA" t1
-		INNER JOIN "EntityB" "a_ObjectB" ON t1."FK" = "a_ObjectB"."Id"
-		LEFT JOIN "EntityC" "a_ObjectC" ON "a_ObjectB"."FK" = "a_ObjectC"."Id"
+		INNER JOIN "EntityB" "a_ObjectB" ON t1."FK" = "a_ObjectB"."Id" AND t1."FK" IS NOT NULL
+		LEFT JOIN "EntityC" "a_ObjectC" ON "a_ObjectB"."FK" = "a_ObjectC"."Id" AND "a_ObjectB"."FK" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

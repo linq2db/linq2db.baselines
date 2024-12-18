@@ -43,7 +43,7 @@ WHERE
 			"t2"."FirstName" = "t4"."FirstName" AND
 			"t2".ID = "t4".ID AND
 			"t2"."LastName" = "t4"."LastName" AND
-			("t2"."MiddleName" = "t4"."MiddleName" OR "t2"."MiddleName" IS NULL AND "t4"."MiddleName" IS NULL) AND
+			("t2"."MiddleName" = "t4"."MiddleName" AND "t2"."MiddleName" IS NOT NULL AND "t4"."MiddleName" IS NOT NULL OR "t2"."MiddleName" IS NULL AND "t4"."MiddleName" IS NULL) AND
 			"t2"."Gender" = "t4"."Gender"
 	)
 

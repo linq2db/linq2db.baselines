@@ -35,7 +35,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '4'
+	i.StrValue >= '4' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -47,7 +47,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '4'
+	i.StrValue >= '4' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -59,7 +59,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '2'
+	i.StrValue <= '2' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -71,7 +71,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '2'
+	i.StrValue <= '2' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -83,7 +83,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue > '3'
+	i.StrValue > '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -95,7 +95,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue > '3'
+	i.StrValue > '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -107,7 +107,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue < '3'
+	i.StrValue < '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -119,7 +119,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue < '3'
+	i.StrValue < '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -131,7 +131,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue = '3'
+	i.StrValue = '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -143,7 +143,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue = '3'
+	i.StrValue = '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -155,7 +155,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '2'
+	i.StrValue <= '2' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -167,7 +167,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '2'
+	i.StrValue <= '2' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -179,7 +179,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '4'
+	i.StrValue >= '4' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -191,7 +191,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '4'
+	i.StrValue >= '4' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -203,7 +203,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue < '3'
+	i.StrValue < '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -215,7 +215,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue < '3'
+	i.StrValue < '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -227,7 +227,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue > '3'
+	i.StrValue > '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -239,7 +239,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue > '3'
+	i.StrValue > '3' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -251,7 +251,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '5'
+	i.StrValue >= '5' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -263,7 +263,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue >= '5'
+	i.StrValue >= '5' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -275,7 +275,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '1'
+	i.StrValue <= '1' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -287,7 +287,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValue <= '1'
+	i.StrValue <= '1' AND i.StrValue IS NOT NULL
 LIMIT 2
 
 BeforeExecute

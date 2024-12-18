@@ -306,5 +306,5 @@ DELETE [t1]
 FROM
 	[AllTypes] [t1]
 WHERE
-	[t1].[char20DataType] = N'issue792'
+	[t1].[char20DataType] = N'issue792' AND [t1].[char20DataType] IS NOT NULL
 

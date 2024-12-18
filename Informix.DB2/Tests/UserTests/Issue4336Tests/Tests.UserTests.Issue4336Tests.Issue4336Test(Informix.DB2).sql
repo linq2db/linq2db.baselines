@@ -147,7 +147,7 @@ FROM
 								agroup.Id,
 								oi.ProductId
 						) vsp
-				) vsp_1 ON vsp_1.OrderPeriodId = op.Id AND vsp_1.ProductId = pop.ProductId
+				) vsp_1 ON vsp_1.OrderPeriodId = op.Id AND vsp_1.ProductId = pop.ProductId AND vsp_1.ProductId IS NOT NULL
 	) r
 		LEFT JOIN (
 			SELECT
@@ -179,8 +179,8 @@ FROM
 						GROUP BY
 							agroup_1.Id,
 							p.CategoryId
-					) vsopc ON vsopc.OrderPeriodId = sub.Id AND vsopc.CategoryId = sub.Id_1
-		) v2_1 ON v2_1.Id = r.OrderPeriodId AND v2_1.Id_1 = r.CategoryId
+					) vsopc ON vsopc.OrderPeriodId = sub.Id AND vsopc.CategoryId = sub.Id_1 AND vsopc.CategoryId IS NOT NULL
+		) v2_1 ON v2_1.Id = r.OrderPeriodId AND v2_1.Id_1 = r.CategoryId AND r.CategoryId IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

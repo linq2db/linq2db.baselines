@@ -233,8 +233,8 @@ USING (
 (
 	source_Field1
 )
-ON ((Target.Field1 = Source.source_Field1 OR Target.Field1 IS NULL AND Source.source_Field1 IS NULL) AND
-Target.Field2 = 6)
+ON ((Target.Field1 = Source.source_Field1 AND Target.Field1 IS NOT NULL AND Source.source_Field1 IS NOT NULL OR Target.Field1 IS NULL AND Source.source_Field1 IS NULL) AND
+Target.Field2 = 6 AND Target.Field2 IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE

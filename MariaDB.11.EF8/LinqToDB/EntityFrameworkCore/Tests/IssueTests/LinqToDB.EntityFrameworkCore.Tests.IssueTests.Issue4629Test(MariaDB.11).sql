@@ -19,7 +19,15 @@ FROM
 					`Issue4629Tags` `a_Tags`
 				WHERE
 					`p`.`Id` = `a_Tags`.`PostId` AND `a_Tags`.`Weight` > 1
-			) > 5
+			) > 5 AND
+			(
+				SELECT
+					SUM(`a_Tags`.`Weight`)
+				FROM
+					`Issue4629Tags` `a_Tags`
+				WHERE
+					`p`.`Id` = `a_Tags`.`PostId` AND `a_Tags`.`Weight` > 1
+			) IS NOT NULL
 		ORDER BY
 			(
 				SELECT

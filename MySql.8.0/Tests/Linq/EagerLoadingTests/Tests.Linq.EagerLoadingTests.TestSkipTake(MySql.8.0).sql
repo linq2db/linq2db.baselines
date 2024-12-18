@@ -108,7 +108,7 @@ FROM
 		FROM
 			`MasterClass` `m_1`
 	) `m_2`
-		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
+		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -133,7 +133,7 @@ FROM
 			FROM
 				`DetailClass` `d`
 			WHERE
-				`m_2`.`Id1` = `d`.`MasterId`
+				`m_2`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 			ORDER BY
 				`d`.`DetailId`
 			LIMIT 1, 2
@@ -169,7 +169,7 @@ FROM
 		FROM
 			`MasterClass` `t1`
 	) `m_1`
-		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
+		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

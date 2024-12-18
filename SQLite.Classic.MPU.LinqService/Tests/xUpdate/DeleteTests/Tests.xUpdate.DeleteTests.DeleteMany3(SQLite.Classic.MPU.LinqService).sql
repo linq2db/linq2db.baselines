@@ -4,7 +4,7 @@
 DELETE FROM
 	[GrandChild]
 WHERE
-	[GrandChild].[ParentID] >= 1000
+	[GrandChild].[ParentID] >= 1000 AND [GrandChild].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -93,7 +93,7 @@ WHERE
 		FROM
 			[Parent] [gc]
 				INNER JOIN [Child] [a_Children] ON [gc].[ParentID] = [a_Children].[ParentID]
-				INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
+				INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_GrandChildren].[ParentID] IS NOT NULL AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID] AND [a_GrandChildren].[ChildID] IS NOT NULL
 		WHERE
 			[gc].[ParentID] IN (1001) AND
 			[GrandChild].[ParentID] = [a_GrandChildren].[ParentID] AND
@@ -107,7 +107,7 @@ BeforeExecute
 DELETE FROM
 	[GrandChild]
 WHERE
-	[GrandChild].[ParentID] >= 1000
+	[GrandChild].[ParentID] >= 1000 AND [GrandChild].[ParentID] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

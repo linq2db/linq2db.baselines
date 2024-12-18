@@ -103,7 +103,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :cond
+	t1."GuidValue" = :cond AND t1."GuidValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -237,7 +237,8 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue AND ROWNUM <= 1
+	t1."GuidValue" = :GuidValue AND t1."GuidValue" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -251,7 +252,8 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue AND ROWNUM <= 1
+	t1."GuidValue" = :GuidValue AND t1."GuidValue" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -111,11 +111,11 @@ FROM
 		FROM
 			[WMS_GlobalTaskA] [t1]
 	) [t2]
-		LEFT JOIN [WmsResourcePointDTO] [source] ON [t2].[RPSourceID] = [source].[Id]
-		LEFT JOIN [StorageShelfDTO] [sourceShelf] ON [t2].[StorageShelfSourceID] = [sourceShelf].[Id]
-		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id]
-		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id]
-		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id]
+		LEFT JOIN [WmsResourcePointDTO] [source] ON [t2].[RPSourceID] = [source].[Id] AND [t2].[RPSourceID] IS NOT NULL
+		LEFT JOIN [StorageShelfDTO] [sourceShelf] ON [t2].[StorageShelfSourceID] = [sourceShelf].[Id] AND [t2].[StorageShelfSourceID] IS NOT NULL
+		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id] AND [t2].[RPDestinationID] IS NOT NULL
+		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id] AND [t2].[StorageShelfDestinationID] IS NOT NULL
+		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id] AND [t2].[RPOrigDestinationID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

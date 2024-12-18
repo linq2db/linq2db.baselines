@@ -46,7 +46,8 @@ FROM
 			eg."TotalId"
 	) r
 WHERE
-	"Total"."Label" = 'spendings' AND "Total"."Id" = r."Key_1"
+	"Total"."Label" = 'spendings' AND "Total"."Label" IS NOT NULL AND
+	"Total"."Id" = r."Key_1"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

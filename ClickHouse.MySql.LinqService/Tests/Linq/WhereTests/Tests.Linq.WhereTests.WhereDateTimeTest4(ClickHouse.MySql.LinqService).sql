@@ -15,5 +15,6 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue = toDateTime64('2009-09-27 00:00:00.000', 3)
+	t1.DateTimeValue = toDateTime64('2009-09-27 00:00:00.000', 3) AND
+	t1.DateTimeValue IS NOT NULL
 

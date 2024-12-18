@@ -92,7 +92,7 @@ UPDATE
 SET
 	"Data" = :Data
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"TrimTestTable"."Data" = '***XXX***' AND "TrimTestTable"."Data" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -106,7 +106,7 @@ UPDATE
 SET
 	"Data" = :Data
 WHERE
-	"TrimTestTable"."Data" = :p
+	"TrimTestTable"."Data" = :p AND "TrimTestTable"."Data" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

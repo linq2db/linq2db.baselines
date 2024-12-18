@@ -121,7 +121,7 @@ FROM
 		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
 		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 WHERE
-	a_Book.Discriminator = 'Novel'
+	a_Book.Discriminator = 'Novel' AND a_Book.Discriminator IS NOT NULL
 UNION DISTINCT
 SELECT
 	a_Book_1.BookId as BookId,
@@ -135,7 +135,7 @@ FROM
 		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
 		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 WHERE
-	a_Book_1.Discriminator = 'Roman'
+	a_Book_1.Discriminator = 'Roman' AND a_Book_1.Discriminator IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -92,18 +92,19 @@ SELECT
 			[a_CaseLog].[Number]
 		FROM
 			[CaseLogProperty] [a_CaseLogProperties]
-				LEFT JOIN [CaseLog] [a_CaseLog] ON [a_CaseLogProperties].[CaseLogId] = [a_CaseLog].[Id]
+				LEFT JOIN [CaseLog] [a_CaseLog] ON [a_CaseLogProperties].[CaseLogId] = [a_CaseLog].[Id] AND [a_CaseLogProperties].[CaseLogId] IS NOT NULL
 		WHERE
-			[x].[Id] = [a_CaseLogProperties].[PropertyId]
+			[x].[Id] = [a_CaseLogProperties].[PropertyId] AND [a_CaseLogProperties].[PropertyId] IS NOT NULL
 	),
 	(
 		SELECT TOP (1)
 			[a_Incident].[EventNumber]
 		FROM
 			[IncidentProperty] [a_IncidentProperties]
-				LEFT JOIN [Incident] [a_Incident] ON [a_IncidentProperties].[IncidentId] = [a_Incident].[Id]
+				LEFT JOIN [Incident] [a_Incident] ON [a_IncidentProperties].[IncidentId] = [a_Incident].[Id] AND [a_IncidentProperties].[IncidentId] IS NOT NULL
 		WHERE
-			[x].[Id] = [a_IncidentProperties].[PropertyId]
+			[x].[Id] = [a_IncidentProperties].[PropertyId] AND
+			[a_IncidentProperties].[PropertyId] IS NOT NULL
 	)
 FROM
 	[Properties] [x]

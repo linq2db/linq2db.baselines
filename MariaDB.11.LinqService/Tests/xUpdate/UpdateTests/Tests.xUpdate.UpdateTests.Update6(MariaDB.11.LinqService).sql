@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @id AND `p`.`Value1` = 1
+	`p`.`ParentID` = @id AND `p`.`Value1` = 1 AND `p`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -50,5 +50,5 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @id AND `p`.`Value1` = 2
+	`p`.`ParentID` = @id AND `p`.`Value1` = 2 AND `p`.`Value1` IS NOT NULL
 

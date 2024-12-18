@@ -21,7 +21,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = @city
+	[o].[ShipCity] = @city AND [o].[ShipCity] IS NOT NULL
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
@@ -46,5 +46,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = @city
+	[o].[ShipCity] = @city AND [o].[ShipCity] IS NOT NULL
 

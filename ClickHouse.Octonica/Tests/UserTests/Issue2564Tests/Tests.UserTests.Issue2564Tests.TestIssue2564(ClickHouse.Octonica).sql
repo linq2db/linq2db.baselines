@@ -45,7 +45,8 @@ FROM
 			tgGroup.TimestampGone IS NOT NULL AND
 			tgGroup.TimestampGenerated >= toDateTime64('2020-02-28 17:54:55.1231234', 7) AND
 			tgGroup.TimestampGenerated <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
-			tgGroup.MessageClassName = 'Error'
+			tgGroup.MessageClassName = 'Error' AND
+			tgGroup.MessageClassName IS NOT NULL
 	) tgGroup_1
 GROUP BY
 	tgGroup_1.ExternID1,

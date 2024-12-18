@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = DATETIMEFROMPARTS(2009, 9, 27, 0, 0, 0, 0)
+	[t1].[DateTimeValue] = DATETIMEFROMPARTS(2009, 9, 27, 0, 0, 0, 0) AND
+	[t1].[DateTimeValue] IS NOT NULL
 

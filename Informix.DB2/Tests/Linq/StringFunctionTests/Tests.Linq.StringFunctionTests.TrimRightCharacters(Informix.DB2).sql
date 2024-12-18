@@ -7,5 +7,6 @@ SELECT
 FROM
 	Person pp
 WHERE
-	pp.PersonID = 1 AND RTRIM(('  ' || pp.FirstName || ' '), ' n') = '  Joh'
+	pp.PersonID = 1 AND RTRIM(('  ' || pp.FirstName || ' '), ' n') = '  Joh' AND
+	RTRIM(('  ' || pp.FirstName || ' '), ' n') IS NOT NULL
 

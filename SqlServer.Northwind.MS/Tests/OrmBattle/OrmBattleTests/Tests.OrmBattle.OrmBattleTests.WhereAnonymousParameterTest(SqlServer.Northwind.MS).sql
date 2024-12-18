@@ -23,5 +23,8 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = @City AND [o].[ShipRegion] = @Region
+	[o].[ShipCity] = @City AND
+	[o].[ShipCity] IS NOT NULL AND
+	[o].[ShipRegion] = @Region AND
+	[o].[ShipRegion] IS NOT NULL
 

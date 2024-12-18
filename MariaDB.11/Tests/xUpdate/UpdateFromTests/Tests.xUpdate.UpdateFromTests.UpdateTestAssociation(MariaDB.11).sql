@@ -73,11 +73,11 @@ BeforeExecute
 
 UPDATE
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
+		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id` AND `v`.`RelationId` IS NOT NULL
 SET
 	`v`.`Value1` = `a_Relation`.`RelatedValue3`
 WHERE
-	`a_Relation`.`RelatedValue1` = 11
+	`a_Relation`.`RelatedValue1` = 11 AND `a_Relation`.`RelatedValue1` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -86,9 +86,9 @@ SELECT
 	`v`.`Value1`
 FROM
 	`UpdatedEntities` `v`
-		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
+		LEFT JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id` AND `v`.`RelationId` IS NOT NULL
 WHERE
-	`a_Relation`.`RelatedValue1` = 11
+	`a_Relation`.`RelatedValue1` = 11 AND `a_Relation`.`RelatedValue1` IS NOT NULL
 LIMIT 1
 
 BeforeExecute

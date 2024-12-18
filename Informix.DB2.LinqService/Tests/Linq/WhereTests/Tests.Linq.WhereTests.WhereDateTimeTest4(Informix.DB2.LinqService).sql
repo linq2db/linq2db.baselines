@@ -15,5 +15,6 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue = TO_DATE('2009-09-27', '%Y-%m-%d')
+	t1.DateTimeValue = TO_DATE('2009-09-27', '%Y-%m-%d') AND
+	t1.DateTimeValue IS NOT NULL
 

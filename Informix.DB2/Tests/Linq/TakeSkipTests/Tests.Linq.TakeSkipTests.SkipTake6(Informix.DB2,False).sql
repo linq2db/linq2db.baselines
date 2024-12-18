@@ -13,7 +13,7 @@ FROM
 			GrandChild p
 	) p_1
 WHERE
-	c_1.ParentID = p_1.ParentID
+	c_1.ParentID = p_1.ParentID AND p_1.ParentID IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -30,5 +30,5 @@ FROM
 			GrandChild p
 	) p_1
 WHERE
-	c_1.ParentID = p_1.ParentID
+	c_1.ParentID = p_1.ParentID AND p_1.ParentID IS NOT NULL
 

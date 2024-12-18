@@ -8,7 +8,7 @@ SELECT
 	t1."ChildID"
 FROM
 	"Parent" x5
-		LEFT JOIN "Child" y4 ON x5."ParentID" = y4."ParentID" AND x5."Value1" = y4."ParentID"
+		LEFT JOIN "Child" y4 ON x5."ParentID" = y4."ParentID" AND x5."Value1" = y4."ParentID" AND x5."Value1" IS NOT NULL
 		LEFT JOIN LATERAL (
 			SELECT
 				y1."ParentID",
@@ -16,7 +16,8 @@ FROM
 			FROM
 				"Child" y1
 			WHERE
-				x5."ParentID" = y1."ParentID" AND x5."Value1" = y1."ParentID"
+				x5."ParentID" = y1."ParentID" AND x5."Value1" = y1."ParentID" AND
+				x5."Value1" IS NOT NULL
 			LIMIT 1
 		) t1 ON 1=1
 WHERE

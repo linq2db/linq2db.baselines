@@ -69,7 +69,8 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
+	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) AND
+	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

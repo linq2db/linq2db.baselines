@@ -77,7 +77,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[TradingStatus] = 'D', True, False) as [IsDelisted]
+			IIF([g_1].[TradingStatus] = 'D' AND [g_1].[TradingStatus] IS NOT NULL, True, False) as [IsDelisted]
 		FROM
 			[Issue913Test] [g_1]
 	) [g_2]

@@ -48,7 +48,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST('2018-01-02' AS DateTime)
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST('2018-01-02' AS DateTime) AND
+	DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) IS NOT NULL
 
 BeforeExecute
 -- SqlCe

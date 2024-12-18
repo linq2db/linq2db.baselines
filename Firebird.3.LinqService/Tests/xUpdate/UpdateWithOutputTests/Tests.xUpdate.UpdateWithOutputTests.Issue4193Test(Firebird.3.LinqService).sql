@@ -135,7 +135,7 @@ WHERE
 			*
 		FROM
 			"Issue4193Person" "e"
-				LEFT JOIN "Issue4193Employee" "a_Employee" ON "e"."EmployeeId" = "a_Employee"."Id"
+				LEFT JOIN "Issue4193Employee" "a_Employee" ON "e"."EmployeeId" = "a_Employee"."Id" AND "e"."EmployeeId" IS NOT NULL
 				LEFT JOIN "Issue4193Salary" "a_Salary" ON "a_Employee"."SalaryId" = "a_Salary"."Id"
 		WHERE
 			"e"."Name" = 'foo' AND "Issue4193Salary"."Id" = "a_Salary"."Id"

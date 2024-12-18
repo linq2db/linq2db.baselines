@@ -14,5 +14,5 @@ FROM
 			GrandChild g_1,
 			Parent c_1
 	) sub
-		LEFT JOIN Child a_Child ON sub.ParentID = a_Child.ParentID AND sub.ChildID = a_Child.ChildID
+		LEFT JOIN Child a_Child ON sub.ParentID = a_Child.ParentID AND sub.ParentID IS NOT NULL AND sub.ChildID = a_Child.ChildID AND sub.ChildID IS NOT NULL
 

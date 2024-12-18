@@ -2,9 +2,15 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	make_timestamp(2010, t."ID", 1, 20, 35, 44::Float)
+	t.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Floor(Extract(year From make_timestamp(2010, p."ID", 1, 20, 35, 44::Float)))::Int as "Year_1",
+			make_timestamp(2010, p."ID", 1, 20, 35, 44::Float) as c1
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	Floor(Extract(year From make_timestamp(2010, t."ID", 1, 20, 35, 44::Float)))::Int = 2010
+	t."Year_1" = 2010 AND t."Year_1" IS NOT NULL
 

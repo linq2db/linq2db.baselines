@@ -10,6 +10,8 @@ SET
 FROM
 	"Parent" "a_Parent"
 WHERE
-	"Child"."ChildID" = :id AND "a_Parent"."Value1" = 1 AND
+	"Child"."ChildID" = :id AND
+	"a_Parent"."Value1" = 1 AND
+	"a_Parent"."Value1" IS NOT NULL AND
 	"Child"."ParentID" = "a_Parent"."ParentID"
 

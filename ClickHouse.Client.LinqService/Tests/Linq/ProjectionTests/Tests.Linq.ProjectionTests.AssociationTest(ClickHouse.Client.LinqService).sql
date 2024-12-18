@@ -68,7 +68,7 @@ SELECT
 	a_Other.IsActual
 FROM
 	SomeEntity t
-		LEFT JOIN SomeOtherEntity a_Other ON t.OtherId = a_Other.Id
+		LEFT JOIN SomeOtherEntity a_Other ON t.OtherId = a_Other.Id AND t.OtherId IS NOT NULL
 LIMIT 1
 
 BeforeExecute

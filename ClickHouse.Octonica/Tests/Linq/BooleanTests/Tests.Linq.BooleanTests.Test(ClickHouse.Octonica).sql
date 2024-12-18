@@ -10781,7 +10781,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = true
+	r.BooleanN = true AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10815,7 +10815,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = false
+	r.BooleanN = false AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10849,7 +10849,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = true
+	r.BooleanN = true AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -10883,7 +10883,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = false
+	r.BooleanN = false AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -11319,7 +11319,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N = 0 THEN 1
+		WHEN g_1.Int32N = 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11327,7 +11327,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN = toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN = toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11335,7 +11336,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN = toFloat64(0) THEN 1
+		WHEN g_1.DoubleN = toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11368,7 +11370,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N > 0 THEN 1
+		WHEN g_1.Int32N > 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11376,7 +11378,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN > toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN > toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11384,7 +11387,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN > toFloat64(0) THEN 1
+		WHEN g_1.DoubleN > toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11392,7 +11396,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N < 0 THEN 1
+		WHEN g_1.Int32N < 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11400,7 +11404,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN < toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN < toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11408,7 +11413,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN < toFloat64(0) THEN 1
+		WHEN g_1.DoubleN < toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11416,7 +11422,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N >= 0 THEN 1
+		WHEN g_1.Int32N >= 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11424,7 +11430,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN >= toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN >= toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11432,7 +11439,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN >= toFloat64(0) THEN 1
+		WHEN g_1.DoubleN >= toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11440,7 +11448,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N <= 0 THEN 1
+		WHEN g_1.Int32N <= 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11448,7 +11456,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN <= toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN <= toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -11456,7 +11465,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN <= toFloat64(0) THEN 1
+		WHEN g_1.DoubleN <= toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -11490,7 +11500,7 @@ SELECT
 		ELSE false
 	END as Condition1,
 	CASE
-		WHEN r.Int32N = 0 THEN true
+		WHEN r.Int32N = 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition2,
 	CASE
@@ -11498,7 +11508,8 @@ SELECT
 		ELSE false
 	END as Condition3,
 	CASE
-		WHEN r.DecimalN = toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN = toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition4,
 	CASE
@@ -11506,7 +11517,7 @@ SELECT
 		ELSE false
 	END as Condition5,
 	CASE
-		WHEN r.DoubleN = toFloat64(0) THEN true
+		WHEN r.DoubleN = toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition6,
 	CASE
@@ -11526,7 +11537,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition21,
@@ -11534,7 +11548,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition22,
@@ -11542,7 +11559,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition23,
@@ -11550,7 +11570,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition24,
@@ -11558,7 +11581,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition25,
@@ -11566,7 +11592,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition26,
@@ -11575,7 +11604,7 @@ SELECT
 		ELSE false
 	END as Condition101,
 	CASE
-		WHEN r.Int32N > 0 THEN true
+		WHEN r.Int32N > 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition102,
 	CASE
@@ -11583,7 +11612,8 @@ SELECT
 		ELSE false
 	END as Condition103,
 	CASE
-		WHEN r.DecimalN > toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN > toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition104,
 	CASE
@@ -11591,7 +11621,7 @@ SELECT
 		ELSE false
 	END as Condition105,
 	CASE
-		WHEN r.DoubleN > toFloat64(0) THEN true
+		WHEN r.DoubleN > toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition106,
 	CASE
@@ -11611,7 +11641,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition121,
@@ -11619,7 +11652,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition122,
@@ -11627,7 +11663,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition123,
@@ -11635,7 +11674,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition124,
@@ -11643,7 +11685,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition125,
@@ -11651,7 +11696,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition126,
@@ -11660,7 +11708,7 @@ SELECT
 		ELSE false
 	END as Condition201,
 	CASE
-		WHEN r.Int32N >= 0 THEN true
+		WHEN r.Int32N >= 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition202,
 	CASE
@@ -11668,7 +11716,8 @@ SELECT
 		ELSE false
 	END as Condition203,
 	CASE
-		WHEN r.DecimalN >= toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN >= toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition204,
 	CASE
@@ -11676,7 +11725,8 @@ SELECT
 		ELSE false
 	END as Condition205,
 	CASE
-		WHEN r.DoubleN >= toFloat64(0) THEN true
+		WHEN r.DoubleN >= toFloat64(0) AND r.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition206,
 	CASE
@@ -11696,7 +11746,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition221,
@@ -11704,7 +11757,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition222,
@@ -11712,7 +11768,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition223,
@@ -11720,7 +11779,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition224,
@@ -11728,7 +11790,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition225,
@@ -11736,7 +11801,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition226,
@@ -11745,7 +11813,7 @@ SELECT
 		ELSE false
 	END as Condition301,
 	CASE
-		WHEN r.Int32N < 0 THEN true
+		WHEN r.Int32N < 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition302,
 	CASE
@@ -11753,7 +11821,8 @@ SELECT
 		ELSE false
 	END as Condition303,
 	CASE
-		WHEN r.DecimalN < toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN < toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition304,
 	CASE
@@ -11761,7 +11830,7 @@ SELECT
 		ELSE false
 	END as Condition305,
 	CASE
-		WHEN r.DoubleN < toFloat64(0) THEN true
+		WHEN r.DoubleN < toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition306,
 	CASE
@@ -11781,7 +11850,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition321,
@@ -11789,7 +11861,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition322,
@@ -11797,7 +11872,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition323,
@@ -11805,7 +11883,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition324,
@@ -11813,7 +11894,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition325,
@@ -11821,7 +11905,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition326,
@@ -11830,7 +11917,7 @@ SELECT
 		ELSE false
 	END as Condition401,
 	CASE
-		WHEN r.Int32N <= 0 THEN true
+		WHEN r.Int32N <= 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition402,
 	CASE
@@ -11838,7 +11925,8 @@ SELECT
 		ELSE false
 	END as Condition403,
 	CASE
-		WHEN r.DecimalN <= toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN <= toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition404,
 	CASE
@@ -11846,7 +11934,8 @@ SELECT
 		ELSE false
 	END as Condition405,
 	CASE
-		WHEN r.DoubleN <= toFloat64(0) THEN true
+		WHEN r.DoubleN <= toFloat64(0) AND r.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition406,
 	CASE
@@ -11866,7 +11955,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition421,
@@ -11874,7 +11966,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition422,
@@ -11882,7 +11977,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition423,
@@ -11890,7 +11988,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition424,
@@ -11898,7 +11999,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition425,
@@ -11906,7 +12010,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition426
@@ -11920,7 +12027,7 @@ SELECT
 		ELSE false
 	END as Condition1,
 	CASE
-		WHEN r_1.Int32N = 0 THEN true
+		WHEN r_1.Int32N = 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition2,
 	CASE
@@ -11928,7 +12035,8 @@ SELECT
 		ELSE false
 	END as Condition3,
 	CASE
-		WHEN r_1.DecimalN = toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN = toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition4,
 	CASE
@@ -11936,7 +12044,8 @@ SELECT
 		ELSE false
 	END as Condition5,
 	CASE
-		WHEN r_1.DoubleN = toFloat64(0) THEN true
+		WHEN r_1.DoubleN = toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition6,
 	CASE
@@ -11956,7 +12065,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition21,
@@ -11964,7 +12076,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition22,
@@ -11972,7 +12087,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition23,
@@ -11980,7 +12098,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition24,
@@ -11988,7 +12109,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition25,
@@ -11996,7 +12120,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition26,
@@ -12005,7 +12132,7 @@ SELECT
 		ELSE false
 	END as Condition101,
 	CASE
-		WHEN r_1.Int32N > 0 THEN true
+		WHEN r_1.Int32N > 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition102,
 	CASE
@@ -12013,7 +12140,8 @@ SELECT
 		ELSE false
 	END as Condition103,
 	CASE
-		WHEN r_1.DecimalN > toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN > toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition104,
 	CASE
@@ -12021,7 +12149,8 @@ SELECT
 		ELSE false
 	END as Condition105,
 	CASE
-		WHEN r_1.DoubleN > toFloat64(0) THEN true
+		WHEN r_1.DoubleN > toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition106,
 	CASE
@@ -12041,7 +12170,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition121,
@@ -12049,7 +12181,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition122,
@@ -12057,7 +12192,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition123,
@@ -12065,7 +12203,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition124,
@@ -12073,7 +12214,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition125,
@@ -12081,7 +12225,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition126,
@@ -12090,7 +12237,7 @@ SELECT
 		ELSE false
 	END as Condition201,
 	CASE
-		WHEN r_1.Int32N >= 0 THEN true
+		WHEN r_1.Int32N >= 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition202,
 	CASE
@@ -12098,7 +12245,8 @@ SELECT
 		ELSE false
 	END as Condition203,
 	CASE
-		WHEN r_1.DecimalN >= toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN >= toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition204,
 	CASE
@@ -12106,7 +12254,8 @@ SELECT
 		ELSE false
 	END as Condition205,
 	CASE
-		WHEN r_1.DoubleN >= toFloat64(0) THEN true
+		WHEN r_1.DoubleN >= toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition206,
 	CASE
@@ -12126,7 +12275,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition221,
@@ -12134,7 +12286,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition222,
@@ -12142,7 +12297,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition223,
@@ -12150,7 +12308,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition224,
@@ -12158,7 +12319,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition225,
@@ -12166,7 +12330,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition226,
@@ -12175,7 +12342,7 @@ SELECT
 		ELSE false
 	END as Condition301,
 	CASE
-		WHEN r_1.Int32N < 0 THEN true
+		WHEN r_1.Int32N < 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition302,
 	CASE
@@ -12183,7 +12350,8 @@ SELECT
 		ELSE false
 	END as Condition303,
 	CASE
-		WHEN r_1.DecimalN < toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN < toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition304,
 	CASE
@@ -12191,7 +12359,8 @@ SELECT
 		ELSE false
 	END as Condition305,
 	CASE
-		WHEN r_1.DoubleN < toFloat64(0) THEN true
+		WHEN r_1.DoubleN < toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition306,
 	CASE
@@ -12211,7 +12380,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition321,
@@ -12219,7 +12391,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition322,
@@ -12227,7 +12402,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition323,
@@ -12235,7 +12413,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition324,
@@ -12243,7 +12424,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition325,
@@ -12251,7 +12435,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition326,
@@ -12260,7 +12447,7 @@ SELECT
 		ELSE false
 	END as Condition401,
 	CASE
-		WHEN r_1.Int32N <= 0 THEN true
+		WHEN r_1.Int32N <= 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition402,
 	CASE
@@ -12268,7 +12455,8 @@ SELECT
 		ELSE false
 	END as Condition403,
 	CASE
-		WHEN r_1.DecimalN <= toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN <= toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition404,
 	CASE
@@ -12276,7 +12464,8 @@ SELECT
 		ELSE false
 	END as Condition405,
 	CASE
-		WHEN r_1.DoubleN <= toFloat64(0) THEN true
+		WHEN r_1.DoubleN <= toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition406,
 	CASE
@@ -12296,7 +12485,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition421,
@@ -12304,7 +12496,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition422,
@@ -12312,7 +12507,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition423,
@@ -12320,7 +12518,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition424,
@@ -12328,7 +12529,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition425,
@@ -12336,7 +12540,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition426
@@ -12545,7 +12752,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = true
+	r.BooleanN = true AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12579,7 +12786,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = false
+	r.BooleanN = false AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12613,7 +12820,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = true
+	r.BooleanN = true AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -12647,7 +12854,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = false
+	r.BooleanN = false AND r.BooleanN IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -13083,7 +13290,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N = 0 THEN 1
+		WHEN g_1.Int32N = 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13091,7 +13298,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN = toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN = toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13099,7 +13307,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN = toFloat64(0) THEN 1
+		WHEN g_1.DoubleN = toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13132,7 +13341,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N > 0 THEN 1
+		WHEN g_1.Int32N > 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13140,7 +13349,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN > toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN > toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13148,7 +13358,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN > toFloat64(0) THEN 1
+		WHEN g_1.DoubleN > toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13156,7 +13367,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N < 0 THEN 1
+		WHEN g_1.Int32N < 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13164,7 +13375,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN < toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN < toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13172,7 +13384,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN < toFloat64(0) THEN 1
+		WHEN g_1.DoubleN < toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13180,7 +13393,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N >= 0 THEN 1
+		WHEN g_1.Int32N >= 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13188,7 +13401,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN >= toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN >= toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13196,7 +13410,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN >= toFloat64(0) THEN 1
+		WHEN g_1.DoubleN >= toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13204,7 +13419,7 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.Int32N <= 0 THEN 1
+		WHEN g_1.Int32N <= 0 AND g_1.Int32N IS NOT NULL THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13212,7 +13427,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DecimalN <= toDecimal128('0', 10) THEN 1
+		WHEN g_1.DecimalN <= toDecimal128('0', 10) AND g_1.DecimalN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
@@ -13220,7 +13436,8 @@ SELECT
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN g_1.DoubleN <= toFloat64(0) THEN 1
+		WHEN g_1.DoubleN <= toFloat64(0) AND g_1.DoubleN IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END)
 FROM
@@ -13254,7 +13471,7 @@ SELECT
 		ELSE false
 	END as Condition1,
 	CASE
-		WHEN r.Int32N = 0 THEN true
+		WHEN r.Int32N = 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition2,
 	CASE
@@ -13262,7 +13479,8 @@ SELECT
 		ELSE false
 	END as Condition3,
 	CASE
-		WHEN r.DecimalN = toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN = toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition4,
 	CASE
@@ -13270,7 +13488,7 @@ SELECT
 		ELSE false
 	END as Condition5,
 	CASE
-		WHEN r.DoubleN = toFloat64(0) THEN true
+		WHEN r.DoubleN = toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition6,
 	CASE
@@ -13290,7 +13508,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition21,
@@ -13298,7 +13519,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition22,
@@ -13306,7 +13530,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition23,
@@ -13314,7 +13541,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition24,
@@ -13322,7 +13552,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition25,
@@ -13330,7 +13563,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition26,
@@ -13339,7 +13575,7 @@ SELECT
 		ELSE false
 	END as Condition101,
 	CASE
-		WHEN r.Int32N > 0 THEN true
+		WHEN r.Int32N > 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition102,
 	CASE
@@ -13347,7 +13583,8 @@ SELECT
 		ELSE false
 	END as Condition103,
 	CASE
-		WHEN r.DecimalN > toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN > toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition104,
 	CASE
@@ -13355,7 +13592,7 @@ SELECT
 		ELSE false
 	END as Condition105,
 	CASE
-		WHEN r.DoubleN > toFloat64(0) THEN true
+		WHEN r.DoubleN > toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition106,
 	CASE
@@ -13375,7 +13612,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition121,
@@ -13383,7 +13623,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition122,
@@ -13391,7 +13634,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition123,
@@ -13399,7 +13645,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition124,
@@ -13407,7 +13656,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition125,
@@ -13415,7 +13667,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition126,
@@ -13424,7 +13679,7 @@ SELECT
 		ELSE false
 	END as Condition201,
 	CASE
-		WHEN r.Int32N >= 0 THEN true
+		WHEN r.Int32N >= 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition202,
 	CASE
@@ -13432,7 +13687,8 @@ SELECT
 		ELSE false
 	END as Condition203,
 	CASE
-		WHEN r.DecimalN >= toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN >= toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition204,
 	CASE
@@ -13440,7 +13696,8 @@ SELECT
 		ELSE false
 	END as Condition205,
 	CASE
-		WHEN r.DoubleN >= toFloat64(0) THEN true
+		WHEN r.DoubleN >= toFloat64(0) AND r.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition206,
 	CASE
@@ -13460,7 +13717,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition221,
@@ -13468,7 +13728,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition222,
@@ -13476,7 +13739,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition223,
@@ -13484,7 +13750,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition224,
@@ -13492,7 +13761,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition225,
@@ -13500,7 +13772,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition226,
@@ -13509,7 +13784,7 @@ SELECT
 		ELSE false
 	END as Condition301,
 	CASE
-		WHEN r.Int32N < 0 THEN true
+		WHEN r.Int32N < 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition302,
 	CASE
@@ -13517,7 +13792,8 @@ SELECT
 		ELSE false
 	END as Condition303,
 	CASE
-		WHEN r.DecimalN < toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN < toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition304,
 	CASE
@@ -13525,7 +13801,7 @@ SELECT
 		ELSE false
 	END as Condition305,
 	CASE
-		WHEN r.DoubleN < toFloat64(0) THEN true
+		WHEN r.DoubleN < toFloat64(0) AND r.DoubleN IS NOT NULL THEN true
 		ELSE false
 	END as Condition306,
 	CASE
@@ -13545,7 +13821,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition321,
@@ -13553,7 +13832,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition322,
@@ -13561,7 +13843,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition323,
@@ -13569,7 +13854,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition324,
@@ -13577,7 +13865,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition325,
@@ -13585,7 +13876,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition326,
@@ -13594,7 +13888,7 @@ SELECT
 		ELSE false
 	END as Condition401,
 	CASE
-		WHEN r.Int32N <= 0 THEN true
+		WHEN r.Int32N <= 0 AND r.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition402,
 	CASE
@@ -13602,7 +13896,8 @@ SELECT
 		ELSE false
 	END as Condition403,
 	CASE
-		WHEN r.DecimalN <= toDecimal128('0', 10) THEN true
+		WHEN r.DecimalN <= toDecimal128('0', 10) AND r.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition404,
 	CASE
@@ -13610,7 +13905,8 @@ SELECT
 		ELSE false
 	END as Condition405,
 	CASE
-		WHEN r.DoubleN <= toFloat64(0) THEN true
+		WHEN r.DoubleN <= toFloat64(0) AND r.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition406,
 	CASE
@@ -13630,7 +13926,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.Int32N
 			ELSE r.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r.Boolean = true THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition421,
@@ -13638,7 +13937,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.Int32N
 			ELSE r.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r.BooleanN = false THEN r.Int32N
+			ELSE r.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition422,
@@ -13646,7 +13948,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DecimalN
 			ELSE r.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r.Boolean = true THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition423,
@@ -13654,7 +13959,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DecimalN
 			ELSE r.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r.BooleanN = false THEN r.DecimalN
+			ELSE r.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition424,
@@ -13662,7 +13970,10 @@ SELECT
 		WHEN CASE
 			WHEN r.Boolean = true THEN r.DoubleN
 			ELSE r.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r.Boolean = true THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition425,
@@ -13670,7 +13981,10 @@ SELECT
 		WHEN CASE
 			WHEN r.BooleanN = false THEN r.DoubleN
 			ELSE r.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r.BooleanN = false THEN r.DoubleN
+			ELSE r.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition426
@@ -13684,7 +13998,7 @@ SELECT
 		ELSE false
 	END as Condition1,
 	CASE
-		WHEN r_1.Int32N = 0 THEN true
+		WHEN r_1.Int32N = 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition2,
 	CASE
@@ -13692,7 +14006,8 @@ SELECT
 		ELSE false
 	END as Condition3,
 	CASE
-		WHEN r_1.DecimalN = toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN = toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition4,
 	CASE
@@ -13700,7 +14015,8 @@ SELECT
 		ELSE false
 	END as Condition5,
 	CASE
-		WHEN r_1.DoubleN = toFloat64(0) THEN true
+		WHEN r_1.DoubleN = toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition6,
 	CASE
@@ -13720,7 +14036,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition21,
@@ -13728,7 +14047,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END = 0
+		END = 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition22,
@@ -13736,7 +14058,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition23,
@@ -13744,7 +14069,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END = toDecimal128('0', 10)
+		END = toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition24,
@@ -13752,7 +14080,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition25,
@@ -13760,7 +14091,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END = toFloat64(0)
+		END = toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition26,
@@ -13769,7 +14103,7 @@ SELECT
 		ELSE false
 	END as Condition101,
 	CASE
-		WHEN r_1.Int32N > 0 THEN true
+		WHEN r_1.Int32N > 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition102,
 	CASE
@@ -13777,7 +14111,8 @@ SELECT
 		ELSE false
 	END as Condition103,
 	CASE
-		WHEN r_1.DecimalN > toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN > toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition104,
 	CASE
@@ -13785,7 +14120,8 @@ SELECT
 		ELSE false
 	END as Condition105,
 	CASE
-		WHEN r_1.DoubleN > toFloat64(0) THEN true
+		WHEN r_1.DoubleN > toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition106,
 	CASE
@@ -13805,7 +14141,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition121,
@@ -13813,7 +14152,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END > 0
+		END > 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition122,
@@ -13821,7 +14163,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition123,
@@ -13829,7 +14174,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END > toDecimal128('0', 10)
+		END > toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition124,
@@ -13837,7 +14185,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition125,
@@ -13845,7 +14196,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END > toFloat64(0)
+		END > toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition126,
@@ -13854,7 +14208,7 @@ SELECT
 		ELSE false
 	END as Condition201,
 	CASE
-		WHEN r_1.Int32N >= 0 THEN true
+		WHEN r_1.Int32N >= 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition202,
 	CASE
@@ -13862,7 +14216,8 @@ SELECT
 		ELSE false
 	END as Condition203,
 	CASE
-		WHEN r_1.DecimalN >= toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN >= toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition204,
 	CASE
@@ -13870,7 +14225,8 @@ SELECT
 		ELSE false
 	END as Condition205,
 	CASE
-		WHEN r_1.DoubleN >= toFloat64(0) THEN true
+		WHEN r_1.DoubleN >= toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition206,
 	CASE
@@ -13890,7 +14246,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition221,
@@ -13898,7 +14257,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END >= 0
+		END >= 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition222,
@@ -13906,7 +14268,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition223,
@@ -13914,7 +14279,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END >= toDecimal128('0', 10)
+		END >= toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition224,
@@ -13922,7 +14290,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition225,
@@ -13930,7 +14301,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END >= toFloat64(0)
+		END >= toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition226,
@@ -13939,7 +14313,7 @@ SELECT
 		ELSE false
 	END as Condition301,
 	CASE
-		WHEN r_1.Int32N < 0 THEN true
+		WHEN r_1.Int32N < 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition302,
 	CASE
@@ -13947,7 +14321,8 @@ SELECT
 		ELSE false
 	END as Condition303,
 	CASE
-		WHEN r_1.DecimalN < toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN < toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition304,
 	CASE
@@ -13955,7 +14330,8 @@ SELECT
 		ELSE false
 	END as Condition305,
 	CASE
-		WHEN r_1.DoubleN < toFloat64(0) THEN true
+		WHEN r_1.DoubleN < toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition306,
 	CASE
@@ -13975,7 +14351,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition321,
@@ -13983,7 +14362,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END < 0
+		END < 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition322,
@@ -13991,7 +14373,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition323,
@@ -13999,7 +14384,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END < toDecimal128('0', 10)
+		END < toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition324,
@@ -14007,7 +14395,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition325,
@@ -14015,7 +14406,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END < toFloat64(0)
+		END < toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition326,
@@ -14024,7 +14418,7 @@ SELECT
 		ELSE false
 	END as Condition401,
 	CASE
-		WHEN r_1.Int32N <= 0 THEN true
+		WHEN r_1.Int32N <= 0 AND r_1.Int32N IS NOT NULL THEN true
 		ELSE false
 	END as Condition402,
 	CASE
@@ -14032,7 +14426,8 @@ SELECT
 		ELSE false
 	END as Condition403,
 	CASE
-		WHEN r_1.DecimalN <= toDecimal128('0', 10) THEN true
+		WHEN r_1.DecimalN <= toDecimal128('0', 10) AND r_1.DecimalN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition404,
 	CASE
@@ -14040,7 +14435,8 @@ SELECT
 		ELSE false
 	END as Condition405,
 	CASE
-		WHEN r_1.DoubleN <= toFloat64(0) THEN true
+		WHEN r_1.DoubleN <= toFloat64(0) AND r_1.DoubleN IS NOT NULL
+			THEN true
 		ELSE false
 	END as Condition406,
 	CASE
@@ -14060,7 +14456,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.Int32N
 			ELSE r_1.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r_1.Boolean = true THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition421,
@@ -14068,7 +14467,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.Int32N
 			ELSE r_1.Int32
-		END <= 0
+		END <= 0 AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.Int32N
+			ELSE r_1.Int32
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition422,
@@ -14076,7 +14478,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition423,
@@ -14084,7 +14489,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DecimalN
 			ELSE r_1.Decimal
-		END <= toDecimal128('0', 10)
+		END <= toDecimal128('0', 10) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DecimalN
+			ELSE r_1.Decimal
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition424,
@@ -14092,7 +14500,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.Boolean = true THEN r_1.DoubleN
 			ELSE r_1.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition425,
@@ -14100,7 +14511,10 @@ SELECT
 		WHEN CASE
 			WHEN r_1.BooleanN = false THEN r_1.DoubleN
 			ELSE r_1.Double
-		END <= toFloat64(0)
+		END <= toFloat64(0) AND CASE
+			WHEN r_1.BooleanN = false THEN r_1.DoubleN
+			ELSE r_1.Double
+		END IS NOT NULL
 			THEN true
 		ELSE false
 	END as Condition426

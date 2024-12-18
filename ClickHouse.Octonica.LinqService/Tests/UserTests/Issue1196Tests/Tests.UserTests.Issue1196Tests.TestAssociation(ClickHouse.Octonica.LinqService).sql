@@ -103,7 +103,7 @@ FROM
 	Requests r
 		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
 		INNER JOIN Requests a_Requests ON a_FirmInfo.Id = a_Requests.FirmId
-		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
+		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id AND a_DocPrepareAssignment.TargetId IS NOT NULL
 WHERE
 	r.Id = 1002
 
@@ -121,7 +121,7 @@ FROM
 	Requests r
 		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
 		INNER JOIN Requests a_Requests ON a_FirmInfo.Id = a_Requests.FirmId
-		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
+		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id AND a_DocPrepareAssignment.TargetId IS NOT NULL
 WHERE
 	r.Id = 1002
 

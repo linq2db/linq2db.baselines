@@ -13,14 +13,16 @@ FROM
 			[f].[StringValue] as [StatusPhase]
 		FROM
 			((([LinqDataTypes] [x]
-				INNER JOIN [LinqDataTypes] [o] ON ([x].[IntValue] = [o].[IntValue] OR [x].[IntValue] IS NULL AND [o].[IntValue] IS NULL))
-				INNER JOIN [LinqDataTypes] [u] ON ([o].[IntValue] = [u].[IntValue] OR [o].[IntValue] IS NULL AND [u].[IntValue] IS NULL))
-				INNER JOIN [LinqDataTypes] [r] ON (([u].[IntValue] = [r].[IntValue] OR [u].[IntValue] IS NULL AND [r].[IntValue] IS NULL) AND ([u].[IntValue] = [r].[IntValue] OR [u].[IntValue] IS NULL AND [r].[IntValue] IS NULL) AND [r].[BoolValue] = False))
-				INNER JOIN [LinqDataTypes] [f] ON ([r].[IntValue] = [f].[IntValue] OR [r].[IntValue] IS NULL AND [f].[IntValue] IS NULL)
+				INNER JOIN [LinqDataTypes] [o] ON ([x].[IntValue] = [o].[IntValue] AND [x].[IntValue] IS NOT NULL AND [o].[IntValue] IS NOT NULL OR [x].[IntValue] IS NULL AND [o].[IntValue] IS NULL))
+				INNER JOIN [LinqDataTypes] [u] ON ([o].[IntValue] = [u].[IntValue] AND [o].[IntValue] IS NOT NULL AND [u].[IntValue] IS NOT NULL OR [o].[IntValue] IS NULL AND [u].[IntValue] IS NULL))
+				INNER JOIN [LinqDataTypes] [r] ON (([u].[IntValue] = [r].[IntValue] AND [u].[IntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL OR [u].[IntValue] IS NULL AND [r].[IntValue] IS NULL) AND ([u].[IntValue] = [r].[IntValue] AND [u].[IntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL OR [u].[IntValue] IS NULL AND [r].[IntValue] IS NULL) AND [r].[BoolValue] = False))
+				INNER JOIN [LinqDataTypes] [f] ON ([r].[IntValue] = [f].[IntValue] AND [r].[IntValue] IS NOT NULL AND [f].[IntValue] IS NOT NULL OR [r].[IntValue] IS NULL AND [f].[IntValue] IS NULL)
 		WHERE
 			[x].[BoolValue] = False AND
 			[x].[IntValue] = ? AND
+			[x].[IntValue] IS NOT NULL AND
 			[x].[IntValue] = ? AND
+			[x].[IntValue] IS NOT NULL AND
 			[o].[BoolValue] = False AND
 			[u].[BoolValue] = False
 	) [x_1]

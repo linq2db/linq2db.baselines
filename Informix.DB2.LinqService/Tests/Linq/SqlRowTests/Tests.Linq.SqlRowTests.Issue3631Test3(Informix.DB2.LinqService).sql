@@ -192,7 +192,10 @@ WHERE
 				UNION ALL
 				SELECT 'US'::NVarChar(255), 'NY'::NVarChar(255) FROM table(set{1})) t1
 		WHERE
-			x.Country = t1.Item1 AND x."State" = t1.Item2
+			x.Country = t1.Item1 AND
+			t1.Item1 IS NOT NULL AND
+			x."State" = t1.Item2 AND
+			t1.Item2 IS NOT NULL
 	)
 
 BeforeExecute

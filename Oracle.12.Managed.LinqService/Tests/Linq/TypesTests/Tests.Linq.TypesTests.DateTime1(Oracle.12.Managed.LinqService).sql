@@ -17,5 +17,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	TRUNC(t."DateTimeValue") > :Date_1
+	TRUNC(t."DateTimeValue") > :Date_1 AND TRUNC(t."DateTimeValue") IS NOT NULL
 

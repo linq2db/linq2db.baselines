@@ -120,7 +120,7 @@ FROM
 			FROM
 				InventoryResourceDTO d
 					INNER JOIN WmsLoadCarrierDTO lc_1 ON d.ResourceID = lc_1.Id
-		) t2 ON m_1.Status = t2.Status AND (m_1.ResourceLabel = t2.ResourceLabel OR m_1.ResourceLabel IS NULL AND t2.ResourceLabel IS NULL)
+		) t2 ON m_1.Status = t2.Status AND (m_1.ResourceLabel = t2.ResourceLabel AND m_1.ResourceLabel IS NOT NULL AND t2.ResourceLabel IS NOT NULL OR m_1.ResourceLabel IS NULL AND t2.ResourceLabel IS NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -20,7 +20,7 @@ SELECT
 FROM
 	`AllTypesNoYear` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -55,7 +55,7 @@ SELECT
 FROM
 	`AllTypesNoYear` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 ORDER BY
 	`t1`.`ID`
 LIMIT @take
@@ -67,7 +67,7 @@ DELETE
 FROM
 	`AllTypes`
 WHERE
-	`AllTypes`.`varcharDataType` = '_btest'
+	`AllTypes`.`varcharDataType` = '_btest' AND `AllTypes`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -76,5 +76,5 @@ DELETE
 FROM
 	`AllTypesNoYear`
 WHERE
-	`AllTypesNoYear`.`varcharDataType` = '_btest'
+	`AllTypesNoYear`.`varcharDataType` = '_btest' AND `AllTypesNoYear`.`varcharDataType` IS NOT NULL
 

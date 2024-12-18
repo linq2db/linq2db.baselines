@@ -87,7 +87,7 @@ SELECT
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @cond
+	t1.GuidValue = @cond AND t1.GuidValue IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -221,7 +221,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @GuidValue
+	t1.GuidValue = @GuidValue AND t1.GuidValue IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -235,7 +235,7 @@ SELECT FIRST 1
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @GuidValue
+	t1.GuidValue = @GuidValue AND t1.GuidValue IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

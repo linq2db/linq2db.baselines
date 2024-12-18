@@ -237,8 +237,8 @@ USING (
 	[source_Field2],
 	[source_Field1]
 )
-ON (([Target].[Field1] = [Source].[source_Field1] OR [Target].[Field1] IS NULL AND [Source].[source_Field1] IS NULL) AND
-([Target].[Field2] = [Source].[source_Field2] OR [Target].[Field2] IS NULL AND [Source].[source_Field2] IS NULL))
+ON (([Target].[Field1] = [Source].[source_Field1] AND [Target].[Field1] IS NOT NULL AND [Source].[source_Field1] IS NOT NULL OR [Target].[Field1] IS NULL AND [Source].[source_Field1] IS NULL) AND
+([Target].[Field2] = [Source].[source_Field2] AND [Target].[Field2] IS NOT NULL AND [Source].[source_Field2] IS NOT NULL OR [Target].[Field2] IS NULL AND [Source].[source_Field2] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE

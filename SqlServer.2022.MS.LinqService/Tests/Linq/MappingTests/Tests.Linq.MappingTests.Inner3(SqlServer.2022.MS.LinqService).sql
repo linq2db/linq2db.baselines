@@ -8,5 +8,5 @@ FROM
 	[Child] [c_1]
 		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[a_Parent].[Value1] = 1
+	[a_Parent].[Value1] = 1 AND [a_Parent].[Value1] IS NOT NULL
 

@@ -55,7 +55,8 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`GuidValue` = @GuidNonReadonly AND `e`.`GuidNullableValue` = @GuidNonReadonly
+	`e`.`GuidValue` = @GuidNonReadonly AND `e`.`GuidNullableValue` = @GuidNonReadonly AND
+	`e`.`GuidNullableValue` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

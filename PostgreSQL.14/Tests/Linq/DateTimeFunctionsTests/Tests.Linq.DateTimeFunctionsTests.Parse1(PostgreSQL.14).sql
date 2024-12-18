@@ -2,9 +2,15 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Date_Trunc('day', d."DateTimeValue")
+	d."Date_1"
 FROM
-	"LinqDataTypes" d
+	(
+		SELECT
+			Floor(Extract(day From t."DateTimeValue"))::Int as "Day_1",
+			Date_Trunc('day', t."DateTimeValue") as "Date_1"
+		FROM
+			"LinqDataTypes" t
+	) d
 WHERE
-	Floor(Extract(day From d."DateTimeValue"))::Int > 0
+	d."Day_1" > 0 AND d."Day_1" IS NOT NULL
 

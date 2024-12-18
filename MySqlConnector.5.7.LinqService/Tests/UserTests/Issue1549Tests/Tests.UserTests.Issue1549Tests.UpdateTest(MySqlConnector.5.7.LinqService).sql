@@ -79,7 +79,7 @@ BeforeExecute
 
 UPDATE
 	`billing_TempReading` `tr`
-		INNER JOIN `billing_DevReadingType` `drt` ON `drt`.`Name` = `tr`.`ReadingTypeName` AND `drt`.`DevTypeId` = `tr`.`Devtypeid`
+		INNER JOIN `billing_DevReadingType` `drt` ON `drt`.`Name` = `tr`.`ReadingTypeName` AND `tr`.`ReadingTypeName` IS NOT NULL AND `drt`.`DevTypeId` = `tr`.`Devtypeid` AND `tr`.`Devtypeid` IS NOT NULL
 SET
 	`tr`.`DevReadingTypeId` = `drt`.`Id`,
 	`tr`.`Responsibility` = `drt`.`Responsibility`
@@ -96,7 +96,10 @@ SET
 		FROM
 			`billing_DevReadingType` `w`
 		WHERE
-			`w`.`Name` = `t1`.`ReadingTypeName` AND `w`.`DevTypeId` = `t1`.`Devtypeid`
+			`w`.`Name` = `t1`.`ReadingTypeName` AND
+			`t1`.`ReadingTypeName` IS NOT NULL AND
+			`w`.`DevTypeId` = `t1`.`Devtypeid` AND
+			`t1`.`Devtypeid` IS NOT NULL
 		LIMIT 1
 	),
 	`t1`.`Responsibility` = (
@@ -105,7 +108,10 @@ SET
 		FROM
 			`billing_DevReadingType` `w_1`
 		WHERE
-			`w_1`.`Name` = `t1`.`ReadingTypeName` AND `w_1`.`DevTypeId` = `t1`.`Devtypeid`
+			`w_1`.`Name` = `t1`.`ReadingTypeName` AND
+			`t1`.`ReadingTypeName` IS NOT NULL AND
+			`w_1`.`DevTypeId` = `t1`.`Devtypeid` AND
+			`t1`.`Devtypeid` IS NOT NULL
 		LIMIT 1
 	)
 

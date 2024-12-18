@@ -37,5 +37,5 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [a_Orders].[CustomerID] ORDER BY [a_Orders].[CustomerID]) as [rn]
 			FROM
 				[Orders] [a_Orders]
-		) [t1] ON [c_1].[CustomerID] = [t1].[CustomerID] AND [t1].[rn] <= 1
+		) [t1] ON [c_1].[CustomerID] = [t1].[CustomerID] AND [t1].[CustomerID] IS NOT NULL AND [t1].[rn] <= 1
 

@@ -132,7 +132,7 @@ FROM
 						FROM
 							[Book] [b]
 						WHERE
-							[b].[Discriminator] = N'Roman'
+							[b].[Discriminator] = N'Roman' AND [b].[Discriminator] IS NOT NULL
 						UNION ALL
 						SELECT
 							CAST(N'Novel' AS NVarChar(4000)) as [BookType],
@@ -140,7 +140,7 @@ FROM
 						FROM
 							[Book] [b_1]
 						WHERE
-							[b_1].[Discriminator] = N'Novel'
+							[b_1].[Discriminator] = N'Novel' AND [b_1].[Discriminator] IS NOT NULL
 					) [t1]
 				ORDER BY
 					[t1].[BookType] DESC
@@ -149,7 +149,7 @@ FROM
 		WHERE
 			[t2].[cond] = N'Novel'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1] AND [m_1].[c1] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -171,7 +171,7 @@ FROM
 		FROM
 			[Book] [b]
 		WHERE
-			[b].[Discriminator] = N'Roman'
+			[b].[Discriminator] = N'Roman' AND [b].[Discriminator] IS NOT NULL
 		UNION ALL
 		SELECT
 			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
@@ -179,7 +179,7 @@ FROM
 		FROM
 			[Book] [b_1]
 		WHERE
-			[b_1].[Discriminator] = N'Novel'
+			[b_1].[Discriminator] = N'Novel' AND [b_1].[Discriminator] IS NOT NULL
 	) [t1]
 ORDER BY
 	[t1].[BookType] DESC

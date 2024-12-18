@@ -17,10 +17,10 @@ AS
 		`ct`.`ChildID` + 1
 	FROM
 		`GrandChild` `gc`
-			INNER JOIN `Parent` `p` ON `p`.`ParentID` = `gc`.`ParentID`
-			INNER JOIN `MY_CTE` `ct` ON `ct`.`ChildID` = `gc`.`ChildID`
+			INNER JOIN `Parent` `p` ON `p`.`ParentID` = `gc`.`ParentID` AND `gc`.`ParentID` IS NOT NULL
+			INNER JOIN `MY_CTE` `ct` ON `ct`.`ChildID` = `gc`.`ChildID` AND `gc`.`ChildID` IS NOT NULL
 	WHERE
-		`ct`.`GrandChildID` <= 10
+		`ct`.`GrandChildID` <= 10 AND `ct`.`GrandChildID` IS NOT NULL
 )
 SELECT
 	`t1`.`ChildID`,

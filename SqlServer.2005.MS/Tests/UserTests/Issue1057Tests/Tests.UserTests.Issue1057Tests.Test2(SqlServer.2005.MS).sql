@@ -104,7 +104,7 @@ FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 WHERE
-	[p].[TargetName] = N'bda.Requests'
+	[p].[TargetName] = N'bda.Requests' AND [p].[TargetName] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -52,7 +52,8 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0)
+	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0) AND
+	Interval '1 Day' IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

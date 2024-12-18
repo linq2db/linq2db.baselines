@@ -166,7 +166,8 @@ FROM
 			FROM
 				"Issue4160City" cc
 			WHERE
-				cc."Code" = t1."Code" OR cc."Code" IS NULL AND t1."Code" IS NULL
+				cc."Code" = t1."Code" AND cc."Code" IS NOT NULL AND t1."Code" IS NOT NULL OR
+				cc."Code" IS NULL AND t1."Code" IS NULL
 			FETCH NEXT 1 ROWS ONLY
 		) cc_1
 

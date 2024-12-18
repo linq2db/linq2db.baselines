@@ -19,7 +19,7 @@ FROM
 					"Parent" g_1
 						INNER JOIN "Child" s ON g_1."ParentID" = s."ParentID"
 				WHERE
-					g_1."Value1" > 0
+					g_1."Value1" > 0 AND g_1."Value1" IS NOT NULL
 			) g_2
 		GROUP BY
 			g_2."Key_1"

@@ -35,7 +35,7 @@ SELECT
 			FROM
 				"Issue76Entity" "f2"
 			WHERE
-				"f2"."ParentId" = "f"."Id"
+				"f2"."ParentId" = "f"."Id" AND "f2"."ParentId" IS NOT NULL
 		)
 			THEN TRUE
 		ELSE FALSE
@@ -44,7 +44,7 @@ FROM
 	"Issue76Entity" "f"
 		INNER JOIN "Issue76Entity" "folder2" ON "f"."ParentId" = "folder2"."Id"
 WHERE
-	"folder2"."Caption" = 'dewde'
+	"folder2"."Caption" = 'dewde' AND "folder2"."Caption" IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4

@@ -31,7 +31,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` IN (12)
+	`r`.`ID` = 101 AND `r`.`ID` IS NOT NULL AND `r`.`BigIntValue` IN (12)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

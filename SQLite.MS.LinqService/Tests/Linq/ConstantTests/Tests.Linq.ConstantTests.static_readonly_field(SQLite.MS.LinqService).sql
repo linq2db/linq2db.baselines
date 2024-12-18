@@ -54,7 +54,8 @@ FROM
 	[TestConstantsData] [e]
 WHERE
 	[e].[GuidValue] = X'3D667BBCDE0F27438F925D8CC3A11D11' AND
-	[e].[GuidNullableValue] = X'3D667BBCDE0F27438F925D8CC3A11D11'
+	[e].[GuidNullableValue] = X'3D667BBCDE0F27438F925D8CC3A11D11' AND
+	[e].[GuidNullableValue] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -165,7 +165,7 @@ FROM
 		INNER JOIN InvestorPayment ip ON p.Id = ip.Id
 		INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
 		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND p.Id = pc.EventId
-		INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND p.SecurityClass = b.SecurityClass
+		INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND b.InvestorId IS NOT NULL AND p.SecurityClass = b.SecurityClass
 GROUP BY
 	ip.InvestorId,
 	b.Units

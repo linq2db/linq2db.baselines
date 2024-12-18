@@ -217,8 +217,8 @@ BeforeExecute
 
 SELECT
 	[x].[Id],
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, True, False),
-	IIF([x].[StringProp] = '2', True, False),
+	IIF([x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL, True, False),
+	IIF([x].[StringProp] = '2' AND [x].[StringProp] IS NOT NULL, True, False),
 	[x].[StringProp],
 	1,
 	[x].[StringProp] + '2',
@@ -226,8 +226,9 @@ SELECT
 FROM
 	[ConditionalData] [x]
 WHERE
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, '2', IIF([x].[StringProp] = '2', [x].[StringProp], [x].[StringProp] + '2')) LIKE '%2' AND
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, NULL, IIF([x].[StringProp] = '2', 1, 2)) = 2
+	IIF([x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL, '2', IIF([x].[StringProp] = '2' AND [x].[StringProp] IS NOT NULL, [x].[StringProp], [x].[StringProp] + '2')) LIKE '%2' AND
+	IIF([x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL, NULL, IIF([x].[StringProp] = '2' AND [x].[StringProp] IS NOT NULL, 1, 2)) = 2 AND
+	IIF([x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL, NULL, IIF([x].[StringProp] = '2' AND [x].[StringProp] IS NOT NULL, 1, 2)) IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

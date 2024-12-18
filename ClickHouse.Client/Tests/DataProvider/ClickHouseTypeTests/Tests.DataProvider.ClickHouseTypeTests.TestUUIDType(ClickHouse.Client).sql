@@ -184,7 +184,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -217,7 +218,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -247,7 +249,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -269,7 +272,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -291,7 +295,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -484,7 +489,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -517,7 +523,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -547,7 +554,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -569,7 +577,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -591,7 +600,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
+	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e') AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -784,7 +794,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -817,7 +828,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -847,7 +859,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -869,7 +882,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -891,7 +905,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1084,7 +1099,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1117,7 +1133,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1147,7 +1164,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1169,7 +1187,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1191,7 +1210,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1384,7 +1404,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1417,7 +1438,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1447,7 +1469,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1469,7 +1492,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1491,7 +1515,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1684,7 +1709,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1717,7 +1743,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1747,7 +1774,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1769,7 +1797,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -1791,7 +1820,8 @@ FROM
 	`TypeTable``2` r
 WHERE
 	r.Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11' AND
-	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
+	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

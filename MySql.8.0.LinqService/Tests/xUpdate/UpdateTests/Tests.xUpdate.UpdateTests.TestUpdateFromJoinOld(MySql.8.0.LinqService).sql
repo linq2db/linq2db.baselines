@@ -40,18 +40,18 @@ BeforeExecute
 
 UPDATE
 	`gt_s_one` `x`
-		LEFT JOIN `access_mode` `y1` ON Upper(REPLACE(`x`.`col3`, 'auth.', '')) = Upper(`y1`.`code`) OR Upper(REPLACE(`x`.`col3`, 'auth.', '')) IS NULL AND Upper(`y1`.`code`) IS NULL
+		LEFT JOIN `access_mode` `y1` ON Upper(REPLACE(`x`.`col3`, 'auth.', '')) = Upper(`y1`.`code`) AND Upper(REPLACE(`x`.`col3`, 'auth.', '')) IS NOT NULL AND Upper(`y1`.`code`) IS NOT NULL OR Upper(REPLACE(`x`.`col3`, 'auth.', '')) IS NULL AND Upper(`y1`.`code`) IS NULL
 SET
 	`x`.`col1` = `x`.`col1`,
 	`x`.`col2` = `x`.`col2`,
 	`x`.`col3` = REPLACE(`x`.`col3`, 'auth.', ''),
 	`x`.`col4` = `x`.`col4`,
 	`x`.`col5` = CASE
-		WHEN `x`.`col3` = 'empty' THEN '1'
+		WHEN `x`.`col3` = 'empty' AND `x`.`col3` IS NOT NULL THEN '1'
 		ELSE '0'
 	END,
 	`x`.`col6` = CASE
-		WHEN `x`.`col3` = 'empty' THEN ''
+		WHEN `x`.`col3` = 'empty' AND `x`.`col3` IS NOT NULL THEN ''
 		ELSE CAST(`y1`.`id` AS CHAR(11))
 	END
 

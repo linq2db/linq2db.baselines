@@ -275,7 +275,8 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)) > 0
+	DatePart(day, CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)) > 0 AND
+	DatePart(day, CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)) IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017

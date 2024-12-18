@@ -172,7 +172,7 @@ FROM
 	"Tag" t1
 		FULL JOIN "Fact" fact_1 ON t1."FactId" = fact_1."Id"
 WHERE
-	fact_1."Id" > 3 OR t1."FactId" > 3
+	fact_1."Id" > 3 AND fact_1."Id" IS NOT NULL OR t1."FactId" > 3 AND t1."FactId" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

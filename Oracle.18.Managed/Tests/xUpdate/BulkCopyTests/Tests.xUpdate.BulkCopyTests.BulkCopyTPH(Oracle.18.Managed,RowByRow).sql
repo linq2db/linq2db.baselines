@@ -180,7 +180,7 @@ SELECT
 FROM
 	"TPHTable" x
 WHERE
-	x."Value1" = 'Str1'
+	x."Value1" = 'Str1' AND x."Value1" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
@@ -196,7 +196,7 @@ SELECT
 FROM
 	"TPHTable" x
 WHERE
-	x."Value2" = 'Str2'
+	x."Value2" = 'Str2' AND x."Value2" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
@@ -212,7 +212,7 @@ SELECT
 FROM
 	"TPHTable" x
 WHERE
-	x."Value3" = 'Str3'
+	x."Value3" = 'Str3' AND x."Value3" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

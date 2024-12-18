@@ -79,7 +79,7 @@ FROM
 				[UserIssue3128] [t1]
 		) [t2] ON 1=1
 WHERE
-	[t2].[COUNT_1] > 0
+	[t2].[COUNT_1] > 0 AND [t2].[COUNT_1] IS NOT NULL
 
 BeforeExecute
 -- SqlCe

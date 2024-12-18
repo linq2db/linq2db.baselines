@@ -49,8 +49,8 @@ SELECT
 FROM
 	[Src] [x]
 WHERE
-	[x].[CEnumA] <= [x].[CEnumB] OR [x].[CEnumA] IS NULL OR
-	[x].[CEnumB] IS NULL
+	[x].[CEnumA] <= [x].[CEnumB] AND [x].[CEnumA] IS NOT NULL AND
+	[x].[CEnumB] IS NOT NULL
 ORDER BY
 	[x].[Id]
 

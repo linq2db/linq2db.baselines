@@ -19,7 +19,7 @@ WHERE
 			"t1"."FirstName" = "t2"."FirstName" AND
 			"t1"."PersonID" = "t2"."PersonID" AND
 			"t1"."LastName" = "t2"."LastName" AND
-			("t1"."MiddleName" = "t2"."MiddleName" OR "t1"."MiddleName" IS NULL AND "t2"."MiddleName" IS NULL) AND
+			("t1"."MiddleName" = "t2"."MiddleName" AND "t1"."MiddleName" IS NOT NULL AND "t2"."MiddleName" IS NOT NULL OR "t1"."MiddleName" IS NULL AND "t2"."MiddleName" IS NULL) AND
 			"t1"."Gender" = "t2"."Gender"
 	)
 ORDER BY

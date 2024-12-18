@@ -52,7 +52,7 @@ SELECT
 FROM
 	"TestFbTypesTable" "t1"
 WHERE
-	"t1"."Int128" = 0
+	"t1"."Int128" = 0 AND "t1"."Int128" IS NOT NULL
 
 BeforeExecute
 -- Firebird.5 Firebird4

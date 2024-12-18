@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN [t2].[SUM_1] < 0 THEN 9
+		WHEN [t2].[SUM_1] < 0 AND [t2].[SUM_1] IS NOT NULL THEN 9
 		ELSE [t2].[SUM_1] + 8
 	END as [c1],
 	[t2].[SUM_1] + [t2].[SUM_1] as [c2]

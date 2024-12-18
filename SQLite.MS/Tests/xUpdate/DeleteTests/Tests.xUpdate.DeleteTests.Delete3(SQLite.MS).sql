@@ -58,6 +58,7 @@ WHERE
 				LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 		WHERE
 			[a_Parent].[ParentID] = 1 AND
+			[a_Parent].[ParentID] IS NOT NULL AND
 			[c_1].[ChildID] IN (1001, 1002) AND
 			[Child].[ParentID] = [c_1].[ParentID] AND
 			[Child].[ChildID] = [c_1].[ChildID]

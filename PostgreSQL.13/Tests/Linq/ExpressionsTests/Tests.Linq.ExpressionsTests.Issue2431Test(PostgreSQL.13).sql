@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Issue2431Table" r
 WHERE
-	r."Json"::json #>> '{json, text}' = 'test'
+	r."Json"::json #>> '{json, text}' = 'test' AND r."Json"::json #>> '{json, text}' IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

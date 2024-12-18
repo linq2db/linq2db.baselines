@@ -80,7 +80,7 @@ SELECT
 FROM
 	public.schedule x
 WHERE
-	x.unit_nullable = :unit
+	x.unit_nullable = :unit AND x.unit_nullable IS NOT NULL
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -95,7 +95,7 @@ SELECT
 FROM
 	public.schedule x
 WHERE
-	x.unit_nullable = :unitNullable
+	x.unit_nullable = :unitNullable AND x.unit_nullable IS NOT NULL
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -108,7 +108,7 @@ SELECT
 FROM
 	public.schedule x
 WHERE
-	x.unit_nullable = 'day'
+	x.unit_nullable = 'day' AND x.unit_nullable IS NOT NULL
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL

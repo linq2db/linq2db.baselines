@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 1
+	[p].[ParentID] = @id AND [p].[Value1] = 1 AND [p].[Value1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 2
+	[p].[ParentID] = @id AND [p].[Value1] = 2 AND [p].[Value1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -78,5 +78,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @id AND [p].[Value1] = 3
+	[p].[ParentID] = @id AND [p].[Value1] = 3 AND [p].[Value1] IS NOT NULL
 

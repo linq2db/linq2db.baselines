@@ -271,8 +271,8 @@ VALUES
 )
 OUTPUT
 	CASE
-		WHEN $action = N'DELETE' THEN N'Row Deleted'
-		WHEN $action = N'INSERT' THEN N'Row Inserted'
+		WHEN $action = N'DELETE' AND $action IS NOT NULL THEN N'Row Deleted'
+		WHEN $action = N'INSERT' AND $action IS NOT NULL THEN N'Row Inserted'
 		ELSE N'Row Updated'
 	END,
 	INSERTED.[Id],

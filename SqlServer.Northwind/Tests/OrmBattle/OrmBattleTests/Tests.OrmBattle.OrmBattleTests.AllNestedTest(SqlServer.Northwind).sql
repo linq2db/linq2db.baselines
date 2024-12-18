@@ -102,8 +102,8 @@ WHERE
 			*
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
-				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
+				LEFT JOIN [Employees] [a_Employee] ON [o].[EmployeeID] = [a_Employee].[EmployeeID] AND [o].[EmployeeID] IS NOT NULL
 		WHERE
 			[a_Customer].[CustomerID] = [c_1].[CustomerID] AND
 			NOT EXISTS(
@@ -112,7 +112,8 @@ WHERE
 				FROM
 					[Employees] [e]
 				WHERE
-					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [e].[FirstName] LIKE N'A%' ESCAPE N'~'
+					[a_Employee].[EmployeeID] = [e].[EmployeeID] AND [a_Employee].[EmployeeID] IS NOT NULL AND
+					[e].[FirstName] LIKE N'A%' ESCAPE N'~'
 			)
 	)
 

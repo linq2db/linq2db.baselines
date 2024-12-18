@@ -32,7 +32,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101
+	`r`.`ID` = 101 AND `r`.`ID` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

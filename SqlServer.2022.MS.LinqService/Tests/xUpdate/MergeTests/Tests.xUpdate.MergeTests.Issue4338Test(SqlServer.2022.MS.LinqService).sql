@@ -233,7 +233,7 @@ AS
 		[Child] [ai]
 			LEFT JOIN [Parent] [a_Parent] ON [ai].[ParentID] = [a_Parent].[ParentID]
 	WHERE
-		[a_Parent].[Value1] = -99
+		[a_Parent].[Value1] = -99 AND [a_Parent].[Value1] IS NOT NULL
 )
 MERGE INTO [CTE_1] [Target]
 USING (VALUES

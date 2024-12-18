@@ -270,5 +270,5 @@ DELETE
 FROM
 	`AllTypes`
 WHERE
-	`AllTypes`.`char20DataType` = 'issue792'
+	`AllTypes`.`char20DataType` = 'issue792' AND `AllTypes`.`char20DataType` IS NOT NULL
 

@@ -43,7 +43,8 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
+	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly AND
+	[e].[GuidNullableValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

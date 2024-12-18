@@ -14,9 +14,9 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	[i].[Value1] = @cond OR
-	[i].[Value1] = @cond_1 OR
-	[i].[Value1] = @cond_2 OR
-	[i].[Value1] = @cond_3 OR
+	[i].[Value1] = @cond AND [i].[Value1] IS NOT NULL OR
+	[i].[Value1] = @cond_1 AND [i].[Value1] IS NOT NULL OR
+	[i].[Value1] = @cond_2 AND [i].[Value1] IS NOT NULL OR
+	[i].[Value1] = @cond_3 AND [i].[Value1] IS NOT NULL AND @cond_3 IS NOT NULL OR
 	[i].[Value1] IS NULL AND @cond_3 IS NULL
 

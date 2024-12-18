@@ -53,7 +53,8 @@ FROM
 			[Issue1983Person] [p]
 	) [cu]
 WHERE
-	[cu].[COUNT_1] = 0 OR [cu].[COUNT_1] <> 0 OR [cu].[COUNT_1] IS NULL
+	[cu].[COUNT_1] = 0 AND [cu].[COUNT_1] IS NOT NULL OR
+	[cu].[COUNT_1] <> 0 OR [cu].[COUNT_1] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

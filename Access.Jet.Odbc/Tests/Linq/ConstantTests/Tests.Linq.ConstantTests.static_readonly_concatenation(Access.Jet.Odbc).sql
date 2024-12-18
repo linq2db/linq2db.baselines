@@ -55,7 +55,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + '1' = ?
+	[e].[StringValue] + '1' = ? AND [e].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

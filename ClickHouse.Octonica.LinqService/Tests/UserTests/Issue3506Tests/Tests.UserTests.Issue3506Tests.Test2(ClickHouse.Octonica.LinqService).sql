@@ -57,7 +57,7 @@ SELECT
 	COUNT(*)
 FROM
 	catz cat
-		INNER JOIN owners owner_1 ON cat.OwnerId IS NOT NULL AND cat.OwnerId = owner_1.Id
+		INNER JOIN owners owner_1 ON cat.OwnerId IS NOT NULL AND cat.OwnerId = owner_1.Id AND cat.OwnerId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

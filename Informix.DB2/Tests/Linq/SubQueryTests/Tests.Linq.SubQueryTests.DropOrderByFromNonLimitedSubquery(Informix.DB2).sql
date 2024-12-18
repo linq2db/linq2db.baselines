@@ -19,7 +19,7 @@ WHERE
 				FROM
 					GrandChild gc
 				WHERE
-					c_1.ChildID = gc.ChildID
+					c_1.ChildID = gc.ChildID AND gc.ChildID IS NOT NULL
 			)
 	)
 

@@ -5,7 +5,7 @@ DELETE
 FROM
 	`GrandChild`
 WHERE
-	`GrandChild`.`ParentID` >= 1000
+	`GrandChild`.`ParentID` >= 1000 AND `GrandChild`.`ParentID` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -90,7 +90,7 @@ DELETE   `a_GrandChildren`
 FROM
 	`Parent` `gc`
 		INNER JOIN `Child` `a_Children` ON `gc`.`ParentID` = `a_Children`.`ParentID`
-		INNER JOIN `GrandChild` `a_GrandChildren` ON `a_Children`.`ParentID` = `a_GrandChildren`.`ParentID` AND `a_Children`.`ChildID` = `a_GrandChildren`.`ChildID`
+		INNER JOIN `GrandChild` `a_GrandChildren` ON `a_Children`.`ParentID` = `a_GrandChildren`.`ParentID` AND `a_GrandChildren`.`ParentID` IS NOT NULL AND `a_Children`.`ChildID` = `a_GrandChildren`.`ChildID` AND `a_GrandChildren`.`ChildID` IS NOT NULL
 WHERE
 	`gc`.`ParentID` IN (1001)
 
@@ -101,7 +101,7 @@ DELETE
 FROM
 	`GrandChild`
 WHERE
-	`GrandChild`.`ParentID` >= 1000
+	`GrandChild`.`ParentID` >= 1000 AND `GrandChild`.`ParentID` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

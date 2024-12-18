@@ -25,7 +25,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	@param = `t1`.`BigIntValue`
+	@param = `t1`.`BigIntValue` AND `t1`.`BigIntValue` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

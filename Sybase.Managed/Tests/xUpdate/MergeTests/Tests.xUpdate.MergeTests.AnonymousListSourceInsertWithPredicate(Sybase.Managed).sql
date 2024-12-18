@@ -257,7 +257,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[source_Key])
 
-WHEN NOT MATCHED AND [Source].[source_Field04] = 216 THEN
+WHEN NOT MATCHED AND [Source].[source_Field04] = 216 AND [Source].[source_Field04] IS NOT NULL THEN
 INSERT
 (
 	[Id],

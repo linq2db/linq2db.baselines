@@ -306,9 +306,10 @@ WHERE
 			*
 		FROM
 			"UpdatedEntities" v
-				LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
+				LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id" AND v."RelationId" IS NOT NULL
 		WHERE
-			a_Relation."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v."id"
+			a_Relation."RelatedValue1" = 11 AND a_Relation."RelatedValue1" IS NOT NULL AND
+			"UpdatedEntities"."id" = v."id"
 	)
 
 BeforeExecute
@@ -320,9 +321,10 @@ SELECT
 	v."Value3"
 FROM
 	"UpdatedEntities" v
-		LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
+		LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id" AND v."RelationId" IS NOT NULL
 WHERE
-	a_Relation."RelatedValue1" = 11 AND ROWNUM <= 1
+	a_Relation."RelatedValue1" = 11 AND a_Relation."RelatedValue1" IS NOT NULL AND
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -1806,9 +1806,9 @@ FROM
 					[m_1].[Id2] DESC
 				LIMIT @take
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
+		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId] AND [d].[DetailId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -1834,7 +1834,7 @@ FROM
 					[m_1].[Id2] DESC
 				LIMIT @take
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
 		INNER JOIN (
 			SELECT
@@ -1844,7 +1844,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [d].[DetailId] ORDER BY [d].[SubDetailValue]) as [rn]
 			FROM
 				[SubDetailClass] [d]
-		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
+		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[DetailId] IS NOT NULL AND [d_1].[rn] <= 10
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -1871,7 +1871,7 @@ FROM
 					[m_1].[Id2] DESC
 				LIMIT @take
 			) [t1]
-				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 	) [m_2]
 		INNER JOIN (
 			SELECT
@@ -1882,7 +1882,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [d].[Id1] ORDER BY [d].[Value]) as [rn]
 			FROM
 				[MasterClass] [d]
-		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10
+		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [m_2].[MasterId] IS NOT NULL AND [d_1].[rn] <= 10
 
 BeforeExecute
 DisposeTransaction
@@ -1912,7 +1912,7 @@ FROM
 			[m_1].[Id2] DESC
 		LIMIT @take
 	) [t1]
-		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
+		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId] AND [dd].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

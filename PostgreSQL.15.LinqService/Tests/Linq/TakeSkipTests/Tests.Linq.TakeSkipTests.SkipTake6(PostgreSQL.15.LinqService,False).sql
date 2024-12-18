@@ -14,7 +14,7 @@ FROM
 		LIMIT 3
 	) p_1
 WHERE
-	c_1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID" AND p_1."ParentID" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -32,5 +32,5 @@ FROM
 		LIMIT 3 OFFSET 12 
 	) p_1
 WHERE
-	c_1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID" AND p_1."ParentID" IS NOT NULL
 

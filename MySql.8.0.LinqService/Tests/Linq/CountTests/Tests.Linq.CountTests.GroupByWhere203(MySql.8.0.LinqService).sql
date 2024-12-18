@@ -17,5 +17,5 @@ FROM
 			`g_1`.`ParentID`
 	) `g_2`
 WHERE
-	`g_2`.`cond` > 2 OR `g_2`.`Key_1` > 2
+	`g_2`.`cond` > 2 AND `g_2`.`cond` IS NOT NULL OR `g_2`.`Key_1` > 2
 

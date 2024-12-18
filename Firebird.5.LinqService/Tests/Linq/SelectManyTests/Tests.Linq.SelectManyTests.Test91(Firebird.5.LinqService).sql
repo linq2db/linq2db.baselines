@@ -15,8 +15,8 @@ FROM
 		WHERE
 			"p"."ParentID" = 1
 	) "t1"
-		INNER JOIN "GrandChild" "g_1" ON "t1"."ParentID" = "g_1"."ParentID"
-		LEFT JOIN "Child" "a_Child" ON "g_1"."ParentID" = "a_Child"."ParentID" AND "g_1"."ChildID" = "a_Child"."ChildID"
+		INNER JOIN "GrandChild" "g_1" ON "t1"."ParentID" = "g_1"."ParentID" AND "g_1"."ParentID" IS NOT NULL
+		LEFT JOIN "Child" "a_Child" ON "g_1"."ParentID" = "a_Child"."ParentID" AND "g_1"."ParentID" IS NOT NULL AND "g_1"."ChildID" = "a_Child"."ChildID" AND "g_1"."ChildID" IS NOT NULL
 WHERE
-	"t1"."ParentID" = "g_1"."ParentID"
+	"t1"."ParentID" = "g_1"."ParentID" AND "g_1"."ParentID" IS NOT NULL
 

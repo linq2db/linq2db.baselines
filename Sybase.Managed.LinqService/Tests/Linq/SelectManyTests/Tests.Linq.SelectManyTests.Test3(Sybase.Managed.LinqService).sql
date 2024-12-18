@@ -11,5 +11,5 @@ FROM
 			[Parent] [t1],
 			[Person] [t]
 	) [sub]
-		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID]
+		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID] AND [g_1].[ParentID] IS NOT NULL
 

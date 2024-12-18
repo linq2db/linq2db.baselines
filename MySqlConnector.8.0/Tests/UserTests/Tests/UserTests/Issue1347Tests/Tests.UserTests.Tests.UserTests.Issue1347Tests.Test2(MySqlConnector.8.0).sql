@@ -161,11 +161,11 @@ FROM
 		FROM
 			`WMS_GlobalTaskA` `t1`
 	) `t4`
-		LEFT JOIN `WmsResourcePointDTO` `source` ON `t4`.`RPSourceID` = `source`.`Id`
-		LEFT JOIN `StorageShelfDTO` `sourceShelf` ON `t4`.`StorageShelfSourceID` = `sourceShelf`.`Id`
-		LEFT JOIN `WmsResourcePointDTO` `dest` ON `t4`.`RPDestinationID` = `dest`.`Id`
-		LEFT JOIN `StorageShelfDTO` `destShelf` ON `t4`.`StorageShelfDestinationID` = `destShelf`.`Id`
-		LEFT JOIN `WmsResourcePointDTO` `origdest` ON `t4`.`RPOrigDestinationID` = `origdest`.`Id`
+		LEFT JOIN `WmsResourcePointDTO` `source` ON `t4`.`RPSourceID` = `source`.`Id` AND `t4`.`RPSourceID` IS NOT NULL
+		LEFT JOIN `StorageShelfDTO` `sourceShelf` ON `t4`.`StorageShelfSourceID` = `sourceShelf`.`Id` AND `t4`.`StorageShelfSourceID` IS NOT NULL
+		LEFT JOIN `WmsResourcePointDTO` `dest` ON `t4`.`RPDestinationID` = `dest`.`Id` AND `t4`.`RPDestinationID` IS NOT NULL
+		LEFT JOIN `StorageShelfDTO` `destShelf` ON `t4`.`StorageShelfDestinationID` = `destShelf`.`Id` AND `t4`.`StorageShelfDestinationID` IS NOT NULL
+		LEFT JOIN `WmsResourcePointDTO` `origdest` ON `t4`.`RPOrigDestinationID` = `origdest`.`Id` AND `t4`.`RPOrigDestinationID` IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				`res`.`Id`
@@ -187,7 +187,7 @@ FROM
 				`t3`.`Id`
 			FROM
 				`WMS_OutfeedTransportOrderA` `t3`
-		) `outfeed` ON `t4`.`OutfeedTransportOrderID` = `outfeed`.`Id`
+		) `outfeed` ON `t4`.`OutfeedTransportOrderID` = `outfeed`.`Id` AND `t4`.`OutfeedTransportOrderID` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	CAST(CONVERT(NVarChar(10), [t1].[DateTimeValue], 101) AS DateTime) = CAST(CONVERT(NVarChar(10), CAST('2009-09-20' AS DateTime), 101) AS DateTime)
+	CAST(CONVERT(NVarChar(10), [t1].[DateTimeValue], 101) AS DateTime) = CAST(CONVERT(NVarChar(10), CAST('2009-09-20' AS DateTime), 101) AS DateTime) AND
+	CAST(CONVERT(NVarChar(10), [t1].[DateTimeValue], 101) AS DateTime) IS NOT NULL
 

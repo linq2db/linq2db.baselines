@@ -1,0 +1,1121 @@
+﻿BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NOT NULL)
+	DROP TABLE [BooleanTable]
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NULL)
+	CREATE TABLE [BooleanTable]
+	(
+		[Id]     Int NOT NULL,
+		[Value1] Int NOT NULL,
+		[Value2] Int NOT NULL,
+		[Value4] Int     NULL,
+		[Value5] Int     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 5
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 6
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 7
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 8
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 9
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 10
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 11
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 12
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 13
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 14
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 15
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 16
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 17
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 18
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 0
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 19
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 20
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 21
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 22
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 23
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 24
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 25
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 26
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 27
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 0
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 28
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 29
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 30
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = NULL
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 31
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 32
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 33
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 0
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 34
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = NULL
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 35
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 0
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id Int -- Int32
+SET     @Id = 36
+DECLARE @Value1 Int -- Int32
+SET     @Value1 = 1
+DECLARE @Value2 Int -- Int32
+SET     @Value2 = 1
+DECLARE @Value4 Int -- Int32
+SET     @Value4 = 1
+DECLARE @Value5 Int -- Int32
+SET     @Value5 = 1
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Value1],
+	[Value2],
+	[Value4],
+	[Value5]
+)
+VALUES
+(
+	@Id,
+	@Value1,
+	@Value2,
+	@Value4,
+	@Value5
+)
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @True Bit -- Boolean
+SET     @True = 1
+
+SELECT
+	[r].[Id],
+	[r].[Value1],
+	[r].[Value2],
+	[r].[Value4],
+	[r].[Value5]
+FROM
+	[BooleanTable] [r]
+WHERE
+	([r].[Value1] = [r].[Value2]) = @True
+
+BeforeExecute
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NOT NULL)
+	DROP TABLE [BooleanTable]
+

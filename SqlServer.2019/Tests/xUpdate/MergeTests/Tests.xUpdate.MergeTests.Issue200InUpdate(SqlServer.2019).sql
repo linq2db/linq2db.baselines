@@ -55,10 +55,12 @@ USING (VALUES
 	[source_datetime2DataType],
 	[source_datetimeoffsetDataType]
 )
-ON (([Target].[datetime2DataType] = [Source].[source_datetime2DataType] OR [Target].[datetime2DataType] IS NULL AND [Source].[source_datetime2DataType] IS NULL) AND
-([Target].[datetimeoffsetDataType] = [Source].[source_datetimeoffsetDataType] OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[source_datetimeoffsetDataType] IS NULL) AND
+ON (([Target].[datetime2DataType] = [Source].[source_datetime2DataType] AND [Target].[datetime2DataType] IS NOT NULL AND [Source].[source_datetime2DataType] IS NOT NULL OR [Target].[datetime2DataType] IS NULL AND [Source].[source_datetime2DataType] IS NULL) AND
+([Target].[datetimeoffsetDataType] = [Source].[source_datetimeoffsetDataType] AND [Target].[datetimeoffsetDataType] IS NOT NULL AND [Source].[source_datetimeoffsetDataType] IS NOT NULL OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[source_datetimeoffsetDataType] IS NULL) AND
 [Target].[datetime2DataType] = @datetime2DataType AND
-[Target].[datetimeoffsetDataType] = @datetimeoffsetDataType)
+[Target].[datetime2DataType] IS NOT NULL AND
+[Target].[datetimeoffsetDataType] = @datetimeoffsetDataType AND
+[Target].[datetimeoffsetDataType] IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE

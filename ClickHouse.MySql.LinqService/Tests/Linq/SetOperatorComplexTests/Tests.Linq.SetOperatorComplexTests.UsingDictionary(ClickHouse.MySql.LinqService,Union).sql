@@ -395,7 +395,7 @@ FROM
 		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
 		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 WHERE
-	a_Book.Discriminator = 'Roman'
+	a_Book.Discriminator = 'Roman' AND a_Book.Discriminator IS NOT NULL
 UNION DISTINCT
 SELECT
 	toString('Discriminator') as c1,
@@ -407,7 +407,7 @@ FROM
 		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
 		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 WHERE
-	a_Book_1.Discriminator = 'Novel'
+	a_Book_1.Discriminator = 'Novel' AND a_Book_1.Discriminator IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -432,7 +432,7 @@ FROM
 				INNER JOIN BookAuthor d ON d.FkAuthorId = t2.AuthorId
 				LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 	) m_1
-		INNER JOIN BookAuthor d_1 ON d_1.FkBookId = m_1.BookId
+		INNER JOIN BookAuthor d_1 ON d_1.FkBookId = m_1.BookId AND m_1.BookId IS NOT NULL
 		LEFT JOIN Author a_Author ON d_1.FkAuthorId = a_Author.AuthorId
 
 BeforeExecute

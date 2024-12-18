@@ -92,7 +92,7 @@ UPDATE
 SET
 	"Data" = @Data
 WHERE
-	t."Data" = '***XXX***'
+	t."Data" = '***XXX***' AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -106,7 +106,7 @@ UPDATE
 SET
 	"Data" = @Data
 WHERE
-	t."Data" = @p
+	t."Data" = @p AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

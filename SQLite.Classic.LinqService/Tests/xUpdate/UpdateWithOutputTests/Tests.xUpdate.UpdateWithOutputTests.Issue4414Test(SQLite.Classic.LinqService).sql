@@ -40,7 +40,7 @@ UPDATE
 SET
 	[Name] = 'new_name'
 WHERE
-	[Issue4193Person].[EmployeeId] = 1
+	[Issue4193Person].[EmployeeId] = 1 AND [Issue4193Person].[EmployeeId] IS NOT NULL
 RETURNING
 	[Issue4193Person].[EmployeeId],
 	[Issue4193Person].[Name]

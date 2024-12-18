@@ -33,7 +33,7 @@ FROM
 				INNER JOIN [Child] [d] ON [t2].[ParentID] = [d].[ParentID]
 				LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
-		INNER JOIN [Child] [d_1] ON [m_1].[cond] = [d_1].[ParentID]
+		INNER JOIN [Child] [d_1] ON [m_1].[cond] = [d_1].[ParentID] AND [m_1].[cond] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

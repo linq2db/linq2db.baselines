@@ -75,7 +75,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = ?
+	[x].[FirstName] = ? AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -107,7 +107,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = ?
+	[x].[FirstName] = ? AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

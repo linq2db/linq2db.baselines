@@ -87,7 +87,8 @@ BeforeExecute
 SELECT
 	[x].[Id],
 	CASE
-		WHEN [a_House].[Levels] > 1 THEN 1
+		WHEN [a_House].[Levels] > 1 AND [a_House].[Levels] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END
 FROM

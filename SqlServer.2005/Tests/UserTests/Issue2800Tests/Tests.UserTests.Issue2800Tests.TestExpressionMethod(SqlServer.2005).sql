@@ -74,7 +74,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	[x].[Name] = N'Special'
+	[x].[Name] = N'Special' AND [x].[Name] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005
@@ -132,7 +132,7 @@ SELECT
 FROM
 	[Car] [x]
 WHERE
-	[x].[Name] = N'Special'
+	[x].[Name] = N'Special' AND [x].[Name] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005

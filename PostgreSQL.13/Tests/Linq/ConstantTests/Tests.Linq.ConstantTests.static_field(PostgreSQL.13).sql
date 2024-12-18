@@ -42,7 +42,8 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly
+	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly AND
+	e."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

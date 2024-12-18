@@ -48,7 +48,8 @@ FROM
 	TestConstantsData e
 WHERE
 	e.GuidValue = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
-	e.GuidNullableValue = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+	e.GuidNullableValue = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11') AND
+	e.GuidNullableValue IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

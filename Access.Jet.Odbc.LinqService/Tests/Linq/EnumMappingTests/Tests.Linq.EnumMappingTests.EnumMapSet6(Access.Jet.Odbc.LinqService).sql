@@ -30,7 +30,10 @@ UPDATE
 SET
 	[r].[IntValue] = 4
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	[r].[ID] = 101 AND
+	[r].[ID] IS NOT NULL AND
+	[r].[IntValue] = 3 AND
+	[r].[IntValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

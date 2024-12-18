@@ -18,5 +18,5 @@ SELECT TOP 1
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = ?
+	[p].[FirstName] = ? AND [p].[FirstName] IS NOT NULL
 

@@ -2,9 +2,15 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			DatePart(year, CAST('2010-' + RIGHT('0' + CAST([p].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)) as [Year_1],
+			CAST('2010-' + RIGHT('0' + CAST([p].[ID] AS VarChar(2)), 2) + '-01' AS DateTime) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)) = 2010
+	[t].[Year_1] = 2010 AND [t].[Year_1] IS NOT NULL
 

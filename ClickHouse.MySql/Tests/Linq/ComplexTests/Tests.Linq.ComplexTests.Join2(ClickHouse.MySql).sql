@@ -12,7 +12,7 @@ SELECT
 FROM
 	Parent o
 		INNER JOIN Child c_1 ON o.ParentID = c_1.ChildID
-		INNER JOIN GrandChild g_1 ON o.ParentID = g_1.ParentID
+		INNER JOIN GrandChild g_1 ON o.ParentID = g_1.ParentID AND g_1.ParentID IS NOT NULL
 WHERE
 	o.ParentID = 1 AND c_1.ChildID > 0
 

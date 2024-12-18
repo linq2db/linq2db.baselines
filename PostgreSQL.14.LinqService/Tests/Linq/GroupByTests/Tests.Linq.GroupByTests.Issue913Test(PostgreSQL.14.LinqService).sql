@@ -78,7 +78,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN g_1."TradingStatus" = 'D' THEN True
+				WHEN g_1."TradingStatus" = 'D' AND g_1."TradingStatus" IS NOT NULL
+					THEN True
 				ELSE False
 			END as "IsDelisted"
 		FROM

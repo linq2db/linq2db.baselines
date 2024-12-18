@@ -67,7 +67,7 @@ SELECT
 FROM
 	[DynamicColumnTable] [e]
 WHERE
-	[e].[Name] = 'Some1'
+	[e].[Name] = 'Some1' AND [e].[Name] IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -80,7 +80,7 @@ SELECT
 FROM
 	[DynamicColumnTable] [e]
 WHERE
-	[e].[Name] = 'Some2'
+	[e].[Name] = 'Some2' AND [e].[Name] IS NOT NULL
 LIMIT 1
 
 BeforeExecute

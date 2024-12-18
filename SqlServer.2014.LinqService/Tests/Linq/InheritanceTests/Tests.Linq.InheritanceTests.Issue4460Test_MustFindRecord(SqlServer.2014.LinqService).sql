@@ -53,7 +53,7 @@ SELECT
 FROM
 	[Issue4460Table] [t1]
 WHERE
-	[t1].[Code] = N'GrandChild'
+	[t1].[Code] = N'GrandChild' AND [t1].[Code] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2014

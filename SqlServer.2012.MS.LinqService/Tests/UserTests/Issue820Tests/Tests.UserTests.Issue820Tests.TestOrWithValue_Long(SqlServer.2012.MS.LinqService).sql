@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	@param = [t1].[BigIntValue]
+	@param = [t1].[BigIntValue] AND [t1].[BigIntValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

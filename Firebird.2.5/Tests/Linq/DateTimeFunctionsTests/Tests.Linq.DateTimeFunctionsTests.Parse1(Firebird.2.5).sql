@@ -2,9 +2,15 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	CAST("d"."DateTimeValue" AS Date)
+	"d"."Date_1"
 FROM
-	"LinqDataTypes" "d"
+	(
+		SELECT
+			Extract(day from "t"."DateTimeValue") as "Day_1",
+			CAST("t"."DateTimeValue" AS Date) as "Date_1"
+		FROM
+			"LinqDataTypes" "t"
+	) "d"
 WHERE
-	Extract(day from "d"."DateTimeValue") > 0
+	"d"."Day_1" > 0 AND "d"."Day_1" IS NOT NULL
 

@@ -60,20 +60,24 @@ SELECT
 	AVG(g_1."DataValue"),
 	AVG(g_1."DataValue"),
 	AVG(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	AVG(DISTINCT g_1."DataValue"),
 	AVG(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN MOD(g_1."DataValue", 2) = 0D THEN g_1."DataValue"
+		WHEN MOD(g_1."DataValue", 2) = 0D AND g_1."DataValue" IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END)
 FROM

@@ -13,8 +13,8 @@ FROM
 			FROM
 				GrandChild ch
 			WHERE
-				ch.ParentID > 0
-		) ch_1 ON p.ParentID = ch_1.ParentID
+				ch.ParentID > 0 AND ch.ParentID IS NOT NULL
+		) ch_1 ON p.ParentID = ch_1.ParentID AND ch_1.ParentID IS NOT NULL
 WHERE
 	ch_1.not_null IS NULL AND ch_1.not_null IS NULL
 

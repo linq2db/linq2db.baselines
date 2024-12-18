@@ -23,7 +23,7 @@ FROM
 			[a_Parent].[ParentID]
 	) [t1]
 WHERE
-	[t1].[group_1] = @groupId
+	[t1].[group_1] = @groupId AND [t1].[group_1] IS NOT NULL
 ORDER BY
 	[t1].[count_1] DESC
 

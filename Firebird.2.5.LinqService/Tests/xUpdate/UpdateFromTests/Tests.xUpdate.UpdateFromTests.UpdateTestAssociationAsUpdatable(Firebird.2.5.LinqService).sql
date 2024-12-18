@@ -286,9 +286,10 @@ SET
 			"a_Relation_1"."RelatedValue3"
 		FROM
 			"UpdatedEntities" "v_1"
-				LEFT JOIN "UpdateRelation" "a_Relation_1" ON "v_1"."RelationId" = "a_Relation_1"."id"
+				LEFT JOIN "UpdateRelation" "a_Relation_1" ON "v_1"."RelationId" = "a_Relation_1"."id" AND "v_1"."RelationId" IS NOT NULL
 		WHERE
-			"a_Relation_1"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v_1"."id"
+			"a_Relation_1"."RelatedValue1" = 11 AND "a_Relation_1"."RelatedValue1" IS NOT NULL AND
+			"UpdatedEntities"."id" = "v_1"."id"
 	)
 WHERE
 	EXISTS(
@@ -296,9 +297,10 @@ WHERE
 			*
 		FROM
 			"UpdatedEntities" "v"
-				LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
+				LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id" AND "v"."RelationId" IS NOT NULL
 		WHERE
-			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
+			"a_Relation"."RelatedValue1" = 11 AND "a_Relation"."RelatedValue1" IS NOT NULL AND
+			"UpdatedEntities"."id" = "v"."id"
 	)
 
 BeforeExecute
@@ -308,9 +310,9 @@ SELECT FIRST 1
 	"v"."Value1"
 FROM
 	"UpdatedEntities" "v"
-		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id"
+		LEFT JOIN "UpdateRelation" "a_Relation" ON "v"."RelationId" = "a_Relation"."id" AND "v"."RelationId" IS NOT NULL
 WHERE
-	"a_Relation"."RelatedValue1" = 11
+	"a_Relation"."RelatedValue1" = 11 AND "a_Relation"."RelatedValue1" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

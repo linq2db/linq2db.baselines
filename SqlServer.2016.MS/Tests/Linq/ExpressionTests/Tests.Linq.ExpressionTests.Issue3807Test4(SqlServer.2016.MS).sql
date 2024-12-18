@@ -51,7 +51,7 @@ FROM
 				FROM
 					[STRING_SPLIT]([a].[ArrayString], @p) [i]
 				WHERE
-					[i].[value] = N'two'
+					[i].[value] = N'two' AND [i].[value] IS NOT NULL
 			)
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], @p) [d]
@@ -75,7 +75,7 @@ WHERE
 		FROM
 			[STRING_SPLIT]([r].[ArrayString], @p) [i]
 		WHERE
-			[i].[value] = N'two'
+			[i].[value] = N'two' AND [i].[value] IS NOT NULL
 	)
 ORDER BY
 	[r].[Id]

@@ -2,9 +2,15 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	CAST(N'2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + N'-01' AS DateTime)
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			DatePart(year, CAST(N'2010-' + RIGHT('0' + CAST([p].[ID] AS VarChar(2)), 2) + N'-01' AS DateTime)) as [Year_1],
+			CAST(N'2010-' + RIGHT('0' + CAST([p].[ID] AS VarChar(2)), 2) + N'-01' AS DateTime) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	DatePart(year, CAST(N'2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + N'-01' AS DateTime)) = 2010
+	[t].[Year_1] = 2010 AND [t].[Year_1] IS NOT NULL
 

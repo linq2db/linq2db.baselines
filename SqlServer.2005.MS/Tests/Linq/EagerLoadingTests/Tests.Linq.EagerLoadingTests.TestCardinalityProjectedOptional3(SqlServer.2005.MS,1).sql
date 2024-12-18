@@ -150,8 +150,8 @@ SELECT
 	[a_ObjectCRequired].[FK]
 FROM
 	[EntityA] [e]
-		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
-		LEFT JOIN [EntityC] [a_ObjectCRequired] ON [a_ObjectBOptional].[FK] = [a_ObjectCRequired].[Id]
+		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id] AND [e].[FK] IS NOT NULL
+		LEFT JOIN [EntityC] [a_ObjectCRequired] ON [a_ObjectBOptional].[FK] = [a_ObjectCRequired].[Id] AND [a_ObjectBOptional].[FK] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

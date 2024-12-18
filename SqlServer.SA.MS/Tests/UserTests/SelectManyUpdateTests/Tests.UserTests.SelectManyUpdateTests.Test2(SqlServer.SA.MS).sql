@@ -10,7 +10,7 @@ SET
 FROM
 	[Parent] [x]
 		INNER JOIN [Child] [a_Children] ON [x].[ParentID] = [a_Children].[ParentID]
-		INNER JOIN [Child] [a_Children_1] ON [a_Children].[ParentID] = [a_Children_1].[ChildID]
+		INNER JOIN [Child] [a_Children_1] ON [a_Children].[ParentID] = [a_Children_1].[ChildID] AND [a_Children_1].[ChildID] IS NOT NULL
 WHERE
 	1 = 0
 

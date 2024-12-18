@@ -1810,7 +1810,7 @@ FROM
 			) t1
 				INNER JOIN MasterClass mm ON t1.Id1 = mm.Id1
 	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

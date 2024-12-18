@@ -23,6 +23,6 @@ WHERE
 				UNION ALL
 				SELECT 'n' FROM sys.dual) x
 		WHERE
-			InStr(t."FirstName", x."item") - 1 > 0
+			InStr(t."FirstName", x."item") - 1 > 0 AND InStr(t."FirstName", x."item") IS NOT NULL
 	)
 

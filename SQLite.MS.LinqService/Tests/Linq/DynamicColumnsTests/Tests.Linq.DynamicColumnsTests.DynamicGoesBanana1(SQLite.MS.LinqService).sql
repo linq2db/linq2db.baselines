@@ -47,7 +47,7 @@ UPDATE
 SET
 	[Property] = @Property
 WHERE
-	[BananaTable].[Id] = @filter
+	[BananaTable].[Id] = @filter AND [BananaTable].[Id] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

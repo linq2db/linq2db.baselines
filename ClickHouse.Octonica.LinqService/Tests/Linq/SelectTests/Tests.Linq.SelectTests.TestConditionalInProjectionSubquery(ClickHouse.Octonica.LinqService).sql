@@ -87,7 +87,7 @@ FROM
 	MainEntityObject q
 		LEFT JOIN ChildEntityObject c_1 ON c_1.Id = q.Id
 WHERE
-	c_1.Id % 2 = 0
+	c_1.Id % 2 = 0 AND c_1.Id IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -78,7 +78,7 @@ UPDATE
 SET
 	[Data] = '***OOO***'
 WHERE
-	[TrimTestTable].[Data] = '***XXX***'
+	[TrimTestTable].[Data] = '***XXX***' AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -88,7 +88,7 @@ UPDATE
 SET
 	[Data] = '***SSS***'
 WHERE
-	[TrimTestTable].[Data] = '***HHH***'
+	[TrimTestTable].[Data] = '***HHH***' AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

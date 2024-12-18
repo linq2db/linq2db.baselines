@@ -51,7 +51,10 @@ SELECT TOP 2
 FROM
 	[User] [u]
 WHERE
-	[u].[city] = 'Springwood' AND [u].[street] = 'Elm Street' AND
+	[u].[city] = 'Springwood' AND
+	[u].[city] IS NOT NULL AND
+	[u].[street] = 'Elm Street' AND
+	[u].[street] IS NOT NULL AND
 	[u].[building_number] = 13
 
 BeforeExecute

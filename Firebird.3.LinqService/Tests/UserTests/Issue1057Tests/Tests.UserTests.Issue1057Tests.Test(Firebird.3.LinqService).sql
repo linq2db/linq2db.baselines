@@ -116,7 +116,7 @@ FROM
 	"Task" "p"
 		LEFT JOIN "TaskStage" "a_ActualStage" ON "p"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = TRUE
 WHERE
-	"p"."TargetName" = 'bda.Requests'
+	"p"."TargetName" = 'bda.Requests' AND "p"."TargetName" IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

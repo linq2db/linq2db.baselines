@@ -6,5 +6,5 @@ SELECT
 FROM
 	[AllTypes] [t1]
 WHERE
-	[t1].[charDataType] = N'1'
+	[t1].[charDataType] = N'1' AND [t1].[charDataType] IS NOT NULL
 

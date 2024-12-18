@@ -60,7 +60,8 @@ SELECT
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+				[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+				[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -78,7 +79,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -95,7 +97,8 @@ SELECT
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+				[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+				[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -113,7 +116,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -130,7 +134,8 @@ SELECT
 			FROM
 				[SampleClass] [sampleClass_1]
 			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+				[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+				[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -148,7 +153,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	[sampleClass_1].[Value] = @test AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

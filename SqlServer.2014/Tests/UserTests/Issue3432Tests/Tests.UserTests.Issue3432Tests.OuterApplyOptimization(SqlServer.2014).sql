@@ -60,7 +60,8 @@ FROM
 			FROM
 				[PartyAccess] [pa]
 			WHERE
-				[pa].[PartyId] = [party_1].[Id] AND [pa].[Role] = N'Admin'
+				[pa].[PartyId] = [party_1].[Id] AND [pa].[Role] = N'Admin' AND
+				[pa].[Role] IS NOT NULL
 		)
 
 BeforeExecute

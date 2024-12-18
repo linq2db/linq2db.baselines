@@ -61,7 +61,7 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = X'010203'
+	"t1"."Array" = X'010203' AND "t1"."Array" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -73,7 +73,7 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = X'0405'
+	"t1"."Binary" = X'0405' AND "t1"."Binary" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

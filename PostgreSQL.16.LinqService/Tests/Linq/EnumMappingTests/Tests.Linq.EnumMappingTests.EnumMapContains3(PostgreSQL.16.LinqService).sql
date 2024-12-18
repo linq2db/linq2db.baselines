@@ -30,7 +30,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" IN (12)
+	r."ID" = 101 AND r."ID" IS NOT NULL AND r."BigIntValue" IN (12)
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

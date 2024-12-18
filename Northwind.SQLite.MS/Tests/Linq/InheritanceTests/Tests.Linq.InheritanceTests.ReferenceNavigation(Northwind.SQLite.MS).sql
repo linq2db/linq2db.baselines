@@ -29,8 +29,8 @@ SELECT
 FROM
 	[Order Details] [od]
 		LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
-		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON [a_Product].[CategoryID] = [a_Category].[CategoryID] AND [a_Product].[CategoryID] IS NOT NULL
 		LEFT JOIN [Orders] [a_Order] ON [od].[OrderID] = [a_Order].[OrderID]
 WHERE
-	[a_Category].[CategoryName] = 'Seafood'
+	[a_Category].[CategoryName] = 'Seafood' AND [a_Category].[CategoryName] IS NOT NULL
 

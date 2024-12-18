@@ -25,7 +25,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	? = [t1].[SmallIntValue]
+	? = [t1].[SmallIntValue] AND [t1].[SmallIntValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

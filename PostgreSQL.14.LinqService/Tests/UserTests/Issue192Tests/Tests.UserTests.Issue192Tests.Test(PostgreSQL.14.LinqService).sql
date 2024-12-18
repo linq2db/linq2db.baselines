@@ -87,7 +87,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :cond
+	t1."GuidValue" = :cond AND t1."GuidValue" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -231,7 +231,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue
+	t1."GuidValue" = :GuidValue AND t1."GuidValue" IS NOT NULL
 LIMIT 1
 
 BeforeExecute
@@ -246,7 +246,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue
+	t1."GuidValue" = :GuidValue AND t1."GuidValue" IS NOT NULL
 LIMIT 1
 
 BeforeExecute

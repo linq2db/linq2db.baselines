@@ -23,7 +23,7 @@ SELECT
 FROM
 	"Issue4192TableNullable" i
 WHERE
-	i."ParentId" = :parentId
+	i."ParentId" = :parentId AND i."ParentId" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

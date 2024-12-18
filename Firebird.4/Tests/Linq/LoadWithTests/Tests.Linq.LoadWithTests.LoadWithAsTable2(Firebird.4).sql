@@ -11,7 +11,7 @@ SELECT
 	"a_Parent"."Value1"
 FROM
 	"GrandChild" "t"
-		LEFT JOIN "Child" "a_Child" ON "t"."ParentID" = "a_Child"."ParentID" AND "t"."ChildID" = "a_Child"."ChildID"
+		LEFT JOIN "Child" "a_Child" ON "t"."ParentID" = "a_Child"."ParentID" AND "t"."ParentID" IS NOT NULL AND "t"."ChildID" = "a_Child"."ChildID" AND "t"."ChildID" IS NOT NULL
 		LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
 FETCH NEXT 1 ROWS ONLY
 

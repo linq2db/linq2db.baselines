@@ -91,7 +91,7 @@ SELECT
 	"d"."QuantityPerUnit"
 FROM
 	"Categories" "m_1"
-		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID"
+		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID" AND "d"."CategoryID" IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

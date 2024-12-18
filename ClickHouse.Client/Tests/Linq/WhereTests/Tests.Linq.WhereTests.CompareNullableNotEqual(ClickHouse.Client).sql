@@ -27,7 +27,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.Value1 = 1
+	p.Value1 = 1 AND p.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -67,7 +67,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	1 = p.Value1
+	1 = p.Value1 AND p.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

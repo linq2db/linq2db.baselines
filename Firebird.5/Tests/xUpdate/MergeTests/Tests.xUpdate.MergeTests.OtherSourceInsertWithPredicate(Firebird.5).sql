@@ -243,7 +243,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_OtherId")
 
-WHEN NOT MATCHED AND "Source"."source_OtherField4" = 216 THEN
+WHEN NOT MATCHED AND "Source"."source_OtherField4" = 216 AND "Source"."source_OtherField4" IS NOT NULL THEN
 INSERT
 (
 	"Id",

@@ -5,7 +5,7 @@ DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
-	[p].[Value1] = 11
+	[p].[Value1] = 11 AND [p].[Value1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022
@@ -31,7 +31,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[Value1] = 11
+	[p].[Value1] = 11 AND [p].[Value1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022
@@ -40,5 +40,5 @@ DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
-	[p].[Value1] = 11
+	[p].[Value1] = 11 AND [p].[Value1] IS NOT NULL
 

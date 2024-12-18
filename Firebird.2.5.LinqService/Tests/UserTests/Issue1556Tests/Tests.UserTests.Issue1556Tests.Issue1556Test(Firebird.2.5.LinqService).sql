@@ -14,8 +14,12 @@ FROM
 			FROM
 				"GrandChild" "y"
 			WHERE
-				"c_1"."ParentID" = "y"."ParentID" AND "c_1"."ChildID" = "y"."ChildID" AND
-				"y"."ParentID" = "p"."ParentID"
+				"c_1"."ParentID" = "y"."ParentID" AND
+				"y"."ParentID" IS NOT NULL AND
+				"c_1"."ChildID" = "y"."ChildID" AND
+				"y"."ChildID" IS NOT NULL AND
+				"y"."ParentID" = "p"."ParentID" AND
+				"y"."ParentID" IS NOT NULL
 		)
 
 BeforeExecute
@@ -36,7 +40,11 @@ WHERE
 		FROM
 			"GrandChild" "y"
 		WHERE
-			"c_1"."ParentID" = "y"."ParentID" AND "c_1"."ChildID" = "y"."ChildID" AND
-			"y"."ParentID" = "p"."ParentID"
+			"c_1"."ParentID" = "y"."ParentID" AND
+			"y"."ParentID" IS NOT NULL AND
+			"c_1"."ChildID" = "y"."ChildID" AND
+			"y"."ChildID" IS NOT NULL AND
+			"y"."ParentID" = "p"."ParentID" AND
+			"y"."ParentID" IS NOT NULL
 	)
 

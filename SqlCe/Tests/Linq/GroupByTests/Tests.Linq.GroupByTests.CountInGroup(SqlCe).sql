@@ -59,12 +59,14 @@ FROM
 			[t].[GroupId] as [Key_1],
 			COUNT(*) as [COUNT_1],
 			COUNT(CASE
-				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
+				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 AND [t].[DataValue] IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as [COUNT_2],
 			COUNT(*) as [COUNT_3],
 			COUNT(CASE
-				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
+				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 AND [t].[DataValue] IS NOT NULL
+					THEN 1
 				ELSE NULL
 			END) as [COUNT_4]
 		FROM
@@ -100,7 +102,7 @@ FROM
 						[x].[DataValue] IS NOT NULL AND [t9].[Key_1] = [x].[GroupId]
 				) [x_1]
 			WHERE
-				CAST([x_1].[DataValue] AS Int) % 2 = 0
+				CAST([x_1].[DataValue] AS Int) % 2 = 0 AND [x_1].[DataValue] IS NOT NULL
 		) [t3]
 		OUTER APPLY (
 			SELECT
@@ -112,8 +114,10 @@ FROM
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_2].[GroupId] AND
-						CAST([t_2].[DataValue] AS Int) % 2 = 0
+						[t_2].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [t_2].[GroupId] AND
+						CAST([t_2].[DataValue] AS Int) % 2 = 0 AND
+						[t_2].[DataValue] IS NOT NULL
 				) [t4]
 		) [t5]
 		OUTER APPLY (
@@ -126,11 +130,13 @@ FROM
 					FROM
 						[AggregationData] [x_2]
 					WHERE
-						[x_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [x_2].[GroupId] AND
-						CAST([x_2].[DataValue] AS Int) % 2 = 0
+						[x_2].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [x_2].[GroupId] AND
+						CAST([x_2].[DataValue] AS Int) % 2 = 0 AND
+						[x_2].[DataValue] IS NOT NULL
 				) [x_3]
 			WHERE
-				CAST([x_3].[DataValue] AS Int) % 2 = 0
+				CAST([x_3].[DataValue] AS Int) % 2 = 0 AND [x_3].[DataValue] IS NOT NULL
 		) [t6]
 		OUTER APPLY (
 			SELECT
@@ -142,8 +148,10 @@ FROM
 					FROM
 						[AggregationData] [t_3]
 					WHERE
-						[t_3].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_3].[GroupId] AND
-						CAST([t_3].[DataValue] AS Int) % 2 = 0
+						[t_3].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [t_3].[GroupId] AND
+						CAST([t_3].[DataValue] AS Int) % 2 = 0 AND
+						[t_3].[DataValue] IS NOT NULL
 				) [t7]
 		) [t8]
 

@@ -145,7 +145,7 @@ SELECT
 FROM
 	[EnumCardinality] [t1]
 WHERE
-	[t1].[Property4] > 'B'
+	[t1].[Property4] > 'B' AND [t1].[Property4] IS NOT NULL
 LIMIT 2
 
 BeforeExecute

@@ -20,5 +20,5 @@ FROM
 			"Parent" p
 	) p_1
 WHERE
-	p_1."Sum_1" > 1
+	p_1."Sum_1" > 1 AND p_1."Sum_1" IS NOT NULL
 

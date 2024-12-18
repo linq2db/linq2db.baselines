@@ -75,7 +75,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -107,7 +107,7 @@ SELECT TOP 1
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @FirstName AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

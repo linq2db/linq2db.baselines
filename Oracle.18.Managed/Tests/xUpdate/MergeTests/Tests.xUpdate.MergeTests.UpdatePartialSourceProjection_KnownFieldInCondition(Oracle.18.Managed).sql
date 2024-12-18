@@ -237,7 +237,7 @@ UPDATE
 SET
 	"Field1" = "Source"."source_OtherField1"
 WHERE
-	"Source"."source_OtherField4" = 214
+	"Source"."source_OtherField4" = 214 AND "Source"."source_OtherField4" IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

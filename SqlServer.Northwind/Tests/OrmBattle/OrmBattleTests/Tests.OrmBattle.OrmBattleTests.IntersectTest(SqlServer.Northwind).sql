@@ -37,6 +37,6 @@ WHERE
 		FROM
 			[Orders] [a_Orders]
 		WHERE
-			[c_1].[CustomerID] = [a_Orders].[CustomerID]
+			[c_1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
 	) > 0
 

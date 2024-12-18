@@ -133,9 +133,9 @@ SET
 			"Issue4193Person"."Name" || CAST("r_1"."SalaryId" AS VarChar(11) CHARACTER SET UNICODE_FSS)
 		FROM
 			"Issue4193Person" "p_1"
-				INNER JOIN "Issue4193Employee" "r_1" ON "p_1"."EmployeeId" = "r_1"."Id"
+				INNER JOIN "Issue4193Employee" "r_1" ON "p_1"."EmployeeId" = "r_1"."Id" AND "p_1"."EmployeeId" IS NOT NULL
 		WHERE
-			"Issue4193Person"."Name" = "p_1"."Name" AND ("Issue4193Person"."EmployeeId" = "p_1"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p_1"."EmployeeId" IS NULL)
+			"Issue4193Person"."Name" = "p_1"."Name" AND ("Issue4193Person"."EmployeeId" = "p_1"."EmployeeId" AND "Issue4193Person"."EmployeeId" IS NOT NULL AND "p_1"."EmployeeId" IS NOT NULL OR "Issue4193Person"."EmployeeId" IS NULL AND "p_1"."EmployeeId" IS NULL)
 	)
 WHERE
 	EXISTS(
@@ -143,9 +143,9 @@ WHERE
 			*
 		FROM
 			"Issue4193Person" "p"
-				INNER JOIN "Issue4193Employee" "r" ON "p"."EmployeeId" = "r"."Id"
+				INNER JOIN "Issue4193Employee" "r" ON "p"."EmployeeId" = "r"."Id" AND "p"."EmployeeId" IS NOT NULL
 		WHERE
-			"Issue4193Person"."Name" = "p"."Name" AND ("Issue4193Person"."EmployeeId" = "p"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p"."EmployeeId" IS NULL)
+			"Issue4193Person"."Name" = "p"."Name" AND ("Issue4193Person"."EmployeeId" = "p"."EmployeeId" AND "Issue4193Person"."EmployeeId" IS NOT NULL AND "p"."EmployeeId" IS NOT NULL OR "Issue4193Person"."EmployeeId" IS NULL AND "p"."EmployeeId" IS NULL)
 	)
 RETURNING
 	NEW."EmployeeId"

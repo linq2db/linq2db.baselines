@@ -31,7 +31,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r.ID = 101
+	r.ID = 101 AND r.ID IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

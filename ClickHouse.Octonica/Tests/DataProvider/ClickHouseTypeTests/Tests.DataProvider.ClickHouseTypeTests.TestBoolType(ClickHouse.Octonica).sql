@@ -178,7 +178,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -210,7 +210,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -239,7 +239,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -260,7 +260,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -281,7 +281,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -323,7 +323,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -355,7 +355,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -384,7 +384,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -405,7 +405,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -426,7 +426,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -613,7 +613,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -645,7 +645,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -674,7 +674,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -695,7 +695,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -716,7 +716,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = true AND r.ColumnNullable = false
+	r.Column = true AND r.ColumnNullable = false AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -758,7 +758,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -790,7 +790,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -819,7 +819,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -840,7 +840,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -861,7 +861,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = false AND r.ColumnNullable = true
+	r.Column = false AND r.ColumnNullable = true AND r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1048,7 +1048,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1080,7 +1081,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1109,7 +1111,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1130,7 +1133,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1151,7 +1155,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0)
+	r.Column = toUInt8(1) AND r.ColumnNullable = toUInt8(0) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1193,7 +1198,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1225,7 +1231,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1254,7 +1261,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1275,7 +1283,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
@@ -1296,7 +1305,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1)
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(1) AND
+	r.ColumnNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

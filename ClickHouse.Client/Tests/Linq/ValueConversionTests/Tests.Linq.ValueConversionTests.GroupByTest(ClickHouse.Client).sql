@@ -70,7 +70,10 @@ SELECT
 FROM
 	ValueConversion m_1
 WHERE
-	'[{"Value":"Value1"}]' = m_1.Value2 AND '[{"Value":"Value1"}]' = m_1.Value2
+	'[{"Value":"Value1"}]' = m_1.Value2 AND
+	m_1.Value2 IS NOT NULL AND
+	'[{"Value":"Value1"}]' = m_1.Value2 AND
+	m_1.Value2 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -80,7 +83,7 @@ SELECT
 FROM
 	ValueConversion g_1
 WHERE
-	'[{"Value":"Value1"}]' = g_1.Value2
+	'[{"Value":"Value1"}]' = g_1.Value2 AND g_1.Value2 IS NOT NULL
 GROUP BY
 	g_1.Id
 

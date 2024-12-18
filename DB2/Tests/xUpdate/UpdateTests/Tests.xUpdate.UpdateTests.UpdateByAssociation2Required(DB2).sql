@@ -83,7 +83,7 @@ WHERE
 				INNER JOIN "MainTable" "a_MainRequired" ON "p"."Id" = "a_MainRequired"."Id"
 		WHERE
 			"p"."Id" = @id AND "MainTable"."Id" = "a_MainRequired"."Id" AND
-			("MainTable"."Field" = "a_MainRequired"."Field" OR "MainTable"."Field" IS NULL AND "a_MainRequired"."Field" IS NULL)
+			("MainTable"."Field" = "a_MainRequired"."Field" AND "MainTable"."Field" IS NOT NULL AND "a_MainRequired"."Field" IS NOT NULL OR "MainTable"."Field" IS NULL AND "a_MainRequired"."Field" IS NULL)
 	)
 
 BeforeExecute

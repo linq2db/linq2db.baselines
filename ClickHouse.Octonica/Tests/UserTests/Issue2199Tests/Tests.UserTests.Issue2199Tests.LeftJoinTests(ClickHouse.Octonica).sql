@@ -51,7 +51,7 @@ SELECT
 	m_2.Name_1
 FROM
 	Manufacturer e
-		LEFT JOIN Country co ON e.CountryCode = co.Code
+		LEFT JOIN Country co ON e.CountryCode = co.Code AND e.CountryCode IS NOT NULL
 		LEFT JOIN (
 			SELECT
 				m_1.ManufacturerId as ManufacturerId,
@@ -61,7 +61,7 @@ FROM
 				co_1.Name as Name_1
 			FROM
 				Manufacturer m_1
-					LEFT JOIN Country co_1 ON m_1.CountryCode = co_1.Code
+					LEFT JOIN Country co_1 ON m_1.CountryCode = co_1.Code AND m_1.CountryCode IS NOT NULL
 			WHERE
 				m_1.ManufacturerId = 2
 		) m_2 ON 1=1

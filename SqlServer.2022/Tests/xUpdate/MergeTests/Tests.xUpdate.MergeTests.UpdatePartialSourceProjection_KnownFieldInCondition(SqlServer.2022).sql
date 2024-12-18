@@ -239,7 +239,7 @@ USING (
 )
 ON ([Target].[Id] = [Source].[source_OtherId])
 
-WHEN MATCHED AND [Source].[source_OtherField4] = 214 THEN
+WHEN MATCHED AND [Source].[source_OtherField4] = 214 AND [Source].[source_OtherField4] IS NOT NULL THEN
 UPDATE
 SET
 	[Field1] = [Source].[source_OtherField1]

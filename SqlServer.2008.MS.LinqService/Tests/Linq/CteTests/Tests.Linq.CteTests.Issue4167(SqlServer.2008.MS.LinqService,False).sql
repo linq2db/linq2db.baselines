@@ -120,7 +120,7 @@ FROM
 		FROM
 			[Issue4167Table] [r]
 		WHERE
-			[r].[Value] = N'000001'
+			[r].[Value] = N'000001' AND [r].[Value] IS NOT NULL
 		GROUP BY
 			[r].[Value],
 			[r].[EnumValue]

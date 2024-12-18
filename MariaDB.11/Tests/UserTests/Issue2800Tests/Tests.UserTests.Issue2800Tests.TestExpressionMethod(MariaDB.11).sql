@@ -73,7 +73,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -131,7 +131,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	`x`.`Name` = 'Special'
+	`x`.`Name` = 'Special' AND `x`.`Name` IS NOT NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

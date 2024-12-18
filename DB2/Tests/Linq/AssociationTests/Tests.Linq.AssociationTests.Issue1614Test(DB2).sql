@@ -74,8 +74,8 @@ SELECT
 	"a_User"."Id"
 FROM
 	"Resource" "t1"
-		LEFT JOIN "Lookup" "a_AssociationTypeCode" ON "t1"."AssociationTypeId" = "a_AssociationTypeCode"."Id"
-		LEFT JOIN "User" "a_User" ON "a_AssociationTypeCode"."Type" = 'us' AND "a_User"."Id" = "t1"."AssociatedObjectId"
+		LEFT JOIN "Lookup" "a_AssociationTypeCode" ON "t1"."AssociationTypeId" = "a_AssociationTypeCode"."Id" AND "t1"."AssociationTypeId" IS NOT NULL
+		LEFT JOIN "User" "a_User" ON "a_AssociationTypeCode"."Type" = 'us' AND "a_AssociationTypeCode"."Type" IS NOT NULL AND "a_User"."Id" = "t1"."AssociatedObjectId"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

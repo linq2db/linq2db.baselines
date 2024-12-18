@@ -12,8 +12,8 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	CAST([i].[Value1] AS INTEGER) = @cond OR
-	CAST([i].[Value1] AS INTEGER) = @cond_1 OR
-	CAST([i].[Value1] AS INTEGER) = @cond_2 OR
+	CAST([i].[Value1] AS INTEGER) = @cond AND CAST([i].[Value1] AS INTEGER) IS NOT NULL OR
+	CAST([i].[Value1] AS INTEGER) = @cond_1 AND CAST([i].[Value1] AS INTEGER) IS NOT NULL OR
+	CAST([i].[Value1] AS INTEGER) = @cond_2 AND CAST([i].[Value1] AS INTEGER) IS NOT NULL OR
 	CAST([i].[Value1] AS INTEGER) IS NULL
 

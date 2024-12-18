@@ -12,7 +12,7 @@ SET
 				INNER JOIN [Parent] [p2_1] ON [p1_1].[ParentID] = [p2_1].[ParentID]
 		WHERE
 			[p1_1].[ParentID] < 3 AND [Parent].[ParentID] = [p1_1].[ParentID] AND
-			([Parent].[Value1] = [p1_1].[Value1] OR [Parent].[Value1] IS NULL AND [p1_1].[Value1] IS NULL)
+			([Parent].[Value1] = [p1_1].[Value1] AND [Parent].[Value1] IS NOT NULL AND [p1_1].[Value1] IS NOT NULL OR [Parent].[Value1] IS NULL AND [p1_1].[Value1] IS NULL)
 	)
 WHERE
 	EXISTS(
@@ -23,6 +23,6 @@ WHERE
 				INNER JOIN [Parent] [p2] ON [p1].[ParentID] = [p2].[ParentID]
 		WHERE
 			[p1].[ParentID] < 3 AND [Parent].[ParentID] = [p1].[ParentID] AND
-			([Parent].[Value1] = [p1].[Value1] OR [Parent].[Value1] IS NULL AND [p1].[Value1] IS NULL)
+			([Parent].[Value1] = [p1].[Value1] AND [Parent].[Value1] IS NOT NULL AND [p1].[Value1] IS NOT NULL OR [Parent].[Value1] IS NULL AND [p1].[Value1] IS NULL)
 	)
 

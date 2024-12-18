@@ -57,7 +57,8 @@ SELECT
 FROM
 	Issue1855Table r
 WHERE
-	addSeconds(r.SomeNullableDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7)
+	addSeconds(r.SomeNullableDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7) AND
+	addSeconds(r.SomeNullableDateTimeOffset, 10) IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

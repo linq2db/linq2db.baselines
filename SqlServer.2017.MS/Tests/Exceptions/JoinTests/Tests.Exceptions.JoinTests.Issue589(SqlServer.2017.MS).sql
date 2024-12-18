@@ -17,9 +17,10 @@ FROM
 				[Child] [pf]
 					INNER JOIN [Parent] [parent1] ON [pf].[ParentID] = [parent1].[ParentID]
 					INNER JOIN [GrandChild] [grandChild1]
-						LEFT JOIN [Child] [a_Child] ON [grandChild1].[ChildID] = [a_Child].[ChildID]
+						LEFT JOIN [Child] [a_Child] ON [grandChild1].[ChildID] = [a_Child].[ChildID] AND [grandChild1].[ChildID] IS NOT NULL
 					ON [parent1].[ParentID] = [a_Child].[ParentID]
 			WHERE
-				[grandChild1].[ParentID] = [a_Parent].[ParentID]
+				[grandChild1].[ParentID] = [a_Parent].[ParentID] AND
+				[grandChild1].[ParentID] IS NOT NULL
 		) [pf_1]
 

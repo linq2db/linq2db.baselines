@@ -352,20 +352,24 @@ SELECT
 	AVG("g_1"."DataValue"),
 	AVG("g_1"."DataValue"),
 	AVG(CASE
-		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 THEN "g_1"."DataValue"
+		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 AND Mod(Int("g_1"."DataValue"), 2) IS NOT NULL
+			THEN "g_1"."DataValue"
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 THEN "g_1"."DataValue"
+		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 AND Mod(Int("g_1"."DataValue"), 2) IS NOT NULL
+			THEN "g_1"."DataValue"
 		ELSE NULL
 	END),
 	AVG(DISTINCT "g_1"."DataValue"),
 	AVG(DISTINCT CASE
-		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 THEN "g_1"."DataValue"
+		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 AND Mod(Int("g_1"."DataValue"), 2) IS NOT NULL
+			THEN "g_1"."DataValue"
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 THEN "g_1"."DataValue"
+		WHEN Mod(Int("g_1"."DataValue"), 2) = 0 AND Mod(Int("g_1"."DataValue"), 2) IS NOT NULL
+			THEN "g_1"."DataValue"
 		ELSE NULL
 	END)
 FROM

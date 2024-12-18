@@ -267,5 +267,5 @@ WHEN MATCHED AND "Source"."source_Id" = CAST(@Val3 AS Int) THEN
 UPDATE
 SET
 	"Field4" = CAST(@Val5 AS Int)
-WHEN MATCHED AND "Target"."Field3" = CAST(@p AS Int) THEN DELETE
+WHEN MATCHED AND "Target"."Field3" = CAST(@p AS Int) AND "Target"."Field3" IS NOT NULL THEN DELETE
 

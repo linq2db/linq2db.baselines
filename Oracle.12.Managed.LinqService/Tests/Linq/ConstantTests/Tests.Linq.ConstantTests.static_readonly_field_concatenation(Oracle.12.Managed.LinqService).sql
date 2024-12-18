@@ -69,7 +69,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."StringValue" || '1' = 'StrValue1'
+	e."StringValue" || '1' = 'StrValue1' AND e."StringValue" || '1' IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

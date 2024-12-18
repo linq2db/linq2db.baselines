@@ -19,6 +19,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = ?
+	"p"."FirstName" = ? AND "p"."FirstName" IS NOT NULL
 LIMIT 1
 

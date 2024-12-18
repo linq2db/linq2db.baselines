@@ -17,5 +17,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	Date(`t`.`DateTimeValue`) > @Date
+	Date(`t`.`DateTimeValue`) > @Date AND Date(`t`.`DateTimeValue`) IS NOT NULL
 

@@ -15,5 +15,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	To_Date("t1"."DateTimeValue") = To_Date(To_Timestamp('2009-09-20 00:00:00.000'))
+	To_Date("t1"."DateTimeValue") = To_Date(To_Timestamp('2009-09-20 00:00:00.000')) AND
+	To_Date("t1"."DateTimeValue") IS NOT NULL
 
