@@ -22,5 +22,5 @@ FROM
 				"p2"."Value1"
 			FROM
 				"Parent" "p2"
-		) "t1" ON "p1_1"."ParentID" = "t1"."ParentID" AND ("p1_1"."Value1" = "t1"."Value1" OR "p1_1"."Value1" IS NULL AND "t1"."Value1" IS NULL)
+		) "t1" ON "p1_1"."ParentID" = "t1"."ParentID" AND ("p1_1"."Value1" = "t1"."Value1" AND "p1_1"."Value1" IS NOT NULL AND "t1"."Value1" IS NOT NULL OR "p1_1"."Value1" IS NULL AND "t1"."Value1" IS NULL)
 

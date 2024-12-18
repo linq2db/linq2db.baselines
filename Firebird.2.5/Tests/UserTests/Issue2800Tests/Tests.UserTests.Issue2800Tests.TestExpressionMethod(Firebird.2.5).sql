@@ -80,7 +80,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -138,7 +138,7 @@ SELECT
 FROM
 	"Car" "x"
 WHERE
-	"x"."Name" = 'Special'
+	"x"."Name" = 'Special' AND "x"."Name" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

@@ -28,7 +28,7 @@ SELECT FIRST 1
 FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID = 101 AND "r"."BigIntValue" IS NULL
+	"r".ID = 101 AND "r".ID IS NOT NULL AND "r"."BigIntValue" IS NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

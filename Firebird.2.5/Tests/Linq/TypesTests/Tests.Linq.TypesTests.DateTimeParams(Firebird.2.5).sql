@@ -8,7 +8,7 @@ SELECT FIRST 1
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" > @dateTime
+	"t"."DateTimeValue" > @dateTime AND "t"."DateTimeValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -20,5 +20,5 @@ SELECT FIRST 1
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" > @dateTime
+	"t"."DateTimeValue" > @dateTime AND "t"."DateTimeValue" IS NOT NULL
 

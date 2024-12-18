@@ -147,7 +147,8 @@ SELECT DISTINCT
 		FROM
 			"Issue4160City" "cc"
 		WHERE
-			"cc"."Code" = "pe"."Code" OR "cc"."Code" IS NULL AND "pe"."Code" IS NULL
+			"cc"."Code" = "pe"."Code" AND "cc"."Code" IS NOT NULL AND "pe"."Code" IS NOT NULL OR
+			"cc"."Code" IS NULL AND "pe"."Code" IS NULL
 	)
 FROM
 	"Issue4160Person" "pe"

@@ -100,7 +100,7 @@ UPDATE
 SET
 	"Data" = CAST(@Data AS VARCHAR(9))
 WHERE
-	"t"."Data" = '***XXX***'
+	"t"."Data" = '***XXX***' AND "t"."Data" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -114,7 +114,7 @@ UPDATE
 SET
 	"Data" = CAST(@Data AS VARCHAR(9))
 WHERE
-	"t"."Data" = @p
+	"t"."Data" = @p AND "t"."Data" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

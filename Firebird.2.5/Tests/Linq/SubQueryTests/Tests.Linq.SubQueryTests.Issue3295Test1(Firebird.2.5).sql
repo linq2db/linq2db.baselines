@@ -40,5 +40,5 @@ FROM
 			) "x_1"
 	) "x_2"
 WHERE
-	"x_2"."StatusName" = 'abc'
+	"x_2"."StatusName" = 'abc' AND "x_2"."StatusName" IS NOT NULL
 

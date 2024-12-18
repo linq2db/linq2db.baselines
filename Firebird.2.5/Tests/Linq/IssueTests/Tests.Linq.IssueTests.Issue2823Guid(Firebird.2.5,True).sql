@@ -97,7 +97,8 @@ SELECT
 FROM
 	"TableWithGuid" "x"
 WHERE
-	"x"."DefaultN" = X'76B1C87522874B82A23B7967C5EAFED8'
+	"x"."DefaultN" = X'76B1C87522874B82A23B7967C5EAFED8' AND
+	"x"."DefaultN" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -107,7 +108,8 @@ SELECT
 FROM
 	"TableWithGuid" "x"
 WHERE
-	"x"."BinaryN" = X'656606A46E364431ADD685F886A1C7C2'
+	"x"."BinaryN" = X'656606A46E364431ADD685F886A1C7C2' AND
+	"x"."BinaryN" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -117,7 +119,8 @@ SELECT
 FROM
 	"TableWithGuid" "x"
 WHERE
-	"x"."StringN" = '66aa9df9-260f-4a2b-ac50-9ca8ce7ad725'
+	"x"."StringN" = '66aa9df9-260f-4a2b-ac50-9ca8ce7ad725' AND
+	"x"."StringN" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

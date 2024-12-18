@@ -41,7 +41,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '4'
+	"i"."StrValue" >= '4' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -52,7 +52,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '4'
+	"i"."StrValue" >= '4' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -63,7 +63,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '2'
+	"i"."StrValue" <= '2' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -74,7 +74,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '2'
+	"i"."StrValue" <= '2' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -85,7 +85,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" > '3'
+	"i"."StrValue" > '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -96,7 +96,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" > '3'
+	"i"."StrValue" > '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -107,7 +107,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" < '3'
+	"i"."StrValue" < '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -118,7 +118,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" < '3'
+	"i"."StrValue" < '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -129,7 +129,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" = '3'
+	"i"."StrValue" = '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -140,7 +140,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" = '3'
+	"i"."StrValue" = '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -151,7 +151,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '2'
+	"i"."StrValue" <= '2' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -162,7 +162,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '2'
+	"i"."StrValue" <= '2' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -173,7 +173,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '4'
+	"i"."StrValue" >= '4' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -184,7 +184,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '4'
+	"i"."StrValue" >= '4' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -195,7 +195,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" < '3'
+	"i"."StrValue" < '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -206,7 +206,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" < '3'
+	"i"."StrValue" < '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -217,7 +217,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" > '3'
+	"i"."StrValue" > '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -228,7 +228,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" > '3'
+	"i"."StrValue" > '3' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -239,7 +239,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '5'
+	"i"."StrValue" >= '5' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -250,7 +250,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" >= '5'
+	"i"."StrValue" >= '5' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -261,7 +261,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '1'
+	"i"."StrValue" <= '1' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -272,7 +272,7 @@ SELECT FIRST 2
 FROM
 	"Isue2424Table" "i"
 WHERE
-	"i"."StrValue" <= '1'
+	"i"."StrValue" <= '1' AND "i"."StrValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

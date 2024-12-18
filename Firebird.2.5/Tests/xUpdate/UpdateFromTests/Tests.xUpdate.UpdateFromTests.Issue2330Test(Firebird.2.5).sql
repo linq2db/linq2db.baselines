@@ -17,9 +17,15 @@ SET
 				FROM
 					"Child" "b2_1"
 			) AND
+			(
+				SELECT
+					MAX("b2_1"."ParentID")
+				FROM
+					"Child" "b2_1"
+			) IS NOT NULL AND
 			"b_1"."ChildID" = -1 AND
 			"Parent"."ParentID" = "w_1"."ParentID" AND
-			("Parent"."Value1" = "w_1"."Value1" OR "Parent"."Value1" IS NULL AND "w_1"."Value1" IS NULL)
+			("Parent"."Value1" = "w_1"."Value1" AND "Parent"."Value1" IS NOT NULL AND "w_1"."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND "w_1"."Value1" IS NULL)
 	)
 WHERE
 	EXISTS(
@@ -35,8 +41,14 @@ WHERE
 				FROM
 					"Child" "b2"
 			) AND
+			(
+				SELECT
+					MAX("b2"."ParentID")
+				FROM
+					"Child" "b2"
+			) IS NOT NULL AND
 			"b"."ChildID" = -1 AND
 			"Parent"."ParentID" = "w"."ParentID" AND
-			("Parent"."Value1" = "w"."Value1" OR "Parent"."Value1" IS NULL AND "w"."Value1" IS NULL)
+			("Parent"."Value1" = "w"."Value1" AND "Parent"."Value1" IS NOT NULL AND "w"."Value1" IS NOT NULL OR "Parent"."Value1" IS NULL AND "w"."Value1" IS NULL)
 	)
 

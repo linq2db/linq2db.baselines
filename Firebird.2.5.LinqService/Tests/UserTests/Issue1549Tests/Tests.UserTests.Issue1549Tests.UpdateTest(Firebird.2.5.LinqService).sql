@@ -165,7 +165,7 @@ SET
 			"drt_1"."Id"
 		FROM
 			"billing_TempReading" "tr_1"
-				INNER JOIN "billing_DevReadType" "drt_1" ON "drt_1"."Name" = "tr_1"."ReadingTypeName" AND "drt_1"."DevTypeId" = "tr_1"."Devtypeid"
+				INNER JOIN "billing_DevReadType" "drt_1" ON "drt_1"."Name" = "tr_1"."ReadingTypeName" AND "tr_1"."ReadingTypeName" IS NOT NULL AND "drt_1"."DevTypeId" = "tr_1"."Devtypeid" AND "tr_1"."Devtypeid" IS NOT NULL
 		WHERE
 			"billing_TempReading"."id" = "tr_1"."id"
 	),
@@ -174,7 +174,7 @@ SET
 			"drt_2"."Responsibility"
 		FROM
 			"billing_TempReading" "tr_2"
-				INNER JOIN "billing_DevReadType" "drt_2" ON "drt_2"."Name" = "tr_2"."ReadingTypeName" AND "drt_2"."DevTypeId" = "tr_2"."Devtypeid"
+				INNER JOIN "billing_DevReadType" "drt_2" ON "drt_2"."Name" = "tr_2"."ReadingTypeName" AND "tr_2"."ReadingTypeName" IS NOT NULL AND "drt_2"."DevTypeId" = "tr_2"."Devtypeid" AND "tr_2"."Devtypeid" IS NOT NULL
 		WHERE
 			"billing_TempReading"."id" = "tr_2"."id"
 	)
@@ -184,7 +184,7 @@ WHERE
 			*
 		FROM
 			"billing_TempReading" "tr"
-				INNER JOIN "billing_DevReadType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
+				INNER JOIN "billing_DevReadType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "tr"."ReadingTypeName" IS NOT NULL AND "drt"."DevTypeId" = "tr"."Devtypeid" AND "tr"."Devtypeid" IS NOT NULL
 		WHERE
 			"billing_TempReading"."id" = "tr"."id"
 	)
@@ -201,7 +201,10 @@ SET
 		FROM
 			"billing_DevReadType" "w"
 		WHERE
-			"w"."Name" = "t1"."ReadingTypeName" AND "w"."DevTypeId" = "t1"."Devtypeid"
+			"w"."Name" = "t1"."ReadingTypeName" AND
+			"t1"."ReadingTypeName" IS NOT NULL AND
+			"w"."DevTypeId" = "t1"."Devtypeid" AND
+			"t1"."Devtypeid" IS NOT NULL
 	),
 	"Responsibility" = (
 		SELECT FIRST 1
@@ -209,7 +212,10 @@ SET
 		FROM
 			"billing_DevReadType" "w_1"
 		WHERE
-			"w_1"."Name" = "t1"."ReadingTypeName" AND "w_1"."DevTypeId" = "t1"."Devtypeid"
+			"w_1"."Name" = "t1"."ReadingTypeName" AND
+			"t1"."ReadingTypeName" IS NOT NULL AND
+			"w_1"."DevTypeId" = "t1"."Devtypeid" AND
+			"t1"."Devtypeid" IS NOT NULL
 	)
 
 BeforeExecute

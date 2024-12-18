@@ -75,7 +75,7 @@ SELECT FIRST 1
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = @FirstName
+	"x"."FirstName" = @FirstName AND "x"."FirstName" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -123,7 +123,7 @@ SELECT FIRST 1
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
-	"x"."FirstName" = @FirstName
+	"x"."FirstName" = @FirstName AND "x"."FirstName" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

@@ -48,7 +48,8 @@ FROM
 	"TestConstantsData" "e"
 WHERE
 	"e"."GuidValue" = X'BC7B663D0FDE43278F925D8CC3A11D11' AND
-	"e"."GuidNullableValue" = X'BC7B663D0FDE43278F925D8CC3A11D11'
+	"e"."GuidNullableValue" = X'BC7B663D0FDE43278F925D8CC3A11D11' AND
+	"e"."GuidNullableValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.2.5 Firebird

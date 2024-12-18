@@ -19,6 +19,6 @@ WHERE
 				UNION ALL
 				SELECT CAST('Not John' AS VARCHAR(8)) FROM rdb$database) "y"
 		WHERE
-			"y"."item" = "x"."FirstName"
+			"y"."item" = "x"."FirstName" AND "y"."item" IS NOT NULL
 	)
 
