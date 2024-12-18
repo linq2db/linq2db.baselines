@@ -31,7 +31,10 @@ UPDATE
 SET
 	[BigIntValue] = 12
 WHERE
-	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND
+	[LinqDataTypes].[ID] IS NOT NULL AND
+	[LinqDataTypes].[BigIntValue] = 11 AND
+	[LinqDataTypes].[BigIntValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

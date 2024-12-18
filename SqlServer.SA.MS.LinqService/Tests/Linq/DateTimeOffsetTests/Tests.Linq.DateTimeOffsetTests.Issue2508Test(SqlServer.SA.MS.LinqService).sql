@@ -491,7 +491,8 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	[t].[TransactionDate] > DateAdd(minute, 200, DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7))
+	[t].[TransactionDate] > DateAdd(minute, 200, DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7)) AND
+	DateAdd(minute, 200, DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7)) IS NOT NULL
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

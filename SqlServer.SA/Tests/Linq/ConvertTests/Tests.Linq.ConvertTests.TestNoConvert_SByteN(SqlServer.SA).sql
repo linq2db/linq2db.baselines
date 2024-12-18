@@ -77,7 +77,7 @@ SELECT TOP (2)
 	[x].[UInt64N]
 FROM
 	[IntegerConverts] [x]
-		INNER JOIN [IntegerConverts] [y] ON [x].[SByteN] = [y].[SByteN] OR [x].[SByteN] IS NULL AND [y].[SByteN] IS NULL
+		INNER JOIN [IntegerConverts] [y] ON [x].[SByteN] = [y].[SByteN] AND [x].[SByteN] IS NOT NULL AND [y].[SByteN] IS NOT NULL OR [x].[SByteN] IS NULL AND [y].[SByteN] IS NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

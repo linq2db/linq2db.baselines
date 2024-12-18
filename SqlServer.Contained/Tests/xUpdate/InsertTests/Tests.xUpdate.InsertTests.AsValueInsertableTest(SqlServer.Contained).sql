@@ -43,7 +43,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[ID] = 123 AND [x].[FirstName] = N'John'
+	[x].[ID] = 123 AND [x].[FirstName] = N'John' AND [x].[FirstName] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

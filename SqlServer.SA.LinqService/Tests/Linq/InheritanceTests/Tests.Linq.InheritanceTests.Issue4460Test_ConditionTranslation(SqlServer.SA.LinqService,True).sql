@@ -80,9 +80,9 @@ SELECT
 FROM
 	[Base] [e]
 WHERE
-	[e].[Code] = N'Child2' OR
-	[e].[Code] = N'Child' OR
-	[e].[Code] = N'BaseChild' OR
+	[e].[Code] = N'Child2' AND [e].[Code] IS NOT NULL OR
+	[e].[Code] = N'Child' AND [e].[Code] IS NOT NULL OR
+	[e].[Code] = N'BaseChild' AND [e].[Code] IS NOT NULL OR
 	[e].[Id] <> 0
 ORDER BY
 	[e].[Id]

@@ -24,7 +24,7 @@ SELECT
 FROM
 	[Issue4192TableNullable] [i]
 WHERE
-	[i].[ParentId] = @parentId
+	[i].[ParentId] = @parentId AND [i].[ParentId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

@@ -88,8 +88,10 @@ FROM
 							LEFT JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [grpby].[AppTypeId]
 							LEFT JOIN [AppSubType] [subtype_1] ON [subtype_1].[AppTypeId] = [type_1].[AppTypeId]
 					WHERE
-						[grpby].[ItemId] = [i].[ItemId] AND [type_1].[AppTypeId] = [grpby].[AppTypeId] AND
-						([subtype_1].[AppTypeId] = [type_1].[AppTypeId] OR [subtype_1].[AppTypeId] IS NULL AND [type_1].[AppTypeId] IS NULL)
+						[grpby].[ItemId] = [i].[ItemId] AND
+						[type_1].[AppTypeId] = [grpby].[AppTypeId] AND
+						[type_1].[AppTypeId] IS NOT NULL AND
+						([subtype_1].[AppTypeId] = [type_1].[AppTypeId] AND [subtype_1].[AppTypeId] IS NOT NULL AND [type_1].[AppTypeId] IS NOT NULL OR [subtype_1].[AppTypeId] IS NULL AND [type_1].[AppTypeId] IS NULL)
 				) [t1]
 			GROUP BY
 				[t1].[Description],

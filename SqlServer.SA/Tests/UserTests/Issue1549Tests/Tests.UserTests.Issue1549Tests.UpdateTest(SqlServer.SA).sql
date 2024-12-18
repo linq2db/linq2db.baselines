@@ -88,7 +88,7 @@ SET
 	[tr].[Responsibility] = [drt].[Responsibility]
 FROM
 	[billing_TempReading] [tr]
-		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
+		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [tr].[ReadingTypeName] IS NOT NULL AND [drt].[DevTypeId] = [tr].[Devtypeid] AND [tr].[Devtypeid] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -103,7 +103,9 @@ SET
 			[billing_DevReadingType] [w]
 		WHERE
 			[w].[Name] = [billing_TempReading].[ReadingTypeName] AND
-			[w].[DevTypeId] = [billing_TempReading].[Devtypeid]
+			[billing_TempReading].[ReadingTypeName] IS NOT NULL AND
+			[w].[DevTypeId] = [billing_TempReading].[Devtypeid] AND
+			[billing_TempReading].[Devtypeid] IS NOT NULL
 	),
 	[Responsibility] = (
 		SELECT TOP (1)
@@ -112,7 +114,9 @@ SET
 			[billing_DevReadingType] [w_1]
 		WHERE
 			[w_1].[Name] = [billing_TempReading].[ReadingTypeName] AND
-			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid]
+			[billing_TempReading].[ReadingTypeName] IS NOT NULL AND
+			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid] AND
+			[billing_TempReading].[Devtypeid] IS NOT NULL
 	)
 
 BeforeExecute

@@ -271,11 +271,17 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[d].[TransactionDate]
+	[d].[Day_2]
 FROM
-	[Transactions] [d]
+	(
+		SELECT
+			DatePart(day, [t].[TransactionDate]) as [Day_1],
+			[t].[TransactionDate] as [Day_2]
+		FROM
+			[Transactions] [t]
+	) [d]
 WHERE
-	DatePart(day, [d].[TransactionDate]) > 0
+	[d].[Day_1] > 0 AND [d].[Day_1] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

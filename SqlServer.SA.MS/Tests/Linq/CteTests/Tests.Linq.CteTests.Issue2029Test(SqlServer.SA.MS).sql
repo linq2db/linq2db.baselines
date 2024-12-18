@@ -54,11 +54,11 @@ AS
 		[NC_CODE] [ncCode]
 			INNER JOIN [NC_GROUP_MEMBER] [ncGroupMember] ON [ncCode].[HANDLE] = [ncGroupMember].[NC_CODE_OR_GROUP_GBO]
 	WHERE
-		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_AUTO' OR
+		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_AUTO' AND [ncGroupMember].[NC_GROUP_BO] IS NOT NULL AND [ncCode].[SITE] IS NOT NULL OR
 		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL OR
-		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_MAN' OR
+		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_MAN' AND [ncGroupMember].[NC_GROUP_BO] IS NOT NULL AND [ncCode].[SITE] IS NOT NULL OR
 		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL OR
-		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_ALL' OR
+		[ncGroupMember].[NC_GROUP_BO] = N'NCGroupBO:' + [ncCode].[SITE] + N',CATAN_ALL' AND [ncGroupMember].[NC_GROUP_BO] IS NOT NULL AND [ncCode].[SITE] IS NOT NULL OR
 		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL
 )
 SELECT

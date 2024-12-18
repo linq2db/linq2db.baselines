@@ -24,7 +24,9 @@ USING (VALUES
 	[source_datetimeoffsetDataType]
 )
 ON ([Source].[source_datetime2DataType] = @datetime2DataType AND
-[Source].[source_datetimeoffsetDataType] = @datetimeoffsetDataType)
+[Source].[source_datetime2DataType] IS NOT NULL AND
+[Source].[source_datetimeoffsetDataType] = @datetimeoffsetDataType AND
+[Source].[source_datetimeoffsetDataType] IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

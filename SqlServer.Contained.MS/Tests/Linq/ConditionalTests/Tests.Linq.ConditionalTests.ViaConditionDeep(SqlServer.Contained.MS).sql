@@ -41,8 +41,8 @@ BeforeExecute
 
 SELECT
 	[x].[Id],
-	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
-	IIF([x].[StringProp] = N'2', 1, 0),
+	IIF([x].[StringProp] = N'1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL, 1, 0),
+	IIF([x].[StringProp] = N'2' AND [x].[StringProp] IS NOT NULL, 1, 0),
 	[x].[StringProp],
 	1,
 	[x].[StringProp] + N'2',
@@ -51,17 +51,26 @@ FROM
 	[ConditionalData] [x]
 WHERE
 	CASE
-		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
+		WHEN [x].[StringProp] = N'1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL
 			THEN N'2'
-		WHEN [x].[StringProp] = N'2' THEN [x].[StringProp]
+		WHEN [x].[StringProp] = N'2' AND [x].[StringProp] IS NOT NULL
+			THEN [x].[StringProp]
 		ELSE [x].[StringProp] + N'2'
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
-		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
+		WHEN [x].[StringProp] = N'1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL
 			THEN NULL
-		WHEN [x].[StringProp] = N'2' THEN 1
+		WHEN [x].[StringProp] = N'2' AND [x].[StringProp] IS NOT NULL
+			THEN 1
 		ELSE 2
-	END = 2
+	END = 2 AND
+	CASE
+		WHEN [x].[StringProp] = N'1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL
+			THEN NULL
+		WHEN [x].[StringProp] = N'2' AND [x].[StringProp] IS NOT NULL
+			THEN 1
+		ELSE 2
+	END IS NOT NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

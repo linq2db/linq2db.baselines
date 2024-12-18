@@ -42,7 +42,8 @@ FROM
 			FROM
 				[CustomerApplication] [a_CustomerApplication]
 			WHERE
-				[a_CustomerApplication].[Id] = CAST([i].[DocumentNo] AS Int)
+				[a_CustomerApplication].[Id] = CAST([i].[DocumentNo] AS Int) AND
+				CAST([i].[DocumentNo] AS Int) IS NOT NULL
 		) [t1]
 
 BeforeExecute

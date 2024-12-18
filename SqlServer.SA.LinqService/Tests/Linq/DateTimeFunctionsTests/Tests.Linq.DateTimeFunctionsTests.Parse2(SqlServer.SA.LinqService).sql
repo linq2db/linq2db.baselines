@@ -2,9 +2,15 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS VarChar(11)) + N'-02-24 00:00:00' AS DateTime2)
+	[d].[Day_2]
 FROM
-	[LinqDataTypes] [d]
+	(
+		SELECT
+			DatePart(day, CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(11)) + N'-02-24 00:00:00' AS DateTime2)) as [Day_1],
+			CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(11)) + N'-02-24 00:00:00' AS DateTime2) as [Day_2]
+		FROM
+			[LinqDataTypes] [t]
+	) [d]
 WHERE
-	DatePart(day, CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS VarChar(11)) + N'-02-24 00:00:00' AS DateTime2)) > 0
+	[d].[Day_1] > 0 AND [d].[Day_1] IS NOT NULL
 
