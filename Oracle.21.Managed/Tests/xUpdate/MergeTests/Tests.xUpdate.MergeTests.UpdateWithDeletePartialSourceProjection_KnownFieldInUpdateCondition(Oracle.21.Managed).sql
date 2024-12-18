@@ -237,7 +237,7 @@ UPDATE
 SET
 	"Field1" = Target."Field1" + "Source"."source_Field5"
 WHERE
-	"Source"."source_Field2" = 3
+	"Source"."source_Field2" = 3 AND "Source"."source_Field2" IS NOT NULL
 DELETE WHERE
 	"Source"."source_Id" = 3
 

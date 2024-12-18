@@ -62,7 +62,7 @@ SET
 			"Ints"."Three" = i_1."Three" AND
 			"Ints"."Four" = i_1."Four" AND
 			"Ints"."Five" = i_1."Five" AND
-			("Ints"."Nil" = i_1."Nil" OR "Ints"."Nil" IS NULL AND i_1."Nil" IS NULL)
+			("Ints"."Nil" = i_1."Nil" AND "Ints"."Nil" IS NOT NULL AND i_1."Nil" IS NOT NULL OR "Ints"."Nil" IS NULL AND i_1."Nil" IS NULL)
 	),
 	("Four", "Nil") = (
 		SELECT
@@ -79,7 +79,7 @@ SET
 			"Ints"."Three" = i_2."Three" AND
 			"Ints"."Four" = i_2."Four" AND
 			"Ints"."Five" = i_2."Five" AND
-			("Ints"."Nil" = i_2."Nil" OR "Ints"."Nil" IS NULL AND i_2."Nil" IS NULL)
+			("Ints"."Nil" = i_2."Nil" AND "Ints"."Nil" IS NOT NULL AND i_2."Nil" IS NOT NULL OR "Ints"."Nil" IS NULL AND i_2."Nil" IS NULL)
 	)
 WHERE
 	EXISTS(
@@ -96,7 +96,7 @@ WHERE
 			"Ints"."Three" = i."Three" AND
 			"Ints"."Four" = i."Four" AND
 			"Ints"."Five" = i."Five" AND
-			("Ints"."Nil" = i."Nil" OR "Ints"."Nil" IS NULL AND i."Nil" IS NULL)
+			("Ints"."Nil" = i."Nil" AND "Ints"."Nil" IS NOT NULL AND i."Nil" IS NOT NULL OR "Ints"."Nil" IS NULL AND i."Nil" IS NULL)
 	)
 
 BeforeExecute

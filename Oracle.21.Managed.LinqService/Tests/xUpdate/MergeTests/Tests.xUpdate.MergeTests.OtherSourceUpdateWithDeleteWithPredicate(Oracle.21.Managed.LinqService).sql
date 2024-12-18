@@ -244,7 +244,8 @@ SET
 	"Field4" = "Source"."source_OtherField4",
 	"Field5" = "Source"."source_OtherField5"
 WHERE
-	"Source"."source_OtherField4" = 214 OR Target."Id" = 3
+	"Source"."source_OtherField4" = 214 AND "Source"."source_OtherField4" IS NOT NULL OR
+Target."Id" = 3
 DELETE WHERE
 	Target."Id" = 3
 

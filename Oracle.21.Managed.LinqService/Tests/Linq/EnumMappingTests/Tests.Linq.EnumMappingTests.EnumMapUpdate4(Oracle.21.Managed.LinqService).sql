@@ -30,7 +30,10 @@ UPDATE
 SET
 	"BigIntValue" = 12
 WHERE
-	r.ID = 101 AND r."BigIntValue" = 11
+	r.ID = 101 AND
+	r.ID IS NOT NULL AND
+	r."BigIntValue" = 11 AND
+	r."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

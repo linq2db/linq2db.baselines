@@ -48,7 +48,8 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY > TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
+	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY > TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3') AND
+	INTERVAL '1' DAY IS NOT NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

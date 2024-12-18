@@ -57,7 +57,7 @@ UPDATE
 SET
 	"Data" = '***OOO***'
 WHERE
-	t."Data" = '***XXX***'
+	t."Data" = '***XXX***' AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -67,7 +67,7 @@ UPDATE
 SET
 	"Data" = '***SSS***'
 WHERE
-	t."Data" = '***HHH***'
+	t."Data" = '***HHH***' AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
