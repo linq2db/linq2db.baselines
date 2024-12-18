@@ -33,7 +33,7 @@ FROM
 			[p].[ProductName] as [ProductName_1]
 		FROM
 			[Products] [p]
-				LEFT JOIN [Categories] [c_1] ON [p].[CategoryID] = [c_1].[CategoryID]
+				LEFT JOIN [Categories] [c_1] ON [p].[CategoryID] = [c_1].[CategoryID] AND [p].[CategoryID] IS NOT NULL
 		UNION
 		SELECT
 			[p_1].[ProductID],
@@ -50,6 +50,6 @@ FROM
 			[p_1].[ProductName] as [ProductName_1]
 		FROM
 			[Products] [p_1]
-				LEFT JOIN [Categories] [c_2] ON [p_1].[CategoryID] = [c_2].[CategoryID]
+				LEFT JOIN [Categories] [c_2] ON [p_1].[CategoryID] = [c_2].[CategoryID] AND [p_1].[CategoryID] IS NOT NULL
 	) [t1]
 

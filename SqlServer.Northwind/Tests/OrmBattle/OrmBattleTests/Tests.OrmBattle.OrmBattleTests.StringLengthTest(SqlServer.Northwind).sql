@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	Len([c_1].[City]) = 7
+	Len([c_1].[City]) = 7 AND Len([c_1].[City]) IS NOT NULL
 

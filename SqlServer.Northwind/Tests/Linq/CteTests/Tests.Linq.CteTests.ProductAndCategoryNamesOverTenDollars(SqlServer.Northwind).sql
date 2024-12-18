@@ -10,9 +10,9 @@ AS
 		[p].[ProductName]
 	FROM
 		[Products] [p]
-			LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+			LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID] AND [p].[CategoryID] IS NOT NULL
 	WHERE
-		[p].[UnitPrice] > 10
+		[p].[UnitPrice] > 10 AND [p].[UnitPrice] IS NOT NULL
 )
 SELECT
 	[t1].[ProductName],
@@ -34,9 +34,9 @@ SELECT
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
-		LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID]
+		LEFT JOIN [Categories] [a_Category] ON [p].[CategoryID] = [a_Category].[CategoryID] AND [p].[CategoryID] IS NOT NULL
 WHERE
-	[p].[UnitPrice] > 10
+	[p].[UnitPrice] > 10 AND [p].[UnitPrice] IS NOT NULL
 ORDER BY
 	[a_Category].[CategoryName],
 	[p].[UnitPrice],

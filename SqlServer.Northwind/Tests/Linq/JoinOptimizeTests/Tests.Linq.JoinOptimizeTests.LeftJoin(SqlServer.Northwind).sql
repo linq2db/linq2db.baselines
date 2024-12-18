@@ -15,7 +15,8 @@ FROM
 		LEFT JOIN [Orders] [o3] ON [o3].[OrderID] = [od].[OrderID] AND [od].[ProductID] = 1
 		LEFT JOIN [Orders] [o5] ON [o5].[OrderID] = [od].[OrderID]
 WHERE
-	[o5].[OrderID] IS NOT NULL AND [o5].[OrderID] > 1000
+	[o5].[OrderID] IS NOT NULL AND [o5].[OrderID] > 1000 AND
+	[o5].[OrderID] IS NOT NULL
 ORDER BY
 	[od].[OrderID]
 

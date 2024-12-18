@@ -19,5 +19,5 @@ SELECT TOP (1)
 FROM
 	[Orders] [o]
 WHERE
-	DatePart(day, [o].[OrderDate]) = 5
+	DatePart(day, [o].[OrderDate]) = 5 AND DatePart(day, [o].[OrderDate]) IS NOT NULL
 

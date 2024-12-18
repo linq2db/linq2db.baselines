@@ -37,7 +37,7 @@ FROM
 			FROM
 				[Orders] [a_Orders]
 			WHERE
-				[c_1].[CustomerID] = [a_Orders].[CustomerID]
+				[c_1].[CustomerID] = [a_Orders].[CustomerID] AND [a_Orders].[CustomerID] IS NOT NULL
 		) [t1]
 WHERE
 	(
@@ -46,6 +46,7 @@ WHERE
 		FROM
 			[Orders] [a_Orders_1]
 		WHERE
-			[c_1].[CustomerID] = [a_Orders_1].[CustomerID]
+			[c_1].[CustomerID] = [a_Orders_1].[CustomerID] AND
+			[a_Orders_1].[CustomerID] IS NOT NULL
 	) > 0
 

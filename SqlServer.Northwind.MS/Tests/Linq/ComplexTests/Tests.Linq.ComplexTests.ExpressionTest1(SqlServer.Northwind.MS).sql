@@ -6,5 +6,6 @@ SELECT
 FROM
 	[Customers] [x]
 WHERE
-	[x].[Country] = N'UK' OR [x].[Country] = N'France'
+	[x].[Country] = N'UK' AND [x].[Country] IS NOT NULL OR
+	[x].[Country] = N'France' AND [x].[Country] IS NOT NULL
 

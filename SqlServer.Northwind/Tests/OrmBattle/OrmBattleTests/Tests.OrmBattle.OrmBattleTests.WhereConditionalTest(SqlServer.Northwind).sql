@@ -19,5 +19,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = N'Seattle'
+	[o].[ShipCity] = N'Seattle' AND [o].[ShipCity] IS NOT NULL
 

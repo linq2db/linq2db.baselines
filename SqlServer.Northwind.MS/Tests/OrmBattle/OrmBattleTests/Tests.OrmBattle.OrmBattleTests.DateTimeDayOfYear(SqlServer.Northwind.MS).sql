@@ -19,5 +19,5 @@ SELECT TOP (1)
 FROM
 	[Orders] [o]
 WHERE
-	DatePart(dayofyear, [o].[OrderDate]) = 360
+	DatePart(dayofyear, [o].[OrderDate]) = 360 AND DatePart(dayofyear, [o].[OrderDate]) IS NOT NULL
 

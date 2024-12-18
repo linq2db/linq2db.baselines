@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	CharIndex(N'tt', [c_1].[City]) - 1 = 3
+	CharIndex(N'tt', [c_1].[City]) - 1 = 3 AND CharIndex(N'tt', [c_1].[City]) IS NOT NULL
 

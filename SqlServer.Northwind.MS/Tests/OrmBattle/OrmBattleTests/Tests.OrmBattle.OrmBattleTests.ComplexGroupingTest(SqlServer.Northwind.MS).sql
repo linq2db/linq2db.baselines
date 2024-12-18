@@ -50,7 +50,7 @@ FROM
 									FROM
 										[Orders] [yg]
 									WHERE
-										[t1].[cond] = [yg].[CustomerID]
+										[t1].[cond] = [yg].[CustomerID] AND [yg].[CustomerID] IS NOT NULL
 								) [d]
 							GROUP BY
 								[d].[Key_1]
@@ -66,13 +66,14 @@ FROM
 							FROM
 								[Orders] [mg]
 							WHERE
-								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Year_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+								[t2].[cond] = [mg].[CustomerID] AND [mg].[CustomerID] IS NOT NULL AND
+								([t2].[Year_1] = DatePart(year, [mg].[OrderDate]) AND [t2].[Year_1] IS NOT NULL AND DatePart(year, [mg].[OrderDate]) IS NOT NULL OR [t2].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
 						) [d_2]
 					GROUP BY
 						[d_2].[Key_1]
 				) [d_3]
 	) [m_1]
-		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Key_1] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
+		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND [d_4].[CustomerID] IS NOT NULL AND ([m_1].[Year_1] = DatePart(year, [d_4].[OrderDate]) AND [m_1].[Year_1] IS NOT NULL AND DatePart(year, [d_4].[OrderDate]) IS NOT NULL OR [m_1].[Year_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Key_1] = DatePart(month, [d_4].[OrderDate]) AND [m_1].[Key_1] IS NOT NULL AND DatePart(month, [d_4].[OrderDate]) IS NOT NULL OR [m_1].[Key_1] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
@@ -105,7 +106,7 @@ FROM
 							FROM
 								[Orders] [yg]
 							WHERE
-								[t1].[cond] = [yg].[CustomerID]
+								[t1].[cond] = [yg].[CustomerID] AND [yg].[CustomerID] IS NOT NULL
 						) [d]
 					GROUP BY
 						[d].[Key_1]
@@ -121,7 +122,8 @@ FROM
 					FROM
 						[Orders] [mg]
 					WHERE
-						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+						[m_1].[cond] = [mg].[CustomerID] AND [mg].[CustomerID] IS NOT NULL AND
+						([m_1].[Year_1] = DatePart(year, [mg].[OrderDate]) AND [m_1].[Year_1] IS NOT NULL AND DatePart(year, [mg].[OrderDate]) IS NOT NULL OR [m_1].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
 				) [d_2]
 			GROUP BY
 				[d_2].[Key_1]
@@ -145,7 +147,7 @@ FROM
 					FROM
 						[Orders] [yg]
 					WHERE
-						[m_1].[CustomerID] = [yg].[CustomerID]
+						[m_1].[CustomerID] = [yg].[CustomerID] AND [yg].[CustomerID] IS NOT NULL
 				) [d]
 			GROUP BY
 				[d].[Key_1]

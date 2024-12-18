@@ -25,7 +25,7 @@ FROM
 		FROM
 			[Customers] [t1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON ([m_1].[Region] = [d].[Region] OR [m_1].[Region] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[City] = [d].[City] OR [m_1].[City] IS NULL AND [d].[City] IS NULL)
+		INNER JOIN [Customers] [d] ON ([m_1].[Region] = [d].[Region] AND [m_1].[Region] IS NOT NULL AND [d].[Region] IS NOT NULL OR [m_1].[Region] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[City] = [d].[City] AND [m_1].[City] IS NOT NULL AND [d].[City] IS NOT NULL OR [m_1].[City] IS NULL AND [d].[City] IS NULL)
 
 BeforeExecute
 DisposeTransaction

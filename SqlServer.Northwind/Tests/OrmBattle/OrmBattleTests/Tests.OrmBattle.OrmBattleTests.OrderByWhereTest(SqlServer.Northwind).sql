@@ -21,7 +21,8 @@ SELECT TOP (@take)
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderDate] > DATETIME2FROMPARTS(1997, 1, 1, 0, 0, 0, 0, 7)
+	[o].[OrderDate] > DATETIME2FROMPARTS(1997, 1, 1, 0, 0, 0, 0, 7) AND
+	[o].[OrderDate] IS NOT NULL
 ORDER BY
 	[o].[OrderDate],
 	[o].[OrderID]
