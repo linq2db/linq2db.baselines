@@ -34,6 +34,6 @@ SELECT
 FROM
 	"AllTypes" a
 WHERE
-	a."datetimeDataType" = :date_1
+	a."datetimeDataType" = :date_1 AND a."datetimeDataType" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 

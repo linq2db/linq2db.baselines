@@ -93,7 +93,7 @@ WHERE
 				LEFT JOIN "MainTable" a_MainOptional ON a_AssociatedOptional."Id" = a_MainOptional."Id"
 		WHERE
 			t1."Id" = :id AND "MainTable"."Id" = a_MainOptional."Id" AND
-			("MainTable"."Field" = a_MainOptional."Field" OR "MainTable"."Field" IS NULL AND a_MainOptional."Field" IS NULL)
+			("MainTable"."Field" = a_MainOptional."Field" AND "MainTable"."Field" IS NOT NULL AND a_MainOptional."Field" IS NOT NULL OR "MainTable"."Field" IS NULL AND a_MainOptional."Field" IS NULL)
 	)
 
 BeforeExecute

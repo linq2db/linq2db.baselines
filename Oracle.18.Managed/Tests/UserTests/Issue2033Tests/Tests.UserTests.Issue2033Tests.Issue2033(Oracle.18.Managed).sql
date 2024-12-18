@@ -1038,11 +1038,11 @@ AS
 		NC_CODE ncCode
 			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' OR
+		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' AND ncGroupMember.NC_GROUP_BO IS NOT NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' IS NOT NULL OR
 		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' IS NULL OR
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' OR
+		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' AND ncGroupMember.NC_GROUP_BO IS NOT NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' IS NOT NULL OR
 		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' IS NULL OR
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' OR
+		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' AND ncGroupMember.NC_GROUP_BO IS NOT NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' IS NOT NULL OR
 		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' IS NULL
 ),
 "FindProductionFailedNcData"
@@ -1087,10 +1087,10 @@ AS
 		ncData.PARTITION_DATE
 	FROM
 		NC_DATA ncData
-			INNER JOIN "GetAllowedNcCode" ncCodeItem ON ncCodeItem."NcCodeBo" = ncData.NC_CODE_BO
+			INNER JOIN "GetAllowedNcCode" ncCodeItem ON ncCodeItem."NcCodeBo" = ncData.NC_CODE_BO AND ncData.NC_CODE_BO IS NOT NULL
 			INNER JOIN SFC sfc_1 ON ncData.NC_CONTEXT_GBO = sfc_1.HANDLE
 			INNER JOIN OPERATION operationItem ON ncData.OPERATION_BO = operationItem.HANDLE
-			INNER JOIN CUSTOM_FIELDS customFields ON (sfc_1.SHOP_ORDER_BO = customFields.HANDLE OR sfc_1.SHOP_ORDER_BO IS NULL AND customFields.HANDLE IS NULL) AND 'ORDER_TYPE' = customFields.ATTRIBUTE AND 'ZPRN' = customFields.VALUE
+			INNER JOIN CUSTOM_FIELDS customFields ON (sfc_1.SHOP_ORDER_BO = customFields.HANDLE AND sfc_1.SHOP_ORDER_BO IS NOT NULL AND customFields.HANDLE IS NOT NULL OR sfc_1.SHOP_ORDER_BO IS NULL AND customFields.HANDLE IS NULL) AND 'ORDER_TYPE' = customFields.ATTRIBUTE AND customFields.ATTRIBUTE IS NOT NULL AND 'ZPRN' = customFields.VALUE AND customFields.VALUE IS NOT NULL
 ),
 "FilterByTestOperation"
 (
@@ -1141,13 +1141,13 @@ AS
 			INNER JOIN SFC_ROUTING sfcRouting ON t1."SfcBo" = sfcRouting.SFC_BO
 			INNER JOIN SFC_ROUTER sfcRouter ON sfcRouting.HANDLE = sfcRouter.SFC_ROUTING_BO
 			INNER JOIN SFC_STEP sfcStep ON sfcRouter.HANDLE = sfcStep.SFC_ROUTER_BO
-			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO = routerStep.ROUTER_BO OR sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL) AND (sfcStep.STEP_ID = routerStep.STEP_ID OR sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL)
-			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (t1."CurrentOperationBo" = routerOperation.OPERATION_BO OR t1."CurrentOperationBo" IS NULL AND routerOperation.OPERATION_BO IS NULL)
-			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND 'T' = customFields_1.VALUE
+			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO = routerStep.ROUTER_BO AND sfcRouter.ROUTER_BO IS NOT NULL AND routerStep.ROUTER_BO IS NOT NULL OR sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL) AND (sfcStep.STEP_ID = routerStep.STEP_ID AND sfcStep.STEP_ID IS NOT NULL AND routerStep.STEP_ID IS NOT NULL OR sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL)
+			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND routerOperation.ROUTER_STEP_BO IS NOT NULL AND (t1."CurrentOperationBo" = routerOperation.OPERATION_BO AND t1."CurrentOperationBo" IS NOT NULL AND routerOperation.OPERATION_BO IS NOT NULL OR t1."CurrentOperationBo" IS NULL AND routerOperation.OPERATION_BO IS NULL)
+			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND customFields_1.HANDLE IS NOT NULL AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND customFields_1.ATTRIBUTE IS NOT NULL AND 'T' = customFields_1.VALUE AND customFields_1.VALUE IS NOT NULL
 			INNER JOIN ROUTER router_1 ON sfcRouter.ROUTER_BO = router_1.HANDLE
 	WHERE
-		sfcRouter.COMPLETED = 'false' AND sfcRouter.IN_USE = 'true' OR
-		sfcRouter.COMPLETED = 'true' AND router_1.ROUTER_TYPE = 'U'
+		sfcRouter.COMPLETED = 'false' AND sfcRouter.COMPLETED IS NOT NULL AND sfcRouter.IN_USE = 'true' AND sfcRouter.IN_USE IS NOT NULL OR
+		sfcRouter.COMPLETED = 'true' AND sfcRouter.COMPLETED IS NOT NULL AND router_1.ROUTER_TYPE = 'U' AND router_1.ROUTER_TYPE IS NOT NULL
 ),
 "GetAdditionalData"
 (
@@ -1229,19 +1229,19 @@ AS
 		usr_1.BADGE_NUMBER
 	FROM
 		"FilterByTestOperation" t2
-			LEFT JOIN SITE site_1 ON site_1.SITE = t2."Parent_Site" OR site_1.SITE IS NULL AND t2."Parent_Site" IS NULL
-			LEFT JOIN USR usr_1 ON usr_1.HANDLE = t2."Parent_UserBo"
-			LEFT JOIN SHOP_ORDER shopOrder ON shopOrder.HANDLE = t2."Parent_ShopOrderBo"
-			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = t2."Parent_ResourceBo"
-			LEFT JOIN WORK_CENTER workCenter ON workCenter.HANDLE = t2."Parent_WorkCenterBo"
-			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = t2."Parent_WorkCenterBo" OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND t2."Parent_WorkCenterBo" IS NULL
-			LEFT JOIN WORK_CENTER line ON line.HANDLE = workCenterMember.WORK_CENTER_BO
-			LEFT JOIN ITEM item_1 ON item_1.HANDLE = t2."Parent_ItemBo"
-			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON itemGroupMember.ITEM_BO = t2."Parent_ItemBo" OR itemGroupMember.ITEM_BO IS NULL AND t2."Parent_ItemBo" IS NULL
-			LEFT JOIN ITEM_GROUP itemGroup ON itemGroup.HANDLE = itemGroupMember.ITEM_GROUP_BO
-			LEFT JOIN CUSTOM_FIELDS customField ON (customField.HANDLE = t2."Parent_ItemBo" OR customField.HANDLE IS NULL AND t2."Parent_ItemBo" IS NULL) AND customField.ATTRIBUTE = 'PRODUCT_LINE'
-			LEFT JOIN CUSTOM_FIELDS customField2 ON (customField2.HANDLE = t2."Parent_ItemBo" OR customField2.HANDLE IS NULL AND t2."Parent_ItemBo" IS NULL) AND customField2.ATTRIBUTE = 'SPART'
-			LEFT JOIN CUSTOM_FIELDS customField3 ON customField3.HANDLE = t2."RouterOperationBo" AND customField3.ATTRIBUTE = 'TEST_CATEGORY'
+			LEFT JOIN SITE site_1 ON site_1.SITE = t2."Parent_Site" AND site_1.SITE IS NOT NULL AND t2."Parent_Site" IS NOT NULL OR site_1.SITE IS NULL AND t2."Parent_Site" IS NULL
+			LEFT JOIN USR usr_1 ON usr_1.HANDLE = t2."Parent_UserBo" AND t2."Parent_UserBo" IS NOT NULL
+			LEFT JOIN SHOP_ORDER shopOrder ON shopOrder.HANDLE = t2."Parent_ShopOrderBo" AND t2."Parent_ShopOrderBo" IS NOT NULL
+			LEFT JOIN RESRCE resrce_1 ON resrce_1.HANDLE = t2."Parent_ResourceBo" AND t2."Parent_ResourceBo" IS NOT NULL
+			LEFT JOIN WORK_CENTER workCenter ON workCenter.HANDLE = t2."Parent_WorkCenterBo" AND t2."Parent_WorkCenterBo" IS NOT NULL
+			LEFT JOIN WORK_CENTER_MEMBER workCenterMember ON workCenterMember.WORK_CENTER_OR_RESOURCE_GBO = t2."Parent_WorkCenterBo" AND workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NOT NULL AND t2."Parent_WorkCenterBo" IS NOT NULL OR workCenterMember.WORK_CENTER_OR_RESOURCE_GBO IS NULL AND t2."Parent_WorkCenterBo" IS NULL
+			LEFT JOIN WORK_CENTER line ON line.HANDLE = workCenterMember.WORK_CENTER_BO AND workCenterMember.WORK_CENTER_BO IS NOT NULL
+			LEFT JOIN ITEM item_1 ON item_1.HANDLE = t2."Parent_ItemBo" AND t2."Parent_ItemBo" IS NOT NULL
+			LEFT JOIN ITEM_GROUP_MEMBER itemGroupMember ON itemGroupMember.ITEM_BO = t2."Parent_ItemBo" AND itemGroupMember.ITEM_BO IS NOT NULL AND t2."Parent_ItemBo" IS NOT NULL OR itemGroupMember.ITEM_BO IS NULL AND t2."Parent_ItemBo" IS NULL
+			LEFT JOIN ITEM_GROUP itemGroup ON itemGroup.HANDLE = itemGroupMember.ITEM_GROUP_BO AND itemGroupMember.ITEM_GROUP_BO IS NOT NULL
+			LEFT JOIN CUSTOM_FIELDS customField ON (customField.HANDLE = t2."Parent_ItemBo" AND customField.HANDLE IS NOT NULL AND t2."Parent_ItemBo" IS NOT NULL OR customField.HANDLE IS NULL AND t2."Parent_ItemBo" IS NULL) AND customField.ATTRIBUTE = 'PRODUCT_LINE' AND customField.ATTRIBUTE IS NOT NULL
+			LEFT JOIN CUSTOM_FIELDS customField2 ON (customField2.HANDLE = t2."Parent_ItemBo" AND customField2.HANDLE IS NOT NULL AND t2."Parent_ItemBo" IS NOT NULL OR customField2.HANDLE IS NULL AND t2."Parent_ItemBo" IS NULL) AND customField2.ATTRIBUTE = 'SPART' AND customField2.ATTRIBUTE IS NOT NULL
+			LEFT JOIN CUSTOM_FIELDS customField3 ON customField3.HANDLE = t2."RouterOperationBo" AND customField3.HANDLE IS NOT NULL AND customField3.ATTRIBUTE = 'TEST_CATEGORY' AND customField3.ATTRIBUTE IS NOT NULL
 )
 SELECT
 	item_2."SiteDescription",

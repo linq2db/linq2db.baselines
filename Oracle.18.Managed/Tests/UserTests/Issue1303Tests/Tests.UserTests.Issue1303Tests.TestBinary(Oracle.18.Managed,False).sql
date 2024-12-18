@@ -70,7 +70,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = HEXTORAW('010203')
+	t1."Array" = HEXTORAW('010203') AND t1."Array" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
@@ -83,7 +83,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = HEXTORAW('0405')
+	t1."Binary" = HEXTORAW('0405') AND t1."Binary" IS NOT NULL
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

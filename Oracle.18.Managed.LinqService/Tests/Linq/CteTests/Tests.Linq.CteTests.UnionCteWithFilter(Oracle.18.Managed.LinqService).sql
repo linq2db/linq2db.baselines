@@ -216,7 +216,8 @@ FROM
 			"BooksCte" t1
 	) b_1
 WHERE
-	b_1."Name" = 'Steven' OR b_1."Title" = 'Something'
+	b_1."Name" = 'Steven' AND b_1."Name" IS NOT NULL OR
+	b_1."Title" = 'Something' AND b_1."Title" IS NOT NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
