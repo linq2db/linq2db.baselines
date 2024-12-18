@@ -87,7 +87,7 @@ SELECT
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = ?
+	[t1].[GuidValue] = ? AND [t1].[GuidValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -221,7 +221,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = ?
+	[t1].[GuidValue] = ? AND [t1].[GuidValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -235,7 +235,7 @@ SELECT TOP 1
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = ?
+	[t1].[GuidValue] = ? AND [t1].[GuidValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

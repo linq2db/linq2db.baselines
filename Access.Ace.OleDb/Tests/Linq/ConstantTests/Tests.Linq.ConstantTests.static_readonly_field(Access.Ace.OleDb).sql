@@ -54,7 +54,8 @@ FROM
 	[TestConstantsData] [e]
 WHERE
 	[e].[GuidValue] = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}} AND
-	[e].[GuidNullableValue] = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
+	[e].[GuidNullableValue] = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}} AND
+	[e].[GuidNullableValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

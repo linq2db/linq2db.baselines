@@ -13,7 +13,7 @@ FROM
 		FROM
 			[GrandChild] [t1]
 	) [m_1]
-		INNER JOIN [GrandChild] [d] ON (([m_1].[ParentID] = [d].[ParentID] + 1 OR [m_1].[ParentID] IS NULL AND [d].[ParentID] IS NULL) AND ([m_1].[ChildID] = [d].[ChildID] OR [m_1].[ChildID] IS NULL AND [d].[ChildID] IS NULL))
+		INNER JOIN [GrandChild] [d] ON (([m_1].[ParentID] = [d].[ParentID] + 1 AND [m_1].[ParentID] IS NOT NULL AND [d].[ParentID] IS NOT NULL OR [m_1].[ParentID] IS NULL AND [d].[ParentID] IS NULL) AND ([m_1].[ChildID] = [d].[ChildID] AND [m_1].[ChildID] IS NOT NULL AND [d].[ChildID] IS NOT NULL OR [m_1].[ChildID] IS NULL AND [d].[ChildID] IS NULL))
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

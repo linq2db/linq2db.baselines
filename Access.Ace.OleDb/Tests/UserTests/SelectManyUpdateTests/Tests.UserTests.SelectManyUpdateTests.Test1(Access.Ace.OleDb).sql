@@ -9,5 +9,6 @@ UPDATE
 SET
 	[a_Values].[Value1] = @Value1
 WHERE
-	[x].[ParentID] IN (0, 0) AND [x].[ParentID] = [a_Values].[Value1]
+	[x].[ParentID] IN (0, 0) AND [x].[ParentID] = [a_Values].[Value1] AND
+	[a_Values].[Value1] IS NOT NULL
 

@@ -49,6 +49,7 @@ SET
 WHERE
 	[c_2].[ChildID] = @id AND
 	[a_Parent].[Value1] = 1 AND
+	[a_Parent].[Value1] IS NOT NULL AND
 	[cross_1].[ParentID_1] = [c_2].[ParentID] AND
 	[cross_1].[ChildID] = [c_2].[ChildID]
 

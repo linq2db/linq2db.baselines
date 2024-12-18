@@ -13,7 +13,14 @@ FROM
 					[Child] [a_Children]
 				WHERE
 					[g_1].[ParentID] = [a_Children].[ParentID]
-			) > 3, True, False) as [Key_1]
+			) > 3 AND (
+				SELECT
+					AVG([a_Children].[ParentID])
+				FROM
+					[Child] [a_Children]
+				WHERE
+					[g_1].[ParentID] = [a_Children].[ParentID]
+			) IS NOT NULL, True, False) as [Key_1]
 		FROM
 			[Parent] [g_1]
 		WHERE
