@@ -115,7 +115,7 @@ FROM
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
-	[a_Book].[Discriminator] = N'Roman'
+	[a_Book].[Discriminator] = N'Roman' AND [a_Book].[Discriminator] IS NOT NULL
 INTERSECT
 SELECT
 	[a_Book_1].[BookId],
@@ -125,7 +125,7 @@ FROM
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 WHERE
-	[a_Book_1].[Discriminator] = N'Novel'
+	[a_Book_1].[Discriminator] = N'Novel' AND [a_Book_1].[Discriminator] IS NOT NULL
 
 BeforeExecute
 BeginTransaction(RepeatableRead)

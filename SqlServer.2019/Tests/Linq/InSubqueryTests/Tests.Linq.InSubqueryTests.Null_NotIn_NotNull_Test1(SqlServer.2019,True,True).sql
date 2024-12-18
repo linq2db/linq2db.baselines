@@ -63,7 +63,7 @@ WHERE
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[t].[ID] = [p].[ID]
+			[t].[ID] = [p].[ID] AND [t].[ID] IS NOT NULL
 	)
 
 BeforeExecute
