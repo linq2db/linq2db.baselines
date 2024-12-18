@@ -15,5 +15,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	"t1"."DateTimeValue" = CAST('2009-09-27' AS timestamp)
+	"t1"."DateTimeValue" = CAST('2009-09-27' AS timestamp) AND
+	"t1"."DateTimeValue" IS NOT NULL
 

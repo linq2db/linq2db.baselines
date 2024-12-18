@@ -8,5 +8,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = 1 AND "p"."Value1" * 100 > 0
+	"p"."ParentID" = 1 AND "p"."Value1" * 100 > 0 AND "p"."Value1" IS NOT NULL
 

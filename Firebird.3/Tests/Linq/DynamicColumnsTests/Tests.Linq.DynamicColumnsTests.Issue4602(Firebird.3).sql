@@ -86,7 +86,7 @@ FROM
 	"DynamicParent" "it"
 		LEFT JOIN "DynamicChild" "a_Child" ON "it".ID = "a_Child"."ParentID"
 WHERE
-	"a_Child".ID = 123
+	"a_Child".ID = 123 AND "a_Child".ID IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

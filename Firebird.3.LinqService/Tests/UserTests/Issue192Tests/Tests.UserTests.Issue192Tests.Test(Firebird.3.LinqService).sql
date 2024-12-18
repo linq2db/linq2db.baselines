@@ -95,7 +95,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = @cond
+	"t1"."GuidValue" = @cond AND "t1"."GuidValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -239,7 +239,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = @GuidValue
+	"t1"."GuidValue" = @GuidValue AND "t1"."GuidValue" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
@@ -254,7 +254,7 @@ SELECT
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = @GuidValue
+	"t1"."GuidValue" = @GuidValue AND "t1"."GuidValue" IS NOT NULL
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute

@@ -40,7 +40,7 @@ UPDATE
 SET
 	"Name" = 'new_name'
 WHERE
-	"x"."EmployeeId" = 1
+	"x"."EmployeeId" = 1 AND "x"."EmployeeId" IS NOT NULL
 ORDER BY
 	"x"."EmployeeId"
 ROWS @take

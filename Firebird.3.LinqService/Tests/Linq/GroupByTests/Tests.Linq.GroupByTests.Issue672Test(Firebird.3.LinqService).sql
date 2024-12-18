@@ -121,8 +121,10 @@ FROM
 		FROM
 			"Stone" "sG"
 		WHERE
-			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
-			Char_Length("sG"."ImageFullUrl") > 0
+			"sG"."Enabled" = TRUE AND
+			"sG"."Name" NOT STARTING WITH 'level - ' AND
+			Char_Length("sG"."ImageFullUrl") > 0 AND
+			Char_Length("sG"."ImageFullUrl") IS NOT NULL
 		GROUP BY
 			"sG"."Name"
 	) "sG_1"
@@ -136,8 +138,10 @@ FROM
 			FROM
 				"Stone" "s"
 			WHERE
-				"s"."Enabled" = TRUE AND "s"."Name" NOT STARTING WITH 'level - ' AND
-				Char_Length("s"."ImageFullUrl") > 0
+				"s"."Enabled" = TRUE AND
+				"s"."Name" NOT STARTING WITH 'level - ' AND
+				Char_Length("s"."ImageFullUrl") > 0 AND
+				Char_Length("s"."ImageFullUrl") IS NOT NULL
 		) "t1" ON "sG_1"."Name" = "t1"."Name" AND "t1"."rn" <= 1
 
 BeforeExecute

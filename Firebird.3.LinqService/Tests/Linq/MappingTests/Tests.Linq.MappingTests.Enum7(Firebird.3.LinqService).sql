@@ -8,5 +8,5 @@ UPDATE
 SET
 	"Value1" = CAST(@v1 AS Int)
 WHERE
-	"p"."Value1" = CAST(@v1 AS Int)
+	"p"."Value1" = CAST(@v1 AS Int) AND "p"."Value1" IS NOT NULL
 

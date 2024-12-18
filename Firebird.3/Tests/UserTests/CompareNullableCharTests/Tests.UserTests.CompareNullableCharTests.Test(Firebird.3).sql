@@ -48,7 +48,8 @@ FROM
 	"Table1" "current_1",
 	"Table1" "previous"
 WHERE
-	"current_1"."Foeld2" = "previous"."Foeld2" OR "current_1"."Foeld2" IS NULL AND "previous"."Foeld2" IS NULL
+	"current_1"."Foeld2" = "previous"."Foeld2" AND "current_1"."Foeld2" IS NOT NULL AND "previous"."Foeld2" IS NOT NULL OR
+	"current_1"."Foeld2" IS NULL AND "previous"."Foeld2" IS NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

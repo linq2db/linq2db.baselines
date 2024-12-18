@@ -18,7 +18,7 @@ USING (
 	"source_Data"
 )
 ON ("Target"."InheritanceParentId" = "Source"."source_Key1" AND
-("Target"."Name" = "Source"."source_Key2" OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
+("Target"."Name" = "Source"."source_Key2" AND "Target"."Name" IS NOT NULL AND "Source"."source_Key2" IS NOT NULL OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
@@ -59,7 +59,7 @@ USING (
 	"source_Data"
 )
 ON ("Target"."InheritanceParentId" = "Source"."source_Key1" AND
-("Target"."Name" = "Source"."source_Key2" OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
+("Target"."Name" = "Source"."source_Key2" AND "Target"."Name" IS NOT NULL AND "Source"."source_Key2" IS NOT NULL OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE

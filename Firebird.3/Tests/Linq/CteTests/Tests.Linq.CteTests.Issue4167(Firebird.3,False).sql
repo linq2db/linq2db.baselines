@@ -52,7 +52,7 @@ FROM
 		FROM
 			"Issue4167Table" "r"
 		WHERE
-			"r"."Value" = '000001'
+			"r"."Value" = '000001' AND "r"."Value" IS NOT NULL
 		GROUP BY
 			"r"."Value",
 			"r"."EnumValue"

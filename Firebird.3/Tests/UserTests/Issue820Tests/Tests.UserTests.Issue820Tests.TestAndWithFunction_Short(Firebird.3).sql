@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	CAST(@param AS Int) = "t1"."SmallIntValue"
+	CAST(@param AS Int) = "t1"."SmallIntValue" AND "t1"."SmallIntValue" IS NOT NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

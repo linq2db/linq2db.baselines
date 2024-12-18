@@ -23,6 +23,6 @@ WHERE
 				UNION ALL
 				SELECT 'n' FROM rdb$database) "x"
 		WHERE
-			Position("x"."item", "t"."FirstName") - 1 > 0
+			Position("x"."item", "t"."FirstName") - 1 > 0 AND Position("x"."item", "t"."FirstName") IS NOT NULL
 	)
 
