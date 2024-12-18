@@ -131,7 +131,7 @@ SELECT
 		FROM
 			qwerty q
 		WHERE
-			q."Id" = x."y1.q1.ref1"
+			q."Id" = x."y1.q1.ref1" AND x."y1.q1.ref1" IS NOT NULL
 		LIMIT 1
 	)
 FROM

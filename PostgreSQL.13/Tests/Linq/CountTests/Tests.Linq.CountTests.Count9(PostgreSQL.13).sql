@@ -5,9 +5,9 @@ SELECT
 	COUNT(*)
 FROM
 	"Child" p
-		LEFT JOIN "Parent" "a_Parent" ON p."ParentID" = "a_Parent"."ParentID"
+		LEFT JOIN "Parent" "a_Parent" ON p."ParentID" = "a_Parent"."ParentID" AND p."ParentID" IS NOT NULL
 WHERE
-	"a_Parent"."ParentID" = 1
+	"a_Parent"."ParentID" = 1 AND "a_Parent"."ParentID" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -16,5 +16,5 @@ SELECT
 	"a_Parent"."ParentID"
 FROM
 	"Child" ch
-		LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID"
+		LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID" AND ch."ParentID" IS NOT NULL
 

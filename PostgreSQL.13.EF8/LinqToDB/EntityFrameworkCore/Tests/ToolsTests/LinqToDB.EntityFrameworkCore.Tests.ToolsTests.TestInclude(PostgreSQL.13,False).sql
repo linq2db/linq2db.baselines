@@ -52,9 +52,9 @@ FROM
 			"a_Employee"."EmployeeID" as "EmployeeId"
 		FROM
 			"Orders" e
-				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID"
+				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND e."EmployeeID" IS NOT NULL
 	) m_1
-		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID"
+		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID" AND m_1."EmployeeId" IS NOT NULL
 		INNER JOIN "Territories" "a_Territory" ON d."TerritoryID" = "a_Territory"."TerritoryID"
 
 
@@ -134,7 +134,7 @@ SELECT
 	"a_Employee"."PhotoPath"
 FROM
 	"Orders" e
-		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID"
+		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND e."EmployeeID" IS NOT NULL
 
 
 

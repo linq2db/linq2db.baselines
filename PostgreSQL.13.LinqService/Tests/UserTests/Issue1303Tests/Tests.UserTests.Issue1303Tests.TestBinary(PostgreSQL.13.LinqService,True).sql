@@ -54,7 +54,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = E'\\x010203'::bytea
+	t1."Array" = E'\\x010203'::bytea AND t1."Array" IS NOT NULL
 LIMIT 2
 
 BeforeExecute
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = E'\\x0405'::bytea
+	t1."Binary" = E'\\x0405'::bytea AND t1."Binary" IS NOT NULL
 LIMIT 2
 
 BeforeExecute
