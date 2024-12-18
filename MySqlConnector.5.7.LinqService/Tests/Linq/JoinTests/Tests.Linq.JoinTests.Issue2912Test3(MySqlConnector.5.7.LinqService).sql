@@ -25,5 +25,5 @@ SELECT
 	END
 FROM
 	`Parent` `employee`
-		LEFT JOIN `GrandChild` `names_1` ON `employee`.`ParentID` = `names_1`.`ParentID`
+		LEFT JOIN `GrandChild` `names_1` ON `employee`.`ParentID` = `names_1`.`ParentID` AND `names_1`.`ParentID` IS NOT NULL
 

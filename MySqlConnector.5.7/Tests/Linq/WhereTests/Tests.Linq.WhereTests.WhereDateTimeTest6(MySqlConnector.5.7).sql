@@ -15,5 +15,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	Date(`t1`.`DateTimeValue`) = Date(STR_TO_DATE('2009-09-20 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f'))
+	Date(`t1`.`DateTimeValue`) = Date(STR_TO_DATE('2009-09-20 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')) AND
+	Date(`t1`.`DateTimeValue`) IS NOT NULL
 

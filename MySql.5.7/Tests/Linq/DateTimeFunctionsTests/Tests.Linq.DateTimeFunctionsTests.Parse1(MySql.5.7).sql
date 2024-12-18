@@ -2,9 +2,15 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Date(`d`.`DateTimeValue`)
+	`d`.`Date_1`
 FROM
-	`LinqDataTypes` `d`
+	(
+		SELECT
+			Extract(day from `t`.`DateTimeValue`) as `Day_1`,
+			Date(`t`.`DateTimeValue`) as `Date_1`
+		FROM
+			`LinqDataTypes` `t`
+	) `d`
 WHERE
-	Extract(day from `d`.`DateTimeValue`) > 0
+	`d`.`Day_1` > 0 AND `d`.`Day_1` IS NOT NULL
 

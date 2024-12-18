@@ -4,9 +4,15 @@ DECLARE @year Int32
 SET     @year = 2010
 
 SELECT
-	STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `t`
+	(
+		SELECT
+			Extract(year from STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`p`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) as `Year_1`,
+			STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`p`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f') as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	Extract(year from STR_TO_DATE(Concat(CAST(@year AS CHAR(4)), '-', LPad(CAST(`t`.`ID` AS CHAR(2)), 2, '0'), '-01 00:00:00.000'), '%Y-%m-%d %H:%i:%s.%f')) = 2010
+	`t`.`Year_1` = 2010 AND `t`.`Year_1` IS NOT NULL
 

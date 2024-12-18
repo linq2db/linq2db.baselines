@@ -23,6 +23,6 @@ WHERE
 				UNION ALL
 				SELECT 'n') `x`
 		WHERE
-			Locate(`x`.`item`, `t`.`FirstName`) - 1 > 0
+			Locate(`x`.`item`, `t`.`FirstName`) - 1 > 0 AND Locate(`x`.`item`, `t`.`FirstName`) IS NOT NULL
 	)
 

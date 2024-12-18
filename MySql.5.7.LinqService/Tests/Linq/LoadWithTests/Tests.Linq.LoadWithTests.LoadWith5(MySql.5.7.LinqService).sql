@@ -27,8 +27,8 @@ FROM
 			) `t1`
 				INNER JOIN `Child` `d` ON `t1`.`ParentID` = `d`.`ParentID`
 	) `m_1`
-		INNER JOIN `GrandChild` `d_1` ON `m_1`.`ParentID` = `d_1`.`ParentID` AND `m_1`.`ChildID` = `d_1`.`ChildID`
-		LEFT JOIN `Child` `a_Child` ON `d_1`.`ParentID` = `a_Child`.`ParentID` AND `d_1`.`ChildID` = `a_Child`.`ChildID`
+		INNER JOIN `GrandChild` `d_1` ON `m_1`.`ParentID` = `d_1`.`ParentID` AND `d_1`.`ParentID` IS NOT NULL AND `m_1`.`ChildID` = `d_1`.`ChildID` AND `d_1`.`ChildID` IS NOT NULL
+		LEFT JOIN `Child` `a_Child` ON `d_1`.`ParentID` = `a_Child`.`ParentID` AND `d_1`.`ParentID` IS NOT NULL AND `d_1`.`ChildID` = `a_Child`.`ChildID` AND `d_1`.`ChildID` IS NOT NULL
 		LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`
 
 BeforeExecute
@@ -57,7 +57,7 @@ SELECT
 		FROM
 			`GrandChild` `a_GrandChildren`
 		WHERE
-			`p`.`ParentID` = `a_GrandChildren`.`ParentID`
+			`p`.`ParentID` = `a_GrandChildren`.`ParentID` AND `a_GrandChildren`.`ParentID` IS NOT NULL
 	),
 	`p`.`ParentID`,
 	`p`.`Value1`

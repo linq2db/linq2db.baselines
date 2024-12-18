@@ -184,13 +184,13 @@ FROM
 				FROM
 					`Test3799Item` `a_Children`
 				WHERE
-					`item_1`.`Id` = `a_Children`.`ParentId`
+					`item_1`.`Id` = `a_Children`.`ParentId` AND `a_Children`.`ParentId` IS NOT NULL
 				LIMIT 1
 			) as `Children`
 		FROM
 			`Test3799Item` `item_1`
 	) `m_1`
-		INNER JOIN `Test3799Item` `d` ON `m_1`.`Children` = `d`.`ParentId` OR `m_1`.`Children` IS NULL AND `d`.`ParentId` IS NULL
+		INNER JOIN `Test3799Item` `d` ON `m_1`.`Children` = `d`.`ParentId` AND `m_1`.`Children` IS NOT NULL AND `d`.`ParentId` IS NOT NULL OR `m_1`.`Children` IS NULL AND `d`.`ParentId` IS NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -203,7 +203,7 @@ SELECT
 		FROM
 			`Test3799Item` `a_Children`
 		WHERE
-			`item_1`.`Id` = `a_Children`.`ParentId`
+			`item_1`.`Id` = `a_Children`.`ParentId` AND `a_Children`.`ParentId` IS NOT NULL
 		LIMIT 1
 	),
 	(
@@ -212,7 +212,7 @@ SELECT
 		FROM
 			`Test3799Item` `a_Children_1`
 		WHERE
-			`item_1`.`Id` = `a_Children_1`.`ParentId`
+			`item_1`.`Id` = `a_Children_1`.`ParentId` AND `a_Children_1`.`ParentId` IS NOT NULL
 		LIMIT 1
 	)
 FROM

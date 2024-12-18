@@ -858,7 +858,7 @@ FROM
 		FROM
 			`MasterClass` `m_1`
 	) `m_2`
-		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
+		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -875,7 +875,7 @@ FROM
 		FROM
 			`MasterClass` `m_1`
 	) `m_2`
-		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
+		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 ORDER BY
 	`d`.`DetailId`
 
@@ -905,7 +905,7 @@ FROM
 		FROM
 			`MasterClass` `t1`
 	) `m_1`
-		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
+		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId` AND `d`.`MasterId` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

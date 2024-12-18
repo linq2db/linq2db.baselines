@@ -270,11 +270,17 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`d`.`TransactionDate`
+	`d`.`Day_2`
 FROM
-	`Transactions` `d`
+	(
+		SELECT
+			Extract(day from `t`.`TransactionDate`) as `Day_1`,
+			`t`.`TransactionDate` as `Day_2`
+		FROM
+			`Transactions` `t`
+	) `d`
 WHERE
-	Extract(day from `d`.`TransactionDate`) > 0
+	`d`.`Day_1` > 0 AND `d`.`Day_1` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -53,7 +53,7 @@ SELECT
 FROM
 	`BackgroundTask` `task_1`
 WHERE
-	`task_1`.`PersonID` = @personId
+	`task_1`.`PersonID` = @personId AND `task_1`.`PersonID` IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

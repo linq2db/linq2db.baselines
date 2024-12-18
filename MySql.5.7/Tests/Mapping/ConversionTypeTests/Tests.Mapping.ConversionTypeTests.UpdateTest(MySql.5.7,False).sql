@@ -51,7 +51,7 @@ UPDATE
 SET
 	`t`.`Data` = @Data
 WHERE
-	`t`.`Data` = '***XXX***'
+	`t`.`Data` = '***XXX***' AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -65,7 +65,7 @@ UPDATE
 SET
 	`t`.`Data` = @Data
 WHERE
-	`t`.`Data` = @p
+	`t`.`Data` = @p AND `t`.`Data` IS NOT NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
