@@ -341,7 +341,7 @@ FROM
 			GROUP BY
 				`b`.`SecurityClass`,
 				`b`.`InvestorId`
-		) `t1` ON `ip`.`InvestorId` = `t1`.`InvestorId` AND `p`.`SecurityClass` = `t1`.`SecurityClass`
+		) `t1` ON `ip`.`InvestorId` = `t1`.`InvestorId` AND `t1`.`InvestorId` IS NOT NULL AND `p`.`SecurityClass` = `t1`.`SecurityClass`
 GROUP BY
 	`ip`.`InvestorId`,
 	`t1`.`TotalUnits`

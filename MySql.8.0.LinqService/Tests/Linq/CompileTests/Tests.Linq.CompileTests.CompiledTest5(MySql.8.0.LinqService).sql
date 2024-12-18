@@ -11,7 +11,7 @@ SELECT
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @p AND `p`.`Value1` = @p_1
+	`p`.`ParentID` = @p AND `p`.`Value1` = @p_1 AND `p`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

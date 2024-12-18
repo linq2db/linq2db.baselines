@@ -3070,7 +3070,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -3106,7 +3106,7 @@ SELECT
 FROM
 	`AllTypes` `t1`
 WHERE
-	`t1`.`varcharDataType` = '_btest'
+	`t1`.`varcharDataType` = '_btest' AND `t1`.`varcharDataType` IS NOT NULL
 ORDER BY
 	`t1`.`ID`
 LIMIT @take
@@ -3118,7 +3118,7 @@ DELETE
 FROM
 	`AllTypes`
 WHERE
-	`AllTypes`.`varcharDataType` = '_btest'
+	`AllTypes`.`varcharDataType` = '_btest' AND `AllTypes`.`varcharDataType` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -3127,5 +3127,5 @@ DELETE
 FROM
 	`AllTypesNoYear`
 WHERE
-	`AllTypesNoYear`.`varcharDataType` = '_btest'
+	`AllTypesNoYear`.`varcharDataType` = '_btest' AND `AllTypesNoYear`.`varcharDataType` IS NOT NULL
 

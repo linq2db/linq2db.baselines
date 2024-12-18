@@ -42,7 +42,7 @@ SELECT
 FROM
 	`TestInsertOrReplaceTable` `x`
 WHERE
-	`x`.`ID` = 123 AND `x`.`FirstName` = 'John'
+	`x`.`ID` = 123 AND `x`.`FirstName` = 'John' AND `x`.`FirstName` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

@@ -23,7 +23,7 @@ SELECT
 FROM
 	`Issue4192TableNullable` `i`
 WHERE
-	`i`.`ParentId` = @parentId
+	`i`.`ParentId` = @parentId AND `i`.`ParentId` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -39,7 +39,8 @@ UPDATE
 SET
 	`c_1`.`ChildID` = @ChildID
 WHERE
-	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
+	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1 AND
+	`a_Parent`.`Value1` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

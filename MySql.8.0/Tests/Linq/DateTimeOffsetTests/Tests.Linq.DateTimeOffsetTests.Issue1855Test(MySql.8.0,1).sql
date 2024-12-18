@@ -69,7 +69,8 @@ SELECT
 FROM
 	`Issue1855Table` `r`
 WHERE
-	Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) >= @clientSideIn
+	Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) >= @clientSideIn AND
+	Date_Add(`r`.`SomeNullableDateTimeOffset`, Interval @interval Second) IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

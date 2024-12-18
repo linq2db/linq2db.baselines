@@ -90,7 +90,10 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` >= 101 AND `r`.`ID` <= 104
+	`r`.`ID` >= 101 AND
+	`r`.`ID` IS NOT NULL AND
+	`r`.`ID` <= 104 AND
+	`r`.`ID` IS NOT NULL
 ORDER BY
 	`r`.`ID`
 

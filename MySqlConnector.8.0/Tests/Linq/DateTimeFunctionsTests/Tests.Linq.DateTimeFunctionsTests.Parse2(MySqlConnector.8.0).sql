@@ -2,9 +2,15 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	CAST(Concat(Extract(year from `d`.`DateTimeValue`), '-02-24 00:00:00') AS DATETIME)
+	`d`.`Day_2`
 FROM
-	`LinqDataTypes` `d`
+	(
+		SELECT
+			Extract(day from CAST(Concat(Extract(year from `t`.`DateTimeValue`), '-02-24 00:00:00') AS DATETIME)) as `Day_1`,
+			CAST(Concat(Extract(year from `t`.`DateTimeValue`), '-02-24 00:00:00') AS DATETIME) as `Day_2`
+		FROM
+			`LinqDataTypes` `t`
+	) `d`
 WHERE
-	Extract(day from CAST(Concat(Extract(year from `d`.`DateTimeValue`), '-02-24 00:00:00') AS DATETIME)) > 0
+	`d`.`Day_1` > 0 AND `d`.`Day_1` IS NOT NULL
 

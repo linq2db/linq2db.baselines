@@ -60,7 +60,8 @@ SELECT
 			FROM
 				`SampleClass` `sampleClass_1`
 			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+				`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+				LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 		)
 			THEN 1
 		ELSE 0
@@ -78,7 +79,8 @@ SELECT
 FROM
 	`SampleClass` `sampleClass_1`
 WHERE
-	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+	LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -95,7 +97,8 @@ SELECT
 			FROM
 				`SampleClass` `sampleClass_1`
 			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+				`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+				LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 		)
 			THEN 1
 		ELSE 0
@@ -113,7 +116,8 @@ SELECT
 FROM
 	`SampleClass` `sampleClass_1`
 WHERE
-	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+	LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -130,7 +134,8 @@ SELECT
 			FROM
 				`SampleClass` `sampleClass_1`
 			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+				`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+				LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 		)
 			THEN 1
 		ELSE 0
@@ -148,7 +153,8 @@ SELECT
 FROM
 	`SampleClass` `sampleClass_1`
 WHERE
-	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	`sampleClass_1`.`Value` = @test AND `sampleClass_1`.`Value` IS NOT NULL OR
+	LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

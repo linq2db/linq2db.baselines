@@ -51,7 +51,7 @@ SELECT
 FROM
 	`Issue4460Table` `t1`
 WHERE
-	`t1`.`Code` = 'GrandChild'
+	`t1`.`Code` = 'GrandChild' AND `t1`.`Code` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
