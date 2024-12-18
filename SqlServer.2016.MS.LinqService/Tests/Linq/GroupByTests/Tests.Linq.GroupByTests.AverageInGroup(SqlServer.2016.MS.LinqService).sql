@@ -344,11 +344,11 @@ SELECT
 	[g_1].[GroupId],
 	AVG([g_1].[DataValue]),
 	AVG([g_1].[DataValue]),
-	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
+	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND Convert(Int, [g_1].[DataValue]) IS NOT NULL, [g_1].[DataValue], NULL)),
+	AVG(IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND Convert(Int, [g_1].[DataValue]) IS NOT NULL, [g_1].[DataValue], NULL)),
 	AVG(DISTINCT [g_1].[DataValue]),
-	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL)),
-	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0, [g_1].[DataValue], NULL))
+	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND Convert(Int, [g_1].[DataValue]) IS NOT NULL, [g_1].[DataValue], NULL)),
+	AVG(DISTINCT IIF((Convert(Int, [g_1].[DataValue]) % 2) = 0 AND Convert(Int, [g_1].[DataValue]) IS NOT NULL, [g_1].[DataValue], NULL))
 FROM
 	[AggregationData] [g_1]
 WHERE

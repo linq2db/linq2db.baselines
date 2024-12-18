@@ -45,12 +45,12 @@ FROM
 		FROM
 			[Issue4193Person] [x]
 		WHERE
-			[x].[EmployeeId] = 1
+			[x].[EmployeeId] = 1 AND [x].[EmployeeId] IS NOT NULL
 		ORDER BY
 			[x].[EmployeeId]
 	) [t1]
 WHERE
-	[u].[Name] = [t1].[Name] AND ([u].[EmployeeId] = [t1].[EmployeeId] OR [u].[EmployeeId] IS NULL AND [t1].[EmployeeId] IS NULL)
+	[u].[Name] = [t1].[Name] AND ([u].[EmployeeId] = [t1].[EmployeeId] AND [u].[EmployeeId] IS NOT NULL AND [t1].[EmployeeId] IS NOT NULL OR [u].[EmployeeId] IS NULL AND [t1].[EmployeeId] IS NULL)
 
 BeforeExecute
 -- SqlServer.2016

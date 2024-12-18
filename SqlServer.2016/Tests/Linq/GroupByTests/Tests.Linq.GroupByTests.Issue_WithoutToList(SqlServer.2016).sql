@@ -79,7 +79,7 @@ FROM
 			[a_Reference].[Id] as [key_1]
 		FROM
 			[TestAggregateTable] [t1]
-				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id] AND [t1].[ReferenceId] IS NOT NULL
 		GROUP BY
 			[a_Reference].[Id],
 			[t1].[ReferenceId]
@@ -101,7 +101,7 @@ FROM
 						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
 						[TestAggregateTable] [t2]
-							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]
+							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id] AND [t2].[ReferenceId] IS NOT NULL
 				) [t3]
 			GROUP BY
 				[t3].[Id],
@@ -109,7 +109,8 @@ FROM
 				[t3].[hours],
 				[t3].[minutes]
 			HAVING
-				[t3].[group_1] = [m_1].[key_1] OR [t3].[group_1] IS NULL AND [m_1].[key_1] IS NULL
+				[t3].[group_1] = [m_1].[key_1] AND [t3].[group_1] IS NOT NULL AND [m_1].[key_1] IS NOT NULL OR
+				[t3].[group_1] IS NULL AND [m_1].[key_1] IS NULL
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
@@ -123,7 +124,7 @@ SELECT
 	[a_Reference].[Id]
 FROM
 	[TestAggregateTable] [group_1]
-		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
+		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id] AND [group_1].[ReferenceId] IS NOT NULL
 GROUP BY
 	[a_Reference].[Id],
 	[group_1].[ReferenceId]

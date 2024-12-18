@@ -72,7 +72,10 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] <= 103
+	[r].[ID] >= 101 AND
+	[r].[ID] IS NOT NULL AND
+	[r].[ID] <= 103 AND
+	[r].[ID] IS NOT NULL
 ORDER BY
 	[r].[ID]
 
