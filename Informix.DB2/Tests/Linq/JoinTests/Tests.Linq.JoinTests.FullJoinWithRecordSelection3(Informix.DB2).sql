@@ -172,7 +172,7 @@ FROM
 	Tag ft
 		FULL JOIN Fact f ON ft.FactId = f.Id
 WHERE
-	f.Id > 3 OR ft.FactId > 3
+	f.Id > 3 AND f.Id IS NOT NULL OR ft.FactId > 3 AND ft.FactId IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

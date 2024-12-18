@@ -97,7 +97,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	x.Name = 'Special'
+	x.Name = 'Special' AND x.Name IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -155,7 +155,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	x.Name = 'Special'
+	x.Name = 'Special' AND x.Name IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

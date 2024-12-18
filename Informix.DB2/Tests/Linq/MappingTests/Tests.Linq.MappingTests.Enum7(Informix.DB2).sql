@@ -10,5 +10,5 @@ UPDATE
 SET
 	Value1 = @v1
 WHERE
-	p.Value1 = @v1
+	p.Value1 = @v1 AND p.Value1 IS NOT NULL
 

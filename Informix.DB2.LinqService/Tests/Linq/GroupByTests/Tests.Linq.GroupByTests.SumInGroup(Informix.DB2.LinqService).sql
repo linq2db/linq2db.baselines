@@ -344,20 +344,24 @@ SELECT
 	SUM(g_1.DataValue),
 	SUM(g_1.DataValue),
 	SUM(CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN g_1.DataValue
+		WHEN Mod(g_1.DataValue, 2) = 0 AND Mod(g_1.DataValue, 2) IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	SUM(CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN g_1.DataValue
+		WHEN Mod(g_1.DataValue, 2) = 0 AND Mod(g_1.DataValue, 2) IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	SUM(DISTINCT g_1.DataValue),
 	SUM(DISTINCT CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN g_1.DataValue
+		WHEN Mod(g_1.DataValue, 2) = 0 AND Mod(g_1.DataValue, 2) IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	SUM(DISTINCT CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN g_1.DataValue
+		WHEN Mod(g_1.DataValue, 2) = 0 AND Mod(g_1.DataValue, 2) IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END)
 FROM

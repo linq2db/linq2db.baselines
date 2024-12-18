@@ -17,5 +17,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	Extend(t.DateTimeValue, Year to Day) > @Date
+	Extend(t.DateTimeValue, Year to Day) > @Date AND Extend(t.DateTimeValue, Year to Day) IS NOT NULL
 

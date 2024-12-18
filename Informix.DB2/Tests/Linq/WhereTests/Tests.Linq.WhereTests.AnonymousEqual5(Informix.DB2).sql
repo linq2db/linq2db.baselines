@@ -11,5 +11,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = @ParentID AND p.Value1 = @Value1
+	p.ParentID = @ParentID AND p.Value1 = @Value1 AND p.Value1 IS NOT NULL
 

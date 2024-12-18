@@ -218,11 +218,12 @@ BeforeExecute
 SELECT
 	x.Id,
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'::BOOLEAN
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	CASE
-		WHEN x.StringProp = '2' THEN 't'::BOOLEAN
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	x.StringProp,
@@ -233,15 +234,23 @@ FROM
 	ConditionalData x
 WHERE
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
-		WHEN x.StringProp = '2' THEN x.StringProp
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN '2'
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN x.StringProp
 		ELSE x.StringProp || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
-		WHEN x.StringProp = '2' THEN 1
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN NULL
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 1
 		ELSE 2
-	END = 2
+	END = 2 AND
+	CASE
+		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
+			THEN NULL
+		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 1
+		ELSE 2
+	END IS NOT NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

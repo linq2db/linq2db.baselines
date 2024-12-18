@@ -43,7 +43,7 @@ AS
 		t1.name
 	FROM
 		Dto t1
-			INNER JOIN d recur ON recur.id = t1.parent_id
+			INNER JOIN d recur ON recur.id = t1.parent_id AND t1.parent_id IS NOT NULL
 )
 SELECT
 	t2.id,

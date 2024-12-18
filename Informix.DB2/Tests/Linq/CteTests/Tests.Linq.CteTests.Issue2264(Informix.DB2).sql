@@ -51,7 +51,7 @@ AS
 		t1.ParentId
 	FROM
 		TestFolder t1
-			INNER JOIN CTE r ON t1.ParentId = r.Id
+			INNER JOIN CTE r ON t1.ParentId = r.Id AND t1.ParentId IS NOT NULL
 )
 SELECT
 	t2.Level_1,
