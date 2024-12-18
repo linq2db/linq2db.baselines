@@ -256,7 +256,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
-						[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+						[y].[Id] = [x_19].[InfeedAdviceID] AND [x_19].[InfeedAdviceID] IS NOT NULL AND
+						[y].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -508,7 +509,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y]
 					WHERE
-						[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+						[y].[Id] = [x_19].[InfeedAdviceID] AND [x_19].[InfeedAdviceID] IS NOT NULL AND
+						[y].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -574,7 +576,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_1]
 					WHERE
-						[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
+						[y_1].[Id] = [x_22].[InfeedAdviceID] AND [x_22].[InfeedAdviceID] IS NOT NULL AND
+						[y_1].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -640,7 +643,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_2]
 					WHERE
-						[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
+						[y_2].[Id] = [x_25].[InfeedAdviceID] AND [x_25].[InfeedAdviceID] IS NOT NULL AND
+						[y_2].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -706,7 +710,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_3]
 					WHERE
-						[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
+						[y_3].[Id] = [x_28].[InfeedAdviceID] AND [x_28].[InfeedAdviceID] IS NOT NULL AND
+						[y_3].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -772,7 +777,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_4]
 					WHERE
-						[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
+						[y_4].[Id] = [x_31].[InfeedAdviceID] AND [x_31].[InfeedAdviceID] IS NOT NULL AND
+						[y_4].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -838,7 +844,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_5]
 					WHERE
-						[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
+						[y_5].[Id] = [x_34].[InfeedAdviceID] AND [x_34].[InfeedAdviceID] IS NOT NULL AND
+						[y_5].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -904,7 +911,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_6]
 					WHERE
-						[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
+						[y_6].[Id] = [x_37].[InfeedAdviceID] AND [x_37].[InfeedAdviceID] IS NOT NULL AND
+						[y_6].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1
@@ -970,7 +978,8 @@ SELECT
 					FROM
 						[InfeedAdvicePositionDTO] [y_7]
 					WHERE
-						[y_7].[Id] = [x_40].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
+						[y_7].[Id] = [x_40].[InfeedAdviceID] AND [x_40].[InfeedAdviceID] IS NOT NULL AND
+						[y_7].[InfeedAdviceType] = 0
 				))
 		)
 			THEN 1

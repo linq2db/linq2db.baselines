@@ -73,17 +73,17 @@ SET
 	[u].[col3] = REPLACE([x].[col3], N'auth.', N''),
 	[u].[col4] = [x].[col4],
 	[u].[col5] = CASE
-		WHEN [x].[col3] = N'empty' THEN N'1'
+		WHEN [x].[col3] = N'empty' AND [x].[col3] IS NOT NULL THEN N'1'
 		ELSE N'0'
 	END,
 	[u].[col6] = CASE
-		WHEN [x].[col3] = N'empty' THEN N''
+		WHEN [x].[col3] = N'empty' AND [x].[col3] IS NOT NULL THEN N''
 		ELSE CAST([y1].[id] AS NVarChar(11))
 	END
 FROM
 	[gt_s_one_target] [u],
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
+		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) AND Upper(REPLACE([x].[col3], N'auth.', N'')) IS NOT NULL AND Upper([y1].[code]) IS NOT NULL OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
 WHERE
 	[x].[id] = [u].[id]
 

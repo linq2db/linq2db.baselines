@@ -23,6 +23,7 @@ WHERE
 				UNION ALL
 				SELECT N'n') [x]
 		WHERE
-			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
+			CharIndex([x].[item], [t].[FirstName]) - 1 > 0 AND
+			CharIndex([x].[item], [t].[FirstName]) IS NOT NULL
 	)
 

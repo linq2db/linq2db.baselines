@@ -43,7 +43,7 @@ SELECT TOP (2)
 FROM
 	[Issue4226Table] [e]
 WHERE
-	DatePart(month, [e].[Date]) = DatePart(month, CAST('2020-02-29T00:00:00.000' AS DATETIME)) OR
+	DatePart(month, [e].[Date]) = DatePart(month, CAST('2020-02-29T00:00:00.000' AS DATETIME)) AND DatePart(month, [e].[Date]) IS NOT NULL AND DatePart(month, CAST('2020-02-29T00:00:00.000' AS DATETIME)) IS NOT NULL OR
 	DatePart(month, [e].[Date]) IS NULL AND DatePart(month, CAST('2020-02-29T00:00:00.000' AS DATETIME)) IS NULL
 
 BeforeExecute

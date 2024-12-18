@@ -46,7 +46,7 @@ UPDATE
 SET
 	[Data] = N'***OOO***'
 WHERE
-	[TrimTestTable].[Data] = N'***XXX***'
+	[TrimTestTable].[Data] = N'***XXX***' AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -56,7 +56,7 @@ UPDATE
 SET
 	[Data] = N'***SSS***'
 WHERE
-	[TrimTestTable].[Data] = N'***HHH***'
+	[TrimTestTable].[Data] = N'***HHH***' AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
-		INNER JOIN [GrandChild] [a_GrandChildren] ON [p].[ParentID] = [a_GrandChildren].[ParentID]
+		INNER JOIN [GrandChild] [a_GrandChildren] ON [p].[ParentID] = [a_GrandChildren].[ParentID] AND [a_GrandChildren].[ParentID] IS NOT NULL
 

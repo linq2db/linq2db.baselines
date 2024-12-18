@@ -17,5 +17,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	DateAdd(dd, DateDiff(dd, 0, [t].[DateTimeValue]), 0) > @Date
+	DateAdd(dd, DateDiff(dd, 0, [t].[DateTimeValue]), 0) > @Date AND
+	DateAdd(dd, DateDiff(dd, 0, [t].[DateTimeValue]), 0) IS NOT NULL
 
