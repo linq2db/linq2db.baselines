@@ -35,6 +35,8 @@ UPDATE
 SET
 	[a_Parent].[Value1] = 5
 WHERE
-	[child_1].[ChildID] = 10000 AND [a_Parent].[ParentID] > 0 AND
+	[child_1].[ChildID] = 10000 AND
+	[a_Parent].[ParentID] > 0 AND
+	[a_Parent].[ParentID] IS NOT NULL AND
 	[child_1].[ParentID] = [a_Parent].[ParentID]
 

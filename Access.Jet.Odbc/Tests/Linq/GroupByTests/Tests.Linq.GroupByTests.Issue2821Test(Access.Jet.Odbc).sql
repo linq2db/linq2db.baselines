@@ -30,13 +30,15 @@ FROM
 				[LinqDataTypes] [t]
 			WHERE
 				IIF([t].[DateTimeValue] IS NULL, [t].[DateTimeValue2], [t].[DateTimeValue]) <= ? AND
-				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= ?)
+				IIF([t].[DateTimeValue] IS NULL, [t].[DateTimeValue2], [t].[DateTimeValue]) IS NOT NULL AND
+				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= ? AND [t].[DateTimeValue2] IS NOT NULL)
 			GROUP BY
 				[t].[ID]
-		) [t1] ON ([o].[ID] = [t1].[ID] AND ([o].[DateTimeValue2] = [t1].[c1] OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL))
+		) [t1] ON ([o].[ID] = [t1].[ID] AND ([o].[DateTimeValue2] = [t1].[c1] AND [o].[DateTimeValue2] IS NOT NULL AND [t1].[c1] IS NOT NULL OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL))
 WHERE
 	IIF([o].[DateTimeValue] IS NULL, [o].[DateTimeValue2], [o].[DateTimeValue]) <= ? AND
-	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= ?)
+	IIF([o].[DateTimeValue] IS NULL, [o].[DateTimeValue2], [o].[DateTimeValue]) IS NOT NULL AND
+	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= ? AND [o].[DateTimeValue2] IS NOT NULL)
 ORDER BY
 	[o].[DateTimeValue2]
 

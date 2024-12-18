@@ -264,11 +264,11 @@ BeforeExecute
 
 UPDATE
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id])
+		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id] AND [v].[RelationId] IS NOT NULL)
 SET
 	[v].[Value1] = [a_Relation].[RelatedValue3]
 WHERE
-	[a_Relation].[RelatedValue1] = 11
+	[a_Relation].[RelatedValue1] = 11 AND [a_Relation].[RelatedValue1] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -277,9 +277,9 @@ SELECT TOP 1
 	[v].[Value1]
 FROM
 	[UpdatedEntities] [v]
-		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id])
+		LEFT JOIN [UpdateRelation] [a_Relation] ON ([v].[RelationId] = [a_Relation].[id] AND [v].[RelationId] IS NOT NULL)
 WHERE
-	[a_Relation].[RelatedValue1] = 11
+	[a_Relation].[RelatedValue1] = 11 AND [a_Relation].[RelatedValue1] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

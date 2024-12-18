@@ -53,7 +53,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Array] = 0x010203
+	[t1].[Array] = 0x010203 AND [t1].[Array] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -65,7 +65,7 @@ SELECT TOP 2
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Binary] = 0x0405
+	[t1].[Binary] = 0x0405 AND [t1].[Binary] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

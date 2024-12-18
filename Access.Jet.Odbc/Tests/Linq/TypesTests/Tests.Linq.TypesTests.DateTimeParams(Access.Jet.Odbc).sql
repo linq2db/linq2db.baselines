@@ -8,7 +8,7 @@ SELECT TOP 1
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] > ?
+	[t].[DateTimeValue] > ? AND [t].[DateTimeValue] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -20,5 +20,5 @@ SELECT TOP 1
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] > ?
+	[t].[DateTimeValue] > ? AND [t].[DateTimeValue] IS NOT NULL
 

@@ -57,7 +57,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -71,7 +72,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -85,7 +87,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -99,7 +102,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -113,7 +117,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -127,7 +132,8 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
+	[sampleClass_1].[Value] = ? AND [sampleClass_1].[Value] IS NOT NULL OR
+	[sampleClass_1].[Value2] LIKE ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

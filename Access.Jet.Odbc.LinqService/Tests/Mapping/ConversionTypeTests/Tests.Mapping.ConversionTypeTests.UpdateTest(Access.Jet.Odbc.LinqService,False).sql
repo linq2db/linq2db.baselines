@@ -92,7 +92,7 @@ UPDATE
 SET
 	[t].[Data] = ?
 WHERE
-	[t].[Data] = '***XXX***'
+	[t].[Data] = '***XXX***' AND [t].[Data] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
@@ -106,7 +106,7 @@ UPDATE
 SET
 	[t].[Data] = ?
 WHERE
-	[t].[Data] = ?
+	[t].[Data] = ? AND [t].[Data] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

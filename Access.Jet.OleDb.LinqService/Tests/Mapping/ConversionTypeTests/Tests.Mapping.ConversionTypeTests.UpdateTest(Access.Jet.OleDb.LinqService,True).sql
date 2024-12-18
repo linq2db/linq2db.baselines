@@ -74,7 +74,7 @@ UPDATE
 SET
 	[t].[Data] = '***OOO***'
 WHERE
-	[t].[Data] = '***XXX***'
+	[t].[Data] = '***XXX***' AND [t].[Data] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -84,7 +84,7 @@ UPDATE
 SET
 	[t].[Data] = '***SSS***'
 WHERE
-	[t].[Data] = '***HHH***'
+	[t].[Data] = '***HHH***' AND [t].[Data] IS NOT NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
