@@ -10,5 +10,5 @@ FROM
 			UNION ALL
 			SELECT 1, 'Doe', p."LastName" FROM sys.dual) n
 WHERE
-	p."LastName" = n."Name"
+	p."LastName" = n."Name" AND n."Name" IS NOT NULL
 

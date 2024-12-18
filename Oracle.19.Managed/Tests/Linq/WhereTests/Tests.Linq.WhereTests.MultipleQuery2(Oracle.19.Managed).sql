@@ -26,5 +26,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."MiddleName" = :str
+	p."MiddleName" = :str AND p."MiddleName" IS NOT NULL
 

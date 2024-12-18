@@ -38,7 +38,10 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r.ID = 101 AND r."BigIntValue" = 12
+	r.ID = 101 AND
+	r.ID IS NOT NULL AND
+	r."BigIntValue" = 12 AND
+	r."BigIntValue" IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

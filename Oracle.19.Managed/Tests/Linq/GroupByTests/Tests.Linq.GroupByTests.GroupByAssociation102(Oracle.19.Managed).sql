@@ -11,7 +11,11 @@ GROUP BY
 	a_Parent."Value1"
 HAVING
 	COUNT(CASE
-		WHEN g_1."ChildID" >= 20 THEN 1
+		WHEN g_1."ChildID" >= 20 AND g_1."ChildID" IS NOT NULL THEN 1
 		ELSE NULL
-	END) > 2
+	END) > 2 AND
+	COUNT(CASE
+		WHEN g_1."ChildID" >= 20 AND g_1."ChildID" IS NOT NULL THEN 1
+		ELSE NULL
+	END) IS NOT NULL
 

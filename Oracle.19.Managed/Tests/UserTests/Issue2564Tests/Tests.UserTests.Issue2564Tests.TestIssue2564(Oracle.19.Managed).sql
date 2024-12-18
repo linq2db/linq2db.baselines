@@ -54,7 +54,8 @@ FROM
 			tgGroup."TimestampGone" IS NOT NULL AND
 			tgGroup."TimestampGenerated" >= :from_1 AND
 			tgGroup."TimestampGenerated" <= :to_1 AND
-			tgGroup."MessageClassName" = 'Error'
+			tgGroup."MessageClassName" = 'Error' AND
+			tgGroup."MessageClassName" IS NOT NULL
 	) tgGroup_1
 GROUP BY
 	tgGroup_1."ExternID1",

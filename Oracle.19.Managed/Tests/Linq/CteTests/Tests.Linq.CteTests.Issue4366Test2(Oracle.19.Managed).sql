@@ -62,7 +62,7 @@ AS
 		t1."FullName"
 	FROM
 		"Dto" t1
-			INNER JOIN "d" recur ON recur."Dto_id" = t1."parent_id"
+			INNER JOIN "d" recur ON recur."Dto_id" = t1."parent_id" AND t1."parent_id" IS NOT NULL
 )
 SELECT
 	t2."Dto_id",

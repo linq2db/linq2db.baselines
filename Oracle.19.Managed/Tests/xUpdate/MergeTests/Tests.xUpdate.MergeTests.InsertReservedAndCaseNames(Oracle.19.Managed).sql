@@ -254,7 +254,7 @@ VALUES
 	"Source"."source_Source",
 	"Source"."source_case"
 )
- WHERE "Source"."source_Source" = 216
+ WHERE "Source"."source_Source" = 216 AND "Source"."source_Source" IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

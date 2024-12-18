@@ -108,7 +108,7 @@ UPDATE
 SET
 	"Data" = :Data
 WHERE
-	t."Data" = '***XXX***'
+	t."Data" = '***XXX***' AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -122,7 +122,7 @@ UPDATE
 SET
 	"Data" = :Data
 WHERE
-	t."Data" = :p
+	t."Data" = :p AND t."Data" IS NOT NULL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
