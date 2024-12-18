@@ -273,20 +273,24 @@ SELECT
 	minOrNull(g_1.DataValue),
 	minOrNull(g_1.DataValue),
 	minOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	minOrNull(CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	minOrNull(DISTINCT g_1.DataValue),
 	minOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END),
 	minOrNull(DISTINCT CASE
-		WHEN g_1.DataValue % 2 = toFloat64(0) THEN g_1.DataValue
+		WHEN g_1.DataValue % 2 = toFloat64(0) AND g_1.DataValue IS NOT NULL
+			THEN g_1.DataValue
 		ELSE NULL
 	END)
 FROM

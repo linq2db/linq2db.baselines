@@ -16,5 +16,5 @@ SELECT
 FROM
 	Parent t
 WHERE
-	t.Value1 = 1
+	t.Value1 = 1 AND t.Value1 IS NOT NULL
 

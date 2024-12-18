@@ -119,7 +119,7 @@ FROM
 				cc.Code as Code
 			FROM
 				Issue4160City cc
-		) cc_1 ON (cc_1.Code = t1.Code OR cc_1.Code IS NULL AND t1.Code IS NULL) AND cc_1.rn <= 1
+		) cc_1 ON (cc_1.Code = t1.Code AND cc_1.Code IS NOT NULL AND t1.Code IS NOT NULL OR cc_1.Code IS NULL AND t1.Code IS NULL) AND cc_1.rn <= 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

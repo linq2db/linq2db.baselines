@@ -16,5 +16,5 @@ FROM
 				INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 	) sq
 WHERE
-	sq.Rank > toInt64(0)
+	sq.Rank > toInt64(0) AND sq.Rank IS NOT NULL
 

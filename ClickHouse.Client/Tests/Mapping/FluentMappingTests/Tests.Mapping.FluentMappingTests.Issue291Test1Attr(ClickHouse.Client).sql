@@ -56,7 +56,7 @@ SELECT
 FROM
 	my_table o
 WHERE
-	o.my_col1 = 'MyCol1'
+	o.my_col1 = 'MyCol1' AND o.my_col1 IS NOT NULL
 LIMIT 1
 
 BeforeExecute

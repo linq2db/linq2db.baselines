@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	Value1 = 11
+	Value1 = 11 AND Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -30,7 +30,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.Value1 = 11
+	p.Value1 = 11 AND p.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -38,5 +38,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	Value1 = 11
+	Value1 = 11 AND Value1 IS NOT NULL
 

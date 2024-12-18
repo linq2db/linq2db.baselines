@@ -112,7 +112,7 @@ FROM
 		WHERE
 			m_1.Id1 >= 0
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -131,7 +131,7 @@ FROM
 		WHERE
 			m_1.Id1 >= 0
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 WHERE
 	d.DetailId % 2 = 0
 
@@ -150,7 +150,7 @@ FROM
 		WHERE
 			m_1.Id1 >= 0
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 WHERE
 	d.DetailId % 2 = 0
 

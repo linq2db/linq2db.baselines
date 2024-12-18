@@ -220,11 +220,11 @@ FROM
 			a_MainItem.Id as Id
 		FROM
 			MainItem2 m_1
-				LEFT JOIN MainItem a_MainItem ON m_1.MainItemId = a_MainItem.Id
+				LEFT JOIN MainItem a_MainItem ON m_1.MainItemId = a_MainItem.Id AND m_1.MainItemId IS NOT NULL
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId OR m_2.Id IS NULL AND d.ParentId IS NULL
+		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId AND m_2.Id IS NOT NULL AND d.ParentId IS NOT NULL OR m_2.Id IS NULL AND d.ParentId IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -237,7 +237,7 @@ SELECT
 	a_MainItem.Value
 FROM
 	MainItem2 m_1
-		LEFT JOIN MainItem a_MainItem ON m_1.MainItemId = a_MainItem.Id
+		LEFT JOIN MainItem a_MainItem ON m_1.MainItemId = a_MainItem.Id AND m_1.MainItemId IS NOT NULL
 WHERE
 	m_1.Id > 1
 

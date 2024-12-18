@@ -117,7 +117,7 @@ FROM
 				LIMIT 20
 			) t1
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

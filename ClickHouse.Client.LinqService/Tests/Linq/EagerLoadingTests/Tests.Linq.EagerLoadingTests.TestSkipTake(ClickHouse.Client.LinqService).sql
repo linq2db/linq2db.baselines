@@ -632,7 +632,7 @@ FROM
 		FROM
 			MasterClass m_1
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -657,7 +657,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY d.MasterId ORDER BY d.DetailId) as rn
 			FROM
 				DetailClass d
-		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.rn > 1 AND d_1.rn <= 3
+		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.MasterId IS NOT NULL AND d_1.rn > 1 AND d_1.rn <= 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -685,7 +685,7 @@ FROM
 		FROM
 			MasterClass t1
 	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId AND d.MasterId IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

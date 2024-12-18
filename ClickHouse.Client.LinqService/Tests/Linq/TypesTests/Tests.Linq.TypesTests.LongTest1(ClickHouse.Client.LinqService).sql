@@ -15,5 +15,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.BigIntValue = toInt64(0)
+	t.BigIntValue = toInt64(0) AND t.BigIntValue IS NOT NULL
 
