@@ -50,7 +50,7 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t]
 WHERE
-	[t].[NVarChar] = @p
+	[t].[NVarChar] = @p AND [t].[NVarChar] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

@@ -8,5 +8,5 @@ UPDATE
 SET
 	[Value1] = @v1
 WHERE
-	[Parent].[Value1] = @v1
+	[Parent].[Value1] = @v1 AND [Parent].[Value1] IS NOT NULL
 

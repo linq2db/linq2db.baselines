@@ -29,7 +29,7 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101
+	[r].[ID] = 101 AND [r].[ID] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

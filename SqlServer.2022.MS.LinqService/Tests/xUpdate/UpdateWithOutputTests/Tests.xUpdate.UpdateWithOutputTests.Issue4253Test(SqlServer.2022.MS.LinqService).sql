@@ -112,7 +112,7 @@ OUTPUT
 	INSERTED.[EmployeeId]
 FROM
 	[Issue4193Person] [p]
-		INNER JOIN [Issue4193Employee] [r] ON [p].[EmployeeId] = [r].[Id]
+		INNER JOIN [Issue4193Employee] [r] ON [p].[EmployeeId] = [r].[Id] AND [p].[EmployeeId] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022

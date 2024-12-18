@@ -10,7 +10,7 @@ SELECT
 	[a_Parent].[Name] + N'>' + [x].[Name]
 FROM
 	[Issue73Entities] [x]
-		LEFT JOIN [Issue73Entities] [a_Parent] ON [x].[ParentId] = [a_Parent].[Id]
+		LEFT JOIN [Issue73Entities] [a_Parent] ON [x].[ParentId] = [a_Parent].[Id] AND [x].[ParentId] IS NOT NULL
 WHERE
 	[x].[Name] = N'Name1_3'
 

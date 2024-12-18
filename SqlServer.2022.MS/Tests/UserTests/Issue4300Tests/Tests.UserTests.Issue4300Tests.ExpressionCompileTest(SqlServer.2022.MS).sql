@@ -72,7 +72,7 @@ WHERE
 		FROM
 			[TABLE1] [row1]
 		WHERE
-			[row1].[NAME1] = @str
+			[row1].[NAME1] = @str AND [row1].[NAME1] IS NOT NULL
 	)
 
 BeforeExecute
@@ -91,7 +91,7 @@ WHERE
 		FROM
 			[TABLE1] [row1]
 		WHERE
-			[row1].[NAME1] = @str
+			[row1].[NAME1] = @str AND [row1].[NAME1] IS NOT NULL
 	)
 
 BeforeExecute
