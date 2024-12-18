@@ -19,13 +19,13 @@ FROM
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [g_1]
-				INNER JOIN [Customers] [a_Customer] ON [g_1].[CustomerID] = [a_Customer].[CustomerID]
+				INNER JOIN [Customers] [a_Customer] ON [g_1].[CustomerID] = [a_Customer].[CustomerID] AND [g_1].[CustomerID] IS NOT NULL
 		GROUP BY
 			[a_Customer].[CustomerID]
 		HAVING
 			COUNT(*) > 20
 	) [g_2]
 		INNER JOIN ([Orders] [o]
-			INNER JOIN [Customers] [a_Customer_1] ON [o].[CustomerID] = [a_Customer_1].[CustomerID])
+			INNER JOIN [Customers] [a_Customer_1] ON [o].[CustomerID] = [a_Customer_1].[CustomerID] AND [o].[CustomerID] IS NOT NULL)
 		ON [g_2].[CustomerID] = [a_Customer_1].[CustomerID]
 

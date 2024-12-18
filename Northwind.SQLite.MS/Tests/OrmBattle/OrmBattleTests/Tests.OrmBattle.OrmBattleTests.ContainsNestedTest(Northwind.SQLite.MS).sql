@@ -19,9 +19,10 @@ SELECT
 				[a_Customer].[CustomerID]
 			FROM
 				[Orders] [o]
-					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 			WHERE
-				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', '2001-01-01 00:00:00.000')
+				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', '2001-01-01 00:00:00.000') AND
+				[o].[OrderDate] IS NOT NULL
 		)
 			THEN 1
 		ELSE 0

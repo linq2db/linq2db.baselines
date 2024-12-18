@@ -109,7 +109,7 @@ FROM
 			[x].[Id1] = 1
 		LIMIT 1
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -142,7 +142,7 @@ FROM
 			[x].[Id1] = 1
 		LIMIT 1
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
@@ -180,7 +180,7 @@ FROM
 				LIMIT 2
 			) [t1]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)

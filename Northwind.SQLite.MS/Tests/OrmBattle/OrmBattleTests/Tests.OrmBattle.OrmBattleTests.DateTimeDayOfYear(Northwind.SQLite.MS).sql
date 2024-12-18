@@ -19,6 +19,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	CAST(strftime('%j', [o].[OrderDate]) AS INTEGER) = 360
+	CAST(strftime('%j', [o].[OrderDate]) AS INTEGER) = 360 AND
+	CAST(strftime('%j', [o].[OrderDate]) AS INTEGER) IS NOT NULL
 LIMIT 1
 

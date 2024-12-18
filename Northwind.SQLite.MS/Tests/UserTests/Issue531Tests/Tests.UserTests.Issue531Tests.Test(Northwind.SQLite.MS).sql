@@ -25,7 +25,7 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	[e].[Extension] = @ext
+	[e].[Extension] = @ext AND [e].[Extension] IS NOT NULL
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite

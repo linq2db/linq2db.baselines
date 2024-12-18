@@ -45,7 +45,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	[r].[ColumnTS] = @ts
+	[r].[ColumnTS] = @ts AND [r].[ColumnTS] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite

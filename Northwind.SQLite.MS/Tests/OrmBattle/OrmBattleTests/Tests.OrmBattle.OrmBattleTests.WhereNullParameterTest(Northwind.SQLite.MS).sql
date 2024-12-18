@@ -44,5 +44,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipRegion] = @region
+	[o].[ShipRegion] = @region AND [o].[ShipRegion] IS NOT NULL
 

@@ -108,7 +108,7 @@ FROM
 		FROM
 			[MasterClass] [x]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -140,7 +140,7 @@ FROM
 		FROM
 			[MasterClass] [x]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId] AND [d].[MasterId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction

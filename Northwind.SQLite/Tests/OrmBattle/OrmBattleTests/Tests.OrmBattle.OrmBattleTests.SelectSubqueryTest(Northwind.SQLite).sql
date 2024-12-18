@@ -22,7 +22,7 @@ FROM
 			[a_Customer].[CustomerID]
 		FROM
 			[Orders] [o]
-				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 	) [m_1]
 		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
 
@@ -35,5 +35,5 @@ SELECT
 	[a_Customer].[CustomerID]
 FROM
 	[Orders] [o]
-		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
+		INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID] AND [o].[CustomerID] IS NOT NULL
 

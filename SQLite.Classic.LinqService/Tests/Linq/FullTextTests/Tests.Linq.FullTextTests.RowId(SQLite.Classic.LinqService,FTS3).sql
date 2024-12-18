@@ -7,5 +7,5 @@ SELECT
 FROM
 	[FTS3_TABLE] [r]
 WHERE
-	[r].[rowid] = 3
+	[r].[rowid] = 3 AND [r].[rowid] IS NOT NULL
 

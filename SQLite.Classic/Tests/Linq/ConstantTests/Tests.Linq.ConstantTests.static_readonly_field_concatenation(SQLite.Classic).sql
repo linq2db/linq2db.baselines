@@ -40,7 +40,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] || '1' = 'StrValue1'
+	[e].[StringValue] || '1' = 'StrValue1' AND [e].[StringValue] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

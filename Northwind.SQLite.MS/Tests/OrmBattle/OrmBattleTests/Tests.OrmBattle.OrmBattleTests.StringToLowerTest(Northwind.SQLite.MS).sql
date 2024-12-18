@@ -16,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	Lower([c_1].[City]) = 'seattle'
+	Lower([c_1].[City]) = 'seattle' AND Lower([c_1].[City]) IS NOT NULL
 LIMIT 1
 

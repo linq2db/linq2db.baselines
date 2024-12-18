@@ -22,5 +22,5 @@ FROM
 		GROUP BY
 			[t1].[City]
 	) [g_1]
-		INNER JOIN [Customers] [c_1] ON [g_1].[City] = [c_1].[City] OR [g_1].[City] IS NULL AND [c_1].[City] IS NULL
+		INNER JOIN [Customers] [c_1] ON [g_1].[City] = [c_1].[City] AND [g_1].[City] IS NOT NULL AND [c_1].[City] IS NOT NULL OR [g_1].[City] IS NULL AND [c_1].[City] IS NULL
 

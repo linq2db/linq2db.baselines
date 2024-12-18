@@ -17,5 +17,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', Date([t].[DateTimeValue])) > strftime('%Y-%m-%d %H:%M:%f', @Date)
+	strftime('%Y-%m-%d %H:%M:%f', Date([t].[DateTimeValue])) > strftime('%Y-%m-%d %H:%M:%f', @Date) AND
+	Date([t].[DateTimeValue]) IS NOT NULL
 

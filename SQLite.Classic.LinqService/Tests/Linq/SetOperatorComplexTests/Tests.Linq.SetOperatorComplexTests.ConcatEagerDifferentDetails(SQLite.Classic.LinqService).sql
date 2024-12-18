@@ -518,7 +518,7 @@ FROM
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 						LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 				WHERE
-					[a_Book].[Discriminator] = 'Roman'
+					[a_Book].[Discriminator] = 'Roman' AND [a_Book].[Discriminator] IS NOT NULL
 				UNION ALL
 				SELECT
 					CAST(1 AS INTEGER) as [projection__set_id__],
@@ -528,12 +528,12 @@ FROM
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 						LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 				WHERE
-					[a_Book_1].[Discriminator] = 'Novel'
+					[a_Book_1].[Discriminator] = 'Novel' AND [a_Book_1].[Discriminator] IS NOT NULL
 			) [t3]
 		WHERE
 			[t3].[projection__set_id__] = 0
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id] AND [m_1].[Id] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 WHERE
 	[a_Author].[AuthorName] <> 'A' OR [a_Author].[AuthorName] IS NULL
@@ -559,7 +559,7 @@ FROM
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 						LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 				WHERE
-					[a_Book].[Discriminator] = 'Roman'
+					[a_Book].[Discriminator] = 'Roman' AND [a_Book].[Discriminator] IS NOT NULL
 				UNION ALL
 				SELECT
 					CAST(1 AS INTEGER) as [projection__set_id__],
@@ -569,12 +569,12 @@ FROM
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 						LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 				WHERE
-					[a_Book_1].[Discriminator] = 'Novel'
+					[a_Book_1].[Discriminator] = 'Novel' AND [a_Book_1].[Discriminator] IS NOT NULL
 			) [t3]
 		WHERE
 			[t3].[projection__set_id__] = 1
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1] AND [m_1].[c1] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -591,7 +591,7 @@ FROM
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
-	[a_Book].[Discriminator] = 'Roman'
+	[a_Book].[Discriminator] = 'Roman' AND [a_Book].[Discriminator] IS NOT NULL
 UNION ALL
 SELECT
 	[a_Book_1].[BookId],
@@ -604,7 +604,7 @@ FROM
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 WHERE
-	[a_Book_1].[Discriminator] = 'Novel'
+	[a_Book_1].[Discriminator] = 'Novel' AND [a_Book_1].[Discriminator] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -629,7 +629,7 @@ FROM
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t2].[AuthorId]
 				LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 	) [m_1]
-		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
+		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId] AND [m_1].[BookId] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute

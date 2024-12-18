@@ -15,5 +15,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', Date([t1].[DateTimeValue])) = strftime('%Y-%m-%d %H:%M:%f', Date(strftime('%Y-%m-%d %H:%M:%f', '2009-09-20 00:00:00.000')))
+	strftime('%Y-%m-%d %H:%M:%f', Date([t1].[DateTimeValue])) = strftime('%Y-%m-%d %H:%M:%f', Date(strftime('%Y-%m-%d %H:%M:%f', '2009-09-20 00:00:00.000'))) AND
+	strftime('%Y-%m-%d %H:%M:%f', Date([t1].[DateTimeValue])) IS NOT NULL
 

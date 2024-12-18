@@ -41,7 +41,8 @@ BeforeExecute
 SELECT
 	[x].[Id],
 	CASE
-		WHEN [x].[StringProp] = '1' THEN 1
+		WHEN [x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
 	[x].[StringProp]
@@ -49,7 +50,8 @@ FROM
 	[ConditionalData] [x]
 WHERE
 	CASE
-		WHEN [x].[StringProp] = '1' THEN '2'
+		WHEN [x].[StringProp] = '1' AND [x].[StringProp] IS NOT NULL
+			THEN '2'
 		ELSE [x].[StringProp]
 	END LIKE '%2%' ESCAPE '~'
 

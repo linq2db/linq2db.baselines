@@ -26,7 +26,7 @@ FROM
 		FROM
 			[Orders] [t1]
 	) [m_1]
-		INNER JOIN [Orders] [d] ON strftime('%Y-%m-%d %H:%M:%f', [m_1].[Key_1]) = strftime('%Y-%m-%d %H:%M:%f', [d].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
+		INNER JOIN [Orders] [d] ON strftime('%Y-%m-%d %H:%M:%f', [m_1].[Key_1]) = strftime('%Y-%m-%d %H:%M:%f', [d].[OrderDate]) AND [m_1].[Key_1] IS NOT NULL AND [d].[OrderDate] IS NOT NULL OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
 BeforeExecute
 DisposeTransaction

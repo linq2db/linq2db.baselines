@@ -19,6 +19,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	CAST(strftime('%w', [o].[OrderDate]) AS INTEGER) = 5
+	CAST(strftime('%w', [o].[OrderDate]) AS INTEGER) = 5 AND
+	CAST(strftime('%w', [o].[OrderDate]) AS INTEGER) IS NOT NULL
 LIMIT 1
 

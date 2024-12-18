@@ -16,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	Length([c_1].[City]) = 7
+	Length([c_1].[City]) = 7 AND Length([c_1].[City]) IS NOT NULL
 LIMIT 1
 

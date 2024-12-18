@@ -80,7 +80,9 @@ FROM
 	[billing_DevReadingType] [drt]
 WHERE
 	[drt].[Name] = [billing_TempReading].[ReadingTypeName] AND
-	[drt].[DevTypeId] = [billing_TempReading].[Devtypeid]
+	[billing_TempReading].[ReadingTypeName] IS NOT NULL AND
+	[drt].[DevTypeId] = [billing_TempReading].[Devtypeid] AND
+	[billing_TempReading].[Devtypeid] IS NOT NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -95,7 +97,9 @@ SET
 			[billing_DevReadingType] [w]
 		WHERE
 			[w].[Name] = [billing_TempReading].[ReadingTypeName] AND
-			[w].[DevTypeId] = [billing_TempReading].[Devtypeid]
+			[billing_TempReading].[ReadingTypeName] IS NOT NULL AND
+			[w].[DevTypeId] = [billing_TempReading].[Devtypeid] AND
+			[billing_TempReading].[Devtypeid] IS NOT NULL
 		LIMIT 1
 	),
 	[Responsibility] = (
@@ -105,7 +109,9 @@ SET
 			[billing_DevReadingType] [w_1]
 		WHERE
 			[w_1].[Name] = [billing_TempReading].[ReadingTypeName] AND
-			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid]
+			[billing_TempReading].[ReadingTypeName] IS NOT NULL AND
+			[w_1].[DevTypeId] = [billing_TempReading].[Devtypeid] AND
+			[billing_TempReading].[Devtypeid] IS NOT NULL
 		LIMIT 1
 	)
 

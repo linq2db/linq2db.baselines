@@ -153,7 +153,7 @@ WHERE
 			*
 		FROM
 			[InventoryResourceDTO] [y]
-				LEFT JOIN [WmsBatchDTO] [batch] ON [y].[MaterialID] = [batch].[MaterialID] AND ([y].[BatchNumber] = [batch].[BatchNumber] OR [y].[BatchNumber] IS NULL AND [batch].[BatchNumber] IS NULL)
+				LEFT JOIN [WmsBatchDTO] [batch] ON [y].[MaterialID] = [batch].[MaterialID] AND ([y].[BatchNumber] = [batch].[BatchNumber] AND [y].[BatchNumber] IS NOT NULL AND [batch].[BatchNumber] IS NOT NULL OR [y].[BatchNumber] IS NULL AND [batch].[BatchNumber] IS NULL)
 		WHERE
 			[y].[Status] = 1 AND [y].[Id] = [x].[Id]
 	)

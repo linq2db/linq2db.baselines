@@ -49,7 +49,7 @@ SELECT
 FROM
 	[Src] [x]
 WHERE
-	[x].[A] < [x].[B] OR [x].[A] IS NULL OR [x].[B] IS NULL
+	[x].[A] < [x].[B] AND [x].[A] IS NOT NULL AND [x].[B] IS NOT NULL
 ORDER BY
 	[x].[Id]
 

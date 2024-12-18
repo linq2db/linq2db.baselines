@@ -3,7 +3,8 @@
 
 SELECT
 	CASE
-		WHEN [o].[ShipRegion] = 'WA' THEN 1
+		WHEN [o].[ShipRegion] = 'WA' AND [o].[ShipRegion] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END
 FROM

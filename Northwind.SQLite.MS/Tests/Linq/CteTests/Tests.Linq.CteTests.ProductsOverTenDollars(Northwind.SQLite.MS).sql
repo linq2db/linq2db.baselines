@@ -11,7 +11,7 @@ AS
 	FROM
 		[Products] [p]
 	WHERE
-		[p].[UnitPrice] > 10
+		[p].[UnitPrice] > 10 AND [p].[UnitPrice] IS NOT NULL
 ),
 [CategoryAndNumberOfProducts] ([CategoryID], [CategoryName], [NumberOfProducts])
 AS
@@ -25,7 +25,7 @@ AS
 			FROM
 				[Products] [p_1]
 			WHERE
-				[p_1].[CategoryID] = [c_1].[CategoryID]
+				[p_1].[CategoryID] = [c_1].[CategoryID] AND [p_1].[CategoryID] IS NOT NULL
 		)
 	FROM
 		[Categories] [c_1]
@@ -37,7 +37,7 @@ SELECT
 	[t1].[UnitPrice]
 FROM
 	[ProductsOverTenDollars] [t1]
-		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON [c_2].[CategoryID] = [t1].[CategoryID]
+		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON [c_2].[CategoryID] = [t1].[CategoryID] AND [t1].[CategoryID] IS NOT NULL
 ORDER BY
 	[t1].[ProductName]
 
@@ -52,15 +52,15 @@ SELECT
 		FROM
 			[Products] [p_1]
 		WHERE
-			[p_1].[CategoryID] = [c_1].[CategoryID]
+			[p_1].[CategoryID] = [c_1].[CategoryID] AND [p_1].[CategoryID] IS NOT NULL
 	),
 	[p].[ProductName],
 	[p].[UnitPrice]
 FROM
 	[Products] [p]
-		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
+		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID] AND [p].[CategoryID] IS NOT NULL
 WHERE
-	[p].[UnitPrice] > 10
+	[p].[UnitPrice] > 10 AND [p].[UnitPrice] IS NOT NULL
 ORDER BY
 	[p].[ProductName]
 

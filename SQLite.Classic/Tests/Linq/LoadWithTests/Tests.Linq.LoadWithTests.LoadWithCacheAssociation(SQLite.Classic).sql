@@ -212,7 +212,7 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m2]
-		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
+		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id] AND [m2].[MainItemId] IS NOT NULL
 WHERE
 	[a_MainItem].[Id] IS NOT NULL AND (
 		SELECT
@@ -220,7 +220,7 @@ WHERE
 		FROM
 			[SubItem1] [a_SubItems1]
 		WHERE
-			[a_MainItem].[Id] = [a_SubItems1].[ParentId]
+			[a_MainItem].[Id] = [a_SubItems1].[ParentId] AND [a_SubItems1].[ParentId] IS NOT NULL
 	) > 1
 
 BeforeExecute
