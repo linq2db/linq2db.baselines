@@ -49,7 +49,7 @@ SELECT
 FROM
 	"TestParametersTable" "f"
 WHERE
-	"f"."Text" = @text
+	"f"."Text" = @text AND "f"."Text" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -4,7 +4,7 @@
 SELECT
 	CASE
 		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) <> 0 THEN "p"."FirstName"
-		WHEN NOT ("p"."MiddleName" IS NULL OR CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) = 0)
+		WHEN NOT ("p"."MiddleName" IS NULL OR CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) = 0 AND CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) IS NOT NULL)
 			THEN "p"."MiddleName"
 		ELSE "p"."LastName"
 	END

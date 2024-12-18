@@ -56,7 +56,7 @@ AS
 		"Dto" "t1",
 		"d" "recur"
 	WHERE
-		"recur"."Dto_id" = "t1"."parent_id"
+		"recur"."Dto_id" = "t1"."parent_id" AND "t1"."parent_id" IS NOT NULL
 )
 SELECT
 	"t2"."Dto_id",

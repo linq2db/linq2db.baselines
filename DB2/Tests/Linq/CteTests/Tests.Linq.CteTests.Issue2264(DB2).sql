@@ -61,7 +61,7 @@ AS
 		"TestFolder" "t1",
 		CTE "r"
 	WHERE
-		"t1"."ParentId" = "r"."Id"
+		"t1"."ParentId" = "r"."Id" AND "t1"."ParentId" IS NOT NULL
 )
 SELECT
 	"t2"."Level_1",

@@ -15,5 +15,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	"t1"."DateTimeValue" = '2009-09-27-00.00.00.000000'
+	"t1"."DateTimeValue" = '2009-09-27-00.00.00.000000' AND
+	"t1"."DateTimeValue" IS NOT NULL
 

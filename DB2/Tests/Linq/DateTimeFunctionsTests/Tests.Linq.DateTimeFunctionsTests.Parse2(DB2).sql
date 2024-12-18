@@ -2,9 +2,15 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CAST(Extract(year from "d"."DateTimeValue") || '-02-24 00:00:00' AS timestamp)
+	"d"."Day_2"
 FROM
-	"LinqDataTypes" "d"
+	(
+		SELECT
+			Extract(day from CAST(Extract(year from "t"."DateTimeValue") || '-02-24 00:00:00' AS timestamp)) as "Day_1",
+			CAST(Extract(year from "t"."DateTimeValue") || '-02-24 00:00:00' AS timestamp) as "Day_2"
+		FROM
+			"LinqDataTypes" "t"
+	) "d"
 WHERE
-	Extract(day from CAST(Extract(year from "d"."DateTimeValue") || '-02-24 00:00:00' AS timestamp)) > 0
+	"d"."Day_1" > 0 AND "d"."Day_1" IS NOT NULL
 

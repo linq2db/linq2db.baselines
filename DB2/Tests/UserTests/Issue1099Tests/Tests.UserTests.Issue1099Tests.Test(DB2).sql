@@ -61,7 +61,7 @@ SELECT
 FROM
 	"BackgroundTask" "task_1"
 WHERE
-	"task_1"."PersonID" = @personId
+	"task_1"."PersonID" = @personId AND "task_1"."PersonID" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

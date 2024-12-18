@@ -54,7 +54,8 @@ SELECT
 FROM
 	"Transactions" "t"
 WHERE
-	Extract(day from CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)) > 0
+	Extract(day from CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)) > 0 AND
+	Extract(day from CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)) IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -15,7 +15,7 @@ AS
 		"cte" "t1",
 		"Person" "r"
 	WHERE
-		"t1"."FirstName" = "r"."LastName"
+		"t1"."FirstName" = "r"."LastName" AND "t1"."FirstName" IS NOT NULL
 )
 SELECT
 	"t2"."FirstName"

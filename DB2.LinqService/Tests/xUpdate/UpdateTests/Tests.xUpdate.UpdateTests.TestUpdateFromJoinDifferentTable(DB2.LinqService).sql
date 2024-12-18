@@ -93,17 +93,19 @@ SET
 			REPLACE("x_1"."col3", 'auth.', ''),
 			"x_1"."col4",
 			CASE
-				WHEN "x_1"."col3" = 'empty' THEN '1'
+				WHEN "x_1"."col3" = 'empty' AND "x_1"."col3" IS NOT NULL
+					THEN '1'
 				ELSE '0'
 			END,
 			CASE
-				WHEN "x_1"."col3" = 'empty' THEN ''
+				WHEN "x_1"."col3" = 'empty' AND "x_1"."col3" IS NOT NULL
+					THEN ''
 				ELSE RTrim(Char("y1_1"."id"))
 			END
 		FROM
 			"gt_s_one" "x_1"
 				INNER JOIN "gt_s_one_target" "t2_1" ON "x_1"."id" = "t2_1"."id"
-				LEFT JOIN "access_mode" "y1_1" ON Upper(REPLACE("x_1"."col3", 'auth.', '')) = Upper("y1_1"."code") OR Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NULL AND Upper("y1_1"."code") IS NULL
+				LEFT JOIN "access_mode" "y1_1" ON Upper(REPLACE("x_1"."col3", 'auth.', '')) = Upper("y1_1"."code") AND Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NOT NULL AND Upper("y1_1"."code") IS NOT NULL OR Upper(REPLACE("x_1"."col3", 'auth.', '')) IS NULL AND Upper("y1_1"."code") IS NULL
 		WHERE
 			"gt_s_one_target"."id" = "t2_1"."id"
 	)
@@ -114,7 +116,7 @@ WHERE
 		FROM
 			"gt_s_one" "x"
 				INNER JOIN "gt_s_one_target" "t2" ON "x"."id" = "t2"."id"
-				LEFT JOIN "access_mode" "y1" ON Upper(REPLACE("x"."col3", 'auth.', '')) = Upper("y1"."code") OR Upper(REPLACE("x"."col3", 'auth.', '')) IS NULL AND Upper("y1"."code") IS NULL
+				LEFT JOIN "access_mode" "y1" ON Upper(REPLACE("x"."col3", 'auth.', '')) = Upper("y1"."code") AND Upper(REPLACE("x"."col3", 'auth.', '')) IS NOT NULL AND Upper("y1"."code") IS NOT NULL OR Upper(REPLACE("x"."col3", 'auth.', '')) IS NULL AND Upper("y1"."code") IS NULL
 		WHERE
 			"gt_s_one_target"."id" = "t2"."id"
 	)

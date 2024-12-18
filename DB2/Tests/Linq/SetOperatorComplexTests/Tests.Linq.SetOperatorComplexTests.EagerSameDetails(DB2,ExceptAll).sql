@@ -143,7 +143,8 @@ FROM
 				INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
 				LEFT JOIN "Book" "a_Book" ON "b"."FkBookId" = "a_Book"."BookId"
 		WHERE
-			"a_Book"."Discriminator" = 'Roman' AND NOT EXISTS(
+			"a_Book"."Discriminator" = 'Roman' AND "a_Book"."Discriminator" IS NOT NULL AND
+			NOT EXISTS(
 				SELECT
 					*
 				FROM
@@ -152,12 +153,13 @@ FROM
 						LEFT JOIN "Book" "a_Book_1" ON "b_1"."FkBookId" = "a_Book_1"."BookId"
 				WHERE
 					"a_Book_1"."Discriminator" = 'Novel' AND
+					"a_Book_1"."Discriminator" IS NOT NULL AND
 					"a_Book"."BookId" = "a_Book_1"."BookId" AND
-					("a_Book"."BookName" = "a_Book_1"."BookName" OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
+					("a_Book"."BookName" = "a_Book_1"."BookName" AND "a_Book"."BookName" IS NOT NULL AND "a_Book_1"."BookName" IS NOT NULL OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
 					"a_Book"."BookId" = "a_Book_1"."BookId"
 			)
 	) "m_1"
-		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."BookId"
+		INNER JOIN "BookAuthor" "d" ON "d"."FkBookId" = "m_1"."BookId" AND "m_1"."BookId" IS NOT NULL
 		LEFT JOIN "Author" "a_Author" ON "d"."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute
@@ -173,7 +175,8 @@ FROM
 		INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON "b"."FkBookId" = "a_Book"."BookId"
 WHERE
-	"a_Book"."Discriminator" = 'Roman' AND NOT EXISTS(
+	"a_Book"."Discriminator" = 'Roman' AND "a_Book"."Discriminator" IS NOT NULL AND
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
@@ -182,8 +185,9 @@ WHERE
 				LEFT JOIN "Book" "a_Book_1" ON "b_1"."FkBookId" = "a_Book_1"."BookId"
 		WHERE
 			"a_Book_1"."Discriminator" = 'Novel' AND
+			"a_Book_1"."Discriminator" IS NOT NULL AND
 			"a_Book"."BookId" = "a_Book_1"."BookId" AND
-			("a_Book"."BookName" = "a_Book_1"."BookName" OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
+			("a_Book"."BookName" = "a_Book_1"."BookName" AND "a_Book"."BookName" IS NOT NULL AND "a_Book_1"."BookName" IS NOT NULL OR "a_Book"."BookName" IS NULL AND "a_Book_1"."BookName" IS NULL) AND
 			"a_Book"."BookId" = "a_Book_1"."BookId"
 	)
 
@@ -212,7 +216,7 @@ FROM
 				INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "t2"."AuthorId"
 				LEFT JOIN "Book" "a_Book" ON "d"."FkBookId" = "a_Book"."BookId"
 	) "m_1"
-		INNER JOIN "BookAuthor" "d_1" ON "d_1"."FkBookId" = "m_1"."BookId"
+		INNER JOIN "BookAuthor" "d_1" ON "d_1"."FkBookId" = "m_1"."BookId" AND "m_1"."BookId" IS NOT NULL
 		LEFT JOIN "Author" "a_Author" ON "d_1"."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute

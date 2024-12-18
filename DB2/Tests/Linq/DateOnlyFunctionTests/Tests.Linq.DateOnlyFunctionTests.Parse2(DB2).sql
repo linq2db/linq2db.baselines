@@ -50,11 +50,17 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"d"."TransactionDate"
+	"d"."Day_2"
 FROM
-	"Transactions" "d"
+	(
+		SELECT
+			Extract(day from "t"."TransactionDate") as "Day_1",
+			"t"."TransactionDate" as "Day_2"
+		FROM
+			"Transactions" "t"
+	) "d"
 WHERE
-	Extract(day from "d"."TransactionDate") > 0
+	"d"."Day_1" > 0 AND "d"."Day_1" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

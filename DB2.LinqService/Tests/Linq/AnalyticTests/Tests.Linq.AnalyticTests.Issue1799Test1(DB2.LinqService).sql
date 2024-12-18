@@ -85,7 +85,10 @@ FROM
 		INNER JOIN "Issue1799Table2" "u" ON "u"."UserId" = "g_1"."User_1"
 		INNER JOIN "Issue1799Table3" "p" ON "p"."ProcessID" = "g_1"."Proc"
 WHERE
-	"g_1"."Diff" > 0 AND "g_1"."Diff" <= 5
+	"g_1"."Diff" > 0 AND
+	"g_1"."Diff" IS NOT NULL AND
+	"g_1"."Diff" <= 5 AND
+	"g_1"."Diff" IS NOT NULL
 GROUP BY
 	"g_1"."User_1",
 	"u"."UserGroups",

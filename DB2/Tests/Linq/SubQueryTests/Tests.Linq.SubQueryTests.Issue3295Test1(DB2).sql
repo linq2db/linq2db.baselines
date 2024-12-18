@@ -27,5 +27,5 @@ FROM
 				) "t1" ON "t1"."PersonID" = "x"."PersonID" AND "t1"."rn" <= 1
 	) "x_1"
 WHERE
-	"x_1"."StatusName" = 'abc'
+	"x_1"."StatusName" = 'abc' AND "x_1"."StatusName" IS NOT NULL
 

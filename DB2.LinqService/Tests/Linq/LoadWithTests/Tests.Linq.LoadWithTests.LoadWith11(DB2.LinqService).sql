@@ -33,7 +33,7 @@ FROM
 		WHERE
 			"p"."ParentID" < 2
 	) "m_1"
-		INNER JOIN "GrandChild" "d" ON "m_1"."ParentID" = "d"."ParentID"
+		INNER JOIN "GrandChild" "d" ON "m_1"."ParentID" = "d"."ParentID" AND "d"."ParentID" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

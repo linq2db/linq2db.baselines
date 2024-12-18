@@ -15,5 +15,5 @@ FROM
 			FROM
 				"Child" "c_1"
 					LEFT JOIN "Parent" "a_Parent" ON "c_1"."ParentID" = "a_Parent"."ParentID"
-		) "t1" ON "t1"."ParentID" = "p"."ParentID" AND ("t1"."Value1" = "p"."Value1" OR "t1"."Value1" IS NULL AND "p"."Value1" IS NULL) AND "t1"."rn" <= 1
+		) "t1" ON "t1"."ParentID" = "p"."ParentID" AND "t1"."ParentID" IS NOT NULL AND ("t1"."Value1" = "p"."Value1" AND "t1"."Value1" IS NOT NULL AND "p"."Value1" IS NOT NULL OR "t1"."Value1" IS NULL AND "p"."Value1" IS NULL) AND "t1"."rn" <= 1
 

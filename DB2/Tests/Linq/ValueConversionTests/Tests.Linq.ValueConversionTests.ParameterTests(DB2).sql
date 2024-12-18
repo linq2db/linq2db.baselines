@@ -70,7 +70,7 @@ SELECT
 FROM
 	"ValueConversion" "t"
 WHERE
-	@testedList = "t"."Value2"
+	@testedList = "t"."Value2" AND "t"."Value2" IS NOT NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
