@@ -45,7 +45,7 @@ UPDATE
 SET
 	"Data" = '***OOO***'
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"TrimTestTable"."Data" = '***XXX***' AND "TrimTestTable"."Data" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -55,7 +55,7 @@ UPDATE
 SET
 	"Data" = '***SSS***'
 WHERE
-	"TrimTestTable"."Data" = '***HHH***'
+	"TrimTestTable"."Data" = '***HHH***' AND "TrimTestTable"."Data" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
