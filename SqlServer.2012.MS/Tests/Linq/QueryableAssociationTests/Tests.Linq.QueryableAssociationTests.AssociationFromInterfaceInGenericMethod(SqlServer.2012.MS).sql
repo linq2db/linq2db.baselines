@@ -29,7 +29,7 @@ WHERE
 		FROM
 			[TreeItem] [a_Children]
 		WHERE
-			[x].[Id] = [a_Children].[ParentId]
+			[x].[Id] = [a_Children].[ParentId] AND [a_Children].[ParentId] IS NOT NULL
 	)
 
 BeforeExecute
@@ -47,11 +47,11 @@ FROM
 			[t].[Id]
 		FROM
 			[TreeItem] [t]
-				LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
+				LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id] AND [t].[ParentId] IS NOT NULL
 		WHERE
-			[a_Parent].[Id] > 0
+			[a_Parent].[Id] > 0 AND [a_Parent].[Id] IS NOT NULL
 	) [m_1]
-		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
+		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId] AND [d].[ParentId] IS NOT NULL
 
 BeforeExecute
 DisposeTransaction
@@ -62,9 +62,9 @@ SELECT
 	[t].[Id]
 FROM
 	[TreeItem] [t]
-		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
+		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id] AND [t].[ParentId] IS NOT NULL
 WHERE
-	[a_Parent].[Id] > 0
+	[a_Parent].[Id] > 0 AND [a_Parent].[Id] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

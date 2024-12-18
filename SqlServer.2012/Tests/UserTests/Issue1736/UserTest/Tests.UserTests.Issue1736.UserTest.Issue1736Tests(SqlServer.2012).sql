@@ -178,7 +178,7 @@ FROM
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x]
 				WHERE
-					[x].[InventoryResourceID] = [ir].[Id]
+					[x].[InventoryResourceID] = [ir].[Id] AND [x].[InventoryResourceID] IS NOT NULL
 			), 0) + (
 				SELECT
 					CAST(COUNT(*) AS Decimal(38, 17))
@@ -249,7 +249,7 @@ FROM
 			1 = 0
 	) [cr_1]
 WHERE
-	[cr_1].[Quantity] > [cr_1].[RefQty]
+	[cr_1].[Quantity] > [cr_1].[RefQty] AND [cr_1].[RefQty] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012

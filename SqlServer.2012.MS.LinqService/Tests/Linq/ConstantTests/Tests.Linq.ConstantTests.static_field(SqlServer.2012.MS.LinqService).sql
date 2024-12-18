@@ -57,7 +57,8 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
+	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly AND
+	[e].[GuidNullableValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

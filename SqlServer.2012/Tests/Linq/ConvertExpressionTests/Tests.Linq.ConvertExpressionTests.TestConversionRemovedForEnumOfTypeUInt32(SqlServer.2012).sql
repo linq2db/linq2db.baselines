@@ -59,14 +59,14 @@ WHERE
 	[x].[UInt32] = 4 OR
 	[x].[Int64] = 4 OR
 	[x].[UInt64] = 4 OR
-	[x].[ByteN] = 4 OR
-	[x].[SByteN] = 4 OR
-	[x].[Int16N] = 4 OR
-	[x].[UInt16N] = 4 OR
-	[x].[Int32N] = 4 OR
-	[x].[UInt32N] = 4 OR
-	[x].[Int64N] = 4 OR
-	[x].[UInt64N] = 4 OR
+	[x].[ByteN] = 4 AND [x].[ByteN] IS NOT NULL OR
+	[x].[SByteN] = 4 AND [x].[SByteN] IS NOT NULL OR
+	[x].[Int16N] = 4 AND [x].[Int16N] IS NOT NULL OR
+	[x].[UInt16N] = 4 AND [x].[UInt16N] IS NOT NULL OR
+	[x].[Int32N] = 4 AND [x].[Int32N] IS NOT NULL OR
+	[x].[UInt32N] = 4 AND [x].[UInt32N] IS NOT NULL OR
+	[x].[Int64N] = 4 AND [x].[Int64N] IS NOT NULL OR
+	[x].[UInt64N] = 4 AND [x].[UInt64N] IS NOT NULL OR
 	4 = [x].[Byte] OR
 	4 = [x].[SByte] OR
 	4 = [x].[Int16] OR
@@ -75,14 +75,14 @@ WHERE
 	4 = [x].[UInt32] OR
 	4 = [x].[Int64] OR
 	4 = [x].[UInt64] OR
-	4 = [x].[ByteN] OR
-	4 = [x].[SByteN] OR
-	4 = [x].[Int16N] OR
-	4 = [x].[UInt16N] OR
-	4 = [x].[Int32N] OR
-	4 = [x].[UInt32N] OR
-	4 = [x].[Int64N] OR
-	4 = [x].[UInt64N]
+	4 = [x].[ByteN] AND [x].[ByteN] IS NOT NULL OR
+	4 = [x].[SByteN] AND [x].[SByteN] IS NOT NULL OR
+	4 = [x].[Int16N] AND [x].[Int16N] IS NOT NULL OR
+	4 = [x].[UInt16N] AND [x].[UInt16N] IS NOT NULL OR
+	4 = [x].[Int32N] AND [x].[Int32N] IS NOT NULL OR
+	4 = [x].[UInt32N] AND [x].[UInt32N] IS NOT NULL OR
+	4 = [x].[Int64N] AND [x].[Int64N] IS NOT NULL OR
+	4 = [x].[UInt64N] AND [x].[UInt64N] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012

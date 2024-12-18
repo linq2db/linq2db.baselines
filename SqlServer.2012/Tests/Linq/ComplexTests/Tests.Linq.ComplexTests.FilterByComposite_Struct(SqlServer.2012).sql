@@ -40,7 +40,10 @@ SELECT TOP (2)
 FROM
 	[UserStruct] [u]
 WHERE
-	[u].[city] = N'Springwood' AND [u].[street] = N'Elm Street' AND
+	[u].[city] = N'Springwood' AND
+	[u].[city] IS NOT NULL AND
+	[u].[street] = N'Elm Street' AND
+	[u].[street] IS NOT NULL AND
 	[u].[building_number] = 13
 
 BeforeExecute

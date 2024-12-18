@@ -53,7 +53,7 @@ UPDATE
 SET
 	[Data] = @Data
 WHERE
-	[TrimTestTable].[Data] = N'***XXX***'
+	[TrimTestTable].[Data] = N'***XXX***' AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -67,7 +67,7 @@ UPDATE
 SET
 	[Data] = @Data
 WHERE
-	[TrimTestTable].[Data] = @p
+	[TrimTestTable].[Data] = @p AND [TrimTestTable].[Data] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

@@ -86,7 +86,7 @@ USING (
 		[Person] [t]
 			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
-		[a_Patient].[PersonID] = @PersonID
+		[a_Patient].[PersonID] = @PersonID AND [a_Patient].[PersonID] IS NOT NULL
 ) [Source]
 (
 	[source_ID],
@@ -127,7 +127,15 @@ WHEN NOT MATCHED BY SOURCE AND (
 		[Patient] [a_Patient_1]
 	WHERE
 		[Target].[PersonID] = [a_Patient_1].[PersonID]
-) = @PersonID THEN DELETE
+) = @PersonID AND
+(
+	SELECT
+		[a_Patient_1].[PersonID]
+	FROM
+		[Patient] [a_Patient_1]
+	WHERE
+		[Target].[PersonID] = [a_Patient_1].[PersonID]
+) IS NOT NULL THEN DELETE
 ;
 
 BeforeExecute

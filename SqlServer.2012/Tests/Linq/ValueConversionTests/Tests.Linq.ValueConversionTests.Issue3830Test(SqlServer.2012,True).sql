@@ -96,7 +96,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'N' AND [r].[Bool2] IS NULL AND [r].[Bool3] = 'Y'
+	[r].[Bool1] = 'N' AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -122,7 +125,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'N' AND [r].[Bool2] IS NULL AND [r].[Bool3] = 'Y'
+	[r].[Bool1] = 'N' AND
+	[r].[Bool2] IS NULL AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -135,7 +141,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NULL AND [r].[Bool1] = 'N' AND [r].[Bool3] = 'Y'
+	[r].[Bool2] IS NULL AND
+	[r].[Bool1] = 'N' AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -148,7 +157,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'N' AND [r].[Bool2] = 'Y' AND [r].[Bool3] IS NULL
+	[r].[Bool1] = 'N' AND
+	[r].[Bool2] = 'Y' AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -161,7 +173,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'N' AND [r].[Bool2] = 'Y' AND [r].[Bool3] IS NULL
+	[r].[Bool1] = 'N' AND
+	[r].[Bool2] = 'Y' AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -174,8 +189,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND [r].[Bool1] = 'N' AND
-	[r].[Bool2] = 'Y'
+	([r].[Bool3] IS NULL OR [r].[Bool3] IS NULL) AND
+	[r].[Bool1] = 'N' AND
+	[r].[Bool2] = 'Y' AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -201,7 +218,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'Y' AND [r].[Bool2] = 'N' AND [r].[Bool3] = 'Y'
+	[r].[Bool1] = 'Y' AND
+	[r].[Bool2] = 'N' AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -214,7 +235,11 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool1] = 'Y' AND [r].[Bool2] = 'N' AND [r].[Bool3] = 'Y'
+	[r].[Bool1] = 'Y' AND
+	[r].[Bool2] = 'N' AND
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -227,7 +252,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool3] = 'Y' AND [r].[Bool1] = 'Y' AND [r].[Bool2] = 'N'
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool1] = 'Y' AND
+	[r].[Bool2] = 'N' AND
+	[r].[Bool2] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -240,7 +268,10 @@ SELECT
 FROM
 	[Issue3830TestTable] [r]
 WHERE
-	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = 'Y' AND [r].[Bool3] = 'Y'
+	[r].[Bool2] IS NOT NULL AND
+	[r].[Bool1] = 'Y' AND
+	[r].[Bool3] = 'Y' AND
+	[r].[Bool3] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012

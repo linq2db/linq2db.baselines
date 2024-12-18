@@ -36,7 +36,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	[i].[StrValue] >= N'4' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -47,7 +47,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	[i].[StrValue] >= N'4' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -58,7 +58,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	[i].[StrValue] <= N'2' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -69,7 +69,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	[i].[StrValue] <= N'2' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -80,7 +80,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	[i].[StrValue] > N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -91,7 +91,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	[i].[StrValue] > N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -102,7 +102,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	[i].[StrValue] < N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -113,7 +113,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	[i].[StrValue] < N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -124,7 +124,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'3'
+	[i].[StrValue] = N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -135,7 +135,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'3'
+	[i].[StrValue] = N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -146,7 +146,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	[i].[StrValue] <= N'2' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -157,7 +157,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'2'
+	[i].[StrValue] <= N'2' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -168,7 +168,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	[i].[StrValue] >= N'4' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -179,7 +179,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'4'
+	[i].[StrValue] >= N'4' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -190,7 +190,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	[i].[StrValue] < N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -201,7 +201,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	[i].[StrValue] < N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -212,7 +212,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	[i].[StrValue] > N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -223,7 +223,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	[i].[StrValue] > N'3' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -234,7 +234,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	[i].[StrValue] >= N'5' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -245,7 +245,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	[i].[StrValue] >= N'5' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -256,7 +256,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'1'
+	[i].[StrValue] <= N'1' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -267,7 +267,7 @@ SELECT TOP (2)
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'1'
+	[i].[StrValue] <= N'1' AND [i].[StrValue] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012

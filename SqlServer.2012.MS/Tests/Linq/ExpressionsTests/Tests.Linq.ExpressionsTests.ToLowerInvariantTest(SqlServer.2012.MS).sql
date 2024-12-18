@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Doctor] [p]
 WHERE
-	Lower([p].[Taxonomy]) = N'psychiatry'
+	Lower([p].[Taxonomy]) = N'psychiatry' AND Lower([p].[Taxonomy]) IS NOT NULL
 
