@@ -12,5 +12,8 @@ SELECT
 FROM
 	"AllTypes" e
 WHERE
-	e."timestampDataType" = :dt AND e."timestampTZDataType" = :dt_1
+	e."timestampDataType" = :dt AND
+	e."timestampDataType" IS NOT NULL AND
+	e."timestampTZDataType" = :dt_1 AND
+	e."timestampTZDataType" IS NOT NULL
 

@@ -108,7 +108,7 @@ SET
 FROM
 	"Issue4193Employee" r
 WHERE
-	"Issue4193Person"."EmployeeId" = r."Id"
+	"Issue4193Person"."EmployeeId" = r."Id" AND "Issue4193Person"."EmployeeId" IS NOT NULL
 RETURNING
 	"Issue4193Person"."EmployeeId"
 

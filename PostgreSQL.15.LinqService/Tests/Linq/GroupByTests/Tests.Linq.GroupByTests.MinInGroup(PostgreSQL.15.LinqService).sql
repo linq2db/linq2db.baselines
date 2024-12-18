@@ -344,20 +344,24 @@ SELECT
 	MIN(g_1."DataValue"),
 	MIN(g_1."DataValue"),
 	MIN(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 AND (g_1."DataValue"::decimal % 2)::decimal IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 AND (g_1."DataValue"::decimal % 2)::decimal IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(DISTINCT g_1."DataValue"),
 	MIN(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 AND (g_1."DataValue"::decimal % 2)::decimal IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	MIN(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 AND (g_1."DataValue"::decimal % 2)::decimal IS NOT NULL
+			THEN g_1."DataValue"
 		ELSE NULL
 	END)
 FROM

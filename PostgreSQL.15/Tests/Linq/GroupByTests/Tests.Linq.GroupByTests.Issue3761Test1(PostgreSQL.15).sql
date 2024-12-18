@@ -38,7 +38,7 @@ FROM
 		FROM
 			"Issue3761Table" n
 		WHERE
-			n."DATUM" < '2019-01-01'::date
+			n."DATUM" < '2019-01-01'::date AND n."DATUM" IS NOT NULL
 	) t1
 GROUP BY
 	t1."Year_1",

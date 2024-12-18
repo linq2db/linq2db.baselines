@@ -18,5 +18,5 @@ SELECT
 FROM
 	"Parent" t
 WHERE
-	t."Value1" = :param
+	t."Value1" = :param AND t."Value1" IS NOT NULL
 
