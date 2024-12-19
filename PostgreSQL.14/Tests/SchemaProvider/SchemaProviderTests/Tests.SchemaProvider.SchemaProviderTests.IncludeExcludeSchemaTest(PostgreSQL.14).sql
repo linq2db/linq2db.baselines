@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -69,11 +69,6 @@ BeforeExecute
 					WHERE
 						pg_constraint.contype = 'p'
 						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -217,11 +212,6 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 
 SELECT	r.ROUTINE_CATALOG,
 		r.ROUTINE_SCHEMA,
@@ -282,7 +272,7 @@ RollbackTransaction
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -350,11 +340,6 @@ BeforeExecute
 					WHERE
 						pg_constraint.contype = 'p'
 						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -498,11 +483,6 @@ BeforeExecute
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 
 SELECT	r.ROUTINE_CATALOG,
 		r.ROUTINE_SCHEMA,
@@ -543,7 +523,7 @@ RollbackTransaction
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -611,11 +591,6 @@ BeforeExecute
 					WHERE
 						pg_constraint.contype = 'p'
 						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('IncludeExcludeSchemaTest')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -755,11 +730,6 @@ BeforeExecute
 				WHERE
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('IncludeExcludeSchemaTest')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
