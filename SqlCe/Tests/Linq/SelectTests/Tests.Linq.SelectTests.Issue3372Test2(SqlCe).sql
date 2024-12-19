@@ -4,10 +4,10 @@
 SELECT
 	[e].[FirstName],
 	CASE
-		WHEN [a_Person].[FirstName] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL
+		WHEN [a_Patient].[PersonID] IS NOT NULL AND [a_Person].[PersonID] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL
 			THEN 1
 		ELSE 0
-	END as [c1],
+	END as [cond],
 	[a_Person].[MiddleName]
 FROM
 	[Person] [e]

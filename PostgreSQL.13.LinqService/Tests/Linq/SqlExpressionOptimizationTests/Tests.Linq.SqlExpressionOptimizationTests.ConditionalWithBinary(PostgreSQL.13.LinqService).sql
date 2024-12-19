@@ -704,7 +704,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	x."BoolValue"
+	x."BoolValue" = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -735,7 +735,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	NOT x_with_not."BoolValue"
+	x_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -766,7 +766,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	swap."BoolValue"
+	swap."BoolValue" = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -797,7 +797,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	NOT swap_with_not."BoolValue"
+	swap_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -952,7 +952,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	x."BoolValue"
+	x."BoolValue" = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -983,7 +983,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	NOT x_with_not."BoolValue"
+	x_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1014,7 +1014,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	swap."BoolValue"
+	swap."BoolValue" = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1045,7 +1045,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	NOT swap_with_not."BoolValue"
+	swap_with_not."BoolValue" <> True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

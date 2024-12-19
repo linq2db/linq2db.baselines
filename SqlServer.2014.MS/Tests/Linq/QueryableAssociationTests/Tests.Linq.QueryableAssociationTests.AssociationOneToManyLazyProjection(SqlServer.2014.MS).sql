@@ -110,7 +110,7 @@ FROM
 					[SomeEntity] [e] WITH (NOLOCK)
 						OUTER APPLY (
 							SELECT TOP (1)
-								1 as [c1]
+								*
 							FROM
 								[SomeOtherEntity] [a_Other]
 							WHERE
@@ -118,7 +118,7 @@ FROM
 						) [t1]
 						OUTER APPLY (
 							SELECT TOP (1)
-								1 as [c1]
+								*
 							FROM
 								dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
 						) [t2]
@@ -155,7 +155,7 @@ FROM
 					[SomeEntity] [e] WITH (NOLOCK)
 						OUTER APPLY (
 							SELECT TOP (1)
-								1 as [c1]
+								*
 							FROM
 								[SomeOtherEntity] [a_Other]
 							WHERE
@@ -163,7 +163,7 @@ FROM
 						) [t1]
 						OUTER APPLY (
 							SELECT TOP (1)
-								1 as [c1]
+								*
 							FROM
 								dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
 						) [t2]

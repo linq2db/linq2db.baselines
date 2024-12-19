@@ -2,6 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
+	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

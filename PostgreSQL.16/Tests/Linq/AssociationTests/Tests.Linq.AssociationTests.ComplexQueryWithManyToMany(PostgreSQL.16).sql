@@ -12,7 +12,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			"Parent" li
 				INNER JOIN "Child" "a_ManyToMany" ON li."ParentID" = "a_ManyToMany"."ParentID"

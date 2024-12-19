@@ -663,7 +663,6 @@ SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],
 	[a_ObjectBOptional].[Id],
-	IIF([a_ObjectBOptional].[Id] IS NOT NULL AND [a_ObjectCRequired].[Id] IS NOT NULL, True, False),
 	[a_ObjectCRequired].[Id],
 	[a_ObjectCRequired].[FK]
 FROM

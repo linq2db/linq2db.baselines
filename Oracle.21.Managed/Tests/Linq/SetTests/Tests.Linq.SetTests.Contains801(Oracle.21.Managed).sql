@@ -2,6 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
+	2,
 	ch."ChildID",
 	gc."GrandChildID"
 FROM

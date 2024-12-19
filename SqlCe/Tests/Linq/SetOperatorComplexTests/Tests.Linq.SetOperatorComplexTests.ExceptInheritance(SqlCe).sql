@@ -102,7 +102,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[t1].[BookId],
+	[t1].[cond],
 	[t1].[Discriminator],
 	[t1].[BookName],
 	[t1].[NovelScore],
@@ -110,7 +110,7 @@ SELECT DISTINCT
 FROM
 	(
 		SELECT
-			[a_Book].[BookId],
+			[a_Book].[BookId] as [cond],
 			[a_Book].[Discriminator],
 			[a_Book].[BookName],
 			[a_Book].[RomanScore],
@@ -132,8 +132,8 @@ WHERE
 				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 		WHERE
 			[a_Book_1].[Discriminator] = 'Novel' AND
-			([t1].[BookId] = [a_Book_1].[BookId] OR [t1].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-			[t1].[BookId] = [a_Book_1].[BookId] AND
+			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
 			([t1].[Discriminator] = [a_Book_1].[Discriminator] OR [t1].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
 			([t1].[BookName] = [a_Book_1].[BookName] OR [t1].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
 			([t1].[RomanScore] = [a_Book_1].[RomanScore] OR [t1].[RomanScore] IS NULL AND [a_Book_1].[RomanScore] IS NULL) AND
@@ -148,7 +148,7 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	[a_Book].[Discriminator] as [cond],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

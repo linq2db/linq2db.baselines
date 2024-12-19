@@ -2,6 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
+	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

@@ -2,6 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
+	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

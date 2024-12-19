@@ -36,8 +36,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @Month Int -- Int32
-SET     @Month = 2
 
 SELECT TOP (2)
 	[e].[Id],
@@ -45,7 +43,8 @@ SELECT TOP (2)
 FROM
 	[Issue4226Table] [e]
 WHERE
-	DatePart(month, [e].[Date]) = @Month
+	DatePart(month, [e].[Date]) = DatePart(month, DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)) OR
+	DatePart(month, [e].[Date]) IS NULL AND DatePart(month, DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)) IS NULL
 
 BeforeExecute
 -- SqlServer.2012

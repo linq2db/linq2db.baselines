@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	:param::Int = t1."SmallIntValue"
+	:param::Int = t1."SmallIntValue" OR :param::Int IS NULL AND t1."SmallIntValue" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

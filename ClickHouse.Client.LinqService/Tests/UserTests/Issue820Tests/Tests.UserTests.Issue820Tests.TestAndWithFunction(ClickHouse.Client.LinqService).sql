@@ -15,7 +15,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	toInt32(toInt16(1)) = t1.SmallIntValue
+	toInt32(toInt16(1)) = t1.SmallIntValue OR toInt32(toInt16(1)) IS NULL AND t1.SmallIntValue IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
