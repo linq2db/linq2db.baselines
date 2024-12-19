@@ -224,7 +224,7 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN SubItem2 d ON (m_2.Id = d.ParentId OR m_2.Id IS NULL AND d.ParentId IS NULL)
+		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId OR m_2.Id IS NULL AND d.ParentId IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

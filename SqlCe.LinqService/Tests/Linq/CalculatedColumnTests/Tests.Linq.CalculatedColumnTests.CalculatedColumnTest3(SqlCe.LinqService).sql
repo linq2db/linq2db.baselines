@@ -3,43 +3,32 @@
 
 SELECT
 	[t2].[COUNT_1],
-	[i_1].[PersonID],
-	[i_1].[FirstName],
-	[i_1].[LastName],
-	[i_1].[MiddleName],
-	[i_1].[Gender],
-	[i_1].[FullName],
-	[i_1].[FullName] as [AsSqlFullName],
-	[i_1].[DoctorCount]
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender],
+	[t].[LastName] + ', ' + [t].[FirstName] as [FullName],
+	[t].[LastName] + ', ' + [t].[FirstName] as [AsSqlFullName],
+	[t1].[DoctorCount]
 FROM
-	(
-		SELECT
-			[i].[FirstName],
-			[i].[PersonID],
-			[i].[LastName],
-			[i].[MiddleName],
-			[i].[Gender],
-			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
-			[t1].[COUNT_1] as [DoctorCount]
-		FROM
-			[Person] [i]
-				OUTER APPLY (
-					SELECT
-						COUNT(*) as [COUNT_1]
-					FROM
-						[Doctor] [d]
-					WHERE
-						[d].[PersonID] = [i].[PersonID]
-				) [t1]
-	) [i_1]
+	[Person] [t]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [DoctorCount]
+			FROM
+				[Doctor] [d]
+			WHERE
+				[d].[PersonID] = [t].[PersonID]
+		) [t1]
 		OUTER APPLY (
 			SELECT
 				COUNT(*) as [COUNT_1]
 			FROM
 				[Doctor] [d_1]
 			WHERE
-				[d_1].[PersonID] = [i_1].[PersonID]
+				[d_1].[PersonID] = [t].[PersonID]
 		) [t2]
 WHERE
-	[i_1].[FirstName] <> 'John'
+	[t].[FirstName] <> 'John'
 

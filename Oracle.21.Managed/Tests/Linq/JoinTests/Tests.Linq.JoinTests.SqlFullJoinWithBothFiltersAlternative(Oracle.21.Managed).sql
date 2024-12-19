@@ -6,12 +6,12 @@ DECLARE @id2 Int32
 SET     @id2 = 2
 
 SELECT
-	t2."left_1",
+	t2."ParentID",
 	t1."ParentID"
 FROM
 	(
 		SELECT
-			left_1."ParentID" as "left_1"
+			left_1."ParentID"
 		FROM
 			"Parent" left_1
 		WHERE
@@ -24,7 +24,7 @@ FROM
 				"Parent" right_1
 			WHERE
 				right_1."ParentID" <> :id2
-		) t1 ON t1."ParentID" = t2."left_1"
+		) t1 ON t1."ParentID" = t2."ParentID"
 ORDER BY
-	t2."left_1"
+	t2."ParentID"
 

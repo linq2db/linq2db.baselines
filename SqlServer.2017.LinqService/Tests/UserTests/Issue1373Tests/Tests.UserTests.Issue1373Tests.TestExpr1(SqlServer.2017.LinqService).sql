@@ -31,8 +31,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @Field1 NVarChar(4000) -- String
-SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -42,7 +40,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	2,
-	@Field1
+	NULL
 )
 
 BeforeExecute

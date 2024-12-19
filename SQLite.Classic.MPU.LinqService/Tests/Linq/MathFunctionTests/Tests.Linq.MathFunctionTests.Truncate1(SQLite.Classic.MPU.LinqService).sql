@@ -2,17 +2,17 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t_1].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [t].[MoneyValue] >= 0 THEN Floor([t].[MoneyValue])
-				ELSE Ceiling([t].[MoneyValue])
-			END as [c1]
+				WHEN [p].[MoneyValue] >= 0 THEN Floor([p].[MoneyValue])
+				ELSE Ceiling([p].[MoneyValue])
+			END as [Value_1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.1
+	[t].[Value_1] <> 0.1
 

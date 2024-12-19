@@ -111,6 +111,7 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
+	CAST(N'Discriminator' AS NVarChar(4000)),
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[BookName]
@@ -122,6 +123,7 @@ WHERE
 	[a_Book].[Discriminator] = N'Roman'
 INTERSECT
 SELECT
+	CAST(N'Discriminator' AS NVarChar(4000)),
 	[a_Book_1].[Discriminator],
 	[a_Book_1].[BookName],
 	[a_Book_1].[BookName]

@@ -13,7 +13,7 @@ WHERE
 		FROM
 			Parent p
 		WHERE
-			p.ParentID IS NOT NULL AND c_1.ParentID = p.ParentID
+			c_1.ParentID = p.ParentID
 	)
 
 BeforeExecute

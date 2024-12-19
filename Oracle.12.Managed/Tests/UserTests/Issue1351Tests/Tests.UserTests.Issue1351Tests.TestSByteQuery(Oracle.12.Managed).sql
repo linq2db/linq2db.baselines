@@ -51,7 +51,7 @@ SELECT
 FROM
 	"T1351Model" t1
 WHERE
-	(t1."TestNullable" <> 1 OR t1."TestNullable" IS NULL)
+	t1."TestNullable" <> 1 OR t1."TestNullable" IS NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

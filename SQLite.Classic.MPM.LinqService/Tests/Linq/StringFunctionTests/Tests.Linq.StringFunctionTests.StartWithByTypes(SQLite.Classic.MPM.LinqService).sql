@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @str NVarChar(5) -- String
+DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 NVarChar(5) -- String
+DECLARE @str_1 NChar(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 NVarChar(5) -- String
+DECLARE @str_2 VarChar(5) -- AnsiString
 SET     @str_2 = 'some%'
 DECLARE @str_3 NVarChar(5) -- String
 SET     @str_3 = 'some%'

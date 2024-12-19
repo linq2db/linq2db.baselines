@@ -30,8 +30,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Field1 Varchar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -41,7 +39,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	:Field1
+	NULL
 )
 
 BeforeExecute

@@ -123,12 +123,18 @@ DECLARE @group_1 Int32
 SET     @group_1 = 7
 
 SELECT
-	p."Id",
-	NTH_VALUE(p."Id", 2) FROM FIRST OVER(ORDER BY p."Order" DESC)
+	p_1."Id",
+	NTH_VALUE(p_1."Id", 2) FROM FIRST OVER(ORDER BY p_1."Order_1" DESC)
 FROM
-	"Position" p
-WHERE
-	p."Group" = :group_1
+	(
+		SELECT
+			p."Id",
+			p."Order" as "Order_1"
+		FROM
+			"Position" p
+		WHERE
+			p."Group" = :group_1
+	) p_1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

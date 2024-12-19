@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.ParentID,
+	NVL(p.ParentID, NULL),
 	p.Value1,
 	NULL::Int,
 	NULL::Int,

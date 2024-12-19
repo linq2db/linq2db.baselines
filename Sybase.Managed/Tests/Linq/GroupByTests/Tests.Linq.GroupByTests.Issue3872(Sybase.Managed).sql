@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'Issue3761Table') IS NULL)
 			[LETO]     Int      NOT NULL,
 			[STEVILKA] Int      NOT NULL,
 			[DATUM]    DateTime     NULL,
-			[SKUPAJ]   Decimal      NULL,
+			[SKUPAJ]   DECIMAL      NULL,
 
 			CONSTRAINT [PK_Issue3761Table] PRIMARY KEY CLUSTERED ([LETO], [STEVILKA])
 		)

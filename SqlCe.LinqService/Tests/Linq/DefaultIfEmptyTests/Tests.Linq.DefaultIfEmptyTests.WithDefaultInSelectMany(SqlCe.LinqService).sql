@@ -3,13 +3,14 @@
 
 SELECT
 	[s].[ParentID],
-	[c_1].[ParentID] as [ParentID_1],
+	[c_1].[ParentID] as [cond],
 	[c_1].[ChildID]
 FROM
 	[Parent] [s]
 		LEFT JOIN [Child] [c_1] ON [s].[ParentID] = [c_1].[ParentID]
 WHERE
-	([c_1].[ChildID] < 0 AND [c_1].[ParentID] IS NOT NULL OR [c_1].[ParentID] IS NULL)
+	[c_1].[ChildID] < 0 AND [c_1].[ParentID] IS NOT NULL OR
+	[c_1].[ParentID] IS NULL
 
 BeforeExecute
 -- SqlCe

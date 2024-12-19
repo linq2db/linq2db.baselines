@@ -9,10 +9,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
-DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7)
 
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
@@ -23,8 +19,8 @@ USING (VALUES
 	[source_datetime2DataType],
 	[source_datetimeoffsetDataType]
 )
-ON (([Source].[source_datetime2DataType] <> @DateTime OR [Source].[source_datetime2DataType] IS NULL) AND
-([Source].[source_datetimeoffsetDataType] <> @DateTimeOffset OR [Source].[source_datetimeoffsetDataType] IS NULL))
+ON (([Source].[source_datetime2DataType] <> DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7) OR [Source].[source_datetime2DataType] IS NULL) AND
+([Source].[source_datetimeoffsetDataType] <> DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7) OR [Source].[source_datetimeoffsetDataType] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT

@@ -13,8 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	NOT CASE
-		WHEN t."MoneyValue" <> 4.5 THEN True
-		ELSE False
-	END
+	t."MoneyValue" = 4.5
 

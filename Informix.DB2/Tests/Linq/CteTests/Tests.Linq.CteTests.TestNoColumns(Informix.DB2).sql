@@ -9,12 +9,11 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-WITH CTE1_ (ParentID, ChildID)
+WITH CTE1_ (c1)
 AS
 (
 	SELECT
-		t1.ParentID,
-		t1.ChildID
+		1
 	FROM
 		Child t1
 )
@@ -26,11 +25,11 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-WITH CTE1_ (C_ChildID)
+WITH CTE1_ (c1)
 AS
 (
 	SELECT
-		c_1.ChildID
+		1
 	FROM
 		Child c_1
 )
@@ -42,10 +41,11 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 
-WITH CTE1_ AS
+WITH CTE1_ (c1)
+AS
 (
 	SELECT
-		*
+		1
 	FROM
 		Child c_1
 )
@@ -56,8 +56,8 @@ SELECT
 				*
 			FROM
 				CTE1_ t1
-		) THEN 't'
-		ELSE 'f'
+		) THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

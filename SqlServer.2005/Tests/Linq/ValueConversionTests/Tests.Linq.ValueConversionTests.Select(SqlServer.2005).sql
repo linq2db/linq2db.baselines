@@ -149,10 +149,10 @@ FROM
 		FROM
 			(
 				SELECT
-					[q].[Id],
-					[q].[Value2]
+					[t].[Id],
+					[t].[Value2]
 				FROM
-					[ValueConversion] [q]
+					[ValueConversion] [t]
 			) [t1]
 	) [t2]
 WHERE

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
@@ -11,7 +11,7 @@ SELECT
 			FROM
 				"Child" "c_1"
 			WHERE
-				"c_1"."ParentID" = @ParentID
+				"c_1"."ParentID" = @p
 		)
 			THEN '1'
 		ELSE '0'
@@ -20,8 +20,8 @@ FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = -1
+DECLARE @p Integer -- Int32
+SET     @p = -1
 
 SELECT
 	CASE
@@ -31,7 +31,7 @@ SELECT
 			FROM
 				"Child" "c_1"
 			WHERE
-				"c_1"."ParentID" = @ParentID
+				"c_1"."ParentID" = @p
 		)
 			THEN '1'
 		ELSE '0'

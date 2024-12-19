@@ -252,13 +252,11 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @param Int32
 SET     @param = 200
-DECLARE @param_1 Int32
-SET     @param_1 = 200
 
 SELECT
 	`s`.`Id` + @param,
 	`s`.`Value` + @param,
-	Concat(`s`.`ValueStr`, @param_1)
+	Concat(`s`.`ValueStr`, @param)
 FROM
 	`TableWithData` `s`
 WHERE

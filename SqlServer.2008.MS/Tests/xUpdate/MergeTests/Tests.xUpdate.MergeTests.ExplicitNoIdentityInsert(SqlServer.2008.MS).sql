@@ -42,7 +42,7 @@ VALUES
 (
 	N'Inserted 1',
 	N'Inserted 2',
-	N'M'
+	'M'
 )
 ;
 

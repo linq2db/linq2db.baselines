@@ -106,15 +106,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1]
+			[t2].[Id1]
 		FROM
 			(
 				SELECT
-					[Master].[Id1]
+					[t1].[Id1]
 				FROM
-					[MasterClass] [Master]
+					[MasterClass] [t1]
 				LIMIT @take
-			) [t1]
+			) [t2]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
@@ -126,12 +126,12 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[Master].[Id1],
-	[Master].[Id2],
-	[Master].[Value],
-	[Master].[ByteValues]
+	[t1].[Id1],
+	[t1].[Id2],
+	[t1].[Value],
+	[t1].[ByteValues]
 FROM
-	[MasterClass] [Master]
+	[MasterClass] [t1]
 LIMIT @take
 
 BeforeExecute

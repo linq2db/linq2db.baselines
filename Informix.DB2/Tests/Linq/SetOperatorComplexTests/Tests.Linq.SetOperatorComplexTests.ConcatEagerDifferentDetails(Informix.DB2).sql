@@ -503,24 +503,18 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	m_1.BookId,
-	m_1.BookId_1,
+	m_1.Id,
 	a_Author.AuthorId,
 	a_Author.AuthorName
 FROM
 	(
 		SELECT DISTINCT
-			t3.BookId,
-			t3.BookId_1
+			t3.Id
 		FROM
 			(
 				SELECT
-					a_Book.BookId as Id,
-					a_Book.BookName,
-					a_Book.BookId,
-					a_Book.BookId as BookId_1,
-					NULL::Int as c1,
-					0 as projection__set_id__
+					0::Int as projection__set_id__,
+					a_Book.BookId as Id
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
@@ -529,12 +523,8 @@ FROM
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
 				SELECT
-					a_Book_1.BookId as Id,
-					a_Book_1.BookName,
-					NULL::Int as BookId,
-					NULL::Int as BookId_1,
-					a_Book_1.BookId as c1,
-					1 as projection__set_id__
+					1::Int as projection__set_id__,
+					NULL::Int as Id
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
@@ -545,10 +535,10 @@ FROM
 		WHERE
 			t3.projection__set_id__ = 0
 	) m_1
-		INNER JOIN BookAuthor d ON d.FkBookId = m_1.BookId AND m_1.BookId_1 IS NOT NULL
+		INNER JOIN BookAuthor d ON d.FkBookId = m_1.Id
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 WHERE
-	(a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL)
+	a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -564,12 +554,8 @@ FROM
 		FROM
 			(
 				SELECT
-					a_Book.BookId as Id,
-					a_Book.BookName,
-					a_Book.BookId,
-					a_Book.BookId as BookId_1,
-					NULL::Int as c1,
-					0 as projection__set_id__
+					0::Int as projection__set_id__,
+					NULL::Int as c1
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
@@ -578,12 +564,8 @@ FROM
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
 				SELECT
-					a_Book_1.BookId as Id,
-					a_Book_1.BookName,
-					NULL::Int as BookId,
-					NULL::Int as BookId_1,
-					a_Book_1.BookId as c1,
-					1 as projection__set_id__
+					1::Int as projection__set_id__,
+					a_Book_1.BookId as c1
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
@@ -605,8 +587,7 @@ BeforeExecute
 SELECT
 	a_Book.BookId,
 	a_Book.BookName,
-	0,
-	a_Book.BookId,
+	0::Int,
 	a_Book.BookId,
 	NULL::Int
 FROM
@@ -619,8 +600,7 @@ UNION ALL
 SELECT
 	a_Book_1.BookId,
 	a_Book_1.BookName,
-	1,
-	NULL::Int,
+	1::Int,
 	NULL::Int,
 	a_Book_1.BookId
 FROM

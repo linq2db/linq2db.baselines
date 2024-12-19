@@ -84,23 +84,27 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Data VarChar(9) -- String
+SET     @Data = '***OOO***'
 
 UPDATE
 	TrimTestTable t
 SET
-	"Data" = '***OOO***'
+	"Data" = @Data
 WHERE
 	t."Data" = '***XXX***'
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Data VarChar(9) -- String
+SET     @Data = '***SSS***'
 DECLARE @p VarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
 	TrimTestTable t
 SET
-	"Data" = '***SSS***'
+	"Data" = @Data
 WHERE
 	t."Data" = @p
 

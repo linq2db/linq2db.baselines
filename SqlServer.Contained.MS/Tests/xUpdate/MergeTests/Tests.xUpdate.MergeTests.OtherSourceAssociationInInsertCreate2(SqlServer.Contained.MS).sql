@@ -34,7 +34,7 @@ VALUES
 (
 	[Source].[source_Patient_Diagnosis],
 	N'Inserted 2',
-	N'U'
+	'U'
 )
 ;
 

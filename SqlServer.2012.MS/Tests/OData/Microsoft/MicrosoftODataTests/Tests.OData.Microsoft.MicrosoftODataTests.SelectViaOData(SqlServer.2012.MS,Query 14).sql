@@ -44,7 +44,7 @@ SELECT
 FROM
 	[odata_person] [it]
 WHERE
-	([it].[Title] = @TypedProperty OR [it].[Title] = @TypedProperty_1)
+	[it].[Title] = @TypedProperty OR [it].[Title] = @TypedProperty_1
 GROUP BY
 	[it].[Title]
 

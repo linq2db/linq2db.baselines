@@ -2,7 +2,6 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	2,
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM

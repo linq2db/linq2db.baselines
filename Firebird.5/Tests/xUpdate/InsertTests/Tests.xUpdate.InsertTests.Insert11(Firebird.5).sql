@@ -48,6 +48,6 @@ SELECT
 FROM
 	"Person" "p2"
 WHERE
-	("p2"."PersonID" > @id OR "p2"."PersonID" = 0)
+	"p2"."PersonID" > @id OR "p2"."PersonID" = 0
 FETCH NEXT 2 ROWS ONLY
 

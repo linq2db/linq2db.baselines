@@ -6,8 +6,8 @@ SELECT
 	[p1].[ParentID] as [ParentID_1],
 	[p1].[Value1],
 	NULL as [c1],
-	NULL as [c2],
-	NULL as [c3]
+	NULL as [ParentID_2],
+	NULL as [ChildID]
 FROM
 	[Parent] [p1]
 UNION
@@ -16,8 +16,8 @@ SELECT
 	NULL as [ParentID_1],
 	NULL as [Value1],
 	[t1].[ParentID] as [c1],
-	[t1].[ParentID] as [c2],
-	[t1].[ChildID] as [c3]
+	[t1].[ParentID] as [ParentID_2],
+	[t1].[ChildID]
 FROM
 	[Parent] [p2]
 		OUTER APPLY (

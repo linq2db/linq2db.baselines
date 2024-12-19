@@ -52,12 +52,12 @@ INSERT INTO "Issue3834Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Nesto AS VARCHAR(5)),
-	CAST(@Nest AS VARCHAR(6)),
-	CAST(@Whatsov AS VARCHAR(7)),
-	CAST(@Co2Grund AS VARCHAR(3)),
-	CAST(@Co2Aend AS VARCHAR(4))
+	@Id,
+	@Nesto,
+	@Nest,
+	@Whatsov,
+	@Co2Grund,
+	@Co2Aend
 )
 RETURNING
 	"Issue3834Table"."Id",

@@ -2,14 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p_1.c1
+	p.MoneyValue
 FROM
-	(
-		SELECT
-			toUInt16(p.MoneyValue) as c1
-		FROM
-			LinqDataTypes p
-	) p_1
+	LinqDataTypes p
 WHERE
-	p_1.c1 > toUInt16(0)
+	toUInt16(p.MoneyValue) > toUInt16(0)
 

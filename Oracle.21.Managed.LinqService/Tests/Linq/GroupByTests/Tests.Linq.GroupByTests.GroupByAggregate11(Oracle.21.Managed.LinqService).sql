@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	g_2."c1"
+	g_2."Key_1"
 FROM
 	(
 		SELECT
@@ -17,7 +17,7 @@ FROM
 				) > 3D
 					THEN 1
 				ELSE 0
-			END as "c1"
+			END as "Key_1"
 		FROM
 			"Parent" g_1
 		WHERE
@@ -31,5 +31,5 @@ FROM
 			) > 0
 	) g_2
 GROUP BY
-	g_2."c1"
+	g_2."Key_1"
 

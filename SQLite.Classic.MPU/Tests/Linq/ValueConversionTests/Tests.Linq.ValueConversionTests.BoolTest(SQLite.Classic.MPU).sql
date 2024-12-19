@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue VarChar -- AnsiString
-SET     @BoolValue = 'Y'
+DECLARE @true_value VarChar -- AnsiString
+SET     @true_value = 'Y'
 
 SELECT
 	[t].[Id],
@@ -63,7 +63,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue
+	[t].[BoolValue] = @true_value
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

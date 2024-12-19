@@ -186,11 +186,10 @@ SET     @take = 5
 UPDATE
 	"Parent"
 SET
-	"Value1" = t1.c1
+	"Value1" = 1
 FROM
 	(
 		SELECT
-			1 as c1,
 			x."ParentID",
 			x."Value1"
 		FROM

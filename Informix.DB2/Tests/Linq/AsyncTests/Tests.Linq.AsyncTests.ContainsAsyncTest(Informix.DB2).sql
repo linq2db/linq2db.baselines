@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				1 = t1.PersonID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

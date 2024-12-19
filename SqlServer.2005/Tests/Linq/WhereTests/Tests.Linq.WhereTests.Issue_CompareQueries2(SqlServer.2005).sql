@@ -2,57 +2,33 @@
 -- SqlServer.2005
 
 SELECT TOP (2)
-	[t1].[c1]
+	COUNT([p].[PersonID])
 FROM
-	(
+	[Person] [p]
+WHERE
+	[p].[PersonID] IN (1, 2) AND [p].[PersonID] NOT IN (
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			[p_1].[PersonID]
 		FROM
-			(
-				SELECT
-					[p].[PersonID] as [ID]
-				FROM
-					[Person] [p]
-				WHERE
-					[p].[PersonID] IN (1, 2)
-			) [rec]
+			[Person] [p_1]
 		WHERE
-			[rec].[ID] NOT IN (
-				SELECT
-					[p_1].[PersonID]
-				FROM
-					[Person] [p_1]
-				WHERE
-					[p_1].[PersonID] IN (3)
-			)
-	) [t1]
+			[p_1].[PersonID] IN (3)
+	)
 
 BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (2)
-	[t1].[c1]
+	COUNT([p].[PersonID])
 FROM
-	(
+	[Person] [p]
+WHERE
+	[p].[PersonID] IN (3) AND [p].[PersonID] NOT IN (
 		SELECT
-			COUNT([rec].[ID]) as [c1]
+			[p_1].[PersonID]
 		FROM
-			(
-				SELECT
-					[p].[PersonID] as [ID]
-				FROM
-					[Person] [p]
-				WHERE
-					[p].[PersonID] IN (3)
-			) [rec]
+			[Person] [p_1]
 		WHERE
-			[rec].[ID] NOT IN (
-				SELECT
-					[p_1].[PersonID]
-				FROM
-					[Person] [p_1]
-				WHERE
-					[p_1].[PersonID] IN (1, 2)
-			)
-	) [t1]
+			[p_1].[PersonID] IN (1, 2)
+	)
 

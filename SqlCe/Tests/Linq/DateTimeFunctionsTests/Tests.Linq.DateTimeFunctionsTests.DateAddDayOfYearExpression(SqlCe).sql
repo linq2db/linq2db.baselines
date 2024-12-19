@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = 3
+DECLARE @Value Int -- Int32
+SET     @Value = 3
 
 SELECT
-	CAST(CONVERT(NVarChar(10), DateAdd(dayofyear, @p, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
+	CAST(CONVERT(NVarChar(10), DateAdd(dayofyear, @Value, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
 FROM
 	[LinqDataTypes] [t]
 

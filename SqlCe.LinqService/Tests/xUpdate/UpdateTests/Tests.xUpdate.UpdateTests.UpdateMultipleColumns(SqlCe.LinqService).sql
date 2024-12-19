@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- SqlCe
+DECLARE @ID Int -- Int32
+SET     @ID = 1001
+DECLARE @MoneyValue Decimal(4, 0)
+SET     @MoneyValue = 1000
+DECLARE @SmallIntValue SmallInt -- Int16
+SET     @SmallIntValue = 100
 
 INSERT INTO [LinqDataTypes]
 (
@@ -9,9 +15,9 @@ INSERT INTO [LinqDataTypes]
 )
 VALUES
 (
-	1001,
-	1000,
-	100
+	@ID,
+	@MoneyValue,
+	@SmallIntValue
 )
 
 BeforeExecute

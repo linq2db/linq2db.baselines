@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @arr VarBinary(4) -- Binary
+SET     @arr = 0x01020304
 
 INSERT INTO [LinqDataTypes]
 (
@@ -19,7 +21,7 @@ VALUES
 (
 	1001,
 	1,
-	0x01020304
+	@arr
 )
 
 BeforeExecute

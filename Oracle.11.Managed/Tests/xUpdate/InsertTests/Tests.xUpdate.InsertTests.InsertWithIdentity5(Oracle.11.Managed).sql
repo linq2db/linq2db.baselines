@@ -38,8 +38,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @FirstName Varchar2(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p Varchar2(5) -- String
+SET     @p = 'John0'
 
 SELECT
 	p."FirstName",
@@ -50,7 +50,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard' AND
+	p."FirstName" = :p AND p."LastName" = 'Shepard' AND
 	ROWNUM <= 2
 
 BeforeExecute
@@ -85,8 +85,8 @@ RETURNING
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @FirstName Varchar2(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p Varchar2(5) -- String
+SET     @p = 'John1'
 
 SELECT
 	p."FirstName",
@@ -97,7 +97,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" = :FirstName AND p."LastName" = 'Shepard' AND
+	p."FirstName" = :p AND p."LastName" = 'Shepard' AND
 	ROWNUM <= 2
 
 BeforeExecute

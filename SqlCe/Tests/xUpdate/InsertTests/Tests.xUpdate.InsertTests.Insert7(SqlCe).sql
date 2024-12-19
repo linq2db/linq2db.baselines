@@ -8,6 +8,10 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @id Int -- Int32
+SET     @id = 1001
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 
 INSERT INTO [Child]
 (
@@ -16,8 +20,8 @@ INSERT INTO [Child]
 )
 VALUES
 (
-	1001,
-	1
+	@id,
+	@ParentID
 )
 
 BeforeExecute

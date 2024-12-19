@@ -2,29 +2,29 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0102030405'::bytea
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 UPDATE
 	"LinqDataTypes"
 SET
 	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes"."ID" = :ID
+	"LinqDataTypes"."ID" = :p
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0504030201'::bytea
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 UPDATE
 	"LinqDataTypes"
 SET
 	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes"."ID" = :ID
+	"LinqDataTypes"."ID" = :p
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

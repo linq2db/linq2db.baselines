@@ -38,9 +38,9 @@ INSERT INTO "TableWithData"
 )
 VALUES
 (
-	CAST(@Value AS Int),
-	CAST(@Id AS Int),
-	CAST(@ValueStr AS VARCHAR(8))
+	@Value,
+	@Id,
+	@ValueStr
 )
 RETURNING
 	"TableWithData"."Id",

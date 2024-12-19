@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS [Issue1303]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 INSERT INTO [Issue1303]
 (
@@ -31,8 +27,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute
@@ -50,8 +46,6 @@ LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
 
 SELECT
 	[t1].[ID],
@@ -60,13 +54,11 @@ SELECT
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Array] = @Array
+	[t1].[Array] = X'010203'
 LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 SELECT
 	[t1].[ID],
@@ -75,7 +67,7 @@ SELECT
 FROM
 	[Issue1303] [t1]
 WHERE
-	[t1].[Binary] = @Binary
+	[t1].[Binary] = X'0405'
 LIMIT 2
 
 BeforeExecute

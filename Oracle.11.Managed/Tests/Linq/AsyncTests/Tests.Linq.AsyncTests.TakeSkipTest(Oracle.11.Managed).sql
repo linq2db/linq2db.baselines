@@ -29,6 +29,8 @@ FROM
 	) t3
 WHERE
 	t3.RN > :skip
+ORDER BY
+	t3."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
@@ -61,4 +63,6 @@ FROM
 	) t3
 WHERE
 	t3.RN > :skip
+ORDER BY
+	t3."ParentID"
 

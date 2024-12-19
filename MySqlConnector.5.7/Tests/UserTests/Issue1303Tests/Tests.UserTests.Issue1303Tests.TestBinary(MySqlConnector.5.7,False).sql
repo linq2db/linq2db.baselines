@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS `Issue1303`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Array Blob(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary Blob(2) -- Binary
-SET     @Binary = 0x0405
 
 INSERT INTO `Issue1303`
 (
@@ -31,8 +27,8 @@ INSERT INTO `Issue1303`
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	0x010203,
+	0x0405
 )
 
 BeforeExecute
@@ -50,8 +46,6 @@ LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Array Blob(3) -- Binary
-SET     @Array = 0x010203
 
 SELECT
 	`t1`.`ID`,
@@ -60,13 +54,11 @@ SELECT
 FROM
 	`Issue1303` `t1`
 WHERE
-	`t1`.`Array` = @Array
+	`t1`.`Array` = 0x010203
 LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Binary Blob(2) -- Binary
-SET     @Binary = 0x0405
 
 SELECT
 	`t1`.`ID`,
@@ -75,7 +67,7 @@ SELECT
 FROM
 	`Issue1303` `t1`
 WHERE
-	`t1`.`Binary` = @Binary
+	`t1`.`Binary` = 0x0405
 LIMIT 2
 
 BeforeExecute

@@ -63,10 +63,10 @@ UPDATE
 SET
 	[a_MainRequired].[Field] = N'test'
 FROM
-	[AssociatedTable] [pat]
-		INNER JOIN [MainTable] [a_MainRequired] ON [pat].[Id] = [a_MainRequired].[Id]
+	[AssociatedTable] [p]
+		INNER JOIN [MainTable] [a_MainRequired] ON [p].[Id] = [a_MainRequired].[Id]
 WHERE
-	[pat].[Id] = @id
+	[p].[Id] = @id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

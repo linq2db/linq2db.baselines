@@ -44,10 +44,10 @@ INSERT INTO "Issue3581Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(8)),
-	CAST(@Id_1 AS VARCHAR(1)),
-	CAST(@Source AS VARCHAR(7))
+	@Id,
+	@Name,
+	@Id_1,
+	@Source
 )
 RETURNING
 	"Issue3581Table"."Id",

@@ -17,7 +17,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@Char AS CHAR(1))
+	@Char
 )
 
 BeforeExecute

@@ -38,8 +38,8 @@ RETURNING
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John0'
 
 SELECT FIRST 2
 	"p"."FirstName",
@@ -50,7 +50,7 @@ SELECT FIRST 2
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
@@ -84,8 +84,8 @@ RETURNING
 
 BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John1'
 
 SELECT FIRST 2
 	"p"."FirstName",
@@ -96,7 +96,7 @@ SELECT FIRST 2
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" = @FirstName AND "p"."LastName" = 'Shepard'
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 
 BeforeExecute
 -- Firebird.2.5 Firebird

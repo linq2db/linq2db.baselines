@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	pp_1.Value_1
+	pp.Value_1
 FROM
 	(
 		SELECT
-			roundBankers(pp.MoneyValue, 2) as Value_1
+			roundBankers(p.MoneyValue, 2) as Value_1
 		FROM
-			LinqDataTypes pp
-	) pp_1
+			LinqDataTypes p
+	) pp
 WHERE
-	pp_1.Value_1 <> toDecimal128('0', 10) AND pp_1.Value_1 <> toDecimal128('7', 10)
+	pp.Value_1 <> toDecimal64('0', 4) AND pp.Value_1 <> toDecimal64('7', 4)
 

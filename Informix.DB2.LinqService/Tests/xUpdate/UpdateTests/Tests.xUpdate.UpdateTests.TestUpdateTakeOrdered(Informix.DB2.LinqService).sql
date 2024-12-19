@@ -180,6 +180,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 UPDATE
 	Parent
@@ -191,7 +193,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT FIRST 5
+				SELECT FIRST @take
 					x.ParentID,
 					x.Value1
 				FROM
@@ -209,11 +211,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.Value1
+	r.Value1
 FROM
-	Parent p
+	Parent r
 WHERE
-	p.ParentID >= 1000
+	r.ParentID >= 1000
 ORDER BY
-	p.ParentID
+	r.ParentID
 

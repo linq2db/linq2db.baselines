@@ -89,7 +89,7 @@ SELECT
 	SUM(a_ActualStage.Id)
 FROM
 	"Task" it
-		LEFT JOIN TaskStage a_ActualStage ON it.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 't'
+		LEFT JOIN TaskStage a_ActualStage ON it.Id = a_ActualStage.TaskId AND a_ActualStage.Actual = 't'::BOOLEAN
 GROUP BY
 	it.Id
 

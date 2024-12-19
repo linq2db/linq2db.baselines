@@ -2,14 +2,14 @@
 -- SqlServer.2008
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			Abs([t].[MoneyValue]) as [c1]
+			Abs([p].[MoneyValue]) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] > 0
+	[t].[c1] > 0
 

@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @str VarChar(5) -- String
+DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 VarChar(5) -- String
+DECLARE @str_1 String(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- String
+DECLARE @str_2 VarChar(5) -- AnsiString
 SET     @str_2 = 'some%'
 DECLARE @str_3 VarChar(5) -- String
 SET     @str_3 = 'some%'

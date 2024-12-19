@@ -10,7 +10,8 @@ BeforeExecute
 
 CREATE COLUMN TABLE "mega_composites"
 (
-	"ref1" BigInt     NULL
+	"ref1"       BigInt     NULL,
+	"y1.q1.ref1" BigInt     NULL
 )
 
 BeforeExecute
@@ -67,13 +68,17 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1  -- Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1  -- Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO "mega_composites"
 (
-	"ref1"
+	"ref1",
+	"y1.q1.ref1"
 )
 VALUES
 (
+	?,
 	?
 )
 
@@ -81,13 +86,17 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1  -- Int64
 SET     @ref1 = 1
+DECLARE @y1_q1_ref1  -- Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO "mega_composites"
 (
-	"ref1"
+	"ref1",
+	"y1.q1.ref1"
 )
 VALUES
 (
+	?,
 	?
 )
 
@@ -95,13 +104,17 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1  -- Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1  -- Int64
+SET     @y1_q1_ref1 = 1
 
 INSERT INTO "mega_composites"
 (
-	"ref1"
+	"ref1",
+	"y1.q1.ref1"
 )
 VALUES
 (
+	?,
 	?
 )
 
@@ -112,12 +125,12 @@ SET     @take = 2
 
 SELECT
 	"x"."ref1",
-	"t1"."asdfgh"
+	"t1"."face_ref1"
 FROM
 	"mega_composites" "x"
 		LEFT JOIN LATERAL (
 			SELECT
-				"q"."asdfgh"
+				"q"."asdfgh" as "face_ref1"
 			FROM
 				"qwerty" "q"
 			WHERE

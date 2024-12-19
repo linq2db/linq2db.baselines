@@ -9,10 +9,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @DateTime DateTime2
-SET     @DateTime = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
-DECLARE @DateTimeOffset DateTimeOffset
-SET     @DateTimeOffset = CAST('2020-02-29T17:54:55.1231234+00:40' AS DATETIMEOFFSET)
 
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
@@ -23,8 +19,8 @@ USING (VALUES
 	[source_datetime2DataType],
 	[source_datetimeoffsetDataType]
 )
-ON (([Source].[source_datetime2DataType] <> @DateTime OR [Source].[source_datetime2DataType] IS NULL) AND
-([Source].[source_datetimeoffsetDataType] <> @DateTimeOffset OR [Source].[source_datetimeoffsetDataType] IS NULL))
+ON (([Source].[source_datetime2DataType] <> CAST('2020-02-29T17:54:55.1231234' AS DATETIME2) OR [Source].[source_datetime2DataType] IS NULL) AND
+([Source].[source_datetimeoffsetDataType] <> CAST('2020-02-29T17:54:55.1231234+00:40' AS DATETIMEOFFSET) OR [Source].[source_datetimeoffsetDataType] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT

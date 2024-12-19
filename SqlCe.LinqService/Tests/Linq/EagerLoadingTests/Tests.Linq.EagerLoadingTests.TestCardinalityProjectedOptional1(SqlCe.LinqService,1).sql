@@ -662,7 +662,13 @@ BeforeExecute
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id] as [Id_1],
-	[a_ObjectC].[Id] as [Id_2],
+	[a_ObjectBOptional].[Id] as [Id_2],
+	CASE
+		WHEN [a_ObjectBOptional].[Id] IS NOT NULL AND [a_ObjectC].[Id] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END as [c1],
+	[a_ObjectC].[Id] as [Id_3],
 	[a_ObjectC].[FK]
 FROM
 	[EntityA] [e]

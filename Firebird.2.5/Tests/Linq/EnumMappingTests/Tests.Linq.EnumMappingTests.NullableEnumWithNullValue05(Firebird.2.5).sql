@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 104
+DECLARE @p Integer -- Int32
+SET     @p = 104
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -91,11 +91,11 @@ ORDER BY
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 104
+DECLARE @p Integer -- Int32
+SET     @p = 104
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 

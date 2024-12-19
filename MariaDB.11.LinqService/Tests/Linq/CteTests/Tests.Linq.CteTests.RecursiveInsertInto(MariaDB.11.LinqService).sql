@@ -381,7 +381,7 @@ AS
 AS
 (
 	SELECT
-		0,
+		CAST(0 AS SIGNED),
 		`t2`.`Id`
 	FROM
 		`CTE_1` `t2`

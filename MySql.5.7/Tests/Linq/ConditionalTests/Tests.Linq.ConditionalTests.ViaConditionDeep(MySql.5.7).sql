@@ -32,7 +32,8 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

@@ -2,8 +2,6 @@
 -- SqlServer.2014
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
-DECLARE @True Bit -- Boolean
-SET     @True = 1
 
 SELECT
 	[t].[ID],
@@ -11,7 +9,7 @@ SELECT
 FROM
 	[SqlTypes] [t]
 WHERE
-	@hid.IsDescendantOf([t].[HID]) = @True AND [t].[ID] <> 1
+	@hid.IsDescendantOf([t].[HID]) = 1 AND [t].[ID] <> 1
 ORDER BY
 	[t].[HID]
 

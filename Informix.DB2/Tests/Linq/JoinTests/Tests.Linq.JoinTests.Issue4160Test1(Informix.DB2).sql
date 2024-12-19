@@ -125,12 +125,12 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT DISTINCT
-	t1.Name
+	t1.Value_1
 FROM
 	Issue4160Person pe
 		LEFT JOIN (
 			SELECT
-				cc.Name,
+				cc.Name as Value_1,
 				ROW_NUMBER() OVER (PARTITION BY cc.Code ORDER BY cc.Code) as rn,
 				cc.Code
 			FROM

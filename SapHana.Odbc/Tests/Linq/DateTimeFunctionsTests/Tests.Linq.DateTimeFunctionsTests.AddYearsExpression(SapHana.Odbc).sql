@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 1
+DECLARE @Date  -- Int32
+SET     @Date = 1
 
 SELECT
 	To_Date(Add_Years("t"."DateTimeValue", ?))

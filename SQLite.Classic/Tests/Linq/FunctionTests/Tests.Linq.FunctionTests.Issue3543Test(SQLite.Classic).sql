@@ -13,11 +13,9 @@ CREATE TABLE IF NOT EXISTS [TagsTable]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p NVarChar(1) -- String
-SET     @p = '.'
 
 SELECT
-	Substr([tag].[Name], CharIndex(@p, [tag].[Name]) + 1, ((CharIndex(@p, [tag].[Name], 6) - 1) - (CharIndex(@p, [tag].[Name]) - 1)) - 1)
+	Substr([tag].[Name], CharIndex('.', [tag].[Name]) + 1, ((CharIndex('.', [tag].[Name], 6) - 1) - (CharIndex('.', [tag].[Name]) - 1)) - 1)
 FROM
 	[TagsTable] [tag]
 

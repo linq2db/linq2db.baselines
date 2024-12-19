@@ -11,8 +11,7 @@ SET
 			FROM
 				"Parent" x_1
 			WHERE
-				t1."ID" IS NOT NULL AND t1."ID" = x_1."ParentID" AND
-				(x_1."Value1" <> 1 OR x_1."Value1" IS NULL)
+				t1."ID" = x_1."ParentID" AND (x_1."Value1" <> 1 OR x_1."Value1" IS NULL)
 		)
 			THEN True
 		ELSE False
@@ -29,5 +28,11 @@ FROM
 			x."ParentID" IN (10000, 20000)
 	) t1
 WHERE
-	"LinqDataTypes"."ID" = t1."ID" AND "LinqDataTypes"."BoolValue" = t1."BoolValue"
+	"LinqDataTypes"."ID" = t1."ID" AND CASE
+		WHEN "LinqDataTypes"."BoolValue" = True THEN True
+		ELSE False
+	END = CASE
+		WHEN t1."BoolValue" = True THEN True
+		ELSE False
+	END
 

@@ -2,13 +2,13 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT /*+ CONTAINERS(DEFAULT_PDB_HINT='NO_PARALLEL') */
+	NULL,
 	t1."ParentID",
 	t1."ParentID",
 	t1."Value1",
 	t1."c1",
 	t1."ParentID_1",
 	t1."Value1_1",
-	NULL,
 	NULL
 FROM
 	(
@@ -33,13 +33,13 @@ FROM
 	) t1
 UNION
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
 	t2."ParentID",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
 	t2."Value1"
 FROM
 	"Parent" t2

@@ -25,10 +25,6 @@ END
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -39,8 +35,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	CAST(@Array AS VARBINARY(3)),
-	CAST(@Binary AS VARBINARY(10))
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute
@@ -58,8 +54,6 @@ FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
 
 SELECT
 	"t1".ID,
@@ -68,13 +62,11 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array
+	"t1"."Array" = X'010203'
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 SELECT
 	"t1".ID,
@@ -83,7 +75,7 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary
+	"t1"."Binary" = X'0405'
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

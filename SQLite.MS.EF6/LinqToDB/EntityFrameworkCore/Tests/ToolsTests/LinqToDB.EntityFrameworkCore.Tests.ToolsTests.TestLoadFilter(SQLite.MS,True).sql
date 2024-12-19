@@ -32,3 +32,102 @@ WHERE (@__ef_filter__p_0 OR NOT ("p"."IsDeleted")) OR NOT ("p"."IsDeleted")
 ORDER BY "p"."ProductID", "t3"."OrderID0", "t3"."ProductID", "t3"."OrderID", "t3"."ProductID0", "t3"."SupplierID"
 
 
+BeginTransactionAsync(Serializable)
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[m_1].[SupplierId],
+	[m_1].[ProductId],
+	[d_1].[IsDeleted],
+	[d_1].[ProductID],
+	[d_1].[ProductName],
+	[d_1].[SupplierID],
+	[d_1].[CategoryID],
+	[d_1].[QuantityPerUnit],
+	[d_1].[UnitPrice],
+	[d_1].[UnitsInStock],
+	[d_1].[UnitsOnOrder],
+	[d_1].[ReorderLevel],
+	[d_1].[Discontinued]
+FROM
+	(
+		SELECT DISTINCT
+			[a_Supplier].[SupplierID] as [SupplierId],
+			[t1].[ProductId]
+		FROM
+			(
+				SELECT DISTINCT
+					[e].[ProductID] as [ProductId]
+				FROM
+					[Products] [e]
+				WHERE
+					NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]
+			) [t1]
+				INNER JOIN [Order Details] [d] ON [t1].[ProductId] = [d].[ProductID]
+				INNER JOIN [Orders] [e_1] ON [d].[OrderID] = [e_1].[OrderID]
+				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
+				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND (NOT [a_Supplier].[IsDeleted] OR NOT [a_Supplier].[IsDeleted])
+		WHERE
+			(NOT [e_1].[IsDeleted] OR NOT [e_1].[IsDeleted]) AND
+			(NOT [a_Product].[IsDeleted] OR NOT [a_Product].[IsDeleted]) AND
+			(NOT [e_1].[IsDeleted] OR NOT [e_1].[IsDeleted]) AND
+			(NOT [d].[IsDeleted] OR NOT [d].[IsDeleted])
+	) [m_1]
+		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
+WHERE
+	NOT [d_1].[IsDeleted] OR NOT [d_1].[IsDeleted]
+
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[m_1].[ProductID],
+	[d].[Discount],
+	[e].[IsDeleted],
+	[e].[OrderID],
+	[e].[CustomerID],
+	[e].[EmployeeID],
+	[e].[OrderDate],
+	[e].[RequiredDate],
+	[e].[ShippedDate],
+	[e].[ShipVia],
+	[e].[Freight],
+	[e].[ShipName],
+	[e].[ShipAddress],
+	[e].[ShipCity],
+	[e].[ShipRegion],
+	[e].[ShipPostalCode],
+	[e].[ShipCountry],
+	[a_Supplier].[SupplierID]
+FROM
+	[Products] [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[ProductID] = [d].[ProductID]
+		INNER JOIN [Orders] [e] ON [d].[OrderID] = [e].[OrderID]
+		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND (NOT [a_Supplier].[IsDeleted] OR NOT [a_Supplier].[IsDeleted])
+WHERE
+	(NOT [m_1].[IsDeleted] OR NOT [m_1].[IsDeleted]) AND
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND
+	(NOT [m_1].[IsDeleted] OR NOT [m_1].[IsDeleted]) AND
+	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND
+	(NOT [d].[IsDeleted] OR NOT [d].[IsDeleted])
+
+
+
+DisposeTransactionAsync
+
+
+--  SQLite.MS SQLite (asynchronously)
+
+SELECT
+	[p].[ProductName],
+	[p].[ProductID]
+FROM
+	[Products] [p]
+WHERE
+	NOT [p].[IsDeleted] OR NOT [p].[IsDeleted]
+
+
+

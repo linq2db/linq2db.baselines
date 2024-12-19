@@ -98,8 +98,8 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t2.not_null,
-	t2.Id3,
+	t2.c2,
+	t2.c1,
 	t2.Id3,
 	t2.Name3,
 	t2.Name2,
@@ -108,10 +108,11 @@ FROM
 	TABLE1 t1_1
 		LEFT JOIN (
 			SELECT
+				t1.c1 as c1,
 				t1.Id3 as Id3,
 				t1.Name3 as Name3,
+				't2' as c2,
 				x_1.NAME2 as Name2,
-				1 as not_null,
 				ROW_NUMBER() OVER (PARTITION BY x_1.PARENTID2 ORDER BY x_1.PARENTID2) as rn,
 				x_1.PARENTID2 as PARENTID2
 			FROM
@@ -120,6 +121,7 @@ FROM
 						SELECT
 							x.ID3 as Id3,
 							x.NAME3 as Name3,
+							't3' as c1,
 							ROW_NUMBER() OVER (PARTITION BY x.PARENTID3 ORDER BY x.PARENTID3) as rn,
 							x.PARENTID3 as PARENTID3
 						FROM

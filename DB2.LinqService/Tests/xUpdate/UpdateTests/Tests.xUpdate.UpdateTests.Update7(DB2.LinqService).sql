@@ -38,7 +38,7 @@ SET     @id = 1001
 UPDATE
 	"Parent" "p"
 SET
-	"Value1" = CAST(@Value1 AS Int)
+	"Value1" = @Value1
 WHERE
 	"p"."ParentID" = @id
 
@@ -64,7 +64,7 @@ SET     @id = 1001
 UPDATE
 	"Parent" "p"
 SET
-	"Value1" = CAST(@Value1 AS Int)
+	"Value1" = @Value1
 WHERE
 	"p"."ParentID" = @id
 

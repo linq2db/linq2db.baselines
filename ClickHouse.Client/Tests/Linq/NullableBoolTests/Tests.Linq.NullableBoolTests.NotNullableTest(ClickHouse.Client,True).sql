@@ -31,7 +31,7 @@ SELECT
 FROM
 	NotNullableBoolClass t
 WHERE
-	t.Value = true
+	t.Value
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -61,7 +61,7 @@ SELECT
 FROM
 	NotNullableBoolClass t
 WHERE
-	t.Value = false
+	NOT t.Value
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

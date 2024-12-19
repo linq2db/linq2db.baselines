@@ -2,14 +2,14 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t_1."c1"
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(t."MoneyValue" * 57.29577951308237993927443245) as "c1"
+			Floor(p."MoneyValue" * 57.29577951308237993927443245) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1."c1" <> 0.1
+	t."Value_1" <> 0.1
 

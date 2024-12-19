@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 1
+DECLARE @Date  -- Int32
+SET     @Date = 1
 
 SELECT
-	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@p AS NVarChar(11)) || ' Year'))
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@Date AS NVarChar(11)) || ' Year'))
 FROM
 	[LinqDataTypes] [t]
 

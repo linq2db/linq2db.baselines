@@ -30,73 +30,73 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value4___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
+DECLARE @In_1 VarChar(12) -- AnsiString
+SET     @In_1 = '___Value4___'
 
 SELECT
 	`s`.`Id`
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (@In, @In_1)
 LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
 
 SELECT
 	`s`.`Id`
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`CEnum` IN (@CEnum) OR `s`.`CEnum` IS NULL)
+	(`s`.`CEnum` IN (@In) OR `s`.`CEnum` IS NULL)
 LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @In VarChar(12) -- AnsiString
+SET     @In = '___Value3___'
+DECLARE @In_1 VarChar(12) -- AnsiString
+SET     @In_1 = '___Value2___'
 
 SELECT
 	`s`.`Id`
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum_1)
+	`s`.`CEnum` IN (@In, @In_1)
 LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
+DECLARE @NotIn VarChar(12) -- AnsiString
+SET     @NotIn = '___Value2___'
 
 SELECT
 	`s`.`Id`
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`CEnum` NOT IN (@CEnum) AND `s`.`CEnum` IS NOT NULL)
+	(`s`.`CEnum` NOT IN (@NotIn) AND `s`.`CEnum` IS NOT NULL)
 LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 VarChar(12) -- AnsiString
-SET     @CEnum_1 = '___Value2___'
+DECLARE @NotIn VarChar(12) -- AnsiString
+SET     @NotIn = '___Value3___'
+DECLARE @NotIn_1 VarChar(12) -- AnsiString
+SET     @NotIn_1 = '___Value2___'
 
 SELECT
 	`s`.`Id`
 FROM
 	`Src` `s`
 WHERE
-	(`s`.`CEnum` NOT IN (@CEnum, @CEnum_1) OR `s`.`CEnum` IS NULL)
+	(`s`.`CEnum` NOT IN (@NotIn, @NotIn_1) OR `s`.`CEnum` IS NULL)
 LIMIT 1
 
 BeforeExecute

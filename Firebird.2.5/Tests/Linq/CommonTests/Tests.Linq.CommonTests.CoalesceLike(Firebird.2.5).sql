@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" STARTING WITH 'Jo' AND "p"."FirstName" IS NOT NULL
+	"p"."FirstName" STARTING WITH 'Jo'
 

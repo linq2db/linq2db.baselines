@@ -51,7 +51,7 @@ FROM
 	(
 		SELECT
 			[t2].[F2],
-			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [t2].[F1]) as [RN]
 		FROM
 			(
 				SELECT DISTINCT

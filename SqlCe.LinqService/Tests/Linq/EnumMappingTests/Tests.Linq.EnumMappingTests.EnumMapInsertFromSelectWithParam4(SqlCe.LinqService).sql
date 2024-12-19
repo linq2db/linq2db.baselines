@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 102
+DECLARE @p Int -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
 -- SqlCe
@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
+DECLARE @param BigInt -- Int64
+SET     @param = 11
 
 INSERT INTO [LinqDataTypes]
 (
@@ -32,7 +34,7 @@ INSERT INTO [LinqDataTypes]
 )
 SELECT
 	[r].[ID],
-	11 as [c1]
+	@param as [c1]
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -50,11 +52,11 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 102
+DECLARE @p Int -- Int32
+SET     @p = 102
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
-	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @Id
+	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 

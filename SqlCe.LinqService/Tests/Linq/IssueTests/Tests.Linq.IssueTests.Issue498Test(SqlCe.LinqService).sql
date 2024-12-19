@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[g_1].[ParentID],
+	[g_1].[ParentID] as [Key_1],
 	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [g_1]

@@ -37,15 +37,15 @@ SELECT 10
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT
 	MIN([c_1].[Id])
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] > @Id
+	[c_1].[Id] > @p
 
 BeforeExecute
 -- Sybase.Managed Sybase

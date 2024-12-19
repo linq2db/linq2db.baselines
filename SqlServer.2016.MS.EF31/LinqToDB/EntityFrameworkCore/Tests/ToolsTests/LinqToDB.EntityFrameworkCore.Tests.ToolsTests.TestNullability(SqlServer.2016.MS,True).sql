@@ -6,3 +6,34 @@ FROM [Employees] AS [e]
 WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([e].[IsDeleted] <> CAST(1 AS bit))) AND ([e].[EmployeeID] = @__test_0)
 
 
+--  SqlServer.2016
+DECLARE @test Int -- Int32
+SET     @test = 1
+
+SELECT
+	[e].[IsDeleted],
+	[e].[EmployeeID],
+	[e].[LastName],
+	[e].[FirstName],
+	[e].[Title],
+	[e].[TitleOfCourtesy],
+	[e].[BirthDate],
+	[e].[HireDate],
+	[e].[Address],
+	[e].[City],
+	[e].[Region],
+	[e].[PostalCode],
+	[e].[Country],
+	[e].[HomePhone],
+	[e].[Extension],
+	[e].[Photo],
+	[e].[Notes],
+	[e].[ReportsTo],
+	[e].[PhotoPath]
+FROM
+	[Employees] [e]
+WHERE
+	[e].[IsDeleted] = 0 AND [e].[EmployeeID] = @test
+
+
+

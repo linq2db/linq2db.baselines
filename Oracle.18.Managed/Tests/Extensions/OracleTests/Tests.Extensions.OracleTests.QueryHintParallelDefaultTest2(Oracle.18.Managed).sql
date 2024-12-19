@@ -5,8 +5,8 @@ SELECT /*+ PQ_DISTRIBUTE(p PARTITION, NONE) */
 	p."ParentID",
 	p."Value1"
 FROM
-	"Child" t1,
+	"Child" c_1,
 	"Parent" p
 WHERE
-	t1."ParentID" = p."ParentID"
+	c_1."ParentID" = p."ParentID"
 

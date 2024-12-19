@@ -2,6 +2,6 @@
 -- Informix.DB2 Informix
 
 SELECT
-	1
+	5
 FROM table(set{1})
 

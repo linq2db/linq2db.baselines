@@ -47,10 +47,6 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	CASE
-		WHEN "l"."Value1" IS NOT NULL THEN TRUE
-		ELSE FALSE
-	END,
 	"l"."Value1"
 FROM
 	"Table1788" "p"

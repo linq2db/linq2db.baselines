@@ -125,7 +125,7 @@ SELECT
 FROM
 	"Dest1" x
 WHERE
-	(x.ID = 4001 OR x.ID = 4002)
+	x.ID = 4001 OR x.ID = 4002
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

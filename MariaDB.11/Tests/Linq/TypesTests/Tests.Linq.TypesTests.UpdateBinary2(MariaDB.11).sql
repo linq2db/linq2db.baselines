@@ -2,29 +2,29 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0102030405
-DECLARE @ID Int32
-SET     @ID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 UPDATE
 	`LinqDataTypes` `t`
 SET
 	`t`.`BinaryValue` = @BinaryValue
 WHERE
-	`t`.`ID` = @ID
+	`t`.`ID` = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0504030201
-DECLARE @ID Int32
-SET     @ID = 2
+DECLARE @p Int32
+SET     @p = 2
 
 UPDATE
 	`LinqDataTypes` `t`
 SET
 	`t`.`BinaryValue` = @BinaryValue
 WHERE
-	`t`.`ID` = @ID
+	`t`.`ID` = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

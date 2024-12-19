@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'test_temp') IS NULL)
 		CREATE TABLE [test_temp]
 		(
 			[ID]     Int     IDENTITY NOT NULL,
-			[Field1] Decimal          NOT NULL,
+			[Field1] DECIMAL          NOT NULL,
 
 			CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
 		)

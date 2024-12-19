@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				c_1.Value1 IS NULL
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

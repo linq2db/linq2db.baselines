@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT FIRST 1
 	x.ParentID,
@@ -9,7 +9,7 @@ SELECT FIRST 1
 FROM
 	Parent x
 WHERE
-	x.ParentID = @ParentID
+	x.ParentID = @p
 ORDER BY
 	x.ParentID DESC
 

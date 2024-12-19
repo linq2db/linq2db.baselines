@@ -63,8 +63,8 @@ INSERT INTO [DestinationTable]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id] + 1,
-	[INSERTED].[ValueStr] + CAST(1 AS VarChar(11))
+	INSERTED.[Id] + 1,
+	INSERTED.[ValueStr] + CAST(1 AS VarChar(11))
 SELECT
 	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,

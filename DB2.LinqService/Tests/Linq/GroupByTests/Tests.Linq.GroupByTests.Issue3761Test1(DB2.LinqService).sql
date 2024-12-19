@@ -26,8 +26,6 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @DATUM Timestamp(20) -- DateTime
-SET     @DATUM = '2019-01-01-00.00.00.000000'
 
 SELECT
 	"t1"."Year_1",
@@ -48,7 +46,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n".DATUM < @DATUM
+			"n".DATUM < '2019-01-01-00.00.00.000000'
 	) "t1"
 GROUP BY
 	"t1"."Year_1",

@@ -33,10 +33,6 @@ END;
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Array Raw(3) -- Binary
-SET     @Array = HEXTORAW('010203')
-DECLARE @Binary Raw(2) -- Binary
-SET     @Binary = HEXTORAW('0405')
 
 INSERT INTO "Issue1303"
 (
@@ -47,8 +43,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	:Array,
-	:Binary
+	HEXTORAW('010203'),
+	HEXTORAW('0405')
 )
 
 BeforeExecute

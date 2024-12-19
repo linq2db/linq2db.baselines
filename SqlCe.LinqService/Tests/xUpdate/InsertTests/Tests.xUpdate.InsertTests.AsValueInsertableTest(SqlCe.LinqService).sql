@@ -18,6 +18,10 @@ CREATE TABLE [TestInsertOrReplaceTable]
 
 BeforeExecute
 -- SqlCe
+DECLARE @ID Int -- Int32
+SET     @ID = 123
+DECLARE @FirstName NVarChar(4) -- String
+SET     @FirstName = 'John'
 
 INSERT INTO [TestInsertOrReplaceTable]
 (
@@ -26,8 +30,8 @@ INSERT INTO [TestInsertOrReplaceTable]
 )
 VALUES
 (
-	123,
-	'John'
+	@ID,
+	@FirstName
 )
 
 BeforeExecute

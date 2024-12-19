@@ -87,7 +87,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	("t"."Value" <> ? OR "t"."Value" IS NULL)
+	"t"."Value" <> ? OR "t"."Value" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = -2
+DECLARE @Date Int -- Int32
+SET     @Date = -2
 
 SELECT
-	DateAdd(dd, DateDiff(dd, 0, DateAdd(month, @p, [t].[DateTimeValue])), 0)
+	DateAdd(dd, DateDiff(dd, 0, DateAdd(month, @Date, [t].[DateTimeValue])), 0)
 FROM
 	[LinqDataTypes] [t]
 

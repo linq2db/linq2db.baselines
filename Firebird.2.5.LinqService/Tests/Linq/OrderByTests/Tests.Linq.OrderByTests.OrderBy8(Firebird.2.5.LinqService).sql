@@ -2,11 +2,11 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"ch"."ParentID",
-	"ch"."ChildID"
+	"x"."ParentID",
+	"x"."ChildID"
 FROM
-	"Child" "ch"
+	"Child" "x"
 ORDER BY
-	Mod("ch"."ChildID", 2),
-	"ch"."ChildID"
+	"x"."ChildID",
+	Mod("x"."ChildID", 2)
 

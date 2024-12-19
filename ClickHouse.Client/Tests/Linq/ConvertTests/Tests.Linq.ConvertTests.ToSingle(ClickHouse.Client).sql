@@ -2,14 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p_1.c1
+	p.MoneyValue
 FROM
-	(
-		SELECT
-			toFloat32(p.MoneyValue) as c1
-		FROM
-			LinqDataTypes p
-	) p_1
+	LinqDataTypes p
 WHERE
-	p_1.c1 > toFloat32(0)
+	toFloat32(p.MoneyValue) > toFloat32(0)
 

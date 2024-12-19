@@ -29,7 +29,7 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[Id],
-	'str'
+	CAST('str' AS VarChar)
 FROM
 	[Issue3360Table] [p_1]
 
@@ -38,7 +38,7 @@ BeforeExecute
 
 SELECT
 	[p].[Id],
-	'str'
+	CAST('str' AS VarChar)
 FROM
 	[Issue3360Table] [p]
 UNION ALL

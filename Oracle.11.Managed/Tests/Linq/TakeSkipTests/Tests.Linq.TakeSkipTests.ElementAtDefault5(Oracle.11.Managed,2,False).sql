@@ -34,4 +34,6 @@ FROM
 	) t3
 WHERE
 	t3.RN > 2
+ORDER BY
+	t3."LastName"
 

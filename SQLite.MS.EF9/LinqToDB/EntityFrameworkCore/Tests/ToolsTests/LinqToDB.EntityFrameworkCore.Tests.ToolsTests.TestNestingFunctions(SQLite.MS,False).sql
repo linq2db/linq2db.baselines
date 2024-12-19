@@ -18,3 +18,54 @@ WHERE (@__ef_filter__p_0 OR NOT ("p"."IsDeleted") OR NOT ("p"."IsDeleted")) AND 
 ORDER BY "p"."ProductID"
 
 
+--  SQLite.MS SQLite
+
+SELECT
+	[e].[IsDeleted],
+	[e].[ProductID],
+	[e].[ProductName],
+	[e].[SupplierID],
+	[e].[CategoryID],
+	[e].[QuantityPerUnit],
+	[e].[UnitPrice],
+	[e].[UnitsInStock],
+	[e].[UnitsOnOrder],
+	[e].[ReorderLevel],
+	[e].[Discontinued],
+	[pd2].[IsDeleted],
+	[pd2].[ProductID],
+	[pd2].[ProductName],
+	[pd2].[SupplierID],
+	[pd2].[CategoryID],
+	[pd2].[QuantityPerUnit],
+	[pd2].[UnitPrice],
+	[pd2].[UnitsInStock],
+	[pd2].[UnitsOnOrder],
+	[pd2].[ReorderLevel],
+	[pd2].[Discontinued]
+FROM
+	[Products] [e],
+	[Products] [pd2]
+WHERE
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Order Details] [e_1]
+		WHERE
+			[e].[ProductID] = [e_1].[ProductID]
+	) > 0 AND
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Order Details] [e_2]
+		WHERE
+			[pd2].[ProductID] = [e_2].[ProductID]
+	) > 0 AND
+	[e].[ProductID] = [pd2].[ProductID]
+ORDER BY
+	[e].[ProductID]
+
+
+

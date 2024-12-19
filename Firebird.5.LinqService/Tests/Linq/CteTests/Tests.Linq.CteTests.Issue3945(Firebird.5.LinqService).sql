@@ -23,8 +23,6 @@ END
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @Guid1 Guid
-SET     @Guid1 = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
 INSERT INTO "TestFolder"
 (
@@ -43,7 +41,7 @@ AS
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	CAST(@Guid1 AS BINARY(16)),
+	X'BC7B663D0FDE43278F925D8CC3A11D11',
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"

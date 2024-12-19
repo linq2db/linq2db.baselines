@@ -33,7 +33,7 @@ FROM
 UNION ALL
 SELECT
 	"p_1"."Id",
-	'str'
+	CAST('str' AS VarChar(255) CHARACTER SET UNICODE_FSS)
 FROM
 	"Issue3360Table" "p_1"
 
@@ -42,7 +42,7 @@ BeforeExecute
 
 SELECT
 	"p"."Id",
-	'str'
+	CAST('str' AS VarChar(255) CHARACTER SET UNICODE_FSS)
 FROM
 	"Issue3360Table" "p"
 UNION ALL

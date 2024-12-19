@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS Issue3927Table
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @pageNumber Integer(4) -- Int32
+SET     @pageNumber = 9
 DECLARE @serialNumber Char(11) -- StringFixedLength
 SET     @serialNumber = '12345678901'
 
@@ -24,7 +26,7 @@ INSERT INTO Issue3927Table
 	PageNumber
 )
 SELECT
-	9
+	@pageNumber::Int
 FROM
 	Issue3927Table display
 WHERE

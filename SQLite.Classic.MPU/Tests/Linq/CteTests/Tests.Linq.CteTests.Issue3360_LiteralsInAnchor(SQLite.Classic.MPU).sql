@@ -64,14 +64,14 @@ AS
 (
 	SELECT
 		[r].[Id],
-		5,
-		5,
+		CAST(5 AS TinyInt),
+		CAST(5 AS TinyInt),
 		@Guid,
 		@GuidN,
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		CAST('ENUM1_VALUE' AS NChar(11)),
+		CAST('ENUM2_VALUE' AS NChar(11)),
+		CAST(1 AS Bit),
+		CAST(0 AS Bit)
 	FROM
 		[Issue3360Table1] [r]
 	WHERE

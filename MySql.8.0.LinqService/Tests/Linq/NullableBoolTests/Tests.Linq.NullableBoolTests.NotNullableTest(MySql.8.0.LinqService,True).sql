@@ -47,7 +47,7 @@ SELECT
 FROM
 	`NotNullableBoolClass` `t`
 WHERE
-	`t`.`Value` = 1
+	`t`.`Value`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -77,7 +77,7 @@ SELECT
 FROM
 	`NotNullableBoolClass` `t`
 WHERE
-	`t`.`Value` = 0
+	NOT `t`.`Value`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

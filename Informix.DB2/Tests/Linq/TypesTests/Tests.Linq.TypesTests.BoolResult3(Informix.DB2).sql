@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN p.PersonID = 1 THEN 't'
-		ELSE 'f'
+		WHEN p.PersonID = 1 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Person p

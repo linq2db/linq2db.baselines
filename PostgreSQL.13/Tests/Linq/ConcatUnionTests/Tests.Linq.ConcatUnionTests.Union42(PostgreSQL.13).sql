@@ -7,13 +7,13 @@ FROM
 	(
 		SELECT
 			p."ParentID" as id,
-			True as val
+			True::Boolean as val
 		FROM
 			"Parent" p
 		UNION
 		SELECT
 			ch."ParentID" as id,
-			False as val
+			False::Boolean as val
 		FROM
 			"Child" ch
 	) p_1

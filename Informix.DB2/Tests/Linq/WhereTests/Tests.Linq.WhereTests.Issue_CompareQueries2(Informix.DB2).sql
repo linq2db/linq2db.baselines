@@ -2,57 +2,33 @@
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
-	t1.c1
+	COUNT(p.PersonID)
 FROM
-	(
+	Person p
+WHERE
+	p.PersonID IN (1, 2) AND NOT EXISTS(
 		SELECT
-			COUNT(rec.ID) as c1
+			*
 		FROM
-			(
-				SELECT
-					p.PersonID as ID
-				FROM
-					Person p
-				WHERE
-					p.PersonID IN (1, 2)
-			) rec
+			Person p_1
 		WHERE
-			NOT EXISTS(
-				SELECT
-					*
-				FROM
-					Person p_1
-				WHERE
-					p_1.PersonID IN (3) AND rec.ID = p_1.PersonID
-			)
-	) t1
+			p_1.PersonID IN (3) AND p.PersonID = p_1.PersonID
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
-	t1.c1
+	COUNT(p.PersonID)
 FROM
-	(
+	Person p
+WHERE
+	p.PersonID IN (3) AND NOT EXISTS(
 		SELECT
-			COUNT(rec.ID) as c1
+			*
 		FROM
-			(
-				SELECT
-					p.PersonID as ID
-				FROM
-					Person p
-				WHERE
-					p.PersonID IN (3)
-			) rec
+			Person p_1
 		WHERE
-			NOT EXISTS(
-				SELECT
-					*
-				FROM
-					Person p_1
-				WHERE
-					p_1.PersonID IN (1, 2) AND rec.ID = p_1.PersonID
-			)
-	) t1
+			p_1.PersonID IN (1, 2) AND p.PersonID = p_1.PersonID
+	)
 

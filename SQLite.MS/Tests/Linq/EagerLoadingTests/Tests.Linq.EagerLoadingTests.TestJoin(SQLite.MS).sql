@@ -99,8 +99,7 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_2].[Id1],
-	[m_2].[MasterId],
+	[m_2].[cond],
 	[d_1].[Id1],
 	[d_1].[Id2],
 	[d_1].[Value],
@@ -108,8 +107,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1],
-			[d].[MasterId]
+			CASE
+				WHEN [t1].[Id1] = [d].[MasterId] THEN 1
+				ELSE 0
+			END as [cond]
 		FROM
 			(
 				SELECT
@@ -120,7 +121,7 @@ FROM
 			) [t1]
 				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
 	) [m_2]
-		INNER JOIN [MasterClass] [d_1] ON [m_2].[Id1] = [m_2].[MasterId]
+		INNER JOIN [MasterClass] [d_1] ON [m_2].[cond]
 
 BeforeExecute
 DisposeTransaction
@@ -133,7 +134,10 @@ SELECT
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue],
-	[m_2].[Id1]
+	CASE
+		WHEN [m_2].[Id1] = [d].[MasterId] THEN 1
+		ELSE 0
+	END
 FROM
 	(
 		SELECT

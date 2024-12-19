@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	toDate(t1.DateTimeValue) = toDate(makeDateTime(2009, 9, 20, 0, 0, 0))
+	toDate32(t1.DateTimeValue) = toDate32(makeDateTime(2009, 9, 20, 0, 0, 0))
 

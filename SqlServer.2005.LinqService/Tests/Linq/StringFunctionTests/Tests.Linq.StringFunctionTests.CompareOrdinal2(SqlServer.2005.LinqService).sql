@@ -10,5 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Substring([p].[FirstName], 2, 2) = N'oh' AND [p].[PersonID] = 1
+	Substring([p].[FirstName], 2, 2) = Substring(N'Joh', 2, 2) AND
+	[p].[PersonID] = 1
 

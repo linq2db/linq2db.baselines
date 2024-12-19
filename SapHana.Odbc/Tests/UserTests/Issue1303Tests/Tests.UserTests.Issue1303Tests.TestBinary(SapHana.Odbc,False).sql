@@ -17,10 +17,6 @@ CREATE COLUMN TABLE "Issue1303"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array Binary(3)
-SET     @Array = x'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = x'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -31,8 +27,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	?,
-	?
+	x'010203',
+	x'0405'
 )
 
 BeforeExecute
@@ -50,8 +46,6 @@ LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Array Binary(3)
-SET     @Array = x'010203'
 
 SELECT
 	"t1"."ID",
@@ -60,13 +54,11 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = ?
+	"t1"."Array" = x'010203'
 LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Binary Binary(2)
-SET     @Binary = x'0405'
 
 SELECT
 	"t1"."ID",
@@ -75,7 +67,7 @@ SELECT
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = ?
+	"t1"."Binary" = x'0405'
 LIMIT 2
 
 BeforeExecute

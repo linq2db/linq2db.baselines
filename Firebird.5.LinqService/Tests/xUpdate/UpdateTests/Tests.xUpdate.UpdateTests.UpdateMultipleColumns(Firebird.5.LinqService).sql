@@ -15,9 +15,9 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@MoneyValue AS Decimal(4, 0)),
-	CAST(@SmallIntValue AS SmallInt)
+	@ID,
+	@MoneyValue,
+	@SmallIntValue
 )
 
 BeforeExecute

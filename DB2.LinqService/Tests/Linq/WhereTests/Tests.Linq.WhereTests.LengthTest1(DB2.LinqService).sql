@@ -2,17 +2,17 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"nm_1"."MiddleName"
+	"nm"."MiddleName"
 FROM
 	(
 		SELECT
-			CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) as "Length_1",
-			"nm"."MiddleName"
+			CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) as "Value_1",
+			"p"."MiddleName"
 		FROM
-			"Person" "nm"
-	) "nm_1"
+			"Person" "p"
+	) "nm"
 WHERE
-	("nm_1"."Length_1" <> 0 OR "nm_1"."Length_1" IS NULL)
+	"nm"."Value_1" <> 0 OR "nm"."Value_1" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

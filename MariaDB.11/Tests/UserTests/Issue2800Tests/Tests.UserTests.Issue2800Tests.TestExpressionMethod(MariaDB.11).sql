@@ -53,7 +53,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+	`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -111,7 +111,7 @@ SELECT
 FROM
 	`Car` `x`
 WHERE
-	(`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL)
+	`x`.`Name` <> 'Special' OR `x`.`Name` IS NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

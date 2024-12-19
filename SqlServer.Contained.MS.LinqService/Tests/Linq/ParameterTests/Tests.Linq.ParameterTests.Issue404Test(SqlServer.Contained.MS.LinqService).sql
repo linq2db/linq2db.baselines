@@ -215,8 +215,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @cond Int -- Int32
+SET     @cond = 0
 
 SELECT
 	[m_1].[Id],
@@ -232,7 +232,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -244,8 +244,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @cond Int -- Int32
+SET     @cond = 1
 
 SELECT
 	[m_1].[Id],
@@ -261,7 +261,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -498,8 +498,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @cond Int -- Int32
+SET     @cond = 0
 
 SELECT
 	[m_1].[Id],
@@ -515,7 +515,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -527,8 +527,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @cond Int -- Int32
+SET     @cond = 1
 
 SELECT
 	[m_1].[Id],
@@ -544,7 +544,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

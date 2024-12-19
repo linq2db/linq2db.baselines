@@ -56,10 +56,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Varchar2 -- String
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 Varchar2 -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value Varchar2 -- String
+SET     @true_value = 'Y'
 
 SELECT
 	t1."Enum"
@@ -71,8 +69,8 @@ FROM
 			FROM
 				"ValueConversion" t2
 			WHERE
-				t2."BoolValue" = :BoolValue
-		) t2_1 ON t1."BoolValue" = :BoolValue_1
+				t2."BoolValue" = :true_value
+		) t2_1 ON t1."BoolValue" = :true_value
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -42,8 +42,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
+DECLARE @p Integer(4) -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
@@ -53,7 +53,7 @@ SELECT
 			FROM
 				"AsyncDataTable" "c_1"
 			WHERE
-				"c_1"."Id" = @Id
+				"c_1"."Id" = @p
 		)
 			THEN 1
 		ELSE 0

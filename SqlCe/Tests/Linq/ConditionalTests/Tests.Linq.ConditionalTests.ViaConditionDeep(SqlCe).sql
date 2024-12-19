@@ -31,7 +31,8 @@ SELECT 6,NULL UNION ALL
 SELECT 7,'String7' UNION ALL
 SELECT 8,'String8' UNION ALL
 SELECT 9,NULL UNION ALL
-SELECT 10,'String10'
+SELECT 10,'String10' UNION ALL
+SELECT 11,'-1'
 
 BeforeExecute
 -- SqlCe
@@ -42,8 +43,8 @@ SELECT
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN 1
 		ELSE 0
 	END as [child],
-	[x].[StringProp] as [child_1],
-	[x].[StringProp] + '2' as [StringProp]
+	[x].[StringProp],
+	[x].[StringProp] + '2' as [StringProp_1]
 FROM
 	[ConditionalData] [x]
 WHERE

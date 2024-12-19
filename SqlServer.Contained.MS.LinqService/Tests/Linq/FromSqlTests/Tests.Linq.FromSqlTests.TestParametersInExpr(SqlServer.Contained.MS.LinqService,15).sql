@@ -375,8 +375,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @startId BigInt -- Int64
-SET     @startId = 1
+DECLARE @p BigInt -- Int64
+SET     @p = 1
 DECLARE @endId Int -- Int32
 SET     @endId = 15
 
@@ -386,7 +386,7 @@ SELECT
 FROM
 	[sample_class] [t1]
 		INNER JOIN (
-			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @endId
+			SELECT * FROM [sample_class] where [id] >= @p and [id] < @endId
 		) [s] ON [s].[id] = [t1].[id]
 WHERE
 	[s].[id] > 10

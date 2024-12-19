@@ -31,11 +31,11 @@ VALUES
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @str VarChar(5) -- String
+DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 VarChar(5) -- String
+DECLARE @str_1 String(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- String
+DECLARE @str_2 VarChar(5) -- AnsiString
 SET     @str_2 = 'some%'
 DECLARE @str_3 VarChar(5) -- String
 SET     @str_3 = 'some%'

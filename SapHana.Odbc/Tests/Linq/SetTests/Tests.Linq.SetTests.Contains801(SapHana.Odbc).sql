@@ -2,7 +2,6 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	2,
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM

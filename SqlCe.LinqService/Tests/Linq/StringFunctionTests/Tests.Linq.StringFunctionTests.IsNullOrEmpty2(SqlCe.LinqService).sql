@@ -3,10 +3,9 @@
 
 SELECT
 	CASE
-		WHEN [p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0
-			THEN 1
+		WHEN Len([p].[FirstName]) = 0 THEN 1
 		ELSE 0
-	END as [c1]
+	END as [cond]
 FROM
 	[Person] [p]
 WHERE

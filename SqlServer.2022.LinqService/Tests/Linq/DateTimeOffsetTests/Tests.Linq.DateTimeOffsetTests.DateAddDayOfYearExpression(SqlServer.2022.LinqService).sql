@@ -485,11 +485,11 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @p Int -- Int32
-SET     @p = 3
+DECLARE @Value Int -- Int32
+SET     @Value = 3
 
 SELECT
-	CAST(DateAdd(dayofyear, @p, [t].[TransactionDate]) AS Date)
+	CAST(DateAdd(dayofyear, @Value, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

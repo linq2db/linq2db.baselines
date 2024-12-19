@@ -1,5 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @ID Integer(4) -- Int32
+SET     @ID = 1001
+DECLARE @MoneyValue Decimal(16)
+SET     @MoneyValue = 1000
+DECLARE @SmallIntValue SmallInt(2) -- Int16
+SET     @SmallIntValue = 100
 
 INSERT INTO LinqDataTypes
 (
@@ -9,9 +15,9 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	1001,
-	1000,
-	100
+	@ID,
+	@MoneyValue,
+	@SmallIntValue
 )
 
 BeforeExecute

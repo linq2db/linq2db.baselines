@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	t1."ParentID",
@@ -14,10 +14,12 @@ FROM
 		FROM
 			"Parent" x
 		WHERE
-			x."ParentID" = :ParentID
+			x."ParentID" = :p
 		ORDER BY
 			x."ParentID" DESC
 	) t1
 WHERE
 	ROWNUM <= 1
+ORDER BY
+	t1."ParentID" DESC
 

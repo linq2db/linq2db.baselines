@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	CASE
@@ -20,8 +20,8 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = -1
+DECLARE @p  -- Int32
+SET     @p = -1
 
 SELECT
 	CASE

@@ -20,3 +20,15 @@ INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
 ORDER BY [i].[_Position];
 
 
+--  SqlServer.2019
+
+SELECT
+	[t1].[Discriminator],
+	[t1].[Id]
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] IN (N'WithInheritanceA2', N'WithInheritanceA1', N'WithInheritanceA')
+
+
+

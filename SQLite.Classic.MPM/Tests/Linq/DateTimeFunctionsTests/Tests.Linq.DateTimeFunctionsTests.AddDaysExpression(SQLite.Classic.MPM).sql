@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 5
+DECLARE @Date  -- Int32
+SET     @Date = 5
 
 SELECT
-	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@p AS NVarChar(11)) || ' Day'))
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@Date AS NVarChar(11)) || ' Day'))
 FROM
 	[LinqDataTypes] [t]
 

@@ -3,14 +3,14 @@
 
 SELECT
 	[p].[ParentID],
-	[c_2].[Count_1],
-	[c_2].[Sum_1]
+	[c_2].[c1],
+	[c_2].[c2]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [Count_1],
-				SUM([c_1].[ChildID]) as [Sum_1]
+				COUNT(*) as [c1],
+				SUM([c_1].[ChildID]) as [c2]
 			FROM
 				[Child] [c_1]
 			WHERE

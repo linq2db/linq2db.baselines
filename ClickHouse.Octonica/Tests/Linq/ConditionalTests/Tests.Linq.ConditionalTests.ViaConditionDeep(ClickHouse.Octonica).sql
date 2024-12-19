@@ -34,7 +34,8 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -54,7 +55,7 @@ WHERE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
 		WHEN x.StringProp = '2' THEN x.StringProp
 		ELSE concat(x.StringProp, '2')
-	END, '2') AND
+	END, '2') = true AND
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
 		WHEN x.StringProp = '2' THEN 1

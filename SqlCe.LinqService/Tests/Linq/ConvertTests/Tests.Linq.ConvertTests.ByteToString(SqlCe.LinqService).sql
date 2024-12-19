@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3)) as [c1]
+	[p].[ID]
 FROM
 	[LinqDataTypes] [p]
 WHERE

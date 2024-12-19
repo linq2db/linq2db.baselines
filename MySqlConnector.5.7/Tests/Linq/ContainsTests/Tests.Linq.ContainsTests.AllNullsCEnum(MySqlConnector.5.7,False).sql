@@ -30,27 +30,27 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @In VarChar -- AnsiString
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum)
+	`s`.`CEnum` IN (@In, @In)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @NotIn VarChar -- AnsiString
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` NOT IN (@CEnum, @CEnum)
+	`s`.`CEnum` NOT IN (@NotIn, @NotIn)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

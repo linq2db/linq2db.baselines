@@ -2,17 +2,17 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"nm_1"."MiddleName"
+	"nm"."MiddleName"
 FROM
 	(
 		SELECT
-			Char_Length("nm"."MiddleName") as "Length_1",
-			"nm"."MiddleName"
+			Char_Length("p"."MiddleName") as "Value_1",
+			"p"."MiddleName"
 		FROM
-			"Person" "nm"
-	) "nm_1"
+			"Person" "p"
+	) "nm"
 WHERE
-	("nm_1"."Length_1" <> 0 OR "nm_1"."Length_1" IS NULL)
+	"nm"."Value_1" <> 0 OR "nm"."Value_1" IS NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

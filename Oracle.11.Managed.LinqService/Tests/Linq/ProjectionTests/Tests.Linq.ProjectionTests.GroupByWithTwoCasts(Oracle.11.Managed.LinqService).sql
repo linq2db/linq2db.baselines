@@ -27,4 +27,6 @@ FROM
 	) t1
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t1."value_1" DESC
 

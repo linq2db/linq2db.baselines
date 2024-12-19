@@ -81,7 +81,7 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[t1].[not_null],
+	[t1].[cond],
 	[t1].[Col3],
 	[t1].[Col],
 	[t1].[Id]
@@ -90,10 +90,10 @@ FROM
 		LEFT JOIN [table2] [bt1] ON [s].[c_tb1l_Id] = [bt1].[id]
 		LEFT JOIN (
 			SELECT
-				[btbl].[id] as [Id],
 				[ctb].[Col3],
 				[tbl3].[col] as [Col],
-				1 as [not_null]
+				[btbl].[id] as [Id],
+				1 as [cond]
 			FROM
 				(
 					SELECT
@@ -106,8 +106,8 @@ FROM
 				) [ctb]
 					LEFT JOIN [table3] [tbl3] ON [ctb].[maxCol] = [tbl3].[id]
 					LEFT JOIN [b_table2] [btbl] ON [tbl3].[col] = [btbl].[id]
-		) [t1] ON ([bt1].[col3] = [t1].[Id] OR [bt1].[col3] IS NULL AND [t1].[Id] IS NULL)
-		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
+		) [t1] ON [bt1].[col3] = [t1].[Id]
+		LEFT JOIN [c_table2] [ctb2] ON [bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL
 WHERE
 	[s].[commonTableId] = @id
 GROUP BY

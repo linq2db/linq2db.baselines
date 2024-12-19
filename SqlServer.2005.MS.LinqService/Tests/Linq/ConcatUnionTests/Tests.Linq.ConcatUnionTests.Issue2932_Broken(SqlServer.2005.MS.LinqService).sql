@@ -4,7 +4,7 @@
 SELECT
 	[p].[ChildID],
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM
@@ -21,7 +21,7 @@ UNION ALL
 SELECT
 	[p_1].[ChildID],
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT
 				*
 			FROM

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int32
-SET     @p = -1
+DECLARE @Value Int32
+SET     @Value = -1
 
 SELECT
-	TRUNC(t."DateTimeValue" + :p * INTERVAL '7' DAY)
+	TRUNC(t."DateTimeValue" + :Value * INTERVAL '7' DAY)
 FROM
 	"LinqDataTypes" t
 

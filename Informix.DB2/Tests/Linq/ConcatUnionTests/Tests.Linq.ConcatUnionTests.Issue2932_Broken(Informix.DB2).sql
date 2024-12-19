@@ -12,8 +12,8 @@ SELECT
 			WHERE
 				p.ParentID = a_GrandChildren.ParentID AND p.ChildID = a_GrandChildren.ChildID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Child p
@@ -29,8 +29,8 @@ SELECT
 			WHERE
 				p_1.ParentID = a_GrandChildren_1.ParentID AND p_1.ChildID = a_GrandChildren_1.ChildID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Child p_1

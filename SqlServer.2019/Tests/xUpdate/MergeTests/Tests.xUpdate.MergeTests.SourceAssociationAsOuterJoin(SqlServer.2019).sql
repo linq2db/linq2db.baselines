@@ -43,7 +43,7 @@ USING (
 	[source_Patient_Diagnosis]
 )
 ON ([Target].[PersonID] = [Source].[source_ID])
-WHEN MATCHED AND ([Source].[source_Patient_Diagnosis] <> N'sick' OR [Source].[source_Patient_Diagnosis] IS NULL) THEN DELETE
+WHEN MATCHED AND [Source].[source_Patient_Diagnosis] <> N'sick' OR [Source].[source_Patient_Diagnosis] IS NULL THEN DELETE
 ;
 
 BeforeExecute

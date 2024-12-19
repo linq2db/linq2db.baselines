@@ -56,12 +56,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@Value2 AS NVarChar(22)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -110,12 +110,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(200)),
-	CAST(@Value2 AS NVarChar(200)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute

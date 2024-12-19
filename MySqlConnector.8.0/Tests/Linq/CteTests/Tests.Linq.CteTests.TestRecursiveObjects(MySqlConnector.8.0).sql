@@ -31,7 +31,7 @@ AS
 		`parent`.`Id`,
 		`parent`.`ParentId`,
 		`parent`.`GroupName`,
-		0
+		CAST(0 AS SIGNED)
 	FROM
 		`OrgGroup` `parent`
 	UNION
@@ -45,11 +45,11 @@ AS
 			INNER JOIN `previous` `parent_1` ON `parent_1`.`OrgGroup_Id` = `child`.`ParentId`
 )
 SELECT
-	`t1`.`OrgGroup_Id`,
-	`t1`.`OrgGroup_ParentId`,
-	`t1`.`OrgGroup_GroupName`
+	`wrapper`.`OrgGroup_Id`,
+	`wrapper`.`OrgGroup_ParentId`,
+	`wrapper`.`OrgGroup_GroupName`
 FROM
-	`previous` `t1`
+	`previous` `wrapper`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

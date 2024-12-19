@@ -25,10 +25,6 @@ END
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -39,8 +35,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	CAST(@Array AS VARCHAR(3) CHARACTER SET OCTETS),
-	CAST(@Binary AS VARCHAR(10) CHARACTER SET OCTETS)
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute

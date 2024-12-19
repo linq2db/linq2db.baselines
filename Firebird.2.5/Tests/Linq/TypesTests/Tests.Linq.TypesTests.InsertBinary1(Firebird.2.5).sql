@@ -20,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	CAST(@data AS BLOB),
+	@data,
 	'1'
 )
 

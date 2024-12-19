@@ -27,7 +27,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	([p].[Value1] > 2 OR [p].[Value1] IS NULL)
+	[p].[Value1] > 2 OR [p].[Value1] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -67,7 +67,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	(2 < [p].[Value1] OR [p].[Value1] IS NULL)
+	2 < [p].[Value1] OR [p].[Value1] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

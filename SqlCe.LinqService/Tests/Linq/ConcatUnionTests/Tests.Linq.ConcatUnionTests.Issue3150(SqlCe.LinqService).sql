@@ -4,7 +4,7 @@
 SELECT
 	[p].[PersonID] as [ID],
 	[p].[FirstName],
-	'id=1' as [Marker]
+	CAST('id=1' AS NVarChar(255)) as [Marker]
 FROM
 	[Person] [p]
 WHERE
@@ -13,7 +13,7 @@ UNION ALL
 SELECT
 	[p_1].[PersonID] as [ID],
 	[p_1].[FirstName],
-	'id=2' as [Marker]
+	CAST('id=2' AS NVarChar(255)) as [Marker]
 FROM
 	[Person] [p_1]
 WHERE

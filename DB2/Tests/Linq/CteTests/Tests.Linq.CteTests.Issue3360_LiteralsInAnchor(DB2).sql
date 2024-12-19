@@ -51,10 +51,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Guid VarBinary(16) -- Binary
-SET     @Guid = BX'27FE8A0B1C482E44B8CF729DDFEECE29'
-DECLARE @GuidN VarBinary(16) -- Binary
-SET     @GuidN = BX'27FE8A0B1C482E44B8CF729DDFEECE30'
 
 WITH "cte"
 (
@@ -72,14 +68,14 @@ AS
 (
 	SELECT
 		"r"."Id",
-		5,
-		5,
-		CAST(@Guid AS char(16) for bit data),
-		CAST(@GuidN AS char(16) for bit data),
-		'ENUM1_VALUE',
-		'ENUM2_VALUE',
-		1,
-		0
+		CAST(5 AS SmallInt),
+		CAST(5 AS SmallInt),
+		CAST(BX'27FE8A0B1C482E44B8CF729DDFEECE29' AS char(16) for bit data),
+		CAST(BX'27FE8A0B1C482E44B8CF729DDFEECE30' AS char(16) for bit data),
+		Char('ENUM1_VALUE', 11),
+		Char('ENUM2_VALUE', 11),
+		CAST(1 AS smallint),
+		CAST(0 AS smallint)
 	FROM
 		"Issue3360Table1" "r"
 	WHERE

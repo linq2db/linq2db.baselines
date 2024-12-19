@@ -2,14 +2,15 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t_1`.`c1`
+	`t`.`MoneyValue`
 FROM
 	(
 		SELECT
-			Round(`t`.`MoneyValue`, 1) as `c1`
+			ROUND(`p`.`MoneyValue`, 1) as `c1`,
+			`p`.`MoneyValue`
 		FROM
-			`LinqDataTypes` `t`
-	) `t_1`
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	`t_1`.`c1` <> 0 AND `t_1`.`c1` <> 7
+	`t`.`c1` <> 0 AND `t`.`c1` <> 7
 

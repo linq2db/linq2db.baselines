@@ -166,8 +166,8 @@ SELECT
 			WHERE
 				c_1.Id = 2
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

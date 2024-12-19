@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @GuidValue Raw(16) -- Binary
-SET     @GuidValue = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B')
 
 SELECT
 	p.ID,
@@ -15,13 +13,11 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue
+	p."GuidValue" = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B')
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @GuidValue Raw(16) -- Binary
-SET     @GuidValue = HEXTORAW('C070F9D2AC3587499CD55BADB1757436')
 
 SELECT
 	p.ID,
@@ -35,6 +31,6 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."GuidValue" = :GuidValue
+	p."GuidValue" = HEXTORAW('C070F9D2AC3587499CD55BADB1757436')
 FETCH NEXT 2 ROWS ONLY
 

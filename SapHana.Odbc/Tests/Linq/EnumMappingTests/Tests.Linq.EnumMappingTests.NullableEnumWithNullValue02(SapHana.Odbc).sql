@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 105
+DECLARE @p  -- Int32
+SET     @p = 105
 
 DELETE FROM
 	"LinqDataTypes" "r"
@@ -109,8 +109,8 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 105
+DECLARE @p  -- Int32
+SET     @p = 105
 
 DELETE FROM
 	"LinqDataTypes" "r"

@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t1`.`ParentID`
+	`p`.`ParentID`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 

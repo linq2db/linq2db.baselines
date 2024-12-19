@@ -4,8 +4,6 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555
-DECLARE @n_1 Int -- Int32
-SET     @n_1 = 555
 
 INSERT INTO [Parent1]
 (
@@ -15,15 +13,13 @@ INSERT INTO [Parent1]
 VALUES
 (
 	@n,
-	@n_1
+	@n
 )
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555
-DECLARE @n_1 Int -- Int32
-SET     @n_1 = 555
 
 INSERT INTO [Parent1]
 (
@@ -33,7 +29,7 @@ INSERT INTO [Parent1]
 VALUES
 (
 	@n,
-	@n_1
+	@n
 )
 
 BeforeExecute

@@ -63,14 +63,14 @@ WHERE
 		FROM
 			(
 				SELECT
-					MIN([g_1].[ID]) as [MIN_1]
+					MIN([g_1].[ID]) as [In_1]
 				FROM
 					[test_in_2] [g_1]
 				GROUP BY
 					[g_1].[GV]
 			) [t1]
 		WHERE
-			([t].[ID] = [t1].[MIN_1] OR [t].[ID] IS NULL AND [t1].[MIN_1] IS NULL)
+			[t].[ID] = [t1].[In_1] OR [t].[ID] IS NULL AND [t1].[In_1] IS NULL
 	)
 
 BeforeExecute

@@ -92,15 +92,15 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				t1."Value_1"
+				t1."Key_1"
 			FROM
 				(
 					SELECT
-						group_1."Value" as "Value_1"
+						item_1."Value" as "Key_1"
 					FROM
-						"TakeSkipClass" group_1
+						"TakeSkipClass" item_1
 					GROUP BY
-						group_1."Value"
+						item_1."Value"
 					HAVING
 						COUNT(*) > 1
 				) t1

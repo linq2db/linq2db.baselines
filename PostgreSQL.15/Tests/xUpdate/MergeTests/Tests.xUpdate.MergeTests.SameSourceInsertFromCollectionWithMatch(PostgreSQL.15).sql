@@ -231,7 +231,7 @@ USING (VALUES
 	"source_Field2",
 	"source_Field4"
 )
-ON (("Target"."Id" = "Source"."source_Id" OR "Source"."source_Field1" IS NOT NULL))
+ON ("Target"."Id" = "Source"."source_Id" OR "Source"."source_Field1" IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT

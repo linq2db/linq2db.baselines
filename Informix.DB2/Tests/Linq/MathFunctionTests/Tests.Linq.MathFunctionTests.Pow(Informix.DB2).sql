@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t_1.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Floor(Power(t.MoneyValue::Float, 3)) as c1
+			Floor(Power(p.MoneyValue::Float, 3)) as Value_1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> 0
+	t.Value_1 <> 0
 

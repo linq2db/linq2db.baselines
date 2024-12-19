@@ -83,47 +83,6 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-SELECT
-	`m_1`.`Name`,
-	`d`.`Id`,
-	`d`.`Name`,
-	`d`.`Enabled`,
-	`d`.`ImageFullUrl`
-FROM
-	(
-		SELECT DISTINCT
-			`s`.`Name`
-		FROM
-			`Stone` `s`
-		WHERE
-			`s`.`Enabled` = 1 AND `s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-			Char_Length(`s`.`ImageFullUrl`) > 0
-	) `m_1`
-		INNER JOIN `Stone` `d` ON `m_1`.`Name` = `d`.`Name`
-WHERE
-	`d`.`Enabled` = 1 AND `d`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`d`.`ImageFullUrl`) > 0
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-SELECT
-	`sG`.`Name`
-FROM
-	`Stone` `sG`
-WHERE
-	`sG`.`Enabled` = 1 AND `sG`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
-	Char_Length(`sG`.`ImageFullUrl`) > 0
-GROUP BY
-	`sG`.`Name`
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `Stone`

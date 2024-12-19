@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p Int32
-SET     @p = -1
+DECLARE @Value Int32
+SET     @Value = -1
 
 SELECT
-	Date(Date_Add(`t`.`DateTimeValue`, Interval @p Quarter))
+	Date(Date_Add(`t`.`DateTimeValue`, Interval @Value Quarter))
 FROM
 	`LinqDataTypes` `t`
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT FIRST 1
 	c_1.ParentID,
@@ -9,12 +9,12 @@ SELECT FIRST 1
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID = @ParentID
+	c_1.ParentID = @p
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 2
+DECLARE @p Integer(4) -- Int32
+SET     @p = 2
 
 SELECT FIRST 1
 	c_1.ParentID,
@@ -22,5 +22,5 @@ SELECT FIRST 1
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID = @ParentID
+	c_1.ParentID = @p
 

@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				1 = c_1.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 
@@ -29,8 +29,8 @@ SELECT
 			WHERE
 				-1 = c_1.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

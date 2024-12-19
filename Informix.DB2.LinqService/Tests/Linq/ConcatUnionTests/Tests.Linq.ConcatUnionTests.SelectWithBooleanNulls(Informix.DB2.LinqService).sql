@@ -8,12 +8,12 @@ SELECT
 				*
 			FROM
 				Child t1
-		) THEN 't'
-		ELSE 'f'
+		) THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	CASE
-		WHEN x.ParentID <> 0 THEN 't'
-		ELSE 'f'
+		WHEN x.ParentID <> 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Parent x
@@ -25,8 +25,8 @@ SELECT
 				*
 			FROM
 				Child t2
-		) THEN 't'
-		ELSE 'f'
+		) THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	NULL::BOOLEAN
 FROM

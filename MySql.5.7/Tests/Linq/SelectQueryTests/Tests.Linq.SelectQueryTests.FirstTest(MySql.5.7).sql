@@ -16,8 +16,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Date_Add(CURRENT_TIMESTAMP, Interval 1 Day) as `Value1`,
-	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day) as `Value2`
+	CURRENT_TIMESTAMP as `CurrentTimestamp`
 LIMIT 1
 
 BeforeExecute

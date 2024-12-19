@@ -53,7 +53,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	([t].[Value] = 0 OR [t].[Value] IS NULL)
+	[t].[Value] = 0 OR [t].[Value] IS NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

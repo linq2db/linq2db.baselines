@@ -244,7 +244,7 @@ SET
 	"Field4" = Target."Field4" + "Source"."source_Field2",
 	"Field5" = Target."Field5" + "Source"."source_Field1"
 WHERE
-	("Source"."source_Id" = 3 OR Target."Id" = 4)
+	"Source"."source_Id" = 3 OR Target."Id" = 4
 DELETE WHERE
 	"Source"."source_Id" = 3
 

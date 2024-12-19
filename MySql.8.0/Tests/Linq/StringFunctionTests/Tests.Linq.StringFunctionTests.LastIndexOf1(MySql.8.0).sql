@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(1) -- String
-SET     @p = 'p'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,7 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Char_Length(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`)) = 2 AND
-	(Locate(@p, `p`.`LastName`) <> 0 OR Locate(@p, `p`.`LastName`) IS NULL) AND
-	`p`.`PersonID` = 1
+	(Char_Length(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`))) - Char_Length('p') = 1 AND
+	Locate('p', `p`.`LastName`) <> 0 AND `p`.`PersonID` = 1
 

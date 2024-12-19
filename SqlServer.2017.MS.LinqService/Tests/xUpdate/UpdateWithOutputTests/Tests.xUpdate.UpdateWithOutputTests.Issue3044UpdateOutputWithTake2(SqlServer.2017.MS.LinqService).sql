@@ -220,8 +220,8 @@ SET     @take = 1
 UPDATE
 	[u]
 SET
-	[u].[Value] = [t1].[c1],
-	[u].[ValueStr] = [t1].[ValueStr]
+	[u].[Value] = 20,
+	[u].[ValueStr] = [u].[ValueStr]
 OUTPUT
 	DELETED.[Id],
 	DELETED.[Value],
@@ -233,10 +233,9 @@ FROM
 	[TableWithData] [u],
 	(
 		SELECT TOP (@take)
-			20 as [c1],
-			[i].[ValueStr],
 			[i].[Id],
-			[i].[Value] as [Value_1]
+			[i].[Value] as [Value_1],
+			[i].[ValueStr]
 		FROM
 			[TableWithData] [i]
 		WHERE

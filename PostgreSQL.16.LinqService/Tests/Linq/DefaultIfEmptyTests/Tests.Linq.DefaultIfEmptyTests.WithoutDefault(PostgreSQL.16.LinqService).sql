@@ -4,7 +4,7 @@ DECLARE @take Integer -- Int32
 SET     @take = 0
 
 SELECT
-	d."ParentID",
+	d.cond,
 	d."ChildID"
 FROM
 	(
@@ -13,7 +13,7 @@ FROM
 	) t2
 		LEFT JOIN (
 			SELECT
-				t1."ParentID",
+				t1."ParentID" as cond,
 				t1."ChildID"
 			FROM
 				"Child" t1

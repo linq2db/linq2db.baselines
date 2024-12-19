@@ -3,6 +3,11 @@
 
 SELECT
 	[c_1].[ParentID],
+	CASE
+		WHEN [c_1].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] IS NOT NULL
+			THEN 1
+		ELSE 0
+	END as [c1],
 	[a_Parent].[Value1]
 FROM
 	[Parent] [t1]

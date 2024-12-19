@@ -13,6 +13,6 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.BoolValue = false AND t.MoneyValue > toDecimal64('1', 4) AND
+	NOT t.BoolValue AND t.MoneyValue > toDecimal64('1', 4) AND
 	(t.SmallIntValue = toInt16(5) OR t.SmallIntValue = toInt16(7) OR t.SmallIntValue = toInt16(8))
 

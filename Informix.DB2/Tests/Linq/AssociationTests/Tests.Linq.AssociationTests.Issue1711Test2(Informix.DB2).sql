@@ -41,7 +41,7 @@ WHERE
 		FROM
 			Relationship1711 r
 		WHERE
-			r.Deleted = 'f' AND r.EntityId = t.Id
+			r.Deleted = 'f'::BOOLEAN AND r.EntityId = t.Id
 	)
 
 BeforeExecute

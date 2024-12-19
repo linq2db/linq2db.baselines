@@ -124,14 +124,14 @@ FROM
 	(
 		SELECT
 			r.Id as Id,
-			toUInt8(5) as Byte,
-			toUInt8(5) as Byte_1,
-			toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29') as Guid,
-			toUUID('0b8afe27-481c-442e-b8cf-729ddfeece30') as GuidN,
-			'ENUM1_VALUE' as Enum,
-			'ENUM2_VALUE' as EnumN,
-			true as Bool,
-			false as BoolN
+			toUInt8(toUInt8(5)) as Byte,
+			toUInt8(toUInt8(5)) as Byte_1,
+			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29')) as Guid,
+			toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece30')) as GuidN,
+			toString('ENUM1_VALUE') as Enum,
+			toString('ENUM2_VALUE') as EnumN,
+			toBool(true) as Bool,
+			toBool(false) as BoolN
 		FROM
 			Issue3360Table1 r
 		WHERE

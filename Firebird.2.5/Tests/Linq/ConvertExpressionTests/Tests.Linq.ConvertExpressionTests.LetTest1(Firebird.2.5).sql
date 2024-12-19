@@ -15,10 +15,10 @@ FROM
 WHERE
 	(
 		SELECT FIRST 1
-			"a_Children_1"."ParentID"
+			"a_Children"."ParentID"
 		FROM
-			"Child" "a_Children_1"
+			"Child" "a_Children"
 		WHERE
-			"p"."ParentID" = "a_Children_1"."ParentID"
+			"p"."ParentID" = "a_Children"."ParentID"
 	) IS NOT NULL
 

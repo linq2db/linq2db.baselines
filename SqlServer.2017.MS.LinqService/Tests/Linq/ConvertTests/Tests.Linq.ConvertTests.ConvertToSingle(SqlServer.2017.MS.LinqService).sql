@@ -2,14 +2,14 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
-			CAST([p].[MoneyValue] AS Real) as [c1]
+			CAST([t].[MoneyValue] AS Real) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] > 0
+	[p].[c1] > 0
 

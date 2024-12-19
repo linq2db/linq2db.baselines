@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p VarChar(1) -- String
-SET     @p = 'p'
 
 SELECT
 	p.FirstName,
@@ -12,7 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	CHAR_LENGTH(p.LastName) - CharIndex('p', Reverse(p.LastName)) = 2 AND
-	(CharIndex(@p, p.LastName) <> 0 OR CharIndex(@p, p.LastName) IS NULL) AND
-	p.PersonID = 1
+	(CHAR_LENGTH(p.LastName) - CharIndex('p', Reverse(p.LastName))) - CHAR_LENGTH('p') = 1 AND
+	CharIndex('p', p.LastName) <> 0 AND p.PersonID = 1
 

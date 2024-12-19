@@ -2,17 +2,17 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t_1].[c1]
+	[t].[c1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [t].[MoneyValue] <= 5 THEN [t].[MoneyValue]
+				WHEN [p].[MoneyValue] <= 5 THEN [p].[MoneyValue]
 				ELSE 5
 			END as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0
+	[t].[c1] <> 0
 

@@ -20,7 +20,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue1" IS NULL OR Length(t1."StringValue1") = 0)
+	t1."StringValue1" IS NULL OR Length(t1."StringValue1") = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -32,7 +32,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(t1."StringValue2" IS NULL OR Length(t1."StringValue2") = 0)
+	t1."StringValue2" IS NULL OR Length(t1."StringValue2") = 0
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

@@ -47,7 +47,7 @@ SELECT
 FROM
 	`NotNullableBoolClass` `t`
 WHERE
-	`t`.`Value` = 1
+	`t`.`Value`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -77,7 +77,7 @@ SELECT
 FROM
 	`NotNullableBoolClass` `t`
 WHERE
-	`t`.`Value` = 0
+	NOT `t`.`Value`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

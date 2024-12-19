@@ -56,10 +56,10 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[l1].[ID] as [Id],
-	[l1].[ValB] as [L1B],
-	[l1].[ValS] as [L1S],
-	[l1].[ValInt] as [L1I]
+	[l1].[ID],
+	[l1].[ValB],
+	[l1].[ValS],
+	[l1].[ValInt]
 FROM
 	[Issue3757Level1] [l1]
 

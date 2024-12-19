@@ -2,17 +2,17 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`p_1`.`c1`
+	`p`.`c1`
 FROM
 	(
 		SELECT
 			CASE
-				WHEN `p`.`MoneyValue` <> 4.5 THEN 1
+				WHEN `t`.`MoneyValue` <> 4.5 THEN 1
 				ELSE 0
 			END as `c1`
 		FROM
-			`LinqDataTypes` `p`
-	) `p_1`
+			`LinqDataTypes` `t`
+	) `p`
 WHERE
-	`p_1`.`c1` = 0
+	NOT `p`.`c1`
 

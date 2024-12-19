@@ -2,14 +2,14 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] <> 0, 1, 0) as [c1]
+			IIF([t].[MoneyValue] <> 0, 1, 0) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] = 1
+	[p].[c1] = 1
 

@@ -17,13 +17,11 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTimeValue2 VarChar(23) -- AnsiString
-SET     @DateTimeValue2 = '2009-09-24 09:19:29.090'
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (@DateTimeValue2) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN ('2009-09-24 09:19:29.090') OR [x].[DateTimeValue2] IS NULL)
 

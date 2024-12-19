@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."Taxonomy"
+	Lower("p"."Taxonomy")
 FROM
 	"Doctor" "p"
 WHERE

@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @Length Int -- Int32
+SET     @Length = 0
 
 SELECT
-	Len([p].[FirstName])
+	Len([p].[FirstName]) + @Length
 FROM
 	[Person] [p]
 

@@ -196,6 +196,24 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Id  -- Int32
+SET     @Id = 11
+DECLARE @StringProp NVarChar(2) -- String
+SET     @StringProp = '-1'
+
+INSERT INTO "ConditionalData"
+(
+	"Id",
+	"StringProp"
+)
+VALUES
+(
+	?,
+	?
+)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."Id",

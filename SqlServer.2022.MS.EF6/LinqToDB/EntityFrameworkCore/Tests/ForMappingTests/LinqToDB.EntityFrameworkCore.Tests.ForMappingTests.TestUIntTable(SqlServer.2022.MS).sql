@@ -9,3 +9,22 @@ FROM [UIntTable]
 WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
 
 
+--  SqlServer.2022 (asynchronously)
+DECLARE @field64 Decimal
+SET     @field64 = 5
+
+SELECT TOP (1)
+	[e].[ID],
+	[e].[Field16],
+	[e].[Field32],
+	[e].[Field64],
+	[e].[Field16N],
+	[e].[Field32N],
+	[e].[Field64N]
+FROM
+	[UIntTable] [e]
+WHERE
+	[e].[Field64] = @field64
+
+
+

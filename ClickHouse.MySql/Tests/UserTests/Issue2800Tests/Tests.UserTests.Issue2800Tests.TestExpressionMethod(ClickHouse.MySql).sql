@@ -55,7 +55,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	(x.Name <> 'Special' OR x.Name IS NULL)
+	x.Name <> 'Special' OR x.Name IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -113,7 +113,7 @@ SELECT
 FROM
 	Car x
 WHERE
-	(x.Name <> 'Special' OR x.Name IS NULL)
+	x.Name <> 'Special' OR x.Name IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

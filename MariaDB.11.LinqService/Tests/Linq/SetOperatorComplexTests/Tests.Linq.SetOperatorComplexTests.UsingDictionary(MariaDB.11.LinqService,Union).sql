@@ -501,6 +501,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
+	CAST('Discriminator' AS CHAR(255)),
 	`a_Book`.`Discriminator`,
 	`a_Book`.`BookName`,
 	`a_Book`.`BookName`
@@ -512,6 +513,7 @@ WHERE
 	`a_Book`.`Discriminator` = 'Roman'
 UNION
 SELECT
+	CAST('Discriminator' AS CHAR(255)),
 	`a_Book_1`.`Discriminator`,
 	`a_Book_1`.`BookName`,
 	`a_Book_1`.`BookName`

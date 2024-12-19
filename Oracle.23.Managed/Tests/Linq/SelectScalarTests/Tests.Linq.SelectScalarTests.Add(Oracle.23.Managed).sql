@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	1
+	:p
 FROM SYS.DUAL
 

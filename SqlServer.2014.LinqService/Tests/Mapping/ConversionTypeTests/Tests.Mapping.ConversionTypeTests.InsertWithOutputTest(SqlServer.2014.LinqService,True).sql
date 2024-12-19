@@ -43,8 +43,8 @@ INSERT INTO [TrimTestTable]
 	[Data]
 )
 OUTPUT
-	[INSERTED].[ID],
-	[INSERTED].[Data]
+	INSERTED.[ID],
+	INSERTED.[Data]
 SELECT
 	[t1].[ID] + 1,
 	N'***HHH***'

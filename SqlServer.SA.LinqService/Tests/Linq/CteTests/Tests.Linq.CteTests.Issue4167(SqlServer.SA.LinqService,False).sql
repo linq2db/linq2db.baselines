@@ -112,14 +112,14 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0) as [EnumValue]
+			IIF([r].[EnumValue] IS NOT NULL, [r].[EnumValue], 0) as [EnumValue]
 		FROM
-			[Issue4167Table] [g_1]
+			[Issue4167Table] [r]
 		WHERE
-			[g_1].[Value] = N'000001'
+			[r].[Value] = N'000001'
 		GROUP BY
-			[g_1].[Value],
-			[g_1].[EnumValue]
+			[r].[Value],
+			[r].[EnumValue]
 	) [t1]
 ORDER BY
 	[t1].[EnumValue]

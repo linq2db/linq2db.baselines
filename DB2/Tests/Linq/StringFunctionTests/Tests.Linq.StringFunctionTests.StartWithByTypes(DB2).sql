@@ -39,9 +39,9 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @str VarChar(5) -- String
+DECLARE @str Char(5) -- StringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 VarChar(5) -- String
+DECLARE @str_1 Char(5) -- StringFixedLength
 SET     @str_1 = 'some%'
 DECLARE @str_2 VarChar(5) -- String
 SET     @str_2 = 'some%'

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar(4) -- String
-SET     @p = 'test'
+DECLARE @input VarChar(4) -- String
+SET     @input = 'test'
 
 SELECT
 	`m_1`.`PersonID`,
@@ -11,12 +11,12 @@ FROM
 	`Person` `m_1`
 		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
-	LOCATE(@p, Lower(`m_1`.`FirstName`)) > 0
+	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar(4) -- String
-SET     @p = 'test'
+DECLARE @input VarChar(4) -- String
+SET     @input = 'test'
 
 SELECT
 	`p`.`FirstName`,
@@ -24,5 +24,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE(@p, Lower(`p`.`FirstName`)) > 0
+	LOCATE(@input, Lower(`p`.`FirstName`)) > 0
 

@@ -16,8 +16,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	CURRENT + Interval (1) Day to Day,
-	CURRENT + Interval (2) Day to Day
+	CURRENT
 FROM table(set{1})
 
 BeforeExecute

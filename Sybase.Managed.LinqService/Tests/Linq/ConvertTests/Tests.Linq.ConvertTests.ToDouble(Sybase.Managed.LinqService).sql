@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[p_1].[c1]
+	[p].[MoneyValue]
 FROM
-	(
-		SELECT
-			CAST(CAST([p].[MoneyValue] AS Float) AS Int) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+	[LinqDataTypes] [p]
 WHERE
-	[p_1].[c1] > 0
+	CAST(CAST([p].[MoneyValue] AS Float) AS Int) > 0
 

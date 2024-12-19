@@ -2,12 +2,12 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	tt.ParentID,
+	tt.Key_1,
 	sumOrNull(tt.ID)
 FROM
 	(
 		SELECT
-			gr.ParentID as ParentID,
+			gr.ParentID as Key_1,
 			gr.ChildID as ID
 		FROM
 			Child gr
@@ -15,7 +15,7 @@ FROM
 			gr.ParentID < 4
 		UNION ALL
 		SELECT
-			Coalesce(g_1.ParentID, 0) as ParentID,
+			Coalesce(g_1.ParentID, 0) as Key_1,
 			Coalesce(g_1.GrandChildID, 0) as ID
 		FROM
 			GrandChild g_1
@@ -23,7 +23,7 @@ FROM
 			g_1.ParentID >= 4
 	) tt
 GROUP BY
-	tt.ParentID
+	tt.Key_1
 HAVING
-	(sumOrNull(tt.ID) <> 0 OR sumOrNull(tt.ID) IS NULL)
+	sumOrNull(tt.ID) <> 0
 

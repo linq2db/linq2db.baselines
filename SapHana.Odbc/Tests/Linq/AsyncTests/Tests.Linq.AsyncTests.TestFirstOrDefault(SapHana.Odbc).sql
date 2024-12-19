@@ -15,6 +15,6 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
+	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 LIMIT 1
 

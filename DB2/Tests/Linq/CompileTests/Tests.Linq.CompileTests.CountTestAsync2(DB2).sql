@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" = @ParentID
+	"c_1"."ParentID" = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = -1
+DECLARE @p Integer(4) -- Int32
+SET     @p = -1
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
-	"c_1"."ParentID" = @ParentID
+	"c_1"."ParentID" = @p
 

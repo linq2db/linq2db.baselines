@@ -31,11 +31,11 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				`group_1`.`Value`
+				`item_1`.`Value`
 			FROM
-				`TakeSkipClass` `group_1`
+				`TakeSkipClass` `item_1`
 			GROUP BY
-				`group_1`.`Value`
+				`item_1`.`Value`
 			HAVING
 				COUNT(*) > 1
 			LIMIT 1

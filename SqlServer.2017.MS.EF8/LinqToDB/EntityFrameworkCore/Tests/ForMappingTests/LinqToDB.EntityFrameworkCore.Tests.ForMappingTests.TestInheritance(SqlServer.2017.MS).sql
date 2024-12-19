@@ -15,3 +15,15 @@ VALUES (i.[Discriminator])
 OUTPUT INSERTED.[Id], i._Position;
 
 
+--  SqlServer.2017
+
+SELECT
+	[t1].[Discriminator],
+	[t1].[Id]
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] IN (N'WithInheritanceA2', N'WithInheritanceA1', N'WithInheritanceA')
+
+
+

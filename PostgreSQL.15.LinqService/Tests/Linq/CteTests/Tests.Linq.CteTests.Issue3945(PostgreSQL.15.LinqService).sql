@@ -15,8 +15,6 @@ CREATE TABLE IF NOT EXISTS "TestFolder"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Guid1 Uuid -- Guid
-SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 WITH "CTE" ("ParentId", "Label")
 AS
@@ -35,7 +33,7 @@ INSERT INTO "TestFolder"
 	"Label"
 )
 SELECT
-	:Guid1,
+	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,
 	parent."Label" || '/' || child."Label"
 FROM
 	"CTE" child

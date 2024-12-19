@@ -37,9 +37,9 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ManufacturerId],
-	[t1].[CountryCode],
-	[t1].[Name],
+	[e].[ManufacturerId],
+	[e].[CountryCode],
+	[e].[Name],
 	[co].[Code],
 	[co].[Name],
 	[m_2].[ManufacturerId],
@@ -48,8 +48,8 @@ SELECT
 	[m_2].[Code],
 	[m_2].[Name_1]
 FROM
-	[Manufacturer] [t1]
-		LEFT JOIN [Country] [co] ON [t1].[CountryCode] = [co].[Code]
+	[Manufacturer] [e]
+		LEFT JOIN [Country] [co] ON [e].[CountryCode] = [co].[Code]
 		LEFT JOIN (
 			SELECT
 				[m_1].[ManufacturerId],
@@ -64,7 +64,7 @@ FROM
 				[m_1].[ManufacturerId] = 2
 		) [m_2] ON 1=1
 WHERE
-	[t1].[ManufacturerId] = 1
+	[e].[ManufacturerId] = 1
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

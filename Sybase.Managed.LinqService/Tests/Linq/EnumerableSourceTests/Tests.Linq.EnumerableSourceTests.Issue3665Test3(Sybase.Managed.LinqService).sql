@@ -2,12 +2,11 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[x].[PersonID],
-	[y].[value__]
+	[x].[PersonID] + [y].[item]
 FROM
 	[Person] [x],
 	(
-		SELECT 1 AS [value__]
+		SELECT 1 AS [item]
 		UNION ALL
 		SELECT 3) [y]
 

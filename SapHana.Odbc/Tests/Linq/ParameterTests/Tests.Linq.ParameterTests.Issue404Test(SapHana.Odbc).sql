@@ -219,8 +219,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
+DECLARE @cond  -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -252,8 +252,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @cond  -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",
@@ -512,8 +512,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
+DECLARE @cond  -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -545,8 +545,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @cond  -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",

@@ -22,12 +22,15 @@ ON ([Target].[PersonID] = [Source].[source_ID] + 10)
 
 WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
-		[a_Patient].[Diagnosis]
+		CASE
+			WHEN [a_Patient].[Diagnosis] LIKE N'%very%' ESCAPE N'~' THEN 1
+			ELSE 0
+		END
 	FROM
 		[Patient] [a_Patient]
 	WHERE
 		[Target].[PersonID] = [a_Patient].[PersonID]
-) LIKE N'%very%' ESCAPE N'~' THEN DELETE
+) = 1 THEN DELETE
 ;
 
 BeforeExecute

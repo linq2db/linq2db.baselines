@@ -2,13 +2,13 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID,
-	t1.MoneyValue,
-	t1.DateTimeValue,
-	t1.BoolValue,
-	t1.GuidValue,
+	NVL(t1.ID, NULL),
+	NVL(t1.MoneyValue, NULL),
+	NVL(t1.DateTimeValue, NULL),
+	NVL(t1.BoolValue, NULL)::BOOLEAN,
+	NVL(t1.GuidValue, NULL),
 	t1.BinaryValue,
-	t1.SmallIntValue,
+	NVL(t1.SmallIntValue, NULL),
 	t1.StringValue
 FROM
 	LinqDataTypes t1

@@ -6,8 +6,7 @@ SELECT
 	"p_1".ID,
 	"p_1"."LastName",
 	"p_1"."MiddleName",
-	"p_1"."Gender",
-	"p_1"."Field1"
+	"p_1"."Gender"
 FROM
 	(
 		SELECT

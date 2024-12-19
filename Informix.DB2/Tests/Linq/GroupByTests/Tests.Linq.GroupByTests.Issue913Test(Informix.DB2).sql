@@ -78,8 +78,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN g_1.TradingStatus = 'D' THEN 't'
-				ELSE 'f'
+				WHEN g_1.TradingStatus = 'D' THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as IsDelisted
 		FROM
 			Issue913Test g_1

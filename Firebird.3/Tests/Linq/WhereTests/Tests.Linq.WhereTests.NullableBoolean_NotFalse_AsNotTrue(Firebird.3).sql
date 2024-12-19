@@ -29,7 +29,7 @@ SELECT
 FROM
 	"NullableBool" "r"
 WHERE
-	("r"."Bool" = TRUE OR "r"."Bool" IS NULL)
+	"r"."Bool" = TRUE OR "r"."Bool" IS NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

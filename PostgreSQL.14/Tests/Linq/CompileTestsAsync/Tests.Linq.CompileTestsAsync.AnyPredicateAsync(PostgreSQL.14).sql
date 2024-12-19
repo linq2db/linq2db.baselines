@@ -34,8 +34,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT
 	CASE
@@ -45,7 +45,7 @@ SELECT
 			FROM
 				"AsyncDataTable" c_1
 			WHERE
-				c_1."Id" = :Id
+				c_1."Id" = :p
 		)
 			THEN True
 		ELSE False

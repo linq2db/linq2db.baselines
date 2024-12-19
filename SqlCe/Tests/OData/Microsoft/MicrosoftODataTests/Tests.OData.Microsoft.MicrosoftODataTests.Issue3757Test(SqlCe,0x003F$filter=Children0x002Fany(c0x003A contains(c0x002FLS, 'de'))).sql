@@ -76,10 +76,10 @@ DECLARE @TypedProperty NVarChar(4) -- String
 SET     @TypedProperty = '%de%'
 
 SELECT
-	[it].[ID] as [Id],
-	[it].[ValB] as [L1B],
-	[it].[ValS] as [L1S],
-	[it].[ValInt] as [L1I]
+	[it].[ID],
+	[it].[ValB],
+	[it].[ValS],
+	[it].[ValInt]
 FROM
 	[Issue3757Level1] [it]
 WHERE

@@ -2,14 +2,14 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t_1."c1"
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Power(CAST(t."MoneyValue" AS Float), 3D)) as "c1"
+			Floor(Power(CAST(p."MoneyValue" AS Float), 3D)) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1."c1" <> 0D
+	t."Value_1" <> 0D
 

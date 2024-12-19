@@ -2,11 +2,11 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 FROM
-	`Child` `g_1`
+	`Child` `pmp`
 GROUP BY
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

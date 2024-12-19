@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	sumOrNull(g_1.ParentID)
+	sum(g_1.ParentID)
 FROM
 	Child g_1
 		LEFT JOIN Parent p ON g_1.ParentID = p.ParentID

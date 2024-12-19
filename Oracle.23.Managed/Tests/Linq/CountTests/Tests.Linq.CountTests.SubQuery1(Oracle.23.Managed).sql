@@ -10,7 +10,7 @@ SELECT
 			"Child" a_Children
 		WHERE
 			p."ParentID" = a_Children."ParentID" AND a_Children."ParentID" = p."ParentID" AND
-			CAST(a_Children."ChildID" AS Decimal) <> 0
+			CAST(a_Children."ChildID" AS Decimal(28, 10)) <> 0
 	)
 FROM
 	"Parent" p

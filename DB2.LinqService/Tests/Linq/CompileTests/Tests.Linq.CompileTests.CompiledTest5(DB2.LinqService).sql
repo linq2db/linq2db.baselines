@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1
-DECLARE @Value1 Integer(4) -- Int32
-SET     @Value1 = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 1
 
 SELECT
 	"p"."ParentID",
@@ -11,12 +11,12 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = @ParentID AND "p"."Value1" = @Value1
+	"p"."ParentID" = @p AND "p"."Value1" = @p_1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 2
+DECLARE @p Integer(4) -- Int32
+SET     @p = 2
 
 SELECT
 	"p"."ParentID",
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = @ParentID AND "p"."Value1" IS NULL
+	"p"."ParentID" = @p AND "p"."Value1" IS NULL
 

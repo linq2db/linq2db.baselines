@@ -55,7 +55,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" "t"
 WHERE
-	"t"."Value" = TRUE
+	"t"."Value"
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -85,7 +85,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" "t"
 WHERE
-	"t"."Value" = FALSE
+	NOT "t"."Value"
 
 BeforeExecute
 -- Firebird.4 Firebird4

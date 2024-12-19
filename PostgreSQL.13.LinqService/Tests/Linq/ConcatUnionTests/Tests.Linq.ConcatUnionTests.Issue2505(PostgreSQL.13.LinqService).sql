@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Text(1) -- String
-SET     @p = 'O'
 
 SELECT
 	i_2."LastName"
@@ -28,7 +26,7 @@ FROM
 			"Person" i_1
 	) i_2
 WHERE
-	i_2."Gender" = :p
+	i_2."Gender" = 'O'
 ORDER BY
 	i_2."FirstName" DESC
 

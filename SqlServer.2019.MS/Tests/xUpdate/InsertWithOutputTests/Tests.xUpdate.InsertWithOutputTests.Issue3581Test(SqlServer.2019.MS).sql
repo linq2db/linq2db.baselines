@@ -36,10 +36,10 @@ INSERT INTO [Issue3581Table]
 	[Source]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Name],
-	[INSERTED].[ExternalId],
-	[INSERTED].[Source]
+	INSERTED.[Id],
+	INSERTED.[Name],
+	INSERTED.[ExternalId],
+	INSERTED.[Source]
 VALUES
 (
 	@Id,

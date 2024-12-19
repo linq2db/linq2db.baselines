@@ -29,14 +29,6 @@ SELECT 1
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	1
-FROM
-	[SelectExpressionTable] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'SelectExpressionTable') IS NOT NULL)
 	DROP TABLE [SelectExpressionTable]
 

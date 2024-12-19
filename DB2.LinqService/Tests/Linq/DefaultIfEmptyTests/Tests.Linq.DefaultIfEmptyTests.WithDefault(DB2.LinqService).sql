@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"d"."ParentID",
+	"d"."cond",
 	"d"."ChildID"
 FROM
 	(
@@ -12,7 +12,7 @@ FROM
 	) "t2"
 		LEFT JOIN (
 			SELECT
-				"t1"."ParentID",
+				"t1"."ParentID" as "cond",
 				"t1"."ChildID"
 			FROM
 				"Child" "t1"

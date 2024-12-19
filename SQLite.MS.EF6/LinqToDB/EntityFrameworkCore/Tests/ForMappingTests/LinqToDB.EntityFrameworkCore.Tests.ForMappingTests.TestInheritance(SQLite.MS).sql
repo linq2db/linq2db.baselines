@@ -48,3 +48,15 @@ FROM "WithInheritance"
 WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 
 
+--  SQLite.MS SQLite
+
+SELECT
+	[t1].[Discriminator],
+	[t1].[Id]
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] IN ('WithInheritanceA2', 'WithInheritanceA1', 'WithInheritanceA')
+
+
+

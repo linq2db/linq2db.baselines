@@ -24,6 +24,18 @@ CREATE TABLE [ValueConversion]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Value1 NVarChar(2) -- String
+SET     @Value1 = '[]'
+DECLARE @Enum NVarChar(6) -- String
+SET     @Enum = 'Value1'
+DECLARE @Value2 NVarChar(22) -- String
+SET     @Value2 = '[{"Value":"inserted"}]'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue NVarChar -- String
+SET     @AnotherBoolValue = 'T'
 
 INSERT INTO [ValueConversion]
 (
@@ -36,12 +48,12 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	1,
-	'[]',
-	'Value1',
-	'[{"Value":"inserted"}]',
-	'Y',
-	'T'
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -65,6 +77,18 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value1 NVarChar -- String
+SET     @Value1 = NULL
+DECLARE @Value2 NVarChar -- String
+SET     @Value2 = NULL
+DECLARE @Enum NVarChar(6) -- String
+SET     @Enum = 'Value2'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
+DECLARE @AnotherBoolValue NVarChar -- String
+SET     @AnotherBoolValue = 'F'
 
 INSERT INTO [ValueConversion]
 (
@@ -77,12 +101,12 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	2,
-	NULL,
-	NULL,
-	'Value2',
-	'N',
-	'F'
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @OrderDate DateTime2
-SET     @OrderDate = DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
 	[c_1].[CustomerID],
@@ -22,7 +20,7 @@ SELECT
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			[o].[OrderDate] > @OrderDate
+			[o].[OrderDate] > DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
 	), 1, 0)
 FROM
 	[Customers] [c_1]

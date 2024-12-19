@@ -9,8 +9,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t1.PersonID IN (1, 3) THEN 't'
-				ELSE 'f'
+				WHEN t1.PersonID IN (1, 3) THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as flag,
 			t1.PersonID as ID,
 			t1.LastName

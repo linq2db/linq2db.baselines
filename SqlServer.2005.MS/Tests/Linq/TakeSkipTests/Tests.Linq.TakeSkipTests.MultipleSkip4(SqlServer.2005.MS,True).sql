@@ -50,6 +50,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip + @skip_1 + @skip_2
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

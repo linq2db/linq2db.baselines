@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @p Int32
 SET     @p = 1
 
@@ -11,13 +9,11 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID
+	`c_1`.`ParentID` = @p
 LIMIT @p
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 2
 DECLARE @p Int32
 SET     @p = 2
 
@@ -27,6 +23,6 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID
+	`c_1`.`ParentID` = @p
 LIMIT @p
 

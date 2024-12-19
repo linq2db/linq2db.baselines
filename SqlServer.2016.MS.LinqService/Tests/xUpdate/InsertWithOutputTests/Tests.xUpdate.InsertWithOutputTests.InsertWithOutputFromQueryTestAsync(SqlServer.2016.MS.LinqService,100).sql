@@ -254,13 +254,11 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @param Int -- Int32
 SET     @param = 100
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 100
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
+	[s].[ValueStr] + CAST(@param AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE

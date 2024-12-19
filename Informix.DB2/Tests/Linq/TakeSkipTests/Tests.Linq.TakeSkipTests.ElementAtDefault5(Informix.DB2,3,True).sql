@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 3
 
-SELECT SKIP 3 FIRST 1
+SELECT SKIP @skip FIRST 1
 	t1.FirstName,
 	t1.PersonID,
 	t1.LastName,

@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				p.ParentID = 1 AND 1 = p.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 
@@ -29,8 +29,8 @@ SELECT
 			WHERE
 				p.ParentID = 1 AND 2 = p.ParentID
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

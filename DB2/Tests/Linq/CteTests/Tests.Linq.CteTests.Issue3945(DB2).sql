@@ -23,8 +23,6 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Guid1 VarBinary(16) -- Binary
-SET     @Guid1 = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO "TestFolder"
 (
@@ -43,7 +41,7 @@ AS
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	CAST(@Guid1 AS char(16) for bit data),
+	BX'3D667BBCDE0F27438F925D8CC3A11D11',
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"

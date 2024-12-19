@@ -19,5 +19,5 @@ SELECT TOP (1)
 FROM
 	[Orders] [o]
 WHERE
-	(Asin(Cos(CAST([o].[OrderID] AS Float))) = 0 OR [o].[OrderID] > 0)
+	Asin(Cos(CAST([o].[OrderID] AS Float))) = 0 OR [o].[OrderID] > 0
 

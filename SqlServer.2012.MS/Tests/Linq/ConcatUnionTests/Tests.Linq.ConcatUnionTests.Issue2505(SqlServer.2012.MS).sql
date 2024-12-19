@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'O'
 
 SELECT
 	[i_2].[LastName]
@@ -22,7 +20,7 @@ FROM
 			[Person] [i_1]
 	) [i_2]
 WHERE
-	[i_2].[Gender] = @p
+	[i_2].[Gender] = N'O'
 ORDER BY
 	[i_2].[FirstName] DESC
 

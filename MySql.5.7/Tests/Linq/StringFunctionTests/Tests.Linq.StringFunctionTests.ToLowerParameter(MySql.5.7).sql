@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar(4) -- String
-SET     @p = 'john'
+DECLARE @param VarChar(4) -- String
+SET     @param = 'john'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Lower(`p`.`FirstName`) = @p AND `p`.`PersonID` = 1
+	Lower(`p`.`FirstName`) = @param AND `p`.`PersonID` = 1
 

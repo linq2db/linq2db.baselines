@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t_1.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Truncate(t.MoneyValue) as c1
+			Truncate(p.MoneyValue) as Value_1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> toDecimal128('0.1', 10)
+	t.Value_1 <> toDecimal128('0.1', 10)
 

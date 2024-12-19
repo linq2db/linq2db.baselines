@@ -2,17 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p_1.c1
+	p.c1
 FROM
 	(
 		SELECT
 			CASE
-				WHEN p.MoneyValue <> 4.5 THEN 't'
-				ELSE 'f'
+				WHEN t.MoneyValue <> 4.5 THEN 't'::BOOLEAN
+				ELSE 'f'::BOOLEAN
 			END::BOOLEAN as c1
 		FROM
-			LinqDataTypes p
-	) p_1
+			LinqDataTypes t
+	) p
 WHERE
-	p_1.c1 = 'f'
+	NOT p.c1
 

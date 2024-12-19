@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'Issue3761Table') IS NULL)
 			[LETO]     Int      NOT NULL,
 			[STEVILKA] Int      NOT NULL,
 			[DATUM]    DateTime     NULL,
-			[SKUPAJ]   Decimal      NULL,
+			[SKUPAJ]   DECIMAL      NULL,
 
 			CONSTRAINT [PK_Issue3761Table] PRIMARY KEY CLUSTERED ([LETO], [STEVILKA])
 		)
@@ -22,8 +22,6 @@ IF (OBJECT_ID(N'Issue3761Table') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @DATUM DateTime
-SET     @DATUM = '2019-01-01'
 
 SELECT
 	[t1].[Year_1],
@@ -44,7 +42,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < @DATUM
+			[n].[DATUM] < '2019-01-01'
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -69,7 +67,7 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			[n_1].[DATUM] >= @DATUM
+			[n_1].[DATUM] >= '2019-01-01'
 	) [t2]
 GROUP BY
 	[t2].[Year_1],

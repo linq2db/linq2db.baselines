@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS Issue1303
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Array VarBinary(3) -- Binary
-SET     @Array = {1,2,3}
-DECLARE @Binary VarBinary(2) -- Binary
-SET     @Binary = {4,5}
+DECLARE @value VarBinary(3) -- Binary
+SET     @value = {1,2,3}
+DECLARE @value_1 VarBinary(2) -- Binary
+SET     @value_1 = {4,5}
 
 INSERT INTO Issue1303
 (
@@ -31,8 +31,8 @@ INSERT INTO Issue1303
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	@value,
+	@value_1
 )
 
 BeforeExecute

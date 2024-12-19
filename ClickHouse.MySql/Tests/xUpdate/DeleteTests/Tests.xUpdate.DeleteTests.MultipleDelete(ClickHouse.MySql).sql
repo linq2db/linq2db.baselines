@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	(ParentID = 1000 AND Value1 IS NULL OR ParentID = 1001 AND Value1 IS NULL)
+	ParentID = 1000 AND Value1 IS NULL OR ParentID = 1001 AND Value1 IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

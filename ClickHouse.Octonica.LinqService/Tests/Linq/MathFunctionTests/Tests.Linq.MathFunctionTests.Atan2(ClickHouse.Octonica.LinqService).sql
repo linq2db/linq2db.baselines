@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t_1.c1
+	t.Value_1
 FROM
 	(
 		SELECT
-			Floor(Atan2(toFloat64(t.MoneyValue) / toFloat64(15), toFloat64(0)) * toFloat64(15)) as c1
+			Floor(Atan2(toFloat64(p.MoneyValue) / toFloat64(toDecimal64('15', 10)), toFloat64(0)) * toFloat64(15)) as Value_1
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> toFloat64(0.10000000000000001)
+	t.Value_1 <> toFloat64(0.10000000000000001)
 

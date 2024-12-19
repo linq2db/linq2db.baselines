@@ -61,10 +61,10 @@ UPDATE
 SET
 	[a_MainOptional].[Field] = N'test'
 FROM
-	[AssociatedTable] [pat]
-		LEFT JOIN [MainTable] [a_MainOptional] ON [pat].[Id] = [a_MainOptional].[Id]
+	[AssociatedTable] [p]
+		LEFT JOIN [MainTable] [a_MainOptional] ON [p].[Id] = [a_MainOptional].[Id]
 WHERE
-	[pat].[Id] = @id
+	[p].[Id] = @id
 
 BeforeExecute
 -- SqlServer.2017

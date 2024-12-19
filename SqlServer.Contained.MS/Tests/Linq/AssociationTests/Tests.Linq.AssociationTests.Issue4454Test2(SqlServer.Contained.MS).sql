@@ -1,0 +1,49 @@
+﻿BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Issue4454Client]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue4454Client]', N'U') IS NULL)
+	CREATE TABLE [Issue4454Client]
+	(
+		[Id]   Int            NOT NULL,
+		[Name] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Issue4454Service]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+IF (OBJECT_ID(N'[Issue4454Service]', N'U') IS NULL)
+	CREATE TABLE [Issue4454Service]
+	(
+		[Id]       Int NOT NULL,
+		[IdClient] Int     NULL
+	)
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[a_Client2].[Name]
+FROM
+	[Issue4454Service] [s]
+		INNER JOIN [Issue4454Client] [a_Client2] ON [a_Client2].[Id] = [s].[IdClient]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Issue4454Service]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+DROP TABLE IF EXISTS [Issue4454Client]
+

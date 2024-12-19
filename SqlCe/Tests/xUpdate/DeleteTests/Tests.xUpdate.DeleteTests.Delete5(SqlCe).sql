@@ -16,6 +16,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
 
 INSERT INTO [Parent]
 (
@@ -24,12 +26,14 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	1001,
+	@ParentID,
 	1
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1002
 
 INSERT INTO [Parent]
 (
@@ -38,7 +42,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	1002,
+	@ParentID,
 	1
 )
 

@@ -2,11 +2,11 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 FROM
-	`Child` `g_1`
+	`Child` `pmp`
 GROUP BY
-	`g_1`.`ParentID`
+	`pmp`.`ParentID`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

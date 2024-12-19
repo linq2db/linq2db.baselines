@@ -2,14 +2,9 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p_1.c1
+	p."MoneyValue"
 FROM
-	(
-		SELECT
-			Floor(p."MoneyValue"::Float)::Int as c1
-		FROM
-			"LinqDataTypes" p
-	) p_1
+	"LinqDataTypes" p
 WHERE
-	p_1.c1 > 0
+	Floor(p."MoneyValue"::Float)::Int > 0
 

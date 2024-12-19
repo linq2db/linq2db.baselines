@@ -132,8 +132,6 @@ CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @MaterialID  -- Guid
-SET     @MaterialID = X'00000000000000000000000000000000'
 
 SELECT
 	[cr_1].[Id],
@@ -156,7 +154,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[ir].[Quantity],
 			Coalesce((
 				SELECT
 					SUM([x].[Quantity])
@@ -172,6 +169,7 @@ FROM
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
 			) * [ir].[Quantity] as [RefQty],
+			[ir].[Quantity],
 			[ir].[Id],
 			[ir].[Status],
 			[ir].[MaterialID],
@@ -193,10 +191,8 @@ FROM
 					FROM
 						[InventoryResourceDTO] [irMix]
 					WHERE
-						[irMix].[ResourceID] = [r].[Id] AND
-						[irMix].[Status] >= 0 AND
-						[irMix].[Status] <= 1 AND
-						([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
+						[irMix].[ResourceID] = [r].[Id] AND [irMix].[Status] >= 0 AND
+						[irMix].[Status] <= 1
 				)
 					THEN 1
 				ELSE 0
@@ -211,12 +207,11 @@ FROM
 				INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 				INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 		WHERE
-			[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
-			[ir].[Quantity] > 0
+			1 = 0
 		UNION
 		SELECT
+			CAST(0 AS Decimal) as [RefQty],
 			[ir_1].[Quantity],
-			0 as [RefQty],
 			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
@@ -228,19 +223,16 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			0 as [AisleStatus],
+			CAST(0 AS INTEGER) as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [MixedStock]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
-			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @MaterialID AND
-			[ir_1].[ProductStatus] = 0 AND
-			[ir_1].[Quantity] > 0
+			1 = 0
 	) [cr_1]
 WHERE
 	[cr_1].[Quantity] > [cr_1].[RefQty]

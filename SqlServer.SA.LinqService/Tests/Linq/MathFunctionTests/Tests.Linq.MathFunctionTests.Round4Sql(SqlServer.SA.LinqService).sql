@@ -2,14 +2,14 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	IIF([t_1].[c1] * 2 = Round([t_1].[c1] * 2, 5) AND [t_1].[c1] <> Round([t_1].[c1], 5), Round([t_1].[c1] / 2, 5) * 2, Round([t_1].[c1], 5))
+	IIF([t].[c1] * 2 = ROUND([t].[c1] * 2, 5) AND [t].[c1] <> ROUND([t].[c1], 5), ROUND([t].[c1] / 2, 5) * 2, ROUND([t].[c1], 5))
 FROM
 	(
 		SELECT
-			IIF(CAST([t].[MoneyValue] AS Float) * 2 = Round(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> Round(CAST([t].[MoneyValue] AS Float), 1), Round(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2, Round(CAST([t].[MoneyValue] AS Float), 1)) as [c1]
+			IIF(CAST([p].[MoneyValue] AS Float) * 2 = ROUND(CAST([p].[MoneyValue] AS Float) * 2, 1) AND CAST([p].[MoneyValue] AS Float) <> ROUND(CAST([p].[MoneyValue] AS Float), 1), ROUND(CAST([p].[MoneyValue] AS Float) / 2, 1) * 2, ROUND(CAST([p].[MoneyValue] AS Float), 1)) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0
+	[t].[c1] <> 0
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(2) -- String
-SET     @p = 'oh'
 
 SELECT
 	`p`.`FirstName`,
@@ -12,5 +10,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Locate(@p, `p`.`FirstName`) - 1 = 1 AND `p`.`PersonID` = 1
+	Locate('oh', `p`.`FirstName`) = 2 AND `p`.`PersonID` = 1
 

@@ -31,8 +31,8 @@ INSERT INTO [Child]
 	[ChildID]
 )
 OUTPUT
-	[INSERTED].[ChildID],
-	[INSERTED].[ParentID] + @param
+	INSERTED.[ChildID],
+	INSERTED.[ParentID] + @param
 INTO [tempdb]..[#TInserted]
 (
 	[ChildID],

@@ -7,19 +7,19 @@ SELECT
 FROM
 	[Child] [c_1]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			(
 				SELECT TOP (100)
-					[param].[ParentID],
-					[param].[Value1] as [Value_1]
+					[p].[ParentID],
+					[p].[Value1] as [Value_1]
 				FROM
-					[Parent] [param]
-			) [param_1]
+					[Parent] [p]
+			) [param]
 		WHERE
-			[param_1].[ParentID] = [c_1].[ParentID] AND [param_1].[Value_1] = [c_1].[ParentID]
+			[param].[ParentID] = [c_1].[ParentID] AND [param].[Value_1] = [c_1].[ParentID]
 	)
 
 BeforeExecute

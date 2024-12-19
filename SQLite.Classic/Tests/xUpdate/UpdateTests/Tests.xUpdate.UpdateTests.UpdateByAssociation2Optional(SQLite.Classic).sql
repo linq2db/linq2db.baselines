@@ -59,9 +59,9 @@ UPDATE
 SET
 	[Field] = 'test'
 FROM
-	[AssociatedTable] [pat]
+	[AssociatedTable] [p]
 WHERE
-	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
+	[p].[Id] = @id AND [p].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.Classic SQLite

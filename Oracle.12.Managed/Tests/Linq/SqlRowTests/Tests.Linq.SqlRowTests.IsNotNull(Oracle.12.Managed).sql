@@ -46,8 +46,6 @@ SELECT
 	COUNT(*)
 FROM
 	"Ints" i
-WHERE
-	i."One" IS NOT NULL AND i."Two" IS NOT NULL AND i."Three" IS NOT NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

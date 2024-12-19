@@ -52,8 +52,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @BoolValue VarChar(1) -- AnsiString
-SET     @BoolValue = 'N'
+DECLARE @false_value VarChar(1) -- AnsiString
+SET     @false_value = 'N'
 
 SELECT
 	[t].[Id],
@@ -63,7 +63,7 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	[t].[BoolValue] = @BoolValue
+	[t].[BoolValue] = @false_value
 
 BeforeExecute
 -- SQLite.MS SQLite

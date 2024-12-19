@@ -4,7 +4,7 @@
 SELECT
 	[t2].[month_1],
 	[t2].[year_1],
-	1
+	CAST(1 AS INTEGER)
 FROM
 	(
 		SELECT
@@ -20,14 +20,14 @@ UNION
 SELECT
 	[t3].[SmallIntValue],
 	[t3].[SmallIntValue],
-	3
+	CAST(3 AS INTEGER)
 FROM
 	[LinqDataTypes] [t3]
 UNION
 SELECT
 	CAST(strftime('%Y', [t4].[DateTimeValue]) AS INTEGER),
 	CAST(strftime('%Y', [t4].[DateTimeValue]) AS INTEGER),
-	2
+	CAST(2 AS INTEGER)
 FROM
 	[LinqDataTypes] [t4]
 

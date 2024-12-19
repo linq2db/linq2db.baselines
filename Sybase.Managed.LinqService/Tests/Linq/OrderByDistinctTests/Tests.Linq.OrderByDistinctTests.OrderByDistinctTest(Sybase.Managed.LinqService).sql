@@ -505,8 +505,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MAX([x].[OrderData1])
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -525,8 +523,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
-ORDER BY
-	MIN([x].[OrderData1]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase

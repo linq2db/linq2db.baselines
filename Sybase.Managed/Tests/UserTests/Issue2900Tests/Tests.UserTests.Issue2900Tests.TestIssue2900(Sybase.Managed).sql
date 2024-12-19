@@ -39,28 +39,6 @@ IF (OBJECT_ID(N'Metric') IS NULL)
 	')
 
 BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[m_1].[Id],
-	[d].[Value]
-FROM
-	[Request] [m_1]
-		INNER JOIN [Metric] [d] ON [m_1].[Id] = [d].[RequestId]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[a].[Id]
-FROM
-	[Request] [a]
-
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'Metric') IS NOT NULL)

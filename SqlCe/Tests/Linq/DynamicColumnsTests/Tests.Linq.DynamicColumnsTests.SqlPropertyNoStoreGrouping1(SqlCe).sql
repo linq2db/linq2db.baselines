@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[g_1].[FirstName],
+	[g_1].[FirstName] as [Key_1],
 	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [g_1]

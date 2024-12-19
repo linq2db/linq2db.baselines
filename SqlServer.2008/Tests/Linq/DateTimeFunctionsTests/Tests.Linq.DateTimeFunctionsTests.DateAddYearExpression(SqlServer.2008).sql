@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-DECLARE @p Int -- Int32
-SET     @p = 11
+DECLARE @Value Int -- Int32
+SET     @Value = 11
 
 SELECT
-	CAST(DateAdd(year, @p, [t].[DateTimeValue]) AS Date)
+	CAST(DateAdd(year, @Value, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

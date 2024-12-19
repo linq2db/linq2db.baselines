@@ -41,11 +41,11 @@ WHERE
 BeforeExecute
 -- Informix.DB2 Informix
 
-WITH CTE_1 (ID)
+WITH CTE_1 (c1)
 AS
 (
 	SELECT
-		t1.PersonID
+		1
 	FROM
 		Person t1
 )

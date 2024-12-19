@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN a_Patient.PersonID IS NOT NULL THEN 't'
-		ELSE 'f'
+		WHEN a_Patient.PersonID IS NOT NULL THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM
 	Person p

@@ -41,7 +41,7 @@ INSERT INTO "TestFbTypesTable"
 VALUES
 (
 	1,
-	CAST(@Int128 AS INT128)
+	@Int128
 )
 
 BeforeExecute

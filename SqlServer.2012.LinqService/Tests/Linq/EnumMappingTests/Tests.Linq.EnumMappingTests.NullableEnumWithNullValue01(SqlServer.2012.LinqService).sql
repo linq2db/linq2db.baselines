@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 104
+DECLARE @p Int -- Int32
+SET     @p = 104
 
 DELETE [r]
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] < @Id
+	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
 -- SqlServer.2012
@@ -92,12 +92,12 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 104
+DECLARE @p Int -- Int32
+SET     @p = 104
 
 DELETE [r]
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] >= 101 AND [r].[ID] < @Id
+	[r].[ID] >= 101 AND [r].[ID] < @p
 

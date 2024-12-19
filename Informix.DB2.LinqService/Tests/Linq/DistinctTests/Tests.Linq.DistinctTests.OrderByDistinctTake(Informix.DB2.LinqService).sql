@@ -226,8 +226,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 
-SELECT FIRST 2
+SELECT FIRST @take
 	t2.F2
 FROM
 	(
@@ -237,6 +239,8 @@ FROM
 		FROM
 			DistinctOrderByTable t1
 	) t2
+ORDER BY
+	t2.F1
 
 BeforeExecute
 -- Informix.DB2 Informix

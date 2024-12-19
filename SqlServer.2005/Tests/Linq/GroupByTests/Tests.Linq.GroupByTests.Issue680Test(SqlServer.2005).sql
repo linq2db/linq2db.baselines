@@ -15,12 +15,11 @@ IF (OBJECT_ID(N'[Issue680Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 SELECT
 	COUNT(CASE
-		WHEN [g_1].[TimeStamp] > @DateTime THEN 1
+		WHEN [g_1].[TimeStamp] > CAST('2020-02-29T17:54:55.123' AS DATETIME)
+			THEN 1
 		ELSE NULL
 	END)
 FROM

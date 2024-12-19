@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int32
-SET     @ID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	`p`.`PersonID`,
@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @ID
+	`p`.`PersonID` = @p
 

@@ -33,7 +33,7 @@ IF (OBJECT_ID(N'ItemValue') IS NULL)
 		(
 			[Id]     Int     NOT NULL,
 			[ItemId] Int     NOT NULL,
-			[Value]  Decimal NOT NULL
+			[Value]  DECIMAL NOT NULL
 		)
 	')
 

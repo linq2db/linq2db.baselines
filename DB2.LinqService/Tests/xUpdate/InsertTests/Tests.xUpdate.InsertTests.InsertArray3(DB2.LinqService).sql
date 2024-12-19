@@ -21,7 +21,7 @@ VALUES
 (
 	1001,
 	1,
-	CAST(@arr AS VARBINARY(4))
+	@arr
 )
 
 BeforeExecute

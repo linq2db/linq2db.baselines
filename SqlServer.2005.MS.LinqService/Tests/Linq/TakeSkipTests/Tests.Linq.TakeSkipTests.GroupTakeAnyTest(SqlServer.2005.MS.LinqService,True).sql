@@ -76,13 +76,13 @@ SET     @take = 1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN  EXISTS (
 			SELECT TOP (@take)
-				[group_1].[Value]
+				[item_1].[Value]
 			FROM
-				[TakeSkipClass] [group_1]
+				[TakeSkipClass] [item_1]
 			GROUP BY
-				[group_1].[Value]
+				[item_1].[Value]
 			HAVING
 				COUNT(*) > 1
 		)

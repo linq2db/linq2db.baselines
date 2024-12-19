@@ -2,14 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	[t2].[month_1],
-	[t2].[month_1],
+	[t2].[year_1],
+	[t2].[year_1],
 	[t2].[int_1]
 FROM
 	(
 		SELECT
-			[t1].[SmallIntValue] as [month_1],
-			3 as [int_1]
+			[t1].[SmallIntValue] as [year_1],
+			CAST(3 AS Int) as [int_1]
 		FROM
 			[LinqDataTypes] [t1]
 	) [t2]
@@ -17,7 +17,7 @@ UNION
 SELECT
 	[t4].[month_1],
 	[t4].[year_1],
-	1
+	CAST(1 AS Int)
 FROM
 	(
 		SELECT
@@ -33,7 +33,7 @@ UNION
 SELECT
 	DatePart(year, [t5].[DateTimeValue]),
 	DatePart(year, [t5].[DateTimeValue]),
-	2
+	CAST(2 AS Int)
 FROM
 	[LinqDataTypes] [t5]
 

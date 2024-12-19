@@ -17,7 +17,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(6))
+	@NString
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -45,7 +45,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(8))
+	@NString
 )
 
 BeforeExecute
@@ -298,7 +298,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NString AS NVarChar(255))
+	@NString
 )
 
 BeforeExecute

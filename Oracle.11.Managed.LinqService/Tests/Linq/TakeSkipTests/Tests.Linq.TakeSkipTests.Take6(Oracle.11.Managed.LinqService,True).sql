@@ -18,4 +18,6 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t2."ChildID"
 

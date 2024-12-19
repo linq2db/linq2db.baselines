@@ -2,11 +2,11 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	"g_1"."ParentID"
+	"pmp"."ParentID"
 FROM
-	"Child" "g_1"
+	"Child" "pmp"
 GROUP BY
-	"g_1"."ParentID"
+	"pmp"."ParentID"
 
 BeforeExecute
 -- Firebird.3 Firebird3

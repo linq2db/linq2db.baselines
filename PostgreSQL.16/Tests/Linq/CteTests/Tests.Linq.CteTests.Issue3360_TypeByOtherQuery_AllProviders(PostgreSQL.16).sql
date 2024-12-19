@@ -28,7 +28,7 @@ AS
 	UNION ALL
 	SELECT
 		t1."Id",
-		'Str'
+		'Str'::VarChar
 	FROM
 		cte t1,
 		"Issue3360Table" r

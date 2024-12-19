@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	"c_1"."ParentID",
@@ -14,8 +14,8 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	"c_1"."ParentID",

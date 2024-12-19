@@ -44,7 +44,7 @@ SET     @ParentID = 1
 UPDATE
 	"Parent" "t1"
 SET
-	"ParentID" = CAST(@ParentID AS Int)
+	"ParentID" = @ParentID
 WHERE
 	"t1"."ParentID" = 1001
 

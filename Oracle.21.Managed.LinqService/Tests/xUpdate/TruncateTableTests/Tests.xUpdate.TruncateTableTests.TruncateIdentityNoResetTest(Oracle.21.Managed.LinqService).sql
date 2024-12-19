@@ -35,8 +35,8 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "test_temp"
 		(
-			ID       Int      NOT NULL,
-			"Field1" Decimal  NOT NULL,
+			ID       Int              NOT NULL,
+			"Field1" Decimal(28, 10)  NOT NULL,
 
 			CONSTRAINT "PK_test_temp" PRIMARY KEY (ID)
 		)

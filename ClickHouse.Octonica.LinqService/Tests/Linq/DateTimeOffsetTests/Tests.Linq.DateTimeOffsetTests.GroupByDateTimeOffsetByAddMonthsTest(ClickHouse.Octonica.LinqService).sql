@@ -230,19 +230,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.c1,
+	t1.Key_1,
 	COUNT(*)
 FROM
 	(
 		SELECT
-			addMonths(x.TransactionDate, -1) as c1
+			addMonths(x.TransactionDate, -1) as Key_1
 		FROM
 			Transactions x
 	) t1
 GROUP BY
-	t1.c1
+	t1.Key_1
 ORDER BY
-	t1.c1
+	t1.Key_1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

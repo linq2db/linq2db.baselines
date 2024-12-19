@@ -70,57 +70,81 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			"s"."String"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			"s"."NullableString"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			"s"."String"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			"s"."NullableString"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

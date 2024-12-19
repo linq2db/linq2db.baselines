@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."Taxonomy"
+	Lower("p"."Taxonomy")
 FROM
 	"Doctor" "p"
 WHERE

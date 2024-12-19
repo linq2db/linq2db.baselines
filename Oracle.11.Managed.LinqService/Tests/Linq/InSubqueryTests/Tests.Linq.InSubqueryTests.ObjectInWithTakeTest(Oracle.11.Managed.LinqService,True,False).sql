@@ -13,15 +13,15 @@ WHERE
 		FROM
 			(
 				SELECT
-					param."ParentID",
-					param."Value1" as "Value_1"
+					p."ParentID",
+					p."Value1" as "Value_1"
 				FROM
-					"Parent" param
+					"Parent" p
 				WHERE
 					ROWNUM <= 100
-			) param_1
+			) param
 		WHERE
-			param_1."ParentID" = c_1."ParentID" AND param_1."Value_1" = c_1."ParentID"
+			param."ParentID" = c_1."ParentID" AND param."Value_1" = c_1."ParentID"
 	)
 
 BeforeExecute

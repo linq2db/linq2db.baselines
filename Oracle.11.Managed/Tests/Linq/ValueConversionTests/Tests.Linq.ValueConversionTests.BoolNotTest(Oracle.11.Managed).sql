@@ -56,8 +56,8 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Varchar2 -- String
-SET     @BoolValue = 'N'
+DECLARE @false_value Varchar2 -- String
+SET     @false_value = 'N'
 
 SELECT
 	t."Id",
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"ValueConversion" t
 WHERE
-	t."BoolValue" = :BoolValue
+	t."BoolValue" = :false_value
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

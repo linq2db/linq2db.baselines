@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t_1.c1
+	t.MoneyValue::Int::Float * 57.295779513082323
 FROM
-	(
-		SELECT
-			t.MoneyValue::Int::Float * 57.295779513082323 as c1
-		FROM
-			LinqDataTypes t
-	) t_1
+	LinqDataTypes t
 WHERE
-	t_1.c1::Float <> 0.10000000000000001
+	(t.MoneyValue::Int::Float * 57.295779513082323)::Float <> 0.10000000000000001
 

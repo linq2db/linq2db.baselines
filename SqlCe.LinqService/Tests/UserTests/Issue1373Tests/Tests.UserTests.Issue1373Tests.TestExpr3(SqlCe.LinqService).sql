@@ -16,6 +16,8 @@ CREATE TABLE [Issue1373Tests]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Field1 NVarChar -- String
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -25,11 +27,13 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	1,
-	NULL
+	@Field1
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @Field1 NVarChar -- String
+SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -39,11 +43,13 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	2,
-	NULL
+	@Field1
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @Field1 NVarChar(4) -- String
+SET     @Field1 = 'test'
 
 INSERT INTO [Issue1373Tests]
 (
@@ -53,7 +59,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	3,
-	'test'
+	@Field1
 )
 
 BeforeExecute

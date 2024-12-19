@@ -12,7 +12,7 @@ BeforeExecute
 
 SELECT
 	x_1.Key_1,
-	sumOrNull(x_1.MatchScore)
+	sum(x_1.MatchScore)
 FROM
 	(
 		SELECT DISTINCT

@@ -27,7 +27,7 @@ SET     @from = 2
 UPDATE
 	"testparams" "t"
 SET
-	"from" = CAST(@from AS Int)
+	"from" = @from
 WHERE
 	"t"."from" = 1
 

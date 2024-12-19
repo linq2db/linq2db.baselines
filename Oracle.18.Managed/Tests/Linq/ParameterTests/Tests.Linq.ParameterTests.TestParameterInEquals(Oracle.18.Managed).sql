@@ -65,14 +65,7 @@ SELECT
 FROM
 	"TestEqualsTable1" t1
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"TestEqualsTable2" t2
-		WHERE
-			1 = 0
-	)
+	1 = 0
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
