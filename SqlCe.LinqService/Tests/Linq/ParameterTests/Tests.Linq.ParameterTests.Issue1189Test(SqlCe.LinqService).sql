@@ -16,13 +16,11 @@ CREATE TABLE [Issue1189Customer]
 
 BeforeExecute
 -- SqlCe
-DECLARE @DateTime DateTime
-SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	[k_1].[ID] as [Id],
 	[k_1].[NAME] as [Name],
-	@DateTime as [ToDelete]
+	'2020-02-29 17:54:55.123' as [ToDelete]
 FROM
 	[Issue1189Customer] [k_1]
 

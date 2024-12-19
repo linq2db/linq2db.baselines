@@ -20,13 +20,11 @@ IF (OBJECT_ID(N'Issue1189Customer') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @DateTime DateTime
-SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	[k_1].[ID],
 	[k_1].[NAME],
-	@DateTime
+	'2020-02-29 17:54:55.123'
 FROM
 	[Issue1189Customer] [k_1]
 

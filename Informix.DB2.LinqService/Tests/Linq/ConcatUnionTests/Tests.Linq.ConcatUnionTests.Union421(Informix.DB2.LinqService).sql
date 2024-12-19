@@ -7,19 +7,19 @@ FROM
 	(
 		SELECT
 			p.ParentID as id,
-			't'::BOOLEAN as val
+			't'::BOOLEAN::BOOLEAN as val
 		FROM
 			Parent p
 		UNION
 		SELECT
 			p_1.ParentID as id,
-			'f'::BOOLEAN as val
+			'f'::BOOLEAN::BOOLEAN as val
 		FROM
 			Parent p_1
 		UNION
 		SELECT
 			ch.ParentID as id,
-			'f'::BOOLEAN as val
+			'f'::BOOLEAN::BOOLEAN as val
 		FROM
 			Child ch
 	) p_2

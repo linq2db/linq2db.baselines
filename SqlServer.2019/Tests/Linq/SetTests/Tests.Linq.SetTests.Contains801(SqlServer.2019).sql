@@ -2,6 +2,7 @@
 -- SqlServer.2019
 
 SELECT
+	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

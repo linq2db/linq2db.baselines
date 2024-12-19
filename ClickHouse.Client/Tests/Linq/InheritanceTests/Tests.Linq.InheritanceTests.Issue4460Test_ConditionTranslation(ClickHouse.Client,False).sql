@@ -72,7 +72,7 @@ WHERE
 		END
 		WHEN e.Id <> 0 THEN true
 		ELSE false
-	END = true
+	END
 ORDER BY
 	e.Id
 

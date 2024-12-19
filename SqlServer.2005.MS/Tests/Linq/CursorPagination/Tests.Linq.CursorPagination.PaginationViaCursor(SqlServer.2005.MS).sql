@@ -127,8 +127,6 @@ SELECT 100,CAST('2020-02-27T17:54:55.123' AS DATETIME),100
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 SELECT
 	[t].[BookingID],
@@ -137,15 +135,13 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+	[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -172,7 +168,7 @@ FROM
 				FROM
 					[Booking] [t]
 				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+					[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
 			) [e]
 	) [q]
 WHERE
@@ -180,8 +176,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take Int -- Int32
@@ -212,7 +206,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
 		) [e]
 )
 SELECT
@@ -226,7 +220,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -236,8 +230,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take Int -- Int32
@@ -268,7 +260,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
 		) [e]
 )
 SELECT
@@ -282,7 +274,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -292,8 +284,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @DateTime DateTime
-SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
 DECLARE @take Int -- Int32
@@ -324,7 +314,7 @@ AS
 			FROM
 				[Booking] [t]
 			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
 		) [e]
 )
 SELECT
@@ -338,7 +328,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[CTE_1] [c_1]
 		WHERE

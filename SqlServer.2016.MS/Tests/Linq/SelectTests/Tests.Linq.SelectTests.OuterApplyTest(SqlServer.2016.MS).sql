@@ -28,7 +28,7 @@ FROM
 			[c1_1].[ChildID],
 			IIF(EXISTS(
 				SELECT
-					1
+					*
 				FROM
 					[Child] [c_6]
 				WHERE

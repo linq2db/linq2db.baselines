@@ -64,10 +64,12 @@ SELECT
 FROM
 	Base e
 WHERE
-	e.Code = 'Child2' OR
-	e.Code = 'Child' OR
-	e.Code = 'BaseChild' OR
-	e.Id <> 0
+	CASE
+		WHEN e.Code = 'Child2' OR e.Code = 'Child' OR e.Code = 'BaseChild'
+			THEN true
+		WHEN e.Id <> 0 THEN true
+		ELSE false
+	END
 ORDER BY
 	e.Id
 

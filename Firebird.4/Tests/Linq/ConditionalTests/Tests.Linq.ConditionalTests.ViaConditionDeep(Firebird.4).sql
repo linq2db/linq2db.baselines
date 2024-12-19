@@ -51,8 +51,14 @@ SELECT
 		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN TRUE
 		ELSE FALSE
 	END,
+	CASE
+		WHEN "x"."StringProp" = '2' THEN TRUE
+		ELSE FALSE
+	END,
 	"x"."StringProp",
-	"x"."StringProp" || '2'
+	1,
+	"x"."StringProp" || '2',
+	2
 FROM
 	"ConditionalData" "x"
 WHERE

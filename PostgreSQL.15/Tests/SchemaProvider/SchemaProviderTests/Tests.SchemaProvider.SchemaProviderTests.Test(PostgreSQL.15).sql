@@ -10,7 +10,7 @@ LIMIT 1
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -34,7 +34,13 @@ BeforeExecute
 					left(t.table_schema, 3) = 'pg_' OR t.table_schema = 'information_schema'   as IsProviderSpecific
 				FROM
 					information_schema.tables t
-				WHERE table_schema NOT IN ('information_schema', 'pg_catalog') AND table_schema IN ('public')
+				LEFT JOIN pg_inherits i ON (
+				    SELECT c.oid
+				    FROM pg_class c
+				    JOIN pg_namespace n ON c.relnamespace = n.oid
+				    WHERE c.relname = t.table_name AND n.nspname = t.table_schema
+				) = i.inhrelid
+				WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog') AND table_schema IN ('public')
 			UNION ALL
 				SELECT
 					current_database() || '.' || v.schemaname || '.' || v.matviewname          as TableID,
@@ -72,11 +78,6 @@ BeforeExecute
 					WHERE
 						pg_constraint.contype = 'p'
 						AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('public')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -161,7 +162,7 @@ BeforeExecute
 				                  LEFT JOIN (pg_type bt
 				                 JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid)
 				                            ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-				         WHERE cls.relkind IN ('r', 'v', 'm')
+				         WHERE cls.relkind IN ('r', 'v', 'm', 'p')
 				           AND attr.attnum > 0
 				           AND NOT attr.attisdropped
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog') AND ns.nspname IN ('public')
@@ -216,11 +217,6 @@ BeforeExecute
 				WHERE
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('public')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SHOW  server_version_num
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
