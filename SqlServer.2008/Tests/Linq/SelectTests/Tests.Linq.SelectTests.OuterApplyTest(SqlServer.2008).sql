@@ -11,12 +11,14 @@ SELECT
 	[t6].[ParentID_2],
 	[t6].[ChildID_2],
 	[t6].[ParentID_3],
-	[t6].[ChildID_3],
-	[t6].[ParentID_4],
-	[t6].[ChildID_4],
-	[t6].[ParentID_5],
-	[t6].[ChildID_5],
-	[t6].[ParentID_6]
+	[t6].[ChildArray],
+	[t6].[ChildArray_1],
+	[t6].[ChildDictionary1],
+	[t6].[ChildDictionary1_1],
+	[t6].[ChildDictionary2],
+	[t6].[ChildDictionary2_1],
+	[t6].[ChildDictionary2_2],
+	[t6].[ChildDictionary2_3]
 FROM
 	(
 		SELECT DISTINCT
@@ -40,12 +42,14 @@ FROM
 			[t1].[ParentID] as [ParentID_2],
 			[t2].[ChildID] as [ChildID_2],
 			[t2].[ParentID] as [ParentID_3],
-			[t3].[ChildID] as [ChildID_3],
-			[t3].[ParentID] as [ParentID_4],
-			[t4].[ChildID] as [ChildID_4],
-			[t4].[ParentID] as [ParentID_5],
-			[t5].[ChildID] as [ChildID_5],
-			[t5].[ParentID] as [ParentID_6]
+			[t3].[ChildArray],
+			[t3].[ChildArray_1],
+			[t4].[ChildDictionary1],
+			[t4].[ChildDictionary1_1],
+			[t5].[ChildDictionary2],
+			[t5].[ChildDictionary2_1],
+			[t5].[ChildDictionary2_2],
+			[t5].[ChildDictionary2_3]
 		FROM
 			[Parent] [p]
 				OUTER APPLY (
@@ -77,8 +81,8 @@ FROM
 				) [t2] ON 1=1
 				OUTER APPLY (
 					SELECT TOP (1)
-						[c_3].[ChildID],
-						[c_3].[ParentID]
+						[c_3].[ChildID] as [ChildArray],
+						[c_3].[ParentID] as [ChildArray_1]
 					FROM
 						[Child] [c_3]
 					WHERE
@@ -86,8 +90,8 @@ FROM
 				) [t3]
 				OUTER APPLY (
 					SELECT TOP (1)
-						[c_4].[ChildID],
-						[c_4].[ParentID]
+						[c_4].[ChildID] as [ChildDictionary1],
+						[c_4].[ParentID] as [ChildDictionary1_1]
 					FROM
 						[Child] [c_4]
 					WHERE
@@ -95,8 +99,10 @@ FROM
 				) [t4]
 				OUTER APPLY (
 					SELECT TOP (1)
-						[c_5].[ChildID],
-						[c_5].[ParentID]
+						N'ChildID' as [ChildDictionary2],
+						[c_5].[ChildID] as [ChildDictionary2_1],
+						N'ParentID' as [ChildDictionary2_2],
+						[c_5].[ParentID] as [ChildDictionary2_3]
 					FROM
 						[Child] [c_5]
 					WHERE

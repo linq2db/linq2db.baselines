@@ -2,6 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	2,
 	"ch"."ChildID",
 	"gc"."GrandChildID"
 FROM

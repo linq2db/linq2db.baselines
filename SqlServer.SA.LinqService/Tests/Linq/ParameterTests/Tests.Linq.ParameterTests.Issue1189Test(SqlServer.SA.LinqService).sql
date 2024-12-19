@@ -17,13 +17,11 @@ IF (OBJECT_ID(N'[Issue1189Customer]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[k_1].[ID],
 	[k_1].[NAME],
-	@DateTime
+	DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 FROM
 	[Issue1189Customer] [k_1]
 

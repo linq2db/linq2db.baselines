@@ -680,11 +680,6 @@ SELECT
 	e.Id,
 	a_ObjectBOptional.Id,
 	a_ObjectBOptional.Id,
-	CASE
-		WHEN a_ObjectBOptional.Id IS NOT NULL AND a_ObjectC.Id IS NOT NULL
-			THEN 't'
-		ELSE 'f'
-	END::BOOLEAN,
 	a_ObjectC.Id,
 	a_ObjectC.FK
 FROM

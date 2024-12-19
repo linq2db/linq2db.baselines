@@ -139,7 +139,7 @@ SELECT
 	[t1].[FK],
 	[a_ObjectB].[Id] as [Id_1],
 	[a_ObjectB].[FK] as [FK_1],
-	[a_ObjectC].[Id] as [Id_2],
+	[a_ObjectC].[Id] as [cond],
 	[a_ObjectC].[FK] as [FK_2]
 FROM
 	[EntityA] [t1]

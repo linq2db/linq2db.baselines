@@ -1046,7 +1046,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] = 0
+	[swap_with_not].[BoolValue] <> 1
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

@@ -8,12 +8,17 @@ SELECT
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
+			"g_2"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Child" "g_1"
-		LEFT JOIN "Parent" "a_Parent" ON "g_1"."ParentID" = "a_Parent"."ParentID"
-GROUP BY
-	"a_Parent"."ParentID",
-	"a_Parent"."Value1"
+	(
+		SELECT
+			"a_Parent"."ParentID"
+		FROM
+			"Child" "g_1"
+				LEFT JOIN "Parent" "a_Parent" ON "g_1"."ParentID" = "a_Parent"."ParentID"
+		GROUP BY
+			"a_Parent"."ParentID",
+			"a_Parent"."Value1"
+	) "g_2"
 

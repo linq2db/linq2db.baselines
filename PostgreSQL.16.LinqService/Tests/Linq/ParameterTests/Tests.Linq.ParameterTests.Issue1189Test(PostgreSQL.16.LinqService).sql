@@ -16,13 +16,11 @@ CREATE TABLE IF NOT EXISTS "Issue1189Customer"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @DateTime Timestamp -- DateTime2
-SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
 
 SELECT
 	k_1."ID",
 	k_1."NAME",
-	:DateTime
+	'2020-02-29 17:54:55.123'::timestamp
 FROM
 	"Issue1189Customer" k_1
 

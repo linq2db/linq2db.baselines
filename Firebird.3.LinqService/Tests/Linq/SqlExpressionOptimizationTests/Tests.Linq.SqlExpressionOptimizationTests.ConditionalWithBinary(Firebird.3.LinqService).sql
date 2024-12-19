@@ -712,7 +712,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue"
+	"x"."BoolValue" = TRUE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -743,7 +743,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	NOT "x_with_not"."BoolValue"
+	"x_with_not"."BoolValue" = FALSE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -774,7 +774,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue"
+	"swap"."BoolValue" = TRUE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -805,7 +805,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	NOT "swap_with_not"."BoolValue"
+	"swap_with_not"."BoolValue" = FALSE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -960,7 +960,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue"
+	"x"."BoolValue" = TRUE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -991,7 +991,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	NOT "x_with_not"."BoolValue"
+	"x_with_not"."BoolValue" = FALSE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -1022,7 +1022,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue"
+	"swap"."BoolValue" = TRUE
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -1053,7 +1053,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	NOT "swap_with_not"."BoolValue"
+	"swap_with_not"."BoolValue" <> TRUE
 
 BeforeExecute
 -- Firebird.3 Firebird3

@@ -18,13 +18,11 @@ IF (OBJECT_ID(N'[Issue1189Customer]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @DateTime DateTime2
-SET     @DateTime = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 
 SELECT
 	[k_1].[ID],
 	[k_1].[NAME],
-	@DateTime
+	CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 FROM
 	[Issue1189Customer] [k_1]
 
