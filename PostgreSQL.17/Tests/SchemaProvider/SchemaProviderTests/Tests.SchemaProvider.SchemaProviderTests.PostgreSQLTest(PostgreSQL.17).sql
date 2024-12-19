@@ -43,7 +43,13 @@ BeforeExecute
 					left(t.table_schema, 3) = 'pg_' OR t.table_schema = 'information_schema'   as IsProviderSpecific
 				FROM
 					information_schema.tables t
-				WHERE table_schema NOT IN ('information_schema', 'pg_catalog')
+				LEFT JOIN pg_inherits i ON (
+				    SELECT c.oid
+				    FROM pg_class c
+				    JOIN pg_namespace n ON c.relnamespace = n.oid
+				    WHERE c.relname = t.table_name AND n.nspname = t.table_schema
+				) = i.inhrelid
+				WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog')
 			UNION ALL
 				SELECT
 					current_database() || '.' || v.schemaname || '.' || v.matviewname          as TableID,
@@ -170,7 +176,7 @@ BeforeExecute
 				                  LEFT JOIN (pg_type bt
 				                 JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid)
 				                            ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-				         WHERE cls.relkind IN ('r', 'v', 'm')
+				         WHERE cls.relkind IN ('r', 'v', 'm', 'p')
 				           AND attr.attnum > 0
 				           AND NOT attr.attisdropped
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
