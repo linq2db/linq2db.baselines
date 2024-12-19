@@ -2,29 +2,29 @@
 -- Sybase.Managed Sybase
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 UPDATE
 	[LinqDataTypes]
 SET
 	[BinaryValue] = @BinaryValue
 WHERE
-	[LinqDataTypes].[ID] = @ID
+	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0504030201
-DECLARE @ID Integer -- Int32
-SET     @ID = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 UPDATE
 	[LinqDataTypes]
 SET
 	[BinaryValue] = @BinaryValue
 WHERE
-	[LinqDataTypes].[ID] = @ID
+	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
 -- Sybase.Managed Sybase

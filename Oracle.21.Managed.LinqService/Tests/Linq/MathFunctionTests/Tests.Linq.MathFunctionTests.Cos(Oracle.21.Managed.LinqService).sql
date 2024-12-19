@@ -2,14 +2,14 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t_1."c1"
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Cos(CAST(t."MoneyValue" AS Float) / 15D) * 15D) as "c1"
+			Floor(Cos(CAST(p."MoneyValue" AS Float) / 15D) * 15D) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1."c1" <> 0.10000000000000001D
+	t."Value_1" <> 0.10000000000000001D
 

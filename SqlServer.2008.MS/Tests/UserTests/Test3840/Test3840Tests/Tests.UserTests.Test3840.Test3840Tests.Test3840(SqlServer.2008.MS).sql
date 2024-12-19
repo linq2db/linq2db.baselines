@@ -37,22 +37,7 @@ BeforeExecute
 SELECT
 	[t].[StartDateTime],
 	[t].[PreNotification],
-	CASE
-		WHEN [t].[PreNotification] <> CAST(0 AS BIGINT) OR [t].[PreNotification] IS NULL
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN [t].[PreNotification2] <> CAST('00:00:00.0000000' AS TIME) OR [t].[PreNotification2] IS NULL
-			THEN 1
-		ELSE 0
-	END,
 	[t].[PreNotification2],
-	CASE
-		WHEN [t].[PreNotification3] <> CAST('00:00:00.0000000' AS TIME)
-			THEN 1
-		ELSE 0
-	END,
 	[t].[PreNotification3],
 	DatePart(day, [t].[StrField])
 FROM

@@ -2,7 +2,6 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	2,
 	`ch`.`ChildID`,
 	`gc`.`GrandChildID`
 FROM

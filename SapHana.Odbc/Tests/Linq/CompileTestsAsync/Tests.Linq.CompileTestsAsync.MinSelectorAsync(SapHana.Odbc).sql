@@ -155,8 +155,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	MIN("c_1"."Id")

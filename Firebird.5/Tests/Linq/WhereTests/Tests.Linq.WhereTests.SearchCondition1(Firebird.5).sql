@@ -13,6 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."BoolValue" = FALSE AND "t"."MoneyValue" > 1 AND
-	("t"."SmallIntValue" = 5 OR "t"."SmallIntValue" = 7 OR "t"."SmallIntValue" = 8)
+	NOT "t"."BoolValue" AND "t"."MoneyValue" > 1 AND ("t"."SmallIntValue" = 5 OR "t"."SmallIntValue" = 7 OR "t"."SmallIntValue" = 8)
 

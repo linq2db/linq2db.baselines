@@ -19,3 +19,15 @@ SELECT [i].[Id] FROM @inserted0 i
 ORDER BY [i].[_Position];
 
 
+--  SqlServer.2022
+
+SELECT
+	[t1].[Discriminator],
+	[t1].[Id]
+FROM
+	[WithInheritance] [t1]
+WHERE
+	[t1].[Discriminator] IN (N'WithInheritanceA2', N'WithInheritanceA1', N'WithInheritanceA')
+
+
+

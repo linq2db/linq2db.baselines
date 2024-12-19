@@ -17,13 +17,11 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @DateTimeValue2 DateTime2
-SET     @DateTimeValue2 = CAST('2009-09-24T09:19:29.0900000' AS DATETIME2)
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (@DateTimeValue2) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (CAST('2009-09-24T09:19:29.0900000' AS DATETIME2)) OR [x].[DateTimeValue2] IS NULL)
 

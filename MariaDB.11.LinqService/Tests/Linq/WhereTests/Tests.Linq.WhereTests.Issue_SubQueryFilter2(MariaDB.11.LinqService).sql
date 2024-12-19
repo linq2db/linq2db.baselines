@@ -11,37 +11,38 @@ SELECT
 FROM
 	`Patient` `p`
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			`Person` `e`,
 			(
 				SELECT
-					`d`.`PersonID`
+					`d`.`PersonID` as `cond`
 				FROM
 					`Patient` `d`
 				LIMIT 1
 			) `t1`
 		WHERE
 			`e`.`PersonID` = `p`.`PersonID` AND LOCATE(@filter1, `e`.`FirstName`) > 0 AND
-			`e`.`PersonID` = `t1`.`PersonID`
-	) OR EXISTS(
+			`e`.`PersonID` = `t1`.`cond`
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
 			`Person` `e_1`,
 			(
 				SELECT
-					`d_1`.`PersonID`
+					`d_1`.`PersonID` as `cond`
 				FROM
 					`Patient` `d_1`
 				LIMIT 1
 			) `t2`
 		WHERE
 			`e_1`.`PersonID` = `p`.`PersonID` AND LOCATE(@filter2, `e_1`.`FirstName`) > 0 AND
-			`e_1`.`PersonID` = `t2`.`PersonID`
-	))
+			`e_1`.`PersonID` = `t2`.`cond`
+	)
 ORDER BY
 	`p`.`PersonID`
 

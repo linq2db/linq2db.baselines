@@ -245,6 +245,8 @@ FROM
 		FROM
 			"DistinctOrderByTable" "t1"
 	) "t2"
+ORDER BY
+	"t2".F1
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute

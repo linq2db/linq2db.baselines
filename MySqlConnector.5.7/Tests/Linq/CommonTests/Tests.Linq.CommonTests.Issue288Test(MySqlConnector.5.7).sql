@@ -11,14 +11,14 @@ LIMIT 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @ID VarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p VarChar(4) -- String
+SET     @p = 'John'
 
 SELECT
 	`p`.`FirstName`
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` = @ID
+	`p`.`FirstName` = @p
 LIMIT 1
 

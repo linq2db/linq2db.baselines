@@ -1,0 +1,82 @@
+﻿BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Issue4723Table1]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table1]', N'U') IS NULL)
+	CREATE TABLE [Issue4723Table1]
+	(
+		[Id]               Int            NOT NULL,
+		[ExpressionMethod] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [Issue4723Table1]
+(
+	[Id],
+	[ExpressionMethod]
+)
+SELECT 1,NULL
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Issue4723Table2]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table2]', N'U') IS NULL)
+	CREATE TABLE [Issue4723Table2]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [Issue4723Table2]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,N'Value 1' UNION ALL
+SELECT 1,N'Value 1' UNION ALL
+SELECT 2,N'Value 2'
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[t1].[Id],
+	(
+		SELECT TOP (1)
+			[se].[Value]
+		FROM
+			[Issue4723Table2] [se]
+		WHERE
+			[se].[Id] = [t1].[Id]
+	)
+FROM
+	[Issue4723Table1] [t1]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table2]', N'U') IS NOT NULL)
+	DROP TABLE [Issue4723Table2]
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+IF (OBJECT_ID(N'[Issue4723Table1]', N'U') IS NOT NULL)
+	DROP TABLE [Issue4723Table1]
+

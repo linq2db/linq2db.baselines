@@ -31,9 +31,9 @@ INSERT INTO [TestSchema].[TableWithDataAndSchema]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 VALUES
 (
 	@Id,

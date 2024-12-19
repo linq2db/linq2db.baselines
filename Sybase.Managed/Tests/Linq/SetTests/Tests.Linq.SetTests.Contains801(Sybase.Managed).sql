@@ -2,7 +2,6 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

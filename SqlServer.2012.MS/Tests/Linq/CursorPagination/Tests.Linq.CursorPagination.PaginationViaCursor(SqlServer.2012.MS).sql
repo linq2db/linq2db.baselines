@@ -159,15 +159,22 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
+			ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC) as [RowNumber],
 			COUNT(*) OVER() as [TotalCount],
-			[t].[BookingID],
-			[t].[ServiceDate],
-			[t].[Value] as [Value_1]
+			[e].[BookingID],
+			[e].[ServiceDate],
+			[e].[Value_1]
 		FROM
-			[Booking] [t]
-		WHERE
-			[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+			(
+				SELECT
+					[t].[BookingID],
+					[t].[ServiceDate],
+					[t].[Value] as [Value_1]
+				FROM
+					[Booking] [t]
+				WHERE
+					[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+			) [e]
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
@@ -192,15 +199,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		) [e]
 )
 SELECT
 	[q].[RowNumber],
@@ -213,7 +227,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -241,15 +255,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		) [e]
 )
 SELECT
 	[q].[RowNumber],
@@ -262,7 +283,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[CTE_1] [c_1]
 		WHERE
@@ -290,15 +311,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		) [e]
 )
 SELECT
 	[q].[RowNumber],
@@ -311,7 +339,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			[CTE_1] [c_1]
 		WHERE

@@ -8,13 +8,13 @@ SELECT
 FROM
 	[GrandChild] [c_1]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			[Parent] [p]
 		WHERE
-			([c_1].[ParentID] = [p].[Value1] OR [c_1].[ParentID] IS NULL AND [p].[Value1] IS NULL)
+			[c_1].[ParentID] = [p].[Value1] OR [c_1].[ParentID] IS NULL AND [p].[Value1] IS NULL
 	)
 
 BeforeExecute

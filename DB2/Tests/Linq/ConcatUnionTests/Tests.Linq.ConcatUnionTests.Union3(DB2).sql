@@ -3,13 +3,13 @@
 
 SELECT
 	"p"."ParentID",
-	1
+	CAST(1 AS smallint)
 FROM
 	"Parent" "p"
 UNION
 SELECT
 	"ch"."ParentID",
-	0
+	CAST(0 AS smallint)
 FROM
 	"Child" "ch"
 

@@ -34,7 +34,7 @@ AS
 	UNION ALL
 	SELECT
 		"t1"."Id",
-		'THIS_IS_TWO'
+		VarChar('THIS_IS_TWO', 50)
 	FROM
 		"cte" "t1",
 		"Issue3360WithEnum" "r"

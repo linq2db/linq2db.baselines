@@ -44,12 +44,12 @@ INSERT INTO [Issue3834Table]
 	[Co2aend]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Nesto],
-	[INSERTED].[Nest],
-	[INSERTED].[WhatSov],
-	[INSERTED].[Co2grund],
-	[INSERTED].[Co2aend]
+	INSERTED.[Id],
+	INSERTED.[Nesto],
+	INSERTED.[Nest],
+	INSERTED.[WhatSov],
+	INSERTED.[Co2grund],
+	INSERTED.[Co2aend]
 VALUES
 (
 	@Id,

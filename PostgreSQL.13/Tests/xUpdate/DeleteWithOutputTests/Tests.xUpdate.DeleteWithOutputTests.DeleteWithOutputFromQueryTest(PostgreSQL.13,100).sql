@@ -50,8 +50,6 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 100
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 100
 
 DELETE FROM
 	"TableWithData" s
@@ -60,7 +58,7 @@ WHERE
 RETURNING
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || :param_1
+	s."ValueStr" || :param
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

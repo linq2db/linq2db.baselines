@@ -2,11 +2,11 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[x].[ParentID],
+	[x].[ChildID]
 FROM
-	[Child] [ch]
+	[Child] [x]
 ORDER BY
-	[ch].[ChildID] % 2 DESC,
-	[ch].[ChildID] DESC
+	[x].[ChildID] DESC,
+	[x].[ChildID] % 2 DESC
 

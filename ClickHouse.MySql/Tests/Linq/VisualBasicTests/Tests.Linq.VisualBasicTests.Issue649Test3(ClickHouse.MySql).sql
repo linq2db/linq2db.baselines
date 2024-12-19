@@ -41,7 +41,7 @@ BeforeExecute
 SELECT
 	a_Person.personid,
 	a_Person.personname,
-	maxOrNull(f.added)
+	max(f.added)
 FROM
 	activity649 f
 		INNER JOIN person649 a_Person ON f.personid = a_Person.personid

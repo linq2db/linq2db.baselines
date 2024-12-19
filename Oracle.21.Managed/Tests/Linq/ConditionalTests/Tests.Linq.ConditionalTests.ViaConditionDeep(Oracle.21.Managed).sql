@@ -44,6 +44,7 @@ INSERT ALL
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (8,'String8')
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (9,NULL)
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (10,'String10')
+	INTO "ConditionalData" ("Id", "StringProp") VALUES (11,'-1')
 SELECT * FROM dual
 
 BeforeExecute

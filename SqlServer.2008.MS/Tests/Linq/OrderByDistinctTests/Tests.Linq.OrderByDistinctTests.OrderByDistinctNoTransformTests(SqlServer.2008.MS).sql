@@ -75,6 +75,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+ORDER BY
+	[t2].[OrderData1]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

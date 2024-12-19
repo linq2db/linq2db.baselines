@@ -2,7 +2,6 @@
 -- Informix.DB2 Informix
 
 SELECT
-	2,
 	ch.ChildID,
 	gc.GrandChildID
 FROM

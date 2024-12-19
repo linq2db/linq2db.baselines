@@ -4,7 +4,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	[g_1].[ParentID]
+	[g_1].[ParentID] as [Key_1]
 FROM
 	[Child] [g_1]
 WHERE
@@ -25,7 +25,7 @@ DECLARE @id Int -- Int32
 SET     @id = 2
 
 SELECT
-	[g_1].[ParentID]
+	[g_1].[ParentID] as [Key_1]
 FROM
 	[Child] [g_1]
 WHERE

@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @ID Int -- Int32
-SET     @ID = 700
 
 DELETE [p]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 
 BeforeExecute
 -- SqlServer.2005
@@ -124,12 +122,10 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @ID Int -- Int32
-SET     @ID = 700
 
 DELETE [p]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 

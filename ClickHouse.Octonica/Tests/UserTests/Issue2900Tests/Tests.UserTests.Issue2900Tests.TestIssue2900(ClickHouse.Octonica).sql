@@ -38,14 +38,17 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.not_null,
-	t1.Value_1
+	t1.cond_1,
+	t1.cond
 FROM
 	Request a
 		LEFT JOIN (
 			SELECT
-				a_Metrics.Value as Value_1,
-				1 as not_null,
+				a_Metrics.Value as cond,
+				CASE
+					WHEN a_Metrics.Value IS NOT NULL THEN true
+					ELSE false
+				END as cond_1,
 				ROW_NUMBER() OVER (PARTITION BY a_Metrics.RequestId ORDER BY a_Metrics.RequestId) as rn,
 				a_Metrics.RequestId as RequestId
 			FROM

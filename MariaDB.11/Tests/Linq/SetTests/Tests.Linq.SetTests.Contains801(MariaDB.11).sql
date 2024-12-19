@@ -2,7 +2,6 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	2,
 	`ch`.`ChildID`,
 	`gc`.`GrandChildID`
 FROM

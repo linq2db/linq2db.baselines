@@ -15,8 +15,8 @@ BeforeExecute
 
 CREATE TABLE "TestTrun"
 (
-	ID       Int     NOT NULL,
-	"Field1" Decimal NOT NULL,
+	ID       Int             NOT NULL,
+	"Field1" Decimal(28, 10) NOT NULL,
 
 	CONSTRAINT "PK_TestTrun" PRIMARY KEY (ID)
 )

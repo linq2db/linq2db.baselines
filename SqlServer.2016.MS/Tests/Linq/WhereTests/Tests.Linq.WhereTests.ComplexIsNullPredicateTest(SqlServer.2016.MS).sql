@@ -1,13 +1,57 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
+DROP TABLE IF EXISTS [ComplexPredicate]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NULL)
+	CREATE TABLE [ComplexPredicate]
+	(
+		[Id]    Int            NOT NULL,
+		[Value] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+INSERT INTO [ComplexPredicate]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,NULL),
+(2,N'other'),
+(3,N'123'),
+(4,N'test'),
+(5,N'1')
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
 SELECT
-	IIF(EXISTS(
-		SELECT
-			*
-		FROM
-			[Person] [t1]
-		WHERE
-			IIF([t1].[MiddleName] = N'123', 1, 0) = IIF([t1].[MiddleName] = N'1' OR [t1].[MiddleName] = N'test' AND ([t1].[MiddleName] <> N'1' OR [t1].[MiddleName] IS NULL), 1, 0)
-	), 1, 0)
+	[r].[Id],
+	[r].[Value]
+FROM
+	[ComplexPredicate] [r]
+WHERE
+	IIF([r].[Value] = N'123', 1, 0) = IIF([r].[Value] = N'1' OR [r].[Value] = N'test' AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL), 1, 0)
+ORDER BY
+	[r].[Id]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[ComplexPredicate] [t1]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+DROP TABLE IF EXISTS [ComplexPredicate]
 

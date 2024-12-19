@@ -1,24 +1,20 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @s VarChar(7) -- String
-SET     @s = '123n456'
 
 SELECT
 	COUNT(*)
 FROM
 	Person p
 WHERE
-	p.PersonID = 1 AND @s LIKE '%n%' ESCAPE '~'
+	p.PersonID = 1 AND '123n456' LIKE '%n%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @s VarChar(7) -- String
-SET     @s = '123n456'
 
 SELECT
 	COUNT(*)
 FROM
 	Person p
 WHERE
-	p.PersonID = 1 AND NOT @s LIKE '%n%' ESCAPE '~'
+	p.PersonID = 1 AND NOT '123n456' LIKE '%n%' ESCAPE '~'
 

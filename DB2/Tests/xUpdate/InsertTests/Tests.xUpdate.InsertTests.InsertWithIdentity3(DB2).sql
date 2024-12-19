@@ -28,9 +28,9 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(4)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@Gender
 		)
 	)
 

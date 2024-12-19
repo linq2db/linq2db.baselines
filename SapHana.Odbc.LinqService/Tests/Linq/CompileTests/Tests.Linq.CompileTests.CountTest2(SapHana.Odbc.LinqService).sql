@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	COUNT(*)
@@ -12,8 +12,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = -1
+DECLARE @p  -- Int32
+SET     @p = -1
 
 SELECT
 	COUNT(*)

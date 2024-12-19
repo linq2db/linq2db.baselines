@@ -24,6 +24,8 @@ FROM
 	) t3
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t3."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -177,13 +177,13 @@ FROM
 		SELECT
 			r.Id,
 			r.Byte,
-			r.Byte as Byte_1,
+			NVL(r.Byte, NULL) as Byte_1,
 			r.Guid,
-			r.Guid as Guid_1,
+			NVL(r.Guid, NULL) as Guid_1,
 			NULL::NChar(11) as Enum,
 			NULL::NChar(11) as EnumN,
 			r.Bool,
-			r.Bool as Bool_1
+			NVL(r.Bool, NULL)::BOOLEAN as Bool_1
 		FROM
 			Issue3360Table1 r
 		WHERE

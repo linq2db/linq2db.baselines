@@ -126,6 +126,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
+	CAST('Discriminator' AS VARCHAR(13)),
 	"a_Book"."Discriminator",
 	"a_Book"."BookName",
 	"a_Book"."BookName"
@@ -137,6 +138,7 @@ WHERE
 	"a_Book"."Discriminator" = 'Roman'
 UNION ALL
 SELECT
+	CAST('Discriminator' AS VARCHAR(13)),
 	"a_Book_1"."Discriminator",
 	"a_Book_1"."BookName",
 	"a_Book_1"."BookName"

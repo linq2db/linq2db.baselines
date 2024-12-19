@@ -34,15 +34,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 5
+DECLARE @p  -- Int32
+SET     @p = 5
 
 SELECT
 	SUM(CAST([c_1].[Id] AS Float))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] < @Id
+	[c_1].[Id] < @p
 
 BeforeExecute
 -- SQLite.MS SQLite

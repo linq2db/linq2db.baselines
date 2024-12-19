@@ -33,7 +33,8 @@ VALUES
 (7,N'String7'),
 (8,N'String8'),
 (9,NULL),
-(10,N'String10')
+(10,N'String10'),
+(11,N'-1')
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

@@ -2,14 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t_1.c1
+	t.MoneyValue
 FROM
-	(
-		SELECT
-			roundBankers(toFloat64(t.MoneyValue)) as c1
-		FROM
-			LinqDataTypes t
-	) t_1
+	LinqDataTypes t
 WHERE
-	t_1.c1 <> toFloat64(0)
+	roundBankers(toFloat64(t.MoneyValue)) <> toFloat64(0)
 

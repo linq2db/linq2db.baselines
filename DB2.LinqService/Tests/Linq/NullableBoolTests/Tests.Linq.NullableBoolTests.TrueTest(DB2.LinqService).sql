@@ -89,7 +89,7 @@ SELECT
 FROM
 	"NullableBoolClass" "t"
 WHERE
-	("t"."Value" = 0 OR "t"."Value" IS NULL)
+	"t"."Value" = 0 OR "t"."Value" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

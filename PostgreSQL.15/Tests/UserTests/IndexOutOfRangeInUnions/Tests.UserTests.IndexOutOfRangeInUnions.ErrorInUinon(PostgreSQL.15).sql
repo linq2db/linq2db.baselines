@@ -55,7 +55,7 @@ SELECT
 		WHEN "doSap"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::text
 FROM
 	"O1" "doSap"
 UNION
@@ -65,7 +65,7 @@ SELECT
 		WHEN "doSap_1"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::text
 FROM
 	"O2" "doSap_1"
 UNION
@@ -75,7 +75,7 @@ SELECT
 		WHEN "doSap_2"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::text
 FROM
 	"O3" "doSap_2"
 

@@ -23,4 +23,6 @@ FROM
 	) t3
 WHERE
 	t3.RN > 3
+ORDER BY
+	t3."ChildID"
 

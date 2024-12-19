@@ -2,24 +2,21 @@
 -- SqlServer.2017
 
 SELECT
-	(
-		SELECT TOP (1)
-			[a_Children_1].[ParentID]
-		FROM
-			[Child] [a_Children_1]
-		WHERE
-			[p].[ParentID] = [a_Children_1].[ParentID]
-	)
+	[t1].[cond]
 FROM
-	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (1)
-				[a_Children].[ParentID]
-			FROM
-				[Child] [a_Children]
-			WHERE
-				[p].[ParentID] = [a_Children].[ParentID]
-		) [t1]
+	(
+		SELECT
+			(
+				SELECT TOP (1)
+					[a_Children].[ParentID]
+				FROM
+					[Child] [a_Children]
+				WHERE
+					[p].[ParentID] = [a_Children].[ParentID]
+			) as [cond]
+		FROM
+			[Parent] [p]
+	) [t1]
 WHERE
-	[t1].[ParentID] IS NOT NULL
+	[t1].[cond] IS NOT NULL
 

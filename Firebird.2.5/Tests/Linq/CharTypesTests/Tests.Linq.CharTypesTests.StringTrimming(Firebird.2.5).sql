@@ -17,7 +17,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(6))
+	@String
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -45,7 +45,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(8))
+	@String
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(11))
+	@String
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(10))
+	@String
 )
 
 BeforeExecute
@@ -298,7 +298,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	CAST(@String AS VARCHAR(1))
+	@String
 )
 
 BeforeExecute

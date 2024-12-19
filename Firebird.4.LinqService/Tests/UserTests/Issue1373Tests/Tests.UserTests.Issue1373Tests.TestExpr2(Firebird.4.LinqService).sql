@@ -35,7 +35,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	CAST(@Field1 AS VARCHAR(1))
+	@Field1
 )
 
 BeforeExecute
@@ -67,7 +67,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	CAST(@Field1 AS VARCHAR(4))
+	@Field1
 )
 
 BeforeExecute

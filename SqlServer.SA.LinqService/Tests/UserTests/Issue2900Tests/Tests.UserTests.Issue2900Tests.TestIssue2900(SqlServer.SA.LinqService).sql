@@ -36,14 +36,14 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[not_null],
-	[t1].[Value_1]
+	[t1].[cond_1],
+	[t1].[cond]
 FROM
 	[Request] [a]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Metrics].[Value] as [Value_1],
-				1 as [not_null]
+				[a_Metrics].[Value] as [cond],
+				IIF([a_Metrics].[Value] IS NOT NULL, 1, 0) as [cond_1]
 			FROM
 				[Metric] [a_Metrics]
 			WHERE

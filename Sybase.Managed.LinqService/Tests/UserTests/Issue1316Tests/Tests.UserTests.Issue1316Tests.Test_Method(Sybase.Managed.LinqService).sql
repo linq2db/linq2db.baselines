@@ -33,15 +33,15 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ID Integer -- Int32
-SET     @ID = 5
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT TOP 2
 	[t1].[ID]
 FROM
 	[Issue1316Tests] [t1]
 WHERE
-	[t1].[ID] = @ID
+	[t1].[ID] = @p
 
 BeforeExecute
 -- Sybase.Managed Sybase

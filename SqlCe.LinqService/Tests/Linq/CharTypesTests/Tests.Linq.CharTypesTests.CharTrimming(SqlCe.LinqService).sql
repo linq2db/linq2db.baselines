@@ -8,6 +8,8 @@ FROM
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -15,11 +17,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = '	'
 
 INSERT INTO [AllTypes]
 (
@@ -27,24 +31,14 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	'	'
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
-
-INSERT INTO [AllTypes]
-(
-	[ncharDataType]
-)
-VALUES
-(
-	'
+DECLARE @NChar NVarChar -- String
+SET     @NChar = '
 '
-)
-
-BeforeExecute
--- SqlCe
 
 INSERT INTO [AllTypes]
 (
@@ -52,11 +46,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	''
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ''
 
 INSERT INTO [AllTypes]
 (
@@ -64,11 +60,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	''
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ''
 
 INSERT INTO [AllTypes]
 (
@@ -76,11 +74,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	''
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ''
 
 INSERT INTO [AllTypes]
 (
@@ -88,11 +88,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -100,11 +102,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -112,11 +116,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -124,11 +130,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -136,11 +144,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -148,11 +158,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -160,11 +172,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -172,11 +186,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -184,11 +200,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -196,11 +214,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -208,11 +228,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -220,11 +242,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	' '
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = ' '
 
 INSERT INTO [AllTypes]
 (
@@ -232,11 +256,13 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	'　'
+	@NChar
 )
 
 BeforeExecute
 -- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = '　'
 
 INSERT INTO [AllTypes]
 (
@@ -244,7 +270,21 @@ INSERT INTO [AllTypes]
 )
 VALUES
 (
-	NULL
+	@NChar
+)
+
+BeforeExecute
+-- SqlCe
+DECLARE @NChar NVarChar -- String
+SET     @NChar = NULL
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType]
+)
+VALUES
+(
+	@NChar
 )
 
 BeforeExecute

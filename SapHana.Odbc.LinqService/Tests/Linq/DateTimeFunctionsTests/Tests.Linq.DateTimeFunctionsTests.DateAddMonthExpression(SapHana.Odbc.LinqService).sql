@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 2
+DECLARE @Value  -- Int32
+SET     @Value = 2
 
 SELECT
 	To_Date(Add_Months("t"."DateTimeValue", ?))

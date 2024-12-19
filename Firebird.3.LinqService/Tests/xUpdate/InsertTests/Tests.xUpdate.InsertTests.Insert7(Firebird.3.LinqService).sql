@@ -20,8 +20,8 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@id AS Int),
-	CAST(@ParentID AS Int)
+	@id,
+	@ParentID
 )
 
 BeforeExecute

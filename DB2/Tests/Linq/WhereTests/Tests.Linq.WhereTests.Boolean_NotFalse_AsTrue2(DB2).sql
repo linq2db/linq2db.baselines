@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r"."BoolValue" = 0
+	NOT "r"."BoolValue"
 

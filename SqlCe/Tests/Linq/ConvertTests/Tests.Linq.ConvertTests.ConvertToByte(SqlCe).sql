@@ -2,18 +2,18 @@
 -- SqlCe
 
 SELECT
-	[p_1].[c1]
+	[p].[c1]
 FROM
 	(
 		SELECT
 			CAST(CASE
-				WHEN [p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND CAST(Floor([p].[MoneyValue]) AS Int) % 2 = 0
-					THEN Floor([p].[MoneyValue])
-				ELSE Round([p].[MoneyValue], 0)
+				WHEN [t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (CAST(FLOOR([t].[MoneyValue]) AS Int) % 2) = 0
+					THEN FLOOR([t].[MoneyValue])
+				ELSE ROUND([t].[MoneyValue], 0)
 			END AS TinyInt) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [p_1]
+			[LinqDataTypes] [t]
+	) [p]
 WHERE
-	[p_1].[c1] > 0
+	[p].[c1] > 0
 

@@ -10,7 +10,7 @@ BeforeExecute
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int     NOT NULL,
-	[Field1] Decimal NOT NULL,
+	[Field1] DECIMAL NOT NULL,
 
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )

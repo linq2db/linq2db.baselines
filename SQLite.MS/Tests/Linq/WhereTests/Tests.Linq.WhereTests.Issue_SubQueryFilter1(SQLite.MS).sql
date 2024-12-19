@@ -11,35 +11,36 @@ SELECT
 FROM
 	[Patient] [t1]
 WHERE
-	(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[Person] [e],
 			(
 				SELECT
-					[d].[PersonID]
+					[d].[PersonID] as [cond]
 				FROM
 					[Patient] [d]
 				LIMIT 1
 			) [t2]
 		WHERE
-			[e].[FirstName] LIKE @filter1 ESCAPE '~' AND [e].[PersonID] = [t2].[PersonID]
-	) OR EXISTS(
+			[e].[FirstName] LIKE @filter1 ESCAPE '~' AND [e].[PersonID] = [t2].[cond]
+	) OR
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[Person] [e_1],
 			(
 				SELECT
-					[d_1].[PersonID]
+					[d_1].[PersonID] as [cond]
 				FROM
 					[Patient] [d_1]
 				LIMIT 1
 			) [t3]
 		WHERE
-			[e_1].[FirstName] LIKE @filter2 ESCAPE '~' AND [e_1].[PersonID] = [t3].[PersonID]
-	))
+			[e_1].[FirstName] LIKE @filter2 ESCAPE '~' AND [e_1].[PersonID] = [t3].[cond]
+	)
 ORDER BY
 	[t1].[PersonID]
 

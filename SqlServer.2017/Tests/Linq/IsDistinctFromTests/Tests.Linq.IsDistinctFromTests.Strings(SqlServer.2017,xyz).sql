@@ -39,7 +39,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			[s].[String]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -51,7 +57,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			[s].[NullableString]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -63,7 +75,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[String] = @value OR [s].[String] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			[s].[String]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2017
@@ -75,7 +93,13 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableString] = @value OR [s].[NullableString] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			[s].[NullableString]
+		INTERSECT
+		SELECT
+			@value
+	)
 
 BeforeExecute
 -- SqlServer.2017

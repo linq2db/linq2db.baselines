@@ -196,6 +196,24 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 11
+DECLARE @StringProp VarChar(2) -- String
+SET     @StringProp = '-1'
+
+INSERT INTO ConditionalData
+(
+	Id,
+	StringProp
+)
+VALUES
+(
+	@Id,
+	@StringProp
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
 
 SELECT
 	x.Id,

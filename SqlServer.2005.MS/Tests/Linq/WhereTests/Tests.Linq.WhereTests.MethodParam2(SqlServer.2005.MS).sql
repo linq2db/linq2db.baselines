@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ID Int -- Int32
-SET     @ID = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	[p].[PersonID]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @ID
+	[p].[PersonID] = @p
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ID Int -- Int32
-SET     @ID = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[p].[PersonID]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @ID
+	[p].[PersonID] = @p
 

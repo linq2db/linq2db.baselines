@@ -22,8 +22,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	CAST(@real AS Real),
-	CAST(@dbl AS Float)
+	@real,
+	@dbl
 )
 
 BeforeExecute
@@ -42,8 +42,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	CAST(@real AS Real),
-	CAST(@dbl AS Float)
+	@real,
+	@dbl
 )
 
 BeforeExecute
@@ -62,8 +62,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	CAST(@real AS Real),
-	CAST(@dbl AS Float)
+	@real,
+	@dbl
 )
 
 BeforeExecute

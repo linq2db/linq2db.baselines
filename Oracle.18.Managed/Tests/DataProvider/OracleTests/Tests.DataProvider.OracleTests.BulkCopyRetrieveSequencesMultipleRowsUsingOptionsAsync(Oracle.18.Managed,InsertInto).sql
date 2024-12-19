@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	SEQUENCETEST t1
@@ -7,12 +7,12 @@ WHERE
 	t1.VALUE = 'SeqValue'
 
 BeforeExecute
---  Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 BeforeExecute
---  Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @:p1 Int32
 SET     @:p1 = {41,42,43,44}
 DECLARE @:p2 Varchar2 -- String

@@ -35,7 +35,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	CAST(@Field1 AS NVarChar(8168))
+	@Field1
 )
 
 BeforeExecute

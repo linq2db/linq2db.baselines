@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
-DECLARE @ID Int -- Int32
-SET     @ID = 700
 
 DELETE [p]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
@@ -125,12 +123,10 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019 (asynchronously)
-DECLARE @ID Int -- Int32
-SET     @ID = 700
 
 DELETE [p]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 

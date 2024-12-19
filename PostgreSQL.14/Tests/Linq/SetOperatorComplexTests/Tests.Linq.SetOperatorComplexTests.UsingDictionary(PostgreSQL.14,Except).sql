@@ -105,6 +105,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	'Discriminator'::text,
 	"a_Book"."Discriminator",
 	"a_Book"."BookName",
 	"a_Book"."BookName"
@@ -116,6 +117,7 @@ WHERE
 	"a_Book"."Discriminator" = 'Roman'
 EXCEPT
 SELECT
+	'Discriminator'::text,
 	"a_Book_1"."Discriminator",
 	"a_Book_1"."BookName",
 	"a_Book_1"."BookName"

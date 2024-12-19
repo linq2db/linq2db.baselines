@@ -3,7 +3,7 @@
 
 SELECT
 	"p"."PersonID",
-	"p"."FirstName" || '1'
+	TRIM(TRAILING '' FROM ("p"."FirstName" || '1'))
 FROM
 	"Person" "p"
 

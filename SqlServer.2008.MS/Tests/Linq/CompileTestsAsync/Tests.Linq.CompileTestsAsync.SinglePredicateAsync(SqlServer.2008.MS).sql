@@ -36,18 +36,16 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008 (asynchronously)
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Id_1 Int -- Int32
-SET     @Id_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT TOP (2)
-	@Id,
+	@p,
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @p
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

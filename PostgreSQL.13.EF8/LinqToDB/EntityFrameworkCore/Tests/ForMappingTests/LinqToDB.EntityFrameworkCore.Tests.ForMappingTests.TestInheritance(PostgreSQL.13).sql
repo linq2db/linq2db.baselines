@@ -18,3 +18,15 @@ VALUES (@p4)
 RETURNING "Id";
 
 
+--  PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Discriminator",
+	t1."Id"
+FROM
+	"WithInheritance" t1
+WHERE
+	t1."Discriminator" IN ('WithInheritanceA2', 'WithInheritanceA1', 'WithInheritanceA')
+
+
+

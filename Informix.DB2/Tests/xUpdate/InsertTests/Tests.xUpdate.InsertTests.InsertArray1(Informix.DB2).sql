@@ -18,7 +18,7 @@ INSERT INTO LinqDataTypes
 VALUES
 (
 	1001,
-	't',
+	't'::BOOLEAN,
 	NULL
 )
 

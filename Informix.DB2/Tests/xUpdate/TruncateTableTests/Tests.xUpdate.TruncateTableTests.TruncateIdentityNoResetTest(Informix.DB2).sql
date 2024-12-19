@@ -45,8 +45,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
 
-SELECT SKIP 1 FIRST 2
+SELECT SKIP @skip FIRST 2
 	t1.ID,
 	t1.Field1
 FROM
@@ -85,8 +87,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
 
-SELECT SKIP 1 FIRST 2
+SELECT SKIP @skip FIRST 2
 	t1.ID,
 	t1.Field1
 FROM

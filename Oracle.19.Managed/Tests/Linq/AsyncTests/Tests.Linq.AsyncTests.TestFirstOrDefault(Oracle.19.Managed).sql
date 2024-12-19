@@ -15,6 +15,6 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param)
+	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 FETCH NEXT 1 ROWS ONLY
 

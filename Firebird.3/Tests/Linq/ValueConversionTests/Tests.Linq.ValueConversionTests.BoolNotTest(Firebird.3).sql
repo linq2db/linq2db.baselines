@@ -59,8 +59,8 @@ SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL FROM rdb$da
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @BoolValue VarChar -- String
-SET     @BoolValue = 'N'
+DECLARE @false_value VarChar -- String
+SET     @false_value = 'N'
 
 SELECT
 	"t"."Id",
@@ -70,7 +70,7 @@ SELECT
 FROM
 	"ValueConversion" "t"
 WHERE
-	"t"."BoolValue" = @BoolValue
+	"t"."BoolValue" = @false_value
 
 BeforeExecute
 -- Firebird.3 Firebird3

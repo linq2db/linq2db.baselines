@@ -37,10 +37,7 @@ BeforeExecute
 SELECT
 	[t].[StartDateTime],
 	[t].[PreNotification],
-	IIF([t].[PreNotification] <> CAST(0 AS BIGINT) OR [t].[PreNotification] IS NULL, 1, 0),
-	IIF([t].[PreNotification2] <> TIMEFROMPARTS(0, 0, 0, 0, 7) OR [t].[PreNotification2] IS NULL, 1, 0),
 	[t].[PreNotification2],
-	IIF([t].[PreNotification3] <> TIMEFROMPARTS(0, 0, 0, 0, 7), 1, 0),
 	[t].[PreNotification3],
 	DatePart(day, [t].[StrField])
 FROM

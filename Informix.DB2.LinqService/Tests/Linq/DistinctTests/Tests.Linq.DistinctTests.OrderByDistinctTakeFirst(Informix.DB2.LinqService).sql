@@ -226,6 +226,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 SELECT
 	t3.F2
@@ -236,7 +238,7 @@ FROM
 			t2.F2
 		FROM
 			(
-				SELECT FIRST 5
+				SELECT FIRST @take
 					t1.F1,
 					t1.F2
 				FROM

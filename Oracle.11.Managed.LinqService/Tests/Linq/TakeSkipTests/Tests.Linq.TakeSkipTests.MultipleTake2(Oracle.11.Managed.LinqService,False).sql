@@ -99,6 +99,8 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= 2
+ORDER BY
+	t2."Value_1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

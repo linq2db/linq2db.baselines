@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	NOT ("p"."FirstName" IS NULL OR CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) = 0) AND
+	CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) <> 0 AND
 	"p"."PersonID" = 1
 

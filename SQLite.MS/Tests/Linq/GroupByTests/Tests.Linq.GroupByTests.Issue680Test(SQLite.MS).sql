@@ -13,12 +13,10 @@ CREATE TABLE IF NOT EXISTS [Issue680Table]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @DateTime  -- DateTime
-SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	COUNT(CASE
-		WHEN strftime('%Y-%m-%d %H:%M:%f', [g_1].[TimeStamp]) > strftime('%Y-%m-%d %H:%M:%f', @DateTime)
+		WHEN strftime('%Y-%m-%d %H:%M:%f', [g_1].[TimeStamp]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
 			THEN 1
 		ELSE NULL
 	END)

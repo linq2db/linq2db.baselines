@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r.ID >= 101 AND r.ID < :Id
+	r.ID >= 101 AND r.ID < :p
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -38,11 +38,11 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r.ID >= 101 AND r.ID < :Id
+	r.ID >= 101 AND r.ID < :p
 

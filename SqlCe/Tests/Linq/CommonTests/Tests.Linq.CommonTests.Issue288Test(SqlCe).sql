@@ -10,13 +10,13 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @ID NVarChar(4) -- String
-SET     @ID = 'John'
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'John'
 
 SELECT TOP (1)
 	[p].[FirstName] as [ID]
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @ID
+	[p].[FirstName] = @p
 

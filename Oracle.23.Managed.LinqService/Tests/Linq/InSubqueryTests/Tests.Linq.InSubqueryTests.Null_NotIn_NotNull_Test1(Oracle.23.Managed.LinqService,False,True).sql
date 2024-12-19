@@ -134,12 +134,12 @@ SELECT
 FROM
 	"test_in_1" t
 WHERE
-	(t.ID IS NULL OR t.ID IS NULL OR t.ID NOT IN (
+	t.ID IS NULL OR t.ID IS NULL OR t.ID NOT IN (
 		SELECT
 			p.ID
 		FROM
 			"test_in_2" p
-	))
+	)
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

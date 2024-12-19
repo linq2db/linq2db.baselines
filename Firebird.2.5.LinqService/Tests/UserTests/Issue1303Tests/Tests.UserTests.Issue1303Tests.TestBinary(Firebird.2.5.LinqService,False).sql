@@ -25,10 +25,6 @@ END
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 INSERT INTO "Issue1303"
 (
@@ -39,8 +35,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	CAST(@Array AS VARCHAR(3) CHARACTER SET OCTETS),
-	CAST(@Binary AS VARCHAR(10) CHARACTER SET OCTETS)
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute
@@ -57,8 +53,6 @@ WHERE
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
 
 SELECT FIRST 2
 	"t1".ID,
@@ -67,12 +61,10 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Array" = @Array
+	"t1"."Array" = X'010203'
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
 
 SELECT FIRST 2
 	"t1".ID,
@@ -81,7 +73,7 @@ SELECT FIRST 2
 FROM
 	"Issue1303" "t1"
 WHERE
-	"t1"."Binary" = @Binary
+	"t1"."Binary" = X'0405'
 
 BeforeExecute
 -- Firebird.2.5 Firebird

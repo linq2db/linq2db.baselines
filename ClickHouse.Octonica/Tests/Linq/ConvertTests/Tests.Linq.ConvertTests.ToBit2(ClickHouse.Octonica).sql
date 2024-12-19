@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	NOT toBool(t.MoneyValue - toDecimal64('4.5', 10))
+	t.MoneyValue = toDecimal64('4.5', 10)
 

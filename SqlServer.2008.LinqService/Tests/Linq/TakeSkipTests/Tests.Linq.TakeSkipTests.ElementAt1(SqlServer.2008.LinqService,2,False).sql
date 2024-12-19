@@ -17,4 +17,6 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > 2 AND [t1].[RN] <= 3
+ORDER BY
+	[t1].[ParentID]
 

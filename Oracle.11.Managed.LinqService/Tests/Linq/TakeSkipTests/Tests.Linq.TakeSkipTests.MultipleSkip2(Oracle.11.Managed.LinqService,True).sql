@@ -109,6 +109,8 @@ FROM
 	) t3
 WHERE
 	t3.RN > :skip + :skip_1
+ORDER BY
+	t3."Value_1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -136,6 +138,8 @@ FROM
 	) t3
 WHERE
 	t3.RN > :skip + :skip_1
+ORDER BY
+	t3."Value_1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

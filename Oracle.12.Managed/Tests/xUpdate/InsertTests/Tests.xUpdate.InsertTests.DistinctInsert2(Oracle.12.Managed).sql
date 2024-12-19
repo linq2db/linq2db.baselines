@@ -16,13 +16,13 @@ INSERT INTO "LinqDataTypes"
 	"BoolValue"
 )
 SELECT
-	CAST(Floor(t2."c1" + 1001D) AS Int),
+	CAST(Floor(t2."Value_1" + 1001D) AS Int),
 	Sys_Guid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(CAST(t1.ID AS Float) / 3D) as "c1"
+			Floor(CAST(t1.ID AS Float) / 3D) as "Value_1"
 		FROM
 			"LinqDataTypes" t1
 	) t2

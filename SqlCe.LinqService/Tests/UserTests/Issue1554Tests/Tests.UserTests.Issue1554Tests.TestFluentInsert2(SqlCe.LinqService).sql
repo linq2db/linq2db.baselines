@@ -17,6 +17,12 @@ CREATE TABLE [Issue1554FluentTable]
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 0
+DECLARE @ClaimedKeyType NVarChar(2) -- String
+SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN NVarChar -- String
+SET     @ClaimedKeyTypeN = NULL
 
 INSERT INTO [Issue1554FluentTable]
 (
@@ -26,9 +32,9 @@ INSERT INTO [Issue1554FluentTable]
 )
 VALUES
 (
-	0,
-	'EC',
-	NULL
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 BeforeExecute

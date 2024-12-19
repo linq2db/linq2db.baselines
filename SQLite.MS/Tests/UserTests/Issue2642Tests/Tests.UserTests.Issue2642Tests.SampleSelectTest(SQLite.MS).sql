@@ -44,8 +44,6 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @DateTime  -- DateTime
-SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	[m_1].[Id],
@@ -60,7 +58,7 @@ FROM
 			[mails] [p]
 				INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', @DateTime)
+			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
 	) [m_1]
 		INNER JOIN [EmailAttachments] [d] ON [m_1].[Id] = [d].[EmailId]
 
@@ -68,8 +66,6 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @DateTime  -- DateTime
-SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
 	[p].[Id],
@@ -78,7 +74,7 @@ FROM
 	[mails] [p]
 		INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', @DateTime)
+	strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
 ORDER BY
 	[p].[AddTime]
 

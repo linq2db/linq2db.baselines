@@ -8,10 +8,10 @@ FROM
 	Parent t2
 		LEFT JOIN (
 			SELECT FIRST 1
-				r.Value1
+				r.Value1 as cond
 			FROM
 				Parent r
 		) t1 ON 1=1
 WHERE
-	t1.Value1 IS NOT NULL
+	t1.cond IS NOT NULL
 

@@ -76,7 +76,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s."Int" = @value OR s."Int" IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			s."Int"
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -88,7 +96,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = @value OR s.NullableInt IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			s.NullableInt
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -100,7 +116,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s."Int" = @value OR s."Int" IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			s."Int"
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -112,7 +136,15 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = @value OR s.NullableInt IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			s.NullableInt
+		FROM table(set{1})
+		INTERSECT
+		SELECT
+			@value::Int
+		FROM table(set{1})
+	)
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'1'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName
+	[r].[FirstName] = @p
 
 BeforeExecute
 -- SqlServer.2005
@@ -26,12 +26,12 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'1'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -42,5 +42,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @FirstName
+	[r].[FirstName] = @p
 

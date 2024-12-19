@@ -20,7 +20,7 @@ FROM
 				FROM
 					"Child" ch
 				WHERE
-					(ch."ChildID" > 3 OR ch."ChildID" < 4)
+					ch."ChildID" > 3 OR ch."ChildID" < 4
 				ORDER BY
 					ch."ParentID",
 					ch."ChildID"
@@ -28,4 +28,7 @@ FROM
 	) t2
 WHERE
 	t2.RN > :skip
+ORDER BY
+	t2."ParentID",
+	t2."ChildID"
 

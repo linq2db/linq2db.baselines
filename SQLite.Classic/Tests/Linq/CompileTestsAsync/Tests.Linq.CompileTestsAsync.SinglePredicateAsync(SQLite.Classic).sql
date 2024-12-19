@@ -34,18 +34,16 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Id_1  -- Int32
-SET     @Id_1 = 2
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
-	@Id,
+	@p,
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @p
 LIMIT 2
 
 BeforeExecute

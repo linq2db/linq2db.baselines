@@ -40,8 +40,8 @@ SELECT
 FROM
 	[Issue2816Table] [p]
 WHERE
-	([p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
-                 　]%')
+	[p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
+                 　]%'
 
 BeforeExecute
 -- SqlServer.2005

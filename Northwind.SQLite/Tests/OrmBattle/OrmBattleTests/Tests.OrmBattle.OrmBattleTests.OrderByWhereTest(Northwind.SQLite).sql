@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderDate VarChar(23) -- AnsiString
-SET     @OrderDate = '1997-01-01 00:00:00.000'
 DECLARE @take  -- Int32
 SET     @take = 10
 
@@ -23,7 +21,7 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', @OrderDate)
+	strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', '1997-01-01 00:00:00.000')
 ORDER BY
 	[o].[OrderDate],
 	[o].[OrderID]

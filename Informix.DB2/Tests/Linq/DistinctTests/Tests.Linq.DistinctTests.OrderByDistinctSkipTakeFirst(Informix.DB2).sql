@@ -226,6 +226,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 4
 
 SELECT
 	t3.F2
@@ -236,7 +240,7 @@ FROM
 			t2.F2
 		FROM
 			(
-				SELECT SKIP 1 FIRST 4
+				SELECT SKIP @skip FIRST @take
 					t1.F1,
 					t1.F2
 				FROM

@@ -11,7 +11,8 @@ SELECT TOP 1
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1 OR [p].[ParentID] >= @id2)
+	[p].[ParentID] = @id1 OR [p].[ParentID] >= @id1 OR
+	[p].[ParentID] >= @id2
 ORDER BY
 	[p].[ParentID]
 
@@ -28,7 +29,8 @@ SELECT TOP 1
 FROM
 	[Parent] [p]
 WHERE
-	([p].[ParentID] = @id1 OR [p].[ParentID] >= @id1 OR [p].[ParentID] >= @id2)
+	[p].[ParentID] = @id1 OR [p].[ParentID] >= @id1 OR
+	[p].[ParentID] >= @id2
 ORDER BY
 	[p].[ParentID]
 

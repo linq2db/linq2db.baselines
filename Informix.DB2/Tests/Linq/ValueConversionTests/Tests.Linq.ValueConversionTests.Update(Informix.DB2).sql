@@ -524,14 +524,20 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Value2 VarChar(21) -- String
+SET     @Value2 = '[{"Value":"updated"}]'
+DECLARE @EnumWithNull VarChar -- String
+SET     @EnumWithNull = NULL
+DECLARE @EnumWithNullDeclarative VarChar -- String
+SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
 	ValueConversion e
 SET
 	Value1 = e.Value1,
-	Value2 = '[{"Value":"updated"}]',
-	EnumWithNull = NULL,
-	EnumWithNullDeclarative = NULL
+	Value2 = @Value2,
+	EnumWithNull = @EnumWithNull,
+	EnumWithNullDeclarative = @EnumWithNullDeclarative
 WHERE
 	e.Id = 1
 

@@ -20,8 +20,6 @@ IF (OBJECT_ID(N'[Issue3761Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @DATUM DateTime2
-SET     @DATUM = CAST('2019-01-01T00:00:00.0000000' AS DATETIME2)
 
 SELECT
 	[t1].[Year_1],
@@ -42,7 +40,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < @DATUM
+			[n].[DATUM] < CAST('2019-01-01T00:00:00.0000000' AS DATETIME2)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],

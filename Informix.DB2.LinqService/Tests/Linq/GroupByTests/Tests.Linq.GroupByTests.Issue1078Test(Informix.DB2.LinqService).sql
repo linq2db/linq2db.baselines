@@ -220,7 +220,7 @@ SELECT
 	grp.SiteID,
 	COUNT(*),
 	COUNT(CASE
-		WHEN grp.Active = 'f' THEN 1
+		WHEN grp.Active = 'f'::BOOLEAN THEN 1
 		ELSE NULL
 	END)
 FROM

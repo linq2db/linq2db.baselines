@@ -8,3 +8,18 @@ FROM (
 WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([l].[IsDeleted] = CAST(0 AS bit))) OR ([l].[IsDeleted] = CAST(0 AS bit))
 
 
+--  SqlServer.2017 (asynchronously)
+
+SELECT
+	[t1].[IsDeleted],
+	[t1].[CategoryID],
+	[t1].[CategoryName],
+	[t1].[Description],
+	[t1].[Picture]
+FROM
+	(
+		SELECT * FROM [dbo].[Categories] WHERE CategoryId = 1
+	) [t1]
+
+
+

@@ -53,13 +53,13 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @ChildID Int32
-SET     @ChildID = 1002
+DECLARE @p Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
-	c_1."ChildID" = :ChildID
+	c_1."ChildID" = :p
 
