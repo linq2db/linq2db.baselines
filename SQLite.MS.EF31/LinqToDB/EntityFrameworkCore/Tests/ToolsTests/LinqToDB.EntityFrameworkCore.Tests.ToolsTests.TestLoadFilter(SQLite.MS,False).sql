@@ -70,10 +70,10 @@ FROM
 				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 		WHERE
+			NOT [d].[IsDeleted] AND
 			NOT [e_1].[IsDeleted] AND
 			NOT [a_Product].[IsDeleted] AND
-			NOT [e_1].[IsDeleted] AND
-			NOT [d].[IsDeleted]
+			NOT [e_1].[IsDeleted]
 	) [m_1]
 		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
 WHERE
@@ -109,10 +109,10 @@ FROM
 		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 WHERE
 	NOT [m_1].[IsDeleted] AND
+	NOT [d].[IsDeleted] AND
 	NOT [e].[IsDeleted] AND
 	NOT [m_1].[IsDeleted] AND
-	NOT [e].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [e].[IsDeleted]
 
 
 

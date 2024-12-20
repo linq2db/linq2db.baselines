@@ -52,7 +52,7 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @ShipCountry
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 1
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @ShipCountry
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 2
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
@@ -76,5 +76,5 @@ SELECT
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 3 AND [x].[ShipCountry] = @ShipCountry
+	[x].[ShipCountry] = @ShipCountry AND [x].[ShipVia] = 3
 

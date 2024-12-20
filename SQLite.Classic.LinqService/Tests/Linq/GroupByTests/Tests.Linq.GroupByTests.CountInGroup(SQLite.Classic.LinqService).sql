@@ -370,8 +370,8 @@ SELECT
 				FROM
 					[AggregationData] [t_1]
 				WHERE
-					[t_1].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_1].[GroupId] AND
-					[t_1].[DataValue] % 2 = 0
+					[t_1].[DataValue] % 2 = 0 AND [t_1].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [t_1].[GroupId]
 			) [t2]
 	),
 	(
@@ -384,8 +384,8 @@ SELECT
 				FROM
 					[AggregationData] [x_2]
 				WHERE
-					[x_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [x_2].[GroupId] AND
-					[x_2].[DataValue] % 2 = 0
+					[x_2].[DataValue] % 2 = 0 AND [x_2].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [x_2].[GroupId]
 			) [x_3]
 		WHERE
 			[x_3].[DataValue] % 2 = 0
@@ -401,8 +401,8 @@ SELECT
 				FROM
 					[AggregationData] [t_2]
 				WHERE
-					[t_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_2].[GroupId] AND
-					[t_2].[DataValue] % 2 = 0
+					[t_2].[DataValue] % 2 = 0 AND [t_2].[DataValue] IS NOT NULL AND
+					[t1].[Key_1] = [t_2].[GroupId]
 			) [t3]
 	)
 FROM

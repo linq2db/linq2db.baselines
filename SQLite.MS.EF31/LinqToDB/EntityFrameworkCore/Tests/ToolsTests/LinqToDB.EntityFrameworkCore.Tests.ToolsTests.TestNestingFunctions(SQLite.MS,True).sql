@@ -47,6 +47,7 @@ FROM
 	[Products] [e],
 	[Products] [pd2]
 WHERE
+	[e].[ProductID] = [pd2].[ProductID] AND
 	NOT [e].[IsDeleted] AND
 	(
 		SELECT
@@ -64,8 +65,7 @@ WHERE
 			[Order Details] [e_2]
 		WHERE
 			NOT [e_2].[IsDeleted] AND [pd2].[ProductID] = [e_2].[ProductID]
-	) > 0 AND
-	[e].[ProductID] = [pd2].[ProductID]
+	) > 0
 ORDER BY
 	[e].[ProductID]
 

@@ -22,6 +22,6 @@ WHERE
 		FROM
 			[Orders] [o]
 		WHERE
-			[c_1].[CustomerID] = [o].[CustomerID] AND [o].[Freight] > 400
+			[o].[Freight] > 400 AND [c_1].[CustomerID] = [o].[CustomerID]
 	)
 

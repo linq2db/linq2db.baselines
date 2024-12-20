@@ -18,7 +18,7 @@ FROM
 				FROM
 					[Issue4629Tags] [a_Tags]
 				WHERE
-					[p].[Id] = [a_Tags].[PostId] AND [a_Tags].[Weight] > 1
+					[a_Tags].[Weight] > 1 AND [p].[Id] = [a_Tags].[PostId]
 			) > 5
 		ORDER BY
 			(

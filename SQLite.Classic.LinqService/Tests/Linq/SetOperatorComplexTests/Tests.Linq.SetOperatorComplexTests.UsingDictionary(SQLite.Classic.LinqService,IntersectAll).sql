@@ -508,7 +508,7 @@ FROM
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
-	[a_Book].[Discriminator] = 'Roman' AND EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -516,11 +516,12 @@ WHERE
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 		WHERE
-			[a_Book_1].[Discriminator] = 'Novel' AND
 			([a_Book].[Discriminator] = [a_Book_1].[Discriminator] OR [a_Book].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
 			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
-	)
+			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
+			[a_Book_1].[Discriminator] = 'Novel'
+	) AND
+	[a_Book].[Discriminator] = 'Roman'
 
 BeforeExecute
 -- SQLite.Classic SQLite

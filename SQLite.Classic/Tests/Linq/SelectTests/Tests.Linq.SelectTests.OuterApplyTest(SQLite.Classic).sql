@@ -44,7 +44,7 @@ FROM
 				FROM
 					[Child] [c_2]
 				WHERE
-					[c_2].[ChildID] > 2 AND [c_2].[ParentID] >= [p].[ParentID]
+					[c_2].[ParentID] >= [p].[ParentID] AND [c_2].[ChildID] > 2
 				LIMIT 1
 			) as [ChildID_1],
 			(
@@ -53,7 +53,7 @@ FROM
 				FROM
 					[Child] [c_3]
 				WHERE
-					[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [p].[ParentID]
+					[c_3].[ParentID] >= [p].[ParentID] AND [c_3].[ChildID] > 2
 				LIMIT 1
 			) as [ParentID_2],
 			(
@@ -62,7 +62,7 @@ FROM
 				FROM
 					[Child] [c_4]
 				WHERE
-					[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= 2
+					[c_4].[ParentID] >= 2 AND [c_4].[ChildID] > 2
 				LIMIT 1
 			) as [ChildID_2],
 			(
@@ -71,7 +71,7 @@ FROM
 				FROM
 					[Child] [c_5]
 				WHERE
-					[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= 2
+					[c_5].[ParentID] >= 2 AND [c_5].[ChildID] > 2
 				LIMIT 1
 			) as [ParentID_3],
 			(
@@ -80,7 +80,7 @@ FROM
 				FROM
 					[Child] [c_6]
 				WHERE
-					[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [p].[ParentID]
+					[c_6].[ParentID] >= [p].[ParentID] AND [c_6].[ChildID] > 2
 				LIMIT 1
 			) as [ChildArray],
 			(
@@ -89,7 +89,7 @@ FROM
 				FROM
 					[Child] [c_7]
 				WHERE
-					[c_7].[ChildID] > 2 AND [c_7].[ParentID] >= [p].[ParentID]
+					[c_7].[ParentID] >= [p].[ParentID] AND [c_7].[ChildID] > 2
 				LIMIT 1
 			) as [ChildArray_1],
 			(
@@ -98,7 +98,7 @@ FROM
 				FROM
 					[Child] [c_8]
 				WHERE
-					[c_8].[ChildID] > 2 AND [c_8].[ParentID] >= [p].[ParentID]
+					[c_8].[ParentID] >= [p].[ParentID] AND [c_8].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary1],
 			(
@@ -107,7 +107,7 @@ FROM
 				FROM
 					[Child] [c_9]
 				WHERE
-					[c_9].[ChildID] > 2 AND [c_9].[ParentID] >= [p].[ParentID]
+					[c_9].[ParentID] >= [p].[ParentID] AND [c_9].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary1_1],
 			(
@@ -116,7 +116,7 @@ FROM
 				FROM
 					[Child] [c_10]
 				WHERE
-					[c_10].[ChildID] > 2 AND [c_10].[ParentID] >= [p].[ParentID]
+					[c_10].[ParentID] >= [p].[ParentID] AND [c_10].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary2],
 			(
@@ -125,7 +125,7 @@ FROM
 				FROM
 					[Child] [c_11]
 				WHERE
-					[c_11].[ChildID] > 2 AND [c_11].[ParentID] >= [p].[ParentID]
+					[c_11].[ParentID] >= [p].[ParentID] AND [c_11].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary2_1],
 			(
@@ -134,7 +134,7 @@ FROM
 				FROM
 					[Child] [c_12]
 				WHERE
-					[c_12].[ChildID] > 2 AND [c_12].[ParentID] >= [p].[ParentID]
+					[c_12].[ParentID] >= [p].[ParentID] AND [c_12].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary2_2],
 			(
@@ -143,7 +143,7 @@ FROM
 				FROM
 					[Child] [c_13]
 				WHERE
-					[c_13].[ChildID] > 2 AND [c_13].[ParentID] >= [p].[ParentID]
+					[c_13].[ParentID] >= [p].[ParentID] AND [c_13].[ChildID] > 2
 				LIMIT 1
 			) as [ChildDictionary2_3]
 		FROM

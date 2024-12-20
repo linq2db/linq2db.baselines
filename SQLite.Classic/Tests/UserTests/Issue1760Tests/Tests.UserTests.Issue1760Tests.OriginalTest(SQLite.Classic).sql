@@ -104,7 +104,7 @@ FROM
 							INNER JOIN [table2] [tbl2] ON [w].[id_tbl2] = [tbl2].[id]
 							INNER JOIN [table3] [tbl3] ON [w].[id_tbl3] = [tbl3].[id]
 					WHERE
-						[w].[commonTableId] = @id AND [tbl2].[col3] IS NOT NULL
+						[tbl2].[col3] IS NOT NULL AND [w].[commonTableId] = @id
 					GROUP BY
 						[tbl2].[col3]
 				) [ctb]

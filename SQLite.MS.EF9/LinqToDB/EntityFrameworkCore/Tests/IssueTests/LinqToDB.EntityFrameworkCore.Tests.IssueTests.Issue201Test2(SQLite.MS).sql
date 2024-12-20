@@ -11,7 +11,7 @@ WHERE
 		FROM
 			[Children] [y]
 		WHERE
-			[x].[Id] = [y].[ParentId] AND [y].[IsActive]
+			[y].[IsActive] AND [x].[Id] = [y].[ParentId]
 	)
 
 

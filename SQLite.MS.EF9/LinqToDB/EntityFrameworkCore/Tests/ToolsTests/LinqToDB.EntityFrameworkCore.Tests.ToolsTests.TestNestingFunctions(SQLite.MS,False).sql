@@ -47,7 +47,7 @@ FROM
 	[Products] [e],
 	[Products] [pd2]
 WHERE
-	(
+	[e].[ProductID] = [pd2].[ProductID] AND (
 		SELECT
 			COUNT(*)
 		FROM
@@ -62,8 +62,7 @@ WHERE
 			[Order Details] [e_2]
 		WHERE
 			[pd2].[ProductID] = [e_2].[ProductID]
-	) > 0 AND
-	[e].[ProductID] = [pd2].[ProductID]
+	) > 0
 ORDER BY
 	[e].[ProductID]
 

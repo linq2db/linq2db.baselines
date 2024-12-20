@@ -215,7 +215,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_17]
 		WHERE
-			[x_17].[Status] < 99 AND [x_17].[ResourceID] = [c1].[Id]
+			[x_17].[ResourceID] = [c1].[Id] AND [x_17].[Status] < 99
 	),
 	CASE
 		WHEN EXISTS(
@@ -281,7 +281,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_20]
 		WHERE
-			[x_20].[Status] < 99 AND [x_20].[ResourceID] = [c2].[Id]
+			[x_20].[ResourceID] = [c2].[Id] AND [x_20].[Status] < 99
 	),
 	CASE
 		WHEN EXISTS(

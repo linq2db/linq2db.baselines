@@ -59,8 +59,7 @@ FROM
 		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
 		INNER JOIN [Territories] [e_1] ON [d].[TerritoryID] = [e_1].[TerritoryID]
 WHERE
-	NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [d].[IsDeleted] AND NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted]
 
 
 
@@ -97,8 +96,7 @@ FROM
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
 		INNER JOIN [Products] [e_1] ON [d].[ProductID] = [e_1].[ProductID]
 WHERE
-	NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [d].[IsDeleted] AND NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted]
 
 
 

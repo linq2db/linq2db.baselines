@@ -22,5 +22,5 @@ FROM
 		GROUP BY
 			[t1].[Country]
 	) [k_1]
-		INNER JOIN [Customers] [c_1] ON ([k_1].[Country] = [c_1].[Country] OR [k_1].[Country] IS NULL AND [c_1].[Country] IS NULL) AND Substr([c_1].[CompanyName], 1, 1) = Substr([k_1].[Country], 1, 1)
+		INNER JOIN [Customers] [c_1] ON Substr([c_1].[CompanyName], 1, 1) = Substr([k_1].[Country], 1, 1) AND ([k_1].[Country] = [c_1].[Country] OR [k_1].[Country] IS NULL AND [c_1].[Country] IS NULL)
 

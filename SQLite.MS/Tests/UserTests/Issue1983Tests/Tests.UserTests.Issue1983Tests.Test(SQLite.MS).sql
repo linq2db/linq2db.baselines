@@ -76,7 +76,7 @@ SELECT
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+			[a_Cards].[CardType] = 2 AND [cu].[Id] = [a_Cards].[PersonId]
 	)
 FROM
 	[Issue1983Person] [cu]
@@ -87,7 +87,7 @@ WHERE
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+			[a_Cards].[CardType] = 2 AND [cu].[Id] = [a_Cards].[PersonId]
 	) = 0 OR
 	(
 		SELECT
@@ -95,7 +95,7 @@ WHERE
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+			[a_Cards].[CardType] = 2 AND [cu].[Id] = [a_Cards].[PersonId]
 	) <> 0
 
 BeforeExecute
@@ -119,7 +119,7 @@ SELECT
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE
-			[cu].[Id] = [a_Cards].[PersonId] AND [a_Cards].[CardType] = 2
+			[a_Cards].[CardType] = 2 AND [cu].[Id] = [a_Cards].[PersonId]
 	)
 FROM
 	[Issue1983Person] [cu]
