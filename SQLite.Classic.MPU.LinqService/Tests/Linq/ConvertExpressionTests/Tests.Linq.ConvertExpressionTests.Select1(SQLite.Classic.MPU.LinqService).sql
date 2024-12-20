@@ -8,7 +8,7 @@ SELECT
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 1
+			[a_Children].[ParentID] > 1 AND [p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Parent] [p]

@@ -630,7 +630,7 @@ SELECT
 FROM
 	[SecondOptimizerData] [s]
 		LEFT JOIN [FirstOptimizerData] [f1] ON [f1].[DataKey11] = [s].[DataKey11] AND [f1].[ValueStr] LIKE 'Str%' ESCAPE '~'
-		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[ValueStr] LIKE 'Str%' ESCAPE '~' AND [f2].[DataKey11] = 10
+		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[DataKey11] = 10 AND [f2].[ValueStr] LIKE 'Str%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -648,7 +648,7 @@ SELECT
 FROM
 	[SecondOptimizerData] [q]
 		LEFT JOIN [FirstOptimizerData] [f1] ON [f1].[DataKey11] = [q].[DataKey11] AND [f1].[ValueStr] LIKE 'Str%' ESCAPE '~'
-		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[ValueStr] LIKE 'Str%' ESCAPE '~' AND [f2].[DataKey11] = 10
+		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[DataKey11] = 10 AND [f2].[ValueStr] LIKE 'Str%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

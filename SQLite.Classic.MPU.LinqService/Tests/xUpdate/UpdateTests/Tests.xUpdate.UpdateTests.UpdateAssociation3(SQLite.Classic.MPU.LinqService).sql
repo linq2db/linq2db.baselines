@@ -36,6 +36,6 @@ SET
 FROM
 	[Child] [child_1]
 WHERE
-	[child_1].[ChildID] = 10000 AND [Parent].[ParentID] > 0 AND
+	[Parent].[ParentID] > 0 AND [child_1].[ChildID] = 10000 AND
 	[child_1].[ParentID] = [Parent].[ParentID]
 

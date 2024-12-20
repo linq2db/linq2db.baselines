@@ -7,5 +7,6 @@ SELECT
 FROM
 	[Person] [pp]
 WHERE
-	[pp].[PersonID] = 1 AND LTRIM('  ' || [pp].[FirstName] || ' ') = 'John '
+	LTRIM('  ' || [pp].[FirstName] || ' ') = 'John ' AND
+	[pp].[PersonID] = 1
 

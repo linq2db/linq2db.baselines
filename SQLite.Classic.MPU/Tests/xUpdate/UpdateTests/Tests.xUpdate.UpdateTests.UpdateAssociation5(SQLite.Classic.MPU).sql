@@ -11,7 +11,8 @@ SET
 			FROM
 				[Parent] [x_1]
 			WHERE
-				[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+				([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL) AND
+				[t1].[ID] = [x_1].[ParentID]
 		)
 			THEN 1
 		ELSE 0

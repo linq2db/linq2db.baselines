@@ -8,6 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE 'J%' ESCAPE '~' AND ([p].[PersonID] = 1 OR [p].[LastName] = 'fail')
+	([p].[PersonID] = 1 OR [p].[LastName] = 'fail') AND
+	[p].[FirstName] LIKE 'J%' ESCAPE '~'
 LIMIT 1
 

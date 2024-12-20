@@ -205,8 +205,8 @@ FROM
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[t4].[InstrumentCode] LIKE @cond ESCAPE '~' AND strftime('%Y-%m-%d %H:%M:%f', [t4].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate) AND
-			[ins].[SourceInstrumentCode] IS NOT NULL
+			[ins].[SourceInstrumentCode] IS NOT NULL AND [t4].[InstrumentCode] LIKE @cond ESCAPE '~' AND
+			strftime('%Y-%m-%d %H:%M:%f', [t4].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate)
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]

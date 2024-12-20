@@ -122,7 +122,7 @@ SELECT
 		FROM
 			[WarehouseStock] [s]
 		WHERE
-			[s].[ItemId] = [i].[Id] AND (
+			(
 				SELECT
 					[stock].[ItemId]
 				FROM
@@ -131,7 +131,8 @@ SELECT
 					[stock].[ItemId] = [i].[Id]
 				GROUP BY
 					[stock].[ItemId]
-			) = [s].[ItemId]
+			) = [s].[ItemId] AND
+			[s].[ItemId] = [i].[Id]
 	)
 FROM
 	[Issue4458Item] [i]

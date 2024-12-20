@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[Gender] = 'M' AND [t1].[PersonID] = 1
+	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 LIMIT 1
 
 BeforeExecute
@@ -23,6 +23,6 @@ SELECT
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[Gender] = 'F' AND [t1].[PersonID] = 3
+	[t1].[PersonID] = 3 AND [t1].[Gender] = 'F'
 LIMIT 1
 

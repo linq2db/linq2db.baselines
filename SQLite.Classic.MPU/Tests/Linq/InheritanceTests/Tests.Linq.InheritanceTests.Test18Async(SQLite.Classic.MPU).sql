@@ -9,6 +9,5 @@ SELECT DISTINCT
 FROM
 	[Person] [p1]
 WHERE
-	[p1].[PersonID] IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) AND
-	[p1].[Gender] = 'F'
+	[p1].[Gender] = 'F' AND [p1].[PersonID] IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 

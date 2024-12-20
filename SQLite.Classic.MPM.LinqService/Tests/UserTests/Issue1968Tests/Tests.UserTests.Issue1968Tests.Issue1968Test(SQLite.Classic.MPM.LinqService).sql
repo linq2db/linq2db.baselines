@@ -183,7 +183,7 @@ FROM
 			FROM
 				[Faculty] [m_1]
 			WHERE
-				[m_2].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
+				[m_1].[Id] = [d].[FacultyId] AND [m_2].[Id] = [m_1].[UniversityId]
 		)
 
 BeforeExecute

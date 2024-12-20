@@ -10,5 +10,5 @@ FROM
 	[Person] [p1],
 	[Person] [p2]
 WHERE
-	[p2].[PersonID] = @id AND [p1].[PersonID] = [p2].[PersonID]
+	[p1].[PersonID] = [p2].[PersonID] AND [p2].[PersonID] = @id
 

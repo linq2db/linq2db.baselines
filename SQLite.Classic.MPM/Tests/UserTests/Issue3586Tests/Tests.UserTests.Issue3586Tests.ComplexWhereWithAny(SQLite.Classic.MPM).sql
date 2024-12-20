@@ -155,7 +155,7 @@ WHERE
 			[InventoryResourceDTO] [y]
 				LEFT JOIN [WmsBatchDTO] [batch] ON [y].[MaterialID] = [batch].[MaterialID] AND ([y].[BatchNumber] = [batch].[BatchNumber] OR [y].[BatchNumber] IS NULL AND [batch].[BatchNumber] IS NULL)
 		WHERE
-			[y].[Status] = 1 AND [y].[Id] = [x].[Id]
+			[y].[Id] = [x].[Id] AND [y].[Status] = 1
 	)
 
 BeforeExecute
