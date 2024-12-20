@@ -24,5 +24,5 @@ FROM
 			[t3].[Key_1]
 	) [t4]
 WHERE
-	[t4].[Key_1] = 1 AND [t4].[Count_1] > 1
+	[t4].[Count_1] > 1 AND [t4].[Key_1] = 1
 

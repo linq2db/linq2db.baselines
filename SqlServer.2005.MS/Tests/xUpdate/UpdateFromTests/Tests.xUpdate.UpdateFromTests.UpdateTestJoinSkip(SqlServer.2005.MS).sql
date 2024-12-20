@@ -105,7 +105,7 @@ FROM
 			[t].[id] <> @someId
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [u].[id] = [t1].[id]
+	[u].[id] = [t1].[id] AND [t1].[RN] > @skip
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

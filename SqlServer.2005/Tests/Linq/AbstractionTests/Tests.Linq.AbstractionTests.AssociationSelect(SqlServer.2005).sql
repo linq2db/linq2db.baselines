@@ -350,7 +350,7 @@ FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[d].[ParentId] % 3 = 0 AND [m_1].[Id] = [d].[ParentId]
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -396,7 +396,7 @@ FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[d].[ParentId] % 3 = 0 AND [m_1].[Id] = [d].[ParentId]
 			ORDER BY
 				[d].[Id]
 		) [d_1]

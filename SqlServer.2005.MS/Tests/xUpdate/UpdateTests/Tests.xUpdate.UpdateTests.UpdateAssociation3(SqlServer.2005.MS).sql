@@ -37,5 +37,5 @@ FROM
 	[Child] [child_1]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[child_1].[ChildID] = 10000 AND [a_Parent].[ParentID] > 0
+	[a_Parent].[ParentID] > 0 AND [child_1].[ChildID] = 10000
 

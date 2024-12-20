@@ -18,7 +18,7 @@ FROM
 					FROM
 						[Child] [a_Children]
 					WHERE
-						[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 0
+						[a_Children].[ParentID] > 0 AND [p].[ParentID] = [a_Children].[ParentID]
 				) [t1]
 			ORDER BY
 				[t1].[ChildID]

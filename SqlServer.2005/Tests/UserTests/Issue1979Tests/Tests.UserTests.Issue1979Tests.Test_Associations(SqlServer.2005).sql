@@ -73,7 +73,7 @@ WHERE
 						CAST([x].[TagId] AS BigInt) = [a_Tag].[Id]
 				) [t1]
 		WHERE
-			[i].[Id] = [x].[TaggableId] AND [t1].[Name] = N'Visu'
+			[t1].[Name] = N'Visu' AND [i].[Id] = [x].[TaggableId]
 	)
 
 BeforeExecute
