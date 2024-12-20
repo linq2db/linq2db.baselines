@@ -836,7 +836,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue" = 0
+	NOT "x"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -867,7 +867,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	"x_with_not"."BoolValue" = 1
+	"x_with_not"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -898,7 +898,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue" = 0
+	NOT "swap"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -929,7 +929,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" = 1
+	"swap_with_not"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1053,7 +1053,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" = 0
+	"swap_with_not"."BoolValue" <> 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

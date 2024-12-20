@@ -18,7 +18,7 @@ LIMIT 1
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

@@ -81,6 +81,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @cond NVarChar(4000) -- String
+SET     @cond = N'%En%'
+DECLARE @cond_1 NVarChar(4000) -- String
+SET     @cond_1 = N'%Lis%'
 
 SELECT TOP (1)
 	[x].[Id],
@@ -91,7 +95,7 @@ SELECT TOP (1)
 			[User] [x_1]
 				LEFT JOIN [Language] [a_Language] ON [x_1].[LanguageId] = [a_Language].[Id]
 		WHERE
-			[x_1].[UserGroupId] = [x].[Id] AND [a_Language].[Name] LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(REPLACE(N'_En', N'_', N''), N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
+			[x_1].[UserGroupId] = [x].[Id] AND [a_Language].[Name] LIKE @cond ESCAPE N'~'
 	),
 	(
 		SELECT
@@ -100,7 +104,7 @@ SELECT TOP (1)
 			[User] [x_2]
 				LEFT JOIN [Language] [a_Language_1] ON [x_2].[LanguageId] = [a_Language_1].[Id]
 		WHERE
-			[x_2].[UserGroupId] = [x].[Id] AND [a_Language_1].[Name] LIKE N'%' + Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(REPLACE(N'Lis', N'_', N''), N'~', N'~~'), N'%', N'~%'), N'_', N'~_'), N'?', N'~?'), N'*', N'~*'), N'#', N'~#'), N'[', N'~['), N']', N'~]') + N'%' ESCAPE N'~'
+			[x_2].[UserGroupId] = [x].[Id] AND [a_Language_1].[Name] LIKE @cond_1 ESCAPE N'~'
 	)
 FROM
 	[UserGroup] [x]

@@ -47,8 +47,14 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [x].[StringProp] = N'2' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp],
-	[x].[StringProp] + N'2'
+	1,
+	[x].[StringProp] + N'2',
+	2
 FROM
 	[ConditionalData] [x]
 WHERE

@@ -87,7 +87,7 @@ WHERE
 		END
 		WHEN [e].[Id] <> 0 THEN 1
 		ELSE 0
-	END = 1
+	END
 ORDER BY
 	[e].[Id]
 

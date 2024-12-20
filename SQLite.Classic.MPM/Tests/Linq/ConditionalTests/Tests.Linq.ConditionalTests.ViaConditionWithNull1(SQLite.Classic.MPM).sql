@@ -40,6 +40,10 @@ BeforeExecute
 
 SELECT
 	[x].[Id],
+	CASE
+		WHEN [x].[StringProp] = '1' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp]
 FROM
 	[ConditionalData] [x]

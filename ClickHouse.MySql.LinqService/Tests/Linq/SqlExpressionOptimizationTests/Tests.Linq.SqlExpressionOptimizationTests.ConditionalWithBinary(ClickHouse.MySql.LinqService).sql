@@ -717,7 +717,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	x.BoolValue = false
+	NOT x.BoolValue
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -748,7 +748,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	x_with_not.BoolValue = true
+	x_with_not.BoolValue
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -779,7 +779,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	swap.BoolValue = false
+	NOT swap.BoolValue
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -810,7 +810,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue = true
+	swap_with_not.BoolValue
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -934,7 +934,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue = false
+	swap_with_not.BoolValue <> true
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

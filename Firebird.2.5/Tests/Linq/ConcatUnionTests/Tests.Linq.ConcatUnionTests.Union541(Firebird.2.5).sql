@@ -15,8 +15,8 @@ SELECT
 	"t1"."ParentID",
 	NULL,
 	NULL,
-	"t1"."ParentID_1",
-	"t1"."ParentID_1",
+	"t1"."cond",
+	"t1"."cond",
 	"t1"."ChildID"
 FROM
 	(
@@ -31,7 +31,7 @@ FROM
 					"p2"."ParentID" = "a_Children"."ParentID"
 				ORDER BY
 					"a_Children"."ChildID" DESC
-			) as "ParentID_1",
+			) as "cond",
 			(
 				SELECT FIRST 1
 					"a_Children_1"."ChildID"

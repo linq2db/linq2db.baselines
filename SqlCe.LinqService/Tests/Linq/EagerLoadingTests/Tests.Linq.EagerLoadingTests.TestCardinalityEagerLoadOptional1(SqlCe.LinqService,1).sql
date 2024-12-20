@@ -662,9 +662,9 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[FK],
-	[a_ObjectBOptional].[Id] as [Id_1],
+	[a_ObjectBOptional].[Id] as [cond],
 	[a_ObjectBOptional].[FK] as [FK_1],
-	[a_ObjectC].[Id] as [Id_2],
+	[a_ObjectC].[Id] as [cond_1],
 	[a_ObjectC].[FK] as [FK_2]
 FROM
 	[EntityA] [t1]

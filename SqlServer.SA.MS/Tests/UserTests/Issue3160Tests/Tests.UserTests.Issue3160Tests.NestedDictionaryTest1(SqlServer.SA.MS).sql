@@ -95,14 +95,15 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	IIF([t2].[not_null] IS NOT NULL AND [t2].[c1] IS NOT NULL, 1, 0),
+	[t2].[cond],
+	[t2].[cond_1],
 	[t2].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				1 as [not_null],
-				[t1].[c1],
+				1 as [cond],
+				[t1].[c1] as [cond_1],
 				[t1].[Id3]
 			FROM
 				[TABLE2] [x_1]
