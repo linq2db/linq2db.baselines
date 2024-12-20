@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[groupedData_1].[c1],
+	[groupedData_1].[Key_1],
 	COUNT(*) as [COUNT_1]
 FROM
 	(
@@ -10,7 +10,7 @@ FROM
 			CASE
 				WHEN [child].[FirstName] = 'John' THEN [child].[FirstName]
 				ELSE 'a'
-			END as [c1]
+			END as [Key_1]
 		FROM
 			[Parent] [groupedData],
 			[Person] [child]
@@ -18,5 +18,5 @@ FROM
 			[child].[PersonID] = [groupedData].[ParentID]
 	) [groupedData_1]
 GROUP BY
-	[groupedData_1].[c1]
+	[groupedData_1].[Key_1]
 

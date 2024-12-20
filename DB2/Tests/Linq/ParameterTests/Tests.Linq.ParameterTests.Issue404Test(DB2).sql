@@ -103,8 +103,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Usage Integer(4) -- Int32
-SET     @Usage = 0
+DECLARE @cond Integer(4) -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -120,7 +120,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -136,8 +136,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Usage Integer(4) -- Int32
-SET     @Usage = 1
+DECLARE @cond Integer(4) -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",
@@ -153,7 +153,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -286,8 +286,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Usage Integer(4) -- Int32
-SET     @Usage = 0
+DECLARE @cond Integer(4) -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -303,7 +303,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -319,8 +319,8 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Usage Integer(4) -- Int32
-SET     @Usage = 1
+DECLARE @cond Integer(4) -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",
@@ -336,7 +336,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 DisposeTransaction

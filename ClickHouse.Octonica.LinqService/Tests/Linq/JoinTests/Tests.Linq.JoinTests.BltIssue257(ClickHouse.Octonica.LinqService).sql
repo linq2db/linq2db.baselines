@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toDate(b.DateTimeValue) as Date_1
+			toDate32(b.DateTimeValue) as Date_1
 		FROM
 			LinqDataTypes b
 				INNER JOIN Parent p ON b.ID = p.ParentID

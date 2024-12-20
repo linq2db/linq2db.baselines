@@ -2,11 +2,11 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	g_1.ParentID
+	pmp.ParentID
 FROM
-	Child g_1
+	Child pmp
 GROUP BY
-	g_1.ParentID
+	pmp.ParentID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

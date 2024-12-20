@@ -86,14 +86,13 @@ BeforeExecute
 SELECT
 	"al_group_3"."AlertKey",
 	"al_group_3"."AlertCode",
-	"t2"."LastUpdate_1",
-	"t2"."CargoId",
+	"t2"."LastUpdate",
+	"t2"."cond",
 	"t2"."DeliveryId",
 	"t2"."DeliveryCounterParty",
-	"t2"."DealId",
+	"t2"."cond_1",
 	"t2"."ParcelId",
-	"t2"."CounterParty",
-	"t2"."LastUpdate"
+	"t2"."CounterParty"
 FROM
 	(
 		SELECT
@@ -103,8 +102,8 @@ FROM
 		FROM
 			(
 				SELECT
-					"al_group"."AlertKey",
 					"al_group"."AlertCode",
+					"al_group"."AlertKey",
 					"al_group"."CreationDate"
 				FROM
 					"Alert" "al_group"
@@ -117,7 +116,8 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = CAST("trade_1"."DealId" AS NVarChar(11))
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = CAST("nomin_1"."CargoId" AS NVarChar(11))
 		WHERE
-			("nomin_1"."DeliveryCounterParty" LIKE '%C%' OR "trade_1"."CounterParty" LIKE '%C%' OR "al_group_1"."AlertCode" LIKE '%C%')
+			"nomin_1"."DeliveryCounterParty" LIKE '%C%' OR "trade_1"."CounterParty" LIKE '%C%' OR
+			"al_group_1"."AlertCode" LIKE '%C%'
 		GROUP BY
 			"al_group_1"."AlertKey",
 			"al_group_1"."AlertCode",
@@ -125,19 +125,18 @@ FROM
 	) "al_group_3"
 		LEFT JOIN LATERAL (
 			SELECT
-				"nomin_2"."CargoId",
+				"nomin_2"."CargoId" as "cond",
 				"nomin_2"."DeliveryId",
 				"nomin_2"."DeliveryCounterParty",
-				"trade_2"."DealId",
+				"trade_2"."DealId" as "cond_1",
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
-				Coalesce("t1"."MAX_1", "t1"."CreationDate") as "LastUpdate",
-				Coalesce("t1"."MAX_1", "t1"."CreationDate") as "LastUpdate_1"
+				Coalesce("t1"."MAX_1", "t1"."CreationDate") as "LastUpdate"
 			FROM
 				(
 					SELECT
-						"al_group_2"."AlertKey",
 						"al_group_2"."AlertCode",
+						"al_group_2"."AlertKey",
 						"al_group_2"."CreationDate",
 						MAX("au_1"."TransactionDate") as "MAX_1"
 					FROM

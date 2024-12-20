@@ -38,11 +38,11 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 5
+DECLARE @cond  -- Int32
+SET     @cond = 5
 
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[PersonID] = @PersonID
+	[Person].[PersonID] = @cond
 

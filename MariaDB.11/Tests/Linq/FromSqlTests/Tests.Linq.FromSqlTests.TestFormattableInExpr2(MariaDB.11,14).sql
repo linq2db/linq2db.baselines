@@ -44,8 +44,8 @@ VALUES
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @startId Int64
-SET     @startId = 5
+DECLARE @p Int64
+SET     @p = 5
 DECLARE @endId Int32
 SET     @endId = 14
 
@@ -55,7 +55,7 @@ SELECT
 FROM
 	`sample_class` `t1`
 		INNER JOIN (
-			SELECT * FROM `sample_class` where `id` >= @startId and `id` < @endId
+			SELECT * FROM `sample_class` where `id` >= @p and `id` < @endId
 		) `s` ON `s`.`id` = `t1`.`id`
 WHERE
 	`s`.`id` > 10

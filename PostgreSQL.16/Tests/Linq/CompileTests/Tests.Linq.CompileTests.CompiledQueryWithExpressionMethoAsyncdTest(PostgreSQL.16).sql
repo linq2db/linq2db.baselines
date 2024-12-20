@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	x."ParentID",
@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	x."ParentID" = :ParentID
+	x."ParentID" = :p
 ORDER BY
 	x."ParentID" DESC
 LIMIT 1

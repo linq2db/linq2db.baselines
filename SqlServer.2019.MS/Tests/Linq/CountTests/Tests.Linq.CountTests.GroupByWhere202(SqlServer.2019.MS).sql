@@ -2,18 +2,11 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[g_2].[ParentID]
+	[g_1].[ParentID]
 FROM
-	(
-		SELECT
-			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [COUNT_1],
-			COUNT(IIF([g_1].[ChildID] = 20, 1, NULL)) as [COUNT_2],
-			[g_1].[ParentID]
-		FROM
-			[Child] [g_1]
-		GROUP BY
-			[g_1].[ParentID]
-	) [g_2]
-WHERE
-	([g_2].[COUNT_1] > 2 OR [g_2].[COUNT_2] > 2)
+	[Child] [g_1]
+GROUP BY
+	[g_1].[ParentID]
+HAVING
+	COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) > 2 OR COUNT(IIF([g_1].[ChildID] = 20, 1, NULL)) > 2
 

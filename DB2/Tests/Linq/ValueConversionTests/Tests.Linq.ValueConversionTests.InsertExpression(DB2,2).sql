@@ -56,12 +56,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@iteration AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@inserted AS NVarChar(22)),
-	CAST(@boolValue AS VarChar(1)),
-	CAST(@boolValue_1 AS VarChar(1))
+	@iteration,
+	@Value1,
+	@Enum,
+	@inserted,
+	@boolValue,
+	@boolValue_1
 )
 
 BeforeExecute

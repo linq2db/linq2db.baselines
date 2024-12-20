@@ -106,13 +106,13 @@ SELECT
 FROM
 	[test_in_1] [t]
 WHERE
-	EXISTS(
+	 EXISTS (
 		SELECT
 			*
 		FROM
 			[test_in_2] [p]
 		WHERE
-			([t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL)
+			[t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL
 	)
 
 BeforeExecute

@@ -41,7 +41,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	[s].[Int] <> @value
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -53,7 +53,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 1
+	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -65,7 +65,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[Int] = @value OR [s].[Int] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	[s].[Int] = @value
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -77,7 +77,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	CASE WHEN [s].[NullableInt] = @value OR [s].[NullableInt] IS NULL AND @value IS NULL THEN 0 ELSE 1 END = 0
+	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
 
 BeforeExecute
 -- Sybase.Managed Sybase

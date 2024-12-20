@@ -98,15 +98,16 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t2.not_null,
-	t2.Id3,
+	t2.cond_1,
+	t2.cond,
 	t2.Id3
 FROM
 	TABLE1 t1_1
 		LEFT JOIN (
 			SELECT
+				t1.c1 as cond,
 				t1.Id3 as Id3,
-				1 as not_null,
+				't2' as cond_1,
 				ROW_NUMBER() OVER (PARTITION BY x_1.PARENTID2 ORDER BY x_1.PARENTID2) as rn,
 				x_1.PARENTID2 as PARENTID2
 			FROM
@@ -114,6 +115,7 @@ FROM
 					LEFT JOIN (
 						SELECT
 							x.ID3 as Id3,
+							't3' as c1,
 							ROW_NUMBER() OVER (PARTITION BY x.PARENTID3 ORDER BY x.PARENTID3) as rn,
 							x.PARENTID3 as PARENTID3
 						FROM

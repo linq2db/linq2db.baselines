@@ -45,7 +45,7 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[ColumnDTO]) = strftime('%Y-%m-%d %H:%M:%f', @dto)
+	[r].[ColumnDTO] = @dto
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

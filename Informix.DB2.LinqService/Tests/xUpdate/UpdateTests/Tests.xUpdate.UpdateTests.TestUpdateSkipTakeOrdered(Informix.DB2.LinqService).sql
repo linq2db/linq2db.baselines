@@ -180,6 +180,10 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 2
+DECLARE @take Integer(4) -- Int32
+SET     @take = 5
 
 UPDATE
 	Parent
@@ -191,7 +195,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT SKIP 2 FIRST 5
+				SELECT SKIP @skip FIRST @take
 					x.ParentID,
 					x.Value1
 				FROM
@@ -209,11 +213,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	p.Value1
+	r.Value1
 FROM
-	Parent p
+	Parent r
 WHERE
-	p.ParentID >= 1000
+	r.ParentID >= 1000
 ORDER BY
-	p.ParentID
+	r.ParentID
 

@@ -34,19 +34,23 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	0,
-	[t1].[Discr],
 	[t1].[EntityId],
-	[t1].[Value]
+	[t1].[Discr],
+	[t1].[Value],
+	NULL,
+	NULL,
+	NULL
 FROM
 	[ConcatTest] [t1]
 WHERE
-	[t1].[Discr] <> 1
+	[t1].[Discr] = 1
 UNION ALL
 SELECT
-	1,
-	[t2].[Discr],
+	NULL,
+	NULL,
+	NULL,
 	[t2].[EntityId],
+	[t2].[Discr],
 	[t2].[Value]
 FROM
 	[ConcatTest] [t2]

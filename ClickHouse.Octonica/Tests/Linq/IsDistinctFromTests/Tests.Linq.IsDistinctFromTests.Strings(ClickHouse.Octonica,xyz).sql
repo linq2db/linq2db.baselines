@@ -37,7 +37,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.String = 'xyz' OR s.String IS NULL AND 'xyz' IS NULL THEN 0 ELSE 1 END = 1
+	s.String IS NULL OR s.String <> 'xyz'
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -47,7 +47,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableString = 'xyz' OR s.NullableString IS NULL AND 'xyz' IS NULL THEN 0 ELSE 1 END = 1
+	s.NullableString IS NULL OR s.NullableString <> 'xyz'
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,7 +57,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.String = 'xyz' OR s.String IS NULL AND 'xyz' IS NULL THEN 0 ELSE 1 END = 0
+	NOT (s.String IS NULL OR s.String <> 'xyz')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -67,7 +67,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableString = 'xyz' OR s.NullableString IS NULL AND 'xyz' IS NULL THEN 0 ELSE 1 END = 0
+	NOT (s.NullableString IS NULL OR s.NullableString <> 'xyz')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

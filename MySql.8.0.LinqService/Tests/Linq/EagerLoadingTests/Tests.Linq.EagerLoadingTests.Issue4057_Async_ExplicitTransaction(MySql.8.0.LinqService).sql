@@ -1,34 +1,34 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	`m_1`.`ParentID`,
+	`d`.`ParentID`,
+	`d`.`ChildID`
 FROM
 	(
 		SELECT
-			[x].[ParentID]
+			`x`.`ParentID`
 		FROM
-			[Parent] [x]
+			`Parent` `x`
 		WHERE
-			[x].[ParentID] = 3
+			`x`.`ParentID` = 3
 		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
-	[x].[ParentID],
-	[x].[Value1]
+	`x`.`ParentID`,
+	`x`.`Value1`
 FROM
-	[Parent] [x]
+	`Parent` `x`
 WHERE
-	[x].[ParentID] = 3
+	`x`.`ParentID` = 3
 LIMIT 1
 
 BeforeExecute
@@ -36,34 +36,34 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
-	[m_1].[ParentID],
-	[d].[ParentID],
-	[d].[ChildID]
+	`m_1`.`ParentID`,
+	`d`.`ParentID`,
+	`d`.`ChildID`
 FROM
 	(
 		SELECT
-			[x].[ParentID]
+			`x`.`ParentID`
 		FROM
-			[Parent] [x]
+			`Parent` `x`
 		WHERE
-			[x].[ParentID] = 3
+			`x`.`ParentID` = 3
 		LIMIT 1
-	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+	) `m_1`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
-	[x].[ParentID],
-	[x].[Value1]
+	`x`.`ParentID`,
+	`x`.`Value1`
 FROM
-	[Parent] [x]
+	`Parent` `x`
 WHERE
-	[x].[ParentID] = 3
+	`x`.`ParentID` = 3
 LIMIT 1
 
 BeforeExecute

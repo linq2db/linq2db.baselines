@@ -2,12 +2,11 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`x`.`PersonID`,
-	`y`.`value__`
+	`x`.`PersonID` + `y`.`item`
 FROM
 	`Person` `x`
 		CROSS JOIN (
-			SELECT 0 AS `value__`
+			SELECT 0 AS `item`
 			UNION ALL
 			SELECT 1
 			UNION ALL

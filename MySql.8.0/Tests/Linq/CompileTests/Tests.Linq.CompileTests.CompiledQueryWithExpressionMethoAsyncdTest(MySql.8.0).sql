@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	`x`.`ParentID`,
@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	`x`.`ParentID` = @ParentID
+	`x`.`ParentID` = @p
 ORDER BY
 	`x`.`ParentID` DESC
 LIMIT 1

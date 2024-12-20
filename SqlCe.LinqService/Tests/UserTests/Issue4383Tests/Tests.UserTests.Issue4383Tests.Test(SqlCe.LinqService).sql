@@ -208,6 +208,7 @@ SELECT
 	[m_1].[LINE_ID] as [Id],
 	[d].[LINE_ID] as [LineId],
 	[d].[CHAIN_ID] as [ChainId],
+	[a_Chain].[CHAIN_ID] as [cond],
 	[a_Chain].[CHAIN_ID] as [Id_1]
 FROM
 	[PUMPLINES] [m_1]
@@ -220,7 +221,8 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[LINE_ID] as [Id]
+	[t1].[LINE_ID] as [Id],
+	[t1].[LINE_ID] as [Id_1]
 FROM
 	[PUMPLINES] [t1]
 ORDER BY

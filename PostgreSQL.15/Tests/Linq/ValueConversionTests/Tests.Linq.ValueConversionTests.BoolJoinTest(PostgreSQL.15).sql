@@ -52,10 +52,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @BoolValue Varchar -- String
-SET     @BoolValue = 'Y'
-DECLARE @BoolValue_1 Varchar -- String
-SET     @BoolValue_1 = 'Y'
+DECLARE @true_value Varchar -- String
+SET     @true_value = 'Y'
 
 SELECT
 	t1."Enum"
@@ -67,8 +65,8 @@ FROM
 			FROM
 				"ValueConversion" t2
 			WHERE
-				t2."BoolValue" = :BoolValue
-		) t2_1 ON t1."BoolValue" = :BoolValue_1
+				t2."BoolValue" = :true_value
+		) t2_1 ON t1."BoolValue" = :true_value
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

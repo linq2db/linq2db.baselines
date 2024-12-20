@@ -38,7 +38,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" "t"
 WHERE
-	"t"."Value" = 1
+	"t"."Value"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -68,7 +68,7 @@ SELECT
 FROM
 	"NotNullableBoolClass" "t"
 WHERE
-	"t"."Value" = 0
+	NOT "t"."Value"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	0,
+	0::Int,
 	t1."ParentID",
 	t1."ParentID",
 	t1."ChildID"
@@ -22,7 +22,7 @@ WHERE
 	p."ParentID" = 1
 UNION ALL
 SELECT
-	1,
+	1::Int,
 	NULL::Int,
 	NULL::Int,
 	NULL::Int

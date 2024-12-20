@@ -2,10 +2,10 @@
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
-DECLARE @ID Int -- Int32
-SET     @ID = 0
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 
 SELECT
 	[t1].[FirstName],
@@ -30,24 +30,24 @@ WHERE
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = @ID
+			[p_1].[PersonID] = @p
 	) OR [t1].[PersonID] IN (
 		SELECT
 			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			@ID_1 <> [p_2].[PersonID]
+			@p_1 <> [p_2].[PersonID]
 	))
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @ID Int -- Int32
-SET     @ID = 3
+DECLARE @p Int -- Int32
+SET     @p = 3
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 2
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 3
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 3
 
 SELECT
 	[t1].[FirstName],
@@ -64,7 +64,7 @@ WHERE
 		FROM
 			[Person] [p]
 		WHERE
-			@ID <> [p].[PersonID]
+			@p <> [p].[PersonID]
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
@@ -79,15 +79,15 @@ WHERE
 		FROM
 			[Person] [p_2]
 		WHERE
-			@ID_1 <> [p_2].[PersonID]
+			@p_1 <> [p_2].[PersonID]
 	))
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @ID Int -- Int32
-SET     @ID = 4
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 4
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 3
 
@@ -106,7 +106,7 @@ WHERE
 		FROM
 			[Person] [p]
 		WHERE
-			@ID <> [p].[PersonID]
+			@p <> [p].[PersonID]
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
@@ -114,7 +114,7 @@ WHERE
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = @ID_1
+			[p_1].[PersonID] = @p_1
 	) OR [t1].[PersonID] IN (
 		SELECT
 			[p_2].[PersonID]
@@ -128,10 +128,10 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
-DECLARE @ID Int -- Int32
-SET     @ID = 0
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 0
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 
 SELECT
 	[t1].[FirstName],
@@ -156,22 +156,22 @@ WHERE
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = @ID
+			[p_1].[PersonID] = @p
 	) OR [t1].[PersonID] IN (
 		SELECT
 			[p_2].[PersonID]
 		FROM
 			[Person] [p_2]
 		WHERE
-			@ID_1 <> [p_2].[PersonID]
+			@p_1 <> [p_2].[PersonID]
 	))
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @ID Int -- Int32
-SET     @ID = 4
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 2
+DECLARE @p Int -- Int32
+SET     @p = 4
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 2
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 3
 
@@ -190,7 +190,7 @@ WHERE
 		FROM
 			[Person] [p]
 		WHERE
-			@ID <> [p].[PersonID]
+			@p <> [p].[PersonID]
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
@@ -198,7 +198,7 @@ WHERE
 		FROM
 			[Person] [p_1]
 		WHERE
-			[p_1].[PersonID] = @ID_1
+			[p_1].[PersonID] = @p_1
 	) OR [t1].[PersonID] IN (
 		SELECT
 			[p_2].[PersonID]
@@ -210,12 +210,12 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @ID Int -- Int32
-SET     @ID = 3
+DECLARE @p Int -- Int32
+SET     @p = 3
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 2
-DECLARE @ID_1 Int -- Int32
-SET     @ID_1 = 3
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 3
 
 SELECT
 	[t1].[FirstName],
@@ -232,7 +232,7 @@ WHERE
 		FROM
 			[Person] [p]
 		WHERE
-			@ID <> [p].[PersonID]
+			@p <> [p].[PersonID]
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
@@ -247,6 +247,6 @@ WHERE
 		FROM
 			[Person] [p_2]
 		WHERE
-			@ID_1 <> [p_2].[PersonID]
+			@p_1 <> [p_2].[PersonID]
 	))
 

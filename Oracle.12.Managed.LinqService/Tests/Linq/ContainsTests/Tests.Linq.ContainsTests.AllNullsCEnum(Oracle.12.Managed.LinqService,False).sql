@@ -19,7 +19,7 @@ BEGIN
 		(
 			"Id"    Int         NOT NULL,
 			"Int"   Int             NULL,
-			"Enum"  VarChar(5)      NULL,
+			"Enum"  VarChar2(5)     NULL,
 			"CEnum" VarChar(20)     NULL
 		)
 	';
@@ -36,7 +36,7 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int Int32
 SET     @Int = NULL
-DECLARE @Enum Varchar2 -- String
+DECLARE @Enum NVarchar2 -- String
 SET     @Enum = NULL
 DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
@@ -62,7 +62,7 @@ DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int Int32
 SET     @Int = 2
-DECLARE @Enum Varchar2(3) -- String
+DECLARE @Enum NVarchar2(3) -- String
 SET     @Enum = 'TWO'
 DECLARE @CEnum Varchar2(12) -- String
 SET     @CEnum = '___Value2___'
@@ -84,27 +84,27 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
+DECLARE @In_1 Varchar2 -- String
+SET     @In_1 = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum)
+	s."CEnum" IN (:In_1, :In_1)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @CEnum Varchar2 -- String
-SET     @CEnum = NULL
+DECLARE @NotIn Varchar2 -- String
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum, :CEnum)
+	s."CEnum" NOT IN (:NotIn, :NotIn)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

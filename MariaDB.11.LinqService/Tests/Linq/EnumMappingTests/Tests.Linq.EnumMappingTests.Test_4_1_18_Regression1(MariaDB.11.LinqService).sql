@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE  
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -30,25 +30,25 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN `r`.`BigIntValue` IS NOT NULL AND `r`.`IntValue` IS NOT NULL
+		WHEN `t1`.`BigIntValue` IS NOT NULL AND `t1`.`IntValue` IS NOT NULL
 			THEN 1
 		ELSE 0
 	END,
-	`r`.`BigIntValue`,
-	`r`.`IntValue`
+	`t1`.`BigIntValue`,
+	`t1`.`IntValue`
 FROM
-	`LinqDataTypes` `r`
+	`LinqDataTypes` `t1`
 WHERE
-	`r`.`ID` = 101
+	`t1`.`ID` = 101
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 102
+DECLARE @p Int32
+SET     @p = 102
 
 DELETE  
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @Id
+	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 

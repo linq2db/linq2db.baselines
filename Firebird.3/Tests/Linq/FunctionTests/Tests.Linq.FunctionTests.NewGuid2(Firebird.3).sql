@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	1
+	Gen_Uuid()
 FROM
 	"LinqDataTypes" "p"
 FETCH NEXT 1 ROWS ONLY

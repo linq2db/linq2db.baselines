@@ -229,8 +229,8 @@ FROM
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 0
+DECLARE @cond Integer -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -246,7 +246,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -258,8 +258,8 @@ FROM
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 1
+DECLARE @cond Integer -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",
@@ -275,7 +275,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -532,8 +532,8 @@ FROM
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 0
+DECLARE @cond Integer -- Int32
+SET     @cond = 0
 
 SELECT
 	"m_1"."Id",
@@ -549,7 +549,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -561,8 +561,8 @@ FROM
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 1
+DECLARE @cond Integer -- Int32
+SET     @cond = 1
 
 SELECT
 	"m_1"."Id",
@@ -578,7 +578,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Table404Two" "d" ON "m_1"."Id" = "d"."FirstTableId"
 WHERE
-	"d"."Usage" = @Usage
+	"d"."Usage" = @cond
 
 BeforeExecute
 -- Firebird.4 Firebird4

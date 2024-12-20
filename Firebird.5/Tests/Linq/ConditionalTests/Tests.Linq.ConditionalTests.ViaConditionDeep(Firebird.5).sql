@@ -39,7 +39,8 @@ SELECT 6,NULL FROM rdb$database UNION ALL
 SELECT 7,'String7' FROM rdb$database UNION ALL
 SELECT 8,'String8' FROM rdb$database UNION ALL
 SELECT 9,NULL FROM rdb$database UNION ALL
-SELECT 10,'String10' FROM rdb$database
+SELECT 10,'String10' FROM rdb$database UNION ALL
+SELECT 11,'-1' FROM rdb$database
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -50,8 +51,14 @@ SELECT
 		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN TRUE
 		ELSE FALSE
 	END,
+	CASE
+		WHEN "x"."StringProp" = '2' THEN TRUE
+		ELSE FALSE
+	END,
 	"x"."StringProp",
-	"x"."StringProp" || '2'
+	1,
+	"x"."StringProp" || '2',
+	2
 FROM
 	"ConditionalData" "x"
 WHERE

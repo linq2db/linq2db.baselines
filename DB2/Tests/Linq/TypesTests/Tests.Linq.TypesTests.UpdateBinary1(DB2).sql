@@ -6,7 +6,7 @@ SET     @BinaryValue = BX'0102030405'
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"BinaryValue" = CAST(@BinaryValue AS VARBINARY(32672))
+	"BinaryValue" = @BinaryValue
 WHERE
 	"t".ID = 1
 

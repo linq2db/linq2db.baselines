@@ -21,4 +21,6 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 3 AND [t2].[RN] <= 4
+ORDER BY
+	[t2].[LastName]
 

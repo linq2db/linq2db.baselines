@@ -24,13 +24,11 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @DateTime Timestamp(20) -- DateTime
-SET     @DateTime = '2020-02-29-17.54.55.123123'
 
 SELECT
 	"k_1".ID,
 	"k_1".NAME,
-	CAST(@DateTime AS timestamp)
+	'2020-02-29-17.54.55.123123'
 FROM
 	"Issue1189Customer" "k_1"
 

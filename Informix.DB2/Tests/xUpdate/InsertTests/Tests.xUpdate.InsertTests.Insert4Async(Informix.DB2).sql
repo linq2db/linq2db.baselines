@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
+DECLARE @id Integer(4) -- Int32
+SET     @id = 1001
 
 INSERT INTO Child
 (
@@ -16,7 +18,7 @@ INSERT INTO Child
 )
 SELECT
 	c_1.ParentID,
-	1001
+	@id::Int
 FROM
 	Child c_1
 WHERE

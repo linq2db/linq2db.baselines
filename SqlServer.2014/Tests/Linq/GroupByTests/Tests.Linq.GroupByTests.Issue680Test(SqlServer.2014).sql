@@ -15,11 +15,9 @@ IF (OBJECT_ID(N'[Issue680Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
-	COUNT(IIF([g_1].[TimeStamp] > @DateTime, 1, NULL))
+	COUNT(IIF([g_1].[TimeStamp] > DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7), 1, NULL))
 FROM
 	[Issue680Table] [g_1]
 GROUP BY

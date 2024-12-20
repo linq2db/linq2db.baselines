@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	toBool(t.MoneyValue)
+	t.MoneyValue <> 0
 

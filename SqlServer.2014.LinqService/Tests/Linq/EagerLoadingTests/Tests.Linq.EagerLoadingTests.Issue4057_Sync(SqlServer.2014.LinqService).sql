@@ -28,9 +28,9 @@ WHERE
 	[x].[ParentID] = 3
 
 BeforeExecute
-BeginTransaction(Serializable)
+BeginTransaction(RepeatableRead)
 BeforeExecute
--- SQLite.MS SQLite
+-- SqlServer.2014
 
 SELECT
 	[m_1].[ParentID],
@@ -38,34 +38,32 @@ SELECT
 	[d].[ChildID]
 FROM
 	(
-		SELECT
+		SELECT TOP (1)
 			[x].[ParentID]
 		FROM
 			[Parent] [x]
 		WHERE
 			[x].[ParentID] = 3
-		LIMIT 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SqlServer.2014
 
-SELECT
+SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
 FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT 1
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
-BeginTransaction(Serializable)
+BeginTransaction(RepeatableRead)
 BeforeExecute
--- SQLite.MS SQLite
+-- SqlServer.2014
 
 SELECT
 	[m_1].[ParentID],
@@ -73,27 +71,25 @@ SELECT
 	[d].[ChildID]
 FROM
 	(
-		SELECT
+		SELECT TOP (1)
 			[x].[ParentID]
 		FROM
 			[Parent] [x]
 		WHERE
 			[x].[ParentID] = 3
-		LIMIT 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SqlServer.2014
 
-SELECT
+SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
 FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT 1
 
 BeforeExecute
 DisposeTransaction

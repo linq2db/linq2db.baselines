@@ -386,6 +386,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	toString('Discriminator') as c1,
 	a_Book.Discriminator,
 	a_Book.BookName,
 	a_Book.BookName as BookName_1
@@ -397,6 +398,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 EXCEPT ALL
 SELECT
+	toString('Discriminator') as c1,
 	a_Book_1.Discriminator as Discriminator,
 	a_Book_1.BookName as BookName,
 	a_Book_1.BookName as BookName_1

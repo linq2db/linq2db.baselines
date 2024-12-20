@@ -138,6 +138,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	CAST('Discriminator' AS VarChar(255)),
 	a_Book."Discriminator",
 	a_Book."BookName",
 	a_Book."BookName"
@@ -149,6 +150,7 @@ WHERE
 	a_Book."Discriminator" = 'Roman'
 MINUS
 SELECT
+	CAST('Discriminator' AS VarChar(255)),
 	a_Book_1."Discriminator",
 	a_Book_1."BookName",
 	a_Book_1."BookName"

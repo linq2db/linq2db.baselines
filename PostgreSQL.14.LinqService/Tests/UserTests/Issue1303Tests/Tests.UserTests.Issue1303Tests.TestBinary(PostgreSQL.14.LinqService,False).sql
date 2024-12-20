@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS "Issue1303"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Array Bytea(3) -- Binary
-SET     @Array = E'\\x010203'::bytea
-DECLARE @Binary Bytea(2) -- Binary
-SET     @Binary = E'\\x0405'::bytea
 
 INSERT INTO "Issue1303"
 (
@@ -31,8 +27,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	:Array,
-	:Binary
+	E'\\x010203'::bytea,
+	E'\\x0405'::bytea
 )
 
 BeforeExecute
@@ -50,8 +46,6 @@ LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Array Bytea(3) -- Binary
-SET     @Array = E'\\x010203'::bytea
 
 SELECT
 	t1."ID",
@@ -60,13 +54,11 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array
+	t1."Array" = E'\\x010203'::bytea
 LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Binary Bytea(2) -- Binary
-SET     @Binary = E'\\x0405'::bytea
 
 SELECT
 	t1."ID",
@@ -75,7 +67,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary
+	t1."Binary" = E'\\x0405'::bytea
 LIMIT 2
 
 BeforeExecute

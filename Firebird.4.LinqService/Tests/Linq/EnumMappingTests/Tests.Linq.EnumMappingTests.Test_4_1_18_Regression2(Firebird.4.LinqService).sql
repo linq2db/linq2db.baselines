@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Id Integer -- Int32
-SET     @Id = 102
+DECLARE @p Integer -- Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -29,24 +29,24 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN "r"."BigIntValue" IS NOT NULL AND "r"."IntValue" IS NOT NULL
+		WHEN "t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL
 			THEN TRUE
 		ELSE FALSE
 	END,
-	"r"."BigIntValue",
-	"r"."IntValue"
+	"t1"."BigIntValue",
+	"t1"."IntValue"
 FROM
-	"LinqDataTypes" "r"
+	"LinqDataTypes" "t1"
 WHERE
-	"r".ID = 101
+	"t1".ID = 101
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Id Integer -- Int32
-SET     @Id = 102
+DECLARE @p Integer -- Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 

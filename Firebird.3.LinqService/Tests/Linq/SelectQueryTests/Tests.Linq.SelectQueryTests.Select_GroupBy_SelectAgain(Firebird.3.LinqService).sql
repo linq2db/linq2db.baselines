@@ -6,23 +6,22 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	"summary"."c1",
-	"summary"."LastName",
-	"summary"."Count_1",
-	"summary".MAX_1
+	COUNT(*) OVER(),
+	"x"."Key_1",
+	"x"."Count_1",
+	"x".MAX_1
 FROM
 	(
 		SELECT
+			"summary"."LastName" as "Key_1",
 			COUNT(*) as "Count_1",
-			"group_1"."LastName",
-			MAX("group_1"."FirstName") as MAX_1,
-			COUNT(*) OVER() as "c1"
+			MAX("summary"."FirstName") as MAX_1
 		FROM
-			"Person" "group_1"
+			"Person" "summary"
 		GROUP BY
-			"group_1"."LastName"
-	) "summary"
-WHERE
-	"summary"."Count_1" > 5
-OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+			"summary"."LastName"
+		HAVING
+			COUNT(*) > 5
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	) "x"
 

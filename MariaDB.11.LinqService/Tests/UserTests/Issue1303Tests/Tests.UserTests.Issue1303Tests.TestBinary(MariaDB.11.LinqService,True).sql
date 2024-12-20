@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS `Issue1303`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Array Blob(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary Blob(2) -- Binary
-SET     @Binary = 0x0405
 
 INSERT INTO `Issue1303`
 (
@@ -31,8 +27,8 @@ INSERT INTO `Issue1303`
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	0x010203,
+	0x0405
 )
 
 BeforeExecute

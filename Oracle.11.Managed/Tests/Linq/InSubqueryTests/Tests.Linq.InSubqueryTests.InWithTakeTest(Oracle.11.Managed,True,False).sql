@@ -7,7 +7,7 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" IS NOT NULL AND EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -17,7 +17,7 @@ WHERE
 				FROM
 					"Parent" v
 				WHERE
-					v."ParentID" IS NOT NULL AND ROWNUM <= 100
+					ROWNUM <= 100
 			) t1
 		WHERE
 			c_1."ParentID" = t1."ParentID"

@@ -196,15 +196,39 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 11
+DECLARE @StringProp VarChar(2) -- String
+SET     @StringProp = '-1'
+
+INSERT INTO ConditionalData
+(
+	Id,
+	StringProp
+)
+VALUES
+(
+	@Id,
+	@StringProp
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
 
 SELECT
 	x.Id,
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'
-		ELSE 'f'
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN x.StringProp = '2' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
 	x.StringProp,
-	x.StringProp || '2'
+	1,
+	x.StringProp || '2',
+	2
 FROM
 	ConditionalData x
 WHERE

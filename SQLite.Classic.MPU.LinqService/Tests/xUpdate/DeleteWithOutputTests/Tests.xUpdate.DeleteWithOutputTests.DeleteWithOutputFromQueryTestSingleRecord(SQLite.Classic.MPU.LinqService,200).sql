@@ -249,8 +249,6 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 200
-DECLARE @param_1  -- Int32
-SET     @param_1 = 200
 
 DELETE FROM
 	[TableWithData]
@@ -259,7 +257,7 @@ WHERE
 RETURNING
 	[TableWithData].[Id] + @param,
 	[TableWithData].[Value] + @param,
-	[TableWithData].[ValueStr] || @param_1
+	[TableWithData].[ValueStr] || @param
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

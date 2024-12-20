@@ -21,16 +21,7 @@ BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[product].[Discontinued],
-	[product].[ProductID],
-	[product].[ProductName],
-	[product].[SupplierID],
-	[product].[CategoryID],
-	[product].[QuantityPerUnit],
-	[product].[UnitPrice],
-	[product].[UnitsInStock],
-	[product].[UnitsOnOrder],
-	[product].[ReorderLevel]
+	[product].[ProductName]
 FROM
 	[Products] [product]
 WHERE

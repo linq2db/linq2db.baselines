@@ -37,18 +37,16 @@ SELECT 10
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT TOP 2
-	@Id,
+	@p,
 	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = @Id_1
+	[c_1].[Id] = @p
 
 BeforeExecute
 -- Sybase.Managed Sybase

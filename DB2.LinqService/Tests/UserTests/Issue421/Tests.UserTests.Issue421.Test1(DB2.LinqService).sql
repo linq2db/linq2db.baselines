@@ -36,8 +36,8 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BlobValue AS Blob(3))
+	@Id,
+	@BlobValue
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ SET     @BlobValue = BX'030201'
 UPDATE
 	"BlobClass" "t1"
 SET
-	"BlobValue" = CAST(@BlobValue AS Blob(3))
+	"BlobValue" = @BlobValue
 WHERE
 	"t1"."Id" = 1
 

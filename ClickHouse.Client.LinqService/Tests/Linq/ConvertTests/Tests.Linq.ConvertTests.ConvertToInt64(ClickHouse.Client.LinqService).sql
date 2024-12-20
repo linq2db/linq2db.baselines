@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p_1.c1
+	p.c1
 FROM
 	(
 		SELECT
-			toInt64(roundBankers(p.MoneyValue)) as c1
+			toInt64(roundBankers(t.MoneyValue)) as c1
 		FROM
-			LinqDataTypes p
-	) p_1
+			LinqDataTypes t
+	) p
 WHERE
-	p_1.c1 > toInt64(0)
+	p.c1 > toInt64(0)
 

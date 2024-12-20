@@ -666,6 +666,7 @@ BeforeExecute
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],
+	[a_ObjectBOptional].[Id],
 	[a_ObjectCRequired].[Id],
 	[a_ObjectCRequired].[FK]
 FROM

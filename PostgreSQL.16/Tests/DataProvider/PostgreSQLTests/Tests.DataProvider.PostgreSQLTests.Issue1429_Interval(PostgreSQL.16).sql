@@ -10,8 +10,8 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
-DECLARE @intervalDataType Interval -- Object
-SET     @intervalDataType = NpgsqlTypes.NpgsqlInterval
+DECLARE @value Interval -- Object
+SET     @value = NpgsqlTypes.NpgsqlInterval
 
 INSERT INTO "AllTypes"
 (
@@ -22,14 +22,14 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	:timeDataType,
-	:intervalDataType,
+	:value,
 	:timeDataType
 )
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @intervalDataType Interval -- Object
-SET     @intervalDataType = NpgsqlTypes.NpgsqlInterval
+DECLARE @value Interval -- Object
+SET     @value = NpgsqlTypes.NpgsqlInterval
 DECLARE @intervalDataType2 Interval -- Object
 SET     @intervalDataType2 = 3.00:00:00
 
@@ -40,7 +40,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	:intervalDataType,
+	:value,
 	:intervalDataType2
 )
 

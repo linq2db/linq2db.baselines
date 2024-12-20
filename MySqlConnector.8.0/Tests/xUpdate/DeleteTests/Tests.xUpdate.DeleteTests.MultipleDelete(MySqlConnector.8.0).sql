@@ -26,7 +26,8 @@ DELETE
 FROM
 	`Parent`
 WHERE
-	(`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR `Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL)
+	`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR
+	`Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

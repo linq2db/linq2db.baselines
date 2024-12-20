@@ -245,8 +245,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Usage Int32
-SET     @Usage = 0
+DECLARE @cond Int32
+SET     @cond = 0
 
 SELECT
 	m_1."Id",
@@ -262,7 +262,7 @@ FROM
 	) m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :cond
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -274,8 +274,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Usage Int32
-SET     @Usage = 1
+DECLARE @cond Int32
+SET     @cond = 1
 
 SELECT
 	m_1."Id",
@@ -291,7 +291,7 @@ FROM
 	) m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :cond
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -572,8 +572,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Usage Int32
-SET     @Usage = 0
+DECLARE @cond Int32
+SET     @cond = 0
 
 SELECT
 	m_1."Id",
@@ -589,7 +589,7 @@ FROM
 	) m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :cond
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -601,8 +601,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Usage Int32
-SET     @Usage = 1
+DECLARE @cond Int32
+SET     @cond = 1
 
 SELECT
 	m_1."Id",
@@ -618,7 +618,7 @@ FROM
 	) m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :cond
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

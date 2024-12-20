@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
-SET     @p = 3
+DECLARE @Value  -- Int32
+SET     @Value = 3
 
 SELECT
 	To_Date(Add_Days("t"."DateTimeValue", ?))

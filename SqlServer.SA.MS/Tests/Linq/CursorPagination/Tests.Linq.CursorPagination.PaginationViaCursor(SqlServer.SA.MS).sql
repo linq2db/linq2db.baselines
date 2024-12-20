@@ -127,8 +127,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
 	[t].[BookingID],
@@ -137,15 +135,13 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+	[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -158,23 +154,28 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
+			ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC) as [RowNumber],
 			COUNT(*) OVER() as [TotalCount],
-			[t].[BookingID],
-			[t].[ServiceDate],
-			[t].[Value] as [Value_1]
+			[e].[BookingID],
+			[e].[ServiceDate],
+			[e].[Value_1]
 		FROM
-			[Booking] [t]
-		WHERE
-			[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+			(
+				SELECT
+					[t].[BookingID],
+					[t].[ServiceDate],
+					[t].[Value] as [Value_1]
+				FROM
+					[Booking] [t]
+				WHERE
+					[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+			) [e]
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take Int -- Int32
@@ -191,15 +192,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+		) [e]
 )
 SELECT
 	[q].[RowNumber],
@@ -222,8 +230,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take Int -- Int32
@@ -240,15 +246,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+		) [e]
 )
 SELECT
 	[q].[RowNumber],
@@ -271,8 +284,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @DateTime DateTime2
-SET     @DateTime = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
 DECLARE @take Int -- Int32
@@ -289,15 +300,22 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[t].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
-		[t].[BookingID],
-		[t].[ServiceDate],
-		[t].[Value]
+		[e].[BookingID],
+		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
+		[e].[ServiceDate],
+		[e].[Value_1]
 	FROM
-		[Booking] [t]
-	WHERE
-		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
+		(
+			SELECT
+				[t].[BookingID],
+				[t].[ServiceDate],
+				[t].[Value] as [Value_1]
+			FROM
+				[Booking] [t]
+			WHERE
+				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
+		) [e]
 )
 SELECT
 	[q].[RowNumber],

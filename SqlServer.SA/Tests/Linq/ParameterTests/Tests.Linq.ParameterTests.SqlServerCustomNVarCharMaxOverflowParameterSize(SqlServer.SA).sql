@@ -40,6 +40,20 @@ FROM
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @p NVarChar -- String
+SET     @p = Tests.Linq.ParameterTests+NVarChar
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[NVarChar] = @p
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

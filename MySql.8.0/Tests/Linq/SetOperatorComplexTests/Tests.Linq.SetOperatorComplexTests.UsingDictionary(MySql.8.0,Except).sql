@@ -105,6 +105,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
+	CAST('Discriminator' AS CHAR(255)),
 	`a_Book`.`Discriminator`,
 	`a_Book`.`BookName`,
 	`a_Book`.`BookName`
@@ -116,6 +117,7 @@ WHERE
 	`a_Book`.`Discriminator` = 'Roman'
 EXCEPT
 SELECT
+	CAST('Discriminator' AS CHAR(255)),
 	`a_Book_1`.`Discriminator`,
 	`a_Book_1`.`BookName`,
 	`a_Book_1`.`BookName`

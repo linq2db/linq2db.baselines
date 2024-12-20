@@ -21,7 +21,7 @@ VALUES
 (
 	1001,
 	TRUE,
-	CAST(@arr AS VARCHAR(4) CHARACTER SET OCTETS)
+	@arr
 )
 
 BeforeExecute

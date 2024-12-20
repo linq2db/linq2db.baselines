@@ -32,13 +32,18 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
 	[x].[Id],
+	CASE
+		WHEN [x].[StringProp] = '1' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp]
 FROM
 	[ConditionalData] [x]

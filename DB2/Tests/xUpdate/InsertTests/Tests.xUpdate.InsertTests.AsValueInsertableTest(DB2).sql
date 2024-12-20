@@ -38,8 +38,8 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@FirstName AS NVarChar(4))
+	@ID,
+	@FirstName
 )
 
 BeforeExecute

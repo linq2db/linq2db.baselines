@@ -9,7 +9,6 @@ FROM
 WHERE
 	[p].[ParentID] > 1
 ORDER BY
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 OFFSET 300000 ROWS FETCH NEXT 1 ROWS ONLY 
 

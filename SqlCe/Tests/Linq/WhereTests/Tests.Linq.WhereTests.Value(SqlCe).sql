@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[ParentID],
-	[p].[Value1]
+	[p].[Value1] as [Value_1]
 FROM
 	[Parent] [p]
 WHERE

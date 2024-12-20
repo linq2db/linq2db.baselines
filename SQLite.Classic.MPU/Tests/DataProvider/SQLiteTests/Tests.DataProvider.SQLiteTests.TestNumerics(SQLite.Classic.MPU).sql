@@ -2,61 +2,91 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'bigint')
+	CASE
+		WHEN CAST(1 as 'bigint') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'bit')
+	CASE
+		WHEN CAST(1 as 'bit') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'decimal')
+	CASE
+		WHEN CAST(1 as 'decimal') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'int')
+	CASE
+		WHEN CAST(1 as 'int') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'money')
+	CASE
+		WHEN CAST(1 as 'money') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'numeric')
+	CASE
+		WHEN CAST(1 as 'numeric') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'smallint')
+	CASE
+		WHEN CAST(1 as 'smallint') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'tinyint')
+	CASE
+		WHEN CAST(1 as 'tinyint') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'float')
+	CASE
+		WHEN CAST(1 as 'float') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST(1 as 'real')
+	CASE
+		WHEN CAST(1 as 'real') THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

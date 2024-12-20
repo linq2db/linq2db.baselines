@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(2) -- String
-SET     @p = 'oh'
 
 SELECT
 	p."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	InStr(p."FirstName", :p) - 1 = 1 AND p."PersonID" = 1
+	InStr(p."FirstName", 'oh') = 2 AND p."PersonID" = 1
 

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar(3) -- String
-SET     @p = '123'
 
 SELECT
 	`p`.`PersonID`,
@@ -9,6 +7,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND 1 = Locate('321', Reverse(Substring(Concat('123', `p`.`FirstName`, '0123451234'), 6, 6))) AND
-	Locate(@p, Left(Concat('123', `p`.`FirstName`, '0123451234'), 11), 6) <> 0
+	`p`.`PersonID` = 1 AND (11 - Locate('321', Reverse(Substring(Concat('123', `p`.`FirstName`, '0123451234'), 6, 6)))) - Char_Length('123') = 7 AND
+	Locate('123', Left(Concat('123', `p`.`FirstName`, '0123451234'), 11), 6) <> 0
 

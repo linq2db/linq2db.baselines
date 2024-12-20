@@ -16,4 +16,6 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= 3
+ORDER BY
+	t2."ChildID"
 

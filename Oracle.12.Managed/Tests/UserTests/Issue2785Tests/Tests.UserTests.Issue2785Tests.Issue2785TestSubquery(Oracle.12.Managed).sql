@@ -4,17 +4,17 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	t1.ID,
-	t1."Id2"
+	t1.ID_1,
+	t1.ID
 FROM
 	(
 		SELECT
-			a."PersonID" as "Id2",
-			a."PersonID" as ID
+			a."PersonID" as ID,
+			a."PersonID" as ID_1
 		FROM
 			"Person" a
 		FETCH NEXT :take ROWS ONLY
 	) t1
 ORDER BY
-	t1."Id2"
+	t1.ID
 

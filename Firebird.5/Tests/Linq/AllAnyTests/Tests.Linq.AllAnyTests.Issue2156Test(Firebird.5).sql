@@ -87,7 +87,7 @@ FROM
 					FETCH NEXT 1 ROWS ONLY
 				) "e_1" ON 1=1
 		WHERE
-			("a_Patient"."Diagnosis" <> 'Immortality' OR "a_Patient"."Diagnosis" IS NULL)
+			"a_Patient"."Diagnosis" <> 'Immortality' OR "a_Patient"."Diagnosis" IS NULL
 	) "t1"
 ORDER BY
 	"t1".ID

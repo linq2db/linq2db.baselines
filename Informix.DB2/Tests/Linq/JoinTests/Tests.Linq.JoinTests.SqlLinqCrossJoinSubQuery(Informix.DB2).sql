@@ -1,12 +1,16 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
+DECLARE @take_1 Integer(4) -- Int32
+SET     @take_1 = 10
 
 SELECT
 	p_1.ParentID,
 	t1.ChildID
 FROM
 	(
-		SELECT FIRST 10
+		SELECT FIRST @take
 			p.ParentID
 		FROM
 			Parent p
@@ -14,7 +18,7 @@ FROM
 			p.ParentID > 0
 	) p_1,
 	(
-		SELECT FIRST 10
+		SELECT FIRST @take_1
 			c_1.ChildID
 		FROM
 			Child c_1

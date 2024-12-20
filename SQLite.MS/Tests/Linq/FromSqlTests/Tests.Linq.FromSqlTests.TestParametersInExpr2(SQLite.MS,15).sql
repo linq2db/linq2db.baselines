@@ -44,10 +44,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @startId  -- Int64
-SET     @startId = 5
-DECLARE @p  -- Int32
-SET     @p = 15
+DECLARE @p  -- Int64
+SET     @p = 5
+DECLARE @p_1  -- Int32
+SET     @p_1 = 15
 
 SELECT
 	[s].[value],
@@ -55,7 +55,7 @@ SELECT
 FROM
 	[sample_class] [t1]
 		INNER JOIN (
-			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @p
+			SELECT * FROM [sample_class] where [id] >= @p and [id] < @p_1
 		) [s] ON [s].[id] = [t1].[id]
 WHERE
 	[s].[id] > 10

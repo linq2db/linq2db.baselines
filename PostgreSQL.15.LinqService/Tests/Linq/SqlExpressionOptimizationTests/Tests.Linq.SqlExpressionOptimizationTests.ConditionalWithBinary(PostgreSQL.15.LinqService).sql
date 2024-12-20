@@ -490,11 +490,6 @@ SELECT
 	x_with_not."StringValueNullable"
 FROM
 	"OptimizationData" x_with_not
-WHERE
-	(x_with_not."IntVlaue" <> 1 OR CASE
-		WHEN x_with_not."IntVlaue" = 1 THEN NULL
-		ELSE False
-	END IS NULL)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -555,11 +550,6 @@ SELECT
 	swap_with_not."StringValueNullable"
 FROM
 	"OptimizationData" swap_with_not
-WHERE
-	(swap_with_not."IntVlaue" <> 1 OR CASE
-		WHEN swap_with_not."IntVlaue" = 1 THEN NULL
-		ELSE False
-	END IS NULL)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -621,10 +611,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	CASE
-		WHEN x_with_not."IntVlaue" = 1 THEN NULL
-		ELSE True
-	END IS NULL
+	x_with_not."IntVlaue" = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -686,10 +673,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	CASE
-		WHEN swap_with_not."IntVlaue" = 1 THEN NULL
-		ELSE True
-	END IS NULL
+	swap_with_not."IntVlaue" = 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -751,7 +735,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	x_with_not."BoolValue" <> True
+	x_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -813,7 +797,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	swap_with_not."BoolValue" <> True
+	swap_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -844,7 +828,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	x."BoolValue" <> True
+	NOT x."BoolValue"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -875,10 +859,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	CASE
-		WHEN x_with_not."BoolValue" = True THEN NULL
-		ELSE True
-	END IS NULL
+	x_with_not."BoolValue"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -909,7 +890,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	swap."BoolValue" <> True
+	NOT swap."BoolValue"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -940,10 +921,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	CASE
-		WHEN swap_with_not."BoolValue" = True THEN NULL
-		ELSE True
-	END IS NULL
+	swap_with_not."BoolValue"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1005,7 +983,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 WHERE
-	x_with_not."BoolValue" <> True
+	x_with_not."BoolValue" = False
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1466,7 +1444,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."StringValueNullable" IS NULL OR x."StringValueNullable" IS NULL)
+	x."StringValueNullable" IS NULL OR x."StringValueNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1528,7 +1506,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."StringValueNullable" IS NULL OR x."StringValueNullable" IS NULL)
+	x."StringValueNullable" IS NULL OR x."StringValueNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1590,7 +1568,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	(swap."StringValueNullable" IS NULL OR swap."StringValueNullable" IS NULL)
+	swap."StringValueNullable" IS NULL OR swap."StringValueNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1835,7 +1813,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" < 4 OR x."IntVlaue" <> 0 AND x."IntVlaue" >= 4)
+	x."IntVlaue" < 4 OR x."IntVlaue" <> 0 AND x."IntVlaue" >= 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1897,7 +1875,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	(swap."IntVlaue" < 4 OR swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4)
+	swap."IntVlaue" < 4 OR swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -1959,7 +1937,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" < 4 OR x."IntVlaue" > 0 AND x."IntVlaue" >= 4)
+	x."IntVlaue" < 4 OR x."IntVlaue" > 0 AND x."IntVlaue" >= 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -2083,7 +2061,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" < 4 OR x."IntVlaue" >= 0 AND x."IntVlaue" >= 4)
+	x."IntVlaue" < 4 OR x."IntVlaue" >= 0 AND x."IntVlaue" >= 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -2331,7 +2309,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" <> 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4)
+	x."IntVlaue" <> 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -2393,7 +2371,7 @@ SELECT
 FROM
 	"OptimizationData" swap
 WHERE
-	(swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4 OR swap."IntVlaue" < 4)
+	swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4 OR swap."IntVlaue" < 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -2455,7 +2433,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" > 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4)
+	x."IntVlaue" > 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -2579,7 +2557,7 @@ SELECT
 FROM
 	"OptimizationData" x
 WHERE
-	(x."IntVlaue" >= 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4)
+	x."IntVlaue" >= 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

@@ -135,8 +135,8 @@ SELECT
 FROM
 	[Issue2816Table] [p]
 WHERE
-	([p].[Text] IS NULL OR [p].[Text] NOT LIKE '%[^	
-                 　]%')
+	[p].[Text] IS NULL OR [p].[Text] NOT LIKE '%[^	
+                 　]%'
 
 BeforeExecute
 -- Sybase.Managed Sybase

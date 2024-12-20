@@ -101,6 +101,8 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t2."Value_1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

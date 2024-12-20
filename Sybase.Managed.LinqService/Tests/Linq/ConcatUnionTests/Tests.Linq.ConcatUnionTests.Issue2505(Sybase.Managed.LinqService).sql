@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @p UniVarChar(1) -- String
-SET     @p = 'O'
 
 SELECT
 	[i_2].[LastName]
@@ -28,7 +26,7 @@ FROM
 			[Person] [i_1]
 	) [i_2]
 WHERE
-	[i_2].[Gender] = @p
+	[i_2].[Gender] = 'O'
 ORDER BY
 	[i_2].[FirstName] DESC
 

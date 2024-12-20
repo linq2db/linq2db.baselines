@@ -45,6 +45,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 3 AND [t2].[RN] <= 4
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

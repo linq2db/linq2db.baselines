@@ -186,12 +186,11 @@ SET     @take = 5
 UPDATE
 	[u]
 SET
-	[u].[Value1] = [t1].[c1]
+	[u].[Value1] = 1
 FROM
 	[Parent] [u],
 	(
 		SELECT TOP (@take)
-			1 as [c1],
 			[x].[ParentID],
 			[x].[Value1]
 		FROM
@@ -208,11 +207,11 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[p].[Value1]
+	[r].[Value1]
 FROM
-	[Parent] [p]
+	[Parent] [r]
 WHERE
-	[p].[ParentID] >= 1000
+	[r].[ParentID] >= 1000
 ORDER BY
-	[p].[ParentID]
+	[r].[ParentID]
 

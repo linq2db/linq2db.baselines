@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ID Integer -- Int32
-SET     @ID = 700
 
 DELETE FROM [AllTypes]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
@@ -91,12 +89,10 @@ ORDER BY
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @ID Integer -- Int32
-SET     @ID = 700
 
 DELETE FROM [AllTypes]
 FROM
 	[AllTypes] [p]
 WHERE
-	[p].[ID] >= @ID
+	[p].[ID] >= 700
 

@@ -24,7 +24,7 @@ SELECT
 	q.Id,
 	q.Name,
 	q.ContactEmail,
-	q.Enabled
+	Nvl(q.Enabled, 'f'::BOOLEAN)
 FROM
 	CustomerBase q
 WHERE

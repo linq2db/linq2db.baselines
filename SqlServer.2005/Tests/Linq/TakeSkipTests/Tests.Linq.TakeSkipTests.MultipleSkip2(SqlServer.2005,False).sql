@@ -40,6 +40,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 3
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005
@@ -56,6 +58,8 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 4
+ORDER BY
+	[t2].[Value_1]
 
 BeforeExecute
 -- SqlServer.2005

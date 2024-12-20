@@ -35,7 +35,8 @@ SELECT 6,NULL UNION ALL
 SELECT 7,'String7' UNION ALL
 SELECT 8,'String8' UNION ALL
 SELECT 9,NULL UNION ALL
-SELECT 10,'String10'
+SELECT 10,'String10' UNION ALL
+SELECT 11,'-1'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -46,8 +47,14 @@ SELECT
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [x].[StringProp] = '2' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp],
-	[x].[StringProp] + '2'
+	1,
+	[x].[StringProp] + '2',
+	2
 FROM
 	[ConditionalData] [x]
 WHERE

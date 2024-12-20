@@ -2,14 +2,15 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t_1.c1
+	t.MoneyValue
 FROM
 	(
 		SELECT
-			Round(t.MoneyValue, 1) as c1
+			ROUND(p.MoneyValue, 1) as c1,
+			p.MoneyValue as MoneyValue
 		FROM
-			LinqDataTypes t
-	) t_1
+			LinqDataTypes p
+	) t
 WHERE
-	t_1.c1 <> toDecimal128('0', 10) AND t_1.c1 <> toDecimal128('7', 10)
+	t.c1 <> toDecimal64('0', 4) AND t.c1 <> toDecimal64('7', 4)
 

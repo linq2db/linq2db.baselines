@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 5
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 5
 
 SELECT
-	Extract(minute from ("t"."DateTimeValue" + CAST(@p AS Int) MINUTE))
+	Extract(minute from ("t"."DateTimeValue" + CAST(@Value AS Int) MINUTE))
 FROM
 	"LinqDataTypes" "t"
 

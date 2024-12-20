@@ -83,7 +83,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r."Column" = 'f' AND r.ColumnNullable = 't'
+	r."Column" = 'f'::BOOLEAN AND r.ColumnNullable = 't'::BOOLEAN
 
 BeforeExecute
 -- Informix.DB2 Informix

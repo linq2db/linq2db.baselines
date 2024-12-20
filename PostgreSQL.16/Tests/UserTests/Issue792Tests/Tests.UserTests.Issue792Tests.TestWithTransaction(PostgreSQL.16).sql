@@ -20,7 +20,7 @@ LIMIT 1
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-SHOW  server_version_num
+SHOW server_version_num
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

@@ -40,6 +40,20 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p VarChar -- AnsiString
+SET     @p = Tests.Linq.ParameterTests+VarChar
+
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarChar] = @p
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

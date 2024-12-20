@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	1
+	generateUUIDv4()
 FROM
 	LinqDataTypes p
 LIMIT 1

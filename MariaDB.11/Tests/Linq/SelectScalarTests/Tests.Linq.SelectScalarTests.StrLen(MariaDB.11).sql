@@ -2,5 +2,5 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	1 as `c1`
+	Char_Length('1') as `Value_1`
 

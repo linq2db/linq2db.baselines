@@ -4,7 +4,7 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[m_1].[c1],
+	[m_1].[Key_1],
 	[d].[OrderID],
 	[d].[CustomerID],
 	[d].[EmployeeID],
@@ -22,11 +22,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [c1]
+			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [Key_1]
 		FROM
 			[Orders] [g_1]
 	) [m_1]
-		INNER JOIN [Orders] [d] ON [m_1].[c1] = IIF([d].[Freight] > 50, IIF([d].[Freight] > 100, N'expensive', N'average'), N'cheap')
+		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = IIF([d].[Freight] > 50, IIF([d].[Freight] > 100, N'expensive', N'average'), N'cheap')
 
 BeforeExecute
 DisposeTransaction
@@ -34,14 +34,14 @@ BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[g_2].[c1]
+	[g_2].[Key_1]
 FROM
 	(
 		SELECT
-			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [c1]
+			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [Key_1]
 		FROM
 			[Orders] [g_1]
 	) [g_2]
 GROUP BY
-	[g_2].[c1]
+	[g_2].[Key_1]
 

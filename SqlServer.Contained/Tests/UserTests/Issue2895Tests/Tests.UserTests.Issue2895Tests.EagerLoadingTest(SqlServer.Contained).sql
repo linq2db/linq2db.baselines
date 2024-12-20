@@ -273,12 +273,12 @@ FROM
 							LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 							LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 					WHERE
-						[a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
+						[a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
 				) [t1]
 	) [m_1]
-		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] IS NOT NULL AND [m_1].[Id] = [d].[EmailId]
+		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] = [d].[EmailId]
 		LEFT JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
-		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] IS NOT NULL AND [a_Attachment].[Id] = [a_Documents].[AttachmentId]
+		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 BeforeExecute
 DisposeTransaction
@@ -286,7 +286,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[not_null],
+	[t1].[cond],
 	[t1].[Id]
 FROM
 	[Request] [r]
@@ -294,7 +294,7 @@ FROM
 		LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 		OUTER APPLY (
 			SELECT TOP (1)
-				1 as [not_null],
+				1 as [cond],
 				[a_Email_1].[Id]
 			FROM
 				[EmailAdminAssociation] [a_EmailAdminAssociations]
@@ -302,7 +302,7 @@ FROM
 					LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 					LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
 			WHERE
-				[a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
+				[a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
 		) [t1]
 
 BeforeExecute

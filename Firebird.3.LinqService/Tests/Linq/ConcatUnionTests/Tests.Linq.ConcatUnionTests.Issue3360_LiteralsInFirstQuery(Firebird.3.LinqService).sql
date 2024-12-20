@@ -169,10 +169,6 @@ VALUES
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @Guid Guid
-SET     @Guid = X'0B8AFE27481C442EB8CF729DDFEECE29'
-DECLARE @GuidN Guid
-SET     @GuidN = X'0B8AFE27481C442EB8CF729DDFEECE30'
 
 SELECT
 	"t1"."Id",
@@ -188,12 +184,12 @@ FROM
 	(
 		SELECT
 			"r"."Id",
-			5 as "Byte",
-			5 as "Byte_1",
-			CAST(@Guid AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
-			CAST(@GuidN AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
-			'ENUM1_VALUE' as "Enum",
-			'ENUM2_VALUE' as "EnumN",
+			CAST(5 AS SmallInt) as "Byte",
+			CAST(5 AS SmallInt) as "Byte_1",
+			CAST(X'0B8AFE27481C442EB8CF729DDFEECE29' AS CHAR(16) CHARACTER SET OCTETS) as "Guid",
+			CAST(X'0B8AFE27481C442EB8CF729DDFEECE30' AS CHAR(16) CHARACTER SET OCTETS) as "GuidN",
+			CAST('ENUM1_VALUE' AS CHAR(11)) as "Enum",
+			CAST('ENUM2_VALUE' AS CHAR(11)) as "EnumN",
 			TRUE as "Bool",
 			FALSE as "BoolN"
 		FROM

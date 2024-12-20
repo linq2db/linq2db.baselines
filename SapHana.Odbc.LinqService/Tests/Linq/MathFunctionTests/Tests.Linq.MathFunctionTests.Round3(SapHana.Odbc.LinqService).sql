@@ -2,18 +2,19 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t_1"."c1"
+	"t"."MoneyValue"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN "t"."MoneyValue" * 2 = Round("t"."MoneyValue" * 2, 1) AND "t"."MoneyValue" <> Round("t"."MoneyValue", 1)
-					THEN Round("t"."MoneyValue" / 2, 1) * 2
-				ELSE Round("t"."MoneyValue", 1)
-			END as "c1"
+				WHEN "p"."MoneyValue" * 2 = ROUND("p"."MoneyValue" * 2, 1) AND "p"."MoneyValue" <> ROUND("p"."MoneyValue", 1)
+					THEN ROUND("p"."MoneyValue" / 2, 1) * 2
+				ELSE ROUND("p"."MoneyValue", 1)
+			END as "c1",
+			"p"."MoneyValue"
 		FROM
-			"LinqDataTypes" "t"
-	) "t_1"
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	"t_1"."c1" <> 0 AND "t_1"."c1" <> 7
+	"t"."c1" <> 0 AND "t"."c1" <> 7
 

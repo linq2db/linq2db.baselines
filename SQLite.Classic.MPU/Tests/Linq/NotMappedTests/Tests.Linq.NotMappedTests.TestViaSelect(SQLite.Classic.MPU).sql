@@ -114,51 +114,27 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[q].[Id],
-	[q].[Value],
+	[t].[Id],
+	[t].[Value],
+	[s].[Id],
+	[a_Association1_1].[Id],
+	[a_Association1_1].[Value],
+	[a_Association1_1].[ParentId],
 	CASE
-		WHEN [s].[Id] IS NULL THEN 1
+		WHEN [a_Association1_1].[Id] IS NOT NULL AND [a_Association2].[Id] IS NOT NULL
+			THEN 1
 		ELSE 0
 	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN 0
-		ELSE [s].[Id]
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN NULL
-		ELSE [s].[Value]
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN NULL
-		ELSE [s].[ParentId]
-	END,
-	CASE
-		WHEN [s_1].[Id] IS NULL THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN 0
-		ELSE [s_1].[Id]
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN NULL
-		ELSE [s_1].[Value]
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN NULL
-		ELSE [s_1].[ParentId]
-	END,
-	CASE
-		WHEN [s].[Id] IS NULL THEN 1
-		ELSE 0
-	END,
-	[s_1].[Id],
-	[s_1].[ParentId],
-	[s_1].[Value]
+	[a_Association2].[Id],
+	[a_Association2].[Value],
+	[a_Association2].[ParentId]
 FROM
-	[SuperClass] [q]
-		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [q].[Id]
-		LEFT JOIN [Subclass2] [s_1] ON ([s_1].[ParentId] = [s].[Id] OR [s_1].[ParentId] IS NULL AND [s].[Id] IS NULL)
+	[SuperClass] [t]
+		LEFT JOIN [Subclass1] [s] ON [s].[ParentId] = [t].[Id]
+		LEFT JOIN [Subclass1] [a_Association1] ON [t].[Id] = [a_Association1].[ParentId]
+		LEFT JOIN [Subclass2] [s_1] ON [s_1].[ParentId] = [a_Association1].[Id]
+		LEFT JOIN [Subclass1] [a_Association1_1] ON [t].[Id] = [a_Association1_1].[ParentId]
+		LEFT JOIN [Subclass2] [a_Association2] ON [a_Association1_1].[Id] = [a_Association2].[ParentId]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

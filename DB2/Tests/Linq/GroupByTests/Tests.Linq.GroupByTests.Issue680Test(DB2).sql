@@ -21,12 +21,10 @@ END
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @DateTime Timestamp(20) -- DateTime
-SET     @DateTime = '2020-02-29-17.54.55.123123'
 
 SELECT
 	COUNT(CASE
-		WHEN "g_1"."TimeStamp" > CAST(@DateTime AS timestamp) THEN 1
+		WHEN "g_1"."TimeStamp" > '2020-02-29-17.54.55.123123' THEN 1
 		ELSE NULL
 	END)
 FROM

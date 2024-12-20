@@ -501,7 +501,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName]
 FROM
 	[Author] [t1]
@@ -526,7 +526,7 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	[a_Book].[Discriminator] as [cond],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

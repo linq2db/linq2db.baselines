@@ -1,25 +1,138 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS ComplexPredicate
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+CREATE TABLE IF NOT EXISTS ComplexPredicate
+(
+	Id      Int           NOT NULL,
+	"Value" NVarChar(255)     NULL
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Value VarChar -- String
+SET     @Value = NULL
+
+INSERT INTO ComplexPredicate
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Value VarChar(5) -- String
+SET     @Value = 'other'
+
+INSERT INTO ComplexPredicate
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 3
+DECLARE @Value VarChar(3) -- String
+SET     @Value = '123'
+
+INSERT INTO ComplexPredicate
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 4
+DECLARE @Value VarChar(4) -- String
+SET     @Value = 'test'
+
+INSERT INTO ComplexPredicate
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 5
+DECLARE @Value VarChar(1) -- String
+SET     @Value = '1'
+
+INSERT INTO ComplexPredicate
+(
+	Id,
+	"Value"
+)
+VALUES
+(
+	@Id,
+	@Value
+)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 SELECT
+	r.Id,
+	r."Value"
+FROM
+	ComplexPredicate r
+WHERE
 	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Person t1
-			WHERE
-				CASE
-					WHEN t1.MiddleName = '123' THEN 't'
-					ELSE 'f'
-				END = CASE
-					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
-						THEN 't'
-					ELSE 'f'
-				END
-		)
-			THEN 't'
-		ELSE 'f'
-	END::BOOLEAN
-FROM table(set{1})
+		WHEN r."Value" = '123' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = CASE
+		WHEN r."Value" = '1' OR r."Value" = 'test' AND (r."Value" <> '1' OR r."Value" IS NULL)
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END
+ORDER BY
+	r.Id
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1."Value"
+FROM
+	ComplexPredicate t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS ComplexPredicate
 

@@ -32,7 +32,8 @@ VALUES
 (7,'String7'),
 (8,'String8'),
 (9,NULL),
-(10,'String10')
+(10,'String10'),
+(11,'-1')
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -43,8 +44,14 @@ SELECT
 		WHEN `x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN `x`.`StringProp` = '2' THEN 1
+		ELSE 0
+	END,
 	`x`.`StringProp`,
-	Concat(`x`.`StringProp`, '2')
+	1,
+	Concat(`x`.`StringProp`, '2'),
+	2
 FROM
 	`ConditionalData` `x`
 WHERE

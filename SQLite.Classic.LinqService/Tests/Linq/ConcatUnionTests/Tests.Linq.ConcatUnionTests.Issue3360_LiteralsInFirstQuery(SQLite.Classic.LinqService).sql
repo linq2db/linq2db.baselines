@@ -180,14 +180,14 @@ FROM
 	(
 		SELECT
 			[r].[Id],
-			5 as [Byte],
-			5 as [Byte_1],
+			CAST(5 AS TinyInt) as [Byte],
+			CAST(5 AS TinyInt) as [Byte_1],
 			@Guid as [Guid],
 			@GuidN as [GuidN],
-			'ENUM1_VALUE' as [Enum],
-			'ENUM2_VALUE' as [EnumN],
-			1 as [Bool],
-			0 as [BoolN]
+			CAST('ENUM1_VALUE' AS NChar(11)) as [Enum],
+			CAST('ENUM2_VALUE' AS NChar(11)) as [EnumN],
+			CAST(1 AS Bit) as [Bool],
+			CAST(0 AS Bit) as [BoolN]
 		FROM
 			[Issue3360Table1] [r]
 		WHERE

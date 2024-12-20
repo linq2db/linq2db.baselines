@@ -18,3 +18,15 @@ VALUES (@p4)
 RETURNING `Id`;
 
 
+--  MariaDB.10.MySqlConnector MySql
+
+SELECT
+	`t1`.`Discriminator`,
+	`t1`.`Id`
+FROM
+	`WithInheritance` `t1`
+WHERE
+	`t1`.`Discriminator` IN ('WithInheritanceA2', 'WithInheritanceA1', 'WithInheritanceA')
+
+
+

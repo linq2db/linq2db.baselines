@@ -80,15 +80,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @GuidValue VarChar(50) -- AnsiString
-SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(50) -- AnsiString
+SET     @cond = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @cond
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

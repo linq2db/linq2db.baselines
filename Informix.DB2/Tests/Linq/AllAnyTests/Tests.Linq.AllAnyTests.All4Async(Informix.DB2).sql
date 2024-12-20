@@ -11,8 +11,8 @@ SELECT
 			WHERE
 				c_1.ParentID <= 3
 		)
-			THEN 't'
-		ELSE 'f'
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END::BOOLEAN
 FROM table(set{1})
 

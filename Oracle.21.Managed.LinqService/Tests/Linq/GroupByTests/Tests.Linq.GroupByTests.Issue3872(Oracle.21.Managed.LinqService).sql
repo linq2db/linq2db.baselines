@@ -17,10 +17,10 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "Issue3761Table"
 		(
-			LETO     Int       NOT NULL,
-			STEVILKA Int       NOT NULL,
-			DATUM    timestamp     NULL,
-			SKUPAJ   Decimal       NULL,
+			LETO     Int             NOT NULL,
+			STEVILKA Int             NOT NULL,
+			DATUM    timestamp           NULL,
+			SKUPAJ   Decimal(28, 10)     NULL,
 
 			CONSTRAINT "PK_Issue3761Table" PRIMARY KEY (LETO, STEVILKA)
 		)

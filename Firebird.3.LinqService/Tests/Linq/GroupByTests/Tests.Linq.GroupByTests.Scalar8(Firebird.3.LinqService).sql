@@ -2,9 +2,9 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	MAX("g_1"."ChildID")
+	MAX("id"."ChildID")
 FROM
-	"Child" "g_1"
+	"Child" "id"
 GROUP BY
-	"g_1"."ParentID"
+	"id"."ParentID"
 

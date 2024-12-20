@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @DateTimeValue TimeStamp -- DateTime
-SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.100000'
 
 SELECT
 	t.ID,
@@ -17,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" IN (:DateTimeValue)
+	t."DateTimeValue" IN (TIMESTAMP '2001-01-11 01:11:21.100000')
 

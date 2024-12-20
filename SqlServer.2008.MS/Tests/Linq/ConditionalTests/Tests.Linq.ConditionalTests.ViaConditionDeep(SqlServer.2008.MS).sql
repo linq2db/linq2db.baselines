@@ -34,7 +34,8 @@ VALUES
 (7,N'String7'),
 (8,N'String8'),
 (9,NULL),
-(10,N'String10')
+(10,N'String10'),
+(11,N'-1')
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -46,8 +47,14 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [x].[StringProp] = N'2' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp],
-	[x].[StringProp] + N'2'
+	1,
+	[x].[StringProp] + N'2',
+	2
 FROM
 	[ConditionalData] [x]
 WHERE

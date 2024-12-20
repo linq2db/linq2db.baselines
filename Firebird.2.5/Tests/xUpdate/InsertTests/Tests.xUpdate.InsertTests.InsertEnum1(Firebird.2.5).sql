@@ -19,7 +19,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	1001,
-	CAST(@Value1 AS Int)
+	@Value1
 )
 
 BeforeExecute

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @OrderElement  -- Int32
-SET     @OrderElement = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 DECLARE @param  -- Int32
 SET     @param = 2
 
@@ -14,7 +14,7 @@ FROM
 		SELECT
 			[ch].[ChildID],
 			[ch].[ParentID],
-			@OrderElement as [OrderElement]
+			@p as [OrderElement]
 		FROM
 			[Child] [ch]
 		UNION ALL

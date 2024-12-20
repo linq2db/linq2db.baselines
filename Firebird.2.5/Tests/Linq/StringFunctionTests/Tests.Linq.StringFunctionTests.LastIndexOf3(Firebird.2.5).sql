@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p VarChar(3) -- String
-SET     @p = '123'
 
 SELECT
 	"p"."PersonID",
@@ -9,6 +7,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = 1 AND 1 = Position('321', Reverse(Substring(('123' || "p"."FirstName" || '0123451234') from 6 for 6))) AND
-	(Position(@p, Left('123' || "p"."FirstName" || '0123451234', 11), 6) <> 0 OR Position(@p, Left('123' || "p"."FirstName" || '0123451234', 11), 6) IS NULL)
+	"p"."PersonID" = 1 AND (11 - Position('321', Reverse(Substring(('123' || "p"."FirstName" || '0123451234') from 6 for 6)))) - Char_Length('123') = 7 AND
+	Position('123', Left('123' || "p"."FirstName" || '0123451234', 11), 6) <> 0
 

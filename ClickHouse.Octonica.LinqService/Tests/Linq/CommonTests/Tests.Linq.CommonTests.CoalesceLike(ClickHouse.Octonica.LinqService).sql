@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Jo') AND p.FirstName IS NOT NULL
+	startsWith(p.FirstName, 'Jo')
 

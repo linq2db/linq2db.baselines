@@ -33,7 +33,8 @@ SELECT 6,NULL UNION ALL
 SELECT 7,N'String7' UNION ALL
 SELECT 8,N'String8' UNION ALL
 SELECT 9,NULL UNION ALL
-SELECT 10,N'String10'
+SELECT 10,N'String10' UNION ALL
+SELECT 11,N'-1'
 
 BeforeExecute
 -- SqlServer.2005
@@ -45,8 +46,14 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [x].[StringProp] = N'2' THEN 1
+		ELSE 0
+	END,
 	[x].[StringProp],
-	[x].[StringProp] + N'2'
+	1,
+	[x].[StringProp] + N'2',
+	2
 FROM
 	[ConditionalData] [x]
 WHERE

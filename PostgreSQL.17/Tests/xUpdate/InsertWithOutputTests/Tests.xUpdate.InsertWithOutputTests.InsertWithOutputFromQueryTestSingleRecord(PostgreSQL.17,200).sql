@@ -53,8 +53,6 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 200
 
 INSERT INTO "DestinationTable"
 (
@@ -65,7 +63,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || :param_1
+	s."ValueStr" || :param
 FROM
 	"TableWithData" s
 WHERE
@@ -79,13 +77,11 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
-DECLARE @param_1 Integer -- Int32
-SET     @param_1 = 200
 
 SELECT
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || :param_1
+	s."ValueStr" || :param
 FROM
 	"TableWithData" s
 WHERE

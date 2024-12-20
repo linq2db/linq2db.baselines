@@ -2,17 +2,17 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t_1].[c1]
+	[t].[Value_1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST(-[t].[MoneyValue] AS Float) >= 0 THEN Floor(CAST(-[t].[MoneyValue] AS Float))
-				ELSE Ceiling(CAST(-[t].[MoneyValue] AS Float))
-			END as [c1]
+				WHEN CAST(-[p].[MoneyValue] AS Float) >= 0 THEN Floor(CAST(-[p].[MoneyValue] AS Float))
+				ELSE Ceiling(CAST(-[p].[MoneyValue] AS Float))
+			END as [Value_1]
 		FROM
-			[LinqDataTypes] [t]
-	) [t_1]
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	[t_1].[c1] <> 0.10000000000000001
+	[t].[Value_1] <> 0.10000000000000001
 

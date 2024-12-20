@@ -34,14 +34,17 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1.not_null,
-	t1."Value_1"
+	t1.cond_1,
+	t1.cond
 FROM
 	"Request" a
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Metrics"."Value" as "Value_1",
-				1 as not_null
+				"a_Metrics"."Value" as cond,
+				CASE
+					WHEN "a_Metrics"."Value" IS NOT NULL THEN True
+					ELSE False
+				END as cond_1
 			FROM
 				"Metric" "a_Metrics"
 			WHERE

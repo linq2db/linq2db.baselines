@@ -226,8 +226,12 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @skip Integer(4) -- Int32
+SET     @skip = 1
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 
-SELECT SKIP 1 FIRST 2
+SELECT SKIP @skip FIRST @take
 	t2.F2
 FROM
 	(
@@ -237,6 +241,8 @@ FROM
 		FROM
 			DistinctOrderByTable t1
 	) t2
+ORDER BY
+	t2.F1
 
 BeforeExecute
 -- Informix.DB2 Informix

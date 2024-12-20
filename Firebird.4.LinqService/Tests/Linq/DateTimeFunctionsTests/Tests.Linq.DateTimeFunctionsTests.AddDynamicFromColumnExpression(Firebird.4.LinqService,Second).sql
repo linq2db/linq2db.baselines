@@ -2,7 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	DateAdd(Second, ("t"."SmallIntValue" + 4) - 4, "t"."DateTimeValue")
+	DateAdd(Second, "t"."SmallIntValue", "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 
