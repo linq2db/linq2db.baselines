@@ -284,13 +284,14 @@ SELECT DISTINCT
 FROM
 	[SampleData] [r]
 WHERE
-	[r].[Id] % 2 = 0 AND NOT EXISTS(
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[SampleData] [r_1]
 		WHERE
-			[r_1].[Id] % 4 = 0 AND [r].[Id] = [r_1].[Id] AND [r].[Value1] = [r_1].[Value2] / 10
+			[r].[Id] = [r_1].[Id] AND [r].[Value1] = [r_1].[Value1] AND
+			[r_1].[Id] % 6 = 0
 	) AND
 	NOT EXISTS(
 		SELECT
@@ -298,8 +299,10 @@ WHERE
 		FROM
 			[SampleData] [r_2]
 		WHERE
-			[r_2].[Id] % 6 = 0 AND [r].[Id] = [r_2].[Id] AND [r].[Value1] = [r_2].[Value1]
-	)
+			[r].[Id] = [r_2].[Id] AND [r].[Value1] = [r_2].[Value2] / 10 AND
+			[r_2].[Id] % 4 = 0
+	) AND
+	[r].[Id] % 2 = 0
 
 BeforeExecute
 -- SqlCe

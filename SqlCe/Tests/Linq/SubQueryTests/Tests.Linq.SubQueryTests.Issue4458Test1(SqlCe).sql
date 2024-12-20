@@ -130,7 +130,7 @@ FROM
 			FROM
 				[WarehouseStock] [s]
 			WHERE
-				[s].[ItemId] = [i].[Id] AND [stock_1].[ItemId] = [s].[ItemId]
+				[stock_1].[ItemId] = [s].[ItemId] AND [s].[ItemId] = [i].[Id]
 		) [t1]
 WHERE
 	EXISTS(

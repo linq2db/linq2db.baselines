@@ -13,7 +13,7 @@ WHERE
 		FROM
 			[Child] [p]
 		WHERE
-			[p].[ParentID] = 3 AND [t1].[ParentID] = [p].[ParentID] AND
-			[t1].[ChildID] = [p].[ChildID]
+			[t1].[ParentID] = [p].[ParentID] AND [t1].[ChildID] = [p].[ChildID] AND
+			[p].[ParentID] = 3
 	)
 

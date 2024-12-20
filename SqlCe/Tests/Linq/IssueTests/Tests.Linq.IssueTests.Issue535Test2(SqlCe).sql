@@ -32,7 +32,8 @@ SELECT
 FROM
 	[CustomerBase] [q]
 WHERE
-	[q].[ClientType] = 'Client' AND ([q].[Name] LIKE @filter ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE '~')
+	([q].[Name] LIKE @filter ESCAPE '~' OR [q].[ContactEmail] LIKE @filter_1 ESCAPE '~') AND
+	[q].[ClientType] = 'Client'
 
 BeforeExecute
 -- SqlCe

@@ -131,13 +131,13 @@ WHERE
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 		WHERE
-			[a_Book_1].[Discriminator] = 'Novel' AND
 			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
 			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
 			([t1].[Discriminator] = [a_Book_1].[Discriminator] OR [t1].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
 			([t1].[BookName] = [a_Book_1].[BookName] OR [t1].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
 			([t1].[RomanScore] = [a_Book_1].[RomanScore] OR [t1].[RomanScore] IS NULL AND [a_Book_1].[RomanScore] IS NULL) AND
-			([t1].[NovelScore] = [a_Book_1].[NovelScore] OR [t1].[NovelScore] IS NULL AND [a_Book_1].[NovelScore] IS NULL)
+			([t1].[NovelScore] = [a_Book_1].[NovelScore] OR [t1].[NovelScore] IS NULL AND [a_Book_1].[NovelScore] IS NULL) AND
+			[a_Book_1].[Discriminator] = 'Novel'
 	)
 
 BeforeExecute

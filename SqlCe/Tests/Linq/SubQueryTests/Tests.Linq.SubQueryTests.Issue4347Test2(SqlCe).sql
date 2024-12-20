@@ -55,7 +55,7 @@ FROM
 				FROM
 					[LineEntity] [a_Lines]
 				WHERE
-					[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
+					EXISTS(
 						SELECT
 							*
 						FROM
@@ -65,7 +65,8 @@ FROM
 								SELECT 'B' AS [item]) [t1]
 						WHERE
 							[a_Lines].[Currency] = [t1].[item] OR [a_Lines].[Currency] IS NULL AND [t1].[item] IS NULL
-					)
+					) AND
+					[x].[Id] = [a_Lines].[TransactionId]
 			)
 	) [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
@@ -87,7 +88,7 @@ WHERE
 		FROM
 			[LineEntity] [a_Lines]
 		WHERE
-			[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
+			EXISTS(
 				SELECT
 					*
 				FROM
@@ -97,7 +98,8 @@ WHERE
 						SELECT 'B' AS [item]) [t1]
 				WHERE
 					[a_Lines].[Currency] = [t1].[item] OR [a_Lines].[Currency] IS NULL AND [t1].[item] IS NULL
-			)
+			) AND
+			[x].[Id] = [a_Lines].[TransactionId]
 	)
 
 BeforeExecute

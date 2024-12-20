@@ -409,8 +409,8 @@ FROM
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_2].[GroupId] AND
-						CAST([t_2].[DataValue] AS Int) % 2 = 0
+						CAST([t_2].[DataValue] AS Int) % 2 = 0 AND [t_2].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [t_2].[GroupId]
 				) [t4]
 		) [t5]
 		OUTER APPLY (
@@ -423,8 +423,8 @@ FROM
 					FROM
 						[AggregationData] [x_2]
 					WHERE
-						[x_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [x_2].[GroupId] AND
-						CAST([x_2].[DataValue] AS Int) % 2 = 0
+						CAST([x_2].[DataValue] AS Int) % 2 = 0 AND [x_2].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [x_2].[GroupId]
 				) [x_3]
 			WHERE
 				CAST([x_3].[DataValue] AS Int) % 2 = 0
@@ -439,8 +439,8 @@ FROM
 					FROM
 						[AggregationData] [t_3]
 					WHERE
-						[t_3].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_3].[GroupId] AND
-						CAST([t_3].[DataValue] AS Int) % 2 = 0
+						CAST([t_3].[DataValue] AS Int) % 2 = 0 AND [t_3].[DataValue] IS NOT NULL AND
+						[t9].[Key_1] = [t_3].[GroupId]
 				) [t7]
 		) [t8]
 
