@@ -224,7 +224,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_17]
 		WHERE
-			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
+			[x_17].[ResourceID] = [c1].[Id] AND [x_17].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -464,7 +464,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_17]
 		WHERE
-			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
+			[x_17].[ResourceID] = [c1].[Id] AND [x_17].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -518,7 +518,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_20]
 		WHERE
-			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c2].[Id]
+			[x_20].[ResourceID] = [c2].[Id] AND [x_20].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -572,7 +572,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_23]
 		WHERE
-			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c3].[Id]
+			[x_23].[ResourceID] = [c3].[Id] AND [x_23].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -626,7 +626,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_26]
 		WHERE
-			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c4].[Id]
+			[x_26].[ResourceID] = [c4].[Id] AND [x_26].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -680,7 +680,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_29]
 		WHERE
-			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c5].[Id]
+			[x_29].[ResourceID] = [c5].[Id] AND [x_29].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -734,7 +734,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_32]
 		WHERE
-			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c6].[Id]
+			[x_32].[ResourceID] = [c6].[Id] AND [x_32].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -788,7 +788,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_35]
 		WHERE
-			[x_35].[Status] < 0 AND [x_35].[ResourceID] = [c7].[Id]
+			[x_35].[ResourceID] = [c7].[Id] AND [x_35].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT
@@ -842,7 +842,7 @@ SELECT
 		FROM
 			[InventoryResourceDTO] [x_38]
 		WHERE
-			[x_38].[Status] < 0 AND [x_38].[ResourceID] = [c8].[Id]
+			[x_38].[ResourceID] = [c8].[Id] AND [x_38].[Status] < 0
 	),
 	IIF(EXISTS(
 		SELECT

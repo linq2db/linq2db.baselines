@@ -27,10 +27,10 @@ ON (EXISTS(
 	FROM
 		[Patient] [a_Patient_1]
 	WHERE
-		[Target].[PersonID] = [a_Patient_1].[PersonID] AND
 		[Target].[PersonID] = [Source].[source_ID] AND
 		[a_Patient_1].[Diagnosis] LIKE N'%very%' ESCAPE N'~' AND
-		[Source].[source_Patient_Diagnosis] LIKE N'%sick%' ESCAPE N'~'
+		[Source].[source_Patient_Diagnosis] LIKE N'%sick%' ESCAPE N'~' AND
+		[Target].[PersonID] = [a_Patient_1].[PersonID]
 ))
 
 WHEN MATCHED THEN

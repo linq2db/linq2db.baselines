@@ -64,7 +64,7 @@ FROM
 					FROM
 						[Child] [c_1]
 					WHERE
-						[c_1].[ChildID] > 2 AND [c_1].[ParentID] >= [p].[ParentID]
+						[c_1].[ParentID] >= [p].[ParentID] AND [c_1].[ChildID] > 2
 				) [t1]
 				LEFT JOIN (
 					SELECT TOP (1)
@@ -73,7 +73,7 @@ FROM
 					FROM
 						[Child] [c_2]
 					WHERE
-						[c_2].[ChildID] > 2 AND [c_2].[ParentID] >= 2
+						[c_2].[ParentID] >= 2 AND [c_2].[ChildID] > 2
 				) [t2] ON 1=1
 				OUTER APPLY (
 					SELECT TOP (1)
@@ -82,7 +82,7 @@ FROM
 					FROM
 						[Child] [c_3]
 					WHERE
-						[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [p].[ParentID]
+						[c_3].[ParentID] >= [p].[ParentID] AND [c_3].[ChildID] > 2
 				) [t3]
 				OUTER APPLY (
 					SELECT TOP (1)
@@ -91,7 +91,7 @@ FROM
 					FROM
 						[Child] [c_4]
 					WHERE
-						[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= [p].[ParentID]
+						[c_4].[ParentID] >= [p].[ParentID] AND [c_4].[ChildID] > 2
 				) [t4]
 				OUTER APPLY (
 					SELECT TOP (1)
@@ -102,7 +102,7 @@ FROM
 					FROM
 						[Child] [c_5]
 					WHERE
-						[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= [p].[ParentID]
+						[c_5].[ParentID] >= [p].[ParentID] AND [c_5].[ChildID] > 2
 				) [t5]
 	) [t6]
 ORDER BY

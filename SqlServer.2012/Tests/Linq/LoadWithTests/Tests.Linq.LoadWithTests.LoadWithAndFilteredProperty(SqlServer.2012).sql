@@ -238,7 +238,7 @@ FROM
 			FROM
 				[SubItem1] [d]
 			WHERE
-				[m_2].[Id] = [d].[ParentId] AND [d].[ParentId] % 2 = 0
+				[d].[ParentId] % 2 = 0 AND [m_2].[Id] = [d].[ParentId]
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -285,7 +285,7 @@ FROM
 			FROM
 				[SubItem1] [e]
 			WHERE
-				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+				[e].[ParentId] % 2 = 0 AND [m_2].[Id] = [e].[ParentId]
 			ORDER BY
 				[e].[Id]
 		) [d]

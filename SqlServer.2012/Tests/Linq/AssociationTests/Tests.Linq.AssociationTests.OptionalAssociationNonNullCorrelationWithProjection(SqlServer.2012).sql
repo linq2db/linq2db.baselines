@@ -132,7 +132,7 @@ WHERE
 		FROM
 			[Table4] [id]
 		WHERE
-			[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
+			[id].[ID] = [r].[ID] AND [a_Table3].[ID] = [id].[ID3]
 	)
 
 BeforeExecute

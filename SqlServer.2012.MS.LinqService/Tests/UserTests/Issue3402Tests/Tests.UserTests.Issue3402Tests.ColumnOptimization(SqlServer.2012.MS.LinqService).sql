@@ -49,7 +49,7 @@ WHERE
 		FROM
 			[VEMPLOYEE_SCHDL_PERM] [y]
 		WHERE
-			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
+			[y].[IS_ACTIVE] = 1 AND [ess].[ID] = [y].[ID]
 	)
 
 BeforeExecute

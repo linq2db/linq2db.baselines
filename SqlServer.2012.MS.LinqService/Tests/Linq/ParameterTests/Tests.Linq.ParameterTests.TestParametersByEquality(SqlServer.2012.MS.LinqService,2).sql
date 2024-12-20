@@ -23,9 +23,9 @@ WHERE
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @personId Int -- Int32
-SET     @personId = 1
+SET     @personId = 2
 DECLARE @personId_1 Int -- Int32
-SET     @personId_1 = 2
+SET     @personId_1 = 1
 
 SELECT
 	[p].[FirstName],
@@ -41,6 +41,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @personId AND [p].[PersonID] = @personId AND
+	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1 AND
 	[p].[PersonID] = @personId_1
 

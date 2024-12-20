@@ -67,26 +67,26 @@ FROM
 		LEFT JOIN [GrandChild] [g20] ON [p].[ParentID] = [g20].[ParentID]
 		LEFT JOIN [Child] [a_Child_19] ON [g20].[ParentID] = [a_Child_19].[ParentID] AND [g20].[ChildID] = [a_Child_19].[ChildID]
 WHERE
-	[a_Child].[ChildID] = 1 AND
-	[a_Child_1].[ChildID] = 2 AND
-	[a_Child_2].[ChildID] = 3 AND
-	[a_Child_3].[ChildID] = 4 AND
-	[a_Child_4].[ChildID] = 5 AND
-	[a_Child_5].[ChildID] = 6 AND
-	[a_Child_6].[ChildID] = 7 AND
-	[a_Child_7].[ChildID] = 8 AND
-	[a_Child_8].[ChildID] = 9 AND
-	[a_Child_9].[ChildID] = 10 AND
-	[a_Child_10].[ChildID] = 11 AND
-	[a_Child_11].[ChildID] = 12 AND
-	[a_Child_12].[ChildID] = 13 AND
-	[a_Child_13].[ChildID] = 14 AND
-	[a_Child_14].[ChildID] = 15 AND
-	[a_Child_15].[ChildID] = 16 AND
-	[a_Child_16].[ChildID] = 17 AND
-	[a_Child_17].[ChildID] = 18 AND
+	[a_Child_19].[ChildID] = 20 AND
 	[a_Child_18].[ChildID] = 19 AND
-	[a_Child_19].[ChildID] = 20
+	[a_Child_17].[ChildID] = 18 AND
+	[a_Child_16].[ChildID] = 17 AND
+	[a_Child_15].[ChildID] = 16 AND
+	[a_Child_14].[ChildID] = 15 AND
+	[a_Child_13].[ChildID] = 14 AND
+	[a_Child_12].[ChildID] = 13 AND
+	[a_Child_11].[ChildID] = 12 AND
+	[a_Child_10].[ChildID] = 11 AND
+	[a_Child_9].[ChildID] = 10 AND
+	[a_Child_8].[ChildID] = 9 AND
+	[a_Child_7].[ChildID] = 8 AND
+	[a_Child_6].[ChildID] = 7 AND
+	[a_Child_5].[ChildID] = 6 AND
+	[a_Child_4].[ChildID] = 5 AND
+	[a_Child_3].[ChildID] = 4 AND
+	[a_Child_2].[ChildID] = 3 AND
+	[a_Child_1].[ChildID] = 2 AND
+	[a_Child].[ChildID] = 1
 ORDER BY
 	[a_Child].[ChildID],
 	[a_Child_1].[ChildID],

@@ -13,10 +13,10 @@ FROM
 		CROSS JOIN [Parent] [p1] WITH (HoldLock)
 		CROSS JOIN [Child] [c_3]
 WHERE
-	[c_1].[ParentID] = [p].[ParentID] AND
-	[c1].[ParentID] = [p].[ParentID] AND
+	[c_3].[ParentID] = [p].[ParentID] AND
 	[c_2].[ParentID] = [p].[ParentID] AND
 	[a_Parent].[ParentID] > 0 AND
 	[p1].[ParentID] = [p].[ParentID] AND
-	[c_3].[ParentID] = [p].[ParentID]
+	[c_1].[ParentID] = [p].[ParentID] AND
+	[c1].[ParentID] = [p].[ParentID]
 

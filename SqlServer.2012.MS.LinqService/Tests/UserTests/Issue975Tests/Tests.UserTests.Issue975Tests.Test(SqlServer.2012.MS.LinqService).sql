@@ -152,15 +152,16 @@ FROM
 	[Tasks] [it]
 		INNER JOIN [Assignments] [a] ON [it].[DirectionId] = [a].[DirectionId] AND [it].[TargetId] = [a].[TargetId] AND [it].[TargetName] = [a].[TargetName]
 WHERE
-	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate()) AND
 	EXISTS(
 		SELECT
 			*
 		FROM
 			[TaskStages] [d]
 		WHERE
-			[it].[Id] = [d].[TaskId] AND [d].[Actual] = 1 AND [d].[StageId] < 9000
-	)
+			[d].[StageId] < 9000 AND [it].[Id] = [d].[TaskId] AND
+			[d].[Actual] = 1
+	) AND
+	[a].[EmployeeId] = @employeeId AND ([a].[DateRevoke] IS NULL OR [a].[DateRevoke] > GetDate())
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

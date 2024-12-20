@@ -64,8 +64,8 @@ FROM
 				FROM
 					[Issue3757Level2] [c_1]
 				WHERE
-					[l1].[ID] = [c_1].[ParentId] AND [l1].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
-					[l1].[ValS] IS NOT NULL
+					[l1].[ValS] LIKE @TypedProperty ESCAPE N'~' AND [l1].[ValS] IS NOT NULL AND
+					[l1].[ID] = [c_1].[ParentId]
 			)
 	) [m_1]
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
@@ -89,8 +89,8 @@ WHERE
 		FROM
 			[Issue3757Level2] [c_1]
 		WHERE
-			[it].[ID] = [c_1].[ParentId] AND [it].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
-			[it].[ValS] IS NOT NULL
+			[it].[ValS] LIKE @TypedProperty ESCAPE N'~' AND [it].[ValS] IS NOT NULL AND
+			[it].[ID] = [c_1].[ParentId]
 	)
 
 BeforeExecute

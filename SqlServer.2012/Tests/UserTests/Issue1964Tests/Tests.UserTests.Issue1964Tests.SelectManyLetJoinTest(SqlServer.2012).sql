@@ -88,7 +88,7 @@ FROM
 				) [temp_2]
 		) [att] ON [att].[ItemId] = [m_1].[BranchId] AND [att].[Index_1] = 1
 WHERE
-	[m_1].[Status] = 0 AND [m_1].[BranchIsShow] = 0
+	[m_1].[BranchIsShow] = 0 AND [m_1].[Status] = 0
 
 BeforeExecute
 -- SqlServer.2012

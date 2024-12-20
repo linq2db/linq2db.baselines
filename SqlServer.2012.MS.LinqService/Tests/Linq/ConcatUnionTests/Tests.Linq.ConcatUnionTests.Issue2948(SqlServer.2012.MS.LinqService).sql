@@ -18,7 +18,7 @@ FROM
 			[Person] [p]
 	) [t1]
 WHERE
-	[t1].[Rank] = 1 AND [t1].[Id] <> 2
+	[t1].[Id] <> 2 AND [t1].[Rank] = 1
 UNION ALL
 SELECT
 	[t2].[ID],
@@ -38,7 +38,7 @@ FROM
 					[Person] [p_1]
 			) [x]
 		WHERE
-			[x].[Rank] = 1 AND [x].[ID] = 2
+			[x].[ID] = 2 AND [x].[Rank] = 1
 		ORDER BY
 			[x].[FirstName] DESC
 	) [t2]
@@ -61,7 +61,7 @@ FROM
 					[Person] [p_2]
 			) [x_1]
 		WHERE
-			[x_1].[Rank] = 1 AND [x_1].[ID] <> 3
+			[x_1].[ID] <> 3 AND [x_1].[Rank] = 1
 		ORDER BY
 			[x_1].[FirstName]
 	) [t3]

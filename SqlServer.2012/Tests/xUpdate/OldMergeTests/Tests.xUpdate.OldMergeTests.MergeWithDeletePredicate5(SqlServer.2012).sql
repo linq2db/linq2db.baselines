@@ -17,8 +17,8 @@ USING (
 				[GrandChild] [g_1]
 					LEFT JOIN [Child] [a_Child] ON [g_1].[ParentID] = [a_Child].[ParentID] AND [g_1].[ChildID] = [a_Child].[ChildID]
 			WHERE
-				[t].[ParentID] = [g_1].[ParentID] AND [t].[ChildID] = [g_1].[ChildID] AND
-				[a_Child].[ChildID] = 22
+				[a_Child].[ChildID] = 22 AND [t].[ParentID] = [g_1].[ParentID] AND
+				[t].[ChildID] = [g_1].[ChildID]
 		)
 ) [Source]
 (
@@ -54,8 +54,8 @@ EXISTS(
 		[GrandChild] [g_2]
 			LEFT JOIN [Child] [a_Child_1] ON [g_2].[ParentID] = [a_Child_1].[ParentID] AND [g_2].[ChildID] = [a_Child_1].[ChildID]
 	WHERE
-		[Target].[ParentID] = [g_2].[ParentID] AND [Target].[ChildID] = [g_2].[ChildID] AND
-		[a_Child_1].[ChildID] = 22
+		[a_Child_1].[ChildID] = 22 AND [Target].[ParentID] = [g_2].[ParentID] AND
+		[Target].[ChildID] = [g_2].[ChildID]
 ) THEN DELETE
 ;
 
