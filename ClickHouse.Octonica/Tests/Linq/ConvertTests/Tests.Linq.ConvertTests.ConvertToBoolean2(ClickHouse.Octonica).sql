@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t.MoneyValue <> toDecimal64('4.5', 10) THEN true
+				WHEN t.MoneyValue <> toDecimal128('4.5', 10) THEN true
 				ELSE false
 			END as c1
 		FROM
