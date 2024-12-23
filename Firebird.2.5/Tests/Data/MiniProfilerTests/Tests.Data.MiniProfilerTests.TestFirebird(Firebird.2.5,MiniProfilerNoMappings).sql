@@ -95,8 +95,8 @@ SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 BeforeExecute
 --  Firebird.2.5 Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
+DECLARE @PersonID Integer(4) -- Int32
+SET     @PersonID = 0
 
 "Person_Delete"
 
