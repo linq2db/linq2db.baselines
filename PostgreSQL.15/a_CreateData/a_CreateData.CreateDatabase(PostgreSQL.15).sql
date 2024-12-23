@@ -16,9 +16,7 @@ DROP FUNCTION IF EXISTS "TestTableFunctionSchema"()
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
--- SKIP PostgreSQL.9.2 BEGIN
 DROP MATERIALIZED VIEW IF EXISTS "Issue2023"
--- SKIP PostgreSQL.9.2 END
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -396,20 +394,20 @@ CREATE TABLE "AllTypes"
 	"inetDataType"        inet                     NULL,
 	"cidrDataType"        cidr                     NULL,
 	"macaddrDataType"     macaddr                  NULL,
--- SKIP PostgreSQL.9.2 BEGIN
--- SKIP PostgreSQL.9.3 BEGIN
--- SKIP PostgreSQL.9.5 BEGIN
+
+
+
 	"macaddr8DataType"  macaddr8                   NULL,
--- SKIP PostgreSQL.9.2 END
--- SKIP PostgreSQL.9.3 END
--- SKIP PostgreSQL.9.5 END
+
+
+
 
 	"jsonDataType"        json                     NULL,
--- SKIP PostgreSQL.9.2 BEGIN
--- SKIP PostgreSQL.9.3 BEGIN
+
+
 	"jsonbDataType"       jsonb                    NULL,
--- SKIP PostgreSQL.9.2 END
--- SKIP PostgreSQL.9.3 END
+
+
 
 	"xmlDataType"         xml                      NULL,
 	"varBitDataType"      varbit                   NULL,
@@ -801,17 +799,13 @@ LANGUAGE plpgsql;
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
--- SKIP PostgreSQL.9.2 BEGIN
 CREATE MATERIALIZED VIEW "Issue2023" AS select * from "Person"
--- SKIP PostgreSQL.9.2 END
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
--- SKIP PostgreSQL.9.2 BEGIN
 COMMENT ON MATERIALIZED VIEW  "Issue2023" IS 'This is the Issue2023 matview';
 COMMENT ON COLUMN             "Issue2023"."PersonID" IS 'This is the Issue2023.PersonID column';
--- SKIP PostgreSQL.9.2 END
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -936,9 +930,9 @@ AS $function$
 $function$
 ;
 
--- SKIP PostgreSQL.9.2 BEGIN
--- SKIP PostgreSQL.9.3 BEGIN
--- SKIP PostgreSQL.9.5 BEGIN
+
+
+
 
 DROP TABLE IF EXISTS multitenant_table;
 
@@ -970,10 +964,6 @@ INSERT INTO multitenant_table (TenantId, Id, Name, Description, CreatedAt) VALUE
 ('22222222-2222-2222-2222-222222222222', 'dddddddd-dddd-dddd-dddd-dddddddddddd', 'Tenant2 Record2', 'Description for Tenant2 Record2', NOW()),
 ('33333333-3333-3333-3333-333333333333', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'Tenant3 Record1', 'Description for Tenant3 Record1', NOW()),
 ('33333333-3333-3333-3333-333333333333', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 'Tenant3 Record2', 'Description for Tenant3 Record2', NOW());
-
--- SKIP PostgreSQL.9.2 END
--- SKIP PostgreSQL.9.3 END
--- SKIP PostgreSQL.9.5 END
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
