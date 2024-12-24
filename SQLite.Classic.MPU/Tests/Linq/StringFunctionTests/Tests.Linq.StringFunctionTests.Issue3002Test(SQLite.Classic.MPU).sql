@@ -53,18 +53,14 @@ DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[SampleClass] [sampleClass_1]
-			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -88,18 +84,14 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[SampleClass] [sampleClass_1]
-			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -123,18 +115,14 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[SampleClass] [sampleClass_1]
-			WHERE
-				[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
+	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

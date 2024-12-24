@@ -26,18 +26,14 @@ FROM
 			[p].[Value1],
 			[c1_1].[ParentID] as [ParentID_1],
 			[c1_1].[ChildID],
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						[Child] [c_1]
-					WHERE
-						[c_1].[ChildID] > 2
-				)
-					THEN 1
-				ELSE 0
-			END as [Any_1],
+			EXISTS(
+				SELECT
+					*
+				FROM
+					[Child] [c_1]
+				WHERE
+					[c_1].[ChildID] > 2
+			) as [Any_1],
 			(
 				SELECT
 					[c_2].[ChildID]

@@ -50,14 +50,10 @@ AS
 		[Child] [c_1]
 )
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[CTE1_] [t1]
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE1_] [t1]
+	)
 

@@ -55,18 +55,14 @@ SELECT
 	[n].[TYP_STATUS],
 	[n].[NR],
 	[n].[DATUM],
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[CASH] [u]
-			WHERE
-				[u].[ID_DETAIL] = [n].[ID]
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CASH] [u]
+		WHERE
+			[u].[ID_DETAIL] = [n].[ID]
+	),
 	[a_Status].[STATUS_TYPE_ID],
 	[a_Status].[NR]
 FROM
