@@ -12,10 +12,7 @@ BEGIN
 	RETURN CASE ISSUE3742(i) WHEN TRUE THEN 1 WHEN FALSE THEN 0 END;
 END convert_bool;
 SELECT
-	CASE
-		WHEN convert_bool('test') = 1 THEN 1
-		ELSE 0
-	END
+	convert_bool('test')
 FROM SYS.DUAL
 
 BeforeExecute
