@@ -100,18 +100,14 @@ SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 SELECT
 	x.id,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				issue_4254_media_item_user_share y
-			WHERE
-				x.id = y.media_item_id AND y.expires_at > :now
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			issue_4254_media_item_user_share y
+		WHERE
+			x.id = y.media_item_id AND y.expires_at > :now
+	)
 FROM
 	issue_4254_media_items x
 WHERE
@@ -185,18 +181,14 @@ SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 
 SELECT
 	x.id,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				issue_4254_media_item_user_share y
-			WHERE
-				x.id = y.media_item_id AND y.expires_at > :now
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			issue_4254_media_item_user_share y
+		WHERE
+			x.id = y.media_item_id AND y.expires_at > :now
+	)
 FROM
 	issue_4254_media_items x
 WHERE
