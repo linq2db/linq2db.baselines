@@ -168,19 +168,58 @@ SET     @arr = {1,2,3}
 SELECT
 	t1."StrArray" || t2."StrArray",
 	t1."StrArray" || t2."StrArray" || t1."StrArray",
-	t1."StrArray" < t2."StrArray",
-	t1."StrArray" <= t2."StrArray",
-	t1."StrArray" > t2."StrArray",
-	t1."StrArray" > t2."StrArray",
-	t1."StrArray" @> t2."StrArray",
-	t1."StrArray" <@ t2."StrArray",
-	t1."StrArray" && t2."StrArray",
-	t1."IntValue" = ANY(t2."IntArray"),
-	t1."IntValue" < ANY(t2."IntArray"),
-	t1."IntValue" <= ANY(t2."IntArray"),
-	t1."IntValue" > ANY(t2."IntArray"),
-	t1."IntValue" >= ANY(t2."IntArray"),
-	t1."IntValue" <> ANY(t2."IntArray"),
+	CASE
+		WHEN t1."StrArray" < t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" <= t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" > t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" > t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" @> t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" <@ t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" && t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" = ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" < ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" <= ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" > ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" >= ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."IntValue" <> ANY(t2."IntArray") THEN True
+		ELSE False
+	END,
 	ARRAY_APPEND(t1."StrArray", t2."StrValue"),
 	ARRAY_APPEND(t1."IntArray", t2."Id"),
 	ARRAY_APPEND(t1."LongArray", t2."LongValue"),
