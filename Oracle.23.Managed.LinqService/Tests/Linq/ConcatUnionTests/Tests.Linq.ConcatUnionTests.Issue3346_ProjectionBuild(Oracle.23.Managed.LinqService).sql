@@ -34,6 +34,39 @@ END;
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "ComplexPerson"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "ComplexPerson"
+		(
+			"Id"        Int          NOT NULL,
+			"FirstName" VarChar(255)     NULL,
+			"LastName"  VarChar(255)     NULL,
+
+			CONSTRAINT "PK_ComplexPerson" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
 SELECT
 	x."Id",
 	x."FirstName",
