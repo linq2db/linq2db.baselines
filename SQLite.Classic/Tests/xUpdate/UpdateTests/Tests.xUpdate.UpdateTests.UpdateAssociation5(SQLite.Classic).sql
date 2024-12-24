@@ -4,18 +4,14 @@
 UPDATE
 	[LinqDataTypes]
 SET
-	[BoolValue] = CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				[Parent] [x_1]
-			WHERE
-				[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
-		)
-			THEN 1
-		ELSE 0
-	END
+	[BoolValue] = NOT EXISTS(
+		SELECT
+			*
+		FROM
+			[Parent] [x_1]
+		WHERE
+			[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+	)
 FROM
 	(
 		SELECT DISTINCT

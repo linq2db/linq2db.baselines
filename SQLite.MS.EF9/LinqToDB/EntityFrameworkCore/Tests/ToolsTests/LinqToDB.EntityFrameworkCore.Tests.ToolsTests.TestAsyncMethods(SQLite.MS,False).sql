@@ -89,18 +89,14 @@ WHERE
 --  SQLite.MS SQLite (asynchronously)
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Products] [e]
-			WHERE
-				[e].[ProductName] LIKE '%a%' ESCAPE '~'
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Products] [e]
+		WHERE
+			[e].[ProductName] LIKE '%a%' ESCAPE '~'
+	)
 
 
 

@@ -15,16 +15,12 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Issue2494Table] [t1]
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Issue2494Table] [t1]
+	)
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -44,16 +40,12 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Issue2494Table] [t1]
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Issue2494Table] [t1]
+	)
 
 BeforeExecute
 -- SQLite.Classic SQLite
