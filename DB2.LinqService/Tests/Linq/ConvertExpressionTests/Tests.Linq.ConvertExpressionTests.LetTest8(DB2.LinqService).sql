@@ -6,18 +6,14 @@ SELECT
 		WHEN "t1"."ParentID" IS NULL THEN 0
 		ELSE "t2"."ParentID"
 	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "c_4"
-			WHERE
-				"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
-		)
-			THEN 1
-		ELSE 0
-	END,
+	CAST(EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "c_4"
+		WHERE
+			"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
+	) AS smallint),
 	(
 		SELECT
 			COUNT(*)

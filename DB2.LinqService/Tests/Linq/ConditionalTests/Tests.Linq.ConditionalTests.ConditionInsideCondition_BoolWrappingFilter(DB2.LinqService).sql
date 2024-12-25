@@ -6,20 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN Mod("p"."ParentID", 2) = 0 THEN CASE
-					WHEN Mod("p"."ParentID", 3) = 0 THEN 1
-					ELSE 0
-				END
-				WHEN Mod("p"."ParentID", 4) = 0 THEN CASE
-					WHEN "p"."ParentID" > 0 THEN 1
-					ELSE 0
-				END
-				ELSE CASE
-					WHEN "p"."ParentID" < 5 THEN 1
-					ELSE 0
-				END
-			END as "Value_1"
+			CAST(CASE
+				WHEN Mod("p"."ParentID", 2) = 0 THEN Mod("p"."ParentID", 3) = 0
+				WHEN Mod("p"."ParentID", 4) = 0 THEN "p"."ParentID" > 0
+				ELSE "p"."ParentID" < 5
+			END AS smallint) as "Value_1"
 		FROM
 			"Parent" "p"
 	) "s"

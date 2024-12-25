@@ -90,8 +90,7 @@ WHERE
 	CASE
 		WHEN "e"."Code" = 'Child2' OR "e"."Code" = 'Child' OR "e"."Code" = 'BaseChild'
 			THEN 1
-		WHEN "e"."Id" <> 0 THEN 1
-		ELSE 0
+		ELSE "e"."Id" = 0
 	END
 ORDER BY
 	"e"."Id"

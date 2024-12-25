@@ -57,10 +57,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"a_Metrics"."Value" as "cond",
-				CASE
-					WHEN "a_Metrics"."Value" IS NOT NULL THEN 1
-					ELSE 0
-				END as "cond_1",
+				CAST("a_Metrics"."Value" IS NOT NULL AS smallint) as "cond_1",
 				ROW_NUMBER() OVER (PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
 				"a_Metrics"."RequestId"
 			FROM

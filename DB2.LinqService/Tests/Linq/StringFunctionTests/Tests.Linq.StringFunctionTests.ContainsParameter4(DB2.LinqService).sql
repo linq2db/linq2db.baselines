@@ -10,10 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "p"."FirstName" LIKE '%Jo%' ESCAPE '~' THEN 1
-				ELSE 0
-			END as "Field1",
+			CAST("p"."FirstName" LIKE '%Jo%' ESCAPE '~' AS smallint) as "Field1",
 			"p"."FirstName",
 			"p"."PersonID" as ID,
 			"p"."LastName",

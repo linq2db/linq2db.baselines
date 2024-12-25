@@ -4,17 +4,13 @@ DECLARE @n Integer(4) -- Int32
 SET     @n = 3
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "c_1"
-			WHERE
-				"c_1"."ParentID" <= @n
-		)
-			THEN 1
-		ELSE 0
-	END
+	CAST(NOT EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "c_1"
+		WHERE
+			"c_1"."ParentID" <= @n
+	) AS smallint)
 FROM SYSIBM.SYSDUMMY1
 

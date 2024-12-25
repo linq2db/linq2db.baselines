@@ -2,34 +2,23 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "t1"
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN "x"."ParentID" <> 0 THEN 1
-		ELSE 0
-	END
+	CAST(EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "t1"
+	) AS smallint),
+	CAST("x"."ParentID" <> 0 AS smallint)
 FROM
 	"Parent" "x"
 UNION ALL
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "t2"
-		)
-			THEN 1
-		ELSE 0
-	END,
+	CAST(EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "t2"
+	) AS smallint),
 	CAST(NULL AS smallint)
 FROM
 	"Parent" "x_1"

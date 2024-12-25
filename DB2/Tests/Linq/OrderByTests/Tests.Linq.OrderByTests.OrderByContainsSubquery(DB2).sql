@@ -8,10 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "t1"."PersonID" IN (1, 3) THEN 1
-				ELSE 0
-			END as "flag",
+			CAST("t1"."PersonID" IN (1, 3) AS smallint) as "flag",
 			"t1"."PersonID" as ID,
 			"t1"."LastName"
 		FROM

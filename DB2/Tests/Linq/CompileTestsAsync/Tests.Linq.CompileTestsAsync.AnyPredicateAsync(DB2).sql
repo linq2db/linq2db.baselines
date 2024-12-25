@@ -46,18 +46,14 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = 2
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"AsyncDataTable" "c_1"
-			WHERE
-				"c_1"."Id" = @p
-		)
-			THEN 1
-		ELSE 0
-	END
+	CAST(EXISTS(
+		SELECT
+			*
+		FROM
+			"AsyncDataTable" "c_1"
+		WHERE
+			"c_1"."Id" = @p
+	) AS smallint)
 FROM SYSIBM.SYSDUMMY1
 
 BeforeExecute
