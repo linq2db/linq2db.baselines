@@ -101,7 +101,7 @@ WHERE
 			WHEN e."Id" <> 0 THEN 1
 			ELSE 0
 		END
-		WHEN e."Id" <> 0 THEN 1
+		WHEN e."Id" = 0 THEN 1
 		ELSE 0
 	END = 1
 ORDER BY

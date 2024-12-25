@@ -98,7 +98,7 @@ WHERE
 	e."Code" = 'Child2' OR
 	e."Code" = 'Child' OR
 	e."Code" = 'BaseChild' OR
-	e."Id" <> 0
+	e."Id" = 0
 ORDER BY
 	e."Id"
 
