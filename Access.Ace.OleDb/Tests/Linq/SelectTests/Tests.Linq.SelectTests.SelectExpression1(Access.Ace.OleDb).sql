@@ -31,7 +31,7 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
-	1 = 1
+	True
 FROM
 	[SelectExpressionTable] [t1]
 
