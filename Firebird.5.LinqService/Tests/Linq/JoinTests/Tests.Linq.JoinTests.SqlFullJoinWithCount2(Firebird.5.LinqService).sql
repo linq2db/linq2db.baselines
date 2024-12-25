@@ -4,11 +4,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
-	CASE
-		WHEN COUNT("t1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("t1"."ParentID") = COUNT(*)
-			THEN TRUE
-		ELSE FALSE
-	END
+	COUNT("t1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("t1"."ParentID") = COUNT(*)
 FROM
 	(
 		SELECT

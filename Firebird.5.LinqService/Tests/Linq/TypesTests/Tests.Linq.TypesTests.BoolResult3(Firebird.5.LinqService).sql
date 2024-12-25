@@ -2,10 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	CASE
-		WHEN "p"."PersonID" = 1 THEN TRUE
-		ELSE FALSE
-	END
+	"p"."PersonID" = 1
 FROM
 	"Person" "p"
 
