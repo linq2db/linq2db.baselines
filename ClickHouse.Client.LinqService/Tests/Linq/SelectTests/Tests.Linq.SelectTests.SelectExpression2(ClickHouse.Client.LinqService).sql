@@ -31,7 +31,7 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	1 = 1
+	true
 FROM
 	SelectExpressionTable t1
 LIMIT 1
