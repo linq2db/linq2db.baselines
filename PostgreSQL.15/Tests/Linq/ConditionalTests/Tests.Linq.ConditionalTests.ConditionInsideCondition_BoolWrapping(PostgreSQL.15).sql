@@ -3,18 +3,9 @@
 
 SELECT
 	CASE
-		WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN CASE
-			WHEN (p."ParentID"::decimal % 3)::decimal = 0 THEN True
-			ELSE False
-		END
-		WHEN (p."ParentID"::decimal % 4)::decimal = 0 THEN CASE
-			WHEN p."ParentID" > 0 THEN True
-			ELSE False
-		END
-		ELSE CASE
-			WHEN p."ParentID" < 5 THEN True
-			ELSE False
-		END
+		WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN (p."ParentID"::decimal % 3)::decimal = 0
+		WHEN (p."ParentID"::decimal % 4)::decimal = 0 THEN p."ParentID" > 0
+		ELSE p."ParentID" < 5
 	END
 FROM
 	"Parent" p
