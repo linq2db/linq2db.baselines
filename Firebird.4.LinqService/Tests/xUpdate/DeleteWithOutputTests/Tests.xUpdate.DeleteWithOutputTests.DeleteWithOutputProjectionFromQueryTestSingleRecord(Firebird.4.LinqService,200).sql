@@ -263,10 +263,7 @@ WHERE
 RETURNING
 	"s"."Id" + 1,
 	"s"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS),
-	CASE
-		WHEN "s"."ValueStr" IS NOT NULL THEN TRUE
-		ELSE FALSE
-	END
+	"s"."ValueStr" IS NOT NULL
 
 BeforeExecute
 -- Firebird.4 Firebird4

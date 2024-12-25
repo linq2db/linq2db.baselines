@@ -65,14 +65,8 @@ FROM
 	(
 		SELECT
 			"t1"."Id",
-			CASE
-				WHEN "t1".C1 = 'T' THEN TRUE
-				ELSE FALSE
-			END as "cond",
-			CASE
-				WHEN "t1".C1 <> 'T' THEN TRUE
-				ELSE FALSE
-			END as "cond_1"
+			"t1".C1 = 'T' as "cond",
+			"t1".C1 <> 'T' as "cond_1"
 		FROM
 			"Issue4596Form" "t1"
 		FETCH NEXT 1 ROWS ONLY
@@ -104,14 +98,8 @@ BeforeExecute
 SELECT
 	"t1"."Id",
 	"t1".C1,
-	CASE
-		WHEN "t1".C1 = 'T' THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN "t1".C1 <> 'T' THEN TRUE
-		ELSE FALSE
-	END
+	"t1".C1 = 'T',
+	"t1".C1 <> 'T'
 FROM
 	"Issue4596Form" "t1"
 FETCH NEXT 1 ROWS ONLY

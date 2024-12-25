@@ -45,18 +45,14 @@ DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"AsyncDataTable" "c_1"
-			WHERE
-				"c_1"."Id" = @p
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"AsyncDataTable" "c_1"
+		WHERE
+			"c_1"."Id" = @p
+	)
 FROM rdb$database
 
 BeforeExecute
