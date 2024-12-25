@@ -2,34 +2,23 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`Child` `t1`
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN `x`.`ParentID` <> 0 THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Child` `t1`
+	),
+	`x`.`ParentID` <> 0
 FROM
 	`Parent` `x`
 UNION ALL
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`Child` `t2`
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Child` `t2`
+	),
 	NULL
 FROM
 	`Parent` `x_1`
