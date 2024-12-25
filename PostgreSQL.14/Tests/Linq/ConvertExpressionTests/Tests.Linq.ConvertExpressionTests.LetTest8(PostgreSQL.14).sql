@@ -17,18 +17,14 @@ SELECT
 			LIMIT 1
 		)
 	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_4
-			WHERE
-				c_4."ParentID" = p."ParentID" AND c_4."ChildID" > -100
-		)
-			THEN True
-		ELSE False
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_4
+		WHERE
+			c_4."ParentID" = p."ParentID" AND c_4."ChildID" > -100
+	),
 	(
 		SELECT
 			COUNT(*)

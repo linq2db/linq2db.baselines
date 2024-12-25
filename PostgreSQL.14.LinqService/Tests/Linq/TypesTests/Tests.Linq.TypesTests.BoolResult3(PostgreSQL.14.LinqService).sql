@@ -2,10 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN p."PersonID" = 1 THEN True
-		ELSE False
-	END
+	p."PersonID" = 1
 FROM
 	"Person" p
 
