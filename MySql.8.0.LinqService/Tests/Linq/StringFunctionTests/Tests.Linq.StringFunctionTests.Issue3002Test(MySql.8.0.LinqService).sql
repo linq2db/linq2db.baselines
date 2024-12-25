@@ -53,18 +53,14 @@ DECLARE @test_1 VarChar(4) -- String
 SET     @test_1 = 'Test'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`SampleClass` `sampleClass_1`
-			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
-		)
-			THEN 1
-		ELSE 0
-	END as `c1`
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`SampleClass` `sampleClass_1`
+		WHERE
+			`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	) as `c1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -88,18 +84,14 @@ DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Value'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`SampleClass` `sampleClass_1`
-			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
-		)
-			THEN 1
-		ELSE 0
-	END as `c1`
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`SampleClass` `sampleClass_1`
+		WHERE
+			`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	) as `c1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -123,18 +115,14 @@ DECLARE @test_1 VarChar(5) -- String
 SET     @test_1 = 'Class'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`SampleClass` `sampleClass_1`
-			WHERE
-				`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
-		)
-			THEN 1
-		ELSE 0
-	END as `c1`
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`SampleClass` `sampleClass_1`
+		WHERE
+			`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
+	) as `c1`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

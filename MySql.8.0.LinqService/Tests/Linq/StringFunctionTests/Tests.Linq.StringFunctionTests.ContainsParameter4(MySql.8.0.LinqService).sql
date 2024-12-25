@@ -10,10 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN LOCATE('Jo', `p`.`FirstName`) > 0 THEN 1
-				ELSE 0
-			END as `Field1`,
+			LOCATE('Jo', `p`.`FirstName`) > 0 as `Field1`,
 			`p`.`FirstName`,
 			`p`.`PersonID` as `ID`,
 			`p`.`LastName`,

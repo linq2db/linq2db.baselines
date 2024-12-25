@@ -56,18 +56,14 @@ FROM
 			`e_1`.`LastName` as `LastName_4`,
 			`e_1`.`MiddleName` as `MiddleName_4`,
 			`e_1`.`Gender` as `Gender_4`,
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						`Person` `tg`
-					WHERE
-						`t`.`PersonID` = `tg`.`PersonID` AND `tg`.`FirstName` = 'John'
-				)
-					THEN 1
-				ELSE 0
-			END as `IsHoliday`
+			EXISTS(
+				SELECT
+					*
+				FROM
+					`Person` `tg`
+				WHERE
+					`t`.`PersonID` = `tg`.`PersonID` AND `tg`.`FirstName` = 'John'
+			) as `IsHoliday`
 		FROM
 			`Person` `i`
 				LEFT JOIN `Patient` `a_Patient` ON `i`.`PersonID` = `a_Patient`.`PersonID`
