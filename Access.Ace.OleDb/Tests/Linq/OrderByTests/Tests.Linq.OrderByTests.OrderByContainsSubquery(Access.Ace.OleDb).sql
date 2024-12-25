@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t1].[PersonID] IN (1, 3), True, False) as [flag],
+			[t1].[PersonID] IN (1, 3) as [flag],
 			[t1].[PersonID] as [ID],
 			[t1].[LastName]
 		FROM

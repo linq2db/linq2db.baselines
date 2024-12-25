@@ -36,7 +36,7 @@ BeforeExecute
 SELECT
 	(
 		SELECT TOP 1
-			IIF([a_Metrics].[Value] IS NOT NULL, True, False)
+			[a_Metrics].[Value] IS NOT NULL
 		FROM
 			[Metric] [a_Metrics]
 		WHERE

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[ParentID] MOD 2 = 0, IIF([p].[ParentID] MOD 3 = 0, True, False), IIF([p].[ParentID] MOD 4 = 0, IIF([p].[ParentID] > 0, True, False), IIF([p].[ParentID] < 5, True, False))) as [Value_1]
+			IIF([p].[ParentID] MOD 2 = 0, [p].[ParentID] MOD 3 = 0, IIF([p].[ParentID] MOD 4 = 0, [p].[ParentID] > 0, [p].[ParentID] < 5)) as [Value_1]
 		FROM
 			[Parent] [p]
 	) [s]

@@ -12,7 +12,7 @@ SELECT
 		WHERE
 			[a_Parent].[ParentID] = [f].[ParentID] AND ([a_Parent].[Value1] = [f].[Value1] OR [a_Parent].[Value1] IS NULL AND [f].[Value1] IS NULL)
 	),
-	IIF(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
@@ -20,7 +20,7 @@ SELECT
 				LEFT JOIN [Parent] [a_Parent_1] ON ([c_2].[ParentID] = [a_Parent_1].[ParentID])
 		WHERE
 			[a_Parent_1].[ParentID] = [f].[ParentID] AND ([a_Parent_1].[Value1] = [f].[Value1] OR [a_Parent_1].[Value1] IS NULL AND [f].[Value1] IS NULL)
-	), True, False),
+	),
 	(
 		SELECT
 			COUNT(*)

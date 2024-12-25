@@ -291,13 +291,13 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False),
+	[t].[Kind] = 1 OR [t].[Kind] = 2,
 	[t].[Kind],
 	Mid([t].[ItemCode], 1, 2),
 	[t].[Color],
 	Mid([t].[ItemCode], 3, 2),
 	[t].[Style],
-	IIF([t].[Kind] = 1 OR [t].[Kind] = 3, True, False),
+	[t].[Kind] = 1 OR [t].[Kind] = 3,
 	Mid([t].[ItemCode], 5, 2),
 	Mid([t].[ItemCode], 7, 2)
 FROM
@@ -331,12 +331,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond_1],
-			IIF([x].[Kind] = 1, True, False) as [cond_2],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond_1],
+			[x].[Kind] = 1 as [cond_2],
 			Mid([x].[ItemCode], 1, 2) as [ItemCode],
 			[x].[Color],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, True, False) as [cond_3],
+			[x].[Kind] = 1 OR [x].[Kind] = 3 as [cond_3],
 			Mid([x].[ItemCode], 5, 2) as [ItemCode_1],
 			[x].[Kind],
 			Mid([x].[ItemCode], 3, 2) as [ItemCode_2],
@@ -376,12 +376,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond_1],
-			IIF([x].[Kind] = 1, True, False) as [cond_2],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond_1],
+			[x].[Kind] = 1 as [cond_2],
 			Mid([x].[ItemCode], 1, 2) as [ItemCode],
 			[x].[Color],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, True, False) as [cond_3],
+			[x].[Kind] = 1 OR [x].[Kind] = 3 as [cond_3],
 			Mid([x].[ItemCode], 5, 2) as [ItemCode_1],
 			[x].[Kind],
 			Mid([x].[ItemCode], 3, 2) as [ItemCode_2],
@@ -422,12 +422,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond_1],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond_1],
 			Mid([x].[ItemCode], 3, 2) as [ItemCode],
 			[x].[Style] as [Style_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, True, False) as [cond_2],
-			IIF([x].[Kind] = 1, True, False) as [cond_3],
+			[x].[Kind] = 1 OR [x].[Kind] = 3 as [cond_2],
+			[x].[Kind] = 1 as [cond_3],
 			Mid([x].[ItemCode], 7, 2) as [ItemCode_1],
 			[x].[Kind],
 			Mid([x].[ItemCode], 1, 2) as [ItemCode_2],
@@ -467,12 +467,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, True, False) as [cond_1],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond],
+			[x].[Kind] = 1 OR [x].[Kind] = 2 as [cond_1],
 			Mid([x].[ItemCode], 3, 2) as [ItemCode],
 			[x].[Style] as [Style_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, True, False) as [cond_2],
-			IIF([x].[Kind] = 1, True, False) as [cond_3],
+			[x].[Kind] = 1 OR [x].[Kind] = 3 as [cond_2],
+			[x].[Kind] = 1 as [cond_3],
 			Mid([x].[ItemCode], 7, 2) as [ItemCode_1],
 			[x].[Kind],
 			Mid([x].[ItemCode], 1, 2) as [ItemCode_2],

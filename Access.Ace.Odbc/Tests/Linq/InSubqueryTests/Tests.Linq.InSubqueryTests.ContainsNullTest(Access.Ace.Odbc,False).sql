@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	IIF(COUNT(*) > 0, True, False)
+	COUNT(*) > 0
 FROM
 	[Parent] [c_1]
 WHERE
