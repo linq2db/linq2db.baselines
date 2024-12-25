@@ -2,11 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	CASE
-		WHEN COUNT(t1.ParentID) = COUNT(right_2.ParentID) AND COUNT(t1.ParentID) = COUNT(*)
-			THEN true
-		ELSE false
-	END
+	COUNT(t1.ParentID) = COUNT(right_2.ParentID) AND COUNT(t1.ParentID) = COUNT(*)
 FROM
 	(
 		SELECT

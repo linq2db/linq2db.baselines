@@ -10,10 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN position(p.FirstName, 'Jo') > 0 THEN true
-				ELSE false
-			END as Field1,
+			position(p.FirstName, 'Jo') > 0 as Field1,
 			p.FirstName as FirstName,
 			p.PersonID as ID,
 			p.LastName as LastName,

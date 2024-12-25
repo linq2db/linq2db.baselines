@@ -2,5 +2,5 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	false
+	1 = 0
 

@@ -3,18 +3,9 @@
 
 SELECT
 	CASE
-		WHEN p.ParentID % 2 = 0 THEN CASE
-			WHEN p.ParentID % 3 = 0 THEN true
-			ELSE false
-		END
-		WHEN p.ParentID % 4 = 0 THEN CASE
-			WHEN p.ParentID > 0 THEN true
-			ELSE false
-		END
-		ELSE CASE
-			WHEN p.ParentID < 5 THEN true
-			ELSE false
-		END
+		WHEN p.ParentID % 2 = 0 THEN p.ParentID % 3 = 0
+		WHEN p.ParentID % 4 = 0 THEN p.ParentID > 0
+		ELSE p.ParentID < 5
 	END
 FROM
 	Parent p
