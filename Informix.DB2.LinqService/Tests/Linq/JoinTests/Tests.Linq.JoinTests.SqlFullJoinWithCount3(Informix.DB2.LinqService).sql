@@ -4,11 +4,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
 SELECT FIRST 2
-	CASE
-		WHEN COUNT(t1.ParentID) = COUNT(right_2.ParentID) AND COUNT(t1.ParentID) = COUNT(*)
-			THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	COUNT(t1.ParentID) = COUNT(right_2.ParentID) AND COUNT(t1.ParentID) = COUNT(*)
 FROM
 	Parent t1
 		FULL JOIN (

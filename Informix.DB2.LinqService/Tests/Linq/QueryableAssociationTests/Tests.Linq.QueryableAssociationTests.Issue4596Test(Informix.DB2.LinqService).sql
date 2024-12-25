@@ -47,14 +47,8 @@ FROM
 	(
 		SELECT FIRST 1
 			t1.Id,
-			CASE
-				WHEN t1.C1 = 'T' THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond,
-			CASE
-				WHEN t1.C1 <> 'T' THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond_1
+			t1.C1 = 'T' as cond,
+			t1.C1 <> 'T' as cond_1
 		FROM
 			Issue4596Form t1
 	) m_1,
@@ -85,14 +79,8 @@ BeforeExecute
 SELECT FIRST 1
 	t1.Id,
 	t1.C1,
-	CASE
-		WHEN t1.C1 = 'T' THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN,
-	CASE
-		WHEN t1.C1 <> 'T' THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	t1.C1 = 'T',
+	t1.C1 <> 'T'
 FROM
 	Issue4596Form t1
 

@@ -300,14 +300,8 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN i.Kind = 1 OR i.Kind = 2 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond,
-			CASE
-				WHEN i.Kind = 1 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond_1,
+			i.Kind = 1 OR i.Kind = 2 as cond,
+			i.Kind = 1 as cond_1,
 			Substr(i.ItemCode, 1, 2) as ItemCode,
 			i.Color,
 			i.Kind,
@@ -346,10 +340,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN i.Kind = 1 OR i.Kind = 3 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond,
+			i.Kind = 1 OR i.Kind = 3 as cond,
 			Substr(i.ItemCode, 5, 2) as ItemCode,
 			i.Color,
 			i.Kind,
@@ -387,24 +378,18 @@ SELECT
 	NULL::NVarChar(255),
 	t1.ItemCode_1,
 	t1.Name_1,
-	NULL::BOOLEAN,
+	NULL::BOOLEAN::BOOLEAN,
 	NULL::NVarChar(255),
 	NULL::NVarChar(255)
 FROM
 	(
 		SELECT
-			CASE
-				WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond,
+			t.Kind = 1 OR t.Kind = 2 as cond,
 			Substr(t.ItemCode, 1, 2) as ItemCode,
 			t.Color as Name,
 			Substr(t.ItemCode, 3, 2) as ItemCode_1,
 			t.Style as Name_1,
-			CASE
-				WHEN t.Kind = 1 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as Color
+			t.Kind = 1 as Color
 		FROM
 			"Item" t
 	) t1
@@ -413,7 +398,7 @@ WHERE
 UNION ALL
 SELECT
 	t2.cond,
-	NULL::BOOLEAN,
+	NULL::BOOLEAN::BOOLEAN,
 	NULL::NVarChar(255),
 	NULL::NVarChar(255),
 	t2.ItemCode,
@@ -426,18 +411,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond,
+			t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 			Substr(t_1.ItemCode, 5, 2) as ItemCode,
 			t_1.Color,
 			Substr(t_1.ItemCode, 7, 2) as ItemCode_1,
 			t_1.Style as Style_1,
-			CASE
-				WHEN t_1.Kind = 1 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as cond_1
+			t_1.Kind = 1 as cond_1
 		FROM
 			"Item" t_1
 	) t2
@@ -482,24 +461,18 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN as Size_1,
+			NULL::BOOLEAN::BOOLEAN as Size_1,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substr(t.ItemCode, 1, 2) as ItemCode,
 					t.Color,
 					Substr(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					"Item" t
 			) x
@@ -508,7 +481,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Color,
-			NULL::BOOLEAN as Color_1,
+			NULL::BOOLEAN::BOOLEAN as Color_1,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -521,18 +494,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substr(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color,
 					Substr(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					"Item" t_1
 			) t1
@@ -580,24 +547,18 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN as Size_1,
+			NULL::BOOLEAN::BOOLEAN as Size_1,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substr(t.ItemCode, 1, 2) as ItemCode,
 					t.Color,
 					Substr(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					"Item" t
 			) x
@@ -606,7 +567,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Color,
-			NULL::BOOLEAN as Color_1,
+			NULL::BOOLEAN::BOOLEAN as Color_1,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -619,18 +580,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substr(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color,
 					Substr(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					"Item" t_1
 			) t1
@@ -679,24 +634,18 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN as Size_2,
+			NULL::BOOLEAN::BOOLEAN as Size_2,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substr(t.ItemCode, 1, 2) as ItemCode,
 					t.Color,
 					Substr(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					"Item" t
 			) x
@@ -705,7 +654,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Size_1,
-			NULL::BOOLEAN as Color,
+			NULL::BOOLEAN::BOOLEAN as Color,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -718,18 +667,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substr(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color,
 					Substr(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					"Item" t_1
 			) t1
@@ -777,24 +720,18 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN as Size_2,
+			NULL::BOOLEAN::BOOLEAN as Size_2,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substr(t.ItemCode, 1, 2) as ItemCode,
 					t.Color,
 					Substr(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					"Item" t
 			) x
@@ -803,7 +740,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Size_1,
-			NULL::BOOLEAN as Color,
+			NULL::BOOLEAN::BOOLEAN as Color,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -816,18 +753,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substr(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color,
 					Substr(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN 't'::BOOLEAN
-						ELSE 'f'::BOOLEAN
-					END::BOOLEAN as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					"Item" t_1
 			) t1

@@ -2,10 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN CHAR_LENGTH(p.FirstName) = 0 THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	CHAR_LENGTH(p.FirstName) = 0
 FROM
 	Person p
 WHERE

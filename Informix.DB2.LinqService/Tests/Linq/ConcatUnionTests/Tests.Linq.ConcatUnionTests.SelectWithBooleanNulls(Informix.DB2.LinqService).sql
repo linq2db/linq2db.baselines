@@ -2,33 +2,24 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Child t1
-		) THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN,
-	CASE
-		WHEN x.ParentID <> 0 THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Child t1
+	),
+	x.ParentID <> 0
 FROM
 	Parent x
 UNION ALL
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Child t2
-		) THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN,
-	NULL::BOOLEAN
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Child t2
+	),
+	NULL::BOOLEAN::BOOLEAN
 FROM
 	Parent x_1
 

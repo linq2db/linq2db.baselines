@@ -10,8 +10,5 @@ SELECT
 FROM
 	Person t1
 ORDER BY
-	CASE
-		WHEN t1.PersonID IN (1, 3) THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	t1.PersonID IN (1, 3)
 

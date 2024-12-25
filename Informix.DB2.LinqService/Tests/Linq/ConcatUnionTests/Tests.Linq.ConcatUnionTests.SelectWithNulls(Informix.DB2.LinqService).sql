@@ -17,7 +17,7 @@ SELECT
 	NULL::Int,
 	NULL::Decimal,
 	NULL::datetime year to fraction,
-	NULL::BOOLEAN,
+	NULL::BOOLEAN::BOOLEAN,
 	NULL::Char(36),
 	NULL::BYTE,
 	NULL::SmallInt,

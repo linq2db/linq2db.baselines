@@ -33,7 +33,7 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 1
 
 SELECT FIRST @take
-	't'::BOOLEAN
+	't'::BOOLEAN::BOOLEAN
 FROM
 	SelectExpressionTable t1
 
