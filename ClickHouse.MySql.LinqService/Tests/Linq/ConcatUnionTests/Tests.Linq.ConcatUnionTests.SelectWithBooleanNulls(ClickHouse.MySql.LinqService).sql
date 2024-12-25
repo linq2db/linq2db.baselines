@@ -2,32 +2,23 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Child t1
-		) THEN true
-		ELSE false
-	END as a,
-	CASE
-		WHEN x.ParentID <> 0 THEN true
-		ELSE false
-	END as b
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Child t1
+	) as a,
+	x.ParentID <> 0 as b
 FROM
 	Parent x
 UNION ALL
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Child t2
-		) THEN true
-		ELSE false
-	END as a,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Child t2
+	) as a,
 	toBool(NULL) as b
 FROM
 	Parent x_1

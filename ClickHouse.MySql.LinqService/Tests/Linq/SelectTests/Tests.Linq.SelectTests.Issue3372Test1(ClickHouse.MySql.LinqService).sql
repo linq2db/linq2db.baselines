@@ -3,11 +3,7 @@
 
 SELECT
 	e.FirstName,
-	CASE
-		WHEN a_Patient.PersonID IS NOT NULL AND a_Person.PersonID IS NOT NULL AND a_Person.LastName IS NOT NULL
-			THEN true
-		ELSE false
-	END,
+	a_Patient.PersonID IS NOT NULL AND a_Person.PersonID IS NOT NULL AND a_Person.LastName IS NOT NULL,
 	a_Person.LastName
 FROM
 	Person e

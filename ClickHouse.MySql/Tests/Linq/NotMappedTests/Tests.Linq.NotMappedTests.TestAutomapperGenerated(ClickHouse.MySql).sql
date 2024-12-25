@@ -125,11 +125,7 @@ SELECT
 	a_Association1.Id,
 	a_Association1.Value,
 	a_Association1.ParentId,
-	CASE
-		WHEN a_Association1.Id IS NOT NULL AND a_Association2.Id IS NOT NULL
-			THEN true
-		ELSE false
-	END,
+	a_Association1.Id IS NOT NULL AND a_Association2.Id IS NOT NULL,
 	a_Association2.Id,
 	a_Association2.Value,
 	a_Association2.ParentId

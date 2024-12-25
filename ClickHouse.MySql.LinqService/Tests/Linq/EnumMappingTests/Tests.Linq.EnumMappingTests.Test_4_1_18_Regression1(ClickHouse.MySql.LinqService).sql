@@ -26,11 +26,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL
-			THEN true
-		ELSE false
-	END,
+	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL,
 	t1.BigIntValue,
 	t1.IntValue
 FROM
