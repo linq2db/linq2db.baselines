@@ -83,7 +83,7 @@ WHERE
 	CASE
 		WHEN [e].[Code] = N'Child2' OR [e].[Code] = N'Child' OR [e].[Code] = N'BaseChild'
 			THEN IIF([e].[Id] <> 0, 1, 0)
-		WHEN [e].[Id] <> 0 THEN 1
+		WHEN [e].[Id] = 0 THEN 1
 		ELSE 0
 	END = 1
 ORDER BY
