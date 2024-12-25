@@ -6,11 +6,7 @@ DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 
 SELECT
-	CASE
-		WHEN COUNT(t1."ParentID") = COUNT(right_2."ParentID") AND COUNT(t1."ParentID") = COUNT(*)
-			THEN True
-		ELSE False
-	END
+	COUNT(t1."ParentID") = COUNT(right_2."ParentID") AND COUNT(t1."ParentID") = COUNT(*)
 FROM
 	(
 		SELECT
