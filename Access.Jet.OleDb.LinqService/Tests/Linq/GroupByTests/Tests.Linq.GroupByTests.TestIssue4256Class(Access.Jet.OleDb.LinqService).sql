@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			True as [IsActive],
-			IIF([it].[SmallIntValue] <> 0, True, False) as [Other]
+			[it].[SmallIntValue] <> 0 as [Other]
 		FROM
 			[LinqDataTypes] [it]
 	) [it_1]

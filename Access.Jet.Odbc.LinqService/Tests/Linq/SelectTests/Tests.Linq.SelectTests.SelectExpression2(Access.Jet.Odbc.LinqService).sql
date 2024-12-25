@@ -31,7 +31,7 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
-	True
+	1 = 1
 FROM
 	[SelectExpressionTable] [t1]
 

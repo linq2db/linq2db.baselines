@@ -2,9 +2,9 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF(COUNT(*) > 0, True, False)
+	COUNT(*) > 0
 FROM
 	[Person] [t1]
 WHERE
-	NOT ([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL)
+	(1 = 1) <> IIF([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL, True, False)
 

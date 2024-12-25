@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF(Len([p].[FirstName]) = 0, True, False)
+	Len([p].[FirstName]) = 0
 FROM
 	[Person] [p]
 WHERE

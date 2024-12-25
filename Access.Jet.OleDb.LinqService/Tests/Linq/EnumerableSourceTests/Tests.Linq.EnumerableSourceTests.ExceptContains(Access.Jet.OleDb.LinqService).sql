@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF([r].[PersonID] IN (1, 2, 3), True, False)
+	[r].[PersonID] IN (1, 2, 3)
 FROM
 	[Person] [r]
 

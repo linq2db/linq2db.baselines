@@ -12,22 +12,22 @@ SELECT
 		WHERE
 			[c2].[ParentID] = [c_1].[ParentID]
 	),
-	IIF(EXISTS(
+	EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c2_1]
 		WHERE
 			[c2_1].[ParentID] = [c_1].[ParentID]
-	), True, False),
-	IIF(NOT EXISTS(
+	),
+	NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[Child] [c2_2]
 		WHERE
 			[c2_2].[ParentID] <> [c_1].[ParentID]
-	), True, False),
+	),
 	(
 		SELECT
 			MIN([c2_3].[ChildID])

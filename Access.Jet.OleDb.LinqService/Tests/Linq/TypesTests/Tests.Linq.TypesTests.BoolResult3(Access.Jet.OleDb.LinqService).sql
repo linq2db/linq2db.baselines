@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF([p].[PersonID] = 1, True, False)
+	[p].[PersonID] = 1
 FROM
 	[Person] [p]
 
