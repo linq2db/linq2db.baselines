@@ -2,5 +2,5 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	false
+	1 = 0
 
