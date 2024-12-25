@@ -4,7 +4,7 @@
 UPDATE
 	"LinqDataTypes" "p"
 SET
-	"BoolValue" = TRUE
+	"BoolValue" = 1 = 1
 WHERE
 	"p".ID = -1
 

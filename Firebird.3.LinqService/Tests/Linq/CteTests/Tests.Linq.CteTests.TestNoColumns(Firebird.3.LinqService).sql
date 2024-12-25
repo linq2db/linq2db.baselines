@@ -50,14 +50,11 @@ AS
 		"Child" "c_1"
 )
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				CTE1_ "t1"
-		) THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			CTE1_ "t1"
+	)
 FROM rdb$database
 

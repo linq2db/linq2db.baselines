@@ -89,10 +89,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"a_Metrics"."Value" as "cond",
-				CASE
-					WHEN "a_Metrics"."Value" IS NOT NULL THEN TRUE
-					ELSE FALSE
-				END as "cond_1",
+				"a_Metrics"."Value" IS NOT NULL as "cond_1",
 				ROW_NUMBER() OVER (PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
 				"a_Metrics"."RequestId"
 			FROM
