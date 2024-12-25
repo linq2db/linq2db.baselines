@@ -2,5 +2,5 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	1 = 0
+	0
 
