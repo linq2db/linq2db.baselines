@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	BoolValue = 1 = 1
+	BoolValue = true
 WHERE
 	ID = -1
 
