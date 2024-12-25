@@ -2,10 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	CASE
-		WHEN Char_Length(`p`.`FirstName`) = 0 THEN 1
-		ELSE 0
-	END
+	Char_Length(`p`.`FirstName`) = 0
 FROM
 	`Person` `p`
 WHERE

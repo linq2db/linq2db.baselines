@@ -12,30 +12,22 @@ SELECT
 		WHERE
 			`c2`.`ParentID` = `c_1`.`ParentID`
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`Child` `c2_1`
-			WHERE
-				`c2_1`.`ParentID` = `c_1`.`ParentID`
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				`Child` `c2_2`
-			WHERE
-				`c2_2`.`ParentID` <> `c_1`.`ParentID`
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Child` `c2_1`
+		WHERE
+			`c2_1`.`ParentID` = `c_1`.`ParentID`
+	),
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			`Child` `c2_2`
+		WHERE
+			`c2_2`.`ParentID` <> `c_1`.`ParentID`
+	),
 	(
 		SELECT
 			MIN(`c2_3`.`ChildID`)
