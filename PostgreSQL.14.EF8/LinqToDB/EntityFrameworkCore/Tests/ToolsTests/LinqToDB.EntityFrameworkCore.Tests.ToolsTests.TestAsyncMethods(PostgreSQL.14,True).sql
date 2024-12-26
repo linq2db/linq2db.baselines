@@ -89,18 +89,14 @@ WHERE
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Products" e
-			WHERE
-				(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Products" e
+		WHERE
+			(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
+	)
 
 
 

@@ -2,10 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN Length(p."FirstName") = 0 THEN True
-		ELSE False
-	END
+	Length(p."FirstName") = 0
 FROM
 	"Person" p
 WHERE

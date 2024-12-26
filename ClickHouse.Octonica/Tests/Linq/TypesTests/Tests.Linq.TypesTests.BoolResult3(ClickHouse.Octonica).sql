@@ -2,10 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	CASE
-		WHEN p.PersonID = 1 THEN true
-		ELSE false
-	END
+	p.PersonID = 1
 FROM
 	Person p
 

@@ -85,7 +85,7 @@ WHERE
 			WHEN e.Id <> 0 THEN 't'::BOOLEAN
 			ELSE 'f'::BOOLEAN
 		END
-		WHEN e.Id <> 0 THEN 't'::BOOLEAN
+		WHEN e.Id = 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END
 ORDER BY

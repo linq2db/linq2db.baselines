@@ -22,33 +22,25 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				[Person] [p]
-			WHERE
-				[p].[PersonID] IS NULL
-		)
-			THEN 1
-		ELSE 0
-	END
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] IS NULL
+	)
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				[Person] [p]
-			WHERE
-				[p].[PersonID] IS NULL
-		)
-			THEN 1
-		ELSE 0
-	END
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] IS NULL
+	)
 

@@ -5,7 +5,7 @@ SELECT
 	NVL(t1.ID, NULL),
 	NVL(t1.MoneyValue, NULL),
 	NVL(t1.DateTimeValue, NULL),
-	NVL(t1.BoolValue, NULL)::BOOLEAN,
+	NVL(t1.BoolValue, NULL),
 	NVL(t1.GuidValue, NULL),
 	t1.BinaryValue,
 	NVL(t1.SmallIntValue, NULL),

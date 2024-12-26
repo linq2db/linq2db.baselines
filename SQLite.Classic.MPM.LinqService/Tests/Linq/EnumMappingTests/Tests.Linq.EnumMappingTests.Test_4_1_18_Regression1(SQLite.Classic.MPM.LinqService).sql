@@ -28,11 +28,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN [t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL
-			THEN 1
-		ELSE 0
-	END,
+	[t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL,
 	[t1].[BigIntValue],
 	[t1].[IntValue]
 FROM

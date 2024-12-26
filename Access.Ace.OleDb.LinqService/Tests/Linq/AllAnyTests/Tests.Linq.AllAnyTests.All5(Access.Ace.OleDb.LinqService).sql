@@ -4,7 +4,7 @@ DECLARE @n Integer -- Int32
 SET     @n = 3
 
 SELECT
-	IIF(COUNT(*) = 0, True, False)
+	COUNT(*) = 0
 FROM
 	[Child] [c_1]
 WHERE

@@ -38,18 +38,14 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				AsyncDataTable c_1
-			WHERE
-				c_1.Id <> 2
-		)
-			THEN true
-		ELSE false
-	END
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			AsyncDataTable c_1
+		WHERE
+			c_1.Id <> 2
+	)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

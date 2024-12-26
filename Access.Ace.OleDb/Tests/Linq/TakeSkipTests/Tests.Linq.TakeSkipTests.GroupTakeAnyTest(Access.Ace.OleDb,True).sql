@@ -71,7 +71,7 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
-	IIF(COUNT(*) > 0, True, False)
+	COUNT(*) > 0
 FROM
 	[TakeSkipClass] [item_1]
 GROUP BY

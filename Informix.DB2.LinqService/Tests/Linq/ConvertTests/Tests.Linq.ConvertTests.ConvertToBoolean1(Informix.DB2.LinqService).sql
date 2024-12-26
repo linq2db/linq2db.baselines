@@ -6,10 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN t.MoneyValue <> 0 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as c1
+			t.MoneyValue <> 0 as c1
 		FROM
 			LinqDataTypes t
 	) p

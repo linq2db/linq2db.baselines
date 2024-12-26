@@ -6,10 +6,6 @@ SELECT
 FROM
 	[Orders] [o]
 ORDER BY
-	CASE
-		WHEN [o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL
-			THEN 1
-		ELSE 0
-	END,
+	[o].[Freight] > 0 AND [o].[ShippedDate] IS NOT NULL,
 	[o].[OrderID]
 

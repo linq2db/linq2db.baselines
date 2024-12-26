@@ -45,19 +45,13 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	CASE
-		WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-		ELSE false
-	END,
+	t.Kind = 1 OR t.Kind = 2,
 	t.Kind,
 	Substring(t.ItemCode, 1, 2),
 	t.Color,
 	Substring(t.ItemCode, 3, 2),
 	t.Style,
-	CASE
-		WHEN t.Kind = 1 OR t.Kind = 3 THEN true
-		ELSE false
-	END,
+	t.Kind = 1 OR t.Kind = 3,
 	Substring(t.ItemCode, 5, 2),
 	Substring(t.ItemCode, 7, 2)
 FROM
@@ -91,24 +85,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond_1,
-			CASE
-				WHEN x.Kind = 1 THEN true
-				ELSE false
-			END as cond_2,
+			x.Kind = 1 OR x.Kind = 2 as cond,
+			x.Kind = 1 OR x.Kind = 2 as cond_1,
+			x.Kind = 1 as cond_2,
 			Substring(x.ItemCode, 1, 2) as ItemCode,
 			x.Color as Color,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN true
-				ELSE false
-			END as cond_3,
+			x.Kind = 1 OR x.Kind = 3 as cond_3,
 			Substring(x.ItemCode, 5, 2) as ItemCode_1,
 			x.Kind as Kind,
 			Substring(x.ItemCode, 3, 2) as ItemCode_2,
@@ -148,24 +130,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond_1,
-			CASE
-				WHEN x.Kind = 1 THEN true
-				ELSE false
-			END as cond_2,
+			x.Kind = 1 OR x.Kind = 2 as cond,
+			x.Kind = 1 OR x.Kind = 2 as cond_1,
+			x.Kind = 1 as cond_2,
 			Substring(x.ItemCode, 1, 2) as ItemCode,
 			x.Color as Color,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN true
-				ELSE false
-			END as cond_3,
+			x.Kind = 1 OR x.Kind = 3 as cond_3,
 			Substring(x.ItemCode, 5, 2) as ItemCode_1,
 			x.Kind as Kind,
 			Substring(x.ItemCode, 3, 2) as ItemCode_2,
@@ -206,24 +176,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond_1,
+			x.Kind = 1 OR x.Kind = 2 as cond,
+			x.Kind = 1 OR x.Kind = 2 as cond_1,
 			Substring(x.ItemCode, 3, 2) as ItemCode,
 			x.Style as Style_1,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN true
-				ELSE false
-			END as cond_2,
-			CASE
-				WHEN x.Kind = 1 THEN true
-				ELSE false
-			END as cond_3,
+			x.Kind = 1 OR x.Kind = 3 as cond_2,
+			x.Kind = 1 as cond_3,
 			Substring(x.ItemCode, 7, 2) as ItemCode_1,
 			x.Kind as Kind,
 			Substring(x.ItemCode, 1, 2) as ItemCode_2,
@@ -263,24 +221,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 2 THEN true
-				ELSE false
-			END as cond_1,
+			x.Kind = 1 OR x.Kind = 2 as cond,
+			x.Kind = 1 OR x.Kind = 2 as cond_1,
 			Substring(x.ItemCode, 3, 2) as ItemCode,
 			x.Style as Style_1,
-			CASE
-				WHEN x.Kind = 1 OR x.Kind = 3 THEN true
-				ELSE false
-			END as cond_2,
-			CASE
-				WHEN x.Kind = 1 THEN true
-				ELSE false
-			END as cond_3,
+			x.Kind = 1 OR x.Kind = 3 as cond_2,
+			x.Kind = 1 as cond_3,
 			Substring(x.ItemCode, 7, 2) as ItemCode_1,
 			x.Kind as Kind,
 			Substring(x.ItemCode, 1, 2) as ItemCode_2,

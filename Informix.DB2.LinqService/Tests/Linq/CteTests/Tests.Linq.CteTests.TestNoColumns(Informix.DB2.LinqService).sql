@@ -50,14 +50,11 @@ AS
 		Child c_1
 )
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				CTE1_ t1
-		) THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	EXISTS(
+		SELECT
+			*
+		FROM
+			CTE1_ t1
+	)
 FROM table(set{1})
 

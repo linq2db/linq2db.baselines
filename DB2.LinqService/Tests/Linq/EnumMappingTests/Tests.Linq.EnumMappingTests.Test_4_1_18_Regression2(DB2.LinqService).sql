@@ -28,11 +28,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN "t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL
-			THEN 1
-		ELSE 0
-	END,
+	CAST("t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL AS smallint),
 	"t1"."BigIntValue",
 	"t1"."IntValue"
 FROM

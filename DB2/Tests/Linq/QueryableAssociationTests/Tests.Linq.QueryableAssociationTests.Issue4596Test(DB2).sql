@@ -65,14 +65,8 @@ FROM
 	(
 		SELECT
 			"t1"."Id",
-			CASE
-				WHEN "t1".C1 = 'T' THEN 1
-				ELSE 0
-			END as "cond",
-			CASE
-				WHEN "t1".C1 <> 'T' THEN 1
-				ELSE 0
-			END as "cond_1"
+			CAST("t1".C1 = 'T' AS smallint) as "cond",
+			CAST("t1".C1 <> 'T' AS smallint) as "cond_1"
 		FROM
 			"Issue4596Form" "t1"
 		FETCH NEXT 1 ROWS ONLY
@@ -104,14 +98,8 @@ BeforeExecute
 SELECT
 	"t1"."Id",
 	"t1".C1,
-	CASE
-		WHEN "t1".C1 = 'T' THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN "t1".C1 <> 'T' THEN 1
-		ELSE 0
-	END
+	CAST("t1".C1 = 'T' AS smallint),
+	CAST("t1".C1 <> 'T' AS smallint)
 FROM
 	"Issue4596Form" "t1"
 FETCH NEXT 1 ROWS ONLY

@@ -2,13 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Person t1
-		) THEN true
-		ELSE false
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Person t1
+	)
 

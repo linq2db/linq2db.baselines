@@ -11,17 +11,13 @@ DECLARE @blob Binary(3)
 SET     @blob = X'010203'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"LinqDataTypes" "x"
-			WHERE
-				"x"."BinaryValue" = @blob
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"LinqDataTypes" "x"
+		WHERE
+			"x"."BinaryValue" = @blob
+	)
 FROM rdb$database
 

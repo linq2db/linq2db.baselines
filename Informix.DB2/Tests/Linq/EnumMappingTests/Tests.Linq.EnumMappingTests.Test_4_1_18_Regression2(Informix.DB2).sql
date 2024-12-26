@@ -28,11 +28,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL
-			THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN,
+	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL,
 	t1.BigIntValue,
 	t1.IntValue
 FROM

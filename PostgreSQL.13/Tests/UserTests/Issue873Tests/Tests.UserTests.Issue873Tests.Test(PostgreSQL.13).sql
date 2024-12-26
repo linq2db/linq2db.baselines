@@ -4,19 +4,15 @@
 SELECT
 	' ' || Coalesce(t1."Value1", 0)::text,
 	t1.c1,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_2
-					LEFT JOIN "Parent" "a_Parent_1" ON c_2."ParentID" = "a_Parent_1"."ParentID"
-			WHERE
-				"a_Parent_1"."ParentID" = t1."ParentID" AND ("a_Parent_1"."Value1" = t1."Value1" OR "a_Parent_1"."Value1" IS NULL AND t1."Value1" IS NULL)
-		)
-			THEN True
-		ELSE False
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_2
+				LEFT JOIN "Parent" "a_Parent_1" ON c_2."ParentID" = "a_Parent_1"."ParentID"
+		WHERE
+			"a_Parent_1"."ParentID" = t1."ParentID" AND ("a_Parent_1"."Value1" = t1."Value1" OR "a_Parent_1"."Value1" IS NULL AND t1."Value1" IS NULL)
+	),
 	(
 		SELECT
 			COUNT(*)

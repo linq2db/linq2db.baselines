@@ -10,10 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN p."FirstName" LIKE '%Jo%' ESCAPE '~' THEN True
-				ELSE False
-			END as "Field1",
+			p."FirstName" LIKE '%Jo%' ESCAPE '~' as "Field1",
 			p."FirstName",
 			p."PersonID" as "ID",
 			p."LastName",

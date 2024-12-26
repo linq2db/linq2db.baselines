@@ -89,18 +89,14 @@ WHERE
 --  MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`Products` `e`
-			WHERE
-				(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
-		)
-			THEN 1
-		ELSE 0
-	END as `c1`
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Products` `e`
+		WHERE
+			(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND LOCATE('a', `e`.`ProductName`) > 0
+	) as `c1`
 
 
 

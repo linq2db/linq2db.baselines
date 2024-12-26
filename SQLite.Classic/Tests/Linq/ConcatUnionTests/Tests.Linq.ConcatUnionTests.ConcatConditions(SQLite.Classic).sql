@@ -14,10 +14,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN [p].[ParentID] IS NULL THEN 1
-						ELSE 0
-					END as [Parent1],
+					[p].[ParentID] IS NULL as [Parent1],
 					[p].[ParentID]
 				FROM
 					[Child] [t1]
@@ -51,10 +48,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN [p].[ParentID] IS NULL THEN 1
-				ELSE 0
-			END as [Parent1],
+			[p].[ParentID] IS NULL as [Parent1],
 			[p].[ParentID],
 			[p].[Value1]
 		FROM
@@ -63,10 +57,7 @@ FROM
 	) [t1]
 UNION ALL
 SELECT
-	CASE
-		WHEN [p_1].[ParentID] IS NULL THEN 1
-		ELSE 0
-	END,
+	[p_1].[ParentID] IS NULL,
 	[p_1].[ParentID],
 	[p_1].[Value1],
 	NULL,

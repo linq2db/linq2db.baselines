@@ -28,7 +28,7 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	IIF([t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL, True, False),
+	[t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL,
 	[t1].[BigIntValue],
 	[t1].[IntValue]
 FROM

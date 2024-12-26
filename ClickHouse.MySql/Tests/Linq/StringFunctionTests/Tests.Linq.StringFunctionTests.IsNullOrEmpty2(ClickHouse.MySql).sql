@@ -2,10 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN CHAR_LENGTH(p.FirstName) = 0 THEN true
-		ELSE false
-	END
+	CHAR_LENGTH(p.FirstName) = 0
 FROM
 	Person p
 WHERE

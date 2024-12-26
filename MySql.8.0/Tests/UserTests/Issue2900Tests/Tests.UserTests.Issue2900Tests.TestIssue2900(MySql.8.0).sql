@@ -41,10 +41,7 @@ FROM
 		LEFT JOIN LATERAL (
 			SELECT
 				`a_Metrics`.`Value` as `cond`,
-				CASE
-					WHEN `a_Metrics`.`Value` IS NOT NULL THEN 1
-					ELSE 0
-				END as `cond_1`
+				`a_Metrics`.`Value` IS NOT NULL as `cond_1`
 			FROM
 				`Metric` `a_Metrics`
 			WHERE

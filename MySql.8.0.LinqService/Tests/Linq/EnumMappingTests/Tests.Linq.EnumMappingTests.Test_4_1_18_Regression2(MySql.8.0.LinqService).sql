@@ -29,11 +29,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	CASE
-		WHEN `t1`.`BigIntValue` IS NOT NULL AND `t1`.`IntValue` IS NOT NULL
-			THEN 1
-		ELSE 0
-	END,
+	`t1`.`BigIntValue` IS NOT NULL AND `t1`.`IntValue` IS NOT NULL,
 	`t1`.`BigIntValue`,
 	`t1`.`IntValue`
 FROM

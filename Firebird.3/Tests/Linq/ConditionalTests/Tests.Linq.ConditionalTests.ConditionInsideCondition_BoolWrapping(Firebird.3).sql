@@ -3,18 +3,9 @@
 
 SELECT
 	CASE
-		WHEN Mod("p"."ParentID", 2) = 0 THEN CASE
-			WHEN Mod("p"."ParentID", 3) = 0 THEN TRUE
-			ELSE FALSE
-		END
-		WHEN Mod("p"."ParentID", 4) = 0 THEN CASE
-			WHEN "p"."ParentID" > 0 THEN TRUE
-			ELSE FALSE
-		END
-		ELSE CASE
-			WHEN "p"."ParentID" < 5 THEN TRUE
-			ELSE FALSE
-		END
+		WHEN Mod("p"."ParentID", 2) = 0 THEN Mod("p"."ParentID", 3) = 0
+		WHEN Mod("p"."ParentID", 4) = 0 THEN "p"."ParentID" > 0
+		ELSE "p"."ParentID" < 5
 	END
 FROM
 	"Parent" "p"

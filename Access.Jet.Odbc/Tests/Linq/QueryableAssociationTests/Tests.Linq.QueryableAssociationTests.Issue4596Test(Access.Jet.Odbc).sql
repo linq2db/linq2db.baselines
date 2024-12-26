@@ -49,8 +49,8 @@ FROM
 	(
 		SELECT TOP 1
 			[t1].[Id],
-			IIF([t1].[C1] = 'T', True, False) as [cond],
-			IIF([t1].[C1] <> 'T', True, False) as [cond_1]
+			[t1].[C1] = 'T' as [cond],
+			[t1].[C1] <> 'T' as [cond_1]
 		FROM
 			[Issue4596Form] [t1]
 	) [m_1],
@@ -69,8 +69,8 @@ BeforeExecute
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[C1],
-	IIF([t1].[C1] = 'T', True, False),
-	IIF([t1].[C1] <> 'T', True, False)
+	[t1].[C1] = 'T',
+	[t1].[C1] <> 'T'
 FROM
 	[Issue4596Form] [t1]
 

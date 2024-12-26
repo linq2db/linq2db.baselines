@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	IIF([t1].[PersonID] IN (1, 3), True, False)
+	[t1].[PersonID] IN (1, 3)
 

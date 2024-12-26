@@ -159,7 +159,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
-	IIF(COUNT(*) > 0, True, False)
+	COUNT(*) > 0
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

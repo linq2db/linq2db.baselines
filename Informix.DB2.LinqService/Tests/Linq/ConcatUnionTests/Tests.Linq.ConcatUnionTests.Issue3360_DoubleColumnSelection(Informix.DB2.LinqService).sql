@@ -183,7 +183,7 @@ FROM
 			NULL::NChar(11) as Enum,
 			NULL::NChar(11) as EnumN,
 			r.Bool,
-			NVL(r.Bool, NULL)::BOOLEAN as Bool_1
+			NVL(r.Bool, NULL) as Bool_1
 		FROM
 			Issue3360Table1 r
 		WHERE

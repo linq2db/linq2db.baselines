@@ -11976,42 +11976,24 @@ BeforeExecute
 
 SELECT
 	"r"."Id",
-	CASE
-		WHEN "r"."Int32" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" = 0,
 	CASE
 		WHEN "r"."Int32N" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" = 0,
 	CASE
 		WHEN "r"."DecimalN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" = 0,
 	CASE
 		WHEN "r"."DoubleN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") = 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") = 0,
+	Coalesce("r"."DoubleN", "r"."Double") = 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -12060,42 +12042,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" > 0,
 	CASE
 		WHEN "r"."Int32N" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" > 0,
 	CASE
 		WHEN "r"."DecimalN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" > 0,
 	CASE
 		WHEN "r"."DoubleN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") > 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") > 0,
+	Coalesce("r"."DoubleN", "r"."Double") > 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -12144,42 +12108,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" >= 0,
 	CASE
 		WHEN "r"."Int32N" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" >= 0,
 	CASE
 		WHEN "r"."DecimalN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" >= 0,
 	CASE
 		WHEN "r"."DoubleN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") >= 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") >= 0,
+	Coalesce("r"."DoubleN", "r"."Double") >= 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -12228,42 +12174,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" < 0,
 	CASE
 		WHEN "r"."Int32N" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" < 0,
 	CASE
 		WHEN "r"."DecimalN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" < 0,
 	CASE
 		WHEN "r"."DoubleN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") < 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") < 0,
+	Coalesce("r"."DoubleN", "r"."Double") < 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -12312,42 +12240,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" <= 0,
 	CASE
 		WHEN "r"."Int32N" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" <= 0,
 	CASE
 		WHEN "r"."DecimalN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" <= 0,
 	CASE
 		WHEN "r"."DoubleN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") <= 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") <= 0,
+	Coalesce("r"."DoubleN", "r"."Double") <= 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -12401,42 +12311,24 @@ FROM
 UNION ALL
 SELECT
 	"r_1"."Id",
-	CASE
-		WHEN "r_1"."Int32" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" = 0,
 	CASE
 		WHEN "r_1"."Int32N" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" = 0,
 	CASE
 		WHEN "r_1"."DecimalN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" = 0,
 	CASE
 		WHEN "r_1"."DoubleN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") = 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") = 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") = 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -12485,42 +12377,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" > 0,
 	CASE
 		WHEN "r_1"."Int32N" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" > 0,
 	CASE
 		WHEN "r_1"."DecimalN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" > 0,
 	CASE
 		WHEN "r_1"."DoubleN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") > 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") > 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") > 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -12569,42 +12443,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" >= 0,
 	CASE
 		WHEN "r_1"."Int32N" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" >= 0,
 	CASE
 		WHEN "r_1"."DecimalN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" >= 0,
 	CASE
 		WHEN "r_1"."DoubleN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") >= 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") >= 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") >= 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -12653,42 +12509,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" < 0,
 	CASE
 		WHEN "r_1"."Int32N" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" < 0,
 	CASE
 		WHEN "r_1"."DecimalN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" < 0,
 	CASE
 		WHEN "r_1"."DoubleN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") < 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") < 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") < 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -12737,42 +12575,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" <= 0,
 	CASE
 		WHEN "r_1"."Int32N" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" <= 0,
 	CASE
 		WHEN "r_1"."DecimalN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" <= 0,
 	CASE
 		WHEN "r_1"."DoubleN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") <= 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") <= 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") <= 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -13731,42 +13551,24 @@ BeforeExecute
 
 SELECT
 	"r"."Id",
-	CASE
-		WHEN "r"."Int32" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" = 0,
 	CASE
 		WHEN "r"."Int32N" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" = 0,
 	CASE
 		WHEN "r"."DecimalN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" = 0,
 	CASE
 		WHEN "r"."DoubleN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") = 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") = 0,
+	Coalesce("r"."DoubleN", "r"."Double") = 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -13815,42 +13617,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" > 0,
 	CASE
 		WHEN "r"."Int32N" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" > 0,
 	CASE
 		WHEN "r"."DecimalN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" > 0,
 	CASE
 		WHEN "r"."DoubleN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") > 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") > 0,
+	Coalesce("r"."DoubleN", "r"."Double") > 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -13899,42 +13683,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" >= 0,
 	CASE
 		WHEN "r"."Int32N" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" >= 0,
 	CASE
 		WHEN "r"."DecimalN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" >= 0,
 	CASE
 		WHEN "r"."DoubleN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") >= 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") >= 0,
+	Coalesce("r"."DoubleN", "r"."Double") >= 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -13983,42 +13749,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" < 0,
 	CASE
 		WHEN "r"."Int32N" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" < 0,
 	CASE
 		WHEN "r"."DecimalN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" < 0,
 	CASE
 		WHEN "r"."DoubleN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") < 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") < 0,
+	Coalesce("r"."DoubleN", "r"."Double") < 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -14067,42 +13815,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Int32" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Int32" <= 0,
 	CASE
 		WHEN "r"."Int32N" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Decimal" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Decimal" <= 0,
 	CASE
 		WHEN "r"."DecimalN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r"."Double" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r"."Double" <= 0,
 	CASE
 		WHEN "r"."DoubleN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r"."Int32N", "r"."Int32") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DecimalN", "r"."Decimal") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r"."DoubleN", "r"."Double") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r"."Int32N", "r"."Int32") <= 0,
+	Coalesce("r"."DecimalN", "r"."Decimal") <= 0,
+	Coalesce("r"."DoubleN", "r"."Double") <= 0,
 	CASE
 		WHEN CASE
 			WHEN "r"."Boolean" = TRUE THEN "r"."Int32N"
@@ -14156,42 +13886,24 @@ FROM
 UNION ALL
 SELECT
 	"r_1"."Id",
-	CASE
-		WHEN "r_1"."Int32" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" = 0,
 	CASE
 		WHEN "r_1"."Int32N" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" = 0,
 	CASE
 		WHEN "r_1"."DecimalN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" = 0,
 	CASE
 		WHEN "r_1"."DoubleN" = 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") = 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") = 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") = 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") = 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") = 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -14240,42 +13952,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" > 0,
 	CASE
 		WHEN "r_1"."Int32N" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" > 0,
 	CASE
 		WHEN "r_1"."DecimalN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" > 0,
 	CASE
 		WHEN "r_1"."DoubleN" > 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") > 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") > 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") > 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") > 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") > 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -14324,42 +14018,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" >= 0,
 	CASE
 		WHEN "r_1"."Int32N" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" >= 0,
 	CASE
 		WHEN "r_1"."DecimalN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" >= 0,
 	CASE
 		WHEN "r_1"."DoubleN" >= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") >= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") >= 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") >= 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") >= 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -14408,42 +14084,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" < 0,
 	CASE
 		WHEN "r_1"."Int32N" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" < 0,
 	CASE
 		WHEN "r_1"."DecimalN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" < 0,
 	CASE
 		WHEN "r_1"."DoubleN" < 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") < 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") < 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") < 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") < 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") < 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"
@@ -14492,42 +14150,24 @@ SELECT
 			THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Int32" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Int32" <= 0,
 	CASE
 		WHEN "r_1"."Int32N" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Decimal" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Decimal" <= 0,
 	CASE
 		WHEN "r_1"."DecimalN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN "r_1"."Double" <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	"r_1"."Double" <= 0,
 	CASE
 		WHEN "r_1"."DoubleN" <= 0 THEN TRUE
 		ELSE FALSE
 	END,
-	CASE
-		WHEN Coalesce("r_1"."Int32N", "r_1"."Int32") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DecimalN", "r_1"."Decimal") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN Coalesce("r_1"."DoubleN", "r_1"."Double") <= 0 THEN TRUE
-		ELSE FALSE
-	END,
+	Coalesce("r_1"."Int32N", "r_1"."Int32") <= 0,
+	Coalesce("r_1"."DecimalN", "r_1"."Decimal") <= 0,
+	Coalesce("r_1"."DoubleN", "r_1"."Double") <= 0,
 	CASE
 		WHEN CASE
 			WHEN "r_1"."Boolean" = TRUE THEN "r_1"."Int32N"

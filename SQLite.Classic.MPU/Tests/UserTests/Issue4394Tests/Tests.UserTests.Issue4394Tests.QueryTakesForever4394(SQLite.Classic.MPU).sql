@@ -212,38 +212,30 @@ SELECT
 		WHERE
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_18]
-			WHERE
-				[x_18].[ResourceID] = [c1].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_19]
-			WHERE
-				[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y]
-					WHERE
-						[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_18]
+		WHERE
+			[x_18].[ResourceID] = [c1].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_19]
+		WHERE
+			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
+			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y]
+				WHERE
+					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+			))
+	)
 FROM
 	[ChannelDTO] [x_16]
 		INNER JOIN [AisleDTO] [a] ON [x_16].[AisleID] = [a].[Id]
@@ -480,38 +472,30 @@ SELECT
 		WHERE
 			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_18]
-			WHERE
-				[x_18].[ResourceID] = [c1].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_19]
-			WHERE
-				[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-				([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y]
-					WHERE
-						[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_18]
+		WHERE
+			[x_18].[ResourceID] = [c1].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_19]
+		WHERE
+			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
+			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y]
+				WHERE
+					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> X'00000000000000000000000000000000' OR [a2].[Id] IS NULL)
 			THEN 1
@@ -546,38 +530,30 @@ SELECT
 		WHERE
 			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c2].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_21]
-			WHERE
-				[x_21].[ResourceID] = [c2].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_22]
-			WHERE
-				[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
-				([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_1]
-					WHERE
-						[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_21]
+		WHERE
+			[x_21].[ResourceID] = [c2].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_22]
+		WHERE
+			[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
+			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_1]
+				WHERE
+					[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a3].[Id] IS NOT NULL AND ([a3].[Id] <> X'00000000000000000000000000000000' OR [a3].[Id] IS NULL)
 			THEN 1
@@ -612,38 +588,30 @@ SELECT
 		WHERE
 			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c3].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_24]
-			WHERE
-				[x_24].[ResourceID] = [c3].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_25]
-			WHERE
-				[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
-				([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_2]
-					WHERE
-						[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_24]
+		WHERE
+			[x_24].[ResourceID] = [c3].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_25]
+		WHERE
+			[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
+			([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_2]
+				WHERE
+					[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a4].[Id] IS NOT NULL AND ([a4].[Id] <> X'00000000000000000000000000000000' OR [a4].[Id] IS NULL)
 			THEN 1
@@ -678,38 +646,30 @@ SELECT
 		WHERE
 			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c4].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_27]
-			WHERE
-				[x_27].[ResourceID] = [c4].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_28]
-			WHERE
-				[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
-				([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_3]
-					WHERE
-						[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_27]
+		WHERE
+			[x_27].[ResourceID] = [c4].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_28]
+		WHERE
+			[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
+			([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_3]
+				WHERE
+					[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a5].[Id] IS NOT NULL AND ([a5].[Id] <> X'00000000000000000000000000000000' OR [a5].[Id] IS NULL)
 			THEN 1
@@ -744,38 +704,30 @@ SELECT
 		WHERE
 			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c5].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_30]
-			WHERE
-				[x_30].[ResourceID] = [c5].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_31]
-			WHERE
-				[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
-				([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_4]
-					WHERE
-						[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_30]
+		WHERE
+			[x_30].[ResourceID] = [c5].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_31]
+		WHERE
+			[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
+			([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_4]
+				WHERE
+					[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a6].[Id] IS NOT NULL AND ([a6].[Id] <> X'00000000000000000000000000000000' OR [a6].[Id] IS NULL)
 			THEN 1
@@ -810,38 +762,30 @@ SELECT
 		WHERE
 			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c6].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_33]
-			WHERE
-				[x_33].[ResourceID] = [c6].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_34]
-			WHERE
-				[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
-				([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_5]
-					WHERE
-						[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_33]
+		WHERE
+			[x_33].[ResourceID] = [c6].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_34]
+		WHERE
+			[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
+			([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_5]
+				WHERE
+					[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a7].[Id] IS NOT NULL AND ([a7].[Id] <> X'00000000000000000000000000000000' OR [a7].[Id] IS NULL)
 			THEN 1
@@ -876,38 +820,30 @@ SELECT
 		WHERE
 			[x_35].[Status] < 0 AND [x_35].[ResourceID] = [c7].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_36]
-			WHERE
-				[x_36].[ResourceID] = [c7].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_37]
-			WHERE
-				[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
-				([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_6]
-					WHERE
-						[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_36]
+		WHERE
+			[x_36].[ResourceID] = [c7].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_37]
+		WHERE
+			[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
+			([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_6]
+				WHERE
+					[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
+			))
+	),
 	CASE
 		WHEN [a8].[Id] IS NOT NULL AND ([a8].[Id] <> X'00000000000000000000000000000000' OR [a8].[Id] IS NULL)
 			THEN 1
@@ -942,38 +878,30 @@ SELECT
 		WHERE
 			[x_38].[Status] < 0 AND [x_38].[ResourceID] = [c8].[Id]
 	),
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_39]
-			WHERE
-				[x_39].[ResourceID] = [c8].[Id]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[InventoryResourceDTO] [x_40]
-			WHERE
-				[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
-				([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y_7]
-					WHERE
-						[y_7].[Id] = [x_40].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
-				))
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_39]
+		WHERE
+			[x_39].[ResourceID] = [c8].[Id]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[InventoryResourceDTO] [x_40]
+		WHERE
+			[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
+			([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y_7]
+				WHERE
+					[y_7].[Id] = [x_40].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
+			))
+	)
 FROM
 	[ChannelDTO] [x_16]
 		INNER JOIN [AisleDTO] [a] ON [x_16].[AisleID] = [a].[Id]

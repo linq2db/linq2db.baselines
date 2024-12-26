@@ -185,7 +185,7 @@ AS
 		NULL::NChar(11),
 		NULL::NChar(11),
 		r.Bool,
-		NVL(r.Bool, NULL)::BOOLEAN
+		NVL(r.Bool, NULL)
 	FROM
 		Issue3360Table1 r
 	WHERE

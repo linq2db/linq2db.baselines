@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t].[MoneyValue] <> 4.5, True, False) as [c1]
+			[t].[MoneyValue] <> 4.5 as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [p]

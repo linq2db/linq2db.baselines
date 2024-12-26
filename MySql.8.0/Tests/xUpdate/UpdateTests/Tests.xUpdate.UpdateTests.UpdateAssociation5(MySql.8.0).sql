@@ -14,16 +14,12 @@ UPDATE
 				`x`.`ParentID` IN (10000, 20000)
 		) `t1` ON `t`.`ID` = `t1`.`ID` AND `t`.`BoolValue` = `t1`.`BoolValue`
 SET
-	`t`.`BoolValue` = CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				`Parent` `x_1`
-			WHERE
-				`t1`.`ID` = `x_1`.`ParentID` AND (`x_1`.`Value1` <> 1 OR `x_1`.`Value1` IS NULL)
-		)
-			THEN 1
-		ELSE 0
-	END
+	`t`.`BoolValue` = NOT EXISTS(
+		SELECT
+			*
+		FROM
+			`Parent` `x_1`
+		WHERE
+			`t1`.`ID` = `x_1`.`ParentID` AND (`x_1`.`Value1` <> 1 OR `x_1`.`Value1` IS NULL)
+	)
 

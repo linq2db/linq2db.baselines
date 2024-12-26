@@ -30,21 +30,17 @@ DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				item_1."Value"
-			FROM
-				"TakeSkipClass" item_1
-			GROUP BY
-				item_1."Value"
-			HAVING
-				COUNT(*) > 1
-			LIMIT :take
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			item_1."Value"
+		FROM
+			"TakeSkipClass" item_1
+		GROUP BY
+			item_1."Value"
+		HAVING
+			COUNT(*) > 1
+		LIMIT :take
+	)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

@@ -3,11 +3,7 @@
 
 SELECT
 	"e"."FirstName",
-	CASE
-		WHEN "a_Patient"."PersonID" IS NOT NULL AND "a_Person"."PersonID" IS NOT NULL AND "a_Person"."MiddleName" IS NOT NULL
-			THEN 1
-		ELSE 0
-	END,
+	CAST("a_Patient"."PersonID" IS NOT NULL AND "a_Person"."PersonID" IS NOT NULL AND "a_Person"."MiddleName" IS NOT NULL AS smallint),
 	"a_Person"."MiddleName"
 FROM
 	"Person" "e"

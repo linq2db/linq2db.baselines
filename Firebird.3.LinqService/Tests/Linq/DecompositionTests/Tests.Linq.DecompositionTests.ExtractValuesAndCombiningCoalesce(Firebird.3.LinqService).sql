@@ -299,19 +299,13 @@ BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	CASE
-		WHEN "t"."Kind" = 1 OR "t"."Kind" = 2 THEN TRUE
-		ELSE FALSE
-	END,
+	"t"."Kind" = 1 OR "t"."Kind" = 2,
 	"t"."Kind",
 	Substring("t"."ItemCode" from 1 for 2),
 	"t"."Color",
 	Substring("t"."ItemCode" from 3 for 2),
 	"t"."Style",
-	CASE
-		WHEN "t"."Kind" = 1 OR "t"."Kind" = 3 THEN TRUE
-		ELSE FALSE
-	END,
+	"t"."Kind" = 1 OR "t"."Kind" = 3,
 	Substring("t"."ItemCode" from 5 for 2),
 	Substring("t"."ItemCode" from 7 for 2)
 FROM
@@ -345,24 +339,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond_1",
-			CASE
-				WHEN "x"."Kind" = 1 THEN TRUE
-				ELSE FALSE
-			END as "cond_2",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond_1",
+			"x"."Kind" = 1 as "cond_2",
 			Substring("x"."ItemCode" from 1 for 2) as "ItemCode",
 			"x"."Color",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 3 THEN TRUE
-				ELSE FALSE
-			END as "cond_3",
+			"x"."Kind" = 1 OR "x"."Kind" = 3 as "cond_3",
 			Substring("x"."ItemCode" from 5 for 2) as "ItemCode_1",
 			"x"."Kind",
 			Substring("x"."ItemCode" from 3 for 2) as "ItemCode_2",
@@ -402,24 +384,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond_1",
-			CASE
-				WHEN "x"."Kind" = 1 THEN TRUE
-				ELSE FALSE
-			END as "cond_2",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond_1",
+			"x"."Kind" = 1 as "cond_2",
 			Substring("x"."ItemCode" from 1 for 2) as "ItemCode",
 			"x"."Color",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 3 THEN TRUE
-				ELSE FALSE
-			END as "cond_3",
+			"x"."Kind" = 1 OR "x"."Kind" = 3 as "cond_3",
 			Substring("x"."ItemCode" from 5 for 2) as "ItemCode_1",
 			"x"."Kind",
 			Substring("x"."ItemCode" from 3 for 2) as "ItemCode_2",
@@ -460,24 +430,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond_1",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond_1",
 			Substring("x"."ItemCode" from 3 for 2) as "ItemCode",
 			"x"."Style" as "Style_1",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 3 THEN TRUE
-				ELSE FALSE
-			END as "cond_2",
-			CASE
-				WHEN "x"."Kind" = 1 THEN TRUE
-				ELSE FALSE
-			END as "cond_3",
+			"x"."Kind" = 1 OR "x"."Kind" = 3 as "cond_2",
+			"x"."Kind" = 1 as "cond_3",
 			Substring("x"."ItemCode" from 7 for 2) as "ItemCode_1",
 			"x"."Kind",
 			Substring("x"."ItemCode" from 1 for 2) as "ItemCode_2",
@@ -517,24 +475,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 2 THEN TRUE
-				ELSE FALSE
-			END as "cond_1",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond",
+			"x"."Kind" = 1 OR "x"."Kind" = 2 as "cond_1",
 			Substring("x"."ItemCode" from 3 for 2) as "ItemCode",
 			"x"."Style" as "Style_1",
-			CASE
-				WHEN "x"."Kind" = 1 OR "x"."Kind" = 3 THEN TRUE
-				ELSE FALSE
-			END as "cond_2",
-			CASE
-				WHEN "x"."Kind" = 1 THEN TRUE
-				ELSE FALSE
-			END as "cond_3",
+			"x"."Kind" = 1 OR "x"."Kind" = 3 as "cond_2",
+			"x"."Kind" = 1 as "cond_3",
 			Substring("x"."ItemCode" from 7 for 2) as "ItemCode_1",
 			"x"."Kind",
 			Substring("x"."ItemCode" from 1 for 2) as "ItemCode_2",

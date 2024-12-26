@@ -3,18 +3,14 @@
 
 SELECT
 	t1.ParentID,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Child t1_1
-			WHERE
-				t1.ParentID = t1_1.ParentID
-		)
-			THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END::BOOLEAN
+	EXISTS(
+		SELECT
+			*
+		FROM
+			Child t1_1
+		WHERE
+			t1.ParentID = t1_1.ParentID
+	)
 FROM
 	Parent t1
 

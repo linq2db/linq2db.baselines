@@ -17,18 +17,14 @@ SELECT
 			FETCH NEXT 1 ROWS ONLY
 		)
 	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "c_4"
-			WHERE
-				"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
-		)
-			THEN TRUE
-		ELSE FALSE
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "c_4"
+		WHERE
+			"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
+	),
 	(
 		SELECT
 			COUNT(*)

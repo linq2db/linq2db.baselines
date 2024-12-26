@@ -5,18 +5,14 @@ SET     @take = 5000
 
 SELECT
 	t."ParentID",
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_2
-			WHERE
-				c_2."ParentID" = t."ParentID" AND c_2."ChildID" > -100
-		)
-			THEN True
-		ELSE False
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_2
+		WHERE
+			c_2."ParentID" = t."ParentID" AND c_2."ChildID" > -100
+	),
 	(
 		SELECT
 			COUNT(*)

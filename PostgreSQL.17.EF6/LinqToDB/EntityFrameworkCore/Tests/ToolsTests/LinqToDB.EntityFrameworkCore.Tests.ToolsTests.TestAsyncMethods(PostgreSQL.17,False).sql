@@ -89,18 +89,14 @@ WHERE
 --  PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Products" e
-			WHERE
-				e."ProductName" LIKE '%a%' ESCAPE '~'
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Products" e
+		WHERE
+			e."ProductName" LIKE '%a%' ESCAPE '~'
+	)
 
 
 

@@ -22,33 +22,25 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				Person p
-			WHERE
-				p.PersonID IS NULL
-		)
-			THEN true
-		ELSE false
-	END
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			Person p
+		WHERE
+			p.PersonID IS NULL
+	)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CASE
-		WHEN NOT EXISTS(
-			SELECT
-				*
-			FROM
-				Person p
-			WHERE
-				p.PersonID IS NULL
-		)
-			THEN true
-		ELSE false
-	END
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			Person p
+		WHERE
+			p.PersonID IS NULL
+	)
 

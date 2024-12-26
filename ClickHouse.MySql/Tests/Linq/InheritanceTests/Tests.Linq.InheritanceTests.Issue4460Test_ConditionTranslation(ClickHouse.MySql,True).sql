@@ -67,8 +67,7 @@ WHERE
 	CASE
 		WHEN e.Code = 'Child2' OR e.Code = 'Child' OR e.Code = 'BaseChild'
 			THEN true
-		WHEN e.Id <> 0 THEN true
-		ELSE false
+		ELSE e.Id = 0
 	END
 ORDER BY
 	e.Id

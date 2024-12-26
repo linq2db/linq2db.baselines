@@ -61,18 +61,14 @@ DECLARE @test_1 VarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"SampleClass" "sampleClass_1"
-			WHERE
-				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"SampleClass" "sampleClass_1"
+		WHERE
+			"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
+	)
 FROM rdb$database
 
 BeforeExecute
@@ -97,18 +93,14 @@ DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"SampleClass" "sampleClass_1"
-			WHERE
-				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"SampleClass" "sampleClass_1"
+		WHERE
+			"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
+	)
 FROM rdb$database
 
 BeforeExecute
@@ -133,18 +125,14 @@ DECLARE @test_1 VarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"SampleClass" "sampleClass_1"
-			WHERE
-				"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"SampleClass" "sampleClass_1"
+		WHERE
+			"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
+	)
 FROM rdb$database
 
 BeforeExecute

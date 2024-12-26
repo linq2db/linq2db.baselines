@@ -3,7 +3,7 @@
 
 SELECT
 	[c_1].[ParentID],
-	IIF([c_1].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] IS NOT NULL, True, False),
+	[c_1].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] IS NOT NULL,
 	[a_Parent].[Value1]
 FROM
 	([Parent] [t1]

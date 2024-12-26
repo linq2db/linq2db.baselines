@@ -2,18 +2,14 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_2
-			WHERE
-				c_2."ParentID" = p."ParentID" AND c_2."ChildID" > -100
-		)
-			THEN True
-		ELSE False
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_2
+		WHERE
+			c_2."ParentID" = p."ParentID" AND c_2."ChildID" > -100
+	),
 	(
 		SELECT
 			COUNT(*)

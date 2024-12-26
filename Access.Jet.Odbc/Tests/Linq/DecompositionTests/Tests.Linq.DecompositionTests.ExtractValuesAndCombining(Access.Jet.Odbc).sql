@@ -300,8 +300,8 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([i].[Kind] = 1 OR [i].[Kind] = 2, True, False) as [cond],
-			IIF([i].[Kind] = 1, True, False) as [cond_1],
+			[i].[Kind] = 1 OR [i].[Kind] = 2 as [cond],
+			[i].[Kind] = 1 as [cond_1],
 			Mid([i].[ItemCode], 1, 2) as [ItemCode],
 			[i].[Color],
 			[i].[Kind],
@@ -340,7 +340,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([i].[Kind] = 1 OR [i].[Kind] = 3, True, False) as [cond],
+			[i].[Kind] = 1 OR [i].[Kind] = 3 as [cond],
 			Mid([i].[ItemCode], 5, 2) as [ItemCode],
 			[i].[Color],
 			[i].[Kind],
@@ -384,12 +384,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
+			[t].[Kind] = 1 OR [t].[Kind] = 2 as [cond],
 			Mid([t].[ItemCode], 1, 2) as [ItemCode],
 			[t].[Color] as [Name],
 			Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
 			[t].[Style] as [Name_1],
-			IIF([t].[Kind] = 1, True, False) as [Color]
+			[t].[Kind] = 1 as [Color]
 		FROM
 			[Item] [t]
 	) [t1]
@@ -411,12 +411,12 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, True, False) as [cond],
+			[t_1].[Kind] = 1 OR [t_1].[Kind] = 3 as [cond],
 			Mid([t_1].[ItemCode], 5, 2) as [ItemCode],
 			[t_1].[Color],
 			Mid([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 			[t_1].[Style] as [Style_1],
-			IIF([t_1].[Kind] = 1, True, False) as [cond_1]
+			[t_1].[Kind] = 1 as [cond_1]
 		FROM
 			[Item] [t_1]
 	) [t2]
@@ -467,12 +467,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
+					[t].[Kind] = 1 OR [t].[Kind] = 2 as [cond],
 					Mid([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, True, False) as [cond_1]
+					[t].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t]
 			) [x]
@@ -494,12 +494,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, True, False) as [cond],
+					[t_1].[Kind] = 1 OR [t_1].[Kind] = 3 as [cond],
 					Mid([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Mid([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, True, False) as [cond_1]
+					[t_1].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
@@ -553,12 +553,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
+					[t].[Kind] = 1 OR [t].[Kind] = 2 as [cond],
 					Mid([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, True, False) as [cond_1]
+					[t].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t]
 			) [x]
@@ -580,12 +580,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, True, False) as [cond],
+					[t_1].[Kind] = 1 OR [t_1].[Kind] = 3 as [cond],
 					Mid([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Mid([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, True, False) as [cond_1]
+					[t_1].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
@@ -640,12 +640,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
+					[t].[Kind] = 1 OR [t].[Kind] = 2 as [cond],
 					Mid([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, True, False) as [cond_1]
+					[t].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t]
 			) [x]
@@ -667,12 +667,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, True, False) as [cond],
+					[t_1].[Kind] = 1 OR [t_1].[Kind] = 3 as [cond],
 					Mid([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Mid([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, True, False) as [cond_1]
+					[t_1].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
@@ -726,12 +726,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, True, False) as [cond],
+					[t].[Kind] = 1 OR [t].[Kind] = 2 as [cond],
 					Mid([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Mid([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, True, False) as [cond_1]
+					[t].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t]
 			) [x]
@@ -753,12 +753,12 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, True, False) as [cond],
+					[t_1].[Kind] = 1 OR [t_1].[Kind] = 3 as [cond],
 					Mid([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Mid([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, True, False) as [cond_1]
+					[t_1].[Kind] = 1 as [cond_1]
 				FROM
 					[Item] [t_1]
 			) [t1]

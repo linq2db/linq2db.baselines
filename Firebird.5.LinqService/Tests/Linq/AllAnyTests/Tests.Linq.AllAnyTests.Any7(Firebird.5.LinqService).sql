@@ -2,15 +2,11 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "t1"
-		)
-			THEN TRUE
-		ELSE FALSE
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "t1"
+	)
 FROM rdb$database
 

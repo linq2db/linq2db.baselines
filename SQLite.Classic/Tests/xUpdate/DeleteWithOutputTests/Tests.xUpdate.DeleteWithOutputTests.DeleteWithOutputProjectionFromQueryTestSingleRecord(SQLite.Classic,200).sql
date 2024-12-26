@@ -56,10 +56,7 @@ WHERE
 RETURNING
 	[TableWithData].[Id] + 1,
 	[TableWithData].[ValueStr] || 1,
-	CASE
-		WHEN [TableWithData].[ValueStr] IS NOT NULL THEN 1
-		ELSE 0
-	END
+	[TableWithData].[ValueStr] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

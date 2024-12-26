@@ -184,19 +184,15 @@ FROM
 			[aisle].[Status] as [AisleStatus],
 			[rp].[Id] as [Id_4],
 			[rp].[IsStoragePlace],
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						[InventoryResourceDTO] [irMix]
-					WHERE
-						[irMix].[ResourceID] = [r].[Id] AND [irMix].[Status] >= 0 AND
-						[irMix].[Status] <= 1
-				)
-					THEN 1
-				ELSE 0
-			END as [MixedStock]
+			EXISTS(
+				SELECT
+					*
+				FROM
+					[InventoryResourceDTO] [irMix]
+				WHERE
+					[irMix].[ResourceID] = [r].[Id] AND [irMix].[Status] >= 0 AND
+					[irMix].[Status] <= 1
+			) as [MixedStock]
 		FROM
 			[StorageShelfDTO] [cr]
 				INNER JOIN [ChannelDTO] [c_1] ON [cr].[ChannelID] = [c_1].[Id]

@@ -8,10 +8,7 @@ FROM
 	(
 		SELECT
 			't'::BOOLEAN as IsActive,
-			CASE
-				WHEN it.SmallIntValue <> 0 THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END::BOOLEAN as Other
+			it.SmallIntValue <> 0 as Other
 		FROM
 			LinqDataTypes it
 	) it_1

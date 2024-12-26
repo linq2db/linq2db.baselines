@@ -2,7 +2,7 @@
 -- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
-	IIF(COUNT(*) = 0, True, False)
+	COUNT(*) = 0
 FROM
 	[Child] [c_1]
 WHERE

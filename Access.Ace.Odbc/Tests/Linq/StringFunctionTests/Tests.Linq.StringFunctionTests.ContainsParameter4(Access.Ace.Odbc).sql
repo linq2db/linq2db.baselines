@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[FirstName] LIKE '%Jo%', True, False) as [Field1],
+			[p].[FirstName] LIKE '%Jo%' as [Field1],
 			[p].[FirstName],
 			[p].[PersonID] as [ID],
 			[p].[LastName],

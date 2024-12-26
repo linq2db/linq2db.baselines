@@ -255,10 +255,7 @@ WHERE
 RETURNING
 	s."Id" + 1,
 	s."ValueStr" || 1,
-	CASE
-		WHEN s."ValueStr" IS NOT NULL THEN True
-		ELSE False
-	END
+	s."ValueStr" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

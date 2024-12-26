@@ -215,37 +215,29 @@ SELECT
 	[x_1].[HeightClass],
 	[x_1].[Count_1],
 	[x_1].[CountLocked],
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[RefOutfeedTransportOrderResourceDTO] [x_2]
-			WHERE
-				[x_2].[ResourceID] = [x_1].[Id_3]
-		)
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[CTE_1] [x_3]
-			WHERE
-				[x_3].[IR_ResourceID] = [x_1].[Id_3] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
-					SELECT
-						*
-					FROM
-						[InfeedAdvicePositionDTO] [y]
-					WHERE
-						[y].[Id] = [x_3].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
-				))
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[RefOutfeedTransportOrderResourceDTO] [x_2]
+		WHERE
+			[x_2].[ResourceID] = [x_1].[Id_3]
+	),
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE_1] [x_3]
+		WHERE
+			[x_3].[IR_ResourceID] = [x_1].[Id_3] AND ([x_3].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+				SELECT
+					*
+				FROM
+					[InfeedAdvicePositionDTO] [y]
+				WHERE
+					[y].[Id] = [x_3].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
+			))
+	)
 FROM
 	(
 		SELECT

@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF(COUNT(*) = 0, True, False)
+	COUNT(*) = 0
 FROM
 	[GrandChild] [x]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF(COUNT(*) = 0, True, False)
+	COUNT(*) = 0
 FROM
 	[GrandChild] [x]
 WHERE

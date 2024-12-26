@@ -28,11 +28,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
-	CASE
-		WHEN "t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL
-			THEN TRUE
-		ELSE FALSE
-	END,
+	"t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL,
 	"t1"."BigIntValue",
 	"t1"."IntValue"
 FROM

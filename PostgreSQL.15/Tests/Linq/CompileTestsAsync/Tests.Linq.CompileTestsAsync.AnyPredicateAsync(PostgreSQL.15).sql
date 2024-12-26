@@ -38,18 +38,14 @@ DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"AsyncDataTable" c_1
-			WHERE
-				c_1."Id" = :p
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"AsyncDataTable" c_1
+		WHERE
+			c_1."Id" = :p
+	)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

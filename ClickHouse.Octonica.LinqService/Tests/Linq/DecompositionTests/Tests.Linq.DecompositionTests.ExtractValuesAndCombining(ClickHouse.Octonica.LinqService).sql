@@ -212,14 +212,8 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN i.Kind = 1 OR i.Kind = 2 THEN true
-				ELSE false
-			END as cond,
-			CASE
-				WHEN i.Kind = 1 THEN true
-				ELSE false
-			END as cond_1,
+			i.Kind = 1 OR i.Kind = 2 as cond,
+			i.Kind = 1 as cond_1,
 			Substring(i.ItemCode, 1, 2) as ItemCode,
 			i.Color as Color,
 			i.Kind as Kind,
@@ -258,10 +252,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN i.Kind = 1 OR i.Kind = 3 THEN true
-				ELSE false
-			END as cond,
+			i.Kind = 1 OR i.Kind = 3 as cond,
 			Substring(i.ItemCode, 5, 2) as ItemCode,
 			i.Color as Color,
 			i.Kind as Kind,
@@ -305,18 +296,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-				ELSE false
-			END as cond,
+			t.Kind = 1 OR t.Kind = 2 as cond,
 			Substring(t.ItemCode, 1, 2) as ItemCode,
 			t.Color as Name,
 			Substring(t.ItemCode, 3, 2) as ItemCode_1,
 			t.Style as Name_1,
-			CASE
-				WHEN t.Kind = 1 THEN true
-				ELSE false
-			END as Color
+			t.Kind = 1 as Color
 		FROM
 			Item t
 	) t1
@@ -338,18 +323,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN true
-				ELSE false
-			END as cond,
+			t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 			Substring(t_1.ItemCode, 5, 2) as ItemCode,
 			t_1.Color as Color,
 			Substring(t_1.ItemCode, 7, 2) as ItemCode_1,
 			t_1.Style as Style_1,
-			CASE
-				WHEN t_1.Kind = 1 THEN true
-				ELSE false
-			END as cond_1
+			t_1.Kind = 1 as cond_1
 		FROM
 			Item t_1
 	) t2
@@ -400,18 +379,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-						ELSE false
-					END as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substring(t.ItemCode, 1, 2) as ItemCode,
 					t.Color as Color,
 					Substring(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					Item t
 			) x
@@ -433,18 +406,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN true
-						ELSE false
-					END as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substring(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color as Color,
 					Substring(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					Item t_1
 			) t1
@@ -498,18 +465,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-						ELSE false
-					END as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substring(t.ItemCode, 1, 2) as ItemCode,
 					t.Color as Color,
 					Substring(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					Item t
 			) x
@@ -531,18 +492,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN true
-						ELSE false
-					END as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substring(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color as Color,
 					Substring(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					Item t_1
 			) t1
@@ -597,18 +552,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-						ELSE false
-					END as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substring(t.ItemCode, 1, 2) as ItemCode,
 					t.Color as Color,
 					Substring(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					Item t
 			) x
@@ -630,18 +579,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN true
-						ELSE false
-					END as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substring(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color as Color,
 					Substring(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					Item t_1
 			) t1
@@ -695,18 +638,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t.Kind = 1 OR t.Kind = 2 THEN true
-						ELSE false
-					END as cond,
+					t.Kind = 1 OR t.Kind = 2 as cond,
 					Substring(t.ItemCode, 1, 2) as ItemCode,
 					t.Color as Color,
 					Substring(t.ItemCode, 3, 2) as ItemCode_1,
 					t.Style as Style_1,
-					CASE
-						WHEN t.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t.Kind = 1 as cond_1
 				FROM
 					Item t
 			) x
@@ -728,18 +665,12 @@ FROM
 		FROM
 			(
 				SELECT
-					CASE
-						WHEN t_1.Kind = 1 OR t_1.Kind = 3 THEN true
-						ELSE false
-					END as cond,
+					t_1.Kind = 1 OR t_1.Kind = 3 as cond,
 					Substring(t_1.ItemCode, 5, 2) as ItemCode,
 					t_1.Color as Color,
 					Substring(t_1.ItemCode, 7, 2) as ItemCode_1,
 					t_1.Style as Style_1,
-					CASE
-						WHEN t_1.Kind = 1 THEN true
-						ELSE false
-					END as cond_1
+					t_1.Kind = 1 as cond_1
 				FROM
 					Item t_1
 			) t1

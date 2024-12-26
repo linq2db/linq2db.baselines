@@ -28,11 +28,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	CASE
-		WHEN t1."BigIntValue" IS NOT NULL AND t1."IntValue" IS NOT NULL
-			THEN True
-		ELSE False
-	END,
+	t1."BigIntValue" IS NOT NULL AND t1."IntValue" IS NOT NULL,
 	t1."BigIntValue",
 	t1."IntValue"
 FROM
