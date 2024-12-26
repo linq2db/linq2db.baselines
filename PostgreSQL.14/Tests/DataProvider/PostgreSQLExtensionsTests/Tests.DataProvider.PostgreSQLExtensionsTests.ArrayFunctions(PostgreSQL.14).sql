@@ -172,12 +172,30 @@ SELECT
 		WHEN t1."StrArray" < t2."StrArray" THEN True
 		ELSE False
 	END,
-	t1."StrArray" <= t2."StrArray",
-	t1."StrArray" > t2."StrArray",
-	t1."StrArray" > t2."StrArray",
-	t1."StrArray" @> t2."StrArray",
-	t1."StrArray" <@ t2."StrArray",
-	t1."StrArray" && t2."StrArray",
+	CASE
+		WHEN t1."StrArray" <= t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" > t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" >= t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" @> t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" <@ t2."StrArray" THEN True
+		ELSE False
+	END,
+	CASE
+		WHEN t1."StrArray" && t2."StrArray" THEN True
+		ELSE False
+	END,
 	CASE
 		WHEN t1."IntValue" = ANY(t2."IntArray") THEN True
 		ELSE False
@@ -230,7 +248,7 @@ FROM
 		INNER JOIN "SampleClass" t2 ON t2."Id" <> t1."Id"
 WHERE
 	t1."StrArray" > t2."StrArray" OR
-	t1."StrArray" > t2."StrArray" OR
+	t1."StrArray" >= t2."StrArray" OR
 	t1."StrArray" @> t2."StrArray" OR
 	t1."StrArray" <@ t2."StrArray" OR
 	t1."StrArray" && t2."StrArray" OR
