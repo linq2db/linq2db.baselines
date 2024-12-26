@@ -4,12 +4,13 @@
 SELECT
 	[m_2].[ParentID],
 	[m_2].[ChildID],
-	(ROW_NUMBER() OVER (ORDER BY [m_2].[ChildID] DESC) - 1) % 2,
-	ROW_NUMBER() OVER (ORDER BY [m_2].[ChildID] DESC) - 1
+	[m_2].[c1] % 2,
+	[m_2].[c1]
 FROM
 	(
 		SELECT
 			[m_1].[ChildID],
+			ROW_NUMBER() OVER (ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
 			[a_Parent].[ParentID]
 		FROM
 			[Child] [m_1]
@@ -26,12 +27,13 @@ BeforeExecute
 SELECT
 	[m_2].[ParentID],
 	[m_2].[ChildID],
-	(ROW_NUMBER() OVER (ORDER BY [m_2].[ChildID] DESC) - 1) % 2,
-	ROW_NUMBER() OVER (ORDER BY [m_2].[ChildID] DESC) - 1
+	[m_2].[c1] % 2,
+	[m_2].[c1]
 FROM
 	(
 		SELECT
 			[m_1].[ChildID],
+			ROW_NUMBER() OVER (ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
 			[a_Parent].[ParentID]
 		FROM
 			[Child] [m_1]
