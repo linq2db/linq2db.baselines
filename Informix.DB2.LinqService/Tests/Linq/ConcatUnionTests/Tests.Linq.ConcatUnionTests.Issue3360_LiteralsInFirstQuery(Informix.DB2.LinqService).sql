@@ -182,8 +182,8 @@ FROM
 			'0b8afe27-481c-442e-b8cf-729ddfeece30'::VARCHAR(36) as GuidN,
 			'ENUM1_VALUE'::NChar(11) as Enum,
 			'ENUM2_VALUE'::NChar(11) as EnumN,
-			't'::BOOLEAN::BOOLEAN::BOOLEAN as Bool,
-			'f'::BOOLEAN::BOOLEAN as BoolN
+			't'::BOOLEAN as Bool,
+			'f'::BOOLEAN as BoolN
 		FROM
 			Issue3360Table1 r
 		WHERE

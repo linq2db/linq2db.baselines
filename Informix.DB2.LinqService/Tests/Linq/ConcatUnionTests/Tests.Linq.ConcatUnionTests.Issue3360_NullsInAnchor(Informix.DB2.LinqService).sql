@@ -182,7 +182,7 @@ FROM
 			NULL::VARCHAR(36) as Guid_1,
 			NULL::NChar(11) as Enum,
 			NULL::NChar(11) as EnumN,
-			NULL::BOOLEAN::BOOLEAN as Bool,
+			NULL::BOOLEAN as Bool,
 			NULL::BOOLEAN as Bool_1
 		FROM
 			Issue3360Table1 r

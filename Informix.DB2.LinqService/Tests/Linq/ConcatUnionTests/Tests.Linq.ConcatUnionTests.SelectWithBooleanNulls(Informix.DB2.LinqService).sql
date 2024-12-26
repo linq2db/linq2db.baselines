@@ -19,7 +19,7 @@ SELECT
 		FROM
 			Child t2
 	),
-	NULL::BOOLEAN::BOOLEAN
+	NULL::BOOLEAN
 FROM
 	Parent x_1
 

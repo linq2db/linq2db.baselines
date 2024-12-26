@@ -378,7 +378,7 @@ SELECT
 	NULL::NVarChar(255),
 	t1.ItemCode_1,
 	t1.Name_1,
-	NULL::BOOLEAN::BOOLEAN,
+	NULL::BOOLEAN,
 	NULL::NVarChar(255),
 	NULL::NVarChar(255)
 FROM
@@ -398,7 +398,7 @@ WHERE
 UNION ALL
 SELECT
 	t2.cond,
-	NULL::BOOLEAN::BOOLEAN,
+	NULL::BOOLEAN,
 	NULL::NVarChar(255),
 	NULL::NVarChar(255),
 	t2.ItemCode,
@@ -461,7 +461,7 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN::BOOLEAN as Size_1,
+			NULL::BOOLEAN as Size_1,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
@@ -481,7 +481,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Color,
-			NULL::BOOLEAN::BOOLEAN as Color_1,
+			NULL::BOOLEAN as Color_1,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -547,7 +547,7 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN::BOOLEAN as Size_1,
+			NULL::BOOLEAN as Size_1,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
@@ -567,7 +567,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Color,
-			NULL::BOOLEAN::BOOLEAN as Color_1,
+			NULL::BOOLEAN as Color_1,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -634,7 +634,7 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN::BOOLEAN as Size_2,
+			NULL::BOOLEAN as Size_2,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
@@ -654,7 +654,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Size_1,
-			NULL::BOOLEAN::BOOLEAN as Color,
+			NULL::BOOLEAN as Color,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,
@@ -720,7 +720,7 @@ FROM
 			x.Style_1 as Name_1,
 			NULL::NVarChar(255) as ItemCode_2,
 			NULL::NVarChar(255) as Name_2,
-			NULL::BOOLEAN::BOOLEAN as Size_2,
+			NULL::BOOLEAN as Size_2,
 			NULL::NVarChar(255) as ItemCode_3,
 			NULL::NVarChar(255) as Name_3
 		FROM
@@ -740,7 +740,7 @@ FROM
 		UNION ALL
 		SELECT
 			t1.cond as Size_1,
-			NULL::BOOLEAN::BOOLEAN as Color,
+			NULL::BOOLEAN as Color,
 			NULL::NVarChar(255) as ItemCode,
 			NULL::NVarChar(255) as Name,
 			NULL::NVarChar(255) as ItemCode_1,

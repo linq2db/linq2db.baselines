@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			't'::BOOLEAN::BOOLEAN as IsActive,
+			't'::BOOLEAN as IsActive,
 			it.SmallIntValue <> 0 as Other
 		FROM
 			LinqDataTypes it
