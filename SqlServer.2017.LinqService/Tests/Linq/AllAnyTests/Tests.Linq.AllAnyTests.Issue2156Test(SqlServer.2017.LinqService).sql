@@ -85,5 +85,6 @@ FROM
 			[a_Patient].[Diagnosis] <> N'Immortality' OR [a_Patient].[Diagnosis] IS NULL
 	) [t1]
 ORDER BY
-	[t1].[ID]
+	[t1].[ID],
+	[t1].[FirstName]
 
