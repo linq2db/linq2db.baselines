@@ -84,6 +84,5 @@ FROM
 			`a_Patient`.`Diagnosis` <> 'Immortality' OR `a_Patient`.`Diagnosis` IS NULL
 	) `t1`
 ORDER BY
-	`t1`.`ID`,
-	`t1`.`FirstName`
+	`t1`.`ID`
 
