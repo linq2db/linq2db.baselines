@@ -23,7 +23,7 @@ FROM
 		LEFT JOIN Parent a_Parent_1 ON child_2.ParentID = a_Parent_1.ParentID
 UNION DISTINCT
 SELECT
-	Parent_ParentID as ParentID,
+	t1.Parent_ParentID as ParentID,
 	t1.Parent_ParentID as ParentID_1,
 	t1.Parent_Value1 as Value1,
 	t1.Child_ParentID as ParentID_2,
@@ -48,7 +48,7 @@ WITH CTE_1 AS
 SELECT
 	t1.Child_ParentID as ParentID,
 	t1.Child_ChildID as ChildID,
-	Parent_ParentID as ParentID_1,
+	t1.Parent_ParentID as ParentID_1,
 	t1.Parent_ParentID as ParentID_2,
 	t1.Parent_Value1 as Value1
 FROM
