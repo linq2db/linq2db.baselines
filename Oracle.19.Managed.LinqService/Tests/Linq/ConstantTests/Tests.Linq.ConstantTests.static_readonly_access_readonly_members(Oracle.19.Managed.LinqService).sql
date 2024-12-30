@@ -34,6 +34,40 @@ END;
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "TestConstantsData"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TestConstantsData"
+		(
+			"Id"                Int          NOT NULL,
+			"GuidValue"         Raw(16)      NOT NULL,
+			"GuidNullableValue" Raw(16)          NULL,
+			"StringValue"       VarChar(255)     NULL,
+
+			CONSTRAINT "PK_TestConstantsData" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @GuidValue Raw(16) -- Binary
