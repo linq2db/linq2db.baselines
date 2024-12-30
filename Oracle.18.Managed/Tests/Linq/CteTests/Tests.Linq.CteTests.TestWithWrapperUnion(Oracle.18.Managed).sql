@@ -30,7 +30,7 @@ FROM
 		LEFT JOIN "Parent" a_Parent_1 ON child_2."ParentID" = a_Parent_1."ParentID"
 UNION
 SELECT
-	t1."Parent_ParentID",
+	"Parent_ParentID",
 	t1."Parent_ParentID",
 	t1."Parent_Value1",
 	t1."Child_ParentID",
@@ -62,7 +62,7 @@ AS
 SELECT
 	t1."Child_ParentID",
 	t1."Child_ChildID",
-	t1."Parent_ParentID",
+	"Parent_ParentID",
 	t1."Parent_ParentID",
 	t1."Parent_Value1"
 FROM
