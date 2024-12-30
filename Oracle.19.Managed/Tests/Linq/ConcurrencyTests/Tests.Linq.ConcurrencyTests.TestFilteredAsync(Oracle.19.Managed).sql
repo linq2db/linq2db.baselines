@@ -32,39 +32,6 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ConcurrencyFiltered"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ConcurrencyFiltered"
-		(
-			"Id"    Int          NOT NULL,
-			"Stamp" Int          NOT NULL,
-			"Value" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_ConcurrencyFiltered" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
