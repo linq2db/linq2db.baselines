@@ -21,6 +21,7 @@ SELECT
 	r.LastName,
 	r.MiddleName,
 	r.Gender,
+	Patient_PersonID,
 	r.Patient_PersonID,
 	r.Patient_Diagnosis
 FROM
