@@ -115,18 +115,12 @@ DECLARE @group Integer(4) -- Int32
 SET     @group = 7
 
 SELECT
-	"p_1"."Id",
-	NTH_VALUE("p_1"."Id", 2) FROM FIRST OVER(ORDER BY "p_1"."Order_1" DESC)
+	"p"."Id",
+	NTH_VALUE("p"."Id", 2) FROM FIRST OVER(ORDER BY "p"."Order" DESC)
 FROM
-	(
-		SELECT
-			"p"."Id",
-			"p"."Order" as "Order_1"
-		FROM
-			"Position" "p"
-		WHERE
-			"p"."Group" = @group
-	) "p_1"
+	"Position" "p"
+WHERE
+	"p"."Group" = @group
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
