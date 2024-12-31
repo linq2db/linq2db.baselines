@@ -159,18 +159,11 @@ FROM
 			COUNT(*) OVER() as [TotalCount],
 			[e].[BookingID],
 			[e].[ServiceDate],
-			[e].[Value_1]
+			[e].[Value] as [Value_1]
 		FROM
-			(
-				SELECT
-					[t].[BookingID],
-					[t].[ServiceDate],
-					[t].[Value] as [Value_1]
-				FROM
-					[Booking] [t]
-				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
-			) [e]
+			[Booking] [e]
+		WHERE
+			[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
@@ -195,18 +188,11 @@ AS
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
 )
 SELECT
 	[q].[RowNumber],
@@ -246,18 +232,11 @@ AS
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
 )
 SELECT
 	[q].[RowNumber],
@@ -297,18 +276,11 @@ AS
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
 )
 SELECT
 	[q].[RowNumber],
