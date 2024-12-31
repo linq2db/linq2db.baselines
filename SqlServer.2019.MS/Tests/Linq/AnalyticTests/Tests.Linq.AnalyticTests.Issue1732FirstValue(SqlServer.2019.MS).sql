@@ -35,18 +35,12 @@ DECLARE @group Int -- Int32
 SET     @group = 7
 
 SELECT
-	[p_1].[Id],
-	FIRST_VALUE([p_1].[Id]) OVER(ORDER BY [p_1].[Order_1] DESC)
+	[p].[Id],
+	FIRST_VALUE([p].[Id]) OVER(ORDER BY [p].[Order] DESC)
 FROM
-	(
-		SELECT
-			[p].[Id],
-			[p].[Order] as [Order_1]
-		FROM
-			[Position] [p]
-		WHERE
-			[p].[Group] = @group
-	) [p_1]
+	[Position] [p]
+WHERE
+	[p].[Group] = @group
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
