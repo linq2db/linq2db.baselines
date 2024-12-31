@@ -45,18 +45,12 @@ DECLARE @group_1 Int32
 SET     @group_1 = 7
 
 SELECT
-	p_1."Id",
-	LAG(p_1."Id", 1, -1) OVER(ORDER BY p_1."Order_1")
+	p."Id",
+	LAG(p."Id", 1, -1) OVER(ORDER BY p."Order")
 FROM
-	(
-		SELECT
-			p."Id",
-			p."Order" as "Order_1"
-		FROM
-			"Position" p
-		WHERE
-			p."Group" = :group_1
-	) p_1
+	"Position" p
+WHERE
+	p."Group" = :group_1
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
