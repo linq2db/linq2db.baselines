@@ -159,18 +159,11 @@ FROM
 			COUNT(*) OVER() as [TotalCount],
 			[e].[BookingID],
 			[e].[ServiceDate],
-			[e].[Value_1]
+			[e].[Value] as [Value_1]
 		FROM
-			(
-				SELECT
-					[t].[BookingID],
-					[t].[ServiceDate],
-					[t].[Value] as [Value_1]
-				FROM
-					[Booking] [t]
-				WHERE
-					[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
-			) [e]
+			[Booking] [e]
+		WHERE
+			[e].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
@@ -186,7 +179,6 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
-	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -195,25 +187,16 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 )
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM
@@ -240,7 +223,6 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
-	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -249,25 +231,16 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 )
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM
@@ -294,7 +267,6 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
-	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -303,25 +275,16 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
-		[e].[Value_1]
+		[e].[Value]
 	FROM
-		(
-			SELECT
-				[t].[BookingID],
-				[t].[ServiceDate],
-				[t].[Value] as [Value_1]
-			FROM
-				[Booking] [t]
-			WHERE
-				[t].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
-		) [e]
+		[Booking] [e]
+	WHERE
+		[e].[ServiceDate] > DateAdd(day, -2, DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7))
 )
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM

@@ -107,7 +107,6 @@ AS
 	"Value1",
 	"Value3",
 	"Value5",
-	"Value2",
 	"Value4"
 )
 AS
@@ -117,7 +116,6 @@ AS
 		"r_1"."Value2",
 		"r_1"."Value5",
 		"r_1"."Value3",
-		"r_1"."Value2",
 		"r_1"."Value4"
 	FROM
 		"CTE_1" "r_1"
@@ -128,7 +126,6 @@ AS
 	"Id",
 	"Value1",
 	"Value2",
-	"Value3",
 	"Value5"
 )
 AS
@@ -138,7 +135,6 @@ AS
 		"r_2"."Value1",
 		"r_2"."Value3",
 		"r_2"."Value5",
-		"r_2"."Value2",
 		"r_2"."Value4"
 	FROM
 		"CTE_2" "r_2"
@@ -147,7 +143,6 @@ SELECT
 	"t1"."Id",
 	"t1"."Value1",
 	"t1"."Value2",
-	"t1"."Value3",
 	"t1"."Value4",
 	"t1"."Value5",
 	"d"."Id"

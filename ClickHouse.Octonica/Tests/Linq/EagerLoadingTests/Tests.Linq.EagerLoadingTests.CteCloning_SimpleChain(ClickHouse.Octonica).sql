@@ -95,7 +95,6 @@ CTE_2 AS
 		r_1.Value2 as Value1,
 		r_1.Value5 as Value3,
 		r_1.Value3 as Value5,
-		r_1.Value2,
 		r_1.Value4
 	FROM
 		CTE_1 r_1
@@ -107,7 +106,6 @@ CTE_3 AS
 		r_2.Value1 as Id,
 		r_2.Value3 as Value1,
 		r_2.Value5 as Value2,
-		r_2.Value2 as Value3,
 		r_2.Value4 as Value5
 	FROM
 		CTE_2 r_2
@@ -116,7 +114,6 @@ SELECT
 	t1.Id,
 	t1.Value1,
 	t1.Value2,
-	t1.Value3,
 	t1.Value4,
 	t1.Value5,
 	d.Id

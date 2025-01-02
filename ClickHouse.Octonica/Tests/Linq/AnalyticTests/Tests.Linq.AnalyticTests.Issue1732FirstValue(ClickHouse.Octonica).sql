@@ -33,18 +33,12 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p_1.Id,
-	FIRST_VALUE(p_1.Id) RESPECT NULLS OVER(ORDER BY p_1.Order_1 DESC)
+	p.Id,
+	FIRST_VALUE(p.Id) RESPECT NULLS OVER(ORDER BY p.Order DESC)
 FROM
-	(
-		SELECT
-			p.Id as Id,
-			p.Order as Order_1
-		FROM
-			Position p
-		WHERE
-			p.Group = 7
-	) p_1
+	Position p
+WHERE
+	p.Group = 7
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
