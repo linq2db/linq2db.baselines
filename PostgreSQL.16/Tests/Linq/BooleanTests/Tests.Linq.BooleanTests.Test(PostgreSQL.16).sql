@@ -11517,7 +11517,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") = 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END = 0
 			THEN True
@@ -11533,7 +11533,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END = 0
 			THEN True
@@ -11549,7 +11549,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END = 0
 			THEN True
@@ -11583,7 +11583,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") > 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END > 0
 			THEN True
@@ -11599,7 +11599,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END > 0
 			THEN True
@@ -11615,7 +11615,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END > 0
 			THEN True
@@ -11649,7 +11649,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") >= 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END >= 0
 			THEN True
@@ -11665,7 +11665,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END >= 0
 			THEN True
@@ -11681,7 +11681,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END >= 0
 			THEN True
@@ -11715,7 +11715,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") < 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END < 0
 			THEN True
@@ -11731,7 +11731,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END < 0
 			THEN True
@@ -11747,7 +11747,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END < 0
 			THEN True
@@ -11781,7 +11781,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") <= 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END <= 0
 			THEN True
@@ -11797,7 +11797,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END <= 0
 			THEN True
@@ -11813,7 +11813,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END <= 0
 			THEN True
@@ -11852,7 +11852,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") = 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END = 0
 			THEN True
@@ -11868,7 +11868,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END = 0
 			THEN True
@@ -11884,7 +11884,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END = 0
 			THEN True
@@ -11918,7 +11918,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") > 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END > 0
 			THEN True
@@ -11934,7 +11934,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END > 0
 			THEN True
@@ -11950,7 +11950,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END > 0
 			THEN True
@@ -11984,7 +11984,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") >= 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END >= 0
 			THEN True
@@ -12000,7 +12000,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END >= 0
 			THEN True
@@ -12016,7 +12016,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END >= 0
 			THEN True
@@ -12050,7 +12050,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") < 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END < 0
 			THEN True
@@ -12066,7 +12066,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END < 0
 			THEN True
@@ -12082,7 +12082,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END < 0
 			THEN True
@@ -12116,7 +12116,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") <= 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END <= 0
 			THEN True
@@ -12132,7 +12132,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END <= 0
 			THEN True
@@ -12148,7 +12148,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END <= 0
 			THEN True
@@ -13090,7 +13090,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") = 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END = 0
 			THEN True
@@ -13106,7 +13106,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END = 0
 			THEN True
@@ -13122,7 +13122,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END = 0
 			THEN True
@@ -13156,7 +13156,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") > 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END > 0
 			THEN True
@@ -13172,7 +13172,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END > 0
 			THEN True
@@ -13188,7 +13188,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END > 0
 			THEN True
@@ -13222,7 +13222,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") >= 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END >= 0
 			THEN True
@@ -13238,7 +13238,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END >= 0
 			THEN True
@@ -13254,7 +13254,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END >= 0
 			THEN True
@@ -13288,7 +13288,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") < 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END < 0
 			THEN True
@@ -13304,7 +13304,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END < 0
 			THEN True
@@ -13320,7 +13320,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END < 0
 			THEN True
@@ -13354,7 +13354,7 @@ SELECT
 	Coalesce(r."DoubleN", r."Double") <= 0,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."Int32N"
+			WHEN r."Boolean" THEN r."Int32N"
 			ELSE r."Int32"
 		END <= 0
 			THEN True
@@ -13370,7 +13370,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DecimalN"
+			WHEN r."Boolean" THEN r."DecimalN"
 			ELSE r."Decimal"
 		END <= 0
 			THEN True
@@ -13386,7 +13386,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r."Boolean" = True THEN r."DoubleN"
+			WHEN r."Boolean" THEN r."DoubleN"
 			ELSE r."Double"
 		END <= 0
 			THEN True
@@ -13425,7 +13425,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") = 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END = 0
 			THEN True
@@ -13441,7 +13441,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END = 0
 			THEN True
@@ -13457,7 +13457,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END = 0
 			THEN True
@@ -13491,7 +13491,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") > 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END > 0
 			THEN True
@@ -13507,7 +13507,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END > 0
 			THEN True
@@ -13523,7 +13523,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END > 0
 			THEN True
@@ -13557,7 +13557,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") >= 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END >= 0
 			THEN True
@@ -13573,7 +13573,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END >= 0
 			THEN True
@@ -13589,7 +13589,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END >= 0
 			THEN True
@@ -13623,7 +13623,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") < 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END < 0
 			THEN True
@@ -13639,7 +13639,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END < 0
 			THEN True
@@ -13655,7 +13655,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END < 0
 			THEN True
@@ -13689,7 +13689,7 @@ SELECT
 	Coalesce(r_1."DoubleN", r_1."Double") <= 0,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."Int32N"
+			WHEN r_1."Boolean" THEN r_1."Int32N"
 			ELSE r_1."Int32"
 		END <= 0
 			THEN True
@@ -13705,7 +13705,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DecimalN"
+			WHEN r_1."Boolean" THEN r_1."DecimalN"
 			ELSE r_1."Decimal"
 		END <= 0
 			THEN True
@@ -13721,7 +13721,7 @@ SELECT
 	END,
 	CASE
 		WHEN CASE
-			WHEN r_1."Boolean" = True THEN r_1."DoubleN"
+			WHEN r_1."Boolean" THEN r_1."DoubleN"
 			ELSE r_1."Double"
 		END <= 0
 			THEN True

@@ -58,7 +58,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.Id > 0
+	NOT t.BoolValue AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -70,7 +70,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -347,7 +347,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
+	NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -360,7 +360,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -372,7 +372,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND
 	t.Id > 0
 
 BeforeExecute
@@ -385,7 +385,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
+	NOT (NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -397,7 +397,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.NullableBoolValue = false AND
+	NOT t.BoolValue AND t.NullableBoolValue = false AND
 	t.Id > 0
 
 BeforeExecute
@@ -410,7 +410,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -422,7 +422,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -435,7 +435,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
+	NOT (NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

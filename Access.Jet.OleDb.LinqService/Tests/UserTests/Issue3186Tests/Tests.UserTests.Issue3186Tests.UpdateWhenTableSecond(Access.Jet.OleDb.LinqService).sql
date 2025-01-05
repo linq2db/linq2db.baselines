@@ -302,7 +302,7 @@ UPDATE
 			[element_services] [ct]
 	) [cross_1]
 		INNER JOIN [component_categories] [ctg_1] ON ([cross_1].[id] = [ctg_1].[service_id]))
-		INNER JOIN [Components] [cm] ON ([ctg_1].[id] = [cm].[category_id] AND [cm].[is_deleted] = False)
+		INNER JOIN [Components] [cm] ON ([ctg_1].[id] = [cm].[category_id] AND NOT [cm].[is_deleted])
 SET
 	[cross_1].[is_deleted] = @is_deleted
 WHERE
@@ -318,7 +318,7 @@ SELECT
 FROM
 	[component_categories] [x]
 WHERE
-	[x].[is_deleted] = True AND [x].[service_id] = 'TestProcessService'
+	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -330,7 +330,7 @@ SELECT
 FROM
 	[component_categories] [x]
 WHERE
-	[x].[is_deleted] = False AND [x].[service_id] <> 'TestProcessService'
+	NOT [x].[is_deleted] AND [x].[service_id] <> 'TestProcessService'
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

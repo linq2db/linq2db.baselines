@@ -293,7 +293,7 @@ FROM
 			[t1].[cond] = 1
 	) [x_1]
 WHERE
-	NOT ([x_1].[Color] = 1 AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] = 1 AND [x_1].[Color_1] IS NOT NULL OR [x_1].[Color] = 0)
+	NOT ([x_1].[Color] = 1 AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -490,7 +490,7 @@ FROM
 			[t1].[cond] = 1
 	) [x_1]
 WHERE
-	NOT ([x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 AND [x_1].[Size_2] IS NOT NULL OR [x_1].[Size_1] = 0)
+	NOT ([x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR [x_1].[Size_1] = 0)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

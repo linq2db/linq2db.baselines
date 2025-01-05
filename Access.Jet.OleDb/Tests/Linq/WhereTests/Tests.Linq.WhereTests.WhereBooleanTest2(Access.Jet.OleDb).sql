@@ -255,7 +255,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = False AND [t].[Id] > 0
+	NOT [t].[BoolValue] AND [t].[Id] > 0
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -267,7 +267,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
+	NOT (NOT [t].[BoolValue] AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -448,7 +448,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
+	NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -461,7 +461,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
+	NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -473,7 +473,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND
+	NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -486,7 +486,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (NOT ([t].[BoolValue] = False AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
+	NOT (NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -498,7 +498,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	[t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND
+	NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -511,7 +511,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
+	NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
@@ -523,7 +523,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT ([t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND
+	NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
 BeforeExecute
@@ -536,7 +536,7 @@ SELECT
 FROM
 	[WhereCases] [t]
 WHERE
-	NOT (NOT ([t].[BoolValue] = False AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
+	NOT (NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND [t].[Id] > 0)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

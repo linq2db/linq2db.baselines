@@ -86,7 +86,7 @@ FROM
 	) m_1
 		INNER JOIN ChildRecord d ON m_1.Id = d.ParentId
 WHERE
-	d.IsActive = true
+	d.IsActive
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

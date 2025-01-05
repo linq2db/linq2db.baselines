@@ -110,7 +110,7 @@ WHERE
 	[sr].[id] = 'TestProcessService' AND
 	[sr].[id] = [component_categories].[service_id] AND
 	[component_categories].[id] = [cm].[category_id] AND
-	[cm].[is_deleted] = 0
+	NOT [cm].[is_deleted]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -122,7 +122,7 @@ SELECT
 FROM
 	[component_categories] [x]
 WHERE
-	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
+	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -134,7 +134,7 @@ SELECT
 FROM
 	[component_categories] [x]
 WHERE
-	[x].[is_deleted] = 0 AND [x].[service_id] <> 'TestProcessService'
+	NOT [x].[is_deleted] AND [x].[service_id] <> 'TestProcessService'
 
 BeforeExecute
 -- SQLite.Classic SQLite

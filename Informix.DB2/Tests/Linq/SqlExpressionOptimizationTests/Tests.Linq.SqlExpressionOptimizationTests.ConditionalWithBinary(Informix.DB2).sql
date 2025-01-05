@@ -1045,7 +1045,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue <> 't'::BOOLEAN
+	swap_with_not.BoolValue = 'f'::BOOLEAN
 
 BeforeExecute
 -- Informix.DB2 Informix

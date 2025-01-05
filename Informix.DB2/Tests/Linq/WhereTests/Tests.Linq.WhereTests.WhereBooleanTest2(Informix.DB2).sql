@@ -255,7 +255,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = 'f'::BOOLEAN AND t.Id > 0
+	NOT t.BoolValue AND t.Id > 0
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -267,7 +267,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f'::BOOLEAN AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -544,7 +544,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = 'f'::BOOLEAN AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL) AND
+	NOT t.BoolValue AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -557,7 +557,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f'::BOOLEAN AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL) AND t.Id > 0)
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL) AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -569,7 +569,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f'::BOOLEAN AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL)) AND
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL)) AND
 	t.Id > 0
 
 BeforeExecute
@@ -582,7 +582,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = 'f'::BOOLEAN AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
+	NOT (NOT (NOT t.BoolValue AND (t.NullableBoolValue = 'f'::BOOLEAN OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -594,7 +594,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = 'f'::BOOLEAN AND t.NullableBoolValue = 'f'::BOOLEAN AND
+	NOT t.BoolValue AND t.NullableBoolValue = 'f'::BOOLEAN AND
 	t.Id > 0
 
 BeforeExecute
@@ -607,7 +607,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f'::BOOLEAN AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -619,7 +619,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = 'f'::BOOLEAN AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL) AND
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -632,7 +632,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = 'f'::BOOLEAN AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
+	NOT (NOT (NOT t.BoolValue AND t.NullableBoolValue = 'f'::BOOLEAN AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
 
 BeforeExecute
 -- Informix.DB2 Informix

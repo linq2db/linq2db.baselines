@@ -42,7 +42,7 @@ FROM
 	"WhereWithBool" "t",
 	"WhereWithBool" "x"
 WHERE
-	"x"."BoolValue" = TRUE AND "x"."Id" = 1
+	"x"."BoolValue" AND "x"."Id" = 1
 
 BeforeExecute
 -- Firebird.4 Firebird4

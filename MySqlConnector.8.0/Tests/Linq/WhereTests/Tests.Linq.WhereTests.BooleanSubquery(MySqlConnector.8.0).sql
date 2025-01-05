@@ -35,7 +35,7 @@ FROM
 	`WhereWithBool` `t`,
 	`WhereWithBool` `x`
 WHERE
-	`x`.`BoolValue` = 1 AND `x`.`Id` = 1
+	`x`.`BoolValue` AND `x`.`Id` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

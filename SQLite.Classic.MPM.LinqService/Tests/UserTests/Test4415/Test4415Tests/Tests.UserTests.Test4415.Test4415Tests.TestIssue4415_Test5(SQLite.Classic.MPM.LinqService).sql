@@ -66,20 +66,13 @@ SELECT
 FROM
 	[Common_Language] [x]
 WHERE
-	EXISTS(
+	[x].[LanguageID] IN (
 		SELECT
-			*
+			Coalesce(MAX([x_1].[LanguageID]), '') || 'test'
 		FROM
-			(
-				SELECT
-					Coalesce(MAX([x_1].[LanguageID]), '') || 'test' as [c1]
-				FROM
-					[Common_Language] [x_1]
-				GROUP BY
-					[x_1].[Name]
-			) [t1]
-		WHERE
-			[x].[LanguageID] = [t1].[c1] OR [x].[LanguageID] IS NULL AND [t1].[c1] IS NULL
+			[Common_Language] [x_1]
+		GROUP BY
+			[x_1].[Name]
 	)
 
 BeforeExecute

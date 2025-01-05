@@ -35,7 +35,7 @@ FROM
 	"WhereWithBool" t,
 	"WhereWithBool" x
 WHERE
-	x."BoolValue" = True AND x."Id" = 1
+	x."BoolValue" AND x."Id" = 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

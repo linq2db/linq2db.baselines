@@ -1,0 +1,81 @@
+﻿BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS "TestBool"
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TestBool"
+(
+	"Id"    Int     NOT NULL,
+	"Value" Boolean     NULL
+)
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+INSERT INTO "TestBool"
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	1,
+	NULL
+)
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"TestBool" t1
+LIMIT 2
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+UPDATE
+	"TestBool"
+SET
+	"Id" = 1,
+	"Value" = NOT "TestBool"."Value"
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"TestBool" t1
+LIMIT 2
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+UPDATE
+	"TestBool"
+SET
+	"Id" = 1,
+	"Value" = NULL
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"TestBool" t1
+LIMIT 2
+
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS "TestBool"
+

@@ -228,7 +228,7 @@ SELECT
 	"grp"."SiteID",
 	COUNT(*),
 	COUNT(CASE
-		WHEN "grp"."Active" = 0 THEN 1
+		WHEN NOT "grp"."Active" THEN 1
 		ELSE NULL
 	END)
 FROM
