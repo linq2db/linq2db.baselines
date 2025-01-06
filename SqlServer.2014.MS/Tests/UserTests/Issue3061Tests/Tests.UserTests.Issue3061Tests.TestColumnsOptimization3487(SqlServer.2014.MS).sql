@@ -53,7 +53,7 @@ BeforeExecute
 SELECT
 	[t1].[cond],
 	[t1].[Html],
-	[t1].[Plain2],
+	[t1].[Plain],
 	[t2].[cond],
 	[t2].[Html],
 	[t2].[Plain]
@@ -62,7 +62,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_SomeDrafts].[Html],
-				[a_SomeDrafts].[Plain] as [Plain2],
+				[a_SomeDrafts].[Plain],
 				1 as [cond]
 			FROM
 				[Draft1] [a_SomeDrafts]
