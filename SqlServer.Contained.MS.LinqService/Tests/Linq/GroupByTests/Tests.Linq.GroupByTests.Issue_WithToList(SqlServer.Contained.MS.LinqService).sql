@@ -80,7 +80,7 @@ SET     @tz = N'UTC'
 
 SELECT
 	[t3].[Id],
-	[t3].[group_1],
+	[t3].[Id_1],
 	[t3].[count_1],
 	[t3].[percents],
 	[t3].[hours],
@@ -90,7 +90,7 @@ FROM
 		SELECT
 			COUNT(*) as [count_1],
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
 			[t2].[minutes]
@@ -98,7 +98,7 @@ FROM
 			(
 				SELECT
 					[t1].[Id],
-					[a_Reference].[Id] as [group_1],
+					[a_Reference].[Id] as [Id_1],
 					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
 					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
@@ -107,11 +107,11 @@ FROM
 			) [t2]
 		GROUP BY
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			[t2].[hours],
 			[t2].[minutes]
 		HAVING
-			[t2].[group_1] IS NULL
+			[t2].[Id_1] IS NULL
 	) [t3]
 ORDER BY
 	[t3].[count_1] DESC
@@ -125,7 +125,7 @@ SET     @key = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT
 	[t3].[Id],
-	[t3].[group_1],
+	[t3].[Id_1],
 	[t3].[count_1],
 	[t3].[percents],
 	[t3].[hours],
@@ -135,7 +135,7 @@ FROM
 		SELECT
 			COUNT(*) as [count_1],
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
 			[t2].[hours],
 			[t2].[minutes]
@@ -143,7 +143,7 @@ FROM
 			(
 				SELECT
 					[t1].[Id],
-					[a_Reference].[Id] as [group_1],
+					[a_Reference].[Id] as [Id_1],
 					DATEPART(hour, [t1].[DateTime] AT TIME ZONE @tz) as [hours],
 					DATEPART(minute, [t1].[DateTime] AT TIME ZONE @tz) as [minutes]
 				FROM
@@ -152,11 +152,11 @@ FROM
 			) [t2]
 		GROUP BY
 			[t2].[Id],
-			[t2].[group_1],
+			[t2].[Id_1],
 			[t2].[hours],
 			[t2].[minutes]
 		HAVING
-			[t2].[group_1] = @key
+			[t2].[Id_1] = @key
 	) [t3]
 ORDER BY
 	[t3].[count_1] DESC

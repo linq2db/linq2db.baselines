@@ -90,7 +90,7 @@ FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[t1].[Value3] as [cond],
+				[t1].[Id3] as [cond],
 				[t1].[Name3],
 				[x_1].[ID2] as [Id2],
 				[x_1].[NAME2] as [Name2]
@@ -99,7 +99,7 @@ FROM
 					OUTER APPLY (
 						SELECT TOP (1)
 							[x].[NAME3] as [Name3],
-							[x].[ID3] as [Value3]
+							[x].[ID3] as [Id3]
 						FROM
 							[TABLE3] [x]
 						WHERE
