@@ -5,7 +5,7 @@ SET     @groupId = 2
 
 SELECT
 	[t1].[ChildID],
-	[t1].[group_1],
+	[t1].[ParentID],
 	[t1].[count_1],
 	[t1].[percents]
 FROM
@@ -13,7 +13,7 @@ FROM
 		SELECT
 			COUNT(*) as [count_1],
 			[g_1].[ChildID],
-			[a_Parent].[ParentID] as [group_1],
+			[a_Parent].[ParentID],
 			(COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER()) as [percents]
 		FROM
 			[Child] [g_1]
