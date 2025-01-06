@@ -4,12 +4,12 @@ DECLARE @take Int32
 SET     @take = 100
 
 SELECT
-	t2."key_1",
+	t2.ID,
 	t2."sort_1"
 FROM
 	(
 		SELECT
-			t1."PersonID" as "key_1",
+			t1."PersonID" as ID,
 			t1."PersonID" as "sort_1"
 		FROM
 			"Person" t1
@@ -22,5 +22,5 @@ FROM
 WHERE
 	ROWNUM <= :take
 ORDER BY
-	t2."key_1"
+	t2.ID
 
