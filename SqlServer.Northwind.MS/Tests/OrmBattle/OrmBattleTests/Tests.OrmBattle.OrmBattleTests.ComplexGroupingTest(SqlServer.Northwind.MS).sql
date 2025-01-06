@@ -5,8 +5,8 @@ BeforeExecute
 
 SELECT
 	[m_1].[cond],
-	[m_1].[Year_1],
 	[m_1].[Key_1],
+	[m_1].[Key_2],
 	[d_4].[OrderID],
 	[d_4].[CustomerID],
 	[d_4].[EmployeeID],
@@ -25,13 +25,13 @@ FROM
 	(
 		SELECT DISTINCT
 			[t2].[cond],
-			[t2].[Year_1],
-			[d_3].[Key_1]
+			[t2].[Key_1],
+			[d_3].[Key_1] as [Key_2]
 		FROM
 			(
 				SELECT DISTINCT
 					[d_1].[cond],
-					[d_1].[Year_1]
+					[d_1].[Key_1]
 				FROM
 					(
 						SELECT DISTINCT
@@ -41,7 +41,7 @@ FROM
 					) [t1]
 						CROSS APPLY (
 							SELECT
-								[d].[Key_1] as [Year_1],
+								[d].[Key_1],
 								[t1].[cond]
 							FROM
 								(
@@ -66,27 +66,27 @@ FROM
 							FROM
 								[Orders] [mg]
 							WHERE
-								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Year_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Key_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
 						) [d_2]
 					GROUP BY
 						[d_2].[Key_1]
 				) [d_3]
 	) [m_1]
-		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Key_1] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
+		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[m_1].[cond],
-	[m_1].[Year_1],
-	[d_3].[Month_1],
-	[d_3].[Month_1]
+	[m_1].[Key_1],
+	[d_3].[Key_1],
+	[d_3].[Key_1]
 FROM
 	(
 		SELECT DISTINCT
 			[d_1].[cond],
-			[d_1].[Year_1]
+			[d_1].[Key_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -96,7 +96,7 @@ FROM
 			) [t1]
 				CROSS APPLY (
 					SELECT
-						[d].[Key_1] as [Year_1],
+						[d].[Key_1],
 						[t1].[cond]
 					FROM
 						(
@@ -113,7 +113,7 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT
-				[d_2].[Key_1] as [Month_1]
+				[d_2].[Key_1]
 			FROM
 				(
 					SELECT
@@ -121,7 +121,7 @@ FROM
 					FROM
 						[Orders] [mg]
 					WHERE
-						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
 				) [d_2]
 			GROUP BY
 				[d_2].[Key_1]
@@ -132,12 +132,12 @@ BeforeExecute
 
 SELECT
 	[m_1].[CustomerID],
-	[d_1].[Year_1]
+	[d_1].[Key_1]
 FROM
 	[Customers] [m_1]
 		CROSS APPLY (
 			SELECT
-				[d].[Key_1] as [Year_1]
+				[d].[Key_1]
 			FROM
 				(
 					SELECT
