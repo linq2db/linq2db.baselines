@@ -73,17 +73,17 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[g_2].[IsDelisted],
+	[g_2].[cond],
 	COUNT(*)
 FROM
 	(
 		SELECT
-			IIF([g_1].[TradingStatus] = N'D', 1, 0) as [IsDelisted]
+			IIF([g_1].[TradingStatus] = N'D', 1, 0) as [cond]
 		FROM
 			[Issue913Test] [g_1]
 	) [g_2]
 GROUP BY
-	[g_2].[IsDelisted]
+	[g_2].[cond]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
