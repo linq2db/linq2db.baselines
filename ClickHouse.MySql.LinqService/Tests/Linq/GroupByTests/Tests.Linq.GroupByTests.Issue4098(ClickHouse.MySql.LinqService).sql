@@ -265,7 +265,7 @@ BeforeExecute
 
 SELECT
 	ip.InvestorId,
-	t1.TotalUnits,
+	t1.Units,
 	sum(ip.NetPayment)
 FROM
 	PaymentEvent p
@@ -274,7 +274,7 @@ FROM
 		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND p.Id = pc.EventId
 		INNER JOIN (
 			SELECT
-				sum(b.Units) as TotalUnits,
+				sum(b.Units) as Units,
 				b.InvestorId as InvestorId,
 				b.SecurityClass as SecurityClass
 			FROM
@@ -285,7 +285,7 @@ FROM
 		) t1 ON ip.InvestorId = t1.InvestorId AND p.SecurityClass = t1.SecurityClass
 GROUP BY
 	ip.InvestorId,
-	t1.TotalUnits
+	t1.Units
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
