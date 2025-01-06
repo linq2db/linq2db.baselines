@@ -934,7 +934,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue <> true
+	swap_with_not.BoolValue = false
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

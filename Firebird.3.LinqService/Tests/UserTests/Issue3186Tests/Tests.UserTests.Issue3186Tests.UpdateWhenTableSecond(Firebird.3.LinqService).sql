@@ -326,7 +326,7 @@ WHERE
 		FROM
 			"element_services" "ct"
 				INNER JOIN "component_categories" "ctg" ON "ct"."id" = "ctg"."service_id"
-				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND "cm"."is_deleted" = FALSE
+				INNER JOIN "Components" "cm" ON "ctg"."id" = "cm"."category_id" AND NOT "cm"."is_deleted"
 		WHERE
 			"ct"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
@@ -341,7 +341,7 @@ SELECT
 FROM
 	"component_categories" "x"
 WHERE
-	"x"."is_deleted" = TRUE AND "x"."service_id" = 'TestProcessService'
+	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -353,7 +353,7 @@ SELECT
 FROM
 	"component_categories" "x"
 WHERE
-	"x"."is_deleted" = FALSE AND "x"."service_id" <> 'TestProcessService'
+	NOT "x"."is_deleted" AND "x"."service_id" <> 'TestProcessService'
 
 BeforeExecute
 -- Firebird.3 Firebird3

@@ -294,7 +294,7 @@ SET     @is_deleted = 1
 UPDATE
 	`component_categories` `ct`
 		INNER JOIN `element_services` `sr` ON `sr`.`id` = `ct`.`service_id`
-		LEFT JOIN `Components` `cm` ON `ct`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
+		LEFT JOIN `Components` `cm` ON `ct`.`id` = `cm`.`category_id` AND NOT `cm`.`is_deleted`
 SET
 	`ct`.`is_deleted` = @is_deleted
 WHERE
@@ -310,7 +310,7 @@ SELECT
 FROM
 	`component_categories` `x`
 WHERE
-	`x`.`is_deleted` = 1 AND `x`.`service_id` = 'TestProcessService'
+	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -322,7 +322,7 @@ SELECT
 FROM
 	`component_categories` `x`
 WHERE
-	`x`.`is_deleted` = 0 AND `x`.`service_id` <> 'TestProcessService'
+	NOT `x`.`is_deleted` AND `x`.`service_id` <> 'TestProcessService'
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

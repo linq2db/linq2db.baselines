@@ -42,7 +42,7 @@ FROM
 	WhereWithBool t,
 	WhereWithBool x
 WHERE
-	x.BoolValue = 't'::BOOLEAN AND x.Id = 1
+	x.BoolValue AND x.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

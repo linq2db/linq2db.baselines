@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN [p].[Discontinued] = 0 THEN 'NULL'
-		WHEN [p].[Discontinued] = 1 THEN [p].[ProductName]
+		WHEN NOT [p].[Discontinued] THEN 'NULL'
+		WHEN [p].[Discontinued] THEN [p].[ProductName]
 		ELSE NULL
 	END
 FROM

@@ -46,7 +46,7 @@ FROM
 	MasterClass m_1
 		INNER JOIN MasterClass d ON d.Id = m_1.Id
 WHERE
-	m_1.IsDeleted = false AND d.IsDeleted = false
+	NOT m_1.IsDeleted AND NOT d.IsDeleted
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

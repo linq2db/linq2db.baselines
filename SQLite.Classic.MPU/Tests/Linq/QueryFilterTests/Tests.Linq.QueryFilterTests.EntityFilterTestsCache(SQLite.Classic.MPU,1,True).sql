@@ -45,7 +45,7 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [MasterClass] [d] ON [d].[Id] = [m_1].[Id]
 WHERE
-	[m_1].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
+	NOT [m_1].[IsDeleted] AND NOT [d].[IsDeleted]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

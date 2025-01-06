@@ -326,7 +326,7 @@ WHERE
 		FROM
 			"component_categories" "ct"
 				INNER JOIN "element_services" "sr" ON "sr"."id" = "ct"."service_id"
-				LEFT JOIN "Components" "cm" ON "ct"."id" = "cm"."category_id" AND "cm"."is_deleted" = 0
+				LEFT JOIN "Components" "cm" ON "ct"."id" = "cm"."category_id" AND NOT "cm"."is_deleted"
 		WHERE
 			"sr"."id" = 'TestProcessService' AND "component_categories"."id" = "ct"."id"
 	)
@@ -341,7 +341,7 @@ SELECT
 FROM
 	"component_categories" "x"
 WHERE
-	"x"."is_deleted" = 1 AND "x"."service_id" = 'TestProcessService'
+	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -353,7 +353,7 @@ SELECT
 FROM
 	"component_categories" "x"
 WHERE
-	"x"."is_deleted" = 0 AND "x"."service_id" <> 'TestProcessService'
+	NOT "x"."is_deleted" AND "x"."service_id" <> 'TestProcessService'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

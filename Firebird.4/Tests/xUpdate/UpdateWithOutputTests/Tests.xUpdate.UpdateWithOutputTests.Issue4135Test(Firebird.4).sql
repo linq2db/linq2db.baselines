@@ -45,7 +45,7 @@ UPDATE
 SET
 	"NeedsUpdate" = FALSE
 WHERE
-	"e"."NeedsUpdate" = TRUE
+	"e"."NeedsUpdate"
 ORDER BY
 	"e"."Id"
 ROWS @take

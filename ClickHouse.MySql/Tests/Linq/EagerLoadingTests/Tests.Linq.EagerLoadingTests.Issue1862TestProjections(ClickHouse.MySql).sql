@@ -155,7 +155,7 @@ FROM
 		INNER JOIN PostTag d_1 ON m_1.Id = d_1.PostId
 		INNER JOIN Tag a_Tag ON d_1.TagId = a_Tag.Id
 WHERE
-	d_1.IsDeleted = false
+	NOT d_1.IsDeleted
 ORDER BY
 	d_1.TagId
 

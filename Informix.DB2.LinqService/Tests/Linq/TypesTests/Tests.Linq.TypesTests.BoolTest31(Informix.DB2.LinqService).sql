@@ -15,5 +15,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.BoolValue = 't'::BOOLEAN
+	t.BoolValue
 

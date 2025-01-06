@@ -1113,7 +1113,7 @@ SELECT
 FROM
 	MasterClass m_1
 WHERE
-	m_1.IsDeleted = false
+	NOT m_1.IsDeleted
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -1135,7 +1135,7 @@ SELECT
 FROM
 	MasterClass m_1
 WHERE
-	m_1.IsDeleted = false
+	NOT m_1.IsDeleted
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

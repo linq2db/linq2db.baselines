@@ -124,7 +124,7 @@ WHERE
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] IS NOT NULL AND ([t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL)
+			[p].[ID] IS NOT NULL AND [t].[ID] = [p].[ID]
 	)
 
 BeforeExecute

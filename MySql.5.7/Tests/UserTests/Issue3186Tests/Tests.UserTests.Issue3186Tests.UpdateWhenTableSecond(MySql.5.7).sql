@@ -103,7 +103,7 @@ UPDATE
 	`component_categories` `ctg`,
 	`element_services` `ct`
 		INNER JOIN `component_categories` `ctg_1` ON `ct`.`id` = `ctg_1`.`service_id`
-		INNER JOIN `Components` `cm` ON `ctg_1`.`id` = `cm`.`category_id` AND `cm`.`is_deleted` = 0
+		INNER JOIN `Components` `cm` ON `ctg_1`.`id` = `cm`.`category_id` AND NOT `cm`.`is_deleted`
 SET
 	`ctg`.`is_deleted` = @is_deleted
 WHERE
@@ -119,7 +119,7 @@ SELECT
 FROM
 	`component_categories` `x`
 WHERE
-	`x`.`is_deleted` = 1 AND `x`.`service_id` = 'TestProcessService'
+	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -131,7 +131,7 @@ SELECT
 FROM
 	`component_categories` `x`
 WHERE
-	`x`.`is_deleted` = 0 AND `x`.`service_id` <> 'TestProcessService'
+	NOT `x`.`is_deleted` AND `x`.`service_id` <> 'TestProcessService'
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

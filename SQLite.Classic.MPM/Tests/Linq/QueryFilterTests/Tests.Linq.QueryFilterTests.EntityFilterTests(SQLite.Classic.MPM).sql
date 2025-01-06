@@ -1110,7 +1110,7 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 WHERE
-	[m_1].[IsDeleted] = 0
+	NOT [m_1].[IsDeleted]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1132,7 +1132,7 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 WHERE
-	[m_1].[IsDeleted] = 0
+	NOT [m_1].[IsDeleted]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

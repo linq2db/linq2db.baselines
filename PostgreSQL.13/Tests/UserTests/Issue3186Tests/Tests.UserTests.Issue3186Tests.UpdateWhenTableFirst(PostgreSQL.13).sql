@@ -110,7 +110,7 @@ WHERE
 	sr.id = 'TestProcessService' AND
 	sr.id = component_categories.service_id AND
 	component_categories.id = cm.category_id AND
-	cm.is_deleted = False
+	NOT cm.is_deleted
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -122,7 +122,7 @@ SELECT
 FROM
 	component_categories x
 WHERE
-	x.is_deleted = True AND x.service_id = 'TestProcessService'
+	x.is_deleted AND x.service_id = 'TestProcessService'
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -134,7 +134,7 @@ SELECT
 FROM
 	component_categories x
 WHERE
-	x.is_deleted = False AND x.service_id <> 'TestProcessService'
+	NOT x.is_deleted AND x.service_id <> 'TestProcessService'
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

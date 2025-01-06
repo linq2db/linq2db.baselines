@@ -37,7 +37,7 @@ FROM
 	WhereWithBool t,
 	WhereWithBool x
 WHERE
-	x.BoolValue = true AND x.Id = 1
+	x.BoolValue AND x.Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

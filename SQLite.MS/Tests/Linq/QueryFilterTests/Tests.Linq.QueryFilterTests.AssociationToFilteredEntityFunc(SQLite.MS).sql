@@ -1112,7 +1112,7 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id] = [d].[MasterId]
 WHERE
-	[d].[IsDeleted] = 0
+	NOT [d].[IsDeleted]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -1138,7 +1138,7 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id] = [d].[MasterId]
 WHERE
-	[d].[IsDeleted] = 0
+	NOT [d].[IsDeleted]
 
 BeforeExecute
 -- SQLite.MS SQLite

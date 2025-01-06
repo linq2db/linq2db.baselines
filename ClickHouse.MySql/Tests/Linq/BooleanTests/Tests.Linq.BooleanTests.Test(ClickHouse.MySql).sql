@@ -11505,7 +11505,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) = toFloat64(0) as Condition13,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END = 0
 			THEN true
@@ -11521,7 +11521,7 @@ SELECT
 	END as Condition22,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END = toDecimal128('0', 10)
 			THEN true
@@ -11537,7 +11537,7 @@ SELECT
 	END as Condition24,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END = toFloat64(0)
 			THEN true
@@ -11571,7 +11571,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) > toFloat64(0) as Condition113,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END > 0
 			THEN true
@@ -11587,7 +11587,7 @@ SELECT
 	END as Condition122,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END > toDecimal128('0', 10)
 			THEN true
@@ -11603,7 +11603,7 @@ SELECT
 	END as Condition124,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END > toFloat64(0)
 			THEN true
@@ -11637,7 +11637,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) >= toFloat64(0) as Condition213,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END >= 0
 			THEN true
@@ -11653,7 +11653,7 @@ SELECT
 	END as Condition222,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END >= toDecimal128('0', 10)
 			THEN true
@@ -11669,7 +11669,7 @@ SELECT
 	END as Condition224,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END >= toFloat64(0)
 			THEN true
@@ -11703,7 +11703,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) < toFloat64(0) as Condition313,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END < 0
 			THEN true
@@ -11719,7 +11719,7 @@ SELECT
 	END as Condition322,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END < toDecimal128('0', 10)
 			THEN true
@@ -11735,7 +11735,7 @@ SELECT
 	END as Condition324,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END < toFloat64(0)
 			THEN true
@@ -11769,7 +11769,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) <= toFloat64(0) as Condition413,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END <= 0
 			THEN true
@@ -11785,7 +11785,7 @@ SELECT
 	END as Condition422,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END <= toDecimal128('0', 10)
 			THEN true
@@ -11801,7 +11801,7 @@ SELECT
 	END as Condition424,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END <= toFloat64(0)
 			THEN true
@@ -11840,7 +11840,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) = toFloat64(0) as Condition13,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END = 0
 			THEN true
@@ -11856,7 +11856,7 @@ SELECT
 	END as Condition22,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END = toDecimal128('0', 10)
 			THEN true
@@ -11872,7 +11872,7 @@ SELECT
 	END as Condition24,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END = toFloat64(0)
 			THEN true
@@ -11906,7 +11906,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) > toFloat64(0) as Condition113,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END > 0
 			THEN true
@@ -11922,7 +11922,7 @@ SELECT
 	END as Condition122,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END > toDecimal128('0', 10)
 			THEN true
@@ -11938,7 +11938,7 @@ SELECT
 	END as Condition124,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END > toFloat64(0)
 			THEN true
@@ -11972,7 +11972,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) >= toFloat64(0) as Condition213,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END >= 0
 			THEN true
@@ -11988,7 +11988,7 @@ SELECT
 	END as Condition222,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END >= toDecimal128('0', 10)
 			THEN true
@@ -12004,7 +12004,7 @@ SELECT
 	END as Condition224,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END >= toFloat64(0)
 			THEN true
@@ -12038,7 +12038,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) < toFloat64(0) as Condition313,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END < 0
 			THEN true
@@ -12054,7 +12054,7 @@ SELECT
 	END as Condition322,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END < toDecimal128('0', 10)
 			THEN true
@@ -12070,7 +12070,7 @@ SELECT
 	END as Condition324,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END < toFloat64(0)
 			THEN true
@@ -12104,7 +12104,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) <= toFloat64(0) as Condition413,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END <= 0
 			THEN true
@@ -12120,7 +12120,7 @@ SELECT
 	END as Condition422,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END <= toDecimal128('0', 10)
 			THEN true
@@ -12136,7 +12136,7 @@ SELECT
 	END as Condition424,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END <= toFloat64(0)
 			THEN true
@@ -13079,7 +13079,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) = toFloat64(0) as Condition13,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END = 0
 			THEN true
@@ -13095,7 +13095,7 @@ SELECT
 	END as Condition22,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END = toDecimal128('0', 10)
 			THEN true
@@ -13111,7 +13111,7 @@ SELECT
 	END as Condition24,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END = toFloat64(0)
 			THEN true
@@ -13145,7 +13145,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) > toFloat64(0) as Condition113,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END > 0
 			THEN true
@@ -13161,7 +13161,7 @@ SELECT
 	END as Condition122,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END > toDecimal128('0', 10)
 			THEN true
@@ -13177,7 +13177,7 @@ SELECT
 	END as Condition124,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END > toFloat64(0)
 			THEN true
@@ -13211,7 +13211,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) >= toFloat64(0) as Condition213,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END >= 0
 			THEN true
@@ -13227,7 +13227,7 @@ SELECT
 	END as Condition222,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END >= toDecimal128('0', 10)
 			THEN true
@@ -13243,7 +13243,7 @@ SELECT
 	END as Condition224,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END >= toFloat64(0)
 			THEN true
@@ -13277,7 +13277,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) < toFloat64(0) as Condition313,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END < 0
 			THEN true
@@ -13293,7 +13293,7 @@ SELECT
 	END as Condition322,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END < toDecimal128('0', 10)
 			THEN true
@@ -13309,7 +13309,7 @@ SELECT
 	END as Condition324,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END < toFloat64(0)
 			THEN true
@@ -13343,7 +13343,7 @@ SELECT
 	Coalesce(r.DoubleN, r.Double) <= toFloat64(0) as Condition413,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.Int32N
+			WHEN r.Boolean THEN r.Int32N
 			ELSE r.Int32
 		END <= 0
 			THEN true
@@ -13359,7 +13359,7 @@ SELECT
 	END as Condition422,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DecimalN
+			WHEN r.Boolean THEN r.DecimalN
 			ELSE r.Decimal
 		END <= toDecimal128('0', 10)
 			THEN true
@@ -13375,7 +13375,7 @@ SELECT
 	END as Condition424,
 	CASE
 		WHEN CASE
-			WHEN r.Boolean = true THEN r.DoubleN
+			WHEN r.Boolean THEN r.DoubleN
 			ELSE r.Double
 		END <= toFloat64(0)
 			THEN true
@@ -13414,7 +13414,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) = toFloat64(0) as Condition13,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END = 0
 			THEN true
@@ -13430,7 +13430,7 @@ SELECT
 	END as Condition22,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END = toDecimal128('0', 10)
 			THEN true
@@ -13446,7 +13446,7 @@ SELECT
 	END as Condition24,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END = toFloat64(0)
 			THEN true
@@ -13480,7 +13480,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) > toFloat64(0) as Condition113,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END > 0
 			THEN true
@@ -13496,7 +13496,7 @@ SELECT
 	END as Condition122,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END > toDecimal128('0', 10)
 			THEN true
@@ -13512,7 +13512,7 @@ SELECT
 	END as Condition124,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END > toFloat64(0)
 			THEN true
@@ -13546,7 +13546,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) >= toFloat64(0) as Condition213,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END >= 0
 			THEN true
@@ -13562,7 +13562,7 @@ SELECT
 	END as Condition222,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END >= toDecimal128('0', 10)
 			THEN true
@@ -13578,7 +13578,7 @@ SELECT
 	END as Condition224,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END >= toFloat64(0)
 			THEN true
@@ -13612,7 +13612,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) < toFloat64(0) as Condition313,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END < 0
 			THEN true
@@ -13628,7 +13628,7 @@ SELECT
 	END as Condition322,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END < toDecimal128('0', 10)
 			THEN true
@@ -13644,7 +13644,7 @@ SELECT
 	END as Condition324,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END < toFloat64(0)
 			THEN true
@@ -13678,7 +13678,7 @@ SELECT
 	Coalesce(r_1.DoubleN, r_1.Double) <= toFloat64(0) as Condition413,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.Int32N
+			WHEN r_1.Boolean THEN r_1.Int32N
 			ELSE r_1.Int32
 		END <= 0
 			THEN true
@@ -13694,7 +13694,7 @@ SELECT
 	END as Condition422,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DecimalN
+			WHEN r_1.Boolean THEN r_1.DecimalN
 			ELSE r_1.Decimal
 		END <= toDecimal128('0', 10)
 			THEN true
@@ -13710,7 +13710,7 @@ SELECT
 	END as Condition424,
 	CASE
 		WHEN CASE
-			WHEN r_1.Boolean = true THEN r_1.DoubleN
+			WHEN r_1.Boolean THEN r_1.DoubleN
 			ELSE r_1.Double
 		END <= toFloat64(0)
 			THEN true

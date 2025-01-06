@@ -43,7 +43,7 @@ FROM
 	"WhereWithBool" "t",
 	"WhereWithBool" "x"
 WHERE
-	"x"."BoolValue" = 1 AND "x"."Id" = 1
+	"x"."BoolValue" AND "x"."Id" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

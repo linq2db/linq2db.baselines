@@ -108,7 +108,7 @@ WHERE
 		FROM
 			`test_in_2` `p`
 		WHERE
-			`t`.`ID` = `p`.`ID` OR `t`.`ID` IS NULL AND `p`.`ID` IS NULL
+			`t`.`ID` = `p`.`ID`
 	)
 
 BeforeExecute

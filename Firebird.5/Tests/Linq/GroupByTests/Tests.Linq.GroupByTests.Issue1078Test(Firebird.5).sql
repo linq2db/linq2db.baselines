@@ -49,7 +49,7 @@ SELECT
 	"grp"."SiteID",
 	COUNT(*),
 	COUNT(CASE
-		WHEN "grp"."Active" = FALSE THEN 1
+		WHEN NOT "grp"."Active" THEN 1
 		ELSE NULL
 	END)
 FROM
