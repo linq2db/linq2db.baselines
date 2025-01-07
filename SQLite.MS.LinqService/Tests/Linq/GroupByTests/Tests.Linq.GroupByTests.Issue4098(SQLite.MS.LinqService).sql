@@ -324,7 +324,7 @@ BeforeExecute
 
 SELECT
 	[ip].[InvestorId],
-	[t1].[TotalUnits],
+	[t1].[Units],
 	SUM([ip].[NetPayment])
 FROM
 	[PaymentEvent] [p]
@@ -333,7 +333,7 @@ FROM
 		INNER JOIN [PaymentCalculation] [pc] ON [ipd].[CalculationId] = [pc].[Id] AND [p].[Id] = [pc].[EventId]
 		INNER JOIN (
 			SELECT
-				SUM([b].[Units]) as [TotalUnits],
+				SUM([b].[Units]) as [Units],
 				[b].[InvestorId],
 				[b].[SecurityClass]
 			FROM
@@ -344,7 +344,7 @@ FROM
 		) [t1] ON [ip].[InvestorId] = [t1].[InvestorId] AND [p].[SecurityClass] = [t1].[SecurityClass]
 GROUP BY
 	[ip].[InvestorId],
-	[t1].[TotalUnits]
+	[t1].[Units]
 
 BeforeExecute
 -- SQLite.MS SQLite

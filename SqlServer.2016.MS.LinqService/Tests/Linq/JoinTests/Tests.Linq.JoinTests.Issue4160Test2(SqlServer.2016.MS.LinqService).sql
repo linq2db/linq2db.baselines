@@ -127,12 +127,12 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT DISTINCT
-	[cc_1].[Value_1]
+	[cc_1].[Name]
 FROM
 	[Issue4160Person] [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[cc].[Name] as [Value_1]
+				[cc].[Name]
 			FROM
 				[Issue4160City] [cc]
 			WHERE

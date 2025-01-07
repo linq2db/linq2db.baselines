@@ -5,8 +5,8 @@ BeforeExecute
 
 SELECT
 	m_1."ParentID",
-	d_1."ParentID",
-	d_1."Children"
+	d_1."Key_1",
+	d_1."ToValue"
 FROM
 	(
 		SELECT DISTINCT
@@ -16,8 +16,8 @@ FROM
 	) m_1
 		INNER JOIN LATERAL (
 			SELECT
-				d."ParentID",
-				STRING_AGG(d."ChildID"::text, ', ') as "Children"
+				d."ParentID" as "Key_1",
+				STRING_AGG(d."ChildID"::text, ', ') as "ToValue"
 			FROM
 				"Child" d
 			WHERE

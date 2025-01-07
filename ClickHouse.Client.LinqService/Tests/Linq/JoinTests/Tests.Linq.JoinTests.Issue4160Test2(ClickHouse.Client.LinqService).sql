@@ -109,12 +109,12 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT DISTINCT
-	cc_1.Value_1
+	cc_1.Name
 FROM
 	Issue4160Person t1
 		LEFT JOIN (
 			SELECT
-				cc.Name as Value_1,
+				cc.Name as Name,
 				ROW_NUMBER() OVER (PARTITION BY cc.Code ORDER BY cc.Code) as rn,
 				cc.Code as Code
 			FROM

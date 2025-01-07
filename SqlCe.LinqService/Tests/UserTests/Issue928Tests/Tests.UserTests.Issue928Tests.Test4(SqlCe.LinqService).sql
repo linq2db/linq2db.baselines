@@ -4,7 +4,7 @@
 SELECT
 	[t1].[Key_1],
 	[t1].[SUM_1],
-	[p2].[Key_1] as [ParentID],
+	[p2].[Key_1] as [Key_2],
 	[p2].[Sum_1] as [Sum_2]
 FROM
 	(

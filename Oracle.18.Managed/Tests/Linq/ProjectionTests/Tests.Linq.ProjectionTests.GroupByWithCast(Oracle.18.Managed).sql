@@ -4,8 +4,8 @@ DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
-	a_Patient."Diagnosis" as "value_1",
-	a_Patient."PersonID" as "id",
+	a_Patient."Diagnosis",
+	a_Patient."PersonID",
 	AVG(auto16031."PersonID") as AVG_1
 FROM
 	"Person" auto16031

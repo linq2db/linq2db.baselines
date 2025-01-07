@@ -4,7 +4,7 @@ DECLARE @take Int32
 SET     @take = 100
 
 SELECT
-	t1."PersonID" as "key_1",
+	t1."PersonID" as ID,
 	t1."PersonID" as "sort_1"
 FROM
 	"Person" t1

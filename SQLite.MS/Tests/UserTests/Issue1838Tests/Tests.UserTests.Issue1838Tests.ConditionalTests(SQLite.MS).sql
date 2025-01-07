@@ -66,7 +66,7 @@ SELECT
 	END,
 	CASE
 		WHEN [i].[SettlementTotalOnIssue] IS NOT NULL THEN [i].[SettlementTotalOnIssue]
-		WHEN [ia].[InvoiceId] IS NOT NULL THEN [ia].[Total]
+		WHEN [ia].[InvoiceID] IS NOT NULL THEN [ia].[SUM_1]
 		ELSE NULL
 	END
 FROM
@@ -74,8 +74,8 @@ FROM
 		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
 		LEFT JOIN (
 			SELECT
-				[g_1].[InvoiceID] as [InvoiceId],
-				SUM([ili].[BillingAmountOverride]) as [Total]
+				[g_1].[InvoiceID],
+				SUM([ili].[BillingAmountOverride]) as [SUM_1]
 			FROM
 				[Invoice] [g_1]
 					INNER JOIN [InvoiceLineItem] [ili] ON [ili].[OwningInvoiceID] = [g_1].[InvoiceID]
@@ -83,7 +83,7 @@ FROM
 				NOT [ili].[Suppressed]
 			GROUP BY
 				[g_1].[InvoiceID]
-		) [ia] ON [ia].[InvoiceId] = [i].[InvoiceID]
+		) [ia] ON [ia].[InvoiceID] = [i].[InvoiceID]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -109,7 +109,7 @@ SELECT
 		ELSE [r].[ReferenceNumber]
 	END,
 	CASE
-		WHEN [ia].[InvoiceId] IS NOT NULL THEN [ia].[Total]
+		WHEN [ia].[InvoiceID] IS NOT NULL THEN [ia].[SUM_1]
 		ELSE NULL
 	END
 FROM
@@ -117,8 +117,8 @@ FROM
 		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
 		LEFT JOIN (
 			SELECT
-				[g_1].[InvoiceID] as [InvoiceId],
-				SUM([ili].[BillingAmountOverride]) as [Total]
+				[g_1].[InvoiceID],
+				SUM([ili].[BillingAmountOverride]) as [SUM_1]
 			FROM
 				[Invoice] [g_1]
 					INNER JOIN [InvoiceLineItem] [ili] ON [ili].[OwningInvoiceID] = [g_1].[InvoiceID]
@@ -126,7 +126,7 @@ FROM
 				NOT [ili].[Suppressed]
 			GROUP BY
 				[g_1].[InvoiceID]
-		) [ia] ON [ia].[InvoiceId] = [i].[InvoiceID]
+		) [ia] ON [ia].[InvoiceID] = [i].[InvoiceID]
 
 BeforeExecute
 -- SQLite.MS SQLite

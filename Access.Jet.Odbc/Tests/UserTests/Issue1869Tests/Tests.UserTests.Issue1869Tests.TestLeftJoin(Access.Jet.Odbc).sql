@@ -110,12 +110,12 @@ FROM
 			FROM
 				(
 					SELECT
-						[g_2].[MonthNumber] as [Key_1],
+						[g_2].[Month_1] as [Key_1],
 						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty])) as [Ftq]
 					FROM
 						(
 							SELECT
-								DatePart('m', [g_1].[EntryDate]) as [MonthNumber],
+								DatePart('m', [g_1].[EntryDate]) as [Month_1],
 								[a_Workstation].[Id_WorkstationGroup],
 								[g_1].[Qty],
 								[a_Defect].[Ok]
@@ -129,7 +129,7 @@ FROM
 								[a_WorkstationGroup].[Id_Sector] = ?
 						) [g_2]
 					GROUP BY
-						[g_2].[MonthNumber],
+						[g_2].[Month_1],
 						[g_2].[Id_WorkstationGroup]
 				) [g_3]
 			GROUP BY

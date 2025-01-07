@@ -36,7 +36,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[d].[Value] as [Total]
+	[d].[Value] as [Value_1]
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]

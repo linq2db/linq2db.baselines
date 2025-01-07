@@ -3,12 +3,12 @@
 
 SELECT
 	t1.A,
-	t1.B
+	t1.ParentID
 FROM
 	(
 		SELECT
 			0 as A,
-			g_1.ParentID as B
+			g_1.ParentID as ParentID
 		FROM
 			Parent g_1
 		GROUP BY

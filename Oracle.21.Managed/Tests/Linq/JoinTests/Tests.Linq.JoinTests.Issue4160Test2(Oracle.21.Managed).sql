@@ -79,12 +79,12 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT
-	cc_1."Value_1"
+	cc_1."Name"
 FROM
 	"Issue4160Person" t1
 		OUTER APPLY (
 			SELECT
-				cc."Name" as "Value_1"
+				cc."Name"
 			FROM
 				"Issue4160City" cc
 			WHERE

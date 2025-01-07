@@ -34,14 +34,14 @@ BeforeExecute
 
 SELECT
 	[t1].[Name],
-	[t1].[Value_2],
+	[t1].[Title],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
 			MAX([it].[YearsExperience]) as [Value_1],
 			N'Title' as [Name],
-			[it].[Title] as [Value_2]
+			[it].[Title]
 		FROM
 			[odata_person] [it]
 		GROUP BY

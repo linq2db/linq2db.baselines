@@ -125,12 +125,12 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT DISTINCT
-	`cc_1`.`Value_1`
+	`cc_1`.`Name`
 FROM
 	`Issue4160Person` `t1`
 		LEFT JOIN LATERAL (
 			SELECT
-				`cc`.`Name` as `Value_1`
+				`cc`.`Name`
 			FROM
 				`Issue4160City` `cc`
 			WHERE

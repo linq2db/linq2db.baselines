@@ -3,13 +3,13 @@
 
 SELECT
 	[p].[ParentID],
-	[t2].[Id],
+	[t2].[Key_1],
 	[t2].[Count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[t1].[Key_1] as [Id],
+				[t1].[Key_1],
 				[t1].[Count_1]
 			FROM
 				(
