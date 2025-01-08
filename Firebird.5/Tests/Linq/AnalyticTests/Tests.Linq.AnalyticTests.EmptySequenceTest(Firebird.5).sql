@@ -14,15 +14,17 @@ FROM
 		FROM
 			"Parent" "c_1"
 	) "m_1"
-		INNER JOIN (
+		CROSS JOIN LATERAL (
 			SELECT
 				"d"."ParentID" as "Key_1",
 				LIST("d"."ChildID", ', ') as "ToValue"
 			FROM
 				"Child" "d"
+			WHERE
+				"m_1"."ParentID" = "d"."ParentID"
 			GROUP BY
 				"d"."ParentID"
-		) "d_1" ON "m_1"."ParentID" = "d_1"."Key_1"
+		) "d_1"
 
 BeforeExecute
 DisposeTransaction
