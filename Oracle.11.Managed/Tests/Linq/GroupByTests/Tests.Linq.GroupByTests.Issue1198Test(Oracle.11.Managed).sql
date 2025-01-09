@@ -33,14 +33,21 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	COUNT(CASE
-		WHEN t."Status" = 3 THEN 1
-		ELSE NULL
-	END)
+	t1.COUNT_1
 FROM
-	"Issue1192Table" t
+	(
+		SELECT
+			COUNT(CASE
+				WHEN t."Status" = 3 THEN 1
+				ELSE NULL
+			END) as COUNT_1
+		FROM
+			"Issue1192Table" t
+		WHERE
+			t."MyOtherId" = 12
+	) t1
 WHERE
-	t."MyOtherId" = 12 AND ROWNUM <= 1
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
