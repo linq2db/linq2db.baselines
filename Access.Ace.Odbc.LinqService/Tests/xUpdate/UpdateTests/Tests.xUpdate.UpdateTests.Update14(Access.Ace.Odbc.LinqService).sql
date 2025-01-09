@@ -28,13 +28,15 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @name NVarChar(8) -- String
 SET     @name = 'Update14'
+DECLARE @name NVarChar(8) -- String
+SET     @name = 'Update14'
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
 	[Person] [t1]
 SET
-	[t1].[LastName] = CStr(Len(?) + ?)
+	[t1].[LastName] = IIF(Len(?) IS NOT NULL, CStr(Len(?) + ?), NULL)
 WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
