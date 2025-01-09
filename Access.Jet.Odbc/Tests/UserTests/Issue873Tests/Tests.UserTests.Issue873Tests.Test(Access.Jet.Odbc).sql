@@ -2,7 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])),
+	' ' + IIF(IIF([f].[Value1] IS NULL, 0, [f].[Value1]) IS NOT NULL, CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])), NULL),
 	(
 		SELECT
 			SUM([c_1].[ChildID])
@@ -33,7 +33,7 @@ SELECT
 FROM
 	[Parent] [f]
 WHERE
-	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])) LIKE '%1%' AND
+	' ' + IIF(IIF([f].[Value1] IS NULL, 0, [f].[Value1]) IS NOT NULL, CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])), NULL) LIKE '%1%' AND
 	(
 		SELECT
 			SUM([c_1].[ChildID])
