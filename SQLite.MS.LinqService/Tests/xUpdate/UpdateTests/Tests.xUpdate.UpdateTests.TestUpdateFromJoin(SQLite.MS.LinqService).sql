@@ -57,7 +57,7 @@ FROM
 	[access_mode] [y1]
 WHERE
 	Upper(REPLACE([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR
-	Upper(REPLACE([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL
+	REPLACE([gt_s_one].[col3], 'auth.', '') IS NULL AND [y1].[code] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
