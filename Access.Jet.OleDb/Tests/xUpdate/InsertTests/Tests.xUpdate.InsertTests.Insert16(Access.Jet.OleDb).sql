@@ -10,8 +10,6 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @name VarWChar(8) -- String
 SET     @name = 'Insert16'
-DECLARE @name_1 VarWChar(8) -- String
-SET     @name_1 = 'Insert16'
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
@@ -24,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	IIF(Len(@name) IS NOT NULL, CStr(Len(@name_1) + @idx), NULL),
+	CStr(Len(@name) + @idx),
 	'M'
 )
 

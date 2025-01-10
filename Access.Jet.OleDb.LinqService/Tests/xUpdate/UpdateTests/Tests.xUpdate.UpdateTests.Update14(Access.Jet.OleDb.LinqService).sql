@@ -28,15 +28,13 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @name VarWChar(8) -- String
 SET     @name = 'Update14'
-DECLARE @name_1 VarWChar(8) -- String
-SET     @name_1 = 'Update14'
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE
 	[Person] [t1]
 SET
-	[t1].[LastName] = IIF(Len(@name) IS NOT NULL, CStr(Len(@name_1) + @idx), NULL)
+	[t1].[LastName] = CStr(Len(@name) + @idx)
 WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
