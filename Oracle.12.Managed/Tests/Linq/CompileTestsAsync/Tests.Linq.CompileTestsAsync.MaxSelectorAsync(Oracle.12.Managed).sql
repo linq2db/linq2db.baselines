@@ -32,6 +32,37 @@ END;
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "AsyncDataTable"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "AsyncDataTable"
+		(
+			"Id" Int NOT NULL,
+
+			CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
+		)
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+
 INSERT ALL
 	INTO "AsyncDataTable" ("Id") VALUES (1)
 	INTO "AsyncDataTable" ("Id") VALUES (2)
