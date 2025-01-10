@@ -10,8 +10,6 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @name NVarChar(8) -- String
 SET     @name = 'Insert16'
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Insert16'
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
@@ -24,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	IIF(Len(?) IS NOT NULL, CStr(Len(?) + ?), NULL),
+	CStr(Len(?) + ?),
 	'M'
 )
 

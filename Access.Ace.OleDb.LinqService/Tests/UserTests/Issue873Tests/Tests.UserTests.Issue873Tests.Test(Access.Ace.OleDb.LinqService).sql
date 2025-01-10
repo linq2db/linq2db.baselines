@@ -2,7 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	' ' + IIF(IIF([f].[Value1] IS NULL, 0, [f].[Value1]) IS NOT NULL, CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])), NULL),
+	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])),
 	(
 		SELECT
 			SUM([c_1].[ChildID])
@@ -33,7 +33,7 @@ SELECT
 FROM
 	[Parent] [f]
 WHERE
-	' ' + IIF(IIF([f].[Value1] IS NULL, 0, [f].[Value1]) IS NOT NULL, CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])), NULL) LIKE '%1%' AND
+	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])) LIKE '%1%' AND
 	(
 		SELECT
 			SUM([c_1].[ChildID])

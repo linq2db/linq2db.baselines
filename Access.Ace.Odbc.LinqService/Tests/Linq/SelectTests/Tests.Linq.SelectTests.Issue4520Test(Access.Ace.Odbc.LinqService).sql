@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	IIF(([i].[BoolValue] = False AND [i].[BoolValue] IS NOT NULL OR [i].[BoolValue] IS NULL OR IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) IS NULL) AND ([i].[IntValue] = (
+	IIF(NOT IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) AND ([i].[IntValue] = (
 		SELECT TOP 1
 			[p].[IntValue]
 		FROM
