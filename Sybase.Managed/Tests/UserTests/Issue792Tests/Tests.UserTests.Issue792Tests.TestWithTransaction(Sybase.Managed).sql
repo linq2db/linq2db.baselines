@@ -19,6 +19,16 @@ FROM
 BeforeExecute
 -- Sybase.Managed Sybase
 
+select @@unicharsize
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+select @@ncharsize
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
 sp_oledb_stored_procedures
 
 BeforeExecute

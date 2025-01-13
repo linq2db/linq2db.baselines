@@ -26,6 +26,16 @@ IF (OBJECT_ID(N'ColumnOrderTest') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
+
+select @@unicharsize
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+select @@ncharsize
+
+BeforeExecute
+-- Sybase.Managed Sybase
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
 
@@ -72,7 +82,11 @@ SELECT
 	Convert(bit, c.status & 0x08)                    as IsNullable,
 	c.colid                                          as Ordinal,
 	t.name                                           as DataType,
-	c.length                                         as Length,
+	CASE
+		WHEN t.name IN ('nvarchar', 'nchar') THEN c.length / @@ncharsize
+		WHEN t.name IN ('univarchar', 'unichar') THEN c.length / @@unicharsize
+		ELSE c.length
+	END                                              as Length,
 	c.prec                                           as [Precision],
 	c.scale                                          as Scale,
 	Convert(bit, c.status & 0x80)                    as IsIdentity,
