@@ -942,8 +942,10 @@ CREATE TABLE multitenant_table (
     Id UUID NOT NULL,
     Name VARCHAR(100),
     Description TEXT,
-    CreatedAt TIMESTAMP NOT NULL DEFAULT NOW(),
-    PRIMARY KEY (TenantId, Id)
+    CreatedAt TIMESTAMP NOT NULL DEFAULT NOW()
+
+	, PRIMARY KEY (TenantId, Id)
+
 ) PARTITION BY LIST (TenantId);
 
 -- Create partitions
