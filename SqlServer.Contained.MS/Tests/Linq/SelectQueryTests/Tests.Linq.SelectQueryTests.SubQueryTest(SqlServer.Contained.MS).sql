@@ -30,7 +30,6 @@ BeforeExecute
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
-	[t2].[cond],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM
@@ -38,8 +37,7 @@ FROM
 		LEFT JOIN (
 			SELECT TOP (1)
 				[t1].[Value1],
-				[t1].[Value2],
-				1 as [cond]
+				[t1].[Value2]
 			FROM
 				(
 					SELECT
