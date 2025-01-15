@@ -66,13 +66,13 @@ FROM
 							FROM
 								[Orders] [mg]
 							WHERE
-								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Key_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Key_1] IS NULL AND [mg].[OrderDate] IS NULL)
 						) [d_2]
 					GROUP BY
 						[d_2].[Key_1]
 				) [d_3]
 	) [m_1]
-		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
+		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
 
 BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
@@ -121,7 +121,7 @@ FROM
 					FROM
 						[Orders] [mg]
 					WHERE
-						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Key_1] IS NULL AND DatePart(year, [mg].[OrderDate]) IS NULL)
+						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [mg].[OrderDate] IS NULL)
 				) [d_2]
 			GROUP BY
 				[d_2].[Key_1]
