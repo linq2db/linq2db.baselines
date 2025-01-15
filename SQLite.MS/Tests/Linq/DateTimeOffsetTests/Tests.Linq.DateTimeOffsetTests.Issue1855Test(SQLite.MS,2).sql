@@ -68,8 +68,7 @@ FROM
 	[Issue1855Table] [r]
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) OR
-	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) IS NULL AND strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) IS NOT NULL OR
-	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) IS NOT NULL AND strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset]) IS NULL
+	[r].[SomeNullableDateTimeOffset] IS NULL
 
 BeforeExecute
 -- SQLite.MS SQLite
