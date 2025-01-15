@@ -62,7 +62,7 @@ BeforeExecute
 UPDATE
 	`gt_s_one_target` `t2`,
 	`gt_s_one` `x`
-		LEFT JOIN `access_mode` `y1` ON Upper(REPLACE(`x`.`col3`, 'auth.', '')) = Upper(`y1`.`code`) OR REPLACE(`x`.`col3`, 'auth.', '') IS NULL AND `y1`.`code` IS NULL
+		LEFT JOIN `access_mode` `y1` ON Upper(REPLACE(`x`.`col3`, 'auth.', '')) = Upper(`y1`.`code`) OR `x`.`col3` IS NULL AND `y1`.`code` IS NULL
 SET
 	`t2`.`col1` = `x`.`col1`,
 	`t2`.`col2` = `x`.`col2`,
