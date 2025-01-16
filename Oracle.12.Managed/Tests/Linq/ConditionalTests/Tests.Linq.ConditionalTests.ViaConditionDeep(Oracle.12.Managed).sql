@@ -33,38 +33,6 @@ END;
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ConditionalData"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ConditionalData"
-		(
-			"Id"         Int          NOT NULL,
-			"StringProp" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_ConditionalData" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (1,'String1')
 	INTO "ConditionalData" ("Id", "StringProp") VALUES (2,'String2')
