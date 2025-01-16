@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	DateValue([t].[DateTimeValue]) > ?
+	IIF([t].[DateTimeValue] IS NOT NULL, DateValue([t].[DateTimeValue]), NULL) > ?
 

@@ -13,6 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	DateAdd(dd, DateDiff(dd, 0, [t1].[DateTimeValue]), 0) = DateAdd(dd, DateDiff(dd, 0, CAST('2009-09-20' AS DateTime)), 0) OR
-	DateAdd(dd, DateDiff(dd, 0, [t1].[DateTimeValue]), 0) IS NULL AND DateAdd(dd, DateDiff(dd, 0, CAST('2009-09-20' AS DateTime)), 0) IS NULL
+	DateAdd(dd, DateDiff(dd, 0, [t1].[DateTimeValue]), 0) = DateAdd(dd, DateDiff(dd, 0, CAST('2009-09-20' AS DateTime)), 0)
 

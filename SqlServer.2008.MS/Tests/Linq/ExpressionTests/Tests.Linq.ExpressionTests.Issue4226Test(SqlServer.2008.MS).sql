@@ -43,8 +43,7 @@ SELECT TOP (2)
 FROM
 	[Issue4226Table] [e]
 WHERE
-	DatePart(month, [e].[Date]) = DatePart(month, CAST('2020-02-29T00:00:00.0000000' AS DATETIME2)) OR
-	DatePart(month, [e].[Date]) IS NULL AND DatePart(month, CAST('2020-02-29T00:00:00.0000000' AS DATETIME2)) IS NULL
+	DatePart(month, [e].[Date]) = DatePart(month, CAST('2020-02-29T00:00:00.0000000' AS DATETIME2))
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

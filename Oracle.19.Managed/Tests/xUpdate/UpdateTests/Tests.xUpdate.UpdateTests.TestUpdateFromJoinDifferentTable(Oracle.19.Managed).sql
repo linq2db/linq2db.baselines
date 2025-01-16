@@ -127,7 +127,7 @@ SET
 		FROM
 			"gt_s_one" x_1
 				INNER JOIN "gt_s_one_target" t2_1 ON x_1."id" = t2_1."id"
-				LEFT JOIN "access_mode" y1_1 ON Upper(REPLACE(x_1."col3", 'auth.', '')) = Upper(y1_1."code") OR Upper(REPLACE(x_1."col3", 'auth.', '')) IS NULL AND Upper(y1_1."code") IS NULL
+				LEFT JOIN "access_mode" y1_1 ON Upper(REPLACE(x_1."col3", 'auth.', '')) = Upper(y1_1."code") OR x_1."col3" IS NULL AND y1_1."code" IS NULL
 		WHERE
 			"gt_s_one_target"."id" = t2_1."id"
 	)
@@ -138,7 +138,7 @@ WHERE
 		FROM
 			"gt_s_one" x
 				INNER JOIN "gt_s_one_target" t2 ON x."id" = t2."id"
-				LEFT JOIN "access_mode" y1 ON Upper(REPLACE(x."col3", 'auth.', '')) = Upper(y1."code") OR Upper(REPLACE(x."col3", 'auth.', '')) IS NULL AND Upper(y1."code") IS NULL
+				LEFT JOIN "access_mode" y1 ON Upper(REPLACE(x."col3", 'auth.', '')) = Upper(y1."code") OR x."col3" IS NULL AND y1."code" IS NULL
 		WHERE
 			"gt_s_one_target"."id" = t2."id"
 	)

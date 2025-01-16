@@ -77,7 +77,7 @@ SET
 FROM
 	[gt_s_one] [x]
 		INNER JOIN [gt_s_one_target] [t2] ON [x].[id] = [t2].[id]
-		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
+		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

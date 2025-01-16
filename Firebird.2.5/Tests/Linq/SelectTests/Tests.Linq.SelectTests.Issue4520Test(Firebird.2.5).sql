@@ -3,10 +3,7 @@
 
 SELECT
 	CASE
-		WHEN ("i"."BoolValue" = '0' AND "i"."BoolValue" IS NOT NULL OR CASE
-			WHEN "i"."BoolValue" IS NOT NULL THEN "i"."BoolValue"
-			ELSE '0'
-		END IS NULL) AND ("i"."IntValue" = (
+		WHEN "i"."BoolValue" = '0' AND "i"."BoolValue" IS NOT NULL AND ("i"."IntValue" = (
 			SELECT FIRST 1
 				"p"."IntValue"
 			FROM

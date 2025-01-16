@@ -51,7 +51,7 @@ SET
 	[x].[col6] = IIF([x].[col3] = N'empty', N'', CAST([y1].[id] AS NVarChar(11)))
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR Upper(REPLACE([x].[col3], N'auth.', N'')) IS NULL AND Upper([y1].[code]) IS NULL
+		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
 
 BeforeExecute
 -- SqlServer.2019

@@ -3,10 +3,10 @@
 
 SELECT
 	CASE
-		WHEN (i.BoolValue = false AND i.BoolValue IS NOT NULL OR i.BoolValue IS NULL OR CASE
+		WHEN NOT CASE
 			WHEN i.BoolValue IS NOT NULL THEN i.BoolValue
 			ELSE false
-		END IS NULL) AND (i.IntValue = (
+		END AND (i.IntValue = (
 			SELECT
 				p.IntValue
 			FROM
