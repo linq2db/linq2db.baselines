@@ -13,6 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	Extend(t1.DateTimeValue, Year to Day) = Extend(Mdy(9, 20, 2009), Year to Day) OR
-	Extend(t1.DateTimeValue, Year to Day) IS NULL AND Extend(Mdy(9, 20, 2009), Year to Day) IS NULL
+	Extend(t1.DateTimeValue, Year to Day) = Extend(Mdy(9, 20, 2009), Year to Day)
 
