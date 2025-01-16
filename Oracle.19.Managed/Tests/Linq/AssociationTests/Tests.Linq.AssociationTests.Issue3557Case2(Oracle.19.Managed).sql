@@ -106,36 +106,6 @@ END;
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SubData2"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SubData2"
-		(
-			"Id"     Int          NOT NULL,
-			"Reason" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "SubData2" ("Id", "Reason") VALUES (3,'прст1')
 	INTO "SubData2" ("Id", "Reason") VALUES (3,'прст2')
