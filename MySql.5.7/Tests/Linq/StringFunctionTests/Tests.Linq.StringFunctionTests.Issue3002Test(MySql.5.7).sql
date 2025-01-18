@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `SampleClass`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `SampleClass`
-(
-	`Id`     INT           NOT NULL,
-	`Value`  VARCHAR(50)       NULL,
-	`Value2` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `SampleClass`
 (
 	`Id`,
@@ -137,9 +122,4 @@ FROM
 	`SampleClass` `sampleClass_1`
 WHERE
 	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `SampleClass`
 

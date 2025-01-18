@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `TestInsertOrReplaceTable`
-(
-	`ID`         INT           NOT NULL,
-	`FirstName`  VARCHAR(4000)     NULL,
-	`LastName`   VARCHAR(4000)     NULL,
-	`MiddleName` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_TestInsertOrReplaceTable` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -107,9 +89,4 @@ FROM
 WHERE
 	`x`.`FirstName` = @FirstName
 LIMIT 1
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 

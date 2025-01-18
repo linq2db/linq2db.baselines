@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `GlobalTaskDTO`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `GlobalTaskDTO`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `WMS_GlobalTaskA`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `WmsResourcePointDTO`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `WmsResourcePointDTO`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `StorageShelfDTO`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `StorageShelfDTO`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t2`.`Id`,
 	`t2`.`ResourceID`,
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN `WmsResourcePointDTO` `dest` ON `t2`.`RPDestinationID` = `dest`.`Id`
 		LEFT JOIN `StorageShelfDTO` `destShelf` ON `t2`.`StorageShelfDestinationID` = `destShelf`.`Id`
 		LEFT JOIN `WmsResourcePointDTO` `origdest` ON `t2`.`RPOrigDestinationID` = `origdest`.`Id`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `StorageShelfDTO`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `WmsResourcePointDTO`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `GlobalTaskDTO`
 

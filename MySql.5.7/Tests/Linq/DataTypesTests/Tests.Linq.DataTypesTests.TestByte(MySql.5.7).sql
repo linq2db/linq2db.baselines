@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ByteTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `ByteTable`
-(
-	`Id`             INT              NOT NULL,
-	`Column`         TINYINT UNSIGNED NOT NULL,
-	`ColumnNullable` TINYINT UNSIGNED     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `ByteTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Column UByte -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable UByte -- Byte
@@ -180,9 +152,4 @@ FROM
 	`ByteTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ByteTable`
 

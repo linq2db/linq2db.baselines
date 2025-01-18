@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T1`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `T1`
-(
-	`InstrumentId`         INT           NOT NULL,
-	`InstrumentCode`       VARCHAR(4000)     NULL,
-	`CreateDate`           DATETIME      NOT NULL,
-	`SourceInstrumentCode` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_T1` PRIMARY KEY CLUSTERED (`InstrumentId`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `T2`
-(
-	`InstrumentId` INT NOT NULL,
-	`IndexId`      INT NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T3`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `T3`
-(
-	`InstrumentId` INT NOT NULL,
-	`IndexId`      INT NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -210,19 +164,4 @@ FROM
 	) `t5`
 ORDER BY
 	`t5`.`SourceInstrumentCode`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T3`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `T1`
 

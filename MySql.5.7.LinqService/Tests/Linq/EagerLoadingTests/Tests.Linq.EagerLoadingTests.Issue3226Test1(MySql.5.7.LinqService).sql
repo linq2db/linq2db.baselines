@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `Item`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Item`
-(
-	`Id`   INT           NOT NULL,
-	`Text` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Item` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ItemValue`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `ItemValue`
-(
-	`Id`     INT             NOT NULL,
-	`ItemId` INT             NOT NULL,
-	`Value`  DECIMAL(29, 10) NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`Id`,
 	`x`.`Text`
@@ -46,14 +15,4 @@ ORDER BY
 		WHERE
 			`x`.`Id` = `a_Values`.`ItemId`
 	)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ItemValue`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Item`
 

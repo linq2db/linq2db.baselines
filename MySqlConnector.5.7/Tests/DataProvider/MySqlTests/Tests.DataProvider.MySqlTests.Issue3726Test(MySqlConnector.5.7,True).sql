@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue3726Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3726Table`
-(
-	`Id`     INT           NOT NULL,
-	`Value`  INT UNSIGNED  NOT NULL,
-	`Value2` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue3726Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value UInt32
@@ -46,9 +29,4 @@ SET
 	`f`.`Value2` = 'Baz'
 WHERE
 	CAST(`f`.`Value` AS SIGNED) = 123
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue3726Table`
 

@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `MRECEIPT`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `MRECEIPT`
-(
-	`RECEIPT_NO` VARCHAR(4000)     NULL,
-	`CUSTKEY`    VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `EXTERNAL_RECEIPTS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `EXTERNAL_RECEIPTS`
-(
-	`RECEIPT_NO` VARCHAR(4000)     NULL,
-	`CUSTKEY`    VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CUST_DTL`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `CUST_DTL`
-(
-	`CUSTKEY`   VARCHAR(4000)     NULL,
-	`BILLGROUP` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`i_1`.`ReceiptNo`,
 	`a_Customer`.`BILLGROUP`
@@ -61,19 +19,4 @@ FROM
 			`EXTERNAL_RECEIPTS` `t1`
 	) `i_1`
 		LEFT JOIN `CUST_DTL` `a_Customer` ON `i_1`.`Custkey` = `a_Customer`.`CUSTKEY` OR `i_1`.`Custkey` IS NULL AND `a_Customer`.`CUSTKEY` IS NULL
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CUST_DTL`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `EXTERNAL_RECEIPTS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `MRECEIPT`
 

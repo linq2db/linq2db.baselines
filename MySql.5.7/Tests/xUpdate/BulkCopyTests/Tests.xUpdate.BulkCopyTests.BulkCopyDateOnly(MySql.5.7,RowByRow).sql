@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `DateOnlyTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `DateOnlyTable`
-(
-	`Date` DATE NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Date Datetime -- DateTime
 SET     @Date = '2021-01-01'
 
@@ -33,9 +20,4 @@ SELECT
 FROM
 	`DateOnlyTable` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `DateOnlyTable`
 

@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue4702Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4702Table`
-(
-	`Id`   INT           AUTO_INCREMENT NOT NULL,
-	`Text` VARCHAR(4000)                    NULL,
-
-	CONSTRAINT `PK_Issue4702Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Max(`Id`) FROM `Issue4702Table`
 
 BeforeExecute
@@ -42,9 +26,4 @@ VALUES
 (
 	'Text 3'
 )
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4702Table`
 

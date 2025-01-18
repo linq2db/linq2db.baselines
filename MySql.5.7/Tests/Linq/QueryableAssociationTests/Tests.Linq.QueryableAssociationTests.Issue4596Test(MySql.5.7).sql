@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue4596Form`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4596Form`
-(
-	`Id` INT  NOT NULL,
-	`C1` CHAR NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4596Item`
-(
-	`Id`         INT           NOT NULL,
-	`FormId`     INT           NOT NULL,
-	`OrderIndex` INT           NOT NULL,
-	`Name1`      VARCHAR(4000)     NULL,
-	`Name2`      VARCHAR(4000)     NULL,
-	`Name3`      VARCHAR(4000)     NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -90,13 +58,3 @@ LIMIT 1
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue4596Form`
-

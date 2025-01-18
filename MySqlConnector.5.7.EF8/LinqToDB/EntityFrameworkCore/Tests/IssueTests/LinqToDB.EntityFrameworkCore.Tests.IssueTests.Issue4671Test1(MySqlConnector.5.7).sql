@@ -1,23 +1,5 @@
 ﻿--  MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue4671Entity1`
-
-
-
---  MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4671Entity1`
-(
-	`Id`    int AUTO_INCREMENT NOT NULL,
-	`Value` int                NOT NULL,
-
-	CONSTRAINT `PK_Issue4671Entity1` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-
-
---  MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
 	`Id`    int AUTO_INCREMENT NOT NULL,
@@ -79,12 +61,6 @@ LIMIT 2
 --  MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `Issue4671Entity1TMP`
-
-
-
---  MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4671Entity1`
 
 
 

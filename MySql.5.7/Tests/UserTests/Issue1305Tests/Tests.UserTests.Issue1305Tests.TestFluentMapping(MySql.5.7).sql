@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `FluentMapping`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `FluentMapping`
-(
-	`RecordID`       INT      NOT NULL,
-	`EffectiveStart` DATETIME NOT NULL,
-	`EffectiveEnd`   DATETIME     NULL,
-	`Key`            INT      NOT NULL,
-	`Unordered1`     INT      NOT NULL,
-	`Unordered2`     INT      NOT NULL,
-	`Audit1ID`       INT      NOT NULL,
-	`Audit2ID`       INT      NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 
 SELECT
 		TABLE_SCHEMA,
@@ -325,8 +305,3 @@ SET     @param1 = NULL
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `FluentMapping`
-

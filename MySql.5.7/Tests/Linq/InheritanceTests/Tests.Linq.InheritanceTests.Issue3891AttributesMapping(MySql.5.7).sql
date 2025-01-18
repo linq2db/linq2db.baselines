@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Base`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Base`
-(
-	`Id`           INT           NOT NULL,
-	`Type`         INT           NOT NULL,
-	`Name_First`   VARCHAR(4000)     NULL,
-	`Name_Second`  VARCHAR(4000)     NULL,
-	`Test_ChildId` INT           NOT NULL,
-
-	CONSTRAINT `PK_Base` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Type Int32
@@ -95,9 +76,4 @@ SELECT
 FROM
 	`Base` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Base`
 

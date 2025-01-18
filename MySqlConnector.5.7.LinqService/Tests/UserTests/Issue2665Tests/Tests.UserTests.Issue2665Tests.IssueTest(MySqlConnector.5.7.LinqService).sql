@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `ProductTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `ProductTable`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_ProductTable` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ProductAttributeTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `ProductAttributeTable`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_ProductAttributeTable` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ProductAttributeMapping`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `ProductAttributeMapping`
-(
-	`ProductId`          INT NOT NULL,
-	`ProductAttributeId` INT NOT NULL,
-
-	CONSTRAINT `PK_ProductAttributeMapping` PRIMARY KEY CLUSTERED (`ProductId`, `ProductAttributeId`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`pa`.`Id`
 FROM
@@ -73,19 +25,4 @@ WHERE
 		WHERE
 			`p`.`Id` >= `pam`.`ProductId`
 	)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ProductAttributeMapping`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ProductAttributeTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ProductTable`
 

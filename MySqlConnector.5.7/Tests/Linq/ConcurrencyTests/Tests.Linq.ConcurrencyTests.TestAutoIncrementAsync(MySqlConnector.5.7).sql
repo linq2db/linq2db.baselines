@@ -1,21 +1,4 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `ConcurrencyAutoIncrement`
-(
-	`Id`    INT           NOT NULL,
-	`Stamp` INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConcurrencyAutoIncrement` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
@@ -173,9 +156,4 @@ SELECT
 	`t1`.`Value`
 FROM
 	`ConcurrencyAutoIncrement` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ConcurrencyAutoIncrement`
 

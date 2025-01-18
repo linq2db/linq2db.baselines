@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `BackgroundTask`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `BackgroundTask`
-(
-	`ID`               INT     NULL,
-	`DurationID`       INT NOT NULL,
-	`DurationInterval` INT NOT NULL,
-	`PersonID`         INT     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -54,9 +38,4 @@ FROM
 	`BackgroundTask` `task_1`
 WHERE
 	`task_1`.`PersonID` = @personId
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `BackgroundTask`
 

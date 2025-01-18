@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `TestBool`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `TestBool`
-(
-	`Id`    INT     NOT NULL,
-	`Value` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `TestBool`
 (
 	`Id`,
@@ -73,9 +59,4 @@ SELECT
 FROM
 	`TestBool` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `TestBool`
 

@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `O1`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `O1`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `O2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `O2`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `O3`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `O3`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`doSap`.`DocEntry`,
 	CASE
@@ -78,19 +30,4 @@ SELECT
 	CAST('Manual/Externo' AS CHAR(255))
 FROM
 	`O3` `doSap_2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `O3`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `O2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `O1`
 

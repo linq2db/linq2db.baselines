@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue1438`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue1438`
-(
-	`Id`  INT     AUTO_INCREMENT NOT NULL,
-	`Has` BOOLEAN                NOT NULL,
-
-	CONSTRAINT `PK_Issue1438` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Has UByte -- Boolean
 SET     @Has = 1
 
@@ -46,9 +30,4 @@ FROM
 WHERE
 	`t1`.`Id` = @id
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue1438`
 

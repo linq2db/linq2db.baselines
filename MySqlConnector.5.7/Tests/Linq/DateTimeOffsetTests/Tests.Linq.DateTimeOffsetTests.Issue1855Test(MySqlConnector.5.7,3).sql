@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue1855Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue1855Table`
-(
-	`Id`                         INT       NOT NULL,
-	`SomeDateTimeOffset`         TIMESTAMP NOT NULL,
-	`SomeNullableDateTimeOffset` TIMESTAMP     NULL,
-
-	CONSTRAINT `PK_Issue1855Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -68,9 +51,4 @@ FROM
 	`Issue1855Table` `r`
 WHERE
 	@clientSideIn <> `r`.`SomeDateTimeOffset`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue1855Table`
 

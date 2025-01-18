@@ -1,21 +1,4 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ForUpdateTestTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `ForUpdateTestTable`
-(
-	`Id`               INT           NOT NULL,
-	`OtherNaming`      VARCHAR(4000) NOT NULL,
-	`timestampUpdated` Timestamp     NOT NULL,
-
-	CONSTRAINT `PK_ForUpdateTestTable` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -62,9 +45,4 @@ FROM
 WHERE
 	`t1`.`Count_1` = 0
 FOR UPDATE
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ForUpdateTestTable`
 
