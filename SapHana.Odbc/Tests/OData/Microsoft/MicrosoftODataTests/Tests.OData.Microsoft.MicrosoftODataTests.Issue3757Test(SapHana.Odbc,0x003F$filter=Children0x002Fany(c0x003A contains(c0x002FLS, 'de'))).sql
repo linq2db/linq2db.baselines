@@ -1,41 +1,4 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue3757Level1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue3757Level1"
-(
-	"ID"     Integer       NOT NULL,
-	"ValS"   NVarChar(255)     NULL,
-	"ValB"   TinyInt           NULL,
-	"ValInt" Integer           NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue3757Level2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue3757Level2"
-(
-	"ID"       Integer       NOT NULL,
-	"ParentId" Integer       NOT NULL,
-	"ValS"     NVarChar(255)     NULL,
-	"ValB"     TinyInt           NULL,
-	"ValInt"   Integer           NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -92,14 +55,4 @@ WHERE
 			"it"."ID" = "c_1"."ParentId" AND "it"."ValS" LIKE ? ESCAPE '~' AND
 			"it"."ValS" IS NOT NULL
 	)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue3757Level2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue3757Level1"
 

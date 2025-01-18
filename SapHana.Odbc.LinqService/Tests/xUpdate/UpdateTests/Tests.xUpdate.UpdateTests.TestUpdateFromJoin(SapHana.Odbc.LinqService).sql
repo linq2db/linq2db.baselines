@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "gt_s_one"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "gt_s_one"
-(
-	"id"   Integer       NOT NULL,
-	"col1" NVarChar(100)     NULL,
-	"col2" NVarChar(100)     NULL,
-	"col3" NVarChar(100)     NULL,
-	"col4" NVarChar(100)     NULL,
-	"col5" NVarChar(100)     NULL,
-	"col6" NVarChar(100)     NULL,
-
-	PRIMARY KEY ("id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "access_mode"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "access_mode"
-(
-	"id"   Integer       NOT NULL,
-	"code" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"gt_s_one"
 SET
@@ -71,14 +34,4 @@ WHERE
 		WHERE
 			"gt_s_one"."id" = "x"."id"
 	)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "access_mode"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "gt_s_one"
 

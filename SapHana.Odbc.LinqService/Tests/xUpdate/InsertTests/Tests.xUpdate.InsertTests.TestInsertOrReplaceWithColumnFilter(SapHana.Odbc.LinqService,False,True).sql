@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestInsertOrReplaceTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TestInsertOrReplaceTable"
-(
-	"ID"         Integer       NOT NULL,
-	"FirstName"  NVarChar(255)     NULL,
-	"LastName"   NVarChar(255)     NULL,
-	"MiddleName" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -106,9 +88,4 @@ FROM
 WHERE
 	"x"."FirstName" = ?
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestInsertOrReplaceTable"
 

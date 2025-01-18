@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "SampleClass"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "SampleClass"
-(
-	"Id"    Integer NOT NULL,
-	"Value" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Value  -- Int32
-SET     @Value = 100
-
-INSERT INTO "SampleClass"
-(
-	"Id",
-	"Value"
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t_1"."Id",
 	"t_1"."Value",
@@ -61,9 +29,4 @@ FROM DUMMY
 				) "t1"
 			LIMIT 1
 		) "t2" ON 1=1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SampleClass"
 

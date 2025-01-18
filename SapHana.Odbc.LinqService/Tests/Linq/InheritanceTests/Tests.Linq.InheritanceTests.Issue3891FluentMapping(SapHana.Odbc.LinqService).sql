@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Base2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Base2"
-(
-	"Id"           Integer       NOT NULL,
-	"Type"         Integer       NOT NULL,
-	"Name_First"   NVarChar(255)     NULL,
-	"Name_Second"  NVarChar(255)     NULL,
-	"Test_ChildId" Integer       NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Type  -- Int32
@@ -95,9 +76,4 @@ SELECT
 FROM
 	"Base2" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Base2"
 

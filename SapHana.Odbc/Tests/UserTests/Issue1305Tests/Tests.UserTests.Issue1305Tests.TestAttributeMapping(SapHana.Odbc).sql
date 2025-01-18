@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ColumnOrderTest"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ColumnOrderTest"
-(
-	"RecordID"       Integer       NOT NULL,
-	"EffectiveStart" Timestamp     NOT NULL,
-	"EffectiveEnd"   Timestamp         NULL,
-	"Key"            Integer       NOT NULL,
-	"Name"           NVarChar(255)     NULL,
-	"Code"           NVarChar(255)     NULL,
-	"Audit1ID"       Integer       NOT NULL,
-	"Audit2ID"       Integer       NOT NULL,
-
-	PRIMARY KEY ("RecordID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
@@ -591,8 +569,3 @@ SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ColumnOrderTest"
-

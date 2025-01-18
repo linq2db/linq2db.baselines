@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "SomeTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "SomeTable"
-(
-	"ClassProp" TinyInt NOT NULL,
-	"Interface" TinyInt NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "SomeTable"
 (
 	"ClassProp",
@@ -35,9 +21,4 @@ SELECT
 FROM
 	"SomeTable" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SomeTable"
 

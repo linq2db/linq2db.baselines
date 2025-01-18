@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "TestEntity1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TestEntity1"
-(
-	"Id"     Integer       NOT NULL,
-	"Field1" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestEntity2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TestEntity2"
-(
-	"Id"     Integer       NOT NULL,
-	"Field1" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN "TestEntity1" "t1_1" ON "t2_1"."Id" = "t1_1"."Id"
 WHERE
 	"t1_1"."Id" IS NULL
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestEntity2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestEntity1"
 

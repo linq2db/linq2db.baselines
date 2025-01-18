@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1363"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue1363"
-(
-	"required_field" Char (36) NOT NULL,
-	"optional_field" Char (36)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @id Char(36) -- AnsiStringFixedLength
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -73,9 +59,4 @@ FROM
 WHERE
 	"t1"."required_field" = ?
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1363"
 

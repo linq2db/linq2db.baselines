@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "GuidTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "GuidTable"
-(
-	"Id"             Integer   NOT NULL,
-	"Column"         Char (36) NOT NULL,
-	"ColumnNullable" Char (36)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Column Char(36) -- AnsiStringFixedLength
-SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @ColumnNullable Char(36) -- AnsiStringFixedLength
-SET     @ColumnNullable = NULL
-
-INSERT INTO "GuidTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Column Char(36) -- AnsiStringFixedLength
-SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @ColumnNullable Char(36) -- AnsiStringFixedLength
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
-
-INSERT INTO "GuidTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- AnsiStringFixedLength
@@ -271,9 +212,4 @@ FROM
 	"GuidTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "GuidTable"
 

@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PR_1598_Update_Enum_Table"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "PR_1598_Update_Enum_Table"
-(
-	"Id"     Integer       NOT NULL,
-	"Name"   NVarChar(255)     NULL,
-	"Age"    Integer           NULL,
-	"Gender" NVarChar(6)       NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
@@ -120,9 +102,4 @@ FROM
 WHERE
 	"t"."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PR_1598_Update_Enum_Table"
 

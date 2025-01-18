@@ -1,62 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "Table1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Table1"
-(
-	"Field3" Integer NOT NULL,
-	"Field5" Integer     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Table2"
-(
-	"Field6" Integer     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table3"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Table3"
-(
-	"Field6" Integer     NULL,
-	"Field3" Integer NOT NULL,
-	"Field4" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table7"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Table7"
-(
-	"Field4" Integer       NOT NULL,
-	"Field8" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Field6"
 FROM
@@ -69,24 +13,4 @@ FROM
 			LEFT JOIN "Table7" "a_Ref5_1" ON "t2"."Field4" = "a_Ref5_1"."Field4"
 			INNER JOIN "Table2" "t4" ON "t2"."Field6" = "t4"."Field6" OR "t2"."Field6" IS NULL AND "t4"."Field6" IS NULL)
 		ON "a_Ref1"."Field3" = "t2"."Field3" AND ("a_Ref5"."Field8" = "a_Ref5_1"."Field8" OR "a_Ref5"."Field8" IS NULL AND "a_Ref5_1"."Field8" IS NULL)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table7"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table3"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Table1"
 

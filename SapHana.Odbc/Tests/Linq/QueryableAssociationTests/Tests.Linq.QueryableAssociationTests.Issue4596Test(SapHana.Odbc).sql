@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4596Form"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue4596Form"
-(
-	"Id" Integer  NOT NULL,
-	"C1" NChar(1) NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4596Item"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue4596Item"
-(
-	"Id"         Integer       NOT NULL,
-	"FormId"     Integer       NOT NULL,
-	"OrderIndex" Integer       NOT NULL,
-	"Name1"      NVarChar(255)     NULL,
-	"Name2"      NVarChar(255)     NULL,
-	"Name3"      NVarChar(255)     NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -100,13 +68,3 @@ LIMIT 1
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4596Item"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4596Form"
-

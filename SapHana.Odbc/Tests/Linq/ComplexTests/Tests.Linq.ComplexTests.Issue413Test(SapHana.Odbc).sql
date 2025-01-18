@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "T1"
-(
-	"InstrumentId"         Integer       NOT NULL,
-	"InstrumentCode"       NVarChar(255)     NULL,
-	"CreateDate"           Timestamp     NOT NULL,
-	"SourceInstrumentCode" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("InstrumentId")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "T2"
-(
-	"InstrumentId" Integer NOT NULL,
-	"IndexId"      Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T3"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "T3"
-(
-	"InstrumentId" Integer NOT NULL,
-	"IndexId"      Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId  -- Int32
@@ -210,19 +164,4 @@ FROM
 	) "t5"
 ORDER BY
 	"t5"."SourceInstrumentCode"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T3"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "T1"
 

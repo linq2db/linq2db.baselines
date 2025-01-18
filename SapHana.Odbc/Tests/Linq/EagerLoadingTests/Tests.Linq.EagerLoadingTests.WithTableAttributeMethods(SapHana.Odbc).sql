@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "UserIssue3128"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "UserIssue3128"
-(
-	"Id" Integer NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "UserDetailsIssue3128"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "UserDetailsIssue3128"
-(
-	"UserId" Integer NOT NULL,
-	"Age"    Integer NOT NULL,
-
-	PRIMARY KEY ("UserId")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 10
 
@@ -79,14 +48,4 @@ WHERE
 		FROM
 			"UserIssue3128" "t1"
 	) > 0
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "UserDetailsIssue3128"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "UserIssue3128"
 

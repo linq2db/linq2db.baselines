@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1316Tests"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue1316Tests"
-(
-	"ID" Integer NOT NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
 
@@ -37,9 +22,4 @@ FROM
 WHERE
 	"t1"."ID" IN (4, 5, 6)
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1316Tests"
 

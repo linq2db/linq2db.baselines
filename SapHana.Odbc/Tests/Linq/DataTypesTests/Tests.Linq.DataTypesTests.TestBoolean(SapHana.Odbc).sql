@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "BooleanTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "BooleanTable"
-(
-	"Id"             Integer NOT NULL,
-	"Column"         TinyInt NOT NULL,
-	"ColumnNullable" TinyInt     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Column  -- Byte
-SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-
-INSERT INTO "BooleanTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Column  -- Byte
-SET     @Column = 0
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 1
-
-INSERT INTO "BooleanTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Column  -- Byte
 SET     @Column = 0
 DECLARE @ColumnNullable  -- Byte
@@ -270,9 +211,4 @@ FROM
 	"BooleanTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "BooleanTable"
 

@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "IntEnumTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "IntEnumTable"
-(
-	"Id"             Integer NOT NULL,
-	"Column"         Integer NOT NULL,
-	"ColumnNullable" Integer     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Column  -- Int32
-SET     @Column = 1
-DECLARE @ColumnNullable  -- Int32
-SET     @ColumnNullable = NULL
-
-INSERT INTO "IntEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Column  -- Int32
-SET     @Column = 2
-DECLARE @ColumnNullable  -- Int32
-SET     @ColumnNullable = 3
-
-INSERT INTO "IntEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Column  -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
@@ -270,9 +211,4 @@ FROM
 	"IntEnumTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "IntEnumTable"
 

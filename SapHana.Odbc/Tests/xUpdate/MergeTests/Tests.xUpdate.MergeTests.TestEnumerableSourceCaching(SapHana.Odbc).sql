@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "CacheTestTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "CacheTestTable"
-(
-	"Id"    Integer NOT NULL,
-	"Value" Integer NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "source_Id", 1 AS "source_Value" FROM DUMMY
@@ -91,9 +75,4 @@ FROM
 	"CacheTestTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CacheTestTable"
 

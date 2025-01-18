@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TPHTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TPHTable"
-(
-	"Id"            Integer      NOT NULL,
-	"Discriminator" Integer      NOT NULL,
-	"Value1"        NVarChar(50)     NULL,
-	"Value2"        NVarChar(50)     NULL,
-	"Value3"        NVarChar(50)     NULL,
-	"NullableBool"  VarChar(1)       NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Discriminator  -- Int32
@@ -198,9 +178,4 @@ FROM
 WHERE
 	"x"."Value3" = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TPHTable"
 

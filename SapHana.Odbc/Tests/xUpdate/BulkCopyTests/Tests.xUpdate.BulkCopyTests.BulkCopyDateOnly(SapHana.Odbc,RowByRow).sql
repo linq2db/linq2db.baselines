@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "DateOnlyTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "DateOnlyTable"
-(
-	"Date" Date NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Date  -- Date
 SET     @Date = '2021-01-01'
 
@@ -33,9 +20,4 @@ SELECT
 FROM
 	"DateOnlyTable" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "DateOnlyTable"
 

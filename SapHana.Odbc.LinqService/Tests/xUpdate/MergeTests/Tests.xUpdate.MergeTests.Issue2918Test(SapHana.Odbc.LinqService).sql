@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PatentAssessment"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "PatentAssessment"
-(
-	"PatentId"               Integer        NOT NULL,
-	"TechnicalReviewersText" NVarChar(1000)     NULL,
-
-	PRIMARY KEY ("PatentId")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue2918Table2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue2918Table2"
-(
-	"PatentId" Integer NOT NULL,
-	"UserId"   Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "User"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "User"
-(
-	"Id"          Integer        NOT NULL,
-	"DisplayName" NVarChar(1000) NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @userId  -- Int32
 SET     @userId = 1
 
@@ -80,19 +34,4 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"TechnicalReviewersText" = "Source"."source_TechnicalReviewersText"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "User"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue2918Table2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PatentAssessment"
 
