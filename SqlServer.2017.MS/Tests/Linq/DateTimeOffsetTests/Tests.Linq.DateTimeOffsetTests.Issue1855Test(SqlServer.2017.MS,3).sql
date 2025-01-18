@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue1855Table]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Issue1855Table]', N'U') IS NULL)
-	CREATE TABLE [Issue1855Table]
-	(
-		[Id]                         Int            NOT NULL,
-		[SomeDateTimeOffset]         DateTimeOffset NOT NULL,
-		[SomeNullableDateTimeOffset] DateTimeOffset     NULL,
-
-		CONSTRAINT [PK_Issue1855Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -69,9 +51,4 @@ FROM
 	[Issue1855Table] [r]
 WHERE
 	@clientSideIn <> [r].[SomeDateTimeOffset]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue1855Table]
 

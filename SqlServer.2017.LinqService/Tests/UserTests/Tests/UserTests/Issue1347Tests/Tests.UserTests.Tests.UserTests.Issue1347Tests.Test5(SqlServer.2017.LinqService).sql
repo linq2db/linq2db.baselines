@@ -1,76 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NULL)
-	CREATE TABLE [GlobalTaskDTO]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NULL)
-	CREATE TABLE [WMS_GlobalTaskA]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[WmsLoadCarrierDTO]', N'U') IS NULL)
-	CREATE TABLE [WmsLoadCarrierDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WMS_LoadCarrierA]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[WMS_LoadCarrierA]', N'U') IS NULL)
-	CREATE TABLE [WMS_LoadCarrierA]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],
@@ -118,24 +48,4 @@ FROM
 			FROM
 				[WMS_LoadCarrierA] [t2]
 		) [res_1] ON [t3].[ResourceID] = [res_1].[Id]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WMS_LoadCarrierA]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

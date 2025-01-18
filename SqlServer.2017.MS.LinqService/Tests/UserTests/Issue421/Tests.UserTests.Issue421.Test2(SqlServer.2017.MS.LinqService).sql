@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DROP TABLE IF EXISTS [BlobClass]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[BlobClass]', N'U') IS NULL)
-	CREATE TABLE [BlobClass]
-	(
-		[Id]        Int            NOT NULL,
-		[BlobValue] VarBinary(100)     NULL,
-
-		CONSTRAINT [PK_BlobClass] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -60,9 +43,4 @@ FROM
 	[BlobClass] [t1]
 WHERE
 	[t1].[Id] = 1
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [BlobClass]
 

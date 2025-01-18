@@ -1,49 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DROP TABLE IF EXISTS [OptimizationData]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[OptimizationData]', N'U') IS NULL)
-	CREATE TABLE [OptimizationData]
-	(
-		[Id]                  Int            NOT NULL,
-		[IntVlaue]            Int            NOT NULL,
-		[IntVlaueNullable]    Int                NULL,
-		[BoolValue]           Bit            NOT NULL,
-		[BoolValueNullable]   Bit                NULL,
-		[StringValue]         NVarChar(4000)     NULL,
-		[StringValueNullable] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-INSERT INTO [OptimizationData]
-(
-	[Id],
-	[IntVlaue],
-	[IntVlaueNullable],
-	[BoolValue],
-	[BoolValueNullable],
-	[StringValue],
-	[StringValueNullable]
-)
-VALUES
-(1,1,0,1,1,N'1',N'1'),
-(2,2,1,0,NULL,N'0',N'0'),
-(3,4,4,0,NULL,N'1',N'1'),
-(4,0,1,1,1,N'0',NULL),
-(5,1,3,1,1,N'1',NULL),
-(6,3,0,0,0,N'0',N'0'),
-(7,1,4,0,0,N'1',N'1'),
-(8,3,2,1,1,N'0',N'0')
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
@@ -2374,9 +2331,4 @@ SELECT
 	[t1].[StringValueNullable]
 FROM
 	[OptimizationData] [t1]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [OptimizationData]
 

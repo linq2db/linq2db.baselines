@@ -1,24 +1,5 @@
 ﻿--  SqlServer.2017
 
-DROP TABLE IF EXISTS [Issue4671Entity1]
-
-
-
---  SqlServer.2017
-
-IF (OBJECT_ID(N'[Issue4671Entity1]', N'U') IS NULL)
-	CREATE TABLE [Issue4671Entity1]
-	(
-		[Id]    int  NOT NULL IDENTITY,
-		[Value] int  NOT NULL,
-
-		CONSTRAINT [PK_Issue4671Entity1] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-
-
---  SqlServer.2017
-
 CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 (
 	[Id]    int  NOT NULL IDENTITY,
@@ -78,12 +59,6 @@ FROM
 --  SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671Entity1TMP]
-
-
-
---  SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue4671Entity1]
 
 
 

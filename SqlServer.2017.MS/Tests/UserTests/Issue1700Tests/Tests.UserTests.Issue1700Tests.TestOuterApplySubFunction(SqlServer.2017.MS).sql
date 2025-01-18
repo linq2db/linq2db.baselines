@@ -1,68 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Item]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NULL)
-	CREATE TABLE [Item]
-	(
-		[GroupId]     Int            NOT NULL,
-		[ItemId]      Int            NOT NULL,
-		[Description] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [ItemAppType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[ItemAppType]', N'U') IS NULL)
-	CREATE TABLE [ItemAppType]
-	(
-		[AppTypeId] Int NOT NULL,
-		[ItemId]    Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [AppType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[AppType]', N'U') IS NULL)
-	CREATE TABLE [AppType]
-	(
-		[AppTypeId]   Int       NOT NULL,
-		[CreatedDate] DateTime2 NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [AppSubType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[AppSubType]', N'U') IS NULL)
-	CREATE TABLE [AppSubType]
-	(
-		[AppTypeId]    Int            NOT NULL,
-		[AppSubTypeId] Int            NOT NULL,
-		[Description]  NVarChar(4000)     NULL,
-		[CreatedDate]  DateTime2      NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @groupId Int -- Int32
 SET     @groupId = 5
 
@@ -102,24 +39,4 @@ FROM
 		) [t2]
 WHERE
 	[i].[GroupId] = @groupId
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [AppSubType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [AppType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [ItemAppType]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Item]
 

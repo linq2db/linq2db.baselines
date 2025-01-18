@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017
-
-DROP TABLE IF EXISTS [Base]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[Base]', N'U') IS NULL)
-	CREATE TABLE [Base]
-	(
-		[Code]   NVarChar(4000)     NULL,
-		[Id]     Int            NOT NULL,
-		[Name]   NVarChar(4000)     NULL,
-		[IsMale] Bit                NULL,
-		[Age]    Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -86,9 +68,4 @@ WHERE
 	[e].[Id] = 0
 ORDER BY
 	[e].[Id]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [Base]
 
