@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'GuidTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "GuidTable"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'GuidTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "GuidTable"
-			(
-				"Id"             Int                           NOT NULL,
-				"Column"         CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"ColumnNullable" CHAR(16) CHARACTER SET OCTETS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-INSERT INTO "GuidTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,X'BC7B663D0FDE43278F925D8CC3A11D11',NULL FROM rdb$database UNION ALL
-SELECT 2,X'A948600DDE214F748AC29516B287076E',X'BD3973A543234DD89F4FDF9F93E2A627' FROM rdb$database
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Column Guid
 SET     @Column = X'A948600DDE214F748AC29516B287076E'
 DECLARE @ColumnNullable Guid
@@ -183,12 +148,4 @@ FROM
 	"GuidTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'GuidTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "GuidTable"';
-END
 

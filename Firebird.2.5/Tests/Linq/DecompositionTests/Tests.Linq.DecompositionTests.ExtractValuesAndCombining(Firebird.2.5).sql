@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Item')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Item"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Item')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Item"
-			(
-				"ItemId"   Int                                    NOT NULL,
-				"Kind"     Int                                    NOT NULL,
-				"ItemCode" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Style"    VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Color"    VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_Item" PRIMARY KEY ("ItemId")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-INSERT INTO "Item"
-(
-	"ItemId",
-	"Kind",
-	"ItemCode",
-	"Style",
-	"Color"
-)
-SELECT 1,1,CAST('01020102' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('Style1' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('White' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 2,1,'01020102','Style1','White' FROM rdb$database UNION ALL
-SELECT 3,1,'01020102','Style1','White' FROM rdb$database UNION ALL
-SELECT 4,2,'03020302','Style3','White' FROM rdb$database UNION ALL
-SELECT 5,2,'01040104','Style1','Blue' FROM rdb$database UNION ALL
-SELECT 6,2,'01010104','Style1','Black' FROM rdb$database UNION ALL
-SELECT 7,3,'03020302','Style3','White' FROM rdb$database UNION ALL
-SELECT 8,3,'01040104','Style1','Blue' FROM rdb$database UNION ALL
-SELECT 9,3,'01010104','Style1','Black' FROM rdb$database
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 SELECT
 	"x"."cond",
 	"x"."Kind",
@@ -608,12 +560,4 @@ SELECT
 	"t1"."Color"
 FROM
 	"Item" "t1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Item')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Item"';
-END
 

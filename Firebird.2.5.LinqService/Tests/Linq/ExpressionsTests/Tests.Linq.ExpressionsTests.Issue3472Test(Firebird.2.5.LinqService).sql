@@ -1,41 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3472TableDCTX')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3472TableDCTX"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3472TableDCTX')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue3472TableDCTX"
-			(
-				"Id" Int NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-
-INSERT INTO "Issue3472TableDCTX"
-(
-	"Id"
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	(
@@ -48,12 +13,4 @@ SELECT
 	)
 FROM
 	"Issue3472TableDCTX" "t1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3472TableDCTX')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3472TableDCTX"';
-END
 

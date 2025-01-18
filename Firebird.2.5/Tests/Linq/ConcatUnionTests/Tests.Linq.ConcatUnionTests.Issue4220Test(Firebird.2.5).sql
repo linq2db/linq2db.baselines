@@ -1,53 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteA')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcreteA"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteA')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ConcreteA"
-			(
-				"Id"    Int                                    NOT NULL,
-				"AOnly" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_ConcreteA" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteB')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcreteB"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteB')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ConcreteB"
-			(
-				"Id"    Int                                    NOT NULL,
-				"BOnly" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_ConcreteB" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @AOnly VarChar(6) -- String
@@ -100,20 +52,4 @@ SELECT
 	"e_1"."BOnly"
 FROM
 	"ConcreteB" "e_1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteB')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcreteB"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConcreteA')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConcreteA"';
-END
 

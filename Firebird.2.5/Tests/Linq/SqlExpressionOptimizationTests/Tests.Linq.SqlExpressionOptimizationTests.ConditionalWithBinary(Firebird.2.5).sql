@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OptimizationData')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "OptimizationData"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OptimizationData')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "OptimizationData"
-			(
-				"Id"                  Int                                    NOT NULL,
-				"IntVlaue"            Int                                    NOT NULL,
-				"IntVlaueNullable"    Int,
-				"BoolValue"           CHAR(1)                                NOT NULL,
-				"BoolValueNullable"   CHAR(1),
-				"StringValue"         VarChar(255) CHARACTER SET UNICODE_FSS,
-				"StringValueNullable" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-SELECT 1,1,0,'1','1',CAST('1' AS VarChar(255) CHARACTER SET UNICODE_FSS),CAST('1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 2,2,1,'0',NULL,'0','0' FROM rdb$database UNION ALL
-SELECT 3,4,4,'0',NULL,'1','1' FROM rdb$database UNION ALL
-SELECT 4,0,1,'1','1','0',NULL FROM rdb$database UNION ALL
-SELECT 5,1,3,'1','1','1',NULL FROM rdb$database UNION ALL
-SELECT 6,3,0,'0','0','0','0' FROM rdb$database UNION ALL
-SELECT 7,1,4,'0','0','1','1' FROM rdb$database UNION ALL
-SELECT 8,3,2,'1','1','0','0' FROM rdb$database
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	"x"."Id",
@@ -2392,12 +2343,4 @@ SELECT
 	"t1"."StringValueNullable"
 FROM
 	"OptimizationData" "t1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'OptimizationData')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "OptimizationData"';
-END
 

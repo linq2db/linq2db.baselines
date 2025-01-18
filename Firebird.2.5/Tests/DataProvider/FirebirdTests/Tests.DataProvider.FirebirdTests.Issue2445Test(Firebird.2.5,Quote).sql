@@ -1,51 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Card"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Card"
-			(
-				"Id"       Int                                    NOT NULL,
-				"CardName" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"OwnerId"  Int                                    NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Client"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Client"
-			(
-				"Id"   Int                                    NOT NULL,
-				"Name" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 SELECT
 	"t2"."Id",
 	"t2"."CardName",
@@ -71,20 +26,4 @@ FROM
 			FROM
 				"Client" "a_Owner"
 		) "t1" ON "t1"."Id" = "t2"."OwnerId"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Client')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Client"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Card')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Card"';
-END
 

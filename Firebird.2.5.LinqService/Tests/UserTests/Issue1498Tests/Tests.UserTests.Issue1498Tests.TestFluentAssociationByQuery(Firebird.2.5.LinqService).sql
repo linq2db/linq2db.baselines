@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Topic"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Topic"
-			(
-				"Id"    Int                                    NOT NULL,
-				"Title" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Text"  VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Message"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Message"
-			(
-				"Id"      Int                                    NOT NULL,
-				"TopicId" Int                                    NOT NULL,
-				"Text"    VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -138,20 +92,4 @@ FROM
 	"Topic" "x"
 WHERE
 	"x"."Id" = 6
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Message')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Message"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Topic')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Topic"';
-END
 
