@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS ComplexPerson
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS ComplexPerson
-(
-	Id        Int32,
-	FirstName Nullable(String),
-	LastName  Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	x.Id,
 	x.FirstName,
@@ -37,9 +18,4 @@ FROM
 	ComplexPerson x_1
 WHERE
 	x_1.Id < 20
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS ComplexPerson
 

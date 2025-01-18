@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Base
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Base
-(
-	Code Nullable(String),
-	Id   Int32,
-	Name Nullable(String),
-	Age  Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO Base
 (
 	Code,
@@ -59,9 +42,4 @@ FROM
 	Base e
 WHERE
 	e.Code <> 'Child' OR e.Code IS NULL
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Base
 

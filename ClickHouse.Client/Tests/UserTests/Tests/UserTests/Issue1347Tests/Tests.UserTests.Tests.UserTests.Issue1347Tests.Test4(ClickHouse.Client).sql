@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS GlobalTaskDTO
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS GlobalTaskDTO
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS WMS_GlobalTaskA
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t1.Id,
 	t1.ResourceID,
@@ -66,14 +24,4 @@ SELECT
 	t2.OutfeedTransportOrderID as OutfeedTransportOrderID
 FROM
 	WMS_GlobalTaskA t2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS GlobalTaskDTO
 

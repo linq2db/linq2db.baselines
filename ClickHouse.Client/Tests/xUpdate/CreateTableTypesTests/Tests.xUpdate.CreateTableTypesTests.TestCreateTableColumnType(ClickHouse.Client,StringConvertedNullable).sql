@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS CreateTableTypes
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS CreateTableTypes
-(
-	Id              Int32,
-	StringConverted Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO CreateTableTypes
 (
 	Id,
@@ -51,9 +36,4 @@ FROM
 	CreateTableTypes t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS CreateTableTypes
 

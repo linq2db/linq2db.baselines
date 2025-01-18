@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS TestBool
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestBool
-(
-	Id    Int32,
-	Value Nullable(Bool)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO TestBool
 (
 	Id,
@@ -56,9 +41,4 @@ SELECT
 FROM
 	TestBool t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TestBool
 

@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS DisTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS DisTable
-(
-	DisTypeID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS JurTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS JurTable
-(
-	JurCode String,
-
-	PRIMARY KEY (JurCode)
-)
-ENGINE = MergeTree()
-ORDER BY JurCode
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS DisTypeTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS DisTypeTable
-(
-	DisTypeID Int32,
-	JurCode   String,
-
-	PRIMARY KEY (DisTypeID)
-)
-ENGINE = MergeTree()
-ORDER BY DisTypeID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	d.DisTypeID
 FROM
@@ -61,19 +12,4 @@ FROM
 			WHEN d.DisTypeID = 5 THEN 5
 		END = a_DisType.DisTypeID
 		INNER JOIN JurTable j ON a_DisType.JurCode = j.JurCode
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS DisTypeTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS JurTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS DisTable
 

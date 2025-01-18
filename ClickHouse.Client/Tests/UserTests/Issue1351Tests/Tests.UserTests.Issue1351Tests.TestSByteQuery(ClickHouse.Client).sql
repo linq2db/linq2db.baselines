@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS T1351Model
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS T1351Model
-(
-	ID           Int32,
-	TestField    Int8,
-	TestNullable Nullable(Int8)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t1.ID,
 	t1.TestField,
@@ -37,9 +21,4 @@ FROM
 	T1351Model t1
 WHERE
 	t1.TestNullable <> toInt8(1) OR t1.TestNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS T1351Model
 

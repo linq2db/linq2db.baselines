@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS TestEntity1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestEntity1
-(
-	Id     Int32,
-	Field1 Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TestEntity2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestEntity2
-(
-	Id     Int32,
-	Field1 Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -88,14 +58,4 @@ FROM
 		LEFT JOIN TestEntity1 t1_1 ON t2_1.Id = t1_1.Id
 WHERE
 	t1_1.Id IS NULL
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TestEntity2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TestEntity1
 

@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS TestFolder
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestFolder
-(
-	Id       UUID,
-	Label    Nullable(String),
-	ParentId Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 WITH RECURSIVE CTE AS
 (
 	SELECT
@@ -54,9 +38,4 @@ SELECT
 	t2.Entity_ParentId
 FROM
 	CTE t2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TestFolder
 

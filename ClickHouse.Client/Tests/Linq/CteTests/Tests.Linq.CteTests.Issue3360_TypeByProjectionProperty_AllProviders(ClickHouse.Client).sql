@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue3360Table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue3360Table
-(
-	Id  Int32,
-	Str Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -39,9 +21,4 @@ SELECT
 	t2.Str
 FROM
 	cte t2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue3360Table
 

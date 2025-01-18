@@ -1,63 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS AttendanceSheet
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS AttendanceSheet
-(
-	Id Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO AttendanceSheet
-(
-	Id
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS AttendanceSheetRow
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS AttendanceSheetRow
-(
-	Id                Int32,
-	AttendanceSheetId Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO AttendanceSheetRow
-(
-	Id,
-	AttendanceSheetId
-)
-VALUES
-(1,1),
-(2,2),
-(3,1),
-(4,2)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -73,14 +16,4 @@ SELECT
 	t1.Id
 FROM
 	AttendanceSheet t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS AttendanceSheetRow
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS AttendanceSheet
 

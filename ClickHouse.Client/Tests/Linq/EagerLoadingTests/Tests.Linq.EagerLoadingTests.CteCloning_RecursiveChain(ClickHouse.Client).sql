@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS CteTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteTable
-(
-	Id     Int32,
-	Value1 Int32,
-	Value2 Int32,
-	Value3 Int32,
-	Value4 Int32,
-	Value5 Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteChildTable
-(
-	Id    Int32,
-	Value Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -205,14 +171,4 @@ SELECT
 FROM
 	cte1 t7
 		LEFT JOIN CteChildTable d ON t7.Value4 = d.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS CteTable
 

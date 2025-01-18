@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS InventoryResourceDTO
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS InventoryResourceDTO
-(
-	Id                UUID,
-	Status            Int32,
-	ResourceID        UUID,
-	ModifiedTimeStamp Nullable(DateTime64(7))
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS WmsLoadCarrierDTO
-(
-	Id            UUID,
-	ResourceLabel Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO WmsLoadCarrierDTO
 (
 	Id,
@@ -136,14 +104,4 @@ GROUP BY
 	lc.ResourceLabel
 HAVING
 	COUNT(*) > 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InventoryResourceDTO
 

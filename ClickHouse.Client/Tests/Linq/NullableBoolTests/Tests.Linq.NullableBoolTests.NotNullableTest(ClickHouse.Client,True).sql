@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS NotNullableBoolClass
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS NotNullableBoolClass
-(
-	Value Bool
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO NotNullableBoolClass
-(
-	Value
-)
-VALUES
-(true),
-(false)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t.Value
 FROM
@@ -82,9 +57,4 @@ FROM
 	NotNullableBoolClass t
 WHERE
 	t.Value = true
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS NotNullableBoolClass
 

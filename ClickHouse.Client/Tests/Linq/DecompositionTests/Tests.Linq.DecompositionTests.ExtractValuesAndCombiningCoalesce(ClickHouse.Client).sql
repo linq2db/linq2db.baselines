@@ -1,49 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Item
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Item
-(
-	ItemId   Int32,
-	Kind     Int32,
-	ItemCode Nullable(String),
-	Style    Nullable(String),
-	Color    Nullable(String),
-
-	PRIMARY KEY (ItemId)
-)
-ENGINE = MergeTree()
-ORDER BY ItemId
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Item
-(
-	ItemId,
-	Kind,
-	ItemCode,
-	Style,
-	Color
-)
-VALUES
-(1,1,'01020102','Style1','White'),
-(2,1,'01020102','Style1','White'),
-(3,1,'01020102','Style1','White'),
-(4,2,'03020302','Style3','White'),
-(5,2,'01040104','Style1','Blue'),
-(6,2,'01010104','Style1','Black'),
-(7,3,'03020302','Style3','White'),
-(8,3,'01040104','Style1','Blue'),
-(9,3,'01010104','Style1','Black')
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t.Kind = 1 OR t.Kind = 2,
 	t.Kind,
@@ -249,9 +206,4 @@ SELECT
 	t1.Color
 FROM
 	Item t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Item
 

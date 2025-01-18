@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS CteChild
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteChild
-(
-	ChildID  Int32,
-	ParentID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO CteChild
 (
 	ChildID,
@@ -73,9 +58,4 @@ WHERE
 ORDER BY
 	c4.ChildID,
 	c4.ParentID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS CteChild
 
