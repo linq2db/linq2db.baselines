@@ -1,34 +1,4 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue2342Entity"
-		(
-			"Id"   Number(19)   NOT NULL,
-			"Name" VarChar(256) NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -47,16 +17,4 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "Issue2342Entity"
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue2342Entity"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1192Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1192Table"
-		(
-			"IdId"      Int NOT NULL,
-			"MyOtherId" Int NOT NULL,
-			"Status"    Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(CASE
 		WHEN t."Status" = 3 THEN 1
@@ -42,16 +11,4 @@ FROM
 WHERE
 	t."MyOtherId" = 12
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1192Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

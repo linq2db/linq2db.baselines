@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3674Tests"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue3674Tests"
-		(
-			"Code"         VarChar(30) NOT NULL,
-			"DIM_Company"  VarChar(30)     NULL,
-			"DIM_Branch"   VarChar(30)     NULL,
-			"DIM_Location" VarChar(30)     NULL,
-			"DIM_MSegment" VarChar(30)     NULL,
-			"DIM_Make"     VarChar(30)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Code",
 	p."DIM_Company",
@@ -52,16 +18,4 @@ WHERE
 	(p."DIM_MSegment" IS NULL OR p."DIM_MSegment" IS NULL OR p."DIM_MSegment" = '1' OR p."DIM_MSegment" = '2' OR p."DIM_MSegment" = '3' OR p."DIM_MSegment" = '4' OR p."DIM_MSegment" = '5' OR p."DIM_MSegment" = '6' OR p."DIM_MSegment" = '7' OR p."DIM_MSegment" = '8' OR p."DIM_MSegment" = '9' OR p."DIM_MSegment" = '0') AND
 	(p."DIM_Make" IS NULL OR p."DIM_Make" IS NULL OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0')
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3674Tests"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

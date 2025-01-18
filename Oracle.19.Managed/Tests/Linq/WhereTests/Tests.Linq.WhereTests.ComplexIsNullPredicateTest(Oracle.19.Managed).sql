@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ComplexPredicate"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ComplexPredicate"
-		(
-			"Id"    Int          NOT NULL,
-			"Value" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "ComplexPredicate" ("Id", "Value") VALUES (1,NULL)
-	INTO "ComplexPredicate" ("Id", "Value") VALUES (2,'other')
-	INTO "ComplexPredicate" ("Id", "Value") VALUES (3,'123')
-	INTO "ComplexPredicate" ("Id", "Value") VALUES (4,'test')
-	INTO "ComplexPredicate" ("Id", "Value") VALUES (5,'1')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Value"
@@ -67,16 +26,4 @@ SELECT
 	t1."Value"
 FROM
 	"ComplexPredicate" t1
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ComplexPredicate"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
