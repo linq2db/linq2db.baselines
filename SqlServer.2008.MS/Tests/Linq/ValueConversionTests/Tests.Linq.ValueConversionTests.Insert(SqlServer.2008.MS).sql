@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
-	CREATE TABLE [ValueConversion]
-	(
-		[Id]                      Int           NOT NULL,
-		[Value1]                  NVarChar(200)     NULL,
-		[Value2]                  NVarChar(200)     NULL,
-		[Enum]                    NVarChar(50)  NOT NULL,
-		[EnumNullable]            VarChar(50)       NULL,
-		[EnumWithNull]            VarChar(50)       NULL,
-		[EnumWithNullDeclarative] VarChar(50)       NULL,
-		[BoolValue]               VarChar(1)    NOT NULL,
-		[AnotherBoolValue]        VarChar(1)    NOT NULL,
-		[DateTimeNullable]        DateTime2         NULL,
-
-		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(200) -- String
@@ -206,10 +180,4 @@ SELECT
 	COUNT(*)
 FROM
 	[ValueConversion] [t1]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NOT NULL)
-	DROP TABLE [ValueConversion]
 

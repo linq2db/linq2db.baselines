@@ -1,40 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteTable]', N'U') IS NOT NULL)
-	DROP TABLE [CteTable]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteTable]', N'U') IS NULL)
-	CREATE TABLE [CteTable]
-	(
-		[Id]     Int NOT NULL,
-		[Value1] Int NOT NULL,
-		[Value2] Int NOT NULL,
-		[Value3] Int NOT NULL,
-		[Value4] Int NOT NULL,
-		[Value5] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteChildTable]', N'U') IS NOT NULL)
-	DROP TABLE [CteChildTable]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteChildTable]', N'U') IS NULL)
-	CREATE TABLE [CteChildTable]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -225,16 +189,4 @@ SELECT
 FROM
 	[cte1] [t7]
 		LEFT JOIN [CteChildTable] [d] ON [t7].[Value4] = [d].[Id]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteChildTable]', N'U') IS NOT NULL)
-	DROP TABLE [CteChildTable]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[CteTable]', N'U') IS NOT NULL)
-	DROP TABLE [CteTable]
 

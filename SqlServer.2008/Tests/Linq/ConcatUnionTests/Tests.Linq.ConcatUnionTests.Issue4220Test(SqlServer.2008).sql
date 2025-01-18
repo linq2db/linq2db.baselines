@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteA]', N'U') IS NOT NULL)
-	DROP TABLE [ConcreteA]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteA]', N'U') IS NULL)
-	CREATE TABLE [ConcreteA]
-	(
-		[Id]    Int            NOT NULL,
-		[AOnly] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcreteA] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteB]', N'U') IS NOT NULL)
-	DROP TABLE [ConcreteB]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteB]', N'U') IS NULL)
-	CREATE TABLE [ConcreteB]
-	(
-		[Id]    Int            NOT NULL,
-		[BOnly] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcreteB] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(4000) -- String
@@ -88,16 +52,4 @@ SELECT
 	[e_1].[BOnly]
 FROM
 	[ConcreteB] [e_1]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteB]', N'U') IS NOT NULL)
-	DROP TABLE [ConcreteB]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[ConcreteA]', N'U') IS NOT NULL)
-	DROP TABLE [ConcreteA]
 

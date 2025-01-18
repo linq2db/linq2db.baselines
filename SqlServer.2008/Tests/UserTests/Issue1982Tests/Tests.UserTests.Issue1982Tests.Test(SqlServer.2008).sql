@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[Issue1982Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1982Table]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue1982Table]', N'U') IS NULL)
-	CREATE TABLE [Issue1982Table]
-	(
-		[Time]     Time      NOT NULL,
-		[DateTime] DateTime2 NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN EXISTS(
@@ -30,10 +14,4 @@ SELECT
 			THEN 1
 		ELSE 0
 	END
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue1982Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1982Table]
 

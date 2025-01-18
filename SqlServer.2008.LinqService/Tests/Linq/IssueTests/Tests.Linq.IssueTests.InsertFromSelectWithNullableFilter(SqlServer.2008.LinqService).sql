@@ -1,94 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[InsertIssueTest]', N'U') IS NOT NULL)
-	DROP TABLE [InsertIssueTest]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InsertIssueTest]', N'U') IS NULL)
-	CREATE TABLE [InsertIssueTest]
-	(
-		[ID]          SmallInt NOT NULL,
-		[intDataType] Int          NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Int -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- SqlServer.2008
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Int -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- SqlServer.2008
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Int -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- SqlServer.2008
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Int -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- SqlServer.2008
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -140,10 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InsertIssueTest]', N'U') IS NOT NULL)
-	DROP TABLE [InsertIssueTest]
 
