@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Base
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Base
-(
-	Code   Nullable(String),
-	Id     Int32,
-	Name   Nullable(String),
-	IsMale Nullable(Bool),
-	Age    Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Base
 (
 	Code,
@@ -71,9 +53,4 @@ WHERE
 	END
 ORDER BY
 	e.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Base
 

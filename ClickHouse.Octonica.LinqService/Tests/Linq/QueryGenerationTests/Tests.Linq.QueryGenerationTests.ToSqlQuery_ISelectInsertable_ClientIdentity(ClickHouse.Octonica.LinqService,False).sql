@@ -1,42 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS TableWithIdentitySrc
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS TableWithIdentitySrc
-(
-	Id    Int32,
-	Value Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TableWithIdentity
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS TableWithIdentity
-(
-	Id    Int32,
-	Value Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TableWithIdentitySrc
 (
 	Value
@@ -68,14 +32,4 @@ SELECT
 	t1.Value
 FROM
 	TableWithIdentity t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TableWithIdentity
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TableWithIdentitySrc
 

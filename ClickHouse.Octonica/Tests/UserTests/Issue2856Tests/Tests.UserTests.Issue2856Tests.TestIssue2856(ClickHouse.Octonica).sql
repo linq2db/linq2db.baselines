@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS GlobalTaskDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS GlobalTaskDTO
-(
-	Id              UUID,
-	RPSourceID      Nullable(UUID),
-	RPDestinationID Nullable(UUID),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	gt1.RPSourceID as Value_1
 FROM
@@ -31,9 +12,4 @@ SELECT
 	gt2.RPDestinationID as Value_1
 FROM
 	GlobalTaskDTO gt2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS GlobalTaskDTO
 

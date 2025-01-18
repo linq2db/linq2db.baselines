@@ -1,76 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS GlobalTaskDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS GlobalTaskDTO
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS WMS_GlobalTaskA
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS WmsResourcePointDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS WmsResourcePointDTO
-(
-	Id UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS StorageShelfDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS StorageShelfDTO
-(
-	Id UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t2.Id,
 	t2.ResourceID,
@@ -116,24 +46,4 @@ FROM
 		LEFT JOIN WmsResourcePointDTO dest ON t2.RPDestinationID = dest.Id
 		LEFT JOIN StorageShelfDTO destShelf ON t2.StorageShelfDestinationID = destShelf.Id
 		LEFT JOIN WmsResourcePointDTO origdest ON t2.RPOrigDestinationID = origdest.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS StorageShelfDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS WmsResourcePointDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS GlobalTaskDTO
 

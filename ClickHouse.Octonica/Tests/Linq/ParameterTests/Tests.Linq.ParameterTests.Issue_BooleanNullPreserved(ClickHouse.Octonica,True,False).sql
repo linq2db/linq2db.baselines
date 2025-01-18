@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS TestBool
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestBool
-(
-	Id    Int32,
-	Value Nullable(Bool)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestBool
 (
 	Id,
@@ -56,9 +41,4 @@ SELECT
 FROM
 	TestBool t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TestBool
 

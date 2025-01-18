@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS InheritanceFilter
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS InheritanceFilter
-(
-	Id                Int32,
-	Code              Int32,
-	Child1Field       Nullable(Int32),
-	Child2Field       Nullable(Int32),
-	Grandchild11Field Nullable(Int32),
-	Grandchild12Field Nullable(Int32),
-	Grandchild21Field Nullable(Int32),
-	Grandchild22Field Nullable(Int32),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO InheritanceFilter
 (
 	Id,
@@ -140,9 +116,4 @@ SELECT
 	t1.Grandchild22Field
 FROM
 	InheritanceFilter t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS InheritanceFilter
 

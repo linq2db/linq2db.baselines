@@ -1,26 +1,4 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TPHTable
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS TPHTable
-(
-	Id            Int32,
-	Discriminator Int32,
-	Value1        Nullable(String),
-	Value2        Nullable(String),
-	Value3        Nullable(String),
-	NullableBool  Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
 INSERT INTO TPHTable(Id, Discriminator, Value1, Value2, Value3, NullableBool) VALUES
 
 BeforeExecute
@@ -133,9 +111,4 @@ FROM
 WHERE
 	x.Value3 = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TPHTable
 

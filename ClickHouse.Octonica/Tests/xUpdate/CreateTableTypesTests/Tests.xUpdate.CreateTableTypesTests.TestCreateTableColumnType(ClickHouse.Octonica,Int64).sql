@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS CreateTableTypes
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS CreateTableTypes
-(
-	Id    Int32,
-	Int64 Int64
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO CreateTableTypes
 (
 	Id,
@@ -51,9 +36,4 @@ FROM
 	CreateTableTypes t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS CreateTableTypes
 

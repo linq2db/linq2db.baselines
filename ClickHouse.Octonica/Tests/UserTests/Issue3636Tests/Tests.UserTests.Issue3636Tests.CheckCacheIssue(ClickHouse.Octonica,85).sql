@@ -1,64 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS T1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS T1
-(
-	id  Int32,
-	id2 Int32,
-	id3 Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO T1
-(
-	id,
-	id2,
-	id3
-)
-VALUES
-(1,2,0),
-(2,2,0),
-(2,85,0)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS T2
-(
-	id  Int32,
-	id2 Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO T2
-(
-	id,
-	id2
-)
-VALUES
-(1,2),
-(2,2),
-(2,85)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Key_1,
 	d.id,
@@ -101,14 +43,4 @@ GROUP BY
 ORDER BY
 	x.id
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T1
 

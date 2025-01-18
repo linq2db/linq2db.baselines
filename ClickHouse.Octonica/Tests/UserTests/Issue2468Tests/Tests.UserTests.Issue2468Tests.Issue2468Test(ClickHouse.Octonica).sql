@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS InventoryResourceDTO
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS InventoryResourceDTO
-(
-	Id        UUID,
-	Status    Int32,
-	Color     Int32,
-	CMYKColor Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO InventoryResourceDTO
 (
 	Id,
@@ -63,9 +46,4 @@ WHERE
 		WHEN x.Status = 2 THEN 'InProgress'
 		ELSE 'Unknown'
 	END, 'en') > 0
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS InventoryResourceDTO
 

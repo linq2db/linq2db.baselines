@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS TestFolder
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS TestFolder
-(
-	Id       UUID,
-	Label    Nullable(String),
-	ParentId Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestFolder
 (
 	Id,
@@ -38,9 +22,4 @@ SELECT
 FROM
 	CTE child
 		INNER JOIN TestFolder parent ON child.ParentId = parent.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS TestFolder
 
