@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcurrencyAutoIncrement
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ConcurrencyAutoIncrement
-(
-	Id      Int           NOT NULL,
-	Stamp   Int           NOT NULL,
-	"Value" NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -171,9 +154,4 @@ SELECT
 	t1."Value"
 FROM
 	ConcurrencyAutoIncrement t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcurrencyAutoIncrement
 

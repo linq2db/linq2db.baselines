@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue4596Form
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue4596Form
-(
-	Id Int      NOT NULL,
-	C1 NChar(1) NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4596Item
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue4596Item
-(
-	Id         Int           NOT NULL,
-	FormId     Int           NOT NULL,
-	OrderIndex Int           NOT NULL,
-	Name1      NVarChar(255)     NULL,
-	Name2      NVarChar(255)     NULL,
-	Name3      NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	m_1.cond,
@@ -83,14 +51,4 @@ SELECT FIRST 1
 	t1.C1 <> 'T'
 FROM
 	Issue4596Form t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4596Item
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4596Form
 

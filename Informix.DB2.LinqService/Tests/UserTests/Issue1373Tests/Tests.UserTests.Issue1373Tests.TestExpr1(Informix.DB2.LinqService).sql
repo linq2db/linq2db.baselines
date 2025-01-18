@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue1373Tests
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1373Tests
-(
-	Id     Int           NOT NULL,
-	Field1 NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -68,9 +52,4 @@ FROM
 	Issue1373Tests t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1373Tests
 

@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS IntEnumTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS IntEnumTable
-(
-	Id             Int NOT NULL,
-	"Column"       Int NOT NULL,
-	ColumnNullable Int     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @Column Integer(4) -- Int32
-SET     @Column = 1
-DECLARE @ColumnNullable Integer -- Int32
-SET     @ColumnNullable = NULL
-
-INSERT INTO IntEnumTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @Column Integer(4) -- Int32
-SET     @Column = 2
-DECLARE @ColumnNullable Integer(4) -- Int32
-SET     @ColumnNullable = 3
-
-INSERT INTO IntEnumTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Column Integer(4) -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer(4) -- Int32
@@ -229,9 +170,4 @@ FROM
 	IntEnumTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS IntEnumTable
 

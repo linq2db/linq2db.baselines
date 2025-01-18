@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS BackgroundTask
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS BackgroundTask
-(
-	ID               Int     NULL,
-	DurationID       Int NOT NULL,
-	DurationInterval Int NOT NULL,
-	PersonID         Int     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer(4) -- Int32
@@ -54,9 +38,4 @@ FROM
 	BackgroundTask task_1
 WHERE
 	task_1.PersonID = @personId
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS BackgroundTask
 

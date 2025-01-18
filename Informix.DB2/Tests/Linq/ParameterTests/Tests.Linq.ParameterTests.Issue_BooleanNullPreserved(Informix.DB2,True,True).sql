@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TestBool
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TestBool
-(
-	Id      Int     NOT NULL,
-	"Value" BOOLEAN     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 INSERT INTO TestBool
 (
 	Id,
@@ -74,9 +60,4 @@ SELECT FIRST 2
 	t1."Value"
 FROM
 	TestBool t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TestBool
 

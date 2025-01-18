@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS InheritanceFilter
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS InheritanceFilter
-(
-	Id                Int NOT NULL,
-	Code              Int NOT NULL,
-	Child1Field       Int     NULL,
-	Child2Field       Int     NULL,
-	Grandchild11Field Int     NULL,
-	Grandchild12Field Int     NULL,
-	Grandchild21Field Int     NULL,
-	Grandchild22Field Int     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Code Integer(4) -- Int32
@@ -182,9 +160,4 @@ SELECT
 	t1.Grandchild22Field
 FROM
 	InheritanceFilter t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS InheritanceFilter
 

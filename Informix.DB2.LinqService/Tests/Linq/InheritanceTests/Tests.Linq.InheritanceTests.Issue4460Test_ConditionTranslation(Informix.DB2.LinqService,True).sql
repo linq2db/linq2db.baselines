@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Base
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Base
-(
-	Code   NVarChar(255)     NULL,
-	Id     Int           NOT NULL,
-	Name   NVarChar(255)     NULL,
-	IsMale BOOLEAN           NULL,
-	Age    Int               NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer(4) -- Int32
@@ -87,9 +70,4 @@ WHERE
 	END
 ORDER BY
 	e.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Base
 

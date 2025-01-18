@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4715Table
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue4715Table
-(
-	Id    Int NOT NULL,
-	Prop1 Int NOT NULL,
-	Prop2 Int NOT NULL,
-	Prop3 Int NOT NULL,
-	Prop4 Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer(4) -- Int32
@@ -54,9 +37,4 @@ SELECT FIRST 2
 	t1.Prop3
 FROM
 	Issue4715Table t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4715Table
 

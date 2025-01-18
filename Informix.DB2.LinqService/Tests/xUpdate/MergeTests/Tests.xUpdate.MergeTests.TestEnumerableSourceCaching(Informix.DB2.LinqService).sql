@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS CacheTestTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CacheTestTable
-(
-	Id      Int NOT NULL,
-	"Value" Int NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 MERGE INTO CacheTestTable Target
 USING (
 	SELECT 1::Int AS source_Id, 1::Int AS source_Value FROM table(set{1})
@@ -99,9 +83,4 @@ FROM
 	CacheTestTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CacheTestTable
 

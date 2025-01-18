@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CreateTableTypes
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CreateTableTypes
-(
-	Id              Int           NOT NULL,
-	StringConverted NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @StringConverted VarChar(4) -- String
@@ -58,9 +44,4 @@ FROM
 	CreateTableTypes t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CreateTableTypes
 

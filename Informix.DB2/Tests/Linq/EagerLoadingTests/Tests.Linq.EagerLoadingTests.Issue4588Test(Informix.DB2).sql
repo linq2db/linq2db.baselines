@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS "Order"
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS "Order"
-(
-	Id   Int           NOT NULL,
-	Name NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS SubOrder
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS SubOrder
-(
-	Id      Int NOT NULL,
-	OrderId Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS SubOrderDetail
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS SubOrderDetail
-(
-	Id         Int                       NOT NULL,
-	SubOrderId Int                       NOT NULL,
-	Code       NVarChar(255)                 NULL,
-	"Date"     datetime year to fraction NOT NULL,
-	IsActive   BOOLEAN                   NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Informix.DB2 Informix
@@ -132,19 +87,4 @@ WHERE
 	x.Name LIKE 'cat%' ESCAPE '~'
 ORDER BY
 	x.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS SubOrderDetail
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS SubOrder
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS "Order"
 

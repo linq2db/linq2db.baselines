@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS PR_1598_Insert_Table_Cache
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS PR_1598_Insert_Table_Cache
-(
-	Id   Int           NOT NULL,
-	Name NVarChar(255)     NULL,
-	Age  Int               NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer(4) -- Int32
@@ -84,9 +67,4 @@ FROM
 	PR_1598_Insert_Table_Cache t
 WHERE
 	t.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS PR_1598_Insert_Table_Cache
 

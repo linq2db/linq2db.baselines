@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Request
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Request
-(
-	Id SERIAL  NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Metric
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Metric
-(
-	Id        SERIAL  NOT NULL,
-	RequestId Int     NOT NULL,
-	"Value"   Float       NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	t1.cond_1,
 	t1.cond
@@ -47,14 +15,4 @@ FROM
 			FROM
 				Metric a_Metrics
 		) t1 ON a.Id = t1.RequestId AND t1.rn <= 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Metric
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Request
 

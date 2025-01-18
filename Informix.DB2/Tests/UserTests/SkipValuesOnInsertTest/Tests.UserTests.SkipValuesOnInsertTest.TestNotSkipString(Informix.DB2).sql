@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS PR_1598_Insert_Table
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS PR_1598_Insert_Table
-(
-	Id   Int           NOT NULL,
-	Name NVarChar(255)     NULL,
-	Age  Int               NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -82,9 +65,4 @@ FROM
 	PR_1598_Insert_Table t
 WHERE
 	t.Id = 2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS PR_1598_Insert_Table
 

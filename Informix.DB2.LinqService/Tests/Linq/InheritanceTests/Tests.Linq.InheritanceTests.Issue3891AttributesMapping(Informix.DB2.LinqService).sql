@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Base
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Base
-(
-	Id           Int           NOT NULL,
-	"Type"       Int           NOT NULL,
-	Name_First   NVarChar(255)     NULL,
-	Name_Second  NVarChar(255)     NULL,
-	Test_ChildId Int           NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Type Integer(4) -- Int32
@@ -93,9 +74,4 @@ SELECT FIRST 2
 	t1.Name_Second
 FROM
 	Base t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Base
 

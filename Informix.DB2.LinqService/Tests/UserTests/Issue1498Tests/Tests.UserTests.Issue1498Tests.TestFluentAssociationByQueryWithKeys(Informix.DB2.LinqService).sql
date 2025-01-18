@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Topic
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Topic
-(
-	Id    Int           NOT NULL,
-	Title NVarChar(255)     NULL,
-	Text  NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Message
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Message
-(
-	Id      Int           NOT NULL,
-	TopicId Int           NOT NULL,
-	Text    NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -126,14 +92,4 @@ FROM
 	Topic x
 WHERE
 	x.Id = 6
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Message
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Topic
 

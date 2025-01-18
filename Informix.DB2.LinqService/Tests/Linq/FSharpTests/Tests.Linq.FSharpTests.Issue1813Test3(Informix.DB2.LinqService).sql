@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS "Names"
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS "Names"
-(
-	Id   Int           NOT NULL,
-	Name NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Addresses
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Addresses
-(
-	Id   Int           NOT NULL,
-	Text NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -93,14 +65,4 @@ FROM
 		LEFT JOIN Addresses arg2 ON tupledArg.Id = arg2.Id
 ORDER BY
 	tupledArg.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Addresses
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS "Names"
 

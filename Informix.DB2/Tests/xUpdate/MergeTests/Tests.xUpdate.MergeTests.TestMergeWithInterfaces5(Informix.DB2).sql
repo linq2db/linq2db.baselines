@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS ReviewIndexes
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ReviewIndexes
-(
-	Id      Int           NOT NULL,
-	"Value" NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 MERGE INTO ReviewIndexes Target
 USING (
 	SELECT
@@ -47,9 +31,4 @@ VALUES
 	Source.source_Id,
 	Source.source_Value
 )
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ReviewIndexes
 

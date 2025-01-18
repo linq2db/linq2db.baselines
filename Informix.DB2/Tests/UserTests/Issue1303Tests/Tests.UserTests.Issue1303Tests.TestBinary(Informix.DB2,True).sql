@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1303
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1303
-(
-	ID       Int  NOT NULL,
-	"Array"  BYTE     NULL,
-	"Binary" BYTE     NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @value VarBinary(3) -- Binary
 SET     @value = {1,2,3}
 DECLARE @value_1 VarBinary(2) -- Binary
@@ -46,9 +29,4 @@ FROM
 	Issue1303 t1
 WHERE
 	t1.ID = 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1303
 

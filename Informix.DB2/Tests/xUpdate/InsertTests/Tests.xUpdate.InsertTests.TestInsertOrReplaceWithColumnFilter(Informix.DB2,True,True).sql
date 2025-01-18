@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TestInsertOrReplaceTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TestInsertOrReplaceTable
-(
-	ID         Int           NOT NULL,
-	FirstName  NVarChar(255)     NULL,
-	LastName   NVarChar(255)     NULL,
-	MiddleName NVarChar(255)     NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -111,9 +93,4 @@ FROM
 	TestInsertOrReplaceTable x
 WHERE
 	x.FirstName = @FirstName
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TestInsertOrReplaceTable
 

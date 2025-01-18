@@ -1,41 +1,4 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3757Level1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue3757Level1
-(
-	ID     Int           NOT NULL,
-	ValS   NVarChar(255)     NULL,
-	ValB   BOOLEAN           NULL,
-	ValInt Int               NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3757Level2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue3757Level2
-(
-	ID       Int           NOT NULL,
-	ParentId Int           NOT NULL,
-	ValS     NVarChar(255)     NULL,
-	ValB     BOOLEAN           NULL,
-	ValInt   Int               NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Informix.DB2 Informix
@@ -88,14 +51,4 @@ WHERE
 			it.ID = c_1.ParentId AND it.ValS LIKE '%de%' ESCAPE '~' AND
 			it.ValS IS NOT NULL
 	)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3757Level2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3757Level1
 

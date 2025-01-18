@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS T1
-(
-	InstrumentId         Int                       NOT NULL,
-	InstrumentCode       NVarChar(255)                 NULL,
-	CreateDate           datetime year to fraction NOT NULL,
-	SourceInstrumentCode NVarChar(255)                 NULL,
-
-	PRIMARY KEY (InstrumentId)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS T2
-(
-	InstrumentId Int NOT NULL,
-	IndexId      Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T3
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS T3
-(
-	InstrumentId Int NOT NULL,
-	IndexId      Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer(4) -- Int32
@@ -208,19 +162,4 @@ FROM
 	) t5
 ORDER BY
 	t5.SourceInstrumentCode
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T3
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS T1
 
