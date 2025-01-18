@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestFolder"
-		(
-			"Id"       Raw(16)      NOT NULL,
-			"Label"    VarChar(255)     NULL,
-			"ParentId" Raw(16)          NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
 WITH CTE
 (
 	"Level_1",
@@ -79,16 +48,4 @@ SELECT
 	t2."Entity_ParentId"
 FROM
 	CTE t2
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

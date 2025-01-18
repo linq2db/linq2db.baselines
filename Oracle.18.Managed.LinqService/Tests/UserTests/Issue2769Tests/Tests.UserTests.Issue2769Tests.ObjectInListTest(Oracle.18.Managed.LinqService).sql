@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SampleClass"
-		(
-			"Id"        Int NOT NULL,
-			"NullValue" Int     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_1."Id",
 	a_1."NullValue"
@@ -49,16 +19,4 @@ FROM
 WHERE
 	a_1."Id" = 0 AND a_1.KEYNUMB = 0 OR a_1."Id" = 1 AND a_1.KEYNUMB = 1 OR
 	a_1."Id" = 2 AND a_1.KEYNUMB = 2
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

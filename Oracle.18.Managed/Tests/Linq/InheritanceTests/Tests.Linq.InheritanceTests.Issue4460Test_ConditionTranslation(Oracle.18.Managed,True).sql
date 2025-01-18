@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Base"
-		(
-			"Code"   VarChar(255)     NULL,
-			"Id"     Int          NOT NULL,
-			"Name"   VarChar(255)     NULL,
-			"IsMale" Char(1)          NULL,
-			"Age"    Int              NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Code Varchar2(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -101,16 +68,4 @@ WHERE
 	e."Id" = 0
 ORDER BY
 	e."Id"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
