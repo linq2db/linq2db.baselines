@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestFolder"
-		(
-			"Id"       Raw(16)      NOT NULL,
-			"Label"    VarChar(255)     NULL,
-			"ParentId" Raw(16)          NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestFolder"
 (
 	"Id",
@@ -54,16 +23,4 @@ SELECT
 FROM
 	CTE child
 		INNER JOIN "TestFolder" parent ON child."ParentId" = parent."Id"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

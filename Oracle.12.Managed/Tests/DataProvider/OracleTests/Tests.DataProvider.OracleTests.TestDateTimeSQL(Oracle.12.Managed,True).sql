@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test0431"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Test0431"
-		(
-			"Date"             date                        NOT NULL,
-			"DateTime"         timestamp                   NOT NULL,
-			"DateTime_"        date                        NOT NULL,
-			"DateTime2"        timestamp                   NOT NULL,
-			"DateTime2_0"      timestamp(0)                NOT NULL,
-			"DateTime2_1"      timestamp(1)                NOT NULL,
-			"DateTime2_9"      timestamp(9)                NOT NULL,
-			"DateTimeOffset_"  timestamp with time zone    NOT NULL,
-			"DateTimeOffset_0" timestamp(0) with time zone NOT NULL,
-			"DateTimeOffset_1" timestamp(1) with time zone NOT NULL,
-			"DateTimeOffset_9" timestamp(9) with time zone NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Date_1 Date
 SET     @Date_1 = TIMESTAMP '2020-01-03 00:00:00.000000'
 DECLARE @DateTime TimeStamp -- DateTime
@@ -310,16 +271,4 @@ FROM
 	"Test0431" r
 WHERE
 	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 03:20:06.7891234 +00:00'
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test0431"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

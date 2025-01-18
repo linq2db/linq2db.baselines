@@ -1,70 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -4080 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -2289 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -942 THEN
-				RAISE;
-			END IF;
-	END;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue681Table4"
-		(
-			ID      Int  NOT NULL,
-			"Value" Int  NOT NULL,
-
-			CONSTRAINT "PK_Issue681Table4" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "SIDENTITY_Issue681Table4"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-CREATE OR REPLACE TRIGGER "TIDENTITY_Issue681Table4"
-BEFORE INSERT ON "Issue681Table4" FOR EACH ROW
-BEGIN
-	SELECT "SIDENTITY_Issue681Table4".NEXTVAL INTO :NEW.ID FROM dual;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
@@ -86,34 +22,4 @@ VALUES
 )
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -4080 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -2289 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table4"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -942 THEN
-				RAISE;
-			END IF;
-	END;
-END;
 

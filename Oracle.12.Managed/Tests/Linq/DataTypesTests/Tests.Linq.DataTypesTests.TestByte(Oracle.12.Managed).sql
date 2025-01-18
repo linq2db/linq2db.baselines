@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ByteTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ByteTable"
-		(
-			"Id"             Int       NOT NULL,
-			"Column"         Number(3) NOT NULL,
-			"ColumnNullable" Number(3)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
-	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Int16
 SET     @Column_1 = 255
 DECLARE @ColumnNullable Int16
@@ -178,16 +139,4 @@ FROM
 	"ByteTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ByteTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
