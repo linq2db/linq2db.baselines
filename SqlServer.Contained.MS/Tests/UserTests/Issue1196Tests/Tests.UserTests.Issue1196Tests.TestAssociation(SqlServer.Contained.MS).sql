@@ -1,53 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Requests]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Requests]', N'U') IS NULL)
-	CREATE TABLE [Requests]
-	(
-		[Id]     Int NOT NULL,
-		[FirmId] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [FirmInfo]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[FirmInfo]', N'U') IS NULL)
-	CREATE TABLE [FirmInfo]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Assignments]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Assignments]', N'U') IS NULL)
-	CREATE TABLE [Assignments]
-	(
-		[Id]          Int               NOT NULL IDENTITY,
-		[DirectionId] UniqueIdentifier  NOT NULL,
-		[TargetId]    Int                   NULL,
-		[DateRevoke]  DateTime2             NULL,
-
-		CONSTRAINT [PK_Assignments] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1002
 DECLARE @FirmId Int -- Int32
@@ -135,19 +87,4 @@ FROM
 		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [a_Requests].[Id]
 WHERE
 	[r].[Id] = 1002
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Assignments]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [FirmInfo]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Requests]
 

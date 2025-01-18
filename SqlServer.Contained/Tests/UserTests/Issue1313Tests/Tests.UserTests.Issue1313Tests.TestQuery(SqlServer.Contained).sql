@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [ValueItem]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[ValueItem]', N'U') IS NULL)
-	CREATE TABLE [ValueItem]
-	(
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -31,9 +17,4 @@ SELECT
 	[row_1].[Value]
 FROM
 	[ValueItem] [row_1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [ValueItem]
 

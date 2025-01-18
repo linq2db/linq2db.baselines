@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Topic]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Topic]', N'U') IS NULL)
-	CREATE TABLE [Topic]
-	(
-		[Id]    Int            NOT NULL,
-		[Title] NVarChar(4000)     NULL,
-		[Text]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Message]', N'U') IS NULL)
-	CREATE TABLE [Message]
-	(
-		[Id]      Int            NOT NULL,
-		[TopicId] Int            NOT NULL,
-		[Text]    NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -124,14 +92,4 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Topic]
 

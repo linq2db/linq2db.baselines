@@ -1,57 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [O1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[O1]', N'U') IS NULL)
-	CREATE TABLE [O1]
-	(
-		[DocEntry]    Int            NOT NULL,
-		[BplId]       Int            NOT NULL,
-		[ChaveAcesso] NVarChar(4000)     NULL,
-		[DocStatus]   NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [O2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[O2]', N'U') IS NULL)
-	CREATE TABLE [O2]
-	(
-		[DocEntry]    Int            NOT NULL,
-		[BplId]       Int            NOT NULL,
-		[ChaveAcesso] NVarChar(4000)     NULL,
-		[DocStatus]   NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [O3]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[O3]', N'U') IS NULL)
-	CREATE TABLE [O3]
-	(
-		[DocEntry]    Int            NOT NULL,
-		[BplId]       Int            NOT NULL,
-		[ChaveAcesso] NVarChar(4000)     NULL,
-		[DocStatus]   NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado'),
@@ -72,19 +21,4 @@ SELECT
 	CAST(N'Manual/Externo' AS NVarChar(4000))
 FROM
 	[O3] [doSap_2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [O3]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [O2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [O1]
 

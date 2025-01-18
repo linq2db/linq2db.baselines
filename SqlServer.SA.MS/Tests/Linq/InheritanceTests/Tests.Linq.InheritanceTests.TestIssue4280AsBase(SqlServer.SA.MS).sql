@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4280]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4280]', N'U') IS NULL)
-	CREATE TABLE [Issue4280]
-	(
-		[Id]           Int            NOT NULL,
-		[SerialNumber] NVarChar(4000)     NULL,
-		[DeviceType]   NVarChar(4000)     NULL,
-		[Location]     NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue4280] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -127,9 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4280]
 

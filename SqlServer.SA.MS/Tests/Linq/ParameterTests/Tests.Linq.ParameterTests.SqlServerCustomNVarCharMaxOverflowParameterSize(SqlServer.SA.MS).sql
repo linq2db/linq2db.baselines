@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
-	CREATE TABLE [AllTypesCustomMaxLength]
-	(
-		[VarBinary] VarBinary(Max)     NULL,
-		[VarChar]   VarChar(Max)       NULL,
-		[NVarChar]  NVarChar(Max)      NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @NVarChar NVarChar -- String
 SET     @NVarChar = Tests.Linq.ParameterTests+NVarChar
 
@@ -51,9 +35,4 @@ FROM
 	[AllTypesCustomMaxLength] [t]
 WHERE
 	[t].[NVarChar] = @p
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

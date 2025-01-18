@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue4460Table]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4460Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4460Table]
-	(
-		[Id]      Int            NOT NULL,
-		[Code]    NVarChar(4000)     NULL,
-		[Name]    NVarChar(4000)     NULL,
-		[Surname] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 INSERT INTO [Issue4460Table]
 (
 	[Id],
@@ -38,9 +21,4 @@ SELECT
 	[t1].[Surname]
 FROM
 	[Issue4460Table] [t1]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4460Table]
 

@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4460Table]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4460Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4460Table]
-	(
-		[Id]      Int            NOT NULL,
-		[Code]    NVarChar(4000)     NULL,
-		[Name]    NVarChar(4000)     NULL,
-		[Surname] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(4000) -- String
@@ -53,9 +36,4 @@ FROM
 	[Issue4460Table] [t1]
 WHERE
 	[t1].[Code] = N'GrandChild'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4460Table]
 

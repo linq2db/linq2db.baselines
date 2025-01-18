@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3927Table]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue3927Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3927Table]
-	(
-		[SerialNumber] Char(11) NOT NULL,
-		[PageNumber]   Int      NOT NULL,
-
-		CONSTRAINT [PK_Issue3927Table] PRIMARY KEY CLUSTERED ([SerialNumber])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @PageNumber Int -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
@@ -32,9 +15,4 @@ FROM
 	[Issue3927Table] [display]
 WHERE
 	[display].[SerialNumber] = @serialNumber
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3927Table]
 

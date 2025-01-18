@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [Test3847_OutfeedTransportOrder]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[Test3847_OutfeedTransportOrder]', N'U') IS NULL)
-	CREATE TABLE [Test3847_OutfeedTransportOrder]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[outfeed].[Id],
 	(
@@ -42,9 +28,4 @@ SELECT
 	)
 FROM
 	[Test3847_OutfeedTransportOrder] [outfeed]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Test3847_OutfeedTransportOrder]
 

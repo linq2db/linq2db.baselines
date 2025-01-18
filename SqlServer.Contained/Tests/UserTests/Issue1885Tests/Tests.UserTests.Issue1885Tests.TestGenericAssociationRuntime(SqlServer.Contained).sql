@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [User]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[User]', N'U') IS NULL)
-	CREATE TABLE [User]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [User]
 (
 	[Id]
@@ -53,9 +39,4 @@ FROM
 					SELECT 'Testing' AS Data
 				) [a_Data]
 		) [t1] ON 1=1
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [User]
 

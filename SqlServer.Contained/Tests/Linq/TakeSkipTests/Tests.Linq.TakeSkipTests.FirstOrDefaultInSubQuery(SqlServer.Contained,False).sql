@@ -1,65 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [Batch]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Batch]', N'U') IS NULL)
-	CREATE TABLE [Batch]
-	(
-		[Id]    Int            NOT NULL,
-		[Value] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Batch] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [Batch]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,N'V1'),
-(2,N'V2'),
-(3,N'V3')
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Confirmation]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Confirmation]', N'U') IS NULL)
-	CREATE TABLE [Confirmation]
-	(
-		[BatchId] Int       NOT NULL,
-		[Date]    DateTime2 NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [Confirmation]
-(
-	[BatchId],
-	[Date]
-)
-VALUES
-(1,DATETIME2FROMPARTS(2019, 4, 9, 14, 30, 0, 0, 7)),
-(2,DATETIME2FROMPARTS(2019, 4, 9, 14, 30, 20, 0, 7)),
-(2,DATETIME2FROMPARTS(2019, 4, 9, 14, 30, 25, 0, 7)),
-(3,DATETIME2FROMPARTS(2019, 4, 9, 14, 30, 35, 0, 7))
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Date_1],
@@ -84,14 +25,4 @@ FROM
 	) [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Confirmation]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Batch]
 

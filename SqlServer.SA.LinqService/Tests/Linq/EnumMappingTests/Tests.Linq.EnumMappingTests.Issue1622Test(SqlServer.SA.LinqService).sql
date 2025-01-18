@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1622Table]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NULL)
-	CREATE TABLE [Issue1622Table]
-	(
-		[Id]       Int            NOT NULL,
-		[SomeText] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue1622Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(4000) -- String
@@ -54,9 +37,4 @@ FROM
 	[Issue1622Table] [e]
 WHERE
 	[e].[Id] = 1
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1622Table]
 

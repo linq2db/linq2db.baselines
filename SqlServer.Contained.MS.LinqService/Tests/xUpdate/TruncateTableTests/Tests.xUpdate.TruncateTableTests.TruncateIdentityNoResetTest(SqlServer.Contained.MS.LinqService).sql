@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [test_temp]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
-	CREATE TABLE [test_temp]
-	(
-		[ID]     Int      NOT NULL IDENTITY,
-		[Field1] Decimal  NOT NULL,
-
-		CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 DELETE FROM [test_temp]
 
 BeforeExecute
@@ -100,9 +83,4 @@ FROM
 ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [test_temp]
 

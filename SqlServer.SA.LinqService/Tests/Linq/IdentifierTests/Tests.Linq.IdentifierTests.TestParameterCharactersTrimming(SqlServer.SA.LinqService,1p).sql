@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [testparams]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[testparams]', N'U') IS NULL)
-	CREATE TABLE [testparams]
-	(
-		[1p] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 2
 
@@ -23,9 +9,4 @@ SET
 	[1p] = @p
 WHERE
 	[testparams].[1p] = 1
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [testparams]
 

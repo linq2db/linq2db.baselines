@@ -1,45 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [NC_CODE]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[NC_CODE]', N'U') IS NULL)
-	CREATE TABLE [NC_CODE]
-	(
-		[HANDLE]             NVarChar(4000) NOT NULL,
-		[CHANGE_STAMP]       Decimal            NULL,
-		[SITE]               NVarChar(18)       NULL,
-		[NC_CODE]            NVarChar(48)       NULL,
-		[DESCRIPTION]        NVarChar(120)      NULL,
-		[STATUS_BO]          NVarChar(4000)     NULL,
-		[CREATED_DATE_TIME]  DateTime2          NULL,
-		[MODIFIED_DATE_TIME] DateTime2          NULL,
-		[NC_CATEGORY]        NVarChar(4000)     NULL,
-		[DPMO_CATEGORY_BO]   NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [NC_GROUP_MEMBER]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[NC_GROUP_MEMBER]', N'U') IS NULL)
-	CREATE TABLE [NC_GROUP_MEMBER]
-	(
-		[HANDLE]               NVarChar(4000) NOT NULL,
-		[NC_GROUP_BO]          NVarChar(4000)     NULL,
-		[NC_CODE_OR_GROUP_GBO] NVarChar(4000)     NULL,
-		[SEQUENCE]             Decimal            NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @ncCodeBo NVarChar(4000) -- String
 SET     @ncCodeBo = N'NCCodeBO:8110,SETUP_OSCILLOSCO'
 
@@ -69,14 +29,4 @@ FROM
 	[AllowedNcCode] [item_1]
 WHERE
 	[item_1].[NcCodeBo] = @ncCodeBo
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [NC_GROUP_MEMBER]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [NC_CODE]
 

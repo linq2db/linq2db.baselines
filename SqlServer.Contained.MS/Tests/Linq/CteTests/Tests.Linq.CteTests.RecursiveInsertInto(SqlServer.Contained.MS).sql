@@ -1,64 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [HierarchyTree]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
-	CREATE TABLE [HierarchyTree]
-	(
-		[Id]       Int NOT NULL,
-		[ParentId] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-INSERT INTO [HierarchyTree]
-(
-	[Id],
-	[ParentId]
-)
-VALUES
-(1,NULL),
-(2,NULL),
-(10,1),
-(11,1),
-(20,2),
-(22,2),
-(100,10),
-(101,10),
-(102,10),
-(110,11),
-(111,11),
-(112,11),
-(200,20),
-(201,20),
-(202,20),
-(210,21),
-(211,21),
-(212,21)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [HierarchyData]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[HierarchyData]', N'U') IS NULL)
-	CREATE TABLE [HierarchyData]
-	(
-		[Id]    Int NOT NULL,
-		[Level] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -115,14 +57,4 @@ FROM
 	[HierarchyData] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [HierarchyData]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [HierarchyTree]
 

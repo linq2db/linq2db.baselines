@@ -1,52 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Order]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Order]', N'U') IS NULL)
-	CREATE TABLE [Order]
-	(
-		[Id]   Int            NOT NULL,
-		[Name] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [SubOrder]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[SubOrder]', N'U') IS NULL)
-	CREATE TABLE [SubOrder]
-	(
-		[Id]      Int NOT NULL,
-		[OrderId] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [SubOrderDetail]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[SubOrderDetail]', N'U') IS NULL)
-	CREATE TABLE [SubOrderDetail]
-	(
-		[Id]         Int            NOT NULL,
-		[SubOrderId] Int            NOT NULL,
-		[Code]       NVarChar(4000)     NULL,
-		[Date]       DateTime2      NOT NULL,
-		[IsActive]   Bit            NOT NULL
-	)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -138,19 +90,4 @@ WHERE
 ORDER BY
 	[x].[Id]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [SubOrderDetail]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [SubOrder]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Order]
 

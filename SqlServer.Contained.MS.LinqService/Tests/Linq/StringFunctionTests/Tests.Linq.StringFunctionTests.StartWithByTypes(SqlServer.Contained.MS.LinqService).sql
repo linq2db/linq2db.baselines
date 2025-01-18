@@ -1,53 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [StringTypesTable]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[StringTypesTable]', N'U') IS NULL)
-	CREATE TABLE [StringTypesTable]
-	(
-		[Id]             Int          NOT NULL,
-		[CharColumn]     Char(50)         NULL,
-		[NCharColumn]    NChar(50)        NULL,
-		[VarCharColumn]  VarChar(50)      NULL,
-		[NVarCharColumn] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @CharColumn Char(10) -- AnsiStringFixedLength
-SET     @CharColumn = N'someString'
-DECLARE @NCharColumn NChar(10) -- StringFixedLength
-SET     @NCharColumn = N'someString'
-DECLARE @VarCharColumn VarChar(50) -- AnsiString
-SET     @VarCharColumn = N'someString'
-DECLARE @NVarCharColumn NVarChar(50) -- String
-SET     @NVarCharColumn = N'someString'
-
-INSERT INTO [StringTypesTable]
-(
-	[Id],
-	[CharColumn],
-	[NCharColumn],
-	[VarCharColumn],
-	[NVarCharColumn]
-)
-VALUES
-(
-	@Id,
-	@CharColumn,
-	@NCharColumn,
-	@VarCharColumn,
-	@NVarCharColumn
-)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = N'some%'
 DECLARE @str_1 NChar(5) -- StringFixedLength
@@ -70,9 +22,4 @@ WHERE
 	[t].[NCharColumn] LIKE @str_1 ESCAPE N'~' AND
 	[t].[VarCharColumn] LIKE @str_2 ESCAPE N'~' AND
 	[t].[NVarCharColumn] LIKE @str_3 ESCAPE N'~'
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [StringTypesTable]
 

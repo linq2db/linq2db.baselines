@@ -1,26 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3834Table]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue3834Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3834Table]
-	(
-		[Id]       Int            NOT NULL,
-		[Nesto]    NVarChar(4000) NOT NULL,
-		[Nest]     NVarChar(4000) NOT NULL,
-		[WhatSov]  NVarChar(4000) NOT NULL,
-		[Co2grund] NVarChar(4000)     NULL,
-		[Co2aend]  NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue3834Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 123
 DECLARE @Nesto NVarChar(4000) -- String
@@ -59,9 +38,4 @@ VALUES
 	@Co2Grund,
 	@Co2Aend
 )
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3834Table]
 

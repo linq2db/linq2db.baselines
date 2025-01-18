@@ -1,88 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue4193Person]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4193Person]', N'U') IS NULL)
-	CREATE TABLE [Issue4193Person]
-	(
-		[Name]       NVarChar(4000) NOT NULL,
-		[EmployeeId] Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [Issue4193Person]
-(
-	[Name],
-	[EmployeeId]
-)
-VALUES
-(N'foo',1)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4193Employee]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4193Employee]', N'U') IS NULL)
-	CREATE TABLE [Issue4193Employee]
-	(
-		[SalaryId] Int NOT NULL,
-		[Id]       Int NOT NULL,
-
-		CONSTRAINT [PK_Issue4193Employee] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [Issue4193Employee]
-(
-	[SalaryId],
-	[Id]
-)
-VALUES
-(1,1)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4193Salary]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4193Salary]', N'U') IS NULL)
-	CREATE TABLE [Issue4193Salary]
-	(
-		[Id]     Int NOT NULL,
-		[Amount] Int     NULL,
-
-		CONSTRAINT [PK_Issue4193Salary] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [Issue4193Salary]
-(
-	[Id],
-	[Amount]
-)
-VALUES
-(1,10)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 UPDATE
 	[a_Salary]
 SET
@@ -95,19 +13,4 @@ FROM
 		LEFT JOIN [Issue4193Salary] [a_Salary] ON [a_Employee].[SalaryId] = [a_Salary].[Id]
 WHERE
 	[e].[Name] = N'foo'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4193Salary]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4193Employee]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4193Person]
 

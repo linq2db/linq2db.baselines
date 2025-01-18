@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [Item]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NULL)
-	CREATE TABLE [Item]
-	(
-		[Id]   Int            NOT NULL,
-		[Text] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [ItemValue]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[ItemValue]', N'U') IS NULL)
-	CREATE TABLE [ItemValue]
-	(
-		[Id]     Int     NOT NULL,
-		[ItemId] Int     NOT NULL,
-		[Value]  Decimal NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Value]
@@ -49,14 +16,4 @@ SELECT
 	[x].[Text]
 FROM
 	[Item] [x]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [ItemValue]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Item]
 

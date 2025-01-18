@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Dto]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Dto]', N'U') IS NULL)
-	CREATE TABLE [Dto]
-	(
-		[id]        Int            NOT NULL,
-		[name]      NVarChar(4000)     NULL,
-		[parent_id] Int                NULL,
-		[FullName]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
 WITH [d]
 (
 	[FullName],
@@ -57,9 +40,4 @@ SELECT
 	[t2].[FullName]
 FROM
 	[d] [t2]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Dto]
 
