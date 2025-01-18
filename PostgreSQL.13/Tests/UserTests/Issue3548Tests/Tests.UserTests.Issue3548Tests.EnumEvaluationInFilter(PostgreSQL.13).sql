@@ -5,38 +5,6 @@ DROP TABLE IF EXISTS "User";DROP TYPE IF EXISTS user_type_enum;CREATE TYPE user_
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "User"
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "User"
-(
-	"Id"             Int            NOT NULL,
-	"Type"           user_type_enum NOT NULL,
-	"OrganizationId" Int                NULL,
-
-	CONSTRAINT "PK_User" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "User"
-(
-	"Id",
-	"Type",
-	"OrganizationId"
-)
-VALUES
-(1,'org',NULL),
-(2,'org',NULL),
-(3,'org_user',1),
-(4,'org_user',2)
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -65,11 +33,6 @@ WHERE
 	x."Type" = 'org_user' AND x."OrganizationId" = :OrganizationId
 ORDER BY
 	x."Id"
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "User"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

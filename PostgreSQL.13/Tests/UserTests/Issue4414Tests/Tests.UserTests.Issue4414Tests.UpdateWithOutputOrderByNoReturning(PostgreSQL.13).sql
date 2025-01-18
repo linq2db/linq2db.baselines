@@ -1,22 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MessageDto4414"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "MessageDto4414"
-(
-	"Id"       Int       NOT NULL,
-	"Key"      Int       NOT NULL,
-	"Consumed" TimeStamp     NULL,
-	"Payload"  text          NULL,
-
-	CONSTRAINT "PK_MessageDto4414" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -43,9 +25,4 @@ RETURNING
 	"MessageDto4414"."Id",
 	"MessageDto4414"."Key",
 	"MessageDto4414"."Payload"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MessageDto4414"
 

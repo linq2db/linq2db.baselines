@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Base2"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Base2"
-(
-	"Id"           Int  NOT NULL,
-	"Type"         Int  NOT NULL,
-	"Name_First"   text     NULL,
-	"Name_Second"  text     NULL,
-	"Test_ChildId" Int  NOT NULL,
-
-	CONSTRAINT "PK_Base2" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -95,9 +76,4 @@ SELECT
 FROM
 	"Base2" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Base2"
 

@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4715Table"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4715Table"
-(
-	"Id"    Int NOT NULL,
-	"Prop1" Int NOT NULL,
-	"Prop2" Int NOT NULL,
-	"Prop3" Int NOT NULL,
-	"Prop4" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer -- Int32
@@ -55,9 +38,4 @@ SELECT
 FROM
 	"Issue4715Table" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4715Table"
 

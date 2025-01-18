@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TestFolder"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestFolder"
-(
-	"Id"       uuid NOT NULL,
-	"Label"    text     NULL,
-	"ParentId" uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 WITH "CTE" ("ParentId", "Label")
 AS
 (
@@ -38,9 +23,4 @@ SELECT
 FROM
 	"CTE" child
 		INNER JOIN "TestFolder" parent ON child."ParentId" = parent."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestFolder"
 

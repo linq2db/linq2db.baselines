@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CreateTableTypes"
-(
-	"Id"            Int    NOT NULL,
-	"Int64Nullable" BigInt     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int64Nullable Bigint -- Int64
@@ -58,9 +44,4 @@ FROM
 	"CreateTableTypes" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
 

@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "MRECEIPT"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "MRECEIPT"
-(
-	"RECEIPT_NO" text     NULL,
-	"CUSTKEY"    text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "EXTERNAL_RECEIPTS"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "EXTERNAL_RECEIPTS"
-(
-	"RECEIPT_NO" text     NULL,
-	"CUSTKEY"    text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CUST_DTL"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CUST_DTL"
-(
-	"CUSTKEY"   text     NULL,
-	"BILLGROUP" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	i_1."ReceiptNo",
 	"a_Customer"."BILLGROUP"
@@ -61,19 +19,4 @@ FROM
 			"EXTERNAL_RECEIPTS" t1
 	) i_1
 		LEFT JOIN "CUST_DTL" "a_Customer" ON i_1."Custkey" = "a_Customer"."CUSTKEY" OR i_1."Custkey" IS NULL AND "a_Customer"."CUSTKEY" IS NULL
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CUST_DTL"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "EXTERNAL_RECEIPTS"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MRECEIPT"
 

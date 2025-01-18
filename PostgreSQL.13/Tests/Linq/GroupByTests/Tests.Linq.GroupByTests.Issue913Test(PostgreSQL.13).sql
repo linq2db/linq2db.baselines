@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue913Test"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue913Test"
-(
-	"InstrumentID"  Int  NOT NULL,
-	"TradingStatus" text     NULL,
-
-	CONSTRAINT "PK_Issue913Test" PRIMARY KEY ("InstrumentID")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "Issue913Test"
-(
-	"InstrumentID",
-	"TradingStatus"
-)
-VALUES
-(1,NULL),
-(2,'A'),
-(3,'D')
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	g_2.cond,
 	COUNT(*)
@@ -45,9 +16,4 @@ FROM
 	) g_2
 GROUP BY
 	g_2.cond
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue913Test"
 

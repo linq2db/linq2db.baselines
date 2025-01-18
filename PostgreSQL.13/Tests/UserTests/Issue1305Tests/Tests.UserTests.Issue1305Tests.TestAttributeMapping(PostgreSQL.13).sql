@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ColumnOrderTest"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ColumnOrderTest"
-(
-	"RecordID"       Int       NOT NULL,
-	"EffectiveStart" TimeStamp NOT NULL,
-	"EffectiveEnd"   TimeStamp     NULL,
-	"Key"            Int       NOT NULL,
-	"Name"           text          NULL,
-	"Code"           text          NULL,
-	"Audit1ID"       Int       NOT NULL,
-	"Audit2ID"       Int       NOT NULL,
-
-	CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 SHOW server_version_num
 
 BeforeExecute
@@ -290,8 +268,3 @@ SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ColumnOrderTest"
-

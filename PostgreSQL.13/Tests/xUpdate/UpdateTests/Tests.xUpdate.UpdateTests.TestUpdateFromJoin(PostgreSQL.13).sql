@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS gt_s_one
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS gt_s_one
-(
-	id   Int  NOT NULL,
-	col1 text     NULL,
-	col2 text     NULL,
-	col3 text     NULL,
-	col4 text     NULL,
-	col5 text     NULL,
-	col6 text     NULL,
-
-	CONSTRAINT "PK_gt_s_one" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS access_mode
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS access_mode
-(
-	id   Int  NOT NULL,
-	code text     NULL,
-
-	CONSTRAINT "PK_access_mode" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 UPDATE
 	gt_s_one
 SET
@@ -58,14 +21,4 @@ FROM
 WHERE
 	Upper(REPLACE(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR
 	gt_s_one.col3 IS NULL AND y1.code IS NULL
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS access_mode
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS gt_s_one
 
