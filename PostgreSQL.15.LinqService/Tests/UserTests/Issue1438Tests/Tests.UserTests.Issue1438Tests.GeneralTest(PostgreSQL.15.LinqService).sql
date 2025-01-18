@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1438"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1438"
-(
-	"Id"  SERIAL   NOT NULL,
-	"Has" Boolean  NOT NULL,
-
-	CONSTRAINT "PK_Issue1438" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Has Boolean
 SET     @Has = True
 
@@ -43,9 +27,4 @@ FROM
 WHERE
 	t1."Id" = :id
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1438"
 

@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "DateOnlyTable"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "DateOnlyTable"
-(
-	"Date" Date NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 INSERT INTO "DateOnlyTable"
 (
 	"Date"
@@ -29,9 +16,4 @@ SELECT
 FROM
 	"DateOnlyTable" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "DateOnlyTable"
 

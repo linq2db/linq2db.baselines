@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS _test
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS _test
-(
-	"FirstName"  text     NOT NULL,
-	"PersonID"   SERIAL   NOT NULL,
-	"LastName"   text     NOT NULL,
-	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
-
-	CONSTRAINT "PK__test" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -28,9 +9,4 @@ SELECT
 	t1."Gender"
 FROM
 	_test t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS _test
 

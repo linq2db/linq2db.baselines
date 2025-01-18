@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "DateTypes"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "DateTypes"
-(
-	"Id"                Int       NOT NULL,
-	"DateTime"          TimeStamp NOT NULL,
-	"DateTimeNullable"  TimeStamp     NULL,
-	"DateTime2"         TimeStamp NOT NULL,
-	"DateTime2Nullable" TimeStamp     NULL,
-
-	CONSTRAINT "PK_DateTypes" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "DateTypes"
-(
-	"Id",
-	"DateTime",
-	"DateTimeNullable",
-	"DateTime2",
-	"DateTime2Nullable"
-)
-VALUES
-(1,'2020-02-29 17:54:55.123'::timestamp,'2020-02-29 17:54:55.123'::timestamp,'2020-02-29 17:54:55.123'::timestamp,'2020-02-29 17:54:55.123'::timestamp),
-(2,'2020-02-29 17:54:55.123'::timestamp,NULL,'2020-02-29 17:54:55.123'::timestamp,NULL)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @ts Interval -- Object
 SET     @ts = 00:01:01
 
@@ -82,9 +48,4 @@ SELECT
 	t1."DateTime2Nullable"
 FROM
 	"DateTypes" t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "DateTypes"
 

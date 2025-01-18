@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Books"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Books"
-(
-	"Id"       Int  NOT NULL,
-	"Title"    text NOT NULL,
-	"AuthorId" Int  NOT NULL,
-
-	CONSTRAINT "PK_Books" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Authors"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Authors"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text NOT NULL,
-
-	CONSTRAINT "PK_Authors" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH "BooksCte" ("AuthorId", "Title")
 AS
 (
@@ -50,14 +17,4 @@ FROM
 		INNER JOIN "Authors" "a_Author" ON b."AuthorId" = "a_Author"."Id"
 WHERE
 	"a_Author"."Name" = 'Steven'
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Authors"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Books"
 

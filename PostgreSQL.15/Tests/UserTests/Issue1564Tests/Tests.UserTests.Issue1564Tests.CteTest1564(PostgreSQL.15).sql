@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue1564Category"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1564Category"
-(
-	"Id"           Int     NOT NULL,
-	"IsVisible"    Boolean NOT NULL,
-	"DisplayOrder" Int     NOT NULL,
-	"ParentId"     Int     NOT NULL,
-	"Name"         text        NULL,
-
-	CONSTRAINT "PK_Issue1564Category" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",
@@ -101,9 +82,4 @@ SELECT
 	)
 FROM
 	"Issue1564Category" c_1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1564Category"
 

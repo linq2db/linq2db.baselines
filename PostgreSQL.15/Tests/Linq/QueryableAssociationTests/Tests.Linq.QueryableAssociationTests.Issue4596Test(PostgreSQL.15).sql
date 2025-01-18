@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Form"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4596Form"
-(
-	"Id" Int       NOT NULL,
-	"C1" character NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Item"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4596Item"
-(
-	"Id"         Int  NOT NULL,
-	"FormId"     Int  NOT NULL,
-	"OrderIndex" Int  NOT NULL,
-	"Name1"      text     NULL,
-	"Name2"      text     NULL,
-	"Name3"      text     NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -88,13 +56,3 @@ LIMIT 1
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Item"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Form"
-

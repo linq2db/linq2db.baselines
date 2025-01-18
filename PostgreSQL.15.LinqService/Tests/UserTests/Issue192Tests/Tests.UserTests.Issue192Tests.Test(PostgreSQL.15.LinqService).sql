@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeConvertTable"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeConvertTable"
-(
-	"Name"      text        NOT NULL,
-	"BoolValue" Char        NOT NULL,
-	"GuidValue" VarChar(50)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- String
@@ -248,9 +233,4 @@ FROM
 WHERE
 	t1."GuidValue" = :GuidValue
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeConvertTable"
 

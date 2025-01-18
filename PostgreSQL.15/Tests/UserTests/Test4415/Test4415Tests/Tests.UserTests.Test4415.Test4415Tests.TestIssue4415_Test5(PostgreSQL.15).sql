@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Common_Language"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Common_Language"
-(
-	"LanguageID" text     NULL,
-	"Name"       text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Common_Language"
-(
-	"LanguageID",
-	"Name"
-)
-VALUES
-('de','deutsch'),
-(NULL,'english')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	t1."LanguageID",
 	t1."Name"
@@ -50,9 +24,4 @@ WHERE
 		GROUP BY
 			x_1."Name"
 	)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Common_Language"
 

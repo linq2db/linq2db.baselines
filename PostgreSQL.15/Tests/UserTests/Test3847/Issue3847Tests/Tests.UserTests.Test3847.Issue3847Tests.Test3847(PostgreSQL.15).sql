@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Test3847_OutfeedTransportOrder"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Test3847_OutfeedTransportOrder"
-(
-	"Id" uuid NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	outfeed."Id",
 	(
@@ -43,9 +30,4 @@ SELECT
 	)
 FROM
 	"Test3847_OutfeedTransportOrder" outfeed
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3847_OutfeedTransportOrder"
 

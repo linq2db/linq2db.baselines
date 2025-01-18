@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "TestNullableParameterTarget"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestNullableParameterTarget"
-(
-	"Id1" Int NOT NULL,
-	"Id2" Int NOT NULL,
-
-	CONSTRAINT "PK_TestNullableParameterTarget" PRIMARY KEY ("Id1", "Id2")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestNullableParameterSource"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestNullableParameterSource"
-(
-	"Id" Int NOT NULL,
-
-	CONSTRAINT "PK_TestNullableParameterSource" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 MERGE INTO "TestNullableParameterTarget" "Target"
 USING (
 	SELECT
@@ -92,14 +61,4 @@ VALUES
 	"Source"."source_Id1",
 	"Source"."source_Id2"
 )
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestNullableParameterSource"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestNullableParameterTarget"
 

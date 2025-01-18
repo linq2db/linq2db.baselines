@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue681Table"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue681Table"
-(
-	"ID"    Int NOT NULL,
-	"Value" Int NOT NULL,
-
-	CONSTRAINT "PK_Issue681Table" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	current_database()
 FROM
@@ -43,9 +27,4 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "Issue681Table2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue681Table"
 

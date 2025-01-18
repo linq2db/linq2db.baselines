@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS test_insert_or_replace
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS test_insert_or_replace
-(
-	id         Int  NOT NULL,
-	name       text     NULL,
-	created_by text     NULL,
-	updated_by text     NULL,
-
-	CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -93,9 +75,4 @@ SELECT
 FROM
 	test_insert_or_replace t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS test_insert_or_replace
 

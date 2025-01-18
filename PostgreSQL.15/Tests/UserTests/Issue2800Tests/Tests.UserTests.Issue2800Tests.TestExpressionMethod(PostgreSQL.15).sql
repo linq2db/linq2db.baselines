@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Car"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Car"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text     NULL,
-
-	CONSTRAINT "PK_Car" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Car"
-(
-	"Id",
-	"Name"
-)
-VALUES
-(1,'Special'),
-(2,'NoSpecial')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	x."Id",
 	x."Name"
@@ -141,9 +113,4 @@ SELECT
 	t1."Name"
 FROM
 	"Car" t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Car"
 

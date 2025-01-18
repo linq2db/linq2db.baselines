@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS test_temp
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS test_temp
-(
-	"ID"     SERIAL   NOT NULL,
-	"Field1" decimal  NOT NULL,
-
-	CONSTRAINT "PK_test_temp" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 BeforeExecute
@@ -99,9 +83,4 @@ FROM
 ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS test_temp
 

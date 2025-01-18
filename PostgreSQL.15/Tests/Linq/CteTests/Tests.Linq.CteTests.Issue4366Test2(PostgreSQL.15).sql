@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Dto"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Dto"
-(
-	id         Int  NOT NULL,
-	name       text     NULL,
-	parent_id  Int      NULL,
-	"FullName" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE d
 (
 	"FullName",
@@ -56,9 +40,4 @@ SELECT
 	t2."FullName"
 FROM
 	d t2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Dto"
 

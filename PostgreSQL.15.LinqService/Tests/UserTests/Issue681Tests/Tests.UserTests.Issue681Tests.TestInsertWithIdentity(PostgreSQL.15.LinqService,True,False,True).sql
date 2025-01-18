@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue681Table4"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue681Table4"
-(
-	"ID"    SERIAL  NOT NULL,
-	"Value" Int     NOT NULL,
-
-	CONSTRAINT "PK_Issue681Table4" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	current_schema()
 FROM
@@ -38,9 +22,4 @@ VALUES
 )
 RETURNING 
 	"ID"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue681Table4"
 

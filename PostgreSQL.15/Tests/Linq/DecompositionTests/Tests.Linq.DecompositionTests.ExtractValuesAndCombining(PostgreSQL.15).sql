@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Item"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Item"
-(
-	"ItemId"   Int  NOT NULL,
-	"Kind"     Int  NOT NULL,
-	"ItemCode" text     NULL,
-	"Style"    text     NULL,
-	"Color"    text     NULL,
-
-	CONSTRAINT "PK_Item" PRIMARY KEY ("ItemId")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Item"
-(
-	"ItemId",
-	"Kind",
-	"ItemCode",
-	"Style",
-	"Color"
-)
-VALUES
-(1,1,'01020102','Style1','White'),
-(2,1,'01020102','Style1','White'),
-(3,1,'01020102','Style1','White'),
-(4,2,'03020302','Style3','White'),
-(5,2,'01040104','Style1','Blue'),
-(6,2,'01010104','Style1','Black'),
-(7,3,'03020302','Style3','White'),
-(8,3,'01040104','Style1','Blue'),
-(9,3,'01010104','Style1','Black')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	x.cond,
 	x."Kind",
@@ -532,9 +491,4 @@ SELECT
 	t1."Color"
 FROM
 	"Item" t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Item"
 

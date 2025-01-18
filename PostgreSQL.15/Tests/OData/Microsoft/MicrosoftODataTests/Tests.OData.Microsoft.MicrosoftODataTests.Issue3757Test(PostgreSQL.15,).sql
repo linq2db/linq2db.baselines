@@ -1,41 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level1"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3757Level1"
-(
-	"ID"     Int     NOT NULL,
-	"ValS"   text        NULL,
-	"ValB"   Boolean     NULL,
-	"ValInt" Int         NULL,
-
-	CONSTRAINT "PK_Issue3757Level1" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3757Level2"
-(
-	"ID"       Int     NOT NULL,
-	"ParentId" Int     NOT NULL,
-	"ValS"     text        NULL,
-	"ValB"     Boolean     NULL,
-	"ValInt"   Int         NULL,
-
-	CONSTRAINT "PK_Issue3757Level2" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -62,14 +25,4 @@ SELECT
 	l1."ValInt"
 FROM
 	"Issue3757Level1" l1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level1"
 

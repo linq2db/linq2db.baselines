@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "StringEnumTable"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "StringEnumTable"
-(
-	"Id"             Int  NOT NULL,
-	"Column"         text NOT NULL,
-	"ColumnNullable" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "StringEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,'val=1',NULL),
-(2,'value=2','value=33')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Column Text(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable Text(8) -- String
@@ -167,9 +139,4 @@ FROM
 	"StringEnumTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "StringEnumTable"
 
