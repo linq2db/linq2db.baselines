@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [DateOnlyTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [DateOnlyTable]
-(
-	[Id]             Int  NOT NULL,
-	[Column]         Date NOT NULL,
-	[ColumnNullable] Date     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Column Date
-SET     @Column = #1950-01-01#
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-
-INSERT INTO [DateOnlyTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Column Date
-SET     @Column = #2020-02-29#
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = #2200-01-01#
-
-INSERT INTO [DateOnlyTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Column Date
 SET     @Column = #2020-02-29#
 DECLARE @ColumnNullable Date
@@ -270,9 +211,4 @@ FROM
 	[DateOnlyTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [DateOnlyTable]
 

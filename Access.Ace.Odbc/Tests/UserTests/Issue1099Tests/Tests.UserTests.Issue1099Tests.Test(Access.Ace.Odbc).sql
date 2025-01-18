@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [BackgroundTask]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @DurationID Int -- Int32
@@ -54,9 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = ?
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [BackgroundTask]
 

@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-DROP TABLE [DateTable]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [DateTable]
-(
-	[ID]   Int      NOT NULL,
-	[Date] DateTime NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -78,9 +64,4 @@ FROM
 	[DateTable] [t1]
 ORDER BY
 	[t1].[ID]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [DateTable]
 

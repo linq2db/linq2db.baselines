@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [PR_1598_SkipCustom_Table]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [PR_1598_SkipCustom_Table]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  Int               NULL,
-
-	CONSTRAINT [PK_PR_1598_SkipCustom_Table] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar(4) -- String
@@ -78,9 +61,4 @@ FROM
 	[PR_1598_SkipCustom_Table] [t]
 WHERE
 	[t].[Id] = 2
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [PR_1598_SkipCustom_Table]
 

@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]     Int   NOT NULL,
-	[Double] Float NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Double Double
@@ -58,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [CreateTableTypes]
 

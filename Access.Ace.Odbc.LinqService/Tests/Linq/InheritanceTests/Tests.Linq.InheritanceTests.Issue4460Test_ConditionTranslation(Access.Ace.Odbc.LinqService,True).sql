@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Base]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Base]
-(
-	[Code]   NVarChar(255)     NULL,
-	[Id]     Int           NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[IsMale] Bit               NULL,
-	[Age]    Int               NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int -- Int32
@@ -82,9 +65,4 @@ WHERE
 	IIF([e].[Code] = 'Child2' OR [e].[Code] = 'Child' OR [e].[Code] = 'BaseChild', True, [e].[Id] = 0)
 ORDER BY
 	[e].[Id]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Base]
 

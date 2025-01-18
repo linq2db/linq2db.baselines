@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [TPHTable]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [TPHTable]
-(
-	[Id]            Int          NOT NULL,
-	[Discriminator] Int          NOT NULL,
-	[Value1]        NVarChar(50)     NULL,
-	[Value2]        NVarChar(50)     NULL,
-	[Value3]        NVarChar(50)     NULL,
-	[NullableBool]  VarChar(1)       NULL,
-
-	CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -192,9 +172,4 @@ FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value3] = 'Str3'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [TPHTable]
 

@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcreteA]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ConcreteA]
-(
-	[Id]    Int           NOT NULL,
-	[AOnly] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcreteA] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcreteB]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ConcreteB]
-(
-	[Id]    Int           NOT NULL,
-	[BOnly] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcreteB] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(6) -- String
@@ -84,14 +52,4 @@ SELECT
 	[e_1].[BOnly]
 FROM
 	[ConcreteB] [e_1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcreteB]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcreteA]
 

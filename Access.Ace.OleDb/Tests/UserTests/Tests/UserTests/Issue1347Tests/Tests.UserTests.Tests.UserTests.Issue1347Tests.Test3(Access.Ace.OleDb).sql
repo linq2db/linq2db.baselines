@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [WmsResourcePointDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [StorageShelfDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN [WmsResourcePointDTO] [dest] ON ([t2].[RPDestinationID] = [dest].[Id]))
 		LEFT JOIN [StorageShelfDTO] [destShelf] ON ([t2].[StorageShelfDestinationID] = [destShelf].[Id]))
 		LEFT JOIN [WmsResourcePointDTO] [origdest] ON ([t2].[RPOrigDestinationID] = [origdest].[Id])
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [GlobalTaskDTO]
 

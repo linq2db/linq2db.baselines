@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [TestBool]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [TestBool]
-(
-	[Id]    Int NOT NULL,
-	[Value] Bit     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -70,9 +56,4 @@ SELECT TOP 2
 	[t1].[Value]
 FROM
 	[TestBool] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [TestBool]
 

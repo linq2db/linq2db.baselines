@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [SampleClass]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [SampleClass]
-(
-	[Id]     Int           NOT NULL,
-	[Value]  NVarChar(50)      NULL,
-	[Value2] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -128,9 +113,4 @@ FROM
 	[SampleClass] [sampleClass_1]
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [SampleClass]
 

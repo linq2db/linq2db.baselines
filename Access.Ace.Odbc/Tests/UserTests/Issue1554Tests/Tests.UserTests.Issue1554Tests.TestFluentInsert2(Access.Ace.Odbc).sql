@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue1554FluentTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Issue1554FluentTable]
-(
-	[Id]              Int         NOT NULL,
-	[ClaimedKeyType]  NVarChar(3) NOT NULL,
-	[ClaimedKeyTypeN] NVarChar(3)     NULL,
-
-	CONSTRAINT [PK_Issue1554FluentTable] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(2) -- String
@@ -46,9 +29,4 @@ SELECT TOP 2
 	[t1].[ClaimedKeyTypeN]
 FROM
 	[Issue1554FluentTable] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue1554FluentTable]
 

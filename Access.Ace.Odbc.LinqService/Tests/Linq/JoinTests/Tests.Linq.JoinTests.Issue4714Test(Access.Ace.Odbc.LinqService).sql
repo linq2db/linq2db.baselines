@@ -1,63 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [Sample]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Sample]
-(
-	[SampleId] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Source]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Source]
-(
-	[Key1] Int NOT NULL,
-	[Key2] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [SelectionMap]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [SelectionMap]
-(
-	[Key1]              Int     NOT NULL,
-	[Key2]              Int     NOT NULL,
-	[SelectionProperty] Decimal NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [YearMap]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [YearMap]
-(
-	[StartDate] DateTime NOT NULL,
-	[EndDate]   DateTime NOT NULL,
-	[Year]      Int      NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[sub].[Id],
 	[sub].[Year_1],
@@ -85,24 +28,4 @@ FROM
 			) [source_1]
 	) [sub]
 		INNER JOIN [SelectionMap] [map_1] ON ([sub].[Key1] = [map_1].[Key1] AND [sub].[Key2] = [map_1].[Key2])
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [YearMap]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [SelectionMap]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Source]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Sample]
 

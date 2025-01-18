@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [TableWithIdentity]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [TableWithIdentity]
-(
-	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL,
-
-	CONSTRAINT [PK_TableWithIdentity] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TableWithIdentity]
 (
 	[Id],
@@ -36,9 +20,4 @@ SELECT TOP 2
 	[t1].[Value]
 FROM
 	[TableWithIdentity] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [TableWithIdentity]
 

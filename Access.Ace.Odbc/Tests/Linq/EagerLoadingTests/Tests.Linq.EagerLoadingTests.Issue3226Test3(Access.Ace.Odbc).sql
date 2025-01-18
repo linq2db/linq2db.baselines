@@ -1,35 +1,4 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Item]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Item]
-(
-	[Id]   Int           NOT NULL,
-	[Text] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ItemValue]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ItemValue]
-(
-	[Id]     Int     NOT NULL,
-	[ItemId] Int     NOT NULL,
-	[Value]  Decimal NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -77,14 +46,4 @@ FROM
 	) [x_1]
 ORDER BY
 	[x_1].[c1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ItemValue]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Item]
 

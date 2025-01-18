@@ -1,17 +1,4 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [SimpleBulkCopyTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [SimpleBulkCopyTable]
-(
-	[Id] Int NOT NULL
-)
-
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -38,9 +25,4 @@ VALUES
 (
 	?
 )
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [SimpleBulkCopyTable]
 

@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Base]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Base]
-(
-	[Code] NVarChar(255)     NULL,
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  Int               NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Code VarWChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -70,9 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> 'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Base]
 

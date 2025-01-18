@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]               Int      NOT NULL,
-	[DateTimeNullable] DateTime     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DateTimeNullable Date -- DateTime
@@ -58,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [CreateTableTypes]
 

@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [DateTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [DateTable]
-(
-	[ID]   Int      NOT NULL,
-	[Date] DateTime NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -78,9 +64,4 @@ FROM
 	[DateTable] [t1]
 ORDER BY
 	[t1].[ID]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [DateTable]
 

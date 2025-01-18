@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1110TB]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue1110TB]
-(
-	[Id]        Int      NOT NULL,
-	[TimeStamp] DateTime NOT NULL,
-
-	CONSTRAINT [PK_Issue1110TB] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp Date -- DateTime
@@ -31,9 +15,4 @@ VALUES
 	@Id,
 	@TimeStamp
 )
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1110TB]
 
