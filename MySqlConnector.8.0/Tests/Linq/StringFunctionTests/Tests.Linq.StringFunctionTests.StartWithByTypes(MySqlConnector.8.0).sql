@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `StringTypesTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `StringTypesTable`
-(
-	`Id`             INT         NOT NULL,
-	`CharColumn`     CHAR(50)        NULL,
-	`NCharColumn`    CHAR(50)        NULL,
-	`VarCharColumn`  VARCHAR(50)     NULL,
-	`NVarCharColumn` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `StringTypesTable`
-(
-	`Id`,
-	`CharColumn`,
-	`NCharColumn`,
-	`VarCharColumn`,
-	`NVarCharColumn`
-)
-VALUES
-(1,'someString','someString','someString','someString')
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 String(5) -- StringFixedLength
@@ -53,9 +22,4 @@ WHERE
 	`t`.`NCharColumn` LIKE @str_1 ESCAPE '~' AND
 	`t`.`VarCharColumn` LIKE @str_2 ESCAPE '~' AND
 	`t`.`NVarCharColumn` LIKE @str_3 ESCAPE '~'
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `StringTypesTable`
 

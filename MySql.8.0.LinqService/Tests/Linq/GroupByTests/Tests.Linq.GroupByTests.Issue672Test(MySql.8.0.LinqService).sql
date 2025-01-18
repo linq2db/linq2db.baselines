@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Stone`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Stone`
-(
-	`Id`           INT           AUTO_INCREMENT NOT NULL,
-	`Name`         VARCHAR(4000)                NOT NULL,
-	`Enabled`      BOOLEAN                          NULL,
-	`ImageFullUrl` VARCHAR(4000)                    NULL,
-
-	CONSTRAINT `PK_Stone` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled UByte -- Boolean
@@ -117,9 +99,4 @@ FROM
 				`sG_1`.`Name` = `s`.`Name`
 			LIMIT 1
 		) `t1` ON 1=1
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Stone`
 

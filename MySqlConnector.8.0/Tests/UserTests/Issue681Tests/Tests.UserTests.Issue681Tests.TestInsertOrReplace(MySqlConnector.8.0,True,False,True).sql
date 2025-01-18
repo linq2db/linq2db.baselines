@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue681Table`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue681Table`
-(
-	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL,
-
-	CONSTRAINT `PK_Issue681Table` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 5
 DECLARE @Value Int32
@@ -53,9 +37,4 @@ VALUES
 )
 ON DUPLICATE KEY UPDATE
 	`Value` = @Value
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue681Table`
 

@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `ConcreteA`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `ConcreteA`
-(
-	`Id`    INT           NOT NULL,
-	`AOnly` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConcreteA` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `ConcreteB`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `ConcreteB`
-(
-	`Id`    INT           NOT NULL,
-	`BOnly` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConcreteB` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @AOnly VarChar(6) -- String
@@ -84,14 +52,4 @@ SELECT
 	`e_1`.`BOnly`
 FROM
 	`ConcreteB` `e_1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `ConcreteB`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `ConcreteA`
 

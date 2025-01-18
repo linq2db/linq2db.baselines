@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `CteTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `CteTable`
-(
-	`Id`     INT NOT NULL,
-	`Value1` INT NOT NULL,
-	`Value2` INT NOT NULL,
-	`Value3` INT NOT NULL,
-	`Value4` INT NOT NULL,
-	`Value5` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `CteChildTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `CteChildTable`
-(
-	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `CTE_1` (`Id`)
 AS
 (
@@ -145,14 +113,4 @@ SELECT
 FROM
 	`CTE_3` `t1`
 		LEFT JOIN `CteChildTable` `d` ON `t1`.`Value4` = `d`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `CteChildTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `CteTable`
 

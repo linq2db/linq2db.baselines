@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `BigDecimalMySqlConnectorTable`
-(
-	`Id`       INT             NOT NULL,
-	`Decimal`  decimal(65, 30) NOT NULL,
-	`DecimalN` decimal(65, 30)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 BeforeExecute
@@ -198,9 +183,4 @@ FROM
 	`BigDecimalMySqlConnectorTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
 

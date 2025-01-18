@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Issue4596Form`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4596Form`
-(
-	`Id` INT  NOT NULL,
-	`C1` CHAR NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4596Item`
-(
-	`Id`         INT           NOT NULL,
-	`FormId`     INT           NOT NULL,
-	`OrderIndex` INT           NOT NULL,
-	`Name1`      VARCHAR(4000)     NULL,
-	`Name2`      VARCHAR(4000)     NULL,
-	`Name3`      VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`cond`,
@@ -83,14 +51,4 @@ SELECT
 FROM
 	`Issue4596Form` `t1`
 LIMIT 1
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4596Form`
 

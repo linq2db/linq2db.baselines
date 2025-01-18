@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `CteChild`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `CteChild`
-(
-	`ChildID`  INT NOT NULL,
-	`ParentID` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `CteChild`
 (
 	`ChildID`,
@@ -74,9 +60,4 @@ WHERE
 ORDER BY
 	`c4`.`ChildID`,
 	`c4`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CteChild`
 

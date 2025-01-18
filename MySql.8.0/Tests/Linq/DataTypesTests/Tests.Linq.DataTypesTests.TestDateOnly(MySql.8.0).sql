@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `DateOnlyTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `DateOnlyTable`
-(
-	`Id`             INT  NOT NULL,
-	`Column`         DATE NOT NULL,
-	`ColumnNullable` DATE     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `DateOnlyTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,'1950-01-01',NULL),
-(2,'2020-02-29','2200-01-01')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Column Datetime -- DateTime
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Datetime -- DateTime
@@ -180,9 +152,4 @@ FROM
 	`DateOnlyTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `DateOnlyTable`
 

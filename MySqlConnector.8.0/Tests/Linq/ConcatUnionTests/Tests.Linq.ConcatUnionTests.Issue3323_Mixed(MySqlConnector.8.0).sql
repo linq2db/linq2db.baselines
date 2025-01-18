@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `Issue3323Table`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3323Table`
-(
-	`Id`       INT           NOT NULL,
-	`FistName` VARCHAR(4000)     NULL,
-	`LastName` VARCHAR(4000)     NULL,
-	`Text`     VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_Issue3323Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue3323Table`
 (
 	`Id`,
@@ -63,9 +45,4 @@ SELECT
 	Concat(`r_1`.`FistName`, ' ', `r_1`.`LastName`)
 FROM
 	`Issue3323Table` `r_1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue3323Table`
 

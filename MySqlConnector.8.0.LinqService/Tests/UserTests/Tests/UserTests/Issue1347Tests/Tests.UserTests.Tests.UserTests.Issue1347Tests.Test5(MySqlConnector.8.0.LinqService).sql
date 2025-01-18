@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `GlobalTaskDTO`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `GlobalTaskDTO`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `WMS_GlobalTaskA`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WmsLoadCarrierDTO`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `WmsLoadCarrierDTO`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WMS_LoadCarrierA`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `WMS_LoadCarrierA`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t3`.`Id`,
 	`t3`.`ResourceID`,
@@ -114,24 +48,4 @@ FROM
 			FROM
 				`WMS_LoadCarrierA` `t2`
 		) `res_1` ON `t3`.`ResourceID` = `res_1`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WMS_LoadCarrierA`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WmsLoadCarrierDTO`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `GlobalTaskDTO`
 

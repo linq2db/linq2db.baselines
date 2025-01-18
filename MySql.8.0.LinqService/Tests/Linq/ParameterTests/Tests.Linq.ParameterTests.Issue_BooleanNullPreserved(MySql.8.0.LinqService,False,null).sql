@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `TestBool`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `TestBool`
-(
-	`Id`    INT     NOT NULL,
-	`Value` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `TestBool`
 (
 	`Id`,
@@ -73,9 +59,4 @@ SELECT
 FROM
 	`TestBool` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TestBool`
 

@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue4596Form`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4596Form`
-(
-	`Id` INT  NOT NULL,
-	`C1` CHAR NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4596Item`
-(
-	`Id`         INT           NOT NULL,
-	`FormId`     INT           NOT NULL,
-	`OrderIndex` INT           NOT NULL,
-	`Name1`      VARCHAR(4000)     NULL,
-	`Name2`      VARCHAR(4000)     NULL,
-	`Name3`      VARCHAR(4000)     NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -88,13 +56,3 @@ LIMIT 1
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue4596Item`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue4596Form`
-

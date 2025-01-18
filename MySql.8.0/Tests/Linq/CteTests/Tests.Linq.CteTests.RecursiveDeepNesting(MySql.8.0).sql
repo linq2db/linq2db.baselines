@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `HierarchyTree`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `HierarchyTree`
-(
-	`Id`       INT NOT NULL,
-	`ParentId` INT     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH RECURSIVE `CTE_1` (`Id`)
 AS
 (
@@ -59,9 +45,4 @@ FROM
 		INNER JOIN `HierarchyTree` `data2` ON `data2`.`Id` = `t4`.`Id`
 		INNER JOIN `HierarchyTree` `data3` ON `data3`.`Id` = `t4`.`Id`
 		INNER JOIN `HierarchyTree` `data4` ON `data4`.`Id` = `t4`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `HierarchyTree`
 

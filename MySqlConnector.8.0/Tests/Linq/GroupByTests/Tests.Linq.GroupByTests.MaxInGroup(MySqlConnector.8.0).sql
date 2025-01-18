@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `AggregationData`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `AggregationData`
-(
-	`GroupId`   INT    NOT NULL,
-	`DataValue` DOUBLE     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `AggregationData`
-(
-	`GroupId`,
-	`DataValue`
-)
-VALUES
-(1,1),
-(1,NULL),
-(1,3),
-(1,1),
-(1,5),
-(1,6),
-(2,7),
-(2,8),
-(2,9),
-(2,NULL),
-(2,11),
-(2,7),
-(3,13),
-(3,16),
-(3,16),
-(3,16),
-(3,NULL),
-(3,18)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`g_1`.`GroupId`,
 	MAX(`g_1`.`DataValue`),
@@ -77,9 +35,4 @@ SELECT
 	`t1`.`DataValue`
 FROM
 	`AggregationData` `t1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `AggregationData`
 

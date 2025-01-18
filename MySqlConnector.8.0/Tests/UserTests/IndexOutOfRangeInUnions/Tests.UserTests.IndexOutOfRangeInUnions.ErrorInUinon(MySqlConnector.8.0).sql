@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `O1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `O1`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `O2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `O2`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `O3`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `O3`
-(
-	`DocEntry`    INT           NOT NULL,
-	`BplId`       INT           NOT NULL,
-	`ChaveAcesso` VARCHAR(4000)     NULL,
-	`DocStatus`   VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`doSap`.`DocEntry`,
 	CASE
@@ -78,19 +30,4 @@ SELECT
 	CAST('Manual/Externo' AS CHAR(255))
 FROM
 	`O3` `doSap_2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `O3`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `O2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `O1`
 

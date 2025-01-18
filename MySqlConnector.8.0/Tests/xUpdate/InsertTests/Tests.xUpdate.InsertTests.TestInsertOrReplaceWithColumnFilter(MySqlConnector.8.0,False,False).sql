@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TestInsertOrReplaceTable`
-(
-	`ID`         INT           NOT NULL,
-	`FirstName`  VARCHAR(4000)     NULL,
-	`LastName`   VARCHAR(4000)     NULL,
-	`MiddleName` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_TestInsertOrReplaceTable` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -102,9 +84,4 @@ FROM
 WHERE
 	`x`.`FirstName` = @FirstName
 LIMIT 1
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TestInsertOrReplaceTable`
 

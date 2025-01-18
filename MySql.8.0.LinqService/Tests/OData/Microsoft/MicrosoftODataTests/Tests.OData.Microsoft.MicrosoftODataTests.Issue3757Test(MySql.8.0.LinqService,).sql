@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Issue3757Level1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3757Level1`
-(
-	`ID`     INT           NOT NULL,
-	`ValS`   VARCHAR(4000)     NULL,
-	`ValB`   BOOLEAN           NULL,
-	`ValInt` INT               NULL,
-
-	CONSTRAINT `PK_Issue3757Level1` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue3757Level2`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3757Level2`
-(
-	`ID`       INT           NOT NULL,
-	`ParentId` INT           NOT NULL,
-	`ValS`     VARCHAR(4000)     NULL,
-	`ValB`     BOOLEAN           NULL,
-	`ValInt`   INT               NULL,
-
-	CONSTRAINT `PK_Issue3757Level2` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`ID`,
 	`m_1`.`ValS`,
@@ -58,14 +21,4 @@ SELECT
 	`l1`.`ValInt`
 FROM
 	`Issue3757Level1` `l1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue3757Level2`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue3757Level1`
 

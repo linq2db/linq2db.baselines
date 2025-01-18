@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CreateTableTypes`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `CreateTableTypes`
-(
-	`Id`         INT        NOT NULL,
-	`StringEnum` VARCHAR(2) NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @StringEnum VarChar(2) -- String
@@ -58,9 +44,4 @@ FROM
 	`CreateTableTypes` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CreateTableTypes`
 

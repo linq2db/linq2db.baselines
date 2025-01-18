@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Names`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Names`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Addresses`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Addresses`
-(
-	`Id`   INT           NOT NULL,
-	`Text` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -93,14 +65,4 @@ FROM
 		LEFT JOIN `Addresses` `arg2` ON `tupledArg`.`Id` = `arg2`.`Id`
 ORDER BY
 	`tupledArg`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Addresses`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Names`
 

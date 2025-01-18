@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `InsertIssueTest`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `InsertIssueTest`
-(
-	`ID`          SMALLINT NOT NULL,
-	`intDataType` INT          NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int16
-SET     @ID = 0
-DECLARE @intDataType Int32
-SET     @intDataType = 0
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int16
-SET     @ID = 0
-DECLARE @intDataType Int32
-SET     @intDataType = 0
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int16
-SET     @ID = 1234
-DECLARE @intDataType Int32
-SET     @intDataType = 1234
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int16
-SET     @ID = 1234
-DECLARE @intDataType Int32
-SET     @intDataType = 1234
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `InsertIssueTest`
 (
 	`ID`,
@@ -138,9 +52,4 @@ SELECT
 	`t1`.`intDataType`
 FROM
 	`InsertIssueTest` `t1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `InsertIssueTest`
 
