@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [AggregationData]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [AggregationData]
-(
-	[GroupId]   INTEGER NOT NULL,
-	[DataValue] Float       NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [AggregationData]
-(
-	[GroupId],
-	[DataValue]
-)
-VALUES
-(1,1),
-(1,NULL),
-(1,3),
-(1,1),
-(1,5),
-(1,6),
-(2,7),
-(2,8),
-(2,9),
-(2,NULL),
-(2,11),
-(2,7),
-(3,13),
-(3,16),
-(3,16),
-(3,16),
-(3,NULL),
-(3,18)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[g_1].[GroupId],
 	MIN([g_1].[DataValue]),
@@ -77,9 +35,4 @@ SELECT
 	[t1].[DataValue]
 FROM
 	[AggregationData] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [AggregationData]
 

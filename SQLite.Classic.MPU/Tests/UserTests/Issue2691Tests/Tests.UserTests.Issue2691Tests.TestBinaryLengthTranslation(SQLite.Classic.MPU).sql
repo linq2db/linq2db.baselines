@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue2691Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue2691Table]
-(
-	[Id]    INTEGER   NOT NULL,
-	[Data]  VarBinary     NULL,
-	[DataB] VarBinary     NULL,
-
-	CONSTRAINT [PK_Issue2691Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 99
 DECLARE @Data Binary(5)
@@ -68,9 +51,4 @@ SELECT
 	Length([x].[DataB])
 FROM
 	[Issue2691Table] [x]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue2691Table]
 

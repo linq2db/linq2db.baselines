@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Dto]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Dto]
-(
-	[id]        INTEGER       NOT NULL,
-	[name]      NVarChar(255)     NULL,
-	[parent_id] INTEGER           NULL,
-	[FullName]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [d]
 (
 	[FullName],
@@ -56,9 +40,4 @@ SELECT
 	[t2].[FullName]
 FROM
 	[d] [t2]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Dto]
 

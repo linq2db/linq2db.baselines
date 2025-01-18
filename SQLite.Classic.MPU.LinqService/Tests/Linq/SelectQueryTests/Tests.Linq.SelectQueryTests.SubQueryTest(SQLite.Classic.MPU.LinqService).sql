@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [SampleClass]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SampleClass]
-(
-	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Value  -- Int32
-SET     @Value = 100
-
-INSERT INTO [SampleClass]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(
-	@Id,
-	@Value
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
@@ -60,9 +28,4 @@ FROM
 				) [t1]
 			LIMIT 1
 		) [t2] ON 1=1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SampleClass]
 

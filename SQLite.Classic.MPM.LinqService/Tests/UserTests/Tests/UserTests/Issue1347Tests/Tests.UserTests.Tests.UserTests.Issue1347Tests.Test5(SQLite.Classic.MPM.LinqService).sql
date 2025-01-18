@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [WmsLoadCarrierDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_LoadCarrierA]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [WMS_LoadCarrierA]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],
@@ -114,24 +48,4 @@ FROM
 			FROM
 				[WMS_LoadCarrierA] [t2]
 		) [res_1] ON [t3].[ResourceID] = [res_1].[Id]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_LoadCarrierA]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

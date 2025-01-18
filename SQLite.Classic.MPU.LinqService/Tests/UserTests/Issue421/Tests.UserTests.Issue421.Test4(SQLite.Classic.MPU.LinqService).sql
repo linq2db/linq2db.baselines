@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [BlobClass]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [BlobClass]
-(
-	[Id]        INTEGER        NOT NULL,
-	[BlobValue] VarBinary(100)     NULL,
-
-	CONSTRAINT [PK_BlobClass] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -51,9 +35,4 @@ FROM
 WHERE
 	[t1].[Id] = 1
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BlobClass]
 

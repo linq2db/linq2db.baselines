@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ValueConversion]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ValueConversion]
-(
-	[Id]                      INTEGER       NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
-	[AnotherBoolValue]        VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime2         NULL,
-
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -207,9 +183,4 @@ SELECT
 	COUNT(*)
 FROM
 	[ValueConversion] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ValueConversion]
 

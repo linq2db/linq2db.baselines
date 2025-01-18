@@ -1,48 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1799Table1]
-(
-	[EventUser] INTEGER   NOT NULL,
-	[ProcessID] INTEGER   NOT NULL,
-	[EventTime] DateTime2 NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table2]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1799Table2]
-(
-	[UserId]     INTEGER       NOT NULL,
-	[UserGroups] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table3]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1799Table3]
-(
-	[ProcessID]   INTEGER       NOT NULL,
-	[ProcessName] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 
@@ -69,19 +26,4 @@ GROUP BY
 	[u].[UserGroups],
 	[p].[ProcessName]
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table3]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table2]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1799Table1]
 

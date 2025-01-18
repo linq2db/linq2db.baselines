@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BackgroundTask]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [BackgroundTask]
-(
-	[ID]               INTEGER     NULL,
-	[DurationID]       INTEGER NOT NULL,
-	[DurationInterval] INTEGER NOT NULL,
-	[PersonID]         INTEGER     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @DurationID  -- Int32
@@ -54,9 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BackgroundTask]
 

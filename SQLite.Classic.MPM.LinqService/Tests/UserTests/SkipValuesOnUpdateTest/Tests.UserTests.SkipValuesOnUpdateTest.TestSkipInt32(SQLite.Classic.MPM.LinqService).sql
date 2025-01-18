@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Update_Table]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [PR_1598_Update_Table]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  INTEGER           NULL,
-
-	CONSTRAINT [PK_PR_1598_Update_Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -106,9 +89,4 @@ FROM
 WHERE
 	[t].[Id] = 1
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Update_Table]
 

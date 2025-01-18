@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4371Table]
-(
-	[ColumnDT]  VarChar     NULL,
-	[ColumnDTO] VarChar     NULL,
-	[ColumnTS]  VarChar     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ColumnDT VarChar(23) -- AnsiString
 SET     @ColumnDT = '0160-05-06 18:13:59.154'
 DECLARE @ColumnDTO VarChar -- AnsiString
@@ -46,9 +31,4 @@ FROM
 	[Issue4371Table] [r]
 WHERE
 	[r].[ColumnDT] = @dt
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
 

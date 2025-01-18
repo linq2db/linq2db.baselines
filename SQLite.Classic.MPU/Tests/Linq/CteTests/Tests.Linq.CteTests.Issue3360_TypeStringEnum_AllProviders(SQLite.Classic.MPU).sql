@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue3360WithEnum]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3360WithEnum]
-(
-	[Id]  INTEGER     NOT NULL,
-	[Str] VarChar(50) NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [cte] ([Id], [Str])
 AS
 (
@@ -36,9 +22,4 @@ SELECT
 	[t2].[Str]
 FROM
 	[cte] [t2]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue3360WithEnum]
 

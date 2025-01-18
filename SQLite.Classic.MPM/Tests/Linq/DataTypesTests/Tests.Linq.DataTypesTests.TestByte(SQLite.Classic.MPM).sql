@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ByteTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ByteTable]
-(
-	[Id]             INTEGER NOT NULL,
-	[Column]         TinyInt NOT NULL,
-	[ColumnNullable] TinyInt     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Column  -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
@@ -177,9 +149,4 @@ FROM
 	[ByteTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ByteTable]
 

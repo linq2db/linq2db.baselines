@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [InsertIssueTest]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InsertIssueTest]
-(
-	[ID]          SmallInt NOT NULL,
-	[intDataType] INTEGER      NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -80,9 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InsertIssueTest]
 

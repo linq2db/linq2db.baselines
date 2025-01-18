@@ -1,39 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Test3799Item]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Test3799Item]
-(
-	[Id]       INTEGER       NOT NULL,
-	[ParentId] INTEGER           NULL,
-	[Name]     NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_Test3799Item] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Test3799Item]
-(
-	[Id],
-	[ParentId],
-	[Name]
-)
-VALUES
-(1,NULL,'root'),
-(2,1,'child 1'),
-(3,2,'child 1.1'),
-(4,2,'child 1.2'),
-(5,1,'child 2'),
-(6,5,'child 2.1'),
-(7,5,'child 2.1')
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -78,9 +43,4 @@ FROM
 			FROM
 				[Test3799Item] [a_Children]
 		) [t1] ON [item_1].[Id] = [t1].[ParentId] AND [t1].[rn] <= 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Test3799Item]
 

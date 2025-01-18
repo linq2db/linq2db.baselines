@@ -1,58 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue4160Person]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4160Person]
-(
-	[Code] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Issue4160Person]
-(
-	[Code]
-)
-VALUES
-('SD'),
-('SD'),
-('SH')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4160City]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4160City]
-(
-	[Code] NVarChar(255)     NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Issue4160City]
-(
-	[Code],
-	[Name]
-)
-VALUES
-('SD','SYDNEY'),
-('SD','SUNDAY'),
-('SH','SYDHIP')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	(
 		SELECT
@@ -65,14 +13,4 @@ SELECT DISTINCT
 	)
 FROM
 	[Issue4160Person] [pe]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4160City]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4160Person]
 

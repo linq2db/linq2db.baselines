@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [WhereCompareData]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [WhereCompareData]
-(
-	[Id]            INTEGER NOT NULL,
-	[NotNullable]   INTEGER NOT NULL,
-	[Nullable]      INTEGER     NULL,
-	[OtherNullable] INTEGER     NULL,
-
-	CONSTRAINT [PK_WhereCompareData] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [WhereCompareData]
-(
-	[Id],
-	[NotNullable],
-	[Nullable],
-	[OtherNullable]
-)
-VALUES
-(1,1,NULL,10),
-(2,1,10,10),
-(3,1,10,NULL),
-(4,1,NULL,NULL),
-(5,1,NULL,20),
-(6,1,10,20),
-(7,1,10,NULL),
-(8,1,NULL,NULL),
-(9,1,NULL,20),
-(10,1,30,20),
-(11,1,30,NULL),
-(12,1,NULL,NULL)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[NotNullable],
@@ -137,9 +95,4 @@ SELECT
 	[t1].[OtherNullable]
 FROM
 	[WhereCompareData] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WhereCompareData]
 
