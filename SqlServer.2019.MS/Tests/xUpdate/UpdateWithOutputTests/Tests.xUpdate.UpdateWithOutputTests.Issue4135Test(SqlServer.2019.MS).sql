@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4135Table]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4135Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4135Table]
-	(
-		[Id]          Int            NOT NULL,
-		[Name]        NVarChar(4000)     NULL,
-		[NeedsUpdate] Bit            NOT NULL,
-
-		CONSTRAINT [PK_Issue4135Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-INSERT INTO [Issue4135Table]
-(
-	[Id],
-	[Name],
-	[NeedsUpdate]
-)
-VALUES
-(1,N'name1',1),
-(2,N'name2',0)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 4
 
@@ -56,9 +25,4 @@ FROM
 	) [t1]
 WHERE
 	[u].[Id] = [t1].[Id]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4135Table]
 

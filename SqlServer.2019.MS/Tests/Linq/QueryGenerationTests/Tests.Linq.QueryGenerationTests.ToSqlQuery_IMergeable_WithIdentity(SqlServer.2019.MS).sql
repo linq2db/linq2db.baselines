@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [TableWithIdentity]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[TableWithIdentity]', N'U') IS NULL)
-	CREATE TABLE [TableWithIdentity]
-	(
-		[Id]    Int  NOT NULL IDENTITY,
-		[Value] Int  NOT NULL,
-
-		CONSTRAINT [PK_TableWithIdentity] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES
 	(1,2)
@@ -43,9 +26,4 @@ VALUES
 	[Source].[source_Value]
 )
 ;
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TableWithIdentity]
 

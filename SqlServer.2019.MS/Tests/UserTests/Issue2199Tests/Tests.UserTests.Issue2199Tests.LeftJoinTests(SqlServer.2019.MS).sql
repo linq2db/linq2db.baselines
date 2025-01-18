@@ -1,41 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Manufacturer]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NULL)
-	CREATE TABLE [Manufacturer]
-	(
-		[ManufacturerId] Int            NOT NULL,
-		[Name]           NVarChar(4000)     NULL,
-		[CountryCode]    NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Manufacturer] PRIMARY KEY CLUSTERED ([ManufacturerId])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Country]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Country]', N'U') IS NULL)
-	CREATE TABLE [Country]
-	(
-		[Code] NVarChar(4000) NOT NULL,
-		[Name] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED ([Code])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[e].[ManufacturerId],
 	[e].[CountryCode],
@@ -65,14 +30,4 @@ FROM
 		) [m_2] ON 1=1
 WHERE
 	[e].[ManufacturerId] = 1
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Country]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Manufacturer]
 

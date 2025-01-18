@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-
-DROP TABLE IF EXISTS [InheritanceFilter]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[InheritanceFilter]', N'U') IS NULL)
-	CREATE TABLE [InheritanceFilter]
-	(
-		[Id]                Int NOT NULL,
-		[Code]              Int NOT NULL,
-		[Child1Field]       Int     NULL,
-		[Child2Field]       Int     NULL,
-		[Grandchild11Field] Int     NULL,
-		[Grandchild12Field] Int     NULL,
-		[Grandchild21Field] Int     NULL,
-		[Grandchild22Field] Int     NULL,
-
-		CONSTRAINT [PK_InheritanceFilter] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code Int -- Int32
@@ -183,9 +160,4 @@ SELECT
 	[t1].[Grandchild22Field]
 FROM
 	[InheritanceFilter] [t1]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [InheritanceFilter]
 

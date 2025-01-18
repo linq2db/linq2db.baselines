@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue3360NullInAnchor]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue3360NullInAnchor]', N'U') IS NULL)
-	CREATE TABLE [Issue3360NullInAnchor]
-	(
-		[Id]    Int              NOT NULL,
-		[Guid]  UniqueIdentifier     NULL,
-		[Enum1] VarChar(50)          NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
-
 WITH [cte] ([Id], [Value_1])
 AS
 (
@@ -37,9 +21,4 @@ SELECT
 	[node].[Value_1]
 FROM
 	[cte] [node]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3360NullInAnchor]
 

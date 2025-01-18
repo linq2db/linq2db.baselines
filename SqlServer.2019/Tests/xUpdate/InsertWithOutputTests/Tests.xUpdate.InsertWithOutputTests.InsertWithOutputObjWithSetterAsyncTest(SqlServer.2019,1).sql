@@ -1,20 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [TableWithData]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
-	CREATE TABLE [TableWithData]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
 -- SqlServer.2019 (asynchronously)
 DECLARE @Value Int -- Int32
 SET     @Value = 100
@@ -39,9 +23,4 @@ VALUES
 	@value_1,
 	@ValueStr
 )
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [TableWithData]
 
