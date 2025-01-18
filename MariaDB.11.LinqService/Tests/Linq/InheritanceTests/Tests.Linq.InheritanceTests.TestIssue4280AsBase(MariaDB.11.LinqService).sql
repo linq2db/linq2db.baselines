@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4280`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue4280`
-(
-	`Id`           INT           NOT NULL,
-	`SerialNumber` VARCHAR(4000)     NULL,
-	`DeviceType`   VARCHAR(4000)     NULL,
-	`Location`     VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue4280` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	`Issue4280` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4280`
 

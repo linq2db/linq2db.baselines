@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `CteChild`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `CteChild`
-(
-	`ChildID`  INT NOT NULL,
-	`ParentID` INT NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `CteChild`
 (
 	`ChildID`,
@@ -74,9 +60,4 @@ WHERE
 ORDER BY
 	`c4`.`ChildID`,
 	`c4`.`ParentID`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `CteChild`
 

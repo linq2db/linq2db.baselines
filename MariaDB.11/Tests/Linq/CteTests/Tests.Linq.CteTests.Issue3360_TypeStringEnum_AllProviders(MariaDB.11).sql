@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue3360WithEnum`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue3360WithEnum`
-(
-	`Id`  INT         NOT NULL,
-	`Str` VARCHAR(50) NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 WITH RECURSIVE `cte` (`Id`, `Str`)
 AS
 (
@@ -36,9 +22,4 @@ SELECT
 	`t2`.`Str`
 FROM
 	`cte` `t2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3360WithEnum`
 

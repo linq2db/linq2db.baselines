@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue3761Table`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue3761Table`
-(
-	`LETO`     INT             NOT NULL,
-	`STEVILKA` INT             NOT NULL,
-	`DATUM`    DATETIME            NULL,
-	`SKUPAJ`   DECIMAL(29, 10)     NULL,
-
-	CONSTRAINT `PK_Issue3761Table` PRIMARY KEY CLUSTERED (`LETO`, `STEVILKA`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`t1`.`Year_1`,
 	`t1`.`Month_1`,
@@ -68,9 +50,4 @@ FROM
 GROUP BY
 	`t2`.`Year_1`,
 	`t2`.`Month_1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3761Table`
 

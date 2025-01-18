@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `SampleClass`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `SampleClass`
-(
-	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `SampleClass`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`t_1`.`Id`,
 	`t_1`.`Value`,
@@ -55,9 +30,4 @@ FROM
 				) `t1`
 			LIMIT 1
 		) `t2` ON 1=1
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SampleClass`
 

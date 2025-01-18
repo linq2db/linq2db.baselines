@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `VEMPLOYEE_SCH_SEC`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCH_SEC`
-(
-	`ACTIVE` BOOLEAN       NOT NULL,
-	`ID`     INT           NOT NULL,
-	`NAME`   VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_VEMPLOYEE_SCH_SEC` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `VEMPLOYEE_SCHDL_PERM`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `VEMPLOYEE_SCHDL_PERM`
-(
-	`ID`        INT     NOT NULL,
-	`IS_ACTIVE` BOOLEAN NOT NULL,
-
-	CONSTRAINT `PK_VEMPLOYEE_SCHDL_PERM` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`ess`.`ID`
 FROM
@@ -47,14 +14,4 @@ WHERE
 		WHERE
 			`ess`.`ID` = `y`.`ID` AND `y`.`IS_ACTIVE`
 	)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `VEMPLOYEE_SCHDL_PERM`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `VEMPLOYEE_SCH_SEC`
 

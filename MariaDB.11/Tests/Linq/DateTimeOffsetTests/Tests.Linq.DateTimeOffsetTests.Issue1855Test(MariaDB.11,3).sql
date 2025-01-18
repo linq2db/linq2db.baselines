@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1855Table`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue1855Table`
-(
-	`Id`                         INT       NOT NULL,
-	`SomeDateTimeOffset`         TIMESTAMP NOT NULL,
-	`SomeNullableDateTimeOffset` TIMESTAMP     NULL,
-
-	CONSTRAINT `PK_Issue1855Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -68,9 +51,4 @@ FROM
 	`Issue1855Table` `r`
 WHERE
 	@clientSideIn <> `r`.`SomeDateTimeOffset`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1855Table`
 

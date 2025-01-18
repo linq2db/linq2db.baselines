@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Stone`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Stone`
-(
-	`Id`           INT           AUTO_INCREMENT NOT NULL,
-	`Name`         VARCHAR(4000)                NOT NULL,
-	`Enabled`      BOOLEAN                          NULL,
-	`ImageFullUrl` VARCHAR(4000)                    NULL,
-
-	CONSTRAINT `PK_Stone` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bool -- Boolean
@@ -115,9 +97,4 @@ FROM
 				`s`.`Enabled` = 1 AND `s`.`Name` NOT LIKE 'level - %' ESCAPE '~' AND
 				Char_Length(`s`.`ImageFullUrl`) > 0
 		) `t1` ON `sG_1`.`Name` = `t1`.`Name` AND `t1`.`rn` <= 1
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Stone`
 

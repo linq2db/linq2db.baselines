@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue1373Tests`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue1373Tests`
-(
-	`Id`     INT           NOT NULL,
-	`Field1` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue1373Tests` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `Issue1373Tests`
 (
 	`Id`,
@@ -68,9 +52,4 @@ FROM
 	`Issue1373Tests` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1373Tests`
 

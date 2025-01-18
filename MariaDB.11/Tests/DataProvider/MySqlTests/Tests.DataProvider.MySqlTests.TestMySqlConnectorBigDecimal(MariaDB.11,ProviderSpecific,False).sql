@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `BigDecimalMySqlConnectorTable`
-(
-	`Id`       INT             NOT NULL,
-	`Decimal`  decimal(65, 30) NOT NULL,
-	`DecimalN` decimal(65, 30)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 BeforeExecute
@@ -157,9 +142,4 @@ FROM
 	`BigDecimalMySqlConnectorTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `BigDecimalMySqlConnectorTable`
 

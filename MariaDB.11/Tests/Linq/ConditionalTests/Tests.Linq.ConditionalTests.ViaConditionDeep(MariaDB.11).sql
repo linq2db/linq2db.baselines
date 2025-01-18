@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ConditionalData`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ConditionalData`
-(
-	`Id`         INT           NOT NULL,
-	`StringProp` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConditionalData` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `ConditionalData`
-(
-	`Id`,
-	`StringProp`
-)
-VALUES
-(1,'String1'),
-(2,'String2'),
-(3,NULL),
-(4,'String4'),
-(5,'String5'),
-(6,NULL),
-(7,'String7'),
-(8,'String8'),
-(9,NULL),
-(10,'String10'),
-(11,'-1')
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`x`.`Id`,
 	CASE
@@ -74,9 +37,4 @@ SELECT
 	`t1`.`StringProp`
 FROM
 	`ConditionalData` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConditionalData`
 

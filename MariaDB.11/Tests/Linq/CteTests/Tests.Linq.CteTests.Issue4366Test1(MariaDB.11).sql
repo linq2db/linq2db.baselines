@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Dto`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Dto`
-(
-	`id`        INT           NOT NULL,
-	`name`      VARCHAR(4000)     NULL,
-	`parent_id` INT               NULL,
-	`FullName`  VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 WITH RECURSIVE `d`
 (
 	`FullName`,
@@ -52,9 +36,4 @@ SELECT
 	`t2`.`FullName`
 FROM
 	`d` `t2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Dto`
 

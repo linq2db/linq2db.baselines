@@ -1,58 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue4723Table1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue4723Table1`
-(
-	`Id`               INT           NOT NULL,
-	`ExpressionMethod` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `Issue4723Table1`
-(
-	`Id`,
-	`ExpressionMethod`
-)
-VALUES
-(1,NULL)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4723Table2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue4723Table2`
-(
-	`Id`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `Issue4723Table2`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(1,'Value 1'),
-(1,'Value 1'),
-(2,'Value 2')
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`x`.`Id`,
 	`t1`.`Association`
@@ -68,14 +16,4 @@ FROM
 		) `t1` ON `t1`.`Id` = `x`.`Id` AND `t1`.`rn` <= 1
 WHERE
 	`t1`.`Association` IS NOT NULL AND (`t1`.`Association` <> 'unknown' OR `t1`.`Association` IS NULL)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4723Table2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4723Table1`
 

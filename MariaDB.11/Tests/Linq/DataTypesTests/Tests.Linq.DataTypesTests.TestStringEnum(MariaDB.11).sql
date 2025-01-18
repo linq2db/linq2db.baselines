@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `StringEnumTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `StringEnumTable`
-(
-	`Id`             INT        NOT NULL,
-	`Column`         VARCHAR(8) NOT NULL,
-	`ColumnNullable` VARCHAR(8)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `StringEnumTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,'val=1',NULL),
-(2,'value=2','value=33')
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -170,9 +142,4 @@ FROM
 	`StringEnumTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `StringEnumTable`
 

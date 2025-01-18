@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1438`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue1438`
-(
-	`Id`  INT     AUTO_INCREMENT NOT NULL,
-	`Has` BOOLEAN                NOT NULL,
-
-	CONSTRAINT `PK_Issue1438` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Has Bool -- Boolean
 SET     @Has = 1
 
@@ -46,9 +30,4 @@ FROM
 WHERE
 	`t1`.`Id` = @id
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1438`
 

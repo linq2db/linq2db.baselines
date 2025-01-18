@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConcreteA`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ConcreteA`
-(
-	`Id`    INT           NOT NULL,
-	`AOnly` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConcreteA` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConcreteB`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ConcreteB`
-(
-	`Id`    INT           NOT NULL,
-	`BOnly` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_ConcreteB` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @AOnly VarChar(6) -- String
@@ -84,14 +52,4 @@ SELECT
 	`e_1`.`BOnly`
 FROM
 	`ConcreteB` `e_1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConcreteB`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ConcreteA`
 

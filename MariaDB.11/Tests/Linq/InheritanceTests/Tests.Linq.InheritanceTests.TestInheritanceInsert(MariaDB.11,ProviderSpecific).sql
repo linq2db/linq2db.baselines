@@ -1,26 +1,4 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `InheritanceFilter`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `InheritanceFilter`
-(
-	`Id`                INT NOT NULL,
-	`Code`              INT NOT NULL,
-	`Child1Field`       INT     NULL,
-	`Child2Field`       INT     NULL,
-	`Grandchild11Field` INT     NULL,
-	`Grandchild12Field` INT     NULL,
-	`Grandchild21Field` INT     NULL,
-	`Grandchild22Field` INT     NULL,
-
-	CONSTRAINT `PK_InheritanceFilter` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
 INSERT BULK `InheritanceFilter`(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field
 
 BeforeExecute
@@ -37,9 +15,4 @@ SELECT
 	`t1`.`Grandchild22Field`
 FROM
 	`InheritanceFilter` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `InheritanceFilter`
 

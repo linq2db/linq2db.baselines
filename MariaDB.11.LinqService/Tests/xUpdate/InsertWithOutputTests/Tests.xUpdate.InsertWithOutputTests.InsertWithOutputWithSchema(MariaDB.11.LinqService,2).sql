@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TableWithDataAndSchema`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TableWithDataAndSchema`
-(
-	`Id`       INT         NOT NULL,
-	`Value`    INT         NOT NULL,
-	`ValueStr` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Value Int32
@@ -38,9 +23,4 @@ RETURNING
 	`TableWithDataAndSchema`.`Id`,
 	`TableWithDataAndSchema`.`Value`,
 	`TableWithDataAndSchema`.`ValueStr`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TableWithDataAndSchema`
 

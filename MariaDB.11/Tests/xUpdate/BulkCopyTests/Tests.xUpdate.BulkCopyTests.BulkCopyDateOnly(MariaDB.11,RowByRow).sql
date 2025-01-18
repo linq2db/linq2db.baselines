@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `DateOnlyTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `DateOnlyTable`
-(
-	`Date` DATE NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Date Datetime -- DateTime
 SET     @Date = '2021-01-01'
 
@@ -33,9 +20,4 @@ SELECT
 FROM
 	`DateOnlyTable` `t1`
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `DateOnlyTable`
 

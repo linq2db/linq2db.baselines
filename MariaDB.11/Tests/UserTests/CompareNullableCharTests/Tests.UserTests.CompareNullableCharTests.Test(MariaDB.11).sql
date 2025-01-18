@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Table1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Table1`
-(
-	`Field1` INT  AUTO_INCREMENT NOT NULL,
-	`Foeld2` CHAR                    NULL,
-
-	CONSTRAINT `PK_Table1` PRIMARY KEY CLUSTERED (`Field1`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`current_1`.`Field1`,
 	`previous`.`Field1`
@@ -25,9 +9,4 @@ FROM
 	`Table1` `previous`
 WHERE
 	`current_1`.`Foeld2` = `previous`.`Foeld2` OR `current_1`.`Foeld2` IS NULL AND `previous`.`Foeld2` IS NULL
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Table1`
 

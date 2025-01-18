@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TestFolder`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TestFolder`
-(
-	`Id`       CHAR(36)      NOT NULL,
-	`Label`    VARCHAR(4000)     NULL,
-	`ParentId` CHAR(36)          NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 WITH RECURSIVE `CTE`
 (
 	`Level_1`,
@@ -63,9 +48,4 @@ SELECT
 	`t2`.`Entity_ParentId`
 FROM
 	`CTE` `t2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TestFolder`
 

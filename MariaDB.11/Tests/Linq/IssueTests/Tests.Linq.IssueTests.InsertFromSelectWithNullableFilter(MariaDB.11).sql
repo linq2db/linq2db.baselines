@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `InsertIssueTest`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `InsertIssueTest`
-(
-	`ID`          SMALLINT NOT NULL,
-	`intDataType` INT          NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `InsertIssueTest`
 (
 	`ID`,
@@ -80,9 +52,4 @@ SELECT
 	`t1`.`intDataType`
 FROM
 	`InsertIssueTest` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `InsertIssueTest`
 

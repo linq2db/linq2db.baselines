@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TestEntity1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TestEntity1`
-(
-	`Id`     INT           NOT NULL,
-	`Field1` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TestEntity2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TestEntity2`
-(
-	`Id`     INT           NOT NULL,
-	`Field1` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN `TestEntity1` `t1_1` ON `t2_1`.`Id` = `t1_1`.`Id`
 WHERE
 	`t1_1`.`Id` IS NULL
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TestEntity2`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TestEntity1`
 
