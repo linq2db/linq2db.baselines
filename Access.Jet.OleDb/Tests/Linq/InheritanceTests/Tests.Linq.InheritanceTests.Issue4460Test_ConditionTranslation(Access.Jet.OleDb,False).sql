@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Base]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Base]
-(
-	[Code]   NVarChar(255)     NULL,
-	[Id]     Int           NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[IsMale] Bit               NULL,
-	[Age]    Int               NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Code VarWChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -82,9 +65,4 @@ WHERE
 	IIF([e].[Code] = 'Child2' OR [e].[Code] = 'Child' OR [e].[Code] = 'BaseChild', [e].[Id] <> 0, [e].[Id] = 0)
 ORDER BY
 	[e].[Id]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Base]
 

@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [BooleanTable]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [BooleanTable]
-(
-	[Id]             Int NOT NULL,
-	[Column]         Bit NOT NULL,
-	[ColumnNullable] Bit     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Column Boolean
-SET     @Column = True
-DECLARE @ColumnNullable Boolean
-SET     @ColumnNullable = False
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Column Boolean
-SET     @Column = False
-DECLARE @ColumnNullable Boolean
-SET     @ColumnNullable = True
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Column Boolean
 SET     @Column = False
 DECLARE @ColumnNullable Boolean
@@ -270,9 +211,4 @@ FROM
 	[BooleanTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [BooleanTable]
 

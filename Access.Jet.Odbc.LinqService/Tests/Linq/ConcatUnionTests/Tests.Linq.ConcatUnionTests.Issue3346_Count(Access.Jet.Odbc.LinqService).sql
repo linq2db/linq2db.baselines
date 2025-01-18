@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [ComplexPerson]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [ComplexPerson]
-(
-	[Id]        Int           NOT NULL,
-	[FirstName] NVarChar(255)     NULL,
-	[LastName]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ComplexPerson] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,9 +23,4 @@ FROM
 		WHERE
 			[x_1].[Id] < 20
 	) [t1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [ComplexPerson]
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Base2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Base2]
-(
-	[Id]           Int           NOT NULL,
-	[Type]         Int           NOT NULL,
-	[Name_First]   NVarChar(255)     NULL,
-	[Name_Second]  NVarChar(255)     NULL,
-	[Test_ChildId] Int           NOT NULL,
-
-	CONSTRAINT [PK_Base2] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -93,9 +74,4 @@ SELECT TOP 2
 	[t1].[Name_Second]
 FROM
 	[Base2] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Base2]
 

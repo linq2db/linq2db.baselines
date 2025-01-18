@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TypeConvertTable]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] Char         NOT NULL,
-	[GuidValue] VarChar(50)      NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Name VarWChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -236,9 +221,4 @@ FROM
 	[TypeConvertTable] [t1]
 WHERE
 	[t1].[GuidValue] = @GuidValue
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TypeConvertTable]
 

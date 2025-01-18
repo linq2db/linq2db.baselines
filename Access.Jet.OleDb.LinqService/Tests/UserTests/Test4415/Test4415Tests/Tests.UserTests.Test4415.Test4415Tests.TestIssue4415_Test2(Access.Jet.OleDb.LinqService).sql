@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Common_Language]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Common_Language]
-(
-	[LanguageID] NVarChar(255) NOT NULL,
-	[Name]       NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @LanguageID VarWChar(2) -- String
-SET     @LanguageID = 'de'
-DECLARE @Name VarWChar(7) -- String
-SET     @Name = 'deutsch'
-
-INSERT INTO [Common_Language]
-(
-	[LanguageID],
-	[Name]
-)
-VALUES
-(
-	@LanguageID,
-	@Name
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[LanguageID],
 	[x].[Name]
@@ -47,9 +15,4 @@ WHERE
 		GROUP BY
 			[x_1].[Name]
 	)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Common_Language]
 

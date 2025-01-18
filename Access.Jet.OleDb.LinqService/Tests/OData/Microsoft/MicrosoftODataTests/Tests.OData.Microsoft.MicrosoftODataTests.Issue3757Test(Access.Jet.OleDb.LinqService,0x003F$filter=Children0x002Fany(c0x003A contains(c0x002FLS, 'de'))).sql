@@ -1,42 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue3757Level1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue3757Level1]
-(
-	[ID]     Int           NOT NULL,
-	[ValS]   NVarChar(255)     NULL,
-	[ValB]   Bit               NULL,
-	[ValInt] Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level1] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue3757Level2]
-(
-	[ID]       Int           NOT NULL,
-	[ParentId] Int           NOT NULL,
-	[ValS]     NVarChar(255)     NULL,
-	[ValB]     Bit               NULL,
-	[ValInt]   Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level2] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @TypedProperty VarWChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -88,14 +51,4 @@ WHERE
 			[it].[ID] = [c_1].[ParentId] AND [it].[ValS] LIKE @TypedProperty AND
 			[it].[ValS] IS NOT NULL
 	)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue3757Level1]
 

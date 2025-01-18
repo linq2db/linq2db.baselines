@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [BackgroundTask]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -54,9 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [BackgroundTask]
 

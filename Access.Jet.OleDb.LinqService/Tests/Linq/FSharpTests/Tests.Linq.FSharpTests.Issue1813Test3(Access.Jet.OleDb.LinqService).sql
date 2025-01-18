@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Names]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Names]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Addresses]
-(
-	[Id]   Int           NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar(5) -- String
@@ -93,14 +65,4 @@ FROM
 		LEFT JOIN [Addresses] [arg2] ON ([tupledArg].[Id] = [arg2].[Id])
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Names]
 

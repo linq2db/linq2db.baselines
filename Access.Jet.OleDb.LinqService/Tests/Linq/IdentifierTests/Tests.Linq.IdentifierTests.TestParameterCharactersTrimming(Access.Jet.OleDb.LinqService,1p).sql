@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [testparams]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [testparams]
-(
-	[1p] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
 SET     @p = 2
 
@@ -22,9 +9,4 @@ SET
 	[t].[1p] = @p
 WHERE
 	[t].[1p] = 1
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [testparams]
 

@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [UserIssue3128]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [UserIssue3128]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [UserDetailsIssue3128]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [UserDetailsIssue3128]
-(
-	[UserId] Int NOT NULL,
-	[Age]    Int NOT NULL,
-
-	CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY CLUSTERED ([UserId])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -79,14 +48,4 @@ WHERE
 		FROM
 			[UserIssue3128] [t1]
 	) > 0
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [UserDetailsIssue3128]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [UserIssue3128]
 

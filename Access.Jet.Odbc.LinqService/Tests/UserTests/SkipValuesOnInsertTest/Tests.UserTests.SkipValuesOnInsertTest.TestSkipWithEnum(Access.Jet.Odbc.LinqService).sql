@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [PR_1598_Insert_Enum_Table]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [PR_1598_Insert_Enum_Table]
-(
-	[Id]     Int           NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[Age]    Int               NULL,
-	[Gender] NVarChar(6)       NULL,
-
-	CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
@@ -89,9 +71,4 @@ FROM
 	[PR_1598_Insert_Enum_Table] [t]
 WHERE
 	[t].[Id] = 2
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [PR_1598_Insert_Enum_Table]
 

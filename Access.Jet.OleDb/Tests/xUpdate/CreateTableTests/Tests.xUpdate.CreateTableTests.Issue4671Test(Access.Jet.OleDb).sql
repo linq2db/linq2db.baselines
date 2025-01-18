@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Issue4671Entity]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue4671Entity]
-(
-	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL,
-
-	CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -71,9 +55,4 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [Issue4671EntityTMP]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue4671Entity]
 

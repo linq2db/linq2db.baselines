@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Issue1373Tests]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue1373Tests]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue1373Tests] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -68,9 +52,4 @@ FROM
 	[Issue1373Tests] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue1373Tests]
 

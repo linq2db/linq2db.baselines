@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [InsertIssueTest]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [InsertIssueTest]
-(
-	[ID]          SmallInt NOT NULL,
-	[intDataType] Int          NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -138,9 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [InsertIssueTest]
 

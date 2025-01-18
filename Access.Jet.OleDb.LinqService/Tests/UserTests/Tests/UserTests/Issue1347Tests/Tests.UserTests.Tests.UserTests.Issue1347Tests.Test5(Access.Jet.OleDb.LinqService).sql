@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WmsLoadCarrierDTO]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [WmsLoadCarrierDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_LoadCarrierA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [WMS_LoadCarrierA]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],
@@ -114,24 +48,4 @@ FROM
 			FROM
 				[WMS_LoadCarrierA] [t2]
 		) [res_1] ON ([t3].[ResourceID] = [res_1].[Id])
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_LoadCarrierA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WmsLoadCarrierDTO]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [GlobalTaskDTO]
 

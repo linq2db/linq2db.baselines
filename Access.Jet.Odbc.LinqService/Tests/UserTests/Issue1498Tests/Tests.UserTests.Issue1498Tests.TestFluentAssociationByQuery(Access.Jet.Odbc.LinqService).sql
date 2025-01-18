@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Topic]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Topic]
-(
-	[Id]    Int           NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Message]
-(
-	[Id]      Int           NOT NULL,
-	[TopicId] Int           NOT NULL,
-	[Text]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -122,14 +92,4 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Topic]
 

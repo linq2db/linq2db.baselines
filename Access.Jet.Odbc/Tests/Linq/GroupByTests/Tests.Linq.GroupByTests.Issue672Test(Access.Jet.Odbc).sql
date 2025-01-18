@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Stone]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Stone]
-(
-	[Id]           Int            NOT NULL IDENTITY,
-	[Name]         NVarChar(255)  NOT NULL,
-	[Enabled]      Bit                NULL,
-	[ImageFullUrl] NVarChar(255)      NULL,
-
-	CONSTRAINT [PK_Stone] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -81,9 +63,4 @@ VALUES
 	?,
 	?
 )
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Stone]
 

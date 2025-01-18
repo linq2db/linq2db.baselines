@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -64,14 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [GlobalTaskDTO]
 

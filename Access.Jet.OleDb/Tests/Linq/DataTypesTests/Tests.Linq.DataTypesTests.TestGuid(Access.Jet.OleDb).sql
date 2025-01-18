@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [GuidTable]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [GuidTable]
-(
-	[Id]             Int  NOT NULL,
-	[Column]         Guid NOT NULL,
-	[ColumnNullable] Guid     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @Column Guid
-SET     @Column = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
-DECLARE @ColumnNullable Guid
-SET     @ColumnNullable = NULL
-
-INSERT INTO [GuidTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Column Guid
-SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
-DECLARE @ColumnNullable Guid
-SET     @ColumnNullable = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
-
-INSERT INTO [GuidTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Column Guid
 SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @ColumnNullable Guid
@@ -271,9 +212,4 @@ FROM
 	[GuidTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [GuidTable]
 

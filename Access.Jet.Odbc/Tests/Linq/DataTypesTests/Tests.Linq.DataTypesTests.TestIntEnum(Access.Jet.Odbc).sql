@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [IntEnumTable]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [IntEnumTable]
-(
-	[Id]             Int NOT NULL,
-	[Column]         Int NOT NULL,
-	[ColumnNullable] Int     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Column Int -- Int32
-SET     @Column = 1
-DECLARE @ColumnNullable Int -- Int32
-SET     @ColumnNullable = NULL
-
-INSERT INTO [IntEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Column Int -- Int32
-SET     @Column = 2
-DECLARE @ColumnNullable Int -- Int32
-SET     @ColumnNullable = 3
-
-INSERT INTO [IntEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -270,9 +211,4 @@ FROM
 	[IntEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [IntEnumTable]
 

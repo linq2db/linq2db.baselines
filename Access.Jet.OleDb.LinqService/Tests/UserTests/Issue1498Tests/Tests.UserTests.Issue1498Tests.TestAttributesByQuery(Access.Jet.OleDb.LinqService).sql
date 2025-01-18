@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Topic]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Topic]
-(
-	[Id]    Int           NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Message]
-(
-	[Id]      Int           NOT NULL,
-	[TopicId] Int           NOT NULL,
-	[Text]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarWChar(5) -- String
@@ -78,14 +48,4 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Topic]
 
