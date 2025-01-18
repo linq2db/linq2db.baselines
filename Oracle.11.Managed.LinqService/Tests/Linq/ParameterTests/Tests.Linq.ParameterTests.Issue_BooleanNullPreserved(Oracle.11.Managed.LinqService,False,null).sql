@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestBool"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestBool"
-		(
-			"Id"    Int     NOT NULL,
-			"Value" Char(1)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -96,16 +66,4 @@ FROM
 	"TestBool" t1
 WHERE
 	ROWNUM <= 2
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestBool"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

@@ -1,70 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4596Form"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue4596Form"
-		(
-			"Id" Int      NOT NULL,
-			C1   NChar(1) NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4596Item"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue4596Item"
-		(
-			"Id"         Int          NOT NULL,
-			"FormId"     Int          NOT NULL,
-			"OrderIndex" Int          NOT NULL,
-			"Name1"      VarChar(255)     NULL,
-			"Name2"      VarChar(255)     NULL,
-			"Name3"      VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	m_1."cond",
@@ -131,28 +67,4 @@ FROM
 	"Issue4596Form" t1
 WHERE
 	ROWNUM <= 1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4596Item"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4596Form"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

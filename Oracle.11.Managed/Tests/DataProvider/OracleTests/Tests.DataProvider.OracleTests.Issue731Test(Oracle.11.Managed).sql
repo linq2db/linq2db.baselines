@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue731Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue731Table"
-		(
-			"Id"         Int     NOT NULL,
-			"Guid"       Raw(16) NOT NULL,
-			"BinaryGuid" BLOB    NOT NULL,
-			"BlobValue"  BLOB        NULL,
-			"RawValue"   Raw(5)      NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Guid Raw(16) -- Binary
@@ -74,16 +41,4 @@ FROM
 	"Issue731Table" t1
 WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue731Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

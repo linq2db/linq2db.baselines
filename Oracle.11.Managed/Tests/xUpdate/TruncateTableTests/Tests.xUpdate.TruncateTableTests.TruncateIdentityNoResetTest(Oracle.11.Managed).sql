@@ -1,70 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -4080 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -2289 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE "test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -942 THEN
-				RAISE;
-			END IF;
-	END;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "test_temp"
-		(
-			ID       Int              NOT NULL,
-			"Field1" Decimal(28, 10)  NOT NULL,
-
-			CONSTRAINT "PK_test_temp" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-CREATE SEQUENCE "SIDENTITY_test_temp"
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-CREATE OR REPLACE TRIGGER "TIDENTITY_test_temp"
-BEFORE INSERT ON "test_temp" FOR EACH ROW
-BEGIN
-	SELECT "SIDENTITY_test_temp".NEXTVAL INTO :NEW.ID FROM dual;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "test_temp"
 
 BeforeExecute
@@ -183,34 +119,4 @@ WHERE
 	t3.RN > :skip
 ORDER BY
 	t3.ID
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -4080 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -2289 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE "test_temp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -942 THEN
-				RAISE;
-			END IF;
-	END;
-END;
 

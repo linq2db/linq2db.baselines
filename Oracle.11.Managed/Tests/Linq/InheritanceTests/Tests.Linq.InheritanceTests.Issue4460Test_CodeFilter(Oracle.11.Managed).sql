@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Base"
-		(
-			"Code" VarChar(255)     NULL,
-			"Id"   Int          NOT NULL,
-			"Name" VarChar(255)     NULL,
-			"Age"  Int              NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Code Varchar2(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -86,16 +54,4 @@ FROM
 	"Base" e
 WHERE
 	e."Code" <> 'Child' OR e."Code" IS NULL
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

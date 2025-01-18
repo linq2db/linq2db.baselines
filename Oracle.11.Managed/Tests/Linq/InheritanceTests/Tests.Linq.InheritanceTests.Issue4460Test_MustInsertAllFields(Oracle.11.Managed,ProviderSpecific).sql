@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4460Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue4460Table"
-		(
-			"Id"      Int          NOT NULL,
-			"Code"    VarChar(255)     NULL,
-			"Name"    VarChar(255)     NULL,
-			"Surname" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "Issue4460Table" ("Id", "Code", "Name", "Surname") VALUES (1,'GrandChild','Tom','Black')
 SELECT * FROM dual
@@ -47,16 +15,4 @@ SELECT
 	t1."Surname"
 FROM
 	"Issue4460Table" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue4460Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

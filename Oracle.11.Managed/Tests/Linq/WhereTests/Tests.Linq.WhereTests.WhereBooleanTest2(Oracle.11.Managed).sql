@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "WhereCases"
-		(
-			"Id"                Int     NOT NULL,
-			"BoolValue"         Char(1) NOT NULL,
-			"NullableBoolValue" Char(1)     NULL,
-
-			CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-INSERT ALL
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (1,1,NULL)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (2,1,1)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (3,1,NULL)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (4,1,1)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (5,1,1)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (11,0,NULL)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (12,0,0)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (13,0,NULL)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (14,0,0)
-	INTO "WhereCases" ("Id", "BoolValue", "NullableBoolValue") VALUES (15,0,0)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."BoolValue",
@@ -445,16 +396,4 @@ FROM
 	"WhereCases" t
 WHERE
 	NOT (NOT (t."BoolValue" = 0 AND t."NullableBoolValue" = 0 AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "WhereCases"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

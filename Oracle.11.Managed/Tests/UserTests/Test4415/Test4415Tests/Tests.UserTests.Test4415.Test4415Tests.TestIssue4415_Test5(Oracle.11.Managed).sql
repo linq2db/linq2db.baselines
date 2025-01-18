@@ -1,44 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Common_Language"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Common_Language"
-		(
-			"LanguageID" VarChar(255)     NULL,
-			"Name"       VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-INSERT ALL
-	INTO "Common_Language" ("LanguageID", "Name") VALUES ('de','deutsch')
-	INTO "Common_Language" ("LanguageID", "Name") VALUES (NULL,'english')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."LanguageID",
 	t1."Name"
@@ -62,16 +24,4 @@ WHERE
 		GROUP BY
 			x_1."Name"
 	)
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Common_Language"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

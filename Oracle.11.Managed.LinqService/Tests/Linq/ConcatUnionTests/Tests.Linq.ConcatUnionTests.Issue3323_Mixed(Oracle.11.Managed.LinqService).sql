@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3323Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue3323Table"
-		(
-			"Id"       Int          NOT NULL,
-			"FistName" VarChar(255)     NULL,
-			"LastName" VarChar(255)     NULL,
-			"Text"     VarChar(255) NOT NULL,
-
-			CONSTRAINT "PK_Issue3323Table" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -79,16 +45,4 @@ SELECT
 	r_1."FistName" || ' ' || r_1."LastName"
 FROM
 	"Issue3323Table" r_1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3323Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
