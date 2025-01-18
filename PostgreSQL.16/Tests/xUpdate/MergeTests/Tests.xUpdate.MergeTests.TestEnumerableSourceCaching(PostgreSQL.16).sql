@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "CacheTestTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CacheTestTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL,
-
-	CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,2)
@@ -95,9 +79,4 @@ FROM
 	"CacheTestTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CacheTestTable"
 

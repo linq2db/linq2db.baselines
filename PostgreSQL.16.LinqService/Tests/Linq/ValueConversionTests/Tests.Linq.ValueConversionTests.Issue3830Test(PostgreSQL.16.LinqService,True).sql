@@ -1,94 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3830TestTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3830TestTable"
-(
-	"Id"    Int     NOT NULL,
-	"Bool1" Char(1) NOT NULL,
-	"Bool2" Char(1)     NULL,
-	"Bool3" Char(1)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Issue3830TestTable"
-(
-	"Id",
-	"Bool1",
-	"Bool2",
-	"Bool3"
-)
-VALUES
-(
-	1,
-	'Y',
-	NULL,
-	NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Issue3830TestTable"
-(
-	"Id",
-	"Bool1",
-	"Bool2",
-	"Bool3"
-)
-VALUES
-(
-	2,
-	'N',
-	NULL,
-	'Y'
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Issue3830TestTable"
-(
-	"Id",
-	"Bool1",
-	"Bool2",
-	"Bool3"
-)
-VALUES
-(
-	3,
-	'N',
-	'Y',
-	NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Issue3830TestTable"
-(
-	"Id",
-	"Bool1",
-	"Bool2",
-	"Bool3"
-)
-VALUES
-(
-	4,
-	'Y',
-	'N',
-	'Y'
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 SELECT
 	r."Id",
 	r."Bool1",
@@ -295,9 +207,4 @@ FROM
 	"Issue3830TestTable" r
 WHERE
 	r."Bool2" IS NOT NULL AND r."Bool1" = 'Y' AND r."Bool3" = 'Y'
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3830TestTable"
 

@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue1303"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1303"
-(
-	"ID"     Int   NOT NULL,
-	"Array"  bytea     NULL,
-	"Binary" bytea     NULL,
-
-	CONSTRAINT "PK_Issue1303" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 INSERT INTO "Issue1303"
 (
 	"ID",
@@ -69,9 +52,4 @@ FROM
 WHERE
 	t1."Binary" = E'\\x0405'::bytea
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1303"
 

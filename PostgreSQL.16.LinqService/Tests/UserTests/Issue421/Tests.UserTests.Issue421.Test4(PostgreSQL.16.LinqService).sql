@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "BlobClass"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "BlobClass"
-(
-	"Id"        Int   NOT NULL,
-	"BlobValue" bytea     NULL,
-
-	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -51,9 +35,4 @@ FROM
 WHERE
 	t1."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "BlobClass"
 

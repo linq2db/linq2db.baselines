@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "TestTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestTable"
-(
-	"ID"     Int  NOT NULL,
-	"Field1" Int  NOT NULL,
-	"Field2" Int  NOT NULL,
-	"Field3" Int  NOT NULL,
-	"Field4" Int  NOT NULL,
-	field11  text     NULL,
-	"Field5" Int  NOT NULL,
-
-	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 MERGE INTO "TestTable" "Target"
 USING (
 	SELECT
@@ -77,9 +56,4 @@ SET
 	"Field4" = "Source"."source_Field4",
 	field11 = "Source".source_field1_1,
 	"Field5" = "Source"."source_Field5"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestTable"
 

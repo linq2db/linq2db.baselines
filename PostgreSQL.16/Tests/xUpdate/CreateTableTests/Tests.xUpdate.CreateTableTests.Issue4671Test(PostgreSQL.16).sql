@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue4671Entity"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4671Entity"
-(
-	"Id"    SERIAL  NOT NULL,
-	"Value" Int     NOT NULL,
-
-	CONSTRAINT "PK_Issue4671Entity" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 CREATE TEMPORARY TABLE "Issue4671EntityTMP"
 (
 	"Id"    SERIAL  NOT NULL,
@@ -74,9 +58,4 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue4671EntityTMP"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4671Entity"
 

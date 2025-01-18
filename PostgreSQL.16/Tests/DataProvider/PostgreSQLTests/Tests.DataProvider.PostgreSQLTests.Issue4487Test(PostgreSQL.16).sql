@@ -13,23 +13,6 @@ CREATE TYPE "item_type_enum" AS ENUM (
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4487Table"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4487Table"
-(
-	"Id"     Int              NOT NULL,
-	"Value"  item_type_enum       NULL,
-	"Values" item_type_enum[]     NULL,
-
-	CONSTRAINT "PK_Issue4487Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -81,11 +64,6 @@ FROM
 	"Issue4487Table" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4487Table"
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
