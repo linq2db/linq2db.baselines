@@ -1,48 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table1"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1799Table1"
-(
-	"EventUser" Int       NOT NULL,
-	"ProcessID" Int       NOT NULL,
-	"EventTime" TimeStamp NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table2"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1799Table2"
-(
-	"UserId"     Int  NOT NULL,
-	"UserGroups" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table3"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1799Table3"
-(
-	"ProcessID"   Int  NOT NULL,
-	"ProcessName" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
@@ -69,19 +26,4 @@ GROUP BY
 	u."UserGroups",
 	p."ProcessName"
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table3"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table2"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1799Table1"
 

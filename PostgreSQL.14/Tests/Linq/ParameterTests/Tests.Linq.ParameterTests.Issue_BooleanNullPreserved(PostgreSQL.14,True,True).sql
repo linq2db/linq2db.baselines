@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TestBool"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestBool"
-(
-	"Id"    Int     NOT NULL,
-	"Value" Boolean     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -73,9 +59,4 @@ SELECT
 FROM
 	"TestBool" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestBool"
 

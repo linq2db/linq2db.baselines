@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4460Table"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4460Table"
-(
-	"Id"      Int  NOT NULL,
-	"Code"    text     NULL,
-	"Name"    text     NULL,
-	"Surname" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Text(10) -- String
@@ -52,9 +36,4 @@ FROM
 	"Issue4460Table" t1
 WHERE
 	t1."Code" = 'GrandChild'
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4460Table"
 

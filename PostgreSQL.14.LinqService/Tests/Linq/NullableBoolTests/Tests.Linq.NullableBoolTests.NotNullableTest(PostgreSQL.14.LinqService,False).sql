@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "NotNullableBoolClass"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "NotNullableBoolClass"
-(
-	"Value" Boolean NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value Boolean
-SET     @Value = True
-
-INSERT INTO "NotNullableBoolClass"
-(
-	"Value"
-)
-VALUES
-(
-	:Value
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value Boolean
-SET     @Value = False
-
-INSERT INTO "NotNullableBoolClass"
-(
-	"Value"
-)
-VALUES
-(
-	:Value
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	t."Value"
 FROM
@@ -98,9 +57,4 @@ FROM
 	"NotNullableBoolClass" t
 WHERE
 	t."Value" = True
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "NotNullableBoolClass"
 

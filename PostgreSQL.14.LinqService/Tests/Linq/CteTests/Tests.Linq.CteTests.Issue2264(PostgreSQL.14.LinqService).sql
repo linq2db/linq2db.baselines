@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TestFolder"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestFolder"
-(
-	"Id"       uuid NOT NULL,
-	"Label"    text     NULL,
-	"ParentId" uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 WITH RECURSIVE "CTE"
 (
 	"Level_1",
@@ -63,9 +48,4 @@ SELECT
 	t2."Entity_ParentId"
 FROM
 	"CTE" t2
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestFolder"
 

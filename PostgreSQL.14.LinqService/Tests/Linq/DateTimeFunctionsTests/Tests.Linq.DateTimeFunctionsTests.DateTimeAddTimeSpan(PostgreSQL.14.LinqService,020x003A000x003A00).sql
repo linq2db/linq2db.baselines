@@ -1,84 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "DateTypes"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "DateTypes"
-(
-	"Id"                Int       NOT NULL,
-	"DateTime"          TimeStamp NOT NULL,
-	"DateTimeNullable"  TimeStamp     NULL,
-	"DateTime2"         TimeStamp NOT NULL,
-	"DateTime2Nullable" TimeStamp     NULL,
-
-	CONSTRAINT "PK_DateTypes" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @DateTime Timestamp -- DateTime2
-SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @DateTimeNullable Timestamp -- DateTime2
-SET     @DateTimeNullable = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @DateTime2 Timestamp -- DateTime2
-SET     @DateTime2 = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @DateTime2Nullable Timestamp -- DateTime2
-SET     @DateTime2Nullable = '2020-02-29 17:54:55.123'::timestamp
-
-INSERT INTO "DateTypes"
-(
-	"Id",
-	"DateTime",
-	"DateTimeNullable",
-	"DateTime2",
-	"DateTime2Nullable"
-)
-VALUES
-(
-	:Id,
-	:DateTime,
-	:DateTimeNullable,
-	:DateTime2,
-	:DateTime2Nullable
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @DateTime Timestamp -- DateTime2
-SET     @DateTime = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @DateTimeNullable Timestamp -- DateTime2
-SET     @DateTimeNullable = NULL
-DECLARE @DateTime2 Timestamp -- DateTime2
-SET     @DateTime2 = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @DateTime2Nullable Timestamp -- DateTime2
-SET     @DateTime2Nullable = NULL
-
-INSERT INTO "DateTypes"
-(
-	"Id",
-	"DateTime",
-	"DateTimeNullable",
-	"DateTime2",
-	"DateTime2Nullable"
-)
-VALUES
-(
-	:Id,
-	:DateTime,
-	:DateTimeNullable,
-	:DateTime2,
-	:DateTime2Nullable
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ts Interval -- Object
 SET     @ts = 02:00:00
 
@@ -127,9 +48,4 @@ SELECT
 	t1."DateTime2Nullable"
 FROM
 	"DateTypes" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "DateTypes"
 

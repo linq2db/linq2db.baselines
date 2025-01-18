@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestInsertOrReplaceTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestInsertOrReplaceTable"
-(
-	"ID"         Int  NOT NULL,
-	"FirstName"  text     NULL,
-	"LastName"   text     NULL,
-	"MiddleName" text     NULL,
-
-	CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -107,9 +89,4 @@ FROM
 WHERE
 	x."FirstName" = :FirstName
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestInsertOrReplaceTable"
 

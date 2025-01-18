@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TakeSkipClass"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TakeSkipClass"
-(
-	"Value" VarChar(10)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "TakeSkipClass"
-(
-	"Value"
-)
-VALUES
-('PIPPO'),
-('PLUTO'),
-('PLUTO'),
-('BOLTO')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	EXISTS(
 		SELECT
@@ -39,9 +13,4 @@ SELECT
 			COUNT(*) > 1
 		LIMIT 1
 	)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TakeSkipClass"
 

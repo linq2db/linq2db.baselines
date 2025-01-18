@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "GlobalTaskDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "GlobalTaskDTO"
-(
-	"Id"                        uuid NOT NULL,
-	"ResourceID"                uuid NOT NULL,
-	"StorageShelfSourceID"      uuid     NULL,
-	"RPSourceID"                uuid     NULL,
-	"StorageShelfDestinationID" uuid     NULL,
-	"RPDestinationID"           uuid     NULL,
-	"RPOrigDestinationID"       uuid     NULL,
-	"OutfeedTransportOrderID"   uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_GlobalTaskA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WMS_GlobalTaskA"
-(
-	"Id"                        uuid NOT NULL,
-	"ResourceID"                uuid NOT NULL,
-	"StorageShelfSourceID"      uuid     NULL,
-	"RPSourceID"                uuid     NULL,
-	"StorageShelfDestinationID" uuid     NULL,
-	"RPDestinationID"           uuid     NULL,
-	"RPOrigDestinationID"       uuid     NULL,
-	"OutfeedTransportOrderID"   uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsLoadCarrierDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WmsLoadCarrierDTO"
-(
-	"Id" uuid NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_LoadCarrierA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WMS_LoadCarrierA"
-(
-	"Id" uuid NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	t3."Id",
 	t3."ResourceID",
@@ -114,24 +48,4 @@ FROM
 			FROM
 				"WMS_LoadCarrierA" t2
 		) res_1 ON t3."ResourceID" = res_1."Id"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_LoadCarrierA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsLoadCarrierDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_GlobalTaskA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "GlobalTaskDTO"
 
