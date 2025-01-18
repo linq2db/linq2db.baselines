@@ -9,23 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022
-
-DROP TABLE IF EXISTS [TInserted]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[TInserted]', N'U') IS NULL)
-	CREATE TABLE [TInserted]
-	(
-		[ParentID] Int NOT NULL,
-		[ChildID]  Int NOT NULL,
-
-		CONSTRAINT [PK_TInserted] PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
-	)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @id Int -- Int32
@@ -73,11 +56,6 @@ FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] > 1000
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [TInserted]
 
 BeforeExecute
 -- SqlServer.2022

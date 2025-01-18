@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DROP TABLE IF EXISTS [Checklist]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[Checklist]', N'U') IS NULL)
-	CREATE TABLE [Checklist]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [ChecklistTrigger]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[ChecklistTrigger]', N'U') IS NULL)
-	CREATE TABLE [ChecklistTrigger]
-	(
-		[Id]          Int NOT NULL,
-		[ChecklistId] Int NOT NULL,
-		[TriggerType] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[x].[Id],
 	ISNULL((
@@ -48,14 +18,4 @@ SELECT
 	), N'None')
 FROM
 	[Checklist] [x]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [ChecklistTrigger]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Checklist]
 

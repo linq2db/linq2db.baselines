@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DROP TABLE IF EXISTS [test_temp]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
-	CREATE TABLE [test_temp]
-	(
-		[ID]     Int      NOT NULL IDENTITY,
-		[Field1] Decimal  NOT NULL,
-
-		CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
 DELETE FROM [test_temp]
 
 BeforeExecute
@@ -100,9 +83,4 @@ FROM
 ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [test_temp]
 

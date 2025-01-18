@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-
-DROP TABLE IF EXISTS [CreateTableTypes]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
-	CREATE TABLE [CreateTableTypes]
-	(
-		[Id]    Int NOT NULL,
-		[Int32] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int32 Int -- Int32
@@ -59,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [CreateTableTypes]
 

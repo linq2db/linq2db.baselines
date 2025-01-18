@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [InsertIssueTest]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[InsertIssueTest]', N'U') IS NULL)
-	CREATE TABLE [InsertIssueTest]
-	(
-		[ID]          SmallInt NOT NULL,
-		[intDataType] Int          NULL
-	)
-
-BeforeExecute
--- SqlServer.2022
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- SqlServer.2022
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -81,9 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [InsertIssueTest]
 
