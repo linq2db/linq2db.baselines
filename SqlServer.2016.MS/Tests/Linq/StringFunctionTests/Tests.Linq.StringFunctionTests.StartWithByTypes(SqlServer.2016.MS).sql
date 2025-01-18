@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [StringTypesTable]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[StringTypesTable]', N'U') IS NULL)
-	CREATE TABLE [StringTypesTable]
-	(
-		[Id]             Int          NOT NULL,
-		[CharColumn]     Char(50)         NULL,
-		[NCharColumn]    NChar(50)        NULL,
-		[VarCharColumn]  VarChar(50)      NULL,
-		[NVarCharColumn] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-INSERT INTO [StringTypesTable]
-(
-	[Id],
-	[CharColumn],
-	[NCharColumn],
-	[VarCharColumn],
-	[NVarCharColumn]
-)
-VALUES
-(1,'someString',N'someString','someString',N'someString')
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = N'some%'
 DECLARE @str_1 NChar(5) -- StringFixedLength
@@ -54,9 +22,4 @@ WHERE
 	[t].[NCharColumn] LIKE @str_1 ESCAPE N'~' AND
 	[t].[VarCharColumn] LIKE @str_2 ESCAPE N'~' AND
 	[t].[NVarCharColumn] LIKE @str_3 ESCAPE N'~'
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [StringTypesTable]
 

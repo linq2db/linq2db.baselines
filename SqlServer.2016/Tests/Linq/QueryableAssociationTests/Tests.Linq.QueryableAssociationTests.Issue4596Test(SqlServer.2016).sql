@@ -1,38 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4596Form]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[Issue4596Form]', N'U') IS NULL)
-	CREATE TABLE [Issue4596Form]
-	(
-		[Id] Int      NOT NULL,
-		[C1] NChar(1) NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[Issue4596Item]', N'U') IS NULL)
-	CREATE TABLE [Issue4596Item]
-	(
-		[Id]         Int            NOT NULL,
-		[FormId]     Int            NOT NULL,
-		[OrderIndex] Int            NOT NULL,
-		[Name1]      NVarChar(4000)     NULL,
-		[Name2]      NVarChar(4000)     NULL,
-		[Name3]      NVarChar(4000)     NULL
-	)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2016
@@ -78,13 +44,3 @@ FROM
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4596Form]
-

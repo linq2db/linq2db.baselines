@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [TableWithData_source]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NULL)
-	CREATE TABLE [TableWithData_source]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
-
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
@@ -74,9 +58,4 @@ BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [TableWithData_source]
 

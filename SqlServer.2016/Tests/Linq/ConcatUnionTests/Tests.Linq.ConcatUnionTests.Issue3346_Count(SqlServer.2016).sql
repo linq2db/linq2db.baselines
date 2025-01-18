@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [ComplexPerson]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[ComplexPerson]', N'U') IS NULL)
-	CREATE TABLE [ComplexPerson]
-	(
-		[Id]        Int            NOT NULL,
-		[FirstName] NVarChar(4000)     NULL,
-		[LastName]  NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ComplexPerson] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,9 +23,4 @@ FROM
 		WHERE
 			[x_1].[Id] < 20
 	) [t1]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [ComplexPerson]
 

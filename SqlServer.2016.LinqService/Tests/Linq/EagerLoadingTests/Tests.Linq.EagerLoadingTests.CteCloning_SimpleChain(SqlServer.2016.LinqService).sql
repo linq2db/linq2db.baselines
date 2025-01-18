@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [CteTable]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[CteTable]', N'U') IS NULL)
-	CREATE TABLE [CteTable]
-	(
-		[Id]     Int NOT NULL,
-		[Value1] Int NOT NULL,
-		[Value2] Int NOT NULL,
-		[Value3] Int NOT NULL,
-		[Value4] Int NOT NULL,
-		[Value5] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [CteChildTable]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[CteChildTable]', N'U') IS NULL)
-	CREATE TABLE [CteChildTable]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -147,14 +113,4 @@ SELECT
 FROM
 	[CTE_3] [t1]
 		LEFT JOIN [CteChildTable] [d] ON [t1].[Value4] = [d].[Id]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [CteChildTable]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [CteTable]
 

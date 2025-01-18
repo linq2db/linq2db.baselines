@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [Item]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NULL)
-	CREATE TABLE [Item]
-	(
-		[Id]   Int            NOT NULL,
-		[Text] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [ItemValue]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[ItemValue]', N'U') IS NULL)
-	CREATE TABLE [ItemValue]
-	(
-		[Id]     Int     NOT NULL,
-		[ItemId] Int     NOT NULL,
-		[Value]  Decimal NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[x_1].[Id],
 	[x_1].[Text]
@@ -55,14 +22,4 @@ FROM
 	) [x_1]
 ORDER BY
 	[x_1].[c1]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [ItemValue]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [Item]
 

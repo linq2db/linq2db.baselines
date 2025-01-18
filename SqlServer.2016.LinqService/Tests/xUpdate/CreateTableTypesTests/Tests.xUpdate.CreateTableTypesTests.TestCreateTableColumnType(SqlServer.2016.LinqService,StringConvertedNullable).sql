@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-
-DROP TABLE IF EXISTS [CreateTableTypes]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
-	CREATE TABLE [CreateTableTypes]
-	(
-		[Id]              Int           NOT NULL,
-		[StringConverted] NVarChar(Max)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarChar(4000) -- String
@@ -59,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [CreateTableTypes]
 

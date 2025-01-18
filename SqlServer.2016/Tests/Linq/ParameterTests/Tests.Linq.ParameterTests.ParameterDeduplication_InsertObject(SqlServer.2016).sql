@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-
-DROP TABLE IF EXISTS [ParameterDeduplication]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[ParameterDeduplication]', N'U') IS NULL)
-	CREATE TABLE [ParameterDeduplication]
-	(
-		[Id]      Int            NOT NULL,
-		[Int1]    Int            NOT NULL,
-		[Int2]    Int            NOT NULL,
-		[IntN1]   Int                NULL,
-		[IntN2]   Int                NULL,
-		[String1] VarChar(Max)       NULL,
-		[String2] NVarChar(4000)     NULL,
-		[String3] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ParameterDeduplication] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int1 Int -- Int32
@@ -121,9 +98,4 @@ FROM
 	[ParameterDeduplication] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [ParameterDeduplication]
 

@@ -1,19 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [VariantTable]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[VariantTable]', N'U') IS NULL)
-	CREATE TABLE [VariantTable]
-	(
-		[Id]    Int         NOT NULL,
-		[Value] Sql_Variant     NULL
-	)
-
-BeforeExecute
 INSERT BULK [VariantTable](Id, Value)
 
 BeforeExecute
@@ -26,9 +11,4 @@ FROM
 	[VariantTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [VariantTable]
 

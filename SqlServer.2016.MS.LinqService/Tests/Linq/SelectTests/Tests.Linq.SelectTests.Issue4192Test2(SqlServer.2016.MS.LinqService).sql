@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4192TableNullable]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[Issue4192TableNullable]', N'U') IS NULL)
-	CREATE TABLE [Issue4192TableNullable]
-	(
-		[Name]     NVarChar(4000)     NULL,
-		[ParentId] Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
 DECLARE @parentId Int -- Int32
 SET     @parentId = 12
 
@@ -25,9 +10,4 @@ FROM
 	[Issue4192TableNullable] [i]
 WHERE
 	[i].[ParentId] = @parentId
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue4192TableNullable]
 

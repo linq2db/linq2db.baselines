@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [Issue2816Table]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
-	CREATE TABLE [Issue2816Table]
-	(
-		[Id]   Int            NOT NULL,
-		[Text] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue2816Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2016
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(1,N''),
-(2,N'  '),
-(3,N' x ')
-
-BeforeExecute
--- SqlServer.2016
-
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -39,9 +9,4 @@ FROM
 WHERE
 	NOT ([p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
                  　]%')
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [Issue2816Table]
 
