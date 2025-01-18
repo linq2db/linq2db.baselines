@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "IntEnumTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "IntEnumTable"
-		(
-			"Id"             Int NOT NULL,
-			"Column"         Int NOT NULL,
-			"ColumnNullable" Int     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
-	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Int32
 SET     @Column_1 = 2
 DECLARE @ColumnNullable Int32
@@ -178,16 +139,4 @@ FROM
 	"IntEnumTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "IntEnumTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
