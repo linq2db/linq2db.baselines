@@ -1,49 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TestConstantsData]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TestConstantsData]
-(
-	[Id]                INTEGER       NOT NULL,
-	[GuidValue]         Guid          NOT NULL,
-	[GuidNullableValue] Guid              NULL,
-	[StringValue]       NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_TestConstantsData] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @GuidValue  -- Guid
-SET     @GuidValue = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @GuidNullableValue  -- Guid
-SET     @GuidNullableValue = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @StringValue NVarChar(8) -- String
-SET     @StringValue = 'StrValue'
-
-INSERT INTO [TestConstantsData]
-(
-	[Id],
-	[GuidValue],
-	[GuidNullableValue],
-	[StringValue]
-)
-VALUES
-(
-	@Id,
-	@GuidValue,
-	@GuidNullableValue,
-	@StringValue
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @p NVarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -67,9 +23,4 @@ SELECT
 	[t1].[StringValue]
 FROM
 	[TestConstantsData] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TestConstantsData]
 

@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [TableToInsert]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TableToInsert]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Value] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_TableToInsert] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [TableToInsert]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(3,'Janet'),
-(4,'Doe')
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -57,9 +29,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[TableToInsert] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TableToInsert]
 

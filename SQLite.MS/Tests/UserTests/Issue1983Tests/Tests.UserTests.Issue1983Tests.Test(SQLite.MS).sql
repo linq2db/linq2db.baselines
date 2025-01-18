@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue1983Person]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1983Person]
-(
-	[Id]            INTEGER       NOT NULL,
-	[Name]          NVarChar(255)     NULL,
-	[CountOfCards]  INTEGER       NOT NULL,
-	[CountOfCards2] INTEGER       NOT NULL,
-	[CountOfCards3] INTEGER       NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1983Card]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1983Card]
-(
-	[Id]         INTEGER       NOT NULL,
-	[CardType]   INTEGER       NOT NULL,
-	[CardNumber] NVarChar(255)     NULL,
-	[PersonId]   INTEGER       NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[cu].[Id],
 	[cu].[COUNT_1]
@@ -140,14 +107,4 @@ WHERE
 		WHERE
 			[card_1].[PersonId] = [cu].[Id] AND [card_1].[CardType] = 2
 	) <> 0
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1983Card]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1983Person]
 

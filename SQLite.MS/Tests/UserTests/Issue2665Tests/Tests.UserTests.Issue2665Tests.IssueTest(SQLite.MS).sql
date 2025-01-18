@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [ProductTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [ProductTable]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_ProductTable] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [ProductAttributeTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [ProductAttributeTable]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_ProductAttributeTable] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [ProductAttributeMapping]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [ProductAttributeMapping]
-(
-	[ProductId]          INTEGER NOT NULL,
-	[ProductAttributeId] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_ProductAttributeMapping] PRIMARY KEY ([ProductId], [ProductAttributeId])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[pa].[Id]
 FROM
@@ -73,19 +25,4 @@ WHERE
 		WHERE
 			[p].[Id] >= [pam].[ProductId]
 	)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [ProductAttributeMapping]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [ProductAttributeTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [ProductTable]
 

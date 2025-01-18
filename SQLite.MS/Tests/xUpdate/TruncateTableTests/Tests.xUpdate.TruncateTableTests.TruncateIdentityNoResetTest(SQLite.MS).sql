@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [test_temp]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [test_temp]
-(
-	[ID]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Field1] Decimal  NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 DELETE FROM [test_temp]
 
 BeforeExecute
@@ -97,9 +83,4 @@ FROM
 ORDER BY
 	[t1].[ID]
 LIMIT 2 OFFSET @skip
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [test_temp]
 

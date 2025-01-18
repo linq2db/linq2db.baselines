@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Update_Enum_Table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [PR_1598_Update_Enum_Table]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[Age]    INTEGER           NULL,
-	[Gender] NVarChar(6)       NULL,
-
-	CONSTRAINT [PK_PR_1598_Update_Enum_Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
@@ -120,9 +102,4 @@ FROM
 WHERE
 	[t].[Id] = 1
 LIMIT 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Update_Enum_Table]
 

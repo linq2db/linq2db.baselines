@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [GuidMapping]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [GuidMapping]
-(
-	[BlobGuid1] Guid                 NULL,
-	[BlobGuid2] Binary               NULL,
-	[BlobGuid3] Guid                 NULL,
-	[BlobGuid4] UNIQUEIDENTIFIER     NULL,
-	[TextGuid1] TEXT                 NULL,
-	[TextGuid2] VarChar              NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid1]
@@ -474,9 +456,4 @@ SELECT
 	[t1].[TextGuid2]
 FROM
 	[GuidMapping] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [GuidMapping]
 

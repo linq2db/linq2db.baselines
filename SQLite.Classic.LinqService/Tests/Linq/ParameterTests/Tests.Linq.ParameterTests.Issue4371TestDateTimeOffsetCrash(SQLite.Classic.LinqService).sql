@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4371Table]
-(
-	[ColumnDT]  VarChar     NULL,
-	[ColumnDTO] VarChar     NULL,
-	[ColumnTS]  VarChar     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @ColumnDT VarChar -- AnsiString
 SET     @ColumnDT = NULL
 DECLARE @ColumnDTO VarChar(33) -- AnsiString
@@ -46,9 +31,4 @@ FROM
 	[Issue4371Table] [r]
 WHERE
 	[r].[ColumnDTO] = @dto
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
 

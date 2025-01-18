@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [InsertIssueTest]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InsertIssueTest]
-(
-	[ID]          SmallInt NOT NULL,
-	[intDataType] INTEGER      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -80,9 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InsertIssueTest]
 

@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue4671Entity]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4671Entity]
-(
-	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value] INTEGER  NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[Issue4671EntityTMP]
 (
 	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -69,9 +55,4 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[Issue4671EntityTMP]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4671Entity]
 

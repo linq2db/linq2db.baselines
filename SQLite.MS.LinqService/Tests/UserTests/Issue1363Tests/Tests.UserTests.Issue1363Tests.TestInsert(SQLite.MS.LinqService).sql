@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1363]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1363]
-(
-	[required_field] Guid NOT NULL,
-	[optional_field] Guid     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @id  -- Guid
 SET     @id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
@@ -73,9 +59,4 @@ FROM
 WHERE
 	[t1].[required_field] = @id2
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1363]
 

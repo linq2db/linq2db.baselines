@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [TestFolder]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TestFolder]
-(
-	[Id]       Guid          NOT NULL,
-	[Label]    NVarChar(255)     NULL,
-	[ParentId] Guid              NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [CTE]
 (
 	[Level_1],
@@ -63,9 +48,4 @@ SELECT
 	[t2].[Entity_ParentId]
 FROM
 	[CTE] [t2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TestFolder]
 

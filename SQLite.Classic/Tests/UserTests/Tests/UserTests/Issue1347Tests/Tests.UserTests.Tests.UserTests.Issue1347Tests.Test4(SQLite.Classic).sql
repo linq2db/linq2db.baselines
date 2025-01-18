@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -64,14 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

@@ -1,63 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Invoice]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Invoice]
-(
-	[InvoiceID]                BigInt  NOT NULL,
-	[InvoiceReferenceNumberID] BigInt      NULL,
-	[SettlementTotalOnIssue]   Decimal     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [Invoice]
-(
-	[InvoiceID],
-	[InvoiceReferenceNumberID],
-	[SettlementTotalOnIssue]
-)
-VALUES
-(1,10,3)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InvoiceLineItem]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InvoiceLineItem]
-(
-	[InvoiceLineItemID]     BigInt  NOT NULL,
-	[BillingAmountOverride] Decimal NOT NULL,
-	[Suppressed]            Bit     NOT NULL,
-	[OwningInvoiceID]       BigInt  NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InvoiceReferenceNumber]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InvoiceReferenceNumber]
-(
-	[InvoiceReferenceNumberID] BigInt        NOT NULL,
-	[ReferenceNumber]          NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -127,19 +70,4 @@ FROM
 			GROUP BY
 				[g_1].[InvoiceID]
 		) [ia] ON [ia].[InvoiceID] = [i].[InvoiceID]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InvoiceReferenceNumber]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InvoiceLineItem]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Invoice]
 

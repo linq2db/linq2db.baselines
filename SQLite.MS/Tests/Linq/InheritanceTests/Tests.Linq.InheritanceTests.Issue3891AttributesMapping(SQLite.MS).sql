@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Base]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Base]
-(
-	[Id]           INTEGER       NOT NULL,
-	[Type]         INTEGER       NOT NULL,
-	[Name_First]   NVarChar(255)     NULL,
-	[Name_Second]  NVarChar(255)     NULL,
-	[Test_ChildId] INTEGER       NOT NULL,
-
-	CONSTRAINT [PK_Base] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Type  -- Int32
@@ -95,9 +76,4 @@ SELECT
 FROM
 	[Base] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Base]
 

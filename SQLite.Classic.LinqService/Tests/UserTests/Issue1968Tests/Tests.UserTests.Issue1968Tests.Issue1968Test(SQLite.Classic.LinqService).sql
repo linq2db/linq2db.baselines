@@ -1,56 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [University]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [University]
-(
-	[Id]       INTEGER       NOT NULL,
-	[Name]     NVarChar(255)     NULL,
-	[Location] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Faculty]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Faculty]
-(
-	[Id]           INTEGER       NOT NULL,
-	[Code]         NVarChar(255)     NULL,
-	[FacultyName]  NVarChar(255)     NULL,
-	[Direction]    NVarChar(255)     NULL,
-	[Grant]        INTEGER       NOT NULL,
-	[Contract]     INTEGER       NOT NULL,
-	[UniversityId] INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Subject]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Subject]
-(
-	[SubjectId]     INTEGER       NOT NULL,
-	[FirstSubject]  NVarChar(255)     NULL,
-	[SecondSubject] NVarChar(255)     NULL,
-	[ThirdSubject]  NVarChar(255)     NULL,
-	[FacultyId]     INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
@@ -195,19 +144,4 @@ SELECT
 	[t1].[Location]
 FROM
 	[University] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Subject]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Faculty]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [University]
 

@@ -1,76 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue913Test]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue913Test]
-(
-	[InstrumentID]  INTEGER  NOT NULL,
-	[TradingStatus] NChar(1)     NULL,
-
-	CONSTRAINT [PK_Issue913Test] PRIMARY KEY ([InstrumentID])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @InstrumentID  -- Int32
-SET     @InstrumentID = 1
-DECLARE @TradingStatus NChar -- StringFixedLength
-SET     @TradingStatus = NULL
-
-INSERT INTO [Issue913Test]
-(
-	[InstrumentID],
-	[TradingStatus]
-)
-VALUES
-(
-	@InstrumentID,
-	@TradingStatus
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @InstrumentID  -- Int32
-SET     @InstrumentID = 2
-DECLARE @TradingStatus NChar(1) -- StringFixedLength
-SET     @TradingStatus = 'A'
-
-INSERT INTO [Issue913Test]
-(
-	[InstrumentID],
-	[TradingStatus]
-)
-VALUES
-(
-	@InstrumentID,
-	@TradingStatus
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @InstrumentID  -- Int32
-SET     @InstrumentID = 3
-DECLARE @TradingStatus NChar(1) -- StringFixedLength
-SET     @TradingStatus = 'D'
-
-INSERT INTO [Issue913Test]
-(
-	[InstrumentID],
-	[TradingStatus]
-)
-VALUES
-(
-	@InstrumentID,
-	@TradingStatus
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[g_2].[cond],
 	COUNT(*)
@@ -86,9 +16,4 @@ FROM
 	) [g_2]
 GROUP BY
 	[g_2].[cond]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue913Test]
 

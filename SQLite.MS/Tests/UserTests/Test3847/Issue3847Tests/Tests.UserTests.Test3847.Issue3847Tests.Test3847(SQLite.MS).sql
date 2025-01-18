@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Test3847_OutfeedTransportOrder]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Test3847_OutfeedTransportOrder]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[outfeed].[Id],
 	(
@@ -49,9 +36,4 @@ SELECT
 	)
 FROM
 	[Test3847_OutfeedTransportOrder] [outfeed]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Test3847_OutfeedTransportOrder]
 

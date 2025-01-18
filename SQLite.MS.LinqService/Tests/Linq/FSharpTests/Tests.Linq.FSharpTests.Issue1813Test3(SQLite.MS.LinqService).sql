@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Names]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Names]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Addresses]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Addresses]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -93,14 +65,4 @@ FROM
 		LEFT JOIN [Addresses] [arg2] ON [tupledArg].[Id] = [arg2].[Id]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Addresses]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Names]
 

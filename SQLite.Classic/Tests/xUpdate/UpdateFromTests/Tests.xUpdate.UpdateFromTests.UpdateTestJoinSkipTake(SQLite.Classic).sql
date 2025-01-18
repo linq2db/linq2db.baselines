@@ -1,75 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UpdatedEntities]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [UpdatedEntities]
-(
-	[id]         INTEGER NOT NULL,
-	[Value1]     INTEGER NOT NULL,
-	[Value2]     INTEGER NOT NULL,
-	[Value3]     INTEGER NOT NULL,
-	[RelationId] INTEGER     NULL,
-
-	CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY ([id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-INSERT INTO [UpdatedEntities]
-(
-	[id],
-	[Value1],
-	[Value2],
-	[Value3],
-	[RelationId]
-)
-VALUES
-(0,1,1,3,0),
-(1,11,12,13,1),
-(2,21,22,23,2),
-(3,31,32,33,3)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [NewEntities]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [NewEntities]
-(
-	[id]     INTEGER NOT NULL,
-	[Value1] INTEGER NOT NULL,
-	[Value2] INTEGER NOT NULL,
-	[Value3] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_NewEntities] PRIMARY KEY ([id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-INSERT INTO [NewEntities]
-(
-	[id],
-	[Value1],
-	[Value2],
-	[Value3]
-)
-VALUES
-(0,0,0,0),
-(1,1,1,1),
-(2,2,2,2),
-(3,3,3,3)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @int1  -- Int32
 SET     @int1 = 11
 DECLARE @int2  -- Int32
@@ -107,14 +37,4 @@ SELECT
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [NewEntities]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UpdatedEntities]
 

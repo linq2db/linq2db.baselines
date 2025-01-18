@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [O1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [O1]
-(
-	[DocEntry]    INTEGER       NOT NULL,
-	[BplId]       INTEGER       NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [O2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [O2]
-(
-	[DocEntry]    INTEGER       NOT NULL,
-	[BplId]       INTEGER       NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [O3]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [O3]
-(
-	[DocEntry]    INTEGER       NOT NULL,
-	[BplId]       INTEGER       NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[doSap].[DocEntry],
 	CASE
@@ -78,19 +30,4 @@ SELECT
 	CAST('Manual/Externo' AS NVarChar(255))
 FROM
 	[O3] [doSap_2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [O3]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [O2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [O1]
 

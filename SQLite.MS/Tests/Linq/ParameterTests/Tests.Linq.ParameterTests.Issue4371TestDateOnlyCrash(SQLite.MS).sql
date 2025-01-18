@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4371Table2]
-(
-	[ColumnDO] VarChar     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @ColumnDO VarChar -- AnsiString
 SET     @ColumnDO = '0160-05-06'
 
@@ -36,9 +23,4 @@ FROM
 	[Issue4371Table2] [r]
 WHERE
 	[r].[ColumnDO] = @dt
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table2]
 

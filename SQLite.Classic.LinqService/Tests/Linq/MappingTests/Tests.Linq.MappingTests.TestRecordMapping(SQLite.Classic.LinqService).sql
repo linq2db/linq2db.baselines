@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Record]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Record]
-(
-	[Id]        INTEGER       NOT NULL,
-	[BaseValue] NVarChar(255)     NULL,
-	[Value]     NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Record] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @BaseValue NVarChar(7) -- String
@@ -82,9 +65,4 @@ FROM
 	[Record] [r]
 ORDER BY
 	[r].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Record]
 

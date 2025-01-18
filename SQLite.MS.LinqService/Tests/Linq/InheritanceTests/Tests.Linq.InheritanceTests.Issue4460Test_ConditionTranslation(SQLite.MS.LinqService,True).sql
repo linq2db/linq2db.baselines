@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Base]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Base]
-(
-	[Code]   NVarChar(255)     NULL,
-	[Id]     INTEGER       NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[IsMale] Bit               NULL,
-	[Age]    INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id  -- Int32
@@ -86,9 +69,4 @@ WHERE
 	END
 ORDER BY
 	[e].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Base]
 

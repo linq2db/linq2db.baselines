@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [GlobalTaskDTO]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [WMS_GlobalTaskA]
-(
-	[Id]                        Guid NOT NULL,
-	[ResourceID]                Guid NOT NULL,
-	[StorageShelfSourceID]      Guid     NULL,
-	[RPSourceID]                Guid     NULL,
-	[StorageShelfDestinationID] Guid     NULL,
-	[RPDestinationID]           Guid     NULL,
-	[RPOrigDestinationID]       Guid     NULL,
-	[OutfeedTransportOrderID]   Guid     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [WmsResourcePointDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [StorageShelfDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [StorageShelfDTO]
-(
-	[Id] Guid NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id]
 		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id]
 		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [StorageShelfDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

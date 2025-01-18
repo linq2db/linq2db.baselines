@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [HierarchyTree]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [HierarchyTree]
-(
-	[Id]       INTEGER NOT NULL,
-	[ParentId] INTEGER     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [HierarchyTree]
-(
-	[Id],
-	[ParentId]
-)
-VALUES
-(1,NULL),
-(2,NULL),
-(10,1),
-(11,1),
-(20,2),
-(22,2),
-(100,10),
-(101,10),
-(102,10),
-(110,11),
-(111,11),
-(112,11),
-(200,20),
-(201,20),
-(202,20),
-(210,21),
-(211,21),
-(212,21)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -85,9 +43,4 @@ FROM
 	[hierarchyDown] [t4]
 ORDER BY
 	[t4].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [HierarchyTree]
 

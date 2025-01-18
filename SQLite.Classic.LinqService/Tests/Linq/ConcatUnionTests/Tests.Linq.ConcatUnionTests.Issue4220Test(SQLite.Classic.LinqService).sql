@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ConcreteA]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ConcreteA]
-(
-	[Id]    INTEGER       NOT NULL,
-	[AOnly] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcreteA] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ConcreteB]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ConcreteB]
-(
-	[Id]    INTEGER       NOT NULL,
-	[BOnly] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcreteB] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(6) -- String
@@ -84,14 +52,4 @@ SELECT
 	[e_1].[BOnly]
 FROM
 	[ConcreteB] [e_1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ConcreteB]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ConcreteA]
 

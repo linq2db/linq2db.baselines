@@ -1,35 +1,4 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [SampleClass]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [SampleClass]
-(
-	[Id]        INTEGER      NOT NULL,
-	[KeyValue1] NVarChar(50) NOT NULL,
-	[Value1]    NVarChar(50)     NULL,
-
-	CONSTRAINT [PK_SampleClass] PRIMARY KEY ([Id], [KeyValue1])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [SampleClassWithIdentity]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [SampleClassWithIdentity]
-(
-	[Id]     INTEGER       NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value1] NVarChar(50)      NULL
-)
-
-BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -153,14 +122,4 @@ SELECT
 	[t1].[Value1]
 FROM
 	[SampleClass] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [SampleClassWithIdentity]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [SampleClass]
 

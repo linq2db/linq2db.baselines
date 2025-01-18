@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [testparams]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [testparams]
-(
-	[col1]    INTEGER NOT NULL,
-	[Column1] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @A123456789b123456789c123456789d123456789e123456789  -- Int32
 SET     @A123456789b123456789c123456789d123456789e123456789 = 2
 
@@ -23,9 +9,4 @@ SET
 	[col1] = @A123456789b123456789c123456789d123456789e123456789
 WHERE
 	[testparams].[Column1] = 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [testparams]
 

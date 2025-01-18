@@ -1,18 +1,4 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TestClass]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TestClass]
-(
-	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
-)
-
-BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
@@ -61,9 +47,4 @@ FROM
 			1 as [c1]
 	) [t1]
 		LEFT JOIN [TestClass] [d] ON [d].[Id] = 0
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TestClass]
 

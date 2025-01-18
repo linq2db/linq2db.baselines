@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Stone]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Stone]
-(
-	[Id]           INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Name]         NVarChar(255)  NOT NULL,
-	[Enabled]      Bit                NULL,
-	[ImageFullUrl] NVarChar(255)      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled  -- Boolean
@@ -113,9 +97,4 @@ FROM
 				[s].[Enabled] = 1 AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
 				Length([s].[ImageFullUrl]) > 0
 		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] <= 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Stone]
 

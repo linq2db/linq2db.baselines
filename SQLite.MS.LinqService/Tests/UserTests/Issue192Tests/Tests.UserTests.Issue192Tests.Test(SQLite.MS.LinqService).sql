@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TypeConvertTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] Char         NOT NULL,
-	[GuidValue] VarChar(50)      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Name NVarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -248,9 +233,4 @@ FROM
 WHERE
 	[t1].[GuidValue] = @GuidValue
 LIMIT 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TypeConvertTable]
 

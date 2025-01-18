@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Names]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Names]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Addresses]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Addresses]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -110,14 +82,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Addresses]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Names]
 

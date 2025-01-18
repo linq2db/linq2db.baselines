@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Order]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Order]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SubOrder]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SubOrder]
-(
-	[Id]      INTEGER NOT NULL,
-	[OrderId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SubOrderDetail]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SubOrderDetail]
-(
-	[Id]         INTEGER       NOT NULL,
-	[SubOrderId] INTEGER       NOT NULL,
-	[Code]       NVarChar(255)     NULL,
-	[Date]       DateTime2     NOT NULL,
-	[IsActive]   Bit           NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -135,19 +90,4 @@ WHERE
 ORDER BY
 	[x].[Id]
 LIMIT @take OFFSET @skip
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SubOrderDetail]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SubOrder]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Order]
 
