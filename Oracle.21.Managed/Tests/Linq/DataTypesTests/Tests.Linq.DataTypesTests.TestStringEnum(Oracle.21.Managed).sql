@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "StringEnumTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "StringEnumTable"
-		(
-			"Id"             Int        NOT NULL,
-			"Column"         VarChar(8) NOT NULL,
-			"ColumnNullable" VarChar(8)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,'val=1',NULL)
-	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,'value=2','value=33')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Varchar2(7) -- String
 SET     @Column_1 = 'value=2'
 DECLARE @ColumnNullable Varchar2(8) -- String
@@ -178,16 +139,4 @@ FROM
 	"StringEnumTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "StringEnumTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

@@ -27,48 +27,7 @@ SET     @p = 02/29/2020 17:54:55.123123 +00:40
 SELECT :p FROM SYS.DUAL
 
 BeforeExecute
---  Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "OracleBulkCopyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
---  Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "OracleBulkCopyTable"
-		(
-			ID Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
 INSERT BULK "OracleBulkCopyTable"(ID)
-
-BeforeExecute
---  Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "OracleBulkCopyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 
 BeforeExecute
 --  Oracle.Managed Oracle12
