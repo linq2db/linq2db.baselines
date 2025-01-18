@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[InheritanceFilter]', N'U') IS NOT NULL)
-	DROP TABLE [InheritanceFilter]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[InheritanceFilter]', N'U') IS NULL)
-	CREATE TABLE [InheritanceFilter]
-	(
-		[Id]                Int NOT NULL,
-		[Code]              Int NOT NULL,
-		[Child1Field]       Int     NULL,
-		[Child2Field]       Int     NULL,
-		[Grandchild11Field] Int     NULL,
-		[Grandchild12Field] Int     NULL,
-		[Grandchild21Field] Int     NULL,
-		[Grandchild22Field] Int     NULL,
-
-		CONSTRAINT [PK_InheritanceFilter] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2012
-
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -58,10 +34,4 @@ SELECT
 	[t1].[Grandchild22Field]
 FROM
 	[InheritanceFilter] [t1]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[InheritanceFilter]', N'U') IS NOT NULL)
-	DROP TABLE [InheritanceFilter]
 

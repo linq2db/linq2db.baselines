@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
-	DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
-	CREATE TABLE [CreateTableTypes]
-	(
-		[Id]              Int NOT NULL,
-		[IntEnumNullable] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntEnumNullable Int -- Int32
@@ -60,10 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
-	DROP TABLE [CreateTableTypes]
 

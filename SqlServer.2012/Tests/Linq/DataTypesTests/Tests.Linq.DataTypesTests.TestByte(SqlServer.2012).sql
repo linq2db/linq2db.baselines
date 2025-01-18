@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-
-IF (OBJECT_ID(N'[ByteTable]', N'U') IS NOT NULL)
-	DROP TABLE [ByteTable]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[ByteTable]', N'U') IS NULL)
-	CREATE TABLE [ByteTable]
-	(
-		[Id]             Int     NOT NULL,
-		[Column]         TinyInt NOT NULL,
-		[ColumnNullable] TinyInt     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- SqlServer.2012
 DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
@@ -172,10 +142,4 @@ FROM
 	[ByteTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[ByteTable]', N'U') IS NOT NULL)
-	DROP TABLE [ByteTable]
 

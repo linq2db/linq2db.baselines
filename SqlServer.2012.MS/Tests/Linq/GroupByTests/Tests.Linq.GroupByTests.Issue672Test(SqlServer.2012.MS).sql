@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NOT NULL)
-	DROP TABLE [Stone]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NULL)
-	CREATE TABLE [Stone]
-	(
-		[Id]           Int             NOT NULL IDENTITY,
-		[Name]         NVarChar(4000)  NOT NULL,
-		[Enabled]      Bit                 NULL,
-		[ImageFullUrl] NVarChar(4000)      NULL,
-
-		CONSTRAINT [PK_Stone] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -118,10 +98,4 @@ FROM
 				Len([s].[ImageFullUrl]) > 0 AND
 				[sG_1].[Name] = [s].[Name]
 		) [t1]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NOT NULL)
-	DROP TABLE [Stone]
 

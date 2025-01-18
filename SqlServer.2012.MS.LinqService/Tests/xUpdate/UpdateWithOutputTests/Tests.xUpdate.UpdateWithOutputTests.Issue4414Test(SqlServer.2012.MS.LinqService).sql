@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4193Person]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4193Person]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4193Person]', N'U') IS NULL)
-	CREATE TABLE [Issue4193Person]
-	(
-		[Name]       NVarChar(4000) NOT NULL,
-		[EmployeeId] Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'foo'
-DECLARE @EmployeeId Int -- Int32
-SET     @EmployeeId = 1
-
-INSERT INTO [Issue4193Person]
-(
-	[Name],
-	[EmployeeId]
-)
-VALUES
-(
-	@Name,
-	@EmployeeId
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -59,10 +25,4 @@ FROM
 	) [t1]
 WHERE
 	[u].[Name] = [t1].[Name] AND ([u].[EmployeeId] = [t1].[EmployeeId] OR [u].[EmployeeId] IS NULL AND [t1].[EmployeeId] IS NULL)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4193Person]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4193Person]
 

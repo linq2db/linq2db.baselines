@@ -1,68 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4135Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4135Table]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4135Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4135Table]
-	(
-		[Id]          Int            NOT NULL,
-		[Name]        NVarChar(4000)     NULL,
-		[NeedsUpdate] Bit            NOT NULL,
-
-		CONSTRAINT [PK_Issue4135Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'name1'
-DECLARE @NeedsUpdate Bit -- Boolean
-SET     @NeedsUpdate = 1
-
-INSERT INTO [Issue4135Table]
-(
-	[Id],
-	[Name],
-	[NeedsUpdate]
-)
-VALUES
-(
-	@Id,
-	@Name,
-	@NeedsUpdate
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'name2'
-DECLARE @NeedsUpdate Bit -- Boolean
-SET     @NeedsUpdate = 0
-
-INSERT INTO [Issue4135Table]
-(
-	[Id],
-	[Name],
-	[NeedsUpdate]
-)
-VALUES
-(
-	@Id,
-	@Name,
-	@NeedsUpdate
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 4
 
@@ -88,10 +25,4 @@ FROM
 	) [t1]
 WHERE
 	[u].[Id] = [t1].[Id]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[Issue4135Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4135Table]
 
