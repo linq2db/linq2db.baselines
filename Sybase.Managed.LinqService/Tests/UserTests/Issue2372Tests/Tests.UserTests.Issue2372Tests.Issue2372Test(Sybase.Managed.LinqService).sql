@@ -6,26 +6,6 @@ IF (OBJECT_ID(N'InventoryResource') IS NOT NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InventoryResource') IS NOT NULL)
-	DROP TABLE [InventoryResource]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InventoryResource') IS NULL)
-	EXECUTE('
-		CREATE TABLE [InventoryResource]
-		(
-			[Id]     VARCHAR(36)    NOT NULL,
-			[Status] NVarChar(5461) NOT NULL,
-
-			CONSTRAINT [PK_InventoryResource] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Char(36) -- AnsiStringFixedLength
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Status UniVarChar(4) -- String
@@ -41,10 +21,4 @@ VALUES
 	@Id,
 	@Status
 )
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InventoryResource') IS NOT NULL)
-	DROP TABLE [InventoryResource]
 

@@ -1,96 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'InsertIssueTest') IS NOT NULL)
-	DROP TABLE [InsertIssueTest]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InsertIssueTest') IS NULL)
-	EXECUTE('
-		CREATE TABLE [InsertIssueTest]
-		(
-			[ID]          SmallInt NOT NULL,
-			[intDataType] Int          NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 0
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -142,10 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InsertIssueTest') IS NOT NULL)
-	DROP TABLE [InsertIssueTest]
 

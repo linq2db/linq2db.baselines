@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'StringEnumTable') IS NOT NULL)
-	DROP TABLE [StringEnumTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'StringEnumTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [StringEnumTable]
-		(
-			[Id]             Int         NOT NULL,
-			[Column]         NVarChar(8) NOT NULL,
-			[ColumnNullable] NVarChar(8)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [StringEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,'val=1',NULL UNION ALL
-SELECT 2,'value=2','value=33'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Column UniVarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable UniVarChar(8) -- String
@@ -181,10 +150,4 @@ FROM
 	[StringEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'StringEnumTable') IS NOT NULL)
-	DROP TABLE [StringEnumTable]
 

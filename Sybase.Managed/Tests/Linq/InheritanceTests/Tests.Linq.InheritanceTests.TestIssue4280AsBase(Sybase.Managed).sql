@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4280') IS NOT NULL)
-	DROP TABLE [Issue4280]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4280') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue4280]
-		(
-			[Id]           Int           NOT NULL,
-			[SerialNumber] NVarChar(255)     NULL,
-			[DeviceType]   NVarChar(255)     NULL,
-			[Location]     NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_Issue4280] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber UniVarChar(7) -- String
@@ -130,10 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4280') IS NOT NULL)
-	DROP TABLE [Issue4280]
 

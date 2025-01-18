@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'GlobalTaskDTO') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'GlobalTaskDTO') IS NULL)
-	EXECUTE('
-		CREATE TABLE [GlobalTaskDTO]
-		(
-			[Id]                        VARCHAR(36) NOT NULL,
-			[ResourceID]                VARCHAR(36) NOT NULL,
-			[StorageShelfSourceID]      VARCHAR(36)     NULL,
-			[RPSourceID]                VARCHAR(36)     NULL,
-			[StorageShelfDestinationID] VARCHAR(36)     NULL,
-			[RPDestinationID]           VARCHAR(36)     NULL,
-			[RPOrigDestinationID]       VARCHAR(36)     NULL,
-			[OutfeedTransportOrderID]   VARCHAR(36)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'WMS_GlobalTaskA') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'WMS_GlobalTaskA') IS NULL)
-	EXECUTE('
-		CREATE TABLE [WMS_GlobalTaskA]
-		(
-			[Id]                        VARCHAR(36) NOT NULL,
-			[ResourceID]                VARCHAR(36) NOT NULL,
-			[StorageShelfSourceID]      VARCHAR(36)     NULL,
-			[RPSourceID]                VARCHAR(36)     NULL,
-			[StorageShelfDestinationID] VARCHAR(36)     NULL,
-			[RPDestinationID]           VARCHAR(36)     NULL,
-			[RPOrigDestinationID]       VARCHAR(36)     NULL,
-			[OutfeedTransportOrderID]   VARCHAR(36)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -72,16 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'WMS_GlobalTaskA') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'GlobalTaskDTO') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
 

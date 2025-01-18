@@ -1,26 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4715Table') IS NOT NULL)
-	DROP TABLE [Issue4715Table]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4715Table') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue4715Table]
-		(
-			[Id]    Int NOT NULL,
-			[Prop1] Int NOT NULL,
-			[Prop2] Int NOT NULL,
-			[Prop3] Int NOT NULL,
-			[Prop4] Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer -- Int32
@@ -58,10 +37,4 @@ SELECT TOP 2
 	[t1].[Prop3]
 FROM
 	[Issue4715Table] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4715Table') IS NOT NULL)
-	DROP TABLE [Issue4715Table]
 

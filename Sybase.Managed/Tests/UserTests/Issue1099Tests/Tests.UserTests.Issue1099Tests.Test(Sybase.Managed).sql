@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'BackgroundTask') IS NOT NULL)
-	DROP TABLE [BackgroundTask]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'BackgroundTask') IS NULL)
-	EXECUTE('
-		CREATE TABLE [BackgroundTask]
-		(
-			[ID]               Int     NULL,
-			[DurationID]       Int NOT NULL,
-			[DurationInterval] Int NOT NULL,
-			[PersonID]         Int     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -58,10 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'BackgroundTask') IS NOT NULL)
-	DROP TABLE [BackgroundTask]
 

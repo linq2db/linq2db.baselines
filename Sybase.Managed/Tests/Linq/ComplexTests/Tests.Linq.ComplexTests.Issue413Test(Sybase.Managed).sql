@@ -1,63 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T1') IS NOT NULL)
-	DROP TABLE [T1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T1') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T1]
-		(
-			[InstrumentId]         Int           NOT NULL,
-			[InstrumentCode]       NVarChar(255)     NULL,
-			[CreateDate]           DateTime      NOT NULL,
-			[SourceInstrumentCode] NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T2') IS NOT NULL)
-	DROP TABLE [T2]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T2') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T2]
-		(
-			[InstrumentId] Int NOT NULL,
-			[IndexId]      Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T3') IS NOT NULL)
-	DROP TABLE [T3]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T3') IS NULL)
-	EXECUTE('
-		CREATE TABLE [T3]
-		(
-			[InstrumentId] Int NOT NULL,
-			[IndexId]      Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -222,22 +164,4 @@ FROM
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T3') IS NOT NULL)
-	DROP TABLE [T3]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T2') IS NOT NULL)
-	DROP TABLE [T2]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'T1') IS NOT NULL)
-	DROP TABLE [T1]
 

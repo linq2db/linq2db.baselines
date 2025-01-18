@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue3761Table') IS NOT NULL)
-	DROP TABLE [Issue3761Table]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3761Table') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3761Table]
-		(
-			[LETO]     Int      NOT NULL,
-			[STEVILKA] Int      NOT NULL,
-			[DATUM]    DateTime     NULL,
-			[SKUPAJ]   DECIMAL      NULL,
-
-			CONSTRAINT [PK_Issue3761Table] PRIMARY KEY CLUSTERED ([LETO], [STEVILKA])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Year_1],
 	[t1].[Month_1],
@@ -72,10 +50,4 @@ FROM
 GROUP BY
 	[t2].[Year_1],
 	[t2].[Month_1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3761Table') IS NOT NULL)
-	DROP TABLE [Issue3761Table]
 

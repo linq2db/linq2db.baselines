@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'IntEnumTable') IS NOT NULL)
-	DROP TABLE [IntEnumTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'IntEnumTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [IntEnumTable]
-		(
-			[Id]             Int NOT NULL,
-			[Column]         Int NOT NULL,
-			[ColumnNullable] Int     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [IntEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,2,3
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -181,10 +150,4 @@ FROM
 	[IntEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'IntEnumTable') IS NOT NULL)
-	DROP TABLE [IntEnumTable]
 

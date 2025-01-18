@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'test_insert_or_replace') IS NOT NULL)
-	DROP TABLE [test_insert_or_replace]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'test_insert_or_replace') IS NULL)
-	EXECUTE('
-		CREATE TABLE [test_insert_or_replace]
-		(
-			[id]         Int           NOT NULL,
-			[name]       NVarChar(255)     NULL,
-			[created_by] NVarChar(255)     NULL,
-			[updated_by] NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy UniVarChar -- String
@@ -119,10 +97,4 @@ SELECT TOP 2
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'test_insert_or_replace') IS NOT NULL)
-	DROP TABLE [test_insert_or_replace]
 

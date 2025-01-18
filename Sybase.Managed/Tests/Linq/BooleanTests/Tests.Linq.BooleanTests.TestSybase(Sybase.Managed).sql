@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SybaseBooleanTable') IS NOT NULL)
-	DROP TABLE [SybaseBooleanTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SybaseBooleanTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [SybaseBooleanTable]
-		(
-			[Id]       Int            NOT NULL,
-			[Boolean]  Bit            NOT NULL,
-			[Int32]    Int            NOT NULL,
-			[Int32N]   Int                NULL,
-			[Decimal]  DECIMAL(18, 2) NOT NULL,
-			[DecimalN] DECIMAL(18, 2)     NULL,
-			[Double]   Float          NOT NULL,
-			[DoubleN]  Float              NULL,
-
-			CONSTRAINT [PK_SybaseBooleanTable] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -2309,10 +2283,4 @@ SELECT
 	[t1].[DoubleN]
 FROM
 	[SybaseBooleanTable] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SybaseBooleanTable') IS NOT NULL)
-	DROP TABLE [SybaseBooleanTable]
 

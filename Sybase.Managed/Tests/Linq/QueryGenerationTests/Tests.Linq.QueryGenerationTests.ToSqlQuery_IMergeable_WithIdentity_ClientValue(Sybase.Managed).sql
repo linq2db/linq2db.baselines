@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'TableWithIdentity') IS NOT NULL)
-	DROP TABLE [TableWithIdentity]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TableWithIdentity') IS NULL)
-	EXECUTE('
-		CREATE TABLE [TableWithIdentity]
-		(
-			[Id]    Int IDENTITY NOT NULL,
-			[Value] Int          NOT NULL,
-
-			CONSTRAINT [PK_TableWithIdentity] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]
 USING (
@@ -48,10 +28,4 @@ VALUES
 	321
 )
 SET IDENTITY_INSERT [TableWithIdentity] OFF
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TableWithIdentity') IS NOT NULL)
-	DROP TABLE [TableWithIdentity]
 

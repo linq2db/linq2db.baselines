@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'CacheTestTable') IS NOT NULL)
-	DROP TABLE [CacheTestTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'CacheTestTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [CacheTestTable]
-		(
-			[Id]    Int NOT NULL,
-			[Value] Int NOT NULL,
-
-			CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 MERGE INTO [CacheTestTable] [Target]
 USING (
 	SELECT 1 AS [source_Id], 1 AS [source_Value]
@@ -103,10 +83,4 @@ FROM
 	[CacheTestTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'CacheTestTable') IS NOT NULL)
-	DROP TABLE [CacheTestTable]
 

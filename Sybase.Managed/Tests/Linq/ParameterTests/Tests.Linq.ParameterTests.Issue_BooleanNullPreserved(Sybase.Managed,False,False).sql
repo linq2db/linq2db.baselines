@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'TestBool') IS NOT NULL)
-	DROP TABLE [TestBool]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TestBool') IS NULL)
-	EXECUTE('
-		CREATE TABLE [TestBool]
-		(
-			[Id]    Int NOT NULL,
-			[Value] Bit NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -77,10 +59,4 @@ SELECT TOP 2
 	[t1].[Value]
 FROM
 	[TestBool] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TestBool') IS NOT NULL)
-	DROP TABLE [TestBool]
 

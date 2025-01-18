@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue913Test') IS NOT NULL)
-	DROP TABLE [Issue913Test]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue913Test') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue913Test]
-		(
-			[InstrumentID]  Int      NOT NULL,
-			[TradingStatus] NChar(1)     NULL,
-
-			CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Issue913Test]
-(
-	[InstrumentID],
-	[TradingStatus]
-)
-SELECT 1,NULL UNION ALL
-SELECT 2,'A' UNION ALL
-SELECT 3,'D'
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[g_2].[cond],
 	COUNT(*)
@@ -48,10 +16,4 @@ FROM
 	) [g_2]
 GROUP BY
 	[g_2].[cond]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue913Test') IS NOT NULL)
-	DROP TABLE [Issue913Test]
 
