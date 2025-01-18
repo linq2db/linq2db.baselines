@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[Dto]', N'U') IS NOT NULL)
-	DROP TABLE [Dto]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Dto]', N'U') IS NULL)
-	CREATE TABLE [Dto]
-	(
-		[id]        Int            NOT NULL,
-		[name]      NVarChar(4000)     NULL,
-		[parent_id] Int                NULL,
-		[FullName]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005
-
 WITH [d]
 (
 	[FullName],
@@ -54,10 +36,4 @@ SELECT
 	[t2].[FullName]
 FROM
 	[d] [t2]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Dto]', N'U') IS NOT NULL)
-	DROP TABLE [Dto]
 

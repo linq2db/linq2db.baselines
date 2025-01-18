@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NOT NULL)
-	DROP TABLE [test_insert_or_replace]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NULL)
-	CREATE TABLE [test_insert_or_replace]
-	(
-		[id]         Int            NOT NULL,
-		[name]       NVarChar(4000)     NULL,
-		[created_by] NVarChar(4000)     NULL,
-		[updated_by] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test1'
 DECLARE @UpdatedBy NVarChar(4000) -- String
@@ -113,10 +93,4 @@ SELECT TOP (2)
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[test_insert_or_replace]', N'U') IS NOT NULL)
-	DROP TABLE [test_insert_or_replace]
 

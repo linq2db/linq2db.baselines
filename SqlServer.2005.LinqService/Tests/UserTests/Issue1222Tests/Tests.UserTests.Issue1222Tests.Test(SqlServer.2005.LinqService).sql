@@ -1,52 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-IF (OBJECT_ID(N'[stLinks]', N'U') IS NOT NULL)
-	DROP TABLE [stLinks]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[stLinks]', N'U') IS NULL)
-	CREATE TABLE [stLinks]
-	(
-		[inId]          Int             NOT NULL IDENTITY,
-		[inIdParent]    Int             NOT NULL,
-		[inIdChild]     Int             NOT NULL,
-		[inIdTypeRel]   Int             NOT NULL,
-		[inMaxQuantity] Float               NULL,
-		[inMinQuantity] Float               NULL,
-		[inIdMeasure]   Int                 NULL,
-		[inIdUnit]      Int                 NULL,
-		[State]         Int                 NULL,
-		[dtModified]    DateTime        NOT NULL,
-		[inIdOrgOwner]  Int                 NULL,
-		[dtSynchDate]   DateTime            NULL,
-		[stGUID]        NVarChar(4000)  NOT NULL,
-
-		CONSTRAINT [PK_stLinks] PRIMARY KEY CLUSTERED ([inId])
-	)
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NULL)
-	CREATE TABLE [stVersions]
-	(
-		[inId]     Int  NOT NULL IDENTITY,
-		[inIdMain] Int  NOT NULL,
-
-		CONSTRAINT [PK_stVersions] PRIMARY KEY CLUSTERED ([inId])
-	)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 
@@ -69,16 +22,4 @@ FROM
 			[link_1].[inIdChild] = @parentId
 	) [u_1]
 		INNER JOIN [stVersions] [version_1] ON [u_1].[VersionId] = [version_1].[inId]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[stVersions]', N'U') IS NOT NULL)
-	DROP TABLE [stVersions]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[stLinks]', N'U') IS NOT NULL)
-	DROP TABLE [stLinks]
 

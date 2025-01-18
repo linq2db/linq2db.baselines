@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData_source]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NULL)
-	CREATE TABLE [TableWithData_source]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
@@ -76,10 +59,4 @@ BeforeExecute
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_output]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData_source]
 

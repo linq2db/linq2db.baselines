@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-IF (OBJECT_ID(N'[TestConstantsData]', N'U') IS NOT NULL)
-	DROP TABLE [TestConstantsData]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[TestConstantsData]', N'U') IS NULL)
-	CREATE TABLE [TestConstantsData]
-	(
-		[Id]                Int              NOT NULL,
-		[GuidValue]         UniqueIdentifier NOT NULL,
-		[GuidNullableValue] UniqueIdentifier     NULL,
-		[StringValue]       NVarChar(4000)       NULL,
-
-		CONSTRAINT [PK_TestConstantsData] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [TestConstantsData]
-(
-	[Id],
-	[GuidValue],
-	[GuidNullableValue],
-	[StringValue]
-)
-SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','bc7b663d-0fde-4327-8f92-5d8cc3a11d11',N'StrValue'
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
 SET     @GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -55,10 +23,4 @@ SELECT
 	[t1].[StringValue]
 FROM
 	[TestConstantsData] [t1]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[TestConstantsData]', N'U') IS NOT NULL)
-	DROP TABLE [TestConstantsData]
 

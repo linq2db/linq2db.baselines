@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3927Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3927Table]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3927Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3927Table]
-	(
-		[SerialNumber] Char(11) NOT NULL,
-		[PageNumber]   Int      NOT NULL,
-
-		CONSTRAINT [PK_Issue3927Table] PRIMARY KEY CLUSTERED ([SerialNumber])
-	)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @PageNumber Int -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
@@ -33,10 +15,4 @@ FROM
 	[Issue3927Table] [display]
 WHERE
 	[display].[SerialNumber] = @serialNumber
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3927Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3927Table]
 

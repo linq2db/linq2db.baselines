@@ -1,40 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Test3799Item]', N'U') IS NOT NULL)
-	DROP TABLE [Test3799Item]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Test3799Item]', N'U') IS NULL)
-	CREATE TABLE [Test3799Item]
-	(
-		[Id]       Int            NOT NULL,
-		[ParentId] Int                NULL,
-		[Name]     NVarChar(4000) NOT NULL,
-
-		CONSTRAINT [PK_Test3799Item] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [Test3799Item]
-(
-	[Id],
-	[ParentId],
-	[Name]
-)
-SELECT 1,NULL,N'root' UNION ALL
-SELECT 2,1,N'child 1' UNION ALL
-SELECT 3,2,N'child 1.1' UNION ALL
-SELECT 4,2,N'child 1.2' UNION ALL
-SELECT 5,1,N'child 2' UNION ALL
-SELECT 6,5,N'child 2.1' UNION ALL
-SELECT 7,5,N'child 2.1'
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -79,10 +43,4 @@ FROM
 			WHERE
 				[item_1].[Id] = [a_Children].[ParentId]
 		) [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Test3799Item]', N'U') IS NOT NULL)
-	DROP TABLE [Test3799Item]
 

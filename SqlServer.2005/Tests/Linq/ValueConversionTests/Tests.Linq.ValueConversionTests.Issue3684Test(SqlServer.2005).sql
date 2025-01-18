@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[Issue3684Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3684Table]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3684Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3684Table]
-	(
-		[Id]                   Int       NOT NULL IDENTITY,
-		[FirstAppointmentTime] DateTime      NULL,
-		[PassportDateOfIssue]  DateTime      NULL,
-
-		CONSTRAINT [PK_Issue3684Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2005
-
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
 BeforeExecute
@@ -51,10 +32,4 @@ FROM
 	[Issue3684Table] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3684Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3684Table]
 

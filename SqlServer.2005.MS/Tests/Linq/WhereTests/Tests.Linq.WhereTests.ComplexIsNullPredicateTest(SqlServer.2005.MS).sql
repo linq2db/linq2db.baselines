@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NULL)
-	CREATE TABLE [ComplexPredicate]
-	(
-		[Id]    Int            NOT NULL,
-		[Value] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [ComplexPredicate]
-(
-	[Id],
-	[Value]
-)
-SELECT 1,NULL UNION ALL
-SELECT 2,N'other' UNION ALL
-SELECT 3,N'123' UNION ALL
-SELECT 4,N'test' UNION ALL
-SELECT 5,N'1'
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -56,10 +26,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ComplexPredicate] [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
 
