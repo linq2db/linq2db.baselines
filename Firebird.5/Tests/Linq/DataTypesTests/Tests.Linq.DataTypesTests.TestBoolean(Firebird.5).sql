@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BooleanTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "BooleanTable"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BooleanTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "BooleanTable"
-			(
-				"Id"             Int     NOT NULL,
-				"Column"         BOOLEAN NOT NULL,
-				"ColumnNullable" BOOLEAN
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-INSERT INTO "BooleanTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,TRUE,NULL FROM rdb$database UNION ALL
-SELECT 2,FALSE,TRUE FROM rdb$database
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @Column Boolean
 SET     @Column = FALSE
 DECLARE @ColumnNullable Boolean
@@ -182,12 +147,4 @@ FROM
 	"BooleanTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'BooleanTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "BooleanTable"';
-END
 

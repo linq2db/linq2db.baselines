@@ -2,46 +2,6 @@
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue4671Entity"';
-	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Issue4671Entity"';
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4671Entity"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671Entity')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue4671Entity"
-			(
-				"Id"    Int  NOT NULL,
-				"Value" Int  NOT NULL,
-
-				CONSTRAINT "PK_Issue4671Entity" PRIMARY KEY ("Id")
-			)
-		';
-	IF (NOT EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT '
-			CREATE GENERATOR "GIDENTITY_Issue4671Entity"
-		';
-	IF (NOT EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT '
-			CREATE TRIGGER "TIDENTITY_Issue4671Entity" FOR "Issue4671Entity"
-			BEFORE INSERT POSITION 0
-			AS BEGIN
-				NEW."Id" = GEN_ID("GIDENTITY_Issue4671Entity", 1);
-			END
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671EntityTMP')) THEN
 		EXECUTE STATEMENT '
 			CREATE GLOBAL TEMPORARY TABLE "Issue4671EntityTMP"
@@ -121,17 +81,5 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Issue4671EntityTMP"';
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671EntityTMP')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "Issue4671EntityTMP"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue4671Entity"';
-	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_Issue4671Entity"';
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671Entity')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4671Entity"';
 END
 
