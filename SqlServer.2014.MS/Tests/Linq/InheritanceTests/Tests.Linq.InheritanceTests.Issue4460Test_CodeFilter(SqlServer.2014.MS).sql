@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Base]', N'U') IS NOT NULL)
-	DROP TABLE [Base]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Base]', N'U') IS NULL)
-	CREATE TABLE [Base]
-	(
-		[Code] NVarChar(4000)     NULL,
-		[Id]   Int            NOT NULL,
-		[Name] NVarChar(4000)     NULL,
-		[Age]  Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -72,10 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> N'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Base]', N'U') IS NOT NULL)
-	DROP TABLE [Base]
 

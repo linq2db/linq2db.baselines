@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[Issue3360WithEnum]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3360WithEnum]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue3360WithEnum]', N'U') IS NULL)
-	CREATE TABLE [Issue3360WithEnum]
-	(
-		[Id]  Int         NOT NULL,
-		[Str] VarChar(50) NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014
-
 WITH [cte] ([Id], [Str])
 AS
 (
@@ -38,10 +22,4 @@ SELECT
 	[t2].[Str]
 FROM
 	[cte] [t2]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue3360WithEnum]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3360WithEnum]
 

@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[Issue4671Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4671Entity]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4671Entity]', N'U') IS NULL)
-	CREATE TABLE [Issue4671Entity]
-	(
-		[Id]    Int  NOT NULL IDENTITY,
-		[Value] Int  NOT NULL,
-
-		CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -74,10 +56,4 @@ BeforeExecute
 
 IF (OBJECT_ID(N'[tempdb]..[#Issue4671EntityTMP]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#Issue4671EntityTMP]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4671Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4671Entity]
 

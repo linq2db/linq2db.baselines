@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NOT NULL)
-	DROP TABLE [dbo].[Orders]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NULL)
-	CREATE TABLE [dbo].[Orders]
-	(
-		[Id]   Int             NOT NULL IDENTITY,
-		[Name] NVarChar(4000)  NOT NULL,
-
-		CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NOT NULL)
-	DROP TABLE [dbo].[OrderItems]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NULL)
-	CREATE TABLE [dbo].[OrderItems]
-	(
-		[Id]      Int             NOT NULL IDENTITY,
-		[OrderId] Int             NOT NULL,
-		[Product] NVarChar(4000)  NOT NULL,
-
-		CONSTRAINT [PK_OrderItems] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -60,16 +23,4 @@ FROM
 					[OrderItem].[Id]
 			) [t1]
 		ON [t].[Id] = [t1].[OrderId]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[dbo].[OrderItems]', N'U') IS NOT NULL)
-	DROP TABLE [dbo].[OrderItems]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[dbo].[Orders]', N'U') IS NOT NULL)
-	DROP TABLE [dbo].[Orders]
 

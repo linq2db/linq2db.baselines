@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4460Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4460Table]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4460Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4460Table]
-	(
-		[Id]      Int            NOT NULL,
-		[Code]    NVarChar(4000)     NULL,
-		[Name]    NVarChar(4000)     NULL,
-		[Surname] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(4000) -- String
@@ -54,10 +36,4 @@ FROM
 	[Issue4460Table] [t1]
 WHERE
 	[t1].[Code] = N'GrandChild'
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4460Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4460Table]
 

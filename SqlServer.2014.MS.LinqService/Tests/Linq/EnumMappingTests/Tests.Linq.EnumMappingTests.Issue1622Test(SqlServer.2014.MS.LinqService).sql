@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1622Table]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NULL)
-	CREATE TABLE [Issue1622Table]
-	(
-		[Id]       Int            NOT NULL,
-		[SomeText] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue1622Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(4000) -- String
@@ -55,10 +37,4 @@ FROM
 	[Issue1622Table] [e]
 WHERE
 	[e].[Id] = 1
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue1622Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1622Table]
 

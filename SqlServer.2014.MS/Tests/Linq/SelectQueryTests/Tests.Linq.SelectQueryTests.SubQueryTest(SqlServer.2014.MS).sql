@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
-	CREATE TABLE [SampleClass]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-INSERT INTO [SampleClass]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
@@ -54,10 +27,4 @@ FROM
 						DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 				) [t1]
 		) [t2] ON 1=1
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
 

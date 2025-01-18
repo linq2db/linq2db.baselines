@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[User]', N'U') IS NULL)
-	CREATE TABLE [User]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [User]
 (
 	[Id]
@@ -54,10 +39,4 @@ FROM
 					SELECT 'Testing' AS Data
 				) [a_Data]
 		) [t1] ON 1=1
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[User]', N'U') IS NOT NULL)
-	DROP TABLE [User]
 

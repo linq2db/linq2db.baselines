@@ -1,49 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[Item]', N'U') IS NOT NULL)
-	DROP TABLE [Item]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NULL)
-	CREATE TABLE [Item]
-	(
-		[ItemId]   Int            NOT NULL,
-		[Kind]     Int            NOT NULL,
-		[ItemCode] NVarChar(4000)     NULL,
-		[Style]    NVarChar(4000)     NULL,
-		[Color]    NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([ItemId])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-INSERT INTO [Item]
-(
-	[ItemId],
-	[Kind],
-	[ItemCode],
-	[Style],
-	[Color]
-)
-VALUES
-(1,1,N'01020102',N'Style1',N'White'),
-(2,1,N'01020102',N'Style1',N'White'),
-(3,1,N'01020102',N'Style1',N'White'),
-(4,2,N'03020302',N'Style3',N'White'),
-(5,2,N'01040104',N'Style1',N'Blue'),
-(6,2,N'01010104',N'Style1',N'Black'),
-(7,3,N'03020302',N'Style3',N'White'),
-(8,3,N'01040104',N'Style1',N'Blue'),
-(9,3,N'01010104',N'Style1',N'Black')
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0),
 	[t].[Kind],
@@ -249,10 +206,4 @@ SELECT
 	[t1].[Color]
 FROM
 	[Item] [t1]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NOT NULL)
-	DROP TABLE [Item]
 

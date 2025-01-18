@@ -1,80 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NULL)
-	CREATE TABLE [GlobalTaskDTO]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NULL)
-	CREATE TABLE [WMS_GlobalTaskA]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WmsResourcePointDTO]', N'U') IS NOT NULL)
-	DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WmsResourcePointDTO]', N'U') IS NULL)
-	CREATE TABLE [WmsResourcePointDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NOT NULL)
-	DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NULL)
-	CREATE TABLE [StorageShelfDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],
@@ -120,28 +46,4 @@ FROM
 		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id]
 		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id]
 		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NOT NULL)
-	DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WmsResourcePointDTO]', N'U') IS NOT NULL)
-	DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
 

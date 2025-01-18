@@ -1,19 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[SimpleBulkCopyTable]', N'U') IS NOT NULL)
-	DROP TABLE [SimpleBulkCopyTable]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[SimpleBulkCopyTable]', N'U') IS NULL)
-	CREATE TABLE [SimpleBulkCopyTable]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
@@ -32,10 +17,4 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 VALUES
 (2)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[SimpleBulkCopyTable]', N'U') IS NOT NULL)
-	DROP TABLE [SimpleBulkCopyTable]
 

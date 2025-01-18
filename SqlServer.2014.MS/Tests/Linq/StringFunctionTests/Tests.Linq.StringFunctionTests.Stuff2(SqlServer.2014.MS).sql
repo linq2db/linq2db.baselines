@@ -1,59 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[Task]', N'U') IS NOT NULL)
-	DROP TABLE [Task]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Task]', N'U') IS NULL)
-	CREATE TABLE [Task]
-	(
-		[Id]   Int             NOT NULL IDENTITY,
-		[Name] NVarChar(4000)  NOT NULL,
-
-		CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[TaskCategory]', N'U') IS NOT NULL)
-	DROP TABLE [TaskCategory]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[TaskCategory]', N'U') IS NULL)
-	CREATE TABLE [TaskCategory]
-	(
-		[Id]         Int NOT NULL,
-		[TaskId]     Int NOT NULL,
-		[CategoryId] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Category]', N'U') IS NOT NULL)
-	DROP TABLE [Category]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Category]', N'U') IS NULL)
-	CREATE TABLE [Category]
-	(
-		[Id]   Int             NOT NULL IDENTITY,
-		[Name] NVarChar(4000)  NOT NULL,
-
-		CONSTRAINT [PK_Category] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -68,22 +15,4 @@ SELECT
 FROM
 	[Task] [t]
 		LEFT JOIN [TaskCategory] [tc] ON [t].[Id] = [tc].[TaskId]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Category]', N'U') IS NOT NULL)
-	DROP TABLE [Category]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[TaskCategory]', N'U') IS NOT NULL)
-	DROP TABLE [TaskCategory]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Task]', N'U') IS NOT NULL)
-	DROP TABLE [Task]
 
