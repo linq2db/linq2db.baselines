@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "ProductTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ProductTable"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text NOT NULL,
-
-	CONSTRAINT "PK_ProductTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ProductAttributeTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ProductAttributeTable"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text NOT NULL,
-
-	CONSTRAINT "PK_ProductAttributeTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ProductAttributeMapping"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ProductAttributeMapping"
-(
-	"ProductId"          Int NOT NULL,
-	"ProductAttributeId" Int NOT NULL,
-
-	CONSTRAINT "PK_ProductAttributeMapping" PRIMARY KEY ("ProductId", "ProductAttributeId")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 SELECT
 	pa."Id"
 FROM
@@ -73,19 +25,4 @@ WHERE
 		WHERE
 			p."Id" >= pam."ProductId"
 	)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ProductAttributeMapping"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ProductAttributeTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ProductTable"
 

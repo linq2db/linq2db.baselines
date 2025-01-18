@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "TestEntity1"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestEntity1"
-(
-	"Id"     Int  NOT NULL,
-	"Field1" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestEntity2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestEntity2"
-(
-	"Id"     Int  NOT NULL,
-	"Field1" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN "TestEntity1" t1_1 ON t2_1."Id" = t1_1."Id"
 WHERE
 	t1_1."Id" IS NULL
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestEntity2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TestEntity1"
 

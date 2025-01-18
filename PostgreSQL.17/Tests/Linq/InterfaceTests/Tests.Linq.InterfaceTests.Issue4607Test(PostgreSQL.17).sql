@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "SomeTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "SomeTable"
-(
-	"ClassProp" Boolean NOT NULL,
-	"Interface" Boolean NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 INSERT INTO "SomeTable"
 (
 	"ClassProp",
@@ -35,9 +21,4 @@ SELECT
 FROM
 	"SomeTable" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SomeTable"
 

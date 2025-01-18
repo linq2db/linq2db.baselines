@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Update_Table"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PR_1598_Update_Table"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text     NULL,
-	"Age"  Int      NULL,
-
-	CONSTRAINT "PK_PR_1598_Update_Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -106,9 +89,4 @@ FROM
 WHERE
 	t."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Update_Table"
 

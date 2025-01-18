@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3761Table"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3761Table"
-(
-	"LETO"     Int       NOT NULL,
-	"STEVILKA" Int       NOT NULL,
-	"DATUM"    TimeStamp     NULL,
-	"SKUPAJ"   decimal       NULL,
-
-	CONSTRAINT "PK_Issue3761Table" PRIMARY KEY ("LETO", "STEVILKA")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 SELECT
 	t1."Year_1",
 	t1."Month_1",
@@ -68,9 +50,4 @@ FROM
 GROUP BY
 	t2."Year_1",
 	t2."Month_1"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3761Table"
 

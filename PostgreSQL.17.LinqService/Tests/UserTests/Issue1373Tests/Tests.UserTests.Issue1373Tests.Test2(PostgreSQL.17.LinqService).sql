@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1373Tests"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1373Tests"
-(
-	"Id"     Int  NOT NULL,
-	"Field1" text     NULL,
-
-	CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Field1 Varchar -- String
@@ -78,9 +62,4 @@ FROM
 	"Issue1373Tests" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1373Tests"
 

@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3581Table"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3581Table"
-(
-	"Id"         Int  NOT NULL,
-	"Name"       text     NULL,
-	"ExternalId" text     NULL,
-	"Source"     text     NULL,
-
-	CONSTRAINT "PK_Issue3581Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(8) -- String
@@ -46,9 +28,4 @@ RETURNING
 	"Issue3581Table"."Name",
 	"Issue3581Table"."ExternalId",
 	"Issue3581Table"."Source"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3581Table"
 

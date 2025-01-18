@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('null','null')
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Jsonb -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Jsonb -- Object
@@ -167,36 +142,6 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('true','false')
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -345,36 +290,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('12','-34')
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Jsonb -- Object
 SET     @value = '12'
 DECLARE @nullableValue Jsonb -- Object
@@ -517,36 +432,6 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('-12e34','34.12')
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -695,36 +580,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('"тест"','""')
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Jsonb -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Jsonb -- Object
@@ -870,36 +725,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('null',NULL)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Jsonb -- Object
 SET     @value = 'null'
 
@@ -1032,36 +857,6 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column" = :value AND r."ColumnNullable" IS NULL
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('[1, 2, 3]','[true, false]')
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -1210,36 +1005,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeTable`2"
-(
-	"Column"         jsonb NOT NULL,
-	"ColumnNullable" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "TypeTable`2"
-(
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-('{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}','{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}')
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Jsonb -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Jsonb -- Object
@@ -1383,9 +1148,4 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeTable`2"
 

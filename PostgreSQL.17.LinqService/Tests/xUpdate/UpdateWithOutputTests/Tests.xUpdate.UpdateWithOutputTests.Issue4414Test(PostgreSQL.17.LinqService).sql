@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4193Person"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4193Person"
-(
-	"Name"       text NOT NULL,
-	"EmployeeId" Int      NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @Name Text(3) -- String
-SET     @Name = 'foo'
-DECLARE @EmployeeId Integer -- Int32
-SET     @EmployeeId = 1
-
-INSERT INTO "Issue4193Person"
-(
-	"Name",
-	"EmployeeId"
-)
-VALUES
-(
-	:Name,
-	:EmployeeId
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -57,9 +25,4 @@ WHERE
 RETURNING
 	"Issue4193Person"."EmployeeId",
 	"Issue4193Person"."Name"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4193Person"
 

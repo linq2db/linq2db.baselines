@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3360Table"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3360Table"
-(
-	"Id"  Int     NOT NULL,
-	"Str" VarChar     NULL,
-
-	CONSTRAINT "PK_Issue3360Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE cte ("Id", "Str")
 AS
 (
@@ -40,9 +24,4 @@ SELECT
 	t2."Str"
 FROM
 	cte t2
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3360Table"
 

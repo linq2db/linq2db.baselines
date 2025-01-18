@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue4556Table1"
-
-BeforeExecute
---  PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4556Table1"
-(
-	"Id"            SERIAL  NOT NULL,
-	"Payload_json"  json        NULL,
-	"Payload_jsonb" jsonb       NULL,
-	"Headers_json"  json        NULL,
-	"Headers_jsonb" jsonb       NULL,
-
-	CONSTRAINT "PK_Issue4556Table1" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
---  PostgreSQL.15 PostgreSQL
-
 MERGE INTO "Issue4556Table1" "Target"
 USING (
 	SELECT NULL::Int, NULL::json, NULL::jsonb, NULL::json, NULL::jsonb
@@ -91,9 +72,4 @@ VALUES
 	"Source"."source_HeadersJson",
 	"Source"."source_HeadersJsonB"
 )
-
-BeforeExecute
---  PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4556Table1"
 

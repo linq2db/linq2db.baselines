@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1363"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1363"
-(
-	required_field uuid NOT NULL,
-	optional_field uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @id Uuid -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
@@ -73,9 +59,4 @@ FROM
 WHERE
 	t1.required_field = :id2
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1363"
 
