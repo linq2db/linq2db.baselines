@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS ComplexPredicate
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS ComplexPredicate
-(
-	Id    Int32,
-	Value Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO ComplexPredicate
-(
-	Id,
-	Value
-)
-VALUES
-(1,NULL),
-(2,'other'),
-(3,'123'),
-(4,'test'),
-(5,'1')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value
@@ -56,9 +26,4 @@ SELECT
 	t1.Value
 FROM
 	ComplexPredicate t1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS ComplexPredicate
 

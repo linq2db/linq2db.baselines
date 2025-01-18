@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS CteTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteTable
-(
-	Id     Int32,
-	Value1 Int32,
-	Value2 Int32,
-	Value3 Int32,
-	Value4 Int32,
-	Value5 Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteChildTable
-(
-	Id    Int32,
-	Value Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -105,14 +71,4 @@ SELECT
 FROM
 	cte t2
 		LEFT JOIN CteChildTable d ON t2.Value4 = d.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS CteTable
 

@@ -1,42 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS ConcreteA
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS ConcreteA
-(
-	Id    Int32,
-	AOnly Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS ConcreteB
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS ConcreteB
-(
-	Id    Int32,
-	BOnly Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO ConcreteA
 (
 	Id,
@@ -80,14 +44,4 @@ SELECT
 	e_1.BOnly as BOnly
 FROM
 	ConcreteB e_1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS ConcreteB
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS ConcreteA
 

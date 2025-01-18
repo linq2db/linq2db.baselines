@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS PR_1598_Insert_Table_Cache
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS PR_1598_Insert_Table_Cache
-(
-	Id   Int32,
-	Name Nullable(String),
-	Age  Nullable(Int32),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO PR_1598_Insert_Table_Cache
 (
 	Id,
@@ -69,9 +50,4 @@ FROM
 WHERE
 	t.Id = 1
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS PR_1598_Insert_Table_Cache
 

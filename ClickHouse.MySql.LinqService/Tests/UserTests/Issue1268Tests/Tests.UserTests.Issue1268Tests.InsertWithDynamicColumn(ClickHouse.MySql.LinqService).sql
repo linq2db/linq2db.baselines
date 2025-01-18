@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS DynamicColumnTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS DynamicColumnTable
-(
-	Id        Int32,
-	Name      Nullable(String),
-	IsDeleted Bool
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO DynamicColumnTable
 (
 	Id,
@@ -71,9 +55,4 @@ FROM
 WHERE
 	e.Name = 'Some2'
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS DynamicColumnTable
 

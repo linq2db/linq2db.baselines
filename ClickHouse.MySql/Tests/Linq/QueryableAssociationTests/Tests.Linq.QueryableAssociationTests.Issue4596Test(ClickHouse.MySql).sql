@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue4596Form
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4596Form
-(
-	Id Int32,
-	C1 FixedString(1)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue4596Item
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4596Item
-(
-	Id         Int32,
-	FormId     Int32,
-	OrderIndex Int32,
-	Name1      Nullable(String),
-	Name2      Nullable(String),
-	Name3      Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.cond,
@@ -87,14 +53,4 @@ SELECT
 FROM
 	Issue4596Form t1
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue4596Item
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue4596Form
 

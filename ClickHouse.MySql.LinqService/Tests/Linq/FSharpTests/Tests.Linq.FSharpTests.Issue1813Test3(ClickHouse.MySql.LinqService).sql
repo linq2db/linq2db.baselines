@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Names
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Names
-(
-	Id   Int32,
-	Name Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Addresses
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Addresses
-(
-	Id   Int32,
-	Text Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -83,14 +53,4 @@ FROM
 		LEFT JOIN Addresses arg2 ON tupledArg.Id = arg2.Id
 ORDER BY
 	tupledArg.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Addresses
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Names
 

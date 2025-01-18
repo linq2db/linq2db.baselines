@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue1316Tests
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue1316Tests
-(
-	ID Int32,
-
-	PRIMARY KEY (ID)
-)
-ENGINE = MergeTree()
-ORDER BY ID
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue1316Tests
 (
 	ID
@@ -37,9 +20,4 @@ FROM
 WHERE
 	t1.ID = 5
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue1316Tests
 

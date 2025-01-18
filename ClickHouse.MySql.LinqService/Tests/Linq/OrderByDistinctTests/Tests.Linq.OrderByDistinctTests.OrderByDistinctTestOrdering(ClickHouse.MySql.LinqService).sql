@@ -1,80 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS OrderByDistinctData
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS OrderByDistinctData
-(
-	Id            Int32,
-	DuplicateData Nullable(String),
-	OrderData1    Int32,
-	OrderData2    Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO OrderByDistinctData
-(
-	Id,
-	DuplicateData,
-	OrderData1,
-	OrderData2
-)
-VALUES
-(
-	1,
-	'One',
-	1,
-	1
-)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO OrderByDistinctData
-(
-	Id,
-	DuplicateData,
-	OrderData1,
-	OrderData2
-)
-VALUES
-(
-	10,
-	'Two',
-	1,
-	1
-)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO OrderByDistinctData
-(
-	Id,
-	DuplicateData,
-	OrderData1,
-	OrderData2
-)
-VALUES
-(
-	100,
-	'Three',
-	1,
-	1
-)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	x.DuplicateData
 FROM
@@ -195,9 +121,4 @@ ORDER BY
 	x.OrderData1,
 	x.OrderData2 DESC
 LIMIT 0, 3
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS OrderByDistinctData
 

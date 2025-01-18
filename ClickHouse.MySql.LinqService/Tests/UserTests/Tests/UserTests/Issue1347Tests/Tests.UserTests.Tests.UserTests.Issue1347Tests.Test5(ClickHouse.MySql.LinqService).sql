@@ -1,76 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS GlobalTaskDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS GlobalTaskDTO
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS WMS_GlobalTaskA
-(
-	Id                        UUID,
-	ResourceID                UUID,
-	StorageShelfSourceID      Nullable(UUID),
-	RPSourceID                Nullable(UUID),
-	StorageShelfDestinationID Nullable(UUID),
-	RPDestinationID           Nullable(UUID),
-	RPOrigDestinationID       Nullable(UUID),
-	OutfeedTransportOrderID   Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS WmsLoadCarrierDTO
-(
-	Id UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WMS_LoadCarrierA
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS WMS_LoadCarrierA
-(
-	Id UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	t3.Id,
 	t3.ResourceID,
@@ -118,24 +48,4 @@ FROM
 			FROM
 				WMS_LoadCarrierA t2
 		) res_1 ON t3.ResourceID = res_1.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WMS_LoadCarrierA
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS GlobalTaskDTO
 

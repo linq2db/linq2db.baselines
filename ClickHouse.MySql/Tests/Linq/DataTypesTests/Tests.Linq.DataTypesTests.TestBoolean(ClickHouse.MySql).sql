@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS BooleanTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS BooleanTable
-(
-	Id             Int32,
-	Column         Bool,
-	ColumnNullable Nullable(Bool)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO BooleanTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,true,NULL),
-(2,false,true)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -165,9 +136,4 @@ FROM
 	BooleanTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS BooleanTable
 

@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS RecordLike
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS RecordLike
-(
-	Id        Int32,
-	BaseValue Nullable(String),
-	Value     Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO RecordLike
 (
 	Id,
@@ -72,9 +53,4 @@ FROM
 	RecordLike r
 ORDER BY
 	r.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS RecordLike
 

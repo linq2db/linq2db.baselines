@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue3360WithEnum
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue3360WithEnum
-(
-	Id  Int32,
-	Str String
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -36,9 +21,4 @@ SELECT
 	t2.Str
 FROM
 	cte t2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue3360WithEnum
 

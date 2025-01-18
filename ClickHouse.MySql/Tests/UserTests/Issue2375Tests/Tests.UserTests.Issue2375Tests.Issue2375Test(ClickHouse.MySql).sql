@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS InventoryResourceDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS InventoryResourceDTO
-(
-	Id                UUID,
-	Status            Int32,
-	ResourceID        UUID,
-	ModifiedTimeStamp Nullable(DateTime64(7))
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS WmsLoadCarrierDTO
-(
-	Id            UUID,
-	ResourceLabel Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO WmsLoadCarrierDTO
 (
 	Id,
@@ -136,14 +104,4 @@ GROUP BY
 	lc.ResourceLabel
 HAVING
 	COUNT(*) > 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS InventoryResourceDTO
 

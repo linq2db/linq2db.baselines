@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue4460Table
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4460Table
-(
-	Id      Int32,
-	Code    Nullable(String),
-	Name    Nullable(String),
-	Surname Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4460Table
 (
 	Id,
@@ -38,9 +21,4 @@ SELECT
 	t1.Surname
 FROM
 	Issue4460Table t1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue4460Table
 
