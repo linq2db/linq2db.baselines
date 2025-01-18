@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Issue1373Tests]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue1373Tests]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue1373Tests] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
 
@@ -72,9 +56,4 @@ FROM
 	[Issue1373Tests] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue1373Tests]
 

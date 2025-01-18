@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Issue4715Table]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4715Table]
-(
-	[Id]    Int NOT NULL,
-	[Prop1] Int NOT NULL,
-	[Prop2] Int NOT NULL,
-	[Prop3] Int NOT NULL,
-	[Prop4] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int -- Int32
@@ -54,9 +37,4 @@ SELECT TOP (2)
 	[t1].[Prop3] as [TestsLinqInterfaceTestsIExplicitInterfaceTestsLinqInterfaceTestsIssue4715TableExplicitPropertyRW]
 FROM
 	[Issue4715Table] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4715Table]
 

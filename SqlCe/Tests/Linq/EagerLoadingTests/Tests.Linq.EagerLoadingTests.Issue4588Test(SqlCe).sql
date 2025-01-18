@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [Order]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Order]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SubOrder]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [SubOrder]
-(
-	[Id]      Int NOT NULL,
-	[OrderId] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SubOrderDetail]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [SubOrderDetail]
-(
-	[Id]         Int           NOT NULL,
-	[SubOrderId] Int           NOT NULL,
-	[Code]       NVarChar(255)     NULL,
-	[Date]       DateTime      NOT NULL,
-	[IsActive]   Bit           NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlCe
@@ -135,19 +90,4 @@ WHERE
 ORDER BY
 	[x].[Id]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SubOrderDetail]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SubOrder]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Order]
 

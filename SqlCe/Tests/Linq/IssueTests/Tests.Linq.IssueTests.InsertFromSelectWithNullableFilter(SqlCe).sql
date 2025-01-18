@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [InsertIssueTest]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [InsertIssueTest]
-(
-	[ID]          SmallInt NOT NULL,
-	[intDataType] Int          NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [InsertIssueTest]
-(
-	[ID],
-	[intDataType]
-)
-SELECT 0,0 UNION ALL
-SELECT 0,0 UNION ALL
-SELECT 1234,1234 UNION ALL
-SELECT 1234,1234
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [InsertIssueTest]
 (
 	[ID],
@@ -79,9 +52,4 @@ SELECT
 	[t1].[intDataType]
 FROM
 	[InsertIssueTest] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [InsertIssueTest]
 

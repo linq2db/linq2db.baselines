@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [Issue3360Table1]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue3360Table1]
-(
-	[Id]    Int              NOT NULL,
-	[Byte]  TinyInt          NOT NULL,
-	[ByteN] TinyInt              NULL,
-	[Guid]  UNIQUEIDENTIFIER NOT NULL,
-	[GuidN] UNIQUEIDENTIFIER     NULL,
-	[Enum]  NChar(11)        NOT NULL,
-	[EnumN] NChar(11)            NULL,
-	[Bool]  Bit              NOT NULL,
-	[BoolN] Bit                  NULL,
-
-	CONSTRAINT [PK_Issue3360Table1] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Issue3360Table1]
-(
-	[Id],
-	[Byte],
-	[ByteN],
-	[Guid],
-	[GuidN],
-	[Enum],
-	[EnumN],
-	[Bool],
-	[BoolN]
-)
-SELECT 1,0,NULL,'00000000-0000-0000-0000-000000000000',NULL,'ENUM1_VALUE',NULL,0,NULL UNION ALL
-SELECT 2,1,2,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e','ENUM1_VALUE','ENUM2_VALUE',1,0 UNION ALL
-SELECT 4,3,4,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627','bc7b663d-0fde-4327-8f92-5d8cc3a11d11','ENUM1_VALUE','ENUM2_VALUE',0,1
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Byte],
@@ -87,9 +45,4 @@ FROM
 	) [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3360Table1]
 

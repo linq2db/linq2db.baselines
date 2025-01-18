@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [StringEnumTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [StringEnumTable]
-(
-	[Id]             Int         NOT NULL,
-	[Column]         NVarChar(8) NOT NULL,
-	[ColumnNullable] NVarChar(8)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [StringEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,'val=1',NULL UNION ALL
-SELECT 2,'value=2','value=33'
-
-BeforeExecute
--- SqlCe
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
@@ -174,9 +147,4 @@ FROM
 	[StringEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [StringEnumTable]
 

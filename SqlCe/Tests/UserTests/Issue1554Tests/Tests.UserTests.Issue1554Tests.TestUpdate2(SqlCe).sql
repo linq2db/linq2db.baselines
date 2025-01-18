@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Issue1554Table]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue1554Table]
-(
-	[Id]              Int         NOT NULL,
-	[ClaimedKeyType]  NVarChar(3) NOT NULL,
-	[ClaimedKeyTypeN] NVarChar(3)     NULL,
-
-	CONSTRAINT [PK_Issue1554Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -61,9 +44,4 @@ SELECT TOP (2)
 	[t1].[ClaimedKeyTypeN]
 FROM
 	[Issue1554Table] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue1554Table]
 

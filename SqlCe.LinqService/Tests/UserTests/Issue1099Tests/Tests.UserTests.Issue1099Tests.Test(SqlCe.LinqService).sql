@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [BackgroundTask]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [BackgroundTask]
-(
-	[ID]               Int     NULL,
-	[DurationID]       Int NOT NULL,
-	[DurationInterval] Int NOT NULL,
-	[PersonID]         Int     NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @DurationID Int -- Int32
@@ -54,9 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [BackgroundTask]
 

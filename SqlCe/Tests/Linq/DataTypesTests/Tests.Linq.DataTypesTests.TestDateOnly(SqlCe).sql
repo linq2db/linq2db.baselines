@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [DateOnlyTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [DateOnlyTable]
-(
-	[Id]             Int      NOT NULL,
-	[Column]         DateTime NOT NULL,
-	[ColumnNullable] DateTime     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [DateOnlyTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
-
-BeforeExecute
--- SqlCe
 DECLARE @Column DateTime
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
@@ -174,9 +147,4 @@ FROM
 	[DateOnlyTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [DateOnlyTable]
 

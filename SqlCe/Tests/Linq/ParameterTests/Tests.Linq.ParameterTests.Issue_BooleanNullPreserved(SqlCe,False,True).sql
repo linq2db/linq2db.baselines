@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TestBool]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TestBool]
-(
-	[Id]    Int NOT NULL,
-	[Value] Bit     NULL
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -74,9 +60,4 @@ SELECT TOP (2)
 	[t1].[Value] as [Value_1]
 FROM
 	[TestBool] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TestBool]
 

@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Task]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Task]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TaskStage]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
-
-	CONSTRAINT [PK_TaskStage] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -92,14 +60,4 @@ FROM
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 GROUP BY
 	[it].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TaskStage]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Task]
 

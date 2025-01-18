@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [Item]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Item]
-(
-	[ItemId]   Int           NOT NULL,
-	[Kind]     Int           NOT NULL,
-	[ItemCode] NVarChar(255)     NULL,
-	[Style]    NVarChar(255)     NULL,
-	[Color]    NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Item] PRIMARY KEY ([ItemId])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Item]
-(
-	[ItemId],
-	[Kind],
-	[ItemCode],
-	[Style],
-	[Color]
-)
-SELECT 1,1,'01020102','Style1','White' UNION ALL
-SELECT 2,1,'01020102','Style1','White' UNION ALL
-SELECT 3,1,'01020102','Style1','White' UNION ALL
-SELECT 4,2,'03020302','Style3','White' UNION ALL
-SELECT 5,2,'01040104','Style1','Blue' UNION ALL
-SELECT 6,2,'01010104','Style1','Black' UNION ALL
-SELECT 7,3,'03020302','Style3','White' UNION ALL
-SELECT 8,3,'01040104','Style1','Blue' UNION ALL
-SELECT 9,3,'01010104','Style1','Black'
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[x].[cond],
 	[x].[Kind],
@@ -600,9 +560,4 @@ SELECT
 	[t1].[Color]
 FROM
 	[Item] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Item]
 

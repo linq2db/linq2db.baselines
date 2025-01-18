@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TableWithIdentity]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TableWithIdentity]
-(
-	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL,
-
-	CONSTRAINT [PK_TableWithIdentity] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -34,9 +18,4 @@ SELECT TOP (2)
 	[t1].[Value] as [Value_1]
 FROM
 	[TableWithIdentity] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TableWithIdentity]
 

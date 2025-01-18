@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [ComplexPredicate]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ComplexPredicate]
-(
-	[Id]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [ComplexPredicate]
-(
-	[Id],
-	[Value]
-)
-SELECT 1,NULL UNION ALL
-SELECT 2,'other' UNION ALL
-SELECT 3,'123' UNION ALL
-SELECT 4,'test' UNION ALL
-SELECT 5,'1'
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[Value] as [Value_1]
@@ -54,9 +26,4 @@ SELECT
 	[t1].[Value] as [Value_1]
 FROM
 	[ComplexPredicate] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ComplexPredicate]
 

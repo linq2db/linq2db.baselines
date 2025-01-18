@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TPHTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TPHTable]
-(
-	[Id]            Int          NOT NULL,
-	[Discriminator] Int          NOT NULL,
-	[Value1]        NVarChar(50)     NULL,
-	[Value2]        NVarChar(50)     NULL,
-	[Value3]        NVarChar(50)     NULL,
-	[NullableBool]  NVarChar(1)      NULL,
-
-	CONSTRAINT [PK_TPHTable] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [TPHTable]
 (
 	[Id],
@@ -138,9 +118,4 @@ FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value3] = 'Str3'
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TPHTable]
 

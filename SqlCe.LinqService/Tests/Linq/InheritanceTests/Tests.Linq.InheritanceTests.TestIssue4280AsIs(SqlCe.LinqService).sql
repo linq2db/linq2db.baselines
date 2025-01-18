@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Issue4280]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4280]
-(
-	[Id]           Int           NOT NULL,
-	[SerialNumber] NVarChar(255)     NULL,
-	[DeviceType]   NVarChar(255)     NULL,
-	[Location]     NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue4280] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4280]
 

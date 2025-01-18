@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TrimTestTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TrimTestTable]
-(
-	[ID]   Int          NOT NULL,
-	[Data] NVarChar(50)     NULL,
-
-	CONSTRAINT [PK_TrimTestTable] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -45,9 +29,4 @@ FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TrimTestTable]
 

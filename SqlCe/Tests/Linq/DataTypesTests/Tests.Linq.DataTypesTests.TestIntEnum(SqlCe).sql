@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [IntEnumTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [IntEnumTable]
-(
-	[Id]             Int NOT NULL,
-	[Column]         Int NOT NULL,
-	[ColumnNullable] Int     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [IntEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,2,3
-
-BeforeExecute
--- SqlCe
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -174,9 +147,4 @@ FROM
 	[IntEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [IntEnumTable]
 

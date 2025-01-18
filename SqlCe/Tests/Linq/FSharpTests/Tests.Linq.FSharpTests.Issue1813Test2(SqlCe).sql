@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Names]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Names]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Addresses]
-(
-	[Id]   Int           NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -110,14 +82,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Names]
 

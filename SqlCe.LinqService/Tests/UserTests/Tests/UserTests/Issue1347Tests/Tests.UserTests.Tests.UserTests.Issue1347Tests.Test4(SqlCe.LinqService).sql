@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -64,14 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [GlobalTaskDTO]
 

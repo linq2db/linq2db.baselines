@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [ColumnOrderTest]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ColumnOrderTest]
-(
-	[RecordID]       Int           NOT NULL,
-	[EffectiveStart] DateTime      NOT NULL,
-	[EffectiveEnd]   DateTime          NULL,
-	[Key]            Int           NOT NULL,
-	[Name]           NVarChar(255)     NULL,
-	[Code]           NVarChar(255)     NULL,
-	[Audit1ID]       Int           NOT NULL,
-	[Audit2ID]       Int           NOT NULL,
-
-	CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY ([RecordID])
-)
-
-BeforeExecute
--- SqlCe
-
 
 SELECT
 	COALESCE(TABLE_CATALOG, '') + '.' + COALESCE(TABLE_SCHEMA, '') + '.' + TABLE_NAME AS TableID,
@@ -49,9 +27,4 @@ FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS rc
 	INNER JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE oc ON oc.CONSTRAINT_NAME = rc.UNIQUE_CONSTRAINT_NAME
 		AND oc.TABLE_NAME = rc.UNIQUE_CONSTRAINT_TABLE_NAME
 		AND tc.ORDINAL_POSITION = oc.ORDINAL_POSITION
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ColumnOrderTest]
 

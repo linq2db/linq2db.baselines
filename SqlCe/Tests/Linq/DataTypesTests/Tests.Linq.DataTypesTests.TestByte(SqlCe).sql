@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [ByteTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ByteTable]
-(
-	[Id]             Int     NOT NULL,
-	[Column]         TinyInt NOT NULL,
-	[ColumnNullable] TinyInt     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,255,2
-
-BeforeExecute
--- SqlCe
 DECLARE @Column TinyInt -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt -- Byte
@@ -174,9 +147,4 @@ FROM
 	[ByteTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ByteTable]
 

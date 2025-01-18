@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WmsResourcePointDTO]
-(
-	[Id] UNIQUEIDENTIFIER NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [StorageShelfDTO]
-(
-	[Id] UNIQUEIDENTIFIER NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id]
 		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id]
 		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [StorageShelfDTO]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [GlobalTaskDTO]
 

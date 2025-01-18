@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [GlobalTaskDTO]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WMS_GlobalTaskA]
-(
-	[Id]                        UNIQUEIDENTIFIER NOT NULL,
-	[ResourceID]                UNIQUEIDENTIFIER NOT NULL,
-	[StorageShelfSourceID]      UNIQUEIDENTIFIER     NULL,
-	[RPSourceID]                UNIQUEIDENTIFIER     NULL,
-	[StorageShelfDestinationID] UNIQUEIDENTIFIER     NULL,
-	[RPDestinationID]           UNIQUEIDENTIFIER     NULL,
-	[RPOrigDestinationID]       UNIQUEIDENTIFIER     NULL,
-	[OutfeedTransportOrderID]   UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WmsLoadCarrierDTO]
-(
-	[Id] UNIQUEIDENTIFIER NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_LoadCarrierA]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WMS_LoadCarrierA]
-(
-	[Id] UNIQUEIDENTIFIER NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],
@@ -114,24 +48,4 @@ FROM
 			FROM
 				[WMS_LoadCarrierA] [t2]
 		) [res_1] ON [t3].[ResourceID] = [res_1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_LoadCarrierA]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [GlobalTaskDTO]
 

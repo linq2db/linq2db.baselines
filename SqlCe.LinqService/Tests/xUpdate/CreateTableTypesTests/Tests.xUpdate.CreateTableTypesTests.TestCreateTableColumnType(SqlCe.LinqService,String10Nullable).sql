@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [CreateTableTypes]
-(
-	[String] NVarChar(10)     NULL,
-	[Id]     Int          NOT NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @String NVarChar -- String
@@ -58,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [CreateTableTypes]
 

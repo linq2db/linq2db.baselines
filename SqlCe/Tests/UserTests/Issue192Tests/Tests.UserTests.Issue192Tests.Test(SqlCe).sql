@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [TypeConvertTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] NChar        NOT NULL,
-	[GuidValue] NVarChar(50)     NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Name NVarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue NVarChar -- String
@@ -236,9 +221,4 @@ FROM
 	[TypeConvertTable] [t1]
 WHERE
 	[t1].[GuidValue] = @GuidValue
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TypeConvertTable]
 
