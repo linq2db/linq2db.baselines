@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Base"
-		(
-			"Id"           Int           NOT NULL,
-			"Type"         Int           NOT NULL,
-			"Name_First"   NVarChar(255)     NULL,
-			"Name_Second"  NVarChar(255)     NULL,
-			"Test_ChildId" Int           NOT NULL,
-
-			CONSTRAINT "PK_Base" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Type Integer(4) -- Int32
@@ -103,12 +76,4 @@ SELECT
 FROM
 	"Base" "t1"
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Base"';
-END
 

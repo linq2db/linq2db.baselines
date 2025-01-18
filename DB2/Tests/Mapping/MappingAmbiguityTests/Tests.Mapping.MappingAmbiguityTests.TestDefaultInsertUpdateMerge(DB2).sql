@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestTable"
-		(
-			ID        Int           NOT NULL,
-			"Field1"  Int           NOT NULL,
-			"Field2"  Int           NOT NULL,
-			"Field3"  Int           NOT NULL,
-			"Field4"  Int           NOT NULL,
-			"field11" NVarChar(255)     NULL,
-			"Field5"  Int           NOT NULL,
-
-			CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestTable" "Target"
 USING (
 	SELECT
@@ -85,12 +56,4 @@ SET
 	"Field4" = "Source"."source_Field4",
 	"field11" = "Source"."source_field1_1",
 	"Field5" = "Source"."source_Field5"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
-END
 

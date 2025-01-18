@@ -1,29 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestFolder"
-		(
-			"Id"       char(16) for bit data NOT NULL,
-			"Label"    NVarChar(255)             NULL,
-			"ParentId" char(16) for bit data
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 WITH CTE
 (
 	"Level_1",
@@ -73,12 +50,4 @@ SELECT
 	"t2"."Entity_ParentId"
 FROM
 	CTE "t2"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestFolder"';
-END
 

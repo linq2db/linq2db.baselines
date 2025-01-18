@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue2816Table"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue2816Table"
-		(
-			"Id"   Int           NOT NULL,
-			"Text" NVarChar(255)     NULL,
-
-			CONSTRAINT "PK_Issue2816Table" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "Issue2816Table"
-(
-	"Id",
-	"Text"
-)
-VALUES
-(1,' '),
-(2,'   '),
-(3,'  x ')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Id",
 	"p"."Text"
@@ -46,12 +9,4 @@ FROM
 WHERE
 	NOT ("p"."Text" IS NULL OR LTRIM("p"."Text", '	
                  　') = '')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue2816Table"';
-END
 

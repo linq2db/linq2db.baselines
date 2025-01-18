@@ -1,60 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "StringTypesTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "StringTypesTable"
-		(
-			"Id"             Int          NOT NULL,
-			"CharColumn"     Char(50)         NULL,
-			"NCharColumn"    NChar(50)        NULL,
-			"VarCharColumn"  VarChar(50)      NULL,
-			"NVarCharColumn" NVarChar(50)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @CharColumn Char(10) -- StringFixedLength
-SET     @CharColumn = 'someString'
-DECLARE @NCharColumn Char(10) -- StringFixedLength
-SET     @NCharColumn = 'someString'
-DECLARE @VarCharColumn VarChar(10) -- String
-SET     @VarCharColumn = 'someString'
-DECLARE @NVarCharColumn VarChar(10) -- String
-SET     @NVarCharColumn = 'someString'
-
-INSERT INTO "StringTypesTable"
-(
-	"Id",
-	"CharColumn",
-	"NCharColumn",
-	"VarCharColumn",
-	"NVarCharColumn"
-)
-VALUES
-(
-	@Id,
-	@CharColumn,
-	@NCharColumn,
-	@VarCharColumn,
-	@NVarCharColumn
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @str Char(5) -- StringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 Char(5) -- StringFixedLength
@@ -77,12 +22,4 @@ WHERE
 	"t"."NCharColumn" LIKE @str_1 ESCAPE '~' AND
 	"t"."VarCharColumn" LIKE @str_2 ESCAPE '~' AND
 	"t"."NVarCharColumn" LIKE @str_3 ESCAPE '~'
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "StringTypesTable"';
-END
 

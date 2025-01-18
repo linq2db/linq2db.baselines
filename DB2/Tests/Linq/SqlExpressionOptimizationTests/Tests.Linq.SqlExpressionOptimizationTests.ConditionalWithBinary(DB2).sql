@@ -1,56 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "OptimizationData"
-		(
-			"Id"                  Int           NOT NULL,
-			"IntVlaue"            Int           NOT NULL,
-			"IntVlaueNullable"    Int               NULL,
-			"BoolValue"           smallint      NOT NULL,
-			"BoolValueNullable"   smallint          NULL,
-			"StringValue"         NVarChar(255)     NULL,
-			"StringValueNullable" NVarChar(255)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(1,1,0,1,1,'1','1'),
-(2,2,1,0,NULL,'0','0'),
-(3,4,4,0,NULL,'1','1'),
-(4,0,1,1,1,'0',NULL),
-(5,1,3,1,1,'1',NULL),
-(6,3,0,0,0,'0','0'),
-(7,1,4,0,0,'1','1'),
-(8,3,2,1,1,'0','0')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	"x"."Id",
@@ -2393,12 +2343,4 @@ SELECT
 	"t1"."StringValueNullable"
 FROM
 	"OptimizationData" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-END
 

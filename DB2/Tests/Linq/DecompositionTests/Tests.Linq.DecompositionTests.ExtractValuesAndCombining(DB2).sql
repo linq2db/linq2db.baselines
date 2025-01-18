@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Item"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Item"
-		(
-			"ItemId"   Int           NOT NULL,
-			"Kind"     Int           NOT NULL,
-			"ItemCode" NVarChar(255)     NULL,
-			"Style"    NVarChar(255)     NULL,
-			"Color"    NVarChar(255)     NULL,
-
-			CONSTRAINT "PK_Item" PRIMARY KEY ("ItemId")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "Item"
-(
-	"ItemId",
-	"Kind",
-	"ItemCode",
-	"Style",
-	"Color"
-)
-VALUES
-(1,1,'01020102','Style1','White'),
-(2,1,'01020102','Style1','White'),
-(3,1,'01020102','Style1','White'),
-(4,2,'03020302','Style3','White'),
-(5,2,'01040104','Style1','Blue'),
-(6,2,'01010104','Style1','Black'),
-(7,3,'03020302','Style3','White'),
-(8,3,'01040104','Style1','Blue'),
-(9,3,'01010104','Style1','Black')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."cond",
 	"x"."Kind",
@@ -540,12 +491,4 @@ SELECT
 	"t1"."Color"
 FROM
 	"Item" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Item"';
-END
 

@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ValueConversion"
-		(
-			"Id"                      Int           NOT NULL,
-			"Value1"                  NVarChar(200)     NULL,
-			"Value2"                  NVarChar(200)     NULL,
-			"Enum"                    NVarChar(50)  NOT NULL,
-			"EnumNullable"            VarChar(50)       NULL,
-			"EnumWithNull"            VarChar(50)       NULL,
-			"EnumWithNullDeclarative" VarChar(50)       NULL,
-			"BoolValue"               VarChar(1)    NOT NULL,
-			"AnotherBoolValue"        VarChar(1)    NOT NULL,
-			"DateTimeNullable"        timestamp         NULL,
-
-			CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @iteration Integer(4) -- Int32
 SET     @iteration = 2
 DECLARE @Value1 VarChar(2) -- String
@@ -85,12 +53,4 @@ FROM
 WHERE
 	"e"."Id" = @iteration
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
-END
 

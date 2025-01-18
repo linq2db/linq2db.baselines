@@ -1,42 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "InsertIssueTest"
-		(
-			ID            SmallInt NOT NULL,
-			"intDataType" Int          NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "InsertIssueTest"
-(
-	ID,
-	"intDataType"
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "InsertIssueTest"
 (
 	ID,
@@ -88,12 +52,4 @@ SELECT
 	"t1"."intDataType"
 FROM
 	"InsertIssueTest" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "InsertIssueTest"';
-END
 
