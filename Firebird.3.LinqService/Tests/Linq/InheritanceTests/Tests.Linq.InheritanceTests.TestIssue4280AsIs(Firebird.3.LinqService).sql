@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4280')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4280"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4280')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue4280"
-			(
-				"Id"           Int                                    NOT NULL,
-				"SerialNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"DeviceType"   VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Location"     VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_Issue4280" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarChar(7) -- String
@@ -134,12 +108,4 @@ FROM
 	"Issue4280" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4280')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4280"';
-END
 

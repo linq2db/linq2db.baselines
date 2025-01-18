@@ -1,41 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InsertIssueTest')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "InsertIssueTest"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InsertIssueTest')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "InsertIssueTest"
-			(
-				ID            SmallInt NOT NULL,
-				"intDataType" Int
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-INSERT INTO "InsertIssueTest"
-(
-	ID,
-	"intDataType"
-)
-SELECT 0,0 FROM rdb$database UNION ALL
-SELECT 0,0 FROM rdb$database UNION ALL
-SELECT 1234,1234 FROM rdb$database UNION ALL
-SELECT 1234,1234 FROM rdb$database
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 INSERT INTO "InsertIssueTest"
 (
 	ID,
@@ -87,12 +52,4 @@ SELECT
 	"t1"."intDataType"
 FROM
 	"InsertIssueTest" "t1"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InsertIssueTest')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "InsertIssueTest"';
-END
 

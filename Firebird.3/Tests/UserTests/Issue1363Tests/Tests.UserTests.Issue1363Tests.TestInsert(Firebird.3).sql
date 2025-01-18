@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1363')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1363"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1363')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue1363"
-			(
-				"required_field" CHAR(16) CHARACTER SET OCTETS NOT NULL,
-				"optional_field" CHAR(16) CHARACTER SET OCTETS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @id Guid
 SET     @id = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
@@ -81,12 +59,4 @@ FROM
 WHERE
 	"t1"."required_field" = @id2
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1363')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1363"';
-END
 

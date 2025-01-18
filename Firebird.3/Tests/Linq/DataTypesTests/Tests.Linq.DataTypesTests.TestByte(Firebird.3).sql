@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ByteTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ByteTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ByteTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ByteTable"
-			(
-				"Id"             Int      NOT NULL,
-				"Column"         SmallInt NOT NULL,
-				"ColumnNullable" SmallInt
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-INSERT INTO "ByteTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,1,NULL FROM rdb$database UNION ALL
-SELECT 2,255,2 FROM rdb$database
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Column SmallInt -- Int16
 SET     @Column = 255
 DECLARE @ColumnNullable SmallInt -- Int16
@@ -182,12 +147,4 @@ FROM
 	"ByteTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ByteTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ByteTable"';
-END
 

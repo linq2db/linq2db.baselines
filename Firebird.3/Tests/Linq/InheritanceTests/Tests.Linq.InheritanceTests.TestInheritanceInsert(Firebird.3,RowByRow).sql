@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InheritanceFilter')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "InheritanceFilter"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InheritanceFilter')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "InheritanceFilter"
-			(
-				"Id"                Int NOT NULL,
-				"Code"              Int NOT NULL,
-				"Child1Field"       Int,
-				"Child2Field"       Int,
-				"Grandchild11Field" Int,
-				"Grandchild12Field" Int,
-				"Grandchild21Field" Int,
-				"Grandchild22Field" Int,
-
-				CONSTRAINT "PK_InheritanceFilter" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Integer -- Int32
@@ -190,12 +160,4 @@ SELECT
 	"t1"."Grandchild22Field"
 FROM
 	"InheritanceFilter" "t1"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'InheritanceFilter')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "InheritanceFilter"';
-END
 

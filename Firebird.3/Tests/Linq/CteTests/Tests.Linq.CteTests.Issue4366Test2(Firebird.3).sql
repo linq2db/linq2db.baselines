@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Dto')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Dto"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Dto')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Dto"
-			(
-				"id"        Int                                    NOT NULL,
-				"name"      VarChar(255) CHARACTER SET UNICODE_FSS,
-				"parent_id" Int,
-				"FullName"  VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 WITH RECURSIVE "d"
 (
 	"FullName",
@@ -64,12 +40,4 @@ SELECT
 	"t2"."FullName"
 FROM
 	"d" "t2"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Dto')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Dto"';
-END
 
