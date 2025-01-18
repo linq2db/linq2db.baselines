@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChild"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "CteChild"
-			(
-				"ChildID"  Int NOT NULL,
-				"ParentID" Int NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 INSERT INTO "CteChild"
 (
 	"ChildID",
@@ -82,12 +60,4 @@ WHERE
 ORDER BY
 	"c4"."ChildID",
 	"c4"."ParentID"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChild"';
-END
 

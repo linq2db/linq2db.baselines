@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyTree')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "HierarchyTree"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyTree')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "HierarchyTree"
-			(
-				"Id"       Int NOT NULL,
-				"ParentId" Int
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 WITH RECURSIVE CTE_1 ("Id")
 AS
 (
@@ -67,12 +45,4 @@ FROM
 		INNER JOIN "HierarchyTree" "data2" ON "data2"."Id" = "t4"."Id"
 		INNER JOIN "HierarchyTree" "data3" ON "data3"."Id" = "t4"."Id"
 		INNER JOIN "HierarchyTree" "data4" ON "data4"."Id" = "t4"."Id"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'HierarchyTree')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "HierarchyTree"';
-END
 

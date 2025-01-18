@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestBool')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestBool"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestBool')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TestBool"
-			(
-				"Id"    Int     NOT NULL,
-				"Value" BOOLEAN
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -81,12 +59,4 @@ SELECT
 FROM
 	"TestBool" "t1"
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestBool')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestBool"';
-END
 

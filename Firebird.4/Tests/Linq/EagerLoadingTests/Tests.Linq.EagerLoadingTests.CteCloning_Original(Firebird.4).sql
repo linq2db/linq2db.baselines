@@ -1,52 +1,4 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteTable"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "CteTable"
-			(
-				"Id"     Int NOT NULL,
-				"Value1" Int NOT NULL,
-				"Value2" Int NOT NULL,
-				"Value3" Int NOT NULL,
-				"Value4" Int NOT NULL,
-				"Value5" Int NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChildTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChildTable"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChildTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "CteChildTable"
-			(
-				"Id"    Int NOT NULL,
-				"Value" Int NOT NULL
-			)
-		';
-END
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -133,20 +85,4 @@ SELECT
 FROM
 	"cte" "t2"
 		LEFT JOIN "CteChildTable" "d" ON "t2"."Value4" = "d"."Id"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChildTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChildTable"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteTable"';
-END
 

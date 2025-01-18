@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "SampleClass"
-			(
-				"Id"        Int NOT NULL,
-				"NullValue" Int
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 SELECT
 	"a_1"."Id",
 	"a_1"."NullValue"
@@ -41,12 +19,4 @@ FROM
 WHERE
 	"a_1"."Id" = 0 AND "a_1".KEYNUMB = 0 OR "a_1"."Id" = 1 AND "a_1".KEYNUMB = 1 OR
 	"a_1"."Id" = 2 AND "a_1".KEYNUMB = 2
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SampleClass')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "SampleClass"';
-END
 
